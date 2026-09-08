@@ -1,0 +1,56 @@
+# gentamicin
+
+- **generic name:** gentamicin
+- **ATC codes:** `D06AX07`, `J01GB03`, `S01AA11`, `S02AA14`, `S03AA06`
+- **DrugBank:** [DB00798](https://go.drugbank.com/drugs/DB00798)
+- **groups:** approved, investigational, vet_approved
+
+## About
+
+**Description.** Gentamicin is a bactericidal aminoglycoside that was discovered and isolated from _Micromonospora purpurea_ in 1963.[A234349] It is one of the most frequently prescribed aminoglycosides due to its spectrum of activity, low cost, and availability.[A234339,A234354] Gentamicin is effective against both gram-positive and gram-negative organisms but is particularly useful for the treatment of severe gram-negative infections including those caused by _Pseudomonas aeruginosa_.[A233325,A234359,A234364] There is the added benefit of synergy when gentamicin is co-administered with other antibacterials such as beta-lactams.[A234364] This synergistic activity is not only important for the treatment of complex infections, but can also contribute to dose optimization and reduced adverse effects.[A234359,A234364]
+
+Although gentamicin is well-established and may be used in a variety of clinical applications, it is also associated with severe adverse effects including nephrotoxicity and ototoxicity which may limit its use.[A234369]
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| not captured | not captured | 2/1/0 | 0/0/0 | 0/0/0 | not captured | not captured | 16 | 3/0 | 8/0 | 0 |
+
+## popPK records
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Albanell-Fernández_2025](drugs/drug_gentamicin/Gentamicin_AlbanellFernndez2025_reference.md) | Albanell-Fernández M et al., A Review of Vancomycin, Gentamicin, and…, Clinical pharmacokinetics (2025) | [10.1007/s40262-024-01459-z](https://doi.org/10.1007/s40262-024-01459-z) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Crcek_2019](drugs/drug_gentamicin/Gentamicin_Crcek2019_reference.md) | Crcek M et al., A review of population pharmacokinetic…, Journal of clinical pharmac… (2019) | [10.1111/jcpt.12850](https://doi.org/10.1111/jcpt.12850) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hodiamont_2022_2](drugs/drug_gentamicin/Gentamicin_Hodiamont2022v2_reference.md) | Hodiamont CJ et al., Clinical Pharmacokinetics of Gentamicin…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01143-0](https://doi.org/10.1007/s40262-022-01143-0) |
+
+## Coverage
+
+- **PubMed hits:** 352 matched, 20 returned
+- **screened:** 3  ·  **relevant:** 4
+- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Wang_2019.pdf` | Wang H et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2019) | popPK | 10 | [10.1002/jcph.1479](https://doi.org/10.1002/jcph.1479) | [31286535](https://pubmed.ncbi.nlm.nih.gov/31286535) | This is a primary population PK study for gentamicin in pediatric patients, and quantitative disposition parameters (CL, V1) are directly reported in the main text and Table 4. |
+
+<sub>queue written 2026-07-18T04:41:19.703994+00:00 · relevance threshold 5</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Cheng_2021 | irrelevant | 1 | 0 | This is a systematic review summarizing external evaluation methodologies for antibiotic popPK models and contains no original quantitative pharmacokinetic parameters for gentamicin. |
+| popPK | Marsot_2012 | irrelevant | 2 | 0 | This is a review article that summarizes study metadata and covariates but does not report any original quantitative pharmacokinetic parameter values for gentamicin. |
+| popPK | Whiting_1986 | irrelevant | 1 | 0 | Gentamicin is merely cited as an example in this methodological review, and no quantitative pharmacokinetic parameters for it are provided. |
+| popPK | Yalcin_2022 | irrelevant | 2 | 0 | This is a systematic review and no quantitative pharmacokinetic parameters for gentamicin are reported in the provided evidence. |
+| popPK | de_2018 | irrelevant | 1 | 0 | Gentamicin is only briefly cited as an example from another review, and no original population PK parameter values for it are reported in the provided text or tables. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_gentamicin`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

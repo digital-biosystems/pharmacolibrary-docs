@@ -1,0 +1,61 @@
+# parnaparin
+
+- **generic name:** parnaparin
+- **ATC codes:** `B01AB07`
+- **DrugBank:** [DB09260](https://go.drugbank.com/drugs/DB09260)
+- **groups:** approved
+
+## About
+
+**Description.** Parnaparin is an heparin of low molecular weight with antithrombotic effects.
+
+**Indication.** Used in the prevention and treatment of venous thromboembolism (deep vein thrombosis and pulmonary embolism) and in the treatment of myocardial infarction.
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-06 05:16 | 0:56 | 0/0/0 | 0/0/0 | 0/0/0 | 19,300/422 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/0 | 2/0 | 0 |
+
+## popPK records
+
+_not available_
+
+## Coverage
+
+- **PubMed hits:** 11 matched, 10 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full text wanted
+
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Florian-Kujawski_2004.pdf` | Florian-Kujawski M et al., Differential regulation of thrombin act…, International angiology : a… (2004) | pd | 4 | not captured | [15767980](https://www.ncbi.nlm.nih.gov/pubmed/15767980) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-09-06T05:16:27.486580+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Florian-Kujawski_2004 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic assay measuring TAFI inhibition (IC50) and does not report pharmacokinetic disposition parameters for parnaparin. |
+| popPK | Forestieri_2007 | irrelevant | 1 | 0 | The study reports pharmacodynamic endpoints (APTT, anti-factor Xa/IIa levels) rather than quantitative pharmacokinetic parameters (CL, V, ka) for parnaparin. |
+| popPK | Frampton_1994 | irrelevant | 1 | 0 | The paper is a clinical review of pharmacology and efficacy that lacks original quantitative pharmacokinetic parameter values (CL, V, etc.) for parnaparin. |
+| popPK | Hao_2019 | irrelevant | 0 | 0 | The paper is a general review of low molecular weight heparins and does not report specific quantitative pharmacokinetic parameters for parnaparin. |
+| popPK | Imberti_2009 | irrelevant | 1 | 0 | The study reports pharmacodynamic parameters (anti-Factor Xa activity) rather than pharmacokinetic disposition parameters (CL, V, t1/2) for parnaparin. |
+| popPK | Maddineni_2006 | irrelevant | 0 | 0 | The paper is a review discussing the chemical individuality of LMWHs and mentions parnaparin only as a commercial product example, without reporting any pharmacokinetic parameters. |
+| PD | Maddineni_2006 | not_relevant | 0 | 0 | The paper is a review discussing the chemical and biological uniqueness of LMWHs and the need for PD testing in generic equivalence, but it does not report any specific PD data, exposure-response relationships, or numeric PD parameters for parnaparin. |
+| popPK | Mousa_2002 | irrelevant | 0 | 0 | The paper is a review focused on tinzaparin, and parnaparin is only mentioned as a comparator without any quantitative pharmacokinetic parameters provided. |
+| PD | Mousa_2002 | not_relevant | 0 | 0 | The text is a general review introduction discussing the history and classification of LMWHs, including a brief mention of parnaparin, but it contains no pharmacodynamic data, exposure-response analysis, or numeric PD parameters. |
+| popPK | Petrikov_2020 | irrelevant | 2 | 0 | The paper is a review analyzing pharmacokinetic features generally but does not provide specific quantitative PK parameter values for parnaparin in the evidence. |
+| PD | Petrikov_2020 | not_relevant | 1 | 0 | The text is a review summarizing general pharmacokinetic and pharmacodynamic features of LMWHs without providing specific numeric PD parameters or exposure-response data for parnaparin. |
+| popPK | Sugiyama_1994 | relevant | 8 | 4 | The study reports pharmacokinetic parameters (half-life) for parnaparin (LHG) in dogs using a one-compartment model, but the specific clearance and volume values are contained in Table 2 which is not fully provided in the evidence. |
+| popPK | unknown_2015 | irrelevant | 0 | 0 | The evidence consists only of a conference title with no study data, parameters, or mention of parnaparin. |
+| PD | unknown_2015 | not_relevant | 0 | 0 | The provided text is only a header for a conference abstract collection and contains no specific data, results, or PD parameters for parnaparin. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_parnaparin`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

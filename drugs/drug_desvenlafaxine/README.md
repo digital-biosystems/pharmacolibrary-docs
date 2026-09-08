@@ -1,0 +1,57 @@
+# desvenlafaxine
+
+- **generic name:** desvenlafaxine
+- **ATC codes:** `N06AX23`
+- **DrugBank:** [DB06700](https://go.drugbank.com/drugs/DB06700)
+- **groups:** approved, investigational
+
+## About
+
+**Description.** Desvenlafaxine (O-desmethylvenlafaxine) is the 0-demetyhlated active metabolite of [venlafaxine]. Like its parent drug, desvenlafaxine is also an antidepressant belonging to the class of serotonin-norepinephrine reuptake inhibitor (SNRI) class.[A261266,A261266] It was approved by the FDA in 2008 for the treatment of adults with major depressive disorder (MDD).[L6016,A261271]
+
+MDD is a highly prevalent psychiatric disorder, with a lifetime prevalence estimate of 16% in the US alone and 12.8% in Europe. Although the exact mechanism of pathophysiology is still unknown, imbalances or deficiencies of monoamines have been heavily implicated, thus the rationale behind the use of SNRI to treat MDD.[A261271] Desvenlafaxine has a very similar pharmacological, efficacy, and safety profile as [venlafaxine]. The major difference is the potential for drug interaction since venlafaxine is mainly metabolized by CYP2D6 while desvenlafaxine is conjugated by UGT; therefore, desvenlafaxine is less likely to cause drug-drug interaction when taken with medications affecting the CYP2D6 pathway.[A261266]
+
+**Indication.** Desvenlafaxine is indicated for the treatment of major depressive disorder in adults.[L47936] It has also been used off-label to treat hot flashes in menopausal women.[A261166]
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| not captured | not captured | 1/1/0 | 0/0/0 | 0/0/0 | not captured | not captured | 20 | 3/0 | 8/0 | 0 |
+
+## popPK records
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mangas-Sanjuán_2023](drugs/drug_desvenlafaxine/Desvenlafaxine_MangasSanjun2023_reference.md) | Mangas-Sanjuán V et al., Alternative Pharmacokinetic Metrics in…, Pharmaceutics (2023) | [10.3390/pharmaceutics15020409](https://doi.org/10.3390/pharmaceutics15020409) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2022](drugs/drug_desvenlafaxine/Desvenlafaxine_Wang2022_reference.md) | Wang Z et al., Joint population pharmacokinetic modeli…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.978202](https://doi.org/10.3389/fphar.2022.978202) |
+
+## Coverage
+
+- **PubMed hits:** 23 matched, 14 returned
+- **screened:** 2  ·  **relevant:** 3
+- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Nichols_2018.pdf` | Nichols AI et al., Population Pharmacokinetics of Desvenla…, Clinical pharmacology in dr… (2018) | popPK | 10 | [10.1002/cpdd.419](https://doi.org/10.1002/cpdd.419) | [29228473](https://pubmed.ncbi.nlm.nih.gov/29228473) | The paper explicitly reports a population pharmacokinetic model for desvenlafaxine in humans with quantitative parameters (CL/F, V/F, ka) and full covariate equations. |
+
+<sub>queue written 2026-07-18T03:17:08.161080+00:00 · relevance threshold 5</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abbas_2022 | irrelevant | not captured | not captured | The paper focuses on venlafaxine as the subject drug and only reports noncompartmental summary statistics for desvenlafaxine as a metabolite, with no population or compartmental PK modeling provided. |
+| popPK | Atkinson_2018 | irrelevant | not captured | not captured | The paper focuses exclusively on clinical efficacy and safety, explicitly stating that population pharmacokinetic results will be reported separately. |
+| popPK | Katzman_2017 | irrelevant | not captured | not captured | The paper exclusively analyzes clinical efficacy and time to symptom improvement in depression trials, containing no pharmacokinetic parameters or modeling for desvenlafaxine. |
+| popPK | Men_2024 | irrelevant | 0 | 0 | The paper is about venlafaxine and O-desmethylvenlafaxine, not desvenlafaxine as the subject drug. |
+| popPK | Weihs_2018 | irrelevant | not captured | not captured | The paper focuses on clinical efficacy and safety, explicitly stating that pharmacokinetic analyses will be reported separately. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_desvenlafaxine`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

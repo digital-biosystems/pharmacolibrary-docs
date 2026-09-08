@@ -1,0 +1,153 @@
+# c1-inhibitor, plasma derived — `C1InhibitorPlasmaDerived_Diris2002_age_y`
+
+> ## <span class="pk-badge pk-badge--red">rejected</span>
+
+> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+## Citation
+Diris JH; Hermens WT; Hemker PW; Lagrand WK; Hack CE; van Dieijen-Visser MP et al. (2002). Clinical pharmacology and therapeutics 72
+  ·  DOI: [10.1067/mcp.2002.129320](https://doi.org/10.1067/mcp.2002.129320)
+
+## Model component
+<dbs-pgx drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Diris2002_age_y" status="rejected" stale="false" population="patients with acute myocardial infarction" measured-compound="C1-inhibitor protein" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Parameterization:** mechanistic.
+
+## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
+_No resolved parameters._
+
+## Departures & gaps
+
+**Interpretation flags:**
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'age (y)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): '1' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row0:col2'])
+- dropped unlinked row (NIL): '2' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row1:col2'])
+- dropped unlinked row (NIL): '3' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row2:col2'])
+- dropped unlinked row (NIL): '4' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row3:col2'])
+- dropped unlinked row (NIL): '5†' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row4:col2'])
+- dropped unlinked row (NIL): '6' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row5:col2'])
+- dropped unlinked row (NIL): '7' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row6:col2'])
+- dropped unlinked row (NIL): '8' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row7:col2'])
+- dropped unlinked row (NIL): '9' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row8:col2'])
+- dropped unlinked row (NIL): '10' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row9:col2'])
+- dropped unlinked row (NIL): '11' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row10:col2'])
+- dropped unlinked row (NIL): '12' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row11:col2'])
+- dropped unlinked row (NIL): '13' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row12:col2'])
+- dropped unlinked row (NIL): '14' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row13:col2'])
+- dropped unlinked row (NIL): '15' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row14:col2'])
+- dropped unlinked row (NIL): '16' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row15:col2'])
+- dropped unlinked row (NIL): '17†' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row16:col2'])
+- dropped unlinked row (NIL): '18' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row17:col2'])
+- dropped unlinked row (NIL): '19' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row18:col2'])
+- dropped unlinked row (NIL): '20' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row19:col2'])
+- dropped unlinked row (NIL): '21' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row20:col2'])
+- dropped unlinked row (NIL): '22' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row21:col2'])
+- dropped unlinked row (NIL): 'Median (n = 20)' — extend the ontology if this is a real PK parameter (source ['Diris_2002_table_1:row22:col2'])
+- table mostly unlinked (23/23 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=C1-inhibitor protein
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at route_to_review — not promoted
+- population split: 'age (y)' subgroup of Diris_2002 (paper reports 3 populations: age (y), body weight (kg), vp (ml))
+- skipped review gap-fill of V from Farrell_2013: its label names a different analyte ('rhc1inh') — 'volume of distribution of rhC1INH'
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+
+**Extraction notes:**
+- no TEI final-model table id; trying text-pointer table recovery
+- LLM selected parameter table(s) 1
+- unparsed cell Diris_2002_table_1:row0:col5 = '0.009 (0.005 to 0.013)'
+- unparsed cell Diris_2002_table_1:row1:col5 = '0.009 (0.008 to 0.010)'
+- unparsed cell Diris_2002_table_1:row2:col5 = '0.007 (0.005 to 0.009)'
+- unparsed cell Diris_2002_table_1:row3:col5 = '0.005 (0.003 to 0.007)'
+- unparsed cell Diris_2002_table_1:row4:col5 = '0.900 (−0.470 to 2.270)'
+- unparsed cell Diris_2002_table_1:row5:col5 = '0.011 (0.010 to 0.012)'
+- unparsed cell Diris_2002_table_1:row6:col5 = '0.012 (0.009 to 0.015)'
+- unparsed cell Diris_2002_table_1:row7:col5 = '0.003 (0.002 to 0.004)'
+- unparsed cell Diris_2002_table_1:row8:col5 = '0.011 (0.008 to 0.014)'
+- unparsed cell Diris_2002_table_1:row9:col5 = '0.010 (0.005 to 0.015)'
+- unparsed cell Diris_2002_table_1:row10:col5 = '0.021 (0.017 to 0.025)'
+- unparsed cell Diris_2002_table_1:row11:col5 = '0.010 (0.006 to 0.014)'
+- unparsed cell Diris_2002_table_1:row12:col5 = '0.017 (0.012 to 0.022)'
+- unparsed cell Diris_2002_table_1:row13:col5 = '0.016 (0.014 to 0.018)'
+- unparsed cell Diris_2002_table_1:row14:col5 = '0.016 (0.011 to 0.021)'
+- unparsed cell Diris_2002_table_1:row15:col5 = '0.025 (0.021 to 0.029)'
+- unparsed cell Diris_2002_table_1:row16:col5 = '0.002 (−0.004 to 0.008)'
+- unparsed cell Diris_2002_table_1:row17:col5 = '0.017 (0.010 to 0.024)'
+- unparsed cell Diris_2002_table_1:row18:col5 = '0.007 (0.004 to 0.010)'
+- unparsed cell Diris_2002_table_1:row19:col5 = '0.009 (0.007 to 0.011)'
+- unparsed cell Diris_2002_table_1:row20:col5 = '0.012 (0.005 to 0.019)'
+- unparsed cell Diris_2002_table_1:row21:col5 = '0.011 (0.009 to 0.013)'
+- unparsed cell Diris_2002_table_1:row22:col5 = '0.011 (0.008 to 0.014)'
+
+## Validation
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+
+<details class="legend">
+<summary>Check legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+</details>
+
+## Raw artifacts
+
+- scholar stages: `../../../knowledgebase/drugs/drug_c1_inhibitor_plasma_derived/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Diris_2002` / `Diris_2002::age_y`)
+
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Downloadable models
+
+No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
+
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+## Web simulation
+
+> 🚧 Not yet wired up — this tab will host an in-browser run of the model above, with editable parameters and dosing.
+
+The simulator will be built on **bodylight.js**, which compiles a model to WebAssembly and drives it from the page, so a simulation runs entirely in the browser with nothing to install: <https://bodylight.physiome.cz/>
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Generated by `docs.py` (scholarv2). This page is a browsable view of the KB artifacts, not a replacement for them.</sub>

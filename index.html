@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pharmacolibrary simulators</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="assets/w3.css">
+  <link rel="stylesheet" href="assets/buble.css">
+  <style>
+    /* Sidebar legibility: in the generated ATC tree a drug WITH a rendered page is a
+       link and one without is plain list text. The buble theme gives .sidebar ul li a
+       no colour of its own, so both inherited the body grey and looked identical.
+       Link = the same theme blue the index uses; no page = muted. */
+    .sidebar ul li a { color: var(--theme-color, #0074d9); }
+    .sidebar ul li a:hover { text-decoration: underline; }
+    .sidebar ul li { color: #8a9199; }
+    /* the theme's own .sidebar li.active a (0,2,2) outranks the rule above (0,1,3),
+       so the CURRENT page's entry needs a selector that beats it, or it reverts to grey */
+    .sidebar ul li.active a,
+    .sidebar ul li a.active { color: var(--theme-color, #0074d9); font-weight: 600; }
+    /* Collapsed column legends under the Parameters / Validation tables on a record page.
+       Built as raw HTML by docs/build.py because docsify does not re-enter markdown inside
+       an HTML block. */
+    .markdown-section details.legend { margin: -6px 0 22px; font-size: 14px; }
+    .markdown-section details.legend > summary {
+      cursor: pointer; color: var(--theme-color, #0074d9); font-size: 13px;
+      padding: 4px 0; width: fit-content;
+    }
+    .markdown-section details.legend[open] > summary { margin-bottom: 8px; }
+    .markdown-section details.legend table { margin: 0; font-size: 13px; }
+    .markdown-section details.legend td:first-child { white-space: nowrap; vertical-align: top; }
+    .markdown-section details.legend td:last-child { color: #4b5563; }
+    .markdown-section details.legend th { text-align: left; }
+    /* ── record tabs ──────────────────────────────────────────────────────────
+       build.py emits <div class="pk-tab-mark" data-tab="..."> sentinels and closes with
+       .pk-tab-end; the plugin below slices the rendered section at those points. The split
+       happens in the DOM because docsify does not re-enter markdown inside an HTML block —
+       wrapping the panels in the markdown would print the first tab as literal text. */
+    .pk-tab-mark, .pk-tab-end { display: none; }
+    .markdown-section .pk-tabbar {
+      display: flex; gap: 4px; border-bottom: 1px solid #e3e7eb;
+      margin: 24px 0 20px; padding: 0;
+    }
+    .markdown-section .pk-tabbar button {
+      appearance: none; background: none; border: 0; border-bottom: 2px solid transparent;
+      margin-bottom: -1px; padding: 9px 16px; cursor: pointer;
+      font: inherit; font-size: 15px; color: #6b7280;
+    }
+    .markdown-section .pk-tabbar button:hover { color: var(--theme-color, #0074d9); }
+    .markdown-section .pk-tabbar button[aria-selected="true"] {
+      color: var(--theme-color, #0074d9); font-weight: 600;
+      border-bottom-color: var(--theme-color, #0074d9);
+    }
+    .markdown-section .pk-tabpanel[hidden] { display: none; }
+    /* first heading in a panel: the tab bar already provides the separation */
+    .markdown-section .pk-tabpanel > h2:first-child { margin-top: 0; }
+    .markdown-section table.pk-models { width: 100%; }
+    .markdown-section table.pk-models td:first-child { white-space: nowrap; }
+    .markdown-section .pk-missing { color: #9aa1a9; font-style: italic; }
+    .markdown-section .pk-size { color: #6b7280; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      loadSidebar: true,
+      loadNavbar: true,
+      name: '',
+      repo: ''
+    }
+  </script>
+  <script>
+    // Record tabs. Slices .markdown-section at the sentinels build.py emits: content before
+    // the first mark is the page header and is left alone, each mark opens a panel, and
+    // .pk-tab-end returns the remainder (the footer) to the page. Runs on doneEach, after
+    // docsify has rendered the markdown, so panel content is real markdown output.
+    window.$docsify = window.$docsify || {};
+    (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
+      hook.doneEach(function () {
+        var section = document.querySelector('.markdown-section');
+        if (!section || !section.querySelector('.pk-tab-mark')) return;
+
+        var nodes = Array.prototype.slice.call(section.childNodes);
+        var panels = [], current = null, anchor = null, done = false;
+
+        nodes.forEach(function (node) {
+          if (done) return;
+          var el = node.nodeType === 1 ? node : null;
+          if (el && el.classList.contains('pk-tab-mark')) {
+            current = {title: el.dataset.tab || 'Tab', nodes: []};
+            panels.push(current);
+            if (!anchor) anchor = el;          // where the tab bar goes
+            return;
+          }
+          if (el && el.classList.contains('pk-tab-end')) { done = true; return; }
+          if (current) current.nodes.push(node);
+        });
+        if (!panels.length) return;
+
+        // One container at the position of the first mark, holding the bar and every panel.
+        // Anything after .pk-tab-end (the footer) stays a sibling of the container, so it keeps
+        // its place on the page instead of being dragged into the last tab.
+        var wrap = document.createElement('div');
+        wrap.className = 'pk-tabs';
+        anchor.parentNode.insertBefore(wrap, anchor);
+
+        var bar = document.createElement('div');
+        bar.className = 'pk-tabbar';
+        bar.setAttribute('role', 'tablist');
+        wrap.appendChild(bar);
+
+        var built = panels.map(function (p, i) {
+          var panel = document.createElement('div');
+          panel.className = 'pk-tabpanel';
+          panel.setAttribute('role', 'tabpanel');
+          p.nodes.forEach(function (n) { panel.appendChild(n); });   // moves, not clones
+          wrap.appendChild(panel);
+
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.textContent = p.title;
+          btn.setAttribute('role', 'tab');
+          bar.appendChild(btn);
+          return {btn: btn, panel: panel, i: i};
+        });
+
+        // the sentinels have served their purpose and are not content
+        Array.prototype.slice.call(section.querySelectorAll('.pk-tab-mark, .pk-tab-end'))
+          .forEach(function (el) { el.parentNode.removeChild(el); });
+
+        function select(i) {
+          built.forEach(function (b) {
+            b.btn.setAttribute('aria-selected', b.i === i ? 'true' : 'false');
+            b.panel.hidden = b.i !== i;
+          });
+          try { sessionStorage.setItem('pk-tab', built[i].btn.textContent); } catch (e) {}
+        }
+        built.forEach(function (b) { b.btn.addEventListener('click', function () { select(b.i); }); });
+
+        // Reopen the tab the reader was last on, so paging through records does not send
+        // them back to Information every time. Falls back to the first tab.
+        var want = 0;
+        try {
+          var saved = sessionStorage.getItem('pk-tab');
+          built.forEach(function (b) { if (b.btn.textContent === saved) want = b.i; });
+        } catch (e) {}
+        select(want);
+      });
+    });
+  </script>
+  <!-- Docsify v4 -->
+  <script src="assets/docsify.js"></script>
+  <script src="assets/js/dbs-bundle.js"></script>
+</body>
+</html>

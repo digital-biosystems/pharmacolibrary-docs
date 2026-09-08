@@ -1,0 +1,175 @@
+# codeine
+
+- **generic name:** codeine
+- **ATC codes:** `N02AJ06`, `N02AJ07`, `N02AJ08`, `R05DA04`
+- **DrugBank:** [DB00318](https://go.drugbank.com/drugs/DB00318)
+- **groups:** approved, illicit, investigational
+
+## About
+
+**Description.** The relief of pain (analgesia) is a primary goal for enhancing the quality of life of patients and for increasing the ability of patients to engage in day to day activities. Codeine, an opioid analgesic, was originally approved in the US in 1950 and is a drug used to decrease pain by increasing the threshold for pain without impairing consciousness or altering other sensory functions. Opiates such as codeine are derived from the poppy plant, _Papaver somniferum_ (Papaveraceae).[A175096]
+
+Codeine is utilized as a central analgesic, sedative, hypnotic, antinociceptive, and antiperistaltic agent, and is also recommended in certain diseases with incessant coughing.[LABEL,A175096]
+
+**Indication.** Codeine sulfate is a form of this drug that is commonly used. It is available in tablet form [FDA label] and indicated for the relief of mild to moderately severe pain, where the use of an opioid analgesic is appropriate [FDA label].
+
+The solution form is used by itself or combined in a syrup with other drugs and is used as a cough suppressant in adults aged 18 and above [L5521], [L5524].
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-30 19:23 | 4:38 | 0/7/0 | 0/0/0 | 0/0/32 | 46,013/4,529 | ollama / qwen3.8:27b-mtp-q8_0 | 31 | 18/8 | 18/13 | 0 |
+
+## popPK records
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Anderson_2026](drugs/drug_codeine/Codeine_Anderson2026_reference.md) | Anderson BJ et al., Codeine and Metabolite Concentrations i…, Paediatric anaesthesia (2026) | [10.1002/pan.70227](https://doi.org/10.1002/pan.70227) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Ashraf_2024](drugs/drug_codeine/Codeine_Ashraf2024_descriptiona.md) | Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01433-9](https://doi.org/10.1007/s40262-024-01433-9) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Ashraf_2024](drugs/drug_codeine/Codeine_Ashraf2024_parameter_estimate.md) | Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01433-9](https://doi.org/10.1007/s40262-024-01433-9) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Capparelli_2005](drugs/drug_codeine/Codeine_Capparelli2005_reference.md) | Capparelli EV et al., Multicenter study to determine antibody…, Antimicrobial agents and ch… (2005) | [10.1128/aac.49.10.4121-4127.2005](https://doi.org/10.1128/aac.49.10.4121-4127.2005) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Gretler_2020](drugs/drug_codeine/Codeine_Gretler2020_reference.md) | Gretler SR et al., Metabolism, pharmacokinetics and select…, Veterinary anaesthesia and… (2020) | [10.1016/j.vaa.2020.04.004](https://doi.org/10.1016/j.vaa.2020.04.004) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Linares_2015](drugs/drug_codeine/Codeine_Linares2015_reference.md) | Linares OA et al., CYP2D6 phenotype-specific codeine popul…, Journal of pain & palliativ… (2015) | [10.3109/15360288.2014.997854](https://doi.org/10.3109/15360288.2014.997854) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Shah_1990](drugs/drug_codeine/Codeine_Shah1990_reference.md) | Shah J et al., Pharmacokinetics of codeine after paren…, Drug metabolism and disposi… (1990) | — |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | formation | [Anderson_2026](drugs/drug_codeine/pgx_Anderson_2026_CYP2D6_Q100.md) | Anderson BJ et al., Codeine and Metabolite Concentrations i…, Paediatric anaesthesia (2026) | [10.1002/pan.70227](https://doi.org/10.1002/pan.70227) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q22` · CL | formation | [Armstrong_2025](drugs/drug_codeine/pgx_Armstrong_2025_CYP2D6_Q22.md) | Armstrong SJ et al., Precision medicine for Defence?, BMJ military health (2025) | [10.1136/military-2024-002721](https://doi.org/10.1136/military-2024-002721) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q45` · fm | formation | [Ashraf_2024](drugs/drug_codeine/pgx_Ashraf_2024_CYP2D6_Q45.md) | Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01433-9](https://doi.org/10.1007/s40262-024-01433-9) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q22` · CL | metabolism | [Chen_1991](drugs/drug_codeine/pgx_Chen_1991_CYP2D6_Q22.md) | Chen ZR et al., Disposition and metabolism of codeine a…, British journal of clinical… (1991) | [10.1111/j.1365-2125.1991.tb05550.x](https://doi.org/10.1111/j.1365-2125.1991.tb05550.x) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **COMT** | `Q22` · CL | metabolism | [Crews_2021](drugs/drug_codeine/pgx_Crews_2021_COMT_Q22.md) | Crews KR et al., Clinical Pharmacogenetics Implementatio…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2149](https://doi.org/10.1002/cpt.2149) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q45` · fm | formation | [Crews_2021](drugs/drug_codeine/pgx_Crews_2021_CYP2D6_Q45.md) | Crews KR et al., Clinical Pharmacogenetics Implementatio…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2149](https://doi.org/10.1002/cpt.2149) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **OPRM1** | `Q321` · EC50 | target | [Crews_2021](drugs/drug_codeine/pgx_Crews_2021_OPRM1_Q321.md) | Crews KR et al., Clinical Pharmacogenetics Implementatio…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2149](https://doi.org/10.1002/cpt.2149) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | formation | [PMID22205192_2012](drugs/drug_codeine/pgx_PMID22205192_2012_CYP2D6_Q100.md) | PMID22205192, Clinical Pharmacogenetics Implementatio… (2012) | [10.1038/clpt.2011.287](https://doi.org/10.1038/clpt.2011.287) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | formation | [PMID24458010_2014](drugs/drug_codeine/pgx_PMID24458010_2014_CYP2D6_Q100.md) | PMID24458010, Clinical Pharmacogenetics Implementatio… (2014) | [10.1038/clpt.2013.254](https://doi.org/10.1038/clpt.2013.254) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q22` · CL | formation | [Persson_1995](drugs/drug_codeine/pgx_Persson_1995_CYP2D6_Q22.md) | Persson K et al., Patient-controlled analgesia (PCA) with…, British journal of clinical… (1995) | [10.1111/j.1365-2125.1995.tb04428.x](https://doi.org/10.1111/j.1365-2125.1995.tb04428.x) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **ABCB1** | `Q40` · Fab | transport | [Wong_2022](drugs/drug_codeine/pgx_Wong_2022_ABCB1_Q40.md) | Wong AK et al., The Role of Pharmacogenomics in Opioid…, Current treatment options i… (2022) | [10.1007/s11864-022-01010-x](https://doi.org/10.1007/s11864-022-01010-x) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **COMT** | `Q22` · CL | metabolism | [Wong_2022](drugs/drug_codeine/pgx_Wong_2022_COMT_Q22.md) | Wong AK et al., The Role of Pharmacogenomics in Opioid…, Current treatment options i… (2022) | [10.1007/s11864-022-01010-x](https://doi.org/10.1007/s11864-022-01010-x) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2B6** | `Q22` · CL | metabolism | [Wong_2022](drugs/drug_codeine/pgx_Wong_2022_CYP2B6_Q22.md) | Wong AK et al., The Role of Pharmacogenomics in Opioid…, Current treatment options i… (2022) | [10.1007/s11864-022-01010-x](https://doi.org/10.1007/s11864-022-01010-x) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q22` · CL | metabolism | [Wong_2022](drugs/drug_codeine/pgx_Wong_2022_CYP2D6_Q22.md) | Wong AK et al., The Role of Pharmacogenomics in Opioid…, Current treatment options i… (2022) | [10.1007/s11864-022-01010-x](https://doi.org/10.1007/s11864-022-01010-x) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **OPRM1** | `Q321` · EC50 | target | [Wong_2022](drugs/drug_codeine/pgx_Wong_2022_OPRM1_Q321.md) | Wong AK et al., The Role of Pharmacogenomics in Opioid…, Current treatment options i… (2022) | [10.1007/s11864-022-01010-x](https://doi.org/10.1007/s11864-022-01010-x) |
+| <span class="pk-badge pk-badge--neutral">guideline_estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_codeine/pgx_guideline_CYP2D6_PA166104970_0.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral">guideline_estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_codeine/pgx_guideline_CYP2D6_PA166104970_1.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral">guideline_estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_codeine/pgx_guideline_CYP2D6_PA166104970_2.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral">guideline_estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_codeine/pgx_guideline_CYP2D6_PA166104970_3.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral">guideline_estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_codeine/pgx_guideline_CYP2D6_PA166104970_4.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral">guideline_estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_codeine/pgx_guideline_CYP2D6_PA166104970_5.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral">guideline_estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_codeine/pgx_guideline_CYP2D6_PA166104996_10.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral">guideline_estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_codeine/pgx_guideline_CYP2D6_PA166104996_11.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral">guideline_estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_codeine/pgx_guideline_CYP2D6_PA166104996_12.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral">guideline_estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_codeine/pgx_guideline_CYP2D6_PA166104996_6.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral">guideline_estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_codeine/pgx_guideline_CYP2D6_PA166104996_7.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral">guideline_estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_codeine/pgx_guideline_CYP2D6_PA166104996_8.md) | guideline | — |
+| <span class="pk-badge pk-badge--neutral">guideline_estimate</span> | **CYP2D6** | `Q22` · CL | metabolism | [guideline](drugs/drug_codeine/pgx_guideline_CYP2D6_PA166104996_9.md) | guideline | — |
+
+<details class="legend">
+<summary>What the PGx columns mean</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 773 matched, 103 returned
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 7  ·  extracted 0  ·  needs_review 0  ·  rejected 7  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Gretler_2020.pdf` | Gretler SR et al., Metabolism, pharmacokinetics and select…, Veterinary anaesthesia and… (2020) | popPK | 10 | [10.1016/j.vaa.2020.04.004](https://doi.org/10.1016/j.vaa.2020.04.004) | [32654915](https://pubmed.ncbi.nlm.nih.gov/32654915) | The paper reports quantitative two-compartment pharmacokinetic parameters (CL/F, V/F, Ka, and half-lives) for codeine in horses. |
+| `Linares_2015.pdf` | Linares OA et al., CYP2D6 phenotype-specific codeine popul…, Journal of pain & palliativ… (2015) | popPK | 10 | [10.3109/15360288.2014.997854](https://doi.org/10.3109/15360288.2014.997854) | [25562725](https://pubmed.ncbi.nlm.nih.gov/25562725) | The paper explicitly develops and reports quantitative population pharmacokinetic parameters (CL, V, k) for codeine across different CYP2D6 phenotypes in humans. |
+| `Shah_1990.pdf` | Shah J et al., Pharmacokinetics of codeine after paren…, Drug metabolism and disposi… (1990) | popPK | 10 | not captured | [1981718](https://pubmed.ncbi.nlm.nih.gov/1981718) | The paper reports quantitative pharmacokinetic parameters (CL, Vd, MRT, bioavailability) for codeine in rats with specific numeric values provided in the text. |
+| `Chen_2022.pdf` | Chen JH et al., Pharmacokinetics and transplacental tra…, Journal of ethnopharmacology (2022) | popPK | 8 | [10.1016/j.jep.2022.115623](https://doi.org/10.1016/j.jep.2022.115623) | [36007718](https://pubmed.ncbi.nlm.nih.gov/36007718) | The study is a pharmacokinetic investigation of codeine in rats using a compartmental model, but the specific numeric PK parameters (CL, V, etc.) are not listed in the provided evidence, only AUC ratios. |
+| `Hanses_1996.pdf` | Hanses A et al., Pharmacokinetics and drug input charact…, Arzneimittel-Forschung (1996) | popPK | 8 | not captured | [8821519](https://pubmed.ncbi.nlm.nih.gov/8821519) | The study reports pharmacokinetic parameters for codeine, but the specific numeric values for clearance, volume, or half-life are not present in the provided text, which only describes trends and qualitative differences. |
+
+<sub>queue written 2026-08-30T19:19:32.142086+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Alván_1992 | not_relevant | 5 | 0 | The text mentions that codeine has no analgesic effect in slow metabolizers, but it is a general review without specific quantitative PK/PD data or fitted effect sizes for codeine. |
+| PGx | Armstrong_2025 | not_relevant | 5 | 2 | The paper is a review discussing the general concept of CYP2D6 pharmacogenomics for codeine and provides population-level phenotype prevalence data, but it does not report specific fitted pharmacokinetic or pharmacodynamic effect sizes for codeine. |
+| PGx | Ballester_2022 | not_relevant | 5 | 2 | The paper is a narrative review discussing the general influence of CYP2D6 on opioids, including codeine, but does not report specific quantitative pharmacokinetic or pharmacodynamic effect sizes for codeine in this text. |
+| PD | Bloomfield_1977 | not_relevant | 1 | 0 | The paper reports clinical efficacy outcomes (pain scores) for codeine but provides no pharmacokinetic data, concentration-effect analysis, or numeric PD parameters. |
+| popPK | Capparelli_2005 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of INH-A21 (IVIG/antibodies), not codeine. |
+| PD | Capparelli_2005 | not_relevant | 0 | 0 | The paper reports pharmacokinetic parameters for an immune globulin (INH-A21) but does not report a pharmacodynamic model or exposure-response relationship for codeine. |
+| popPK | Carliss_2009 | irrelevant | 0 | 0 | The study focuses on receptor reserve and intrinsic efficacy of oxymorphol diastereomers in vitro and in vivo, not on the pharmacokinetic disposition parameters of codeine. |
+| PD | Chan_1987 | not_relevant | 1 | 0 | The text is a qualitative review of opioid pharmacokinetics and toxicities in renal insufficiency, containing no numeric PD parameters or concentration-effect data for codeine. |
+| popPK | Chen_2022 | relevant | 8 | 2 | The study is a pharmacokinetic investigation of codeine in rats using a compartmental model, but the specific numeric PK parameters (CL, V, etc.) are not listed in the provided evidence, only AUC ratios. |
+| popPK | Chew_2001 | irrelevant | 2 | 0 | The study focuses on pharmacodynamics (withdrawal severity) and metabolic ratios in rats, reporting no quantitative pharmacokinetic parameters (CL, V, ka) for codeine. |
+| popPK | Choi_1988 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of neurotoxicity protection, not a pharmacokinetic study, and reports no disposition parameters for codeine. |
+| PGx | Cohen_2012 | not_relevant | 2 | 0 | The paper is a general review that mentions codeine as a recently studied opioid but does not report specific pharmacogenomic effects on its PK or PD parameters. |
+| PD | Dayer_1997_2 | not_relevant | 0 | 0 | The text is a general pharmacological review of tramadol that mentions codeine only as a structural analogue and does not provide any numeric PD parameters or exposure-response data for codeine. |
+| PGx | Dayer_1997_2 | not_relevant | 0 | 0 | The paper discusses the pharmacology of tramadol, not codeine, and does not report pharmacogenomic effects on codeine PK/PD parameters. |
+| PGx | Ereshefsky_1995 | not_relevant | 0 | 0 | The paper discusses CYP2D6 inhibition by SSRIs and mentions codeine only as a CYP2D6 substrate, but does not report any pharmacogenomic effect (gene variant) on codeine's PK or PD parameters. |
+| popPK | Erthal-Williamson_2022 | irrelevant | 0 | 0 | The paper is an epidemiological study analyzing pharmaceutical opioid consumption trends (S-DDD) in the Eastern Mediterranean Region, not a pharmacokinetic study, and contains no PK parameters for codeine. |
+| popPK | Giron_1991 | irrelevant | 0 | 0 | The study investigates the clinical effects of dextromethorphan (not codeine) on exercise performance in COPD patients and does not report any pharmacokinetic parameters. |
+| PD | Giron_1991 | not_relevant | 0 | 0 | The paper studies dextromethorphan, not codeine, and reports only qualitative lack of effect without numeric PD parameters or concentration-response data. |
+| PD | Goa_1993 | not_relevant | 1 | 0 | The text is a qualitative review of propiram that mentions codeine only for comparative efficacy and duration, without providing any numeric PD parameters or exposure-response data for codeine. |
+| PD | Grond_2004_2 | not_relevant | 0 | 0 | The text is a general review of tramadol's pharmacology and does not report any specific pharmacodynamic or exposure-response data for codeine. |
+| PGx | Grond_2004_2 | not_relevant | 0 | 0 | The paper discusses the clinical pharmacology of tramadol, not codeine, and does not report pharmacogenomic effects on codeine PK/PD parameters. |
+| popPK | Hanses_1996 | relevant | 8 | 2 | The study reports pharmacokinetic parameters for codeine, but the specific numeric values for clearance, volume, or half-life are not present in the provided text, which only describes trends and qualitative differences. |
+| PD | Hertz_2021 | not_relevant | 1 | 0 | The text is a mini-review discussing approaches to identify pharmacogenetic associations with pharmacodynamics and mentions codeine only as an example of PK confounding, without reporting any specific numeric PD parameters or exposure-response data. |
+| PGx | Hertz_2024 | not_relevant | 2 | 0 | The paper is a narrative review of clinical practice guidelines regarding testing recommendations and does not report primary data on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Ing_2012 | irrelevant | 2 | 0 | The paper is a review of PK/PD relationships in analgesics that discusses codeine qualitatively but does not report original quantitative disposition parameters (CL, V, etc.) for codeine. |
+| PD | Ing_2012 | not_relevant | 2 | 0 | The paper is a mini-review that discusses PK/PD concepts and models for opioids (including codeine) but does not report specific numeric PD parameters (e.g., Emax, EC50) or extractable concentration-effect data for codeine in this text. |
+| PGx | Kalow_1989 | not_relevant | 0 | 0 | The text discusses debrisoquine and mephenytoin polymorphisms and lists substrates, but does not report specific pharmacokinetic or pharmacodynamic data for codeine. |
+| PGx | Karroum_2008 | not_relevant | 0 | 0 | The paper is a general review of Restless Legs Syndrome and mentions codeine only as a treatment option, without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Khan_2018 | irrelevant | 0 | 0 | The study is an environmental analysis of pharmaceutical residues in water, not a pharmacokinetic study, and reports no PK parameters for codeine. |
+| PD | Khan_2018 | not_relevant | 0 | 0 | The paper is an environmental monitoring study measuring drug concentrations in water, not a pharmacodynamic or exposure-response study in humans or animals. |
+| PGx | Kiang_2005 | not_relevant | 0 | 0 | The paper discusses UGT-mediated drug-drug interactions and mentions codeine only as an example of a drug whose glucuronidation can be influenced by interacting drugs, without reporting any pharmacogenomic effects (gene variants) on codeine PK/PD. |
+| popPK | Kirkwood_1998 | irrelevant | 0 | 0 | The study focuses on the in-vitro metabolism of dihydrocodeine, not the pharmacokinetics of codeine. |
+| PGx | Kleine-Brueggeney_2010 | not_relevant | 2 | 0 | The text is a general review discussing the potential of CYP2D6 polymorphisms in codeine metabolism but does not report specific quantitative pharmacokinetic or pharmacodynamic effect sizes or fitted parameters. |
+| PGx | Leppert_2016 | not_relevant | 0 | 0 | The paper discusses dihydrocodeine (DHC) and its pharmacogenomics, not codeine. |
+| PGx | Lotsch_2002 | not_relevant | 2 | 0 | The paper discusses drug-drug interactions (CYP2D6 inhibition by quinidine) rather than genetic pharmacogenomics, and provides no quantitative data. |
+| PD | Lyngstad_2021 | not_relevant | 3 | 2 | The study reports dose-response data for codeine combined with paracetamol (60 mg) but lacks plasma concentration data, preventing the derivation of exposure-response (PD) parameters like EC50 or Emax. |
+| PD | Ma_2012 | not_relevant | 1 | 0 | The paper is a review of pharmacogenomics that discusses codeine qualitatively but does not report any numeric pharmacodynamic parameters (e.g., Emax, EC50) or concentration-effect curves. |
+| PGx | Ma_2012 | not_relevant | 3 | 2 | The paper is a review that discusses the clinical application of pharmacogenomics and mentions codeine, but it does not report specific quantitative PK/PD parameter changes for codeine based on genotype. |
+| PD | Ma_2012_2 | not_relevant | 1 | 0 | The text is a qualitative review of pharmacogenomics and does not report any numeric PD parameters or exposure-response relationships for codeine. |
+| PGx | Ma_2012_2 | not_relevant | 3 | 0 | The paper is a review that discusses codeine pharmacogenomics qualitatively (mentioning CYP2D6 and neonatal adverse reactions) but does not report specific quantitative PK/PD parameter changes or fitted effect sizes. |
+| popPK | Ma_2021 | irrelevant | 0 | 0 | The study is a mechanistic/pharmacodynamic analysis of receptor binding (KD, EC50) and does not report pharmacokinetic disposition parameters for codeine. |
+| popPK | McGill_2025 | irrelevant | 0 | 0 | The paper investigates the effects of 17α-estradiol on APOE4 mice and does not study codeine pharmacokinetics. |
+| PD | McGill_2025 | not_relevant | 0 | 0 | The paper studies 17α-estradiol in mice, not codeine, and reports no pharmacodynamic or exposure-response parameters. |
+| PD | Melander_1983 | not_relevant | 0 | 0 | The text is a review discussing the influence of food on presystemic clearance and bioavailability, with no pharmacodynamic modeling, concentration-effect analysis, or numeric PD parameters for codeine. |
+| PGx | Michaud_2021 | not_relevant | 2 | 0 | The paper is a mini-review of historical cases illustrating the concept of phenoconversion; it does not report new quantitative pharmacogenomic data or fitted effect sizes for codeine PK/PD parameters. |
+| PGx | Mikus_1994 | not_relevant | 0 | 0 | The study investigates endogenous codeine and morphine levels, not the pharmacokinetics or pharmacodynamics of exogenous codeine administration. |
+| PD | Miller_1990 | not_relevant | 1 | 0 | The text is a qualitative review stating that codeine is unaffected pharmacokinetically by smoking, but it provides no numeric PD parameters, dose-response curves, or concentration-effect data. |
+| popPK | Montgomery_2016 | irrelevant | 0 | 0 | The paper is an educational practical on intestinal smooth muscle physiology where codeine is only mentioned as a therapeutic example for diarrhea, with no pharmacokinetic data reported. |
+| PD | Montgomery_2016 | not_relevant | 0 | 0 | The paper is a physiology lab manual focusing on ACh and epinephrine; codeine is only mentioned qualitatively in a list of drugs for gastrointestinal management without any PD data or analysis. |
+| PGx | PMID34267337_2022 | not_relevant | 0 | 0 | The text is a data availability statement and does not contain any pharmacogenomic data or results. |
+| PD | Peiró_2018 | not_relevant | 1 | 0 | The text is a review of pharmacogenetics in pain management and mentions codeine only in the context of the WHO analgesic ladder and genetic variability, without providing any numeric PD parameters or exposure-response data. |
+| PGx | Peiró_2018 | not_relevant | 0 | 0 | The text is a general review of pharmacogenetics in pain management and does not report specific quantitative pharmacokinetic or pharmacodynamic effects of gene variants on codeine. |
+| PD | Peiró_2018_2 | not_relevant | 1 | 0 | The text is a general review of pharmacogenetics in pain treatment and mentions codeine metabolism qualitatively but provides no numeric PD parameters, concentration-effect data, or dose-response curves. |
+| PGx | Peiró_2018_2 | not_relevant | 2 | 0 | The text is a general review of pharmacogenetics in pain treatment that mentions CYP2D6 affects codeine metabolism but provides no specific data, effect sizes, or quantitative PK/PD parameters. |
+| PGx | Persson_1992 | not_relevant | 2 | 5 | The study reports PK variability in a homogeneous group of extensive metabolizers and does not compare different genotypes to establish a pharmacogenomic effect. |
+| PGx | Ramsey_2020 | not_relevant | 0 | 0 | The text is a general introduction to pediatric pharmacogenetics that mentions codeine guidelines but does not report specific gene-variant effects on PK/PD parameters. |
+| PD | Rao_2019 | not_relevant | 1 | 0 | The text is a general review of pharmacogenetics in natural products and does not contain specific data, models, or numeric PD parameters for codeine. |
+| PGx | Rao_2019 | not_relevant | 0 | 0 | The paper is a general review on the pharmacogenetics of natural products and does not report specific data or effects for codeine. |
+| PGx | Rollinson_2020 | not_relevant | 2 | 1 | The paper is a general review of pharmacogenomics in primary care and mentions codeine only as an example of a drug-gene pair, without reporting specific quantitative PK/PD effects or fitted effect sizes. |
+| PD | Skeith_1994 | not_relevant | 1 | 0 | The text is a qualitative review that mentions the existence of concentration-response studies but does not provide any specific numeric PD parameters or data for codeine. |
+| popPK | Sohns_2024 | irrelevant | 0 | 0 | The study investigates the mechanism of GABA and chloride transport in sensory neurons using codeine only as a pruritogen to evoke itch, and does not report any pharmacokinetic parameters for codeine. |
+| PD | Sohns_2024 | not_relevant | 0 | 0 | The paper investigates GABA and furosemide; codeine is used only as a positive control for itch induction, and no dose-response or exposure-response analysis with numeric PD parameters is performed for codeine. |
+| PD | Somogyi_2007 | not_relevant | 1 | 0 | The text is a review discussing pharmacogenetics of opioids; it mentions codeine only in the context of CYP2D6 metabolism and does not report any specific concentration-effect or dose-response data or numeric PD parameters for codeine. |
+| PGx | Somogyi_2007 | not_relevant | 0 | 0 | The text discusses the TRPV1 gene and cold pressor pain tolerance, which is unrelated to the pharmacokinetics or pharmacodynamics of codeine. |
+| PD | Somogyi_2007_2 | not_relevant | 1 | 0 | The text is a qualitative review of opioid pharmacogenetics and does not report any specific numeric PD parameters or concentration-effect data for codeine. |
+| PGx | Somogyi_2007_2 | not_relevant | 5 | 2 | The text is a general review of opioid pharmacogenetics that mentions CYP2D6 and codeine qualitatively but does not report specific quantitative PK/PD parameter changes or fitted effect sizes. |
+| PGx | Swen_2011 | not_relevant | 0 | 0 | The paper is a general review of pharmacogenetic guidelines for 53 drugs and does not report specific PK/PD data or effect sizes for codeine. |
+| PD | Thigpen_2019 | not_relevant | 1 | 0 | The text is a narrative review of pediatric opioid pharmacokinetics and pharmacodynamics that discusses codeine only in general terms without providing specific numeric PD parameters or exposure-response data. |
+| PD | Thigpen_2019_2 | not_relevant | 2 | 1 | The text is a general review introduction that qualitatively discusses opioid PK/PD in pediatrics but does not provide specific numeric PD parameters or extractable concentration-effect curves for codeine. |
+| PD | Todd_1985_2 | not_relevant | 0 | 0 | The text is a qualitative review of suprofen's efficacy compared to codeine and other analgesics, containing no numeric PD parameters, concentration-effect curves, or dose-response data for codeine. |
+| PD | Vearrier_2021 | not_relevant | 1 | 0 | The paper is a general review of opioid pharmacology and abuse patterns; it mentions codeine's pharmacokinetics qualitatively but provides no numeric PD parameters, concentration-effect curves, or dose-response data. |
+| PD | Vearrier_2021_2 | not_relevant | 2 | 0 | The paper is a general review of opioid pharmacology and toxicity that mentions codeine's pharmacokinetics but does not provide specific numeric PD parameters or exposure-response data for codeine. |
+| popPK | Velez_2015 | irrelevant | not captured | not captured | The paper exclusively develops a population pharmacokinetic model for oral morphine and its metabolites, mentioning codeine only as historical background without reporting any quantitative PK parameters for it. |
+| PGx | Wong_2022 | not_relevant | 5 | 5 | The paper is a narrative review summarizing existing guidelines and evidence rather than reporting new primary data or fitted effect sizes for codeine PK/PD parameters. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_codeine`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

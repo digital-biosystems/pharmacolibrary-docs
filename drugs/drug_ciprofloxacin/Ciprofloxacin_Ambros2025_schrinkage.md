@@ -1,0 +1,133 @@
+# ciprofloxacin — `Ciprofloxacin_Ambros2025_schrinkage`
+
+> ## <span class="pk-badge pk-badge--red">rejected</span>
+
+> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+## Citation
+Ambros LA; Kreil V; de Lucas Burneo JJ; Tinti MG; San Andrés Larrea MI; Lorenzutti AM et al. (2025). Veterinary sciences 12
+  ·  DOI: [10.3390/vetsci12060588](https://doi.org/10.3390/vetsci12060588)
+
+## Model component
+<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Ambros2025_schrinkage" status="rejected" stale="false" population="pregnant goats" measured-compound="enrofloxacin" parameterization="apparent" topology="manual_model_class"></dbs-pgx>
+
+**Parameterization:** CLm/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+
+## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| F | `Q40` · Fab | —(suppressed) | not captured | — | not captured | not captured | exact (1.0) | vetsci-12-00588-t001:row2:col4 | — | not captured |
+| Ka (1/h) | `Q49` · kabs | —(suppressed) | parent | — | [parent] | not captured | exact (1.0) | vetsci-12-00588-t001:row3:col4 | — | not captured |
+| fu | `Q46` · fu | —(suppressed) | not captured | — | not captured | not captured | exact (1.0) | vetsci-12-00588-t001:row4:col4 | — | not captured |
+| Cl (L/h/kg) | `Q22` · CL | —(suppressed) | L/h/kg | — | [l] / [[h] · [kg]] | not captured | exact (1.0) | vetsci-12-00588-t001:row5:col4 | — | not captured |
+| Vp (L/kg) | `Q64` · V2 | —(suppressed) | L/kg | — | [l] / [kg] | not captured | exact (1.0) | vetsci-12-00588-t001:row8:col4 | — | not captured |
+| Clm (L/h/kg) | `Q351` · CLm/F | —(suppressed) | L/h/kg | — | [l] / [[h] · [kg]] | not captured | exact (1.0) | vetsci-12-00588-t001:row10:col4 | — | not captured |
+| Vmax (mg/L/h) | `Q66` · Vmax | —(suppressed) | mg/L/h | — | [mg] / [[h] · [l]] | not captured | exact (1.0) | vetsci-12-00588-t001:row11:col4 | — | not captured |
+| Km (mg/L) | `Q1` · Km | —(suppressed) | mg/L | — | [mg] / [l] | not captured | exact (1.0) | vetsci-12-00588-t001:row12:col4 | — | not captured |
+| AUC (mg/L/h) | `Q88` · AUC | —(suppressed) | mg/L/h | — | [mg] / [[h] · [l]] | not captured | exact (1.0) | vetsci-12-00588-t001:row20:col4, vetsci-12-00588-t001:row26:col4 | — | not captured |
+| Vss (L/kg) | `Q65` · Vss | —(suppressed) | L/kg | — | [l] / [kg] | not captured | exact (1.0) | vetsci-12-00588-t001:row21:col4 | — | not captured |
+| t1/2e (h) | `Q57` · t1/2z | —(suppressed) | h | — | [h] | not captured | llm_confirmed (0.6) | vetsci-12-00588-t001:row22:col4 | — | not captured |
+| V/F | `Q76` · V/F | —(suppressed) | mL/kg | — | L | not captured | review_gapfill (0.7) | Sang_2015:review | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+</details>
+
+## Departures & gaps
+
+**Interpretation flags:**
+- column 'schrinkage (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'schrinkage (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'schrinkage (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'schrinkage (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'schrinkage (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'schrinkage (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'schrinkage (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'schrinkage (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'schrinkage (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'schrinkage (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'schrinkage (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'schrinkage (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'schrinkage (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- unit_dimension_unknown: 'parent' (kabs)
+- unit_dimension_mismatch: 'Vmax (mg/L/h)' → Q66 (unit '[mass] / [length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'AUC (mg/L/h)' → Q88 (unit '[mass] / [length] ** 3 / [time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped unlinked row (NIL): 'MR' — extend the ontology if this is a real PK parameter (source ['vetsci-12-00588-t001:row27:col4'])
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=enrofloxacin
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: prose indicates saturable/MM/TMDD/time-varying kinetics — manual_model_class
+- status held at route_to_review — not promoted
+- population split: 'schrinkage (%)' subgroup of Ambros_2025 (paper reports 2 populations: estimate, schrinkage (%))
+- gap-filled Q76 (V/F) from Sang_2015's review values (primary lacked it)
+- skipped review gap-fill of Q: primary is MANUAL_MODEL_CLASS (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+
+**Extraction notes:**
+- LLM selected parameter table(s) 1
+
+## Validation
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass | not captured | 12 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_base_sign_Q22 | fail | not captured | -4.42 | not captured | not captured | not captured |
+| C2_base_sign_Q351 | fail | not captured | -1.21 | not captured | not captured | not captured |
+| C2_base_sign_Q66 | fail | not captured | -17.2 | not captured | not captured | not captured |
+| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['vetsci-12-00588-t001:row12:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['vetsci-12-00588-t001:row5:col4'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['vetsci-12-00588-t001:row10:col4'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['vetsci-12-00588-t001:row22:col4'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['vetsci-12-00588-t001:row8:col4'] |
+| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['vetsci-12-00588-t001:row21:col4'] |
+| C5_dimension_Q66 | fail | [mass] / [length] ** 3 / [time] | mg/L/h | not captured | not captured | ['vetsci-12-00588-t001:row11:col4'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Sang_2015:review'] |
+| C5_dimension_Q88 | fail | [mass] / [length] ** 3 / [time] | mg/L/h | not captured | not captured | ['vetsci-12-00588-t001:row20:col4', 'vetsci-12-00588-t001:row26:col4'] |
+| C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.2 with apparent parameterization | not captured | not captured | not captured |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q64 | pass | volume within physiological range | 564 L | not captured | not captured | ['vetsci-12-00588-t001:row8:col4'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 28.9 L | not captured | not captured | ['Sang_2015:review'] |
+
+<details class="legend">
+<summary>Check legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+</details>
+
+## Raw artifacts
+
+- scholar stages: `../../../knowledgebase/drugs/drug_ciprofloxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ambros_2025` / `Ambros_2025::schrinkage`)
+
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Downloadable models
+
+No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
+
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+## Web simulation
+
+> 🚧 Not yet wired up — this tab will host an in-browser run of the model above, with editable parameters and dosing.
+
+The simulator will be built on **bodylight.js**, which compiles a model to WebAssembly and drives it from the page, so a simulation runs entirely in the browser with nothing to install: <https://bodylight.physiome.cz/>
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Generated by `docs.py` (scholarv2). This page is a browsable view of the KB artifacts, not a replacement for them.</sub>
