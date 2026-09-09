@@ -29,8 +29,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Oggianu_2023](drugs/drug_gabapentin/pd_Oggianu_2023_number_of_writhings.md) | Oggianu L et al., PK/PD analysis of trazodone and gabapen…, Clinical and translational… (2023) | [10.1111/cts.13472](https://doi.org/10.1111/cts.13472) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Zhou_2026](drugs/drug_gabapentin/pd_Zhou_2026_VAS.md) | Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Oggianu_2023](drugs/drug_gabapentin/pd_Oggianu_2023_number_of_writhings.md) | Oggianu L et al., PK/PD analysis of trazodone and gabapen…, Clinical and translational… (2023) | [10.1111/cts.13472](https://doi.org/10.1111/cts.13472) |
 
 ## Coverage
 

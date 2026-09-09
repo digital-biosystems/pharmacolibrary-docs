@@ -29,12 +29,12 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Song_2025](drugs/drug_oliceridine/pd_Song_2025_NA.md) | Song CZ et al., Determination of the 90% Effective Dose…, Drug design, development an… (2025) | [10.2147/DDDT.S546489](https://doi.org/10.2147/DDDT.S546489) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Wu_2025](drugs/drug_oliceridine/pd_Wu_2025_bronchoscopy_response.md) | Wu D et al., Estimation of ED50 and ED95 of Olicerid…, Drug design, development an… (2025) | [10.2147/DDDT.S535435](https://doi.org/10.2147/DDDT.S535435) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Buchwald_2023](drugs/drug_oliceridine/pd_Buchwald_2023_Gprt.md) | Buchwald P, Quantitative receptor model for respons…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1274065](https://doi.org/10.3389/fphar.2023.1274065) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Buchwald_2023](drugs/drug_oliceridine/pd_Buchwald_2023_betaArr.md) | Buchwald P, Quantitative receptor model for respons…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1274065](https://doi.org/10.3389/fphar.2023.1274065) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Pedersen_2020](drugs/drug_oliceridine/pd_Pedersen_2020_unknown.md) | Pedersen MF et al., Biased agonism of clinically approved μ…, Neuropharmacology (2020) | [10.1016/j.neuropharm.2019.107718](https://doi.org/10.1016/j.neuropharm.2019.107718) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Simons_2023](drugs/drug_oliceridine/pd_Simons_2023_V_E55.md) | Simons P et al., Respiratory Effects of Biased Ligand Ol…, Anesthesiology (2023) | [10.1097/ALN.0000000000004473](https://doi.org/10.1097/ALN.0000000000004473) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Song_2025](drugs/drug_oliceridine/pd_Song_2025_NA.md) | Song CZ et al., Determination of the 90% Effective Dose…, Drug design, development an… (2025) | [10.2147/DDDT.S546489](https://doi.org/10.2147/DDDT.S546489) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Wu_2025](drugs/drug_oliceridine/pd_Wu_2025_bronchoscopy_response.md) | Wu D et al., Estimation of ED50 and ED95 of Olicerid…, Drug design, development an… (2025) | [10.2147/DDDT.S535435](https://doi.org/10.2147/DDDT.S535435) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zhao_2026](drugs/drug_oliceridine/pd_Zhao_2026_unknown.md) | Zhao Z et al., EC50 of Remifentanil for Inhibiting Car…, Drug design, development an… (2026) | [10.2147/DDDT.S571007](https://doi.org/10.2147/DDDT.S571007) |
 
 ## Pharmacogenomics (PGx)

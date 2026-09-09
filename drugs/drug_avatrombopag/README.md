@@ -31,8 +31,8 @@ In July 2025, the FDA expanded approval to include a new pediatric formulation, 
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **ABCB1** | `Q27` · CL/F | transport | [Liu_2025_2](drugs/drug_avatrombopag/pgx_Liu_2025_2_ABCB1_Q27.md) | Liu X et al., Investigation of the ABCB1 Gene Polymor…, Pharmaceuticals (Basel, Swi… (2025) | [10.3390/ph18060903](https://doi.org/10.3390/ph18060903) |
 | <span class="pk-badge pk-badge--green">extracted</span> | **CYP2C9** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Liu_2025_2](drugs/drug_avatrombopag/pgx_Liu_2025_2_CYP2C9_safety.md) | Liu X et al., Investigation of the ABCB1 Gene Polymor…, Pharmaceuticals (Basel, Swi… (2025) | [10.3390/ph18060903](https://doi.org/10.3390/ph18060903) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **ABCB1** | `Q27` · CL/F | transport | [Liu_2025_2](drugs/drug_avatrombopag/pgx_Liu_2025_2_ABCB1_Q27.md) | Liu X et al., Investigation of the ABCB1 Gene Polymor…, Pharmaceuticals (Basel, Swi… (2025) | [10.3390/ph18060903](https://doi.org/10.3390/ph18060903) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>

@@ -9,7 +9,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 12:59 | 21:55 | 0/0/0 | 0/0/0 | 0/0/0 | 255,750/6,087 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 0/0 | 15/0 | 0 |
+| 2026-09-08 19:33 | 1:16 | 0/0/0 | 0/0/0 | 0/0/0 | 1,308/1,230 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 0/0 | 15/0 | 0 |
 
 ## popPK records
 
@@ -34,7 +34,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Racay_1995.pdf` | Racay P et al., Rabbit brain endoplasmic reticulum memb…, Biochemistry and molecular… (1995) | pd | 4 | not captured | [7549956](https://www.ncbi.nlm.nih.gov/pubmed/7549956) | metadata signals extractable PD data (EC50) |
 | `Silva_2022.pdf` | Silva AM et al., Valorization of Kiwiberry Leaves Recove…, Antioxidants (Basel, Switze… (2022) | pd | 4 | [10.3390/antiox11040763](https://doi.org/10.3390/antiox11040763) | [35453448](https://www.ncbi.nlm.nih.gov/pubmed/35453448) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-06T12:54:32.719634+00:00</sub>
+<sub>queue written 2026-09-08T19:33:04.434200+00:00</sub>
 
 ## Screened and excluded
 

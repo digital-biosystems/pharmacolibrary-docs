@@ -22,8 +22,8 @@
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Davis_1986](drugs/drug_alfentanil/Alfentanil_Davis1986_reference.md) | Davis PJ et al., Clinical pharmacokinetics of the newer…, Clinical pharmacokinetics (1986) | [10.2165/00003088-198611010-00002](https://doi.org/10.2165/00003088-198611010-00002) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Medina-Aymerich_2025](drugs/drug_alfentanil/Alfentanil_MedinaAymerich2025_reference.md) | Medina-Aymerich L et al., Population Pharmacokinetics of Alfentan…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70044](https://doi.org/10.1002/jcph.70044) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Vozeh_1990](drugs/drug_alfentanil/Alfentanil_Vozeh1990_reference.md) | Vozeh S et al., Evaluation of population (NONMEM) pharm…, Journal of pharmacokinetics… (1990) | [10.1007/BF01063558](https://doi.org/10.1007/BF01063558) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Medina-Aymerich_2025](drugs/drug_alfentanil/Alfentanil_MedinaAymerich2025_reference.md) | Medina-Aymerich L et al., Population Pharmacokinetics of Alfentan…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70044](https://doi.org/10.1002/jcph.70044) |
 
 ## Pharmacodynamics (PD)
 

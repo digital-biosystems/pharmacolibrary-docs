@@ -23,8 +23,8 @@ Small molecule CGRP antagonists are also known as "gepants", and this category i
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Comisar_2025](drugs/drug_zavegepant/Zavegepant_Comisar2025_reference.md) | Comisar CM et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13257](https://doi.org/10.1002/psp4.13257) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Shahin_2025](drugs/drug_zavegepant/Zavegepant_Shahin2025_reference.md) | Shahin MH et al., A Pharmacokinetic Study of Zavegepant N…, Clinical and translational… (2025) | [10.1111/cts.70199](https://doi.org/10.1111/cts.70199) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Comisar_2025](drugs/drug_zavegepant/Zavegepant_Comisar2025_reference.md) | Comisar CM et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13257](https://doi.org/10.1002/psp4.13257) |
 
 ## Coverage
 

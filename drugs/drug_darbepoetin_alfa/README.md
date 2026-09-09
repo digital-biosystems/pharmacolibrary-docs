@@ -60,7 +60,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Takama_2007.pdf` | Takama H et al., Population pharmacokinetics of darbepoe…, British journal of clinical… (2007) | popPK | 10 | [10.1111/j.1365-2125.2006.02756.x](https://doi.org/10.1111/j.1365-2125.2006.02756.x) | [16945116](https://pubmed.ncbi.nlm.nih.gov/16945116) | The paper reports a population PK model for darbepoetin alfa with specific numeric values for clearance (0.0807 l/h) and central volume (2.51 l) provided in the text. |
 | `Keller_2015.pdf` | Keller F et al., Pharmacokinetic and pharmacodynamic con…, Expert opinion on drug meta… (2015) | pd | 5 | [10.1517/17425255.2015.989832](https://doi.org/10.1517/17425255.2015.989832) | [25466552](https://www.ncbi.nlm.nih.gov/pubmed/25466552) | metadata signals extractable PD data (sigmoid) |
 
-<sub>queue written 2026-09-06T20:17:42.253373+00:00</sub>
+<sub>queue written 2026-09-08T19:29:35.227935+00:00</sub>
 
 ## Screened and excluded
 

@@ -21,9 +21,9 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Winslade_1987_2](drugs/drug_netilmicin/Netilmicin_Winslade1987v2_reference.md) | Winslade NE et al., Single-dose accumulation pharmacokineti…, Antimicrobial agents and ch… (1987) | [10.1128/AAC.31.4.605](https://doi.org/10.1128/AAC.31.4.605) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Jauregizar_2003](drugs/drug_netilmicin/Netilmicin_Jauregizar2003_reference.md) | Jauregizar N et al., Population pharmacokinetics of netilmic…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01783.x](https://doi.org/10.1046/j.1365-2125.2003.01783.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Siegel_1979](drugs/drug_netilmicin/Netilmicin_Siegel1979_reference.md) | Siegel JD et al., Pharmacokinetic properties of netilmici…, Antimicrobial agents and ch… (1979) | [10.1128/AAC.15.2.246](https://doi.org/10.1128/AAC.15.2.246) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Winslade_1987_2](drugs/drug_netilmicin/Netilmicin_Winslade1987v2_reference.md) | Winslade NE et al., Single-dose accumulation pharmacokineti…, Antimicrobial agents and ch… (1987) | [10.1128/AAC.31.4.605](https://doi.org/10.1128/AAC.31.4.605) |
 
 ## Coverage
 

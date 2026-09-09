@@ -22,8 +22,8 @@
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Hope_2006](drugs/drug_flucytosine/Flucytosine_Hope2006_reference.md) | Hope WW et al., Derivation of an in vivo drug exposure…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.00369-06](https://doi.org/10.1128/AAC.00369-06) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Stegman_1999](drugs/drug_flucytosine/Flucytosine_Stegman1999_reference.md) | Stegman LD et al., Noninvasive quantitation of cytosine de…, Proceedings of the National… (1999) | [10.1073/pnas.96.17.9821](https://doi.org/10.1073/pnas.96.17.9821) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Stott_2023](drugs/drug_flucytosine/Flucytosine_Stott2023_reference.md) | Stott KE et al., Population pharmacokinetics and CSF pen…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad038](https://doi.org/10.1093/jac/dkad038) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Stegman_1999](drugs/drug_flucytosine/Flucytosine_Stegman1999_reference.md) | Stegman LD et al., Noninvasive quantitation of cytosine de…, Proceedings of the National… (1999) | [10.1073/pnas.96.17.9821](https://doi.org/10.1073/pnas.96.17.9821) |
 
 ## Coverage
 

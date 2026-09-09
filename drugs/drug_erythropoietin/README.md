@@ -20,14 +20,14 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 14:22 | 22:36 | 1/4/0 | 0/0/0 | 0/0/0 | 124,728/7,270 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 0/1 | 9/1 | 0 |
+| 2026-09-08 19:43 | 12:07 | 1/4/0 | 0/0/0 | 0/0/0 | 48,020/35,130 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 3/7 | 9/1 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Chakraborty_2005](drugs/drug_erythropoietin/Erythropoietin_Chakraborty2005_reference.md) | Chakraborty A et al., Population pharmacokinetics of erythrop…, Journal of clinical pharmac… (2005) | [10.1177/0091270004269520](https://doi.org/10.1177/0091270004269520) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Frymoyer_2017](drugs/drug_erythropoietin/Erythropoietin_Frymoyer2017_reference.md) | Frymoyer A et al., High-dose erythropoietin population pha…, Pediatric research (2017) | [10.1038/pr.2017.15](https://doi.org/10.1038/pr.2017.15) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Chakraborty_2005](drugs/drug_erythropoietin/Erythropoietin_Chakraborty2005_reference.md) | Chakraborty A et al., Population pharmacokinetics of erythrop…, Journal of clinical pharmac… (2005) | [10.1177/0091270004269520](https://doi.org/10.1177/0091270004269520) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Gaudard_2003](drugs/drug_erythropoietin/Erythropoietin_Gaudard2003_reference.md) | Gaudard A et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical drug investigation (2003) | [10.2165/00044011-200323030-00003](https://doi.org/10.2165/00044011-200323030-00003) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Jolling_2004](drugs/drug_erythropoietin/Erythropoietin_Jolling2004_reference.md) | Jolling K et al., Population pharmacokinetic analysis of…, Journal of pharmaceutical s… (2004) | [10.1002/jps.20200](https://doi.org/10.1002/jps.20200) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Olsson-Gisleskog_2007](drugs/drug_erythropoietin/Erythropoietin_OlssonGisleskog2007_reference.md) | Olsson-Gisleskog P et al., Population pharmacokinetics meta-analys…, Clinical pharmacokinetics (2007) | [10.2165/00003088-200746020-00004](https://doi.org/10.2165/00003088-200746020-00004) |
@@ -35,7 +35,7 @@
 ## Coverage
 
 - **PubMed hits:** 258 matched, 63 returned
-- **screened:** 7  ·  **relevant:** 7
+- **screened:** 16  ·  **relevant:** 7
 - **records:** 5  ·  extracted 1  ·  needs_review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

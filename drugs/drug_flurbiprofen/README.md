@@ -21,8 +21,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kumpulainen_2010_2](drugs/drug_flurbiprofen/Flurbiprofen_Kumpulainen2010v2_reference.md) | Kumpulainen E et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03720.x](https://doi.org/10.1111/j.1365-2125.2010.03720.x) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Yao_2025](drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference.md) | Yao H et al., Exploring the Population Pharmacokineti…, Drug design, development an… (2025) | [10.2147/DDDT.S542722](https://doi.org/10.2147/DDDT.S542722) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kumpulainen_2010_2](drugs/drug_flurbiprofen/Flurbiprofen_Kumpulainen2010v2_reference.md) | Kumpulainen E et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03720.x](https://doi.org/10.1111/j.1365-2125.2010.03720.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2018](drugs/drug_flurbiprofen/Flurbiprofen_Zhang2018_reference.md) | Zhang J et al., Population pharmacokinetic modeling of…, Journal of pain research (2018) | [10.2147/JPR.S176475](https://doi.org/10.2147/JPR.S176475) |
 
 ## Coverage

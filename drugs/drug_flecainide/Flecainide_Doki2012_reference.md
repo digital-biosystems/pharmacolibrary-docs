@@ -1,4 +1,4 @@
-# disopyramide — `Disopyramide_Aso2001_reference`
+# flecainide — `Flecainide_Doki2012_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
@@ -7,10 +7,11 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
-Aso R; Ohashi K; Katoh T; Ogata H et al. (2001). International journal of clinical pharmacology research 21
+Doki K; Homma M; Kuga K; Aonuma K; Kohda Y et al. (2012). Pharmacogenetics and genomics 22
+  ·  DOI: [10.1097/FPC.0b013e3283588fe5](https://doi.org/10.1097/FPC.0b013e3283588fe5)
 
 ## Model component
-<dbs-pgx drug="disopyramide" model-id="Disopyramide_Aso2001_reference" status="rejected" stale="false" population="arrhythmia patients at steady state" measured-compound="DP" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="flecainide" model-id="Flecainide_Doki2012_reference" status="rejected" stale="false" population="patients with supraventricular tachyarrhythmias" measured-compound="flecainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -22,13 +23,12 @@ _No resolved parameters._
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=DP
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at route_to_review — not promoted
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=flecainide
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- text-pointer recovery found no readable extracted parameter table
+- no GROBID TEI available, and no PDF or abstract text to fall back on
 
 ## Validation
 
@@ -37,7 +37,8 @@ _No resolved parameters._
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -46,7 +47,7 @@ _No resolved parameters._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_disopyramide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Aso_2001` / `Aso_2001::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_flecainide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Doki_2012` / `Doki_2012::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

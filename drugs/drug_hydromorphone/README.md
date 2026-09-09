@@ -27,8 +27,8 @@ Off-label, hydromorphone can be administered for the suppression of refractory c
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Meissner_2025](drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference.md) | Meissner K et al., Morphine and hydromorphone pharmacokine…, British journal of anaesthe… (2025) | [10.1016/j.bja.2024.08.042](https://doi.org/10.1016/j.bja.2024.08.042) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Wimbish_2024](drugs/drug_hydromorphone/Hydromorphone_Wimbish2024_reference.md) | Wimbish C et al., Pharmacokinetics of a continuous intrav…, Frontiers in veterinary sci… (2024) | [10.3389/fvets.2024.1362730](https://doi.org/10.3389/fvets.2024.1362730) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Meissner_2025](drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference.md) | Meissner K et al., Morphine and hydromorphone pharmacokine…, British journal of anaesthe… (2025) | [10.1016/j.bja.2024.08.042](https://doi.org/10.1016/j.bja.2024.08.042) |
 
 ## Pharmacodynamics (PD)
 

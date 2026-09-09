@@ -1,4 +1,4 @@
-# name — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Zhao_1997`
 - **model family:** `unknown`

@@ -1,4 +1,4 @@
-# relative bacterial growth rate — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# relative bacterial growth rate — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Focks_2010`
 - **model family:** `emax`

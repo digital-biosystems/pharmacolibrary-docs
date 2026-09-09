@@ -31,8 +31,8 @@ _not available_
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2C8** | `Q27` · CL/F | metabolism | [Lattanzio_2022](drugs/drug_selexipag/pgx_Lattanzio_2022_CYP2C8_Q27.md) | Lattanzio M et al., Pharmacological counseling in hepatotox…, Journal of medical case rep… (2022) | [10.1186/s13256-022-03571-9](https://doi.org/10.1186/s13256-022-03571-9) |
 | <span class="pk-badge pk-badge--green">extracted</span> | **CYP2C9** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Lattanzio_2022](drugs/drug_selexipag/pgx_Lattanzio_2022_CYP2C9_safety.md) | Lattanzio M et al., Pharmacological counseling in hepatotox…, Journal of medical case rep… (2022) | [10.1186/s13256-022-03571-9](https://doi.org/10.1186/s13256-022-03571-9) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2C8** | `Q27` · CL/F | metabolism | [Lattanzio_2022](drugs/drug_selexipag/pgx_Lattanzio_2022_CYP2C8_Q27.md) | Lattanzio M et al., Pharmacological counseling in hepatotox…, Journal of medical case rep… (2022) | [10.1186/s13256-022-03571-9](https://doi.org/10.1186/s13256-022-03571-9) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>

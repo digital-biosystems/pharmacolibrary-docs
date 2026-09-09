@@ -50,7 +50,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Mahar_2024.pdf` | Mahar KM et al., Integrated Population Pharmacokinetics…, Clinical pharmacokinetics (2024) | popPK | 10 | [10.1007/s40262-024-01417-9](https://doi.org/10.1007/s40262-024-01417-9) | [39259485](https://pubmed.ncbi.nlm.nih.gov/39259485) | The paper is a population pharmacokinetic study of daprodustat that explicitly reports quantitative parameters such as oral clearance (24.6 L/h) and volume of distribution (26.9 L) in the text. |
 | `Janssens_2021.pdf` | Janssens LK et al., Sensing an Oxygen Sensor: Development a…, Analytical chemistry (2021) | pd | 4 | [10.1021/acs.analchem.1c02923](https://doi.org/10.1021/acs.analchem.1c02923) | [34677954](https://www.ncbi.nlm.nih.gov/pubmed/34677954) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-06T20:17:41.885524+00:00</sub>
+<sub>queue written 2026-09-08T19:29:34.798059+00:00</sub>
 
 ## Screened and excluded
 

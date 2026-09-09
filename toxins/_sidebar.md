@@ -14,20 +14,20 @@
 #### dbs
 - allopurinol <sub>(0/0/0)</sub>
 - bleomycin <sub>(0/0/0)</sub>
-- cilazaprilum <sub>(0/0/0)</sub>
+- cilazapril <sub>(0/0/0)</sub>
 - dacarbazine <sub>(0/0/0)</sub>
-- doxazosinum <sub>(0/0/0)</sub>
+- doxazosin <sub>(0/0/0)</sub>
 - doxorubicin <sub>(0/0/0)</sub>
 - fentanyl <sub>(0/0/0)</sub>
 - fluorouracil <sub>(0/0/0)</sub>
-- hydrochlorothiazidum <sub>(0/0/0)</sub>
+- hydrochlorothiazide <sub>(0/0/0)</sub>
 - ibuprofen <sub>(0/0/0)</sub>
 - midazolam <sub>(0/0/0)</sub>
 - palivizumab <sub>(0/0/0)</sub>
 - paracetamol <sub>(0/0/0)</sub>
 - remdesivir <sub>(0/0/0)</sub>
 - simvastatin <sub>(0/0/0)</sub>
-- telmisartanum <sub>(0/0/0)</sub>
+- telmisartan <sub>(0/0/0)</sub>
 - tolvaptan <sub>(0/0/0)</sub>
 - vinblastine <sub>(0/0/0)</sub>
 #### dph

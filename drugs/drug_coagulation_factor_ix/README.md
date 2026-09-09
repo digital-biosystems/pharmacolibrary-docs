@@ -23,9 +23,9 @@ Along with other blood coagulation factors, it is used to reverse acquired coagu
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Preijers_2022](drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Preijers2022_reference.md) | Preijers T et al., In silico evaluation of limited samplin…, European journal of clinica… (2022) | [10.1007/s00228-021-03173-2](https://doi.org/10.1007/s00228-021-03173-2) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Goldsmith_1992](drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Goldsmith1992_reference.md) | Goldsmith JC et al., Coagulation factor IX: successful surgi…, American journal of hematol… (1992) | [10.1002/ajh.2830400310](https://doi.org/10.1002/ajh.2830400310) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Preijers_2018](drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Preijers2018_reference.md) | Preijers T et al., Population pharmacokinetics of factor I…, Journal of thrombosis and h… (2018) | [10.1111/jth.14292](https://doi.org/10.1111/jth.14292) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Preijers_2022](drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Preijers2022_reference.md) | Preijers T et al., In silico evaluation of limited samplin…, European journal of clinica… (2022) | [10.1007/s00228-021-03173-2](https://doi.org/10.1007/s00228-021-03173-2) |
 
 ## Pharmacodynamics (PD)
 

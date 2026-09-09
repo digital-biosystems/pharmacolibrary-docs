@@ -31,9 +31,9 @@ In particular, erenumab-aooe is a human immunoglobulin G2 monoclonal antibody th
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Vu_2017](drugs/drug_erenumab/pd_Vu_2017_DBF.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Chan_2021](drugs/drug_erenumab/pd_Chan_2021_Dermal_blood_flow_DBF.md) | Chan P et al., Translational and pharmacokinetic-pharm…, Clinical and translational… (2021) | [10.1111/cts.13049](https://doi.org/10.1111/cts.13049) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kielbasa_2019](drugs/drug_erenumab/pd_Kielbasa_2019_free_CGRP.md) | Kielbasa W et al., A new era for migraine: Pharmacokinetic…, Cephalalgia : an internatio… (2019) | [10.1177/0333102419840780](https://doi.org/10.1177/0333102419840780) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Vu_2017](drugs/drug_erenumab/pd_Vu_2017_DBF.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
 
 ## Coverage
 

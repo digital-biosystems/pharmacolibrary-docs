@@ -21,10 +21,10 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Falloon_1994](drugs/drug_dapsone/Dapsone_Falloon1994_reference.md) | Falloon J et al., Pharmacokinetics and safety of weekly d…, Antimicrobial agents and ch… (1994) | [10.1128/AAC.38.7.1580](https://doi.org/10.1128/AAC.38.7.1580) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Gatti_1996](drugs/drug_dapsone/Dapsone_Gatti1996_reference.md) | Gatti G et al., Population pharmacokinetics of dapsone…, Antimicrobial agents and ch… (1996) | [10.1128/AAC.40.12.2743](https://doi.org/10.1128/AAC.40.12.2743) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Kotila_2023](drugs/drug_dapsone/Dapsone_Kotila2023_reference.md) | Kotila OA et al., Non-compartmental and population pharma…, British journal of clinical… (2023) | [10.1111/bcp.15862](https://doi.org/10.1111/bcp.15862) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Simpson_2006_2](drugs/drug_dapsone/Dapsone_Simpson2006v2_reference.md) | Simpson JA et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02567.x](https://doi.org/10.1111/j.1365-2125.2005.02567.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Falloon_1994](drugs/drug_dapsone/Dapsone_Falloon1994_reference.md) | Falloon J et al., Pharmacokinetics and safety of weekly d…, Antimicrobial agents and ch… (1994) | [10.1128/AAC.38.7.1580](https://doi.org/10.1128/AAC.38.7.1580) |
 
 ## Coverage
 

@@ -21,16 +21,19 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ueshima_2025](drugs/drug_edoxaban/Edoxaban_Ueshima2025_reference.md) | Ueshima S et al., Population pharmacokinetics and pharmac…, Journal of pharmaceutical h… (2025) | [10.1186/s40780-025-00453-2](https://doi.org/10.1186/s40780-025-00453-2) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zou_2025](drugs/drug_edoxaban/Edoxaban_Zou2025_reference.md) | Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Edwina_2025](drugs/drug_edoxaban/Edoxaban_Edwina2025_reference.md) | Edwina AE et al., Population pharmacokinetics of edoxaban…, Journal of thrombosis and h… (2025) | [10.1016/j.jtha.2025.06.023](https://doi.org/10.1016/j.jtha.2025.06.023) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Terrier_2022](drugs/drug_edoxaban/Edoxaban_Terrier2022_reference.md) | Terrier J et al., Population Pharmacokinetic Models for D…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2649](https://doi.org/10.1002/cpt.2649) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ueshima_2025](drugs/drug_edoxaban/Edoxaban_Ueshima2025_reference.md) | Ueshima S et al., Population pharmacokinetics and pharmac…, Journal of pharmaceutical h… (2025) | [10.1186/s40780-025-00453-2](https://doi.org/10.1186/s40780-025-00453-2) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yin_2014](drugs/drug_edoxaban/Edoxaban_Yin2014_reference.md) | Yin (2014) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zou_2025](drugs/drug_edoxaban/Edoxaban_Zou2025_reference.md) | Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zou_2025](drugs/drug_edoxaban/pd_Zou_2025_PT.md) | Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zou_2025](drugs/drug_edoxaban/pd_Zou_2025_aPTT.md) | Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zou_2025](drugs/drug_edoxaban/pd_Zou_2025_anti_FXa.md) | Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Nyberg_2016](drugs/drug_edoxaban/pd_Nyberg_2016_CRB.md) | Nyberg J et al., Edoxaban Exposure-Response Analysis and…, CPT: pharmacometrics & syst… (2016) | [10.1002/psp4.12077](https://doi.org/10.1002/psp4.12077) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Nyberg_2016](drugs/drug_edoxaban/pd_Nyberg_2016_MACE.md) | Nyberg J et al., Edoxaban Exposure-Response Analysis and…, CPT: pharmacometrics & syst… (2016) | [10.1002/psp4.12077](https://doi.org/10.1002/psp4.12077) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Nyberg_2016](drugs/drug_edoxaban/pd_Nyberg_2016_all_death.md) | Nyberg J et al., Edoxaban Exposure-Response Analysis and…, CPT: pharmacometrics & syst… (2016) | [10.1002/psp4.12077](https://doi.org/10.1002/psp4.12077) |
@@ -39,9 +42,6 @@
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Nyberg_2016](drugs/drug_edoxaban/pd_Nyberg_2016_recurrent_VTE.md) | Nyberg J et al., Edoxaban Exposure-Response Analysis and…, CPT: pharmacometrics & syst… (2016) | [10.1002/psp4.12077](https://doi.org/10.1002/psp4.12077) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Xu_2023](drugs/drug_edoxaban/pd_Xu_2023_PT.md) | Xu R et al., Physiologically-based pharmacokinetic p…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12977](https://doi.org/10.1002/psp4.12977) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Xu_2023](drugs/drug_edoxaban/pd_Xu_2023_aPTT.md) | Xu R et al., Physiologically-based pharmacokinetic p…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12977](https://doi.org/10.1002/psp4.12977) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zou_2025](drugs/drug_edoxaban/pd_Zou_2025_PT.md) | Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zou_2025](drugs/drug_edoxaban/pd_Zou_2025_aPTT.md) | Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zou_2025](drugs/drug_edoxaban/pd_Zou_2025_anti_FXa.md) | Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248) |
 
 ## Coverage
 

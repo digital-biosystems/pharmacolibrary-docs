@@ -25,9 +25,9 @@ Brexpiprazole is also indicated for the treatment of agitation associated with d
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Frederiksen_2023_3](drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md) | Frederiksen (2023) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Higashi_2025](drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_reference.md) | Higashi K et al., Population pharmacokinetics of brexpipr…, Drug metabolism and pharmac… (2025) | [10.1016/j.dmpk.2025.101057](https://doi.org/10.1016/j.dmpk.2025.101057) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2023](drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md) | Wang (2023) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Frederiksen_2023_3](drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md) | Frederiksen (2023) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -39,13 +39,13 @@ Brexpiprazole is also indicated for the treatment of agitation associated with d
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Frederiksen_2023_3](drugs/drug_brexpiprazole/pgx_Frederiksen_2023_3_CYP2D6_Q27.md) | Frederiksen (2023) | — |
 | <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Beunk_2024](drugs/drug_brexpiprazole/pgx_Beunk_2024_CYP2D6_Q27.md) | Beunk L et al., Dutch Pharmacogenetics Working Group (D…, European journal of human g… (2024) | [10.1038/s41431-023-01347-3](https://doi.org/10.1038/s41431-023-01347-3) |
 | <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP3A4** | `Q27` · CL/F | metabolism | [Beunk_2024](drugs/drug_brexpiprazole/pgx_Beunk_2024_CYP3A4_Q27.md) | Beunk L et al., Dutch Pharmacogenetics Working Group (D…, European journal of human g… (2024) | [10.1038/s41431-023-01347-3](https://doi.org/10.1038/s41431-023-01347-3) |
 | <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP3A4** | `Q3` · CLint | metabolism | [Chen_2020](drugs/drug_brexpiprazole/pgx_Chen_2020_CYP3A4_Q3.md) | Chen B et al., Effects of 26 Recombinant CYP3A4 Varian…, Chemical research in toxico… (2020) | [10.1021/acs.chemrestox.9b00186](https://doi.org/10.1021/acs.chemrestox.9b00186) |
 | <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Elmokadem_2022](drugs/drug_brexpiprazole/pgx_Elmokadem_2022_CYP2D6_Q27.md) | Elmokadem A et al., Brexpiprazole Pharmacokinetics in CYP2D…, Journal of clinical pharmac… (2022) | [10.1002/jcph.1946](https://doi.org/10.1002/jcph.1946) |
 | <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Frederiksen_2023](drugs/drug_brexpiprazole/pgx_Frederiksen_2023_CYP2D6_Q27.md) | Frederiksen (2023) | — |
 | <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Frederiksen_2023_2](drugs/drug_brexpiprazole/pgx_Frederiksen_2023_2_CYP2D6_Q27.md) | Frederiksen (2023) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Frederiksen_2023_3](drugs/drug_brexpiprazole/pgx_Frederiksen_2023_3_CYP2D6_Q27.md) | Frederiksen (2023) | — |
 | <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Ishigooka_2018](drugs/drug_brexpiprazole/pgx_Ishigooka_2018_CYP2D6_Q27.md) | Ishigooka J et al., Pharmacokinetics and Safety of Brexpipr…, Journal of clinical pharmac… (2018) | [10.1002/jcph.979](https://doi.org/10.1002/jcph.979) |
 
 <details class="legend">

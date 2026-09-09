@@ -21,8 +21,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Cao_2025](drugs/drug_valoctocogene_roxaparvovec/ValoctocogeneRoxaparvovec_Cao2025_reference.md) | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Mahlangu_2023](drugs/drug_valoctocogene_roxaparvovec/ValoctocogeneRoxaparvovec_Mahlangu2023_reference.md) | Mahlangu J et al., Two-Year Outcomes of Valoctocogene Roxa…, The New England journal of… (2023) | [10.1056/NEJMoa2211075](https://doi.org/10.1056/NEJMoa2211075) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Cao_2025](drugs/drug_valoctocogene_roxaparvovec/ValoctocogeneRoxaparvovec_Cao2025_reference.md) | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
 
 ## Pharmacodynamics (PD)
 

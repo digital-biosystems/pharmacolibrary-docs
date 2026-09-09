@@ -43,6 +43,7 @@ Along with other blood coagulation factors, it is used to reverse acquired coagu
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Yoneyama_2018](drugs/drug_coagulation_factor_vii/pd_Yoneyama_2018_bleeding.md) | Yoneyama K et al., A Pharmacometric Approach to Substitute…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0616-3](https://doi.org/10.1007/s40262-017-0616-3) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Falkenhagen_2023](drugs/drug_coagulation_factor_vii/pd_Falkenhagen_2023_INR.md) | Falkenhagen U et al., Deriving mechanism-based pharmacodynami…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12903](https://doi.org/10.1002/psp4.12903) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Gandhi_2024](drugs/drug_coagulation_factor_vii/pd_Gandhi_2024_FVIIa.md) | Gandhi PS et al., A bispecific antibody approach for the…, Nature cardiovascular resea… (2024) | [10.1038/s44161-023-00418-4](https://doi.org/10.1038/s44161-023-00418-4) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Gandhi_2024](drugs/drug_coagulation_factor_vii/pd_Gandhi_2024_total_FVII_a.md) | Gandhi PS et al., A bispecific antibody approach for the…, Nature cardiovascular resea… (2024) | [10.1038/s44161-023-00418-4](https://doi.org/10.1038/s44161-023-00418-4) |
@@ -51,7 +52,6 @@ Along with other blood coagulation factors, it is used to reverse acquired coagu
 | <span class="pk-badge pk-badge--red">rejected</span> | [Muir_2024](drugs/drug_coagulation_factor_vii/pd_Muir_2024_prothrombin_time.md) | Muir I et al., Modelling the effects of 4-factor proth…, PloS one (2024) | [10.1371/journal.pone.0310883](https://doi.org/10.1371/journal.pone.0310883) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Muir_2024](drugs/drug_coagulation_factor_vii/pd_Muir_2024_total_thrombin_concentration.md) | Muir I et al., Modelling the effects of 4-factor proth…, PloS one (2024) | [10.1371/journal.pone.0310883](https://doi.org/10.1371/journal.pone.0310883) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Nishimura_2010](drugs/drug_coagulation_factor_vii/pd_Nishimura_2010_spermidine_induced_pro_PHBP_autoactivation.md) | Nishimura N et al., Purpurin as a specific inhibitor of spe…, Biological & pharmaceutical… (2010) | [10.1248/bpb.33.1430](https://doi.org/10.1248/bpb.33.1430) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Yoneyama_2018](drugs/drug_coagulation_factor_vii/pd_Yoneyama_2018_bleeding.md) | Yoneyama K et al., A Pharmacometric Approach to Substitute…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0616-3](https://doi.org/10.1007/s40262-017-0616-3) |
 
 ## Coverage
 

@@ -31,8 +31,8 @@ In heroin addicts, dihydrocodeine has been used as a substitute drug, in doses u
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Rezaee_2025](drugs/drug_dihydrocodeine/pd_Rezaee_2025_cough.md) | Rezaee S et al., Dextromethorphan Versus Dextrorphan: A…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70049](https://doi.org/10.1002/jcph.70049) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Webb_2001](drugs/drug_dihydrocodeine/pd_Webb_2001_CPT.md) | Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01414.x](https://doi.org/10.1046/j.0306-5251.2001.01414.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Rezaee_2025](drugs/drug_dihydrocodeine/pd_Rezaee_2025_cough.md) | Rezaee S et al., Dextromethorphan Versus Dextrorphan: A…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70049](https://doi.org/10.1002/jcph.70049) |
 
 ## Coverage
 

@@ -17,7 +17,7 @@ In order to function within the body, folic acid must first be reduced by the en
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 13:20 | 12:18 | 0/1/0 | 0/2/0 | 0/0/0 | 131,056/3,597 | ollama / qwen3.8:27b-mtp-q8_0 | 25 | 1/0 | 16/0 | 0 |
+| 2026-09-06 13:20 | 12:18 | 0/1/0 | 2/0/0 | 0/0/0 | 131,056/3,597 | ollama / qwen3.8:27b-mtp-q8_0 | 25 | 1/0 | 16/0 | 0 |
 
 ## popPK records
 
@@ -29,10 +29,10 @@ In order to function within the body, folic acid must first be reduced by the en
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Focks_2010](drugs/drug_folic_acid/pd_Focks_2010_unknown.md) | Focks A et al., Mechanistic link between uptake of sulf…, Environmental toxicology an… (2010) | [10.1002/etc.172](https://doi.org/10.1002/etc.172) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhao_1997](drugs/drug_folic_acid/pd_Zhao_1997_5_formyltetrahydrofolate_EC50.md) | Zhao R et al., Impact of overexpression of the reduced…, The Journal of biological c… (1997) | [10.1074/jbc.272.34.21207](https://doi.org/10.1074/jbc.272.34.21207) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhao_1997](drugs/drug_folic_acid/pd_Zhao_1997_MTX_IC50.md) | Zhao R et al., Impact of overexpression of the reduced…, The Journal of biological c… (1997) | [10.1074/jbc.272.34.21207](https://doi.org/10.1074/jbc.272.34.21207) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhao_1997](drugs/drug_folic_acid/pd_Zhao_1997_folic_acid_EC50.md) | Zhao R et al., Impact of overexpression of the reduced…, The Journal of biological c… (1997) | [10.1074/jbc.272.34.21207](https://doi.org/10.1074/jbc.272.34.21207) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Focks_2010](drugs/drug_folic_acid/pd_Focks_2010_unknown.md) | Focks A et al., Mechanistic link between uptake of sulf…, Environmental toxicology an… (2010) | [10.1002/etc.172](https://doi.org/10.1002/etc.172) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zhao_1997](drugs/drug_folic_acid/pd_Zhao_1997_5_formyltetrahydrofolate_EC50.md) | Zhao R et al., Impact of overexpression of the reduced…, The Journal of biological c… (1997) | [10.1074/jbc.272.34.21207](https://doi.org/10.1074/jbc.272.34.21207) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zhao_1997](drugs/drug_folic_acid/pd_Zhao_1997_MTX_IC50.md) | Zhao R et al., Impact of overexpression of the reduced…, The Journal of biological c… (1997) | [10.1074/jbc.272.34.21207](https://doi.org/10.1074/jbc.272.34.21207) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zhao_1997](drugs/drug_folic_acid/pd_Zhao_1997_folic_acid_EC50.md) | Zhao R et al., Impact of overexpression of the reduced…, The Journal of biological c… (1997) | [10.1074/jbc.272.34.21207](https://doi.org/10.1074/jbc.272.34.21207) |
 
 ## Coverage
 
@@ -49,7 +49,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Crider_2019.pdf` | Crider KS et al., Systematic Review and Bayesian Meta-ana…, Nutrients (2019) | popPK | 7 | [10.3390/nu11010071](https://doi.org/10.3390/nu11010071) | [30609688](https://pubmed.ncbi.nlm.nih.gov/30609688) | The evidence contains numeric steady-state ratios and time-to-steady-state estimates from a population PK model in the provided table, though traditional parameters like clearance or volume are not explicitly reported. |
 
-<sub>queue written 2026-09-06T13:10:28.701924+00:00</sub>
+<sub>queue written 2026-09-08T19:35:28.810632+00:00</sub>
 
 ## Screened and excluded
 

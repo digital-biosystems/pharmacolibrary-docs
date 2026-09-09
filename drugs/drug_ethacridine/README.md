@@ -19,15 +19,15 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Akbar_2026](drugs/drug_ethacridine/pd_Akbar_2026_IC50.md) | Akbar N et al., Glucosamine functionalized multi-walled…, International microbiology… (2026) | [10.1007/s10123-026-00889-y](https://doi.org/10.1007/s10123-026-00889-y) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Akbar_2026](drugs/drug_ethacridine/pd_Akbar_2026_bacterial_inhibition.md) | Akbar N et al., Glucosamine functionalized multi-walled…, International microbiology… (2026) | [10.1007/s10123-026-00889-y](https://doi.org/10.1007/s10123-026-00889-y) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Akbar_2026](drugs/drug_ethacridine/pd_Akbar_2026_cytotoxicity.md) | Akbar N et al., Glucosamine functionalized multi-walled…, International microbiology… (2026) | [10.1007/s10123-026-00889-y](https://doi.org/10.1007/s10123-026-00889-y) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Li_2020](drugs/drug_ethacridine/pd_Li_2020_Mpro_activity.md) | Li X et al., Ethacridine inhibits SARS-CoV-2 by inac…, bioRxiv : the preprint serv… (2020) | [10.1101/2020.10.28.359042](https://doi.org/10.1101/2020.10.28.359042) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Li_2020](drugs/drug_ethacridine/pd_Li_2020_infection_ratio.md) | Li X et al., Ethacridine inhibits SARS-CoV-2 by inac…, bioRxiv : the preprint serv… (2020) | [10.1101/2020.10.28.359042](https://doi.org/10.1101/2020.10.28.359042) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Li_2020](drugs/drug_ethacridine/pd_Li_2020_viral_titer.md) | Li X et al., Ethacridine inhibits SARS-CoV-2 by inac…, bioRxiv : the preprint serv… (2020) | [10.1101/2020.10.28.359042](https://doi.org/10.1101/2020.10.28.359042) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Li_2021](drugs/drug_ethacridine/pd_Li_2021_Mpro_activity.md) | Li X et al., Ethacridine inhibits SARS-CoV-2 by inac…, PLoS pathogens (2021) | [10.1371/journal.ppat.1009898](https://doi.org/10.1371/journal.ppat.1009898) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Li_2021](drugs/drug_ethacridine/pd_Li_2021_viral_RNA_copies.md) | Li X et al., Ethacridine inhibits SARS-CoV-2 by inac…, PLoS pathogens (2021) | [10.1371/journal.ppat.1009898](https://doi.org/10.1371/journal.ppat.1009898) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Li_2021](drugs/drug_ethacridine/pd_Li_2021_viral_titer.md) | Li X et al., Ethacridine inhibits SARS-CoV-2 by inac…, PLoS pathogens (2021) | [10.1371/journal.ppat.1009898](https://doi.org/10.1371/journal.ppat.1009898) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Akbar_2026](drugs/drug_ethacridine/pd_Akbar_2026_IC50.md) | Akbar N et al., Glucosamine functionalized multi-walled…, International microbiology… (2026) | [10.1007/s10123-026-00889-y](https://doi.org/10.1007/s10123-026-00889-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Akbar_2026](drugs/drug_ethacridine/pd_Akbar_2026_bacterial_inhibition.md) | Akbar N et al., Glucosamine functionalized multi-walled…, International microbiology… (2026) | [10.1007/s10123-026-00889-y](https://doi.org/10.1007/s10123-026-00889-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Akbar_2026](drugs/drug_ethacridine/pd_Akbar_2026_cytotoxicity.md) | Akbar N et al., Glucosamine functionalized multi-walled…, International microbiology… (2026) | [10.1007/s10123-026-00889-y](https://doi.org/10.1007/s10123-026-00889-y) |
 
 ## Coverage
 

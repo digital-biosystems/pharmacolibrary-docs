@@ -23,9 +23,9 @@ Enoxaparin is also indicated in the prophylaxis of DVT in abdominal surgery, hip
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Oualha_2018](drugs/drug_enoxaparin/Enoxaparin_Oualha2018_reference.md) | Oualha M et al., Population pharmacokinetics of enoxapar…, British journal of clinical… (2018) | [10.1111/bcp.13543](https://doi.org/10.1111/bcp.13543) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Zufferey_2021](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_iiv_r_s_e.md) | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Zufferey_2021](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_value_r_s_e.md) | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Oualha_2018](drugs/drug_enoxaparin/Enoxaparin_Oualha2018_reference.md) | Oualha M et al., Population pharmacokinetics of enoxapar…, British journal of clinical… (2018) | [10.1111/bcp.13543](https://doi.org/10.1111/bcp.13543) |
 
 ## Coverage
 

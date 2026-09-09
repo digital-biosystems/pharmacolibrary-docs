@@ -23,12 +23,12 @@ Levetiracetam is also available as an orally dissolvable tablet that is indicate
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Onos_2022](drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference.md) | Onos KD et al., Pharmacokinetic, pharmacodynamic, and t…, Alzheimer's & dementia (New… (2022) | [10.1002/trc2.12329](https://doi.org/10.1002/trc2.12329) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Schoemaker_2018](drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md) | Schoemaker (2018) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Karatza_2020](drugs/drug_levetiracetam/Levetiracetam_Karatza2020_reference.md) | Karatza E et al., Pharmacokinetic and pharmacodynamic mod…, Xenobiotica; the fate of fo… (2020) | [10.1080/00498254.2020.1746981](https://doi.org/10.1080/00498254.2020.1746981) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Li_2023](drugs/drug_levetiracetam/Levetiracetam_Li2023_base.md) | Li Y et al., Population pharmacokinetics and dosing…, British journal of clinical… (2023) | [10.1111/bcp.15572](https://doi.org/10.1111/bcp.15572) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Li_2023](drugs/drug_levetiracetam/Levetiracetam_Li2023_final.md) | Li Y et al., Population pharmacokinetics and dosing…, British journal of clinical… (2023) | [10.1111/bcp.15572](https://doi.org/10.1111/bcp.15572) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Lima-Rogel_2018](drugs/drug_levetiracetam/Levetiracetam_LimaRogel2018_reference.md) | Lima-Rogel V et al., Population pharmacokinetics of levetira…, Journal of clinical pharmac… (2018) | [10.1111/jcpt.12658](https://doi.org/10.1111/jcpt.12658) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Onos_2022](drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference.md) | Onos KD et al., Pharmacokinetic, pharmacodynamic, and t…, Alzheimer's & dementia (New… (2022) | [10.1002/trc2.12329](https://doi.org/10.1002/trc2.12329) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Schoemaker_2018](drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md) | Schoemaker (2018) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Sharpe_2024](drugs/drug_levetiracetam/Levetiracetam_Sharpe2024_reference.md) | Sharpe C et al., Pharmacokinetic and pharmacodynamic dat…, Archives of disease in chil… (2024) | [10.1136/archdischild-2022-324952](https://doi.org/10.1136/archdischild-2022-324952) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Zimmerman_2023](drugs/drug_levetiracetam/Levetiracetam_Zimmerman2023_reference.md) | Zimmerman KO et al., Pharmacokinetics and Proposed Dosing of…, The journal of pediatric ph… (2023) | [10.5863/1551-6776-28.8.693](https://doi.org/10.5863/1551-6776-28.8.693) |
 
@@ -36,8 +36,8 @@ Levetiracetam is also available as an orally dissolvable tablet that is indicate
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Lee_2019](drugs/drug_levetiracetam/pd_Lee_2019_ETCO2.md) | Lee JH et al., A pharmacodynamic model of respiratory…, Acta pharmacologica Sinica (2019) | [10.1038/s41401-018-0156-x](https://doi.org/10.1038/s41401-018-0156-x) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Schoemaker_2018](drugs/drug_levetiracetam/pd_Schoemaker_2018_seizure_count.md) | Schoemaker (2018) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Lee_2019](drugs/drug_levetiracetam/pd_Lee_2019_ETCO2.md) | Lee JH et al., A pharmacodynamic model of respiratory…, Acta pharmacologica Sinica (2019) | [10.1038/s41401-018-0156-x](https://doi.org/10.1038/s41401-018-0156-x) |
 
 ## Coverage
 

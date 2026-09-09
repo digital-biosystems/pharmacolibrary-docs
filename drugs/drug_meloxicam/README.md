@@ -31,8 +31,8 @@ Off-label uses include the treatment of dental or post-surgical pain.
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Aoyama_2017](drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference.md) | Aoyama T et al., Pharmacokinetics and Pharmacodynamics o…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12259](https://doi.org/10.1002/psp4.12259) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Meineke_2003](drugs/drug_meloxicam/Meloxicam_Meineke2003_reference.md) | Meineke I et al., Population pharmacokinetic analysis of…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01753.x](https://doi.org/10.1046/j.1365-2125.2003.01753.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Aoyama_2017](drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference.md) | Aoyama T et al., Pharmacokinetics and Pharmacodynamics o…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12259](https://doi.org/10.1002/psp4.12259) |
 
 ## Coverage
 

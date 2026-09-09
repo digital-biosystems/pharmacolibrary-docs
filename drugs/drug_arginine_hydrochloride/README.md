@@ -21,9 +21,9 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Yeo_2013](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_reference.md) | Yeo TW et al., A randomized pilot study of L-arginine…, PloS one (2013) | [10.1371/journal.pone.0069587](https://doi.org/10.1371/journal.pone.0069587) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Awan_2024](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Awan2024_reference.md) | Awan SF et al., Phase 1 trial evaluating safety and pha…, JCI insight (2024) | [10.1172/jci.insight.175375](https://doi.org/10.1172/jci.insight.175375) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Wang_2018](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Wang2018_reference.md) | Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate of fo… (2018) | [10.1080/00498254.2017.1370745](https://doi.org/10.1080/00498254.2017.1370745) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yeo_2013](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_reference.md) | Yeo TW et al., A randomized pilot study of L-arginine…, PloS one (2013) | [10.1371/journal.pone.0069587](https://doi.org/10.1371/journal.pone.0069587) |
 
 ## Coverage
 

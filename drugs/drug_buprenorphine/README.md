@@ -46,8 +46,8 @@ Sublingual tablets and buccal films, in combination with naloxone, are indicated
 | <span class="pk-badge pk-badge--green">extracted</span> | [Walsh_2024](drugs/drug_buprenorphine/pd_Walsh_2024_COWS.md) | Walsh SL et al., Pharmacokinetic-pharmacodynamic analysi…, Neuropsychopharmacology : o… (2024) | [10.1038/s41386-023-01793-z](https://doi.org/10.1038/s41386-023-01793-z) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Walsh_2024](drugs/drug_buprenorphine/pd_Walsh_2024_desire_to_use_VAS.md) | Walsh SL et al., Pharmacokinetic-pharmacodynamic analysi…, Neuropsychopharmacology : o… (2024) | [10.1038/s41386-023-01793-z](https://doi.org/10.1038/s41386-023-01793-z) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Walsh_2024](drugs/drug_buprenorphine/pd_Walsh_2024_drug_liking_E_max_VAS.md) | Walsh SL et al., Pharmacokinetic-pharmacodynamic analysi…, Neuropsychopharmacology : o… (2024) | [10.1038/s41386-023-01793-z](https://doi.org/10.1038/s41386-023-01793-z) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Yassen_2007](drugs/drug_buprenorphine/pd_Yassen_2007_Vi50.md) | Yassen A et al., Mechanism-based PK/PD modeling of the r…, Clinical pharmacology and t… (2007) | [10.1038/sj.clpt.6100025](https://doi.org/10.1038/sj.clpt.6100025) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Yassen_2008](drugs/drug_buprenorphine/pd_Yassen_2008_NA.md) | Yassen A et al., Pharmacokinetic-pharmacodynamic modelin…, Pharmaceutical research (2008) | [10.1007/s11095-007-9440-z](https://doi.org/10.1007/s11095-007-9440-z) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Yassen_2007](drugs/drug_buprenorphine/pd_Yassen_2007_Vi50.md) | Yassen A et al., Mechanism-based PK/PD modeling of the r…, Clinical pharmacology and t… (2007) | [10.1038/sj.clpt.6100025](https://doi.org/10.1038/sj.clpt.6100025) |
 
 ## Pharmacogenomics (PGx)
 

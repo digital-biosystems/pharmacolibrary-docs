@@ -43,8 +43,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Ngo_2020](drugs/drug_duloxetine/Duloxetine_Ngo2020_reference.md) | Ngo TL et al., Application of an Inter-Species Extrapo…, International journal of mo… (2020) | [10.3390/ijms21051862](https://doi.org/10.3390/ijms21051862) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Skinner_2004](drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md) | Skinner MH et al., Effect of age on the pharmacokinetics o…, British journal of clinical… (2004) | [10.1046/j.1365-2125.2003.01963.x](https://doi.org/10.1046/j.1365-2125.2003.01963.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Ngo_2020](drugs/drug_duloxetine/Duloxetine_Ngo2020_reference.md) | Ngo TL et al., Application of an Inter-Species Extrapo…, International journal of mo… (2020) | [10.3390/ijms21051862](https://doi.org/10.3390/ijms21051862) |
 
 ## Coverage
 

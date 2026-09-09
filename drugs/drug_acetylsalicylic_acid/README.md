@@ -49,15 +49,15 @@ In the setting of acute myocardial infarction, or before percutaneous interventi
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Cuesta-Gragera_2015](drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_CuestaGragera2015_reference.md) | Cuesta-Gragera A et al., Semi-physiologic model validation and b…, European journal of pharmac… (2015) | [10.1016/j.ejps.2015.04.002](https://doi.org/10.1016/j.ejps.2015.04.002) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Koh_2025](drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference.md) | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/dddt.s533428](https://doi.org/10.2147/dddt.s533428) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Cuesta-Gragera_2015](drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_CuestaGragera2015_reference.md) | Cuesta-Gragera A et al., Semi-physiologic model validation and b…, European journal of pharmac… (2015) | [10.1016/j.ejps.2015.04.002](https://doi.org/10.1016/j.ejps.2015.04.002) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Hong_2008](drugs/drug_acetylsalicylic_acid/pd_Hong_2008_none.md) | Hong Y et al., Population pharmacodynamic modelling of…, Clinical pharmacokinetics (2008) | [10.2165/00003088-200847020-00006](https://doi.org/10.2165/00003088-200847020-00006) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Koh_2025](drugs/drug_acetylsalicylic_acid/pd_Koh_2025_TXB2.md) | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/dddt.s533428](https://doi.org/10.2147/dddt.s533428) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Hong_2008](drugs/drug_acetylsalicylic_acid/pd_Hong_2008_none.md) | Hong Y et al., Population pharmacodynamic modelling of…, Clinical pharmacokinetics (2008) | [10.2165/00003088-200847020-00006](https://doi.org/10.2165/00003088-200847020-00006) |
 
 ## Pharmacogenomics (PGx)
 

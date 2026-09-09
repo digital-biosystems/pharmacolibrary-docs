@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 13:30 | 9:58 | 0/0/0 | 0/0/0 | 0/0/0 | 121,330/2,585 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 0/0 | 11/0 | 0 |
+| 2026-09-08 19:36 | 0:35 | 0/0/0 | 0/0/0 | 0/0/0 | 1,724/310 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 0/0 | 11/0 | 0 |
 
 ## popPK records
 
@@ -23,7 +23,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 39 matched, 32 returned
+- **PubMed hits:** 16 matched, 32 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -36,7 +36,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Beshara_1999.pdf` | Beshara S et al., Kinetic analysis of 52Fe-labelled iron(…, British journal of haematol… (1999) | popPK | 8 | [10.1046/j.1365-2141.1999.01170.x](https://doi.org/10.1046/j.1365-2141.1999.01170.x) | [10050710](https://pubmed.ncbi.nlm.nih.gov/10050710) | The study reports a compartmental PK model for saccharated iron oxide (Venofer) in minipigs, but specific numeric parameter values (CL, V, Q, ka) are not present in the provided text. |
 
-<sub>queue written 2026-09-06T13:30:15.406925+00:00</sub>
+<sub>queue written 2026-09-08T19:36:21.952507+00:00</sub>
 
 ## Screened and excluded
 

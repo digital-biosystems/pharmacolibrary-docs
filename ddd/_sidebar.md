@@ -4,10 +4,13 @@
 - [Index](/)
 
 #### ddd
-- [atazanavir <sub>(4/0/0)</sub>](../drugs/drug_atazanavir/)
-- [bisoprolol <sub>(7/0/0)</sub>](../drugs/drug_bisoprolol/)
-- [mirtazapine <sub>(0/0/0)</sub>](../drugs/drug_mirtazapine/)
-- [tolvaptan <sub>(9/21/2)</sub>](../drugs/drug_tolvaptan/)
+- allopurinol <sub>(0/0/0)</sub>
+- amoxicillin <sub>(0/0/0)</sub>
+- clopidogrel <sub>(0/0/0)</sub>
+- ibuprofen <sub>(0/0/0)</sub>
+- metformin <sub>(0/0/0)</sub>
+- semaglutide <sub>(0/0/0)</sub>
+- tolvaptan <sub>(0/0/0)</sub>
 #### dbs
 - allopurinol <sub>(0/0/0)</sub>
 - bleomycin <sub>(0/0/0)</sub>
@@ -25,7 +28,7 @@
 - remdesivir <sub>(0/0/0)</sub>
 - simvastatin <sub>(0/0/0)</sub>
 - telmisartan <sub>(0/0/0)</sub>
-- [tolvaptan <sub>(9/21/2)</sub>](../drugs/drug_tolvaptan/)
+- tolvaptan <sub>(0/0/0)</sub>
 - vinblastine <sub>(0/0/0)</sub>
 #### dph
 - abacavir <sub>(0/0/0)</sub>
@@ -67,348 +70,703 @@
 - tirzepatide <sub>(0/0/0)</sub>
 
 #### ATC
+- **A Alimentary Tract And Metabolism**
+  - A02 Drugs For Acid Related Disorders
+    - A02B Drugs For Peptic Ulcer And Gastro-Oesophageal Reflux Disease (Gord)
+      - acetoxolone <sub>(0/0/0)</sub>
+      - alginic acid <sub>(0/0/0)</sub>
+      - [amoxicillin <sub>(25/3/0)</sub>](../drugs/drug_amoxicillin/)
+      - bismuth subcitrate <sub>(0/0/0)</sub>
+      - bismuth subcitrate tetracycline and metronidazole <sub>(0/0/0)</sub>
+      - bismuth subnitrate <sub>(0/0/0)</sub>
+      - carbenoxolone <sub>(0/0/0)</sub>
+      - carbenoxolone combinations excl psycholeptics <sub>(0/0/0)</sub>
+      - carbenoxolone combinations with psycholeptics <sub>(0/0/0)</sub>
+      - cimetidine <sub>(0/0/0)</sub>
+      - cimetidine combinations <sub>(0/0/0)</sub>
+      - clarithromycin <sub>(0/0/0)</sub>
+      - dexlansoprazole <sub>(0/0/0)</sub>
+      - dexrabeprazole <sub>(0/0/0)</sub>
+      - enprostil <sub>(0/0/0)</sub>
+      - esomeprazole <sub>(0/0/0)</sub>
+      - esomeprazole amoxicillin and clarithromycin <sub>(0/0/0)</sub>
+      - famotidine <sub>(0/0/0)</sub>
+      - famotidine combinations <sub>(0/0/0)</sub>
+      - fexuprazan <sub>(0/0/0)</sub>
+      - gefarnate <sub>(0/0/0)</sub>
+      - gefarnate combinations with psycholeptics <sub>(0/0/0)</sub>
+      - ilaprazole <sub>(0/0/0)</sub>
+      - irsogladine <sub>(0/0/0)</sub>
+      - lafutidine <sub>(0/0/0)</sub>
+      - lansoprazole <sub>(0/0/0)</sub>
+      - lansoprazole amoxicillin and clarithromycin <sub>(0/0/0)</sub>
+      - lansoprazole amoxicillin and levofloxacin <sub>(0/0/0)</sub>
+      - lansoprazole amoxicillin and metronidazole <sub>(0/0/0)</sub>
+      - lansoprazole clarithromycin and tinidazole <sub>(0/0/0)</sub>
+      - lansoprazole combinations <sub>(0/0/0)</sub>
+      - lansoprazole tetracycline and metronidazole <sub>(0/0/0)</sub>
+      - levofloxacin <sub>(0/0/0)</sub>
+      - methiosulfonium chloride <sub>(0/0/0)</sub>
+      - misoprostol <sub>(0/0/0)</sub>
+      - niperotidine <sub>(0/0/0)</sub>
+      - nizatidine <sub>(0/0/0)</sub>
+      - omeprazole <sub>(0/0/0)</sub>
+      - omeprazole amoxicillin and clarithromycin <sub>(0/0/0)</sub>
+      - omeprazole amoxicillin and metronidazole <sub>(0/0/0)</sub>
+      - omeprazole amoxicillin and rifabutin <sub>(0/0/0)</sub>
+      - omeprazole combinations <sub>(0/0/0)</sub>
+      - pantoprazole <sub>(0/0/0)</sub>
+      - pantoprazole amoxicillin and clarithromycin <sub>(0/0/0)</sub>
+      - pantoprazole amoxicillin clarithromycin and metronidazole <sub>(0/0/0)</sub>
+      - pirenzepine <sub>(0/0/0)</sub>
+      - proglumide <sub>(0/0/0)</sub>
+      - rabeprazole <sub>(0/0/0)</sub>
+      - rabeprazole amoxicillin and clarithromycin <sub>(0/0/0)</sub>
+      - rabeprazole amoxicillin and metronidazole <sub>(0/0/0)</sub>
+      - rabeprazole combinations <sub>(0/0/0)</sub>
+      - ranitidine <sub>(0/0/0)</sub>
+      - ranitidine bismuth citrate <sub>(0/0/0)</sub>
+      - rebamipide <sub>(0/0/0)</sub>
+      - rifabutin <sub>(0/0/0)</sub>
+      - roxatidine <sub>(0/0/0)</sub>
+      - sucralfate <sub>(0/0/0)</sub>
+      - sulglicotide <sub>(0/0/0)</sub>
+      - tegoprazan <sub>(0/0/0)</sub>
+      - teprenone <sub>(0/0/0)</sub>
+      - tinidazole <sub>(0/0/0)</sub>
+      - troxipide <sub>(0/0/0)</sub>
+      - vonoprazan <sub>(0/0/0)</sub>
+      - vonoprazan amoxicillin and clarithromycin <sub>(0/0/0)</sub>
+      - vonoprazan amoxicillin and metronidazole <sub>(0/0/0)</sub>
+      - vonoprazan and amoxicillin <sub>(0/0/0)</sub>
+      - zastaprazan <sub>(0/0/0)</sub>
+      - zolimidine <sub>(0/0/0)</sub>
+  - A10 Drugs Used In Diabetes
+    - A10B Blood Glucose Lowering Drugs, Excl. Insulins
+      - acarbose <sub>(0/0/0)</sub>
+      - acetohexamide <sub>(0/0/0)</sub>
+      - albiglutide <sub>(0/0/0)</sub>
+      - alogliptin <sub>(0/0/0)</sub>
+      - beinaglutide <sub>(0/0/0)</sub>
+      - benfluorex <sub>(0/0/0)</sub>
+      - bexagliflozin <sub>(0/0/0)</sub>
+      - buformin <sub>(0/0/0)</sub>
+      - canagliflozin <sub>(0/0/0)</sub>
+      - carbutamide <sub>(0/0/0)</sub>
+      - carfloglitazar <sub>(0/0/0)</sub>
+      - chlorpropamide <sub>(0/0/0)</sub>
+      - dapagliflozin <sub>(0/0/0)</sub>
+      - dorzagliatin <sub>(0/0/0)</sub>
+      - dulaglutide <sub>(0/0/0)</sub>
+      - empagliflozin <sub>(0/0/0)</sub>
+      - enavogliflozin <sub>(0/0/0)</sub>
+      - ertugliflozin <sub>(0/0/0)</sub>
+      - evogliptin <sub>(0/0/0)</sub>
+      - exenatide <sub>(0/0/0)</sub>
+      - gemigliptin <sub>(0/0/0)</sub>
+      - gemigliptin and dapagliflozin <sub>(0/0/0)</sub>
+      - gemigliptin and rosuvastatin <sub>(0/0/0)</sub>
+      - glibenclamide <sub>(0/0/0)</sub>
+      - glibornuride <sub>(0/0/0)</sub>
+      - gliclazide <sub>(0/0/0)</sub>
+      - glimepiride <sub>(0/0/0)</sub>
+      - glimepiride and dapagliflozin <sub>(0/0/0)</sub>
+      - glimepiride and pioglitazone <sub>(0/0/0)</sub>
+      - glimepiride and rosiglitazone <sub>(0/0/0)</sub>
+      - glipizide <sub>(0/0/0)</sub>
+      - gliquidone <sub>(0/0/0)</sub>
+      - glisoxepide <sub>(0/0/0)</sub>
+      - glymidine <sub>(0/0/0)</sub>
+      - guar gum <sub>(0/0/0)</sub>
+      - imeglimin <sub>(0/0/0)</sub>
+      - ipragliflozin <sub>(0/0/0)</sub>
+      - linagliptin <sub>(0/0/0)</sub>
+      - linagliptin and empagliflozin <sub>(0/0/0)</sub>
+      - lobeglitazone <sub>(0/0/0)</sub>
+      - luseogliflozin <sub>(0/0/0)</sub>
+      - metahexamide <sub>(0/0/0)</sub>
+      - [metformin <sub>(22/16/7)</sub>](../drugs/drug_metformin/)
+      - metformin and acarbose <sub>(0/0/0)</sub>
+      - metformin and alogliptin <sub>(0/0/0)</sub>
+      - metformin and canagliflozin <sub>(0/0/0)</sub>
+      - metformin and dapagliflozin <sub>(0/0/0)</sub>
+      - metformin and empagliflozin <sub>(0/0/0)</sub>
+      - metformin and enavogliflozin <sub>(0/0/0)</sub>
+      - metformin and ertugliflozin <sub>(0/0/0)</sub>
+      - metformin and evogliptin <sub>(0/0/0)</sub>
+      - metformin and gemigliptin <sub>(0/0/0)</sub>
+      - metformin and linagliptin <sub>(0/0/0)</sub>
+      - metformin and lobeglitazone <sub>(0/0/0)</sub>
+      - metformin and pioglitazone <sub>(0/0/0)</sub>
+      - metformin and repaglinide <sub>(0/0/0)</sub>
+      - metformin and rosiglitazone <sub>(0/0/0)</sub>
+      - metformin and saxagliptin <sub>(0/0/0)</sub>
+      - metformin and sitagliptin <sub>(0/0/0)</sub>
+      - metformin and sulfonylureas <sub>(0/0/0)</sub>
+      - metformin and teneligliptin <sub>(0/0/0)</sub>
+      - metformin and vildagliptin <sub>(0/0/0)</sub>
+      - metformin linagliptin and empagliflozin <sub>(0/0/0)</sub>
+      - metformin saxagliptin and dapagliflozin <sub>(0/0/0)</sub>
+      - metformin sitagliptin and dapagliflozin <sub>(0/0/0)</sub>
+      - miglitol <sub>(0/0/0)</sub>
+      - mitiglinide <sub>(0/0/0)</sub>
+      - nateglinide <sub>(0/0/0)</sub>
+      - phenformin <sub>(0/0/0)</sub>
+      - phenformin and sulfonylureas <sub>(0/0/0)</sub>
+      - pioglitazone <sub>(0/0/0)</sub>
+      - pioglitazone and alogliptin <sub>(0/0/0)</sub>
+      - pioglitazone and dapagliflozin <sub>(0/0/0)</sub>
+      - pioglitazone and sitagliptin <sub>(0/0/0)</sub>
+      - pramlintide <sub>(0/0/0)</sub>
+      - repaglinide <sub>(0/0/0)</sub>
+      - rosiglitazone <sub>(0/0/0)</sub>
+      - rosuvastatin <sub>(0/0/0)</sub>
+      - saxagliptin <sub>(0/0/0)</sub>
+      - saxagliptin and dapagliflozin <sub>(0/0/0)</sub>
+      - [semaglutide <sub>(13/43/0)</sub>](../drugs/drug_semaglutide/)
+      - simvastatin <sub>(0/0/0)</sub>
+      - sitagliptin <sub>(0/0/0)</sub>
+      - sitagliptin and dapagliflozin <sub>(0/0/0)</sub>
+      - sitagliptin and ertugliflozin <sub>(0/0/0)</sub>
+      - sitagliptin and simvastatin <sub>(0/0/0)</sub>
+      - sotagliflozin <sub>(0/0/0)</sub>
+      - teneligliptin <sub>(0/0/0)</sub>
+      - tirzepatide <sub>(0/0/0)</sub>
+      - tolazamide <sub>(0/0/0)</sub>
+      - tolbutamide <sub>(0/0/0)</sub>
+      - troglitazone <sub>(0/0/0)</sub>
+      - vildagliptin <sub>(0/0/0)</sub>
+      - voglibose <sub>(0/0/0)</sub>
+- **B Blood And Blood Forming Organs**
+  - B01 Antithrombotic Agents
+    - B01A Antithrombotic Agents
+      - abciximab <sub>(0/0/0)</sub>
+      - acenocoumarol <sub>(0/0/0)</sub>
+      - acetylsalicylic acid combinations with proton pump inhibitors <sub>(0/0/0)</sub>
+      - aloxiprin <sub>(0/0/0)</sub>
+      - alteplase <sub>(0/0/0)</sub>
+      - ancrod <sub>(0/0/0)</sub>
+      - anistreplase <sub>(0/0/0)</sub>
+      - antithrombin iii <sub>(0/0/0)</sub>
+      - apadamtase alfa <sub>(0/0/0)</sub>
+      - apadamtase alfa and cinaxadamtase alfa <sub>(0/0/0)</sub>
+      - apixaban <sub>(0/0/0)</sub>
+      - argatroban <sub>(0/0/0)</sub>
+      - bemiparin <sub>(0/0/0)</sub>
+      - beraprost <sub>(0/0/0)</sub>
+      - betrixaban <sub>(0/0/0)</sub>
+      - bivalirudin <sub>(0/0/0)</sub>
+      - brinase <sub>(0/0/0)</sub>
+      - cangrelor <sub>(0/0/0)</sub>
+      - caplacizumab <sub>(0/0/0)</sub>
+      - carbasalate calcium <sub>(0/0/0)</sub>
+      - cilostazol <sub>(0/0/0)</sub>
+      - [clopidogrel <sub>(16/4/14)</sub>](../drugs/drug_clopidogrel/)
+      - cloricromen <sub>(0/0/0)</sub>
+      - clorindione <sub>(0/0/0)</sub>
+      - dabigatran etexilate <sub>(0/0/0)</sub>
+      - dalteparin <sub>(0/0/0)</sub>
+      - danaparoid <sub>(0/0/0)</sub>
+      - defibrotide <sub>(0/0/0)</sub>
+      - dermatan sulfate <sub>(0/0/0)</sub>
+      - desirudin <sub>(0/0/0)</sub>
+      - dicoumarol <sub>(0/0/0)</sub>
+      - diphenadione <sub>(0/0/0)</sub>
+      - dipyridamole <sub>(0/0/0)</sub>
+      - ditazole <sub>(0/0/0)</sub>
+      - drotrecogin alfa <sub>(0/0/0)</sub>
+      - drotrecogin alfa activated <sub>(0/0/0)</sub>
+      - edoxaban <sub>(0/0/0)</sub>
+      - enoxaparin <sub>(0/0/0)</sub>
+      - epoprostenol <sub>(0/0/0)</sub>
+      - eptifibatide <sub>(0/0/0)</sub>
+      - ethyl biscoumacetate <sub>(0/0/0)</sub>
+      - fibrinolysin <sub>(0/0/0)</sub>
+      - fluindione <sub>(0/0/0)</sub>
+      - fondaparinux <sub>(0/0/0)</sub>
+      - heparin <sub>(0/0/0)</sub>
+      - heparin combinations <sub>(0/0/0)</sub>
+      - iloprost <sub>(0/0/0)</sub>
+      - indobufen <sub>(0/0/0)</sub>
+      - lepirudin <sub>(0/0/0)</sub>
+      - limaprost <sub>(0/0/0)</sub>
+      - melagatran <sub>(0/0/0)</sub>
+      - nadroparin <sub>(0/0/0)</sub>
+      - parnaparin <sub>(0/0/0)</sub>
+      - phenindione <sub>(0/0/0)</sub>
+      - phenprocoumon <sub>(0/0/0)</sub>
+      - picotamide <sub>(0/0/0)</sub>
+      - prasugrel <sub>(0/0/0)</sub>
+      - protein c <sub>(0/0/0)</sub>
+      - reteplase <sub>(0/0/0)</sub>
+      - reviparin <sub>(0/0/0)</sub>
+      - rivaroxaban <sub>(0/0/0)</sub>
+      - rivaroxaban and acetylsalicylic acid <sub>(0/0/0)</sub>
+      - saruplase <sub>(0/0/0)</sub>
+      - selexipag <sub>(0/0/0)</sub>
+      - streptokinase <sub>(0/0/0)</sub>
+      - sulodexide <sub>(0/0/0)</sub>
+      - tenecteplase <sub>(0/0/0)</sub>
+      - ticagrelor <sub>(0/0/0)</sub>
+      - ticlopidine <sub>(0/0/0)</sub>
+      - tinzaparin <sub>(0/0/0)</sub>
+      - tioclomarol <sub>(0/0/0)</sub>
+      - tirofiban <sub>(0/0/0)</sub>
+      - treprostinil <sub>(0/0/0)</sub>
+      - triflusal <sub>(0/0/0)</sub>
+      - urokinase <sub>(0/0/0)</sub>
+      - vorapaxar <sub>(0/0/0)</sub>
+      - warfarin <sub>(0/0/0)</sub>
+      - ximelagatran <sub>(0/0/0)</sub>
 - **C Cardiovascular System**
+  - C01 Cardiac Therapy
+    - C01E Other Cardiac Preparations
+      - acadesine <sub>(0/0/0)</sub>
+      - acoramidis <sub>(0/0/0)</sub>
+      - adenosine <sub>(0/0/0)</sub>
+      - alprostadil <sub>(0/0/0)</sub>
+      - camphora <sub>(0/0/0)</sub>
+      - crataegus glycosides <sub>(0/0/0)</sub>
+      - creatinolfosfate <sub>(0/0/0)</sub>
+      - fosfocreatine <sub>(0/0/0)</sub>
+      - fructose 16 diphosphate <sub>(0/0/0)</sub>
+      - [ibuprofen <sub>(21/12/8)</sub>](../drugs/drug_ibuprofen/)
+      - indometacin <sub>(0/0/0)</sub>
+      - ivabradine <sub>(0/0/0)</sub>
+      - mavacamten <sub>(0/0/0)</sub>
+      - meldonium <sub>(0/0/0)</sub>
+      - ranolazine <sub>(0/0/0)</sub>
+      - regadenoson <sub>(0/0/0)</sub>
+      - tiazotic acid <sub>(0/0/0)</sub>
+      - tiracizine <sub>(0/0/0)</sub>
+      - trimetazidine <sub>(0/0/0)</sub>
+      - ubidecarenone <sub>(0/0/0)</sub>
   - C03 Diuretics
     - C03X Other Diuretics
       - conivaptan <sub>(0/0/0)</sub>
       - [tolvaptan <sub>(9/21/2)</sub>](../drugs/drug_tolvaptan/)
-  - C07 Beta Blocking Agents
-    - C07A Beta Blocking Agents
-      - acebutolol <sub>(0/0/0)</sub>
-      - alprenolol <sub>(0/0/0)</sub>
-      - atenolol <sub>(0/0/0)</sub>
-      - betaxolol <sub>(0/0/0)</sub>
-      - bevantolol <sub>(0/0/0)</sub>
-      - [bisoprolol <sub>(7/0/0)</sub>](../drugs/drug_bisoprolol/)
-      - bopindolol <sub>(0/0/0)</sub>
-      - bupranolol <sub>(0/0/0)</sub>
-      - carteolol <sub>(0/0/0)</sub>
-      - carvedilol <sub>(0/0/0)</sub>
-      - celiprolol <sub>(0/0/0)</sub>
-      - cloranolol <sub>(0/0/0)</sub>
-      - epanolol <sub>(0/0/0)</sub>
-      - esmolol <sub>(0/0/0)</sub>
-      - labetalol <sub>(0/0/0)</sub>
-      - landiolol <sub>(0/0/0)</sub>
-      - mepindolol <sub>(0/0/0)</sub>
-      - metoprolol <sub>(0/0/0)</sub>
-      - nadolol <sub>(0/0/0)</sub>
-      - nebivolol <sub>(0/0/0)</sub>
-      - oxprenolol <sub>(0/0/0)</sub>
-      - penbutolol <sub>(0/0/0)</sub>
-      - pindolol <sub>(0/0/0)</sub>
-      - practolol <sub>(0/0/0)</sub>
-      - propranolol <sub>(0/0/0)</sub>
-      - s atenolol <sub>(0/0/0)</sub>
-      - sotalol <sub>(0/0/0)</sub>
-      - talinolol <sub>(0/0/0)</sub>
-      - tertatolol <sub>(0/0/0)</sub>
-      - timolol <sub>(0/0/0)</sub>
-    - C07B Beta Blocking Agents And Thiazides
-      - acebutolol and thiazides <sub>(0/0/0)</sub>
-      - atenolol and thiazides <sub>(0/0/0)</sub>
-      - bevantolol and thiazides <sub>(0/0/0)</sub>
-      - [bisoprolol <sub>(7/0/0)</sub>](../drugs/drug_bisoprolol/)
-      - bisoprolol and thiazides <sub>(0/0/0)</sub>
-      - labetalol and thiazides <sub>(0/0/0)</sub>
-      - metipranolol <sub>(0/0/0)</sub>
-      - metipranolol and thiazides combinations <sub>(0/0/0)</sub>
-      - metoprolol and thiazides <sub>(0/0/0)</sub>
-      - metoprolol and thiazides combinations <sub>(0/0/0)</sub>
-      - nadolol and thiazides <sub>(0/0/0)</sub>
-      - nebivolol and thiazides <sub>(0/0/0)</sub>
-      - oxprenolol and thiazides <sub>(0/0/0)</sub>
-      - propranolol and thiazides <sub>(0/0/0)</sub>
-      - sotalol and thiazides <sub>(0/0/0)</sub>
-      - timolol and thiazides <sub>(0/0/0)</sub>
-    - C07F Beta Blocking Agents, Other Combinations
-      - amlodipine <sub>(0/0/0)</sub>
-      - atenolol and nifedipine <sub>(0/0/0)</sub>
-      - [bisoprolol <sub>(7/0/0)</sub>](../drugs/drug_bisoprolol/)
-      - bisoprolol and acetylsalicylic acid <sub>(0/0/0)</sub>
-      - bisoprolol and amlodipine <sub>(0/0/0)</sub>
-      - carvedilol and ivabradine <sub>(0/0/0)</sub>
-      - felodipine <sub>(0/0/0)</sub>
-      - metoprolol and acetylsalicylic acid <sub>(0/0/0)</sub>
-      - metoprolol and amlodipine <sub>(0/0/0)</sub>
-      - metoprolol and felodipine <sub>(0/0/0)</sub>
-      - metoprolol and ivabradine <sub>(0/0/0)</sub>
-      - nebivolol and amlodipine <sub>(0/0/0)</sub>
-      - nifedipine <sub>(0/0/0)</sub>
-      - propranolol and other combinations <sub>(0/0/0)</sub>
-      - sotalol and acetylsalicylic acid <sub>(0/0/0)</sub>
-  - C09 Agents Acting On The Renin-Angiotensin System
-    - C09B Ace Inhibitors, Combinations
-      - benazepril and amlodipine <sub>(0/0/0)</sub>
-      - benazepril and diuretics <sub>(0/0/0)</sub>
-      - [bisoprolol <sub>(7/0/0)</sub>](../drugs/drug_bisoprolol/)
-      - captopril and diuretics <sub>(0/0/0)</sub>
-      - cilazapril and diuretics <sub>(0/0/0)</sub>
-      - delapril and diuretics <sub>(0/0/0)</sub>
-      - delapril and manidipine <sub>(0/0/0)</sub>
-      - enalapril and diuretics <sub>(0/0/0)</sub>
-      - enalapril and lercanidipine <sub>(0/0/0)</sub>
-      - enalapril and nitrendipine <sub>(0/0/0)</sub>
-      - fosinopril and diuretics <sub>(0/0/0)</sub>
-      - lisinopril and amlodipine <sub>(0/0/0)</sub>
-      - lisinopril and diuretics <sub>(0/0/0)</sub>
-      - moexipril and diuretics <sub>(0/0/0)</sub>
-      - perindopril amlodipine and indapamide <sub>(0/0/0)</sub>
-      - perindopril and amlodipine <sub>(0/0/0)</sub>
-      - perindopril and bisoprolol <sub>(0/0/0)</sub>
-      - perindopril and diuretics <sub>(0/0/0)</sub>
-      - perindopril bisoprolol amlodipine and indapamide <sub>(0/0/0)</sub>
-      - perindopril bisoprolol and amlodipine <sub>(0/0/0)</sub>
-      - quinapril and diuretics <sub>(0/0/0)</sub>
-      - ramipril amlodipine and hydrochlorothiazide <sub>(0/0/0)</sub>
-      - ramipril and amlodipine <sub>(0/0/0)</sub>
-      - ramipril and bisoprolol <sub>(0/0/0)</sub>
-      - ramipril and diuretics <sub>(0/0/0)</sub>
-      - ramipril and felodipine <sub>(0/0/0)</sub>
-      - trandolapril and verapamil <sub>(0/0/0)</sub>
-      - zofenopril and amlodipine <sub>(0/0/0)</sub>
-      - zofenopril and diuretics <sub>(0/0/0)</sub>
-      - zofenopril and nebivolol <sub>(0/0/0)</sub>
+- **G Genito Urinary System And Sex Hormones**
+  - G02 Other Gynecologicals
+    - G02C Other Gynecologicals
+      - agni casti fructus <sub>(0/0/0)</sub>
+      - atosiban <sub>(0/0/0)</sub>
+      - bremelanotide <sub>(0/0/0)</sub>
+      - bromocriptine <sub>(0/0/0)</sub>
+      - cabergoline <sub>(0/0/0)</sub>
+      - cimicifugae rhizoma <sub>(0/0/0)</sub>
+      - elinzanetant <sub>(0/0/0)</sub>
+      - fenoterol <sub>(0/0/0)</sub>
+      - fezolinetant <sub>(0/0/0)</sub>
+      - flibanserin <sub>(0/0/0)</sub>
+      - flunoxaprofen <sub>(0/0/0)</sub>
+      - [ibuprofen <sub>(21/12/8)</sub>](../drugs/drug_ibuprofen/)
+      - lisuride <sub>(0/0/0)</sub>
+      - metergoline <sub>(0/0/0)</sub>
+      - naproxen <sub>(0/0/0)</sub>
+      - quinagolide <sub>(0/0/0)</sub>
+      - ritodrine <sub>(0/0/0)</sub>
+      - terguride <sub>(0/0/0)</sub>
 - **J Antiinfectives For Systemic Use**
-  - J05 Antivirals For Systemic Use
-    - J05A Direct Acting Antivirals
-      - abacavir <sub>(0/0/0)</sub>
-      - adefovir dipivoxil <sub>(0/0/0)</sub>
-      - amenamevir <sub>(0/0/0)</sub>
-      - amprenavir <sub>(0/0/0)</sub>
-      - asunaprevir <sub>(0/0/0)</sub>
-      - [atazanavir <sub>(4/0/0)</sub>](../drugs/drug_atazanavir/)
-      - atazanavir and cobicistat <sub>(0/0/0)</sub>
-      - atazanavir and ritonavir <sub>(0/0/0)</sub>
-      - baloxavir marboxil <sub>(0/0/0)</sub>
-      - beclabuvir <sub>(0/0/0)</sub>
-      - bictegravir <sub>(0/0/0)</sub>
-      - boceprevir <sub>(0/0/0)</sub>
-      - brincidofovir <sub>(0/0/0)</sub>
-      - brivudine <sub>(0/0/0)</sub>
-      - bulevirtide <sub>(0/0/0)</sub>
-      - cabotegravir <sub>(0/0/0)</sub>
-      - cidofovir <sub>(0/0/0)</sub>
-      - clevudine <sub>(0/0/0)</sub>
-      - cobicistat <sub>(0/0/0)</sub>
-      - coblopasvir <sub>(0/0/0)</sub>
-      - daclatasvir <sub>(0/0/0)</sub>
-      - daclatasvir asunaprevir and beclabuvir <sub>(0/0/0)</sub>
-      - darunavir <sub>(0/0/0)</sub>
-      - darunavir and cobicistat <sub>(0/0/0)</sub>
-      - darunavir and ritonavir <sub>(0/0/0)</sub>
-      - dasabuvir <sub>(0/0/0)</sub>
-      - dasabuvir ombitasvir paritaprevir and ritonavir <sub>(0/0/0)</sub>
-      - delavirdine <sub>(0/0/0)</sub>
-      - didanosine <sub>(0/0/0)</sub>
-      - dolutegravir <sub>(0/0/0)</sub>
-      - dolutegravir and rilpivirine <sub>(0/0/0)</sub>
-      - doravirine <sub>(0/0/0)</sub>
-      - efavirenz <sub>(0/0/0)</sub>
-      - elbasvir <sub>(0/0/0)</sub>
-      - elbasvir and grazoprevir <sub>(0/0/0)</sub>
-      - elsulfavirine <sub>(0/0/0)</sub>
-      - elvitegravir <sub>(0/0/0)</sub>
-      - emtricitabine <sub>(0/0/0)</sub>
-      - emtricitabine and tenofovir alafenamide <sub>(0/0/0)</sub>
-      - emtricitabine tenofovir alafenamide and bictegravir <sub>(0/0/0)</sub>
-      - emtricitabine tenofovir alafenamide and dolutegravir <sub>(0/0/0)</sub>
-      - emtricitabine tenofovir alafenamide and rilpivirine <sub>(0/0/0)</sub>
-      - emtricitabine tenofovir alafenamide darunavir and cobicistat <sub>(0/0/0)</sub>
-      - emtricitabine tenofovir alafenamide elvitegravir and cobicistat <sub>(0/0/0)</sub>
-      - emtricitabine tenofovir disoproxil and efavirenz <sub>(0/0/0)</sub>
-      - emtricitabine tenofovir disoproxil and rilpivirine <sub>(0/0/0)</sub>
-      - emtricitabine tenofovir disoproxil elvitegravir and cobicistat <sub>(0/0/0)</sub>
-      - enfuvirtide <sub>(0/0/0)</sub>
-      - enisamium iodide <sub>(0/0/0)</sub>
-      - ensitrelvir <sub>(0/0/0)</sub>
-      - entecavir <sub>(0/0/0)</sub>
-      - etravirine <sub>(0/0/0)</sub>
-      - faldaprevir <sub>(0/0/0)</sub>
-      - famciclovir <sub>(0/0/0)</sub>
-      - favipiravir <sub>(0/0/0)</sub>
-      - fosamprenavir <sub>(0/0/0)</sub>
-      - foscarnet <sub>(0/0/0)</sub>
-      - fosfonet <sub>(0/0/0)</sub>
-      - fostemsavir <sub>(0/0/0)</sub>
-      - ganciclovir <sub>(0/0/0)</sub>
-      - glecaprevir <sub>(0/0/0)</sub>
-      - glecaprevir and pibrentasvir <sub>(0/0/0)</sub>
-      - grazoprevir <sub>(0/0/0)</sub>
-      - ibalizumab <sub>(0/0/0)</sub>
-      - indinavir <sub>(0/0/0)</sub>
-      - inosine pranobex <sub>(0/0/0)</sub>
-      - labuvirtide <sub>(0/0/0)</sub>
-      - lamivudine <sub>(0/0/0)</sub>
-      - lamivudine abacavir and dolutegravir <sub>(0/0/0)</sub>
-      - lamivudine and abacavir <sub>(0/0/0)</sub>
-      - lamivudine and dolutegravir <sub>(0/0/0)</sub>
-      - lamivudine and raltegravir <sub>(0/0/0)</sub>
-      - lamivudine and tenofovir disoproxil <sub>(0/0/0)</sub>
-      - lamivudine tenofovir disoproxil and dolutegravir <sub>(0/0/0)</sub>
-      - lamivudine tenofovir disoproxil and doravirine <sub>(0/0/0)</sub>
-      - lamivudine tenofovir disoproxil and efavirenz <sub>(0/0/0)</sub>
-      - laninamivir <sub>(0/0/0)</sub>
-      - ledipasvir <sub>(0/0/0)</sub>
-      - lenacapavir <sub>(0/0/0)</sub>
-      - letermovir <sub>(0/0/0)</sub>
-      - lopinavir <sub>(0/0/0)</sub>
-      - lopinavir and ritonavir <sub>(0/0/0)</sub>
-      - maraviroc <sub>(0/0/0)</sub>
-      - maribavir <sub>(0/0/0)</sub>
-      - metisazone <sub>(0/0/0)</sub>
-      - molnupiravir <sub>(0/0/0)</sub>
-      - moroxydine <sub>(0/0/0)</sub>
-      - narlaprevir <sub>(0/0/0)</sub>
-      - nelfinavir <sub>(0/0/0)</sub>
-      - nevirapine <sub>(0/0/0)</sub>
-      - nirmatrelvir <sub>(0/0/0)</sub>
-      - nirmatrelvir and ritonavir <sub>(0/0/0)</sub>
-      - ombitasvir paritaprevir and ritonavir <sub>(0/0/0)</sub>
-      - oseltamivir <sub>(0/0/0)</sub>
-      - paritaprevir <sub>(0/0/0)</sub>
-      - pentanedioic acid imidazolyl ethanamide <sub>(0/0/0)</sub>
-      - peramivir <sub>(0/0/0)</sub>
-      - pibrentasvir <sub>(0/0/0)</sub>
-      - pleconaril <sub>(0/0/0)</sub>
-      - raltegravir <sub>(0/0/0)</sub>
-      - ravidasvir <sub>(0/0/0)</sub>
-      - remdesivir <sub>(0/0/0)</sub>
-      - riamilovir <sub>(0/0/0)</sub>
-      - ribavirin <sub>(0/0/0)</sub>
-      - rilpivirine <sub>(0/0/0)</sub>
-      - rimantadine <sub>(0/0/0)</sub>
-      - ritonavir <sub>(0/0/0)</sub>
-      - saquinavir <sub>(0/0/0)</sub>
-      - simeprevir <sub>(0/0/0)</sub>
-      - sofosbuvir <sub>(0/0/0)</sub>
-      - sofosbuvir and ledipasvir <sub>(0/0/0)</sub>
-      - sofosbuvir and velpatasvir <sub>(0/0/0)</sub>
-      - sofosbuvir velpatasvir and voxilaprevir <sub>(0/0/0)</sub>
-      - stavudine <sub>(0/0/0)</sub>
-      - stavudine and lamivudine <sub>(0/0/0)</sub>
-      - stavudine lamivudine and nevirapine <sub>(0/0/0)</sub>
-      - tecovirimat <sub>(0/0/0)</sub>
-      - telaprevir <sub>(0/0/0)</sub>
-      - telbivudine <sub>(0/0/0)</sub>
-      - tenofovir alafenamide <sub>(0/0/0)</sub>
-      - tenofovir disoproxil <sub>(0/0/0)</sub>
-      - tenofovir disoproxil and emtricitabine <sub>(0/0/0)</sub>
-      - tilorone <sub>(0/0/0)</sub>
-      - tipranavir <sub>(0/0/0)</sub>
-      - umifenovir <sub>(0/0/0)</sub>
-      - valaciclovir <sub>(0/0/0)</sub>
-      - valganciclovir <sub>(0/0/0)</sub>
-      - velpatasvir <sub>(0/0/0)</sub>
-      - vidarabine <sub>(0/0/0)</sub>
-      - voxilaprevir <sub>(0/0/0)</sub>
-      - zalcitabine <sub>(0/0/0)</sub>
-      - zanamivir <sub>(0/0/0)</sub>
-      - zidovudine <sub>(0/0/0)</sub>
-      - zidovudine and lamivudine <sub>(0/0/0)</sub>
-      - zidovudine lamivudine and abacavir <sub>(0/0/0)</sub>
-      - zidovudine lamivudine and nevirapine <sub>(0/0/0)</sub>
+  - J01 Antibacterials For Systemic Use
+    - J01C Beta-Lactam Antibacterials, Penicillins
+      - [amoxicillin <sub>(25/3/0)</sub>](../drugs/drug_amoxicillin/)
+      - amoxicillin and beta lactamase inhibitor <sub>(0/0/0)</sub>
+      - ampicillin <sub>(0/0/0)</sub>
+      - ampicillin and beta lactamase inhibitor <sub>(0/0/0)</sub>
+      - ampicillin combinations <sub>(0/0/0)</sub>
+      - aspoxicillin <sub>(0/0/0)</sub>
+      - azidocillin <sub>(0/0/0)</sub>
+      - azlocillin <sub>(0/0/0)</sub>
+      - bacampicillin <sub>(0/0/0)</sub>
+      - benzathine benzylpenicillin <sub>(0/0/0)</sub>
+      - benzathine phenoxymethylpenicillin <sub>(0/0/0)</sub>
+      - benzylpenicillin <sub>(0/0/0)</sub>
+      - carbenicillin <sub>(0/0/0)</sub>
+      - carindacillin <sub>(0/0/0)</sub>
+      - clometocillin <sub>(0/0/0)</sub>
+      - cloxacillin <sub>(0/0/0)</sub>
+      - combinations of penicillins <sub>(0/0/0)</sub>
+      - dicloxacillin <sub>(0/0/0)</sub>
+      - epicillin <sub>(0/0/0)</sub>
+      - flucloxacillin <sub>(0/0/0)</sub>
+      - hetacillin <sub>(0/0/0)</sub>
+      - mecillinam <sub>(0/0/0)</sub>
+      - metampicillin <sub>(0/0/0)</sub>
+      - meticillin <sub>(0/0/0)</sub>
+      - mezlocillin <sub>(0/0/0)</sub>
+      - nafcillin <sub>(0/0/0)</sub>
+      - oxacillin <sub>(0/0/0)</sub>
+      - penamecillin <sub>(0/0/0)</sub>
+      - pheneticillin <sub>(0/0/0)</sub>
+      - phenoxymethylpenicillin <sub>(0/0/0)</sub>
+      - piperacillin <sub>(0/0/0)</sub>
+      - piperacillin and beta lactamase inhibitor <sub>(0/0/0)</sub>
+      - pivampicillin <sub>(0/0/0)</sub>
+      - pivmecillinam <sub>(0/0/0)</sub>
+      - procaine benzylpenicillin <sub>(0/0/0)</sub>
+      - propicillin <sub>(0/0/0)</sub>
+      - sulbactam <sub>(0/0/0)</sub>
+      - sulbactam and durlobactam <sub>(0/0/0)</sub>
+      - sulbenicillin <sub>(0/0/0)</sub>
+      - sultamicillin <sub>(0/0/0)</sub>
+      - talampicillin <sub>(0/0/0)</sub>
+      - tazobactam <sub>(0/0/0)</sub>
+      - temocillin <sub>(0/0/0)</sub>
+      - ticarcillin <sub>(0/0/0)</sub>
+      - ticarcillin and beta lactamase inhibitor <sub>(0/0/0)</sub>
+- **M Musculo-Skeletal System**
+  - M01 Antiinflammatory And Antirheumatic Products
+    - M01A Antiinflammatory And Antirheumatic Products, Non-Steroids
+      - aceclofenac <sub>(0/0/0)</sub>
+      - acemetacin <sub>(0/0/0)</sub>
+      - alclofenac <sub>(0/0/0)</sub>
+      - alminoprofen <sub>(0/0/0)</sub>
+      - avocado and soyabean oil unsaponifiables <sub>(0/0/0)</sub>
+      - azapropazone <sub>(0/0/0)</sub>
+      - benoxaprofen <sub>(0/0/0)</sub>
+      - bufexamac <sub>(0/0/0)</sub>
+      - bumadizone <sub>(0/0/0)</sub>
+      - chondroitin sulfate <sub>(0/0/0)</sub>
+      - clofezone <sub>(0/0/0)</sub>
+      - dexibuprofen <sub>(0/0/0)</sub>
+      - dexketoprofen <sub>(0/0/0)</sub>
+      - diacerein <sub>(0/0/0)</sub>
+      - diclofenac combinations <sub>(0/0/0)</sub>
+      - difenpiramide <sub>(0/0/0)</sub>
+      - droxicam <sub>(0/0/0)</sub>
+      - etodolac <sub>(0/0/0)</sub>
+      - etoricoxib <sub>(0/0/0)</sub>
+      - fenbufen <sub>(0/0/0)</sub>
+      - fenoprofen <sub>(0/0/0)</sub>
+      - fentiazac <sub>(0/0/0)</sub>
+      - feprazone <sub>(0/0/0)</sub>
+      - feprazone combinations <sub>(0/0/0)</sub>
+      - flufenamic acid <sub>(0/0/0)</sub>
+      - flurbiprofen <sub>(0/0/0)</sub>
+      - glucosamine <sub>(0/0/0)</sub>
+      - glucosaminoglycan polysulfate <sub>(0/0/0)</sub>
+      - [ibuprofen <sub>(21/12/8)</sub>](../drugs/drug_ibuprofen/)
+      - ibuprofen combinations <sub>(0/0/0)</sub>
+      - ibuproxam <sub>(0/0/0)</sub>
+      - indometacin combinations <sub>(0/0/0)</sub>
+      - indoprofen <sub>(0/0/0)</sub>
+      - kebuzone <sub>(0/0/0)</sub>
+      - ketoprofen <sub>(0/0/0)</sub>
+      - ketoprofen combinations <sub>(0/0/0)</sub>
+      - ketorolac <sub>(0/0/0)</sub>
+      - lonazolac <sub>(0/0/0)</sub>
+      - lornoxicam <sub>(0/0/0)</sub>
+      - loxoprofen <sub>(0/0/0)</sub>
+      - lumiracoxib <sub>(0/0/0)</sub>
+      - meclofenamic acid <sub>(0/0/0)</sub>
+      - mefenamic acid <sub>(0/0/0)</sub>
+      - meloxicam <sub>(0/0/0)</sub>
+      - meloxicam combinations <sub>(0/0/0)</sub>
+      - mofebutazone <sub>(0/0/0)</sub>
+      - morniflumate <sub>(0/0/0)</sub>
+      - nabumetone <sub>(0/0/0)</sub>
+      - naproxcinod <sub>(0/0/0)</sub>
+      - naproxen and diphenhydramine <sub>(0/0/0)</sub>
+      - naproxen and esomeprazole <sub>(0/0/0)</sub>
+      - naproxen and misoprostol <sub>(0/0/0)</sub>
+      - niflumic acid <sub>(0/0/0)</sub>
+      - nimesulide <sub>(0/0/0)</sub>
+      - orgotein <sub>(0/0/0)</sub>
+      - oxametacin <sub>(0/0/0)</sub>
+      - oxaprozin <sub>(0/0/0)</sub>
+      - oxyphenbutazone <sub>(0/0/0)</sub>
+      - parecoxib <sub>(0/0/0)</sub>
+      - pelubiprofen <sub>(0/0/0)</sub>
+      - phenylbutazone <sub>(0/0/0)</sub>
+      - piroxicam <sub>(0/0/0)</sub>
+      - pirprofen <sub>(0/0/0)</sub>
+      - polmacoxib <sub>(0/0/0)</sub>
+      - proglumetacin <sub>(0/0/0)</sub>
+      - proquazone <sub>(0/0/0)</sub>
+      - rofecoxib <sub>(0/0/0)</sub>
+      - sulindac <sub>(0/0/0)</sub>
+      - suprofen <sub>(0/0/0)</sub>
+      - tenidap <sub>(0/0/0)</sub>
+      - tenoxicam <sub>(0/0/0)</sub>
+      - tiaprofenic acid <sub>(0/0/0)</sub>
+      - tolfenamic acid <sub>(0/0/0)</sub>
+      - tolmetin <sub>(0/0/0)</sub>
+      - valdecoxib <sub>(0/0/0)</sub>
+      - zomepirac <sub>(0/0/0)</sub>
+  - M02 Topical Products For Joint And Muscular Pain
+    - M02A Topical Products For Joint And Muscular Pain
+      - bendazac <sub>(0/0/0)</sub>
+      - capsaicin <sub>(0/0/0)</sub>
+      - esflurbiprofen <sub>(0/0/0)</sub>
+      - etofenamate <sub>(0/0/0)</sub>
+      - felbinac <sub>(0/0/0)</sub>
+      - [ibuprofen <sub>(21/12/8)</sub>](../drugs/drug_ibuprofen/)
+      - idrocilamide <sub>(0/0/0)</sub>
+      - nifenazone <sub>(0/0/0)</sub>
+      - piketoprofen <sub>(0/0/0)</sub>
+      - suxibuzone <sub>(0/0/0)</sub>
+      - tolperisone <sub>(0/0/0)</sub>
+      - zucapsaicin <sub>(0/0/0)</sub>
+  - M04 Antigout Preparations
+    - M04A Antigout Preparations
+      - [allopurinol <sub>(13/9/40)</sub>](../drugs/drug_allopurinol/)
+      - allopurinol combinations <sub>(0/0/0)</sub>
+      - benzbromarone <sub>(0/0/0)</sub>
+      - cinchophen <sub>(0/0/0)</sub>
+      - colchicine <sub>(0/0/0)</sub>
+      - colchicine and probenecid <sub>(0/0/0)</sub>
+      - dotinurad <sub>(0/0/0)</sub>
+      - febuxostat <sub>(0/0/0)</sub>
+      - isobromindione <sub>(0/0/0)</sub>
+      - lesinurad <sub>(0/0/0)</sub>
+      - pegloticase <sub>(0/0/0)</sub>
+      - probenecid <sub>(0/0/0)</sub>
+      - sulfinpyrazone <sub>(0/0/0)</sub>
+      - tisopurine <sub>(0/0/0)</sub>
+      - urate oxidase <sub>(0/0/0)</sub>
 - **N Nervous System**
-  - N06 Psychoanaleptics
-    - N06A Antidepressants
-      - agomelatine <sub>(0/0/0)</sub>
-      - alaproclate <sub>(0/0/0)</sub>
-      - amineptine <sub>(0/0/0)</sub>
-      - amitriptyline <sub>(0/0/0)</sub>
-      - amoxapine <sub>(0/0/0)</sub>
-      - bifemelane <sub>(0/0/0)</sub>
-      - brexanolone <sub>(0/0/0)</sub>
-      - bupropion and dextromethorphan <sub>(0/0/0)</sub>
-      - butriptyline <sub>(0/0/0)</sub>
-      - citalopram <sub>(0/0/0)</sub>
-      - clomipramine <sub>(0/0/0)</sub>
-      - desipramine <sub>(0/0/0)</sub>
-      - desvenlafaxine <sub>(0/0/0)</sub>
-      - dextromethorphan <sub>(0/0/0)</sub>
-      - dibenzepin <sub>(0/0/0)</sub>
-      - dimetacrine <sub>(0/0/0)</sub>
-      - dosulepin <sub>(0/0/0)</sub>
-      - duloxetine <sub>(0/0/0)</sub>
-      - escitalopram <sub>(0/0/0)</sub>
-      - etoperidone <sub>(0/0/0)</sub>
-      - fluoxetine <sub>(0/0/0)</sub>
-      - fluvoxamine <sub>(0/0/0)</sub>
-      - gepirone <sub>(0/0/0)</sub>
-      - hyperici herba <sub>(0/0/0)</sub>
-      - imipramine <sub>(0/0/0)</sub>
-      - imipramine oxide <sub>(0/0/0)</sub>
-      - iprindole <sub>(0/0/0)</sub>
-      - iproclozide <sub>(0/0/0)</sub>
-      - iproniazide <sub>(0/0/0)</sub>
-      - isocarboxazid <sub>(0/0/0)</sub>
-      - levomilnacipran <sub>(0/0/0)</sub>
-      - lofepramine <sub>(0/0/0)</sub>
-      - maprotiline <sub>(0/0/0)</sub>
-      - medifoxamine <sub>(0/0/0)</sub>
-      - melitracen <sub>(0/0/0)</sub>
-      - mianserin <sub>(0/0/0)</sub>
-      - milnacipran <sub>(0/0/0)</sub>
-      - minaprine <sub>(0/0/0)</sub>
-      - [mirtazapine <sub>(0/0/0)</sub>](../drugs/drug_mirtazapine/)
-      - moclobemide <sub>(0/0/0)</sub>
-      - nefazodone <sub>(0/0/0)</sub>
-      - nialamide <sub>(0/0/0)</sub>
-      - nomifensine <sub>(0/0/0)</sub>
-      - nortriptyline <sub>(0/0/0)</sub>
-      - opipramol <sub>(0/0/0)</sub>
-      - oxaflozane <sub>(0/0/0)</sub>
-      - oxitriptan <sub>(0/0/0)</sub>
-      - paroxetine <sub>(0/0/0)</sub>
-      - phenelzine <sub>(0/0/0)</sub>
-      - pivagabine <sub>(0/0/0)</sub>
-      - protriptyline <sub>(0/0/0)</sub>
-      - quinupramine <sub>(0/0/0)</sub>
-      - reboxetine <sub>(0/0/0)</sub>
-      - sertraline <sub>(0/0/0)</sub>
-      - tianeptine <sub>(0/0/0)</sub>
-      - toloxatone <sub>(0/0/0)</sub>
-      - tranylcypromine <sub>(0/0/0)</sub>
-      - trazodone <sub>(0/0/0)</sub>
-      - trimipramine <sub>(0/0/0)</sub>
-      - tryptophan <sub>(0/0/0)</sub>
-      - venlafaxine <sub>(0/0/0)</sub>
-      - vilazodone <sub>(0/0/0)</sub>
-      - viloxazine <sub>(0/0/0)</sub>
-      - vortioxetine <sub>(0/0/0)</sub>
-      - zimeldine <sub>(0/0/0)</sub>
-      - zuranolone <sub>(0/0/0)</sub>
+  - N02 Analgesics
+    - N02A Opioids
+      - bezitramide <sub>(0/0/0)</sub>
+      - buprenorphine <sub>(0/0/0)</sub>
+      - butorphanol <sub>(0/0/0)</sub>
+      - codeine <sub>(0/0/0)</sub>
+      - codeine and acetylsalicylic acid <sub>(0/0/0)</sub>
+      - codeine and ibuprofen <sub>(0/0/0)</sub>
+      - codeine and other non opioid analgesics <sub>(0/0/0)</sub>
+      - codeine and paracetamol <sub>(0/0/0)</sub>
+      - codeine combinations excl psycholeptics <sub>(0/0/0)</sub>
+      - codeine combinations with psycholeptics <sub>(0/0/0)</sub>
+      - dextromoramide <sub>(0/0/0)</sub>
+      - dextropropoxyphene <sub>(0/0/0)</sub>
+      - dextropropoxyphene combinations excl psycholeptics <sub>(0/0/0)</sub>
+      - dextropropoxyphene combinations with psycholeptics <sub>(0/0/0)</sub>
+      - dezocine <sub>(0/0/0)</sub>
+      - dihydrocodeine <sub>(0/0/0)</sub>
+      - dihydrocodeine and acetylsalicylic acid <sub>(0/0/0)</sub>
+      - dihydrocodeine and other non opioid analgesics <sub>(0/0/0)</sub>
+      - dihydrocodeine and paracetamol <sub>(0/0/0)</sub>
+      - dihydrocodeine combinations <sub>(0/0/0)</sub>
+      - hydrocodone <sub>(0/0/0)</sub>
+      - hydrocodone and ibuprofen <sub>(0/0/0)</sub>
+      - hydrocodone and paracetamol <sub>(0/0/0)</sub>
+      - hydromorphone <sub>(0/0/0)</sub>
+      - hydromorphone and antispasmodics <sub>(0/0/0)</sub>
+      - hydromorphone and naloxone <sub>(0/0/0)</sub>
+      - [ibuprofen <sub>(21/12/8)</sub>](../drugs/drug_ibuprofen/)
+      - ketobemidone <sub>(0/0/0)</sub>
+      - ketobemidone and antispasmodics <sub>(0/0/0)</sub>
+      - meptazinol <sub>(0/0/0)</sub>
+      - methadone combinations excl psycholeptics <sub>(0/0/0)</sub>
+      - morphine <sub>(0/0/0)</sub>
+      - morphine and antispasmodics <sub>(0/0/0)</sub>
+      - nalbuphine <sub>(0/0/0)</sub>
+      - nicomorphine <sub>(0/0/0)</sub>
+      - oliceridine <sub>(0/0/0)</sub>
+      - oxycodone <sub>(0/0/0)</sub>
+      - oxycodone and acetylsalicylic acid <sub>(0/0/0)</sub>
+      - oxycodone and ibuprofen <sub>(0/0/0)</sub>
+      - oxycodone and naloxone <sub>(0/0/0)</sub>
+      - oxycodone and naltrexone <sub>(0/0/0)</sub>
+      - oxycodone and paracetamol <sub>(0/0/0)</sub>
+      - oxymorphone <sub>(0/0/0)</sub>
+      - papaveretum <sub>(0/0/0)</sub>
+      - paracetamol <sub>(0/0/0)</sub>
+      - pentazocine <sub>(0/0/0)</sub>
+      - pentazocine and naloxone <sub>(0/0/0)</sub>
+      - pethidine <sub>(0/0/0)</sub>
+      - pethidine and antispasmodics <sub>(0/0/0)</sub>
+      - pethidine combinations excl psycholeptics <sub>(0/0/0)</sub>
+      - pethidine combinations with psycholeptics <sub>(0/0/0)</sub>
+      - phenazocine <sub>(0/0/0)</sub>
+      - piritramide <sub>(0/0/0)</sub>
+      - tapentadol <sub>(0/0/0)</sub>
+      - tilidine <sub>(0/0/0)</sub>
+      - tilidine and naloxone <sub>(0/0/0)</sub>
+      - tramadol <sub>(0/0/0)</sub>
+      - tramadol and celecoxib <sub>(0/0/0)</sub>
+      - tramadol and dexketoprofen <sub>(0/0/0)</sub>
+      - tramadol and other non opioid analgesics <sub>(0/0/0)</sub>
+      - tramadol and paracetamol <sub>(0/0/0)</sub>
+- **R Respiratory System**
+  - R02 Throat Preparations
+    - R02A Throat Preparations
+      - acriflavinium chloride <sub>(0/0/0)</sub>
+      - ambazone <sub>(0/0/0)</sub>
+      - ambroxol <sub>(0/0/0)</sub>
+      - dichlorobenzyl alcohol <sub>(0/0/0)</sub>
+      - fusafungine <sub>(0/0/0)</sub>
+      - gramicidin <sub>(0/0/0)</sub>
+      - hexylresorcinol <sub>(0/0/0)</sub>
+      - [ibuprofen <sub>(21/12/8)</sub>](../drugs/drug_ibuprofen/)
+      - myristyl benzalkonium <sub>(0/0/0)</sub>
 
 #### Models
-<!-- docs.py:sidebar {"atc_codes": ["J05AE08", "J05AR15", "J05AR23"], "counts": {"pd": 0, "pgx": 0, "pk": 4}, "curated": 0, "details": [{"label": "Foissac_2011 \u00b7 HIV-1-infected children and adolescents", "model_id": "Atazanavir_Foissac2011_reference"}, {"label": "Kengo_2025 \u00b7 review reference", "model_id": "Atazanavir_Kengo2025_reference"}, {"label": "Kile_2012 \u00b7 HIV-negative volunteers", "model_id": "Atazanavir_Kile2012_reference"}, {"label": "Punyawudho_2017 \u00b7 Thai HIV-infected patients", "model_id": "Atazanavir_Punyawudho2017_reference"}], "dir": "drug_atazanavir", "extracted": 0, "last_change": "2026-08-02T12:28:31.581354+00:00", "name": "atazanavir", "needs_review": 4, "records": 4, "rejected": 0, "rendered": true, "slug": "atazanavir", "stale": 0} -->
-- [atazanavir](../drugs/drug_atazanavir/) <sub>(4/0/0)</sub>
-  - [Foissac_2011 · HIV-1-infected children and adolescents](../drugs/drug_atazanavir/Atazanavir_Foissac2011_reference.md)
-  - [Kengo_2025 · review reference](../drugs/drug_atazanavir/Atazanavir_Kengo2025_reference.md)
-  - [Kile_2012 · HIV-negative volunteers](../drugs/drug_atazanavir/Atazanavir_Kile2012_reference.md)
-  - [Punyawudho_2017 · Thai HIV-infected patients](../drugs/drug_atazanavir/Atazanavir_Punyawudho2017_reference.md)
-<!-- docs.py:sidebar {"atc_codes": ["C07AB07", "C07BB07", "C07FB07", "C07FX04", "C09BX02", "C09BX04", "C09BX05"], "counts": {"pd": 0, "pgx": 0, "pk": 7}, "curated": 0, "details": [{"label": "Cvan_2016 \u00b7 patients with chronic heart failure", "model_id": "Bisoprolol_Cvan2016_reference"}, {"label": "Fontana_2022 \u00b7 patients with non-ST elevation acute coronary syndrome on bisoprolol", "model_id": "Bisoprolol_Fontana2022_reference"}, {"label": "Grevel_1989 \u00b7 patients with essential hypertension, renal impairment, or hepatic cirrhosis", "model_id": "Bisoprolol_Grevel1989_reference"}, {"label": "Mom\u010dilovi\u0107_2019 \u00b7 patients with acute coronary syndrome", "model_id": "Bisoprolol_Momilovi2019_reference"}, {"label": "Mom\u010dilovi\u0107_2020 \u00b7 adults with type 2 diabetes mellitus and hypertension", "model_id": "Bisoprolol_Momilovi2020_reference"}, {"label": "Nikolic_2013 \u00b7 patients with chronic heart failure", "model_id": "Bisoprolol_Nikolic2013_reference"}, {"label": "Nikolic_2016 \u00b7 hypertensive patients on hemodialysis", "model_id": "Bisoprolol_Nikolic2016_reference"}, {"label": "Nikolic_2018 \u00b7 patients with stable coronary artery disease", "model_id": "Bisoprolol_Nikolic2018_reference"}], "dir": "drug_bisoprolol", "extracted": 0, "last_change": "2026-08-02T12:26:06.614425+00:00", "name": "bisoprolol", "needs_review": 8, "records": 8, "rejected": 0, "rendered": true, "slug": "bisoprolol", "stale": 0} -->
-- [bisoprolol](../drugs/drug_bisoprolol/) <sub>(7/0/0)</sub>
-  - [Cvan_2016 · patients with chronic heart failure](../drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference.md)
-  - [Fontana_2022 · patients with non-ST elevation acute coronary syndrome on bisoprolol](../drugs/drug_bisoprolol/Bisoprolol_Fontana2022_reference.md)
-  - [Grevel_1989 · patients with essential hypertension, renal impairment, or hepatic cirrhosis](../drugs/drug_bisoprolol/Bisoprolol_Grevel1989_reference.md)
-  - [Momčilović_2019 · patients with acute coronary syndrome](../drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference.md)
-  - [Momčilović_2020 · adults with type 2 diabetes mellitus and hypertension](../drugs/drug_bisoprolol/Bisoprolol_Momilovi2020_reference.md)
-  - [Nikolic_2013 · patients with chronic heart failure](../drugs/drug_bisoprolol/Bisoprolol_Nikolic2013_reference.md)
-  - [Nikolic_2016 · hypertensive patients on hemodialysis](../drugs/drug_bisoprolol/Bisoprolol_Nikolic2016_reference.md)
-  - [Nikolic_2018 · patients with stable coronary artery disease](../drugs/drug_bisoprolol/Bisoprolol_Nikolic2018_reference.md)
-<!-- docs.py:sidebar {"atc_codes": ["N06AX11"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Yan_2026 \u00b7 reference", "model_id": "Mirtazapine_Yan2026_reference"}], "dir": "drug_mirtazapine", "extracted": 0, "last_change": "2026-07-15T13:36:58.014054+00:00", "name": "mirtazapine", "needs_review": 0, "records": 1, "rejected": 1, "rendered": true, "slug": "mirtazapine", "stale": 0} -->
-- [mirtazapine](../drugs/drug_mirtazapine/) <sub>(0/0/0)</sub>
-  - [Yan_2026 · reference](../drugs/drug_mirtazapine/Mirtazapine_Yan2026_reference.md)
-<!-- docs.py:sidebar {"atc_codes": ["C03XA01"], "counts": {"pd": 21, "pgx": 2, "pk": 9}, "curated": 0, "details": [{"label": "Bhatt_2014 \u00b7 review reference", "model_id": "Tolvaptan_Bhatt2014_reference"}, {"label": "Lanke_2019 \u00b7 adults with autosomal dominant polycystic kidney disease", "model_id": "Tolvaptan_Lanke2019_reference"}, {"label": "Lanke_2019 \u00b7 reference", "model_id": "Tolvaptan_Lanke2019_reference"}, {"label": "Plosker_2010 \u00b7 reference", "model_id": "Tolvaptan_Plosker2010_reference"}, {"label": "Shoaf_2012_3 \u00b7 review reference", "model_id": "Tolvaptan_Shoaf2012v3_reference"}, {"label": "Shoaf_2017 \u00b7 review reference", "model_id": "Tolvaptan_Shoaf2017_reference"}, {"label": "Shoaf_2025 \u00b7 reference", "model_id": "Tolvaptan_Shoaf2025_reference"}, {"label": "Stanajic-Petrovic_2025 \u00b7 review reference", "model_id": "Tolvaptan_StanajicPetrovic2025_review_reference"}, {"label": "Van_2013 \u00b7 healthy subjects and patients with congestive heart failure or hepatic cirrhosis", "model_id": "Tolvaptan_Van2013_reference"}, {"label": "Van_2013 \u00b7 reference", "model_id": "Tolvaptan_Van2013_reference"}, {"label": "Van_2013_2 \u00b7 reference", "model_id": "Tolvaptan_Van2013v2_reference"}], "dir": "drug_tolvaptan", "extracted": 8, "last_change": "2026-08-27T06:34:17.168729+00:00", "name": "tolvaptan", "needs_review": 3, "records": 11, "rejected": 0, "rendered": true, "slug": "tolvaptan", "stale": 5} -->
+<!-- docs.py:sidebar {"atc_codes": ["M04AA01"], "counts": {"pd": 9, "pgx": 40, "pk": 13}, "curated": 0, "details": [{"label": "Aksenov_2018 \u00b7 reference", "model_id": "Allopurinol_Aksenov2018_reference"}, {"label": "Chu_2022 \u00b7 reference", "model_id": "Allopurinol_Chu2022_reference"}, {"label": "Chu_2024 \u00b7 reference", "model_id": "Allopurinol_Chu2024_reference"}, {"label": "Day_2007 \u00b7 reference", "model_id": "Allopurinol_Day2007_reference"}, {"label": "Day_2016 \u00b7 reference", "model_id": "Allopurinol_Day2016_reference"}, {"label": "Ekobena_2025 \u00b7 reference", "model_id": "Allopurinol_Ekobena2025_reference"}, {"label": "Jonkman_1984 \u00b7 reference", "model_id": "Allopurinol_Jonkman1984_reference"}, {"label": "Leander_2021 \u00b7 reference", "model_id": "Allopurinol_Leander2021_reference"}, {"label": "Liu_2026 \u00b7 reference", "model_id": "Allopurinol_Liu2026_reference"}, {"label": "Stocker_2012 \u00b7 reference", "model_id": "Allopurinol_Stocker2012_reference"}, {"label": "Wen_2023 \u00b7 base", "model_id": "Allopurinol_Wen2023_base"}, {"label": "Wen_2023 \u00b7 final", "model_id": "Allopurinol_Wen2023_final"}, {"label": "Wright_2024 \u00b7 reference", "model_id": "Allopurinol_Wright2024_reference"}, {"label": "Vora_2021 \u00b7 reference", "model_id": "Allopurinol_Vora2021_reference"}, {"label": "Wright_2013 \u00b7 base", "model_id": "Allopurinol_Wright2013_base"}, {"label": "Wright_2013 \u00b7 final", "model_id": "Allopurinol_Wright2013_final"}, {"label": "Wright_2016 \u00b7 reference", "model_id": "Allopurinol_Wright2016_reference"}, {"label": "Wright_2017 \u00b7 reference", "model_id": "Allopurinol_Wright2017_reference"}], "dir": "drug_allopurinol", "extracted": 13, "last_change": "2026-08-27T08:09:22.756695+00:00", "name": "allopurinol", "needs_review": 1, "records": 18, "rejected": 4, "rendered": true, "slug": "allopurinol", "stale": 0} -->
+- [allopurinol](../drugs/drug_allopurinol/) <sub>(13/9/40)</sub>
+  - [Aksenov_2018 · reference](../drugs/drug_allopurinol/Allopurinol_Aksenov2018_reference.md)
+  - [Chu_2022 · reference](../drugs/drug_allopurinol/Allopurinol_Chu2022_reference.md)
+  - [Chu_2024 · reference](../drugs/drug_allopurinol/Allopurinol_Chu2024_reference.md)
+  - [Day_2007 · reference](../drugs/drug_allopurinol/Allopurinol_Day2007_reference.md)
+  - [Day_2016 · reference](../drugs/drug_allopurinol/Allopurinol_Day2016_reference.md)
+  - [Ekobena_2025 · reference](../drugs/drug_allopurinol/Allopurinol_Ekobena2025_reference.md)
+  - [Jonkman_1984 · reference](../drugs/drug_allopurinol/Allopurinol_Jonkman1984_reference.md)
+  - [Leander_2021 · reference](../drugs/drug_allopurinol/Allopurinol_Leander2021_reference.md)
+  - [Liu_2026 · reference](../drugs/drug_allopurinol/Allopurinol_Liu2026_reference.md)
+  - [Stocker_2012 · reference](../drugs/drug_allopurinol/Allopurinol_Stocker2012_reference.md)
+  - [Wen_2023 · base](../drugs/drug_allopurinol/Allopurinol_Wen2023_base.md)
+  - [Wen_2023 · final](../drugs/drug_allopurinol/Allopurinol_Wen2023_final.md)
+  - [Wright_2024 · reference](../drugs/drug_allopurinol/Allopurinol_Wright2024_reference.md)
+  - [Vora_2021 · reference](../drugs/drug_allopurinol/Allopurinol_Vora2021_reference.md)
+  - [Wright_2013 · base](../drugs/drug_allopurinol/Allopurinol_Wright2013_base.md)
+  - [Wright_2013 · final](../drugs/drug_allopurinol/Allopurinol_Wright2013_final.md)
+  - [Wright_2016 · reference](../drugs/drug_allopurinol/Allopurinol_Wright2016_reference.md)
+  - [Wright_2017 · reference](../drugs/drug_allopurinol/Allopurinol_Wright2017_reference.md)
+<!-- docs.py:sidebar {"atc_codes": ["A02BD01", "A02BD03", "A02BD04", "A02BD05", "A02BD06", "A02BD07", "A02BD10", "A02BD12", "A02BD13", "A02BD14", "A02BD15", "A02BD16", "A02BD17", "J01CA04"], "counts": {"pd": 3, "pgx": 0, "pk": 25}, "curated": 0, "details": [{"label": "Albanell-Fern\u00e1ndez_2025 \u00b7 reference", "model_id": "Amoxicillin_AlbanellFernndez2025_reference"}, {"label": "Arancibia_1980 \u00b7 reference", "model_id": "Amoxicillin_Arancibia1980_reference"}, {"label": "Baklouti_2026 \u00b7 reference", "model_id": "Amoxicillin_Baklouti2026_reference"}, {"label": "Bardhi_2026 \u00b7 reference", "model_id": "Amoxicillin_Bardhi2026_reference"}, {"label": "Carceles_1995_3 \u00b7 amoxicillin", "model_id": "Amoxicillin_Carceles1995v3_amoxicillin"}, {"label": "Carceles_1995_3 \u00b7 units", "model_id": "Amoxicillin_Carceles1995v3_units"}, {"label": "Cattrall_2019 \u00b7 reference", "model_id": "Amoxicillin_Cattrall2019_reference"}, {"label": "Dubbelboer_2025 \u00b7 cat_1", "model_id": "Amoxicillin_Dubbelboer2025_cat_1"}, {"label": "Dubbelboer_2025 \u00b7 cat_2", "model_id": "Amoxicillin_Dubbelboer2025_cat_2"}, {"label": "Dubbelboer_2025 \u00b7 cat_3", "model_id": "Amoxicillin_Dubbelboer2025_cat_3"}, {"label": "Dubbelboer_2025 \u00b7 cat_4", "model_id": "Amoxicillin_Dubbelboer2025_cat_4"}, {"label": "Dubbelboer_2025 \u00b7 cat_5", "model_id": "Amoxicillin_Dubbelboer2025_cat_5"}, {"label": "Dubbelboer_2025 \u00b7 cat_6", "model_id": "Amoxicillin_Dubbelboer2025_cat_6"}, {"label": "Dubbelboer_2025 \u00b7 i_i_v", "model_id": "Amoxicillin_Dubbelboer2025_i_i_v"}, {"label": "Dubbelboer_2025 \u00b7 median", "model_id": "Amoxicillin_Dubbelboer2025_median"}, {"label": "Dubbelboer_2025 \u00b7 r_s_e", "model_id": "Amoxicillin_Dubbelboer2025_r_s_e"}, {"label": "Dubbelboer_2025 \u00b7 typical_value", "model_id": "Amoxicillin_Dubbelboer2025_typical_value"}, {"label": "Dubbelboer_2025 \u00b7 unit", "model_id": "Amoxicillin_Dubbelboer2025_unit"}, {"label": "Echizen_2016 \u00b7 reference", "model_id": "Amoxicillin_Echizen2016_reference"}, {"label": "Eshelman_1978 \u00b7 reference", "model_id": "Amoxicillin_Eshelman1978_reference"}, {"label": "Keij_2023 \u00b7 reference", "model_id": "Amoxicillin_Keij2023_reference"}, {"label": "Lacampagne_2026 \u00b7 reference", "model_id": "Amoxicillin_Lacampagne2026_reference"}, {"label": "Spyker_1977 \u00b7 reference", "model_id": "Amoxicillin_Spyker1977_reference"}, {"label": "Wu_2021 \u00b7 reference", "model_id": "Amoxicillin_Wu2021_reference"}, {"label": "Zhang_2025 \u00b7 reference", "model_id": "Amoxicillin_Zhang2025_reference"}, {"label": "Foulds_1983 \u00b7 reference", "model_id": "Amoxicillin_Foulds1983_reference"}, {"label": "Sturgill_1992 \u00b7 reference", "model_id": "Amoxicillin_Sturgill1992_reference"}, {"label": "Carceles_1995 \u00b7 intramuscular_route_n_5", "model_id": "Amoxicillin_Carceles1995_intramuscular_route_n_5"}, {"label": "Carceles_1995 \u00b7 intravenous_route_w_10", "model_id": "Amoxicillin_Carceles1995_intravenous_route_w_10"}], "dir": "drug_amoxicillin", "extracted": 25, "last_change": "2026-08-27T00:55:23.571807+00:00", "name": "amoxicillin", "needs_review": 2, "records": 29, "rejected": 2, "rendered": true, "slug": "amoxicillin", "stale": 0} -->
+- [amoxicillin](../drugs/drug_amoxicillin/) <sub>(25/3/0)</sub>
+  - [Albanell-Fernández_2025 · reference](../drugs/drug_amoxicillin/Amoxicillin_AlbanellFernndez2025_reference.md)
+  - [Arancibia_1980 · reference](../drugs/drug_amoxicillin/Amoxicillin_Arancibia1980_reference.md)
+  - [Baklouti_2026 · reference](../drugs/drug_amoxicillin/Amoxicillin_Baklouti2026_reference.md)
+  - [Bardhi_2026 · reference](../drugs/drug_amoxicillin/Amoxicillin_Bardhi2026_reference.md)
+  - [Carceles_1995_3 · amoxicillin](../drugs/drug_amoxicillin/Amoxicillin_Carceles1995v3_amoxicillin.md)
+  - [Carceles_1995_3 · units](../drugs/drug_amoxicillin/Amoxicillin_Carceles1995v3_units.md)
+  - [Cattrall_2019 · reference](../drugs/drug_amoxicillin/Amoxicillin_Cattrall2019_reference.md)
+  - [Dubbelboer_2025 · cat_1](../drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_1.md)
+  - [Dubbelboer_2025 · cat_2](../drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_2.md)
+  - [Dubbelboer_2025 · cat_3](../drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_3.md)
+  - [Dubbelboer_2025 · cat_4](../drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_4.md)
+  - [Dubbelboer_2025 · cat_5](../drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_5.md)
+  - [Dubbelboer_2025 · cat_6](../drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_6.md)
+  - [Dubbelboer_2025 · i_i_v](../drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_i_i_v.md)
+  - [Dubbelboer_2025 · median](../drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_median.md)
+  - [Dubbelboer_2025 · r_s_e](../drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_r_s_e.md)
+  - [Dubbelboer_2025 · typical_value](../drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_typical_value.md)
+  - [Dubbelboer_2025 · unit](../drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_unit.md)
+  - [Echizen_2016 · reference](../drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference.md)
+  - [Eshelman_1978 · reference](../drugs/drug_amoxicillin/Amoxicillin_Eshelman1978_reference.md)
+  - [Keij_2023 · reference](../drugs/drug_amoxicillin/Amoxicillin_Keij2023_reference.md)
+  - [Lacampagne_2026 · reference](../drugs/drug_amoxicillin/Amoxicillin_Lacampagne2026_reference.md)
+  - [Spyker_1977 · reference](../drugs/drug_amoxicillin/Amoxicillin_Spyker1977_reference.md)
+  - [Wu_2021 · reference](../drugs/drug_amoxicillin/Amoxicillin_Wu2021_reference.md)
+  - [Zhang_2025 · reference](../drugs/drug_amoxicillin/Amoxicillin_Zhang2025_reference.md)
+  - [Foulds_1983 · reference](../drugs/drug_amoxicillin/Amoxicillin_Foulds1983_reference.md)
+  - [Sturgill_1992 · reference](../drugs/drug_amoxicillin/Amoxicillin_Sturgill1992_reference.md)
+  - [Carceles_1995 · intramuscular_route_n_5](../drugs/drug_amoxicillin/Amoxicillin_Carceles1995_intramuscular_route_n_5.md)
+  - [Carceles_1995 · intravenous_route_w_10](../drugs/drug_amoxicillin/Amoxicillin_Carceles1995_intravenous_route_w_10.md)
+<!-- docs.py:sidebar {"atc_codes": ["B01AC04"], "counts": {"pd": 4, "pgx": 14, "pk": 16}, "curated": 1, "details": [{"label": "Jung_2024 \u00b7 EM", "model_id": "Clopidogrel_Jung2024"}, {"label": "Grafeneder_2024 \u00b7 hdp_n_17", "model_id": "Clopidogrel_Grafeneder2024_hdp_n_17"}, {"label": "Grafeneder_2024 \u00b7 hv", "model_id": "Clopidogrel_Grafeneder2024_hv"}, {"label": "Grafeneder_2024 \u00b7 hv_n_16", "model_id": "Clopidogrel_Grafeneder2024_hv_n_16"}, {"label": "Henrich_2021 \u00b7 reference", "model_id": "Clopidogrel_Henrich2021_reference"}, {"label": "Jiang_2025 \u00b7 reference", "model_id": "Clopidogrel_Jiang2025_reference"}, {"label": "Kang_2026 \u00b7 reference", "model_id": "Clopidogrel_Kang2026_reference"}, {"label": "Koh_2025 \u00b7 reference", "model_id": "Clopidogrel_Koh2025_reference"}, {"label": "Lee_2012 \u00b7 reference", "model_id": "Clopidogrel_Lee2012_reference"}, {"label": "Lv_2025 \u00b7 reference", "model_id": "Clopidogrel_Lv2025_reference"}, {"label": "Ma_2014 \u00b7 reference", "model_id": "Clopidogrel_Ma2014_reference"}, {"label": "Purohit_2026 \u00b7 reference", "model_id": "Clopidogrel_Purohit2026_reference"}, {"label": "Wang_2025 \u00b7 reference", "model_id": "Clopidogrel_Wang2025_reference"}, {"label": "Xie_2014 \u00b7 reference", "model_id": "Clopidogrel_Xie2014_reference"}, {"label": "Yata_2026 \u00b7 reference", "model_id": "Clopidogrel_Yata2026_reference"}, {"label": "Zhang_2024 \u00b7 reference", "model_id": "Clopidogrel_Zhang2024_reference"}, {"label": "Zhang_2025 \u00b7 reference", "model_id": "Clopidogrel_Zhang2025_reference"}, {"label": "Grafeneder_2024 \u00b7 hdp", "model_id": "Clopidogrel_Grafeneder2024_hdp"}, {"label": "Jung_2024 \u00b7 population_mean", "model_id": "Clopidogrel_Jung2024_population_mean"}, {"label": "Danielak_2017 \u00b7 reference", "model_id": "Clopidogrel_Danielak2017_reference"}, {"label": "Jung_2024 \u00b7 standard_deviation", "model_id": "Clopidogrel_Jung2024_standard_deviation"}], "dir": "drug_clopidogrel", "extracted": 16, "last_change": "2026-09-05T15:40:22.974020+00:00", "name": "clopidogrel", "needs_review": 2, "records": 21, "rejected": 2, "rendered": true, "slug": "clopidogrel", "stale": 0} -->
+- [clopidogrel](../drugs/drug_clopidogrel/) <sub>(16/4/14)</sub>
+  - [Jung_2024 · EM](../drugs/drug_clopidogrel/Clopidogrel_Jung2024.md)
+  - [Grafeneder_2024 · hdp_n_17](../drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hdp_n_17.md)
+  - [Grafeneder_2024 · hv](../drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv.md)
+  - [Grafeneder_2024 · hv_n_16](../drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv_n_16.md)
+  - [Henrich_2021 · reference](../drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference.md)
+  - [Jiang_2025 · reference](../drugs/drug_clopidogrel/Clopidogrel_Jiang2025_reference.md)
+  - [Kang_2026 · reference](../drugs/drug_clopidogrel/Clopidogrel_Kang2026_reference.md)
+  - [Koh_2025 · reference](../drugs/drug_clopidogrel/Clopidogrel_Koh2025_reference.md)
+  - [Lee_2012 · reference](../drugs/drug_clopidogrel/Clopidogrel_Lee2012_reference.md)
+  - [Lv_2025 · reference](../drugs/drug_clopidogrel/Clopidogrel_Lv2025_reference.md)
+  - [Ma_2014 · reference](../drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md)
+  - [Purohit_2026 · reference](../drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference.md)
+  - [Wang_2025 · reference](../drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference.md)
+  - [Xie_2014 · reference](../drugs/drug_clopidogrel/Clopidogrel_Xie2014_reference.md)
+  - [Yata_2026 · reference](../drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference.md)
+  - [Zhang_2024 · reference](../drugs/drug_clopidogrel/Clopidogrel_Zhang2024_reference.md)
+  - [Zhang_2025 · reference](../drugs/drug_clopidogrel/Clopidogrel_Zhang2025_reference.md)
+  - [Grafeneder_2024 · hdp](../drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hdp.md)
+  - [Jung_2024 · population_mean](../drugs/drug_clopidogrel/Clopidogrel_Jung2024_population_mean.md)
+  - [Danielak_2017 · reference](../drugs/drug_clopidogrel/Clopidogrel_Danielak2017_reference.md)
+  - [Jung_2024 · standard_deviation](../drugs/drug_clopidogrel/Clopidogrel_Jung2024_standard_deviation.md)
+<!-- docs.py:sidebar {"atc_codes": ["C01EB16", "G02CC01", "M01AE01", "M02AA13", "N02AJ08", "N02AJ19", "N02AJ23", "R02AX02"], "counts": {"pd": 12, "pgx": 8, "pk": 21}, "curated": 0, "details": [{"label": "Brown_1992 \u00b7 reference", "model_id": "Ibuprofen_Brown1992_reference"}, {"label": "Brown_1998 \u00b7 ibu05", "model_id": "Ibuprofen_Brown1998_ibu05"}, {"label": "Brown_1998 \u00b7 ibu10", "model_id": "Ibuprofen_Brown1998_ibu10"}, {"label": "Clissold_1987 \u00b7 reference", "model_id": "Ibuprofen_Clissold1987_reference"}, {"label": "Gonzalez_1987 \u00b7 reference", "model_id": "Ibuprofen_Gonzalez1987_reference"}, {"label": "Hannam_2018 \u00b7 cl_acet_l_h_70_kg_1", "model_id": "Ibuprofen_Hannam2018_cl_acet_l_h_70_kg_1"}, {"label": "Hannam_2018 \u00b7 cl_ibu_l_h_70_kg_1", "model_id": "Ibuprofen_Hannam2018_cl_ibu_l_h_70_kg_1"}, {"label": "Hannam_2018 \u00b7 err_add_acet_mg_l", "model_id": "Ibuprofen_Hannam2018_err_add_acet_mg_l"}, {"label": "Hannam_2018 \u00b7 err_add_ibu_mg_l", "model_id": "Ibuprofen_Hannam2018_err_add_ibu_mg_l"}, {"label": "Hannam_2018 \u00b7 t_absacet_h", "model_id": "Ibuprofen_Hannam2018_t_absacet_h"}, {"label": "Hannam_2018 \u00b7 t_absibu_h", "model_id": "Ibuprofen_Hannam2018_t_absibu_h"}, {"label": "Hannam_2018 \u00b7 t_abstram_h", "model_id": "Ibuprofen_Hannam2018_t_abstram_h"}, {"label": "Hannam_2018 \u00b7 v_acet_l_70_kg_1", "model_id": "Ibuprofen_Hannam2018_v_acet_l_70_kg_1"}, {"label": "Hannam_2018 \u00b7 v_ibu_l_70_kg_1", "model_id": "Ibuprofen_Hannam2018_v_ibu_l_70_kg_1"}, {"label": "Knihinicki_1990 \u00b7 reference", "model_id": "Ibuprofen_Knihinicki1990_reference"}, {"label": "Somogyi_1987 \u00b7 reference", "model_id": "Ibuprofen_Somogyi1987_reference"}, {"label": "Soria-Chacartegui_2026 \u00b7 reference", "model_id": "Ibuprofen_SoriaChacartegui2026_reference"}, {"label": "Todd_1986 \u00b7 reference", "model_id": "Ibuprofen_Todd1986_reference"}, {"label": "Troc\u00f3niz_2000 \u00b7 estimate", "model_id": "Ibuprofen_Trocniz2000_estimate"}, {"label": "Troc\u00f3niz_2000 \u00b7 interindividual_variability", "model_id": "Ibuprofen_Trocniz2000_interindividual_variability"}, {"label": "Gregoire_2004 \u00b7 very premature neonates", "model_id": "Ibuprofen_Gregoire2004_reference"}, {"label": "Morse_2022 \u00b7 healthy adults", "model_id": "Ibuprofen_Morse2022_reference"}, {"label": "Hannam_2018 \u00b7 children undergoing adenotonsillectomy", "model_id": "Ibuprofen_Hannam2018_children_undergoing_adenotonsillectomy"}, {"label": "Albert_1984 \u00b7 normal volunteers, elderly subjects, patients with liver disease, patients with rheumatoid arthritis", "model_id": "Ibuprofen_Albert1984_reference"}, {"label": "Almoslem_2024 \u00b7 reference", "model_id": "Ibuprofen_Almoslem2024_reference"}, {"label": "Asif_2025 \u00b7 reference", "model_id": "Ibuprofen_Asif2025_reference"}], "dir": "drug_ibuprofen", "extracted": 20, "last_change": "2026-08-27T06:55:58.131185+00:00", "name": "ibuprofen", "needs_review": 2, "records": 26, "rejected": 3, "rendered": true, "slug": "ibuprofen", "stale": 3} -->
+- [ibuprofen](../drugs/drug_ibuprofen/) <sub>(21/12/8)</sub>
+  - [Brown_1992 · reference](../drugs/drug_ibuprofen/Ibuprofen_Brown1992_reference.md)
+  - [Brown_1998 · ibu05](../drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu05.md)
+  - [Brown_1998 · ibu10](../drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu10.md)
+  - [Clissold_1987 · reference](../drugs/drug_ibuprofen/Ibuprofen_Clissold1987_reference.md)
+  - [Gonzalez_1987 · reference](../drugs/drug_ibuprofen/Ibuprofen_Gonzalez1987_reference.md)
+  - [Hannam_2018 · cl_acet_l_h_70_kg_1](../drugs/drug_ibuprofen/Ibuprofen_Hannam2018_cl_acet_l_h_70_kg_1.md)
+  - [Hannam_2018 · cl_ibu_l_h_70_kg_1](../drugs/drug_ibuprofen/Ibuprofen_Hannam2018_cl_ibu_l_h_70_kg_1.md)
+  - [Hannam_2018 · err_add_acet_mg_l](../drugs/drug_ibuprofen/Ibuprofen_Hannam2018_err_add_acet_mg_l.md)
+  - [Hannam_2018 · err_add_ibu_mg_l](../drugs/drug_ibuprofen/Ibuprofen_Hannam2018_err_add_ibu_mg_l.md)
+  - [Hannam_2018 · t_absacet_h](../drugs/drug_ibuprofen/Ibuprofen_Hannam2018_t_absacet_h.md)
+  - [Hannam_2018 · t_absibu_h](../drugs/drug_ibuprofen/Ibuprofen_Hannam2018_t_absibu_h.md)
+  - [Hannam_2018 · t_abstram_h](../drugs/drug_ibuprofen/Ibuprofen_Hannam2018_t_abstram_h.md)
+  - [Hannam_2018 · v_acet_l_70_kg_1](../drugs/drug_ibuprofen/Ibuprofen_Hannam2018_v_acet_l_70_kg_1.md)
+  - [Hannam_2018 · v_ibu_l_70_kg_1](../drugs/drug_ibuprofen/Ibuprofen_Hannam2018_v_ibu_l_70_kg_1.md)
+  - [Knihinicki_1990 · reference](../drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md)
+  - [Somogyi_1987 · reference](../drugs/drug_ibuprofen/Ibuprofen_Somogyi1987_reference.md)
+  - [Soria-Chacartegui_2026 · reference](../drugs/drug_ibuprofen/Ibuprofen_SoriaChacartegui2026_reference.md)
+  - [Todd_1986 · reference](../drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md)
+  - [Trocóniz_2000 · estimate](../drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_estimate.md)
+  - [Trocóniz_2000 · interindividual_variability](../drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_interindividual_variability.md)
+  - [Gregoire_2004 · very premature neonates](../drugs/drug_ibuprofen/Ibuprofen_Gregoire2004_reference.md)
+  - [Morse_2022 · healthy adults](../drugs/drug_ibuprofen/Ibuprofen_Morse2022_reference.md)
+  - [Hannam_2018 · children undergoing adenotonsillectomy](../drugs/drug_ibuprofen/Ibuprofen_Hannam2018_children_undergoing_adenotonsillectomy.md)
+  - [Albert_1984 · normal volunteers, elderly subjects, patients with liver disease, patients with rheumatoid arthritis](../drugs/drug_ibuprofen/Ibuprofen_Albert1984_reference.md)
+  - [Almoslem_2024 · reference](../drugs/drug_ibuprofen/Ibuprofen_Almoslem2024_reference.md)
+  - [Asif_2025 · reference](../drugs/drug_ibuprofen/Ibuprofen_Asif2025_reference.md)
+<!-- docs.py:sidebar {"atc_codes": ["A10BA02", "A10BD02", "A10BD03", "A10BD05", "A10BD07", "A10BD08", "A10BD10", "A10BD11", "A10BD13", "A10BD14", "A10BD15", "A10BD16", "A10BD17", "A10BD18", "A10BD20", "A10BD22", "A10BD23", "A10BD26", "A10BD28"], "counts": {"pd": 16, "pgx": 7, "pk": 22}, "curated": 0, "details": [{"label": "Ailabouni_2026 \u00b7 250_mg", "model_id": "Metformin_Ailabouni2026_250_mg"}, {"label": "Ailabouni_2026 \u00b7 850_mg", "model_id": "Metformin_Ailabouni2026_850_mg"}, {"label": "Ailabouni_2026 \u00b7 final_model_estimate", "model_id": "Metformin_Ailabouni2026_final_model_estimate"}, {"label": "Chae_2012 \u00b7 interindividual", "model_id": "Metformin_Chae2012_interindividual"}, {"label": "Chae_2012 \u00b7 population", "model_id": "Metformin_Chae2012_population"}, {"label": "Chae_2012 \u00b7 reference", "model_id": "Metformin_Chae2012_reference"}, {"label": "Chen_2025 \u00b7 reference", "model_id": "Metformin_Chen2025_reference"}, {"label": "Dong_2024 \u00b7 reference", "model_id": "Metformin_Dong2024_reference"}, {"label": "Fernandez_2025 \u00b7 reference", "model_id": "Metformin_Fernandez2025_reference"}, {"label": "Fujimoto_2025 \u00b7 reference", "model_id": "Metformin_Fujimoto2025_reference"}, {"label": "Jacobs_2026 \u00b7 oral", "model_id": "Metformin_Jacobs2026_oral"}, {"label": "Jiang_2025 \u00b7 reference", "model_id": "Metformin_Jiang2025_reference"}, {"label": "Jin_2025 \u00b7 reference", "model_id": "Metformin_Jin2025_reference"}, {"label": "Liang_2017 \u00b7 reference", "model_id": "Metformin_Liang2017_reference"}, {"label": "Mak_2023 \u00b7 focei_estimates", "model_id": "Metformin_Mak2023_focei_estimates"}, {"label": "Mak_2023 \u00b7 saem_estimates", "model_id": "Metformin_Mak2023_saem_estimates"}, {"label": "Min_2025 \u00b7 reference", "model_id": "Metformin_Min2025_reference"}, {"label": "Nikolaidis_2026 \u00b7 reference", "model_id": "Metformin_Nikolaidis2026_reference"}, {"label": "Sinnappah_2020 \u00b7 duong_et_al4", "model_id": "Metformin_Sinnappah2020_duong_et_al4"}, {"label": "Sinnappah_2020 \u00b7 parameter_estimates_rse", "model_id": "Metformin_Sinnappah2020_parameter_estimates_rse"}, {"label": "Zhang_2025 \u00b7 reference", "model_id": "Metformin_Zhang2025_reference"}, {"label": "Zheng_2024 \u00b7 reference", "model_id": "Metformin_Zheng2024_reference"}, {"label": "Li_2020 \u00b7 reference", "model_id": "Metformin_Li2020_reference"}, {"label": "Choi_2018 \u00b7 reference", "model_id": "Metformin_Choi2018_reference"}, {"label": "Choi_2025 \u00b7 reference", "model_id": "Metformin_Choi2025_reference"}, {"label": "Ho_2024 \u00b7 reference", "model_id": "Metformin_Ho2024_reference"}, {"label": "Jacobs_2026 \u00b7 intravenous", "model_id": "Metformin_Jacobs2026_intravenous"}, {"label": "Nikolaidis_2026 \u00b7 base", "model_id": "Metformin_Nikolaidis2026_base"}, {"label": "Nikolaidis_2026 \u00b7 final", "model_id": "Metformin_Nikolaidis2026_final"}, {"label": "Patel_2019 \u00b7 ator_grt", "model_id": "Metformin_Patel2019_ator_grt"}, {"label": "Patel_2019 \u00b7 met", "model_id": "Metformin_Patel2019_met"}, {"label": "Patel_2019 \u00b7 met_grt", "model_id": "Metformin_Patel2019_met_grt"}, {"label": "Wang_2022 \u00b7 reference", "model_id": "Metformin_Wang2022_reference"}], "dir": "drug_metformin", "extracted": 22, "last_change": "2026-08-26T20:40:20.204105+00:00", "name": "metformin", "needs_review": 1, "records": 33, "rejected": 10, "rendered": true, "slug": "metformin", "stale": 0} -->
+- [metformin](../drugs/drug_metformin/) <sub>(22/16/7)</sub>
+  - [Ailabouni_2026 · 250_mg](../drugs/drug_metformin/Metformin_Ailabouni2026_250_mg.md)
+  - [Ailabouni_2026 · 850_mg](../drugs/drug_metformin/Metformin_Ailabouni2026_850_mg.md)
+  - [Ailabouni_2026 · final_model_estimate](../drugs/drug_metformin/Metformin_Ailabouni2026_final_model_estimate.md)
+  - [Chae_2012 · interindividual](../drugs/drug_metformin/Metformin_Chae2012_interindividual.md)
+  - [Chae_2012 · population](../drugs/drug_metformin/Metformin_Chae2012_population.md)
+  - [Chae_2012 · reference](../drugs/drug_metformin/Metformin_Chae2012_reference.md)
+  - [Chen_2025 · reference](../drugs/drug_metformin/Metformin_Chen2025_reference.md)
+  - [Dong_2024 · reference](../drugs/drug_metformin/Metformin_Dong2024_reference.md)
+  - [Fernandez_2025 · reference](../drugs/drug_metformin/Metformin_Fernandez2025_reference.md)
+  - [Fujimoto_2025 · reference](../drugs/drug_metformin/Metformin_Fujimoto2025_reference.md)
+  - [Jacobs_2026 · oral](../drugs/drug_metformin/Metformin_Jacobs2026_oral.md)
+  - [Jiang_2025 · reference](../drugs/drug_metformin/Metformin_Jiang2025_reference.md)
+  - [Jin_2025 · reference](../drugs/drug_metformin/Metformin_Jin2025_reference.md)
+  - [Liang_2017 · reference](../drugs/drug_metformin/Metformin_Liang2017_reference.md)
+  - [Mak_2023 · focei_estimates](../drugs/drug_metformin/Metformin_Mak2023_focei_estimates.md)
+  - [Mak_2023 · saem_estimates](../drugs/drug_metformin/Metformin_Mak2023_saem_estimates.md)
+  - [Min_2025 · reference](../drugs/drug_metformin/Metformin_Min2025_reference.md)
+  - [Nikolaidis_2026 · reference](../drugs/drug_metformin/Metformin_Nikolaidis2026_reference.md)
+  - [Sinnappah_2020 · duong_et_al4](../drugs/drug_metformin/Metformin_Sinnappah2020_duong_et_al4.md)
+  - [Sinnappah_2020 · parameter_estimates_rse](../drugs/drug_metformin/Metformin_Sinnappah2020_parameter_estimates_rse.md)
+  - [Zhang_2025 · reference](../drugs/drug_metformin/Metformin_Zhang2025_reference.md)
+  - [Zheng_2024 · reference](../drugs/drug_metformin/Metformin_Zheng2024_reference.md)
+  - [Li_2020 · reference](../drugs/drug_metformin/Metformin_Li2020_reference.md)
+  - [Choi_2018 · reference](../drugs/drug_metformin/Metformin_Choi2018_reference.md)
+  - [Choi_2025 · reference](../drugs/drug_metformin/Metformin_Choi2025_reference.md)
+  - [Ho_2024 · reference](../drugs/drug_metformin/Metformin_Ho2024_reference.md)
+  - [Jacobs_2026 · intravenous](../drugs/drug_metformin/Metformin_Jacobs2026_intravenous.md)
+  - [Nikolaidis_2026 · base](../drugs/drug_metformin/Metformin_Nikolaidis2026_base.md)
+  - [Nikolaidis_2026 · final](../drugs/drug_metformin/Metformin_Nikolaidis2026_final.md)
+  - [Patel_2019 · ator_grt](../drugs/drug_metformin/Metformin_Patel2019_ator_grt.md)
+  - [Patel_2019 · met](../drugs/drug_metformin/Metformin_Patel2019_met.md)
+  - [Patel_2019 · met_grt](../drugs/drug_metformin/Metformin_Patel2019_met_grt.md)
+  - [Wang_2022 · reference](../drugs/drug_metformin/Metformin_Wang2022_reference.md)
+<!-- docs.py:sidebar {"atc_codes": ["A10BJ06"], "counts": {"pd": 43, "pgx": 0, "pk": 13}, "curated": 0, "details": [{"label": "Carlsson_2018 \u00b7 base", "model_id": "Semaglutide_Carlsson2018_base"}, {"label": "Carlsson_2018 \u00b7 full", "model_id": "Semaglutide_Carlsson2018_full"}, {"label": "Carlsson_2018 \u00b7 reference", "model_id": "Semaglutide_Carlsson2018_reference"}, {"label": "Langeskov_2022 \u00b7 reference", "model_id": "Semaglutide_Langeskov2022_reference"}, {"label": "Min_2025 \u00b7 reference", "model_id": "Semaglutide_Min2025_reference"}, {"label": "Overgaard_2019 \u00b7 estimate", "model_id": "Semaglutide_Overgaard2019_estimate"}, {"label": "Overgaard_2019 \u00b7 one_compartment_model", "model_id": "Semaglutide_Overgaard2019_one_compartment_model"}, {"label": "Overgaard_2019 \u00b7 one_compartment_model_from_phase_3a_trialsa", "model_id": "Semaglutide_Overgaard2019_one_compartment_model_from_phase_3"}, {"label": "Overgaard_2019 \u00b7 shrinkage", "model_id": "Semaglutide_Overgaard2019_shrinkage"}, {"label": "Overgaard_2019 \u00b7 two_compartment_final_model", "model_id": "Semaglutide_Overgaard2019_two_compartment_final_model"}, {"label": "Overgaard_2021_2 \u00b7 reference", "model_id": "Semaglutide_Overgaard2021v2_reference"}, {"label": "Xie_2024 \u00b7 reference", "model_id": "Semaglutide_Xie2024_reference"}, {"label": "Yu_2024 \u00b7 reference", "model_id": "Semaglutide_Yu2024_reference"}, {"label": "Choi_2025 \u00b7 reference", "model_id": "Semaglutide_Choi2025_reference"}, {"label": "Guo_2023 \u00b7 reference", "model_id": "Semaglutide_Guo2023_reference"}], "dir": "drug_semaglutide", "extracted": 13, "last_change": "2026-08-26T16:57:57.080458+00:00", "name": "semaglutide", "needs_review": 0, "records": 15, "rejected": 2, "rendered": true, "slug": "semaglutide", "stale": 0} -->
+- [semaglutide](../drugs/drug_semaglutide/) <sub>(13/43/0)</sub>
+  - [Carlsson_2018 · base](../drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md)
+  - [Carlsson_2018 · full](../drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md)
+  - [Carlsson_2018 · reference](../drugs/drug_semaglutide/Semaglutide_Carlsson2018_reference.md)
+  - [Langeskov_2022 · reference](../drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md)
+  - [Min_2025 · reference](../drugs/drug_semaglutide/Semaglutide_Min2025_reference.md)
+  - [Overgaard_2019 · estimate](../drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate.md)
+  - [Overgaard_2019 · one_compartment_model](../drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model.md)
+  - [Overgaard_2019 · one_compartment_model_from_phase_3a_trialsa](../drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3.md)
+  - [Overgaard_2019 · shrinkage](../drugs/drug_semaglutide/Semaglutide_Overgaard2019_shrinkage.md)
+  - [Overgaard_2019 · two_compartment_final_model](../drugs/drug_semaglutide/Semaglutide_Overgaard2019_two_compartment_final_model.md)
+  - [Overgaard_2021_2 · reference](../drugs/drug_semaglutide/Semaglutide_Overgaard2021v2_reference.md)
+  - [Xie_2024 · reference](../drugs/drug_semaglutide/Semaglutide_Xie2024_reference.md)
+  - [Yu_2024 · reference](../drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md)
+  - [Choi_2025 · reference](../drugs/drug_semaglutide/Semaglutide_Choi2025_reference.md)
+  - [Guo_2023 · reference](../drugs/drug_semaglutide/Semaglutide_Guo2023_reference.md)
+<!-- docs.py:sidebar {"atc_codes": ["C03XA01"], "counts": {"pd": 21, "pgx": 2, "pk": 9}, "curated": 0, "details": [{"label": "Lanke_2019 \u00b7 adults with autosomal dominant polycystic kidney disease", "model_id": "Tolvaptan_Lanke2019_reference"}, {"label": "Lanke_2019 \u00b7 reference", "model_id": "Tolvaptan_Lanke2019_reference"}, {"label": "Plosker_2010 \u00b7 reference", "model_id": "Tolvaptan_Plosker2010_reference"}, {"label": "Shoaf_2017 \u00b7 review reference", "model_id": "Tolvaptan_Shoaf2017_reference"}, {"label": "Shoaf_2025 \u00b7 reference", "model_id": "Tolvaptan_Shoaf2025_reference"}, {"label": "Van_2013 \u00b7 healthy subjects and patients with congestive heart failure or hepatic cirrhosis", "model_id": "Tolvaptan_Van2013_reference"}, {"label": "Van_2013 \u00b7 reference", "model_id": "Tolvaptan_Van2013_reference"}, {"label": "Van_2013_2 \u00b7 reference", "model_id": "Tolvaptan_Van2013v2_reference"}, {"label": "Bhatt_2014 \u00b7 review reference", "model_id": "Tolvaptan_Bhatt2014_reference"}, {"label": "Shoaf_2012_3 \u00b7 review reference", "model_id": "Tolvaptan_Shoaf2012v3_reference"}, {"label": "Stanajic-Petrovic_2025 \u00b7 review reference", "model_id": "Tolvaptan_StanajicPetrovic2025_review_reference"}], "dir": "drug_tolvaptan", "extracted": 8, "last_change": "2026-08-27T06:34:17.168729+00:00", "name": "tolvaptan", "needs_review": 3, "records": 11, "rejected": 0, "rendered": true, "slug": "tolvaptan", "stale": 5} -->
 - [tolvaptan](../drugs/drug_tolvaptan/) <sub>(9/21/2)</sub>
-  - [Bhatt_2014 · review reference](../drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference.md)
   - [Lanke_2019 · adults with autosomal dominant polycystic kidney disease](../drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference.md)
   - [Lanke_2019 · reference](../drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference.md)
   - [Plosker_2010 · reference](../drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md)
-  - [Shoaf_2012_3 · review reference](../drugs/drug_tolvaptan/Tolvaptan_Shoaf2012v3_reference.md)
   - [Shoaf_2017 · review reference](../drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md)
   - [Shoaf_2025 · reference](../drugs/drug_tolvaptan/Tolvaptan_Shoaf2025_reference.md)
-  - [Stanajic-Petrovic_2025 · review reference](../drugs/drug_tolvaptan/Tolvaptan_StanajicPetrovic2025_review_reference.md)
   - [Van_2013 · healthy subjects and patients with congestive heart failure or hepatic cirrhosis](../drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md)
   - [Van_2013 · reference](../drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md)
   - [Van_2013_2 · reference](../drugs/drug_tolvaptan/Tolvaptan_Van2013v2_reference.md)
+  - [Bhatt_2014 · review reference](../drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference.md)
+  - [Shoaf_2012_3 · review reference](../drugs/drug_tolvaptan/Tolvaptan_Shoaf2012v3_reference.md)
+  - [Stanajic-Petrovic_2025 · review reference](../drugs/drug_tolvaptan/Tolvaptan_StanajicPetrovic2025_review_reference.md)
 <!-- AUTOGEN:drugs END -->

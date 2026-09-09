@@ -26,19 +26,19 @@ Ticagrelor was granted FDA approval on 20 July 2011.[L14201]
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Amilon_2019](drugs/drug_ticagrelor/Ticagrelor_Amilon2019_reference.md) | Amilon C et al., Population Pharmacokinetics/Pharmacodyn…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00758-0](https://doi.org/10.1007/s40262-019-00758-0) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Henrich_2021](drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md) | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kathman_2022](drugs/drug_ticagrelor/Ticagrelor_Kathman2022_reference.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Li_2016](drugs/drug_ticagrelor/Ticagrelor_Li2016_reference.md) | Li J et al., Population pharmacokinetics of ticagrel…, International journal of cl… (2016) | [10.5414/CP202549](https://doi.org/10.5414/CP202549) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kathman_2022](drugs/drug_ticagrelor/Ticagrelor_Kathman2022_reference.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Åstrand_2019](drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md) | Åstrand M et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2019) | [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Åstrand_2019](drugs/drug_ticagrelor/pd_strand_2019_PRU.md) | Åstrand M et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2019) | [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Henrich_2021](drugs/drug_ticagrelor/pd_Henrich_2021_PRU.md) | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022](drugs/drug_ticagrelor/pd_Kathman_2022_LTA.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022](drugs/drug_ticagrelor/pd_Kathman_2022_PRU.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022](drugs/drug_ticagrelor/pd_Kathman_2022_VASP.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Åstrand_2019](drugs/drug_ticagrelor/pd_strand_2019_PRU.md) | Åstrand M et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2019) | [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812) |
 
 ## Coverage
 

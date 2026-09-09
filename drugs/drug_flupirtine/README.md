@@ -42,9 +42,9 @@
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | **UGT1A1** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Siegmund_2015](drugs/drug_flupirtine/pgx_Siegmund_2015_UGT1A1_safety.md) | Siegmund W et al., Metabolic activation and analgesic effe…, British journal of clinical… (2015) | [10.1111/bcp.12522](https://doi.org/10.1111/bcp.12522) |
 | <span class="pk-badge pk-badge--neutral">evidence_only</span> | **GSTP1** | `Q27` · CL/F | metabolism | [Siegmund_2015](drugs/drug_flupirtine/pgx_Siegmund_2015_GSTP1_Q27.md) | Siegmund W et al., Metabolic activation and analgesic effe…, British journal of clinical… (2015) | [10.1111/bcp.12522](https://doi.org/10.1111/bcp.12522) |
 | <span class="pk-badge pk-badge--neutral">evidence_only</span> | **NAT2** | `Q27` · CL/F | metabolism | [Siegmund_2015](drugs/drug_flupirtine/pgx_Siegmund_2015_NAT2_Q27.md) | Siegmund W et al., Metabolic activation and analgesic effe…, British journal of clinical… (2015) | [10.1111/bcp.12522](https://doi.org/10.1111/bcp.12522) |
-| <span class="pk-badge pk-badge--green">extracted</span> | **UGT1A1** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Siegmund_2015](drugs/drug_flupirtine/pgx_Siegmund_2015_UGT1A1_safety.md) | Siegmund W et al., Metabolic activation and analgesic effe…, British journal of clinical… (2015) | [10.1111/bcp.12522](https://doi.org/10.1111/bcp.12522) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>

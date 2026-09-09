@@ -25,6 +25,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Ye_2026](drugs/drug_dezocine/pd_Ye_2026_intubation_related_hemodynamic_reaction.md) | Ye W et al., Effect of dezocine on the median effect…, Journal of thoracic disease (2026) | [10.21037/jtd-2026-0872](https://doi.org/10.21037/jtd-2026-0872) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Gharagozlou_2002](drugs/drug_dezocine/pd_Gharagozlou_2002_cAMP.md) | Gharagozlou P et al., Activation profiles of opioid ligands i…, BMC neuroscience (2002) | [10.1186/1471-2202-3-19](https://doi.org/10.1186/1471-2202-3-19) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Huang_2026](drugs/drug_dezocine/pd_Huang_2026_CCK_8.md) | Huang L et al., Dezocine alleviates cancer-induced bone…, Molecular pain (2026) | [10.1177/17448069261460286](https://doi.org/10.1177/17448069261460286) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Huang_2026](drugs/drug_dezocine/pd_Huang_2026_TUNEL.md) | Huang L et al., Dezocine alleviates cancer-induced bone…, Molecular pain (2026) | [10.1177/17448069261460286](https://doi.org/10.1177/17448069261460286) |
@@ -35,7 +36,6 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Huang_2026](drugs/drug_dezocine/pd_Huang_2026_paw_withdrawal.md) | Huang L et al., Dezocine alleviates cancer-induced bone…, Molecular pain (2026) | [10.1177/17448069261460286](https://doi.org/10.1177/17448069261460286) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Huang_2026](drugs/drug_dezocine/pd_Huang_2026_volume.md) | Huang L et al., Dezocine alleviates cancer-induced bone…, Molecular pain (2026) | [10.1177/17448069261460286](https://doi.org/10.1177/17448069261460286) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Huang_2026](drugs/drug_dezocine/pd_Huang_2026_von_Frey.md) | Huang L et al., Dezocine alleviates cancer-induced bone…, Molecular pain (2026) | [10.1177/17448069261460286](https://doi.org/10.1177/17448069261460286) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Ye_2026](drugs/drug_dezocine/pd_Ye_2026_intubation_related_hemodynamic_reaction.md) | Ye W et al., Effect of dezocine on the median effect…, Journal of thoracic disease (2026) | [10.21037/jtd-2026-0872](https://doi.org/10.21037/jtd-2026-0872) |
 
 ## Coverage
 

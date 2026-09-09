@@ -21,8 +21,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Barrett_2001](drugs/drug_tinzaparin/Tinzaparin_Barrett2001_reference.md) | Barrett JS et al., Population pharmacodynamics in patients…, International journal of cl… (2001) | — |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Gouin-Thibault_2024](drugs/drug_tinzaparin/Tinzaparin_GouinThibault2024_reference.md) | Gouin-Thibault I et al., Tinzaparin, an alternative to subcutane…, Journal of thrombosis and h… (2024) | [10.1016/j.jtha.2024.07.006](https://doi.org/10.1016/j.jtha.2024.07.006) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Barrett_2001](drugs/drug_tinzaparin/Tinzaparin_Barrett2001_reference.md) | Barrett JS et al., Population pharmacodynamics in patients…, International journal of cl… (2001) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Johansen_1994](drugs/drug_tinzaparin/Tinzaparin_Johansen1994_reference.md) | Johansen PB et al., Pharmacokinetics of tinzaparin (Logipar…, Thrombosis research (1994) | [10.1016/0049-3848(94)90260-7](https://doi.org/10.1016/0049-3848(94)90260-7) |
 
 ## Coverage

@@ -19,6 +19,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Wu_2022](drugs/drug_morpholine/pd_Wu_2022_unknown.md) | Wu F et al., Dosage Strategy of Linezolid According…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.844567](https://doi.org/10.3389/fphar.2022.844567) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [El-Damasy_2023](drugs/drug_morpholine/pd_El_Damasy_2023_BCR_ABLT315I_inhibition.md) | El-Damasy AK et al., Discovery of 3-((3-amino-1H-indazol-4-y…, Journal of enzyme inhibitio… (2023) | [10.1080/14756366.2023.2228515](https://doi.org/10.1080/14756366.2023.2228515) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [El-Damasy_2023](drugs/drug_morpholine/pd_El_Damasy_2023_BCR_ABLWT_inhibition.md) | El-Damasy AK et al., Discovery of 3-((3-amino-1H-indazol-4-y…, Journal of enzyme inhibitio… (2023) | [10.1080/14756366.2023.2228515](https://doi.org/10.1080/14756366.2023.2228515) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [El-Damasy_2023](drugs/drug_morpholine/pd_El_Damasy_2023_Ba_F3_Bcr_AblT315I_cell_growth_inhibition.md) | El-Damasy AK et al., Discovery of 3-((3-amino-1H-indazol-4-y…, Journal of enzyme inhibitio… (2023) | [10.1080/14756366.2023.2228515](https://doi.org/10.1080/14756366.2023.2228515) |
@@ -58,7 +59,6 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Su_2026](drugs/drug_morpholine/pd_Su_2026_unknown.md) | Su J et al., Discovery of a triple-site inhibitor ta…, Nucleic acids research (2026) | [10.1093/nar/gkag488](https://doi.org/10.1093/nar/gkag488) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Tsuji_2017](drugs/drug_morpholine/pd_Tsuji_2017_PLTCIRC.md) | Tsuji Y et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2017) | [10.1111/bcp.13262](https://doi.org/10.1111/bcp.13262) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Wangngae_2022](drugs/drug_morpholine/pd_Wangngae_2022_relative_viability.md) | Wangngae S et al., Effect of morpholine and charge distrib…, Scientific reports (2022) | [10.1038/s41598-022-07533-5](https://doi.org/10.1038/s41598-022-07533-5) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Wu_2022](drugs/drug_morpholine/pd_Wu_2022_unknown.md) | Wu F et al., Dosage Strategy of Linezolid According…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.844567](https://doi.org/10.3389/fphar.2022.844567) |
 
 ## Coverage
 

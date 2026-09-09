@@ -19,8 +19,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Choi_2025](drugs/drug_efpeglenatide/Efpeglenatide_Choi2025_reference.md) | Choi S et al., Population pharmacokinetics of efpeglen…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1715585](https://doi.org/10.3389/fphar.2025.1715585) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Min_2025](drugs/drug_efpeglenatide/Efpeglenatide_Min2025_reference.md) | Min JS et al., A Comprehensive Review on the Pharmacok…, Drug design, development an… (2025) | [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Choi_2025](drugs/drug_efpeglenatide/Efpeglenatide_Choi2025_reference.md) | Choi S et al., Population pharmacokinetics of efpeglen…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1715585](https://doi.org/10.3389/fphar.2025.1715585) |
 
 ## Coverage
 

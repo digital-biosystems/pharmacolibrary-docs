@@ -19,6 +19,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Wu_2022](drugs/drug_morpholine_salicylate/pd_Wu_2022_unknown.md) | Wu F et al., Dosage Strategy of Linezolid According…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.844567](https://doi.org/10.3389/fphar.2022.844567) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Corio-Costet_1988](drugs/drug_morpholine_salicylate/pd_Corio_Costet_1988_incorporation_of_14C_acetate_into_C27_ster.md) | Corio-Costet MF et al., Inhibition by the fungicide fenpropimor…, The Biochemical journal (1988) | [10.1042/bj2560829](https://doi.org/10.1042/bj2560829) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Hawtin_2023](drugs/drug_morpholine_salicylate/pd_Hawtin_2023_BUN_levels.md) | Hawtin S et al., Preclinical characterization of the Tol…, Cell reports. Medicine (2023) | [10.1016/j.xcrm.2023.101036](https://doi.org/10.1016/j.xcrm.2023.101036) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Hawtin_2023](drugs/drug_morpholine_salicylate/pd_Hawtin_2023_B_cell_infiltration_in_kidneys.md) | Hawtin S et al., Preclinical characterization of the Tol…, Cell reports. Medicine (2023) | [10.1016/j.xcrm.2023.101036](https://doi.org/10.1016/j.xcrm.2023.101036) |
@@ -50,7 +51,6 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Munir_2024](drugs/drug_morpholine_salicylate/pd_Munir_2024_urease.md) | Munir R et al., Exploration of morpholine-thiophene hyb…, Frontiers in chemistry (2024) | [10.3389/fchem.2024.1403127](https://doi.org/10.3389/fchem.2024.1403127) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Tsuji_2017](drugs/drug_morpholine_salicylate/pd_Tsuji_2017_PLTCIRC.md) | Tsuji Y et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2017) | [10.1111/bcp.13262](https://doi.org/10.1111/bcp.13262) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Wangngae_2022](drugs/drug_morpholine_salicylate/pd_Wangngae_2022_relative_viability.md) | Wangngae S et al., Effect of morpholine and charge distrib…, Scientific reports (2022) | [10.1038/s41598-022-07533-5](https://doi.org/10.1038/s41598-022-07533-5) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Wu_2022](drugs/drug_morpholine_salicylate/pd_Wu_2022_unknown.md) | Wu F et al., Dosage Strategy of Linezolid According…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.844567](https://doi.org/10.3389/fphar.2022.844567) |
 
 ## Coverage
 

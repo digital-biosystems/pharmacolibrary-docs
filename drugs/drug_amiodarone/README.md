@@ -17,7 +17,7 @@ Off-label indications include atrial fibrillation and supraventricular tachycard
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 2/0/0 | 0/0/0 | 0/0/2 | not captured | not captured | 43 | 39/1 | 15/28 | 0 |
+| 2026-09-09 08:05 | 35:04 | 2/0/0 | 0/0/0 | 0/0/2 | 287,849/90,603 | ollama / qwen3.8:27b-mtp-q8_0 | 43 | 32/8 | 15/28 | 0 |
 
 ## popPK records
 
@@ -25,6 +25,14 @@ Off-label indications include atrial fibrillation and supraventricular tachycard
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Hirai_2022](drugs/drug_amiodarone/Amiodarone_Hirai2022_reference.md) | Hirai T et al., Population Pharmacokinetic Model of Ami…, Biological & pharmaceutical… (2022) | [10.1248/bpb.b21-00940](https://doi.org/10.1248/bpb.b21-00940) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Pollak_2000](drugs/drug_amiodarone/Amiodarone_Pollak2000_reference.md) | Pollak PT et al., Population pharmacokinetics of long-ter…, Clinical pharmacology and t… (2000) | [10.1067/mcp.2000.107047](https://doi.org/10.1067/mcp.2000.107047) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Li_2025](drugs/drug_amiodarone/Amiodarone_Li2025_base.md) | Li TY et al., Dose Optimization of Rivaroxaban in Eld…, Drug design, development an… (2025) | [10.2147/DDDT.S563521](https://doi.org/10.2147/DDDT.S563521) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Li_2025](drugs/drug_amiodarone/Amiodarone_Li2025_final.md) | Li TY et al., Dose Optimization of Rivaroxaban in Eld…, Drug design, development an… (2025) | [10.2147/DDDT.S563521](https://doi.org/10.2147/DDDT.S563521) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Sermsappasuk_2006](drugs/drug_amiodarone/Amiodarone_Sermsappasuk2006_cva_mean_s_d.md) | Sermsappasuk P et al., Kinetic analysis of myocardial uptake a…, European journal of pharmac… (2006) | [10.1016/j.ejps.2006.02.007](https://doi.org/10.1016/j.ejps.2006.02.007) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Sermsappasuk_2006](drugs/drug_amiodarone/Amiodarone_Sermsappasuk2006_estimate_mean_s_d.md) | Sermsappasuk P et al., Kinetic analysis of myocardial uptake a…, European journal of pharmac… (2006) | [10.1016/j.ejps.2006.02.007](https://doi.org/10.1016/j.ejps.2006.02.007) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Yonezawa_2002](drugs/drug_amiodarone/Amiodarone_Yonezawa2002_mex_amd_group_1.md) | Yonezawa E et al., Lack of interaction between amiodarone…, Journal of clinical pharmac… (2002) | [10.1177/00912700222011265](https://doi.org/10.1177/00912700222011265) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Yonezawa_2002](drugs/drug_amiodarone/Amiodarone_Yonezawa2002_mex_amd_group_3.md) | Yonezawa E et al., Lack of interaction between amiodarone…, Journal of clinical pharmac… (2002) | [10.1177/00912700222011265](https://doi.org/10.1177/00912700222011265) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Yonezawa_2002](drugs/drug_amiodarone/Amiodarone_Yonezawa2002_mex_amd_group_5.md) | Yonezawa E et al., Lack of interaction between amiodarone…, Journal of clinical pharmac… (2002) | [10.1177/00912700222011265](https://doi.org/10.1177/00912700222011265) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Yonezawa_2002](drugs/drug_amiodarone/Amiodarone_Yonezawa2002_mex_group.md) | Yonezawa E et al., Lack of interaction between amiodarone…, Journal of clinical pharmac… (2002) | [10.1177/00912700222011265](https://doi.org/10.1177/00912700222011265) |
 
 ## Pharmacogenomics (PGx)
 
@@ -41,8 +49,8 @@ Off-label indications include atrial fibrillation and supraventricular tachycard
 ## Coverage
 
 - **PubMed hits:** 510 matched, 72 returned
-- **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 39  ·  **relevant:** 2
+- **records:** 10  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
