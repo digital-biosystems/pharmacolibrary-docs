@@ -561,6 +561,28 @@
   "slug": "alteplase",
   "stale": 0
  },
+ "drug_amezinium_metilsulfate": {
+  "atc_codes": [
+   "C01CA25"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_amezinium_metilsulfate",
+  "extracted": 0,
+  "last_change": null,
+  "name": "amezinium metilsulfate",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "amezinium_metilsulfate",
+  "stale": 0
+ },
  "drug_amikacin": {
   "atc_codes": [
    "D06AX12",
@@ -1099,6 +1121,80 @@
   "slug": "amoxicillin",
   "stale": 0
  },
+ "drug_amrinone": {
+  "atc_codes": [
+   "C01CE01"
+  ],
+  "counts": {
+   "pd": 3,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Park_1983 \u00b7 reference",
+    "model_id": "Amrinone_Park1983_reference"
+   }
+  ],
+  "dir": "drug_amrinone",
+  "extracted": 0,
+  "last_change": "2026-09-09T12:37:58.196366+00:00",
+  "name": "amrinone",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "amrinone",
+  "stale": 0
+ },
+ "drug_angiotensin_ii": {
+  "atc_codes": [
+   "C01CX09"
+  ],
+  "counts": {
+   "pd": 19,
+   "pgx": 4,
+   "pk": 3
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Athanassa_2025 \u00b7 reference",
+    "model_id": "AngiotensinIi_Athanassa2025_reference"
+   },
+   {
+    "label": "Schultze_1975 \u00b7 reference",
+    "model_id": "AngiotensinIi_Schultze1975_reference"
+   },
+   {
+    "label": "Steichert_2025 \u00b7 reference",
+    "model_id": "AngiotensinIi_Steichert2025_reference"
+   },
+   {
+    "label": "van_2026 \u00b7 reference",
+    "model_id": "AngiotensinIi_van2026_reference"
+   },
+   {
+    "label": "Kurup_2024 \u00b7 reference",
+    "model_id": "AngiotensinIi_Kurup2024_reference"
+   },
+   {
+    "label": "Moran_1985 \u00b7 reference",
+    "model_id": "AngiotensinIi_Moran1985_reference"
+   }
+  ],
+  "dir": "drug_angiotensin_ii",
+  "extracted": 3,
+  "last_change": "2026-09-09T13:26:48.633995+00:00",
+  "name": "angiotensin II",
+  "needs_review": 1,
+  "records": 6,
+  "rejected": 2,
+  "rendered": true,
+  "slug": "angiotensin_ii",
+  "stale": 0
+ },
  "drug_antithrombin_iii": {
   "atc_codes": [
    "B01AB02"
@@ -1260,6 +1356,28 @@
   "rejected": 1,
   "rendered": true,
   "slug": "aprotinin",
+  "stale": 0
+ },
+ "drug_arbutamine": {
+  "atc_codes": [
+   "C01CA22"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_arbutamine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "arbutamine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "arbutamine",
   "stale": 0
  },
  "drug_argatroban": {
@@ -12880,6 +12998,28 @@
   "slug": "sodium_salicylate",
   "stale": 0
  },
+ "drug_sparteine": {
+  "atc_codes": [
+   "C01BA04"
+  ],
+  "counts": {
+   "pd": 3,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_sparteine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "sparteine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "sparteine",
+  "stale": 0
+ },
  "drug_streptokinase": {
   "atc_codes": [
    "B01AD01"
@@ -13168,6 +13308,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "taurolidine",
+  "stale": 0
+ },
+ "drug_tedisamil": {
+  "atc_codes": [
+   "C01BD06"
+  ],
+  "counts": {
+   "pd": 2,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_tedisamil",
+  "extracted": 0,
+  "last_change": null,
+  "name": "tedisamil",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "tedisamil",
   "stale": 0
  },
  "drug_telmisartan": {
@@ -13528,6 +13690,28 @@
   "rejected": 1,
   "rendered": true,
   "slug": "tirzepatide",
+  "stale": 0
+ },
+ "drug_tocainide": {
+  "atc_codes": [
+   "C01BB03"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_tocainide",
+  "extracted": 0,
+  "last_change": null,
+  "name": "tocainide",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "tocainide",
   "stale": 0
  },
  "drug_tolvaptan": {
@@ -14009,6 +14193,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "various_combinations",
+  "stale": 0
+ },
+ "drug_vernakalant": {
+  "atc_codes": [
+   "C01BG11"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_vernakalant",
+  "extracted": 0,
+  "last_change": null,
+  "name": "vernakalant",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "vernakalant",
   "stale": 0
  },
  "drug_viminol": {

@@ -110,6 +110,7 @@ Each archive holds the model source, a script that simulates it against the appr
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_modelica.zip" download>Allopurinol_Wen2023_final_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_fmi.zip" download>Allopurinol_Wen2023_final_fmi.zip</a> <span class="pk-size">(1.2 MB)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_matlab.zip" download>Allopurinol_Wen2023_final_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_matlab_simbio.zip" download>Allopurinol_Wen2023_final_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_sbml.zip" download>Allopurinol_Wen2023_final_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>

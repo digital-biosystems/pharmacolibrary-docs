@@ -751,10 +751,47 @@
       - [quinidine <sub>(3/6/0)</sub>](drugs/drug_quinidine/)
       - quinidine combinations excl psycholeptics <sub>(0/0/0)</sub>
       - quinidine combinations with psycholeptics <sub>(0/0/0)</sub>
-      - sparteine <sub>(0/0/0)</sub>
-      - tedisamil <sub>(0/0/0)</sub>
-      - tocainide <sub>(0/0/0)</sub>
-      - vernakalant <sub>(0/0/0)</sub>
+      - [sparteine <sub>(0/3/0)</sub>](drugs/drug_sparteine/)
+      - [tedisamil <sub>(0/2/0)</sub>](drugs/drug_tedisamil/)
+      - [tocainide <sub>(0/0/0)</sub>](drugs/drug_tocainide/)
+      - [vernakalant <sub>(0/0/0)</sub>](drugs/drug_vernakalant/)
+    - C01C Cardiac Stimulants Excl. Cardiac Glycosides
+      - [amezinium metilsulfate <sub>(0/0/0)</sub>](drugs/drug_amezinium_metilsulfate/)
+      - [amrinone <sub>(0/3/0)</sub>](drugs/drug_amrinone/)
+      - [angiotensin II <sub>(3/19/4)</sub>](drugs/drug_angiotensin_ii/)
+      - angiotensinamide <sub>(0/0/0)</sub>
+      - [arbutamine <sub>(0/0/0)</sub>](drugs/drug_arbutamine/)
+      - bucladesine <sub>(0/0/0)</sub>
+      - cafedrine <sub>(0/0/0)</sub>
+      - centhaquine <sub>(0/0/0)</sub>
+      - dimetofrine <sub>(0/0/0)</sub>
+      - dobutamine <sub>(0/0/0)</sub>
+      - dopamine <sub>(0/0/0)</sub>
+      - dopexamine <sub>(0/0/0)</sub>
+      - droxidopa <sub>(0/0/0)</sub>
+      - enoximone <sub>(0/0/0)</sub>
+      - ephedrine <sub>(0/0/0)</sub>
+      - etilefrine <sub>(0/0/0)</sub>
+      - etilefrine combinations <sub>(0/0/0)</sub>
+      - fenoldopam <sub>(0/0/0)</sub>
+      - gepefrine <sub>(0/0/0)</sub>
+      - ibopamine <sub>(0/0/0)</sub>
+      - isoprenaline <sub>(0/0/0)</sub>
+      - levosimendan <sub>(0/0/0)</sub>
+      - mephentermine <sub>(0/0/0)</sub>
+      - metaraminol <sub>(0/0/0)</sub>
+      - methoxamine <sub>(0/0/0)</sub>
+      - midodrine <sub>(0/0/0)</sub>
+      - milrinone <sub>(0/0/0)</sub>
+      - norepinephrine <sub>(0/0/0)</sub>
+      - norfenefrine <sub>(0/0/0)</sub>
+      - octopamine <sub>(0/0/0)</sub>
+      - omecamtiv mecarbil <sub>(0/0/0)</sub>
+      - oxedrine <sub>(0/0/0)</sub>
+      - phenylephrine <sub>(0/0/0)</sub>
+      - prenalterol <sub>(0/0/0)</sub>
+      - theodrenaline <sub>(0/0/0)</sub>
+      - xamoterol <sub>(0/0/0)</sub>
     - C01D Vasodilators Used In Cardiac Diseases
       - benziodarone <sub>(0/0/0)</sub>
       - benziodarone combinations <sub>(0/0/0)</sub>
@@ -3762,6 +3799,8 @@
 - [alteplase](drugs/drug_alteplase/) <sub>(0/0/0)</sub>
 <!-- docs.py:sidebar {"atc_codes": [], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "toxin_americium", "extracted": 0, "last_change": null, "name": "americium", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "americium", "stale": 0} -->
 - [americium](drugs/toxin_americium/) <sub>(0/0/0)</sub>
+<!-- docs.py:sidebar {"atc_codes": ["C01CA25"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_amezinium_metilsulfate", "extracted": 0, "last_change": null, "name": "amezinium metilsulfate", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "amezinium_metilsulfate", "stale": 0} -->
+- [amezinium metilsulfate](drugs/drug_amezinium_metilsulfate/) <sub>(0/0/0)</sub>
 <!-- docs.py:sidebar {"atc_codes": ["D06AX12", "J01GB06", "J01RA06", "S01AA21"], "counts": {"pd": 1, "pgx": 0, "pk": 4}, "curated": 0, "details": [{"label": "Albanell-Fern\u00e1ndez_2025 \u00b7 reference", "model_id": "Amikacin_AlbanellFernndez2025_reference"}, {"label": "Marsot_2017 \u00b7 reference", "model_id": "Amikacin_Marsot2017_reference"}, {"label": "Severino_2023 \u00b7 reference", "model_id": "Amikacin_Severino2023_reference"}, {"label": "Sherwin_2014 \u00b7 reference", "model_id": "Amikacin_Sherwin2014_reference"}, {"label": "Alhadab_2018 \u00b7 reference", "model_id": "Amikacin_Alhadab2018_reference"}], "dir": "drug_amikacin", "extracted": 4, "last_change": "2026-07-22T08:05:57.832423+00:00", "name": "amikacin", "needs_review": 1, "records": 5, "rejected": 0, "rendered": true, "slug": "amikacin", "stale": 0} -->
 - [amikacin](drugs/drug_amikacin/) <sub>(4/1/0)</sub>
   - [Albanell-Fernández_2025 · reference](drugs/drug_amikacin/Amikacin_AlbanellFernndez2025_reference.md)
@@ -3847,6 +3886,17 @@
   - [Sturgill_1992 · reference](drugs/drug_amoxicillin/Amoxicillin_Sturgill1992_reference.md)
   - [Carceles_1995 · intramuscular_route_n_5](drugs/drug_amoxicillin/Amoxicillin_Carceles1995_intramuscular_route_n_5.md)
   - [Carceles_1995 · intravenous_route_w_10](drugs/drug_amoxicillin/Amoxicillin_Carceles1995_intravenous_route_w_10.md)
+<!-- docs.py:sidebar {"atc_codes": ["C01CE01"], "counts": {"pd": 3, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Park_1983 \u00b7 reference", "model_id": "Amrinone_Park1983_reference"}], "dir": "drug_amrinone", "extracted": 0, "last_change": "2026-09-09T12:37:58.196366+00:00", "name": "amrinone", "needs_review": 0, "records": 1, "rejected": 1, "rendered": true, "slug": "amrinone", "stale": 0} -->
+- [amrinone](drugs/drug_amrinone/) <sub>(0/3/0)</sub>
+  - [Park_1983 · reference](drugs/drug_amrinone/Amrinone_Park1983_reference.md)
+<!-- docs.py:sidebar {"atc_codes": ["C01CX09"], "counts": {"pd": 19, "pgx": 4, "pk": 3}, "curated": 0, "details": [{"label": "Athanassa_2025 \u00b7 reference", "model_id": "AngiotensinIi_Athanassa2025_reference"}, {"label": "Schultze_1975 \u00b7 reference", "model_id": "AngiotensinIi_Schultze1975_reference"}, {"label": "Steichert_2025 \u00b7 reference", "model_id": "AngiotensinIi_Steichert2025_reference"}, {"label": "van_2026 \u00b7 reference", "model_id": "AngiotensinIi_van2026_reference"}, {"label": "Kurup_2024 \u00b7 reference", "model_id": "AngiotensinIi_Kurup2024_reference"}, {"label": "Moran_1985 \u00b7 reference", "model_id": "AngiotensinIi_Moran1985_reference"}], "dir": "drug_angiotensin_ii", "extracted": 3, "last_change": "2026-09-09T13:26:48.633995+00:00", "name": "angiotensin II", "needs_review": 1, "records": 6, "rejected": 2, "rendered": true, "slug": "angiotensin_ii", "stale": 0} -->
+- [angiotensin II](drugs/drug_angiotensin_ii/) <sub>(3/19/4)</sub>
+  - [Athanassa_2025 · reference](drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md)
+  - [Schultze_1975 · reference](drugs/drug_angiotensin_ii/AngiotensinIi_Schultze1975_reference.md)
+  - [Steichert_2025 · reference](drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md)
+  - [van_2026 · reference](drugs/drug_angiotensin_ii/AngiotensinIi_van2026_reference.md)
+  - [Kurup_2024 · reference](drugs/drug_angiotensin_ii/AngiotensinIi_Kurup2024_reference.md)
+  - [Moran_1985 · reference](drugs/drug_angiotensin_ii/AngiotensinIi_Moran1985_reference.md)
 <!-- docs.py:sidebar {"atc_codes": ["B01AB02"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Carlson_1984 \u00b7 reference", "model_id": "AntithrombinIii_Carlson1984_reference"}, {"label": "Collen_1977 \u00b7 reference", "model_id": "AntithrombinIii_Collen1977_reference"}, {"label": "Kim_2020 \u00b7 reference", "model_id": "AntithrombinIii_Kim2020_reference"}, {"label": "Knot_1987 \u00b7 reference", "model_id": "AntithrombinIii_Knot1987_reference"}], "dir": "drug_antithrombin_iii", "extracted": 0, "last_change": "2026-09-05T17:09:34.570135+00:00", "name": "antithrombin III", "needs_review": 0, "records": 4, "rejected": 4, "rendered": true, "slug": "antithrombin_iii", "stale": 0} -->
 - [antithrombin III](drugs/drug_antithrombin_iii/) <sub>(0/0/0)</sub>
   - [Carlson_1984 · reference](drugs/drug_antithrombin_iii/AntithrombinIii_Carlson1984_reference.md)
@@ -3869,6 +3919,8 @@
 <!-- docs.py:sidebar {"atc_codes": ["B02AB01"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Tae_2011 \u00b7 reference", "model_id": "Aprotinin_Tae2011_reference"}], "dir": "drug_aprotinin", "extracted": 0, "last_change": "2026-09-06T02:53:58.075083+00:00", "name": "aprotinin", "needs_review": 0, "records": 1, "rejected": 1, "rendered": true, "slug": "aprotinin", "stale": 0} -->
 - [aprotinin](drugs/drug_aprotinin/) <sub>(0/0/0)</sub>
   - [Tae_2011 · reference](drugs/drug_aprotinin/Aprotinin_Tae2011_reference.md)
+<!-- docs.py:sidebar {"atc_codes": ["C01CA22"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_arbutamine", "extracted": 0, "last_change": null, "name": "arbutamine", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "arbutamine", "stale": 0} -->
+- [arbutamine](drugs/drug_arbutamine/) <sub>(0/0/0)</sub>
 <!-- docs.py:sidebar {"atc_codes": ["B01AE03"], "counts": {"pd": 6, "pgx": 0, "pk": 2}, "curated": 0, "details": [{"label": "Akimoto_2011 \u00b7 reference", "model_id": "Argatroban_Akimoto2011_reference"}, {"label": "Cox_2004 \u00b7 reference", "model_id": "Argatroban_Cox2004_reference"}], "dir": "drug_argatroban", "extracted": 2, "last_change": "2026-09-05T17:25:20.380225+00:00", "name": "argatroban", "needs_review": 0, "records": 2, "rejected": 0, "rendered": true, "slug": "argatroban", "stale": 0} -->
 - [argatroban](drugs/drug_argatroban/) <sub>(2/6/0)</sub>
   - [Akimoto_2011 · reference](drugs/drug_argatroban/Argatroban_Akimoto2011_reference.md)
@@ -5514,6 +5566,8 @@
 - [sodium glycerophosphate](drugs/drug_sodium_glycerophosphate/) <sub>(0/0/0)</sub>
 <!-- docs.py:sidebar {"atc_codes": ["N02BA04"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_sodium_salicylate", "extracted": 0, "last_change": null, "name": "sodium salicylate", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "sodium_salicylate", "stale": 0} -->
 - [sodium salicylate](drugs/drug_sodium_salicylate/) <sub>(0/0/0)</sub>
+<!-- docs.py:sidebar {"atc_codes": ["C01BA04"], "counts": {"pd": 3, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_sparteine", "extracted": 0, "last_change": null, "name": "sparteine", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "sparteine", "stale": 0} -->
+- [sparteine](drugs/drug_sparteine/) <sub>(0/3/0)</sub>
 <!-- docs.py:sidebar {"atc_codes": ["B01AD01"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_streptokinase", "extracted": 0, "last_change": null, "name": "streptokinase", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "streptokinase", "stale": 0} -->
 - [streptokinase](drugs/drug_streptokinase/) <sub>(0/0/0)</sub>
 <!-- docs.py:sidebar {"atc_codes": ["B05CA04", "D06BA04", "J01EB02", "S01AB01"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_sulfamethizole", "extracted": 0, "last_change": null, "name": "sulfamethizole", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "sulfamethizole", "stale": 0} -->
@@ -5550,6 +5604,8 @@
 - [Taspoglutide](drugs/drug_taspoglutide/) <sub>(0/0/0)</sub>
 <!-- docs.py:sidebar {"atc_codes": ["B05CA05"], "counts": {"pd": 5, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_taurolidine", "extracted": 0, "last_change": null, "name": "taurolidine", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "taurolidine", "stale": 0} -->
 - [taurolidine](drugs/drug_taurolidine/) <sub>(0/5/0)</sub>
+<!-- docs.py:sidebar {"atc_codes": ["C01BD06"], "counts": {"pd": 2, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_tedisamil", "extracted": 0, "last_change": null, "name": "tedisamil", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "tedisamil", "stale": 0} -->
+- [tedisamil](drugs/drug_tedisamil/) <sub>(0/2/0)</sub>
 <!-- docs.py:sidebar {"atc_codes": ["C09CA07", "C09DA07", "C09DB04", "C10BX20"], "counts": {"pd": 37, "pgx": 4, "pk": 17}, "curated": 0, "details": [{"label": "Chae_2018 \u00b7 reference", "model_id": "Telmisartan_Chae2018_reference"}, {"label": "Hao_2007 \u00b7 reference", "model_id": "Telmisartan_Hao2007_reference"}, {"label": "Ieiri_2011 \u00b7 reference", "model_id": "Telmisartan_Ieiri2011_reference"}, {"label": "Jeong_2025 \u00b7 reference", "model_id": "Telmisartan_Jeong2025_reference"}, {"label": "Petersen_2024 \u00b7 reference", "model_id": "Telmisartan_Petersen2024_reference"}, {"label": "Tatami_2003 \u00b7 1", "model_id": "Telmisartan_Tatami2003_1"}, {"label": "Tatami_2003 \u00b7 2", "model_id": "Telmisartan_Tatami2003_2"}, {"label": "Tatami_2003 \u00b7 3", "model_id": "Telmisartan_Tatami2003_3"}, {"label": "Tatami_2003 \u00b7 4", "model_id": "Telmisartan_Tatami2003_4"}, {"label": "Tatami_2003 \u00b7 5", "model_id": "Telmisartan_Tatami2003_5"}, {"label": "Tatami_2003 \u00b7 6", "model_id": "Telmisartan_Tatami2003_6"}, {"label": "Tatami_2003 \u00b7 7", "model_id": "Telmisartan_Tatami2003_7"}, {"label": "Tatami_2003 \u00b7 8", "model_id": "Telmisartan_Tatami2003_8"}, {"label": "Tatami_2003 \u00b7 calculated_exposures", "model_id": "Telmisartan_Tatami2003_calculated_exposures"}, {"label": "Tatami_2003 \u00b7 covariates", "model_id": "Telmisartan_Tatami2003_covariates"}, {"label": "Tatami_2003 \u00b7 estimated_parameters", "model_id": "Telmisartan_Tatami2003_estimated_parameters"}, {"label": "Tatami_2003 \u00b7 final", "model_id": "Telmisartan_Tatami2003_final"}, {"label": "Liu_2023 \u00b7 reference", "model_id": "Telmisartan_Liu2023_reference"}, {"label": "Tatami_2003 \u00b7 value", "model_id": "Telmisartan_Tatami2003_value"}], "dir": "drug_telmisartan", "extracted": 17, "last_change": "2026-08-27T09:22:19.796741+00:00", "name": "telmisartan", "needs_review": 0, "records": 19, "rejected": 2, "rendered": true, "slug": "telmisartan", "stale": 0} -->
 - [telmisartan](drugs/drug_telmisartan/) <sub>(17/37/4)</sub>
   - [Chae_2018 · reference](drugs/drug_telmisartan/Telmisartan_Chae2018_reference.md)
@@ -5602,6 +5658,8 @@
 <!-- docs.py:sidebar {"atc_codes": ["A10BX16"], "counts": {"pd": 2, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Schneck_2024 \u00b7 reference", "model_id": "Tirzepatide_Schneck2024_reference"}], "dir": "drug_tirzepatide", "extracted": 0, "last_change": "2026-08-26T20:32:27.474987+00:00", "name": "tirzepatide", "needs_review": 0, "records": 1, "rejected": 1, "rendered": true, "slug": "tirzepatide", "stale": 0} -->
 - [tirzepatide](drugs/drug_tirzepatide/) <sub>(0/2/0)</sub>
   - [Schneck_2024 · reference](drugs/drug_tirzepatide/Tirzepatide_Schneck2024_reference.md)
+<!-- docs.py:sidebar {"atc_codes": ["C01BB03"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_tocainide", "extracted": 0, "last_change": null, "name": "tocainide", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "tocainide", "stale": 0} -->
+- [tocainide](drugs/drug_tocainide/) <sub>(0/0/0)</sub>
 <!-- docs.py:sidebar {"atc_codes": ["C03XA01"], "counts": {"pd": 21, "pgx": 2, "pk": 9}, "curated": 0, "details": [{"label": "Lanke_2019 \u00b7 adults with autosomal dominant polycystic kidney disease", "model_id": "Tolvaptan_Lanke2019_reference"}, {"label": "Lanke_2019 \u00b7 reference", "model_id": "Tolvaptan_Lanke2019_reference"}, {"label": "Plosker_2010 \u00b7 reference", "model_id": "Tolvaptan_Plosker2010_reference"}, {"label": "Shoaf_2017 \u00b7 review reference", "model_id": "Tolvaptan_Shoaf2017_reference"}, {"label": "Shoaf_2025 \u00b7 reference", "model_id": "Tolvaptan_Shoaf2025_reference"}, {"label": "Van_2013 \u00b7 healthy subjects and patients with congestive heart failure or hepatic cirrhosis", "model_id": "Tolvaptan_Van2013_reference"}, {"label": "Van_2013 \u00b7 reference", "model_id": "Tolvaptan_Van2013_reference"}, {"label": "Van_2013_2 \u00b7 reference", "model_id": "Tolvaptan_Van2013v2_reference"}, {"label": "Bhatt_2014 \u00b7 review reference", "model_id": "Tolvaptan_Bhatt2014_reference"}, {"label": "Shoaf_2012_3 \u00b7 review reference", "model_id": "Tolvaptan_Shoaf2012v3_reference"}, {"label": "Stanajic-Petrovic_2025 \u00b7 review reference", "model_id": "Tolvaptan_StanajicPetrovic2025_review_reference"}], "dir": "drug_tolvaptan", "extracted": 8, "last_change": "2026-08-27T06:34:17.168729+00:00", "name": "tolvaptan", "needs_review": 3, "records": 11, "rejected": 0, "rendered": true, "slug": "tolvaptan", "stale": 5} -->
 - [tolvaptan](drugs/drug_tolvaptan/) <sub>(9/21/2)</sub>
   - [Lanke_2019 · adults with autosomal dominant polycystic kidney disease](drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference.md)
@@ -5674,6 +5732,8 @@
   - [Cao_2025 · reference](drugs/drug_valoctocogene_roxaparvovec/ValoctocogeneRoxaparvovec_Cao2025_reference.md)
 <!-- docs.py:sidebar {"atc_codes": ["B03AE10", "D10AX30"], "counts": {"pd": 19, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_various_combinations", "extracted": 0, "last_change": null, "name": "various combinations", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "various_combinations", "stale": 0} -->
 - [various combinations](drugs/drug_various_combinations/) <sub>(0/19/0)</sub>
+<!-- docs.py:sidebar {"atc_codes": ["C01BG11"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_vernakalant", "extracted": 0, "last_change": null, "name": "vernakalant", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "vernakalant", "stale": 0} -->
+- [vernakalant](drugs/drug_vernakalant/) <sub>(0/0/0)</sub>
 <!-- docs.py:sidebar {"atc_codes": ["N02BG05"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_viminol", "extracted": 0, "last_change": null, "name": "viminol", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "viminol", "stale": 0} -->
 - [viminol](drugs/drug_viminol/) <sub>(0/0/0)</sub>
 <!-- docs.py:sidebar {"atc_codes": ["L01CA01"], "counts": {"pd": 3, "pgx": 0, "pk": 4}, "curated": 0, "details": [{"label": "Lev\u00eaque_1996 \u00b7 reference", "model_id": "Vinblastine_Levque1996_reference"}, {"label": "Zhou_1990 \u00b7 estimated_parameters_cls_l_kg", "model_id": "Vinblastine_Zhou1990_estimated_parameters_cls_l_kg"}, {"label": "Zhou_1990 \u00b7 estimated_parameters_vt_l_kg", "model_id": "Vinblastine_Zhou1990_estimated_parameters_vt_l_kg"}, {"label": "Zhou_1990 \u00b7 first_exponential_at1_2_g_ml_h", "model_id": "Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h"}, {"label": "Petric_2023 \u00b7 reference", "model_id": "Vinblastine_Petric2023_reference"}, {"label": "Sethi_1984 \u00b7 reference", "model_id": "Vinblastine_Sethi1984_reference"}], "dir": "drug_vinblastine", "extracted": 4, "last_change": "2026-08-27T12:03:47.596376+00:00", "name": "vinblastine", "needs_review": 0, "records": 6, "rejected": 2, "rendered": true, "slug": "vinblastine", "stale": 0} -->

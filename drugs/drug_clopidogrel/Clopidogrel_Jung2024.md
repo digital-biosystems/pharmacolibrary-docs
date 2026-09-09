@@ -80,14 +80,15 @@ Jung YS; Jin BH; Park MS; Kim CO; Chae D et al. (2024). CPT: pharmacometrics & s
 
 ## Downloadable models
 
-Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
+No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_modelica.zip" download>Clopidogrel_Jung2024_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_matlab.zip" download>Clopidogrel_Jung2024_matlab.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_matlab_simbio.zip" download>Clopidogrel_Jung2024_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_sbml.zip" download>Clopidogrel_Jung2024_sbml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_cellml.zip" download>Clopidogrel_Jung2024_cellml.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
