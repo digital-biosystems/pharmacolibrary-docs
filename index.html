@@ -60,6 +60,15 @@
     .markdown-section table.pk-models td:first-child { white-space: nowrap; }
     .markdown-section .pk-missing { color: #9aa1a9; font-style: italic; }
     .markdown-section .pk-size { color: #6b7280; font-size: 13px; }
+    /* collapsed sidebar sections */
+    .sidebar details.pk-navgroup > summary { list-style: none; cursor: pointer; }
+    .sidebar details.pk-navgroup > summary::-webkit-details-marker { display: none; }
+    .sidebar details.pk-navgroup > summary h4 { display: inline-block; margin: 0; }
+    .sidebar details.pk-navgroup > summary::before {
+      content: "▸"; display: inline-block; width: 1em; color: #8a9199;
+      transition: transform .12s ease;
+    }
+    .sidebar details.pk-navgroup[open] > summary::before { transform: rotate(90deg); }
   </style>
 </head>
 <body>
@@ -68,6 +77,14 @@
     window.$docsify = {
       loadSidebar: true,
       loadNavbar: true,
+      // ONE sidebar for the whole site. loadSidebar fetches _sidebar.md relative to the page
+      // being viewed, so opening drugs/drug_x/ or atc/A01A.md would look for a sidebar THERE
+      // and, finding one, replace the navigation the reader was using. Alias every such
+      // request back to the root file; the per-directory ones are no longer generated.
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_navbar.md': '/_navbar.md'
+      },
       name: '',
       repo: ''
     }
@@ -148,6 +165,40 @@
           built.forEach(function (b) { if (b.btn.textContent === saved) want = b.i; });
         } catch (e) {}
         select(want);
+      });
+    });
+  </script>
+  <script>
+    // Collapse the sidebar's curated-panel sections. Wrapping them in <details> in the
+    // markdown is not an option: docsify does not re-enter markdown inside an HTML block, so
+    // every drug link inside would render as literal text. Instead the section headings are
+    // found in the DOM after render and each heading + its list is moved into a <details>.
+    //
+    // The ATC tree is left alone — it is the part people browse, and its own nesting already
+    // keeps it short.
+    window.$docsify = window.$docsify || {};
+    (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
+      var COLLAPSE = ['ddd', 'dbs', 'dph', 'dse', 'toxins'];
+      hook.doneEach(function () {
+        var nav = document.querySelector('.sidebar-nav') || document.querySelector('.sidebar');
+        if (!nav) return;
+        nav.querySelectorAll('h4').forEach(function (h) {
+          var name = (h.textContent || '').trim().split(/\s+/)[0].toLowerCase();
+          if (COLLAPSE.indexOf(name) < 0) return;
+          if (h.parentNode && h.parentNode.tagName === 'SUMMARY') return;   // already done
+          var list = h.nextElementSibling;
+          if (!list || list.tagName !== 'UL') return;
+          var d = document.createElement('details');
+          d.className = 'pk-navgroup';
+          var sm = document.createElement('summary');
+          h.parentNode.insertBefore(d, h);
+          sm.appendChild(h);
+          d.appendChild(sm);
+          d.appendChild(list);
+          // Keep the section open when the page being viewed is inside it, so the reader is
+          // never looking at a page whose own entry is hidden.
+          if (list.querySelector('a.active, li.active')) d.open = true;
+        });
       });
     });
   </script>
