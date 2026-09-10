@@ -4,6 +4,8 @@
 
 > ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
 
+> **Dose compound ≠ measured compound:** dosed `clarithromycin`, measured `amoxicillin`.
+
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
@@ -11,7 +13,7 @@ Sturgill MG; Rapp RP et al. (1992). The Annals of pharmacotherapy 26
   ·  DOI: [10.1177/106002809202600912](https://doi.org/10.1177/106002809202600912)
 
 ## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Sturgill1992_reference" status="needs_review" stale="false" population="" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Sturgill1992_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 

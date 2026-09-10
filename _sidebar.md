@@ -91,16 +91,17 @@
       - adrenalone <sub>(0/0/0)</sub>
       - [amlexanox <sub>(0/4/0)</sub>](drugs/drug_amlexanox/)
       - [amphotericin B <sub>(1/0/0)</sub>](drugs/drug_amphotericin_b/)
+      - antiinfectives and antiseptics for local oral treatment a01ab11 <sub>(0/0/0)</sub>
       - [becaplermin <sub>(0/6/0)</sub>](drugs/drug_becaplermin/)
       - [Benzoxonium <sub>(0/5/0)</sub>](drugs/drug_benzoxonium/)
       - [benzoxonium chloride <sub>(0/5/0)</sub>](drugs/drug_benzoxonium_chloride/)
       - [benzydamine <sub>(0/0/0)</sub>](drugs/drug_benzydamine/)
+      - caries prophylactic agents a01aa30 <sub>(0/0/0)</sub>
       - [cetylpyridinium <sub>(0/15/0)</sub>](drugs/drug_cetylpyridinium/)
       - [chlorhexidine <sub>(0/4/0)</sub>](drugs/drug_chlorhexidine/)
       - chlorhexidine and cetylpyridinium <sub>(0/0/0)</sub>
       - [chlortetracycline <sub>(0/0/0)</sub>](drugs/drug_chlortetracycline/)
       - [clotrimazole <sub>(0/6/0)</sub>](drugs/drug_clotrimazole/)
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - [dexamethasone <sub>(3/5/0)</sub>](drugs/drug_dexamethasone/)
       - [domiphen <sub>(0/1/0)</sub>](drugs/drug_domiphen/)
       - [doxycycline <sub>(13/5/0)</sub>](drugs/drug_doxycycline/)
@@ -116,6 +117,7 @@
       - [neomycin <sub>(0/1/0)</sub>](drugs/drug_neomycin/)
       - [octenidine <sub>(0/3/0)</sub>](drugs/drug_octenidine/)
       - olaflur <sub>(0/0/0)</sub>
+      - other agents for local oral treatment a01ad11 <sub>(0/0/0)</sub>
       - [oxyquinoline <sub>(0/22/0)</sub>](drugs/drug_oxyquinoline/)
       - [oxytetracycline <sub>(0/0/0)</sub>](drugs/drug_oxytetracycline/)
       - polynoxylin <sub>(0/0/0)</sub>
@@ -129,7 +131,6 @@
       - [tetracycline <sub>(5/8/0)</sub>](drugs/drug_tetracycline/)
       - tibezonium iodide <sub>(0/0/0)</sub>
       - [triamcinolone <sub>(0/0/0)</sub>](drugs/drug_triamcinolone/)
-      - [various <sub>(0/1/0)</sub>](drugs/drug_various/)
   - A02 Drugs For Acid Related Disorders
     - [A02A Antacids](atc/A02A.md)
       - [algeldrate <sub>(0/0/1)</sub>](drugs/drug_algeldrate/)
@@ -137,17 +138,19 @@
       - almasilate <sub>(0/0/0)</sub>
       - aloglutamol <sub>(0/0/0)</sub>
       - aluminium acetoacetate <sub>(0/0/0)</sub>
+      - aluminium compounds a02ab10 <sub>(0/0/0)</sub>
       - aluminium glycinate <sub>(0/0/0)</sub>
       - [aluminium hydroxide <sub>(0/0/1)</sub>](drugs/drug_aluminium_hydroxide/)
       - [aluminium phosphate <sub>(0/0/0)</sub>](drugs/drug_aluminium_phosphate/)
       - [calcium carbonate <sub>(3/4/0)</sub>](drugs/drug_calcium_carbonate/)
+      - calcium compounds a02ac10 <sub>(0/0/0)</sub>
       - calcium silicate <sub>(0/0/0)</sub>
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - dihydroxialumini sodium carbonate <sub>(0/0/0)</sub>
       - [hydrotalcite <sub>(0/0/0)</sub>](drugs/drug_hydrotalcite/)
       - magaldrate <sub>(0/0/0)</sub>
       - magaldrate and antiflatulents <sub>(0/0/0)</sub>
       - [magnesium carbonate <sub>(0/0/0)</sub>](drugs/drug_magnesium_carbonate/)
+      - magnesium compounds a02aa10 <sub>(0/0/0)</sub>
       - [magnesium hydroxide <sub>(0/0/0)</sub>](drugs/drug_magnesium_hydroxide/)
       - [magnesium oxide <sub>(0/33/0)</sub>](drugs/drug_magnesium_oxide/)
       - magnesium peroxide <sub>(0/0/0)</sub>
@@ -158,23 +161,23 @@
       - acetoxolone <sub>(0/0/0)</sub>
       - [alginic acid <sub>(0/3/0)</sub>](drugs/drug_alginic_acid/)
       - [amoxicillin <sub>(25/3/0)</sub>](drugs/drug_amoxicillin/)
-      - bismuth subcitrate <sub>(0/0/0)</sub>
+      - [bismuth subcitrate <sub>(0/0/0)</sub>](drugs/drug_bismuth_subcitrate/)
       - bismuth subcitrate tetracycline and metronidazole <sub>(0/0/0)</sub>
-      - bismuth subnitrate <sub>(0/0/0)</sub>
-      - carbenoxolone <sub>(0/0/0)</sub>
+      - [bismuth subnitrate <sub>(0/0/0)</sub>](drugs/drug_bismuth_subnitrate/)
+      - [carbenoxolone <sub>(0/6/0)</sub>](drugs/drug_carbenoxolone/)
       - carbenoxolone combinations excl psycholeptics <sub>(0/0/0)</sub>
       - carbenoxolone combinations with psycholeptics <sub>(0/0/0)</sub>
-      - cimetidine <sub>(0/0/0)</sub>
+      - [cimetidine <sub>(0/0/0)</sub>](drugs/drug_cimetidine/)
       - cimetidine combinations <sub>(0/0/0)</sub>
       - clarithromycin <sub>(0/0/0)</sub>
       - dexlansoprazole <sub>(0/0/0)</sub>
       - dexrabeprazole <sub>(0/0/0)</sub>
-      - enprostil <sub>(0/0/0)</sub>
-      - [esomeprazole <sub>(0/0/0)</sub>](drugs/drug_esomeprazole/)
+      - [enprostil <sub>(0/0/0)</sub>](drugs/drug_enprostil/)
+      - [esomeprazole <sub>(1/0/0)</sub>](drugs/drug_esomeprazole/)
       - esomeprazole amoxicillin and clarithromycin <sub>(0/0/0)</sub>
-      - famotidine <sub>(0/0/0)</sub>
+      - [famotidine <sub>(3/0/0)</sub>](drugs/drug_famotidine/)
       - famotidine combinations <sub>(0/0/0)</sub>
-      - fexuprazan <sub>(0/0/0)</sub>
+      - [fexuprazan <sub>(0/1/0)</sub>](drugs/drug_fexuprazan/)
       - gefarnate <sub>(0/0/0)</sub>
       - gefarnate combinations with psycholeptics <sub>(0/0/0)</sub>
       - ilaprazole <sub>(0/0/0)</sub>
@@ -255,7 +258,6 @@
       - cascara <sub>(0/0/0)</sub>
       - cascara combinations <sub>(0/0/0)</sub>
       - castor oil <sub>(0/0/0)</sub>
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - contact laxatives in combination <sub>(0/0/0)</sub>
       - contact laxatives in combination with belladonna alkaloids <sub>(0/0/0)</sub>
       - dantron <sub>(0/0/0)</sub>
@@ -264,6 +266,7 @@
       - docusate sodium <sub>(0/0/0)</sub>
       - docusate sodium incl combinations <sub>(0/0/0)</sub>
       - elobixibat <sub>(0/0/0)</sub>
+      - enemas a06ag20 <sub>(0/0/0)</sub>
       - ethulose <sub>(0/0/0)</sub>
       - glycerol <sub>(0/0/0)</sub>
       - ispaghula combinations <sub>(0/0/0)</sub>
@@ -336,16 +339,6 @@
       - succinylsulfathiazole <sub>(0/0/0)</sub>
       - sulfaguanidine <sub>(0/0/0)</sub>
       - vancomycin <sub>(0/0/0)</sub>
-    - [A07B Intestinal Adsorbents](atc/A07B.md)
-      - attapulgite <sub>(0/0/0)</sub>
-      - attapulgite combinations <sub>(0/0/0)</sub>
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
-      - crospovidone <sub>(0/0/0)</sub>
-      - diosmectite <sub>(0/0/0)</sub>
-      - kaolin <sub>(0/0/0)</sub>
-      - medicinal charcoal <sub>(0/0/0)</sub>
-      - medicinal charcoal combinations <sub>(0/0/0)</sub>
-      - pectin <sub>(0/0/0)</sub>
     - [A07E Intestinal Antiinflammatory Agents](atc/A07E.md)
       - balsalazide <sub>(0/0/0)</sub>
       - beclometasone <sub>(0/0/0)</sub>
@@ -361,7 +354,6 @@
       - tixocortol <sub>(0/0/0)</sub>
   - A10 Drugs Used In Diabetes
     - [A10A Insulins And Analogues](atc/A10A.md)
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - insulin aspart <sub>(0/0/0)</sub>
       - insulin beef <sub>(0/0/0)</sub>
       - insulin degludec <sub>(0/0/0)</sub>
@@ -376,6 +368,10 @@
       - insulin icodec and semaglutide <sub>(0/0/0)</sub>
       - insulin lispro <sub>(0/0/0)</sub>
       - insulin pork <sub>(0/0/0)</sub>
+      - insulins and analogues for injection fast acting a10ab30 <sub>(0/0/0)</sub>
+      - insulins and analogues for injection intermediate acting a10ac30 <sub>(0/0/0)</sub>
+      - insulins and analogues for injection intermediate or long acting combined with fast acting a10ad30 <sub>(0/0/0)</sub>
+      - insulins and analogues for injection long acting a10ae30 <sub>(0/0/0)</sub>
       - [liraglutide <sub>(1/37/0)</sub>](drugs/drug_liraglutide/)
       - [lixisenatide <sub>(0/0/0)</sub>](drugs/drug_lixisenatide/)
     - [A10B Blood Glucose Lowering Drugs, Excl. Insulins](atc/A10B.md)
@@ -476,18 +472,6 @@
       - vildagliptin <sub>(0/0/0)</sub>
       - voglibose <sub>(0/0/0)</sub>
   - A11 Vitamins
-    - [A11C Vitamin A And D, Incl. Combinations Of The Two](atc/A11C.md)
-      - alfacalcidol <sub>(0/0/0)</sub>
-      - betacarotene <sub>(0/0/0)</sub>
-      - calcifediol <sub>(0/0/0)</sub>
-      - calcitriol <sub>(0/0/0)</sub>
-      - colecalciferol <sub>(0/0/0)</sub>
-      - colecalciferol combinations <sub>(0/0/0)</sub>
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
-      - dihydrotachysterol <sub>(0/0/0)</sub>
-      - ergocalciferol <sub>(0/0/0)</sub>
-      - retinol <sub>(0/0/0)</sub>
-      - retinol vit a <sub>(0/0/0)</sub>
     - [A11G Ascorbic Acid (Vitamin C), Incl. Combinations](atc/A11G.md)
       - [ascorbic acid <sub>(0/0/0)</sub>](drugs/drug_ascorbic_acid/)
       - ascorbic acid vit c <sub>(0/0/0)</sub>
@@ -624,7 +608,6 @@
       - [clopidogrel <sub>(16/4/14)</sub>](drugs/drug_clopidogrel/)
       - cloricromen <sub>(0/0/0)</sub>
       - clorindione <sub>(0/0/0)</sub>
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - [dabigatran etexilate <sub>(0/0/0)</sub>](drugs/drug_dabigatran_etexilate/)
       - [dalteparin <sub>(0/0/0)</sub>](drugs/drug_dalteparin/)
       - danaparoid <sub>(0/0/0)</sub>
@@ -657,6 +640,7 @@
       - [phenindione <sub>(0/0/0)</sub>](drugs/drug_phenindione/)
       - [phenprocoumon <sub>(0/0/0)</sub>](drugs/drug_phenprocoumon/)
       - [picotamide <sub>(0/0/0)</sub>](drugs/drug_picotamide/)
+      - platelet aggregation inhibitors excl heparin b01ac30 <sub>(0/0/0)</sub>
       - [prasugrel <sub>(1/0/0)</sub>](drugs/drug_prasugrel/)
       - [protein C <sub>(0/0/0)</sub>](drugs/drug_protein_c/)
       - [reteplase <sub>(0/0/0)</sub>](drugs/drug_reteplase/)
@@ -704,7 +688,6 @@
       - [coagulation factor X <sub>(0/0/0)</sub>](drugs/drug_coagulation_factor_x/)
       - [coagulation factor XIII <sub>(0/0/0)</sub>](drugs/drug_coagulation_factor_xiii/)
       - [collagen <sub>(0/0/0)</sub>](drugs/drug_collagen/)
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - [concizumab <sub>(0/2/0)</sub>](drugs/drug_concizumab/)
       - [eltrombopag <sub>(1/1/0)</sub>](drugs/drug_eltrombopag/)
       - [emicizumab <sub>(0/0/0)</sub>](drugs/drug_emicizumab/)
@@ -716,6 +699,7 @@
       - [fidanacogene elaparvovec <sub>(0/0/0)</sub>](drugs/drug_fidanacogene_elaparvovec/)
       - [fitusiran <sub>(0/0/0)</sub>](drugs/drug_fitusiran/)
       - [fostamatinib <sub>(0/0/0)</sub>](drugs/drug_fostamatinib/)
+      - local hemostatics b02bc30 <sub>(0/0/0)</sub>
       - [lusutrombopag <sub>(1/1/0)</sub>](drugs/drug_lusutrombopag/)
       - marstacimab <sub>(0/0/0)</sub>
       - [menadione <sub>(0/47/0)</sub>](drugs/drug_menadione/)
@@ -756,12 +740,12 @@
       - ferrous tartrate <sub>(0/0/0)</sub>
       - [folic acid <sub>(0/4/0)</sub>](drugs/drug_folic_acid/)
       - iron and multivitamins <sub>(0/0/0)</sub>
+      - iron in other combinations b03ae10 <sub>(0/0/0)</sub>
       - iron multivitamins and folic acid <sub>(0/0/0)</sub>
       - iron multivitamins and minerals <sub>(0/0/0)</sub>
       - iron vitamin b12 and folic acid <sub>(0/0/0)</sub>
       - [saccharated iron oxide <sub>(0/0/0)</sub>](drugs/drug_saccharated_iron_oxide/)
       - sodium feredetate <sub>(0/0/0)</sub>
-      - [various combinations <sub>(0/19/0)</sub>](drugs/drug_various_combinations/)
     - [B03B Vitamin B12 And Folic Acid](atc/B03B.md)
       - cobamamide <sub>(0/0/0)</sub>
       - [cyanocobalamin <sub>(0/0/0)</sub>](drugs/drug_cyanocobalamin/)
@@ -803,17 +787,17 @@
       - [amino acids <sub>(0/0/0)</sub>](drugs/drug_amino_acids/)
       - [carbamide <sub>(0/0/0)</sub>](drugs/drug_carbamide/)
       - [carbohydrates <sub>(0/0/0)</sub>](drugs/drug_carbohydrates/)
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - [electrolytes <sub>(0/0/0)</sub>](drugs/drug_electrolytes/)
       - electrolytes in combination with other drugs <sub>(0/0/0)</sub>
       - electrolytes with carbohydrates <sub>(0/0/0)</sub>
       - fat emulsions <sub>(0/0/0)</sub>
       - [protein hydrolysates <sub>(0/0/0)</sub>](drugs/drug_protein_hydrolysates/)
+      - solutions for parenteral nutrition b05ba10 <sub>(0/0/0)</sub>
       - [trometamol <sub>(0/0/0)</sub>](drugs/drug_trometamol/)
     - [B05C Irrigating Solutions](atc/B05C.md)
+      - antiinfectives b05ca10 <sub>(0/0/0)</sub>
       - [cetylpyridinium <sub>(0/15/0)</sub>](drugs/drug_cetylpyridinium/)
       - [chlorhexidine <sub>(0/4/0)</sub>](drugs/drug_chlorhexidine/)
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - [Ethacridine <sub>(0/6/0)</sub>](drugs/drug_ethacridine/)
       - [ethacridine lactate <sub>(0/6/0)</sub>](drugs/drug_ethacridine_lactate/)
       - [glucose <sub>(0/4/0)</sub>](drugs/drug_glucose/)
@@ -822,6 +806,8 @@
       - [neomycin <sub>(0/1/0)</sub>](drugs/drug_neomycin/)
       - [nitrofural <sub>(0/0/0)</sub>](drugs/drug_nitrofural/)
       - noxytiolin <sub>(0/0/0)</sub>
+      - other irrigating solutions b05cx10 <sub>(0/0/0)</sub>
+      - salt solutions b05cb10 <sub>(0/0/0)</sub>
       - [sodium bicarbonate <sub>(0/2/0)</sub>](drugs/drug_sodium_bicarbonate/)
       - [sodium citrate <sub>(0/27/0)</sub>](drugs/drug_sodium_citrate/)
       - [sulfamethizole <sub>(0/0/0)</sub>](drugs/drug_sulfamethizole/)
@@ -920,6 +906,7 @@
       - [tocainide <sub>(0/0/0)</sub>](drugs/drug_tocainide/)
       - [vernakalant <sub>(0/0/0)</sub>](drugs/drug_vernakalant/)
     - [C01C Cardiac Stimulants Excl. Cardiac Glycosides](atc/C01C.md)
+      - adrenergic and dopaminergic agents c01ca30 <sub>(0/0/0)</sub>
       - [amezinium metilsulfate <sub>(0/0/0)</sub>](drugs/drug_amezinium_metilsulfate/)
       - [amrinone <sub>(0/3/0)</sub>](drugs/drug_amrinone/)
       - [angiotensin II <sub>(3/19/4)</sub>](drugs/drug_angiotensin_ii/)
@@ -928,7 +915,6 @@
       - bucladesine <sub>(0/0/0)</sub>
       - [cafedrine <sub>(0/5/0)</sub>](drugs/drug_cafedrine/)
       - [centhaquine <sub>(0/2/0)</sub>](drugs/drug_centhaquine/)
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - dimetofrine <sub>(0/0/0)</sub>
       - [dobutamine <sub>(2/0/0)</sub>](drugs/drug_dobutamine/)
       - [dopamine <sub>(0/19/0)</sub>](drugs/drug_dopamine/)
@@ -1496,7 +1482,6 @@
       - chlorphenesin <sub>(0/0/0)</sub>
       - ciclopirox <sub>(0/0/0)</sub>
       - [clotrimazole <sub>(0/6/0)</sub>](drugs/drug_clotrimazole/)
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - dimazole <sub>(0/0/0)</sub>
       - eberconazole <sub>(0/0/0)</sub>
       - econazole <sub>(0/0/0)</sub>
@@ -1522,6 +1507,7 @@
       - [natamycin <sub>(0/1/0)</sub>](drugs/drug_natamycin/)
       - neticonazole <sub>(0/0/0)</sub>
       - omoconazole <sub>(0/0/0)</sub>
+      - other antifungals for topical use d01ae20 <sub>(0/0/0)</sub>
       - oxiconazole <sub>(0/0/0)</sub>
       - pecilocin <sub>(0/0/0)</sub>
       - pyrrolnitrin <sub>(0/0/0)</sub>
@@ -1796,6 +1782,7 @@
       - [minocycline <sub>(2/2/0)</sub>](drugs/drug_minocycline/)
       - motretinide <sub>(0/0/0)</sub>
       - nadifloxacin <sub>(0/0/0)</sub>
+      - other anti acne preparations for topical use d10ax30 <sub>(0/0/0)</sub>
       - resorcinol <sub>(0/0/0)</sub>
       - sulfacetamide <sub>(0/0/0)</sub>
       - sulfur <sub>(0/0/0)</sub>
@@ -1803,7 +1790,6 @@
       - tretinoin <sub>(0/0/0)</sub>
       - tretinoin combinations <sub>(0/0/0)</sub>
       - trifarotene <sub>(0/0/0)</sub>
-      - [various combinations <sub>(0/19/0)</sub>](drugs/drug_various_combinations/)
   - D11 Other Dermatological Preparations
     - [D11A Other Dermatological Preparations](atc/D11A.md)
       - abrocitinib <sub>(0/0/0)</sub>
@@ -1900,23 +1886,6 @@
       - quinagolide <sub>(0/0/0)</sub>
       - ritodrine <sub>(0/0/0)</sub>
       - terguride <sub>(0/0/0)</sub>
-  - G03 Sex Hormones And Modulators Of The Genital System
-    - [G03G Gonadotropins And Other Ovulation Stimulants](atc/G03G.md)
-      - choriogonadotropin alfa <sub>(0/0/0)</sub>
-      - chorionic gonadotrophin <sub>(0/0/0)</sub>
-      - clomifene <sub>(0/0/0)</sub>
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
-      - corifollitropin alfa <sub>(0/0/0)</sub>
-      - cyclofenil <sub>(0/0/0)</sub>
-      - epimestrol <sub>(0/0/0)</sub>
-      - follitropin <sub>(0/0/0)</sub>
-      - follitropin alfa <sub>(0/0/0)</sub>
-      - follitropin beta <sub>(0/0/0)</sub>
-      - follitropin delta <sub>(0/0/0)</sub>
-      - human menopausal gonadotrophin <sub>(0/0/0)</sub>
-      - lutropin alfa <sub>(0/0/0)</sub>
-      - serum gonadotrophin <sub>(0/0/0)</sub>
-      - urofollitropin <sub>(0/0/0)</sub>
   - G04 Urologicals
     - [G04B Urologicals](atc/G04B.md)
       - acetohydroxamic acid <sub>(0/0/0)</sub>
@@ -1924,11 +1893,11 @@
       - apomorphine <sub>(0/0/0)</sub>
       - avanafil <sub>(0/0/0)</sub>
       - [collagen <sub>(0/0/0)</sub>](drugs/drug_collagen/)
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - dapoxetine <sub>(0/0/0)</sub>
       - darifenacin <sub>(0/0/0)</sub>
       - desfesoterodine <sub>(0/0/0)</sub>
       - dimethyl sulfoxide <sub>(0/0/0)</sub>
+      - drugs used in erectile dysfunction g04be30 <sub>(0/0/0)</sub>
       - fesoterodine <sub>(0/0/0)</sub>
       - flavoxate <sub>(0/0/0)</sub>
       - imidafenacin <sub>(0/0/0)</sub>
@@ -2032,11 +2001,11 @@
       - benzathine benzylpenicillin <sub>(0/0/0)</sub>
       - benzathine phenoxymethylpenicillin <sub>(0/0/0)</sub>
       - benzylpenicillin <sub>(0/0/0)</sub>
+      - beta lactamase sensitive penicillins j01ce30 <sub>(0/0/0)</sub>
       - carbenicillin <sub>(0/0/0)</sub>
       - carindacillin <sub>(0/0/0)</sub>
       - clometocillin <sub>(0/0/0)</sub>
       - cloxacillin <sub>(0/0/0)</sub>
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - combinations of penicillins <sub>(0/0/0)</sub>
       - dicloxacillin <sub>(0/0/0)</sub>
       - epicillin <sub>(0/0/0)</sub>
@@ -2049,6 +2018,7 @@
       - nafcillin <sub>(0/0/0)</sub>
       - oxacillin <sub>(0/0/0)</sub>
       - penamecillin <sub>(0/0/0)</sub>
+      - penicillins with extended spectrum j01ca20 <sub>(0/0/0)</sub>
       - pheneticillin <sub>(0/0/0)</sub>
       - phenoxymethylpenicillin <sub>(0/0/0)</sub>
       - piperacillin <sub>(0/0/0)</sub>
@@ -2068,8 +2038,10 @@
       - ticarcillin and beta lactamase inhibitor <sub>(0/0/0)</sub>
     - [J01E Sulfonamides And Trimethoprim](atc/J01E.md)
       - brodimoprim <sub>(0/0/0)</sub>
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - iclaprim <sub>(0/0/0)</sub>
+      - intermediate acting sulfonamides j01ec20 <sub>(0/0/0)</sub>
+      - long acting sulfonamides j01ed20 <sub>(0/0/0)</sub>
+      - short acting sulfonamides j01eb20 <sub>(0/0/0)</sub>
       - sulfadiazine <sub>(0/0/0)</sub>
       - sulfadiazine and tetroxoprim <sub>(0/0/0)</sub>
       - sulfadiazine and trimethoprim <sub>(0/0/0)</sub>
@@ -2398,7 +2370,6 @@
       - casirivimab and imdevimab <sub>(0/0/0)</sub>
       - cilgavimab <sub>(0/0/0)</sub>
       - clesrovimab <sub>(0/0/0)</sub>
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - cytomegalovirus immunoglobulin <sub>(0/0/0)</sub>
       - diphtheria immunoglobulin <sub>(0/0/0)</sub>
       - encephalitis tick borne immunoglobulin <sub>(0/0/0)</sub>
@@ -2422,62 +2393,13 @@
       - rubella immunoglobulin <sub>(0/0/0)</sub>
       - sipavibart <sub>(0/0/0)</sub>
       - sotrovimab <sub>(0/0/0)</sub>
+      - specific immunoglobulins j06bb30 <sub>(0/0/0)</sub>
       - staphylococcus immunoglobulin <sub>(0/0/0)</sub>
       - tetanus immunoglobulin <sub>(0/0/0)</sub>
       - tixagevimab <sub>(0/0/0)</sub>
       - tixagevimab and cilgavimab <sub>(0/0/0)</sub>
       - vaccinia immunoglobulin <sub>(0/0/0)</sub>
       - varicella zoster immunoglobulin <sub>(0/0/0)</sub>
-  - J07 Vaccines
-    - [J07B Viral Vaccines](atc/J07B.md)
-      - chikungunya live attenuated <sub>(0/0/0)</sub>
-      - chikungunya virus like particles <sub>(0/0/0)</sub>
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
-      - covid 19 inactivated virus <sub>(0/0/0)</sub>
-      - covid 19 mrna vaccine <sub>(0/0/0)</sub>
-      - covid 19 protein subunit <sub>(0/0/0)</sub>
-      - covid 19 rna based vaccine <sub>(0/0/0)</sub>
-      - covid 19 viral vector non replicating <sub>(0/0/0)</sub>
-      - covid 19 virus like particles <sub>(0/0/0)</sub>
-      - dengue virus vaccines <sub>(0/0/0)</sub>
-      - ebola vaccines <sub>(0/0/0)</sub>
-      - encephalitis japanese inactivated whole virus <sub>(0/0/0)</sub>
-      - encephalitis japanese live attenuated <sub>(0/0/0)</sub>
-      - encephalitis tick borne inactivated whole virus <sub>(0/0/0)</sub>
-      - enterovirus 71 vaccines <sub>(0/0/0)</sub>
-      - gbp510 <sub>(0/0/0)</sub>
-      - hepatitis a inactivated whole virus <sub>(0/0/0)</sub>
-      - hepatitis b purified antigen <sub>(0/0/0)</sub>
-      - influenza and covid 19 rna based vaccine <sub>(0/0/0)</sub>
-      - influenza inactivated split virus or surface antigen <sub>(0/0/0)</sub>
-      - influenza inactivated whole virus <sub>(0/0/0)</sub>
-      - influenza live attenuated <sub>(0/0/0)</sub>
-      - influenza rna based vaccine <sub>(0/0/0)</sub>
-      - influenza virus like particles <sub>(0/0/0)</sub>
-      - measles combinations with mumps and rubella live attenuated <sub>(0/0/0)</sub>
-      - measles combinations with mumps live attenuated <sub>(0/0/0)</sub>
-      - measles combinations with mumps rubella and varicella live attenuated <sub>(0/0/0)</sub>
-      - measles combinations with rubella live attenuated <sub>(0/0/0)</sub>
-      - measles live attenuated <sub>(0/0/0)</sub>
-      - mumps live attenuated <sub>(0/0/0)</sub>
-      - papillomavirus human types 16 18 <sub>(0/0/0)</sub>
-      - papillomavirus human types 6 11 16 18 <sub>(0/0/0)</sub>
-      - papillomavirus human types 6 11 16 18 31 33 45 52 58 <sub>(0/0/0)</sub>
-      - poliomyelitis oral bivalent live attenuated <sub>(0/0/0)</sub>
-      - poliomyelitis oral monovalent live attenuated <sub>(0/0/0)</sub>
-      - poliomyelitis oral trivalent live attenuated <sub>(0/0/0)</sub>
-      - poliomyelitis trivalent inactivated whole virus <sub>(0/0/0)</sub>
-      - rabies inactivated whole virus <sub>(0/0/0)</sub>
-      - respiratory syncytial virus vaccines <sub>(0/0/0)</sub>
-      - rota virus live attenuated <sub>(0/0/0)</sub>
-      - rota virus pentavalent live reassorted <sub>(0/0/0)</sub>
-      - rubella combinations with mumps live attenuated <sub>(0/0/0)</sub>
-      - rubella live attenuated <sub>(0/0/0)</sub>
-      - smallpox and mpox vaccines <sub>(0/0/0)</sub>
-      - varicella live attenuated <sub>(0/0/0)</sub>
-      - yellow fever live attenuated <sub>(0/0/0)</sub>
-      - zoster live attenuated <sub>(0/0/0)</sub>
-      - zoster purified antigen <sub>(0/0/0)</sub>
 - **L Antineoplastic And Immunomodulating Agents**
   - L01 Antineoplastic Agents
     - [L01A Alkylating Agents](atc/L01A.md)
@@ -2924,7 +2846,7 @@
       - diclofenac combinations <sub>(0/0/0)</sub>
       - difenpiramide <sub>(0/0/0)</sub>
       - droxicam <sub>(0/0/0)</sub>
-      - [esomeprazole <sub>(0/0/0)</sub>](drugs/drug_esomeprazole/)
+      - [esomeprazole <sub>(1/0/0)</sub>](drugs/drug_esomeprazole/)
       - etodolac <sub>(0/0/0)</sub>
       - etoricoxib <sub>(0/0/0)</sub>
       - fenbufen <sub>(0/0/0)</sub>
@@ -3008,10 +2930,10 @@
       - [indometacin <sub>(1/0/0)</sub>](drugs/drug_indometacin/)
       - [naproxen <sub>(1/0/0)</sub>](drugs/drug_naproxen/)
       - nifenazone <sub>(0/0/0)</sub>
+      - other topical products for joint and muscular pain m02ax10 <sub>(0/0/0)</sub>
       - piketoprofen <sub>(0/0/0)</sub>
       - suxibuzone <sub>(0/0/0)</sub>
       - tolperisone <sub>(0/0/0)</sub>
-      - [various <sub>(0/1/0)</sub>](drugs/drug_various/)
       - zucapsaicin <sub>(0/0/0)</sub>
   - M04 Antigout Preparations
     - [M04A Antigout Preparations](atc/M04A.md)
@@ -3064,6 +2986,7 @@
       - vinyl ether <sub>(0/0/0)</sub>
       - xenon <sub>(0/0/0)</sub>
     - [N01B Anesthetics, Local](atc/N01B.md)
+      - amides n01bb20 <sub>(0/0/0)</sub>
       - articaine <sub>(0/0/0)</sub>
       - articaine combinations <sub>(0/0/0)</sub>
       - bupivacaine <sub>(0/0/0)</sub>
@@ -3072,7 +2995,6 @@
       - butanilicaine <sub>(0/0/0)</sub>
       - chloroprocaine <sub>(0/0/0)</sub>
       - cocaine <sub>(0/0/0)</sub>
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - dyclonine <sub>(0/0/0)</sub>
       - ethyl chloride <sub>(0/0/0)</sub>
       - etidocaine <sub>(0/0/0)</sub>
@@ -3595,23 +3517,6 @@
       - [fluoxetine <sub>(0/0/0)</sub>](drugs/drug_fluoxetine/)
       - fluoxetine and psycholeptics <sub>(0/0/0)</sub>
       - melitracen and psycholeptics <sub>(0/0/0)</sub>
-    - [N06D Anti-Dementia Drugs](atc/N06D.md)
-      - aducanumab <sub>(0/0/0)</sub>
-      - benzgalantamine <sub>(0/0/0)</sub>
-      - blarcamesine <sub>(0/0/0)</sub>
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
-      - donanemab <sub>(0/0/0)</sub>
-      - donepezil <sub>(0/0/0)</sub>
-      - donepezil and memantine <sub>(0/0/0)</sub>
-      - donepezil memantine and ginkgo folium <sub>(0/0/0)</sub>
-      - galantamine <sub>(0/0/0)</sub>
-      - ginkgo folium <sub>(0/0/0)</sub>
-      - hydromethylthionine <sub>(0/0/0)</sub>
-      - ipidacrine <sub>(0/0/0)</sub>
-      - lecanemab <sub>(0/0/0)</sub>
-      - memantine <sub>(0/0/0)</sub>
-      - rivastigmine <sub>(0/0/0)</sub>
-      - tacrine <sub>(0/0/0)</sub>
   - N07 Other Nervous System Drugs
     - [N07B Drugs Used In Addictive Disorders](atc/N07B.md)
       - acamprosate <sub>(0/0/0)</sub>
@@ -3717,7 +3622,6 @@
       - azelastine <sub>(0/0/0)</sub>
       - calcium hexamine thiocyanate <sub>(0/0/0)</sub>
       - ciclesonide <sub>(0/0/0)</sub>
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - cromoglicic acid combinations <sub>(0/0/0)</sub>
       - cyclopentamine <sub>(0/0/0)</sub>
       - [dexamethasone <sub>(3/5/0)</sub>](drugs/drug_dexamethasone/)
@@ -3738,6 +3642,8 @@
       - naphazoline <sub>(0/0/0)</sub>
       - nedocromil <sub>(0/0/0)</sub>
       - olopatadine <sub>(0/0/0)</sub>
+      - other nasal preparations r01ax10 <sub>(0/0/0)</sub>
+      - other nasal preparations r01ax30 <sub>(0/0/0)</sub>
       - [phenylephrine <sub>(0/2/0)</sub>](drugs/drug_phenylephrine/)
       - [prednisolone <sub>(1/2/0)</sub>](drugs/drug_prednisolone/)
       - ritiometan <sub>(0/0/0)</sub>
@@ -3748,7 +3654,6 @@
       - [triamcinolone <sub>(0/0/0)</sub>](drugs/drug_triamcinolone/)
       - tuaminoheptane <sub>(0/0/0)</sub>
       - tymazoline <sub>(0/0/0)</sub>
-      - [various <sub>(0/1/0)</sub>](drugs/drug_various/)
       - xylometazoline <sub>(0/0/0)</sub>
     - [R01B Nasal Decongestants For Systemic Use](atc/R01B.md)
       - [phenylephrine <sub>(0/2/0)</sub>](drugs/drug_phenylephrine/)
@@ -3762,6 +3667,7 @@
       - acriflavinium chloride <sub>(0/0/0)</sub>
       - ambazone <sub>(0/0/0)</sub>
       - ambroxol <sub>(0/0/0)</sub>
+      - antiseptics r02aa20 <sub>(0/0/0)</sub>
       - [benzydamine <sub>(0/0/0)</sub>](drugs/drug_benzydamine/)
       - [cetylpyridinium <sub>(0/15/0)</sub>](drugs/drug_cetylpyridinium/)
       - [chlorhexidine <sub>(0/4/0)</sub>](drugs/drug_chlorhexidine/)
@@ -3776,7 +3682,6 @@
       - [neomycin <sub>(0/1/0)</sub>](drugs/drug_neomycin/)
       - [octenidine <sub>(0/3/0)</sub>](drugs/drug_octenidine/)
       - [oxyquinoline <sub>(0/22/0)</sub>](drugs/drug_oxyquinoline/)
-      - [various <sub>(0/1/0)</sub>](drugs/drug_various/)
   - R03 Drugs For Obstructive Airway Diseases
     - [R03A Adrenergics, Inhalants](atc/R03A.md)
       - aclidinium <sub>(0/0/0)</sub>
@@ -3891,33 +3796,6 @@
       - theophylline combinations with psycholeptics <sub>(0/0/0)</sub>
       - zafirlukast <sub>(0/0/0)</sub>
   - R05 Cough And Cold Preparations
-    - [R05C Expectorants, Excl. Combinations With Cough Suppressants](atc/R05C.md)
-      - acetylcysteine <sub>(0/0/0)</sub>
-      - altheae radix <sub>(0/0/0)</sub>
-      - antimony pentasulfide <sub>(0/0/0)</sub>
-      - bromhexine <sub>(0/0/0)</sub>
-      - carbocisteine <sub>(0/0/0)</sub>
-      - cineole <sub>(0/0/0)</sub>
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
-      - creosote <sub>(0/0/0)</sub>
-      - domiodol <sub>(0/0/0)</sub>
-      - dornase alfa <sub>(0/0/0)</sub>
-      - dornase alfa desoxyribonuclease <sub>(0/0/0)</sub>
-      - eprazinone <sub>(0/0/0)</sub>
-      - erdosteine <sub>(0/0/0)</sub>
-      - guaiacolsulfonate <sub>(0/0/0)</sub>
-      - guaifenesin <sub>(0/0/0)</sub>
-      - hederae helicis folium <sub>(0/0/0)</sub>
-      - ipecacuanha <sub>(0/0/0)</sub>
-      - letosteine <sub>(0/0/0)</sub>
-      - levoverbenone <sub>(0/0/0)</sub>
-      - mesna <sub>(0/0/0)</sub>
-      - neltenexine <sub>(0/0/0)</sub>
-      - potassium iodide <sub>(0/0/0)</sub>
-      - senega <sub>(0/0/0)</sub>
-      - sobrerol <sub>(0/0/0)</sub>
-      - stepronin <sub>(0/0/0)</sub>
-      - tyloxapol <sub>(0/0/0)</sub>
     - [R05D Cough Suppressants, Excl. Combinations With Expectorants](atc/R05D.md)
       - acetyldihydrocodeine <sub>(0/0/0)</sub>
       - benproperine <sub>(0/0/0)</sub>
@@ -3929,7 +3807,6 @@
       - clofedanol <sub>(0/0/0)</sub>
       - cloperastine <sub>(0/0/0)</sub>
       - [codeine <sub>(0/0/0)</sub>](drugs/drug_codeine/)
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - dibunate <sub>(0/0/0)</sub>
       - dimemorfan <sub>(0/0/0)</sub>
       - dimethoxanate <sub>(0/0/0)</sub>
@@ -3946,7 +3823,9 @@
       - nepinalone <sub>(0/0/0)</sub>
       - normethadone <sub>(0/0/0)</sub>
       - noscapine <sub>(0/0/0)</sub>
+      - opium alkaloids and derivatives r05da20 <sub>(0/0/0)</sub>
       - opium alkaloids with morphine <sub>(0/0/0)</sub>
+      - other cough suppressants r05db20 <sub>(0/0/0)</sub>
       - oxeladin <sub>(0/0/0)</sub>
       - oxolamine <sub>(0/0/0)</sub>
       - pentoxyverine <sub>(0/0/0)</sub>
@@ -3962,7 +3841,6 @@
       - almitrine <sub>(0/0/0)</sub>
       - bemegride <sub>(0/0/0)</sub>
       - colfosceril palmitate <sub>(0/0/0)</sub>
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - deutivacaftor tezacaftor and vanzacaftor <sub>(0/0/0)</sub>
       - dimefline <sub>(0/0/0)</sub>
       - doxapram <sub>(0/0/0)</sub>
@@ -3973,6 +3851,7 @@
       - ivacaftor and tezacaftor <sub>(0/0/0)</sub>
       - ivacaftor tezacaftor and elexacaftor <sub>(0/0/0)</sub>
       - lumacaftor <sub>(0/0/0)</sub>
+      - lung surfactants r07aa30 <sub>(0/0/0)</sub>
       - mepixanox <sub>(0/0/0)</sub>
       - natural phospholipids <sub>(0/0/0)</sub>
       - nikethamide <sub>(0/0/0)</sub>
@@ -4124,8 +4003,8 @@
       - tetryzoline combinations <sub>(0/0/0)</sub>
       - xylometazoline combinations <sub>(0/0/0)</sub>
     - [S01H Local Anesthetics](atc/S01H.md)
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
       - [lidocaine <sub>(2/5/0)</sub>](drugs/drug_lidocaine/)
+      - local anesthetics s01ha30 <sub>(0/0/0)</sub>
       - proxymetacaine <sub>(0/0/0)</sub>
     - [S01K Surgical Aids](atc/S01K.md)
       - [chymotrypsin <sub>(0/37/0)</sub>](drugs/drug_chymotrypsin/)
@@ -4178,7 +4057,7 @@
       - [triamcinolone <sub>(0/0/0)</sub>](drugs/drug_triamcinolone/)
       - triamcinolone and antiinfectives <sub>(0/0/0)</sub>
     - [S02D Other Otologicals](atc/S02D.md)
-      - [combinations <sub>(0/21/3)</sub>](drugs/drug_combinations/)
+      - analgesics and anesthetics s02da30 <sub>(0/0/0)</sub>
       - [lidocaine <sub>(2/5/0)</sub>](drugs/drug_lidocaine/)
       - [phenazone <sub>(2/0/0)</sub>](drugs/drug_phenazone/)
   - S03 Ophthalmological And Otological Preparations
@@ -4197,19 +4076,6 @@
       - [hydrocortisone <sub>(0/0/0)</sub>](drugs/drug_hydrocortisone/)
       - [prednisolone <sub>(1/2/0)</sub>](drugs/drug_prednisolone/)
 - **V Various**
-  - V01 Allergens
-    - [V01A Allergens](atc/V01A.md)
-      - animals <sub>(0/0/0)</sub>
-      - feather <sub>(0/0/0)</sub>
-      - flowers <sub>(0/0/0)</sub>
-      - food <sub>(0/0/0)</sub>
-      - grass pollen <sub>(0/0/0)</sub>
-      - house dust mites <sub>(0/0/0)</sub>
-      - insects <sub>(0/0/0)</sub>
-      - mould fungus and yeast fungus <sub>(0/0/0)</sub>
-      - textiles <sub>(0/0/0)</sub>
-      - tree pollen <sub>(0/0/0)</sub>
-      - [various <sub>(0/1/0)</sub>](drugs/drug_various/)
   - V03 All Other Therapeutic Products
     - [V03A All Other Therapeutic Products](atc/V03A.md)
       - 4 dimethylaminophenol <sub>(0/0/0)</sub>
@@ -4364,7 +4230,7 @@
 <!-- docs.py:sidebar {"atc_codes": ["A01AD07", "R03DX01"], "counts": {"pd": 4, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_amlexanox", "extracted": 0, "last_change": null, "name": "amlexanox", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "amlexanox", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["C07FB07", "C07FB12", "C07FB13", "C08CA01", "C08CA51", "C08GA02", "C09BB03", "C09BB04", "C09BB07", "C09BB13", "C09BX01", "C09BX03", "C09BX04", "C09BX06", "C09DB01", "C09DB02", "C09DB04", "C09DB05", "C09DB06", "C09DB07", "C09DB09", "C09DX01", "C09DX03", "C09DX06", "C09DX07", "C09DX08", "C09XA53", "C09XA54", "C10BX03", "C10BX07", "C10BX09", "C10BX11", "C10BX14", "C10BX18", "C10BX19"], "counts": {"pd": 2, "pgx": 3, "pk": 15}, "curated": 0, "details": [{"label": "Angeloni_2016 \u00b7 reference", "model_id": "Amlodipine_Angeloni2016_reference"}, {"label": "Chen_2024 \u00b7 reference", "model_id": "Amlodipine_Chen2024_reference"}, {"label": "Courlet_2021 \u00b7 reference", "model_id": "Amlodipine_Courlet2021_reference"}, {"label": "Heo_2016 \u00b7 reference", "model_id": "Amlodipine_Heo2016_reference"}, {"label": "Karalis_2023 \u00b7 reference", "model_id": "Amlodipine_Karalis2023_reference"}, {"label": "Mao_2024 \u00b7 reference", "model_id": "Amlodipine_Mao2024_reference"}, {"label": "Mukherjee_2018 \u00b7 reference", "model_id": "Amlodipine_Mukherjee2018_reference"}, {"label": "Snelder_2014 \u00b7 reference", "model_id": "Amlodipine_Snelder2014_reference"}, {"label": "Vlachou_2021 \u00b7 buffer", "model_id": "Amlodipine_Vlachou2021_buffer"}, {"label": "Vlachou_2021 \u00b7 parameter", "model_id": "Amlodipine_Vlachou2021_parameter"}, {"label": "Vlachou_2021 \u00b7 parameter_4", "model_id": "Amlodipine_Vlachou2021_parameter_4"}, {"label": "Vlachou_2021 \u00b7 reference", "model_id": "Amlodipine_Vlachou2021_reference"}, {"label": "Vlachou_2021 \u00b7 value", "model_id": "Amlodipine_Vlachou2021_value"}, {"label": "Zhang_2025 \u00b7 reference", "model_id": "Amlodipine_Zhang2025_reference"}, {"label": "Zheng_2024 \u00b7 reference", "model_id": "Amlodipine_Zheng2024_reference"}], "dir": "drug_amlodipine", "extracted": 15, "last_change": "2026-08-26T22:55:11.827511+00:00", "name": "amlodipine", "needs_review": 0, "records": 15, "rejected": 0, "rendered": true, "slug": "amlodipine", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B05XA04", "G04BA01"], "counts": {"pd": 9, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_ammonium_chloride", "extracted": 0, "last_change": null, "name": "ammonium chloride", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "ammonium_chloride", "stale": 0} -->
-<!-- docs.py:sidebar {"atc_codes": ["A02BD01", "A02BD03", "A02BD04", "A02BD05", "A02BD06", "A02BD07", "A02BD10", "A02BD12", "A02BD13", "A02BD14", "A02BD15", "A02BD16", "A02BD17", "J01CA04"], "counts": {"pd": 3, "pgx": 0, "pk": 25}, "curated": 0, "details": [{"label": "Albanell-Fern\u00e1ndez_2025 \u00b7 reference", "model_id": "Amoxicillin_AlbanellFernndez2025_reference"}, {"label": "Arancibia_1980 \u00b7 reference", "model_id": "Amoxicillin_Arancibia1980_reference"}, {"label": "Baklouti_2026 \u00b7 reference", "model_id": "Amoxicillin_Baklouti2026_reference"}, {"label": "Bardhi_2026 \u00b7 reference", "model_id": "Amoxicillin_Bardhi2026_reference"}, {"label": "Carceles_1995_3 \u00b7 amoxicillin", "model_id": "Amoxicillin_Carceles1995v3_amoxicillin"}, {"label": "Carceles_1995_3 \u00b7 units", "model_id": "Amoxicillin_Carceles1995v3_units"}, {"label": "Cattrall_2019 \u00b7 reference", "model_id": "Amoxicillin_Cattrall2019_reference"}, {"label": "Dubbelboer_2025 \u00b7 cat_1", "model_id": "Amoxicillin_Dubbelboer2025_cat_1"}, {"label": "Dubbelboer_2025 \u00b7 cat_2", "model_id": "Amoxicillin_Dubbelboer2025_cat_2"}, {"label": "Dubbelboer_2025 \u00b7 cat_3", "model_id": "Amoxicillin_Dubbelboer2025_cat_3"}, {"label": "Dubbelboer_2025 \u00b7 cat_4", "model_id": "Amoxicillin_Dubbelboer2025_cat_4"}, {"label": "Dubbelboer_2025 \u00b7 cat_5", "model_id": "Amoxicillin_Dubbelboer2025_cat_5"}, {"label": "Dubbelboer_2025 \u00b7 cat_6", "model_id": "Amoxicillin_Dubbelboer2025_cat_6"}, {"label": "Dubbelboer_2025 \u00b7 i_i_v", "model_id": "Amoxicillin_Dubbelboer2025_i_i_v"}, {"label": "Dubbelboer_2025 \u00b7 median", "model_id": "Amoxicillin_Dubbelboer2025_median"}, {"label": "Dubbelboer_2025 \u00b7 r_s_e", "model_id": "Amoxicillin_Dubbelboer2025_r_s_e"}, {"label": "Dubbelboer_2025 \u00b7 typical_value", "model_id": "Amoxicillin_Dubbelboer2025_typical_value"}, {"label": "Dubbelboer_2025 \u00b7 unit", "model_id": "Amoxicillin_Dubbelboer2025_unit"}, {"label": "Echizen_2016 \u00b7 reference", "model_id": "Amoxicillin_Echizen2016_reference"}, {"label": "Eshelman_1978 \u00b7 reference", "model_id": "Amoxicillin_Eshelman1978_reference"}, {"label": "Keij_2023 \u00b7 reference", "model_id": "Amoxicillin_Keij2023_reference"}, {"label": "Lacampagne_2026 \u00b7 reference", "model_id": "Amoxicillin_Lacampagne2026_reference"}, {"label": "Spyker_1977 \u00b7 reference", "model_id": "Amoxicillin_Spyker1977_reference"}, {"label": "Wu_2021 \u00b7 reference", "model_id": "Amoxicillin_Wu2021_reference"}, {"label": "Zhang_2025 \u00b7 reference", "model_id": "Amoxicillin_Zhang2025_reference"}, {"label": "Foulds_1983 \u00b7 reference", "model_id": "Amoxicillin_Foulds1983_reference"}, {"label": "Sturgill_1992 \u00b7 reference", "model_id": "Amoxicillin_Sturgill1992_reference"}, {"label": "Carceles_1995 \u00b7 intramuscular_route_n_5", "model_id": "Amoxicillin_Carceles1995_intramuscular_route_n_5"}, {"label": "Carceles_1995 \u00b7 intravenous_route_w_10", "model_id": "Amoxicillin_Carceles1995_intravenous_route_w_10"}], "dir": "drug_amoxicillin", "extracted": 25, "last_change": "2026-08-27T00:55:23.571807+00:00", "name": "amoxicillin", "needs_review": 2, "records": 29, "rejected": 2, "rendered": true, "slug": "amoxicillin", "stale": 0} -->
+<!-- docs.py:sidebar {"atc_codes": ["A02BD01", "A02BD03", "A02BD04", "A02BD05", "A02BD06", "A02BD07", "A02BD10", "A02BD12", "A02BD13", "A02BD14", "A02BD15", "A02BD16", "A02BD17", "J01CA04"], "counts": {"pd": 3, "pgx": 0, "pk": 25}, "curated": 0, "details": [{"label": "Albanell-Fern\u00e1ndez_2025 \u00b7 reference", "model_id": "Amoxicillin_AlbanellFernndez2025_reference"}, {"label": "Arancibia_1980 \u00b7 reference", "model_id": "Amoxicillin_Arancibia1980_reference"}, {"label": "Baklouti_2026 \u00b7 reference", "model_id": "Amoxicillin_Baklouti2026_reference"}, {"label": "Bardhi_2026 \u00b7 reference", "model_id": "Amoxicillin_Bardhi2026_reference"}, {"label": "Carceles_1995_3 \u00b7 amoxicillin", "model_id": "Amoxicillin_Carceles1995v3_amoxicillin"}, {"label": "Carceles_1995_3 \u00b7 units", "model_id": "Amoxicillin_Carceles1995v3_units"}, {"label": "Cattrall_2019 \u00b7 reference", "model_id": "Amoxicillin_Cattrall2019_reference"}, {"label": "Dubbelboer_2025 \u00b7 cat_1", "model_id": "Amoxicillin_Dubbelboer2025_cat_1"}, {"label": "Dubbelboer_2025 \u00b7 cat_2", "model_id": "Amoxicillin_Dubbelboer2025_cat_2"}, {"label": "Dubbelboer_2025 \u00b7 cat_3", "model_id": "Amoxicillin_Dubbelboer2025_cat_3"}, {"label": "Dubbelboer_2025 \u00b7 cat_4", "model_id": "Amoxicillin_Dubbelboer2025_cat_4"}, {"label": "Dubbelboer_2025 \u00b7 cat_5", "model_id": "Amoxicillin_Dubbelboer2025_cat_5"}, {"label": "Dubbelboer_2025 \u00b7 cat_6", "model_id": "Amoxicillin_Dubbelboer2025_cat_6"}, {"label": "Dubbelboer_2025 \u00b7 i_i_v", "model_id": "Amoxicillin_Dubbelboer2025_i_i_v"}, {"label": "Dubbelboer_2025 \u00b7 median", "model_id": "Amoxicillin_Dubbelboer2025_median"}, {"label": "Dubbelboer_2025 \u00b7 r_s_e", "model_id": "Amoxicillin_Dubbelboer2025_r_s_e"}, {"label": "Dubbelboer_2025 \u00b7 typical_value", "model_id": "Amoxicillin_Dubbelboer2025_typical_value"}, {"label": "Dubbelboer_2025 \u00b7 unit", "model_id": "Amoxicillin_Dubbelboer2025_unit"}, {"label": "Echizen_2016 \u00b7 reference", "model_id": "Amoxicillin_Echizen2016_reference"}, {"label": "Eshelman_1978 \u00b7 reference", "model_id": "Amoxicillin_Eshelman1978_reference"}, {"label": "Keij_2023 \u00b7 reference", "model_id": "Amoxicillin_Keij2023_reference"}, {"label": "Lacampagne_2026 \u00b7 reference", "model_id": "Amoxicillin_Lacampagne2026_reference"}, {"label": "Spyker_1977 \u00b7 reference", "model_id": "Amoxicillin_Spyker1977_reference"}, {"label": "Wu_2021 \u00b7 reference", "model_id": "Amoxicillin_Wu2021_reference"}, {"label": "Zhang_2025 \u00b7 reference", "model_id": "Amoxicillin_Zhang2025_reference"}, {"label": "Foulds_1983 \u00b7 reference", "model_id": "Amoxicillin_Foulds1983_reference"}, {"label": "Sturgill_1992 \u00b7 reference", "model_id": "Amoxicillin_Sturgill1992_reference"}, {"label": "Carceles_1995 \u00b7 intramuscular_route_n_5", "model_id": "Amoxicillin_Carceles1995_intramuscular_route_n_5"}, {"label": "Carceles_1995 \u00b7 intravenous_route_w_10", "model_id": "Amoxicillin_Carceles1995_intravenous_route_w_10"}], "dir": "drug_amoxicillin", "extracted": 25, "last_change": "2026-09-10T14:28:01.603562+00:00", "name": "amoxicillin", "needs_review": 2, "records": 29, "rejected": 2, "rendered": true, "slug": "amoxicillin", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["A01AB04", "A07AA07", "G01AA03", "J02AA01"], "counts": {"pd": 0, "pgx": 0, "pk": 1}, "curated": 0, "details": [{"label": "Atkinson_1978 \u00b7 reference", "model_id": "AmphotericinB_Atkinson1978_reference"}, {"label": "Stott_2018 \u00b7 reference", "model_id": "AmphotericinB_Stott2018_reference"}, {"label": "Stott_2022 \u00b7 reference", "model_id": "AmphotericinB_Stott2022_reference"}], "dir": "drug_amphotericin_b", "extracted": 1, "last_change": "2026-09-10T04:29:05.172829+00:00", "name": "amphotericin B", "needs_review": 0, "records": 3, "rejected": 2, "rendered": true, "slug": "amphotericin_b", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["C01CE01"], "counts": {"pd": 3, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Park_1983 \u00b7 reference", "model_id": "Amrinone_Park1983_reference"}], "dir": "drug_amrinone", "extracted": 0, "last_change": "2026-09-09T12:37:58.196366+00:00", "name": "amrinone", "needs_review": 0, "records": 1, "rejected": 1, "rendered": true, "slug": "amrinone", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["C01CX09"], "counts": {"pd": 19, "pgx": 4, "pk": 3}, "curated": 0, "details": [{"label": "Athanassa_2025 \u00b7 reference", "model_id": "AngiotensinIi_Athanassa2025_reference"}, {"label": "Schultze_1975 \u00b7 reference", "model_id": "AngiotensinIi_Schultze1975_reference"}, {"label": "Steichert_2025 \u00b7 reference", "model_id": "AngiotensinIi_Steichert2025_reference"}, {"label": "van_2026 \u00b7 reference", "model_id": "AngiotensinIi_van2026_reference"}, {"label": "Kurup_2024 \u00b7 reference", "model_id": "AngiotensinIi_Kurup2024_reference"}, {"label": "Moran_1985 \u00b7 reference", "model_id": "AngiotensinIi_Moran1985_reference"}], "dir": "drug_angiotensin_ii", "extracted": 3, "last_change": "2026-09-09T13:26:48.633995+00:00", "name": "angiotensin II", "needs_review": 1, "records": 6, "rejected": 2, "rendered": true, "slug": "angiotensin_ii", "stale": 0} -->
@@ -4398,6 +4264,8 @@
 <!-- docs.py:sidebar {"atc_codes": ["B01AC19"], "counts": {"pd": 3, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_beraprost", "extracted": 0, "last_change": null, "name": "beraprost", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "beraprost", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B06AC06"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Mathis_2022 \u00b7 adolescents_12_18_years", "model_id": "Berotralstat_Mathis2022_adolescents_12_18_years"}, {"label": "Mathis_2022 \u00b7 low_weight_adults_60_80_kg", "model_id": "Berotralstat_Mathis2022_low_weight_adults_60_80_kg"}, {"label": "Mathis_2022 \u00b7 normal_weight_adults_80_100_kg", "model_id": "Berotralstat_Mathis2022_normal_weight_adults_80_100_kg"}, {"label": "Mathis_2022 \u00b7 overweight_adults_100_120_kg", "model_id": "Berotralstat_Mathis2022_overweight_adults_100_120_kg"}, {"label": "Mathis_2022 \u00b7 parameter_estimate_rse", "model_id": "Berotralstat_Mathis2022_parameter_estimate_rse"}, {"label": "Mathis_2022 \u00b7 underweight_adults_40_60_kg", "model_id": "Berotralstat_Mathis2022_underweight_adults_40_60_kg"}], "dir": "drug_berotralstat", "extracted": 0, "last_change": "2026-09-07T17:01:43.667718+00:00", "name": "berotralstat", "needs_review": 0, "records": 6, "rejected": 0, "rendered": true, "slug": "berotralstat", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["C07AB05", "S01ED02"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_betaxolol", "extracted": 0, "last_change": null, "name": "betaxolol", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "betaxolol", "stale": 0} -->
+<!-- docs.py:sidebar {"atc_codes": ["A02BX05"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Benet_1991 \u00b7 reference", "model_id": "BismuthSubcitrate_Benet1991_reference"}, {"label": "Dresow_1991 \u00b7 reference", "model_id": "BismuthSubcitrate_Dresow1991_reference"}, {"label": "Leussink_2000 \u00b7 reference", "model_id": "BismuthSubcitrate_Leussink2000_reference"}], "dir": "drug_bismuth_subcitrate", "extracted": 0, "last_change": "2026-09-10T14:31:18.803857+00:00", "name": "bismuth subcitrate", "needs_review": 0, "records": 3, "rejected": 3, "rendered": true, "slug": "bismuth_subcitrate", "stale": 0} -->
+<!-- docs.py:sidebar {"atc_codes": ["A02BX12"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_bismuth_subnitrate", "extracted": 0, "last_change": null, "name": "bismuth subnitrate", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "bismuth_subnitrate", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["C07AB07", "C07BB07", "C07FB07", "C07FX04", "C09BX02", "C09BX04", "C09BX05"], "counts": {"pd": 0, "pgx": 0, "pk": 7}, "curated": 0, "details": [{"label": "Cvan_2016 \u00b7 patients with chronic heart failure", "model_id": "Bisoprolol_Cvan2016_reference"}, {"label": "Fontana_2022 \u00b7 patients with non-ST elevation acute coronary syndrome on bisoprolol", "model_id": "Bisoprolol_Fontana2022_reference"}, {"label": "Grevel_1989 \u00b7 patients with essential hypertension, renal impairment, or hepatic cirrhosis", "model_id": "Bisoprolol_Grevel1989_reference"}, {"label": "Mom\u010dilovi\u0107_2019 \u00b7 patients with acute coronary syndrome", "model_id": "Bisoprolol_Momilovi2019_reference"}, {"label": "Mom\u010dilovi\u0107_2020 \u00b7 adults with type 2 diabetes mellitus and hypertension", "model_id": "Bisoprolol_Momilovi2020_reference"}, {"label": "Nikolic_2013 \u00b7 patients with chronic heart failure", "model_id": "Bisoprolol_Nikolic2013_reference"}, {"label": "Nikolic_2016 \u00b7 hypertensive patients on hemodialysis", "model_id": "Bisoprolol_Nikolic2016_reference"}, {"label": "Nikolic_2018 \u00b7 patients with stable coronary artery disease", "model_id": "Bisoprolol_Nikolic2018_reference"}], "dir": "drug_bisoprolol", "extracted": 0, "last_change": "2026-08-02T12:26:06.614425+00:00", "name": "bisoprolol", "needs_review": 8, "records": 8, "rejected": 0, "rendered": true, "slug": "bisoprolol", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B01AE06"], "counts": {"pd": 1, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Zhang_2012 \u00b7 reference", "model_id": "Bivalirudin_Zhang2012_reference"}], "dir": "drug_bivalirudin", "extracted": 0, "last_change": "2026-09-05T18:42:22.260825+00:00", "name": "bivalirudin", "needs_review": 0, "records": 1, "rejected": 1, "rendered": true, "slug": "bivalirudin", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["L01DC01"], "counts": {"pd": 5, "pgx": 1, "pk": 3}, "curated": 0, "details": [{"label": "Wilde_2007 \u00b7 reference", "model_id": "Bleomycin_Wilde2007_reference"}, {"label": "Yadav_2023 \u00b7 reference", "model_id": "Bleomycin_Yadav2023_reference"}, {"label": "Zhao_2025 \u00b7 reference", "model_id": "Bleomycin_Zhao2025_reference"}, {"label": "Giri_1986 \u00b7 reference", "model_id": "Bleomycin_Giri1986_reference"}, {"label": "Han_2024 \u00b7 reference", "model_id": "Bleomycin_Han2024_reference"}, {"label": "Schober_1978_2 \u00b7 reference", "model_id": "Bleomycin_Schober1978v2_reference"}], "dir": "drug_bleomycin", "extracted": 3, "last_change": "2026-08-27T11:40:19.499012+00:00", "name": "bleomycin", "needs_review": 3, "records": 6, "rejected": 0, "rendered": true, "slug": "bleomycin", "stale": 0} -->
@@ -4422,6 +4290,7 @@
 <!-- docs.py:sidebar {"atc_codes": ["B01AX07"], "counts": {"pd": 1, "pgx": 0, "pk": 2}, "curated": 0, "details": [{"label": "Fan_2025 \u00b7 reference", "model_id": "Caplacizumab_Fan2025_reference"}, {"label": "Sargentini-Maier_2019 \u00b7 reference", "model_id": "Caplacizumab_SargentiniMaier2019_reference"}, {"label": "Jansen_2026 \u00b7 reference", "model_id": "Caplacizumab_Jansen2026_reference"}], "dir": "drug_caplacizumab", "extracted": 2, "last_change": "2026-09-05T15:24:20.045903+00:00", "name": "caplacizumab", "needs_review": 0, "records": 3, "rejected": 1, "rendered": true, "slug": "caplacizumab", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["N03AF01"], "counts": {"pd": 0, "pgx": 2, "pk": 7}, "curated": 0, "details": [{"label": "Djordjevic_2016 \u00b7 reference", "model_id": "Carbamazepine_Djordjevic2016_reference"}, {"label": "Djordjevic_2025 \u00b7 reference", "model_id": "Carbamazepine_Djordjevic2025_reference"}, {"label": "Li_2021 \u00b7 reference", "model_id": "Carbamazepine_Li2021_reference"}, {"label": "Lukic_2024 \u00b7 reference", "model_id": "Carbamazepine_Lukic2024_reference"}, {"label": "Milovanovic_2016 \u00b7 reference", "model_id": "Carbamazepine_Milovanovic2016_reference"}, {"label": "Punyawudho_2012 \u00b7 reference", "model_id": "Carbamazepine_Punyawudho2012_reference"}, {"label": "Yip_2021 \u00b7 reference", "model_id": "Carbamazepine_Yip2021_reference"}, {"label": "Saruwatari_2010 \u00b7 final_population_pharmacokinetic_model", "model_id": "Carbamazepine_Saruwatari2010_final_population_pharmacokineti"}, {"label": "Saruwatari_2010 \u00b7 genetic_polymorphisms", "model_id": "Carbamazepine_Saruwatari2010_genetic_polymorphisms"}], "dir": "drug_carbamazepine", "extracted": 7, "last_change": "2026-09-09T23:47:26.247887+00:00", "name": "carbamazepine", "needs_review": 0, "records": 9, "rejected": 0, "rendered": true, "slug": "carbamazepine", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B05BC02", "D02AE01"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_carbamide", "extracted": 0, "last_change": null, "name": "carbamide", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "carbamide", "stale": 0} -->
+<!-- docs.py:sidebar {"atc_codes": ["A02BX01"], "counts": {"pd": 6, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_carbenoxolone", "extracted": 0, "last_change": null, "name": "carbenoxolone", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "carbenoxolone", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B05BA03"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_carbohydrates", "extracted": 0, "last_change": null, "name": "carbohydrates", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "carbohydrates", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["N03AX19"], "counts": {"pd": 9, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_carisbamate", "extracted": 0, "last_change": null, "name": "carisbamate", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "carisbamate", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["C07AG02", "C07FX06"], "counts": {"pd": 1, "pgx": 0, "pk": 2}, "curated": 0, "details": [{"label": "Nikolic_2013 \u00b7 reference", "model_id": "Carvedilol_Nikolic2013_reference"}, {"label": "Saito_2010 \u00b7 reference", "model_id": "Carvedilol_Saito2010_reference"}, {"label": "Albers_2008 \u00b7 reference", "model_id": "Carvedilol_Albers2008_reference"}, {"label": "Hwang_2023 \u00b7 reference", "model_id": "Carvedilol_Hwang2023_reference"}, {"label": "Nardotto_2017 \u00b7 reference", "model_id": "Carvedilol_Nardotto2017_reference"}, {"label": "Sehrt_2011 \u00b7 reference", "model_id": "Carvedilol_Sehrt2011_reference"}, {"label": "Yamamoto_2024 \u00b7 reference", "model_id": "Carvedilol_Yamamoto2024_reference"}], "dir": "drug_carvedilol", "extracted": 2, "last_change": "2026-07-22T19:33:04.255281+00:00", "name": "carvedilol", "needs_review": 0, "records": 7, "rejected": 5, "rendered": true, "slug": "carvedilol", "stale": 0} -->
@@ -4439,6 +4308,7 @@
 <!-- docs.py:sidebar {"atc_codes": ["C01BG07"], "counts": {"pd": 3, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_cibenzoline", "extracted": 0, "last_change": null, "name": "cibenzoline", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "cibenzoline", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["C09AA08", "C09BA08"], "counts": {"pd": 31, "pgx": 0, "pk": 2}, "curated": 0, "details": [{"label": "Deget_1991 \u00b7 reference", "model_id": "Cilazapril_Deget1991_reference"}, {"label": "Meredith_1989 \u00b7 reference", "model_id": "Cilazapril_Meredith1989_reference"}], "dir": "drug_cilazapril", "extracted": 2, "last_change": "2026-08-27T09:08:58.373261+00:00", "name": "cilazapril", "needs_review": 0, "records": 2, "rejected": 0, "rendered": true, "slug": "cilazapril", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B01AC23"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Lee_2014 \u00b7 reference", "model_id": "Cilostazol_Lee2014_reference"}, {"label": "Yoo_2010 \u00b7 reference", "model_id": "Cilostazol_Yoo2010_reference"}], "dir": "drug_cilostazol", "extracted": 0, "last_change": "2026-09-05T15:31:59.216106+00:00", "name": "cilostazol", "needs_review": 0, "records": 2, "rejected": 2, "rendered": true, "slug": "cilostazol", "stale": 0} -->
+<!-- docs.py:sidebar {"atc_codes": ["A02BA01"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_cimetidine", "extracted": 0, "last_change": null, "name": "cimetidine", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "cimetidine", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["J01MA02", "J01RA10", "J01RA11", "J01RA12", "S01AE03", "S02AA15", "S03AA07"], "counts": {"pd": 4, "pgx": 1, "pk": 19}, "curated": 0, "details": [{"label": "Alihodzic_2022 \u00b7 reference", "model_id": "Ciprofloxacin_Alihodzic2022_reference"}, {"label": "Alonso_2021 \u00b7 reference", "model_id": "Ciprofloxacin_Alonso2021_reference"}, {"label": "Ambros_2025 \u00b7 reference", "model_id": "Ciprofloxacin_Ambros2025_reference"}, {"label": "Cattrall_2019 \u00b7 reference", "model_id": "Ciprofloxacin_Cattrall2019_reference"}, {"label": "Forrest_1993 \u00b7 reference", "model_id": "Ciprofloxacin_Forrest1993_reference"}, {"label": "Garg_2024 \u00b7 reference", "model_id": "Ciprofloxacin_Garg2024_reference"}, {"label": "Guo_2022 \u00b7 cl", "model_id": "Ciprofloxacin_Guo2022_cl"}, {"label": "Guo_2022 \u00b7 final", "model_id": "Ciprofloxacin_Guo2022_final"}, {"label": "Guo_2022 \u00b7 v1", "model_id": "Ciprofloxacin_Guo2022_v1"}, {"label": "Guo_2022 \u00b7 v2", "model_id": "Ciprofloxacin_Guo2022_v2"}, {"label": "Haefliger_2025 \u00b7 reference", "model_id": "Ciprofloxacin_Haefliger2025_reference"}, {"label": "H\u00f6ffken_1985 \u00b7 100_mg_orally", "model_id": "Ciprofloxacin_Hffken1985_100_mg_orally"}, {"label": "H\u00f6ffken_1985 \u00b7 50_mg_orally", "model_id": "Ciprofloxacin_Hffken1985_50_mg_orally"}, {"label": "H\u00f6ffken_1985 \u00b7 750_mg_orally", "model_id": "Ciprofloxacin_Hffken1985_750_mg_orally"}, {"label": "Papich_2017 \u00b7 estimate", "model_id": "Ciprofloxacin_Papich2017_estimate"}, {"label": "Papich_2017 \u00b7 units", "model_id": "Ciprofloxacin_Papich2017_units"}, {"label": "Sang_2015 \u00b7 reference", "model_id": "Ciprofloxacin_Sang2015_reference"}, {"label": "Santavy_2023 \u00b7 reference", "model_id": "Ciprofloxacin_Santavy2023_reference"}, {"label": "Zhu_2026 \u00b7 reference", "model_id": "Ciprofloxacin_Zhu2026_reference"}, {"label": "Felix_2025 \u00b7 reference", "model_id": "Ciprofloxacin_Felix2025_reference"}, {"label": "H\u00f6ffken_1985 \u00b7 100_mg", "model_id": "Ciprofloxacin_Hffken1985_100_mg"}, {"label": "H\u00f6ffken_1985 \u00b7 100_mg_i_v", "model_id": "Ciprofloxacin_Hffken1985_100_mg_i_v"}, {"label": "H\u00f6ffken_1985 \u00b7 50_mg", "model_id": "Ciprofloxacin_Hffken1985_50_mg"}, {"label": "H\u00f6ffken_1985 \u00b7 50_mg_i_v", "model_id": "Ciprofloxacin_Hffken1985_50_mg_i_v"}, {"label": "H\u00f6ffken_1985 \u00b7 750_mg", "model_id": "Ciprofloxacin_Hffken1985_750_mg"}, {"label": "Ambros_2025 \u00b7 estimate", "model_id": "Ciprofloxacin_Ambros2025_estimate"}, {"label": "Ambros_2025 \u00b7 schrinkage", "model_id": "Ciprofloxacin_Ambros2025_schrinkage"}, {"label": "Junkert_2024 \u00b7 reference", "model_id": "Ciprofloxacin_Junkert2024_reference"}], "dir": "drug_ciprofloxacin", "extracted": 19, "last_change": "2026-08-27T01:29:38.403630+00:00", "name": "ciprofloxacin", "needs_review": 6, "records": 28, "rejected": 3, "rendered": true, "slug": "ciprofloxacin", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["L01XA01"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Urien_2004 \u00b7 reference", "model_id": "Cisplatin_Urien2004_reference"}], "dir": "drug_cisplatin", "extracted": 0, "last_change": "2026-07-15T11:10:53.165958+00:00", "name": "cisplatin", "needs_review": 0, "records": 1, "rejected": 1, "rendered": true, "slug": "cisplatin", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["N06AB04"], "counts": {"pd": 0, "pgx": 0, "pk": 2}, "curated": 0, "details": [{"label": "Akil_2016 \u00b7 reference", "model_id": "Citalopram_Akil2016_reference"}, {"label": "Weisskopf_2020 \u00b7 reference", "model_id": "Citalopram_Weisskopf2020_reference"}], "dir": "drug_citalopram", "extracted": 2, "last_change": "2026-07-15T11:11:49.393035+00:00", "name": "citalopram", "needs_review": 0, "records": 2, "rejected": 0, "rendered": true, "slug": "citalopram", "stale": 0} -->
@@ -4460,7 +4330,6 @@
 <!-- docs.py:sidebar {"atc_codes": ["N02AA59"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_codeine_combinations_excl_psycholeptics", "extracted": 0, "last_change": null, "name": "codeine, combinations excl. psycholeptics", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "codeine_combinations_excl_psycholeptics", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["N02AA79"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_codeine_combinations_with_psycholeptics", "extracted": 0, "last_change": null, "name": "codeine, combinations with psycholeptics", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "codeine_combinations_with_psycholeptics", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B02BC07", "G04BX11"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_collagen", "extracted": 0, "last_change": null, "name": "collagen", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "collagen", "stale": 0} -->
-<!-- docs.py:sidebar {"atc_codes": ["A01AA30", "A02AA10", "A02AB10", "A02AC10", "A06AG20", "A07BC30", "A10AB30", "A10AC30", "A10AD30", "A10AE30", "A11CC20", "B01AC30", "B02BC30", "B05BA10", "B05CA10", "B05CB10", "B05CX10", "C01CA30", "D01AE20", "G03GA30", "G04BE30", "J01CA20", "J01CE30", "J01EB20", "J01EC20", "J01ED20", "J06BB30", "J07BC20", "N01BB20", "N06DX30", "R01AX30", "R05CA10", "R05CB10", "R05DA20", "R05DB20", "R07AA30", "S01HA30", "S02DA30"], "counts": {"pd": 21, "pgx": 3, "pk": 0}, "curated": 0, "details": [], "dir": "drug_combinations", "extracted": 0, "last_change": null, "name": "combinations", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "combinations", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B02BX10"], "counts": {"pd": 2, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Agers\u00f8_2014 \u00b7 reference", "model_id": "Concizumab_Agers2014_reference"}], "dir": "drug_concizumab", "extracted": 0, "last_change": "2026-09-06T10:19:17.829116+00:00", "name": "concizumab", "needs_review": 0, "records": 1, "rejected": 1, "rendered": true, "slug": "concizumab", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B06AC04", "B06C"], "counts": {"pd": 0, "pgx": 0, "pk": 1}, "curated": 0, "details": [{"label": "Farrell_2013 \u00b7 reference", "model_id": "ConestatAlfa_Farrell2013_reference"}], "dir": "drug_conestat_alfa", "extracted": 1, "last_change": "2026-09-07T17:55:09.652390+00:00", "name": "conestat alfa", "needs_review": 0, "records": 1, "rejected": 0, "rendered": true, "slug": "conestat_alfa", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B06AX01"], "counts": {"pd": 1, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Sy_2023 \u00b7 reference", "model_id": "Crizanlizumab_Sy2023_reference"}], "dir": "drug_crizanlizumab", "extracted": 0, "last_change": "2026-09-07T18:00:18.380055+00:00", "name": "crizanlizumab", "needs_review": 0, "records": 1, "rejected": 1, "rendered": true, "slug": "crizanlizumab", "stale": 0} -->
@@ -4531,6 +4400,7 @@
 <!-- docs.py:sidebar {"atc_codes": ["C01BC08"], "counts": {"pd": 1, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_encainide", "extracted": 0, "last_change": null, "name": "encainide", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "encainide", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B01AB05"], "counts": {"pd": 0, "pgx": 0, "pk": 2}, "curated": 0, "details": [{"label": "Zufferey_2021 \u00b7 iiv_r_s_e", "model_id": "Enoxaparin_Zufferey2021_iiv_r_s_e"}, {"label": "Zufferey_2021 \u00b7 value_r_s_e", "model_id": "Enoxaparin_Zufferey2021_value_r_s_e"}, {"label": "Oualha_2018 \u00b7 reference", "model_id": "Enoxaparin_Oualha2018_reference"}], "dir": "drug_enoxaparin", "extracted": 2, "last_change": "2026-09-05T20:44:06.434233+00:00", "name": "enoxaparin", "needs_review": 0, "records": 3, "rejected": 1, "rendered": true, "slug": "enoxaparin", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["C01CE03"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_enoximone", "extracted": 0, "last_change": null, "name": "enoximone", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "enoximone", "stale": 0} -->
+<!-- docs.py:sidebar {"atc_codes": ["A02BB02"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_enprostil", "extracted": 0, "last_change": null, "name": "enprostil", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "enprostil", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["C01CA26", "R01AA03", "R01AB05", "R03CA02", "S01FB02"], "counts": {"pd": 2, "pgx": 0, "pk": 1}, "curated": 0, "details": [{"label": "Tran_2020 \u00b7 reference", "model_id": "Ephedrine_Tran2020_reference"}, {"label": "Csajka_2005 \u00b7 reference", "model_id": "Ephedrine_Csajka2005_reference"}], "dir": "drug_ephedrine", "extracted": 1, "last_change": "2026-09-09T19:23:04.446089+00:00", "name": "ephedrine", "needs_review": 0, "records": 2, "rejected": 1, "rendered": true, "slug": "ephedrine", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["A01AD01", "B02BC09", "C01CA24", "R01AA14", "R03AA01", "R03AK01", "S01EA01"], "counts": {"pd": 0, "pgx": 0, "pk": 1}, "curated": 0, "details": [{"label": "Heradstveit_2023 \u00b7 reference", "model_id": "Epinephrine_Heradstveit2023_reference"}, {"label": "Knych_2023 \u00b7 reference", "model_id": "Epinephrine_Knych2023_reference"}], "dir": "drug_epinephrine", "extracted": 1, "last_change": "2026-09-10T04:50:53.621331+00:00", "name": "epinephrine", "needs_review": 0, "records": 2, "rejected": 1, "rendered": true, "slug": "epinephrine", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B01AC09"], "counts": {"pd": 1, "pgx": 0, "pk": 4}, "curated": 0, "details": [{"label": "Keizer_2010 \u00b7 reference", "model_id": "Epoprostenol_Keizer2010_reference"}, {"label": "Nicolas_2012 \u00b7 reference", "model_id": "Epoprostenol_Nicolas2012_reference"}, {"label": "Vizza_2017 \u00b7 reference", "model_id": "Epoprostenol_Vizza2017_reference"}, {"label": "Vucicevic_2025 \u00b7 reference", "model_id": "Epoprostenol_Vucicevic2025_reference"}], "dir": "drug_epoprostenol", "extracted": 4, "last_change": "2026-09-05T21:26:57.980084+00:00", "name": "epoprostenol", "needs_review": 0, "records": 4, "rejected": 0, "rendered": true, "slug": "epoprostenol", "stale": 0} -->
@@ -4542,7 +4412,7 @@
 <!-- docs.py:sidebar {"atc_codes": ["B03XA01"], "counts": {"pd": 0, "pgx": 0, "pk": 1}, "curated": 0, "details": [{"label": "Frymoyer_2017 \u00b7 reference", "model_id": "Erythropoietin_Frymoyer2017_reference"}, {"label": "Chakraborty_2005 \u00b7 reference", "model_id": "Erythropoietin_Chakraborty2005_reference"}, {"label": "Gaudard_2003 \u00b7 reference", "model_id": "Erythropoietin_Gaudard2003_reference"}, {"label": "Jolling_2004 \u00b7 reference", "model_id": "Erythropoietin_Jolling2004_reference"}, {"label": "Olsson-Gisleskog_2007 \u00b7 reference", "model_id": "Erythropoietin_OlssonGisleskog2007_reference"}], "dir": "drug_erythropoietin", "extracted": 1, "last_change": "2026-09-06T14:16:26.415769+00:00", "name": "erythropoietin", "needs_review": 0, "records": 5, "rejected": 4, "rendered": true, "slug": "erythropoietin", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["N06AB10"], "counts": {"pd": 0, "pgx": 0, "pk": 1}, "curated": 0, "details": [{"label": "Liu_2022 \u00b7 reference", "model_id": "Escitalopram_Liu2022_reference"}, {"label": "Liu_2023 \u00b7 reference", "model_id": "Escitalopram_Liu2023_reference"}], "dir": "drug_escitalopram", "extracted": 1, "last_change": "2026-07-15T11:54:26.754481+00:00", "name": "escitalopram", "needs_review": 0, "records": 2, "rejected": 1, "rendered": true, "slug": "escitalopram", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["N03AF04"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Sunkaraneni_2018_2 \u00b7 final", "model_id": "Eslicarbazepine_Sunkaraneni2018v2_final"}, {"label": "Sunkaraneni_2018_2 \u00b7 interindividual_variability_residual_variabilitya", "model_id": "Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit"}, {"label": "Falc\u00e3o_2012 \u00b7 reference", "model_id": "Eslicarbazepine_Falco2012_reference"}], "dir": "drug_eslicarbazepine", "extracted": 0, "last_change": "2026-09-10T00:31:51.432087+00:00", "name": "eslicarbazepine", "needs_review": 0, "records": 3, "rejected": 1, "rendered": true, "slug": "eslicarbazepine", "stale": 0} -->
-<!-- docs.py:sidebar {"atc_codes": ["A02BC05", "M01AE52"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Gebreyesus_2022 \u00b7 reference", "model_id": "Esomeprazole_Gebreyesus2022_reference"}], "dir": "drug_esomeprazole", "extracted": 0, "last_change": "2026-07-15T11:56:11.144781+00:00", "name": "esomeprazole", "needs_review": 0, "records": 1, "rejected": 1, "rendered": true, "slug": "esomeprazole", "stale": 0} -->
+<!-- docs.py:sidebar {"atc_codes": ["A02BC05", "M01AE52"], "counts": {"pd": 0, "pgx": 0, "pk": 1}, "curated": 0, "details": [{"label": "Chung_2022 \u00b7 reference", "model_id": "Esomeprazole_Chung2022_reference"}, {"label": "Gebreyesus_2022 \u00b7 reference", "model_id": "Esomeprazole_Gebreyesus2022_reference"}, {"label": "Nagase_2020 \u00b7 reference", "model_id": "Esomeprazole_Nagase2020_reference"}], "dir": "drug_esomeprazole", "extracted": 1, "last_change": "2026-09-10T14:50:38.356033+00:00", "name": "esomeprazole", "needs_review": 0, "records": 3, "rejected": 2, "rendered": true, "slug": "esomeprazole", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B02BX01"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_etamsylate", "extracted": 0, "last_change": null, "name": "etamsylate", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "etamsylate", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["C01BC09"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_ethacizine", "extracted": 0, "last_change": null, "name": "ethacizine", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "ethacizine", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B05CA08", "D08AA01"], "counts": {"pd": 6, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_ethacridine", "extracted": 0, "last_change": null, "name": "Ethacridine", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "ethacridine", "stale": 0} -->
@@ -4554,11 +4424,13 @@
 <!-- docs.py:sidebar {"atc_codes": ["B02BD16"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_etranacogene_dezaparvovec", "extracted": 0, "last_change": null, "name": "etranacogene dezaparvovec", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "etranacogene_dezaparvovec", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["A10BJ01"], "counts": {"pd": 6, "pgx": 0, "pk": 9}, "curated": 0, "details": [{"label": "Admiraal_2023 \u00b7 reference", "model_id": "Exenatide_Admiraal2023_reference"}, {"label": "Cirincione_2017 \u00b7 combined_single_and_multiple_dose_models_iv", "model_id": "Exenatide_Cirincione2017_combined_single_and_multiple_dose_m"}, {"label": "Cirincione_2017 \u00b7 single_dose_model_iv", "model_id": "Exenatide_Cirincione2017_single_dose_model_iv"}, {"label": "Cirincione_2017_2 \u00b7 iiv", "model_id": "Exenatide_Cirincione2017v2_iiv"}, {"label": "Cirincione_2017_2 \u00b7 reference", "model_id": "Exenatide_Cirincione2017v2_reference"}, {"label": "Gao_2011 \u00b7 reference", "model_id": "Exenatide_Gao2011_reference"}, {"label": "Li_2012 \u00b7 reference", "model_id": "Exenatide_Li2012_reference"}, {"label": "Min_2025 \u00b7 reference", "model_id": "Exenatide_Min2025_reference"}, {"label": "Ng_2018 \u00b7 reference", "model_id": "Exenatide_Ng2018_reference"}, {"label": "Cirincione_2017 \u00b7 reference", "model_id": "Exenatide_Cirincione2017_reference"}, {"label": "Choi_2025 \u00b7 reference", "model_id": "Exenatide_Choi2025_reference"}, {"label": "Cirincione_2017 \u00b7 combined_single_and_multiple_dose_models_parameter_estimate", "model_id": "Exenatide_Cirincione2017_combined_single_and_multiple_dose_m"}, {"label": "Cirincione_2017 \u00b7 single_dose_model_parameter_estimate", "model_id": "Exenatide_Cirincione2017_single_dose_model_parameter_estimat"}, {"label": "Cirincione_2017_2 \u00b7 parameter_estimate", "model_id": "Exenatide_Cirincione2017v2_parameter_estimate"}, {"label": "Gao_2012 \u00b7 reference", "model_id": "Exenatide_Gao2012_reference"}], "dir": "drug_exenatide", "extracted": 9, "last_change": "2026-08-26T19:00:30.659166+00:00", "name": "exenatide", "needs_review": 1, "records": 15, "rejected": 5, "rendered": true, "slug": "exenatide", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B02BD03"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_factor_viii_inhibitor_bypassing_activity", "extracted": 0, "last_change": null, "name": "factor VIII inhibitor bypassing activity", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "factor_viii_inhibitor_bypassing_activity", "stale": 0} -->
+<!-- docs.py:sidebar {"atc_codes": ["A02BA03"], "counts": {"pd": 0, "pgx": 0, "pk": 3}, "curated": 0, "details": [{"label": "Ikawa_2007 \u00b7 reference", "model_id": "Famotidine_Ikawa2007_reference"}, {"label": "Maish_1998 \u00b7 reference", "model_id": "Famotidine_Maish1998_reference"}, {"label": "McCann_2023 \u00b7 reference", "model_id": "Famotidine_McCann2023_reference"}], "dir": "drug_famotidine", "extracted": 3, "last_change": "2026-09-10T14:58:36.311072+00:00", "name": "famotidine", "needs_review": 0, "records": 3, "rejected": 0, "rendered": true, "slug": "famotidine", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["N03AX10"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Graves_1989 \u00b7 reference", "model_id": "Felbamate_Graves1989_reference"}, {"label": "Kelley_1997 \u00b7 reference", "model_id": "Felbamate_Kelley1997_reference"}], "dir": "drug_felbamate", "extracted": 0, "last_change": "2026-09-10T00:52:32.654995+00:00", "name": "felbamate", "needs_review": 0, "records": 2, "rejected": 2, "rendered": true, "slug": "felbamate", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["C01CA19"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Ziemniak_1989 \u00b7 reference", "model_id": "Fenoldopam_Ziemniak1989_reference"}], "dir": "drug_fenoldopam", "extracted": 0, "last_change": "2026-09-09T19:47:05.418173+00:00", "name": "fenoldopam", "needs_review": 0, "records": 1, "rejected": 1, "rendered": true, "slug": "fenoldopam", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["N01AH01", "N02AB03"], "counts": {"pd": 2, "pgx": 0, "pk": 9}, "curated": 0, "details": [{"label": "Cavallaro_2026 \u00b7 reference", "model_id": "Fentanyl_Cavallaro2026_reference"}, {"label": "Choi_2016 \u00b7 reference", "model_id": "Fentanyl_Choi2016_reference"}, {"label": "Davis_1986 \u00b7 reference", "model_id": "Fentanyl_Davis1986_reference"}, {"label": "Lemmens_1994 \u00b7 reference", "model_id": "Fentanyl_Lemmens1994_reference"}, {"label": "Reed_2024 \u00b7 dose_absorbed_mg", "model_id": "Fentanyl_Reed2024_dose_absorbed_mg"}, {"label": "Reed_2024 \u00b7 fractional_bioavailability", "model_id": "Fentanyl_Reed2024_fractional_bioavailability"}, {"label": "Reed_2024 \u00b7 target_dose_mg", "model_id": "Fentanyl_Reed2024_target_dose_mg"}, {"label": "Tulbah_2026 \u00b7 reference", "model_id": "Fentanyl_Tulbah2026_reference"}, {"label": "Ueshima_2025 \u00b7 reference", "model_id": "Fentanyl_Ueshima2025_reference"}, {"label": "Langley_1988 \u00b7 reference", "model_id": "Fentanyl_Langley1988_reference"}, {"label": "Lemmens_1995 \u00b7 reference", "model_id": "Fentanyl_Lemmens1995_reference"}, {"label": "Bragg_1995 \u00b7 reference", "model_id": "Fentanyl_Bragg1995_reference"}, {"label": "Egan_1995 \u00b7 reference", "model_id": "Fentanyl_Egan1995_reference"}, {"label": "Reed_2024 \u00b7 estimate", "model_id": "Fentanyl_Reed2024_estimate"}], "dir": "drug_fentanyl", "extracted": 9, "last_change": "2026-08-27T16:17:08.525203+00:00", "name": "fentanyl", "needs_review": 2, "records": 14, "rejected": 3, "rendered": true, "slug": "fentanyl", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B03AA02", "B03AD02"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_ferrous_fumarate", "extracted": 0, "last_change": null, "name": "ferrous fumarate", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "ferrous_fumarate", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B03AA07"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_ferrous_sulfate", "extracted": 0, "last_change": null, "name": "ferrous sulfate", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "ferrous_sulfate", "stale": 0} -->
+<!-- docs.py:sidebar {"atc_codes": ["A02BC10"], "counts": {"pd": 1, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_fexuprazan", "extracted": 0, "last_change": null, "name": "fexuprazan", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "fexuprazan", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B02BB01"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Colom_2023 \u00b7 reference", "model_id": "FibrinogenHuman_Colom2023_reference"}, {"label": "Khayat_2023 \u00b7 reference", "model_id": "FibrinogenHuman_Khayat2023_reference"}], "dir": "drug_fibrinogen_human", "extracted": 0, "last_change": "2026-09-06T11:51:34.869097+00:00", "name": "fibrinogen, human", "needs_review": 0, "records": 2, "rejected": 2, "rendered": true, "slug": "fibrinogen_human", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B02BD17"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Wojciechowski_2025 \u00b7 reference", "model_id": "FidanacogeneElaparvovec_Wojciechowski2025_reference"}], "dir": "drug_fidanacogene_elaparvovec", "extracted": 0, "last_change": "2026-09-06T11:57:26.476245+00:00", "name": "fidanacogene elaparvovec", "needs_review": 0, "records": 1, "rejected": 1, "rendered": true, "slug": "fidanacogene_elaparvovec", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B02BX12"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [{"label": "Fan_2026 \u00b7 0_38", "model_id": "Fitusiran_Fan2026_0_38"}, {"label": "Fan_2026 \u00b7 0_71_9_45", "model_id": "Fitusiran_Fan2026_0_71_9_45"}, {"label": "Fan_2026 \u00b7 1_48_21_16", "model_id": "Fitusiran_Fan2026_1_48_21_16"}, {"label": "Fan_2026 \u00b7 humansa", "model_id": "Fitusiran_Fan2026_humansa"}, {"label": "Fan_2026 \u00b7 micea", "model_id": "Fitusiran_Fan2026_micea"}, {"label": "Fan_2026 \u00b7 monkeysc", "model_id": "Fitusiran_Fan2026_monkeysc"}, {"label": "Fan_2026 \u00b7 ratsb", "model_id": "Fitusiran_Fan2026_ratsb"}], "dir": "drug_fitusiran", "extracted": 0, "last_change": "2026-09-06T12:18:16.452745+00:00", "name": "fitusiran", "needs_review": 0, "records": 7, "rejected": 0, "rendered": true, "slug": "fitusiran", "stale": 0} -->
@@ -4833,8 +4705,6 @@
 <!-- docs.py:sidebar {"atc_codes": ["B01AD04"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_urokinase", "extracted": 0, "last_change": null, "name": "urokinase", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "urokinase", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B03XA08"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_vadadustat", "extracted": 0, "last_change": null, "name": "vadadustat", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "vadadustat", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["B02BD15"], "counts": {"pd": 0, "pgx": 0, "pk": 1}, "curated": 0, "details": [{"label": "Mahlangu_2023 \u00b7 reference", "model_id": "ValoctocogeneRoxaparvovec_Mahlangu2023_reference"}, {"label": "Cao_2025 \u00b7 reference", "model_id": "ValoctocogeneRoxaparvovec_Cao2025_reference"}], "dir": "drug_valoctocogene_roxaparvovec", "extracted": 1, "last_change": "2026-09-06T21:07:10.243664+00:00", "name": "valoctocogene roxaparvovec", "needs_review": 0, "records": 2, "rejected": 1, "rendered": true, "slug": "valoctocogene_roxaparvovec", "stale": 0} -->
-<!-- docs.py:sidebar {"atc_codes": ["A01AB11", "A01AD11", "M02AX10", "R01AX10", "R02AA20", "V01AA20"], "counts": {"pd": 1, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_various", "extracted": 0, "last_change": null, "name": "various", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "various", "stale": 0} -->
-<!-- docs.py:sidebar {"atc_codes": ["B03AE10", "D10AX30"], "counts": {"pd": 19, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_various_combinations", "extracted": 0, "last_change": null, "name": "various combinations", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "various_combinations", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["C01BG11"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_vernakalant", "extracted": 0, "last_change": null, "name": "vernakalant", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "vernakalant", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["N02BG05"], "counts": {"pd": 0, "pgx": 0, "pk": 0}, "curated": 0, "details": [], "dir": "drug_viminol", "extracted": 0, "last_change": null, "name": "viminol", "needs_review": 0, "records": 0, "rejected": 0, "rendered": true, "slug": "viminol", "stale": 0} -->
 <!-- docs.py:sidebar {"atc_codes": ["L01CA01"], "counts": {"pd": 3, "pgx": 0, "pk": 4}, "curated": 0, "details": [{"label": "Lev\u00eaque_1996 \u00b7 reference", "model_id": "Vinblastine_Levque1996_reference"}, {"label": "Zhou_1990 \u00b7 estimated_parameters_cls_l_kg", "model_id": "Vinblastine_Zhou1990_estimated_parameters_cls_l_kg"}, {"label": "Zhou_1990 \u00b7 estimated_parameters_vt_l_kg", "model_id": "Vinblastine_Zhou1990_estimated_parameters_vt_l_kg"}, {"label": "Zhou_1990 \u00b7 first_exponential_at1_2_g_ml_h", "model_id": "Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h"}, {"label": "Petric_2023 \u00b7 reference", "model_id": "Vinblastine_Petric2023_reference"}, {"label": "Sethi_1984 \u00b7 reference", "model_id": "Vinblastine_Sethi1984_reference"}], "dir": "drug_vinblastine", "extracted": 4, "last_change": "2026-08-27T12:03:47.596376+00:00", "name": "vinblastine", "needs_review": 0, "records": 6, "rejected": 2, "rendered": true, "slug": "vinblastine", "stale": 0} -->

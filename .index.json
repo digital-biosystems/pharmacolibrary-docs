@@ -1223,7 +1223,7 @@
   ],
   "dir": "drug_amoxicillin",
   "extracted": 25,
-  "last_change": "2026-08-27T00:55:23.571807+00:00",
+  "last_change": "2026-09-10T14:28:01.603562+00:00",
   "name": "amoxicillin",
   "needs_review": 2,
   "records": 29,
@@ -2287,6 +2287,63 @@
   "slug": "betaxolol",
   "stale": 0
  },
+ "drug_bismuth_subcitrate": {
+  "atc_codes": [
+   "A02BX05"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Benet_1991 \u00b7 reference",
+    "model_id": "BismuthSubcitrate_Benet1991_reference"
+   },
+   {
+    "label": "Dresow_1991 \u00b7 reference",
+    "model_id": "BismuthSubcitrate_Dresow1991_reference"
+   },
+   {
+    "label": "Leussink_2000 \u00b7 reference",
+    "model_id": "BismuthSubcitrate_Leussink2000_reference"
+   }
+  ],
+  "dir": "drug_bismuth_subcitrate",
+  "extracted": 0,
+  "last_change": "2026-09-10T14:31:18.803857+00:00",
+  "name": "bismuth subcitrate",
+  "needs_review": 0,
+  "records": 3,
+  "rejected": 3,
+  "rendered": true,
+  "slug": "bismuth_subcitrate",
+  "stale": 0
+ },
+ "drug_bismuth_subnitrate": {
+  "atc_codes": [
+   "A02BX12"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_bismuth_subnitrate",
+  "extracted": 0,
+  "last_change": null,
+  "name": "bismuth subnitrate",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "bismuth_subnitrate",
+  "stale": 0
+ },
  "drug_bisoprolol": {
   "atc_codes": [
    "C07AB07",
@@ -3096,6 +3153,28 @@
   "slug": "carbamide",
   "stale": 0
  },
+ "drug_carbenoxolone": {
+  "atc_codes": [
+   "A02BX01"
+  ],
+  "counts": {
+   "pd": 6,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_carbenoxolone",
+  "extracted": 0,
+  "last_change": null,
+  "name": "carbenoxolone",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "carbenoxolone",
+  "stale": 0
+ },
  "drug_carbohydrates": {
   "atc_codes": [
    "B05BA03"
@@ -3570,6 +3649,28 @@
   "rejected": 2,
   "rendered": true,
   "slug": "cilostazol",
+  "stale": 0
+ },
+ "drug_cimetidine": {
+  "atc_codes": [
+   "A02BA01"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_cimetidine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "cimetidine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "cimetidine",
   "stale": 0
  },
  "drug_ciprofloxacin": {
@@ -4481,65 +4582,6 @@
   "rejected": 0,
   "rendered": true,
   "slug": "collagen",
-  "stale": 0
- },
- "drug_combinations": {
-  "atc_codes": [
-   "A01AA30",
-   "A02AA10",
-   "A02AB10",
-   "A02AC10",
-   "A06AG20",
-   "A07BC30",
-   "A10AB30",
-   "A10AC30",
-   "A10AD30",
-   "A10AE30",
-   "A11CC20",
-   "B01AC30",
-   "B02BC30",
-   "B05BA10",
-   "B05CA10",
-   "B05CB10",
-   "B05CX10",
-   "C01CA30",
-   "D01AE20",
-   "G03GA30",
-   "G04BE30",
-   "J01CA20",
-   "J01CE30",
-   "J01EB20",
-   "J01EC20",
-   "J01ED20",
-   "J06BB30",
-   "J07BC20",
-   "N01BB20",
-   "N06DX30",
-   "R01AX30",
-   "R05CA10",
-   "R05CB10",
-   "R05DA20",
-   "R05DB20",
-   "R07AA30",
-   "S01HA30",
-   "S02DA30"
-  ],
-  "counts": {
-   "pd": 21,
-   "pgx": 3,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_combinations",
-  "extracted": 0,
-  "last_change": null,
-  "name": "combinations",
-  "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "combinations",
   "stale": 0
  },
  "drug_concizumab": {
@@ -6809,6 +6851,28 @@
   "slug": "enoximone",
   "stale": 0
  },
+ "drug_enprostil": {
+  "atc_codes": [
+   "A02BB02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_enprostil",
+  "extracted": 0,
+  "last_change": null,
+  "name": "enprostil",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "enprostil",
+  "stale": 0
+ },
  "drug_ephedrine": {
   "atc_codes": [
    "C01CA26",
@@ -7179,22 +7243,30 @@
   "counts": {
    "pd": 0,
    "pgx": 0,
-   "pk": 0
+   "pk": 1
   },
   "curated": 0,
   "details": [
    {
+    "label": "Chung_2022 \u00b7 reference",
+    "model_id": "Esomeprazole_Chung2022_reference"
+   },
+   {
     "label": "Gebreyesus_2022 \u00b7 reference",
     "model_id": "Esomeprazole_Gebreyesus2022_reference"
+   },
+   {
+    "label": "Nagase_2020 \u00b7 reference",
+    "model_id": "Esomeprazole_Nagase2020_reference"
    }
   ],
   "dir": "drug_esomeprazole",
-  "extracted": 0,
-  "last_change": "2026-07-15T11:56:11.144781+00:00",
+  "extracted": 1,
+  "last_change": "2026-09-10T14:50:38.356033+00:00",
   "name": "esomeprazole",
   "needs_review": 0,
-  "records": 1,
-  "rejected": 1,
+  "records": 3,
+  "rejected": 2,
   "rendered": true,
   "slug": "esomeprazole",
   "stale": 0
@@ -7514,6 +7586,41 @@
   "slug": "factor_viii_inhibitor_bypassing_activity",
   "stale": 0
  },
+ "drug_famotidine": {
+  "atc_codes": [
+   "A02BA03"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 3
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Ikawa_2007 \u00b7 reference",
+    "model_id": "Famotidine_Ikawa2007_reference"
+   },
+   {
+    "label": "Maish_1998 \u00b7 reference",
+    "model_id": "Famotidine_Maish1998_reference"
+   },
+   {
+    "label": "McCann_2023 \u00b7 reference",
+    "model_id": "Famotidine_McCann2023_reference"
+   }
+  ],
+  "dir": "drug_famotidine",
+  "extracted": 3,
+  "last_change": "2026-09-10T14:58:36.311072+00:00",
+  "name": "famotidine",
+  "needs_review": 0,
+  "records": 3,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "famotidine",
+  "stale": 0
+ },
  "drug_felbamate": {
   "atc_codes": [
    "N03AX10"
@@ -7695,6 +7802,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "ferrous_sulfate",
+  "stale": 0
+ },
+ "drug_fexuprazan": {
+  "atc_codes": [
+   "A02BC10"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_fexuprazan",
+  "extracted": 0,
+  "last_change": null,
+  "name": "fexuprazan",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "fexuprazan",
   "stale": 0
  },
  "drug_fibrinogen_human": {
@@ -16871,56 +17000,6 @@
   "rejected": 1,
   "rendered": true,
   "slug": "valoctocogene_roxaparvovec",
-  "stale": 0
- },
- "drug_various": {
-  "atc_codes": [
-   "A01AB11",
-   "A01AD11",
-   "M02AX10",
-   "R01AX10",
-   "R02AA20",
-   "V01AA20"
-  ],
-  "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_various",
-  "extracted": 0,
-  "last_change": null,
-  "name": "various",
-  "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "various",
-  "stale": 0
- },
- "drug_various_combinations": {
-  "atc_codes": [
-   "B03AE10",
-   "D10AX30"
-  ],
-  "counts": {
-   "pd": 19,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "drug_various_combinations",
-  "extracted": 0,
-  "last_change": null,
-  "name": "various combinations",
-  "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "various_combinations",
   "stale": 0
  },
  "drug_vernakalant": {

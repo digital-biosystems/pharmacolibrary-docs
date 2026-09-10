@@ -19,7 +19,7 @@ Amoxicillin is used in combination with [vonoprazan] and [clarithromycin] as co-
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-27 01:26 | 35:07 | 25/2/2 | 2/2/0 | 0/0/0 | 1,082,385/87,178 | ollama / qwen3.8:27b-mtp-q8_0 | 54 | 36/16 | 23/31 | 0 |
+| 2026-09-10 14:28 | 14:43 | 25/2/2 | 2/2/0 | 0/0/0 | 143,299/33,107 | ollama / qwen3.8:27b-mtp-q8_0 | 54 | 36/16 | 23/31 | 0 |
 
 ## popPK records
 
@@ -71,7 +71,7 @@ Amoxicillin is used in combination with [vonoprazan] and [clarithromycin] as co-
 ## Coverage
 
 - **PubMed hits:** 930 matched, 69 returned
-- **screened:** 15  ·  **relevant:** 14
+- **screened:** 31  ·  **relevant:** 14
 - **records:** 29  ·  extracted 25  ·  needs_review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
