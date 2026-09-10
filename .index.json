@@ -3656,7 +3656,7 @@
    "A02BA01"
   ],
   "counts": {
-   "pd": 0,
+   "pd": 2,
    "pgx": 0,
    "pk": 0
   },
@@ -3870,6 +3870,45 @@
   "rejected": 0,
   "rendered": true,
   "slug": "citalopram",
+  "stale": 0
+ },
+ "drug_clarithromycin": {
+  "atc_codes": [
+   "A02BD04",
+   "A02BD05",
+   "A02BD06",
+   "A02BD07",
+   "A02BD09",
+   "A02BD11",
+   "A02BD12",
+   "A02BD14",
+   "J01FA09"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Shah_2025 \u00b7 mean_parameter_estimates",
+    "model_id": "Clarithromycin_Shah2025_mean_parameter_estimates"
+   },
+   {
+    "label": "Shah_2025 \u00b7 relative_standard_error",
+    "model_id": "Clarithromycin_Shah2025_relative_standard_error"
+   }
+  ],
+  "dir": "drug_clarithromycin",
+  "extracted": 0,
+  "last_change": "2026-09-10T19:16:22.858721+00:00",
+  "name": "clarithromycin",
+  "needs_review": 0,
+  "records": 2,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "clarithromycin",
   "stale": 0
  },
  "drug_clomipramine": {
@@ -5237,6 +5276,50 @@
   "rejected": 2,
   "rendered": true,
   "slug": "dexamethasone",
+  "stale": 0
+ },
+ "drug_dexlansoprazole": {
+  "atc_codes": [
+   "A02BC06"
+  ],
+  "counts": {
+   "pd": 3,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_dexlansoprazole",
+  "extracted": 0,
+  "last_change": null,
+  "name": "dexlansoprazole",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "dexlansoprazole",
+  "stale": 0
+ },
+ "drug_dexrabeprazole": {
+  "atc_codes": [
+   "A02BC07"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_dexrabeprazole",
+  "extracted": 0,
+  "last_change": null,
+  "name": "dexrabeprazole",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "dexrabeprazole",
   "stale": 0
  },
  "drug_dextran": {
@@ -9811,6 +9894,37 @@
   "slug": "icatibant",
   "stale": 0
  },
+ "drug_ilaprazole": {
+  "atc_codes": [
+   "A02BC11"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Yu_2023 \u00b7 bootstrapping",
+    "model_id": "Ilaprazole_Yu2023_bootstrapping"
+   },
+   {
+    "label": "Yu_2023 \u00b7 final_model",
+    "model_id": "Ilaprazole_Yu2023_final_model"
+   }
+  ],
+  "dir": "drug_ilaprazole",
+  "extracted": 0,
+  "last_change": "2026-09-10T15:28:01.054267+00:00",
+  "name": "ilaprazole",
+  "needs_review": 0,
+  "records": 2,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "ilaprazole",
+  "stale": 0
+ },
  "drug_iloprost": {
   "atc_codes": [
    "B01AC11"
@@ -9934,6 +10048,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "irinotecan",
+  "stale": 0
+ },
+ "drug_irsogladine": {
+  "atc_codes": [
+   "A02BX16"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_irsogladine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "irsogladine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "irsogladine",
   "stale": 0
  },
  "drug_isoflurane": {
@@ -10190,6 +10326,28 @@
   "slug": "lacosamide",
   "stale": 0
  },
+ "drug_lafutidine": {
+  "atc_codes": [
+   "A02BA08"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_lafutidine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "lafutidine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "lafutidine",
+  "stale": 0
+ },
  "drug_lamotrigine": {
   "atc_codes": [
    "N03AX09"
@@ -10290,17 +10448,21 @@
   "curated": 0,
   "details": [
    {
+    "label": "Katashima_1995 \u00b7 reference",
+    "model_id": "Lansoprazole_Katashima1995_reference"
+   },
+   {
     "label": "Sakurai_2007 \u00b7 reference",
     "model_id": "Lansoprazole_Sakurai2007_reference"
    }
   ],
   "dir": "drug_lansoprazole",
   "extracted": 0,
-  "last_change": "2026-07-15T12:52:01.504519+00:00",
+  "last_change": "2026-09-10T18:49:08.109452+00:00",
   "name": "lansoprazole",
   "needs_review": 0,
-  "records": 1,
-  "rejected": 1,
+  "records": 2,
+  "rejected": 2,
   "rendered": true,
   "slug": "lansoprazole",
   "stale": 0
@@ -10423,6 +10585,49 @@
   "rejected": 6,
   "rendered": true,
   "slug": "levetiracetam",
+  "stale": 0
+ },
+ "drug_levofloxacin": {
+  "atc_codes": [
+   "A02BD10",
+   "J01MA12",
+   "J01RA05",
+   "J04AM12",
+   "S01AE05"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Setiawan_2022 \u00b7 mean",
+    "model_id": "Levofloxacin_Setiawan2022_mean"
+   },
+   {
+    "label": "Setiawan_2022 \u00b7 median",
+    "model_id": "Levofloxacin_Setiawan2022_median"
+   },
+   {
+    "label": "Setiawan_2022 \u00b7 shrink",
+    "model_id": "Levofloxacin_Setiawan2022_shrink"
+   },
+   {
+    "label": "He_2024 \u00b7 reference",
+    "model_id": "Levofloxacin_He2024_reference"
+   }
+  ],
+  "dir": "drug_levofloxacin",
+  "extracted": 0,
+  "last_change": "2026-09-10T19:05:59.174254+00:00",
+  "name": "levofloxacin",
+  "needs_review": 0,
+  "records": 4,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "levofloxacin",
   "stale": 0
  },
  "drug_levomethadone": {
@@ -12293,6 +12498,35 @@
   "slug": "mirtazapine",
   "stale": 0
  },
+ "drug_misoprostol": {
+  "atc_codes": [
+   "A02BB01",
+   "G02AD06",
+   "M01AE56"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Vorontsova_2022 \u00b7 reference",
+    "model_id": "Misoprostol_Vorontsova2022_reference"
+   }
+  ],
+  "dir": "drug_misoprostol",
+  "extracted": 1,
+  "last_change": "2026-09-10T19:25:21.340222+00:00",
+  "name": "misoprostol",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "misoprostol",
+  "stale": 0
+ },
  "drug_mitapivat": {
   "atc_codes": [
    "B06AX04"
@@ -12955,6 +13189,33 @@
   "rejected": 0,
   "rendered": true,
   "slug": "nitrofural",
+  "stale": 0
+ },
+ "drug_nizatidine": {
+  "atc_codes": [
+   "A02BA04"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Abdel-Rahman_2004 \u00b7 reference",
+    "model_id": "Nizatidine_AbdelRahman2004_reference"
+   }
+  ],
+  "dir": "drug_nizatidine",
+  "extracted": 0,
+  "last_change": "2026-09-10T19:38:56.932813+00:00",
+  "name": "nizatidine",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "nizatidine",
   "stale": 0
  },
  "drug_norepinephrine": {
@@ -13642,6 +13903,53 @@
   "rejected": 3,
   "rendered": true,
   "slug": "palivizumab",
+  "stale": 0
+ },
+ "drug_pantoprazole": {
+  "atc_codes": [
+   "A02BC02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Pettersen_2009 \u00b7 reference",
+    "model_id": "Pantoprazole_Pettersen2009_reference"
+   },
+   {
+    "label": "Grafeneder_2024 \u00b7 hdp",
+    "model_id": "Pantoprazole_Grafeneder2024_hdp"
+   },
+   {
+    "label": "Grafeneder_2024 \u00b7 hdp_n_17",
+    "model_id": "Pantoprazole_Grafeneder2024_hdp_n_17"
+   },
+   {
+    "label": "Grafeneder_2024 \u00b7 hv",
+    "model_id": "Pantoprazole_Grafeneder2024_hv"
+   },
+   {
+    "label": "Grafeneder_2024 \u00b7 hv_n_16",
+    "model_id": "Pantoprazole_Grafeneder2024_hv_n_16"
+   },
+   {
+    "label": "Knebel_2011 \u00b7 reference",
+    "model_id": "Pantoprazole_Knebel2011_reference"
+   }
+  ],
+  "dir": "drug_pantoprazole",
+  "extracted": 1,
+  "last_change": "2026-09-10T20:03:41.777811+00:00",
+  "name": "pantoprazole",
+  "needs_review": 0,
+  "records": 6,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "pantoprazole",
   "stale": 0
  },
  "drug_paracetamol": {

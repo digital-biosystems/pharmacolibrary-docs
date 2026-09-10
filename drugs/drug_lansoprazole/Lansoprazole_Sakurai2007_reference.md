@@ -41,6 +41,7 @@ Sakurai Y; Hirayama M; Hashimoto M; Tanaka T; Hasegawa S; Irie S; et al. et al. 
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lansoprazole
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell tab_0:row8:col1 = '0.0882 0.0838-0.0926'
@@ -56,6 +57,7 @@ Sakurai Y; Hirayama M; Hashimoto M; Tanaka T; Hasegawa S; Irie S; et al. et al. 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q30 | fail | [length] ** 3 | l/kg | not captured | not captured | ['tab_0:row3:col1', 'tab_0:row3:col2', 'tab_0:row3:col3', 'tab_0:row3:col4'] |
 | C5_dimension_Q69 | fail | [length] ** 3 | l/kg | not captured | not captured | ['tab_0:row7:col1', 'tab_0:row7:col2'] |
 | C5_dimension_Q75 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_0:row11:col1', 'tab_0:row11:col2', 'tab_0:row11:col3', 'tab_0:row11:col4'] |

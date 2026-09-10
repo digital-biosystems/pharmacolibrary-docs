@@ -35,6 +35,9 @@ Calderin JM; Resendiz-Galvan JE; Abdelgawad N; Davis A; Stek C; Wiesner L; et al
 
 ## Departures & gaps
 
+**Deviations:**
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - salvaged Q76 ('V/F'=26.6) from results prose — parameter table was unreadable
 - salvaged Q27 ('CL/F'=131) from results prose — parameter table was unreadable
@@ -78,15 +81,15 @@ Calderin JM; Resendiz-Galvan JE; Abdelgawad N; Davis A; Stek C; Wiesner L; et al
 
 ## Downloadable models
 
-No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
+Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference/Dexamethasone_Calderin2025v2_reference_modelica.zip" download>Dexamethasone_Calderin2025v2_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference/Dexamethasone_Calderin2025v2_reference_fmi.zip" download>Dexamethasone_Calderin2025v2_reference_fmi.zip</a> <span class="pk-size">(1.2 MB)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference/Dexamethasone_Calderin2025v2_reference_matlab.zip" download>Dexamethasone_Calderin2025v2_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference/Dexamethasone_Calderin2025v2_reference_matlab_simbio.zip" download>Dexamethasone_Calderin2025v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference/Dexamethasone_Calderin2025v2_reference_sbml.zip" download>Dexamethasone_Calderin2025v2_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference/Dexamethasone_Calderin2025v2_reference_cellml.zip" download>Dexamethasone_Calderin2025v2_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
