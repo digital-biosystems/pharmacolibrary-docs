@@ -1,0 +1,58 @@
+# sodium monofluorophosphate
+
+- **generic name:** sodium monofluorophosphate
+- **ATC codes:** `A01AA02`, `A12CD02`
+- **DrugBank:** [DB09484](https://go.drugbank.com/drugs/DB09484)
+- **groups:** approved, investigational
+
+## About
+
+**Description.** Sodium monofluorophosphate is used in OTC dental preparations to help protect against cavities.
+
+**Indication.** Sodium monofluorophosphate is indicated for the treatment of cavities
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-10 11:13 | 1:29 | 0/1/0 | 0/0/0 | 0/0/0 | 12,718/689 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+
+## popPK records
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Setnikar_1990](drugs/drug_sodium_monofluorophosphate/SodiumMonofluorophosphate_Setnikar1990_reference.md) | Setnikar I et al., Relative bioavailability of fluoride fr…, Arzneimittel-Forschung (1990) | — |
+
+## Coverage
+
+- **PubMed hits:** 9 matched, 9 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Setnikar_1990.pdf` | Setnikar I et al., Relative bioavailability of fluoride fr…, Arzneimittel-Forschung (1990) | popPK | 9 | not captured | [2346544](https://pubmed.ncbi.nlm.nih.gov/2346544) | The study reports quantitative pharmacokinetic parameters (Cmax, tmax, half-lives, AUC ratio) for sodium monofluorophosphate in humans, with values explicitly listed in the text. |
+| `Vattikonda_1994.pdf` | Vattikonda CS et al., A biopharmaceutic approach in designing…, Biopharmaceutics & drug dis… (1994) | popPK | 8 | [10.1002/bdd.2510150806](https://doi.org/10.1002/bdd.2510150806) | [7888599](https://pubmed.ncbi.nlm.nih.gov/7888599) | The study reports PK parameters for sodium monofluorophosphate (specifically fluoride) in dogs, including a two-compartment model and bioavailability, but specific numeric values for clearance, volume, or half-life are not present in the provided text. |
+
+<sub>queue written 2026-09-10T11:12:51.607665+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | He_2024 | irrelevant | 0 | 0 | The paper is a clinical efficacy study on gingivitis outcomes where sodium monofluorophosphate is used only as a negative control, and it contains no pharmacokinetic data. |
+| PD | Kamotsay_2002 | not_relevant | 3 | 2 | The study reports qualitative changes in microbial growth kinetics (flattened exponential phase, longer lag phase) at high concentrations but does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative dose-response curve for sodium monofluorophosphate, which was found to have no significant effect. |
+| PD | Murray_1996 | not_relevant | 1 | 0 | The text is a consensus statement/review summarizing clinical outcomes and toxicity profiles without providing specific numeric pharmacodynamic parameters or exposure-response curves. |
+| PD | Sebert_1995 | not_relevant | 2 | 1 | The paper reports a clinical efficacy study comparing two fixed doses (treatment vs placebo) but does not provide concentration-effect data, PK/PD modeling, or numeric PD parameters like Emax or EC50. |
+| PD | Stösser_1995 | not_relevant | 2 | 1 | The study reports qualitative dose-response trends (caries scores at different fluoride concentrations) but does not provide numeric PD parameters (e.g., Emax, EC50) or a fitted concentration-effect curve. |
+| popPK | Vattikonda_1994 | relevant | 8 | 2 | The study reports PK parameters for sodium monofluorophosphate (specifically fluoride) in dogs, including a two-compartment model and bioavailability, but specific numeric values for clearance, volume, or half-life are not present in the provided text. |
+| PD | Vattikonda_1994 | not_relevant | 0 | 0 | The paper focuses on PK and formulation design (bioavailability, release profiles) and does not report any pharmacodynamic or exposure-response relationship for sodium monofluorophosphate. |
+| PD | Vattikonda_1994_2 | not_relevant | 0 | 0 | The paper focuses on PK (bioavailability, absorption sites) and formulation design, reporting no concentration-effect or dose-response data or PD parameters. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_sodium_monofluorophosphate`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

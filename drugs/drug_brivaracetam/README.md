@@ -41,7 +41,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Jukier_2024.pdf` | Jukier T et al., Single intravenous and oral dose pharma…, Journal of veterinary pharm… (2024) | popPK | 8 | [10.1111/jvp.13473](https://doi.org/10.1111/jvp.13473) | [39018069](https://pubmed.ncbi.nlm.nih.gov/39018069) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, Tmax, AUC, t1/2, F) for brivaracetam in cats, which are explicitly listed in the text. |
 | `Schoemaker_2017.pdf` | Schoemaker R et al., Evaluation of brivaracetam efficacy as…, Epilepsy research (2017) | popPK | 8 | [10.1016/j.eplepsyres.2017.09.014](https://doi.org/10.1016/j.eplepsyres.2017.09.014) | [28982069](https://pubmed.ncbi.nlm.nih.gov/28982069) | The paper describes a population PK model for brivaracetam, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
 
-<sub>queue written 2026-08-30T17:53:10.057082+00:00</sub>
+<sub>queue written 2026-09-09T22:50:01.679244+00:00</sub>
 
 ## Screened and excluded
 

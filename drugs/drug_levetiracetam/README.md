@@ -17,7 +17,7 @@ Levetiracetam is also available as an orally dissolvable tablet that is indicate
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-30 11:28 | 23:12 | 2/6/0 | 1/1/0 | 0/0/0 | 302,936/26,971 | ollama / qwen3.8:27b-mtp-q8_0 | 23 | 9/14 | 20/3 | 1 |
+| 2026-09-10 00:50 | 15:07 | 2/6/0 | 1/1/0 | 0/0/0 | 96,169/40,210 | ollama / qwen3.8:27b-mtp-q8_0 | 23 | 9/14 | 20/3 | 1 |
 
 ## popPK records
 
@@ -25,6 +25,9 @@ Levetiracetam is also available as an orally dissolvable tablet that is indicate
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Onos_2022](drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference.md) | Onos KD et al., Pharmacokinetic, pharmacodynamic, and t…, Alzheimer's & dementia (New… (2022) | [10.1002/trc2.12329](https://doi.org/10.1002/trc2.12329) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Schoemaker_2018](drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md) | Schoemaker (2018) | — |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Majid_2016](drugs/drug_levetiracetam/Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1.md) | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Majid_2016](drugs/drug_levetiracetam/Levetiracetam_Majid2016_number_of_subjects.md) | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Majid_2016](drugs/drug_levetiracetam/Levetiracetam_Majid2016_variability.md) | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Karatza_2020](drugs/drug_levetiracetam/Levetiracetam_Karatza2020_reference.md) | Karatza E et al., Pharmacokinetic and pharmacodynamic mod…, Xenobiotica; the fate of fo… (2020) | [10.1080/00498254.2020.1746981](https://doi.org/10.1080/00498254.2020.1746981) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Li_2023](drugs/drug_levetiracetam/Levetiracetam_Li2023_base.md) | Li Y et al., Population pharmacokinetics and dosing…, British journal of clinical… (2023) | [10.1111/bcp.15572](https://doi.org/10.1111/bcp.15572) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Li_2023](drugs/drug_levetiracetam/Levetiracetam_Li2023_final.md) | Li Y et al., Population pharmacokinetics and dosing…, British journal of clinical… (2023) | [10.1111/bcp.15572](https://doi.org/10.1111/bcp.15572) |
@@ -42,13 +45,13 @@ Levetiracetam is also available as an orally dissolvable tablet that is indicate
 ## Coverage
 
 - **PubMed hits:** 211 matched, 62 returned
-- **screened:** 7  ·  **relevant:** 7
-- **records:** 8  ·  extracted 2  ·  needs_review 0  ·  rejected 6  ·  stale 0
+- **screened:** 22  ·  **relevant:** 7
+- **records:** 11  ·  extracted 2  ·  needs_review 0  ·  rejected 6  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_11 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_10 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
@@ -59,12 +62,11 @@ _11 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Zimmerman_2023.pdf` | Zimmerman KO et al., Pharmacokinetics and Proposed Dosing of…, The journal of pediatric ph… (2023) | popPK | 10 | [10.5863/1551-6776-28.8.693](https://doi.org/10.5863/1551-6776-28.8.693) | [38094673](https://pubmed.ncbi.nlm.nih.gov/38094673) | The paper reports a population PK model for levetiracetam with specific quantitative clearance values (median and range) provided in the text. |
 | `Falcão_2012.pdf` | Falcão A et al., Pharmacokinetics, drug interactions and…, CNS drugs (2012) | pd | 5 | [10.2165/11596290-000000000-00000](https://doi.org/10.2165/11596290-000000000-00000) | [22171585](https://www.ncbi.nlm.nih.gov/pubmed/22171585) | metadata signals extractable PD data (exposure-response) |
 | `Schoemaker_2016.pdf` | Schoemaker R et al., Brivaracetam Population Pharmacokinetic…, Journal of clinical pharmac… (2016) | pd | 5 | [10.1002/jcph.761](https://doi.org/10.1002/jcph.761) | [27146213](https://www.ncbi.nlm.nih.gov/pubmed/27146213) | metadata signals extractable PD data (Exposure-Response) |
-| `Chanteux_2024.pdf` | Chanteux H et al., Overview of preclinical and clinical st…, Expert opinion on drug meta… (2024) | pgx | 8 | [10.1080/17425255.2024.2373108](https://doi.org/10.1080/17425255.2024.2373108) | [38932723](https://www.ncbi.nlm.nih.gov/pubmed/38932723) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Kakuda_2011.pdf` | Kakuda TN et al., Pharmacokinetic interactions between et…, Clinical pharmacokinetics (2011) | pgx | 7 | [10.2165/11534740-000000000-00000](https://doi.org/10.2165/11534740-000000000-00000) | [21142266](https://www.ncbi.nlm.nih.gov/pubmed/21142266) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Stöllberger_2016.pdf` | Stöllberger C et al., Interactions between non-vitamin K oral…, Epilepsy research (2016) | pgx | 7 | [10.1016/j.eplepsyres.2016.06.003](https://doi.org/10.1016/j.eplepsyres.2016.06.003) | [27450623](https://www.ncbi.nlm.nih.gov/pubmed/27450623) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Turnheim_2004.pdf` | Turnheim K, [Drug interactions with antiepileptic a…, Wiener klinische Wochenschr… (2004) | pgx | 7 | [10.1007/BF03040747](https://doi.org/10.1007/BF03040747) | [15038401](https://www.ncbi.nlm.nih.gov/pubmed/15038401) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 
-<sub>queue written 2026-08-30T11:16:09.277915+00:00</sub>
+<sub>queue written 2026-09-10T00:34:52.428925+00:00</sub>
 
 ## Screened and excluded
 

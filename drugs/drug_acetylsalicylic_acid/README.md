@@ -43,7 +43,7 @@ In the setting of acute myocardial infarction, or before percutaneous interventi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 1/1/0 | 1/1/0 | 0/0/17 | not captured | not captured | 42 | 31/0 | 24/18 | 0 |
+| 2026-09-10 04:20 | 30:27 | 1/1/0 | 1/1/0 | 0/0/17 | 207,365/80,644 | ollama / qwen3.8:27b-mtp-q8_0 | 42 | 27/14 | 24/18 | 0 |
 
 ## popPK records
 
@@ -89,7 +89,7 @@ In the setting of acute myocardial infarction, or before percutaneous interventi
 ## Coverage
 
 - **PubMed hits:** 602 matched, 99 returned
-- **screened:** 4  ·  **relevant:** 4
+- **screened:** 36  ·  **relevant:** 4
 - **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

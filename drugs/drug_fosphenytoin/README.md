@@ -15,19 +15,20 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 1/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 17 | 1/0 | 4/0 | 0 |
+| 2026-09-10 00:08 | 9:50 | 1/1/0 | 0/0/0 | 0/0/0 | 66,248/22,040 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 15/1 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Tanaka_2013](drugs/drug_fosphenytoin/Fosphenytoin_Tanaka2013_reference.md) | Tanaka J et al., Population pharmacokinetics of phenytoi…, European journal of clinica… (2013) | [10.1007/s00228-012-1373-8](https://doi.org/10.1007/s00228-012-1373-8) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wainwright_2018](drugs/drug_fosphenytoin/Fosphenytoin_Wainwright2018_reference.md) | Wainwright (2018) | — |
 
 ## Coverage
 
 - **PubMed hits:** 30 matched, 19 returned
-- **screened:** 1  ·  **relevant:** 6
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 16  ·  **relevant:** 6
+- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

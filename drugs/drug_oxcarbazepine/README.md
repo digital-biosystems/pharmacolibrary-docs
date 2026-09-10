@@ -17,19 +17,23 @@ In Canada, oxcarbazepine is indicated for use as monotherapy or adjunctive thera
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 1/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 12 | 3/0 | 4/0 | 0 |
+| 2026-09-10 01:30 | 6:00 | 1/1/0 | 0/0/0 | 0/0/0 | 52,519/13,528 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 11/1 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Wu_2024](drugs/drug_oxcarbazepine/Oxcarbazepine_Wu2024_reference.md) | Wu W et al., Population pharmacokinetics of oxcarbaz…, Basic & clinical pharmacolo… (2024) | [10.1111/bcpt.14000](https://doi.org/10.1111/bcpt.14000) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Faison_2020](drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_n.md) | Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Faison_2020](drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_pop.md) | Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Faison_2020](drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_population.md) | Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Chen_2021](drugs/drug_oxcarbazepine/Oxcarbazepine_Chen2021_reference.md) | Chen YT et al., Population pharmacokinetics of oxcarbaz…, Expert review of clinical p… (2021) | [10.1080/17512433.2021.1917377](https://doi.org/10.1080/17512433.2021.1917377) |
 
 ## Coverage
 
 - **PubMed hits:** 58 matched, 16 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 10  ·  **relevant:** 1
+- **records:** 5  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

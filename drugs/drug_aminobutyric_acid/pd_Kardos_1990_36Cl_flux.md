@@ -1,4 +1,4 @@
-# 36Cl-flux — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# 36Cl-flux — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Kardos_1990`
 - **model family:** `sigmoid_emax`

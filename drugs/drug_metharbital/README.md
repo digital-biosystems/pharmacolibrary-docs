@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-30 18:39 | 5:05 | 0/0/0 | 0/0/0 | 0/0/0 | 19,081/2,099 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
+| 2026-09-10 01:22 | 0:33 | 0/0/0 | 0/0/0 | 0/0/0 | 1,202/308 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
@@ -36,7 +36,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Farag_1987.pdf` | Farag MM et al., Acute hepatic damage in rats impairs me…, Pharmacology (1987) | popPK | 8 | [10.1159/000138268](https://doi.org/10.1159/000138268) | [2885858](https://pubmed.ncbi.nlm.nih.gov/2885858) | The study reports qualitative changes in metharbital clearance and kinetics in rats, but specific numeric parameter values are not present in the provided evidence. |
 
-<sub>queue written 2026-08-30T18:39:40.384820+00:00</sub>
+<sub>queue written 2026-09-10T01:22:35.862769+00:00</sub>
 
 ## Screened and excluded
 

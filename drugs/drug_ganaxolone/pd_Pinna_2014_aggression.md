@@ -1,4 +1,4 @@
-# aggression — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# aggression — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Pinna_2014`
 - **model family:** `emax`

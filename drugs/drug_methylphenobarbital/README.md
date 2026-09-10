@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-30 19:17 | 37:38 | 0/0/0 | 0/1/0 | 0/0/0 | 41,585/2,773 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 3/1 | 3/1 | 0 |
+| 2026-09-10 01:24 | 1:41 | 0/0/0 | 0/1/0 | 0/0/0 | 1,658/392 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 3/1 | 3/1 | 0 |
 
 ## popPK records
 
@@ -49,7 +49,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Kobayashi_2001.pdf` | Kobayashi K et al., Role of CYP2C19 in stereoselective hydr…, Drug metabolism and disposi… (2001) | pgx | 5 | not captured | [11124227](https://www.ncbi.nlm.nih.gov/pubmed/11124227) | metadata signals extractable PGX data (CYP2C19) |
 | `Morita_2004.pdf` | Morita J et al., A novel single nucleotide polymorphism…, Drug metabolism and pharmac… (2004) | pgx | 5 | [10.2133/dmpk.19.236](https://doi.org/10.2133/dmpk.19.236) | [15499191](https://www.ncbi.nlm.nih.gov/pubmed/15499191) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-08-30T19:16:13.599311+00:00</sub>
+<sub>queue written 2026-09-10T01:24:02.792394+00:00</sub>
 
 ## Screened and excluded
 

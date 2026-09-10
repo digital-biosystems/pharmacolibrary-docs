@@ -1,19 +1,17 @@
-# neomycin — `Neomycin_Samuel1968_reference`
+# chlortetracycline — `Chlortetracycline_Reinbold2010_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
 > ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
 
-> **Dose compound ≠ measured compound:** dosed `cholesterol-7a-3H`, measured `serum cholesterol`.
-
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
-Samuel P; Holtzman CH; Meilman E; Perl W et al. (1968). The Journal of clinical investigation 47
-  ·  DOI: [10.1172/JCI105870](https://doi.org/10.1172/JCI105870)
+Reinbold JB; Coetzee JF; Gehring R; Havel JA; Hollis LC; Olson KC; et al. et al. (2010). Journal of veterinary pharmacology and therapeutics 33
+  ·  DOI: [10.1111/j.1365-2885.2009.1116.x](https://doi.org/10.1111/j.1365-2885.2009.1116.x)
 
 ## Model component
-<dbs-pgx drug="neomycin" model-id="Neomycin_Samuel1968_reference" status="rejected" stale="false" population="adult patients with various clinical diagnoses" measured-compound="serum cholesterol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="chlortetracycline" model-id="Chlortetracycline_Reinbold2010_reference" status="rejected" stale="false" population="group fed, ruminating, Holstein steers" measured-compound="chlortetracycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -25,27 +23,12 @@ _No resolved parameters._
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'S. S., 62, M' — extend the ontology if this is a real PK parameter (source ['Samuel_1968_table_1:row0:col3', 'Samuel_1968_table_1:row0:col6', 'Samuel_1968_table_1:row0:col9'])
-- dropped unlinked row (NIL): 'S. S., 62, M' — extend the ontology if this is a real PK parameter (source ['Samuel_1968_table_1:row0:col4', 'Samuel_1968_table_1:row0:col7'])
-- dropped unlinked row (NIL): 'H. F., 47, M' — extend the ontology if this is a real PK parameter (source ['Samuel_1968_table_1:row1:col3', 'Samuel_1968_table_1:row1:col5', 'Samuel_1968_table_1:row1:col6', 'Samuel_1968_table_1:row1:col9'])
-- dropped unlinked row (NIL): 'H. F., 47, M' — extend the ontology if this is a real PK parameter (source ['Samuel_1968_table_1:row1:col4', 'Samuel_1968_table_1:row1:col7', 'Samuel_1968_table_1:row1:col8'])
-- dropped unlinked row (NIL): 'M. R., 53, F' — extend the ontology if this is a real PK parameter (source ['Samuel_1968_table_1:row2:col3', 'Samuel_1968_table_1:row2:col5', 'Samuel_1968_table_1:row2:col6', 'Samuel_1968_table_1:row2:col9'])
-- dropped unlinked row (NIL): 'M. R., 53, F' — extend the ontology if this is a real PK parameter (source ['Samuel_1968_table_1:row2:col4', 'Samuel_1968_table_1:row2:col7', 'Samuel_1968_table_1:row2:col8'])
-- dropped unlinked row (NIL): 'A. F., 45, F' — extend the ontology if this is a real PK parameter (source ['Samuel_1968_table_1:row3:col3', 'Samuel_1968_table_1:row3:col5', 'Samuel_1968_table_1:row3:col6', 'Samuel_1968_table_1:row3:col9'])
-- dropped unlinked row (NIL): 'A. F., 45, F' — extend the ontology if this is a real PK parameter (source ['Samuel_1968_table_1:row3:col4', 'Samuel_1968_table_1:row3:col7', 'Samuel_1968_table_1:row3:col8'])
-- dropped unlinked row (NIL): 'E. A., 60, F' — extend the ontology if this is a real PK parameter (source ['Samuel_1968_table_1:row4:col3', 'Samuel_1968_table_1:row4:col5', 'Samuel_1968_table_1:row4:col6'])
-- dropped unlinked row (NIL): 'E. A., 60, F' — extend the ontology if this is a real PK parameter (source ['Samuel_1968_table_1:row4:col4', 'Samuel_1968_table_1:row4:col7', 'Samuel_1968_table_1:row4:col8'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=serum cholesterol
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=chlortetracycline
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- unparsed cell Samuel_1968_table_1:row0:col5 = '236 ± 17*'
-- unparsed cell Samuel_1968_table_1:row0:col8 = '168 ± 9*'
-- unparsed cell Samuel_1968_table_1:row0:col10 = '&lt;0.001'
-- unparsed cell Samuel_1968_table_1:row1:col10 = '&lt;0.001'
-- unparsed cell Samuel_1968_table_1:row2:col10 = '&lt;0.001'
-- unparsed cell Samuel_1968_table_1:row3:col10 = '&lt;0.001'
-- unparsed cell Samuel_1968_table_1:row4:col10 = '&gt;0.5'
+- no GROBID TEI available, and no PDF or abstract text to fall back on
 
 ## Validation
 
@@ -54,6 +37,7 @@ _No resolved parameters._
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -63,7 +47,7 @@ _No resolved parameters._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_neomycin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Samuel_1968` / `Samuel_1968::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_chlortetracycline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Reinbold_2010` / `Reinbold_2010::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

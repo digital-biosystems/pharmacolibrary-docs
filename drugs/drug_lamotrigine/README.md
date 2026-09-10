@@ -25,7 +25,7 @@ It is important to note that lamotirigine should not be used in the treatment of
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 2/1/0 | 0/0/0 | 0/0/0 | not captured | not captured | 16 | 3/0 | 8/0 | 0 |
+| 2026-09-10 00:34 | 15:29 | 2/1/0 | 0/0/0 | 0/0/0 | 91,050/41,146 | ollama / qwen3.8:27b-mtp-q8_0 | 16 | 13/3 | 8/0 | 0 |
 
 ## popPK records
 
@@ -38,7 +38,7 @@ It is important to note that lamotirigine should not be used in the treatment of
 ## Coverage
 
 - **PubMed hits:** 100 matched, 20 returned
-- **screened:** 3  ·  **relevant:** 3
+- **screened:** 16  ·  **relevant:** 3
 - **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

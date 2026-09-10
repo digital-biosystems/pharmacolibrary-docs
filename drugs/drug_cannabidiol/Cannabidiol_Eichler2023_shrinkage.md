@@ -1,6 +1,6 @@
 # cannabidiol — `Cannabidiol_Eichler2023_shrinkage`
 
-> ## <span class="pk-badge pk-badge--neutral">None</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span>
 
 > ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
 
@@ -11,17 +11,15 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
   ·  DOI: [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551)
 
 ## Model component
-<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_shrinkage" status="" stale="false" population="horses" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_shrinkage" status="extracted" stale="false" population="horses" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not captured`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Q2 | `Q30` · Q | —(suppressed) | L/h/kg | — | L/h | not captured | special_case (0.95) | Eichler_2023:discussion_prose | — | not captured |
-| clearance | `Q22` · CL | —(suppressed) | L/h/kg | — | L/h | not captured | exact (1.0) | Eichler_2023:discussion_prose | — | not captured |
+| Q2 | `Q30` · Q | 1.35 | L/h/kg | 2.625e-05 | L/h | not captured | special_case (0.95) | Eichler_2023:discussion_prose | — | not captured |
+| clearance | `Q22` · CL | 10.75 | L/h/kg | 0.00020902777777777781 | L/h | not captured | exact (1.0) | Eichler_2023:discussion_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -42,6 +40,7 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - population split: 'shrinkage (%)' subgroup of Eichler_2023 (paper reports 6 populations: first trial (0.2 mg/kg, n = 3), omega, population value, second trial (1 mg/kg, n = 3), shrinkage (%), third trial (3 mg/kg, n = 5))
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - companion parameter table 5 transcribed (18 record(s))
@@ -49,7 +48,20 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
 
 ## Validation
 
-_No comparable checks._
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.75 | not captured | not captured | ['Eichler_2023:discussion_prose'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 753 L/h | not captured | not captured | ['Eichler_2023:discussion_prose'] |
+
+<details class="legend">
+<summary>Check legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+</details>
 
 ## Raw artifacts
 

@@ -1,6 +1,6 @@
 # cannabidiol — `Cannabidiol_Eichler2023_population_value`
 
-> ## <span class="pk-badge pk-badge--neutral">None</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span>
 
 > ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
 
@@ -11,21 +11,19 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
   ·  DOI: [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551)
 
 ## Model component
-<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_population_value" status="" stale="false" population="horses" measured-compound="cannabidiol" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_population_value" status="extracted" stale="false" population="horses" measured-compound="cannabidiol" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Parameterization:** CL/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not captured`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cl/F (L/h/kg) | `Q27` · CL/F | —(suppressed) | L/h/kg | — | [l] / [[h] · [kg]] | not captured | exact (1.0) | tab4:row3:col1 | — | not captured |
-| V1/F (L/kg) | `Q290` · V1/F | —(suppressed) | L/kg | — | [l] / [kg] | not captured | exact (1.0) | tab4:row4:col1 | — | not captured |
-| Q2 (L/h/kg) | `Q30` · Q | —(suppressed) | L/h/kg | — | [l] / [[h] · [kg]] | not captured | special_case (0.95) | tab4:row5:col1 | — | not captured |
-| V2/F (L/kg) | `Q82` · V2/F | —(suppressed) | L/kg | — | [l] / [kg] | not captured | exact (1.0) | tab4:row6:col1 | — | not captured |
-| Q3 (L/h/kg) | `Q308` · Q3 | —(suppressed) | L/h/kg | — | [l] / [[h] · [kg]] | not captured | exact (1.0) | tab4:row7:col1 | — | not captured |
-| V3/F (L/kg) | `Q78` · V3/F | —(suppressed) | L/kg | — | [l] / [kg] | not captured | exact (1.0) | tab4:row8:col1 | — | not captured |
+| Cl/F (L/h/kg) | `Q27` · CL/F | 10.75 | L/h/kg | 0.00020902777777777781 | [l] / [[h] · [kg]] | not captured | exact (1.0) | tab4:row3:col1 | — | not captured |
+| V1/F (L/kg) | `Q290` · V1/F | 77.13 | L/kg | 5.399099999999999 | [l] / [kg] | not captured | exact (1.0) | tab4:row4:col1 | — | not captured |
+| Q2 (L/h/kg) | `Q30` · Q | 1.35 | L/h/kg | 2.625e-05 | [l] / [[h] · [kg]] | not captured | special_case (0.95) | tab4:row5:col1 | — | not captured |
+| V2/F (L/kg) | `Q82` · V2/F | 313.17 | L/kg | 21.9219 | [l] / [kg] | not captured | exact (1.0) | tab4:row6:col1 | — | not captured |
+| Q3 (L/h/kg) | `Q308` · Q3 | 38.23 | L/h/kg | 0.0007433611111111111 | [l] / [[h] · [kg]] | not captured | exact (1.0) | tab4:row7:col1 | — | not captured |
+| V3/F (L/kg) | `Q78` · V3/F | 241.98 | L/kg | 16.9386 | [l] / [kg] | not captured | exact (1.0) | tab4:row8:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -48,7 +46,29 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
 
 ## Validation
 
-_No comparable checks._
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C1_half_life_beta | pass | 161.29 | 181.556 | 1.1256 | 0.25 | reported t½β |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab4:row3:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab4:row4:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab4:row5:col1'] |
+| C5_dimension_Q308 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab4:row7:col1'] |
+| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab4:row8:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab4:row6:col1'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 753 L/h | not captured | not captured | ['tab4:row3:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 5.4e+03 L | not captured | not captured | ['tab4:row4:col1'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 2.19e+04 L | not captured | not captured | ['tab4:row6:col1'] |
+
+<details class="legend">
+<summary>Check legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+</details>
 
 ## Raw artifacts
 

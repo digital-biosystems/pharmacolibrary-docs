@@ -1,4 +1,4 @@
-# GABA A receptor activity — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# GABA A receptor activity — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Norman_2026`
 - **model family:** `emax`

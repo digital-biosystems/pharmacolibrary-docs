@@ -1,4 +1,4 @@
-# anxiety-like behavior — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# anxiety-like behavior — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Pinna_2014`
 - **model family:** `emax`

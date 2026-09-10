@@ -19,7 +19,7 @@ The extended-release capsules of lacosamide are indicated for the treatment of p
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-30 11:05 | 22:41 | 3/6/0 | 0/2/0 | 0/0/4 | 475,926/23,679 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 2/15 | 17/0 | 0 |
+| 2026-09-10 00:19 | 10:44 | 3/6/0 | 0/2/0 | 0/0/4 | 55,669/29,864 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 2/15 | 17/0 | 0 |
 
 ## popPK records
 
@@ -59,7 +59,7 @@ The extended-release capsules of lacosamide are indicated for the treatment of p
 ## Coverage
 
 - **PubMed hits:** 81 matched, 58 returned
-- **screened:** 5  ·  **relevant:** 5
+- **screened:** 16  ·  **relevant:** 5
 - **records:** 9  ·  extracted 3  ·  needs_review 0  ·  rejected 6  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

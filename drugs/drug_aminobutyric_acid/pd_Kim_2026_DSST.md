@@ -1,4 +1,4 @@
-# Digit symbol substitution test — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# Digit symbol substitution test — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Kim_2026`
 - **model family:** `sigmoid_emax`

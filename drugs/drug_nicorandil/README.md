@@ -15,19 +15,21 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 1/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 18 | 1/0 | 5/0 | 0 |
+| 2026-09-09 23:49 | 27:27 | 1/0/0 | 0/0/0 | 0/0/0 | 181,257/75,494 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 16/0 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Iida_2008_2](drugs/drug_nicorandil/Nicorandil_Iida2008v2_reference.md) | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Iida_2008](drugs/drug_nicorandil/Nicorandil_Iida2008_obj.md) | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Iida_2008](drugs/drug_nicorandil/Nicorandil_Iida2008_sig.md) | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
 
 ## Coverage
 
 - **PubMed hits:** 34 matched, 12 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 16  ·  **relevant:** 1
+- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

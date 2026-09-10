@@ -1,4 +1,4 @@
-# fear extinction — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# fear extinction — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Pinna_2014`
 - **model family:** `emax`

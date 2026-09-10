@@ -17,7 +17,7 @@ Ganaxolone, similar to its endogenous counterparts, is a positive allosteric mod
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-30 10:43 | 4:07 | 0/1/0 | 0/1/0 | 0/0/0 | 48,714/2,514 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 3/0 | 0 |
+| 2026-08-30 10:43 | 4:07 | 0/1/0 | 1/0/0 | 0/0/0 | 48,714/2,514 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 3/0 | 0 |
 
 ## popPK records
 
@@ -29,10 +29,10 @@ Ganaxolone, similar to its endogenous counterparts, is a positive allosteric mod
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Pinna_2014](drugs/drug_ganaxolone/pd_Pinna_2014_aggression.md) | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Pinna_2014](drugs/drug_ganaxolone/pd_Pinna_2014_anxiety.md) | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Pinna_2014](drugs/drug_ganaxolone/pd_Pinna_2014_fear_extinction.md) | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Pinna_2014](drugs/drug_ganaxolone/pd_Pinna_2014_locomotion.md) | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Pinna_2014](drugs/drug_ganaxolone/pd_Pinna_2014_aggression.md) | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Pinna_2014](drugs/drug_ganaxolone/pd_Pinna_2014_anxiety.md) | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Pinna_2014](drugs/drug_ganaxolone/pd_Pinna_2014_fear_extinction.md) | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Pinna_2014](drugs/drug_ganaxolone/pd_Pinna_2014_locomotion.md) | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
 
 ## Coverage
 
@@ -51,7 +51,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Carter_1997.pdf` | Carter RB et al., Characterization of the anticonvulsant…, The Journal of pharmacology… (1997) | pd | 4 | not captured | [9067315](https://www.ncbi.nlm.nih.gov/pubmed/9067315) | metadata signals extractable PD data (IC50) |
 | `Devenish_2021.pdf` | Devenish SO et al., The anticonvulsant zonisamide positivel…, Neuropharmacology (2021) | pd | 4 | [10.1016/j.neuropharm.2020.108371](https://doi.org/10.1016/j.neuropharm.2020.108371) | [33122032](https://www.ncbi.nlm.nih.gov/pubmed/33122032) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-08-30T10:41:38.196145+00:00</sub>
+<sub>queue written 2026-09-10T00:08:27.575300+00:00</sub>
 
 ## Screened and excluded
 

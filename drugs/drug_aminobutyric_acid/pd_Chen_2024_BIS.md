@@ -1,4 +1,4 @@
-# Bispectral Index — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# Bispectral Index — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Chen_2024`
 - **model family:** `sigmoid_emax`
