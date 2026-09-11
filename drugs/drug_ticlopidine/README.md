@@ -22,7 +22,9 @@
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ashraf_2018](drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_nonmem.md) | Ashraf MW et al., Semimechanistic Population Pharmacokine…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12346](https://doi.org/10.1002/psp4.12346) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ashraf_2018](drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_nonmem_healthy_volunteers.md) | Ashraf MW et al., Semimechanistic Population Pharmacokine…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12346](https://doi.org/10.1002/psp4.12346) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ashraf_2018](drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_sir_resultsa.md) | Ashraf MW et al., Semimechanistic Population Pharmacokine…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12346](https://doi.org/10.1002/psp4.12346) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ashraf_2018](drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_sir_resultsa_healthy_volunteers.md) | Ashraf MW et al., Semimechanistic Population Pharmacokine…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12346](https://doi.org/10.1002/psp4.12346) |
 
 ## Pharmacogenomics (PGx)
 
@@ -39,7 +41,7 @@
 
 - **PubMed hits:** 351 matched, 145 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

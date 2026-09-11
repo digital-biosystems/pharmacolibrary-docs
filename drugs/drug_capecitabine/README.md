@@ -21,8 +21,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lunar_2021](drugs/drug_capecitabine/Capecitabine_Lunar2021_reference.md) | Lunar N et al., Population pharmacokinetic and pharmaco…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04208-8](https://doi.org/10.1007/s00280-020-04208-8) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Schmulenson_2022](drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference.md) | Schmulenson E et al., Population pharmacokinetic analyses of…, British journal of clinical… (2022) | [10.1111/bcp.15461](https://doi.org/10.1111/bcp.15461) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Lunar_2021](drugs/drug_capecitabine/Capecitabine_Lunar2021_reference.md) | Lunar N et al., Population pharmacokinetic and pharmaco…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04208-8](https://doi.org/10.1007/s00280-020-04208-8) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Schmulenson_2022](drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference.md) | Schmulenson E et al., Population pharmacokinetic analyses of…, British journal of clinical… (2022) | [10.1111/bcp.15461](https://doi.org/10.1111/bcp.15461) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Gieschke_2003](drugs/drug_capecitabine/Capecitabine_Gieschke2003_reference.md) | Gieschke R et al., Population pharmacokinetics and concent…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01765.x](https://doi.org/10.1046/j.1365-2125.2003.01765.x) |
 
 ## Pharmacodynamics (PD)
@@ -84,7 +84,7 @@
 
 - **PubMed hits:** 657 matched, 77 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

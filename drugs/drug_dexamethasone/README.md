@@ -23,10 +23,10 @@ Dexamethasone was granted FDA approval on 30 October 1958.[L10695] In a press re
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Calderin_2025](drugs/drug_dexamethasone/Dexamethasone_Calderin2025_reference.md) | Calderin JM et al., Pharmacokinetics of dexamethasone in tu…, medRxiv : the preprint serv… (2025) | [10.1101/2025.07.14.25331510](https://doi.org/10.1101/2025.07.14.25331510) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Calderin_2025_2](drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference.md) | Calderin JM et al., Pharmacokinetics of dexamethasone in tu…, medRxiv : the preprint serv… (2025) | [10.1101/2025.07.14.25331510](https://doi.org/10.1101/2025.07.14.25331510) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Świerczek_2023](drugs/drug_dexamethasone/Dexamethasone_wierczek2023_reference.md) | Świerczek A et al., Anti-inflammatory effects of dexamethas…, Clinical and translational… (2023) | [10.1111/cts.13577](https://doi.org/10.1111/cts.13577) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Gawarammana_2011](drugs/drug_dexamethasone/Dexamethasone_Gawarammana2011_reference.md) | Gawarammana IB et al., Medical management of paraquat ingestion, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.04026.x](https://doi.org/10.1111/j.1365-2125.2011.04026.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Calderin_2025](drugs/drug_dexamethasone/Dexamethasone_Calderin2025_reference.md) | Calderin JM et al., Pharmacokinetics of dexamethasone in tu…, medRxiv : the preprint serv… (2025) | [10.1101/2025.07.14.25331510](https://doi.org/10.1101/2025.07.14.25331510) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Calderin_2025_2](drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference.md) | Calderin JM et al., Pharmacokinetics of dexamethasone in tu…, medRxiv : the preprint serv… (2025) | [10.1101/2025.07.14.25331510](https://doi.org/10.1101/2025.07.14.25331510) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Świerczek_2023](drugs/drug_dexamethasone/Dexamethasone_wierczek2023_reference.md) | Świerczek A et al., Anti-inflammatory effects of dexamethas…, Clinical and translational… (2023) | [10.1111/cts.13577](https://doi.org/10.1111/cts.13577) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Papathanasiou_2025](drugs/drug_dexamethasone/Dexamethasone_Papathanasiou2025_reference.md) | Papathanasiou T et al., Population Pharmacokinetics for Belanta…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01508-1](https://doi.org/10.1007/s40262-025-01508-1) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Yu_2026](drugs/drug_dexamethasone/Dexamethasone_Yu2026_reference.md) | Yu R et al., Meta-Analysis and Physiologically-Based…, Pharmaceutical research (2026) | [10.1007/s11095-026-04120-5](https://doi.org/10.1007/s11095-026-04120-5) |
 
@@ -47,7 +47,7 @@ Dexamethasone was granted FDA approval on 30 October 1958.[L10695] In a press re
 
 - **PubMed hits:** 1173 matched, 85 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 6  ·  extracted 3  ·  needs_review 1  ·  rejected 2  ·  stale 0
+- **records:** 6  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

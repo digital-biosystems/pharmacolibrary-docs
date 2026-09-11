@@ -21,14 +21,14 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chang_2024](drugs/drug_mavacamten/Mavacamten_Chang2024_reference.md) | Chang P et al., Characterization of mavacamten pharmaco…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13197](https://doi.org/10.1002/psp4.13197) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Chang_2024](drugs/drug_mavacamten/Mavacamten_Chang2024_reference.md) | Chang P et al., Characterization of mavacamten pharmaco…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13197](https://doi.org/10.1002/psp4.13197) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Merali_2025](drugs/drug_mavacamten/Mavacamten_Merali2025_reference.md) | Merali S et al., Exposure-Response Modeling and Simulati…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70072](https://doi.org/10.1002/jcph.70072) |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

@@ -1,6 +1,19 @@
 # bisoprolol — `Bisoprolol_Momilovi2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
+
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge; the simulated model does not reproduce a value the paper reports. Evidence: T1_t_half_terminal — expected 13.5 — got 131.673530066645 — ratio 9.7536
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+2. Open the paper's reported table and confirm the target value and its units.
+3. Compare with the transcribed value in _transcribev2.yaml for this stem.
+4. If the transcription is right, the extracted parameters are suspect — check CL and volume in _interpretv2.yaml against the paper.
+5. If the transcription is wrong, fix the extraction; the model rebuild follows.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,12 +22,12 @@ Momčilović S; Milovanović JR; Janković SM; Jovanović A; Tasić-Otašević S
   ·  DOI: [10.1097/FJC.0000000000000644](https://doi.org/10.1097/FJC.0000000000000644)
 
 ## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Momilovi2019_reference" status="needs_review" stale="false" population="patients with acute coronary syndrome" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Momilovi2019_reference" status="not_modelled" stale="false" population="patients with acute coronary syndrome" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -60,9 +73,10 @@ Momčilović S; Milovanović JR; Janković SM; Jovanović A; Tasić-Otašević S
 |---|---|---|---|---|---|---|
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=bisoprolol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_t_half_terminal | reference | skipped | 13.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | fail | 13.5 | 131.673530066645 | 9.7536 | hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -72,6 +86,7 @@ Momčilović S; Milovanović JR; Janković SM; Jovanović A; Tasić-Otašević S
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_bisoprolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Momčilović_2019` / `Momčilović_2019::patients with acute coronary syndrome`)
+- sim: `../../../knowledgebase/drugs/drug_bisoprolol/models/modelica/Bisoprolol_Momilovi2019_patients_with_acute_coronary_syndrom.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

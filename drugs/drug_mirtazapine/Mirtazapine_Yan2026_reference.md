@@ -2,7 +2,14 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** the reference covariate scenario does not reconstruct
+
+**Steps:**
+1. Check covariate_definitions and the reference category in _interpretv2.yaml.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -68,7 +75,7 @@ Yan H; Huang W; Xia H; Luo Y; Li Y; Shang D et al. (2026). Drug design, developm
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_mirtazapine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yan_2026` / `Yan_2026::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_mirtazapine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yan_2026` / `Yan_2026::Chinese patients with depression`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

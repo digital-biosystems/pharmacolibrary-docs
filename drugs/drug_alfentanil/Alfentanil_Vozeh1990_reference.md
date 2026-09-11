@@ -1,8 +1,15 @@
 # alfentanil — `Alfentanil_Vozeh1990_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,16 +18,18 @@ Vozeh S; Maitre PO; Stanski DR et al. (1990). Journal of pharmacokinetics and bi
   ·  DOI: [10.1007/BF01063558](https://doi.org/10.1007/BF01063558)
 
 ## Model component
-<dbs-pgx drug="alfentanil" model-id="Alfentanil_Vozeh1990_reference" status="extracted" stale="false" population="unknown" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="alfentanil" model-id="Alfentanil_Vozeh1990_reference" status="not_modelled" stale="false" population="unknown" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| k₁₂ (min⁻¹) | `Q301` · k12 | 0.104 | min⁻¹ | 0.0017333333333333333 | [1] / [min] | not captured | exact (1.0) | Vozeh_1990_table_p6_1:row3:col1 | — | not captured |
-| k₂₁ (min⁻¹) | `Q302` · k21 | 0.0673 | min⁻¹ | 0.0011216666666666666 | [1] / [min] | not captured | exact (1.0) | Vozeh_1990_table_p6_1:row4:col1 | — | not captured |
-| k₁₃ (min⁻¹) | `Q303` · k13 | 0.0170 | min⁻¹ | 0.00028333333333333335 | [1] / [min] | not captured | exact (1.0) | Vozeh_1990_table_p6_1:row5:col1 | — | not captured |
+| k₁₂ (min⁻¹) | `Q301` · k12 | —(suppressed) | min⁻¹ | — | [1] / [min] | not captured | exact (1.0) | Vozeh_1990_table_p6_1:row3:col1 | — | not captured |
+| k₂₁ (min⁻¹) | `Q302` · k21 | —(suppressed) | min⁻¹ | — | [1] / [min] | not captured | exact (1.0) | Vozeh_1990_table_p6_1:row4:col1 | — | not captured |
+| k₁₃ (min⁻¹) | `Q303` · k13 | —(suppressed) | min⁻¹ | — | [1] / [min] | not captured | exact (1.0) | Vozeh_1990_table_p6_1:row5:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,6 +62,14 @@ Vozeh S; Maitre PO; Stanski DR et al. (1990). Journal of pharmacokinetics and bi
 | C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Vozeh_1990_table_p6_1:row4:col1'] |
 | C5_dimension_Q303 | pass | 1 / [time] | not captured | not captured | not captured | ['Vozeh_1990_table_p6_1:row5:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

@@ -22,13 +22,15 @@
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Sadiq_2013](drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_bootstrap_resampling.md) | Sadiq MW et al., Oxymorphone active uptake at the blood-…, Journal of pharmaceutical s… (2013) | [10.1002/jps.23492](https://doi.org/10.1002/jps.23492) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Sadiq_2013](drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_bootstrap_resampling_male_sprague_dawl.md) | Sadiq MW et al., Oxymorphone active uptake at the blood-…, Journal of pharmaceutical s… (2013) | [10.1002/jps.23492](https://doi.org/10.1002/jps.23492) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Sadiq_2013](drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set.md) | Sadiq MW et al., Oxymorphone active uptake at the blood-…, Journal of pharmaceutical s… (2013) | [10.1002/jps.23492](https://doi.org/10.1002/jps.23492) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Sadiq_2013](drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set_male_sprague_dawley.md) | Sadiq MW et al., Oxymorphone active uptake at the blood-…, Journal of pharmaceutical s… (2013) | [10.1002/jps.23492](https://doi.org/10.1002/jps.23492) |
 
 ## Coverage
 
 - **PubMed hits:** 220 matched, 102 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

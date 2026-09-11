@@ -1,8 +1,15 @@
 # azathioprine — `Azathioprine_elYazigi1993_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,15 +18,17 @@ el-Yazigi A; Wahab FA et al. (1993). Journal of clinical pharmacology 33
   ·  DOI: [10.1002/j.1552-4604.1993.tb04698.x](https://doi.org/10.1002/j.1552-4604.1993.tb04698.x)
 
 ## Model component
-<dbs-pgx drug="azathioprine" model-id="Azathioprine_elYazigi1993_reference" status="extracted" stale="false" population="renal transplant patients and rabbits" measured-compound="azathioprine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="azathioprine" model-id="Azathioprine_elYazigi1993_reference" status="not_modelled" stale="false" population="renal transplant patients and rabbits" measured-compound="azathioprine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | `Q61` · V | 0.833 | L/kg | 0.05831 | [l] / [kg] | not captured | llm (0.5) | el-Yazigi_1993_table_2:row0:col1, el-Yazigi_1993_table_2:row0:col2, el-Yazigi_1993_table_2:row0:col3, el-Yazigi_1993_table_2:row0:col4, el-Yazigi_1993_table_2:row0:col5, el-Yazigi_1993_table_2:row0:col6, el-Yazigi_1993_table_2:row0:col7, el-Yazigi_1993_table_2:row0:col8, el-Yazigi_1993_table_2:row0:col9, el-Yazigi_1993_table_2:row0:col10 | — | not captured |
-| Clearance infusion4 (L/d, median [IQR]) | `Q22` · CL | 0.27 | L/d | 3.125e-09 | L/h | not captured | review_gapfill (0.7) | Colman_2024:review | — | not captured |
+| 1 | `Q61` · V | —(suppressed) | L/kg | — | [l] / [kg] | not captured | llm (0.5) | el-Yazigi_1993_table_2:row0:col1, el-Yazigi_1993_table_2:row0:col2, el-Yazigi_1993_table_2:row0:col3, el-Yazigi_1993_table_2:row0:col4, el-Yazigi_1993_table_2:row0:col5, el-Yazigi_1993_table_2:row0:col6, el-Yazigi_1993_table_2:row0:col7, el-Yazigi_1993_table_2:row0:col8, el-Yazigi_1993_table_2:row0:col9, el-Yazigi_1993_table_2:row0:col10 | — | not captured |
+| Clearance infusion4 (L/d, median [IQR]) | `Q22` · CL | —(suppressed) | L/d | — | L/h | not captured | review_gapfill (0.7) | Colman_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,6 +69,15 @@ el-Yazigi A; Wahab FA et al. (1993). Journal of clinical pharmacology 33
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0112 L/h | not captured | not captured | ['Colman_2024:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 58.3 L | not captured | not captured | ['el-Yazigi_1993_table_2:row0:col1', 'el-Yazigi_1993_table_2:row0:col2', 'el-Yazigi_1993_table_2:row0:col3', 'el-Yazigi_1993_table_2:row0:col4', 'el-Yazigi_1993_table_2:row0:col5', 'el-Yazigi_1993_table_2:row0:col6', 'el-Yazigi_1993_table_2:row0:col7', 'el-Yazigi_1993_table_2:row0:col8', 'el-Yazigi_1993_table_2:row0:col9', 'el-Yazigi_1993_table_2:row0:col10'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=azathioprine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -67,7 +85,8 @@ el-Yazigi A; Wahab FA et al. (1993). Journal of clinical pharmacology 33
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_azathioprine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `el-Yazigi_1993` / `el-Yazigi_1993::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_azathioprine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `el-Yazigi_1993` / `el-Yazigi_1993::renal transplant patients`)
+- sim: `../../../knowledgebase/drugs/drug_azathioprine/models/modelica/Azathioprine_elYazigi1993_renal_transplant_patients.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -25,10 +25,10 @@ Shock is the inability to maintain blood flow to vital tissues and the potential
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Athanassa_2025](drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md) | Athanassa Z et al., Population pharmacokinetic model of ora…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf090](https://doi.org/10.1093/jac/dkaf090) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Schultze_1975](drugs/drug_angiotensin_ii/AngiotensinIi_Schultze1975_reference.md) | Schultze G et al., Changes of plasma renin, angiotensin II…, Klinische Wochenschrift (1975) | [10.1007/BF01614279](https://doi.org/10.1007/BF01614279) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Steichert_2025](drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md) | Steichert (2025) | — |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [van_2026](drugs/drug_angiotensin_ii/AngiotensinIi_van2026_reference.md) | van Lier D et al., Safety, tolerability, and pharmacokinet…, mAbs (2026) | [10.1080/19420862.2026.2671468](https://doi.org/10.1080/19420862.2026.2671468) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Athanassa_2025](drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md) | Athanassa Z et al., Population pharmacokinetic model of ora…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf090](https://doi.org/10.1093/jac/dkaf090) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Schultze_1975](drugs/drug_angiotensin_ii/AngiotensinIi_Schultze1975_reference.md) | Schultze G et al., Changes of plasma renin, angiotensin II…, Klinische Wochenschrift (1975) | [10.1007/BF01614279](https://doi.org/10.1007/BF01614279) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Steichert_2025](drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md) | Steichert (2025) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Kurup_2024](drugs/drug_angiotensin_ii/AngiotensinIi_Kurup2024_reference.md) | Kurup S et al., Semi-mechanistic population pharmacokin…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09947-2](https://doi.org/10.1007/s10928-024-09947-2) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Moran_1985](drugs/drug_angiotensin_ii/AngiotensinIi_Moran1985_reference.md) | Moran SM et al., Pathophysiology of protracted acute ren…, The Journal of clinical inv… (1985) | [10.1172/JCI112122](https://doi.org/10.1172/JCI112122) |
 
@@ -101,7 +101,7 @@ Shock is the inability to maintain blood flow to vital tissues and the potential
 
 - **PubMed hits:** 2602 matched, 210 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 6  ·  extracted 3  ·  needs_review 1  ·  rejected 2  ·  stale 0
+- **records:** 6  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

@@ -1,8 +1,20 @@
 # simvastatin — `Simvastatin_Lohitnavy2015_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — engineer.** parent/metabolite records are not currently produced as models — the composite builds but does not survive simulation<br><sub>evidence: `topology_template=parent_metabolite`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge.
+
+**Steps:**
+1. Not a curation fix — engineer limitation.
+2. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,17 +23,19 @@ Lohitnavy M; Methaneethorn J; Chiang-Ngernthanyakool R; Tongpeng W; Chan-Im D; P
   ·  DOI: [10.1109/EMBC.2015.7319084](https://doi.org/10.1109/EMBC.2015.7319084)
 
 ## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Lohitnavy2015_reference" status="extracted" stale="false" population="healthy adults" measured-compound="simvastatin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="simvastatin" model-id="Simvastatin_Lohitnavy2015_reference" status="not_modelled" stale="false" population="healthy adults" measured-compound="simvastatin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| mean systemic clearance | `Q22` · CL | 12.2 | L/h | 3.3888888888888884e-06 | L/h | not captured | review_gapfill (0.7) | Devineni_2015:review | — | not captured |
-| Central volume of distribution (V2/F) | `Q61` · V | 228.0 | (l) | 0.228 | L | not captured | review_gapfill (0.7) | Friedrich_2014:review | — | not captured |
-| Ka, h−1 | `Q49` · kabs | 1.4 | h−1 | 0.00038888888888888887 | 1/h | not captured | review_gapfill (0.7) | Jadhav_2023:review | — | not captured |
-| LAG (hr) | `Q83` · tlag | 0.212 | hr | 763.1999999999999 | h | not captured | review_gapfill (0.7) | Kim_2011:review | — | not captured |
+| mean systemic clearance | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | review_gapfill (0.7) | Devineni_2015:review | — | not captured |
+| Central volume of distribution (V2/F) | `Q61` · V | —(suppressed) | (l) | — | L | not captured | review_gapfill (0.7) | Friedrich_2014:review | — | not captured |
+| Ka, h−1 | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review_gapfill (0.7) | Jadhav_2023:review | — | not captured |
+| LAG (hr) | `Q83` · tlag | —(suppressed) | hr | — | h | not captured | review_gapfill (0.7) | Kim_2011:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -71,6 +85,15 @@ Lohitnavy M; Methaneethorn J; Chiang-Ngernthanyakool R; Tongpeng W; Chan-Im D; P
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 12.2 L/h | not captured | not captured | ['Devineni_2015:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 228 L | not captured | not captured | ['Friedrich_2014:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

@@ -20,20 +20,28 @@
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_1236c_t.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_1236c_t_healthy_korean_adults.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_1287g_c.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_1287g_c_healthy_korean_adults.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_2677g_t_a.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_2677g_t_a_healthy_korean_adults.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_3435c_t.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_3435c_t_healthy_korean_adults.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_808g_t.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_808g_t_healthy_korean_adults.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_estimate.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_estimate_healthy_korean_adults.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_iiv.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_iiv_healthy_korean_adults.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_shrinkage.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Jeong_2020](drugs/drug_tiropramide/Tiropramide_Jeong2020_shrinkage_healthy_korean_adults.md) | Jeong SH et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040374](https://doi.org/10.3390/pharmaceutics12040374) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Arigoni_1986](drugs/drug_tiropramide/Tiropramide_Arigoni1986_reference.md) | Arigoni R et al., Pharmacokinetics of tiropramide after s…, Arzneimittel-Forschung (1986) | — |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 9  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 17  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

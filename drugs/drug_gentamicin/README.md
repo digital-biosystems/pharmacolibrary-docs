@@ -21,15 +21,15 @@ Although gentamicin is well-established and may be used in a variety of clinical
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Albanell-Fernández_2025](drugs/drug_gentamicin/Gentamicin_AlbanellFernndez2025_reference.md) | Albanell-Fernández M et al., A Review of Vancomycin, Gentamicin, and…, Clinical pharmacokinetics (2025) | [10.1007/s40262-024-01459-z](https://doi.org/10.1007/s40262-024-01459-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Crcek_2019](drugs/drug_gentamicin/Gentamicin_Crcek2019_reference.md) | Crcek M et al., A review of population pharmacokinetic…, Journal of clinical pharmac… (2019) | [10.1111/jcpt.12850](https://doi.org/10.1111/jcpt.12850) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Albanell-Fernández_2025](drugs/drug_gentamicin/Gentamicin_AlbanellFernndez2025_reference.md) | Albanell-Fernández M et al., A Review of Vancomycin, Gentamicin, and…, Clinical pharmacokinetics (2025) | [10.1007/s40262-024-01459-z](https://doi.org/10.1007/s40262-024-01459-z) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Crcek_2019](drugs/drug_gentamicin/Gentamicin_Crcek2019_reference.md) | Crcek M et al., A review of population pharmacokinetic…, Journal of clinical pharmac… (2019) | [10.1111/jcpt.12850](https://doi.org/10.1111/jcpt.12850) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hodiamont_2022_2](drugs/drug_gentamicin/Gentamicin_Hodiamont2022v2_reference.md) | Hodiamont CJ et al., Clinical Pharmacokinetics of Gentamicin…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01143-0](https://doi.org/10.1007/s40262-022-01143-0) |
 
 ## Coverage
 
 - **PubMed hits:** 352 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 4
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

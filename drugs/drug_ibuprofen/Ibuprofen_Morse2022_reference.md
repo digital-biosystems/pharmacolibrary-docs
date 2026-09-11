@@ -1,6 +1,20 @@
 # ibuprofen — `Ibuprofen_Morse2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
+
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `tlag`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -8,12 +22,12 @@
 not matched (stem Morse_2022)
 
 ## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Morse2022_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="acetaminophen, ibuprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Morse2022_reference" status="not_modelled" stale="false" population="healthy adults" measured-compound="acetaminophen, ibuprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -66,15 +80,12 @@ not matched (stem Morse_2022)
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 1.9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 1.6 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 2.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 4 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 11.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 27 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_tmax | reference | skipped | 0.61 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_tmax | reference | skipped | 0.88 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_tmax | reference | skipped | 1.2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |

@@ -22,7 +22,9 @@
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Li_2024](drugs/drug_norepinephrine/Norepinephrine_Li2024_estimate.md) | Li Y et al., Population Pharmacokinetic Modelling of…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01430-y](https://doi.org/10.1007/s40262-024-01430-y) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Li_2024](drugs/drug_norepinephrine/Norepinephrine_Li2024_estimate_healthy_volunteers.md) | Li Y et al., Population Pharmacokinetic Modelling of…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01430-y](https://doi.org/10.1007/s40262-024-01430-y) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Li_2024](drugs/drug_norepinephrine/Norepinephrine_Li2024_parameter.md) | Li Y et al., Population Pharmacokinetic Modelling of…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01430-y](https://doi.org/10.1007/s40262-024-01430-y) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Li_2024](drugs/drug_norepinephrine/Norepinephrine_Li2024_parameter_healthy_volunteers.md) | Li Y et al., Population Pharmacokinetic Modelling of…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01430-y](https://doi.org/10.1007/s40262-024-01430-y) |
 
 ## Pharmacodynamics (PD)
 
@@ -57,7 +59,7 @@
 
 - **PubMed hits:** 2306 matched, 77 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

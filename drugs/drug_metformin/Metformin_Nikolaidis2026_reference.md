@@ -1,8 +1,21 @@
 # metformin — `Metformin_Nikolaidis2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `t1/2ka`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** a structural parameter has the wrong dimension.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,20 +24,22 @@ Nikolaidis S; Kosmidis I; Papadopoulos S; Lioupi A; Gandanidou M; Gika H; Dokoum
   ·  DOI: [10.1111/bph.70208](https://doi.org/10.1111/bph.70208)
 
 ## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Nikolaidis2026_reference" status="extracted" stale="false" population="healthy men" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="metformin" model-id="Metformin_Nikolaidis2026_reference" status="rejected" stale="false" population="healthy men" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L h À1 ) a | `Q27` · CL/F | 82.2 | L h À1 | 2.2833333333333337e-05 | L/h | not captured | review (0.7) | Nikolaidis_2026:review | — | not captured |
-| V/F (L) a | `Q76` · V/F | 272.0 | L | 0.272 | L | not captured | review (0.7) | Nikolaidis_2026:review | — | not captured |
-| ABCG2 | `Q900` · ABCG2 | {'A/A': 0.0, 'C/A': 0.076, 'C/C': 0.1286, 'C/T': 0.0239, 'G/A': 0.0936, 'G/G': 0.031, 'G/T': 0.0703, 'GAT/GAT': 0.0419, 'T/C': 0.068, 'T/T': -0.0486} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
-| SLC22A1 | `Q900` · SLC22A1 | {'A/A': 0.0, 'C/A': 0.076, 'C/C': 0.1286, 'C/T': 0.0239, 'G/A': 0.0936, 'G/G': 0.031, 'G/T': 0.0703, 'GAT/GAT': 0.0419, 'T/C': 0.068, 'T/T': -0.0486} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
-| SLC22A3 | `Q900` · SLC22A3 | {'A/A': 0.0, 'C/A': 0.076, 'C/C': 0.1286, 'C/T': 0.0239, 'G/A': 0.0936, 'G/G': 0.031, 'G/T': 0.0703, 'GAT/GAT': 0.0419, 'T/C': 0.068, 'T/T': -0.0486} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
-| SLC22A4 | `Q900` · SLC22A4 | {'A/A': 0.0, 'C/A': 0.076, 'C/C': 0.1286, 'C/T': 0.0239, 'G/A': 0.0936, 'G/G': 0.031, 'G/T': 0.0703, 'GAT/GAT': 0.0419, 'T/C': 0.068, 'T/T': -0.0486} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
-| SLC47A2 | `Q900` · SLC47A2 | {'A/A': 0.0, 'C/A': 0.076, 'C/C': 0.1286, 'C/T': 0.0239, 'G/A': 0.0936, 'G/G': 0.031, 'G/T': 0.0703, 'GAT/GAT': 0.0419, 'T/C': 0.068, 'T/T': -0.0486} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| CL/F (L h À1 ) a | `Q27` · CL/F | —(suppressed) | L h À1 | — | L/h | not captured | review (0.7) | Nikolaidis_2026:review | — | not captured |
+| V/F (L) a | `Q76` · V/F | —(suppressed) | L | — | L | not captured | review (0.7) | Nikolaidis_2026:review | — | not captured |
+| ABCG2 | `Q900` · ABCG2 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| SLC22A1 | `Q900` · SLC22A1 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| SLC22A3 | `Q900` · SLC22A3 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| SLC22A4 | `Q900` · SLC22A4 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| SLC47A2 | `Q900` · SLC47A2 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -76,7 +91,7 @@ Nikolaidis S; Kosmidis I; Papadopoulos S; Lioupi A; Gandanidou M; Gika H; Dokoum
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_metformin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nikolaidis_2026` / `Nikolaidis_2026::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_metformin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nikolaidis_2026` / `Nikolaidis_2026::final::healthy men`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

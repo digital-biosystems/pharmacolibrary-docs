@@ -21,7 +21,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Palmer_2025](drugs/drug_moxifloxacin/Moxifloxacin_Palmer2025_reference.md) | Palmer M et al., Population pharmacokinetics and dosing…, British journal of clinical… (2025) | [10.1111/bcp.70005](https://doi.org/10.1111/bcp.70005) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Palmer_2025](drugs/drug_moxifloxacin/Moxifloxacin_Palmer2025_reference.md) | Palmer M et al., Population pharmacokinetics and dosing…, British journal of clinical… (2025) | [10.1111/bcp.70005](https://doi.org/10.1111/bcp.70005) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Greenberg_2022](drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_reference.md) | Greenberg RG et al., Population Pharmacokinetics of Moxiflox…, Paediatric drugs (2022) | [10.1007/s40272-022-00493-3](https://doi.org/10.1007/s40272-022-00493-3) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yun_2022](drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference.md) | Yun HY et al., Model-Based Efficacy and Toxicity Compa…, Open forum infectious disea… (2022) | [10.1093/ofid/ofab660](https://doi.org/10.1093/ofid/ofab660) |
 
@@ -29,7 +29,7 @@
 
 - **PubMed hits:** 209 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

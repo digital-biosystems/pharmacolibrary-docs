@@ -21,8 +21,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bertin_2025](drugs/drug_levosimendan/Levosimendan_Bertin2025_reference.md) | Bertin S et al., Pharmacokinetics of levosimendan in cri…, Frontiers in pediatrics (2025) | [10.3389/fped.2025.1542417](https://doi.org/10.3389/fped.2025.1542417) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jonsson_2003](drugs/drug_levosimendan/Levosimendan_Jonsson2003_reference.md) | Jonsson EN et al., Population pharmacokinetics of levosime…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01778.x](https://doi.org/10.1046/j.1365-2125.2003.01778.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Bertin_2025](drugs/drug_levosimendan/Levosimendan_Bertin2025_reference.md) | Bertin S et al., Pharmacokinetics of levosimendan in cri…, Frontiers in pediatrics (2025) | [10.3389/fped.2025.1542417](https://doi.org/10.3389/fped.2025.1542417) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Jonsson_2003](drugs/drug_levosimendan/Levosimendan_Jonsson2003_reference.md) | Jonsson EN et al., Population pharmacokinetics of levosime…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01778.x](https://doi.org/10.1046/j.1365-2125.2003.01778.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Bertin_2026](drugs/drug_levosimendan/Levosimendan_Bertin2026_reference.md) | Bertin S et al., Population Pharmacokinetics of Levosime…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01591-4](https://doi.org/10.1007/s40262-025-01591-4) |
 
 ## Pharmacodynamics (PD)
@@ -39,7 +39,7 @@
 
 - **PubMed hits:** 36 matched, 21 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -27,13 +27,13 @@ Methadone is also indicated for detoxification treatment of opioid addiction (he
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Foster_2004](drugs/drug_methadone/Methadone_Foster2004_reference.md) | Foster DJ et al., Population pharmacokinetics of (R)-, (S…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02079.x](https://doi.org/10.1111/j.1365-2125.2004.02079.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Foster_2004](drugs/drug_methadone/Methadone_Foster2004_reference.md) | Foster DJ et al., Population pharmacokinetics of (R)-, (S…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02079.x](https://doi.org/10.1111/j.1365-2125.2004.02079.x) |
 
 ## Coverage
 
 - **PubMed hits:** 114 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ---

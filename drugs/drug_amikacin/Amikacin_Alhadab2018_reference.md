@@ -2,7 +2,21 @@
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — reviewer_tooling.** the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault<br><sub>evidence: `C6_cl_magnitude failed (ratio None)`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** clearance is outside the plausible magnitude window.
+
+**Steps:**
+1. Not a curation fix — reviewer_tooling limitation.
+2. Check the parameter's unit_verbatim — an unconverted per-kg or per-hour unit is the usual cause, not a genuinely extreme value.
+3. Confirm value_si against the paper's reported number.
+4. A 'ratio None' means the check could not compute a ratio, so treat the window as unverified rather than as a failure of the value.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -76,7 +90,7 @@ Alhadab AA; Ahmed MA; Brundage RC et al. (2018). Antimicrobial agents and chemot
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_amikacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Alhadab_2018` / `Alhadab_2018::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_amikacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Alhadab_2018` / `Alhadab_2018::pediatric cancer patients`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

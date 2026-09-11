@@ -2,7 +2,21 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `MTT`, `KD`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** a structural parameter has the wrong dimension; a parameter falls outside the physiological window.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
+4. Confirm the value and unit against the paper before treating it as an error.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `prednisone`, measured `prednisolone`.
 
@@ -82,7 +96,7 @@ de Truchis C; Bouazza N; Foissac F; Charbit M; Dehoux L; Lui G; et al. et al. (2
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_prednisolone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `de_2023` / `de_2023::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_prednisolone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `de_2023` / `de_2023::paediatric kidney transplant recipients`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -21,11 +21,11 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bonde_1989](drugs/drug_disopyramide/Disopyramide_Bonde1989_reference.md) | Bonde J et al., Disposition kinetics of disopyramide in…, Pharmacology & toxicology (1989) | [10.1111/j.1600-0773.1989.tb00677.x](https://doi.org/10.1111/j.1600-0773.1989.tb00677.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bryson_1978](drugs/drug_disopyramide/Disopyramide_Bryson1978_reference.md) | Bryson SM et al., Disopyramide serum and pharmacologic ef…, British journal of clinical… (1978) | [10.1111/j.1365-2125.1978.tb04605.x](https://doi.org/10.1111/j.1365-2125.1978.tb04605.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Burk_1983](drugs/drug_disopyramide/Disopyramide_Burk1983_reference.md) | Burk M et al., Disopyramide kinetics in renal impairme…, Clinical pharmacology and t… (1983) | [10.1038/clpt.1983.176](https://doi.org/10.1038/clpt.1983.176) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Pedersen_1986](drugs/drug_disopyramide/Disopyramide_Pedersen1986_reference.md) | Pedersen LE et al., The pharmacokinetics and protein bindin…, Acta pharmacologica et toxi… (1986) | [10.1111/j.1600-0773.1986.tb00110.x](https://doi.org/10.1111/j.1600-0773.1986.tb00110.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yukawa_2005](drugs/drug_disopyramide/Disopyramide_Yukawa2005_reference.md) | Yukawa E et al., Population pharmacokinetic investigatio…, Journal of clinical pharmac… (2005) | [10.1111/j.1365-2710.2005.00668.x](https://doi.org/10.1111/j.1365-2710.2005.00668.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Bonde_1989](drugs/drug_disopyramide/Disopyramide_Bonde1989_reference.md) | Bonde J et al., Disposition kinetics of disopyramide in…, Pharmacology & toxicology (1989) | [10.1111/j.1600-0773.1989.tb00677.x](https://doi.org/10.1111/j.1600-0773.1989.tb00677.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Bryson_1978](drugs/drug_disopyramide/Disopyramide_Bryson1978_reference.md) | Bryson SM et al., Disopyramide serum and pharmacologic ef…, British journal of clinical… (1978) | [10.1111/j.1365-2125.1978.tb04605.x](https://doi.org/10.1111/j.1365-2125.1978.tb04605.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Burk_1983](drugs/drug_disopyramide/Disopyramide_Burk1983_reference.md) | Burk M et al., Disopyramide kinetics in renal impairme…, Clinical pharmacology and t… (1983) | [10.1038/clpt.1983.176](https://doi.org/10.1038/clpt.1983.176) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Pedersen_1986](drugs/drug_disopyramide/Disopyramide_Pedersen1986_reference.md) | Pedersen LE et al., The pharmacokinetics and protein bindin…, Acta pharmacologica et toxi… (1986) | [10.1111/j.1600-0773.1986.tb00110.x](https://doi.org/10.1111/j.1600-0773.1986.tb00110.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Yukawa_2005](drugs/drug_disopyramide/Disopyramide_Yukawa2005_reference.md) | Yukawa E et al., Population pharmacokinetic investigatio…, Journal of clinical pharmac… (2005) | [10.1111/j.1365-2710.2005.00668.x](https://doi.org/10.1111/j.1365-2710.2005.00668.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -50,7 +50,7 @@
 
 - **PubMed hits:** 27 matched, 20 returned
 - **screened:** 9  ·  **relevant:** 9
-- **records:** 5  ·  extracted 5  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

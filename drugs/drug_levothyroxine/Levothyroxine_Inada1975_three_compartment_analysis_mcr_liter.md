@@ -1,8 +1,20 @@
 # Levothyroxine — `Levothyroxine_Inada1975_three_compartment_analysis_mcr_liter`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — engineer.** parent/metabolite records are not currently produced as models — the composite builds but does not survive simulation<br><sub>evidence: `topology_template=parent_metabolite`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge.
+
+**Steps:**
+1. Not a curation fix — engineer limitation.
+2. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,39 +23,16 @@ Inada M; Kasagi K; Kurata S; Kazama Y; Takayama H; Torizuka K; et al. et al. (19
   ·  DOI: [10.1172/JCI108053](https://doi.org/10.1172/JCI108053)
 
 ## Model component
-<dbs-pgx drug="Levothyroxine" model-id="Levothyroxine_Inada1975_three_compartment_analysis_mcr_liter" status="extracted" stale="false" population="normal subjects and hypothyroid patients" measured-compound="L-thyroxine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="Levothyroxine" model-id="Levothyroxine_Inada1975_three_compartment_analysis_mcr_liter" status="not_modelled" stale="false" population="normal subjects and hypothyroid patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Parameterization:** mechanistic.
+**Parameterization:** not captured.
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| K. T. | `Q22` · CL | 9.9 | liter/day | 1.1458333333333334e-07 | [l] / [d] | not captured | llm (0.6) | Inada_1975_table_2:row9:col9 | — | not captured |
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
-
-**Interpretation flags:**
-- dropped unlinked row (NIL): 'Y. O.' — extend the ontology if this is a real PK parameter (source ['Inada_1975_table_2:row1:col9'])
-- dropped unlinked row (NIL): 'M. U.' — extend the ontology if this is a real PK parameter (source ['Inada_1975_table_2:row2:col9'])
-- dropped unlinked row (NIL): 'M. E.' — extend the ontology if this is a real PK parameter (source ['Inada_1975_table_2:row3:col9'])
-- dropped unlinked row (NIL): 'I. N.' — extend the ontology if this is a real PK parameter (source ['Inada_1975_table_2:row4:col9'])
-- dropped unlinked row (NIL): 'S. Y.' — extend the ontology if this is a real PK parameter (source ['Inada_1975_table_2:row5:col9'])
-- dropped unlinked row (NIL): 'Mean±SD' — extend the ontology if this is a real PK parameter (source ['Inada_1975_table_2:row6:col9', 'Inada_1975_table_2:row12:col9', 'Inada_1975_table_2:row18:col9'])
-- dropped unlinked row (NIL): 'Y. U.' — extend the ontology if this is a real PK parameter (source ['Inada_1975_table_2:row8:col9'])
-- dropped unlinked row (NIL): 'M. Y. (1)' — extend the ontology if this is a real PK parameter (source ['Inada_1975_table_2:row10:col9'])
-- dropped unlinked row (NIL): 'M. K. (1)' — extend the ontology if this is a real PK parameter (source ['Inada_1975_table_2:row11:col9'])
-- dropped unlinked row (NIL): 'M. Y. (2)' — extend the ontology if this is a real PK parameter (source ['Inada_1975_table_2:row15:col9'])
-- dropped duplicate Q22 ('D. K.', value '16.9') — already have one for this compound
-- dropped unlinked row (NIL): 'M. K. (2)' — extend the ontology if this is a real PK parameter (source ['Inada_1975_table_2:row17:col9'])
-- table mostly unlinked (11/13 table-cell rows NIL) — likely the wrong table was located, not 2 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=L-thyroxine
-- status held at route_to_review — not promoted
-- population split: 'three-compartment analysis mcr* (liter/day)' subgroup of Inada_1975 (paper reports 21 populations: age (yr), d. k., extrapolation method k (per day), extrapolation method mcr* (liter/day), extrapolation method v* (liter), i. n., k. t., m. e., m. k. (1), m. k. (2), m. u., m. y. (1), m. y. (2), s. y., three-compartment analysis mcr* (liter/day), three-compartment analysis t₄dr* (µg/day), three-compartment analysis v* (liter), three-compartment analysis v₃* (liter), three-compartment analysis λ₀₃ (per day), y. o., y. u.)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -54,16 +43,14 @@ Inada M; Kasagi K; Kurata S; Kazama Y; Takayama H; Torizuka K; et al. et al. (19
 
 ## Validation
 
-**Scholar closed-form checks:**
+**Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
+| check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Inada_1975_table_2:row9:col9'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 9.9 | not captured | not captured | ['Inada_1975_table_2:row9:col9'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.413 L/h | not captured | not captured | ['Inada_1975_table_2:row9:col9'] |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T3_rate_constant_conversion | not captured | pass | K12 (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -72,7 +59,7 @@ Inada M; Kasagi K; Kurata S; Kazama Y; Takayama H; Torizuka K; et al. et al. (19
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_levothyroxine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Inada_1975` / `Inada_1975::three_compartment_analysis_mcr_liter_day`)
+- scholar stages: `../../../knowledgebase/drugs/drug_levothyroxine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Inada_1975` / `Inada_1975::three_compartment_analysis_mcr_liter_day::normal subjects and hypothyroid patients`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

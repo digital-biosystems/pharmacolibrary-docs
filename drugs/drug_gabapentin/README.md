@@ -21,7 +21,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Al-Zubaydi_2024](drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md) | Al-Zubaydi F et al., Development of a Population Pharmacokin…, Pharmaceutics (2024) | [10.3390/pharmaceutics16121514](https://doi.org/10.3390/pharmaceutics16121514) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Al-Zubaydi_2024](drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md) | Al-Zubaydi F et al., Development of a Population Pharmacokin…, Pharmaceutics (2024) | [10.3390/pharmaceutics16121514](https://doi.org/10.3390/pharmaceutics16121514) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Silvola_2025](drugs/drug_gabapentin/Gabapentin_Silvola2025_reference.md) | Silvola R et al., Population Pharmacokinetics and Transfe…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13295](https://doi.org/10.1002/psp4.13295) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Zhou_2026](drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md) | Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901) |
 
@@ -36,7 +36,7 @@
 
 - **PubMed hits:** 143 matched, 62 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

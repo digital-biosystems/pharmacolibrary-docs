@@ -2,7 +2,19 @@
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — reviewer_tooling.** the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault<br><sub>evidence: `C2_reference failed (ratio None)`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** the reference covariate scenario does not reconstruct.
+
+**Steps:**
+1. Not a curation fix — reviewer_tooling limitation.
+2. Check covariate_definitions and the reference category in _interpretv2.yaml.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -84,7 +96,7 @@ Naik H; Tsai MC; Fiedler-Kelly J; Qiu P; Vakilynejad M et al. (2013). PloS one 8
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_peginesatide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Naik_2013` / `Naik_2013::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_peginesatide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Naik_2013` / `Naik_2013::patients with chronic kidney disease on dialysis`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

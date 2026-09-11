@@ -23,7 +23,7 @@ Daunorubicin is indicated in combination with [cytarabine] for the treatment of 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Drevin_2022](drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference.md) | Drevin G et al., Daunorubicin and Its Active Metabolite…, Pharmaceutics (2022) | [10.3390/pharmaceutics14040792](https://doi.org/10.3390/pharmaceutics14040792) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Drevin_2022](drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference.md) | Drevin G et al., Daunorubicin and Its Active Metabolite…, Pharmaceutics (2022) | [10.3390/pharmaceutics14040792](https://doi.org/10.3390/pharmaceutics14040792) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hempel_2003](drugs/drug_daunorubicin/Daunorubicin_Hempel2003_reference.md) | Hempel G et al., Population pharmacokinetics of liposoma…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01886.x](https://doi.org/10.1046/j.1365-2125.2003.01886.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2019](drugs/drug_daunorubicin/Daunorubicin_Wang2019_reference.md) | Wang Q et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1366](https://doi.org/10.1002/jcph.1366) |
 
@@ -31,7 +31,7 @@ Daunorubicin is indicated in combination with [cytarabine] for the treatment of 
 
 - **PubMed hits:** 47 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 8
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

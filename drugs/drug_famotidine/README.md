@@ -27,9 +27,9 @@ Over-the-counter famotidine is used for the management and prevention of heartbu
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ikawa_2007](drugs/drug_famotidine/Famotidine_Ikawa2007_reference.md) | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Maish_1998](drugs/drug_famotidine/Famotidine_Maish1998_reference.md) | Maish WA et al., Pharmacokinetics of famotidine in patie…, Journal of clinical pharmac… (1998) | [10.1177/009127009803801104](https://doi.org/10.1177/009127009803801104) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [McCann_2023](drugs/drug_famotidine/Famotidine_McCann2023_reference.md) | McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01254-2](https://doi.org/10.1007/s40262-023-01254-2) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ikawa_2007](drugs/drug_famotidine/Famotidine_Ikawa2007_reference.md) | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Maish_1998](drugs/drug_famotidine/Famotidine_Maish1998_reference.md) | Maish WA et al., Pharmacokinetics of famotidine in patie…, Journal of clinical pharmac… (1998) | [10.1177/009127009803801104](https://doi.org/10.1177/009127009803801104) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [McCann_2023](drugs/drug_famotidine/Famotidine_McCann2023_reference.md) | McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01254-2](https://doi.org/10.1007/s40262-023-01254-2) |
 
 ## Pharmacodynamics (PD)
 
@@ -41,7 +41,7 @@ Over-the-counter famotidine is used for the management and prevention of heartbu
 
 - **PubMed hits:** 29 matched, 19 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

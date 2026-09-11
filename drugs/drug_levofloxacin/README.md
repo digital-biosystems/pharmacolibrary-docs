@@ -26,15 +26,18 @@ In its ophthalmic formulation, levofloxacin is indicated for the treatment of ba
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Setiawan_2022](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean.md) | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Setiawan_2022](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean_hospitalized_adult_patients.md) | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Setiawan_2022](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_median.md) | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Setiawan_2022](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_median_hospitalized_adult_patients.md) | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Setiawan_2022](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_shrink.md) | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Setiawan_2022](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_shrink_hospitalized_adult_patients.md) | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [He_2024](drugs/drug_levofloxacin/Levofloxacin_He2024_reference.md) | He YY et al., Population pharmacokinetics and dose op…, British journal of clinical… (2024) | [10.1111/bcp.16003](https://doi.org/10.1111/bcp.16003) |
 
 ## Coverage
 
 - **PubMed hits:** 237 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 7  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

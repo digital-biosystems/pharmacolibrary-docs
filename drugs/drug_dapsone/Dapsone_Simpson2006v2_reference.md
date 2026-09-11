@@ -1,8 +1,20 @@
 # dapsone — `Dapsone_Simpson2006v2_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — engineer.** parent/metabolite records are not currently produced as models — the composite builds but does not survive simulation<br><sub>evidence: `topology_template=parent_metabolite`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge.
+
+**Steps:**
+1. Not a curation fix — engineer limitation.
+2. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `chlorproguanil/dapsone`, measured `chlorproguanil`.
 
@@ -13,21 +25,23 @@ Simpson JA; Hughes D; Manyando C; Bojang K; Aarons L; Winstanley P; et al. et al
   ·  DOI: [10.1111/j.1365-2125.2005.02567.x](https://doi.org/10.1111/j.1365-2125.2005.02567.x)
 
 ## Model component
-<dbs-pgx drug="dapsone" model-id="Dapsone_Simpson2006v2_reference" status="extracted" stale="false" population="healthy volunteers and adults and children with uncomplicated falciparum malaria" measured-compound="chlorproguanil" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="dapsone" model-id="Dapsone_Simpson2006v2_reference" status="not_modelled" stale="false" population="healthy volunteers and adults and children with uncomplicated falciparum malaria" measured-compound="chlorproguanil" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Parameterization:** CL/F, Q/F, V/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| k a (h -1 ) | `Q49` · kabs | 0.93 | h -1 | 0.00025833333333333334 | [1] / [h] | not captured | llm (0.5) | tab_2:row4:col1, tab_2:row4:col2, tab_2:row15:col1 | — | not captured |
-| CL/F (l h -1 ) | `Q27` · CL/F | 72 | l h -1 | 2e-05 | [l] / [h] | not captured | exact (1.0) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row16:col1, tab_2:row16:col2 | — | not captured |
-| CLD/F (l h -1 ) | `Q69` · Q/F | 54.67 | l h -1 | 1.5186111111111112e-05 | [l] / [h] | not captured | exact (1.0) | tab_2:row6:col1 | — | not captured |
-| V 1 /F (l) | `Q290` · V1/F | 50 | l | 0.05 | [l] | not captured | llm (0.5) | tab_2:row7:col1, tab_2:row7:col2 | — | not captured |
-| V 2 /F (l) | `Q82` · V2/F | 1612.75 | l | 1.6127500000000001 | [l] | not captured | llm (0.5) | tab_2:row8:col1 | — | not captured |
-| AUC (ng ml -1 h -1 ) = | `Q88` · AUC | 100503 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_2:row10:col1, tab_2:row19:col1 | — | not captured |
-| t 1/2 elim (h) | `Q57` · t1/2z | 26.67 | h | 96012.0 | [h] | not captured | llm (0.5) | tab_2:row13:col1, tab_2:row22:col1 | — | not captured |
-| V/F (l) | `Q76` · V/F | 48 | l | 0.048 | [l] | not captured | exact (1.0) | tab_2:row17:col1, tab_2:row17:col2 | — | not captured |
+| k a (h -1 ) | `Q49` · kabs | —(suppressed) | h -1 | — | [1] / [h] | not captured | llm (0.5) | tab_2:row4:col1, tab_2:row4:col2, tab_2:row15:col1 | — | not captured |
+| CL/F (l h -1 ) | `Q27` · CL/F | —(suppressed) | l h -1 | — | [l] / [h] | not captured | exact (1.0) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row16:col1, tab_2:row16:col2 | — | not captured |
+| CLD/F (l h -1 ) | `Q69` · Q/F | —(suppressed) | l h -1 | — | [l] / [h] | not captured | exact (1.0) | tab_2:row6:col1 | — | not captured |
+| V 1 /F (l) | `Q290` · V1/F | —(suppressed) | l | — | [l] | not captured | llm (0.5) | tab_2:row7:col1, tab_2:row7:col2 | — | not captured |
+| V 2 /F (l) | `Q82` · V2/F | —(suppressed) | l | — | [l] | not captured | llm (0.5) | tab_2:row8:col1 | — | not captured |
+| AUC (ng ml -1 h -1 ) = | `Q88` · AUC | —(suppressed) | not captured | — | not captured | not captured | boundary (0.8) | tab_2:row10:col1, tab_2:row19:col1 | — | not captured |
+| t 1/2 elim (h) | `Q57` · t1/2z | —(suppressed) | h | — | [h] | not captured | llm (0.5) | tab_2:row13:col1, tab_2:row22:col1 | — | not captured |
+| V/F (l) | `Q76` · V/F | —(suppressed) | l | — | [l] | not captured | exact (1.0) | tab_2:row17:col1, tab_2:row17:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,6 +70,16 @@ Simpson JA; Hughes D; Manyando C; Bojang K; Aarons L; Winstanley P; et al. et al
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_t_half_beta | reference | skipped | 26.67 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -63,7 +87,7 @@ Simpson JA; Hughes D; Manyando C; Bojang K; Aarons L; Winstanley P; et al. et al
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_dapsone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Simpson_2006_2` / `Simpson_2006_2::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_dapsone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Simpson_2006_2` / `Simpson_2006_2::healthy volunteers and adults and children with uncomplicated falciparum malaria`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

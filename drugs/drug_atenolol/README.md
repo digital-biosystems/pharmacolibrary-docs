@@ -49,7 +49,7 @@ Despite being one of the most widely prescribed beta blockers, evidence suggests
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kir_2025](drugs/drug_atenolol/Atenolol_Kir2025_reference.md) | Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of drug me… (2025) | [10.1007/s13318-025-00943-6](https://doi.org/10.1007/s13318-025-00943-6) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kir_2025](drugs/drug_atenolol/Atenolol_Kir2025_reference.md) | Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of drug me… (2025) | [10.1007/s13318-025-00943-6](https://doi.org/10.1007/s13318-025-00943-6) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Buck_1989](drugs/drug_atenolol/Atenolol_Buck1989_reference.md) | Buck ML et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (1989) | [10.1038/clpt.1989.198](https://doi.org/10.1038/clpt.1989.198) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Scherholz_2018](drugs/drug_atenolol/Atenolol_Scherholz2018_reference.md) | Scherholz ML et al., A framework for 2-stage global sensitiv…, Journal of pharmacokinetics… (2018) | [10.1007/s10928-018-9573-1](https://doi.org/10.1007/s10928-018-9573-1) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wójcicki_2003](drugs/drug_atenolol/Atenolol_Wjcicki2003_reference.md) | Wójcicki J et al., Comparative pharmacokinetics and pharma…, Biopharmaceutics & drug dis… (2003) | [10.1002/bdd.357](https://doi.org/10.1002/bdd.357) |
@@ -86,7 +86,7 @@ Despite being one of the most widely prescribed beta blockers, evidence suggests
 
 - **PubMed hits:** 568 matched, 73 returned
 - **screened:** 5  ·  **relevant:** 7
-- **records:** 4  ·  extracted 1  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

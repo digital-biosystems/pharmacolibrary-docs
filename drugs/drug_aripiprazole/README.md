@@ -21,8 +21,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2022](drugs/drug_aripiprazole/Aripiprazole_Wang2022_reference.md) | Wang X et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1022](https://doi.org/10.1002/cpdd.1022) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2024](drugs/drug_aripiprazole/Aripiprazole_Wang2024_reference.md) | Wang (2024) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Wang_2022](drugs/drug_aripiprazole/Aripiprazole_Wang2022_reference.md) | Wang X et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology in dr… (2022) | [10.1002/cpdd.1022](https://doi.org/10.1002/cpdd.1022) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Wang_2024](drugs/drug_aripiprazole/Aripiprazole_Wang2024_reference.md) | Wang (2024) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Toja-Camba_2021](drugs/drug_aripiprazole/Aripiprazole_TojaCamba2021_reference.md) | Toja-Camba FJ et al., Review of Pharmacokinetics and Pharmaco…, Pharmaceutics (2021) | [10.3390/pharmaceutics13070935](https://doi.org/10.3390/pharmaceutics13070935) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Xin_2025](drugs/drug_aripiprazole/Aripiprazole_Xin2025_reference.md) | Xin Y et al., Effect of CYP2D6 and ABCB1 polymorphism…, BMC pediatrics (2025) | [10.1186/s12887-025-05856-6](https://doi.org/10.1186/s12887-025-05856-6) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2024](drugs/drug_aripiprazole/Aripiprazole_Zhang2024_reference.md) | Zhang C et al., Effects of Aripiprazole on Olanzapine P…, Neuropsychiatric disease an… (2024) | [10.2147/NDT.S455183](https://doi.org/10.2147/NDT.S455183) |
@@ -89,7 +89,7 @@
 
 - **PubMed hits:** 598 matched, 87 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 5  ·  extracted 2  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

@@ -2,7 +2,19 @@
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — engineer.** the topology is outside the template set the engineer can build<br><sub>evidence: `topology_template=manual_model_class`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** every check the reviewer could run passed.
+
+**Steps:**
+1. Not a curation fix — engineer limitation.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+
+<sub>owner: **modeller** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -174,7 +186,7 @@ Chun D; Mehta P; Guzy S; Cicali B; Lauretti GR; Lanchote VL; Vozmediano V; De Mo
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_tramadol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chun_2025` / `Chun_2025::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_tramadol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chun_2025` / `Chun_2025::adults with chronic neuropathic pain`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

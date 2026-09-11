@@ -2,7 +2,19 @@
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — reviewer_tooling.** the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault<br><sub>evidence: `C2_reference failed (ratio None)`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** the reference covariate scenario does not reconstruct.
+
+**Steps:**
+1. Not a curation fix — reviewer_tooling limitation.
+2. Check covariate_definitions and the reference category in _interpretv2.yaml.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -80,7 +92,7 @@ Li L; Guan Z; Li R; Zhao W; Hao G; Yan Y; et al. et al. (2020). Medicine 99
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_metformin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2020` / `Li_2020::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_metformin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_2020` / `Li_2020::Chinese patients with type 2 diabetes mellitus`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

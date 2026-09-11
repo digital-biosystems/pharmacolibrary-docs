@@ -27,15 +27,15 @@ A recent study reported a fatality in the group being treated with hydroxychloro
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Alvarez_2022](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference.md) | Alvarez JC et al., Population Pharmacokinetics of Hydroxyc…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15020256](https://doi.org/10.3390/ph15020256) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Thémans_2020](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference.md) | Thémans P et al., Population Pharmacokinetics of Hydroxyc…, European journal of drug me… (2020) | [10.1007/s13318-020-00648-y](https://doi.org/10.1007/s13318-020-00648-y) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zahr_2021](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_reference.md) | Zahr N et al., Pharmacokinetics and pharmacodynamics o…, Therapie (2021) | [10.1016/j.therap.2021.01.056](https://doi.org/10.1016/j.therap.2021.01.056) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Alvarez_2022](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference.md) | Alvarez JC et al., Population Pharmacokinetics of Hydroxyc…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15020256](https://doi.org/10.3390/ph15020256) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Thémans_2020](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference.md) | Thémans P et al., Population Pharmacokinetics of Hydroxyc…, European journal of drug me… (2020) | [10.1007/s13318-020-00648-y](https://doi.org/10.1007/s13318-020-00648-y) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zahr_2021](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_reference.md) | Zahr N et al., Pharmacokinetics and pharmacodynamics o…, Therapie (2021) | [10.1016/j.therap.2021.01.056](https://doi.org/10.1016/j.therap.2021.01.056) |
 
 ## Coverage
 
 - **PubMed hits:** 74 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

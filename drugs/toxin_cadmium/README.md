@@ -19,12 +19,12 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ekobena_2025](drugs/toxin_cadmium/Cadmium_Ekobena2025_reference.md) | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jia_2026](drugs/toxin_cadmium/Cadmium_Jia2026_reference.md) | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Marques_2026](drugs/toxin_cadmium/Cadmium_Marques2026_reference.md) | Marques L et al., Model-Based Virtual Clinical Trial Reve…, Pharmaceutics (2026) | [10.3390/pharmaceutics18060636](https://doi.org/10.3390/pharmaceutics18060636) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Muthukrishnan_2025](drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference.md) | Muthukrishnan VY et al., Population Pharmacokinetic and Pharmaco…, Clinical and translational… (2025) | [10.1111/cts.70381](https://doi.org/10.1111/cts.70381) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Sunnåker_2026](drugs/toxin_cadmium/Cadmium_Sunnker2026_reference.md) | Sunnåker M et al., Population Pharmacokinetics of the Nove…, Pharmacology research & per… (2026) | [10.1002/prp2.70259](https://doi.org/10.1002/prp2.70259) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhong_2024](drugs/toxin_cadmium/Cadmium_Zhong2024_reference.md) | Zhong G et al., Toxicokinetics and Mussel Watch: Addres…, Environmental science & tec… (2024) | [10.1021/acs.est.4c02026](https://doi.org/10.1021/acs.est.4c02026) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ekobena_2025](drugs/toxin_cadmium/Cadmium_Ekobena2025_reference.md) | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Jia_2026](drugs/toxin_cadmium/Cadmium_Jia2026_reference.md) | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Marques_2026](drugs/toxin_cadmium/Cadmium_Marques2026_reference.md) | Marques L et al., Model-Based Virtual Clinical Trial Reve…, Pharmaceutics (2026) | [10.3390/pharmaceutics18060636](https://doi.org/10.3390/pharmaceutics18060636) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Muthukrishnan_2025](drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference.md) | Muthukrishnan VY et al., Population Pharmacokinetic and Pharmaco…, Clinical and translational… (2025) | [10.1111/cts.70381](https://doi.org/10.1111/cts.70381) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Sunnåker_2026](drugs/toxin_cadmium/Cadmium_Sunnker2026_reference.md) | Sunnåker M et al., Population Pharmacokinetics of the Nove…, Pharmacology research & per… (2026) | [10.1002/prp2.70259](https://doi.org/10.1002/prp2.70259) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zhong_2024](drugs/toxin_cadmium/Cadmium_Zhong2024_reference.md) | Zhong G et al., Toxicokinetics and Mussel Watch: Addres…, Environmental science & tec… (2024) | [10.1021/acs.est.4c02026](https://doi.org/10.1021/acs.est.4c02026) |
 
 ## Pharmacodynamics (PD)
 
@@ -37,7 +37,7 @@
 
 - **PubMed hits:** 9173 matched, 161 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 6  ·  extracted 6  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 6  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

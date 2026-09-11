@@ -1,8 +1,22 @@
 # ciprofloxacin — `Ciprofloxacin_Ambros2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — engineer.** the topology is outside the template set the engineer can build<br><sub>evidence: `topology_template=manual_model_class`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** a structural parameter has the wrong dimension; the reference covariate scenario does not reconstruct.
+
+**Steps:**
+1. Not a curation fix — engineer limitation.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
+4. Check covariate_definitions and the reference category in _interpretv2.yaml.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `enrofloxacin`, measured `ciprofloxacin`.
 
@@ -13,18 +27,20 @@ Ambros LA; Kreil V; de Lucas Burneo JJ; Tinti MG; San Andrés Larrea MI; Lorenzu
   ·  DOI: [10.3390/vetsci12060588](https://doi.org/10.3390/vetsci12060588)
 
 ## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Ambros2025_reference" status="extracted" stale="false" population="pregnant goats" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Ambros2025_reference" status="rejected" stale="false" population="pregnant goats" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cl (L/h/kg) | `Q22` · CL | 0.81 | L/h/kg | 1.575e-05 | L/h | not captured | review (0.7) | Ambros_2025:review | — | not captured |
-| Vc (L/kg) | `Q63` · V1 | 0.65 | L/kg | 0.045500000000000006 | L | not captured | review (0.7) | Ambros_2025:review | — | not captured |
-| Vp (L/kg) | `Q64` · V2 | 2.83 | L/kg | 0.1981 | L | not captured | review (0.7) | Ambros_2025:review | — | not captured |
-| Q (L/h/kg) | `Q30` · Q | 0.28 | L/h/kg | 5.444444444444445e-06 | L/h | not captured | review (0.7) | Ambros_2025:review | — | not captured |
-| Ka (1/h) | `Q49` · kabs | 0.25 | 1/h | 6.944444444444444e-05 | 1/h | not captured | review (0.7) | Ambros_2025:review | — | not captured |
+| Cl (L/h/kg) | `Q22` · CL | —(suppressed) | L/h/kg | — | L/h | not captured | review (0.7) | Ambros_2025:review | — | not captured |
+| Vc (L/kg) | `Q63` · V1 | —(suppressed) | L/kg | — | L | not captured | review (0.7) | Ambros_2025:review | — | not captured |
+| Vp (L/kg) | `Q64` · V2 | —(suppressed) | L/kg | — | L | not captured | review (0.7) | Ambros_2025:review | — | not captured |
+| Q (L/h/kg) | `Q30` · Q | —(suppressed) | L/h/kg | — | L/h | not captured | review (0.7) | Ambros_2025:review | — | not captured |
+| Ka (1/h) | `Q49` · kabs | —(suppressed) | 1/h | — | 1/h | not captured | review (0.7) | Ambros_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -69,7 +85,7 @@ Ambros LA; Kreil V; de Lucas Burneo JJ; Tinti MG; San Andrés Larrea MI; Lorenzu
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_ciprofloxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ambros_2025` / `Ambros_2025::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_ciprofloxacin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ambros_2025` / `Ambros_2025::schrinkage::pregnant goats`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

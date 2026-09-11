@@ -1,8 +1,23 @@
 # lidocaine — `Lidocaine_Bursi2017_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `V1`, `theta_k31_category`, `theta_v1_category`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. No curator action. Run the engineer for this drug.
+3. Advisory only — the base model still replicates.
+4. Check the record's covariate_definitions in _interpretv2.yaml.
+5. Re-run the engineer for this drug if the covariate curves are wanted.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,21 +26,23 @@ Bursi R; Piana C; Grevel J; Huntjens D; Boesl I et al. (2017). European journal 
   ·  DOI: [10.1007/s13318-017-0400-7](https://doi.org/10.1007/s13318-017-0400-7)
 
 ## Model component
-<dbs-pgx drug="lidocaine" model-id="Lidocaine_Bursi2017_reference" status="extracted" stale="false" population="post-herpetic neuralgia patients" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="lidocaine" model-id="Lidocaine_Bursi2017_reference" status="not_modelled" stale="false" population="post-herpetic neuralgia patients" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| k 23 (h−1) | `Q48` · kcomp | 1.93 | h−1 | 0.0005361111111111111 | [1] / [h] | 0.175 | space_fold (0.95) | Tab3:row3:col1, Tab3:row3:col2 | — | not captured |
-| Effect of BIL &gt;0.53 on k 30 (h−1) | `Q304` · k31 | -0.526 | h−1 | -0.00014611111111111113 | [1] / [h] | 0.148 | llm (0.6) | Tab3:row7:col1, Tab3:row7:col2 | — | not captured |
-| V 1 | `Q63` · V1 | 0.312 | IIV | not captured | [iiv] | 0.0757 | space_fold (0.95) | Tab3:row22:col1, Tab3:row22:col2, Tab3:row22:col4 | — | not captured |
-| theta_k31_category | `Q900` · theta_k31_category | 1.44 | h−1 | not captured | not captured | 0.169 | not captured (not captured) | Tab3:row5:col1, Tab3:row5:col2 | — | not captured |
-| theta_k31_cyp1a2 | `Q900` · theta_k31_cyp1a2 | 0.852 | not captured | not captured | not captured | 0.27 | not captured (not captured) | Tab3:row9:col1, Tab3:row9:col2 | — | not captured |
-| theta_k31_bmi | `Q900` · theta_k31_bmi | 0.938 | not captured | not captured | not captured | 0.309 | not captured (not captured) | Tab3:row10:col1, Tab3:row10:col2 | — | not captured |
-| theta_q348_category | `Q900` · theta_q348_category | 0.667 | not captured | not captured | not captured | 0.0383 | not captured (not captured) | Tab3:row12:col1, Tab3:row12:col2 | — | not captured |
-| theta_v1_category | `Q900` · theta_v1_category | 1320 | IIV | not captured | not captured | 99.5 | not captured (not captured) | Tab3:row15:col1, Tab3:row15:col2 | — | not captured |
+| k 23 (h−1) | `Q48` · kcomp | —(suppressed) | h−1 | — | [1] / [h] | 0.175 | space_fold (0.95) | Tab3:row3:col1, Tab3:row3:col2 | — | not captured |
+| Effect of BIL &gt;0.53 on k 30 (h−1) | `Q304` · k31 | —(suppressed) | h−1 | — | [1] / [h] | 0.148 | llm (0.6) | Tab3:row7:col1, Tab3:row7:col2 | — | not captured |
+| V 1 | `Q63` · V1 | —(suppressed) | IIV | — | [iiv] | 0.0757 | space_fold (0.95) | Tab3:row22:col1, Tab3:row22:col2, Tab3:row22:col4 | — | not captured |
+| theta_k31_category | `Q900` · theta_k31_category | —(suppressed) | h−1 | — | not captured | 0.169 | not captured (not captured) | Tab3:row5:col1, Tab3:row5:col2 | — | not captured |
+| theta_k31_cyp1a2 | `Q900` · theta_k31_cyp1a2 | —(suppressed) | not captured | — | not captured | 0.27 | not captured (not captured) | Tab3:row9:col1, Tab3:row9:col2 | — | not captured |
+| theta_k31_bmi | `Q900` · theta_k31_bmi | —(suppressed) | not captured | — | not captured | 0.309 | not captured (not captured) | Tab3:row10:col1, Tab3:row10:col2 | — | not captured |
+| theta_q348_category | `Q900` · theta_q348_category | —(suppressed) | not captured | — | not captured | 0.0383 | not captured (not captured) | Tab3:row12:col1, Tab3:row12:col2 | — | not captured |
+| theta_v1_category | `Q900` · theta_v1_category | —(suppressed) | IIV | — | not captured | 99.5 | not captured (not captured) | Tab3:row15:col1, Tab3:row15:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -93,6 +110,15 @@ Bursi R; Piana C; Grevel J; Huntjens D; Boesl I et al. (2017). European journal 
 | C5_dimension_Q48 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row3:col1', 'Tab3:row3:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -100,7 +126,7 @@ Bursi R; Piana C; Grevel J; Huntjens D; Boesl I et al. (2017). European journal 
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_lidocaine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bursi_2017` / `Bursi_2017::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_lidocaine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bursi_2017` / `Bursi_2017::post-herpetic neuralgia patients`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

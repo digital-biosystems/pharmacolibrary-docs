@@ -23,9 +23,13 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Jones_2021](drugs/drug_fremanezumab/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de.md) | Jones A et al., Scaling Approaches for Pediatric Dose S…, Pharmaceutics (2021) | [10.3390/pharmaceutics13060785](https://doi.org/10.3390/pharmaceutics13060785) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Jones_2021](drugs/drug_fremanezumab/Fremanezumab_Jones2021_previously_developed_adult_model_appl.md) | Jones A et al., Scaling Approaches for Pediatric Dose S…, Pharmaceutics (2021) | [10.3390/pharmaceutics13060785](https://doi.org/10.3390/pharmaceutics13060785) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Jones_2021](drugs/drug_fremanezumab/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de.md) | Jones A et al., Scaling Approaches for Pediatric Dose S…, Pharmaceutics (2021) | [10.3390/pharmaceutics13060785](https://doi.org/10.3390/pharmaceutics13060785) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Jones_2021](drugs/drug_fremanezumab/Fremanezumab_Jones2021_previously_developed_adult_model_appl.md) | Jones A et al., Scaling Approaches for Pediatric Dose S…, Pharmaceutics (2021) | [10.3390/pharmaceutics13060785](https://doi.org/10.3390/pharmaceutics13060785) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Fiedler-Kelly_2019](drugs/drug_fremanezumab/Fremanezumab_FiedlerKelly2019_reference.md) | Fiedler-Kelly JB et al., Population pharmacokinetic modelling an…, British journal of clinical… (2019) | [10.1111/bcp.14096](https://doi.org/10.1111/bcp.14096) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Iannone_2026](drugs/drug_fremanezumab/Fremanezumab_Iannone2026_adults.md) | Iannone LF et al., Pharmacokinetics and Pharmacodynamics,…, European journal of drug me… (2026) | [10.1007/s13318-026-00990-7](https://doi.org/10.1007/s13318-026-00990-7) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Iannone_2026](drugs/drug_fremanezumab/Fremanezumab_Iannone2026_adults_children_and_adolescents_wit.md) | Iannone LF et al., Pharmacokinetics and Pharmacodynamics,…, European journal of drug me… (2026) | [10.1007/s13318-026-00990-7](https://doi.org/10.1007/s13318-026-00990-7) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Iannone_2026](drugs/drug_fremanezumab/Fremanezumab_Iannone2026_children_adolescents_6_17_years.md) | Iannone LF et al., Pharmacokinetics and Pharmacodynamics,…, European journal of drug me… (2026) | [10.1007/s13318-026-00990-7](https://doi.org/10.1007/s13318-026-00990-7) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Iannone_2026](drugs/drug_fremanezumab/Fremanezumab_Iannone2026_children_adolescents_6_17_years_chi.md) | Iannone LF et al., Pharmacokinetics and Pharmacodynamics,…, European journal of drug me… (2026) | [10.1007/s13318-026-00990-7](https://doi.org/10.1007/s13318-026-00990-7) |
 
 ## Pharmacodynamics (PD)
 
@@ -53,7 +57,7 @@
 
 - **PubMed hits:** 17 matched, 17 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 5  ·  extracted 2  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 9  ·  extracted 2  ·  needs_review 0  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

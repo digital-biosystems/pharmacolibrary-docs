@@ -22,18 +22,25 @@
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Fan_2026](drugs/drug_fitusiran/Fitusiran_Fan2026_0_38.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Fan_2026](drugs/drug_fitusiran/Fitusiran_Fan2026_0_38_mice_rats_monkeys_and_humans.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Fan_2026](drugs/drug_fitusiran/Fitusiran_Fan2026_0_71_9_45.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Fan_2026](drugs/drug_fitusiran/Fitusiran_Fan2026_0_71_9_45_mice_rats_monkeys_and_humans.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Fan_2026](drugs/drug_fitusiran/Fitusiran_Fan2026_1_48_21_16.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Fan_2026](drugs/drug_fitusiran/Fitusiran_Fan2026_1_48_21_16_mice_rats_monkeys_and_humans.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Fan_2026](drugs/drug_fitusiran/Fitusiran_Fan2026_humansa.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Fan_2026](drugs/drug_fitusiran/Fitusiran_Fan2026_humansa_mice_rats_monkeys_and_humans.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Fan_2026](drugs/drug_fitusiran/Fitusiran_Fan2026_micea.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Fan_2026](drugs/drug_fitusiran/Fitusiran_Fan2026_micea_mice_rats_monkeys_and_humans.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Fan_2026](drugs/drug_fitusiran/Fitusiran_Fan2026_monkeysc.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Fan_2026](drugs/drug_fitusiran/Fitusiran_Fan2026_monkeysc_mice_rats_monkeys_and_humans.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Fan_2026](drugs/drug_fitusiran/Fitusiran_Fan2026_ratsb.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Fan_2026](drugs/drug_fitusiran/Fitusiran_Fan2026_ratsb_mice_rats_monkeys_and_humans.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
 
 ## Coverage
 
 - **PubMed hits:** 24 matched, 19 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 7  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 14  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

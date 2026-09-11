@@ -20,14 +20,16 @@
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Sunkaraneni_2018_2](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_final.md) | Sunkaraneni (2018) | — |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Sunkaraneni_2018_2](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_final_pediatric_patients_w.md) | Sunkaraneni (2018) | — |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Sunkaraneni_2018_2](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit.md) | Sunkaraneni (2018) | — |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Sunkaraneni_2018_2](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit.md) | Sunkaraneni (2018) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Falcão_2012](drugs/drug_eslicarbazepine/Eslicarbazepine_Falco2012_reference.md) | Falcão A et al., Pharmacokinetics, drug interactions and…, CNS drugs (2012) | [10.2165/11596290-000000000-00000](https://doi.org/10.2165/11596290-000000000-00000) |
 
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

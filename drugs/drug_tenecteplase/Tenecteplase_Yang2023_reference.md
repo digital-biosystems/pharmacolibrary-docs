@@ -2,7 +2,14 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** every check the reviewer could run passed
+
+**Steps:**
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -77,7 +84,7 @@ Yang Y; Gu B; Xu XY et al. (2023). Pharmaceutics 15
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_tenecteplase/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yang_2023` / `Yang_2023::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_tenecteplase/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yang_2023` / `Yang_2023::adults with acute ischemic stroke`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

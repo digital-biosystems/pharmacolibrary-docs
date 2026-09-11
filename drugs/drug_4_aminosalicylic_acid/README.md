@@ -15,14 +15,14 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Sy_2015](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md) | Sy (2015) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [de_2014](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md) | de (2014) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Sy_2015](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md) | Sy (2015) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [de_2014](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md) | de (2014) | — |
 
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

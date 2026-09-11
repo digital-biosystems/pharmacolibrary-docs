@@ -1,8 +1,15 @@
 # carbamazepine — `Carbamazepine_Saruwatari2010_final_population_pharmacokineti`
 
-> ## <span class="pk-badge pk-badge--neutral">None</span>
+> ## <span class="pk-badge pk-badge--neutral">not_reviewed</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** every check the reviewer could run passed
+
+**Steps:**
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,35 +18,16 @@ Saruwatari J; Ishitsu T; Nakagawa K et al. (2010). Pharmaceuticals (Basel, Switz
   ·  DOI: [10.3390/ph3082709](https://doi.org/10.3390/ph3082709)
 
 ## Model component
-<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Saruwatari2010_final_population_pharmacokineti" status="" stale="false" population="patients with epilepsy" measured-compound="antiepileptic drugs" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Saruwatari2010_final_population_pharmacokineti" status="not_reviewed" stale="false" population="patients with epilepsy" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Parameterization:** mechanistic.
+**Parameterization:** not captured.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not captured`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `not_reviewed`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 _No resolved parameters._
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| CL | Q22 | not captured | exact |
-
 ## Departures & gaps
-
-**Interpretation flags:**
-- dropped unlinked row (NIL): 'Carbamazepine' — extend the ontology if this is a real PK parameter (source ['Saruwatari_2010_table_2:row0:col1'])
-- dropped unlinked row (NIL): 'Phenobarbital' — extend the ontology if this is a real PK parameter (source ['Saruwatari_2010_table_2:row1:col1'])
-- dropped unlinked row (NIL): 'Phenytoin' — extend the ontology if this is a real PK parameter (source ['Saruwatari_2010_table_2:row3:col1'])
-- dropped unlinked row (NIL): 'Valproic acid' — extend the ontology if this is a real PK parameter (source ['Saruwatari_2010_table_2:row5:col1'])
-- dropped unlinked row (NIL): 'Zonisamide' — extend the ontology if this is a real PK parameter (source ['Saruwatari_2010_table_2:row6:col1'])
-- table mostly unlinked (5/5 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=antiepileptic drugs
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- bound model equation to Q22 (CL): CL = 0.17 * (BW/40)^0.11 * Dose0.45 * 1.40PHT * 1.21PB * 1.08CYP3A5*3/*3 * eηCL
-- Q22 (CL) is equation-defined: value moved to equation-variable 'CL'; equation kept verbatim
-- status held at route_to_review — not promoted
-- population split: 'final population pharmacokinetic model' subgroup of Saruwatari_2010 (paper reports 2 populations: final population pharmacokinetic model, genetic polymorphisms)
 
 **Extraction notes:**
 - unparsed cell pharmaceuticals-03-02709-t003:row1:col3 = '[12,43,44]'
@@ -59,7 +47,7 @@ _No comparable checks._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_carbamazepine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Saruwatari_2010` / `Saruwatari_2010::final_population_pharmacokinetic_model`)
+- scholar stages: `../../../knowledgebase/drugs/drug_carbamazepine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Saruwatari_2010` / `Saruwatari_2010::final_population_pharmacokinetic_model::patients with epilepsy`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -26,13 +26,15 @@ Lasmiditan, in contrast, is a highly selective agonist of 5-HT<sub>1F</sub> rece
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Tsai_2021](drugs/drug_lasmiditan/Lasmiditan_Tsai2021_iiva_see.md) | Tsai M et al., Pharmacokinetics, Safety, and Tolerabil…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00966-z](https://doi.org/10.1007/s40262-020-00966-z) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Tsai_2021](drugs/drug_lasmiditan/Lasmiditan_Tsai2021_iiva_see_pediatric_patients_with_migrain.md) | Tsai M et al., Pharmacokinetics, Safety, and Tolerabil…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00966-z](https://doi.org/10.1007/s40262-020-00966-z) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Tsai_2021](drugs/drug_lasmiditan/Lasmiditan_Tsai2021_population_mean_see.md) | Tsai M et al., Pharmacokinetics, Safety, and Tolerabil…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00966-z](https://doi.org/10.1007/s40262-020-00966-z) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Tsai_2021](drugs/drug_lasmiditan/Lasmiditan_Tsai2021_population_mean_see_pediatric_patients_w.md) | Tsai M et al., Pharmacokinetics, Safety, and Tolerabil…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00966-z](https://doi.org/10.1007/s40262-020-00966-z) |
 
 ## Coverage
 
 - **PubMed hits:** 27 matched, 27 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

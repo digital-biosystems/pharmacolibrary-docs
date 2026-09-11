@@ -23,14 +23,14 @@ The current standard of migraine therapy involves abortive treatment with "tript
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Comisar_2025](drugs/drug_rimegepant/Rimegepant_Comisar2025_reference.md) | Comisar (2025) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Comisar_2025](drugs/drug_rimegepant/Rimegepant_Comisar2025_reference.md) | Comisar (2025) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Comisar_2025_2](drugs/drug_rimegepant/Rimegepant_Comisar2025v2_reference.md) | Comisar (2025) | — |
 
 ## Coverage
 
 - **PubMed hits:** 24 matched, 22 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

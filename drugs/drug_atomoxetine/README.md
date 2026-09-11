@@ -23,8 +23,8 @@ Long-acting formulations of psychostimulants (such as [DB00422], [DB01576], and 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Cheng_2024](drugs/drug_atomoxetine/Atomoxetine_Cheng2024_reference.md) | Cheng S et al., Population Pharmacokinetic Analysis of…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3155](https://doi.org/10.1002/cpt.3155) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Tobin_2026](drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md) | Tobin KV et al., Understanding Atomoxetine Exposure Vari…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70168](https://doi.org/10.1002/jcph.70168) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Cheng_2024](drugs/drug_atomoxetine/Atomoxetine_Cheng2024_reference.md) | Cheng S et al., Population Pharmacokinetic Analysis of…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3155](https://doi.org/10.1002/cpt.3155) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Tobin_2026](drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md) | Tobin KV et al., Understanding Atomoxetine Exposure Vari…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70168](https://doi.org/10.1002/jcph.70168) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Notsu_2020](drugs/drug_atomoxetine/Atomoxetine_Notsu2020_reference.md) | Notsu Y et al., Simple pharmacokinetic models accountin…, Drug metabolism and pharmac… (2020) | [10.1016/j.dmpk.2019.08.005](https://doi.org/10.1016/j.dmpk.2019.08.005) |
 
 ## Pharmacodynamics (PD)
@@ -77,7 +77,7 @@ Long-acting formulations of psychostimulants (such as [DB00422], [DB01576], and 
 
 - **PubMed hits:** 238 matched, 73 returned
 - **screened:** 3  ·  **relevant:** 4
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

@@ -21,9 +21,9 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Farrell_2014](drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md) | Farrell C et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2014) | [10.1111/bcp.12244](https://doi.org/10.1111/bcp.12244) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Gibiansky_2011](drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md) | Gibiansky E et al., Population pharmacokinetics of eltrombo…, Journal of clinical pharmac… (2011) | [10.1177/0091270010375427](https://doi.org/10.1177/0091270010375427) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Saleh_2019](drugs/drug_eltrombopag/Eltrombopag_Saleh2019_reference.md) | Saleh MI et al., Bayesian Population Pharmacokinetic Mod…, European journal of drug me… (2019) | [10.1007/s13318-018-0490-x](https://doi.org/10.1007/s13318-018-0490-x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Farrell_2014](drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md) | Farrell C et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2014) | [10.1111/bcp.12244](https://doi.org/10.1111/bcp.12244) |
 
 ## Pharmacodynamics (PD)
 
@@ -35,7 +35,7 @@
 
 - **PubMed hits:** 18 matched, 17 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

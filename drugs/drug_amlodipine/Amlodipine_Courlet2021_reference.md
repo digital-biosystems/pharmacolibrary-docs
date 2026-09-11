@@ -1,8 +1,20 @@
 # amlodipine — `Amlodipine_Courlet2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge; the simulated model does not reproduce a value the paper reports; the engineer did not exercise the covariate scenarios this record defines. Evidence: T1_cmax — expected 1.3599999999999999e-05 — got 0.0024455167108007993 — ratio 179.8174; T2_covariates_not_exercised
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+2. Open the paper's reported table and confirm the target value and its units.
+3. Compare with the transcribed value in _transcribev2.yaml for this stem.
+4. If the transcription is right, the extracted parameters are suspect — check CL and volume in _interpretv2.yaml against the paper.
+5. If the transcription is wrong, fix the extraction; the model rebuild follows.
+6. Advisory only — the base model still replicates.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,19 +23,21 @@ Courlet P; Guidi M; Alves Saldanha S; Cavassini M; Stoeckle M; Buclin T; et al. 
   ·  DOI: [10.1007/s00228-020-03060-2](https://doi.org/10.1007/s00228-020-03060-2)
 
 ## Model component
-<dbs-pgx drug="amlodipine" model-id="Amlodipine_Courlet2021_reference" status="extracted" stale="false" population="adults living with HIV" measured-compound="amlodipine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="amlodipine" model-id="Amlodipine_Courlet2021_reference" status="not_modelled" stale="false" population="adults living with HIV" measured-compound="amlodipine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 17.09 | L/h | 4.747222222222223e-06 | L/h | not captured | review (0.7) | Courlet_2021:review | — | not captured |
-| V/F (L) | `Q76` · V/F | 1000.0 | L | 1.0 | L | not captured | review (0.7) | Courlet_2021:review | — | not captured |
-| ka | `Q49` · kabs | 0.66 | h−1 | 0.00018333333333333334 | 1/h | not captured | review (0.7) | Courlet_2021:review | — | not captured |
-| ALAG | `Q83` · tlag | 0.86 | h | 3096.0 | h | not captured | review (0.7) | Courlet_2021:review | — | not captured |
-| CYP2D6 | `Q900` · CYP2D6 | {'G/A': -0.2, 'G/G': 0.0, 'IM': -0.0542, 'NM': -0.0082, 'PM': -0.0853, 'UM': 0.0709} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
-| SLC22A1 | `Q900` · SLC22A1 | {'G/A': -0.2, 'G/G': 0.0, 'IM': -0.0542, 'NM': -0.0082, 'PM': -0.0853, 'UM': 0.0709} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Courlet_2021:review | — | not captured |
+| V/F (L) | `Q76` · V/F | —(suppressed) | L | — | L | not captured | review (0.7) | Courlet_2021:review | — | not captured |
+| ka | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review (0.7) | Courlet_2021:review | — | not captured |
+| ALAG | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review (0.7) | Courlet_2021:review | — | not captured |
+| CYP2D6 | `Q900` · CYP2D6 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| SLC22A1 | `Q900` · SLC22A1 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -62,6 +76,19 @@ Courlet P; Guidi M; Alves Saldanha S; Cavassini M; Stoeckle M; Buclin T; et al. 
 | C9_phys_window_Q27 | pass | clearance within physiological range | 17.1 L/h | not captured | not captured | ['Courlet_2021:review'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 1e+03 L | not captured | not captured | ['Courlet_2021:review'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=amlodipine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_cmax | reference | fail | 1.3599999999999999e-05 | 0.0024455167108007993 | 179.8174 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmin_ss | reference | skipped | 10.2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 40.8 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -69,7 +96,8 @@ Courlet P; Guidi M; Alves Saldanha S; Cavassini M; Stoeckle M; Buclin T; et al. 
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_amlodipine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Courlet_2021` / `Courlet_2021::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_amlodipine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Courlet_2021` / `Courlet_2021::review reference`)
+- sim: `../../../knowledgebase/drugs/drug_amlodipine/models/modelica/Amlodipine_Courlet2021_review_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

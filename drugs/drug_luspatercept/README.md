@@ -26,7 +26,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chen_2021](drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md) | Chen N et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1696](https://doi.org/10.1002/jcph.1696) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Chen_2021](drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md) | Chen N et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1696](https://doi.org/10.1002/jcph.1696) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Chen_2020](drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md) | Chen N et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12521](https://doi.org/10.1002/psp4.12521) |
 
 ## Pharmacodynamics (PD)
@@ -41,7 +41,7 @@
 
 - **PubMed hits:** 12 matched, 11 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

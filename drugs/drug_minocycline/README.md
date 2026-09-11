@@ -23,9 +23,9 @@ Minocycline was granted FDA approval on 30 June 1971.[L11695]
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Pardos_2024](drugs/drug_minocycline/Minocycline_Pardos2024_reference.md) | Pardos SL et al., Population pharmacokinetics/pharmacodyn…, The Journal of antimicrobia… (2024) | [10.1093/jac/dkae363](https://doi.org/10.1093/jac/dkae363) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Tynan_2016](drugs/drug_minocycline/Minocycline_Tynan2016_reference.md) | Tynan BE et al., Pharmacokinetics of minocycline in dome…, Journal of feline medicine… (2016) | [10.1177/1098612X15579114](https://doi.org/10.1177/1098612X15579114) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.2567)</sub><br><sub>route_to: `human_review`</sub> | [Athanassa_2025](drugs/drug_minocycline/Minocycline_Athanassa2025_reference.md) | Athanassa Z et al., Population pharmacokinetic model of ora…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf090](https://doi.org/10.1093/jac/dkaf090) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Pardos_2024](drugs/drug_minocycline/Minocycline_Pardos2024_reference.md) | Pardos SL et al., Population pharmacokinetics/pharmacodyn…, The Journal of antimicrobia… (2024) | [10.1093/jac/dkae363](https://doi.org/10.1093/jac/dkae363) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Tynan_2016](drugs/drug_minocycline/Minocycline_Tynan2016_reference.md) | Tynan BE et al., Pharmacokinetics of minocycline in dome…, Journal of feline medicine… (2016) | [10.1177/1098612X15579114](https://doi.org/10.1177/1098612X15579114) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Barrasa_2024](drugs/drug_minocycline/Minocycline_Barrasa2024_reference.md) | Barrasa H et al., Optimizing Antibiotic Therapy for, Antibiotics (Basel, Switzer… (2024) | [10.3390/antibiotics13060553](https://doi.org/10.3390/antibiotics13060553) |
 
 ## Pharmacodynamics (PD)
@@ -39,7 +39,7 @@ Minocycline was granted FDA approval on 30 June 1971.[L11695]
 
 - **PubMed hits:** 69 matched, 44 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 2  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

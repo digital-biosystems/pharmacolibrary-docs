@@ -16,7 +16,9 @@
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Dede_2017](drugs/toxin_lead/Lead_Dede2017_exposure.md) | Dede E et al., Physiologically-based pharmacokinetic a… (2017) | [10.1016/j.etap.2017.12.003](https://doi.org/10.1016/j.etap.2017.12.003) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Dede_2017](drugs/toxin_lead/Lead_Dede2017_exposure_adult_humans.md) | Dede E et al., Physiologically-based pharmacokinetic a… (2017) | [10.1016/j.etap.2017.12.003](https://doi.org/10.1016/j.etap.2017.12.003) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Dede_2017](drugs/toxin_lead/Lead_Dede2017_optimal.md) | Dede E et al., Physiologically-based pharmacokinetic a… (2017) | [10.1016/j.etap.2017.12.003](https://doi.org/10.1016/j.etap.2017.12.003) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Dede_2017](drugs/toxin_lead/Lead_Dede2017_optimal_adult_humans.md) | Dede E et al., Physiologically-based pharmacokinetic a… (2017) | [10.1016/j.etap.2017.12.003](https://doi.org/10.1016/j.etap.2017.12.003) |
 
 ## Pharmacogenomics (PGx)
 
@@ -43,7 +45,7 @@
 
 - **PubMed hits:** 27159 matched, 258 returned
 - **screened:** 15  ·  **relevant:** 12
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 4  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

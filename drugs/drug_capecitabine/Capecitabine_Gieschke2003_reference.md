@@ -2,7 +2,22 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `kabs`, `fu`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** a structural parameter has the wrong dimension; a compartment is unreachable, or a metabolite is unlinked.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
+4. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
+5. Parent/metabolite records commonly miss the formation link.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `capecitabine`, measured `capecitabine metabolites`.
 
@@ -85,7 +100,7 @@ Gieschke R; Burger HU; Reigner B; Blesch KS; Steimer JL et al. (2003). British j
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_capecitabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gieschke_2003` / `Gieschke_2003::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_capecitabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Gieschke_2003` / `Gieschke_2003::patients with advanced or metastatic colorectal cancer`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -1,8 +1,18 @@
 # fremanezumab — `Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+2. Advisory only — the base model still replicates.
+3. Check the record's covariate_definitions in _interpretv2.yaml.
+4. Re-run the engineer for this drug if the covariate curves are wanted.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,25 +21,14 @@ Jones A; Cohen-Barak O; Radivojevic A; Fiedler-Kelly J et al. (2021). Pharmaceut
   ·  DOI: [10.3390/pharmaceutics13060785](https://doi.org/10.3390/pharmaceutics13060785)
 
 ## Model component
-<dbs-pgx drug="fremanezumab" model-id="Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de" status="extracted" stale="false" population="pediatric patients with migraine" measured-compound="fremanezumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="fremanezumab" model-id="Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de" status="not_modelled" stale="false" population="pediatric patients with migraine" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Parameterization:** mechanistic.
+**Parameterization:** not captured.
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL: central clearance (L/day) | `Q22` · CL | 0.0905 | L/day | 1.0474537037037038e-09 | [l] / [d] | not captured | llm_confirmed (0.6) | pharmaceutics-13-00785-t001:row1:col2 | — | not captured |
-| Vc: central volume of distribution (L) | `Q63` · V1 | 1.89 | L | 0.00189 | [l] | not captured | llm_corrected (0.6) | pharmaceutics-13-00785-t001:row3:col2 | — | not captured |
-| ka: absorption rate constant (1/day) | `Q49` · kabs | 0.252 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | pharmaceutics-13-00785-t001:row5:col2 | — | not captured |
-| Q: intercompartmental clearance (L/day) | `Q30` · Q | 0.262 | L/day | 3.0324074074074076e-09 | [l] / [d] | not captured | llm_confirmed (0.6) | pharmaceutics-13-00785-t001:row6:col2 | — | not captured |
-| Vp: peripheral volume of distribution (L) | `Q64` · V2 | 1.72 | L | 0.00172 | [l] | not captured | llm_corrected (0.6) | pharmaceutics-13-00785-t001:row7:col2 | — | not captured |
-| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 0.245 | not captured | not captured | not captured | not captured | not captured (not captured) | pharmaceutics-13-00785-t001:row2:col2 | — | not captured |
-| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 1.20 | not captured | not captured | not captured | not captured | not captured (not captured) | pharmaceutics-13-00785-t001:row4:col2 | — | not captured |
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
@@ -51,21 +50,13 @@ Jones A; Cohen-Barak O; Radivojevic A; Fiedler-Kelly J et al. (2021). Pharmaceut
 
 ## Validation
 
-**Scholar closed-form checks:**
+**Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
+| check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-13-00785-t001:row1:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-13-00785-t001:row6:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-13-00785-t001:row3:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-13-00785-t001:row7:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0905 | not captured | not captured | ['pharmaceutics-13-00785-t001:row1:col2'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00377 L/h | not captured | not captured | ['pharmaceutics-13-00785-t001:row1:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 1.89 L | not captured | not captured | ['pharmaceutics-13-00785-t001:row3:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 1.72 L | not captured | not captured | ['pharmaceutics-13-00785-t001:row7:col2'] |
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -74,7 +65,7 @@ Jones A; Cohen-Barak O; Radivojevic A; Fiedler-Kelly J et al. (2021). Pharmaceut
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_fremanezumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jones_2021` / `Jones_2021::pediatric_model_to_support_phase_3_development_1`)
+- scholar stages: `../../../knowledgebase/drugs/drug_fremanezumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jones_2021` / `Jones_2021::pediatric_model_to_support_phase_3_development_1::pediatric patients with migraine`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

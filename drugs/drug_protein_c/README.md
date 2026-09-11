@@ -28,18 +28,25 @@ Along with other blood coagulation factors, it is used to reverse acquired coagu
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Li_2025](drugs/drug_protein_c/ProteinC_Li2025_adolescents_12_to_16_y_n_3.md) | Li (2025) | — |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Li_2025](drugs/drug_protein_c/ProteinC_Li2025_adolescents_12_to_16_y_n_3_patients_with_sev.md) | Li (2025) | — |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Li_2025](drugs/drug_protein_c/ProteinC_Li2025_adults_16_y_n_9.md) | Li (2025) | — |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Li_2025](drugs/drug_protein_c/ProteinC_Li2025_adults_16_y_n_9_patients_with_severe_congeni.md) | Li (2025) | — |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Li_2025](drugs/drug_protein_c/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10.md) | Li (2025) | — |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Li_2025](drugs/drug_protein_c/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10_patie.md) | Li (2025) | — |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Li_2025](drugs/drug_protein_c/ProteinC_Li2025_population_estimate.md) | Li (2025) | — |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Li_2025](drugs/drug_protein_c/ProteinC_Li2025_population_estimate_patients_with_severe_con.md) | Li (2025) | — |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Li_2025_2](drugs/drug_protein_c/ProteinC_Li2025v2_percentage_relative_standard_error.md) | Li (2025) | — |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Li_2025_2](drugs/drug_protein_c/ProteinC_Li2025v2_percentage_relative_standard_error_patient.md) | Li (2025) | — |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Li_2025_2](drugs/drug_protein_c/ProteinC_Li2025v2_population_estimate.md) | Li (2025) | — |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Li_2025_2](drugs/drug_protein_c/ProteinC_Li2025v2_population_estimate_patients_with_severe_c.md) | Li (2025) | — |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Li_2025_2](drugs/drug_protein_c/ProteinC_Li2025v2_standard_error.md) | Li (2025) | — |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Li_2025_2](drugs/drug_protein_c/ProteinC_Li2025v2_standard_error_patients_with_severe_congen.md) | Li (2025) | — |
 
 ## Coverage
 
 - **PubMed hits:** 143 matched, 62 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 7  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 14  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -23,15 +23,15 @@ Use of the first-generation antipsychotics (including haloperidol) is considered
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Li_2022](drugs/drug_haloperidol/Haloperidol_Li2022_reference.md) | Li L et al., Pharmacokinetics of Haloperidol in Crit…, Pharmaceutics (2022) | [10.3390/pharmaceutics14030549](https://doi.org/10.3390/pharmaceutics14030549) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Pilla_2013](drugs/drug_haloperidol/Haloperidol_Pilla2013_reference.md) | Pilla (2013) | — |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.4134)</sub><br><sub>route_to: `human_review`</sub> | [Franken_2017](drugs/drug_haloperidol/Haloperidol_Franken2017_reference.md) | Franken LG et al., Population pharmacokinetics of haloperi…, European journal of clinica… (2017) | [10.1007/s00228-017-2283-6](https://doi.org/10.1007/s00228-017-2283-6) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Li_2022](drugs/drug_haloperidol/Haloperidol_Li2022_reference.md) | Li L et al., Pharmacokinetics of Haloperidol in Crit…, Pharmaceutics (2022) | [10.3390/pharmaceutics14030549](https://doi.org/10.3390/pharmaceutics14030549) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Pilla_2013](drugs/drug_haloperidol/Haloperidol_Pilla2013_reference.md) | Pilla (2013) | — |
 
 ## Coverage
 
 - **PubMed hits:** 169 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 4
-- **records:** 3  ·  extracted 2  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

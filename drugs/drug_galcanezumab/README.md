@@ -22,8 +22,10 @@
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Kielbasa_2020](drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_final.md) | Kielbasa W et al., Population Pharmacokinetics of Galcanez…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1511](https://doi.org/10.1002/jcph.1511) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kielbasa_2020](drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_final_healthy_individuals_and_pati.md) | Kielbasa W et al., Population Pharmacokinetics of Galcanez…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1511](https://doi.org/10.1002/jcph.1511) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Fiedler-Kelly_2021](drugs/drug_galcanezumab/Galcanezumab_FiedlerKelly2021_reference.md) | Fiedler-Kelly J et al., Relationship of the Calcitonin Gene-Rel…, Clinical pharmacology in dr… (2021) | [10.1002/cpdd.929](https://doi.org/10.1002/cpdd.929) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kielbasa_2020](drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_base.md) | Kielbasa W et al., Population Pharmacokinetics of Galcanez…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1511](https://doi.org/10.1002/jcph.1511) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kielbasa_2020](drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_base_healthy_individuals_and_patie.md) | Kielbasa W et al., Population Pharmacokinetics of Galcanez…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1511](https://doi.org/10.1002/jcph.1511) |
 
 ## Pharmacogenomics (PGx)
 
@@ -45,7 +47,7 @@
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 1  ·  needs_review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -2,7 +2,14 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** every check the reviewer could run passed
+
+**Steps:**
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `halothane`, measured `alveolar concentration of inhaled anesthetic gases`.
 
@@ -47,7 +54,7 @@ _No resolved parameters._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_desflurane/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hendrickx_2006` / `Hendrickx_2006::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_desflurane/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hendrickx_2006` / `Hendrickx_2006::simulated 70 kg and variable-weight patients under anesthesia`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

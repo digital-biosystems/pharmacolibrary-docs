@@ -1,6 +1,15 @@
 # bisoprolol — `Bisoprolol_Grevel1989_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
+
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,12 +18,12 @@ Grevel J; Thomas P; Whiting B et al. (1989). Clinical pharmacokinetics 17
   ·  DOI: [10.2165/00003088-198917010-00005](https://doi.org/10.2165/00003088-198917010-00005)
 
 ## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Grevel1989_reference" status="needs_review" stale="false" population="patients with essential hypertension, renal impairment, or hepatic cirrhosis" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Grevel1989_reference" status="not_modelled" stale="false" population="patients with essential hypertension, renal impairment, or hepatic cirrhosis" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|

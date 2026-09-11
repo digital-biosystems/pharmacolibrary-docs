@@ -21,13 +21,13 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Aurélie_2023](drugs/drug_arginine/Arginine_Aurlie2023_reference.md) | Aurélie L et al., External Evaluation of Population Pharm…, Pharmaceuticals (Basel, Swi… (2023) | [10.3390/ph16111627](https://doi.org/10.3390/ph16111627) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Camargo_2025](drugs/drug_arginine/Arginine_Camargo2025_reference.md) | Camargo S et al., Complexed Linalool with Beta-Cyclodextr…, Pharmaceuticals (Basel, Swi… (2025) | [10.3390/ph19010037](https://doi.org/10.3390/ph19010037) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Guo_2023](drugs/drug_arginine/Arginine_Guo2023_reference.md) | Guo C et al., PK/PD model-informed dose selection for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12882](https://doi.org/10.1002/psp4.12882) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Henninger_2026](drugs/drug_arginine/Arginine_Henninger2026_reference.md) | Henninger RH et al., Translational Pharmacokinetic-Pharmacod…, Clinical and translational… (2026) | [10.1111/cts.70535](https://doi.org/10.1111/cts.70535) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Schaedeli_2024](drugs/drug_arginine/Arginine_Schaedeli2024_reference.md) | Schaedeli Stark F et al., A population pharmacokinetics model of…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-023-09898-0](https://doi.org/10.1007/s10928-023-09898-0) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2018](drugs/drug_arginine/Arginine_Wang2018_reference.md) | Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate of fo… (2018) | [10.1080/00498254.2017.1370745](https://doi.org/10.1080/00498254.2017.1370745) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yu_2025](drugs/drug_arginine/Arginine_Yu2025_reference.md) | Yu H et al., Predicting Vancomycin Clearance in Neon…, Clinical and translational… (2025) | [10.1111/cts.70293](https://doi.org/10.1111/cts.70293) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Aurélie_2023](drugs/drug_arginine/Arginine_Aurlie2023_reference.md) | Aurélie L et al., External Evaluation of Population Pharm…, Pharmaceuticals (Basel, Swi… (2023) | [10.3390/ph16111627](https://doi.org/10.3390/ph16111627) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Camargo_2025](drugs/drug_arginine/Arginine_Camargo2025_reference.md) | Camargo S et al., Complexed Linalool with Beta-Cyclodextr…, Pharmaceuticals (Basel, Swi… (2025) | [10.3390/ph19010037](https://doi.org/10.3390/ph19010037) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Guo_2023](drugs/drug_arginine/Arginine_Guo2023_reference.md) | Guo C et al., PK/PD model-informed dose selection for…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12882](https://doi.org/10.1002/psp4.12882) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Henninger_2026](drugs/drug_arginine/Arginine_Henninger2026_reference.md) | Henninger RH et al., Translational Pharmacokinetic-Pharmacod…, Clinical and translational… (2026) | [10.1111/cts.70535](https://doi.org/10.1111/cts.70535) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Schaedeli_2024](drugs/drug_arginine/Arginine_Schaedeli2024_reference.md) | Schaedeli Stark F et al., A population pharmacokinetics model of…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-023-09898-0](https://doi.org/10.1007/s10928-023-09898-0) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Wang_2018](drugs/drug_arginine/Arginine_Wang2018_reference.md) | Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate of fo… (2018) | [10.1080/00498254.2017.1370745](https://doi.org/10.1080/00498254.2017.1370745) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Yu_2025](drugs/drug_arginine/Arginine_Yu2025_reference.md) | Yu H et al., Predicting Vancomycin Clearance in Neon…, Clinical and translational… (2025) | [10.1111/cts.70293](https://doi.org/10.1111/cts.70293) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Pereira_2024](drugs/drug_arginine/Arginine_Pereira2024_reference.md) | Pereira JNS et al., Translational pharmacokinetic and pharm…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09958-z](https://doi.org/10.1007/s10928-024-09958-z) |
 
 ## Pharmacodynamics (PD)
@@ -60,7 +60,7 @@
 
 - **PubMed hits:** 5210 matched, 122 returned
 - **screened:** 25  ·  **relevant:** 1
-- **records:** 8  ·  extracted 7  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 8  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

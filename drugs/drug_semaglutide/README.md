@@ -37,17 +37,24 @@ Semaglutide is also indicated to reduce the risk of non-fatal myocardial infarct
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Carlsson_2018](drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md) | Carlsson Petri KC et al., Semaglutide s.c. Once-Weekly in Type 2…, Diabetes therapy : research… (2018) | [10.1007/s13300-018-0458-5](https://doi.org/10.1007/s13300-018-0458-5) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Carlsson_2018](drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md) | Carlsson Petri KC et al., Semaglutide s.c. Once-Weekly in Type 2…, Diabetes therapy : research… (2018) | [10.1007/s13300-018-0458-5](https://doi.org/10.1007/s13300-018-0458-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Carlsson_2018](drugs/drug_semaglutide/Semaglutide_Carlsson2018_reference.md) | Carlsson Petri KC et al., Semaglutide s.c. Once-Weekly in Type 2…, Diabetes therapy : research… (2018) | [10.1007/s13300-018-0458-5](https://doi.org/10.1007/s13300-018-0458-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Langeskov_2022](drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md) | Langeskov EK et al., Population pharmacokinetic of paracetam…, Pharmacology research & per… (2022) | [10.1002/prp2.962](https://doi.org/10.1002/prp2.962) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Min_2025](drugs/drug_semaglutide/Semaglutide_Min2025_reference.md) | Min JS et al., A Comprehensive Review on the Pharmacok…, Drug design, development an… (2025) | [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Overgaard_2019](drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate.md) | Overgaard (2019) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Overgaard_2019](drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model.md) | Overgaard (2019) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Overgaard_2019](drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3.md) | Overgaard (2019) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Overgaard_2019](drugs/drug_semaglutide/Semaglutide_Overgaard2019_shrinkage.md) | Overgaard (2019) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Overgaard_2019](drugs/drug_semaglutide/Semaglutide_Overgaard2019_two_compartment_final_model.md) | Overgaard (2019) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Overgaard_2021_2](drugs/drug_semaglutide/Semaglutide_Overgaard2021v2_reference.md) | Overgaard (2021) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Xie_2024](drugs/drug_semaglutide/Semaglutide_Xie2024_reference.md) | Xie P et al., A phase 1, randomized, double-blind, pl…, Diabetes, obesity & metabol… (2024) | [10.1111/dom.15624](https://doi.org/10.1111/dom.15624) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yu_2024](drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md) | Yu H et al., Exposure-response modeling for nausea i…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13194](https://doi.org/10.1002/psp4.13194) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Carlsson_2018](drugs/drug_semaglutide/Semaglutide_Carlsson2018_reference.md) | Carlsson Petri KC et al., Semaglutide s.c. Once-Weekly in Type 2…, Diabetes therapy : research… (2018) | [10.1007/s13300-018-0458-5](https://doi.org/10.1007/s13300-018-0458-5) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Carlsson_2018](drugs/drug_semaglutide/Semaglutide_Carlsson2018_reference.md) | Carlsson Petri KC et al., Semaglutide s.c. Once-Weekly in Type 2…, Diabetes therapy : research… (2018) | [10.1007/s13300-018-0458-5](https://doi.org/10.1007/s13300-018-0458-5) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Carlsson_2018](drugs/drug_semaglutide/Semaglutide_Carlsson2018_reference.md) | Carlsson Petri KC et al., Semaglutide s.c. Once-Weekly in Type 2…, Diabetes therapy : research… (2018) | [10.1007/s13300-018-0458-5](https://doi.org/10.1007/s13300-018-0458-5) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Langeskov_2022](drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md) | Langeskov EK et al., Population pharmacokinetic of paracetam…, Pharmacology research & per… (2022) | [10.1002/prp2.962](https://doi.org/10.1002/prp2.962) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Min_2025](drugs/drug_semaglutide/Semaglutide_Min2025_reference.md) | Min JS et al., A Comprehensive Review on the Pharmacok…, Drug design, development an… (2025) | [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Overgaard_2019](drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate_healthy_subjects_and_thos.md) | Overgaard (2019) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Overgaard_2019](drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_healthy_subj.md) | Overgaard (2019) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Overgaard_2019](drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3.md) | Overgaard (2019) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Overgaard_2019](drugs/drug_semaglutide/Semaglutide_Overgaard2019_shrinkage_healthy_subjects_and_tho.md) | Overgaard (2019) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Overgaard_2019](drugs/drug_semaglutide/Semaglutide_Overgaard2019_two_compartment_final_model_health.md) | Overgaard (2019) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Overgaard_2021_2](drugs/drug_semaglutide/Semaglutide_Overgaard2021v2_reference.md) | Overgaard (2021) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Xie_2024](drugs/drug_semaglutide/Semaglutide_Xie2024_reference.md) | Xie P et al., A phase 1, randomized, double-blind, pl…, Diabetes, obesity & metabol… (2024) | [10.1111/dom.15624](https://doi.org/10.1111/dom.15624) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Yu_2024](drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md) | Yu H et al., Exposure-response modeling for nausea i…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13194](https://doi.org/10.1002/psp4.13194) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Choi_2025](drugs/drug_semaglutide/Semaglutide_Choi2025_reference.md) | Choi S et al., Population pharmacokinetics of efpeglen…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1715585](https://doi.org/10.3389/fphar.2025.1715585) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Guo_2023](drugs/drug_semaglutide/Semaglutide_Guo2023_reference.md) | Guo W et al., Discovery of ecnoglutide - A novel, lon…, Molecular metabolism (2023) | [10.1016/j.molmet.2023.101762](https://doi.org/10.1016/j.molmet.2023.101762) |
 
@@ -136,7 +143,7 @@ Semaglutide is also indicated to reduce the risk of non-fatal myocardial infarct
 
 - **PubMed hits:** 168 matched, 80 returned
 - **screened:** 4  ·  **relevant:** 3
-- **records:** 15  ·  extracted 13  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 22  ·  extracted 7  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

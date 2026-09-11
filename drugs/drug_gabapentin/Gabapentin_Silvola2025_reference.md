@@ -2,7 +2,19 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — engineer.** the topology is outside the template set the engineer can build<br><sub>evidence: `topology_template=manual_model_class`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** every check the reviewer could run passed.
+
+**Steps:**
+1. Not a curation fix — engineer limitation.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -59,7 +71,7 @@ Silvola R; O'Kane A; Heathman M; Marotta H; Trussel H; Ray B; et al. et al. (202
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_gabapentin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Silvola_2025` / `Silvola_2025::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_gabapentin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Silvola_2025` / `Silvola_2025::postpartum lactating women`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

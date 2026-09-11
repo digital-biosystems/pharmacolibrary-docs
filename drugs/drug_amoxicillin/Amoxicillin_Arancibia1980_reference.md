@@ -1,8 +1,20 @@
 # amoxicillin — `Amoxicillin_Arancibia1980_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `k21`, `kel`, `k12`, `AUC∞`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,22 +23,24 @@ Arancibia A; Guttmann J; González G; González C et al. (1980). Antimicrobial a
   ·  DOI: [10.1128/AAC.17.2.199](https://doi.org/10.1128/AAC.17.2.199)
 
 ## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Arancibia1980_reference" status="extracted" stale="false" population="healthy adults" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Arancibia1980_reference" status="not_modelled" stale="false" population="healthy adults" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| tI/2 (h) | `Q57` · t1/2z | 0.27 | h | 972.0000000000001 | [h] | not captured | llm (0.6) | tab_1:row3:col1 | — | not captured |
-| k2l (h-') | `Q302` · k21 | 1.99 | h-' | not captured | [h-'] | not captured | llm (0.6) | tab_1:row4:col1 | — | not captured |
-| k,o (h-') | `Q47` · kel | 1.16 | h-' | not captured | [h-'] | not captured | llm (0.6) | tab_1:row5:col1 | — | not captured |
-| k12 (h-') | `Q301` · k12 | 0.92 | h-' | not captured | [h-'] | not captured | exact (1.0) | tab_1:row6:col1 | — | not captured |
-| CIB (liters/h) | `Q22` · CL | 13.3 | liters/h | 3.6944444444444446e-06 | [l] / [h] | not captured | llm (0.6) | tab_1:row7:col1 | — | not captured |
-| V, (liters) | `Q61` · V | 11.8 | liters | 0.011800000000000001 | [l] | not captured | llm (0.6) | tab_1:row8:col1 | — | not captured |
-| AUC, 0-ac (mg/liter | `Q17` · AUC∞ | 37.0 | h-' | not captured | [h-'] | not captured | llm_corrected (0.6) | tab_1:row11:col1 | — | not captured |
-| ka (h−1) | `Q49` · kabs | 0.17 | h−1 | 4.722222222222223e-05 | 1/h | not captured | review_gapfill (0.7) | Baklouti_2026:review | — | not captured |
-| T lagpo | `Q83` · tlag | 0.25 | h | 900.0 | h | not captured | review_gapfill (0.7) | Dubbelboer_2025:review | — | not captured |
+| tI/2 (h) | `Q57` · t1/2z | —(suppressed) | h | — | [h] | not captured | llm (0.6) | tab_1:row3:col1 | — | not captured |
+| k2l (h-') | `Q302` · k21 | —(suppressed) | h-' | — | [h-'] | not captured | llm (0.6) | tab_1:row4:col1 | — | not captured |
+| k,o (h-') | `Q47` · kel | —(suppressed) | h-' | — | [h-'] | not captured | llm (0.6) | tab_1:row5:col1 | — | not captured |
+| k12 (h-') | `Q301` · k12 | —(suppressed) | h-' | — | [h-'] | not captured | exact (1.0) | tab_1:row6:col1 | — | not captured |
+| CIB (liters/h) | `Q22` · CL | —(suppressed) | liters/h | — | [l] / [h] | not captured | llm (0.6) | tab_1:row7:col1 | — | not captured |
+| V, (liters) | `Q61` · V | —(suppressed) | liters | — | [l] | not captured | llm (0.6) | tab_1:row8:col1 | — | not captured |
+| AUC, 0-ac (mg/liter | `Q17` · AUC∞ | —(suppressed) | h-' | — | [h-'] | not captured | llm_corrected (0.6) | tab_1:row11:col1 | — | not captured |
+| ka (h−1) | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review_gapfill (0.7) | Baklouti_2026:review | — | not captured |
+| T lagpo | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review_gapfill (0.7) | Dubbelboer_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -86,6 +100,15 @@ Arancibia A; Guttmann J; González G; González C et al. (1980). Antimicrobial a
 | C9_phys_window_Q22 | pass | clearance within physiological range | 13.3 L/h | not captured | not captured | ['tab_1:row7:col1'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 11.8 L | not captured | not captured | ['tab_1:row8:col1'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=amoxicillin) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -93,7 +116,8 @@ Arancibia A; Guttmann J; González G; González C et al. (1980). Antimicrobial a
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_amoxicillin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Arancibia_1980` / `Arancibia_1980::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_amoxicillin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Arancibia_1980` / `Arancibia_1980::healthy volunteers`)
+- sim: `../../../knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_Arancibia1980_healthy_volunteers.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

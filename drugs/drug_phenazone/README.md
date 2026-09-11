@@ -23,8 +23,8 @@ In combination with benzocaine in otic solutions, antipyrine is indicated for th
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Doyle_1981](drugs/drug_phenazone/Phenazone_Doyle1981_reference.md) | Doyle E et al., Comparative pharmacokinetics of antipyr…, Toxicology (1981) | [10.1016/0300-483x(81)90097-4](https://doi.org/10.1016/0300-483x(81)90097-4) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Eichelbaum_1982](drugs/drug_phenazone/Phenazone_Eichelbaum1982_reference.md) | Eichelbaum M et al., Pharmacokinetics and metabolism of anti…, Arzneimittel-Forschung (1982) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Doyle_1981](drugs/drug_phenazone/Phenazone_Doyle1981_reference.md) | Doyle E et al., Comparative pharmacokinetics of antipyr…, Toxicology (1981) | [10.1016/0300-483x(81)90097-4](https://doi.org/10.1016/0300-483x(81)90097-4) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Eichelbaum_1982](drugs/drug_phenazone/Phenazone_Eichelbaum1982_reference.md) | Eichelbaum M et al., Pharmacokinetics and metabolism of anti…, Arzneimittel-Forschung (1982) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -38,7 +38,7 @@ In combination with benzocaine in otic solutions, antipyrine is indicated for th
 
 - **PubMed hits:** 230 matched, 72 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

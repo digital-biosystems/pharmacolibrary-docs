@@ -1,6 +1,20 @@
 # atazanavir — `Atazanavir_Kile2012_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
+
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `CL/F`, `V2/F`, `Q/F`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,12 +23,12 @@ Kile DA; MaWhinney S; Aquilante CL; Rower JE; Castillo-Mancilla JR; Anderson PL 
   ·  DOI: [10.1089/aid.2011.0378](https://doi.org/10.1089/aid.2011.0378)
 
 ## Model component
-<dbs-pgx drug="atazanavir" model-id="Atazanavir_Kile2012_reference" status="needs_review" stale="false" population="HIV-negative volunteers" measured-compound="atazanavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="atazanavir" model-id="Atazanavir_Kile2012_reference" status="not_modelled" stale="false" population="HIV-negative volunteers" measured-compound="atazanavir" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, Q/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|

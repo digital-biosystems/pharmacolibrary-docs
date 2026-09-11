@@ -21,11 +21,12 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chrisp_1990](drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md) | Chrisp P et al., Dilevalol. A review of its pharmacodyna…, Drugs (1990) | [10.2165/00003495-199039020-00007](https://doi.org/10.2165/00003495-199039020-00007) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Young_1988](drugs/drug_doxazosin/Doxazosin_Young1988_reference.md) | Young RA et al., Doxazosin. A review of its pharmacodyna…, Drugs (1988) | [10.2165/00003495-198835050-00003](https://doi.org/10.2165/00003495-198835050-00003) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [unknown_2023](drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md) | unknown (2023) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Aljaeid_2019](drugs/drug_doxazosin/Doxazosin_Aljaeid2019_reference.md) | Aljaeid BM et al., Chitosan-TPP nanoparticles stabilized b…, Drug development and indust… (2019) | [10.1080/03639045.2019.1597105](https://doi.org/10.1080/03639045.2019.1597105) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Chrisp_1990](drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md) | Chrisp P et al., Dilevalol. A review of its pharmacodyna…, Drugs (1990) | [10.2165/00003495-199039020-00007](https://doi.org/10.2165/00003495-199039020-00007) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Young_1988](drugs/drug_doxazosin/Doxazosin_Young1988_reference.md) | Young RA et al., Doxazosin. A review of its pharmacodyna…, Drugs (1988) | [10.2165/00003495-198835050-00003](https://doi.org/10.2165/00003495-198835050-00003) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [unknown_2023](drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md) | unknown (2023) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Aljaeid_2019](drugs/drug_doxazosin/Doxazosin_Aljaeid2019_reference.md) | Aljaeid BM et al., Chitosan-TPP nanoparticles stabilized b…, Drug development and indust… (2019) | [10.1080/03639045.2019.1597105](https://doi.org/10.1080/03639045.2019.1597105) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Vincent_1983](drugs/drug_doxazosin/Doxazosin_Vincent1983_reference.md) | Vincent J et al., Doxazosin, an alpha 1-adrenoceptor anta…, British journal of clinical… (1983) | [10.1111/j.1365-2125.1983.tb01556.x](https://doi.org/10.1111/j.1365-2125.1983.tb01556.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Vincent_1983](drugs/drug_doxazosin/Doxazosin_Vincent1983_reference.md) | Vincent J et al., Doxazosin, an alpha 1-adrenoceptor anta…, British journal of clinical… (1983) | [10.1111/j.1365-2125.1983.tb01556.x](https://doi.org/10.1111/j.1365-2125.1983.tb01556.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -70,7 +71,7 @@
 
 - **PubMed hits:** 119 matched, 49 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 5  ·  extracted 3  ·  needs_review 0  ·  rejected 2  ·  stale 2
+- **records:** 6  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

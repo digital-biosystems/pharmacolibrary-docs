@@ -23,7 +23,9 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Knych_2024](drugs/drug_butorphanol/Butorphanol_Knych2024_estimate.md) | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Knych_2024](drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage.md) | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Pypendop_2021](drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference.md) | Pypendop BH et al., Pharmacokinetics of butorphanol in male…, Journal of veterinary pharm… (2021) | [10.1111/jvp.13014](https://doi.org/10.1111/jvp.13014) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Knych_2024](drugs/drug_butorphanol/Butorphanol_Knych2024_estimate_exercised_thoroughbred_horses.md) | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Knych_2024](drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage_exercised_thoroughbred_horse.md) | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Pypendop_2021](drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference.md) | Pypendop BH et al., Pharmacokinetics of butorphanol in male…, Journal of veterinary pharm… (2021) | [10.1111/jvp.13014](https://doi.org/10.1111/jvp.13014) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Saeed_2026](drugs/drug_butorphanol/Butorphanol_Saeed2026_reference.md) | Saeed AM et al., Butorphanol Pharmacokinetics Across Spe…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70293](https://doi.org/10.1002/psp4.70293) |
 
 ## Pharmacodynamics (PD)
@@ -49,7 +51,7 @@
 
 - **PubMed hits:** 27 matched, 25 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 3  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 6  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

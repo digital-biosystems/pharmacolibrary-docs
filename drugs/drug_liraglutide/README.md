@@ -26,10 +26,15 @@ Liraglutide is also available in combination with [insulin degludec] as an adjun
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Carlsson_2021](drugs/drug_liraglutide/Liraglutide_Carlsson2021_estimate.md) | Carlsson Petri KC et al., Liraglutide pharmacokinetics and exposu…, Pediatric obesity (2021) | [10.1111/ijpo.12799](https://doi.org/10.1111/ijpo.12799) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Carlsson_2021](drugs/drug_liraglutide/Liraglutide_Carlsson2021_estimate_children_adolescents_and_a.md) | Carlsson Petri KC et al., Liraglutide pharmacokinetics and exposu…, Pediatric obesity (2021) | [10.1111/ijpo.12799](https://doi.org/10.1111/ijpo.12799) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Carlsson_2021](drugs/drug_liraglutide/Liraglutide_Carlsson2021_shrinkage.md) | Carlsson Petri KC et al., Liraglutide pharmacokinetics and exposu…, Pediatric obesity (2021) | [10.1111/ijpo.12799](https://doi.org/10.1111/ijpo.12799) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Carlsson_2021](drugs/drug_liraglutide/Liraglutide_Carlsson2021_shrinkage_children_adolescents_and.md) | Carlsson Petri KC et al., Liraglutide pharmacokinetics and exposu…, Pediatric obesity (2021) | [10.1111/ijpo.12799](https://doi.org/10.1111/ijpo.12799) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Overgaard_2016](drugs/drug_liraglutide/Liraglutide_Overgaard2016_total.md) | Overgaard RV et al., Liraglutide 3.0 mg for Weight Managemen…, Clinical pharmacokinetics (2016) | [10.1007/s40262-016-0410-7](https://doi.org/10.1007/s40262-016-0410-7) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Overgaard_2016](drugs/drug_liraglutide/Liraglutide_Overgaard2016_total_overweight_and_obese_adults.md) | Overgaard RV et al., Liraglutide 3.0 mg for Weight Managemen…, Clinical pharmacokinetics (2016) | [10.1007/s40262-016-0410-7](https://doi.org/10.1007/s40262-016-0410-7) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Overgaard_2016](drugs/drug_liraglutide/Liraglutide_Overgaard2016_trial_1.md) | Overgaard RV et al., Liraglutide 3.0 mg for Weight Managemen…, Clinical pharmacokinetics (2016) | [10.1007/s40262-016-0410-7](https://doi.org/10.1007/s40262-016-0410-7) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Overgaard_2016](drugs/drug_liraglutide/Liraglutide_Overgaard2016_trial_1_overweight_and_obese_adult.md) | Overgaard RV et al., Liraglutide 3.0 mg for Weight Managemen…, Clinical pharmacokinetics (2016) | [10.1007/s40262-016-0410-7](https://doi.org/10.1007/s40262-016-0410-7) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Overgaard_2016](drugs/drug_liraglutide/Liraglutide_Overgaard2016_trial_2.md) | Overgaard RV et al., Liraglutide 3.0 mg for Weight Managemen…, Clinical pharmacokinetics (2016) | [10.1007/s40262-016-0410-7](https://doi.org/10.1007/s40262-016-0410-7) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Overgaard_2016](drugs/drug_liraglutide/Liraglutide_Overgaard2016_trial_2_overweight_and_obese_adult.md) | Overgaard RV et al., Liraglutide 3.0 mg for Weight Managemen…, Clinical pharmacokinetics (2016) | [10.1007/s40262-016-0410-7](https://doi.org/10.1007/s40262-016-0410-7) |
 
 ## Pharmacodynamics (PD)
 
@@ -107,7 +112,7 @@ Liraglutide is also available in combination with [insulin degludec] as an adjun
 
 - **PubMed hits:** 170 matched, 88 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 5  ·  extracted 1  ·  needs_review 0  ·  rejected 4  ·  stale 0
+- **records:** 10  ·  extracted 1  ·  needs_review 0  ·  rejected 8  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Screened and excluded

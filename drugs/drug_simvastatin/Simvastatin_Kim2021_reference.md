@@ -1,8 +1,19 @@
 # simvastatin — `Simvastatin_Kim2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge; the simulated model does not reproduce a value the paper reports. Evidence: T1_cmax — expected 2.8769999999999997e-05 — got 0.0007000326755810216 — ratio 24.332; T1_cmax — expected 0.00011395999999999999 — got 0.0007000326755810216 — ratio 6.1428; T1_t_half_terminal — expected 6.77 — got 3.5883313004651174 — ratio 0.53; T1_t_half_terminal — expected 2.62 — got 3.5883313004651174 — ratio 1.3696
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+2. Open the paper's reported table and confirm the target value and its units.
+3. Compare with the transcribed value in _transcribev2.yaml for this stem.
+4. If the transcription is right, the extracted parameters are suspect — check CL and volume in _interpretv2.yaml against the paper.
+5. If the transcription is wrong, fix the extraction; the model rebuild follows.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,18 +22,20 @@ Kim MS; Baek IH et al. (2021). Journal of veterinary pharmacology and therapeuti
   ·  DOI: [10.1111/jvp.12944](https://doi.org/10.1111/jvp.12944)
 
 ## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Kim2021_reference" status="extracted" stale="false" population="beagle dogs" measured-compound="simvastatin" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="simvastatin" model-id="Simvastatin_Kim2021_reference" status="not_modelled" stale="false" population="beagle dogs" measured-compound="simvastatin" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka (h-1) | `Q49` · kabs | 1.83 | h-1 | 0.0005083333333333334 | [1] / [h] | not captured | exact (1.0) | Kim_2021_table_p4_2:row2:col1, Kim_2021_table_p4_2:row2:col2, Kim_2021_table_p4_2:row2:col4, Kim_2021_table_p4_2:row2:col5 | — | not captured |
-| CL/F (L/h) | `Q27` · CL/F | 292 | L/h | 8.11111111111111e-05 | [l] / [h] | not captured | exact (1.0) | Kim_2021_table_p4_2:row3:col1, Kim_2021_table_p4_2:row3:col2, Kim_2021_table_p4_2:row3:col4, Kim_2021_table_p4_2:row3:col5 | — | not captured |
-| Vc/F (L) | `Q290` · V1/F | 1056 | L | 1.056 | [l] | not captured | exact (1.0) | Kim_2021_table_p4_2:row4:col1, Kim_2021_table_p4_2:row4:col2, Kim_2021_table_p4_2:row4:col4, Kim_2021_table_p4_2:row4:col5 | — | not captured |
-| Q/F ( L/h) | `Q69` · Q/F | 73.2 | L/h | 2.0333333333333334e-05 | [l] / [h] | not captured | exact (1.0) | Kim_2021_table_p4_2:row5:col1, Kim_2021_table_p4_2:row5:col2, Kim_2021_table_p4_2:row5:col4, Kim_2021_table_p4_2:row5:col5 | — | not captured |
-| Vp/F (L) | `Q82` · V2/F | 1061 | L | 1.061 | [l] | not captured | exact (1.0) | Kim_2021_table_p4_2:row6:col1, Kim_2021_table_p4_2:row6:col2, Kim_2021_table_p4_2:row6:col4, Kim_2021_table_p4_2:row6:col5 | — | not captured |
+| Ka (h-1) | `Q49` · kabs | —(suppressed) | h-1 | — | [1] / [h] | not captured | exact (1.0) | Kim_2021_table_p4_2:row2:col1, Kim_2021_table_p4_2:row2:col2, Kim_2021_table_p4_2:row2:col4, Kim_2021_table_p4_2:row2:col5 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | Kim_2021_table_p4_2:row3:col1, Kim_2021_table_p4_2:row3:col2, Kim_2021_table_p4_2:row3:col4, Kim_2021_table_p4_2:row3:col5 | — | not captured |
+| Vc/F (L) | `Q290` · V1/F | —(suppressed) | L | — | [l] | not captured | exact (1.0) | Kim_2021_table_p4_2:row4:col1, Kim_2021_table_p4_2:row4:col2, Kim_2021_table_p4_2:row4:col4, Kim_2021_table_p4_2:row4:col5 | — | not captured |
+| Q/F ( L/h) | `Q69` · Q/F | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | Kim_2021_table_p4_2:row5:col1, Kim_2021_table_p4_2:row5:col2, Kim_2021_table_p4_2:row5:col4, Kim_2021_table_p4_2:row5:col5 | — | not captured |
+| Vp/F (L) | `Q82` · V2/F | —(suppressed) | L | — | [l] | not captured | exact (1.0) | Kim_2021_table_p4_2:row6:col1, Kim_2021_table_p4_2:row6:col2, Kim_2021_table_p4_2:row6:col4, Kim_2021_table_p4_2:row6:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,6 +73,31 @@ Kim MS; Baek IH et al. (2021). Journal of veterinary pharmacology and therapeuti
 | C9_phys_window_Q290 | pass | volume within physiological range | 1.06e+03 L | not captured | not captured | ['Kim_2021_table_p4_2:row4:col1', 'Kim_2021_table_p4_2:row4:col2', 'Kim_2021_table_p4_2:row4:col4', 'Kim_2021_table_p4_2:row4:col5'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 1.06e+03 L | not captured | not captured | ['Kim_2021_table_p4_2:row6:col1', 'Kim_2021_table_p4_2:row6:col2', 'Kim_2021_table_p4_2:row6:col4', 'Kim_2021_table_p4_2:row6:col5'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=simvastatin) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_cmax | reference | fail | 2.8769999999999997e-05 | 0.0007000326755810216 | 24.332 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00011395999999999999 | 0.0007000326755810216 | 6.1428 | ng/ ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 1.44 | 0.0007000326755810216 | not captured | unresolved concentration unit (exp 'ng ml -1 mg -1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.42 | 0.0007000326755810216 | not captured | unresolved concentration unit (exp 'ng ml -1 mg -1', sim 'kg/m3') |
+| T1_cmax | reference | fail | 2.8769999999999997e-05 | 0.0007000326755810216 | 24.332 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00011395999999999999 | 0.0007000326755810216 | 6.1428 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.4299999999999999e-06 | 0.0007000326755810216 | 489.5333 | ng/ml→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | fail | 6.77 | 3.5883313004651174 | 0.53 | hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.62 | 3.5883313004651174 | 1.3696 | hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.62 | 3.5883313004651174 | 1.3696 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 6.77 | 3.5883313004651174 | 0.53 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 4.7 | 3.5883313004651174 | 0.7635 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.58 | 17.083327468800476 | 10.8122 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.25 | 17.083327468800476 | 13.6667 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.41 | 17.083327468800476 | 12.1158 | h→SI vs simulated h |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -67,7 +105,8 @@ Kim MS; Baek IH et al. (2021). Journal of veterinary pharmacology and therapeuti
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_simvastatin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kim_2021` / `Kim_2021::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_simvastatin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kim_2021` / `Kim_2021::beagle dogs`)
+- sim: `../../../knowledgebase/drugs/drug_simvastatin/models/modelica/Simvastatin_Kim2021_beagle_dogs.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

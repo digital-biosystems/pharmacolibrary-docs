@@ -34,13 +34,13 @@ Dabrafenib has limitations of use: it is neither indicated for treating patients
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Balakirouchenane_2020](drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_reference.md) | Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (2020) | [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Balakirouchenane_2020](drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_reference.md) | Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (2020) | [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931) |
 
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 1  ·  **relevant:** 3
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

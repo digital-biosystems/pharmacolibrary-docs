@@ -1,8 +1,21 @@
 # exenatide — `Exenatide_Cirincione2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `CLint`, `Km`, `Vmax`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** a structural parameter has the wrong dimension.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -10,12 +23,12 @@
 not matched (stem Cirincione_2017)
 
 ## Model component
-<dbs-pgx drug="exenatide" model-id="Exenatide_Cirincione2017_reference" status="needs_review" stale="false" population="patients with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="exenatide" model-id="Exenatide_Cirincione2017_reference" status="rejected" stale="false" population="patients with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `rejected`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -55,7 +68,7 @@ not matched (stem Cirincione_2017)
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_exenatide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cirincione_2017` / `Cirincione_2017::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_exenatide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cirincione_2017` / `Cirincione_2017::single_dose_model_parameter_estimate::patients with type 2 diabetes mellitus`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

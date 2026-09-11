@@ -31,13 +31,13 @@ Before administering lovastatin, it is important to rule out the presence of sec
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Huff_1992](drugs/drug_lovastatin/Lovastatin_Huff1992_reference.md) | Huff MW et al., Dietary fish oil plus lovastatin decrea…, Arteriosclerosis and thromb… (1992) | [10.1161/01.atv.12.8.902](https://doi.org/10.1161/01.atv.12.8.902) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Huff_1992](drugs/drug_lovastatin/Lovastatin_Huff1992_reference.md) | Huff MW et al., Dietary fish oil plus lovastatin decrea…, Arteriosclerosis and thromb… (1992) | [10.1161/01.atv.12.8.902](https://doi.org/10.1161/01.atv.12.8.902) |
 
 ## Coverage
 
 - **PubMed hits:** 24 matched, 16 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

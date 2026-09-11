@@ -21,14 +21,14 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Asiimwe_2024](drugs/drug_desipramine/Desipramine_Asiimwe2024_reference.md) | Asiimwe IG et al., Machine-Learning Assisted Screening of…, The AAPS journal (2024) | [10.1208/s12248-024-00934-6](https://doi.org/10.1208/s12248-024-00934-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gueorguieva_2010](drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference.md) | Gueorguieva I et al., Desipramine, substrate for CYP2D6 activ…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03731.x](https://doi.org/10.1111/j.1365-2125.2010.03731.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Asiimwe_2024](drugs/drug_desipramine/Desipramine_Asiimwe2024_reference.md) | Asiimwe IG et al., Machine-Learning Assisted Screening of…, The AAPS journal (2024) | [10.1208/s12248-024-00934-6](https://doi.org/10.1208/s12248-024-00934-6) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Gueorguieva_2010](drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference.md) | Gueorguieva I et al., Desipramine, substrate for CYP2D6 activ…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03731.x](https://doi.org/10.1111/j.1365-2125.2010.03731.x) |
 
 ## Coverage
 
 - **PubMed hits:** 76 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 6
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

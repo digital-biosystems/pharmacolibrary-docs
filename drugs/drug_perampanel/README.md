@@ -21,7 +21,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jing_2023](drugs/drug_perampanel/Perampanel_Jing2023_reference.md) | Jing S et al., A Single- and Multiple-Dose Pharmacokin…, Clinical drug investigation (2023) | [10.1007/s40261-022-01241-8](https://doi.org/10.1007/s40261-022-01241-8) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Jing_2023](drugs/drug_perampanel/Perampanel_Jing2023_reference.md) | Jing S et al., A Single- and Multiple-Dose Pharmacokin…, Clinical drug investigation (2023) | [10.1007/s40261-022-01241-8](https://doi.org/10.1007/s40261-022-01241-8) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Li_2024](drugs/drug_perampanel/Perampanel_Li2024_reference.md) | Li S et al., Population pharmacokinetics and dosing…, Epilepsia (2024) | [10.1111/epi.17954](https://doi.org/10.1111/epi.17954) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Silva_2023](drugs/drug_perampanel/Perampanel_Silva2023_reference.md) | Silva R et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2023) | [10.3390/pharmaceutics15061704](https://doi.org/10.3390/pharmaceutics15061704) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Takenaka_2018](drugs/drug_perampanel/Perampanel_Takenaka2018_reference.md) | Takenaka O et al., Pharmacokinetic/pharmacodynamic analysi…, Acta neurologica Scandinavi… (2018) | [10.1111/ane.12874](https://doi.org/10.1111/ane.12874) |
@@ -31,7 +31,7 @@
 
 - **PubMed hits:** 17 matched, 11 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 5  ·  extracted 1  ·  needs_review 0  ·  rejected 4  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

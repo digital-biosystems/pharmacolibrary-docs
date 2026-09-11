@@ -25,7 +25,7 @@ PPIs such as esomeprazole have also been shown to inhibit the activity of dimeth
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chung_2022](drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md) | Chung TK et al., A population PK-PD model of YH4808, a n…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Chung_2022](drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md) | Chung TK et al., A population PK-PD model of YH4808, a n…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Gebreyesus_2022](drugs/drug_esomeprazole/Esomeprazole_Gebreyesus2022_reference.md) | Gebreyesus MS et al., Population pharmacokinetics of esomepra…, British journal of clinical… (2022) | [10.1111/bcp.15416](https://doi.org/10.1111/bcp.15416) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Nagase_2020](drugs/drug_esomeprazole/Esomeprazole_Nagase2020_reference.md) | Nagase M et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2020) | [10.1111/jcpt.13129](https://doi.org/10.1111/jcpt.13129) |
 
@@ -39,7 +39,7 @@ PPIs such as esomeprazole have also been shown to inhibit the activity of dimeth
 
 - **PubMed hits:** 29 matched, 16 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

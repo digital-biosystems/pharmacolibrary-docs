@@ -23,12 +23,14 @@ Tamoxifen was granted FDA approval on 30 December 1977.[L7799]
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bosch_2023](drugs/drug_tamoxifen/Tamoxifen_Bosch2023_reference.md) | Bosch F et al., Effect of the P-glycoprotein inhibitor…, Thrombosis research (2023) | [10.1016/j.thromres.2023.05.021](https://doi.org/10.1016/j.thromres.2023.05.021) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Dilli_2022](drugs/drug_tamoxifen/Tamoxifen_Dilli2022_model_structure.md) | Dilli Batcha JS et al., Factors Influencing Pharmacokinetics of…, Biology (2022) | [10.3390/biology12010051](https://doi.org/10.3390/biology12010051) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Dilli_2022](drugs/drug_tamoxifen/Tamoxifen_Dilli2022_parameter_estimates.md) | Dilli Batcha JS et al., Factors Influencing Pharmacokinetics of…, Biology (2022) | [10.3390/biology12010051](https://doi.org/10.3390/biology12010051) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Dilli_2022](drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference.md) | Dilli Batcha JS et al., Factors Influencing Pharmacokinetics of…, Biology (2022) | [10.3390/biology12010051](https://doi.org/10.3390/biology12010051) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mc_2024](drugs/drug_tamoxifen/Tamoxifen_Mc2024_reference.md) | Mc Laughlin AM et al., Nonlinear Mixed-Effects Model of Z-Endo…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3238](https://doi.org/10.1002/cpt.3238) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Xu_2026](drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md) | Xu H et al., Noncanonical NF-κB pathway driven infla…, Frontiers in immunology (2026) | [10.3389/fimmu.2026.1825442](https://doi.org/10.3389/fimmu.2026.1825442) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Bosch_2023](drugs/drug_tamoxifen/Tamoxifen_Bosch2023_reference.md) | Bosch F et al., Effect of the P-glycoprotein inhibitor…, Thrombosis research (2023) | [10.1016/j.thromres.2023.05.021](https://doi.org/10.1016/j.thromres.2023.05.021) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Dilli_2022](drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference.md) | Dilli Batcha JS et al., Factors Influencing Pharmacokinetics of…, Biology (2022) | [10.3390/biology12010051](https://doi.org/10.3390/biology12010051) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Dilli_2022](drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference.md) | Dilli Batcha JS et al., Factors Influencing Pharmacokinetics of…, Biology (2022) | [10.3390/biology12010051](https://doi.org/10.3390/biology12010051) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Dilli_2022](drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference.md) | Dilli Batcha JS et al., Factors Influencing Pharmacokinetics of…, Biology (2022) | [10.3390/biology12010051](https://doi.org/10.3390/biology12010051) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Mc_2024](drugs/drug_tamoxifen/Tamoxifen_Mc2024_reference.md) | Mc Laughlin AM et al., Nonlinear Mixed-Effects Model of Z-Endo…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3238](https://doi.org/10.1002/cpt.3238) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Xu_2026](drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md) | Xu H et al., Noncanonical NF-κB pathway driven infla…, Frontiers in immunology (2026) | [10.3389/fimmu.2026.1825442](https://doi.org/10.3389/fimmu.2026.1825442) |
 
 ## Pharmacodynamics (PD)
 
@@ -122,7 +124,7 @@ Tamoxifen was granted FDA approval on 30 December 1977.[L7799]
 
 - **PubMed hits:** 2287 matched, 109 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 6  ·  extracted 6  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 8  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

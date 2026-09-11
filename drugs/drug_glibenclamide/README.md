@@ -23,13 +23,13 @@ Glyburide was granted FDA approval on 1 May 1984.[L8117] A formulation with metf
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Rambiritch_2016_2](drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_reference.md) | Rambiritch (2016) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Rambiritch_2016_2](drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_reference.md) | Rambiritch (2016) | — |
 
 ## Coverage
 
 - **PubMed hits:** 401 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

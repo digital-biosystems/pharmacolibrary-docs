@@ -26,8 +26,14 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Czock_2022](drugs/drug_roxadustat/Roxadustat_Czock2022_liver_cirrhosis_cp_b.md) | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Czock_2022](drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value.md) | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Czock_2022](drugs/drug_roxadustat/Roxadustat_Czock2022_pharmacodynamics.md) | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Czock_2022](drugs/drug_roxadustat/Roxadustat_Czock2022_reference.md) | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Czock_2022](drugs/drug_roxadustat/Roxadustat_Czock2022_severe_renal_impairment.md) | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Czock_2022](drugs/drug_roxadustat/Roxadustat_Czock2022_reference.md) | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Czock_2022](drugs/drug_roxadustat/Roxadustat_Czock2022_reference.md) | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Czock_2022](drugs/drug_roxadustat/Roxadustat_Czock2022_reference.md) | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Czock_2022](drugs/drug_roxadustat/Roxadustat_Czock2022_reference.md) | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Czock_2022](drugs/drug_roxadustat/Roxadustat_Czock2022_reference.md) | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Czock_2022](drugs/drug_roxadustat/Roxadustat_Czock2022_reference.md) | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Czock_2022](drugs/drug_roxadustat/Roxadustat_Czock2022_reference.md) | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Rekić_2021](drugs/drug_roxadustat/Roxadustat_Reki2021_reference.md) | Rekić D et al., Pharmacokinetics of Roxadustat: A Popul…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00974-z](https://doi.org/10.1007/s40262-020-00974-z) |
 
 ## Pharmacodynamics (PD)
@@ -41,7 +47,7 @@
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 8  ·  extracted 7  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 14  ·  extracted 6  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

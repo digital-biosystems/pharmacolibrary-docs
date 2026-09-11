@@ -25,14 +25,14 @@ Efavirenz is also used in combination with other antiretroviral agents as part o
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chala_2023](drugs/drug_efavirenz/Efavirenz_Chala2023_reference.md) | Chala A et al., Genetic and non-genetic factors influen…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12951](https://doi.org/10.1002/psp4.12951) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Vucicevic_2025](drugs/drug_efavirenz/Efavirenz_Vucicevic2025_reference.md) | Vucicevic K et al., Population Pharmacokinetic-Pharmacogene…, Cureus (2025) | [10.7759/cureus.88533](https://doi.org/10.7759/cureus.88533) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Chala_2023](drugs/drug_efavirenz/Efavirenz_Chala2023_reference.md) | Chala A et al., Genetic and non-genetic factors influen…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12951](https://doi.org/10.1002/psp4.12951) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Vucicevic_2025](drugs/drug_efavirenz/Efavirenz_Vucicevic2025_reference.md) | Vucicevic K et al., Population Pharmacokinetic-Pharmacogene…, Cureus (2025) | [10.7759/cureus.88533](https://doi.org/10.7759/cureus.88533) |
 
 ## Coverage
 
 - **PubMed hits:** 217 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

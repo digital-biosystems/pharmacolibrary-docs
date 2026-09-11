@@ -21,15 +21,15 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Byon_2019](drugs/drug_apixaban/Apixaban_Byon2019_reference.md) | Byon W et al., Apixaban: A Clinical Pharmacokinetic an…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00775-z](https://doi.org/10.1007/s40262-019-00775-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Konecki_2025](drugs/drug_apixaban/Apixaban_Konecki2025_reference.md) | Konecki C et al., Population Pharmacokinetic Modelling of…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01476-6](https://doi.org/10.1007/s40262-025-01476-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Morath_2025](drugs/drug_apixaban/Apixaban_Morath2025_reference.md) | Morath B et al., Effect of Amiodarone on Apixaban Exposu…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01534-z](https://doi.org/10.1007/s40262-025-01534-z) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Byon_2019](drugs/drug_apixaban/Apixaban_Byon2019_reference.md) | Byon W et al., Apixaban: A Clinical Pharmacokinetic an…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00775-z](https://doi.org/10.1007/s40262-019-00775-z) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Konecki_2025](drugs/drug_apixaban/Apixaban_Konecki2025_reference.md) | Konecki C et al., Population Pharmacokinetic Modelling of…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01476-6](https://doi.org/10.1007/s40262-025-01476-6) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Morath_2025](drugs/drug_apixaban/Apixaban_Morath2025_reference.md) | Morath B et al., Effect of Amiodarone on Apixaban Exposu…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01534-z](https://doi.org/10.1007/s40262-025-01534-z) |
 
 ## Coverage
 
 - **PubMed hits:** 47 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

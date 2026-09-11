@@ -24,14 +24,17 @@ Icatibant was approved by the FDA on August 25, 2011, and by the EMA in 2008 as 
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Wang_2021](drugs/drug_icatibant/Icatibant_Wang2021_shrinkage.md) | Wang Y et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1768](https://doi.org/10.1002/jcph.1768) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Wang_2021](drugs/drug_icatibant/Icatibant_Wang2021_shrinkage_pediatric_and_adult_patients_wi.md) | Wang Y et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1768](https://doi.org/10.1002/jcph.1768) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Wang_2021](drugs/drug_icatibant/Icatibant_Wang2021_typical_value.md) | Wang Y et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1768](https://doi.org/10.1002/jcph.1768) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Wang_2021](drugs/drug_icatibant/Icatibant_Wang2021_typical_value_pediatric_and_adult_patient.md) | Wang Y et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1768](https://doi.org/10.1002/jcph.1768) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Wang_2021](drugs/drug_icatibant/Icatibant_Wang2021_typical_value_rse.md) | Wang Y et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1768](https://doi.org/10.1002/jcph.1768) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Wang_2021](drugs/drug_icatibant/Icatibant_Wang2021_typical_value_rse_pediatric_and_adult_pat.md) | Wang Y et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1768](https://doi.org/10.1002/jcph.1768) |
 
 ## Coverage
 
 - **PubMed hits:** 16 matched, 12 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 6  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

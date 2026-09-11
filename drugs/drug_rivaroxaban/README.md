@@ -23,15 +23,19 @@ Rivaroxaban is also indicated for the treatment and prevention of VTE in pediatr
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Alqahtani_2023](drugs/drug_rivaroxaban/Rivaroxaban_Alqahtani2023_reference.md) | Alqahtani S et al., Population Pharmacokinetics of Rivaroxa…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2255](https://doi.org/10.1002/jcph.2255) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Esmaeili_2022](drugs/drug_rivaroxaban/Rivaroxaban_Esmaeili2022_reference.md) | Esmaeili T et al., Rivaroxaban population pharmacokinetic…, Journal of clinical pharmac… (2022) | [10.1111/jcpt.13673](https://doi.org/10.1111/jcpt.13673) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jia_2026](drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference.md) | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Li_2025](drugs/drug_rivaroxaban/Rivaroxaban_Li2025_base.md) | Li (2025) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Li_2025](drugs/drug_rivaroxaban/Rivaroxaban_Li2025_final.md) | Li (2025) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Li_2025](drugs/drug_rivaroxaban/Rivaroxaban_Li2025_reference.md) | Li (2025) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2022](drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling.md) | Liu XQ et al., Population pharmacokinetic and pharmaco…, Acta pharmacologica Sinica (2022) | [10.1038/s41401-022-00892-9](https://doi.org/10.1038/s41401-022-00892-9) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2022](drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling.md) | Liu XQ et al., Population pharmacokinetic and pharmaco…, Acta pharmacologica Sinica (2022) | [10.1038/s41401-022-00892-9](https://doi.org/10.1038/s41401-022-00892-9) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ren_2026](drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_reference.md) | Ren J et al., Population pharmacokinetic and pharmaco…, Research and practice in th… (2026) | [10.1016/j.rpth.2026.106618](https://doi.org/10.1016/j.rpth.2026.106618) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Alqahtani_2023](drugs/drug_rivaroxaban/Rivaroxaban_Alqahtani2023_reference.md) | Alqahtani S et al., Population Pharmacokinetics of Rivaroxa…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2255](https://doi.org/10.1002/jcph.2255) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Esmaeili_2022](drugs/drug_rivaroxaban/Rivaroxaban_Esmaeili2022_reference.md) | Esmaeili T et al., Rivaroxaban population pharmacokinetic…, Journal of clinical pharmac… (2022) | [10.1111/jcpt.13673](https://doi.org/10.1111/jcpt.13673) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Jia_2026](drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference.md) | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Li_2025](drugs/drug_rivaroxaban/Rivaroxaban_Li2025_reference.md) | Li (2025) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Li_2025](drugs/drug_rivaroxaban/Rivaroxaban_Li2025_reference.md) | Li (2025) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Li_2025](drugs/drug_rivaroxaban/Rivaroxaban_Li2025_reference.md) | Li (2025) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Liu_2022](drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling_chinese_patients_wit.md) | Liu XQ et al., Population pharmacokinetic and pharmaco…, Acta pharmacologica Sinica (2022) | [10.1038/s41401-022-00892-9](https://doi.org/10.1038/s41401-022-00892-9) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Liu_2022](drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling_chinese_patients_w.md) | Liu XQ et al., Population pharmacokinetic and pharmaco…, Acta pharmacologica Sinica (2022) | [10.1038/s41401-022-00892-9](https://doi.org/10.1038/s41401-022-00892-9) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ren_2026](drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_reference.md) | Ren J et al., Population pharmacokinetic and pharmaco…, Research and practice in th… (2026) | [10.1016/j.rpth.2026.106618](https://doi.org/10.1016/j.rpth.2026.106618) |
 
 ## Pharmacodynamics (PD)
 
@@ -56,7 +60,7 @@ Rivaroxaban is also indicated for the treatment and prevention of VTE in pediatr
 
 - **PubMed hits:** 434 matched, 68 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 9  ·  extracted 9  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 13  ·  extracted 4  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

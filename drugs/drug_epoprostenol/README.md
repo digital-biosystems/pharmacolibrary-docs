@@ -21,10 +21,10 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Keizer_2010](drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md) | Keizer RJ et al., A model of hypertension and proteinuria…, Journal of pharmacokinetics… (2010) | [10.1007/s10928-010-9164-2](https://doi.org/10.1007/s10928-010-9164-2) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Nicolas_2012](drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md) | Nicolas LB et al., Integrated pharmacokinetics and pharmac…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04301.x](https://doi.org/10.1111/j.1365-2125.2012.04301.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Vizza_2017](drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md) | Vizza CD et al., Efficacy of 1, 5, and 20 mg oral silden…, BMC pulmonary medicine (2017) | [10.1186/s12890-017-0374-x](https://doi.org/10.1186/s12890-017-0374-x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Vucicevic_2025](drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md) | Vucicevic K et al., Population Pharmacokinetic-Pharmacogene…, Cureus (2025) | [10.7759/cureus.88533](https://doi.org/10.7759/cureus.88533) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Keizer_2010](drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md) | Keizer RJ et al., A model of hypertension and proteinuria…, Journal of pharmacokinetics… (2010) | [10.1007/s10928-010-9164-2](https://doi.org/10.1007/s10928-010-9164-2) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Nicolas_2012](drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md) | Nicolas LB et al., Integrated pharmacokinetics and pharmac…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04301.x](https://doi.org/10.1111/j.1365-2125.2012.04301.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Vizza_2017](drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md) | Vizza CD et al., Efficacy of 1, 5, and 20 mg oral silden…, BMC pulmonary medicine (2017) | [10.1186/s12890-017-0374-x](https://doi.org/10.1186/s12890-017-0374-x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Vucicevic_2025](drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md) | Vucicevic K et al., Population Pharmacokinetic-Pharmacogene…, Cureus (2025) | [10.7759/cureus.88533](https://doi.org/10.7759/cureus.88533) |
 
 ## Pharmacodynamics (PD)
 
@@ -55,7 +55,7 @@
 
 - **PubMed hits:** 2856 matched, 141 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 4  ·  extracted 4  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

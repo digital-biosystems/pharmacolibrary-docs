@@ -23,14 +23,14 @@ MDD is a highly prevalent psychiatric disorder, with a lifetime prevalence estim
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mangas-Sanjuán_2023](drugs/drug_desvenlafaxine/Desvenlafaxine_MangasSanjun2023_reference.md) | Mangas-Sanjuán V et al., Alternative Pharmacokinetic Metrics in…, Pharmaceutics (2023) | [10.3390/pharmaceutics15020409](https://doi.org/10.3390/pharmaceutics15020409) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Mangas-Sanjuán_2023](drugs/drug_desvenlafaxine/Desvenlafaxine_MangasSanjun2023_reference.md) | Mangas-Sanjuán V et al., Alternative Pharmacokinetic Metrics in…, Pharmaceutics (2023) | [10.3390/pharmaceutics15020409](https://doi.org/10.3390/pharmaceutics15020409) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2022](drugs/drug_desvenlafaxine/Desvenlafaxine_Wang2022_reference.md) | Wang Z et al., Joint population pharmacokinetic modeli…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.978202](https://doi.org/10.3389/fphar.2022.978202) |
 
 ## Coverage
 
 - **PubMed hits:** 23 matched, 14 returned
 - **screened:** 2  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

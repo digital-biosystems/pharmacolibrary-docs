@@ -21,14 +21,14 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Tanaka_2013](drugs/drug_fosphenytoin/Fosphenytoin_Tanaka2013_reference.md) | Tanaka J et al., Population pharmacokinetics of phenytoi…, European journal of clinica… (2013) | [10.1007/s00228-012-1373-8](https://doi.org/10.1007/s00228-012-1373-8) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Tanaka_2013](drugs/drug_fosphenytoin/Fosphenytoin_Tanaka2013_reference.md) | Tanaka J et al., Population pharmacokinetics of phenytoi…, European journal of clinica… (2013) | [10.1007/s00228-012-1373-8](https://doi.org/10.1007/s00228-012-1373-8) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wainwright_2018](drugs/drug_fosphenytoin/Fosphenytoin_Wainwright2018_reference.md) | Wainwright (2018) | — |
 
 ## Coverage
 
 - **PubMed hits:** 30 matched, 19 returned
 - **screened:** 16  ·  **relevant:** 6
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

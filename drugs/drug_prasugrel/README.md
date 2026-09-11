@@ -21,7 +21,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Moser_2018](drugs/drug_prasugrel/Prasugrel_Moser2018_reference.md) | Moser BA et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0556-y](https://doi.org/10.1007/s40262-017-0556-y) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Moser_2018](drugs/drug_prasugrel/Prasugrel_Moser2018_reference.md) | Moser BA et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0556-y](https://doi.org/10.1007/s40262-017-0556-y) |
 
 ## Pharmacodynamics (PD)
 
@@ -33,7 +33,7 @@
 
 - **PubMed hits:** 22 matched, 20 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

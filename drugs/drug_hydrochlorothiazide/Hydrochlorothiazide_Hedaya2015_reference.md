@@ -1,8 +1,19 @@
 # hydrochlorothiazide — `Hydrochlorothiazide_Hedaya2015_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** the engineer's deviations are not documented and quantified; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised; T6_deviations — got defaulted_parameters: structural deviation not quantified
+
+**Steps:**
+1. Read the .deviation.json and confirm each deviation names what changed and why.
+2. Anything undocumented needs the engineer, not a curator.
+3. Advisory only — the base model still replicates.
+4. Check the record's covariate_definitions in _interpretv2.yaml.
+5. Re-run the engineer for this drug if the covariate curves are wanted.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `irbesartan and hydrochlorothiazide`, measured `irbesartan, hydrochlorothiazide`.
 
@@ -13,18 +24,20 @@ Hedaya MA; Helmy SA et al. (2015). Biopharmaceutics & drug disposition 36
   ·  DOI: [10.1002/bdd.1935](https://doi.org/10.1002/bdd.1935)
 
 ## Model component
-<dbs-pgx drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Hedaya2015_reference" status="extracted" stale="false" population="normotensive subjects" measured-compound="irbesartan, hydrochlorothiazide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Hedaya2015_reference" status="needs_review" stale="false" population="normotensive subjects" measured-compound="irbesartan, hydrochlorothiazide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| mean systemic clearance | `Q22` · CL | 12.2 | L/h | 3.3888888888888884e-06 | L/h | not captured | review_gapfill (0.7) | Devineni_2015:review | — | not captured |
-| volume of distribution | `Q61` · V | 21.0 | L/kg | 1.4700000000000002 | L | not captured | review_gapfill (0.7) | Johnson_2019:review | — | not captured |
-| KA(1/h) | `Q49` · kabs | 0.431 | 1/h | 0.00011972222222222222 | 1/h | not captured | review_gapfill (0.7) | Commander_2021:review | — | not captured |
-| ABCB1 | `Q900` · ABCB1 | {'C/C': 0.0805, 'G/A': -0.0449, 'G/G': 0.0256, 'IM': -0.0199, 'NM': -0.086, 'PM': 0.0, 'T/C': -0.0232, 'T/G': -0.0163, 'T/T': -0.1076, 'UM': -0.0229} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
-| SLC22A1 | `Q900` · SLC22A1 | {'C/C': 0.0805, 'G/A': -0.0449, 'G/G': 0.0256, 'IM': -0.0199, 'NM': -0.086, 'PM': 0.0, 'T/C': -0.0232, 'T/G': -0.0163, 'T/T': -0.1076, 'UM': -0.0229} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| mean systemic clearance | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | review_gapfill (0.7) | Devineni_2015:review | — | not captured |
+| volume of distribution | `Q61` · V | —(suppressed) | L/kg | — | L | not captured | review_gapfill (0.7) | Johnson_2019:review | — | not captured |
+| KA(1/h) | `Q49` · kabs | —(suppressed) | 1/h | — | 1/h | not captured | review_gapfill (0.7) | Commander_2021:review | — | not captured |
+| ABCB1 | `Q900` · ABCB1 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| SLC22A1 | `Q900` · SLC22A1 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -74,6 +87,18 @@ Hedaya MA; Helmy SA et al. (2015). Biopharmaceutics & drug disposition 36
 | C9_phys_window_Q22 | pass | clearance within physiological range | 12.2 L/h | not captured | not captured | ['Devineni_2015:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 1.47e+03 L | not captured | not captured | ['Johnson_2019:review'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T3_output_variable | not captured | pass | C_central (measured=irbesartan, hydrochlorothiazide) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | not captured | 0.0018049521731059025 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | not captured | 0.0018049521731059025 | not captured | non-numeric value |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -82,6 +107,9 @@ Hedaya MA; Helmy SA et al. (2015). Biopharmaceutics & drug disposition 36
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_hydrochlorothiazide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hedaya_2015` / `Hedaya_2015::reference`)
+- model: `../../../knowledgebase/drugs/drug_hydrochlorothiazide/models/modelica/Hydrochlorothiazide_Hedaya2015_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_hydrochlorothiazide/models/modelica/Hydrochlorothiazide_Hedaya2015_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_hydrochlorothiazide/models/modelica/Hydrochlorothiazide_Hedaya2015_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

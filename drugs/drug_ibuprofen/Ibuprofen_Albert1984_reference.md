@@ -1,8 +1,16 @@
 # ibuprofen — `Ibuprofen_Albert1984_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-07-15 08:42:04.620234+00:00) predates the upstream re-run (2026-08-27 06:53:33.644691+00:00). Current validate status: `rejected`.
+### Reviewer guidance
+
+**What is wrong:** a compartment is unreachable, or a metabolite is unlinked
+
+**Steps:**
+1. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
+2. Parent/metabolite records commonly miss the formation link.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,7 +19,7 @@ Albert KS; Gernaat CM et al. (1984). The American journal of medicine 77
   ·  DOI: [10.1016/s0002-9343(84)80017-0](https://doi.org/10.1016/s0002-9343(84)80017-0)
 
 ## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Albert1984_reference" status="rejected" stale="true" population="healthy adults" measured-compound="ibuprofen" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Albert1984_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ibuprofen" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 

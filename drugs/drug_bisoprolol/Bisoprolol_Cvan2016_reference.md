@@ -1,6 +1,23 @@
 # bisoprolol — `Bisoprolol_Cvan2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
+
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `add_error`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. No curator action. Run the engineer for this drug.
+3. Advisory only — the base model still replicates.
+4. Check the record's covariate_definitions in _interpretv2.yaml.
+5. Re-run the engineer for this drug if the covariate curves are wanted.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -8,12 +25,12 @@
 not matched (stem Cvan_2016)
 
 ## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Cvan2016_reference" status="needs_review" stale="false" population="patients with chronic heart failure" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Cvan2016_reference" status="not_modelled" stale="false" population="patients with chronic heart failure" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -86,6 +103,7 @@ not matched (stem Cvan_2016)
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T3_output_variable | not captured | pass | C_central (measured=bisoprolol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
@@ -97,6 +115,7 @@ not matched (stem Cvan_2016)
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_bisoprolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cvan_2016` / `Cvan_2016::patients with chronic heart failure`)
+- sim: `../../../knowledgebase/drugs/drug_bisoprolol/models/modelica/Bisoprolol_Cvan2016_patients_with_chronic_heart_failure.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

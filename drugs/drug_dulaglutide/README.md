@@ -21,11 +21,11 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Admiraal_2023](drugs/drug_dulaglutide/Dulaglutide_Admiraal2023_reference.md) | Admiraal MM et al., Neuroprotection after cardiac arrest wi…, Frontiers in neurology (2023) | [10.3389/fneur.2023.1136046](https://doi.org/10.3389/fneur.2023.1136046) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Min_2025](drugs/drug_dulaglutide/Dulaglutide_Min2025_reference.md) | Min JS et al., A Comprehensive Review on the Pharmacok…, Drug design, development an… (2025) | [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ng_2018](drugs/drug_dulaglutide/Dulaglutide_Ng2018_reference.md) | Ng CM et al., Population pharmacokinetics of exendin-…, British journal of clinical… (2018) | [10.1111/bcp.13463](https://doi.org/10.1111/bcp.13463) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yu_2024](drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference.md) | Yu H et al., Exposure-response modeling for nausea i…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13194](https://doi.org/10.1002/psp4.13194) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zheng_2023](drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference.md) | Zheng S et al., A long-acting GDF15 analog causes robus…, Clinical and translational… (2023) | [10.1111/cts.13543](https://doi.org/10.1111/cts.13543) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Admiraal_2023](drugs/drug_dulaglutide/Dulaglutide_Admiraal2023_reference.md) | Admiraal MM et al., Neuroprotection after cardiac arrest wi…, Frontiers in neurology (2023) | [10.3389/fneur.2023.1136046](https://doi.org/10.3389/fneur.2023.1136046) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Min_2025](drugs/drug_dulaglutide/Dulaglutide_Min2025_reference.md) | Min JS et al., A Comprehensive Review on the Pharmacok…, Drug design, development an… (2025) | [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ng_2018](drugs/drug_dulaglutide/Dulaglutide_Ng2018_reference.md) | Ng CM et al., Population pharmacokinetics of exendin-…, British journal of clinical… (2018) | [10.1111/bcp.13463](https://doi.org/10.1111/bcp.13463) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Yu_2024](drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference.md) | Yu H et al., Exposure-response modeling for nausea i…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13194](https://doi.org/10.1002/psp4.13194) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zheng_2023](drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference.md) | Zheng S et al., A long-acting GDF15 analog causes robus…, Clinical and translational… (2023) | [10.1111/cts.13543](https://doi.org/10.1111/cts.13543) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Choi_2025](drugs/drug_dulaglutide/Dulaglutide_Choi2025_reference.md) | Choi S et al., Population pharmacokinetics of efpeglen…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1715585](https://doi.org/10.3389/fphar.2025.1715585) |
 
 ## Pharmacodynamics (PD)
@@ -60,7 +60,7 @@
 
 - **PubMed hits:** 103 matched, 56 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 6  ·  extracted 5  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 6  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

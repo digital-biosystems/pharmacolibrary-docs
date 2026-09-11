@@ -24,8 +24,11 @@ In particular, erenumab-aooe is a human immunoglobulin G2 monoclonal antibody th
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Vu_2017](drugs/drug_erenumab/Erenumab_Vu2017_mean_estimate.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Vu_2017](drugs/drug_erenumab/Erenumab_Vu2017_mean_estimate_healthy_and_migraine_subjects.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Vu_2017](drugs/drug_erenumab/Erenumab_Vu2017_shrinkage.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Vu_2017](drugs/drug_erenumab/Erenumab_Vu2017_shrinkage_healthy_and_migraine_subjects.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Vu_2017](drugs/drug_erenumab/Erenumab_Vu2017_units.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Vu_2017](drugs/drug_erenumab/Erenumab_Vu2017_units_healthy_and_migraine_subjects.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
 
 ## Pharmacodynamics (PD)
 
@@ -39,7 +42,7 @@ In particular, erenumab-aooe is a human immunoglobulin G2 monoclonal antibody th
 
 - **PubMed hits:** 40 matched, 38 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 6  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

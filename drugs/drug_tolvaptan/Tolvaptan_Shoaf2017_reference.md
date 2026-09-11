@@ -1,8 +1,15 @@
 # tolvaptan — `Tolvaptan_Shoaf2017_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-08-01 20:55:55.448927+00:00) predates the upstream re-run (2026-08-27 06:33:15.437507+00:00). Current validate status: `extracted`.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,15 +18,17 @@ Shoaf SE; Bricmont P; Dandurand A et al. (2017). European journal of clinical ph
   ·  DOI: [10.1007/s00228-017-2302-7](https://doi.org/10.1007/s00228-017-2302-7)
 
 ## Model component
-<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Shoaf2017_reference" status="extracted" stale="true" population="healthy adults and patients with SIADH" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Shoaf2017_reference" status="not_modelled" stale="false" population="healthy adults and patients with SIADH" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (mL/min/kg) | `Q27` · CL/F | 4.81 | mL/min/kg | 5.611666666666667e-06 | L/h | not captured | review (0.7) | Shoaf_2017:review | — | not captured |
-| V/F (derived from CL·t½/ln2) | `Q76` · V/F | 125.3249 | L | 0.12532489842896702 | L | not captured | review (0.7) | Shoaf_2017:review | — | not captured |
+| CL/F (mL/min/kg) | `Q27` · CL/F | —(suppressed) | mL/min/kg | — | L/h | not captured | review (0.7) | Shoaf_2017:review | — | not captured |
+| V/F (derived from CL·t½/ln2) | `Q76` · V/F | —(suppressed) | L | — | L | not captured | review (0.7) | Shoaf_2017:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -21,16 +21,16 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Eaton_2015](drugs/drug_aminocaproic_acid/AminocaproicAcid_Eaton2015_reference.md) | Eaton MP et al., Pharmacokinetics of ε-Aminocaproic Acid…, Anesthesiology (2015) | [10.1097/ALN.0000000000000616](https://doi.org/10.1097/ALN.0000000000000616) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ross_2007](drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference.md) | Ross J et al., Pharmacokinetics and pharmacodynamics o…, American journal of veterin… (2007) | [10.2460/ajvr.68.9.1016](https://doi.org/10.2460/ajvr.68.9.1016) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Stricker_2013](drugs/drug_aminocaproic_acid/AminocaproicAcid_Stricker2013_reference.md) | Stricker PA et al., Population pharmacokinetics of epsilon-…, British journal of anaesthe… (2013) | [10.1093/bja/aes507](https://doi.org/10.1093/bja/aes507) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Stricker_2015](drugs/drug_aminocaproic_acid/AminocaproicAcid_Stricker2015_reference.md) | Stricker PA et al., Population pharmacokinetics of ϵ-aminoc…, British journal of anaesthe… (2015) | [10.1093/bja/aeu459](https://doi.org/10.1093/bja/aeu459) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Eaton_2015](drugs/drug_aminocaproic_acid/AminocaproicAcid_Eaton2015_reference.md) | Eaton MP et al., Pharmacokinetics of ε-Aminocaproic Acid…, Anesthesiology (2015) | [10.1097/ALN.0000000000000616](https://doi.org/10.1097/ALN.0000000000000616) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ross_2007](drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference.md) | Ross J et al., Pharmacokinetics and pharmacodynamics o…, American journal of veterin… (2007) | [10.2460/ajvr.68.9.1016](https://doi.org/10.2460/ajvr.68.9.1016) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Stricker_2013](drugs/drug_aminocaproic_acid/AminocaproicAcid_Stricker2013_reference.md) | Stricker PA et al., Population pharmacokinetics of epsilon-…, British journal of anaesthe… (2013) | [10.1093/bja/aes507](https://doi.org/10.1093/bja/aes507) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Stricker_2015](drugs/drug_aminocaproic_acid/AminocaproicAcid_Stricker2015_reference.md) | Stricker PA et al., Population pharmacokinetics of ϵ-aminoc…, British journal of anaesthe… (2015) | [10.1093/bja/aeu459](https://doi.org/10.1093/bja/aeu459) |
 
 ## Coverage
 
 - **PubMed hits:** 15 matched, 15 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 4  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

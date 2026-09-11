@@ -1,8 +1,18 @@
 # semaglutide — `Semaglutide_Overgaard2019_one_compartment_model_from_phase_3`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+2. Advisory only — the base model still replicates.
+3. Check the record's covariate_definitions in _interpretv2.yaml.
+4. Re-run the engineer for this drug if the covariate curves are wanted.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -10,34 +20,16 @@
 not matched (stem Overgaard_2019)
 
 ## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Overgaard2019_one_compartment_model_from_phase_3" status="extracted" stale="false" population="healthy subjects and those with type 2 diabetes" measured-compound="semaglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="semaglutide" model-id="Semaglutide_Overgaard2019_one_compartment_model_from_phase_3" status="not_modelled" stale="false" population="healthy subjects and those with type 2 diabetes" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** not captured.
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Total volume/Fb, L | `Q76` · V/F | 12.2 | not captured | not captured | not captured | not captured | llm (0.6) | Overgaard_2019_table_5:row3:col3 | — | not captured |
-| theta_q27_body_weight | `Q900` · theta_q27_body_weight | 0.0478 | not captured | not captured | not captured | not captured | not captured (not captured) | Overgaard_2019_table_5:row1:col3 | — | not captured |
-| CL/F | `Q27` · CL/F | 0.0478 | l/h | 1.3277777777777778e-08 | L/h | not captured | review_gapfill (0.7) | Carlsson_2018:review | — | not captured |
-| Kaglc (h−1) | `Q49` · kabs | 1.38 | h−1 | 0.0003833333333333333 | 1/h | not captured | review_gapfill (0.7) | Bosch_2025:review | — | not captured |
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
-
-**Interpretation flags:**
-- covariate effect for Q27 has no base parameter row (kept as unattached equation-variable)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=semaglutide
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- population split: 'one-compartment model from phase 3a trialsa' subgroup of Overgaard_2019 (paper reports 5 populations: estimate, one-compartment model, one-compartment model from phase 3a trialsa, shrinkage (%), two-compartment final model)
-- gap-filled Q27 (CL/F) from Carlsson_2018's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Bosch_2025's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell Tab4:row1:col2 = '[0.0236–0.027]'
@@ -60,17 +52,14 @@ not matched (stem Overgaard_2019)
 
 ## Validation
 
-**Scholar closed-form checks:**
+**Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
+| check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Carlsson_2018:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Bosch_2025:review'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.0478 L/h | not captured | not captured | ['Carlsson_2018:review'] |
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -79,7 +68,7 @@ not matched (stem Overgaard_2019)
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_semaglutide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Overgaard_2019` / `Overgaard_2019::one_compartment_model_from_phase_3a_trialsa`)
+- scholar stages: `../../../knowledgebase/drugs/drug_semaglutide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Overgaard_2019` / `Overgaard_2019::one_compartment_model_from_phase_3a_trialsa::healthy subjects and those with type 2 diabetes`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

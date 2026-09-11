@@ -1,6 +1,19 @@
 # atazanavir — `Atazanavir_Kengo2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
+
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge; the simulated model does not reproduce a value the paper reports. Evidence: T1_t_half_terminal — expected 1.4 — got 5.0726923616349575 — ratio 3.6234
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+2. Open the paper's reported table and confirm the target value and its units.
+3. Compare with the transcribed value in _transcribev2.yaml for this stem.
+4. If the transcription is right, the extracted parameters are suspect — check CL and volume in _interpretv2.yaml against the paper.
+5. If the transcription is wrong, fix the extraction; the model rebuild follows.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `atazanavir/ritonavir`, measured `atazanavir`.
 
@@ -11,12 +24,12 @@ Kengo A; Resendiz-Galvan JE; Najjemba L; Mugerwa H; De Nicolò A; D'Avolio A; et
   ·  DOI: [10.1002/bcp.70195](https://doi.org/10.1002/bcp.70195)
 
 ## Model component
-<dbs-pgx drug="atazanavir" model-id="Atazanavir_Kengo2025_reference" status="needs_review" stale="false" population="Ugandan adults with HIV" measured-compound="atazanavir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="atazanavir" model-id="Atazanavir_Kengo2025_reference" status="not_modelled" stale="false" population="Ugandan adults with HIV" measured-compound="atazanavir" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -56,13 +69,14 @@ Kengo A; Resendiz-Galvan JE; Najjemba L; Mugerwa H; De Nicolò A; D'Avolio A; et
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=atazanavir) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 | T1_t_half_alpha | reference | skipped | 0.963 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 1.4 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | not captured | 5.0726923616349575 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | fail | 1.4 | 5.0726923616349575 | 3.6234 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped | not captured | 5.0726923616349575 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | skipped | not captured | 5.0726923616349575 | not captured | non-numeric value |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -72,6 +86,7 @@ Kengo A; Resendiz-Galvan JE; Najjemba L; Mugerwa H; De Nicolò A; D'Avolio A; et
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_atazanavir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kengo_2025` / `Kengo_2025::review reference`)
+- sim: `../../../knowledgebase/drugs/drug_atazanavir/models/modelica/Atazanavir_Kengo2025_review_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

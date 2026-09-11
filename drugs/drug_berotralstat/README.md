@@ -26,17 +26,23 @@ In December 2025, the FDA expanded Berotralstat pediatric use with approval of a
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Mathis_2022](drugs/drug_berotralstat/Berotralstat_Mathis2022_adolescents_12_18_years.md) | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Mathis_2022](drugs/drug_berotralstat/Berotralstat_Mathis2022_adolescents_12_18_years_healthy_subj.md) | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Mathis_2022](drugs/drug_berotralstat/Berotralstat_Mathis2022_low_weight_adults_60_80_kg.md) | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Mathis_2022](drugs/drug_berotralstat/Berotralstat_Mathis2022_low_weight_adults_60_80_kg_healthy_s.md) | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Mathis_2022](drugs/drug_berotralstat/Berotralstat_Mathis2022_normal_weight_adults_80_100_kg.md) | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Mathis_2022](drugs/drug_berotralstat/Berotralstat_Mathis2022_normal_weight_adults_80_100_kg_healt.md) | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Mathis_2022](drugs/drug_berotralstat/Berotralstat_Mathis2022_overweight_adults_100_120_kg.md) | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Mathis_2022](drugs/drug_berotralstat/Berotralstat_Mathis2022_overweight_adults_100_120_kg_healthy.md) | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Mathis_2022](drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse.md) | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Mathis_2022](drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse_healthy_subje.md) | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Mathis_2022](drugs/drug_berotralstat/Berotralstat_Mathis2022_underweight_adults_40_60_kg.md) | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Mathis_2022](drugs/drug_berotralstat/Berotralstat_Mathis2022_underweight_adults_40_60_kg_healthy.md) | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
 
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 2  ·  **relevant:** 1
-- **records:** 6  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 12  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Screened and excluded

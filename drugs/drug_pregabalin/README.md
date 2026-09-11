@@ -21,13 +21,17 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bae_2016](drugs/drug_pregabalin/Pregabalin_Bae2016_reference.md) | Bae EK et al., Factors influencing topiramate clearanc…, Seizure (2016) | [10.1016/j.seizure.2016.02.002](https://doi.org/10.1016/j.seizure.2016.02.002) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Chan_2021](drugs/drug_pregabalin/Pregabalin_Chan2021_estimate_rse.md) | Chan PLS et al., Pregabalin Population Pharmacokinetic a…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2132](https://doi.org/10.1002/cpt.2132) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Hong_2016](drugs/drug_pregabalin/Pregabalin_Hong2016_estimate.md) | Hong T et al., Comparison of oral absorption models fo…, Drug design, development an… (2016) | [10.2147/DDDT.S123318](https://doi.org/10.2147/DDDT.S123318) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Bae_2016](drugs/drug_pregabalin/Pregabalin_Bae2016_reference.md) | Bae EK et al., Factors influencing topiramate clearanc…, Seizure (2016) | [10.1016/j.seizure.2016.02.002](https://doi.org/10.1016/j.seizure.2016.02.002) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Chan_2021](drugs/drug_pregabalin/Pregabalin_Chan2021_estimate_rse_children_4_16_years_and_adu.md) | Chan PLS et al., Pregabalin Population Pharmacokinetic a…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2132](https://doi.org/10.1002/cpt.2132) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Hong_2016](drugs/drug_pregabalin/Pregabalin_Hong2016_estimate_healthy_adults.md) | Hong T et al., Comparison of oral absorption models fo…, Drug design, development an… (2016) | [10.2147/DDDT.S123318](https://doi.org/10.2147/DDDT.S123318) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Bender_2009](drugs/drug_pregabalin/Pregabalin_Bender2009_reference.md) | Bender G et al., Population pharmacokinetic model of the…, Pharmaceutical research (2009) | [10.1007/s11095-009-9942-y](https://doi.org/10.1007/s11095-009-9942-y) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Chan_2021](drugs/drug_pregabalin/Pregabalin_Chan2021_model.md) | Chan PLS et al., Pregabalin Population Pharmacokinetic a…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2132](https://doi.org/10.1002/cpt.2132) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Chan_2021](drugs/drug_pregabalin/Pregabalin_Chan2021_model_children_4_16_years_and_adults_wit.md) | Chan PLS et al., Pregabalin Population Pharmacokinetic a…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2132](https://doi.org/10.1002/cpt.2132) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Feng_2001](drugs/drug_pregabalin/Pregabalin_Feng2001_reference.md) | Feng MR et al., Brain microdialysis and PK/PD correlati…, European journal of drug me… (2001) | [10.1007/BF03190385](https://doi.org/10.1007/BF03190385) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hong_2016](drugs/drug_pregabalin/Pregabalin_Hong2016_description_unit.md) | Hong T et al., Comparison of oral absorption models fo…, Drug design, development an… (2016) | [10.2147/DDDT.S123318](https://doi.org/10.2147/DDDT.S123318) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hong_2016](drugs/drug_pregabalin/Pregabalin_Hong2016_description_unit_healthy_adults.md) | Hong T et al., Comparison of oral absorption models fo…, Drug design, development an… (2016) | [10.2147/DDDT.S123318](https://doi.org/10.2147/DDDT.S123318) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Park_2023](drugs/drug_pregabalin/Pregabalin_Park2023_reference.md) | Park M et al., Pharmacokinetic properties of a new sus…, Translational and clinical… (2023) | [10.12793/tcp.2023.31.e20](https://doi.org/10.12793/tcp.2023.31.e20) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [van_2018](drugs/drug_pregabalin/Pregabalin_van2018_reference.md) | van Esdonk MJ et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12318](https://doi.org/10.1002/psp4.12318) |
 
@@ -54,7 +58,7 @@
 
 - **PubMed hits:** 84 matched, 52 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 9  ·  extracted 3  ·  needs_review 0  ·  rejected 6  ·  stale 0
+- **records:** 13  ·  extracted 2  ·  needs_review 0  ·  rejected 8  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

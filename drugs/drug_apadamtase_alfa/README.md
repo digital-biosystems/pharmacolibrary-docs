@@ -24,14 +24,16 @@ Apadamtase alfa, sold under the brand name Adzynma (ADAMTS13, recombinant-krhn),
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Patel_2025](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_Patel2025_estimate.md) | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Patel_2025](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_Patel2025_estimate_patients_with_congenital_t.md) | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Patel_2025](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_Patel2025_shrinkage.md) | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Patel_2025](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_Patel2025_shrinkage_patients_with_congenital.md) | Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [McBride_2025](drugs/drug_apadamtase_alfa/ApadamtaseAlfa_McBride2025_reference.md) | McBride (2025) | — |
 
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 4  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Screened and excluded

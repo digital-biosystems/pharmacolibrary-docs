@@ -27,16 +27,16 @@ Chloroquine is also used off label for the treatment of rheumatic diseases,[A191
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Abd-Rahman_2020](drugs/drug_chloroquine/Chloroquine_AbdRahman2020_reference.md) | Abd-Rahman AN et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1893](https://doi.org/10.1002/cpt.1893) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chotsiri_2022](drugs/drug_chloroquine/Chloroquine_Chotsiri2022_reference.md) | Chotsiri P et al., Pharmacometric and Electrocardiographic…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2665](https://doi.org/10.1002/cpt.2665) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Karunajeewa_2010](drugs/drug_chloroquine/Chloroquine_Karunajeewa2010_reference.md) | Karunajeewa HA et al., Pharmacokinetics of chloroquine and mon…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.01269-09](https://doi.org/10.1128/AAC.01269-09) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yao_2021](drugs/drug_chloroquine/Chloroquine_Yao2021_reference.md) | Yao X et al., Population-based meta-analysis of chlor…, European journal of clinica… (2021) | [10.1007/s00228-020-03032-6](https://doi.org/10.1007/s00228-020-03032-6) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Abd-Rahman_2020](drugs/drug_chloroquine/Chloroquine_AbdRahman2020_reference.md) | Abd-Rahman AN et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacology and t… (2020) | [10.1002/cpt.1893](https://doi.org/10.1002/cpt.1893) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Chotsiri_2022](drugs/drug_chloroquine/Chloroquine_Chotsiri2022_reference.md) | Chotsiri P et al., Pharmacometric and Electrocardiographic…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2665](https://doi.org/10.1002/cpt.2665) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Karunajeewa_2010](drugs/drug_chloroquine/Chloroquine_Karunajeewa2010_reference.md) | Karunajeewa HA et al., Pharmacokinetics of chloroquine and mon…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.01269-09](https://doi.org/10.1128/AAC.01269-09) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Yao_2021](drugs/drug_chloroquine/Chloroquine_Yao2021_reference.md) | Yao X et al., Population-based meta-analysis of chlor…, European journal of clinica… (2021) | [10.1007/s00228-020-03032-6](https://doi.org/10.1007/s00228-020-03032-6) |
 
 ## Coverage
 
 - **PubMed hits:** 2723 matched, 67 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 4  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

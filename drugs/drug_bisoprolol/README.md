@@ -21,14 +21,14 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: model_not_built</sub><br><sub>route_to: `engineer`</sub> | [Cvan_2016](drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference.md) | Cvan (2016) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: not_simulated</sub><br><sub>route_to: `engineer`</sub> | [Fontana_2022](drugs/drug_bisoprolol/Bisoprolol_Fontana2022_reference.md) | Fontana V et al., Chromosomal Region 11p14.1 is Associate…, Pharmacogenomics and person… (2022) | [10.2147/PGPM.S352719](https://doi.org/10.2147/PGPM.S352719) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: model_not_built</sub><br><sub>route_to: `engineer`</sub> | [Grevel_1989](drugs/drug_bisoprolol/Bisoprolol_Grevel1989_reference.md) | Grevel J et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (1989) | [10.2165/00003088-198917010-00005](https://doi.org/10.2165/00003088-198917010-00005) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: model_not_built</sub><br><sub>route_to: `engineer`</sub> | [Momčilović_2019](drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference.md) | Momčilović S et al., Population Pharmacokinetic Analysis of…, Journal of cardiovascular p… (2019) | [10.1097/FJC.0000000000000644](https://doi.org/10.1097/FJC.0000000000000644) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: model_not_built</sub><br><sub>route_to: `engineer`</sub> | [Momčilović_2020](drugs/drug_bisoprolol/Bisoprolol_Momilovi2020_reference.md) | Momčilović S et al., Population pharmacokinetic analysis of…, European journal of clinica… (2020) | [10.1007/s00228-020-02937-6](https://doi.org/10.1007/s00228-020-02937-6) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: model_not_built</sub><br><sub>route_to: `engineer`</sub> | [Nikolic_2013](drugs/drug_bisoprolol/Bisoprolol_Nikolic2013_reference.md) | Nikolic (2013) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: model_not_built</sub><br><sub>route_to: `engineer`</sub> | [Nikolic_2016](drugs/drug_bisoprolol/Bisoprolol_Nikolic2016_reference.md) | Nikolic VN et al., Population Pharmacokinetics of Bisoprol…, Pharmacology (2016) | [10.1159/000443179](https://doi.org/10.1159/000443179) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 2.4141)</sub><br><sub>route_to: `human_review`</sub> | [Nikolic_2018](drugs/drug_bisoprolol/Bisoprolol_Nikolic2018_reference.md) | Nikolic (2018) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Cvan_2016](drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference.md) | Cvan (2016) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Fontana_2022](drugs/drug_bisoprolol/Bisoprolol_Fontana2022_reference.md) | Fontana V et al., Chromosomal Region 11p14.1 is Associate…, Pharmacogenomics and person… (2022) | [10.2147/PGPM.S352719](https://doi.org/10.2147/PGPM.S352719) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Grevel_1989](drugs/drug_bisoprolol/Bisoprolol_Grevel1989_reference.md) | Grevel J et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (1989) | [10.2165/00003088-198917010-00005](https://doi.org/10.2165/00003088-198917010-00005) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Momčilović_2019](drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference.md) | Momčilović S et al., Population Pharmacokinetic Analysis of…, Journal of cardiovascular p… (2019) | [10.1097/FJC.0000000000000644](https://doi.org/10.1097/FJC.0000000000000644) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Momčilović_2020](drugs/drug_bisoprolol/Bisoprolol_Momilovi2020_reference.md) | Momčilović S et al., Population pharmacokinetic analysis of…, European journal of clinica… (2020) | [10.1007/s00228-020-02937-6](https://doi.org/10.1007/s00228-020-02937-6) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Nikolic_2013](drugs/drug_bisoprolol/Bisoprolol_Nikolic2013_reference.md) | Nikolic (2013) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Nikolic_2016](drugs/drug_bisoprolol/Bisoprolol_Nikolic2016_reference.md) | Nikolic VN et al., Population Pharmacokinetics of Bisoprol…, Pharmacology (2016) | [10.1159/000443179](https://doi.org/10.1159/000443179) |
 
 ## Pharmacogenomics (PGx)
 
@@ -51,7 +51,7 @@
 
 - **PubMed hits:** 165 matched, 57 returned
 - **screened:** 8  ·  **relevant:** 8
-- **records:** 8  ·  extracted 0  ·  needs_review 8  ·  rejected 0  ·  stale 0
+- **records:** 8  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

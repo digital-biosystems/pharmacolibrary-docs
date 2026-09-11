@@ -33,8 +33,8 @@ Off-label uses: irritable bowel syndrome, sleep disorders, diabetic neuropathy, 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: model_not_built</sub><br><sub>route_to: `engineer`</sub> | [Koh_2019](drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md) | Koh A et al., Quantitative Modeling Analysis Demonstr…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1344](https://doi.org/10.1002/jcph.1344) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: model_not_built</sub><br><sub>route_to: `engineer`</sub> | [Ratajczak-Enselme_2015](drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md) | Ratajczak-Enselme M et al., Population Pharmacokinetics of Amitript…, Regional anesthesia and pai… (2015) | [10.1097/AAP.0000000000000322](https://doi.org/10.1097/AAP.0000000000000322) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Koh_2019](drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md) | Koh A et al., Quantitative Modeling Analysis Demonstr…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1344](https://doi.org/10.1002/jcph.1344) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ratajczak-Enselme_2015](drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md) | Ratajczak-Enselme M et al., Population Pharmacokinetics of Amitript…, Regional anesthesia and pai… (2015) | [10.1097/AAP.0000000000000322](https://doi.org/10.1097/AAP.0000000000000322) |
 
 ## Pharmacodynamics (PD)
 
@@ -72,7 +72,7 @@ Off-label uses: irritable bowel syndrome, sleep disorders, diabetic neuropathy, 
 
 - **PubMed hits:** 549 matched, 51 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

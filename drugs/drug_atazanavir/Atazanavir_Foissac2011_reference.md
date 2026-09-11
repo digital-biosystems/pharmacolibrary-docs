@@ -1,6 +1,15 @@
 # atazanavir — `Atazanavir_Foissac2011_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
+
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `atazanavir/ritonavir`, measured `atazanavir`.
 
@@ -10,12 +19,12 @@
 not matched (stem Foissac_2011)
 
 ## Model component
-<dbs-pgx drug="atazanavir" model-id="Atazanavir_Foissac2011_reference" status="needs_review" stale="false" population="HIV-1-infected children and adolescents" measured-compound="atazanavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="atazanavir" model-id="Atazanavir_Foissac2011_reference" status="not_modelled" stale="false" population="HIV-1-infected children and adolescents" measured-compound="atazanavir" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -66,9 +75,8 @@ not matched (stem Foissac_2011)
 |---|---|---|---|---|---|---|
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -78,8 +86,6 @@ not matched (stem Foissac_2011)
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_atazanavir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Foissac_2011` / `Foissac_2011::HIV-1-infected children and adolescents`)
-- model: `../../../knowledgebase/drugs/drug_atazanavir/models/modelica/Atazanavir_Foissac2011_hiv_1_infected_children_and_adolescen.mo`
-- deviation: `../../../knowledgebase/drugs/drug_atazanavir/models/modelica/Atazanavir_Foissac2011_hiv_1_infected_children_and_adolescen.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

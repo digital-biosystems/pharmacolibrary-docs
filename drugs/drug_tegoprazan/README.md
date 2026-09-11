@@ -19,8 +19,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [He_2021](drugs/drug_tegoprazan/Tegoprazan_He2021_reference.md) | He J et al., Safety, Tolerability and Pharmacokineti…, Clinical drug investigation (2021) | [10.1007/s40261-020-00986-4](https://doi.org/10.1007/s40261-020-00986-4) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kim_2024](drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference.md) | Kim HS et al., Enhancing drug administration flexibili…, Translational and clinical… (2024) | [10.12793/tcp.2024.32.e9](https://doi.org/10.12793/tcp.2024.32.e9) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [He_2021](drugs/drug_tegoprazan/Tegoprazan_He2021_reference.md) | He J et al., Safety, Tolerability and Pharmacokineti…, Clinical drug investigation (2021) | [10.1007/s40261-020-00986-4](https://doi.org/10.1007/s40261-020-00986-4) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kim_2024](drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference.md) | Kim HS et al., Enhancing drug administration flexibili…, Translational and clinical… (2024) | [10.12793/tcp.2024.32.e9](https://doi.org/10.12793/tcp.2024.32.e9) |
 
 ## Pharmacodynamics (PD)
 
@@ -44,7 +44,7 @@
 
 - **PubMed hits:** 35 matched, 35 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

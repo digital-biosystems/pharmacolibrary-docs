@@ -2,7 +2,14 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** a parameter falls outside the physiological window
+
+**Steps:**
+1. Confirm the value and unit against the paper before treating it as an error.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -65,7 +72,7 @@ Liang S; Brundage RC; Jacobson PA; Blaes A; Kirstein MN et al. (2016). British j
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_doxorubicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Liang_2016` / `Liang_2016::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_doxorubicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Liang_2016` / `Liang_2016::adults with breast cancer`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

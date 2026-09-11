@@ -21,9 +21,9 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lanoiselée_2026](drugs/drug_heparin/Heparin_Lanoisele2026_reference.md) | Lanoiselée J et al., Optimising protamine dosing for heparin…, British journal of anaesthe… (2026) | [10.1016/j.bja.2025.11.057](https://doi.org/10.1016/j.bja.2025.11.057) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Gouin-Thibault_2024](drugs/drug_heparin/Heparin_GouinThibault2024_reference.md) | Gouin-Thibault I et al., Tinzaparin, an alternative to subcutane…, Journal of thrombosis and h… (2024) | [10.1016/j.jtha.2024.07.006](https://doi.org/10.1016/j.jtha.2024.07.006) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Salem_2022](drugs/drug_heparin/Heparin_Salem2022_reference.md) | Salem AM et al., Reassessing the Pediatric Dosing Recomm…, Journal of clinical pharmac… (2022) | [10.1002/jcph.2007](https://doi.org/10.1002/jcph.2007) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Lanoiselée_2026](drugs/drug_heparin/Heparin_Lanoisele2026_reference.md) | Lanoiselée J et al., Optimising protamine dosing for heparin…, British journal of anaesthe… (2026) | [10.1016/j.bja.2025.11.057](https://doi.org/10.1016/j.bja.2025.11.057) |
 
 ## Pharmacodynamics (PD)
 
@@ -35,7 +35,7 @@
 
 - **PubMed hits:** 462 matched, 70 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 1  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -1,8 +1,18 @@
 # pantoprazole — `Pantoprazole_Pettersen2009_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+2. Advisory only — the base model still replicates.
+3. Check the record's covariate_definitions in _interpretv2.yaml.
+4. Re-run the engineer for this drug if the covariate curves are wanted.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,22 +21,24 @@ Pettersen G; Mouksassi MS; Théorêt Y; Labbé L; Faure C; Nguyen B; et al. et a
   ·  DOI: [10.1111/j.1365-2125.2008.03328.x](https://doi.org/10.1111/j.1365-2125.2008.03328.x)
 
 ## Model component
-<dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Pettersen2009_reference" status="extracted" stale="false" population="paediatric intensive care patients" measured-compound="pantoprazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Pettersen2009_reference" status="not_modelled" stale="false" population="paediatric intensive care patients" measured-compound="pantoprazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (l h -1 ) | `Q22` · CL | 5.08 | l h -1 | 1.4111111111111111e-06 | [l] / [h] | not captured | exact (1.0) | tab_1:row3:col1, tab_1:row3:col2 | — | 27.0 (None% RSE) |
-| Vc (l) | `Q63` · V1 | 2.20 | l | 0.0022 | [l] | not captured | exact (1.0) | tab_1:row4:col1, tab_1:row4:col2 | — | 39.5 (None% RSE) |
-| Q (l h -1 ) | `Q30` · Q | 1.1 | l h -1 | 3.055555555555556e-07 | [l] / [h] | not captured | exact (1.0) | tab_1:row5:col1, tab_1:row5:col2 | — | 27.3 (None% RSE) |
-| V2 (l) | `Q64` · V2 | 2.69 | l | 0.00269 | [l] | not captured | exact (1.0) | tab_1:row6:col1, tab_1:row6:col2 | — | 93.9 (None% RSE) |
-| theta_q314_age | `Q900` · theta_q314_age | 0.320 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row17:col1, tab_1:row17:col2 | — | not captured |
-| theta_q312_cyp2c19 | `Q900` · theta_q312_cyp2c19 | 0.342 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row18:col1, tab_1:row18:col2 | — | not captured |
-| theta_q312_hepatic | `Q900` · theta_q312_hepatic | 0.501 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row19:col1, tab_1:row19:col2 | — | not captured |
-| first-order absorption rate constants (K a ) ... for OS | `Q49` · kabs | 0.325 | h -1 | 9.027777777777779e-05 | 1/h | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
-| lag time ... for the DRT formulation | `Q83` · tlag | 2.5 | h | 9000.0 | h | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
+| CL (l h -1 ) | `Q22` · CL | —(suppressed) | l h -1 | — | [l] / [h] | not captured | exact (1.0) | tab_1:row3:col1, tab_1:row3:col2 | — | 27.0 (None% RSE) |
+| Vc (l) | `Q63` · V1 | —(suppressed) | l | — | [l] | not captured | exact (1.0) | tab_1:row4:col1, tab_1:row4:col2 | — | 39.5 (None% RSE) |
+| Q (l h -1 ) | `Q30` · Q | —(suppressed) | l h -1 | — | [l] / [h] | not captured | exact (1.0) | tab_1:row5:col1, tab_1:row5:col2 | — | 27.3 (None% RSE) |
+| V2 (l) | `Q64` · V2 | —(suppressed) | l | — | [l] | not captured | exact (1.0) | tab_1:row6:col1, tab_1:row6:col2 | — | 93.9 (None% RSE) |
+| theta_q314_age | `Q900` · theta_q314_age | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | tab_1:row17:col1, tab_1:row17:col2 | — | not captured |
+| theta_q312_cyp2c19 | `Q900` · theta_q312_cyp2c19 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | tab_1:row18:col1, tab_1:row18:col2 | — | not captured |
+| theta_q312_hepatic | `Q900` · theta_q312_hepatic | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | tab_1:row19:col1, tab_1:row19:col2 | — | not captured |
+| first-order absorption rate constants (K a ) ... for OS | `Q49` · kabs | —(suppressed) | h -1 | — | 1/h | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
+| lag time ... for the DRT formulation | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -98,6 +110,15 @@ Pettersen G; Mouksassi MS; Théorêt Y; Labbé L; Faure C; Nguyen B; et al. et a
 | C9_phys_window_Q63 | pass | volume within physiological range | 2.2 L | not captured | not captured | ['tab_1:row4:col1', 'tab_1:row4:col2'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 2.69 L | not captured | not captured | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_t_half_beta | reference | skipped | 2.0 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -105,7 +126,7 @@ Pettersen G; Mouksassi MS; Théorêt Y; Labbé L; Faure C; Nguyen B; et al. et a
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_pantoprazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pettersen_2009` / `Pettersen_2009::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_pantoprazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pettersen_2009` / `Pettersen_2009::paediatric intensive care patients`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

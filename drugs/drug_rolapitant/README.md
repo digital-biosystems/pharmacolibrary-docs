@@ -23,16 +23,20 @@ By blocking Substance P from interacting with NK-1 receptors in the gut and the 
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026](drugs/drug_rolapitant/Rolapitant_Li2026_fosrolapitant.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026](drugs/drug_rolapitant/Rolapitant_Li2026_fosrolapitant_chinese_subjects_with_impair.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026](drugs/drug_rolapitant/Rolapitant_Li2026_healthy_control.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026](drugs/drug_rolapitant/Rolapitant_Li2026_healthy_control_chinese_subjects_with_impa.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026](drugs/drug_rolapitant/Rolapitant_Li2026_moderate_hepatic_impairment.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026](drugs/drug_rolapitant/Rolapitant_Li2026_moderate_hepatic_impairment_chinese_subjec.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026](drugs/drug_rolapitant/Rolapitant_Li2026_rolapitant.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026](drugs/drug_rolapitant/Rolapitant_Li2026_rolapitant_chinese_subjects_with_impaired.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2019](drugs/drug_rolapitant/Rolapitant_Wang2019_reference.md) | Wang (2019) | — |
 
 ## Coverage
 
 - **PubMed hits:** 28 matched, 28 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 5  ·  extracted 0  ·  needs_review 0  ·  rejected 5  ·  stale 0
+- **records:** 9  ·  extracted 0  ·  needs_review 0  ·  rejected 9  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

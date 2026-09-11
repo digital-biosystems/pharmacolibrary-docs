@@ -21,10 +21,10 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: not_simulated</sub><br><sub>route_to: `engineer`</sub> | [Foissac_2011](drugs/drug_atazanavir/Atazanavir_Foissac2011_reference.md) | Foissac (2011) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: model_not_built</sub><br><sub>route_to: `engineer`</sub> | [Kengo_2025](drugs/drug_atazanavir/Atazanavir_Kengo2025_reference.md) | Kengo A et al., Model-based evaluation of the interacti…, British journal of clinical… (2025) | [10.1002/bcp.70195](https://doi.org/10.1002/bcp.70195) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: model_not_built</sub><br><sub>route_to: `engineer`</sub> | [Kile_2012](drugs/drug_atazanavir/Atazanavir_Kile2012_reference.md) | Kile DA et al., A population pharmacokinetic-pharmacoge…, AIDS research and human ret… (2012) | [10.1089/aid.2011.0378](https://doi.org/10.1089/aid.2011.0378) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: model_not_built</sub><br><sub>route_to: `engineer`</sub> | [Punyawudho_2017](drugs/drug_atazanavir/Atazanavir_Punyawudho2017_reference.md) | Punyawudho (2017) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Foissac_2011](drugs/drug_atazanavir/Atazanavir_Foissac2011_reference.md) | Foissac (2011) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kengo_2025](drugs/drug_atazanavir/Atazanavir_Kengo2025_reference.md) | Kengo A et al., Model-based evaluation of the interacti…, British journal of clinical… (2025) | [10.1002/bcp.70195](https://doi.org/10.1002/bcp.70195) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kile_2012](drugs/drug_atazanavir/Atazanavir_Kile2012_reference.md) | Kile DA et al., A population pharmacokinetic-pharmacoge…, AIDS research and human ret… (2012) | [10.1089/aid.2011.0378](https://doi.org/10.1089/aid.2011.0378) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Punyawudho_2017](drugs/drug_atazanavir/Atazanavir_Punyawudho2017_reference.md) | Punyawudho (2017) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -55,7 +55,7 @@
 
 - **PubMed hits:** 452 matched, 60 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs_review 4  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

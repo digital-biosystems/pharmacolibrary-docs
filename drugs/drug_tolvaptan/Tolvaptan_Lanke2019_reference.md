@@ -1,8 +1,15 @@
 # tolvaptan — `Tolvaptan_Lanke2019_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-07-15 08:42:06.247439+00:00) predates the upstream re-run (2026-08-27 06:34:12.770217+00:00). Current validate status: `extracted`.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,15 +18,17 @@ Lanke S; Shoaf SE et al. (2019). Journal of clinical pharmacology 59
   ·  DOI: [10.1002/jcph.1370](https://doi.org/10.1002/jcph.1370)
 
 ## Model component
-<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Lanke2019_reference" status="extracted" stale="true" population="adults with autosomal dominant polycystic kidney disease" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Lanke2019_reference" status="not_modelled" stale="false" population="adults with autosomal dominant polycystic kidney disease" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 11.4 | L/h | 3.1666666666666667e-06 | L/h | not captured | review (0.7) | Lanke_2019:review | — | not captured |
-| Vd/F (L) | `Q76` · V/F | 109.0 | L | 0.109 | L | not captured | review (0.7) | Lanke_2019:review | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Lanke_2019:review | — | not captured |
+| Vd/F (L) | `Q76` · V/F | —(suppressed) | L | — | L | not captured | review (0.7) | Lanke_2019:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,15 +66,10 @@ Lanke S; Shoaf SE et al. (2019). Journal of clinical pharmacology 59
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=tolvaptan) | C_central | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 3.5 | 0.0008256266070356282 | not captured | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 0.17 | 0.0008256266070356282 | not captured | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | skipped | not captured | 0.0008256266070356282 | not captured | non-numeric value |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -74,10 +78,7 @@ Lanke S; Shoaf SE et al. (2019). Journal of clinical pharmacology 59
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_tolvaptan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lanke_2019` / `Lanke_2019::reference`)
-- model: `../../../knowledgebase/drugs/drug_tolvaptan/models/modelica/Tolvaptan_Lanke2019_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_tolvaptan/models/modelica/Tolvaptan_Lanke2019_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_tolvaptan/models/modelica/Tolvaptan_Lanke2019_reference.json`
+- scholar stages: `../../../knowledgebase/drugs/drug_tolvaptan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lanke_2019` / `Lanke_2019::review reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

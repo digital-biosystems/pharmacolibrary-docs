@@ -24,13 +24,15 @@ Clarithromycin is indicated in combination with [vonoprazan] and [amoxicillin] a
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Shah_2025](drugs/drug_clarithromycin/Clarithromycin_Shah2025_mean_parameter_estimates.md) | Shah RV et al., Intravenous Clarithromycin in Criticall…, Antibiotics (Basel, Switzer… (2025) | [10.3390/antibiotics14060559](https://doi.org/10.3390/antibiotics14060559) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Shah_2025](drugs/drug_clarithromycin/Clarithromycin_Shah2025_mean_parameter_estimates_critically.md) | Shah RV et al., Intravenous Clarithromycin in Criticall…, Antibiotics (Basel, Switzer… (2025) | [10.3390/antibiotics14060559](https://doi.org/10.3390/antibiotics14060559) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Shah_2025](drugs/drug_clarithromycin/Clarithromycin_Shah2025_relative_standard_error.md) | Shah RV et al., Intravenous Clarithromycin in Criticall…, Antibiotics (Basel, Switzer… (2025) | [10.3390/antibiotics14060559](https://doi.org/10.3390/antibiotics14060559) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Shah_2025](drugs/drug_clarithromycin/Clarithromycin_Shah2025_relative_standard_error_critically_i.md) | Shah RV et al., Intravenous Clarithromycin in Criticall…, Antibiotics (Basel, Switzer… (2025) | [10.3390/antibiotics14060559](https://doi.org/10.3390/antibiotics14060559) |
 
 ## Coverage
 
 - **PubMed hits:** 714 matched, 75 returned
 - **screened:** 15  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

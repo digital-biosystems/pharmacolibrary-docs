@@ -21,14 +21,14 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Shi_2026](drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md) | Shi S et al., Pharmacokinetics of intravenous oxycodo…, Frontiers in medicine (2026) | [10.3389/fmed.2026.1834903](https://doi.org/10.3389/fmed.2026.1834903) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Shi_2026](drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md) | Shi S et al., Pharmacokinetics of intravenous oxycodo…, Frontiers in medicine (2026) | [10.3389/fmed.2026.1834903](https://doi.org/10.3389/fmed.2026.1834903) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Saari_2012](drugs/drug_oxycodone/Oxycodone_Saari2012_reference.md) | Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of anaesthe… (2012) | [10.1093/bja/aer395](https://doi.org/10.1093/bja/aer395) |
 
 ## Coverage
 
 - **PubMed hits:** 95 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

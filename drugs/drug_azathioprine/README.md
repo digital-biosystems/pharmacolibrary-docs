@@ -23,8 +23,8 @@ Azathiprine was granted FDA approval on 20 March 1968.[L11214]
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lin_2021](drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md) | Lin R et al., Population pharmacokinetics of azathiop…, Basic & clinical pharmacolo… (2021) | [10.1111/bcpt.13530](https://doi.org/10.1111/bcpt.13530) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [el-Yazigi_1993](drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md) | el-Yazigi A et al., Pharmacokinetics of azathioprine after…, Journal of clinical pharmac… (1993) | [10.1002/j.1552-4604.1993.tb04698.x](https://doi.org/10.1002/j.1552-4604.1993.tb04698.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Lin_2021](drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md) | Lin R et al., Population pharmacokinetics of azathiop…, Basic & clinical pharmacolo… (2021) | [10.1111/bcpt.13530](https://doi.org/10.1111/bcpt.13530) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [el-Yazigi_1993](drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md) | el-Yazigi A et al., Pharmacokinetics of azathioprine after…, Journal of clinical pharmac… (1993) | [10.1002/j.1552-4604.1993.tb04698.x](https://doi.org/10.1002/j.1552-4604.1993.tb04698.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Rosario_2017](drugs/drug_azathioprine/Azathioprine_Rosario2017_reference.md) | Rosario M et al., A Review of the Clinical Pharmacokineti…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0546-0](https://doi.org/10.1007/s40262-017-0546-0) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yang_2015](drugs/drug_azathioprine/Azathioprine_Yang2015_reference.md) | Yang X et al., Pharmacokinetic modeling of therapies f…, Expert review of clinical p… (2015) | [10.1586/17512433.2015.1059751](https://doi.org/10.1586/17512433.2015.1059751) |
 
@@ -123,7 +123,7 @@ Azathiprine was granted FDA approval on 20 March 1968.[L11214]
 
 - **PubMed hits:** 1118 matched, 104 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 2  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

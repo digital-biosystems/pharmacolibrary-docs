@@ -1,8 +1,20 @@
 # citalopram — `Citalopram_Weisskopf2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — engineer.** parent/metabolite records are not currently produced as models — the composite builds but does not survive simulation<br><sub>evidence: `topology_template=parent_metabolite`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge.
+
+**Steps:**
+1. Not a curation fix — engineer limitation.
+2. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,18 +23,20 @@ Weisskopf E; Guidi M; Fischer CJ; Bickle Graz M; Beaufils E; Nguyen KA; et al. e
   ·  DOI: [10.1111/bcp.14278](https://doi.org/10.1111/bcp.14278)
 
 ## Model component
-<dbs-pgx drug="citalopram" model-id="Citalopram_Weisskopf2020_reference" status="extracted" stale="false" population="depressive patients during the perinatal period" measured-compound="escitalopram" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="citalopram" model-id="Citalopram_Weisskopf2020_reference" status="not_modelled" stale="false" population="depressive patients during the perinatal period" measured-compound="escitalopram" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL(SCIT) (L/h) | `Q22` · CL | 28.7 | L/h | 7.972222222222223e-06 | [l] / [h] | 8 | boundary (0.8) | Weisskopf_2020_table_p7_1:row0:col1, Weisskopf_2020_table_p7_1:row0:col2, Weisskopf_2020_table_p7_1:row0:col3, Weisskopf_2020_table_p7_1:row0:col4, Weisskopf_2020_table_p7_1:row0:col5, Weisskopf_2020_table_p7_1:row0:col6 | — | not captured |
-| V(SCIT) (L) | `Q65` · Vss | 1310 | L | 1.31 | [l] | 24 | llm (0.5) | Weisskopf_2020_table_p7_1:row1:col1, Weisskopf_2020_table_p7_1:row1:col2, Weisskopf_2020_table_p7_1:row1:col3, Weisskopf_2020_table_p7_1:row1:col4, Weisskopf_2020_table_p7_1:row1:col5, Weisskopf_2020_table_p7_1:row1:col6 | — | not captured |
-| k12 (h⁻¹) | `Q301` · k12 | 0.73 | h⁻¹ | 0.00020277777777777777 | [1] / [h] | 60 | exact (1.0) | Weisskopf_2020_table_p7_1:row2:col1, Weisskopf_2020_table_p7_1:row2:col2, Weisskopf_2020_table_p7_1:row2:col3, Weisskopf_2020_table_p7_1:row2:col4, Weisskopf_2020_table_p7_1:row2:col5, Weisskopf_2020_table_p7_1:row2:col6 | — | not captured |
-| k30 (h⁻¹) | `Q304` · k31 | 0.54 | h⁻¹ | 0.00015000000000000001 | [1] / [h] | 162 | llm (0.5) | Weisskopf_2020_table_p7_1:row3:col3, Weisskopf_2020_table_p7_1:row3:col4, Weisskopf_2020_table_p7_1:row3:col5, Weisskopf_2020_table_p7_1:row3:col6 | — | not captured |
-| σ SCIT(plasma) (%) | `Q315` · sigma | 35.3 | not captured | not captured | not captured | 10 | llm (0.5) | Weisskopf_2020_table_p7_1:row9:col1, Weisskopf_2020_table_p7_1:row9:col2, Weisskopf_2020_table_p7_1:row9:col3, Weisskopf_2020_table_p7_1:row9:col4, Weisskopf_2020_table_p7_1:row9:col5, Weisskopf_2020_table_p7_1:row9:col6 | — | not captured |
+| CL(SCIT) (L/h) | `Q22` · CL | —(suppressed) | L/h | — | [l] / [h] | 8 | boundary (0.8) | Weisskopf_2020_table_p7_1:row0:col1, Weisskopf_2020_table_p7_1:row0:col2, Weisskopf_2020_table_p7_1:row0:col3, Weisskopf_2020_table_p7_1:row0:col4, Weisskopf_2020_table_p7_1:row0:col5, Weisskopf_2020_table_p7_1:row0:col6 | — | not captured |
+| V(SCIT) (L) | `Q65` · Vss | —(suppressed) | L | — | [l] | 24 | llm (0.5) | Weisskopf_2020_table_p7_1:row1:col1, Weisskopf_2020_table_p7_1:row1:col2, Weisskopf_2020_table_p7_1:row1:col3, Weisskopf_2020_table_p7_1:row1:col4, Weisskopf_2020_table_p7_1:row1:col5, Weisskopf_2020_table_p7_1:row1:col6 | — | not captured |
+| k12 (h⁻¹) | `Q301` · k12 | —(suppressed) | h⁻¹ | — | [1] / [h] | 60 | exact (1.0) | Weisskopf_2020_table_p7_1:row2:col1, Weisskopf_2020_table_p7_1:row2:col2, Weisskopf_2020_table_p7_1:row2:col3, Weisskopf_2020_table_p7_1:row2:col4, Weisskopf_2020_table_p7_1:row2:col5, Weisskopf_2020_table_p7_1:row2:col6 | — | not captured |
+| k30 (h⁻¹) | `Q304` · k31 | —(suppressed) | h⁻¹ | — | [1] / [h] | 162 | llm (0.5) | Weisskopf_2020_table_p7_1:row3:col3, Weisskopf_2020_table_p7_1:row3:col4, Weisskopf_2020_table_p7_1:row3:col5, Weisskopf_2020_table_p7_1:row3:col6 | — | not captured |
+| σ SCIT(plasma) (%) | `Q315` · sigma | —(suppressed) | not captured | — | not captured | 10 | llm (0.5) | Weisskopf_2020_table_p7_1:row9:col1, Weisskopf_2020_table_p7_1:row9:col2, Weisskopf_2020_table_p7_1:row9:col3, Weisskopf_2020_table_p7_1:row9:col4, Weisskopf_2020_table_p7_1:row9:col5, Weisskopf_2020_table_p7_1:row9:col6 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -59,6 +73,15 @@ Weisskopf E; Guidi M; Fischer CJ; Bickle Graz M; Beaufils E; Nguyen KA; et al. e
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 28.7 | not captured | not captured | ['Weisskopf_2020_table_p7_1:row0:col1', 'Weisskopf_2020_table_p7_1:row0:col2', 'Weisskopf_2020_table_p7_1:row0:col3', 'Weisskopf_2020_table_p7_1:row0:col4', 'Weisskopf_2020_table_p7_1:row0:col5', 'Weisskopf_2020_table_p7_1:row0:col6'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -66,7 +89,7 @@ Weisskopf E; Guidi M; Fischer CJ; Bickle Graz M; Beaufils E; Nguyen KA; et al. e
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_citalopram/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Weisskopf_2020` / `Weisskopf_2020::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_citalopram/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Weisskopf_2020` / `Weisskopf_2020::depressive patients during the perinatal period`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

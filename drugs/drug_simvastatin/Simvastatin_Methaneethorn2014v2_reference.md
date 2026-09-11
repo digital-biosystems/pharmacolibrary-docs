@@ -2,7 +2,15 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** a compartment is unreachable, or a metabolite is unlinked
+
+**Steps:**
+1. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
+2. Parent/metabolite records commonly miss the formation link.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -74,7 +82,7 @@ not matched (stem Methaneethorn_2014_2)
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_simvastatin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Methaneethorn_2014_2` / `Methaneethorn_2014_2::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_simvastatin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Methaneethorn_2014_2` / `Methaneethorn_2014_2::healthy adults`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

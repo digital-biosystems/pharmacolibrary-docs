@@ -2,7 +2,20 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — fulltext.** the record was built from the abstract alone, so reported summary statistics stood in for a fitted model<br><sub>evidence: `provenance.source=abstract-only`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** a structural parameter has the wrong dimension.
+
+**Steps:**
+1. Not a curation fix — fulltext limitation.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -72,7 +85,7 @@ Zhang DM; Wang K; Zhao X; Li YF; Zheng QS; Wang ZN; et al. et al. (2012). Acta p
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_bivalirudin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhang_2012` / `Zhang_2012::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_bivalirudin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhang_2012` / `Zhang_2012::healthy young Chinese volunteers`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

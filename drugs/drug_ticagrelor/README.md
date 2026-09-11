@@ -24,9 +24,9 @@ Ticagrelor was granted FDA approval on 20 July 2011.[L14201]
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Amilon_2019](drugs/drug_ticagrelor/Ticagrelor_Amilon2019_reference.md) | Amilon C et al., Population Pharmacokinetics/Pharmacodyn…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00758-0](https://doi.org/10.1007/s40262-019-00758-0) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Henrich_2021](drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md) | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Li_2016](drugs/drug_ticagrelor/Ticagrelor_Li2016_reference.md) | Li J et al., Population pharmacokinetics of ticagrel…, International journal of cl… (2016) | [10.5414/CP202549](https://doi.org/10.5414/CP202549) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Amilon_2019](drugs/drug_ticagrelor/Ticagrelor_Amilon2019_reference.md) | Amilon C et al., Population Pharmacokinetics/Pharmacodyn…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00758-0](https://doi.org/10.1007/s40262-019-00758-0) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Henrich_2021](drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md) | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Li_2016](drugs/drug_ticagrelor/Ticagrelor_Li2016_reference.md) | Li J et al., Population pharmacokinetics of ticagrel…, International journal of cl… (2016) | [10.5414/CP202549](https://doi.org/10.5414/CP202549) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kathman_2022](drugs/drug_ticagrelor/Ticagrelor_Kathman2022_reference.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Åstrand_2019](drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md) | Åstrand M et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2019) | [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812) |
 
@@ -44,7 +44,7 @@ Ticagrelor was granted FDA approval on 20 July 2011.[L14201]
 
 - **PubMed hits:** 48 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 5  ·  extracted 3  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

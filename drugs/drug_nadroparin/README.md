@@ -21,12 +21,14 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chen_2024](drugs/drug_nadroparin/Nadroparin_Chen2024_reference.md) | Chen Y et al., Is the current therapeutic dosage of na…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1331673](https://doi.org/10.3389/fphar.2024.1331673) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jaspers_2022](drugs/drug_nadroparin/Nadroparin_Jaspers2022_reference.md) | Jaspers TCC et al., Optimising the Nadroparin Dose for Thro…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01162-x](https://doi.org/10.1007/s40262-022-01162-x) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Piwowarczyk_2023](drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_shrinkage.md) | Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01244-4](https://doi.org/10.1007/s40262-023-01244-4) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Chen_2024](drugs/drug_nadroparin/Nadroparin_Chen2024_reference.md) | Chen Y et al., Is the current therapeutic dosage of na…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1331673](https://doi.org/10.3389/fphar.2024.1331673) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Jaspers_2022](drugs/drug_nadroparin/Nadroparin_Jaspers2022_reference.md) | Jaspers TCC et al., Optimising the Nadroparin Dose for Thro…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01162-x](https://doi.org/10.1007/s40262-022-01162-x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Piwowarczyk_2023](drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_shrinkage_adults_with_covid_19.md) | Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01244-4](https://doi.org/10.1007/s40262-023-01244-4) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Diepstraten_2015](drugs/drug_nadroparin/Nadroparin_Diepstraten2015_reference.md) | Diepstraten J et al., Population pharmacodynamic model for lo…, European journal of clinica… (2015) | [10.1007/s00228-014-1760-4](https://doi.org/10.1007/s00228-014-1760-4) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Laporte_1999](drugs/drug_nadroparin/Nadroparin_Laporte1999_reference.md) | Laporte S et al., Population pharmacokinetic of nadropari…, European journal of pharmac… (1999) | [10.1016/s0928-0987(98)00064-5](https://doi.org/10.1016/s0928-0987(98)00064-5) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Piwowarczyk_2023](drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_estimate_unit.md) | Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01244-4](https://doi.org/10.1007/s40262-023-01244-4) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Piwowarczyk_2023](drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_estimate_unit_adults_with_covid_1.md) | Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01244-4](https://doi.org/10.1007/s40262-023-01244-4) |
 
 ## Pharmacodynamics (PD)
 
@@ -38,7 +40,7 @@
 
 - **PubMed hits:** 10 matched, 10 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 6  ·  extracted 3  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 8  ·  extracted 1  ·  needs_review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

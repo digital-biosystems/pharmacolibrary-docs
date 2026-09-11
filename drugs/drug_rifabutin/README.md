@@ -21,10 +21,10 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bentley_2021](drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md) | Bentley S et al., Clinical pharmacokinetics and dose reco…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkab312](https://doi.org/10.1093/jac/dkab312) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ding_2022](drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md) | Ding Q et al., A Review of Population Pharmacokinetic…, Drug design, development an… (2022) | [10.2147/dddt.s384637](https://doi.org/10.2147/dddt.s384637) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Thoueille_2023](drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md) | Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2020](drugs/drug_rifabutin/Rifabutin_Wang2020_reference.md) | Wang X et al., Population Pharmacokinetic Analysis of…, Antimicrobial agents and ch… (2020) | [10.1128/aac.01202-20](https://doi.org/10.1128/aac.01202-20) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Bentley_2021](drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md) | Bentley S et al., Clinical pharmacokinetics and dose reco…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkab312](https://doi.org/10.1093/jac/dkab312) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ding_2022](drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md) | Ding Q et al., A Review of Population Pharmacokinetic…, Drug design, development an… (2022) | [10.2147/dddt.s384637](https://doi.org/10.2147/dddt.s384637) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Thoueille_2023](drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md) | Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Wang_2020](drugs/drug_rifabutin/Rifabutin_Wang2020_reference.md) | Wang X et al., Population Pharmacokinetic Analysis of…, Antimicrobial agents and ch… (2020) | [10.1128/aac.01202-20](https://doi.org/10.1128/aac.01202-20) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Deshpande_2024](drugs/drug_rifabutin/Rifabutin_Deshpande2024_reference.md) | Deshpande D et al., Antibacterial action of penicillin agai…, IJTLD open (2024) | [10.5588/ijtldopen.24.0238](https://doi.org/10.5588/ijtldopen.24.0238) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Gatti_1998](drugs/drug_rifabutin/Rifabutin_Gatti1998_reference.md) | Gatti G et al., Population pharmacokinetics of rifabuti…, Antimicrobial agents and ch… (1998) | [10.1128/AAC.42.8.2017](https://doi.org/10.1128/AAC.42.8.2017) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Hennig_2016](drugs/drug_rifabutin/Rifabutin_Hennig2016_reference.md) | Hennig (2016) | — |
@@ -48,7 +48,7 @@
 
 - **PubMed hits:** 259 matched, 104 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 8  ·  extracted 4  ·  needs_review 0  ·  rejected 4  ·  stale 0
+- **records:** 8  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

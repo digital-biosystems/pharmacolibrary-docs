@@ -1,8 +1,18 @@
 # rimegepant — `Rimegepant_Comisar2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+2. Advisory only — the base model still replicates.
+3. Check the record's covariate_definitions in _interpretv2.yaml.
+4. Re-run the engineer for this drug if the covariate curves are wanted.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -10,25 +20,27 @@
 not matched (stem Comisar_2025)
 
 ## Model component
-<dbs-pgx drug="rimegepant" model-id="Rimegepant_Comisar2025_reference" status="extracted" stale="false" population="pediatric and adult patients with migraine" measured-compound="rimegepant" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="rimegepant" model-id="Rimegepant_Comisar2025_reference" status="not_modelled" stale="false" population="pediatric and adult patients with migraine" measured-compound="rimegepant" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F, L/h | `Q27` · CL/F | 25.2 | not captured | not captured | not captured | 32.3 | llm_confirmed (0.6) | cts70360-tbl-0002:row1:col1, cts70360-tbl-0002:row1:col2 | — | not captured |
-| V1/F, L | `Q290` · V1/F | 113 | not captured | not captured | not captured | 41.0 | llm_confirmed (0.6) | cts70360-tbl-0002:row2:col1, cts70360-tbl-0002:row2:col2 | — | None (67.8% RSE) |
-| V2/F, L | `Q82` · V2/F | 46.8 | not captured | not captured | not captured | 25.8 | llm_confirmed (0.6) | cts70360-tbl-0002:row3:col1, cts70360-tbl-0002:row3:col2 | — | not captured |
-| Q/F, L/h | `Q69` · Q/F | 4.16 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | cts70360-tbl-0002:row4:col1 | — | not captured |
-| k a, 1/h | `Q95` · t1/2ka | 3.05 | not captured | not captured | not captured | not captured | llm (0.6) | cts70360-tbl-0002:row6:col1 | — | not captured |
-| fed_on_f1 | `Q900` · fed_on_f1 | -0.331 | not captured | not captured | not captured | not captured | not captured (not captured) | cts70360-tbl-0002:row10:col1 | — | not captured |
-| capsule_formulation_on_k_tr | `Q900` · capsule_formulation_on_k_tr | 2.19 | not captured | not captured | not captured | not captured | not captured (not captured) | cts70360-tbl-0002:row13:col1 | — | not captured |
-| body_weight_effect_on_cl_f_and_q_f | `Q900` · body_weight_effect_on_cl_f_and_q_f | 0.575 | not captured | not captured | not captured | not captured | not captured (not captured) | cts70360-tbl-0002:row18:col1 | — | not captured |
-| body_weight_effect_on_v1_f_and_v2_f | `Q900` · body_weight_effect_on_v1_f_and_v2_f | 1.18 | not captured | not captured | not captured | not captured | not captured (not captured) | cts70360-tbl-0002:row19:col1 | — | not captured |
-| theta_cl_f_hepatic | `Q900` · theta_cl_f_hepatic | -0.410 | not captured | not captured | not captured | not captured | not captured (not captured) | cts70360-tbl-0002:row8:col1 | — | not captured |
-| theta_q338_fed | `Q900` · theta_q338_fed | -0.698 | not captured | not captured | not captured | not captured | not captured (not captured) | cts70360-tbl-0002:row11:col1 | — | not captured |
-| theta_cl_f_hepatic | `Q900` · theta_cl_f_hepatic | -0.203 | not captured | not captured | not captured | not captured | not captured (not captured) | cts70360-tbl-0002:row15:col1 | — | not captured |
+| CL/F, L/h | `Q27` · CL/F | —(suppressed) | not captured | — | not captured | 32.3 | llm_confirmed (0.6) | cts70360-tbl-0002:row1:col1, cts70360-tbl-0002:row1:col2 | — | not captured |
+| V1/F, L | `Q290` · V1/F | —(suppressed) | not captured | — | not captured | 41.0 | llm_confirmed (0.6) | cts70360-tbl-0002:row2:col1, cts70360-tbl-0002:row2:col2 | — | None (67.8% RSE) |
+| V2/F, L | `Q82` · V2/F | —(suppressed) | not captured | — | not captured | 25.8 | llm_confirmed (0.6) | cts70360-tbl-0002:row3:col1, cts70360-tbl-0002:row3:col2 | — | not captured |
+| Q/F, L/h | `Q69` · Q/F | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | cts70360-tbl-0002:row4:col1 | — | not captured |
+| k a, 1/h | `Q95` · t1/2ka | —(suppressed) | not captured | — | not captured | not captured | llm (0.6) | cts70360-tbl-0002:row6:col1 | — | not captured |
+| fed_on_f1 | `Q900` · fed_on_f1 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | cts70360-tbl-0002:row10:col1 | — | not captured |
+| capsule_formulation_on_k_tr | `Q900` · capsule_formulation_on_k_tr | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | cts70360-tbl-0002:row13:col1 | — | not captured |
+| body_weight_effect_on_cl_f_and_q_f | `Q900` · body_weight_effect_on_cl_f_and_q_f | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | cts70360-tbl-0002:row18:col1 | — | not captured |
+| body_weight_effect_on_v1_f_and_v2_f | `Q900` · body_weight_effect_on_v1_f_and_v2_f | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | cts70360-tbl-0002:row19:col1 | — | not captured |
+| theta_cl_f_hepatic | `Q900` · theta_cl_f_hepatic | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | cts70360-tbl-0002:row8:col1 | — | not captured |
+| theta_q338_fed | `Q900` · theta_q338_fed | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | cts70360-tbl-0002:row11:col1 | — | not captured |
+| theta_cl_f_hepatic | `Q900` · theta_cl_f_hepatic | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | cts70360-tbl-0002:row15:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -69,6 +81,15 @@ not matched (stem Comisar_2025)
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -76,7 +97,7 @@ not matched (stem Comisar_2025)
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_rimegepant/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Comisar_2025` / `Comisar_2025::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_rimegepant/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Comisar_2025` / `Comisar_2025::pediatric and adult patients with migraine`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

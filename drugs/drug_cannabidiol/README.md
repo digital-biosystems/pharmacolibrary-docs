@@ -34,7 +34,13 @@ Due to the need for confirmatory studies to verify the clinical benefit coupled 
 | <span class="pk-badge pk-badge--green">extracted</span> | [Eichler_2023](drugs/drug_cannabidiol/Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3.md) | Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Eichler_2023](drugs/drug_cannabidiol/Cannabidiol_Eichler2023_shrinkage.md) | Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Eichler_2023](drugs/drug_cannabidiol/Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5.md) | Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Sánchez_2023](drugs/drug_cannabidiol/Cannabidiol_Snchez2023_reference.md) | Sánchez de Medina A et al., Pharmacokinetics and oral bioavailabili…, Equine veterinary journal (2023) | [10.1111/evj.13923](https://doi.org/10.1111/evj.13923) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Eichler_2023](drugs/drug_cannabidiol/Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3_horses.md) | Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Eichler_2023](drugs/drug_cannabidiol/Cannabidiol_Eichler2023_omega_horses.md) | Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Eichler_2023](drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value_horses.md) | Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Eichler_2023](drugs/drug_cannabidiol/Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3_horses.md) | Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Eichler_2023](drugs/drug_cannabidiol/Cannabidiol_Eichler2023_shrinkage_horses.md) | Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Eichler_2023](drugs/drug_cannabidiol/Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5_horses.md) | Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Sánchez_2023](drugs/drug_cannabidiol/Cannabidiol_Snchez2023_reference.md) | Sánchez de Medina A et al., Pharmacokinetics and oral bioavailabili…, Equine veterinary journal (2023) | [10.1111/evj.13923](https://doi.org/10.1111/evj.13923) |
 
 ## Pharmacodynamics (PD)
 
@@ -81,7 +87,7 @@ Due to the need for confirmatory studies to verify the clinical benefit coupled 
 
 - **PubMed hits:** 897 matched, 129 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 7  ·  extracted 7  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 13  ·  extracted 6  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

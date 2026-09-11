@@ -31,12 +31,16 @@ Moreover, when employed for such indications montelukast is considered effective
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Li_2019](drugs/drug_montelukast/Montelukast_Li2019_reference.md) | Li Q et al., Developmental Pharmacogenetics of SLCO2…, Drug design, development an… (2019) | [10.2147/DDDT.S226913](https://doi.org/10.2147/DDDT.S226913) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Okubo_2016](drugs/drug_montelukast/Montelukast_Okubo2016_10_15_years_old.md) | Okubo K et al., Montelukast in the treatment of perenni…, Journal of drug assessment (2016) | [10.1080/21556660.2016.1209507](https://doi.org/10.1080/21556660.2016.1209507) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Okubo_2016](drugs/drug_montelukast/Montelukast_Okubo2016_1_5_years_old.md) | Okubo K et al., Montelukast in the treatment of perenni…, Journal of drug assessment (2016) | [10.1080/21556660.2016.1209507](https://doi.org/10.1080/21556660.2016.1209507) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Okubo_2016](drugs/drug_montelukast/Montelukast_Okubo2016_6_9_years_old.md) | Okubo K et al., Montelukast in the treatment of perenni…, Journal of drug assessment (2016) | [10.1080/21556660.2016.1209507](https://doi.org/10.1080/21556660.2016.1209507) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Okubo_2016](drugs/drug_montelukast/Montelukast_Okubo2016_all.md) | Okubo K et al., Montelukast in the treatment of perenni…, Journal of drug assessment (2016) | [10.1080/21556660.2016.1209507](https://doi.org/10.1080/21556660.2016.1209507) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhu_2024](drugs/drug_montelukast/Montelukast_Zhu2024_reference.md) | Zhu Y et al., A validated UPLC-MS/MS method for quant…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1432944](https://doi.org/10.3389/fphar.2024.1432944) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Li_2019](drugs/drug_montelukast/Montelukast_Li2019_reference.md) | Li Q et al., Developmental Pharmacogenetics of SLCO2…, Drug design, development an… (2019) | [10.2147/DDDT.S226913](https://doi.org/10.2147/DDDT.S226913) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Okubo_2016](drugs/drug_montelukast/Montelukast_Okubo2016_10_15_years_old_paediatric_japanese_pa.md) | Okubo K et al., Montelukast in the treatment of perenni…, Journal of drug assessment (2016) | [10.1080/21556660.2016.1209507](https://doi.org/10.1080/21556660.2016.1209507) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Okubo_2016](drugs/drug_montelukast/Montelukast_Okubo2016_1_5_years_old_paediatric_japanese_pati.md) | Okubo K et al., Montelukast in the treatment of perenni…, Journal of drug assessment (2016) | [10.1080/21556660.2016.1209507](https://doi.org/10.1080/21556660.2016.1209507) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Okubo_2016](drugs/drug_montelukast/Montelukast_Okubo2016_6_9_years_old_paediatric_japanese_pati.md) | Okubo K et al., Montelukast in the treatment of perenni…, Journal of drug assessment (2016) | [10.1080/21556660.2016.1209507](https://doi.org/10.1080/21556660.2016.1209507) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Okubo_2016](drugs/drug_montelukast/Montelukast_Okubo2016_all_paediatric_japanese_patients_with.md) | Okubo K et al., Montelukast in the treatment of perenni…, Journal of drug assessment (2016) | [10.1080/21556660.2016.1209507](https://doi.org/10.1080/21556660.2016.1209507) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zhu_2024](drugs/drug_montelukast/Montelukast_Zhu2024_reference.md) | Zhu Y et al., A validated UPLC-MS/MS method for quant…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1432944](https://doi.org/10.3389/fphar.2024.1432944) |
 
 ## Pharmacodynamics (PD)
 
@@ -87,7 +91,7 @@ Moreover, when employed for such indications montelukast is considered effective
 
 - **PubMed hits:** 258 matched, 79 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 6  ·  extracted 6  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 10  ·  extracted 4  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

@@ -23,14 +23,14 @@ Citalopram was approved by the FDA in 1998 for the treatment of depression in ad
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Akil_2016](drugs/drug_citalopram/Citalopram_Akil2016_reference.md) | Akil A et al., A population pharmacokinetic model for…, Journal of pharmacokinetics… (2016) | [10.1007/s10928-015-9457-6](https://doi.org/10.1007/s10928-015-9457-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Weisskopf_2020](drugs/drug_citalopram/Citalopram_Weisskopf2020_reference.md) | Weisskopf E et al., A population pharmacokinetic model for…, British journal of clinical… (2020) | [10.1111/bcp.14278](https://doi.org/10.1111/bcp.14278) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Akil_2016](drugs/drug_citalopram/Citalopram_Akil2016_reference.md) | Akil A et al., A population pharmacokinetic model for…, Journal of pharmacokinetics… (2016) | [10.1007/s10928-015-9457-6](https://doi.org/10.1007/s10928-015-9457-6) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Weisskopf_2020](drugs/drug_citalopram/Citalopram_Weisskopf2020_reference.md) | Weisskopf E et al., A population pharmacokinetic model for…, British journal of clinical… (2020) | [10.1111/bcp.14278](https://doi.org/10.1111/bcp.14278) |
 
 ## Coverage
 
 - **PubMed hits:** 75 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 6
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

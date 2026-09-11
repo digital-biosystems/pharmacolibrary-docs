@@ -27,9 +27,9 @@ Celecoxib, in combination with [tramadol], is indicated for the management of ac
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Dhondt_2017](drugs/drug_celecoxib/Celecoxib_Dhondt2017_reference.md) | Dhondt L et al., Comparative population pharmacokinetics…, Scientific reports (2017) | [10.1038/s41598-017-12159-z](https://doi.org/10.1038/s41598-017-12159-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hannam_2023](drugs/drug_celecoxib/Celecoxib_Hannam2023_reference.md) | Hannam JA et al., Modeling adult COX-2 cerebrospinal flui…, Paediatric anaesthesia (2023) | [10.1111/pan.14590](https://doi.org/10.1111/pan.14590) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Vaddady_2011](drugs/drug_celecoxib/Celecoxib_Vaddady2011_reference.md) | Vaddady PK et al., Pharmacokinetics of a combination of Δ9…, Biopharmaceutics & drug dis… (2011) | [10.1002/bdd.740](https://doi.org/10.1002/bdd.740) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Dhondt_2017](drugs/drug_celecoxib/Celecoxib_Dhondt2017_reference.md) | Dhondt L et al., Comparative population pharmacokinetics…, Scientific reports (2017) | [10.1038/s41598-017-12159-z](https://doi.org/10.1038/s41598-017-12159-z) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Hannam_2023](drugs/drug_celecoxib/Celecoxib_Hannam2023_reference.md) | Hannam JA et al., Modeling adult COX-2 cerebrospinal flui…, Paediatric anaesthesia (2023) | [10.1111/pan.14590](https://doi.org/10.1111/pan.14590) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Vaddady_2011](drugs/drug_celecoxib/Celecoxib_Vaddady2011_reference.md) | Vaddady PK et al., Pharmacokinetics of a combination of Δ9…, Biopharmaceutics & drug dis… (2011) | [10.1002/bdd.740](https://doi.org/10.1002/bdd.740) |
 
 ## Pharmacogenomics (PGx)
 
@@ -54,7 +54,7 @@ Celecoxib, in combination with [tramadol], is indicated for the management of ac
 
 - **PubMed hits:** 800 matched, 70 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

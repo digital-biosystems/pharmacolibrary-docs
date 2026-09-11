@@ -1,8 +1,15 @@
 # paracetamol — `Paracetamol_Allegaert2015_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,18 +18,20 @@ Allegaert K; Peeters MY; Beleyn B; Smits A; Kulo A; van Calsteren K; et al. et a
   ·  DOI: [10.1186/s12871-015-0144-3](https://doi.org/10.1186/s12871-015-0144-3)
 
 ## Model component
-<dbs-pgx drug="paracetamol" model-id="Paracetamol_Allegaert2015_reference" status="extracted" stale="false" population="young women" measured-compound="paracetamol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="paracetamol" model-id="Paracetamol_Allegaert2015_reference" status="not_modelled" stale="false" population="young women" measured-compound="paracetamol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLPG (L/h) | `Q22` · CL | 2.02 | L/h | 5.611111111111111e-07 | [l] / [h] | not captured | llm (0.6) | Tab2:row5:col3, Tab2:row5:col4 | — | not captured |
-| V1 (L) | `Q63` · V1 | 1.83 | L | 0.00183 | [l] | not captured | exact (1.0) | Tab2:row13:col2, Tab2:row13:col3, Tab2:row13:col4 | — | not captured |
-| V2 (L) | `Q64` · V2 | 22.3 | L | 0.0223 | [l] | not captured | exact (1.0) | Tab2:row15:col1, Tab2:row15:col2, Tab2:row15:col3, Tab2:row15:col4 | — | not captured |
-| Q (L/h) | `Q30` · Q | 1.34 | L/h | 3.722222222222222e-07 | [l] / [h] | not captured | exact (1.0) | Tab2:row17:col1, Tab2:row17:col2, Tab2:row17:col3, Tab2:row17:col4 | — | not captured |
-| Tlag | `Q83` · tlag | 4.2 | min | 252.0 | h | not captured | review_gapfill (0.7) | Gibb_2008:review | — | not captured |
+| CLPG (L/h) | `Q22` · CL | —(suppressed) | L/h | — | [l] / [h] | not captured | llm (0.6) | Tab2:row5:col3, Tab2:row5:col4 | — | not captured |
+| V1 (L) | `Q63` · V1 | —(suppressed) | L | — | [l] | not captured | exact (1.0) | Tab2:row13:col2, Tab2:row13:col3, Tab2:row13:col4 | — | not captured |
+| V2 (L) | `Q64` · V2 | —(suppressed) | L | — | [l] | not captured | exact (1.0) | Tab2:row15:col1, Tab2:row15:col2, Tab2:row15:col3, Tab2:row15:col4 | — | not captured |
+| Q (L/h) | `Q30` · Q | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | Tab2:row17:col1, Tab2:row17:col2, Tab2:row17:col3, Tab2:row17:col4 | — | not captured |
+| Tlag | `Q83` · tlag | —(suppressed) | min | — | h | not captured | review_gapfill (0.7) | Gibb_2008:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -76,6 +85,14 @@ Allegaert K; Peeters MY; Beleyn B; Smits A; Kulo A; van Calsteren K; et al. et a
 | C9_phys_window_Q63 | pass | volume within physiological range | 1.83 L | not captured | not captured | ['Tab2:row13:col2', 'Tab2:row13:col3', 'Tab2:row13:col4'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 22.3 L | not captured | not captured | ['Tab2:row15:col1', 'Tab2:row15:col2', 'Tab2:row15:col3', 'Tab2:row15:col4'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -83,7 +100,7 @@ Allegaert K; Peeters MY; Beleyn B; Smits A; Kulo A; van Calsteren K; et al. et a
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_paracetamol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Allegaert_2015` / `Allegaert_2015::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_paracetamol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Allegaert_2015` / `Allegaert_2015::young women`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

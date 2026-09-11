@@ -21,8 +21,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Li_2021](drugs/drug_palivizumab/Palivizumab_Li2021_reference.md) | Li J et al., Model Informed Development of VRC01 in…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2026](https://doi.org/10.1002/cpt.2026) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: nonlinear topology</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `manual_model_class`</sub> | [Reuter_2019](drugs/drug_palivizumab/Palivizumab_Reuter2019_reference.md) | Reuter SE et al., Reducing Palivizumab Dose Requirements…, CPT: pharmacometrics & syst… (2019) | [10.1002/psp4.12364](https://doi.org/10.1002/psp4.12364) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Li_2021](drugs/drug_palivizumab/Palivizumab_Li2021_reference.md) | Li J et al., Model Informed Development of VRC01 in…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2026](https://doi.org/10.1002/cpt.2026) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Huang_2017](drugs/drug_palivizumab/Palivizumab_Huang2017_reference.md) | Huang Y et al., Population pharmacokinetics analysis of…, mAbs (2017) | [10.1080/19420862.2017.1311435](https://doi.org/10.1080/19420862.2017.1311435) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Madhi_2025](drugs/drug_palivizumab/Palivizumab_Madhi2025_reference.md) | Madhi SA et al., A Phase 1b/2a Trial of a Half-life Exte…, The Journal of infectious d… (2025) | [10.1093/infdis/jiae581](https://doi.org/10.1093/infdis/jiae581) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Robbie_2012](drugs/drug_palivizumab/Palivizumab_Robbie2012_reference.md) | Robbie GJ et al., Population pharmacokinetics of palivizu…, Antimicrobial agents and ch… (2012) | [10.1128/aac.06446-11](https://doi.org/10.1128/aac.06446-11) |
@@ -46,7 +46,7 @@
 
 - **PubMed hits:** 49 matched, 33 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 5  ·  extracted 1  ·  needs_review 1  ·  rejected 3  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

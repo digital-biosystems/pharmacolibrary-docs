@@ -23,15 +23,17 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Lanke_2019](drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference.md) | Lanke S et al., Population Pharmacokinetic Analyses and…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1370](https://doi.org/10.1002/jcph.1370) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Lanke_2019](drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference.md) | Lanke S et al., Population Pharmacokinetic Analyses and…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1370](https://doi.org/10.1002/jcph.1370) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Plosker_2010](drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md) | Plosker GL, Tolvaptan, Drugs (2010) | [10.2165/11204630-000000000-00000](https://doi.org/10.2165/11204630-000000000-00000) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Shoaf_2017](drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md) | Shoaf SE et al., Low-dose tolvaptan PK/PD: comparison of…, European journal of clinica… (2017) | [10.1007/s00228-017-2302-7](https://doi.org/10.1007/s00228-017-2302-7) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Shoaf_2025](drugs/drug_tolvaptan/Tolvaptan_Shoaf2025_reference.md) | Shoaf SE et al., Tolvaptan pharmacokinetics and pharmaco…, European journal of pediatr… (2025) | [10.1007/s00431-025-06689-2](https://doi.org/10.1007/s00431-025-06689-2) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Van_2013](drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md) | Van (2013) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Van_2013](drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md) | Van (2013) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Van_2013_2](drugs/drug_tolvaptan/Tolvaptan_Van2013v2_reference.md) | Van (2013) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: model_not_built</sub><br><sub>route_to: `engineer`</sub> | [Bhatt_2014](drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference.md) | Bhatt PR et al., Review of Tolvaptan's Pharmacokinetic a…, Journal of clinical medicine (2014) | [10.3390/jcm3041276](https://doi.org/10.3390/jcm3041276) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: model_not_built</sub><br><sub>route_to: `engineer`</sub> | [Shoaf_2012_3](drugs/drug_tolvaptan/Tolvaptan_Shoaf2012v3_reference.md) | Shoaf (2012) | — |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: model_not_built</sub><br><sub>route_to: `engineer`</sub> | [Stanajic-Petrovic_2025](drugs/drug_tolvaptan/Tolvaptan_StanajicPetrovic2025_review_reference.md) | Stanajic-Petrovic (2025) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Bhatt_2014](drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference.md) | Bhatt PR et al., Review of Tolvaptan's Pharmacokinetic a…, Journal of clinical medicine (2014) | [10.3390/jcm3041276](https://doi.org/10.3390/jcm3041276) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Lanke_2019](drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference.md) | Lanke S et al., Population Pharmacokinetic Analyses and…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1370](https://doi.org/10.1002/jcph.1370) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Plosker_2010](drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md) | Plosker GL, Tolvaptan, Drugs (2010) | [10.2165/11204630-000000000-00000](https://doi.org/10.2165/11204630-000000000-00000) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Shoaf_2012_3](drugs/drug_tolvaptan/Tolvaptan_Shoaf2012v3_reference.md) | Shoaf (2012) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Shoaf_2017](drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md) | Shoaf SE et al., Low-dose tolvaptan PK/PD: comparison of…, European journal of clinica… (2017) | [10.1007/s00228-017-2302-7](https://doi.org/10.1007/s00228-017-2302-7) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Van_2013](drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md) | Van (2013) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Van_2013_2](drugs/drug_tolvaptan/Tolvaptan_Van2013v2_reference.md) | Van (2013) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -82,7 +84,7 @@
 
 - **PubMed hits:** 115 matched, 63 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 11  ·  extracted 8  ·  needs_review 3  ·  rejected 0  ·  stale 5
+- **records:** 13  ·  extracted 5  ·  needs_review 1  ·  rejected 0  ·  stale 4
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

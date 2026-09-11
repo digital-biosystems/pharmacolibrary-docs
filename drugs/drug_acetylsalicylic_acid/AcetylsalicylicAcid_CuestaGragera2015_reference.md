@@ -2,7 +2,15 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** a compartment is unreachable, or a metabolite is unlinked
+
+**Steps:**
+1. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
+2. Parent/metabolite records commonly miss the formation link.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -63,7 +71,7 @@ Cuesta-Gragera A; Navarro-Fontestad C; Mangas-Sanjuan V; González-Álvarez I; G
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cuesta-Gragera_2015` / `Cuesta-Gragera_2015::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cuesta-Gragera_2015` / `Cuesta-Gragera_2015::adults`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

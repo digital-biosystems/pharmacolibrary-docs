@@ -2,7 +2,14 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** every check the reviewer could run passed
+
+**Steps:**
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -85,7 +92,7 @@ Ngo TL; Lee CH; Han N; Back HM; Rhee SJ; Noh K; et al. et al. (2020). Internatio
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_duloxetine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ngo_2020` / `Ngo_2020::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_duloxetine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ngo_2020` / `Ngo_2020::rats and extrapolated humans`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -21,7 +21,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Atkinson_1978](drugs/drug_amphotericin_b/AmphotericinB_Atkinson1978_reference.md) | Atkinson AJ et al., Amphotericin B pharmacokinetics in huma…, Antimicrobial agents and ch… (1978) | [10.1128/AAC.13.2.271](https://doi.org/10.1128/AAC.13.2.271) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Atkinson_1978](drugs/drug_amphotericin_b/AmphotericinB_Atkinson1978_reference.md) | Atkinson AJ et al., Amphotericin B pharmacokinetics in huma…, Antimicrobial agents and ch… (1978) | [10.1128/AAC.13.2.271](https://doi.org/10.1128/AAC.13.2.271) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Stott_2018](drugs/drug_amphotericin_b/AmphotericinB_Stott2018_reference.md) | Stott KE et al., Population Pharmacokinetic Model and Me…, Antimicrobial agents and ch… (2018) | [10.1128/AAC.02526-17](https://doi.org/10.1128/AAC.02526-17) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Stott_2022](drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference.md) | Stott KE et al., Population pharmacokinetics of liposoma…, The Journal of antimicrobia… (2022) | [10.1093/jac/dkac389](https://doi.org/10.1093/jac/dkac389) |
 
@@ -29,7 +29,7 @@
 
 - **PubMed hits:** 151 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

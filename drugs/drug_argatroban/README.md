@@ -21,8 +21,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Akimoto_2011](drugs/drug_argatroban/Argatroban_Akimoto2011_reference.md) | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Cox_2004](drugs/drug_argatroban/Argatroban_Cox2004_reference.md) | Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004) | [10.1177/0091270004267651](https://doi.org/10.1177/0091270004267651) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Akimoto_2011](drugs/drug_argatroban/Argatroban_Akimoto2011_reference.md) | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Cox_2004](drugs/drug_argatroban/Argatroban_Cox2004_reference.md) | Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004) | [10.1177/0091270004267651](https://doi.org/10.1177/0091270004267651) |
 
 ## Pharmacodynamics (PD)
 
@@ -40,7 +40,7 @@
 
 - **PubMed hits:** 15 matched, 15 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

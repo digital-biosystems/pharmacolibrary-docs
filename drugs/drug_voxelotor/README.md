@@ -24,7 +24,9 @@ Voxelotor was granted accelerated FDA approval on November 25 2019, as it is lik
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Savic_2022](drugs/drug_voxelotor/Voxelotor_Savic2022_estimate_rse_a_b.md) | Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12731](https://doi.org/10.1002/psp4.12731) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Savic_2022](drugs/drug_voxelotor/Voxelotor_Savic2022_estimate_rse_a_b_adults_and_adolescents.md) | Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12731](https://doi.org/10.1002/psp4.12731) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Savic_2022](drugs/drug_voxelotor/Voxelotor_Savic2022_shrinkage.md) | Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12731](https://doi.org/10.1002/psp4.12731) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Savic_2022](drugs/drug_voxelotor/Voxelotor_Savic2022_shrinkage_adults_and_adolescents_with_si.md) | Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12731](https://doi.org/10.1002/psp4.12731) |
 
 ## Pharmacodynamics (PD)
 
@@ -38,7 +40,7 @@ Voxelotor was granted accelerated FDA approval on November 25 2019, as it is lik
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

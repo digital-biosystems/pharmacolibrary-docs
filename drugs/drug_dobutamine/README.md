@@ -21,14 +21,14 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hallik_2020](drugs/drug_dobutamine/Dobutamine_Hallik2020_reference.md) | Hallik M et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2020) | [10.1111/bcp.14146](https://doi.org/10.1111/bcp.14146) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Šíma_2015](drugs/drug_dobutamine/Dobutamine_ma2015_reference.md) | Šíma M et al., Effect of co-medication on the pharmaco…, Physiological research (2015) | [10.33549/physiolres.933213](https://doi.org/10.33549/physiolres.933213) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Hallik_2020](drugs/drug_dobutamine/Dobutamine_Hallik2020_reference.md) | Hallik M et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2020) | [10.1111/bcp.14146](https://doi.org/10.1111/bcp.14146) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Šíma_2015](drugs/drug_dobutamine/Dobutamine_ma2015_reference.md) | Šíma M et al., Effect of co-medication on the pharmaco…, Physiological research (2015) | [10.33549/physiolres.933213](https://doi.org/10.33549/physiolres.933213) |
 
 ## Coverage
 
 - **PubMed hits:** 107 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

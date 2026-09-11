@@ -23,7 +23,7 @@ Misoprostol was granted FDA approval on 27 December 1988.[L7616]
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Vorontsova_2022](drugs/drug_misoprostol/Misoprostol_Vorontsova2022_reference.md) | Vorontsova Y et al., Pharmacokinetics of vaginal versus bucc…, Clinical and translational… (2022) | [10.1111/cts.13306](https://doi.org/10.1111/cts.13306) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Vorontsova_2022](drugs/drug_misoprostol/Misoprostol_Vorontsova2022_reference.md) | Vorontsova Y et al., Pharmacokinetics of vaginal versus bucc…, Clinical and translational… (2022) | [10.1111/cts.13306](https://doi.org/10.1111/cts.13306) |
 
 ## Pharmacodynamics (PD)
 
@@ -36,7 +36,7 @@ Misoprostol was granted FDA approval on 27 December 1988.[L7616]
 
 - **PubMed hits:** 35 matched, 24 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

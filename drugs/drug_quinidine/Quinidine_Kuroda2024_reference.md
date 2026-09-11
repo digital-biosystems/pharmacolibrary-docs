@@ -1,8 +1,20 @@
 # quinidine — `Quinidine_Kuroda2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `Vss`, `MRT`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,26 +23,28 @@ Kuroda T; Minamijima Y; Kinman CK; Takahashi Y; Ebisuda Y; Inoue K; et al. et al
   ·  DOI: [10.3389/fvets.2024.1454342](https://doi.org/10.3389/fvets.2024.1454342)
 
 ## Model component
-<dbs-pgx drug="quinidine" model-id="Quinidine_Kuroda2024_reference" status="extracted" stale="false" population="Thoroughbred horses" measured-compound="quinidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="quinidine" model-id="Quinidine_Kuroda2024_reference" status="not_modelled" stale="false" population="Thoroughbred horses" measured-compound="quinidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V1 | `Q63` · V1 | 0.63 | not captured | not captured | not captured | 40.5 | exact (1.0) | tab1:row1:col2, tab1:row1:col3, tab1:row1:col4, tab1:row1:col5, tab1:row1:col6 | — | not captured |
-| V2 | `Q64` · V2 | 0.59 | not captured | not captured | not captured | 37.8 | exact (1.0) | tab1:row2:col2, tab1:row2:col3, tab1:row2:col4, tab1:row2:col5, tab1:row2:col6 | — | not captured |
-| V3 | `Q77` · V3 | 3.68 | not captured | not captured | not captured | 28.5 | exact (1.0) | tab1:row3:col2, tab1:row3:col3, tab1:row3:col4, tab1:row3:col5, tab1:row3:col6 | — | not captured |
-| CL | `Q22` · CL | 0.49 | not captured | not captured | not captured | 25.6 | exact (1.0) | tab1:row4:col2, tab1:row4:col3, tab1:row4:col4, tab1:row4:col5, tab1:row4:col6 | — | not captured |
-| CL2 | `Q30` · Q | 2.87 | not captured | not captured | not captured | 74.9 | special_case (0.95) | tab1:row5:col2, tab1:row5:col3, tab1:row5:col4, tab1:row5:col5, tab1:row5:col6 | — | not captured |
-| Kabs | `Q49` · kabs | 1.00 | not captured | not captured | not captured | 94.3 | exact (1.0) | tab1:row7:col1, tab1:row7:col2, tab1:row7:col3, tab1:row7:col4, tab1:row7:col5, tab1:row7:col6 | — | not captured |
-| F | `Q40` · Fab | 36.4 | not captured | not captured | not captured | 33.1 | exact (1.0) | tab1:row8:col2, tab1:row8:col3, tab1:row8:col4, tab1:row8:col5, tab1:row8:col6 | — | not captured |
-| Half_life_alpha | `Q59` · t1/2α | 0.06 | not captured | not captured | not captured | 10.2 | llm (0.6) | tab1:row14:col2, tab1:row14:col3, tab1:row14:col4, tab1:row14:col5 | — | not captured |
-| Half_life_Beta | `Q60` · t1/2β | 0.31 | not captured | not captured | not captured | 11.9 | llm (0.6) | tab1:row15:col2, tab1:row15:col3, tab1:row15:col4, tab1:row15:col5 | — | not captured |
-| Half_life_Gamma | `Q89` · t1/2γ | 7.76 | not captured | not captured | not captured | 8.8 | llm (0.6) | tab1:row16:col2, tab1:row16:col3, tab1:row16:col4, tab1:row16:col5 | — | not captured |
-| Absorption_Half_life | `Q95` · t1/2ka | 0.69 | not captured | not captured | not captured | 23.1 | llm (0.6) | tab1:row17:col2, tab1:row17:col3, tab1:row17:col4, tab1:row17:col5 | — | not captured |
-| Vss (steady-state volume of distribution) | `Q65` · Vss | 4.90 | steady-state volume of distribution | not captured | [s]^2 · [tatevolumeofdistribution] · [teady] | 5.1 | exact (1.0) | tab1:row18:col2, tab1:row18:col3, tab1:row18:col4, tab1:row18:col5 | — | not captured |
-| MRT (Mean residence time) | `Q53` · MRT | 10.12 | Mean residence time | not captured | [m] · [eanresidencetime] | 9.3 | exact (1.0) | tab1:row19:col2, tab1:row19:col3, tab1:row19:col4, tab1:row19:col5 | — | not captured |
+| V1 | `Q63` · V1 | —(suppressed) | not captured | — | not captured | 40.5 | exact (1.0) | tab1:row1:col2, tab1:row1:col3, tab1:row1:col4, tab1:row1:col5, tab1:row1:col6 | — | not captured |
+| V2 | `Q64` · V2 | —(suppressed) | not captured | — | not captured | 37.8 | exact (1.0) | tab1:row2:col2, tab1:row2:col3, tab1:row2:col4, tab1:row2:col5, tab1:row2:col6 | — | not captured |
+| V3 | `Q77` · V3 | —(suppressed) | not captured | — | not captured | 28.5 | exact (1.0) | tab1:row3:col2, tab1:row3:col3, tab1:row3:col4, tab1:row3:col5, tab1:row3:col6 | — | not captured |
+| CL | `Q22` · CL | —(suppressed) | not captured | — | not captured | 25.6 | exact (1.0) | tab1:row4:col2, tab1:row4:col3, tab1:row4:col4, tab1:row4:col5, tab1:row4:col6 | — | not captured |
+| CL2 | `Q30` · Q | —(suppressed) | not captured | — | not captured | 74.9 | special_case (0.95) | tab1:row5:col2, tab1:row5:col3, tab1:row5:col4, tab1:row5:col5, tab1:row5:col6 | — | not captured |
+| Kabs | `Q49` · kabs | —(suppressed) | not captured | — | not captured | 94.3 | exact (1.0) | tab1:row7:col1, tab1:row7:col2, tab1:row7:col3, tab1:row7:col4, tab1:row7:col5, tab1:row7:col6 | — | not captured |
+| F | `Q40` · Fab | —(suppressed) | not captured | — | not captured | 33.1 | exact (1.0) | tab1:row8:col2, tab1:row8:col3, tab1:row8:col4, tab1:row8:col5, tab1:row8:col6 | — | not captured |
+| Half_life_alpha | `Q59` · t1/2α | —(suppressed) | not captured | — | not captured | 10.2 | llm (0.6) | tab1:row14:col2, tab1:row14:col3, tab1:row14:col4, tab1:row14:col5 | — | not captured |
+| Half_life_Beta | `Q60` · t1/2β | —(suppressed) | not captured | — | not captured | 11.9 | llm (0.6) | tab1:row15:col2, tab1:row15:col3, tab1:row15:col4, tab1:row15:col5 | — | not captured |
+| Half_life_Gamma | `Q89` · t1/2γ | —(suppressed) | not captured | — | not captured | 8.8 | llm (0.6) | tab1:row16:col2, tab1:row16:col3, tab1:row16:col4, tab1:row16:col5 | — | not captured |
+| Absorption_Half_life | `Q95` · t1/2ka | —(suppressed) | not captured | — | not captured | 23.1 | llm (0.6) | tab1:row17:col2, tab1:row17:col3, tab1:row17:col4, tab1:row17:col5 | — | not captured |
+| Vss (steady-state volume of distribution) | `Q65` · Vss | —(suppressed) | steady-state volume of distribution | — | [s]^2 · [tatevolumeofdistribution] · [teady] | 5.1 | exact (1.0) | tab1:row18:col2, tab1:row18:col3, tab1:row18:col4, tab1:row18:col5 | — | not captured |
+| MRT (Mean residence time) | `Q53` · MRT | —(suppressed) | Mean residence time | — | [m] · [eanresidencetime] | 9.3 | exact (1.0) | tab1:row19:col2, tab1:row19:col3, tab1:row19:col4, tab1:row19:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -64,6 +78,14 @@ Kuroda T; Minamijima Y; Kinman CK; Takahashi Y; Ebisuda Y; Inoue K; et al. et al
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.49 | not captured | not captured | ['tab1:row4:col2', 'tab1:row4:col3', 'tab1:row4:col4', 'tab1:row4:col5', 'tab1:row4:col6'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -71,7 +93,7 @@ Kuroda T; Minamijima Y; Kinman CK; Takahashi Y; Ebisuda Y; Inoue K; et al. et al
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_quinidine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kuroda_2024` / `Kuroda_2024::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_quinidine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kuroda_2024` / `Kuroda_2024::Thoroughbred horses`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

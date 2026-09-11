@@ -23,16 +23,19 @@ Glycopyrronium was originally granted FDA approval on 11 August 1961.[L33090]
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bartels_2013](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_reference.md) | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Bartels_2021](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_mf.md) | Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of drug me… (2021) | [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Bartels_2013](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_reference.md) | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Bartels_2021](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_mf_patients_with_asthma.md) | Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of drug me… (2021) | [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Bartels_2021](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_gly.md) | Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of drug me… (2021) | [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Bartels_2021](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_gly_patients_with_asthma.md) | Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of drug me… (2021) | [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Bartels_2021](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_ind.md) | Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of drug me… (2021) | [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Bartels_2021](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_ind_patients_with_asthma.md) | Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of drug me… (2021) | [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x) |
 
 ## Coverage
 
 - **PubMed hits:** 31 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 2  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 7  ·  extracted 1  ·  needs_review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

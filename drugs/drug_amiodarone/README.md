@@ -23,16 +23,24 @@ Off-label indications include atrial fibrillation and supraventricular tachycard
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hirai_2022](drugs/drug_amiodarone/Amiodarone_Hirai2022_reference.md) | Hirai T et al., Population Pharmacokinetic Model of Ami…, Biological & pharmaceutical… (2022) | [10.1248/bpb.b21-00940](https://doi.org/10.1248/bpb.b21-00940) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Pollak_2000](drugs/drug_amiodarone/Amiodarone_Pollak2000_reference.md) | Pollak PT et al., Population pharmacokinetics of long-ter…, Clinical pharmacology and t… (2000) | [10.1067/mcp.2000.107047](https://doi.org/10.1067/mcp.2000.107047) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Hirai_2022](drugs/drug_amiodarone/Amiodarone_Hirai2022_reference.md) | Hirai T et al., Population Pharmacokinetic Model of Ami…, Biological & pharmaceutical… (2022) | [10.1248/bpb.b21-00940](https://doi.org/10.1248/bpb.b21-00940) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Li_2025](drugs/drug_amiodarone/Amiodarone_Li2025_base.md) | Li TY et al., Dose Optimization of Rivaroxaban in Eld…, Drug design, development an… (2025) | [10.2147/DDDT.S563521](https://doi.org/10.2147/DDDT.S563521) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Li_2025](drugs/drug_amiodarone/Amiodarone_Li2025_base_elderly_chinese_patients_with_non_val.md) | Li TY et al., Dose Optimization of Rivaroxaban in Eld…, Drug design, development an… (2025) | [10.2147/DDDT.S563521](https://doi.org/10.2147/DDDT.S563521) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Li_2025](drugs/drug_amiodarone/Amiodarone_Li2025_final.md) | Li TY et al., Dose Optimization of Rivaroxaban in Eld…, Drug design, development an… (2025) | [10.2147/DDDT.S563521](https://doi.org/10.2147/DDDT.S563521) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Li_2025](drugs/drug_amiodarone/Amiodarone_Li2025_final_elderly_chinese_patients_with_non_va.md) | Li TY et al., Dose Optimization of Rivaroxaban in Eld…, Drug design, development an… (2025) | [10.2147/DDDT.S563521](https://doi.org/10.2147/DDDT.S563521) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Pollak_2000](drugs/drug_amiodarone/Amiodarone_Pollak2000_reference.md) | Pollak PT et al., Population pharmacokinetics of long-ter…, Clinical pharmacology and t… (2000) | [10.1067/mcp.2000.107047](https://doi.org/10.1067/mcp.2000.107047) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Sermsappasuk_2006](drugs/drug_amiodarone/Amiodarone_Sermsappasuk2006_cva_mean_s_d.md) | Sermsappasuk P et al., Kinetic analysis of myocardial uptake a…, European journal of pharmac… (2006) | [10.1016/j.ejps.2006.02.007](https://doi.org/10.1016/j.ejps.2006.02.007) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Sermsappasuk_2006](drugs/drug_amiodarone/Amiodarone_Sermsappasuk2006_cva_mean_s_d_isolated_perfused_r.md) | Sermsappasuk P et al., Kinetic analysis of myocardial uptake a…, European journal of pharmac… (2006) | [10.1016/j.ejps.2006.02.007](https://doi.org/10.1016/j.ejps.2006.02.007) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Sermsappasuk_2006](drugs/drug_amiodarone/Amiodarone_Sermsappasuk2006_estimate_mean_s_d.md) | Sermsappasuk P et al., Kinetic analysis of myocardial uptake a…, European journal of pharmac… (2006) | [10.1016/j.ejps.2006.02.007](https://doi.org/10.1016/j.ejps.2006.02.007) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Sermsappasuk_2006](drugs/drug_amiodarone/Amiodarone_Sermsappasuk2006_estimate_mean_s_d_isolated_perfu.md) | Sermsappasuk P et al., Kinetic analysis of myocardial uptake a…, European journal of pharmac… (2006) | [10.1016/j.ejps.2006.02.007](https://doi.org/10.1016/j.ejps.2006.02.007) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Yonezawa_2002](drugs/drug_amiodarone/Amiodarone_Yonezawa2002_mex_amd_group_1.md) | Yonezawa E et al., Lack of interaction between amiodarone…, Journal of clinical pharmac… (2002) | [10.1177/00912700222011265](https://doi.org/10.1177/00912700222011265) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Yonezawa_2002](drugs/drug_amiodarone/Amiodarone_Yonezawa2002_mex_amd_group_1_inpatients_with_supr.md) | Yonezawa E et al., Lack of interaction between amiodarone…, Journal of clinical pharmac… (2002) | [10.1177/00912700222011265](https://doi.org/10.1177/00912700222011265) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Yonezawa_2002](drugs/drug_amiodarone/Amiodarone_Yonezawa2002_mex_amd_group_3.md) | Yonezawa E et al., Lack of interaction between amiodarone…, Journal of clinical pharmac… (2002) | [10.1177/00912700222011265](https://doi.org/10.1177/00912700222011265) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Yonezawa_2002](drugs/drug_amiodarone/Amiodarone_Yonezawa2002_mex_amd_group_3_inpatients_with_supr.md) | Yonezawa E et al., Lack of interaction between amiodarone…, Journal of clinical pharmac… (2002) | [10.1177/00912700222011265](https://doi.org/10.1177/00912700222011265) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Yonezawa_2002](drugs/drug_amiodarone/Amiodarone_Yonezawa2002_mex_amd_group_5.md) | Yonezawa E et al., Lack of interaction between amiodarone…, Journal of clinical pharmac… (2002) | [10.1177/00912700222011265](https://doi.org/10.1177/00912700222011265) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Yonezawa_2002](drugs/drug_amiodarone/Amiodarone_Yonezawa2002_mex_amd_group_5_inpatients_with_supr.md) | Yonezawa E et al., Lack of interaction between amiodarone…, Journal of clinical pharmac… (2002) | [10.1177/00912700222011265](https://doi.org/10.1177/00912700222011265) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Yonezawa_2002](drugs/drug_amiodarone/Amiodarone_Yonezawa2002_mex_group.md) | Yonezawa E et al., Lack of interaction between amiodarone…, Journal of clinical pharmac… (2002) | [10.1177/00912700222011265](https://doi.org/10.1177/00912700222011265) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Yonezawa_2002](drugs/drug_amiodarone/Amiodarone_Yonezawa2002_mex_group_inpatients_with_supraventr.md) | Yonezawa E et al., Lack of interaction between amiodarone…, Journal of clinical pharmac… (2002) | [10.1177/00912700222011265](https://doi.org/10.1177/00912700222011265) |
 
 ## Pharmacogenomics (PGx)
 
@@ -50,7 +58,7 @@ Off-label indications include atrial fibrillation and supraventricular tachycard
 
 - **PubMed hits:** 510 matched, 72 returned
 - **screened:** 39  ·  **relevant:** 2
-- **records:** 10  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 18  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

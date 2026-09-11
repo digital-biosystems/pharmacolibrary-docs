@@ -25,8 +25,8 @@ Opiods, including morphine, are effective for the short term management of pain.
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yalcin_2022](drugs/drug_morphine/Morphine_Yalcin2022_reference.md) | Yalcin N et al., Population pharmacokinetics in critical…, BMJ paediatrics open (2022) | [10.1136/bmjpo-2022-001512](https://doi.org/10.1136/bmjpo-2022-001512) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yang_2024](drugs/drug_morphine/Morphine_Yang2024_reference.md) | Yang TE et al., Mechanistic pharmacokinetic-pharmacodyn…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13215](https://doi.org/10.1002/psp4.13215) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Yalcin_2022](drugs/drug_morphine/Morphine_Yalcin2022_reference.md) | Yalcin N et al., Population pharmacokinetics in critical…, BMJ paediatrics open (2022) | [10.1136/bmjpo-2022-001512](https://doi.org/10.1136/bmjpo-2022-001512) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Yang_2024](drugs/drug_morphine/Morphine_Yang2024_reference.md) | Yang TE et al., Mechanistic pharmacokinetic-pharmacodyn…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13215](https://doi.org/10.1002/psp4.13215) |
 
 ## Pharmacodynamics (PD)
 
@@ -38,7 +38,7 @@ Opiods, including morphine, are effective for the short term management of pain.
 
 - **PubMed hits:** 588 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

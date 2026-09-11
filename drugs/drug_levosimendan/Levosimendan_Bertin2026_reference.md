@@ -2,7 +2,14 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** every check the reviewer could run passed
+
+**Steps:**
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -66,7 +73,7 @@ _No resolved parameters._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_levosimendan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bertin_2026` / `Bertin_2026::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_levosimendan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bertin_2026` / `Bertin_2026::critically ill adults, neonates and infants on VA-ECMO`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

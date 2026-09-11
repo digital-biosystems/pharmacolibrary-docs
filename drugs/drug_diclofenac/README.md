@@ -21,7 +21,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yuan_2017](drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md) | Yuan J et al., A pharmacokinetic study of diclofenac s…, Biomedical reports (2017) | [10.3892/br.2017.942](https://doi.org/10.3892/br.2017.942) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Yuan_2017](drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md) | Yuan J et al., A pharmacokinetic study of diclofenac s…, Biomedical reports (2017) | [10.3892/br.2017.942](https://doi.org/10.3892/br.2017.942) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Karunanidhi_2026](drugs/drug_diclofenac/Diclofenac_Karunanidhi2026_reference.md) | Karunanidhi A et al., Ceftazidime/avibactam and aztreonam com…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01540-25](https://doi.org/10.1128/aac.01540-25) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Singh_2026](drugs/drug_diclofenac/Diclofenac_Singh2026_reference.md) | Singh N et al., Aminoglycosides enhance meropenem/vabor…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01365-25](https://doi.org/10.1128/aac.01365-25) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Standing_2008](drugs/drug_diclofenac/Diclofenac_Standing2008_reference.md) | Standing JF et al., Population pharmacokinetics of oral dic…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03289.x](https://doi.org/10.1111/j.1365-2125.2008.03289.x) |
@@ -80,7 +80,7 @@
 
 - **PubMed hits:** 1588 matched, 107 returned
 - **screened:** 4  ·  **relevant:** 8
-- **records:** 4  ·  extracted 1  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

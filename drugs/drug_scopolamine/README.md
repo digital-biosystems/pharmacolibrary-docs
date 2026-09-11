@@ -23,7 +23,7 @@ Scopolamine was first approved by the FDA on December 31, 1979, and is currently
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Liem-Moolenaar_2011](drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_reference.md) | Liem-Moolenaar M et al., Pharmacokinetic-pharmacodynamic relatio…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03936.x](https://doi.org/10.1111/j.1365-2125.2011.03936.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Liem-Moolenaar_2011](drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_reference.md) | Liem-Moolenaar M et al., Pharmacokinetic-pharmacodynamic relatio…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03936.x](https://doi.org/10.1111/j.1365-2125.2011.03936.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Alvarez-Jimenez_2016](drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md) | Alvarez-Jimenez R et al., Model-based exposure-response analysis…, British journal of clinical… (2016) | [10.1111/bcp.13031](https://doi.org/10.1111/bcp.13031) |
 
 ## Pharmacodynamics (PD)
@@ -50,7 +50,7 @@ Scopolamine was first approved by the FDA on December 31, 1979, and is currently
 
 - **PubMed hits:** 118 matched, 30 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -33,18 +33,24 @@ A diazepam nasal spray is indicated in patients 6 years and older to treat inter
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Cavallaro_2026](drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md) | Cavallaro G et al., Pharmacological therapy of neonatal ana…, Frontiers in pediatrics (2026) | [10.3389/fped.2026.1757704](https://doi.org/10.3389/fped.2026.1757704) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Helfer_2026](drugs/drug_diazepam/Diazepam_Helfer2026_reference.md) | Helfer VE et al., Population Pharmacokinetics and Dosing…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70204](https://doi.org/10.1002/jcph.70204) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Huang_2025](drugs/drug_diazepam/Diazepam_Huang2025_reference.md) | Huang (2025) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Huang_2025_2](drugs/drug_diazepam/Diazepam_Huang2025v2_reference.md) | Huang (2025) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Klotz_1975](drugs/drug_diazepam/Diazepam_Klotz1975_albumin.md) | Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975) | [10.1172/JCI107938](https://doi.org/10.1172/JCI107938) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Klotz_1975](drugs/drug_diazepam/Diazepam_Klotz1975_alkaline_phosphatase.md) | Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975) | [10.1172/JCI107938](https://doi.org/10.1172/JCI107938) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Klotz_1975](drugs/drug_diazepam/Diazepam_Klotz1975_bilirubin.md) | Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975) | [10.1172/JCI107938](https://doi.org/10.1172/JCI107938) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Klotz_1975](drugs/drug_diazepam/Diazepam_Klotz1975_ldh.md) | Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975) | [10.1172/JCI107938](https://doi.org/10.1172/JCI107938) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Klotz_1975](drugs/drug_diazepam/Diazepam_Klotz1975_sgot.md) | Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975) | [10.1172/JCI107938](https://doi.org/10.1172/JCI107938) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Klotz_1975](drugs/drug_diazepam/Diazepam_Klotz1975_t1_2_b.md) | Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975) | [10.1172/JCI107938](https://doi.org/10.1172/JCI107938) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ku_2018](drugs/drug_diazepam/Diazepam_Ku2018_reference.md) | Ku LC et al., Population Pharmacokinetics and Explora…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12349](https://doi.org/10.1002/psp4.12349) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2022](drugs/drug_diazepam/Diazepam_Wang2022_reference.md) | Wang LL et al., Pharmacokinetics of Diazepam and Its Me…, Drugs in R&D (2022) | [10.1007/s40268-021-00375-y](https://doi.org/10.1007/s40268-021-00375-y) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Cavallaro_2026](drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md) | Cavallaro G et al., Pharmacological therapy of neonatal ana…, Frontiers in pediatrics (2026) | [10.3389/fped.2026.1757704](https://doi.org/10.3389/fped.2026.1757704) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Helfer_2026](drugs/drug_diazepam/Diazepam_Helfer2026_reference.md) | Helfer VE et al., Population Pharmacokinetics and Dosing…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70204](https://doi.org/10.1002/jcph.70204) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Huang_2025_2](drugs/drug_diazepam/Diazepam_Huang2025v2_reference.md) | Huang (2025) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Klotz_1975](drugs/drug_diazepam/Diazepam_Klotz1975_albumin_adults_with_liver_disease_and_hea.md) | Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975) | [10.1172/JCI107938](https://doi.org/10.1172/JCI107938) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Klotz_1975](drugs/drug_diazepam/Diazepam_Klotz1975_alkaline_phosphatase_adults_with_liver_di.md) | Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975) | [10.1172/JCI107938](https://doi.org/10.1172/JCI107938) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Klotz_1975](drugs/drug_diazepam/Diazepam_Klotz1975_bilirubin_adults_with_liver_disease_and_h.md) | Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975) | [10.1172/JCI107938](https://doi.org/10.1172/JCI107938) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Klotz_1975](drugs/drug_diazepam/Diazepam_Klotz1975_ldh_adults_with_liver_disease_and_healthy.md) | Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975) | [10.1172/JCI107938](https://doi.org/10.1172/JCI107938) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Klotz_1975](drugs/drug_diazepam/Diazepam_Klotz1975_sgot_adults_with_liver_disease_and_health.md) | Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975) | [10.1172/JCI107938](https://doi.org/10.1172/JCI107938) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Klotz_1975](drugs/drug_diazepam/Diazepam_Klotz1975_t1_2_b_adults_with_liver_disease_and_heal.md) | Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975) | [10.1172/JCI107938](https://doi.org/10.1172/JCI107938) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ku_2018](drugs/drug_diazepam/Diazepam_Ku2018_reference.md) | Ku LC et al., Population Pharmacokinetics and Explora…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12349](https://doi.org/10.1002/psp4.12349) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Wang_2022](drugs/drug_diazepam/Diazepam_Wang2022_reference.md) | Wang LL et al., Pharmacokinetics of Diazepam and Its Me…, Drugs in R&D (2022) | [10.1007/s40268-021-00375-y](https://doi.org/10.1007/s40268-021-00375-y) |
 
 ## Pharmacodynamics (PD)
 
@@ -67,7 +73,7 @@ A diazepam nasal spray is indicated in patients 6 years and older to treat inter
 
 - **PubMed hits:** 1648 matched, 117 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 12  ·  extracted 12  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 18  ·  extracted 7  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

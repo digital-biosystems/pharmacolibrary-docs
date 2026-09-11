@@ -21,11 +21,11 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Garrett_1982](drugs/drug_bretylium/Bretylium_Garrett1982_reference.md) | Garrett ER et al., Bretylium pharmacokinetics and bioavail…, Biopharmaceutics & drug dis… (1982) | [10.1002/bdd.2510030206](https://doi.org/10.1002/bdd.2510030206) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Greenberg_2022](drugs/drug_bretylium/Bretylium_Greenberg2022_reference.md) | Greenberg RG et al., Population Pharmacokinetics of Moxiflox…, Paediatric drugs (2022) | [10.1007/s40272-022-00493-3](https://doi.org/10.1007/s40272-022-00493-3) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kamath_1981](drugs/drug_bretylium/Bretylium_Kamath1981_reference.md) | Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmaceutical s… (1981) | [10.1002/jps.2600700623](https://doi.org/10.1002/jps.2600700623) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Narang_1980](drugs/drug_bretylium/Bretylium_Narang1980_reference.md) | Narang PK et al., Pharmacokinetics of bretylium in man af…, Journal of pharmacokinetics… (1980) | [10.1007/BF01059384](https://doi.org/10.1007/BF01059384) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Rapeport_1985](drugs/drug_bretylium/Bretylium_Rapeport1985_reference.md) | Rapeport WG, Clinical pharmacokinetics of bretylium, Clinical pharmacokinetics (1985) | [10.2165/00003088-198510030-00004](https://doi.org/10.2165/00003088-198510030-00004) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Garrett_1982](drugs/drug_bretylium/Bretylium_Garrett1982_reference.md) | Garrett ER et al., Bretylium pharmacokinetics and bioavail…, Biopharmaceutics & drug dis… (1982) | [10.1002/bdd.2510030206](https://doi.org/10.1002/bdd.2510030206) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Greenberg_2022](drugs/drug_bretylium/Bretylium_Greenberg2022_reference.md) | Greenberg RG et al., Population Pharmacokinetics of Moxiflox…, Paediatric drugs (2022) | [10.1007/s40272-022-00493-3](https://doi.org/10.1007/s40272-022-00493-3) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kamath_1981](drugs/drug_bretylium/Bretylium_Kamath1981_reference.md) | Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmaceutical s… (1981) | [10.1002/jps.2600700623](https://doi.org/10.1002/jps.2600700623) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Narang_1980](drugs/drug_bretylium/Bretylium_Narang1980_reference.md) | Narang PK et al., Pharmacokinetics of bretylium in man af…, Journal of pharmacokinetics… (1980) | [10.1007/BF01059384](https://doi.org/10.1007/BF01059384) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Rapeport_1985](drugs/drug_bretylium/Bretylium_Rapeport1985_reference.md) | Rapeport WG, Clinical pharmacokinetics of bretylium, Clinical pharmacokinetics (1985) | [10.2165/00003088-198510030-00004](https://doi.org/10.2165/00003088-198510030-00004) |
 
 ## Pharmacodynamics (PD)
 
@@ -39,7 +39,7 @@
 
 - **PubMed hits:** 53 matched, 31 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 5  ·  extracted 5  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

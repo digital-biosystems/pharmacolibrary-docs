@@ -29,7 +29,7 @@ In addition to the above, epinephrine is used as an over the counter (OTC) agent
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Heradstveit_2023](drugs/drug_epinephrine/Epinephrine_Heradstveit2023_reference.md) | Heradstveit BE et al., Pharmacokinetics of Epinephrine During…, Resuscitation (2023) | [10.1016/j.resuscitation.2023.110025](https://doi.org/10.1016/j.resuscitation.2023.110025) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Heradstveit_2023](drugs/drug_epinephrine/Epinephrine_Heradstveit2023_reference.md) | Heradstveit BE et al., Pharmacokinetics of Epinephrine During…, Resuscitation (2023) | [10.1016/j.resuscitation.2023.110025](https://doi.org/10.1016/j.resuscitation.2023.110025) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Knych_2023](drugs/drug_epinephrine/Epinephrine_Knych2023_reference.md) | Knych HK et al., Pharmacokinetics and metabolism of lido…, BMC veterinary research (2023) | [10.1186/s12917-023-03787-x](https://doi.org/10.1186/s12917-023-03787-x) |
 
 ## Pharmacodynamics (PD)
@@ -50,7 +50,7 @@ In addition to the above, epinephrine is used as an over the counter (OTC) agent
 
 - **PubMed hits:** 621 matched, 66 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

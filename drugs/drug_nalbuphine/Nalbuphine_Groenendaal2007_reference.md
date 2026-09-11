@@ -2,7 +2,14 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** a parameter falls outside the physiological window
+
+**Steps:**
+1. Confirm the value and unit against the paper before treating it as an error.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -61,7 +68,7 @@ Groenendaal D; Freijer J; de Mik D; Bouw MR; Danhof M; de Lange EC et al. (2007)
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_nalbuphine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Groenendaal_2007` / `Groenendaal_2007::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_nalbuphine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Groenendaal_2007` / `Groenendaal_2007::review reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

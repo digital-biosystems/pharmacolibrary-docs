@@ -1,8 +1,15 @@
 # chloroquine — `Chloroquine_Yao2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,18 +18,20 @@ Yao X; Yan X; Wang X; Cai T; Zhang S; Cui C; et al. et al. (2021). European jour
   ·  DOI: [10.1007/s00228-020-03032-6](https://doi.org/10.1007/s00228-020-03032-6)
 
 ## Model component
-<dbs-pgx drug="chloroquine" model-id="Chloroquine_Yao2021_reference" status="extracted" stale="false" population="COVID-19 patients" measured-compound="chloroquine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="chloroquine" model-id="Chloroquine_Yao2021_reference" status="not_modelled" stale="false" population="COVID-19 patients" measured-compound="chloroquine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, Q/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (l/h) | `Q27` · CL/F | 33.3 | l/h | 9.25e-06 | [l] / [h] | 8.00 | exact (1.0) | tab_2:row1:col1, tab_2:row1:col2 | — | 48.8 (8.50% RSE) |
-| V2/F (l) | `Q82` · V2/F | 3630 | l | 3.63 | [l] | 13.3 | exact (1.0) | tab_2:row2:col1, tab_2:row2:col2 | — | 67.7 (14.0% RSE) |
-| Q/F (l/h) | `Q69` · Q/F | 58.7 | l/h | 1.6305555555555556e-05 | [l] / [h] | 15.4 | exact (1.0) | tab_2:row3:col1, tab_2:row3:col2 | — | 48.4 (26.1% RSE) |
-| V3/F (l) | `Q78` · V3/F | 5120 | l | 5.12 | [l] | 11.8 | exact (1.0) | tab_2:row4:col1, tab_2:row4:col2 | — | 48.2 (18.4% RSE) |
-| ka (h -1 ) | `Q49` · kabs | 0.559 | h -1 | 0.00015527777777777778 | [1] / [h] | 20.2 | exact (1.0) | tab_2:row5:col1, tab_2:row5:col2 | — | 111 (40.5% RSE) |
+| CL/F (l/h) | `Q27` · CL/F | —(suppressed) | l/h | — | [l] / [h] | 8.00 | exact (1.0) | tab_2:row1:col1, tab_2:row1:col2 | — | 48.8 (8.50% RSE) |
+| V2/F (l) | `Q82` · V2/F | —(suppressed) | l | — | [l] | 13.3 | exact (1.0) | tab_2:row2:col1, tab_2:row2:col2 | — | 67.7 (14.0% RSE) |
+| Q/F (l/h) | `Q69` · Q/F | —(suppressed) | l/h | — | [l] / [h] | 15.4 | exact (1.0) | tab_2:row3:col1, tab_2:row3:col2 | — | 48.4 (26.1% RSE) |
+| V3/F (l) | `Q78` · V3/F | —(suppressed) | l | — | [l] | 11.8 | exact (1.0) | tab_2:row4:col1, tab_2:row4:col2 | — | 48.2 (18.4% RSE) |
+| ka (h -1 ) | `Q49` · kabs | —(suppressed) | h -1 | — | [1] / [h] | 20.2 | exact (1.0) | tab_2:row5:col1, tab_2:row5:col2 | — | 111 (40.5% RSE) |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -69,6 +78,20 @@ Yao X; Yan X; Wang X; Cai T; Zhang S; Cui C; et al. et al. (2021). European jour
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -76,7 +99,7 @@ Yao X; Yan X; Wang X; Cai T; Zhang S; Cui C; et al. et al. (2021). European jour
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_chloroquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yao_2021` / `Yao_2021::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_chloroquine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yao_2021` / `Yao_2021::COVID-19 patients`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

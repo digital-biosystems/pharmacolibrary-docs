@@ -1,8 +1,20 @@
 # doxorubicin — `Doxorubicin_Mody2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `CL`, `V`, `Q`, `V2`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,23 +23,25 @@ Mody H; Vaidya TR; Ait-Oudhia S et al. (2023). Scientific reports 13
   ·  DOI: [10.1038/s41598-023-29964-4](https://doi.org/10.1038/s41598-023-29964-4)
 
 ## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Mody2023_reference" status="extracted" stale="false" population="adults with cancer" measured-compound="doxorubicin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Mody2023_reference" status="not_modelled" stale="false" population="adults with cancer" measured-compound="doxorubicin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h/1.8m2) | `Q22` · CL | 53.3 | L/h/1.8m2 | not captured | [l] / [[h] · [1.8m2]] | not captured | exact (1.0) | Tab2:row2:col2 | — | not captured |
-| V (L/1.8m2) | `Q61` · V | 17.7 | L/1.8m2 | not captured | [l] / [1.8m2] | not captured | exact (1.0) | Tab2:row3:col2 | — | not captured |
-| Q2 (L/h/1.8m2) | `Q30` · Q | 58.7 | L/h/1.8m2 | not captured | [l] / [[h] · [1.8m2]] | not captured | special_case (0.95) | Tab2:row4:col2 | — | not captured |
-| V2 (L/1.8m2) | `Q64` · V2 | 1830 | L/1.8m2 | not captured | [l] / [1.8m2] | not captured | exact (1.0) | Tab2:row5:col2 | — | not captured |
-| Q3 (L/h/1.8m2) | `Q308` · Q3 | 21.8 | L/h/1.8m2 | not captured | [l] / [[h] · [1.8m2]] | not captured | exact (1.0) | Tab2:row6:col2 | — | not captured |
-| V3 (L/1.8m2) | `Q77` · V3 | 71.6 | L/1.8m2 | not captured | [l] / [1.8m2] | not captured | exact (1.0) | Tab2:row7:col2 | — | not captured |
-| kel (h−1) | `Q47` · kel | 1 | h−1 | 0.0002777777777777778 | [1] / [h] | not captured | exact (1.0) | Tab2:row9:col2 | — | not captured |
-| k12 (h−1) | `Q301` · k12 | 1 | h−1 | 0.0002777777777777778 | [1] / [h] | not captured | exact (1.0) | Tab2:row10:col2 | — | not captured |
-| k21 (h−1) | `Q302` · k21 | 1 | h−1 | 0.0002777777777777778 | [1] / [h] | not captured | exact (1.0) | Tab2:row11:col2 | — | not captured |
-| tlI2, min | `Q83` · tlag | 2.3 | min | 138.0 | h | not captured | review_gapfill (0.7) | Bérczi_1993:review | — | not captured |
+| CL (L/h/1.8m2) | `Q22` · CL | —(suppressed) | L/h/1.8m2 | — | [l] / [[h] · [1.8m2]] | not captured | exact (1.0) | Tab2:row2:col2 | — | not captured |
+| V (L/1.8m2) | `Q61` · V | —(suppressed) | L/1.8m2 | — | [l] / [1.8m2] | not captured | exact (1.0) | Tab2:row3:col2 | — | not captured |
+| Q2 (L/h/1.8m2) | `Q30` · Q | —(suppressed) | L/h/1.8m2 | — | [l] / [[h] · [1.8m2]] | not captured | special_case (0.95) | Tab2:row4:col2 | — | not captured |
+| V2 (L/1.8m2) | `Q64` · V2 | —(suppressed) | L/1.8m2 | — | [l] / [1.8m2] | not captured | exact (1.0) | Tab2:row5:col2 | — | not captured |
+| Q3 (L/h/1.8m2) | `Q308` · Q3 | —(suppressed) | L/h/1.8m2 | — | [l] / [[h] · [1.8m2]] | not captured | exact (1.0) | Tab2:row6:col2 | — | not captured |
+| V3 (L/1.8m2) | `Q77` · V3 | —(suppressed) | L/1.8m2 | — | [l] / [1.8m2] | not captured | exact (1.0) | Tab2:row7:col2 | — | not captured |
+| kel (h−1) | `Q47` · kel | —(suppressed) | h−1 | — | [1] / [h] | not captured | exact (1.0) | Tab2:row9:col2 | — | not captured |
+| k12 (h−1) | `Q301` · k12 | —(suppressed) | h−1 | — | [1] / [h] | not captured | exact (1.0) | Tab2:row10:col2 | — | not captured |
+| k21 (h−1) | `Q302` · k21 | —(suppressed) | h−1 | — | [1] / [h] | not captured | exact (1.0) | Tab2:row11:col2 | — | not captured |
+| tlI2, min | `Q83` · tlag | —(suppressed) | min | — | h | not captured | review_gapfill (0.7) | Bérczi_1993:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -72,6 +86,14 @@ Mody H; Vaidya TR; Ait-Oudhia S et al. (2023). Scientific reports 13
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 53.3 | not captured | not captured | ['Tab2:row2:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -79,7 +101,7 @@ Mody H; Vaidya TR; Ait-Oudhia S et al. (2023). Scientific reports 13
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_doxorubicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mody_2023` / `Mody_2023::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_doxorubicin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mody_2023` / `Mody_2023::adults with cancer`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

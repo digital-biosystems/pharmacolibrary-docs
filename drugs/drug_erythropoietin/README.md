@@ -26,7 +26,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Frymoyer_2017](drugs/drug_erythropoietin/Erythropoietin_Frymoyer2017_reference.md) | Frymoyer A et al., High-dose erythropoietin population pha…, Pediatric research (2017) | [10.1038/pr.2017.15](https://doi.org/10.1038/pr.2017.15) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Frymoyer_2017](drugs/drug_erythropoietin/Erythropoietin_Frymoyer2017_reference.md) | Frymoyer A et al., High-dose erythropoietin population pha…, Pediatric research (2017) | [10.1038/pr.2017.15](https://doi.org/10.1038/pr.2017.15) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Chakraborty_2005](drugs/drug_erythropoietin/Erythropoietin_Chakraborty2005_reference.md) | Chakraborty A et al., Population pharmacokinetics of erythrop…, Journal of clinical pharmac… (2005) | [10.1177/0091270004269520](https://doi.org/10.1177/0091270004269520) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Gaudard_2003](drugs/drug_erythropoietin/Erythropoietin_Gaudard2003_reference.md) | Gaudard A et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical drug investigation (2003) | [10.2165/00044011-200323030-00003](https://doi.org/10.2165/00044011-200323030-00003) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Jolling_2004](drugs/drug_erythropoietin/Erythropoietin_Jolling2004_reference.md) | Jolling K et al., Population pharmacokinetic analysis of…, Journal of pharmaceutical s… (2004) | [10.1002/jps.20200](https://doi.org/10.1002/jps.20200) |
@@ -36,7 +36,7 @@
 
 - **PubMed hits:** 258 matched, 63 returned
 - **screened:** 16  ·  **relevant:** 7
-- **records:** 5  ·  extracted 1  ·  needs_review 0  ·  rejected 4  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

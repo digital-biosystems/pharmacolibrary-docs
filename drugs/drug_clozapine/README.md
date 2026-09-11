@@ -25,14 +25,14 @@ Clozapine is also indicated for reducing the risk of recurrent suicidal behavior
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Geers_2022](drugs/drug_clozapine/Clozapine_Geers2022_reference.md) | Geers LM et al., Population pharmacokinetic model and li…, Therapeutic advances in psy… (2022) | [10.1177/20451253211065857](https://doi.org/10.1177/20451253211065857) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Reeves_2024](drugs/drug_clozapine/Clozapine_Reeves2024_reference.md) | Reeves S et al., A population pharmacokinetic model to g…, British journal of clinical… (2024) | [10.1111/bcp.15691](https://doi.org/10.1111/bcp.15691) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Geers_2022](drugs/drug_clozapine/Clozapine_Geers2022_reference.md) | Geers LM et al., Population pharmacokinetic model and li…, Therapeutic advances in psy… (2022) | [10.1177/20451253211065857](https://doi.org/10.1177/20451253211065857) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Reeves_2024](drugs/drug_clozapine/Clozapine_Reeves2024_reference.md) | Reeves S et al., A population pharmacokinetic model to g…, British journal of clinical… (2024) | [10.1111/bcp.15691](https://doi.org/10.1111/bcp.15691) |
 
 ## Coverage
 
 - **PubMed hits:** 143 matched, 40 returned
 - **screened:** 2  ·  **relevant:** 4
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

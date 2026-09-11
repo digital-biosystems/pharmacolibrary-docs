@@ -1,8 +1,20 @@
 # coagulation factor VIIa — `CoagulationFactorViia_Klitgaard2008_patients_with_traumatic`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `t1/2z`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,22 +23,14 @@ Klitgaard T; Nielsen TG et al. (2008). British journal of clinical pharmacology 
   ·  DOI: [10.1111/j.1365-2125.2007.03030.x](https://doi.org/10.1111/j.1365-2125.2007.03030.x)
 
 ## Model component
-<dbs-pgx drug="coagulation factor VIIa" model-id="CoagulationFactorViia_Klitgaard2008_patients_with_traumatic" status="extracted" stale="false" population="mixed patient populations (haemophilia, liver surgery, trauma, etc.)" measured-compound="recombinant activated factor VII" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="coagulation factor VIIa" model-id="CoagulationFactorViia_Klitgaard2008_patients_with_traumatic" status="not_modelled" stale="false" population="mixed patient populations (haemophilia, liver surgery, trauma, etc.)" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Parameterization:** mechanistic.
+**Parameterization:** not captured.
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL (ml kg−1 h−1)† | `Q22` · CL | 70 | ml kg−1 h−1 | 1.361111111111111e-06 | [ml] / [[h] · [kg]] | not captured | space_fold (0.95) | tbl1:row4:col30, tbl1:row4:col33 | — | not captured |
-| Vss(ml kg−1) | `Q65` · Vss | 174.5 | ml kg−1 | 0.012214999999999998 | [ml] / [kg] | not captured | exact (1.0) | tbl1:row5:col14, tbl1:row5:col33 | — | not captured |
-| t1/2(h) ( t1/2β[h])‡ | `Q57` · t1/2z | 2.37 | t1/2β[h] | not captured | [t1] / [[h] · [2β]] | not captured | space_fold (0.95) | tbl1:row6:col33 | — | not captured |
-| Volume of distribution (ml.kg-1) | `Q61` · V | 83.0 | ml.kg-1 | 0.00581 | L | not captured | review_gapfill (0.7) | Klitgaard_2006:review | — | not captured |
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
@@ -130,19 +134,13 @@ Klitgaard T; Nielsen TG et al. (2008). British journal of clinical pharmacology 
 
 ## Validation
 
-**Scholar closed-form checks:**
+**Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
+| check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl1:row4:col30', 'tbl1:row4:col33'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Klitgaard_2006:review'] |
-| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl1:row5:col14', 'tbl1:row5:col33'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 70.0 | not captured | not captured | ['tbl1:row4:col30', 'tbl1:row4:col33'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 4.9 L/h | not captured | not captured | ['tbl1:row4:col30', 'tbl1:row4:col33'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 5.81 L | not captured | not captured | ['Klitgaard_2006:review'] |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -151,7 +149,7 @@ Klitgaard T; Nielsen TG et al. (2008). British journal of clinical pharmacology 
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_coagulation_factor_viia/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Klitgaard_2008` / `Klitgaard_2008::patients_with_traumatic_blunt_and_or_penetrating_injury_2_23`)
+- scholar stages: `../../../knowledgebase/drugs/drug_coagulation_factor_viia/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Klitgaard_2008` / `Klitgaard_2008::patients_with_traumatic_blunt_and_or_penetrating_injury_2_23::mixed patient populations (haemophilia, liver surgery, trauma, etc.)`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

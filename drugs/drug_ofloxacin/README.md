@@ -21,13 +21,13 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Fillastre_1987](drugs/drug_ofloxacin/Ofloxacin_Fillastre1987_reference.md) | Fillastre JP et al., Ofloxacin pharmacokinetics in renal fai…, Antimicrobial agents and ch… (1987) | [10.1128/AAC.31.2.156](https://doi.org/10.1128/AAC.31.2.156) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Fillastre_1987](drugs/drug_ofloxacin/Ofloxacin_Fillastre1987_reference.md) | Fillastre JP et al., Ofloxacin pharmacokinetics in renal fai…, Antimicrobial agents and ch… (1987) | [10.1128/AAC.31.2.156](https://doi.org/10.1128/AAC.31.2.156) |
 
 ## Coverage
 
 - **PubMed hits:** 62 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

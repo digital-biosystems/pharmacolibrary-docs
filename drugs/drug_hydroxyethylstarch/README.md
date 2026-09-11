@@ -22,10 +22,10 @@ HES is a general term and can be sub-classified according to average molecular w
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Asskali_1999](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Asskali1999_reference.md) | Asskali F et al., [The accumulation of different substitu…, Anasthesiologie, Intensivme… (1999) | [10.1055/s-1999-208](https://doi.org/10.1055/s-1999-208) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Haefliger_2025](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Haefliger2025_reference.md) | Haefliger D et al., Individualization of piperacillin dosag…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf007](https://doi.org/10.1093/jac/dkaf007) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Singh_2022](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Singh2022_reference.md) | Singh D et al., A Phase 1 study of the long-acting anti…, British journal of clinical… (2022) | [10.1111/bcp.15002](https://doi.org/10.1111/bcp.15002) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yamakage_2012](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference.md) | Yamakage M et al., Pharmacokinetics and safety of 6 % hydr…, Journal of anesthesia (2012) | [10.1007/s00540-012-1430-6](https://doi.org/10.1007/s00540-012-1430-6) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Asskali_1999](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Asskali1999_reference.md) | Asskali F et al., [The accumulation of different substitu…, Anasthesiologie, Intensivme… (1999) | [10.1055/s-1999-208](https://doi.org/10.1055/s-1999-208) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Haefliger_2025](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Haefliger2025_reference.md) | Haefliger D et al., Individualization of piperacillin dosag…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf007](https://doi.org/10.1093/jac/dkaf007) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Singh_2022](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Singh2022_reference.md) | Singh D et al., A Phase 1 study of the long-acting anti…, British journal of clinical… (2022) | [10.1111/bcp.15002](https://doi.org/10.1111/bcp.15002) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Yamakage_2012](drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference.md) | Yamakage M et al., Pharmacokinetics and safety of 6 % hydr…, Journal of anesthesia (2012) | [10.1007/s00540-012-1430-6](https://doi.org/10.1007/s00540-012-1430-6) |
 
 ## Pharmacodynamics (PD)
 
@@ -38,7 +38,7 @@ HES is a general term and can be sub-classified according to average molecular w
 
 - **PubMed hits:** 236 matched, 113 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 4  ·  extracted 4  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

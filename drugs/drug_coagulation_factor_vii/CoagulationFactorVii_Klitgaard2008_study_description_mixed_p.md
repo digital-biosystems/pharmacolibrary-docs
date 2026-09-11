@@ -1,0 +1,168 @@
+# coagulation factor VII — `CoagulationFactorVii_Klitgaard2008_study_description_mixed_p`
+
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
+
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `t1/2z`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+## Citation
+Klitgaard T; Nielsen TG et al. (2008). British journal of clinical pharmacology 65
+  ·  DOI: [10.1111/j.1365-2125.2007.03030.x](https://doi.org/10.1111/j.1365-2125.2007.03030.x)
+
+## Model component
+<dbs-pgx drug="coagulation factor VII" model-id="CoagulationFactorVii_Klitgaard2008_study_description_mixed_p" status="not_modelled" stale="false" population="mixed patient populations (haemophilia, liver surgery, trauma, etc.)" measured-compound="" parameterization="" topology=""></dbs-pgx>
+
+**Parameterization:** not captured.
+
+## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
+_No resolved parameters._
+
+## Departures & gaps
+
+**Extraction notes:**
+- transposed table tbl1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
+- unparsed cell tbl1:row0:col5 = '5 (Adults) 12 (Children)'
+- unparsed cell tbl1:row1:col2 = '40, 80, 160'
+- unparsed cell tbl1:row1:col13 = '17.5, 35 or 70'
+- unparsed cell tbl1:row1:col18 = '15, 30'
+- unparsed cell tbl1:row1:col22 = '5, 20, 80'
+- unparsed cell tbl1:row1:col25 = '20, 40 or 80'
+- unparsed cell tbl1:row2:col2 = '0, 10, 30 min, 1, 2, 3, 5, 8, 12, 24 h'
+- unparsed cell tbl1:row2:col3 = '0, 5–10 min, 2, 3, 5, 6, 8, 12 h'
+- unparsed cell tbl1:row2:col5 = '0, 10, 20 min, 1, 3, 6, 8, 12 h'
+- unparsed cell tbl1:row2:col13 = '0, 10, 20, 50 min, 2, 4, 6, 8, 12, 24 h'
+- unparsed cell tbl1:row2:col16 = '0, 10, 15, 20 min, 1, 2, 4, 6, 8, 24 h'
+- unparsed cell tbl1:row2:col17 = '0, 5, 10, 30 min, 1, 2, 3, 4 h'
+- unparsed cell tbl1:row2:col18 = '0, 10, 15, 30 min, 1, 2, 4, 6, 8, 10, 24 h'
+- unparsed cell tbl1:row2:col22 = '0, 10, 30 min, 2, 4, 6, 8, 12 h'
+- unparsed cell tbl1:row2:col23 = '0, 4, 12, 24 h, days 2, 3, 4, 5 subgroup additional samples: 10, 30 min, 1, 2, 30 h'
+- unparsed cell tbl1:row2:col24 = '0, 0.5, 2, 4, 6, 8, 12 h'
+- unparsed cell tbl1:row2:col25 = '0, 15, 60 min, then hourly till end of surgery, 24 h, days 3, 7'
+- unparsed cell tbl1:row2:col27 = '0, 15, 60 min, then hourly till end of surgery, 24 h, days 3, 7'
+- unparsed cell tbl1:row2:col28 = '0, 15, 60 min, then hourly till end of surgery (last sample 5 h NCA, 6 h PopPK)'
+- unparsed cell tbl1:row4:col1 = 'CL (ml kg−1 h−1)†'
+- unparsed cell tbl1:row4:col5 = '58 (Children, FVII:C)'
+- unparsed cell tbl1:row4:col6 = '39 (Adults FVII:C)'
+- unparsed cell tbl1:row4:col7 = '78 (Children, FVIIa clot)'
+- unparsed cell tbl1:row4:col8 = '53 (Adults, FVIIa clot)'
+- unparsed cell tbl1:row4:col9 = '60 (Children, FVII:C)'
+- unparsed cell tbl1:row4:col10 = '44 (Adults FVII:C)'
+- unparsed cell tbl1:row4:col11 = '84 (Children, FVIIa clot)'
+- unparsed cell tbl1:row4:col12 = '60 (Adults, FVIIa clot)'
+- unparsed cell tbl1:row4:col14 = '29 (bleeding)'
+- unparsed cell tbl1:row4:col15 = '33 (nonbleeding)'
+- unparsed cell tbl1:row4:col18 = '71 (15 μg kg−1, FVII:C)'
+- unparsed cell tbl1:row4:col19 = '65 (15 μg kg−1, FVIIa clot)'
+- unparsed cell tbl1:row4:col20 = '79 (30 μg kg−1, FVII:C)'
+- unparsed cell tbl1:row4:col21 = '68 (30 μg kg−1, FVIIa clot)'
+- unparsed cell tbl1:row4:col25 = '62 (−liver)'
+- unparsed cell tbl1:row4:col26 = '90 (+liver)'
+- unparsed cell tbl1:row4:col28 = '64 (20 μg kg−1)'
+- unparsed cell tbl1:row4:col29 = '64 (80 μg kg−1)'
+- unparsed cell tbl1:row4:col32 = '41 (blunt) 40 (penetrating)'
+- unparsed cell tbl1:row5:col1 = 'Vss(ml kg−1)'
+- unparsed cell tbl1:row5:col3 = '80.0 (≤20 μg kg−1)'
+- unparsed cell tbl1:row5:col4 = '93.6 (&gt;20 μg kg−1)'
+- unparsed cell tbl1:row5:col5 = '164 (Children, FVII:C)'
+- unparsed cell tbl1:row5:col6 = '128 (Adults FVII:C)'
+- unparsed cell tbl1:row5:col7 = '196 (Children, FVIIa clot)'
+- unparsed cell tbl1:row5:col8 = '159 (Adults, FVIIa clot)'
+- unparsed cell tbl1:row5:col9 = '182 (FVII:C)'
+- unparsed cell tbl1:row5:col10 = '215 (FVIIa clot)'
+- unparsed cell tbl1:row5:col18 = '280 (15 μg kg−1, FVII:C)'
+- unparsed cell tbl1:row5:col19 = '210 (15 μg kg−1, FVIIa clot)'
+- unparsed cell tbl1:row5:col20 = '290 (30 μg kg−1, FVII:C)'
+- unparsed cell tbl1:row5:col21 = '230 (30 μg kg−1, FVIIa clot)'
+- unparsed cell tbl1:row5:col28 = '124 (20 μg kg−1)'
+- unparsed cell tbl1:row5:col29 = '277 (80 μg kg−1)'
+- unparsed cell tbl1:row5:col30 = '121.5 (20 μg kg−1)'
+- unparsed cell tbl1:row5:col31 = '164 (80 μg kg−1)'
+- unparsed cell tbl1:row6:col2 = '3.90–5.99 `'
+- unparsed cell tbl1:row6:col3 = '2.43 (≤20 μg kg−1)‡'
+- unparsed cell tbl1:row6:col4 = '2.45 (&gt;20 μg kg−1)‡'
+- unparsed cell tbl1:row6:col5 = '2.6 (Children, FVII:C)'
+- unparsed cell tbl1:row6:col6 = '3.1 (Adults FVII:C)'
+- unparsed cell tbl1:row6:col7 = '2.3 (Children, FVIIa clot)'
+- unparsed cell tbl1:row6:col8 = '2.3 (Adults, FVIIa clot)'
+- unparsed cell tbl1:row6:col9 = '4.3 (Children FVII:C)‡'
+- unparsed cell tbl1:row6:col10 = '4.8 (Adults FVII:C)‡'
+- unparsed cell tbl1:row6:col11 = '2.5 (Children FVIIa clot)‡'
+- unparsed cell tbl1:row6:col12 = '3.1 (Adults FVIIa clot)‡'
+- unparsed cell tbl1:row6:col14 = '4.37 (bleeding)‡'
+- unparsed cell tbl1:row6:col15 = '5.34 (nonbleeding)‡'
+- unparsed cell tbl1:row6:col18 = '2.82 (15 μg kg−1, FVII:C)'
+- unparsed cell tbl1:row6:col19 = '2.49 (15 μg kg−1, FVIIa clot)'
+- unparsed cell tbl1:row6:col20 = '3.11 (30 μg kg−1, FVII:C)'
+- unparsed cell tbl1:row6:col21 = '2.62 (30 μg kg−1, FVIIa clot)'
+- unparsed cell tbl1:row6:col23 = '3.08¶'
+- unparsed cell tbl1:row6:col24 = 'Approx. 2–3'
+- unparsed cell tbl1:row6:col25 = '2.59 (−liver)‡'
+- unparsed cell tbl1:row6:col26 = '2.19 (+liver)‡'
+- unparsed cell tbl1:row6:col28 = '1.08 (20 μg kg−1)'
+- unparsed cell tbl1:row6:col29 = '1.57 (80 μg kg−1)'
+- unparsed cell tbl1:row6:col30 = '1.20 (20 μg kg−1)¶'
+- unparsed cell tbl1:row6:col31 = '1.62 (80 μg kg−1)¶'
+- LLM selected parameter table(s) 1
+
+## Validation
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
+<details class="legend">
+<summary>Check legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+</details>
+
+## Raw artifacts
+
+- scholar stages: `../../../knowledgebase/drugs/drug_coagulation_factor_vii/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Klitgaard_2008` / `Klitgaard_2008::study_description::mixed patient populations (haemophilia, liver surgery, trauma, etc.)`)
+
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Downloadable models
+
+No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
+
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+## Web simulation
+
+> 🚧 Not yet wired up — this tab will host an in-browser run of the model above, with editable parameters and dosing.
+
+The simulator will be built on **bodylight.js**, which compiles a model to WebAssembly and drives it from the page, so a simulation runs entirely in the browser with nothing to install: <https://bodylight.physiome.cz/>
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Generated by `docs.py` (scholarv2). This page is a browsable view of the KB artifacts, not a replacement for them.</sub>

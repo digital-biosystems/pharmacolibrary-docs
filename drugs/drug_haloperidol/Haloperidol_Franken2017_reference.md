@@ -2,7 +2,14 @@
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** every check the reviewer could run passed
+
+**Steps:**
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -64,7 +71,7 @@ Franken LG; Mathot RAA; Masman AD; Baar FPM; Tibboel D; van Gelder T; et al. et 
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_haloperidol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Franken_2017` / `Franken_2017::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_haloperidol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Franken_2017` / `Franken_2017::terminally ill adult patients`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

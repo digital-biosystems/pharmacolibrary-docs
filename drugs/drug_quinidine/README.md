@@ -23,7 +23,9 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Fattinger_1991_2](drugs/drug_quinidine/Quinidine_Fattinger1991v2_population_mean_estimate.md) | Fattinger K et al., Population pharmacokinetics of quinidine, British journal of clinical… (1991) | [10.1111/j.1365-2125.1991.tb05531.x](https://doi.org/10.1111/j.1365-2125.1991.tb05531.x) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Fattinger_1991_2](drugs/drug_quinidine/Quinidine_Fattinger1991v2_s_e.md) | Fattinger K et al., Population pharmacokinetics of quinidine, British journal of clinical… (1991) | [10.1111/j.1365-2125.1991.tb05531.x](https://doi.org/10.1111/j.1365-2125.1991.tb05531.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kuroda_2024](drugs/drug_quinidine/Quinidine_Kuroda2024_reference.md) | Kuroda T et al., Rational quinidine dosage regimen for a…, Frontiers in veterinary sci… (2024) | [10.3389/fvets.2024.1454342](https://doi.org/10.3389/fvets.2024.1454342) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Fattinger_1991_2](drugs/drug_quinidine/Quinidine_Fattinger1991v2_population_mean_estimate_patients.md) | Fattinger K et al., Population pharmacokinetics of quinidine, British journal of clinical… (1991) | [10.1111/j.1365-2125.1991.tb05531.x](https://doi.org/10.1111/j.1365-2125.1991.tb05531.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Fattinger_1991_2](drugs/drug_quinidine/Quinidine_Fattinger1991v2_s_e_patients_with_arrhythmias.md) | Fattinger K et al., Population pharmacokinetics of quinidine, British journal of clinical… (1991) | [10.1111/j.1365-2125.1991.tb05531.x](https://doi.org/10.1111/j.1365-2125.1991.tb05531.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kuroda_2024](drugs/drug_quinidine/Quinidine_Kuroda2024_reference.md) | Kuroda T et al., Rational quinidine dosage regimen for a…, Frontiers in veterinary sci… (2024) | [10.3389/fvets.2024.1454342](https://doi.org/10.3389/fvets.2024.1454342) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Rakhit_1984](drugs/drug_quinidine/Quinidine_Rakhit1984_reference.md) | Rakhit A et al., Pharmacokinetics of quinidine and three…, Journal of pharmacokinetics… (1984) | [10.1007/BF01063608](https://doi.org/10.1007/BF01063608) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ueda_1980](drugs/drug_quinidine/Quinidine_Ueda1980_reference.md) | Ueda CT et al., Comparative pharmacokinetics of quinidi…, Journal of pharmaceutical s… (1980) | [10.1002/jps.2600691212](https://doi.org/10.1002/jps.2600691212) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Verme_1992](drugs/drug_quinidine/Quinidine_Verme1992_reference.md) | Verme CN et al., Pharmacokinetics of quinidine in male p…, Clinical pharmacokinetics (1992) | [10.2165/00003088-199222060-00005](https://doi.org/10.2165/00003088-199222060-00005) |
@@ -43,7 +45,7 @@
 
 - **PubMed hits:** 114 matched, 20 returned
 - **screened:** 7  ·  **relevant:** 7
-- **records:** 6  ·  extracted 3  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 8  ·  extracted 2  ·  needs_review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

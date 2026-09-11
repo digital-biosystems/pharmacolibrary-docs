@@ -24,7 +24,9 @@ Milrinone was originally synthesized at the Sterling Winthrop Research Institute
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [OHanlon_2024](drugs/drug_milrinone/Milrinone_OHanlon2024_final_estimate.md) | OHanlon (2024) | — |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [OHanlon_2024](drugs/drug_milrinone/Milrinone_OHanlon2024_final_estimate_paediatric_patients_pre.md) | OHanlon (2024) | — |
 | <span class="pk-badge pk-badge--neutral">None</span> | [OHanlon_2024](drugs/drug_milrinone/Milrinone_OHanlon2024_units.md) | OHanlon (2024) | — |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [OHanlon_2024](drugs/drug_milrinone/Milrinone_OHanlon2024_units_paediatric_patients_premature_ne.md) | OHanlon (2024) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Giaccone_2017](drugs/drug_milrinone/Milrinone_Giaccone2017_reference.md) | Giaccone A et al., Milrinone Pharmacokinetics and Pharmaco…, American journal of perinat… (2017) | [10.1055/s-0036-1597996](https://doi.org/10.1055/s-0036-1597996) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hallik_2019](drugs/drug_milrinone/Milrinone_Hallik2019_reference.md) | Hallik M et al., Population Pharmacokinetics and Dosing…, Pediatric critical care med… (2019) | [10.1097/PCC.0000000000001879](https://doi.org/10.1097/PCC.0000000000001879) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hornik_2019](drugs/drug_milrinone/Milrinone_Hornik2019_reference.md) | Hornik CP et al., Population Pharmacokinetics of Milrinon…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1499](https://doi.org/10.1002/jcph.1499) |
@@ -33,7 +35,7 @@ Milrinone was originally synthesized at the Sterling Winthrop Research Institute
 
 - **PubMed hits:** 96 matched, 20 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 5  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 7  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -1,8 +1,15 @@
 # disopyramide — `Disopyramide_Bryson1978_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,15 +18,17 @@ Bryson SM; Whiting B; Lawrence JR et al. (1978). British journal of clinical pha
   ·  DOI: [10.1111/j.1365-2125.1978.tb04605.x](https://doi.org/10.1111/j.1365-2125.1978.tb04605.x)
 
 ## Model component
-<dbs-pgx drug="disopyramide" model-id="Disopyramide_Bryson1978_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="disopyramide" model-id="Disopyramide_Bryson1978_reference" status="not_modelled" stale="false" population="healthy volunteers" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| total clearance | `Q22` · CL | 61.57 | ml/min | 1.0261666666666666e-06 | L/h | not captured | review (0.7) | Bryson_1978:review | — | not captured |
-| V (derived from CL·t½/ln2) | `Q61` · V | 31.9776 | L | 0.031977624120312055 | L | not captured | review (0.7) | Bryson_1978:review | — | not captured |
+| total clearance | `Q22` · CL | —(suppressed) | ml/min | — | L/h | not captured | review (0.7) | Bryson_1978:review | — | not captured |
+| V (derived from CL·t½/ln2) | `Q61` · V | —(suppressed) | L | — | L | not captured | review (0.7) | Bryson_1978:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -47,6 +56,14 @@ Bryson SM; Whiting B; Lawrence JR et al. (1978). British journal of clinical pha
 | C9_phys_window_Q22 | pass | clearance within physiological range | 3.69 L/h | not captured | not captured | ['Bryson_1978:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 32 L | not captured | not captured | ['Bryson_1978:review'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -54,7 +71,7 @@ Bryson SM; Whiting B; Lawrence JR et al. (1978). British journal of clinical pha
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_disopyramide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bryson_1978` / `Bryson_1978::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_disopyramide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bryson_1978` / `Bryson_1978::review reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

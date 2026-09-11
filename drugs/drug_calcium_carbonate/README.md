@@ -21,9 +21,9 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ahn_2014](drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference.md) | Ahn JE et al., Modeling of the parathyroid hormone res…, The Korean journal of physi… (2014) | [10.4196/kjpp.2014.18.3.217](https://doi.org/10.4196/kjpp.2014.18.3.217) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ekobena_2025](drugs/drug_calcium_carbonate/CalciumCarbonate_Ekobena2025_reference.md) | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kemal_2026](drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference.md) | Kemal CC et al., Population Pharmacokinetic Modeling and…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70257](https://doi.org/10.1002/psp4.70257) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ahn_2014](drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference.md) | Ahn JE et al., Modeling of the parathyroid hormone res…, The Korean journal of physi… (2014) | [10.4196/kjpp.2014.18.3.217](https://doi.org/10.4196/kjpp.2014.18.3.217) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ekobena_2025](drugs/drug_calcium_carbonate/CalciumCarbonate_Ekobena2025_reference.md) | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kemal_2026](drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference.md) | Kemal CC et al., Population Pharmacokinetic Modeling and…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70257](https://doi.org/10.1002/psp4.70257) |
 
 ## Pharmacodynamics (PD)
 
@@ -40,7 +40,7 @@
 
 - **PubMed hits:** 143 matched, 76 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

@@ -1,8 +1,23 @@
 # conestat alfa — `ConestatAlfa_Farrell2013_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `Km`, `theta_v_category`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. No curator action. Run the engineer for this drug.
+3. Advisory only — the base model still replicates.
+4. Check the record's covariate_definitions in _interpretv2.yaml.
+5. Re-run the engineer for this drug if the covariate curves are wanted.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `recombinant human C1 inhibitor`, measured `C1 inhibitor`.
 
@@ -13,19 +28,21 @@ Farrell C; Hayes S; Relan A; van Amersfoort ES; Pijpstra R; Hack CE et al. (2013
   ·  DOI: [10.1111/bcp.12132](https://doi.org/10.1111/bcp.12132)
 
 ## Model component
-<dbs-pgx drug="conestat alfa" model-id="ConestatAlfa_Farrell2013_reference" status="extracted" stale="false" population="healthy volunteers and hereditary angioedema patients" measured-compound="C1 inhibitor" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="conestat alfa" model-id="ConestatAlfa_Farrell2013_reference" status="not_modelled" stale="false" population="healthy volunteers and hereditary angioedema patients" measured-compound="C1 inhibitor" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Volume of distribution (l) | `Q61` · V | 2.86 | l | 0.00286 | [l] | not captured | exact (1.0) | Farrell_2013_table_p5_1:row2:col1, Farrell_2013_table_p5_1:row2:col2 | — | not captured |
-| Vmax (U ml-1 h-1) in healthy volunteers and symptomatic HAE patients | `Q66` · Vmax | 1.63 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Farrell_2013_table_p5_1:row5:col1, Farrell_2013_table_p5_1:row5:col2 | — | not captured |
-| Km (U ml-1) | `Q1` · Km | 1.60 | U ml-1 | not captured | [u] / [ml] | not captured | exact (1.0) | Farrell_2013_table_p5_1:row7:col1, Farrell_2013_table_p5_1:row7:col2 | — | not captured |
-| theta_v_category | `Q900` · theta_v_category | 0.681 | l | not captured | not captured | not captured | not captured (not captured) | Farrell_2013_table_p5_1:row3:col1, Farrell_2013_table_p5_1:row3:col2 | — | not captured |
-| theta_v_bodyweight | `Q900` · theta_v_bodyweight | 0.612 | not captured | not captured | not captured | not captured | not captured (not captured) | Farrell_2013_table_p5_1:row4:col1, Farrell_2013_table_p5_1:row4:col2 | — | not captured |
-| theta_vmax_category | `Q900` · theta_vmax_category | 0.644 | not captured | not captured | not captured | not captured | not captured (not captured) | Farrell_2013_table_p5_1:row6:col1, Farrell_2013_table_p5_1:row6:col2 | — | not captured |
+| Volume of distribution (l) | `Q61` · V | —(suppressed) | l | — | [l] | not captured | exact (1.0) | Farrell_2013_table_p5_1:row2:col1, Farrell_2013_table_p5_1:row2:col2 | — | not captured |
+| Vmax (U ml-1 h-1) in healthy volunteers and symptomatic HAE patients | `Q66` · Vmax | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Farrell_2013_table_p5_1:row5:col1, Farrell_2013_table_p5_1:row5:col2 | — | not captured |
+| Km (U ml-1) | `Q1` · Km | —(suppressed) | U ml-1 | — | [u] / [ml] | not captured | exact (1.0) | Farrell_2013_table_p5_1:row7:col1, Farrell_2013_table_p5_1:row7:col2 | — | not captured |
+| theta_v_category | `Q900` · theta_v_category | —(suppressed) | l | — | not captured | not captured | not captured (not captured) | Farrell_2013_table_p5_1:row3:col1, Farrell_2013_table_p5_1:row3:col2 | — | not captured |
+| theta_v_bodyweight | `Q900` · theta_v_bodyweight | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Farrell_2013_table_p5_1:row4:col1, Farrell_2013_table_p5_1:row4:col2 | — | not captured |
+| theta_vmax_category | `Q900` · theta_vmax_category | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Farrell_2013_table_p5_1:row6:col1, Farrell_2013_table_p5_1:row6:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -75,6 +92,14 @@ Farrell C; Hayes S; Relan A; van Amersfoort ES; Pijpstra R; Hack CE et al. (2013
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 2.86 L | not captured | not captured | ['Farrell_2013_table_p5_1:row2:col1', 'Farrell_2013_table_p5_1:row2:col2'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -82,7 +107,7 @@ Farrell C; Hayes S; Relan A; van Amersfoort ES; Pijpstra R; Hack CE et al. (2013
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_conestat_alfa/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Farrell_2013` / `Farrell_2013::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_conestat_alfa/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Farrell_2013` / `Farrell_2013::healthy volunteers and hereditary angioedema patients`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

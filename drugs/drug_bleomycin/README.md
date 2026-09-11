@@ -21,12 +21,12 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wilde_2007](drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md) | Wilde S et al., Population pharmacokinetics of the BEAC…, Clinical pharmacokinetics (2007) | [10.2165/00003088-200746040-00005](https://doi.org/10.2165/00003088-200746040-00005) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yadav_2023](drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md) | Yadav R et al., Utilizing PK and PD Biomarkers to Guide…, Journal of pharmaceutical s… (2023) | [10.1016/j.xphs.2023.07.005](https://doi.org/10.1016/j.xphs.2023.07.005) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhao_2025](drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md) | Zhao (2025) | — |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Giri_1986](drugs/drug_bleomycin/Bleomycin_Giri1986_reference.md) | Giri SN, Pharmacokinetics, subcellular distribut…, Experimental and molecular… (1986) | [10.1016/0014-4800(86)90060-2](https://doi.org/10.1016/0014-4800(86)90060-2) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Han_2024](drugs/drug_bleomycin/Bleomycin_Han2024_reference.md) | Han LW et al., A Phase 1a Study to Evaluate Safety, To…, Rheumatology and therapy (2024) | [10.1007/s40744-024-00670-5](https://doi.org/10.1007/s40744-024-00670-5) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Schober_1978_2](drugs/drug_bleomycin/Bleomycin_Schober1978v2_reference.md) | Schober O et al., [Studies of 57-co-bleomycin in patients…, RoFo : Fortschritte auf dem… (1978) | [10.1055/s-0029-1230942](https://doi.org/10.1055/s-0029-1230942) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Wilde_2007](drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md) | Wilde S et al., Population pharmacokinetics of the BEAC…, Clinical pharmacokinetics (2007) | [10.2165/00003088-200746040-00005](https://doi.org/10.2165/00003088-200746040-00005) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Yadav_2023](drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md) | Yadav R et al., Utilizing PK and PD Biomarkers to Guide…, Journal of pharmaceutical s… (2023) | [10.1016/j.xphs.2023.07.005](https://doi.org/10.1016/j.xphs.2023.07.005) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zhao_2025](drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md) | Zhao (2025) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -92,7 +92,7 @@
 
 - **PubMed hits:** 510 matched, 153 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 6  ·  extracted 3  ·  needs_review 3  ·  rejected 0  ·  stale 0
+- **records:** 6  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

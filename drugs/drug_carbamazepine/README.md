@@ -21,15 +21,17 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Djordjevic_2016](drugs/drug_carbamazepine/Carbamazepine_Djordjevic2016_reference.md) | Djordjevic N et al., CYP1A2 genotype affects carbamazepine p…, European journal of clinica… (2016) | [10.1007/s00228-015-2006-9](https://doi.org/10.1007/s00228-015-2006-9) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Djordjevic_2025](drugs/drug_carbamazepine/Carbamazepine_Djordjevic2025_reference.md) | Djordjevic N et al., ABCB1 Polymorphism Is Associated with H…, Pediatric reports (2025) | [10.3390/pediatric17010010](https://doi.org/10.3390/pediatric17010010) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Li_2021](drugs/drug_carbamazepine/Carbamazepine_Li2021_reference.md) | Li ZR et al., Population Pharmacokinetics of Levetira…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00963-2](https://doi.org/10.1007/s40262-020-00963-2) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lukic_2024](drugs/drug_carbamazepine/Carbamazepine_Lukic2024_reference.md) | Lukic V et al., Population toxicokinetics of carbamazep…, Expert opinion on drug meta… (2024) | [10.1080/17425255.2024.2381555](https://doi.org/10.1080/17425255.2024.2381555) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Milovanovic_2016](drugs/drug_carbamazepine/Carbamazepine_Milovanovic2016_reference.md) | Milovanovic DD et al., The influence of CYP2C8*3 on carbamazep…, Balkan journal of medical g… (2016) | [10.1515/bjmg-2016-0003](https://doi.org/10.1515/bjmg-2016-0003) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Punyawudho_2012](drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference.md) | Punyawudho B et al., Population pharmacokinetics of carbamaz…, Therapeutic drug monitoring (2012) | [10.1097/FTD.0b013e31824d6a4e](https://doi.org/10.1097/FTD.0b013e31824d6a4e) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yip_2021](drugs/drug_carbamazepine/Carbamazepine_Yip2021_reference.md) | Yip VLM et al., Evaluation of clinical and genetic fact…, British journal of clinical… (2021) | [10.1111/bcp.14667](https://doi.org/10.1111/bcp.14667) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Djordjevic_2016](drugs/drug_carbamazepine/Carbamazepine_Djordjevic2016_reference.md) | Djordjevic N et al., CYP1A2 genotype affects carbamazepine p…, European journal of clinica… (2016) | [10.1007/s00228-015-2006-9](https://doi.org/10.1007/s00228-015-2006-9) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Djordjevic_2025](drugs/drug_carbamazepine/Carbamazepine_Djordjevic2025_reference.md) | Djordjevic N et al., ABCB1 Polymorphism Is Associated with H…, Pediatric reports (2025) | [10.3390/pediatric17010010](https://doi.org/10.3390/pediatric17010010) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Li_2021](drugs/drug_carbamazepine/Carbamazepine_Li2021_reference.md) | Li ZR et al., Population Pharmacokinetics of Levetira…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00963-2](https://doi.org/10.1007/s40262-020-00963-2) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Lukic_2024](drugs/drug_carbamazepine/Carbamazepine_Lukic2024_reference.md) | Lukic V et al., Population toxicokinetics of carbamazep…, Expert opinion on drug meta… (2024) | [10.1080/17425255.2024.2381555](https://doi.org/10.1080/17425255.2024.2381555) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Milovanovic_2016](drugs/drug_carbamazepine/Carbamazepine_Milovanovic2016_reference.md) | Milovanovic DD et al., The influence of CYP2C8*3 on carbamazep…, Balkan journal of medical g… (2016) | [10.1515/bjmg-2016-0003](https://doi.org/10.1515/bjmg-2016-0003) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Punyawudho_2012](drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference.md) | Punyawudho B et al., Population pharmacokinetics of carbamaz…, Therapeutic drug monitoring (2012) | [10.1097/FTD.0b013e31824d6a4e](https://doi.org/10.1097/FTD.0b013e31824d6a4e) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Saruwatari_2010](drugs/drug_carbamazepine/Carbamazepine_Saruwatari2010_final_population_pharmacokineti.md) | Saruwatari J et al., Update on the Genetic Polymorphisms of…, Pharmaceuticals (Basel, Swi… (2010) | [10.3390/ph3082709](https://doi.org/10.3390/ph3082709) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Saruwatari_2010](drugs/drug_carbamazepine/Carbamazepine_Saruwatari2010_final_population_pharmacokineti.md) | Saruwatari J et al., Update on the Genetic Polymorphisms of…, Pharmaceuticals (Basel, Swi… (2010) | [10.3390/ph3082709](https://doi.org/10.3390/ph3082709) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Saruwatari_2010](drugs/drug_carbamazepine/Carbamazepine_Saruwatari2010_genetic_polymorphisms.md) | Saruwatari J et al., Update on the Genetic Polymorphisms of…, Pharmaceuticals (Basel, Swi… (2010) | [10.3390/ph3082709](https://doi.org/10.3390/ph3082709) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Saruwatari_2010](drugs/drug_carbamazepine/Carbamazepine_Saruwatari2010_genetic_polymorphisms_patients.md) | Saruwatari J et al., Update on the Genetic Polymorphisms of…, Pharmaceuticals (Basel, Swi… (2010) | [10.3390/ph3082709](https://doi.org/10.3390/ph3082709) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Yip_2021](drugs/drug_carbamazepine/Carbamazepine_Yip2021_reference.md) | Yip VLM et al., Evaluation of clinical and genetic fact…, British journal of clinical… (2021) | [10.1111/bcp.14667](https://doi.org/10.1111/bcp.14667) |
 
 ## Pharmacogenomics (PGx)
 
@@ -63,7 +65,7 @@
 
 - **PubMed hits:** 1541 matched, 81 returned
 - **screened:** 58  ·  **relevant:** 3
-- **records:** 9  ·  extracted 7  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 11  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -27,6 +27,8 @@ Alternatively, some regional prescribing information note that clonazepam is ind
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Kruizinga_2022](drugs/drug_clonazepam/Clonazepam_Kruizinga2022_estimate_shrinkage.md) | Kruizinga MD et al., Population pharmacokinetics of clonazep…, British journal of clinical… (2022) | [10.1111/bcp.15152](https://doi.org/10.1111/bcp.15152) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Kruizinga_2022](drugs/drug_clonazepam/Clonazepam_Kruizinga2022_parameter.md) | Kruizinga MD et al., Population pharmacokinetics of clonazep…, British journal of clinical… (2022) | [10.1111/bcp.15152](https://doi.org/10.1111/bcp.15152) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kruizinga_2022](drugs/drug_clonazepam/Clonazepam_Kruizinga2022_estimate_shrinkage_healthy_adults.md) | Kruizinga MD et al., Population pharmacokinetics of clonazep…, British journal of clinical… (2022) | [10.1111/bcp.15152](https://doi.org/10.1111/bcp.15152) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kruizinga_2022](drugs/drug_clonazepam/Clonazepam_Kruizinga2022_parameter_healthy_adults.md) | Kruizinga MD et al., Population pharmacokinetics of clonazep…, British journal of clinical… (2022) | [10.1111/bcp.15152](https://doi.org/10.1111/bcp.15152) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hampton_2024](drugs/drug_clonazepam/Clonazepam_Hampton2024_reference.md) | Hampton CE et al., Pharmacokinetics of oral clonazepam in…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13451](https://doi.org/10.1111/jvp.13451) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yukawa_2001](drugs/drug_clonazepam/Clonazepam_Yukawa2001_reference.md) | Yukawa E et al., Pharmacoepidemiologic investigation of…, Journal of clinical psychop… (2001) | [10.1097/00004714-200112000-00008](https://doi.org/10.1097/00004714-200112000-00008) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yukawa_2002](drugs/drug_clonazepam/Clonazepam_Yukawa2002_reference.md) | Yukawa E et al., Pharmacoepidemiologic investigation of…, Journal of clinical pharmac… (2002) | [10.1177/0091270002042001009](https://doi.org/10.1177/0091270002042001009) |
@@ -47,7 +49,7 @@ Alternatively, some regional prescribing information note that clonazepam is ind
 
 - **PubMed hits:** 93 matched, 60 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 5  ·  extracted 2  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 7  ·  extracted 2  ·  needs_review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

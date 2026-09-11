@@ -21,7 +21,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Drennan_2021_2](drugs/drug_flucloxacillin/Flucloxacillin_Drennan2021v2_reference.md) | Drennan PG et al., Population pharmacokinetics of free flu…, British journal of clinical… (2021) | [10.1111/bcp.14887](https://doi.org/10.1111/bcp.14887) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Drennan_2021_2](drugs/drug_flucloxacillin/Flucloxacillin_Drennan2021v2_reference.md) | Drennan PG et al., Population pharmacokinetics of free flu…, British journal of clinical… (2021) | [10.1111/bcp.14887](https://doi.org/10.1111/bcp.14887) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Jager_2020](drugs/drug_flucloxacillin/Flucloxacillin_Jager2020_reference.md) | Jager NGL et al., Optimization of flucloxacillin dosing r…, The Journal of antimicrobia… (2020) | [10.1093/jac/dkaa187](https://doi.org/10.1093/jac/dkaa187) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wallenburg_2021](drugs/drug_flucloxacillin/Flucloxacillin_Wallenburg2021_reference.md) | Wallenburg E et al., High unbound flucloxacillin fraction in…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkab314](https://doi.org/10.1093/jac/dkab314) |
 
@@ -29,7 +29,7 @@
 
 - **PubMed hits:** 29 matched, 12 returned
 - **screened:** 3  ·  **relevant:** 4
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

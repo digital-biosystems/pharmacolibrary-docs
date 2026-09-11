@@ -20,13 +20,15 @@
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Yu_2023](drugs/drug_ilaprazole/Ilaprazole_Yu2023_bootstrapping.md) | Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Yu_2023](drugs/drug_ilaprazole/Ilaprazole_Yu2023_bootstrapping_healthy_subjects_and_patient.md) | Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Yu_2023](drugs/drug_ilaprazole/Ilaprazole_Yu2023_final_model.md) | Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Yu_2023](drugs/drug_ilaprazole/Ilaprazole_Yu2023_final_model_healthy_subjects_and_patients.md) | Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222) |
 
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

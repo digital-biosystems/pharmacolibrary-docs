@@ -21,10 +21,13 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Levêque_1996](drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md) | Levêque D et al., Clinical pharmacokinetics of vinorelbine, Clinical pharmacokinetics (1996) | [10.2165/00003088-199631030-00003](https://doi.org/10.2165/00003088-199631030-00003) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Zhou_1990](drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg.md) | Zhou XJ et al., In vivo and in vitro pharmacokinetics a…, European journal of drug me… (1990) | [10.1007/BF03190222](https://doi.org/10.1007/BF03190222) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Zhou_1990](drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.md) | Zhou XJ et al., In vivo and in vitro pharmacokinetics a…, European journal of drug me… (1990) | [10.1007/BF03190222](https://doi.org/10.1007/BF03190222) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Zhou_1990](drugs/drug_vinblastine/Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h.md) | Zhou XJ et al., In vivo and in vitro pharmacokinetics a…, European journal of drug me… (1990) | [10.1007/BF03190222](https://doi.org/10.1007/BF03190222) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Levêque_1996](drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md) | Levêque D et al., Clinical pharmacokinetics of vinorelbine, Clinical pharmacokinetics (1996) | [10.2165/00003088-199631030-00003](https://doi.org/10.2165/00003088-199631030-00003) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zhou_1990](drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg_rats.md) | Zhou XJ et al., In vivo and in vitro pharmacokinetics a…, European journal of drug me… (1990) | [10.1007/BF03190222](https://doi.org/10.1007/BF03190222) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zhou_1990](drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_rats.md) | Zhou XJ et al., In vivo and in vitro pharmacokinetics a…, European journal of drug me… (1990) | [10.1007/BF03190222](https://doi.org/10.1007/BF03190222) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zhou_1990](drugs/drug_vinblastine/Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h_rats.md) | Zhou XJ et al., In vivo and in vitro pharmacokinetics a…, European journal of drug me… (1990) | [10.1007/BF03190222](https://doi.org/10.1007/BF03190222) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Petric_2023](drugs/drug_vinblastine/Vinblastine_Petric2023_reference.md) | Petric Z et al., Clinical Pharmacology of Vinpocetine: P…, Pharmaceutics (2023) | [10.3390/pharmaceutics15102502](https://doi.org/10.3390/pharmaceutics15102502) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sethi_1984](drugs/drug_vinblastine/Vinblastine_Sethi1984_reference.md) | Sethi VS et al., Pharmacokinetics of vincristine, vinbla…, Cancer chemotherapy and pha… (1984) | [10.1007/BF00255905](https://doi.org/10.1007/BF00255905) |
 
@@ -71,7 +74,7 @@
 
 - **PubMed hits:** 740 matched, 94 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 6  ·  extracted 4  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 9  ·  extracted 3  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

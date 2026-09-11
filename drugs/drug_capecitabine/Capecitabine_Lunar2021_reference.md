@@ -1,8 +1,20 @@
 # capecitabine — `Capecitabine_Lunar2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `kabs`, `kel`, `k13`, `k31`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,23 +23,25 @@ Lunar N; Etienne-Grimaldi MC; Macaire P; Thomas F; Dalenc F; Ferrero JM; et al. 
   ·  DOI: [10.1007/s00280-020-04208-8](https://doi.org/10.1007/s00280-020-04208-8)
 
 ## Model component
-<dbs-pgx drug="capecitabine" model-id="Capecitabine_Lunar2021_reference" status="extracted" stale="false" population="patients with metastatic breast cancer" measured-compound="capecitabine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="capecitabine" model-id="Capecitabine_Lunar2021_reference" status="not_modelled" stale="false" population="patients with metastatic breast cancer" measured-compound="capecitabine" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ka 1 (/h) | `Q49` · kabs | 13.6 | /h | not captured | [1] / [h] | not captured | boundary (0.8) | tab_0:row5:col2, tab_0:row5:col3, tab_0:row5:col5, tab_0:row5:col6 | — | not captured |
-| t lag1 (h) | `Q83` · tlag | 10.9 | h | 39240.0 | [h] | not captured | llm (0.5) | tab_0:row7:col2, tab_0:row7:col3, tab_0:row7:col5, tab_0:row7:col6 | — | not captured |
-| F 1 | `Q87` · Frel | 14.4 | not captured | not captured | not captured | not captured | llm (0.5) | tab_0:row9:col2, tab_0:row9:col3, tab_0:row9:col5, tab_0:row9:col6 | — | not captured |
-| V c /F Cap (L) | `Q76` · V/F | 11.8 | L | 0.011800000000000001 | [l] | not captured | llm (0.5) | tab_0:row10:col2, tab_0:row10:col3 | — | not captured |
-| k 10 (/h) | `Q47` · kel | 12.2 | /h | not captured | [1] / [h] | not captured | llm (0.5) | tab_0:row11:col2, tab_0:row11:col3, tab_0:row11:col5, tab_0:row11:col6 | — | not captured |
-| k 23 (/h) | `Q303` · k13 | 11.6 | /h | not captured | [1] / [h] | not captured | llm (0.5) | tab_0:row12:col2, tab_0:row12:col3, tab_0:row12:col5, tab_0:row12:col6 | — | not captured |
-| k 34 (/h) | `Q304` · k31 | 12.4 | /h | not captured | [1] / [h] | not captured | llm (0.5) | tab_0:row13:col2, tab_0:row13:col3, tab_0:row13:col5, tab_0:row13:col6 | — | not captured |
-| k 12 (/h) | `Q301` · k12 | 14.9 | /h | not captured | [1] / [h] | not captured | llm (0.5) | tab_0:row15:col2, tab_0:row15:col3 | — | not captured |
-| beta_k 40 _t Ratio | `Q21` · AUC ratio | 24 | not captured | not captured | not captured | not captured | llm (0.5) | tab_0:row17:col1, tab_0:row17:col2, tab_0:row17:col3 | — | not captured |
-| beta_k 23 _t CDA | `Q60` · t1/2β | 44.9 | not captured | not captured | not captured | not captured | llm (0.5) | tab_0:row18:col2, tab_0:row18:col3 | — | not captured |
+| ka 1 (/h) | `Q49` · kabs | —(suppressed) | /h | — | [1] / [h] | not captured | boundary (0.8) | tab_0:row5:col2, tab_0:row5:col3, tab_0:row5:col5, tab_0:row5:col6 | — | not captured |
+| t lag1 (h) | `Q83` · tlag | —(suppressed) | h | — | [h] | not captured | llm (0.5) | tab_0:row7:col2, tab_0:row7:col3, tab_0:row7:col5, tab_0:row7:col6 | — | not captured |
+| F 1 | `Q87` · Frel | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_0:row9:col2, tab_0:row9:col3, tab_0:row9:col5, tab_0:row9:col6 | — | not captured |
+| V c /F Cap (L) | `Q76` · V/F | —(suppressed) | L | — | [l] | not captured | llm (0.5) | tab_0:row10:col2, tab_0:row10:col3 | — | not captured |
+| k 10 (/h) | `Q47` · kel | —(suppressed) | /h | — | [1] / [h] | not captured | llm (0.5) | tab_0:row11:col2, tab_0:row11:col3, tab_0:row11:col5, tab_0:row11:col6 | — | not captured |
+| k 23 (/h) | `Q303` · k13 | —(suppressed) | /h | — | [1] / [h] | not captured | llm (0.5) | tab_0:row12:col2, tab_0:row12:col3, tab_0:row12:col5, tab_0:row12:col6 | — | not captured |
+| k 34 (/h) | `Q304` · k31 | —(suppressed) | /h | — | [1] / [h] | not captured | llm (0.5) | tab_0:row13:col2, tab_0:row13:col3, tab_0:row13:col5, tab_0:row13:col6 | — | not captured |
+| k 12 (/h) | `Q301` · k12 | —(suppressed) | /h | — | [1] / [h] | not captured | llm (0.5) | tab_0:row15:col2, tab_0:row15:col3 | — | not captured |
+| beta_k 40 _t Ratio | `Q21` · AUC ratio | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_0:row17:col1, tab_0:row17:col2, tab_0:row17:col3 | — | not captured |
+| beta_k 23 _t CDA | `Q60` · t1/2β | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_0:row18:col2, tab_0:row18:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -74,6 +88,16 @@ Lunar N; Etienne-Grimaldi MC; Macaire P; Thomas F; Dalenc F; Ferrero JM; et al. 
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T3_rate_constant_conversion | not captured | pass | k12 (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -81,7 +105,7 @@ Lunar N; Etienne-Grimaldi MC; Macaire P; Thomas F; Dalenc F; Ferrero JM; et al. 
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_capecitabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lunar_2021` / `Lunar_2021::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_capecitabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lunar_2021` / `Lunar_2021::patients with metastatic breast cancer`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

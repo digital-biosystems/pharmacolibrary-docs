@@ -25,8 +25,8 @@ Previously, capacizumab was under review for the prevention of thrombosis in hig
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Fan_2025](drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference.md) | Fan X et al., Pharmacokinetic-pharmacodynamic modelin…, Microbiology spectrum (2025) | [10.1128/spectrum.00805-25](https://doi.org/10.1128/spectrum.00805-25) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Sargentini-Maier_2019](drugs/drug_caplacizumab/Caplacizumab_SargentiniMaier2019_reference.md) | Sargentini-Maier ML et al., Clinical pharmacology of caplacizumab f…, Expert review of clinical p… (2019) | [10.1080/17512433.2019.1607293](https://doi.org/10.1080/17512433.2019.1607293) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Fan_2025](drugs/drug_caplacizumab/Caplacizumab_Fan2025_reference.md) | Fan X et al., Pharmacokinetic-pharmacodynamic modelin…, Microbiology spectrum (2025) | [10.1128/spectrum.00805-25](https://doi.org/10.1128/spectrum.00805-25) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Sargentini-Maier_2019](drugs/drug_caplacizumab/Caplacizumab_SargentiniMaier2019_reference.md) | Sargentini-Maier ML et al., Clinical pharmacology of caplacizumab f…, Expert review of clinical p… (2019) | [10.1080/17512433.2019.1607293](https://doi.org/10.1080/17512433.2019.1607293) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Jansen_2026](drugs/drug_caplacizumab/Caplacizumab_Jansen2026_reference.md) | Jansen E et al., Characterization of the VHH-Fc construc…, PLoS medicine (2026) | [10.1371/journal.pmed.1004609](https://doi.org/10.1371/journal.pmed.1004609) |
 
 ## Pharmacodynamics (PD)
@@ -40,7 +40,7 @@ Previously, capacizumab was under review for the prevention of thrombosis in hig
 
 - **PubMed hits:** 31 matched, 27 returned
 - **screened:** 6  ·  **relevant:** 1
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Screened and excluded

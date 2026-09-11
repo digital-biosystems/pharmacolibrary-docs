@@ -21,7 +21,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Melhem_2013](drugs/drug_hydrocodone/Hydrocodone_Melhem2013_reference.md) | Melhem MR et al., Population pharmacokinetic analysis for…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0081-6](https://doi.org/10.1007/s40262-013-0081-6) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Melhem_2013](drugs/drug_hydrocodone/Hydrocodone_Melhem2013_reference.md) | Melhem MR et al., Population pharmacokinetic analysis for…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0081-6](https://doi.org/10.1007/s40262-013-0081-6) |
 
 ## Pharmacodynamics (PD)
 
@@ -46,7 +46,7 @@
 
 - **PubMed hits:** 186 matched, 69 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

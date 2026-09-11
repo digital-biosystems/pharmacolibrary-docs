@@ -1,6 +1,20 @@
 # amitriptyline — `Amitriptyline_Koh2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
+
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — engineer.** parent/metabolite records are not currently produced as models — the composite builds but does not survive simulation<br><sub>evidence: `topology_template=parent_metabolite`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge.
+
+**Steps:**
+1. Not a curation fix — engineer limitation.
+2. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,12 +23,12 @@ Koh A; Pak KC; Choi HY; Ryu S; Choi SE; Kim KS; et al. et al. (2019). Journal of
   ·  DOI: [10.1002/jcph.1344](https://doi.org/10.1002/jcph.1344)
 
 ## Model component
-<dbs-pgx drug="amitriptyline" model-id="Amitriptyline_Koh2019_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="amitriptyline" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="amitriptyline" model-id="Amitriptyline_Koh2019_reference" status="not_modelled" stale="false" population="healthy adults" measured-compound="amitriptyline" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|

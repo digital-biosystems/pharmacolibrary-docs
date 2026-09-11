@@ -21,13 +21,13 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [He_2022](drugs/drug_paclitaxel/Paclitaxel_He2022_reference.md) | He J et al., Population pharmacokinetics for oral pa…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12799](https://doi.org/10.1002/psp4.12799) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [He_2022](drugs/drug_paclitaxel/Paclitaxel_He2022_reference.md) | He J et al., Population pharmacokinetics for oral pa…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12799](https://doi.org/10.1002/psp4.12799) |
 
 ## Coverage
 
 - **PubMed hits:** 257 matched, 20 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

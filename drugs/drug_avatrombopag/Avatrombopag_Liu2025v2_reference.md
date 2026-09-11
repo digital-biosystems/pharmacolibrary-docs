@@ -2,7 +2,19 @@
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `kabs`, `MTT`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** every check the reviewer could run passed.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -104,7 +116,7 @@ Liu X; Chen L; Ju G; Li C; Liu B; Fei Y; et al. et al. (2025). Pharmaceuticals (
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_avatrombopag/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Liu_2025_2` / `Liu_2025_2::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_avatrombopag/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Liu_2025_2` / `Liu_2025_2::healthy Chinese adults`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

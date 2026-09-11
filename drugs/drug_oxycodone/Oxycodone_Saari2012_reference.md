@@ -2,7 +2,20 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `CLu`, `V`, `Vss`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** a compartment is unreachable, or a metabolite is unlinked.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
+3. Parent/metabolite records commonly miss the formation link.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -96,7 +109,7 @@ Saari TI; Ihmsen H; Neuvonen PJ; Olkkola KT; Schwilden H et al. (2012). British 
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_oxycodone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Saari_2012` / `Saari_2012::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_oxycodone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Saari_2012` / `Saari_2012::adults and elderly patients`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

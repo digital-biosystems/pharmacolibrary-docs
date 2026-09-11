@@ -22,14 +22,17 @@
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Park_2014](drugs/drug_triflusal/Triflusal_Park2014_description_units.md) | Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & toxicolo… (2014) | [10.1186/2050-6511-15-75](https://doi.org/10.1186/2050-6511-15-75) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Park_2014](drugs/drug_triflusal/Triflusal_Park2014_description_units_healthy_korean_male_vol.md) | Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & toxicolo… (2014) | [10.1186/2050-6511-15-75](https://doi.org/10.1186/2050-6511-15-75) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Park_2014](drugs/drug_triflusal/Triflusal_Park2014_estimates_from_final_model.md) | Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & toxicolo… (2014) | [10.1186/2050-6511-15-75](https://doi.org/10.1186/2050-6511-15-75) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Park_2014](drugs/drug_triflusal/Triflusal_Park2014_estimates_from_final_model_healthy_korean.md) | Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & toxicolo… (2014) | [10.1186/2050-6511-15-75](https://doi.org/10.1186/2050-6511-15-75) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Park_2014](drugs/drug_triflusal/Triflusal_Park2014_shrinkage.md) | Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & toxicolo… (2014) | [10.1186/2050-6511-15-75](https://doi.org/10.1186/2050-6511-15-75) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Park_2014](drugs/drug_triflusal/Triflusal_Park2014_shrinkage_healthy_korean_male_volunteers.md) | Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & toxicolo… (2014) | [10.1186/2050-6511-15-75](https://doi.org/10.1186/2050-6511-15-75) |
 
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 6  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

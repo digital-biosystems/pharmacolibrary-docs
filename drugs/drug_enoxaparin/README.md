@@ -25,13 +25,15 @@ Enoxaparin is also indicated in the prophylaxis of DVT in abdominal surgery, hip
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Zufferey_2021](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_iiv_r_s_e.md) | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Zufferey_2021](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_value_r_s_e.md) | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zufferey_2021](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_iiv_r_s_e_covid_19_critically_ill_pa.md) | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zufferey_2021](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_value_r_s_e_covid_19_critically_ill.md) | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Oualha_2018](drugs/drug_enoxaparin/Enoxaparin_Oualha2018_reference.md) | Oualha M et al., Population pharmacokinetics of enoxapar…, British journal of clinical… (2018) | [10.1111/bcp.13543](https://doi.org/10.1111/bcp.13543) |
 
 ## Coverage
 
 - **PubMed hits:** 66 matched, 36 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 5  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

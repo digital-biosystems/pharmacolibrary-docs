@@ -1,8 +1,20 @@
 # epoprostenol — `Epoprostenol_Nicolas2012_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge; the simulated model does not reproduce a value the paper reports; the engineer did not exercise the covariate scenarios this record defines. Evidence: T1_t_half_terminal — expected 0.25 — got 1.387285262362649 — ratio 5.5491; T1_t_half_terminal — expected 0.22 — got 1.387285262362649 — ratio 6.3058; T1_t_half_terminal — expected 1.08 — got 1.387285262362649 — ratio 1.2845; T2_covariates_not_exercised
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+2. Open the paper's reported table and confirm the target value and its units.
+3. Compare with the transcribed value in _transcribev2.yaml for this stem.
+4. If the transcription is right, the extracted parameters are suspect — check CL and volume in _interpretv2.yaml against the paper.
+5. If the transcription is wrong, fix the extraction; the model rebuild follows.
+6. Advisory only — the base model still replicates.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `epoprostenol`, measured `6-keto-prostacyclin F1a`.
 
@@ -13,19 +25,21 @@ Nicolas LB; Krause A; Gutierrez MM; Dingemanse J et al. (2012). British journal 
   ·  DOI: [10.1111/j.1365-2125.2012.04301.x](https://doi.org/10.1111/j.1365-2125.2012.04301.x)
 
 ## Model component
-<dbs-pgx drug="epoprostenol" model-id="Epoprostenol_Nicolas2012_reference" status="extracted" stale="false" population="healthy male subjects" measured-compound="6-keto-prostacyclin F1a" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="epoprostenol" model-id="Epoprostenol_Nicolas2012_reference" status="not_modelled" stale="false" population="healthy male subjects" measured-compound="6-keto-prostacyclin F1a" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (l h -1 ) | `Q22` · CL | 84.92 | l h -1 | 2.358888888888889e-05 | [l] / [h] | 3.61 | exact (1.0) | Nicolas_2012_table_1:row0:col1, Nicolas_2012_table_1:row0:col2, Nicolas_2012_table_1:row0:col3 | — | not captured |
-| V (l) | `Q61` · V | 23.74 | l | 0.023739999999999997 | [l] | 12.12 | exact (1.0) | Nicolas_2012_table_1:row1:col1, Nicolas_2012_table_1:row1:col2, Nicolas_2012_table_1:row1:col3 | — | not captured |
-| theta_q44_food | `Q900` · theta_q44_food | 1.69 | not captured | not captured | not captured | 3.41 | not captured (not captured) | Nicolas_2012_table_1:row2:col1, Nicolas_2012_table_1:row2:col2, Nicolas_2012_table_1:row2:col3 | — | not captured |
-| theta_q44_food | `Q900` · theta_q44_food | 3.57 | not captured | not captured | not captured | 50.98 | not captured (not captured) | Nicolas_2012_table_1:row3:col1, Nicolas_2012_table_1:row3:col2, Nicolas_2012_table_1:row3:col3 | — | not captured |
-| theta_q83_food | `Q900` · theta_q83_food | 0.22 | not captured | not captured | not captured | 11.33 | not captured (not captured) | Nicolas_2012_table_1:row4:col1, Nicolas_2012_table_1:row4:col2, Nicolas_2012_table_1:row4:col3 | — | not captured |
-| k a | `Q49` · kabs | 0.688 | 1/h | 0.00019111111111111108 | 1/h | not captured | review_gapfill (0.7) | Axelsen_2024:review | — | not captured |
+| CL (l h -1 ) | `Q22` · CL | —(suppressed) | l h -1 | — | [l] / [h] | 3.61 | exact (1.0) | Nicolas_2012_table_1:row0:col1, Nicolas_2012_table_1:row0:col2, Nicolas_2012_table_1:row0:col3 | — | not captured |
+| V (l) | `Q61` · V | —(suppressed) | l | — | [l] | 12.12 | exact (1.0) | Nicolas_2012_table_1:row1:col1, Nicolas_2012_table_1:row1:col2, Nicolas_2012_table_1:row1:col3 | — | not captured |
+| theta_q44_food | `Q900` · theta_q44_food | —(suppressed) | not captured | — | not captured | 3.41 | not captured (not captured) | Nicolas_2012_table_1:row2:col1, Nicolas_2012_table_1:row2:col2, Nicolas_2012_table_1:row2:col3 | — | not captured |
+| theta_q44_food | `Q900` · theta_q44_food | —(suppressed) | not captured | — | not captured | 50.98 | not captured (not captured) | Nicolas_2012_table_1:row3:col1, Nicolas_2012_table_1:row3:col2, Nicolas_2012_table_1:row3:col3 | — | not captured |
+| theta_q83_food | `Q900` · theta_q83_food | —(suppressed) | not captured | — | not captured | 11.33 | not captured (not captured) | Nicolas_2012_table_1:row4:col1, Nicolas_2012_table_1:row4:col2, Nicolas_2012_table_1:row4:col3 | — | not captured |
+| k a | `Q49` · kabs | —(suppressed) | 1/h | — | 1/h | not captured | review_gapfill (0.7) | Axelsen_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -69,6 +83,24 @@ Nicolas LB; Krause A; Gutierrez MM; Dingemanse J et al. (2012). British journal 
 | C9_phys_window_Q22 | pass | clearance within physiological range | 84.9 L/h | not captured | not captured | ['Nicolas_2012_table_1:row0:col1', 'Nicolas_2012_table_1:row0:col2', 'Nicolas_2012_table_1:row0:col3'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 23.7 L | not captured | not captured | ['Nicolas_2012_table_1:row1:col1', 'Nicolas_2012_table_1:row1:col2', 'Nicolas_2012_table_1:row1:col3'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T3_output_variable | not captured | pass | C_central (measured=6-keto-prostacyclin F1a) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_t_half_terminal | reference | fail | 0.25 | 1.387285262362649 | 5.5491 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.22 | 1.387285262362649 | 6.3058 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.08 | 1.387285262362649 | 1.2845 | h→SI vs simulated h |
+| T1_tmax | reference | skipped | not captured | 16.569311648524888 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 16.569311648524888 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 16.569311648524888 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 16.569311648524888 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 16.569311648524888 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 16.569311648524888 | not captured | non-numeric value |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -76,7 +108,8 @@ Nicolas LB; Krause A; Gutierrez MM; Dingemanse J et al. (2012). British journal 
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_epoprostenol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nicolas_2012` / `Nicolas_2012::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_epoprostenol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nicolas_2012` / `Nicolas_2012::healthy male subjects`)
+- sim: `../../../knowledgebase/drugs/drug_epoprostenol/models/modelica/Epoprostenol_Nicolas2012_healthy_male_subjects.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

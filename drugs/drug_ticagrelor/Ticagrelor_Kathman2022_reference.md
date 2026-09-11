@@ -2,7 +2,15 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** a structural parameter has the wrong dimension
+
+**Steps:**
+1. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+2. A misread unit in transcribe is the usual cause.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `ticagrelor, PB2452`, measured `PB2452`.
 
@@ -162,7 +170,7 @@ Kathman SJ; Wheeler JJ; Bhatt DL; Arnold SE; Lee JS et al. (2022). CPT: pharmaco
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_ticagrelor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kathman_2022` / `Kathman_2022::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_ticagrelor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kathman_2022` / `Kathman_2022::healthy volunteers`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

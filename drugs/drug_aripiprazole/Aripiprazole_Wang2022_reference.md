@@ -1,8 +1,20 @@
 # aripiprazole — `Aripiprazole_Wang2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `CL/F`, `CL`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,15 +23,17 @@ Wang X; Raoufinia A; Bihorel S; Passarell J; Mallikaarjun S; Phillips L et al. (
   ·  DOI: [10.1002/cpdd.1022](https://doi.org/10.1002/cpdd.1022)
 
 ## Model component
-<dbs-pgx drug="aripiprazole" model-id="Aripiprazole_Wang2022_reference" status="extracted" stale="false" population="subjects with schizophrenia or schizoaffective disorder and healthy subjects" measured-compound="aripiprazole" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="aripiprazole" model-id="Aripiprazole_Wang2022_reference" status="not_modelled" stale="false" population="subjects with schizophrenia or schizoaffective disorder and healthy subjects" measured-compound="aripiprazole" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F in the presence of strong CYP3A4 inhibitors | `Q27` · CL/F | 24 | % lower | not captured | % lower | not captured | boundary (0.8) | Wang_2022:other_prose | — | not captured |
-| reduction in clearance for CYP2D6 PMs | `Q22` · CL | 42 | % | not captured | % | not captured | boundary (0.8) | Wang_2022:results_prose | — | not captured |
+| CL/F in the presence of strong CYP3A4 inhibitors | `Q27` · CL/F | —(suppressed) | % lower | — | % lower | not captured | boundary (0.8) | Wang_2022:other_prose | — | not captured |
+| reduction in clearance for CYP2D6 PMs | `Q22` · CL | —(suppressed) | % | — | % | not captured | boundary (0.8) | Wang_2022:results_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -47,6 +61,26 @@ Wang X; Raoufinia A; Bihorel S; Passarell J; Mallikaarjun S; Phillips L et al. (
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_cmax | reference | skipped | 534 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 321.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 195.9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 7.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 7.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 32 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 24 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 24 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 36 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 28 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -54,7 +88,7 @@ Wang X; Raoufinia A; Bihorel S; Passarell J; Mallikaarjun S; Phillips L et al. (
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_aripiprazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2022` / `Wang_2022::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_aripiprazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2022` / `Wang_2022::subjects with schizophrenia or schizoaffective disorder and healthy subjects`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

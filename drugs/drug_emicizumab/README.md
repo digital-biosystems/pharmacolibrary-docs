@@ -24,17 +24,23 @@ Hemophilia A is a deficiency of coagulation Factor VIII which causes a serious b
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Retout_2020](drugs/drug_emicizumab/Emicizumab_Retout2020_1_5_mg_kg_qw.md) | Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00904-z](https://doi.org/10.1007/s40262-020-00904-z) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Retout_2020](drugs/drug_emicizumab/Emicizumab_Retout2020_1_5_mg_kg_qw_adult_and_pediatric_perso.md) | Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00904-z](https://doi.org/10.1007/s40262-020-00904-z) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Retout_2020](drugs/drug_emicizumab/Emicizumab_Retout2020_3_mg_kg_q2w.md) | Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00904-z](https://doi.org/10.1007/s40262-020-00904-z) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Retout_2020](drugs/drug_emicizumab/Emicizumab_Retout2020_3_mg_kg_q2w_adult_and_pediatric_person.md) | Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00904-z](https://doi.org/10.1007/s40262-020-00904-z) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Retout_2020](drugs/drug_emicizumab/Emicizumab_Retout2020_6_mg_kg_q4w.md) | Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00904-z](https://doi.org/10.1007/s40262-020-00904-z) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Retout_2020](drugs/drug_emicizumab/Emicizumab_Retout2020_6_mg_kg_q4w_adult_and_pediatric_person.md) | Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00904-z](https://doi.org/10.1007/s40262-020-00904-z) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Retout_2020](drugs/drug_emicizumab/Emicizumab_Retout2020_estimate.md) | Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00904-z](https://doi.org/10.1007/s40262-020-00904-z) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Retout_2020](drugs/drug_emicizumab/Emicizumab_Retout2020_estimate_adult_and_pediatric_persons_w.md) | Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00904-z](https://doi.org/10.1007/s40262-020-00904-z) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Retout_2020](drugs/drug_emicizumab/Emicizumab_Retout2020_shrinkage.md) | Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00904-z](https://doi.org/10.1007/s40262-020-00904-z) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Retout_2020](drugs/drug_emicizumab/Emicizumab_Retout2020_shrinkage_adult_and_pediatric_persons.md) | Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00904-z](https://doi.org/10.1007/s40262-020-00904-z) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Retout_2020](drugs/drug_emicizumab/Emicizumab_Retout2020_unit.md) | Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00904-z](https://doi.org/10.1007/s40262-020-00904-z) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Retout_2020](drugs/drug_emicizumab/Emicizumab_Retout2020_unit_adult_and_pediatric_persons_with.md) | Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00904-z](https://doi.org/10.1007/s40262-020-00904-z) |
 
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 6  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 12  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

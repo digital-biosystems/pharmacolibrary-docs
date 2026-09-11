@@ -31,7 +31,7 @@ Sublingual tablets and buccal films, in combination with naloxone, are indicated
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Nelson_2024](drugs/drug_buprenorphine/Buprenorphine_Nelson2024_reference.md) | Nelson GR et al., Pharmacokinetics, pharmacodynamics and…, Veterinary anaesthesia and… (2024) | [10.1016/j.vaa.2024.05.001](https://doi.org/10.1016/j.vaa.2024.05.001) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Nelson_2024](drugs/drug_buprenorphine/Buprenorphine_Nelson2024_reference.md) | Nelson GR et al., Pharmacokinetics, pharmacodynamics and…, Veterinary anaesthesia and… (2024) | [10.1016/j.vaa.2024.05.001](https://doi.org/10.1016/j.vaa.2024.05.001) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ng_2015](drugs/drug_buprenorphine/Buprenorphine_Ng2015_reference.md) | Ng CM et al., Population Pharmacokinetic Model of Sub…, Pharmacotherapy (2015) | [10.1002/phar.1610](https://doi.org/10.1002/phar.1610) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Priestley_2018](drugs/drug_buprenorphine/Buprenorphine_Priestley2018_reference.md) | Priestley T et al., Converting from Transdermal to Buccal F…, Pain medicine (Malden, Mass… (2018) | [10.1093/pm/pnx235](https://doi.org/10.1093/pm/pnx235) |
 
@@ -75,7 +75,7 @@ Sublingual tablets and buccal films, in combination with naloxone, are indicated
 
 - **PubMed hits:** 588 matched, 71 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

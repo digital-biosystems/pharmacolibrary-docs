@@ -21,7 +21,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Vozeh_1982](drugs/drug_mexiletine/Mexiletine_Vozeh1982_reference.md) | Vozeh S et al., Population pharmacokinetic parameters i…, European journal of clinica… (1982) | [10.1007/BF00605996](https://doi.org/10.1007/BF00605996) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Vozeh_1982](drugs/drug_mexiletine/Mexiletine_Vozeh1982_reference.md) | Vozeh S et al., Population pharmacokinetic parameters i…, European journal of clinica… (1982) | [10.1007/BF00605996](https://doi.org/10.1007/BF00605996) |
 
 ## Pharmacodynamics (PD)
 
@@ -48,7 +48,7 @@
 
 - **PubMed hits:** 107 matched, 60 returned
 - **screened:** 16  ·  **relevant:** 3
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

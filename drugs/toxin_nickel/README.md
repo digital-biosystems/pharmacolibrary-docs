@@ -15,16 +15,16 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jia_2026](drugs/toxin_nickel/Nickel_Jia2026_reference.md) | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kwack_2026](drugs/toxin_nickel/Nickel_Kwack2026_reference.md) | Kwack H et al., PKGPT: Expert-Orchestrated Recursive LL…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040501](https://doi.org/10.3390/pharmaceutics18040501) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhao_2017](drugs/toxin_nickel/Nickel_Zhao2017_reference.md) | Zhao H et al., [Physiologically based toxicokinetic mo…, Wei sheng yan jiu = Journal… (2017) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [van_2026](drugs/toxin_nickel/Nickel_van2026_reference.md) | van der Zeeuw SL et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01641-5](https://doi.org/10.1007/s40262-026-01641-5) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Jia_2026](drugs/toxin_nickel/Nickel_Jia2026_reference.md) | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kwack_2026](drugs/toxin_nickel/Nickel_Kwack2026_reference.md) | Kwack H et al., PKGPT: Expert-Orchestrated Recursive LL…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040501](https://doi.org/10.3390/pharmaceutics18040501) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zhao_2017](drugs/toxin_nickel/Nickel_Zhao2017_reference.md) | Zhao H et al., [Physiologically based toxicokinetic mo…, Wei sheng yan jiu = Journal… (2017) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [van_2026](drugs/toxin_nickel/Nickel_van2026_reference.md) | van der Zeeuw SL et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01641-5](https://doi.org/10.1007/s40262-026-01641-5) |
 
 ## Coverage
 
 - **PubMed hits:** 12355 matched, 140 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 4  ·  extracted 4  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

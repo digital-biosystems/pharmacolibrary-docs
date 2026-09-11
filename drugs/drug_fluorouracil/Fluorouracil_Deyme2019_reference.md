@@ -1,8 +1,16 @@
 # fluorouracil — `Fluorouracil_Deyme2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** a compartment is unreachable, or a metabolite is unlinked
+
+**Steps:**
+1. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
+2. Parent/metabolite records commonly miss the formation link.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `FOLFIRINOX`, measured `fluorouracil`.
 
@@ -13,12 +21,12 @@ Deyme L; Barbolosi D; Gattacceca F et al. (2019). Cancer chemotherapy and pharma
   ·  DOI: [10.1007/s00280-018-3722-5](https://doi.org/10.1007/s00280-018-3722-5)
 
 ## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Deyme2019_reference" status="needs_review" stale="false" population="patients with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Deyme2019_reference" status="rejected" stale="false" population="patients with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** V1/F, V2/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `rejected`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -80,7 +88,7 @@ Deyme L; Barbolosi D; Gattacceca F et al. (2019). Cancer chemotherapy and pharma
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_fluorouracil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Deyme_2019` / `Deyme_2019::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_fluorouracil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Deyme_2019` / `Deyme_2019::v2sn38_fsn38_l::patients with digestive cancers`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

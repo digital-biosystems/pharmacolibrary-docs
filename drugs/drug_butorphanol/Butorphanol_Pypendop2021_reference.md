@@ -1,8 +1,15 @@
 # butorphanol — `Butorphanol_Pypendop2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,23 +18,25 @@ Pypendop BH; Shilo-Benjamini Y et al. (2021). Journal of veterinary pharmacology
   ·  DOI: [10.1111/jvp.13014](https://doi.org/10.1111/jvp.13014)
 
 ## Model component
-<dbs-pgx drug="butorphanol" model-id="Butorphanol_Pypendop2021_reference" status="extracted" stale="false" population="male neutered cats anesthetized with isoflurane" measured-compound="butorphanol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="butorphanol" model-id="Butorphanol_Pypendop2021_reference" status="not_modelled" stale="false" population="male neutered cats anesthetized with isoflurane" measured-compound="butorphanol" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V1 (ml/kg) | `Q63` · V1 | 231 | ml/kg | 0.016169999999999997 | [ml] / [kg] | not captured | exact (1.0) | jvp13014-tbl-0001:row1:col1 | — | not captured |
-| V2 (ml/kg) | `Q64` · V2 | 1094 | ml/kg | 0.07658 | [ml] / [kg] | not captured | exact (1.0) | jvp13014-tbl-0001:row2:col1 | — | not captured |
-| V3 (ml/kg) | `Q77` · V3 | 2596 | ml/kg | 0.18172 | [ml] / [kg] | not captured | exact (1.0) | jvp13014-tbl-0001:row3:col1 | — | not captured |
-| Vss (ml/kg) | `Q65` · Vss | 3921 | ml/kg | 0.27447 | [ml] / [kg] | not captured | exact (1.0) | jvp13014-tbl-0001:row4:col1 | — | not captured |
-| CL (ml/min/kg) | `Q22` · CL | 18.4 | ml/min/kg | 2.1466666666666662e-05 | [ml] / [[min] · [kg]] | not captured | exact (1.0) | jvp13014-tbl-0001:row5:col1 | — | not captured |
-| CL2 (ml/min/kg) | `Q30` · Q | 170.3 | ml/min/kg | 0.00019868333333333333 | [ml] / [[min] · [kg]] | not captured | special_case (0.95) | jvp13014-tbl-0001:row6:col1 | — | not captured |
-| CL3 (ml/min/kg) | `Q354` · CLnorm | 55.0 | ml/min/kg | 6.416666666666666e-05 | [ml] / [[min] · [kg]] | not captured | llm (0.6) | jvp13014-tbl-0001:row7:col1 | — | not captured |
-| T1/2α (min) | `Q59` · t1/2α | 0.6 | min | 36.0 | [min] | not captured | exact (1.0) | jvp13014-tbl-0001:row8:col1 | — | not captured |
-| T1/2β (min) | `Q60` · t1/2β | 12.4 | min | 744.0 | [min] | not captured | exact (1.0) | jvp13014-tbl-0001:row9:col1 | — | not captured |
-| T1/2γ (min) | `Q89` · t1/2γ | 172 | min | 10320.0 | [min] | not captured | exact (1.0) | jvp13014-tbl-0001:row10:col1 | — | not captured |
+| V1 (ml/kg) | `Q63` · V1 | —(suppressed) | ml/kg | — | [ml] / [kg] | not captured | exact (1.0) | jvp13014-tbl-0001:row1:col1 | — | not captured |
+| V2 (ml/kg) | `Q64` · V2 | —(suppressed) | ml/kg | — | [ml] / [kg] | not captured | exact (1.0) | jvp13014-tbl-0001:row2:col1 | — | not captured |
+| V3 (ml/kg) | `Q77` · V3 | —(suppressed) | ml/kg | — | [ml] / [kg] | not captured | exact (1.0) | jvp13014-tbl-0001:row3:col1 | — | not captured |
+| Vss (ml/kg) | `Q65` · Vss | —(suppressed) | ml/kg | — | [ml] / [kg] | not captured | exact (1.0) | jvp13014-tbl-0001:row4:col1 | — | not captured |
+| CL (ml/min/kg) | `Q22` · CL | —(suppressed) | ml/min/kg | — | [ml] / [[min] · [kg]] | not captured | exact (1.0) | jvp13014-tbl-0001:row5:col1 | — | not captured |
+| CL2 (ml/min/kg) | `Q30` · Q | —(suppressed) | ml/min/kg | — | [ml] / [[min] · [kg]] | not captured | special_case (0.95) | jvp13014-tbl-0001:row6:col1 | — | not captured |
+| CL3 (ml/min/kg) | `Q354` · CLnorm | —(suppressed) | ml/min/kg | — | [ml] / [[min] · [kg]] | not captured | llm (0.6) | jvp13014-tbl-0001:row7:col1 | — | not captured |
+| T1/2α (min) | `Q59` · t1/2α | —(suppressed) | min | — | [min] | not captured | exact (1.0) | jvp13014-tbl-0001:row8:col1 | — | not captured |
+| T1/2β (min) | `Q60` · t1/2β | —(suppressed) | min | — | [min] | not captured | exact (1.0) | jvp13014-tbl-0001:row9:col1 | — | not captured |
+| T1/2γ (min) | `Q89` · t1/2γ | —(suppressed) | min | — | [min] | not captured | exact (1.0) | jvp13014-tbl-0001:row10:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -67,6 +76,15 @@ Pypendop BH; Shilo-Benjamini Y et al. (2021). Journal of veterinary pharmacology
 | C9_phys_window_Q63 | pass | volume within physiological range | 16.2 L | not captured | not captured | ['jvp13014-tbl-0001:row1:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 76.6 L | not captured | not captured | ['jvp13014-tbl-0001:row2:col1'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=butorphanol) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -74,7 +92,8 @@ Pypendop BH; Shilo-Benjamini Y et al. (2021). Journal of veterinary pharmacology
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_butorphanol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pypendop_2021` / `Pypendop_2021::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_butorphanol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pypendop_2021` / `Pypendop_2021::male neutered cats anesthetized with isoflurane`)
+- sim: `../../../knowledgebase/drugs/drug_butorphanol/models/modelica/Butorphanol_Pypendop2021_male_neutered_cats_anesthetized_wit.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

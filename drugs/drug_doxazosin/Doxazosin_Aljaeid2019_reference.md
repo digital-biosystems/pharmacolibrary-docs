@@ -1,8 +1,15 @@
 # doxazosin — `Doxazosin_Aljaeid2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-08-02 12:41:35.212235+00:00) predates the upstream re-run (2026-08-27 08:40:40.292386+00:00). Current validate status: `rejected`.
+### Reviewer guidance
+
+**What is wrong:** a parameter falls outside the physiological window
+
+**Steps:**
+1. Confirm the value and unit against the paper before treating it as an error.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `doxazosin mesylate`, measured `doxazosin`.
 
@@ -13,7 +20,7 @@ Aljaeid BM; El-Say KM; Hosny KM et al. (2019). Drug development and industrial p
   ·  DOI: [10.1080/03639045.2019.1597105](https://doi.org/10.1080/03639045.2019.1597105)
 
 ## Model component
-<dbs-pgx drug="doxazosin" model-id="Doxazosin_Aljaeid2019_reference" status="rejected" stale="true" population="" measured-compound="doxazosin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="doxazosin" model-id="Doxazosin_Aljaeid2019_reference" status="rejected" stale="false" population="" measured-compound="doxazosin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -50,14 +57,6 @@ Aljaeid BM; El-Say KM; Hosny KM et al. (2019). Drug development and industrial p
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | fail | clearance within physiological range | 2.7e-05 L/h | not captured | not captured | ['Aljaeid_2019:review'] |
 | C9_phys_window_Q61 | fail | volume within physiological range | 0.000104 L | not captured | not captured | ['Aljaeid_2019:review'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

@@ -42,16 +42,18 @@ ii) clinical experience in the use of ondansetron in the prevention and treatmen
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chiang_2021_2](drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md) | Chiang MD et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2021) | [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [de_1998](drugs/drug_ondansetron/Ondansetron_de1998_reference.md) | de Alwis DP et al., Population pharmacokinetics of ondanset…, British journal of clinical… (1998) | [10.1046/j.1365-2125.1998.00756.x](https://doi.org/10.1046/j.1365-2125.1998.00756.x) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Chiang_2021](drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md) | Chiang MD et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2021) | [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Chiang_2021](drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate_adults_undergoing_elective_h.md) | Chiang MD et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2021) | [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Chiang_2021](drugs/drug_ondansetron/Ondansetron_Chiang2021_shrinkage.md) | Chiang MD et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2021) | [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Chiang_2021](drugs/drug_ondansetron/Ondansetron_Chiang2021_shrinkage_adults_undergoing_elective.md) | Chiang MD et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2021) | [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Chiang_2021_2](drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md) | Chiang MD et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2021) | [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [de_1998](drugs/drug_ondansetron/Ondansetron_de1998_reference.md) | de Alwis DP et al., Population pharmacokinetics of ondanset…, British journal of clinical… (1998) | [10.1046/j.1365-2125.1998.00756.x](https://doi.org/10.1046/j.1365-2125.1998.00756.x) |
 
 ## Coverage
 
 - **PubMed hits:** 79 matched, 20 returned
 - **screened:** 18  ·  **relevant:** 4
-- **records:** 4  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 6  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

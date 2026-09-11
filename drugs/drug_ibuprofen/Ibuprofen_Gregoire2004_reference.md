@@ -1,8 +1,15 @@
 # ibuprofen — `Ibuprofen_Gregoire2004_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-07-15 08:42:04.651013+00:00) predates the upstream re-run (2026-08-27 06:55:50.104649+00:00). Current validate status: `needs_review`.
+### Reviewer guidance
+
+**What is wrong:** every check the reviewer could run passed
+
+**Steps:**
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `ibuprofen racemate`, measured `R-ibuprofen, S-ibuprofen`.
 
@@ -13,7 +20,7 @@ Gregoire N; Gualano V; Geneteau A; Millerioux L; Brault M; Mignot A; et al. et a
   ·  DOI: [10.1177/0091270004268320](https://doi.org/10.1177/0091270004268320)
 
 ## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Gregoire2004_reference" status="needs_review" stale="true" population="very premature neonates" measured-compound="R-ibuprofen, S-ibuprofen" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Gregoire2004_reference" status="needs_review" stale="false" population="very premature neonates" measured-compound="R-ibuprofen, S-ibuprofen" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 

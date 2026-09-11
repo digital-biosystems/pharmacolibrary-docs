@@ -23,7 +23,7 @@ Donidalorsen was approved by the FDA in August 2025 for prophylactic use to prev
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Diep_2026](drugs/drug_donidalorsen/Donidalorsen_Diep2026_reference.md) | Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Diep_2026](drugs/drug_donidalorsen/Donidalorsen_Diep2026_reference.md) | Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206) |
 
 ## Pharmacodynamics (PD)
 
@@ -36,7 +36,7 @@ Donidalorsen was approved by the FDA in August 2025 for prophylactic use to prev
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

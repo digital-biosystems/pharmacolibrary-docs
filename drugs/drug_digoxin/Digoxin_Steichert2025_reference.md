@@ -1,8 +1,15 @@
 # digoxin — `Digoxin_Steichert2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,18 +18,20 @@ Steichert M; Cawello W; Burckhardt BB; Suessenbach FK; Laeer S; On Behalf Of The
   ·  DOI: [10.3390/pharmaceutics17101345](https://doi.org/10.3390/pharmaceutics17101345)
 
 ## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Steichert2025_reference" status="extracted" stale="false" population="" measured-compound="digoxin" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="digoxin" model-id="Digoxin_Steichert2025_reference" status="not_modelled" stale="false" population="" measured-compound="digoxin" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 36.39 | L/h | 1.0108333333333333e-05 | L/h | not captured | review (0.7) | Steichert_2025:review | — | not captured |
-| V1/F | `Q290` · V1/F | 223.71 | L | 0.22371000000000002 | L | not captured | review (0.7) | Steichert_2025:review | — | not captured |
-| V2/F | `Q82` · V2/F | 108.26 | L | 0.10826000000000001 | L | not captured | review (0.7) | Steichert_2025:review | — | not captured |
-| Q/F | `Q69` · Q/F | 6.38 | L/h | 1.7722222222222224e-06 | L/h | not captured | review (0.7) | Steichert_2025:review | — | not captured |
-| ka | `Q49` · kabs | 1.19 | h−1 | 0.00033055555555555556 | 1/h | not captured | review (0.7) | Steichert_2025:review | — | not captured |
+| CL/F | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Steichert_2025:review | — | not captured |
+| V1/F | `Q290` · V1/F | —(suppressed) | L | — | L | not captured | review (0.7) | Steichert_2025:review | — | not captured |
+| V2/F | `Q82` · V2/F | —(suppressed) | L | — | L | not captured | review (0.7) | Steichert_2025:review | — | not captured |
+| Q/F | `Q69` · Q/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Steichert_2025:review | — | not captured |
+| ka | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review (0.7) | Steichert_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,6 +67,15 @@ Steichert M; Cawello W; Burckhardt BB; Suessenbach FK; Laeer S; On Behalf Of The
 | C9_phys_window_Q290 | pass | volume within physiological range | 224 L | not captured | not captured | ['Steichert_2025:review'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 108 L | not captured | not captured | ['Steichert_2025:review'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -65,7 +83,7 @@ Steichert M; Cawello W; Burckhardt BB; Suessenbach FK; Laeer S; On Behalf Of The
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_digoxin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Steichert_2025` / `Steichert_2025::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_digoxin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Steichert_2025` / `Steichert_2025::review reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

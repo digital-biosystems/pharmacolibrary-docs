@@ -27,10 +27,16 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Blaser_2021](drugs/drug_metamizole/Metamizole_Blaser2021_4_maa.md) | Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.620635](https://doi.org/10.3389/fphar.2021.620635) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Blaser_2021](drugs/drug_metamizole/Metamizole_Blaser2021_metamizole_n_8.md) | Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.620635](https://doi.org/10.3389/fphar.2021.620635) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Blaser_2021](drugs/drug_metamizole/Metamizole_Blaser2021_naproxen_n_7.md) | Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.620635](https://doi.org/10.3389/fphar.2021.620635) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ekobena_2025](drugs/drug_metamizole/Metamizole_Ekobena2025_reference.md) | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Morath_2025](drugs/drug_metamizole/Metamizole_Morath2025_reference.md) | Morath B et al., Effect of Amiodarone on Apixaban Exposu…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01534-z](https://doi.org/10.1007/s40262-025-01534-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Stoschus_2025](drugs/drug_metamizole/Metamizole_Stoschus2025_reference.md) | Stoschus M et al., Optimizing phenobarbital dosing in crit…, Epilepsia (2025) | [10.1111/epi.18517](https://doi.org/10.1111/epi.18517) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ziesenitz_2019](drugs/drug_metamizole/Metamizole_Ziesenitz2019_reference.md) | Ziesenitz VC et al., Dose evaluation of intravenous metamizo…, European journal of clinica… (2019) | [10.1007/s00228-019-02720-2](https://doi.org/10.1007/s00228-019-02720-2) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Blaser_2021](drugs/drug_metamizole/Metamizole_Blaser2021_4_aa_healthy_salt_depleted_adults.md) | Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.620635](https://doi.org/10.3389/fphar.2021.620635) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Blaser_2021](drugs/drug_metamizole/Metamizole_Blaser2021_4_aaa_healthy_salt_depleted_adults.md) | Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.620635](https://doi.org/10.3389/fphar.2021.620635) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Blaser_2021](drugs/drug_metamizole/Metamizole_Blaser2021_4_faa_healthy_salt_depleted_adults.md) | Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.620635](https://doi.org/10.3389/fphar.2021.620635) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Blaser_2021](drugs/drug_metamizole/Metamizole_Blaser2021_4_maa_healthy_salt_depleted_adults.md) | Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.620635](https://doi.org/10.3389/fphar.2021.620635) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Blaser_2021](drugs/drug_metamizole/Metamizole_Blaser2021_metamizole_n_8_healthy_salt_depleted_a.md) | Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.620635](https://doi.org/10.3389/fphar.2021.620635) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Blaser_2021](drugs/drug_metamizole/Metamizole_Blaser2021_naproxen_n_7_healthy_salt_depleted_adu.md) | Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.620635](https://doi.org/10.3389/fphar.2021.620635) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ekobena_2025](drugs/drug_metamizole/Metamizole_Ekobena2025_reference.md) | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Morath_2025](drugs/drug_metamizole/Metamizole_Morath2025_reference.md) | Morath B et al., Effect of Amiodarone on Apixaban Exposu…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01534-z](https://doi.org/10.1007/s40262-025-01534-z) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Stoschus_2025](drugs/drug_metamizole/Metamizole_Stoschus2025_reference.md) | Stoschus M et al., Optimizing phenobarbital dosing in crit…, Epilepsia (2025) | [10.1111/epi.18517](https://doi.org/10.1111/epi.18517) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ziesenitz_2019](drugs/drug_metamizole/Metamizole_Ziesenitz2019_reference.md) | Ziesenitz VC et al., Dose evaluation of intravenous metamizo…, European journal of clinica… (2019) | [10.1007/s00228-019-02720-2](https://doi.org/10.1007/s00228-019-02720-2) |
 
 ## Pharmacodynamics (PD)
 
@@ -55,7 +61,7 @@
 
 - **PubMed hits:** 165 matched, 84 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 10  ·  extracted 10  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 16  ·  extracted 6  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

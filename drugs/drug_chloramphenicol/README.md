@@ -23,13 +23,13 @@ The FDA has withdrawn all oral drug products containing chloramphenicol, due to 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Anderson_1983](drugs/drug_chloramphenicol/Chloramphenicol_Anderson1983_reference.md) | Anderson KL et al., Pharmacokinetics of chloramphenicol in…, Journal of veterinary pharm… (1983) | [10.1111/j.1365-2885.1983.tb00005.x](https://doi.org/10.1111/j.1365-2885.1983.tb00005.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Anderson_1983](drugs/drug_chloramphenicol/Chloramphenicol_Anderson1983_reference.md) | Anderson KL et al., Pharmacokinetics of chloramphenicol in…, Journal of veterinary pharm… (1983) | [10.1111/j.1365-2885.1983.tb00005.x](https://doi.org/10.1111/j.1365-2885.1983.tb00005.x) |
 
 ## Coverage
 
 - **PubMed hits:** 376 matched, 69 returned
 - **screened:** 7  ·  **relevant:** 7
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

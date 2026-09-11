@@ -43,20 +43,22 @@ year of age and older
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Chen_2022_2](drugs/drug_omeprazole/Omeprazole_Chen2022v2_final_estimates.md) | Chen (2022) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Chen_2022_2](drugs/drug_omeprazole/Omeprazole_Chen2022v2_sir_median.md) | Chen (2022) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chung_2022](drugs/drug_omeprazole/Omeprazole_Chung2022_reference.md) | Chung TK et al., A population PK-PD model of YH4808, a n…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gao_2025](drugs/drug_omeprazole/Omeprazole_Gao2025_reference.md) | Gao T et al., Published population pharmacokinetic mo…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1632568](https://doi.org/10.3389/fphar.2025.1632568) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gaspar_2025](drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference.md) | Gaspar F et al., Improving Understanding of Fexofenadine…, Clinical pharmacokinetics (2025) | [10.1007/s40262-024-01470-4](https://doi.org/10.1007/s40262-024-01470-4) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Khan-Asa_2020](drugs/drug_omeprazole/Omeprazole_KhanAsa2020_reference.md) | Khan-Asa B et al., Impact of Albumin and Omeprazole on Ste…, Antibiotics (Basel, Switzer… (2020) | [10.3390/antibiotics9090574](https://doi.org/10.3390/antibiotics9090574) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Li_2022](drugs/drug_omeprazole/Omeprazole_Li2022_reference.md) | Li (2022) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2022](drugs/drug_omeprazole/Omeprazole_Liu2022_reference.md) | Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.964758](https://doi.org/10.3389/fphar.2022.964758) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Marques_2026](drugs/drug_omeprazole/Omeprazole_Marques2026_reference.md) | Marques L et al., Model-Based Virtual Clinical Trial Reve…, Pharmaceutics (2026) | [10.3390/pharmaceutics18060636](https://doi.org/10.3390/pharmaceutics18060636) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [McCann_2023](drugs/drug_omeprazole/Omeprazole_McCann2023_reference.md) | McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01254-2](https://doi.org/10.1007/s40262-023-01254-2) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Panetta_2024](drugs/drug_omeprazole/Omeprazole_Panetta2024_reference.md) | Panetta JC et al., Population Pharmacokinetic and Pharmaco…, Pharmaceutics (2024) | [10.3390/pharmaceutics16121528](https://doi.org/10.3390/pharmaceutics16121528) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yusuff_2026](drugs/drug_omeprazole/Omeprazole_Yusuff2026_reference.md) | Yusuff H et al., Time-varying voriconazole clearance dur…, Antimicrobial agents and ch… (2026) | [10.1128/aac.00098-26](https://doi.org/10.1128/aac.00098-26) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2025_2](drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference.md) | Zhang (2025) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2025_3](drugs/drug_omeprazole/Omeprazole_Zhang2025v3_reference.md) | Zhang (2025) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhao_2018](drugs/drug_omeprazole/Omeprazole_Zhao2018_reference.md) | Zhao W et al., Developmental pharmacogenetics of CYP2C…, British journal of clinical… (2018) | [10.1111/bcp.13526](https://doi.org/10.1111/bcp.13526) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Yang_2026_2](drugs/drug_omeprazole/Omeprazole_Yang2026v2_reference.md) | Yang (2026) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Chen_2022_2](drugs/drug_omeprazole/Omeprazole_Chen2022v2_final_estimates_obese_patients_undergo.md) | Chen (2022) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Chen_2022_2](drugs/drug_omeprazole/Omeprazole_Chen2022v2_sir_median_obese_patients_undergoing_l.md) | Chen (2022) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Chung_2022](drugs/drug_omeprazole/Omeprazole_Chung2022_reference.md) | Chung TK et al., A population PK-PD model of YH4808, a n…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Gao_2025](drugs/drug_omeprazole/Omeprazole_Gao2025_reference.md) | Gao T et al., Published population pharmacokinetic mo…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1632568](https://doi.org/10.3389/fphar.2025.1632568) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Gaspar_2025](drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference.md) | Gaspar F et al., Improving Understanding of Fexofenadine…, Clinical pharmacokinetics (2025) | [10.1007/s40262-024-01470-4](https://doi.org/10.1007/s40262-024-01470-4) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Khan-Asa_2020](drugs/drug_omeprazole/Omeprazole_KhanAsa2020_reference.md) | Khan-Asa B et al., Impact of Albumin and Omeprazole on Ste…, Antibiotics (Basel, Switzer… (2020) | [10.3390/antibiotics9090574](https://doi.org/10.3390/antibiotics9090574) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Li_2022](drugs/drug_omeprazole/Omeprazole_Li2022_reference.md) | Li (2022) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Liu_2022](drugs/drug_omeprazole/Omeprazole_Liu2022_reference.md) | Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.964758](https://doi.org/10.3389/fphar.2022.964758) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Marques_2026](drugs/drug_omeprazole/Omeprazole_Marques2026_reference.md) | Marques L et al., Model-Based Virtual Clinical Trial Reve…, Pharmaceutics (2026) | [10.3390/pharmaceutics18060636](https://doi.org/10.3390/pharmaceutics18060636) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [McCann_2023](drugs/drug_omeprazole/Omeprazole_McCann2023_reference.md) | McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01254-2](https://doi.org/10.1007/s40262-023-01254-2) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Panetta_2024](drugs/drug_omeprazole/Omeprazole_Panetta2024_reference.md) | Panetta JC et al., Population Pharmacokinetic and Pharmaco…, Pharmaceutics (2024) | [10.3390/pharmaceutics16121528](https://doi.org/10.3390/pharmaceutics16121528) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Yusuff_2026](drugs/drug_omeprazole/Omeprazole_Yusuff2026_reference.md) | Yusuff H et al., Time-varying voriconazole clearance dur…, Antimicrobial agents and ch… (2026) | [10.1128/aac.00098-26](https://doi.org/10.1128/aac.00098-26) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zhang_2025_2](drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference.md) | Zhang (2025) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zhang_2025_3](drugs/drug_omeprazole/Omeprazole_Zhang2025v3_reference.md) | Zhang (2025) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zhao_2018](drugs/drug_omeprazole/Omeprazole_Zhao2018_reference.md) | Zhao W et al., Developmental pharmacogenetics of CYP2C…, British journal of clinical… (2018) | [10.1111/bcp.13526](https://doi.org/10.1111/bcp.13526) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Han_2025](drugs/drug_omeprazole/Omeprazole_Han2025_reference.md) | Han B et al., Bridging Literature and Real-World Evid…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121516](https://doi.org/10.3390/pharmaceutics17121516) |
 
 ## Pharmacodynamics (PD)
@@ -101,7 +103,7 @@ year of age and older
 
 - **PubMed hits:** 2320 matched, 220 returned
 - **screened:** 38  ·  **relevant:** 3
-- **records:** 17  ·  extracted 15  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 19  ·  extracted 2  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

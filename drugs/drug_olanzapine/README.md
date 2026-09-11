@@ -33,7 +33,7 @@ Olanzapine is also indicated in combination with [samidorphan] for the treatment
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Maharaj_2021](drugs/drug_olanzapine/Olanzapine_Maharaj2021_reference.md) | Maharaj AR et al., Population pharmacokinetics of olanzapi…, British journal of clinical… (2021) | [10.1111/bcp.14414](https://doi.org/10.1111/bcp.14414) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Maharaj_2021](drugs/drug_olanzapine/Olanzapine_Maharaj2021_reference.md) | Maharaj AR et al., Population pharmacokinetics of olanzapi…, British journal of clinical… (2021) | [10.1111/bcp.14414](https://doi.org/10.1111/bcp.14414) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2024](drugs/drug_olanzapine/Olanzapine_Zhang2024_reference.md) | Zhang C et al., Effects of Aripiprazole on Olanzapine P…, Neuropsychiatric disease an… (2024) | [10.2147/NDT.S455183](https://doi.org/10.2147/NDT.S455183) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2025](drugs/drug_olanzapine/Olanzapine_Zhang2025_reference.md) | Zhang C et al., Drug-drug interaction of paroxetine on…, Frontiers in psychiatry (2025) | [10.3389/fpsyt.2025.1538996](https://doi.org/10.3389/fpsyt.2025.1538996) |
 
@@ -41,7 +41,7 @@ Olanzapine is also indicated in combination with [samidorphan] for the treatment
 
 - **PubMed hits:** 109 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

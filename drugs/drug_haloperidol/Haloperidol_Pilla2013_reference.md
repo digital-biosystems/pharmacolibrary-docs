@@ -1,8 +1,20 @@
 # haloperidol — `Haloperidol_Pilla2013_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `kabs`, `EC50`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -10,26 +22,28 @@
 not matched (stem Pilla_2013)
 
 ## Model component
-<dbs-pgx drug="haloperidol" model-id="Haloperidol_Pilla2013_reference" status="extracted" stale="false" population="patients with schizophrenia" measured-compound="haloperidol" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="haloperidol" model-id="Haloperidol_Pilla2013_reference" status="not_modelled" stale="false" population="patients with schizophrenia" measured-compound="haloperidol" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 86 | L/h | 2.3888888888888892e-05 | [l] / [h] | not captured | exact (1.0) | tab_1:row4:col1, tab_1:row4:col3 | — | not captured |
-| Q/F (L/h) | `Q69` · Q/F | 12 | L/h | 3.3333333333333333e-06 | [l] / [h] | not captured | exact (1.0) | tab_1:row5:col1, tab_1:row5:col3, tab_1:row5:col4 | — | not captured |
-| Vc/F (L) | `Q290` · V1/F | 9 | L | 0.009000000000000001 | [l] | not captured | exact (1.0) | tab_1:row6:col1, tab_1:row6:col3, tab_1:row6:col4 | — | not captured |
-| Vp/F (L) | `Q82` · V2/F | 12 | L | 0.012 | [l] | not captured | exact (1.0) | tab_1:row7:col1, tab_1:row7:col3, tab_1:row7:col4 | — | not captured |
-| Ka (h j1 ) | `Q49` · kabs | 6 | h j1 | not captured | [h] · [j1] | not captured | exact (1.0) | tab_1:row8:col1, tab_1:row8:col3, tab_1:row8:col4 | — | not captured |
-| RUV proportional | `Q315` · sigma | 0.44 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_1:row11:col1, tab_1:row11:col3 | — | not captured |
-| Baseline PANSS | `Q324` · E0 | 0.5 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_1:row13:col1, tab_1:row13:col3, tab_1:row13:col4 | — | 16 (None% RSE) |
-| P max | `Q32` · Cmax | 4 | not captured | not captured | not captured | not captured | llm (0.5) | tab_1:row14:col1, tab_1:row14:col3, tab_1:row14:col4 | — | not captured |
-| E max | `Q320` · Emax | 0.29 | not captured | not captured | not captured | not captured | llm (0.5) | tab_1:row15:col1, tab_1:row15:col3 | — | not captured |
-| EC 50 (ng/mL) | `Q321` · EC50 | 2.71 | ng/mL | not captured | [ng] / [ml] | not captured | llm (0.5) | tab_1:row16:col1, tab_1:row16:col3 | — | not captured |
-| KT (1/d) | `Q47` · kel | 6 | not captured | not captured | not captured | not captured | llm (0.5) | tab_1:row17:col1, tab_1:row17:col3, tab_1:row17:col4 | — | not captured |
-| t 2 (delay in drug effect in days)* | `Q83` · tlag | 6 | not captured | not captured | not captured | not captured | llm (0.5) | tab_1:row18:col1 | — | not captured |
-| BHAZ: placebo (1/d) | `Q341` · placebo_Emax | 0.1 | not captured | not captured | not captured | not captured | llm (0.5) | tab_1:row19:col1, tab_1:row19:col3, tab_1:row19:col4 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | tab_1:row4:col1, tab_1:row4:col3 | — | not captured |
+| Q/F (L/h) | `Q69` · Q/F | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | tab_1:row5:col1, tab_1:row5:col3, tab_1:row5:col4 | — | not captured |
+| Vc/F (L) | `Q290` · V1/F | —(suppressed) | L | — | [l] | not captured | exact (1.0) | tab_1:row6:col1, tab_1:row6:col3, tab_1:row6:col4 | — | not captured |
+| Vp/F (L) | `Q82` · V2/F | —(suppressed) | L | — | [l] | not captured | exact (1.0) | tab_1:row7:col1, tab_1:row7:col3, tab_1:row7:col4 | — | not captured |
+| Ka (h j1 ) | `Q49` · kabs | —(suppressed) | h j1 | — | [h] · [j1] | not captured | exact (1.0) | tab_1:row8:col1, tab_1:row8:col3, tab_1:row8:col4 | — | not captured |
+| RUV proportional | `Q315` · sigma | —(suppressed) | not captured | — | not captured | not captured | boundary (0.8) | tab_1:row11:col1, tab_1:row11:col3 | — | not captured |
+| Baseline PANSS | `Q324` · E0 | —(suppressed) | not captured | — | not captured | not captured | boundary (0.8) | tab_1:row13:col1, tab_1:row13:col3, tab_1:row13:col4 | — | 16 (None% RSE) |
+| P max | `Q32` · Cmax | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_1:row14:col1, tab_1:row14:col3, tab_1:row14:col4 | — | not captured |
+| E max | `Q320` · Emax | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_1:row15:col1, tab_1:row15:col3 | — | not captured |
+| EC 50 (ng/mL) | `Q321` · EC50 | —(suppressed) | ng/mL | — | [ng] / [ml] | not captured | llm (0.5) | tab_1:row16:col1, tab_1:row16:col3 | — | not captured |
+| KT (1/d) | `Q47` · kel | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_1:row17:col1, tab_1:row17:col3, tab_1:row17:col4 | — | not captured |
+| t 2 (delay in drug effect in days)* | `Q83` · tlag | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_1:row18:col1 | — | not captured |
+| BHAZ: placebo (1/d) | `Q341` · placebo_Emax | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_1:row19:col1, tab_1:row19:col3, tab_1:row19:col4 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -103,6 +117,15 @@ not matched (stem Pilla_2013)
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -110,7 +133,7 @@ not matched (stem Pilla_2013)
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_haloperidol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pilla_2013` / `Pilla_2013::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_haloperidol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Pilla_2013` / `Pilla_2013::patients with schizophrenia`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

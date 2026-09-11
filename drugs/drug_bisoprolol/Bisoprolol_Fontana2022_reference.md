@@ -1,6 +1,15 @@
 # bisoprolol — `Bisoprolol_Fontana2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
+
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,12 +18,12 @@ Fontana V; Turner RM; Francis B; Yin P; Pütz B; Hiltunen TP; et al. et al. (202
   ·  DOI: [10.2147/PGPM.S352719](https://doi.org/10.2147/PGPM.S352719)
 
 ## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Fontana2022_reference" status="needs_review" stale="false" population="patients with non-ST elevation acute coronary syndrome on bisoprolol" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Fontana2022_reference" status="not_modelled" stale="false" population="patients with non-ST elevation acute coronary syndrome on bisoprolol" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -59,9 +68,8 @@ Fontana V; Turner RM; Francis B; Yin P; Pütz B; Hiltunen TP; et al. et al. (202
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['tlag'] |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -71,8 +79,6 @@ Fontana V; Turner RM; Francis B; Yin P; Pütz B; Hiltunen TP; et al. et al. (202
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_bisoprolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Fontana_2022` / `Fontana_2022::patients with non-ST elevation acute coronary syndrome on bisoprolol`)
-- model: `../../../knowledgebase/drugs/drug_bisoprolol/models/modelica/Bisoprolol_Fontana2022_patients_with_non_st_elevation_acute.mo`
-- deviation: `../../../knowledgebase/drugs/drug_bisoprolol/models/modelica/Bisoprolol_Fontana2022_patients_with_non_st_elevation_acute.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

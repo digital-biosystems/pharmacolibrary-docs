@@ -24,8 +24,11 @@ In combination with difenoxin or diphenoxylate (tablets for oral use), atropine 
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Ström_2021](drugs/drug_atropine/Atropine_Strm2021_2_50.md) | Ström L et al., Topical ophthalmic atropine in horses,…, BMC veterinary research (2021) | [10.1186/s12917-021-02847-4](https://doi.org/10.1186/s12917-021-02847-4) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Ström_2021](drugs/drug_atropine/Atropine_Strm2021_2_50_horses.md) | Ström L et al., Topical ophthalmic atropine in horses,…, BMC veterinary research (2021) | [10.1186/s12917-021-02847-4](https://doi.org/10.1186/s12917-021-02847-4) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Ström_2021](drugs/drug_atropine/Atropine_Strm2021_97_50.md) | Ström L et al., Topical ophthalmic atropine in horses,…, BMC veterinary research (2021) | [10.1186/s12917-021-02847-4](https://doi.org/10.1186/s12917-021-02847-4) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Ström_2021](drugs/drug_atropine/Atropine_Strm2021_97_50_horses.md) | Ström L et al., Topical ophthalmic atropine in horses,…, BMC veterinary research (2021) | [10.1186/s12917-021-02847-4](https://doi.org/10.1186/s12917-021-02847-4) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Ström_2021](drugs/drug_atropine/Atropine_Strm2021_median.md) | Ström L et al., Topical ophthalmic atropine in horses,…, BMC veterinary research (2021) | [10.1186/s12917-021-02847-4](https://doi.org/10.1186/s12917-021-02847-4) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Ström_2021](drugs/drug_atropine/Atropine_Strm2021_median_horses.md) | Ström L et al., Topical ophthalmic atropine in horses,…, BMC veterinary research (2021) | [10.1186/s12917-021-02847-4](https://doi.org/10.1186/s12917-021-02847-4) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ekstrand_2022](drugs/drug_atropine/Atropine_Ekstrand2022_reference.md) | Ekstrand C et al., Plasma atropine concentrations associat…, Frontiers in veterinary sci… (2022) | [10.3389/fvets.2022.951300](https://doi.org/10.3389/fvets.2022.951300) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hinderling_1985](drugs/drug_atropine/Atropine_Hinderling1985_reference.md) | Hinderling PH et al., Integrated pharmacokinetics and pharmac…, Journal of pharmaceutical s… (1985) | [10.1002/jps.2600740702](https://doi.org/10.1002/jps.2600740702) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Parrot_2024](drugs/drug_atropine/Atropine_Parrot2024_reference.md) | Parrot M et al., Clinical pharmacokinetics of atropine o…, Clinical and translational… (2024) | [10.1111/cts.13753](https://doi.org/10.1111/cts.13753) |
@@ -34,7 +37,7 @@ In combination with difenoxin or diphenoxylate (tablets for oral use), atropine 
 
 - **PubMed hits:** 689 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 6  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 9  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

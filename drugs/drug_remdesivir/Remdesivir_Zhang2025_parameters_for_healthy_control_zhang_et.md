@@ -2,7 +2,22 @@
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — reviewer_tooling.** the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault<br><sub>evidence: `C2_reference failed (ratio None)`, `C6_cl_magnitude failed (ratio None)`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** the reference covariate scenario does not reconstruct; clearance is outside the plausible magnitude window.
+
+**Steps:**
+1. Not a curation fix — reviewer_tooling limitation.
+2. Check covariate_definitions and the reference category in _interpretv2.yaml.
+3. Check the parameter's unit_verbatim — an unconverted per-kg or per-hour unit is the usual cause, not a genuinely extreme value.
+4. Confirm value_si against the paper's reported number.
+5. A 'ratio None' means the check could not compute a ratio, so treat the window as unverified rather than as a failure of the value.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,47 +26,16 @@ Zhang S; Jeong S; Jiang B; Ho H et al. (2025). Frontiers in pharmacology 16
   ·  DOI: [10.3389/fphar.2025.1488961](https://doi.org/10.3389/fphar.2025.1488961)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et" status="needs_review" stale="false" population="healthy subjects and patients with renal impairment" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et" status="needs_review" stale="false" population="healthy subjects and patients with renal impairment" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Parameterization:** mechanistic.
+**Parameterization:** not captured.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| KP,NUC | `Q350` · kic | —(suppressed) | Zhang et al., 2020 | — | [zhangetal] | not captured | exact (1.0) | T1:row5:col2 | — | not captured |
-| theta_kic_im | `Q900` · theta_kic_im | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | T1:row4:col2 | — | not captured |
-| theta_kic_im | `Q900` · theta_kic_im | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | T1:row8:col2 | — | not captured |
-| Mean total clearance | `Q22` · CL | —(suppressed) | mL/min | — | L/h | not captured | review_gapfill (0.7) | Humeniuk_2021:review | — | not captured |
-| volume of distribution | `Q61` · V | —(suppressed) | L | — | L | not captured | review_gapfill (0.7) | Humeniuk_2021:review | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
-
-**Interpretation flags:**
-- dropped unlinked row (NIL): 'QRDV' — extend the ontology if this is a real PK parameter (source ['T1:row1:col2'])
-- dropped unlinked row (NIL): 'QIM' — extend the ontology if this is a real PK parameter (source ['T1:row2:col2'])
-- dropped unlinked row (NIL): 'QNUC' — extend the ontology if this is a real PK parameter (source ['T1:row3:col2'])
-- unit_dimension_unknown: 'Zhang et al., 2020' (kic)
-- unit_dimension_unknown: 'Zhang et al., 2020' (kic)
-- dropped duplicate Q350 ('KP,NTP', value '3.28E10') — already have one for this compound
-- unit_dimension_unknown: 'Zhang et al., 2020' (kic)
-- dropped duplicate Q350 ('KC,NUC', value '0.38') — already have one for this compound
-- dropped unlinked row (NIL): 'CLC,RDV' — extend the ontology if this is a real PK parameter (source ['T1:row9:col2'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=remdesivir
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: 2 first-order transfer(s) across 3 compounds → general_linear
-- status held at route_to_review — not promoted
-- population split: 'parameters for healthy control (zhang et al., 2020)' subgroup of Zhang_2025 (paper reports 3 populations: parameters for a renal-impaired patient with egfr = 0 (sörgel et al., 2021), parameters for healthy control (zhang et al., 2020), parameters for severe renal-impaired patients (zhang et al., 2020))
-- gap-filled Q22 (CL) from Humeniuk_2021's review values (primary lacked it)
-- gap-filled Q61 (V) from Humeniuk_2021's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell T1:row0:col2 = 'Parameters for healthy control (Zhang et al., 2020)'
@@ -60,28 +44,11 @@ Zhang S; Jeong S; Jiang B; Ho H et al. (2025). Frontiers in pharmacology 16
 
 ## Validation
 
-**Scholar closed-form checks:**
-
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Humeniuk_2021:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Humeniuk_2021:review'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 1171.0 | not captured | not captured | ['Humeniuk_2021:review'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 70.3 L/h | not captured | not captured | ['Humeniuk_2021:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 93 L | not captured | not captured | ['Humeniuk_2021:review'] |
-
-<details class="legend">
-<summary>Check legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
-</details>
+_No comparable checks._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_remdesivir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhang_2025` / `Zhang_2025::parameters_for_healthy_control_zhang_et_al_2020`)
+- scholar stages: `../../../knowledgebase/drugs/drug_remdesivir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhang_2025` / `Zhang_2025::parameters_for_healthy_control_zhang_et_al_2020::healthy subjects and patients with renal impairment`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

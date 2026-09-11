@@ -21,20 +21,26 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Admiraal_2023](drugs/drug_exenatide/Exenatide_Admiraal2023_reference.md) | Admiraal MM et al., Neuroprotection after cardiac arrest wi…, Frontiers in neurology (2023) | [10.3389/fneur.2023.1136046](https://doi.org/10.3389/fneur.2023.1136046) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Cirincione_2017](drugs/drug_exenatide/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m.md) | Cirincione (2017) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Cirincione_2017](drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv.md) | Cirincione (2017) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Cirincione_2017_2](drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv.md) | Cirincione (2017) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Cirincione_2017_2](drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference.md) | Cirincione (2017) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gao_2011](drugs/drug_exenatide/Exenatide_Gao2011_reference.md) | Gao W et al., Pharmacokinetic and pharmacodynamic mod…, The Journal of pharmacology… (2011) | [10.1124/jpet.110.175752](https://doi.org/10.1124/jpet.110.175752) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Li_2012](drugs/drug_exenatide/Exenatide_Li2012_reference.md) | Li (2012) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Min_2025](drugs/drug_exenatide/Exenatide_Min2025_reference.md) | Min JS et al., A Comprehensive Review on the Pharmacok…, Drug design, development an… (2025) | [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ng_2018](drugs/drug_exenatide/Exenatide_Ng2018_reference.md) | Ng CM et al., Population pharmacokinetics of exendin-…, British journal of clinical… (2018) | [10.1111/bcp.13463](https://doi.org/10.1111/bcp.13463) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Cirincione_2017](drugs/drug_exenatide/Exenatide_Cirincione2017_reference.md) | Cirincione (2017) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Admiraal_2023](drugs/drug_exenatide/Exenatide_Admiraal2023_reference.md) | Admiraal MM et al., Neuroprotection after cardiac arrest wi…, Frontiers in neurology (2023) | [10.3389/fneur.2023.1136046](https://doi.org/10.3389/fneur.2023.1136046) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Cirincione_2017](drugs/drug_exenatide/Exenatide_Cirincione2017_reference.md) | Cirincione (2017) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Cirincione_2017](drugs/drug_exenatide/Exenatide_Cirincione2017_reference.md) | Cirincione (2017) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Cirincione_2017_2](drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference.md) | Cirincione (2017) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Cirincione_2017_2](drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference.md) | Cirincione (2017) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Gao_2011](drugs/drug_exenatide/Exenatide_Gao2011_reference.md) | Gao W et al., Pharmacokinetic and pharmacodynamic mod…, The Journal of pharmacology… (2011) | [10.1124/jpet.110.175752](https://doi.org/10.1124/jpet.110.175752) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Li_2012](drugs/drug_exenatide/Exenatide_Li2012_reference.md) | Li (2012) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Min_2025](drugs/drug_exenatide/Exenatide_Min2025_reference.md) | Min JS et al., A Comprehensive Review on the Pharmacok…, Drug design, development an… (2025) | [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ng_2018](drugs/drug_exenatide/Exenatide_Ng2018_reference.md) | Ng CM et al., Population pharmacokinetics of exendin-…, British journal of clinical… (2018) | [10.1111/bcp.13463](https://doi.org/10.1111/bcp.13463) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Choi_2025](drugs/drug_exenatide/Exenatide_Choi2025_reference.md) | Choi S et al., Population pharmacokinetics of efpeglen…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1715585](https://doi.org/10.3389/fphar.2025.1715585) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Cirincione_2017](drugs/drug_exenatide/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m.md) | Cirincione (2017) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Cirincione_2017](drugs/drug_exenatide/Exenatide_Cirincione2017_reference.md) | Cirincione (2017) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Cirincione_2017](drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_parameter_estimat.md) | Cirincione (2017) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Cirincione_2017](drugs/drug_exenatide/Exenatide_Cirincione2017_reference.md) | Cirincione (2017) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Cirincione_2017_2](drugs/drug_exenatide/Exenatide_Cirincione2017v2_parameter_estimate.md) | Cirincione (2017) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Cirincione_2017_2](drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference.md) | Cirincione (2017) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Gao_2012](drugs/drug_exenatide/Exenatide_Gao2012_reference.md) | Gao W et al., Target-mediated pharmacokinetic and pha…, Drug metabolism and disposi… (2012) | [10.1124/dmd.111.042291](https://doi.org/10.1124/dmd.111.042291) |
 
 ## Pharmacodynamics (PD)
@@ -90,7 +96,7 @@
 
 - **PubMed hits:** 286 matched, 106 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 15  ·  extracted 9  ·  needs_review 1  ·  rejected 5  ·  stale 0
+- **records:** 21  ·  extracted 3  ·  needs_review 1  ·  rejected 8  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

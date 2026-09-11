@@ -21,13 +21,13 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Björnsson_2011](drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference.md) | Björnsson MA et al., Modelling of pain intensity and informa…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03924.x](https://doi.org/10.1111/j.1365-2125.2011.03924.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Björnsson_2011](drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference.md) | Björnsson MA et al., Modelling of pain intensity and informa…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03924.x](https://doi.org/10.1111/j.1365-2125.2011.03924.x) |
 
 ## Coverage
 
 - **PubMed hits:** 65 matched, 40 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Screened and excluded

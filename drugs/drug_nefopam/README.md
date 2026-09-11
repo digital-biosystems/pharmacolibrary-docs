@@ -19,7 +19,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Podranski_2012](drugs/drug_nefopam/Nefopam_Podranski2012_reference.md) | Podranski T et al., Compartmental pharmacokinetics of nefop…, British journal of anaesthe… (2012) | [10.1093/bja/aer517](https://doi.org/10.1093/bja/aer517) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Podranski_2012](drugs/drug_nefopam/Nefopam_Podranski2012_reference.md) | Podranski T et al., Compartmental pharmacokinetics of nefop…, British journal of anaesthe… (2012) | [10.1093/bja/aer517](https://doi.org/10.1093/bja/aer517) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Djerada_2014](drugs/drug_nefopam/Nefopam_Djerada2014_reference.md) | Djerada Z et al., Population pharmacokinetics of nefopam…, British journal of clinical… (2014) | [10.1111/bcp.12291](https://doi.org/10.1111/bcp.12291) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Mimoz_2010](drugs/drug_nefopam/Nefopam_Mimoz2010_reference.md) | Mimoz O et al., Nefopam pharmacokinetics in patients wi…, Anesthesia and analgesia (2010) | [10.1213/ANE.0b013e3181f33488](https://doi.org/10.1213/ANE.0b013e3181f33488) |
 
@@ -27,7 +27,7 @@
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

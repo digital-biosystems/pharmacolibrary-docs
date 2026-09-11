@@ -22,7 +22,9 @@
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Wang_2020](drugs/drug_lanadelumab/Lanadelumab_Wang2020_base.md) | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Wang_2020](drugs/drug_lanadelumab/Lanadelumab_Wang2020_base_healthy_subjects_and_patients_with.md) | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Wang_2020](drugs/drug_lanadelumab/Lanadelumab_Wang2020_final.md) | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Wang_2020](drugs/drug_lanadelumab/Lanadelumab_Wang2020_final_healthy_subjects_and_patients_wit.md) | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
 
 ## Pharmacodynamics (PD)
 
@@ -36,7 +38,7 @@
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

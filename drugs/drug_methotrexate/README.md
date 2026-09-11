@@ -27,13 +27,13 @@ Other formulations are indicated to treat gestational choriocarcinoma, chorioade
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Blackman_2026](drugs/drug_methotrexate/Methotrexate_Blackman2026_reference.md) | Blackman MH et al., Development and validation of high-dose…, European journal of clinica… (2026) | [10.1007/s00228-026-04080-0](https://doi.org/10.1007/s00228-026-04080-0) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Muthukrishnan_2025](drugs/drug_methotrexate/Methotrexate_Muthukrishnan2025_reference.md) | Muthukrishnan VY et al., Population Pharmacokinetic and Pharmaco…, Clinical and translational… (2025) | [10.1111/cts.70381](https://doi.org/10.1111/cts.70381) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Pan_2026](drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md) | Pan S et al., Evaluation of a Therapeutic Drug Monito…, Clinical and translational… (2026) | [10.1111/cts.70563](https://doi.org/10.1111/cts.70563) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Tan_2024](drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md) | Tan JM et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2024) | [10.1111/bcp.16158](https://doi.org/10.1111/bcp.16158) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wei_2025](drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md) | Wei S et al., Population pharmacokinetics of high-dos…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1578033](https://doi.org/10.3389/fphar.2025.1578033) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yu_2025](drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md) | Yu B et al., Population Pharmacokinetics and Covaria…, Drug design, development an… (2025) | [10.2147/DDDT.S545368](https://doi.org/10.2147/DDDT.S545368) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [van_2024](drugs/drug_methotrexate/Methotrexate_van2024_reference.md) | van Huizen A et al., Quantifying the Effect of Methotrexate…, The Journal of investigativ… (2024) | [10.1016/j.jid.2023.10.022](https://doi.org/10.1016/j.jid.2023.10.022) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Blackman_2026](drugs/drug_methotrexate/Methotrexate_Blackman2026_reference.md) | Blackman MH et al., Development and validation of high-dose…, European journal of clinica… (2026) | [10.1007/s00228-026-04080-0](https://doi.org/10.1007/s00228-026-04080-0) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Muthukrishnan_2025](drugs/drug_methotrexate/Methotrexate_Muthukrishnan2025_reference.md) | Muthukrishnan VY et al., Population Pharmacokinetic and Pharmaco…, Clinical and translational… (2025) | [10.1111/cts.70381](https://doi.org/10.1111/cts.70381) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Pan_2026](drugs/drug_methotrexate/Methotrexate_Pan2026_reference.md) | Pan S et al., Evaluation of a Therapeutic Drug Monito…, Clinical and translational… (2026) | [10.1111/cts.70563](https://doi.org/10.1111/cts.70563) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Tan_2024](drugs/drug_methotrexate/Methotrexate_Tan2024_reference.md) | Tan JM et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2024) | [10.1111/bcp.16158](https://doi.org/10.1111/bcp.16158) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Wei_2025](drugs/drug_methotrexate/Methotrexate_Wei2025_reference.md) | Wei S et al., Population pharmacokinetics of high-dos…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1578033](https://doi.org/10.3389/fphar.2025.1578033) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Yu_2025](drugs/drug_methotrexate/Methotrexate_Yu2025_reference.md) | Yu B et al., Population Pharmacokinetics and Covaria…, Drug design, development an… (2025) | [10.2147/DDDT.S545368](https://doi.org/10.2147/DDDT.S545368) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [van_2024](drugs/drug_methotrexate/Methotrexate_van2024_reference.md) | van Huizen A et al., Quantifying the Effect of Methotrexate…, The Journal of investigativ… (2024) | [10.1016/j.jid.2023.10.022](https://doi.org/10.1016/j.jid.2023.10.022) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Jung_2024](drugs/drug_methotrexate/Methotrexate_Jung2024_reference.md) | Jung YS et al., A population pharmacokinetic model of m…, British journal of clinical… (2024) | [10.1111/bcp.15969](https://doi.org/10.1111/bcp.15969) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Rosario_2017](drugs/drug_methotrexate/Methotrexate_Rosario2017_reference.md) | Rosario M et al., A Review of the Clinical Pharmacokineti…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0546-0](https://doi.org/10.1007/s40262-017-0546-0) |
 
@@ -85,7 +85,7 @@ Other formulations are indicated to treat gestational choriocarcinoma, chorioade
 
 - **PubMed hits:** 3215 matched, 138 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 9  ·  extracted 7  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 9  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

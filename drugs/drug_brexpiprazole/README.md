@@ -25,8 +25,8 @@ Brexpiprazole is also indicated for the treatment of agitation associated with d
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Higashi_2025](drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_reference.md) | Higashi K et al., Population pharmacokinetics of brexpipr…, Drug metabolism and pharmac… (2025) | [10.1016/j.dmpk.2025.101057](https://doi.org/10.1016/j.dmpk.2025.101057) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2023](drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md) | Wang (2023) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Higashi_2025](drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_reference.md) | Higashi K et al., Population pharmacokinetics of brexpipr…, Drug metabolism and pharmac… (2025) | [10.1016/j.dmpk.2025.101057](https://doi.org/10.1016/j.dmpk.2025.101057) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Wang_2023](drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md) | Wang (2023) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Frederiksen_2023_3](drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md) | Frederiksen (2023) | — |
 
 ## Pharmacodynamics (PD)
@@ -57,7 +57,7 @@ Brexpiprazole is also indicated for the treatment of agitation associated with d
 
 - **PubMed hits:** 89 matched, 57 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

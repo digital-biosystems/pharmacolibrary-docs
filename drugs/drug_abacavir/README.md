@@ -21,11 +21,11 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chupradit_2024](drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md) | Chupradit S et al., Population Pharmacokinetics of Pediatri…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3174](https://doi.org/10.1002/cpt.3174) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Fauchet_2014](drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md) | Fauchet F et al., Population pharmacokinetics of abacavir…, Antimicrobial agents and ch… (2014) | [10.1128/AAC.03469-14](https://doi.org/10.1128/AAC.03469-14) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ji_2024](drugs/drug_abacavir/Abacavir_Ji2024_reference.md) | Ji Y et al., Use of Pharmacokinetic and Pharmacodyna…, Clinical pharmacokinetics (2024) | [10.1007/s40262-023-01338-z](https://doi.org/10.1007/s40262-023-01338-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2015](drugs/drug_abacavir/Abacavir_Zhang2015_reference.md) | Zhang J et al., Population pharmacokinetics of dolutegr…, British journal of clinical… (2015) | [10.1111/bcp.12639](https://doi.org/10.1111/bcp.12639) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C2_center_consistency_wt failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Chandasana_2024_2](drugs/drug_abacavir/Abacavir_Chandasana2024v2_reference.md) | Chandasana H et al., Population Pharmacokinetic Modeling of…, Infectious diseases and the… (2024) | [10.1007/s40121-024-01008-y](https://doi.org/10.1007/s40121-024-01008-y) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Chupradit_2024](drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md) | Chupradit S et al., Population Pharmacokinetics of Pediatri…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3174](https://doi.org/10.1002/cpt.3174) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Fauchet_2014](drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md) | Fauchet F et al., Population pharmacokinetics of abacavir…, Antimicrobial agents and ch… (2014) | [10.1128/AAC.03469-14](https://doi.org/10.1128/AAC.03469-14) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ji_2024](drugs/drug_abacavir/Abacavir_Ji2024_reference.md) | Ji Y et al., Use of Pharmacokinetic and Pharmacodyna…, Clinical pharmacokinetics (2024) | [10.1007/s40262-023-01338-z](https://doi.org/10.1007/s40262-023-01338-z) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zhang_2015](drugs/drug_abacavir/Abacavir_Zhang2015_reference.md) | Zhang J et al., Population pharmacokinetics of dolutegr…, British journal of clinical… (2015) | [10.1111/bcp.12639](https://doi.org/10.1111/bcp.12639) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Zhao_2013](drugs/drug_abacavir/Abacavir_Zhao2013_reference.md) | Zhao W et al., Population pharmacokinetics of abacavir…, British journal of clinical… (2013) | [10.1111/bcp.12024](https://doi.org/10.1111/bcp.12024) |
 
 ## Pharmacodynamics (PD)
@@ -89,7 +89,7 @@
 
 - **PubMed hits:** 2203 matched, 100 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 6  ·  extracted 4  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 6  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

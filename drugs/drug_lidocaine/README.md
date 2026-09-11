@@ -23,8 +23,8 @@ Regardless, lidocaine is currently available as a relatively non-expensive gener
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bursi_2017](drugs/drug_lidocaine/Lidocaine_Bursi2017_reference.md) | Bursi R et al., Evaluation of the Population Pharmacoki…, European journal of drug me… (2017) | [10.1007/s13318-017-0400-7](https://doi.org/10.1007/s13318-017-0400-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Reichel_1998](drugs/drug_lidocaine/Lidocaine_Reichel1998_reference.md) | Reichel C et al., The lignocaine metabolite (MEGX) liver…, British journal of clinical… (1998) | [10.1046/j.1365-2125.1998.00829.x](https://doi.org/10.1046/j.1365-2125.1998.00829.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Bursi_2017](drugs/drug_lidocaine/Lidocaine_Bursi2017_reference.md) | Bursi R et al., Evaluation of the Population Pharmacoki…, European journal of drug me… (2017) | [10.1007/s13318-017-0400-7](https://doi.org/10.1007/s13318-017-0400-7) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Reichel_1998](drugs/drug_lidocaine/Lidocaine_Reichel1998_reference.md) | Reichel C et al., The lignocaine metabolite (MEGX) liver…, British journal of clinical… (1998) | [10.1046/j.1365-2125.1998.00829.x](https://doi.org/10.1046/j.1365-2125.1998.00829.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [He_2025](drugs/drug_lidocaine/Lidocaine_He2025_reference.md) | He C et al., Optimizing Lidocaine Dosing in Hepatect…, Drug design, development an… (2025) | [10.2147/DDDT.S485389](https://doi.org/10.2147/DDDT.S485389) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kim_2021](drugs/drug_lidocaine/Lidocaine_Kim2021_reference.md) | Kim JH et al., Evaluation of Lidocaine and Metabolite…, Pharmaceutics (2021) | [10.3390/pharmaceutics13020203](https://doi.org/10.3390/pharmaceutics13020203) |
 
@@ -57,7 +57,7 @@ Regardless, lidocaine is currently available as a relatively non-expensive gener
 
 - **PubMed hits:** 364 matched, 71 returned
 - **screened:** 13  ·  **relevant:** 4
-- **records:** 4  ·  extracted 2  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

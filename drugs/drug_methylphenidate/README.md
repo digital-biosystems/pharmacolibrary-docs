@@ -23,13 +23,13 @@ While its exact mechanism is unclear, methylphenidate (MPH) has been shown to ac
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Teuscher_2015](drugs/drug_methylphenidate/Methylphenidate_Teuscher2015_reference.md) | Teuscher NS et al., Population pharmacokinetics of methylph…, Drug design, development an… (2015) | [10.2147/DDDT.S83234](https://doi.org/10.2147/DDDT.S83234) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Teuscher_2015](drugs/drug_methylphenidate/Methylphenidate_Teuscher2015_reference.md) | Teuscher NS et al., Population pharmacokinetics of methylph…, Drug design, development an… (2015) | [10.2147/DDDT.S83234](https://doi.org/10.2147/DDDT.S83234) |
 
 ## Coverage
 
 - **PubMed hits:** 56 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

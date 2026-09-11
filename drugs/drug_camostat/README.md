@@ -25,8 +25,12 @@ Camostat mesylate was first approved in Japan in January 2006.[L13197]
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Kosinsky_2022](drugs/drug_camostat/Camostat_Kosinsky2022_r_s_e.md) | Kosinsky Y et al., Semi-Mechanistic Pharmacokinetic-Pharma…, Microbiology spectrum (2022) | [10.1128/spectrum.02167-21](https://doi.org/10.1128/spectrum.02167-21) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Kosinsky_2022](drugs/drug_camostat/Camostat_Kosinsky2022_value.md) | Kosinsky Y et al., Semi-Mechanistic Pharmacokinetic-Pharma…, Microbiology spectrum (2022) | [10.1128/spectrum.02167-21](https://doi.org/10.1128/spectrum.02167-21) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kosinsky_2022](drugs/drug_camostat/Camostat_Kosinsky2022_r_s_e_healthy_adults.md) | Kosinsky Y et al., Semi-Mechanistic Pharmacokinetic-Pharma…, Microbiology spectrum (2022) | [10.1128/spectrum.02167-21](https://doi.org/10.1128/spectrum.02167-21) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kosinsky_2022](drugs/drug_camostat/Camostat_Kosinsky2022_value_healthy_adults.md) | Kosinsky Y et al., Semi-Mechanistic Pharmacokinetic-Pharma…, Microbiology spectrum (2022) | [10.1128/spectrum.02167-21](https://doi.org/10.1128/spectrum.02167-21) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kim_2023](drugs/drug_camostat/Camostat_Kim2023_gba.md) | Kim G et al., Safety Evaluation and Population Pharma…, Pharmaceutics (2023) | [10.3390/pharmaceutics15092357](https://doi.org/10.3390/pharmaceutics15092357) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kim_2023](drugs/drug_camostat/Camostat_Kim2023_gba_healthy_adults.md) | Kim G et al., Safety Evaluation and Population Pharma…, Pharmaceutics (2023) | [10.3390/pharmaceutics15092357](https://doi.org/10.3390/pharmaceutics15092357) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kim_2023](drugs/drug_camostat/Camostat_Kim2023_gbpa.md) | Kim G et al., Safety Evaluation and Population Pharma…, Pharmaceutics (2023) | [10.3390/pharmaceutics15092357](https://doi.org/10.3390/pharmaceutics15092357) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kim_2023](drugs/drug_camostat/Camostat_Kim2023_gbpa_healthy_adults.md) | Kim G et al., Safety Evaluation and Population Pharma…, Pharmaceutics (2023) | [10.3390/pharmaceutics15092357](https://doi.org/10.3390/pharmaceutics15092357) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kitagawa_2021](drugs/drug_camostat/Camostat_Kitagawa2021_reference.md) | Kitagawa J et al., A phase I study of high dose camostat m…, Clinical and translational… (2021) | [10.1111/cts.13052](https://doi.org/10.1111/cts.13052) |
 
 ## Pharmacodynamics (PD)
@@ -48,7 +52,7 @@ Camostat mesylate was first approved in Japan in January 2006.[L13197]
 
 - **PubMed hits:** 15 matched, 15 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 5  ·  extracted 2  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 9  ·  extracted 2  ·  needs_review 0  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

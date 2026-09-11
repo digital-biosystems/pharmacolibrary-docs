@@ -21,14 +21,14 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Doroshyenko_2005](drugs/drug_trospium/Trospium_Doroshyenko2005_reference.md) | Doroshyenko O et al., Clinical pharmacokinetics of trospium c…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544070-00003](https://doi.org/10.2165/00003088-200544070-00003) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Oefelein_2013](drugs/drug_trospium/Trospium_Oefelein2013_reference.md) | Oefelein MG et al., Effect of concomitant administration of…, Clinical drug investigation (2013) | [10.1007/s40261-012-0049-6](https://doi.org/10.1007/s40261-012-0049-6) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Doroshyenko_2005](drugs/drug_trospium/Trospium_Doroshyenko2005_reference.md) | Doroshyenko O et al., Clinical pharmacokinetics of trospium c…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544070-00003](https://doi.org/10.2165/00003088-200544070-00003) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Oefelein_2013](drugs/drug_trospium/Trospium_Oefelein2013_reference.md) | Oefelein MG et al., Effect of concomitant administration of…, Clinical drug investigation (2013) | [10.1007/s40261-012-0049-6](https://doi.org/10.1007/s40261-012-0049-6) |
 
 ## Coverage
 
 - **PubMed hits:** 127 matched, 84 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

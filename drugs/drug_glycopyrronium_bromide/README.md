@@ -15,13 +15,13 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bartels_2013](drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_reference.md) | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Bartels_2013](drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_reference.md) | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
 
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

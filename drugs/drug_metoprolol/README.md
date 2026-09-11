@@ -25,14 +25,14 @@ All the indications of metoprolol are part of cardiovascular diseases. These con
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kir_2025](drugs/drug_metoprolol/Metoprolol_Kir2025_reference.md) | Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of drug me… (2025) | [10.1007/s13318-025-00943-6](https://doi.org/10.1007/s13318-025-00943-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Taguchi_2004](drugs/drug_metoprolol/Metoprolol_Taguchi2004_reference.md) | Taguchi M et al., Nonlinear mixed effects model analysis…, Biological & pharmaceutical… (2004) | [10.1248/bpb.27.1642](https://doi.org/10.1248/bpb.27.1642) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kir_2025](drugs/drug_metoprolol/Metoprolol_Kir2025_reference.md) | Kir F et al., Minimal Physiologically-Based Pharmacok…, European journal of drug me… (2025) | [10.1007/s13318-025-00943-6](https://doi.org/10.1007/s13318-025-00943-6) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Taguchi_2004](drugs/drug_metoprolol/Metoprolol_Taguchi2004_reference.md) | Taguchi M et al., Nonlinear mixed effects model analysis…, Biological & pharmaceutical… (2004) | [10.1248/bpb.27.1642](https://doi.org/10.1248/bpb.27.1642) |
 
 ## Coverage
 
 - **PubMed hits:** 104 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

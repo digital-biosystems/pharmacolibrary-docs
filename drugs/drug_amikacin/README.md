@@ -36,11 +36,11 @@ The use of amikacin in the treatmen
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Albanell-Fernández_2025](drugs/drug_amikacin/Amikacin_AlbanellFernndez2025_reference.md) | Albanell-Fernández M et al., A Review of Vancomycin, Gentamicin, and…, Clinical pharmacokinetics (2025) | [10.1007/s40262-024-01459-z](https://doi.org/10.1007/s40262-024-01459-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Marsot_2017](drugs/drug_amikacin/Amikacin_Marsot2017_reference.md) | Marsot A et al., Amikacin in Critically Ill Patients: A…, Clinical pharmacokinetics (2017) | [10.1007/s40262-016-0428-x](https://doi.org/10.1007/s40262-016-0428-x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Severino_2023](drugs/drug_amikacin/Amikacin_Severino2023_reference.md) | Severino N et al., Population pharmacokinetics of amikacin…, British journal of clinical… (2023) | [10.1111/bcp.15697](https://doi.org/10.1111/bcp.15697) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Sherwin_2014](drugs/drug_amikacin/Amikacin_Sherwin2014_reference.md) | Sherwin CM et al., Amikacin population pharmacokinetics am…, Burns : journal of the Inte… (2014) | [10.1016/j.burns.2013.06.015](https://doi.org/10.1016/j.burns.2013.06.015) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Alhadab_2018](drugs/drug_amikacin/Amikacin_Alhadab2018_reference.md) | Alhadab AA et al., Amikacin Pharmacokinetic-Pharmacodynami…, Antimicrobial agents and ch… (2018) | [10.1128/AAC.01781-17](https://doi.org/10.1128/AAC.01781-17) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Albanell-Fernández_2025](drugs/drug_amikacin/Amikacin_AlbanellFernndez2025_reference.md) | Albanell-Fernández M et al., A Review of Vancomycin, Gentamicin, and…, Clinical pharmacokinetics (2025) | [10.1007/s40262-024-01459-z](https://doi.org/10.1007/s40262-024-01459-z) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Marsot_2017](drugs/drug_amikacin/Amikacin_Marsot2017_reference.md) | Marsot A et al., Amikacin in Critically Ill Patients: A…, Clinical pharmacokinetics (2017) | [10.1007/s40262-016-0428-x](https://doi.org/10.1007/s40262-016-0428-x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Severino_2023](drugs/drug_amikacin/Amikacin_Severino2023_reference.md) | Severino N et al., Population pharmacokinetics of amikacin…, British journal of clinical… (2023) | [10.1111/bcp.15697](https://doi.org/10.1111/bcp.15697) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Sherwin_2014](drugs/drug_amikacin/Amikacin_Sherwin2014_reference.md) | Sherwin CM et al., Amikacin population pharmacokinetics am…, Burns : journal of the Inte… (2014) | [10.1016/j.burns.2013.06.015](https://doi.org/10.1016/j.burns.2013.06.015) |
 
 ## Pharmacodynamics (PD)
 
@@ -52,7 +52,7 @@ The use of amikacin in the treatmen
 
 - **PubMed hits:** 568 matched, 66 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 5  ·  extracted 4  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

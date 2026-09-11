@@ -1,6 +1,15 @@
 # tolvaptan — `Tolvaptan_Shoaf2012v3_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
+
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -8,12 +17,12 @@
 not matched (stem Shoaf_2012_3)
 
 ## Model component
-<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Shoaf2012v3_reference" status="needs_review" stale="false" population="" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Shoaf2012v3_reference" status="not_modelled" stale="false" population="" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|

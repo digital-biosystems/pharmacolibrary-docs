@@ -33,16 +33,22 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Aoyama_2022](drugs/drug_warfarin/Warfarin_Aoyama2022_reference.md) | Aoyama T et al., External Evaluation of a Bayesian Warfa…, Biological & pharmaceutical… (2022) | [10.1248/bpb.b21-00778](https://doi.org/10.1248/bpb.b21-00778) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Gomeni_2026](drugs/drug_warfarin/Warfarin_Gomeni2026_deep_learning.md) | Gomeni R et al., Deep-Learning- versus Hypothesis-Driven…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70174](https://doi.org/10.1002/jcph.70174) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Gomeni_2026](drugs/drug_warfarin/Warfarin_Gomeni2026_one_compartment.md) | Gomeni R et al., Deep-Learning- versus Hypothesis-Driven…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70174](https://doi.org/10.1002/jcph.70174) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gomeni_2026](drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md) | Gomeni R et al., Deep-Learning- versus Hypothesis-Driven…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70174](https://doi.org/10.1002/jcph.70174) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Hirai_2024](drugs/drug_warfarin/Warfarin_Hirai2024_estimates.md) | Hirai T et al., Kinetic-pharmacodynamic model of warfar…, British journal of clinical… (2024) | [10.1111/bcp.15967](https://doi.org/10.1111/bcp.15967) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Hirai_2024](drugs/drug_warfarin/Warfarin_Hirai2024_median.md) | Hirai T et al., Kinetic-pharmacodynamic model of warfar…, British journal of clinical… (2024) | [10.1111/bcp.15967](https://doi.org/10.1111/bcp.15967) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kwack_2026](drugs/drug_warfarin/Warfarin_Kwack2026_reference.md) | Kwack H et al., PKGPT: Expert-Orchestrated Recursive LL…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040501](https://doi.org/10.3390/pharmaceutics18040501) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Lane_2012](drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin.md) | Lane S et al., The population pharmacokinetics of R- a…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2011.04051.x](https://doi.org/10.1111/j.1365-2125.2011.04051.x) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Lane_2012](drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin.md) | Lane S et al., The population pharmacokinetics of R- a…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2011.04051.x](https://doi.org/10.1111/j.1365-2125.2011.04051.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Sridharan_2021](drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md) | Sridharan K et al., Evaluation of pharmacokinetics of warfa…, ADMET & DMPK (2021) | [10.5599/admet.909](https://doi.org/10.5599/admet.909) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Aoyama_2022](drugs/drug_warfarin/Warfarin_Aoyama2022_reference.md) | Aoyama T et al., External Evaluation of a Bayesian Warfa…, Biological & pharmaceutical… (2022) | [10.1248/bpb.b21-00778](https://doi.org/10.1248/bpb.b21-00778) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Gomeni_2026](drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md) | Gomeni R et al., Deep-Learning- versus Hypothesis-Driven…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70174](https://doi.org/10.1002/jcph.70174) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Gomeni_2026](drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md) | Gomeni R et al., Deep-Learning- versus Hypothesis-Driven…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70174](https://doi.org/10.1002/jcph.70174) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Gomeni_2026](drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md) | Gomeni R et al., Deep-Learning- versus Hypothesis-Driven…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70174](https://doi.org/10.1002/jcph.70174) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Hirai_2024](drugs/drug_warfarin/Warfarin_Hirai2024_estimates_japanese_adult_patients.md) | Hirai T et al., Kinetic-pharmacodynamic model of warfar…, British journal of clinical… (2024) | [10.1111/bcp.15967](https://doi.org/10.1111/bcp.15967) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Hirai_2024](drugs/drug_warfarin/Warfarin_Hirai2024_median_japanese_adult_patients.md) | Hirai T et al., Kinetic-pharmacodynamic model of warfar…, British journal of clinical… (2024) | [10.1111/bcp.15967](https://doi.org/10.1111/bcp.15967) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kwack_2026](drugs/drug_warfarin/Warfarin_Kwack2026_reference.md) | Kwack H et al., PKGPT: Expert-Orchestrated Recursive LL…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040501](https://doi.org/10.3390/pharmaceutics18040501) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Lane_2012](drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin_patients_on_long_term_warfarin.md) | Lane S et al., The population pharmacokinetics of R- a…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2011.04051.x](https://doi.org/10.1111/j.1365-2125.2011.04051.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Lane_2012](drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin_patients_on_long_term_warfarin.md) | Lane S et al., The population pharmacokinetics of R- a…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2011.04051.x](https://doi.org/10.1111/j.1365-2125.2011.04051.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Sridharan_2021](drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md) | Sridharan K et al., Evaluation of pharmacokinetics of warfa…, ADMET & DMPK (2021) | [10.5599/admet.909](https://doi.org/10.5599/admet.909) |
 
 ## Pharmacodynamics (PD)
 
@@ -121,7 +127,7 @@
 
 - **PubMed hits:** 4212 matched, 219 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 10  ·  extracted 10  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 16  ·  extracted 6  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

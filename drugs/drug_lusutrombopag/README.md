@@ -23,7 +23,7 @@ In September 2015, lusutrombopag received its first global approval in Japan to 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Katsube_2019](drugs/drug_lusutrombopag/Lusutrombopag_Katsube2019_reference.md) | Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Katsube_2019](drugs/drug_lusutrombopag/Lusutrombopag_Katsube2019_reference.md) | Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4) |
 
 ## Pharmacodynamics (PD)
 
@@ -35,7 +35,7 @@ In September 2015, lusutrombopag received its first global approval in Japan to 
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

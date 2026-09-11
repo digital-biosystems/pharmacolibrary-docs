@@ -1,8 +1,21 @@
 # exenatide — `Exenatide_Cirincione2017v2_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `CLint`, `Km`, `Vmax`, `Vnorm`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** a structural parameter has the wrong dimension.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -10,15 +23,17 @@
 not matched (stem Cirincione_2017_2)
 
 ## Model component
-<dbs-pgx drug="exenatide" model-id="Exenatide_Cirincione2017v2_reference" status="extracted" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="exenatide" model-id="Exenatide_Cirincione2017v2_reference" status="rejected" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| apparent clearance | `Q27` · CL/F | 9.1 | l h−1 | 2.5277777777777778e-06 | L/h | not captured | review (0.7) | Cirincione_2017_2:review | — | not captured |
-| V p (l) | `Q61` · V | 7.04 | l | 0.00704 | L | not captured | review (0.7) | Cirincione_2017_2:review | — | not captured |
+| apparent clearance | `Q27` · CL/F | —(suppressed) | l h−1 | — | L/h | not captured | review (0.7) | Cirincione_2017_2:review | — | not captured |
+| V p (l) | `Q61` · V | —(suppressed) | l | — | L | not captured | review (0.7) | Cirincione_2017_2:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -59,7 +74,7 @@ not matched (stem Cirincione_2017_2)
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_exenatide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cirincione_2017_2` / `Cirincione_2017_2::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_exenatide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cirincione_2017_2` / `Cirincione_2017_2::parameter_estimate::adults with type 2 diabetes mellitus`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

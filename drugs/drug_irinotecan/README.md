@@ -29,13 +29,13 @@ Irinotecan liposome injection is used in adults for the treatment of:
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Adiwijaya_2017](drugs/drug_irinotecan/Irinotecan_Adiwijaya2017_reference.md) | Adiwijaya BS et al., Population Pharmacokinetics of Liposoma…, Clinical pharmacology and t… (2017) | [10.1002/cpt.720](https://doi.org/10.1002/cpt.720) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Adiwijaya_2017](drugs/drug_irinotecan/Irinotecan_Adiwijaya2017_reference.md) | Adiwijaya BS et al., Population Pharmacokinetics of Liposoma…, Clinical pharmacology and t… (2017) | [10.1002/cpt.720](https://doi.org/10.1002/cpt.720) |
 
 ## Coverage
 
 - **PubMed hits:** 95 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

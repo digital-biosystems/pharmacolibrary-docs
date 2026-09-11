@@ -25,13 +25,13 @@ Intravenous indometacin is indicated to induce closure of a hemodynamically sign
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Smyth_2004_2](drugs/drug_indometacin/Indometacin_Smyth2004v2_reference.md) | Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02139.x](https://doi.org/10.1111/j.1365-2125.2004.02139.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Smyth_2004_2](drugs/drug_indometacin/Indometacin_Smyth2004v2_reference.md) | Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02139.x](https://doi.org/10.1111/j.1365-2125.2004.02139.x) |
 
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

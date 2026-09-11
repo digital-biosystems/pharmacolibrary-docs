@@ -27,8 +27,8 @@ Some off-label uses of metoclopramide include the management of radiation-induce
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ge_2020](drugs/drug_metoclopramide/Metoclopramide_Ge2020_reference.md) | Ge S et al., Population Pharmacokinetics of Metoclop…, Clinical and translational… (2020) | [10.1111/cts.12803](https://doi.org/10.1111/cts.12803) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.0171)</sub><br><sub>route_to: `human_review`</sub> | [Brandon_2024](drugs/drug_metoclopramide/Metoclopramide_Brandon2024_reference.md) | Brandon AM et al., Evaluation of pharmacokinetics of metoc…, Veterinary surgery : VS (2024) | [10.1111/vsu.14128](https://doi.org/10.1111/vsu.14128) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Ge_2020](drugs/drug_metoclopramide/Metoclopramide_Ge2020_reference.md) | Ge S et al., Population Pharmacokinetics of Metoclop…, Clinical and translational… (2020) | [10.1111/cts.12803](https://doi.org/10.1111/cts.12803) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Bateman_1978](drugs/drug_metoclopramide/Metoclopramide_Bateman1978_reference.md) | Bateman DN et al., Pharmacokinetic and concentration-effec…, British journal of clinical… (1978) | [10.1111/j.1365-2125.1978.tb04604.x](https://doi.org/10.1111/j.1365-2125.1978.tb04604.x) |
 
 ## Pharmacogenomics (PGx)
@@ -47,7 +47,7 @@ Some off-label uses of metoclopramide include the management of radiation-induce
 
 - **PubMed hits:** 158 matched, 62 returned
 - **screened:** 8  ·  **relevant:** 8
-- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

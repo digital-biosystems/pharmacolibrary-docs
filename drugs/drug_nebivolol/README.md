@@ -23,13 +23,13 @@ Nebivolol was granted FDA approval on 17 December 2007.[L7985]
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Marques_2022](drugs/drug_nebivolol/Nebivolol_Marques2022_reference.md) | Marques L et al., New Data for Nebivolol after In Silico…, Pharmaceutics (2022) | [10.3390/pharmaceutics14091911](https://doi.org/10.3390/pharmaceutics14091911) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Marques_2022](drugs/drug_nebivolol/Nebivolol_Marques2022_reference.md) | Marques L et al., New Data for Nebivolol after In Silico…, Pharmaceutics (2022) | [10.3390/pharmaceutics14091911](https://doi.org/10.3390/pharmaceutics14091911) |
 
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

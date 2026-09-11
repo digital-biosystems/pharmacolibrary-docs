@@ -1,8 +1,15 @@
 # ibuprofen — `Ibuprofen_SoriaChacartegui2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** no model exists yet, so there is nothing to judge
+
+**Steps:**
+1. No curator action. Run the engineer for this drug.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,19 +18,21 @@ Soria-Chacartegui P; Würthwein G; Zubiaur P; Almenara S; Ochoa D; Abad-Santos F
   ·  DOI: [10.1007/s13318-026-00986-3](https://doi.org/10.1007/s13318-026-00986-3)
 
 ## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_SoriaChacartegui2026_reference" status="extracted" stale="false" population="healthy European adults" measured-compound="tramadol" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_SoriaChacartegui2026_reference" status="not_modelled" stale="false" population="healthy European adults" measured-compound="tramadol" parameterization="mechanistic" topology="3C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 51.1 | L/h | 1.4194444444444445e-05 | L/h | not captured | exact (1.0) | Soria-Chacartegui_2026:discussion_prose | — | not captured |
-| Vc (L) | `Q63` · V1 | 126 | L | 0.126 | L | not captured | exact (1.0) | Soria-Chacartegui_2026:discussion_prose | — | not captured |
-| Ka (h -1 ) | `Q49` · kabs | 3.09 | h -1 | 0.0008583333333333333 | 1/h | not captured | exact (1.0) | Soria-Chacartegui_2026:discussion_prose | — | not captured |
-| Q (L/h) | `Q30` · Q | 175 | L/h | 4.8611111111111115e-05 | L/h | not captured | exact (1.0) | Soria-Chacartegui_2026:discussion_prose | — | not captured |
-| Vp (L) | `Q64` · V2 | 171 | L | 0.171 | L | not captured | exact (1.0) | Soria-Chacartegui_2026:discussion_prose | — | not captured |
-| Vd (L) | `Q61` · V | 309 | L | 0.309 | L | not captured | exact (1.0) | Soria-Chacartegui_2026:discussion_prose | — | not captured |
+| CL (L/h) | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | exact (1.0) | Soria-Chacartegui_2026:discussion_prose | — | not captured |
+| Vc (L) | `Q63` · V1 | —(suppressed) | L | — | L | not captured | exact (1.0) | Soria-Chacartegui_2026:discussion_prose | — | not captured |
+| Ka (h -1 ) | `Q49` · kabs | —(suppressed) | h -1 | — | 1/h | not captured | exact (1.0) | Soria-Chacartegui_2026:discussion_prose | — | not captured |
+| Q (L/h) | `Q30` · Q | —(suppressed) | L/h | — | L/h | not captured | exact (1.0) | Soria-Chacartegui_2026:discussion_prose | — | not captured |
+| Vp (L) | `Q64` · V2 | —(suppressed) | L | — | L | not captured | exact (1.0) | Soria-Chacartegui_2026:discussion_prose | — | not captured |
+| Vd (L) | `Q61` · V | —(suppressed) | L | — | L | not captured | exact (1.0) | Soria-Chacartegui_2026:discussion_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -70,6 +79,17 @@ Soria-Chacartegui P; Würthwein G; Zubiaur P; Almenara S; Ochoa D; Abad-Santos F
 | C9_phys_window_Q63 | pass | volume within physiological range | 126 L | not captured | not captured | ['Soria-Chacartegui_2026:discussion_prose'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 171 L | not captured | not captured | ['Soria-Chacartegui_2026:discussion_prose'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_cmax | reference | skipped | 136 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 4.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 0.81 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -77,7 +97,7 @@ Soria-Chacartegui P; Würthwein G; Zubiaur P; Almenara S; Ochoa D; Abad-Santos F
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_ibuprofen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Soria-Chacartegui_2026` / `Soria-Chacartegui_2026::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_ibuprofen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Soria-Chacartegui_2026` / `Soria-Chacartegui_2026::healthy European adults`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -1,8 +1,23 @@
 # coagulation factor IX — `CoagulationFactorIx_Preijers2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `CL`, `CL`, `CL`, `V1`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** no model exists yet, so there is nothing to judge; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
+
+**Steps:**
+1. Not a curation fix — scholar limitation.
+2. No curator action. Run the engineer for this drug.
+3. Advisory only — the base model still replicates.
+4. Check the record's covariate_definitions in _interpretv2.yaml.
+5. Re-run the engineer for this drug if the covariate curves are wanted.
+
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,36 +26,38 @@ Preijers T; van Spengler MWF; Meijer K; Fijnvandraat K; Fischer K; Leebeek FWG; 
   ·  DOI: [10.1007/s00228-021-03173-2](https://doi.org/10.1007/s00228-021-03173-2)
 
 ## Model component
-<dbs-pgx drug="coagulation factor IX" model-id="CoagulationFactorIx_Preijers2022_reference" status="extracted" stale="false" population="hemophilia B patients" measured-compound="factor IX" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="coagulation factor IX" model-id="CoagulationFactorIx_Preijers2022_reference" status="not_modelled" stale="false" population="hemophilia B patients" measured-compound="factor IX" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Clearance (CL; mLh−1) | `Q22` · CL | 4.6 | CL; mLh−1 | not captured | [cl] | not captured | exact (1.0) | Tab1:row3:col2 | — | 16.8 (None% RSE) |
-| Clearance (CL; mLh−1) | `Q22` · CL | 239 | CL; mLh−1 | not captured | [cl] | not captured | exact (1.0) | Tab1:row3:col3 | — | not captured |
-| Clearance (CL; mLh−1) | `Q22` · CL | 57 | CL; mLh−1 | not captured | [cl] | not captured | exact (1.0) | Tab1:row3:col5, Tab1:row3:col6 | — | not captured |
-| Volume of central compartment (V1; mL) | `Q63` · V1 | 4.8 | V1; mL | not captured | [v1] | not captured | llm_corrected (0.6) | Tab1:row4:col2 | — | 18.7 (None% RSE) |
-| Volume of central compartment (V1; mL) | `Q63` · V1 | 7140 | V1; mL | not captured | [v1] | not captured | llm_corrected (0.6) | Tab1:row4:col3 | — | not captured |
-| Volume of central compartment (V1; mL) | `Q63` · V1 | 6480 | V1; mL | not captured | [v1] | not captured | llm_corrected (0.6) | Tab1:row4:col5, Tab1:row4:col6 | — | not captured |
-| Distribution CL to compartment 2 (Q(2); mLh−1) | `Q99` · Q2 | 35.2 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Tab1:row5:col2 | — | not captured |
-| Distribution CL to compartment 2 (Q(2); mLh−1) | `Q99` · Q2 | 167 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Tab1:row5:col3 | — | not captured |
-| Distribution CL to compartment 2 (Q(2); mLh−1) | `Q99` · Q2 | 29 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Tab1:row5:col5, Tab1:row5:col6 | — | not captured |
-| Volume of compartment 2 (V2; mL) | `Q64` · V2 | 11.8 | V2; mL | not captured | [v2] | not captured | llm_corrected (0.6) | Tab1:row6:col2 | — | 46.1 (None% RSE) |
-| Volume of compartment 2 (V2; mL) | `Q64` · V2 | 8700 | V2; mL | not captured | [v2] | not captured | llm_corrected (0.6) | Tab1:row6:col3 | — | not captured |
-| Volume of compartment 2 (V2; mL) | `Q64` · V2 | 1580 | V2; mL | not captured | [v2] | not captured | llm_corrected (0.6) | Tab1:row6:col5, Tab1:row6:col6 | — | not captured |
-| Distribution CL to compartment 3 (Q3; mLh−1) | `Q308` · Q3 | 3930 | Q3; mLh−1 | not captured | [q3] | not captured | llm_corrected (0.6) | Tab1:row7:col3 | — | not captured |
-| Volume of compartment 3 (V3; mL) | `Q77` · V3 | 3990 | V3; mL | not captured | [v3] | not captured | llm_corrected (0.6) | Tab1:row8:col3 | — | 37.7 (None% RSE) |
-| t1/2 (h) | `Q57` · t1/2z | 94.3 | h | 339480.0 | [h] | not captured | exact (1.0) | Tab1:row29:col1 | — | not captured |
-| t1/2 (h) | `Q57` · t1/2z | 79 | h | 284400.0 | [h] | not captured | exact (1.0) | Tab1:row29:col3 | — | not captured |
-| t1/2 (h) | `Q57` · t1/2z | 108.3 | h | 389880.0 | [h] | not captured | exact (1.0) | Tab1:row29:col5 | — | not captured |
-| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | 0.436 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab1:row10:col3 | — | not captured |
-| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | 0.53 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab1:row10:col5, Tab1:row10:col6 | — | not captured |
-| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | 0.396 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab1:row11:col3 | — | not captured |
-| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | 0.79 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab1:row11:col5, Tab1:row11:col6 | — | not captured |
-| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | 0.79 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab1:row12:col5, Tab1:row12:col6 | — | not captured |
-| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 0.38 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab1:row13:col5, Tab1:row13:col6 | — | not captured |
+| Clearance (CL; mLh−1) | `Q22` · CL | —(suppressed) | CL; mLh−1 | — | [cl] | not captured | exact (1.0) | Tab1:row3:col2 | — | 16.8 (None% RSE) |
+| Clearance (CL; mLh−1) | `Q22` · CL | —(suppressed) | CL; mLh−1 | — | [cl] | not captured | exact (1.0) | Tab1:row3:col3 | — | not captured |
+| Clearance (CL; mLh−1) | `Q22` · CL | —(suppressed) | CL; mLh−1 | — | [cl] | not captured | exact (1.0) | Tab1:row3:col5, Tab1:row3:col6 | — | not captured |
+| Volume of central compartment (V1; mL) | `Q63` · V1 | —(suppressed) | V1; mL | — | [v1] | not captured | llm_corrected (0.6) | Tab1:row4:col2 | — | 18.7 (None% RSE) |
+| Volume of central compartment (V1; mL) | `Q63` · V1 | —(suppressed) | V1; mL | — | [v1] | not captured | llm_corrected (0.6) | Tab1:row4:col3 | — | not captured |
+| Volume of central compartment (V1; mL) | `Q63` · V1 | —(suppressed) | V1; mL | — | [v1] | not captured | llm_corrected (0.6) | Tab1:row4:col5, Tab1:row4:col6 | — | not captured |
+| Distribution CL to compartment 2 (Q(2); mLh−1) | `Q99` · Q2 | —(suppressed) | not captured | — | not captured | not captured | llm_corrected (0.6) | Tab1:row5:col2 | — | not captured |
+| Distribution CL to compartment 2 (Q(2); mLh−1) | `Q99` · Q2 | —(suppressed) | not captured | — | not captured | not captured | llm_corrected (0.6) | Tab1:row5:col3 | — | not captured |
+| Distribution CL to compartment 2 (Q(2); mLh−1) | `Q99` · Q2 | —(suppressed) | not captured | — | not captured | not captured | llm_corrected (0.6) | Tab1:row5:col5, Tab1:row5:col6 | — | not captured |
+| Volume of compartment 2 (V2; mL) | `Q64` · V2 | —(suppressed) | V2; mL | — | [v2] | not captured | llm_corrected (0.6) | Tab1:row6:col2 | — | 46.1 (None% RSE) |
+| Volume of compartment 2 (V2; mL) | `Q64` · V2 | —(suppressed) | V2; mL | — | [v2] | not captured | llm_corrected (0.6) | Tab1:row6:col3 | — | not captured |
+| Volume of compartment 2 (V2; mL) | `Q64` · V2 | —(suppressed) | V2; mL | — | [v2] | not captured | llm_corrected (0.6) | Tab1:row6:col5, Tab1:row6:col6 | — | not captured |
+| Distribution CL to compartment 3 (Q3; mLh−1) | `Q308` · Q3 | —(suppressed) | Q3; mLh−1 | — | [q3] | not captured | llm_corrected (0.6) | Tab1:row7:col3 | — | not captured |
+| Volume of compartment 3 (V3; mL) | `Q77` · V3 | —(suppressed) | V3; mL | — | [v3] | not captured | llm_corrected (0.6) | Tab1:row8:col3 | — | 37.7 (None% RSE) |
+| t1/2 (h) | `Q57` · t1/2z | —(suppressed) | h | — | [h] | not captured | exact (1.0) | Tab1:row29:col1 | — | not captured |
+| t1/2 (h) | `Q57` · t1/2z | —(suppressed) | h | — | [h] | not captured | exact (1.0) | Tab1:row29:col3 | — | not captured |
+| t1/2 (h) | `Q57` · t1/2z | —(suppressed) | h | — | [h] | not captured | exact (1.0) | Tab1:row29:col5 | — | not captured |
+| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Tab1:row10:col3 | — | not captured |
+| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Tab1:row10:col5, Tab1:row10:col6 | — | not captured |
+| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Tab1:row11:col3 | — | not captured |
+| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Tab1:row11:col5, Tab1:row11:col6 | — | not captured |
+| theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Tab1:row12:col5, Tab1:row12:col6 | — | not captured |
+| theta_q319_weight_power | `Q900` · theta_q319_weight_power | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Tab1:row13:col5, Tab1:row13:col6 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -161,6 +178,14 @@ Preijers T; van Spengler MWF; Meijer K; Fijnvandraat K; Fischer K; Leebeek FWG; 
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.6 | not captured | not captured | ['Tab1:row3:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
@@ -168,7 +193,7 @@ Preijers T; van Spengler MWF; Meijer K; Fijnvandraat K; Fischer K; Leebeek FWG; 
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_coagulation_factor_ix/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Preijers_2022` / `Preijers_2022::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_coagulation_factor_ix/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Preijers_2022` / `Preijers_2022::hemophilia B patients`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -2,7 +2,14 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** the reference covariate scenario does not reconstruct
+
+**Steps:**
+1. Check covariate_definitions and the reference category in _interpretv2.yaml.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -67,7 +74,7 @@ Zhang C; Chen L; Duan YY; He SM; Tian YL; Gao Y; et al. et al. (2025). Frontiers
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_olanzapine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhang_2025` / `Zhang_2025::reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_olanzapine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhang_2025` / `Zhang_2025::patients with major depressive disorder`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

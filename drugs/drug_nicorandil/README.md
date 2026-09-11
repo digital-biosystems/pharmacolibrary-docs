@@ -21,15 +21,17 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Iida_2008_2](drugs/drug_nicorandil/Nicorandil_Iida2008v2_reference.md) | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Iida_2008](drugs/drug_nicorandil/Nicorandil_Iida2008_obj.md) | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Iida_2008](drugs/drug_nicorandil/Nicorandil_Iida2008_obj_healthy_subjects_and_acute_heart_fai.md) | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Iida_2008](drugs/drug_nicorandil/Nicorandil_Iida2008_sig.md) | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Iida_2008](drugs/drug_nicorandil/Nicorandil_Iida2008_sig_healthy_subjects_and_acute_heart_fai.md) | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Iida_2008_2](drugs/drug_nicorandil/Nicorandil_Iida2008v2_reference.md) | Iida S et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x) |
 
 ## Coverage
 
 - **PubMed hits:** 34 matched, 12 returned
 - **screened:** 16  ·  **relevant:** 1
-- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

@@ -1,8 +1,20 @@
 # doxazosin — `Doxazosin_Vincent1983_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-08-02 12:24:12.592534+00:00) predates the upstream re-run (2026-08-27 08:42:07.957667+00:00). Current validate status: `rejected`.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — fulltext.** the record was built from the abstract alone, so reported summary statistics stood in for a fitted model<br><sub>evidence: `provenance.source=abstract-only`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** a parameter falls outside the physiological window.
+
+**Steps:**
+1. Not a curation fix — fulltext limitation.
+2. Confirm the value and unit against the paper before treating it as an error.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -11,7 +23,7 @@ Vincent J; Elliott HL; Meredith PA; Reid JL et al. (1983). British journal of cl
   ·  DOI: [10.1111/j.1365-2125.1983.tb01556.x](https://doi.org/10.1111/j.1365-2125.1983.tb01556.x)
 
 ## Model component
-<dbs-pgx drug="doxazosin" model-id="Doxazosin_Vincent1983_reference" status="rejected" stale="true" population="healthy normotensive volunteers" measured-compound="doxazosin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="doxazosin" model-id="Doxazosin_Vincent1983_reference" status="rejected" stale="false" population="healthy normotensive volunteers" measured-compound="doxazosin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -67,7 +79,7 @@ Vincent J; Elliott HL; Meredith PA; Reid JL et al. (1983). British journal of cl
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_doxazosin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vincent_1983` / `Vincent_1983::healthy adults`)
+- scholar stages: `../../../knowledgebase/drugs/drug_doxazosin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vincent_1983` / `Vincent_1983::healthy normotensive volunteers`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -24,14 +24,17 @@ In patients requiring preventative migraine therapy, current practice guidelines
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">None</span> | [Schlachter_2026](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_1_model.md) | Schlachter (2026) | — |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Schlachter_2026](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_1_model_healthy_participants.md) | Schlachter (2026) | — |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Schlachter_2026](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela.md) | Schlachter (2026) | — |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Schlachter_2026](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela_healthy_participants.md) | Schlachter (2026) | — |
 | <span class="pk-badge pk-badge--neutral">None</span> | [Schlachter_2026](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_3_modela.md) | Schlachter (2026) | — |
+| <span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Schlachter_2026](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_3_modela_healthy_participants.md) | Schlachter (2026) | — |
 
 ## Coverage
 
 - **PubMed hits:** 15 matched, 15 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 6  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

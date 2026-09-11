@@ -25,8 +25,8 @@ DHE is not indicated for migraine prevention or the management of hemiplegic or 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hilke_1978](drugs/drug_dihydroergotamine/Dihydroergotamine_Hilke1978_reference.md) | Hilke H et al., Dihydroergotamine: pharmacokinetics and…, Acta anaesthesiologica Scan… (1978) | [10.1111/aas.1978.22.3.215](https://doi.org/10.1111/aas.1978.22.3.215) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Schran_1985](drugs/drug_dihydroergotamine/Dihydroergotamine_Schran1985_reference.md) | Schran HF et al., Pharmacokinetics of dihydroergotamine f…, International journal of cl… (1985) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Hilke_1978](drugs/drug_dihydroergotamine/Dihydroergotamine_Hilke1978_reference.md) | Hilke H et al., Dihydroergotamine: pharmacokinetics and…, Acta anaesthesiologica Scan… (1978) | [10.1111/aas.1978.22.3.215](https://doi.org/10.1111/aas.1978.22.3.215) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Schran_1985](drugs/drug_dihydroergotamine/Dihydroergotamine_Schran1985_reference.md) | Schran HF et al., Pharmacokinetics of dihydroergotamine f…, International journal of cl… (1985) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -44,7 +44,7 @@ DHE is not indicated for migraine prevention or the management of hemiplegic or 
 
 - **PubMed hits:** 36 matched, 29 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

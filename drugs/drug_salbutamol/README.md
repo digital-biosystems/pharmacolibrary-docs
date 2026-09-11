@@ -21,7 +21,6 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Courlet_2022](drugs/drug_salbutamol/Salbutamol_Courlet2022_reference.md) | Courlet P et al., Model-based meta-analysis of salbutamol…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12773](https://doi.org/10.1002/psp4.12773) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Marques_2024](drugs/drug_salbutamol/Salbutamol_Marques2024_covariate.md) | Marques (2024) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Marques_2024](drugs/drug_salbutamol/Salbutamol_Marques2024_fold_error.md) | Marques (2024) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Marques_2024](drugs/drug_salbutamol/Salbutamol_Marques2024_observed.md) | Marques (2024) | — |
@@ -31,11 +30,25 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Walsh_2023](drugs/drug_salbutamol/Salbutamol_Walsh2023_random_effects.md) | Walsh S et al., Optimising intravenous salbutamol in ch…, Archives of disease in chil… (2023) | [10.1136/archdischild-2022-324008](https://doi.org/10.1136/archdischild-2022-324008) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Walsh_2023](drugs/drug_salbutamol/Salbutamol_Walsh2023_residual_variability.md) | Walsh S et al., Optimising intravenous salbutamol in ch…, Archives of disease in chil… (2023) | [10.1136/archdischild-2022-324008](https://doi.org/10.1136/archdischild-2022-324008) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Marques_2024](drugs/drug_salbutamol/Salbutamol_Marques2024_estimate.md) | Marques (2024) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Marques_2024](drugs/drug_salbutamol/Salbutamol_Marques2024_estimate_virtual_patients.md) | Marques (2024) | — |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.7234)</sub><br><sub>route_to: `human_review`</sub> | [Marques_2024](drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md) | Marques (2024) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.7234)</sub><br><sub>route_to: `human_review`</sub> | [Marques_2024](drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean_virtual_patients.md) | Marques (2024) | — |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Marques_2024_2](drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md) | Marques (2024) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Courlet_2022](drugs/drug_salbutamol/Salbutamol_Courlet2022_reference.md) | Courlet P et al., Model-based meta-analysis of salbutamol…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12773](https://doi.org/10.1002/psp4.12773) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Marques_2024](drugs/drug_salbutamol/Salbutamol_Marques2024_covariate_virtual_patients.md) | Marques (2024) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Marques_2024](drugs/drug_salbutamol/Salbutamol_Marques2024_fold_error_virtual_patients.md) | Marques (2024) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Marques_2024](drugs/drug_salbutamol/Salbutamol_Marques2024_observed_virtual_patients.md) | Marques (2024) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Marques_2024](drugs/drug_salbutamol/Salbutamol_Marques2024_predicted_virtual_patients.md) | Marques (2024) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Marques_2024](drugs/drug_salbutamol/Salbutamol_Marques2024_value_virtual_patients.md) | Marques (2024) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Walsh_2023](drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md) | Walsh S et al., Optimising intravenous salbutamol in ch…, Archives of disease in chil… (2023) | [10.1136/archdischild-2022-324008](https://doi.org/10.1136/archdischild-2022-324008) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Walsh_2023](drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md) | Walsh S et al., Optimising intravenous salbutamol in ch…, Archives of disease in chil… (2023) | [10.1136/archdischild-2022-324008](https://doi.org/10.1136/archdischild-2022-324008) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Walsh_2023](drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md) | Walsh S et al., Optimising intravenous salbutamol in ch…, Archives of disease in chil… (2023) | [10.1136/archdischild-2022-324008](https://doi.org/10.1136/archdischild-2022-324008) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Vet_2020](drugs/drug_salbutamol/Salbutamol_Vet2020_estimation.md) | Vet NJ et al., Population Pharmacokinetics of Intraven…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00811-y](https://doi.org/10.1007/s40262-019-00811-y) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Vet_2020](drugs/drug_salbutamol/Salbutamol_Vet2020_estimation_children_with_refractory_statu.md) | Vet NJ et al., Population Pharmacokinetics of Intraven…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00811-y](https://doi.org/10.1007/s40262-019-00811-y) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Vet_2020](drugs/drug_salbutamol/Salbutamol_Vet2020_ipv.md) | Vet NJ et al., Population Pharmacokinetics of Intraven…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00811-y](https://doi.org/10.1007/s40262-019-00811-y) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Vet_2020](drugs/drug_salbutamol/Salbutamol_Vet2020_ipv_children_with_refractory_status_asthm.md) | Vet NJ et al., Population Pharmacokinetics of Intraven…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00811-y](https://doi.org/10.1007/s40262-019-00811-y) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Vet_2020](drugs/drug_salbutamol/Salbutamol_Vet2020_shrinkage.md) | Vet NJ et al., Population Pharmacokinetics of Intraven…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00811-y](https://doi.org/10.1007/s40262-019-00811-y) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Vet_2020](drugs/drug_salbutamol/Salbutamol_Vet2020_shrinkage_children_with_refractory_status.md) | Vet NJ et al., Population Pharmacokinetics of Intraven…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00811-y](https://doi.org/10.1007/s40262-019-00811-y) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Walsh_2023](drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md) | Walsh S et al., Optimising intravenous salbutamol in ch…, Archives of disease in chil… (2023) | [10.1136/archdischild-2022-324008](https://doi.org/10.1136/archdischild-2022-324008) |
 
 ## Pharmacodynamics (PD)
@@ -71,7 +84,7 @@
 
 - **PubMed hits:** 741 matched, 56 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 16  ·  extracted 9  ·  needs_review 3  ·  rejected 4  ·  stale 0
+- **records:** 29  ·  extracted 8  ·  needs_review 5  ·  rejected 7  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

@@ -23,8 +23,11 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Lee_2019](drugs/drug_palonosetron/Palonosetron_Lee2019_reference.md) | Lee S et al., Population pharmacokinetics of palonose…, Journal of anesthesia (2019) | [10.1007/s00540-019-02641-5](https://doi.org/10.1007/s00540-019-02641-5) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026](drugs/drug_palonosetron/Palonosetron_Li2026_healthy_control.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026](drugs/drug_palonosetron/Palonosetron_Li2026_healthy_control_chinese_subjects_with_im.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026](drugs/drug_palonosetron/Palonosetron_Li2026_moderate_hepatic_impairment.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026](drugs/drug_palonosetron/Palonosetron_Li2026_moderate_hepatic_impairment_chinese_subj.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026](drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026](drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron_chinese_subjects_with_impai.md) | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
 
 ## Pharmacodynamics (PD)
 
@@ -50,7 +53,7 @@
 
 - **PubMed hits:** 46 matched, 41 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 0
+- **records:** 7  ·  extracted 0  ·  needs_review 0  ·  rejected 7  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

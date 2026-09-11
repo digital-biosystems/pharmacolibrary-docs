@@ -33,15 +33,17 @@ Prescribing of statin medications is considered standard practice following any 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chen_2025](drugs/drug_atorvastatin/Atorvastatin_Chen2025_reference.md) | Chen X et al., Drug-Drug Interactions and Initial Dosa…, Drug design, development an… (2025) | [10.2147/dddt.s538856](https://doi.org/10.2147/dddt.s538856) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jadhav_2023](drugs/drug_atorvastatin/Atorvastatin_Jadhav2023_reference.md) | Jadhav SB et al., Population pharmacokinetic and pharmaco…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09864-w](https://doi.org/10.1007/s10928-023-09864-w) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Langeskov_2022](drugs/drug_atorvastatin/Atorvastatin_Langeskov2022_reference.md) | Langeskov EK et al., Population pharmacokinetic of paracetam…, Pharmacology research & per… (2022) | [10.1002/prp2.962](https://doi.org/10.1002/prp2.962) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Malekinejad_2014](drugs/drug_atorvastatin/Atorvastatin_Malekinejad2014_reference.md) | Malekinejad H et al., Effects of silymarin on the pharmacokin…, European journal of drug me… (2014) | [10.1007/s13318-013-0166-5](https://doi.org/10.1007/s13318-013-0166-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Morath_2025](drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference.md) | Morath B et al., Effect of Amiodarone on Apixaban Exposu…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01534-z](https://doi.org/10.1007/s40262-025-01534-z) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Stillemans_2022](drugs/drug_atorvastatin/Atorvastatin_Stillemans2022_shrinkage.md) | Stillemans G et al., Atorvastatin population pharmacokinetic…, Clinical and translational… (2022) | [10.1111/cts.13185](https://doi.org/10.1111/cts.13185) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wen_2023](drugs/drug_atorvastatin/Atorvastatin_Wen2023_reference.md) | Wen YF et al., Population pharmacokinetics, pharmacody…, British journal of clinical… (2023) | [10.1111/bcp.15792](https://doi.org/10.1111/bcp.15792) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Park_2017](drugs/drug_atorvastatin/Atorvastatin_Park2017_reference.md) | Park J et al., Pharmacokinetic drug interaction betwee…, Translational and clinical… (2017) | [10.12793/tcp.2017.25.4.202](https://doi.org/10.12793/tcp.2017.25.4.202) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Chen_2025](drugs/drug_atorvastatin/Atorvastatin_Chen2025_reference.md) | Chen X et al., Drug-Drug Interactions and Initial Dosa…, Drug design, development an… (2025) | [10.2147/dddt.s538856](https://doi.org/10.2147/dddt.s538856) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Jadhav_2023](drugs/drug_atorvastatin/Atorvastatin_Jadhav2023_reference.md) | Jadhav SB et al., Population pharmacokinetic and pharmaco…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09864-w](https://doi.org/10.1007/s10928-023-09864-w) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Langeskov_2022](drugs/drug_atorvastatin/Atorvastatin_Langeskov2022_reference.md) | Langeskov EK et al., Population pharmacokinetic of paracetam…, Pharmacology research & per… (2022) | [10.1002/prp2.962](https://doi.org/10.1002/prp2.962) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Malekinejad_2014](drugs/drug_atorvastatin/Atorvastatin_Malekinejad2014_reference.md) | Malekinejad H et al., Effects of silymarin on the pharmacokin…, European journal of drug me… (2014) | [10.1007/s13318-013-0166-5](https://doi.org/10.1007/s13318-013-0166-5) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Morath_2025](drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference.md) | Morath B et al., Effect of Amiodarone on Apixaban Exposu…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01534-z](https://doi.org/10.1007/s40262-025-01534-z) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Stillemans_2022](drugs/drug_atorvastatin/Atorvastatin_Stillemans2022_shrinkage_ambulatory_patients_at.md) | Stillemans G et al., Atorvastatin population pharmacokinetic…, Clinical and translational… (2022) | [10.1111/cts.13185](https://doi.org/10.1111/cts.13185) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Wen_2023](drugs/drug_atorvastatin/Atorvastatin_Wen2023_reference.md) | Wen YF et al., Population pharmacokinetics, pharmacody…, British journal of clinical… (2023) | [10.1111/bcp.15792](https://doi.org/10.1111/bcp.15792) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Stillemans_2022](drugs/drug_atorvastatin/Atorvastatin_Stillemans2022_estimate.md) | Stillemans G et al., Atorvastatin population pharmacokinetic…, Clinical and translational… (2022) | [10.1111/cts.13185](https://doi.org/10.1111/cts.13185) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Stillemans_2022](drugs/drug_atorvastatin/Atorvastatin_Stillemans2022_estimate_ambulatory_patients_at.md) | Stillemans G et al., Atorvastatin population pharmacokinetic…, Clinical and translational… (2022) | [10.1111/cts.13185](https://doi.org/10.1111/cts.13185) |
 
 ## Pharmacodynamics (PD)
 
@@ -106,7 +108,7 @@ Prescribing of statin medications is considered standard practice following any 
 
 - **PubMed hits:** 1577 matched, 90 returned
 - **screened:** 10  ·  **relevant:** 9
-- **records:** 9  ·  extracted 7  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 11  ·  extracted 1  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

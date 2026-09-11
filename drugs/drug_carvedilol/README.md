@@ -23,8 +23,8 @@ Carvedilol was granted FDA approval on 14 September 1995.[L7889]
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Nikolic_2013](drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md) | Nikolic VN et al., Population pharmacokinetics of carvedil…, Journal of pharmaceutical s… (2013) | [10.1002/jps.23626](https://doi.org/10.1002/jps.23626) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Saito_2010](drugs/drug_carvedilol/Carvedilol_Saito2010_reference.md) | Saito M et al., Population pharmacokinetics of R- and S…, Biological & pharmaceutical… (2010) | [10.1248/bpb.33.1378](https://doi.org/10.1248/bpb.33.1378) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Nikolic_2013](drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md) | Nikolic VN et al., Population pharmacokinetics of carvedil…, Journal of pharmaceutical s… (2013) | [10.1002/jps.23626](https://doi.org/10.1002/jps.23626) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Saito_2010](drugs/drug_carvedilol/Carvedilol_Saito2010_reference.md) | Saito M et al., Population pharmacokinetics of R- and S…, Biological & pharmaceutical… (2010) | [10.1248/bpb.33.1378](https://doi.org/10.1248/bpb.33.1378) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Albers_2008](drugs/drug_carvedilol/Carvedilol_Albers2008_reference.md) | Albers S et al., Population pharmacokinetics and dose si…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2007.03046.x](https://doi.org/10.1111/j.1365-2125.2007.03046.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hwang_2023](drugs/drug_carvedilol/Carvedilol_Hwang2023_reference.md) | Hwang S et al., Population Pharmacokinetic-Pharmacodyna…, Journal of Korean medical s… (2023) | [10.3346/jkms.2023.38.e173](https://doi.org/10.3346/jkms.2023.38.e173) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Nardotto_2017](drugs/drug_carvedilol/Carvedilol_Nardotto2017_reference.md) | Nardotto GHB et al., Population pharmacokinetics of carvedil…, European journal of pharmac… (2017) | [10.1016/j.ejps.2017.05.033](https://doi.org/10.1016/j.ejps.2017.05.033) |
@@ -70,7 +70,7 @@ Carvedilol was granted FDA approval on 14 September 1995.[L7889]
 
 - **PubMed hits:** 376 matched, 80 returned
 - **screened:** 7  ·  **relevant:** 7
-- **records:** 7  ·  extracted 2  ·  needs_review 0  ·  rejected 5  ·  stale 0
+- **records:** 7  ·  extracted 0  ·  needs_review 0  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
