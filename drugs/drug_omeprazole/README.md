@@ -35,7 +35,7 @@ year of age and older
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-26 22:50 | 1:21:49 | 15/1/1 | 2/7/0 | 2/0/8 | 1,852,617/107,836 | ollama / qwen3.8:27b-mtp-q8_0 | 77 | 27/50 | 67/10 | 0 |
+| 2026-09-10 20:23 | 42:21 | 15/1/1 | 2/7/0 | 2/0/8 | 199,433/113,176 | ollama / qwen3.8:27b-mtp-q8_0 | 77 | 27/50 | 67/10 | 0 |
 
 ## popPK records
 
@@ -100,7 +100,7 @@ year of age and older
 ## Coverage
 
 - **PubMed hits:** 2320 matched, 220 returned
-- **screened:** 4  ·  **relevant:** 3
+- **screened:** 38  ·  **relevant:** 3
 - **records:** 17  ·  extracted 15  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 

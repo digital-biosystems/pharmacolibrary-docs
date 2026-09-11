@@ -156,9 +156,11 @@ Czock D; Keller F et al. (2022). Clinical pharmacokinetics 61
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_eskd/Roxadustat_Czock2022_eskd_modelica.zip" download>Roxadustat_Czock2022_eskd_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_eskd/Roxadustat_Czock2022_eskd_fmi.zip" download>Roxadustat_Czock2022_eskd_fmi.zip</a> <span class="pk-size">(1.2 MB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_eskd/Roxadustat_Czock2022_eskd_fmi.zip" download>Roxadustat_Czock2022_eskd_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_eskd/Roxadustat_Czock2022_eskd_matlab.zip" download>Roxadustat_Czock2022_eskd_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_eskd/Roxadustat_Czock2022_eskd_matlab_simbio.zip" download>Roxadustat_Czock2022_eskd_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_eskd/Roxadustat_Czock2022_eskd_sbml.zip" download>Roxadustat_Czock2022_eskd_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>

@@ -1,6 +1,6 @@
 # pantoprazole — `Pantoprazole_Grafeneder2024_hdp`
 
-> ## <span class="pk-badge pk-badge--neutral">None</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 > ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
 
@@ -13,12 +13,12 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
   ·  DOI: [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029)
 
 ## Model component
-<dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Grafeneder2024_hdp" status="" stale="false" population="hemodialysis patients and healthy volunteers" measured-compound="clopidogrel active metabolite" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Grafeneder2024_hdp" status="needs_review" stale="false" population="hemodialysis patients and healthy volunteers" measured-compound="clopidogrel active metabolite" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not captured`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -28,6 +28,8 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
 | t1/2 [min] | `Q57` · t1/2z | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Grafeneder_2024_table_3:row13:col7 | — | not captured |
 | Clearance [ml/min] | `Q22` · CL | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Grafeneder_2024_table_3:row14:col7 | — | not captured |
 | VD [ml] | `Q61` · V | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Grafeneder_2024_table_3:row15:col7 | — | not captured |
+| first-order absorption rate constants (K a ) ... for OS | `Q49` · kabs | —(suppressed) | h -1 | — | 1/h | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
+| lag time ... for the DRT formulation | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -46,6 +48,10 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
 - dropped unlinked row (NIL): '0 min [%]' — extend the ontology if this is a real PK parameter (source ['Grafeneder_2024_table_3:row19:col7'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clopidogrel active metabolite
 - population split: 'hdp' subgroup of Grafeneder_2024 (paper reports 4 populations: hdp, hdp n = 17, hv, hv n = 16)
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from McCann_2023's review values (primary lacked it)
+- gap-filled Q83 (tlag) from McCann_2023's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell Grafeneder_2024_table_3:row3:col1 = '1.9 (1.1–2.1)'
@@ -123,7 +129,21 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
 
 ## Validation
 
-_No comparable checks._
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['McCann_2023:review'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['McCann_2023:review'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 790.0 | not captured | not captured | ['Grafeneder_2024_table_3:row14:col7'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+
+<details class="legend">
+<summary>Check legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+</details>
 
 ## Raw artifacts
 

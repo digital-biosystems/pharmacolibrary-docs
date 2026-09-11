@@ -25,6 +25,8 @@ Pettersen G; Mouksassi MS; Théorêt Y; Labbé L; Faure C; Nguyen B; et al. et a
 | theta_q314_age | `Q900` · theta_q314_age | 0.320 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row17:col1, tab_1:row17:col2 | — | not captured |
 | theta_q312_cyp2c19 | `Q900` · theta_q312_cyp2c19 | 0.342 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row18:col1, tab_1:row18:col2 | — | not captured |
 | theta_q312_hepatic | `Q900` · theta_q312_hepatic | 0.501 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row19:col1, tab_1:row19:col2 | — | not captured |
+| first-order absorption rate constants (K a ) ... for OS | `Q49` · kabs | 0.325 | h -1 | 9.027777777777779e-05 | 1/h | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
+| lag time ... for the DRT formulation | `Q83` · tlag | 2.5 | h | 9000.0 | h | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -32,6 +34,9 @@ Pettersen G; Mouksassi MS; Théorêt Y; Labbé L; Faure C; Nguyen B; et al. et a
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['F']
 
 **Interpretation flags:**
 - column 'parameter' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
@@ -53,6 +58,8 @@ Pettersen G; Mouksassi MS; Théorêt Y; Labbé L; Faure C; Nguyen B; et al. et a
 - covariate effect for Q312 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q312 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pantoprazole
+- gap-filled Q49 (kabs) from McCann_2023's review values (primary lacked it)
+- gap-filled Q83 (tlag) from McCann_2023's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell tab_1:row3:col3 = '3.88, 6.90'
@@ -76,13 +83,15 @@ Pettersen G; Mouksassi MS; Théorêt Y; Labbé L; Faure C; Nguyen B; et al. et a
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | pass | 2.0 | 2.123 | 1.0615 | 0.25 | reported t½β |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row5:col1', 'tab_1:row5:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['McCann_2023:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row4:col1', 'tab_1:row4:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['McCann_2023:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.08 | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 5.08 L/h | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2'] |
@@ -103,15 +112,17 @@ Pettersen G; Mouksassi MS; Théorêt Y; Labbé L; Faure C; Nguyen B; et al. et a
 
 ## Downloadable models
 
-No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
+Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
+
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_2C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_modelica.zip" download>Pantoprazole_Pettersen2009_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_fmi.zip" download>Pantoprazole_Pettersen2009_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_matlab.zip" download>Pantoprazole_Pettersen2009_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_matlab_simbio.zip" download>Pantoprazole_Pettersen2009_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_sbml.zip" download>Pantoprazole_Pettersen2009_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_cellml.zip" download>Pantoprazole_Pettersen2009_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

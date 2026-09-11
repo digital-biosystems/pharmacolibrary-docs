@@ -95,9 +95,11 @@ Farrell C; Hayes SC; Wire M; Zhang J et al. (2014). British journal of clinical 
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_2C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference/Eltrombopag_Farrell2014_reference_modelica.zip" download>Eltrombopag_Farrell2014_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference/Eltrombopag_Farrell2014_reference_fmi.zip" download>Eltrombopag_Farrell2014_reference_fmi.zip</a> <span class="pk-size">(1.2 MB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference/Eltrombopag_Farrell2014_reference_fmi.zip" download>Eltrombopag_Farrell2014_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference/Eltrombopag_Farrell2014_reference_matlab.zip" download>Eltrombopag_Farrell2014_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference/Eltrombopag_Farrell2014_reference_matlab_simbio.zip" download>Eltrombopag_Farrell2014_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference/Eltrombopag_Farrell2014_reference_sbml.zip" download>Eltrombopag_Farrell2014_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

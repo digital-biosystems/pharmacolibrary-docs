@@ -1,6 +1,6 @@
 # pantoprazole — `Pantoprazole_Grafeneder2024_hv_n_16`
 
-> ## <span class="pk-badge pk-badge--neutral">None</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span>
 
 > ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
 
@@ -13,18 +13,20 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
   ·  DOI: [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029)
 
 ## Model component
-<dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Grafeneder2024_hv_n_16" status="" stale="false" population="hemodialysis patients and healthy volunteers" measured-compound="clopidogrel active metabolite" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Grafeneder2024_hv_n_16" status="extracted" stale="false" population="hemodialysis patients and healthy volunteers" measured-compound="clopidogrel active metabolite" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not captured`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| intermediate_metabolizer | `Q900` · intermediate_metabolizer | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | tbl2:row20:col1 | — | not captured |
-| normal_metabolizer | `Q900` · normal_metabolizer | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | tbl2:row21:col1 | — | not captured |
-| rapid_metabolizer | `Q900` · rapid_metabolizer | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | tbl2:row22:col1 | — | not captured |
+| intermediate_metabolizer | `Q900` · intermediate_metabolizer | 7 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl2:row20:col1 | — | not captured |
+| normal_metabolizer | `Q900` · normal_metabolizer | 8 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl2:row21:col1 | — | not captured |
+| rapid_metabolizer | `Q900` · rapid_metabolizer | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl2:row22:col1 | — | not captured |
+| clearance | `Q22` · CL | 6.5 | L/h | 1.8055555555555557e-06 | L/h | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
+| volume of distribution | `Q61` · V | 226.0 | L | 0.226 | L | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
+| first-order absorption rate constants (K a ) ... for OS | `Q49` · kabs | 0.325 | h -1 | 9.027777777777779e-05 | 1/h | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
+| lag time ... for the DRT formulation | `Q83` · tlag | 2.5 | h | 9000.0 | h | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -40,6 +42,12 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
 - covariate level 'Rapid metabolizer' → Q900:rapid_metabolizer = 1 (linear_fractional on the model)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clopidogrel active metabolite
 - population split: 'hv n = 16' subgroup of Grafeneder_2024 (paper reports 4 populations: hdp, hdp n = 17, hv, hv n = 16)
+- gap-filled Q22 (CL) from McCann_2023's review values (primary lacked it)
+- gap-filled Q61 (V) from McCann_2023's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from McCann_2023's review values (primary lacked it)
+- gap-filled Q83 (tlag) from McCann_2023's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell Grafeneder_2024_table_3:row3:col1 = '1.9 (1.1–2.1)'
@@ -117,7 +125,25 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
 
 ## Validation
 
-_No comparable checks._
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['McCann_2023:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['McCann_2023:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['McCann_2023:review'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['McCann_2023:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.5 | not captured | not captured | ['McCann_2023:review'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 6.5 L/h | not captured | not captured | ['McCann_2023:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 226 L | not captured | not captured | ['McCann_2023:review'] |
+
+<details class="legend">
+<summary>Check legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+</details>
 
 ## Raw artifacts
 
@@ -128,15 +154,15 @@ _No comparable checks._
 
 ## Downloadable models
 
-No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
+Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv_n_16/Pantoprazole_Grafeneder2024_hv_n_16_matlab.zip" download>Pantoprazole_Grafeneder2024_hv_n_16_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv_n_16/Pantoprazole_Grafeneder2024_hv_n_16_matlab_simbio.zip" download>Pantoprazole_Grafeneder2024_hv_n_16_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv_n_16/Pantoprazole_Grafeneder2024_hv_n_16_sbml.zip" download>Pantoprazole_Grafeneder2024_hv_n_16_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv_n_16/Pantoprazole_Grafeneder2024_hv_n_16_cellml.zip" download>Pantoprazole_Grafeneder2024_hv_n_16_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

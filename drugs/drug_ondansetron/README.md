@@ -36,7 +36,7 @@ ii) clinical experience in the use of ondansetron in the prevention and treatmen
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 2/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 20 | 6/0 | 8/0 | 0 |
+| 2026-09-11 03:18 | 20:04 | 2/0/0 | 0/0/0 | 0/0/0 | 126,962/50,508 | ollama / qwen3.8:27b-mtp-q8_0 | 20 | 18/0 | 8/0 | 0 |
 
 ## popPK records
 
@@ -44,12 +44,14 @@ ii) clinical experience in the use of ondansetron in the prevention and treatmen
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Chiang_2021_2](drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md) | Chiang MD et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2021) | [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [de_1998](drugs/drug_ondansetron/Ondansetron_de1998_reference.md) | de Alwis DP et al., Population pharmacokinetics of ondanset…, British journal of clinical… (1998) | [10.1046/j.1365-2125.1998.00756.x](https://doi.org/10.1046/j.1365-2125.1998.00756.x) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Chiang_2021](drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md) | Chiang MD et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2021) | [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412) |
+| <span class="pk-badge pk-badge--neutral">None</span> | [Chiang_2021](drugs/drug_ondansetron/Ondansetron_Chiang2021_shrinkage.md) | Chiang MD et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2021) | [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412) |
 
 ## Coverage
 
 - **PubMed hits:** 79 matched, 20 returned
-- **screened:** 4  ·  **relevant:** 4
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 18  ·  **relevant:** 4
+- **records:** 4  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

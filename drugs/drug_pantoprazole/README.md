@@ -43,24 +43,28 @@ Indicated for the long-term treatment of the above conditions.[F3202]
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 1/1/0 | 0/0/0 | 0/0/0 | not captured | not captured | 19 | 3/4 | 7/0 | 0 |
+| 2026-09-10 20:15 | 13:57 | 8/0/2 | 0/0/0 | 0/0/0 | 248,293/30,717 | ollama / qwen3.8:27b-mtp-q8_0 | 19 | 3/4 | 7/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Grafeneder_2024](drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hdp_n_17.md) | Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney international reports (2024) | [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Grafeneder_2024](drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv.md) | Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney international reports (2024) | [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Grafeneder_2024](drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv_n_16.md) | Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney international reports (2024) | [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Knebel_2011](drugs/drug_pantoprazole/Pantoprazole_Knebel2011_reference.md) | Knebel W et al., Population pharmacokinetic modeling of…, Journal of clinical pharmac… (2011) | [10.1177/0091270010366146](https://doi.org/10.1177/0091270010366146) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [McCann_2023](drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference.md) | McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01254-2](https://doi.org/10.1007/s40262-023-01254-2) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Olivarez_2020](drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference.md) | Olivarez JD et al., Pharmacokinetics and Tissue Levels of P…, Frontiers in veterinary sci… (2020) | [10.3389/fvets.2020.580735](https://doi.org/10.3389/fvets.2020.580735) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Pettersen_2009](drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference.md) | Pettersen G et al., Population pharmacokinetics of intraven…, British journal of clinical… (2009) | [10.1111/j.1365-2125.2008.03328.x](https://doi.org/10.1111/j.1365-2125.2008.03328.x) |
-| <span class="pk-badge pk-badge--neutral">None</span> | [Grafeneder_2024](drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hdp.md) | Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney international reports (2024) | [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029) |
-| <span class="pk-badge pk-badge--neutral">None</span> | [Grafeneder_2024](drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hdp_n_17.md) | Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney international reports (2024) | [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029) |
-| <span class="pk-badge pk-badge--neutral">None</span> | [Grafeneder_2024](drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv.md) | Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney international reports (2024) | [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029) |
-| <span class="pk-badge pk-badge--neutral">None</span> | [Grafeneder_2024](drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv_n_16.md) | Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney international reports (2024) | [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Knebel_2011](drugs/drug_pantoprazole/Pantoprazole_Knebel2011_reference.md) | Knebel W et al., Population pharmacokinetic modeling of…, Journal of clinical pharmac… (2011) | [10.1177/0091270010366146](https://doi.org/10.1177/0091270010366146) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Smith_2021_2](drugs/drug_pantoprazole/Pantoprazole_Smith2021v2_reference.md) | Smith JS et al., Pharmacokinetics of Pantoprazole and Pa…, Frontiers in veterinary sci… (2021) | [10.3389/fvets.2021.744813](https://doi.org/10.3389/fvets.2021.744813) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Grafeneder_2024](drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hdp.md) | Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney international reports (2024) | [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Olivarez_2022_2](drugs/drug_pantoprazole/Pantoprazole_Olivarez2022v2_reference.md) | Olivarez JD et al., Pharmacokinetic and pharmacodynamic pro…, Frontiers in veterinary sci… (2022) | [10.3389/fvets.2022.1101461](https://doi.org/10.3389/fvets.2022.1101461) |
 
 ## Coverage
 
 - **PubMed hits:** 28 matched, 15 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 6  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 10  ·  extracted 8  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -83,9 +87,11 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Ferron_2001 | irrelevant | 2 | 0 | The study focuses on pharmacodynamic modeling of acid secretion and only reports half-life without associated volume or clearance parameters, lacking quantitative disposition data. |
 | popPK | Katashima_1998 | irrelevant | 2 | 0 | The study reports PK/PD parameters (enzyme kinetics, potency, effect half-life) rather than standard disposition parameters (CL, V, ka) for pantoprazole. |
 | popPK | Kirchheiner_2009_2 | irrelevant | 1 | 0 | The paper is a pharmacodynamic meta-analysis reporting dose-response parameters (ED50, Emax) for gastric pH, not population-pharmacokinetic disposition parameters (CL, V, ka). |
+| PD | Knebel_2011 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for pantoprazole, including covariate effects on clearance, but does not report any pharmacodynamic (PD) or exposure-response relationship. |
 | popPK | Litalien_2005 | irrelevant | 2 | 0 | The paper is a narrative review summarizing general PK characteristics of PPIs in children without reporting specific quantitative parameter values (CL, V, ka) for pantoprazole. |
 | popPK | McCann_2023 | irrelevant | 0 | 0 | The study focuses on posaconazole pharmacokinetics, with pantoprazole serving only as a co-administered covariate affecting bioavailability, not as the subject drug. |
 | popPK | Prinz_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of gastrin effects on ECL cells where pantoprazole is only used as a negative control and no pharmacokinetic parameters are reported. |
+| PD | Prinz_1994 | not_relevant | 0 | 0 | The study reports that pantoprazole did not affect BrdU incorporation in isolated ECL cells, providing no numeric PD parameters or exposure-response relationship for the drug. |
 | popPK | Simon_2015 | irrelevant | 1 | 0 | The study focuses on clopidogrel pharmacokinetics and pharmacodynamics, with pantoprazole serving only as a co-administered comparator agent rather than the subject drug. |
 
 ---

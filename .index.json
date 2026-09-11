@@ -288,6 +288,28 @@
   "slug": "acetylsalicylic_acid",
   "stale": 0
  },
+ "drug_acotiamide": {
+  "atc_codes": [
+   "A03FA10"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_acotiamide",
+  "extracted": 0,
+  "last_change": null,
+  "name": "acotiamide",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "acotiamide",
+  "stale": 0
+ },
  "drug_ajmaline": {
   "atc_codes": [
    "C01BA05"
@@ -465,6 +487,28 @@
   "slug": "alginic_acid",
   "stale": 0
  },
+ "drug_alizapride": {
+  "atc_codes": [
+   "A03FA05"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_alizapride",
+  "extracted": 0,
+  "last_change": null,
+  "name": "alizapride",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "alizapride",
+  "stale": 0
+ },
  "drug_allopurinol": {
   "atc_codes": [
    "M04AA01"
@@ -582,6 +626,28 @@
   "slug": "almotriptan",
   "stale": 0
  },
+ "drug_alosetron": {
+  "atc_codes": [
+   "A03AE01"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_alosetron",
+  "extracted": 0,
+  "last_change": null,
+  "name": "alosetron",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "alosetron",
+  "stale": 0
+ },
  "drug_alteplase": {
   "atc_codes": [
    "B01AD02",
@@ -647,6 +713,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "aluminium_phosphate",
+  "stale": 0
+ },
+ "drug_alvimopan": {
+  "atc_codes": [
+   "A06AH02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_alvimopan",
+  "extracted": 0,
+  "last_change": null,
+  "name": "alvimopan",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "alvimopan",
   "stale": 0
  },
  "drug_amezinium_metilsulfate": {
@@ -1453,6 +1541,37 @@
   "slug": "apixaban",
   "stale": 0
  },
+ "drug_aprepitant": {
+  "atc_codes": [
+   "A04AD12"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Nijstad_2023 \u00b7 reference",
+    "model_id": "Aprepitant_Nijstad2023_reference"
+   },
+   {
+    "label": "Nakade_2008 \u00b7 reference",
+    "model_id": "Aprepitant_Nakade2008_reference"
+   }
+  ],
+  "dir": "drug_aprepitant",
+  "extracted": 1,
+  "last_change": "2026-09-11T02:12:23.914258+00:00",
+  "name": "aprepitant",
+  "needs_review": 0,
+  "records": 2,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "aprepitant",
+  "stale": 0
+ },
  "drug_aprindine": {
   "atc_codes": [
    "C01BB04"
@@ -1614,6 +1733,33 @@
   "rejected": 1,
   "rendered": true,
   "slug": "arginine",
+  "stale": 0
+ },
+ "drug_arginine_glutamate": {
+  "atc_codes": [
+   "A05BA01"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Wang_2018 \u00b7 reference",
+    "model_id": "ArginineGlutamate_Wang2018_reference"
+   }
+  ],
+  "dir": "drug_arginine_glutamate",
+  "extracted": 0,
+  "last_change": "2026-09-11T04:23:45.660979+00:00",
+  "name": "arginine glutamate",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "arginine_glutamate",
   "stale": 0
  },
  "drug_arginine_hydrochloride": {
@@ -1939,6 +2085,56 @@
   "rejected": 1,
   "rendered": true,
   "slug": "atorvastatin",
+  "stale": 0
+ },
+ "drug_atropine": {
+  "atc_codes": [
+   "A03BA01",
+   "A03CB03",
+   "S01FA01",
+   "V03AB54"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Str\u00f6m_2021 \u00b7 2_50",
+    "model_id": "Atropine_Strm2021_2_50"
+   },
+   {
+    "label": "Str\u00f6m_2021 \u00b7 97_50",
+    "model_id": "Atropine_Strm2021_97_50"
+   },
+   {
+    "label": "Str\u00f6m_2021 \u00b7 median",
+    "model_id": "Atropine_Strm2021_median"
+   },
+   {
+    "label": "Ekstrand_2022 \u00b7 reference",
+    "model_id": "Atropine_Ekstrand2022_reference"
+   },
+   {
+    "label": "Hinderling_1985 \u00b7 reference",
+    "model_id": "Atropine_Hinderling1985_reference"
+   },
+   {
+    "label": "Parrot_2024 \u00b7 reference",
+    "model_id": "Atropine_Parrot2024_reference"
+   }
+  ],
+  "dir": "drug_atropine",
+  "extracted": 0,
+  "last_change": "2026-09-11T00:22:17.368039+00:00",
+  "name": "atropine",
+  "needs_review": 0,
+  "records": 6,
+  "rejected": 3,
+  "rendered": true,
+  "slug": "atropine",
   "stale": 0
  },
  "drug_avatrombopag": {
@@ -2287,6 +2483,29 @@
   "slug": "betaxolol",
   "stale": 0
  },
+ "drug_bisacodyl": {
+  "atc_codes": [
+   "A06AB02",
+   "A06AG02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_bisacodyl",
+  "extracted": 0,
+  "last_change": null,
+  "name": "bisacodyl",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "bisacodyl",
+  "stale": 0
+ },
  "drug_bismuth_subcitrate": {
   "atc_codes": [
    "A02BX05"
@@ -2403,6 +2622,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "bisoprolol",
+  "stale": 0
+ },
+ "drug_bisoxatin": {
+  "atc_codes": [
+   "A06AB09"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_bisoxatin",
+  "extracted": 0,
+  "last_change": null,
+  "name": "bisoxatin",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "bisoxatin",
   "stale": 0
  },
  "drug_bivalirudin": {
@@ -2645,6 +2886,33 @@
   "slug": "brivaracetam",
   "stale": 0
  },
+ "drug_bromopride": {
+  "atc_codes": [
+   "A03FA04"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Lachi-Silva_2020 \u00b7 reference",
+    "model_id": "Bromopride_LachiSilva2020_reference"
+   }
+  ],
+  "dir": "drug_bromopride",
+  "extracted": 0,
+  "last_change": "2026-09-11T01:33:29.819564+00:00",
+  "name": "bromopride",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "bromopride",
+  "stale": 0
+ },
  "drug_buprenorphine": {
   "atc_codes": [
    "N02AE01",
@@ -2718,6 +2986,29 @@
   "rejected": 1,
   "rendered": true,
   "slug": "butorphanol",
+  "stale": 0
+ },
+ "drug_butylscopolamine": {
+  "atc_codes": [
+   "A03BB01",
+   "A03DB04"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_butylscopolamine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "butylscopolamine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "butylscopolamine",
   "stale": 0
  },
  "drug_c1_inhibitor_plasma_derived": {
@@ -3219,6 +3510,28 @@
   "slug": "carisbamate",
   "stale": 0
  },
+ "drug_caroverine": {
+  "atc_codes": [
+   "A03AX11"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_caroverine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "caroverine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "caroverine",
+  "stale": 0
+ },
  "drug_carvedilol": {
   "atc_codes": [
    "C07AG02",
@@ -3269,6 +3582,28 @@
   "rejected": 5,
   "rendered": true,
   "slug": "carvedilol",
+  "stale": 0
+ },
+ "drug_casopitant": {
+  "atc_codes": [
+   "A04AD13"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_casopitant",
+  "extracted": 0,
+  "last_change": null,
+  "name": "casopitant",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "casopitant",
   "stale": 0
  },
  "drug_catridecacog": {
@@ -3401,6 +3736,28 @@
   "slug": "cetylpyridinium",
   "stale": 0
  },
+ "drug_chenodeoxycholic_acid": {
+  "atc_codes": [
+   "A05AA01"
+  ],
+  "counts": {
+   "pd": 2,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_chenodeoxycholic_acid",
+  "extracted": 0,
+  "last_change": null,
+  "name": "chenodeoxycholic acid",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "chenodeoxycholic_acid",
+  "stale": 0
+ },
  "drug_chloramphenicol": {
   "atc_codes": [
    "D06AX02",
@@ -3473,6 +3830,28 @@
   "slug": "chlorhexidine",
   "stale": 0
  },
+ "drug_chlorobutanol": {
+  "atc_codes": [
+   "A04AD04"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_chlorobutanol",
+  "extracted": 0,
+  "last_change": null,
+  "name": "chlorobutanol",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "chlorobutanol",
+  "stale": 0
+ },
  "drug_chloroquine": {
   "atc_codes": [
    "P01BA01",
@@ -3541,6 +3920,33 @@
   "rejected": 1,
   "rendered": true,
   "slug": "chlortetracycline",
+  "stale": 0
+ },
+ "drug_cholic_acid": {
+  "atc_codes": [
+   "A05AA03"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Quarfordt_1973 \u00b7 reference",
+    "model_id": "CholicAcid_Quarfordt1973_reference"
+   }
+  ],
+  "dir": "drug_cholic_acid",
+  "extracted": 0,
+  "last_change": "2026-09-11T03:38:03.352059+00:00",
+  "name": "cholic acid",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "cholic_acid",
   "stale": 0
  },
  "drug_chymotrypsin": {
@@ -3671,6 +4077,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "cimetidine",
+  "stale": 0
+ },
+ "drug_cinitapride": {
+  "atc_codes": [
+   "A03FA08"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_cinitapride",
+  "extracted": 0,
+  "last_change": null,
+  "name": "cinitapride",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "cinitapride",
   "stale": 0
  },
  "drug_ciprofloxacin": {
@@ -3814,6 +4242,41 @@
   "slug": "ciprofloxacin",
   "stale": 0
  },
+ "drug_cisapride": {
+  "atc_codes": [
+   "A03FA02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Michiels_1987 \u00b7 reference",
+    "model_id": "Cisapride_Michiels1987_reference"
+   },
+   {
+    "label": "Odoul_2002 \u00b7 reference",
+    "model_id": "Cisapride_Odoul2002_reference"
+   },
+   {
+    "label": "Preechagoon_1999 \u00b7 reference",
+    "model_id": "Cisapride_Preechagoon1999_reference"
+   }
+  ],
+  "dir": "drug_cisapride",
+  "extracted": 0,
+  "last_change": "2026-09-11T01:44:05.546604+00:00",
+  "name": "cisapride",
+  "needs_review": 0,
+  "records": 3,
+  "rejected": 3,
+  "rendered": true,
+  "slug": "cisapride",
+  "stale": 0
+ },
  "drug_cisplatin": {
   "atc_codes": [
    "L01XA01"
@@ -3909,6 +4372,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "clarithromycin",
+  "stale": 0
+ },
+ "drug_clebopride": {
+  "atc_codes": [
+   "A03FA06"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_clebopride",
+  "extracted": 0,
+  "last_change": null,
+  "name": "clebopride",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "clebopride",
   "stale": 0
  },
  "drug_clomipramine": {
@@ -5596,6 +6081,28 @@
   "slug": "dicoumarol",
   "stale": 0
  },
+ "drug_dicycloverine": {
+  "atc_codes": [
+   "A03AA07"
+  ],
+  "counts": {
+   "pd": 4,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_dicycloverine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "dicycloverine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "dicycloverine",
+  "stale": 0
+ },
  "drug_diflunisal": {
   "atc_codes": [
    "N02BA11"
@@ -5928,6 +6435,29 @@
   "slug": "dimetotiazine",
   "stale": 0
  },
+ "drug_diphemanil": {
+  "atc_codes": [
+   "A03AB15",
+   "A03CA08"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_diphemanil",
+  "extracted": 0,
+  "last_change": null,
+  "name": "diphemanil",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "diphemanil",
+  "stale": 0
+ },
  "drug_dipyridamole": {
   "atc_codes": [
    "B01AC07"
@@ -6082,6 +6612,33 @@
   "slug": "dofetilide",
   "stale": 0
  },
+ "drug_dolasetron": {
+  "atc_codes": [
+   "A04AA04"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Dow_1996 \u00b7 reference",
+    "model_id": "Dolasetron_Dow1996_reference"
+   }
+  ],
+  "dir": "drug_dolasetron",
+  "extracted": 0,
+  "last_change": "2026-09-11T02:33:42.344259+00:00",
+  "name": "dolasetron",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "dolasetron",
+  "stale": 0
+ },
  "drug_domiphen": {
   "atc_codes": [
    "A01AB06"
@@ -6102,6 +6659,33 @@
   "rejected": 0,
   "rendered": true,
   "slug": "domiphen",
+  "stale": 0
+ },
+ "drug_domperidone": {
+  "atc_codes": [
+   "A03FA03"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Dailly_2008 \u00b7 reference",
+    "model_id": "Domperidone_Dailly2008_reference"
+   }
+  ],
+  "dir": "drug_domperidone",
+  "extracted": 0,
+  "last_change": "2026-09-11T01:59:58.493239+00:00",
+  "name": "domperidone",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "domperidone",
   "stale": 0
  },
  "drug_donidalorsen": {
@@ -6417,6 +7001,28 @@
   "slug": "doxycycline",
   "stale": 0
  },
+ "drug_dronabinol": {
+  "atc_codes": [
+   "A04AD10"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_dronabinol",
+  "extracted": 0,
+  "last_change": null,
+  "name": "dronabinol",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "dronabinol",
+  "stale": 0
+ },
  "drug_dronedarone": {
   "atc_codes": [
    "C01BD07"
@@ -6437,6 +7043,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "dronedarone",
+  "stale": 0
+ },
+ "drug_drotaverine": {
+  "atc_codes": [
+   "A03AD02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_drotaverine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "drotaverine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "drotaverine",
   "stale": 0
  },
  "drug_drotrecogin_alfa": {
@@ -6702,6 +7330,28 @@
   "slug": "efpeglenatide",
   "stale": 0
  },
+ "drug_elafibranor": {
+  "atc_codes": [
+   "A05AX06"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_elafibranor",
+  "extracted": 0,
+  "last_change": null,
+  "name": "elafibranor",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "elafibranor",
+  "stale": 0
+ },
  "drug_electrolytes": {
   "atc_codes": [
    "B05BB01"
@@ -6806,6 +7456,34 @@
   "rejected": 0,
   "rendered": true,
   "slug": "eltrombopag",
+  "stale": 0
+ },
+ "drug_emepronium": {
+  "atc_codes": [
+   "A03CA30",
+   "G04BD01"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Pilbrant_1985 \u00b7 reference",
+    "model_id": "Emepronium_Pilbrant1985_reference"
+   }
+  ],
+  "dir": "drug_emepronium",
+  "extracted": 0,
+  "last_change": "2026-09-11T00:46:32.161059+00:00",
+  "name": "emepronium",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "emepronium",
   "stale": 0
  },
  "drug_emicizumab": {
@@ -9090,6 +9768,138 @@
   "slug": "glycine",
   "stale": 0
  },
+ "drug_glycopyrronium": {
+  "atc_codes": [
+   "A03AB02",
+   "A03CA05",
+   "D11AA01",
+   "R03AL04",
+   "R03AL07",
+   "R03AL09",
+   "R03AL11",
+   "R03AL12",
+   "R03BB06"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 2
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Bartels_2013 \u00b7 reference",
+    "model_id": "Glycopyrronium_Bartels2013_reference"
+   },
+   {
+    "label": "Bartels_2021 \u00b7 mf",
+    "model_id": "Glycopyrronium_Bartels2021_mf"
+   },
+   {
+    "label": "Bartels_2021 \u00b7 gly",
+    "model_id": "Glycopyrronium_Bartels2021_gly"
+   },
+   {
+    "label": "Bartels_2021 \u00b7 ind",
+    "model_id": "Glycopyrronium_Bartels2021_ind"
+   }
+  ],
+  "dir": "drug_glycopyrronium",
+  "extracted": 2,
+  "last_change": "2026-09-10T22:44:27.224022+00:00",
+  "name": "glycopyrronium",
+  "needs_review": 0,
+  "records": 4,
+  "rejected": 2,
+  "rendered": true,
+  "slug": "glycopyrronium",
+  "stale": 0
+ },
+ "drug_glycopyrronium_bromide": {
+  "atc_codes": [
+   "A03AB02",
+   "R03BB06"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Bartels_2013 \u00b7 reference",
+    "model_id": "GlycopyrroniumBromide_Bartels2013_reference"
+   }
+  ],
+  "dir": "drug_glycopyrronium_bromide",
+  "extracted": 1,
+  "last_change": "2026-09-10T22:49:40.810706+00:00",
+  "name": "glycopyrronium bromide",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "glycopyrronium_bromide",
+  "stale": 0
+ },
+ "drug_glycyrrhizic_acid": {
+  "atc_codes": [
+   "A05BA08"
+  ],
+  "counts": {
+   "pd": 21,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_glycyrrhizic_acid",
+  "extracted": 0,
+  "last_change": null,
+  "name": "glycyrrhizic acid",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "glycyrrhizic_acid",
+  "stale": 0
+ },
+ "drug_granisetron": {
+  "atc_codes": [
+   "A04AA02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Addelman_1990 \u00b7 reference",
+    "model_id": "Granisetron_Addelman1990_reference"
+   },
+   {
+    "label": "Howell_2009 \u00b7 reference",
+    "model_id": "Granisetron_Howell2009_reference"
+   },
+   {
+    "label": "Li_2023 \u00b7 reference",
+    "model_id": "Granisetron_Li2023_reference"
+   }
+  ],
+  "dir": "drug_granisetron",
+  "extracted": 0,
+  "last_change": "2026-09-11T02:53:41.260592+00:00",
+  "name": "granisetron",
+  "needs_review": 0,
+  "records": 3,
+  "rejected": 3,
+  "rendered": true,
+  "slug": "granisetron",
+  "stale": 0
+ },
  "drug_haloperidol": {
   "atc_codes": [
    "N05AD01"
@@ -9275,6 +10085,28 @@
   "rejected": 1,
   "rendered": true,
   "slug": "hexobendine",
+  "stale": 0
+ },
+ "drug_hexocyclium": {
+  "atc_codes": [
+   "A03AB10"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_hexocyclium",
+  "extracted": 0,
+  "last_change": null,
+  "name": "hexocyclium",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "hexocyclium",
   "stale": 0
  },
  "drug_hyaluronidase": {
@@ -9678,6 +10510,51 @@
   "rejected": 0,
   "rendered": true,
   "slug": "hydroxyethylstarch",
+  "stale": 0
+ },
+ "drug_hymecromone": {
+  "atc_codes": [
+   "A05AX02"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_hymecromone",
+  "extracted": 0,
+  "last_change": null,
+  "name": "hymecromone",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "hymecromone",
+  "stale": 0
+ },
+ "drug_hyoscyamine": {
+  "atc_codes": [
+   "A03BA03",
+   "A03CB31"
+  ],
+  "counts": {
+   "pd": 7,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_hyoscyamine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "hyoscyamine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "hyoscyamine",
   "stale": 0
  },
  "drug_ibopamine": {
@@ -10180,6 +11057,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "isosorbide_mononitrate",
+  "stale": 0
+ },
+ "drug_itopride": {
+  "atc_codes": [
+   "A03FA07"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_itopride",
+  "extracted": 0,
+  "last_change": null,
+  "name": "itopride",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "itopride",
   "stale": 0
  },
  "drug_ivacaftor": {
@@ -10891,6 +11790,28 @@
   "slug": "limaprost",
   "stale": 0
  },
+ "drug_linerixibat": {
+  "atc_codes": [
+   "A05AX08"
+  ],
+  "counts": {
+   "pd": 8,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_linerixibat",
+  "extracted": 0,
+  "last_change": null,
+  "name": "linerixibat",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "linerixibat",
+  "stale": 0
+ },
  "drug_linsidomine": {
   "atc_codes": [
    "C01DX18"
@@ -11263,6 +12184,50 @@
   "slug": "mandelic_acid",
   "stale": 0
  },
+ "drug_maralixibat": {
+  "atc_codes": [
+   "A05AX04"
+  ],
+  "counts": {
+   "pd": 2,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_maralixibat",
+  "extracted": 0,
+  "last_change": null,
+  "name": "maralixibat",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "maralixibat",
+  "stale": 0
+ },
+ "drug_maralixibat_chloride": {
+  "atc_codes": [
+   "A05AX04"
+  ],
+  "counts": {
+   "pd": 2,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_maralixibat_chloride",
+  "extracted": 0,
+  "last_change": null,
+  "name": "maralixibat chloride",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "maralixibat_chloride",
+  "stale": 0
+ },
  "drug_mavacamten": {
   "atc_codes": [
    "C01EB24"
@@ -11312,6 +12277,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "mazdutide",
+  "stale": 0
+ },
+ "drug_mebeverine": {
+  "atc_codes": [
+   "A03AA04"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_mebeverine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "mebeverine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "mebeverine",
   "stale": 0
  },
  "drug_melagatran": {
@@ -11857,6 +12844,28 @@
   "slug": "methadone",
   "stale": 0
  },
+ "drug_methantheline": {
+  "atc_codes": [
+   "A03AB07"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_methantheline",
+  "extracted": 0,
+  "last_change": null,
+  "name": "methantheline",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "methantheline",
+  "stale": 0
+ },
  "drug_metharbital": {
   "atc_codes": [
    "N03AA30"
@@ -12005,6 +13014,28 @@
   "slug": "methoxyflurane",
   "stale": 0
  },
+ "drug_methylatropine": {
+  "atc_codes": [
+   "A03BB02"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_methylatropine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "methylatropine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "methylatropine",
+  "stale": 0
+ },
  "drug_methylphenidate": {
   "atc_codes": [
    "N06BA04"
@@ -12054,6 +13085,30 @@
   "slug": "methylphenobarbital",
   "stale": 0
  },
+ "drug_methylscopolamine": {
+  "atc_codes": [
+   "A03BB03",
+   "A03CB01",
+   "S01FA03"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_methylscopolamine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "methylscopolamine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "methylscopolamine",
+  "stale": 0
+ },
  "drug_methysergide": {
   "atc_codes": [
    "N02CA04"
@@ -12101,6 +13156,41 @@
   "rejected": 1,
   "rendered": true,
   "slug": "metildigoxin",
+  "stale": 0
+ },
+ "drug_metoclopramide": {
+  "atc_codes": [
+   "A03FA01"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Ge_2020 \u00b7 reference",
+    "model_id": "Metoclopramide_Ge2020_reference"
+   },
+   {
+    "label": "Brandon_2024 \u00b7 reference",
+    "model_id": "Metoclopramide_Brandon2024_reference"
+   },
+   {
+    "label": "Bateman_1978 \u00b7 reference",
+    "model_id": "Metoclopramide_Bateman1978_reference"
+   }
+  ],
+  "dir": "drug_metoclopramide",
+  "extracted": 1,
+  "last_change": "2026-09-11T02:31:59.490148+00:00",
+  "name": "metoclopramide",
+  "needs_review": 1,
+  "records": 3,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "metoclopramide",
   "stale": 0
  },
  "drug_metoprolol": {
@@ -12738,6 +13828,50 @@
   "slug": "morpholine_salicylate",
   "stale": 0
  },
+ "drug_mosapride": {
+  "atc_codes": [
+   "A03FA09"
+  ],
+  "counts": {
+   "pd": 3,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_mosapride",
+  "extracted": 0,
+  "last_change": null,
+  "name": "mosapride",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "mosapride",
+  "stale": 0
+ },
+ "drug_moxaverine": {
+  "atc_codes": [
+   "A03AD30"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_moxaverine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "moxaverine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "moxaverine",
+  "stale": 0
+ },
  "drug_moxifloxacin": {
   "atc_codes": [
    "J01MA14",
@@ -12772,6 +13906,28 @@
   "rejected": 2,
   "rendered": true,
   "slug": "moxifloxacin",
+  "stale": 0
+ },
+ "drug_nabilone": {
+  "atc_codes": [
+   "A04AD11"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_nabilone",
+  "extracted": 0,
+  "last_change": null,
+  "name": "nabilone",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "nabilone",
   "stale": 0
  },
  "drug_nadroparin": {
@@ -13249,6 +14405,28 @@
   "slug": "norepinephrine",
   "stale": 0
  },
+ "drug_obeticholic_acid": {
+  "atc_codes": [
+   "A05AA04"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_obeticholic_acid",
+  "extracted": 0,
+  "last_change": null,
+  "name": "obeticholic acid",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "obeticholic_acid",
+  "stale": 0
+ },
  "drug_octenidine": {
   "atc_codes": [
    "A01AB24",
@@ -13292,6 +14470,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "octopamine",
+  "stale": 0
+ },
+ "drug_odevixibat": {
+  "atc_codes": [
+   "A05AX05"
+  ],
+  "counts": {
+   "pd": 2,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_odevixibat",
+  "extracted": 0,
+  "last_change": null,
+  "name": "odevixibat",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "odevixibat",
   "stale": 0
  },
  "drug_ofloxacin": {
@@ -13520,14 +14720,22 @@
    {
     "label": "de_1998 \u00b7 reference",
     "model_id": "Ondansetron_de1998_reference"
+   },
+   {
+    "label": "Chiang_2021 \u00b7 estimate",
+    "model_id": "Ondansetron_Chiang2021_estimate"
+   },
+   {
+    "label": "Chiang_2021 \u00b7 shrinkage",
+    "model_id": "Ondansetron_Chiang2021_shrinkage"
    }
   ],
   "dir": "drug_ondansetron",
   "extracted": 2,
-  "last_change": "2026-07-19T01:22:13.262364+00:00",
+  "last_change": "2026-09-11T03:15:28.077408+00:00",
   "name": "ondansetron",
   "needs_review": 0,
-  "records": 2,
+  "records": 4,
   "rejected": 0,
   "rendered": true,
   "slug": "ondansetron",
@@ -13573,6 +14781,52 @@
   "rejected": 0,
   "rendered": true,
   "slug": "organic_nitrates_in_combination",
+  "stale": 0
+ },
+ "drug_otilonium": {
+  "atc_codes": [
+   "A03AB06",
+   "A03CA04"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_otilonium",
+  "extracted": 0,
+  "last_change": null,
+  "name": "Otilonium",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "otilonium",
+  "stale": 0
+ },
+ "drug_otilonium_bromide": {
+  "atc_codes": [
+   "A03AB06",
+   "A03CA04"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_otilonium_bromide",
+  "extracted": 0,
+  "last_change": null,
+  "name": "otilonium bromide",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "otilonium_bromide",
   "stale": 0
  },
  "drug_oxcarbazepine": {
@@ -13905,6 +15159,45 @@
   "slug": "palivizumab",
   "stale": 0
  },
+ "drug_palonosetron": {
+  "atc_codes": [
+   "A04AA05"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Lee_2019 \u00b7 reference",
+    "model_id": "Palonosetron_Lee2019_reference"
+   },
+   {
+    "label": "Li_2026 \u00b7 healthy_control",
+    "model_id": "Palonosetron_Li2026_healthy_control"
+   },
+   {
+    "label": "Li_2026 \u00b7 moderate_hepatic_impairment",
+    "model_id": "Palonosetron_Li2026_moderate_hepatic_impairment"
+   },
+   {
+    "label": "Li_2026 \u00b7 palonosetron",
+    "model_id": "Palonosetron_Li2026_palonosetron"
+   }
+  ],
+  "dir": "drug_palonosetron",
+  "extracted": 0,
+  "last_change": "2026-09-11T03:24:30.606914+00:00",
+  "name": "palonosetron",
+  "needs_review": 0,
+  "records": 4,
+  "rejected": 4,
+  "rendered": true,
+  "slug": "palonosetron",
+  "stale": 0
+ },
  "drug_pantoprazole": {
   "atc_codes": [
    "A02BC02"
@@ -13912,18 +15205,10 @@
   "counts": {
    "pd": 0,
    "pgx": 0,
-   "pk": 1
+   "pk": 8
   },
   "curated": 0,
   "details": [
-   {
-    "label": "Pettersen_2009 \u00b7 reference",
-    "model_id": "Pantoprazole_Pettersen2009_reference"
-   },
-   {
-    "label": "Grafeneder_2024 \u00b7 hdp",
-    "model_id": "Pantoprazole_Grafeneder2024_hdp"
-   },
    {
     "label": "Grafeneder_2024 \u00b7 hdp_n_17",
     "model_id": "Pantoprazole_Grafeneder2024_hdp_n_17"
@@ -13939,17 +15224,69 @@
    {
     "label": "Knebel_2011 \u00b7 reference",
     "model_id": "Pantoprazole_Knebel2011_reference"
+   },
+   {
+    "label": "McCann_2023 \u00b7 reference",
+    "model_id": "Pantoprazole_McCann2023_reference"
+   },
+   {
+    "label": "Olivarez_2020 \u00b7 reference",
+    "model_id": "Pantoprazole_Olivarez2020_reference"
+   },
+   {
+    "label": "Pettersen_2009 \u00b7 reference",
+    "model_id": "Pantoprazole_Pettersen2009_reference"
+   },
+   {
+    "label": "Smith_2021_2 \u00b7 reference",
+    "model_id": "Pantoprazole_Smith2021v2_reference"
+   },
+   {
+    "label": "Grafeneder_2024 \u00b7 hdp",
+    "model_id": "Pantoprazole_Grafeneder2024_hdp"
+   },
+   {
+    "label": "Olivarez_2022_2 \u00b7 reference",
+    "model_id": "Pantoprazole_Olivarez2022v2_reference"
    }
   ],
   "dir": "drug_pantoprazole",
-  "extracted": 1,
+  "extracted": 8,
   "last_change": "2026-09-10T20:03:41.777811+00:00",
   "name": "pantoprazole",
-  "needs_review": 0,
-  "records": 6,
-  "rejected": 1,
+  "needs_review": 2,
+  "records": 10,
+  "rejected": 0,
   "rendered": true,
   "slug": "pantoprazole",
+  "stale": 0
+ },
+ "drug_papaverine": {
+  "atc_codes": [
+   "A03AD01",
+   "G04BE02"
+  ],
+  "counts": {
+   "pd": 4,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Ritschel_1977 \u00b7 reference",
+    "model_id": "Papaverine_Ritschel1977_reference"
+   }
+  ],
+  "dir": "drug_papaverine",
+  "extracted": 0,
+  "last_change": "2026-09-10T23:24:09.338931+00:00",
+  "name": "papaverine",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "papaverine",
   "stale": 0
  },
  "drug_paracetamol": {
@@ -14527,6 +15864,28 @@
   "slug": "phenylephrine",
   "stale": 0
  },
+ "drug_phloroglucinol": {
+  "atc_codes": [
+   "A03AX12"
+  ],
+  "counts": {
+   "pd": 4,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_phloroglucinol",
+  "extracted": 0,
+  "last_change": null,
+  "name": "phloroglucinol",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "phloroglucinol",
+  "stale": 0
+ },
  "drug_phytomenadione": {
   "atc_codes": [
    "B02BA01"
@@ -14574,6 +15933,86 @@
   "rejected": 0,
   "rendered": true,
   "slug": "picotamide",
+  "stale": 0
+ },
+ "drug_pinaverium": {
+  "atc_codes": [
+   "A03AX04"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_pinaverium",
+  "extracted": 0,
+  "last_change": null,
+  "name": "pinaverium",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "pinaverium",
+  "stale": 0
+ },
+ "drug_piprozolin": {
+  "atc_codes": [
+   "A05AX01"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Gladigau_1977 \u00b7 reference",
+    "model_id": "Piprozolin_Gladigau1977_reference"
+   }
+  ],
+  "dir": "drug_piprozolin",
+  "extracted": 0,
+  "last_change": "2026-09-11T04:50:40.220369+00:00",
+  "name": "piprozolin",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "piprozolin",
+  "stale": 0
+ },
+ "drug_pirenzepine": {
+  "atc_codes": [
+   "A02BX03"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Vergin_1986 \u00b7 reference",
+    "model_id": "Pirenzepine_Vergin1986_reference"
+   },
+   {
+    "label": "Vergin_1989 \u00b7 reference",
+    "model_id": "Pirenzepine_Vergin1989_reference"
+   }
+  ],
+  "dir": "drug_pirenzepine",
+  "extracted": 0,
+  "last_change": "2026-09-10T20:17:21.190809+00:00",
+  "name": "pirenzepine",
+  "needs_review": 0,
+  "records": 2,
+  "rejected": 2,
+  "rendered": true,
+  "slug": "pirenzepine",
   "stale": 0
  },
  "drug_piritramide": {
@@ -14867,6 +16306,28 @@
   "slug": "prenalterol",
   "stale": 0
  },
+ "drug_prifinium_bromide": {
+  "atc_codes": [
+   "A03AB18"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_prifinium_bromide",
+  "extracted": 0,
+  "last_change": null,
+  "name": "prifinium bromide",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "prifinium_bromide",
+  "stale": 0
+ },
  "drug_procainamide": {
   "atc_codes": [
    "C01BA02"
@@ -14900,6 +16361,28 @@
   "rejected": 3,
   "rendered": true,
   "slug": "procainamide",
+  "stale": 0
+ },
+ "drug_proglumide": {
+  "atc_codes": [
+   "A02BX06"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_proglumide",
+  "extracted": 0,
+  "last_change": null,
+  "name": "proglumide",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "proglumide",
   "stale": 0
  },
  "drug_propacetamol": {
@@ -14974,6 +16457,29 @@
   "rejected": 3,
   "rendered": true,
   "slug": "propafenone",
+  "stale": 0
+ },
+ "drug_propantheline": {
+  "atc_codes": [
+   "A03AB05",
+   "A03CA34"
+  ],
+  "counts": {
+   "pd": 2,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_propantheline",
+  "extracted": 0,
+  "last_change": null,
+  "name": "propantheline",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "propantheline",
   "stale": 0
  },
  "drug_proscillaridin": {
@@ -15118,6 +16624,109 @@
   "slug": "quinidine",
   "stale": 0
  },
+ "drug_rabeprazole": {
+  "atc_codes": [
+   "A02BC04"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Sheng_2010 \u00b7 reference",
+    "model_id": "Rabeprazole_Sheng2010_reference"
+   },
+   {
+    "label": "Yang_2009 \u00b7 reference",
+    "model_id": "Rabeprazole_Yang2009_reference"
+   }
+  ],
+  "dir": "drug_rabeprazole",
+  "extracted": 0,
+  "last_change": "2026-09-10T20:33:21.210335+00:00",
+  "name": "rabeprazole",
+  "needs_review": 0,
+  "records": 2,
+  "rejected": 2,
+  "rendered": true,
+  "slug": "rabeprazole",
+  "stale": 0
+ },
+ "drug_ranitidine": {
+  "atc_codes": [
+   "A02BA02",
+   "A02BA07"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Hawwa_2013 \u00b7 reference",
+    "model_id": "Ranitidine_Hawwa2013_reference"
+   }
+  ],
+  "dir": "drug_ranitidine",
+  "extracted": 0,
+  "last_change": "2026-09-10T20:52:34.793763+00:00",
+  "name": "ranitidine",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "ranitidine",
+  "stale": 0
+ },
+ "drug_ranitidine_bismuth_citrate": {
+  "atc_codes": [
+   "A02BA07"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_ranitidine_bismuth_citrate",
+  "extracted": 0,
+  "last_change": null,
+  "name": "ranitidine bismuth citrate",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "ranitidine_bismuth_citrate",
+  "stale": 0
+ },
+ "drug_rebamipide": {
+  "atc_codes": [
+   "A02BX14"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_rebamipide",
+  "extracted": 0,
+  "last_change": null,
+  "name": "rebamipide",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "rebamipide",
+  "stale": 0
+ },
  "drug_remdesivir": {
   "atc_codes": [
    "J05AB16"
@@ -15229,6 +16838,62 @@
   "rejected": 0,
   "rendered": true,
   "slug": "reteplase",
+  "stale": 0
+ },
+ "drug_rifabutin": {
+  "atc_codes": [
+   "A02BD16",
+   "J04AB04"
+  ],
+  "counts": {
+   "pd": 7,
+   "pgx": 0,
+   "pk": 4
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Bentley_2021 \u00b7 reference",
+    "model_id": "Rifabutin_Bentley2021_reference"
+   },
+   {
+    "label": "Ding_2022 \u00b7 reference",
+    "model_id": "Rifabutin_Ding2022_reference"
+   },
+   {
+    "label": "Thoueille_2023 \u00b7 reference",
+    "model_id": "Rifabutin_Thoueille2023_reference"
+   },
+   {
+    "label": "Wang_2020 \u00b7 reference",
+    "model_id": "Rifabutin_Wang2020_reference"
+   },
+   {
+    "label": "Deshpande_2024 \u00b7 reference",
+    "model_id": "Rifabutin_Deshpande2024_reference"
+   },
+   {
+    "label": "Gatti_1998 \u00b7 reference",
+    "model_id": "Rifabutin_Gatti1998_reference"
+   },
+   {
+    "label": "Hennig_2016 \u00b7 reference",
+    "model_id": "Rifabutin_Hennig2016_reference"
+   },
+   {
+    "label": "Li_1996 \u00b7 reference",
+    "model_id": "Rifabutin_Li1996_reference"
+   }
+  ],
+  "dir": "drug_rifabutin",
+  "extracted": 4,
+  "last_change": "2026-09-10T21:58:00.611840+00:00",
+  "name": "rifabutin",
+  "needs_review": 0,
+  "records": 8,
+  "rejected": 4,
+  "rendered": true,
+  "slug": "rifabutin",
   "stale": 0
  },
  "drug_rimegepant": {
@@ -15344,6 +17009,49 @@
   "slug": "rizatriptan",
   "stale": 0
  },
+ "drug_rolapitant": {
+  "atc_codes": [
+   "A04AD14"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Li_2026 \u00b7 fosrolapitant",
+    "model_id": "Rolapitant_Li2026_fosrolapitant"
+   },
+   {
+    "label": "Li_2026 \u00b7 healthy_control",
+    "model_id": "Rolapitant_Li2026_healthy_control"
+   },
+   {
+    "label": "Li_2026 \u00b7 moderate_hepatic_impairment",
+    "model_id": "Rolapitant_Li2026_moderate_hepatic_impairment"
+   },
+   {
+    "label": "Li_2026 \u00b7 rolapitant",
+    "model_id": "Rolapitant_Li2026_rolapitant"
+   },
+   {
+    "label": "Wang_2019 \u00b7 reference",
+    "model_id": "Rolapitant_Wang2019_reference"
+   }
+  ],
+  "dir": "drug_rolapitant",
+  "extracted": 0,
+  "last_change": "2026-09-11T03:36:25.863501+00:00",
+  "name": "rolapitant",
+  "needs_review": 0,
+  "records": 5,
+  "rejected": 5,
+  "rendered": true,
+  "slug": "rolapitant",
+  "stale": 0
+ },
  "drug_romiplostim": {
   "atc_codes": [
    "B02BX04"
@@ -15419,6 +17127,28 @@
   "rejected": 1,
   "rendered": true,
   "slug": "roxadustat",
+  "stale": 0
+ },
+ "drug_roxatidine": {
+  "atc_codes": [
+   "A02BA06"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_roxatidine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "roxatidine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "roxatidine",
   "stale": 0
  },
  "drug_saccharated_iron_oxide": {
@@ -15606,6 +17336,39 @@
   "slug": "saruplase",
   "stale": 0
  },
+ "drug_scopolamine": {
+  "atc_codes": [
+   "A04AD01",
+   "N05CM05",
+   "S01FA02"
+  ],
+  "counts": {
+   "pd": 15,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Liem-Moolenaar_2011 \u00b7 reference",
+    "model_id": "Scopolamine_LiemMoolenaar2011_reference"
+   },
+   {
+    "label": "Alvarez-Jimenez_2016 \u00b7 reference",
+    "model_id": "Scopolamine_AlvarezJimenez2016_reference"
+   }
+  ],
+  "dir": "drug_scopolamine",
+  "extracted": 1,
+  "last_change": "2026-09-11T03:45:36.140487+00:00",
+  "name": "scopolamine",
+  "needs_review": 0,
+  "records": 2,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "scopolamine",
+  "stale": 0
+ },
  "drug_selexipag": {
   "atc_codes": [
    "B01AC27"
@@ -15709,6 +17472,28 @@
   "rejected": 2,
   "rendered": true,
   "slug": "semaglutide",
+  "stale": 0
+ },
+ "drug_silicones": {
+  "atc_codes": [
+   "A03AX13"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_silicones",
+  "extracted": 0,
+  "last_change": null,
+  "name": "silicones",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "silicones",
   "stale": 0
  },
  "drug_simvastatin": {
@@ -16057,6 +17842,28 @@
   "slug": "streptokinase",
   "stale": 0
  },
+ "drug_sucralfate": {
+  "atc_codes": [
+   "A02BX02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_sucralfate",
+  "extracted": 0,
+  "last_change": null,
+  "name": "sucralfate",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "sucralfate",
+  "stale": 0
+ },
  "drug_sulfamethizole": {
   "atc_codes": [
    "B05CA04",
@@ -16347,6 +18154,60 @@
   "slug": "tedisamil",
   "stale": 0
  },
+ "drug_tegaserod": {
+  "atc_codes": [
+   "A03AE02",
+   "A06AX06"
+  ],
+  "counts": {
+   "pd": 5,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_tegaserod",
+  "extracted": 0,
+  "last_change": null,
+  "name": "tegaserod",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "tegaserod",
+  "stale": 0
+ },
+ "drug_tegoprazan": {
+  "atc_codes": [
+   "A02BC09"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 2
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "He_2021 \u00b7 reference",
+    "model_id": "Tegoprazan_He2021_reference"
+   },
+   {
+    "label": "Kim_2024 \u00b7 reference",
+    "model_id": "Tegoprazan_Kim2024_reference"
+   }
+  ],
+  "dir": "drug_tegoprazan",
+  "extracted": 2,
+  "last_change": "2026-09-10T21:01:31.607192+00:00",
+  "name": "tegoprazan",
+  "needs_review": 0,
+  "records": 2,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "tegoprazan",
+  "stale": 0
+ },
  "drug_telmisartan": {
   "atc_codes": [
    "C09CA07",
@@ -16474,6 +18335,28 @@
   "rejected": 1,
   "rendered": true,
   "slug": "tenecteplase",
+  "stale": 0
+ },
+ "drug_teprenone": {
+  "atc_codes": [
+   "A02BX15"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_teprenone",
+  "extracted": 0,
+  "last_change": null,
+  "name": "teprenone",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "teprenone",
   "stale": 0
  },
  "drug_tetracycline": {
@@ -16696,6 +18579,35 @@
   "slug": "tilidine",
   "stale": 0
  },
+ "drug_tinidazole": {
+  "atc_codes": [
+   "A02BD09",
+   "G01AF21",
+   "J01RA11",
+   "J01RA13",
+   "J01RA18",
+   "J01XD02",
+   "P01AB02",
+   "P01AB53"
+  ],
+  "counts": {
+   "pd": 2,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_tinidazole",
+  "extracted": 0,
+  "last_change": null,
+  "name": "tinidazole",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "tinidazole",
+  "stale": 0
+ },
  "drug_tinzaparin": {
   "atc_codes": [
    "B01AB10"
@@ -16756,6 +18668,65 @@
   "rejected": 1,
   "rendered": true,
   "slug": "tirofiban",
+  "stale": 0
+ },
+ "drug_tiropramide": {
+  "atc_codes": [
+   "A03AC05"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Jeong_2020 \u00b7 1236c_t",
+    "model_id": "Tiropramide_Jeong2020_1236c_t"
+   },
+   {
+    "label": "Jeong_2020 \u00b7 1287g_c",
+    "model_id": "Tiropramide_Jeong2020_1287g_c"
+   },
+   {
+    "label": "Jeong_2020 \u00b7 2677g_t_a",
+    "model_id": "Tiropramide_Jeong2020_2677g_t_a"
+   },
+   {
+    "label": "Jeong_2020 \u00b7 3435c_t",
+    "model_id": "Tiropramide_Jeong2020_3435c_t"
+   },
+   {
+    "label": "Jeong_2020 \u00b7 808g_t",
+    "model_id": "Tiropramide_Jeong2020_808g_t"
+   },
+   {
+    "label": "Jeong_2020 \u00b7 estimate",
+    "model_id": "Tiropramide_Jeong2020_estimate"
+   },
+   {
+    "label": "Jeong_2020 \u00b7 iiv",
+    "model_id": "Tiropramide_Jeong2020_iiv"
+   },
+   {
+    "label": "Jeong_2020 \u00b7 shrinkage",
+    "model_id": "Tiropramide_Jeong2020_shrinkage"
+   },
+   {
+    "label": "Arigoni_1986 \u00b7 reference",
+    "model_id": "Tiropramide_Arigoni1986_reference"
+   }
+  ],
+  "dir": "drug_tiropramide",
+  "extracted": 0,
+  "last_change": "2026-09-11T00:24:56.504732+00:00",
+  "name": "tiropramide",
+  "needs_review": 0,
+  "records": 9,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "tiropramide",
   "stale": 0
  },
  "drug_tirzepatide": {
@@ -17145,6 +19116,28 @@
   "slug": "triflusal",
   "stale": 0
  },
+ "drug_trimebutine": {
+  "atc_codes": [
+   "A03AA05"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_trimebutine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "trimebutine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "trimebutine",
+  "stale": 0
+ },
  "drug_trometamol": {
   "atc_codes": [
    "B05BB03",
@@ -17166,6 +19159,82 @@
   "rejected": 0,
   "rendered": true,
   "slug": "trometamol",
+  "stale": 0
+ },
+ "drug_tropisetron": {
+  "atc_codes": [
+   "A04AA03"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_tropisetron",
+  "extracted": 0,
+  "last_change": null,
+  "name": "tropisetron",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "tropisetron",
+  "stale": 0
+ },
+ "drug_trospium": {
+  "atc_codes": [
+   "A03DA06",
+   "G04BD09"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 2
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Doroshyenko_2005 \u00b7 reference",
+    "model_id": "Trospium_Doroshyenko2005_reference"
+   },
+   {
+    "label": "Oefelein_2013 \u00b7 reference",
+    "model_id": "Trospium_Oefelein2013_reference"
+   }
+  ],
+  "dir": "drug_trospium",
+  "extracted": 2,
+  "last_change": "2026-09-11T01:04:30.330249+00:00",
+  "name": "trospium",
+  "needs_review": 0,
+  "records": 2,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "trospium",
+  "stale": 0
+ },
+ "drug_troxipide": {
+  "atc_codes": [
+   "A02BX11"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_troxipide",
+  "extracted": 0,
+  "last_change": null,
+  "name": "troxipide",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "troxipide",
   "stale": 0
  },
  "drug_trypsin": {
@@ -17255,6 +19324,33 @@
   "rejected": 0,
   "rendered": true,
   "slug": "urokinase",
+  "stale": 0
+ },
+ "drug_ursodeoxycholic_acid": {
+  "atc_codes": [
+   "A05AA02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Yue_2008 \u00b7 reference",
+    "model_id": "UrsodeoxycholicAcid_Yue2008_reference"
+   }
+  ],
+  "dir": "drug_ursodeoxycholic_acid",
+  "extracted": 0,
+  "last_change": "2026-09-11T05:04:36.880599+00:00",
+  "name": "ursodeoxycholic acid",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "ursodeoxycholic_acid",
   "stale": 0
  },
  "drug_vadadustat": {
@@ -17501,6 +19597,34 @@
   "slug": "von_willebrand_factor",
   "stale": 0
  },
+ "drug_vonoprazan": {
+  "atc_codes": [
+   "A02BC08",
+   "A02BD17"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Echizen_2016 \u00b7 reference",
+    "model_id": "Vonoprazan_Echizen2016_reference"
+   }
+  ],
+  "dir": "drug_vonoprazan",
+  "extracted": 0,
+  "last_change": "2026-09-10T21:43:27.484057+00:00",
+  "name": "vonoprazan",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "vonoprazan",
+  "stale": 0
+ },
  "drug_vorapaxar": {
   "atc_codes": [
    "B01AC26"
@@ -17670,6 +19794,33 @@
   "slug": "ximelagatran",
   "stale": 0
  },
+ "drug_zastaprazan": {
+  "atc_codes": [
+   "A02BC12"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Yang_2024 \u00b7 reference",
+    "model_id": "Zastaprazan_Yang2024_reference"
+   }
+  ],
+  "dir": "drug_zastaprazan",
+  "extracted": 0,
+  "last_change": "2026-09-10T21:53:34.084732+00:00",
+  "name": "zastaprazan",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "zastaprazan",
+  "stale": 0
+ },
  "drug_zavegepant": {
   "atc_codes": [
    "N02CD08"
@@ -17745,6 +19896,28 @@
   "slug": "zinc_chloride",
   "stale": 0
  },
+ "drug_zolimidine": {
+  "atc_codes": [
+   "A02BX10"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_zolimidine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "zolimidine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "zolimidine",
+  "stale": 0
+ },
  "drug_zolmitriptan": {
   "atc_codes": [
    "N02CC03"
@@ -17770,342 +19943,6 @@
   "rejected": 1,
   "rendered": true,
   "slug": "zolmitriptan",
-  "stale": 0
- },
- "toxin_112_trichloroethane": {
-  "atc_codes": [],
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "toxin_112_trichloroethane",
-  "extracted": 0,
-  "last_change": null,
-  "name": "112_trichloroethane",
-  "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "112_trichloroethane",
-  "stale": 0
- },
- "toxin_11_dichloroethene": {
-  "atc_codes": [],
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "toxin_11_dichloroethene",
-  "extracted": 0,
-  "last_change": null,
-  "name": "11_dichloroethene",
-  "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "11_dichloroethene",
-  "stale": 0
- },
- "toxin_1267_tetrachlorodibenzo_p_dioxin": {
-  "atc_codes": [],
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "toxin_1267_tetrachlorodibenzo_p_dioxin",
-  "extracted": 0,
-  "last_change": null,
-  "name": "1267_tetrachlorodibenzo_p_dioxin",
-  "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "1267_tetrachlorodibenzo_p_dioxin",
-  "stale": 0
- },
- "toxin_224_trimethylpentane": {
-  "atc_codes": [],
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "toxin_224_trimethylpentane",
-  "extracted": 0,
-  "last_change": null,
-  "name": "224_trimethylpentane",
-  "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "224_trimethylpentane",
-  "stale": 0
- },
- "toxin_2378_tetrachlorodibenzo_p_dioxin": {
-  "atc_codes": [],
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [
-   {
-    "label": "Weber_1993 \u00b7 reference",
-    "model_id": "D_2378TetrachlorodibenzoPDioxin_Weber1993_reference"
-   }
-  ],
-  "dir": "toxin_2378_tetrachlorodibenzo_p_dioxin",
-  "extracted": 0,
-  "last_change": "2026-09-08T05:55:37.655830+00:00",
-  "name": "2378_tetrachlorodibenzo_p_dioxin",
-  "needs_review": 0,
-  "records": 1,
-  "rejected": 1,
-  "rendered": true,
-  "slug": "2378_tetrachlorodibenzo_p_dioxin",
-  "stale": 0
- },
- "toxin_24_dinitrotoluene": {
-  "atc_codes": [],
-  "counts": {
-   "pd": 14,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "toxin_24_dinitrotoluene",
-  "extracted": 0,
-  "last_change": null,
-  "name": "24_dinitrotoluene",
-  "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "24_dinitrotoluene",
-  "stale": 0
- },
- "toxin_44_methylenedianiline": {
-  "atc_codes": [],
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "toxin_44_methylenedianiline",
-  "extracted": 0,
-  "last_change": null,
-  "name": "44_methylenedianiline",
-  "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "44_methylenedianiline",
-  "stale": 0
- },
- "toxin_acetonitrile": {
-  "atc_codes": [],
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "toxin_acetonitrile",
-  "extracted": 0,
-  "last_change": null,
-  "name": "acetonitrile",
-  "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "acetonitrile",
-  "stale": 0
- },
- "toxin_americium": {
-  "atc_codes": [],
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "toxin_americium",
-  "extracted": 0,
-  "last_change": null,
-  "name": "americium",
-  "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "americium",
-  "stale": 0
- },
- "toxin_arsenic": {
-  "atc_codes": [],
-  "counts": {
-   "pd": 0,
-   "pgx": 2,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "toxin_arsenic",
-  "extracted": 0,
-  "last_change": null,
-  "name": "arsenic",
-  "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "arsenic",
-  "stale": 0
- },
- "toxin_cadmium": {
-  "atc_codes": [],
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 6
-  },
-  "curated": 0,
-  "details": [
-   {
-    "label": "Ekobena_2025 \u00b7 reference",
-    "model_id": "Cadmium_Ekobena2025_reference"
-   },
-   {
-    "label": "Jia_2026 \u00b7 reference",
-    "model_id": "Cadmium_Jia2026_reference"
-   },
-   {
-    "label": "Marques_2026 \u00b7 reference",
-    "model_id": "Cadmium_Marques2026_reference"
-   },
-   {
-    "label": "Muthukrishnan_2025 \u00b7 reference",
-    "model_id": "Cadmium_Muthukrishnan2025_reference"
-   },
-   {
-    "label": "Sunn\u00e5ker_2026 \u00b7 reference",
-    "model_id": "Cadmium_Sunnker2026_reference"
-   },
-   {
-    "label": "Zhong_2024 \u00b7 reference",
-    "model_id": "Cadmium_Zhong2024_reference"
-   }
-  ],
-  "dir": "toxin_cadmium",
-  "extracted": 6,
-  "last_change": "2026-09-08T13:17:26.878306+00:00",
-  "name": "cadmium",
-  "needs_review": 0,
-  "records": 6,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "cadmium",
-  "stale": 0
- },
- "toxin_chromium": {
-  "atc_codes": [],
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [],
-  "dir": "toxin_chromium",
-  "extracted": 0,
-  "last_change": null,
-  "name": "chromium",
-  "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "chromium",
-  "stale": 0
- },
- "toxin_lead": {
-  "atc_codes": [],
-  "counts": {
-   "pd": 0,
-   "pgx": 1,
-   "pk": 0
-  },
-  "curated": 0,
-  "details": [
-   {
-    "label": "Dede_2017 \u00b7 exposure",
-    "model_id": "Lead_Dede2017_exposure"
-   },
-   {
-    "label": "Dede_2017 \u00b7 optimal",
-    "model_id": "Lead_Dede2017_optimal"
-   }
-  ],
-  "dir": "toxin_lead",
-  "extracted": 0,
-  "last_change": "2026-09-08T17:26:28.458898+00:00",
-  "name": "lead",
-  "needs_review": 2,
-  "records": 2,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "lead",
-  "stale": 0
- },
- "toxin_nickel": {
-  "atc_codes": [],
-  "counts": {
-   "pd": 0,
-   "pgx": 0,
-   "pk": 4
-  },
-  "curated": 0,
-  "details": [
-   {
-    "label": "Jia_2026 \u00b7 reference",
-    "model_id": "Nickel_Jia2026_reference"
-   },
-   {
-    "label": "Kwack_2026 \u00b7 reference",
-    "model_id": "Nickel_Kwack2026_reference"
-   },
-   {
-    "label": "Zhao_2017 \u00b7 reference",
-    "model_id": "Nickel_Zhao2017_reference"
-   },
-   {
-    "label": "van_2026 \u00b7 reference",
-    "model_id": "Nickel_van2026_reference"
-   }
-  ],
-  "dir": "toxin_nickel",
-  "extracted": 4,
-  "last_change": "2026-09-08T15:42:53.104812+00:00",
-  "name": "nickel",
-  "needs_review": 0,
-  "records": 4,
-  "rejected": 0,
-  "rendered": true,
-  "slug": "nickel",
   "stale": 0
  }
 }
