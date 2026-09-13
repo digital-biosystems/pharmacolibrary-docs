@@ -342,7 +342,7 @@
 
       var CANNED = {
         param: "-- a reported parameter for one drug, with the paper it came from.\n" +
-          "-- Use the boxes above; /*FILTER*/ is where they are spliced in.\n" +
+          "-- The drug and parameter boxes above rewrite this query.\n" +
           "SELECT d.generic_name AS drug, p.value, p.unit_verbatim AS unit,\n" +
           "       p.value_si, r.stem AS paper, p.link_method, r.model_id\n" +
           "FROM parameter p JOIN record r ON r.id = p.record_id\n" +
@@ -447,8 +447,9 @@
           render(DB.exec(sql));
           // Show the WHERE actually executed. The filter bug that shipped an hour ago ran a
           // query with no drug filter and looked exactly like a correct empty-filter result.
-          var where = (sql.match(/WHERE[\s\S]*?(?=ORDER BY|GROUP BY|LIMIT|$)/i) || [''])[0]
-                        .replace(/\s+/g, ' ').trim();
+          var body = sql.replace(/^\s*--.*$/gm, '');          // drop comment lines first
+          var where = (body.match(/\bWHERE\b[\s\S]*?(?=\bORDER BY\b|\bGROUP BY\b|\bLIMIT\b|$)/i)
+                       || [''])[0].replace(/\s+/g, ' ').trim();
           el('pkq-meta').textContent += '  ·  ' + Math.round(performance.now() - t0) + ' ms'
                                       + (where ? '  ·  ' + where : '');
         } catch (e) {
@@ -494,7 +495,12 @@
           sql = sql.replace("p.parameter_id = 'Q49'",
                             "lower(p.name) LIKE lower('%" + sq(code) + "%')");
         }
-        return sql.replace('/*FILTER*/', filters);
+        // split/join, not replace(): replace() with a STRING pattern substitutes only the
+        // FIRST match. The template's own help line used to mention /*FILTER*/, so the drug
+        // clause was spliced into a SQL COMMENT while the real marker in the WHERE stayed
+        // put — and SQLite reads a stray /*FILTER*/ as a block comment, so the query ran
+        // clean and unfiltered. Nothing to see in the console, wrong rows on the page.
+        return sql.split('/*FILTER*/').join(filters);
       }
 
       function fillLists() {
