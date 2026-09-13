@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;triflusal&quot;,&quot;href&quot;:&quot;drugs/drug_triflusal/&quot;},{&quot;label&quot;:&quot;Park_2014 \u00b7 shrinkage::healthy Korean male volunteers&quot;}]"></div>
+
 # triflusal — `Triflusal_Park2014_shrinkage_healthy_korean_male_volunteers`
 
 > ## <span class="pk-badge pk-badge--neutral">not_reviewed</span>

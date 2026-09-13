@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;amlodipine&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/&quot;},{&quot;label&quot;:&quot;Vlachou_2021 \u00b7 parameter&quot;}]"></div>
+
 # amlodipine — `Amlodipine_Vlachou2021_parameter`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -114,6 +116,12 @@ Vlachou M; Karalis V et al. (2021). Materials (Basel, Switzerland) 14
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_amlodipine/Amlodipine_Vlachou2021_parameter/Amlodipine_Vlachou2021_parameter.svg" alt="Amlodipine_Vlachou2021_parameter diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fibrinogen, human&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/&quot;},{&quot;label&quot;:&quot;Khayat_2023 \u00b7 pediatric patients with congenital afibrinogenemia&quot;}]"></div>
+
 # fibrinogen, human — `FibrinogenHuman_Khayat2023_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

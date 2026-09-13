@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;doxorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/&quot;},{&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016 \u00b7 a_u_c_total_ng_ml&quot;}]"></div>
+
 # doxorubicin — `Doxorubicin_PrezBlanco2016_a_u_c_total_ng_ml`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>

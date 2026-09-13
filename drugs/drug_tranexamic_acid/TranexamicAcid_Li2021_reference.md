@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;tranexamic acid&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/&quot;},{&quot;label&quot;:&quot;Li_2021 \u00b7 pregnant women undergoing caesarean delivery&quot;}]"></div>
+
 # tranexamic acid — `TranexamicAcid_Li2021_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

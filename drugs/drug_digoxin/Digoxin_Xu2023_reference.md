@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01A&quot;,&quot;href&quot;:&quot;atc/C01A.md&quot;},{&quot;label&quot;:&quot;digoxin&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/&quot;},{&quot;label&quot;:&quot;Xu_2023 \u00b7 review reference&quot;}]"></div>
+
 # digoxin — `Digoxin_Xu2023_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -75,6 +77,12 @@ Xu B; Yang T; Zhou J; Zheng Y; Wang J; Liu Q; Li D; Zhang Y; Liu M; Wu X et al. 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_digoxin/Digoxin_Xu2023_reference/Digoxin_Xu2023_reference.svg" alt="Digoxin_Xu2023_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

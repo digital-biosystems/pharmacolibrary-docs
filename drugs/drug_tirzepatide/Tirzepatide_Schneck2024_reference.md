@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;tirzepatide&quot;,&quot;href&quot;:&quot;drugs/drug_tirzepatide/&quot;},{&quot;label&quot;:&quot;Schneck_2024 \u00b7 adults with type 2 diabetes mellitus&quot;}]"></div>
+
 # tirzepatide — `Tirzepatide_Schneck2024_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

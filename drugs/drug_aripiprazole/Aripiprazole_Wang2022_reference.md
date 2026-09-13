@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;aripiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_aripiprazole/&quot;},{&quot;label&quot;:&quot;Wang_2022 \u00b7 subjects with schizophrenia or schizoaffective disorder and healthy subjects&quot;}]"></div>
+
 # aripiprazole — `Aripiprazole_Wang2022_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;dobutamine&quot;,&quot;href&quot;:&quot;drugs/drug_dobutamine/&quot;},{&quot;label&quot;:&quot;Hallik_2020 \u00b7 critically ill neonates&quot;}]"></div>
+
 # dobutamine — `Dobutamine_Hallik2020_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -81,6 +83,12 @@ Hallik M; Ilmoja ML; Standing JF; Soeorg H; Jalas T; Raidmäe M; et al. et al. (
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_dobutamine/Dobutamine_Hallik2020_reference/Dobutamine_Hallik2020_reference.svg" alt="Dobutamine_Hallik2020_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

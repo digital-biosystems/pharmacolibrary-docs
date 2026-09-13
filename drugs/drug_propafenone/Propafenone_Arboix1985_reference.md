@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;propafenone&quot;,&quot;href&quot;:&quot;drugs/drug_propafenone/&quot;},{&quot;label&quot;:&quot;Arboix_1985 \u00b7 patients with paroxysmal supraventricular tachycardia&quot;}]"></div>
+
 # propafenone — `Propafenone_Arboix1985_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

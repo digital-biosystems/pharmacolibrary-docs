@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;Arginine&quot;,&quot;href&quot;:&quot;drugs/drug_arginine/&quot;},{&quot;label&quot;:&quot;Camargo_2025 \u00b7 review reference&quot;}]"></div>
+
 # Arginine — `Arginine_Camargo2025_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -82,6 +84,12 @@ Camargo S; Medeiros C; Silva L; Jesus RL; Araujo F; Brito D; Alves Q; Moraes R; 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_arginine/Arginine_Camargo2025_reference/Arginine_Camargo2025_reference.svg" alt="Arginine_Camargo2025_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

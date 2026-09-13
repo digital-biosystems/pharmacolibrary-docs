@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;bisoprolol&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/&quot;},{&quot;label&quot;:&quot;Mom\u010dilovi\u0107_2020 \u00b7 adults with type 2 diabetes mellitus and hypertension&quot;}]"></div>
+
 # bisoprolol — `Bisoprolol_Momilovi2020_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

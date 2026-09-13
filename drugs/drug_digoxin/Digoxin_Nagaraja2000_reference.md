@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01A&quot;,&quot;href&quot;:&quot;atc/C01A.md&quot;},{&quot;label&quot;:&quot;digoxin&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/&quot;},{&quot;label&quot;:&quot;Nagaraja_2000 \u00b7 Korean patients&quot;}]"></div>
+
 # digoxin — `Digoxin_Nagaraja2000_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -87,6 +89,12 @@ Nagaraja NV; Park YJ; Jeon S; Sands CD; Derendorf H et al. (2000). International
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_digoxin/Digoxin_Nagaraja2000_reference/Digoxin_Nagaraja2000_reference.svg" alt="Digoxin_Nagaraja2000_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

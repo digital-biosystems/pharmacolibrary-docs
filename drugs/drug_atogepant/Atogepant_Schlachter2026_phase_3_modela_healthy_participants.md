@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;atogepant&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/&quot;},{&quot;label&quot;:&quot;Schlachter_2026 \u00b7 phase_3_modela::healthy participants and patients with migraine&quot;}]"></div>
+
 # atogepant — `Atogepant_Schlachter2026_phase_3_modela_healthy_participants`
 
 > ## <span class="pk-badge pk-badge--neutral">not_reviewed</span>

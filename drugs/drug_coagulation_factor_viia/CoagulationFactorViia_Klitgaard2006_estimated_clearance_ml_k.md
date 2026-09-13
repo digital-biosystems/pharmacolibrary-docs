@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;coagulation factor VIIa&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_viia/&quot;},{&quot;label&quot;:&quot;Klitgaard_2006 \u00b7 estimated_clearance_ml_kg_1_h_1&quot;}]"></div>
+
 # coagulation factor VIIa — `CoagulationFactorViia_Klitgaard2006_estimated_clearance_ml_k`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -21,7 +23,6 @@ Klitgaard T; Tabanera y Palacios R; Boffard KD; Iau PT; Warren B; Rizoli S; et a
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Hemophiliaa | `Q22` · CL | 29 | ml.kg-1.h-1 | 5.638888888888889e-07 | [ml] / [[h] · [kg]] | not captured | llm (0.6) | Klitgaard_2006_table_3:row0:col2 | — | not captured |
-| Volume of distribution (ml.kg-1) | `Q61` · V | 83.0 | ml.kg-1 | 0.00581 | L | not captured | review_gapfill (0.7) | Klitgaard_2006:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -37,6 +38,7 @@ Klitgaard T; Tabanera y Palacios R; Boffard KD; Iau PT; Warren B; Rizoli S; et a
 - gap-filled Q61 (V) from Klitgaard_2006's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- removed gap-filled parent disposition (Q61): this record measures 'factor VII coagulant activity', not coagulation_factor_viia, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
 
 **Extraction notes:**
 - companion parameter table 3 transcribed (5 record(s))

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;exenatide&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/&quot;},{&quot;label&quot;:&quot;Cirincione_2017 \u00b7 single_dose_model_parameter_estimate::patients with type 2 diabetes mellitus&quot;}]"></div>
+
 # exenatide — `Exenatide_Cirincione2017_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

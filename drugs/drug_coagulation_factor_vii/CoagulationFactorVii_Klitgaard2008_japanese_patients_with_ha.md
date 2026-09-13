@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;coagulation factor VII&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_vii/&quot;},{&quot;label&quot;:&quot;Klitgaard_2008 \u00b7 japanese_patients_with_haemophilia_a_or_b_14::mixed patient populations (haemophilia, liver surgery, trauma, etc.)&quot;}]"></div>
+
 # coagulation factor VII — `CoagulationFactorVii_Klitgaard2008_japanese_patients_with_ha`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

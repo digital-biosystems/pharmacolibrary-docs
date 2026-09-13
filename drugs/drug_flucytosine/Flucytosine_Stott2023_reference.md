@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D01A&quot;,&quot;href&quot;:&quot;atc/D01A.md&quot;},{&quot;label&quot;:&quot;flucytosine&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/&quot;},{&quot;label&quot;:&quot;Stott_2023 \u00b7 adults with HIV-associated cryptococcal meningoencephalitis&quot;}]"></div>
+
 # flucytosine — `Flucytosine_Stott2023_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -90,6 +92,12 @@ Stott KE; Ahmadu A; Kajanga C; Moyo M; Gondwe E; Chimang'anga W; et al. et al. (
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_flucytosine/Flucytosine_Stott2023_reference/Flucytosine_Stott2023_reference.svg" alt="Flucytosine_Stott2023_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

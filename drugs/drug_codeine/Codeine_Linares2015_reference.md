@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/&quot;},{&quot;label&quot;:&quot;Linares_2015 \u00b7 adults with CYP2D6 phenotypes&quot;}]"></div>
+
 # codeine — `Codeine_Linares2015_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

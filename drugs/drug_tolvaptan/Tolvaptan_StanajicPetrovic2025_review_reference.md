@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03X&quot;,&quot;href&quot;:&quot;atc/C03X.md&quot;},{&quot;label&quot;:&quot;tolvaptan&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/&quot;},{&quot;label&quot;:&quot;Stanajic-Petrovic_2025 \u00b7 review reference&quot;}]"></div>
+
 # tolvaptan — `Tolvaptan_StanajicPetrovic2025_review_reference`
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>

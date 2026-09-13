@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;nalbuphine&quot;,&quot;href&quot;:&quot;drugs/drug_nalbuphine/&quot;},{&quot;label&quot;:&quot;Bressolle_2011 \u00b7 iiv::children after surgery&quot;}]"></div>
+
 # nalbuphine — `Nalbuphine_Bressolle2011_iiv_children_after_surgery`
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>

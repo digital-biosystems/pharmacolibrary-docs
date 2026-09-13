@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;atorvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/&quot;},{&quot;label&quot;:&quot;Stillemans_2022 \u00b7 estimate&quot;}]"></div>
+
 # atorvastatin — `Atorvastatin_Stillemans2022_estimate`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

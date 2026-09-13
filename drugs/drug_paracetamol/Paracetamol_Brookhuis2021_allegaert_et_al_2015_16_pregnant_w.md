@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Brookhuis_2021 \u00b7 allegaert_et_al_2015_16::pregnant women&quot;}]"></div>
+
 # paracetamol — `Paracetamol_Brookhuis2021_allegaert_et_al_2015_16_pregnant_w`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

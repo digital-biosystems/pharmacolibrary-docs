@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03D&quot;,&quot;href&quot;:&quot;atc/A03D.md&quot;},{&quot;label&quot;:&quot;trospium&quot;,&quot;href&quot;:&quot;drugs/drug_trospium/&quot;},{&quot;label&quot;:&quot;Doroshyenko_2005 \u00b7 patients with overactive bladder&quot;}]"></div>
+
 # trospium — `Trospium_Doroshyenko2005_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

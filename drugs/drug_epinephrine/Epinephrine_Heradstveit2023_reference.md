@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;epinephrine&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/&quot;},{&quot;label&quot;:&quot;Heradstveit_2023 \u00b7 patients with cardiac arrest&quot;}]"></div>
+
 # epinephrine — `Epinephrine_Heradstveit2023_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -87,6 +89,12 @@ Heradstveit BE; Sunde GA; Asbjørnsen H; Aalvik R; Wentzel-Larsen T; Heltne JK e
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_epinephrine/Epinephrine_Heradstveit2023_reference/Epinephrine_Heradstveit2023_reference.svg" alt="Epinephrine_Heradstveit2023_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05A&quot;,&quot;href&quot;:&quot;atc/A05A.md&quot;},{&quot;label&quot;:&quot;cholic acid&quot;,&quot;href&quot;:&quot;drugs/drug_cholic_acid/&quot;},{&quot;label&quot;:&quot;Quarfordt_1973 \u00b7 normal humans and a patient with macronodular cirrhosis&quot;}]"></div>
+
 # cholic acid — `CholicAcid_Quarfordt1973_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

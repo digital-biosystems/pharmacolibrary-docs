@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;erythropoietin&quot;,&quot;href&quot;:&quot;drugs/drug_erythropoietin/&quot;},{&quot;label&quot;:&quot;Frymoyer_2017 \u00b7 neonates with hypoxic-ischemic encephalopathy receiving hypothermia&quot;}]"></div>
+
 # erythropoietin — `Erythropoietin_Frymoyer2017_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

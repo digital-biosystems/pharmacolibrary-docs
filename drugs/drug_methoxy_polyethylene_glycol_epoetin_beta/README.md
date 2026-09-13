@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;methoxy polyethylene glycol-epoetin beta&quot;}]"></div>
+
 # methoxy polyethylene glycol-epoetin beta
 
 - **generic name:** methoxy polyethylene glycol-epoetin beta

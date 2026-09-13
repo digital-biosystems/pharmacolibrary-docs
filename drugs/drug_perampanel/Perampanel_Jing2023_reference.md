@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;perampanel&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/&quot;},{&quot;label&quot;:&quot;Jing_2023 \u00b7 review reference&quot;}]"></div>
+
 # perampanel — `Perampanel_Jing2023_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -79,6 +81,12 @@ Jing S; Shiba S; Morita M; Yasuda S; Lin Y et al. (2023). Clinical drug investig
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_perampanel/Perampanel_Jing2023_reference/Perampanel_Jing2023_reference.svg" alt="Perampanel_Jing2023_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

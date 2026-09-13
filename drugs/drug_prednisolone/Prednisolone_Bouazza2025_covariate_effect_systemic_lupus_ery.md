@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;prednisolone&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/&quot;},{&quot;label&quot;:&quot;Bouazza_2025 \u00b7 covariate_effect::systemic lupus erythematosus patients&quot;}]"></div>
+
 # prednisolone — `Prednisolone_Bouazza2025_covariate_effect_systemic_lupus_ery`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

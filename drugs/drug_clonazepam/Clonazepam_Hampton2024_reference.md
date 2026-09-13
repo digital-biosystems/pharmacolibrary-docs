@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;clonazepam&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/&quot;},{&quot;label&quot;:&quot;Hampton_2024 \u00b7 growing commercial cross pigs&quot;}]"></div>
+
 # clonazepam — `Clonazepam_Hampton2024_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

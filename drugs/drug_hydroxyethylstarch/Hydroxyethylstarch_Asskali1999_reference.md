@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05A&quot;,&quot;href&quot;:&quot;atc/B05A.md&quot;},{&quot;label&quot;:&quot;hydroxyethylstarch&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/&quot;},{&quot;label&quot;:&quot;Asskali_1999 \u00b7 healthy volunteers&quot;}]"></div>
+
 # hydroxyethylstarch — `Hydroxyethylstarch_Asskali1999_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -83,6 +85,12 @@ Asskali F; Förster H et al. (1999). Anasthesiologie, Intensivmedizin, Notfallme
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Asskali1999_reference/Hydroxyethylstarch_Asskali1999_reference.svg" alt="Hydroxyethylstarch_Asskali1999_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

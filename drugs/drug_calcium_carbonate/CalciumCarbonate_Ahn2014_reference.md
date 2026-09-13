@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02A&quot;,&quot;href&quot;:&quot;atc/A02A.md&quot;},{&quot;label&quot;:&quot;calcium carbonate&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_carbonate/&quot;},{&quot;label&quot;:&quot;Ahn_2014 \u00b7 healthy subjects&quot;}]"></div>
+
 # calcium carbonate — `CalciumCarbonate_Ahn2014_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -31,8 +33,6 @@ Ahn JE; Jeon S; Lee J; Han S; Yim DS et al. (2014). The Korean journal of physio
 |---|---|---|---|---|---|---|---|---|---|---|
 | ka (hr-1) | `Q49` · kabs | —(suppressed) | hr-1 | — | [1] / [h] | not captured | exact (1.0) | Ahn_2014_table_p3_1:row4:col1, Ahn_2014_table_p3_1:row4:col3 | — | 0.390 (None% RSE) |
 | Relative F1 | `Q87` · Frel | —(suppressed) | not captured | — | not captured | not captured | llm_corrected (0.6) | Ahn_2014_table_p3_1:row6:col1, Ahn_2014_table_p3_1:row6:col3 | — | not captured |
-| CL (L/h) | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | review_gapfill (0.7) | Ekobena_2025:review | — | not captured |
-| apparent distribution volume | `Q61` · V | —(suppressed) | L | — | L | not captured | review_gapfill (0.7) | Ekobena_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -55,6 +55,7 @@ Ahn JE; Jeon S; Lee J; Han S; Yim DS et al. (2014). The Korean journal of physio
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- removed gap-filled parent disposition (Q22, Q61): this record measures 'parathyroid hormone', not calcium_carbonate, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
 
 **Extraction notes:**
 - final table T2: grid unusable → re-running vision table extraction for Ahn_2014
@@ -119,6 +120,12 @@ Ahn JE; Jeon S; Lee J; Han S; Yim DS et al. (2014). The Korean journal of physio
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference.svg" alt="CalciumCarbonate_Ahn2014_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
+
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
@@ -127,7 +134,7 @@ Each archive holds the model source, a script that simulates it against the appr
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference_modelica.zip" download>CalciumCarbonate_Ahn2014_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference_fmi.zip" download>CalciumCarbonate_Ahn2014_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference_fmi.zip" download>CalciumCarbonate_Ahn2014_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference_matlab.zip" download>CalciumCarbonate_Ahn2014_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference_matlab_simbio.zip" download>CalciumCarbonate_Ahn2014_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference_sbml.zip" download>CalciumCarbonate_Ahn2014_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>

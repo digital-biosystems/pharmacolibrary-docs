@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;dexamethasone&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/&quot;},{&quot;label&quot;:&quot;\u015awierczek_2023 \u00b7 adults with COVID-19&quot;}]"></div>
+
 # dexamethasone — `Dexamethasone_wierczek2023_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

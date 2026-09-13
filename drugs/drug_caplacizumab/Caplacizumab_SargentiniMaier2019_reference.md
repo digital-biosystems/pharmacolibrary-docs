@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;caplacizumab&quot;,&quot;href&quot;:&quot;drugs/drug_caplacizumab/&quot;},{&quot;label&quot;:&quot;Sargentini-Maier_2019 \u00b7 adults with acquired thrombotic thrombocytopenic purpura&quot;}]"></div>
+
 # caplacizumab — `Caplacizumab_SargentiniMaier2019_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

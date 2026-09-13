@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;ciprofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/&quot;},{&quot;label&quot;:&quot;Alonso_2021 \u00b7 review reference&quot;}]"></div>
+
 # ciprofloxacin — `Ciprofloxacin_Alonso2021_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -86,6 +88,12 @@ Alonso R; Rodríguez-Achaerandio A; Aguirre-Quiñonero A; Artetxe A; Martínez-B
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference/Ciprofloxacin_Alonso2021_reference.svg" alt="Ciprofloxacin_Alonso2021_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

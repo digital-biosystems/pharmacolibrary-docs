@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03A&quot;,&quot;href&quot;:&quot;atc/H03A.md&quot;},{&quot;label&quot;:&quot;Levothyroxine&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/&quot;},{&quot;label&quot;:&quot;Fitch_2025 \u00b7 1200_g_xp_8121_sc::healthy adults&quot;}]"></div>
+
 # Levothyroxine — `Levothyroxine_Fitch2025_1200_g_xp_8121_sc_healthy_adults`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

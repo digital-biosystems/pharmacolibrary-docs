@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;lanadelumab&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/&quot;},{&quot;label&quot;:&quot;Wang_2020 \u00b7 base::healthy subjects and patients with hereditary angioedema&quot;}]"></div>
+
 # lanadelumab — `Lanadelumab_Wang2020_base_healthy_subjects_and_patients_with`
 
 > ## <span class="pk-badge pk-badge--neutral">not_reviewed</span>

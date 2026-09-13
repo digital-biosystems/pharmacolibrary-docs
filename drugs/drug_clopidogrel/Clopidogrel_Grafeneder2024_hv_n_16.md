@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;clopidogrel&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/&quot;},{&quot;label&quot;:&quot;Grafeneder_2024 \u00b7 hv_n_16&quot;}]"></div>
+
 # clopidogrel — `Clopidogrel_Grafeneder2024_hv_n_16`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -23,8 +25,6 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
 | intermediate_metabolizer | `Q900` · intermediate_metabolizer | 7 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl2:row20:col1 | — | not captured |
 | normal_metabolizer | `Q900` · normal_metabolizer | 8 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl2:row21:col1 | — | not captured |
 | rapid_metabolizer | `Q900` · rapid_metabolizer | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl2:row22:col1 | — | not captured |
-| CL (L/h) | `Q22` · CL | 8.51 | L/h | 2.363888888888889e-06 | L/h | not captured | review_gapfill (0.7) | Henrich_2021:review | — | not captured |
-| ka (1/h) | `Q49` · kabs | 5.95 | 1/h | 0.0016527777777777778 | 1/h | not captured | review_gapfill (0.7) | Henrich_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -45,6 +45,7 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Henrich_2021's review values (primary lacked it)
+- removed gap-filled parent disposition (Q22, Q49): this record measures 'clopidogrel active metabolite', not clopidogrel, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
 
 **Extraction notes:**
 - unparsed cell Grafeneder_2024_table_3:row3:col1 = '1.9 (1.1–2.1)'

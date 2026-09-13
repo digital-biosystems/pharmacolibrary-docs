@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;2378_tetrachlorodibenzo_p_dioxin&quot;,&quot;href&quot;:&quot;drugs/toxin_2378_tetrachlorodibenzo_p_dioxin/&quot;},{&quot;label&quot;:&quot;Weber_1993 \u00b7 male Sprague-Dawley rats&quot;}]"></div>
+
 # 2378_tetrachlorodibenzo_p_dioxin — `D_2378TetrachlorodibenzoPDioxin_Weber1993_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

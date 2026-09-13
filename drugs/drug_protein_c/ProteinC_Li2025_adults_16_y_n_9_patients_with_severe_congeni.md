@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;protein C&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/&quot;},{&quot;label&quot;:&quot;Li_2025 \u00b7 adults_16_y_n_9::patients with severe congenital or acquired protein C deficiency&quot;}]"></div>
+
 # protein C — `ProteinC_Li2025_adults_16_y_n_9_patients_with_severe_congeni`
 
 > ## <span class="pk-badge pk-badge--neutral">not_reviewed</span>

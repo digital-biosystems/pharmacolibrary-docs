@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;atorvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/&quot;},{&quot;label&quot;:&quot;Morath_2025 \u00b7 review reference&quot;}]"></div>
+
 # atorvastatin — `Atorvastatin_Morath2025_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -81,6 +83,12 @@ Morath B; Foerster KI; Chiriac U; Zaradzki M; Hoppe-Tichy T; Schrey D; Burhenne 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference/Atorvastatin_Morath2025_reference.svg" alt="Atorvastatin_Morath2025_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

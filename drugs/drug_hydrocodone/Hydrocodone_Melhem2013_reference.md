@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;hydrocodone&quot;,&quot;href&quot;:&quot;drugs/drug_hydrocodone/&quot;},{&quot;label&quot;:&quot;Melhem_2013 \u00b7 reference&quot;}]"></div>
+
 # hydrocodone — `Hydrocodone_Melhem2013_reference`
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>
@@ -109,6 +111,12 @@ Melhem MR; Rubino CM; Farr SJ; Robinson CY et al. (2013). Clinical pharmacokinet
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_hydrocodone/Hydrocodone_Melhem2013_reference/Hydrocodone_Melhem2013_reference.svg" alt="Hydrocodone_Melhem2013_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

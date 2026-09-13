@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M04A&quot;,&quot;href&quot;:&quot;atc/M04A.md&quot;},{&quot;label&quot;:&quot;allopurinol&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/&quot;},{&quot;label&quot;:&quot;Wright_2013 \u00b7 final&quot;}]"></div>
+
 # allopurinol — `Allopurinol_Wright2013_final`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
@@ -24,10 +26,6 @@ Wright DF; Stamp LK; Merriman TR; Barclay ML; Duffull SB; Holford NH et al. (201
 |---|---|---|---|---|---|---|---|---|---|---|
 | peripheral volume; Q, inter- | `Q64` · V2 | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | tab_1:row14:col3 | — | not captured |
 | volume; F, bioavailability; ω, | `Q40` · Fab | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | tab_1:row16:col3 | — | not captured |
-| CL I | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | review_gapfill (0.7) | Aksenov_2018:review | — | not captured |
-| V UA | `Q61` · V | —(suppressed) | L | — | L | not captured | review_gapfill (0.7) | Aksenov_2018:review | — | not captured |
-| absorption rate | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review_gapfill (0.7) | Ekobena_2025:review | — | not captured |
-| lag time | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review_gapfill (0.7) | Ekobena_2025:review | — | not captured |
 | BCRP | `Q900` · BCRP | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
@@ -46,6 +44,7 @@ Wright DF; Stamp LK; Merriman TR; Barclay ML; Duffull SB; Holford NH et al. (201
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Ekobena_2025's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Ekobena_2025's review values (primary lacked it)
+- removed gap-filled parent disposition (Q22, Q61, Q49, Q83): this record measures 'oxypurinol', not allopurinol, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
 
 **Extraction notes:**
 - unparsed cell tab_1:row14:col1 = 'ω V2allo (CV%)'

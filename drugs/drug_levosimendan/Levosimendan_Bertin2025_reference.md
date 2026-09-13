@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;levosimendan&quot;,&quot;href&quot;:&quot;drugs/drug_levosimendan/&quot;},{&quot;label&quot;:&quot;Bertin_2025 \u00b7 review reference&quot;}]"></div>
+
 # levosimendan — `Levosimendan_Bertin2025_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -75,6 +77,12 @@ Bertin S; Haefliger D; Perez MH; Guidi M; Decosterd LA; Chanez V; et al. et al. 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_levosimendan/Levosimendan_Bertin2025_reference/Levosimendan_Bertin2025_reference.svg" alt="Levosimendan_Bertin2025_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

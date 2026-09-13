@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M04A&quot;,&quot;href&quot;:&quot;atc/M04A.md&quot;},{&quot;label&quot;:&quot;allopurinol&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/&quot;},{&quot;label&quot;:&quot;Wright_2017 \u00b7 reference&quot;}]"></div>
+
 # allopurinol — `Allopurinol_Wright2017_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
@@ -39,8 +41,6 @@ Wright DF; Doogue MP; Barclay ML; Chapman PT; Cross NB; Irvine JH; et al. et al.
 | θ CLHD (L/h) | `Q356` · CL_HD | —(suppressed) | L/h | — | [l] / [h] | not captured | boundary_relink (0.8) | tab_1:row5:col1 | categorical_fractional on BCRP={'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} (AA) | not captured |
 | θ V (L/70 kg TBW) | `Q61` · V | —(suppressed) | L/70 kg TBW | — | [l] / [70kgtbw] | not captured | llm (0.5) | tab_1:row6:col1 | — | not captured |
 | K a (h -1 ) | `Q95` · t1/2ka | —(suppressed) | h -1 | — | [1] / [h] | not captured | llm (0.5) | tab_1:row7:col1 | — | not captured |
-| absorption rate | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review_gapfill (0.7) | Ekobena_2025:review | — | not captured |
-| lag time | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review_gapfill (0.7) | Ekobena_2025:review | — | not captured |
 | BCRP | `Q900` · BCRP | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
@@ -65,6 +65,7 @@ Wright DF; Doogue MP; Barclay ML; Chapman PT; Cross NB; Irvine JH; et al. et al.
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Ekobena_2025's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Ekobena_2025's review values (primary lacked it)
+- removed gap-filled parent disposition (Q49, Q83): this record measures 'oxypurinol', not allopurinol, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
 
 **Extraction notes:**
 - unparsed cell tab_1:row3:col2 = '1.25 [0.90-1.87]'

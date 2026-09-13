@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D01A&quot;,&quot;href&quot;:&quot;atc/D01A.md&quot;},{&quot;label&quot;:&quot;flucytosine&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/&quot;},{&quot;label&quot;:&quot;Stegman_1999 \u00b7 human tumor xenografts in nude mice&quot;}]"></div>
+
 # flucytosine — `Flucytosine_Stegman1999_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

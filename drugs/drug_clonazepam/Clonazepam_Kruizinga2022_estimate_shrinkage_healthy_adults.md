@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;clonazepam&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/&quot;},{&quot;label&quot;:&quot;Kruizinga_2022 \u00b7 estimate_shrinkage::healthy adults&quot;}]"></div>
+
 # clonazepam — `Clonazepam_Kruizinga2022_estimate_shrinkage_healthy_adults`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

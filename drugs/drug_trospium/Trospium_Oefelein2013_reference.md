@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03D&quot;,&quot;href&quot;:&quot;atc/A03D.md&quot;},{&quot;label&quot;:&quot;trospium&quot;,&quot;href&quot;:&quot;drugs/drug_trospium/&quot;},{&quot;label&quot;:&quot;Oefelein_2013 \u00b7 review reference&quot;}]"></div>
+
 # trospium — `Trospium_Oefelein2013_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -81,6 +83,12 @@ Oefelein MG; Tong W; Kerr S; Bhasi K; Patel RK; Yu D et al. (2013). Clinical dru
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_trospium/Trospium_Oefelein2013_reference/Trospium_Oefelein2013_reference.svg" alt="Trospium_Oefelein2013_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

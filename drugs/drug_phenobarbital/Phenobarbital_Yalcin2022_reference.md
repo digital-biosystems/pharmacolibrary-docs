@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;phenobarbital&quot;,&quot;href&quot;:&quot;drugs/drug_phenobarbital/&quot;},{&quot;label&quot;:&quot;Yalcin_2022 \u00b7 review reference&quot;}]"></div>
+
 # phenobarbital — `Phenobarbital_Yalcin2022_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -75,6 +77,12 @@ Yalcin N; Sürmelioğlu N; Allegaert K et al. (2022). BMJ paediatrics open 6
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_phenobarbital/Phenobarbital_Yalcin2022_reference/Phenobarbital_Yalcin2022_reference.svg" alt="Phenobarbital_Yalcin2022_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;tiropramide&quot;,&quot;href&quot;:&quot;drugs/drug_tiropramide/&quot;},{&quot;label&quot;:&quot;Jeong_2020 \u00b7 shrinkage&quot;}]"></div>
+
 # tiropramide — `Tiropramide_Jeong2020_shrinkage`
 
 > ## <span class="pk-badge pk-badge--neutral">None</span>

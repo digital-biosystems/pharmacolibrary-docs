@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;gentamicin&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/&quot;},{&quot;label&quot;:&quot;Crcek_2019 \u00b7 paediatric patients&quot;}]"></div>
+
 # gentamicin — `Gentamicin_Crcek2019_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -78,6 +80,12 @@ Crcek M; Zdovc J; Kerec Kos M et al. (2019). Journal of clinical pharmacy and th
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_gentamicin/Gentamicin_Crcek2019_reference/Gentamicin_Crcek2019_reference.svg" alt="Gentamicin_Crcek2019_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ticagrelor&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/&quot;},{&quot;label&quot;:&quot;Li_2016 \u00b7 patients with acute coronary syndromes&quot;}]"></div>
+
 # ticagrelor — `Ticagrelor_Li2016_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

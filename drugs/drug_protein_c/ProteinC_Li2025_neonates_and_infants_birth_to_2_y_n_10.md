@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;protein C&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/&quot;},{&quot;label&quot;:&quot;Li_2025 \u00b7 neonates_and_infants_birth_to_2_y_n_10&quot;}]"></div>
+
 # protein C — `ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10`
 
 > ## <span class="pk-badge pk-badge--neutral">None</span>

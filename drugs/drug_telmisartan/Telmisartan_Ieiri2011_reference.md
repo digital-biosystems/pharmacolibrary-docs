@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;telmisartan&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/&quot;},{&quot;label&quot;:&quot;Ieiri_2011 \u00b7 healthy volunteers&quot;}]"></div>
+
 # telmisartan — `Telmisartan_Ieiri2011_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -111,6 +113,12 @@ Ieiri I; Nishimura C; Maeda K; Sasaki T; Kimura M; Chiyoda T; et al. et al. (201
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference/Telmisartan_Ieiri2011_reference.svg" alt="Telmisartan_Ieiri2011_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

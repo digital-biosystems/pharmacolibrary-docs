@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;lacosamide&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/&quot;},{&quot;label&quot;:&quot;Yu_2026 \u00b7 adult patients with epilepsy&quot;}]"></div>
+
 # lacosamide — `Lacosamide_Yu2026_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -99,6 +101,12 @@ Yu L; Mao F; Chen S; Yu K; Hu Y; Chen J; et al. et al. (2026). BMC pharmacology 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_lacosamide/Lacosamide_Yu2026_reference/Lacosamide_Yu2026_reference.svg" alt="Lacosamide_Yu2026_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

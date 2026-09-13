@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;chloramphenicol&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/&quot;},{&quot;label&quot;:&quot;Anderson_1983 \u00b7 non-lactating Holstein cows&quot;}]"></div>
+
 # chloramphenicol — `Chloramphenicol_Anderson1983_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;flecainide&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/&quot;},{&quot;label&quot;:&quot;Doki_2006 \u00b7 Japanese patients with supraventricular tachyarrhythmia&quot;}]"></div>
+
 # flecainide — `Flecainide_Doki2006_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;bleomycin&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/&quot;},{&quot;label&quot;:&quot;Schober_1978_2 \u00b7 patients with cervical carcinoma&quot;}]"></div>
+
 # bleomycin — `Bleomycin_Schober1978v2_reference`
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>

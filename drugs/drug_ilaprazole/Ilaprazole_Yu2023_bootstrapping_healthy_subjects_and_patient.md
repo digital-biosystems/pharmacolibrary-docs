@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;ilaprazole&quot;,&quot;href&quot;:&quot;drugs/drug_ilaprazole/&quot;},{&quot;label&quot;:&quot;Yu_2023 \u00b7 bootstrapping::healthy subjects and patients with duodenal ulcer&quot;}]"></div>
+
 # ilaprazole — `Ilaprazole_Yu2023_bootstrapping_healthy_subjects_and_patient`
 
 > ## <span class="pk-badge pk-badge--neutral">not_reviewed</span>

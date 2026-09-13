@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;oxycodone&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/&quot;},{&quot;label&quot;:&quot;Saari_2012 \u00b7 adults and elderly patients&quot;}]"></div>
+
 # oxycodone — `Oxycodone_Saari2012_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
@@ -34,10 +36,10 @@ Saari TI; Ihmsen H; Neuvonen PJ; Olkkola KT; Schwilden H et al. (2012). British 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | u 1 (litre h 21 ) | `Q24` · CLu | —(suppressed) | litre h 21 | — | [l] · [h21] | not captured | llm (0.5) | tab_1:row2:col1, tab_1:row2:col2, tab_1:row2:col3, tab_1:row2:col4 | — | not captured |
-| u 2 (litre) | `Q61` · V | —(suppressed) | litre | — | [l] | not captured | llm (0.5) | tab_1:row3:col1, tab_1:row3:col2, tab_1:row3:col3, tab_1:row3:col4 | — | not captured |
+| u 2 (litre) | `Q61` · V | —(suppressed) | litre | — | L | not captured | llm (0.5) | tab_1:row3:col1, tab_1:row3:col2, tab_1:row3:col3, tab_1:row3:col4 | — | not captured |
 | t1 2 a (min) | `Q57` · t1/2z | —(suppressed) | min | — | [min] | not captured | llm (0.5) | tab_1:row9:col2, tab_1:row9:col4 | — | not captured |
 | t1 2 b (h) | `Q60` · t1/2β | —(suppressed) | h | — | [h] | not captured | llm (0.5) | tab_1:row10:col2, tab_1:row10:col4 | — | not captured |
-| V ss (litre) | `Q65` · Vss | —(suppressed) | litre | — | [l] | not captured | llm (0.5) | tab_1:row11:col2, tab_1:row11:col4 | — | not captured |
+| V ss (litre) | `Q65` · Vss | —(suppressed) | litre | — | L | not captured | llm (0.5) | tab_1:row11:col2, tab_1:row11:col4 | — | not captured |
 | v 2 1 | `Q63` · V1 | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_1:row13:col2, tab_1:row13:col3, tab_1:row13:col4 | — | not captured |
 | v 2 2 | `Q64` · V2 | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_1:row14:col2, tab_1:row14:col3, tab_1:row14:col4 | — | not captured |
 | v 2 3 | `Q77` · V3 | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_1:row15:col2, tab_1:row15:col3, tab_1:row15:col4 | — | not captured |
@@ -65,6 +67,8 @@ Saari TI; Ihmsen H; Neuvonen PJ; Olkkola KT; Schwilden H et al. (2012). British 
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=oxycodone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- unit re-normalised: V 'litre' now converts (value unchanged)
+- unit re-normalised: Vss 'litre' now converts (value unchanged)
 
 **Extraction notes:**
 - unparsed cell tab_1:row2:col5 = '45.6, 50.8'

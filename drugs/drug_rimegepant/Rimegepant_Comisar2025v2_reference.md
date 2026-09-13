@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;rimegepant&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/&quot;},{&quot;label&quot;:&quot;Comisar_2025_2 \u00b7 healthy adults, elderly, adults with renal or hepatic dysfunction, Japanese or Chinese adults&quot;}]"></div>
+
 # rimegepant — `Rimegepant_Comisar2025v2_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

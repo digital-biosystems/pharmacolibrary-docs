@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;doxycycline&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/&quot;},{&quot;label&quot;:&quot;Thompson_2019 \u00b7 children&quot;}]"></div>
+
 # doxycycline — `Doxycycline_Thompson2019_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -81,6 +83,12 @@ Thompson EJ; Wu H; Melloni C; Balevic S; Sullivan JE; Laughon M; et al. et al. (
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_doxycycline/Doxycycline_Thompson2019_reference/Doxycycline_Thompson2019_reference.svg" alt="Doxycycline_Thompson2019_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

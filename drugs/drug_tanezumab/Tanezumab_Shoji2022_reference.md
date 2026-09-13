@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;tanezumab&quot;,&quot;href&quot;:&quot;drugs/drug_tanezumab/&quot;},{&quot;label&quot;:&quot;Shoji_2022 \u00b7 patients with osteoarthritis or chronic low back pain&quot;}]"></div>
+
 # tanezumab — `Tanezumab_Shoji2022_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

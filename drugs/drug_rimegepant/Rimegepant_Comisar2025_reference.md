@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;rimegepant&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/&quot;},{&quot;label&quot;:&quot;Comisar_2025 \u00b7 pediatric and adult patients with migraine&quot;}]"></div>
+
 # rimegepant — `Rimegepant_Comisar2025_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

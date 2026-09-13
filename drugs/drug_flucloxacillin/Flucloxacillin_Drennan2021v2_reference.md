@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;flucloxacillin&quot;,&quot;href&quot;:&quot;drugs/drug_flucloxacillin/&quot;},{&quot;label&quot;:&quot;Drennan_2021_2 \u00b7 adults treated with oral flucloxacillin plus probenecid&quot;}]"></div>
+
 # flucloxacillin — `Flucloxacillin_Drennan2021v2_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

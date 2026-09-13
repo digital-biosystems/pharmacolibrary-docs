@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;dabrafenib&quot;,&quot;href&quot;:&quot;drugs/drug_dabrafenib/&quot;},{&quot;label&quot;:&quot;Balakirouchenane_2020 \u00b7 patients with BRAF-mutated metastatic melanoma&quot;}]"></div>
+
 # dabrafenib — `Dabrafenib_Balakirouchenane2020_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

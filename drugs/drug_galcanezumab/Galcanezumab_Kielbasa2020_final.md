@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;galcanezumab&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/&quot;},{&quot;label&quot;:&quot;Kielbasa_2020 \u00b7 final&quot;}]"></div>
+
 # galcanezumab — `Galcanezumab_Kielbasa2020_final`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>

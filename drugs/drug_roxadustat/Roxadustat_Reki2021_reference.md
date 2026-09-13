@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;roxadustat&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/&quot;},{&quot;label&quot;:&quot;Reki\u0107_2021 \u00b7 dialysis- and non-dialysis-dependent patients with chronic kidney disease&quot;}]"></div>
+
 # roxadustat — `Roxadustat_Reki2021_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

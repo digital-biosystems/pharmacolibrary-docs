@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/&quot;},{&quot;label&quot;:&quot;W\u00f3jcicki_2003 \u00b7 obese subjects with normolipaemia or hyperlipidaemia and healthy lean volunteers&quot;}]"></div>
+
 # atenolol — `Atenolol_Wjcicki2003_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

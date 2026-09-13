@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;fosphenytoin&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/&quot;},{&quot;label&quot;:&quot;Tanaka_2013 \u00b7 pediatric patients, adult patients, and healthy volunteers&quot;}]"></div>
+
 # fosphenytoin — `Fosphenytoin_Tanaka2013_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

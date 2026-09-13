@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;metformin&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/&quot;},{&quot;label&quot;:&quot;Jin_2025 \u00b7 review reference&quot;}]"></div>
+
 # metformin — `Metformin_Jin2025_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -84,6 +86,12 @@ Jin G; Zheng K; Liu S; Yi H; Wei W; Xu C; et al. et al. (2025). Pharmaceuticals 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_metformin/Metformin_Jin2025_reference/Metformin_Jin2025_reference.svg" alt="Metformin_Jin2025_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

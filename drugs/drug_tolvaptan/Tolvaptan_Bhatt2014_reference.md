@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03X&quot;,&quot;href&quot;:&quot;atc/C03X.md&quot;},{&quot;label&quot;:&quot;tolvaptan&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/&quot;},{&quot;label&quot;:&quot;Bhatt_2014 \u00b7 review reference&quot;}]"></div>
+
 # tolvaptan — `Tolvaptan_Bhatt2014_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -79,6 +81,12 @@ Bhatt PR; McNeely EB; Lin TE; Adams KF; Patterson JH et al. (2014). Journal of c
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference/Tolvaptan_Bhatt2014_reference.svg" alt="Tolvaptan_Bhatt2014_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

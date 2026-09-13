@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;amlodipine&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/&quot;},{&quot;label&quot;:&quot;Mukherjee_2018 \u00b7 healthy volunteers&quot;}]"></div>
+
 # amlodipine — `Amlodipine_Mukherjee2018_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -119,6 +121,12 @@ Mukherjee D; Zha J; Menon RM; Shebley M et al. (2018). Journal of pharmacokineti
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_amlodipine/Amlodipine_Mukherjee2018_reference/Amlodipine_Mukherjee2018_reference.svg" alt="Amlodipine_Mukherjee2018_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

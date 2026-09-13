@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;camostat&quot;,&quot;href&quot;:&quot;drugs/drug_camostat/&quot;},{&quot;label&quot;:&quot;Kosinsky_2022 \u00b7 r_s_e&quot;}]"></div>
+
 # camostat — `Camostat_Kosinsky2022_r_s_e`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -21,7 +23,6 @@ Kosinsky Y; Peskov K; Stanski DR; Wetmore D; Vinetz J et al. (2022). Microbiolog
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | volume of distribution of FOY-251 | `Q61` · V | 22.4 | liters | 0.0224 | L | not captured | boundary (0.8) | Kosinsky_2022:other_prose | — | not captured |
-| ka, 1/h | `Q49` · kabs | 0.67 | 1/h | 0.00018611111111111112 | 1/h | not captured | review_gapfill (0.7) | Kosinsky_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -44,6 +45,7 @@ Kosinsky Y; Peskov K; Stanski DR; Wetmore D; Vinetz J et al. (2022). Microbiolog
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Kosinsky_2022's review values (primary lacked it)
+- removed gap-filled parent disposition (Q49): this record measures 'FOY-251', not camostat, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
 
 **Extraction notes:**
 - LLM selected parameter table(s) 1

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;aripiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_aripiprazole/&quot;},{&quot;label&quot;:&quot;Toja-Camba_2021 \u00b7 patients receiving long-acting injectable atypical antipsychotics&quot;}]"></div>
+
 # aripiprazole — `Aripiprazole_TojaCamba2021_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

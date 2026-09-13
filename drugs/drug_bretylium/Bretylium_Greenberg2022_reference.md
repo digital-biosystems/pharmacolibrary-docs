@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;Bretylium&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/&quot;},{&quot;label&quot;:&quot;Greenberg_2022 \u00b7 review reference&quot;}]"></div>
+
 # Bretylium — `Bretylium_Greenberg2022_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -82,6 +84,12 @@ Greenberg RG; Landersdorfer CB; Rivera-Chaparro N; Harward M; Conrad T; Nakamura
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_bretylium/Bretylium_Greenberg2022_reference/Bretylium_Greenberg2022_reference.svg" alt="Bretylium_Greenberg2022_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

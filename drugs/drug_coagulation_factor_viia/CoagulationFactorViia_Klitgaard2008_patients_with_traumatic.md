@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;coagulation factor VIIa&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_viia/&quot;},{&quot;label&quot;:&quot;Klitgaard_2008 \u00b7 patients_with_traumatic_blunt_and_or_penetrating_injury_2_23::mixed patient populations (haemophilia, liver surgery, trauma, etc.)&quot;}]"></div>
+
 # coagulation factor VIIa — `CoagulationFactorViia_Klitgaard2008_patients_with_traumatic`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -153,6 +155,12 @@ _No resolved parameters._
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_patients_with_traumatic/CoagulationFactorViia_Klitgaard2008_patients_with_traumatic.svg" alt="CoagulationFactorViia_Klitgaard2008_patients_with_traumatic diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

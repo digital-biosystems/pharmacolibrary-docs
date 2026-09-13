@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;omeprazole&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/&quot;},{&quot;label&quot;:&quot;Gao_2025 \u00b7 review reference&quot;}]"></div>
+
 # omeprazole — `Omeprazole_Gao2025_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -93,6 +95,12 @@ Gao T; Xu W; Li X; Guo Q; Liu D; Zhang X; Leng P; Sun J et al. (2025). Frontiers
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_omeprazole/Omeprazole_Gao2025_reference/Omeprazole_Gao2025_reference.svg" alt="Omeprazole_Gao2025_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

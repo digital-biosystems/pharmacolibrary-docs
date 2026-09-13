@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;glibenclamide&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/&quot;},{&quot;label&quot;:&quot;Rambiritch_2016_2 \u00b7 poorly controlled South African type 2 diabetic subjects&quot;}]"></div>
+
 # glibenclamide — `Glibenclamide_Rambiritch2016v2_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

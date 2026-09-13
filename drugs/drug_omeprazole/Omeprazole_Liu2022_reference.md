@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;omeprazole&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/&quot;},{&quot;label&quot;:&quot;Liu_2022 \u00b7 review reference&quot;}]"></div>
+
 # omeprazole — `Omeprazole_Liu2022_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -90,6 +92,12 @@ Liu S; Xiao T; Huang S; Li X; Kong W; Yang Y; Zhang Z; Ni X; Lu H; Zhang M; Shan
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_omeprazole/Omeprazole_Liu2022_reference/Omeprazole_Liu2022_reference.svg" alt="Omeprazole_Liu2022_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

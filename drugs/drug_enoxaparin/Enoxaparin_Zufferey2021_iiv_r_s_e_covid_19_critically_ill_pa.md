@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;enoxaparin&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/&quot;},{&quot;label&quot;:&quot;Zufferey_2021 \u00b7 iiv_r_s_e::COVID-19 critically ill patients&quot;}]"></div>
+
 # enoxaparin — `Enoxaparin_Zufferey2021_iiv_r_s_e_covid_19_critically_ill_pa`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;fondaparinux&quot;,&quot;href&quot;:&quot;drugs/drug_fondaparinux/&quot;},{&quot;label&quot;:&quot;Michali\u010dkov\u00e1_2022 \u00b7 dialysis-dependent chronic kidney disease patients&quot;}]"></div>
+
 # fondaparinux — `Fondaparinux_Michalikov2022_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

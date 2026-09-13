@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;dihydroergotamine&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergotamine/&quot;},{&quot;label&quot;:&quot;Schran_1985 \u00b7 healthy volunteers&quot;}]"></div>
+
 # dihydroergotamine — `Dihydroergotamine_Schran1985_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;pregabalin&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/&quot;},{&quot;label&quot;:&quot;Chan_2021 \u00b7 model::children (4-16 years) and adults with focal onset seizures&quot;}]"></div>
+
 # pregabalin — `Pregabalin_Chan2021_model_children_4_16_years_and_adults_wit`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

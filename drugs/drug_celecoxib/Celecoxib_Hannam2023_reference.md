@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;celecoxib&quot;,&quot;href&quot;:&quot;drugs/drug_celecoxib/&quot;},{&quot;label&quot;:&quot;Hannam_2023 \u00b7 adults&quot;}]"></div>
+
 # celecoxib — `Celecoxib_Hannam2023_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -35,7 +37,7 @@ Hannam JA; Murto KT; Anderson BJ; Dembo G; Kharasch ED et al. (2023). Paediatric
 | T1/2 keq (h) | `Q57` · t1/2z | —(suppressed) | h | — | [h] | not captured | boundary (0.8) | Hannam_2023_table_p5_2:row0:col1, Hannam_2023_table_p5_2:row0:col2, Hannam_2023_table_p5_2:row0:col4 | — | not captured |
 | Plasma RUV_ADO (µg˙L−1) | `Q75` · Ct | —(suppressed) | µg˙L−1 | — | [µg] / [l] | not captured | llm (0.5) | Hannam_2023_table_p5_2:row2:col1, Hannam_2023_table_p5_2:row2:col2, Hannam_2023_table_p5_2:row2:col4 | — | not captured |
 | Estimated celecoxib clearance | `Q22` · CL | —(suppressed) | L/h/70 kg | — | L/h | not captured | boundary (0.8) | Hannam_2023:other_prose | — | not captured |
-| volume of distribution | `Q61` · V | —(suppressed) | L/70 kg | — | L/70 kg | not captured | exact (1.0) | Hannam_2023:other_prose | — | not captured |
+| volume of distribution | `Q61` · V | —(suppressed) | L/70 kg | — | L | not captured | exact (1.0) | Hannam_2023:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -62,6 +64,7 @@ Hannam JA; Murto KT; Anderson BJ; Dembo G; Kharasch ED et al. (2023). Paediatric
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=celecoxib
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- unit re-normalised: V 'L/70 kg' now converts (value unchanged)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery

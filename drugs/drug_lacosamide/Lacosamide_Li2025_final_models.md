@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;lacosamide&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/&quot;},{&quot;label&quot;:&quot;Li_2025 \u00b7 final_models&quot;}]"></div>
+
 # lacosamide — `Lacosamide_Li2025_final_models`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -88,6 +90,12 @@ Li Y; Guo HL; Fan L; Wang J; Hu YH; Zhang YY; et al. et al. (2025). NPJ genomic 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_lacosamide/Lacosamide_Li2025_final_models/Lacosamide_Li2025_final_models.svg" alt="Lacosamide_Li2025_final_models diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

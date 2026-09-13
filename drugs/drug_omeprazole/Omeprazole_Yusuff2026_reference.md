@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;omeprazole&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/&quot;},{&quot;label&quot;:&quot;Yusuff_2026 \u00b7 review reference&quot;}]"></div>
+
 # omeprazole — `Omeprazole_Yusuff2026_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -88,6 +90,12 @@ Yusuff H; Gadsby J; Isgro G; Zochios V; Jenkins D; Cooke S; Mulla H et al. (2026
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_omeprazole/Omeprazole_Yusuff2026_reference/Omeprazole_Yusuff2026_reference.svg" alt="Omeprazole_Yusuff2026_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

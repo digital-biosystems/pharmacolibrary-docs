@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01A&quot;,&quot;href&quot;:&quot;atc/C01A.md&quot;},{&quot;label&quot;:&quot;digoxin&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/&quot;},{&quot;label&quot;:&quot;Keller_1977 \u00b7 healthy volunteers&quot;}]"></div>
+
 # digoxin — `Digoxin_Keller1977_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -87,6 +89,12 @@ Keller F; Blumenthal HP; Maertin K; Rietbrock N et al. (1977). European journal 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_digoxin/Digoxin_Keller1977_reference/Digoxin_Keller1977_reference.svg" alt="Digoxin_Keller1977_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

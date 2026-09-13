@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;abacavir&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/&quot;},{&quot;label&quot;:&quot;Zhang_2015 \u00b7 review reference&quot;}]"></div>
+
 # abacavir — `Abacavir_Zhang2015_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -83,6 +85,12 @@ Zhang J; Hayes S; Sadler BM; Minto I; Brandt J; Piscitelli S; et al. et al. (201
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_abacavir/Abacavir_Zhang2015_reference/Abacavir_Zhang2015_reference.svg" alt="Abacavir_Zhang2015_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

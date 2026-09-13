@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;atorvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/&quot;},{&quot;label&quot;:&quot;Jadhav_2023 \u00b7 review reference&quot;}]"></div>
+
 # atorvastatin — `Atorvastatin_Jadhav2023_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -84,6 +86,12 @@ Jadhav SB; Amore BM; Bockbrader H; Crass RL; Chapel S; Sasiela WJ; Emery MG et a
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_atorvastatin/Atorvastatin_Jadhav2023_reference/Atorvastatin_Jadhav2023_reference.svg" alt="Atorvastatin_Jadhav2023_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

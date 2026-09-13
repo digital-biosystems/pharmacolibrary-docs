@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D01A&quot;,&quot;href&quot;:&quot;atc/D01A.md&quot;},{&quot;label&quot;:&quot;flucytosine&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/&quot;},{&quot;label&quot;:&quot;Hope_2006 \u00b7 neutropenic CD1 mice with disseminated candidiasis&quot;}]"></div>
+
 # flucytosine — `Flucytosine_Hope2006_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -33,7 +35,7 @@ Hope WW; Warn PA; Sharp A; Howard S; Kasai M; Louie A; et al. et al. (2006). Ant
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | volume of the central compartment | `Q61` · V | —(suppressed) | liter | — | L | not captured | boundary (0.8) | Hope_2006:other_prose | — | not captured |
-| clearance | `Q22` · CL | —(suppressed) | liter/h | — | liter/h | not captured | exact (1.0) | Hope_2006:other_prose | — | not captured |
+| clearance | `Q22` · CL | —(suppressed) | liter/h | — | L/h | not captured | exact (1.0) | Hope_2006:other_prose | — | not captured |
 | Ka | `Q49` · kabs | —(suppressed) | h Ϫ1 | — | h Ϫ1 | not captured | exact (1.0) | Hope_2006:other_prose | — | not captured |
 
 <details class="legend">
@@ -51,6 +53,7 @@ Hope WW; Warn PA; Sharp A; Howard S; Kasai M; Louie A; et al. et al. (2006). Ant
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=flucytosine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- unit re-normalised: CL 'liter/h' now converts (value unchanged)
 
 **Extraction notes:**
 - unparsed cell tab_1:row0:col2 = 'Growth constant K g (h Ϫ1 )'

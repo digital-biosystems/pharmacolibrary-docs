@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;tetracycline&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/&quot;},{&quot;label&quot;:&quot;Lakota_2020 \u00b7 review reference&quot;}]"></div>
+
 # tetracycline — `Tetracycline_Lakota2020_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -85,6 +87,12 @@ Lakota EA; Van Wart SA; Trang M; Tzanis E; Bhavnani SM; Safir MC; et al. et al. 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_tetracycline/Tetracycline_Lakota2020_reference/Tetracycline_Lakota2020_reference.svg" alt="Tetracycline_Lakota2020_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

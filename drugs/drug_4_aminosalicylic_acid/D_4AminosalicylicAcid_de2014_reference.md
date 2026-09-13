@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;4-aminosalicylic acid&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/&quot;},{&quot;label&quot;:&quot;de_2014 \u00b7 tuberculosis patients with and without HIV coinfection receiving antiretroviral therapy&quot;}]"></div>
+
 # 4-aminosalicylic acid — `D_4AminosalicylicAcid_de2014_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

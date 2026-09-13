@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;butorphanol&quot;,&quot;href&quot;:&quot;drugs/drug_butorphanol/&quot;},{&quot;label&quot;:&quot;Pypendop_2021 \u00b7 male neutered cats anesthetized with isoflurane&quot;}]"></div>
+
 # butorphanol — `Butorphanol_Pypendop2021_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -97,6 +99,12 @@ Pypendop BH; Shilo-Benjamini Y et al. (2021). Journal of veterinary pharmacology
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference/Butorphanol_Pypendop2021_reference.svg" alt="Butorphanol_Pypendop2021_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

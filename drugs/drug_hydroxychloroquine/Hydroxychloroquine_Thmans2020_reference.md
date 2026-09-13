@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;hydroxychloroquine&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/&quot;},{&quot;label&quot;:&quot;Th\u00e9mans_2020 \u00b7 COVID-19 patients&quot;}]"></div>
+
 # hydroxychloroquine — `Hydroxychloroquine_Thmans2020_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -32,7 +34,7 @@ Thémans P; Belkhir L; Dauby N; Yombi JC; De Greef J; Delongie KA; et al. et al.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka (/h) | `Q49` · kabs | —(suppressed) | /h | — | [1] / [h] | not captured | exact (1.0) | tab_1:row0:col1, tab_1:row0:col4 | — | 0.94 (None% RSE) |
+| Ka (/h) | `Q49` · kabs | —(suppressed) | /h | — | 1/h | not captured | exact (1.0) | tab_1:row0:col1, tab_1:row0:col4 | — | 0.94 (None% RSE) |
 | V (L) | `Q61` · V | —(suppressed) | L | — | [l] | not captured | exact (1.0) | tab_1:row1:col1, tab_1:row1:col3 | — | not captured |
 | CL (L/h) | `Q22` · CL | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | tab_1:row2:col1, tab_1:row2:col4 | — | 0.127 (None% RSE) |
 | Tlag (h) | `Q83` · tlag | —(suppressed) | h | — | [h] | not captured | exact (1.0) | tab_1:row4:col4 | — | not captured |
@@ -55,6 +57,7 @@ Thémans P; Belkhir L; Dauby N; Yombi JC; De Greef J; Delongie KA; et al. et al.
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=hydroxychloroquine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- unit re-normalised: kabs '/h' now converts (value unchanged)
 
 **Extraction notes:**
 - unparsed cell tab_1:row0:col2 = '7.31 (1.81-9.44)'
@@ -98,6 +101,12 @@ Thémans P; Belkhir L; Dauby N; Yombi JC; De Greef J; Delongie KA; et al. et al.
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference/Hydroxychloroquine_Thmans2020_reference.svg" alt="Hydroxychloroquine_Thmans2020_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

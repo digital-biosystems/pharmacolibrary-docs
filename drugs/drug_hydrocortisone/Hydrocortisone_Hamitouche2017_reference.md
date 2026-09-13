@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;hydrocortisone&quot;,&quot;href&quot;:&quot;drugs/drug_hydrocortisone/&quot;},{&quot;label&quot;:&quot;Hamitouche_2017 \u00b7 healthy male volunteers&quot;}]"></div>
+
 # hydrocortisone — `Hydrocortisone_Hamitouche2017_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

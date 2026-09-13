@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;carbamazepine&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/&quot;},{&quot;label&quot;:&quot;Djordjevic_2016 \u00b7 pediatric epileptic patients&quot;}]"></div>
+
 # carbamazepine — `Carbamazepine_Djordjevic2016_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

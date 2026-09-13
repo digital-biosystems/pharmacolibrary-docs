@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Zhou_1990 \u00b7 first_exponential_at1_2_g_ml_h&quot;}]"></div>
+
 # vinblastine — `Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -76,6 +78,12 @@ Zhou XJ; Martin M; Placidi M; Cano JP; Rahmani R et al. (1990). European journal
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_vinblastine/Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h/Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h.svg" alt="Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ibuprofen&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/&quot;},{&quot;label&quot;:&quot;Almoslem_2024 \u00b7 preterm neonates less than 29 weeks gestation&quot;}]"></div>
+
 # ibuprofen — `Ibuprofen_Almoslem2024_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

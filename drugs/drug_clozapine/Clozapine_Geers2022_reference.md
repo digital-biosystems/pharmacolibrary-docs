@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;clozapine&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/&quot;},{&quot;label&quot;:&quot;Geers_2022 \u00b7 schizophrenia patients&quot;}]"></div>
+
 # clozapine — `Clozapine_Geers2022_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

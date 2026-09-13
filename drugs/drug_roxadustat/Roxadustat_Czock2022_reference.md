@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;roxadustat&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/&quot;},{&quot;label&quot;:&quot;Czock_2022 \u00b7 severe_renal_impairment::chronic kidney disease patients&quot;}]"></div>
+
 # roxadustat — `Roxadustat_Czock2022_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -163,6 +165,12 @@ Czock D; Keller F et al. (2022). Clinical pharmacokinetics 61
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_roxadustat/Roxadustat_Czock2022_reference/Roxadustat_Czock2022_reference.svg" alt="Roxadustat_Czock2022_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

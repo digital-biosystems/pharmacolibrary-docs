@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;dabigatran etexilate&quot;,&quot;href&quot;:&quot;drugs/drug_dabigatran_etexilate/&quot;},{&quot;label&quot;:&quot;Liu_2022 \u00b7 healthy Chinese volunteers and patients with non-valvular atrial fibrillation&quot;}]"></div>
+
 # dabigatran etexilate — `DabigatranEtexilate_Liu2022_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01A&quot;,&quot;href&quot;:&quot;atc/C01A.md&quot;},{&quot;label&quot;:&quot;digoxin&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/&quot;},{&quot;label&quot;:&quot;Sumner_1976 \u00b7 healthy volunteers&quot;}]"></div>
+
 # digoxin — `Digoxin_Sumner1976_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -87,6 +89,12 @@ Sumner DJ; Russell AJ et al. (1976). British journal of clinical pharmacology 3
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_digoxin/Digoxin_Sumner1976_reference/Digoxin_Sumner1976_reference.svg" alt="Digoxin_Sumner1976_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

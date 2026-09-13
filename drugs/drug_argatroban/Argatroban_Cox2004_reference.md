@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;argatroban&quot;,&quot;href&quot;:&quot;drugs/drug_argatroban/&quot;},{&quot;label&quot;:&quot;Cox_2004 \u00b7 patients undergoing percutaneous coronary intervention&quot;}]"></div>
+
 # argatroban — `Argatroban_Cox2004_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -87,6 +89,12 @@ Cox DS; Kleiman NS; Boyle DA; Aluri J; Parchman LG; Holdbrook F; et al. et al. (
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_argatroban/Argatroban_Cox2004_reference/Argatroban_Cox2004_reference.svg" alt="Argatroban_Cox2004_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

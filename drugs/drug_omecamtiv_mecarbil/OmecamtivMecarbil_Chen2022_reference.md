@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;omecamtiv mecarbil&quot;,&quot;href&quot;:&quot;drugs/drug_omecamtiv_mecarbil/&quot;},{&quot;label&quot;:&quot;Chen_2022 \u00b7 healthy subjects and patients with heart failure with reduced ejection fraction&quot;}]"></div>
+
 # omecamtiv mecarbil — `OmecamtivMecarbil_Chen2022_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

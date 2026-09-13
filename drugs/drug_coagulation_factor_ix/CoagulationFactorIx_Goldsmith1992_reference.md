@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;coagulation factor IX&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_ix/&quot;},{&quot;label&quot;:&quot;Goldsmith_1992 \u00b7 patients with hemophilia B&quot;}]"></div>
+
 # coagulation factor IX — `CoagulationFactorIx_Goldsmith1992_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

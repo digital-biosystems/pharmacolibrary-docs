@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;amiodarone&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/&quot;},{&quot;label&quot;:&quot;Sermsappasuk_2006 \u00b7 estimate_mean_s_d::isolated perfused rat hearts&quot;}]"></div>
+
 # amiodarone — `Amiodarone_Sermsappasuk2006_estimate_mean_s_d_isolated_perfu`
 
 > ## <span class="pk-badge pk-badge--neutral">not_reviewed</span>

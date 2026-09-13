@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;miconazole&quot;,&quot;href&quot;:&quot;drugs/drug_miconazole/&quot;},{&quot;label&quot;:&quot;Mikamo_1997 \u00b7 patients undergoing radical hysterectomy and pelvic lymphadenectomy&quot;}]"></div>
+
 # miconazole — `Miconazole_Mikamo1997_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

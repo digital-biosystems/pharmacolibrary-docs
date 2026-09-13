@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;butorphanol&quot;,&quot;href&quot;:&quot;drugs/drug_butorphanol/&quot;},{&quot;label&quot;:&quot;Knych_2024 \u00b7 estimate::exercised Thoroughbred horses&quot;}]"></div>
+
 # butorphanol — `Butorphanol_Knych2024_estimate_exercised_thoroughbred_horses`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

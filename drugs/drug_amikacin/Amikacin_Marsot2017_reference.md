@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;amikacin&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/&quot;},{&quot;label&quot;:&quot;Marsot_2017 \u00b7 critically ill patients&quot;}]"></div>
+
 # amikacin — `Amikacin_Marsot2017_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -98,6 +100,12 @@ Marsot A; Guilhaumou R; Riff C; Blin O et al. (2017). Clinical pharmacokinetics 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_amikacin/Amikacin_Marsot2017_reference/Amikacin_Marsot2017_reference.svg" alt="Amikacin_Marsot2017_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;tamoxifen&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/&quot;},{&quot;label&quot;:&quot;Dilli_2022 \u00b7 parameter_estimates&quot;}]"></div>
+
 # tamoxifen — `Tamoxifen_Dilli2022_parameter_estimates`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -80,7 +82,7 @@ Dilli Batcha JS; Raju AP; Matcha S; Raj S EA; Udupa KS; Gota V; et al. et al. (2
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tamoxifen/Tamoxifen_Dilli2022_parameter_estimates/Tamoxifen_Dilli2022_parameter_estimates_modelica.zip" download>Tamoxifen_Dilli2022_parameter_estimates_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tamoxifen/Tamoxifen_Dilli2022_parameter_estimates/Tamoxifen_Dilli2022_parameter_estimates_modelica.zip" download>Tamoxifen_Dilli2022_parameter_estimates_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_tamoxifen/Tamoxifen_Dilli2022_parameter_estimates/Tamoxifen_Dilli2022_parameter_estimates_fmi.zip" download>Tamoxifen_Dilli2022_parameter_estimates_fmi.zip</a> <span class="pk-size">(1.2 MB)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tamoxifen/Tamoxifen_Dilli2022_parameter_estimates/Tamoxifen_Dilli2022_parameter_estimates_matlab.zip" download>Tamoxifen_Dilli2022_parameter_estimates_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tamoxifen/Tamoxifen_Dilli2022_parameter_estimates/Tamoxifen_Dilli2022_parameter_estimates_matlab_simbio.zip" download>Tamoxifen_Dilli2022_parameter_estimates_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

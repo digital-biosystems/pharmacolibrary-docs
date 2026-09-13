@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;eliglustat&quot;,&quot;href&quot;:&quot;drugs/drug_eliglustat/&quot;},{&quot;label&quot;:&quot;Wolthuis_2025 \u00b7 virtual pediatric population extrapolated from adults&quot;}]"></div>
+
 # eliglustat — `Eliglustat_Wolthuis2025_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

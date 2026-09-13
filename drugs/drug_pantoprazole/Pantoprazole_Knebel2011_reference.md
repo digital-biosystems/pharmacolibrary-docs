@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;pantoprazole&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/&quot;},{&quot;label&quot;:&quot;Knebel_2011 \u00b7 pediatric patients from birth to 16 years&quot;}]"></div>
+
 # pantoprazole — `Pantoprazole_Knebel2011_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -90,6 +92,12 @@ Knebel W; Tammara B; Udata C; Comer G; Gastonguay MR; Meng X et al. (2011). Jour
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_pantoprazole/Pantoprazole_Knebel2011_reference/Pantoprazole_Knebel2011_reference.svg" alt="Pantoprazole_Knebel2011_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

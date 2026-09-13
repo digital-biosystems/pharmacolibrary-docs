@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;kanamycin&quot;,&quot;href&quot;:&quot;drugs/drug_kanamycin/&quot;},{&quot;label&quot;:&quot;Strydom_2019_2 \u00b7 pulmonary tuberculosis patients undergoing lung resection surgery&quot;}]"></div>
+
 # kanamycin — `Kanamycin_Strydom2019v2_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
@@ -61,9 +63,12 @@ Strydom N; Gupta SV; Fox WS; Via LE; Bang H; Lee M; et al. et al. (2019). PLoS m
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_base_sign_Q64 | fail | not captured | -40.4 | not captured | not captured | not captured |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.72 | not captured | not captured | ['Strydom_2019_2:other_prose'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 5.72 L/h | not captured | not captured | ['Strydom_2019_2:other_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 52.3 L | not captured | not captured | ['Strydom_2019_2:other_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

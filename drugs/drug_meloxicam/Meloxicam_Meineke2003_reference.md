@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;meloxicam&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/&quot;},{&quot;label&quot;:&quot;Meineke_2003 \u00b7 rheumatoid arthritis patients&quot;}]"></div>
+
 # meloxicam — `Meloxicam_Meineke2003_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

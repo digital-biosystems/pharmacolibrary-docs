@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;desflurane&quot;,&quot;href&quot;:&quot;drugs/drug_desflurane/&quot;},{&quot;label&quot;:&quot;Hendrickx_2006 \u00b7 simulated 70 kg and variable-weight patients under anesthesia&quot;}]"></div>
+
 # desflurane — `Desflurane_Hendrickx2006_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

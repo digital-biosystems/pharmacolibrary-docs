@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;clopidogrel&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/&quot;},{&quot;label&quot;:&quot;Purohit_2026 \u00b7 review reference&quot;}]"></div>
+
 # clopidogrel — `Clopidogrel_Purohit2026_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -82,6 +84,12 @@ Purohit D; van Wijk R; Kafeero P; Kibengo F; Zimmerman M; D'artois V; Chow FC; S
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference/Clopidogrel_Purohit2026_reference.svg" alt="Clopidogrel_Purohit2026_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

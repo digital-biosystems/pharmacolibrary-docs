@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;acenocoumarol&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/&quot;},{&quot;label&quot;:&quot;Delavenne_2009 \u00b7 healthy volunteers&quot;}]"></div>
+
 # acenocoumarol — `Acenocoumarol_Delavenne2009_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -35,7 +37,7 @@ Delavenne X; Laporte S; Demasles S; Mallouk N; Basset T; Tod M; Girard P; Mismet
 | Cl (L/h) | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | exact (1.0) | Delavenne_2009:other_prose | — | not captured |
 | V 2 (L) | `Q64` · V2 | —(suppressed) | L | — | L | not captured | space_fold (0.95) | Delavenne_2009:other_prose | — | not captured |
 | Q (L/h) | `Q30` · Q | —(suppressed) | L/h | — | L/h | not captured | exact (1.0) | Delavenne_2009:other_prose | — | not captured |
-| Ka (/h) | `Q49` · kabs | —(suppressed) | /h | — | /h | not captured | exact (1.0) | Delavenne_2009:other_prose | — | not captured |
+| Ka (/h) | `Q49` · kabs | —(suppressed) | /h | — | 1/h | not captured | exact (1.0) | Delavenne_2009:other_prose | — | not captured |
 | volume of distribution | `Q61` · V | —(suppressed) | L/kg | — | L | not captured | review_gapfill (0.7) | Chen_2024:review | — | not captured |
 
 <details class="legend">
@@ -61,6 +63,7 @@ Delavenne X; Laporte S; Demasles S; Mallouk N; Basset T; Tod M; Girard P; Mismet
 - status held at route_to_review — not promoted
 - gap-filled Q61 (V) from Chen_2024's review values (primary lacked it)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- unit re-normalised: kabs '/h' now converts (value unchanged)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -100,6 +103,12 @@ Delavenne X; Laporte S; Demasles S; Mallouk N; Basset T; Tod M; Girard P; Mismet
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference/Acenocoumarol_Delavenne2009_reference.svg" alt="Acenocoumarol_Delavenne2009_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

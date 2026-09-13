@@ -1,0 +1,67 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;amfepramone&quot;}]"></div>
+
+# amfepramone
+
+- **generic name:** amfepramone
+- **ATC codes:** `A08AA03`
+- **DrugBank:** [DB00937](https://go.drugbank.com/drugs/DB00937)
+- **groups:** approved, illicit, investigational
+
+## About
+
+**Description.** A appetite depressant considered to produce less central nervous system disturbance than most drugs in this therapeutic category. It is also considered to be among the safest for patients with hypertension. (From AMA Drug Evaluations Annual, 1994, p2290)
+
+**Indication.** Used in the management of exogenous obesity as a short-term adjunct (a few weeks) in a regimen of weight reduction based on caloric restriction.
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-11 23:58 | 1:58 | 0/0/0 | 0/0/0 | 0/0/2 | 23,378/810 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/0 | 2/0 | 0 |
+
+## popPK records
+
+_not available_
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **ABCB1** | `Q27` · CL/F | transport | [Gómez-Silva_2019](drugs/drug_amfepramone/pgx_G_mez_Silva_2019_ABCB1_Q27.md) | Gómez-Silva M et al., Pharmacogenetics of amfepramone in heal…, Scientific reports (2019) | [10.1038/s41598-019-54436-z](https://doi.org/10.1038/s41598-019-54436-z) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP3A4** | `Q27` · CL/F | metabolism | [Gómez-Silva_2019](drugs/drug_amfepramone/pgx_G_mez_Silva_2019_CYP3A4_Q27.md) | Gómez-Silva M et al., Pharmacogenetics of amfepramone in heal…, Scientific reports (2019) | [10.1038/s41598-019-54436-z](https://doi.org/10.1038/s41598-019-54436-z) |
+
+<details class="legend">
+<summary>What the PGx columns mean</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 7 matched, 7 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full text wanted
+
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Dangor_1987.pdf` | Dangor CM et al., Bioavailability of amfepramone hydrochl…, Arzneimittel-Forschung (1987) | popPK | 8 | not captured | [3663274](https://pubmed.ncbi.nlm.nih.gov/3663274) | The paper is a pharmacokinetic study of amfepramone in humans, but the provided evidence contains only qualitative descriptions of the profile without specific numeric parameter values. |
+
+<sub>queue written 2026-09-11T23:58:08.522042+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Branis_2015 | irrelevant | 0 | 0 | The paper is a case report on Diethylpropion and amphetamine-like analogues in diabetes, not a pharmacokinetic study of amfepramone. |
+| popPK | Dangor_1987 | relevant | 8 | 0 | The paper is a pharmacokinetic study of amfepramone in humans, but the provided evidence contains only qualitative descriptions of the profile without specific numeric parameter values. |
+| popPK | Gómez_1993 | irrelevant | 0 | 0 | The study focuses on diethylpropion, not amfepramone, and is an in vitro stability/dissolution study without PK parameters. |
+| popPK | Mey_1998 | irrelevant | 0 | 0 | The study investigates the racemization kinetics of diethylpropion, not the pharmacokinetics of amfepramone. |
+| popPK | Yang_2022 | irrelevant | 0 | 0 | The paper describes a forensic hair analysis method and reports concentration levels in hair, not pharmacokinetic disposition parameters (CL, V, ka, etc.). |
+| PD | Yang_2022 | not_relevant | 0 | 0 | The paper describes a forensic LC-MS/MS method for detecting amfepramone in hair and reports concentration ranges in authentic cases, but it does not report any pharmacodynamic, exposure-response, or dose-response relationship or numeric PD parameters. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_amfepramone`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

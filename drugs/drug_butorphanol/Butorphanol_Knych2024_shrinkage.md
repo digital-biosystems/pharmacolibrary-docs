@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;butorphanol&quot;,&quot;href&quot;:&quot;drugs/drug_butorphanol/&quot;},{&quot;label&quot;:&quot;Knych_2024 \u00b7 shrinkage&quot;}]"></div>
+
 # butorphanol — `Butorphanol_Knych2024_shrinkage`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -89,6 +91,12 @@ Knych HK; Weiner D; McKemie DS; Traynham M; Blea J et al. (2024). Journal of vet
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage/Butorphanol_Knych2024_shrinkage.svg" alt="Butorphanol_Knych2024_shrinkage diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

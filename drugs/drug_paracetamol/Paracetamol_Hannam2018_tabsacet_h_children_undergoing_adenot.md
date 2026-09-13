@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Hannam_2018 \u00b7 tabsacet_h::children undergoing adenotonsillectomy&quot;}]"></div>
+
 # paracetamol — `Paracetamol_Hannam2018_tabsacet_h_children_undergoing_adenot`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

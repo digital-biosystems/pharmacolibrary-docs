@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D10A&quot;,&quot;href&quot;:&quot;atc/D10A.md&quot;},{&quot;label&quot;:&quot;dapsone&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/&quot;},{&quot;label&quot;:&quot;Gatti_1996 \u00b7 HIV-infected patients&quot;}]"></div>
+
 # dapsone — `Dapsone_Gatti1996_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -32,8 +34,8 @@ Gatti G; Merighi M; Hossein J; Travaini S; Casazza R; Karlsson M; et al. et al. 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | —(suppressed) | liters/h | — | liters/h | not captured | exact (1.0) | Gatti_1996:other_prose | — | not captured |
-| V/F | `Q76` · V/F | —(suppressed) | liters | — | liters | not captured | exact (1.0) | Gatti_1996:other_prose | — | not captured |
+| CL/F | `Q27` · CL/F | —(suppressed) | liters/h | — | L/h | not captured | exact (1.0) | Gatti_1996:other_prose | — | not captured |
+| V/F | `Q76` · V/F | —(suppressed) | liters | — | L | not captured | exact (1.0) | Gatti_1996:other_prose | — | not captured |
 | decrease of clearance of dapsone by AZT | `Q22` · CL | —(suppressed) | % | — | % | not captured | boundary (0.8) | Gatti_1996:discussion_prose | — | not captured |
 
 <details class="legend">
@@ -52,6 +54,8 @@ Gatti G; Merighi M; Hossein J; Travaini S; Casazza R; Karlsson M; et al. et al. 
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=dapsone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- unit re-normalised: CL/F 'liters/h' now converts (value unchanged)
+- unit re-normalised: V/F 'liters' now converts (value unchanged)
 
 **Extraction notes:**
 - unparsed cell tab_1:row0:col2 = '2 (liters)'

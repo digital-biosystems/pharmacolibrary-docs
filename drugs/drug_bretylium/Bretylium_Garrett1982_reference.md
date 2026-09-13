@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;Bretylium&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/&quot;},{&quot;label&quot;:&quot;Garrett_1982 \u00b7 healthy male volunteers&quot;}]"></div>
+
 # Bretylium — `Bretylium_Garrett1982_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -89,6 +91,12 @@ Garrett ER; Green JR; Bialer M et al. (1982). Biopharmaceutics & drug dispositio
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_bretylium/Bretylium_Garrett1982_reference/Bretylium_Garrett1982_reference.svg" alt="Bretylium_Garrett1982_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

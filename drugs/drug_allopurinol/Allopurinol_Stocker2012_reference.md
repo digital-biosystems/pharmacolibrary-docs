@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M04A&quot;,&quot;href&quot;:&quot;atc/M04A.md&quot;},{&quot;label&quot;:&quot;allopurinol&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/&quot;},{&quot;label&quot;:&quot;Stocker_2012 \u00b7 adults with gout&quot;}]"></div>
+
 # allopurinol — `Allopurinol_Stocker2012_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -33,9 +35,6 @@ Stocker SL; McLachlan AJ; Savic RM; Kirkpatrick CM; Graham GG; Williams KM; et a
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | TVCL | `Q22` · CL | —(suppressed) | not captured | — | not captured | not captured | tv_prefix (0.95) | tab_0:row0:col1, tab_0:row0:col9, tab_0:row0:col13 | — | not captured |
-| V UA | `Q61` · V | —(suppressed) | L | — | L | not captured | review_gapfill (0.7) | Aksenov_2018:review | — | not captured |
-| absorption rate | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review_gapfill (0.7) | Ekobena_2025:review | — | not captured |
-| lag time | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review_gapfill (0.7) | Ekobena_2025:review | — | not captured |
 | BCRP | `Q900` · BCRP | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
@@ -55,6 +54,7 @@ Stocker SL; McLachlan AJ; Savic RM; Kirkpatrick CM; Graham GG; Williams KM; et a
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Ekobena_2025's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Ekobena_2025's review values (primary lacked it)
+- removed gap-filled parent disposition (Q61, Q49, Q83): this record measures 'oxypurinol', not allopurinol, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
 
 **Extraction notes:**
 - unparsed cell tab_0:row0:col7 = ') × θ 37 6 6 .'

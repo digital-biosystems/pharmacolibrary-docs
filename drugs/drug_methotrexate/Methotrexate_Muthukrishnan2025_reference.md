@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;methotrexate&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/&quot;},{&quot;label&quot;:&quot;Muthukrishnan_2025 \u00b7 review reference&quot;}]"></div>
+
 # methotrexate — `Methotrexate_Muthukrishnan2025_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -82,6 +84,12 @@ Muthukrishnan VY; Kerbusch T; Strong LE; Kleijn HJ; Pfister M; Chang AM; Acharya
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_methotrexate/Methotrexate_Muthukrishnan2025_reference/Methotrexate_Muthukrishnan2025_reference.svg" alt="Methotrexate_Muthukrishnan2025_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

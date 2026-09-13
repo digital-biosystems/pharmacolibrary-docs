@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;capecitabine&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/&quot;},{&quot;label&quot;:&quot;Lunar_2021 \u00b7 patients with metastatic breast cancer&quot;}]"></div>
+
 # capecitabine — `Capecitabine_Lunar2021_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -32,14 +34,14 @@ Lunar N; Etienne-Grimaldi MC; Macaire P; Thomas F; Dalenc F; Ferrero JM; et al. 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ka 1 (/h) | `Q49` · kabs | —(suppressed) | /h | — | [1] / [h] | not captured | boundary (0.8) | tab_0:row5:col2, tab_0:row5:col3, tab_0:row5:col5, tab_0:row5:col6 | — | not captured |
+| ka 1 (/h) | `Q49` · kabs | —(suppressed) | /h | — | 1/h | not captured | boundary (0.8) | tab_0:row5:col2, tab_0:row5:col3, tab_0:row5:col5, tab_0:row5:col6 | — | not captured |
 | t lag1 (h) | `Q83` · tlag | —(suppressed) | h | — | [h] | not captured | llm (0.5) | tab_0:row7:col2, tab_0:row7:col3, tab_0:row7:col5, tab_0:row7:col6 | — | not captured |
 | F 1 | `Q87` · Frel | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_0:row9:col2, tab_0:row9:col3, tab_0:row9:col5, tab_0:row9:col6 | — | not captured |
 | V c /F Cap (L) | `Q76` · V/F | —(suppressed) | L | — | [l] | not captured | llm (0.5) | tab_0:row10:col2, tab_0:row10:col3 | — | not captured |
-| k 10 (/h) | `Q47` · kel | —(suppressed) | /h | — | [1] / [h] | not captured | llm (0.5) | tab_0:row11:col2, tab_0:row11:col3, tab_0:row11:col5, tab_0:row11:col6 | — | not captured |
-| k 23 (/h) | `Q303` · k13 | —(suppressed) | /h | — | [1] / [h] | not captured | llm (0.5) | tab_0:row12:col2, tab_0:row12:col3, tab_0:row12:col5, tab_0:row12:col6 | — | not captured |
-| k 34 (/h) | `Q304` · k31 | —(suppressed) | /h | — | [1] / [h] | not captured | llm (0.5) | tab_0:row13:col2, tab_0:row13:col3, tab_0:row13:col5, tab_0:row13:col6 | — | not captured |
-| k 12 (/h) | `Q301` · k12 | —(suppressed) | /h | — | [1] / [h] | not captured | llm (0.5) | tab_0:row15:col2, tab_0:row15:col3 | — | not captured |
+| k 10 (/h) | `Q47` · kel | —(suppressed) | /h | — | 1/h | not captured | llm (0.5) | tab_0:row11:col2, tab_0:row11:col3, tab_0:row11:col5, tab_0:row11:col6 | — | not captured |
+| k 23 (/h) | `Q303` · k13 | —(suppressed) | /h | — | 1/h | not captured | llm (0.5) | tab_0:row12:col2, tab_0:row12:col3, tab_0:row12:col5, tab_0:row12:col6 | — | not captured |
+| k 34 (/h) | `Q304` · k31 | —(suppressed) | /h | — | 1/h | not captured | llm (0.5) | tab_0:row13:col2, tab_0:row13:col3, tab_0:row13:col5, tab_0:row13:col6 | — | not captured |
+| k 12 (/h) | `Q301` · k12 | —(suppressed) | /h | — | 1/h | not captured | llm (0.5) | tab_0:row15:col2, tab_0:row15:col3 | — | not captured |
 | beta_k 40 _t Ratio | `Q21` · AUC ratio | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_0:row17:col1, tab_0:row17:col2, tab_0:row17:col3 | — | not captured |
 | beta_k 23 _t CDA | `Q60` · t1/2β | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_0:row18:col2, tab_0:row18:col3 | — | not captured |
 
@@ -67,6 +69,11 @@ Lunar N; Etienne-Grimaldi MC; Macaire P; Thomas F; Dalenc F; Ferrero JM; et al. 
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: 3 first-order transfer(s) across 4 compounds → general_linear
 - status held at route_to_review — not promoted
+- unit re-normalised: kabs '/h' now converts (value unchanged)
+- unit re-normalised: kel '/h' now converts (value unchanged)
+- unit re-normalised: k13 '/h' now converts (value unchanged)
+- unit re-normalised: k31 '/h' now converts (value unchanged)
+- unit re-normalised: k12 '/h' now converts (value unchanged)
 
 **Extraction notes:**
 - unparsed cell tab_0:row16:col1 = 'Effect of age on k 40'

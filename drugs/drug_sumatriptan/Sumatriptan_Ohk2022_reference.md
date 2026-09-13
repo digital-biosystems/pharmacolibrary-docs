@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;sumatriptan&quot;,&quot;href&quot;:&quot;drugs/drug_sumatriptan/&quot;},{&quot;label&quot;:&quot;Ohk_2022 \u00b7 healthy Korean adults&quot;}]"></div>
+
 # sumatriptan — `Sumatriptan_Ohk2022_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

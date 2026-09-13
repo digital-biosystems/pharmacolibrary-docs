@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;disopyramide&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/&quot;},{&quot;label&quot;:&quot;Burk_1983 \u00b7 patients with renal impairment&quot;}]"></div>
+
 # disopyramide — `Disopyramide_Burk1983_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

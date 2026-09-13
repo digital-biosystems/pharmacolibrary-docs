@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;doxorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/&quot;},{&quot;label&quot;:&quot;DeJongh_2025 \u00b7 review reference&quot;}]"></div>
+
 # doxorubicin — `Doxorubicin_DeJongh2025_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -77,6 +79,12 @@ DeJongh J; Cadogan E; Davies M; Ramos-Montoya A; Smith A; van Steeg T; Richards 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference/Doxorubicin_DeJongh2025_reference.svg" alt="Doxorubicin_DeJongh2025_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

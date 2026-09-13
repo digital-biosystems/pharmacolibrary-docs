@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;eslicarbazepine&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/&quot;},{&quot;label&quot;:&quot;Sunkaraneni_2018_2 \u00b7 interindividual_variability_residual_variabilitya::pediatric patients with partial-onset seizures&quot;}]"></div>
+
 # eslicarbazepine — `Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit`
 
 > ## <span class="pk-badge pk-badge--neutral">not_reviewed</span>

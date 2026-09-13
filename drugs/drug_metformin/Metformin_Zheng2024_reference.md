@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;metformin&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/&quot;},{&quot;label&quot;:&quot;Zheng_2024 \u00b7 review reference&quot;}]"></div>
+
 # metformin — `Metformin_Zheng2024_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -93,6 +95,12 @@ Zheng ZQ; Jin YW; Yin D; Chen X; He SM; Liu CX; Zhang C; Wang DD et al. (2024). 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_metformin/Metformin_Zheng2024_reference/Metformin_Zheng2024_reference.svg" alt="Metformin_Zheng2024_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

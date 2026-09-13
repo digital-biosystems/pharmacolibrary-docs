@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Lemmens_1994 \u00b7 review reference&quot;}]"></div>
+
 # fentanyl — `Fentanyl_Lemmens1994_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -82,6 +84,12 @@ Lemmens HJ; Dyck JB; Shafer SL; Stanski DR et al. (1994). Clinical pharmacology 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference/Fentanyl_Lemmens1994_reference.svg" alt="Fentanyl_Lemmens1994_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

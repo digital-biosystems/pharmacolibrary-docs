@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;amphotericin B&quot;,&quot;href&quot;:&quot;drugs/drug_amphotericin_b/&quot;},{&quot;label&quot;:&quot;Atkinson_1978 \u00b7 adults with disseminated histoplasmosis&quot;}]"></div>
+
 # amphotericin B — `AmphotericinB_Atkinson1978_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

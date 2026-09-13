@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;heparin&quot;,&quot;href&quot;:&quot;drugs/drug_heparin/&quot;},{&quot;label&quot;:&quot;Gouin-Thibault_2024 \u00b7 review reference&quot;}]"></div>
+
 # heparin — `Heparin_GouinThibault2024_reference`
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>

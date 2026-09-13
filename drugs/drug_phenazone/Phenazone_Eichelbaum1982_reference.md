@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;phenazone&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/&quot;},{&quot;label&quot;:&quot;Eichelbaum_1982 \u00b7 healthy male volunteers&quot;}]"></div>
+
 # phenazone — `Phenazone_Eichelbaum1982_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

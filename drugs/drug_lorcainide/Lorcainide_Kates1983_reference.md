@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;lorcainide&quot;,&quot;href&quot;:&quot;drugs/drug_lorcainide/&quot;},{&quot;label&quot;:&quot;Kates_1983 \u00b7 patients with ventricular arrhythmias&quot;}]"></div>
+
 # lorcainide — `Lorcainide_Kates1983_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

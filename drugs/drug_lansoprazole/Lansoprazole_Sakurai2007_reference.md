@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;lansoprazole&quot;,&quot;href&quot;:&quot;drugs/drug_lansoprazole/&quot;},{&quot;label&quot;:&quot;Sakurai_2007 \u00b7 healthy Japanese adult males&quot;}]"></div>
+
 # lansoprazole — `Lansoprazole_Sakurai2007_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

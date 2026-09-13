@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;metformin&quot;,&quot;href&quot;:&quot;drugs/drug_metformin/&quot;},{&quot;label&quot;:&quot;Mak_2023 \u00b7 saem_estimates&quot;}]"></div>
+
 # metformin — `Metformin_Mak2023_saem_estimates`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -79,6 +81,12 @@ Mak WY; Ooi QX; Cruz CV; Looi I; Yuen KH; Standing JF et al. (2023). British jou
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_metformin/Metformin_Mak2023_saem_estimates/Metformin_Mak2023_saem_estimates.svg" alt="Metformin_Mak2023_saem_estimates diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

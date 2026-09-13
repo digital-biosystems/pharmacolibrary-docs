@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;doxycycline&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/&quot;},{&quot;label&quot;:&quot;Yang_2016 \u00b7 laying hens&quot;}]"></div>
+
 # doxycycline — `Doxycycline_Yang2016_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -81,6 +83,12 @@ Yang F; Si HB; Wang YQ; Zhao ZS; Zhou BH; Hao XQ et al. (2016). British poultry 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_doxycycline/Doxycycline_Yang2016_reference/Doxycycline_Yang2016_reference.svg" alt="Doxycycline_Yang2016_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

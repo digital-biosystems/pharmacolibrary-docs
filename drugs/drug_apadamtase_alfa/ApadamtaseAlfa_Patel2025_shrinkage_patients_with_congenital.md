@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;Apadamtase alfa&quot;,&quot;href&quot;:&quot;drugs/drug_apadamtase_alfa/&quot;},{&quot;label&quot;:&quot;Patel_2025 \u00b7 shrinkage::patients with congenital thrombotic thrombocytopenic purpura (cTTP)&quot;}]"></div>
+
 # Apadamtase alfa — `ApadamtaseAlfa_Patel2025_shrinkage_patients_with_congenital`
 
 > ## <span class="pk-badge pk-badge--neutral">not_reviewed</span>

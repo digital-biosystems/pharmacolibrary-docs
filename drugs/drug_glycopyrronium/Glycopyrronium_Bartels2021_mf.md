@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;glycopyrronium&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/&quot;},{&quot;label&quot;:&quot;Bartels_2021 \u00b7 mf&quot;}]"></div>
+
 # glycopyrronium — `Glycopyrronium_Bartels2021_mf`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -91,6 +93,12 @@ Bartels C; Jain M; Yu J; Tillmann HC; Vaidya S et al. (2021). European journal o
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_mf/Glycopyrronium_Bartels2021_mf.svg" alt="Glycopyrronium_Bartels2021_mf diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;methotrexate&quot;,&quot;href&quot;:&quot;drugs/drug_methotrexate/&quot;},{&quot;label&quot;:&quot;Pan_2026 \u00b7 review reference&quot;}]"></div>
+
 # methotrexate — `Methotrexate_Pan2026_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -84,6 +86,12 @@ Pan S; Tsakok T; Wei R; Dand N; Loeff FC; Bloem K; de Vries A; Baudry D; Duckwor
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_methotrexate/Methotrexate_Pan2026_reference/Methotrexate_Pan2026_reference.svg" alt="Methotrexate_Pan2026_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;chlortetracycline&quot;,&quot;href&quot;:&quot;drugs/drug_chlortetracycline/&quot;},{&quot;label&quot;:&quot;Reinbold_2010 \u00b7 group fed, ruminating, Holstein steers&quot;}]"></div>
+
 # chlortetracycline — `Chlortetracycline_Reinbold2010_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

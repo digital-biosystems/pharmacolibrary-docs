@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;doxycycline&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/&quot;},{&quot;label&quot;:&quot;Mileva_2021 \u00b7 estimates&quot;}]"></div>
+
 # doxycycline — `Doxycycline_Mileva2021_estimates`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -70,6 +72,12 @@ Mileva R; Rusenov A; Milanova A et al. (2021). Antibiotics (Basel, Switzerland) 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_doxycycline/Doxycycline_Mileva2021_estimates/Doxycycline_Mileva2021_estimates.svg" alt="Doxycycline_Mileva2021_estimates diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

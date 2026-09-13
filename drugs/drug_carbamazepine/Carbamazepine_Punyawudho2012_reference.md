@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;carbamazepine&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/&quot;},{&quot;label&quot;:&quot;Punyawudho_2012 \u00b7 elderly patients with epilepsy&quot;}]"></div>
+
 # carbamazepine — `Carbamazepine_Punyawudho2012_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -99,6 +101,12 @@ Punyawudho B; Ramsay ER; Brundage RC; Macias FM; Collins JF; Birnbaum AK et al. 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference/Carbamazepine_Punyawudho2012_reference.svg" alt="Carbamazepine_Punyawudho2012_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

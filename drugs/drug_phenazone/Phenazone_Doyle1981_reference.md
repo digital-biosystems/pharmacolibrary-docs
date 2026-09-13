@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;phenazone&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/&quot;},{&quot;label&quot;:&quot;Doyle_1981 \u00b7 non-human primates (baboon, cynomolgus monkey, rhesus monkey)&quot;}]"></div>
+
 # phenazone — `Phenazone_Doyle1981_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

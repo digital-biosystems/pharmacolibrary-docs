@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;clopidogrel&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/&quot;},{&quot;label&quot;:&quot;Danielak_2017 \u00b7 patients undergoing elective coronarography or percutaneous coronary intervention&quot;}]"></div>
+
 # clopidogrel — `Clopidogrel_Danielak2017_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

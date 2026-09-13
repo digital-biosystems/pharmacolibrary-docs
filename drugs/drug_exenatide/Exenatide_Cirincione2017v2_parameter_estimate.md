@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;exenatide&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/&quot;},{&quot;label&quot;:&quot;Cirincione_2017_2 \u00b7 parameter_estimate&quot;}]"></div>
+
 # exenatide — `Exenatide_Cirincione2017v2_parameter_estimate`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

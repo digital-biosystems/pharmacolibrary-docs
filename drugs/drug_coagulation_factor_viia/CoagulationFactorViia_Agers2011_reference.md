@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;coagulation factor VIIa&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_viia/&quot;},{&quot;label&quot;:&quot;Agers\u00f8_2011 \u00b7 severe hemophilia patients&quot;}]"></div>
+
 # coagulation factor VIIa — `CoagulationFactorViia_Agers2011_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

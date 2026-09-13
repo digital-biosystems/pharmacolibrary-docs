@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;diazepam&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/&quot;},{&quot;label&quot;:&quot;Klotz_1975 \u00b7 alkaline_phosphatase::adults with liver disease and healthy controls&quot;}]"></div>
+
 # diazepam — `Diazepam_Klotz1975_alkaline_phosphatase_adults_with_liver_di`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

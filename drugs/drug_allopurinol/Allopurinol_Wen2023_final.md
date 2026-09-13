@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M04A&quot;,&quot;href&quot;:&quot;atc/M04A.md&quot;},{&quot;label&quot;:&quot;allopurinol&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/&quot;},{&quot;label&quot;:&quot;Wen_2023 \u00b7 final&quot;}]"></div>
+
 # allopurinol — `Allopurinol_Wen2023_final`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -22,7 +24,7 @@ Wen YF; Brundage RC; Roman YM; Culhane-Pera KA; Straka RJ et al. (2023). British
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/fm (L/h) | `Q351` · CLm/F | 1.05 | L/h | 2.916666666666667e-07 | [l] / [h] | not captured | exact (1.0) | T2:row2:col2 | — | not captured |
 | V/fm (L) | `Q367` · Vm/F | 59.3 | L | 0.0593 | [l] | not captured | exact (1.0) | T2:row3:col2 | — | not captured |
-| Kfm (/h) | `Q305` · kfm | 1.1 | /h | not captured | [1] / [h] | not captured | exact (1.0) | T2:row4:col2 | — | 27.9 (None% RSE) |
+| Kfm (/h) | `Q305` · kfm | 1.1 | /h | 0.0003055555555555556 | 1/h | not captured | exact (1.0) | T2:row4:col2 | — | 27.9 (None% RSE) |
 | standardized_creatinine_clearance_power_on_baseline_su | `Q900` · standardized_creatinine_clearance_power_on_baseline_su | -0.18 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row12:col2 | — | not captured |
 | CL or CL/F | `Q27` · CL/F | 11.4 | mL/min/kg | 1.3299999999999998e-05 | L/h | not captured | review_gapfill (0.7) | Day_2007:review | — | not captured |
 | Vd or Vd/F | `Q76` · V/F | 0.58 | L/kg | 0.0406 | L | not captured | review_gapfill (0.7) | Day_2007:review | — | not captured |
@@ -59,6 +61,7 @@ Wen YF; Brundage RC; Roman YM; Culhane-Pera KA; Straka RJ et al. (2023). British
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Ekobena_2025's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Ekobena_2025's review values (primary lacked it)
+- unit re-normalised: kfm '/h' now converts (value unchanged)
 
 **Extraction notes:**
 - unparsed cell T2:row2:col3 = '1.05 (0.92, 1.22)'
@@ -104,6 +107,12 @@ Wen YF; Brundage RC; Roman YM; Culhane-Pera KA; Straka RJ et al. (2023). British
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final.svg" alt="Allopurinol_Wen2023_final diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
+
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
@@ -111,7 +120,7 @@ Each archive holds the model source, a script that simulates it against the appr
 **FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_modelica.zip" download>Allopurinol_Wen2023_final_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_modelica.zip" download>Allopurinol_Wen2023_final_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_fmi.zip" download>Allopurinol_Wen2023_final_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_matlab.zip" download>Allopurinol_Wen2023_final_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_matlab_simbio.zip" download>Allopurinol_Wen2023_final_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

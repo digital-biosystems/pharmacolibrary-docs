@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;gabapentin&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/&quot;},{&quot;label&quot;:&quot;Al-Zubaydi_2024 \u00b7 hospitalized adults&quot;}]"></div>
+
 # gabapentin — `Gabapentin_AlZubaydi2024_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -97,6 +99,12 @@ Al-Zubaydi F; Wassef A; Kagan L; Brunetti L et al. (2024). Pharmaceutics 16
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference.svg" alt="Gabapentin_AlZubaydi2024_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

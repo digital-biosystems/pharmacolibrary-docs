@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;amikacin&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/&quot;},{&quot;label&quot;:&quot;Alhadab_2018 \u00b7 pediatric cancer patients&quot;}]"></div>
+
 # amikacin — `Amikacin_Alhadab2018_reference`
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>
@@ -35,7 +37,7 @@ Alhadab AA; Ahmed MA; Brundage RC et al. (2018). Antimicrobial agents and chemot
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | creatinine clearance (CrCL) | `Q22` · CL | —(suppressed) | ml/min per 1.73 m 2 of body surface area | — | ml/min per 1.73 m 2 of body surface area | not captured | boundary (0.8) | Alhadab_2018:discussion_prose | — | not captured |
-| Q (intercompartmental clearance) | `Q30` · Q | —(suppressed) | liters/h | — | liters/h | not captured | exact (1.0) | Alhadab_2018:discussion_prose | — | not captured |
+| Q (intercompartmental clearance) | `Q30` · Q | —(suppressed) | liters/h | — | L/h | not captured | exact (1.0) | Alhadab_2018:discussion_prose | — | not captured |
 | V d | `Q61` · V | —(suppressed) | L | — | L | not captured | review_gapfill (0.7) | amikacin:review | — | not captured |
 | V 2 | `Q64` · V2 | —(suppressed) | liters | — | L | not captured | review_gapfill (0.7) | amikacin:review | — | not captured |
 
@@ -59,6 +61,7 @@ Alhadab AA; Ahmed MA; Brundage RC et al. (2018). Antimicrobial agents and chemot
 - status held at route_to_review — not promoted
 - gap-filled Q61 (V) from review (primary lacked it)
 - gap-filled Q64 (V2) from review (primary lacked it)
+- unit re-normalised: Q 'liters/h' now converts (value unchanged)
 
 **Extraction notes:**
 - unparsed cell tab_1:row0:col3 = 'SIR median (95% CI)'

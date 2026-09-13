@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;minocycline&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/&quot;},{&quot;label&quot;:&quot;Athanassa_2025 \u00b7 critically ill adults with ventilator-associated pneumonia&quot;}]"></div>
+
 # minocycline — `Minocycline_Athanassa2025_reference`
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>

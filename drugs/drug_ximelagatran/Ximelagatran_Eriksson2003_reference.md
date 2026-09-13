@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ximelagatran&quot;,&quot;href&quot;:&quot;drugs/drug_ximelagatran/&quot;},{&quot;label&quot;:&quot;Eriksson_2003 \u00b7 orthopaedic surgery patients&quot;}]"></div>
+
 # ximelagatran — `Ximelagatran_Eriksson2003_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

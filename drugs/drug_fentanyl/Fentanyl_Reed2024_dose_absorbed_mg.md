@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Reed_2024 \u00b7 dose_absorbed_mg&quot;}]"></div>
+
 # fentanyl — `Fentanyl_Reed2024_dose_absorbed_mg`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -70,6 +72,12 @@ Reed RA; Berghaus LJ; Reynolds RM; Holmes BT; Krikorian AM; Sakai DM; et al. et 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_fentanyl/Fentanyl_Reed2024_dose_absorbed_mg/Fentanyl_Reed2024_dose_absorbed_mg.svg" alt="Fentanyl_Reed2024_dose_absorbed_mg diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

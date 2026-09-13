@@ -59,3 +59,8 @@ there before relying on a number.
 The sidebar lists the curated panels first, then the toxins, then every drug with a page
 arranged by its ATC class. The table below is the extraction ledger — what has been processed,
 how much full text was obtained, and how many records came out of it.
+
+## Local rendering
+```
+docsify serve . 
+```

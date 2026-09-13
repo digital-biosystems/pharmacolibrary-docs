@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Walsh_2023 \u00b7 random_effects&quot;}]"></div>
+
 # salbutamol — `Salbutamol_Walsh2023_random_effects`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -74,6 +76,12 @@ Walsh S; Pan S; Sheng Y; Kloprogge F; Standing JF; Anderson BJ; et al. et al. (2
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_salbutamol/Salbutamol_Walsh2023_random_effects/Salbutamol_Walsh2023_random_effects.svg" alt="Salbutamol_Walsh2023_random_effects diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

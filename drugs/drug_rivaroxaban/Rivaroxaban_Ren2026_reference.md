@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;rivaroxaban&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/&quot;},{&quot;label&quot;:&quot;Ren_2026 \u00b7 patients with pulmonary embolism&quot;}]"></div>
+
 # rivaroxaban — `Rivaroxaban_Ren2026_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -89,6 +91,12 @@ Ren J; Li Y; Zheng X; Wu Z; Shi J; Han X et al. (2026). Research and practice in
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_reference/Rivaroxaban_Ren2026_reference.svg" alt="Rivaroxaban_Ren2026_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;liraglutide&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/&quot;},{&quot;label&quot;:&quot;Carlsson_2021 \u00b7 shrinkage::children, adolescents and adults with obesity&quot;}]"></div>
+
 # liraglutide — `Liraglutide_Carlsson2021_shrinkage_children_adolescents_and`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

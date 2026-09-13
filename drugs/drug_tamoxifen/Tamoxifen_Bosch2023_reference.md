@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;tamoxifen&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/&quot;},{&quot;label&quot;:&quot;Bosch_2023 \u00b7 review reference&quot;}]"></div>
+
 # tamoxifen — `Tamoxifen_Bosch2023_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -77,6 +79,12 @@ Bosch F; Mulder F; Franken L; Willemsen A; Rentinck M; van den Berg P; et al. et
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_tamoxifen/Tamoxifen_Bosch2023_reference/Tamoxifen_Bosch2023_reference.svg" alt="Tamoxifen_Bosch2023_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

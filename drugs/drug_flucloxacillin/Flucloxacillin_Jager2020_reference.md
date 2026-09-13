@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;flucloxacillin&quot;,&quot;href&quot;:&quot;drugs/drug_flucloxacillin/&quot;},{&quot;label&quot;:&quot;Jager_2020 \u00b7 critically ill adult patients&quot;}]"></div>
+
 # flucloxacillin — `Flucloxacillin_Jager2020_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

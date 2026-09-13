@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;ciprofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/&quot;},{&quot;label&quot;:&quot;Cattrall_2019 \u00b7 review reference&quot;}]"></div>
+
 # ciprofloxacin — `Ciprofloxacin_Cattrall2019_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -87,6 +89,12 @@ Cattrall JWS; Asín-Prieto E; Freeman J; Trocóniz IF; Kirby A et al. (2019). Eu
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_ciprofloxacin/Ciprofloxacin_Cattrall2019_reference/Ciprofloxacin_Cattrall2019_reference.svg" alt="Ciprofloxacin_Cattrall2019_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

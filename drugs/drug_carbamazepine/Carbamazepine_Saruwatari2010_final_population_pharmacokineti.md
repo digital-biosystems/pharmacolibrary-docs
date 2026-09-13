@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;carbamazepine&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/&quot;},{&quot;label&quot;:&quot;Saruwatari_2010 \u00b7 final_population_pharmacokinetic_model::patients with epilepsy&quot;}]"></div>
+
 # carbamazepine — `Carbamazepine_Saruwatari2010_final_population_pharmacokineti`
 
 > ## <span class="pk-badge pk-badge--neutral">not_reviewed</span>

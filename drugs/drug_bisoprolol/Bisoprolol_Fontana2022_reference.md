@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;bisoprolol&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/&quot;},{&quot;label&quot;:&quot;Fontana_2022 \u00b7 patients with non-ST elevation acute coronary syndrome on bisoprolol&quot;}]"></div>
+
 # bisoprolol — `Bisoprolol_Fontana2022_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

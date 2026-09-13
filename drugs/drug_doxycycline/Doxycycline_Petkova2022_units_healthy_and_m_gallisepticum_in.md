@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;doxycycline&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/&quot;},{&quot;label&quot;:&quot;Petkova_2022 \u00b7 units::healthy and M. gallisepticum-infected broiler chickens&quot;}]"></div>
+
 # doxycycline — `Doxycycline_Petkova2022_units_healthy_and_m_gallisepticum_in`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

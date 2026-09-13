@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;semaglutide&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/&quot;},{&quot;label&quot;:&quot;Overgaard_2019 \u00b7 two_compartment_final_model::healthy subjects and those with type 2 diabetes&quot;}]"></div>
+
 # semaglutide — `Semaglutide_Overgaard2019_two_compartment_final_model_health`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

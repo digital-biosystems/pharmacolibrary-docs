@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine, combinations with psycholeptics&quot;}]"></div>
+
 # codeine, combinations with psycholeptics
 
 - **generic name:** codeine, combinations with psycholeptics

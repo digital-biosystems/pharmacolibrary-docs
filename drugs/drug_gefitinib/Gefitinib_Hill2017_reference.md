@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;gefitinib&quot;,&quot;href&quot;:&quot;drugs/drug_gefitinib/&quot;},{&quot;label&quot;:&quot;Hill_2017 \u00b7 wild type and Hepatic Reductase Null mice&quot;}]"></div>
+
 # gefitinib — `Gefitinib_Hill2017_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

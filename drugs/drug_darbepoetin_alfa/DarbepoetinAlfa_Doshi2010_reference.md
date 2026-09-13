@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;darbepoetin alfa&quot;,&quot;href&quot;:&quot;drugs/drug_darbepoetin_alfa/&quot;},{&quot;label&quot;:&quot;Doshi_2010 \u00b7 anemic patients with chronic kidney disease not receiving dialysis&quot;}]"></div>
+
 # darbepoetin alfa — `DarbepoetinAlfa_Doshi2010_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

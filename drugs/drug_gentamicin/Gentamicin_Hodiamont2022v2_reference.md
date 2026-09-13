@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;gentamicin&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/&quot;},{&quot;label&quot;:&quot;Hodiamont_2022_2 \u00b7 various patient populations&quot;}]"></div>
+
 # gentamicin — `Gentamicin_Hodiamont2022v2_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;glycopyrronium bromide&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/&quot;},{&quot;label&quot;:&quot;Bartels_2013 \u00b7 healthy volunteers&quot;}]"></div>
+
 # glycopyrronium bromide — `GlycopyrroniumBromide_Bartels2013_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

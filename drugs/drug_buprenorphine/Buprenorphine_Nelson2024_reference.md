@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;buprenorphine&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/&quot;},{&quot;label&quot;:&quot;Nelson_2024 \u00b7 horses&quot;}]"></div>
+
 # buprenorphine — `Buprenorphine_Nelson2024_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -33,7 +35,7 @@ Nelson GR; Mama KR; Weiner D; McKemie DS; Kass PH; Steinmetz SJ; et al. et al. (
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | C max (ng mL e1 ) | `Q32` · Cmax | —(suppressed) | ng mL e1 | — | [ng] · [ml] · [e1] | not captured | llm (0.5) | tab_0:row2:col2, tab_0:row2:col3, tab_0:row2:col4 | — | not captured |
-| T max (hours) | `Q56` · tmax | —(suppressed) | hours | — | [h] | not captured | llm (0.5) | tab_0:row4:col2, tab_0:row4:col3, tab_0:row4:col4 | — | not captured |
+| T max (hours) | `Q56` · tmax | —(suppressed) | hours | — | h | not captured | llm (0.5) | tab_0:row4:col2, tab_0:row4:col3, tab_0:row4:col4 | — | not captured |
 | AUC inf (hours ng mL e1 ) | `Q88` · AUC | —(suppressed) | hours ng mL e1 | — | [h] · [ng] · [ml] · [e1] | not captured | boundary (0.8) | tab_0:row6:col1, tab_0:row6:col2, tab_0:row6:col3, tab_0:row6:col4 | — | not captured |
 
 <details class="legend">
@@ -49,6 +51,7 @@ Nelson GR; Mama KR; Weiner D; McKemie DS; Kass PH; Steinmetz SJ; et al. et al. (
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=buprenorphine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- unit re-normalised: tmax 'hours' now converts (value unchanged)
 
 ## Validation
 

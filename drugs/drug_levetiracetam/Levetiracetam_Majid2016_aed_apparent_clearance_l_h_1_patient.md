@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;levetiracetam&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/&quot;},{&quot;label&quot;:&quot;Majid_2016 \u00b7 aed_apparent_clearance_l_h_1::patients with refractory partial-onset seizures&quot;}]"></div>
+
 # levetiracetam — `Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1_patient`
 
 > ## <span class="pk-badge pk-badge--neutral">not_reviewed</span>

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;zolmitriptan&quot;,&quot;href&quot;:&quot;drugs/drug_zolmitriptan/&quot;},{&quot;label&quot;:&quot;Zhou_2017 \u00b7 adults and adolescents with migraine&quot;}]"></div>
+
 # zolmitriptan — `Zolmitriptan_Zhou2017_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

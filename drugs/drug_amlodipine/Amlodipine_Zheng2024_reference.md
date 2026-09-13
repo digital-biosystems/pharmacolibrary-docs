@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;amlodipine&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/&quot;},{&quot;label&quot;:&quot;Zheng_2024 \u00b7 review reference&quot;}]"></div>
+
 # amlodipine — `Amlodipine_Zheng2024_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -90,6 +92,12 @@ Zheng ZQ; Jin YW; Yin D; Chen X; He SM; Liu CX; Zhang C; Wang DD et al. (2024). 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_amlodipine/Amlodipine_Zheng2024_reference/Amlodipine_Zheng2024_reference.svg" alt="Amlodipine_Zheng2024_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

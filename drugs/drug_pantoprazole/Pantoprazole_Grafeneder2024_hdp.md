@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;pantoprazole&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/&quot;},{&quot;label&quot;:&quot;Grafeneder_2024 \u00b7 hdp&quot;}]"></div>
+
 # pantoprazole — `Pantoprazole_Grafeneder2024_hdp`
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>
@@ -28,8 +30,6 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
 | t1/2 [min] | `Q57` · t1/2z | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Grafeneder_2024_table_3:row13:col7 | — | not captured |
 | Clearance [ml/min] | `Q22` · CL | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Grafeneder_2024_table_3:row14:col7 | — | not captured |
 | VD [ml] | `Q61` · V | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Grafeneder_2024_table_3:row15:col7 | — | not captured |
-| first-order absorption rate constants (K a ) ... for OS | `Q49` · kabs | —(suppressed) | h -1 | — | 1/h | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
-| lag time ... for the DRT formulation | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review_gapfill (0.7) | McCann_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,6 +52,7 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from McCann_2023's review values (primary lacked it)
 - gap-filled Q83 (tlag) from McCann_2023's review values (primary lacked it)
+- removed gap-filled parent disposition (Q49, Q83): this record measures 'clopidogrel active metabolite', not pantoprazole, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
 
 **Extraction notes:**
 - unparsed cell Grafeneder_2024_table_3:row3:col1 = '1.9 (1.1–2.1)'

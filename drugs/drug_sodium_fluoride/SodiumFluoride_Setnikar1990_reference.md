@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;sodium fluoride&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_fluoride/&quot;},{&quot;label&quot;:&quot;Setnikar_1990 \u00b7 healthy adults&quot;}]"></div>
+
 # sodium fluoride — `SodiumFluoride_Setnikar1990_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

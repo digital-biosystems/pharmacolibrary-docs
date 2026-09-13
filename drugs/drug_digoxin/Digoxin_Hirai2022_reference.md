@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01A&quot;,&quot;href&quot;:&quot;atc/C01A.md&quot;},{&quot;label&quot;:&quot;digoxin&quot;,&quot;href&quot;:&quot;drugs/drug_digoxin/&quot;},{&quot;label&quot;:&quot;Hirai_2022 \u00b7 Japanese patients with atrial fibrillation and heart failure&quot;}]"></div>
+
 # digoxin — `Digoxin_Hirai2022_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

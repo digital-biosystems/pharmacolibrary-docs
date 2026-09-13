@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;simvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/&quot;},{&quot;label&quot;:&quot;Friedrich_2014 \u00b7 review reference&quot;}]"></div>
+
 # simvastatin — `Simvastatin_Friedrich2014_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -84,6 +86,12 @@ Friedrich S; Kastelein JJ; James D; Waterhouse T; Nissen SE; Nicholls SJ; et al.
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference.svg" alt="Simvastatin_Friedrich2014_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

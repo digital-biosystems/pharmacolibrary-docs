@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;propacetamol&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/&quot;},{&quot;label&quot;:&quot;Allegaert_2004 \u00b7 term and preterm neonates&quot;}]"></div>
+
 # propacetamol — `Propacetamol_Allegaert2004_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

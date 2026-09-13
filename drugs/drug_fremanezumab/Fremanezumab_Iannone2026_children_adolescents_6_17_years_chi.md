@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;fremanezumab&quot;,&quot;href&quot;:&quot;drugs/drug_fremanezumab/&quot;},{&quot;label&quot;:&quot;Iannone_2026 \u00b7 children_adolescents_6_17_years::children and adolescents with migraine&quot;}]"></div>
+
 # fremanezumab — `Fremanezumab_Iannone2026_children_adolescents_6_17_years_chi`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

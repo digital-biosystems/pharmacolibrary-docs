@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;atazanavir&quot;,&quot;href&quot;:&quot;drugs/drug_atazanavir/&quot;},{&quot;label&quot;:&quot;Kile_2012 \u00b7 HIV-negative volunteers&quot;}]"></div>
+
 # atazanavir — `Atazanavir_Kile2012_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -32,9 +34,9 @@ Kile DA; MaWhinney S; Aquilante CL; Rower JE; Castillo-Mancilla JR; Anderson PL 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | —(suppressed) | liters/h | — | liters/h | not captured | exact (1.0) | Kile_2012:other_prose | — | not captured |
-| V2/F | `Q82` · V2/F | —(suppressed) | liters | — | liters | not captured | exact (1.0) | Kile_2012:other_prose | — | not captured |
-| Q/F | `Q69` · Q/F | —(suppressed) | liters/h | — | liters/h | not captured | exact (1.0) | Kile_2012:other_prose | — | not captured |
+| CL/F | `Q27` · CL/F | —(suppressed) | liters/h | — | L/h | not captured | exact (1.0) | Kile_2012:other_prose | — | not captured |
+| V2/F | `Q82` · V2/F | —(suppressed) | liters | — | L | not captured | exact (1.0) | Kile_2012:other_prose | — | not captured |
+| Q/F | `Q69` · Q/F | —(suppressed) | liters/h | — | L/h | not captured | exact (1.0) | Kile_2012:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -50,6 +52,9 @@ Kile DA; MaWhinney S; Aquilante CL; Rower JE; Castillo-Mancilla JR; Anderson PL 
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=atazanavir
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- unit re-normalised: CL/F 'liters/h' now converts (value unchanged)
+- unit re-normalised: V2/F 'liters' now converts (value unchanged)
+- unit re-normalised: Q/F 'liters/h' now converts (value unchanged)
 
 ## Validation
 

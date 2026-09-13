@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;Yuan_2017 \u00b7 review reference&quot;}]"></div>
+
 # diclofenac — `Diclofenac_Yuan2017_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -79,6 +81,12 @@ Yuan J; Ma H; Cen N; Zhou A; Tao H et al. (2017). Biomedical reports 7
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_diclofenac/Diclofenac_Yuan2017_reference/Diclofenac_Yuan2017_reference.svg" alt="Diclofenac_Yuan2017_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

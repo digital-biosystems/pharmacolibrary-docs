@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05B&quot;,&quot;href&quot;:&quot;atc/A05B.md&quot;},{&quot;label&quot;:&quot;ornithine oxoglurate&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine_oxoglurate/&quot;},{&quot;label&quot;:&quot;Le_1997 \u00b7 burn patients&quot;}]"></div>
+
 # ornithine oxoglurate — `OrnithineOxoglurate_Le1997_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;ofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_ofloxacin/&quot;},{&quot;label&quot;:&quot;Fillastre_1987 \u00b7 subjects with renal failure and healthy controls&quot;}]"></div>
+
 # ofloxacin — `Ofloxacin_Fillastre1987_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -32,7 +34,7 @@ Fillastre JP; Leroy A; Humbert G et al. (1987). Antimicrobial agents and chemoth
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V/F | `Q76` · V/F | —(suppressed) | liters/kg | — | liters/kg | not captured | exact (1.0) | Fillastre_1987:results_prose | — | not captured |
+| V/F | `Q76` · V/F | —(suppressed) | liters/kg | — | L | not captured | exact (1.0) | Fillastre_1987:results_prose | — | not captured |
 | CL/F | `Q27` · CL/F | —(suppressed) | ml/min per 1.73 m2 | — | ml/min per 1.73 m2 | not captured | exact (1.0) | Fillastre_1987:results_prose | — | not captured |
 | total body clearance | `Q22` · CL | —(suppressed) | ml/min per 1.73 m2 | — | ml/min per 1.73 m2 | not captured | boundary (0.8) | Fillastre_1987:results_prose | — | not captured |
 | ka | `Q49` · kabs | —(suppressed) | h-i | — | h-i | not captured | exact (1.0) | Fillastre_1987:discussion_prose | — | not captured |
@@ -57,6 +59,7 @@ Fillastre JP; Leroy A; Humbert G et al. (1987). Antimicrobial agents and chemoth
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=ofloxacin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- unit re-normalised: V/F 'liters/kg' now converts (value unchanged)
 
 **Extraction notes:**
 - final table tab_1: grid unusable → re-running vision table extraction for Fillastre_1987

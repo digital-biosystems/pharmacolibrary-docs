@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;midazolam&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/&quot;},{&quot;label&quot;:&quot;McCann_2025 \u00b7 children with and without obesity&quot;}]"></div>
+
 # midazolam — `Midazolam_McCann2025_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -96,6 +98,12 @@ McCann S; Helfer VE; Balevic SJ; Muller WJ; van den Anker JN; Al-Uzri A; et al. 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_midazolam/Midazolam_McCann2025_reference/Midazolam_McCann2025_reference.svg" alt="Midazolam_McCann2025_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;cannabidiol&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/&quot;},{&quot;label&quot;:&quot;Eichler_2023 \u00b7 second_trial_1_mg_kg_n_3&quot;}]"></div>
+
 # cannabidiol — `Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>

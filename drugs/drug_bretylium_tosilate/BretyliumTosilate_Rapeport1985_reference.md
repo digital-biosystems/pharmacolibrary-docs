@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;bretylium tosilate&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium_tosilate/&quot;},{&quot;label&quot;:&quot;Rapeport_1985 \u00b7 adults&quot;}]"></div>
+
 # bretylium tosilate — `BretyliumTosilate_Rapeport1985_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

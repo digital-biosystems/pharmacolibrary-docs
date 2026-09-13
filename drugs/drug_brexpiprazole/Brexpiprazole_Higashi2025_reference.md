@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;brexpiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/&quot;},{&quot;label&quot;:&quot;Higashi_2025 \u00b7 Japanese healthy subjects and patients with schizophrenia&quot;}]"></div>
+
 # brexpiprazole — `Brexpiprazole_Higashi2025_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

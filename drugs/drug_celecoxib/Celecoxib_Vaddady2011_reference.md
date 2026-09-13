@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;celecoxib&quot;,&quot;href&quot;:&quot;drugs/drug_celecoxib/&quot;},{&quot;label&quot;:&quot;Vaddady_2011 \u00b7 pigs in hemorrhagic shock or normotensive conditions&quot;}]"></div>
+
 # celecoxib — `Celecoxib_Vaddady2011_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

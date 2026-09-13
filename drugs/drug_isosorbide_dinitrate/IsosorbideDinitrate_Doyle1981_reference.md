@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;isosorbide dinitrate&quot;,&quot;href&quot;:&quot;drugs/drug_isosorbide_dinitrate/&quot;},{&quot;label&quot;:&quot;Doyle_1981 \u00b7 rhesus monkey, cynomolgus monkey, and baboon&quot;}]"></div>
+
 # isosorbide dinitrate — `IsosorbideDinitrate_Doyle1981_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

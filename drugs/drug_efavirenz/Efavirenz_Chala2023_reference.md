@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;efavirenz&quot;,&quot;href&quot;:&quot;drugs/drug_efavirenz/&quot;},{&quot;label&quot;:&quot;Chala_2023 \u00b7 HIV-1-infected children in Ethiopia&quot;}]"></div>
+
 # efavirenz — `Efavirenz_Chala2023_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -102,6 +104,12 @@ Chala A; Kitabi EN; Ahmed JH; Tadesse BT; Chaka TE; Makonnen E; et al. et al. (2
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_efavirenz/Efavirenz_Chala2023_reference/Efavirenz_Chala2023_reference.svg" alt="Efavirenz_Chala2023_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;ranitidine&quot;,&quot;href&quot;:&quot;drugs/drug_ranitidine/&quot;},{&quot;label&quot;:&quot;Hawwa_2013 \u00b7 critically ill children&quot;}]"></div>
+
 # ranitidine — `Ranitidine_Hawwa2013_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

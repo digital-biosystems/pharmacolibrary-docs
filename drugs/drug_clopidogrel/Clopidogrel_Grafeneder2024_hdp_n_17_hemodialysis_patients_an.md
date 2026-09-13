@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;clopidogrel&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/&quot;},{&quot;label&quot;:&quot;Grafeneder_2024 \u00b7 hdp_n_17::hemodialysis patients and healthy volunteers&quot;}]"></div>
+
 # clopidogrel — `Clopidogrel_Grafeneder2024_hdp_n_17_hemodialysis_patients_an`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

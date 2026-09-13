@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;c1-inhibitor, plasma derived&quot;,&quot;href&quot;:&quot;drugs/drug_c1_inhibitor_plasma_derived/&quot;},{&quot;label&quot;:&quot;Bernstein_2010 \u00b7 patients with hereditary angioedema&quot;}]"></div>
+
 # c1-inhibitor, plasma derived — `C1InhibitorPlasmaDerived_Bernstein2010_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

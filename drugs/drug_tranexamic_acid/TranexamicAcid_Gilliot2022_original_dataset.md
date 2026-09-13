@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;tranexamic acid&quot;,&quot;href&quot;:&quot;drugs/drug_tranexamic_acid/&quot;},{&quot;label&quot;:&quot;Gilliot_2022 \u00b7 original_dataset&quot;}]"></div>
+
 # tranexamic acid — `TranexamicAcid_Gilliot2022_original_dataset`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -100,6 +102,12 @@ Gilliot S; Ducloy-Bouthors AS; Loingeville F; Hennart B; Allorge D; Lebuffe G; e
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_original_dataset/TranexamicAcid_Gilliot2022_original_dataset.svg" alt="TranexamicAcid_Gilliot2022_original_dataset diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

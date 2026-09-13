@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;ciprofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/&quot;},{&quot;label&quot;:&quot;H\u00f6ffken_1985 \u00b7 50_mg_orally&quot;}]"></div>
+
 # ciprofloxacin — `Ciprofloxacin_Hffken1985_50_mg_orally`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -86,6 +88,12 @@ Höffken G; Lode H; Prinzing C; Borner K; Koeppe P et al. (1985). Antimicrobial 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_ciprofloxacin/Ciprofloxacin_Hffken1985_50_mg_orally/Ciprofloxacin_Hffken1985_50_mg_orally.svg" alt="Ciprofloxacin_Hffken1985_50_mg_orally diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

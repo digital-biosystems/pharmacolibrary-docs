@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;acetylsalicylic acid&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/&quot;},{&quot;label&quot;:&quot;Cuesta-Gragera_2015 \u00b7 adults&quot;}]"></div>
+
 # acetylsalicylic acid — `AcetylsalicylicAcid_CuestaGragera2015_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

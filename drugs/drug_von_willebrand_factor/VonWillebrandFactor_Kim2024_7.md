@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;von Willebrand factor&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/&quot;},{&quot;label&quot;:&quot;Kim_2024 \u00b7 7&quot;}]"></div>
+
 # von Willebrand factor — `VonWillebrandFactor_Kim2024_7`
 
 > ## <span class="pk-badge pk-badge--neutral">None</span>
@@ -113,6 +115,12 @@ _No comparable checks._
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Kim2024_7/VonWillebrandFactor_Kim2024_7.svg" alt="VonWillebrandFactor_Kim2024_7 diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

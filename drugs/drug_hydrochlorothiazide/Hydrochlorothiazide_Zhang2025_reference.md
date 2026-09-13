@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;hydrochlorothiazide&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/&quot;},{&quot;label&quot;:&quot;Zhang_2025 \u00b7 review reference&quot;}]"></div>
+
 # hydrochlorothiazide — `Hydrochlorothiazide_Zhang2025_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -90,6 +92,12 @@ Zhang C; Chen L; Duan YY; He SM; Tian YL; Gao Y; Wang DD et al. (2025). Frontier
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Zhang2025_reference/Hydrochlorothiazide_Zhang2025_reference.svg" alt="Hydrochlorothiazide_Zhang2025_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

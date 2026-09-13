@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;eltrombopag&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/&quot;},{&quot;label&quot;:&quot;Saleh_2019 \u00b7 chronic hepatitis C patients&quot;}]"></div>
+
 # eltrombopag — `Eltrombopag_Saleh2019_reference`
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>

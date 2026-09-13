@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;levetiracetam&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/&quot;},{&quot;label&quot;:&quot;Schoemaker_2018 \u00b7 adults and children with focal seizures&quot;}]"></div>
+
 # levetiracetam — `Levetiracetam_Schoemaker2018_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -150,6 +152,12 @@ not matched (stem Schoemaker_2018)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference.svg" alt="Levetiracetam_Schoemaker2018_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

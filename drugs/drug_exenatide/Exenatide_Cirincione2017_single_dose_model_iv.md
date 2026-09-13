@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;exenatide&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/&quot;},{&quot;label&quot;:&quot;Cirincione_2017 \u00b7 single_dose_model_iv&quot;}]"></div>
+
 # exenatide — `Exenatide_Cirincione2017_single_dose_model_iv`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -69,6 +71,12 @@ not matched (stem Cirincione_2017)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv/Exenatide_Cirincione2017_single_dose_model_iv.svg" alt="Exenatide_Cirincione2017_single_dose_model_iv diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ticagrelor&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/&quot;},{&quot;label&quot;:&quot;Kathman_2022 \u00b7 healthy volunteers&quot;}]"></div>
+
 # ticagrelor — `Ticagrelor_Kathman2022_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
@@ -31,8 +33,6 @@ Kathman SJ; Wheeler JJ; Bhatt DL; Arnold SE; Lee JS et al. (2022). CPT: pharmaco
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | THETA2 | `Q99` · Q2 | —(suppressed) | not captured | — | not captured | not captured | llm (0.6) | psp412734-tbl-0003:row7:col1, psp412734-tbl-0003:row7:col2, psp412734-tbl-0003:row7:col3, Kathman_2022_table_2:row4:col1, Kathman_2022_table_2:row4:col2, Kathman_2022_table_2:row4:col3 | — | not captured |
-| ka (1/h) | `Q49` · kabs | —(suppressed) | 1/h | — | 1/h | not captured | review_gapfill (0.7) | Henrich_2021:review | — | not captured |
-| Absorption lag time prior MI (h) | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review_gapfill (0.7) | Åstrand_2019:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -119,6 +119,7 @@ Kathman SJ; Wheeler JJ; Bhatt DL; Arnold SE; Lee JS et al. (2022). CPT: pharmaco
 - status held at route_to_review — not promoted
 - gap-filled Q49 (kabs) from Henrich_2021's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Åstrand_2019's review values (primary lacked it)
+- removed gap-filled parent disposition (Q49, Q83): this record measures 'PB2452', not ticagrelor, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
 
 **Extraction notes:**
 - unparsed cell psp412734-tbl-0003:row3:col4 = '23.3%'

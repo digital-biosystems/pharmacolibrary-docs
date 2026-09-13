@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Reed_2024 \u00b7 fractional_bioavailability::healthy adult horses&quot;}]"></div>
+
 # fentanyl — `Fentanyl_Reed2024_fractional_bioavailability_healthy_adult_h`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

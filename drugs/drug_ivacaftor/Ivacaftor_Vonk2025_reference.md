@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R07A&quot;,&quot;href&quot;:&quot;atc/R07A.md&quot;},{&quot;label&quot;:&quot;ivacaftor&quot;,&quot;href&quot;:&quot;drugs/drug_ivacaftor/&quot;},{&quot;label&quot;:&quot;Vonk_2025 \u00b7 children with cystic fibrosis&quot;}]"></div>
+
 # ivacaftor — `Ivacaftor_Vonk2025_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
@@ -37,7 +39,7 @@ Vonk SEM; Terheggen-Lagro SWJ; Haarman EG; Hashimoto S; Maitland-van der Zee AH;
 | apparent clearance (CL elx /F) | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | exact (1.0) | Vonk_2025:other_prose | — | not captured |
 | volume of distribution (V elx /F) | `Q61` · V | —(suppressed) | L | — | L | not captured | exact (1.0) | Vonk_2025:other_prose | — | not captured |
 | CL tez /F | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | boundary (0.8) | Vonk_2025:other_prose | — | not captured |
-| V/F | `Q76` · V/F | —(suppressed) | L/ 70 kg | — | L/ 70 kg | not captured | exact (1.0) | Vonk_2025:discussion_prose | — | not captured |
+| V/F | `Q76` · V/F | —(suppressed) | L/ 70 kg | — | L | not captured | exact (1.0) | Vonk_2025:discussion_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,6 +63,7 @@ Vonk SEM; Terheggen-Lagro SWJ; Haarman EG; Hashimoto S; Maitland-van der Zee AH;
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
+- unit re-normalised: V/F 'L/ 70 kg' now converts (value unchanged)
 
 **Extraction notes:**
 - unparsed cell tab_1:row2:col1 = '6-11y &lt; 30 kg'

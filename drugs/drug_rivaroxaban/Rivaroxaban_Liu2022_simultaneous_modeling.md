@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;rivaroxaban&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/&quot;},{&quot;label&quot;:&quot;Liu_2022 \u00b7 simultaneous_modeling&quot;}]"></div>
+
 # rivaroxaban — `Rivaroxaban_Liu2022_simultaneous_modeling`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -84,6 +86,12 @@ Liu XQ; Zhang YF; Ding HY; Yan MM; Jiao Z; Zhong MK; et al. et al. (2022). Acta 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling/Rivaroxaban_Liu2022_simultaneous_modeling.svg" alt="Rivaroxaban_Liu2022_simultaneous_modeling diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R07A&quot;,&quot;href&quot;:&quot;atc/R07A.md&quot;},{&quot;label&quot;:&quot;ivacaftor&quot;,&quot;href&quot;:&quot;drugs/drug_ivacaftor/&quot;},{&quot;label&quot;:&quot;Truong_2025 \u00b7 pediatric patients with cystic fibrosis&quot;}]"></div>
+
 # ivacaftor — `Ivacaftor_Truong2025_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -33,7 +35,7 @@ Truong NH; Benaboud S; Bouazza N; Barboura M; Bardin E; Miralles M; et al. et al
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F | `Q27` · CL/F | —(suppressed) | not captured | — | not captured | 1.57 | exact (1.0) | tab_1:row5:col1, tab_1:row5:col2, tab_1:row5:col3 | — | not captured |
-| V/F (L/70 kg) | `Q76` · V/F | —(suppressed) | L/70 kg | — | [l] / [70kg] | 56.1 | exact (1.0) | tab_1:row7:col1, tab_1:row7:col2, tab_1:row7:col3 | — | not captured |
+| V/F (L/70 kg) | `Q76` · V/F | —(suppressed) | L/70 kg | — | L | 56.1 | exact (1.0) | tab_1:row7:col1, tab_1:row7:col2, tab_1:row7:col3 | — | not captured |
 | ω CL | `Q22` · CL | —(suppressed) | not captured | — | not captured | 0.31 | boundary (0.8) | tab_1:row9:col1, tab_1:row9:col2, tab_1:row9:col3 | — | not captured |
 | σ additive | `Q317` · add_error | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_1:row11:col3 | — | not captured |
 | σ proportional | `Q316` · prop_error | —(suppressed) | not captured | — | not captured | 0.247 | llm (0.5) | tab_1:row13:col1, tab_1:row13:col2, tab_1:row13:col3 | — | not captured |
@@ -54,6 +56,7 @@ Truong NH; Benaboud S; Bouazza N; Barboura M; Bardin E; Miralles M; et al. et al
 - dropped value-less row: 'T lag'
 - dropped value-less row: 'V/F'
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=elexacaftor/tezacaftor/ivacaftor
+- unit re-normalised: V/F 'L/70 kg' now converts (value unchanged)
 
 **Extraction notes:**
 - unparsed cell tab_1:row3:col1 = '2.17 (fix)'

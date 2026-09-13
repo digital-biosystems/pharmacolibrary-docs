@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;montelukast&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/&quot;},{&quot;label&quot;:&quot;Zhu_2024 \u00b7 review reference&quot;}]"></div>
+
 # montelukast — `Montelukast_Zhu2024_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -84,6 +86,12 @@ Zhu Y; Xu Y; Zhao H; Qie H; Gao X; Gao J; Feng Z; Bai J; Feng R; Wang M et al. (
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_montelukast/Montelukast_Zhu2024_reference/Montelukast_Zhu2024_reference.svg" alt="Montelukast_Zhu2024_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

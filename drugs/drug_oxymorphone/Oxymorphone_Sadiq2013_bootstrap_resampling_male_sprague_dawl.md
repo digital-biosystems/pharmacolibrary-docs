@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;oxymorphone&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/&quot;},{&quot;label&quot;:&quot;Sadiq_2013 \u00b7 bootstrap_resampling::male Sprague-Dawley rats&quot;}]"></div>
+
 # oxymorphone — `Oxymorphone_Sadiq2013_bootstrap_resampling_male_sprague_dawl`
 
 > ## <span class="pk-badge pk-badge--neutral">not_reviewed</span>

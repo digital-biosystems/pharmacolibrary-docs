@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;doxorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/&quot;},{&quot;label&quot;:&quot;Mc_2024 \u00b7 patients with advanced solid tumours&quot;}]"></div>
+
 # doxorubicin — `Doxorubicin_Mc2024_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

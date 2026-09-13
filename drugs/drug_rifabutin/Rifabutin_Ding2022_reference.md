@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rifabutin&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/&quot;},{&quot;label&quot;:&quot;Ding_2022 \u00b7 review reference&quot;}]"></div>
+
 # rifabutin — `Rifabutin_Ding2022_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -80,6 +82,12 @@ Ding Q; Huang S; Sun Z; Chen K; Li X; Pei Q et al. (2022). Drug design, developm
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_rifabutin/Rifabutin_Ding2022_reference/Rifabutin_Ding2022_reference.svg" alt="Rifabutin_Ding2022_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

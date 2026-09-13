@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;icatibant&quot;,&quot;href&quot;:&quot;drugs/drug_icatibant/&quot;},{&quot;label&quot;:&quot;Wang_2021 \u00b7 typical_value::pediatric and adult patients with hereditary angioedema and healthy adults&quot;}]"></div>
+
 # icatibant — `Icatibant_Wang2021_typical_value_pediatric_and_adult_patient`
 
 > ## <span class="pk-badge pk-badge--neutral">not_reviewed</span>

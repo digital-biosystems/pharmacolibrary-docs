@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;metamizole sodium&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/&quot;},{&quot;label&quot;:&quot;Blaser_2021 \u00b7 4_faa::healthy salt-depleted adults&quot;}]"></div>
+
 # metamizole sodium — `MetamizoleSodium_Blaser2021_4_faa_healthy_salt_depleted_adul`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

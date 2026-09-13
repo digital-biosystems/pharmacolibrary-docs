@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;levetiracetam&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/&quot;},{&quot;label&quot;:&quot;Karatza_2020 \u00b7 drug refractory adult epileptic outpatients&quot;}]"></div>
+
 # levetiracetam — `Levetiracetam_Karatza2020_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

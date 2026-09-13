@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;cilazapril&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/&quot;},{&quot;label&quot;:&quot;Deget_1991 \u00b7 review reference&quot;}]"></div>
+
 # cilazapril — `Cilazapril_Deget1991_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -79,6 +81,12 @@ Deget F; Brogden RN et al. (1991). Drugs 41
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_cilazapril/Cilazapril_Deget1991_reference/Cilazapril_Deget1991_reference.svg" alt="Cilazapril_Deget1991_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

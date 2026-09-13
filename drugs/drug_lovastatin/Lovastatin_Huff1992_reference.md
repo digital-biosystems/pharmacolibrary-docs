@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;lovastatin&quot;,&quot;href&quot;:&quot;drugs/drug_lovastatin/&quot;},{&quot;label&quot;:&quot;Huff_1992 \u00b7 miniature pigs&quot;}]"></div>
+
 # lovastatin — `Lovastatin_Huff1992_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

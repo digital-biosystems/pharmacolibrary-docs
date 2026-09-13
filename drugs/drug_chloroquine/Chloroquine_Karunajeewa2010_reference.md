@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;chloroquine&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/&quot;},{&quot;label&quot;:&quot;Karunajeewa_2010 \u00b7 pregnant and nonpregnant Papua New Guinean women&quot;}]"></div>
+
 # chloroquine — `Chloroquine_Karunajeewa2010_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -34,7 +36,7 @@ Karunajeewa HA; Salman S; Mueller I; Baiwog F; Gomorrai S; Law I; et al. et al. 
 |---|---|---|---|---|---|---|---|---|---|---|
 | OFV | `Q87` · Frel | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_0:row2:col1, tab_0:row2:col2 | — | not captured |
 | CQ metabolic clearance to DECQ (CL M ) accounts for | `Q22` · CL | —(suppressed) | % | — | % | not captured | boundary (0.8) | Karunajeewa_2010:results_prose | — | not captured |
-| median steady-state volume of distribution (V SS /F) | `Q61` · V | —(suppressed) | liters | — | liters | not captured | boundary (0.8) | Karunajeewa_2010:discussion_prose | — | not captured |
+| median steady-state volume of distribution (V SS /F) | `Q61` · V | —(suppressed) | liters | — | L | not captured | boundary (0.8) | Karunajeewa_2010:discussion_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -49,6 +51,7 @@ Karunajeewa HA; Salman S; Mueller I; Baiwog F; Gomorrai S; Law I; et al. et al. 
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=chloroquine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- unit re-normalised: V 'liters' now converts (value unchanged)
 
 **Extraction notes:**
 - unparsed cell tab_0:row1:col3 = 'Bootstrap replicates (n ϭ 1,000) (median ͓95% empirical CI e ͔)'

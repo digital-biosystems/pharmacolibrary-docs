@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;nickel&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/&quot;},{&quot;label&quot;:&quot;Zhao_2017 \u00b7 rat and occupational population&quot;}]"></div>
+
 # nickel — `Nickel_Zhao2017_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -90,13 +92,21 @@ Zhao H; Ge P; Chang X; Ren X; Chen L; Gao J; et al. et al. (2017). Wei sheng yan
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference.svg" alt="Nickel_Zhao2017_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
+
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_modelica.zip" download>Nickel_Zhao2017_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_fmi.zip" download>Nickel_Zhao2017_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_matlab.zip" download>Nickel_Zhao2017_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_matlab_simbio.zip" download>Nickel_Zhao2017_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_sbml.zip" download>Nickel_Zhao2017_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>

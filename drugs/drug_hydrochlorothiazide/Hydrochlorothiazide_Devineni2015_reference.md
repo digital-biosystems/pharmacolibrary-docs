@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;hydrochlorothiazide&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/&quot;},{&quot;label&quot;:&quot;Devineni_2015 \u00b7 review reference&quot;}]"></div>
+
 # hydrochlorothiazide — `Hydrochlorothiazide_Devineni2015_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -83,6 +85,12 @@ Devineni D; Polidori D et al. (2015). Clinical pharmacokinetics 54
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Devineni2015_reference/Hydrochlorothiazide_Devineni2015_reference.svg" alt="Hydrochlorothiazide_Devineni2015_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

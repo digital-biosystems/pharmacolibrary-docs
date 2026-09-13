@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05B&quot;,&quot;href&quot;:&quot;atc/A05B.md&quot;},{&quot;label&quot;:&quot;phospholipids&quot;,&quot;href&quot;:&quot;drugs/drug_phospholipids/&quot;},{&quot;label&quot;:&quot;Hummel_1975 \u00b7 non pregnant female rats&quot;}]"></div>
+
 # phospholipids — `Phospholipids_Hummel1975_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

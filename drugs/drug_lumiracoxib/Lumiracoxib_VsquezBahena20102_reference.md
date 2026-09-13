@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;lumiracoxib&quot;,&quot;href&quot;:&quot;drugs/drug_lumiracoxib/&quot;},{&quot;label&quot;:&quot;V\u00e1squez-Bahena_2010_2 \u00b7 female Wistar rats with carrageenan-induced inflammation&quot;}]"></div>
+
 # lumiracoxib — `Lumiracoxib_VsquezBahena20102_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

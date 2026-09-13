@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;paracetamol&quot;,&quot;href&quot;:&quot;drugs/drug_paracetamol/&quot;},{&quot;label&quot;:&quot;Wu_2025 \u00b7 preterm and term neonates, infants, children, and adults&quot;}]"></div>
+
 # paracetamol — `Paracetamol_Wu2025_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

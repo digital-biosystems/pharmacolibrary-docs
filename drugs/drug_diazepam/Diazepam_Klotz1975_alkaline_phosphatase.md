@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;diazepam&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/&quot;},{&quot;label&quot;:&quot;Klotz_1975 \u00b7 alkaline_phosphatase&quot;}]"></div>
+
 # diazepam — `Diazepam_Klotz1975_alkaline_phosphatase`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -91,6 +93,12 @@ Klotz U; Avant GR; Hoyumpa A; Schenker S; Wilkinson GR et al. (1975). The Journa
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_diazepam/Diazepam_Klotz1975_alkaline_phosphatase/Diazepam_Klotz1975_alkaline_phosphatase.svg" alt="Diazepam_Klotz1975_alkaline_phosphatase diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

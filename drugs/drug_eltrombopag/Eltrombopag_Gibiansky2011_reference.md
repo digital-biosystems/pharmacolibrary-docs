@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;eltrombopag&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/&quot;},{&quot;label&quot;:&quot;Gibiansky_2011 \u00b7 healthy subjects and patients with chronic idiopathic thrombocytopenic purpura&quot;}]"></div>
+
 # eltrombopag — `Eltrombopag_Gibiansky2011_reference`
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>

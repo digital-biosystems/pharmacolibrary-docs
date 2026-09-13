@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;pantoprazole&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/&quot;},{&quot;label&quot;:&quot;Olivarez_2022_2 \u00b7 review reference&quot;}]"></div>
+
 # pantoprazole — `Pantoprazole_Olivarez2022v2_reference`
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>

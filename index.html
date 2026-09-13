@@ -38,6 +38,64 @@
        .pk-tab-end; the plugin below slices the rendered section at those points. The split
        happens in the DOM because docsify does not re-enter markdown inside an HTML block —
        wrapping the panels in the markdown would print the first tab as literal text. */
+    /* ── database-backed sidebar search ───────────────────────────────────────
+       Replaces the docsify search plugin, which could not index this corpus. */
+    .pks { padding: 0 0 10px; border-bottom: 1px solid #eaecef; margin-bottom: 10px; }
+    .pks input { width: 100%; box-sizing: border-box; font: inherit; font-size: 14px;
+      padding: 7px 9px; border: 1px solid #cbd5e1; border-radius: 6px; }
+    .pks-hint { font-size: 11.5px; color: #94a3b8; padding: 4px 2px 0; }
+    .pks-res { list-style: none; margin: 6px 0 0; padding: 0; max-height: 46vh; overflow-y: auto; }
+    .pks-res li { padding: 0; margin: 0; }
+    .pks-res a { display: block; padding: 5px 7px; border-radius: 5px; font-size: 13px;
+      color: #334155; text-decoration: none; }
+    .pks-res a:hover { background: #f1f5f9; color: var(--theme-color, #0074d9); }
+    .pks-res .k { display: inline-block; min-width: 62px; font-size: 10.5px;
+      text-transform: uppercase; letter-spacing: .04em; color: #94a3b8; }
+    .pks-res .d { color: #94a3b8; font-size: 11.5px; }
+    /* ── query page ───────────────────────────────────────────────────────────
+       Only the /query route uses these; the engine itself (sql.js, 688 kB) is
+       fetched by the plugin below and never on any other page. */
+    .pkq-status { padding: 10px 12px; border-radius: 6px; background: #f1f5f9;
+      color: #475569; font-size: 14px; margin: 12px 0; }
+    .pkq-status.err { background: #fef2f2; color: #b91c1c; }
+    .pkq-canned { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0; }
+    .pkq-btn { font: inherit; font-size: 13px; padding: 5px 10px; cursor: pointer;
+      border: 1px solid #cbd5e1; border-radius: 999px; background: #fff; color: #334155; }
+    .pkq-btn:hover { border-color: var(--theme-color, #0074d9); color: var(--theme-color, #0074d9); }
+    .pkq-btn.pkq-run { border-radius: 6px; background: var(--theme-color, #0074d9);
+      color: #fff; border-color: transparent; padding: 6px 16px; }
+    .pkq-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 10px 0; }
+    .pkq-row label { font-size: 13px; color: #64748b; }
+    .pkq-row input { font: inherit; font-size: 13px; padding: 5px 8px; min-width: 190px;
+      border: 1px solid #cbd5e1; border-radius: 6px; }
+    #pkq-sql { width: 100%; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12.5px; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px;
+      background: #f8fafc; color: #0f172a; }
+    .pkq-meta { font-size: 12.5px; color: #64748b; }
+    #pkq-out { overflow-x: auto; }
+    #pkq-out table { font-size: 13px; border-collapse: collapse; margin-top: 10px; }
+    #pkq-out th { text-align: left; background: #f1f5f9; position: sticky; top: 0; }
+    #pkq-out th, #pkq-out td { padding: 4px 10px; border-bottom: 1px solid #e2e8f0;
+      white-space: nowrap; }
+    #pkq-out td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    /* ── breadcrumbs ──────────────────────────────────────────────────────────
+       build.py stamps <div class="pk-crumbs" data-crumbs="[…]"> with labels it already
+       knows (generic name, ATC class, paper stem). A plugin that only split the URL could
+       show drug_abacavir but not abacavir, which is why the trail is authored, not parsed. */
+    .pk-crumbs { display: none; }
+    .markdown-section nav.pk-crumbtrail {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+      margin: -8px 0 18px; font-size: 13px; color: #64748b;
+    }
+    .markdown-section nav.pk-crumbtrail a { color: #64748b; text-decoration: none; }
+    .markdown-section nav.pk-crumbtrail a:hover { color: var(--theme-color, #0074d9);
+      text-decoration: underline; }
+    .markdown-section nav.pk-crumbtrail .sep { color: #cbd5e1; }
+    .markdown-section nav.pk-crumbtrail .here { color: #334155; font-weight: 600; }
+    /* The search box the official plugin injects at the top of the sidebar. */
+    .sidebar .search { margin-bottom: 12px; border-bottom: 1px solid #eaecef; }
+    .sidebar .search input { font-size: 14px; padding: 7px 8px; }
+    .sidebar .search .results-panel { font-size: 13px; }
     .pk-tab-mark, .pk-tab-end { display: none; }
     .markdown-section .pk-tabbar {
       display: flex; gap: 4px; border-bottom: 1px solid #e3e7eb;
@@ -76,7 +134,9 @@
   <script>
     window.$docsify = {
       loadSidebar: true,
-      loadNavbar: true,
+      // loadNavbar stays OFF: no _navbar.md is generated anywhere in this repo, and asking
+      // for one 404s on every page load.
+      loadNavbar: false,
       // ONE sidebar for the whole site. loadSidebar fetches _sidebar.md relative to the page
       // being viewed, so opening drugs/drug_x/ or atc/A01A.md would look for a sidebar THERE
       // and, finding one, replace the navigation the reader was using. Alias every such
@@ -201,9 +261,439 @@
         });
       });
     });
+
+
+
+    // ── sidebar search, over the database ──────────────────────────────────────
+    // docsify's plugin indexed rendered pages into localStorage and blew its quota. This
+    // searches 5420 ENTITIES — drugs, paper titles, genes, parameter names and the ontology's
+    // synonyms — from the same file the query page uses. The database loads on the first
+    // keystroke, never on page load, so no page pays for a search nobody performed.
+    (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
+      var box, res, hint, timer;
+
+      function go(term) {
+        term = (term || '').trim();
+        if (!res) return;
+        if (term.length < 2) { res.innerHTML = ''; return; }
+        var db = window.pkdb.get();
+        if (!db) {
+          hint.textContent = 'loading the index…';
+          window.pkdb.load(function (m) { hint.textContent = m; })
+            .then(function () { hint.textContent = ''; go(box.value); })
+            .catch(function (e) { hint.textContent = String(e.message || e); });
+          return;
+        }
+        var like = '%' + term.replace(/'/g, "''") + '%';
+        var rows;
+        try {
+          // Exact prefix first, then contains — so typing "clop" puts the drug above the
+          // thirty papers whose titles mention it.
+          rows = db.exec(
+            "SELECT kind, label, detail, href FROM search_doc WHERE label LIKE '" + like + "' " +
+            "ORDER BY (CASE WHEN lower(label) = lower('" + term.replace(/'/g, "''") + "') THEN 0 " +
+            "          WHEN lower(label) LIKE lower('" + term.replace(/'/g, "''") + "%') THEN 1 " +
+            "          ELSE 2 END), kind, length(label) LIMIT 40");
+        } catch (e) { hint.textContent = String(e.message || e); return; }
+
+        res.innerHTML = '';
+        if (!rows[0]) { hint.textContent = 'no match'; return; }
+        hint.textContent = rows[0].values.length + ' match(es)';
+        var seen = {};
+        rows[0].values.forEach(function (r) {
+          var key = r[0] + '|' + r[1] + '|' + r[3];
+          if (seen[key]) return;                 // a gene appears once per drug; show each once
+          seen[key] = 1;
+          var li = document.createElement('li'), a = document.createElement('a');
+          a.href = '#/' + r[3];
+          a.innerHTML = '<span class="k">' + r[0] + '</span>' +
+                        String(r[1]).replace(/[<>&]/g, '') +
+                        (r[2] ? ' <span class="d">' + String(r[2]).replace(/[<>&]/g, '') + '</span>' : '');
+          a.addEventListener('click', function () { res.innerHTML = ''; box.value = ''; });
+          li.appendChild(a); res.appendChild(li);
+        });
+      }
+
+      hook.doneEach(function () {
+        var nav = document.querySelector('.sidebar');
+        if (!nav || nav.querySelector('.pks')) return;   // built once, survives navigation
+        var wrap = document.createElement('div');
+        wrap.className = 'pks';
+        wrap.innerHTML = '<input type="search" placeholder="Search drugs, papers, genes…" ' +
+                         'aria-label="Search the knowledge base" autocomplete="off">' +
+                         '<div class="pks-hint"></div><ul class="pks-res"></ul>';
+        nav.insertBefore(wrap, nav.firstChild);
+        box = wrap.querySelector('input');
+        hint = wrap.querySelector('.pks-hint');
+        res = wrap.querySelector('.pks-res');
+        box.addEventListener('input', function () {
+          clearTimeout(timer);
+          timer = setTimeout(function () { go(box.value); }, 160);
+        });
+      });
+    });
+
+    // ── query page ─────────────────────────────────────────────────────────────
+    // sql.js (688 kB incl. wasm) and the 3.9 MB database load ONLY on /query, and only
+    // once per session — the same discipline as the dbs bundle. Every other page is
+    // unaffected, which is the whole reason the page is separate.
+    (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
+      var DB = null, SQL = null, loading = false;
+
+      var CANNED = {
+        param: "-- a reported parameter for one drug, with the paper it came from.\n" +
+          "-- Use the boxes above; /*FILTER*/ is where they are spliced in.\n" +
+          "SELECT d.generic_name AS drug, p.value, p.unit_verbatim AS unit,\n" +
+          "       p.value_si, r.stem AS paper, p.link_method, r.model_id\n" +
+          "FROM parameter p JOIN record r ON r.id = p.record_id\n" +
+          "JOIN drug d ON d.slug = r.drug_slug\n" +
+          "WHERE p.parameter_id = 'Q49' /*FILTER*/\n" +
+          "ORDER BY d.generic_name LIMIT 100;",
+        pdpk: "-- drugs with at least one PD model whose driver is a PK model\n" +
+          "SELECT d.generic_name AS drug, count(*) AS pd_models,\n" +
+          "       group_concat(DISTINCT pd.driver_kind) AS driver\n" +
+          "FROM pd_record pd JOIN record r ON r.id = pd.record_id\n" +
+          "JOIN drug d ON d.slug = r.drug_slug\n" +
+          "WHERE pd.driver_kind IN ('pk_record','cited_pk')\n" +
+          "GROUP BY d.generic_name ORDER BY pd_models DESC LIMIT 100;",
+        dose: "-- dose-response PD models: the driver is dose, not a concentration\n" +
+          "SELECT d.generic_name AS drug, r.stem AS paper, pd.model_family, pd.effect_form\n" +
+          "FROM pd_record pd JOIN record r ON r.id = pd.record_id\n" +
+          "JOIN drug d ON d.slug = r.drug_slug\n" +
+          "WHERE pd.driver_kind = 'dose_only' ORDER BY d.generic_name LIMIT 100;",
+        pgx: "-- PGx records acting as a covariate on a PK or PD parameter\n" +
+          "SELECT d.generic_name AS drug, x.gene, x.applies_to, x.target_parameter_id AS qcode,\n" +
+          "       q.name AS parameter, x.mechanism\n" +
+          "FROM pgx_record x JOIN record r ON r.id = x.record_id\n" +
+          "JOIN drug d ON d.slug = r.drug_slug\n" +
+          "LEFT JOIN qcode q ON q.parameter_id = x.target_parameter_id\n" +
+          "WHERE x.applies_to IN ('pk','pd') AND x.target_parameter_id <> 'Q100'\n" +
+          "ORDER BY d.generic_name LIMIT 200;",
+        gapfill: "-- values a review supplied because the paper itself lacked them.\n" +
+          "-- Useful as a curation queue: these are NOT what the paper reported.\n" +
+          "SELECT d.generic_name AS drug, r.stem AS paper, p.name, p.value,\n" +
+          "       p.unit_verbatim AS unit, p.origin_stem AS borrowed_from\n" +
+          "FROM parameter p JOIN record r ON r.id = p.record_id\n" +
+          "JOIN drug d ON d.slug = r.drug_slug\n" +
+          "WHERE p.link_method = 'review_gapfill' ORDER BY d.generic_name LIMIT 200;",
+        disagree: "-- drugs whose papers disagree by more than 2x on apparent clearance.\n" +
+          "-- value_si is SI, so values from different units are comparable.\n" +
+          "SELECT d.generic_name AS drug, count(*) AS n,\n" +
+          "       round(min(p.value_si),10) AS lo, round(max(p.value_si),10) AS hi,\n" +
+          "       round(max(p.value_si)/min(p.value_si),1) AS spread\n" +
+          "FROM parameter p JOIN record r ON r.id = p.record_id\n" +
+          "JOIN drug d ON d.slug = r.drug_slug\n" +
+          "WHERE p.parameter_id = 'Q27' AND p.value_si > 0\n" +
+          "GROUP BY d.generic_name HAVING n > 2 AND spread > 2\n" +
+          "ORDER BY spread DESC LIMIT 100;"
+      };
+
+      // getElementById returns the FIRST match in the document, which is the wrong node the
+      // moment docsify re-renders .markdown-section and leaves an earlier copy of the query
+      // controls ahead of the live one: buildParam() then read an empty drug box that nobody
+      // could see, and the drug filter vanished with no error anywhere. Resolve the node that
+      // is actually inside the rendered section, newest last.
+      function el(id) {
+        var live = document.querySelectorAll('.markdown-section [id="' + id + '"]');
+        if (live.length) return live[live.length - 1];
+        var all = document.querySelectorAll('[id="' + id + '"]');
+        return all.length ? all[all.length - 1] : null;
+      }
+      function status(msg, isErr) {
+        var s = el('pkq-status'); if (!s) return;
+        s.textContent = msg; s.className = 'pkq-status' + (isErr ? ' err' : ''); s.hidden = false;
+      }
+
+      function render(res) {
+        var out = el('pkq-out'); out.innerHTML = '';
+        if (!res || !res.length) { out.innerHTML = '<p class="pkq-meta">No rows. ' +
+          'That is an answer too: this drug/parameter combination is not in the extraction.</p>'; return; }
+        var r = res[0], t = document.createElement('table');
+        var thead = document.createElement('thead'), tr = document.createElement('tr');
+        r.columns.forEach(function (c) {
+          var th = document.createElement('th'); th.textContent = c; tr.appendChild(th);
+        });
+        thead.appendChild(tr); t.appendChild(thead);
+        var tb = document.createElement('tbody');
+        r.values.forEach(function (row) {
+          var trr = document.createElement('tr');
+          row.forEach(function (v, i) {
+            var td = document.createElement('td');
+            if (typeof v === 'number') td.className = 'num';
+            // model_id links to the record page, so a number reaches its provenance.
+            if (r.columns[i] === 'model_id' && v) {
+              var drugCol = r.columns.indexOf('drug');
+              var a = document.createElement('a');
+              a.textContent = v;
+              a.href = '#/drugs/drug_' + String(row[drugCol] || '').toLowerCase()
+                        .replace(/[^a-z0-9]+/g, '_') + '/' + v;
+              td.appendChild(a);
+            } else { td.textContent = v === null ? '' : String(v); }
+            trr.appendChild(td);
+          });
+          tb.appendChild(trr);
+        });
+        t.appendChild(tb); out.appendChild(t);
+        el('pkq-meta').textContent = r.values.length + ' row(s)';
+      }
+
+      function run() {
+        if (!DB) return;
+        var box = el('pkq-sql');
+        if (!box) return;
+        var sql = box.value;
+        try {
+          var t0 = performance.now();
+          render(DB.exec(sql));
+          // Show the WHERE actually executed. The filter bug that shipped an hour ago ran a
+          // query with no drug filter and looked exactly like a correct empty-filter result.
+          var where = (sql.match(/WHERE[\s\S]*?(?=ORDER BY|GROUP BY|LIMIT|$)/i) || [''])[0]
+                        .replace(/\s+/g, ' ').trim();
+          el('pkq-meta').textContent += '  ·  ' + Math.round(performance.now() - t0) + ' ms'
+                                      + (where ? '  ·  ' + where : '');
+        } catch (e) {
+          el('pkq-out').innerHTML = '';
+          el('pkq-meta').textContent = '';
+          status(String(e.message || e), true);
+        }
+      }
+
+      function sq(v) { return String(v).replace(/'/g, "''"); }
+
+      function qcodeFor(text) {
+        // Resolve a typed parameter name through the ontology's 740 synonyms, so
+        // "absorption rate constant" finds Q49 without the reader knowing Q-codes exist.
+        if (!text || !DB) return null;
+        try {
+          var hit = DB.exec(
+            "SELECT parameter_id FROM qcode WHERE lower(name) = lower('" + sq(text) + "') " +
+            "OR lower(synonyms) LIKE lower('%\"" + sq(text) + "\"%') LIMIT 1");
+          if (hit[0]) return hit[0].values[0][0];
+          var alt = DB.exec("SELECT detail FROM search_doc WHERE kind='parameter' AND " +
+                            "lower(label) = lower('" + sq(text) + "') LIMIT 1");
+          if (alt[0]) return String(alt[0].values[0][0]).split(' ')[0];
+        } catch (e) { /* fall through: an unresolvable name just leaves the code alone */ }
+        return null;
+      }
+
+      function buildParam() {
+        // Built from the template, never by patching the finished string. The previous
+        // version appended "AND drug = 'x'" after ORDER BY, which SQLite happily parses as a
+        // boolean sort key — no error, and the filter silently did nothing.
+        var drug = ((el('pkq-drug') || {}).value || '').trim();
+        var code = ((el('pkq-code') || {}).value || '').trim();
+        var sql = CANNED.param;
+        var filters = '';
+        if (drug) filters += " AND lower(d.generic_name) = lower('" + sq(drug) + "')";
+        var q = qcodeFor(code);
+        if (q) {
+          sql = sql.replace("p.parameter_id = 'Q49'", "p.parameter_id = '" + sq(q) + "'");
+        } else if (code) {
+          // Unresolvable name: match the parameter's own label instead. It REPLACES the
+          // Q-code predicate — ANDing them pinned Q49 and could never match anything else.
+          sql = sql.replace("p.parameter_id = 'Q49'",
+                            "lower(p.name) LIKE lower('%" + sq(code) + "%')");
+        }
+        return sql.replace('/*FILTER*/', filters);
+      }
+
+      function fillLists() {
+        try {
+          var ds = DB.exec("SELECT generic_name FROM drug ORDER BY generic_name");
+          if (ds[0]) ds[0].values.forEach(function (v) {
+            var o = document.createElement('option'); o.value = v[0];
+            el('pkq-drugs').appendChild(o);
+          });
+          var qs = DB.exec("SELECT parameter_id, name FROM qcode ORDER BY name");
+          if (qs[0]) qs[0].values.forEach(function (v) {
+            var o = document.createElement('option'); o.value = v[1]; o.label = v[0];
+            el('pkq-codes').appendChild(o);
+          });
+        } catch (e) { /* lists are a convenience; a failure here must not block queries */ }
+      }
+
+      function boot() {
+        if (DB) { el('pkq-status').hidden = true; el('pkq-ui').hidden = false; return; }
+        if (loading) return;
+        loading = true;
+        window.pkdb.load(status).then(function (db) {
+          DB = db;
+          fillLists();
+          el('pkq-status').hidden = true;
+          el('pkq-ui').hidden = false;
+          el('pkq-sql').dataset.kind = 'param';
+          el('pkq-sql').value = buildParam();
+          run();
+        }).catch(function (e) { loading = false; status(String(e.message || e), true); });
+      }
+
+      hook.doneEach(function () {
+        if (!document.getElementById('pkq')) return;     // every other page stops here
+        boot();
+        var ui = el('pkq-ui');
+        // Every control is looked up before any is wired. marked ends an HTML block at the
+        // first blank line, so a stray blank line in query.md silently drops the inner
+        // controls; wiring them unchecked threw inside the hook and took the page down.
+        var runBtn = el('pkq-run'), sqlBox = el('pkq-sql');
+        if (ui && runBtn && sqlBox && !ui.dataset.wired) {
+          ui.dataset.wired = '1';
+          void 0;
+          // DELEGATED, and every node resolved at call time. Docsify replaces
+          // .markdown-section wholesale on each render, so a handler bound to a captured
+          // element keeps writing into a node that is no longer on the page — the SQL box you
+          // see stays stale while an invisible twin gets updated. Listening on document and
+          // calling el() inside the handler survives any number of re-renders.
+          document.addEventListener('click', function (ev) {
+            var b = ev.target.closest && ev.target.closest('.pkq-btn[data-q]');
+            if (!b || !el('pkq-sql')) return;
+            var kind = b.dataset.q;
+            el('pkq-sql').dataset.kind = kind;
+            el('pkq-sql').value = (kind === 'param') ? buildParam() : CANNED[kind];
+            run();
+          });
+          document.addEventListener('input', function (ev) {
+            var t = ev.target;
+            if (!t || (t.id !== 'pkq-drug' && t.id !== 'pkq-code')) return;
+            var box = el('pkq-sql');
+            if (!box || box.dataset.kind !== 'param') return;   // never clobber hand-written SQL
+            box.value = buildParam();
+          });
+          document.addEventListener('keydown', function (ev) {
+            var t = ev.target;
+            if (!t) return;
+            if ((t.id === 'pkq-drug' || t.id === 'pkq-code') && ev.key === 'Enter') { run(); return; }
+            if (t.id === 'pkq-sql' && (ev.ctrlKey || ev.metaKey) && ev.key === 'Enter') run();
+          });
+          document.addEventListener('click', function (ev) {
+            if (ev.target && ev.target.id === 'pkq-run') run();
+          });
+        } else if (ui && !runBtn) {
+          status('The query controls did not render — see query.md.', true);
+        }
+      });
+    });
+
+    // ── breadcrumbs ────────────────────────────────────────────────────────────
+    // Renders the trail the BUILDER stamped into .pk-crumbs. Nothing here derives a label
+    // from the route: the builder knows the drug's generic name and its ATC class, a URL
+    // only knows drug_abacavir.
+    (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
+      hook.doneEach(function () {
+        var section = document.querySelector('.markdown-section');
+        if (!section) return;
+        var old = section.querySelector('nav.pk-crumbtrail');
+        if (old) old.remove();                       // re-render on every route change
+        var mark = section.querySelector('.pk-crumbs');
+        if (!mark) return;
+        var items;
+        try { items = JSON.parse(mark.dataset.crumbs || '[]'); } catch (e) { return; }
+        if (!items.length) return;
+
+        var nav = document.createElement('nav');
+        nav.className = 'pk-crumbtrail';
+        nav.setAttribute('aria-label', 'breadcrumb');
+        items.forEach(function (item, i) {
+          if (i) {
+            var sep = document.createElement('span');
+            sep.className = 'sep';
+            sep.textContent = '\u203A';
+            nav.appendChild(sep);
+          }
+          var node;
+          if (item.href && i < items.length - 1) {
+            node = document.createElement('a');
+            // Docsify routes are hash paths and the stamped href is site-relative.
+            node.href = '#/' + String(item.href).replace(/^\/+/, '').replace(/README\.md$/, '');
+          } else {
+            node = document.createElement('span');
+            node.className = 'here';               // last crumb is the page itself
+          }
+          node.textContent = item.label;
+          nav.appendChild(node);
+        });
+        section.insertBefore(nav, section.firstChild);   // above the <h1>
+      });
+    });
+
   </script>
   <!-- Docsify v4 -->
+  <script>
+    // ── shared database ────────────────────────────────────────────────────────
+    // One 5 MB SQLite file serves both the query page and the sidebar search. It is fetched
+    // once per session and kept in the CACHE API between sessions: localStorage caps at about
+    // 5 MB (which is what broke docsify's own search index), while the Cache API holds a blob
+    // this size without complaint. The filename carries a content hash, so a new release is a
+    // new URL and the old entry is simply dropped.
+    window.pkdb = (function () {
+      var promise = null, DB = null;
+      var CACHE = 'pharmacolibrary-db-v1';
+
+      function bytes(url) {
+        if (!window.caches) return fetch(url).then(function (r) { return r.arrayBuffer(); });
+        return caches.open(CACHE).then(function (c) {
+          return c.match(url).then(function (hit) {
+            if (hit) return hit.arrayBuffer();
+            return fetch(url).then(function (r) {
+              if (!r.ok) throw new Error('database not found: ' + url);
+              c.put(url, r.clone()).catch(function () {});   // caching is best-effort
+              return r.arrayBuffer();
+            });
+          });
+        });
+      }
+
+      function load(onStatus) {
+        if (promise) return promise;
+        onStatus = onStatus || function () {};
+        promise = new Promise(function (resolve, reject) {
+          onStatus('Loading the query engine…');
+          var tag = document.createElement('script');
+          tag.src = 'assets/sqljs/sql-wasm.js';
+          tag.onerror = function () { promise = null; reject(new Error('could not load sql.js')); };
+          tag.onload = function () {
+            initSqlJs({ locateFile: function (f) { return 'assets/sqljs/' + f; } })
+              .then(function (SQL) {
+                onStatus('Fetching the database…');
+                return fetch('data/latest.json').then(function (r) { return r.json(); })
+                  .then(function (meta) { return bytes('data/' + meta.file); })
+                  .then(function (buf) {
+                    DB = new SQL.Database(new Uint8Array(buf));
+                    resolve(DB);
+                  });
+              })
+              .catch(function (e) { promise = null; reject(e); });
+          };
+          document.body.appendChild(tag);
+        });
+        return promise;
+      }
+      return { load: load, get: function () { return DB; } };
+    })();
+  </script>
+
   <script src="assets/docsify.js"></script>
-  <script src="assets/js/dbs-bundle.js"></script>
+  <!-- The official docsify search plugin is NOT loaded. It caches its index in localStorage
+       (~5 MB) and paths:'auto' crawls 8283 pages holding 62 MB of text, so it threw
+       QuotaExceededError and stored nothing. The sidebar box below searches the database
+       instead — 5420 entities, kept in the Cache API, which has no such limit. -->
+  <!-- dbs-bundle.js is 8.6 MB of WebAssembly and was loaded on EVERY page, including the
+       index and the 163 ATC pages, which contain no <dbs-pgx> element at all. Only 1953 of
+       8118 generated pages use it. It is now fetched the first time a page that actually
+       needs it is rendered; docsify is a single-page app, so that happens at most once per
+       session and navigating on keeps it in memory. -->
+  <script>
+    (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
+      hook.doneEach(function () {
+        if (window.__dbsBundle) return;                         // already loading or loaded
+        if (!document.querySelector('dbs-pgx')) return;          // 76% of pages stop here
+        window.__dbsBundle = true;
+        var s = document.createElement('script');
+        s.src = 'assets/js/dbs-bundle.js';
+        s.async = true;
+        s.onerror = function () { window.__dbsBundle = false; }; // let a later page retry
+        document.body.appendChild(s);
+      });
+    });
+  </script>
 </body>
 </html>

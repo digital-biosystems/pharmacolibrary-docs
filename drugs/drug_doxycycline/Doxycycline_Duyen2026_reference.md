@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;doxycycline&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/&quot;},{&quot;label&quot;:&quot;Duyen_2026 \u00b7 white leg shrimp (Litopenaeus vannamei)&quot;}]"></div>
+
 # doxycycline — `Doxycycline_Duyen2026_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

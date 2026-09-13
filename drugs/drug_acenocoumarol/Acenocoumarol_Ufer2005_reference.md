@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;acenocoumarol&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/&quot;},{&quot;label&quot;:&quot;Ufer_2005 \u00b7 review reference&quot;}]"></div>
+
 # acenocoumarol — `Acenocoumarol_Ufer2005_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -79,6 +81,12 @@ Ufer M et al. (2005). Clinical pharmacokinetics 44
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_acenocoumarol/Acenocoumarol_Ufer2005_reference/Acenocoumarol_Ufer2005_reference.svg" alt="Acenocoumarol_Ufer2005_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

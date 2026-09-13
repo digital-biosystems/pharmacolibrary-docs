@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;hydrochlorothiazide&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/&quot;},{&quot;label&quot;:&quot;Shimizu_2012 \u00b7 spontaneously hypertensive rats&quot;}]"></div>
+
 # hydrochlorothiazide — `Hydrochlorothiazide_Shimizu2012_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -32,9 +34,6 @@ Shimizu R; Miyazaki M; Iwanaga K; Kakemi M et al. (2012). Drug metabolism and ph
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| mean systemic clearance | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | review_gapfill (0.7) | Devineni_2015:review | — | not captured |
-| volume of distribution | `Q61` · V | —(suppressed) | L/kg | — | L | not captured | review_gapfill (0.7) | Johnson_2019:review | — | not captured |
-| KA(1/h) | `Q49` · kabs | —(suppressed) | 1/h | — | 1/h | not captured | review_gapfill (0.7) | Commander_2021:review | — | not captured |
 | ABCB1 | `Q900` · ABCB1 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 | SLC22A1 | `Q900` · SLC22A1 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
@@ -45,9 +44,6 @@ Shimizu R; Miyazaki M; Iwanaga K; Kakemi M et al. (2012). Drug metabolism and ph
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
-
 **Interpretation flags:**
 - dropped unlinked row (NIL): '0' — extend the ontology if this is a real PK parameter (source ['tab_1:row25:col1', 'tab_1:row25:col2', 'tab_1:row25:col3', 'tab_1:row25:col4', 'tab_1:row25:col5', 'tab_1:row25:col6'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=losartan
@@ -56,6 +52,7 @@ Shimizu R; Miyazaki M; Iwanaga K; Kakemi M et al. (2012). Drug metabolism and ph
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Commander_2021's review values (primary lacked it)
+- removed gap-filled parent disposition (Q22, Q61, Q49): this record measures 'losartan', not hydrochlorothiazide, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
 
 ## Validation
 
@@ -96,6 +93,12 @@ Shimizu R; Miyazaki M; Iwanaga K; Kakemi M et al. (2012). Drug metabolism and ph
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference/Hydrochlorothiazide_Shimizu2012_reference.svg" alt="Hydrochlorothiazide_Shimizu2012_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
+
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
@@ -104,11 +107,11 @@ Each archive holds the model source, a script that simulates it against the appr
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference/Hydrochlorothiazide_Shimizu2012_reference_modelica.zip" download>Hydrochlorothiazide_Shimizu2012_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference/Hydrochlorothiazide_Shimizu2012_reference_fmi.zip" download>Hydrochlorothiazide_Shimizu2012_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference/Hydrochlorothiazide_Shimizu2012_reference_matlab.zip" download>Hydrochlorothiazide_Shimizu2012_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference/Hydrochlorothiazide_Shimizu2012_reference_matlab_simbio.zip" download>Hydrochlorothiazide_Shimizu2012_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference/Hydrochlorothiazide_Shimizu2012_reference_sbml.zip" download>Hydrochlorothiazide_Shimizu2012_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference/Hydrochlorothiazide_Shimizu2012_reference_cellml.zip" download>Hydrochlorothiazide_Shimizu2012_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference/Hydrochlorothiazide_Shimizu2012_reference_fmi.zip" download>Hydrochlorothiazide_Shimizu2012_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference/Hydrochlorothiazide_Shimizu2012_reference_matlab.zip" download>Hydrochlorothiazide_Shimizu2012_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference/Hydrochlorothiazide_Shimizu2012_reference_matlab_simbio.zip" download>Hydrochlorothiazide_Shimizu2012_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference/Hydrochlorothiazide_Shimizu2012_reference_sbml.zip" download>Hydrochlorothiazide_Shimizu2012_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference/Hydrochlorothiazide_Shimizu2012_reference_cellml.zip" download>Hydrochlorothiazide_Shimizu2012_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

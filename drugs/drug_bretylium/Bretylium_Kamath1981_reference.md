@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;Bretylium&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/&quot;},{&quot;label&quot;:&quot;Kamath_1981 \u00b7 rats&quot;}]"></div>
+
 # Bretylium — `Bretylium_Kamath1981_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -89,6 +91,12 @@ Kamath BL; Stampfli HF; Lai CM; Yacobi A et al. (1981). Journal of pharmaceutica
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_bretylium/Bretylium_Kamath1981_reference/Bretylium_Kamath1981_reference.svg" alt="Bretylium_Kamath1981_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;camostat&quot;,&quot;href&quot;:&quot;drugs/drug_camostat/&quot;},{&quot;label&quot;:&quot;Kim_2023 \u00b7 gba&quot;}]"></div>
+
 # camostat — `Camostat_Kim2023_gba`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
@@ -28,7 +30,6 @@ Kim G; Moon HK; Kim T; Yun SH; Yun HY; Hong JH; et al. et al. (2023). Pharmaceut
 | AUCinf (h × ng/mL) | `Q17` · AUC∞ | —(suppressed) | h × ng/mL | — | [[h] · [ng]] / [ml] | not captured | exact (1.0) | pharmaceutics-15-02357-t002:row5:col4, pharmaceutics-15-02357-t002:row5:col5, pharmaceutics-15-02357-t002:row5:col6 | — | not captured |
 | CL/F (L/h) | `Q27` · CL/F | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | pharmaceutics-15-02357-t002:row6:col4, pharmaceutics-15-02357-t002:row6:col5, pharmaceutics-15-02357-t002:row6:col6 | — | not captured |
 | Vd (h) | `Q61` · V | —(suppressed) | h | — | [h] | not captured | exact (1.0) | pharmaceutics-15-02357-t002:row7:col4, pharmaceutics-15-02357-t002:row7:col5, pharmaceutics-15-02357-t002:row7:col6 | — | not captured |
-| ka, 1/h | `Q49` · kabs | —(suppressed) | 1/h | — | 1/h | not captured | review_gapfill (0.7) | Kosinsky_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -67,6 +68,7 @@ Kim G; Moon HK; Kim T; Yun SH; Yun HY; Hong JH; et al. et al. (2023). Pharmaceut
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Kosinsky_2022's review values (primary lacked it)
+- removed gap-filled parent disposition (Q49): this record measures 'GBPA', not camostat, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2

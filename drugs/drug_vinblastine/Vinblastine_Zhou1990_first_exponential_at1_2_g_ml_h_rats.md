@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Zhou_1990 \u00b7 first_exponential_at1_2_g_ml_h::rats&quot;}]"></div>
+
 # vinblastine — `Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h_rats`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

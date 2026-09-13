@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;amlodipine&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/&quot;},{&quot;label&quot;:&quot;Heo_2016 \u00b7 review reference&quot;}]"></div>
+
 # amlodipine — `Amlodipine_Heo2016_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -94,6 +96,12 @@ Heo YA; Holford N; Kim Y; Son M; Park K et al. (2016). British journal of clinic
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_amlodipine/Amlodipine_Heo2016_reference/Amlodipine_Heo2016_reference.svg" alt="Amlodipine_Heo2016_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

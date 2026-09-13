@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;meloxicam&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/&quot;},{&quot;label&quot;:&quot;Aoyama_2017 \u00b7 East Asian and white adult subjects&quot;}]"></div>
+
 # meloxicam — `Meloxicam_Aoyama2017_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
@@ -37,7 +39,7 @@ Aoyama T; Ishida Y; Kaneko M; Miyamoto A; Saito Y; Tohkin M; et al. et al. (2017
 | LBM on Vd | `Q61` · V | —(suppressed) | not captured | — | not captured | not captured | boundary (0.8) | tab_1:row6:col1, tab_1:row6:col3 | — | 17.1 (None% RSE) |
 | Q (L/h) | `Q30` · Q | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | tab_1:row7:col1, tab_1:row7:col3 | — | not captured |
 | Vp (L) | `Q64` · V2 | —(suppressed) | L | — | [l] | not captured | exact (1.0) | tab_1:row8:col1, tab_1:row8:col3 | — | not captured |
-| Ka (/h) | `Q49` · kabs | —(suppressed) | /h | — | [1] / [h] | not captured | exact (1.0) | tab_1:row9:col1, tab_1:row9:col3 | — | 130 (None% RSE) |
+| Ka (/h) | `Q49` · kabs | —(suppressed) | /h | — | 1/h | not captured | exact (1.0) | tab_1:row9:col1, tab_1:row9:col3 | — | 130 (None% RSE) |
 | x 2 F | `Q87` · Frel | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_1:row15:col1, tab_1:row15:col3 | — | not captured |
 
 <details class="legend">
@@ -61,6 +63,7 @@ Aoyama T; Ishida Y; Kaneko M; Miyamoto A; Saito Y; Tohkin M; et al. et al. (2017
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=meloxicam
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- unit re-normalised: kabs '/h' now converts (value unchanged)
 
 **Extraction notes:**
 - unparsed cell tab_1:row1:col1 = 'Estimate (61.96 3 SE)'

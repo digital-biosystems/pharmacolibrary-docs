@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;esomeprazole&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/&quot;},{&quot;label&quot;:&quot;Gebreyesus_2022 \u00b7 pregnant participants with preterm preeclampsia and non-pregnant participants&quot;}]"></div>
+
 # esomeprazole — `Esomeprazole_Gebreyesus2022_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

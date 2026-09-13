@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ibuprofen&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/&quot;},{&quot;label&quot;:&quot;Todd_1986 \u00b7 review reference&quot;}]"></div>
+
 # ibuprofen — `Ibuprofen_Todd1986_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -75,6 +77,12 @@ Todd PA; Beresford R et al. (1986). Drugs 32
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference/Ibuprofen_Todd1986_reference.svg" alt="Ibuprofen_Todd1986_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

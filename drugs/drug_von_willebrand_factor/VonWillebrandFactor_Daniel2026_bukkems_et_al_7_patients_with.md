@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;von Willebrand factor&quot;,&quot;href&quot;:&quot;drugs/drug_von_willebrand_factor/&quot;},{&quot;label&quot;:&quot;Daniel_2026 \u00b7 bukkems_et_al_7::patients with von Willebrand disease&quot;}]"></div>
+
 # von Willebrand factor — `VonWillebrandFactor_Daniel2026_bukkems_et_al_7_patients_with`
 
 > ## <span class="pk-badge pk-badge--neutral">not_reviewed</span>

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;amoxicillin&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/&quot;},{&quot;label&quot;:&quot;Eshelman_1978 \u00b7 healthy adults&quot;}]"></div>
+
 # amoxicillin — `Amoxicillin_Eshelman1978_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -132,6 +134,12 @@ Eshelman FN; Spyker DA et al. (1978). Antimicrobial agents and chemotherapy 14
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_amoxicillin/Amoxicillin_Eshelman1978_reference/Amoxicillin_Eshelman1978_reference.svg" alt="Amoxicillin_Eshelman1978_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

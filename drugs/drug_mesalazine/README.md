@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;mesalazine&quot;}]"></div>
+
 # mesalazine
 
 - **generic name:** mesalazine
@@ -15,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 1/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 14 | 3/0 | 4/0 | 0 |
+| 2026-09-11 22:33 | 14:58 | 1/0/0 | 0/0/0 | 0/0/0 | 162,034/31,472 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 3/1 | 4/0 | 0 |
 
 ## popPK records
 
@@ -26,7 +28,7 @@
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 12  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

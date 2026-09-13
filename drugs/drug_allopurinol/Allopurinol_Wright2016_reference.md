@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M04A&quot;,&quot;href&quot;:&quot;atc/M04A.md&quot;},{&quot;label&quot;:&quot;allopurinol&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/&quot;},{&quot;label&quot;:&quot;Wright_2016 \u00b7 adults with gout&quot;}]"></div>
+
 # allopurinol — `Allopurinol_Wright2016_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
@@ -37,8 +39,6 @@ Wright DF; Duffull SB; Merriman TR; Dalbeth N; Barclay ML; Stamp LK et al. (2016
 |---|---|---|---|---|---|---|---|---|---|---|
 | θ V (l) | `Q61` · V | —(suppressed) | l | — | [l] | not captured | llm (0.6) | tab_0:row2:col5, tab_0:row2:col6 | — | not captured |
 | K α (h | `Q47` · kel | —(suppressed) | h | — | [h] | 1.09 | llm (0.6) | tab_0:row3:col4, tab_0:row3:col5, tab_0:row3:col6 | — | not captured |
-| absorption rate | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review_gapfill (0.7) | Ekobena_2025:review | — | not captured |
-| lag time | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review_gapfill (0.7) | Ekobena_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -78,6 +78,7 @@ Wright DF; Duffull SB; Merriman TR; Dalbeth N; Barclay ML; Stamp LK et al. (2016
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - gap-filled Q49 (kabs) from Ekobena_2025's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Ekobena_2025's review values (primary lacked it)
+- removed gap-filled parent disposition (Q49, Q83): this record measures 'oxypurinol', not allopurinol, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
 
 **Extraction notes:**
 - unparsed cell tab_0:row1:col1 = 'À1 )'

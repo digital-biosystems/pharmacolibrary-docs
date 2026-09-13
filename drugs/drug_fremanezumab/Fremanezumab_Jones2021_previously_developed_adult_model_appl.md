@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;fremanezumab&quot;,&quot;href&quot;:&quot;drugs/drug_fremanezumab/&quot;},{&quot;label&quot;:&quot;Jones_2021 \u00b7 previously_developed_adult_model_applied_to_pediatric_data::pediatric patients with migraine&quot;}]"></div>
+
 # fremanezumab — `Fremanezumab_Jones2021_previously_developed_adult_model_appl`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -67,6 +69,12 @@ _No resolved parameters._
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_fremanezumab/Fremanezumab_Jones2021_previously_developed_adult_model_appl/Fremanezumab_Jones2021_previously_developed_adult_model_appl.svg" alt="Fremanezumab_Jones2021_previously_developed_adult_model_appl diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;atorvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/&quot;},{&quot;label&quot;:&quot;Stillemans_2022 \u00b7 shrinkage&quot;}]"></div>
+
 # atorvastatin — `Atorvastatin_Stillemans2022_shrinkage`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -91,6 +93,12 @@ Stillemans G; Paquot A; Muccioli GG; Hoste E; Panin N; Åsberg A; et al. et al. 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_atorvastatin/Atorvastatin_Stillemans2022_shrinkage/Atorvastatin_Stillemans2022_shrinkage.svg" alt="Atorvastatin_Stillemans2022_shrinkage diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

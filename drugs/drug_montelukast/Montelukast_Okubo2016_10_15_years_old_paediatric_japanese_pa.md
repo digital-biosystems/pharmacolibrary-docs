@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;montelukast&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/&quot;},{&quot;label&quot;:&quot;Okubo_2016 \u00b7 10_15_years_old::paediatric Japanese patients with perennial allergic rhinitis&quot;}]"></div>
+
 # montelukast — `Montelukast_Okubo2016_10_15_years_old_paediatric_japanese_pa`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

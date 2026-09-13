@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;Metamizole&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/&quot;},{&quot;label&quot;:&quot;Blaser_2021 \u00b7 4_aaa&quot;}]"></div>
+
 # Metamizole — `Metamizole_Blaser2021_4_aaa`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>
@@ -23,9 +25,6 @@ Blaser LS; Duthaler U; Bouitbir J; Leuppi-Taegtmeyer AB; Liakoni E; Dolf R; et a
 | Cmax ratio MD/SD | `Q33` · Cmax_ratio | 4.85 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Blaser_2021_table_2:row9:col3 | — | not captured |
 | AUC0-5h ratio MD/SD | `Q21` · AUC ratio | 13.35 | not captured | not captured | not captured | not captured | llm (0.6) | Blaser_2021_table_2:row11:col3 | — | not captured |
 | average inulin clearance in our study was approximately | `Q22` · CL | 20 | ml/min | 3.333333333333333e-07 | L/h | not captured | boundary (0.8) | Blaser_2021:discussion_prose | — | not captured |
-| apparent distribution volume | `Q61` · V | 11.6 | L | 0.0116 | L | not captured | review_gapfill (0.7) | Ekobena_2025:review | — | not captured |
-| absorption rate | `Q49` · kabs | 2.6 | h−1 | 0.0007222222222222223 | 1/h | not captured | review_gapfill (0.7) | Ekobena_2025:review | — | not captured |
-| lag time | `Q83` · tlag | 0.235 | h | 846.0 | h | not captured | review_gapfill (0.7) | Ekobena_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -48,6 +47,7 @@ Blaser LS; Duthaler U; Bouitbir J; Leuppi-Taegtmeyer AB; Liakoni E; Dolf R; et a
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Ekobena_2025's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Ekobena_2025's review values (primary lacked it)
+- removed gap-filled parent disposition (Q61, Q49, Q83): this record measures '4-methylaminoantipyrine', not metamizole, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
 
 **Extraction notes:**
 - unparsed cell T3:row6:col3 = '16.8 ± 5.58a'
@@ -91,7 +91,7 @@ Blaser LS; Duthaler U; Bouitbir J; Leuppi-Taegtmeyer AB; Liakoni E; Dolf R; et a
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metamizole/Metamizole_Blaser2021_4_aaa/Metamizole_Blaser2021_4_aaa_modelica.zip" download>Metamizole_Blaser2021_4_aaa_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metamizole/Metamizole_Blaser2021_4_aaa/Metamizole_Blaser2021_4_aaa_modelica.zip" download>Metamizole_Blaser2021_4_aaa_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_metamizole/Metamizole_Blaser2021_4_aaa/Metamizole_Blaser2021_4_aaa_fmi.zip" download>Metamizole_Blaser2021_4_aaa_fmi.zip</a> <span class="pk-size">(1.2 MB)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metamizole/Metamizole_Blaser2021_4_aaa/Metamizole_Blaser2021_4_aaa_matlab.zip" download>Metamizole_Blaser2021_4_aaa_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metamizole/Metamizole_Blaser2021_4_aaa/Metamizole_Blaser2021_4_aaa_matlab_simbio.zip" download>Metamizole_Blaser2021_4_aaa_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

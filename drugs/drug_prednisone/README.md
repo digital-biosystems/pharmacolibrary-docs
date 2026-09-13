@@ -1,0 +1,160 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;prednisone&quot;}]"></div>
+
+# prednisone
+
+- **generic name:** prednisone
+- **ATC codes:** `A07EA03`, `H02AB07`
+- **DrugBank:** [DB00635](https://go.drugbank.com/drugs/DB00635)
+- **groups:** approved, investigational, vet_approved
+
+## About
+
+**Description.** A synthetic anti-inflammatory glucocorticoid derived from [cortisone].[A187463] It is biologically inert and converted to [prednisolone] in the liver.[L10502]
+
+Prednisone was granted FDA approval on 21 February 1955.[L10496]
+
+**Indication.** Prednisone is indicated as an anti-inflammatory or immunosuppressive drug for allergic, dermatologic, gastrointestinal, hematologic, ophthalmologic, nervous system, renal, respiratory, rheumatologic, infectious, endocrine, or neoplastic conditions as well as in organ transplant.[L10502]
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-11 23:11 | 24:20 | 1/3/0 | 1/0/1 | 0/0/1 | 298,029/18,619 | ollama / qwen3.8:27b-mtp-q8_0 | 25 | 0/1 | 24/1 | 0 |
+
+## popPK records
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Magee_2002](drugs/drug_prednisone/Prednisone_Magee2002_reference.md) | Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Bouazza_2025](drugs/drug_prednisone/Prednisone_Bouazza2025_covariate_effect.md) | Bouazza N et al., Population pharmacokinetic modelling of…, British journal of clinical… (2025) | [10.1002/bcp.70103](https://doi.org/10.1002/bcp.70103) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Bouazza_2025](drugs/drug_prednisone/Prednisone_Bouazza2025_covariate_effect_systemic_lupus_eryth.md) | Bouazza N et al., Population pharmacokinetic modelling of…, British journal of clinical… (2025) | [10.1002/bcp.70103](https://doi.org/10.1002/bcp.70103) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Bouazza_2025](drugs/drug_prednisone/Prednisone_Bouazza2025_estimate_rse.md) | Bouazza N et al., Population pharmacokinetic modelling of…, British journal of clinical… (2025) | [10.1002/bcp.70103](https://doi.org/10.1002/bcp.70103) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Bouazza_2025](drugs/drug_prednisone/Prednisone_Bouazza2025_estimate_rse_systemic_lupus_erythemat.md) | Bouazza N et al., Population pharmacokinetic modelling of…, British journal of clinical… (2025) | [10.1002/bcp.70103](https://doi.org/10.1002/bcp.70103) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [de_2023](drugs/drug_prednisone/Prednisone_de2023_reference.md) | de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal of clinical… (2023) | [10.1111/bcp.15610](https://doi.org/10.1111/bcp.15610) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Magee_2002](drugs/drug_prednisone/pd_Magee_2002_T_lymphocyte_cell_counts.md) | Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Magee_2002](drugs/drug_prednisone/pd_Magee_2002_WBLP.md) | Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Liu_2022](drugs/drug_prednisone/pd_Liu_2022_complete_response.md) | Liu S et al., Rituximab exposure-response in triweekl…, Clinical and translational… (2022) | [10.1111/cts.13186](https://doi.org/10.1111/cts.13186) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Liu_2022](drugs/drug_prednisone/pd_Liu_2022_overall_survival.md) | Liu S et al., Rituximab exposure-response in triweekl…, Clinical and translational… (2022) | [10.1111/cts.13186](https://doi.org/10.1111/cts.13186) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Liu_2022](drugs/drug_prednisone/pd_Liu_2022_progression_free_survival.md) | Liu S et al., Rituximab exposure-response in triweekl…, Clinical and translational… (2022) | [10.1111/cts.13186](https://doi.org/10.1111/cts.13186) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **HSD11B1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | metabolism | [Blaschke_2025](drugs/drug_prednisone/pgx_Blaschke_2025_HSD11B1_Q100.md) | Blaschke M et al., The local inactivation of glucocorticoi…, PNAS nexus (2025) | [10.1093/pnasnexus/pgaf315](https://doi.org/10.1093/pnasnexus/pgaf315) |
+
+<details class="legend">
+<summary>What the PGx columns mean</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 376 matched, 75 returned
+- **screened:** 3  ·  **relevant:** 3
+- **records:** 6  ·  extracted 0  ·  needs_review 0  ·  rejected 5  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_13 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `de_2023.pdf` | de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal of clinical… (2023) | popPK | 8 | [10.1111/bcp.15610](https://doi.org/10.1111/bcp.15610) | [36510685](https://pubmed.ncbi.nlm.nih.gov/36510685) | The study reports quantitative population PK parameters (CL, V) for prednisolone, the active metabolite of prednisone, in a pediatric population. |
+| `Blanchet_2018.pdf` | Blanchet B et al., A PK/PD study of Delta-4 abiraterone me…, Pharmacological research (2018) | pd | 5 | [10.1016/j.phrs.2018.08.016](https://doi.org/10.1016/j.phrs.2018.08.016) | [30142421](https://www.ncbi.nlm.nih.gov/pubmed/30142421) | metadata signals extractable PD data (PK/PD) |
+| `Chakraborty_1999.pdf` | Chakraborty A et al., Pharmacokinetic and adrenal interaction…, Journal of clinical pharmac… (1999) | pd | 5 | [10.1177/00912709922008137](https://doi.org/10.1177/00912709922008137) | [10354967](https://www.ncbi.nlm.nih.gov/pubmed/10354967) | metadata signals extractable PD data (indirectresponse) |
+| `Honoré_2014.pdf` | Honoré PM et al., What do we know about steroids metaboli…, Blood purification (2014) | pd | 5 | [10.1159/000368390](https://doi.org/10.1159/000368390) | [25471548](https://www.ncbi.nlm.nih.gov/pubmed/25471548) | metadata signals extractable PD data (PK/PD) |
+| `Kishi_2004.pdf` | Kishi S et al., Effects of prednisone and genetic polym…, Blood (2004) | pgx | 8 | [10.1182/blood-2003-06-2105](https://doi.org/10.1182/blood-2003-06-2105) | [12969965](https://www.ncbi.nlm.nih.gov/pubmed/12969965) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Romano-Aguilar_2020.pdf` | Romano-Aguilar M et al., Population pharmacokinetics of mycophen…, Lupus (2020) | pgx | 8 | [10.1177/0961203320931567](https://doi.org/10.1177/0961203320931567) | [32539658](https://www.ncbi.nlm.nih.gov/pubmed/32539658) | metadata signals extractable PGX data (UGT1A8, PK/PD-context) |
+| `Santoro_2011.pdf` | Santoro A et al., Pharmacogenetics of calcineurin inhibit…, Pharmacogenomics (2011) | pgx | 8 | [10.2217/pgs.11.70](https://doi.org/10.2217/pgs.11.70) | [21806386](https://www.ncbi.nlm.nih.gov/pubmed/21806386) | metadata signals extractable PGX data (CYP3A5, PK/PD-context) |
+| `Skauby_2017.pdf` | Skauby RH et al., Prednisolone and Prednisone Pharmacokin…, Therapeutic drug monitoring (2017) | pgx | 8 | [10.1097/FTD.0000000000000439](https://doi.org/10.1097/FTD.0000000000000439) | [28749817](https://www.ncbi.nlm.nih.gov/pubmed/28749817) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Ezzat_2012.pdf` | Ezzat HM et al., Incidence, predictors and significance…, Leukemia & lymphoma (2012) | pgx | 7 | [10.3109/10428194.2012.697560](https://doi.org/10.3109/10428194.2012.697560) | [22642935](https://www.ncbi.nlm.nih.gov/pubmed/22642935) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Marcantonio_2014.pdf` | Marcantonio EE et al., Prednisone has no effect on the pharmac…, Journal of clinical pharmac… (2014) | pgx | 7 | [10.1002/jcph.338](https://doi.org/10.1002/jcph.338) | [24895078](https://www.ncbi.nlm.nih.gov/pubmed/24895078) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Wilde_2007.pdf` | Wilde S et al., Population pharmacokinetics of the BEAC…, Clinical pharmacokinetics (2007) | pgx | 7 | [10.2165/00003088-200746040-00005](https://doi.org/10.2165/00003088-200746040-00005) | [17375983](https://www.ncbi.nlm.nih.gov/pubmed/17375983) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Bartlett_2019.pdf` | Bartlett FE et al., Tacrolimus Concentration-to-Dose Ratios…, Pharmacotherapy (2019) | pgx | 5 | [10.1002/phar.2300](https://doi.org/10.1002/phar.2300) | [31230376](https://www.ncbi.nlm.nih.gov/pubmed/31230376) | metadata signals extractable PGX data (CYP3A5) |
+| `Sam_2011.pdf` | Sam WJ et al., Associations of ABCB1 3435C&gt;T and IL-10…, Transplantation (2011) | pgx | 5 | [10.1097/TP.0b013e3182384ae2](https://doi.org/10.1097/TP.0b013e3182384ae2) | [22094953](https://www.ncbi.nlm.nih.gov/pubmed/22094953) | metadata signals extractable PGX data (ABCB1) |
+
+<sub>queue written 2026-09-11T23:00:41.478055+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Artero_1992 | not_relevant | 0 | 0 | The paper discusses the clinical course and treatment of recurrent focal glomerulosclerosis in transplant patients but does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of prednisone. |
+| PGx | Bartlett_2019 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of tacrolimus (CYP3A5), not prednisone. |
+| popPK | Bergmann_2012 | irrelevant | 2 | 0 | The text is a review article summarizing the complexity of prednisone/prednisolone pharmacokinetics without reporting original quantitative parameter values or specific numeric data. |
+| popPK | Blanchet_2018 | irrelevant | 0 | 0 | The study focuses on the PK/PD of abiraterone, not prednisone, and no prednisone parameters are reported. |
+| PD | Blanchet_2018 | not_relevant | 0 | 0 | The paper focuses on the PK/PD of abiraterone, not prednisone. |
+| PGx | Bussel_2021 | not_relevant | 0 | 0 | The paper discusses the management of fetal and neonatal alloimmune thrombocytopenia and mentions prednisone as a current therapy, but it does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of prednisone. |
+| popPK | Chakraborty_1999 | irrelevant | 0 | 0 | The evidence provided contains only the paper title and no quantitative pharmacokinetic parameters or data for prednisone. |
+| PD | Chakraborty_1999 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, abstract, or results necessary to determine if numeric PD parameters or exposure-response relationships are reported. |
+| PGx | Concha_2023 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on tacrolimus PK, not prednisone. |
+| PGx | Crowe_2012 | not_relevant | 0 | 0 | The study examines P-glycoprotein transport mechanisms in Caco-2 cells but does not report pharmacogenomic effects (gene variants) on PK/PD parameters in humans. |
+| PGx | Davies_1992 | not_relevant | 0 | 0 | The paper reports clinical outcomes (survival, rejection) of transplant protocols and does not investigate pharmacogenomic effects on prednisone PK or PD parameters. |
+| popPK | Deng_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of polatuzumab vedotin, and prednisone is only mentioned as a co-administered drug in the R-CHP regimen without any PK parameters reported for it. |
+| PD | Deng_2024 | not_relevant | 0 | 0 | The paper reports exposure-response analyses for polatuzumab vedotin, not prednisone; prednisone is only mentioned as part of the background chemotherapy regimen (R-CHP). |
+| PGx | Ezzat_2012 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (protease inhibitors and vinblastine) and clinical toxicity in HIV-HL patients, not pharmacogenomic effects on prednisone PK/PD. |
+| PGx | Faria_2019 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving CYP enzymes and prednisone as an inducer, but does not report pharmacogenomic effects (gene variants) on prednisone's PK or PD parameters. |
+| popPK | Fu_2025 | irrelevant | 0 | 0 | The paper is a clinical trial analysis of health-related quality of life (PROs) in multiple myeloma patients, not a pharmacokinetic study, and contains no PK parameters for prednisone. |
+| popPK | Furie_2021 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for dapirolizumab pegol in SLE where prednisone is only a concomitant standard-of-care medication, and no pharmacokinetic parameters for prednisone are reported. |
+| PD | Furie_2021 | not_relevant | 0 | 0 | The paper reports a clinical dose-response analysis for dapirolizumab pegol (DZP), not prednisone; prednisone is only mentioned as a concomitant standard-of-care medication with a tapering protocol, and no PD parameters for prednisone are reported. |
+| PGx | Gruber_1980 | not_relevant | 0 | 0 | The paper is a clinical case report describing the treatment of vesicular pemphigoid with prednisone and methotrexate, but it does not report any pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Hanot_2020 | not_relevant | 2 | 5 | The paper reports changes in gene expression (NR3C1α) associated with clinical resistance, but does not report a pharmacogenomic effect on a specific PK or PD parameter (e.g., AUC, Cmax, receptor binding affinity) linked to a specific genotype. |
+| PGx | Hedrich_2016 | not_relevant | 0 | 0 | The paper is a review of CYP2B6-mediated drug-drug interactions and does not report pharmacogenomic effects on the PK or PD of prednisone. |
+| PGx | Hejazian_2020 | not_relevant | 2 | 0 | The text is a review introduction/abstract discussing general concepts of pharmacogenetics in nephrotic syndrome without reporting specific quantitative PK/PD effect sizes for prednisone. |
+| popPK | Honoré_2014 | irrelevant | 0 | 0 | The provided evidence consists only of a title suggesting a review of steroid metabolism in renal disease, with no original quantitative pharmacokinetic parameters or numeric values for prednisone present. |
+| PD | Honoré_2014 | not_relevant | 1 | 0 | The text is a title of a review article regarding the status of steroid metabolism and PK/PD approaches in renal failure, containing no specific numeric PD parameters or extractable concentration-effect data. |
+| PGx | Huang_2024 | not_relevant | 0 | 0 | The paper investigates a splice variant (CENPK) associated with resistance to Abiraterone, not a pharmacogenomic effect on the PK or PD of prednisone. |
+| PGx | Izzo_2009 | not_relevant | 0 | 0 | The paper is a systematic review of herbal medicine interactions and does not report pharmacogenomic effects on prednisone PK/PD. |
+| PGx | Jacqz-Aigrain_1994 | not_relevant | 0 | 0 | The paper studies TPMT activity and its effect on thiopurine metabolism, not the pharmacokinetics or pharmacodynamics of prednisone. |
+| PGx | Jiang_2022 | not_relevant | 0 | 0 | The paper reports a prediction model for a clinical adverse event (osteonecrosis) based on genetic risk scores, but does not report changes in pharmacokinetic or pharmacodynamic parameters of prednisone. |
+| PGx | Kerstens_1994 | not_relevant | 0 | 0 | The paper investigates the association between purine enzyme activities and response to azathioprine, not the effect of genetic variants on the pharmacokinetics or pharmacodynamics of prednisone. |
+| PGx | Kishi_2004 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on etoposide disposition, not prednisone. |
+| PGx | Kurian_2020 | not_relevant | 0 | 0 | The paper investigates the effect of a CAR agonist (CITCO) on cyclophosphamide PK/PD, not the effect of a gene variant on prednisone. |
+| PGx | Landes_1995 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetics of lansoprazole and mentions prednisone only as a drug in an interaction study, without reporting any pharmacogenomic effects on prednisone. |
+| popPK | Liang_2026 | irrelevant | 0 | 0 | The paper is a clinical prognostic study of pediatric IgA nephropathy and does not report pharmacokinetic parameters for prednisone. |
+| popPK | Liu_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of rituximab, with prednisone only mentioned as part of the R-CHOP chemotherapy regimen. |
+| PGx | Lopez-Alcorocho_1995 | not_relevant | 0 | 0 | The paper studies the effect of prednisone on HBV viral variants and ALT levels, not the effect of human gene variants on prednisone pharmacokinetics or pharmacodynamics. |
+| PGx | Mallette_1980 | not_relevant | 0 | 0 | The paper describes a clinical case of hypercalcemia responding to prednisone but does not report any pharmacogenomic analysis or gene variants affecting PK/PD parameters. |
+| PGx | Mao_2024 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (prednisone inducing UGT enzymes) affecting mycophenolate mofetil PK, not pharmacogenomic effects (gene variants) on prednisone PK/PD. |
+| PGx | Marcantonio_2014 | not_relevant | 0 | 0 | The study evaluates drug-drug interactions (prednisone affecting CYP3A4 substrates) in a general population, not the effect of a specific gene variant on prednisone's PK/PD. |
+| PGx | Michalska_2023 | not_relevant | 0 | 0 | The paper reports an association between SLCO1B1 genotype and overall survival in multiple myeloma patients treated with Melphalan-Prednisone, but it does not report changes in specific pharmacokinetic (e.g., AUC, Cmax) or pharmacodynamic parameters of prednisone. |
+| popPK | Miranda_2026 | irrelevant | 0 | 0 | The paper is an ecotoxicology and biodegradation study of prednisone in aquatic environments, not a pharmacokinetic study, and contains no PK parameters like clearance or volume. |
+| PD | Miranda_2026 | not_relevant | 0 | 0 | The paper reports ecotoxicity and biodegradation of prednisone in aquatic organisms, finding no toxic effects and explicitly stating that EC50 values could not be estimated; it does not contain any pharmacodynamic or exposure-response analysis for the drug's therapeutic effect. |
+| PGx | Nademanee_1995 | not_relevant | 0 | 0 | The paper reports clinical outcomes of bone marrow transplantation using prednisone for GVHD prophylaxis but does not investigate pharmacogenomic effects on prednisone pharmacokinetics or pharmacodynamics. |
+| PGx | Norman_1991 | not_relevant | 0 | 0 | The paper reports clinical outcomes of renal transplantation and does not investigate pharmacogenomic effects on prednisone PK or PD parameters. |
+| popPK | Patel_2023 | irrelevant | 0 | 0 | The study investigates the effects of prednisone on hemoglobin A1c levels (glycemic outcomes) and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PGx | Podolanczuk_2022 | not_relevant | 0 | 0 | The paper is a study protocol for N-acetylcysteine (NAC) in IPF and does not report pharmacogenomic effects on the PK or PD of prednisone. |
+| popPK | Pérez-Blanco_2016 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of doxorubicin and doxorubicinol, with prednisone only mentioned as part of the R-CHOP regimen. |
+| PGx | Ramos-Peñafiel_2020 | not_relevant | 2 | 5 | The study examines the association between ABCB1 expression and clinical response (complete remission/survival) to a multi-drug regimen, but does not report specific pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, receptor binding) of prednisone itself. |
+| PGx | Reséndiz-Galván_2020 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the pharmacokinetics of mycophenolic acid (MPA), not prednisone. |
+| PGx | Riglet_2020 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on mycophenolic acid (MPA), not prednisone. |
+| PGx | Romano-Aguilar_2020 | not_relevant | 0 | 0 | The study focuses on the pharmacokinetics of mycophenolic acid (MPA), not prednisone, and reports a drug-drug interaction (prednisone affecting MPA clearance) rather than a pharmacogenomic effect on prednisone. |
+| PGx | Rossi_2017 | not_relevant | 0 | 0 | The paper focuses on using liquid biopsy (cfDNA) to track tumor mutations and treatment response in DLBCL, not on pharmacogenomic effects on the PK/PD of prednisone. |
+| PGx | Sam_2011 | not_relevant | 0 | 0 | The paper investigates pharmacogenomic effects on sirolimus, not prednisone. |
+| popPK | Samineni_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of venetoclax, with prednisone serving only as a co-administered component of the R-CHOP regimen. |
+| PD | Samineni_2022 | not_relevant | 0 | 0 | The paper analyzes exposure-response for venetoclax, not prednisone; no PD parameters for prednisone are reported. |
+| PGx | Santoro_2011 | not_relevant | 0 | 0 | The paper investigates pharmacogenomics for cyclosporine and tacrolimus, not prednisone. |
+| PGx | Santoro_2012 | not_relevant | 0 | 0 | The paper reports a case of TINU syndrome and HLA associations, but does not report any pharmacogenomic effect on the PK or PD parameters of prednisone. |
+| popPK | Sassen_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ciprofloxacin, not prednisone, which is only mentioned as a concomitant medication. |
+| PGx | Shibata_1998 | not_relevant | 0 | 0 | The paper describes an analytical method for measuring glucocorticoids and does not report any pharmacogenomic effects on PK or PD parameters. |
+| PGx | Skauby_2017 | not_relevant | 3 | 2 | The study analyzes genetic variants (CYP3A5, ABCB1) but explicitly states that causality cannot be definitive due to the limited sample size, and does not report a fitted quantitative pharmacogenomic effect size on PK parameters. |
+| popPK | Sun_2010 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of cyclosporine, with prednisone serving only as a covariate in the model. |
+| PGx | Terrier_2025 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (dexamethasone/prednisone inducing CYP3A/P-gp affecting apixaban/rivaroxaban) and does not report any pharmacogenomic effects (gene variants) on the PK/PD of prednisone. |
+| PGx | Upton_1991 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions affecting theophylline clearance and explicitly states that prednisone was not found to influence theophylline disposition; it does not report pharmacogenomic effects on prednisone PK/PD. |
+| PGx | Wang_2023 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on tacrolimus pharmacokinetics, not prednisone. |
+| PGx | Wilde_2007 | not_relevant | 0 | 0 | The study analyzes population pharmacokinetics and toxicity of the BEACOPP regimen but does not report specific pharmacogenomic effects (gene variants) on prednisone PK/PD parameters. |
+| PGx | Wu_2020 | not_relevant | 0 | 0 | The study investigates the association between gene variants and clinical efficacy (PSA response, survival) of abiraterone/prednisone, but does not report pharmacokinetic or pharmacodynamic parameters of prednisone itself. |
+| popPK | Xu_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of daratumumab, with prednisone mentioned only as a component of a background chemotherapy regimen (VMP) and not as the subject drug. |
+| PD | Xu_2018 | not_relevant | 0 | 0 | The paper reports pharmacokinetics and exposure-response analyses for daratumumab, not prednisone. |
+| PGx | Zhang_2020 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on tacrolimus, not prednisone. |
+| PGx | Zhang_2022 | not_relevant | 0 | 0 | The study reports clinical efficacy (remission rates) and disease biomarkers (THSD7A-Ab, PLA2R-Ab) in response to CYP2B6 polymorphisms, but does not measure or report pharmacokinetic (e.g., AUC, Cmax) or pharmacodynamic (e.g., receptor occupancy, specific PD response) parameters of prednisone itself. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_prednisone`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

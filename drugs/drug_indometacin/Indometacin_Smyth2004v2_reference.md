@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;indometacin&quot;,&quot;href&quot;:&quot;drugs/drug_indometacin/&quot;},{&quot;label&quot;:&quot;Smyth_2004_2 \u00b7 preterm infants with symptomatic patent ductus arteriosus&quot;}]"></div>
+
 # indometacin — `Indometacin_Smyth2004v2_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

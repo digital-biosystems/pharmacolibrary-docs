@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;minocycline&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/&quot;},{&quot;label&quot;:&quot;Pardos_2024 \u00b7 patients with complicated skin and soft tissue infections caused by MRSA&quot;}]"></div>
+
 # minocycline — `Minocycline_Pardos2024_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -83,6 +85,12 @@ Pardos SL; Hope W; Kotsaki A; Das S; Giamarellos-Bourboulis EJ; Kontopoulouk T; 
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_minocycline/Minocycline_Pardos2024_reference/Minocycline_Pardos2024_reference.svg" alt="Minocycline_Pardos2024_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 

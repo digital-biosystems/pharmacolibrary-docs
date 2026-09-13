@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;perampanel&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/&quot;},{&quot;label&quot;:&quot;Takenaka_2018 \u00b7 subjects with partial-onset seizures&quot;}]"></div>
+
 # perampanel — `Perampanel_Takenaka2018_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

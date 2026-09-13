@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Zhou_1990 \u00b7 estimated_parameters_vt_l_kg&quot;}]"></div>
+
 # vinblastine — `Vinblastine_Zhou1990_estimated_parameters_vt_l_kg`
 
 > ## <span class="pk-badge pk-badge--green">extracted</span>

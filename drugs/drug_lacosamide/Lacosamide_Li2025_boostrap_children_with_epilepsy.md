@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;lacosamide&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/&quot;},{&quot;label&quot;:&quot;Li_2025 \u00b7 boostrap::children with epilepsy&quot;}]"></div>
+
 # lacosamide — `Lacosamide_Li2025_boostrap_children_with_epilepsy`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>

@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;mercaptopurine&quot;,&quot;href&quot;:&quot;drugs/drug_mercaptopurine/&quot;},{&quot;label&quot;:&quot;Hawwa_2008 \u00b7 paediatric patients with acute lymphoblastic leukaemia&quot;}]"></div>
+
 # mercaptopurine — `Mercaptopurine_Hawwa2008_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

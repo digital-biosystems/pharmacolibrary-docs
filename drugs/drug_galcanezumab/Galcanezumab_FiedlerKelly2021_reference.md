@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;galcanezumab&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/&quot;},{&quot;label&quot;:&quot;Fiedler-Kelly_2021 \u00b7 healthy subjects&quot;}]"></div>
+
 # galcanezumab — `Galcanezumab_FiedlerKelly2021_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>

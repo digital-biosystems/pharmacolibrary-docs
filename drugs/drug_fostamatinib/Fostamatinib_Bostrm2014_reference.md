@@ -1,3 +1,5 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fostamatinib&quot;,&quot;href&quot;:&quot;drugs/drug_fostamatinib/&quot;},{&quot;label&quot;:&quot;Bostr\u00f6m_2014 \u00b7 patients with rheumatoid arthritis&quot;}]"></div>
+
 # fostamatinib — `Fostamatinib_Bostrm2014_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
