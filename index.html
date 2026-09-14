@@ -344,7 +344,7 @@
         param: "-- a reported parameter for one drug, with the paper it came from.\n" +
           "-- The drug and parameter boxes above rewrite this query.\n" +
           "SELECT d.generic_name AS drug, p.value, p.unit_verbatim AS unit,\n" +
-          "       p.value_si, r.stem AS paper, p.link_method, r.model_id\n" +
+          "       p.value_si, p.unit_si, r.stem AS paper, p.link_method, r.model_id\n" +
           "FROM parameter p JOIN record r ON r.id = p.record_id\n" +
           "JOIN drug d ON d.slug = r.drug_slug\n" +
           "WHERE p.parameter_id = 'Q49' /*FILTER*/\n" +
@@ -377,7 +377,8 @@
           "JOIN drug d ON d.slug = r.drug_slug\n" +
           "WHERE p.link_method = 'review_gapfill' ORDER BY d.generic_name LIMIT 200;",
         disagree: "-- drugs whose papers disagree by more than 2x on apparent clearance.\n" +
-          "-- value_si is SI, so values from different units are comparable.\n" +
+          "-- value_si is SI BASE units (unit_si says which: m3/s here), not unit_canonical,\n" +
+          "-- so values reported in different units are directly comparable.\n" +
           "SELECT d.generic_name AS drug, count(*) AS n,\n" +
           "       round(min(p.value_si),10) AS lo, round(max(p.value_si),10) AS hi,\n" +
           "       round(max(p.value_si)/min(p.value_si),1) AS spread\n" +

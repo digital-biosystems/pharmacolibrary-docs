@@ -41,10 +41,15 @@ anywhere, and there is no server to be down.
 | `drug` | 588 | generic name, ATC codes, drug or toxin |
 | `paper` | 3,144 | title, year, DOI, PMID per source paper |
 | `record` | 6,952 | one per extracted model: domain, population, status, `model_id` |
-| `parameter` | 23,327 | value, `value_si`, units, origin paper, `link_method` |
+| `parameter` | 23,327 | value, `value_si` + `unit_si`, units, origin paper, `link_method` |
 | `pd_record` | 4,024 | model family, effect form, **`driver_kind`** — how a PD model attaches to PK |
 | `pgx_record` | 1,434 | gene, mechanism, **`applies_to`**, the Q-code it modifies |
 | `qcode` | 149 | the PK ontology, with 740 synonyms |
+
+`value_si` is in **SI base units** — `unit_si` names which (`m3/s` for a clearance, `m3`,
+`1/s`, `s`). That is *not* `unit_canonical`, which is the display unit (`L/h`): the two differ
+by orders of magnitude, so quote `value` with `unit_verbatim` and use `value_si` only to compare
+across papers.
 
 `link_method` is worth knowing: `exact` means the value was read from that paper,
 `review_gapfill` means it was borrowed from a review because the paper lacked it. A number
