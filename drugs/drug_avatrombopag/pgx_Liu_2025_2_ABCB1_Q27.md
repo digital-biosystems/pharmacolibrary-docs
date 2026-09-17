@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Avatrombopag_Liu2025v2_reference&quot;,&quot;label&quot;:&quot;Liu_2025_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_avatrombopag/Avatrombopag_Liu2025v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # ABCB1 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Liu_2025_2`

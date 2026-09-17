@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05A&quot;,&quot;href&quot;:&quot;atc/B05A.md&quot;},{&quot;label&quot;:&quot;dextran&quot;,&quot;href&quot;:&quot;drugs/drug_dextran/&quot;},{&quot;label&quot;:&quot;Schwarz_1981 \u00b7 healthy volunteers&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dextran_Schwarz1981_healthy_volunteers&quot;,&quot;label&quot;:&quot;Schwarz_1981_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_dextran/Dextran_Schwarz1981_healthy_volunteers.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # dextran — `Dextran_Schwarz1981_healthy_volunteers`
 

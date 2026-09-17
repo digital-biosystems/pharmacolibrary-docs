@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Morphine_Yalcin2022_reference&quot;,&quot;label&quot;:&quot;Yalcin_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Yalcin2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Yang2024_reference&quot;,&quot;label&quot;:&quot;Yang_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Yang2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # V̇E55 — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Simons_2023`

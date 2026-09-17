@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Heparin_GouinThibault2024_reference&quot;,&quot;label&quot;:&quot;Gouin-Thibault_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_heparin/Heparin_GouinThibault2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Heparin_Lanoisele2026_reference&quot;,&quot;label&quot;:&quot;Lanoisel\u00e9e_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_heparin/Heparin_Lanoisele2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # ACT — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Lanoiselée_2026`

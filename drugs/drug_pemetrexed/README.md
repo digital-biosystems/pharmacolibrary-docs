@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;pemetrexed&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pemetrexed_Boosman2023_reference&quot;,&quot;label&quot;:&quot;Boosman_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_Cao2022_reference&quot;,&quot;label&quot;:&quot;Cao_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pemetrexed_de2022_reference&quot;,&quot;label&quot;:&quot;de_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pemetrexed/Pemetrexed_de2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # pemetrexed
 
@@ -35,9 +36,9 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Boosman_2023](drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference.md) | Boosman RJ et al., Prediction of the pharmacokinetics of p…, British journal of clinical… (2023) | [10.1111/bcp.15520](https://doi.org/10.1111/bcp.15520) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Cao_2022](drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md) | Cao P et al., Population pharmacokinetic study of pem…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.954242](https://doi.org/10.3389/fphar.2022.954242) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [de_2022](drugs/drug_pemetrexed/Pemetrexed_de2022_reference.md) | de Rouw N et al., Hyperhydration with cisplatin does not…, British journal of clinical… (2022) | [10.1111/bcp.15031](https://doi.org/10.1111/bcp.15031) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Boosman_2023_reference](drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference.md) | Boosman RJ et al., Prediction of the pharmacokinetics of p…, British journal of clinical… (2023) | [10.1111/bcp.15520](https://doi.org/10.1111/bcp.15520) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Cao_2022_reference](drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md) | Cao P et al., Population pharmacokinetic study of pem…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.954242](https://doi.org/10.3389/fphar.2022.954242) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [de_2022_reference](drugs/drug_pemetrexed/Pemetrexed_de2022_reference.md) | de Rouw N et al., Hyperhydration with cisplatin does not…, British journal of clinical… (2022) | [10.1111/bcp.15031](https://doi.org/10.1111/bcp.15031) |
 
 ## Pharmacodynamics (PD)
 

@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aprindine_Kobari1984_healthy_volunteers&quot;,&quot;label&quot;:&quot;Kobari_1984_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_aprindine/Aprindine_Kobari1984_healthy_volunteers.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # CYP2D6 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Ebner_1993`

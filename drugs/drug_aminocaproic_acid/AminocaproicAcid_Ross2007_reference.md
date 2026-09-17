@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;aminocaproic acid&quot;,&quot;href&quot;:&quot;drugs/drug_aminocaproic_acid/&quot;},{&quot;label&quot;:&quot;Ross_2007 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AminocaproicAcid_Ross2007_reference&quot;,&quot;label&quot;:&quot;Ross_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 # aminocaproic acid — `AminocaproicAcid_Ross2007_reference`
 

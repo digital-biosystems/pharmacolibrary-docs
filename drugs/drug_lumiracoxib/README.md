@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;lumiracoxib&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lumiracoxib_VsquezBahena20102_reference&quot;,&quot;label&quot;:&quot;V\u00e1squez-Bahena_2010_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lumiracoxib/Lumiracoxib_VsquezBahena20102_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # lumiracoxib
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Vásquez-Bahena_2010_2](drugs/drug_lumiracoxib/Lumiracoxib_VsquezBahena20102_reference.md) | Vásquez-Bahena DA et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2010) | [10.1111/j.1476-5381.2009.00508.x](https://doi.org/10.1111/j.1476-5381.2009.00508.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Vásquez-Bahena_2010_2_reference](drugs/drug_lumiracoxib/Lumiracoxib_VsquezBahena20102_reference.md) | Vásquez-Bahena DA et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2010) | [10.1111/j.1476-5381.2009.00508.x](https://doi.org/10.1111/j.1476-5381.2009.00508.x) |
 
 ## Coverage
 

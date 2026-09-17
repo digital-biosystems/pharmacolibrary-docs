@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Triamcinolone_Kraus2018_reference&quot;,&quot;label&quot;:&quot;Kraus_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_triamcinolone/Triamcinolone_Kraus2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # HCG22 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Jeong_2015`

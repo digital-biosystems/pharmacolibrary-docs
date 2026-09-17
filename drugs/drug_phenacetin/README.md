@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;phenacetin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenacetin_Raaflaub1975_healthy_adults&quot;,&quot;label&quot;:&quot;Raaflaub_1975_healthy adults&quot;,&quot;href&quot;:&quot;drugs/drug_phenacetin/Phenacetin_Raaflaub1975_healthy_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # phenacetin
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Raaflaub_1975](drugs/drug_phenacetin/Phenacetin_Raaflaub1975_healthy_adults.md) | Raaflaub J et al., On the pharmacokinetics of phenacetin i…, European journal of clinica… (1975) | [10.1007/BF00567125](https://doi.org/10.1007/BF00567125) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Raaflaub_1975_healthy adults](drugs/drug_phenacetin/Phenacetin_Raaflaub1975_healthy_adults.md) | Raaflaub J et al., On the pharmacokinetics of phenacetin i…, European journal of clinica… (1975) | [10.1007/BF00567125](https://doi.org/10.1007/BF00567125) |
 
 ## Coverage
 

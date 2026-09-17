@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;levosimendan&quot;,&quot;href&quot;:&quot;drugs/drug_levosimendan/&quot;},{&quot;label&quot;:&quot;Bertin_2026 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levosimendan_Bertin2025_reference&quot;,&quot;label&quot;:&quot;Bertin_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_levosimendan/Levosimendan_Bertin2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levosimendan_Bertin2026_reference&quot;,&quot;label&quot;:&quot;Bertin_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_levosimendan/Levosimendan_Bertin2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # levosimendan — `Levosimendan_Bertin2026_reference`
 

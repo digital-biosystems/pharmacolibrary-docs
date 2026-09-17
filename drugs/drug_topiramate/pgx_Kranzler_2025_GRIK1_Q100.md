@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Topiramate_Lee2024_reference&quot;,&quot;label&quot;:&quot;Lee_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_topiramate/Topiramate_Lee2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Topiramate_Marques2020_reference&quot;,&quot;label&quot;:&quot;Marques_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_topiramate/Topiramate_Marques2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # GRIK1 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Kranzler_2025`

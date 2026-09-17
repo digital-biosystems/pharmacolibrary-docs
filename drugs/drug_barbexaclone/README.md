@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;barbexaclone&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Barbexaclone_Iven1983_mice&quot;,&quot;label&quot;:&quot;Iven_1983_mice&quot;,&quot;href&quot;:&quot;drugs/drug_barbexaclone/Barbexaclone_Iven1983_mice.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # barbexaclone
 
@@ -27,7 +28,7 @@ There has been a case of barbexaclone abuse due to the amphetamine like properti
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Iven_1983](drugs/drug_barbexaclone/Barbexaclone_Iven1983_mice.md) | Iven H et al., Pharmacokinetics of phenobarbital and p…, Naunyn-Schmiedeberg's archi… (1983) | [10.1007/BF00497022](https://doi.org/10.1007/BF00497022) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Iven_1983_mice](drugs/drug_barbexaclone/Barbexaclone_Iven1983_mice.md) | Iven H et al., Pharmacokinetics of phenobarbital and p…, Naunyn-Schmiedeberg's archi… (1983) | [10.1007/BF00497022](https://doi.org/10.1007/BF00497022) |
 
 ## Coverage
 

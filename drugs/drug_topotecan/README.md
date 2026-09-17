@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;topotecan&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Topotecan_Lger2004_reference&quot;,&quot;label&quot;:&quot;L\u00e9ger_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_topotecan/Topotecan_Lger2004_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # topotecan
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Léger_2004](drugs/drug_topotecan/Topotecan_Lger2004_reference.md) | Léger F et al., Factors affecting pharmacokinetic varia…, British journal of cancer (2004) | [10.1038/sj.bjc.6601469](https://doi.org/10.1038/sj.bjc.6601469) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Léger_2004_reference](drugs/drug_topotecan/Topotecan_Lger2004_reference.md) | Léger F et al., Factors affecting pharmacokinetic varia…, British journal of cancer (2004) | [10.1038/sj.bjc.6601469](https://doi.org/10.1038/sj.bjc.6601469) |
 
 ## Pharmacodynamics (PD)
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;omeprazole&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/&quot;},{&quot;label&quot;:&quot;Panetta_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Omeprazole_Chen2022v2_final_estimates&quot;,&quot;label&quot;:&quot;Chen_2022_2_final_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Chen2022v2_final_estimates.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Chen2022v2_final_estimates&quot;,&quot;label&quot;:&quot;Chen_2022_2_final_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Chen2022v2_final_estimates.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Chen2022v2_sir_median&quot;,&quot;label&quot;:&quot;Chen_2022_2_sir_median&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Chen2022v2_sir_median.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Chen2022v2_sir_median&quot;,&quot;label&quot;:&quot;Chen_2022_2_sir_median&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Chen2022v2_sir_median.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Gao2025_reference&quot;,&quot;label&quot;:&quot;Gao_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Gao2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_KhanAsa2020_reference&quot;,&quot;label&quot;:&quot;Khan-Asa_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_KhanAsa2020_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Marques2026_reference&quot;,&quot;label&quot;:&quot;Marques_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Marques2026_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Yusuff2026_reference&quot;,&quot;label&quot;:&quot;Yusuff_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Yusuff2026_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhang2025v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhang2025v3_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_3_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhang2025v3_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Chung2022_reference&quot;,&quot;label&quot;:&quot;Chung_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Chung2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Gaspar2025_reference&quot;,&quot;label&quot;:&quot;Gaspar_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Li2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Panetta2024_reference&quot;,&quot;label&quot;:&quot;Panetta_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Panetta2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Omeprazole_Yang2026v2_reference&quot;,&quot;label&quot;:&quot;Yang_2026_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Yang2026v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhao2018_reference&quot;,&quot;label&quot;:&quot;Zhao_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhao2018_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Han2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # omeprazole — `Omeprazole_Panetta2024_reference`
 
@@ -6,15 +7,14 @@
 
 ### Reviewer guidance
 
-**What is wrong:** the model was built differently from what the record describes; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 3 scholar param(s) emitted or defaulted — got 2 covered
+**What is wrong:** the engineer's deviations are not documented and quantified; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
 
 **Steps:**
-1. Open the emitted .mo and compare its base class and parameters with the record.
-2. Check the .deviation.json beside it for what the engineer defaulted or assumed.
-3. A wrong base class or a defaulted core parameter means rebuilding, not curating.
-4. Advisory only — the base model still replicates.
-5. Check the record's covariate_definitions in _interpretv2.yaml.
-6. Re-run the engineer for this drug if the covariate curves are wanted.
+1. Read the .deviation.json and confirm each deviation names what changed and why.
+2. Anything undocumented needs the engineer, not a curator.
+3. Advisory only — the base model still replicates.
+4. Check the record's covariate_definitions in _interpretv2.yaml.
+5. Re-run the engineer for this drug if the covariate curves are wanted.
 
 <sub>owner: **engineer** · guidance written by playbook</sub>
 
@@ -48,7 +48,10 @@ Panetta JC; Selvo NS; Mater DV; Stewart CF et al. (2024). Pharmaceutics 16
 ## Departures & gaps
 
 **Deviations:**
+- `defaulted_parameters`: ['ka']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - built from REVIEW reference values (Panetta_2024) — secondary source
@@ -78,9 +81,9 @@ Panetta JC; Selvo NS; Mater DV; Stewart CF et al. (2024). Pharmaceutics 16
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=omeprazole) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | fail | 3 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['tlag'] |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -107,15 +110,15 @@ The structure OpenModelica draws for this model, with **this record's parameter 
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
-**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_modelica.zip" download>Omeprazole_Panetta2024_reference_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_fmi.zip" download>Omeprazole_Panetta2024_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_matlab.zip" download>Omeprazole_Panetta2024_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_matlab_simbio.zip" download>Omeprazole_Panetta2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_sbml.zip" download>Omeprazole_Panetta2024_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_cellml.zip" download>Omeprazole_Panetta2024_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_modelica.zip" download>Omeprazole_Panetta2024_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_fmi.zip" download>Omeprazole_Panetta2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_matlab.zip" download>Omeprazole_Panetta2024_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_matlab_simbio.zip" download>Omeprazole_Panetta2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_sbml.zip" download>Omeprazole_Panetta2024_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_cellml.zip" download>Omeprazole_Panetta2024_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -124,9 +127,9 @@ Each archive holds the model source, a script that simulates it against the appr
 
 Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
 
-<dbs-fmusim paramsurl="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_omeprazole/Omeprazole_Panetta2024_reference/Omeprazole_Panetta2024_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>Template `PK_1C` · parameters `Omeprazole_Panetta2024_reference_params.json` · controls `Omeprazole_Panetta2024_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Template `PK_1C_enteral` · parameters `Omeprazole_Panetta2024_reference_params.json` · controls `Omeprazole_Panetta2024_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

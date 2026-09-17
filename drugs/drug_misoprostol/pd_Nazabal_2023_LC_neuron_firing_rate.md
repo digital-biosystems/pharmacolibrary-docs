@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Misoprostol_Vorontsova2022_reference&quot;,&quot;label&quot;:&quot;Vorontsova_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_misoprostol/Misoprostol_Vorontsova2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # firing rate — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Nazabal_2023`

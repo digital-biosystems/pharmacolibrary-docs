@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;lomustine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lomustine_Rodn2015_reference&quot;,&quot;label&quot;:&quot;Rod\u00f3n_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lomustine/Lomustine_Rodn2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # lomustine
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Rodón_2015](drugs/drug_lomustine/Lomustine_Rodn2015_reference.md) | Rodón J et al., Pharmacokinetic, pharmacodynamic and bi…, Investigational new drugs (2015) | [10.1007/s10637-014-0192-4](https://doi.org/10.1007/s10637-014-0192-4) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Rodón_2015_reference](drugs/drug_lomustine/Lomustine_Rodn2015_reference.md) | Rodón J et al., Pharmacokinetic, pharmacodynamic and bi…, Investigational new drugs (2015) | [10.1007/s10637-014-0192-4](https://doi.org/10.1007/s10637-014-0192-4) |
 
 ## Coverage
 

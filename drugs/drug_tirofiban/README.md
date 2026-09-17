@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;tirofiban&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tirofiban_Emani2020_pediatric_patients_undergoing_aortopulmo&quot;,&quot;label&quot;:&quot;Emani_2020_pediatric patients undergoing aortopulmonary shunting&quot;,&quot;href&quot;:&quot;drugs/drug_tirofiban/Tirofiban_Emani2020_pediatric_patients_undergoing_aortopulmo.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # tirofiban
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Emani_2020](drugs/drug_tirofiban/Tirofiban_Emani2020_pediatric_patients_undergoing_aortopulmo.md) | Emani S et al., Platelet Inhibition With IV Glycoprotei…, Pediatric critical care med… (2020) | [10.1097/PCC.0000000000002292](https://doi.org/10.1097/PCC.0000000000002292) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Emani_2020_pediatric patients undergoing aortopulmonary shunting](drugs/drug_tirofiban/Tirofiban_Emani2020_pediatric_patients_undergoing_aortopulmo.md) | Emani S et al., Platelet Inhibition With IV Glycoprotei…, Pediatric critical care med… (2020) | [10.1097/PCC.0000000000002292](https://doi.org/10.1097/PCC.0000000000002292) |
 
 ## Coverage
 

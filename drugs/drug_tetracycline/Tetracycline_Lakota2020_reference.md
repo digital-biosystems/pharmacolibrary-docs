@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;tetracycline&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/&quot;},{&quot;label&quot;:&quot;Lakota_2020 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tetracycline_Ji2025_reference&quot;,&quot;label&quot;:&quot;Ji_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Ji2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Lakota2020_reference&quot;,&quot;label&quot;:&quot;Lakota_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Lakota2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tetracycline_Mileva2021_reference&quot;,&quot;label&quot;:&quot;Mileva_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Mileva2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Singh2026_reference&quot;,&quot;label&quot;:&quot;Singh_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Singh2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Grada2022_reference&quot;,&quot;label&quot;:&quot;Grada_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Grada2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # tetracycline — `Tetracycline_Lakota2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,20 +21,18 @@ Lakota EA; Van Wart SA; Trang M; Tzanis E; Bhavnani SM; Safir MC; et al. et al. 
   ·  DOI: [10.1128/AAC.02263-19](https://doi.org/10.1128/AAC.02263-19)
 
 ## Model component
-<dbs-pgx drug="tetracycline" model-id="Tetracycline_Lakota2020_reference" status="needs_review" stale="false" population="" measured-compound="tetracycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="tetracycline" model-id="Tetracycline_Lakota2020_reference" status="curated_candidate" stale="false" population="" measured-compound="tetracycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (liters/h) | `Q22` · CL | —(suppressed) | liters/h | — | L/h | not captured | review (0.7) | Lakota_2020:review | — | not captured |
-| Vc (liters) | `Q63` · V1 | —(suppressed) | liters | — | L | not captured | review (0.7) | Lakota_2020:review | — | not captured |
-| Vp1 (liters) | `Q64` · V2 | —(suppressed) | liters | — | L | not captured | review (0.7) | Lakota_2020:review | — | not captured |
-| CLd2 (liters/h) | `Q30` · Q | —(suppressed) | liters/h | — | L/h | not captured | review (0.7) | Lakota_2020:review | — | not captured |
-| ka (h−1) | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review (0.7) | Lakota_2020:review | — | not captured |
+| CL (liters/h) | `Q22` · CL | 10.3 | liters/h | 2.861111111111111e-06 | L/h | not captured | review (0.7) | Lakota_2020:review | — | not captured |
+| Vc (liters) | `Q63` · V1 | 21.1 | liters | 0.0211 | L | not captured | review (0.7) | Lakota_2020:review | — | not captured |
+| Vp1 (liters) | `Q64` · V2 | 79.9 | liters | 0.07990000000000001 | L | not captured | review (0.7) | Lakota_2020:review | — | not captured |
+| CLd2 (liters/h) | `Q30` · Q | 21.3 | liters/h | 5.916666666666666e-06 | L/h | not captured | review (0.7) | Lakota_2020:review | — | not captured |
+| ka (h−1) | `Q49` · kabs | 1.74 | h−1 | 0.00048333333333333334 | 1/h | not captured | review (0.7) | Lakota_2020:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -77,7 +75,7 @@ Lakota EA; Van Wart SA; Trang M; Tzanis E; Bhavnani SM; Safir MC; et al. et al. 
 | T3_output_variable | not captured | pass | C_central (measured=tetracycline) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

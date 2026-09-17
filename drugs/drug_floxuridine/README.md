@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;floxuridine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a&quot;,&quot;label&quot;:&quot;Port_1999_rats with Morris hepatoma M3924A&quot;,&quot;href&quot;:&quot;drugs/drug_floxuridine/Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # floxuridine
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Port_1999](drugs/drug_floxuridine/Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a.md) | Port R et al., Local disposition kinetics of floxuridi…, Cancer chemotherapy and pha… (1999) | [10.1007/s002800050946](https://doi.org/10.1007/s002800050946) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Port_1999_rats with Morris hepatoma M3924A](drugs/drug_floxuridine/Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a.md) | Port R et al., Local disposition kinetics of floxuridi…, Cancer chemotherapy and pha… (1999) | [10.1007/s002800050946](https://doi.org/10.1007/s002800050946) |
 
 ## Pharmacodynamics (PD)
 

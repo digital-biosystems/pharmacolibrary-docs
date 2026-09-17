@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;glycopyrronium&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/&quot;},{&quot;label&quot;:&quot;Bartels_2021 \u00b7 mf&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glycopyrronium_Bartels2021_mf&quot;,&quot;label&quot;:&quot;Bartels_2021_mf&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_mf.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Glycopyrronium_Bartels2021_mf&quot;,&quot;label&quot;:&quot;Bartels_2021_mf&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_mf.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Glycopyrronium_Bartels2013_reference&quot;,&quot;label&quot;:&quot;Bartels_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glycopyrronium_Bartels2021_gly&quot;,&quot;label&quot;:&quot;Bartels_2021_gly&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_gly.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glycopyrronium_Bartels2021_gly&quot;,&quot;label&quot;:&quot;Bartels_2021_gly&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_gly.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glycopyrronium_Bartels2021_ind&quot;,&quot;label&quot;:&quot;Bartels_2021_ind&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_ind.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glycopyrronium_Bartels2021_ind&quot;,&quot;label&quot;:&quot;Bartels_2021_ind&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_ind.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # glycopyrronium — `Glycopyrronium_Bartels2021_mf`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `indacaterol/glycopyrronium/mometasone furoate`, measured `indacaterol, glycopyrronium, mometasone furoate`.
 
@@ -23,20 +23,18 @@ Bartels C; Jain M; Yu J; Tillmann HC; Vaidya S et al. (2021). European journal o
   ·  DOI: [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x)
 
 ## Model component
-<dbs-pgx drug="glycopyrronium" model-id="Glycopyrronium_Bartels2021_mf" status="needs_review" stale="false" population="patients with asthma" measured-compound="indacaterol, glycopyrronium, mometasone furoate" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="glycopyrronium" model-id="Glycopyrronium_Bartels2021_mf" status="curated_candidate" stale="false" population="patients with asthma" measured-compound="indacaterol, glycopyrronium, mometasone furoate" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | exact (1.0) | Bartels_2021:other_prose | — | not captured |
-| Vc/F (L) | `Q290` · V1/F | —(suppressed) | L | — | L | not captured | exact (1.0) | Bartels_2021:other_prose | — | not captured |
-| Q/F (L/h) | `Q69` · Q/F | —(suppressed) | L/h | — | L/h | not captured | exact (1.0) | Bartels_2021:other_prose | — | not captured |
-| Vp/F (L) | `Q82` · V2/F | —(suppressed) | L | — | L | not captured | exact (1.0) | Bartels_2021:other_prose | — | not captured |
-| Ka (1/h) | `Q49` · kabs | —(suppressed) | 1/h | — | 1/h | not captured | exact (1.0) | Bartels_2021:other_prose | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 210 | L/h | 5.833333333333333e-05 | L/h | not captured | exact (1.0) | Bartels_2021:other_prose | — | not captured |
+| Vc/F (L) | `Q290` · V1/F | 1800 | L | 1.8 | L | not captured | exact (1.0) | Bartels_2021:other_prose | — | not captured |
+| Q/F (L/h) | `Q69` · Q/F | 250 | L/h | 6.944444444444444e-05 | L/h | not captured | exact (1.0) | Bartels_2021:other_prose | — | not captured |
+| Vp/F (L) | `Q82` · V2/F | 3700 | L | 3.7 | L | not captured | exact (1.0) | Bartels_2021:other_prose | — | not captured |
+| Ka (1/h) | `Q49` · kabs | 2.4 | 1/h | 0.0006666666666666666 | 1/h | not captured | exact (1.0) | Bartels_2021:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -99,7 +97,7 @@ Bartels C; Jain M; Yu J; Tillmann HC; Vaidya S et al. (2021). European journal o
 | T3_output_variable | not captured | pass | C_central (measured=indacaterol, glycopyrronium, mometasone furoate) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

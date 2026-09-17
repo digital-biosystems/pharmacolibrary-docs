@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03F&quot;,&quot;href&quot;:&quot;atc/A03F.md&quot;},{&quot;label&quot;:&quot;domperidone&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Domperidone_Dailly2008_preterm_neonates&quot;,&quot;label&quot;:&quot;Dailly_2008_preterm neonates&quot;,&quot;href&quot;:&quot;drugs/drug_domperidone/Domperidone_Dailly2008_preterm_neonates.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # domperidone
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Dailly_2008](drugs/drug_domperidone/Domperidone_Dailly2008_preterm_neonates.md) | Dailly E et al., Population pharmacokinetics of domperid…, European journal of clinica… (2008) | [10.1007/s00228-008-0535-1](https://doi.org/10.1007/s00228-008-0535-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Dailly_2008_preterm neonates](drugs/drug_domperidone/Domperidone_Dailly2008_preterm_neonates.md) | Dailly E et al., Population pharmacokinetics of domperid…, European journal of clinica… (2008) | [10.1007/s00228-008-0535-1](https://doi.org/10.1007/s00228-008-0535-1) |
 
 ## Coverage
 

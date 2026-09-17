@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;crizanlizumab&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Crizanlizumab_Sy2023_reference&quot;,&quot;label&quot;:&quot;Sy_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_crizanlizumab/Crizanlizumab_Sy2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # crizanlizumab
 
@@ -25,7 +26,7 @@ Currently, patients are prescribed [hydroxyurea] to raise levels of fetal hemogl
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sy_2023](drugs/drug_crizanlizumab/Crizanlizumab_Sy2023_reference.md) | Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2023) | [10.1007/s40262-022-01193-4](https://doi.org/10.1007/s40262-022-01193-4) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sy_2023_reference](drugs/drug_crizanlizumab/Crizanlizumab_Sy2023_reference.md) | Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2023) | [10.1007/s40262-022-01193-4](https://doi.org/10.1007/s40262-022-01193-4) |
 
 ## Pharmacodynamics (PD)
 

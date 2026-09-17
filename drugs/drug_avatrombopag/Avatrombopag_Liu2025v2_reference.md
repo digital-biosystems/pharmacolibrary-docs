@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;avatrombopag&quot;,&quot;href&quot;:&quot;drugs/drug_avatrombopag/&quot;},{&quot;label&quot;:&quot;Liu_2025_2 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Avatrombopag_Liu2025v2_reference&quot;,&quot;label&quot;:&quot;Liu_2025_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_avatrombopag/Avatrombopag_Liu2025v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 # avatrombopag — `Avatrombopag_Liu2025v2_reference`
 

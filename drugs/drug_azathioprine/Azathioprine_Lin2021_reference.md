@@ -1,19 +1,22 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/&quot;},{&quot;label&quot;:&quot;Lin_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_elYazigi1993_reference&quot;,&quot;label&quot;:&quot;el-Yazigi_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Azathioprine_Rosario2017_reference&quot;,&quot;label&quot;:&quot;Rosario_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Rosario2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Yang2015_reference&quot;,&quot;label&quot;:&quot;Yang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Yang2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # azathioprine — `Azathioprine_Lin2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">accepted (caveats)</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
+**What is wrong:** the engineer's deviations are not documented and quantified; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
 
 **Steps:**
-1. Advisory only — the base model still replicates.
-2. Check the record's covariate_definitions in _interpretv2.yaml.
-3. Re-run the engineer for this drug if the covariate curves are wanted.
+1. Read the .deviation.json and confirm each deviation names what changed and why.
+2. Anything undocumented needs the engineer, not a curator.
+3. Advisory only — the base model still replicates.
+4. Check the record's covariate_definitions in _interpretv2.yaml.
+5. Re-run the engineer for this drug if the covariate curves are wanted.
 
-<sub>owner: **curator** · guidance written by playbook</sub>
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `azathioprine`, measured `6-thioguanine nucleotides`.
 
@@ -24,18 +27,20 @@ Lin R; Lin W; Wang C; Dong J; Zheng W; Zeng D; et al. et al. (2021). Basic & cli
   ·  DOI: [10.1111/bcpt.13530](https://doi.org/10.1111/bcpt.13530)
 
 ## Model component
-<dbs-pgx drug="azathioprine" model-id="Azathioprine_Lin2021_reference" status="accepted_with_caveats" stale="false" population="adults with inflammatory bowel disease" measured-compound="6-thioguanine nucleotides" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="azathioprine" model-id="Azathioprine_Lin2021_reference" status="needs_review" stale="false" population="adults with inflammatory bowel disease" measured-compound="6-thioguanine nucleotides" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL p (L/h) | `Q22` · CL | 11.6 | L/h | 3.222222222222222e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col3, tab_2:row5:col4, tab_2:row5:col5 | — | not captured |
-| θ BW | `Q319` · allometric_exponent | 0.625 | not captured | not captured | not captured | not captured | llm (0.6) | tab_2:row6:col1, tab_2:row6:col2, tab_2:row6:col3, tab_2:row6:col4, tab_2:row6:col5 | — | not captured |
-| tpmt | `Q900` · tpmt | 0.515 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_2:row8:col1, tab_2:row8:col2, tab_2:row8:col3, tab_2:row8:col4, tab_2:row8:col5 | — | not captured |
-| V p (L) | `Q76` · V/F | 809 | L | 0.809 | [l] | not captured | llm (0.6) | tab_2:row9:col1, tab_2:row9:col2, tab_2:row9:col3, tab_2:row9:col4, tab_2:row9:col5 | — | not captured |
-| θ MESA | `Q900` · θ MESA | 0.802 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| CL p (L/h) | `Q22` · CL | —(suppressed) | L/h | — | [l] / [h] | not captured | llm_confirmed (0.6) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col3, tab_2:row5:col4, tab_2:row5:col5 | — | not captured |
+| θ BW | `Q319` · allometric_exponent | —(suppressed) | not captured | — | not captured | not captured | llm (0.6) | tab_2:row6:col1, tab_2:row6:col2, tab_2:row6:col3, tab_2:row6:col4, tab_2:row6:col5 | — | not captured |
+| tpmt | `Q900` · tpmt | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | tab_2:row8:col1, tab_2:row8:col2, tab_2:row8:col3, tab_2:row8:col4, tab_2:row8:col5 | — | not captured |
+| V p (L) | `Q76` · V/F | —(suppressed) | L | — | [l] | not captured | llm (0.6) | tab_2:row9:col1, tab_2:row9:col2, tab_2:row9:col3, tab_2:row9:col4, tab_2:row9:col5 | — | not captured |
+| θ MESA | `Q900` · θ MESA | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -45,7 +50,10 @@ Lin R; Lin W; Wang C; Dong J; Zheng W; Zeng D; et al. et al. (2021). Basic & cli
 ## Departures & gaps
 
 **Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - kept covariate coefficient θ MESA=0.802 (covariate MESA) — not an ontology parameter
@@ -85,8 +93,8 @@ Lin R; Lin W; Wang C; Dong J; Zheng W; Zeng D; et al. et al. (2021). Basic & cli
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=6-thioguanine nucleotides) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -113,15 +121,15 @@ The structure OpenModelica draws for this model, with **this record's parameter 
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
-**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_modelica.zip" download>Azathioprine_Lin2021_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_fmi.zip" download>Azathioprine_Lin2021_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_matlab.zip" download>Azathioprine_Lin2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_matlab_simbio.zip" download>Azathioprine_Lin2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_sbml.zip" download>Azathioprine_Lin2021_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_cellml.zip" download>Azathioprine_Lin2021_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_modelica.zip" download>Azathioprine_Lin2021_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_fmi.zip" download>Azathioprine_Lin2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_matlab.zip" download>Azathioprine_Lin2021_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_matlab_simbio.zip" download>Azathioprine_Lin2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_sbml.zip" download>Azathioprine_Lin2021_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_cellml.zip" download>Azathioprine_Lin2021_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -130,9 +138,9 @@ Each archive holds the model source, a script that simulates it against the appr
 
 Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
 
-<dbs-fmusim paramsurl="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_azathioprine/Azathioprine_Lin2021_reference/Azathioprine_Lin2021_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>Template `PK_1C` · parameters `Azathioprine_Lin2021_reference_params.json` · controls `Azathioprine_Lin2021_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Template `PK_1C_enteral` · parameters `Azathioprine_Lin2021_reference_params.json` · controls `Azathioprine_Lin2021_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

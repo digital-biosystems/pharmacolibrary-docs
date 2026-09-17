@@ -1,17 +1,19 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;rosuvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/&quot;},{&quot;label&quot;:&quot;Aoyama_2010 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rosuvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Macpherson2016_final&quot;,&quot;label&quot;:&quot;Macpherson_2016_final&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Macpherson2016_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Macpherson2016_final&quot;,&quot;label&quot;:&quot;Macpherson_2016_final&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Macpherson2016_final.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Macpherson2016_full&quot;,&quot;label&quot;:&quot;Macpherson_2016_full&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Macpherson2016_full.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Macpherson2016_full&quot;,&quot;label&quot;:&quot;Macpherson_2016_full&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Macpherson2016_full.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Aoyama2010_reference&quot;,&quot;label&quot;:&quot;Aoyama_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rosuvastatin_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosuvastatin_Liao2022v2_reference&quot;,&quot;label&quot;:&quot;Liao_2022_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rosuvastatin/Rosuvastatin_Liao2022v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # rosuvastatin — `Rosuvastatin_Aoyama2010_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-**What is wrong:** every check the reviewer could run passed
+**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
 
 **Steps:**
-1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+1. Read the .deviation.json and confirm each deviation names what changed and why.
+2. Anything undocumented needs the engineer, not a curator.
 
-<sub>owner: **curator** · guidance written by playbook</sub>
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -20,17 +22,19 @@ Aoyama T; Omori T; Watabe S; Shioya A; Ueno T; Fukuda N; et al. et al. (2010). B
   ·  DOI: [10.1248/bpb.33.1082](https://doi.org/10.1248/bpb.33.1082)
 
 ## Model component
-<dbs-pgx drug="rosuvastatin" model-id="Rosuvastatin_Aoyama2010_reference" status="curated_candidate" stale="false" population="healthy adults" measured-compound="rosuvastatin" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="rosuvastatin" model-id="Rosuvastatin_Aoyama2010_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="rosuvastatin" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (l/h) | `Q27` · CL/F | 264.0 | l/h | 7.333333333333333e-05 | L/h | not captured | review (0.7) | Aoyama_2010:review | — | not captured |
-| V c /F (l) | `Q290` · V1/F | 1170.0 | l | 1.17 | L | not captured | review (0.7) | Aoyama_2010:review | — | not captured |
-| V p /F (l) | `Q82` · V2/F | 3700.0 | l | 3.7 | L | not captured | review (0.7) | Aoyama_2010:review | — | not captured |
-| Q/F (l/h) | `Q69` · Q/F | 148.0 | l/h | 4.111111111111111e-05 | L/h | not captured | review (0.7) | Aoyama_2010:review | — | not captured |
+| CL/F (l/h) | `Q27` · CL/F | —(suppressed) | l/h | — | L/h | not captured | review (0.7) | Aoyama_2010:review | — | not captured |
+| V c /F (l) | `Q290` · V1/F | —(suppressed) | l | — | L | not captured | review (0.7) | Aoyama_2010:review | — | not captured |
+| V p /F (l) | `Q82` · V2/F | —(suppressed) | l | — | L | not captured | review (0.7) | Aoyama_2010:review | — | not captured |
+| Q/F (l/h) | `Q69` · Q/F | —(suppressed) | l/h | — | L/h | not captured | review (0.7) | Aoyama_2010:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -40,7 +44,10 @@ Aoyama T; Omori T; Watabe S; Shioya A; Ueno T; Fukuda N; et al. et al. (2010). B
 ## Departures & gaps
 
 **Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - built from REVIEW reference values (Aoyama_2010) — secondary source
@@ -72,8 +79,8 @@ Aoyama T; Omori T; Watabe S; Shioya A; Ueno T; Fukuda N; et al. et al. (2010). B
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=rosuvastatin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -90,24 +97,36 @@ Aoyama T; Omori T; Watabe S; Shioya A; Ueno T; Fukuda N; et al. et al. (2010). B
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference.svg" alt="Rosuvastatin_Aoyama2010_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
+
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_2C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference_modelica.zip" download>Rosuvastatin_Aoyama2010_reference_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference_matlab.zip" download>Rosuvastatin_Aoyama2010_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference_matlab_simbio.zip" download>Rosuvastatin_Aoyama2010_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference_sbml.zip" download>Rosuvastatin_Aoyama2010_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference_cellml.zip" download>Rosuvastatin_Aoyama2010_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference_modelica.zip" download>Rosuvastatin_Aoyama2010_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference_matlab.zip" download>Rosuvastatin_Aoyama2010_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference_matlab_simbio.zip" download>Rosuvastatin_Aoyama2010_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference_sbml.zip" download>Rosuvastatin_Aoyama2010_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference_cellml.zip" download>Rosuvastatin_Aoyama2010_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
 ## Web simulation
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
+
+<dbs-fmusim paramsurl="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_rosuvastatin/Rosuvastatin_Aoyama2010_reference/Rosuvastatin_Aoyama2010_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Template `PK_2C_enteral` · parameters `Rosuvastatin_Aoyama2010_reference_params.json` · controls `Rosuvastatin_Aoyama2010_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fibrinogen, human&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FibrinogenHuman_Colom2023_patients_with_congenital_or_acquir&quot;,&quot;label&quot;:&quot;Colom_2023_patients with congenital or acquired-chronic or acute-hypofibrinogenaemia&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Colom2023_patients_with_congenital_or_acquir.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;FibrinogenHuman_Khayat2023_pediatric_patients_with_congenita&quot;,&quot;label&quot;:&quot;Khayat_2023_pediatric patients with congenital afibrinogenemia&quot;,&quot;href&quot;:&quot;drugs/drug_fibrinogen_human/FibrinogenHuman_Khayat2023_pediatric_patients_with_congenita.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # fibrinogen, human
 
@@ -25,8 +26,8 @@ In combination with thrombin, it is used indicated as an adjunct to hemostasis f
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Colom_2023](drugs/drug_fibrinogen_human/FibrinogenHuman_Colom2023_patients_with_congenital_or_acquir.md) | Colom H et al., Population pharmacokinetic modelling of…, British journal of clinical… (2023) | [10.1111/bcp.15741](https://doi.org/10.1111/bcp.15741) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Khayat_2023](drugs/drug_fibrinogen_human/FibrinogenHuman_Khayat2023_pediatric_patients_with_congenita.md) | Khayat CD et al., Pharmacokinetics, efficacy and safety o…, Blood coagulation & fibrino… (2023) | [10.1097/MBC.0000000000001182](https://doi.org/10.1097/MBC.0000000000001182) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Colom_2023_patients with congenital or acquired-chronic or acute-hypofibrinogenaemia](drugs/drug_fibrinogen_human/FibrinogenHuman_Colom2023_patients_with_congenital_or_acquir.md) | Colom H et al., Population pharmacokinetic modelling of…, British journal of clinical… (2023) | [10.1111/bcp.15741](https://doi.org/10.1111/bcp.15741) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Khayat_2023_pediatric patients with congenital afibrinogenemia](drugs/drug_fibrinogen_human/FibrinogenHuman_Khayat2023_pediatric_patients_with_congenita.md) | Khayat CD et al., Pharmacokinetics, efficacy and safety o…, Blood coagulation & fibrino… (2023) | [10.1097/MBC.0000000000001182](https://doi.org/10.1097/MBC.0000000000001182) |
 
 ## Coverage
 

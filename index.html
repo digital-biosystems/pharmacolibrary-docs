@@ -92,6 +92,40 @@
       text-decoration: underline; }
     .markdown-section nav.pk-crumbtrail .sep { color: #cbd5e1; }
     .markdown-section nav.pk-crumbtrail .here { color: #334155; font-weight: 600; }
+    /* ── floating record panel ────────────────────────────────────────────────
+       build.py stamps <div class="pk-recnav" data-items="[…]"> on every page of a drug:
+       the drug's popPK records, one link + status badge each, the same list as the drug
+       page's records table. The plugin below renders it as a fixed box top-right, so a
+       reader can hop between a drug's models without returning to the drug page. */
+    .pk-recnav { display: none; }
+    aside.pk-recpanel {
+      position: fixed; top: 64px; right: 18px; z-index: 30;
+      max-width: 300px; max-height: calc(100vh - 90px); overflow: auto;
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 8px;
+      box-shadow: 0 6px 22px rgba(15, 23, 42, .10);
+      font-size: 12px; line-height: 1.35;
+    }
+    aside.pk-recpanel > button.hd {
+      display: flex; align-items: center; gap: 6px; width: 100%;
+      padding: 6px 10px; border: 0; background: #f8fafc; cursor: pointer;
+      font: inherit; font-weight: 600; color: #334155; text-align: left;
+      border-bottom: 1px solid #e2e8f0; border-radius: 8px 8px 0 0;
+    }
+    aside.pk-recpanel > button.hd .n { color: #94a3b8; font-weight: 400; }
+    aside.pk-recpanel > button.hd .tg { margin-left: auto; color: #94a3b8; }
+    aside.pk-recpanel.closed > ul { display: none; }
+    aside.pk-recpanel.closed > button.hd { border-bottom: 0; border-radius: 8px; }
+    aside.pk-recpanel > ul { list-style: none; margin: 0; padding: 4px 0; }
+    aside.pk-recpanel > ul > li { display: flex; align-items: center; gap: 8px;
+      padding: 3px 10px; white-space: nowrap; }
+    aside.pk-recpanel > ul > li.here { background: #eef6ff; }
+    aside.pk-recpanel a { color: #334155; text-decoration: none;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px;
+      overflow: hidden; text-overflow: ellipsis; flex: 1 1 auto; min-width: 0; }
+    aside.pk-recpanel a:hover { color: var(--theme-color, #0074d9); text-decoration: underline; }
+    aside.pk-recpanel li.here a { font-weight: 700; }
+    aside.pk-recpanel .pk-badge { font-size: 9px; padding: 1px 6px; flex: 0 0 auto; }
+    @media (max-width: 1100px) { aside.pk-recpanel { display: none; } }
     /* The search box the official plugin injects at the top of the sidebar. */
     .sidebar .search { margin-bottom: 12px; border-bottom: 1px solid #eaecef; }
     .sidebar .search input { font-size: 14px; padding: 7px 8px; }
@@ -619,6 +653,58 @@
           nav.appendChild(node);
         });
         section.insertBefore(nav, section.firstChild);   // above the <h1>
+      });
+    });
+
+    // Floating record panel: renders the list the BUILDER stamped into .pk-recnav (same
+    // reasoning as the crumbs — the builder knows every record's page and status, the
+    // route knows only this one). Collapsed state is remembered per browser.
+    (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
+      var KEY = 'pk-recpanel-closed';
+      function closed() { try { return localStorage.getItem(KEY) === '1'; } catch (e) { return false; } }
+      hook.doneEach(function () {
+        var old = document.querySelector('aside.pk-recpanel');
+        if (old) old.remove();
+        var section = document.querySelector('.markdown-section');
+        var mark = section && section.querySelector('.pk-recnav');
+        if (!mark) return;
+        var items;
+        try { items = JSON.parse(mark.dataset.items || '[]'); } catch (e) { return; }
+        if (!items.length) return;
+
+        var box = document.createElement('aside');
+        box.className = 'pk-recpanel' + (closed() ? ' closed' : '');
+        box.setAttribute('aria-label', 'popPK records of this drug');
+        var hd = document.createElement('button');
+        hd.className = 'hd';
+        hd.type = 'button';
+        hd.innerHTML = 'popPK records <span class="n">(' + items.length + ')</span><span class="tg"></span>';
+        function paint() { hd.querySelector('.tg').textContent = box.classList.contains('closed') ? '\u25BE' : '\u25B4'; }
+        hd.addEventListener('click', function () {
+          box.classList.toggle('closed');
+          try { localStorage.setItem(KEY, box.classList.contains('closed') ? '1' : '0'); } catch (e) {}
+          paint();
+        });
+        paint();
+        box.appendChild(hd);
+
+        var ul = document.createElement('ul');
+        items.forEach(function (it) {
+          var li = document.createElement('li');
+          if (it.here) li.className = 'here';
+          var a = document.createElement('a');
+          a.href = '#/' + String(it.href || '').replace(/^\/+/, '').replace(/\.md$/, '');
+          a.textContent = it.label;
+          a.title = it.label + ' \u2014 ' + it.status;
+          var b = document.createElement('span');
+          b.className = 'pk-badge ' + (it.css || 'pk-badge--neutral');
+          b.textContent = it.status;
+          li.appendChild(a);
+          li.appendChild(b);
+          ul.appendChild(li);
+        });
+        box.appendChild(ul);
+        document.body.appendChild(box);
       });
     });
 

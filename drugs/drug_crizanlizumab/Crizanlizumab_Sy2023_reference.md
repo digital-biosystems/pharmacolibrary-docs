@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;crizanlizumab&quot;,&quot;href&quot;:&quot;drugs/drug_crizanlizumab/&quot;},{&quot;label&quot;:&quot;Sy_2023 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Crizanlizumab_Sy2023_reference&quot;,&quot;label&quot;:&quot;Sy_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_crizanlizumab/Crizanlizumab_Sy2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # crizanlizumab — `Crizanlizumab_Sy2023_reference`
 

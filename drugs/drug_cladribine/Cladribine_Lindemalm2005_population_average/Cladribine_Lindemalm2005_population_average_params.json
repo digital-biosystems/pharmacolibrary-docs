@@ -1,0 +1,26 @@
+{
+ "model_id": "Cladribine_Lindemalm2005_population_average",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.0916666666666665e-05,
+  "F": 0.353,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0010242857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.00019796993646366032,
+  "k21": 2.9883040935672514e-05,
+  "ka": 0.0003638888888888889,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.0012990765803940524
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

@@ -1,8 +1,9 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;vancomycin&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/&quot;},{&quot;label&quot;:&quot;Yoon_2023 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vancomycin_Goyal2022_final_pk_model&quot;,&quot;label&quot;:&quot;Goyal_2022_final_pk_model&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Goyal2022_final_pk_model.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vancomycin_Goyal2022_final_pk_model&quot;,&quot;label&quot;:&quot;Goyal_2022_final_pk_model&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Goyal2022_final_pk_model.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vancomycin_Goyal2022_population_typical_value&quot;,&quot;label&quot;:&quot;Goyal_2022_population_typical_value&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vancomycin_Goyal2022_population_typical_value&quot;,&quot;label&quot;:&quot;Goyal_2022_population_typical_value&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Goyal2022_population_typical_value.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vancomycin_Yoon2023_reference&quot;,&quot;label&quot;:&quot;Yoon_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Yoon2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vancomycin_Goyal2022_formula&quot;,&quot;label&quot;:&quot;Goyal_2022_formula&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Goyal2022_formula.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vancomycin_Goyal2022_formula&quot;,&quot;label&quot;:&quot;Goyal_2022_formula&quot;,&quot;href&quot;:&quot;drugs/drug_vancomycin/Vancomycin_Goyal2022_formula.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # vancomycin — `Vancomycin_Yoon2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 ### Reviewer guidance
 
@@ -10,15 +11,13 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
+**What is wrong:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
-2. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-3. If the paper never reports it, the record cannot become a model.
-4. Advisory only — the base model still replicates.
-5. Check the record's covariate_definitions in _interpretv2.yaml.
-6. Re-run the engineer for this drug if the covariate curves are wanted.
+2. Advisory only — the base model still replicates.
+3. Check the record's covariate_definitions in _interpretv2.yaml.
+4. Re-run the engineer for this drug if the covariate curves are wanted.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -29,23 +28,21 @@ Yoon S; Guk J; Lee SG; Chae D; Kim JH; Park K et al. (2023). Frontiers in pharma
   ·  DOI: [10.3389/fphar.2023.1252757](https://doi.org/10.3389/fphar.2023.1252757)
 
 ## Model component
-<dbs-pgx drug="vancomycin" model-id="Vancomycin_Yoon2023_reference" status="model_quarantined" stale="false" population="patients with infections" measured-compound="vancomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="vancomycin" model-id="Vancomycin_Yoon2023_reference" status="accepted_with_caveats" stale="false" population="patients with infections" measured-compound="vancomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| θ CL (L/h) | `Q22` · CL | —(suppressed) | L/h | — | [l] / [h] | not captured | llm_confirmed (0.6) | T3:row2:col1 | — | 29.1 (None% RSE) |
-| θ V (L) | `Q61` · V | —(suppressed) | L | — | [l] | not captured | llm (0.6) | T3:row3:col1 | — | not captured |
-| θ Q (L/h) | `Q30` · Q | —(suppressed) | L/h | — | [l] / [h] | not captured | llm (0.6) | T3:row4:col1 | — | not captured |
-| θ V2 (L) | `Q64` · V2 | —(suppressed) | L | — | [l] | not captured | llm_confirmed (0.6) | T3:row5:col1 | — | 101 (None% RSE) |
-| λ | `Q47` · kel | —(suppressed) | Creatinine clearance related parameter | — | [creatinineclearancerelatedparameter] | not captured | exact (1.0) | T3:row9:col1 | — | not captured |
-| θREN | `Q900` · θREN | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | not captured | — | not captured |
-| θFEM | `Q900` · θFEM | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | not captured | — | not captured |
-| θDM | `Q900` · θDM | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| θ CL (L/h) | `Q22` · CL | 4.32 | L/h | 1.2e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | T3:row2:col1 | — | 29.1 (None% RSE) |
+| θ V (L) | `Q61` · V | 38.6 | L | 0.0386 | [l] | not captured | llm (0.6) | T3:row3:col1 | — | not captured |
+| θ Q (L/h) | `Q30` · Q | 3.93 | L/h | 1.0916666666666667e-06 | [l] / [h] | not captured | llm (0.6) | T3:row4:col1 | — | not captured |
+| θ V2 (L) | `Q64` · V2 | 66.8 | L | 0.0668 | [l] | not captured | llm_confirmed (0.6) | T3:row5:col1 | — | 101 (None% RSE) |
+| λ | `Q47` · kel | 0.655 | Creatinine clearance related parameter | not captured | [creatinineclearancerelatedparameter] | not captured | exact (1.0) | T3:row9:col1 | — | not captured |
+| θREN | `Q900` · θREN | -0.237 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| θFEM | `Q900` · θFEM | -0.199 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| θDM | `Q900` · θDM | -0.151 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,6 +50,9 @@ Yoon S; Guk J; Lee SG; Chae D; Kim JH; Park K et al. (2023). Frontiers in pharma
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['k12']
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'kCr (if age ≥30) (yr-1)' — extend the ontology if this is a real PK parameter (source ['T3:row7:col1'])
@@ -96,6 +96,7 @@ Yoon S; Guk J; Lee SG; Chae D; Kim JH; Park K et al. (2023). Frontiers in pharma
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T3_output_variable | not captured | pass | C_central (measured=vancomycin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
@@ -108,30 +109,43 @@ Yoon S; Guk J; Lee SG; Chae D; Kim JH; Park K et al. (2023). Frontiers in pharma
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_vancomycin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yoon_2023` / `Yoon_2023::reference`)
-- model: `../../../knowledgebase/drugs/drug_vancomycin/models/modelica/_needs_review/Vancomycin_Yoon2023_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_vancomycin/models/modelica/_needs_review/Vancomycin_Yoon2023_reference.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_vancomycin/models/modelica/Vancomycin_Yoon2023_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_vancomycin/models/modelica/Vancomycin_Yoon2023_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_vancomycin/models/modelica/Vancomycin_Yoon2023_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference.svg" alt="Vancomycin_Yoon2023_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_2C.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_matlab.zip" download>Vancomycin_Yoon2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_matlab_simbio.zip" download>Vancomycin_Yoon2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_sbml.zip" download>Vancomycin_Yoon2023_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_cellml.zip" download>Vancomycin_Yoon2023_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_modelica.zip" download>Vancomycin_Yoon2023_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_matlab.zip" download>Vancomycin_Yoon2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_matlab_simbio.zip" download>Vancomycin_Yoon2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_sbml.zip" download>Vancomycin_Yoon2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_cellml.zip" download>Vancomycin_Yoon2023_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
 ## Web simulation
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
+
+<dbs-fmusim paramsurl="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_vancomycin/Vancomycin_Yoon2023_reference/Vancomycin_Yoon2023_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Template `PK_2C` · parameters `Vancomycin_Yoon2023_reference_params.json` · controls `Vancomycin_Yoon2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

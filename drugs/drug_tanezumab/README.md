@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;tanezumab&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tanezumab_Jonsson2016_reference&quot;,&quot;label&quot;:&quot;Jonsson_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tanezumab/Tanezumab_Jonsson2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # tanezumab
 
@@ -21,7 +22,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Jonsson_2016](drugs/drug_tanezumab/Tanezumab_Jonsson2016_reference.md) | Jonsson EN et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2016) | [10.1111/bcp.12850](https://doi.org/10.1111/bcp.12850) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Jonsson_2016_reference](drugs/drug_tanezumab/Tanezumab_Jonsson2016_reference.md) | Jonsson EN et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2016) | [10.1111/bcp.12850](https://doi.org/10.1111/bcp.12850) |
 
 ## Coverage
 

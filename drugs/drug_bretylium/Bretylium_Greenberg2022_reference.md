@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;Bretylium&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/&quot;},{&quot;label&quot;:&quot;Greenberg_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bretylium_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/Bretylium_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 # Bretylium — `Bretylium_Greenberg2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,18 +21,16 @@ Greenberg RG; Landersdorfer CB; Rivera-Chaparro N; Harward M; Conrad T; Nakamura
   ·  DOI: [10.1007/s40272-022-00493-3](https://doi.org/10.1007/s40272-022-00493-3)
 
 ## Model component
-<dbs-pgx drug="Bretylium" model-id="Bretylium_Greenberg2022_reference" status="needs_review" stale="false" population="" measured-compound="bretylium" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="Bretylium" model-id="Bretylium_Greenberg2022_reference" status="curated_candidate" stale="false" population="" measured-compound="bretylium" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| average apparent clearance (CL/F) | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Greenberg_2022:review | — | not captured |
-| population estimate for V | `Q61` · V | —(suppressed) | L | — | L | not captured | review (0.7) | Greenberg_2022:review | — | not captured |
-| population mean absorption rate constant | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review (0.7) | Greenberg_2022:review | — | not captured |
+| average apparent clearance (CL/F) | `Q27` · CL/F | 10.53 | L/h | 2.925e-06 | L/h | not captured | review (0.7) | Greenberg_2022:review | — | not captured |
+| population estimate for V | `Q61` · V | 167.0 | L | 0.167 | L | not captured | review (0.7) | Greenberg_2022:review | — | not captured |
+| population mean absorption rate constant | `Q49` · kabs | 0.537 | h−1 | 0.00014916666666666667 | 1/h | not captured | review (0.7) | Greenberg_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -74,7 +72,7 @@ Greenberg RG; Landersdorfer CB; Rivera-Chaparro N; Harward M; Conrad T; Nakamura
 | T3_output_variable | not captured | pass | C_central (measured=bretylium) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;chlortetracycline&quot;,&quot;href&quot;:&quot;drugs/drug_chlortetracycline/&quot;},{&quot;label&quot;:&quot;Reinbold_2010 \u00b7 group fed, ruminating, Holstein steers&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chlortetracycline_Reinbold2010_group_fed_ruminating_holstein&quot;,&quot;label&quot;:&quot;Reinbold_2010_group fed, ruminating, Holstein steers&quot;,&quot;href&quot;:&quot;drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_group_fed_ruminating_holstein.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # chlortetracycline — `Chlortetracycline_Reinbold2010_group_fed_ruminating_holstein`
 

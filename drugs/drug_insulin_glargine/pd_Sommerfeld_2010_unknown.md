@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InsulinGlargine_Tham2017_reference&quot;,&quot;label&quot;:&quot;Tham_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_glargine/InsulinGlargine_Tham2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # thymidine incorporation — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Sommerfeld_2010`

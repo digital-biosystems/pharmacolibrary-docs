@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;acenocoumarol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acenocoumarol_Delavenne2009_reference&quot;,&quot;label&quot;:&quot;Delavenne_2009_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acenocoumarol_Haustein1999_reference&quot;,&quot;label&quot;:&quot;Haustein_1999_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acenocoumarol_Ufer2005_reference&quot;,&quot;label&quot;:&quot;Ufer_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_Ufer2005_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acenocoumarol_MartinSuarez2003_reference&quot;,&quot;label&quot;:&quot;Martin-Suarez_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_MartinSuarez2003_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acenocoumarol_Verstuyft2012_reference&quot;,&quot;label&quot;:&quot;Verstuyft_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_Verstuyft2012_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # acenocoumarol
 
@@ -23,11 +24,11 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Haustein_1999](drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference.md) | Haustein KO, Pharmacokinetic and pharmacodynamic pro…, Seminars in thrombosis and… (1999) | [10.1055/s-2007-996417](https://doi.org/10.1055/s-2007-996417) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ufer_2005](drugs/drug_acenocoumarol/Acenocoumarol_Ufer2005_reference.md) | Ufer M, Comparative pharmacokinetics of vitamin…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544120-00003](https://doi.org/10.2165/00003088-200544120-00003) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Delavenne_2009](drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference.md) | Delavenne X et al., Investigation of PK-PD drug-drug intera…, Fundamental & clinical phar… (2009) | [10.1111/j.1472-8206.2008.00642.x](https://doi.org/10.1111/j.1472-8206.2008.00642.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Martin-Suarez_2003](drugs/drug_acenocoumarol/Acenocoumarol_MartinSuarez2003_reference.md) | Martin-Suarez A et al., Pharmacokinetic study of the digoxin-ac…, Biological & pharmaceutical… (2003) | [10.1248/bpb.26.813](https://doi.org/10.1248/bpb.26.813) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Verstuyft_2012](drugs/drug_acenocoumarol/Acenocoumarol_Verstuyft2012_reference.md) | Verstuyft C et al., A pharmacokinetic-pharmacodynamic model…, Clinical pharmacokinetics (2012) | [10.2165/11595560-000000000-00000](https://doi.org/10.2165/11595560-000000000-00000) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Delavenne_2009_reference](drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference.md) | Delavenne X et al., Investigation of PK-PD drug-drug intera…, Fundamental & clinical phar… (2009) | [10.1111/j.1472-8206.2008.00642.x](https://doi.org/10.1111/j.1472-8206.2008.00642.x) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Haustein_1999_reference](drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference.md) | Haustein KO, Pharmacokinetic and pharmacodynamic pro…, Seminars in thrombosis and… (1999) | [10.1055/s-2007-996417](https://doi.org/10.1055/s-2007-996417) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ufer_2005_reference](drugs/drug_acenocoumarol/Acenocoumarol_Ufer2005_reference.md) | Ufer M, Comparative pharmacokinetics of vitamin…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544120-00003](https://doi.org/10.2165/00003088-200544120-00003) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Martin-Suarez_2003_reference](drugs/drug_acenocoumarol/Acenocoumarol_MartinSuarez2003_reference.md) | Martin-Suarez A et al., Pharmacokinetic study of the digoxin-ac…, Biological & pharmaceutical… (2003) | [10.1248/bpb.26.813](https://doi.org/10.1248/bpb.26.813) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: F, Cl, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Verstuyft_2012_reference](drugs/drug_acenocoumarol/Acenocoumarol_Verstuyft2012_reference.md) | Verstuyft C et al., A pharmacokinetic-pharmacodynamic model…, Clinical pharmacokinetics (2012) | [10.2165/11595560-000000000-00000](https://doi.org/10.2165/11595560-000000000-00000) |
 
 ## Pharmacodynamics (PD)
 
@@ -101,7 +102,7 @@
 
 - **PubMed hits:** 353 matched, 77 returned
 - **screened:** 32  ·  **relevant:** 2
-- **records:** 5  ·  extracted 2  ·  needs_review 3  ·  rejected 0  ·  stale 0
+- **records:** 5  ·  extracted 3  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

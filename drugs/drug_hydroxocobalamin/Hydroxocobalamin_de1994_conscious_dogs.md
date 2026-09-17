@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03B&quot;,&quot;href&quot;:&quot;atc/B03B.md&quot;},{&quot;label&quot;:&quot;hydroxocobalamin&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/&quot;},{&quot;label&quot;:&quot;de_1994 \u00b7 conscious dogs&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxocobalamin_Houeto1996_smoke_inhalation_victims&quot;,&quot;label&quot;:&quot;Houeto_1996_smoke inhalation victims&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_smoke_inhalation_victims.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxocobalamin_de1994_conscious_dogs&quot;,&quot;label&quot;:&quot;de_1994_conscious dogs&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_conscious_dogs.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # hydroxocobalamin — `Hydroxocobalamin_de1994_conscious_dogs`
 

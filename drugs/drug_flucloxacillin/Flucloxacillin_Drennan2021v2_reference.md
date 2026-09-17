@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;flucloxacillin&quot;,&quot;href&quot;:&quot;drugs/drug_flucloxacillin/&quot;},{&quot;label&quot;:&quot;Drennan_2021_2 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flucloxacillin_Drennan2021v2_reference&quot;,&quot;label&quot;:&quot;Drennan_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flucloxacillin/Flucloxacillin_Drennan2021v2_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Flucloxacillin_Jager2020_reference&quot;,&quot;label&quot;:&quot;Jager_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flucloxacillin/Flucloxacillin_Jager2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flucloxacillin_Wallenburg2021_reference&quot;,&quot;label&quot;:&quot;Wallenburg_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flucloxacillin/Flucloxacillin_Wallenburg2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # flucloxacillin — `Flucloxacillin_Drennan2021v2_reference`
 
@@ -6,13 +7,11 @@
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
 
 **Steps:**
 1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
 2. If the paper never reports it, the record cannot become a model.
-3. Read the .deviation.json and confirm each deviation names what changed and why.
-4. Anything undocumented needs the engineer, not a curator.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -109,8 +108,8 @@ Drennan PG; Green JK; Gardiner SJ; Metcalf SCL; Kirkpatrick CMJ; Everts RJ; et a
 |---|---|---|---|---|---|---|
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -135,7 +134,7 @@ Each archive holds the model source, a script that simulates it against the appr
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_flucloxacillin/Flucloxacillin_Drennan2021v2_reference/Flucloxacillin_Drennan2021v2_reference_matlab.zip" download>Flucloxacillin_Drennan2021v2_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_flucloxacillin/Flucloxacillin_Drennan2021v2_reference/Flucloxacillin_Drennan2021v2_reference_matlab_simbio.zip" download>Flucloxacillin_Drennan2021v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_flucloxacillin/Flucloxacillin_Drennan2021v2_reference/Flucloxacillin_Drennan2021v2_reference_sbml.zip" download>Flucloxacillin_Drennan2021v2_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_flucloxacillin/Flucloxacillin_Drennan2021v2_reference/Flucloxacillin_Drennan2021v2_reference_sbml.zip" download>Flucloxacillin_Drennan2021v2_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_flucloxacillin/Flucloxacillin_Drennan2021v2_reference/Flucloxacillin_Drennan2021v2_reference_cellml.zip" download>Flucloxacillin_Drennan2021v2_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 

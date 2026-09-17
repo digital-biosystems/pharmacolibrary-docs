@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;ganaxolone&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ganaxolone_Zolkowska2018_mice&quot;,&quot;label&quot;:&quot;Zolkowska_2018_mice&quot;,&quot;href&quot;:&quot;drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_mice.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # ganaxolone
 
@@ -25,7 +26,7 @@ Ganaxolone, similar to its endogenous counterparts, is a positive allosteric mod
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zolkowska_2018](drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_mice.md) | Zolkowska D et al., Intramuscular allopregnanolone and gana…, Epilepsia (2018) | [10.1111/epi.13999](https://doi.org/10.1111/epi.13999) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zolkowska_2018_mice](drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_mice.md) | Zolkowska D et al., Intramuscular allopregnanolone and gana…, Epilepsia (2018) | [10.1111/epi.13999](https://doi.org/10.1111/epi.13999) |
 
 ## Pharmacodynamics (PD)
 

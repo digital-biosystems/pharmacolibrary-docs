@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;canagliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/&quot;},{&quot;label&quot;:&quot;Yao_2023 \u00b7 estimates&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Canagliflozin_Yao2023_estimates&quot;,&quot;label&quot;:&quot;Yao_2023_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Canagliflozin_Yao2023_estimates&quot;,&quot;label&quot;:&quot;Yao_2023_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Canagliflozin_Yao2023_iiv&quot;,&quot;label&quot;:&quot;Yao_2023_iiv&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/Canagliflozin_Yao2023_iiv.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canagliflozin_Yao2023_iiv&quot;,&quot;label&quot;:&quot;Yao_2023_iiv&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/Canagliflozin_Yao2023_iiv.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canagliflozin_Yao2023_reference&quot;,&quot;label&quot;:&quot;Yao_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # canagliflozin — `Canagliflozin_Yao2023_estimates`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,21 +21,19 @@ Yao X; Zhou J; Song L; Ren Y; Hu P; Liu D et al. (2023). CPT: pharmacometrics & 
   ·  DOI: [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934)
 
 ## Model component
-<dbs-pgx drug="canagliflozin" model-id="Canagliflozin_Yao2023_estimates" status="model_quarantined" stale="false" population="healthy subjects and patients with type 2 diabetes" measured-compound="dapagliflozin, canagliflozin, empagliflozin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="canagliflozin" model-id="Canagliflozin_Yao2023_estimates" status="curated_candidate" stale="false" population="healthy subjects and patients with type 2 diabetes" measured-compound="dapagliflozin, canagliflozin, empagliflozin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | psp412934-tbl-0001:row2:col2, psp412934-tbl-0001:row11:col2, psp412934-tbl-0001:row18:col2 | — | not captured |
-| Vc (L) | `Q63` · V1 | —(suppressed) | L | — | [l] | not captured | exact (1.0) | psp412934-tbl-0001:row3:col2, psp412934-tbl-0001:row12:col2, psp412934-tbl-0001:row19:col2 | — | not captured |
-| CLD | `Q30` · Q | —(suppressed) | not captured | — | not captured | not captured | exact (1.0) | psp412934-tbl-0001:row4:col2, psp412934-tbl-0001:row13:col2, psp412934-tbl-0001:row20:col2 | — | not captured |
-| VT (L) | `Q61` · V | —(suppressed) | L | — | [l] | not captured | llm (0.6) | psp412934-tbl-0001:row5:col2, psp412934-tbl-0001:row14:col2, psp412934-tbl-0001:row21:col2 | — | not captured |
-| K t (h−1) | `Q47` · kel | —(suppressed) | h−1 | — | [1] / [h] | not captured | llm (0.6) | psp412934-tbl-0001:row6:col2, psp412934-tbl-0001:row15:col2, psp412934-tbl-0001:row22:col2 | — | not captured |
-| Fed | `Q40` · Fab | —(suppressed) | not captured | — | not captured | not captured | llm (0.6) | psp412934-tbl-0001:row7:col2 | — | not captured |
+| CL (L/h) | `Q22` · CL | 4.25 | L/h | 1.1805555555555556e-06 | [l] / [h] | not captured | exact (1.0) | psp412934-tbl-0001:row2:col2, psp412934-tbl-0001:row11:col2, psp412934-tbl-0001:row18:col2 | — | not captured |
+| Vc (L) | `Q63` · V1 | 30.6 | L | 0.030600000000000002 | [l] | not captured | exact (1.0) | psp412934-tbl-0001:row3:col2, psp412934-tbl-0001:row12:col2, psp412934-tbl-0001:row19:col2 | — | not captured |
+| CLD | `Q30` · Q | 1.37 | not captured | not captured | not captured | not captured | exact (1.0) | psp412934-tbl-0001:row4:col2, psp412934-tbl-0001:row13:col2, psp412934-tbl-0001:row20:col2 | — | not captured |
+| VT (L) | `Q61` · V | 28.3 | L | 0.028300000000000002 | [l] | not captured | llm (0.6) | psp412934-tbl-0001:row5:col2, psp412934-tbl-0001:row14:col2, psp412934-tbl-0001:row21:col2 | — | not captured |
+| K t (h−1) | `Q47` · kel | 4.13 | h−1 | 0.0011472222222222222 | [1] / [h] | not captured | llm (0.6) | psp412934-tbl-0001:row6:col2, psp412934-tbl-0001:row15:col2, psp412934-tbl-0001:row22:col2 | — | not captured |
+| Fed | `Q40` · Fab | 0.254 | not captured | not captured | not captured | not captured | llm (0.6) | psp412934-tbl-0001:row7:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -43,6 +41,9 @@ Yao X; Zhou J; Song L; Ren Y; Hu P; Liu D et al. (2023). CPT: pharmacometrics & 
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['k12', 'k21']
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dapagliflozin, canagliflozin, empagliflozin
@@ -74,6 +75,7 @@ Yao X; Zhou J; Song L; Ren Y; Hu P; Liu D et al. (2023). CPT: pharmacometrics & 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=dapagliflozin, canagliflozin, empagliflozin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
@@ -86,30 +88,43 @@ Yao X; Zhou J; Song L; Ren Y; Hu P; Liu D et al. (2023). CPT: pharmacometrics & 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_canagliflozin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Yao_2023` / `Yao_2023::estimates`)
-- model: `../../../knowledgebase/drugs/drug_canagliflozin/models/modelica/_needs_review/Canagliflozin_Yao2023_estimates.mo`
-- deviation: `../../../knowledgebase/drugs/drug_canagliflozin/models/modelica/_needs_review/Canagliflozin_Yao2023_estimates.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_canagliflozin/models/modelica/Canagliflozin_Yao2023_estimates.mo`
+- deviation: `../../../knowledgebase/drugs/drug_canagliflozin/models/modelica/Canagliflozin_Yao2023_estimates.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_canagliflozin/models/modelica/Canagliflozin_Yao2023_estimates.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates/Canagliflozin_Yao2023_estimates.svg" alt="Canagliflozin_Yao2023_estimates diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_2C.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates/Canagliflozin_Yao2023_estimates_matlab.zip" download>Canagliflozin_Yao2023_estimates_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates/Canagliflozin_Yao2023_estimates_matlab_simbio.zip" download>Canagliflozin_Yao2023_estimates_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates/Canagliflozin_Yao2023_estimates_sbml.zip" download>Canagliflozin_Yao2023_estimates_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates/Canagliflozin_Yao2023_estimates_cellml.zip" download>Canagliflozin_Yao2023_estimates_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates/Canagliflozin_Yao2023_estimates_modelica.zip" download>Canagliflozin_Yao2023_estimates_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates/Canagliflozin_Yao2023_estimates_matlab.zip" download>Canagliflozin_Yao2023_estimates_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates/Canagliflozin_Yao2023_estimates_matlab_simbio.zip" download>Canagliflozin_Yao2023_estimates_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates/Canagliflozin_Yao2023_estimates_sbml.zip" download>Canagliflozin_Yao2023_estimates_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates/Canagliflozin_Yao2023_estimates_cellml.zip" download>Canagliflozin_Yao2023_estimates_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
 ## Web simulation
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
+
+<dbs-fmusim paramsurl="drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates/Canagliflozin_Yao2023_estimates_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates/Canagliflozin_Yao2023_estimates_sim_controls.json"></dbs-fmusim>
+
+<sub>Template `PK_2C` · parameters `Canagliflozin_Yao2023_estimates_params.json` · controls `Canagliflozin_Yao2023_estimates_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

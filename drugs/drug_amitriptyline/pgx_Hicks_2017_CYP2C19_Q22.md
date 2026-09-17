@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Koh2019_reference&quot;,&quot;label&quot;:&quot;Koh_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_RatajczakEnselme2015_reference&quot;,&quot;label&quot;:&quot;Ratajczak-Enselme_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # CYP2C19 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Hicks_2017`

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;cilazapril&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Deget1991_reference&quot;,&quot;label&quot;:&quot;Deget_1991_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Deget1991_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Meredith1989_reference&quot;,&quot;label&quot;:&quot;Meredith_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Meredith1989_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # cilazapril
 
@@ -23,8 +24,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Deget_1991](drugs/drug_cilazapril/Cilazapril_Deget1991_reference.md) | Deget F et al., Cilazapril. A review of its pharmacodyn…, Drugs (1991) | [10.2165/00003495-199141050-00008](https://doi.org/10.2165/00003495-199141050-00008) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Meredith_1989](drugs/drug_cilazapril/Cilazapril_Meredith1989_reference.md) | Meredith PA et al., The pharmacokinetics and angiotensin co…, British journal of clinical… (1989) | [10.1111/j.1365-2125.1989.tb03490.x](https://doi.org/10.1111/j.1365-2125.1989.tb03490.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Deget_1991_reference](drugs/drug_cilazapril/Cilazapril_Deget1991_reference.md) | Deget F et al., Cilazapril. A review of its pharmacodyn…, Drugs (1991) | [10.2165/00003495-199141050-00008](https://doi.org/10.2165/00003495-199141050-00008) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Meredith_1989_reference](drugs/drug_cilazapril/Cilazapril_Meredith1989_reference.md) | Meredith PA et al., The pharmacokinetics and angiotensin co…, British journal of clinical… (1989) | [10.1111/j.1365-2125.1989.tb03490.x](https://doi.org/10.1111/j.1365-2125.1989.tb03490.x) |
 
 ## Pharmacodynamics (PD)
 

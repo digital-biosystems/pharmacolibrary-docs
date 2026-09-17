@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;alfentanil&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/&quot;},{&quot;label&quot;:&quot;Davis_1986 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alfentanil_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/Alfentanil_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Alfentanil_Vozeh1990_reference&quot;,&quot;label&quot;:&quot;Vozeh_1990_reference&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/Alfentanil_Vozeh1990_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alfentanil_MedinaAymerich2025_reference&quot;,&quot;label&quot;:&quot;Medina-Aymerich_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_alfentanil/Alfentanil_MedinaAymerich2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # alfentanil — `Alfentanil_Davis1986_reference`
 
@@ -10,7 +11,7 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the simulated model does not reproduce a value the paper reports. Evidence: T1_t_half_beta — expected 2.4833333333333334 — got 920.5166295205536 — ratio 370.6778; T1_t_half_terminal — expected 0.035 — got 920.5166295205536 — ratio 26300.4751; T1_t_half_beta — expected 0.7833333333333333 — got 920.5166295205536 — ratio 1175.1276; T1_t_half_beta — expected 0.9083333333333333 — got 920.5166295205536 — ratio 1013.4128.
+**What is wrong:** the simulated model does not reproduce a value the paper reports; the engineer's deviations are not documented and quantified. Evidence: T1_t_half_beta — expected 2.4833333333333334 — got 969.8613172729558 — ratio 390.5482; T1_t_half_terminal — expected 0.035 — got 969.8613172729558 — ratio 27710.3234; T1_t_half_beta — expected 0.7833333333333333 — got 969.8613172729558 — ratio 1238.1208; T1_t_half_beta — expected 0.9083333333333333 — got 969.8613172729558 — ratio 1067.7372.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
@@ -18,6 +19,7 @@
 3. Compare with the transcribed value in _transcribev2.yaml for this stem.
 4. If the transcription is right, the extracted parameters are suspect — check CL and volume in _interpretv2.yaml against the paper.
 5. If the transcription is wrong, fix the extraction; the model rebuild follows.
+6. Read the .deviation.json and confirm each deviation names what changed and why.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -49,8 +51,10 @@ Davis PJ; Cook DR et al. (1986). Clinical pharmacokinetics 11
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['k12', 'k21']
+- `defaulted_parameters`: ['ka', 'Tlag', 'k12', 'k21']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - dropped value-less row: 'apparent volume of distribution'
@@ -84,27 +88,27 @@ Davis PJ; Cook DR et al. (1986). Clinical pharmacokinetics 11
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=sufentanil) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 | T1_t_half_alpha | reference | skipped | 2.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 2.1 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 2.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | fail | 2.4833333333333334 | 920.5166295205536 | 370.6778 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | skipped | not captured | 920.5166295205536 | not captured | non-numeric value |
-| T1_t_half_beta | reference | fail | 0.7833333333333333 | 920.5166295205536 | 1175.1276 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 0.9083333333333333 | 920.5166295205536 | 1013.4128 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 3.65 | 920.5166295205536 | 252.1963 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 1.6166666666666667 | 920.5166295205536 | 569.3917 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 0.7283333333333334 | 920.5166295205536 | 1263.8672 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 4.6 | 920.5166295205536 | 200.1123 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 0.7866666666666667 | 920.5166295205536 | 1170.1483 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 5.6 | 920.5166295205536 | 164.378 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 2.1 | 920.5166295205536 | 438.3413 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 8.4 | 920.5166295205536 | 109.5853 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 2.7 | 920.5166295205536 | 340.9321 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 23.0 | 920.5166295205536 | 40.0225 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 0.9083333333333333 | 920.5166295205536 | 1013.4128 | minutes→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.035 | 920.5166295205536 | 26300.4751 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.4833333333333334 | 969.8613172729558 | 390.5482 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | skipped | not captured | 969.8613172729558 | not captured | non-numeric value |
+| T1_t_half_beta | reference | fail | 0.7833333333333333 | 969.8613172729558 | 1238.1208 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.9083333333333333 | 969.8613172729558 | 1067.7372 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 3.65 | 969.8613172729558 | 265.7154 | min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 1.6166666666666667 | 969.8613172729558 | 599.9142 | min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.7283333333333334 | 969.8613172729558 | 1331.6174 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 4.6 | 969.8613172729558 | 210.8394 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.7866666666666667 | 969.8613172729558 | 1232.8746 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 5.6 | 969.8613172729558 | 173.1895 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.1 | 969.8613172729558 | 461.8387 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 8.4 | 969.8613172729558 | 115.4597 | hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.7 | 969.8613172729558 | 359.2079 | hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 23.0 | 969.8613172729558 | 42.1679 | hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.9083333333333333 | 969.8613172729558 | 1067.7372 | minutes→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.035 | 969.8613172729558 | 27710.3234 | minutes→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -131,15 +135,15 @@ The structure OpenModelica draws for this model, with **this record's parameter 
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
-**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_2C.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_2C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_modelica.zip" download>Alfentanil_Davis1986_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_fmi.zip" download>Alfentanil_Davis1986_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_matlab.zip" download>Alfentanil_Davis1986_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_matlab_simbio.zip" download>Alfentanil_Davis1986_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_sbml.zip" download>Alfentanil_Davis1986_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_cellml.zip" download>Alfentanil_Davis1986_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_modelica.zip" download>Alfentanil_Davis1986_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_fmi.zip" download>Alfentanil_Davis1986_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_matlab.zip" download>Alfentanil_Davis1986_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_matlab_simbio.zip" download>Alfentanil_Davis1986_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_sbml.zip" download>Alfentanil_Davis1986_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_cellml.zip" download>Alfentanil_Davis1986_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -148,9 +152,9 @@ Each archive holds the model source, a script that simulates it against the appr
 
 Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
 
-<dbs-fmusim paramsurl="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>Template `PK_2C` · parameters `Alfentanil_Davis1986_reference_params.json` · controls `Alfentanil_Davis1986_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Template `PK_2C_enteral` · parameters `Alfentanil_Davis1986_reference_params.json` · controls `Alfentanil_Davis1986_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

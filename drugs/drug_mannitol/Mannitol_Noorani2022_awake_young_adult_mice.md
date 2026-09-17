@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;mannitol&quot;,&quot;href&quot;:&quot;drugs/drug_mannitol/&quot;},{&quot;label&quot;:&quot;Noorani_2022 \u00b7 awake young adult mice&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mannitol_Noorani2022_awake_young_adult_mice&quot;,&quot;label&quot;:&quot;Noorani_2022_awake young adult mice&quot;,&quot;href&quot;:&quot;drugs/drug_mannitol/Mannitol_Noorani2022_awake_young_adult_mice.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # mannitol — `Mannitol_Noorani2022_awake_young_adult_mice`
 

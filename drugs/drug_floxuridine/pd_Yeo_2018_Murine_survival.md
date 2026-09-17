@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a&quot;,&quot;label&quot;:&quot;Port_1999_rats with Morris hepatoma M3924A&quot;,&quot;href&quot;:&quot;drugs/drug_floxuridine/Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Yeo_2018`

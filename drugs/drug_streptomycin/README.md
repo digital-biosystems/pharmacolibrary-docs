@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;streptomycin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Streptomycin_Du2013_rats&quot;,&quot;label&quot;:&quot;Du_2013_rats&quot;,&quot;href&quot;:&quot;drugs/drug_streptomycin/Streptomycin_Du2013_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # streptomycin
 
@@ -24,7 +25,7 @@ _Enterococcus faecalis_ in urinary tract infections, _Streptococcus viridans_, _
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Du_2013](drugs/drug_streptomycin/Streptomycin_Du2013_rats.md) | Du B et al., Chemiluminescence determination of stre…, Spectrochimica acta. Part A… (2013) | [10.1016/j.saa.2013.07.007](https://doi.org/10.1016/j.saa.2013.07.007) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Du_2013_rats](drugs/drug_streptomycin/Streptomycin_Du2013_rats.md) | Du B et al., Chemiluminescence determination of stre…, Spectrochimica acta. Part A… (2013) | [10.1016/j.saa.2013.07.007](https://doi.org/10.1016/j.saa.2013.07.007) |
 
 ## Pharmacodynamics (PD)
 

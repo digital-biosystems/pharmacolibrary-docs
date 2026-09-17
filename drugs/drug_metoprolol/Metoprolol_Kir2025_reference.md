@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;metoprolol&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/&quot;},{&quot;label&quot;:&quot;Kir_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metoprolol_Kir2025_reference&quot;,&quot;label&quot;:&quot;Kir_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/Metoprolol_Kir2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Metoprolol_Taguchi2004_reference&quot;,&quot;label&quot;:&quot;Taguchi_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoprolol/Metoprolol_Taguchi2004_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # metoprolol — `Metoprolol_Kir2025_reference`
 
@@ -83,7 +84,7 @@ Kir F; Sahin S; Jusko WJ et al. (2025). European journal of drug metabolism and 
 | T3_output_variable | not captured | pass | C_central (measured=atenolol and metoprolol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 | T1_cmax | reference | fail | 0.025 | 0.00028469390330175033 | 0.0114 | µg/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0228 | 0.00028469390330175033 | 0.0125 | µg/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | fail | 0.0143 | 0.00028469390330175033 | 0.0199 | µg/mL→SI vs simulated kg/m3 |
@@ -120,7 +121,7 @@ Each archive holds the model source, a script that simulates it against the appr
 **FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_modelica.zip" download>Metoprolol_Kir2025_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_modelica.zip" download>Metoprolol_Kir2025_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_fmi.zip" download>Metoprolol_Kir2025_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_matlab.zip" download>Metoprolol_Kir2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_matlab_simbio.zip" download>Metoprolol_Kir2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

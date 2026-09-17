@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacarbazine_Buesa1991_reference&quot;,&quot;label&quot;:&quot;Buesa_1991_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # CYP1A2 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Lewis_2016`

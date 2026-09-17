@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;ergotamine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergotamine_TfeltHansen1985_subjects_with_migraine&quot;,&quot;label&quot;:&quot;Tfelt-Hansen_1985_subjects with migraine&quot;,&quot;href&quot;:&quot;drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_subjects_with_migraine.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # ergotamine
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Tfelt-Hansen_1985](drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_subjects_with_migraine.md) | Tfelt-Hansen P et al., Intramuscular ergotamine: plasma levels…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.7](https://doi.org/10.1038/clpt.1985.7) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Tfelt-Hansen_1985_subjects with migraine](drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_subjects_with_migraine.md) | Tfelt-Hansen P et al., Intramuscular ergotamine: plasma levels…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.7](https://doi.org/10.1038/clpt.1985.7) |
 
 ## Pharmacodynamics (PD)
 

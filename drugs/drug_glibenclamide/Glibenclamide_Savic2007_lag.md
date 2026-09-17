@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;glibenclamide&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/&quot;},{&quot;label&quot;:&quot;Savic_2007 \u00b7 lag&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glibenclamide_Rambiritch2016v2_reference&quot;,&quot;label&quot;:&quot;Rambiritch_2016_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glibenclamide_Savic2007_lag&quot;,&quot;label&quot;:&quot;Savic_2007_lag&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/Glibenclamide_Savic2007_lag.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Glibenclamide_Savic2007_lag&quot;,&quot;label&quot;:&quot;Savic_2007_lag&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/Glibenclamide_Savic2007_lag.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Glibenclamide_Savic2007_transit&quot;,&quot;label&quot;:&quot;Savic_2007_transit&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/Glibenclamide_Savic2007_transit.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glibenclamide_Savic2007_transit&quot;,&quot;label&quot;:&quot;Savic_2007_transit&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/Glibenclamide_Savic2007_transit.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # glibenclamide — `Glibenclamide_Savic2007_lag`
 
@@ -10,7 +11,7 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 3 covered; T6_deviations — got defaulted_parameters: structural deviation not quantified.
+**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 4 covered; T6_deviations — got invented_absorption: not acceptable.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
@@ -104,9 +105,9 @@ Savic RM; Jonker DM; Kerbusch T; Karlsson MO et al. (2007). Journal of pharmacok
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['kcomp', 'kabs'] |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['kcomp'] |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -131,8 +132,8 @@ Each archive holds the model source, a script that simulates it against the appr
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_glibenclamide/Glibenclamide_Savic2007_lag/Glibenclamide_Savic2007_lag_matlab.zip" download>Glibenclamide_Savic2007_lag_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_glibenclamide/Glibenclamide_Savic2007_lag/Glibenclamide_Savic2007_lag_matlab_simbio.zip" download>Glibenclamide_Savic2007_lag_matlab_simbio.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_glibenclamide/Glibenclamide_Savic2007_lag/Glibenclamide_Savic2007_lag_sbml.zip" download>Glibenclamide_Savic2007_lag_sbml.zip</a> <span class="pk-size">(2.3 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_glibenclamide/Glibenclamide_Savic2007_lag/Glibenclamide_Savic2007_lag_cellml.zip" download>Glibenclamide_Savic2007_lag_cellml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_glibenclamide/Glibenclamide_Savic2007_lag/Glibenclamide_Savic2007_lag_sbml.zip" download>Glibenclamide_Savic2007_lag_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_glibenclamide/Glibenclamide_Savic2007_lag/Glibenclamide_Savic2007_lag_cellml.zip" download>Glibenclamide_Savic2007_lag_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

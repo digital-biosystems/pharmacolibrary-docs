@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;epoprostenol&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/&quot;},{&quot;label&quot;:&quot;Vucicevic_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epoprostenol_Keizer2010_reference&quot;,&quot;label&quot;:&quot;Keizer_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Vizza2017_reference&quot;,&quot;label&quot;:&quot;Vizza_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Vucicevic2025_reference&quot;,&quot;label&quot;:&quot;Vucicevic_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Epoprostenol_Nicolas2012_reference&quot;,&quot;label&quot;:&quot;Nicolas_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # epoprostenol — `Epoprostenol_Vucicevic2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,18 +21,16 @@ Vucicevic K; Michalickova D; Obradovic B; Ranin J; Jevtovic D; Lukic R; et al. e
   ·  DOI: [10.7759/cureus.88533](https://doi.org/10.7759/cureus.88533)
 
 ## Model component
-<dbs-pgx drug="epoprostenol" model-id="Epoprostenol_Vucicevic2025_reference" status="needs_review" stale="false" population="" measured-compound="epoprostenol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="epoprostenol" model-id="Epoprostenol_Vucicevic2025_reference" status="curated_candidate" stale="false" population="" measured-compound="epoprostenol" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Vucicevic_2025:review | — | not captured |
-| V/F | `Q76` · V/F | —(suppressed) | L | — | L | not captured | review (0.7) | Vucicevic_2025:review | — | not captured |
-| absorption rate constant (kA) | `Q49` · kabs | —(suppressed) | h-1 | — | 1/h | not captured | review (0.7) | Vucicevic_2025:review | — | not captured |
+| CL/F | `Q27` · CL/F | 13.9 | L/h | 3.861111111111112e-06 | L/h | not captured | review (0.7) | Vucicevic_2025:review | — | not captured |
+| V/F | `Q76` · V/F | 237.0 | L | 0.23700000000000002 | L | not captured | review (0.7) | Vucicevic_2025:review | — | not captured |
+| absorption rate constant (kA) | `Q49` · kabs | 0.3 | h-1 | 8.333333333333333e-05 | 1/h | not captured | review (0.7) | Vucicevic_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -74,7 +72,7 @@ Vucicevic K; Michalickova D; Obradovic B; Ranin J; Jevtovic D; Lukic R; et al. e
 | T3_output_variable | not captured | pass | C_central (measured=epoprostenol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -104,7 +102,7 @@ Each archive holds the model source, a script that simulates it against the appr
 **FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference/Epoprostenol_Vucicevic2025_reference_modelica.zip" download>Epoprostenol_Vucicevic2025_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference/Epoprostenol_Vucicevic2025_reference_modelica.zip" download>Epoprostenol_Vucicevic2025_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference/Epoprostenol_Vucicevic2025_reference_fmi.zip" download>Epoprostenol_Vucicevic2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference/Epoprostenol_Vucicevic2025_reference_matlab.zip" download>Epoprostenol_Vucicevic2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference/Epoprostenol_Vucicevic2025_reference_matlab_simbio.zip" download>Epoprostenol_Vucicevic2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11H&quot;,&quot;href&quot;:&quot;atc/A11H.md&quot;},{&quot;label&quot;:&quot;biotin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Biotin_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_biotin/Biotin_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # biotin
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Wang_2023](drugs/drug_biotin/Biotin_Wang2023_reference.md) | Wang Y et al., A picogram BA-ELISA quantification assa…, PLoS neglected tropical dis… (2023) | [10.1371/journal.pntd.0011568](https://doi.org/10.1371/journal.pntd.0011568) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Wang_2023_reference](drugs/drug_biotin/Biotin_Wang2023_reference.md) | Wang Y et al., A picogram BA-ELISA quantification assa…, PLoS neglected tropical dis… (2023) | [10.1371/journal.pntd.0011568](https://doi.org/10.1371/journal.pntd.0011568) |
 
 ## Pharmacodynamics (PD)
 

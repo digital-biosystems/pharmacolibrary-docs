@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;pirenzepine&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/&quot;},{&quot;label&quot;:&quot;Vergin_1989 \u00b7 healthy adults&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pirenzepine_Vergin1986_healthy_volunteers&quot;,&quot;label&quot;:&quot;Vergin_1986_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/Pirenzepine_Vergin1986_healthy_volunteers.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pirenzepine_Vergin1989_healthy_adults&quot;,&quot;label&quot;:&quot;Vergin_1989_healthy adults&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/Pirenzepine_Vergin1989_healthy_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # pirenzepine — `Pirenzepine_Vergin1989_healthy_adults`
 

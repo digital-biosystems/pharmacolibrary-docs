@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vindesine&quot;,&quot;href&quot;:&quot;drugs/drug_vindesine/&quot;},{&quot;label&quot;:&quot;Owellen_1977 \u00b7 humans&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vindesine_Nelson1979_patients_with_advanced_cancer&quot;,&quot;label&quot;:&quot;Nelson_1979_patients with advanced cancer&quot;,&quot;href&quot;:&quot;drugs/drug_vindesine/Vindesine_Nelson1979_patients_with_advanced_cancer.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vindesine_Owellen1977_humans&quot;,&quot;label&quot;:&quot;Owellen_1977_humans&quot;,&quot;href&quot;:&quot;drugs/drug_vindesine/Vindesine_Owellen1977_humans.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # vindesine — `Vindesine_Owellen1977_humans`
 

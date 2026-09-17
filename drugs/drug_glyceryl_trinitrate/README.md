@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;glyceryl trinitrate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;GlycerylTrinitrate_ElNabarawy2019_reference&quot;,&quot;label&quot;:&quot;El-Nabarawy_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_ElNabarawy2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycerylTrinitrate_Kielbasa2019_reference&quot;,&quot;label&quot;:&quot;Kielbasa_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;GlycerylTrinitrate_Lee1990_reference&quot;,&quot;label&quot;:&quot;Lee_1990_reference&quot;,&quot;href&quot;:&quot;drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Lee1990_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # glyceryl trinitrate
 
@@ -17,9 +18,9 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [El-Nabarawy_2019](drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_ElNabarawy2019_reference.md) | El-Nabarawy NA et al., Assessment Of Spanlastic Vesicles Of Zo…, Drug design, development an… (2019) | [10.2147/DDDT.S220473](https://doi.org/10.2147/DDDT.S220473) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Kielbasa_2019](drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference.md) | Kielbasa W et al., A new era for migraine: Pharmacokinetic…, Cephalalgia : an internatio… (2019) | [10.1177/0333102419840780](https://doi.org/10.1177/0333102419840780) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Lee_1990](drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Lee1990_reference.md) | Lee FW et al., Pharmacokinetics and pharmacodynamics o…, The Journal of pharmacology… (1990) | — |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [El-Nabarawy_2019_reference](drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_ElNabarawy2019_reference.md) | El-Nabarawy NA et al., Assessment Of Spanlastic Vesicles Of Zo…, Drug design, development an… (2019) | [10.2147/DDDT.S220473](https://doi.org/10.2147/DDDT.S220473) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Kielbasa_2019_reference](drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Kielbasa2019_reference.md) | Kielbasa W et al., A new era for migraine: Pharmacokinetic…, Cephalalgia : an internatio… (2019) | [10.1177/0333102419840780](https://doi.org/10.1177/0333102419840780) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Lee_1990_reference](drugs/drug_glyceryl_trinitrate/GlycerylTrinitrate_Lee1990_reference.md) | Lee FW et al., Pharmacokinetics and pharmacodynamics o…, The Journal of pharmacology… (1990) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -47,7 +48,7 @@
 
 - **PubMed hits:** 241 matched, 118 returned
 - **screened:** 7  ·  **relevant:** 7
-- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

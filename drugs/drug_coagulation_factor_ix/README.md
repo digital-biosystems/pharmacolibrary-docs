@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;coagulation factor IX&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CoagulationFactorIx_Preijers2022_reference&quot;,&quot;label&quot;:&quot;Preijers_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Preijers2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # coagulation factor IX
 
@@ -25,7 +26,7 @@ Along with other blood coagulation factors, it is used to reverse acquired coagu
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Preijers_2022](drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Preijers2022_reference.md) | Preijers T et al., In silico evaluation of limited samplin…, European journal of clinica… (2022) | [10.1007/s00228-021-03173-2](https://doi.org/10.1007/s00228-021-03173-2) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Preijers_2022_reference](drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Preijers2022_reference.md) | Preijers T et al., In silico evaluation of limited samplin…, European journal of clinica… (2022) | [10.1007/s00228-021-03173-2](https://doi.org/10.1007/s00228-021-03173-2) |
 
 ## Pharmacodynamics (PD)
 

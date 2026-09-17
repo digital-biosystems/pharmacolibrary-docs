@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;temozolomide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Temozolomide_Bsker2022_reference&quot;,&quot;label&quot;:&quot;B\u00fcsker_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_temozolomide/Temozolomide_Bsker2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # temozolomide
 
@@ -25,7 +26,7 @@ Temozolomide was granted FDA approval on August 11, 1999, as an oral capsule and
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Büsker_2022](drugs/drug_temozolomide/Temozolomide_Bsker2022_reference.md) | Büsker S et al., Pharmacokinetics of metronomic temozolo…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04424-4](https://doi.org/10.1007/s00280-022-04424-4) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Büsker_2022_reference](drugs/drug_temozolomide/Temozolomide_Bsker2022_reference.md) | Büsker S et al., Pharmacokinetics of metronomic temozolo…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04424-4](https://doi.org/10.1007/s00280-022-04424-4) |
 
 ## Pharmacodynamics (PD)
 

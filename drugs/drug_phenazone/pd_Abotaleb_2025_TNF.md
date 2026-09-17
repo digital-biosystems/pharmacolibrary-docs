@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenazone_Doyle1981_non_human_primates_baboon_cynomolgus_mon&quot;,&quot;label&quot;:&quot;Doyle_1981_non-human primates (baboon, cynomolgus monkey, rhesus monkey)&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/Phenazone_Doyle1981_non_human_primates_baboon_cynomolgus_mon.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Phenazone_Eichelbaum1982_healthy_male_volunteers&quot;,&quot;label&quot;:&quot;Eichelbaum_1982_healthy male volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/Phenazone_Eichelbaum1982_healthy_male_volunteers.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 # TNF release — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Abotaleb_2025`

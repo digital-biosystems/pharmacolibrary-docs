@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D10A&quot;,&quot;href&quot;:&quot;atc/D10A.md&quot;},{&quot;label&quot;:&quot;dapsone&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/&quot;},{&quot;label&quot;:&quot;Simpson_2006_2 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapsone_Gatti1996_reference&quot;,&quot;label&quot;:&quot;Gatti_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Gatti1996_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Kotila2023_reference&quot;,&quot;label&quot;:&quot;Kotila_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Kotila2023_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Simpson2006v2_reference&quot;,&quot;label&quot;:&quot;Simpson_2006_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Simpson2006v2_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dapsone_Falloon1994_reference&quot;,&quot;label&quot;:&quot;Falloon_1994_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Falloon1994_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # dapsone — `Dapsone_Simpson2006v2_reference`
 
@@ -6,7 +7,7 @@
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T3_param_coverage — expected 6 scholar param(s) emitted or defaulted — got 3 covered; T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 6 scholar param(s) emitted or defaulted — got 3 covered
 
 **Steps:**
 1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
@@ -14,7 +15,6 @@
 3. Open the emitted .mo and compare its base class and parameters with the record.
 4. Check the .deviation.json beside it for what the engineer defaulted or assumed.
 5. A wrong base class or a defaulted core parameter means rebuilding, not curating.
-6. Read the .deviation.json and confirm each deviation names what changed and why.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -80,7 +80,7 @@ Simpson JA; Hughes D; Manyando C; Bojang K; Aarons L; Winstanley P; et al. et al
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['kabs', 'Q/F', 'V2/F'] |
 | T3_topology_template | not captured | pass | parent_metabolite → PK_Parent_Metabolite* | PK_Parent_Metabolite | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 | T1_t_half_beta | reference | skipped | 26.67 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
@@ -107,7 +107,7 @@ Each archive holds the model source, a script that simulates it against the appr
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dapsone/Dapsone_Simpson2006v2_reference/Dapsone_Simpson2006v2_reference_matlab.zip" download>Dapsone_Simpson2006v2_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dapsone/Dapsone_Simpson2006v2_reference/Dapsone_Simpson2006v2_reference_matlab_simbio.zip" download>Dapsone_Simpson2006v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dapsone/Dapsone_Simpson2006v2_reference/Dapsone_Simpson2006v2_reference_sbml.zip" download>Dapsone_Simpson2006v2_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dapsone/Dapsone_Simpson2006v2_reference/Dapsone_Simpson2006v2_reference_cellml.zip" download>Dapsone_Simpson2006v2_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dapsone/Dapsone_Simpson2006v2_reference/Dapsone_Simpson2006v2_reference_cellml.zip" download>Dapsone_Simpson2006v2_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

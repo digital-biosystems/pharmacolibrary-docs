@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;bupropion&quot;,&quot;href&quot;:&quot;drugs/drug_bupropion/&quot;},{&quot;label&quot;:&quot;Butz_1981 \u00b7 beagle dogs&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bupropion_Butz1981_beagle_dogs&quot;,&quot;label&quot;:&quot;Butz_1981_beagle dogs&quot;,&quot;href&quot;:&quot;drugs/drug_bupropion/Bupropion_Butz1981_beagle_dogs.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # bupropion — `Bupropion_Butz1981_beagle_dogs`
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;glimepiride&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glimepiride_Yoo2020v2_reference&quot;,&quot;label&quot;:&quot;Yoo_2020_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_glimepiride/Glimepiride_Yoo2020v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # glimepiride
 
@@ -27,7 +28,7 @@ It may also be indicated for use in combination with metformin or insulin to low
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Yoo_2020_2](drugs/drug_glimepiride/Glimepiride_Yoo2020v2_reference.md) | Yoo H et al., Pharmacokinetic/Pharmacodynamic Interac…, Drug design, development an… (2020) | [10.2147/DDDT.S275343](https://doi.org/10.2147/DDDT.S275343) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yoo_2020_2_reference](drugs/drug_glimepiride/Glimepiride_Yoo2020v2_reference.md) | Yoo H et al., Pharmacokinetic/Pharmacodynamic Interac…, Drug design, development an… (2020) | [10.2147/DDDT.S275343](https://doi.org/10.2147/DDDT.S275343) |
 
 ## Pharmacodynamics (PD)
 
@@ -43,7 +44,7 @@ It may also be indicated for use in combination with metformin or insulin to low
 
 - **PubMed hits:** 18 matched, 18 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

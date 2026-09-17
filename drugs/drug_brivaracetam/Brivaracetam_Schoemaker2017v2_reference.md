@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;brivaracetam&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/&quot;},{&quot;label&quot;:&quot;Schoemaker_2017_2 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brivaracetam_Schoemaker2017v2_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2017_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Schoemaker2017v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # brivaracetam — `Brivaracetam_Schoemaker2017v2_reference`
 

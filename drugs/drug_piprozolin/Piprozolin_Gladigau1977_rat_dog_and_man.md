@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05A&quot;,&quot;href&quot;:&quot;atc/A05A.md&quot;},{&quot;label&quot;:&quot;piprozolin&quot;,&quot;href&quot;:&quot;drugs/drug_piprozolin/&quot;},{&quot;label&quot;:&quot;Gladigau_1977 \u00b7 rat, dog and man&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piprozolin_Gladigau1977_rat_dog_and_man&quot;,&quot;label&quot;:&quot;Gladigau_1977_rat, dog and man&quot;,&quot;href&quot;:&quot;drugs/drug_piprozolin/Piprozolin_Gladigau1977_rat_dog_and_man.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # piprozolin — `Piprozolin_Gladigau1977_rat_dog_and_man`
 

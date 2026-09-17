@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07F&quot;,&quot;href&quot;:&quot;atc/A07F.md&quot;},{&quot;label&quot;:&quot;escherichia coli&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;EscherichiaColi_Sethuramalingam2026_reference&quot;,&quot;label&quot;:&quot;Sethuramalingam_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_escherichia_coli/EscherichiaColi_Sethuramalingam2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # escherichia coli
 
@@ -17,7 +18,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Sethuramalingam_2026](drugs/drug_escherichia_coli/EscherichiaColi_Sethuramalingam2026_reference.md) | Sethuramalingam S et al., Comparative assessment of asparaginase…, BMC cancer (2026) | [10.1186/s12885-026-16362-y](https://doi.org/10.1186/s12885-026-16362-y) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Sethuramalingam_2026_reference](drugs/drug_escherichia_coli/EscherichiaColi_Sethuramalingam2026_reference.md) | Sethuramalingam S et al., Comparative assessment of asparaginase…, BMC cancer (2026) | [10.1186/s12885-026-16362-y](https://doi.org/10.1186/s12885-026-16362-y) |
 
 ## Pharmacodynamics (PD)
 

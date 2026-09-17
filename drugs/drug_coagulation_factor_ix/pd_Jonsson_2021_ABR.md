@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CoagulationFactorIx_Preijers2022_reference&quot;,&quot;label&quot;:&quot;Preijers_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Preijers2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # bleeding count — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Jonsson_2021`

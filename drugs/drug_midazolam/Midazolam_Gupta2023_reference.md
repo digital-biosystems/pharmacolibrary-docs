@@ -1,17 +1,19 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;midazolam&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/&quot;},{&quot;label&quot;:&quot;Gupta_2023 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midazolam_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Bertin2026_reference&quot;,&quot;label&quot;:&quot;Bertin_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Bertin2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Burtin1994_mean_estimate_se_index_data_set&quot;,&quot;label&quot;:&quot;Burtin_1994_mean_estimate_se_index_data_set&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Burtin1994_mean_estimate_se_index_data_set&quot;,&quot;label&quot;:&quot;Burtin_1994_mean_estimate_se_index_data_set&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Greenblatt1989_reference&quot;,&quot;label&quot;:&quot;Greenblatt_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Greenblatt1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Hall1988_reference&quot;,&quot;label&quot;:&quot;Hall_1988_reference&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Hall1988_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_McCann2025_reference&quot;,&quot;label&quot;:&quot;McCann_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_McCann2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Gupta2023_reference&quot;,&quot;label&quot;:&quot;Gupta_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Gupta2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Midazolam_Maitre1991_reference&quot;,&quot;label&quot;:&quot;Maitre_1991_reference&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Maitre1991_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Persson1987_reference&quot;,&quot;label&quot;:&quot;Persson_1987_reference&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Persson1987_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Aarons1991_individual_fitb_x&quot;,&quot;label&quot;:&quot;Aarons_1991_individual_fitb_x&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Aarons1991_individual_fitb_x.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Aarons1991_individual_fitb_x&quot;,&quot;label&quot;:&quot;Aarons_1991_individual_fitb_x&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Aarons1991_individual_fitb_x.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Aarons1991_population_fita_estimate&quot;,&quot;label&quot;:&quot;Aarons_1991_population_fita_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Aarons1991_population_fita_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Aarons1991_population_fita_estimate&quot;,&quot;label&quot;:&quot;Aarons_1991_population_fita_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Aarons1991_population_fita_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Aarons1991_population_fita_variabilityc&quot;,&quot;label&quot;:&quot;Aarons_1991_population_fita_variabilityc&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Aarons1991_population_fita_variabilityc.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Aarons1991_population_fita_variabilityc&quot;,&quot;label&quot;:&quot;Aarons_1991_population_fita_variabilityc&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Aarons1991_population_fita_variabilityc.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Brown1993_i_v_bolus&quot;,&quot;label&quot;:&quot;Brown_1993_i_v_bolus&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Brown1993_i_v_bolus.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Brown1993_i_v_bolus&quot;,&quot;label&quot;:&quot;Brown_1993_i_v_bolus&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Brown1993_i_v_bolus.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Brown1993_i_v_infusion&quot;,&quot;label&quot;:&quot;Brown_1993_i_v_infusion&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Brown1993_i_v_infusion.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Brown1993_i_v_infusion&quot;,&quot;label&quot;:&quot;Brown_1993_i_v_infusion&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Brown1993_i_v_infusion.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Burtin1994_mean_estimate_se_whole_data_set&quot;,&quot;label&quot;:&quot;Burtin_1994_mean_estimate_se_whole_data_set&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_whole_data_set.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_Burtin1994_mean_estimate_se_whole_data_set&quot;,&quot;label&quot;:&quot;Burtin_1994_mean_estimate_se_whole_data_set&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_whole_data_set.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midazolam_FloresPrez2023_reference&quot;,&quot;label&quot;:&quot;Flores-P\u00e9rez_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_midazolam/Midazolam_FloresPrez2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # midazolam — `Midazolam_Gupta2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-**What is wrong:** every check the reviewer could run passed
+**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
 
 **Steps:**
-1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+1. Read the .deviation.json and confirm each deviation names what changed and why.
+2. Anything undocumented needs the engineer, not a curator.
 
-<sub>owner: **curator** · guidance written by playbook</sub>
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -20,15 +22,17 @@ Gupta N; Hanley MJ; Griffin RJ; Zhang P; Venkatakrishnan K; Sinha V et al. (2023
   ·  DOI: [10.1007/s40262-023-01284-w](https://doi.org/10.1007/s40262-023-01284-w)
 
 ## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Gupta2023_reference" status="curated_candidate" stale="false" population="" measured-compound="midazolam" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="midazolam" model-id="Midazolam_Gupta2023_reference" status="needs_review" stale="false" population="" measured-compound="midazolam" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 10.6 | L/h | 2.9444444444444445e-06 | L/h | not captured | review (0.7) | Gupta_2023:review | — | not captured |
-| apparent volume of distribution | `Q76` · V/F | 307.0 | L | 0.307 | L | not captured | review (0.7) | Gupta_2023:review | — | not captured |
+| CL/F | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Gupta_2023:review | — | not captured |
+| apparent volume of distribution | `Q76` · V/F | —(suppressed) | L | — | L | not captured | review (0.7) | Gupta_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -38,7 +42,10 @@ Gupta N; Hanley MJ; Griffin RJ; Zhang P; Venkatakrishnan K; Sinha V et al. (2023
 ## Departures & gaps
 
 **Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - built from REVIEW reference values (Gupta_2023) — secondary source
@@ -67,8 +74,8 @@ Gupta N; Hanley MJ; Griffin RJ; Zhang P; Venkatakrishnan K; Sinha V et al. (2023
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=midazolam) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -95,15 +102,15 @@ The structure OpenModelica draws for this model, with **this record's parameter 
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
-**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_modelica.zip" download>Midazolam_Gupta2023_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_fmi.zip" download>Midazolam_Gupta2023_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_matlab.zip" download>Midazolam_Gupta2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_matlab_simbio.zip" download>Midazolam_Gupta2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_sbml.zip" download>Midazolam_Gupta2023_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_cellml.zip" download>Midazolam_Gupta2023_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_modelica.zip" download>Midazolam_Gupta2023_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_fmi.zip" download>Midazolam_Gupta2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_matlab.zip" download>Midazolam_Gupta2023_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_matlab_simbio.zip" download>Midazolam_Gupta2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_sbml.zip" download>Midazolam_Gupta2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_cellml.zip" download>Midazolam_Gupta2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -112,9 +119,9 @@ Each archive holds the model source, a script that simulates it against the appr
 
 Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
 
-<dbs-fmusim paramsurl="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>Template `PK_1C` · parameters `Midazolam_Gupta2023_reference_params.json` · controls `Midazolam_Gupta2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Template `PK_1C_enteral` · parameters `Midazolam_Gupta2023_reference_params.json` · controls `Midazolam_Gupta2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

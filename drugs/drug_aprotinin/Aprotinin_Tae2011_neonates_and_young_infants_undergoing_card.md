@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;aprotinin&quot;,&quot;href&quot;:&quot;drugs/drug_aprotinin/&quot;},{&quot;label&quot;:&quot;Tae_2011 \u00b7 neonates and young infants undergoing cardiopulmonary bypass&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aprotinin_Tae2011_neonates_and_young_infants_undergoing_card&quot;,&quot;label&quot;:&quot;Tae_2011_neonates and young infants undergoing cardiopulmonary bypass&quot;,&quot;href&quot;:&quot;drugs/drug_aprotinin/Aprotinin_Tae2011_neonates_and_young_infants_undergoing_card.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # aprotinin — `Aprotinin_Tae2011_neonates_and_young_infants_undergoing_card`
 

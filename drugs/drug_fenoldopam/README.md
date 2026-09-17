@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;fenoldopam&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fenoldopam_Ziemniak1989_healthy_volunteers&quot;,&quot;label&quot;:&quot;Ziemniak_1989_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_fenoldopam/Fenoldopam_Ziemniak1989_healthy_volunteers.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # fenoldopam
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ziemniak_1989](drugs/drug_fenoldopam/Fenoldopam_Ziemniak1989_healthy_volunteers.md) | Ziemniak JA et al., A retrospective analysis of fenoldopam…, Pharmaceutical research (1989) | [10.1023/a:1015990506743](https://doi.org/10.1023/a:1015990506743) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ziemniak_1989_healthy volunteers](drugs/drug_fenoldopam/Fenoldopam_Ziemniak1989_healthy_volunteers.md) | Ziemniak JA et al., A retrospective analysis of fenoldopam…, Pharmaceutical research (1989) | [10.1023/a:1015990506743](https://doi.org/10.1023/a:1015990506743) |
 
 ## Coverage
 

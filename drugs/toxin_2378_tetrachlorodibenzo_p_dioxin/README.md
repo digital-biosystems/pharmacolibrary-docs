@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;2378_tetrachlorodibenzo_p_dioxin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_2378TetrachlorodibenzoPDioxin_Weber1993_reference&quot;,&quot;label&quot;:&quot;Weber_1993_male Sprague-Dawley rats&quot;,&quot;href&quot;:&quot;drugs/toxin_2378_tetrachlorodibenzo_p_dioxin/D_2378TetrachlorodibenzoPDioxin_Weber1993_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # 2378_tetrachlorodibenzo_p_dioxin
 
@@ -17,7 +18,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Weber_1993](drugs/toxin_2378_tetrachlorodibenzo_p_dioxin/D_2378TetrachlorodibenzoPDioxin_Weber1993_reference.md) | Weber LW et al., Tissue distribution and toxicokinetics…, Fundamental and applied tox… (1993) | [10.1006/faat.1993.1129](https://doi.org/10.1006/faat.1993.1129) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Weber_1993_male Sprague-Dawley rats](drugs/toxin_2378_tetrachlorodibenzo_p_dioxin/D_2378TetrachlorodibenzoPDioxin_Weber1993_reference.md) | Weber LW et al., Tissue distribution and toxicokinetics…, Fundamental and applied tox… (1993) | [10.1006/faat.1993.1129](https://doi.org/10.1006/faat.1993.1129) |
 
 ## Coverage
 

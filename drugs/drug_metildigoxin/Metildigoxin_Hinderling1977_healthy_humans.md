@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01A&quot;,&quot;href&quot;:&quot;atc/C01A.md&quot;},{&quot;label&quot;:&quot;metildigoxin&quot;,&quot;href&quot;:&quot;drugs/drug_metildigoxin/&quot;},{&quot;label&quot;:&quot;Hinderling_1977 \u00b7 healthy humans&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metildigoxin_Hinderling1977_healthy_humans&quot;,&quot;label&quot;:&quot;Hinderling_1977_healthy humans&quot;,&quot;href&quot;:&quot;drugs/drug_metildigoxin/Metildigoxin_Hinderling1977_healthy_humans.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # metildigoxin — `Metildigoxin_Hinderling1977_healthy_humans`
 

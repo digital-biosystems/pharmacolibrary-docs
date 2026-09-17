@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dofetilide_Gotta2015_reference&quot;,&quot;label&quot;:&quot;Gotta_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/Dofetilide_Gotta2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # SLC47A1 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Uddin_2022`

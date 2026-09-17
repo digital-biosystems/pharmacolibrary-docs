@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;Drotrecogin alfa&quot;,&quot;href&quot;:&quot;drugs/drug_drotrecogin_alfa/&quot;},{&quot;label&quot;:&quot;Abboud_2009 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DrotrecoginAlfa_Abboud2009_reference&quot;,&quot;label&quot;:&quot;Abboud_2009_reference&quot;,&quot;href&quot;:&quot;drugs/drug_drotrecogin_alfa/DrotrecoginAlfa_Abboud2009_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 # Drotrecogin alfa — `DrotrecoginAlfa_Abboud2009_reference`
 

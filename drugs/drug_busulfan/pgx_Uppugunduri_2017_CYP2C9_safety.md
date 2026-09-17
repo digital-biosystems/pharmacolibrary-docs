@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Busulfan_Lawson2022_pediatric_stem_cell_transplantation_reci&quot;,&quot;label&quot;:&quot;Lawson_2022_pediatric stem cell transplantation recipients&quot;,&quot;href&quot;:&quot;drugs/drug_busulfan/Busulfan_Lawson2022_pediatric_stem_cell_transplantation_reci.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # CYP2C9 — PGx  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Uppugunduri_2017`

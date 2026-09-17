@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;triamcinolone&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Triamcinolone_Kraus2018_reference&quot;,&quot;label&quot;:&quot;Kraus_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_triamcinolone/Triamcinolone_Kraus2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # triamcinolone
 
@@ -28,7 +29,7 @@ cancer, nonsuppurative thyroiditis, autoimmune hemolytic anemia, Diamond-Blackfa
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Kraus_2018](drugs/drug_triamcinolone/Triamcinolone_Kraus2018_reference.md) | Kraus VB et al., Synovial and systemic pharmacokinetics…, Osteoarthritis and cartilage (2018) | [10.1016/j.joca.2017.10.003](https://doi.org/10.1016/j.joca.2017.10.003) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Kraus_2018_reference](drugs/drug_triamcinolone/Triamcinolone_Kraus2018_reference.md) | Kraus VB et al., Synovial and systemic pharmacokinetics…, Osteoarthritis and cartilage (2018) | [10.1016/j.joca.2017.10.003](https://doi.org/10.1016/j.joca.2017.10.003) |
 
 ## Pharmacogenomics (PGx)
 

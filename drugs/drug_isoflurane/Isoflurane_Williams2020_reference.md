@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;isoflurane&quot;,&quot;href&quot;:&quot;drugs/drug_isoflurane/&quot;},{&quot;label&quot;:&quot;Williams_2020 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isoflurane_Williams2020_reference&quot;,&quot;label&quot;:&quot;Williams_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_isoflurane/Isoflurane_Williams2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # isoflurane — `Isoflurane_Williams2020_reference`
 

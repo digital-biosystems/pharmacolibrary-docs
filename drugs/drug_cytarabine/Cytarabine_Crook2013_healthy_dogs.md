@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;cytarabine&quot;,&quot;href&quot;:&quot;drugs/drug_cytarabine/&quot;},{&quot;label&quot;:&quot;Crook_2013 \u00b7 healthy dogs&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cytarabine_Crook2013_healthy_dogs&quot;,&quot;label&quot;:&quot;Crook_2013_healthy dogs&quot;,&quot;href&quot;:&quot;drugs/drug_cytarabine/Cytarabine_Crook2013_healthy_dogs.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # cytarabine — `Cytarabine_Crook2013_healthy_dogs`
 

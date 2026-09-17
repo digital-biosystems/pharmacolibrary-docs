@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03B&quot;,&quot;href&quot;:&quot;atc/B03B.md&quot;},{&quot;label&quot;:&quot;hydroxocobalamin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxocobalamin_Houeto1996_smoke_inhalation_victims&quot;,&quot;label&quot;:&quot;Houeto_1996_smoke inhalation victims&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_smoke_inhalation_victims.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxocobalamin_de1994_conscious_dogs&quot;,&quot;label&quot;:&quot;de_1994_conscious dogs&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_conscious_dogs.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # hydroxocobalamin
 
@@ -23,8 +24,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Houeto_1996](drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_smoke_inhalation_victims.md) | Houeto P et al., Pharmacokinetics of hydroxocobalamin in…, Journal of toxicology. Clin… (1996) | [10.3109/15563659609013809](https://doi.org/10.3109/15563659609013809) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [de_1994](drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_conscious_dogs.md) | de La Coussaye JE et al., Pharmacokinetics of hydroxocobalamin in…, Journal of neurosurgical an… (1994) | [10.1097/00008506-199404000-00006](https://doi.org/10.1097/00008506-199404000-00006) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Houeto_1996_smoke inhalation victims](drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_smoke_inhalation_victims.md) | Houeto P et al., Pharmacokinetics of hydroxocobalamin in…, Journal of toxicology. Clin… (1996) | [10.3109/15563659609013809](https://doi.org/10.3109/15563659609013809) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [de_1994_conscious dogs](drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_conscious_dogs.md) | de La Coussaye JE et al., Pharmacokinetics of hydroxocobalamin in…, Journal of neurosurgical an… (1994) | [10.1097/00008506-199404000-00006](https://doi.org/10.1097/00008506-199404000-00006) |
 
 ## Coverage
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;saruplase&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Saruplase_de1993_healthy_male_subjects&quot;,&quot;label&quot;:&quot;de_1993_healthy male subjects&quot;,&quot;href&quot;:&quot;drugs/drug_saruplase/Saruplase_de1993_healthy_male_subjects.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # saruplase
 
@@ -17,7 +18,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [de_1993](drugs/drug_saruplase/Saruplase_de1993_healthy_male_subjects.md) | de Boer A et al., Pharmacokinetics of saruplase, a recomb…, Thrombosis and haemostasis (1993) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [de_1993_healthy male subjects](drugs/drug_saruplase/Saruplase_de1993_healthy_male_subjects.md) | de Boer A et al., Pharmacokinetics of saruplase, a recomb…, Thrombosis and haemostasis (1993) | — |
 
 ## Coverage
 

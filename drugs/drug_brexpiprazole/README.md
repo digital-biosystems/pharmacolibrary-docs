@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;brexpiprazole&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_reference&quot;,&quot;label&quot;:&quot;Higashi_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # brexpiprazole
 
@@ -27,9 +28,9 @@ Brexpiprazole is also indicated for the treatment of agitation associated with d
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Wang_2023](drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md) | Wang (2023) | — |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Higashi_2025](drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_reference.md) | Higashi K et al., Population pharmacokinetics of brexpipr…, Drug metabolism and pharmac… (2025) | [10.1016/j.dmpk.2025.101057](https://doi.org/10.1016/j.dmpk.2025.101057) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Frederiksen_2023_3](drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md) | Frederiksen (2023) | — |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Wang_2023_reference](drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md) | Wang (2023) | — |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Higashi_2025_reference](drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_reference.md) | Higashi K et al., Population pharmacokinetics of brexpipr…, Drug metabolism and pharmac… (2025) | [10.1016/j.dmpk.2025.101057](https://doi.org/10.1016/j.dmpk.2025.101057) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Frederiksen_2023_3_reference](drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md) | Frederiksen (2023) | — |
 
 ## Pharmacodynamics (PD)
 

@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;simvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/&quot;},{&quot;label&quot;:&quot;Kovalenko_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Kovalenko2025_reference&quot;,&quot;label&quot;:&quot;Kovalenko_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kovalenko2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_wierczek2024_reference&quot;,&quot;label&quot;:&quot;\u015awierczek_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_wierczek2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Kim2021_reference&quot;,&quot;label&quot;:&quot;Kim_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kim2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Lohitnavy2015_reference&quot;,&quot;label&quot;:&quot;Lohitnavy_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Lohitnavy2015_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Methaneethorn2014_reference&quot;,&quot;label&quot;:&quot;Methaneethorn_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Methaneethorn2014_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Methaneethorn2014v2_reference&quot;,&quot;label&quot;:&quot;Methaneethorn_2014_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Methaneethorn2014v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Ogungbenro2019_base&quot;,&quot;label&quot;:&quot;Ogungbenro_2019_base&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Ogungbenro2019_base&quot;,&quot;label&quot;:&quot;Ogungbenro_2019_base&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Ogungbenro2019_between_subject_variability_bsvb&quot;,&quot;label&quot;:&quot;Ogungbenro_2019_between_subject_variability_bsvb&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_between_subject_variability_bsvb.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Ogungbenro2019_between_subject_variability_bsvb&quot;,&quot;label&quot;:&quot;Ogungbenro_2019_between_subject_variability_bsvb&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_between_subject_variability_bsvb.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Ogungbenro2019_parameters&quot;,&quot;label&quot;:&quot;Ogungbenro_2019_parameters&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_parameters.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Ogungbenro2019_parameters&quot;,&quot;label&quot;:&quot;Ogungbenro_2019_parameters&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_parameters.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Tsamandouras2014_reference&quot;,&quot;label&quot;:&quot;Tsamandouras_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Tsamandouras2014_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Tsamandouras2015_reference&quot;,&quot;label&quot;:&quot;Tsamandouras_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Tsamandouras2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # simvastatin — `Simvastatin_Kovalenko2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,20 +21,18 @@ Kovalenko P; Harnisch L; Mendell J; Wang Y; Davis JD; DiCioccio AT et al. (2025)
   ·  DOI: [10.1002/cpdd.1523](https://doi.org/10.1002/cpdd.1523)
 
 ## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Kovalenko2025_reference" status="needs_review" stale="false" population="" measured-compound="simvastatin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="simvastatin" model-id="Simvastatin_Kovalenko2025_reference" status="curated_candidate" stale="false" population="" measured-compound="simvastatin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/day) | `Q22` · CL | —(suppressed) | L/day | — | L/h | not captured | review (0.7) | Kovalenko_2025:review | — | not captured |
-| Vc (L) | `Q63` · V1 | —(suppressed) | L | — | L | not captured | review (0.7) | Kovalenko_2025:review | — | not captured |
-| Vp (L) | `Q64` · V2 | —(suppressed) | L | — | L | not captured | review (0.7) | Kovalenko_2025:review | — | not captured |
-| Q (L/day) | `Q30` · Q | —(suppressed) | L/day | — | L/h | not captured | review (0.7) | Kovalenko_2025:review | — | not captured |
-| ka (1/day) | `Q49` · kabs | —(suppressed) | 1/day | — | 1/h | not captured | review (0.7) | Kovalenko_2025:review | — | not captured |
+| CL (L/day) | `Q22` · CL | 0.131 | L/day | 1.5162037037037038e-09 | L/h | not captured | review (0.7) | Kovalenko_2025:review | — | not captured |
+| Vc (L) | `Q63` · V1 | 1.64 | L | 0.00164 | L | not captured | review (0.7) | Kovalenko_2025:review | — | not captured |
+| Vp (L) | `Q64` · V2 | 1.14 | L | 0.00114 | L | not captured | review (0.7) | Kovalenko_2025:review | — | not captured |
+| Q (L/day) | `Q30` · Q | 0.318 | L/day | 3.680555555555556e-09 | L/h | not captured | review (0.7) | Kovalenko_2025:review | — | not captured |
+| ka (1/day) | `Q49` · kabs | 0.333 | 1/day | 3.854166666666667e-06 | 1/h | not captured | review (0.7) | Kovalenko_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -77,7 +75,7 @@ Kovalenko P; Harnisch L; Mendell J; Wang Y; Davis JD; DiCioccio AT et al. (2025)
 | T3_output_variable | not captured | pass | C_central (measured=simvastatin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -107,7 +105,7 @@ Each archive holds the model source, a script that simulates it against the appr
 **FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_2C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_simvastatin/Simvastatin_Kovalenko2025_reference/Simvastatin_Kovalenko2025_reference_modelica.zip" download>Simvastatin_Kovalenko2025_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_simvastatin/Simvastatin_Kovalenko2025_reference/Simvastatin_Kovalenko2025_reference_modelica.zip" download>Simvastatin_Kovalenko2025_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_simvastatin/Simvastatin_Kovalenko2025_reference/Simvastatin_Kovalenko2025_reference_fmi.zip" download>Simvastatin_Kovalenko2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Kovalenko2025_reference/Simvastatin_Kovalenko2025_reference_matlab.zip" download>Simvastatin_Kovalenko2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Kovalenko2025_reference/Simvastatin_Kovalenko2025_reference_matlab_simbio.zip" download>Simvastatin_Kovalenko2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

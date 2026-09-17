@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;insulin lispro&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InsulinLispro_Ruan2014_adults_with_type_2_diabetes&quot;,&quot;label&quot;:&quot;Ruan_2014_adults with type 2 diabetes&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_lispro/InsulinLispro_Ruan2014_adults_with_type_2_diabetes.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # insulin lispro
 
@@ -27,7 +28,7 @@ Marketed as the brand name pr
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ruan_2014](drugs/drug_insulin_lispro/InsulinLispro_Ruan2014_adults_with_type_2_diabetes.md) | Ruan Y et al., Pharmacokinetics of insulin lispro in t…, Computer methods and progra… (2014) | [10.1016/j.cmpb.2014.07.004](https://doi.org/10.1016/j.cmpb.2014.07.004) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ruan_2014_adults with type 2 diabetes](drugs/drug_insulin_lispro/InsulinLispro_Ruan2014_adults_with_type_2_diabetes.md) | Ruan Y et al., Pharmacokinetics of insulin lispro in t…, Computer methods and progra… (2014) | [10.1016/j.cmpb.2014.07.004](https://doi.org/10.1016/j.cmpb.2014.07.004) |
 
 ## Coverage
 

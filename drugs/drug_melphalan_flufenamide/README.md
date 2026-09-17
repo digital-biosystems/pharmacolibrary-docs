@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;melphalan flufenamide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MelphalanFlufenamide_Huledal2024_patients_with_relapsed_refr&quot;,&quot;label&quot;:&quot;Huledal_2024_patients with relapsed refractory multiple myeloma&quot;,&quot;href&quot;:&quot;drugs/drug_melphalan_flufenamide/MelphalanFlufenamide_Huledal2024_patients_with_relapsed_refr.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # melphalan flufenamide
 
@@ -25,7 +26,7 @@ Melphalan flufenamide was granted FDA approval on 26 February 2021.[L32173]. It 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Huledal_2024](drugs/drug_melphalan_flufenamide/MelphalanFlufenamide_Huledal2024_patients_with_relapsed_refr.md) | Huledal G et al., Pharmacokinetics and Metabolism of Melf…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2355](https://doi.org/10.1002/jcph.2355) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Huledal_2024_patients with relapsed refractory multiple myeloma](drugs/drug_melphalan_flufenamide/MelphalanFlufenamide_Huledal2024_patients_with_relapsed_refr.md) | Huledal G et al., Pharmacokinetics and Metabolism of Melf…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2355](https://doi.org/10.1002/jcph.2355) |
 
 ## Coverage
 

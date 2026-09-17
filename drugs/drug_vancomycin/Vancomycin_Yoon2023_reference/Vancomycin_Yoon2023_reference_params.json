@@ -1,0 +1,23 @@
+{
+ "model_id": "Vancomycin_Yoon2023_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.2e-06,
+  "F": 1.0,
+  "VdPerKg": 0.0005514285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k21": 1.6342315369261478e-05,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 1.666924034497737e-07
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

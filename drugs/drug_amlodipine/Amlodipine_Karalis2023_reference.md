@@ -1,22 +1,20 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;amlodipine&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/&quot;},{&quot;label&quot;:&quot;Karalis_2023 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amlodipine_Angeloni2016_reference&quot;,&quot;label&quot;:&quot;Angeloni_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Angeloni2016_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Karalis2023_reference&quot;,&quot;label&quot;:&quot;Karalis_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Karalis2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amlodipine_Mao2024_reference&quot;,&quot;label&quot;:&quot;Mao_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mao2024_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mukherjee2018_reference&quot;,&quot;label&quot;:&quot;Mukherjee_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mukherjee2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_buffer&quot;,&quot;label&quot;:&quot;Vlachou_2021_buffer&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_buffer.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_buffer&quot;,&quot;label&quot;:&quot;Vlachou_2021_buffer&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_buffer.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_parameter&quot;,&quot;label&quot;:&quot;Vlachou_2021_parameter&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_parameter.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_parameter&quot;,&quot;label&quot;:&quot;Vlachou_2021_parameter&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_parameter.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_parameter_4&quot;,&quot;label&quot;:&quot;Vlachou_2021_parameter_4&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_parameter_4.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_parameter_4&quot;,&quot;label&quot;:&quot;Vlachou_2021_parameter_4&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_parameter_4.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Heo2016_reference&quot;,&quot;label&quot;:&quot;Heo_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Heo2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_value&quot;,&quot;label&quot;:&quot;Vlachou_2021_value&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_value&quot;,&quot;label&quot;:&quot;Vlachou_2021_value&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # amlodipine — `Amlodipine_Karalis2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 6 scholar param(s) emitted or defaulted — got 4 covered
+**What is wrong:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
-3. Advisory only — the base model still replicates.
-4. Check the record's covariate_definitions in _interpretv2.yaml.
-5. Re-run the engineer for this drug if the covariate curves are wanted.
-6. Open the emitted .mo and compare its base class and parameters with the record.
+1. Advisory only — the base model still replicates.
+2. Check the record's covariate_definitions in _interpretv2.yaml.
+3. Re-run the engineer for this drug if the covariate curves are wanted.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,23 +23,21 @@ Karalis VD et al. (2023). Pharmaceuticals (Basel, Switzerland) 16
   ·  DOI: [10.3390/ph16050725](https://doi.org/10.3390/ph16050725)
 
 ## Model component
-<dbs-pgx drug="amlodipine" model-id="Amlodipine_Karalis2023_reference" status="model_quarantined" stale="false" population="virtual subjects" measured-compound="hydrochlorothiazide, donepezil, and amlodipine" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="amlodipine" model-id="Amlodipine_Karalis2023_reference" status="accepted_with_caveats" stale="false" population="virtual subjects" measured-compound="hydrochlorothiazide, donepezil, and amlodipine" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Tlag (min) | `Q83` · tlag | —(suppressed) | min | — | [min] | not captured | exact (1.0) | pharmaceuticals-16-00725-t002:row2:col1 | — | not captured |
-| Ka (min−1) | `Q49` · kabs | —(suppressed) | min−1 | — | [1] / [min] | not captured | exact (1.0) | pharmaceuticals-16-00725-t002:row3:col1, pharmaceuticals-16-00725-t002:row3:col2, pharmaceuticals-16-00725-t002:row3:col3 | — | not captured |
-| Cl/F (mL/min) | `Q27` · CL/F | —(suppressed) | mL/min | — | [ml] / [min] | not captured | exact (1.0) | pharmaceuticals-16-00725-t002:row4:col1, pharmaceuticals-16-00725-t002:row4:col2, pharmaceuticals-16-00725-t002:row4:col3 | categorical_fractional on CYP2D6={'G/A': -0.2, 'G/G': 0.0, 'IM': -0.0542, 'NM': -0.0082, 'PM': -0.0853, 'UM': 0.0709} (G/G); categorical_fractional on SLC22A1={'G/A': -0.2, 'G/G': 0.0, 'IM': -0.0542, 'NM': -0.0082, 'PM': -0.0853, 'UM': 0.0709} (G/G) | not captured |
-| Q/F (mL/min) | `Q69` · Q/F | —(suppressed) | mL/min | — | [ml] / [min] | not captured | exact (1.0) | pharmaceuticals-16-00725-t002:row5:col1 | — | not captured |
-| V1/F (mL) | `Q290` · V1/F | —(suppressed) | mL | — | [ml] | not captured | exact (1.0) | pharmaceuticals-16-00725-t002:row6:col1, pharmaceuticals-16-00725-t002:row6:col2, pharmaceuticals-16-00725-t002:row6:col3 | — | not captured |
-| V2/F (mL) | `Q82` · V2/F | —(suppressed) | mL | — | [ml] | not captured | exact (1.0) | pharmaceuticals-16-00725-t002:row7:col1 | — | not captured |
-| CYP2D6 | `Q900` · CYP2D6 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
-| SLC22A1 | `Q900` · SLC22A1 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| Tlag (min) | `Q83` · tlag | 24.24 | min | 1454.3999999999999 | [min] | not captured | exact (1.0) | pharmaceuticals-16-00725-t002:row2:col1 | — | not captured |
+| Ka (min−1) | `Q49` · kabs | 0.01417 | min−1 | 0.00023616666666666667 | [1] / [min] | not captured | exact (1.0) | pharmaceuticals-16-00725-t002:row3:col1, pharmaceuticals-16-00725-t002:row3:col2, pharmaceuticals-16-00725-t002:row3:col3 | — | not captured |
+| Cl/F (mL/min) | `Q27` · CL/F | 370 | mL/min | 6.166666666666666e-06 | [ml] / [min] | not captured | exact (1.0) | pharmaceuticals-16-00725-t002:row4:col1, pharmaceuticals-16-00725-t002:row4:col2, pharmaceuticals-16-00725-t002:row4:col3 | categorical_fractional on CYP2D6={'G/A': -0.2, 'G/G': 0.0, 'IM': -0.0542, 'NM': -0.0082, 'PM': -0.0853, 'UM': 0.0709} (G/G); categorical_fractional on SLC22A1={'G/A': -0.2, 'G/G': 0.0, 'IM': -0.0542, 'NM': -0.0082, 'PM': -0.0853, 'UM': 0.0709} (G/G) | not captured |
+| Q/F (mL/min) | `Q69` · Q/F | 423.33 | mL/min | 7.0555e-06 | [ml] / [min] | not captured | exact (1.0) | pharmaceuticals-16-00725-t002:row5:col1 | — | not captured |
+| V1/F (mL) | `Q290` · V1/F | 1300 | mL | 0.0013 | [ml] | not captured | exact (1.0) | pharmaceuticals-16-00725-t002:row6:col1, pharmaceuticals-16-00725-t002:row6:col2, pharmaceuticals-16-00725-t002:row6:col3 | — | not captured |
+| V2/F (mL) | `Q82` · V2/F | 146000 | mL | 0.146 | [ml] | not captured | exact (1.0) | pharmaceuticals-16-00725-t002:row7:col1 | — | not captured |
+| CYP2D6 | `Q900` · CYP2D6 | {'G/A': -0.2, 'G/G': 0.0, 'IM': -0.0542, 'NM': -0.0082, 'PM': -0.0853, 'UM': 0.0709} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| SLC22A1 | `Q900` · SLC22A1 | {'G/A': -0.2, 'G/G': 0.0, 'IM': -0.0542, 'NM': -0.0082, 'PM': -0.0853, 'UM': 0.0709} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -49,6 +45,10 @@ Karalis VD et al. (2023). Pharmaceuticals (Basel, Switzerland) 16
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['Tlag', 'k12']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=hydrochlorothiazide, donepezil, and amlodipine
@@ -84,13 +84,14 @@ Karalis VD et al. (2023). Pharmaceuticals (Basel, Switzerland) 16
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['tlag', 'kabs'] |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
+| T3_output_variable | not captured | pass | C_central (measured=hydrochlorothiazide, donepezil, and amlodipine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 69.0 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 126.2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 156.3 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 69.0 | 2.202475912493143e-08 | not captured | unresolved concentration unit (exp '°', sim 'kg/m3') |
+| T1_t_half_beta | reference | skipped | not captured | 2.093368917824639 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | 126.2 | 0.18333333335172275 | not captured | unresolved time unit '°' |
+| T1_tmax | reference | skipped | 156.3 | 0.18333333335172275 | not captured | unresolved time unit '°' |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -100,30 +101,43 @@ Karalis VD et al. (2023). Pharmaceuticals (Basel, Switzerland) 16
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_amlodipine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Karalis_2023` / `Karalis_2023::reference`)
-- model: `../../../knowledgebase/drugs/drug_amlodipine/models/modelica/_needs_review/Amlodipine_Karalis2023_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_amlodipine/models/modelica/_needs_review/Amlodipine_Karalis2023_reference.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_amlodipine/models/modelica/Amlodipine_Karalis2023_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_amlodipine/models/modelica/Amlodipine_Karalis2023_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_amlodipine/models/modelica/Amlodipine_Karalis2023_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_amlodipine/Amlodipine_Karalis2023_reference/Amlodipine_Karalis2023_reference.svg" alt="Amlodipine_Karalis2023_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_2C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amlodipine/Amlodipine_Karalis2023_reference/Amlodipine_Karalis2023_reference_matlab.zip" download>Amlodipine_Karalis2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amlodipine/Amlodipine_Karalis2023_reference/Amlodipine_Karalis2023_reference_matlab_simbio.zip" download>Amlodipine_Karalis2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amlodipine/Amlodipine_Karalis2023_reference/Amlodipine_Karalis2023_reference_sbml.zip" download>Amlodipine_Karalis2023_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amlodipine/Amlodipine_Karalis2023_reference/Amlodipine_Karalis2023_reference_cellml.zip" download>Amlodipine_Karalis2023_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amlodipine/Amlodipine_Karalis2023_reference/Amlodipine_Karalis2023_reference_modelica.zip" download>Amlodipine_Karalis2023_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amlodipine/Amlodipine_Karalis2023_reference/Amlodipine_Karalis2023_reference_matlab.zip" download>Amlodipine_Karalis2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amlodipine/Amlodipine_Karalis2023_reference/Amlodipine_Karalis2023_reference_matlab_simbio.zip" download>Amlodipine_Karalis2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amlodipine/Amlodipine_Karalis2023_reference/Amlodipine_Karalis2023_reference_sbml.zip" download>Amlodipine_Karalis2023_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amlodipine/Amlodipine_Karalis2023_reference/Amlodipine_Karalis2023_reference_cellml.zip" download>Amlodipine_Karalis2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
 ## Web simulation
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
+
+<dbs-fmusim paramsurl="drugs/drug_amlodipine/Amlodipine_Karalis2023_reference/Amlodipine_Karalis2023_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_amlodipine/Amlodipine_Karalis2023_reference/Amlodipine_Karalis2023_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Template `PK_2C_enteral` · parameters `Amlodipine_Karalis2023_reference_params.json` · controls `Amlodipine_Karalis2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

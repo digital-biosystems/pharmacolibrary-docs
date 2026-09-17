@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Minocycline_Athanassa2025_reference&quot;,&quot;label&quot;:&quot;Athanassa_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/Minocycline_Athanassa2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Minocycline_Barrasa2024_reference&quot;,&quot;label&quot;:&quot;Barrasa_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/Minocycline_Barrasa2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Vallé_2021`

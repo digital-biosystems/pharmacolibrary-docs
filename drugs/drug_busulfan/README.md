@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;busulfan&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Busulfan_Lawson2022_pediatric_stem_cell_transplantation_reci&quot;,&quot;label&quot;:&quot;Lawson_2022_pediatric stem cell transplantation recipients&quot;,&quot;href&quot;:&quot;drugs/drug_busulfan/Busulfan_Lawson2022_pediatric_stem_cell_transplantation_reci.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # busulfan
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Lawson_2022](drugs/drug_busulfan/Busulfan_Lawson2022_pediatric_stem_cell_transplantation_reci.md) | Lawson R et al., Population pharmacokinetic model for on…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12809](https://doi.org/10.1002/psp4.12809) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Lawson_2022_pediatric stem cell transplantation recipients](drugs/drug_busulfan/Busulfan_Lawson2022_pediatric_stem_cell_transplantation_reci.md) | Lawson R et al., Population pharmacokinetic model for on…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12809](https://doi.org/10.1002/psp4.12809) |
 
 ## Pharmacogenomics (PGx)
 

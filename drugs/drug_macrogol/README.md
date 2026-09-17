@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;macrogol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Macrogol_Sharda2021_reference&quot;,&quot;label&quot;:&quot;Sharda_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Sharda2021_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # macrogol
 
@@ -25,7 +26,7 @@ The rationale of using PEG in gastroenterology is due to the physical properties
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Sharda_2021](drugs/drug_macrogol/Macrogol_Sharda2021_reference.md) | Sharda N et al., Pharmacokinetics of 40 kDa Polyethylene…, European journal of pharmac… (2021) | [10.1016/j.ejps.2021.105928](https://doi.org/10.1016/j.ejps.2021.105928) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Sharda_2021_reference](drugs/drug_macrogol/Macrogol_Sharda2021_reference.md) | Sharda N et al., Pharmacokinetics of 40 kDa Polyethylene…, European journal of pharmac… (2021) | [10.1016/j.ejps.2021.105928](https://doi.org/10.1016/j.ejps.2021.105928) |
 
 ## Pharmacodynamics (PD)
 

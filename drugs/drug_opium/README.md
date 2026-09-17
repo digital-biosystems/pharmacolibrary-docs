@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07D&quot;,&quot;href&quot;:&quot;atc/A07D.md&quot;},{&quot;label&quot;:&quot;opium&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Opium_Liu2016_neonates_with_abstinence_syndrome&quot;,&quot;label&quot;:&quot;Liu_2016_neonates with abstinence syndrome&quot;,&quot;href&quot;:&quot;drugs/drug_opium/Opium_Liu2016_neonates_with_abstinence_syndrome.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # opium
 
@@ -31,7 +32,7 @@ Illegal use of opium has been registered to be for both recreational and medicin
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2016](drugs/drug_opium/Opium_Liu2016_neonates_with_abstinence_syndrome.md) | Liu T et al., Mechanistic Population Pharmacokinetics…, Journal of clinical pharmac… (2016) | [10.1002/jcph.696](https://doi.org/10.1002/jcph.696) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2016_neonates with abstinence syndrome](drugs/drug_opium/Opium_Liu2016_neonates_with_abstinence_syndrome.md) | Liu T et al., Mechanistic Population Pharmacokinetics…, Journal of clinical pharmac… (2016) | [10.1002/jcph.696](https://doi.org/10.1002/jcph.696) |
 
 ## Coverage
 

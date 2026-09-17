@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;hydroxychloroquine&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/&quot;},{&quot;label&quot;:&quot;Th\u00e9mans_2020 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxychloroquine_Thmans2020_reference&quot;,&quot;label&quot;:&quot;Th\u00e9mans_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydroxychloroquine_Alvarez2022_reference&quot;,&quot;label&quot;:&quot;Alvarez_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_reference&quot;,&quot;label&quot;:&quot;Zahr_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # hydroxychloroquine — `Hydroxychloroquine_Thmans2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified; invented_absorption: not acceptable
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,21 +21,19 @@ Thémans P; Belkhir L; Dauby N; Yombi JC; De Greef J; Delongie KA; et al. et al.
   ·  DOI: [10.1007/s13318-020-00648-y](https://doi.org/10.1007/s13318-020-00648-y)
 
 ## Model component
-<dbs-pgx drug="hydroxychloroquine" model-id="Hydroxychloroquine_Thmans2020_reference" status="needs_review" stale="false" population="COVID-19 patients" measured-compound="hydroxychloroquine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="hydroxychloroquine" model-id="Hydroxychloroquine_Thmans2020_reference" status="curated_candidate" stale="false" population="COVID-19 patients" measured-compound="hydroxychloroquine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka (/h) | `Q49` · kabs | —(suppressed) | /h | — | 1/h | not captured | exact (1.0) | tab_1:row0:col1, tab_1:row0:col4 | — | 0.94 (None% RSE) |
-| V (L) | `Q61` · V | —(suppressed) | L | — | [l] | not captured | exact (1.0) | tab_1:row1:col1, tab_1:row1:col3 | — | not captured |
-| CL (L/h) | `Q22` · CL | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | tab_1:row2:col1, tab_1:row2:col4 | — | 0.127 (None% RSE) |
-| Tlag (h) | `Q83` · tlag | —(suppressed) | h | — | [h] | not captured | exact (1.0) | tab_1:row4:col4 | — | not captured |
-| Εprop ( 2 ) | `Q316` · prop_error | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_1:row11:col1, tab_1:row11:col3 | — | not captured |
-| Εadd ( 2 ) | `Q38` · E | —(suppressed) | not captured | — | not captured | not captured | llm (0.5) | tab_1:row12:col4 | — | not captured |
+| Ka (/h) | `Q49` · kabs | 0.765 | /h | 0.00021250000000000002 | 1/h | not captured | exact (1.0) | tab_1:row0:col1, tab_1:row0:col4 | — | 0.94 (None% RSE) |
+| V (L) | `Q61` · V | 605 | L | 0.605 | [l] | not captured | exact (1.0) | tab_1:row1:col1, tab_1:row1:col3 | — | not captured |
+| CL (L/h) | `Q22` · CL | 9.89 | L/h | 2.7472222222222226e-06 | [l] / [h] | not captured | exact (1.0) | tab_1:row2:col1, tab_1:row2:col4 | — | 0.127 (None% RSE) |
+| Tlag (h) | `Q83` · tlag | 0.445 | h | 1602.0 | [h] | not captured | exact (1.0) | tab_1:row4:col4 | — | not captured |
+| Εprop ( 2 ) | `Q316` · prop_error | 0.044 | not captured | not captured | not captured | not captured | llm (0.5) | tab_1:row11:col1, tab_1:row11:col3 | — | not captured |
+| Εadd ( 2 ) | `Q38` · E | 0.000365 | not captured | not captured | not captured | not captured | llm (0.5) | tab_1:row12:col4 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -43,10 +41,6 @@ Thémans P; Belkhir L; Dauby N; Yombi JC; De Greef J; Delongie KA; et al. et al.
 </details>
 
 ## Departures & gaps
-
-**Deviations:**
-- `defaulted_parameters`: ['ka']
-- `invented_absorption`: ka defaulted — not reported in source
 
 **Interpretation flags:**
 - unit_dimension_unknown: '/h' (kabs)
@@ -86,7 +80,7 @@ Thémans P; Belkhir L; Dauby N; Yombi JC; De Greef J; Delongie KA; et al. et al.
 | T3_output_variable | not captured | pass | C_central (measured=hydroxychloroquine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -116,10 +110,10 @@ Each archive holds the model source, a script that simulates it against the appr
 **FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference/Hydroxychloroquine_Thmans2020_reference_modelica.zip" download>Hydroxychloroquine_Thmans2020_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference/Hydroxychloroquine_Thmans2020_reference_fmi.zip" download>Hydroxychloroquine_Thmans2020_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference/Hydroxychloroquine_Thmans2020_reference_matlab.zip" download>Hydroxychloroquine_Thmans2020_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference/Hydroxychloroquine_Thmans2020_reference_matlab_simbio.zip" download>Hydroxychloroquine_Thmans2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference/Hydroxychloroquine_Thmans2020_reference_modelica.zip" download>Hydroxychloroquine_Thmans2020_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference/Hydroxychloroquine_Thmans2020_reference_fmi.zip" download>Hydroxychloroquine_Thmans2020_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference/Hydroxychloroquine_Thmans2020_reference_matlab.zip" download>Hydroxychloroquine_Thmans2020_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference/Hydroxychloroquine_Thmans2020_reference_matlab_simbio.zip" download>Hydroxychloroquine_Thmans2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference/Hydroxychloroquine_Thmans2020_reference_sbml.zip" download>Hydroxychloroquine_Thmans2020_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference/Hydroxychloroquine_Thmans2020_reference_cellml.zip" download>Hydroxychloroquine_Thmans2020_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>

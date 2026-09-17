@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;voxelotor&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/&quot;},{&quot;label&quot;:&quot;Savic_2022 \u00b7 estimate_rse_a_b&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voxelotor_Savic2022_estimate_rse_a_b&quot;,&quot;label&quot;:&quot;Savic_2022_estimate_rse_a_b&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_estimate_rse_a_b.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Voxelotor_Savic2022_estimate_rse_a_b&quot;,&quot;label&quot;:&quot;Savic_2022_estimate_rse_a_b&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_estimate_rse_a_b.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Voxelotor_Savic2022_shrinkage&quot;,&quot;label&quot;:&quot;Savic_2022_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Voxelotor_Savic2022_shrinkage&quot;,&quot;label&quot;:&quot;Savic_2022_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # voxelotor — `Voxelotor_Savic2022_estimate_rse_a_b`
 
@@ -6,7 +7,7 @@
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised; T6_deviations — got defaulted_parameters: structural deviation not quantified; invented_absorption: not acceptable
+**What is wrong:** the engineer's deviations are not documented and quantified; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
 
 **Steps:**
 1. Read the .deviation.json and confirm each deviation names what changed and why.
@@ -93,7 +94,7 @@ Savic RM; Green ML; Jorga K; Zager M; Washington CB et al. (2022). CPT: pharmaco
 | T3_output_variable | not captured | pass | C_central (measured=voxelotor) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

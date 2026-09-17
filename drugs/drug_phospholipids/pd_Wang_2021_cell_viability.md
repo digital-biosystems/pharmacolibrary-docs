@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phospholipids_Hummel1975_non_pregnant_female_rats&quot;,&quot;label&quot;:&quot;Hummel_1975_non pregnant female rats&quot;,&quot;href&quot;:&quot;drugs/drug_phospholipids/Phospholipids_Hummel1975_non_pregnant_female_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Wang_2021`

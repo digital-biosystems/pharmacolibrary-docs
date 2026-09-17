@@ -1,21 +1,21 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;capecitabine&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/&quot;},{&quot;label&quot;:&quot;S\u00e1ez-Bell\u00f3_2021 \u00b7 population_pk_model_estimates_rse&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Capecitabine_Blesch2003_reference&quot;,&quot;label&quot;:&quot;Blesch_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Blesch2003_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Lunar2021_reference&quot;,&quot;label&quot;:&quot;Lunar_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Lunar2021_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Schmulenson2022_reference&quot;,&quot;label&quot;:&quot;Schmulenson_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Schmulenson2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_SezBell2021_population_pk_model_estimates_shrin&quot;,&quot;label&quot;:&quot;S\u00e1ez-Bell\u00f3_2021_population_pk_model_estimates_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_SezBell2021_population_pk_model_estimates_shrin.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_SezBell2021_population_pk_model_estimates_shrin&quot;,&quot;label&quot;:&quot;S\u00e1ez-Bell\u00f3_2021_population_pk_model_estimates_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_SezBell2021_population_pk_model_estimates_shrin.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_SezBell2021_population_pk_model_estimates_value&quot;,&quot;label&quot;:&quot;S\u00e1ez-Bell\u00f3_2021_population_pk_model_estimates_value&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_SezBell2021_population_pk_model_estimates_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_SezBell2021_population_pk_model_estimates_value&quot;,&quot;label&quot;:&quot;S\u00e1ez-Bell\u00f3_2021_population_pk_model_estimates_value&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_SezBell2021_population_pk_model_estimates_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Wen2021_reference&quot;,&quot;label&quot;:&quot;Wen_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Wen2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_SezBell2021_population_pk_model_estimates_rse&quot;,&quot;label&quot;:&quot;S\u00e1ez-Bell\u00f3_2021_population_pk_model_estimates_rse&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_SezBell2021_population_pk_model_estimates_rse.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Capecitabine_SezBell2021_population_pk_model_estimates_rse&quot;,&quot;label&quot;:&quot;S\u00e1ez-Bell\u00f3_2021_population_pk_model_estimates_rse&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_SezBell2021_population_pk_model_estimates_rse.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Capecitabine_Doshi2015_estimate_value&quot;,&quot;label&quot;:&quot;Doshi_2015_estimate_value&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Doshi2015_estimate_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Doshi2015_estimate_value&quot;,&quot;label&quot;:&quot;Doshi_2015_estimate_value&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Doshi2015_estimate_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Doshi2015_typical_value&quot;,&quot;label&quot;:&quot;Doshi_2015_typical_value&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Doshi2015_typical_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Doshi2015_typical_value&quot;,&quot;label&quot;:&quot;Doshi_2015_typical_value&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Doshi2015_typical_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Gieschke2003_reference&quot;,&quot;label&quot;:&quot;Gieschke_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Gieschke2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Jacobs2019_reference&quot;,&quot;label&quot;:&quot;Jacobs_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Jacobs2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Joerger2015_dpyd_c_2846a_t_wt&quot;,&quot;label&quot;:&quot;Joerger_2015_dpyd_c_2846a_t_wt&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Joerger2015_dpyd_c_2846a_t_wt.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Joerger2015_dpyd_c_2846a_t_wt&quot;,&quot;label&quot;:&quot;Joerger_2015_dpyd_c_2846a_t_wt&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Joerger2015_dpyd_c_2846a_t_wt.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Joerger2015_dpyd_c_85t_c_hom&quot;,&quot;label&quot;:&quot;Joerger_2015_dpyd_c_85t_c_hom&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Joerger2015_dpyd_c_85t_c_hom.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Joerger2015_dpyd_c_85t_c_hom&quot;,&quot;label&quot;:&quot;Joerger_2015_dpyd_c_85t_c_hom&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Joerger2015_dpyd_c_85t_c_hom.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Joerger2015_mthfr_c_677c_t_het&quot;,&quot;label&quot;:&quot;Joerger_2015_mthfr_c_677c_t_het&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Joerger2015_mthfr_c_677c_t_het.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Capecitabine_Joerger2015_mthfr_c_677c_t_het&quot;,&quot;label&quot;:&quot;Joerger_2015_mthfr_c_677c_t_het&quot;,&quot;href&quot;:&quot;drugs/drug_capecitabine/Capecitabine_Joerger2015_mthfr_c_677c_t_het.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # capecitabine — `Capecitabine_SezBell2021_population_pk_model_estimates_rse`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--neutral">not simulated</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 2 covered
+**What is wrong:** the model was built but never simulated; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 2 covered
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
-3. Open the emitted .mo and compare its base class and parameters with the record.
-4. Check the .deviation.json beside it for what the engineer defaulted or assumed.
-5. A wrong base class or a defaulted core parameter means rebuilding, not curating.
+1. No curator action. Re-run the engineer without --no-simulate.
+2. Open the emitted .mo and compare its base class and parameters with the record.
+3. Check the .deviation.json beside it for what the engineer defaulted or assumed.
+4. A wrong base class or a defaulted core parameter means rebuilding, not curating.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -24,12 +24,12 @@ Sáez-Belló M; Mangas-Sanjuán V; Martínez-Gómez MA; López-Montenegro Soria 
   ·  DOI: [10.1111/bcp.14441](https://doi.org/10.1111/bcp.14441)
 
 ## Model component
-<dbs-pgx drug="capecitabine" model-id="Capecitabine_SezBell2021_population_pk_model_estimates_rse" status="model_quarantined" stale="false" population="adults with colorectal cancer" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="capecitabine" model-id="Capecitabine_SezBell2021_population_pk_model_estimates_rse" status="not_simulated" stale="false" population="adults with colorectal cancer" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `not_simulated`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -45,6 +45,9 @@ Sáez-Belló M; Mangas-Sanjuán V; Martínez-Gómez MA; López-Montenegro Soria 
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['Q1']
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'beta_t1ag_oxaliplatin' — extend the ontology if this is a real PK parameter (source ['Sáez-Belló_2021_table_p5_1:row1:col2'])
@@ -106,18 +109,18 @@ Sáez-Belló M; Mangas-Sanjuán V; Martínez-Gómez MA; López-Montenegro Soria 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_capecitabine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Sáez-Belló_2021` / `Sáez-Belló_2021::population_pk_model_estimates_rse`)
-- model: `../../../knowledgebase/drugs/drug_capecitabine/models/modelica/_needs_review/Capecitabine_SezBell2021_population_pk_model_estimates_rse.mo`
-- deviation: `../../../knowledgebase/drugs/drug_capecitabine/models/modelica/_needs_review/Capecitabine_SezBell2021_population_pk_model_estimates_rse.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_capecitabine/models/modelica/Capecitabine_SezBell2021_population_pk_model_estimates_rse.mo`
+- deviation: `../../../knowledgebase/drugs/drug_capecitabine/models/modelica/Capecitabine_SezBell2021_population_pk_model_estimates_rse.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Downloadable models
 
-No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
+Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_capecitabine/Capecitabine_SezBell2021_population_pk_model_estimates_rse/Capecitabine_SezBell2021_population_pk_model_estimates_rse_modelica.zip" download>Capecitabine_SezBell2021_population_pk_model_estimates_rse_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>

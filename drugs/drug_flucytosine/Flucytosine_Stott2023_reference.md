@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D01A&quot;,&quot;href&quot;:&quot;atc/D01A.md&quot;},{&quot;label&quot;:&quot;flucytosine&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/&quot;},{&quot;label&quot;:&quot;Stott_2023 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flucytosine_Hope2006_reference&quot;,&quot;label&quot;:&quot;Hope_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/Flucytosine_Hope2006_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flucytosine_Stott2023_reference&quot;,&quot;label&quot;:&quot;Stott_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/Flucytosine_Stott2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Flucytosine_Stegman1999_reference&quot;,&quot;label&quot;:&quot;Stegman_1999_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/Flucytosine_Stegman1999_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # flucytosine — `Flucytosine_Stott2023_reference`
 
@@ -6,7 +7,7 @@
 
 ### Reviewer guidance
 
-**What is wrong:** the simulated model does not reproduce a value the paper reports; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T1_t_half_beta — expected 14.5 — got 0.4525826489339038 — ratio 0.0312; T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 3 covered; T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** the simulated model does not reproduce a value the paper reports; the model was built differently from what the record describes. Evidence: T1_t_half_beta — expected 14.5 — got 0.4525826489339038 — ratio 0.0312; T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 3 covered
 
 **Steps:**
 1. Open the paper's reported table and confirm the target value and its units.
@@ -83,7 +84,7 @@ Stott KE; Ahmadu A; Kajanga C; Moyo M; Gondwe E; Chimang'anga W; et al. et al. (
 | T3_output_variable | not captured | pass | C_central (measured=flucytosine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['kcomp'] |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 | T1_cmax | reference | skipped | not captured | 0.001585022164713422 | not captured | non-numeric value |
 | T1_cmax | reference | skipped | not captured | 0.001585022164713422 | not captured | non-numeric value |
 | T1_t_half_beta | reference | fail | 14.5 | 0.4525826489339038 | 0.0312 | h→SI vs simulated h |

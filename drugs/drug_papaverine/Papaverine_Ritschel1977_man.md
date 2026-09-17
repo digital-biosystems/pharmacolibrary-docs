@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;papaverine&quot;,&quot;href&quot;:&quot;drugs/drug_papaverine/&quot;},{&quot;label&quot;:&quot;Ritschel_1977 \u00b7 man&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Papaverine_Ritschel1977_man&quot;,&quot;label&quot;:&quot;Ritschel_1977_man&quot;,&quot;href&quot;:&quot;drugs/drug_papaverine/Papaverine_Ritschel1977_man.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # papaverine — `Papaverine_Ritschel1977_man`
 

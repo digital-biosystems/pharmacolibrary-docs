@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;simvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/&quot;},{&quot;label&quot;:&quot;Jadhav_2023 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Simvastatin_Kovalenko2025_reference&quot;,&quot;label&quot;:&quot;Kovalenko_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kovalenko2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_wierczek2024_reference&quot;,&quot;label&quot;:&quot;\u015awierczek_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_wierczek2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Kim2021_reference&quot;,&quot;label&quot;:&quot;Kim_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kim2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Lohitnavy2015_reference&quot;,&quot;label&quot;:&quot;Lohitnavy_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Lohitnavy2015_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Methaneethorn2014_reference&quot;,&quot;label&quot;:&quot;Methaneethorn_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Methaneethorn2014_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Methaneethorn2014v2_reference&quot;,&quot;label&quot;:&quot;Methaneethorn_2014_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Methaneethorn2014v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Ogungbenro2019_base&quot;,&quot;label&quot;:&quot;Ogungbenro_2019_base&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Ogungbenro2019_base&quot;,&quot;label&quot;:&quot;Ogungbenro_2019_base&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Ogungbenro2019_between_subject_variability_bsvb&quot;,&quot;label&quot;:&quot;Ogungbenro_2019_between_subject_variability_bsvb&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_between_subject_variability_bsvb.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Ogungbenro2019_between_subject_variability_bsvb&quot;,&quot;label&quot;:&quot;Ogungbenro_2019_between_subject_variability_bsvb&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_between_subject_variability_bsvb.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Ogungbenro2019_parameters&quot;,&quot;label&quot;:&quot;Ogungbenro_2019_parameters&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_parameters.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Ogungbenro2019_parameters&quot;,&quot;label&quot;:&quot;Ogungbenro_2019_parameters&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_parameters.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Tsamandouras2014_reference&quot;,&quot;label&quot;:&quot;Tsamandouras_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Tsamandouras2014_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Tsamandouras2015_reference&quot;,&quot;label&quot;:&quot;Tsamandouras_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Tsamandouras2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # simvastatin — `Simvastatin_Jadhav2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,18 +21,16 @@ Jadhav SB; Amore BM; Bockbrader H; Crass RL; Chapel S; Sasiela WJ; Emery MG et a
   ·  DOI: [10.1007/s10928-023-09864-w](https://doi.org/10.1007/s10928-023-09864-w)
 
 ## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Jadhav2023_reference" status="needs_review" stale="false" population="" measured-compound="simvastatin" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="simvastatin" model-id="Simvastatin_Jadhav2023_reference" status="curated_candidate" stale="false" population="" measured-compound="simvastatin" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F, L/h | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Jadhav_2023:review | — | not captured |
-| Vc/F, L | `Q290` · V1/F | —(suppressed) | L | — | L | not captured | review (0.7) | Jadhav_2023:review | — | not captured |
-| Ka, h−1 | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review (0.7) | Jadhav_2023:review | — | not captured |
+| CL/F, L/h | `Q27` · CL/F | 0.755 | L/h | 2.0972222222222223e-07 | L/h | not captured | review (0.7) | Jadhav_2023:review | — | not captured |
+| Vc/F, L | `Q290` · V1/F | 19.1 | L | 0.019100000000000002 | L | not captured | review (0.7) | Jadhav_2023:review | — | not captured |
+| Ka, h−1 | `Q49` · kabs | 1.4 | h−1 | 0.00038888888888888887 | 1/h | not captured | review (0.7) | Jadhav_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -74,7 +72,7 @@ Jadhav SB; Amore BM; Bockbrader H; Crass RL; Chapel S; Sasiela WJ; Emery MG et a
 | T3_output_variable | not captured | pass | C_central (measured=simvastatin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05A&quot;,&quot;href&quot;:&quot;atc/A05A.md&quot;},{&quot;label&quot;:&quot;cholic acid&quot;,&quot;href&quot;:&quot;drugs/drug_cholic_acid/&quot;},{&quot;label&quot;:&quot;Quarfordt_1973 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CholicAcid_Quarfordt1973_reference&quot;,&quot;label&quot;:&quot;Quarfordt_1973_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cholic_acid/CholicAcid_Quarfordt1973_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # cholic acid — `CholicAcid_Quarfordt1973_reference`
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_elYazigi1993_reference&quot;,&quot;label&quot;:&quot;el-Yazigi_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Rosario2017_reference&quot;,&quot;label&quot;:&quot;Rosario_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Rosario2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Yang2015_reference&quot;,&quot;label&quot;:&quot;Yang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Yang2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # azathioprine
 
@@ -25,10 +26,10 @@ Azathiprine was granted FDA approval on 20 March 1968.[L11214]
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Lin_2021](drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md) | Lin R et al., Population pharmacokinetics of azathiop…, Basic & clinical pharmacolo… (2021) | [10.1111/bcpt.13530](https://doi.org/10.1111/bcpt.13530) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [el-Yazigi_1993](drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md) | el-Yazigi A et al., Pharmacokinetics of azathioprine after…, Journal of clinical pharmac… (1993) | [10.1002/j.1552-4604.1993.tb04698.x](https://doi.org/10.1002/j.1552-4604.1993.tb04698.x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Rosario_2017](drugs/drug_azathioprine/Azathioprine_Rosario2017_reference.md) | Rosario M et al., A Review of the Clinical Pharmacokineti…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0546-0](https://doi.org/10.1007/s40262-017-0546-0) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yang_2015](drugs/drug_azathioprine/Azathioprine_Yang2015_reference.md) | Yang X et al., Pharmacokinetic modeling of therapies f…, Expert review of clinical p… (2015) | [10.1586/17512433.2015.1059751](https://doi.org/10.1586/17512433.2015.1059751) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [el-Yazigi_1993_reference](drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md) | el-Yazigi A et al., Pharmacokinetics of azathioprine after…, Journal of clinical pharmac… (1993) | [10.1002/j.1552-4604.1993.tb04698.x](https://doi.org/10.1002/j.1552-4604.1993.tb04698.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Lin_2021_reference](drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md) | Lin R et al., Population pharmacokinetics of azathiop…, Basic & clinical pharmacolo… (2021) | [10.1111/bcpt.13530](https://doi.org/10.1111/bcpt.13530) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Rosario_2017_reference](drugs/drug_azathioprine/Azathioprine_Rosario2017_reference.md) | Rosario M et al., A Review of the Clinical Pharmacokineti…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0546-0](https://doi.org/10.1007/s40262-017-0546-0) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yang_2015_reference](drugs/drug_azathioprine/Azathioprine_Yang2015_reference.md) | Yang X et al., Pharmacokinetic modeling of therapies f…, Expert review of clinical p… (2015) | [10.1586/17512433.2015.1059751](https://doi.org/10.1586/17512433.2015.1059751) |
 
 ## Pharmacodynamics (PD)
 
@@ -125,7 +126,7 @@ Azathiprine was granted FDA approval on 20 March 1968.[L11214]
 
 - **PubMed hits:** 1118 matched, 104 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 2  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

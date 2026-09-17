@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ornithine_Le1997_burn_patients&quot;,&quot;label&quot;:&quot;Le_1997_burn patients&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Le1997_burn_patients.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # CREB3L1 level — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Gong_2026`

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;eptifibatide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eptifibatide_Liu2020_healthy_chinese_subjects&quot;,&quot;label&quot;:&quot;Liu_2020_healthy Chinese subjects&quot;,&quot;href&quot;:&quot;drugs/drug_eptifibatide/Eptifibatide_Liu2020_healthy_chinese_subjects.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eptifibatide_Wang2015_healthy_chinese_volunteers&quot;,&quot;label&quot;:&quot;Wang_2015_healthy Chinese volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_eptifibatide/Eptifibatide_Wang2015_healthy_chinese_volunteers.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # eptifibatide
 
@@ -23,8 +24,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2020](drugs/drug_eptifibatide/Eptifibatide_Liu2020_healthy_chinese_subjects.md) | Liu L et al., Clinical Evaluation of the Tolerability…, Clinical pharmacology in dr… (2020) | [10.1002/cpdd.717](https://doi.org/10.1002/cpdd.717) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2015](drugs/drug_eptifibatide/Eptifibatide_Wang2015_healthy_chinese_volunteers.md) | Wang XP et al., Population pharmacokinetics and safety…, International journal of cl… (2015) | [10.5414/CP202196](https://doi.org/10.5414/CP202196) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2020_healthy Chinese subjects](drugs/drug_eptifibatide/Eptifibatide_Liu2020_healthy_chinese_subjects.md) | Liu L et al., Clinical Evaluation of the Tolerability…, Clinical pharmacology in dr… (2020) | [10.1002/cpdd.717](https://doi.org/10.1002/cpdd.717) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2015_healthy Chinese volunteers](drugs/drug_eptifibatide/Eptifibatide_Wang2015_healthy_chinese_volunteers.md) | Wang XP et al., Population pharmacokinetics and safety…, International journal of cl… (2015) | [10.5414/CP202196](https://doi.org/10.5414/CP202196) |
 
 ## Coverage
 

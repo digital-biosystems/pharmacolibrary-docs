@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07D&quot;,&quot;href&quot;:&quot;atc/A07D.md&quot;},{&quot;label&quot;:&quot;opium&quot;,&quot;href&quot;:&quot;drugs/drug_opium/&quot;},{&quot;label&quot;:&quot;Liu_2016 \u00b7 neonates with abstinence syndrome&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Opium_Liu2016_neonates_with_abstinence_syndrome&quot;,&quot;label&quot;:&quot;Liu_2016_neonates with abstinence syndrome&quot;,&quot;href&quot;:&quot;drugs/drug_opium/Opium_Liu2016_neonates_with_abstinence_syndrome.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # opium — `Opium_Liu2016_neonates_with_abstinence_syndrome`
 

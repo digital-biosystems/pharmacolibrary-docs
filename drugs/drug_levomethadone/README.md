@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;levomethadone&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levomethadone_Sandbaumhter20212_reference&quot;,&quot;label&quot;:&quot;Sandbaumh\u00fcter_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_levomethadone/Levomethadone_Sandbaumhter20212_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # levomethadone
 
@@ -17,7 +18,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sandbaumhüter_2021_2](drugs/drug_levomethadone/Levomethadone_Sandbaumhter20212_reference.md) | Sandbaumhüter FA et al., Stereoselective methadone disposition a…, Electrophoresis (2021) | [10.1002/elps.202100115](https://doi.org/10.1002/elps.202100115) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sandbaumhüter_2021_2_reference](drugs/drug_levomethadone/Levomethadone_Sandbaumhter20212_reference.md) | Sandbaumhüter FA et al., Stereoselective methadone disposition a…, Electrophoresis (2021) | [10.1002/elps.202100115](https://doi.org/10.1002/elps.202100115) |
 
 ## Coverage
 

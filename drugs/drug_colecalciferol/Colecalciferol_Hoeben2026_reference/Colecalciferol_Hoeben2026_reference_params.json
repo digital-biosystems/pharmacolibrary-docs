@@ -1,0 +1,22 @@
+{
+ "model_id": "Colecalciferol_Hoeben2026_reference",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.805555555555555e-10,
+  "F": 1.0,
+  "VdPerKg": 2.542857142857143e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.05617333193882393
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

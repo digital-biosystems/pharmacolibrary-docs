@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05A&quot;,&quot;href&quot;:&quot;atc/B05A.md&quot;},{&quot;label&quot;:&quot;hydroxyethylstarch&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/&quot;},{&quot;label&quot;:&quot;Yamakage_2012 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxyethylstarch_Asskali1999_reference&quot;,&quot;label&quot;:&quot;Asskali_1999_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Asskali1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxyethylstarch_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxyethylstarch_Yamakage2012_reference&quot;,&quot;label&quot;:&quot;Yamakage_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Yamakage2012_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydroxyethylstarch_Singh2022_reference&quot;,&quot;label&quot;:&quot;Singh_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxyethylstarch/Hydroxyethylstarch_Singh2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # hydroxyethylstarch — `Hydroxyethylstarch_Yamakage2012_reference`
 
@@ -48,8 +49,6 @@ Yamakage M; Bepperling F; Wargenau M; Miyao H et al. (2012). Journal of anesthes
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q22 (CL) from Goutelle_2022's review values (primary lacked it)
-- gap-filled Q61 (V) from Haefliger_2025's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Yamakage_2012_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model

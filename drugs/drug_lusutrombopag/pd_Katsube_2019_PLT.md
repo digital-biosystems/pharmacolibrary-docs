@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lusutrombopag_Katsube2019_reference&quot;,&quot;label&quot;:&quot;Katsube_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lusutrombopag/Lusutrombopag_Katsube2019_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # platelet count — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Katsube_2019`

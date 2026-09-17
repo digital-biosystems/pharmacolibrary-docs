@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fostamatinib&quot;,&quot;href&quot;:&quot;drugs/drug_fostamatinib/&quot;},{&quot;label&quot;:&quot;Bostr\u00f6m_2014 \u00b7 patients with rheumatoid arthritis&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fostamatinib_Bostrm2014_patients_with_rheumatoid_arthritis&quot;,&quot;label&quot;:&quot;Bostr\u00f6m_2014_patients with rheumatoid arthritis&quot;,&quot;href&quot;:&quot;drugs/drug_fostamatinib/Fostamatinib_Bostrm2014_patients_with_rheumatoid_arthritis.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # fostamatinib — `Fostamatinib_Bostrm2014_patients_with_rheumatoid_arthritis`
 

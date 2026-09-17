@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;concizumab&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Concizumab_Agers2014_cynomolgus_monkeys&quot;,&quot;label&quot;:&quot;Agers\u00f8_2014_Cynomolgus monkeys&quot;,&quot;href&quot;:&quot;drugs/drug_concizumab/Concizumab_Agers2014_cynomolgus_monkeys.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # concizumab
 
@@ -27,7 +28,7 @@ Concizumab-mtci (Alhemo) was approved by the FDA in December 2024 for use in pat
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Agersø_2014](drugs/drug_concizumab/Concizumab_Agers2014_cynomolgus_monkeys.md) | Agersø H et al., Pharmacokinetics of an anti-TFPI monocl…, European journal of pharmac… (2014) | [10.1016/j.ejps.2014.02.009](https://doi.org/10.1016/j.ejps.2014.02.009) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Agersø_2014_Cynomolgus monkeys](drugs/drug_concizumab/Concizumab_Agers2014_cynomolgus_monkeys.md) | Agersø H et al., Pharmacokinetics of an anti-TFPI monocl…, European journal of pharmac… (2014) | [10.1016/j.ejps.2014.02.009](https://doi.org/10.1016/j.ejps.2014.02.009) |
 
 ## Pharmacodynamics (PD)
 

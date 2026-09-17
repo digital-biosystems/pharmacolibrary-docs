@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;zastaprazan&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zastaprazan_Yang2024_reference&quot;,&quot;label&quot;:&quot;Yang_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_zastaprazan/Zastaprazan_Yang2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # zastaprazan
 
@@ -21,7 +22,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yang_2024](drugs/drug_zastaprazan/Zastaprazan_Yang2024_reference.md) | Yang E et al., Population pharmacokinetic analysis of…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13228](https://doi.org/10.1002/psp4.13228) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yang_2024_reference](drugs/drug_zastaprazan/Zastaprazan_Yang2024_reference.md) | Yang E et al., Population pharmacokinetic analysis of…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13228](https://doi.org/10.1002/psp4.13228) |
 
 ## Coverage
 

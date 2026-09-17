@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G02C&quot;,&quot;href&quot;:&quot;atc/G02C.md&quot;},{&quot;label&quot;:&quot;naproxen&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naproxen_Bjrnsson2011_reference&quot;,&quot;label&quot;:&quot;Bj\u00f6rnsson_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # naproxen
 
@@ -23,13 +24,13 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Björnsson_2011](drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference.md) | Björnsson MA et al., Modelling of pain intensity and informa…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03924.x](https://doi.org/10.1111/j.1365-2125.2011.03924.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Björnsson_2011_reference](drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference.md) | Björnsson MA et al., Modelling of pain intensity and informa…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03924.x](https://doi.org/10.1111/j.1365-2125.2011.03924.x) |
 
 ## Coverage
 
 - **PubMed hits:** 65 matched, 40 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Screened and excluded

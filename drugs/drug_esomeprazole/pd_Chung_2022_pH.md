@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Esomeprazole_Chung2022_reference&quot;,&quot;label&quot;:&quot;Chung_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Esomeprazole_Gebreyesus2022_reference&quot;,&quot;label&quot;:&quot;Gebreyesus_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/Esomeprazole_Gebreyesus2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # intragastric pH — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Chung_2022`

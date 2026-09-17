@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;phenobarbital&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenobarbital_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_phenobarbital/Phenobarbital_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Phenobarbital_TeixeiradaSilva2022_reference&quot;,&quot;label&quot;:&quot;Teixeira-da-Silva_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_phenobarbital/Phenobarbital_TeixeiradaSilva2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Phenobarbital_Yalcin2022_reference&quot;,&quot;label&quot;:&quot;Yalcin_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_phenobarbital/Phenobarbital_Yalcin2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # phenobarbital
 
@@ -23,9 +24,9 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Yalcin_2022](drugs/drug_phenobarbital/Phenobarbital_Yalcin2022_reference.md) | Yalcin N et al., Population pharmacokinetics in critical…, BMJ paediatrics open (2022) | [10.1136/bmjpo-2022-001512](https://doi.org/10.1136/bmjpo-2022-001512) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Stoschus_2025](drugs/drug_phenobarbital/Phenobarbital_Stoschus2025_reference.md) | Stoschus M et al., Optimizing phenobarbital dosing in crit…, Epilepsia (2025) | [10.1111/epi.18517](https://doi.org/10.1111/epi.18517) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Teixeira-da-Silva_2022](drugs/drug_phenobarbital/Phenobarbital_TeixeiradaSilva2022_reference.md) | Teixeira-da-Silva P et al., Population Pharmacokinetics of Valproic…, Pharmaceutics (2022) | [10.3390/pharmaceutics14040811](https://doi.org/10.3390/pharmaceutics14040811) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Stoschus_2025_reference](drugs/drug_phenobarbital/Phenobarbital_Stoschus2025_reference.md) | Stoschus M et al., Optimizing phenobarbital dosing in crit…, Epilepsia (2025) | [10.1111/epi.18517](https://doi.org/10.1111/epi.18517) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Teixeira-da-Silva_2022_reference](drugs/drug_phenobarbital/Phenobarbital_TeixeiradaSilva2022_reference.md) | Teixeira-da-Silva P et al., Population Pharmacokinetics of Valproic…, Pharmaceutics (2022) | [10.3390/pharmaceutics14040811](https://doi.org/10.3390/pharmaceutics14040811) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Yalcin_2022_reference](drugs/drug_phenobarbital/Phenobarbital_Yalcin2022_reference.md) | Yalcin N et al., Population pharmacokinetics in critical…, BMJ paediatrics open (2022) | [10.1136/bmjpo-2022-001512](https://doi.org/10.1136/bmjpo-2022-001512) |
 
 ## Pharmacodynamics (PD)
 
@@ -52,7 +53,7 @@
 
 - **PubMed hits:** 1038 matched, 88 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 1  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

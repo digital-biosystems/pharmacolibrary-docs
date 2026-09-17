@@ -1,0 +1,24 @@
+{
+ "model_id": "BloodPlasma_CherkaouiRbati2023_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "C_central"
+ ],
+ "parameters": {
+  "Cl": 1.322222222222222e-07,
+  "F": 1.0,
+  "VdPerKg": 0.0001225714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.0012011137011137011,
+  "k21": 0.00017985262749660658,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "C_central": 0.000138976797125642
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

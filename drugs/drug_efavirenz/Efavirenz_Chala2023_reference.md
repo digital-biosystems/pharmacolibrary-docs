@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;efavirenz&quot;,&quot;href&quot;:&quot;drugs/drug_efavirenz/&quot;},{&quot;label&quot;:&quot;Chala_2023 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Efavirenz_Chala2023_reference&quot;,&quot;label&quot;:&quot;Chala_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_efavirenz/Efavirenz_Chala2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Efavirenz_Vucicevic2025_reference&quot;,&quot;label&quot;:&quot;Vucicevic_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_efavirenz/Efavirenz_Vucicevic2025_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # efavirenz — `Efavirenz_Chala2023_reference`
 

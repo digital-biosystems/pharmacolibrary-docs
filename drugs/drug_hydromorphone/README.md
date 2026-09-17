@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;hydromorphone&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydromorphone_Wimbish2024_reference&quot;,&quot;label&quot;:&quot;Wimbish_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydromorphone/Hydromorphone_Wimbish2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydromorphone_Meissner2025_reference&quot;,&quot;label&quot;:&quot;Meissner_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # hydromorphone
 
@@ -29,8 +30,8 @@ Off-label, hydromorphone can be administered for the suppression of refractory c
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Wimbish_2024](drugs/drug_hydromorphone/Hydromorphone_Wimbish2024_reference.md) | Wimbish C et al., Pharmacokinetics of a continuous intrav…, Frontiers in veterinary sci… (2024) | [10.3389/fvets.2024.1362730](https://doi.org/10.3389/fvets.2024.1362730) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Meissner_2025](drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference.md) | Meissner K et al., Morphine and hydromorphone pharmacokine…, British journal of anaesthe… (2025) | [10.1016/j.bja.2024.08.042](https://doi.org/10.1016/j.bja.2024.08.042) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Wimbish_2024_reference](drugs/drug_hydromorphone/Hydromorphone_Wimbish2024_reference.md) | Wimbish C et al., Pharmacokinetics of a continuous intrav…, Frontiers in veterinary sci… (2024) | [10.3389/fvets.2024.1362730](https://doi.org/10.3389/fvets.2024.1362730) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Meissner_2025_reference](drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference.md) | Meissner K et al., Morphine and hydromorphone pharmacokine…, British journal of anaesthe… (2025) | [10.1016/j.bja.2024.08.042](https://doi.org/10.1016/j.bja.2024.08.042) |
 
 ## Pharmacodynamics (PD)
 

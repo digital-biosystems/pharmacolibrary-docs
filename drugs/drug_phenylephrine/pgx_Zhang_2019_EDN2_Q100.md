@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenylephrine_Anderson2017_children_and_adults&quot;,&quot;label&quot;:&quot;Anderson_2017_children and adults&quot;,&quot;href&quot;:&quot;drugs/drug_phenylephrine/Phenylephrine_Anderson2017_children_and_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # EDN2 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Zhang_2019`

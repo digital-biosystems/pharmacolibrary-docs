@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;triamcinolone&quot;,&quot;href&quot;:&quot;drugs/drug_triamcinolone/&quot;},{&quot;label&quot;:&quot;Kraus_2018 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Triamcinolone_Kraus2018_reference&quot;,&quot;label&quot;:&quot;Kraus_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_triamcinolone/Triamcinolone_Kraus2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # triamcinolone — `Triamcinolone_Kraus2018_reference`
 

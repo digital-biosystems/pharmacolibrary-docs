@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;bivalirudin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bivalirudin_Zhang2012_reference&quot;,&quot;label&quot;:&quot;Zhang_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bivalirudin/Bivalirudin_Zhang2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # bivalirudin
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2012](drugs/drug_bivalirudin/Bivalirudin_Zhang2012_reference.md) | Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2012_reference](drugs/drug_bivalirudin/Bivalirudin_Zhang2012_reference.md) | Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37) |
 
 ## Pharmacodynamics (PD)
 

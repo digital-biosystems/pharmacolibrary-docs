@@ -1,21 +1,23 @@
 {
  "model_id": "D_4AminosalicylicAcid_Sy2015_reference",
- "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "C_central"
  ],
  "parameters": {
   "F": 1.0,
+  "Tlag": 0.0,
   "VdPerKg": 0.0006985714285714286,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
+  "ka": 4.284722222222222e-05,
   "weight": 70.0
  },
  "reference_peaks": {
-  "C_central": 0.0020168824943308725
+  "C_central": 0.0007238150855741132
  },
  "stop_time": 86400.0,
- "template": "PK_1C",
- "template_fmu": "PK_1C.fmu"
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
 }

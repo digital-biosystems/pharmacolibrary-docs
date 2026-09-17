@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;gemcitabine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gemcitabine_Doi2017_reference&quot;,&quot;label&quot;:&quot;Doi_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_Doi2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gemcitabine_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gemcitabine_Sathe2024_reference&quot;,&quot;label&quot;:&quot;Sathe_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gemcitabine/Gemcitabine_Sathe2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # gemcitabine
 
@@ -32,9 +33,9 @@ Gemcitabine is marketed as Gemzar and it is available as intravenous injection. 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Doi_2017](drugs/drug_gemcitabine/Gemcitabine_Doi2017_reference.md) | Doi T et al., NC-6004 Phase I study in combination wi…, Cancer chemotherapy and pha… (2017) | [10.1007/s00280-017-3254-4](https://doi.org/10.1007/s00280-017-3254-4) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Terranova_2021](drugs/drug_gemcitabine/Gemcitabine_Terranova2021_reference.md) | Terranova N et al., Population pharmacokinetics of ATR inhi…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04184-z](https://doi.org/10.1007/s00280-020-04184-z) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sathe_2024](drugs/drug_gemcitabine/Gemcitabine_Sathe2024_reference.md) | Sathe AG et al., Population Pharmacokinetics of Sacituzu…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01366-3](https://doi.org/10.1007/s40262-024-01366-3) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Doi_2017_reference](drugs/drug_gemcitabine/Gemcitabine_Doi2017_reference.md) | Doi T et al., NC-6004 Phase I study in combination wi…, Cancer chemotherapy and pha… (2017) | [10.1007/s00280-017-3254-4](https://doi.org/10.1007/s00280-017-3254-4) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Terranova_2021_reference](drugs/drug_gemcitabine/Gemcitabine_Terranova2021_reference.md) | Terranova N et al., Population pharmacokinetics of ATR inhi…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04184-z](https://doi.org/10.1007/s00280-020-04184-z) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sathe_2024_reference](drugs/drug_gemcitabine/Gemcitabine_Sathe2024_reference.md) | Sathe AG et al., Population Pharmacokinetics of Sacituzu…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01366-3](https://doi.org/10.1007/s40262-024-01366-3) |
 
 ## Pharmacodynamics (PD)
 

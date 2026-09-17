@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Crizanlizumab_Sy2023_reference&quot;,&quot;label&quot;:&quot;Sy_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_crizanlizumab/Crizanlizumab_Sy2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # soluble P-selectin — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Sy_2023`

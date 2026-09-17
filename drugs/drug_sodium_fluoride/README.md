@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;sodium fluoride&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumFluoride_Setnikar1990_healthy_adults&quot;,&quot;label&quot;:&quot;Setnikar_1990_healthy adults&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_fluoride/SodiumFluoride_Setnikar1990_healthy_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # sodium fluoride
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Setnikar_1990](drugs/drug_sodium_fluoride/SodiumFluoride_Setnikar1990_healthy_adults.md) | Setnikar I et al., Relative bioavailability of fluoride fr…, Arzneimittel-Forschung (1990) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Setnikar_1990_healthy adults](drugs/drug_sodium_fluoride/SodiumFluoride_Setnikar1990_healthy_adults.md) | Setnikar I et al., Relative bioavailability of fluoride fr…, Arzneimittel-Forschung (1990) | — |
 
 ## Pharmacodynamics (PD)
 

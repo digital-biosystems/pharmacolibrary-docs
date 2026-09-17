@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;acetylsalicylic acid&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/&quot;},{&quot;label&quot;:&quot;Thoueille_2023 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AcetylsalicylicAcid_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Koh2025_reference&quot;,&quot;label&quot;:&quot;Koh_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_CuestaGragera2015_reference&quot;,&quot;label&quot;:&quot;Cuesta-Gragera_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_CuestaGragera2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # acetylsalicylic acid — `AcetylsalicylicAcid_Thoueille2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `tenofovir alafenamide`, measured `acetylsalicylic_acid`.
 
@@ -23,18 +23,16 @@ Thoueille P; Alves Saldanha S; Desfontaine V; Kusejko K; Courlet P; Andre P; Cav
   ·  DOI: [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103)
 
 ## Model component
-<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Thoueille2023_reference" status="needs_review" stale="false" population="adults living with HIV" measured-compound="acetylsalicylic_acid" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Thoueille2023_reference" status="curated_candidate" stale="false" population="adults living with HIV" measured-compound="acetylsalicylic_acid" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLTFV (L/h) | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
-| V TFV (L) | `Q61` · V | —(suppressed) | L | — | L | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
-| k a (h−1) | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
+| CLTFV (L/h) | `Q27` · CL/F | 42.2 | L/h | 1.1722222222222222e-05 | L/h | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
+| V TFV (L) | `Q61` · V | 2390.0 | L | 2.39 | L | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
+| k a (h−1) | `Q49` · kabs | 2.0 | h−1 | 0.0005555555555555556 | 1/h | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -76,7 +74,7 @@ Thoueille P; Alves Saldanha S; Desfontaine V; Kusejko K; Courlet P; Andre P; Cav
 | T3_output_variable | not captured | pass | C_central (measured=acetylsalicylic_acid) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -93,13 +91,21 @@ Thoueille P; Alves Saldanha S; Desfontaine V; Kusejko K; Courlet P; Andre P; Cav
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference.svg" alt="AcetylsalicylicAcid_Thoueille2023_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
+
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_modelica.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_matlab.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_matlab_simbio.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_sbml.zip" download>AcetylsalicylicAcid_Thoueille2023_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -110,7 +116,11 @@ Each archive holds the model source, a script that simulates it against the appr
 
 ## Web simulation
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
+
+<dbs-fmusim paramsurl="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference/AcetylsalicylicAcid_Thoueille2023_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Template `PK_1C_enteral` · parameters `AcetylsalicylicAcid_Thoueille2023_reference_params.json` · controls `AcetylsalicylicAcid_Thoueille2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

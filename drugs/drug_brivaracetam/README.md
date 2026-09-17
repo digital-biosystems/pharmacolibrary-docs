@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;brivaracetam&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brivaracetam_Schoemaker2017v2_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2017_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Schoemaker2017v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # brivaracetam
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Schoemaker_2017_2](drugs/drug_brivaracetam/Brivaracetam_Schoemaker2017v2_reference.md) | Schoemaker (2017) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Schoemaker_2017_2_reference](drugs/drug_brivaracetam/Brivaracetam_Schoemaker2017v2_reference.md) | Schoemaker (2017) | — |
 
 ## Coverage
 

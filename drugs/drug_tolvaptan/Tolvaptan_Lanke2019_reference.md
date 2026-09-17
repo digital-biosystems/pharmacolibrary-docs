@@ -1,22 +1,20 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03X&quot;,&quot;href&quot;:&quot;atc/C03X.md&quot;},{&quot;label&quot;:&quot;tolvaptan&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/&quot;},{&quot;label&quot;:&quot;Lanke_2019 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_reference&quot;,&quot;label&quot;:&quot;Lanke_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Bhatt2014_reference&quot;,&quot;label&quot;:&quot;Bhatt_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2012v3_reference&quot;,&quot;label&quot;:&quot;Shoaf_2012_3_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2012v3_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # tolvaptan — `Tolvaptan_Lanke2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the model was built differently from what the record describes; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 3 scholar param(s) emitted or defaulted — got 2 covered
+**What is wrong:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
 
 **Steps:**
-1. Open the emitted .mo and compare its base class and parameters with the record.
-2. Check the .deviation.json beside it for what the engineer defaulted or assumed.
-3. A wrong base class or a defaulted core parameter means rebuilding, not curating.
-4. Advisory only — the base model still replicates.
-5. Check the record's covariate_definitions in _interpretv2.yaml.
-6. Re-run the engineer for this drug if the covariate curves are wanted.
+1. Advisory only — the base model still replicates.
+2. Check the record's covariate_definitions in _interpretv2.yaml.
+3. Re-run the engineer for this drug if the covariate curves are wanted.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,22 +23,20 @@ Lanke S; Shoaf SE et al. (2019). Journal of clinical pharmacology 59
   ·  DOI: [10.1002/jcph.1370](https://doi.org/10.1002/jcph.1370)
 
 ## Model component
-<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Lanke2019_reference" status="needs_review" stale="false" population="adults with autosomal dominant polycystic kidney disease" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Lanke2019_reference" status="accepted_with_caveats" stale="false" population="adults with autosomal dominant polycystic kidney disease" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | jcph1370-tbl-0003:row2:col1, jcph1370-tbl-0003:row2:col2, jcph1370-tbl-0003:row2:col3, jcph1370-tbl-0003:row2:col4, jcph1370-tbl-0003:row2:col5 | — | not captured |
-| Vd/F (L) | `Q76` · V/F | —(suppressed) | L | — | [l] | not captured | exact (1.0) | jcph1370-tbl-0003:row6:col1, jcph1370-tbl-0003:row6:col2, jcph1370-tbl-0003:row6:col3, jcph1370-tbl-0003:row6:col4, jcph1370-tbl-0003:row6:col5 | — | not captured |
-| D1 (h) | `Q310` · D1 | —(suppressed) | h | — | [h] | not captured | exact (1.0) | jcph1370-tbl-0003:row8:col1, jcph1370-tbl-0003:row8:col2, jcph1370-tbl-0003:row8:col3, jcph1370-tbl-0003:row8:col4, jcph1370-tbl-0003:row8:col5 | — | not captured |
-| theta_q319_egfr_power | `Q900` · theta_q319_egfr_power | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | jcph1370-tbl-0003:row3:col2, jcph1370-tbl-0003:row3:col3, jcph1370-tbl-0003:row3:col4, jcph1370-tbl-0003:row3:col5 | — | not captured |
-| theta_q319_wt_power | `Q900` · theta_q319_wt_power | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | jcph1370-tbl-0003:row4:col2, jcph1370-tbl-0003:row4:col3, jcph1370-tbl-0003:row4:col4, jcph1370-tbl-0003:row4:col5 | — | not captured |
-| theta_q319_wt_power | `Q900` · theta_q319_wt_power | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | jcph1370-tbl-0003:row7:col2, jcph1370-tbl-0003:row7:col3, jcph1370-tbl-0003:row7:col4, jcph1370-tbl-0003:row7:col5 | — | not captured |
-| k a (h -1 ) | `Q49` · kabs | —(suppressed) | h -1 | — | 1/h | not captured | review_gapfill (0.7) | Van_2013_2:review | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 13.4 | L/h | 3.7222222222222225e-06 | [l] / [h] | not captured | exact (1.0) | jcph1370-tbl-0003:row2:col1, jcph1370-tbl-0003:row2:col2, jcph1370-tbl-0003:row2:col3, jcph1370-tbl-0003:row2:col4, jcph1370-tbl-0003:row2:col5 | — | not captured |
+| Vd/F (L) | `Q76` · V/F | 120 | L | 0.12 | [l] | not captured | exact (1.0) | jcph1370-tbl-0003:row6:col1, jcph1370-tbl-0003:row6:col2, jcph1370-tbl-0003:row6:col3, jcph1370-tbl-0003:row6:col4, jcph1370-tbl-0003:row6:col5 | — | not captured |
+| D1 (h) | `Q310` · D1 | 0.78 | h | 2808.0 | [h] | not captured | exact (1.0) | jcph1370-tbl-0003:row8:col1, jcph1370-tbl-0003:row8:col2, jcph1370-tbl-0003:row8:col3, jcph1370-tbl-0003:row8:col4, jcph1370-tbl-0003:row8:col5 | — | not captured |
+| theta_q319_egfr_power | `Q900` · theta_q319_egfr_power | 0.54 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1370-tbl-0003:row3:col2, jcph1370-tbl-0003:row3:col3, jcph1370-tbl-0003:row3:col4, jcph1370-tbl-0003:row3:col5 | — | not captured |
+| theta_q319_wt_power | `Q900` · theta_q319_wt_power | -0.35 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1370-tbl-0003:row4:col2, jcph1370-tbl-0003:row4:col3, jcph1370-tbl-0003:row4:col4, jcph1370-tbl-0003:row4:col5 | — | not captured |
+| theta_q319_wt_power | `Q900` · theta_q319_wt_power | 0.44 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1370-tbl-0003:row7:col2, jcph1370-tbl-0003:row7:col3, jcph1370-tbl-0003:row7:col4, jcph1370-tbl-0003:row7:col5 | — | not captured |
+| k a (h -1 ) | `Q49` · kabs | 1.34 | h -1 | 0.00037222222222222225 | 1/h | not captured | review_gapfill (0.7) | Van_2013_2:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -50,6 +46,7 @@ Lanke S; Shoaf SE et al. (2019). Journal of clinical pharmacology 59
 ## Departures & gaps
 
 **Deviations:**
+- `defaulted_parameters`: ['Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
@@ -71,8 +68,6 @@ Lanke S; Shoaf SE et al. (2019). Journal of clinical pharmacology 59
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Van_2013_2's review values (primary lacked it)
-- built from REVIEW reference values (Lanke_2019) — secondary source
-- volume reported by review
 
 **Extraction notes:**
 - LLM selected parameter table(s) 3
@@ -102,8 +97,8 @@ Lanke S; Shoaf SE et al. (2019). Journal of clinical pharmacology 59
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=tolvaptan) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | fail | 3 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['kabs'] |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
@@ -131,14 +126,14 @@ The structure OpenModelica draws for this model, with **this record's parameter 
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
-**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_modelica.zip" download>Tolvaptan_Lanke2019_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_fmi.zip" download>Tolvaptan_Lanke2019_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_modelica.zip" download>Tolvaptan_Lanke2019_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_fmi.zip" download>Tolvaptan_Lanke2019_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_matlab.zip" download>Tolvaptan_Lanke2019_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_matlab_simbio.zip" download>Tolvaptan_Lanke2019_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_sbml.zip" download>Tolvaptan_Lanke2019_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_sbml.zip" download>Tolvaptan_Lanke2019_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_cellml.zip" download>Tolvaptan_Lanke2019_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 
@@ -148,9 +143,9 @@ Each archive holds the model source, a script that simulates it against the appr
 
 Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
 
-<dbs-fmusim paramsurl="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>Template `PK_1C` · parameters `Tolvaptan_Lanke2019_reference_params.json` · controls `Tolvaptan_Lanke2019_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Template `PK_1C_enteral` · parameters `Tolvaptan_Lanke2019_reference_params.json` · controls `Tolvaptan_Lanke2019_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

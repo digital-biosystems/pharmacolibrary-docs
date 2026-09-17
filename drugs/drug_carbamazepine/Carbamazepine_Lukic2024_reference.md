@@ -1,18 +1,20 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;carbamazepine&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/&quot;},{&quot;label&quot;:&quot;Lukic_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carbamazepine_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Li2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Milovanovic2016_reference&quot;,&quot;label&quot;:&quot;Milovanovic_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Milovanovic2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Yip2021_reference&quot;,&quot;label&quot;:&quot;Yip_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Yip2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Djordjevic2016_reference&quot;,&quot;label&quot;:&quot;Djordjevic_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Djordjevic2016_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Djordjevic2025_reference&quot;,&quot;label&quot;:&quot;Djordjevic_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Djordjevic2025_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Naik2021_reference&quot;,&quot;label&quot;:&quot;Naik_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Naik2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Punyawudho2012_reference&quot;,&quot;label&quot;:&quot;Punyawudho_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Lukic2024_reference&quot;,&quot;label&quot;:&quot;Lukic_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Lukic2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Carbamazepine_Saruwatari2010_final_population_pharmacokineti&quot;,&quot;label&quot;:&quot;Saruwatari_2010_final_population_pharmacokinetic_model&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Saruwatari2010_final_population_pharmacokineti.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Saruwatari2010_final_population_pharmacokineti&quot;,&quot;label&quot;:&quot;Saruwatari_2010_final_population_pharmacokinetic_model&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Saruwatari2010_final_population_pharmacokineti.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Saruwatari2010_genetic_polymorphisms&quot;,&quot;label&quot;:&quot;Saruwatari_2010_genetic_polymorphisms&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Saruwatari2010_genetic_polymorphisms.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Saruwatari2010_genetic_polymorphisms&quot;,&quot;label&quot;:&quot;Saruwatari_2010_genetic_polymorphisms&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Saruwatari2010_genetic_polymorphisms.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # carbamazepine — `Carbamazepine_Lukic2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
+**What is wrong:** the model was built differently from what the record describes. Evidence: T3_output_variable — expected Metabolite_C (measured=carbamazepine and carbamazepine-10,11-epoxide) — got central.C; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
+1. Open the emitted .mo and compare its base class and parameters with the record.
+2. Check the .deviation.json beside it for what the engineer defaulted or assumed.
+3. A wrong base class or a defaulted core parameter means rebuilding, not curating.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `carbamazepine`, measured `carbamazepine and carbamazepine-10,11-epoxide`.
 
@@ -23,12 +25,12 @@ Lukic V; Jankovic SM; Petrovic NZ; Vucinic S; Jovic Stosic J; Djordjevic S; et a
   ·  DOI: [10.1080/17425255.2024.2381555](https://doi.org/10.1080/17425255.2024.2381555)
 
 ## Model component
-<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Lukic2024_reference" status="model_quarantined" stale="false" population="adults with carbamazepine self-poisoning" measured-compound="carbamazepine and carbamazepine-10,11-epoxide" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Lukic2024_reference" status="rejected" stale="false" population="adults with carbamazepine self-poisoning" measured-compound="carbamazepine and carbamazepine-10,11-epoxide" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `rejected`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -50,6 +52,7 @@ Lukic V; Jankovic SM; Petrovic NZ; Vucinic S; Jovic Stosic J; Djordjevic S; et a
 - gap-filled Q61 (V) from Li_2021's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- engineer: parent_metabolite composite downgraded to a 1C model of the measured compound — the paper reports the metabolite's own CL and V but neither the parent's disposition nor a formation rate, so the parent sub-component could not be populated; the parent's concentration-time course is NOT produced by this model
 
 **Extraction notes:**
 - no GROBID TEI available
@@ -74,9 +77,10 @@ Lukic V; Jankovic SM; Petrovic NZ; Vucinic S; Jovic Stosic J; Djordjevic S; et a
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=carbamazepine and carbamazepine-10,11-epoxide) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | parent_metabolite → PK_Parent_Metabolite* | PK_Parent_Metabolite | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -86,19 +90,28 @@ Lukic V; Jankovic SM; Petrovic NZ; Vucinic S; Jovic Stosic J; Djordjevic S; et a
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_carbamazepine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lukic_2024` / `Lukic_2024::reference`)
-- model: `../../../knowledgebase/drugs/drug_carbamazepine/models/modelica/_needs_review/Carbamazepine_Lukic2024_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_carbamazepine/models/modelica/_needs_review/Carbamazepine_Lukic2024_reference.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_carbamazepine/models/modelica/Carbamazepine_Lukic2024_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_carbamazepine/models/modelica/Carbamazepine_Lukic2024_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_carbamazepine/models/modelica/Carbamazepine_Lukic2024_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_carbamazepine/Carbamazepine_Lukic2024_reference/Carbamazepine_Lukic2024_reference.svg" alt="Carbamazepine_Lukic2024_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_carbamazepine/Carbamazepine_Lukic2024_reference/Carbamazepine_Lukic2024_reference_modelica.zip" download>Carbamazepine_Lukic2024_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_carbamazepine/Carbamazepine_Lukic2024_reference/Carbamazepine_Lukic2024_reference_matlab.zip" download>Carbamazepine_Lukic2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_carbamazepine/Carbamazepine_Lukic2024_reference/Carbamazepine_Lukic2024_reference_matlab_simbio.zip" download>Carbamazepine_Lukic2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_carbamazepine/Carbamazepine_Lukic2024_reference/Carbamazepine_Lukic2024_reference_sbml.zip" download>Carbamazepine_Lukic2024_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
@@ -109,7 +122,11 @@ Each archive holds the model source, a script that simulates it against the appr
 
 ## Web simulation
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
+
+<dbs-fmusim paramsurl="drugs/drug_carbamazepine/Carbamazepine_Lukic2024_reference/Carbamazepine_Lukic2024_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_carbamazepine/Carbamazepine_Lukic2024_reference/Carbamazepine_Lukic2024_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Template `PK_1C` · parameters `Carbamazepine_Lukic2024_reference_params.json` · controls `Carbamazepine_Lukic2024_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

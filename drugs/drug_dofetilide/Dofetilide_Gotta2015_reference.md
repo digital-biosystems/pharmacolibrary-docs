@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;dofetilide&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/&quot;},{&quot;label&quot;:&quot;Gotta_2015 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dofetilide_Gotta2015_reference&quot;,&quot;label&quot;:&quot;Gotta_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/Dofetilide_Gotta2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # dofetilide — `Dofetilide_Gotta2015_reference`
 

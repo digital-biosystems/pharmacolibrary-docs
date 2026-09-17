@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mitiglinide_Liu2017_reference&quot;,&quot;label&quot;:&quot;Liu_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_mitiglinide/Mitiglinide_Liu2017_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # plasma glucose — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Liu_2017`

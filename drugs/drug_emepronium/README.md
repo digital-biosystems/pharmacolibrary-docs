@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03C&quot;,&quot;href&quot;:&quot;atc/A03C.md&quot;},{&quot;label&quot;:&quot;emepronium&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Emepronium_Pilbrant1985_healthy_volunteers&quot;,&quot;label&quot;:&quot;Pilbrant_1985_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_emepronium/Emepronium_Pilbrant1985_healthy_volunteers.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # emepronium
 
@@ -17,7 +18,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Pilbrant_1985](drugs/drug_emepronium/Emepronium_Pilbrant1985_healthy_volunteers.md) | Pilbrant A et al., Pharmacokinetics and pharmacodynamics o…, Acta pharmacologica et toxi… (1985) | [10.1111/j.1600-0773.1985.tb01292.x](https://doi.org/10.1111/j.1600-0773.1985.tb01292.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Pilbrant_1985_healthy volunteers](drugs/drug_emepronium/Emepronium_Pilbrant1985_healthy_volunteers.md) | Pilbrant A et al., Pharmacokinetics and pharmacodynamics o…, Acta pharmacologica et toxi… (1985) | [10.1111/j.1600-0773.1985.tb01292.x](https://doi.org/10.1111/j.1600-0773.1985.tb01292.x) |
 
 ## Coverage
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;flupirtine&quot;,&quot;href&quot;:&quot;drugs/drug_flupirtine/&quot;},{&quot;label&quot;:&quot;Giorgi_2016 \u00b7 healthy adult mares&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flupirtine_Giorgi2016_healthy_adult_mares&quot;,&quot;label&quot;:&quot;Giorgi_2016_healthy adult mares&quot;,&quot;href&quot;:&quot;drugs/drug_flupirtine/Flupirtine_Giorgi2016_healthy_adult_mares.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # flupirtine — `Flupirtine_Giorgi2016_healthy_adult_mares`
 

@@ -5,16 +5,16 @@
   "central.C"
  ],
  "parameters": {
-  "Cl": 6.055555555555556e-07,
+  "Cl": 3.1666666666666667e-07,
   "F": 1.0,
-  "VdPerKg": 0.00031,
+  "VdPerKg": 6.799999999999999e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 0.004569929911014522
+  "central.C": 0.02059464137568502
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aprotinin_Tae2011_neonates_and_young_infants_undergoing_card&quot;,&quot;label&quot;:&quot;Tae_2011_neonates and young infants undergoing cardiopulmonary bypass&quot;,&quot;href&quot;:&quot;drugs/drug_aprotinin/Aprotinin_Tae2011_neonates_and_young_infants_undergoing_card.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # PAI-1 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Sirgo_2009`

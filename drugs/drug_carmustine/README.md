@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;carmustine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carmustine_Russo1981_reference&quot;,&quot;label&quot;:&quot;Russo_1981_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carmustine/Carmustine_Russo1981_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carmustine_Levin1978_reference&quot;,&quot;label&quot;:&quot;Levin_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carmustine/Carmustine_Levin1978_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carmustine_ElYazigi1988_reference&quot;,&quot;label&quot;:&quot;El-Yazigi_1988_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carmustine/Carmustine_ElYazigi1988_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # carmustine
 
@@ -23,9 +24,9 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Russo_1981](drugs/drug_carmustine/Carmustine_Russo1981_reference.md) | Russo R et al., Differential pulse polarographic determ…, Cancer treatment reports (1981) | — |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Levin_1978](drugs/drug_carmustine/Carmustine_Levin1978_reference.md) | Levin VA et al., Pharmacokinetics of BCNU in man: a prel…, Cancer treatment reports (1978) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [El-Yazigi_1988](drugs/drug_carmustine/Carmustine_ElYazigi1988_reference.md) | El-Yazigi A et al., Capillary gas chromatography and thermi…, Pharmaceutical research (1988) | [10.1023/a:1015989612562](https://doi.org/10.1023/a:1015989612562) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Russo_1981_reference](drugs/drug_carmustine/Carmustine_Russo1981_reference.md) | Russo R et al., Differential pulse polarographic determ…, Cancer treatment reports (1981) | — |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Levin_1978_reference](drugs/drug_carmustine/Carmustine_Levin1978_reference.md) | Levin VA et al., Pharmacokinetics of BCNU in man: a prel…, Cancer treatment reports (1978) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [El-Yazigi_1988_reference](drugs/drug_carmustine/Carmustine_ElYazigi1988_reference.md) | El-Yazigi A et al., Capillary gas chromatography and thermi…, Pharmaceutical research (1988) | [10.1023/a:1015989612562](https://doi.org/10.1023/a:1015989612562) |
 
 ## Pharmacodynamics (PD)
 

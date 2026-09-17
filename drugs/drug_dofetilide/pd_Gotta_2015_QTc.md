@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dofetilide_Gotta2015_reference&quot;,&quot;label&quot;:&quot;Gotta_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/Dofetilide_Gotta2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # QTc prolongation — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Gotta_2015`

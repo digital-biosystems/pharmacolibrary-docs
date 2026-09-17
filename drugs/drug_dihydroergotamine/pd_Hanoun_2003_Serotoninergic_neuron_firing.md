@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydroergotamine_Hilke1978_adults_undergoing_spinal_anaesth&quot;,&quot;label&quot;:&quot;Hilke_1978_adults undergoing spinal anaesthesia&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergotamine/Dihydroergotamine_Hilke1978_adults_undergoing_spinal_anaesth.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dihydroergotamine_Schran1985_healthy_volunteers&quot;,&quot;label&quot;:&quot;Schran_1985_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergotamine/Dihydroergotamine_Schran1985_healthy_volunteers.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 # name — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Hanoun_2003`

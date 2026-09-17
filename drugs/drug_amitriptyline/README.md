@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;amitriptyline&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Koh2019_reference&quot;,&quot;label&quot;:&quot;Koh_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_RatajczakEnselme2015_reference&quot;,&quot;label&quot;:&quot;Ratajczak-Enselme_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # amitriptyline
 
@@ -35,8 +36,8 @@ Off-label uses: irritable bowel syndrome, sleep disorders, diabetic neuropathy, 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl[amitriptyline], Vd[amitriptyline], Cl[nortriptyline], Vd[…</sub><br><sub>route_to: `scholar`</sub> | [Koh_2019](drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md) | Koh A et al., Quantitative Modeling Analysis Demonstr…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1344](https://doi.org/10.1002/jcph.1344) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Ratajczak-Enselme_2015](drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md) | Ratajczak-Enselme M et al., Population Pharmacokinetics of Amitript…, Regional anesthesia and pai… (2015) | [10.1097/AAP.0000000000000322](https://doi.org/10.1097/AAP.0000000000000322) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Koh_2019_reference](drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md) | Koh A et al., Quantitative Modeling Analysis Demonstr…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1344](https://doi.org/10.1002/jcph.1344) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Ratajczak-Enselme_2015_reference](drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md) | Ratajczak-Enselme M et al., Population Pharmacokinetics of Amitript…, Regional anesthesia and pai… (2015) | [10.1097/AAP.0000000000000322](https://doi.org/10.1097/AAP.0000000000000322) |
 
 ## Pharmacodynamics (PD)
 

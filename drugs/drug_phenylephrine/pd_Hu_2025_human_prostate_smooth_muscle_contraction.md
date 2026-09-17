@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenylephrine_Anderson2017_children_and_adults&quot;,&quot;label&quot;:&quot;Anderson_2017_children and adults&quot;,&quot;href&quot;:&quot;drugs/drug_phenylephrine/Phenylephrine_Anderson2017_children_and_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Hu_2025`

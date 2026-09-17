@@ -1,21 +1,20 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;lacosamide&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/&quot;},{&quot;label&quot;:&quot;Yu_2026 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lacosamide_Yu2026_reference&quot;,&quot;label&quot;:&quot;Yu_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Yu2026_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lacosamide_Li2025_boostrap&quot;,&quot;label&quot;:&quot;Li_2025_boostrap&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_boostrap.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Li2025_boostrap&quot;,&quot;label&quot;:&quot;Li_2025_boostrap&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_boostrap.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Li2025_final_models&quot;,&quot;label&quot;:&quot;Li_2025_final_models&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_final_models.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Li2025_final_models&quot;,&quot;label&quot;:&quot;Li_2025_final_models&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_final_models.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Jang2025_high_seizure_burden_group_n_28&quot;,&quot;label&quot;:&quot;Jang_2025_high_seizure_burden_group_n_28&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Jang2025_high_seizure_burden_group_n_28.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Jang2025_high_seizure_burden_group_n_28&quot;,&quot;label&quot;:&quot;Jang_2025_high_seizure_burden_group_n_28&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Jang2025_high_seizure_burden_group_n_28.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Jang2025_low_seizure_burden_group_n_95&quot;,&quot;label&quot;:&quot;Jang_2025_low_seizure_burden_group_n_95&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Jang2025_low_seizure_burden_group_n_95.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Jang2025_low_seizure_burden_group_n_95&quot;,&quot;label&quot;:&quot;Jang_2025_low_seizure_burden_group_n_95&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Jang2025_low_seizure_burden_group_n_95.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Jang2025_p_value&quot;,&quot;label&quot;:&quot;Jang_2025_p_value&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Jang2025_p_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Jang2025_p_value&quot;,&quot;label&quot;:&quot;Jang_2025_p_value&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Jang2025_p_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Jang2025_total_n_123&quot;,&quot;label&quot;:&quot;Jang_2025_total_n_123&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Jang2025_total_n_123.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Jang2025_total_n_123&quot;,&quot;label&quot;:&quot;Jang_2025_total_n_123&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Jang2025_total_n_123.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # lacosamide — `Lacosamide_Yu2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised; T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
-3. Advisory only — the base model still replicates.
-4. Check the record's covariate_definitions in _interpretv2.yaml.
-5. Re-run the engineer for this drug if the covariate curves are wanted.
+1. Advisory only — the base model still replicates.
+2. Check the record's covariate_definitions in _interpretv2.yaml.
+3. Re-run the engineer for this drug if the covariate curves are wanted.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -24,20 +23,18 @@ Yu L; Mao F; Chen S; Yu K; Hu Y; Chen J; et al. et al. (2026). BMC pharmacology 
   ·  DOI: [10.1186/s40360-026-01114-2](https://doi.org/10.1186/s40360-026-01114-2)
 
 ## Model component
-<dbs-pgx drug="lacosamide" model-id="Lacosamide_Yu2026_reference" status="needs_review" stale="false" population="adult patients with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="lacosamide" model-id="Lacosamide_Yu2026_reference" status="accepted_with_caveats" stale="false" population="adult patients with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | Tab2:row2:col1, Tab2:row2:col2, Tab2:row2:col3, Tab2:row2:col4 | — | not captured |
-| V (L/kg) | `Q61` · V | —(suppressed) | L/kg | — | [l] / [kg] | not captured | exact (1.0) | Tab2:row3:col1 | — | not captured |
-| Ka (h− 1) | `Q49` · kabs | —(suppressed) | h− 1 | — | [1] / [h] | not captured | exact (1.0) | Tab2:row4:col1 | — | not captured |
-| sex_on_cl_f | `Q900` · sex_on_cl_f | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Tab2:row6:col1, Tab2:row6:col2, Tab2:row6:col3, Tab2:row6:col4 | — | not captured |
-| crcl_on_cl_f | `Q900` · crcl_on_cl_f | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Tab2:row7:col1, Tab2:row7:col2, Tab2:row7:col3, Tab2:row7:col4 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 1.86 | L/h | 5.166666666666667e-07 | [l] / [h] | not captured | exact (1.0) | Tab2:row2:col1, Tab2:row2:col2, Tab2:row2:col3, Tab2:row2:col4 | — | not captured |
+| V (L/kg) | `Q61` · V | 0.6 | L/kg | 0.041999999999999996 | [l] / [kg] | not captured | exact (1.0) | Tab2:row3:col1 | — | not captured |
+| Ka (h− 1) | `Q49` · kabs | 6.47 | h− 1 | 0.0017972222222222222 | [1] / [h] | not captured | exact (1.0) | Tab2:row4:col1 | — | not captured |
+| sex_on_cl_f | `Q900` · sex_on_cl_f | 0.875 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row6:col1, Tab2:row6:col2, Tab2:row6:col3, Tab2:row6:col4 | — | not captured |
+| crcl_on_cl_f | `Q900` · crcl_on_cl_f | 0.311 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row7:col1, Tab2:row7:col2, Tab2:row7:col3, Tab2:row7:col4 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -89,7 +86,7 @@ Yu L; Mao F; Chen S; Yu K; Hu Y; Chen J; et al. et al. (2026). BMC pharmacology 
 | T3_output_variable | not captured | pass | C_central (measured=lacosamide) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

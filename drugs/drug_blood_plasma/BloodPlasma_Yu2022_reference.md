@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05A&quot;,&quot;href&quot;:&quot;atc/B05A.md&quot;},{&quot;label&quot;:&quot;blood plasma&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/&quot;},{&quot;label&quot;:&quot;Yu_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BloodPlasma_Alshehri2023_reference&quot;,&quot;label&quot;:&quot;Alshehri_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Alshehri2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_Kong2022_reference&quot;,&quot;label&quot;:&quot;Kong_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Kong2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_Marques2026_reference&quot;,&quot;label&quot;:&quot;Marques_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Marques2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_Shah2025_reference&quot;,&quot;label&quot;:&quot;Shah_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Shah2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_Yu2022_reference&quot;,&quot;label&quot;:&quot;Yu_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;BloodPlasma_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_Baalbaki2023_reference&quot;,&quot;label&quot;:&quot;Baalbaki_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Baalbaki2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_Liu2020_reference&quot;,&quot;label&quot;:&quot;Liu_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Liu2020_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BloodPlasma_Tang2017_reference&quot;,&quot;label&quot;:&quot;Tang_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_blood_plasma/BloodPlasma_Tang2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # blood plasma — `BloodPlasma_Yu2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,20 +21,18 @@ Yu H; Graham G; David OJ; Kahn JM; Savelieva M; Pigeolet E; Das Gupta A; Pingili
   ·  DOI: [10.1007/s40263-021-00895-w](https://doi.org/10.1007/s40263-021-00895-w)
 
 ## Model component
-<dbs-pgx drug="blood plasma" model-id="BloodPlasma_Yu2022_reference" status="needs_review" stale="false" population="" measured-compound="blood_plasma" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="blood plasma" model-id="BloodPlasma_Yu2022_reference" status="curated_candidate" stale="false" population="" measured-compound="blood_plasma" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/day) | `Q22` · CL | —(suppressed) | L/day | — | L/h | not captured | review (0.7) | Yu_2022:review | — | not captured |
-| Vc (L) | `Q63` · V1 | —(suppressed) | L | — | L | not captured | review (0.7) | Yu_2022:review | — | not captured |
-| Vp (L) | `Q64` · V2 | —(suppressed) | L | — | L | not captured | review (0.7) | Yu_2022:review | — | not captured |
-| Q (L/day) | `Q30` · Q | —(suppressed) | L/day | — | L/h | not captured | review (0.7) | Yu_2022:review | — | not captured |
-| ka (day−1) | `Q49` · kabs | —(suppressed) | day−1 | — | 1/h | not captured | review (0.7) | Yu_2022:review | — | not captured |
+| CL (L/day) | `Q22` · CL | 0.34 | L/day | 3.935185185185186e-09 | L/h | not captured | review (0.7) | Yu_2022:review | — | not captured |
+| Vc (L) | `Q63` · V1 | 2.62 | L | 0.0026200000000000004 | L | not captured | review (0.7) | Yu_2022:review | — | not captured |
+| Vp (L) | `Q64` · V2 | 2.8 | L | 0.0028 | L | not captured | review (0.7) | Yu_2022:review | — | not captured |
+| Q (L/day) | `Q30` · Q | 0.358 | L/day | 4.1435185185185185e-09 | L/h | not captured | review (0.7) | Yu_2022:review | — | not captured |
+| ka (day−1) | `Q49` · kabs | 0.157 | day−1 | 1.8171296296296296e-06 | 1/h | not captured | review (0.7) | Yu_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -77,7 +75,7 @@ Yu H; Graham G; David OJ; Kahn JM; Savelieva M; Pigeolet E; Das Gupta A; Pingili
 | T3_output_variable | not captured | pass | C_central (measured=blood_plasma) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -94,13 +92,21 @@ Yu H; Graham G; David OJ; Kahn JM; Savelieva M; Pigeolet E; Das Gupta A; Pingili
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference.svg" alt="BloodPlasma_Yu2022_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
+
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_2C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference_modelica.zip" download>BloodPlasma_Yu2022_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference_matlab.zip" download>BloodPlasma_Yu2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference_matlab_simbio.zip" download>BloodPlasma_Yu2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference_sbml.zip" download>BloodPlasma_Yu2022_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -111,7 +117,11 @@ Each archive holds the model source, a script that simulates it against the appr
 
 ## Web simulation
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
+
+<dbs-fmusim paramsurl="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_blood_plasma/BloodPlasma_Yu2022_reference/BloodPlasma_Yu2022_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Template `PK_2C_enteral` · parameters `BloodPlasma_Yu2022_reference_params.json` · controls `BloodPlasma_Yu2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

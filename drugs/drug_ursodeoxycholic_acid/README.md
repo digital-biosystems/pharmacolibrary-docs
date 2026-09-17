@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05A&quot;,&quot;href&quot;:&quot;atc/A05A.md&quot;},{&quot;label&quot;:&quot;ursodeoxycholic acid&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;UrsodeoxycholicAcid_Yue2008_rats&quot;,&quot;label&quot;:&quot;Yue_2008_rats&quot;,&quot;href&quot;:&quot;drugs/drug_ursodeoxycholic_acid/UrsodeoxycholicAcid_Yue2008_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # ursodeoxycholic acid
 
@@ -27,7 +28,7 @@ It is used for the short-term treatment of radiolucent, noncalcified gallbladder
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yue_2008](drugs/drug_ursodeoxycholic_acid/UrsodeoxycholicAcid_Yue2008_rats.md) | Yue PF et al., Preparation, characterization, and bioa…, Drug development and indust… (2008) | [10.1080/03639040701842477](https://doi.org/10.1080/03639040701842477) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yue_2008_rats](drugs/drug_ursodeoxycholic_acid/UrsodeoxycholicAcid_Yue2008_rats.md) | Yue PF et al., Preparation, characterization, and bioa…, Drug development and indust… (2008) | [10.1080/03639040701842477](https://doi.org/10.1080/03639040701842477) |
 
 ## Coverage
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;metronidazole&quot;,&quot;href&quot;:&quot;drugs/drug_metronidazole/&quot;},{&quot;label&quot;:&quot;Suyagh_2011 \u00b7 preterm neonates&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metronidazole_Suyagh2011_preterm_neonates&quot;,&quot;label&quot;:&quot;Suyagh_2011_preterm neonates&quot;,&quot;href&quot;:&quot;drugs/drug_metronidazole/Metronidazole_Suyagh2011_preterm_neonates.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # metronidazole — `Metronidazole_Suyagh2011_preterm_neonates`
 

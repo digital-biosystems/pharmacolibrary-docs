@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;nimustine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nimustine_Hori1987_reference&quot;,&quot;label&quot;:&quot;Hori_1987_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nimustine/Nimustine_Hori1987_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # nimustine
 
@@ -21,7 +22,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hori_1987](drugs/drug_nimustine/Nimustine_Hori1987_reference.md) | Hori T et al., Influence of modes of ACNU administrati…, Journal of neurosurgery (1987) | [10.3171/jns.1987.66.3.0372](https://doi.org/10.3171/jns.1987.66.3.0372) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hori_1987_reference](drugs/drug_nimustine/Nimustine_Hori1987_reference.md) | Hori T et al., Influence of modes of ACNU administrati…, Journal of neurosurgery (1987) | [10.3171/jns.1987.66.3.0372](https://doi.org/10.3171/jns.1987.66.3.0372) |
 
 ## Coverage
 

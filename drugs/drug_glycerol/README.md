@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;glycerol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia&quot;,&quot;label&quot;:&quot;Beylot_1987_healthy adults and insulin-dependent diabetic patients&quot;,&quot;href&quot;:&quot;drugs/drug_glycerol/Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # glycerol
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Beylot_1987](drugs/drug_glycerol/Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia.md) | Beylot M et al., Determination of steady state and nonst…, Journal of lipid research (1987) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Beylot_1987_healthy adults and insulin-dependent diabetic patients](drugs/drug_glycerol/Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia.md) | Beylot M et al., Determination of steady state and nonst…, Journal of lipid research (1987) | — |
 
 ## Pharmacodynamics (PD)
 

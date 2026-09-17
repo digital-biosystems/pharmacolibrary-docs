@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;phenazone&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenazone_Doyle1981_non_human_primates_baboon_cynomolgus_mon&quot;,&quot;label&quot;:&quot;Doyle_1981_non-human primates (baboon, cynomolgus monkey, rhesus monkey)&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/Phenazone_Doyle1981_non_human_primates_baboon_cynomolgus_mon.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Phenazone_Eichelbaum1982_healthy_male_volunteers&quot;,&quot;label&quot;:&quot;Eichelbaum_1982_healthy male volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/Phenazone_Eichelbaum1982_healthy_male_volunteers.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 # phenazone
 
@@ -25,8 +26,8 @@ In combination with benzocaine in otic solutions, antipyrine is indicated for th
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Doyle_1981](drugs/drug_phenazone/Phenazone_Doyle1981_non_human_primates_baboon_cynomolgus_mon.md) | Doyle E et al., Comparative pharmacokinetics of antipyr…, Toxicology (1981) | [10.1016/0300-483x(81)90097-4](https://doi.org/10.1016/0300-483x(81)90097-4) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Eichelbaum_1982](drugs/drug_phenazone/Phenazone_Eichelbaum1982_healthy_male_volunteers.md) | Eichelbaum M et al., Pharmacokinetics and metabolism of anti…, Arzneimittel-Forschung (1982) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Doyle_1981_non-human primates (baboon, cynomolgus monkey, rhesus monkey)](drugs/drug_phenazone/Phenazone_Doyle1981_non_human_primates_baboon_cynomolgus_mon.md) | Doyle E et al., Comparative pharmacokinetics of antipyr…, Toxicology (1981) | [10.1016/0300-483x(81)90097-4](https://doi.org/10.1016/0300-483x(81)90097-4) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Eichelbaum_1982_healthy male volunteers](drugs/drug_phenazone/Phenazone_Eichelbaum1982_healthy_male_volunteers.md) | Eichelbaum M et al., Pharmacokinetics and metabolism of anti…, Arzneimittel-Forschung (1982) | — |
 
 ## Pharmacodynamics (PD)
 

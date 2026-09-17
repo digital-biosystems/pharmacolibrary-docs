@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Garadacimab_Pawaskar2022_reference&quot;,&quot;label&quot;:&quot;Pawaskar_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_garadacimab/Garadacimab_Pawaskar2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # FXIIa-mediated kallikrein activity — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Garcia_2025`

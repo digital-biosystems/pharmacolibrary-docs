@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;fenoldopam&quot;,&quot;href&quot;:&quot;drugs/drug_fenoldopam/&quot;},{&quot;label&quot;:&quot;Ziemniak_1989 \u00b7 healthy volunteers&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fenoldopam_Ziemniak1989_healthy_volunteers&quot;,&quot;label&quot;:&quot;Ziemniak_1989_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_fenoldopam/Fenoldopam_Ziemniak1989_healthy_volunteers.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # fenoldopam — `Fenoldopam_Ziemniak1989_healthy_volunteers`
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;mitiglinide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mitiglinide_Liu2017_reference&quot;,&quot;label&quot;:&quot;Liu_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_mitiglinide/Mitiglinide_Liu2017_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # mitiglinide
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Liu_2017](drugs/drug_mitiglinide/Mitiglinide_Liu2017_reference.md) | Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & toxicolo… (2017) | [10.1186/s40360-017-0161-6](https://doi.org/10.1186/s40360-017-0161-6) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Liu_2017_reference](drugs/drug_mitiglinide/Mitiglinide_Liu2017_reference.md) | Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & toxicolo… (2017) | [10.1186/s40360-017-0161-6](https://doi.org/10.1186/s40360-017-0161-6) |
 
 ## Pharmacodynamics (PD)
 

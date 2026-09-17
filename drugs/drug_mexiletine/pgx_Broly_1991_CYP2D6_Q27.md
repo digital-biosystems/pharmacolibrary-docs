@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mexiletine_Vozeh1982_patients_treated_for_arrhythmias&quot;,&quot;label&quot;:&quot;Vozeh_1982_patients treated for arrhythmias&quot;,&quot;href&quot;:&quot;drugs/drug_mexiletine/Mexiletine_Vozeh1982_patients_treated_for_arrhythmias.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 # CYP2D6 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Broly_1991`

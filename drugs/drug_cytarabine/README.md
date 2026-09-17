@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;cytarabine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cytarabine_Crook2013_healthy_dogs&quot;,&quot;label&quot;:&quot;Crook_2013_healthy dogs&quot;,&quot;href&quot;:&quot;drugs/drug_cytarabine/Cytarabine_Crook2013_healthy_dogs.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # cytarabine
 
@@ -25,7 +26,7 @@ Cytarabine is indicated in combination with [daunorubicin] for the treatment of 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Crook_2013](drugs/drug_cytarabine/Cytarabine_Crook2013_healthy_dogs.md) | Crook KI et al., The pharmacokinetics of cytarabine in d…, Journal of veterinary pharm… (2013) | [10.1111/jvp.12008](https://doi.org/10.1111/jvp.12008) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Crook_2013_healthy dogs](drugs/drug_cytarabine/Cytarabine_Crook2013_healthy_dogs.md) | Crook KI et al., The pharmacokinetics of cytarabine in d…, Journal of veterinary pharm… (2013) | [10.1111/jvp.12008](https://doi.org/10.1111/jvp.12008) |
 
 ## Coverage
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;dulaglutide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dulaglutide_Admiraal2023_reference&quot;,&quot;label&quot;:&quot;Admiraal_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/Dulaglutide_Admiraal2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dulaglutide_Ng2018_reference&quot;,&quot;label&quot;:&quot;Ng_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/Dulaglutide_Ng2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dulaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dulaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/Dulaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dulaglutide_Zheng2023_reference&quot;,&quot;label&quot;:&quot;Zheng_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dulaglutide_Choi2025_reference&quot;,&quot;label&quot;:&quot;Choi_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dulaglutide/Dulaglutide_Choi2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # dulaglutide
 
@@ -23,12 +24,12 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Admiraal_2023](drugs/drug_dulaglutide/Dulaglutide_Admiraal2023_reference.md) | Admiraal MM et al., Neuroprotection after cardiac arrest wi…, Frontiers in neurology (2023) | [10.3389/fneur.2023.1136046](https://doi.org/10.3389/fneur.2023.1136046) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Min_2025](drugs/drug_dulaglutide/Dulaglutide_Min2025_reference.md) | Min JS et al., A Comprehensive Review on the Pharmacok…, Drug design, development an… (2025) | [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ng_2018](drugs/drug_dulaglutide/Dulaglutide_Ng2018_reference.md) | Ng CM et al., Population pharmacokinetics of exendin-…, British journal of clinical… (2018) | [10.1111/bcp.13463](https://doi.org/10.1111/bcp.13463) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Zheng_2023](drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference.md) | Zheng S et al., A long-acting GDF15 analog causes robus…, Clinical and translational… (2023) | [10.1111/cts.13543](https://doi.org/10.1111/cts.13543) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yu_2024](drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference.md) | Yu H et al., Exposure-response modeling for nausea i…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13194](https://doi.org/10.1002/psp4.13194) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Choi_2025](drugs/drug_dulaglutide/Dulaglutide_Choi2025_reference.md) | Choi S et al., Population pharmacokinetics of efpeglen…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1715585](https://doi.org/10.3389/fphar.2025.1715585) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Admiraal_2023_reference](drugs/drug_dulaglutide/Dulaglutide_Admiraal2023_reference.md) | Admiraal MM et al., Neuroprotection after cardiac arrest wi…, Frontiers in neurology (2023) | [10.3389/fneur.2023.1136046](https://doi.org/10.3389/fneur.2023.1136046) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ng_2018_reference](drugs/drug_dulaglutide/Dulaglutide_Ng2018_reference.md) | Ng CM et al., Population pharmacokinetics of exendin-…, British journal of clinical… (2018) | [10.1111/bcp.13463](https://doi.org/10.1111/bcp.13463) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Yu_2024_reference](drugs/drug_dulaglutide/Dulaglutide_Yu2024_reference.md) | Yu H et al., Exposure-response modeling for nausea i…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13194](https://doi.org/10.1002/psp4.13194) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Min_2025_reference](drugs/drug_dulaglutide/Dulaglutide_Min2025_reference.md) | Min JS et al., A Comprehensive Review on the Pharmacok…, Drug design, development an… (2025) | [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Zheng_2023_reference](drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference.md) | Zheng S et al., A long-acting GDF15 analog causes robus…, Clinical and translational… (2023) | [10.1111/cts.13543](https://doi.org/10.1111/cts.13543) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Choi_2025_reference](drugs/drug_dulaglutide/Dulaglutide_Choi2025_reference.md) | Choi S et al., Population pharmacokinetics of efpeglen…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1715585](https://doi.org/10.3389/fphar.2025.1715585) |
 
 ## Pharmacodynamics (PD)
 
@@ -62,7 +63,7 @@
 
 - **PubMed hits:** 103 matched, 56 returned
 - **screened:** 11  ·  **relevant:** 1
-- **records:** 6  ·  extracted 4  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 6  ·  extracted 3  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

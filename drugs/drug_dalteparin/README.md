@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;dalteparin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dalteparin_Damle2021_reference&quot;,&quot;label&quot;:&quot;Damle_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dalteparin/Dalteparin_Damle2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dalteparin_van2022_reference&quot;,&quot;label&quot;:&quot;van_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dalteparin/Dalteparin_van2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # dalteparin
 
@@ -27,8 +28,8 @@ It is also used in the prevention of clotting during hemodialysis and hemofiltra
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Damle_2021](drugs/drug_dalteparin/Dalteparin_Damle2021_reference.md) | Damle B et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1716](https://doi.org/10.1002/jcph.1716) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [van_2022](drugs/drug_dalteparin/Dalteparin_van2022_reference.md) | van der Heijden CDCC et al., Effects of dalteparin on anti-Xa activi…, British journal of clinical… (2022) | [10.1111/bcp.15208](https://doi.org/10.1111/bcp.15208) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Damle_2021_reference](drugs/drug_dalteparin/Dalteparin_Damle2021_reference.md) | Damle B et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1716](https://doi.org/10.1002/jcph.1716) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [van_2022_reference](drugs/drug_dalteparin/Dalteparin_van2022_reference.md) | van der Heijden CDCC et al., Effects of dalteparin on anti-Xa activi…, British journal of clinical… (2022) | [10.1111/bcp.15208](https://doi.org/10.1111/bcp.15208) |
 
 ## Coverage
 

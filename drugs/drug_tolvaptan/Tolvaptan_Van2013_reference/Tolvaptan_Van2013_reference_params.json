@@ -1,22 +1,24 @@
 {
  "model_id": "Tolvaptan_Van2013_reference",
- "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
  "parameters": {
-  "Cl": 4.666666666666667e-06,
   "F": 1.0,
-  "VdPerKg": 0.003,
+  "Tlag": 554.4,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 3e-05,
+  "k12": 7.332332332332333e-06,
+  "k21": 2.608618233618234e-05,
+  "ka": 0.0002311111111111111,
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 0.0004730300484766512
+  "central.C": 0.0001397000714728932
  },
  "stop_time": 86400.0,
- "template": "PK_1C",
- "template_fmu": "PK_1C.fmu"
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
 }

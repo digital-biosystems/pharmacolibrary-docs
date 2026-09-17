@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;tinzaparin&quot;,&quot;href&quot;:&quot;drugs/drug_tinzaparin/&quot;},{&quot;label&quot;:&quot;Gouin-Thibault_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tinzaparin_GouinThibault2024_reference&quot;,&quot;label&quot;:&quot;Gouin-Thibault_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tinzaparin/Tinzaparin_GouinThibault2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 # tinzaparin — `Tinzaparin_GouinThibault2024_reference`
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;flupirtine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flupirtine_Giorgi2016_healthy_adult_mares&quot;,&quot;label&quot;:&quot;Giorgi_2016_healthy adult mares&quot;,&quot;href&quot;:&quot;drugs/drug_flupirtine/Flupirtine_Giorgi2016_healthy_adult_mares.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # flupirtine
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Giorgi_2016](drugs/drug_flupirtine/Flupirtine_Giorgi2016_healthy_adult_mares.md) | Giorgi M et al., Pharmacokinetics and disposition of flu…, Veterinary journal (London,… (2016) | [10.1016/j.tvjl.2015.08.019](https://doi.org/10.1016/j.tvjl.2015.08.019) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Giorgi_2016_healthy adult mares](drugs/drug_flupirtine/Flupirtine_Giorgi2016_healthy_adult_mares.md) | Giorgi M et al., Pharmacokinetics and disposition of flu…, Veterinary journal (London,… (2016) | [10.1016/j.tvjl.2015.08.019](https://doi.org/10.1016/j.tvjl.2015.08.019) |
 
 ## Pharmacodynamics (PD)
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;teniposide&quot;,&quot;href&quot;:&quot;drugs/drug_teniposide/&quot;},{&quot;label&quot;:&quot;Cheng_1999 \u00b7 patients with ovarian cancer&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Teniposide_Cheng1999_patients_with_ovarian_cancer&quot;,&quot;label&quot;:&quot;Cheng_1999_patients with ovarian cancer&quot;,&quot;href&quot;:&quot;drugs/drug_teniposide/Teniposide_Cheng1999_patients_with_ovarian_cancer.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Teniposide_Holthuis1987_cancer_patients&quot;,&quot;label&quot;:&quot;Holthuis_1987_cancer patients&quot;,&quot;href&quot;:&quot;drugs/drug_teniposide/Teniposide_Holthuis1987_cancer_patients.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # teniposide — `Teniposide_Cheng1999_patients_with_ovarian_cancer`
 

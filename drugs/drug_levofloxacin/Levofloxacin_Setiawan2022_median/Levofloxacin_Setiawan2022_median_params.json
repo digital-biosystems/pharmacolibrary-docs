@@ -1,0 +1,24 @@
+{
+ "model_id": "Levofloxacin_Setiawan2022_median",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.5000000000000004e-07,
+  "F": 1.0,
+  "VdPerKg": 0.00037714285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.0003493265993265993,
+  "k21": 0.0003305455993628037,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.0004777149094095702
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

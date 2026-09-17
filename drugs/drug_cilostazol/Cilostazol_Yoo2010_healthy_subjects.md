@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;cilostazol&quot;,&quot;href&quot;:&quot;drugs/drug_cilostazol/&quot;},{&quot;label&quot;:&quot;Yoo_2010 \u00b7 healthy subjects&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilostazol_Lee2014_healthy_korean_subjects&quot;,&quot;label&quot;:&quot;Lee_2014_healthy Korean subjects&quot;,&quot;href&quot;:&quot;drugs/drug_cilostazol/Cilostazol_Lee2014_healthy_korean_subjects.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilostazol_Yoo2010_healthy_subjects&quot;,&quot;label&quot;:&quot;Yoo_2010_healthy subjects&quot;,&quot;href&quot;:&quot;drugs/drug_cilostazol/Cilostazol_Yoo2010_healthy_subjects.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # cilostazol — `Cilostazol_Yoo2010_healthy_subjects`
 

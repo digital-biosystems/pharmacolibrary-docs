@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ifosfamide_Brain2008_reference&quot;,&quot;label&quot;:&quot;Brain_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ifosfamide/Ifosfamide_Brain2008_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # BMG — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Brain_2008`

@@ -1,17 +1,19 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;cannabinoids&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/&quot;},{&quot;label&quot;:&quot;Harrison_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cannabinoids_Nachnani2024_reference&quot;,&quot;label&quot;:&quot;Nachnani_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_Nachnani2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_Doerr2024_reference&quot;,&quot;label&quot;:&quot;Doerr_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_Doerr2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_Eichler2023_reference&quot;,&quot;label&quot;:&quot;Eichler_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_Eichler2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_Harrison2022_reference&quot;,&quot;label&quot;:&quot;Harrison_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cannabinoids_SerranoRodrguez2025_reference&quot;,&quot;label&quot;:&quot;Serrano-Rodr\u00edguez_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_SerranoRodrguez2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_chov2025_r_hhc_population_pk_model&quot;,&quot;label&quot;:&quot;\u0160\u00edchov\u00e1_2025_r_hhc_population_pk_model&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_chov2025_r_hhc_population_pk_model.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_chov2025_r_hhc_population_pk_model&quot;,&quot;label&quot;:&quot;\u0160\u00edchov\u00e1_2025_r_hhc_population_pk_model&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_chov2025_r_hhc_population_pk_model.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_chov2025_reference&quot;,&quot;label&quot;:&quot;\u0160\u00edchov\u00e1_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_chov2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_chov2025_s_hhc_population_pk_model&quot;,&quot;label&quot;:&quot;\u0160\u00edchov\u00e1_2025_s_hhc_population_pk_model&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_chov2025_s_hhc_population_pk_model.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_chov2025_s_hhc_population_pk_model&quot;,&quot;label&quot;:&quot;\u0160\u00edchov\u00e1_2025_s_hhc_population_pk_model&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_chov2025_s_hhc_population_pk_model.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_Hansen2024_reference&quot;,&quot;label&quot;:&quot;Hansen_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_Hansen2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_SerranoRodrguez2025_cbg&quot;,&quot;label&quot;:&quot;Serrano-Rodr\u00edguez_2025_cbg&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_SerranoRodrguez2025_cbg.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_SerranoRodrguez2025_cbg&quot;,&quot;label&quot;:&quot;Serrano-Rodr\u00edguez_2025_cbg&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_SerranoRodrguez2025_cbg.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_SerranoRodrguez2025_cbg_g&quot;,&quot;label&quot;:&quot;Serrano-Rodr\u00edguez_2025_cbg_g&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_SerranoRodrguez2025_cbg_g.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_SerranoRodrguez2025_cbg_g&quot;,&quot;label&quot;:&quot;Serrano-Rodr\u00edguez_2025_cbg_g&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_SerranoRodrguez2025_cbg_g.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_SerranoRodrguez2025_iv_formulation_of_cbg_at_1&quot;,&quot;label&quot;:&quot;Serrano-Rodr\u00edguez_2025_iv_formulation_of_cbg_at_1_0_mg_kg&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_SerranoRodrguez2025_iv_formulation_of_cbg_at_1.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_SerranoRodrguez2025_iv_formulation_of_cbg_at_1&quot;,&quot;label&quot;:&quot;Serrano-Rodr\u00edguez_2025_iv_formulation_of_cbg_at_1_0_mg_kg&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_SerranoRodrguez2025_iv_formulation_of_cbg_at_1.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_Storgaard2026_reference&quot;,&quot;label&quot;:&quot;Storgaard_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_Storgaard2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabinoids_Walle2025_reference&quot;,&quot;label&quot;:&quot;Walle_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/Cannabinoids_Walle2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # cannabinoids — `Cannabinoids_Harrison2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-**What is wrong:** every check the reviewer could run passed
+**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
 
 **Steps:**
-1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+1. Read the .deviation.json and confirm each deviation names what changed and why.
+2. Anything undocumented needs the engineer, not a curator.
 
-<sub>owner: **curator** · guidance written by playbook</sub>
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -20,15 +22,17 @@ Harrison SA; Mayo PR; Hobbs TM; Canizares C; Foster EP; Zhao C; Ure DR; Trepanie
   ·  DOI: [10.1002/hep4.2100](https://doi.org/10.1002/hep4.2100)
 
 ## Model component
-<dbs-pgx drug="cannabinoids" model-id="Cannabinoids_Harrison2022_reference" status="curated_candidate" stale="false" population="" measured-compound="cannabinoids" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="cannabinoids" model-id="Cannabinoids_Harrison2022_reference" status="needs_review" stale="false" population="" measured-compound="cannabinoids" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| clearance after oral administration (CL/F) | `Q27` · CL/F | 4.3 | L/h | 1.1944444444444443e-06 | L/h | not captured | review (0.7) | Harrison_2022:review | — | not captured |
-| volume central compartment after oral administration (VC/F) | `Q290` · V1/F | 202.1 | L | 0.2021 | L | not captured | review (0.7) | Harrison_2022:review | — | not captured |
+| clearance after oral administration (CL/F) | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Harrison_2022:review | — | not captured |
+| volume central compartment after oral administration (VC/F) | `Q290` · V1/F | —(suppressed) | L | — | L | not captured | review (0.7) | Harrison_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -38,7 +42,10 @@ Harrison SA; Mayo PR; Hobbs TM; Canizares C; Foster EP; Zhao C; Ure DR; Trepanie
 ## Departures & gaps
 
 **Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - built from REVIEW reference values (Harrison_2022) — secondary source
@@ -65,10 +72,10 @@ Harrison SA; Mayo PR; Hobbs TM; Canizares C; Foster EP; Zhao C; Ure DR; Trepanie
 |---|---|---|---|---|---|---|
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=cannabinoids) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=cannabinoids) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -85,24 +92,36 @@ Harrison SA; Mayo PR; Hobbs TM; Canizares C; Foster EP; Zhao C; Ure DR; Trepanie
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference/Cannabinoids_Harrison2022_reference.svg" alt="Cannabinoids_Harrison2022_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
+
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference/Cannabinoids_Harrison2022_reference_modelica.zip" download>Cannabinoids_Harrison2022_reference_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference/Cannabinoids_Harrison2022_reference_matlab.zip" download>Cannabinoids_Harrison2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference/Cannabinoids_Harrison2022_reference_matlab_simbio.zip" download>Cannabinoids_Harrison2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference/Cannabinoids_Harrison2022_reference_sbml.zip" download>Cannabinoids_Harrison2022_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference/Cannabinoids_Harrison2022_reference_cellml.zip" download>Cannabinoids_Harrison2022_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference/Cannabinoids_Harrison2022_reference_modelica.zip" download>Cannabinoids_Harrison2022_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference/Cannabinoids_Harrison2022_reference_matlab.zip" download>Cannabinoids_Harrison2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference/Cannabinoids_Harrison2022_reference_matlab_simbio.zip" download>Cannabinoids_Harrison2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference/Cannabinoids_Harrison2022_reference_sbml.zip" download>Cannabinoids_Harrison2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference/Cannabinoids_Harrison2022_reference_cellml.zip" download>Cannabinoids_Harrison2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
 ## Web simulation
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
+
+<dbs-fmusim paramsurl="drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference/Cannabinoids_Harrison2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference/Cannabinoids_Harrison2022_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Template `PK_1C_enteral` · parameters `Cannabinoids_Harrison2022_reference_params.json` · controls `Cannabinoids_Harrison2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

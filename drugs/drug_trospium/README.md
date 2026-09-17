@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03D&quot;,&quot;href&quot;:&quot;atc/A03D.md&quot;},{&quot;label&quot;:&quot;trospium&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Trospium_Oefelein2013_reference&quot;,&quot;label&quot;:&quot;Oefelein_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_trospium/Trospium_Oefelein2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # trospium
 
@@ -23,13 +24,13 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Oefelein_2013](drugs/drug_trospium/Trospium_Oefelein2013_reference.md) | Oefelein MG et al., Effect of concomitant administration of…, Clinical drug investigation (2013) | [10.1007/s40261-012-0049-6](https://doi.org/10.1007/s40261-012-0049-6) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Oefelein_2013_reference](drugs/drug_trospium/Trospium_Oefelein2013_reference.md) | Oefelein MG et al., Effect of concomitant administration of…, Clinical drug investigation (2013) | [10.1007/s40261-012-0049-6](https://doi.org/10.1007/s40261-012-0049-6) |
 
 ## Coverage
 
 - **PubMed hits:** 127 matched, 84 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

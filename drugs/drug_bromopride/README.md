@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03F&quot;,&quot;href&quot;:&quot;atc/A03F.md&quot;},{&quot;label&quot;:&quot;bromopride&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bromopride_LachiSilva2020_healthy_adults&quot;,&quot;label&quot;:&quot;Lachi-Silva_2020_healthy adults&quot;,&quot;href&quot;:&quot;drugs/drug_bromopride/Bromopride_LachiSilva2020_healthy_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # bromopride
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Lachi-Silva_2020](drugs/drug_bromopride/Bromopride_LachiSilva2020_healthy_adults.md) | Lachi-Silva L et al., Population pharmacokinetics of orally a…, European journal of pharmac… (2020) | [10.1016/j.ejps.2019.105081](https://doi.org/10.1016/j.ejps.2019.105081) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Lachi-Silva_2020_healthy adults](drugs/drug_bromopride/Bromopride_LachiSilva2020_healthy_adults.md) | Lachi-Silva L et al., Population pharmacokinetics of orally a…, European journal of pharmac… (2020) | [10.1016/j.ejps.2019.105081](https://doi.org/10.1016/j.ejps.2019.105081) |
 
 ## Coverage
 

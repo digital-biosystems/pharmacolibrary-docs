@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;scopolamine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Scopolamine_LiemMoolenaar2011_reference&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # scopolamine
 
@@ -25,7 +26,7 @@ Scopolamine was first approved by the FDA on December 31, 1979, and is currently
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Liem-Moolenaar_2011](drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_reference.md) | Liem-Moolenaar M et al., Pharmacokinetic-pharmacodynamic relatio…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03936.x](https://doi.org/10.1111/j.1365-2125.2011.03936.x) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Liem-Moolenaar_2011_reference](drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_reference.md) | Liem-Moolenaar M et al., Pharmacokinetic-pharmacodynamic relatio…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03936.x](https://doi.org/10.1111/j.1365-2125.2011.03936.x) |
 
 ## Pharmacodynamics (PD)
 

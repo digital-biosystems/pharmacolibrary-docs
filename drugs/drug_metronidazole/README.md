@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;metronidazole&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metronidazole_Suyagh2011_preterm_neonates&quot;,&quot;label&quot;:&quot;Suyagh_2011_preterm neonates&quot;,&quot;href&quot;:&quot;drugs/drug_metronidazole/Metronidazole_Suyagh2011_preterm_neonates.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # metronidazole
 
@@ -25,7 +26,7 @@ It is also used off-label in the treatment of Crohn's disease, as a prophylactic
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Suyagh_2011](drugs/drug_metronidazole/Metronidazole_Suyagh2011_preterm_neonates.md) | Suyagh M et al., Metronidazole population pharmacokineti…, Pediatrics (2011) | [10.1542/peds.2010-0807](https://doi.org/10.1542/peds.2010-0807) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Suyagh_2011_preterm neonates](drugs/drug_metronidazole/Metronidazole_Suyagh2011_preterm_neonates.md) | Suyagh M et al., Metronidazole population pharmacokineti…, Pediatrics (2011) | [10.1542/peds.2010-0807](https://doi.org/10.1542/peds.2010-0807) |
 
 ## Coverage
 

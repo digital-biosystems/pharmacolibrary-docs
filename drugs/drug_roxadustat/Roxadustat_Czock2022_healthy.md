@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;roxadustat&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/&quot;},{&quot;label&quot;:&quot;Czock_2022 \u00b7 healthy&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Roxadustat_Czock2022_eskd&quot;,&quot;label&quot;:&quot;Czock_2022_eskd&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_eskd.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_eskd&quot;,&quot;label&quot;:&quot;Czock_2022_eskd&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_eskd.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_healthy&quot;,&quot;label&quot;:&quot;Czock_2022_healthy&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_healthy.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Roxadustat_Czock2022_healthy&quot;,&quot;label&quot;:&quot;Czock_2022_healthy&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_healthy.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Roxadustat_Czock2022_liver_cirrhosis_cp_b&quot;,&quot;label&quot;:&quot;Czock_2022_liver_cirrhosis_cp_b&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_liver_cirrhosis_cp_b.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_liver_cirrhosis_cp_b&quot;,&quot;label&quot;:&quot;Czock_2022_liver_cirrhosis_cp_b&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_liver_cirrhosis_cp_b.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_parameter_value&quot;,&quot;label&quot;:&quot;Czock_2022_parameter_value&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_parameter_value&quot;,&quot;label&quot;:&quot;Czock_2022_parameter_value&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_pharmacodynamics&quot;,&quot;label&quot;:&quot;Czock_2022_pharmacodynamics&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_pharmacodynamics.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_pharmacodynamics&quot;,&quot;label&quot;:&quot;Czock_2022_pharmacodynamics&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_pharmacodynamics.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_reference&quot;,&quot;label&quot;:&quot;Czock_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_severe_renal_impairment&quot;,&quot;label&quot;:&quot;Czock_2022_severe_renal_impairment&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_severe_renal_impairment.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Roxadustat_Czock2022_severe_renal_impairment&quot;,&quot;label&quot;:&quot;Czock_2022_severe_renal_impairment&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Czock2022_severe_renal_impairment.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # roxadustat — `Roxadustat_Czock2022_healthy`
 
@@ -10,7 +11,7 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the simulated model does not reproduce a value the paper reports. Evidence: T1_t_half_beta — expected 11.8 — got 15.080056289537874 — ratio 1.278; T1_t_half_beta — expected 12.0 — got 15.080056289537874 — ratio 1.2567; T1_t_half_terminal — expected 3.46 — got 15.080056289537874 — ratio 4.3584; T1_t_half_terminal — expected 0.74 — got 15.080056289537874 — ratio 20.3785.
+**What is wrong:** the simulated model does not reproduce a value the paper reports; the engineer's deviations are not documented and quantified. Evidence: T1_t_half_beta — expected 11.8 — got 15.106084513691096 — ratio 1.2802; T1_t_half_beta — expected 12.0 — got 15.106084513691096 — ratio 1.2588; T1_t_half_terminal — expected 3.46 — got 15.106084513691096 — ratio 4.3659; T1_t_half_terminal — expected 0.74 — got 15.106084513691096 — ratio 20.4136.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
@@ -18,6 +19,7 @@
 3. Compare with the transcribed value in _transcribev2.yaml for this stem.
 4. If the transcription is right, the extracted parameters are suspect — check CL and volume in _interpretv2.yaml against the paper.
 5. If the transcription is wrong, fix the extraction; the model rebuild follows.
+6. Read the .deviation.json and confirm each deviation names what changed and why.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -53,7 +55,10 @@ Czock D; Keller F et al. (2022). Clinical pharmacokinetics 61
 ## Departures & gaps
 
 **Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Dose' — extend the ontology if this is a real PK parameter (source ['Czock_2022_table_1:row1:col7'])
@@ -170,25 +175,25 @@ Czock D; Keller F et al. (2022). Clinical pharmacokinetics 61
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=roxadustat) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | fail | 0.01 | 0.0017476830820834818 | 0.1748 | µg/mL→SI vs simulated kg/m3 |
-| T1_t_half_beta | reference | fail | 11.8 | 15.080056289537874 | 1.278 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 12.0 | 15.080056289537874 | 1.2567 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 13.0 | 15.080056289537874 | 1.16 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.46 | 15.080056289537874 | 4.3584 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.74 | 15.080056289537874 | 20.3785 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.1 | 15.080056289537874 | 13.7091 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 8.1 | 15.080056289537874 | 1.8617 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 17.5 | 15.080056289537874 | 0.8617 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 8.5 | 15.080056289537874 | 1.7741 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 14.6 | 15.080056289537874 | 1.0329 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 15.9 | 15.080056289537874 | 0.9484 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 18.2 | 15.080056289537874 | 0.8286 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 14.7 | 15.080056289537874 | 1.0259 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 12.0 | 15.080056289537874 | 1.2567 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 8.5 | 15.080056289537874 | 1.7741 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 12.0 | 15.080056289537874 | 1.2567 | h→SI vs simulated h |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | fail | 0.01 | 0.0013777690149118157 | 0.1378 | µg/mL→SI vs simulated kg/m3 |
+| T1_t_half_beta | reference | fail | 11.8 | 15.106084513691096 | 1.2802 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 12.0 | 15.106084513691096 | 1.2588 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 13.0 | 15.106084513691096 | 1.162 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.46 | 15.106084513691096 | 4.3659 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.74 | 15.106084513691096 | 20.4136 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.1 | 15.106084513691096 | 13.7328 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 8.1 | 15.106084513691096 | 1.8649 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 17.5 | 15.106084513691096 | 0.8632 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 8.5 | 15.106084513691096 | 1.7772 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 14.6 | 15.106084513691096 | 1.0347 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 15.9 | 15.106084513691096 | 0.9501 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 18.2 | 15.106084513691096 | 0.83 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 14.7 | 15.106084513691096 | 1.0276 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 12.0 | 15.106084513691096 | 1.2588 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 8.5 | 15.106084513691096 | 1.7772 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 12.0 | 15.106084513691096 | 1.2588 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -215,15 +220,15 @@ The structure OpenModelica draws for this model, with **this record's parameter 
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
-**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_modelica.zip" download>Roxadustat_Czock2022_healthy_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_fmi.zip" download>Roxadustat_Czock2022_healthy_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_matlab.zip" download>Roxadustat_Czock2022_healthy_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_matlab_simbio.zip" download>Roxadustat_Czock2022_healthy_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_sbml.zip" download>Roxadustat_Czock2022_healthy_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_cellml.zip" download>Roxadustat_Czock2022_healthy_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_modelica.zip" download>Roxadustat_Czock2022_healthy_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_fmi.zip" download>Roxadustat_Czock2022_healthy_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_matlab.zip" download>Roxadustat_Czock2022_healthy_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_matlab_simbio.zip" download>Roxadustat_Czock2022_healthy_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_sbml.zip" download>Roxadustat_Czock2022_healthy_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_cellml.zip" download>Roxadustat_Czock2022_healthy_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -232,9 +237,9 @@ Each archive holds the model source, a script that simulates it against the appr
 
 Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
 
-<dbs-fmusim paramsurl="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_roxadustat/Roxadustat_Czock2022_healthy/Roxadustat_Czock2022_healthy_sim_controls.json"></dbs-fmusim>
 
-<sub>Template `PK_1C` · parameters `Roxadustat_Czock2022_healthy_params.json` · controls `Roxadustat_Czock2022_healthy_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Template `PK_1C_enteral` · parameters `Roxadustat_Czock2022_healthy_params.json` · controls `Roxadustat_Czock2022_healthy_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

@@ -6,7 +6,7 @@
  ],
  "parameters": {
   "F": 1.0,
-  "Tlag": 846.0,
+  "Tlag": 0.0,
   "VdPerKg": 0.0008471428571428571,
   "adminCount": 1.0,
   "adminDuration": 600.0,
@@ -15,7 +15,7 @@
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 0.0015708845511675838
+  "central.C": 0.0015761422409672201
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;epinephrine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epinephrine_Knych2023_reference&quot;,&quot;label&quot;:&quot;Knych_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/Epinephrine_Knych2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # epinephrine
 
@@ -31,7 +32,7 @@ In addition to the above, epinephrine is used as an over the counter (OTC) agent
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Knych_2023](drugs/drug_epinephrine/Epinephrine_Knych2023_reference.md) | Knych HK et al., Pharmacokinetics and metabolism of lido…, BMC veterinary research (2023) | [10.1186/s12917-023-03787-x](https://doi.org/10.1186/s12917-023-03787-x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Knych_2023_reference](drugs/drug_epinephrine/Epinephrine_Knych2023_reference.md) | Knych HK et al., Pharmacokinetics and metabolism of lido…, BMC veterinary research (2023) | [10.1186/s12917-023-03787-x](https://doi.org/10.1186/s12917-023-03787-x) |
 
 ## Pharmacodynamics (PD)
 

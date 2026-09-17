@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;erythropoietin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Erythropoietin_Frymoyer2017_reference&quot;,&quot;label&quot;:&quot;Frymoyer_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_erythropoietin/Erythropoietin_Frymoyer2017_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # erythropoietin
 
@@ -28,7 +29,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Frymoyer_2017](drugs/drug_erythropoietin/Erythropoietin_Frymoyer2017_reference.md) | Frymoyer A et al., High-dose erythropoietin population pha…, Pediatric research (2017) | [10.1038/pr.2017.15](https://doi.org/10.1038/pr.2017.15) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Frymoyer_2017_reference](drugs/drug_erythropoietin/Erythropoietin_Frymoyer2017_reference.md) | Frymoyer A et al., High-dose erythropoietin population pha…, Pediatric research (2017) | [10.1038/pr.2017.15](https://doi.org/10.1038/pr.2017.15) |
 
 ## Coverage
 

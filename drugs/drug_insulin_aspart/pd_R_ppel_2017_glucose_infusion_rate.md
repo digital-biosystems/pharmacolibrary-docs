@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InsulinAspart_Clausen2006_reference&quot;,&quot;label&quot;:&quot;Clausen_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_aspart/InsulinAspart_Clausen2006_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # name — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Rüppel_2017`

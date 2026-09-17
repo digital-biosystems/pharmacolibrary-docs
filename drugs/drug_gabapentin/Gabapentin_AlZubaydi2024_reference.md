@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;gabapentin&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/&quot;},{&quot;label&quot;:&quot;Al-Zubaydi_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Gabapentin_Silvola2025_reference&quot;,&quot;label&quot;:&quot;Silvola_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Silvola2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Zhou2026_reference&quot;,&quot;label&quot;:&quot;Zhou_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # gabapentin — `Gabapentin_AlZubaydi2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,18 +21,16 @@ Al-Zubaydi F; Wassef A; Kagan L; Brunetti L et al. (2024). Pharmaceutics 16
   ·  DOI: [10.3390/pharmaceutics16121514](https://doi.org/10.3390/pharmaceutics16121514)
 
 ## Model component
-<dbs-pgx drug="gabapentin" model-id="Gabapentin_AlZubaydi2024_reference" status="needs_review" stale="false" population="hospitalized adults" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="gabapentin" model-id="Gabapentin_AlZubaydi2024_reference" status="curated_candidate" stale="false" population="hospitalized adults" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ka (h−1) | `Q49` · kabs | —(suppressed) | h−1 | — | [1] / [h] | not captured | exact (1.0) | pharmaceutics-16-01514-t002:row2:col1, pharmaceutics-16-01514-t002:row2:col2 | — | not captured |
-| Vd (L) | `Q61` · V | —(suppressed) | L | — | [l] | not captured | exact (1.0) | pharmaceutics-16-01514-t002:row3:col1 | — | not captured |
-| Cl (L/h) | `Q22` · CL | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | pharmaceutics-16-01514-t002:row4:col1 | — | not captured |
+| ka (h−1) | `Q49` · kabs | 0.778 | h−1 | 0.00021611111111111112 | [1] / [h] | not captured | exact (1.0) | pharmaceutics-16-01514-t002:row2:col1, pharmaceutics-16-01514-t002:row2:col2 | — | not captured |
+| Vd (L) | `Q61` · V | 44.61 | L | 0.044610000000000004 | [l] | not captured | exact (1.0) | pharmaceutics-16-01514-t002:row3:col1 | — | not captured |
+| Cl (L/h) | `Q22` · CL | 5.73 | L/h | 1.591666666666667e-06 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-16-01514-t002:row4:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -87,7 +85,7 @@ Al-Zubaydi F; Wassef A; Kagan L; Brunetti L et al. (2024). Pharmaceutics 16
 | T3_output_variable | not captured | pass | C_central (measured=gabapentin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -117,7 +115,7 @@ Each archive holds the model source, a script that simulates it against the appr
 **FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_modelica.zip" download>Gabapentin_AlZubaydi2024_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_modelica.zip" download>Gabapentin_AlZubaydi2024_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_fmi.zip" download>Gabapentin_AlZubaydi2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_matlab.zip" download>Gabapentin_AlZubaydi2024_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_matlab_simbio.zip" download>Gabapentin_AlZubaydi2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epinephrine_Knych2023_reference&quot;,&quot;label&quot;:&quot;Knych_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/Epinephrine_Knych2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # name — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Yoo_2015`

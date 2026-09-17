@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01A&quot;,&quot;href&quot;:&quot;atc/C01A.md&quot;},{&quot;label&quot;:&quot;digitoxin&quot;,&quot;href&quot;:&quot;drugs/drug_digitoxin/&quot;},{&quot;label&quot;:&quot;Flasch_1979 \u00b7 cats&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Digitoxin_Flasch1979_cats&quot;,&quot;label&quot;:&quot;Flasch_1979_cats&quot;,&quot;href&quot;:&quot;drugs/drug_digitoxin/Digitoxin_Flasch1979_cats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # digitoxin — `Digitoxin_Flasch1979_cats`
 

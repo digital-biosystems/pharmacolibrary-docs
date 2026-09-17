@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;dihydroergotamine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydroergotamine_Hilke1978_adults_undergoing_spinal_anaesth&quot;,&quot;label&quot;:&quot;Hilke_1978_adults undergoing spinal anaesthesia&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergotamine/Dihydroergotamine_Hilke1978_adults_undergoing_spinal_anaesth.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dihydroergotamine_Schran1985_healthy_volunteers&quot;,&quot;label&quot;:&quot;Schran_1985_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergotamine/Dihydroergotamine_Schran1985_healthy_volunteers.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 # dihydroergotamine
 
@@ -27,8 +28,8 @@ DHE is not indicated for migraine prevention or the management of hemiplegic or 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Hilke_1978](drugs/drug_dihydroergotamine/Dihydroergotamine_Hilke1978_adults_undergoing_spinal_anaesth.md) | Hilke H et al., Dihydroergotamine: pharmacokinetics and…, Acta anaesthesiologica Scan… (1978) | [10.1111/aas.1978.22.3.215](https://doi.org/10.1111/aas.1978.22.3.215) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Schran_1985](drugs/drug_dihydroergotamine/Dihydroergotamine_Schran1985_healthy_volunteers.md) | Schran HF et al., Pharmacokinetics of dihydroergotamine f…, International journal of cl… (1985) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Hilke_1978_adults undergoing spinal anaesthesia](drugs/drug_dihydroergotamine/Dihydroergotamine_Hilke1978_adults_undergoing_spinal_anaesth.md) | Hilke H et al., Dihydroergotamine: pharmacokinetics and…, Acta anaesthesiologica Scan… (1978) | [10.1111/aas.1978.22.3.215](https://doi.org/10.1111/aas.1978.22.3.215) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Schran_1985_healthy volunteers](drugs/drug_dihydroergotamine/Dihydroergotamine_Schran1985_healthy_volunteers.md) | Schran HF et al., Pharmacokinetics of dihydroergotamine f…, International journal of cl… (1985) | — |
 
 ## Pharmacodynamics (PD)
 

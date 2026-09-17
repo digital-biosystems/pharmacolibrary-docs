@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;lorcainide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lorcainide_Kates1983_patients_with_ventricular_arrhythmias&quot;,&quot;label&quot;:&quot;Kates_1983_patients with ventricular arrhythmias&quot;,&quot;href&quot;:&quot;drugs/drug_lorcainide/Lorcainide_Kates1983_patients_with_ventricular_arrhythmias.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorcainide_Klotz1980_rats&quot;,&quot;label&quot;:&quot;Klotz_1980_rats&quot;,&quot;href&quot;:&quot;drugs/drug_lorcainide/Lorcainide_Klotz1980_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # lorcainide
 
@@ -17,8 +18,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kates_1983](drugs/drug_lorcainide/Lorcainide_Kates1983_patients_with_ventricular_arrhythmias.md) | Kates RE et al., Lorcainide disposition kinetics in arrh…, Clinical pharmacology and t… (1983) | [10.1038/clpt.1983.4](https://doi.org/10.1038/clpt.1983.4) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Klotz_1980](drugs/drug_lorcainide/Lorcainide_Klotz1980_rats.md) | Klotz U et al., The pharmacokinetics and tissue distrib…, Arzneimittel-Forschung (1980) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kates_1983_patients with ventricular arrhythmias](drugs/drug_lorcainide/Lorcainide_Kates1983_patients_with_ventricular_arrhythmias.md) | Kates RE et al., Lorcainide disposition kinetics in arrh…, Clinical pharmacology and t… (1983) | [10.1038/clpt.1983.4](https://doi.org/10.1038/clpt.1983.4) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Klotz_1980_rats](drugs/drug_lorcainide/Lorcainide_Klotz1980_rats.md) | Klotz U et al., The pharmacokinetics and tissue distrib…, Arzneimittel-Forschung (1980) | — |
 
 ## Pharmacodynamics (PD)
 

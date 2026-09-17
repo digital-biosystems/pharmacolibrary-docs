@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rifabutin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Deshpande2024_reference&quot;,&quot;label&quot;:&quot;Deshpande_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Deshpande2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # rifabutin
 
@@ -23,11 +24,11 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Wang_2020](drugs/drug_rifabutin/Rifabutin_Wang2020_reference.md) | Wang X et al., Population Pharmacokinetic Analysis of…, Antimicrobial agents and ch… (2020) | [10.1128/aac.01202-20](https://doi.org/10.1128/aac.01202-20) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Bentley_2021](drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md) | Bentley S et al., Clinical pharmacokinetics and dose reco…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkab312](https://doi.org/10.1093/jac/dkab312) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Ding_2022](drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md) | Ding Q et al., A Review of Population Pharmacokinetic…, Drug design, development an… (2022) | [10.2147/dddt.s384637](https://doi.org/10.2147/dddt.s384637) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Thoueille_2023](drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md) | Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Deshpande_2024](drugs/drug_rifabutin/Rifabutin_Deshpande2024_reference.md) | Deshpande D et al., Antibacterial action of penicillin agai…, IJTLD open (2024) | [10.5588/ijtldopen.24.0238](https://doi.org/10.5588/ijtldopen.24.0238) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Bentley_2021_reference](drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md) | Bentley S et al., Clinical pharmacokinetics and dose reco…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkab312](https://doi.org/10.1093/jac/dkab312) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ding_2022_reference](drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md) | Ding Q et al., A Review of Population Pharmacokinetic…, Drug design, development an… (2022) | [10.2147/dddt.s384637](https://doi.org/10.2147/dddt.s384637) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Thoueille_2023_reference](drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md) | Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Wang_2020_reference](drugs/drug_rifabutin/Rifabutin_Wang2020_reference.md) | Wang X et al., Population Pharmacokinetic Analysis of…, Antimicrobial agents and ch… (2020) | [10.1128/aac.01202-20](https://doi.org/10.1128/aac.01202-20) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Deshpande_2024_reference](drugs/drug_rifabutin/Rifabutin_Deshpande2024_reference.md) | Deshpande D et al., Antibacterial action of penicillin agai…, IJTLD open (2024) | [10.5588/ijtldopen.24.0238](https://doi.org/10.5588/ijtldopen.24.0238) |
 
 ## Pharmacodynamics (PD)
 
@@ -47,7 +48,7 @@
 
 - **PubMed hits:** 259 matched, 104 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 5  ·  extracted 1  ·  needs_review 3  ·  rejected 1  ·  stale 0
+- **records:** 5  ·  extracted 4  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

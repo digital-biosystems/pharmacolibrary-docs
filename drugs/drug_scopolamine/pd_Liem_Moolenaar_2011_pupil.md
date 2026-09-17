@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Scopolamine_LiemMoolenaar2011_reference&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # pupil size — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Liem-Moolenaar_2011`

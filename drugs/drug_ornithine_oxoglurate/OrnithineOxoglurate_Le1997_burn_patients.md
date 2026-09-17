@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05B&quot;,&quot;href&quot;:&quot;atc/A05B.md&quot;},{&quot;label&quot;:&quot;ornithine oxoglurate&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine_oxoglurate/&quot;},{&quot;label&quot;:&quot;Le_1997 \u00b7 burn patients&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;OrnithineOxoglurate_Le1997_burn_patients&quot;,&quot;label&quot;:&quot;Le_1997_burn patients&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine_oxoglurate/OrnithineOxoglurate_Le1997_burn_patients.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # ornithine oxoglurate — `OrnithineOxoglurate_Le1997_burn_patients`
 

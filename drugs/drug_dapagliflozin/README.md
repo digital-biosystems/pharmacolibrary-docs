@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;dapagliflozin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapagliflozin_Kobuchi2025_reference&quot;,&quot;label&quot;:&quot;Kobuchi_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/Dapagliflozin_Kobuchi2025_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # dapagliflozin
 
@@ -25,7 +26,7 @@ Dapagliflozin was originally approved by the FDA on Jan 08, 2014, to improve gly
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kobuchi_2025](drugs/drug_dapagliflozin/Dapagliflozin_Kobuchi2025_reference.md) | Kobuchi S et al., Population Pharmacokinetic-pharmacodyna…, International journal of me… (2025) | [10.7150/ijms.111519](https://doi.org/10.7150/ijms.111519) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kobuchi_2025_reference](drugs/drug_dapagliflozin/Dapagliflozin_Kobuchi2025_reference.md) | Kobuchi S et al., Population Pharmacokinetic-pharmacodyna…, International journal of me… (2025) | [10.7150/ijms.111519](https://doi.org/10.7150/ijms.111519) |
 
 ## Pharmacodynamics (PD)
 

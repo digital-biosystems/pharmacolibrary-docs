@@ -1,8 +1,9 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;bisoprolol&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/&quot;},{&quot;label&quot;:&quot;Cvan_2016 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bisoprolol_Cvan2016_reference&quot;,&quot;label&quot;:&quot;Cvan_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bisoprolol_Fontana2022_reference&quot;,&quot;label&quot;:&quot;Fontana_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Fontana2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bisoprolol_Grevel1989_reference&quot;,&quot;label&quot;:&quot;Grevel_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Grevel1989_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bisoprolol_Momilovi2019_reference&quot;,&quot;label&quot;:&quot;Mom\u010dilovi\u0107_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bisoprolol_Momilovi2020_reference&quot;,&quot;label&quot;:&quot;Mom\u010dilovi\u0107_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Momilovi2020_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bisoprolol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bisoprolol_Nikolic2016_reference&quot;,&quot;label&quot;:&quot;Nikolic_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Nikolic2016_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bisoprolol_Nikolic2018_reference&quot;,&quot;label&quot;:&quot;Nikolic_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Nikolic2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # bisoprolol — `Bisoprolol_Cvan2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 ### Reviewer guidance
 
@@ -10,15 +11,13 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the engineer's deviations are not documented and quantified; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised; T6_deviations — got defaulted_parameters: structural deviation not quantified.
+**What is wrong:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
-2. Read the .deviation.json and confirm each deviation names what changed and why.
-3. Anything undocumented needs the engineer, not a curator.
-4. Advisory only — the base model still replicates.
-5. Check the record's covariate_definitions in _interpretv2.yaml.
-6. Re-run the engineer for this drug if the covariate curves are wanted.
+2. Advisory only — the base model still replicates.
+3. Check the record's covariate_definitions in _interpretv2.yaml.
+4. Re-run the engineer for this drug if the covariate curves are wanted.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -28,19 +27,17 @@
 not matched (stem Cvan_2016)
 
 ## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Cvan2016_reference" status="needs_review" stale="false" population="patients with chronic heart failure" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Cvan2016_reference" status="accepted_with_caveats" stale="false" population="patients with chronic heart failure" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka (h -1 ) | `Q49` · kabs | —(suppressed) | h -1 | — | [1] / [h] | not captured | exact (1.0) | tab_0:row3:col1, tab_0:row3:col2 | — | not captured |
-| CL (L/h) | `Q22` · CL | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | tab_0:row4:col1, tab_0:row4:col2 | — | not captured |
-| V (L) | `Q61` · V | —(suppressed) | L | — | [l] | not captured | exact (1.0) | tab_0:row6:col1, tab_0:row6:col2 | linear_fractional on wt=31.8 | not captured |
-| Additive (ng/mL) | `Q317` · add_error | —(suppressed) | ng/mL | — | [ng] / [ml] | not captured | llm (0.5) | tab_0:row20:col1, tab_0:row20:col2 | — | not captured |
+| Ka (h -1 ) | `Q49` · kabs | 12.2 | h -1 | 0.0033888888888888888 | [1] / [h] | not captured | exact (1.0) | tab_0:row3:col1, tab_0:row3:col2 | — | not captured |
+| CL (L/h) | `Q22` · CL | 3.5 | L/h | 9.722222222222222e-07 | [l] / [h] | not captured | exact (1.0) | tab_0:row4:col1, tab_0:row4:col2 | — | not captured |
+| V (L) | `Q61` · V | 3.6 | L | 0.0036000000000000003 | [l] | not captured | exact (1.0) | tab_0:row6:col1, tab_0:row6:col2 | linear_fractional on wt=31.8 | not captured |
+| Additive (ng/mL) | `Q317` · add_error | 49.9 | ng/mL | not captured | [ng] / [ml] | not captured | llm (0.5) | tab_0:row20:col1, tab_0:row20:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -109,7 +106,7 @@ not matched (stem Cvan_2016)
 | T3_output_variable | not captured | pass | C_central (measured=bisoprolol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -139,7 +136,7 @@ Each archive holds the model source, a script that simulates it against the appr
 **FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference/Bisoprolol_Cvan2016_reference_modelica.zip" download>Bisoprolol_Cvan2016_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference/Bisoprolol_Cvan2016_reference_modelica.zip" download>Bisoprolol_Cvan2016_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference/Bisoprolol_Cvan2016_reference_fmi.zip" download>Bisoprolol_Cvan2016_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference/Bisoprolol_Cvan2016_reference_matlab.zip" download>Bisoprolol_Cvan2016_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference/Bisoprolol_Cvan2016_reference_matlab_simbio.zip" download>Bisoprolol_Cvan2016_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

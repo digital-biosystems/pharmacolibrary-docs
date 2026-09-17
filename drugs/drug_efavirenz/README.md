@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;efavirenz&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Efavirenz_Chala2023_reference&quot;,&quot;label&quot;:&quot;Chala_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_efavirenz/Efavirenz_Chala2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Efavirenz_Vucicevic2025_reference&quot;,&quot;label&quot;:&quot;Vucicevic_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_efavirenz/Efavirenz_Vucicevic2025_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # efavirenz
 
@@ -27,8 +28,8 @@ Efavirenz is also used in combination with other antiretroviral agents as part o
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Chala_2023](drugs/drug_efavirenz/Efavirenz_Chala2023_reference.md) | Chala A et al., Genetic and non-genetic factors influen…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12951](https://doi.org/10.1002/psp4.12951) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Vucicevic_2025](drugs/drug_efavirenz/Efavirenz_Vucicevic2025_reference.md) | Vucicevic K et al., Population Pharmacokinetic-Pharmacogene…, Cureus (2025) | [10.7759/cureus.88533](https://doi.org/10.7759/cureus.88533) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Chala_2023_reference](drugs/drug_efavirenz/Efavirenz_Chala2023_reference.md) | Chala A et al., Genetic and non-genetic factors influen…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12951](https://doi.org/10.1002/psp4.12951) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Vucicevic_2025_reference](drugs/drug_efavirenz/Efavirenz_Vucicevic2025_reference.md) | Vucicevic K et al., Population Pharmacokinetic-Pharmacogene…, Cureus (2025) | [10.7759/cureus.88533](https://doi.org/10.7759/cureus.88533) |
 
 ## Coverage
 

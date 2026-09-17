@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;levetiracetam&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/&quot;},{&quot;label&quot;:&quot;Schoemaker_2018 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levetiracetam_Schoemaker2018_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1&quot;,&quot;label&quot;:&quot;Majid_2016_aed_apparent_clearance_l_h_1&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1&quot;,&quot;label&quot;:&quot;Majid_2016_aed_apparent_clearance_l_h_1&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Majid2016_number_of_subjects&quot;,&quot;label&quot;:&quot;Majid_2016_number_of_subjects&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Majid2016_number_of_subjects.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Majid2016_number_of_subjects&quot;,&quot;label&quot;:&quot;Majid_2016_number_of_subjects&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Majid2016_number_of_subjects.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Onos2022_reference&quot;,&quot;label&quot;:&quot;Onos_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Li2023_base&quot;,&quot;label&quot;:&quot;Li_2023_base&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Li2023_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Li2023_base&quot;,&quot;label&quot;:&quot;Li_2023_base&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Li2023_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Li2023_final&quot;,&quot;label&quot;:&quot;Li_2023_final&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Li2023_final.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Li2023_final&quot;,&quot;label&quot;:&quot;Li_2023_final&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Li2023_final.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Majid2016_variability&quot;,&quot;label&quot;:&quot;Majid_2016_variability&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Majid2016_variability.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Majid2016_variability&quot;,&quot;label&quot;:&quot;Majid_2016_variability&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Majid2016_variability.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # levetiracetam — `Levetiracetam_Schoemaker2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -20,18 +20,16 @@
 not matched (stem Schoemaker_2018)
 
 ## Model component
-<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Schoemaker2018_reference" status="needs_review" stale="false" population="adults and children with focal seizures" measured-compound="levetiracetam" parameterization="apparent_wrt_Fm" topology="1C"></dbs-pgx>
+<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Schoemaker2018_reference" status="curated_candidate" stale="false" population="adults and children with focal seizures" measured-compound="levetiracetam" parameterization="apparent_wrt_Fm" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent_wrt_Fm, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h/kg) a | `Q27` · CL/F | —(suppressed) | L/h/kg | — | L/h | not captured | review_gapfill (0.7) | Onos_2022:review | — | not captured |
-| Vd/F (L/kg) a | `Q76` · V/F | —(suppressed) | L/kg | — | L | not captured | review_gapfill (0.7) | Onos_2022:review | — | not captured |
-| K a, 1/h | `Q49` · kabs | —(suppressed) | 1/h | — | 1/h | not captured | review_gapfill (0.7) | Schoemaker_2018:review | — | not captured |
+| CL/F (L/h/kg) a | `Q27` · CL/F | 0.36 | L/h/kg | 7e-06 | L/h | not captured | review_gapfill (0.7) | Onos_2022:review | — | not captured |
+| Vd/F (L/kg) a | `Q76` · V/F | 1.33 | L/kg | 0.0931 | L | not captured | review_gapfill (0.7) | Onos_2022:review | — | not captured |
+| K a, 1/h | `Q49` · kabs | 2.98 | 1/h | 0.0008277777777777778 | 1/h | not captured | review_gapfill (0.7) | Schoemaker_2018:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -126,7 +124,7 @@ not matched (stem Schoemaker_2018)
 | T3_output_variable | not captured | pass | C_central (measured=levetiracetam) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

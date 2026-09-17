@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CoagulationFactorXiii_Dodds2005_reference&quot;,&quot;label&quot;:&quot;Dodds_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_xiii/CoagulationFactorXiii_Dodds2005_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # FXIII activity — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Byrnes_2024`

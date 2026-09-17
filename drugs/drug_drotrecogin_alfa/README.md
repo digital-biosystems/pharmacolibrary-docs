@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;Drotrecogin alfa&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;DrotrecoginAlfa_Abboud2009_reference&quot;,&quot;label&quot;:&quot;Abboud_2009_reference&quot;,&quot;href&quot;:&quot;drugs/drug_drotrecogin_alfa/DrotrecoginAlfa_Abboud2009_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Drotrecogin alfa
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Abboud_2009](drugs/drug_drotrecogin_alfa/DrotrecoginAlfa_Abboud2009_reference.md) | Abboud I et al., Pharmacokinetics of epinephrine in pati…, Critical care (London, Engl… (2009) | [10.1186/cc7972](https://doi.org/10.1186/cc7972) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Abboud_2009_reference](drugs/drug_drotrecogin_alfa/DrotrecoginAlfa_Abboud2009_reference.md) | Abboud I et al., Pharmacokinetics of epinephrine in pati…, Critical care (London, Engl… (2009) | [10.1186/cc7972](https://doi.org/10.1186/cc7972) |
 
 ## Coverage
 

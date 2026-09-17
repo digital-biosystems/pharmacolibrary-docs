@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;chlorambucil&quot;,&quot;href&quot;:&quot;drugs/drug_chlorambucil/&quot;},{&quot;label&quot;:&quot;Al-Nadaf_2022 \u00b7 cats with indolent lymphoproliferative malignancies&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chlorambucil_AlNadaf2022_cats_with_indolent_lymphoproliferat&quot;,&quot;label&quot;:&quot;Al-Nadaf_2022_cats with indolent lymphoproliferative malignancies&quot;,&quot;href&quot;:&quot;drugs/drug_chlorambucil/Chlorambucil_AlNadaf2022_cats_with_indolent_lymphoproliferat.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # chlorambucil — `Chlorambucil_AlNadaf2022_cats_with_indolent_lymphoproliferat`
 

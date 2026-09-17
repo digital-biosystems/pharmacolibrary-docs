@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;chlorhexidine&quot;,&quot;href&quot;:&quot;drugs/drug_chlorhexidine/&quot;},{&quot;label&quot;:&quot;Sherertz_1993 \u00b7 rabbits&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chlorhexidine_Sherertz1993_rabbits&quot;,&quot;label&quot;:&quot;Sherertz_1993_rabbits&quot;,&quot;href&quot;:&quot;drugs/drug_chlorhexidine/Chlorhexidine_Sherertz1993_rabbits.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Chlorhexidine_Xue2009_rats&quot;,&quot;label&quot;:&quot;Xue_2009_rats&quot;,&quot;href&quot;:&quot;drugs/drug_chlorhexidine/Chlorhexidine_Xue2009_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # chlorhexidine — `Chlorhexidine_Sherertz1993_rabbits`
 

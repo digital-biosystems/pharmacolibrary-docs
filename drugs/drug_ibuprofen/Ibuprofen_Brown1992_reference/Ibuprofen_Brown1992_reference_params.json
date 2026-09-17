@@ -1,22 +1,24 @@
 {
  "model_id": "Ibuprofen_Brown1992_reference",
- "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
  "parameters": {
   "Cl": 1.5555555555555556e-06,
   "F": 1.0,
+  "Tlag": 0.0,
   "VdPerKg": 0.00103,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
+  "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 0.0013780240748714335
+  "central.C": 0.0009847216282367563
  },
  "stop_time": 86400.0,
- "template": "PK_1C",
- "template_fmu": "PK_1C.fmu"
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
 }

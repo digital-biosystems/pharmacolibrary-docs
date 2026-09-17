@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;2378_tetrachlorodibenzo_p_dioxin&quot;,&quot;href&quot;:&quot;drugs/toxin_2378_tetrachlorodibenzo_p_dioxin/&quot;},{&quot;label&quot;:&quot;Weber_1993 \u00b7 male Sprague-Dawley rats&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_2378TetrachlorodibenzoPDioxin_Weber1993_reference&quot;,&quot;label&quot;:&quot;Weber_1993_male Sprague-Dawley rats&quot;,&quot;href&quot;:&quot;drugs/toxin_2378_tetrachlorodibenzo_p_dioxin/D_2378TetrachlorodibenzoPDioxin_Weber1993_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # 2378_tetrachlorodibenzo_p_dioxin — `D_2378TetrachlorodibenzoPDioxin_Weber1993_reference`
 

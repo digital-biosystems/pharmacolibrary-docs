@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Deget1991_reference&quot;,&quot;label&quot;:&quot;Deget_1991_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Deget1991_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Meredith1989_reference&quot;,&quot;label&quot;:&quot;Meredith_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Meredith1989_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # Dopamine Receptor 1 — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Altunlu_2025`

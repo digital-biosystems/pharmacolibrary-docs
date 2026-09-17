@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11G&quot;,&quot;href&quot;:&quot;atc/A11G.md&quot;},{&quot;label&quot;:&quot;ascorbic acid&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AscorbicAcid_Bluck1996_reference&quot;,&quot;label&quot;:&quot;Bluck_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ascorbic_acid/AscorbicAcid_Bluck1996_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # ascorbic acid
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Bluck_1996](drugs/drug_ascorbic_acid/AscorbicAcid_Bluck1996_reference.md) | Bluck LJ et al., Measurement of ascorbic acid kinetics i…, Journal of mass spectrometr… (1996) | [10.1002/(SICI)1096-9888(199607)31:7&lt;741::AID-JMS352&gt;3.0.CO;2-H](https://doi.org/10.1002/(SICI)1096-9888(199607)31:7&lt;741::AID-JMS352&gt;3.0.CO;2-H) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Bluck_1996_reference](drugs/drug_ascorbic_acid/AscorbicAcid_Bluck1996_reference.md) | Bluck LJ et al., Measurement of ascorbic acid kinetics i…, Journal of mass spectrometr… (1996) | [10.1002/(SICI)1096-9888(199607)31:7&lt;741::AID-JMS352&gt;3.0.CO;2-H](https://doi.org/10.1002/(SICI)1096-9888(199607)31:7&lt;741::AID-JMS352&gt;3.0.CO;2-H) |
 
 ## Coverage
 

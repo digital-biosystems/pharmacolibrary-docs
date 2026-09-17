@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;escitalopram&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Escitalopram_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Escitalopram_Liu2023_reference&quot;,&quot;label&quot;:&quot;Liu_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Liu2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # escitalopram
 
@@ -23,14 +24,14 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Liu_2022](drugs/drug_escitalopram/Escitalopram_Liu2022_reference.md) | Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.964758](https://doi.org/10.3389/fphar.2022.964758) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2023](drugs/drug_escitalopram/Escitalopram_Liu2023_reference.md) | Liu X et al., Escitalopram Personalized Dosing: A Pop…, Drug design, development an… (2023) | [10.2147/DDDT.S425654](https://doi.org/10.2147/DDDT.S425654) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Liu_2022_reference](drugs/drug_escitalopram/Escitalopram_Liu2022_reference.md) | Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.964758](https://doi.org/10.3389/fphar.2022.964758) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2023_reference](drugs/drug_escitalopram/Escitalopram_Liu2023_reference.md) | Liu X et al., Escitalopram Personalized Dosing: A Pop…, Drug design, development an… (2023) | [10.2147/DDDT.S425654](https://doi.org/10.2147/DDDT.S425654) |
 
 ## Coverage
 
 - **PubMed hits:** 129 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

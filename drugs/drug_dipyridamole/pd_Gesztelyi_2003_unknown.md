@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dipyridamole_NielsenKudsk1979_healthy_adults&quot;,&quot;label&quot;:&quot;Nielsen-Kudsk_1979_healthy adults&quot;,&quot;href&quot;:&quot;drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1979_healthy_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dipyridamole_NielsenKudsk1980_isolated_rabbit_hearts&quot;,&quot;label&quot;:&quot;Nielsen-Kudsk_1980_isolated rabbit hearts&quot;,&quot;href&quot;:&quot;drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1980_isolated_rabbit_hearts.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # mechanical activity — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Gesztelyi_2003`

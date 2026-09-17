@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;gabapentin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Silvola2025_reference&quot;,&quot;label&quot;:&quot;Silvola_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Silvola2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Zhou2026_reference&quot;,&quot;label&quot;:&quot;Zhou_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # gabapentin
 
@@ -23,9 +24,9 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Al-Zubaydi_2024](drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md) | Al-Zubaydi F et al., Development of a Population Pharmacokin…, Pharmaceutics (2024) | [10.3390/pharmaceutics16121514](https://doi.org/10.3390/pharmaceutics16121514) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Silvola_2025](drugs/drug_gabapentin/Gabapentin_Silvola2025_reference.md) | Silvola R et al., Population Pharmacokinetics and Transfe…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13295](https://doi.org/10.1002/psp4.13295) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Zhou_2026](drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md) | Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Al-Zubaydi_2024_reference](drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md) | Al-Zubaydi F et al., Development of a Population Pharmacokin…, Pharmaceutics (2024) | [10.3390/pharmaceutics16121514](https://doi.org/10.3390/pharmaceutics16121514) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Silvola_2025_reference](drugs/drug_gabapentin/Gabapentin_Silvola2025_reference.md) | Silvola R et al., Population Pharmacokinetics and Transfe…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13295](https://doi.org/10.1002/psp4.13295) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Zhou_2026_reference](drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md) | Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901) |
 
 ## Pharmacodynamics (PD)
 
@@ -38,7 +39,7 @@
 
 - **PubMed hits:** 143 matched, 62 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

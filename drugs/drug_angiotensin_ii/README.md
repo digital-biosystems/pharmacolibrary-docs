@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;angiotensin II&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AngiotensinIi_Athanassa2025_reference&quot;,&quot;label&quot;:&quot;Athanassa_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AngiotensinIi_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AngiotensinIi_van2026_reference&quot;,&quot;label&quot;:&quot;van_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_van2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AngiotensinIi_Kurup2024_reference&quot;,&quot;label&quot;:&quot;Kurup_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Kurup2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AngiotensinIi_Moran1985_reference&quot;,&quot;label&quot;:&quot;Moran_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Moran1985_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # angiotensin II
 
@@ -27,11 +28,11 @@ Shock is the inability to maintain blood flow to vital tissues and the potential
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Athanassa_2025](drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md) | Athanassa Z et al., Population pharmacokinetic model of ora…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf090](https://doi.org/10.1093/jac/dkaf090) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Steichert_2025](drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md) | Steichert (2025) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [van_2026](drugs/drug_angiotensin_ii/AngiotensinIi_van2026_reference.md) | van Lier D et al., Safety, tolerability, and pharmacokinet…, mAbs (2026) | [10.1080/19420862.2026.2671468](https://doi.org/10.1080/19420862.2026.2671468) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Kurup_2024](drugs/drug_angiotensin_ii/AngiotensinIi_Kurup2024_reference.md) | Kurup S et al., Semi-mechanistic population pharmacokin…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09947-2](https://doi.org/10.1007/s10928-024-09947-2) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Moran_1985](drugs/drug_angiotensin_ii/AngiotensinIi_Moran1985_reference.md) | Moran SM et al., Pathophysiology of protracted acute ren…, The Journal of clinical inv… (1985) | [10.1172/JCI112122](https://doi.org/10.1172/JCI112122) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Athanassa_2025_reference](drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md) | Athanassa Z et al., Population pharmacokinetic model of ora…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf090](https://doi.org/10.1093/jac/dkaf090) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Steichert_2025_reference](drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md) | Steichert (2025) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [van_2026_reference](drugs/drug_angiotensin_ii/AngiotensinIi_van2026_reference.md) | van Lier D et al., Safety, tolerability, and pharmacokinet…, mAbs (2026) | [10.1080/19420862.2026.2671468](https://doi.org/10.1080/19420862.2026.2671468) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Kurup_2024_reference](drugs/drug_angiotensin_ii/AngiotensinIi_Kurup2024_reference.md) | Kurup S et al., Semi-mechanistic population pharmacokin…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09947-2](https://doi.org/10.1007/s10928-024-09947-2) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Moran_1985_reference](drugs/drug_angiotensin_ii/AngiotensinIi_Moran1985_reference.md) | Moran SM et al., Pathophysiology of protracted acute ren…, The Journal of clinical inv… (1985) | [10.1172/JCI112122](https://doi.org/10.1172/JCI112122) |
 
 ## Pharmacodynamics (PD)
 
@@ -102,7 +103,7 @@ Shock is the inability to maintain blood flow to vital tissues and the potential
 
 - **PubMed hits:** 2602 matched, 210 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 5  ·  extracted 0  ·  needs_review 3  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 2  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

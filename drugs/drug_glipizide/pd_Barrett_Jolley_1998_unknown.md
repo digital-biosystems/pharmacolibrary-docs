@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glipizide_Dhawan2006_healthy_male_volunteers&quot;,&quot;label&quot;:&quot;Dhawan_2006_healthy male volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_glipizide/Glipizide_Dhawan2006_healthy_male_volunteers.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # whole-cell chord conductance — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Barrett-Jolley_1998`

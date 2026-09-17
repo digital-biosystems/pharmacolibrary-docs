@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;floxuridine&quot;,&quot;href&quot;:&quot;drugs/drug_floxuridine/&quot;},{&quot;label&quot;:&quot;Port_1999 \u00b7 rats with Morris hepatoma M3924A&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a&quot;,&quot;label&quot;:&quot;Port_1999_rats with Morris hepatoma M3924A&quot;,&quot;href&quot;:&quot;drugs/drug_floxuridine/Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # floxuridine — `Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a`
 

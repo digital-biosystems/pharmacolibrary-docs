@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;lorcainide&quot;,&quot;href&quot;:&quot;drugs/drug_lorcainide/&quot;},{&quot;label&quot;:&quot;Klotz_1980 \u00b7 rats&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lorcainide_Kates1983_patients_with_ventricular_arrhythmias&quot;,&quot;label&quot;:&quot;Kates_1983_patients with ventricular arrhythmias&quot;,&quot;href&quot;:&quot;drugs/drug_lorcainide/Lorcainide_Kates1983_patients_with_ventricular_arrhythmias.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorcainide_Klotz1980_rats&quot;,&quot;label&quot;:&quot;Klotz_1980_rats&quot;,&quot;href&quot;:&quot;drugs/drug_lorcainide/Lorcainide_Klotz1980_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # lorcainide — `Lorcainide_Klotz1980_rats`
 

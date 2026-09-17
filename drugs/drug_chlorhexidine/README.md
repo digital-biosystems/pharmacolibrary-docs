@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;chlorhexidine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chlorhexidine_Sherertz1993_rabbits&quot;,&quot;label&quot;:&quot;Sherertz_1993_rabbits&quot;,&quot;href&quot;:&quot;drugs/drug_chlorhexidine/Chlorhexidine_Sherertz1993_rabbits.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chlorhexidine_Xue2009_rats&quot;,&quot;label&quot;:&quot;Xue_2009_rats&quot;,&quot;href&quot;:&quot;drugs/drug_chlorhexidine/Chlorhexidine_Xue2009_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # chlorhexidine
 
@@ -25,8 +26,8 @@ Chlorhexidine was developed in the UK by Imperial Chemical Industries in the ear
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Sherertz_1993](drugs/drug_chlorhexidine/Chlorhexidine_Sherertz1993_rabbits.md) | Sherertz RJ et al., Efficacy of antibiotic-coated catheters…, The Journal of infectious d… (1993) | [10.1093/infdis/167.1.98](https://doi.org/10.1093/infdis/167.1.98) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Xue_2009](drugs/drug_chlorhexidine/Chlorhexidine_Xue2009_rats.md) | Xue Y et al., High-performance liquid chromatographic…, Journal of analytical toxic… (2009) | [10.1093/jat/33.2.85](https://doi.org/10.1093/jat/33.2.85) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Sherertz_1993_rabbits](drugs/drug_chlorhexidine/Chlorhexidine_Sherertz1993_rabbits.md) | Sherertz RJ et al., Efficacy of antibiotic-coated catheters…, The Journal of infectious d… (1993) | [10.1093/infdis/167.1.98](https://doi.org/10.1093/infdis/167.1.98) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Xue_2009_rats](drugs/drug_chlorhexidine/Chlorhexidine_Xue2009_rats.md) | Xue Y et al., High-performance liquid chromatographic…, Journal of analytical toxic… (2009) | [10.1093/jat/33.2.85](https://doi.org/10.1093/jat/33.2.85) |
 
 ## Pharmacodynamics (PD)
 

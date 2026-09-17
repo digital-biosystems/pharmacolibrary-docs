@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lansoprazole_Sakurai2007_reference&quot;,&quot;label&quot;:&quot;Sakurai_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # CYP35A2 mRNA expression — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Menzel_2005`

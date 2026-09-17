@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01A&quot;,&quot;href&quot;:&quot;atc/C01A.md&quot;},{&quot;label&quot;:&quot;digitoxin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Digitoxin_Flasch1979_cats&quot;,&quot;label&quot;:&quot;Flasch_1979_cats&quot;,&quot;href&quot;:&quot;drugs/drug_digitoxin/Digitoxin_Flasch1979_cats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # digitoxin
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Flasch_1979](drugs/drug_digitoxin/Digitoxin_Flasch1979_cats.md) | Flasch H et al., Pharmacokinetics of dihydrodigitoxin in…, Naunyn-Schmiedeberg's archi… (1979) | [10.1007/BF00500279](https://doi.org/10.1007/BF00500279) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Flasch_1979_cats](drugs/drug_digitoxin/Digitoxin_Flasch1979_cats.md) | Flasch H et al., Pharmacokinetics of dihydrodigitoxin in…, Naunyn-Schmiedeberg's archi… (1979) | [10.1007/BF00500279](https://doi.org/10.1007/BF00500279) |
 
 ## Coverage
 

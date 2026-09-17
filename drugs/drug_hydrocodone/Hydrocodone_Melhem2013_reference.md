@@ -1,8 +1,9 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;hydrocodone&quot;,&quot;href&quot;:&quot;drugs/drug_hydrocodone/&quot;},{&quot;label&quot;:&quot;Melhem_2013 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrocodone_Melhem2013_reference&quot;,&quot;label&quot;:&quot;Melhem_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrocodone/Hydrocodone_Melhem2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 # hydrocodone — `Hydrocodone_Melhem2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
@@ -10,14 +11,13 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified.
+**What is wrong:** every check the reviewer could run passed.
 
 **Steps:**
 1. Not a curation fix — fulltext limitation.
-2. Read the .deviation.json and confirm each deviation names what changed and why.
-3. Anything undocumented needs the engineer, not a curator.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -26,21 +26,19 @@ Melhem MR; Rubino CM; Farr SJ; Robinson CY et al. (2013). Clinical pharmacokinet
   ·  DOI: [10.1007/s40262-013-0081-6](https://doi.org/10.1007/s40262-013-0081-6)
 
 ## Model component
-<dbs-pgx drug="hydrocodone" model-id="Hydrocodone_Melhem2013_reference" status="needs_review" stale="false" population="unknown" measured-compound="hydrocodone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="hydrocodone" model-id="Hydrocodone_Melhem2013_reference" status="curated_candidate" stale="false" population="unknown" measured-compound="hydrocodone" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL L/hr | `Q22` · CL | —(suppressed) | L/hr | — | [l] / [h] | not captured | llm_confirmed (0.6) | Melhem_2013:abstract | — | not captured |
-| Vc L | `Q63` · V1 | —(suppressed) | L | — | [l] | not captured | llm_confirmed (0.6) | Melhem_2013:abstract | — | not captured |
-| KA1 1/hr | `Q49` · kabs | —(suppressed) | 1/hr | — | [1] / [h] | not captured | llm (0.6) | Melhem_2013:abstract | — | not captured |
-| Vp L | `Q64` · V2 | —(suppressed) | L | — | [l] | not captured | llm_confirmed (0.6) | Melhem_2013:abstract | — | not captured |
-| Q L/hr | `Q30` · Q | —(suppressed) | L/hr | — | [l] / [h] | not captured | llm (0.6) | Melhem_2013:abstract | — | not captured |
-| KTR 1/hr | `Q306` · ktr | —(suppressed) | 1/hr | — | [1] / [h] | not captured | llm_confirmed (0.6) | Melhem_2013:abstract | — | not captured |
+| CL L/hr | `Q22` · CL | 64.3 | L/hr | 1.786111111111111e-05 | [l] / [h] | not captured | llm_confirmed (0.6) | Melhem_2013:abstract | — | not captured |
+| Vc L | `Q63` · V1 | 713 | L | 0.713 | [l] | not captured | llm_confirmed (0.6) | Melhem_2013:abstract | — | not captured |
+| KA1 1/hr | `Q49` · kabs | 2.28 | 1/hr | 0.0006333333333333333 | [1] / [h] | not captured | llm (0.6) | Melhem_2013:abstract | — | not captured |
+| Vp L | `Q64` · V2 | 153 | L | 0.153 | [l] | not captured | llm_confirmed (0.6) | Melhem_2013:abstract | — | not captured |
+| Q L/hr | `Q30` · Q | 0.9 | L/hr | 2.5000000000000004e-07 | [l] / [h] | not captured | llm (0.6) | Melhem_2013:abstract | — | not captured |
+| KTR 1/hr | `Q306` · ktr | 8.5 | 1/hr | 0.002361111111111111 | [1] / [h] | not captured | llm_confirmed (0.6) | Melhem_2013:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -95,7 +93,7 @@ Melhem MR; Rubino CM; Farr SJ; Robinson CY et al. (2013). Clinical pharmacokinet
 | T3_output_variable | not captured | pass | C_central (measured=hydrocodone) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

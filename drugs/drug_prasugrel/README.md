@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;prasugrel&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prasugrel_Moser2018_pediatric_patients_with_sickle_cell_anem&quot;,&quot;label&quot;:&quot;Moser_2018_pediatric patients with sickle cell anemia&quot;,&quot;href&quot;:&quot;drugs/drug_prasugrel/Prasugrel_Moser2018_pediatric_patients_with_sickle_cell_anem.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 # prasugrel
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Moser_2018](drugs/drug_prasugrel/Prasugrel_Moser2018_pediatric_patients_with_sickle_cell_anem.md) | Moser BA et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0556-y](https://doi.org/10.1007/s40262-017-0556-y) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Moser_2018_pediatric patients with sickle cell anemia](drugs/drug_prasugrel/Prasugrel_Moser2018_pediatric_patients_with_sickle_cell_anem.md) | Moser BA et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0556-y](https://doi.org/10.1007/s40262-017-0556-y) |
 
 ## Pharmacodynamics (PD)
 

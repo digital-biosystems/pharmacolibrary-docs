@@ -1,17 +1,19 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;eslicarbazepine&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/&quot;},{&quot;label&quot;:&quot;Sunkaraneni_2018_2 \u00b7 interindividual_variability_residual_variabilitya&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eslicarbazepine_Sunkaraneni2018v2_final&quot;,&quot;label&quot;:&quot;Sunkaraneni_2018_2_final&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eslicarbazepine_Sunkaraneni2018v2_final&quot;,&quot;label&quot;:&quot;Sunkaraneni_2018_2_final&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit&quot;,&quot;label&quot;:&quot;Sunkaraneni_2018_2_interindividual_variability_residual_variabilitya&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit&quot;,&quot;label&quot;:&quot;Sunkaraneni_2018_2_interindividual_variability_residual_variabilitya&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 # eslicarbazepine — `Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-**What is wrong:** every check the reviewer could run passed
+**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
 
 **Steps:**
-1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+1. Read the .deviation.json and confirm each deviation names what changed and why.
+2. Anything undocumented needs the engineer, not a curator.
 
-<sub>owner: **curator** · guidance written by playbook</sub>
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `eslicarbazepine acetate`, measured `eslicarbazepine`.
 
@@ -21,15 +23,17 @@
 not matched (stem Sunkaraneni_2018_2)
 
 ## Model component
-<dbs-pgx drug="eslicarbazepine" model-id="Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit" status="curated_candidate" stale="false" population="pediatric patients with partial-onset seizures" measured-compound="eslicarbazepine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="eslicarbazepine" model-id="Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit" status="needs_review" stale="false" population="pediatric patients with partial-onset seizures" measured-compound="eslicarbazepine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL: apparent elimination clearance (L/h) | `Q22` · CL | 15.5 | L/h | 4.305555555555556e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Tab3:row2:col4 | — | not captured |
-| V: apparent volume of distribution (L) | `Q76` · V/F | 65.1 | L | 0.06509999999999999 | [l] | not captured | llm_confirmed (0.6) | Tab3:row5:col4 | — | not captured |
+| CL: apparent elimination clearance (L/h) | `Q22` · CL | —(suppressed) | L/h | — | [l] / [h] | not captured | llm_confirmed (0.6) | Tab3:row2:col4 | — | not captured |
+| V: apparent volume of distribution (L) | `Q76` · V/F | —(suppressed) | L | — | [l] | not captured | llm_confirmed (0.6) | Tab3:row5:col4 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -39,7 +43,10 @@ not matched (stem Sunkaraneni_2018_2)
 ## Departures & gaps
 
 **Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=eslicarbazepine
@@ -83,8 +90,8 @@ not matched (stem Sunkaraneni_2018_2)
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=eslicarbazepine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -101,24 +108,36 @@ not matched (stem Sunkaraneni_2018_2)
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit.svg" alt="Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
+
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_modelica.zip" download>Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_matlab.zip" download>Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_matlab_simbio.zip" download>Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_sbml.zip" download>Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_cellml.zip" download>Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_modelica.zip" download>Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_matlab.zip" download>Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_matlab.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_matlab_simbio.zip" download>Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_sbml.zip" download>Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_cellml.zip" download>Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_cellml.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
 ## Web simulation
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
+
+<dbs-fmusim paramsurl="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_sim_controls.json"></dbs-fmusim>
+
+<sub>Template `PK_1C_enteral` · parameters `Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_params.json` · controls `Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tirzepatide_Schneck2024_reference&quot;,&quot;label&quot;:&quot;Schneck_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tirzepatide/Tirzepatide_Schneck2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # GIPR — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Su_2026`

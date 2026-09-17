@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;meloxicam&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Meloxicam_Meineke2003_reference&quot;,&quot;label&quot;:&quot;Meineke_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Meineke2003_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Meloxicam_Aoyama2017_reference&quot;,&quot;label&quot;:&quot;Aoyama_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # meloxicam
 
@@ -33,8 +34,8 @@ Off-label uses include the treatment of dental or post-surgical pain.
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Meineke_2003](drugs/drug_meloxicam/Meloxicam_Meineke2003_reference.md) | Meineke I et al., Population pharmacokinetic analysis of…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01753.x](https://doi.org/10.1046/j.1365-2125.2003.01753.x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Aoyama_2017](drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference.md) | Aoyama T et al., Pharmacokinetics and Pharmacodynamics o…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12259](https://doi.org/10.1002/psp4.12259) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Meineke_2003_reference](drugs/drug_meloxicam/Meloxicam_Meineke2003_reference.md) | Meineke I et al., Population pharmacokinetic analysis of…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01753.x](https://doi.org/10.1046/j.1365-2125.2003.01753.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Aoyama_2017_reference](drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference.md) | Aoyama T et al., Pharmacokinetics and Pharmacodynamics o…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12259](https://doi.org/10.1002/psp4.12259) |
 
 ## Coverage
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ximelagatran&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ximelagatran_Cullberg2005_patients_with_acute_deep_vein_thro&quot;,&quot;label&quot;:&quot;Cullberg_2005_patients with acute deep vein thrombosis&quot;,&quot;href&quot;:&quot;drugs/drug_ximelagatran/Ximelagatran_Cullberg2005_patients_with_acute_deep_vein_thro.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ximelagatran_Eriksson2003_orthopaedic_surgery_patients&quot;,&quot;label&quot;:&quot;Eriksson_2003_orthopaedic surgery patients&quot;,&quot;href&quot;:&quot;drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_orthopaedic_surgery_patients.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # ximelagatran
 
@@ -23,8 +24,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Cullberg_2005](drugs/drug_ximelagatran/Ximelagatran_Cullberg2005_patients_with_acute_deep_vein_thro.md) | Cullberg M et al., Pharmacokinetics of ximelagatran and re…, Clinical pharmacology and t… (2005) | [10.1016/j.clpt.2004.11.001](https://doi.org/10.1016/j.clpt.2004.11.001) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Eriksson_2003](drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_orthopaedic_surgery_patients.md) | Eriksson UG et al., Pharmacokinetics of melagatran and the…, Clinical pharmacokinetics (2003) | [10.2165/00003088-200342070-00006](https://doi.org/10.2165/00003088-200342070-00006) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Cullberg_2005_patients with acute deep vein thrombosis](drugs/drug_ximelagatran/Ximelagatran_Cullberg2005_patients_with_acute_deep_vein_thro.md) | Cullberg M et al., Pharmacokinetics of ximelagatran and re…, Clinical pharmacology and t… (2005) | [10.1016/j.clpt.2004.11.001](https://doi.org/10.1016/j.clpt.2004.11.001) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Eriksson_2003_orthopaedic surgery patients](drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_orthopaedic_surgery_patients.md) | Eriksson UG et al., Pharmacokinetics of melagatran and the…, Clinical pharmacokinetics (2003) | [10.2165/00003088-200342070-00006](https://doi.org/10.2165/00003088-200342070-00006) |
 
 ## Coverage
 

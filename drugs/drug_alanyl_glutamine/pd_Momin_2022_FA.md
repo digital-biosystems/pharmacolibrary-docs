@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AlanylGlutamine_Albers1988_healthy_adults&quot;,&quot;label&quot;:&quot;Albers_1988_healthy adults&quot;,&quot;href&quot;:&quot;drugs/drug_alanyl_glutamine/AlanylGlutamine_Albers1988_healthy_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # Fractional Activity — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Momin_2022`

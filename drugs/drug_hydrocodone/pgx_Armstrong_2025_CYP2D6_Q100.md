@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrocodone_Melhem2013_reference&quot;,&quot;label&quot;:&quot;Melhem_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrocodone/Hydrocodone_Melhem2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 # CYP2D6 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Armstrong_2025`

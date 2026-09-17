@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;concizumab&quot;,&quot;href&quot;:&quot;drugs/drug_concizumab/&quot;},{&quot;label&quot;:&quot;Agers\u00f8_2014 \u00b7 Cynomolgus monkeys&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Concizumab_Agers2014_cynomolgus_monkeys&quot;,&quot;label&quot;:&quot;Agers\u00f8_2014_Cynomolgus monkeys&quot;,&quot;href&quot;:&quot;drugs/drug_concizumab/Concizumab_Agers2014_cynomolgus_monkeys.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # concizumab — `Concizumab_Agers2014_cynomolgus_monkeys`
 

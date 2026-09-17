@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;levosimendan&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levosimendan_Bertin2025_reference&quot;,&quot;label&quot;:&quot;Bertin_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_levosimendan/Levosimendan_Bertin2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levosimendan_Bertin2026_reference&quot;,&quot;label&quot;:&quot;Bertin_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_levosimendan/Levosimendan_Bertin2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # levosimendan
 
@@ -23,8 +24,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Bertin_2025](drugs/drug_levosimendan/Levosimendan_Bertin2025_reference.md) | Bertin S et al., Pharmacokinetics of levosimendan in cri…, Frontiers in pediatrics (2025) | [10.3389/fped.2025.1542417](https://doi.org/10.3389/fped.2025.1542417) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Bertin_2026](drugs/drug_levosimendan/Levosimendan_Bertin2026_reference.md) | Bertin S et al., Population Pharmacokinetics of Levosime…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01591-4](https://doi.org/10.1007/s40262-025-01591-4) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Bertin_2025_reference](drugs/drug_levosimendan/Levosimendan_Bertin2025_reference.md) | Bertin S et al., Pharmacokinetics of levosimendan in cri…, Frontiers in pediatrics (2025) | [10.3389/fped.2025.1542417](https://doi.org/10.3389/fped.2025.1542417) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Bertin_2026_reference](drugs/drug_levosimendan/Levosimendan_Bertin2026_reference.md) | Bertin S et al., Population Pharmacokinetics of Levosime…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01591-4](https://doi.org/10.1007/s40262-025-01591-4) |
 
 ## Pharmacodynamics (PD)
 

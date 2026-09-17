@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FolicAcid_Crider2019_women_of_reproductive_age&quot;,&quot;label&quot;:&quot;Crider_2019_women of reproductive age&quot;,&quot;href&quot;:&quot;drugs/drug_folic_acid/FolicAcid_Crider2019_women_of_reproductive_age.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # relative bacterial growth rate — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Focks_2010`

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;felbamate&quot;,&quot;href&quot;:&quot;drugs/drug_felbamate/&quot;},{&quot;label&quot;:&quot;Graves_1989 \u00b7 patients with epilepsy&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Felbamate_Graves1989_patients_with_epilepsy&quot;,&quot;label&quot;:&quot;Graves_1989_patients with epilepsy&quot;,&quot;href&quot;:&quot;drugs/drug_felbamate/Felbamate_Graves1989_patients_with_epilepsy.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Felbamate_Kelley1997_children&quot;,&quot;label&quot;:&quot;Kelley_1997_children&quot;,&quot;href&quot;:&quot;drugs/drug_felbamate/Felbamate_Kelley1997_children.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # felbamate — `Felbamate_Graves1989_patients_with_epilepsy`
 

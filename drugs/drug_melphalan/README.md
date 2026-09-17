@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;melphalan&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melphalan_Shah2022_reference&quot;,&quot;label&quot;:&quot;Shah_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_melphalan/Melphalan_Shah2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # melphalan
 
@@ -25,7 +26,7 @@ Melphalan is a component of HEPZATO KIT, a liver-directed therapy indicated for 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Shah_2022](drugs/drug_melphalan/Melphalan_Shah2022_reference.md) | Shah GL et al., Population Pharmacokinetics of Melphala…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01093-z](https://doi.org/10.1007/s40262-021-01093-z) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Shah_2022_reference](drugs/drug_melphalan/Melphalan_Shah2022_reference.md) | Shah GL et al., Population Pharmacokinetics of Melphala…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01093-z](https://doi.org/10.1007/s40262-021-01093-z) |
 
 ## Coverage
 

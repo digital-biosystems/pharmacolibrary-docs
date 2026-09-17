@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fidanacogene elaparvovec&quot;,&quot;href&quot;:&quot;drugs/drug_fidanacogene_elaparvovec/&quot;},{&quot;label&quot;:&quot;Wojciechowski_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FidanacogeneElaparvovec_Wojciechowski2025_reference&quot;,&quot;label&quot;:&quot;Wojciechowski_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fidanacogene_elaparvovec/FidanacogeneElaparvovec_Wojciechowski2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # fidanacogene elaparvovec — `FidanacogeneElaparvovec_Wojciechowski2025_reference`
 

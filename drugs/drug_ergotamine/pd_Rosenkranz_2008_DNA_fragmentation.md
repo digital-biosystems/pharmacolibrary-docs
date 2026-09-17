@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergotamine_TfeltHansen1985_subjects_with_migraine&quot;,&quot;label&quot;:&quot;Tfelt-Hansen_1985_subjects with migraine&quot;,&quot;href&quot;:&quot;drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_subjects_with_migraine.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # name — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Rosenkranz_2008`

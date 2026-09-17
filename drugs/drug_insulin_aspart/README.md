@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;insulin aspart&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InsulinAspart_Clausen2006_reference&quot;,&quot;label&quot;:&quot;Clausen_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_aspart/InsulinAspart_Clausen2006_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # insulin aspart
 
@@ -27,7 +28,7 @@ M
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Clausen_2006](drugs/drug_insulin_aspart/InsulinAspart_Clausen2006_reference.md) | Clausen WH et al., Within-patient variation of the pharmac…, Diabetologia (2006) | [10.1007/s00125-006-0327-z](https://doi.org/10.1007/s00125-006-0327-z) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Clausen_2006_reference](drugs/drug_insulin_aspart/InsulinAspart_Clausen2006_reference.md) | Clausen WH et al., Within-patient variation of the pharmac…, Diabetologia (2006) | [10.1007/s00125-006-0327-z](https://doi.org/10.1007/s00125-006-0327-z) |
 
 ## Pharmacodynamics (PD)
 

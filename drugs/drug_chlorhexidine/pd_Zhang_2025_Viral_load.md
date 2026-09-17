@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chlorhexidine_Sherertz1993_rabbits&quot;,&quot;label&quot;:&quot;Sherertz_1993_rabbits&quot;,&quot;href&quot;:&quot;drugs/drug_chlorhexidine/Chlorhexidine_Sherertz1993_rabbits.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chlorhexidine_Xue2009_rats&quot;,&quot;label&quot;:&quot;Xue_2009_rats&quot;,&quot;href&quot;:&quot;drugs/drug_chlorhexidine/Chlorhexidine_Xue2009_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Zhang_2025`

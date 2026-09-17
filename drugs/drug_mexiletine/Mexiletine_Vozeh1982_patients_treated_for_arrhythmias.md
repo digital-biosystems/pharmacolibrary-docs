@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;mexiletine&quot;,&quot;href&quot;:&quot;drugs/drug_mexiletine/&quot;},{&quot;label&quot;:&quot;Vozeh_1982 \u00b7 patients treated for arrhythmias&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mexiletine_Vozeh1982_patients_treated_for_arrhythmias&quot;,&quot;label&quot;:&quot;Vozeh_1982_patients treated for arrhythmias&quot;,&quot;href&quot;:&quot;drugs/drug_mexiletine/Mexiletine_Vozeh1982_patients_treated_for_arrhythmias.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
 
 # mexiletine — `Mexiletine_Vozeh1982_patients_treated_for_arrhythmias`
 

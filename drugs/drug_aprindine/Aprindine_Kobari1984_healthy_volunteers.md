@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;aprindine&quot;,&quot;href&quot;:&quot;drugs/drug_aprindine/&quot;},{&quot;label&quot;:&quot;Kobari_1984 \u00b7 healthy volunteers&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aprindine_Kobari1984_healthy_volunteers&quot;,&quot;label&quot;:&quot;Kobari_1984_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_aprindine/Aprindine_Kobari1984_healthy_volunteers.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # aprindine — `Aprindine_Kobari1984_healthy_volunteers`
 

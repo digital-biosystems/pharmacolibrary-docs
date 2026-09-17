@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;phenprocoumon&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenprocoumon_Abduljalil2013_patients_on_steady_state_phenpr&quot;,&quot;label&quot;:&quot;Abduljalil_2013_patients on steady-state phenprocoumon&quot;,&quot;href&quot;:&quot;drugs/drug_phenprocoumon/Phenprocoumon_Abduljalil2013_patients_on_steady_state_phenpr.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # phenprocoumon
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Abduljalil_2013](drugs/drug_phenprocoumon/Phenprocoumon_Abduljalil2013_patients_on_steady_state_phenpr.md) | Abduljalil K et al., Quantifying the effect of covariates on…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0043-z](https://doi.org/10.1007/s40262-013-0043-z) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Abduljalil_2013_patients on steady-state phenprocoumon](drugs/drug_phenprocoumon/Phenprocoumon_Abduljalil2013_patients_on_steady_state_phenpr.md) | Abduljalil K et al., Quantifying the effect of covariates on…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0043-z](https://doi.org/10.1007/s40262-013-0043-z) |
 
 ## Coverage
 

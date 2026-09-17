@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Trabectedin_PerezRuixo2007_cancer_patients&quot;,&quot;label&quot;:&quot;Perez-Ruixo_2007_cancer patients&quot;,&quot;href&quot;:&quot;drugs/drug_trabectedin/Trabectedin_PerezRuixo2007_cancer_patients.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Trabectedin_Poggesi2019_children_and_adolescent_patients_wit&quot;,&quot;label&quot;:&quot;Poggesi_2019_children and adolescent patients with cancer&quot;,&quot;href&quot;:&quot;drugs/drug_trabectedin/Trabectedin_Poggesi2019_children_and_adolescent_patients_wit.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Miao_2016`

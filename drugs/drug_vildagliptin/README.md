@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;vildagliptin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vildagliptin_Tatosian2013_reference&quot;,&quot;label&quot;:&quot;Tatosian_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vildagliptin/Vildagliptin_Tatosian2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # vildagliptin
 
@@ -27,7 +28,7 @@ Vildagliptin is also marketed in a combination product with [metformin] for the 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Tatosian_2013](drugs/drug_vildagliptin/Vildagliptin_Tatosian2013_reference.md) | Tatosian DA et al., Dipeptidyl peptidase-4 inhibition in pa…, Diabetes therapy : research… (2013) | [10.1007/s13300-013-0045-8](https://doi.org/10.1007/s13300-013-0045-8) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Tatosian_2013_reference](drugs/drug_vildagliptin/Vildagliptin_Tatosian2013_reference.md) | Tatosian DA et al., Dipeptidyl peptidase-4 inhibition in pa…, Diabetes therapy : research… (2013) | [10.1007/s13300-013-0045-8](https://doi.org/10.1007/s13300-013-0045-8) |
 
 ## Pharmacogenomics (PGx)
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;dipyridamole&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dipyridamole_NielsenKudsk1979_healthy_adults&quot;,&quot;label&quot;:&quot;Nielsen-Kudsk_1979_healthy adults&quot;,&quot;href&quot;:&quot;drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1979_healthy_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dipyridamole_NielsenKudsk1980_isolated_rabbit_hearts&quot;,&quot;label&quot;:&quot;Nielsen-Kudsk_1980_isolated rabbit hearts&quot;,&quot;href&quot;:&quot;drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1980_isolated_rabbit_hearts.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # dipyridamole
 
@@ -23,8 +24,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nielsen-Kudsk_1979](drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1979_healthy_adults.md) | Nielsen-Kudsk F et al., Pharmacokinetics of dipyridamole, Acta pharmacologica et toxi… (1979) | [10.1111/j.1600-0773.1979.tb02350.x](https://doi.org/10.1111/j.1600-0773.1979.tb02350.x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nielsen-Kudsk_1980](drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1980_isolated_rabbit_hearts.md) | Nielsen-Kudsk F et al., Myocardial pharmacokinetics and pharmac…, Acta pharmacologica et toxi… (1980) | [10.1111/j.1600-0773.1980.tb01559.x](https://doi.org/10.1111/j.1600-0773.1980.tb01559.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nielsen-Kudsk_1979_healthy adults](drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1979_healthy_adults.md) | Nielsen-Kudsk F et al., Pharmacokinetics of dipyridamole, Acta pharmacologica et toxi… (1979) | [10.1111/j.1600-0773.1979.tb02350.x](https://doi.org/10.1111/j.1600-0773.1979.tb02350.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nielsen-Kudsk_1980_isolated rabbit hearts](drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1980_isolated_rabbit_hearts.md) | Nielsen-Kudsk F et al., Myocardial pharmacokinetics and pharmac…, Acta pharmacologica et toxi… (1980) | [10.1111/j.1600-0773.1980.tb01559.x](https://doi.org/10.1111/j.1600-0773.1980.tb01559.x) |
 
 ## Pharmacodynamics (PD)
 

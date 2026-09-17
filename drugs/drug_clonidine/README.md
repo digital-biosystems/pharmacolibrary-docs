@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;clonidine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # clonidine
 
@@ -29,7 +30,7 @@ Additionally, clonidine is also indicated for the treatment of Attention Deficit
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Bardol_2025](drugs/drug_clonidine/Clonidine_Bardol2025_reference.md) | Bardol M et al., Pharmacokinetic and Pharmacodynamic Mod…, Paediatric anaesthesia (2025) | [10.1111/pan.70050](https://doi.org/10.1111/pan.70050) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Bardol_2025_reference](drugs/drug_clonidine/Clonidine_Bardol2025_reference.md) | Bardol M et al., Pharmacokinetic and Pharmacodynamic Mod…, Paediatric anaesthesia (2025) | [10.1111/pan.70050](https://doi.org/10.1111/pan.70050) |
 
 ## Coverage
 

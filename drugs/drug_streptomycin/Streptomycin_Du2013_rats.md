@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;streptomycin&quot;,&quot;href&quot;:&quot;drugs/drug_streptomycin/&quot;},{&quot;label&quot;:&quot;Du_2013 \u00b7 rats&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Streptomycin_Du2013_rats&quot;,&quot;label&quot;:&quot;Du_2013_rats&quot;,&quot;href&quot;:&quot;drugs/drug_streptomycin/Streptomycin_Du2013_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # streptomycin — `Streptomycin_Du2013_rats`
 

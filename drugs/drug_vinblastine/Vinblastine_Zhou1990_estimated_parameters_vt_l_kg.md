@@ -1,20 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Zhou_1990 \u00b7 estimated_parameters_vt_l_kg&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_cls_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_cls_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_cls_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_cls_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vt_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vt_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vt_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vt_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h&quot;,&quot;label&quot;:&quot;Zhou_1990_first_exponential_at1_2_g_ml_h&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h&quot;,&quot;label&quot;:&quot;Zhou_1990_first_exponential_at1_2_g_ml_h&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Petric2023_reference&quot;,&quot;label&quot;:&quot;Petric_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Petric2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Sethi1984_reference&quot;,&quot;label&quot;:&quot;Sethi_1984_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Sethi1984_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # vinblastine — `Vinblastine_Zhou1990_estimated_parameters_vt_l_kg`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
-3. Read the .deviation.json and confirm each deviation names what changed and why.
-4. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -23,19 +21,17 @@ Zhou XJ; Martin M; Placidi M; Cano JP; Rahmani R et al. (1990). European journal
   ·  DOI: [10.1007/BF03190222](https://doi.org/10.1007/BF03190222)
 
 ## Model component
-<dbs-pgx drug="vinblastine" model-id="Vinblastine_Zhou1990_estimated_parameters_vt_l_kg" status="model_quarantined" stale="false" population="rats" measured-compound="vinblastine, vincristine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="vinblastine" model-id="Vinblastine_Zhou1990_estimated_parameters_vt_l_kg" status="curated_candidate" stale="false" population="rats" measured-compound="vinblastine, vincristine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| VLB | `Q352` · Vnorm | —(suppressed) | l/kg | — | [l] / [kg] | not captured | llm (0.6) | Zhou_1990_table_1:row0:col4, Zhou_1990_table_1:row0:col6 | — | not captured |
-| VCR | `Q61` · V | —(suppressed) | l/kg | — | [l] / [kg] | not captured | llm (0.6) | Zhou_1990_table_1:row1:col4, Zhou_1990_table_1:row1:col6 | — | not captured |
-| Systemic clearance | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | review_gapfill (0.7) | Levêque_1996:review | — | not captured |
-| Tlag_pop | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review_gapfill (0.7) | Petric_2023:review | — | not captured |
+| VLB | `Q352` · Vnorm | 5.86 | l/kg | 0.41020000000000006 | [l] / [kg] | not captured | llm (0.6) | Zhou_1990_table_1:row0:col4, Zhou_1990_table_1:row0:col6 | — | not captured |
+| VCR | `Q61` · V | 0.20 | l/kg | 0.014 | [l] / [kg] | not captured | llm (0.6) | Zhou_1990_table_1:row1:col4, Zhou_1990_table_1:row1:col6 | — | not captured |
+| Systemic clearance | `Q22` · CL | 46.2 | L/h | 1.2833333333333335e-05 | L/h | not captured | review_gapfill (0.7) | Levêque_1996:review | — | not captured |
+| Tlag_pop | `Q83` · tlag | 0.17 | h | 612.0 | h | not captured | review_gapfill (0.7) | Petric_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -83,9 +79,10 @@ Zhou XJ; Martin M; Placidi M; Cano JP; Rahmani R et al. (1990). European journal
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=vinblastine, vincristine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -95,19 +92,28 @@ Zhou XJ; Martin M; Placidi M; Cano JP; Rahmani R et al. (1990). European journal
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_vinblastine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhou_1990` / `Zhou_1990::estimated_parameters_vt_l_kg`)
-- model: `../../../knowledgebase/drugs/drug_vinblastine/models/modelica/_needs_review/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.mo`
-- deviation: `../../../knowledgebase/drugs/drug_vinblastine/models/modelica/_needs_review/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_vinblastine/models/modelica/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.mo`
+- deviation: `../../../knowledgebase/drugs/drug_vinblastine/models/modelica/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_vinblastine/models/modelica/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
+
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.svg" alt="Vinblastine_Zhou1990_estimated_parameters_vt_l_kg diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
 
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_modelica.zip" download>Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_matlab.zip" download>Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_matlab_simbio.zip" download>Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_sbml.zip" download>Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -118,7 +124,11 @@ Each archive holds the model source, a script that simulates it against the appr
 
 ## Web simulation
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
+
+<dbs-fmusim paramsurl="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_sim_controls.json"></dbs-fmusim>
+
+<sub>Template `PK_1C` · parameters `Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_params.json` · controls `Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

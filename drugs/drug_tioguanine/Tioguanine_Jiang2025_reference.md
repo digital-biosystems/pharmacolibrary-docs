@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;tioguanine&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/&quot;},{&quot;label&quot;:&quot;Jiang_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tioguanine_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tioguanine_Leblond2023_reference&quot;,&quot;label&quot;:&quot;Leblond_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Leblond2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tioguanine_Bayoumy2025_reference&quot;,&quot;label&quot;:&quot;Bayoumy_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tioguanine/Tioguanine_Bayoumy2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # tioguanine — `Tioguanine_Jiang2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,18 +21,16 @@ Jiang L; Zhang Y; Wang J; Zhang C; Wang D et al. (2025). Drug design, developmen
   ·  DOI: [10.2147/dddt.s547878](https://doi.org/10.2147/dddt.s547878)
 
 ## Model component
-<dbs-pgx drug="tioguanine" model-id="Tioguanine_Jiang2025_reference" status="needs_review" stale="false" population="" measured-compound="tioguanine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tioguanine" model-id="Tioguanine_Jiang2025_reference" status="curated_candidate" stale="false" population="" measured-compound="tioguanine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Jiang_2025:review | — | not captured |
-| V/F (L) | `Q76` · V/F | —(suppressed) | L | — | L | not captured | review (0.7) | Jiang_2025:review | — | not captured |
-| Ka (h−1) | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review (0.7) | Jiang_2025:review | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 21.6 | L/h | 6e-06 | L/h | not captured | review (0.7) | Jiang_2025:review | — | not captured |
+| V/F (L) | `Q76` · V/F | 140.0 | L | 0.14 | L | not captured | review (0.7) | Jiang_2025:review | — | not captured |
+| Ka (h−1) | `Q49` · kabs | 1.3 | h−1 | 0.00036111111111111115 | 1/h | not captured | review (0.7) | Jiang_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -74,7 +72,7 @@ Jiang L; Zhang Y; Wang J; Zhang C; Wang D et al. (2025). Drug design, developmen
 | T3_output_variable | not captured | pass | C_central (measured=tioguanine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -91,13 +89,21 @@ Jiang L; Zhang Y; Wang J; Zhang C; Wang D et al. (2025). Drug design, developmen
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_tioguanine/Tioguanine_Jiang2025_reference/Tioguanine_Jiang2025_reference.svg" alt="Tioguanine_Jiang2025_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
+
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tioguanine/Tioguanine_Jiang2025_reference/Tioguanine_Jiang2025_reference_modelica.zip" download>Tioguanine_Jiang2025_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tioguanine/Tioguanine_Jiang2025_reference/Tioguanine_Jiang2025_reference_matlab.zip" download>Tioguanine_Jiang2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tioguanine/Tioguanine_Jiang2025_reference/Tioguanine_Jiang2025_reference_matlab_simbio.zip" download>Tioguanine_Jiang2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tioguanine/Tioguanine_Jiang2025_reference/Tioguanine_Jiang2025_reference_sbml.zip" download>Tioguanine_Jiang2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -108,7 +114,11 @@ Each archive holds the model source, a script that simulates it against the appr
 
 ## Web simulation
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
+
+<dbs-fmusim paramsurl="drugs/drug_tioguanine/Tioguanine_Jiang2025_reference/Tioguanine_Jiang2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tioguanine/Tioguanine_Jiang2025_reference/Tioguanine_Jiang2025_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Template `PK_1C_enteral` · parameters `Tioguanine_Jiang2025_reference_params.json` · controls `Tioguanine_Jiang2025_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

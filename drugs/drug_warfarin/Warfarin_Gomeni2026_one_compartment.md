@@ -1,8 +1,9 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Gomeni_2026 \u00b7 one_compartment&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Aoyama2022_reference&quot;,&quot;label&quot;:&quot;Aoyama_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Aoyama2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_deep_learning&quot;,&quot;label&quot;:&quot;Gomeni_2026_deep_learning&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_deep_learning.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_deep_learning&quot;,&quot;label&quot;:&quot;Gomeni_2026_deep_learning&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_deep_learning.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_one_compartment&quot;,&quot;label&quot;:&quot;Gomeni_2026_one_compartment&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_one_compartment.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_one_compartment&quot;,&quot;label&quot;:&quot;Gomeni_2026_one_compartment&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_one_compartment.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_reference&quot;,&quot;label&quot;:&quot;Gomeni_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Hirai2024_estimates&quot;,&quot;label&quot;:&quot;Hirai_2024_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Hirai2024_estimates.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Hirai2024_estimates&quot;,&quot;label&quot;:&quot;Hirai_2024_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Hirai2024_estimates.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Hirai2024_median&quot;,&quot;label&quot;:&quot;Hirai_2024_median&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Hirai2024_median.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Hirai2024_median&quot;,&quot;label&quot;:&quot;Hirai_2024_median&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Hirai2024_median.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Lane2012_r_warfarin&quot;,&quot;label&quot;:&quot;Lane_2012_r_warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Lane2012_r_warfarin&quot;,&quot;label&quot;:&quot;Lane_2012_r_warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Lane2012_s_warfarin&quot;,&quot;label&quot;:&quot;Lane_2012_s_warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Lane2012_s_warfarin&quot;,&quot;label&quot;:&quot;Lane_2012_s_warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # warfarin — `Warfarin_Gomeni2026_one_compartment`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
@@ -10,12 +11,11 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified.
+**What is wrong:** every check the reviewer could run passed.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
-2. Read the .deviation.json and confirm each deviation names what changed and why.
-3. Anything undocumented needs the engineer, not a curator.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -26,20 +26,18 @@ Gomeni R; Bressolle-Gomeni F et al. (2026). Journal of clinical pharmacology 66
   ·  DOI: [10.1002/jcph.70174](https://doi.org/10.1002/jcph.70174)
 
 ## Model component
-<dbs-pgx drug="warfarin" model-id="Warfarin_Gomeni2026_one_compartment" status="needs_review" stale="false" population="adults" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="warfarin" model-id="Warfarin_Gomeni2026_one_compartment" status="curated_candidate" stale="false" population="adults" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AUC (mg h/L) | `Q88` · AUC | —(suppressed) | mg h/L | — | [[h] · [mg]] / [l] | not captured | exact (1.0) | jcph70174-tbl-0001:row3:col3 | — | not captured |
-| Cmax (mg/L) | `Q32` · Cmax | —(suppressed) | mg/L | — | [mg] / [l] | not captured | exact (1.0) | jcph70174-tbl-0001:row4:col3 | — | not captured |
-| CL (L/h/70 kg) | `Q22` · CL | —(suppressed) | L/h/70 kg | — | L/h | not captured | exact (1.0) | Gomeni_2026:other_prose | — | not captured |
-| V (L/70 kg) | `Q61` · V | —(suppressed) | L/70 kg | — | L | not captured | exact (1.0) | Gomeni_2026:other_prose | — | not captured |
-| ka (1/h) | `Q49` · kabs | —(suppressed) | 1/h | — | 1/h | not captured | exact (1.0) | Gomeni_2026:other_prose | — | not captured |
+| AUC (mg h/L) | `Q88` · AUC | 725.01 | mg h/L | not captured | [[h] · [mg]] / [l] | not captured | exact (1.0) | jcph70174-tbl-0001:row3:col3 | — | not captured |
+| Cmax (mg/L) | `Q32` · Cmax | 171.00 | mg/L | not captured | [mg] / [l] | not captured | exact (1.0) | jcph70174-tbl-0001:row4:col3 | — | not captured |
+| CL (L/h/70 kg) | `Q22` · CL | 0.136 | L/h/70 kg | 3.777777777777779e-08 | L/h | not captured | exact (1.0) | Gomeni_2026:other_prose | — | not captured |
+| V (L/70 kg) | `Q61` · V | 8.09 | L/70 kg | 0.00809 | L | not captured | exact (1.0) | Gomeni_2026:other_prose | — | not captured |
+| ka (1/h) | `Q49` · kabs | 0.214 | 1/h | 5.9444444444444445e-05 | 1/h | not captured | exact (1.0) | Gomeni_2026:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -89,7 +87,7 @@ Gomeni R; Bressolle-Gomeni F et al. (2026). Journal of clinical pharmacology 66
 | T3_output_variable | not captured | pass | C_central (measured=warfarin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

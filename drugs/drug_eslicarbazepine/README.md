@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;eslicarbazepine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eslicarbazepine_Sunkaraneni2018v2_final&quot;,&quot;label&quot;:&quot;Sunkaraneni_2018_2_final&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eslicarbazepine_Sunkaraneni2018v2_final&quot;,&quot;label&quot;:&quot;Sunkaraneni_2018_2_final&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit&quot;,&quot;label&quot;:&quot;Sunkaraneni_2018_2_interindividual_variability_residual_variabilitya&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit&quot;,&quot;label&quot;:&quot;Sunkaraneni_2018_2_interindividual_variability_residual_variabilitya&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # eslicarbazepine
 
@@ -21,16 +22,16 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Sunkaraneni_2018_2](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_final.md) | Sunkaraneni (2018) | — |
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Sunkaraneni_2018_2](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_final.md) | Sunkaraneni (2018) | — |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Sunkaraneni_2018_2](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit.md) | Sunkaraneni (2018) | — |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Sunkaraneni_2018_2](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit.md) | Sunkaraneni (2018) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sunkaraneni_2018_2_final](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_final.md) | Sunkaraneni (2018) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sunkaraneni_2018_2_final](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_final.md) | Sunkaraneni (2018) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sunkaraneni_2018_2_interindividual_variability_residual_variabilitya](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit.md) | Sunkaraneni (2018) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sunkaraneni_2018_2_interindividual_variability_residual_variabilitya](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit.md) | Sunkaraneni (2018) | — |
 
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 4  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 4  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ganaxolone_Zolkowska2018_mice&quot;,&quot;label&quot;:&quot;Zolkowska_2018_mice&quot;,&quot;href&quot;:&quot;drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_mice.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # fear extinction — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Pinna_2014`

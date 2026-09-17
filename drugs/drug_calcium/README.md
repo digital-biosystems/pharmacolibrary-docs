@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11A&quot;,&quot;href&quot;:&quot;atc/A11A.md&quot;},{&quot;label&quot;:&quot;Calcium&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Calcium_Abrams1994_reference&quot;,&quot;label&quot;:&quot;Abrams_1994_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_Abrams1994_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Calcium_Bertin2026_reference&quot;,&quot;label&quot;:&quot;Bertin_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_Bertin2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Calcium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Calcium_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Calcium_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Calcium_SchappacherTilp2019_reference&quot;,&quot;label&quot;:&quot;Schappacher-Tilp_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium/Calcium_SchappacherTilp2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Calcium
 
@@ -23,12 +24,12 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Bertin_2026](drugs/drug_calcium/Calcium_Bertin2026_reference.md) | Bertin S et al., Population Pharmacokinetics of Levosime…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01591-4](https://doi.org/10.1007/s40262-025-01591-4) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ekobena_2025](drugs/drug_calcium/Calcium_Ekobena2025_reference.md) | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Schappacher-Tilp_2019](drugs/drug_calcium/Calcium_SchappacherTilp2019_reference.md) | Schappacher-Tilp G et al., A Multi-Compartment Model Capturing the…, Cellular physiology and bio… (2019) | [10.33594/000000148](https://doi.org/10.33594/000000148) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Shi_2026](drugs/drug_calcium/Calcium_Shi2026_reference.md) | Shi Y et al., Vancomycin population pharmacokinetics…, Frontiers in medicine (2026) | [10.3389/fmed.2026.1829805](https://doi.org/10.3389/fmed.2026.1829805) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Abrams_1994](drugs/drug_calcium/Calcium_Abrams1994_reference.md) | Abrams SA et al., Compartmental analysis of calcium metab…, Pediatric research (1994) | [10.1203/00006450-199410000-00002](https://doi.org/10.1203/00006450-199410000-00002) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Piwowarczyk_2023](drugs/drug_calcium/Calcium_Piwowarczyk2023_reference.md) | Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01244-4](https://doi.org/10.1007/s40262-023-01244-4) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Abrams_1994_reference](drugs/drug_calcium/Calcium_Abrams1994_reference.md) | Abrams SA et al., Compartmental analysis of calcium metab…, Pediatric research (1994) | [10.1203/00006450-199410000-00002](https://doi.org/10.1203/00006450-199410000-00002) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Bertin_2026_reference](drugs/drug_calcium/Calcium_Bertin2026_reference.md) | Bertin S et al., Population Pharmacokinetics of Levosime…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01591-4](https://doi.org/10.1007/s40262-025-01591-4) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ekobena_2025_reference](drugs/drug_calcium/Calcium_Ekobena2025_reference.md) | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Piwowarczyk_2023_reference](drugs/drug_calcium/Calcium_Piwowarczyk2023_reference.md) | Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01244-4](https://doi.org/10.1007/s40262-023-01244-4) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Shi_2026_reference](drugs/drug_calcium/Calcium_Shi2026_reference.md) | Shi Y et al., Vancomycin population pharmacokinetics…, Frontiers in medicine (2026) | [10.3389/fmed.2026.1829805](https://doi.org/10.3389/fmed.2026.1829805) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Schappacher-Tilp_2019_reference](drugs/drug_calcium/Calcium_SchappacherTilp2019_reference.md) | Schappacher-Tilp G et al., A Multi-Compartment Model Capturing the…, Cellular physiology and bio… (2019) | [10.33594/000000148](https://doi.org/10.33594/000000148) |
 
 ## Pharmacodynamics (PD)
 
@@ -63,7 +64,7 @@
 
 - **PubMed hits:** 17480 matched, 132 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 6  ·  extracted 4  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 6  ·  extracted 5  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

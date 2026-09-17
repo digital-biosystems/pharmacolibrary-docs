@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02C&quot;,&quot;href&quot;:&quot;atc/C02C.md&quot;},{&quot;label&quot;:&quot;doxazosin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxazosin_Chrisp1990_reference&quot;,&quot;label&quot;:&quot;Chrisp_1990_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Young1988_reference&quot;,&quot;label&quot;:&quot;Young_1988_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Young1988_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_unknown2023_reference&quot;,&quot;label&quot;:&quot;unknown_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Aljaeid2019_reference&quot;,&quot;label&quot;:&quot;Aljaeid_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Aljaeid2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Vincent1983_reference&quot;,&quot;label&quot;:&quot;Vincent_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Vincent1983_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # doxazosin
 
@@ -23,11 +24,11 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Chrisp_1990](drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md) | Chrisp P et al., Dilevalol. A review of its pharmacodyna…, Drugs (1990) | [10.2165/00003495-199039020-00007](https://doi.org/10.2165/00003495-199039020-00007) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Young_1988](drugs/drug_doxazosin/Doxazosin_Young1988_reference.md) | Young RA et al., Doxazosin. A review of its pharmacodyna…, Drugs (1988) | [10.2165/00003495-198835050-00003](https://doi.org/10.2165/00003495-198835050-00003) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [unknown_2023](drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md) | unknown (2023) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Aljaeid_2019](drugs/drug_doxazosin/Doxazosin_Aljaeid2019_reference.md) | Aljaeid BM et al., Chitosan-TPP nanoparticles stabilized b…, Drug development and indust… (2019) | [10.1080/03639045.2019.1597105](https://doi.org/10.1080/03639045.2019.1597105) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Vincent_1983](drugs/drug_doxazosin/Doxazosin_Vincent1983_reference.md) | Vincent J et al., Doxazosin, an alpha 1-adrenoceptor anta…, British journal of clinical… (1983) | [10.1111/j.1365-2125.1983.tb01556.x](https://doi.org/10.1111/j.1365-2125.1983.tb01556.x) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Chrisp_1990_reference](drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md) | Chrisp P et al., Dilevalol. A review of its pharmacodyna…, Drugs (1990) | [10.2165/00003495-199039020-00007](https://doi.org/10.2165/00003495-199039020-00007) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Young_1988_reference](drugs/drug_doxazosin/Doxazosin_Young1988_reference.md) | Young RA et al., Doxazosin. A review of its pharmacodyna…, Drugs (1988) | [10.2165/00003495-198835050-00003](https://doi.org/10.2165/00003495-198835050-00003) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [unknown_2023_reference](drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md) | unknown (2023) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Aljaeid_2019_reference](drugs/drug_doxazosin/Doxazosin_Aljaeid2019_reference.md) | Aljaeid BM et al., Chitosan-TPP nanoparticles stabilized b…, Drug development and indust… (2019) | [10.1080/03639045.2019.1597105](https://doi.org/10.1080/03639045.2019.1597105) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Vincent_1983_reference](drugs/drug_doxazosin/Doxazosin_Vincent1983_reference.md) | Vincent J et al., Doxazosin, an alpha 1-adrenoceptor anta…, British journal of clinical… (1983) | [10.1111/j.1365-2125.1983.tb01556.x](https://doi.org/10.1111/j.1365-2125.1983.tb01556.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -72,7 +73,7 @@
 
 - **PubMed hits:** 119 matched, 49 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 5  ·  extracted 2  ·  needs_review 1  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 3  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

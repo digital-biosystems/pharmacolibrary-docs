@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;papaverine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Papaverine_Ritschel1977_man&quot;,&quot;label&quot;:&quot;Ritschel_1977_man&quot;,&quot;href&quot;:&quot;drugs/drug_papaverine/Papaverine_Ritschel1977_man.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # papaverine
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ritschel_1977](drugs/drug_papaverine/Papaverine_Ritschel1977_man.md) | Ritschel WA et al., Pharmacokinetics of papaverine in man, International journal of cl… (1977) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ritschel_1977_man](drugs/drug_papaverine/Papaverine_Ritschel1977_man.md) | Ritschel WA et al., Pharmacokinetics of papaverine in man, International journal of cl… (1977) | — |
 
 ## Pharmacodynamics (PD)
 

@@ -1,0 +1,26 @@
+{
+ "model_id": "BloodPlasma_Alshehri2023_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "C_central"
+ ],
+ "parameters": {
+  "Cl": 1.95e-06,
+  "F": 1.0,
+  "Tlag": 2700.0,
+  "VdPerKg": 0.0019714285714285715,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 1.8337359098228662e-05,
+  "k21": 5.963649884654763e-06,
+  "ka": 0.00019722222222222222,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "C_central": 0.0003046170214905946
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

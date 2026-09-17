@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zolmitriptan_Zhou2017_adults_and_adolescents_with_migraine&quot;,&quot;label&quot;:&quot;Zhou_2017_adults and adolescents with migraine&quot;,&quot;href&quot;:&quot;drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_adults_and_adolescents_with_migraine.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # coronary artery contraction — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `MaassenVanDenBrink_1998`

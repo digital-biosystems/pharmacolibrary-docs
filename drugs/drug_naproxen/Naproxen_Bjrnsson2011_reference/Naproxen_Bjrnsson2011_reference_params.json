@@ -1,22 +1,24 @@
 {
  "model_id": "Naproxen_Bjrnsson2011_reference",
- "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
  "parameters": {
   "Cl": 0.00014305555555555556,
   "F": 1.0,
+  "Tlag": 0.0,
   "VdPerKg": 0.061285714285714284,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
+  "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 2.3078462773918136e-05
+  "central.C": 1.4850691205507813e-05
  },
  "stop_time": 86400.0,
- "template": "PK_1C",
- "template_fmu": "PK_1C.fmu"
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
 }

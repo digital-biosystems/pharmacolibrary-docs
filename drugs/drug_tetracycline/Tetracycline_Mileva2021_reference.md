@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;tetracycline&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/&quot;},{&quot;label&quot;:&quot;Mileva_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tetracycline_Ji2025_reference&quot;,&quot;label&quot;:&quot;Ji_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Ji2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Lakota2020_reference&quot;,&quot;label&quot;:&quot;Lakota_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Lakota2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Mileva2021_reference&quot;,&quot;label&quot;:&quot;Mileva_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Mileva2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tetracycline_Singh2026_reference&quot;,&quot;label&quot;:&quot;Singh_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Singh2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Grada2022_reference&quot;,&quot;label&quot;:&quot;Grada_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Grada2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # tetracycline — `Tetracycline_Mileva2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,18 +21,16 @@ Mileva R; Rusenov A; Milanova A et al. (2021). Antibiotics (Basel, Switzerland) 
   ·  DOI: [10.3390/antibiotics10030310](https://doi.org/10.3390/antibiotics10030310)
 
 ## Model component
-<dbs-pgx drug="tetracycline" model-id="Tetracycline_Mileva2021_reference" status="needs_review" stale="false" population="" measured-compound="tetracycline" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tetracycline" model-id="Tetracycline_Mileva2021_reference" status="curated_candidate" stale="false" population="" measured-compound="tetracycline" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cl/F | `Q27` · CL/F | —(suppressed) | L/kg/h | — | L/h | not captured | review (0.7) | Mileva_2021:review | — | not captured |
-| V/F | `Q76` · V/F | —(suppressed) | L·kg−1 | — | L | not captured | review (0.7) | Mileva_2021:review | — | not captured |
-| absorption rate | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review (0.7) | Mileva_2021:review | — | not captured |
+| Cl/F | `Q27` · CL/F | 1.88 | L/kg/h | 3.655555555555556e-05 | L/h | not captured | review (0.7) | Mileva_2021:review | — | not captured |
+| V/F | `Q76` · V/F | 3.11 | L·kg−1 | 0.2177 | L | not captured | review (0.7) | Mileva_2021:review | — | not captured |
+| absorption rate | `Q49` · kabs | 0.2 | h−1 | 5.555555555555556e-05 | 1/h | not captured | review (0.7) | Mileva_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -74,7 +72,7 @@ Mileva R; Rusenov A; Milanova A et al. (2021). Antibiotics (Basel, Switzerland) 
 | T3_output_variable | not captured | pass | C_central (measured=tetracycline) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;fotemustine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fotemustine_Hartmann1997_patients_with_liver_metastases_from&quot;,&quot;label&quot;:&quot;Hartmann_1997_patients with liver metastases from colorectal carcinoma&quot;,&quot;href&quot;:&quot;drugs/drug_fotemustine/Fotemustine_Hartmann1997_patients_with_liver_metastases_from.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # fotemustine
 
@@ -17,7 +18,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hartmann_1997](drugs/drug_fotemustine/Fotemustine_Hartmann1997_patients_with_liver_metastases_from.md) | Hartmann J et al., Hepatic arterial infusion of the nitros…, Oncology reports (1997) | [10.3892/or.4.1.167](https://doi.org/10.3892/or.4.1.167) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hartmann_1997_patients with liver metastases from colorectal carcinoma](drugs/drug_fotemustine/Fotemustine_Hartmann1997_patients_with_liver_metastases_from.md) | Hartmann J et al., Hepatic arterial infusion of the nitros…, Oncology reports (1997) | [10.3892/or.4.1.167](https://doi.org/10.3892/or.4.1.167) |
 
 ## Coverage
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;tetracycline&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tetracycline_Ji2025_reference&quot;,&quot;label&quot;:&quot;Ji_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Ji2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Lakota2020_reference&quot;,&quot;label&quot;:&quot;Lakota_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Lakota2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Mileva2021_reference&quot;,&quot;label&quot;:&quot;Mileva_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Mileva2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Singh2026_reference&quot;,&quot;label&quot;:&quot;Singh_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Singh2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Grada2022_reference&quot;,&quot;label&quot;:&quot;Grada_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Grada2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # tetracycline
 
@@ -25,11 +26,11 @@ The FDA withdrew its approval for the use of all liquid oral drug products formu
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ji_2025](drugs/drug_tetracycline/Tetracycline_Ji2025_reference.md) | Ji X-w et al., Population pharmacokinetics and pulmona…, Antimicrobial agents and ch… (2025) | [10.1128/aac.01065-24](https://doi.org/10.1128/aac.01065-24) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Singh_2026](drugs/drug_tetracycline/Tetracycline_Singh2026_reference.md) | Singh S et al., Eravacycline pharmacokinetics/pharmacod…, Microbiology spectrum (2026) | [10.1128/spectrum.03432-25](https://doi.org/10.1128/spectrum.03432-25) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Lakota_2020](drugs/drug_tetracycline/Tetracycline_Lakota2020_reference.md) | Lakota EA et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2020) | [10.1128/AAC.02263-19](https://doi.org/10.1128/AAC.02263-19) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Mileva_2021](drugs/drug_tetracycline/Tetracycline_Mileva2021_reference.md) | Mileva R et al., Population Pharmacokinetic Modelling of…, Antibiotics (Basel, Switzer… (2021) | [10.3390/antibiotics10030310](https://doi.org/10.3390/antibiotics10030310) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Grada_2022](drugs/drug_tetracycline/Tetracycline_Grada2022_reference.md) | Grada A et al., Sarecycline treatment for acne vulgaris…, Dermatologic therapy (2022) | [10.1111/dth.15275](https://doi.org/10.1111/dth.15275) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ji_2025_reference](drugs/drug_tetracycline/Tetracycline_Ji2025_reference.md) | Ji X-w et al., Population pharmacokinetics and pulmona…, Antimicrobial agents and ch… (2025) | [10.1128/aac.01065-24](https://doi.org/10.1128/aac.01065-24) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Lakota_2020_reference](drugs/drug_tetracycline/Tetracycline_Lakota2020_reference.md) | Lakota EA et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2020) | [10.1128/AAC.02263-19](https://doi.org/10.1128/AAC.02263-19) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Mileva_2021_reference](drugs/drug_tetracycline/Tetracycline_Mileva2021_reference.md) | Mileva R et al., Population Pharmacokinetic Modelling of…, Antibiotics (Basel, Switzer… (2021) | [10.3390/antibiotics10030310](https://doi.org/10.3390/antibiotics10030310) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Singh_2026_reference](drugs/drug_tetracycline/Tetracycline_Singh2026_reference.md) | Singh S et al., Eravacycline pharmacokinetics/pharmacod…, Microbiology spectrum (2026) | [10.1128/spectrum.03432-25](https://doi.org/10.1128/spectrum.03432-25) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Grada_2022_reference](drugs/drug_tetracycline/Tetracycline_Grada2022_reference.md) | Grada A et al., Sarecycline treatment for acne vulgaris…, Dermatologic therapy (2022) | [10.1111/dth.15275](https://doi.org/10.1111/dth.15275) |
 
 ## Pharmacodynamics (PD)
 
@@ -49,7 +50,7 @@ The FDA withdrew its approval for the use of all liquid oral drug products formu
 
 - **PubMed hits:** 703 matched, 168 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 5  ·  extracted 2  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **records:** 5  ·  extracted 4  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

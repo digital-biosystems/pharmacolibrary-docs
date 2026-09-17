@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11G&quot;,&quot;href&quot;:&quot;atc/A11G.md&quot;},{&quot;label&quot;:&quot;ascorbic acid (vit C)&quot;,&quot;href&quot;:&quot;drugs/drug_ascorbic_acid_vit_c/&quot;},{&quot;label&quot;:&quot;L\u00f6scher_1984 \u00b7 horses&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AscorbicAcidVitC_Lscher1984_horses&quot;,&quot;label&quot;:&quot;L\u00f6scher_1984_horses&quot;,&quot;href&quot;:&quot;drugs/drug_ascorbic_acid_vit_c/AscorbicAcidVitC_Lscher1984_horses.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # ascorbic acid (vit C) — `AscorbicAcidVitC_Lscher1984_horses`
 

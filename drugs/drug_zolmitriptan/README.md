@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;zolmitriptan&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zolmitriptan_Zhou2017_adults_and_adolescents_with_migraine&quot;,&quot;label&quot;:&quot;Zhou_2017_adults and adolescents with migraine&quot;,&quot;href&quot;:&quot;drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_adults_and_adolescents_with_migraine.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # zolmitriptan
 
@@ -25,7 +26,7 @@ Zolmitriptan was first approved by the FDA for sale by Zeneca Pharmaceuticals un
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zhou_2017](drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_adults_and_adolescents_with_migraine.md) | Zhou W et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.935](https://doi.org/10.1002/jcph.935) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zhou_2017_adults and adolescents with migraine](drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_adults_and_adolescents_with_migraine.md) | Zhou W et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.935](https://doi.org/10.1002/jcph.935) |
 
 ## Pharmacodynamics (PD)
 

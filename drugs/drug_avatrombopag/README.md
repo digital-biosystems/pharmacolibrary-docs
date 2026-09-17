@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;avatrombopag&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Avatrombopag_Liu2025v2_reference&quot;,&quot;label&quot;:&quot;Liu_2025_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_avatrombopag/Avatrombopag_Liu2025v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # avatrombopag
 
@@ -27,7 +28,7 @@ In July 2025, the FDA expanded approval to include a new pediatric formulation, 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.6843)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2025_2](drugs/drug_avatrombopag/Avatrombopag_Liu2025v2_reference.md) | Liu X et al., Investigation of the ABCB1 Gene Polymor…, Pharmaceuticals (Basel, Swi… (2025) | [10.3390/ph18060903](https://doi.org/10.3390/ph18060903) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.6843)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2025_2_reference](drugs/drug_avatrombopag/Avatrombopag_Liu2025v2_reference.md) | Liu X et al., Investigation of the ABCB1 Gene Polymor…, Pharmaceuticals (Basel, Swi… (2025) | [10.3390/ph18060903](https://doi.org/10.3390/ph18060903) |
 
 ## Pharmacogenomics (PGx)
 

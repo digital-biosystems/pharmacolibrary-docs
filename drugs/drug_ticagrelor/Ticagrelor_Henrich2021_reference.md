@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ticagrelor&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/&quot;},{&quot;label&quot;:&quot;Henrich_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ticagrelor_Kathman2022_reference&quot;,&quot;label&quot;:&quot;Kathman_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Kathman2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # ticagrelor — `Ticagrelor_Henrich2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,20 +21,18 @@ Henrich A; Claussen CH; Dingemanse J; Krause A et al. (2021). CPT: pharmacometri
   ·  DOI: [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641)
 
 ## Model component
-<dbs-pgx drug="ticagrelor" model-id="Ticagrelor_Henrich2021_reference" status="needs_review" stale="false" population="" measured-compound="ticagrelor" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="ticagrelor" model-id="Ticagrelor_Henrich2021_reference" status="curated_candidate" stale="false" population="" measured-compound="ticagrelor" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Henrich_2021:review | — | not captured |
-| Vcent (L) | `Q61` · V | —(suppressed) | L | — | L | not captured | review (0.7) | Henrich_2021:review | — | not captured |
-| Vp1 (L) | `Q64` · V2 | —(suppressed) | L | — | L | not captured | review (0.7) | Henrich_2021:review | — | not captured |
-| Qp1 (L/h) | `Q30` · Q | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Henrich_2021:review | — | not captured |
-| ka (1/h) | `Q49` · kabs | —(suppressed) | 1/h | — | 1/h | not captured | review (0.7) | Henrich_2021:review | — | not captured |
+| CL (L/h) | `Q22` · CL | 8.51 | L/h | 2.363888888888889e-06 | L/h | not captured | review (0.7) | Henrich_2021:review | — | not captured |
+| Vcent (L) | `Q61` · V | 17.0 | L | 0.017 | L | not captured | review (0.7) | Henrich_2021:review | — | not captured |
+| Vp1 (L) | `Q64` · V2 | 51.4 | L | 0.0514 | L | not captured | review (0.7) | Henrich_2021:review | — | not captured |
+| Qp1 (L/h) | `Q30` · Q | 3.19 | L/h | 8.861111111111112e-07 | L/h | not captured | review (0.7) | Henrich_2021:review | — | not captured |
+| ka (1/h) | `Q49` · kabs | 5.95 | 1/h | 0.0016527777777777778 | 1/h | not captured | review (0.7) | Henrich_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -77,7 +75,7 @@ Henrich A; Claussen CH; Dingemanse J; Krause A et al. (2021). CPT: pharmacometri
 | T3_output_variable | not captured | pass | C_central (measured=ticagrelor) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

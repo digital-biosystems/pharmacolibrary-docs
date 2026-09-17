@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03X&quot;,&quot;href&quot;:&quot;atc/C03X.md&quot;},{&quot;label&quot;:&quot;tolvaptan&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/&quot;},{&quot;label&quot;:&quot;Van_2013 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_reference&quot;,&quot;label&quot;:&quot;Lanke_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Bhatt2014_reference&quot;,&quot;label&quot;:&quot;Bhatt_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2012v3_reference&quot;,&quot;label&quot;:&quot;Shoaf_2012_3_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2012v3_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 # tolvaptan — `Tolvaptan_Van2013_reference`
 
@@ -10,7 +11,7 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the simulated model does not reproduce a value the paper reports; the model was built differently from what the record describes; the engineer did not exercise the covariate scenarios this record defines. Evidence: T1_t_half_beta — expected 12.6 — got 8.664506297010659 — ratio 0.6877; T1_t_half_beta — expected 13.5 — got 8.664506297010659 — ratio 0.6418; T1_t_half_beta — expected 17.7 — got 8.664506297010659 — ratio 0.4895; T1_t_half_beta — expected 12.6 — got 8.664506297010659 — ratio 0.6877.
+**What is wrong:** the simulated model does not reproduce a value the paper reports; the engineer did not exercise the covariate scenarios this record defines. Evidence: T1_t_half_beta — expected 10.0 — got 5.723318744624852 — ratio 0.5723; T1_t_half_beta — expected 11.5 — got 5.723318744624852 — ratio 0.4977; T1_t_half_beta — expected 12.6 — got 5.723318744624852 — ratio 0.4542; T1_t_half_beta — expected 13.5 — got 5.723318744624852 — ratio 0.4239.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
@@ -18,7 +19,7 @@
 3. Compare with the transcribed value in _transcribev2.yaml for this stem.
 4. If the transcription is right, the extracted parameters are suspect — check CL and volume in _interpretv2.yaml against the paper.
 5. If the transcription is wrong, fix the extraction; the model rebuild follows.
-6. Open the emitted .mo and compare its base class and parameters with the record.
+6. Advisory only — the base model still replicates.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -79,8 +80,6 @@ not matched (stem Van_2013)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tolvaptan
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- built from REVIEW reference values (Van_2013) — secondary source
-- volume reported by review
 
 **Extraction notes:**
 - unparsed cell Van_2013_table_p8_1:row16:col1 = '0.244 (49.4% CV)'
@@ -123,23 +122,23 @@ not matched (stem Van_2013)
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=tolvaptan) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['tlag', 'kabs', 'Q/F', 'V2/F'] |
-| T3_topology_template | not captured | fail | 2C → PK_2C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 | T1_t_half_alpha | reference | skipped | 3.6 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 3.2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 4.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 5.7 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | pass | 10.0 | 8.664506297010659 | 0.8665 | h→SI vs simulated h |
-| T1_t_half_beta | reference | pass | 11.5 | 8.664506297010659 | 0.7534 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 12.6 | 8.664506297010659 | 0.6877 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 13.5 | 8.664506297010659 | 0.6418 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 17.7 | 8.664506297010659 | 0.4895 | h→SI vs simulated h |
-| T1_t_half_beta | reference | pass | 10.0 | 8.664506297010659 | 0.8665 | h→SI vs simulated h |
-| T1_t_half_beta | reference | pass | 11.5 | 8.664506297010659 | 0.7534 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 12.6 | 8.664506297010659 | 0.6877 | h→SI vs simulated h |
-| T1_t_half_beta | reference | pass | 10.0 | 8.664506297010659 | 0.8665 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 17.7 | 8.664506297010659 | 0.4895 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 10.0 | 5.723318744624852 | 0.5723 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 11.5 | 5.723318744624852 | 0.4977 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 12.6 | 5.723318744624852 | 0.4542 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 13.5 | 5.723318744624852 | 0.4239 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 17.7 | 5.723318744624852 | 0.3234 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 10.0 | 5.723318744624852 | 0.5723 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 11.5 | 5.723318744624852 | 0.4977 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 12.6 | 5.723318744624852 | 0.4542 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 10.0 | 5.723318744624852 | 0.5723 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 17.7 | 5.723318744624852 | 0.3234 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -166,11 +165,11 @@ The structure OpenModelica draws for this model, with **this record's parameter 
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
-**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_2C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Van2013_reference/Tolvaptan_Van2013_reference_modelica.zip" download>Tolvaptan_Van2013_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Van2013_reference/Tolvaptan_Van2013_reference_fmi.zip" download>Tolvaptan_Van2013_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Van2013_reference/Tolvaptan_Van2013_reference_modelica.zip" download>Tolvaptan_Van2013_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Van2013_reference/Tolvaptan_Van2013_reference_fmi.zip" download>Tolvaptan_Van2013_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Van2013_reference/Tolvaptan_Van2013_reference_matlab.zip" download>Tolvaptan_Van2013_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Van2013_reference/Tolvaptan_Van2013_reference_matlab_simbio.zip" download>Tolvaptan_Van2013_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Van2013_reference/Tolvaptan_Van2013_reference_sbml.zip" download>Tolvaptan_Van2013_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -183,9 +182,9 @@ Each archive holds the model source, a script that simulates it against the appr
 
 Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
 
-<dbs-fmusim paramsurl="drugs/drug_tolvaptan/Tolvaptan_Van2013_reference/Tolvaptan_Van2013_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_tolvaptan/Tolvaptan_Van2013_reference/Tolvaptan_Van2013_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_tolvaptan/Tolvaptan_Van2013_reference/Tolvaptan_Van2013_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_tolvaptan/Tolvaptan_Van2013_reference/Tolvaptan_Van2013_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>Template `PK_1C` · parameters `Tolvaptan_Van2013_reference_params.json` · controls `Tolvaptan_Van2013_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Template `PK_2C_enteral` · parameters `Tolvaptan_Van2013_reference_params.json` · controls `Tolvaptan_Van2013_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

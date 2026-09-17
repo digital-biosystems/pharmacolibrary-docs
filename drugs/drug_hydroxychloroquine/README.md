@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;hydroxychloroquine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxychloroquine_Thmans2020_reference&quot;,&quot;label&quot;:&quot;Th\u00e9mans_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Alvarez2022_reference&quot;,&quot;label&quot;:&quot;Alvarez_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_reference&quot;,&quot;label&quot;:&quot;Zahr_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # hydroxychloroquine
 
@@ -29,15 +30,15 @@ A recent study reported a fatality in the group being treated with hydroxychloro
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: CLelim[central], Q1 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Alvarez_2022](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference.md) | Alvarez JC et al., Population Pharmacokinetics of Hydroxyc…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15020256](https://doi.org/10.3390/ph15020256) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Thémans_2020](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference.md) | Thémans P et al., Population Pharmacokinetics of Hydroxyc…, European journal of drug me… (2020) | [10.1007/s13318-020-00648-y](https://doi.org/10.1007/s13318-020-00648-y) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Zahr_2021](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_reference.md) | Zahr N et al., Pharmacokinetics and pharmacodynamics o…, Therapie (2021) | [10.1016/j.therap.2021.01.056](https://doi.org/10.1016/j.therap.2021.01.056) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Thémans_2020_reference](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_reference.md) | Thémans P et al., Population Pharmacokinetics of Hydroxyc…, European journal of drug me… (2020) | [10.1007/s13318-020-00648-y](https://doi.org/10.1007/s13318-020-00648-y) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: CLelim[central], Q1 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Alvarez_2022_reference](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference.md) | Alvarez JC et al., Population Pharmacokinetics of Hydroxyc…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15020256](https://doi.org/10.3390/ph15020256) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Zahr_2021_reference](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_reference.md) | Zahr N et al., Pharmacokinetics and pharmacodynamics o…, Therapie (2021) | [10.1016/j.therap.2021.01.056](https://doi.org/10.1016/j.therap.2021.01.056) |
 
 ## Coverage
 
 - **PubMed hits:** 74 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

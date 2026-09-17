@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;chloramphenicol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloramphenicol_Anderson1983_reference&quot;,&quot;label&quot;:&quot;Anderson_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Anderson1983_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # chloramphenicol
 
@@ -25,7 +26,7 @@ The FDA has withdrawn all oral drug products containing chloramphenicol, due to 
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Anderson_1983](drugs/drug_chloramphenicol/Chloramphenicol_Anderson1983_reference.md) | Anderson KL et al., Pharmacokinetics of chloramphenicol in…, Journal of veterinary pharm… (1983) | [10.1111/j.1365-2885.1983.tb00005.x](https://doi.org/10.1111/j.1365-2885.1983.tb00005.x) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Anderson_1983_reference](drugs/drug_chloramphenicol/Chloramphenicol_Anderson1983_reference.md) | Anderson KL et al., Pharmacokinetics of chloramphenicol in…, Journal of veterinary pharm… (1983) | [10.1111/j.1365-2885.1983.tb00005.x](https://doi.org/10.1111/j.1365-2885.1983.tb00005.x) |
 
 ## Coverage
 

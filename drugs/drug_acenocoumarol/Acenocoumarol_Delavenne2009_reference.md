@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;acenocoumarol&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/&quot;},{&quot;label&quot;:&quot;Delavenne_2009 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acenocoumarol_Delavenne2009_reference&quot;,&quot;label&quot;:&quot;Delavenne_2009_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Acenocoumarol_Haustein1999_reference&quot;,&quot;label&quot;:&quot;Haustein_1999_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acenocoumarol_Ufer2005_reference&quot;,&quot;label&quot;:&quot;Ufer_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_Ufer2005_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acenocoumarol_MartinSuarez2003_reference&quot;,&quot;label&quot;:&quot;Martin-Suarez_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_MartinSuarez2003_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acenocoumarol_Verstuyft2012_reference&quot;,&quot;label&quot;:&quot;Verstuyft_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_Verstuyft2012_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # acenocoumarol — `Acenocoumarol_Delavenne2009_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified; invented_absorption: not acceptable
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,20 +21,18 @@ Delavenne X; Laporte S; Demasles S; Mallouk N; Basset T; Tod M; Girard P; Mismet
   ·  DOI: [10.1111/j.1472-8206.2008.00642.x](https://doi.org/10.1111/j.1472-8206.2008.00642.x)
 
 ## Model component
-<dbs-pgx drug="acenocoumarol" model-id="Acenocoumarol_Delavenne2009_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="acenocoumarol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="acenocoumarol" model-id="Acenocoumarol_Delavenne2009_reference" status="curated_candidate" stale="false" population="healthy volunteers" measured-compound="acenocoumarol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cl (L/h) | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | exact (1.0) | Delavenne_2009:other_prose | — | not captured |
-| V 2 (L) | `Q64` · V2 | —(suppressed) | L | — | L | not captured | space_fold (0.95) | Delavenne_2009:other_prose | — | not captured |
-| Q (L/h) | `Q30` · Q | —(suppressed) | L/h | — | L/h | not captured | exact (1.0) | Delavenne_2009:other_prose | — | not captured |
-| Ka (/h) | `Q49` · kabs | —(suppressed) | /h | — | 1/h | not captured | exact (1.0) | Delavenne_2009:other_prose | — | not captured |
-| volume of distribution | `Q61` · V | —(suppressed) | L/kg | — | L | not captured | review_gapfill (0.7) | Chen_2024:review | — | not captured |
+| Cl (L/h) | `Q22` · CL | 4.08 | L/h | 1.1333333333333334e-06 | L/h | not captured | exact (1.0) | Delavenne_2009:other_prose | — | not captured |
+| V 2 (L) | `Q64` · V2 | 24.5 | L | 0.0245 | L | not captured | space_fold (0.95) | Delavenne_2009:other_prose | — | not captured |
+| Q (L/h) | `Q30` · Q | 1.8 | L/h | 5.000000000000001e-07 | L/h | not captured | exact (1.0) | Delavenne_2009:other_prose | — | not captured |
+| Ka (/h) | `Q49` · kabs | 4.04 | /h | 0.0011222222222222222 | 1/h | not captured | exact (1.0) | Delavenne_2009:other_prose | — | not captured |
+| volume of distribution | `Q61` · V | 4.7 | L/kg | 0.329 | L | not captured | review_gapfill (0.7) | Chen_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -44,8 +42,7 @@ Delavenne X; Laporte S; Demasles S; Mallouk N; Basset T; Tod M; Girard P; Mismet
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['F', 'ka', 'Tlag']
-- `invented_absorption`: ka defaulted — not reported in source
+- `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
 - salvaged Q22 ('Cl (L/h)'=4.08) from results prose — parameter table was unreadable
@@ -88,7 +85,7 @@ Delavenne X; Laporte S; Demasles S; Mallouk N; Basset T; Tod M; Girard P; Mismet
 | T3_output_variable | not captured | pass | C_central (measured=acenocoumarol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -118,7 +115,7 @@ Each archive holds the model source, a script that simulates it against the appr
 **FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference/Acenocoumarol_Delavenne2009_reference_modelica.zip" download>Acenocoumarol_Delavenne2009_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference/Acenocoumarol_Delavenne2009_reference_modelica.zip" download>Acenocoumarol_Delavenne2009_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference/Acenocoumarol_Delavenne2009_reference_fmi.zip" download>Acenocoumarol_Delavenne2009_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference/Acenocoumarol_Delavenne2009_reference_matlab.zip" download>Acenocoumarol_Delavenne2009_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference/Acenocoumarol_Delavenne2009_reference_matlab_simbio.zip" download>Acenocoumarol_Delavenne2009_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

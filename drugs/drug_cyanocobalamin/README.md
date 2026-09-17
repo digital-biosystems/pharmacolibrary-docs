@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03B&quot;,&quot;href&quot;:&quot;atc/B03B.md&quot;},{&quot;label&quot;:&quot;cyanocobalamin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cyanocobalamin_NavaOcampo2005_rats&quot;,&quot;label&quot;:&quot;Nava-Ocampo_2005_rats&quot;,&quot;href&quot;:&quot;drugs/drug_cyanocobalamin/Cyanocobalamin_NavaOcampo2005_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # cyanocobalamin
 
@@ -46,7 +47,7 @@ Vitamin B12 supplements are widely available and indicated in patients who requi
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nava-Ocampo_2005](drugs/drug_cyanocobalamin/Cyanocobalamin_NavaOcampo2005_rats.md) | Nava-Ocampo AA et al., Pharmacokinetics of high doses of cyano…, Clinical and experimental p… (2005) | [10.1111/j.1440-1681.2005.04145.x](https://doi.org/10.1111/j.1440-1681.2005.04145.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nava-Ocampo_2005_rats](drugs/drug_cyanocobalamin/Cyanocobalamin_NavaOcampo2005_rats.md) | Nava-Ocampo AA et al., Pharmacokinetics of high doses of cyano…, Clinical and experimental p… (2005) | [10.1111/j.1440-1681.2005.04145.x](https://doi.org/10.1111/j.1440-1681.2005.04145.x) |
 
 ## Coverage
 

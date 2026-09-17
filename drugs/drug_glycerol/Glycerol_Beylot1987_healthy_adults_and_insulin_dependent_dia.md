@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;glycerol&quot;,&quot;href&quot;:&quot;drugs/drug_glycerol/&quot;},{&quot;label&quot;:&quot;Beylot_1987 \u00b7 healthy adults and insulin-dependent diabetic patients&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia&quot;,&quot;label&quot;:&quot;Beylot_1987_healthy adults and insulin-dependent diabetic patients&quot;,&quot;href&quot;:&quot;drugs/drug_glycerol/Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # glycerol — `Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia`
 

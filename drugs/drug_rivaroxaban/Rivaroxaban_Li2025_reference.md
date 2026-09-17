@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;rivaroxaban&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/&quot;},{&quot;label&quot;:&quot;Li_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rivaroxaban_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Li2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_sequential_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_sequential_modeling&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_sequential_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_sequential_modeling&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_simultaneous_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_simultaneous_modeling&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_simultaneous_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_simultaneous_modeling&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Li2025_base&quot;,&quot;label&quot;:&quot;Li_2025_base&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Li2025_base.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Li2025_base&quot;,&quot;label&quot;:&quot;Li_2025_base&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Li2025_base.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Li2025_final&quot;,&quot;label&quot;:&quot;Li_2025_final&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Li2025_final.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Li2025_final&quot;,&quot;label&quot;:&quot;Li_2025_final&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Li2025_final.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # rivaroxaban — `Rivaroxaban_Li2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -20,18 +20,16 @@
 not matched (stem Li_2025)
 
 ## Model component
-<dbs-pgx drug="rivaroxaban" model-id="Rivaroxaban_Li2025_reference" status="needs_review" stale="false" population="elderly Chinese patients with non-valvular atrial fibrillation" measured-compound="rivaroxaban" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="rivaroxaban" model-id="Rivaroxaban_Li2025_reference" status="curated_candidate" stale="false" population="elderly Chinese patients with non-valvular atrial fibrillation" measured-compound="rivaroxaban" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| tvCL (L/h) | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Li_2025:review | — | not captured |
-| tvV(L) | `Q61` · V | —(suppressed) | L | — | L | not captured | review (0.7) | Li_2025:review | — | not captured |
-| tvKa | `Q49` · kabs | —(suppressed) | h-1 | — | 1/h | not captured | review (0.7) | Li_2025:review | — | not captured |
+| tvCL (L/h) | `Q22` · CL | 4.165 | L/h | 1.1569444444444445e-06 | L/h | not captured | review (0.7) | Li_2025:review | — | not captured |
+| tvV(L) | `Q61` · V | 30.703 | L | 0.030703 | L | not captured | review (0.7) | Li_2025:review | — | not captured |
+| tvKa | `Q49` · kabs | 0.821 | h-1 | 0.00022805555555555554 | 1/h | not captured | review (0.7) | Li_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -80,7 +78,7 @@ not matched (stem Li_2025)
 | T3_output_variable | not captured | pass | C_central (measured=rivaroxaban) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -110,7 +108,7 @@ Each archive holds the model source, a script that simulates it against the appr
 **FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Li2025_reference/Rivaroxaban_Li2025_reference_modelica.zip" download>Rivaroxaban_Li2025_reference_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Li2025_reference/Rivaroxaban_Li2025_reference_modelica.zip" download>Rivaroxaban_Li2025_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Li2025_reference/Rivaroxaban_Li2025_reference_fmi.zip" download>Rivaroxaban_Li2025_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Li2025_reference/Rivaroxaban_Li2025_reference_matlab.zip" download>Rivaroxaban_Li2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Li2025_reference/Rivaroxaban_Li2025_reference_matlab_simbio.zip" download>Rivaroxaban_Li2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

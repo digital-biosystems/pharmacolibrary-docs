@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;amrinone&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amrinone_Park1983_healthy_males&quot;,&quot;label&quot;:&quot;Park_1983_healthy males&quot;,&quot;href&quot;:&quot;drugs/drug_amrinone/Amrinone_Park1983_healthy_males.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # amrinone
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Park_1983](drugs/drug_amrinone/Amrinone_Park1983_healthy_males.md) | Park GB et al., Oral bioavailability and intravenous ph…, Journal of pharmaceutical s… (1983) | [10.1002/jps.2600720726](https://doi.org/10.1002/jps.2600720726) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Park_1983_healthy males](drugs/drug_amrinone/Amrinone_Park1983_healthy_males.md) | Park GB et al., Oral bioavailability and intravenous ph…, Journal of pharmaceutical s… (1983) | [10.1002/jps.2600720726](https://doi.org/10.1002/jps.2600720726) |
 
 ## Pharmacodynamics (PD)
 

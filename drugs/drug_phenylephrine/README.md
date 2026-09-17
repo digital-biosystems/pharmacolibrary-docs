@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;phenylephrine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenylephrine_Anderson2017_children_and_adults&quot;,&quot;label&quot;:&quot;Anderson_2017_children and adults&quot;,&quot;href&quot;:&quot;drugs/drug_phenylephrine/Phenylephrine_Anderson2017_children_and_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # phenylephrine
 
@@ -25,7 +26,7 @@ Phenylephrine was granted FDA approval in 1939.[L9413]
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Anderson_2017](drugs/drug_phenylephrine/Phenylephrine_Anderson2017_children_and_adults.md) | Anderson BJ et al., The phenylephrine concentration-respons…, Paediatric anaesthesia (2017) | [10.1111/pan.13221](https://doi.org/10.1111/pan.13221) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Anderson_2017_children and adults](drugs/drug_phenylephrine/Phenylephrine_Anderson2017_children_and_adults.md) | Anderson BJ et al., The phenylephrine concentration-respons…, Paediatric anaesthesia (2017) | [10.1111/pan.13221](https://doi.org/10.1111/pan.13221) |
 
 ## Pharmacodynamics (PD)
 

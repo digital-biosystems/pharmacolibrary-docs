@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;luseogliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/&quot;},{&quot;label&quot;:&quot;Samukawa_2017 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luseogliflozin_Samukawa2017_reference&quot;,&quot;label&quot;:&quot;Samukawa_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 # luseogliflozin — `Luseogliflozin_Samukawa2017_reference`
 
@@ -6,15 +7,13 @@
 
 ### Reviewer guidance
 
-**What is wrong:** the simulated model does not reproduce a value the paper reports; the engineer's deviations are not documented and quantified. Evidence: T1_t_half_terminal — expected 0.006666666666666666 — got 7.103614219283837 — ratio 1065.5421; T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** the simulated model does not reproduce a value the paper reports. Evidence: T1_t_half_terminal — expected 0.006666666666666666 — got 7.103614219283837 — ratio 1065.5421
 
 **Steps:**
 1. Open the paper's reported table and confirm the target value and its units.
 2. Compare with the transcribed value in _transcribev2.yaml for this stem.
 3. If the transcription is right, the extracted parameters are suspect — check CL and volume in _interpretv2.yaml against the paper.
 4. If the transcription is wrong, fix the extraction; the model rebuild follows.
-5. Read the .deviation.json and confirm each deviation names what changed and why.
-6. Anything undocumented needs the engineer, not a curator.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -85,7 +84,7 @@ Samukawa Y; Mutoh M; Chen S; Mizui N et al. (2017). Biological & pharmaceutical 
 | T3_output_variable | not captured | pass | C_central (measured=luseogliflozin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 | T1_t_half_terminal | reference | fail | 0.006666666666666666 | 7.103614219283837 | 1065.5421 | s→SI vs simulated h |
 | T1_t_half_terminal | reference | pass | 7.0 | 7.103614219283837 | 1.0148 | h→SI vs simulated h |
 | T1_t_half_terminal | reference | pass | 6.81 | 7.103614219283837 | 1.0431 | h→SI vs simulated h |
@@ -105,13 +104,21 @@ Samukawa Y; Mutoh M; Chen S; Mizui N et al. (2017). Biological & pharmaceutical 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
+## Model diagram
+
+The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
+
+<img src="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference.svg" alt="Luseogliflozin_Samukawa2017_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
+
 ## Downloadable models
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_modelica.zip" download>Luseogliflozin_Samukawa2017_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_matlab.zip" download>Luseogliflozin_Samukawa2017_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_matlab_simbio.zip" download>Luseogliflozin_Samukawa2017_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_sbml.zip" download>Luseogliflozin_Samukawa2017_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -122,7 +129,11 @@ Each archive holds the model source, a script that simulates it against the appr
 
 ## Web simulation
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
+
+<dbs-fmusim paramsurl="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Template `PK_1C_enteral` · parameters `Luseogliflozin_Samukawa2017_reference_params.json` · controls `Luseogliflozin_Samukawa2017_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

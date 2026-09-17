@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;hexobendine&quot;,&quot;href&quot;:&quot;drugs/drug_hexobendine/&quot;},{&quot;label&quot;:&quot;Kolassa_1975 \u00b7 rats&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hexobendine_Kolassa1975_rats&quot;,&quot;label&quot;:&quot;Kolassa_1975_rats&quot;,&quot;href&quot;:&quot;drugs/drug_hexobendine/Hexobendine_Kolassa1975_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # hexobendine — `Hexobendine_Kolassa1975_rats`
 

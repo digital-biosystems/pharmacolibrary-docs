@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;glycopyrronium bromide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;GlycopyrroniumBromide_Bartels2013_reference&quot;,&quot;label&quot;:&quot;Bartels_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # glycopyrronium bromide
 
@@ -17,7 +18,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Bartels_2013](drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_reference.md) | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Bartels_2013_reference](drugs/drug_glycopyrronium_bromide/GlycopyrroniumBromide_Bartels2013_reference.md) | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
 
 ## Coverage
 

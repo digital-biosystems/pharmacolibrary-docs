@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;kanamycin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Kanamycin_Dijkstra2015_reference&quot;,&quot;label&quot;:&quot;Dijkstra_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_kanamycin/Kanamycin_Dijkstra2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Kanamycin_Strydom2019v2_reference&quot;,&quot;label&quot;:&quot;Strydom_2019_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # kanamycin
 
@@ -23,8 +24,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Dijkstra_2015](drugs/drug_kanamycin/Kanamycin_Dijkstra2015_reference.md) | Dijkstra JA et al., Limited sampling strategies for therape…, International journal of an… (2015) | [10.1016/j.ijantimicag.2015.06.008](https://doi.org/10.1016/j.ijantimicag.2015.06.008) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Strydom_2019_2](drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference.md) | Strydom N et al., Tuberculosis drugs' distribution and em…, PLoS medicine (2019) | [10.1371/journal.pmed.1002773](https://doi.org/10.1371/journal.pmed.1002773) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Dijkstra_2015_reference](drugs/drug_kanamycin/Kanamycin_Dijkstra2015_reference.md) | Dijkstra JA et al., Limited sampling strategies for therape…, International journal of an… (2015) | [10.1016/j.ijantimicag.2015.06.008](https://doi.org/10.1016/j.ijantimicag.2015.06.008) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Strydom_2019_2_reference](drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference.md) | Strydom N et al., Tuberculosis drugs' distribution and em…, PLoS medicine (2019) | [10.1371/journal.pmed.1002773](https://doi.org/10.1371/journal.pmed.1002773) |
 
 ## Pharmacodynamics (PD)
 

@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;esomeprazole&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/&quot;},{&quot;label&quot;:&quot;Chung_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Esomeprazole_Chung2022_reference&quot;,&quot;label&quot;:&quot;Chung_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Esomeprazole_Gebreyesus2022_reference&quot;,&quot;label&quot;:&quot;Gebreyesus_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/Esomeprazole_Gebreyesus2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # esomeprazole — `Esomeprazole_Chung2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,18 +21,16 @@ Chung TK; Lee HA; Lee KR; Jang SB; Yu KS; Lee H et al. (2022). CPT: pharmacometr
   ·  DOI: [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839)
 
 ## Model component
-<dbs-pgx drug="esomeprazole" model-id="Esomeprazole_Chung2022_reference" status="needs_review" stale="false" population="" measured-compound="esomeprazole" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="esomeprazole" model-id="Esomeprazole_Chung2022_reference" status="curated_candidate" stale="false" population="" measured-compound="esomeprazole" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Chung_2022:review | — | not captured |
-| V C /F | `Q290` · V1/F | —(suppressed) | L | — | L | not captured | review (0.7) | Chung_2022:review | — | not captured |
-| K A | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review (0.7) | Chung_2022:review | — | not captured |
+| CL/F | `Q27` · CL/F | 221.0 | L/h | 6.138888888888889e-05 | L/h | not captured | review (0.7) | Chung_2022:review | — | not captured |
+| V C /F | `Q290` · V1/F | 121.0 | L | 0.121 | L | not captured | review (0.7) | Chung_2022:review | — | not captured |
+| K A | `Q49` · kabs | 0.95 | h−1 | 0.00026388888888888886 | 1/h | not captured | review (0.7) | Chung_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -74,7 +72,7 @@ Chung TK; Lee HA; Lee KR; Jang SB; Yu KS; Lee H et al. (2022). CPT: pharmacometr
 | T3_output_variable | not captured | pass | C_central (measured=esomeprazole) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

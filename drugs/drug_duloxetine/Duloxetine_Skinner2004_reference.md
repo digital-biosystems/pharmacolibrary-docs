@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;duloxetine&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/&quot;},{&quot;label&quot;:&quot;Skinner_2004 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Duloxetine_Skinner2004_reference&quot;,&quot;label&quot;:&quot;Skinner_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Duloxetine_Ngo2020_reference&quot;,&quot;label&quot;:&quot;Ngo_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Ngo2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # duloxetine — `Duloxetine_Skinner2004_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,18 +21,16 @@ Skinner MH; Kuan HY; Skerjanec A; Seger ME; Heathman M; O'Brien L; et al. et al.
   ·  DOI: [10.1046/j.1365-2125.2003.01963.x](https://doi.org/10.1046/j.1365-2125.2003.01963.x)
 
 ## Model component
-<dbs-pgx drug="duloxetine" model-id="Duloxetine_Skinner2004_reference" status="needs_review" stale="false" population="women with urinary incontinence and healthy women" measured-compound="duloxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="duloxetine" model-id="Duloxetine_Skinner2004_reference" status="curated_candidate" stale="false" population="women with urinary incontinence and healthy women" measured-compound="duloxetine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (l h -1 ) | `Q27` · CL/F | —(suppressed) | l h -1 | — | L/h | not captured | exact (1.0) | Skinner_2004:other_prose | — | not captured |
-| V/F (l) | `Q76` · V/F | —(suppressed) | l | — | L | not captured | exact (1.0) | Skinner_2004:other_prose | — | not captured |
-| Ka (h -1 ) | `Q49` · kabs | —(suppressed) | h -1 | — | 1/h | not captured | exact (1.0) | Skinner_2004:other_prose | — | not captured |
+| CL/F (l h -1 ) | `Q27` · CL/F | 52.6 | l h -1 | 1.4611111111111112e-05 | L/h | not captured | exact (1.0) | Skinner_2004:other_prose | — | not captured |
+| V/F (l) | `Q76` · V/F | 954 | l | 0.9540000000000001 | L | not captured | exact (1.0) | Skinner_2004:other_prose | — | not captured |
+| Ka (h -1 ) | `Q49` · kabs | 0.257 | h -1 | 7.138888888888889e-05 | 1/h | not captured | exact (1.0) | Skinner_2004:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -73,7 +71,7 @@ Skinner MH; Kuan HY; Skerjanec A; Seger ME; Heathman M; O'Brien L; et al. et al.
 | T3_output_variable | not captured | pass | C_central (measured=duloxetine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 | T1_cmax | reference | skipped | not captured | 6.884197100005814e-05 | not captured | non-numeric value |
 | T1_cmax | reference | skipped | not captured | 6.884197100005814e-05 | not captured | non-numeric value |
 | T1_t_half_terminal | reference | skipped | not captured | 13.57546826643119 | not captured | non-numeric value |

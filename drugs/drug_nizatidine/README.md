@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;nizatidine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nizatidine_AbdelRahman2004_children_and_adults&quot;,&quot;label&quot;:&quot;Abdel-Rahman_2004_children and adults&quot;,&quot;href&quot;:&quot;drugs/drug_nizatidine/Nizatidine_AbdelRahman2004_children_and_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # nizatidine
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Abdel-Rahman_2004](drugs/drug_nizatidine/Nizatidine_AbdelRahman2004_children_and_adults.md) | Abdel-Rahman SM et al., Developmental pharmacokinetics and phar…, Journal of pediatric gastro… (2004) | [10.1097/00005176-200404000-00015](https://doi.org/10.1097/00005176-200404000-00015) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Abdel-Rahman_2004_children and adults](drugs/drug_nizatidine/Nizatidine_AbdelRahman2004_children_and_adults.md) | Abdel-Rahman SM et al., Developmental pharmacokinetics and phar…, Journal of pediatric gastro… (2004) | [10.1097/00005176-200404000-00015](https://doi.org/10.1097/00005176-200404000-00015) |
 
 ## Coverage
 

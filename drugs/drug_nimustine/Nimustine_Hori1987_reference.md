@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;nimustine&quot;,&quot;href&quot;:&quot;drugs/drug_nimustine/&quot;},{&quot;label&quot;:&quot;Hori_1987 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nimustine_Hori1987_reference&quot;,&quot;label&quot;:&quot;Hori_1987_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nimustine/Nimustine_Hori1987_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # nimustine — `Nimustine_Hori1987_reference`
 

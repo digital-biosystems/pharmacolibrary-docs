@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;mexiletine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mexiletine_Vozeh1982_patients_treated_for_arrhythmias&quot;,&quot;label&quot;:&quot;Vozeh_1982_patients treated for arrhythmias&quot;,&quot;href&quot;:&quot;drugs/drug_mexiletine/Mexiletine_Vozeh1982_patients_treated_for_arrhythmias.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 # mexiletine
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Vozeh_1982](drugs/drug_mexiletine/Mexiletine_Vozeh1982_patients_treated_for_arrhythmias.md) | Vozeh S et al., Population pharmacokinetic parameters i…, European journal of clinica… (1982) | [10.1007/BF00605996](https://doi.org/10.1007/BF00605996) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Vozeh_1982_patients treated for arrhythmias](drugs/drug_mexiletine/Mexiletine_Vozeh1982_patients_treated_for_arrhythmias.md) | Vozeh S et al., Population pharmacokinetic parameters i…, European journal of clinica… (1982) | [10.1007/BF00605996](https://doi.org/10.1007/BF00605996) |
 
 ## Pharmacodynamics (PD)
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;mavacamten&quot;,&quot;href&quot;:&quot;drugs/drug_mavacamten/&quot;},{&quot;label&quot;:&quot;Merali_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mavacamten_Chang2024_reference&quot;,&quot;label&quot;:&quot;Chang_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_mavacamten/Mavacamten_Chang2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mavacamten_Merali2025_reference&quot;,&quot;label&quot;:&quot;Merali_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_mavacamten/Mavacamten_Merali2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # mavacamten — `Mavacamten_Merali2025_reference`
 

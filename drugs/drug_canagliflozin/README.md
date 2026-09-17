@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;canagliflozin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Canagliflozin_Yao2023_estimates&quot;,&quot;label&quot;:&quot;Yao_2023_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canagliflozin_Yao2023_estimates&quot;,&quot;label&quot;:&quot;Yao_2023_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canagliflozin_Yao2023_iiv&quot;,&quot;label&quot;:&quot;Yao_2023_iiv&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/Canagliflozin_Yao2023_iiv.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canagliflozin_Yao2023_iiv&quot;,&quot;label&quot;:&quot;Yao_2023_iiv&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/Canagliflozin_Yao2023_iiv.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Canagliflozin_Yao2023_reference&quot;,&quot;label&quot;:&quot;Yao_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # canagliflozin
 
@@ -33,11 +34,11 @@ It is important to note that this drug is **not** indicated for the treatment of
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Yao_2023](drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference.md) | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Yao_2023](drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates.md) | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Yao_2023](drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates.md) | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Yao_2023](drugs/drug_canagliflozin/Canagliflozin_Yao2023_iiv.md) | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Yao_2023](drugs/drug_canagliflozin/Canagliflozin_Yao2023_iiv.md) | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Yao_2023_estimates](drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates.md) | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Yao_2023_estimates](drugs/drug_canagliflozin/Canagliflozin_Yao2023_estimates.md) | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Yao_2023_iiv](drugs/drug_canagliflozin/Canagliflozin_Yao2023_iiv.md) | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Yao_2023_iiv](drugs/drug_canagliflozin/Canagliflozin_Yao2023_iiv.md) | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Yao_2023_reference](drugs/drug_canagliflozin/Canagliflozin_Yao2023_reference.md) | Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934) |
 
 ## Pharmacodynamics (PD)
 
@@ -53,7 +54,7 @@ It is important to note that this drug is **not** indicated for the treatment of
 
 - **PubMed hits:** 60 matched, 43 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 5  ·  extracted 1  ·  needs_review 4  ·  rejected 0  ·  stale 0
+- **records:** 5  ·  extracted 5  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

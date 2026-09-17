@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05A&quot;,&quot;href&quot;:&quot;atc/A05A.md&quot;},{&quot;label&quot;:&quot;piprozolin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piprozolin_Gladigau1977_rat_dog_and_man&quot;,&quot;label&quot;:&quot;Gladigau_1977_rat, dog and man&quot;,&quot;href&quot;:&quot;drugs/drug_piprozolin/Piprozolin_Gladigau1977_rat_dog_and_man.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # piprozolin
 
@@ -17,7 +18,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Gladigau_1977](drugs/drug_piprozolin/Piprozolin_Gladigau1977_rat_dog_and_man.md) | Gladigau V et al., [Metabolism and pharmacokinetics of pip…, Arzneimittel-Forschung (1977) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Gladigau_1977_rat, dog and man](drugs/drug_piprozolin/Piprozolin_Gladigau1977_rat_dog_and_man.md) | Gladigau V et al., [Metabolism and pharmacokinetics of pip…, Arzneimittel-Forschung (1977) | — |
 
 ## Coverage
 

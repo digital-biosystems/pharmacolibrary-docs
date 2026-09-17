@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;docetaxel&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Docetaxel_Wang2024_reference&quot;,&quot;label&quot;:&quot;Wang_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_docetaxel/Docetaxel_Wang2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # docetaxel
 
@@ -25,7 +26,7 @@ The use of docetaxel may lead to udesired outcomes such as hepatic impairment, h
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2024](drugs/drug_docetaxel/Docetaxel_Wang2024_reference.md) | Wang D et al., Oral docetaxel plus encequidar - A phar…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09913-y](https://doi.org/10.1007/s10928-024-09913-y) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2024_reference](drugs/drug_docetaxel/Docetaxel_Wang2024_reference.md) | Wang D et al., Oral docetaxel plus encequidar - A phar…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09913-y](https://doi.org/10.1007/s10928-024-09913-y) |
 
 ## Coverage
 

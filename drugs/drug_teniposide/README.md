@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;teniposide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Teniposide_Cheng1999_patients_with_ovarian_cancer&quot;,&quot;label&quot;:&quot;Cheng_1999_patients with ovarian cancer&quot;,&quot;href&quot;:&quot;drugs/drug_teniposide/Teniposide_Cheng1999_patients_with_ovarian_cancer.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Teniposide_Holthuis1987_cancer_patients&quot;,&quot;label&quot;:&quot;Holthuis_1987_cancer patients&quot;,&quot;href&quot;:&quot;drugs/drug_teniposide/Teniposide_Holthuis1987_cancer_patients.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # teniposide
 
@@ -23,8 +24,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Cheng_1999](drugs/drug_teniposide/Teniposide_Cheng1999_patients_with_ovarian_cancer.md) | Cheng A et al., [A pharmacokinetic study of teniposide…, Hua xi yi ke da xue xue bao… (1999) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Holthuis_1987](drugs/drug_teniposide/Teniposide_Holthuis1987_cancer_patients.md) | Holthuis JJ et al., Pharmacokinetics of high-dose teniposide, Cancer treatment reports (1987) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Cheng_1999_patients with ovarian cancer](drugs/drug_teniposide/Teniposide_Cheng1999_patients_with_ovarian_cancer.md) | Cheng A et al., [A pharmacokinetic study of teniposide…, Hua xi yi ke da xue xue bao… (1999) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Holthuis_1987_cancer patients](drugs/drug_teniposide/Teniposide_Holthuis1987_cancer_patients.md) | Holthuis JJ et al., Pharmacokinetics of high-dose teniposide, Cancer treatment reports (1987) | — |
 
 ## Coverage
 

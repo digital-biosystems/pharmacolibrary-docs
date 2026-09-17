@@ -1,21 +1,20 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;pregabalin&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/&quot;},{&quot;label&quot;:&quot;Bae_2016 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pregabalin_Bae2016_reference&quot;,&quot;label&quot;:&quot;Bae_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Bae2016_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pregabalin_Chan2021_estimate_rse&quot;,&quot;label&quot;:&quot;Chan_2021_estimate_rse&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Chan2021_estimate_rse.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pregabalin_Chan2021_estimate_rse&quot;,&quot;label&quot;:&quot;Chan_2021_estimate_rse&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Chan2021_estimate_rse.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pregabalin_Hong2016_estimate&quot;,&quot;label&quot;:&quot;Hong_2016_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Hong2016_estimate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pregabalin_Hong2016_estimate&quot;,&quot;label&quot;:&quot;Hong_2016_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Hong2016_estimate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pregabalin_Bender2009_reference&quot;,&quot;label&quot;:&quot;Bender_2009_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Bender2009_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pregabalin_Chan2021_model&quot;,&quot;label&quot;:&quot;Chan_2021_model&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Chan2021_model.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pregabalin_Chan2021_model&quot;,&quot;label&quot;:&quot;Chan_2021_model&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Chan2021_model.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pregabalin_Hong2016_description_unit&quot;,&quot;label&quot;:&quot;Hong_2016_description_unit&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Hong2016_description_unit.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pregabalin_Hong2016_description_unit&quot;,&quot;label&quot;:&quot;Hong_2016_description_unit&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Hong2016_description_unit.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pregabalin_Park2023_reference&quot;,&quot;label&quot;:&quot;Park_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Park2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pregabalin_van2018_reference&quot;,&quot;label&quot;:&quot;van_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_van2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # pregabalin — `Pregabalin_Bae2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised; T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
-3. Advisory only — the base model still replicates.
-4. Check the record's covariate_definitions in _interpretv2.yaml.
-5. Re-run the engineer for this drug if the covariate curves are wanted.
+1. Advisory only — the base model still replicates.
+2. Check the record's covariate_definitions in _interpretv2.yaml.
+3. Re-run the engineer for this drug if the covariate curves are wanted.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -24,19 +23,17 @@ Bae EK; Lee J; Shin JW; Moon J; Lee KJ; Shin YW; et al. et al. (2016). Seizure 3
   ·  DOI: [10.1016/j.seizure.2016.02.002](https://doi.org/10.1016/j.seizure.2016.02.002)
 
 ## Model component
-<dbs-pgx drug="pregabalin" model-id="Pregabalin_Bae2016_reference" status="needs_review" stale="false" population="" measured-compound="pregabalin" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="pregabalin" model-id="Pregabalin_Bae2016_reference" status="accepted_with_caveats" stale="false" population="" measured-compound="pregabalin" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| u 1 Typical value of apparent clearance (L/h) | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Bae_2016:review | — | not captured |
-| u 2 Apparent volume of distribution (L) | `Q76` · V/F | —(suppressed) | L | — | L | not captured | review (0.7) | Bae_2016:review | — | not captured |
-| Absorption rate constant (k a ) | `Q49` · kabs | —(suppressed) | h À1 | — | 1/h | not captured | review (0.7) | Bae_2016:review | — | not captured |
-| NAT2 | `Q900` · NAT2 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| u 1 Typical value of apparent clearance (L/h) | `Q27` · CL/F | 1.16 | L/h | 3.222222222222222e-07 | L/h | not captured | review (0.7) | Bae_2016:review | — | not captured |
+| u 2 Apparent volume of distribution (L) | `Q76` · V/F | 109.0 | L | 0.109 | L | not captured | review (0.7) | Bae_2016:review | — | not captured |
+| Absorption rate constant (k a ) | `Q49` · kabs | 2.0 | h À1 | 0.0005555555555555556 | 1/h | not captured | review (0.7) | Bae_2016:review | — | not captured |
+| NAT2 | `Q900` · NAT2 | {'*1/*1': 0.0, '*1/*6': -0.0783, 'C/C': -0.138, 'G/T': -0.2769, 'IM': -0.0496, 'PM': -0.0594, 'T/C': 0.007} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -79,7 +76,7 @@ Bae EK; Lee J; Shin JW; Moon J; Lee KJ; Shin YW; et al. et al. (2016). Seizure 3
 | T3_output_variable | not captured | pass | C_central (measured=pregabalin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolbutamide_Shi2021_reference&quot;,&quot;label&quot;:&quot;Shi_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # cytoplasmic Ca2+ — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Jonkers_2001`

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;busulfan&quot;,&quot;href&quot;:&quot;drugs/drug_busulfan/&quot;},{&quot;label&quot;:&quot;Lawson_2022 \u00b7 pediatric stem cell transplantation recipients&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Busulfan_Lawson2022_pediatric_stem_cell_transplantation_reci&quot;,&quot;label&quot;:&quot;Lawson_2022_pediatric stem cell transplantation recipients&quot;,&quot;href&quot;:&quot;drugs/drug_busulfan/Busulfan_Lawson2022_pediatric_stem_cell_transplantation_reci.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # busulfan — `Busulfan_Lawson2022_pediatric_stem_cell_transplantation_reci`
 

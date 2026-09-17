@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02A&quot;,&quot;href&quot;:&quot;atc/B02A.md&quot;},{&quot;label&quot;:&quot;aprotinin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aprotinin_Tae2011_neonates_and_young_infants_undergoing_card&quot;,&quot;label&quot;:&quot;Tae_2011_neonates and young infants undergoing cardiopulmonary bypass&quot;,&quot;href&quot;:&quot;drugs/drug_aprotinin/Aprotinin_Tae2011_neonates_and_young_infants_undergoing_card.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # aprotinin
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Tae_2011](drugs/drug_aprotinin/Aprotinin_Tae2011_neonates_and_young_infants_undergoing_card.md) | Tae YM et al., Population pharmacokinetic analysis and…, Journal of clinical pharmac… (2011) | [10.1177/0091270010379411](https://doi.org/10.1177/0091270010379411) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Tae_2011_neonates and young infants undergoing cardiopulmonary bypass](drugs/drug_aprotinin/Aprotinin_Tae2011_neonates_and_young_infants_undergoing_card.md) | Tae YM et al., Population pharmacokinetic analysis and…, Journal of clinical pharmac… (2011) | [10.1177/0091270010379411](https://doi.org/10.1177/0091270010379411) |
 
 ## Pharmacogenomics (PGx)
 

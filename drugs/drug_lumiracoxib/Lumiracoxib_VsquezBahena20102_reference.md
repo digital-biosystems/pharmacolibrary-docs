@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;lumiracoxib&quot;,&quot;href&quot;:&quot;drugs/drug_lumiracoxib/&quot;},{&quot;label&quot;:&quot;V\u00e1squez-Bahena_2010_2 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lumiracoxib_VsquezBahena20102_reference&quot;,&quot;label&quot;:&quot;V\u00e1squez-Bahena_2010_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lumiracoxib/Lumiracoxib_VsquezBahena20102_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # lumiracoxib — `Lumiracoxib_VsquezBahena20102_reference`
 

@@ -1,0 +1,24 @@
+{
+ "model_id": "Cannabinoids_chov2025_s_hhc_population_pk_model",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "C_central"
+ ],
+ "parameters": {
+  "Cl": 1.0366944444444445e-06,
+  "F": 1.0,
+  "Tlag": 1764.0,
+  "VdPerKg": 2.7512857142857143e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.00011388888888888888,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "C_central": 0.007235633313911294
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Temozolomide_Bsker2022_reference&quot;,&quot;label&quot;:&quot;B\u00fcsker_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_temozolomide/Temozolomide_Bsker2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # Migration capacity — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Jiménez_2024`

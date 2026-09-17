@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;naltrexone&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naltrexone_Christie2025_reference&quot;,&quot;label&quot;:&quot;Christie_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Christie2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # naltrexone
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Christie_2025](drugs/drug_naltrexone/Naltrexone_Christie2025_reference.md) | Christie JT et al., Pharmacokinetics and Bioavailability of…, Journal of veterinary pharm… (2025) | [10.1111/jvp.13507](https://doi.org/10.1111/jvp.13507) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Christie_2025_reference](drugs/drug_naltrexone/Naltrexone_Christie2025_reference.md) | Christie JT et al., Pharmacokinetics and Bioavailability of…, Journal of veterinary pharm… (2025) | [10.1111/jvp.13507](https://doi.org/10.1111/jvp.13507) |
 
 ## Pharmacodynamics (PD)
 

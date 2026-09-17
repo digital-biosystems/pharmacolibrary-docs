@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;hexobendine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hexobendine_Kolassa1975_rats&quot;,&quot;label&quot;:&quot;Kolassa_1975_rats&quot;,&quot;href&quot;:&quot;drugs/drug_hexobendine/Hexobendine_Kolassa1975_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # hexobendine
 
@@ -21,7 +22,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kolassa_1975](drugs/drug_hexobendine/Hexobendine_Kolassa1975_rats.md) | Kolassa (1975) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kolassa_1975_rats](drugs/drug_hexobendine/Hexobendine_Kolassa1975_rats.md) | Kolassa (1975) | — |
 
 ## Coverage
 

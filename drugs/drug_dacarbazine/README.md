@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;dacarbazine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacarbazine_Buesa1991_reference&quot;,&quot;label&quot;:&quot;Buesa_1991_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # dacarbazine
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Buesa_1991](drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference.md) | Buesa JM et al., Clinical pharmacokinetics of high-dose…, Cancer chemotherapy and pha… (1991) | [10.1007/BF00685826](https://doi.org/10.1007/BF00685826) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Buesa_1991_reference](drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference.md) | Buesa JM et al., Clinical pharmacokinetics of high-dose…, Cancer chemotherapy and pha… (1991) | [10.1007/BF00685826](https://doi.org/10.1007/BF00685826) |
 
 ## Pharmacodynamics (PD)
 

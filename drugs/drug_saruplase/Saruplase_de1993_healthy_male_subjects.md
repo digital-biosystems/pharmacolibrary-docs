@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;saruplase&quot;,&quot;href&quot;:&quot;drugs/drug_saruplase/&quot;},{&quot;label&quot;:&quot;de_1993 \u00b7 healthy male subjects&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Saruplase_de1993_healthy_male_subjects&quot;,&quot;label&quot;:&quot;de_1993_healthy male subjects&quot;,&quot;href&quot;:&quot;drugs/drug_saruplase/Saruplase_de1993_healthy_male_subjects.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # saruplase — `Saruplase_de1993_healthy_male_subjects`
 

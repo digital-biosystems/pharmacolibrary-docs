@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;repaglinide&quot;,&quot;href&quot;:&quot;drugs/drug_repaglinide/&quot;},{&quot;label&quot;:&quot;Ruzilawati_2010 \u00b7 healthy Malaysian volunteers&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Repaglinide_Ruzilawati2010_healthy_malaysian_volunteers&quot;,&quot;label&quot;:&quot;Ruzilawati_2010_healthy Malaysian volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_repaglinide/Repaglinide_Ruzilawati2010_healthy_malaysian_volunteers.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # repaglinide — `Repaglinide_Ruzilawati2010_healthy_malaysian_volunteers`
 

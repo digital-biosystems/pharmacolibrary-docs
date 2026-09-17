@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;chlorambucil&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chlorambucil_AlNadaf2022_cats_with_indolent_lymphoproliferat&quot;,&quot;label&quot;:&quot;Al-Nadaf_2022_cats with indolent lymphoproliferative malignancies&quot;,&quot;href&quot;:&quot;drugs/drug_chlorambucil/Chlorambucil_AlNadaf2022_cats_with_indolent_lymphoproliferat.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # chlorambucil
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Al-Nadaf_2022](drugs/drug_chlorambucil/Chlorambucil_AlNadaf2022_cats_with_indolent_lymphoproliferat.md) | Al-Nadaf S et al., Population pharmacokinetics identifies…, American journal of veterin… (2022) | [10.2460/ajvr.22.06.0099](https://doi.org/10.2460/ajvr.22.06.0099) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Al-Nadaf_2022_cats with indolent lymphoproliferative malignancies](drugs/drug_chlorambucil/Chlorambucil_AlNadaf2022_cats_with_indolent_lymphoproliferat.md) | Al-Nadaf S et al., Population pharmacokinetics identifies…, American journal of veterin… (2022) | [10.2460/ajvr.22.06.0099](https://doi.org/10.2460/ajvr.22.06.0099) |
 
 ## Coverage
 

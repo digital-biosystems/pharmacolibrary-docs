@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;tirofiban&quot;,&quot;href&quot;:&quot;drugs/drug_tirofiban/&quot;},{&quot;label&quot;:&quot;Emani_2020 \u00b7 pediatric patients undergoing aortopulmonary shunting&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tirofiban_Emani2020_pediatric_patients_undergoing_aortopulmo&quot;,&quot;label&quot;:&quot;Emani_2020_pediatric patients undergoing aortopulmonary shunting&quot;,&quot;href&quot;:&quot;drugs/drug_tirofiban/Tirofiban_Emani2020_pediatric_patients_undergoing_aortopulmo.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # tirofiban — `Tirofiban_Emani2020_pediatric_patients_undergoing_aortopulmo`
 

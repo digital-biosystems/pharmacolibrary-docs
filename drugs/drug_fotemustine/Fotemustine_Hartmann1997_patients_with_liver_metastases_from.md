@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;fotemustine&quot;,&quot;href&quot;:&quot;drugs/drug_fotemustine/&quot;},{&quot;label&quot;:&quot;Hartmann_1997 \u00b7 patients with liver metastases from colorectal carcinoma&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fotemustine_Hartmann1997_patients_with_liver_metastases_from&quot;,&quot;label&quot;:&quot;Hartmann_1997_patients with liver metastases from colorectal carcinoma&quot;,&quot;href&quot;:&quot;drugs/drug_fotemustine/Fotemustine_Hartmann1997_patients_with_liver_metastases_from.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # fotemustine — `Fotemustine_Hartmann1997_patients_with_liver_metastases_from`
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;fosphenytoin&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/&quot;},{&quot;label&quot;:&quot;Tanaka_2013 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fosphenytoin_Tanaka2013_reference&quot;,&quot;label&quot;:&quot;Tanaka_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Tanaka2013_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fosphenytoin_Coles2015_reference&quot;,&quot;label&quot;:&quot;Coles_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Coles2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fosphenytoin_Empey2013_reference&quot;,&quot;label&quot;:&quot;Empey_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Empey2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fosphenytoin_Higuchi2019_reference&quot;,&quot;label&quot;:&quot;Higuchi_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Higuchi2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fosphenytoin_Moffett2018_reference&quot;,&quot;label&quot;:&quot;Moffett_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Moffett2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fosphenytoin_Ohno2018_reference&quot;,&quot;label&quot;:&quot;Ohno_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Ohno2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fosphenytoin_Wainwright2018_reference&quot;,&quot;label&quot;:&quot;Wainwright_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Wainwright2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # fosphenytoin — `Fosphenytoin_Tanaka2013_reference`
 
@@ -6,13 +7,14 @@
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C
 
 **Steps:**
 1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
 2. If the paper never reports it, the record cannot become a model.
-3. Read the .deviation.json and confirm each deviation names what changed and why.
-4. Anything undocumented needs the engineer, not a curator.
+3. Open the emitted .mo and compare its base class and parameters with the record.
+4. Check the .deviation.json beside it for what the engineer defaulted or assumed.
+5. A wrong base class or a defaulted core parameter means rebuilding, not curating.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -94,8 +96,8 @@ Tanaka J; Kasai H; Shimizu K; Shimasaki S; Kumagai Y et al. (2013). European jou
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | pass | parent_metabolite → PK_Parent_Metabolite* | PK_Parent_Metabolite | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 | T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 20 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 

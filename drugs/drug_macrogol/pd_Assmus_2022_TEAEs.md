@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Macrogol_Sharda2021_reference&quot;,&quot;label&quot;:&quot;Sharda_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_macrogol/Macrogol_Sharda2021_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # drug-related treatment-emergent adverse events — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 - **paper:** `Assmus_2022`

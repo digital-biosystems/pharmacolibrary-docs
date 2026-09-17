@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fondaparinux_Michalikov2022_dialysis_dependent_chronic_kidne&quot;,&quot;label&quot;:&quot;Michali\u010dkov\u00e1_2022_dialysis-dependent chronic kidney disease patients&quot;,&quot;href&quot;:&quot;drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_dialysis_dependent_chronic_kidne.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # coagulation activity — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Chang_2016`

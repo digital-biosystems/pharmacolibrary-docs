@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;naloxegol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naloxegol_AlHuniti2016_healthy_subjects_and_patients_with_oi&quot;,&quot;label&quot;:&quot;Al-Huniti_2016_healthy subjects and patients with OIC&quot;,&quot;href&quot;:&quot;drugs/drug_naloxegol/Naloxegol_AlHuniti2016_healthy_subjects_and_patients_with_oi.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # naloxegol
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Al-Huniti_2016](drugs/drug_naloxegol/Naloxegol_AlHuniti2016_healthy_subjects_and_patients_with_oi.md) | Al-Huniti (2016) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Al-Huniti_2016_healthy subjects and patients with OIC](drugs/drug_naloxegol/Naloxegol_AlHuniti2016_healthy_subjects_and_patients_with_oi.md) | Al-Huniti (2016) | — |
 
 ## Pharmacodynamics (PD)
 

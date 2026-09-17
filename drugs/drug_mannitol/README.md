@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;mannitol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mannitol_Noorani2022_awake_young_adult_mice&quot;,&quot;label&quot;:&quot;Noorani_2022_awake young adult mice&quot;,&quot;href&quot;:&quot;drugs/drug_mannitol/Mannitol_Noorani2022_awake_young_adult_mice.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # mannitol
 
@@ -27,7 +28,7 @@ Mannitol is also indicated as add-on maintenance therapy for improving pulmonary
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Noorani_2022](drugs/drug_mannitol/Mannitol_Noorani2022_awake_young_adult_mice.md) | Noorani B et al., A Semi-Physiological Three-Compartment…, Pharmaceutical research (2022) | [10.1007/s11095-022-03175-4](https://doi.org/10.1007/s11095-022-03175-4) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Noorani_2022_awake young adult mice](drugs/drug_mannitol/Mannitol_Noorani2022_awake_young_adult_mice.md) | Noorani B et al., A Semi-Physiological Three-Compartment…, Pharmaceutical research (2022) | [10.1007/s11095-022-03175-4](https://doi.org/10.1007/s11095-022-03175-4) |
 
 ## Coverage
 

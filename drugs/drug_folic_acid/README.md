@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03A&quot;,&quot;href&quot;:&quot;atc/B03A.md&quot;},{&quot;label&quot;:&quot;folic acid&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FolicAcid_Crider2019_women_of_reproductive_age&quot;,&quot;label&quot;:&quot;Crider_2019_women of reproductive age&quot;,&quot;href&quot;:&quot;drugs/drug_folic_acid/FolicAcid_Crider2019_women_of_reproductive_age.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # folic acid
 
@@ -25,7 +26,7 @@ In order to function within the body, folic acid must first be reduced by the en
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Crider_2019](drugs/drug_folic_acid/FolicAcid_Crider2019_women_of_reproductive_age.md) | Crider KS et al., Systematic Review and Bayesian Meta-ana…, Nutrients (2019) | [10.3390/nu11010071](https://doi.org/10.3390/nu11010071) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Crider_2019_women of reproductive age](drugs/drug_folic_acid/FolicAcid_Crider2019_women_of_reproductive_age.md) | Crider KS et al., Systematic Review and Bayesian Meta-ana…, Nutrients (2019) | [10.3390/nu11010071](https://doi.org/10.3390/nu11010071) |
 
 ## Pharmacodynamics (PD)
 

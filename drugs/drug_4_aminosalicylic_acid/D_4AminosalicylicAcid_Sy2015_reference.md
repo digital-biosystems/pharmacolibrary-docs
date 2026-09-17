@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;4-aminosalicylic acid&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/&quot;},{&quot;label&quot;:&quot;Sy_2015 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_4AminosalicylicAcid_de2014_reference&quot;,&quot;label&quot;:&quot;de_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_4AminosalicylicAcid_Sy2015_reference&quot;,&quot;label&quot;:&quot;Sy_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 # 4-aminosalicylic acid — `D_4AminosalicylicAcid_Sy2015_reference`
 
@@ -6,7 +7,7 @@
 
 ### Reviewer guidance
 
-**What is wrong:** the simulated model does not reproduce a value the paper reports; the engineer did not exercise the covariate scenarios this record defines. Evidence: T1_cmax — expected 9.999999999999999e-06 — got 0.0020168824943308725 — ratio 201.6882; T1_cmax — expected 0.000135 — got 0.0020168824943308725 — ratio 14.9399; T2_covariates_not_exercised
+**What is wrong:** the simulated model does not reproduce a value the paper reports; the engineer did not exercise the covariate scenarios this record defines. Evidence: T1_cmax — expected 9.999999999999999e-06 — got 0.0007238150855741132 — ratio 72.3815; T1_cmax — expected 0.000135 — got 0.0007238150855741132 — ratio 5.3616; T2_covariates_not_exercised
 
 **Steps:**
 1. Open the paper's reported table and confirm the target value and its units.
@@ -47,7 +48,9 @@ not matched (stem Sy_2015)
 ## Departures & gaps
 
 **Deviations:**
+- `defaulted_parameters`: ['Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `absorption_approximation`: transit absorption (ktr=0.0001714/s, n=3) folded to first-order ka = ktr/(n+1) = 4.285e-05/s — same mean absorption time, no delay phase
 
 **Interpretation flags:**
 - dropped duplicate Q27 ('CL/F', value '32.2') — already have one for this compound
@@ -89,18 +92,18 @@ not matched (stem Sy_2015)
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=para-aminosalicylic acid) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | not captured | 0.0020168824943308725 | not captured | non-numeric value |
-| T1_cmax | reference | fail | 9.999999999999999e-06 | 0.0020168824943308725 | 201.6882 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.000135 | 0.0020168824943308725 | 14.9399 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped | 22.4 | 0.0020168824943308725 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 51.6 | 0.0020168824943308725 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 14.3 | 0.0020168824943308725 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 125 | 0.0020168824943308725 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
-| T1_cmax | reference | skipped | -3.9 | 0.0020168824943308725 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 0.873 | 0.0020168824943308725 | not captured | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 0.873 | 0.0020168824943308725 | not captured | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | not captured | 0.0007238150855741132 | not captured | non-numeric value |
+| T1_cmax | reference | fail | 9.999999999999999e-06 | 0.0007238150855741132 | 72.3815 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.000135 | 0.0007238150855741132 | 5.3616 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 22.4 | 0.0007238150855741132 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 51.6 | 0.0007238150855741132 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 14.3 | 0.0007238150855741132 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 125 | 0.0007238150855741132 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
+| T1_cmax | reference | skipped | -3.9 | 0.0007238150855741132 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.873 | 0.0007238150855741132 | not captured | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.873 | 0.0007238150855741132 | not captured | unresolved concentration unit (exp '', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -127,15 +130,15 @@ The structure OpenModelica draws for this model, with **this record's parameter 
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
-**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference/D_4AminosalicylicAcid_Sy2015_reference_modelica.zip" download>D_4AminosalicylicAcid_Sy2015_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference/D_4AminosalicylicAcid_Sy2015_reference_matlab.zip" download>D_4AminosalicylicAcid_Sy2015_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference/D_4AminosalicylicAcid_Sy2015_reference_matlab_simbio.zip" download>D_4AminosalicylicAcid_Sy2015_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference/D_4AminosalicylicAcid_Sy2015_reference_sbml.zip" download>D_4AminosalicylicAcid_Sy2015_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference/D_4AminosalicylicAcid_Sy2015_reference_cellml.zip" download>D_4AminosalicylicAcid_Sy2015_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference/D_4AminosalicylicAcid_Sy2015_reference_modelica.zip" download>D_4AminosalicylicAcid_Sy2015_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference/D_4AminosalicylicAcid_Sy2015_reference_fmi.zip" download>D_4AminosalicylicAcid_Sy2015_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference/D_4AminosalicylicAcid_Sy2015_reference_matlab.zip" download>D_4AminosalicylicAcid_Sy2015_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference/D_4AminosalicylicAcid_Sy2015_reference_matlab_simbio.zip" download>D_4AminosalicylicAcid_Sy2015_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference/D_4AminosalicylicAcid_Sy2015_reference_sbml.zip" download>D_4AminosalicylicAcid_Sy2015_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference/D_4AminosalicylicAcid_Sy2015_reference_cellml.zip" download>D_4AminosalicylicAcid_Sy2015_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -144,9 +147,9 @@ Each archive holds the model source, a script that simulates it against the appr
 
 Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
 
-<dbs-fmusim paramsurl="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference/D_4AminosalicylicAcid_Sy2015_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference/D_4AminosalicylicAcid_Sy2015_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference/D_4AminosalicylicAcid_Sy2015_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference/D_4AminosalicylicAcid_Sy2015_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>Template `PK_1C` · parameters `D_4AminosalicylicAcid_Sy2015_reference_params.json` · controls `D_4AminosalicylicAcid_Sy2015_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Template `PK_1C_enteral` · parameters `D_4AminosalicylicAcid_Sy2015_reference_params.json` · controls `D_4AminosalicylicAcid_Sy2015_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

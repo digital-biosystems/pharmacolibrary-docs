@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;montelukast&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/&quot;},{&quot;label&quot;:&quot;Okubo_2016 \u00b7 1_5_years_old&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Li2019_reference&quot;,&quot;label&quot;:&quot;Li_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Li2019_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_10_15_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_10_15_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_10_15_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_10_15_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_10_15_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_10_15_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_1_5_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_1_5_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_1_5_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Montelukast_Okubo2016_1_5_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_1_5_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_1_5_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Montelukast_Okubo2016_6_9_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_6_9_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_6_9_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_6_9_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_6_9_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_6_9_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_all&quot;,&quot;label&quot;:&quot;Okubo_2016_all&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_all.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_all&quot;,&quot;label&quot;:&quot;Okubo_2016_all&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_all.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # montelukast — `Montelukast_Okubo2016_1_5_years_old`
 
@@ -6,13 +7,11 @@
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
 
 **Steps:**
 1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
 2. If the paper never reports it, the record cannot become a model.
-3. Read the .deviation.json and confirm each deviation names what changed and why.
-4. Anything undocumented needs the engineer, not a curator.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -83,7 +82,7 @@ Okubo K; Inoue Y; Numaguchi H; Tanaka K; Saito I; Oshima N; Matsumoto Y; Prohn M
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 | T1_cmax | reference | skipped | 510 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 438 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 344 | not captured | not captured | no simulated metric for this quantity (single reference sim) |

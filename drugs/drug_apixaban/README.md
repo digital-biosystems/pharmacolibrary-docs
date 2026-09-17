@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;apixaban&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Apixaban_Byon2019_reference&quot;,&quot;label&quot;:&quot;Byon_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_apixaban/Apixaban_Byon2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # apixaban
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Byon_2019](drugs/drug_apixaban/Apixaban_Byon2019_reference.md) | Byon W et al., Apixaban: A Clinical Pharmacokinetic an…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00775-z](https://doi.org/10.1007/s40262-019-00775-z) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Byon_2019_reference](drugs/drug_apixaban/Apixaban_Byon2019_reference.md) | Byon W et al., Apixaban: A Clinical Pharmacokinetic an…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00775-z](https://doi.org/10.1007/s40262-019-00775-z) |
 
 ## Coverage
 

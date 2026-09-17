@@ -1,0 +1,25 @@
+{
+ "model_id": "Rosuvastatin_Macpherson2016_final",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.004328571428571428,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 8.241657499083243e-05,
+  "k21": 4.846152187506739e-06,
+  "ka": 5.0833333333333333e-05,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 3.167375285321243e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

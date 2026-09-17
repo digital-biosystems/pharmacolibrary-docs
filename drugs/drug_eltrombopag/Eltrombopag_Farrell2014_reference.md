@@ -1,8 +1,9 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;eltrombopag&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/&quot;},{&quot;label&quot;:&quot;Farrell_2014 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eltrombopag_Farrell2014_reference&quot;,&quot;label&quot;:&quot;Farrell_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 # eltrombopag — `Eltrombopag_Farrell2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
@@ -10,12 +11,11 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified.
+**What is wrong:** every check the reviewer could run passed.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
-2. Read the .deviation.json and confirm each deviation names what changed and why.
-3. Anything undocumented needs the engineer, not a curator.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -26,22 +26,20 @@ Farrell C; Hayes SC; Wire M; Zhang J et al. (2014). British journal of clinical 
   ·  DOI: [10.1111/bcp.12244](https://doi.org/10.1111/bcp.12244)
 
 ## Model component
-<dbs-pgx drug="eltrombopag" model-id="Eltrombopag_Farrell2014_reference" status="needs_review" stale="false" population="healthy volunteers and subjects with chronic liver disease" measured-compound="eltrombopag" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="eltrombopag" model-id="Eltrombopag_Farrell2014_reference" status="curated_candidate" stale="false" population="healthy volunteers and subjects with chronic liver disease" measured-compound="eltrombopag" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (l h -1 ) | `Q27` · CL/F | —(suppressed) | l h -1 | — | [l] / [h] | not captured | exact (1.0) | tab_1:row2:col1, tab_1:row2:col2, tab_1:row2:col3, tab_1:row2:col5, tab_1:row2:col6 | — | not captured |
-| Vc/F (l) | `Q290` · V1/F | —(suppressed) | l | — | [l] | not captured | exact (1.0) | tab_1:row3:col1, tab_1:row3:col2, tab_1:row3:col3, tab_1:row3:col5, tab_1:row3:col6 | — | not captured |
-| Vp/F (l) | `Q82` · V2/F | —(suppressed) | l | — | [l] | not captured | exact (1.0) | tab_1:row4:col1, tab_1:row4:col2, tab_1:row4:col3, tab_1:row4:col5, tab_1:row4:col6 | — | not captured |
-| Q/F (l h -1 ) | `Q69` · Q/F | —(suppressed) | l h -1 | — | [l] / [h] | not captured | exact (1.0) | tab_1:row5:col1, tab_1:row5:col2, tab_1:row5:col3, tab_1:row5:col5, tab_1:row5:col6 | — | not captured |
-| Ka1 (h -1 ) | `Q49` · kabs | —(suppressed) | h -1 | — | [1] / [h] | not captured | llm (0.6) | tab_1:row6:col1, tab_1:row6:col2, tab_1:row6:col3, tab_1:row6:col5, tab_1:row6:col6 | — | 1.45 (None% RSE) |
-| Ka2 (h -1 ) | `Q302` · k21 | —(suppressed) | h -1 | — | [1] / [h] | not captured | llm (0.6) | tab_1:row7:col1, tab_1:row7:col2, tab_1:row7:col3, tab_1:row7:col5, tab_1:row7:col6 | — | not captured |
-| MTIME (h) | `Q81` · MTT | —(suppressed) | h | — | [h] | not captured | llm (0.6) | tab_1:row9:col1, tab_1:row9:col2, tab_1:row9:col3, tab_1:row9:col5, tab_1:row9:col6 | — | not captured |
+| CL/F (l h -1 ) | `Q27` · CL/F | 15.1 | l h -1 | 4.194444444444445e-06 | [l] / [h] | not captured | exact (1.0) | tab_1:row2:col1, tab_1:row2:col2, tab_1:row2:col3, tab_1:row2:col5, tab_1:row2:col6 | — | not captured |
+| Vc/F (l) | `Q290` · V1/F | 9.14 | l | 0.00914 | [l] | not captured | exact (1.0) | tab_1:row3:col1, tab_1:row3:col2, tab_1:row3:col3, tab_1:row3:col5, tab_1:row3:col6 | — | not captured |
+| Vp/F (l) | `Q82` · V2/F | 9.82 | l | 0.00982 | [l] | not captured | exact (1.0) | tab_1:row4:col1, tab_1:row4:col2, tab_1:row4:col3, tab_1:row4:col5, tab_1:row4:col6 | — | not captured |
+| Q/F (l h -1 ) | `Q69` · Q/F | 8.94 | l h -1 | 2.4833333333333334e-06 | [l] / [h] | not captured | exact (1.0) | tab_1:row5:col1, tab_1:row5:col2, tab_1:row5:col3, tab_1:row5:col5, tab_1:row5:col6 | — | not captured |
+| Ka1 (h -1 ) | `Q49` · kabs | 20.2 | h -1 | 0.005611111111111111 | [1] / [h] | not captured | llm (0.6) | tab_1:row6:col1, tab_1:row6:col2, tab_1:row6:col3, tab_1:row6:col5, tab_1:row6:col6 | — | 1.45 (None% RSE) |
+| Ka2 (h -1 ) | `Q302` · k21 | 21.9 | h -1 | 0.006083333333333333 | [1] / [h] | not captured | llm (0.6) | tab_1:row7:col1, tab_1:row7:col2, tab_1:row7:col3, tab_1:row7:col5, tab_1:row7:col6 | — | not captured |
+| MTIME (h) | `Q81` · MTT | 1.28 | h | not captured | [h] | not captured | llm (0.6) | tab_1:row9:col1, tab_1:row9:col2, tab_1:row9:col3, tab_1:row9:col5, tab_1:row9:col6 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -105,7 +103,7 @@ Farrell C; Hayes SC; Wire M; Zhang J et al. (2014). British journal of clinical 
 | T3_output_variable | not captured | pass | C_central (measured=eltrombopag) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

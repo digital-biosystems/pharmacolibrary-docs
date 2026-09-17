@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Streptomycin_Du2013_rats&quot;,&quot;label&quot;:&quot;Du_2013_rats&quot;,&quot;href&quot;:&quot;drugs/drug_streptomycin/Streptomycin_Du2013_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # bacterial net growth rate — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Regoes_2004`

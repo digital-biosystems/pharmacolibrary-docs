@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03F&quot;,&quot;href&quot;:&quot;atc/A03F.md&quot;},{&quot;label&quot;:&quot;metoclopramide&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/&quot;},{&quot;label&quot;:&quot;Brandon_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metoclopramide_Brandon2024_reference&quot;,&quot;label&quot;:&quot;Brandon_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/Metoclopramide_Brandon2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Metoclopramide_Ge2020_reference&quot;,&quot;label&quot;:&quot;Ge_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/Metoclopramide_Ge2020_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # metoclopramide — `Metoclopramide_Brandon2024_reference`
 

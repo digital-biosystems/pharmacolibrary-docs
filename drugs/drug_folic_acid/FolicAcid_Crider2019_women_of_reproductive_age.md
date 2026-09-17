@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03A&quot;,&quot;href&quot;:&quot;atc/B03A.md&quot;},{&quot;label&quot;:&quot;folic acid&quot;,&quot;href&quot;:&quot;drugs/drug_folic_acid/&quot;},{&quot;label&quot;:&quot;Crider_2019 \u00b7 women of reproductive age&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FolicAcid_Crider2019_women_of_reproductive_age&quot;,&quot;label&quot;:&quot;Crider_2019_women of reproductive age&quot;,&quot;href&quot;:&quot;drugs/drug_folic_acid/FolicAcid_Crider2019_women_of_reproductive_age.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # folic acid — `FolicAcid_Crider2019_women_of_reproductive_age`
 

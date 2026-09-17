@@ -1,18 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;montelukast&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/&quot;},{&quot;label&quot;:&quot;Zhu_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Montelukast_Li2019_reference&quot;,&quot;label&quot;:&quot;Li_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Li2019_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_10_15_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_10_15_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_10_15_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_10_15_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_10_15_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_10_15_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_1_5_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_1_5_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_1_5_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_1_5_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_1_5_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_1_5_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_6_9_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_6_9_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_6_9_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_6_9_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_6_9_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_6_9_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_all&quot;,&quot;label&quot;:&quot;Okubo_2016_all&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_all.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_all&quot;,&quot;label&quot;:&quot;Okubo_2016_all&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_all.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # montelukast — `Montelukast_Zhu2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got defaulted_parameters: structural deviation not quantified
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,18 +21,16 @@ Zhu Y; Xu Y; Zhao H; Qie H; Gao X; Gao J; Feng Z; Bai J; Feng R; Wang M et al. (
   ·  DOI: [10.3389/fphar.2024.1432944](https://doi.org/10.3389/fphar.2024.1432944)
 
 ## Model component
-<dbs-pgx drug="montelukast" model-id="Montelukast_Zhu2024_reference" status="needs_review" stale="false" population="" measured-compound="montelukast" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="montelukast" model-id="Montelukast_Zhu2024_reference" status="curated_candidate" stale="false" population="" measured-compound="montelukast" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Zhu_2024:review | — | not captured |
-| Vd/F | `Q76` · V/F | —(suppressed) | L | — | L | not captured | review (0.7) | Zhu_2024:review | — | not captured |
-| KA (h-1) | `Q49` · kabs | —(suppressed) | h-1 | — | 1/h | not captured | review (0.7) | Zhu_2024:review | — | not captured |
+| CL/F | `Q27` · CL/F | 149.0 | L/h | 4.1388888888888884e-05 | L/h | not captured | review (0.7) | Zhu_2024:review | — | not captured |
+| Vd/F | `Q76` · V/F | 2570.0 | L | 2.57 | L | not captured | review (0.7) | Zhu_2024:review | — | not captured |
+| KA (h-1) | `Q49` · kabs | 0.357 | h-1 | 9.916666666666666e-05 | 1/h | not captured | review (0.7) | Zhu_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -74,7 +72,7 @@ Zhu Y; Xu Y; Zhao H; Qie H; Gao X; Gao J; Feng Z; Bai J; Feng R; Wang M et al. (
 | T3_output_variable | not captured | pass | C_central (measured=montelukast) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

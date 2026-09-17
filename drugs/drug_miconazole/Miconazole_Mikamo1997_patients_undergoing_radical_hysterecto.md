@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;miconazole&quot;,&quot;href&quot;:&quot;drugs/drug_miconazole/&quot;},{&quot;label&quot;:&quot;Mikamo_1997 \u00b7 patients undergoing radical hysterectomy and pelvic lymphadenectomy&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Miconazole_Mikamo1997_patients_undergoing_radical_hysterecto&quot;,&quot;label&quot;:&quot;Mikamo_1997_patients undergoing radical hysterectomy and pelvic lymphadenectomy&quot;,&quot;href&quot;:&quot;drugs/drug_miconazole/Miconazole_Mikamo1997_patients_undergoing_radical_hysterecto.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 # miconazole — `Miconazole_Mikamo1997_patients_undergoing_radical_hysterecto`
 

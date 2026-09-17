@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;miconazole&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Miconazole_Mikamo1997_patients_undergoing_radical_hysterecto&quot;,&quot;label&quot;:&quot;Mikamo_1997_patients undergoing radical hysterectomy and pelvic lymphadenectomy&quot;,&quot;href&quot;:&quot;drugs/drug_miconazole/Miconazole_Mikamo1997_patients_undergoing_radical_hysterecto.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # miconazole
 
@@ -25,7 +26,7 @@ Miconazole was first synthesized in 1969 and first granted FDA approval on Janua
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Mikamo_1997](drugs/drug_miconazole/Miconazole_Mikamo1997_patients_undergoing_radical_hysterecto.md) | Mikamo H et al., Pharmacokinetics of miconazole in serum…, International journal of an… (1997) | [10.1016/s0924-8579(97)00050-2](https://doi.org/10.1016/s0924-8579(97)00050-2) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Mikamo_1997_patients undergoing radical hysterectomy and pelvic lymphadenectomy](drugs/drug_miconazole/Miconazole_Mikamo1997_patients_undergoing_radical_hysterecto.md) | Mikamo H et al., Pharmacokinetics of miconazole in serum…, International journal of an… (1997) | [10.1016/s0924-8579(97)00050-2](https://doi.org/10.1016/s0924-8579(97)00050-2) |
 
 ## Coverage
 

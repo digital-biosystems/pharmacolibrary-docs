@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;trabectedin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Trabectedin_PerezRuixo2007_cancer_patients&quot;,&quot;label&quot;:&quot;Perez-Ruixo_2007_cancer patients&quot;,&quot;href&quot;:&quot;drugs/drug_trabectedin/Trabectedin_PerezRuixo2007_cancer_patients.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Trabectedin_Poggesi2019_children_and_adolescent_patients_wit&quot;,&quot;label&quot;:&quot;Poggesi_2019_children and adolescent patients with cancer&quot;,&quot;href&quot;:&quot;drugs/drug_trabectedin/Trabectedin_Poggesi2019_children_and_adolescent_patients_wit.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 # trabectedin
 
@@ -23,8 +24,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Perez-Ruixo_2007](drugs/drug_trabectedin/Trabectedin_PerezRuixo2007_cancer_patients.md) | Perez-Ruixo JJ et al., Population pharmacokinetic meta-analysi…, Clinical pharmacokinetics (2007) | [10.2165/00003088-200746100-00005](https://doi.org/10.2165/00003088-200746100-00005) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Poggesi_2019](drugs/drug_trabectedin/Trabectedin_Poggesi2019_children_and_adolescent_patients_wit.md) | Poggesi I et al., Population pharmacokinetics of trabecte…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-019-03899-y](https://doi.org/10.1007/s00280-019-03899-y) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Perez-Ruixo_2007_cancer patients](drugs/drug_trabectedin/Trabectedin_PerezRuixo2007_cancer_patients.md) | Perez-Ruixo JJ et al., Population pharmacokinetic meta-analysi…, Clinical pharmacokinetics (2007) | [10.2165/00003088-200746100-00005](https://doi.org/10.2165/00003088-200746100-00005) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Poggesi_2019_children and adolescent patients with cancer](drugs/drug_trabectedin/Trabectedin_Poggesi2019_children_and_adolescent_patients_wit.md) | Poggesi I et al., Population pharmacokinetics of trabecte…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-019-03899-y](https://doi.org/10.1007/s00280-019-03899-y) |
 
 ## Pharmacodynamics (PD)
 

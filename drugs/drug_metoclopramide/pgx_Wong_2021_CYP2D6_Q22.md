@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metoclopramide_Brandon2024_reference&quot;,&quot;label&quot;:&quot;Brandon_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/Metoclopramide_Brandon2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metoclopramide_Ge2020_reference&quot;,&quot;label&quot;:&quot;Ge_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/Metoclopramide_Ge2020_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # CYP2D6 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Wong_2021`

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;isoflurane&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isoflurane_Williams2020_reference&quot;,&quot;label&quot;:&quot;Williams_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_isoflurane/Isoflurane_Williams2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # isoflurane
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Williams_2020](drugs/drug_isoflurane/Isoflurane_Williams2020_reference.md) | Williams CJA et al., Ectothermy and cardiac shunts profoundl…, Scientific reports (2020) | [10.1038/s41598-020-74014-y](https://doi.org/10.1038/s41598-020-74014-y) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Williams_2020_reference](drugs/drug_isoflurane/Isoflurane_Williams2020_reference.md) | Williams CJA et al., Ectothermy and cardiac shunts profoundl…, Scientific reports (2020) | [10.1038/s41598-020-74014-y](https://doi.org/10.1038/s41598-020-74014-y) |
 
 ## Coverage
 

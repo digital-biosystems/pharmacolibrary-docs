@@ -1,24 +1,26 @@
 {
  "model_id": "Omeprazole_Gaspar2025_reference",
- "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
  "parameters": {
   "Cl": 3.1844444444444445e-05,
   "F": 1.0,
+  "Tlag": 0.0,
   "VdPerKg": 0.00021285714285714286,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
   "k12": 0.0009697986577181209,
   "k21": 9.91763898421414e-05,
+  "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 0.00016653771026320298
+  "central.C": 1.3256773889550082e-05
  },
  "stop_time": 86400.0,
- "template": "PK_2C",
- "template_fmu": "PK_2C.fmu"
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
 }

@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;EscherichiaColi_Sethuramalingam2026_reference&quot;,&quot;label&quot;:&quot;Sethuramalingam_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_escherichia_coli/EscherichiaColi_Sethuramalingam2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 # time_to_first_Pf_infection — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 - **paper:** `Tran_2026`

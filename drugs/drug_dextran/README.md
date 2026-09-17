@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05A&quot;,&quot;href&quot;:&quot;atc/B05A.md&quot;},{&quot;label&quot;:&quot;dextran&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dextran_Schwarz1981_healthy_volunteers&quot;,&quot;label&quot;:&quot;Schwarz_1981_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_dextran/Dextran_Schwarz1981_healthy_volunteers.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # dextran
 
@@ -29,7 +30,7 @@ Dextran as well presents ophthalmic applications as solutions or ointments for t
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Schwarz_1981](drugs/drug_dextran/Dextran_Schwarz1981_healthy_volunteers.md) | Schwarz JA et al., Pharmacokinetics of low molecular (mono…, International journal of cl… (1981) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Schwarz_1981_healthy volunteers](drugs/drug_dextran/Dextran_Schwarz1981_healthy_volunteers.md) | Schwarz JA et al., Pharmacokinetics of low molecular (mono…, International journal of cl… (1981) | — |
 
 ## Coverage
 

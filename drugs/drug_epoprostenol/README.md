@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;epoprostenol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epoprostenol_Keizer2010_reference&quot;,&quot;label&quot;:&quot;Keizer_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Vizza2017_reference&quot;,&quot;label&quot;:&quot;Vizza_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Vucicevic2025_reference&quot;,&quot;label&quot;:&quot;Vucicevic_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epoprostenol_Nicolas2012_reference&quot;,&quot;label&quot;:&quot;Nicolas_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # epoprostenol
 
@@ -23,10 +24,10 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Keizer_2010](drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md) | Keizer RJ et al., A model of hypertension and proteinuria…, Journal of pharmacokinetics… (2010) | [10.1007/s10928-010-9164-2](https://doi.org/10.1007/s10928-010-9164-2) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `scholar`</sub> | [Nicolas_2012](drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md) | Nicolas LB et al., Integrated pharmacokinetics and pharmac…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04301.x](https://doi.org/10.1111/j.1365-2125.2012.04301.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Vizza_2017](drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md) | Vizza CD et al., Efficacy of 1, 5, and 20 mg oral silden…, BMC pulmonary medicine (2017) | [10.1186/s12890-017-0374-x](https://doi.org/10.1186/s12890-017-0374-x) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Vucicevic_2025](drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md) | Vucicevic K et al., Population Pharmacokinetic-Pharmacogene…, Cureus (2025) | [10.7759/cureus.88533](https://doi.org/10.7759/cureus.88533) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Keizer_2010_reference](drugs/drug_epoprostenol/Epoprostenol_Keizer2010_reference.md) | Keizer RJ et al., A model of hypertension and proteinuria…, Journal of pharmacokinetics… (2010) | [10.1007/s10928-010-9164-2](https://doi.org/10.1007/s10928-010-9164-2) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Vizza_2017_reference](drugs/drug_epoprostenol/Epoprostenol_Vizza2017_reference.md) | Vizza CD et al., Efficacy of 1, 5, and 20 mg oral silden…, BMC pulmonary medicine (2017) | [10.1186/s12890-017-0374-x](https://doi.org/10.1186/s12890-017-0374-x) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Vucicevic_2025_reference](drugs/drug_epoprostenol/Epoprostenol_Vucicevic2025_reference.md) | Vucicevic K et al., Population Pharmacokinetic-Pharmacogene…, Cureus (2025) | [10.7759/cureus.88533](https://doi.org/10.7759/cureus.88533) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Nicolas_2012_reference](drugs/drug_epoprostenol/Epoprostenol_Nicolas2012_reference.md) | Nicolas LB et al., Integrated pharmacokinetics and pharmac…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2012.04301.x](https://doi.org/10.1111/j.1365-2125.2012.04301.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -57,7 +58,7 @@
 
 - **PubMed hits:** 2856 matched, 141 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 4  ·  extracted 1  ·  needs_review 3  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 3  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;4-aminosalicylic acid&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;D_4AminosalicylicAcid_de2014_reference&quot;,&quot;label&quot;:&quot;de_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;D_4AminosalicylicAcid_Sy2015_reference&quot;,&quot;label&quot;:&quot;Sy_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # 4-aminosalicylic acid
 
@@ -17,8 +18,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [de_2014](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md) | de (2014) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `scholar`</sub> | [Sy_2015](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md) | Sy (2015) | — |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [de_2014_reference](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_de2014_reference.md) | de (2014) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>route_to: `scholar`</sub> | [Sy_2015_reference](drugs/drug_4_aminosalicylic_acid/D_4AminosalicylicAcid_Sy2015_reference.md) | Sy (2015) | — |
 
 ## Coverage
 

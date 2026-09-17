@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;cannabidiol&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/&quot;},{&quot;label&quot;:&quot;Eichler_2023 \u00b7 population_value&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3&quot;,&quot;label&quot;:&quot;Eichler_2023_first_trial_0_2_mg_kg_n_3&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3&quot;,&quot;label&quot;:&quot;Eichler_2023_first_trial_0_2_mg_kg_n_3&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_omega&quot;,&quot;label&quot;:&quot;Eichler_2023_omega&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_omega.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_omega&quot;,&quot;label&quot;:&quot;Eichler_2023_omega&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_omega.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_population_value&quot;,&quot;label&quot;:&quot;Eichler_2023_population_value&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_population_value&quot;,&quot;label&quot;:&quot;Eichler_2023_population_value&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3&quot;,&quot;label&quot;:&quot;Eichler_2023_second_trial_1_mg_kg_n_3&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3&quot;,&quot;label&quot;:&quot;Eichler_2023_second_trial_1_mg_kg_n_3&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_shrinkage&quot;,&quot;label&quot;:&quot;Eichler_2023_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_shrinkage.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_shrinkage&quot;,&quot;label&quot;:&quot;Eichler_2023_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_shrinkage.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5&quot;,&quot;label&quot;:&quot;Eichler_2023_third_trial_3_mg_kg_n_5&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5&quot;,&quot;label&quot;:&quot;Eichler_2023_third_trial_3_mg_kg_n_5&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # cannabidiol — `Cannabidiol_Eichler2023_population_value`
 
@@ -6,13 +7,15 @@
 
 ### Reviewer guidance
 
-**What is wrong:** the simulated model does not reproduce a value the paper reports. Evidence: T1_cmax — expected 3.8999999999999997e-07 — got 1.8303307303203403e-05 — ratio 46.9316; T1_cmax — expected 7e-07 — got 1.8303307303203403e-05 — ratio 26.1476; T1_t_half_beta — expected 161.29 — got 4.862450167584453 — ratio 0.0301; T1_t_half_beta — expected 79.85 — got 4.862450167584453 — ratio 0.0609
+**What is wrong:** the simulated model does not reproduce a value the paper reports; the engineer's deviations are not documented and quantified. Evidence: T1_cmax — expected 3.8999999999999997e-07 — got 1.1226494937503757e-05 — ratio 28.7859; T1_cmax — expected 7e-07 — got 1.1226494937503757e-05 — ratio 16.0378; T1_t_half_beta — expected 161.29 — got 4.874810582218251 — ratio 0.0302; T1_t_half_beta — expected 79.85 — got 4.874810582218251 — ratio 0.061
 
 **Steps:**
 1. Open the paper's reported table and confirm the target value and its units.
 2. Compare with the transcribed value in _transcribev2.yaml for this stem.
 3. If the transcription is right, the extracted parameters are suspect — check CL and volume in _interpretv2.yaml against the paper.
 4. If the transcription is wrong, fix the extraction; the model rebuild follows.
+5. Read the .deviation.json and confirm each deviation names what changed and why.
+6. Anything undocumented needs the engineer, not a curator.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -47,7 +50,10 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
 ## Departures & gaps
 
 **Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Tk0 (h)' — extend the ontology if this is a real PK parameter (source ['tab4:row2:col1'])
@@ -90,13 +96,13 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=cannabidiol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | fail | 3.8999999999999997e-07 | 1.8303307303203403e-05 | 46.9316 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 7e-07 | 1.8303307303203403e-05 | 26.1476 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped | 0.72 | 1.8303307303203403e-05 | not captured | unresolved concentration unit (exp '(', sim 'kg/m3') |
-| T1_t_half_beta | reference | fail | 161.29 | 4.862450167584453 | 0.0301 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 79.85 | 4.862450167584453 | 0.0609 | h→SI vs simulated h |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | fail | 3.8999999999999997e-07 | 1.1226494937503757e-05 | 28.7859 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 7e-07 | 1.1226494937503757e-05 | 16.0378 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 0.72 | 1.1226494937503757e-05 | not captured | unresolved concentration unit (exp '(', sim 'kg/m3') |
+| T1_t_half_beta | reference | fail | 161.29 | 4.874810582218251 | 0.0302 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 79.85 | 4.874810582218251 | 0.061 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -123,15 +129,15 @@ The structure OpenModelica draws for this model, with **this record's parameter 
 
 Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
 
-**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_2C.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
+**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_2C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_modelica.zip" download>Cannabidiol_Eichler2023_population_value_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_fmi.zip" download>Cannabidiol_Eichler2023_population_value_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_matlab.zip" download>Cannabidiol_Eichler2023_population_value_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_matlab_simbio.zip" download>Cannabidiol_Eichler2023_population_value_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_sbml.zip" download>Cannabidiol_Eichler2023_population_value_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_cellml.zip" download>Cannabidiol_Eichler2023_population_value_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_modelica.zip" download>Cannabidiol_Eichler2023_population_value_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_fmi.zip" download>Cannabidiol_Eichler2023_population_value_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_matlab.zip" download>Cannabidiol_Eichler2023_population_value_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_matlab_simbio.zip" download>Cannabidiol_Eichler2023_population_value_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_sbml.zip" download>Cannabidiol_Eichler2023_population_value_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_cellml.zip" download>Cannabidiol_Eichler2023_population_value_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -140,9 +146,9 @@ Each archive holds the model source, a script that simulates it against the appr
 
 Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
 
-<dbs-fmusim paramsurl="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_sim_controls.json"></dbs-fmusim>
 
-<sub>Template `PK_2C` · parameters `Cannabidiol_Eichler2023_population_value_params.json` · controls `Cannabidiol_Eichler2023_population_value_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Template `PK_2C_enteral` · parameters `Cannabidiol_Eichler2023_population_value_params.json` · controls `Cannabidiol_Eichler2023_population_value_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

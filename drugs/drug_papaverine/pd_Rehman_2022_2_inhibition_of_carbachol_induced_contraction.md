@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Papaverine_Ritschel1977_man&quot;,&quot;label&quot;:&quot;Ritschel_1977_man&quot;,&quot;href&quot;:&quot;drugs/drug_papaverine/Papaverine_Ritschel1977_man.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Rehman_2022_2`

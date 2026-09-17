@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11D&quot;,&quot;href&quot;:&quot;atc/A11D.md&quot;},{&quot;label&quot;:&quot;thiamine (vit B1)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ThiamineVitB1_Rindi1980_rats&quot;,&quot;label&quot;:&quot;Rindi_1980_rats&quot;,&quot;href&quot;:&quot;drugs/drug_thiamine_vit_b1/ThiamineVitB1_Rindi1980_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # thiamine (vit B1)
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Rindi_1980](drugs/drug_thiamine_vit_b1/ThiamineVitB1_Rindi1980_rats.md) | Rindi G et al., Thiamine content and turnover rates of…, Brain research (1980) | [10.1016/0006-8993(80)90619-8](https://doi.org/10.1016/0006-8993(80)90619-8) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Rindi_1980_rats](drugs/drug_thiamine_vit_b1/ThiamineVitB1_Rindi1980_rats.md) | Rindi G et al., Thiamine content and turnover rates of…, Brain research (1980) | [10.1016/0006-8993(80)90619-8](https://doi.org/10.1016/0006-8993(80)90619-8) |
 
 ## Coverage
 

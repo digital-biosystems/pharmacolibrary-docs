@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;ethosuximide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ethosuximide_el1978_dogs&quot;,&quot;label&quot;:&quot;el_1978_dogs&quot;,&quot;href&quot;:&quot;drugs/drug_ethosuximide/Ethosuximide_el1978_dogs.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # ethosuximide
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [el_1978](drugs/drug_ethosuximide/Ethosuximide_el1978_dogs.md) | el Sayed MA et al., Pharmacokinetics of ethosuximide in the…, Archives internationales de… (1978) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [el_1978_dogs](drugs/drug_ethosuximide/Ethosuximide_el1978_dogs.md) | el Sayed MA et al., Pharmacokinetics of ethosuximide in the…, Archives internationales de… (1978) | — |
 
 ## Coverage
 

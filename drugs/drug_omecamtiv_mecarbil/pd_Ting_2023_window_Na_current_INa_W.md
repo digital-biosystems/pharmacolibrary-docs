@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;OmecamtivMecarbil_Chen2022_healthy_subjects_and_patients_wit&quot;,&quot;label&quot;:&quot;Chen_2022_healthy subjects and patients with heart failure with reduced ejection fraction&quot;,&quot;href&quot;:&quot;drugs/drug_omecamtiv_mecarbil/OmecamtivMecarbil_Chen2022_healthy_subjects_and_patients_wit.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Ting_2023`

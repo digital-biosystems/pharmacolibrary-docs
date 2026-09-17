@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fostamatinib&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fostamatinib_Bostrm2014_patients_with_rheumatoid_arthritis&quot;,&quot;label&quot;:&quot;Bostr\u00f6m_2014_patients with rheumatoid arthritis&quot;,&quot;href&quot;:&quot;drugs/drug_fostamatinib/Fostamatinib_Bostrm2014_patients_with_rheumatoid_arthritis.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # fostamatinib
 
@@ -25,7 +26,7 @@ Recently, fostamatinib has been identified as a potential therapeutic for contro
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Boström_2014](drugs/drug_fostamatinib/Fostamatinib_Bostrm2014_patients_with_rheumatoid_arthritis.md) | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Boström_2014_patients with rheumatoid arthritis](drugs/drug_fostamatinib/Fostamatinib_Bostrm2014_patients_with_rheumatoid_arthritis.md) | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) |
 
 ## Coverage
 

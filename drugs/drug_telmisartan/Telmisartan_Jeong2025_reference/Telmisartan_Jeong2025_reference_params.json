@@ -1,24 +1,26 @@
 {
  "model_id": "Telmisartan_Jeong2025_reference",
- "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
  "parameters": {
   "Cl": 5.0833333333333335e-06,
   "F": 1.0,
+  "Tlag": 820.8000000000001,
   "VdPerKg": 0.0002957142857142857,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
   "k12": 0.00017042404723564142,
   "k21": 9.799382716049382e-06,
+  "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 0.0009438113920696399
+  "central.C": 7.259918237242894e-05
  },
  "stop_time": 86400.0,
- "template": "PK_2C",
- "template_fmu": "PK_2C.fmu"
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
 }

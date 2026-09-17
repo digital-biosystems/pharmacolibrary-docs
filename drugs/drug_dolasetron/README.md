@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;dolasetron&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolasetron_Dow1996_dogs&quot;,&quot;label&quot;:&quot;Dow_1996_dogs&quot;,&quot;href&quot;:&quot;drugs/drug_dolasetron/Dolasetron_Dow1996_dogs.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # dolasetron
 
@@ -23,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Dow_1996](drugs/drug_dolasetron/Dolasetron_Dow1996_dogs.md) | Dow J et al., Comparison of the pharmacokinetics of d…, Journal of pharmaceutical s… (1996) | [10.1021/js960041m](https://doi.org/10.1021/js960041m) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Dow_1996_dogs](drugs/drug_dolasetron/Dolasetron_Dow1996_dogs.md) | Dow J et al., Comparison of the pharmacokinetics of d…, Journal of pharmaceutical s… (1996) | [10.1021/js960041m](https://doi.org/10.1021/js960041m) |
 
 ## Pharmacodynamics (PD)
 

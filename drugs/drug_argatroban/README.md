@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;argatroban&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Argatroban_Akimoto2011_patients_undergoing_elective_percutan&quot;,&quot;label&quot;:&quot;Akimoto_2011_patients undergoing elective percutaneous coronary intervention&quot;,&quot;href&quot;:&quot;drugs/drug_argatroban/Argatroban_Akimoto2011_patients_undergoing_elective_percutan.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Argatroban_Cox2004_patients_undergoing_percutaneous_coronary&quot;,&quot;label&quot;:&quot;Cox_2004_patients undergoing percutaneous coronary intervention&quot;,&quot;href&quot;:&quot;drugs/drug_argatroban/Argatroban_Cox2004_patients_undergoing_percutaneous_coronary.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 # argatroban
 
@@ -23,8 +24,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Akimoto_2011](drugs/drug_argatroban/Argatroban_Akimoto2011_patients_undergoing_elective_percutan.md) | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Cox_2004](drugs/drug_argatroban/Argatroban_Cox2004_patients_undergoing_percutaneous_coronary.md) | Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004) | [10.1177/0091270004267651](https://doi.org/10.1177/0091270004267651) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Akimoto_2011_patients undergoing elective percutaneous coronary intervention](drugs/drug_argatroban/Argatroban_Akimoto2011_patients_undergoing_elective_percutan.md) | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Cox_2004_patients undergoing percutaneous coronary intervention](drugs/drug_argatroban/Argatroban_Cox2004_patients_undergoing_percutaneous_coronary.md) | Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004) | [10.1177/0091270004267651](https://doi.org/10.1177/0091270004267651) |
 
 ## Pharmacodynamics (PD)
 

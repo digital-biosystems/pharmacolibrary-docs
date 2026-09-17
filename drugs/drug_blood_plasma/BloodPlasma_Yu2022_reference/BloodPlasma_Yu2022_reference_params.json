@@ -1,0 +1,26 @@
+{
+ "model_id": "BloodPlasma_Yu2022_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "C_central"
+ ],
+ "parameters": {
+  "Cl": 3.935185185185186e-09,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 3.7428571428571434e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 1.5814956177551594e-06,
+  "k21": 1.4798280423280424e-06,
+  "ka": 1.8171296296296296e-06,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "C_central": 0.00010137733224561365
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}
