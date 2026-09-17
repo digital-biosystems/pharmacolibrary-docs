@@ -1,6 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;lead&quot;,&quot;href&quot;:&quot;drugs/toxin_lead/&quot;},{&quot;label&quot;:&quot;Dede_2017 \u00b7 exposure::adult humans&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lead_Dede2017_exposure&quot;,&quot;label&quot;:&quot;Dede_2017_exposure&quot;,&quot;href&quot;:&quot;drugs/toxin_lead/Lead_Dede2017_exposure.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lead_Dede2017_exposure_adult_humans&quot;,&quot;label&quot;:&quot;Dede_2017_exposure::adult humans&quot;,&quot;href&quot;:&quot;drugs/toxin_lead/Lead_Dede2017_exposure_adult_humans.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lead_Dede2017_optimal&quot;,&quot;label&quot;:&quot;Dede_2017_optimal&quot;,&quot;href&quot;:&quot;drugs/toxin_lead/Lead_Dede2017_optimal.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lead_Dede2017_optimal_adult_humans&quot;,&quot;label&quot;:&quot;Dede_2017_optimal::adult humans&quot;,&quot;href&quot;:&quot;drugs/toxin_lead/Lead_Dede2017_optimal_adult_humans.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # lead — `Lead_Dede2017_exposure_adult_humans`
 
 > ## <span class="pk-badge pk-badge--orange">needs review</span>
@@ -18,8 +20,6 @@
 2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **modeller** · guidance written by playbook</sub>
-
-<div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
 Dede E; Tindall MJ; Cherrie JW; Hankin S; Collins C et al. (2017).
@@ -63,8 +63,7 @@ _No comparable checks._
 
 ## Downloadable models
 
-No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -73,10 +72,10 @@ No bundles have been generated for this record yet. When the engineer emits them
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
-
-## Web simulation
 
 _No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 

@@ -1,3 +1,5 @@
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # NT-proBNP — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Ruehs_2021`
@@ -5,8 +7,6 @@
 - **driver:** `not_resolved`
 - **tier:** population
 - **effect:** inhibition/unknown
-
-<div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
 Ruehs H; Klein D; Frei M; Grevel J; Austin R; Becker C; Roessig L; Pieske B; Garmann D; Meyer M et al. (2021). Clinical pharmacokinetics 60
@@ -19,8 +19,7 @@ _No resolved parameters._
 
 ## Downloadable models
 
-No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -29,10 +28,10 @@ No bundles have been generated for this record yet. When the engineer emits them
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
-
-## Web simulation
 
 _No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 

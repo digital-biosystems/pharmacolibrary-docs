@@ -1,3 +1,5 @@
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # CYP2D6 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Kirkwood_1997`
@@ -9,8 +11,6 @@
 - **phenotype map:** unresolved
 - **evidence:** risk_association
 
-<div class="pk-tab-mark" data-tab="Information"></div>
-
 ## Citation
 Kirkwood LC; Nation RL; Somogyi AA et al. (1997). British journal of clinical pharmacology 44
   ·  DOI: [10.1046/j.1365-2125.1997.t01-1-00626.x](https://doi.org/10.1046/j.1365-2125.1997.t01-1-00626.x)
@@ -20,8 +20,7 @@ Kirkwood LC; Nation RL; Somogyi AA et al. (1997). British journal of clinical ph
 
 ## Downloadable models
 
-No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -30,10 +29,10 @@ No bundles have been generated for this record yet. When the engineer emits them
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
-
-## Web simulation
 
 _No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 

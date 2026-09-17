@@ -1,4 +1,6 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_aa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_aa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_aa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_aa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_aa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_aa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_aaa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_aaa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_aaa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_aaa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_aaa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_aaa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_faa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_faa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_faa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_faa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_faa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_faa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_maa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_maa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_maa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_maa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_maa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_maa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_metamizole_n_8&quot;,&quot;label&quot;:&quot;Blaser_2021_metamizole_n_8&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_metamizole_n_8.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_metamizole_n_8&quot;,&quot;label&quot;:&quot;Blaser_2021_metamizole_n_8&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_metamizole_n_8.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_naproxen_n_7&quot;,&quot;label&quot;:&quot;Blaser_2021_naproxen_n_7&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_naproxen_n_7.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_naproxen_n_7&quot;,&quot;label&quot;:&quot;Blaser_2021_naproxen_n_7&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_naproxen_n_7.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Morath2025_reference&quot;,&quot;label&quot;:&quot;Morath_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Morath2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # NAT2 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Hein_2021`
@@ -10,8 +12,6 @@
 - **phenotype map:** unresolved
 - **evidence:** not captured
 
-<div class="pk-tab-mark" data-tab="Information"></div>
-
 ## Citation
 Hein DW; Millner LM et al. (2021). Expert opinion on drug metabolism & toxicology 17
   ·  DOI: [10.1080/17425255.2021.1840551](https://doi.org/10.1080/17425255.2021.1840551)
@@ -21,8 +21,7 @@ Hein DW; Millner LM et al. (2021). Expert opinion on drug metabolism & toxicolog
 
 ## Downloadable models
 
-No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -31,10 +30,10 @@ No bundles have been generated for this record yet. When the engineer emits them
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
-
-## Web simulation
 
 _No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 

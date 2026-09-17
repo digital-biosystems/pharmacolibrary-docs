@@ -1,6 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;cyclophosphamide&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/&quot;},{&quot;label&quot;:&quot;Iliopoulou_2021 \u00b7 patients with autoimmune glomerulonephritis&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cyclophosphamide_Cohen1971_cancer_patients&quot;,&quot;label&quot;:&quot;Cohen_1971_cancer patients&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Cohen1971_cancer_patients.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cyclophosphamide_Iliopoulou2021_patients_with_autoimmune_glo&quot;,&quot;label&quot;:&quot;Iliopoulou_2021_patients with autoimmune glomerulonephritis&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Iliopoulou2021_patients_with_autoimmune_glo.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cyclophosphamide_Veal2016_children_with_b_cell_non_hodgkin_s&quot;,&quot;label&quot;:&quot;Veal_2016_children with B-cell non-Hodgkin&#x27;s lymphoma&quot;,&quot;href&quot;:&quot;drugs/drug_cyclophosphamide/Cyclophosphamide_Veal2016_children_with_b_cell_non_hodgkin_s.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # cyclophosphamide — `Cyclophosphamide_Iliopoulou2021_patients_with_autoimmune_glo`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
@@ -13,8 +15,6 @@
 1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **curator** · guidance written by playbook</sub>
-
-<div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
 Iliopoulou VN; Charkoftaki G; Cooper JC; Dokoumetzidis A; Joy MS et al. (2021). The Journal of pharmacy and pharmacology 73
@@ -47,8 +47,7 @@ _No comparable checks._
 
 ## Downloadable models
 
-No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -57,10 +56,10 @@ No bundles have been generated for this record yet. When the engineer emits them
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
-
-## Web simulation
 
 _No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 

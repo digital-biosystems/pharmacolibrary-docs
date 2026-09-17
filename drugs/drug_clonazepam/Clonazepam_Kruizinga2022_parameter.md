@@ -1,6 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;clonazepam&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/&quot;},{&quot;label&quot;:&quot;Kruizinga_2022 \u00b7 parameter&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonazepam_Kruizinga2022_estimate_shrinkage&quot;,&quot;label&quot;:&quot;Kruizinga_2022_estimate_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Kruizinga2022_estimate_shrinkage.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonazepam_Kruizinga2022_estimate_shrinkage&quot;,&quot;label&quot;:&quot;Kruizinga_2022_estimate_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Kruizinga2022_estimate_shrinkage.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonazepam_Hampton2024_reference&quot;,&quot;label&quot;:&quot;Hampton_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Hampton2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonazepam_Kruizinga2022_parameter&quot;,&quot;label&quot;:&quot;Kruizinga_2022_parameter&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Kruizinga2022_parameter.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Clonazepam_Kruizinga2022_parameter&quot;,&quot;label&quot;:&quot;Kruizinga_2022_parameter&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Kruizinga2022_parameter.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Clonazepam_Yukawa2001_reference&quot;,&quot;label&quot;:&quot;Yukawa_2001_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Yukawa2001_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonazepam_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # clonazepam — `Clonazepam_Kruizinga2022_parameter`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
@@ -18,8 +20,6 @@
 2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
-
-<div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
 Kruizinga MD; Zuiker RGJA; Bergmann KR; Egas AC; Cohen AF; Santen GWE; et al. et al. (2022). British journal of clinical pharmacology 88
@@ -105,8 +105,7 @@ Kruizinga MD; Zuiker RGJA; Bergmann KR; Egas AC; Cohen AF; Santen GWE; et al. et
 
 ## Downloadable models
 
-Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clonazepam/Clonazepam_Kruizinga2022_parameter/Clonazepam_Kruizinga2022_parameter_modelica.zip" download>Clonazepam_Kruizinga2022_parameter_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_clonazepam/Clonazepam_Kruizinga2022_parameter/Clonazepam_Kruizinga2022_parameter_fmi.zip" download>Clonazepam_Kruizinga2022_parameter_fmi.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
@@ -115,10 +114,10 @@ Each archive holds the model source, a script that simulates it against the appr
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clonazepam/Clonazepam_Kruizinga2022_parameter/Clonazepam_Kruizinga2022_parameter_sbml.zip" download>Clonazepam_Kruizinga2022_parameter_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_clonazepam/Clonazepam_Kruizinga2022_parameter/Clonazepam_Kruizinga2022_parameter_cellml.zip" download>Clonazepam_Kruizinga2022_parameter_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
-
-## Web simulation
 
 _No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 

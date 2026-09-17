@@ -1,3 +1,5 @@
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # MTHFR — PGx  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Schläwicke_2007`
@@ -9,8 +11,6 @@
 - **phenotype map:** not captured
 - **evidence:** not captured
 
-<div class="pk-tab-mark" data-tab="Information"></div>
-
 ## Citation
 Schläwicke Engström K; Broberg K; Concha G; Nermell B; Warholm M; Vahter M et al. (2007). Environmental health perspectives 115
   ·  DOI: [10.1289/ehp.9734](https://doi.org/10.1289/ehp.9734)
@@ -20,8 +20,7 @@ Schläwicke Engström K; Broberg K; Concha G; Nermell B; Warholm M; Vahter M et 
 
 ## Downloadable models
 
-No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -30,10 +29,10 @@ No bundles have been generated for this record yet. When the engineer emits them
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
-
-## Web simulation
 
 _No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 

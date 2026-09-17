@@ -1,4 +1,6 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cadmium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_review reference&quot;,&quot;href&quot;:&quot;drugs/toxin_cadmium/Cadmium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cadmium_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_review reference&quot;,&quot;href&quot;:&quot;drugs/toxin_cadmium/Cadmium_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cadmium_Marques2026_reference&quot;,&quot;label&quot;:&quot;Marques_2026_review reference&quot;,&quot;href&quot;:&quot;drugs/toxin_cadmium/Cadmium_Marques2026_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cadmium_Muthukrishnan2025_reference&quot;,&quot;label&quot;:&quot;Muthukrishnan_2025_review reference&quot;,&quot;href&quot;:&quot;drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cadmium_Sunnker2026_reference&quot;,&quot;label&quot;:&quot;Sunn\u00e5ker_2026_review reference&quot;,&quot;href&quot;:&quot;drugs/toxin_cadmium/Cadmium_Sunnker2026_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cadmium_Zhong2024_reference&quot;,&quot;label&quot;:&quot;Zhong_2024_six bivalve species (Perna viridis, Mytilus unguiculatus, Mytilus galloprovincialis, Magallana gigas, Magallana hongkongensis, Magallana angulata)&quot;,&quot;href&quot;:&quot;drugs/toxin_cadmium/Cadmium_Zhong2024_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # C-reactive protein — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Obeng-Gyasi_2024`
@@ -6,8 +8,6 @@
 - **driver:** `not_resolved`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
-
-<div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
 Obeng-Gyasi E; Obeng-Gyasi B et al. (2024). Frontiers in public health 12
@@ -20,8 +20,7 @@ _No resolved parameters._
 
 ## Downloadable models
 
-No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -30,10 +29,10 @@ No bundles have been generated for this record yet. When the engineer emits them
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
-
-## Web simulation
 
 _No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 

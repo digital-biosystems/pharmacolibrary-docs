@@ -1,6 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;nickel&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/&quot;},{&quot;label&quot;:&quot;Zhao_2017 \u00b7 rat and occupational population&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nickel_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_review reference&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/Nickel_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nickel_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_review reference&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/Nickel_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nickel_Zhao2017_reference&quot;,&quot;label&quot;:&quot;Zhao_2017_rat and occupational population&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/Nickel_Zhao2017_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Nickel_van2026_reference&quot;,&quot;label&quot;:&quot;van_2026_review reference&quot;,&quot;href&quot;:&quot;drugs/toxin_nickel/Nickel_van2026_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # nickel — `Nickel_Zhao2017_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -13,8 +15,6 @@
 1. No curator action. Run the engineer for this drug.
 
 <sub>owner: **engineer** · guidance written by playbook</sub>
-
-<div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
 Zhao H; Ge P; Chang X; Ren X; Chen L; Gao J; et al. et al. (2017). Wei sheng yan jiu = Journal of hygiene research 46
@@ -93,18 +93,9 @@ Zhao H; Ge P; Chang X; Ren X; Chen L; Gao J; et al. et al. (2017). Wei sheng yan
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model diagram
-
-The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
-
-<img src="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference.svg" alt="Nickel_Zhao2017_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
-
 ## Downloadable models
 
-Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
-
-**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_1C_enteral.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_modelica.zip" download>Nickel_Zhao2017_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_fmi.zip" download>Nickel_Zhao2017_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
@@ -113,16 +104,15 @@ Each archive holds the model source, a script that simulates it against the appr
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_sbml.zip" download>Nickel_Zhao2017_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_cellml.zip" download>Nickel_Zhao2017_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference.svg" alt="Nickel_Zhao2017_reference diagram"><figcaption>The structure OpenModelica draws for this model, with this record's parameter values in the component labels.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-## Web simulation
-
-Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
-
 <dbs-fmusim paramsurl="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>Template `PK_1C_enteral` · parameters `Nickel_Zhao2017_reference_params.json` · controls `Nickel_Zhao2017_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Nickel_Zhao2017_reference_params.json` · controls `Nickel_Zhao2017_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

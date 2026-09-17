@@ -1,6 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;cadmium&quot;,&quot;href&quot;:&quot;drugs/toxin_cadmium/&quot;},{&quot;label&quot;:&quot;Muthukrishnan_2025 \u00b7 review reference&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cadmium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_review reference&quot;,&quot;href&quot;:&quot;drugs/toxin_cadmium/Cadmium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cadmium_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_review reference&quot;,&quot;href&quot;:&quot;drugs/toxin_cadmium/Cadmium_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cadmium_Marques2026_reference&quot;,&quot;label&quot;:&quot;Marques_2026_review reference&quot;,&quot;href&quot;:&quot;drugs/toxin_cadmium/Cadmium_Marques2026_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cadmium_Muthukrishnan2025_reference&quot;,&quot;label&quot;:&quot;Muthukrishnan_2025_review reference&quot;,&quot;href&quot;:&quot;drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cadmium_Sunnker2026_reference&quot;,&quot;label&quot;:&quot;Sunn\u00e5ker_2026_review reference&quot;,&quot;href&quot;:&quot;drugs/toxin_cadmium/Cadmium_Sunnker2026_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cadmium_Zhong2024_reference&quot;,&quot;label&quot;:&quot;Zhong_2024_six bivalve species (Perna viridis, Mytilus unguiculatus, Mytilus galloprovincialis, Magallana gigas, Magallana hongkongensis, Magallana angulata)&quot;,&quot;href&quot;:&quot;drugs/toxin_cadmium/Cadmium_Zhong2024_reference.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # cadmium — `Cadmium_Muthukrishnan2025_reference`
 
 > ## <span class="pk-badge pk-badge--neutral">not modelled</span>
@@ -13,8 +15,6 @@
 1. No curator action. Run the engineer for this drug.
 
 <sub>owner: **engineer** · guidance written by playbook</sub>
-
-<div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
 Muthukrishnan VY; Kerbusch T; Strong LE; Kleijn HJ; Pfister M; Chang AM; Acharya M; Nandy P; McCune JS et al. (2025). Clinical and translational science 18
@@ -84,18 +84,9 @@ Muthukrishnan VY; Kerbusch T; Strong LE; Kleijn HJ; Pfister M; Chang AM; Acharya
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model diagram
-
-The structure OpenModelica draws for this model, with **this record's parameter values** in the component labels.
-
-<img src="drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference/Cadmium_Muthukrishnan2025_reference.svg" alt="Cadmium_Muthukrishnan2025_reference diagram" style="max-width:100%;height:auto;background:#fff;border-radius:6px;padding:8px">
-
 ## Downloadable models
 
-Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
-
-**FMI is two downloads.** The archive holds this record's parameters and its driver; the simulator itself is `PK_2C.fmu`, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass `--fmu PATH`). Running it reproduces the model-specific FMU exactly.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference/Cadmium_Muthukrishnan2025_reference_modelica.zip" download>Cadmium_Muthukrishnan2025_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference/Cadmium_Muthukrishnan2025_reference_fmi.zip" download>Cadmium_Muthukrishnan2025_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
@@ -104,16 +95,15 @@ Each archive holds the model source, a script that simulates it against the appr
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference/Cadmium_Muthukrishnan2025_reference_sbml.zip" download>Cadmium_Muthukrishnan2025_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference/Cadmium_Muthukrishnan2025_reference_cellml.zip" download>Cadmium_Muthukrishnan2025_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference/Cadmium_Muthukrishnan2025_reference.svg" alt="Cadmium_Muthukrishnan2025_reference diagram"><figcaption>The structure OpenModelica draws for this model, with this record's parameter values in the component labels.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-## Web simulation
-
-Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
-
 <dbs-fmusim paramsurl="drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference/Cadmium_Muthukrishnan2025_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/toxin_cadmium/Cadmium_Muthukrishnan2025_reference/Cadmium_Muthukrishnan2025_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>Template `PK_2C` · parameters `Cadmium_Muthukrishnan2025_reference_params.json` · controls `Cadmium_Muthukrishnan2025_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C` · parameters `Cadmium_Muthukrishnan2025_reference_params.json` · controls `Cadmium_Muthukrishnan2025_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

@@ -1,4 +1,6 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atazanavir_Foissac2011_reference&quot;,&quot;label&quot;:&quot;Foissac_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atazanavir/Atazanavir_Foissac2011_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atazanavir_Kengo2025_reference&quot;,&quot;label&quot;:&quot;Kengo_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atazanavir/Atazanavir_Kengo2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atazanavir_Kile2012_reference&quot;,&quot;label&quot;:&quot;Kile_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atazanavir/Atazanavir_Kile2012_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atazanavir_Punyawudho2017_reference&quot;,&quot;label&quot;:&quot;Punyawudho_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atazanavir/Atazanavir_Punyawudho2017_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # UGT1A1 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>
 
 - **paper:** `Steventon_2020`
@@ -10,8 +12,6 @@
 - **phenotype map:** unresolved
 - **evidence:** risk_association
 
-<div class="pk-tab-mark" data-tab="Information"></div>
-
 ## Citation
 Steventon G et al. (2020). Xenobiotica; the fate of foreign compounds in biological systems 50
   ·  DOI: [10.1080/00498254.2019.1617910](https://doi.org/10.1080/00498254.2019.1617910)
@@ -21,8 +21,7 @@ Steventon G et al. (2020). Xenobiotica; the fate of foreign compounds in biologi
 
 ## Downloadable models
 
-No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -31,10 +30,10 @@ No bundles have been generated for this record yet. When the engineer emits them
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
-
-## Web simulation
 
 _No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 

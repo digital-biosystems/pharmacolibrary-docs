@@ -1,6 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01C&quot;,&quot;href&quot;:&quot;atc/J01C.md&quot;},{&quot;label&quot;:&quot;flucloxacillin&quot;,&quot;href&quot;:&quot;drugs/drug_flucloxacillin/&quot;},{&quot;label&quot;:&quot;Drennan_2021_2 \u00b7 reference&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flucloxacillin_Drennan2021v2_reference&quot;,&quot;label&quot;:&quot;Drennan_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flucloxacillin/Flucloxacillin_Drennan2021v2_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Flucloxacillin_Jager2020_reference&quot;,&quot;label&quot;:&quot;Jager_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flucloxacillin/Flucloxacillin_Jager2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flucloxacillin_Wallenburg2021_reference&quot;,&quot;label&quot;:&quot;Wallenburg_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flucloxacillin/Flucloxacillin_Wallenburg2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # flucloxacillin — `Flucloxacillin_Drennan2021v2_reference`
 
 > ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
@@ -16,8 +18,6 @@
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `flucloxacillin`, measured `free flucloxacillin`.
-
-<div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
 Drennan PG; Green JK; Gardiner SJ; Metcalf SCL; Kirkpatrick CMJ; Everts RJ; et al. et al. (2021). British journal of clinical pharmacology 87
@@ -127,8 +127,7 @@ Drennan PG; Green JK; Gardiner SJ; Metcalf SCL; Kirkpatrick CMJ; Everts RJ; et a
 
 ## Downloadable models
 
-Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -137,10 +136,10 @@ Each archive holds the model source, a script that simulates it against the appr
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_flucloxacillin/Flucloxacillin_Drennan2021v2_reference/Flucloxacillin_Drennan2021v2_reference_sbml.zip" download>Flucloxacillin_Drennan2021v2_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_flucloxacillin/Flucloxacillin_Drennan2021v2_reference/Flucloxacillin_Drennan2021v2_reference_cellml.zip" download>Flucloxacillin_Drennan2021v2_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
-
-## Web simulation
 
 _No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 

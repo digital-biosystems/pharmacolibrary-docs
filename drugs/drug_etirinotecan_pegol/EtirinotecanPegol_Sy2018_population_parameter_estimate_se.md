@@ -1,6 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;etirinotecan pegol&quot;,&quot;href&quot;:&quot;drugs/drug_etirinotecan_pegol/&quot;},{&quot;label&quot;:&quot;Sy_2018 \u00b7 population_parameter_estimate_se&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;EtirinotecanPegol_Sy2018_population_parameter_estimate_se&quot;,&quot;label&quot;:&quot;Sy_2018_population_parameter_estimate_se&quot;,&quot;href&quot;:&quot;drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_population_parameter_estimate_se.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;EtirinotecanPegol_Sy2018_population_parameter_estimate_se&quot;,&quot;label&quot;:&quot;Sy_2018_population_parameter_estimate_se&quot;,&quot;href&quot;:&quot;drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_population_parameter_estimate_se.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;EtirinotecanPegol_Sy2018_parameter&quot;,&quot;label&quot;:&quot;Sy_2018_parameter&quot;,&quot;href&quot;:&quot;drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_parameter.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;EtirinotecanPegol_Sy2018_parameter&quot;,&quot;label&quot;:&quot;Sy_2018_parameter&quot;,&quot;href&quot;:&quot;drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_parameter.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # etirinotecan pegol — `EtirinotecanPegol_Sy2018_population_parameter_estimate_se`
 
 > ## <span class="pk-badge pk-badge--neutral">not simulated</span>
@@ -13,8 +15,6 @@
 1. No curator action. Re-run the engineer without --no-simulate.
 
 <sub>owner: **engineer** · guidance written by playbook</sub>
-
-<div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
 Sy SKB; Chia YL; Gordi T; Hoch U; Eldon MA et al. (2018). Cancer chemotherapy and pharmacology 81
@@ -113,8 +113,7 @@ Sy SKB; Chia YL; Gordi T; Hoch U; Eldon MA et al. (2018). Cancer chemotherapy an
 
 ## Downloadable models
 
-Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_population_parameter_estimate_se/EtirinotecanPegol_Sy2018_population_parameter_estimate_se_modelica.zip" download>EtirinotecanPegol_Sy2018_population_parameter_estimate_se_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -123,10 +122,10 @@ Each archive holds the model source, a script that simulates it against the appr
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_population_parameter_estimate_se/EtirinotecanPegol_Sy2018_population_parameter_estimate_se_sbml.zip" download>EtirinotecanPegol_Sy2018_population_parameter_estimate_se_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_population_parameter_estimate_se/EtirinotecanPegol_Sy2018_population_parameter_estimate_se_cellml.zip" download>EtirinotecanPegol_Sy2018_population_parameter_estimate_se_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
-
-## Web simulation
 
 _No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 

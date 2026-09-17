@@ -133,7 +133,7 @@
     .pk-tab-mark, .pk-tab-end { display: none; }
     .markdown-section .pk-tabbar {
       display: flex; gap: 4px; border-bottom: 1px solid #e3e7eb;
-      margin: 24px 0 20px; padding: 0;
+      margin: 4px 0 16px; padding: 0;
     }
     .markdown-section .pk-tabbar button {
       appearance: none; background: none; border: 0; border-bottom: 2px solid transparent;
@@ -146,8 +146,26 @@
       border-bottom-color: var(--theme-color, #0074d9);
     }
     .markdown-section .pk-tabpanel[hidden] { display: none; }
-    /* first heading in a panel: the tab bar already provides the separation */
+    /* first heading in a panel: the tab bar already provides the separation. The record
+       title lives inside the Information panel (the tab bar is the first thing on the page),
+       so the h1 loses its top margin too. */
+    .markdown-section .pk-tabpanel > h1:first-child,
     .markdown-section .pk-tabpanel > h2:first-child { margin-top: 0; }
+    /* Models tab: the bundle table beside a bounded diagram; the diagram wraps under the
+       table when the panel is too narrow for both (flex-wrap, table first in the DOM). */
+    .markdown-section .pk-models-grid { display: flex; flex-wrap: wrap; gap: 8px 24px;
+      align-items: flex-start; }
+    .markdown-section .pk-models-grid .pk-models-table { flex: 1 1 460px; min-width: 0; }
+    .markdown-section .pk-models-grid .pk-models-table > p { font-size: 13px; color: #4b5563; }
+    .markdown-section .pk-models-grid figure.pk-models-diagram { flex: 0 1 380px;
+      max-width: 380px; margin: 0; }
+    .markdown-section .pk-models-grid figure.pk-models-diagram img { display: block;
+      width: 100%; height: auto; max-height: 420px; object-fit: contain;
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 6px; padding: 8px; }
+    .markdown-section .pk-models-grid figure.pk-models-diagram figcaption {
+      font-size: 12px; color: #6b7280; margin-top: 6px; }
+    /* Simulation tab: the element is the first thing in the panel */
+    .markdown-section .pk-tabpanel > dbs-fmusim:first-child { display: block; margin-top: 0; }
     .markdown-section table.pk-models { width: 100%; }
     .markdown-section table.pk-models td:first-child { white-space: nowrap; }
     .markdown-section .pk-missing { color: #9aa1a9; font-style: italic; }

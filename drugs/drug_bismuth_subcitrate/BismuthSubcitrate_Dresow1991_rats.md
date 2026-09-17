@@ -1,6 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;bismuth subcitrate&quot;,&quot;href&quot;:&quot;drugs/drug_bismuth_subcitrate/&quot;},{&quot;label&quot;:&quot;Dresow_1991 \u00b7 rats&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BismuthSubcitrate_Benet1991_adults&quot;,&quot;label&quot;:&quot;Benet_1991_adults&quot;,&quot;href&quot;:&quot;drugs/drug_bismuth_subcitrate/BismuthSubcitrate_Benet1991_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BismuthSubcitrate_Dresow1991_rats&quot;,&quot;label&quot;:&quot;Dresow_1991_rats&quot;,&quot;href&quot;:&quot;drugs/drug_bismuth_subcitrate/BismuthSubcitrate_Dresow1991_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;BismuthSubcitrate_Leussink2000_young_adult_female_wistar_rat&quot;,&quot;label&quot;:&quot;Leussink_2000_young adult female Wistar rats&quot;,&quot;href&quot;:&quot;drugs/drug_bismuth_subcitrate/BismuthSubcitrate_Leussink2000_young_adult_female_wistar_rat.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # bismuth subcitrate — `BismuthSubcitrate_Dresow1991_rats`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
@@ -13,8 +15,6 @@
 1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **curator** · guidance written by playbook</sub>
-
-<div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
 Dresow B; Nielsen P; Fischer R; Wendel J; Gabbe EE; Heinrich HC et al. (1991). Archives of toxicology 65
@@ -47,8 +47,7 @@ _No comparable checks._
 
 ## Downloadable models
 
-No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -57,10 +56,10 @@ No bundles have been generated for this record yet. When the engineer emits them
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
-
-## Web simulation
 
 _No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 

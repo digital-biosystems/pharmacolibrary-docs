@@ -1,3 +1,5 @@
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `de_2022`
@@ -5,8 +7,6 @@
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
 - **effect:** inhibition/unknown
-
-<div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
 de Vries LE; Jansen PAM; Barcelo C; Munro J; Verhoef JMJ; Pasaje CFA; Rubiano K; Striepen J; Abla N; Berning L; Bolscher JM; Demarta-Gatsi C; Henderson RWM; Huijs T; Koolen KMJ; Tumwebaze PK; Yeo T; Aguiar ACC; Angulo-Barturen I; Churchyard A; Baum J; Fernández BC; Fuchs A; Gamo FJ; Guido RVC; Jiménez-Diaz MB; Pereira DB; Rochford R; Roesch C; Sanz LM; Trevitt G; Witkowski B; Wittlin S; Cooper RA; Rosenthal PJ; Sauerwein RW; Schalkwijk J; Hermkens PHH; Bonnert RV; Campo B; Fidock DA; Llinás M; Niles JC; Kooij TWA; Dechering KJ et al. (2022). Nature communications 13
@@ -31,8 +31,7 @@ de Vries LE; Jansen PAM; Barcelo C; Munro J; Verhoef JMJ; Pasaje CFA; Rubiano K;
 
 ## Downloadable models
 
-No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -41,10 +40,10 @@ No bundles have been generated for this record yet. When the engineer emits them
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
-
-## Web simulation
 
 _No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 

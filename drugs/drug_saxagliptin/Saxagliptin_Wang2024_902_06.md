@@ -1,6 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;saxagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_saxagliptin/&quot;},{&quot;label&quot;:&quot;Wang_2024 \u00b7 902_06&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Saxagliptin_Wang2024_mean&quot;,&quot;label&quot;:&quot;Wang_2024_mean&quot;,&quot;href&quot;:&quot;drugs/drug_saxagliptin/Saxagliptin_Wang2024_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Saxagliptin_Wang2024_mean&quot;,&quot;label&quot;:&quot;Wang_2024_mean&quot;,&quot;href&quot;:&quot;drugs/drug_saxagliptin/Saxagliptin_Wang2024_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Saxagliptin_Wang2024_2204_81&quot;,&quot;label&quot;:&quot;Wang_2024_2204_81&quot;,&quot;href&quot;:&quot;drugs/drug_saxagliptin/Saxagliptin_Wang2024_2204_81.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Saxagliptin_Wang2024_2204_81&quot;,&quot;label&quot;:&quot;Wang_2024_2204_81&quot;,&quot;href&quot;:&quot;drugs/drug_saxagliptin/Saxagliptin_Wang2024_2204_81.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Saxagliptin_Wang2024_27_79&quot;,&quot;label&quot;:&quot;Wang_2024_27_79&quot;,&quot;href&quot;:&quot;drugs/drug_saxagliptin/Saxagliptin_Wang2024_27_79.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Saxagliptin_Wang2024_27_79&quot;,&quot;label&quot;:&quot;Wang_2024_27_79&quot;,&quot;href&quot;:&quot;drugs/drug_saxagliptin/Saxagliptin_Wang2024_27_79.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Saxagliptin_Wang2024_3245_80&quot;,&quot;label&quot;:&quot;Wang_2024_3245_80&quot;,&quot;href&quot;:&quot;drugs/drug_saxagliptin/Saxagliptin_Wang2024_3245_80.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Saxagliptin_Wang2024_3245_80&quot;,&quot;label&quot;:&quot;Wang_2024_3245_80&quot;,&quot;href&quot;:&quot;drugs/drug_saxagliptin/Saxagliptin_Wang2024_3245_80.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Saxagliptin_Wang2024_3735_11&quot;,&quot;label&quot;:&quot;Wang_2024_3735_11&quot;,&quot;href&quot;:&quot;drugs/drug_saxagliptin/Saxagliptin_Wang2024_3735_11.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Saxagliptin_Wang2024_3735_11&quot;,&quot;label&quot;:&quot;Wang_2024_3735_11&quot;,&quot;href&quot;:&quot;drugs/drug_saxagliptin/Saxagliptin_Wang2024_3735_11.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Saxagliptin_Wang2024_3797_47&quot;,&quot;label&quot;:&quot;Wang_2024_3797_47&quot;,&quot;href&quot;:&quot;drugs/drug_saxagliptin/Saxagliptin_Wang2024_3797_47.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Saxagliptin_Wang2024_3797_47&quot;,&quot;label&quot;:&quot;Wang_2024_3797_47&quot;,&quot;href&quot;:&quot;drugs/drug_saxagliptin/Saxagliptin_Wang2024_3797_47.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Saxagliptin_Wang2024_902_06&quot;,&quot;label&quot;:&quot;Wang_2024_902_06&quot;,&quot;href&quot;:&quot;drugs/drug_saxagliptin/Saxagliptin_Wang2024_902_06.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Saxagliptin_Wang2024_902_06&quot;,&quot;label&quot;:&quot;Wang_2024_902_06&quot;,&quot;href&quot;:&quot;drugs/drug_saxagliptin/Saxagliptin_Wang2024_902_06.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
+<div class="pk-tab-mark" data-tab="Information"></div>
+
 # saxagliptin — `Saxagliptin_Wang2024_902_06`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
@@ -13,8 +15,6 @@
 1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **curator** · guidance written by playbook</sub>
-
-<div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
 Wang T; Tao T; Liu Y; Dong J; Ni S; Liu Y; et al. et al. (2024). BMC pharmacology & toxicology 25
@@ -81,8 +81,7 @@ Wang T; Tao T; Liu Y; Dong J; Ni S; Liu Y; et al. et al. (2024). BMC pharmacolog
 
 ## Downloadable models
 
-No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
-
+<div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -91,10 +90,10 @@ No bundles have been generated for this record yet. When the engineer emits them
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
-
-## Web simulation
 
 _No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
