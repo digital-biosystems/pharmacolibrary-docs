@@ -1,0 +1,26 @@
+{
+ "model_id": "Digoxin_Ishibashi2024_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.8611111111111115e-08,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00020999999999999998,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 1.0185185185185188e-05,
+  "k21": 5.98888888888889e-05,
+  "ka": 0.00041666666666666664,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.0018858224200400614
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

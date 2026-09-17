@@ -1,0 +1,23 @@
+{
+ "model_id": "Hydromorphone_Wimbish2024_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.5466666666666664e-05,
+  "F": 1.0,
+  "VdPerKg": 0.002,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 2.2499999999999998e-05,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.0006570575108132807
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

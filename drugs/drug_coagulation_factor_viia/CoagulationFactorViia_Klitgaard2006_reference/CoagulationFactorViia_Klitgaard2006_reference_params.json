@@ -1,0 +1,24 @@
+{
+ "model_id": "CoagulationFactorViia_Klitgaard2006_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "C_central"
+ ],
+ "parameters": {
+  "Cl": 7.972222222222223e-07,
+  "F": 1.0,
+  "VdPerKg": 8.9e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 7.49063670411985e-05,
+  "k21": 0.00021505376344086021,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "C_central": 0.0022032888867167364
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

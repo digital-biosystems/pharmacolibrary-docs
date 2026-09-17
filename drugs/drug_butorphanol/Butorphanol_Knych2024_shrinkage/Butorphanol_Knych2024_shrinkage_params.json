@@ -1,0 +1,24 @@
+{
+ "model_id": "Butorphanol_Knych2024_shrinkage",
+ "note": "Values for the shared PK_3C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.1491666666666665e-05,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.000465,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.0017444444444444445,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 7.930289994690939e-07
+ },
+ "stop_time": 86400.0,
+ "template": "PK_3C_enteral",
+ "template_fmu": "PK_3C_enteral.fmu"
+}

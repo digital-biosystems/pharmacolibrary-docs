@@ -1,20 +1,22 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M04A&quot;,&quot;href&quot;:&quot;atc/M04A.md&quot;},{&quot;label&quot;:&quot;allopurinol&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/&quot;},{&quot;label&quot;:&quot;Stocker_2012 \u00b7 adults with gout&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M04A&quot;,&quot;href&quot;:&quot;atc/M04A.md&quot;},{&quot;label&quot;:&quot;allopurinol&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/&quot;},{&quot;label&quot;:&quot;Stocker_2012 \u00b7 reference&quot;}]"></div>
 
 # allopurinol — `Allopurinol_Stocker2012_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
 
 ### Reviewer guidance
 
-**What is wrong:** no model exists yet, so there is nothing to judge; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
+**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T6_deviations — got defaulted_parameters: structural deviation not quantified
 
 **Steps:**
-1. No curator action. Run the engineer for this drug.
-2. Advisory only — the base model still replicates.
-3. Check the record's covariate_definitions in _interpretv2.yaml.
-4. Re-run the engineer for this drug if the covariate curves are wanted.
+1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
+2. If the paper never reports it, the record cannot become a model.
+3. Advisory only — the base model still replicates.
+4. Check the record's covariate_definitions in _interpretv2.yaml.
+5. Re-run the engineer for this drug if the covariate curves are wanted.
+6. Read the .deviation.json and confirm each deviation names what changed and why.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **scholar** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `allopurinol`, measured `oxypurinol`.
 
@@ -25,12 +27,12 @@ Stocker SL; McLachlan AJ; Savic RM; Kirkpatrick CM; Graham GG; Williams KM; et a
   ·  DOI: [10.1111/j.1365-2125.2012.04207.x](https://doi.org/10.1111/j.1365-2125.2012.04207.x)
 
 ## Model component
-<dbs-pgx drug="allopurinol" model-id="Allopurinol_Stocker2012_reference" status="not_modelled" stale="false" population="adults with gout" measured-compound="oxypurinol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="allopurinol" model-id="Allopurinol_Stocker2012_reference" status="model_quarantined" stale="false" population="adults with gout" measured-compound="oxypurinol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `model_quarantined`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -49,12 +51,7 @@ Stocker SL; McLachlan AJ; Savic RM; Kirkpatrick CM; Graham GG; Williams KM; et a
 - column '7' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '8' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=oxypurinol
-- gap-filled Q61 (V) from Aksenov_2018's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Ekobena_2025's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Ekobena_2025's review values (primary lacked it)
-- removed gap-filled parent disposition (Q61, Q49, Q83): this record measures 'oxypurinol', not allopurinol, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
+- review gap-fill skipped: this record measures 'oxypurinol', not allopurinol — the review values are the parent's
 
 **Extraction notes:**
 - unparsed cell tab_0:row0:col7 = ') × θ 37 6 6 .'
@@ -67,34 +64,31 @@ Stocker SL; McLachlan AJ; Savic RM; Kirkpatrick CM; Graham GG; Williams KM; et a
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Ekobena_2025:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Aksenov_2018:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Ekobena_2025:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.0 | not captured | not captured | ['tab_0:row0:col1', 'tab_0:row0:col9', 'tab_0:row0:col13'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 19 L | not captured | not captured | ['Aksenov_2018:review'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T3_output_variable | not captured | pass | C_central (measured=oxypurinol) | C_central | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: structural deviation not quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
 </details>
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_allopurinol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Stocker_2012` / `Stocker_2012::adults with gout`)
-- sim: `../../../knowledgebase/drugs/drug_allopurinol/models/modelica/Allopurinol_Stocker2012_adults_with_gout.json`
+- scholar stages: `../../../knowledgebase/drugs/drug_allopurinol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Stocker_2012` / `Stocker_2012::reference`)
+- model: `../../../knowledgebase/drugs/drug_allopurinol/models/modelica/_needs_review/Allopurinol_Stocker2012_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_allopurinol/models/modelica/_needs_review/Allopurinol_Stocker2012_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -116,9 +110,7 @@ No bundles have been generated for this record yet. When the engineer emits them
 
 ## Web simulation
 
-> 🚧 Not yet wired up — this tab will host an in-browser run of the model above, with editable parameters and dosing.
-
-The simulator will be built on **bodylight.js**, which compiles a model to WebAssembly and drives it from the page, so a simulation runs entirely in the browser with nothing to install: <https://bodylight.physiome.cz/>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

@@ -15,13 +15,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-07 20:25 | 6:27 | 0/1/0 | 0/1/0 | 0/0/0 | 85,227/6,871 | ollama / qwen3.8:27b-mtp-q8_0 | 21 | 1/19 | 17/4 | 0 |
+| 2026-09-07 20:25 | 6:27 | 0/0/0 | 0/1/0 | 0/0/0 | 85,227/6,871 | ollama / qwen3.8:27b-mtp-q8_0 | 21 | 1/19 | 17/4 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Albers_1988](drugs/drug_alanyl_glutamine/AlanylGlutamine_Albers1988_reference.md) | Albers S et al., Availability of amino acids supplied in…, Clinical science (London, E… (1988) | [10.1042/cs0750463](https://doi.org/10.1042/cs0750463) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Albers_1988](drugs/drug_alanyl_glutamine/AlanylGlutamine_Albers1988_healthy_adults.md) | Albers S et al., Availability of amino acids supplied in…, Clinical science (London, E… (1988) | [10.1042/cs0750463](https://doi.org/10.1042/cs0750463) |
 
 ## Pharmacodynamics (PD)
 

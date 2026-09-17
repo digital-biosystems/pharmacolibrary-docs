@@ -1,0 +1,22 @@
+{
+ "model_id": "Fentanyl_Cavallaro2026_reference",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.2658333333333334e-05,
+  "F": 1.0,
+  "VdPerKg": 0.0047,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.00030046983905862264
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

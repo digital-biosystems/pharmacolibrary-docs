@@ -1,0 +1,25 @@
+{
+ "model_id": "Caplacizumab_Fan2025_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.8055555555555556e-09,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 2.6899999999999997e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 2.7438484687555324e-07,
+  "ka": 0.0001277777777777778,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.04272214710939191
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

@@ -2,9 +2,18 @@
 
 # allopurinol — `Allopurinol_Wen2023_final`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
+
+**Steps:**
+1. Advisory only — the base model still replicates.
+2. Check the record's covariate_definitions in _interpretv2.yaml.
+3. Re-run the engineer for this drug if the covariate curves are wanted.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `allopurinol`, measured `oxypurinol`.
 
@@ -15,22 +24,17 @@ Wen YF; Brundage RC; Roman YM; Culhane-Pera KA; Straka RJ et al. (2023). British
   ·  DOI: [10.1111/bcp.15792](https://doi.org/10.1111/bcp.15792)
 
 ## Model component
-<dbs-pgx drug="allopurinol" model-id="Allopurinol_Wen2023_final" status="extracted" stale="false" population="Hmong adults with gout and/or hyperuricemia" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="allopurinol" model-id="Allopurinol_Wen2023_final" status="accepted_with_caveats" stale="false" population="Hmong adults with gout and/or hyperuricemia" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Parameterization:** CL/F, CLm/F, V/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/fm (L/h) | `Q351` · CLm/F | 1.05 | L/h | 2.916666666666667e-07 | [l] / [h] | not captured | exact (1.0) | T2:row2:col2 | — | not captured |
 | V/fm (L) | `Q367` · Vm/F | 59.3 | L | 0.0593 | [l] | not captured | exact (1.0) | T2:row3:col2 | — | not captured |
-| Kfm (/h) | `Q305` · kfm | 1.1 | /h | 0.0003055555555555556 | 1/h | not captured | exact (1.0) | T2:row4:col2 | — | 27.9 (None% RSE) |
+| Kfm (/h) | `Q305` · kfm | 1.1 | /h | 0.0003055555555555556 | [1] / [h] | not captured | exact (1.0) | T2:row4:col2 | — | 27.9 (None% RSE) |
 | standardized_creatinine_clearance_power_on_baseline_su | `Q900` · standardized_creatinine_clearance_power_on_baseline_su | -0.18 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row12:col2 | — | not captured |
-| CL or CL/F | `Q27` · CL/F | 11.4 | mL/min/kg | 1.3299999999999998e-05 | L/h | not captured | review_gapfill (0.7) | Day_2007:review | — | not captured |
-| Vd or Vd/F | `Q76` · V/F | 0.58 | L/kg | 0.0406 | L | not captured | review_gapfill (0.7) | Day_2007:review | — | not captured |
-| absorption rate | `Q49` · kabs | 2.6 | h−1 | 0.0007222222222222223 | 1/h | not captured | review_gapfill (0.7) | Ekobena_2025:review | — | not captured |
-| lag time | `Q83` · tlag | 0.235 | h | 846.0 | h | not captured | review_gapfill (0.7) | Ekobena_2025:review | — | not captured |
-| BCRP | `Q900` · BCRP | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -43,7 +47,6 @@ Wen YF; Brundage RC; Roman YM; Culhane-Pera KA; Straka RJ et al. (2023). British
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- unit_dimension_unknown: '/h' (kfm)
 - dropped unlinked row (NIL): 'BLurate (mg/dL)' — extend the ontology if this is a real PK parameter (source ['T2:row5:col2'])
 - dropped PD-category row 'Imax (mg/dL)' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row6:col2'])
 - dropped PD-category row 'IC50 (mg/L)' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row7:col2'])
@@ -52,9 +55,11 @@ Wen YF; Brundage RC; Roman YM; Culhane-Pera KA; Straka RJ et al. (2023). British
 - covariate level 'Standardized creatinine clearance (power) on baseline SU' → Q900:standardized_creatinine_clearance_power_on_baseline_su = -0.18 (power on Q351)
 - dropped PD-category row 'PDZK1 rs12129861 A allele on IC50a' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row13:col2'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=oxypurinol
+- model-stage split: 'final model' is the final model of Wen_2023 (paper reports 2 stages: base model, final model); same population, different model-building step
+- review gap-fill skipped: this record measures 'oxypurinol', not allopurinol — the review values are the parent's
+- unit_dimension_unknown: '/h' (kfm)
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- model-stage split: 'final model' is the final model of Wen_2023 (paper reports 2 stages: base model, final model); same population, different model-building step
 - gap-filled Q27 (CL/F) from Day_2007's review values (primary lacked it)
 - gap-filled Q76 (V/F) from Day_2007's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -81,28 +86,37 @@ Wen YF; Brundage RC; Roman YM; Culhane-Pera KA; Straka RJ et al. (2023). British
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Day_2007:review'] |
+| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row4:col2'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row2:col2'] |
 | C5_dimension_Q367 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row3:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Ekobena_2025:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Day_2007:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Ekobena_2025:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 47.9 L/h | not captured | not captured | ['Day_2007:review'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 40.6 L | not captured | not captured | ['Day_2007:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=oxypurinol) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no structural disposition parameters in record |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
 </details>
 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_allopurinol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wen_2023` / `Wen_2023::final`)
+- model: `../../../knowledgebase/drugs/drug_allopurinol/models/modelica/Allopurinol_Wen2023_final.mo`
+- deviation: `../../../knowledgebase/drugs/drug_allopurinol/models/modelica/Allopurinol_Wen2023_final.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_allopurinol/models/modelica/Allopurinol_Wen2023_final.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -132,9 +146,11 @@ Each archive holds the model source, a script that simulates it against the appr
 
 ## Web simulation
 
-> 🚧 Not yet wired up — this tab will host an in-browser run of the model above, with editable parameters and dosing.
+Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
 
-The simulator will be built on **bodylight.js**, which compiles a model to WebAssembly and drives it from the page, so a simulation runs entirely in the browser with nothing to install: <https://bodylight.physiome.cz/>
+<dbs-fmusim paramsurl="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_sim_controls.json"></dbs-fmusim>
+
+<sub>Template `PK_1C_enteral` · parameters `Allopurinol_Wen2023_final_params.json` · controls `Allopurinol_Wen2023_final_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

@@ -1,0 +1,24 @@
+{
+ "model_id": "Gabapentin_AlZubaydi2024_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.591666666666667e-06,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0006372857142857144,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.00021611111111111112,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.0014127680258074257
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

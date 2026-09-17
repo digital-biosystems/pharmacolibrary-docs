@@ -1,0 +1,92 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;alogliptin&quot;}]"></div>
+
+# alogliptin
+
+- **generic name:** alogliptin
+- **ATC codes:** `A10BD09`, `A10BD13`, `A10BH04`
+- **DrugBank:** [DB06203](https://go.drugbank.com/drugs/DB06203)
+- **groups:** approved, investigational
+
+## About
+
+**Description.** Alogliptin is a selective, orally-bioavailable inhibitor of enzymatic activity of dipeptidyl peptidase-4 (DPP-4). Chemically, alogliptin is prepared as a benzoate salt and exists predominantly as the R-enantiomer (>99%). It undergoes little or no chiral conversion in vivo to the (S)-enantiomer. FDA approved January 25, 2013.
+
+**Indication.** Indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-15 16:03 | 8:54 | 1/9/0 | 1/0/0 | 0/0/0 | 196,678/8,784 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+
+## popPK records
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_final_parameter_estimate.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_final_parameter_estimate.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_14_to_18_years.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_14_to_18_years.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_adults.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_adults.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_alo_12_5_mg.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_alo_12_5_mg.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_alo_25_mg.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_alo_25_mg.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_auc0_tau_ng_hr_ml.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_auc0_tau_ng_hr_ml.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_cmax_ng_ml.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_cmax_ng_ml.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_dose_mg.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_dose_mg.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_e24.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_e24.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'interindividual variability/residual variability' is a table stat…</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_interindividual_variability_residua.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'interindividual variability/residual variability' is a table stat…</sub><br><sub>route_to: `human_review`</sub> | [Dudkowski_2017](drugs/drug_alogliptin/Alogliptin_Dudkowski2017_interindividual_variability_residua.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Dudkowski_2017](drugs/drug_alogliptin/pd_Dudkowski_2017_DPP_4.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
+
+## Coverage
+
+- **PubMed hits:** 16 matched, 16 returned
+- **screened:** 12  ·  **relevant:** 1
+- **records:** 20  ·  extracted 0  ·  needs_review 2  ·  rejected 18  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Naik_2016.pdf` | Naik H et al., Application of pharmacometric approache…, British journal of clinical… (2016) | popPK | 10 | [10.1111/bcp.12853](https://doi.org/10.1111/bcp.12853) | [26617339](https://pubmed.ncbi.nlm.nih.gov/26617339) | The paper is a population PK study for alogliptin, but the specific numeric parameter values (CL, V, Q, ka) are not present in the provided text, which only reports relative changes and qualitative model structure. |
+| `Covington_2008.pdf` | Covington P et al., Pharmacokinetic, pharmacodynamic, and t…, Clinical therapeutics (2008) | popPK | 8 | [10.1016/j.clinthera.2008.03.004](https://doi.org/10.1016/j.clinthera.2008.03.004) | [18405788](https://pubmed.ncbi.nlm.nih.gov/18405788) | The study reports PK parameters for alogliptin, including half-life and renal excretion fraction, but lacks specific values for clearance (CL) or volume of distribution (V). |
+| `Liu_2016.pdf` | Liu D et al., Quantitative prediction of human pharma…, European journal of pharmac… (2016) | pd | 5 | [10.1016/j.ejps.2016.04.020](https://doi.org/10.1016/j.ejps.2016.04.020) | [27108678](https://www.ncbi.nlm.nih.gov/pubmed/27108678) | metadata signals extractable PD data (PK/PD) |
+| `Chen_2015.pdf` | Chen XW et al., An update on the clinical pharmacology…, Clinical and experimental p… (2015) | pgx | 7 | [10.1111/1440-1681.12469](https://doi.org/10.1111/1440-1681.12469) | [26218204](https://www.ncbi.nlm.nih.gov/pubmed/26218204) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Golightly_2012.pdf` | Golightly LK et al., Comparative clinical pharmacokinetics o…, Clinical pharmacokinetics (2012) | pgx | 7 | [10.1007/BF03261927](https://doi.org/10.1007/BF03261927) | [22686547](https://www.ncbi.nlm.nih.gov/pubmed/22686547) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+
+<sub>queue written 2026-09-15T15:57:35.910567+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Chen_2015 | not_relevant | 0 | 0 | The paper is a general clinical pharmacology review of alogliptin and does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
+| popPK | Covington_2008 | relevant | 8 | 4 | The study reports PK parameters for alogliptin, including half-life and renal excretion fraction, but lacks specific values for clearance (CL) or volume of distribution (V). |
+| popPK | Ferreira_2021 | irrelevant | 0 | 0 | The paper is a clinical outcomes analysis of body weight changes in the EXAMINE trial and does not report any pharmacokinetic parameters for alogliptin. |
+| popPK | Gibbs_2012 | irrelevant | 0 | 0 | The paper is a meta-analysis of efficacy (HbA1c response) and DPP-4 inhibition, not a pharmacokinetic study reporting disposition parameters like clearance or volume for alogliptin. |
+| PGx | Golightly_2012 | not_relevant | 0 | 0 | The paper is a general review comparing the pharmacokinetics of DPP-4 inhibitors and does not report any pharmacogenomic effects (gene variants) on alogliptin. |
+| PGx | Kan_2016 | not_relevant | 4 | 5 | The paper reports a pharmacodynamic effect (change in HbA1c/liver enzymes) associated with a genotype, but it does not report a fitted quantitative effect size (theta) for the pharmacokinetic or pharmacodynamic parameter. |
+| popPK | Langford_2018 | irrelevant | 0 | 0 | The paper focuses on pharmacodynamic dose-response modeling (Emax) and meta-analysis methods, not pharmacokinetic disposition parameters. |
+| popPK | Lee_2008 | irrelevant | 2 | 0 | The paper reports pharmacodynamic and efficacy data (DPP-4 inhibition, glucose effects) and bioavailability, but does not provide quantitative disposition parameters like clearance, volume of distribution, or half-life. |
+| popPK | Liu_2016 | irrelevant | 0 | 0 | The study focuses on imigliptin, not alogliptin, and no alogliptin PK parameters are reported. |
+| PD | Liu_2016 | not_relevant | 0 | 0 | The paper focuses on imigliptin, not alogliptin, and does not report PD parameters for the target drug. |
+| popPK | Naik_2016 | relevant | 10 | 2 | The paper is a population PK study for alogliptin, but the specific numeric parameter values (CL, V, Q, ka) are not present in the provided text, which only reports relative changes and qualitative model structure. |
+| PGx | Scheen_2010 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions for DPP-4 inhibitors, not pharmacogenomic effects of gene variants on alogliptin PK/PD. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_alogliptin`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

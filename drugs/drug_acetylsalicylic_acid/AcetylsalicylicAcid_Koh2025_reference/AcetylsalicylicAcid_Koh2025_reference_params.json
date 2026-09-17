@@ -1,0 +1,23 @@
+{
+ "model_id": "AcetylsalicylicAcid_Koh2025_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 7.666666666666666e-07,
+  "F": 1.0,
+  "VdPerKg": 0.00010714285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 2.9629629629629633e-06,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.012657678804292432
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

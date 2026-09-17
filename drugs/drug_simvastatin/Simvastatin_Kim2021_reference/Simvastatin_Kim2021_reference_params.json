@@ -1,0 +1,26 @@
+{
+ "model_id": "Simvastatin_Kim2021_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 8.11111111111111e-05,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.015085714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 1.9255050505050504e-05,
+  "k21": 1.916431039899466e-05,
+  "ka": 0.0005083333333333334,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 6.434983266294248e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

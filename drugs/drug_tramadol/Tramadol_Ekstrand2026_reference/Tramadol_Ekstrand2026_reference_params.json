@@ -1,0 +1,26 @@
+{
+ "model_id": "Tramadol_Ekstrand2026_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 9.722222222222224e-07,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00027,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.0009362139917695473,
+  "k21": 0.0009362139917695473,
+  "ka": 0.00018055555555555557,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 1.63812452359233e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

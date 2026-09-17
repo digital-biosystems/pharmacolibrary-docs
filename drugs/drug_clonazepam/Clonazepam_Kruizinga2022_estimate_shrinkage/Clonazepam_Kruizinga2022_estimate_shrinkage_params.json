@@ -1,0 +1,24 @@
+{
+ "model_id": "Clonazepam_Kruizinga2022_estimate_shrinkage",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 4.444444444444445e-08,
+  "F": 1.0,
+  "VdPerKg": 0.00016428571428571428,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.00027053140096618356,
+  "k21": 0.00024117140396210163,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.0006171827103525032
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

@@ -1,0 +1,26 @@
+{
+ "model_id": "Midazolam_Burtin1994_mean_estimate_se_index_data_set",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.566666666666667e-06,
+  "F": 0.9,
+  "Tlag": 4428.0,
+  "VdPerKg": 0.000499,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 8.827178165855523e-06,
+  "k21": 0.0005079626578802857,
+  "ka": 3.888888888888889e-05,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.00023447258408560505
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

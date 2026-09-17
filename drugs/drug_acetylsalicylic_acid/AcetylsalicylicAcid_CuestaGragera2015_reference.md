@@ -1,4 +1,4 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;acetylsalicylic acid&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/&quot;},{&quot;label&quot;:&quot;Cuesta-Gragera_2015 \u00b7 adults&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;acetylsalicylic acid&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/&quot;},{&quot;label&quot;:&quot;Cuesta-Gragera_2015 \u00b7 reference&quot;}]"></div>
 
 # acetylsalicylic acid — `AcetylsalicylicAcid_CuestaGragera2015_reference`
 
@@ -14,6 +14,8 @@
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
+> **Dose compound ≠ measured compound:** dosed `acetylsalicylic_acid`, measured `acetylsalicylic acid`.
+
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 ## Citation
@@ -21,7 +23,7 @@ Cuesta-Gragera A; Navarro-Fontestad C; Mangas-Sanjuan V; González-Álvarez I; G
   ·  DOI: [10.1016/j.ejps.2015.04.002](https://doi.org/10.1016/j.ejps.2015.04.002)
 
 ## Model component
-<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_CuestaGragera2015_reference" status="rejected" stale="false" population="adults" measured-compound="acetylsalicylic acid" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_CuestaGragera2015_reference" status="rejected" stale="false" population="healthy adults" measured-compound="acetylsalicylic acid" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -32,7 +34,7 @@ Cuesta-Gragera A; Navarro-Fontestad C; Mangas-Sanjuan V; González-Álvarez I; G
 |---|---|---|---|---|---|---|---|---|---|---|
 | Real absorption rate constant (k A ) | `Q49` · kabs | —(suppressed) | h À1 | — | 1/h | not captured | boundary (0.8) | Cuesta-Gragera_2015:other_prose | — | not captured |
 | ASA hepatic intrinsic clearance at time 0 (CL i 0H ) | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | boundary (0.8) | Cuesta-Gragera_2015:other_prose | — | not captured |
-| Lag 0 (h) | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review_gapfill (0.7) | acetylsalicylic acid:review | — | not captured |
+| V TFV (L) | `Q61` · V | —(suppressed) | L | — | L | not captured | review_gapfill (0.7) | Thoueille_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -49,7 +51,10 @@ Cuesta-Gragera A; Navarro-Fontestad C; Mangas-Sanjuan V; González-Álvarez I; G
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
-- gap-filled Q83 (tlag) from review (primary lacked it)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- gap-filled Q61 (V) from Thoueille_2023's review values (primary lacked it)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -62,18 +67,21 @@ Cuesta-Gragera A; Navarro-Fontestad C; Mangas-Sanjuan V; González-Álvarez I; G
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['acetylsalicylic acid:review'] |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Thoueille_2023:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 48.3 | not captured | not captured | ['Cuesta-Gragera_2015:other_prose'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 48.3 L/h | not captured | not captured | ['Cuesta-Gragera_2015:other_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 2.39e+03 L | not captured | not captured | ['Thoueille_2023:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
 </details>
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cuesta-Gragera_2015` / `Cuesta-Gragera_2015::adults`)
+- scholar stages: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cuesta-Gragera_2015` / `Cuesta-Gragera_2015::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -95,9 +103,7 @@ No bundles have been generated for this record yet. When the engineer emits them
 
 ## Web simulation
 
-> 🚧 Not yet wired up — this tab will host an in-browser run of the model above, with editable parameters and dosing.
-
-The simulator will be built on **bodylight.js**, which compiles a model to WebAssembly and drives it from the page, so a simulation runs entirely in the browser with nothing to install: <https://bodylight.physiome.cz/>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

@@ -1,0 +1,26 @@
+{
+ "model_id": "Ciprofloxacin_Guo2022_cl",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 4.083333333333333e-06,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0008742857142857144,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.00020379448075526509,
+  "k21": 0.00017419304779639976,
+  "ka": 0.0002777777777777778,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 9.503383320055308e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

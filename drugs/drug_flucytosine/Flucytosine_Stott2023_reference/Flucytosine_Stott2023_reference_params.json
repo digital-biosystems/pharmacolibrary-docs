@@ -1,0 +1,24 @@
+{
+ "model_id": "Flucytosine_Stott2023_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.581388888888889e-05,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0008151428571428573,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.02835,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.001585022164713422
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

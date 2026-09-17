@@ -15,17 +15,24 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-07 07:09 | 1:43:24 | 0/0/0 | 0/0/0 | 0/0/0 | 382,521/7,287 | ollama / qwen3.8:27b-mtp-q8_0 | 93 | 8/45 | 92/1 | 0 |
+| 2026-09-16 11:07 | 37:27 | 3/2/1 | 0/0/0 | 0/0/0 | 928,643/74,728 | ollama / qwen3.8:27b-mtp-q8_0 | 93 | 8/45 | 92/1 | 0 |
 
 ## popPK records
 
-_not available_
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Krieger_2025](drugs/drug_amino_acids/AminoAcids_Krieger2025_reference.md) | Krieger K et al., Kinetics of the amino acid uptake trace…, EJNMMI research (2025) | [10.1186/s13550-025-01279-7](https://doi.org/10.1186/s13550-025-01279-7) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Min_2025](drugs/drug_amino_acids/AminoAcids_Min2025_reference.md) | Min JS et al., A Comprehensive Review on the Pharmacok…, Drug design, development an… (2025) | [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Thorsted_2026](drugs/drug_amino_acids/AminoAcids_Thorsted2026_reference.md) | Thorsted A et al., Population Pharmacokinetics and Pharmac…, Journal of clinical pharmac… (2026) | [10.1002/jcph.70187](https://doi.org/10.1002/jcph.70187) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C2_reference failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Kleist_2022](drugs/drug_amino_acids/AminoAcids_Kleist2022_reference.md) | Kleist CJ et al., Population kinetics of homoarginine and…, Amino acids (2022) | [10.1007/s00726-022-03169-x](https://doi.org/10.1007/s00726-022-03169-x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Sudarsono_2026](drugs/drug_amino_acids/AminoAcids_Sudarsono2026_reference.md) | Sudarsono (2026) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Sudarsono_2026_2](drugs/drug_amino_acids/AminoAcids_Sudarsono2026v2_reference.md) | Sudarsono (2026) | — |
 
 ## Coverage
 
 - **PubMed hits:** 7527 matched, 220 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 6  ·  extracted 3  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
@@ -58,14 +65,14 @@ _23 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Rasko_1999.pdf` | Rasko JE et al., The RD114/simian type D retrovirus rece…, Proceedings of the National… (1999) | pgx | 5 | [10.1073/pnas.96.5.2129](https://doi.org/10.1073/pnas.96.5.2129) | [10051606](https://www.ncbi.nlm.nih.gov/pubmed/10051606) | metadata signals extractable PGX data (SLC1A5) |
 | `de_1994.pdf` | de Morais SM et al., The major genetic defect responsible fo…, The Journal of biological c… (1994) | pgx | 5 | not captured | [8195181](https://www.ncbi.nlm.nih.gov/pubmed/8195181) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-09-07T07:09:23.523422+00:00</sub>
+<sub>queue written 2026-09-16T10:39:53.763340+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Adeyemi_2023 | irrelevant | 0 | 0 | The study focuses on the in-vitro anti-parasitic activity of amino acid-modified nanoparticles, not on the pharmacokinetic disposition parameters of amino acids. |
-| popPK | Agu_2022 | irrelevant | 0 | 0 | The study focuses on the anti-sickling mechanisms of soursop extracts, and amino acids are only mentioned as part of a qualitative compositional profile, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Agu_2022 | irrelevant | 0 | 0 | The study focuses on the anti-sickling mechanisms of soursop extracts and uses amino acids only for qualitative compositional profiling, not for pharmacokinetic analysis. |
 | popPK | Alonso_1986 | irrelevant | 0 | 0 | The paper describes in-vitro membrane transport mechanisms and does not report pharmacokinetic parameters (CL, V, etc.) for amino acids in a biological system. |
 | popPK | Alsarra_2026 | irrelevant | 0 | 0 | The paper is a computational drug design study for ERK2 inhibitors and does not report pharmacokinetic parameters for amino acids. |
 | popPK | An_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of rosuvastatin and ezetimibe, not amino acids. |
@@ -92,7 +99,7 @@ _23 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | EFSA_2026 | irrelevant | 0 | 0 | The paper is an EFSA safety assessment of microorganisms (QPS list) and contains no pharmacokinetic data for amino acids. |
 | popPK | Ergün_2025 | irrelevant | 0 | 0 | The paper is a biophysical study on FRET and molecular dynamics of ligand binding to human serum albumin, not a pharmacokinetic study of amino acids. |
 | popPK | Fei_2025 | irrelevant | 0 | 0 | The paper is a machine learning study on drug-target binding affinity prediction and does not report pharmacokinetic parameters for amino acids. |
-| popPK | Finck-Barbançon_1995 | irrelevant | 0 | 0 | The paper is a mechanistic in-vitro study on pertussis toxin ADP-ribosylation kinetics and does not report pharmacokinetic parameters for amino acids. |
+| popPK | Finck-Barbançon_1995 | irrelevant | 0 | 0 | The paper describes in-vitro enzymatic kinetics of pertussis toxin subunits, not the pharmacokinetics of amino acids as a drug. |
 | popPK | Fujii_1992 | irrelevant | 2 | 0 | The study analyzes ammonia metabolism and urea synthesis, treating amino acids only as a metabolic product rather than the subject drug for PK parameter estimation. |
 | popPK | Ge_2026 | irrelevant | 0 | 0 | The paper is a metabolomics study analyzing amino acid concentrations as biomarkers for diabetes progression, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for amino acids as a drug. |
 | popPK | Gesemann_1995 | irrelevant | 0 | 0 | The paper studies the biological activity of agrin isoforms on acetylcholine receptors and does not report pharmacokinetic parameters for amino acids. |
@@ -101,28 +108,28 @@ _23 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Han_2025 | irrelevant | 0 | 0 | The paper focuses on the synthesis and antifungal activity of diaminothiourea derivatives, with amino acids mentioned only as docking targets, not as the subject drug for PK analysis. |
 | popPK | Han_2026 | irrelevant | 0 | 0 | The paper describes a computational tool for protein structure prediction of noncanonical amino acids and contains no pharmacokinetic data or disposition parameters. |
 | popPK | Harada_2024 | irrelevant | 0 | 0 | The study is a metabolomics analysis of drug effects in mice, not a pharmacokinetic study, and does not report PK parameters (CL, V, etc.) for amino acids. |
-| popPK | Harper_2025 | irrelevant | 0 | 0 | The paper studies calpain proteases and breast cancer metastasis, not the pharmacokinetics of amino acids. |
+| popPK | Harper_2025 | irrelevant | 0 | 0 | The paper studies calpain inhibitors and breast cancer metastasis, not the pharmacokinetics of amino acids. |
 | popPK | Henze_1982 | irrelevant | 2 | 3 | The study focuses on myocardial tracer kinetics and imaging of labeled amino acids rather than systemic population pharmacokinetic parameters (CL, V, Q) for the drug class. |
 | popPK | Hu_2015 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for bapineuzumab, not for amino acids, which are only mentioned as the binding target of the antibody. |
-| popPK | Huang_2021 | irrelevant | 2 | 0 | The study focuses on mammary gland transport and metabolism rates (influx/efflux) rather than systemic population pharmacokinetic parameters (CL, V, ka) for the amino acids. |
+| popPK | Huang_2021 | irrelevant | 2 | 0 | The study focuses on mammary gland uptake and metabolism rates (transport/metabolism) rather than systemic population pharmacokinetic parameters (CL, V, ka) for the amino acids. |
 | popPK | Huang_2022 | irrelevant | 0 | 0 | The study investigates the toxicity of copper to marine microalgae and measures amino acid output, but it is not a pharmacokinetic study and does not report disposition parameters for amino acids as a drug. |
 | popPK | Ignatowska_2020 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and cytotoxic activity of amino acid derivatives, containing no pharmacokinetic data. |
 | popPK | Jaggupilli_2019 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on bitter taste receptors (T2Rs) and does not report pharmacokinetic parameters for amino acids. |
 | popPK | Jana_2026 | irrelevant | 0 | 0 | The paper describes the isolation and antifungal activity of a novel metabolite (SM06), not the pharmacokinetics of amino acids. |
-| popPK | Janus_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the peptide NX210c, not amino acids as the subject drug. |
+| popPK | Janus_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the peptide NX210c, not the drug amino_acids. |
 | popPK | Jiao_2015 | irrelevant | 0 | 0 | The paper studies HIV-1 drug resistance and replication kinetics, not the pharmacokinetics of amino acids. |
 | popPK | Jing_2024 | irrelevant | 0 | 0 | The study investigates serum isoleucine as a diagnostic biomarker for Alzheimer's disease and does not report any pharmacokinetic parameters (e.g., clearance, volume, half-life) for the amino acid. |
 | popPK | Johansen_1994 | irrelevant | 0 | 0 | The paper is a structure-activity relationship study on NMDA receptor ligands and does not report pharmacokinetic parameters for amino acids. |
 | popPK | Keizer_2010 | irrelevant | 0 | 0 | The paper is a review of monoclonal antibody pharmacokinetics and does not report quantitative PK parameters for amino acids as the subject drug. |
-| popPK | Khomtchouk_2019 | irrelevant | 0 | 0 | The paper is a genomics study on codon usage bias and statistical modeling of genomes, not a pharmacokinetic study of amino acids. |
+| popPK | Khomtchouk_2019 | irrelevant | 0 | 0 | The paper is a genomics study on codon usage bias and does not contain any pharmacokinetic data for amino acids. |
 | popPK | Klement_2020 | irrelevant | 0 | 0 | The paper is a clinical study on body composition changes in cancer patients using a ketogenic diet, not a pharmacokinetic study reporting disposition parameters for amino acids. |
 | popPK | Knudsen_1993 | relevant | 8 | 2 | The study reports quantitative PK parameters (permeability-surface area products, extraction) for amino acids using a compartmental model, but specific numeric values are not present in the provided text. |
 | popPK | Koistinen_2025 | irrelevant | 0 | 0 | The paper is a metabolomics study analyzing plasma metabolite levels (including amino acids) as biomarkers for glucose metabolism, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for amino acids as a drug. |
-| popPK | Krieger_2025 | irrelevant | 2 | 8 | The study reports compartmental PK parameters (K1, k2, VT) for the radiotracer [18F]FET, which is a diagnostic imaging agent rather than the therapeutic drug "amino_acids" (e.g., L-tyrosine) itself. |
+| popPK | Krieger_2025 | irrelevant | 2 | 8 | The study reports compartmental PK parameters (K1, k2, VT) for the radiotracer [18F]FET, which is a diagnostic imaging agent rather than the therapeutic drug "amino_acids" (e.g., L-arginine, glutamine) typically targeted for population-PK extraction. |
 | popPK | Kularatne_2014 | irrelevant | 0 | 0 | The paper describes the synthesis and cytotoxicity of an antibody-drug conjugate, not the pharmacokinetics of amino acids. |
 | popPK | Kumar_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of lamotrigine and neurochemical levels of amino acids, not the pharmacokinetic parameters (CL, V, etc.) of amino acids as a drug. |
-| popPK | Kumar_2026 | irrelevant | 0 | 0 | The study focuses on the toxicity and metabolic effects of PFOS in Chironomus tepperi larvae, not the pharmacokinetics of amino acids as a drug. |
-| popPK | Lambert_2022 | irrelevant | 1 | 0 | The study reports pharmacokinetic parameters for the radiopharmaceutical 177Lu-Dotatate, with amino acids serving only as co-administered agents to prevent toxicity, not as the subject drug. |
+| popPK | Kumar_2026 | irrelevant | 0 | 0 | The study investigates the toxicity and metabolic effects of PFOS on Chironomus tepperi larvae, not the pharmacokinetics of amino acids as a subject drug. |
+| popPK | Lambert_2022 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the radiopharmaceutical 177Lu-Dotatate, with amino acids serving only as co-administered agents to prevent toxicity, not as the subject drug. |
 | popPK | Lanfermeijer_1992 | irrelevant | 0 | 0 | The study investigates amino acid release from plant seed coats (botany), not pharmacokinetic disposition parameters in a biological host. |
 | popPK | Leiva-Salcedo_2024 | irrelevant | 0 | 0 | The paper is an electrophysiological study on P2X2a receptor channels and copper modulation, not a pharmacokinetic study of amino acids. |
 | popPK | Lewis_2007 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of UGT enzyme chimeras and substrate selectivity, not a pharmacokinetic study of amino acids as a drug. |
@@ -142,10 +149,10 @@ _23 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Patneau_1990 | irrelevant | 0 | 0 | The paper is an electrophysiological study of receptor activation (EC50, Hill coefficients) in cell culture, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Pende_1993 | irrelevant | 0 | 0 | The study investigates the neurochemical release of glutamate and aspartate from synaptosomes, not the pharmacokinetic disposition parameters (CL, V, etc.) of amino acids as a drug. |
 | popPK | Peoples_1998 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of drug effects on amino acid receptors, not a pharmacokinetic study of amino acids. |
-| popPK | Pozo_2026 | irrelevant | 0 | 0 | The paper is an in-vitro metabolic study on glycine's role in hepatocyte maturation and does not report pharmacokinetic parameters (CL, V, ka) for amino acids. |
-| popPK | Prasad_1998 | irrelevant | 0 | 0 | The paper describes the synthesis and anti-HIV activity of dithiobisbenzamides derived from amino acids, not the pharmacokinetics of amino acids themselves. |
+| popPK | Pozo_2026 | irrelevant | 0 | 0 | The paper is an in-vitro metabolic study on glycine's role in hepatocyte maturation and does not report pharmacokinetic parameters (CL, V, ka, etc.) for amino acids. |
+| popPK | Prasad_1998 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and anti-HIV activity of dithiobisbenzamides derived from amino acids, not a pharmacokinetic study of amino acids as a drug. |
 | popPK | Puszkiel_2019 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of 177Lu-Dotatate, with amino acids serving only as a co-infused comparator agent to modify renal clearance, not as the subject drug. |
-| popPK | Pötgens_2021 | irrelevant | 0 | 0 | The paper is a metabolomics study analyzing amino acid concentrations in cancer cachectic mice, not a pharmacokinetic study reporting disposition parameters (CL, V, ka) for amino acids as a drug. |
+| popPK | Pötgens_2021 | irrelevant | 0 | 0 | The paper is a metabolomics study analyzing amino acid concentrations in cancer cachectic mice, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Rasmussen_2000 | irrelevant | 0 | 0 | The study focuses on muscle protein synthesis kinetics using phenylalanine as a tracer, not the pharmacokinetic disposition parameters (CL, V, etc.) of the amino acid supplement itself. |
 | popPK | Rebolledo_2021 | irrelevant | 0 | 0 | The paper is a phytochemical and antioxidant study of plant extracts, not a pharmacokinetic study of amino acids. |
 | popPK | Regan_1994 | irrelevant | 0 | 0 | The paper describes the cloning and characterization of a prostaglandin receptor (Hup-4) and does not report pharmacokinetic parameters for amino acids. |
@@ -157,9 +164,9 @@ _23 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Saben_2022 | irrelevant | 0 | 0 | The study analyzes amino acid concentrations in human milk and their association with infant growth, not the pharmacokinetic disposition parameters (CL, V, etc.) of amino acids as a drug. |
 | popPK | Sakamoto_2017 | irrelevant | 0 | 0 | The paper describes the discovery of a D-peptide inhibitor using phage display and reports binding affinity (EC50), but contains no pharmacokinetic parameters for amino acids. |
 | popPK | Sastrasinh_1989 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of glutamine transport in submitochondrial particles, not a pharmacokinetic study reporting disposition parameters for the drug amino_acids. |
-| popPK | Saunders_2017 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of exercise performance outcomes following beta-alanine supplementation, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Saunders_2017 | irrelevant | 0 | 0 | The paper is a meta-analysis of exercise performance outcomes for beta-alanine supplementation and does not report pharmacokinetic parameters (CL, V, ka, etc.). |
 | popPK | Seiler_1981 | irrelevant | 0 | 0 | The paper discusses the catabolism of polyamines (spermidine/spermine) and mentions amino acids only as end-products, without reporting any pharmacokinetic parameters for amino acids as the subject drug. |
-| popPK | Shi_2021 | irrelevant | 0 | 0 | The study is an epidemiological analysis of the association between branched-chain amino acid levels and insulin resistance in the context of air pollution, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Shi_2021 | irrelevant | 0 | 0 | The study is an epidemiological analysis of the association between branched-chain amino acid concentrations and insulin resistance, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Silva_2023 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on anticholinesterase agents, and amino acids are only mentioned as enzyme residues in molecular modeling, not as the subject drug for PK analysis. |
 | popPK | Singh_2019 | irrelevant | 0 | 0 | The paper is a mechanistic study on antimalarial compounds inhibiting a protease, not a pharmacokinetic study of amino acids. |
 | popPK | Suchak_2026 | irrelevant | 0 | 0 | The paper is a metabolomics study analyzing postprandial and circadian variations in metabolite concentrations (effect sizes), not a pharmacokinetic study reporting disposition parameters like clearance or volume for amino acids. |
@@ -183,7 +190,7 @@ _23 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Zhang_2009 | irrelevant | 0 | 0 | The paper is a molecular biology study on the cloning and expression of a superoxide dismutase gene in abalone, not a pharmacokinetic study of amino acids. |
 | popPK | Zhang_2025 | irrelevant | 0 | 0 | The paper is a machine learning study on peptide toxicity prediction and does not report any pharmacokinetic parameters for amino acids. |
 | popPK | Zhang_2026 | irrelevant | 0 | 0 | The paper describes a deep learning framework for drug property prediction and does not report pharmacokinetic parameters for amino acids. |
-| popPK | Zheng_2022 | irrelevant | 0 | 0 | The paper describes the development of a monoclonal antibody against a receptor, not a pharmacokinetic study of amino acids. |
+| popPK | Zheng_2022 | irrelevant | 0 | 0 | The paper describes the development of a monoclonal antibody against a receptor, not the pharmacokinetics of amino acids. |
 | popPK | Zheng_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of vigabatrin, with amino acids serving only as metabolomic biomarkers rather than the subject drug. |
 | popPK | Zheng_2026 | irrelevant | 0 | 0 | The paper is a dataset of acid dissociation constants (pKa) for organic compounds, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for amino acids. |
 | popPK | Zhou_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for gabapentin, not amino acids. |

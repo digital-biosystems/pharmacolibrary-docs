@@ -1,0 +1,24 @@
+{
+ "model_id": "Midazolam_Bertin2026_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.888888888888889e-05,
+  "F": 1.0,
+  "VdPerKg": 0.0011714285714285715,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 8.807588075880759e-05,
+  "k21": 7.222222222222222e-05,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.0008458476186590102
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

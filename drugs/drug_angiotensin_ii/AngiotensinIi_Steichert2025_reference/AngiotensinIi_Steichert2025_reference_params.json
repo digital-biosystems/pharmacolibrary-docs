@@ -1,0 +1,26 @@
+{
+ "model_id": "AngiotensinIi_Steichert2025_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.0108333333333333e-05,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.003195857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 7.921962461321452e-06,
+  "k21": 1.637005562739906e-05,
+  "ka": 0.00033055555555555556,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.0002834941722250255
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

@@ -1,0 +1,26 @@
+{
+ "model_id": "Tetracycline_Lakota2020_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.861111111111111e-06,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0003014285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.0002804107424960505,
+  "k21": 7.405089695452648e-05,
+  "ka": 0.00048333333333333334,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.00012668283443620018
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

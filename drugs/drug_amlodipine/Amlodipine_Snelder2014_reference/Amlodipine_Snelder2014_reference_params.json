@@ -1,0 +1,24 @@
+{
+ "model_id": "Amlodipine_Snelder2014_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.15e-06,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0007448881815259584,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.000325,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.0014188836034788666
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,24 @@
+{
+ "model_id": "Doxorubicin_Olivo2024_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 4.194444444444445e-06,
+  "F": 1.0,
+  "VdPerKg": 0.0011785714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 5.993265993265992e-07,
+  "k21": 8.644133644133643e-06,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.001191235292732675
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

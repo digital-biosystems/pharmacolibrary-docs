@@ -702,5 +702,33 @@
       });
     });
   </script>
+  <!-- The Simulation tab's <dbs-fmusim> (in-browser WebAssembly FMU run). Same lazy pattern
+       as above — only a record page has one — but TWO scripts, and the ORDER is load-bearing.
+       dbs-fmusim.js is a per-component webpack build whose shared Aurelia/lodash code was
+       split into dbs-shared.js; its entry module sits behind a chunk-loading callback that
+       fires only once dbs-shared.js has registered itself. Request dbs-fmusim.js first, or
+       alone, and the element simply never upgrades — no error, no console message. So the
+       second script is appended from the first one's onload, never in parallel. -->
+  <script>
+    (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
+      hook.doneEach(function () {
+        if (window.__dbsFmusim) return;
+        if (!document.querySelector('dbs-fmusim')) return;
+        window.__dbsFmusim = true;
+        var shared = document.createElement('script');
+        shared.src = 'assets/js/dbs-shared.js';
+        shared.async = true;
+        shared.onerror = function () { window.__dbsFmusim = false; };
+        shared.onload = function () {
+          var comp = document.createElement('script');
+          comp.src = 'assets/js/dbs-fmusim.js';
+          comp.async = true;
+          comp.onerror = function () { window.__dbsFmusim = false; };
+          document.body.appendChild(comp);
+        };
+        document.body.appendChild(shared);
+      });
+    });
+  </script>
 </body>
 </html>

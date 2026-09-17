@@ -1,0 +1,22 @@
+{
+ "model_id": "Hydrochlorothiazide_Devineni2015_reference",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.3888888888888884e-06,
+  "F": 1.0,
+  "VdPerKg": 0.002665276038396582,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.0005330836867016251
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

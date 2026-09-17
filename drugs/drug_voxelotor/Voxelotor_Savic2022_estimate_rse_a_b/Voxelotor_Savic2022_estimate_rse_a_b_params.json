@@ -1,0 +1,25 @@
+{
+ "model_id": "Voxelotor_Savic2022_estimate_rse_a_b",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.004757142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 3.2532532532532534e-07,
+  "k21": 1.4983863531581375e-06,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.00026014057171768964
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

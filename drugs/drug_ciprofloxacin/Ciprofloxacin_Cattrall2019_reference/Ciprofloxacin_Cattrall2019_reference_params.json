@@ -1,0 +1,26 @@
+{
+ "model_id": "Ciprofloxacin_Cattrall2019_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.916666666666666e-06,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0003957142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 1.704773365423185e-05,
+  "k21": 0.00015636497424576895,
+  "ka": 0.0005277777777777777,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.0009322607474974775
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

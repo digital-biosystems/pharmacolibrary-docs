@@ -1,0 +1,22 @@
+{
+ "model_id": "Clopidogrel_Grafeneder2024_hv",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "C_central"
+ ],
+ "parameters": {
+  "Cl": 1.3166666666666666e-06,
+  "F": 1.0,
+  "VdPerKg": 5.8971428571428564e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "C_central": 0.022047843781493718
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

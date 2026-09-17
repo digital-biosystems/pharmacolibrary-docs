@@ -1,0 +1,24 @@
+{
+ "model_id": "Rifabutin_Wang2020_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.0305555555555556e-05,
+  "F": 1.0,
+  "Tlag": 2970.0,
+  "VdPerKg": 0.022938851150134516,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.00011027777777777779,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 5.2187473476296276e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,4 +1,4 @@
-# name — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Hernández-Lozano_2025`
 - **model family:** `linear`
@@ -15,9 +15,9 @@ Hernández-Lozano I; Aranzana-Climent V; Cao S; Matias C; Ulf Hansen J; Liepinsh
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|
-| k d — Value | `Q331` · not captured | 0.179 | mg/L | not captured | llm (not captured) | dkae409-T1:row5:col4 |
-| B max — Value | `Q332` · not captured | 9.18 | not captured | not captured | llm (not captured) | dkae409-T1:row6:col4 |
-| B max — 95% CI | `Q332` · not captured | 8.97 | not captured | not captured | llm (not captured) | dkae409-T1:row6:col5 |
+| k d — Value | `Q331` · not captured | 0.179 | mg/L | not captured | space_fold (not captured) | dkae409-T1:row5:col4 |
+| B max — Value | `Q332` · not captured | 9.18 | not captured | not captured | space_fold (not captured) | dkae409-T1:row6:col4 |
+| B max — 95% CI | `Q332` · not captured | 8.97 | not captured | not captured | space_fold (not captured) | dkae409-T1:row6:col5 |
 | k ada × 1000 — Value | `Q49` · not captured | 0.080 | not captured | not captured | llm (not captured) | dkae409-T1:row15:col4 |
 | k ada × 1000 — 95% CI | `Q49` · not captured | 0.033 | not captured | not captured | llm (not captured) | dkae409-T1:row15:col5 |
 | k d,k — Value | `Q331` · not captured | 0.526 | mg/L | not captured | llm (not captured) | dkae409-T1:row23:col4 |
@@ -25,7 +25,6 @@ Hernández-Lozano I; Aranzana-Climent V; Cao S; Matias C; Ulf Hansen J; Liepinsh
 | k ada,k — Value | `Q49` · not captured | 0.031 | not captured | not captured | llm (not captured) | dkae409-T1:row27:col4 |
 | k ada,k — 95% CI | `Q49` · not captured | 0.006 | not captured | not captured | llm (not captured) | dkae409-T1:row27:col5 |
 | B max,k — Value | `Q332` · not captured | 6.49 | not captured | not captured | llm (not captured) | dkae409-T1:row28:col4 |
-| k d,b — Value | `Q331` · not captured | 1.16 | mg/L | not captured | llm (not captured) | dkae409-T1:row34:col4 |
 | k d,b — 95% CI | `Q331` · not captured | 0.85 | mg/L | not captured | llm (not captured) | dkae409-T1:row34:col5 |
 | k ada,b — 95% CI | `Q49` · not captured | 0.43 | not captured | not captured | llm (not captured) | dkae409-T1:row38:col5 |
 | B max,b — Value | `Q332` · not captured | 7.07 | not captured | not captured | llm (not captured) | dkae409-T1:row39:col4 |
@@ -54,9 +53,7 @@ No bundles have been generated for this record yet. When the engineer emits them
 
 ## Web simulation
 
-> 🚧 Not yet wired up — this tab will host an in-browser run of the model above, with editable parameters and dosing.
-
-The simulator will be built on **bodylight.js**, which compiles a model to WebAssembly and drives it from the page, so a simulation runs entirely in the browser with nothing to install: <https://bodylight.physiome.cz/>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

@@ -1,0 +1,212 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;dacarbazine&quot;}]"></div>
+
+# dacarbazine
+
+- **generic name:** dacarbazine
+- **ATC codes:** `L01AX04`
+- **DrugBank:** [DB00851](https://go.drugbank.com/drugs/DB00851)
+- **groups:** approved, investigational
+
+## About
+
+**Description.** An antineoplastic agent. It has significant activity against melanomas. (from Martindale, The Extra Pharmacopoeia, 31st ed, p564). Dacarbazine with Oblimersen is in clinical trials for the treatment of malignant melanoma.
+
+**Indication.** For the treatment of metastatic malignant melanoma. In addition, dacarbazine is also indicated for Hodgkin's disease as a secondary-line therapy when used in combination with other antineoplastic agents.
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-15 04:14 | 11:54 | 0/1/0 | 5/2/0 | 0/0/4 | 103,366/5,723 | ollama / qwen3.8:27b-mtp-q8_0 | 44 | 32/12 | 21/23 | 0 |
+
+## popPK records
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Buesa_1991](drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference.md) | Buesa JM et al., Clinical pharmacokinetics of high-dose…, Cancer chemotherapy and pha… (1991) | [10.1007/BF00685826](https://doi.org/10.1007/BF00685826) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Amirmostofian_2013](drugs/drug_dacarbazine/pd_Amirmostofian_2013_EC50.md) | Amirmostofian M et al., Synthesis and Molecular-cellular Mechan…, Iranian journal of pharmace… (2013) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Amirmostofian_2013](drugs/drug_dacarbazine/pd_Amirmostofian_2013_unknown.md) | Amirmostofian M et al., Synthesis and Molecular-cellular Mechan…, Iranian journal of pharmace… (2013) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Hafeez_2017](drugs/drug_dacarbazine/pd_Hafeez_2017_IC50.md) | Hafeez A et al., Dacarbazine nanoparticle topical delive…, Scientific reports (2017) | [10.1038/s41598-017-16878-1](https://doi.org/10.1038/s41598-017-16878-1) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Osieka_1984](drugs/drug_dacarbazine/pd_Osieka_1984_GD.md) | Osieka R, Primary and acquired resistance to anti…, Cancer (1984) | [10.1002/1097-0142(19840915)54:1+&lt;1168::aid-cncr2820541313&gt;3.0.co;2-z](https://doi.org/10.1002/1097-0142(19840915)54:1+&lt;1168::aid-cncr2820541313&gt;3.0.co;2-z) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Osieka_1984](drugs/drug_dacarbazine/pd_Osieka_1984_TV.md) | Osieka R, Primary and acquired resistance to anti…, Cancer (1984) | [10.1002/1097-0142(19840915)54:1+&lt;1168::aid-cncr2820541313&gt;3.0.co;2-z](https://doi.org/10.1002/1097-0142(19840915)54:1+&lt;1168::aid-cncr2820541313&gt;3.0.co;2-z) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Piotrowska_2019](drugs/drug_dacarbazine/pd_Piotrowska_2019_cell_cycle_distribution.md) | Piotrowska A et al., Vitamin D and its low calcemic analogs…, International journal of on… (2019) | [10.3892/ijo.2019.4725](https://doi.org/10.3892/ijo.2019.4725) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Piotrowska_2019](drugs/drug_dacarbazine/pd_Piotrowska_2019_gene_expression.md) | Piotrowska A et al., Vitamin D and its low calcemic analogs…, International journal of on… (2019) | [10.3892/ijo.2019.4725](https://doi.org/10.3892/ijo.2019.4725) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Piotrowska_2019](drugs/drug_dacarbazine/pd_Piotrowska_2019_mitochondrial_membrane_potential.md) | Piotrowska A et al., Vitamin D and its low calcemic analogs…, International journal of on… (2019) | [10.3892/ijo.2019.4725](https://doi.org/10.3892/ijo.2019.4725) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Piotrowska_2019](drugs/drug_dacarbazine/pd_Piotrowska_2019_proliferation.md) | Piotrowska A et al., Vitamin D and its low calcemic analogs…, International journal of on… (2019) | [10.3892/ijo.2019.4725](https://doi.org/10.3892/ijo.2019.4725) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Piotrowska_2019](drugs/drug_dacarbazine/pd_Piotrowska_2019_reactive_oxygen_species.md) | Piotrowska A et al., Vitamin D and its low calcemic analogs…, International journal of on… (2019) | [10.3892/ijo.2019.4725](https://doi.org/10.3892/ijo.2019.4725) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Tabandeh_2025](drugs/drug_dacarbazine/pd_Tabandeh_2025_BRAF_gene_expression.md) | Tabandeh F et al., Investigating therapeutic efficacy of d…, Iranian journal of basic me… (2025) | [10.22038/ijbms.2025.84187.18208](https://doi.org/10.22038/ijbms.2025.84187.18208) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Tabandeh_2025](drugs/drug_dacarbazine/pd_Tabandeh_2025_CASP3_gene_expression.md) | Tabandeh F et al., Investigating therapeutic efficacy of d…, Iranian journal of basic me… (2025) | [10.22038/ijbms.2025.84187.18208](https://doi.org/10.22038/ijbms.2025.84187.18208) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Tabandeh_2025](drugs/drug_dacarbazine/pd_Tabandeh_2025_PIK3R3_gene_expression.md) | Tabandeh F et al., Investigating therapeutic efficacy of d…, Iranian journal of basic me… (2025) | [10.22038/ijbms.2025.84187.18208](https://doi.org/10.22038/ijbms.2025.84187.18208) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Tabandeh_2025](drugs/drug_dacarbazine/pd_Tabandeh_2025_apoptosis.md) | Tabandeh F et al., Investigating therapeutic efficacy of d…, Iranian journal of basic me… (2025) | [10.22038/ijbms.2025.84187.18208](https://doi.org/10.22038/ijbms.2025.84187.18208) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Tabandeh_2025](drugs/drug_dacarbazine/pd_Tabandeh_2025_cell_viability.md) | Tabandeh F et al., Investigating therapeutic efficacy of d…, Iranian journal of basic me… (2025) | [10.22038/ijbms.2025.84187.18208](https://doi.org/10.22038/ijbms.2025.84187.18208) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Abid_2024](drugs/drug_dacarbazine/pd_Abid_2024_cell_viability.md) | Abid I et al., The Synthesis of 2'-Hydroxychalcones un…, Molecules (Basel, Switzerla… (2024) | [10.3390/molecules29081819](https://doi.org/10.3390/molecules29081819) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Filippi_2026](drugs/drug_dacarbazine/pd_Filippi_2026_DNA_damage_tail_moment.md) | Filippi S et al., Repurposing Alkylating Agents in Melano…, Cancers (2026) | [10.3390/cancers18040647](https://doi.org/10.3390/cancers18040647) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Filippi_2026](drugs/drug_dacarbazine/pd_Filippi_2026_apoptosis.md) | Filippi S et al., Repurposing Alkylating Agents in Melano…, Cancers (2026) | [10.3390/cancers18040647](https://doi.org/10.3390/cancers18040647) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Filippi_2026](drugs/drug_dacarbazine/pd_Filippi_2026_cell_cycle_distribution.md) | Filippi S et al., Repurposing Alkylating Agents in Melano…, Cancers (2026) | [10.3390/cancers18040647](https://doi.org/10.3390/cancers18040647) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Filippi_2026](drugs/drug_dacarbazine/pd_Filippi_2026_cell_viability.md) | Filippi S et al., Repurposing Alkylating Agents in Melano…, Cancers (2026) | [10.3390/cancers18040647](https://doi.org/10.3390/cancers18040647) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP1A1** | `Q1` · Km | metabolism | [Lewis_2016](drugs/drug_dacarbazine/pgx_Lewis_2016_CYP1A1_Q1.md) | Lewis BC et al., Impaired dacarbazine activation and 7-e…, Pharmacogenetics and genomi… (2016) | [10.1097/FPC.0000000000000236](https://doi.org/10.1097/FPC.0000000000000236) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP1A2** | `Q1` · Km | metabolism | [Lewis_2016](drugs/drug_dacarbazine/pgx_Lewis_2016_CYP1A2_Q1.md) | Lewis BC et al., Impaired dacarbazine activation and 7-e…, Pharmacogenetics and genomi… (2016) | [10.1097/FPC.0000000000000236](https://doi.org/10.1097/FPC.0000000000000236) |
+
+<details class="legend">
+<summary>What the PGx columns mean</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 142 matched, 106 returned
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full text wanted
+
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Adkins_1993.pdf` | Adkins DR et al., A phase I clinical and pharmacological…, Investigational new drugs (1993) | popPK | 10 | [10.1007/BF00874151](https://doi.org/10.1007/BF00874151) | [8262729](https://pubmed.ncbi.nlm.nih.gov/8262729) | The abstract explicitly reports quantitative pharmacokinetic parameters for dacarbazine, including clearance (10.6 L/hr/m2), volume of distribution (37.5 L/m2), and half-life (3 hours). |
+| `Demir_2020.pdf` | Demir Y et al., Molecular Docking Studies and Inhibitio…, Anti-cancer agents in medic… (2020) | pd | 4 | [10.2174/1871520620666200218110645](https://doi.org/10.2174/1871520620666200218110645) | [32067621](https://www.ncbi.nlm.nih.gov/pubmed/32067621) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-09-15T04:11:56.437847+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abid_2024 | irrelevant | 0 | 0 | The paper is a study on the synthesis and biological activity of chalcones, where dacarbazine is used only as a reference drug for cytotoxicity comparison (IC50), not as a subject of pharmacokinetic analysis. |
+| PD | Adkins_1993 | not_relevant | 2 | 1 | The paper reports PK parameters and qualitative dose-limiting toxicity/MRD data, but does not provide a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50) for efficacy or toxicity. |
+| popPK | Akkemik_2010 | irrelevant | 0 | 0 | The study is an in-vitro enzyme inhibition assay measuring Ki values, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Akkemik_2010_2 | irrelevant | 0 | 0 | The study is an in-vitro enzyme inhibition assay, not a pharmacokinetic study, and reports no disposition parameters for dacarbazine. |
+| PGx | Altés_2013 | not_relevant | 2 | 5 | The paper reports associations between genotypes and clinical outcomes (response rate, survival), not direct changes in pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Amano_2017 | not_relevant | 0 | 0 | The paper discusses APC genotype-phenotype correlations for tumor development and general chemotherapy outcomes, but does not report pharmacogenomic effects on the PK or PD parameters of dacarbazine. |
+| popPK | Amirmostofian_2013 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on cytotoxicity and ROS generation in hepatocytes, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Ataabadi_2023 | irrelevant | 0 | 0 | The study focuses on in-vitro nanoparticle formulation, drug release, and cytotoxicity, reporting no pharmacokinetic parameters such as clearance or volume of distribution. |
+| PD | Ataabadi_2023 | not_relevant | 3 | 2 | The paper reports a single IC50 value for a nanoparticle formulation in vitro, which is a static potency metric rather than a dynamic exposure-response or dose-response relationship with derivable PD parameters like Emax or slope. |
+| popPK | Augustine_2009 | irrelevant | 0 | 0 | The study is an in-vitro genomic profiling study of temozolomide sensitivity in cell lines, with dacarbazine mentioned only as a comparator standard of care, and no pharmacokinetic parameters are reported. |
+| PD | Augustine_2009 | not_relevant | 0 | 0 | The paper focuses on temozolomide in melanoma cell lines and only mentions dacarbazine as a standard of care without providing any pharmacodynamic data or parameters for it. |
+| PGx | Biteghe_2017 | not_relevant | 0 | 0 | The study investigates the cytotoxic effects of dacarbazine and photodynamic therapy on melanoma cell lines but does not report any pharmacogenomic effects (gene variants/genotypes) on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Biteghe_2020 | not_relevant | 0 | 0 | The paper investigates cellular resistance mechanisms (ABC transporters) and treatment efficacy in melanoma cell lines, but does not report pharmacogenomic effects of specific gene variants on PK or PD parameters. |
+| PGx | Boeckmann_2009 | not_relevant | 4 | 5 | The study reports associations between gene variants and clinical outcomes (hematologic side effects and treatment response), but does not report changes in specific pharmacokinetic (PK) or pharmacodynamic (PD) parameters (e.g., AUC, Cmax, tumor shrinkage rate). |
+| popPK | Bragta_2018 | irrelevant | 0 | 0 | The study focuses on carboplatin nanoparticles, and dacarbazine is only mentioned as a clinical comparator in the background without any pharmacokinetic data. |
+| PD | Bragta_2018 | not_relevant | 0 | 0 | The paper investigates carboplatin nanoparticles, not dacarbazine; dacarbazine is only mentioned as a historical comparator in the background. |
+| popPK | Budach_1994 | irrelevant | 0 | 0 | The study is an in-vivo xenograft chemosensitivity assay measuring tumor growth delay, not a pharmacokinetic study reporting disposition parameters for dacarbazine. |
+| PD | Budach_1994 | not_relevant | 2 | 1 | The paper reports single-dose efficacy and qualitative dose-response curve shapes for toxicity correction, but does not provide numeric PD parameters (Emax, EC50) or a quantitative concentration-effect model for dacarbazine. |
+| PGx | Cordova_2017 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction involving vinblastine and antiretrovirals, not a pharmacogenomic effect on dacarbazine. |
+| popPK | Coskun_2024 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of electrochemotherapy efficacy on cell lines and does not report pharmacokinetic parameters for dacarbazine. |
+| popPK | Demir_2020 | irrelevant | 0 | 0 | The paper focuses on molecular docking and inhibition properties of antineoplastic agents against Paraoxonase-I, not on the pharmacokinetic disposition parameters of dacarbazine. |
+| PD | Demir_2020 | not_relevant | 0 | 0 | The paper focuses on molecular docking and inhibition of Paraoxonase-I by antineoplastic agents, not on pharmacodynamic exposure-response or dose-response relationships for dacarbazine in a biological or clinical context. |
+| popPK | Didolkar_1996 | relevant | 9 | 2 | The paper is a compartmental pharmacokinetic study of dacarbazine, but specific numeric parameter values (CL, V, Q) are not listed in the text, appearing only in figures or implied by model fits. |
+| popPK | Dorostgou_2025 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of parthenolide where dacarbazine is only used as a comparator for synergy, with no pharmacokinetic parameters reported. |
+| PD | Dorostgou_2025 | not_relevant | 0 | 0 | The paper focuses on parthenolide; dacarbazine is only mentioned in the context of a synergy assay without reporting specific dose-response curves or PD parameters for dacarbazine itself. |
+| popPK | Dorr_1987 | irrelevant | 0 | 0 | The study focuses on the effect of light exposure on dacarbazine's antitumor activity and skin toxicity in mice, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Duarte_2025 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic investigation of cytotoxicity and apoptosis, not a pharmacokinetic study, and reports no disposition parameters. |
+| PD | Duarte_2025 | not_relevant | 3 | 0 | The paper describes a qualitative synergistic pharmacodynamic interaction in cell lines but does not provide numeric PD parameters (e.g., IC50, Emax) or an extractable concentration-effect curve in the provided text. |
+| PGx | Eder_1999 | not_relevant | 0 | 0 | The paper focuses on intraindividual variations of DNA adduct levels due to environmental exposures (PAHs, styrene) and does not report pharmacogenomic effects on the PK/PD of dacarbazine. |
+| PGx | Esimbekova_2023 | not_relevant | 0 | 0 | The study investigates dacarbazine-induced cell cycle changes and gene expression in melanoma cell lines but does not report pharmacogenomic effects of specific genetic variants on PK or PD parameters. |
+| PGx | Ezzat_2012 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (protease inhibitors and vinblastine) and toxicity in HIV patients, not pharmacogenomic effects on dacarbazine. |
+| popPK | Filippi_2026 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on DNA repair and chemosensitivity (IC50, cell cycle) and does not report pharmacokinetic parameters for dacarbazine. |
+| popPK | Franzese_2017 | irrelevant | 0 | 0 | The paper is a review on tumor immunotherapy and drug-induced xenogenization, containing no pharmacokinetic parameters for dacarbazine. |
+| PD | Franzese_2017 | not_relevant | 1 | 0 | The paper is a review describing the qualitative mechanism of drug-induced xenogenization (mutagenesis) and immune response, lacking any quantitative exposure-response or dose-response modeling with numeric PD parameters. |
+| PGx | Gao_2023 | not_relevant | 0 | 0 | The paper reports pharmacokinetics and drug-drug interactions (CYP1A2 inhibition/induction by unesbulin) but does not report any pharmacogenomic effects (gene variants/genotypes) on dacarbazine PK/PD. |
+| popPK | Garaci_2007 | irrelevant | 0 | 0 | The paper is a review of thymosin alpha 1 immunotherapy where dacarbazine is only mentioned as a co-administered chemotherapy agent, with no pharmacokinetic parameters reported. |
+| PD | Garaci_2007 | not_relevant | 0 | 0 | The paper is a review of Thymosin Alpha 1 and only mentions dacarbazine as a chemotherapy agent in clinical trials without providing any pharmacodynamic data, exposure-response analysis, or numeric PD parameters for dacarbazine. |
+| PGx | Garaci_2007 | not_relevant | 0 | 0 | The paper discusses the use of Thymosin Alpha 1 in combination with dacarbazine but does not report any pharmacogenomic effects on the PK or PD parameters of dacarbazine. |
+| popPK | Gibb_2013 | irrelevant | 0 | 0 | The study focuses on dose escalation of doxorubicin and pharmacodynamic biomarkers (nDNA, CK18) in ABVD, with no pharmacokinetic parameters reported for dacarbazine. |
+| PD | Gibb_2013 | not_relevant | 0 | 0 | The study investigates dose escalation of doxorubicin, not dacarbazine, and reports toxicity/biomarker data without a formal pharmacodynamic model or numeric PD parameters for dacarbazine. |
+| popPK | Gonçalves_2020 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of flavonoids where dacarbazine is used only as a comparator agent for chemosensitization, with no pharmacokinetic parameters reported. |
+| PD | Gonçalves_2020 | not_relevant | 2 | 2 | The paper reports a single IC50 value for dacarbazine in a combination assay to demonstrate sensitization, but does not provide a dose-response curve, concentration-effect relationship, or PK/PD model parameters for dacarbazine itself. |
+| PGx | Greaves_2012 | not_relevant | 0 | 0 | The paper reports an association between ABCC1 expression and treatment failure (clinical outcome), not a change in a specific pharmacokinetic or pharmacodynamic parameter of dacarbazine. |
+| popPK | Hafeez_2017 | irrelevant | 0 | 0 | The paper is a formulation and in-vitro study (nanoparticle preparation, release, cytotoxicity) that does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for dacarbazine. |
+| popPK | Hajimoradi_2022 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of the Hippo pathway where dacarbazine is used only as a comparator agent, with no pharmacokinetic parameters reported. |
+| PD | Hajimoradi_2022 | not_relevant | 1 | 0 | The paper focuses on the mechanism of metformin on the Hippo pathway; dacarbazine is only used as a reference concentration (IC50) without reporting its specific numeric PD parameters or dose-response curve. |
+| popPK | Hoelzer_1986 | irrelevant | 0 | 0 | The paper is a clinical case report describing a dose-response relationship and therapeutic outcome, not a pharmacokinetic study reporting quantitative disposition parameters. |
+| PD | Hoelzer_1986 | not_relevant | 2 | 0 | The paper describes a qualitative clinical observation of dose-response (hepatic artery vs. systemic) in a single patient but provides no numeric concentration-effect data, PK/PD parameters, or quantitative dose-response curve. |
+| popPK | Ishibashi_2012 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of lipophilic vitamins on melanoma cells where dacarbazine serves only as a comparator agent, and no pharmacokinetic parameters are reported. |
+| PD | Ishibashi_2012 | not_relevant | 1 | 0 | The paper mentions dacarbazine only as a reference for resistance and notes it had non-significant effects, without providing any numeric PD parameters or dose-response curve for dacarbazine. |
+| popPK | Iwamoto_2007 | irrelevant | 0 | 0 | The paper focuses on vancomycin pharmacokinetics and the molecular mechanism of dacarbazine phototoxicity (DNA damage), not on the pharmacokinetic disposition parameters of dacarbazine. |
+| PD | Iwamoto_2007 | not_relevant | 0 | 0 | The paper mentions dacarbazine only in the context of identifying the mechanism of photogenotoxicity (DNA damage sites), without reporting any pharmacokinetic, pharmacodynamic, or exposure-response data. |
+| popPK | Jernigan_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of PTC596, and dacarbazine is only mentioned as a co-administered comparator agent in preclinical efficacy studies without any PK parameter reporting. |
+| PD | Jernigan_2021 | not_relevant | 0 | 0 | The paper focuses on PTC596; dacarbazine is only mentioned as a combination partner in preclinical models without any specific pharmacodynamic or exposure-response analysis for dacarbazine itself. |
+| PGx | Kantrowitz-Gordon_2018 | not_relevant | 0 | 0 | The paper reports pharmacokinetics of dacarbazine in pregnancy, which is a physiological state, not a pharmacogenomic effect (gene variant/genotype). |
+| popPK | Karakaya_2018 | irrelevant | 0 | 0 | The paper is an in-vitro cytotoxicity study where dacarbazine is used only as a control agent, and no pharmacokinetic parameters are reported. |
+| PD | Karakaya_2018 | not_relevant | 0 | 0 | The paper reports IC50 values for kojic acid derivatives and mentions dacarbazine only as a control agent without providing specific numeric PD parameters or exposure-response data for dacarbazine. |
+| popPK | Keohan_1997 | irrelevant | 0 | 0 | The paper is a clinical review of chemotherapy decisions for sarcoma and contains no pharmacokinetic data or quantitative disposition parameters for dacarbazine. |
+| PD | Keohan_1997 | not_relevant | 1 | 0 | The text is a qualitative review that mentions dacarbazine's activity in specific sarcomas but provides no numeric PD parameters, dose-response curves, or exposure-response data. |
+| popPK | Kumar_2006 | irrelevant | 0 | 0 | The study investigates the toxicological effects of dacarbazine on testicular function in mice and does not report any pharmacokinetic parameters. |
+| PD | Kumar_2006 | not_relevant | 2 | 1 | The study reports qualitative dose-response observations and correlations between biomarkers, but explicitly states there was no particular dose-response and provides no numeric PD parameters (Emax, EC50) or concentration-effect curves. |
+| popPK | Kusabe_2015 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of temozolomide's effect on sarcoma cell lines, with dacarbazine mentioned only as a background comparator, and no pharmacokinetic parameters are reported. |
+| popPK | Kuzmits_1986 | irrelevant | 0 | 0 | The paper is an in-vitro study measuring intracellular ATP concentrations in cell lines, not a pharmacokinetic study reporting disposition parameters for dacarbazine. |
+| popPK | Kyrtopoulos_1995 | irrelevant | 0 | 0 | The paper is a review of DNA repair mechanisms and genotoxicity, not a pharmacokinetic study, and contains no quantitative PK parameters for dacarbazine. |
+| PD | Kyrtopoulos_1995 | not_relevant | 1 | 0 | The text is a review abstract that qualitatively mentions dose-response relationships for dacarbazine in previous studies but does not present or derive any numeric PD parameters or curves in this specific text. |
+| PGx | Le_2009 | not_relevant | 0 | 0 | The paper is a bibliographic review of clinical trials for soft tissue sarcoma and does not report pharmacogenomic effects on PK/PD parameters for dacarbazine. |
+| PGx | Lewis_2011 | not_relevant | 0 | 0 | The paper reports in vitro kinetic parameters of engineered CYP1A1 mutants, not the effect of human genetic variants on in vivo pharmacokinetics or pharmacodynamics. |
+| PGx | Lewis_2013 | not_relevant | 0 | 0 | The paper describes in vitro engineering of CYP1A1 mutants for GDEPT, not the effect of natural human genetic variants on the PK/PD of dacarbazine. |
+| popPK | Lin_2025 | irrelevant | 0 | 0 | The paper focuses on the synthesis and in-vitro/in-vivo efficacy of a novel dacarbazine derivative (HIT-1) and its delivery system, without reporting quantitative pharmacokinetic parameters (CL, V, etc.) for dacarbazine itself. |
+| PGx | Long_2001 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (inhibition of CYP enzymes by O6-benzylguanine) and does not report any genetic variants or pharmacogenomic effects on dacarbazine PK/PD. |
+| popPK | Lyu_2021 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CDK4/TERT amplification and drug synergy, not a pharmacokinetic study, and dacarbazine is used only as a co-administered agent. |
+| PGx | Mizoi_2020 | not_relevant | 0 | 0 | The paper evaluates CYP1A2 induction by omeprazole in a hepatocyte model, not the effect of a specific gene variant or genotype on dacarbazine pharmacokinetics or pharmacodynamics. |
+| popPK | Navarro_2018 | irrelevant | 0 | 0 | The study evaluates the anticarcinogenic activity of AMS35AA using dacarbazine only as a positive control/comparator, and reports no pharmacokinetic parameters for dacarbazine. |
+| PD | Navarro_2018 | not_relevant | 0 | 0 | The paper studies a novel compound (AMS35AA) and only mentions dacarbazine as a qualitative comparator for tumor volume reduction, without providing any PK/PD data or numeric parameters for dacarbazine. |
+| popPK | Olszewska-Słonina_2007 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cytostatic effects on melanoma cells and does not report any pharmacokinetic parameters for dacarbazine. |
+| PD | Olszewska-Słonina_2007 | not_relevant | 1 | 0 | The paper only qualitatively reports the effect of dacarbazine at a fixed EC50 concentration on melanin content and apoptosis, without providing numeric PD parameters, dose-response curves, or PK/PD modeling. |
+| popPK | Osieka_1984 | irrelevant | 0 | 0 | The paper is a preclinical tumor xenograft study focusing on dose-response relationships and resistance, not a pharmacokinetic study reporting disposition parameters like clearance or volume for dacarbazine. |
+| popPK | Pinho_2024 | irrelevant | 0 | 0 | The study focuses on a gold-based complex (ST004) and uses dacarbazine only as a positive control for efficacy, without reporting any pharmacokinetic parameters for dacarbazine. |
+| PD | Pinho_2024 | not_relevant | 2 | 1 | The paper reports a single EC50 value (&gt;100 µM) for dacarbazine as a benchmark in in vitro assays, but does not provide a dose-response curve, PK/PD model, or exposure-response analysis for dacarbazine. |
+| popPK | Piotrowska_2019 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vitamin D analogs modulating dacarbazine efficacy in cell lines, reporting no pharmacokinetic parameters. |
+| popPK | Piperno-Neumann_2016 | irrelevant | 0 | 0 | The paper is a clinical trial of bevacizumab and temozolomide where dacarbazine is only mentioned as a comparator or in preclinical context, and no pharmacokinetic parameters for dacarbazine are reported. |
+| PD | Piperno-Neumann_2016 | not_relevant | 0 | 0 | The paper is a Phase II clinical trial evaluating the efficacy and safety of bevacizumab plus temozolomide; it does not report any pharmacokinetic or pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for dacarbazine or any other drug. |
+| PGx | Piperno-Neumann_2016 | not_relevant | 0 | 0 | The paper studies the pharmacodynamics of bevacizumab (not dacarbazine) and reports that VEGF-A polymorphisms were not correlated with toxicity or survival. |
+| PGx | Reid_1999 | not_relevant | 2 | 5 | The paper identifies the specific CYP enzymes (CYP1A1, CYP1A2, CYP2E1) responsible for dacarbazine metabolism but does not report pharmacogenomic effects of specific gene variants or genotypes on PK/PD parameters. |
+| popPK | Ribas_2007 | irrelevant | 0 | 0 | The paper focuses on tremelimumab, and dacarbazine is only mentioned as a comparator in clinical trials, with no PK parameters reported. |
+| PD | Ribas_2007 | not_relevant | 0 | 0 | The text is a summary of tremelimumab and mentions dacarbazine only as a comparator in clinical trials, providing no pharmacodynamic or exposure-response data for dacarbazine. |
+| popPK | Rojo_1983 | irrelevant | 0 | 0 | The study is an in-vitro immunological assay measuring IC50 values for lymphoblastic response, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Rubinstein_2018 | not_relevant | 0 | 0 | The paper reports safety and efficacy of a chemotherapy regimen in HIV patients but does not report pharmacogenomic effects on PK or PD parameters. |
+| PGx | Rubinstein_2023 | not_relevant | 0 | 0 | The paper reports clinical outcomes (PFS, OS, safety) of a chemotherapy regimen in HIV patients but does not report pharmacogenomic effects on PK or PD parameters. |
+| popPK | Sanborn_1992 | irrelevant | 0 | 0 | The study focuses on the antimetastatic efficacy of dacarbazine in a murine model and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PD | Sanborn_1992 | not_relevant | 4 | 2 | The paper reports a qualitative dose-response relationship (high doses required) but does not provide specific numeric PD parameters (e.g., ED50, Emax) or a quantitative concentration-effect curve in the provided text. |
+| PGx | Sawada_2024 | not_relevant | 0 | 0 | The paper investigates the effects of temozolomide on tumor mutation burden and microsatellite instability in melanoma cells, not the pharmacokinetics or pharmacodynamics of dacarbazine. |
+| PGx | Schadendorf_2006 | not_relevant | 0 | 0 | The paper is a clinical trial comparing dacarbazine to dendritic cell vaccination and does not report pharmacogenomic effects on PK or PD parameters. |
+| popPK | Specenier_2019 | irrelevant | 0 | 0 | The paper is a review of nab-paclitaxel in melanoma where dacarbazine is only a comparator agent, and no pharmacokinetic parameters for dacarbazine are reported. |
+| PD | Specenier_2019 | not_relevant | 1 | 0 | The paper is a narrative review of nab-paclitaxel in melanoma and does not report specific numeric pharmacodynamic parameters or exposure-response relationships for dacarbazine. |
+| popPK | Steffens_1991 | irrelevant | 0 | 0 | The paper is a clinical efficacy and toxicity study of a chemotherapy regimen, not a pharmacokinetic study, and reports no disposition parameters for dacarbazine. |
+| PD | Steffens_1991 | not_relevant | 1 | 0 | The paper is a Phase II clinical trial reporting clinical response rates and toxicity, with no pharmacokinetic data, concentration-effect analysis, or numeric PD parameters for dacarbazine. |
+| popPK | Suri_2020 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for brentuximab vedotin, not dacarbazine. |
+| popPK | Tabandeh_2025 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cytotoxicity and gene expression in cell lines, reporting no pharmacokinetic parameters for dacarbazine. |
+| popPK | Tarhini_2007 | irrelevant | 0 | 0 | The paper is a review of oblimersen (a Bcl-2 antisense compound) and dacarbazine is only a comparator/co-administered agent, with no quantitative PK parameters reported for dacarbazine. |
+| PD | Tarhini_2007 | not_relevant | 2 | 1 | The paper is a review of oblimersen (an antisense oligonucleotide) and its combination with dacarbazine; it does not report a pharmacodynamic model or numeric exposure-response parameters for dacarbazine itself. |
+| PGx | Thakkar_2018 | not_relevant | 0 | 0 | The study reports allele frequencies and association with Hodgkin lymphoma risk, but does not measure or report any pharmacokinetic or pharmacodynamic parameters of dacarbazine. |
+| popPK | Tsai_2013 | irrelevant | 0 | 0 | The paper is a review of vemurafenib where dacarbazine serves only as a clinical comparator, and no pharmacokinetic parameters for dacarbazine are reported. |
+| PD | Tsai_2013 | not_relevant | 1 | 0 | The paper is a review of vemurafenib that mentions dacarbazine only as a historical comparator in clinical trials, providing no pharmacodynamic or exposure-response data for dacarbazine. |
+| popPK | Uchimura_2022 | irrelevant | 0 | 0 | The paper focuses on brentuximab vedotin, not dacarbazine, and does not report any pharmacokinetic parameters for the target drug. |
+| PD | Uchimura_2022 | not_relevant | 0 | 0 | The paper is a case report on brentuximab vedotin, not dacarbazine, and contains no pharmacodynamic or exposure-response data. |
+| popPK | Vadhan-Raj_1994 | irrelevant | 0 | 0 | The study focuses on the hematologic effects of PIXY321 on chemotherapy-induced myelosuppression and does not report pharmacokinetic parameters for dacarbazine. |
+| PD | Vadhan-Raj_1994 | not_relevant | 2 | 1 | The paper reports a dose-response relationship for PIXY321 (a growth factor) on hematologic recovery, not a pharmacodynamic model for dacarbazine itself. |
+| popPK | Wang_2022 | irrelevant | 0 | 0 | The paper is an in-vitro cytotoxicity study where dacarbazine is used only as a positive control comparator, with no pharmacokinetic parameters reported. |
+| PD | Wang_2022 | not_relevant | 2 | 2 | The paper reports a single IC50 value for dacarbazine as a positive control in a cytotoxicity assay, but does not provide a full dose-response curve, Emax, or any other numeric PD parameters sufficient to derive a pharmacodynamic relationship. |
+| popPK | Wang_2023 | irrelevant | 0 | 0 | The paper describes a drug delivery system and in vitro/in vivo efficacy of dacarbazine, but does not report pharmacokinetic disposition parameters such as clearance, volume, or half-life. |
+| PGx | Warr_2012 | not_relevant | 0 | 0 | The paper is a review on antiemetic management for chemotherapy and does not report pharmacogenomic effects on the PK or PD of dacarbazine. |
+| PGx | Wouters_2013 | not_relevant | 0 | 0 | The paper investigates the side population (SP) of melanoma cells and their intrinsic resistance to dacarbazine, but does not report a pharmacogenomic effect (gene variant/genotype) on PK or PD parameters. |
+| popPK | Xu-Welliver_1999 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of AGT protein mutations and their resistance to the inhibitor O6-benzylguanine, not a pharmacokinetic study of dacarbazine. |
+| PD | Xu-Welliver_1999 | not_relevant | 0 | 0 | The paper reports in vitro biochemical EC50 values for the inhibitor O6-benzylguanine against AGT mutants, not a pharmacodynamic exposure-response or dose-response relationship for the drug dacarbazine. |
+| PGx | Yamagata_1998 | not_relevant | 0 | 0 | The study investigates enzyme induction in rat liver microsomes, not the effect of a specific gene variant or genotype on pharmacokinetics or pharmacodynamics. |
+| PGx | Yang_2009 | not_relevant | 0 | 0 | The study investigates a gene-directed enzyme prodrug therapy (GDEPT) strategy using exogenous CYP1A2 expression to activate dacarbazine, rather than reporting a pharmacogenomic effect of a native genetic variant on the drug's PK or PD parameters. |
+| popPK | Yasuda_2022 | irrelevant | 0 | 0 | The paper is a review of treatment recommendations for Hodgkin lymphoma patients on hemodialysis and does not report original quantitative pharmacokinetic parameters for dacarbazine. |
+| PD | Yasuda_2022 | not_relevant | 1 | 0 | The paper is a clinical review providing dosing recommendations for hemodialysis patients and explicitly states that pharmacodynamic studies are lacking; it does not report any numeric PD parameters or exposure-response relationships. |
+| popPK | Zalupski_1991 | irrelevant | 0 | 0 | The paper is a Phase III clinical trial comparing dosing schedules for efficacy and toxicity, reporting no pharmacokinetic parameters for dacarbazine. |
+| PD | Zalupski_1991 | not_relevant | 1 | 0 | The paper reports clinical response rates and a qualitative "weak" dose-response relationship for doxorubicin, but provides no numeric PD parameters, concentration-effect curves, or PK/PD modeling for dacarbazine. |
+| popPK | Zhou_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of brentuximab vedotin (and its payload MMAE), with dacarbazine serving only as a co-administered chemotherapy agent in the AVD regimen. |
+| PD | Zhou_2025 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics and exposure-response relationship for brentuximab vedotin (and its payload MMAE), not dacarbazine; dacarbazine is only mentioned as a concurrent chemotherapy agent. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_dacarbazine`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

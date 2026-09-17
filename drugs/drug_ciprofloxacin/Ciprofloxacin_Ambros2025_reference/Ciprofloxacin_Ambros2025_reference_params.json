@@ -1,0 +1,26 @@
+{
+ "model_id": "Ciprofloxacin_Ambros2025_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.575e-05,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0006500000000000001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.00011965811965811965,
+  "k21": 2.7483313702394977e-05,
+  "ka": 6.944444444444444e-05,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 4.207726072630706e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

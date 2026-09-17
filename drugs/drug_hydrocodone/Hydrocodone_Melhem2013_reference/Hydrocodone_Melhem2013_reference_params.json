@@ -1,0 +1,26 @@
+{
+ "model_id": "Hydrocodone_Melhem2013_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.786111111111111e-05,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.010185714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 3.5063113604488084e-07,
+  "k21": 1.6339869281045755e-06,
+  "ka": 0.0006333333333333333,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.00011026428580530537
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

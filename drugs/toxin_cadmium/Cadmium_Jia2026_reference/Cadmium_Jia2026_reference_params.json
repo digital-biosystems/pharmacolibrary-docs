@@ -1,0 +1,24 @@
+{
+ "model_id": "Cadmium_Jia2026_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.077777777777778e-06,
+  "F": 1.0,
+  "Tlag": 4428.0,
+  "VdPerKg": 6.785714285714286e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 3.888888888888889e-05,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.02185836622530387
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

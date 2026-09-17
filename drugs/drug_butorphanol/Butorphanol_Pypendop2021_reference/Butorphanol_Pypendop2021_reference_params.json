@@ -1,0 +1,24 @@
+{
+ "model_id": "Butorphanol_Pypendop2021_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.1466666666666662e-05,
+  "F": 1.0,
+  "VdPerKg": 0.00023099999999999995,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.01228715728715729,
+  "k21": 0.0025944546008531385,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 1.3873147393928738e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

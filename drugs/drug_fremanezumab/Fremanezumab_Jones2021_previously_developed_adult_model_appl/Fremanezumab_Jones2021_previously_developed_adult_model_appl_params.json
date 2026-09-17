@@ -1,0 +1,26 @@
+{
+ "model_id": "Fremanezumab_Jones2021_previously_developed_adult_model_appl",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.0439814814814816e-09,
+  "F": 0.658,
+  "Tlag": 6937.92,
+  "VdPerKg": 2.6857142857142857e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 1.6129826635145786e-06,
+  "k21": 1.7630275624461673e-06,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.003965812892761896
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

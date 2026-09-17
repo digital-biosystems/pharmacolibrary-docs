@@ -1,0 +1,24 @@
+{
+ "model_id": "Famotidine_McCann2023_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.8055555555555557e-06,
+  "F": 0.9,
+  "Tlag": 9000.0,
+  "VdPerKg": 0.0032285714285714287,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 9.027777777777779e-05,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.00031498576570493234
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,232 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11A&quot;,&quot;href&quot;:&quot;atc/A11A.md&quot;},{&quot;label&quot;:&quot;Calcium&quot;}]"></div>
+
+# Calcium
+
+- **generic name:** Calcium
+- **ATC codes:** `A11AA02`, `A11GB01`, `M05BB04`, `M05BB05`, `M05BB08`
+- **DrugBank:** [DB01373](https://go.drugbank.com/drugs/DB01373)
+- **groups:** approved, investigational, nutraceutical
+
+## About
+
+**Description.** Calcium plays a vital role in the anatomy, physiology and biochemistry of organisms and of the cell, particularly in signal transduction pathways. The skeleton acts as a major mineral storage site for the element and releases Ca2+ ions into the bloodstream under controlled conditions. Circulating calcium is either in the free, ionized form or bound to blood proteins such as serum albumin. Although calcium flow to and from the bone is neutral, about 5 mmol is turned over a day. Bone serves as an important storage point for calcium, as it contains 99% of the total body calcium. Low calcium intake may also be a risk factor in the development of osteoporosis. The best-absorbed form of calcium from a pill is a calcium salt like carbonate or phosphate. Calcium gluconate and calcium lactate are absorbed well by pregnant women. Seniors absorb calcium lactate, gluconate and citrate better unless they take their calcium supplement with a full breakfast.
+
+**Indication.** Calcium plays a vital role in the anatomy, physiology and biochemistry of organisms and of the cell, particularly in signal transduction pathways. It is vital in cell signaling, muscular contractions, bone health, and signalling cascades.
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-16 01:55 | 46:23 | 6/0/0 | 2/2/0 | 1/0/5 | 473,426/33,439 | ollama / qwen3.8:27b-mtp-q8_0 | 30 | 10/20 | 27/3 | 0 |
+
+## popPK records
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Bertin_2026](drugs/drug_calcium/Calcium_Bertin2026_reference.md) | Bertin S et al., Population Pharmacokinetics of Levosime…, Clinical pharmacokinetics (2026) | [10.1007/s40262-025-01591-4](https://doi.org/10.1007/s40262-025-01591-4) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ekobena_2025](drugs/drug_calcium/Calcium_Ekobena2025_reference.md) | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Schappacher-Tilp_2019](drugs/drug_calcium/Calcium_SchappacherTilp2019_reference.md) | Schappacher-Tilp G et al., A Multi-Compartment Model Capturing the…, Cellular physiology and bio… (2019) | [10.33594/000000148](https://doi.org/10.33594/000000148) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Shi_2026](drugs/drug_calcium/Calcium_Shi2026_reference.md) | Shi Y et al., Vancomycin population pharmacokinetics…, Frontiers in medicine (2026) | [10.3389/fmed.2026.1829805](https://doi.org/10.3389/fmed.2026.1829805) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Abrams_1994](drugs/drug_calcium/Calcium_Abrams1994_reference.md) | Abrams SA et al., Compartmental analysis of calcium metab…, Pediatric research (1994) | [10.1203/00006450-199410000-00002](https://doi.org/10.1203/00006450-199410000-00002) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Piwowarczyk_2023](drugs/drug_calcium/Calcium_Piwowarczyk2023_reference.md) | Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01244-4](https://doi.org/10.1007/s40262-023-01244-4) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Shamsaldeen_2020](drugs/drug_calcium/pd_Shamsaldeen_2020_vasorelaxation.md) | Shamsaldeen YA et al., Dysregulation of TRPV4, eNOS and caveol…, European journal of pharmac… (2020) | [10.1016/j.ejphar.2020.173441](https://doi.org/10.1016/j.ejphar.2020.173441) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Xu_2025](drugs/drug_calcium/pd_Xu_2025_APD.md) | Xu H et al., N-palmitoyl glycine differentially modu…, Communications biology (2025) | [10.1038/s42003-025-09296-x](https://doi.org/10.1038/s42003-025-09296-x) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Xu_2025](drugs/drug_calcium/pd_Xu_2025_Ca_spark.md) | Xu H et al., N-palmitoyl glycine differentially modu…, Communications biology (2025) | [10.1038/s42003-025-09296-x](https://doi.org/10.1038/s42003-025-09296-x) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Xu_2025](drugs/drug_calcium/pd_Xu_2025_QT.md) | Xu H et al., N-palmitoyl glycine differentially modu…, Communications biology (2025) | [10.1038/s42003-025-09296-x](https://doi.org/10.1038/s42003-025-09296-x) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Xu_2025](drugs/drug_calcium/pd_Xu_2025_TRPC5.md) | Xu H et al., N-palmitoyl glycine differentially modu…, Communications biology (2025) | [10.1038/s42003-025-09296-x](https://doi.org/10.1038/s42003-025-09296-x) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Xu_2025](drugs/drug_calcium/pd_Xu_2025_TRPM4.md) | Xu H et al., N-palmitoyl glycine differentially modu…, Communications biology (2025) | [10.1038/s42003-025-09296-x](https://doi.org/10.1038/s42003-025-09296-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Kim_2019](drugs/drug_calcium/pd_Kim_2019_prothrombin_time.md) | Kim M et al., Effects of Verapamil and Diltiazem on t…, Pharmaceutics (2019) | [10.3390/pharmaceutics11030133](https://doi.org/10.3390/pharmaceutics11030133) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Ramezanipour_2022](drugs/drug_calcium/pd_Ramezanipour_2022_ionised_calcium.md) | Ramezanipour N et al., Development of a Hypoparathyroid Male R…, Endocrinology (2022) | [10.1210/endocr/bqab239](https://doi.org/10.1210/endocr/bqab239) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | **CYP2C9** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Rysz_2020](drugs/drug_calcium/pgx_Rysz_2020_CYP2C9_safety.md) | Rysz J et al., Pharmacogenomics of Hypertension Treatm…, International journal of mo… (2020) | [10.3390/ijms21134709](https://doi.org/10.3390/ijms21134709) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **SLCO1B1** | `Q27` · CL/F | transport | [Reig-López_2022](drugs/drug_calcium/pgx_Reig_L_pez_2022_SLCO1B1_Q27.md) | Reig-López J et al., A physiologically based pharmacokinetic…, Biomedicine & pharmacothera… (2022) | [10.1016/j.biopha.2022.113914](https://doi.org/10.1016/j.biopha.2022.113914) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2C19** | `Q27` · CL/F | metabolism | [Rysz_2020](drugs/drug_calcium/pgx_Rysz_2020_CYP2C19_Q27.md) | Rysz J et al., Pharmacogenomics of Hypertension Treatm…, International journal of mo… (2020) | [10.3390/ijms21134709](https://doi.org/10.3390/ijms21134709) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Rysz_2020](drugs/drug_calcium/pgx_Rysz_2020_CYP2D6_Q27.md) | Rysz J et al., Pharmacogenomics of Hypertension Treatm…, International journal of mo… (2020) | [10.3390/ijms21134709](https://doi.org/10.3390/ijms21134709) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP3A4** | `Q27` · CL/F | metabolism | [Rysz_2020](drugs/drug_calcium/pgx_Rysz_2020_CYP3A4_Q27.md) | Rysz J et al., Pharmacogenomics of Hypertension Treatm…, International journal of mo… (2020) | [10.3390/ijms21134709](https://doi.org/10.3390/ijms21134709) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP3A5** | `Q27` · CL/F | metabolism | [Rysz_2020](drugs/drug_calcium/pgx_Rysz_2020_CYP3A5_Q27.md) | Rysz J et al., Pharmacogenomics of Hypertension Treatm…, International journal of mo… (2020) | [10.3390/ijms21134709](https://doi.org/10.3390/ijms21134709) |
+
+<details class="legend">
+<summary>What the PGx columns mean</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 17480 matched, 132 returned
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 6  ·  extracted 4  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_24 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Durisová_1985.pdf` | Durisová M et al., The rate and extent of calcium bioavail…, General physiology and biop… (1985) | popPK | 9 | not captured | [4065541](https://pubmed.ncbi.nlm.nih.gov/4065541) | The paper describes a pharmacokinetic study of calcium in rats using compartmental models, but the specific numeric parameter values are not present in the provided evidence. |
+| `Fukazawa-Shinotsuka_2022.pdf` | Fukazawa-Shinotsuka M et al., Maxacalcitol Pharmacokinetic-Pharmacody…, Drug research (2022) | pd | 5 | [10.1055/a-1581-7609](https://doi.org/10.1055/a-1581-7609) | [34488237](https://www.ncbi.nlm.nih.gov/pubmed/34488237) | metadata signals extractable PD data (PharmacodynamicModel) |
+| `Han_2025.pdf` | Han LY et al., Applying exposure-response analysis to…, European journal of pharmac… (2025) | pd | 5 | [10.1016/j.ejps.2025.107146](https://doi.org/10.1016/j.ejps.2025.107146) | [40447059](https://www.ncbi.nlm.nih.gov/pubmed/40447059) | metadata signals extractable PD data (exposure-response) |
+| `Lalonde_1999.pdf` | Lalonde RL et al., Mixed-effects modeling of the pharmacod…, Clinical pharmacology and t… (1999) | pd | 5 | [10.1016/S0009-9236(99)70120-7](https://doi.org/10.1016/S0009-9236(99)70120-7) | [9951429](https://www.ncbi.nlm.nih.gov/pubmed/9951429) | metadata signals extractable PD data (Emax) |
+| `Ose_2017.pdf` | Ose A et al., Population Pharmacokinetic and Exposure…, Journal of clinical pharmac… (2017) | pd | 5 | [10.1002/jcph.949](https://doi.org/10.1002/jcph.949) | [28614613](https://www.ncbi.nlm.nih.gov/pubmed/28614613) | metadata signals extractable PD data (Exposure-Response) |
+| `Pillai_2004.pdf` | Pillai G et al., A semimechanistic and mechanistic popul…, British journal of clinical… (2004) | pd | 5 | [10.1111/j.1365-2125.2004.02224.x](https://doi.org/10.1111/j.1365-2125.2004.02224.x) | [15563360](https://www.ncbi.nlm.nih.gov/pubmed/15563360) | metadata signals extractable PD data (PK-PD) |
+| `Shen_2014.pdf` | Shen J et al., A pharmacokinetic/pharmacodynamic model…, Journal of clinical pharmac… (2014) | pd | 5 | [10.1002/jcph.314](https://doi.org/10.1002/jcph.314) | [24752908](https://www.ncbi.nlm.nih.gov/pubmed/24752908) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Venuto_2021.pdf` | Venuto CS et al., Isradipine plasma pharmacokinetics and…, Annals of clinical and tran… (2021) | pd | 5 | [10.1002/acn3.51300](https://doi.org/10.1002/acn3.51300) | [33460320](https://www.ncbi.nlm.nih.gov/pubmed/33460320) | metadata signals extractable PD data (exposure-response) |
+| `Ziółkowski_2014.pdf` | Ziółkowski H et al., Influence of oral co-administration of…, Research in veterinary scie… (2014) | pd | 5 | [10.1016/j.rvsc.2014.05.005](https://doi.org/10.1016/j.rvsc.2014.05.005) | [24875062](https://www.ncbi.nlm.nih.gov/pubmed/24875062) | metadata signals extractable PD data (PK/PD) |
+| `Bril_1995.pdf` | Bril A et al., Electrophysiological effect of BRL-3287…, The Journal of pharmacology… (1995) | pd | 4 | not captured | [7791099](https://www.ncbi.nlm.nih.gov/pubmed/7791099) | metadata signals extractable PD data (EC50) |
+| `Grudt_1993.pdf` | Grudt TJ et al., kappa-Opioid receptors also increase po…, Proceedings of the National… (1993) | pd | 4 | [10.1073/pnas.90.23.11429](https://doi.org/10.1073/pnas.90.23.11429) | [7902584](https://www.ncbi.nlm.nih.gov/pubmed/7902584) | metadata signals extractable PD data (EC50) |
+| `Klöckner_1987.pdf` | Klöckner U et al., Calmodulin antagonists depress calcium…, The American journal of phy… (1987) | pd | 4 | [10.1152/ajpheart.1987.253.6.H1601](https://doi.org/10.1152/ajpheart.1987.253.6.H1601) | [2447792](https://www.ncbi.nlm.nih.gov/pubmed/2447792) | metadata signals extractable PD data (EC50) |
+| `Ratner_1992.pdf` | Ratner EI et al., Effect of moracizine and ethacizine on…, Arzneimittel-Forschung (1992) | pd | 4 | not captured | [1326968](https://www.ncbi.nlm.nih.gov/pubmed/1326968) | metadata signals extractable PD data (IC50) |
+| `Walker_2010.pdf` | Walker JS et al., Analysing force-pCa curves, Journal of muscle research… (2010) | pd | 4 | [10.1007/s10974-010-9208-7](https://doi.org/10.1007/s10974-010-9208-7) | [20490629](https://www.ncbi.nlm.nih.gov/pubmed/20490629) | metadata signals extractable PD data (sigmoid) |
+| `Wehling_1995.pdf` | Wehling M et al., Nongenomic effects of aldosterone on in…, Circulation research (1995) | pd | 4 | [10.1161/01.res.76.6.973](https://doi.org/10.1161/01.res.76.6.973) | [7758168](https://www.ncbi.nlm.nih.gov/pubmed/7758168) | metadata signals extractable PD data (EC50) |
+| `Wilkes_1991.pdf` | Wilkes JM et al., Second messengers in the gastric gland:…, Scandinavian journal of gas… (1991) | pd | 4 | [10.3109/00365529109093181](https://doi.org/10.3109/00365529109093181) | [2042037](https://www.ncbi.nlm.nih.gov/pubmed/2042037) | metadata signals extractable PD data (IC50) |
+| `Cuciureanu_2010.pdf` | Cuciureanu M et al., Grapefruit juice--drug interactions: im…, Revista medico-chirurgicala… (2010) | pgx | 8 | not captured | [21235125](https://www.ncbi.nlm.nih.gov/pubmed/21235125) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Hu_2022.pdf` | Hu X et al., The effect of CYP3A4 genetic polymorphi…, Chemico-biological interact… (2022) | pgx | 8 | [10.1016/j.cbi.2022.110123](https://doi.org/10.1016/j.cbi.2022.110123) | [36007633](https://www.ncbi.nlm.nih.gov/pubmed/36007633) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Misra_2026.pdf` | Misra A et al., Pharmacology and Pharmacogenomics of An…, CNS & neurological disorder… (2026) | pgx | 8 | [10.2174/0118715273402957251210064344](https://doi.org/10.2174/0118715273402957251210064344) | [41833043](https://www.ncbi.nlm.nih.gov/pubmed/41833043) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Kim_1993.pdf` | Kim M et al., Inhibition of the enantioselective oxid…, Drug metabolism and disposi… (1993) | pgx | 7 | not captured | [8097702](https://www.ncbi.nlm.nih.gov/pubmed/8097702) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
+| `Niemi_2003.pdf` | Niemi M et al., Pharmacokinetic interactions with rifam…, Clinical pharmacokinetics (2003) | pgx | 7 | [10.2165/00003088-200342090-00003](https://doi.org/10.2165/00003088-200342090-00003) | [12882588](https://www.ncbi.nlm.nih.gov/pubmed/12882588) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Robinson_2017.pdf` | Robinson BL et al., Cyclosporine exacerbates ketamine toxic…, Journal of applied toxicolo… (2017) | pgx | 7 | [10.1002/jat.3488](https://doi.org/10.1002/jat.3488) | [28569378](https://www.ncbi.nlm.nih.gov/pubmed/28569378) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Sadaka_2022.pdf` | Sadaka Y et al., Combined Use of Calcium-channel Blocker…, Anticancer research (2022) | pgx | 7 | [10.21873/anticanres.15690](https://doi.org/10.21873/anticanres.15690) | [35347032](https://www.ncbi.nlm.nih.gov/pubmed/35347032) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Sugiyama_2007.pdf` | Sugiyama Y et al., Effect of benidipine on simvastatin met…, Drug metabolism and pharmac… (2007) | pgx | 7 | [10.2133/dmpk.22.199](https://doi.org/10.2133/dmpk.22.199) | [17603221](https://www.ncbi.nlm.nih.gov/pubmed/17603221) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+
+<sub>queue written 2026-09-16T01:35:34.165896+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Al-Kofahi_2021 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on tacrolimus clearance, not calcium. |
+| PGx | Alkhzouz_2021 | not_relevant | 2 | 5 | The study examines the association between VDR polymorphisms and calcium/vitamin D levels in MPS patients, but does not report a pharmacogenomic effect on the PK or PD of a specific drug. |
+| popPK | Baxter_1993 | irrelevant | 0 | 0 | The paper describes the synthesis and pharmacological activity of a calcium channel activator drug, not the pharmacokinetics of calcium itself. |
+| PGx | Berger_2025 | not_relevant | 0 | 0 | The paper focuses on the design of a new NPSR1 antagonist and its pharmacological effects, not on how genetic variants affect the PK or PD of calcium. |
+| popPK | Bertin_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for levosimendan and its metabolites, not for calcium. |
+| PD | Bertin_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for levosimendan and its metabolites, but it does not include any pharmacodynamic (PD) modeling, exposure-response analysis, or dose-effect relationship data. |
+| popPK | Borle_1970 | irrelevant | 2 | 3 | The study is an in-vitro mechanistic analysis of calcium transport in cell cultures, not a pharmacokinetic study of calcium as a drug in a biological system. |
+| popPK | Bril_1995 | irrelevant | 0 | 0 | no_text gate: only 170 chars of text extracted (&lt; 400) |
+| popPK | Brown_1981 | irrelevant | 0 | 0 | The paper is an electrophysiological study of calcium channel inactivation in snail neurons, not a pharmacokinetic study of calcium as a drug. |
+| PGx | Canales_2017 | not_relevant | 0 | 0 | The paper investigates genetic associations with urine pH, a physiological parameter, rather than the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Cendrós_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of enflicoxib in dogs, and calcium is only mentioned as a routine biochemical safety parameter, not as the subject drug. |
+| PD | Cendrós_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model validation for enflicoxib but contains no pharmacodynamic (PD) modeling, exposure-response analysis, or numeric PD parameters. |
+| PGx | Chai_2017 | not_relevant | 0 | 0 | The paper investigates astrocyte diversity and calcium signaling in neural circuits, not the pharmacogenomic effects of gene variants on the pharmacokinetics or pharmacodynamics of calcium as a drug. |
+| popPK | Chapman_1976 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of caffeine's effects on ferret heart contraction, not a pharmacokinetic study of calcium as a drug. |
+| PGx | Claassen_1995 | not_relevant | 0 | 0 | The study investigates the effect of dietary fatty acid supplementation on bone status in rats and does not involve gene variants or pharmacogenomics. |
+| PGx | Cobb_2018 | not_relevant | 0 | 0 | The paper discusses the cost hyperinflation of sodium nitroprusside and therapeutic interchange with calcium channel blockers, but does not report any pharmacogenomic effects on PK or PD parameters. |
+| PGx | Columbu_2025 | not_relevant | 0 | 0 | The text lists patient exclusion criteria and comorbidities for a study on primary hyperparathyroidism, containing no information on gene variants or pharmacogenomic effects on calcium PK/PD. |
+| PGx | Colussi_1994 | not_relevant | 0 | 0 | The paper describes calcium metabolism in a genetic disease (Gitelman's syndrome) but does not report the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Cuciureanu_2010 | not_relevant | 0 | 0 | The paper discusses grapefruit juice-drug interactions and mentions genetic polymorphisms only as a general risk factor, without reporting specific pharmacogenomic effects on PK/PD parameters for calcium or any other drug. |
+| popPK | Dias_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of vildagliptin, not calcium. |
+| popPK | Dodeja_2026 | irrelevant | 0 | 0 | The paper is a review on drug transfer into human milk and does not report pharmacokinetic parameters for calcium as the subject drug. |
+| PD | Dodeja_2026 | not_relevant | 0 | 0 | The paper is a review of pharmacokinetic modeling and study designs for drug transfer into human milk; it does not report any pharmacodynamic (PD) or exposure-response relationships for Calcium or any other drug. |
+| popPK | Durisová_1985 | relevant | 9 | 0 | The paper describes a pharmacokinetic study of calcium in rats using compartmental models, but the specific numeric parameter values are not present in the provided evidence. |
+| popPK | Eanes_1983 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ionophore-mediated calcium transport and precipitation in Pressman cells, not a pharmacokinetic study reporting disposition parameters for calcium as a drug. |
+| popPK | Ekobena_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for bictegravir, not calcium; calcium is only mentioned as a co-administered agent causing a drug-drug interaction. |
+| PD | Ekobena_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for bictegravir, not calcium, and contains no pharmacodynamic (PD) or exposure-response analysis. |
+| popPK | El_2025 | irrelevant | 0 | 0 | The paper is a cardiovascular study on HDL cholesterol efflux capacity and does not report pharmacokinetic parameters for calcium. |
+| popPK | Fernandez_1993 | irrelevant | 0 | 0 | The study investigates the non-genomic effects of estrogens and antiestrogens on rat uterine contraction in a calcium-free solution, focusing on pharmacodynamics rather than the pharmacokinetics of calcium itself. |
+| PGx | Fravel_2021 | not_relevant | 0 | 0 | The paper is a general review of drug-drug interactions with antihypertensives and does not report specific pharmacogenomic effects on calcium PK/PD parameters. |
+| PGx | Fuhr_2022 | not_relevant | 0 | 0 | The paper models the pharmacokinetics and pharmacodynamics of felodipine (a calcium channel blocker) but does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of calcium itself. |
+| popPK | Fukazawa-Shinotsuka_2022 | irrelevant | 0 | 0 | no_text gate: only 149 chars of text extracted (&lt; 400) |
+| PGx | Gardner_2020 | not_relevant | 0 | 0 | The paper investigates genetic variants associated with exertional heat illness and rhabdomyolysis, not the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Gayretli_2015 | not_relevant | 0 | 0 | The paper investigates bone turnover markers in children with constitutional delay of growth and puberty, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a calcium drug. |
+| popPK | Godenzini_2022 | irrelevant | 0 | 0 | The paper is a neuroscience study on dendritic plasticity in mice and does not report pharmacokinetic parameters for calcium as a drug. |
+| PD | Greenberg_1990 | not_relevant | 1 | 0 | The paper describes qualitative electrophysiological mechanisms of overdrive suppression in guinea pig sinoatrial nodes and mentions calcium's role, but it does not provide a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., EC50, Emax) for a drug. |
+| PD | Grudt_1993 | not_relevant | 0 | 0 | The paper discusses the mechanism of kappa-opioid receptors increasing potassium conductance and does not report any pharmacodynamic or exposure-response relationship for Calcium. |
+| PGx | Guan_2018 | not_relevant | 0 | 0 | The study reports a population pharmacokinetic model for diltiazem where only bilirubin was a significant covariate; the genotyped variants (CYP3A4, CYP3A5, MDR1) did not significantly influence the PK parameters. |
+| PGx | Guengerich_1986 | not_relevant | 2 | 0 | The paper characterizes the P-450 enzyme responsible for nifedipine metabolism but does not report a specific gene variant/genotype or its effect on a PK/PD parameter. |
+| popPK | Han_2025 | irrelevant | 0 | 0 | no_text gate: only 170 chars of text extracted (&lt; 400) |
+| PD | Han_2025 | not_relevant | 0 | 0 | The paper focuses on Mycophenolate Mofetil, not Calcium, and does not report PD parameters for Calcium. |
+| popPK | Helmchen_2015 | irrelevant | 0 | 0 | The paper describes a mechanistic model of intracellular calcium dynamics in neurons, not a pharmacokinetic study of calcium as a drug with disposition parameters like clearance or volume of distribution. |
+| popPK | Hernández-Gago_2026 | irrelevant | 0 | 0 | The paper is a systematic review of high-alert medications in obese pediatric patients and does not report pharmacokinetic parameters for calcium. |
+| PD | Hernández-Gago_2026 | not_relevant | 0 | 0 | The paper is a systematic review of dosing strategies and pharmacokinetics (PK) in obese pediatric patients and does not report any pharmacodynamic (PD) or exposure-response relationships for Calcium or any other drug. |
+| PGx | Hodson_2014 | not_relevant | 0 | 0 | The paper investigates the role of ADCY5 in glucose-stimulated insulin secretion and calcium signaling in pancreatic beta-cells, not the pharmacokinetics or pharmacodynamics of calcium as a drug. |
+| PGx | Hu_2022 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of istradefylline, not calcium. |
+| popPK | Idris_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of oxytetracycline (OTC), using calcium carbonate only as a nanoparticle delivery vehicle, not as the subject drug. |
+| PGx | Izumi_1993 | not_relevant | 0 | 0 | The paper investigates the neurotoxic mechanism of sodium nitroprusside in rat hippocampal slices and does not report any pharmacogenomic effects on calcium PK/PD parameters. |
+| PGx | Jhun_2015 | not_relevant | 0 | 0 | The study investigates the effect of VDR polymorphisms on the association between lead exposure and pulse pressure, not the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Johns_1991 | irrelevant | 0 | 0 | The study investigates intracellular calcium signaling and fluxes in cultured cells as a mechanism of action for endothelin-2, rather than reporting pharmacokinetic disposition parameters (CL, V, etc.) for calcium as a drug. |
+| PGx | Kaleem_2022 | not_relevant | 0 | 0 | The paper studies the effect of calcium supplementation on cadmium toxicity in maize plants, not a pharmacogenomic effect on a PK/PD parameter in humans. |
+| popPK | Kanj_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium transport across rat diaphragm muscle strips, not a pharmacokinetic study reporting disposition parameters for calcium as a drug. |
+| popPK | Kassis_2022 | irrelevant | 0 | 0 | The paper is a clinical epidemiological study on aortic stenosis outcomes and does not report any pharmacokinetic parameters for calcium. |
+| PGx | Kaura_2026 | not_relevant | 0 | 0 | The paper investigates mitochondrial bioenergetics in relation to calcium dysregulation in malignant hyperthermia models, not the pharmacokinetics or pharmacodynamics of a specific calcium drug. |
+| PGx | Kim_1993 | not_relevant | 0 | 0 | The paper investigates the drug-drug interaction between verapamil and metoprolol in vitro, not the effect of a gene variant on calcium pharmacokinetics or pharmacodynamics. |
+| popPK | Klöckner_1987 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
+| PGx | Kong_2022 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of cyclosporine metabolism, not calcium. |
+| PGx | Kroemer_1993 | not_relevant | 0 | 0 | The paper characterizes P450 enzymes involved in verapamil metabolism but does not report a specific gene variant or genotype effect on a PK/PD parameter. |
+| popPK | Lalonde_1999 | irrelevant | 0 | 0 | no_text gate: only 86 chars of text extracted (&lt; 400) |
+| popPK | Lin_1990 | irrelevant | 0 | 0 | The paper describes a CCK-A receptor agonist and reports receptor binding/functional data, not pharmacokinetic parameters for calcium. |
+| popPK | Lodge_1987 | irrelevant | 0 | 0 | The study investigates calcium fluxes in isolated neonatal canine myocardium (in-vitro/ex-vivo tissue mechanics) rather than systemic pharmacokinetics (CL, V, ka) of calcium as a drug. |
+| PGx | Lucock_2015 | not_relevant | 0 | 0 | The paper is a review on the evolutionary biology and circadian rhythms of vitamin D and VDR polymorphisms, not a pharmacogenomic study of calcium PK/PD parameters. |
+| PGx | Lymperopoulos_2014 | not_relevant | 0 | 0 | The paper is a review of pharmacogenetics of cardiac inotropy and does not report specific pharmacokinetic or pharmacodynamic parameters for calcium. |
+| PGx | Ma_2011 | not_relevant | 2 | 5 | The paper reports pharmacological differences in efficacy across CaSR polymorphic variants (PD), but does not report pharmacokinetic parameters or specific pharmacogenomic effect sizes for a drug's PK/PD profile in the context of standard pharmacogenomics. |
+| popPK | Marques_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of propranolol and omeprazole, not calcium. |
+| PD | Marques_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on pharmacokinetic (PK) modeling and drug-drug interactions for Propranolol, with no pharmacodynamic (PD) or exposure-response analysis reported. |
+| PGx | Melo_2017 | not_relevant | 0 | 0 | The study evaluates bone metabolism after bariatric surgery and does not report any pharmacogenomic effects on calcium PK/PD parameters. |
+| PGx | Methaneethorn_2014 | not_relevant | 0 | 0 | The paper models a drug-drug interaction between simvastatin and verapamil, not a pharmacogenomic effect of a gene variant on calcium pharmacokinetics or pharmacodynamics. |
+| PGx | Meyer_1980 | not_relevant | 0 | 0 | The paper studies a genetic mouse model of hypophosphatemia and its effect on vitamin D metabolism, not the pharmacokinetics or pharmacodynamics of a calcium drug. |
+| PGx | Misra_2026 | not_relevant | 2 | 0 | The text is a general review of migraine pharmacogenomics and does not report specific pharmacokinetic or pharmacodynamic parameters for calcium. |
+| popPK | Modi_1993 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of nicardipine, a calcium channel blocker, not the drug calcium itself. |
+| popPK | Molleman_1991 | irrelevant | 0 | 0 | The paper is an electrophysiology study investigating ion channel conductances in smooth muscle cells, not a pharmacokinetic study of calcium as a drug. |
+| PD | Molleman_1991 | not_relevant | 0 | 0 | The paper reports electrophysiological properties and explicitly states that voltage-dependent calcium currents were not detected, providing no exposure-response or dose-response relationship for calcium as a drug. |
+| PGx | Morrow_1986 | not_relevant | 0 | 0 | The paper studies the effect of calcium administration on ethanol sensitivity in mouse lines, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of calcium itself. |
+| PGx | Narimatsu_1993 | not_relevant | 0 | 0 | The paper investigates the metabolism of cinnarizine and flunarizine, not the pharmacokinetics or pharmacodynamics of calcium itself. |
+| PGx | Niemi_2003 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving rifampicin and calcium channel blockers, but does not report pharmacogenomic effects (gene variants) on the PK/PD of calcium itself. |
+| popPK | Noronha-Blob_1989 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium influx in neuroblastoma cells, not a pharmacokinetic study of calcium as a drug. |
+| popPK | Ose_2017 | irrelevant | 0 | 0 | no_text gate: only 105 chars of text extracted (&lt; 400) |
+| PD | Ose_2017 | not_relevant | 0 | 0 | The paper analyzes Teriparatide, not Calcium, and does not report PD parameters for Calcium. |
+| popPK | Oury-Donat_1994 | irrelevant | 0 | 0 | The paper investigates the pharmacology of an NK1 receptor antagonist (SR 140333) in cell lines, with calcium mentioned only as a signaling ion, not as the subject drug for PK analysis. |
+| PD | Oury-Donat_1994 | not_relevant | 0 | 0 | The paper reports pharmacological parameters (Ki, IC50, EC50) for an NK1 receptor antagonist (SR 140333), not for the drug Calcium. |
+| popPK | Parrot_2026 | irrelevant | 0 | 0 | The paper is a review on nanoparticle pharmacokinetics and does not report quantitative PK parameters for calcium. |
+| PD | Parrot_2026 | not_relevant | 0 | 0 | The paper is a review on PK modeling for nanoparticles and does not report any pharmacodynamic (PD) or exposure-response data for Calcium. |
+| popPK | Pillai_2004 | irrelevant | 0 | 0 | no_text gate: only 150 chars of text extracted (&lt; 400) |
+| PD | Pillai_2004 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics and pharmacodynamics of ibandronate, not calcium. |
+| popPK | Piwowarczyk_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for nadroparin (a low-molecular-weight heparin), not for elemental calcium, despite the drug name containing "calcium". |
+| PGx | Porchet_1988 | not_relevant | 0 | 0 | The study explicitly concludes that there is no genetic polymorphism in the response to the drugs, reporting a negative result for pharmacogenomic effects. |
+| PGx | Porchet_1990 | not_relevant | 0 | 0 | The study compares two drugs in healthy subjects and explicitly states that the data does not confirm the proposed polymorphism of nifedipine oxidation, reporting no pharmacogenomic effects. |
+| PGx | Qiao_2026 | not_relevant | 0 | 0 | The paper investigates the association between genetic predisposition to coffee consumption and atherosclerosis risk, not the pharmacokinetics or pharmacodynamics of calcium. |
+| PGx | Radhakrishna_2025 | not_relevant | 0 | 0 | The paper investigates DNA methylation biomarkers for chronic pain in hidradenitis suppurativa and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of calcium. |
+| PGx | Radványi_2024 | not_relevant | 0 | 0 | The paper investigates the physiological role of the Claudin-3 gene in mineral homeostasis, not the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Randell_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for furosemide, not calcium. |
+| PD | Randell_2026 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of furosemide and its exposure-safety relationship, not on the pharmacodynamics of calcium. |
+| PD | Ratner_1992 | not_relevant | 0 | 0 | The paper investigates the effect of specific drugs (moracizine and ethacizine) on calcium channels and proteins, not the pharmacodynamic relationship of calcium itself as a drug. |
+| PGx | Robinson-Cohen_2017 | not_relevant | 0 | 0 | The paper reports a GWAS for serum PTH concentrations, which is a physiological biomarker, not a pharmacokinetic or pharmacodynamic parameter of a specific drug. |
+| PGx | Robinson_2017 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (Cyclosporine and Ketamine) in zebrafish, not a pharmacogenomic effect of a gene variant on calcium PK/PD. |
+| PGx | Rojas-Carranza_2018 | not_relevant | 0 | 0 | The paper is a review of diabetes and pharmacogenomics of oral antidiabetic drugs, with no specific data on calcium PK/PD parameters. |
+| PGx | Sadaka_2022 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (CYP3A4 inhibition) affecting calcium channel blocker levels, not a pharmacogenomic effect based on genetic variants. |
+| popPK | Saha_2022 | irrelevant | 0 | 0 | The paper describes the synthesis and mechanism of a synthetic calcium transporter peptide (in-vitro/mechanistic) and does not report pharmacokinetic parameters for calcium as a drug. |
+| PGx | Sarute_2020 | not_relevant | 0 | 0 | The paper discusses viral infection susceptibility and the effect of VGCC antagonists on infection, not the pharmacokinetics or pharmacodynamics of calcium itself. |
+| popPK | Schappacher-Tilp_2019 | irrelevant | 0 | 0 | The study models the pharmacokinetics of cinacalcet, not calcium, which is only mentioned as a physiological regulator. |
+| popPK | Shamsaldeen_2020 | irrelevant | 0 | 0 | The study investigates TRPV4 ion channel function and endothelial dysfunction in diabetic rats, using calcium only as a signaling ion for imaging, not as a pharmacokinetic subject drug. |
+| popPK | Shen_2014 | irrelevant | 0 | 0 | no_text gate: only 138 chars of text extracted (&lt; 400) |
+| popPK | Shi_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for vancomycin, not calcium. |
+| PD | Shi_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for vancomycin, focusing on clearance and volume of distribution, but contains no pharmacodynamic (PD) or exposure-response analysis. |
+| PGx | Sugiyama_2007 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (benidipine inhibiting simvastatin metabolism) and does not report any pharmacogenomic effects (gene variants) on calcium PK/PD parameters. |
+| PGx | Taha_2019 | not_relevant | 0 | 0 | The paper investigates the association between Vitamin D receptor polymorphisms and bone mineral density/biochemical markers, not the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Tzvetkov_1991 | not_relevant | 0 | 0 | The study investigates the effects of whole-body vibration on electrolyte levels and does not involve gene variants or pharmacogenomics. |
+| popPK | Venuto_2021 | irrelevant | 0 | 0 | no_text gate: only 85 chars of text extracted (&lt; 400) |
+| PD | Venuto_2021 | not_relevant | 0 | 0 | The paper focuses on Isradipine, not Calcium, and does not report a pharmacodynamic relationship for Calcium. |
+| PGx | Vickers_1995 | not_relevant | 0 | 0 | The paper describes in vitro CYP3A metabolism of a cyclosporin derivative and drug interactions, but does not report a pharmacogenomic effect (gene variant) on a PK/PD parameter of calcium. |
+| popPK | Vieira_2007 | irrelevant | 0 | 0 | The paper describes compartmental models of motoneurons and ionic currents, not the pharmacokinetics of the drug calcium. |
+| popPK | Wehling_1995 | irrelevant | 0 | 0 | no_text gate: only 87 chars of text extracted (&lt; 400) |
+| PD | Wehling_1995 | not_relevant | 0 | 0 | The paper investigates the nongenomic effects of aldosterone on intracellular calcium, not the pharmacodynamics of calcium itself as a drug. |
+| PGx | Welker_1998 | not_relevant | 0 | 0 | The paper describes the general clinical pharmacokinetics of mibefradil and its drug interactions but does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
+| PD | Wilkes_1991 | not_relevant | 1 | 0 | The paper is a review of calcium signaling mechanisms in gastric glands and does not report specific pharmacokinetic or pharmacodynamic modeling with numeric parameters for a drug. |
+| PGx | Wu_2024 | not_relevant | 0 | 0 | The paper describes a spatial transcriptomics method (MiP-Seq) and its application to gene expression and calcium imaging, but does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of calcium. |
+| PGx | YOUNG_1962 | not_relevant | 0 | 0 | The paper describes bacterial spore formation and calcium uptake in Bacillus cereus, which is unrelated to human pharmacogenomics or drug PK/PD. |
+| popPK | Youssef_1981 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of sulphadiazine and sulphadimidine, with calcium mentioned only as a biochemical parameter affected by the drugs, not as the subject drug for PK analysis. |
+| popPK | Zauser_2025 | irrelevant | 0 | 0 | The paper focuses on plant calcium-dependent kinases and in vitro/in vivo signaling mechanisms, not pharmacokinetic disposition parameters for calcium as a drug. |
+| PGx | Zeinoddini_2018 | not_relevant | 0 | 0 | The paper studies bioluminescent properties of aequorin mutants, not pharmacogenomic effects on calcium PK/PD. |
+| PGx | Zhen_2017 | not_relevant | 0 | 0 | The paper investigates the effect of MMP gene polymorphisms on the clinical efficacy of ulinastatin, not the pharmacokinetics or pharmacodynamics of calcium. |
+| PGx | Zhu_2025 | not_relevant | 0 | 0 | The study investigates the association between gut microbiota and osteoporosis, not the effect of a specific gene variant on the pharmacokinetics or pharmacodynamics of a calcium drug. |
+| PD | Ziółkowski_2014 | not_relevant | 0 | 0 | The paper investigates the effect of calcium/magnesium and food on enrofloxacin pharmacokinetics (PK), not the pharmacodynamic (PD) or exposure-response relationship of calcium itself. |
+| popPK | van_2021 | irrelevant | 0 | 0 | The paper is a computational neuroscience study on dendritic dynamics and calcium channel kinetics, not a pharmacokinetic study of calcium as a drug. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_calcium`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

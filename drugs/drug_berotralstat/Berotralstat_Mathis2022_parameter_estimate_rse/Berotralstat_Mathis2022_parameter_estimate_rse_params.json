@@ -1,0 +1,24 @@
+{
+ "model_id": "Berotralstat_Mathis2022_parameter_estimate_rse",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.3138888888888888e-05,
+  "F": 0.497,
+  "Tlag": 1684.8000000000002,
+  "VdPerKg": 0.023571428571428573,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 2.4967084743337083e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

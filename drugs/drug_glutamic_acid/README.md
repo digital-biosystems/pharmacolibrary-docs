@@ -1,0 +1,315 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A09A&quot;,&quot;href&quot;:&quot;atc/A09A.md&quot;},{&quot;label&quot;:&quot;Glutamic acid&quot;}]"></div>
+
+# Glutamic acid
+
+- **generic name:** Glutamic acid
+- **ATC codes:** `A09AB01`
+- **DrugBank:** [DB00142](https://go.drugbank.com/drugs/DB00142)
+- **groups:** approved, investigational, nutraceutical
+
+## About
+
+**Description.** A peptide that is a homopolymer of glutamic acid.
+
+**Indication.** Considered to be nature's "Brain food" by improving mental capacities; helps speed the healing of ulcers; gives a "lift" from fatigue; helps control alcoholism, schizophrenia and the craving for sugar.
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-14 15:36 | 36:53 | 0/0/0 | 8/0/0 | 0/0/0 | 655,693/12,935 | ollama / qwen3.8:27b-mtp-q8_0 | 84 | 0/0 | 83/1 | 0 |
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Christelle_2024](drugs/drug_glutamic_acid/pd_Christelle_2024_percentage_of_inhibition_of_L1_larvae_motili.md) | Christelle Nadia NA et al., Anthelmintic Activity of Ethanolic and…, Journal of tropical medicine (2024) | [10.1155/2024/6735764](https://doi.org/10.1155/2024/6735764) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Christelle_2024](drugs/drug_glutamic_acid/pd_Christelle_2024_percentage_of_inhibition_of_L2_larvae_motili.md) | Christelle Nadia NA et al., Anthelmintic Activity of Ethanolic and…, Journal of tropical medicine (2024) | [10.1155/2024/6735764](https://doi.org/10.1155/2024/6735764) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Christelle_2024](drugs/drug_glutamic_acid/pd_Christelle_2024_percentage_of_inhibition_of_egg_hatching.md) | Christelle Nadia NA et al., Anthelmintic Activity of Ethanolic and…, Journal of tropical medicine (2024) | [10.1155/2024/6735764](https://doi.org/10.1155/2024/6735764) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Diamond_2026](drugs/drug_glutamic_acid/pd_Diamond_2026_unknown.md) | Diamond PD et al., Context-dependent translation inhibitio…, Nature communications (2026) | [10.1038/s41467-026-69891-2](https://doi.org/10.1038/s41467-026-69891-2) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Huynh_2022](drugs/drug_glutamic_acid/pd_Huynh_2022_DNA_biosynthesis.md) | Huynh TYL et al., Metformin Induces PRODH/POX-Dependent A…, Frontiers in molecular bios… (2022) | [10.3389/fmolb.2022.869413](https://doi.org/10.3389/fmolb.2022.869413) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Huynh_2022](drugs/drug_glutamic_acid/pd_Huynh_2022_ROS_generation.md) | Huynh TYL et al., Metformin Induces PRODH/POX-Dependent A…, Frontiers in molecular bios… (2022) | [10.3389/fmolb.2022.869413](https://doi.org/10.3389/fmolb.2022.869413) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Huynh_2022](drugs/drug_glutamic_acid/pd_Huynh_2022_apoptosis.md) | Huynh TYL et al., Metformin Induces PRODH/POX-Dependent A…, Frontiers in molecular bios… (2022) | [10.3389/fmolb.2022.869413](https://doi.org/10.3389/fmolb.2022.869413) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Huynh_2022](drugs/drug_glutamic_acid/pd_Huynh_2022_cell_viability.md) | Huynh TYL et al., Metformin Induces PRODH/POX-Dependent A…, Frontiers in molecular bios… (2022) | [10.3389/fmolb.2022.869413](https://doi.org/10.3389/fmolb.2022.869413) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Huynh_2022](drugs/drug_glutamic_acid/pd_Huynh_2022_collagen_biosynthesis.md) | Huynh TYL et al., Metformin Induces PRODH/POX-Dependent A…, Frontiers in molecular bios… (2022) | [10.3389/fmolb.2022.869413](https://doi.org/10.3389/fmolb.2022.869413) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Huynh_2022](drugs/drug_glutamic_acid/pd_Huynh_2022_prolidase_activity.md) | Huynh TYL et al., Metformin Induces PRODH/POX-Dependent A…, Frontiers in molecular bios… (2022) | [10.3389/fmolb.2022.869413](https://doi.org/10.3389/fmolb.2022.869413) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Huynh_2022](drugs/drug_glutamic_acid/pd_Huynh_2022_proline_concentration.md) | Huynh TYL et al., Metformin Induces PRODH/POX-Dependent A…, Frontiers in molecular bios… (2022) | [10.3389/fmolb.2022.869413](https://doi.org/10.3389/fmolb.2022.869413) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Janzen_2017](drugs/drug_glutamic_acid/pd_Janzen_2017_I.md) | Janzen D et al., The GlyR Extracellular β8-β9 Loop - A F…, Frontiers in molecular neur… (2017) | [10.3389/fnmol.2017.00322](https://doi.org/10.3389/fnmol.2017.00322) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Kang_2022](drugs/drug_glutamic_acid/pd_Kang_2022_calcium_mobilization.md) | Kang C et al., Colon-Targeted Trans-Cinnamic Acid Amel…, Pharmaceutics (2022) | [10.3390/pharmaceutics15010041](https://doi.org/10.3390/pharmaceutics15010041) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Lin_2026](drugs/drug_glutamic_acid/pd_Lin_2026_KRAS_transcript.md) | Lin KH et al., Glutamic Acid-Chelated Cobalt Stabilize…, Oncology research (2026) | [10.32604/or.2026.074144](https://doi.org/10.32604/or.2026.074144) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Lin_2026](drugs/drug_glutamic_acid/pd_Lin_2026_cell_viability.md) | Lin KH et al., Glutamic Acid-Chelated Cobalt Stabilize…, Oncology research (2026) | [10.32604/or.2026.074144](https://doi.org/10.32604/or.2026.074144) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Lin_2026](drugs/drug_glutamic_acid/pd_Lin_2026_tumor_fluorescence.md) | Lin KH et al., Glutamic Acid-Chelated Cobalt Stabilize…, Oncology research (2026) | [10.32604/or.2026.074144](https://doi.org/10.32604/or.2026.074144) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Lin_2026](drugs/drug_glutamic_acid/pd_Lin_2026_viral_titer.md) | Lin KH et al., Glutamic Acid-Chelated Cobalt Stabilize…, Oncology research (2026) | [10.32604/or.2026.074144](https://doi.org/10.32604/or.2026.074144) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2026](drugs/drug_glutamic_acid/pd_Liu_2026_Kv4_2_current.md) | Liu (2026) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2026](drugs/drug_glutamic_acid/pd_Liu_2026_Nav1_5_current.md) | Liu (2026) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2026](drugs/drug_glutamic_acid/pd_Liu_2026_Nav1_7_current.md) | Liu (2026) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2026](drugs/drug_glutamic_acid/pd_Liu_2026_Sensation_Time_Score.md) | Liu (2026) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2026](drugs/drug_glutamic_acid/pd_Liu_2026_Sensory_Score.md) | Liu (2026) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2026](drugs/drug_glutamic_acid/pd_Liu_2026_TRPV1_current.md) | Liu (2026) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2026](drugs/drug_glutamic_acid/pd_Liu_2026_TRPV3_current.md) | Liu (2026) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2026](drugs/drug_glutamic_acid/pd_Liu_2026_hERG_current.md) | Liu (2026) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Shave_2025](drugs/drug_glutamic_acid/pd_Shave_2025_nuclei_counts.md) | Shave S et al., Cellular Activity of CQWW Nullomer-Deri…, ACS omega (2025) | [10.1021/acsomega.4c08860](https://doi.org/10.1021/acsomega.4c08860) |
+
+## Coverage
+
+- **PubMed hits:** 1074 matched, 195 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full text wanted
+
+_15 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Bonanno_1994.pdf` | Bonanno G et al., Heterocarrier-mediated reciprocal modul…, European journal of pharmac… (1994) | pd | 5 | [10.1016/0014-2999(94)90575-4](https://doi.org/10.1016/0014-2999(94)90575-4) | [7908643](https://www.ncbi.nlm.nih.gov/pubmed/7908643) | metadata signals extractable PD data (EC50) |
+| `Crooks_2022.pdf` | Crooks J et al., HLA-DPB1 E69 genotype and exposure in b…, Occupational and environmen… (2022) | pd | 5 | [10.1136/oemed-2021-107736](https://doi.org/10.1136/oemed-2021-107736) | [34535537](https://www.ncbi.nlm.nih.gov/pubmed/34535537) | metadata signals extractable PD data (exposureresponse) |
+| `Bonanno_1993.pdf` | Bonanno G et al., Glutamic acid and gamma-aminobutyric ac…, Journal of neurochemistry (1993) | pd | 4 | [10.1111/j.1471-4159.1993.tb03558.x](https://doi.org/10.1111/j.1471-4159.1993.tb03558.x) | [8099950](https://www.ncbi.nlm.nih.gov/pubmed/8099950) | metadata signals extractable PD data (EC50) |
+| `Bowery_1974.pdf` | Bowery NG et al., Depolarizing actions of gamma-aminobuty…, British journal of pharmaco… (1974) | pd | 4 | [10.1111/j.1476-5381.1974.tb08563.x](https://doi.org/10.1111/j.1476-5381.1974.tb08563.x) | [4154116](https://www.ncbi.nlm.nih.gov/pubmed/4154116) | metadata signals extractable PD data (sigmoid) |
+| `Dimpfel_2007.pdf` | Dimpfel W et al., Theogallin and L-theanine as active ing…, The Journal of pharmacy and… (2007) | pd | 4 | [10.1211/jpp.59.8.0011](https://doi.org/10.1211/jpp.59.8.0011) | [17725856](https://www.ncbi.nlm.nih.gov/pubmed/17725856) | metadata signals extractable PD data (EC50) |
+| `Kompella_1995.pdf` | Kompella UB et al., Possible existence of Na(+)-coupled ami…, Life sciences (1995) | pd | 4 | [10.1016/0024-3205(95)02105-r](https://doi.org/10.1016/0024-3205(95)02105-r) | [7674833](https://www.ncbi.nlm.nih.gov/pubmed/7674833) | metadata signals extractable PD data (EC50) |
+| `Lee_2020.pdf` | Lee JM et al., Antioxidant and gastrointestinal cytopr…, International journal of bi… (2020) | pd | 4 | [10.1016/j.ijbiomac.2020.03.050](https://doi.org/10.1016/j.ijbiomac.2020.03.050) | [32165198](https://www.ncbi.nlm.nih.gov/pubmed/32165198) | metadata signals extractable PD data (IC50) |
+| `Matthews_1991.pdf` | Matthews JC et al., Stimulation of 22Na+ efflux from rat fo…, Biochemical pharmacology (1991) | pd | 4 | [10.1016/0006-2952(91)90520-f](https://doi.org/10.1016/0006-2952(91)90520-f) | [1681811](https://www.ncbi.nlm.nih.gov/pubmed/1681811) | metadata signals extractable PD data (EC50) |
+| `Maura_1998.pdf` | Maura G et al., Glutamate release in human cerebral cor…, British journal of pharmaco… (1998) | pd | 4 | [10.1038/sj.bjp.0701581](https://doi.org/10.1038/sj.bjp.0701581) | [9484853](https://www.ncbi.nlm.nih.gov/pubmed/9484853) | metadata signals extractable PD data (EC50) |
+| `Sun_2026.pdf` | Sun S et al., A Fe3+-Phenylalanine Coordinated 3D Net…, ACS applied materials & int… (2026) | pd | 4 | [10.1021/acsami.5c17623](https://doi.org/10.1021/acsami.5c17623) | [41486705](https://www.ncbi.nlm.nih.gov/pubmed/41486705) | metadata signals extractable PD data (EC50) |
+| `Wang_2018.pdf` | Wang Z et al., Effectively preparing soluble ovomucin…, International journal of bi… (2018) | pd | 4 | [10.1016/j.ijbiomac.2018.06.101](https://doi.org/10.1016/j.ijbiomac.2018.06.101) | [29944939](https://www.ncbi.nlm.nih.gov/pubmed/29944939) | metadata signals extractable PD data (IC50) |
+| `Winarta_2026.pdf` | Winarta Y et al., Echinoderm collagen as a neuromodulator…, Archives of biochemistry an… (2026) | pd | 4 | [10.1016/j.abb.2026.110758](https://doi.org/10.1016/j.abb.2026.110758) | [41672189](https://www.ncbi.nlm.nih.gov/pubmed/41672189) | metadata signals extractable PD data (IC50) |
+| `Zhao_2024.pdf` | Zhao S et al., Preparation, characterization and micro…, Journal of food science (2024) | pd | 4 | [10.1111/1750-3841.17160](https://doi.org/10.1111/1750-3841.17160) | [39126687](https://www.ncbi.nlm.nih.gov/pubmed/39126687) | metadata signals extractable PD data (IC50) |
+| `Giletti_2017.pdf` | Giletti A et al., Methotrexate pharmacogenetics in Urugua…, European journal of pharmac… (2017) | pgx | 5 | [10.1016/j.ejps.2017.09.006](https://doi.org/10.1016/j.ejps.2017.09.006) | [28887233](https://www.ncbi.nlm.nih.gov/pubmed/28887233) | metadata signals extractable PGX data (SLC19A1) |
+| `Pérez-Solís_2021.pdf` | Pérez-Solís D et al., Novel UGT1A1 Gene Mutations in a Boy wi…, Journal of pediatric geneti… (2021) | pgx | 5 | [10.1055/s-0040-1714361](https://doi.org/10.1055/s-0040-1714361) | [34849280](https://www.ncbi.nlm.nih.gov/pubmed/34849280) | metadata signals extractable PGX data (UGT1A1) |
+
+<sub>queue written 2026-09-14T15:14:45.455621+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abu-Shmais_2025 | irrelevant | 0 | 0 | The paper describes the characterization of monoclonal antibodies against influenza H5 viruses and contains no pharmacokinetic data for glutamic acid. |
+| PD | Abu-Shmais_2025 | not_relevant | 0 | 0 | The paper reports pharmacological data (IC80, KD) for monoclonal antibodies against influenza, not pharmacodynamic parameters for Glutamic acid. |
+| PD | Adhikari_2022 | not_relevant | 0 | 0 | The paper reports in-silico docking and a single IC50 value for a novel compound, not a pharmacodynamic or exposure-response analysis for Glutamic acid. |
+| popPK | Ahmadian_1997 | irrelevant | 0 | 0 | The paper is a medicinal chemistry and pharmacology study characterizing a glutamate receptor agonist, not a pharmacokinetic study of glutamic acid. |
+| PD | Aldholmi_2022 | not_relevant | 0 | 0 | The paper reports the isolation and structure elucidation of natural products (euglenatides) and their biological activity (IC50 values), but does not report a pharmacodynamic model or exposure-response relationship for Glutamic acid (which is used only as a fermentation nutrient). |
+| popPK | André_2008 | irrelevant | 0 | 0 | The paper is an electrophysiological study of GABAergic responses in cortical dysplasia and does not report pharmacokinetic parameters for glutamic acid. |
+| popPK | Antoniw_1990 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of a prodrug (4-(bis (2-chloroethyl) amino) benzoyl-L-glutamic acid) and its active metabolite (benzoic acid mustard), not glutamic acid itself. |
+| popPK | Auzenne_2002 | irrelevant | 0 | 0 | The study focuses on the therapeutic efficacy of a paclitaxel-poly-L-glutamic acid copolymer in tumor models, not on the pharmacokinetic parameters of glutamic acid itself. |
+| popPK | Avenot_2020 | irrelevant | 0 | 0 | The paper is a study on fungicide resistance in Botrytis cinerea and does not involve pharmacokinetic parameters for glutamic acid. |
+| PD | Avenot_2020 | not_relevant | 0 | 0 | The paper reports EC50 values for fungicide resistance in fungi, not a pharmacodynamic exposure-response relationship for the drug Glutamic acid. |
+| PGx | Babu_2021 | not_relevant | 0 | 0 | The paper describes a bacterial molecular biology mechanism involving DNA replication and protein mutations, not a pharmacogenomic effect on the pharmacokinetics or pharmacodynamics of glutamic acid as a drug. |
+| popPK | Barda_2004 | irrelevant | 0 | 0 | The paper is a structure-activity relationship (SAR) study of a drug compound (LY181837) targeting glutamate receptors, not a pharmacokinetic study of glutamic acid itself. |
+| PD | Barda_2004 | not_relevant | 0 | 0 | The paper reports an in vitro EC50 for a specific compound (LY181837) acting on a receptor, not a pharmacodynamic exposure-response or dose-response relationship for the drug Glutamic acid itself. |
+| popPK | Bednarczyk-Cwynar_2026 | irrelevant | 0 | 0 | The paper studies oleanolic acid derivatives and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Bednarczyk-Cwynar_2026 | not_relevant | 0 | 0 | The paper focuses on the synthesis and in vitro cytotoxicity (IC50) of oleanolic acid derivatives, not on the pharmacodynamics or exposure-response relationship of Glutamic acid. |
+| PGx | Bian_2024 | not_relevant | 0 | 0 | The paper investigates genetic determinants of the immune response (IgG antibody levels) to a vaccine, not the pharmacokinetics or pharmacodynamics of the drug glutamic acid. |
+| PGx | Blasetti_2017 | not_relevant | 0 | 0 | The paper investigates the association between the PTPN22 C1858T polymorphism and Type 1 Diabetes clinical parameters (C-peptide, insulin requirement), not the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| popPK | Bonanno_1993 | irrelevant | 0 | 0 | The paper title indicates a mechanistic study on neurotransmitter release modulation in rat brain, not a pharmacokinetic study reporting quantitative disposition parameters for glutamic acid. |
+| PD | Bonanno_1993 | not_relevant | 0 | 0 | The paper investigates the neurochemical interaction between glutamic acid and GABA release in rat brain axon terminals, focusing on heterocarrier mechanisms rather than pharmacodynamic exposure-response modeling or dose-effect analysis. |
+| popPK | Bonanno_1994 | irrelevant | 0 | 0 | The paper describes in-vitro release mechanisms in synaptosomes, not pharmacokinetic disposition parameters for glutamic acid. |
+| PD | Bonanno_1994 | not_relevant | 0 | 0 | The paper investigates the reciprocal modulation of glutamate and glycine release by heterocarriers in synaptosomes, which is a neurophysiological mechanism study, not a pharmacodynamic exposure-response or dose-response analysis of Glutamic acid as a drug. |
+| PGx | Borrelli_2018 | not_relevant | 0 | 0 | The paper investigates plant physiology and salinity tolerance in wheat, not human pharmacogenomics or drug metabolism. |
+| PD | Bowery_1974 | not_relevant | 0 | 0 | The paper investigates the pharmacology of GABA and related compounds, not Glutamic acid, and does not report PD parameters for the target drug. |
+| popPK | Bozdaganyan_2025 | irrelevant | 0 | 0 | The paper is a molecular dynamics simulation study of paclitaxel binding to tubulin and does not involve glutamic acid or pharmacokinetic parameters. |
+| PD | Bozdaganyan_2025 | not_relevant | 0 | 0 | The paper is a molecular dynamics simulation study of paclitaxel-tubulin binding mechanics and does not report any pharmacodynamic (exposure-response) or dose-response data for Glutamic acid or any other drug. |
+| popPK | Bräuner-Osborne_1998 | irrelevant | 0 | 0 | The paper is a pharmacological study of glutamate receptor agonists/antagonists in cell lines, not a pharmacokinetic study of glutamic acid. |
+| PGx | Cano_2025 | not_relevant | 0 | 0 | The paper investigates molecular mimicry between Toxoplasma gondii and human autoantigens in schizophrenia, not pharmacogenomics or PK/PD parameters of glutamic acid. |
+| popPK | Causevic_1999 | irrelevant | 0 | 0 | The paper studies the molecular binding properties of a mutated receptor (PPAR) involving a glutamic acid residue, not the pharmacokinetics of glutamic acid as a drug. |
+| PD | Causevic_1999 | not_relevant | 0 | 0 | The paper discusses the role of a glutamic acid residue in receptor ligand binding affinity (EC50 changes) but does not report a pharmacodynamic exposure-response or dose-response relationship for the drug Glutamic acid itself. |
+| PD | Chang_2024 | not_relevant | 0 | 0 | The paper reports an IC50 for a cisplatin nanomedicine formulation, not a pharmacodynamic or exposure-response relationship for the drug Glutamic acid itself. |
+| PD | Chiu_2017 | not_relevant | 0 | 0 | The paper evaluates the neuroprotective effects of peptides (R18, COG1410, APP96-110) against glutamic acid-induced excitotoxicity, but does not report a pharmacodynamic model or numeric PD parameters for glutamic acid itself. |
+| popPK | Choudhuri_2024 | irrelevant | 0 | 0 | The paper is a computational study on malaria drug targets and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Choudhuri_2024 | not_relevant | 0 | 0 | The paper is a computational study on malaria drug target identification and molecule generation using single-cell transcriptomics and deep learning; it does not report any pharmacodynamic or exposure-response data for Glutamic acid or any other drug. |
+| PGx | Chu_2023 | not_relevant | 0 | 0 | The paper describes a genetic mutation in HNF1A causing diabetes (MODY3) and discusses the amino acid substitution Lysine to Glutamic Acid, but it does not report a pharmacogenomic effect on the PK or PD of the drug glutamic acid. |
+| PD | Crooks_2022 | not_relevant | 0 | 0 | The paper investigates the association between HLA-DPB1 genotype and beryllium exposure/disease, not the pharmacodynamic or exposure-response relationship of Glutamic acid. |
+| popPK | Davran_2026 | irrelevant | 0 | 0 | The paper is a review of marine bioactive compounds and functional seafoods, and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Davran_2026 | not_relevant | 0 | 0 | The paper is a general review of marine bioactive compounds and does not report any specific pharmacodynamic or exposure-response data for Glutamic acid. |
+| popPK | Diamond_2026 | irrelevant | 0 | 0 | The paper describes the mechanism of action of ribosome inhibitors (interdictors) and mentions glutamic acid only as an amino acid residue in the nascent peptide chain, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Dimpfel_2007 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological characterization of green tea ingredients and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Dimpfel_2007 | not_relevant | 0 | 0 | The paper focuses on the electrophysiological characterization of Theogallin and L-theanine, not Glutamic acid, and does not report PD parameters for the target drug. |
+| popPK | Dorneich_2026 | irrelevant | 0 | 0 | The paper is a PET imaging study of [18F]F-DED in autoimmune encephalitis and does not report pharmacokinetic parameters for glutamic acid. |
+| popPK | Duan_2000 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study characterizing receptor pharmacology (EC50, desensitization) in crab neurons, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Dueñas_2024 | not_relevant | 0 | 0 | The paper studies the effect of seed priming agents (including poly-gamma-glutamic acid) on rice germination and gene expression, not the pharmacokinetics or pharmacodynamics of glutamic acid in humans. |
+| PGx | Eastman_2022 | not_relevant | 0 | 0 | The paper investigates plant-pathogen interactions and NAD+ hydrolysis by a bacterial effector, not human pharmacogenomics or drug PK/PD. |
+| PD | Ederer_2022 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of Bactericidal/Permeability-Increasing Protein (BPI) variants, not Glutamic acid; the mention of glutamic acid refers to an amino acid residue in the protein structure. |
+| PGx | Ejdesjö_2012 | not_relevant | 0 | 0 | The paper investigates teratogenic effects of diabetes and genetics in rats, mentioning glutamic acid only as a metabolite in maternal plasma, not as a drug subject to pharmacogenomic PK/PD analysis. |
+| popPK | Escala_2020 | irrelevant | 0 | 0 | The provided evidence consists entirely of garbled text and encoding errors, making it impossible to identify the drug or extract any pharmacokinetic parameters. |
+| PD | Escala_2020 | not_relevant | 0 | 0 | The text is a study on the mechanical properties of small ruginees (insects) and does not contain any pharmacodynamic or exposure-response data for Glutamic acid. |
+| PGx | Fan_2023 | not_relevant | 0 | 0 | The paper is a review of DYT-TOR1A dystonia pathogenesis and treatment, focusing on the TOR1A gene mutation and neurological mechanisms, not on the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| popPK | Feng_2021 | irrelevant | 0 | 0 | The study investigates the association between air pollution and amino acid levels (including glutamic acid) as biomarkers of vascular dysfunction, not the pharmacokinetic disposition parameters (CL, V, etc.) of glutamic acid as a drug. |
+| popPK | Figg_1999 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for thalidomide, not glutamic acid. |
+| popPK | Firsov_2010 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of N-(5-oxynicotinoyl)-L-glutamic acid (ONG), a derivative, rather than glutamic acid itself. |
+| popPK | Focesi_1987 | irrelevant | 0 | 0 | The paper is a structural biology study on hemoglobin in snakes and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Focesi_1987 | not_relevant | 0 | 0 | The paper describes the structural and functional properties of hemoglobin (oxygen affinity, dimer-tetramer transition) and mentions a glutamic acid residue substitution, but it does not report a pharmacodynamic or exposure-response relationship for the drug Glutamic acid. |
+| PD | Gangjee_1994 | not_relevant | 3 | 3 | The paper reports in vitro IC50 values for enzyme inhibition and cytotoxicity, but does not provide a pharmacokinetic/pharmacodynamic (PK/PD) model, exposure-response analysis, or dose-response curve fitting with derived parameters like Emax or EC50 in the context of drug disposition. |
+| PD | Gangjee_1995 | not_relevant | 3 | 2 | The paper reports in vitro IC50 values for enzyme inhibition and cytotoxicity, but does not provide a pharmacokinetic/pharmacodynamic model, exposure-response relationship, or dose-effect curve with derivable PD parameters like Emax or EC50 in a biological system context. |
+| PD | Gangjee_1995_2 | not_relevant | 3 | 3 | The paper reports in vitro IC50 values for enzyme inhibition and cell growth, which are pharmacological potency metrics, but does not report a pharmacokinetic-pharmacodynamic (PK/PD) model, exposure-response relationship, or dose-response curve with derived PD parameters (Emax, EC50, slope) for the drug in a biological system. |
+| PD | Gangjee_2007 | not_relevant | 3 | 2 | The paper reports in vitro IC50 values for DHFR inhibition and cell growth, which are pharmacodynamic endpoints, but it is a medicinal chemistry study focused on synthesis and does not provide a pharmacokinetic (PK) or exposure-response (PD) model, nor does it analyze the relationship between drug concentration/exposure and effect in a physiological or PK/PD context. |
+| PGx | Garcia-Garcia_2009 | not_relevant | 0 | 0 | The paper studies the effect of a VGLUT1 genotype on endogenous glutamate levels and behavior, not the pharmacokinetics or pharmacodynamics of a drug. |
+| PD | Geis_2026 | not_relevant | 0 | 0 | The paper reports in vitro binding affinities (IC50) and in vivo PET imaging data for radiolabeled PSMA inhibitors, but does not report a pharmacodynamic exposure-response or dose-response relationship for the drug itself with numeric PD parameters (e.g., Emax, EC50 of effect). |
+| PGx | Geis_2026 | not_relevant | 0 | 0 | The paper investigates the structure-activity relationship of chemical modifications (glutamic acid/histidine) on PSMA inhibitors, not the effect of human gene variants on the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| PGx | Giletti_2017 | not_relevant | 0 | 0 | The paper studies Methotrexate (a drug), not glutamic acid (a nutrient/endogenous compound), and reports clinical toxicity outcomes rather than PK/PD parameters of glutamic acid. |
+| PGx | Giuffrida_2024 | not_relevant | 0 | 0 | The paper investigates the association between genetic variants and the risk of coronary artery disease (a clinical outcome), not the pharmacokinetic or pharmacodynamic parameters of a drug. |
+| popPK | Guldbrandt_2002 | irrelevant | 0 | 0 | The paper is a medicinal chemistry and pharmacology study focusing on the synthesis and receptor binding of glutamic acid analogs, not a pharmacokinetic study. |
+| PGx | Halmschlag_2020 | not_relevant | 0 | 0 | The paper focuses on metabolic engineering of Bacillus subtilis for poly-γ-glutamic acid production, not on human pharmacogenomics or drug PK/PD parameters. |
+| PGx | Hannelius_2020 | not_relevant | 0 | 0 | The paper reports a pharmacogenomic effect of HLA genotype on the efficacy of GAD-alum immunotherapy (measured by C-peptide retention), not on the PK/PD parameters of glutamic acid. |
+| popPK | Hassoni_1992 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of glutamate receptor agonists in Helix neurons, reporting EC50 values rather than pharmacokinetic disposition parameters. |
+| PGx | Hikino_2019 | not_relevant | 0 | 0 | The paper is a protocol for a systematic review of albuterol and ADRB2 polymorphisms, not a study on the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| popPK | Hirata_2024 | irrelevant | 0 | 0 | The study is a metabolomic association analysis of NAFLD and arterial stiffness, not a pharmacokinetic study, and glutamic acid is only a measured metabolite without PK parameters. |
+| popPK | Inan_2026 | irrelevant | 0 | 0 | The paper is an in-silico study on Sorafenib derivatives targeting VEGFR2 and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Inan_2026 | not_relevant | 0 | 0 | The paper is an in-silico study on Sorafenib derivatives targeting VEGFR2 and does not involve Glutamic acid or report any pharmacodynamic or exposure-response data. |
+| popPK | Janzen_2017 | irrelevant | 0 | 0 | The paper is a mechanistic study on glycine receptor structure and function, not a pharmacokinetic study of glutamic acid. |
+| popPK | Jha_2023 | irrelevant | 0 | 0 | The paper is a computational study on MTHFD2 inhibitors and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Jha_2023 | not_relevant | 0 | 0 | The paper is a computational study (MD simulations, docking) of MTHFD2 inhibitors and does not report any pharmacodynamic or exposure-response data for Glutamic acid. |
+| popPK | Jha_2024 | irrelevant | 0 | 0 | The paper is a computational study on MTHFD2 inhibitors and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Jha_2024 | not_relevant | 0 | 0 | The paper is a computational study (molecular docking and dynamics) of MTHFD inhibitors and does not report any pharmacodynamic or exposure-response data for Glutamic acid. |
+| popPK | Jodrell_1991 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the drug ICI D1694 (a glutamic acid conjugate), not glutamic acid itself as the subject drug. |
+| popPK | Johansen_1994 | irrelevant | 0 | 0 | The paper is a structure-activity relationship study on NMDA receptor ligands and does not report pharmacokinetic parameters for glutamic acid. |
+| popPK | Johansen_1998 | irrelevant | 0 | 0 | The paper is a pharmacological study of a glutamate receptor ligand (Bu-HIBO) and does not report pharmacokinetic parameters for glutamic acid. |
+| popPK | Johansen_2001 | irrelevant | 0 | 0 | The paper focuses on the enantiopharmacology and receptor binding of ACPA and demethyl-ACPA, not the pharmacokinetics of glutamic acid. |
+| popPK | Judkowski_2001 | irrelevant | 0 | 0 | The paper is an immunological study on T-cell stimulation by glutamic acid decarboxylase peptides, not a pharmacokinetic study of glutamic acid. |
+| PGx | Kamboh_1992 | not_relevant | 0 | 0 | The paper describes a structural variant in apolipoprotein A-IV and its potential impact on lipid metabolism, but it does not report pharmacokinetic or pharmacodynamic parameters for glutamic acid. |
+| popPK | Kang_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and efficacy of trans-cinnamic acid conjugates (tCA-GA), where glutamic acid is a structural component of the prodrug rather than the subject drug, and no PK parameters for free glutamic acid are reported. |
+| popPK | Kashyap_2024 | irrelevant | 0 | 0 | The paper studies the bioavailability of Vitamin B12 (cyanocobalamin), not glutamic acid. |
+| PGx | Kelly_1990 | not_relevant | 0 | 0 | The paper describes a genetic mutation in the MCAD enzyme affecting energy metabolism, not the pharmacokinetics or pharmacodynamics of glutamic acid as a drug. |
+| PD | Kilari_2023 | not_relevant | 0 | 0 | The paper reports IC50 values for a crude microalgae extract, not for the specific drug Glutamic acid, which is only listed as one of many phytochemicals present in the extract. |
+| popPK | Kompella_1995 | irrelevant | 0 | 0 | The paper title indicates a study on amino acid transport mechanisms in rabbit conjunctiva, not a pharmacokinetic study reporting quantitative disposition parameters for glutamic acid. |
+| PD | Kompella_1995 | not_relevant | 0 | 0 | The paper investigates the mechanism of amino acid transport (Na+ coupling) in rabbit conjunctiva, not the pharmacodynamic exposure-response or dose-response relationship of Glutamic acid as a drug. |
+| PD | Kriegelstein_2022 | not_relevant | 0 | 0 | The paper describes the chemical synthesis of a radiolabeled substrate ([3H]NAAG) and does not report any pharmacodynamic or exposure-response data for glutamic acid. |
+| popPK | Kumar_2025 | irrelevant | 0 | 0 | The paper is an in-silico study on glutamate racemase inhibitors and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Kumar_2025 | not_relevant | 0 | 0 | The paper is an in silico study (virtual screening and MD simulations) identifying potential inhibitors for glutamate racemase; it does not report any pharmacodynamic (exposure-response or dose-response) data or numeric PD parameters for glutamic acid or any drug. |
+| popPK | Kumar_2026 | irrelevant | 0 | 0 | The paper is a proteomics study on tau protein in neurodegenerative diseases and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Kumar_2026 | not_relevant | 0 | 0 | The paper is a proteomics study characterizing tau protein modifications in brain tissue and does not report any pharmacodynamic or exposure-response data for Glutamic acid. |
+| popPK | Kumari_2025 | irrelevant | 0 | 0 | The paper is a review of the nutritional and therapeutic potential of the plant Dioscorea oppositifolia and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Kumari_2025 | not_relevant | 0 | 0 | The paper is a review of the nutritional and therapeutic potential of Dioscorea oppositifolia and does not report any pharmacodynamic or exposure-response data for Glutamic acid. |
+| PGx | Kwon_2019 | not_relevant | 0 | 0 | The paper describes the vaccine efficacy of a Mycobacterium tuberculosis antigen and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| PGx | Lassila_2016 | not_relevant | 0 | 0 | The paper describes the metabolic formation of glutathione conjugates of pulegone and menthofuran, not the pharmacokinetics or pharmacodynamics of glutamic acid itself, nor does it report pharmacogenomic effects. |
+| PGx | Le_2021 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomic effect of HLA variants on the clinical response to lithium, not on the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| popPK | Le_2024 | irrelevant | 0 | 0 | The paper describes antiviral activity and molecular modeling of glycyrrhizic acid derivatives, not the pharmacokinetics of glutamic acid. |
+| PD | Le_2024 | not_relevant | 0 | 0 | The paper reports IC50/EC50 values for Glycyrrhizic acid derivatives, not Glutamic acid, and does not contain a pharmacodynamic model for the specified drug. |
+| PD | Lee_2020 | not_relevant | 0 | 0 | The paper investigates the biological effects of poly-γ-glutamic acid (a polymer) rather than the pharmacokinetic/pharmacodynamic profile of the drug Glutamic acid, and does not report exposure-response or dose-response modeling with numeric PD parameters. |
+| PGx | Lewandrowski_2024 | not_relevant | 0 | 0 | The paper investigates pharmacogenomics of opioids for pain management and does not report PK/PD parameters for glutamic acid. |
+| PGx | Lewis_2022 | not_relevant | 0 | 0 | The paper investigates metabolomic biomarkers for COVID-19 diagnosis and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| PGx | Li_2007 | not_relevant | 0 | 0 | The paper investigates the catalytic mechanism of UGT1A6 using site-directed mutagenesis, not the effect of human genetic variants on the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| PGx | Linskens_1973 | not_relevant | 0 | 0 | The paper studies maize pollen genetics and amino acid metabolism, not human pharmacogenomics or drug pharmacokinetics. |
+| popPK | Littman_1999 | irrelevant | 0 | 0 | The paper is a pharmacological study of receptor ligands and does not report any pharmacokinetic parameters for glutamic acid. |
+| popPK | Liu_2026 | irrelevant | 0 | 0 | The paper is a study on TRPV1 peptide inhibitors and does not report pharmacokinetic parameters for glutamic acid. |
+| PGx | Liu_2026_2 | not_relevant | 0 | 0 | The paper investigates the association between metabolites (including glutamic acid) and blood pressure, not the pharmacokinetics or pharmacodynamics of glutamic acid as a drug. |
+| popPK | London_1979 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay investigating cooperative interactions, not a pharmacokinetic study reporting disposition parameters for glutamic acid. |
+| PGx | Ludvigsson_2021 | not_relevant | 0 | 0 | The paper reports a pharmacogenomic effect of GAD-alum (a drug) on C-peptide levels, not a pharmacokinetic or pharmacodynamic effect of glutamic acid itself. |
+| PGx | Ludvigsson_2022 | not_relevant | 0 | 0 | The paper is a clinical trial protocol for an immunotherapy (rhGAD65) in Type 1 Diabetes and does not report pharmacokinetic or pharmacodynamic parameters for the drug glutamic acid. |
+| popPK | Luzzi_1988 | irrelevant | 0 | 0 | The paper is a pharmacological study of glutamic acid receptor agonists and antagonists in guinea-pig tissue, not a pharmacokinetic study, and reports no disposition parameters. |
+| PGx | Ma_2024 | not_relevant | 0 | 0 | The paper investigates the toxicological effects of environmental pollutants (halogenated PAHs) on metabolism, not the pharmacogenomics of glutamic acid as a drug. |
+| popPK | Madsen_1992 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and biological activity of glutamic acid analogues, reporting no pharmacokinetic parameters. |
+| popPK | Maiti_2016 | irrelevant | 0 | 0 | The paper describes the synthesis and anti-HCV activity of prodrugs containing glutamic acid, not the pharmacokinetics of glutamic acid itself. |
+| PGx | Mann_1995 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of the endogenous protein ApoE, not a drug, and does not report effects on glutamic acid. |
+| popPK | Maqsood_2020 | irrelevant | 0 | 0 | The paper is a study on fungicide resistance in Botrytis cinerea and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Maqsood_2020 | not_relevant | 0 | 0 | The paper studies fungicide resistance in a fungus (Botrytis cinerea) and does not report pharmacodynamic or exposure-response relationships for the drug Glutamic acid. |
+| PGx | Mardon_1969 | not_relevant | 0 | 0 | The paper studies the morphological dimorphism of Candida albicans in response to amino acids and gas ratios, not the pharmacokinetics or pharmacodynamics of glutamic acid in humans or animals. |
+| PD | Martinez_2020 | not_relevant | 0 | 0 | The paper focuses on identifying the biological target (GlmU) of BSTHQ derivatives using molecular docking and MD simulations, not on characterizing a pharmacodynamic exposure-response or dose-response relationship for Glutamic acid. |
+| popPK | Martinez_2026 | irrelevant | 0 | 0 | The paper is a review of Tamarindus indica phytochemicals and health benefits, and glutamic acid is only mentioned as a non-essential amino acid present in the fruit, with no pharmacokinetic parameters reported. |
+| PD | Martinez_2026 | not_relevant | 0 | 0 | The paper is a review of the phytochemical composition and general health benefits of Tamarindus indica, containing no pharmacokinetic or pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for glutamic acid or any other specific drug. |
+| PGx | Marček_2019 | not_relevant | 0 | 0 | The paper studies plant metabolic responses to drought stress, not human pharmacogenomics or drug pharmacokinetics. |
+| popPK | Matthews_1991 | irrelevant | 0 | 0 | The paper describes an in-vitro mechanistic study of ion efflux from membrane vesicles, not a pharmacokinetic study of glutamic acid disposition. |
+| popPK | Matzen_1997 | irrelevant | 0 | 0 | The paper is a medicinal chemistry and pharmacology study focusing on the synthesis and receptor binding potency (IC50/EC50) of glutamic acid analogs, not a pharmacokinetic study reporting disposition parameters for glutamic acid. |
+| popPK | Maura_1998 | irrelevant | 0 | 0 | The paper focuses on the neurochemical mechanism of glutamate release and receptor modulation, not on the pharmacokinetic disposition parameters (CL, V, etc.) of glutamic acid as a drug. |
+| PD | Maura_1998 | not_relevant | 0 | 0 | The paper investigates the modulation of glutamate release by 5-HT1D agonists, not the pharmacodynamics of Glutamic acid itself. |
+| popPK | Mermans_2017 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of glutamate-gated chloride channels, not a pharmacokinetic study of glutamic acid. |
+| popPK | Miljak_2026 | irrelevant | 0 | 0 | The study focuses on alpha-lipoic acid (ALA), not glutamic acid, which is only mentioned as a ternary component in compatibility tests. |
+| PD | Miljak_2026 | not_relevant | 0 | 0 | The paper focuses on the formulation and physicochemical characterization (solubility, stability, permeability) of alpha-lipoic acid cyclodextrin complexes and does not report any pharmacodynamic or exposure-response data. |
+| PGx | Mizuta_2008 | not_relevant | 0 | 0 | The paper investigates the expression and signaling of GABA receptors in airway epithelium, not the pharmacogenomics of glutamic acid. |
+| popPK | Monn_1997 | irrelevant | 0 | 0 | The paper focuses on the synthesis and pharmacological characterization of a glutamate receptor agonist (LY354740), not the pharmacokinetics of glutamic acid itself. |
+| PGx | Monsalve_1990 | not_relevant | 0 | 0 | The paper reports a genetic mutation causing a deficiency in the endogenous enzyme lipoprotein lipase, not a pharmacogenomic effect on the PK/PD of the drug glutamic acid. |
+| PD | Moulick_2023 | not_relevant | 0 | 0 | The paper analyzes the nutritional composition and in vitro antioxidant activity (DPPH scavenging) of plant extracts, not the pharmacodynamics of Glutamic acid as a drug. |
+| PGx | Naumova_1978 | not_relevant | 0 | 0 | The paper describes bacterial metabolism of synthetic compounds and does not report any pharmacogenomic effects on the PK or PD of glutamic acid. |
+| PGx | Nazarian_2022 | not_relevant | 0 | 0 | The paper reports genetic associations with plasma metabolite levels (glutamic acid) but does not involve a drug or its pharmacokinetic/pharmacodynamic parameters. |
+| PD | Niaz_2021 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) of plant fractions, not a pharmacodynamic exposure-response relationship for the drug Glutamic acid. |
+| PD | Nicholson_1988 | not_relevant | 2 | 1 | The study reports a null result (no change in PC20H or RL) with only baseline and post-infusion plasma concentrations, lacking a dose-response curve or numeric PD parameters like Emax or EC50. |
+| PGx | Nickerson_2013 | not_relevant | 0 | 0 | The paper discusses a genetic variant in UBIAD1 affecting menaquinone-4 synthesis and cholesterol metabolism, not the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| popPK | Nieoczym_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of 6-gingerol, not glutamic acid. |
+| PD | Nieoczym_2026 | not_relevant | 0 | 0 | The paper investigates the anticonvulsant potential of 6-gingerol, not Glutamic acid; while glutamate levels are mentioned as a mechanism in the introduction, no exposure-response or dose-response PD parameters for glutamic acid are reported. |
+| PGx | Nudmamud-Thanoi_2020 | not_relevant | 0 | 0 | The paper reviews genetic associations with drug dependence and GABA neurotransmission, not the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| popPK | Odunsi_2022 | irrelevant | 0 | 0 | The paper focuses on the immunological and metabolic effects of the IDO1 inhibitor epacadostat in ovarian cancer, with no pharmacokinetic data or mention of glutamic acid as a subject drug. |
+| PD | Odunsi_2022 | not_relevant | 0 | 0 | The paper investigates the metabolic and immunological mechanisms of IDO1 inhibition (epacadostat) and does not report any pharmacodynamic or exposure-response relationship for Glutamic acid. |
+| PGx | Olayemi_2024 | not_relevant | 0 | 0 | The paper investigates MHC-I alleles and Lassa virus infection in rodents, not the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| popPK | Patel_1991 | irrelevant | 0 | 0 | The paper is a mechanistic study on phosphoinositide signaling in neuronal cultures, not a pharmacokinetic study, and glutamic acid is used as a receptor agonist rather than the subject drug for PK analysis. |
+| PD | Patel_1991 | not_relevant | 3 | 2 | The paper reports an EC50 for extracellular calcium, not for glutamic acid, and does not provide a dose-response curve or numeric PD parameters for the drug of interest. |
+| PGx | Patel_2021 | not_relevant | 0 | 0 | The paper studies plant physiology and drought stress in peanuts, not human pharmacogenomics or drug pharmacokinetics. |
+| PGx | Pearl_2007 | not_relevant | 0 | 0 | The paper is a general review of pediatric neurotransmitter disorders and does not report specific pharmacogenomic effects on PK/PD parameters for glutamic acid. |
+| PGx | Pesti_1994 | not_relevant | 0 | 0 | The paper studies dietary amino acid responses in chickens, not the pharmacokinetics or pharmacodynamics of glutamic acid as a drug in humans. |
+| popPK | Pliska_1976 | irrelevant | 0 | 0 | The study focuses on the inactivation of neurohypophysial hormone analogues (oxytocin/deaminooxytocin) and does not report pharmacokinetic parameters for glutamic acid as the subject drug. |
+| PGx | Puente-Marin_2023 | not_relevant | 0 | 0 | The paper investigates the immunological response to GAD-alum therapy in Type 1 Diabetes, not the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| PGx | Pérez-Solís_2021 | not_relevant | 0 | 0 | The paper reports a genetic variant in UGT1A1 affecting bilirubin metabolism, not a pharmacogenomic effect on the PK/PD of glutamic acid. |
+| popPK | Raig_2025 | irrelevant | 0 | 0 | The paper describes the development of LRRK2 kinase inhibitors for Parkinson's disease and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Raig_2025 | not_relevant | 0 | 0 | The paper reports in vitro biochemical IC50 values for LRRK2 kinase inhibition, which is a pharmacodynamic endpoint, but it does not report any exposure-response or dose-response relationship for Glutamic acid. |
+| popPK | Ranasinghe_2025 | irrelevant | 0 | 0 | The paper is a systematic review of biomarkers for diabetic cardiomyopathy and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Ranasinghe_2025 | not_relevant | 0 | 0 | The paper is a systematic review and meta-analysis of biomarkers in diabetic cardiomyopathy rodent models; it does not report a pharmacodynamic or exposure-response relationship for Glutamic acid. |
+| PGx | Rauscher_2016 | not_relevant | 0 | 0 | The paper discusses fungal protein phosphorylation and morphogenesis, not human pharmacogenomics or the pharmacokinetics/pharmacodynamics of glutamic acid. |
+| PGx | Rezaei_2021 | not_relevant | 0 | 0 | The paper investigates the association of HLA genotypes with Alzheimer's disease risk and clinical response to rivastigmine, not the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| popPK | Rjoob_2025 | irrelevant | 0 | 0 | The paper is a bioinformatics study on a knowledge graph for cardiovascular disease and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Rjoob_2025 | not_relevant | 0 | 0 | The paper describes a knowledge graph and machine learning model for gene-disease association and drug repurposing; it does not report pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for Glutamic acid or any other drug. |
+| popPK | Rjoob_2026 | irrelevant | 0 | 0 | The paper is a study on a cardiovascular knowledge graph and gene-disease prediction, containing no pharmacokinetic data for glutamic acid. |
+| PD | Rjoob_2026 | not_relevant | 0 | 0 | The paper describes a knowledge graph and machine learning model for gene-disease association and drug repurposing; it does not report pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for Glutamic acid or any other drug. |
+| PGx | Rosso_2008 | not_relevant | 0 | 0 | The paper investigates the evolutionary origin and subcellular localization of the endogenous enzyme GLUD2, not the pharmacokinetics or pharmacodynamics of glutamic acid as a drug. |
+| PD | Rubak_2022 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (ACEI) of peptides in fermented goat milk, not a pharmacodynamic exposure-response relationship for the drug Glutamic acid. |
+| popPK | Sanches_2026 | irrelevant | 0 | 0 | The paper is a bioinformatics study on thyroid cancer biomarkers where glutamic acid is mentioned only as a metabolite in a network, not as a subject of pharmacokinetic analysis. |
+| PD | Sanches_2026 | not_relevant | 0 | 0 | The paper is a bioinformatics study on biomarkers for papillary thyroid cancer using transcriptomics and metabolomics; it does not report any pharmacodynamic or exposure-response data for glutamic acid or any other drug. |
+| PGx | Santos_2020 | not_relevant | 0 | 0 | The paper reports metabolomic differences in dementia patients but does not investigate pharmacogenomic effects on the PK/PD of glutamic acid. |
+| PGx | Sasaki_2018 | not_relevant | 0 | 0 | The paper describes a genetic variant in apolipoprotein E associated with a disease phenotype (FSGS), not a pharmacogenomic effect on the PK/PD of a drug. |
+| PGx | Sass_2006 | not_relevant | 0 | 0 | The paper describes a genetic inborn error of metabolism (ACY1 deficiency) affecting endogenous amino acid metabolism, not the pharmacokinetics or pharmacodynamics of glutamic acid as a drug. |
+| popPK | Sayaf_2024 | irrelevant | 0 | 0 | The paper is a computational study on PHD inhibitors and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Sayaf_2024 | not_relevant | 0 | 0 | The paper is a computational study (molecular docking and dynamics) of PHD inhibitors and does not report any pharmacodynamic or exposure-response data for Glutamic acid. |
+| PGx | Semenova_2017 | not_relevant | 0 | 0 | The paper studies COMT and catecholamine metabolism in zebrafish, not the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| PGx | Shahid_2018 | not_relevant | 0 | 0 | The paper investigates the association of a SNP with oxidative stress biomarkers (MDA, GSH, GSSG) in coronary heart disease, not the pharmacokinetics or pharmacodynamics of glutamic acid as a drug. |
+| PGx | Shaik_2009 | not_relevant | 0 | 0 | The paper investigates the association between MGP gene polymorphisms and lead toxicity (blood lead levels/hematological parameters), not the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| popPK | Shanker_1992 | irrelevant | 0 | 0 | The paper describes the development of an analytical sensor for measuring glutamic acid concentration, not a pharmacokinetic study of the drug. |
+| popPK | Shave_2025 | irrelevant | 0 | 0 | The paper is a study on the cellular activity of a synthetic peptide (CQWW nullomer) and does not report pharmacokinetic parameters for glutamic acid. |
+| popPK | Shin_2026 | irrelevant | 0 | 0 | The paper describes the engineering of protein vesicles for enzymatic reactions and does not report pharmacokinetic parameters for glutamic acid. |
+| PGx | Silva_2016 | not_relevant | 0 | 0 | The paper reports a genetic mutation causing insecticide resistance in a pest, not a pharmacogenomic effect on the PK/PD of glutamic acid in humans. |
+| PGx | Sookoian_2015 | not_relevant | 0 | 0 | The paper reviews liver enzymes (ALT/AST) and metabolomics, not the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| PD | Sperk_1985 | not_relevant | 4 | 2 | The paper investigates the dose-response relationship of Kainic acid, not Glutamic acid, and only mentions Glutamic acid decarboxylase as a marker of irreversible damage without providing numeric PD parameters for Glutamic acid itself. |
+| popPK | Stan_2026 | irrelevant | 0 | 0 | The paper is a cardiac imaging study on amyloidosis and does not report pharmacokinetic parameters for glutamic acid. |
+| popPK | Staudt_2024 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and pharmacological characterization of mGlu2 receptor agonists, not a pharmacokinetic study of glutamic acid. |
+| popPK | Steinwurzel_2025 | irrelevant | 0 | 0 | The study investigates the effects of beta-hydroxybutyrate on brain excitability and measures glutamate concentrations via MRS, but does not report pharmacokinetic parameters (CL, V, etc.) for glutamic acid. |
+| popPK | Stensbøl_2001 | irrelevant | 0 | 0 | The paper is a pharmacological study of a glutamate receptor agonist (thio-ATPA) and does not report pharmacokinetic parameters for glutamic acid. |
+| popPK | Stensbøl_2002 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological and synthetic study of glutamic acid bioisosteres, reporting receptor binding and electrophysiological data rather than pharmacokinetic disposition parameters. |
+| PGx | Stern_2014 | not_relevant | 0 | 0 | The paper reports a genetic effect on basal cGMP levels (a physiological biomarker), not on the pharmacokinetic or pharmacodynamic parameters of the drug glutamic acid. |
+| popPK | Sun_2026 | irrelevant | 0 | 0 | The paper concerns agricultural applications of a Fe3+-Phenylalanine network for pesticide delivery and stress tolerance, not the pharmacokinetics of glutamic acid. |
+| PD | Sun_2026 | not_relevant | 0 | 0 | The paper focuses on a materials science application (Fe3+-Phenylalanine network for pesticide delivery) and does not report pharmacodynamic or exposure-response relationships for Glutamic acid. |
+| popPK | Tang_2025 | irrelevant | 0 | 0 | The paper is a metabolomics study comparing breath and blood metabolite profiles, not a pharmacokinetic study, and reports no disposition parameters for glutamic acid. |
+| PD | Tang_2025 | not_relevant | 0 | 0 | The paper is a comparative metabolomics study analyzing breath and blood samples; it does not report any pharmacodynamic, exposure-response, or dose-response relationships for glutamic acid or any other compound. |
+| popPK | Taylor_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for methotrexate, not glutamic acid (which is mentioned only as a metabolite). |
+| PD | Taylor_2023 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for methotrexate, not a pharmacodynamic (PD) or exposure-response model for glutamic acid. |
+| popPK | Teo_2004 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for thalidomide, not glutamic acid, which is only mentioned as a structural derivative. |
+| popPK | Toledano_2024 | irrelevant | 0 | 0 | The paper is a genomics study on stop codon readthrough by small molecules and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Toledano_2024 | not_relevant | 0 | 0 | The paper studies nonsense suppression by small molecules (e.g., gentamicin, G418) and does not report any pharmacodynamic or exposure-response data for Glutamic acid. |
+| PGx | Trussardi-Regnier_2009 | not_relevant | 0 | 0 | The paper investigates the effect of thalidomide on ABCB1 gene expression and chromatin structure in myeloma cells, not the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| PGx | Tsuzuki_2003 | not_relevant | 0 | 0 | The paper studies CYP2D6 enzyme kinetics using debrisoquine and bunitrolol, not the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| PD | Tu_2019 | not_relevant | 2 | 1 | The paper investigates the neuroprotective effects of baicalin on a Parkinson's disease model and identifies glutamic acid as a metabolite biomarker via metabolomics, but it does not report a pharmacodynamic exposure-response or dose-response relationship for glutamic acid itself, nor does it provide numeric PD parameters (e.g., Emax, EC50) for glutamic acid. |
+| PGx | WILLIAMSON_1957 | not_relevant | 0 | 0 | The paper studies bacterial metabolism of glutamic acid, not human pharmacogenomics or drug PK/PD. |
+| PD | Wang_2018 | not_relevant | 0 | 0 | The paper focuses on the preparation of soluble ovomucin and its antiviral activity, not on the pharmacodynamics or exposure-response relationship of Glutamic acid. |
+| PGx | Werner_2021 | not_relevant | 0 | 0 | The paper discusses genetic risk factors for schizophrenia and antipsychotic efficacy, but does not report pharmacogenomic effects on the PK or PD parameters of glutamic acid. |
+| popPK | Wheeler_1983 | irrelevant | 1 | 0 | The study is an in-vitro mechanistic analysis of amino acid release from synaptosomes, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for glutamic acid in a biological system. |
+| popPK | Widiandani_2026 | irrelevant | 0 | 0 | The paper focuses on in silico docking and in vitro cytotoxicity of pinostrobin pentanoate, not the pharmacokinetics of glutamic acid. |
+| PD | Widiandani_2026 | not_relevant | 0 | 0 | The paper studies pinostrobin pentanoate, not glutamic acid, and reports cytotoxicity (IC50) rather than a pharmacodynamic exposure-response model for the specified drug. |
+| popPK | Wilson_1988 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of alpha-melanotropin (alpha-MSH), using glutamic acid only as a pretreatment agent to deplete CNS stores, not as the subject drug for PK parameter estimation. |
+| PD | Winarta_2026 | not_relevant | 0 | 0 | The paper focuses on the biochemical characterization of echinoderm collagen and its interaction with NMDA receptors, not on the pharmacodynamics of Glutamic acid. |
+| PGx | Xiaochuang_2020 | not_relevant | 0 | 0 | The paper studies plant physiology and nitrogen metabolism in rice, not human pharmacogenomics or drug pharmacokinetics. |
+| popPK | Yang_2025 | irrelevant | 0 | 0 | The paper is a review of insulin and biosimilar insulin therapy in diabetes and does not report pharmacokinetic parameters for glutamic acid. |
+| PD | Yang_2025 | not_relevant | 0 | 0 | The paper is a narrative review on real-world evidence for insulin and biosimilar insulin, focusing on adherence, cost-effectiveness, and data gaps; it does not report any pharmacodynamic or exposure-response analysis for Glutamic acid. |
+| PGx | Yu_2014 | not_relevant | 0 | 0 | The paper describes the metabolic bioactivation of toosendanin and its conjugation with glutamic acid, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Zhang_2022 | not_relevant | 0 | 0 | The paper focuses on reversing multi-drug resistance in breast cancer using metformin and doxorubicin, with no mention of glutamic acid or pharmacogenomic effects on its PK/PD parameters. |
+| PGx | Zhang_2022_2 | not_relevant | 0 | 0 | The paper investigates the mechanism of SARS-CoV-2 NSP5 cleaving the host protein p62, which is unrelated to the pharmacokinetics or pharmacodynamics of glutamic acid. |
+| PGx | Zhang_2022_3 | not_relevant | 0 | 0 | The paper describes a genotyping method for ALDH2 and mentions the amino acid substitution (glutamic acid to lysine) but does not report pharmacokinetic or pharmacodynamic parameters for glutamic acid as a drug. |
+| PGx | Zhang_2025 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on methylphenidate, not glutamic acid. |
+| PD | Zhao_2024 | not_relevant | 0 | 0 | The paper focuses on the preparation and characterization of walnut peptides-zinc chelates, not on the pharmacodynamics of Glutamic acid. |
+| PGx | Zhu_2019 | not_relevant | 0 | 0 | The paper reports a case of DRESS syndrome leading to diabetes and mentions HLA associations, but does not report pharmacogenomic effects on the PK or PD of glutamic acid. |
+| popPK | Zvereva_2016 | irrelevant | 2 | 0 | The study focuses on dosimetry of a radiolabeled derivative (18F-FSPG) rather than the pharmacokinetics of glutamic acid itself, and no numeric PK parameter values are provided in the evidence. |
+| PGx | von_1991 | not_relevant | 0 | 0 | The paper describes a genetic variant of a native protein (Apolipoprotein C-III) and its effect on lipid levels, not the pharmacokinetics or pharmacodynamics of the drug glutamic acid. |
+| popPK | Świerczek_2024 | irrelevant | 0 | 0 | The paper is a review on pharmacometrics in autoimmune diseases and does not report any pharmacokinetic parameters for glutamic acid. |
+| PD | Świerczek_2024 | not_relevant | 1 | 0 | The paper is a general review of pharmacometric methods in autoimmune diseases and does not report specific PD parameters or exposure-response data for Glutamic acid. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_glutamic_acid`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

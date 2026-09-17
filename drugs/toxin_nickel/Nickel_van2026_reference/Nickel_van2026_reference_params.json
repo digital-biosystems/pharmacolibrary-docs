@@ -1,0 +1,24 @@
+{
+ "model_id": "Nickel_van2026_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.6435185185185182e-09,
+  "F": 1.0,
+  "VdPerKg": 5.628571428571428e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 7.402707275803723e-07,
+  "k21": 6.977671451355663e-07,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.023999439108008114
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

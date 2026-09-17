@@ -4,7 +4,15 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**What is wrong:** a compartment is unreachable, or a metabolite is unlinked
+
+**Steps:**
+1. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
+2. Parent/metabolite records commonly miss the formation link.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `allopurinol`, measured `oxypurinol`.
 
@@ -26,7 +34,6 @@ Wright DF; Stamp LK; Merriman TR; Barclay ML; Duffull SB; Holford NH et al. (201
 |---|---|---|---|---|---|---|---|---|---|---|
 | peripheral volume; Q, inter- | `Q64` · V2 | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | tab_1:row14:col2 | — | not captured |
 | volume; F, bioavailability; ω, | `Q40` · Fab | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | tab_1:row16:col2 | — | not captured |
-| BCRP | `Q900` · BCRP | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -39,12 +46,7 @@ Wright DF; Stamp LK; Merriman TR; Barclay ML; Duffull SB; Holford NH et al. (201
 - routed 'Corr(CL,V), correlation between' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=oxypurinol
 - model-stage split: 'base sequential model' is the base model of Wright_2013 (paper reports 2 stages: base sequential model, final sequential model); same population, different model-building step
-- gap-filled Q22 (CL) from Aksenov_2018's review values (primary lacked it)
-- gap-filled Q61 (V) from Aksenov_2018's review values (primary lacked it)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Ekobena_2025's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Ekobena_2025's review values (primary lacked it)
-- removed gap-filled parent disposition (Q22, Q61, Q49, Q83): this record measures 'oxypurinol', not allopurinol, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
+- review gap-fill skipped: this record measures 'oxypurinol', not allopurinol — the review values are the parent's
 
 **Extraction notes:**
 - unparsed cell tab_1:row14:col1 = 'ω V2allo (CV%)'
@@ -56,21 +58,13 @@ Wright DF; Stamp LK; Merriman TR; Barclay ML; Duffull SB; Holford NH et al. (201
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Aksenov_2018:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Ekobena_2025:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Aksenov_2018:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Ekobena_2025:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.27 | not captured | not captured | ['Aksenov_2018:review'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.27 L/h | not captured | not captured | ['Aksenov_2018:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 19 L | not captured | not captured | ['Aksenov_2018:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
 </details>
 
 ## Raw artifacts
@@ -97,9 +91,7 @@ No bundles have been generated for this record yet. When the engineer emits them
 
 ## Web simulation
 
-> 🚧 Not yet wired up — this tab will host an in-browser run of the model above, with editable parameters and dosing.
-
-The simulator will be built on **bodylight.js**, which compiles a model to WebAssembly and drives it from the page, so a simulation runs entirely in the browser with nothing to install: <https://bodylight.physiome.cz/>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

@@ -1,0 +1,365 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11A&quot;,&quot;href&quot;:&quot;atc/A11A.md&quot;},{&quot;label&quot;:&quot;Iron&quot;}]"></div>
+
+# Iron
+
+- **generic name:** Iron
+- **ATC codes:** `A11AA01`, `B03AE03`
+- **DrugBank:** [DB01592](https://go.drugbank.com/drugs/DB01592)
+- **groups:** approved, investigational
+
+## About
+
+**Description.** A metallic element found in certain minerals, in nearly all soils, and in mineral waters. It is an essential constituent of hemoglobin, cytochrome, and other components of respiratory enzyme systems. Its chief functions are in the transport of oxygen to tissue (hemoglobin) and in cellular oxidation mechanisms. Depletion of iron stores may result in iron-deficiency anemia. Iron is used to build up the blood in anemia.
+
+**Indication.** Used in preventing and treating iron-deficiency anemia.
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-16 14:37 | 1:39 | 4/0/1 | 3/3/0 | 0/0/0 | 36,825/1,200 | ollama / qwen3.8:27b-mtp-q8_0 | 38 | 9/29 | 33/5 | 1 |
+
+## popPK records
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ekobena_2025](drugs/drug_iron/Iron_Ekobena2025_reference.md) | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Lv_2025](drugs/drug_iron/Iron_Lv2025_reference.md) | Lv D et al., Population Pharmacokinetic Modeling Ana…, Drug design, development an… (2025) | [10.2147/dddt.s517282](https://doi.org/10.2147/dddt.s517282) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Xu_2026](drugs/drug_iron/Iron_Xu2026_reference.md) | Xu C et al., Modeling, Simulation, and Extrapolation…, Journal of pharmacokinetics… (2026) | [10.1007/s10928-026-10024-z](https://doi.org/10.1007/s10928-026-10024-z) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Fan_2025](drugs/drug_iron/Iron_Fan2025_reference.md) | Fan X et al., A whole-body mechanistic physiologicall…, Drug delivery and translati… (2025) | [10.1007/s13346-024-01675-x](https://doi.org/10.1007/s13346-024-01675-x) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl[iron-tannic nanoparticles], Cl[iron-tannic nanoparticles…</sub><br><sub>route_to: `scholar`</sub> | [Phatruengdet_2022](drugs/drug_iron/Iron_Phatruengdet2022_reference.md) | Phatruengdet T et al., Pharmacokinetic/Pharmacodynamic Determi…, Nanotheranostics (2022) | [10.7150/ntno.63310](https://doi.org/10.7150/ntno.63310) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Angeli_2016](drugs/drug_iron/pd_Angeli_2016_He.md) | Angeli A et al., Joint Model of Iron and Hepcidin During…, The AAPS journal (2016) | [10.1208/s12248-016-9875-4](https://doi.org/10.1208/s12248-016-9875-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Angeli_2016](drugs/drug_iron/pd_Angeli_2016_Ir.md) | Angeli A et al., Joint Model of Iron and Hepcidin During…, The AAPS journal (2016) | [10.1208/s12248-016-9875-4](https://doi.org/10.1208/s12248-016-9875-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Belaidi_2024](drugs/drug_iron/pd_Belaidi_2024_unknown.md) | Belaidi AA et al., Apolipoprotein E potently inhibits ferr…, Molecular psychiatry (2024) | [10.1038/s41380-022-01568-w](https://doi.org/10.1038/s41380-022-01568-w) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Xu_2026](drugs/drug_iron/pd_Xu_2026_JIA_ACR30.md) | Xu C et al., Modeling, Simulation, and Extrapolation…, Journal of pharmacokinetics… (2026) | [10.1007/s10928-026-10024-z](https://doi.org/10.1007/s10928-026-10024-z) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Xu_2026](drugs/drug_iron/pd_Xu_2026_JIA_ACR50.md) | Xu C et al., Modeling, Simulation, and Extrapolation…, Journal of pharmacokinetics… (2026) | [10.1007/s10928-026-10024-z](https://doi.org/10.1007/s10928-026-10024-z) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Xu_2026](drugs/drug_iron/pd_Xu_2026_JIA_ACR70.md) | Xu C et al., Modeling, Simulation, and Extrapolation…, Journal of pharmacokinetics… (2026) | [10.1007/s10928-026-10024-z](https://doi.org/10.1007/s10928-026-10024-z) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Xu_2026](drugs/drug_iron/pd_Xu_2026_ANC_change.md) | Xu C et al., Modeling, Simulation, and Extrapolation…, Journal of pharmacokinetics… (2026) | [10.1007/s10928-026-10024-z](https://doi.org/10.1007/s10928-026-10024-z) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Hanke_2026](drugs/drug_iron/pd_Hanke_2026_mean_corpuscular_hemoglobin.md) | Hanke N et al., Pharmacokinetic/pharmacodynamic analysi…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1770980](https://doi.org/10.3389/fphar.2026.1770980) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Hanke_2026](drugs/drug_iron/pd_Hanke_2026_red_blood_cell_count.md) | Hanke N et al., Pharmacokinetic/pharmacodynamic analysi…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1770980](https://doi.org/10.3389/fphar.2026.1770980) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Nosik_2023](drugs/drug_iron/pd_Nosik_2023_Cell_protection.md) | Nosik DN et al., [Antiviral and virucidal activity of so…, Voprosy virusologii (2023) | [10.36233/0507-4088-148](https://doi.org/10.36233/0507-4088-148) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Nosik_2023](drugs/drug_iron/pd_Nosik_2023_Virus_reduction.md) | Nosik DN et al., [Antiviral and virucidal activity of so…, Voprosy virusologii (2023) | [10.36233/0507-4088-148](https://doi.org/10.36233/0507-4088-148) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Rognås_2025](drugs/drug_iron/pd_Rogn_s_2025_IRF.md) | Rognås SV et al., A semi-mechanistic population pharmacok…, Journal of pharmacokinetics… (2025) | [10.1007/s10928-025-09990-7](https://doi.org/10.1007/s10928-025-09990-7) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Rognås_2025](drugs/drug_iron/pd_Rogn_s_2025_MCH.md) | Rognås SV et al., A semi-mechanistic population pharmacok…, Journal of pharmacokinetics… (2025) | [10.1007/s10928-025-09990-7](https://doi.org/10.1007/s10928-025-09990-7) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Rognås_2025](drugs/drug_iron/pd_Rogn_s_2025_RBC.md) | Rognås SV et al., A semi-mechanistic population pharmacok…, Journal of pharmacokinetics… (2025) | [10.1007/s10928-025-09990-7](https://doi.org/10.1007/s10928-025-09990-7) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Rognås_2025](drugs/drug_iron/pd_Rogn_s_2025_RET.md) | Rognås SV et al., A semi-mechanistic population pharmacok…, Journal of pharmacokinetics… (2025) | [10.1007/s10928-025-09990-7](https://doi.org/10.1007/s10928-025-09990-7) |
+
+## Coverage
+
+- **PubMed hits:** 5916 matched, 250 returned
+- **screened:** 3  ·  **relevant:** 3
+- **records:** 5  ·  extracted 3  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** True
+
+## Full text wanted
+
+_40 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `McLaren_1991.pdf` | McLaren GD et al., Regulation of intestinal iron absorptio…, The Journal of laboratory a… (1991) | popPK | 9 | not captured | [2019794](https://pubmed.ncbi.nlm.nih.gov/2019794) | The paper describes a compartmental model for iron kinetics and reports qualitative findings on rate constants, but specific numeric parameter values are not present in the provided text. |
+| `van_1977.pdf` | van Dijk JP, Iron metabolism and placental transfer…, European journal of obstetr… (1977) | popPK | 9 | [10.1016/0028-2243(77)90022-3](https://doi.org/10.1016/0028-2243(77)90022-3) | [264050](https://pubmed.ncbi.nlm.nih.gov/264050) | The paper describes a compartmental analysis of iron kinetics in rhesus monkeys, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided abstract text. |
+| `Allen_2021.pdf` | Allen S et al., Safety, Tolerability, and Pharmacokinet…, JPGN reports (2021) | popPK | 8 | [10.1097/PG9.0000000000000090](https://doi.org/10.1097/PG9.0000000000000090) | [37205968](https://pubmed.ncbi.nlm.nih.gov/37205968) | The study is a Phase 1 PK trial of ferric maltol (iron) in children, but the specific quantitative PK parameter values are not present in the provided abstract text. |
+| `Ding_2020.pdf` | Ding Y et al., Pharmacokinetic, Pharmacodynamic, and S…, Clinical therapeutics (2020) | popPK | 8 | [10.1016/j.clinthera.2019.12.010](https://doi.org/10.1016/j.clinthera.2019.12.010) | [31937462](https://pubmed.ncbi.nlm.nih.gov/31937462) | The study reports quantitative PK parameters (Tmax, t1/2, Cmax/AUC ratios) for ferric carboxymaltose, but lacks specific clearance or volume values. |
+| `Najean_1988.pdf` | Najean Y et al., Radio-iron kinetic studies in anaemia a…, Nouvelle revue francaise d'… (1988) | popPK | 8 | not captured | [3419896](https://pubmed.ncbi.nlm.nih.gov/3419896) | The paper describes a multi-compartment model for iron kinetics and reports a specific parameter (15% flux fraction), but lacks standard quantitative PK values like clearance or volume. |
+| `Ait-Oudhia_2025.pdf` | Ait-Oudhia S et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacology and t… (2025) | pd | 5 | [10.1002/cpt.3524](https://doi.org/10.1002/cpt.3524) | [39668469](https://www.ncbi.nlm.nih.gov/pubmed/39668469) | metadata signals extractable PD data (Exposure-Response) |
+| `Bateman_2018.pdf` | Bateman DN et al., Iron overdose epidemiology, clinical fe…, Clinical toxicology (Philad… (2018) | pd | 5 | [10.1080/15563650.2018.1455978](https://doi.org/10.1080/15563650.2018.1455978) | [29587543](https://www.ncbi.nlm.nih.gov/pubmed/29587543) | metadata signals extractable PD data (concentration-effect) |
+| `Chen_2021.pdf` | Chen N et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | pd | 5 | [10.1002/jcph.1696](https://doi.org/10.1002/jcph.1696) | [32696522](https://www.ncbi.nlm.nih.gov/pubmed/32696522) | metadata signals extractable PD data (Exposure-Response) |
+| `Cheng_2021.pdf` | Cheng R et al., Combined effect of nanoscale zero-valen…, Ecotoxicology (London, Engl… (2021) | pd | 5 | [10.1007/s10646-020-02294-1](https://doi.org/10.1007/s10646-020-02294-1) | [33131022](https://www.ncbi.nlm.nih.gov/pubmed/33131022) | metadata signals extractable PD data (IC50) |
+| `Cho_2022.pdf` | Cho YS et al., Population Pharmacokinetic and Pharmaco…, Clinical therapeutics (2022) | pd | 5 | [10.1016/j.clinthera.2021.11.008](https://doi.org/10.1016/j.clinthera.2021.11.008) | [34974943](https://www.ncbi.nlm.nih.gov/pubmed/34974943) | metadata signals extractable PD data (Pharmacodynamicmodel) |
+| `Cox_2023.pdf` | Cox LA et al., Mechanisms and shapes of causal exposur…, Environmental research (2023) | pd | 5 | [10.1016/j.envres.2023.115607](https://doi.org/10.1016/j.envres.2023.115607) | [36965793](https://www.ncbi.nlm.nih.gov/pubmed/36965793) | metadata signals extractable PD data (exposure-response) |
+| `Hedbrant_2020.pdf` | Hedbrant A et al., Quartz Dust Exposure Affects NLRP3 Infl…, Mediators of inflammation (2020) | pd | 5 | [10.1155/2020/8490908](https://doi.org/10.1155/2020/8490908) | [32256196](https://www.ncbi.nlm.nih.gov/pubmed/32256196) | metadata signals extractable PD data (exposure-response) |
+| `Hedges_2020.pdf` | Hedges DM et al., Spontaneous Formation of Melanin from D…, Antioxidants (Basel, Switze… (2020) | pd | 5 | [10.3390/antiox9121285](https://doi.org/10.3390/antiox9121285) | [33339254](https://www.ncbi.nlm.nih.gov/pubmed/33339254) | metadata signals extractable PD data (EC50) |
+| `Regan_1993.pdf` | Regan RF et al., Neurotoxicity of hemoglobin in cortical…, Neuroscience letters (1993) | pd | 5 | [10.1016/0304-3940(93)90326-g](https://doi.org/10.1016/0304-3940(93)90326-g) | [8327197](https://www.ncbi.nlm.nih.gov/pubmed/8327197) | metadata signals extractable PD data (EC50) |
+| `Wei_2022.pdf` | Wei M et al., Manganese, iron, copper, and selenium c…, Journal of trace elements i… (2022) | pd | 5 | [10.1016/j.jtemb.2022.126989](https://doi.org/10.1016/j.jtemb.2022.126989) | [35512597](https://www.ncbi.nlm.nih.gov/pubmed/35512597) | metadata signals extractable PD data (exposure-response) |
+| `Bérczi_1993.pdf` | Bérczi A et al., Influence of conjugation of doxorubicin…, European journal of biochem… (1993) | pd | 4 | [10.1111/j.1432-1033.1993.tb17778.x](https://doi.org/10.1111/j.1432-1033.1993.tb17778.x) | [8477715](https://www.ncbi.nlm.nih.gov/pubmed/8477715) | metadata signals extractable PD data (EC50) |
+| `Fagni_2022.pdf` | Fagni Njoya ZL et al., Anti-Helicobacter pylori, anti-Inflamma…, BioMed research internation… (2022) | pd | 4 | [10.1155/2022/9022135](https://doi.org/10.1155/2022/9022135) | [36158881](https://www.ncbi.nlm.nih.gov/pubmed/36158881) | metadata signals extractable PD data (EC50) |
+| `Falgueyret_1995.pdf` | Falgueyret JP et al., Characterization of the arachidonate an…, Biochemistry (1995) | pd | 4 | [10.1021/bi00041a040](https://doi.org/10.1021/bi00041a040) | [7577949](https://www.ncbi.nlm.nih.gov/pubmed/7577949) | metadata signals extractable PD data (IC50) |
+| `Gonçalves_2024.pdf` | Gonçalves J et al., Discarded substrates from soilless hydr…, Chemosphere (2024) | pd | 4 | [10.1016/j.chemosphere.2024.143127](https://doi.org/10.1016/j.chemosphere.2024.143127) | [39154767](https://www.ncbi.nlm.nih.gov/pubmed/39154767) | metadata signals extractable PD data (EC50) |
+| `Inman_1993.pdf` | Inman RS et al., Characterization of transferrin-indepen…, The Journal of biological c… (1993) | pd | 4 | not captured | [8473296](https://www.ncbi.nlm.nih.gov/pubmed/8473296) | metadata signals extractable PD data (IC50) |
+| `Ismaiel_2024.pdf` | Ismaiel MMS et al., Cooperative antioxidative defense of th…, Environmental pollution (Ba… (2024) | pd | 4 | [10.1016/j.envpol.2023.123002](https://doi.org/10.1016/j.envpol.2023.123002) | [38000724](https://www.ncbi.nlm.nih.gov/pubmed/38000724) | metadata signals extractable PD data (EC50) |
+| `Janssens_2021.pdf` | Janssens LK et al., Sensing an Oxygen Sensor: Development a…, Analytical chemistry (2021) | pd | 4 | [10.1021/acs.analchem.1c02923](https://doi.org/10.1021/acs.analchem.1c02923) | [34677954](https://www.ncbi.nlm.nih.gov/pubmed/34677954) | metadata signals extractable PD data (EC50) |
+| `Liang_2019.pdf` | Liang L et al., Nutritional compositions of Indian Mori…, Food science & nutrition (2019) | pd | 4 | [10.1002/fsn3.1015](https://doi.org/10.1002/fsn3.1015) | [31139388](https://www.ncbi.nlm.nih.gov/pubmed/31139388) | metadata signals extractable PD data (EC50) |
+| `Mak_2004.pdf` | Mak IT et al., Potent antioxidant properties of 4-hydr…, The Journal of pharmacology… (2004) | pd | 4 | [10.1124/jpet.103.058032](https://doi.org/10.1124/jpet.103.058032) | [14569064](https://www.ncbi.nlm.nih.gov/pubmed/14569064) | metadata signals extractable PD data (IC50) |
+| `McGorman_2023.pdf` | McGorman B et al., Analysis of non-canonical three- and fo…, Methods (San Diego, Calif.) (2023) | pd | 4 | [10.1016/j.ymeth.2023.09.002](https://doi.org/10.1016/j.ymeth.2023.09.002) | [37690737](https://www.ncbi.nlm.nih.gov/pubmed/37690737) | metadata signals extractable PD data (EC50) |
+| `Miller_1993.pdf` | Miller DM et al., Urinary porphyrins as biological indica…, Biochemical pharmacology (1993) | pd | 4 | [10.1016/0006-2952(93)90614-3](https://doi.org/10.1016/0006-2952(93)90614-3) | [8274157](https://www.ncbi.nlm.nih.gov/pubmed/8274157) | metadata signals extractable PD data (EC50) |
+| `Morel_1993.pdf` | Morel I et al., Antioxidant and iron-chelating activiti…, Biochemical pharmacology (1993) | pd | 4 | [10.1016/0006-2952(93)90371-3](https://doi.org/10.1016/0006-2952(93)90371-3) | [8424806](https://www.ncbi.nlm.nih.gov/pubmed/8424806) | metadata signals extractable PD data (IC50) |
+| `Mülsch_1991.pdf` | Mülsch A et al., The potent vasodilating and guanylyl cy…, FEBS letters (1991) | pd | 4 | [10.1016/0014-5793(91)81441-a](https://doi.org/10.1016/0014-5793(91)81441-a) | [1684553](https://www.ncbi.nlm.nih.gov/pubmed/1684553) | metadata signals extractable PD data (EC50) |
+| `Pant_2025.pdf` | Pant A et al., Ciclopirox suppresses poxvirus replicat…, Antiviral research (2025) | pd | 4 | [10.1016/j.antiviral.2025.106290](https://doi.org/10.1016/j.antiviral.2025.106290) | [41067563](https://www.ncbi.nlm.nih.gov/pubmed/41067563) | metadata signals extractable PD data (EC50) |
+| `Rottet_2023.pdf` | Rottet S et al., Biochemical interactions between the At…, Archives of biochemistry an… (2023) | pd | 4 | [10.1016/j.abb.2023.109696](https://doi.org/10.1016/j.abb.2023.109696) | [37481198](https://www.ncbi.nlm.nih.gov/pubmed/37481198) | metadata signals extractable PD data (EC50) |
+| `Vu_2022.pdf` | Vu TH et al., Modified Fluoroquinolones as Antimicrob…, International journal of mo… (2022) | pd | 4 | [10.3390/ijms23126741](https://doi.org/10.3390/ijms23126741) | [35743189](https://www.ncbi.nlm.nih.gov/pubmed/35743189) | metadata signals extractable PD data (EC50) |
+| `Wolff_1993.pdf` | Wolff DJ et al., The dual mode of inhibition of calmodul…, The Journal of biological c… (1993) | pd | 4 | not captured | [7683652](https://www.ncbi.nlm.nih.gov/pubmed/7683652) | metadata signals extractable PD data (IC50) |
+| `Guo_2020.pdf` | Guo J et al., Impact of gender, albumin, and CYP2C19…, The Journal of internationa… (2020) | pgx | 8 | [10.1177/0300060520952281](https://doi.org/10.1177/0300060520952281) | [32865063](https://www.ncbi.nlm.nih.gov/pubmed/32865063) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
+| `Hall_2009.pdf` | Hall RG et al., Treatment of active pulmonary tuberculo…, Pharmacotherapy (2009) | pgx | 8 | [10.1592/phco.29.12.1468](https://doi.org/10.1592/phco.29.12.1468) | [19947806](https://www.ncbi.nlm.nih.gov/pubmed/19947806) | metadata signals extractable PGX data (NAT2, PK/PD-context) |
+| `Xie_2023.pdf` | Xie SL et al., Genetic variations of CYP3A4 on the met…, Food and chemical toxicolog… (2023) | pgx | 8 | [10.1016/j.fct.2023.114101](https://doi.org/10.1016/j.fct.2023.114101) | [37863381](https://www.ncbi.nlm.nih.gov/pubmed/37863381) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Miao_2012.pdf` | Miao Z et al., Excretion, metabolism, and pharmacokine…, Drug metabolism and disposi… (2012) | pgx | 7 | [10.1124/dmd.111.043273](https://doi.org/10.1124/dmd.111.043273) | [22187487](https://www.ncbi.nlm.nih.gov/pubmed/22187487) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
+| `Ohmori_2025.pdf` | Ohmori Y et al., Comprehensive functional characterizati…, Biochemical pharmacology (2025) | pgx | 5 | [10.1016/j.bcp.2025.117396](https://doi.org/10.1016/j.bcp.2025.117396) | [41047031](https://www.ncbi.nlm.nih.gov/pubmed/41047031) | metadata signals extractable PGX data (CYP2E1) |
+| `Travaglini_2025.pdf` | Travaglini L et al., Biallelic Variants in SLC27A3 Cause a C…, Movement disorders : offici… (2025) | pgx | 5 | [10.1002/mds.70079](https://doi.org/10.1002/mds.70079) | [41054338](https://www.ncbi.nlm.nih.gov/pubmed/41054338) | metadata signals extractable PGX data (SLC27A3) |
+| `Xiang_2021.pdf` | Xiang GQ et al., [Gilbert's syndrome: hyperbilirubinemia…, Zhonghua gan zang bing za z… (2021) | pgx | 5 | [10.3760/cma.j.cn501113-20200212-00041](https://doi.org/10.3760/cma.j.cn501113-20200212-00041) | [34814402](https://www.ncbi.nlm.nih.gov/pubmed/34814402) | metadata signals extractable PGX data (UGT1A1) |
+| `Yampayon_2025.pdf` | Yampayon K et al., Pharmacogenomic and Clinical Predictors…, Clinical and translational… (2025) | pgx | 5 | [10.1111/cts.70441](https://doi.org/10.1111/cts.70441) | [41414879](https://www.ncbi.nlm.nih.gov/pubmed/41414879) | metadata signals extractable PGX data (ABCC2) |
+
+<sub>queue written 2026-09-16T14:35:55.699935+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Abu-Ali_2023 | irrelevant | 0 | 0 | The paper is an agricultural soil science study on trace elements in rice, not a pharmacokinetic study of iron. |
+| popPK | Agrawal_2026 | irrelevant | 0 | 0 | The study investigates the association between cerebral amyloid angiopathy and brain iron concentrations (tissue levels) and cognitive decline, not the pharmacokinetics (disposition parameters like CL, V, ka) of iron as a drug. |
+| popPK | Ait-Oudhia_2025 | irrelevant | 0 | 0 | no_text gate: only 171 chars of text extracted (&lt; 400) |
+| PD | Ait-Oudhia_2025 | not_relevant | 0 | 0 | The paper focuses on Sotatercept, not Iron, and therefore does not report PD or exposure-response relationships for Iron. |
+| popPK | Allen_2021 | relevant | 8 | 0 | The study is a Phase 1 PK trial of ferric maltol (iron) in children, but the specific quantitative PK parameter values are not present in the provided abstract text. |
+| popPK | Alves_2025 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on neuroprotection in Parkinson's disease models where iron acts as a toxic agent or component of the medium, not as a subject drug for pharmacokinetic analysis. |
+| PD | Alves_2025 | not_relevant | 0 | 0 | The paper investigates the neuroprotective effects of tetracycline derivatives against iron-driven oxidative damage in cell cultures, but does not report a pharmacokinetic/pharmacodynamic (PK/PD) model or extractable numeric PD parameters (e.g., Emax, EC50) for iron itself. |
+| popPK | Angeli_2016 | relevant | 8 | 2 | The paper describes a population PK model for iron (turnover model with ksyn and kout) but the specific numeric parameter estimates are not present in the provided text, likely residing in tables or figures not included. |
+| popPK | Arnone_1976 | irrelevant | 0 | 0 | The paper is a structural and functional study of hemoglobin variants, not a pharmacokinetic study of iron as a drug. |
+| PD | Arnone_1976 | not_relevant | 0 | 0 | The paper describes structural and functional changes in mutant hemoglobins (oxygen affinity, Bohr effect) but does not report a pharmacodynamic exposure-response or dose-response relationship for a drug. |
+| popPK | Babbs_1990 | irrelevant | 0 | 0 | The paper is a mechanistic simulation of lipid peroxidation where iron acts as a catalyst, not a pharmacokinetic study of iron disposition. |
+| popPK | Baldini_2022 | irrelevant | 0 | 0 | The paper is a biomarker study for Alzheimer's disease that analyzes blood iron levels as a diagnostic marker, not a pharmacokinetic study of iron disposition. |
+| PGx | Ballot_1987 | not_relevant | 0 | 0 | The paper describes the genetic basis of idiopathic haemochromatosis (a disease of iron overload) rather than the pharmacogenomics of an exogenous iron drug. |
+| PGx | Bauminger_1991 | not_relevant | 0 | 0 | The paper investigates the structural and mechanistic aspects of iron sequestration in ferritin using Mössbauer spectroscopy, not the pharmacokinetics or pharmacodynamics of iron as a drug in relation to genetic variants. |
+| popPK | Belaidi_2024 | irrelevant | 0 | 0 | The paper is a mechanistic study on ferroptosis and Alzheimer's disease where iron is a biological cofactor, not a drug subject to pharmacokinetic analysis. |
+| PGx | Benetti_2024 | not_relevant | 0 | 0 | The paper reports genetic associations with erythrocytosis (a disease phenotype) but does not report pharmacokinetic or pharmacodynamic parameters of iron therapy. |
+| popPK | Birara_2025 | irrelevant | 0 | 0 | The paper describes the synthesis and electrochemical application of iron complexes in fuel cells, not the pharmacokinetics of iron as a drug. |
+| PGx | Bloch_1989 | not_relevant | 0 | 0 | The paper describes a bacterial gene deletion (sodA) and its effect on virulence in a rat model, not a human pharmacogenomic effect on iron pharmacokinetics or pharmacodynamics. |
+| popPK | Borella_2022 | irrelevant | 2 | 0 | The study models serum ferritin response to chelation therapy rather than the pharmacokinetic disposition parameters (CL, V, ka) of iron itself. |
+| PGx | Bose_2022 | not_relevant | 0 | 0 | not captured |
+| popPK | Bécquer-Viart_2021 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of a flavonoid's protective effects against iron-induced damage, not a pharmacokinetic study of iron disposition. |
+| popPK | Bérczi_1993 | irrelevant | 0 | 0 | no_text gate: only 121 chars of text extracted (&lt; 400) |
+| PD | Bérczi_1993 | not_relevant | 0 | 0 | The paper investigates the mechanism of iron uptake via transferrin conjugation in K562 cells, not the pharmacodynamic exposure-response relationship of iron as a drug. |
+| PD | Carvalho_1995 | not_relevant | 3 | 1 | The paper describes a qualitative dose-response relationship between lead and protoporphyrin stratified by iron status, but does not report numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve for iron itself. |
+| popPK | Cen_2024 | irrelevant | 0 | 0 | The study focuses on the synthesis and efficacy of iron chelators (hydroxypyridinones) for acute kidney injury, not on the pharmacokinetic parameters of iron itself. |
+| PGx | Chen_2018 | not_relevant | 0 | 0 | The paper is a review of food-drug interactions involving fruit juices and does not report pharmacogenomic effects on iron PK/PD parameters. |
+| popPK | Chen_2021 | irrelevant | 0 | 0 | no_text gate: only 148 chars of text extracted (&lt; 400) |
+| PD | Chen_2021 | not_relevant | 0 | 0 | The paper focuses on Luspatercept, not Iron, and therefore does not report a pharmacodynamic or exposure-response relationship for Iron. |
+| PGx | Chen_2024 | not_relevant | 0 | 0 | The paper investigates the mechanism of erastin reversing docetaxel resistance via ABCB1 inhibition and does not report pharmacogenomic effects on iron PK/PD parameters. |
+| PD | Cheng_2021 | not_relevant | 0 | 0 | The paper studies the toxicological effects of nanoscale zero-valent iron on algae, which is an environmental toxicology study, not a pharmacodynamic (drug exposure-response) study. |
+| PGx | Cheng_2026 | not_relevant | 0 | 0 | The paper investigates the role of the FTH1 gene in hepatocellular carcinoma pathogenesis and iron metabolism, but does not report a pharmacogenomic effect on the pharmacokinetics or pharmacodynamics of an iron drug. |
+| popPK | Cho_2022 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
+| PD | Cho_2022 | not_relevant | 0 | 0 | The paper analyzes Polmacoxib, not Iron, and does not report any pharmacodynamic parameters for Iron. |
+| popPK | Chow_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of riliprubart, not iron. |
+| PD | Chow_2025 | not_relevant | 0 | 0 | The paper discusses Riliprubart, not Iron, and does not report any pharmacodynamic parameters for Iron. |
+| popPK | Chunkao_2020 | irrelevant | 0 | 0 | The paper is a food science study on the antioxidant properties of mung bean peptides, not a pharmacokinetic study of iron. |
+| PD | Chunkao_2020 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant and iron-binding properties of peptides, not a pharmacodynamic exposure-response relationship for the drug Iron in a biological system. |
+| popPK | Clematis_2021 | irrelevant | 0 | 0 | The paper studies the degradation of a dye using iron as a catalyst in an electro-Fenton process, not the pharmacokinetics of iron as a drug. |
+| PD | Coulson_1967 | not_relevant | 0 | 0 | The paper describes a dose-response relationship for tuberculin PPD on lymphocytes, not for Iron; iron is only used as a reagent for cell separation. |
+| popPK | Cox_2023 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
+| PD | Cox_2023 | not_relevant | 0 | 0 | The paper discusses asbestos exposure-response, not Iron pharmacodynamics. |
+| PGx | Crovella_2016 | not_relevant | 0 | 0 | The paper investigates genetic susceptibility to asbestos-induced mesothelioma, not the pharmacokinetics or pharmacodynamics of an iron drug. |
+| PGx | DAlessandro_2025 | not_relevant | 0 | 0 | The paper investigates the genetic regulation of red blood cell hemolysis and iron metabolism (endogenous physiology), not the pharmacokinetics or pharmacodynamics of an exogenous iron drug. |
+| popPK | Darvishi-Khezri_2017 | irrelevant | 0 | 0 | The study evaluates the antioxidant effects of silymarin in thalassemia patients and does not report any pharmacokinetic parameters for iron. |
+| PGx | Das_2020 | not_relevant | 0 | 0 | The paper studies iron toxicity in tomato plants, not human pharmacogenomics or drug PK/PD. |
+| PD | Delimont_2017 | not_relevant | 2 | 0 | The study reports a null dose-response result (no change in iron bioavailability) with only p-values and correlations, lacking numeric PD parameters like Emax, EC50, or a quantitative effect-concentration curve. |
+| PGx | Denisov_2015 | not_relevant | 0 | 0 | The paper investigates the mechanism of drug-drug interactions mediated by CYP3A4 monomers using progesterone and carbamazepine, and does not report pharmacogenomic effects on the PK/PD of iron. |
+| PD | Dockery_1977 | not_relevant | 0 | 0 | The provided text consists only of the title "Oral contraception" and contains no data, analysis, or mention of Iron pharmacodynamics. |
+| PGx | Dubos_1946 | not_relevant | 0 | 0 | The paper describes the preparation of Shiga toxin and the effect of inorganic iron on bacterial toxin production, not a pharmacogenomic effect on the PK/PD of an iron drug. |
+| popPK | Ekobena_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for bictegravir, not iron; iron is only mentioned as a co-administered agent causing drug-drug interactions. |
+| PD | Ekobena_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for bictegravir, not iron, and contains no pharmacodynamic (PD) or exposure-response analysis. |
+| PGx | Elli_2024 | not_relevant | 0 | 0 | The paper investigates the genetic causes of idiopathic erythrocytosis (a disease state) and does not report pharmacokinetic or pharmacodynamic parameters of a specific drug. |
+| PGx | Ellis_2026 | not_relevant | 0 | 0 | The text is a general review of Polycythemia Vera pathophysiology and management, containing no data on pharmacogenomic effects on iron PK/PD parameters. |
+| popPK | Fagni_2022 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
+| PD | Fagni_2022 | not_relevant | 0 | 0 | The paper investigates the pharmacological activities of a plant extract (Alstonia boonei) and does not report any pharmacodynamic or exposure-response data for Iron. |
+| PD | Falgueyret_1995 | not_relevant | 0 | 0 | The paper focuses on the structural characterization of binding sites in 5-lipoxygenase using photoaffinity labeling and does not report any pharmacodynamic or exposure-response data for iron. |
+| PD | Fan_2025 | not_relevant | 0 | 0 | The paper presents a physiologically-based pharmacokinetic (PBPK) model describing iron distribution and mass balance, but it does not report a pharmacodynamic (PD) model or exposure-response relationship with numeric PD parameters (e.g., Emax, EC50). |
+| popPK | Fedulov_2026 | irrelevant | 0 | 0 | The paper is a theoretical literature synthesis on PFAS neurotoxicity mechanisms involving iron redistribution, not a pharmacokinetic study, and contains no quantitative PK parameters for iron. |
+| PD | Fedulov_2026 | not_relevant | 0 | 0 | The paper is a theoretical literature synthesis proposing a mechanistic model for PFAS neurotoxicity involving iron redistribution, but it contains no original experimental data, PK/PD analysis, or numeric dose-response parameters. |
+| PD | Feelisch_1994 | not_relevant | 0 | 0 | The paper discusses the pharmacodynamics of nitric oxide and EDRF candidates (vasorelaxation), not Iron; the mention of Iron is limited to the dinitrosyl-iron-cysteine complex as a candidate compound, for which no specific PD parameters are reported. |
+| popPK | Felix_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of enrofloxacin, not iron. |
+| PGx | Fennema-Notestine_2020 | not_relevant | 0 | 0 | The paper investigates associations between iron-regulatory gene variants and neuroimaging measures in HIV patients, not the pharmacokinetics or pharmacodynamics of an iron drug. |
+| popPK | Fernández-García_2026 | irrelevant | 0 | 0 | The paper describes a photoelectrocatalytic organic synthesis method using iron as a catalyst, not a pharmacokinetic study of iron as a drug. |
+| PD | Fernández-García_2026 | not_relevant | 0 | 0 | The paper describes a photoelectrocatalytic chemical reaction mechanism and does not report any pharmacodynamic or exposure-response data for iron. |
+| popPK | Ficiara_2021 | irrelevant | 2 | 0 | The paper describes a mechanistic mathematical model for iron trafficking across the blood-brain barrier rather than a pharmacokinetic study reporting standard disposition parameters (CL, V, ka) for iron as a drug, and no numeric parameter values are provided in the evidence. |
+| PD | Fielding_1977 | not_relevant | 2 | 0 | The text discusses a qualitative dose-response relationship in animal models and reviews case reports in humans, but it does not provide any numeric PD parameters, concentration-effect curves, or quantitative exposure-response data for iron in humans. |
+| popPK | Gallardo_2026 | irrelevant | 0 | 0 | The paper is a neuroimaging and biomarker study on migraine where iron is used as a diagnostic imaging marker (SWI signal), not as a subject drug for pharmacokinetic analysis. |
+| PGx | Ganji_2026 | not_relevant | 0 | 0 | The paper investigates the molecular binding mechanism of quercetin to CYP1A2 using computational simulations and does not report any pharmacogenomic effects on iron pharmacokinetics or pharmacodynamics. |
+| popPK | García-Contreras_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of busulfan, not iron. |
+| PD | García-Contreras_2026 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of busulfan (AUC estimation methods) and does not report any pharmacodynamic or exposure-response relationship for iron. |
+| popPK | Gaurav_2025 | irrelevant | 0 | 0 | The study investigates brain iron concentration using MRI (QSM/R2*) in Parkinson's disease, not the pharmacokinetics of iron as a drug. |
+| popPK | Gomes_2014 | irrelevant | 0 | 0 | The paper describes the use of iron nanoparticles for environmental remediation of PCBs, not the pharmacokinetics of iron as a drug. |
+| PD | Gong_2025 | not_relevant | 3 | 2 | The study reports epidemiological associations and nonlinear trends (J/L-shaped) between iron biomarkers and disease prevalence, but it does not provide a pharmacodynamic model or specific numeric PD parameters (e.g., EC50, Emax) for a drug intervention. |
+| popPK | Gonçalves_2024 | irrelevant | 0 | 0 | no_text gate: only 111 chars of text extracted (&lt; 400) |
+| PD | Gonçalves_2024 | not_relevant | 0 | 0 | The paper discusses soil amendments for metal contamination in horticulture, not pharmacodynamics or exposure-response relationships for a drug. |
+| PGx | Gorman_2002 | not_relevant | 0 | 0 | The paper investigates the role of iron levels and CYP1A2 genotype in the pathogenesis of uroporphyria, not the pharmacokinetics or pharmacodynamics of iron as a therapeutic drug. |
+| popPK | Gosdin_2020 | irrelevant | 0 | 0 | The paper is a public health study on adherence to iron supplementation, not a pharmacokinetic study, and contains no PK parameters. |
+| popPK | Greger_1994 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of aluminum and Ga-67, with iron serving only as a nutritional variable affecting aluminum retention, not as the subject drug. |
+| PGx | Guo_2020 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on valproic acid, not iron. |
+| PGx | Guo_2024 | not_relevant | 0 | 0 | The paper reports a genetic neurodegenerative disorder (NDCAMA) caused by IREB2 variants affecting iron metabolism, not a pharmacogenomic effect on the PK/PD of a specific drug. |
+| popPK | Gupta_1992 | irrelevant | 2 | 0 | The paper describes a method for analyzing ferrokinetic data using a compartmental model but does not report specific quantitative PK parameter values (CL, V, etc.) for iron in the provided evidence. |
+| PGx | Hall_2009 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for tuberculosis drugs (e.g., NAT2 for isoniazid) and mentions iron overload as a comorbidity, but does not report a pharmacogenomic effect on the PK or PD of iron itself. |
+| popPK | Halpern_1983 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of 111In-labeled monoclonal antibodies, not iron, and iron is only mentioned as a component of transferrin used in stability tests. |
+| popPK | Hanke_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of iclepertin, not iron. |
+| PGx | He_2025 | not_relevant | 0 | 0 | The study investigates the effect of a chemical compound (4-ME) on iron metabolism in fish, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of iron. |
+| PD | Hedbrant_2020 | not_relevant | 0 | 0 | The paper investigates the association between quartz dust exposure and inflammatory markers in iron foundry workers, not the pharmacodynamic or exposure-response relationship of the drug/element Iron itself. |
+| popPK | Hedges_2020 | irrelevant | 0 | 0 | no_text gate: only 70 chars of text extracted (&lt; 400) |
+| PD | Hedges_2020 | not_relevant | 0 | 0 | The paper describes a chemical reaction (melanin formation) and does not report a pharmacodynamic exposure-response or dose-response relationship for iron as a drug. |
+| PGx | Hekmatshoar_2024 | not_relevant | 0 | 0 | The paper analyzes transcriptomic changes in CML cells treated with imatinib and nilotinib, not the pharmacokinetics or pharmacodynamics of iron. |
+| PGx | Hofmann_2023 | not_relevant | 0 | 0 | The paper investigates iron metabolism in multiple sclerosis and the association between haptoglobin genotypes and clinical disability, but does not report pharmacokinetic or pharmacodynamic effects of a drug. |
+| PD | Hu_2024 | not_relevant | 3 | 2 | The paper reports an epidemiological association between remnant cholesterol and iron status (serum ferritin/TBI) using linear regression, but it does not model a pharmacodynamic drug effect (e.g., Emax, EC50) or a dose-response curve for a therapeutic intervention. |
+| popPK | Hu_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for vatiquinone, not iron. |
+| PD | Hu_2025 | not_relevant | 0 | 0 | The paper reports only population pharmacokinetic (PK) parameters and covariate effects on exposure, with no pharmacodynamic (PD) or exposure-response analysis. |
+| popPK | Hu_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of utreloxastat, not iron. |
+| PD | Hu_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on population pharmacokinetic (PopPK) modeling of time-varying clearance and dose proportionality for utreloxastat, with no mention of pharmacodynamic (PD) endpoints, exposure-response relationships, or numeric PD parameters. |
+| popPK | Huang_2022 | irrelevant | 0 | 0 | The paper is an MRI imaging study using iron as a diagnostic marker for multiple sclerosis, not a pharmacokinetic study of iron as a drug. |
+| PGx | Iijima_2024 | not_relevant | 0 | 0 | The paper studies the metabolism of vitamin D metabolites by CYP3A4, not the pharmacokinetics or pharmacodynamics of iron. |
+| PD | Inman_1993 | not_relevant | 0 | 0 | The paper characterizes cellular iron transport mechanisms in K562 cells and does not report a pharmacodynamic exposure-response or dose-response relationship with numeric PD parameters. |
+| popPK | Ismaiel_2024 | irrelevant | 0 | 0 | no_text gate: only 167 chars of text extracted (&lt; 400) |
+| PD | Ismaiel_2024 | not_relevant | 0 | 0 | The paper studies the physiological response of algae to hydrogen peroxide and does not report any pharmacodynamic or exposure-response relationship for iron. |
+| popPK | Janssens_2021 | irrelevant | 0 | 0 | no_text gate: only 121 chars of text extracted (&lt; 400) |
+| PD | Janssens_2021 | not_relevant | 0 | 0 | The paper focuses on the development of activity-based assays for HIF heterodimerization and does not report pharmacodynamic or exposure-response relationships for Iron. |
+| popPK | Jovanović_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of adalimumab, not iron. |
+| PD | Jovanović_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on the population pharmacokinetics (PK) of Adalimumab, reporting no pharmacodynamic (PD) or exposure-response relationships. |
+| popPK | Kang_2021 | irrelevant | 0 | 0 | The paper is a review of genetic variants and ethnic differences in iron status biomarkers, not a pharmacokinetic study reporting quantitative disposition parameters like clearance or volume. |
+| PGx | Kang_2021 | not_relevant | 0 | 0 | The paper is a review of genetic variants associated with iron status biomarkers in different ethnic groups, not a study of a pharmacogenomic effect on the PK/PD of a specific drug. |
+| popPK | Kang_2026 | irrelevant | 0 | 0 | The paper is a computational study on drug-food interaction prediction using knowledge graphs and does not report any pharmacokinetic parameters for iron. |
+| PD | Kang_2026 | not_relevant | 0 | 0 | The paper describes a machine learning model for predicting drug-food interactions and does not report any pharmacodynamic or exposure-response data for iron. |
+| PGx | Katsarou_2019 | not_relevant | 0 | 0 | The paper describes the pathophysiology of hereditary hemochromatosis and HFE gene mutations affecting iron homeostasis, but does not report pharmacogenomic effects on the PK or PD of a specific drug. |
+| popPK | Kim_1995 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of iron's effect on calcium channels, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Koçar_2026 | irrelevant | 0 | 0 | The paper focuses on magnetic nanodiscs as MRI contrast agents and does not report pharmacokinetic parameters for iron as a subject drug. |
+| PD | Koçar_2026 | not_relevant | 0 | 0 | The paper describes magnetic nanodiscs as MRI contrast agents and reports relaxivity values, but does not report a pharmacodynamic exposure-response or dose-response relationship for iron with numeric PD parameters. |
+| popPK | Kraus_1988 | irrelevant | 0 | 0 | The study investigates trace element concentrations in blood compartments in the context of cadmium exposure, not the pharmacokinetic disposition parameters (CL, V, etc.) of iron. |
+| PGx | Kuzikov_2022 | not_relevant | 0 | 0 | The paper describes an electrochemical method for studying phenytoin metabolism by CYP2C19 and does not report pharmacogenomic effects on iron PK/PD parameters. |
+| PGx | Kwiatkowski_2024 | not_relevant | 0 | 0 | The paper reports clinical outcomes (transfusion independence) of a gene therapy, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of iron. |
+| popPK | Lao_2006 | irrelevant | 2 | 0 | The paper describes a mechanistic mathematical model of iron homeostasis in mice rather than a pharmacokinetic study reporting quantitative disposition parameters (CL, V, ka) for iron as a drug. |
+| popPK | Liang_2019 | irrelevant | 0 | 0 | no_text gate: only 101 chars of text extracted (&lt; 400) |
+| PD | Liang_2019 | not_relevant | 0 | 0 | The paper analyzes the nutritional composition and antioxidant activity of Moringa oleifera seeds, not the pharmacodynamics of iron. |
+| PD | Lin_2023 | not_relevant | 3 | 2 | The paper reports IC50 values for antioxidant activity (DPPH, etc.) and qualitative lifespan extension in nematodes, but lacks a formal pharmacodynamic model (Emax, EC50 for therapeutic effect) or exposure-response analysis for the drug's clinical efficacy. |
+| popPK | Liu_2026 | irrelevant | 0 | 0 | The paper is a metagenomic study on autism spectrum disorder biomarkers and does not report pharmacokinetic parameters for iron. |
+| popPK | Luo_2026 | irrelevant | 0 | 0 | The paper is an epidemiological study on air pollution and fetal growth, where iron is only a metallic constituent of particulate matter, not a subject drug for pharmacokinetic analysis. |
+| popPK | Lv_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the antiviral drug ASC10-A (molnupiravir), not for iron. |
+| PD | Lv_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (popPK) model for ASC10-A but does not include any pharmacodynamic (PD) data, exposure-response analysis, or numeric PD parameters. |
+| PD | López-Alcántara_2024 | not_relevant | 0 | 0 | The paper reports an IC50 for a nanoparticle formulation in a chemical antioxidant assay (DPPH), which is a physicochemical/chemical stability metric, not a pharmacodynamic (exposure-response) relationship for a drug in a biological system. |
+| popPK | Lőrincz_2019 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on cell death mechanisms involving ascorbate and iron dependency, not a pharmacokinetic study reporting quantitative disposition parameters for iron. |
+| PGx | Ma_2021 | not_relevant | 0 | 0 | The paper describes a genetic association with iron homeostasis (a physiological parameter), not the pharmacokinetics or pharmacodynamics of a specific drug. |
+| popPK | Ma_2026 | irrelevant | 0 | 0 | The paper is a review on chemodynamic therapy using iron-based nanomaterials for cancer treatment, not a pharmacokinetic study of iron as a drug, and contains no PK parameters. |
+| PD | Ma_2026 | not_relevant | 0 | 0 | The paper is a review of nanosystem-mediated phototherapy and chemodynamic therapy mechanisms, lacking any specific pharmacokinetic or pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for iron. |
+| PGx | Main_1995 | not_relevant | 0 | 0 | The paper discusses hepatitis C treatment and mentions iron deposition as a side effect of ribavirin, but it does not report any pharmacogenomic effects on iron PK/PD parameters. |
+| popPK | Mak_2004 | irrelevant | 0 | 0 | no_text gate: only 55 chars of text extracted (&lt; 400) |
+| PD | Mak_2004 | not_relevant | 0 | 0 | The paper discusses the antioxidant properties of 4-hydroxypropranolol, not Iron, and does not report any exposure-response or dose-response relationship for Iron. |
+| PD | Mann_1994 | not_relevant | 0 | 0 | The paper describes the structural binding site of lactoferrin to glycosaminoglycans and reports binding affinities (IC50) for protein-peptide interactions, which is a biochemical binding study, not a pharmacodynamic exposure-response or dose-response analysis of iron. |
+| PGx | Mansurova_2018 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomic effect of CYP2C19 on clopidogrel response (platelet reactivity), not on the pharmacokinetics or pharmacodynamics of iron. |
+| popPK | Marković_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of vedolizumab, not iron. |
+| popPK | Marques_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of propranolol and omeprazole, not iron. |
+| PD | Marques_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on pharmacokinetic (PK) modeling and drug-drug interactions for Propranolol, with no pharmacodynamic (PD) or exposure-response analysis reported. |
+| PGx | Mas_2015 | not_relevant | 0 | 0 | The paper focuses on identifying stem cell markers for uterine fibroids and does not investigate pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of iron. |
+| PGx | Masamrekh_2022 | not_relevant | 0 | 0 | The paper studies the interaction of abiraterone with CYP2C9, not the pharmacokinetics or pharmacodynamics of iron. |
+| popPK | Mashjoor_2019 | irrelevant | 0 | 0 | The paper focuses on the synthesis and ecotoxicology of iron oxide nanoparticles, not the pharmacokinetics of iron as a drug. |
+| PGx | Massaiu_2023 | not_relevant | 0 | 0 | The paper investigates gene expression changes in dilated cardiomyopathy, not the effect of a specific genetic variant on the pharmacokinetics or pharmacodynamics of an iron drug. |
+| PGx | McClain_2018 | not_relevant | 0 | 0 | The paper investigates the role of transferrin in insulin resistance and iron metabolism, not the pharmacokinetics or pharmacodynamics of an iron drug. |
+| popPK | McCormick_2020 | irrelevant | 0 | 0 | The study is a clinical trial assessing the effectiveness of iron supplementation on ferritin and hemoglobin mass, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | McGorman_2023 | irrelevant | 0 | 0 | no_text gate: only 59 chars of text extracted (&lt; 400) |
+| PD | McGorman_2023 | not_relevant | 0 | 0 | The paper analyzes DNA junction structures and does not report any pharmacodynamic or exposure-response data for Iron. |
+| popPK | McLaren_1991 | relevant | 9 | 2 | The paper describes a compartmental model for iron kinetics and reports qualitative findings on rate constants, but specific numeric parameter values are not present in the provided text. |
+| popPK | Mentewab_2023 | irrelevant | 0 | 0 | The study focuses on plant physiology and iron transport mechanisms in Arabidopsis, not human or animal pharmacokinetics. |
+| popPK | Mi_2026 | irrelevant | 0 | 0 | The paper focuses on nanoparticle drug delivery systems and general PK-PD modeling for cancer, not the pharmacokinetics of iron as a subject drug. |
+| PD | Mi_2026 | not_relevant | 1 | 0 | The paper is a database curation and machine learning study on nanoparticles, not a pharmacodynamic analysis of Iron, and it does not report specific numeric PD parameters (e.g., Emax, EC50) for Iron. |
+| PGx | Miao_2012 | not_relevant | 0 | 0 | The paper describes the pharmacokinetics of a cannabinoid antagonist in healthy volunteers and does not report any pharmacogenomic effects or iron-related parameters. |
+| PGx | Miao_2024 | not_relevant | 0 | 0 | The paper studies iron toxicity tolerance in rice plants, not human pharmacogenomics or drug pharmacokinetics/pharmacodynamics. |
+| popPK | Michel_1992 | irrelevant | 0 | 0 | The study is an in-vitro toxicology investigation of iron on cultured neurons, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Miller_1993 | irrelevant | 0 | 0 | no_text gate: only 119 chars of text extracted (&lt; 400) |
+| PD | Miller_1993 | not_relevant | 0 | 0 | The paper focuses on urinary porphyrins as indicators of oxidative stress in the context of mercury and cephaloridine interaction, with no mention of iron pharmacodynamics or exposure-response relationships. |
+| popPK | Miyamoto_2026 | irrelevant | 0 | 0 | The paper is a claims database study on adherence to iron index testing in CKD patients, not a pharmacokinetic study, and contains no PK parameters for iron. |
+| popPK | Mizaki_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of mycophenolic acid (MPA), not iron; iron is only mentioned as a concomitant medication affecting MPA absorption. |
+| PD | Moghimi_2019 | not_relevant | 3 | 2 | The paper reports IC50 values for metal toxicity and fold-changes in IC50 upon pretreatment with isatin derivatives, but it does not provide a concentration-effect curve, Emax, or a formal PK/PD model for the drug itself; it is a comparative toxicity assay rather than a pharmacodynamic exposure-response analysis. |
+| popPK | Morales_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of cefepime, not iron. |
+| PD | Morales_2026 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of Cefepime, not Iron, and does not report any pharmacodynamic or exposure-response parameters. |
+| PGx | Munkres_1990 | not_relevant | 0 | 0 | The paper discusses yeast genetics and oxidative stress, not human pharmacogenomics of iron. |
+| PGx | Mura_1997 | not_relevant | 0 | 0 | The paper describes the genetic basis of a disease (hemochromatosis) and its phenotypic markers, but does not report the effect of a gene variant on the pharmacokinetics or pharmacodynamics of an administered drug. |
+| popPK | Mülsch_1991 | irrelevant | 0 | 0 | no_text gate: only 162 chars of text extracted (&lt; 400) |
+| PD | Mülsch_1991 | not_relevant | 0 | 0 | The text describes the storage and release mechanism of a dinitrosyl-iron complex but contains no data, analysis, or numeric parameters regarding exposure-response or dose-response relationships. |
+| popPK | Mülsch_1994 | irrelevant | 0 | 0 | The paper investigates nitrogen monoxide transport mechanisms and dinitrosyl-iron complexes as a probe for EDRF, not the pharmacokinetics of iron as a drug. |
+| popPK | Najean_1988 | relevant | 8 | 2 | The paper describes a multi-compartment model for iron kinetics and reports a specific parameter (15% flux fraction), but lacks standard quantitative PK values like clearance or volume. |
+| PGx | Newman_2023 | not_relevant | 0 | 0 | The study investigates the effect of an iron compound (FAC) on transporter expression in cell lines, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of iron. |
+| popPK | Nosik_2023 | irrelevant | 0 | 0 | The paper is an in-vitro virology study on the antiviral activity of a DNA-iron complex, not a pharmacokinetic study of iron. |
+| popPK | Nyarubeli_2018 | irrelevant | 0 | 0 | The paper studies occupational noise exposure in iron and steel factories, not the pharmacokinetics of the drug iron. |
+| PGx | Ohmori_2025 | not_relevant | 0 | 0 | The paper characterizes CYP2E1 variants using chlorzoxazone as a probe substrate, not iron. |
+| PGx | Okafor_1985 | not_relevant | 0 | 0 | The study assesses bone marrow status in pregnant women with specific hemoglobin genotypes (AA/AS) but does not report pharmacokinetic or pharmacodynamic parameters of iron or any other drug. |
+| popPK | Paci_2012 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of busulfan, not iron; iron overload is only mentioned as a patient characteristic that did not affect busulfan PK. |
+| popPK | Pant_2025 | irrelevant | 0 | 0 | no_text gate: only 71 chars of text extracted (&lt; 400) |
+| popPK | Parrot_2026 | irrelevant | 0 | 0 | The paper is a review on nanoparticle pharmacokinetic modeling and does not report quantitative disposition parameters for iron. |
+| PD | Parrot_2026 | not_relevant | 0 | 0 | The text is a review of pharmacokinetic modeling frameworks for nanoparticles and does not report any specific pharmacodynamic or exposure-response data for iron. |
+| PD | Partanen_1991 | not_relevant | 0 | 0 | The paper is an epidemiological case-referent study on occupational risks for renal cell cancer, not a pharmacodynamic or exposure-response analysis of iron as a drug. |
+| PGx | Peters_1993 | not_relevant | 0 | 0 | The paper describes a genetic mutation affecting iron metabolism and anemia in mice, not the pharmacokinetics or pharmacodynamics of an exogenous drug. |
+| PGx | Peyronneau_1992 | not_relevant | 0 | 0 | The paper describes the optimization of a yeast expression system for CYP3A4 and its effect on the metabolism of model substrates (nifedipine, lidocaine, testosterone), not the pharmacokinetics or pharmacodynamics of iron. |
+| PGx | Piffaretti_2019 | not_relevant | 0 | 0 | The paper investigates pharmacological modulation of PpIX fluorescence in cell lines, not the effect of a specific gene variant on the PK/PD of iron. |
+| PGx | Piffaretti_2020 | not_relevant | 0 | 0 | The paper investigates pharmacological modulation of PpIX fluorescence in glioblastoma cells, not the pharmacogenomics of iron PK/PD. |
+| PGx | Pilon_2023 | not_relevant | 0 | 0 | The paper describes the synthesis and in vitro activity of iron-based compounds as ABCB1 inhibitors, not the effect of a human gene variant on the pharmacokinetics or pharmacodynamics of iron therapy. |
+| PGx | Ramos-Alonso_2018 | not_relevant | 0 | 0 | The paper studies iron homeostasis in yeast (Saccharomyces cerevisiae) and is not related to human pharmacogenomics or the pharmacokinetics/pharmacodynamics of iron drugs. |
+| popPK | Regan_1993 | irrelevant | 0 | 0 | no_text gate: only 52 chars of text extracted (&lt; 400) |
+| PD | Regan_1993 | not_relevant | 0 | 0 | The paper investigates the neurotoxicity of hemoglobin in cell culture, not the pharmacodynamics of iron. |
+| PGx | Regoeczi_1975 | not_relevant | 0 | 0 | The study investigates the metabolic heterogeneity of asialotransferrin in guinea pigs and does not report any pharmacogenomic effects (gene variants) on iron PK/PD parameters. |
+| popPK | Rekić_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for roxadustat, not iron; iron is only mentioned as a concomitant medication. |
+| PGx | Richard_2023 | not_relevant | 0 | 0 | The paper describes the chemical mechanism of isonitrile ligation to P450 heme iron and does not report any pharmacogenomic effects on iron pharmacokinetics or pharmacodynamics. |
+| PGx | Richardson_1995 | not_relevant | 0 | 0 | The paper investigates the effect of nitrogen monoxide on iron uptake in cell lines, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of an iron drug. |
+| popPK | Rognås_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of bitopertin, not iron. |
+| popPK | Rottet_2023 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
+| PD | Rottet_2023 | not_relevant | 0 | 0 | The paper describes biochemical interactions of a transporter with heavy metals, not a pharmacodynamic exposure-response relationship for a drug. |
+| PGx | Rowbotham_1984 | not_relevant | 2 | 0 | The paper describes a case report of iron overload in a patient with pyruvate kinase deficiency and HLA genotype, but it does not report a pharmacogenomic effect on the PK or PD parameters of a specific drug (iron is the substrate/condition, not the drug in a standard PGx context, and no quantitative PK/PD changes are reported). |
+| popPK | Ryan_2026 | irrelevant | 0 | 0 | The paper is a protocol for a prescribing appropriateness study in older adults with intellectual disability and contains no pharmacokinetic data or parameters for iron. |
+| PD | Ryan_2026 | not_relevant | 0 | 0 | The paper describes a protocol for applying a prescribing appropriateness tool (OPTIMA-ID) to a cohort and contains no pharmacokinetic, pharmacodynamic, or exposure-response analysis for iron or any other drug. |
+| popPK | Salaroli_2022 | irrelevant | 0 | 0 | The study investigates the anticancer activity of an Artemisia annua extract and mentions intracellular iron levels as a mechanistic marker for ferroptosis, but it does not report pharmacokinetic parameters for iron as a subject drug. |
+| PGx | Sasaki_2019 | not_relevant | 0 | 0 | The paper describes a splicing variant of hepcidin mRNA as a biomarker for cancer diagnosis, not a pharmacogenomic effect on the PK/PD of a drug. |
+| popPK | Sauer_1991 | irrelevant | 0 | 0 | The study investigates the kinetics of red blood cell hemolysis in glycerol media, not the pharmacokinetics of iron as a drug. |
+| PD | Sauer_1991 | not_relevant | 0 | 0 | The paper studies the kinetics of red blood cell hemolysis in glycerol media and does not report a pharmacodynamic exposure-response or dose-response relationship for the drug Iron. |
+| PGx | Sevrioukova_2019 | not_relevant | 0 | 0 | The paper describes structural interactions of inhibitors with CYP3A4 heme iron, not pharmacogenomic effects on iron pharmacokinetics or pharmacodynamics. |
+| PGx | Shah_2023 | not_relevant | 0 | 0 | The paper investigates the association between genetic variants and thrombosis risk/transferrin levels in a congenital disorder, not the pharmacokinetics or pharmacodynamics of an iron drug. |
+| PD | Shanmugam_2024 | not_relevant | 0 | 0 | The paper describes a mechanistic biological pathway (iron-dependent telomerase reactivation) and identifies a small molecule inhibitor, but it does not report a pharmacokinetic/pharmacodynamic (PK/PD) model or numeric exposure-response parameters for iron as a drug. |
+| popPK | Sharma_2026 | irrelevant | 0 | 0 | The paper is a mechanistic study on polyamines and ferroptosis, not a pharmacokinetic study of iron, and contains no quantitative disposition parameters. |
+| PD | Sharma_2026 | not_relevant | 1 | 0 | The paper describes a qualitative biological mechanism (polyamines buffering iron) and a correlation, but does not report a quantitative pharmacodynamic model or numeric dose-response parameters for a drug. |
+| PGx | Shen_2021 | not_relevant | 0 | 0 | The paper focuses on a prognostic gene signature for hepatocellular carcinoma survival and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of iron. |
+| PD | Siddiqui_2016 | not_relevant | 0 | 0 | The paper reports in-vitro IC50 values for plant extracts, not a pharmacodynamic or exposure-response relationship for the drug Iron. |
+| popPK | Solana-Altabella_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for quizartinib, not iron. |
+| PD | Solana-Altabella_2025 | not_relevant | 0 | 0 | The paper focuses exclusively on the validation of a UPLC-MS/MS method and a population pharmacokinetic (PK) model for quizartinib, with no pharmacodynamic (PD) or exposure-response analysis reported. |
+| popPK | Stout_1994 | irrelevant | 0 | 0 | The paper is a neuropharmacology study on nitric oxide and neurotransmitter release, not a pharmacokinetic study of iron. |
+| PD | Stout_1994 | not_relevant | 0 | 0 | The paper reports pharmacological effects of nitric oxide donors and gas, not Iron; no exposure-response or dose-response data for Iron is presented. |
+| PGx | Su_2023 | not_relevant | 0 | 0 | The paper investigates the metabolic activation and hepatotoxicity of deferasirox, not the pharmacokinetics or pharmacodynamics of iron itself. |
+| PGx | Swigonska_2022 | not_relevant | 0 | 0 | The paper investigates the in silico metabolism of dioxins by CYP1A2 in pigs and does not report pharmacogenomic effects on the PK/PD of iron. |
+| popPK | Tang_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and dose optimization of datopotamab deruxtecan, not iron. |
+| PD | Tang_2026 | not_relevant | 0 | 0 | The paper discusses datopotamab deruxtecan, not Iron, and does not report any PD parameters for Iron. |
+| popPK | Teixeira_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of meloxicam, not iron. |
+| PD | Teixeira_2026 | not_relevant | 0 | 0 | The study focuses exclusively on the population pharmacokinetics (PopPK) of meloxicam and does not report any pharmacodynamic, exposure-response, or dose-response data. |
+| PGx | Thakkar_2021 | not_relevant | 0 | 0 | The study examines the association between HFE genotypes and athletic performance (VO2peak, time trial), not the pharmacokinetics or pharmacodynamics of an administered iron drug. |
+| PGx | Todd_1994 | not_relevant | 0 | 0 | The paper describes the pathophysiology and inheritance of Erythropoietic Protoporphyria, not the pharmacogenomics of iron pharmacokinetics or pharmacodynamics. |
+| PGx | Travaglini_2025 | not_relevant | 0 | 0 | The paper describes a genetic cause of a disease (NBIA) involving brain iron accumulation, not a pharmacogenomic effect on the PK/PD of an iron drug. |
+| PGx | Tsoi_2018 | not_relevant | 0 | 0 | The paper discusses melanoma subtypes and sensitivity to ferroptosis (iron-dependent cell death) but does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of iron itself. |
+| PGx | Tuck_1993 | not_relevant | 0 | 0 | The paper investigates the structural topology of the CYP1A2 active site and the regioselectivity of heme modification by diazenes, not the pharmacokinetics or pharmacodynamics of iron as a drug. |
+| PGx | Tzvetkov_1991 | not_relevant | 0 | 0 | The paper studies the effect of whole-body vibration on electrolyte levels, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of iron. |
+| PD | Van_1989 | not_relevant | 1 | 0 | The text is a clinical review that explicitly states no dose-response relationship was observed and provides no numeric PD parameters or concentration-effect data. |
+| popPK | Van_1993 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of gadodiamide, not iron; iron is only mentioned as a minor transient laboratory finding. |
+| popPK | Vandewalle_1991 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on transferrin secretion in breast cancer cells and does not report pharmacokinetic parameters for iron. |
+| popPK | Von_2024 | irrelevant | 0 | 0 | The study is an epidemiological analysis of iron biomarkers (serum and toenail levels) and their correlations, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Vu_2022 | irrelevant | 0 | 0 | no_text gate: only 84 chars of text extracted (&lt; 400) |
+| PD | Vu_2022 | not_relevant | 0 | 0 | The paper focuses on the antimicrobial activity of fluoroquinolones against Chlamydia trachomatis and does not report any pharmacodynamic or exposure-response data for Iron. |
+| PGx | Wairich_2024 | not_relevant | 0 | 0 | The paper studies plant physiology (rice iron toxicity tolerance) and is not related to human pharmacogenomics or drug pharmacokinetics/pharmacodynamics. |
+| PGx | Waldvogel-Abramovski_2013 | not_relevant | 2 | 0 | The text is a review introduction discussing the general concept of genetic profiles in iron metabolism and blood donation, but it does not report specific pharmacogenomic effects on PK/PD parameters. |
+| popPK | Wang_2017 | irrelevant | 0 | 0 | The study is a nutritional epidemiology analysis of dietary iron intake, not a pharmacokinetic study, and reports no disposition parameters. |
+| popPK | Wang_2024 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the antiviral drug leritrelvir, not for iron. |
+| PGx | Watts_1993 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of beetroot pigments (betacyanins) and the phenomenon of beeturia, not the pharmacokinetics or pharmacodynamics of iron. |
+| PD | Wei_2022 | not_relevant | 0 | 0 | The paper is an epidemiological study assessing the association between co-exposure to trace elements and osteoporosis risk, not a pharmacodynamic or exposure-response analysis of a drug. |
+| PD | Wolff_1993 | not_relevant | 0 | 0 | The paper discusses the inhibition of nitric-oxide synthase by antifungal imidazole agents, not Iron, and does not report exposure-response or dose-response relationships for Iron. |
+| PGx | Wu_2024 | not_relevant | 0 | 0 | The paper evaluates the diagnostic utility of the Mentzer index for thalassemia screening and does not report pharmacokinetic or pharmacodynamic parameters of iron. |
+| PGx | Wu_2025 | not_relevant | 0 | 0 | The paper investigates nitrogen use efficiency in rice plants, not human pharmacogenomics or drug pharmacokinetics. |
+| PGx | Xiang_2021 | not_relevant | 0 | 0 | The paper discusses Gilbert's syndrome and bilirubin metabolism, explicitly stating there are no abnormalities in iron metabolism, and does not report pharmacogenomic effects on iron PK/PD. |
+| PGx | Xie_2023 | not_relevant | 0 | 0 | The paper studies the metabolism of itraconazole, not iron. |
+| popPK | Xie_2025 | irrelevant | 0 | 0 | The study evaluates the efficacy of conbercept for diabetic macular edema and does not involve iron pharmacokinetics. |
+| popPK | Xu_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for sarilumab, not iron. |
+| PGx | Yamaguchi-Iwai_1995 | not_relevant | 0 | 0 | The paper describes basic biological mechanisms of iron homeostasis in yeast, not the pharmacokinetics or pharmacodynamics of an iron drug in humans. |
+| popPK | Yao_2025 | irrelevant | 0 | 0 | The paper focuses on the synthesis and biological evaluation of indoline derivatives as Cisd2 activators, not on the pharmacokinetics of iron. |
+| popPK | Yao_2025_2 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of simnotrelvir (a 3CLpro inhibitor for COVID-19), not iron. |
+| PGx | Yokota_1994 | not_relevant | 0 | 0 | The paper focuses on the cloning and mapping of the dihydropyrimidine dehydrogenase (DPD) gene, which is associated with 5-fluorouracil toxicity, not iron pharmacokinetics or pharmacodynamics. |
+| PGx | Zeitoun_2021 | not_relevant | 0 | 0 | The study investigates the association between genetic risk of iron status and premenstrual symptoms, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of an iron drug. |
+| PGx | Zhang_2021 | not_relevant | 0 | 0 | The paper focuses on computational methods for predicting drug metabolism sites by CYP2C9 and does not report pharmacogenomic effects on iron PK/PD parameters. |
+| PGx | Zhang_2026 | not_relevant | 0 | 0 | The paper investigates a drug-enzyme interaction (bicuculline inhibiting CYP2C19) affecting clopidogrel PK, not a pharmacogenomic effect on iron. |
+| popPK | Zhao_2026 | irrelevant | 0 | 0 | The paper describes the synthesis and photothermal properties of a nanomaterial (CDs@Fe3O4) for cancer therapy, not the pharmacokinetics of iron as a drug. |
+| PD | Zhao_2026 | not_relevant | 0 | 0 | The paper describes the synthesis and characterization of a nanomaterial for photothermal therapy, not a pharmacodynamic or exposure-response analysis of iron as a drug. |
+| popPK | Zhu_2017 | irrelevant | 0 | 0 | The study investigates the developmental toxicity of iron oxide nanoparticles in *Artemia salina*, not the pharmacokinetics of iron as a drug. |
+| popPK | Zulkifli_2025 | irrelevant | 0 | 0 | The paper studies the drug elesclomol (a copper transporter) and its effects on copper deficiency, not the pharmacokinetics of iron. |
+| popPK | van_1977 | relevant | 9 | 2 | The paper describes a compartmental analysis of iron kinetics in rhesus monkeys, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided abstract text. |
+| PGx | van_2024 | not_relevant | 0 | 0 | The paper describes a genetic disorder affecting iron-sulfur cluster assembly and DPD enzyme maturation, not the pharmacokinetics or pharmacodynamics of an iron-based drug. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_iron`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

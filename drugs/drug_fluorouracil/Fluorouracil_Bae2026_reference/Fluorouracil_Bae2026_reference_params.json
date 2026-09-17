@@ -1,0 +1,26 @@
+{
+ "model_id": "Fluorouracil_Bae2026_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.027777777777778e-07,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 9.842857142857143e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.004354136429608128,
+  "k21": 1.8159806295399513e-05,
+  "ka": 0.0002102777777777778,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 4.08097092586964e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

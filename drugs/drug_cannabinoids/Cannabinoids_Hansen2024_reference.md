@@ -1,0 +1,124 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;cannabinoids&quot;,&quot;href&quot;:&quot;drugs/drug_cannabinoids/&quot;},{&quot;label&quot;:&quot;Hansen_2024 \u00b7 reference&quot;}]"></div>
+
+# cannabinoids — `Cannabinoids_Hansen2024_reference`
+
+> ## <span class="pk-badge pk-badge--red">rejected</span>
+
+### Reviewer guidance
+
+**What is wrong:** a compartment is unreachable, or a metabolite is unlinked
+
+**Steps:**
+1. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
+2. Parent/metabolite records commonly miss the formation link.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
+
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+## Citation
+Hansen JS; Boix F; Hasselstrøm JB; Sørensen LK; Kjolby M; Gustavsen S; Hansen RM; Petersen T; Sellebjerg F; Kasch H; Rasmussen PV; Finnerup NB; Saedder EA; Svendsen KB et al. (2024). Clinical and translational science 17
+  ·  DOI: [10.1111/cts.13685](https://doi.org/10.1111/cts.13685)
+
+## Model component
+<dbs-pgx drug="cannabinoids" model-id="Cannabinoids_Hansen2024_reference" status="rejected" stale="false" population="patients with multiple sclerosis" measured-compound="THC and CBD" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Parameterization:** mechanistic.
+
+## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| THC Vpop | `Q61` · V | —(suppressed) | not captured | — | not captured | 32.6 | llm (0.6) | cts13685-tbl-0002:row2:col1, cts13685-tbl-0002:row2:col2, cts13685-tbl-0002:row2:col3, cts13685-tbl-0002:row2:col4, cts13685-tbl-0002:row2:col5, cts13685-tbl-0002:row2:col6 | — | not captured |
+| AUCINF | `Q17` · AUC∞ | —(suppressed) | not captured | — | not captured | 17.21 | exact (1.0) | Hansen_2024_table_3:row1:col1, Hansen_2024_table_3:row1:col2, Hansen_2024_table_3:row1:col3, Hansen_2024_table_3:row1:col4, Hansen_2024_table_3:row1:col5, Hansen_2024_table_3:row1:col6, Hansen_2024_table_3:row1:col7, Hansen_2024_table_3:row1:col8, Hansen_2024_table_3:row13:col1, Hansen_2024_table_3:row13:col2, Hansen_2024_table_3:row13:col3, Hansen_2024_table_3:row13:col4, Hansen_2024_table_3:row13:col5, Hansen_2024_table_3:row13:col6, Hansen_2024_table_3:row13:col7, Hansen_2024_table_3:row13:col8 | — | not captured |
+| Cmax | `Q32` · Cmax | —(suppressed) | not captured | — | not captured | 16.86 | exact (1.0) | Hansen_2024_table_3:row4:col1, Hansen_2024_table_3:row4:col2, Hansen_2024_table_3:row4:col3, Hansen_2024_table_3:row4:col4, Hansen_2024_table_3:row4:col5, Hansen_2024_table_3:row4:col6, Hansen_2024_table_3:row4:col7, Hansen_2024_table_3:row4:col8, Hansen_2024_table_3:row16:col1, Hansen_2024_table_3:row16:col2, Hansen_2024_table_3:row16:col3, Hansen_2024_table_3:row16:col4, Hansen_2024_table_3:row16:col5, Hansen_2024_table_3:row16:col6, Hansen_2024_table_3:row16:col7, Hansen_2024_table_3:row16:col8 | — | not captured |
+| Tmax | `Q56` · tmax | —(suppressed) | not captured | — | not captured | 20.98 | exact (1.0) | Hansen_2024_table_3:row7:col1, Hansen_2024_table_3:row7:col2, Hansen_2024_table_3:row7:col3, Hansen_2024_table_3:row7:col4, Hansen_2024_table_3:row7:col5, Hansen_2024_table_3:row7:col6, Hansen_2024_table_3:row7:col7, Hansen_2024_table_3:row7:col8, Hansen_2024_table_3:row19:col1, Hansen_2024_table_3:row19:col2, Hansen_2024_table_3:row19:col3, Hansen_2024_table_3:row19:col4, Hansen_2024_table_3:row19:col5, Hansen_2024_table_3:row19:col6, Hansen_2024_table_3:row19:col7, Hansen_2024_table_3:row19:col8 | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+</details>
+
+## Departures & gaps
+
+**Interpretation flags:**
+- dropped unlinked row (NIL): 'THC Tk0pop' — extend the ontology if this is a real PK parameter (source ['cts13685-tbl-0002:row1:col1', 'cts13685-tbl-0002:row1:col2', 'cts13685-tbl-0002:row1:col3', 'cts13685-tbl-0002:row1:col4', 'cts13685-tbl-0002:row1:col5', 'cts13685-tbl-0002:row1:col6'])
+- dropped unlinked row (NIL): 'THC kpop' — extend the ontology if this is a real PK parameter (source ['cts13685-tbl-0002:row3:col1', 'cts13685-tbl-0002:row3:col2', 'cts13685-tbl-0002:row3:col3', 'cts13685-tbl-0002:row3:col4', 'cts13685-tbl-0002:row3:col5', 'cts13685-tbl-0002:row3:col6'])
+- dropped unlinked row (NIL): 'THC ωTk0' — extend the ontology if this is a real PK parameter (source ['cts13685-tbl-0002:row4:col1', 'cts13685-tbl-0002:row4:col2', 'cts13685-tbl-0002:row4:col3', 'cts13685-tbl-0002:row4:col4', 'cts13685-tbl-0002:row4:col5', 'cts13685-tbl-0002:row4:col6'])
+- routed 'THC ωV' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- routed 'THC ωk' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'THC a' — extend the ontology if this is a real PK parameter (source ['cts13685-tbl-0002:row7:col1', 'cts13685-tbl-0002:row7:col2', 'cts13685-tbl-0002:row7:col3', 'cts13685-tbl-0002:row7:col4', 'cts13685-tbl-0002:row7:col5', 'cts13685-tbl-0002:row7:col6'])
+- dropped unlinked row (NIL): 'THC b' — extend the ontology if this is a real PK parameter (source ['cts13685-tbl-0002:row8:col1', 'cts13685-tbl-0002:row8:col2', 'cts13685-tbl-0002:row8:col3', 'cts13685-tbl-0002:row8:col4', 'cts13685-tbl-0002:row8:col5', 'cts13685-tbl-0002:row8:col6'])
+- dropped unlinked row (NIL): 'CBD Tk0pop' — extend the ontology if this is a real PK parameter (source ['cts13685-tbl-0002:row10:col1', 'cts13685-tbl-0002:row10:col2', 'cts13685-tbl-0002:row10:col3'])
+- dropped duplicate Q61 ('CBD Vpop', value '4479.75') — already have one for this compound
+- dropped unlinked row (NIL): 'CBD kpop' — extend the ontology if this is a real PK parameter (source ['cts13685-tbl-0002:row12:col1', 'cts13685-tbl-0002:row12:col2', 'cts13685-tbl-0002:row12:col3', 'cts13685-tbl-0002:row12:col4', 'cts13685-tbl-0002:row12:col5', 'cts13685-tbl-0002:row12:col6'])
+- routed 'CBD ωTk0' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- routed 'CBD ωV' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- routed 'CBD ωk' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'CBD a' — extend the ontology if this is a real PK parameter (source ['cts13685-tbl-0002:row16:col1', 'cts13685-tbl-0002:row16:col2', 'cts13685-tbl-0002:row16:col3', 'cts13685-tbl-0002:row16:col4', 'cts13685-tbl-0002:row16:col5', 'cts13685-tbl-0002:row16:col6'])
+- dropped unlinked row (NIL): 'CBD b' — extend the ontology if this is a real PK parameter (source ['cts13685-tbl-0002:row17:col1', 'cts13685-tbl-0002:row17:col2', 'cts13685-tbl-0002:row17:col3', 'cts13685-tbl-0002:row17:col4', 'cts13685-tbl-0002:row17:col5', 'cts13685-tbl-0002:row17:col6'])
+- dropped unlinked row (NIL): 'THC' — extend the ontology if this is a real PK parameter (source ['Hansen_2024_table_3:row0:col1', 'Hansen_2024_table_3:row0:col2', 'Hansen_2024_table_3:row0:col3', 'Hansen_2024_table_3:row0:col4', 'Hansen_2024_table_3:row0:col5', 'Hansen_2024_table_3:row0:col6', 'Hansen_2024_table_3:row0:col7', 'Hansen_2024_table_3:row0:col8', 'Hansen_2024_table_3:row3:col1', 'Hansen_2024_table_3:row3:col2', 'Hansen_2024_table_3:row3:col3', 'Hansen_2024_table_3:row3:col4', 'Hansen_2024_table_3:row3:col5', 'Hansen_2024_table_3:row3:col6', 'Hansen_2024_table_3:row3:col7', 'Hansen_2024_table_3:row3:col8', 'Hansen_2024_table_3:row6:col1', 'Hansen_2024_table_3:row6:col2', 'Hansen_2024_table_3:row6:col3', 'Hansen_2024_table_3:row6:col4', 'Hansen_2024_table_3:row6:col5', 'Hansen_2024_table_3:row6:col6', 'Hansen_2024_table_3:row6:col7', 'Hansen_2024_table_3:row6:col8', 'Hansen_2024_table_3:row9:col1', 'Hansen_2024_table_3:row9:col2', 'Hansen_2024_table_3:row9:col3', 'Hansen_2024_table_3:row9:col4', 'Hansen_2024_table_3:row9:col5', 'Hansen_2024_table_3:row9:col6', 'Hansen_2024_table_3:row9:col7', 'Hansen_2024_table_3:row9:col8'])
+- dropped unlinked row (NIL): '(ng*h/mL)' — extend the ontology if this is a real PK parameter (source ['Hansen_2024_table_3:row2:col1', 'Hansen_2024_table_3:row2:col2', 'Hansen_2024_table_3:row2:col3', 'Hansen_2024_table_3:row2:col4', 'Hansen_2024_table_3:row2:col5', 'Hansen_2024_table_3:row2:col6', 'Hansen_2024_table_3:row2:col7', 'Hansen_2024_table_3:row2:col8', 'Hansen_2024_table_3:row14:col1', 'Hansen_2024_table_3:row14:col2', 'Hansen_2024_table_3:row14:col3', 'Hansen_2024_table_3:row14:col4', 'Hansen_2024_table_3:row14:col5', 'Hansen_2024_table_3:row14:col6', 'Hansen_2024_table_3:row14:col7', 'Hansen_2024_table_3:row14:col8'])
+- dropped unlinked row (NIL): '(ng/mL)' — extend the ontology if this is a real PK parameter (source ['Hansen_2024_table_3:row5:col1', 'Hansen_2024_table_3:row5:col2', 'Hansen_2024_table_3:row5:col3', 'Hansen_2024_table_3:row5:col4', 'Hansen_2024_table_3:row5:col5', 'Hansen_2024_table_3:row5:col6', 'Hansen_2024_table_3:row5:col7', 'Hansen_2024_table_3:row5:col8', 'Hansen_2024_table_3:row17:col1', 'Hansen_2024_table_3:row17:col2', 'Hansen_2024_table_3:row17:col3', 'Hansen_2024_table_3:row17:col4', 'Hansen_2024_table_3:row17:col5', 'Hansen_2024_table_3:row17:col6', 'Hansen_2024_table_3:row17:col7', 'Hansen_2024_table_3:row17:col8'])
+- dropped unlinked row (NIL): '(h)' — extend the ontology if this is a real PK parameter (source ['Hansen_2024_table_3:row8:col1', 'Hansen_2024_table_3:row8:col2', 'Hansen_2024_table_3:row8:col3', 'Hansen_2024_table_3:row8:col4', 'Hansen_2024_table_3:row8:col5', 'Hansen_2024_table_3:row8:col6', 'Hansen_2024_table_3:row8:col7', 'Hansen_2024_table_3:row8:col8', 'Hansen_2024_table_3:row20:col1', 'Hansen_2024_table_3:row20:col2', 'Hansen_2024_table_3:row20:col3', 'Hansen_2024_table_3:row20:col4', 'Hansen_2024_table_3:row20:col5', 'Hansen_2024_table_3:row20:col6', 'Hansen_2024_table_3:row20:col7', 'Hansen_2024_table_3:row20:col8'])
+- dropped duplicate Q61 ('Volumedist', value '3412') — already have one for this compound
+- dropped unlinked row (NIL): '(L)' — extend the ontology if this is a real PK parameter (source ['Hansen_2024_table_3:row11:col1', 'Hansen_2024_table_3:row11:col2', 'Hansen_2024_table_3:row11:col3', 'Hansen_2024_table_3:row11:col4', 'Hansen_2024_table_3:row11:col5', 'Hansen_2024_table_3:row11:col6', 'Hansen_2024_table_3:row11:col7', 'Hansen_2024_table_3:row11:col8', 'Hansen_2024_table_3:row23:col1', 'Hansen_2024_table_3:row23:col2', 'Hansen_2024_table_3:row23:col3', 'Hansen_2024_table_3:row23:col4', 'Hansen_2024_table_3:row23:col5', 'Hansen_2024_table_3:row23:col6', 'Hansen_2024_table_3:row23:col7', 'Hansen_2024_table_3:row23:col8'])
+- dropped unlinked row (NIL): 'CBD' — extend the ontology if this is a real PK parameter (source ['Hansen_2024_table_3:row12:col1', 'Hansen_2024_table_3:row12:col2', 'Hansen_2024_table_3:row12:col3', 'Hansen_2024_table_3:row12:col4', 'Hansen_2024_table_3:row12:col5', 'Hansen_2024_table_3:row12:col6', 'Hansen_2024_table_3:row12:col7', 'Hansen_2024_table_3:row12:col8', 'Hansen_2024_table_3:row15:col1', 'Hansen_2024_table_3:row15:col2', 'Hansen_2024_table_3:row15:col3', 'Hansen_2024_table_3:row15:col4', 'Hansen_2024_table_3:row15:col5', 'Hansen_2024_table_3:row15:col6', 'Hansen_2024_table_3:row15:col7', 'Hansen_2024_table_3:row15:col8', 'Hansen_2024_table_3:row18:col1', 'Hansen_2024_table_3:row18:col2', 'Hansen_2024_table_3:row18:col3', 'Hansen_2024_table_3:row18:col4', 'Hansen_2024_table_3:row18:col5', 'Hansen_2024_table_3:row18:col6', 'Hansen_2024_table_3:row18:col7', 'Hansen_2024_table_3:row18:col8', 'Hansen_2024_table_3:row21:col1', 'Hansen_2024_table_3:row21:col2', 'Hansen_2024_table_3:row21:col3', 'Hansen_2024_table_3:row21:col4', 'Hansen_2024_table_3:row21:col5', 'Hansen_2024_table_3:row21:col6', 'Hansen_2024_table_3:row21:col7', 'Hansen_2024_table_3:row21:col8'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=THC and CBD
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- status held at route_to_review — not promoted
+- review gap-fill skipped: this record measures 'THC and CBD', not cannabinoids — the review values are the parent's
+
+**Extraction notes:**
+- unparsed cell cts13685-tbl-0002:row10:col4 = '2.64E‐06'
+- unparsed cell cts13685-tbl-0002:row10:col5 = '1.22E‐07'
+- unparsed cell cts13685-tbl-0002:row10:col6 = '8.86E‐05'
+- companion parameter table 3 transcribed (192 record(s))
+- LLM selected parameter table(s) 2, 3
+
+## Validation
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
+
+<details class="legend">
+<summary>Check legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+</details>
+
+## Raw artifacts
+
+- scholar stages: `../../../knowledgebase/drugs/drug_cannabinoids/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hansen_2024` / `Hansen_2024::reference`)
+
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Downloadable models
+
+No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.
+
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+## Web simulation
+
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>Generated by `docs.py` (scholarv2). This page is a browsable view of the KB artifacts, not a replacement for them.</sub>

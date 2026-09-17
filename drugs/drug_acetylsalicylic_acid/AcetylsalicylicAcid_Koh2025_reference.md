@@ -1,19 +1,19 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;acetylsalicylic acid&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/&quot;},{&quot;label&quot;:&quot;Koh_2025 \u00b7 review reference&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;acetylsalicylic acid&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/&quot;},{&quot;label&quot;:&quot;Koh_2025 \u00b7 reference&quot;}]"></div>
 
 # acetylsalicylic acid — `AcetylsalicylicAcid_Koh2025_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-**What is wrong:** no model exists yet, so there is nothing to judge
+**What is wrong:** the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 3 covered
 
 **Steps:**
-1. No curator action. Run the engineer for this drug.
+1. Open the emitted .mo and compare its base class and parameters with the record.
+2. Check the .deviation.json beside it for what the engineer defaulted or assumed.
+3. A wrong base class or a defaulted core parameter means rebuilding, not curating.
 
 <sub>owner: **engineer** · guidance written by playbook</sub>
-
-> **Dose compound ≠ measured compound:** dosed `enteric-coated aspirin`, measured `acetylsalicylic_acid`.
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -22,19 +22,19 @@ Koh J; Khwarg J; Yu KS; Lee S; Jang IJ; Lee S et al. (2025). Drug design, develo
   ·  DOI: [10.2147/dddt.s533428](https://doi.org/10.2147/dddt.s533428)
 
 ## Model component
-<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Koh2025_reference" status="not_modelled" stale="false" population="healthy Korean subjects" measured-compound="acetylsalicylic_acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Koh2025_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="acetylsalicylic_acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** Q/F, V/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not_modelled`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL m /F (L/h) | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | acetylsalicylic_acid:review | — | not captured |
-| V 4 /F (L) | `Q76` · V/F | —(suppressed) | L | — | L | not captured | review (0.7) | acetylsalicylic_acid:review | — | not captured |
-| Q/F (L/h) | `Q69` · Q/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | acetylsalicylic_acid:review | — | not captured |
-| Lag 0 (h) | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review (0.7) | acetylsalicylic_acid:review | — | not captured |
+| CL m /F (L/h) | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Koh_2025:review | — | not captured |
+| V 4 /F (L) | `Q76` · V/F | —(suppressed) | L | — | L | not captured | review (0.7) | Koh_2025:review | — | not captured |
+| Q/F (L/h) | `Q69` · Q/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Koh_2025:review | — | not captured |
+| Lag 0 (h) | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review (0.7) | Koh_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,29 +57,37 @@ Koh J; Khwarg J; Yu KS; Lee S; Jang IJ; Lee S et al. (2025). Drug design, develo
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['acetylsalicylic_acid:review'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['acetylsalicylic_acid:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['acetylsalicylic_acid:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['acetylsalicylic_acid:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.76 | not captured | not captured | ['acetylsalicylic_acid:review'] |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Koh_2025:review'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Koh_2025:review'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Koh_2025:review'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Koh_2025:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.76 | not captured | not captured | ['Koh_2025:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.76 L/h | not captured | not captured | ['Koh_2025:review'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 7.5 L | not captured | not captured | ['Koh_2025:review'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T3_output_variable | not captured | pass | C_central (measured=acetylsalicylic_acid) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['tlag'] |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = both a volume and a clearance/elimination term; C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
 </details>
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Koh_2025` / `Koh_2025::review reference`)
+- scholar stages: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Koh_2025` / `Koh_2025::reference`)
+- model: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/models/modelica/AcetylsalicylicAcid_Koh2025_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/models/modelica/AcetylsalicylicAcid_Koh2025_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/models/modelica/AcetylsalicylicAcid_Koh2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -109,9 +117,11 @@ Each archive holds the model source, a script that simulates it against the appr
 
 ## Web simulation
 
-> 🚧 Not yet wired up — this tab will host an in-browser run of the model above, with editable parameters and dosing.
+Runs **this record's model** in your browser as WebAssembly — nothing to install. The sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited.
 
-The simulator will be built on **bodylight.js**, which compiles a model to WebAssembly and drives it from the page, so a simulation runs entirely in the browser with nothing to install: <https://bodylight.physiome.cz/>
+<dbs-fmusim paramsurl="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference/AcetylsalicylicAcid_Koh2025_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference/AcetylsalicylicAcid_Koh2025_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Template `PK_2C` · parameters `AcetylsalicylicAcid_Koh2025_reference_params.json` · controls `AcetylsalicylicAcid_Koh2025_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
