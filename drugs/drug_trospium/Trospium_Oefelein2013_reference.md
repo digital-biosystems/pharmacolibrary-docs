@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03D&quot;,&quot;href&quot;:&quot;atc/A03D.md&quot;},{&quot;label&quot;:&quot;trospium&quot;,&quot;href&quot;:&quot;drugs/drug_trospium/&quot;},{&quot;label&quot;:&quot;Oefelein_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Trospium_Oefelein2013_reference&quot;,&quot;label&quot;:&quot;Oefelein_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_trospium/Trospium_Oefelein2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Trospium_Doroshyenko2005_reference&quot;,&quot;label&quot;:&quot;Doroshyenko_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_trospium/Trospium_Doroshyenko2005_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Trospium_Oefelein2013_reference&quot;,&quot;label&quot;:&quot;Oefelein_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_trospium/Trospium_Oefelein2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -61,6 +61,7 @@ Oefelein MG; Tong W; Kerr S; Bhasi K; Patel RK; Yu D et al. (2013). Clinical dru
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Oefelein_2013:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Oefelein_2013:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
@@ -72,6 +73,7 @@ Oefelein MG; Tong W; Kerr S; Bhasi K; Patel RK; Yu D et al. (2013). Clinical dru
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=trospium) | central.C | not captured | output must be the measured/analyte compartment |

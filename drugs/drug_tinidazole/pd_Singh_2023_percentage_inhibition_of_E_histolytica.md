@@ -17,15 +17,12 @@ Singh A; Banerjee T; Shukla SK; Upadhyay S; Verma A et al. (2023). Scientific re
 |---|---|---|---|---|---|---|
 | E. h — Reference | `Q324` · not captured | 60 | not captured | not captured | llm (not captured) | Tab1:row2:col8 |
 | E. h — Reference | `Q324` · not captured | 36 | not captured | not captured | llm (not captured) | Tab1:row3:col8 |
-| E. h(HM1:IMSS) — No | `Q359` · not captured | 1 | HM1:IMSS | not captured | llm (not captured) | Tab1:row4:col2 |
 | E. h(HM1:IMSS) — Reference | `Q359` · not captured | 61 | HM1:IMSS | not captured | llm (not captured) | Tab1:row4:col8 |
 | E. h — Reference | `Q324` · not captured | 62 | not captured | not captured | llm (not captured) | Tab1:row5:col8 |
 | E. h — Reference | `Q324` · not captured | 31 | not captured | not captured | llm (not captured) | Tab1:row6:col8 |
 | E. h — Reference | `Q324` · not captured | 32 | not captured | not captured | llm (not captured) | Tab1:row7:col8 |
 | E. h — Reference | `Q324` · not captured | 63 | not captured | not captured | llm (not captured) | Tab1:row9:col8 |
-| E. h(HM1:IMSS) — No | `Q359` · not captured | 1 | HM1:IMSS | not captured | llm (not captured) | Tab1:row10:col2 |
 | E. h(HM1:IMSS) — Reference | `Q359` · not captured | 64 | HM1:IMSS | not captured | llm (not captured) | Tab1:row10:col8 |
-| E. h(HM1:IMSS) — No | `Q359` · not captured | 1 | HM1:IMSS | not captured | llm (not captured) | Tab1:row12:col2 |
 | E. h(HM1:IMSS) — Reference | `Q359` · not captured | 65 | HM1:IMSS | not captured | llm (not captured) | Tab1:row12:col8 |
 | E. h — Reference | `Q324` · not captured | 34 | not captured | not captured | llm (not captured) | Tab1:row13:col8 |
 

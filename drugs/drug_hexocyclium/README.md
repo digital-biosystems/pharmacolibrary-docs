@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 22:53 | 1:52 | 0/0/0 | 1/0/0 | 0/0/0 | 11,916/2,446 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-09-18 09:03 | 0:49 | 0/0/0 | 1/0/0 | 0/0/0 | 25,921/514 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -44,13 +44,13 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Milovanović_1997.pdf` | Milovanović DR et al., Pharmacologic characterization of musca…, The Indian journal of medic… (1997) | pd | 4 | not captured | [9183081](https://www.ncbi.nlm.nih.gov/pubmed/9183081) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-10T22:53:01.064585+00:00</sub>
+<sub>queue written 2026-09-18T09:03:37.285363+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Milovanović_1997 | irrelevant | 0 | 0 | The paper describes pharmacologic characterization of muscarine receptors in rat gastric fundus, not a pharmacokinetic study of hexocyclium. |
+| popPK | Milovanović_1997 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | PD | Milovanović_1997 | not_relevant | 0 | 0 | The paper characterizes muscarine receptor subtypes in rat gastric fundus and does not mention hexocyclium or report any exposure-response or dose-response data for it. |
 | popPK | Verspohl_1990 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding and functional study using sila-hexocyclium as a probe ligand, not a pharmacokinetic study of hexocyclium. |
 

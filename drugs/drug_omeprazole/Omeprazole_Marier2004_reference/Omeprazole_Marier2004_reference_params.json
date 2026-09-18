@@ -2,13 +2,13 @@
  "model_id": "Omeprazole_Marier2004_reference",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 1.2055555555555555e-05,
   "F": 1.0,
   "Tlag": 9000.0,
-  "VdPerKg": 0.00076,
+  "VdPerKg": 0.00066,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
@@ -16,7 +16,7 @@
   "weight": 70.0
  },
  "reference_peaks": {
-  "C_central": 0.0011469159159438608
+  "central.C": 0.0012601249268302632
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

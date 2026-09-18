@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;tegoprazan&quot;,&quot;href&quot;:&quot;drugs/drug_tegoprazan/&quot;},{&quot;label&quot;:&quot;Kim_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegoprazan_Kim2024_reference&quot;,&quot;label&quot;:&quot;Kim_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegoprazan_He2021_reference&quot;,&quot;label&quot;:&quot;He_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tegoprazan/Tegoprazan_He2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegoprazan_Jung2026_reference&quot;,&quot;label&quot;:&quot;Jung_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tegoprazan/Tegoprazan_Jung2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegoprazan_Kim2024_reference&quot;,&quot;label&quot;:&quot;Kim_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -31,8 +31,8 @@ Kim HS; Choi YK; Oh M; Cho YS; Ghim JL et al. (2024). Translational and clinical
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 21.02 | L/h | 5.838888888888889e-06 | L/h | not captured | review (0.7) | Kim_2024:review | — | not captured |
-| Vd/F | `Q76` · V/F | 122.72 | L | 0.12272 | L | not captured | review (0.7) | Kim_2024:review | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 21.02 | L/h | 5.838888888888889e-06 | L/h | not captured | review (0.7) | Kim_2024:review | — | not captured |
+| Vd/F (L) | `Q76` · V/F | 122.72 | L | 0.12272 | L | not captured | review (0.7) | Kim_2024:review | — | not captured |
 | flow rate | `Q30` · Q | 0.3 | mL/min | 5e-09 | L/h | not captured | review (0.7) | Kim_2024:review | — | not captured |
 
 <details class="legend">
@@ -60,6 +60,7 @@ Kim HS; Choi YK; Oh M; Cho YS; Ghim JL et al. (2024). Translational and clinical
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kim_2024:review'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kim_2024:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kim_2024:review'] |
@@ -72,6 +73,7 @@ Kim HS; Choi YK; Oh M; Cho YS; Ghim JL et al. (2024). Translational and clinical
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=tegoprazan) | central.C | not captured | output must be the measured/analyte compartment |
@@ -99,7 +101,7 @@ Kim HS; Choi YK; Oh M; Cho YS; Ghim JL et al. (2024). Translational and clinical
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference/Tegoprazan_Kim2024_reference_modelica.zip" download>Tegoprazan_Kim2024_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference/Tegoprazan_Kim2024_reference_fmi.zip" download>Tegoprazan_Kim2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference/Tegoprazan_Kim2024_reference_fmi.zip" download>Tegoprazan_Kim2024_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference/Tegoprazan_Kim2024_reference_matlab.zip" download>Tegoprazan_Kim2024_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference/Tegoprazan_Kim2024_reference_matlab_simbio.zip" download>Tegoprazan_Kim2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference/Tegoprazan_Kim2024_reference_sbml.zip" download>Tegoprazan_Kim2024_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>

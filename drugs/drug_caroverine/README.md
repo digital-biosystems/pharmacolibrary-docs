@@ -11,7 +11,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 22:18 | 2:26 | 0/0/0 | 0/0/0 | 0/0/0 | 5,234/3,688 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-18 08:31 | 2:38 | 0/0/0 | 0/0/0 | 0/0/0 | 6,989/600 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -19,7 +19,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 3 matched, 4 returned
+- **PubMed hits:** 4 matched, 4 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -32,7 +32,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Chen_2003.pdf` | Chen Z et al., Pharmacokinetics of caroverine in the i…, Audiology & neuro-otology (2003) | popPK | 8 | [10.1159/000067893](https://doi.org/10.1159/000067893) | [12566692](https://pubmed.ncbi.nlm.nih.gov/12566692) | The study investigates the pharmacokinetics of caroverine in guinea pigs, but the provided evidence contains only qualitative descriptions of concentration trends without any specific numeric parameter values. |
 
-<sub>queue written 2026-09-10T22:18:15.496725+00:00</sub>
+<sub>queue written 2026-09-18T08:31:01.523324+00:00</sub>
 
 ## Screened and excluded
 

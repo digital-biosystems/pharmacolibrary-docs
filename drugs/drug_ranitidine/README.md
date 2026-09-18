@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;ranitidine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ranitidine_Hawwa2013_reference&quot;,&quot;label&quot;:&quot;Hawwa_2013_critically ill children&quot;,&quot;href&quot;:&quot;drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ranitidine_Hawwa2013_reference&quot;,&quot;label&quot;:&quot;Hawwa_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # ranitidine
 
@@ -26,13 +26,13 @@ The prevalence of GERD is thought to be 10-20% in western countries.[A176843] Ra
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Hawwa_2013_critically ill children](drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference.md) | Hawwa AF et al., Prophylactic ranitidine treatment in cr…, British journal of clinical… (2013) | [10.1111/j.1365-2125.2012.04473.x](https://doi.org/10.1111/j.1365-2125.2012.04473.x) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Hawwa_2013_reference](drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference.md) | Hawwa AF et al., Prophylactic ranitidine treatment in cr…, British journal of clinical… (2013) | [10.1111/j.1365-2125.2012.04473.x](https://doi.org/10.1111/j.1365-2125.2012.04473.x) |
 
 ## Coverage
 
 - **PubMed hits:** 140 matched, 60 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 1
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

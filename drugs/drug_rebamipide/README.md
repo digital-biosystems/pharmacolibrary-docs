@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 21:40 | 26:09 | 0/0/0 | 0/0/0 | 0/0/0 | 269,554/15,655 | ollama / qwen3.8:27b-mtp-q8_0 | 34 | 9/25 | 33/1 | 0 |
+| 2026-09-18 07:19 | 19:18 | 0/0/0 | 0/0/0 | 0/0/0 | 670,629/14,126 | ollama / qwen3.8:27b-mtp-q8_0 | 34 | 9/25 | 33/1 | 0 |
 
 ## popPK records
 
@@ -30,14 +30,13 @@ _not available_
 
 ## Full text wanted
 
-_12 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_11 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Ngo_2017.pdf` | Ngo L et al., Population pharmacokinetic analysis of…, Journal of pharmacokinetics… (2017) | popPK | 10 | [10.1007/s10928-017-9519-z](https://doi.org/10.1007/s10928-017-9519-z) | [28316019](https://pubmed.ncbi.nlm.nih.gov/28316019) | The paper is a population PK study of rebamipide, but the evidence text only provides relative changes (percentages) and qualitative model descriptions, lacking the specific numeric values for CL, V, or ka. |
 | `Shin_2004.pdf` | Shin BS et al., Oral absorption and pharmacokinetics of…, Drug development and indust… (2004) | popPK | 10 | [10.1081/ddc-200034577](https://doi.org/10.1081/ddc-200034577) | [15521332](https://pubmed.ncbi.nlm.nih.gov/15521332) | The study reports quantitative pharmacokinetic parameters (Cl, Vss, t1/2) for rebamipide in rats directly in the text. |
 | `Baek_2020.pdf` | Baek IH et al., Interspecies differences on pharmacokin…, Biopharmaceutics & drug dis… (2020) | popPK | 9 | [10.1002/bdd.2247](https://doi.org/10.1002/bdd.2247) | [32557753](https://pubmed.ncbi.nlm.nih.gov/32557753) | The study reports quantitative PK parameters (half-life, apparent clearance) for rebamipide in rats and dogs, with specific numeric values provided in the abstract text. |
-| `Cooper_2014.pdf` | Cooper DL et al., Pharmacokinetic interactions between re…, European journal of pharmac… (2014) | popPK | 9 | [10.1016/j.ejps.2013.12.002](https://doi.org/10.1016/j.ejps.2013.12.002) | [24342124](https://pubmed.ncbi.nlm.nih.gov/24342124) | The study reports quantitative pharmacokinetic parameters (Cmax, AUC, Vd/F, CLoral) for rebamipide in rats, with specific numeric values provided in the text. |
 | `Cho_2009.pdf` | Cho HY et al., Pharmacokinetics and bioequivalence of…, Clinical therapeutics (2009) | popPK | 8 | [10.1016/j.clinthera.2009.11.010](https://doi.org/10.1016/j.clinthera.2009.11.010) | [20110013](https://pubmed.ncbi.nlm.nih.gov/20110013) | The study reports quantitative non-compartmental pharmacokinetic parameters (AUC, Cmax, t1/2) for rebamipide in humans, with all numeric values explicitly present in the text. |
 | `Jin_2022.pdf` | Jin G et al., Design and evaluation of in vivo bioava…, International journal of ph… (2022) | popPK | 8 | [10.1016/j.ijpharm.2022.121718](https://doi.org/10.1016/j.ijpharm.2022.121718) | [35381311](https://pubmed.ncbi.nlm.nih.gov/35381311) | The paper describes an in vivo pharmacokinetic study of rebamipide in beagle dogs, but the provided evidence contains only the abstract and lacks specific numeric PK parameter values (e.g., CL, V, ka). |
 | `Ko_2021.pdf` | Ko DW et al., Development of rebamipide-loaded spray-…, Pharmaceutical development… (2021) | popPK | 8 | [10.1080/10837450.2021.1924781](https://doi.org/10.1080/10837450.2021.1924781) | [33938359](https://pubmed.ncbi.nlm.nih.gov/33938359) | The study reports pharmacokinetics in rats for rebamipide, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, only qualitative comparisons of AUC and Cmax. |
@@ -47,7 +46,7 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Hasegawa_2003.pdf` | Hasegawa S et al., Bioequivalence of rebamipide granules a…, Clinical drug investigation (2003) | popPK | 6 | [10.2165/00044011-200323120-00002](https://doi.org/10.2165/00044011-200323120-00002) | [17536891](https://pubmed.ncbi.nlm.nih.gov/17536891) | The study reports quantitative PK parameters (AUC, Cmax, tmax, t1/2) for rebamipide, but lacks compartmental model parameters (CL, V, Q, ka) required for population PK extraction. |
 | `Hirano_2003.pdf` | Hirano Y et al., Study of inhibition of CYP2A6 by some d…, The Journal of pharmacy and… (2003) | pd | 4 | [10.1211/0022357022278](https://doi.org/10.1211/0022357022278) | [14738594](https://www.ncbi.nlm.nih.gov/pubmed/14738594) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-18T07:12:15.975072+00:00</sub>
+<sub>queue written 2026-09-18T07:16:55.268612+00:00</sub>
 
 ## Screened and excluded
 
@@ -60,7 +59,7 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Arakawa_1995 | irrelevant | 0 | 0 | The study is a pharmacodynamic/efficacy trial in rats focusing on ulcer healing and relapse rates, with no pharmacokinetic parameters reported. |
 | popPK | Aziz_2024 | irrelevant | 0 | 0 | The paper is a mechanistic study on enzyme inhibition (Sts phosphatase) and does not report any pharmacokinetic parameters for rebamipide. |
 | popPK | Bakulina_2023 | relevant | 4 | 8 | The paper is a review that reports quantitative PK parameters (CL/F, AUC, T1/2) for rebamipide in Tables 1 and 2, but it lacks a compartmental model or volume of distribution (V) data. |
-| PD | Bakulina_2023 | not_relevant | 2 | 1 | The paper is a review article summarizing general PK/PD characteristics and clinical indications without reporting specific numeric PD parameters or extractable exposure-response curves. |
+| PD | Bakulina_2023 | not_relevant | 2 | 1 | The paper is a review article summarizing general pharmacokinetic and pharmacodynamic characteristics without reporting specific numeric PD parameters or exposure-response models. |
 | popPK | Bakulina_2025 | irrelevant | 0 | 0 | The paper is a clinical trial evaluating the efficacy of H. pylori eradication therapy and does not report any pharmacokinetic parameters for rebamipide. |
 | popPK | Banan_2001 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on cytoskeletal protection and does not report any pharmacokinetic parameters for rebamipide. |
 | popPK | Bhujel_2025 | irrelevant | 0 | 0 | The study is a mechanistic/efficacy investigation of rebamipide's anti-inflammatory effects in a rat model and does not report any pharmacokinetic parameters (CL, V, ka, etc.). |
@@ -71,9 +70,9 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Fang_2026 | irrelevant | 0 | 0 | The paper focuses on the formulation and therapeutic efficacy of rebamipide for diabetic keratopathy, with no mention of pharmacokinetic parameters or disposition studies. |
 | popPK | Feng_2025 | irrelevant | 1 | 1 | The paper is a mechanistic study on hair regeneration that only cites general pharmacokinetic properties (half-life, bioavailability) in the introduction without reporting original quantitative disposition parameters or compartmental models. |
 | popPK | Harada_2005 | irrelevant | 0 | 0 | The study is a mechanistic investigation of rebamipide's effect on gastric mucosal injury and neutrophil activation, reporting no pharmacokinetic parameters. |
-| PGx | Higaki_2007 | not_relevant | 0 | 0 | The paper investigates the effect of absorption enhancers (sodium laurate) and amino acids on the pharmacokinetics of rebamipide, but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| PGx | Higaki_2007 | not_relevant | 0 | 0 | The paper investigates the use of adjuvants (sodium laurate and amino acids) to improve the absorption of rebamipide, but it does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 | popPK | Hirano_2003 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CYP2A6 inhibition and does not report pharmacokinetic disposition parameters for rebamipide. |
-| PD | Hirano_2003 | not_relevant | 0 | 0 | The paper focuses on CYP2A6 inhibition by quinoline derivatives and does not report any pharmacodynamic or exposure-response data for rebamipide. |
+| PD | Hirano_2003 | not_relevant | 3 | 5 | The paper reports an in vitro IC50 value for rebamipide, but it is a mechanistic enzyme inhibition study, not a pharmacodynamic exposure-response or dose-response analysis in a biological system. |
 | popPK | Igarashi_2018 | irrelevant | 0 | 0 | The study is a clinical efficacy trial for dry eye disease reporting symptoms and cytokine levels, not a pharmacokinetic study with disposition parameters. |
 | popPK | Ishihara_1992 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effect of rebamipide on gastric mucus secretion in rats and does not report any pharmacokinetic parameters. |
 | popPK | Ivashkin_2020 | irrelevant | 0 | 0 | The paper is a clinical review of rebamipide's efficacy in GERD and does not report any pharmacokinetic parameters (CL, V, ka, etc.). |
@@ -81,9 +80,9 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Jang_2023 | relevant | 4 | 2 | The study reports non-compartmental PK parameters (Cmax, Tmax, AUC) for rebamipide in rat ocular tissues, but lacks the specific compartmental or population PK parameters (CL, V, Q, ka) required for high relevance. |
 | popPK | Jhun_2022 | irrelevant | 0 | 0 | The paper is a mechanistic study on obesity and immune regulation, not a pharmacokinetic study, and contains no PK parameters for rebamipide. |
 | popPK | Jin_2022 | relevant | 8 | 0 | The paper describes an in vivo pharmacokinetic study of rebamipide in beagle dogs, but the provided evidence contains only the abstract and lacks specific numeric PK parameter values (e.g., CL, V, ka). |
-| PD | Jin_2022 | not_relevant | 0 | 0 | The study focuses on formulation development and pharmacokinetic bioavailability comparison in beagle dogs, reporting no pharmacodynamic or exposure-response data. |
+| PD | Jin_2022 | not_relevant | 0 | 0 | The study focuses on formulation development and pharmacokinetics (bioavailability) in beagle dogs, reporting no pharmacodynamic or exposure-response data. |
 | popPK | Jindal_2021 | irrelevant | 0 | 0 | The paper describes crystallographic structures and simulated patterns of rebamipide salts, containing no pharmacokinetic data. |
-| PD | Jindal_2021 | not_relevant | 0 | 0 | The text describes crystallographic structures and X-ray diffraction patterns, containing no pharmacodynamic or exposure-response data. |
+| PD | Jindal_2021 | not_relevant | 0 | 0 | The provided text describes crystallographic structures and X-ray diffraction patterns (simulated vs experimental), containing no pharmacodynamic, exposure-response, or dose-response data. |
 | popPK | Jing_2025 | irrelevant | 0 | 0 | The study is a clinical trial evaluating therapeutic efficacy and gastrointestinal hormone levels, not a pharmacokinetic study, and reports no disposition parameters for rebamipide. |
 | popPK | Kako_2024 | irrelevant | 0 | 0 | The paper is an analytical method validation study for HPLC quantification of rebamipide in ethosomes, reporting no pharmacokinetic disposition parameters (CL, V, ka, etc.). |
 | PD | Kako_2024 | not_relevant | 0 | 0 | The paper describes an HPLC method validation and in vitro drug release kinetics for rebamipide ethosomes, containing no pharmacodynamic or exposure-response data. |
@@ -99,7 +98,7 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Ko_2021 | relevant | 8 | 2 | The study reports pharmacokinetics in rats for rebamipide, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, only qualitative comparisons of AUC and Cmax. |
 | PGx | Koyama_2002 | not_relevant | 0 | 0 | The paper investigates the metabolic pathway (CYP3A4 involvement) using in vitro systems but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | Kudur_2013 | irrelevant | 2 | 0 | The paper is a review that mentions a pharmacokinetic table but does not provide the actual numeric values for clearance, volume, or half-life in the text. |
-| PD | Kudur_2013 | not_relevant | 1 | 0 | The paper is a qualitative review that mentions a general effective concentration range (1-1000 μM) but does not report specific numeric PD parameters (Emax, EC50) or an exposure-response model. |
+| PD | Kudur_2013 | not_relevant | 1 | 0 | The paper is a qualitative review of rebamipide's mechanism and therapeutic uses, lacking any quantitative PK/PD modeling or numeric exposure-response parameters. |
 | popPK | Kurokawa_1998 | irrelevant | 0 | 0 | The study is a mechanistic investigation of gastric mucosal protection in rats and does not report any pharmacokinetic parameters for rebamipide. |
 | popPK | Lee_1995 | irrelevant | 0 | 0 | The study is a mechanistic investigation of hepatic function and lipid peroxidation in rats, reporting no pharmacokinetic parameters for rebamipide. |
 | popPK | Lim_2025 | irrelevant | 0 | 0 | The paper is a mechanistic study on neuroinflammation and Parkinson's disease, reporting no pharmacokinetic parameters for rebamipide. |
@@ -107,14 +106,17 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Lv_2026 | irrelevant | 0 | 0 | The paper is a formulation and efficacy study for dry eye that reports no quantitative pharmacokinetic parameters (CL, V, ka, etc.) for rebamipide. |
 | popPK | Markovic_2020 | relevant | 8 | 0 | The paper describes a physiologically-based pharmacokinetic (PBPK) study of rebamipide, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract/evidence. |
 | popPK | Mishra_2019 | irrelevant | 0 | 0 | The study is a pharmacological investigation of neuroprotective effects in a Parkinson's disease model and does not report any pharmacokinetic parameters for rebamipide. |
+| popPK | Moon_2004 | irrelevant | 0 | 0 | The study is a mechanistic pharmacological investigation of receptor binding and cellular effects, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Morofuji_2024 | irrelevant | 1 | 0 | The study focuses on corneal penetration enhancement using penetratin in ex vivo/in vitro models and does not report systemic population pharmacokinetic parameters (CL, V, etc.) for rebamipide. |
 | PD | Morofuji_2024 | not_relevant | 2 | 1 | The paper reports qualitative enhancement of corneal uptake by penetratin at specific concentrations but does not provide a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50) for rebamipide. |
 | popPK | Murakami_2015 | irrelevant | 0 | 0 | The paper is a mechanistic study on asthma in mice and does not report any pharmacokinetic parameters for rebamipide. |
+| popPK | Nagano_2001 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study investigating the inhibition of superoxide production in neutrophils and contains no pharmacokinetic parameters. |
 | PD | Nagano_2001 | not_relevant | 4 | 2 | The paper describes a competitive antagonistic mechanism and a parallel right-shift in the dose-response curve, but the provided text does not contain specific numeric PD parameters (e.g., Ki, IC50, Emax) or data points to derive them. |
-| PGx | Nakamura_2016 | not_relevant | 0 | 0 | The study investigates the clinical efficacy of rebamipide (ulcer healing rates) and does not report pharmacokinetic or pharmacodynamic parameters of rebamipide itself. |
+| PGx | Nakamura_2016 | not_relevant | 0 | 0 | The study investigates the clinical efficacy of rebamipide in treating gastric ulcers and mentions CYP2C19 genotype only to show that treatment outcomes were similar regardless of genotype, without reporting any pharmacokinetic or pharmacodynamic parameters of rebamipide. |
 | popPK | Nakashima_2017 | irrelevant | 0 | 0 | The study is a pharmacodynamic/toxicology investigation of rebamipide's protective effects on radiation-induced glossitis in rats and does not report any pharmacokinetic parameters. |
 | popPK | Narala_2019 | irrelevant | 2 | 0 | The study reports a relative bioavailability improvement (4.32-fold) but lacks specific quantitative disposition parameters (CL, V, ka, t1/2) or compartmental model values for rebamipide. |
 | PD | Narala_2019 | not_relevant | 2 | 1 | The paper reports PK improvements (bioavailability) and qualitative anti-ulcer efficacy (maximum prophylactic activity) but does not provide numeric PD parameters (Emax, EC50) or a quantitative exposure-response/dose-response curve. |
+| popPK | Nebiki_1998 | irrelevant | 0 | 0 | The study is a clinical trial assessing the efficacy of rebamipide in H. pylori eradication and does not report any pharmacokinetic parameters. |
 | PD | Nebiki_1998 | not_relevant | 1 | 0 | The paper reports a clinical trial comparing cure rates between two fixed-dose groups but provides no pharmacokinetic data, concentration-effect analysis, or numeric PD parameters (e.g., Emax, EC50). |
 | popPK | Ngo_2017 | relevant | 10 | 2 | The paper is a population PK study of rebamipide, but the evidence text only provides relative changes (percentages) and qualitative model descriptions, lacking the specific numeric values for CL, V, or ka. |
 | popPK | Ogane_2017 | irrelevant | 0 | 0 | The study investigates the pharmacological effect of rebamipide on salivary secretion and intracellular calcium, not its pharmacokinetic disposition parameters. |
@@ -122,36 +124,37 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Oka_1991 | irrelevant | 0 | 0 | The study is a mechanistic/efficacy trial in rats focusing on ulcer protection and SOD activity, with no pharmacokinetic parameters reported. |
 | popPK | Okawa_2021 | irrelevant | 2 | 0 | The study focuses on formulation development (SNEDDS) and qualitative improvements in bioavailability/dissolution, without reporting quantitative population PK parameters (CL, V, ka) for rebamipide. |
 | popPK | Ota_2016 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of rebamipide for preventing gastrointestinal mucosal injury, not a pharmacokinetic study, and reports no disposition parameters. |
-| PD | Ota_2016 | not_relevant | 2 | 0 | The paper is a clinical trial comparing fixed doses (300 mg vs 900 mg) without measuring drug concentrations, and it reports no numeric PD parameters (e.g., Emax, EC50) or concentration-effect curves. |
+| PD | Ota_2016 | not_relevant | 3 | 2 | The study is a clinical trial comparing fixed doses (300 mg vs 900 mg) and reports qualitative dose-dependent trends and categorical outcomes (lesion counts, calprotectin levels) without providing a mathematical PK/PD model, concentration-effect curve, or numeric PD parameters like Emax or EC50. |
 | popPK | Park_2013 | relevant | 8 | 2 | The study reports PK parameters (bioavailability) for rebamipide in rats, but specific numeric values for clearance, volume, or half-life are not present in the provided abstract text. |
 | PD | Park_2013 | not_relevant | 2 | 1 | The paper reports qualitative improvements in bioavailability and ulcer area reduction but does not provide numeric concentration-effect data, dose-response curves, or specific PD parameters (e.g., Emax, EC50) for rebamipide. |
 | popPK | Park_2025 | irrelevant | 0 | 0 | The study is a Phase 2 clinical trial evaluating the efficacy of CKD-495, where rebamipide serves only as a comparator drug, and no pharmacokinetic parameters are reported. |
 | popPK | Park_2026 | irrelevant | 1 | 0 | The paper is a Phase 2a clinical efficacy trial for a rebamipide prodrug (SA001) that does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for rebamipide, referencing only prior Phase 1 data. |
-| PD | Park_2026 | not_relevant | 2 | 0 | The paper reports a negative dose-response finding (no consistent relationship) in a small Phase 2a trial but does not provide numeric PD parameters (Emax, EC50, etc.) or a quantitative exposure-response model. |
+| PD | Park_2026 | not_relevant | 2 | 0 | The study reports a lack of dose-response relationship and provides no numeric PD parameters (Emax, EC50, etc.) or concentration-effect data. |
 | popPK | Patel_2026 | irrelevant | 0 | 0 | The study is an in-vitro analytical method development and release study for contact lenses, not a pharmacokinetic study reporting disposition parameters for rebamipide. |
 | popPK | Patel_2026_2 | irrelevant | 0 | 0 | The paper is a formulation and in-vitro/ex-vivo permeation study for ocular delivery, lacking any in-vivo pharmacokinetic data or quantitative disposition parameters (CL, V, ka) for rebamipide. |
 | popPK | Pradhan_2015 | relevant | 8 | 2 | The study reports a pharmacokinetic study in rats for rebamipide, but the specific quantitative parameter values (AUC, Cmax, CL, V) are not present in the provided evidence text. |
 | PD | Pradhan_2015 | not_relevant | 0 | 0 | The paper focuses on formulation development and PK bioavailability (AUC, Cmax) but does not report any pharmacodynamic or exposure-response analysis. |
 | popPK | Sakurai_1994 | irrelevant | 0 | 0 | The study is a mechanistic pharmacological investigation of protective effects in rats and does not report any pharmacokinetic parameters for rebamipide. |
+| popPK | Salama_2026 | irrelevant | 2 | 0 | The study focuses on formulation optimization and in-vivo pharmacodynamics (nitric oxide inhibition) rather than reporting quantitative pharmacokinetic parameters like clearance or volume for rebamipide. |
 | PD | Salama_2026 | not_relevant | 2 | 1 | The paper reports qualitative in-vivo efficacy (16-fold rise in NO inhibition) and permeation data, but lacks a formal PK/PD model or numeric exposure-response parameters (e.g., EC50, Emax) for rebamipide. |
 | popPK | Samim_2024 | irrelevant | 1 | 0 | The study focuses on in-vitro formulation characterization and permeability modeling, lacking in-vivo pharmacokinetic data or quantitative disposition parameters for rebamipide. |
 | popPK | Shimoyama_2002 | irrelevant | 0 | 0 | no_text gate: only 12 chars of text extracted (&lt; 400) |
 | popPK | Shiraki_1988 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study on ulcer healing in rats and does not report any pharmacokinetic parameters for rebamipide. |
-| PGx | Son_2015 | not_relevant | 0 | 0 | The paper investigates the gastroprotective efficacy and safety of scoparone derivatives in rodents and does not report any pharmacogenomic effects on the PK or PD of rebamipide. |
+| PGx | Son_2015 | not_relevant | 0 | 0 | The paper investigates the gastroprotective efficacy and safety of scoparone derivatives in rodents and does not report any pharmacogenomic effects on the PK or PD parameters of rebamipide. |
 | popPK | Sonawane_2011 | irrelevant | 0 | 0 | The paper describes a stability-indicating HPLC method and forced degradation studies, containing no pharmacokinetic data or disposition parameters for rebamipide. |
-| PD | Sonawane_2011 | not_relevant | 0 | 0 | The paper describes the development of a stability-indicating HPLC method and forced degradation studies for rebamipide, containing no pharmacodynamic or exposure-response data. |
+| PD | Sonawane_2011 | not_relevant | 0 | 0 | The paper describes the development and validation of a stability-indicating HPLC assay method for rebamipide, containing no pharmacodynamic or exposure-response data. |
 | popPK | Suksai_2025 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for dyspeptic symptoms and does not report any pharmacokinetic parameters for rebamipide. |
 | popPK | Suzuki_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of rebamipide's effect on gastric mucosal injury and does not report any pharmacokinetic parameters. |
 | popPK | Suzuki_2019 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on the chemical reaction of rebamipide with hypobromous acid, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Tanaka_2019 | irrelevant | 0 | 0 | The paper is a pharmaceutical formulation and characterization study (amorphous solid dispersion) that reports physical properties and dissolution profiles, but contains no pharmacokinetic parameters (CL, V, ka, etc.) for rebamipide. |
-| PD | Tanaka_2019 | not_relevant | 0 | 0 | The paper focuses on the formulation and physical characterization of amorphous solid dispersions (solubility, stability, morphology) and contains no pharmacokinetic or pharmacodynamic data. |
+| PD | Tanaka_2019 | not_relevant | 0 | 0 | The paper focuses on the formulation and physical characterization of amorphous solid dispersions (dissolution, stability, structure) and does not report any pharmacokinetic or pharmacodynamic data. |
 | popPK | Tung_2011 | irrelevant | 2 | 0 | The study reports only relative bioavailability increases (1.74-fold) and efficacy data, lacking specific quantitative PK parameters like clearance, volume, or half-life. |
 | popPK | Urita_2009 | irrelevant | 0 | 0 | The study investigates the effect of rebamipide on pilocarpine-induced salivation in rats and does not report any pharmacokinetic parameters (e.g., clearance, volume, half-life) for the drug. |
 | popPK | Won_2023 | irrelevant | 4 | 0 | The study reports only bioequivalence metrics (Cmax, AUC, tmax) and lacks compartmental PK parameters (CL, V, ka) or numeric values for disposition parameters. |
 | popPK | Woo_2025 | irrelevant | 0 | 0 | The paper is a real-world effectiveness study focusing on patient-reported symptom outcomes, not a pharmacokinetic study, and contains no PK parameters. |
 | popPK | Yamasaki_1987 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic mechanism of gastric mucosal protection by OPC-12759 (rebamipide) and does not report quantitative pharmacokinetic parameters. |
 | popPK | Yamate_2024 | irrelevant | 0 | 0 | The paper is a nested case-control study evaluating the clinical efficacy of rebamipide in preventing gastrointestinal bleeding, not a pharmacokinetic study, and contains no PK parameters. |
-| PD | Yamate_2024 | not_relevant | 0 | 0 | The study is a nested case-control analysis using medical claims data that reports odds ratios for clinical outcomes (GI bleeding) based on prescription status, but it does not measure drug concentrations or model pharmacodynamic parameters (e.g., Emax, EC50). |
+| PD | Yamate_2024 | not_relevant | 0 | 0 | The study is a nested case-control analysis using claims data that reports odds ratios for categorical exposure groups (continuous vs. irregular vs. non-user) rather than a quantitative pharmacodynamic or exposure-response relationship with numeric PD parameters. |
 | popPK | Yang_2025 | irrelevant | 0 | 0 | The paper is a clinical trial evaluating ulcer healing efficacy and does not report any pharmacokinetic parameters for rebamipide. |
 
 ---

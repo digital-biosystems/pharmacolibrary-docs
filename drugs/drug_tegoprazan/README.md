@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;tegoprazan&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegoprazan_Kim2024_reference&quot;,&quot;label&quot;:&quot;Kim_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegoprazan_He2021_reference&quot;,&quot;label&quot;:&quot;He_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tegoprazan/Tegoprazan_He2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegoprazan_Jung2026_reference&quot;,&quot;label&quot;:&quot;Jung_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tegoprazan/Tegoprazan_Jung2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegoprazan_Kim2024_reference&quot;,&quot;label&quot;:&quot;Kim_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # tegoprazan
 
@@ -16,12 +16,14 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 21:08 | 11:49 | 1/0/0 | 1/1/0 | 0/0/1 | 280,641/17,737 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 0/18 | 18/0 | 0 |
+| 2026-09-18 08:34 | 17:20 | 1/0/2 | 1/1/0 | 0/0/1 | 349,383/22,132 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 0/18 | 18/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [He_2021_reference](drugs/drug_tegoprazan/Tegoprazan_He2021_reference.md) | He J et al., Safety, Tolerability and Pharmacokineti…, Clinical drug investigation (2021) | [10.1007/s40261-020-00986-4](https://doi.org/10.1007/s40261-020-00986-4) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Jung_2026_reference](drugs/drug_tegoprazan/Tegoprazan_Jung2026_reference.md) | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Kim_2024_reference](drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference.md) | Kim HS et al., Enhancing drug administration flexibili…, Translational and clinical… (2024) | [10.12793/tcp.2024.32.e9](https://doi.org/10.12793/tcp.2024.32.e9) |
 
 ## Pharmacodynamics (PD)
@@ -45,8 +47,8 @@
 ## Coverage
 
 - **PubMed hits:** 35 matched, 35 returned
-- **screened:** 3  ·  **relevant:** 3
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **screened:** 4  ·  **relevant:** 4
+- **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -60,32 +62,31 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Carrasco-Portugal_2026.pdf` | Carrasco-Portugal MDC et al., Pharmacokinetics of the potassium-compe…, International journal of cl… (2026) | pgx | 7 | [10.5414/CP204709](https://doi.org/10.5414/CP204709) | [41553168](https://www.ncbi.nlm.nih.gov/pubmed/41553168) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Lee_2025.pdf` | Lee J et al., Potassium-competitive acid blocker vs p…, American heart journal (2025) | pgx | 5 | [10.1016/j.ahj.2025.04.001](https://doi.org/10.1016/j.ahj.2025.04.001) | [40188976](https://www.ncbi.nlm.nih.gov/pubmed/40188976) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-09-10T20:59:08.116304+00:00</sub>
+<sub>queue written 2026-09-18T08:17:35.734232+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Ahn_2023 | not_relevant | 0 | 0 | The paper discusses CYP2C19 polymorphism in the context of PPIs and mentions it as a factor for future studies on tegoprazan, but it does not report any pharmacogenomic effect on tegoprazan's PK or PD parameters. |
-| PGx | Bandyopadhyay_2026 | not_relevant | 0 | 0 | The paper is a systematic review of clinical efficacy and safety, and while it mentions CYP2C19 independence, it does not report specific pharmacogenomic effect sizes on PK/PD parameters. |
-| PGx | Carrasco-Portugal_2026 | not_relevant | 0 | 0 | The study compares pharmacokinetics between two ethnic populations (Mexicans vs. Koreans) but does not report specific gene variants, genotypes, or pharmacogenomic effects. |
-| PGx | Cho_2023 | not_relevant | 2 | 0 | The paper reports a clinical trial comparing efficacy and safety, noting that tegoprazan's efficacy is consistent across CYP2C19 genotypes, but it does not report pharmacokinetic or pharmacodynamic parameters (like AUC, Cmax, or pH metrics) stratified by genotype. |
-| PGx | Choi_2022 | not_relevant | 2 | 0 | The paper is a review that mentions tegoprazan is not metabolized by CYP2C19 and shows consistent efficacy regardless of genotype, but it does not report specific pharmacokinetic or pharmacodynamic parameter changes (e.g., AUC, Cmax, pH metrics) stratified by genotype. |
-| PGx | Choi_2022_2 | not_relevant | 0 | 0 | The paper reports clinical efficacy (H. pylori eradication rates) stratified by CYP2C19 genotype, but does not report pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, pH levels) for tegoprazan. |
-| PGx | Hussaini_2025 | not_relevant | 0 | 0 | The paper is a meta-analysis of clinical efficacy and safety outcomes (healing rates, adverse events) and does not report pharmacokinetic or pharmacodynamic parameters or specific pharmacogenomic effect sizes. |
-| popPK | Jung_2026 | relevant | 10 | 0 | The paper describes a population PK/PD model for tegoprazan, but the specific numeric parameter values (CL, V, etc.) are located in Table 2, which is not included in the provided evidence. |
+| PGx | Bandyopadhyay_2026 | not_relevant | 0 | 0 | The paper is a systematic review of clinical efficacy and safety outcomes for tegoprazan and does not report pharmacogenomic effects on PK or PD parameters. |
+| PGx | Carrasco-Portugal_2026 | not_relevant | 0 | 0 | The study compares pharmacokinetics between two ethnic populations (Mexicans vs. Koreans) without genotyping or analyzing specific gene variants. |
+| PGx | Cho_2023 | not_relevant | 0 | 0 | The paper reports a clinical trial comparing efficacy and safety, with a subgroup analysis on CYP2C19 genotypes for efficacy, but does not report pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Choi_2022 | not_relevant | 0 | 0 | The paper is a general review of potassium-competitive acid blockers and does not report specific pharmacogenomic effects on tegoprazan PK/PD parameters. |
+| PGx | Choi_2022_2 | not_relevant | 0 | 0 | The paper reports clinical efficacy (H. pylori eradication rates) and does not measure or report pharmacokinetic or pharmacodynamic parameters of tegoprazan. |
+| PGx | Hussaini_2025 | not_relevant | 2 | 0 | The paper mentions that tegoprazan's efficacy is independent of CYP2C19 genotype, but it does not report specific pharmacokinetic or pharmacodynamic parameter changes driven by the variant. |
 | PGx | Lee_2025 | not_relevant | 0 | 0 | The paper is a trial design/rationale document for a clinical trial comparing tegoprazan and rabeprazole, and does not report pharmacogenomic effects on PK or PD parameters. |
 | PGx | Liu_2025 | not_relevant | 0 | 0 | The paper is a systematic review of drug-drug and food-drug interactions for P-CABs and does not report pharmacogenomic effects (gene variants) on tegoprazan PK/PD. |
-| PGx | Ngo_2023 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (DDI) with CYP3A4 inhibitors/inducers and PBPK modeling, not on pharmacogenomic effects of gene variants on tegoprazan PK/PD. |
-| PGx | Ranbhise_2026 | not_relevant | 0 | 0 | The paper is a review that discusses the general pharmacokinetic advantages of P-CABs (like tegoprazan) over PPIs, specifically noting that P-CABs are metabolized by CYP3A4 and are less affected by CYP2C19 polymorphisms, but it does not report specific quantitative pharmacogenomic data or fitted effect sizes for tegoprazan. |
-| PGx | Remes-Troche_2024 | not_relevant | 0 | 0 | The paper is a general review of P-CABs and does not report specific pharmacogenomic effects on the PK/PD of tegoprazan. |
-| PGx | Shin_2025 | not_relevant | 2 | 5 | The paper reports clinical efficacy (healing rates) stratified by CYP2C19 genotype, but does not report pharmacokinetic (PK) or pharmacodynamic (PD) parameters (e.g., AUC, Cmax, pH) or fitted effect sizes for the drug. |
-| PGx | Wang_2025 | not_relevant | 2 | 0 | The paper is a general review that mentions CYP2C19 polymorphism does not affect Tegoprazan, but it does not report specific pharmacogenomic effect sizes or detailed PK/PD parameter changes driven by genetic variants. |
-| popPK | Wei_2023 | relevant | 8 | 4 | The paper is a PBPK modeling study for tegoprazan that reports specific PK parameters (ka, Vss, intrinsic clearance) in the text, but lacks a full population PK parameter table (e.g., CL, Q) and relies on external references for the core model structure. |
-| PD | Wei_2023 | not_relevant | 4 | 3 | The paper uses a PBPK/PD model to predict DDI effects on intragastric pH, but the provided text only contains qualitative descriptions of the fit and references to tables/figures without listing the specific numeric PD parameters (e.g., Emax, EC50) or the actual pH values required to derive a concentration-effect relationship. |
+| PGx | Ngo_2023 | not_relevant | 0 | 0 | The paper reports a PBPK model for drug-drug interactions (CYP3A4 inhibitors/inducers) but does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| PGx | Ranbhise_2026 | not_relevant | 0 | 0 | The paper is a review that highlights the genotype-independent nature of P-CABs (like tegoprazan) compared to PPIs, but it does not report specific pharmacogenomic effects or quantitative PK/PD changes for tegoprazan. |
+| PGx | Remes-Troche_2024 | not_relevant | 0 | 0 | The paper is a general review of P-CABs and does not report any pharmacogenomic effects or gene variant associations for tegoprazan. |
+| PGx | Shin_2025 | not_relevant | 2 | 2 | The paper reports clinical efficacy (healing rates) by CYP2C19 genotype but does not report pharmacokinetic (PK) or pharmacodynamic (PD) parameters (e.g., AUC, Cmax, pH). |
+| PGx | Wang_2025 | not_relevant | 2 | 0 | The paper is a general review that mentions CYP2C19 polymorphism does not affect Tegoprazan's efficacy, but it does not report specific pharmacogenomic effect sizes or detailed PK/PD parameter changes linked to genotypes. |
+| popPK | Wei_2023 | relevant | 8 | 2 | The paper is a PBPK modeling study for tegoprazan that reports specific PK parameters (ka, Vss, intrinsic clearance) in the text, but the primary quantitative disposition parameters (CL, V) are largely referenced in tables or derived from previous models rather than presented as a complete standalone population PK parameter set. |
+| PD | Wei_2023 | not_relevant | 4 | 3 | The paper uses a PBPK/PD model to predict DDI effects on intragastric pH, but the provided text only contains PK parameter tables and qualitative descriptions of PD endpoints; it does not report the specific numeric PD parameters (e.g., Emax, EC50, Ki) or the underlying concentration-effect curve equations required to extract a PD relationship. |
 | PGx | Wei_2023 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (DDI) using PBPK/PD modeling, not pharmacogenomic effects of gene variants on PK/PD parameters. |
-| PGx | Yang_2023 | not_relevant | 0 | 0 | The study evaluates the effect of tegoprazan on the PK of a CYP2C19 substrate (proguanil) in a fixed genotype group, rather than how a gene variant changes the PK/PD of tegoprazan itself. |
-| PGx | Yoon_2021 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (DDIs) with CYP3A4 inhibitors/inducers and PBPK modeling, not on pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| PGx | Yang_2023 | not_relevant | 0 | 0 | The study evaluates a drug-drug interaction (CYP2C19 inhibition) in a homogeneous population of CYP2C19 extensive metabolizers, not a pharmacogenomic effect of a gene variant on the PK/PD of tegoprazan. |
+| PGx | Yoon_2021 | not_relevant | 0 | 0 | The paper focuses on PBPK modeling for drug-drug interactions (CYP3A4 inhibitors/inducers) and does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_tegoprazan`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

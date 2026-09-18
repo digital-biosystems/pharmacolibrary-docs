@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 02:10 | 17:32 | 0/0/0 | 1/1/0 | 0/0/0 | 116,512/7,332 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 3/3 | 6/0 | 0 |
+| 2026-09-18 11:38 | 11:40 | 0/0/0 | 1/1/0 | 0/0/0 | 235,228/11,832 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 3/3 | 6/0 | 0 |
 
 ## popPK records
 
@@ -33,7 +33,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 206 matched, 86 returned
+- **PubMed hits:** 206 matched, 88 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -58,72 +58,86 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Rupniak_1994.pdf` | Rupniak NM et al., Antinociceptive and toxic effects of (+…, British journal of pharmaco… (1994) | pd | 4 | [10.1111/j.1476-5381.1994.tb17164.x](https://doi.org/10.1111/j.1476-5381.1994.tb17164.x) | [7889306](https://www.ncbi.nlm.nih.gov/pubmed/7889306) | metadata signals extractable PD data (IC50) |
 | `Scherrer_1997.pdf` | Scherrer D et al., Glucocorticoid modulation of muscarinic…, Fundamental & clinical phar… (1997) | pd | 4 | [10.1111/j.1472-8206.1997.tb00176.x](https://doi.org/10.1111/j.1472-8206.1997.tb00176.x) | [9107555](https://www.ncbi.nlm.nih.gov/pubmed/9107555) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-11T02:07:46.506536+00:00</sub>
+<sub>queue written 2026-09-18T11:35:36.039383+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Akins_1990 | irrelevant | 0 | 0 | The paper describes in-vitro receptor signaling mechanisms and does not report pharmacokinetic parameters for methylscopolamine. |
+| popPK | Abe_2009 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding and enzyme inhibition assay where methylscopolamine is used only as a radioligand probe, not as the subject drug for pharmacokinetic analysis. |
+| PD | Abe_2009 | not_relevant | 0 | 0 | The paper investigates receptor binding and enzyme inhibition of fatty acids in saw palmetto extract, not the pharmacodynamics of methylscopolamine (which is used only as a radioligand). |
+| popPK | Akins_1990 | irrelevant | 0 | 0 | no_text gate: only 102 chars of text extracted (&lt; 400) |
 | PD | Akins_1990 | not_relevant | 0 | 0 | The paper focuses on the molecular mechanism of M1 receptors in cultured rat neostriatum and does not report pharmacokinetic or pharmacodynamic data for methylscopolamine. |
 | popPK | Asselin_1987 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of receptor desensitization using methylscopolamine as a radioligand, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Bolden_1990 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor binding and cAMP formation where methylscopolamine is used only as a radioligand, not as a subject drug for pharmacokinetic analysis. |
 | popPK | Botero_1994 | irrelevant | 0 | 0 | The paper is a structure-activity relationship study on allosteric modulators using methylscopolamine only as a radioligand for binding assays, not a pharmacokinetic study. |
+| popPK | Brown_2011 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment using methylscopolamine as a probe drug to assess hippocampal function, and it does not report any pharmacokinetic parameters. |
 | popPK | Chang_1997 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of muscarinic receptors in CHO cells, using methylscopolamine only as a radioligand for binding assays, and reports no pharmacokinetic parameters. |
 | PD | Chang_1997 | not_relevant | 0 | 0 | The paper reports PD parameters (EC50, IC50) for carbamylcholine and ethanol, but methylscopolamine is used only as a radioligand for receptor binding assays, not as the drug for which a pharmacodynamic exposure-response relationship is characterized. |
+| popPK | Cortés_1986 | irrelevant | 0 | 0 | The study is an in-vitro autoradiographic analysis of muscarinic receptor binding using methylscopolamine as a ligand, not a pharmacokinetic study reporting disposition parameters. |
 | PD | Cortés_1986 | not_relevant | 0 | 0 | The paper reports in vitro receptor binding affinities (Kd, IC50) for methylscopolamine, which are pharmacological binding parameters, not in vivo pharmacodynamic (exposure-response) or dose-response relationships for a drug effect. |
-| PD | Cortés_1986_2 | not_relevant | 0 | 0 | The paper is a quantitative autoradiographic study of muscarinic receptor subtypes in rat brain and does not report pharmacodynamic or exposure-response data for methylscopolamine. |
+| popPK | Cortés_1986_2 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding/autoradiography analysis using methylscopolamine as a radioligand, not a pharmacokinetic study reporting disposition parameters. |
+| PD | Cortés_1986_2 | not_relevant | 0 | 0 | The paper reports in vitro receptor binding affinities (Kd, IC50) for methylscopolamine, which are pharmacological binding parameters, not pharmacodynamic (exposure-response or dose-response) parameters describing a physiological or clinical effect. |
 | popPK | Cuq_1994 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding and functional pharmacology study using methylscopolamine as a radioligand, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Daeffler_1999 | irrelevant | 0 | 0 | The paper focuses on the pharmacological activity of pirenzepine at muscarinic receptors and does not report pharmacokinetic parameters for methylscopolamine. |
+| popPK | Daeffler_1999 | irrelevant | 0 | 0 | no_text gate: only 80 chars of text extracted (&lt; 400) |
 | PD | Daeffler_1999 | not_relevant | 0 | 0 | The paper focuses on the inverse agonist activity of pirenzepine at M2 receptors and does not report pharmacodynamic or exposure-response data for methylscopolamine. |
-| popPK | Dickinson_1988 | irrelevant | 0 | 0 | The paper focuses on muscarinic receptor binding and secretion in frog cells, not on the pharmacokinetics of methylscopolamine. |
+| popPK | Dickinson_1988 | irrelevant | 0 | 0 | no_text gate: only 102 chars of text extracted (&lt; 400) |
 | PD | Dickinson_1988 | not_relevant | 0 | 0 | The paper focuses on muscarinic receptor binding and secretion in frog esophageal cells and does not report pharmacokinetic or pharmacodynamic exposure-response relationships for methylscopolamine. |
 | popPK | Djeddi_2023 | irrelevant | 0 | 0 | The paper is a computational study on drug-target interaction prediction using machine learning and does not report pharmacokinetic parameters for methylscopolamine. |
 | PD | Djeddi_2023 | not_relevant | 0 | 0 | The paper describes a machine learning method (DTIOG) for predicting drug-target interactions using knowledge graphs and embeddings; it contains no pharmacokinetic, pharmacodynamic, or dose-response data for methylscopolamine or any other drug. |
-| popPK | Eglen_1993 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on muscarinic receptors in fibrosarcoma cells and does not report pharmacokinetic parameters for methylscopolamine. |
+| popPK | Eglen_1993 | irrelevant | 0 | 0 | no_text gate: only 107 chars of text extracted (&lt; 400) |
 | PD | Eglen_1993 | not_relevant | 0 | 0 | The paper studies muscarinic M3 receptors in murine fibrosarcoma cells and does not report any pharmacodynamic or exposure-response data for methylscopolamine. |
-| PD | Ehrich_1994 | not_relevant | 0 | 0 | The paper studies the interaction of organophosphorus compounds with muscarinic receptors using [3H]-N-methylscopolamine as a radioligand, but does not report a pharmacodynamic exposure-response relationship or numeric PD parameters for methylscopolamine itself. |
-| popPK | Ellis_1990 | irrelevant | 0 | 0 | The paper title indicates a study on muscarinic receptors and second-messenger responses in primary culture, which is mechanistic/in-vitro and not a pharmacokinetic study reporting quantitative disposition parameters for methylscopolamine. |
+| popPK | Ehrich_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of organophosphorus compounds on muscarinic receptors, using methylscopolamine only as a radiolabeled ligand for binding assays, not as a subject drug for pharmacokinetic analysis. |
+| PD | Ehrich_1994 | not_relevant | 0 | 0 | The study investigates the interaction of organophosphorus compounds with muscarinic receptors using [3H]-N-methylscopolamine as a radioligand, but does not report a pharmacodynamic exposure-response relationship or numeric PD parameters for methylscopolamine itself. |
+| popPK | Ellis_1990 | irrelevant | 0 | 0 | no_text gate: only 81 chars of text extracted (&lt; 400) |
 | PD | Ellis_1990 | not_relevant | 0 | 0 | The paper focuses on muscarinic receptor signaling in primary neuron cultures and does not report pharmacodynamic or exposure-response data for methylscopolamine. |
-| popPK | Ensing_1989 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of oxitropium bromide, using methylscopolamine only as a radiolabeled ligand in the assay, not as the subject drug. |
-| popPK | Frucht_1999 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding and cell proliferation assay, not a pharmacokinetic study, and methylscopolamine is used only as a pharmacological antagonist probe. |
-| PD | Galper_1982 | not_relevant | 3 | 2 | The paper reports receptor binding kinetics and agonist-mediated receptor loss (IC50s for carbamylcholine, Kd for methylscopolamine) in a cell culture model, but does not report a pharmacodynamic exposure-response relationship for methylscopolamine as a drug effect (e.g., physiological response vs. concentration). |
-| popPK | Gerstin_1992 | irrelevant | 0 | 0 | The paper focuses on receptor binding and allosteric modulation, not pharmacokinetic parameters for methylscopolamine. |
+| popPK | Ensing_1989 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of oxitropium bromide, using methylscopolamine only as a radioligand in the assay, not as the subject drug. |
+| popPK | Frucht_1999 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding and cell proliferation assay using methylscopolamine as a pharmacological antagonist, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Galper_1982 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay using methylscopolamine as a radioligand, not a pharmacokinetic study of the drug's disposition. |
+| PD | Galper_1982 | not_relevant | 3 | 2 | The paper reports receptor binding kinetics and agonist-mediated receptor loss (IC50s for carbamylcholine, Kd for methylscopolamine) in a cell culture model, but does not report a pharmacodynamic exposure-response relationship for methylscopolamine as a drug effect. |
+| popPK | Gerstin_1992 | irrelevant | 0 | 0 | no_text gate: only 167 chars of text extracted (&lt; 400) |
 | PD | Gerstin_1992 | not_relevant | 0 | 0 | The paper focuses on the allosteric modulation of M2 muscarinic receptors by heparin, dextran, and trypan blue, and does not mention methylscopolamine or report any pharmacodynamic parameters for it. |
 | popPK | Greven_1995 | irrelevant | 0 | 0 | Methylscopolamine is used only as a pharmacological antagonist to test receptor involvement in cicletanine's renal effects, with no pharmacokinetic parameters reported. |
-| popPK | Gup_1989 | irrelevant | 0 | 0 | The paper title indicates a study on muscarinic cholinergic receptors in bladders, which is a pharmacodynamic or mechanistic study, not a pharmacokinetic study reporting quantitative disposition parameters for methylscopolamine. |
-| PD | Gup_1989 | not_relevant | 0 | 0 | The paper focuses on muscarinic receptor expression in pediatric and myelodysplastic bladders and does not report pharmacodynamic or exposure-response data for methylscopolamine. |
+| popPK | Gup_1989 | irrelevant | 0 | 0 | no_text gate: only 81 chars of text extracted (&lt; 400) |
+| PD | Gup_1989 | not_relevant | 0 | 0 | The paper focuses on muscarinic receptor expression in pediatric and myelodysplastic bladders and does not report any pharmacodynamic or exposure-response analysis for methylscopolamine. |
 | popPK | Hase_1988 | irrelevant | 0 | 0 | Methylscopolamine is used only as a tool to induce dry mouth, and the study reports salivary glucose clearance parameters, not pharmacokinetic parameters for methylscopolamine. |
 | popPK | Hu_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor selectivity and binding, not a pharmacokinetic study, and methylscopolamine is used only as a radioligand for binding assays. |
+| popPK | Huwiler_2010 | irrelevant | 0 | 0 | The paper describes an in-vitro fluorescence anisotropy assay for the M1 receptor and uses methylscopolamine only as a radioligand reference, reporting no pharmacokinetic parameters. |
 | PD | Huwiler_2010 | not_relevant | 0 | 0 | The paper describes a biochemical binding assay (fluorescence anisotropy) for the M1 receptor and reports affinity constants (IC50/Ki) for ligands, but it does not report a pharmacodynamic exposure-response or dose-response relationship for methylscopolamine in a biological system (e.g., effect vs. plasma concentration). |
+| popPK | Kajimura_1990 | irrelevant | 0 | 0 | The paper concerns carbachol and acid secretion in guinea pigs, not methylscopolamine pharmacokinetics. |
 | PD | Kajimura_1990 | not_relevant | 0 | 0 | The paper discusses carbachol, not methylscopolamine, and focuses on acid secretion in guinea pigs rather than a PD model for the specified drug. |
 | popPK | Keam_2004 | irrelevant | 0 | 0 | The paper is a review of tiotropium bromide, and methylscopolamine is only mentioned as a radioligand in in-vitro receptor binding assays, not as the subject of a pharmacokinetic study. |
 | popPK | Keller_2015 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding investigation where methylscopolamine is used only as a radioligand, not as the subject drug for pharmacokinetic analysis. |
 | PD | Keller_2015 | not_relevant | 0 | 0 | The paper reports in vitro equilibrium binding affinities (pIC50) and allosteric modulation parameters (pEC50,diss) for new ligands, not pharmacodynamic exposure-response or dose-response relationships for methylscopolamine. |
-| PD | Kukhtina_2000 | not_relevant | 0 | 0 | The paper focuses on the characterization of muscarinic toxin-like proteins from cobra venom, not on the pharmacodynamics of methylscopolamine. |
+| popPK | Kukhtina_2000 | irrelevant | 0 | 0 | The paper is a mechanistic study of snake venom proteins using methylscopolamine only as a radioligand for binding assays, not a pharmacokinetic study of the drug. |
+| PD | Kukhtina_2000 | not_relevant | 0 | 0 | The paper reports binding affinities (IC50) for cobra venom proteins, not a pharmacodynamic exposure-response relationship for the drug methylscopolamine. |
 | popPK | Kurjak_1999 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding and functional assay where methylscopolamine is used as a radioligand, not a pharmacokinetic study of the drug's disposition. |
 | PD | Kurjak_1999 | not_relevant | 0 | 0 | The paper reports radioligand binding affinity (Kd, Bmax) and functional antagonist potency (pIC50) for methylscopolamine, but does not report a pharmacodynamic exposure-response or dose-response relationship for the drug itself. |
 | popPK | Lameh_1992 | irrelevant | 0 | 0 | The study is a mechanistic investigation of receptor internalization using methylscopolamine as a radioligand, not a pharmacokinetic study reporting disposition parameters. |
 | PD | Lameh_1992 | not_relevant | 3 | 2 | The paper reports an EC50 for carbachol (not methylscopolamine) and qualitative internalization percentages, but lacks a formal PD model or extractable concentration-effect curve for methylscopolamine. |
-| PD | Lepor_1984 | not_relevant | 0 | 0 | The paper focuses on the characterization and localization of muscarinic receptors in prostatic tissue and does not report any pharmacodynamic or exposure-response data for methylscopolamine. |
-| popPK | Liles_1986 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of receptor internalization where methylscopolamine is used only as a radioligand for binding assays, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Lepor_1984 | irrelevant | 0 | 0 | The study is a receptor binding assay (in-vitro) characterizing muscarinic receptors, not a pharmacokinetic study reporting disposition parameters for methylscopolamine. |
+| PD | Lepor_1984 | not_relevant | 3 | 2 | The paper reports receptor binding affinity (Kd) and density (Bmax) for a radioligand, which are pharmacological binding parameters, not a pharmacodynamic exposure-response or dose-response relationship for drug effect. |
+| popPK | Liles_1986 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of muscarinic receptor internalization where methylscopolamine is used only as a radioligand for binding assays, not as a subject drug for pharmacokinetic analysis. |
 | PD | Liles_1986 | not_relevant | 2 | 2 | The paper reports a single EC50 value for carbachol-induced PKC translocation, not for methylscopolamine, and does not provide a concentration-effect curve or PD model for methylscopolamine. |
+| popPK | Maeda_1990 | irrelevant | 0 | 0 | The study is a pharmacological investigation of penile erection mechanisms in rats where methylscopolamine is used only as a negative control/comparator, with no pharmacokinetic parameters reported. |
 | PD | Maeda_1990 | not_relevant | 0 | 0 | The paper studies pilocarpine, amantadine, and apomorphine; methylscopolamine is only mentioned as a negative control that did not antagonize erections, with no PD parameters reported for it. |
 | popPK | Michal_2009 | irrelevant | 0 | 0 | The study is a mechanistic investigation of receptor binding and signaling in cell membranes, not a pharmacokinetic study, and methylscopolamine is used only as a radioligand. |
-| PD | Michal_2009 | not_relevant | 3 | 2 | The paper reports qualitative changes in Emax and affinity for NMS and carbachol due to cholesterol manipulation, but does not provide a formal PK/PD model or extractable numeric dose-response parameters (like EC50 or specific Emax values) for methylscopolamine. |
+| PD | Michal_2009 | not_relevant | 3 | 2 | The paper reports qualitative changes in Emax and affinity for M2 receptors due to cholesterol modulation, but does not provide a specific exposure-response or dose-response curve for methylscopolamine with extractable numeric PD parameters (e.g., specific EC50/Emax values for NMS). |
 | popPK | Murali_1988 | irrelevant | 0 | 0 | The study is a mechanistic investigation of tracheal smooth muscle contractility and receptor binding in swine, not a pharmacokinetic study, and reports no disposition parameters for methylscopolamine. |
 | popPK | Olianas_1997 | irrelevant | 0 | 0 | The study is a pharmacological investigation of clozapine's receptor binding and functional effects, using methylscopolamine only as a radioligand for binding assays, and does not report any pharmacokinetic parameters. |
 | PD | Olianas_1997 | not_relevant | 0 | 0 | The paper investigates the pharmacology of clozapine, not methylscopolamine; methylscopolamine is only mentioned as a radioligand ([3H]-NMS) for binding assays. |
 | popPK | Olianas_2000 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor binding and signaling, not a pharmacokinetic study, and methylscopolamine is used only as a radioligand probe. |
-| PD | Olianas_2000 | not_relevant | 0 | 0 | The paper investigates the pharmacology of muscarinic toxin 7 (MT-7) and its interaction with methylscopolamine binding, but does not report a pharmacodynamic exposure-response or dose-response relationship for methylscopolamine itself. |
+| PD | Olianas_2000 | not_relevant | 0 | 0 | The paper investigates the pharmacology of muscarinic toxin 7 (MT-7) and its interaction with methylscopolamine (NMS) binding, but does not report a pharmacodynamic exposure-response or dose-response relationship for methylscopolamine itself. |
 | popPK | Pelat_1999 | irrelevant | 0 | 0 | The study uses methylscopolamine as a pharmacological probe to assess M2-cholinoceptor function and reports dose-response data (ED50), not pharmacokinetic disposition parameters (CL, V, t1/2). |
 | popPK | Pitschner_1988 | irrelevant | 0 | 0 | The study focuses on the receptor subtype selectivity of pirenzepine, using methylscopolamine only as a radioligand for in-vitro assays, and does not report pharmacokinetic parameters for methylscopolamine. |
 | popPK | Potter_1989 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay where methylscopolamine is used only as a radioligand, not as a subject drug for pharmacokinetic analysis. |
 | PD | Potter_1989 | not_relevant | 3 | 2 | The paper reports in vitro binding affinity (IC50) and allosteric modulation parameters for THA, not a pharmacodynamic exposure-response or dose-response relationship for methylscopolamine. |
+| popPK | Raufman_2002 | irrelevant | 0 | 0 | Methylscopolamine is used only as a radioligand for binding assays, not as the subject drug for pharmacokinetic parameter estimation. |
 | popPK | Rocha_2015 | irrelevant | 0 | 0 | The study uses methylscopolamine only as a radioligand for receptor binding assays (Kd/Bmax) and does not report pharmacokinetic disposition parameters (CL, V, etc.) for the drug. |
 | PD | Rocha_2015 | not_relevant | 0 | 0 | The paper reports concentration-response data for bethanechol and binding affinity for methylscopolamine, but does not report a pharmacodynamic (exposure-response) relationship for methylscopolamine itself. |
-| PD | Rupniak_1994 | not_relevant | 0 | 0 | The paper focuses on (+)-epibatidine oxalate, not methylscopolamine. |
-| popPK | Scherrer_1997 | irrelevant | 0 | 0 | The paper focuses on receptor modulation in guinea pig lung and does not report pharmacokinetic parameters for methylscopolamine. |
+| popPK | Rupniak_1994 | irrelevant | 0 | 0 | The paper studies epibatidine, and methylscopolamine is used only as a radioligand for binding assays, not as the subject drug for PK analysis. |
+| PD | Rupniak_1994 | not_relevant | 0 | 0 | The paper studies epibatidine, not methylscopolamine; methylscopolamine is only used as a radioligand for binding assays. |
+| popPK | Scherrer_1997 | irrelevant | 0 | 0 | no_text gate: only 88 chars of text extracted (&lt; 400) |
 | PD | Scherrer_1997 | not_relevant | 0 | 0 | The paper focuses on glucocorticoid modulation of receptors in guinea pig lung and does not report pharmacodynamic or exposure-response data for methylscopolamine. |
 | popPK | Sethy_1990 | irrelevant | 2 | 0 | The study uses methylscopolamine only as a comparator to demonstrate poor blood-brain barrier penetration in an ex vivo binding assay, without reporting quantitative PK parameters (CL, V, etc.) for it. |
 | popPK | Shivnaraine_2012 | irrelevant | 0 | 0 | The paper is a mechanistic in-vitro study on receptor binding and allosteric cooperativity, not a pharmacokinetic study reporting disposition parameters for methylscopolamine. |
@@ -131,30 +145,34 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Smith_2016 | irrelevant | 0 | 0 | The paper characterizes a novel M1 muscarinic receptor radioligand (PT-1284) and uses methylscopolamine only as a reference ligand for binding assays, providing no pharmacokinetic parameters for methylscopolamine. |
 | PD | Smith_2016 | not_relevant | 0 | 0 | The paper characterizes a radioligand for M1 PAMs and reports binding/functional assay parameters (EC50, Kd) for the ligand and agonists, but does not report a pharmacodynamic exposure-response or dose-response relationship for methylscopolamine. |
 | popPK | Sohn_1997 | irrelevant | 0 | 0 | The study is a pharmacological investigation of the micturition reflex in rats where methylscopolamine is used as a comparator agent, and no pharmacokinetic parameters are reported. |
-| PD | Sohn_1997 | not_relevant | 2 | 0 | The paper mentions methylscopolamine only as a comparator agent to demonstrate central muscarinic antagonism, without providing any numeric dose-response data, concentration-effect curves, or PD parameters for it. |
+| PD | Sohn_1997 | not_relevant | 2 | 1 | The paper mentions methylscopolamine only as a comparator agent to demonstrate central muscarinic antagonism, without providing specific numeric dose-response parameters or concentration-effect data for it. |
+| popPK | Soukup_2009 | irrelevant | 0 | 0 | The paper studies methylacridinium as the subject drug, using methylscopolamine only as a radioligand for binding assays, and reports no pharmacokinetic parameters for methylscopolamine. |
+| PD | Soukup_2009 | not_relevant | 3 | 2 | The paper reports in vitro IC50 values for enzyme inhibition and receptor binding, but does not provide an in vivo exposure-response or dose-response relationship for methylscopolamine itself. |
 | popPK | Tang_1999 | irrelevant | 0 | 0 | The study focuses on the toxicological effects of chlorpyrifos, using methylscopolamine only as a radioligand for receptor binding assays, not as a subject drug for pharmacokinetic analysis. |
-| popPK | Tanito_2001 | irrelevant | 0 | 0 | The study is a mechanistic receptor binding and electrophysiology study using methylscopolamine as a radioligand, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Tanito_2001 | irrelevant | 0 | 0 | The study is a mechanistic receptor binding and electrophysiology study where methylscopolamine is used only as a radioligand, not as the subject drug for pharmacokinetic analysis. |
 | PD | Tanito_2001 | not_relevant | 0 | 0 | The paper studies the interaction of edrophonium with muscarinic receptors using methylscopolamine (NMS) only as a radioligand for binding assays, not as the drug of interest for a pharmacodynamic exposure-response relationship. |
-| popPK | Tränkle_1996 | irrelevant | 0 | 0 | The paper title indicates a study on allosteric modulators of muscarinic receptors, which is mechanistic/pharmacological in nature and does not report pharmacokinetic parameters for methylscopolamine. |
+| popPK | Tränkle_1996 | irrelevant | 0 | 0 | no_text gate: only 87 chars of text extracted (&lt; 400) |
 | PD | Tränkle_1996 | not_relevant | 0 | 0 | The paper focuses on the discovery of allosteric modulators for muscarinic receptors and does not report pharmacodynamic or exposure-response data for methylscopolamine. |
 | popPK | Tränkle_1998 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay investigating allosteric modulation, not a pharmacokinetic study, and methylscopolamine is used only as a reference ligand. |
+| PD | Tränkle_1998 | not_relevant | 3 | 4 | The paper reports binding affinities (pKi, KD) and allosteric stabilization potencies (EC50,diss) for a radioligand and modulators, which are pharmacological/binding parameters, not pharmacodynamic (exposure-response) parameters for the drug methylscopolamine itself. |
 | popPK | Verspohl_1990 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding and functional assay using methylscopolamine as a radioligand, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Wellstein_1988 | irrelevant | 0 | 0 | The study focuses on atropine dose-response and receptor binding, using methylscopolamine only as an in-vitro radioligand, and does not report pharmacokinetic parameters for methylscopolamine. |
 | popPK | Wess_1993 | irrelevant | 0 | 0 | The paper is a mechanistic study on G protein-coupled receptor mutagenesis using methylscopolamine only as a radioligand for binding assays, reporting no pharmacokinetic parameters. |
-| PD | Wess_1993 | not_relevant | 1 | 1 | The paper focuses on mutational analysis of receptor structure and function, reporting binding affinities and relative functional activity (Emax) for mutants, but does not provide a pharmacokinetic or exposure-response model for methylscopolamine in a physiological system. |
+| PD | Wess_1993 | not_relevant | 1 | 1 | The paper focuses on mutagenesis of the m3 muscarinic receptor and reports binding affinities and relative functional activity (Emax) for mutants, but does not provide a pharmacokinetic or exposure-response model for methylscopolamine in a physiological system. |
 | popPK | Wong_1986 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding mechanistic study, not a pharmacokinetic study, and reports no disposition parameters for methylscopolamine. |
-| PD | Wong_1986 | not_relevant | 0 | 0 | The paper describes in vitro receptor binding kinetics and affinity states, not pharmacodynamic exposure-response or dose-response relationships in a physiological system. |
+| PD | Wong_1986 | not_relevant | 0 | 0 | The paper describes in vitro receptor binding kinetics and affinity states, not pharmacodynamic exposure-response or dose-response relationships in a physiological or clinical context. |
 | popPK | Xu_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor binding and phosphoinositide turnover, not a pharmacokinetic study, and methylscopolamine is used only as a radioligand for binding assays. |
 | PD | Xu_1987 | not_relevant | 0 | 0 | The paper reports pharmacological parameters (EC50, Ki, Kd) for carbachol and binding affinity for methylscopolamine, but does not report a pharmacodynamic exposure-response or dose-response relationship for methylscopolamine itself. |
+| popPK | Yu_1994 | irrelevant | 0 | 0 | Methylscopolamine is used only as a radiolabeled ligand in a receptor binding assay, not as the subject of a pharmacokinetic study. |
 | PD | Yu_1994 | not_relevant | 0 | 0 | The paper studies the pharmacodynamics of Evodiae Fructus (EF), not methylscopolamine; methylscopolamine is only used as a radioligand for receptor binding assays. |
 | popPK | Zhao_2016 | irrelevant | 0 | 0 | The paper is a computational linguistics study on drug-drug interaction extraction using neural networks and does not report any pharmacokinetic parameters for methylscopolamine. |
 | PD | Zhao_2016 | not_relevant | 0 | 0 | The paper describes a machine learning method for extracting drug-drug interactions from text and contains no pharmacodynamic data or analysis for methylscopolamine. |
 | popPK | Zlotos_2006 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on allosteric ligands where methylscopolamine is used only as a radioligand for binding assays, not as the subject of a pharmacokinetic study. |
 | PD | Zlotos_2006 | not_relevant | 0 | 0 | The paper reports binding affinities (Ki, EC50,diss) for novel compounds, not a pharmacodynamic exposure-response or dose-response relationship for methylscopolamine. |
-| popPK | de_1985 | irrelevant | 0 | 0 | The paper is a pharmacological study on muscarinic receptors in rat brain tissue, not a pharmacokinetic study, and reports no disposition parameters for methylscopolamine. |
-| popPK | unknown_1991 | irrelevant | 0 | 0 | The provided evidence is only a conference header with no study data, parameters, or mention of methylscopolamine. |
+| popPK | de_1985 | irrelevant | 0 | 0 | The paper is a pharmacological study on muscarinic receptors in rat brain tissue and does not report any pharmacokinetic parameters for methylscopolamine. |
+| popPK | unknown_1991 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
 | PD | unknown_1991 | not_relevant | 0 | 0 | The provided text is only a citation header for a conference abstract collection and contains no scientific content, data, or PD parameters. |
-| popPK | unknown_2021 | irrelevant | 0 | 0 | The provided evidence consists only of a conference header and contains no study data, parameters, or mention of methylscopolamine. |
+| popPK | unknown_2021 | irrelevant | 0 | 0 | no_text gate: only 65 chars of text extracted (&lt; 400) |
 | PD | unknown_2021 | not_relevant | 0 | 0 | The provided text is only a header for a conference poster abstract section and contains no scientific content, data, or mention of methylscopolamine. |
 
 ---

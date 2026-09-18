@@ -19,7 +19,7 @@ Despite the relative complications involved in its history of regulatory approva
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 00:08 | 12:39 | 0/0/0 | 1/0/0 | 0/0/0 | 99,415/4,220 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
+| 2026-09-18 10:09 | 4:53 | 0/0/0 | 1/0/0 | 0/0/0 | 107,808/4,650 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
@@ -38,17 +38,18 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 48 matched, 48 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_8 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_9 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Appel-Dingemanse_2002.pdf` | Appel-Dingemanse S, Clinical pharmacokinetics of tegaserod,…, Clinical pharmacokinetics (2002) | popPK | 10 | [10.2165/00003088-200241130-00002](https://doi.org/10.2165/00003088-200241130-00002) | [12403641](https://pubmed.ncbi.nlm.nih.gov/12403641) | The title confirms the paper is a clinical pharmacokinetics study of tegaserod, but the provided evidence contains no numeric parameter values. |
+| `Appel-Dingemanse_2002.pdf` | Appel-Dingemanse S, Clinical pharmacokinetics of tegaserod,…, Clinical pharmacokinetics (2002) | popPK | 9 | [10.2165/00003088-200241130-00002](https://doi.org/10.2165/00003088-200241130-00002) | [12403641](https://pubmed.ncbi.nlm.nih.gov/12403641) | The text explicitly reports quantitative disposition parameters for tegaserod, including volume of distribution (368 L), clearance (77 L/h), and half-life (11 hours). |
+| `Appel-Dingemanse_2001.pdf` | Appel-Dingemanse S et al., The pharmacokinetics of the novel promo…, Alimentary pharmacology & t… (2001) | popPK | 8 | [10.1046/j.1365-2036.2001.00973.x](https://doi.org/10.1046/j.1365-2036.2001.00973.x) | [11421867](https://pubmed.ncbi.nlm.nih.gov/11421867) | The study reports non-compartmental PK parameters (AUC, Cmax) for tegaserod, but specific numeric values for clearance, volume, or half-life are not present in the provided text, only ratios and qualitative comparisons. |
 | `Zhou_1999.pdf` | Zhou H et al., Effect of meal timing not critical for…, Journal of clinical pharmac… (1999) | popPK | 8 | [10.1177/00912709922008524](https://doi.org/10.1177/00912709922008524) | [10471981](https://pubmed.ncbi.nlm.nih.gov/10471981) | The study is a PK study of tegaserod, but the evidence text only provides qualitative descriptions and relative changes (e.g., AUC reduced by 50%) without listing specific numeric values for clearance, volume, or rate constants. |
 | `Ismair_2007.pdf` | Ismair MG et al., Tegaserod inhibits the serotonin transp…, Digestion (2007) | pd | 4 | [10.1159/000102962](https://doi.org/10.1159/000102962) | [17510552](https://www.ncbi.nlm.nih.gov/pubmed/17510552) | metadata signals extractable PD data (IC50) |
 | `Jarvie_2007.pdf` | Jarvie EM et al., Differences between the abilities of te…, British journal of pharmaco… (2007) | pd | 4 | [10.1038/sj.bjp.0707118](https://doi.org/10.1038/sj.bjp.0707118) | [17211452](https://www.ncbi.nlm.nih.gov/pubmed/17211452) | metadata signals extractable PD data (Emax) |
@@ -57,72 +58,71 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Vickers_2001.pdf` | Vickers AE et al., In vitro metabolism of tegaserod in hum…, Drug metabolism and disposi… (2001) | pgx | 7 | not captured | [11560869](https://www.ncbi.nlm.nih.gov/pubmed/11560869) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Zhou_2001.pdf` | Zhou H et al., Tegaserod coadministration does not alt…, Journal of clinical pharmac… (2001) | pgx | 7 | [10.1177/00912700122010979](https://doi.org/10.1177/00912700122010979) | [11549104](https://www.ncbi.nlm.nih.gov/pubmed/11549104) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-09-11T00:06:00.758091+00:00</sub>
+<sub>queue written 2026-09-18T10:07:13.513328+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | An_2021 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of tegaserod's effects on ion channels, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Appel-Dingemanse_2001 | irrelevant | 2 | 0 | The study reports non-compartmental parameters (AUC, Cmax) and ratios rather than quantitative disposition parameters (CL, V, ka) or a population-PK model, and specific numeric values for these parameters are not provided in the evidence. |
+| popPK | Appel-Dingemanse_2001 | relevant | 8 | 2 | The study reports non-compartmental PK parameters (AUC, Cmax) for tegaserod, but specific numeric values for clearance, volume, or half-life are not present in the provided text, only ratios and qualitative comparisons. |
 | PD | Appel-Dingemanse_2001 | not_relevant | 1 | 0 | The paper is a PK study assessing age and gender effects on exposure; it mentions a shallow dose-response relationship qualitatively but provides no numeric PD parameters or concentration-effect data. |
-| popPK | Appel-Dingemanse_2002 | relevant | 10 | 0 | The title confirms the paper is a clinical pharmacokinetics study of tegaserod, but the provided evidence contains no numeric parameter values. |
-| PD | Appel-Dingemanse_2002 | not_relevant | 0 | 0 | The paper focuses on the clinical pharmacokinetics of tegaserod and does not report any pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters. |
+| PD | Appel-Dingemanse_2002 | not_relevant | 1 | 0 | The text is a pharmacokinetic review that qualitatively mentions dose-dependent pharmacodynamic actions (transit acceleration) but provides no numeric PD parameters, concentration-effect curves, or formal PK/PD modeling results. |
 | PGx | Appel-Dingemanse_2002 | not_relevant | 0 | 0 | The paper describes general clinical pharmacokinetics and pharmacodynamics of tegaserod but does not report any effects of gene variants, genotypes, or phenotypes on these parameters. |
 | popPK | Beattie_2008 | irrelevant | 0 | 0 | The study is a preclinical pharmacodynamic comparison of gastrointestinal activity, not a pharmacokinetic study, and tegaserod is used only as a comparator agent. |
 | PD | Beattie_2008 | not_relevant | 3 | 2 | The paper reports qualitative potency rankings and relative fold-differences for tegaserod in preclinical models but does not provide specific numeric PD parameters (e.g., ED50, Emax) or concentration-effect curves for tegaserod. |
-| popPK | Camilleri_2001 | irrelevant | 1 | 0 | The paper is a review article that provides only qualitative descriptions of pharmacokinetics (e.g., "linear," "absorbed rapidly") without reporting any quantitative numeric parameters such as clearance, volume, or half-life. |
+| popPK | Camilleri_2001 | irrelevant | 1 | 0 | The paper is a review article that provides only qualitative descriptions of pharmacokinetics (e.g., linear, rapid absorption) without reporting any quantitative disposition parameters such as clearance, volume, or half-life. |
 | PD | Camilleri_2001 | not_relevant | 2 | 0 | The text is a review article that qualitatively describes pharmacodynamic effects (e.g., increased motility, reduced visceral afferent firing) but does not provide any numeric PD parameters, concentration-effect curves, or dose-response data. |
 | PGx | Camilleri_2009 | not_relevant | 2 | 0 | The paper is a review that mentions a potential pharmacogenetic association between SLC6A4 and tegaserod response but provides no specific data, effect sizes, or detailed PK/PD parameters. |
 | popPK | Camilleri_2019 | irrelevant | 0 | 0 | The paper is a review of pharmacogenomics in IBS and does not report quantitative pharmacokinetic parameters for tegaserod. |
-| PD | Camilleri_2019 | not_relevant | 0 | 0 | The text is a general review of pharmacogenomics in IBS and does not report any specific pharmacodynamic or exposure-response data for tegaserod. |
+| PD | Camilleri_2019 | not_relevant | 1 | 0 | The text is a general review of pharmacogenomics in IBS and does not report specific numeric PD parameters or exposure-response relationships for tegaserod. |
 | PGx | Camilleri_2019 | not_relevant | 0 | 0 | The paper is a general review of pharmacogenomics in IBS and does not report specific data or effects for tegaserod. |
 | popPK | Corsetti_2002 | irrelevant | 0 | 0 | The text is a general overview of tegaserod's mechanism and clinical efficacy without reporting any quantitative pharmacokinetic parameters. |
 | PD | Corsetti_2002 | not_relevant | 1 | 0 | The text is a qualitative review summary that mentions pharmacodynamic effects (prokinetic activity) but provides no numeric PD parameters, concentration-effect curves, or dose-response data. |
 | popPK | De_2006 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor agonism, not a pharmacokinetic study, and does not report any disposition parameters for tegaserod. |
 | popPK | Degen_2001 | irrelevant | 1 | 0 | The study focuses exclusively on pharmacodynamic effects (gastric emptying and transit times) and does not report quantitative pharmacokinetic parameters such as clearance, volume, or half-life. |
-| PD | Degen_2001 | not_relevant | 2 | 1 | The study reports qualitative and percentage changes in GI transit times for fixed doses but does not provide concentration-effect data, PK/PD modeling, or numeric PD parameters like Emax or EC50. |
-| PGx | Duke_2012 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (promethazine and tegaserod) affecting myopathy risk, not a pharmacogenomic effect (gene variant/genotype) on PK or PD parameters. |
+| PD | Degen_2001 | not_relevant | 2 | 1 | The study reports qualitative pharmacodynamic effects (accelerated transit) and statistical significance for fixed doses, but does not provide a concentration-effect model, dose-response curve, or numeric PD parameters (e.g., Emax, EC50) in the provided text. |
+| PGx | Duke_2012 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (promethazine and tegaserod) affecting myopathy risk, not a pharmacogenomic effect (gene variant/genotype) on a PK or PD parameter. |
 | popPK | Fang_2008 | irrelevant | 0 | 0 | The paper is a mechanistic study investigating receptor pharmacology and electrophysiology, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Fisher_2004 | irrelevant | 0 | 0 | The study evaluates pharmacodynamic effects on biliary tract motility and does not report any pharmacokinetic parameters for tegaserod. |
-| PD | Fisher_2004 | not_relevant | 0 | 0 | The study reports a null result (no significant effect) on biliary motility using ANOVA and does not provide any numeric PD parameters, concentration-effect curves, or dose-response modeling. |
+| PD | Fisher_2004 | not_relevant | 0 | 0 | The study reports a null result (no significant effect) on biliary motility using ANOVA, without providing numeric concentration-effect curves, Emax, EC50, or other derivable PD parameters. |
 | popPK | Gurbel_2021 | irrelevant | 1 | 0 | The study is a pharmacodynamic assessment of platelet function and does not report quantitative pharmacokinetic disposition parameters (CL, V, etc.) for tegaserod. |
 | PD | Gurbel_2021 | not_relevant | 2 | 0 | The study reports a null result (no significant difference) for platelet function markers and does not provide numeric PD parameters or an exposure-response curve. |
-| popPK | Hamatani_2020 | irrelevant | 0 | 0 | The study evaluates the efficacy of minesapride for IBS-C and only mentions tegaserod as background context without reporting any pharmacokinetic parameters for it. |
+| popPK | Hamatani_2020 | irrelevant | 0 | 0 | The study evaluates the efficacy of minesapride for IBS-C, and tegaserod is only mentioned as background context without any pharmacokinetic data or quantitative disposition parameters. |
 | PD | Hamatani_2020 | not_relevant | 0 | 0 | The paper is a clinical trial for minesapride (not tegaserod) and reports no pharmacokinetic data or exposure-response modeling, only dose-response efficacy outcomes. |
-| popPK | Ismair_2007 | irrelevant | 0 | 0 | The paper focuses on the mechanistic inhibition of the serotonin transporter (SERT) and does not report pharmacokinetic parameters for tegaserod. |
-| PD | Ismair_2007 | not_relevant | 0 | 0 | The text is a title indicating a mechanism of action (SERT inhibition) but contains no data, numeric parameters, or exposure-response analysis. |
-| popPK | Jarvie_2007 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on gastric motility, not a pharmacokinetic study reporting quantitative disposition parameters for tegaserod. |
+| popPK | Ismair_2007 | irrelevant | 0 | 0 | no_text gate: only 49 chars of text extracted (&lt; 400) |
+| PD | Ismair_2007 | not_relevant | 0 | 0 | The provided text is a title stating a mechanism of action (SERT inhibition) but contains no data, numeric parameters, or analysis of exposure-response or dose-response relationships. |
+| popPK | Jarvie_2007 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | popPK | Jones_2002 | irrelevant | 0 | 0 | The paper is a systematic review of clinical efficacy for IBS and does not report quantitative pharmacokinetic parameters for tegaserod. |
 | PD | Jones_2002 | not_relevant | 2 | 1 | The paper is a systematic review that qualitatively mentions a small pharmacodynamic study regarding transit times but does not provide numeric PD parameters, concentration-effect curves, or dose-response data. |
 | popPK | Kale-Pradhan_2007 | irrelevant | 0 | 0 | The text is a clinical review summary that mentions pharmacokinetic parameters qualitatively but provides no quantitative disposition values or model parameters. |
 | PD | Kale-Pradhan_2007 | not_relevant | 1 | 0 | The text is a qualitative review summary that mentions pharmacodynamic parameters exist but does not provide any numeric values, curves, or specific exposure-response relationships. |
-| PGx | Larsson_2024 | not_relevant | 0 | 0 | The paper investigates drug repositioning and proteasome inhibitor properties of tegaserod, not pharmacogenomic effects on its PK/PD parameters. |
-| popPK | Liu_2020 | irrelevant | 0 | 0 | The paper is a mechanistic study on tegaserod's anti-cancer effects in melanoma and does not report any pharmacokinetic parameters. |
+| PGx | Larsson_2024 | not_relevant | 0 | 0 | The paper investigates the off-target proteasome inhibitor properties of tegaserod in cell lines, not the effect of gene variants on its pharmacokinetics or pharmacodynamics. |
+| popPK | Liu_2020 | irrelevant | 0 | 0 | The paper is an in-vitro and in-vivo mechanistic study of tegaserod's anti-cancer effects in melanoma, reporting IC50 values and signaling pathway data, but it does not contain any pharmacokinetic disposition parameters (CL, V, ka, etc.). |
 | popPK | Madia_2020 | irrelevant | 2 | 1 | The paper is a narrative review that discusses tegaserod's mechanism and general properties but does not report original quantitative population pharmacokinetic parameters (CL, V, Q, ka) or compartmental models. |
-| PD | Madia_2020 | not_relevant | 2 | 0 | The paper is a narrative review summarizing mechanism of action and PK properties but does not report specific numeric PD parameters (e.g., Emax, EC50) or an extractable concentration-effect curve. |
-| popPK | Rivkin_2003 | irrelevant | 1 | 0 | The paper is a clinical review of efficacy and safety that mentions pharmacokinetic properties in the objective but provides no quantitative PK parameter values in the extracted evidence. |
+| PD | Madia_2020 | not_relevant | 2 | 0 | The paper is a narrative review summarizing mechanism of action and PK properties but does not report specific numeric PD parameters (e.g., Emax, EC50) or an exposure-response curve for tegaserod. |
+| popPK | Rivkin_2003 | irrelevant | 1 | 0 | The paper is a clinical review of efficacy and safety that mentions pharmacokinetic properties but does not report any quantitative disposition parameters (CL, V, ka, etc.) for tegaserod. |
 | PD | Rivkin_2003 | not_relevant | 1 | 0 | The text is a clinical review summarizing efficacy and safety without reporting specific numeric pharmacodynamic parameters (e.g., Emax, EC50) or concentration-effect curves. |
 | popPK | Sanger_2008 | irrelevant | 0 | 0 | The paper is a review discussing drug development strategies for GI disorders and mentions tegaserod only as a withdrawn drug, containing no pharmacokinetic data. |
 | PD | Sanger_2008 | not_relevant | 1 | 0 | The text is a review discussing the development of GI drugs and mentions tegaserod's withdrawal, but it does not report any specific pharmacodynamic data, exposure-response relationships, or numeric PD parameters. |
-| popPK | Tack_2012 | irrelevant | 0 | 0 | The paper is a systematic review of cardiovascular safety and pharmacology of 5-HT4 agonists, not a primary pharmacokinetic study reporting quantitative disposition parameters for tegaserod. |
+| popPK | Tack_2012 | irrelevant | 0 | 0 | The paper is a systematic review of cardiovascular safety and pharmacology, not a primary pharmacokinetic study, and it does not report quantitative disposition parameters for tegaserod. |
 | PD | Tack_2012 | not_relevant | 2 | 1 | The paper is a systematic review focusing on cardiovascular safety and provides only qualitative summaries or tables of PK/PD data without reporting specific numeric PD parameters (e.g., Emax, EC50) or exposure-response curves for tegaserod. |
-| popPK | Tsubouchi_2018 | irrelevant | 0 | 0 | The evidence indicates an in vitro pharmacology and non-clinical cardiovascular safety study, which does not report quantitative population pharmacokinetic parameters for tegaserod. |
+| popPK | Tsubouchi_2018 | irrelevant | 0 | 0 | no_text gate: only 116 chars of text extracted (&lt; 400) |
 | PD | Tsubouchi_2018 | not_relevant | 0 | 0 | The paper focuses on a different compound (DSP-6952) and does not report pharmacodynamic or exposure-response data for tegaserod. |
 | popPK | Vazquez_2011 | irrelevant | 0 | 0 | The paper is a review of linaclotide, and tegaserod is only mentioned as a withdrawn comparator drug with no pharmacokinetic parameters reported. |
 | PD | Vazquez_2011 | not_relevant | 0 | 0 | The text is a review of linaclotide and only mentions tegaserod in the context of market withdrawal due to side effects, without providing any pharmacodynamic data, exposure-response analysis, or numeric PD parameters for tegaserod. |
-| popPK | Vickers_2001 | irrelevant | 0 | 0 | The paper is an in-vitro metabolism study, not a pharmacokinetic study reporting quantitative disposition parameters for tegaserod. |
+| popPK | Vickers_2001 | irrelevant | 0 | 0 | no_text gate: only 94 chars of text extracted (&lt; 400) |
 | PD | Vickers_2001 | not_relevant | 0 | 0 | The paper focuses on in vitro metabolism and drug interaction assessment, not pharmacodynamic or exposure-response relationships. |
 | PGx | Vickers_2001 | not_relevant | 0 | 0 | The paper focuses on in vitro metabolism and drug interactions, not pharmacogenomic effects of gene variants on PK/PD parameters. |
 | popPK | Vijayvargiya_2019 | irrelevant | 0 | 0 | The paper is a review of prucalopride, and tegaserod is only mentioned as a comparator agent without any pharmacokinetic data provided. |
-| PD | Vijayvargiya_2019 | not_relevant | 0 | 0 | The paper is a review of prucalopride and only mentions tegaserod as a comparator without providing any pharmacodynamic data or exposure-response parameters for it. |
+| PD | Vijayvargiya_2019 | not_relevant | 0 | 0 | The paper is a review of prucalopride and only mentions tegaserod qualitatively as a comparator without providing any numeric PD parameters or exposure-response data for it. |
 | popPK | Yin_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic effects of YKP10811 on gastric motility in dogs, using tegaserod only as a comparator agent, and does not report any pharmacokinetic parameters for tegaserod. |
-| PD | Yin_2017 | not_relevant | 2 | 1 | The paper focuses on a new compound (YKP10811) and only qualitatively compares it to tegaserod without providing numeric PD parameters or a quantitative dose-response curve for tegaserod. |
-| popPK | Zhao_2022 | irrelevant | 0 | 0 | The paper concerns virtual screening for SARS-CoV-2 protease inhibitors and does not involve tegaserod pharmacokinetics. |
+| PD | Yin_2017 | not_relevant | 2 | 1 | The paper focuses on a new compound (YKP10811) and only provides a qualitative comparison to tegaserod without reporting numeric PD parameters or a quantitative dose-response curve for tegaserod. |
+| popPK | Zhao_2022 | irrelevant | 0 | 0 | no_text gate: only 130 chars of text extracted (&lt; 400) |
 | PD | Zhao_2022 | not_relevant | 0 | 0 | The paper focuses on virtual screening for SARS-CoV-2 inhibitors and does not mention tegaserod or report any pharmacodynamic data. |
 | popPK | Zhou_1999 | relevant | 8 | 2 | The study is a PK study of tegaserod, but the evidence text only provides qualitative descriptions and relative changes (e.g., AUC reduced by 50%) without listing specific numeric values for clearance, volume, or rate constants. |
-| popPK | Zhou_2001 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of digoxin as the subject drug, with tegaserod acting only as a co-administered agent, and no quantitative PK parameters for tegaserod are reported. |
-| PD | Zhou_2001 | not_relevant | 0 | 0 | The study reports a drug-drug interaction effect on digoxin PK (AUC/Cmax reduction) and states there were no pharmacodynamic changes in digoxin's effects (heart rate/QT), but it does not report a concentration-effect or dose-response relationship for tegaserod itself with numeric PD parameters. |
+| popPK | Zhou_2001 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of digoxin as the subject drug, with tegaserod acting only as a co-administered agent, and no quantitative PK parameters for tegaserod are reported. |
+| PD | Zhou_2001 | not_relevant | 1 | 0 | The study reports a drug-drug interaction effect on digoxin PK (AUC/Cmax reduction) and states there were no pharmacodynamic changes in heart rate or QT interval, but it does not provide numeric PD parameters or an exposure-response relationship for tegaserod itself. |
 | PGx | Zhou_2001_2 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (tegaserod and theophylline) in healthy subjects, not a pharmacogenomic effect on tegaserod's PK/PD. |
 
 ---

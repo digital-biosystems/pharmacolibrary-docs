@@ -45,7 +45,7 @@
 - [metformin <sub>(23/17/7)</sub>](drugs/drug_metformin/)
 - [methotrexate <sub>(22/5/4)</sub>](drugs/drug_methotrexate/)
 - [montelukast <sub>(1/14/0)</sub>](drugs/drug_montelukast/)
-- [omeprazole <sub>(18/6/2)</sub>](drugs/drug_omeprazole/)
+- [omeprazole <sub>(19/8/2)</sub>](drugs/drug_omeprazole/)
 - [salbutamol <sub>(3/13/0)</sub>](drugs/drug_salbutamol/)
 - [tamoxifen <sub>(3/29/2)</sub>](drugs/drug_tamoxifen/)
 - [warfarin <sub>(13/11/17)</sub>](drugs/drug_warfarin/)
@@ -182,7 +182,7 @@
       - [misoprostol <sub>(0/1/0)</sub>](drugs/drug_misoprostol/)
       - niperotidine <sub>(0/0/0)</sub>
       - [nizatidine <sub>(0/0/0)</sub>](drugs/drug_nizatidine/)
-      - [omeprazole <sub>(18/6/2)</sub>](drugs/drug_omeprazole/)
+      - [omeprazole <sub>(19/8/2)</sub>](drugs/drug_omeprazole/)
       - omeprazole amoxicillin and clarithromycin <sub>(0/0/0)</sub>
       - omeprazole amoxicillin and metronidazole <sub>(0/0/0)</sub>
       - omeprazole amoxicillin and rifabutin <sub>(0/0/0)</sub>
@@ -199,7 +199,7 @@
       - [ranitidine <sub>(1/0/0)</sub>](drugs/drug_ranitidine/)
       - [ranitidine bismuth citrate <sub>(0/0/0)</sub>](drugs/drug_ranitidine_bismuth_citrate/)
       - [rebamipide <sub>(0/0/0)</sub>](drugs/drug_rebamipide/)
-      - [rifabutin <sub>(4/7/0)</sub>](drugs/drug_rifabutin/)
+      - [rifabutin <sub>(5/7/0)</sub>](drugs/drug_rifabutin/)
       - [roxatidine <sub>(0/0/0)</sub>](drugs/drug_roxatidine/)
       - [sucralfate <sub>(0/0/0)</sub>](drugs/drug_sucralfate/)
       - sulglicotide <sub>(0/0/0)</sub>
@@ -218,7 +218,7 @@
     - [A03A Drugs For Functional Gastrointestinal Disorders](atc/A03A.md)
       - 2 benzhydryloxyethyldiethyl methylammonium iodide <sub>(0/0/0)</sub>
       - [alosetron <sub>(0/0/0)</sub>](drugs/drug_alosetron/)
-      - alverine <sub>(0/0/0)</sub>
+      - [alverine <sub>(1/0/0)</sub>](drugs/drug_alverine/)
       - alverine combinations <sub>(0/0/0)</sub>
       - benzilone <sub>(0/0/0)</sub>
       - bevonium <sub>(0/0/0)</sub>
@@ -236,7 +236,7 @@
       - fenoverine <sub>(0/0/0)</sub>
       - fenpiprane <sub>(0/0/0)</sub>
       - fenpiverinium <sub>(0/0/0)</sub>
-      - [glycopyrronium <sub>(2/0/0)</sub>](drugs/drug_glycopyrronium/)
+      - [glycopyrronium <sub>(1/0/0)</sub>](drugs/drug_glycopyrronium/)
       - [glycopyrronium bromide <sub>(1/0/0)</sub>](drugs/drug_glycopyrronium_bromide/)
       - [hexocyclium <sub>(0/1/0)</sub>](drugs/drug_hexocyclium/)
       - idanpramine <sub>(0/0/0)</sub>
@@ -270,7 +270,7 @@
       - tiemonium iodide <sub>(0/0/0)</sub>
       - timepidium <sub>(0/0/0)</sub>
       - timepidium bromide <sub>(0/0/0)</sub>
-      - [tiropramide <sub>(6/0/0)</sub>](drugs/drug_tiropramide/)
+      - [tiropramide <sub>(0/0/0)</sub>](drugs/drug_tiropramide/)
       - trepibutone <sub>(0/0/0)</sub>
       - tridihexethyl <sub>(0/0/0)</sub>
       - [trimebutine <sub>(0/0/0)</sub>](drugs/drug_trimebutine/)
@@ -284,7 +284,7 @@
       - cimetropium bromide <sub>(0/0/0)</sub>
       - fentonium <sub>(0/0/0)</sub>
       - homatropine methylbromide <sub>(0/0/0)</sub>
-      - [hyoscyamine <sub>(0/7/0)</sub>](drugs/drug_hyoscyamine/)
+      - [hyoscyamine <sub>(0/9/0)</sub>](drugs/drug_hyoscyamine/)
       - [methylatropine <sub>(0/1/0)</sub>](drugs/drug_methylatropine/)
       - [methylscopolamine <sub>(0/1/0)</sub>](drugs/drug_methylscopolamine/)
     - [A03C Antispasmodics In Combination With Psycholeptics](atc/A03C.md)
@@ -299,10 +299,10 @@
       - diphemanil and psycholeptics <sub>(0/0/0)</sub>
       - [emepronium <sub>(0/0/0)</sub>](drugs/drug_emepronium/)
       - emepronium and psycholeptics <sub>(0/0/0)</sub>
-      - [glycopyrronium <sub>(2/0/0)</sub>](drugs/drug_glycopyrronium/)
+      - [glycopyrronium <sub>(1/0/0)</sub>](drugs/drug_glycopyrronium/)
       - glycopyrronium bromide and psycholeptics <sub>(0/0/0)</sub>
       - homatropine methylbromide and psycholeptics <sub>(0/0/0)</sub>
-      - [hyoscyamine <sub>(0/7/0)</sub>](drugs/drug_hyoscyamine/)
+      - [hyoscyamine <sub>(0/9/0)</sub>](drugs/drug_hyoscyamine/)
       - hyoscyamine and psycholeptics <sub>(0/0/0)</sub>
       - isopropamide and psycholeptics <sub>(0/0/0)</sub>
       - [methylscopolamine <sub>(0/1/0)</sub>](drugs/drug_methylscopolamine/)
@@ -2107,7 +2107,7 @@
       - finasteride <sub>(0/0/0)</sub>
       - gamolenic acid <sub>(0/0/0)</sub>
       - gamolenic acid combinations <sub>(0/0/0)</sub>
-      - [glycopyrronium <sub>(2/0/0)</sub>](drugs/drug_glycopyrronium/)
+      - [glycopyrronium <sub>(1/0/0)</sub>](drugs/drug_glycopyrronium/)
       - [hydrogen peroxide <sub>(0/37/0)</sub>](drugs/drug_hydrogen_peroxide/)
       - hydroquinone <sub>(0/0/0)</sub>
       - ivermectin <sub>(0/0/0)</sub>
@@ -2564,7 +2564,7 @@
       - pyrazinamide <sub>(0/0/0)</sub>
       - pyrazinamide ethambutol isoniazid and lomefloxacin <sub>(0/0/0)</sub>
       - pyrazinamide ethambutol protionamide and lomefloxacin <sub>(0/0/0)</sub>
-      - [rifabutin <sub>(4/7/0)</sub>](drugs/drug_rifabutin/)
+      - [rifabutin <sub>(5/7/0)</sub>](drugs/drug_rifabutin/)
       - rifabutin pyrazinamide and protionamide <sub>(0/0/0)</sub>
       - rifampicin <sub>(0/0/0)</sub>
       - rifampicin and isoniazid <sub>(0/0/0)</sub>
@@ -4118,7 +4118,7 @@
       - formoterol and tiotropium bromide <sub>(0/0/0)</sub>
       - formoterol glycopyrronium bromide and beclometasone <sub>(0/0/0)</sub>
       - formoterol glycopyrronium bromide and budesonide <sub>(0/0/0)</sub>
-      - [glycopyrronium <sub>(2/0/0)</sub>](drugs/drug_glycopyrronium/)
+      - [glycopyrronium <sub>(1/0/0)</sub>](drugs/drug_glycopyrronium/)
       - hexoprenaline <sub>(0/0/0)</sub>
       - indacaterol <sub>(0/0/0)</sub>
       - indacaterol and glycopyrronium bromide <sub>(0/0/0)</sub>
@@ -4161,7 +4161,7 @@
       - [cromoglicic acid <sub>(0/0/0)</sub>](drugs/drug_cromoglicic_acid/)
       - ensifentrine <sub>(0/0/0)</sub>
       - fenspiride <sub>(0/0/0)</sub>
-      - [glycopyrronium <sub>(2/0/0)</sub>](drugs/drug_glycopyrronium/)
+      - [glycopyrronium <sub>(1/0/0)</sub>](drugs/drug_glycopyrronium/)
       - [glycopyrronium bromide <sub>(1/0/0)</sub>](drugs/drug_glycopyrronium_bromide/)
       - oxitropium <sub>(0/0/0)</sub>
       - oxitropium bromide <sub>(0/0/0)</sub>

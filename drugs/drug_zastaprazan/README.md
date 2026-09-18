@@ -16,7 +16,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 21:54 | 4:21 | 0/1/0 | 0/0/0 | 0/0/0 | 46,465/5,142 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 5/0 | 1 |
+| 2026-09-18 09:06 | 3:59 | 0/1/0 | 0/0/0 | 0/0/0 | 92,870/7,241 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 5/0 | 1 |
 
 ## popPK records
 
@@ -40,18 +40,18 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Hwang_2023.pdf` | Hwang I et al., Randomised clinical trial: Safety, tole…, Alimentary pharmacology & t… (2023) | pgx | 8 | [10.1111/apt.17406](https://doi.org/10.1111/apt.17406) | [36732884](https://www.ncbi.nlm.nih.gov/pubmed/36732884) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Denegri_2026.pdf` | Denegri A et al., Potassium-competitive acid blockers for…, Polish archives of internal… (2026) | pgx | 7 | [10.20452/pamw.17285](https://doi.org/10.20452/pamw.17285) | [42084149](https://www.ncbi.nlm.nih.gov/pubmed/42084149) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 
-<sub>queue written 2026-09-10T21:51:41.019777+00:00</sub>
+<sub>queue written 2026-09-18T09:03:00.715172+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Cao_2026 | not_relevant | 0 | 0 | The paper investigates CYP3A-mediated metabolism and drug-drug interactions (DDIs) using chemical inhibitors and PBPK modeling, but does not report pharmacogenomic effects based on specific gene variants or genotypes. |
-| PGx | Denegri_2026 | not_relevant | 0 | 0 | The paper is a narrative review of clinical efficacy and general pharmacology, and does not report specific pharmacogenomic effects on PK or PD parameters for zastaprazan. |
+| PGx | Cao_2026 | not_relevant | 0 | 0 | The paper investigates CYP3A-mediated metabolism and drug-drug interactions (DDIs) of zastaprazan, but does not report any pharmacogenomic effects (gene variants/genotypes) on its PK or PD parameters. |
+| PGx | Denegri_2026 | not_relevant | 0 | 0 | The paper is a narrative review of efficacy and general pharmacology, and does not report specific pharmacogenomic effects on PK or PD parameters for zastaprazan. |
 | PGx | Hwang_2023 | not_relevant | 0 | 0 | The study explicitly states that pharmacogenomic analysis found no genetic variants associated with the exposure of zastaprazan. |
-| PGx | Kim_2026 | not_relevant | 0 | 0 | The paper reports that pharmacogenomic analysis found no genetic variant significantly associated with the exposure of zastaprazan. |
+| PGx | Kim_2026 | not_relevant | 0 | 0 | The paper is a general review of zastaprazan's pharmacology and clinical efficacy, reporting no specific pharmacogenomic effects or genotype-based PK/PD variations. |
 | PGx | Lee_2024 | not_relevant | 0 | 0 | The paper describes in vitro metabolism and transport characteristics of zastaprazan but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
-| PD | Liu_2025 | not_relevant | 1 | 0 | The paper is a systematic review and meta-analysis focused exclusively on pharmacokinetic (PK) parameters (AUC, Cmax, etc.) and drug-drug interactions; it does not report any pharmacodynamic (PD) models, exposure-response relationships, or numeric PD parameters (e.g., Emax, EC50) for zastaprazan or other P-CABs. |
+| PD | Liu_2025 | not_relevant | 0 | 0 | The paper is a systematic review and meta-analysis focused exclusively on pharmacokinetic (PK) parameters (AUC, Cmax, etc.) and drug interactions, with no pharmacodynamic (PD) or exposure-response modeling or numeric PD parameters reported. |
 | PGx | Liu_2025 | not_relevant | 0 | 0 | The paper is a systematic review of drug-drug and food-drug interactions for P-CABs and does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
 | PGx | Yang_2024 | not_relevant | 0 | 0 | The paper explicitly states that CYP2C19 phenotypes had no significant effect on zastaprazan PK. |
 

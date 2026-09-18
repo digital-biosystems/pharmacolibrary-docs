@@ -1,28 +1,33 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;pirenzepine&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/&quot;},{&quot;label&quot;:&quot;Vergin_1986 \u00b7 healthy volunteers&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pirenzepine_Vergin1986_reference&quot;,&quot;label&quot;:&quot;Vergin_1986_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/Pirenzepine_Vergin1986_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pirenzepine_Vergin1989_reference&quot;,&quot;label&quot;:&quot;Vergin_1989_healthy adults&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/Pirenzepine_Vergin1989_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;pirenzepine&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/&quot;},{&quot;label&quot;:&quot;Vergin_1986 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pirenzepine_Vergin1986_reference&quot;,&quot;label&quot;:&quot;Vergin_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/Pirenzepine_Vergin1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pirenzepine_Vergin1989_reference&quot;,&quot;label&quot;:&quot;Vergin_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/Pirenzepine_Vergin1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pirenzepine — `Pirenzepine_Vergin1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-**What is wrong:** every check the reviewer could run passed
+> ⚙️ **Pipeline limitation — reviewer_tooling.** the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault<br><sub>evidence: `C6_cl_magnitude failed (ratio None)`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** clearance is outside the plausible magnitude window.
 
 **Steps:**
-1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+1. Not a curation fix — reviewer_tooling limitation.
+2. Check the parameter's unit_verbatim — an unconverted per-kg or per-hour unit is the usual cause, not a genuinely extreme value.
+3. Confirm value_si against the paper's reported number.
+4. A 'ratio None' means the check could not compute a ratio, so treat the window as unverified rather than as a failure of the value.
 
 <sub>owner: **curator** · guidance written by playbook</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-11 08:47:04.858685+00:00) predates the upstream re-run (2026-09-18 06:20:58.911919+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Vergin H; Mascher H; Strobel K; Nitsche V et al. (1986). Arzneimittel-Forschung 36
 
 ## Model component
-<dbs-pgx drug="pirenzepine" model-id="Pirenzepine_Vergin1986_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="pirenzepine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="pirenzepine" model-id="Pirenzepine_Vergin1986_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="pirenzepine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -77,7 +82,7 @@ Vergin H; Mascher H; Strobel K; Nitsche V et al. (1986). Arzneimittel-Forschung 
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_pirenzepine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vergin_1986` / `Vergin_1986::healthy volunteers`)
+- scholar stages: `../../../knowledgebase/drugs/drug_pirenzepine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vergin_1986` / `Vergin_1986::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

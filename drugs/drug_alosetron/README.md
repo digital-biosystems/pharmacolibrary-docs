@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 22:06 | 6:49 | 0/0/0 | 0/0/0 | 0/0/0 | 22,807/2,339 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-18 08:17 | 3:43 | 0/0/0 | 0/0/0 | 0/0/0 | 29,281/2,597 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -41,7 +41,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Koch_2004.pdf` | Koch KM et al., Alosetron repeat dose pharmacokinetics,…, Alimentary pharmacology & t… (2004) | pgx | 7 | [10.1111/j.1365-2036.2004.02031.x](https://doi.org/10.1111/j.1365-2036.2004.02031.x) | [15233703](https://www.ncbi.nlm.nih.gov/pubmed/15233703) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Somers_2007.pdf` | Somers GI et al., The metabolism of the 5HT3 antagonists…, Xenobiotica; the fate of fo… (2007) | pgx | 7 | [10.1080/00498250701485575](https://doi.org/10.1080/00498250701485575) | [17701832](https://www.ncbi.nlm.nih.gov/pubmed/17701832) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-10T22:05:19.479111+00:00</sub>
+<sub>queue written 2026-09-18T08:16:03.847989+00:00</sub>
 
 ## Screened and excluded
 

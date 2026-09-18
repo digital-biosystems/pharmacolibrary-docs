@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propantheline_Vose1979_reference&quot;,&quot;label&quot;:&quot;Vose_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_propantheline/Propantheline_Vose1979_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>

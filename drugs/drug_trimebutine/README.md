@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 00:37 | 5:35 | 0/0/0 | 0/0/0 | 0/0/0 | 22,896/1,813 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-09-18 10:21 | 3:09 | 0/0/0 | 0/0/0 | 0/0/0 | 52,465/2,851 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -25,46 +25,50 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 19 matched, 20 returned
-- **screened:** 1  ·  **relevant:** 1
+- **PubMed hits:** 24 matched, 24 returned
+- **screened:** 3  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_6 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_7 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Jiang_2004.pdf` | Jiang H et al., [Pharmacokinetics and bioequivalence of…, Yao xue xue bao = Acta phar… (2004) | popPK | 8 | not captured | [15171657](https://pubmed.ncbi.nlm.nih.gov/15171657) | The study reports quantitative pharmacokinetic parameters (T1/2, Tmax, Cmax) for trimebutine in humans, with values clearly present in the text. |
-| `Paquette_2014.pdf` | Paquette JM et al., Safety, tolerability and pharmacokineti…, Clinical therapeutics (2014) | popPK | 8 | [10.1016/j.clinthera.2014.08.005](https://doi.org/10.1016/j.clinthera.2014.08.005) | [25224876](https://pubmed.ncbi.nlm.nih.gov/25224876) | The study reports PK parameters for trimebutine (GIC-1001) but the evidence text only provides qualitative ranges and food effect ratios, lacking specific numeric values for clearance, volume, or half-life. |
+| `Li_2001.pdf` | Li F et al., Determination of trimebutine maleate in…, Biomedical chromatography :… (2001) | popPK | 8 | [10.1002/bmc.52](https://doi.org/10.1002/bmc.52) | [11438965](https://pubmed.ncbi.nlm.nih.gov/11438965) | The paper reports quantitative pharmacokinetic parameters (AUC, Cmax, t1/2, Tmax) for trimebutine in rats, with values explicitly present in the text. |
+| `Paquette_2014.pdf` | Paquette JM et al., Safety, tolerability and pharmacokineti…, Clinical therapeutics (2014) | popPK | 8 | [10.1016/j.clinthera.2014.08.005](https://doi.org/10.1016/j.clinthera.2014.08.005) | [25224876](https://pubmed.ncbi.nlm.nih.gov/25224876) | The study reports PK parameters for trimebutine (GIC-1001), but the evidence only provides ranges for Tmax and AUC, lacking specific values for clearance, volume, or half-life. |
 | `Nagasaki_1993.pdf` | Nagasaki M et al., Effect of trimebutine on voltage-activa…, British journal of pharmaco… (1993) | pd | 4 | [10.1111/j.1476-5381.1993.tb13823.x](https://doi.org/10.1111/j.1476-5381.1993.tb13823.x) | [8220900](https://www.ncbi.nlm.nih.gov/pubmed/8220900) | metadata signals extractable PD data (IC50) |
 | `Pascaud_1987.pdf` | Pascaud X et al., [Involvement of opiate receptors in the…, Gastroenterologie clinique… (1987) | pd | 4 | not captured | [3038655](https://www.ncbi.nlm.nih.gov/pubmed/3038655) | metadata signals extractable PD data (IC50) |
 | `Pascaud_1989.pdf` | Pascaud X et al., [Mode of action of trimebutine: involve…, Presse medicale (Paris, Fra… (1989) | pd | 4 | not captured | [2537972](https://www.ncbi.nlm.nih.gov/pubmed/2537972) | metadata signals extractable PD data (IC50) |
 | `Schuurkes_1985.pdf` | Schuurkes JA et al., A comparative study on the effects of d…, Japanese journal of pharmac… (1985) | pd | 4 | [10.1254/jjp.39.123](https://doi.org/10.1254/jjp.39.123) | [4087563](https://www.ncbi.nlm.nih.gov/pubmed/4087563) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-11T00:36:53.892805+00:00</sub>
+<sub>queue written 2026-09-18T10:21:15.839407+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | A_2021 | irrelevant | 0 | 0 | The study is a clinical trial on antiemetic efficacy where trimebutine is only mentioned as a rescue medication, with no pharmacokinetic parameters reported. |
 | popPK | Cho_2010 | irrelevant | 2 | 0 | The study is a formulation development paper that reports bioavailability comparisons (AUC/Cmax ratios) rather than specific quantitative disposition parameters (CL, V, ka) for trimebutine. |
 | popPK | Iwase_2017 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CYP inhibition by trimebutine and does not report pharmacokinetic disposition parameters (CL, V, ka, etc.) for trimebutine. |
 | PGx | Iwase_2017 | not_relevant | 0 | 0 | The study investigates the inhibitory effects of trimebutine on CYP enzymes in vitro, not the effect of genetic variants on trimebutine's pharmacokinetics or pharmacodynamics. |
+| popPK | Joo_1999 | irrelevant | 2 | 0 | The paper describes an analytical HPLC method for trimebutine and does not report quantitative pharmacokinetic parameters (CL, V, etc.) in the provided evidence. |
 | popPK | Miyata_1993 | irrelevant | 0 | 0 | The study is a pharmacodynamic comparison of stress-induced defecation and does not report any pharmacokinetic parameters for trimebutine. |
 | popPK | Nagasaki_1990 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of binding interactions and lacks any pharmacokinetic disposition parameters. |
-| popPK | Nagasaki_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium currents in smooth muscle cells, not a pharmacokinetic study. |
+| popPK | Nagasaki_1993 | irrelevant | 0 | 0 | no_text gate: only 94 chars of text extracted (&lt; 400) |
 | popPK | Nagasaki_1993_2 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of trimebutine's effect on ion channels, not a pharmacokinetic study. |
-| popPK | Paquette_2014 | relevant | 8 | 2 | The study reports PK parameters for trimebutine (GIC-1001) but the evidence text only provides qualitative ranges and food effect ratios, lacking specific numeric values for clearance, volume, or half-life. |
-| popPK | Pascaud_1987 | irrelevant | 0 | 0 | The paper focuses on the mechanism of action (opiate receptors) rather than pharmacokinetic parameters, and no quantitative PK data is provided. |
+| popPK | Paquette_2014 | relevant | 8 | 2 | The study reports PK parameters for trimebutine (GIC-1001), but the evidence only provides ranges for Tmax and AUC, lacking specific values for clearance, volume, or half-life. |
+| popPK | Pascaud_1987 | irrelevant | 0 | 0 | no_text gate: only 70 chars of text extracted (&lt; 400) |
 | PD | Pascaud_1987 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric parameters required to extract a PD relationship. |
-| popPK | Pascaud_1989 | irrelevant | 0 | 0 | The paper focuses on the mode of action and opioid receptor involvement, not pharmacokinetic parameters. |
-| PD | Pascaud_1989 | not_relevant | 0 | 0 | The paper focuses on the mechanism of action (opioid receptor involvement) and does not report pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters. |
+| popPK | Pascaud_1989 | irrelevant | 0 | 0 | no_text gate: only 64 chars of text extracted (&lt; 400) |
+| PD | Pascaud_1989 | not_relevant | 0 | 0 | The paper focuses on the mechanism of action (opioid receptor involvement) and does not report any pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters. |
 | popPK | Roman_1999 | irrelevant | 0 | 0 | The paper is a mechanistic/pharmacological study reporting binding affinities and electrophysiological effects, not pharmacokinetic disposition parameters. |
 | popPK | Saivin_2000 | irrelevant | 2 | 0 | The study reports that no trimebutine concentrations were measured, focusing instead on the metabolite desmethyl-trimebutine for bioequivalence, and provides no quantitative PK parameters for the parent drug. |
-| popPK | Schuurkes_1985 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of gastrointestinal motility in guinea pigs, not a pharmacokinetic study reporting quantitative disposition parameters for trimebutine. |
+| popPK | Schuurkes_1985 | irrelevant | 0 | 0 | no_text gate: only 146 chars of text extracted (&lt; 400) |
 | popPK | Takenaga_1984 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of smooth muscle contraction mechanisms and does not report any pharmacokinetic parameters. |
+| popPK | Yu_2001 | irrelevant | 0 | 0 | no_text gate: only 82 chars of text extracted (&lt; 400) |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_trimebutine`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

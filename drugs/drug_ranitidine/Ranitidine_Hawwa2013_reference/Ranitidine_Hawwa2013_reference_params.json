@@ -1,0 +1,24 @@
+{
+ "model_id": "Ranitidine_Hawwa2013_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 8.916666666666667e-06,
+  "F": 27.5,
+  "Tlag": 0.0,
+  "VdPerKg": 0.004071428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.0003638888888888889,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.007659058499189395
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

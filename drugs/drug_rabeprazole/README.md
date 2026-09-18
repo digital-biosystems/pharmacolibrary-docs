@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rabeprazole&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rabeprazole_Sheng2010_reference&quot;,&quot;label&quot;:&quot;Sheng_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/Rabeprazole_Sheng2010_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rabeprazole_Yang2009_reference&quot;,&quot;label&quot;:&quot;Yang_2009_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/Rabeprazole_Yang2009_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rabeprazole_Sheng2010_reference&quot;,&quot;label&quot;:&quot;Sheng_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/Rabeprazole_Sheng2010_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rabeprazole_Yang2009_reference&quot;,&quot;label&quot;:&quot;Yang_2009_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/Rabeprazole_Yang2009_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # rabeprazole
 
@@ -25,7 +25,7 @@
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Sheng_2010_reference](drugs/drug_rabeprazole/Rabeprazole_Sheng2010_reference.md) | Sheng YC et al., Effect of CYP2C19 genotypes on the phar…, European journal of clinica… (2010) | [10.1007/s00228-010-0892-4](https://doi.org/10.1007/s00228-010-0892-4) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yang_2009_reference](drugs/drug_rabeprazole/Rabeprazole_Yang2009_reference.md) | Yang JC et al., Pharmacokinetic- pharmacodynamic analys…, British journal of clinical… (2009) | [10.1111/j.1365-2125.2009.03393.x](https://doi.org/10.1111/j.1365-2125.2009.03393.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yang_2009_reference](drugs/drug_rabeprazole/Rabeprazole_Yang2009_reference.md) | Yang JC et al., Pharmacokinetic- pharmacodynamic analys…, British journal of clinical… (2009) | [10.1111/j.1365-2125.2009.03393.x](https://doi.org/10.1111/j.1365-2125.2009.03393.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -37,7 +37,7 @@
 
 - **PubMed hits:** 18 matched, 16 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 1
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rabeprazole&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/&quot;},{&quot;label&quot;:&quot;Sheng_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rabeprazole_Sheng2010_reference&quot;,&quot;label&quot;:&quot;Sheng_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/Rabeprazole_Sheng2010_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rabeprazole_Yang2009_reference&quot;,&quot;label&quot;:&quot;Yang_2009_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/Rabeprazole_Yang2009_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rabeprazole_Sheng2010_reference&quot;,&quot;label&quot;:&quot;Sheng_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/Rabeprazole_Sheng2010_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rabeprazole_Yang2009_reference&quot;,&quot;label&quot;:&quot;Yang_2009_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/Rabeprazole_Yang2009_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,19 @@
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+> ⚙️ **Pipeline limitation — fulltext.** the record was built from the abstract alone, so reported summary statistics stood in for a fitted model<br><sub>evidence: `provenance.source=abstract-only`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** every check the reviewer could run passed.
+
+**Steps:**
+1. Not a curation fix — fulltext limitation.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
 Sheng YC; Wang K; He YC; Yang J; Zheng QS et al. (2010). European journal of clinical pharmacology 66

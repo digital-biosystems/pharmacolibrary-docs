@@ -26,7 +26,7 @@ In February 2015, vonoprazan was first marketed in Japan for the treatment of ac
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 21:44 | 1:54 | 0/1/0 | 0/0/0 | 0/0/0 | 41,975/1,185 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-09-18 08:59 | 1:57 | 0/1/0 | 0/0/0 | 0/0/0 | 40,981/1,183 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -47,17 +47,17 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Mulford_2026.pdf` | Mulford DJ et al., The pharmacokinetics and safety of vono…, Journal of pediatric gastro… (2026) | popPK | 9 | [10.1002/jpn3.70368](https://doi.org/10.1002/jpn3.70368) | [41721637](https://pubmed.ncbi.nlm.nih.gov/41721637) | The paper describes a population PK study for vonoprazan in pediatrics, but the specific numeric parameter values (CL/F, Vc/F) are not present in the provided text, which only contains qualitative comparisons to adult exposures. |
+| `Mulford_2026.pdf` | Mulford DJ et al., The pharmacokinetics and safety of vono…, Journal of pediatric gastro… (2026) | popPK | 9 | [10.1002/jpn3.70368](https://doi.org/10.1002/jpn3.70368) | [41721637](https://pubmed.ncbi.nlm.nih.gov/41721637) | The paper describes a population PK study for vonoprazan in pediatrics, but the specific numeric parameter values (CL/F, Vc/F) are not present in the provided abstract text. |
 
-<sub>queue written 2026-09-10T21:43:03.933990+00:00</sub>
+<sub>queue written 2026-09-18T08:57:42.816581+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Gatta_2023 | irrelevant | 0 | 0 | The evidence consists only of the title of an editorial, which typically lacks original quantitative PK parameter values. |
+| popPK | Gatta_2023 | irrelevant | 0 | 0 | no_text gate: only 104 chars of text extracted (&lt; 400) |
 | PD | Gatta_2023 | not_relevant | 1 | 0 | The provided text is only the title of an editorial and does not contain the full text or any numeric PD parameters. |
-| popPK | Mulford_2026 | relevant | 9 | 2 | The paper describes a population PK study for vonoprazan in pediatrics, but the specific numeric parameter values (CL/F, Vc/F) are not present in the provided text, which only contains qualitative comparisons to adult exposures. |
+| popPK | Mulford_2026 | relevant | 9 | 2 | The paper describes a population PK study for vonoprazan in pediatrics, but the specific numeric parameter values (CL/F, Vc/F) are not present in the provided abstract text. |
 | popPK | Scarpignato_2023 | irrelevant | 2 | 0 | The study uses an existing population PK model to derive PK/PD simulations but does not report the specific quantitative PK parameter values (CL, V, etc.) for vonoprazan in the provided evidence. |
 
 ---

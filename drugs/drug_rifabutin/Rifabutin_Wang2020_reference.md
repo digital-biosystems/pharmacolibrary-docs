@@ -1,18 +1,19 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rifabutin&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/&quot;},{&quot;label&quot;:&quot;Wang_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rifabutin_Deshpande2024_reference&quot;,&quot;label&quot;:&quot;Deshpande_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Deshpande2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rifabutin_Bentley2021_reference&quot;,&quot;label&quot;:&quot;Bentley_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Bentley2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Ding2022_reference&quot;,&quot;label&quot;:&quot;Ding_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Ding2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Osipova2023_reference&quot;,&quot;label&quot;:&quot;Osipova_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Osipova2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Gatti1998_reference&quot;,&quot;label&quot;:&quot;Gatti_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Gatti1998_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Deshpande2024_reference&quot;,&quot;label&quot;:&quot;Deshpande_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Deshpande2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Hennig2016_reference&quot;,&quot;label&quot;:&quot;Hennig_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Hennig2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Li1996_reference&quot;,&quot;label&quot;:&quot;Li_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Li1996_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Semere2024_reference&quot;,&quot;label&quot;:&quot;Semere_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Semere2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rifabutin_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rifabutin/Rifabutin_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rifabutin — `Rifabutin_Wang2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
 ### Reviewer guidance
 
-**What is wrong:** every check the reviewer could run passed
+**What is wrong:** a compartment is unreachable, or a metabolite is unlinked
 
 **Steps:**
-1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+1. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
+2. Parent/metabolite records commonly miss the formation link.
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
@@ -21,17 +22,20 @@ Wang X; Mallikaarjun S; Gibiansky E et al. (2020). Antimicrobial agents and chem
   ·  DOI: [10.1128/aac.01202-20](https://doi.org/10.1128/aac.01202-20)
 
 ## Model component
-<dbs-pgx drug="rifabutin" model-id="Rifabutin_Wang2020_reference" status="curated_candidate" stale="false" population="" measured-compound="rifabutin" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="rifabutin" model-id="Rifabutin_Wang2020_reference" status="rejected" stale="false" population="" measured-compound="rifabutin" parameterization="apparent" topology="2C"></dbs-pgx>
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F (liters/h) | `Q27` · CL/F | 37.1 | liters/h | 1.0305555555555556e-05 | L/h | not captured | review (0.7) | Wang_2020:review | — | not captured |
 | V/F (derived from CL·t½/ln2) | `Q76` · V/F | 1605.7196 | L | 1.6057195805094162 | L | not captured | review (0.7) | Wang_2020:review | — | not captured |
-| Ka,AM | `Q49` · kabs | 0.397 | h−1 | 0.00011027777777777779 | 1/h | not captured | review (0.7) | Wang_2020:review | — | not captured |
+| V2/F (liters) | `Q82` · V2/F | 655.0 | liters | 0.655 | L | not captured | review (0.7) | Wang_2020:review | — | not captured |
 | LAGAM | `Q83` · tlag | 0.825 | h | 2970.0 | h | not captured | review (0.7) | Wang_2020:review | — | not captured |
+| Ka,AM | `Q49` · kabs | 0.397 | h−1 | 0.00011027777777777779 | 1/h | not captured | review (0.7) | Wang_2020:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -39,9 +43,6 @@ Wang X; Mallikaarjun S; Gibiansky E et al. (2020). Antimicrobial agents and chem
 </details>
 
 ## Departures & gaps
-
-**Deviations:**
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
 - built from REVIEW reference values (Wang_2020) — secondary source
@@ -53,27 +54,19 @@ Wang X; Mallikaarjun S; Gibiansky E et al. (2020). Antimicrobial agents and chem
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wang_2020:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Wang_2020:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2020:review'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2020:review'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Wang_2020:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 37.1 L/h | not captured | not captured | ['Wang_2020:review'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 1.61e+03 L | not captured | not captured | ['Wang_2020:review'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=rifabutin) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q82 | pass | volume within physiological range | 655 L | not captured | not captured | ['Wang_2020:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -83,9 +76,6 @@ Wang X; Mallikaarjun S; Gibiansky E et al. (2020). Antimicrobial agents and chem
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_rifabutin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wang_2020` / `Wang_2020::reference`)
-- model: `../../../knowledgebase/drugs/drug_rifabutin/models/modelica/Rifabutin_Wang2020_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_rifabutin/models/modelica/Rifabutin_Wang2020_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_rifabutin/models/modelica/Rifabutin_Wang2020_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -95,21 +85,18 @@ Wang X; Mallikaarjun S; Gibiansky E et al. (2020). Antimicrobial agents and chem
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rifabutin/Rifabutin_Wang2020_reference/Rifabutin_Wang2020_reference_modelica.zip" download>Rifabutin_Wang2020_reference_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rifabutin/Rifabutin_Wang2020_reference/Rifabutin_Wang2020_reference_fmi.zip" download>Rifabutin_Wang2020_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_rifabutin/Rifabutin_Wang2020_reference/Rifabutin_Wang2020_reference_fmi.zip" download>Rifabutin_Wang2020_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rifabutin/Rifabutin_Wang2020_reference/Rifabutin_Wang2020_reference_matlab.zip" download>Rifabutin_Wang2020_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rifabutin/Rifabutin_Wang2020_reference/Rifabutin_Wang2020_reference_matlab_simbio.zip" download>Rifabutin_Wang2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rifabutin/Rifabutin_Wang2020_reference/Rifabutin_Wang2020_reference_sbml.zip" download>Rifabutin_Wang2020_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rifabutin/Rifabutin_Wang2020_reference/Rifabutin_Wang2020_reference_cellml.zip" download>Rifabutin_Wang2020_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_rifabutin/Rifabutin_Wang2020_reference/Rifabutin_Wang2020_reference.svg" alt="Rifabutin_Wang2020_reference diagram"><figcaption>The structure OpenModelica draws for this model, with this record's parameter values in the component labels.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_rifabutin/Rifabutin_Wang2020_reference/Rifabutin_Wang2020_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_rifabutin/Rifabutin_Wang2020_reference/Rifabutin_Wang2020_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Rifabutin_Wang2020_reference_params.json` · controls `Rifabutin_Wang2020_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

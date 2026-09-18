@@ -21,7 +21,7 @@ Yang E; Hwang I; Ji SC; Kim J; Lee S et al. (2024). CPT: pharmacometrics & syste
   ·  DOI: [10.1002/psp4.13228](https://doi.org/10.1002/psp4.13228)
 
 ## Model component
-<dbs-pgx drug="zastaprazan" model-id="Zastaprazan_Yang2024_reference" status="rejected" stale="false" population="patients with GERD and healthy volunteers" measured-compound="zastaprazan" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="zastaprazan" model-id="Zastaprazan_Yang2024_reference" status="rejected" stale="false" population="patients with erosive GERD and healthy volunteers" measured-compound="zastaprazan" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 

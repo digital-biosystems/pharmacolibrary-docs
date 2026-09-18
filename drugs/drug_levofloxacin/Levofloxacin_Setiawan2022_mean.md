@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;levofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_levofloxacin/&quot;},{&quot;label&quot;:&quot;Setiawan_2022 \u00b7 mean&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levofloxacin_Setiawan2022_mean&quot;,&quot;label&quot;:&quot;Setiawan_2022_mean&quot;,&quot;href&quot;:&quot;drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Levofloxacin_Setiawan2022_median&quot;,&quot;label&quot;:&quot;Setiawan_2022_median&quot;,&quot;href&quot;:&quot;drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_median.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levofloxacin_He2024_reference&quot;,&quot;label&quot;:&quot;He_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_levofloxacin/Levofloxacin_He2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levofloxacin_Setiawan2022_mean&quot;,&quot;label&quot;:&quot;Setiawan_2022_mean&quot;,&quot;href&quot;:&quot;drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Levofloxacin_Setiawan2022_median&quot;,&quot;label&quot;:&quot;Setiawan_2022_median&quot;,&quot;href&quot;:&quot;drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_median.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levofloxacin_Setiawan2022_shrink&quot;,&quot;label&quot;:&quot;Setiawan_2022_shrink&quot;,&quot;href&quot;:&quot;drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_shrink.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levofloxacin_Setiawan2022_mean&quot;,&quot;label&quot;:&quot;Setiawan_2022_mean&quot;,&quot;href&quot;:&quot;drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Levofloxacin_Setiawan2022_mean&quot;,&quot;label&quot;:&quot;Setiawan_2022_mean&quot;,&quot;href&quot;:&quot;drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Levofloxacin_Setiawan2022_median&quot;,&quot;label&quot;:&quot;Setiawan_2022_median&quot;,&quot;href&quot;:&quot;drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_median.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levofloxacin_Setiawan2022_median&quot;,&quot;label&quot;:&quot;Setiawan_2022_median&quot;,&quot;href&quot;:&quot;drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_median.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levofloxacin_He2024_reference&quot;,&quot;label&quot;:&quot;He_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_levofloxacin/Levofloxacin_He2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # levofloxacin — `Levofloxacin_Setiawan2022_mean`
 
-> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
@@ -16,37 +16,61 @@
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-17 15:08:42.431977+00:00) predates the upstream re-run (2026-09-18 06:01:42.675294+00:00). Current validate status: `not captured`.
-
 ## Citation
 Setiawan E; Abdul-Aziz MH; Cotta MO; Susaniwati S; Cahjono H; Sari IY; et al. et al. (2022). Scientific reports 12
   ·  DOI: [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1)
 
 ## Model component
-<dbs-pgx drug="levofloxacin" model-id="Levofloxacin_Setiawan2022_mean" status="" stale="true" population="hospitalized adult patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<dbs-pgx drug="levofloxacin" model-id="Levofloxacin_Setiawan2022_mean" status="curated_candidate" stale="false" population="hospitalized adult patients" measured-compound="levofloxacin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Parameterization:** not captured.
+**Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Vc (L) | `Q63` · V1 | 27.6 | L | 0.027600000000000003 | [l] | not captured | exact (1.0) | Tab2:row2:col1 | — | not captured |
+| CL (L/h) | `Q22` · CL | 1.12 | L/h | 3.111111111111111e-07 | [l] / [h] | not captured | exact (1.0) | Tab2:row3:col1 | — | not captured |
+| Q (L/h) | `Q30` · Q | 30.9 | L/h | 8.583333333333333e-06 | [l] / [h] | not captured | exact (1.0) | Tab2:row4:col1 | — | not captured |
+| Vp (L) | `Q64` · V2 | 28.2 | L | 0.0282 | [l] | not captured | exact (1.0) | Tab2:row5:col1 | — | not captured |
 
-_No resolved parameters._
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=levofloxacin
-- population split: 'mean' subgroup of Setiawan_2022 (paper reports 3 populations: mean, median, shrink (%))
+- population split: 'mean' subgroup of Setiawan_2022 (paper reports 2 populations: mean, median)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
 
 ## Validation
 
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row4:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row2:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row5:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.12 | not captured | not captured | ['Tab2:row3:col1'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.12 L/h | not captured | not captured | ['Tab2:row3:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 27.6 L | not captured | not captured | ['Tab2:row2:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 28.2 L | not captured | not captured | ['Tab2:row5:col1'] |
+
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=levofloxacin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
@@ -73,7 +97,7 @@ _No resolved parameters._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean/Levofloxacin_Setiawan2022_mean_modelica.zip" download>Levofloxacin_Setiawan2022_mean_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean/Levofloxacin_Setiawan2022_mean_fmi.zip" download>Levofloxacin_Setiawan2022_mean_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean/Levofloxacin_Setiawan2022_mean_matlab.zip" download>Levofloxacin_Setiawan2022_mean_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean/Levofloxacin_Setiawan2022_mean_matlab_simbio.zip" download>Levofloxacin_Setiawan2022_mean_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean/Levofloxacin_Setiawan2022_mean_sbml.zip" download>Levofloxacin_Setiawan2022_mean_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>

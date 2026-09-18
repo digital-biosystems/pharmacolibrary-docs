@@ -1,29 +1,32 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;nizatidine&quot;,&quot;href&quot;:&quot;drugs/drug_nizatidine/&quot;},{&quot;label&quot;:&quot;Abdel-Rahman_2004 \u00b7 children and adults&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nizatidine_AbdelRahman2004_reference&quot;,&quot;label&quot;:&quot;Abdel-Rahman_2004_children and adults&quot;,&quot;href&quot;:&quot;drugs/drug_nizatidine/Nizatidine_AbdelRahman2004_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;nizatidine&quot;,&quot;href&quot;:&quot;drugs/drug_nizatidine/&quot;},{&quot;label&quot;:&quot;Abdel-Rahman_2004 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nizatidine_AbdelRahman2004_reference&quot;,&quot;label&quot;:&quot;Abdel-Rahman_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nizatidine/Nizatidine_AbdelRahman2004_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nizatidine — `Nizatidine_AbdelRahman2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
 ### Reviewer guidance
 
-**What is wrong:** every check the reviewer could run passed
+> ⚙️ **Pipeline limitation — fulltext.** the record was built from the abstract alone, so reported summary statistics stood in for a fitted model<br><sub>evidence: `provenance.source=abstract-only`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** every check the reviewer could run passed.
 
 **Steps:**
-1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+1. Not a curation fix — fulltext limitation.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **curator** · guidance written by playbook</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-11 08:47:02.249634+00:00) predates the upstream re-run (2026-09-18 06:23:08.699360+00:00). Current validate status: `rejected`.
 
 ## Citation
 Abdel-Rahman SM; Johnson FK; Connor JD; Staiano A; Dupont C; Tolia V; et al. et al. (2004). Journal of pediatric gastroenterology and nutrition 38
   ·  DOI: [10.1097/00005176-200404000-00015](https://doi.org/10.1097/00005176-200404000-00015)
 
 ## Model component
-<dbs-pgx drug="nizatidine" model-id="Nizatidine_AbdelRahman2004_reference" status="rejected" stale="true" population="children and adults" measured-compound="nizatidine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="nizatidine" model-id="Nizatidine_AbdelRahman2004_reference" status="rejected" stale="false" population="children and adults" measured-compound="nizatidine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -75,7 +78,7 @@ _No resolved parameters._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_nizatidine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Abdel-Rahman_2004` / `Abdel-Rahman_2004::children and adults`)
+- scholar stages: `../../../knowledgebase/drugs/drug_nizatidine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Abdel-Rahman_2004` / `Abdel-Rahman_2004::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 21:16 | 0:44 | 0/0/0 | 0/0/0 | 0/0/0 | 1,229/314 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-18 09:21 | 0:56 | 0/0/0 | 0/0/0 | 0/0/0 | 3,474/321 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -36,13 +36,13 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Berg_1987.pdf` | Berg G et al., Effects of different phosphodiesterase-…, Archives internationales de… (1987) | pd | 4 | not captured | [3446047](https://www.ncbi.nlm.nih.gov/pubmed/3446047) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-15T21:16:04.604793+00:00</sub>
+<sub>queue written 2026-09-18T09:21:15.409678+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Berg_1987 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of phosphodiesterase inhibitors on myometrium, not a pharmacokinetic study reporting quantitative disposition parameters for moxaverine. |
+| popPK | Berg_1987 | irrelevant | 0 | 0 | no_text gate: only 103 chars of text extracted (&lt; 400) |
 | PD | Berg_1987 | not_relevant | 0 | 0 | The paper studies phosphodiesterase inhibitors on myometrium in vitro and does not mention moxaverine or report any exposure-response or dose-response data for it. |
 | popPK | Girgis_1993 | irrelevant | 0 | 0 | The paper describes an analytical HPLC method for quantifying moxaverine and does not report any pharmacokinetic parameters. |
 | PD | Girgis_1993 | not_relevant | 0 | 0 | The paper describes a liquid chromatography method for quantifying moxaverine and other congeners, containing no pharmacodynamic or exposure-response data. |

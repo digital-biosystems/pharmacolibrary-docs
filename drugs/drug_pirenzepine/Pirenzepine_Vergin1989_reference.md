@@ -1,28 +1,31 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;pirenzepine&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/&quot;},{&quot;label&quot;:&quot;Vergin_1989 \u00b7 healthy adults&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pirenzepine_Vergin1986_reference&quot;,&quot;label&quot;:&quot;Vergin_1986_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/Pirenzepine_Vergin1986_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pirenzepine_Vergin1989_reference&quot;,&quot;label&quot;:&quot;Vergin_1989_healthy adults&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/Pirenzepine_Vergin1989_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;pirenzepine&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/&quot;},{&quot;label&quot;:&quot;Vergin_1989 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pirenzepine_Vergin1986_reference&quot;,&quot;label&quot;:&quot;Vergin_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/Pirenzepine_Vergin1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pirenzepine_Vergin1989_reference&quot;,&quot;label&quot;:&quot;Vergin_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/Pirenzepine_Vergin1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pirenzepine — `Pirenzepine_Vergin1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
 ### Reviewer guidance
 
-**What is wrong:** every check the reviewer could run passed
+> ⚙️ **Pipeline limitation — fulltext.** the record was built from the abstract alone, so reported summary statistics stood in for a fitted model<br><sub>evidence: `provenance.source=abstract-only`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** every check the reviewer could run passed.
 
 **Steps:**
-1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+1. Not a curation fix — fulltext limitation.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **curator** · guidance written by playbook</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-11 08:47:04.859447+00:00) predates the upstream re-run (2026-09-18 06:21:01.232023+00:00). Current validate status: `rejected`.
 
 ## Citation
 Vergin H; Herrlinger C; Gugler R et al. (1989). Arzneimittel-Forschung 39
 
 ## Model component
-<dbs-pgx drug="pirenzepine" model-id="Pirenzepine_Vergin1989_reference" status="rejected" stale="true" population="healthy adults" measured-compound="pirenzepine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="pirenzepine" model-id="Pirenzepine_Vergin1989_reference" status="rejected" stale="false" population="healthy adults" measured-compound="pirenzepine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -73,7 +76,7 @@ _No resolved parameters._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_pirenzepine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vergin_1989` / `Vergin_1989::healthy adults`)
+- scholar stages: `../../../knowledgebase/drugs/drug_pirenzepine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Vergin_1989` / `Vergin_1989::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

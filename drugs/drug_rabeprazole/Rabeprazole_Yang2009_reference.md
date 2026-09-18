@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;rabeprazole&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/&quot;},{&quot;label&quot;:&quot;Yang_2009 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rabeprazole_Sheng2010_reference&quot;,&quot;label&quot;:&quot;Sheng_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/Rabeprazole_Sheng2010_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rabeprazole_Yang2009_reference&quot;,&quot;label&quot;:&quot;Yang_2009_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/Rabeprazole_Yang2009_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rabeprazole_Sheng2010_reference&quot;,&quot;label&quot;:&quot;Sheng_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/Rabeprazole_Sheng2010_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rabeprazole_Yang2009_reference&quot;,&quot;label&quot;:&quot;Yang_2009_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rabeprazole/Rabeprazole_Yang2009_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rabeprazole — `Rabeprazole_Yang2009_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
 ### Reviewer guidance
 
@@ -16,14 +16,12 @@
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 15:08:57.389779+00:00) predates the upstream re-run (2026-09-18 06:30:39.258783+00:00). Current validate status: `rejected`.
-
 ## Citation
 Yang JC; Yang YF; Uang YS; Lin CJ; Wang TH et al. (2009). British journal of clinical pharmacology 67
   ·  DOI: [10.1111/j.1365-2125.2009.03393.x](https://doi.org/10.1111/j.1365-2125.2009.03393.x)
 
 ## Model component
-<dbs-pgx drug="rabeprazole" model-id="Rabeprazole_Yang2009_reference" status="rejected" stale="true" population="adults with H. pylori infection" measured-compound="rabeprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="rabeprazole" model-id="Rabeprazole_Yang2009_reference" status="rejected" stale="false" population="adults with H. pylori infection" measured-compound="rabeprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 

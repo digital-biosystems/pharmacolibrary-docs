@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Papaverine_Ritschel1977_man&quot;,&quot;label&quot;:&quot;Ritschel_1977_man&quot;,&quot;href&quot;:&quot;drugs/drug_papaverine/Papaverine_Ritschel1977_man.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Papaverine_Ritschel1977_reference&quot;,&quot;label&quot;:&quot;Ritschel_1977_reference&quot;,&quot;href&quot;:&quot;drugs/drug_papaverine/Papaverine_Ritschel1977_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tracheal contraction — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -16,6 +16,7 @@ not matched (stem Rehman_2022)
 | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|
 | Skin Permeability — Model Name | `Q100` · not captured | -2.116 | not captured | not captured | llm (not captured) | molecules-27-01360-t004:row4:col1 |
+| D — Predicted Value | `Q310` · not captured | 0.247 | not captured | not captured | exact (not captured) | molecules-27-01360-t004:row8:col2 |
 | Fraction unbound (human) — Model Name | `Q46` · not captured | 0.421 | human | not captured | exact (not captured) | molecules-27-01360-t004:row9:col1 |
 | E — Predicted Value | `Q38` · not captured | 0.085 | not captured | not captured | exact (not captured) | molecules-27-01360-t004:row19:col2 |
 | EC50 | `Q321` · not captured | 0.62 | mg/mL | not captured | review_gapfill (not captured) | Rehman_2022:review |
