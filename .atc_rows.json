@@ -1,5 +1,5 @@
 {
- "kb_mtime": 1789715154.4308388,
+ "kb_mtime": 1789731915.7513,
  "rows": {
   "13c_urea": {
    "abstract_only": 3,
@@ -104,7 +104,7 @@
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 39.5,
+   "elapsed_s": 45.2,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -137,8 +137,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 980,
-   "tokens_out": 438
+   "tokens_in": 1565,
+   "tokens_out": 372
   },
   "4_aminosalicylic_acid": {
    "abstract_only": 4,
@@ -2619,26 +2619,26 @@
    "tokens_out": null
   },
   "acotiamide": {
-   "abstract_only": 24,
+   "abstract_only": 33,
    "backend": "ollama",
-   "calls": 49,
+   "calls": 130,
    "combination": null,
    "curated_models": 0,
    "drug": "acotiamide",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 628.0,
+   "elapsed_s": 548.1,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
    "interactions": 0,
-   "jats": 7,
+   "jats": 9,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 24,
+   "no_pdf": 33,
    "non_oa": 0,
-   "oa": 8,
-   "papers": 32,
+   "oa": 10,
+   "papers": 43,
    "pd_extracted": 1,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -2661,10 +2661,10 @@
    "review_records": 0,
    "src_pd_jats": 1,
    "supp_nonmem": 0,
-   "supp_other": 0,
+   "supp_other": 1,
    "supp_pd_none": 1,
-   "tokens_in": 82032,
-   "tokens_out": 5058
+   "tokens_in": 242250,
+   "tokens_out": 6495
   },
   "acriflavinium_chloride": {
    "abstract_only": 1,
@@ -5271,14 +5271,14 @@
   "alizapride": {
    "abstract_only": 36,
    "backend": "ollama",
-   "calls": 49,
+   "calls": 110,
    "combination": null,
    "curated_models": 0,
    "drug": "alizapride",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 667.2,
+   "elapsed_s": 326.6,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -5305,14 +5305,14 @@
    "poppk_extracted": 0,
    "poppk_other": 0,
    "poppk_rejected": 0,
-   "relevant": 3,
+   "relevant": 2,
    "reused_cache": false,
    "review_papers": 0,
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 53085,
-   "tokens_out": 3952
+   "tokens_in": 123318,
+   "tokens_out": 5910
   },
   "allobarbital": {
    "abstract_only": 0,
@@ -5792,7 +5792,7 @@
   "alosetron": {
    "abstract_only": 21,
    "backend": "ollama",
-   "calls": 36,
+   "calls": 44,
    "combination": null,
    "curated_models": 0,
    "drug": "alosetron",
@@ -5800,7 +5800,7 @@
     "approved",
     "withdrawn"
    ],
-   "elapsed_s": 409.1,
+   "elapsed_s": 223.1,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -5833,8 +5833,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 22807,
-   "tokens_out": 2339
+   "tokens_in": 29281,
+   "tokens_out": 2597
   },
   "aloxiprin": {
    "abstract_only": 21,
@@ -6897,7 +6897,7 @@
   "alverine": {
    "abstract_only": 4,
    "backend": "ollama",
-   "calls": 5,
+   "calls": 66,
    "combination": null,
    "curated_models": 0,
    "drug": "alverine",
@@ -6906,17 +6906,17 @@
     "investigational",
     "withdrawn"
    ],
-   "elapsed_s": 125.5,
+   "elapsed_s": 334.8,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
    "interactions": 0,
-   "jats": 1,
+   "jats": 3,
    "model": "qwen3.8:27b-mtp-q8_0",
    "no_pdf": 3,
    "non_oa": 0,
-   "oa": 3,
-   "papers": 6,
+   "oa": 5,
+   "papers": 8,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -6930,17 +6930,19 @@
    "pgx_review_models": 0,
    "pk_gapfill": 0,
    "pk_review_models": 0,
-   "poppk_extracted": 0,
+   "poppk_extracted": 1,
    "poppk_other": 0,
-   "poppk_rejected": 0,
-   "relevant": 0,
+   "poppk_rejected": 6,
+   "relevant": 2,
    "reused_cache": false,
-   "review_papers": 0,
-   "review_records": 0,
+   "review_papers": 1,
+   "review_records": 23,
+   "src_pk_jats": 1,
    "supp_nonmem": 0,
-   "supp_other": 2,
-   "tokens_in": 14872,
-   "tokens_out": 794
+   "supp_other": 4,
+   "supp_pk_other": 1,
+   "tokens_in": 89196,
+   "tokens_out": 7660
   },
   "alverine_combinations": {
    "abstract_only": 0,
@@ -14431,7 +14433,7 @@
   "atropine": {
    "abstract_only": 7,
    "backend": "ollama",
-   "calls": 53,
+   "calls": 34,
    "combination": null,
    "curated_models": 0,
    "drug": "atropine",
@@ -14440,7 +14442,7 @@
     "investigational",
     "vet_approved"
    ],
-   "elapsed_s": 402.2,
+   "elapsed_s": 86.8,
    "eu_status": "authorised_eu_central",
    "grobid": 0,
    "has_truth": false,
@@ -14466,7 +14468,7 @@
    "pk_review_models": 0,
    "poppk_extracted": 1,
    "poppk_other": 0,
-   "poppk_rejected": 2,
+   "poppk_rejected": 3,
    "relevant": 4,
    "reused_cache": false,
    "review_papers": 0,
@@ -14475,8 +14477,8 @@
    "supp_nonmem": 0,
    "supp_other": 0,
    "supp_pk_none": 1,
-   "tokens_in": 48543,
-   "tokens_out": 17167
+   "tokens_in": 37367,
+   "tokens_out": 1055
   },
   "atropine_and_psycholeptics": {
    "abstract_only": 0,
@@ -16993,22 +16995,22 @@
   "belladonna_total_alkaloids": {
    "abstract_only": 38,
    "backend": "ollama",
-   "calls": 44,
+   "calls": 127,
    "combination": null,
    "curated_models": 0,
    "drug": "belladonna_total_alkaloids",
    "drugbank_groups": [],
-   "elapsed_s": 533.6,
+   "elapsed_s": 402.9,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
    "interactions": 0,
-   "jats": 3,
+   "jats": 4,
    "model": "qwen3.8:27b-mtp-q8_0",
    "no_pdf": 38,
    "non_oa": 0,
-   "oa": 3,
-   "papers": 41,
+   "oa": 4,
+   "papers": 42,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -17031,8 +17033,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 50827,
-   "tokens_out": 2564
+   "tokens_in": 161830,
+   "tokens_out": 6793
   },
   "belladonna_total_alkaloids_and_psycholeptics": {
    "abstract_only": 0,
@@ -18559,14 +18561,14 @@
   "benzilone": {
    "abstract_only": 1,
    "backend": "ollama",
-   "calls": 4,
+   "calls": 3,
    "combination": null,
    "curated_models": 0,
    "drug": "benzilone",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 99.3,
+   "elapsed_s": 47.4,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -18599,8 +18601,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 1422,
-   "tokens_out": 3532
+   "tokens_in": 1703,
+   "tokens_out": 198
   },
   "benziodarone": {
    "abstract_only": 5,
@@ -20270,14 +20272,14 @@
   "bevonium": {
    "abstract_only": 3,
    "backend": "ollama",
-   "calls": 6,
+   "calls": 5,
    "combination": null,
    "curated_models": 0,
    "drug": "bevonium",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 74.4,
+   "elapsed_s": 33.4,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -20310,8 +20312,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 2545,
-   "tokens_out": 938
+   "tokens_in": 3751,
+   "tokens_out": 233
   },
   "bevonium_and_analgesics": {
    "abstract_only": 0,
@@ -23662,14 +23664,14 @@
   "bromopride": {
    "abstract_only": 4,
    "backend": "ollama",
-   "calls": 9,
+   "calls": 12,
    "combination": null,
    "curated_models": 0,
    "drug": "bromopride",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 53.0,
+   "elapsed_s": 32.1,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -23693,17 +23695,19 @@
    "pgx_review_models": 0,
    "pk_gapfill": 0,
    "pk_review_models": 0,
-   "poppk_extracted": 0,
+   "poppk_extracted": 1,
    "poppk_other": 0,
    "poppk_rejected": 0,
    "relevant": 3,
    "reused_cache": false,
    "review_papers": 0,
    "review_records": 0,
+   "src_pk_abstract_only": 1,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 6561,
-   "tokens_out": 505
+   "supp_pk_none": 1,
+   "tokens_in": 9892,
+   "tokens_out": 1013
   },
   "bromperidol": {
    "abstract_only": 3,
@@ -25386,9 +25390,9 @@
    "tokens_out": null
   },
   "butylscopolamine": {
-   "abstract_only": 18,
+   "abstract_only": 19,
    "backend": "ollama",
-   "calls": 46,
+   "calls": 62,
    "combination": null,
    "curated_models": 0,
    "drug": "butylscopolamine",
@@ -25397,17 +25401,17 @@
     "investigational",
     "vet_approved"
    ],
-   "elapsed_s": 779.3,
+   "elapsed_s": 287.6,
    "eu_status": "not_centrally_authorised",
    "grobid": 3,
    "has_truth": false,
    "interactions": 0,
    "jats": 2,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 18,
+   "no_pdf": 19,
    "non_oa": 0,
    "oa": 5,
-   "papers": 23,
+   "papers": 24,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -25430,8 +25434,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 57614,
-   "tokens_out": 18686
+   "tokens_in": 113331,
+   "tokens_out": 3831
   },
   "butylscopolamine_and_analgesics": {
    "abstract_only": 1,
@@ -27905,14 +27909,14 @@
   "camylofin": {
    "abstract_only": 16,
    "backend": "ollama",
-   "calls": 23,
+   "calls": 35,
    "combination": null,
    "curated_models": 0,
    "drug": "camylofin",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 266.7,
+   "elapsed_s": 103.8,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -27945,8 +27949,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 25737,
-   "tokens_out": 2145
+   "tokens_in": 50434,
+   "tokens_out": 1933
   },
   "camylofin_and_analgesics": {
    "abstract_only": 0,
@@ -30483,14 +30487,14 @@
   "caroverine": {
    "abstract_only": 4,
    "backend": "ollama",
-   "calls": 10,
+   "calls": 11,
    "combination": null,
    "curated_models": 0,
    "drug": "caroverine",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 146.6,
+   "elapsed_s": 158.3,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -30523,8 +30527,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 5234,
-   "tokens_out": 3688
+   "tokens_in": 6989,
+   "tokens_out": 600
   },
   "carteolol": {
    "abstract_only": 1,
@@ -32585,7 +32589,7 @@
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 89.0,
+   "elapsed_s": 38.0,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -32618,8 +32622,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 839,
-   "tokens_out": 3377
+   "tokens_in": 1424,
+   "tokens_out": 174
   },
   "chlordiazepoxide": {
    "abstract_only": 9,
@@ -34630,24 +34634,24 @@
   "cilansetron": {
    "abstract_only": 1,
    "backend": "ollama",
-   "calls": 7,
+   "calls": 12,
    "combination": null,
    "curated_models": 0,
    "drug": "cilansetron",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 180.8,
+   "elapsed_s": 122.8,
    "eu_status": "not_centrally_authorised",
-   "grobid": 0,
+   "grobid": 1,
    "has_truth": false,
    "interactions": 0,
    "jats": 1,
    "model": "qwen3.8:27b-mtp-q8_0",
    "no_pdf": 1,
    "non_oa": 0,
-   "oa": 1,
-   "papers": 2,
+   "oa": 2,
+   "papers": 3,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -34670,8 +34674,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 12557,
-   "tokens_out": 645
+   "tokens_in": 36581,
+   "tokens_out": 631
   },
   "cilazapril": {
    "abstract_only": 16,
@@ -35051,14 +35055,14 @@
   "cimetropium": {
    "abstract_only": 18,
    "backend": "ollama",
-   "calls": 26,
+   "calls": 62,
    "combination": null,
    "curated_models": 0,
    "drug": "cimetropium",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 297.1,
+   "elapsed_s": 197.0,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -35091,8 +35095,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 3,
-   "tokens_in": 32330,
-   "tokens_out": 2714
+   "tokens_in": 88232,
+   "tokens_out": 3365
   },
   "cimetropium_bromide": {
    "abstract_only": 2,
@@ -35104,7 +35108,7 @@
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 73.4,
+   "elapsed_s": 45.2,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -35137,8 +35141,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 4158,
-   "tokens_out": 666
+   "tokens_in": 5148,
+   "tokens_out": 527
   },
   "cimicifugae_rhizoma": {
    "abstract_only": 0,
@@ -35424,14 +35428,14 @@
   "cinitapride": {
    "abstract_only": 7,
    "backend": "ollama",
-   "calls": 12,
+   "calls": 26,
    "combination": null,
    "curated_models": 0,
    "drug": "cinitapride",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 166.6,
+   "elapsed_s": 161.5,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -35464,8 +35468,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 12909,
-   "tokens_out": 910
+   "tokens_in": 37744,
+   "tokens_out": 1700
   },
   "cinolazepam": {
    "abstract_only": 1,
@@ -36655,14 +36659,14 @@
   "clidinium": {
    "abstract_only": 3,
    "backend": "ollama",
-   "calls": 10,
+   "calls": 9,
    "combination": null,
    "curated_models": 0,
    "drug": "clidinium",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 108.2,
+   "elapsed_s": 53.8,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -36695,8 +36699,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 10317,
-   "tokens_out": 1151
+   "tokens_in": 10721,
+   "tokens_out": 663
   },
   "clidinium_and_psycholeptics": {
    "abstract_only": 0,
@@ -48781,26 +48785,26 @@
    "tokens_out": 2002
   },
   "dicycloverine": {
-   "abstract_only": 14,
+   "abstract_only": 16,
    "backend": "ollama",
-   "calls": 52,
+   "calls": 63,
    "combination": null,
    "curated_models": 0,
    "drug": "dicycloverine",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 331.0,
+   "elapsed_s": 250.7,
    "eu_status": "not_centrally_authorised",
-   "grobid": 1,
+   "grobid": 2,
    "has_truth": false,
    "interactions": 0,
    "jats": 3,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 14,
+   "no_pdf": 16,
    "non_oa": 0,
-   "oa": 4,
-   "papers": 18,
+   "oa": 5,
+   "papers": 21,
    "pd_extracted": 4,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -48825,8 +48829,8 @@
    "supp_nonmem": 0,
    "supp_other": 1,
    "supp_pd_none": 4,
-   "tokens_in": 67292,
-   "tokens_out": 2920
+   "tokens_in": 98395,
+   "tokens_out": 3372
   },
   "didanosine": {
    "abstract_only": 8,
@@ -49072,7 +49076,7 @@
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 37.0,
+   "elapsed_s": 35.1,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -49105,8 +49109,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 827,
-   "tokens_out": 213
+   "tokens_in": 1412,
+   "tokens_out": 168
   },
   "difenoxin": {
    "abstract_only": 3,
@@ -49672,14 +49676,14 @@
   "dihexyverine": {
    "abstract_only": 1,
    "backend": "ollama",
-   "calls": 5,
+   "calls": 4,
    "combination": null,
    "curated_models": 0,
    "drug": "dihexyverine",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 115.2,
+   "elapsed_s": 40.9,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -49712,8 +49716,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 1625,
-   "tokens_out": 4571
+   "tokens_in": 2094,
+   "tokens_out": 235
   },
   "dihydralazine_and_diuretics": {
    "abstract_only": 0,
@@ -50352,14 +50356,14 @@
   "diisopromine": {
    "abstract_only": 3,
    "backend": "ollama",
-   "calls": 5,
+   "calls": 6,
    "combination": null,
    "curated_models": 0,
    "drug": "diisopromine",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 120.0,
+   "elapsed_s": 41.8,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -50392,8 +50396,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 2359,
-   "tokens_out": 3613
+   "tokens_in": 3673,
+   "tokens_out": 347
   },
   "dilazep": {
    "abstract_only": 46,
@@ -50956,14 +50960,14 @@
   "dimethylaminopropionylphenothiazine": {
    "abstract_only": 8,
    "backend": "ollama",
-   "calls": 16,
+   "calls": 38,
    "combination": null,
    "curated_models": 0,
    "drug": "dimethylaminopropionylphenothiazine",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 183.7,
+   "elapsed_s": 120.7,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -50996,8 +51000,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 5,
-   "tokens_in": 38850,
-   "tokens_out": 1444
+   "tokens_in": 112235,
+   "tokens_out": 2217
   },
   "dimetindene": {
    "abstract_only": 1,
@@ -51325,9 +51329,9 @@
    "tokens_out": null
   },
   "diphemanil": {
-   "abstract_only": 4,
+   "abstract_only": 5,
    "backend": "ollama",
-   "calls": 12,
+   "calls": 17,
    "combination": null,
    "curated_models": 0,
    "drug": "diphemanil",
@@ -51336,17 +51340,17 @@
     "vet_approved",
     "withdrawn"
    ],
-   "elapsed_s": 210.1,
+   "elapsed_s": 95.9,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
    "interactions": 0,
    "jats": 1,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 4,
+   "no_pdf": 5,
    "non_oa": 0,
    "oa": 1,
-   "papers": 5,
+   "papers": 6,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -51369,8 +51373,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 14652,
-   "tokens_out": 7262
+   "tokens_in": 29368,
+   "tokens_out": 1035
   },
   "diphemanil_and_psycholeptics": {
    "abstract_only": 0,
@@ -54376,7 +54380,7 @@
   "drotaverine": {
    "abstract_only": 8,
    "backend": "ollama",
-   "calls": 15,
+   "calls": 19,
    "combination": null,
    "curated_models": 0,
    "drug": "drotaverine",
@@ -54384,7 +54388,7 @@
     "approved",
     "withdrawn"
    ],
-   "elapsed_s": 151.9,
+   "elapsed_s": 70.9,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -54411,14 +54415,14 @@
    "poppk_extracted": 0,
    "poppk_other": 0,
    "poppk_rejected": 0,
-   "relevant": 4,
+   "relevant": 3,
    "reused_cache": false,
    "review_papers": 0,
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 8384,
-   "tokens_out": 1025
+   "tokens_in": 12742,
+   "tokens_out": 1119
   },
   "drotrecogin_alfa": {
    "abstract_only": 42,
@@ -56903,14 +56907,14 @@
   "emepronium": {
    "abstract_only": 4,
    "backend": "ollama",
-   "calls": 9,
+   "calls": 7,
    "combination": null,
    "curated_models": 0,
    "drug": "emepronium",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 84.3,
+   "elapsed_s": 24.6,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -56936,15 +56940,15 @@
    "pk_review_models": 0,
    "poppk_extracted": 0,
    "poppk_other": 0,
-   "poppk_rejected": 0,
-   "relevant": 2,
+   "poppk_rejected": 1,
+   "relevant": 1,
    "reused_cache": false,
    "review_papers": 0,
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 4939,
-   "tokens_out": 1290
+   "tokens_in": 4659,
+   "tokens_out": 376
   },
   "emepronium_and_psycholeptics": {
    "abstract_only": 0,
@@ -65232,7 +65236,7 @@
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 118.6,
+   "elapsed_s": 46.5,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -65265,8 +65269,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 3357,
-   "tokens_out": 3714
+   "tokens_in": 4359,
+   "tokens_out": 396
   },
   "fenoxazoline": {
    "abstract_only": 0,
@@ -65370,7 +65374,7 @@
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 37.8,
+   "elapsed_s": 33.4,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -65403,20 +65407,20 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 827,
-   "tokens_out": 214
+   "tokens_in": 1412,
+   "tokens_out": 168
   },
   "fenpiverinium": {
    "abstract_only": 9,
    "backend": "ollama",
-   "calls": 14,
+   "calls": 25,
    "combination": null,
    "curated_models": 0,
    "drug": "fenpiverinium",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 234.5,
+   "elapsed_s": 67.4,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -65449,8 +65453,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 8303,
-   "tokens_out": 7912
+   "tokens_in": 16860,
+   "tokens_out": 1322
   },
   "fenspiride": {
    "abstract_only": 1,
@@ -65692,7 +65696,7 @@
   "fentonium": {
    "abstract_only": 15,
    "backend": "ollama",
-   "calls": 23,
+   "calls": 62,
    "combination": null,
    "curated_models": 0,
    "drug": "fentonium",
@@ -65700,7 +65704,7 @@
     "approved",
     "withdrawn"
    ],
-   "elapsed_s": 361.6,
+   "elapsed_s": 258.5,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -65733,8 +65737,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 4,
-   "tokens_in": 47296,
-   "tokens_out": 1481
+   "tokens_in": 140097,
+   "tokens_out": 3121
   },
   "feprazone": {
    "abstract_only": 3,
@@ -76195,7 +76199,7 @@
   "glycopyrronium": {
    "abstract_only": 6,
    "backend": "ollama",
-   "calls": 73,
+   "calls": 83,
    "combination": null,
    "curated_models": 0,
    "drug": "glycopyrronium",
@@ -76204,7 +76208,7 @@
     "investigational",
     "vet_approved"
    ],
-   "elapsed_s": 376.2,
+   "elapsed_s": 229.9,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -76228,30 +76232,29 @@
    "pgx_review_models": 0,
    "pk_gapfill": 0,
    "pk_review_models": 0,
-   "poppk_extracted": 2,
-   "poppk_other": 0,
-   "poppk_rejected": 2,
+   "poppk_extracted": 1,
+   "poppk_other": 2,
+   "poppk_rejected": 1,
    "relevant": 8,
    "reused_cache": false,
    "review_papers": 0,
    "review_records": 0,
    "src_pk_grobid": 1,
-   "src_pk_jats": 1,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "supp_pk_none": 2,
-   "tokens_in": 84635,
-   "tokens_out": 11341
+   "supp_pk_none": 1,
+   "tokens_in": 102643,
+   "tokens_out": 8782
   },
   "glycopyrronium_bromide": {
    "abstract_only": 1,
    "backend": "ollama",
-   "calls": 29,
+   "calls": 52,
    "combination": null,
    "curated_models": 0,
    "drug": "glycopyrronium_bromide",
    "drugbank_groups": [],
-   "elapsed_s": 157.1,
+   "elapsed_s": 80.9,
    "eu_status": "authorised_eu_central",
    "grobid": 1,
    "has_truth": false,
@@ -76276,7 +76279,7 @@
    "pk_gapfill": 0,
    "pk_review_models": 0,
    "poppk_extracted": 1,
-   "poppk_other": 0,
+   "poppk_other": 2,
    "poppk_rejected": 0,
    "relevant": 1,
    "reused_cache": false,
@@ -76286,8 +76289,8 @@
    "supp_nonmem": 0,
    "supp_other": 0,
    "supp_pk_none": 1,
-   "tokens_in": 32846,
-   "tokens_out": 2107
+   "tokens_in": 60516,
+   "tokens_out": 1106
   },
   "glycopyrronium_bromide_and_psycholeptics": {
    "abstract_only": 0,
@@ -78812,7 +78815,7 @@
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 112.2,
+   "elapsed_s": 49.5,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -78847,8 +78850,8 @@
    "supp_nonmem": 0,
    "supp_other": 0,
    "supp_pd_none": 1,
-   "tokens_in": 11916,
-   "tokens_out": 2446
+   "tokens_in": 25921,
+   "tokens_out": 514
   },
   "hexoprenaline": {
    "abstract_only": 1,
@@ -79036,14 +79039,14 @@
   "homatropine_methylbromide": {
    "abstract_only": 4,
    "backend": "ollama",
-   "calls": 11,
+   "calls": 15,
    "combination": null,
    "curated_models": 0,
    "drug": "homatropine_methylbromide",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 109.6,
+   "elapsed_s": 57.3,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -79076,8 +79079,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 13116,
-   "tokens_out": 886
+   "tokens_in": 29116,
+   "tokens_out": 926
   },
   "homatropine_methylbromide_and_psycholeptics": {
    "abstract_only": 0,
@@ -80980,27 +80983,27 @@
    "tokens_out": 7343
   },
   "hyoscyamine": {
-   "abstract_only": 108,
+   "abstract_only": 133,
    "backend": "ollama",
-   "calls": 251,
+   "calls": 372,
    "combination": null,
    "curated_models": 0,
    "drug": "hyoscyamine",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 2552.7,
+   "elapsed_s": 2279.6,
    "eu_status": "not_centrally_authorised",
-   "grobid": 8,
+   "grobid": 13,
    "has_truth": false,
    "interactions": 0,
-   "jats": 27,
+   "jats": 28,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 108,
-   "non_oa": 0,
-   "oa": 36,
-   "papers": 144,
-   "pd_extracted": 7,
+   "no_pdf": 133,
+   "non_oa": 2,
+   "oa": 40,
+   "papers": 175,
+   "pd_extracted": 9,
    "pd_gapfill": 0,
    "pd_other": 0,
    "pd_rejected": 2,
@@ -81016,18 +81019,18 @@
    "poppk_extracted": 0,
    "poppk_other": 0,
    "poppk_rejected": 0,
-   "relevant": 23,
+   "relevant": 30,
    "reused_cache": false,
    "review_papers": 0,
    "review_records": 0,
-   "src_pd_grobid": 2,
+   "src_pd_grobid": 4,
    "src_pd_jats": 5,
    "supp_nonmem": 0,
    "supp_other": 7,
-   "supp_pd_none": 5,
+   "supp_pd_none": 7,
    "supp_pd_other": 2,
-   "tokens_in": 389784,
-   "tokens_out": 12450
+   "tokens_in": 701616,
+   "tokens_out": 18330
   },
   "hyoscyamine_and_psycholeptics": {
    "abstract_only": 0,
@@ -81926,7 +81929,7 @@
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 70.9,
+   "elapsed_s": 32.6,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -81959,8 +81962,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 833,
-   "tokens_out": 2586
+   "tokens_in": 1418,
+   "tokens_out": 168
   },
   "idarubicin": {
    "abstract_only": 5,
@@ -87058,14 +87061,14 @@
   "isometheptene": {
    "abstract_only": 4,
    "backend": "ollama",
-   "calls": 4,
+   "calls": 8,
    "combination": null,
    "curated_models": 0,
    "drug": "isometheptene",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 92.4,
+   "elapsed_s": 55.9,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -87098,8 +87101,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 7337,
-   "tokens_out": 596
+   "tokens_in": 20570,
+   "tokens_out": 598
   },
   "isoniazid": {
    "abstract_only": 0,
@@ -87378,7 +87381,7 @@
   "isopropamide": {
    "abstract_only": 4,
    "backend": "ollama",
-   "calls": 12,
+   "calls": 14,
    "combination": null,
    "curated_models": 0,
    "drug": "isopropamide",
@@ -87387,7 +87390,7 @@
     "vet_approved",
     "withdrawn"
    ],
-   "elapsed_s": 108.9,
+   "elapsed_s": 57.5,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -87420,8 +87423,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 15536,
-   "tokens_out": 845
+   "tokens_in": 30334,
+   "tokens_out": 888
   },
   "isopropamide_and_psycholeptics": {
    "abstract_only": 0,
@@ -99055,9 +99058,9 @@
    "tokens_out": null
   },
   "mebeverine": {
-   "abstract_only": 13,
+   "abstract_only": 14,
    "backend": "ollama",
-   "calls": 34,
+   "calls": 51,
    "combination": null,
    "curated_models": 0,
    "drug": "mebeverine",
@@ -99066,17 +99069,17 @@
     "investigational",
     "withdrawn"
    ],
-   "elapsed_s": 344.0,
+   "elapsed_s": 194.0,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
    "interactions": 0,
    "jats": 6,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 13,
+   "no_pdf": 14,
    "non_oa": 0,
    "oa": 6,
-   "papers": 19,
+   "papers": 20,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -99093,14 +99096,14 @@
    "poppk_extracted": 0,
    "poppk_other": 0,
    "poppk_rejected": 0,
-   "relevant": 5,
+   "relevant": 4,
    "reused_cache": false,
    "review_papers": 0,
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 56431,
-   "tokens_out": 2197
+   "tokens_in": 92419,
+   "tokens_out": 3056
   },
   "mebutamate": {
    "abstract_only": 0,
@@ -100642,9 +100645,9 @@
    "tokens_out": null
   },
   "menthae_piperitae_aetheroleum": {
-   "abstract_only": 32,
+   "abstract_only": 38,
    "backend": "ollama",
-   "calls": 58,
+   "calls": 170,
    "combination": null,
    "curated_models": 0,
    "drug": "menthae_piperitae_aetheroleum",
@@ -100652,17 +100655,17 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 980.5,
+   "elapsed_s": 748.9,
    "eu_status": "not_centrally_authorised",
-   "grobid": 4,
+   "grobid": 5,
    "has_truth": false,
    "interactions": 0,
    "jats": 16,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 32,
+   "no_pdf": 38,
    "non_oa": 0,
-   "oa": 20,
-   "papers": 52,
+   "oa": 21,
+   "papers": 59,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -100685,8 +100688,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 6,
-   "tokens_in": 150695,
-   "tokens_out": 7163
+   "tokens_in": 457676,
+   "tokens_out": 10583
   },
   "mepacrine": {
    "abstract_only": 31,
@@ -100783,7 +100786,7 @@
   "mepenzolate": {
    "abstract_only": 1,
    "backend": "ollama",
-   "calls": 10,
+   "calls": 15,
    "combination": null,
    "curated_models": 0,
    "drug": "mepenzolate",
@@ -100791,7 +100794,7 @@
     "approved",
     "withdrawn"
    ],
-   "elapsed_s": 121.6,
+   "elapsed_s": 66.7,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -100824,8 +100827,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 22033,
-   "tokens_out": 683
+   "tokens_in": 39403,
+   "tokens_out": 907
   },
   "mephenoxalone": {
    "abstract_only": 1,
@@ -103986,14 +103989,14 @@
   "methantheline": {
    "abstract_only": 4,
    "backend": "ollama",
-   "calls": 10,
+   "calls": 11,
    "combination": null,
    "curated_models": 0,
    "drug": "methantheline",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 117.4,
+   "elapsed_s": 50.4,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -104026,8 +104029,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 4606,
-   "tokens_out": 2076
+   "tokens_in": 6818,
+   "tokens_out": 671
   },
   "methaqualone": {
    "abstract_only": 2,
@@ -104932,26 +104935,26 @@
    "tokens_out": null
   },
   "methylatropine": {
-   "abstract_only": 31,
+   "abstract_only": 32,
    "backend": "ollama",
-   "calls": 79,
+   "calls": 106,
    "combination": null,
    "curated_models": 0,
    "drug": "methylatropine",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 698.5,
+   "elapsed_s": 393.1,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
    "interactions": 0,
    "jats": 2,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 31,
+   "no_pdf": 32,
    "non_oa": 0,
    "oa": 2,
-   "papers": 33,
+   "papers": 34,
    "pd_extracted": 1,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -104976,8 +104979,8 @@
    "supp_nonmem": 0,
    "supp_other": 1,
    "supp_pd_none": 1,
-   "tokens_in": 83221,
-   "tokens_out": 10553
+   "tokens_in": 127094,
+   "tokens_out": 5816
   },
   "methylcellulose": {
    "abstract_only": 95,
@@ -105908,14 +105911,14 @@
   "methylscopolamine": {
    "abstract_only": 63,
    "backend": "ollama",
-   "calls": 113,
+   "calls": 193,
    "combination": null,
    "curated_models": 0,
    "drug": "methylscopolamine",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 1052.8,
+   "elapsed_s": 700.4,
    "eu_status": "not_centrally_authorised",
    "grobid": 3,
    "has_truth": false,
@@ -105942,7 +105945,7 @@
    "poppk_extracted": 0,
    "poppk_other": 0,
    "poppk_rejected": 0,
-   "relevant": 15,
+   "relevant": 12,
    "reused_cache": false,
    "review_papers": 0,
    "review_records": 0,
@@ -105950,8 +105953,8 @@
    "supp_nonmem": 0,
    "supp_other": 1,
    "supp_pd_none": 1,
-   "tokens_in": 116512,
-   "tokens_out": 7332
+   "tokens_in": 235228,
+   "tokens_out": 11832
   },
   "methylscopolamine_and_psycholeptics": {
    "abstract_only": 0,
@@ -110509,14 +110512,14 @@
   "moxaverine": {
    "abstract_only": 2,
    "backend": "ollama",
-   "calls": 3,
+   "calls": 6,
    "combination": null,
    "curated_models": 0,
    "drug": "moxaverine",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 44.4,
+   "elapsed_s": 56.5,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -110549,8 +110552,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 1229,
-   "tokens_out": 314
+   "tokens_in": 3474,
+   "tokens_out": 321
   },
   "moxifloxacin": {
    "abstract_only": 13,
@@ -114283,14 +114286,14 @@
   "nicofetamide": {
    "abstract_only": 19,
    "backend": "ollama",
-   "calls": 2,
+   "calls": 35,
    "combination": null,
    "curated_models": 0,
    "drug": "nicofetamide",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 26.2,
+   "elapsed_s": 121.9,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -114323,8 +114326,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 3,
-   "tokens_in": 1240,
-   "tokens_out": 312
+   "tokens_in": 82353,
+   "tokens_out": 1794
   },
   "nicofuranose": {
    "abstract_only": 0,
@@ -119289,7 +119292,7 @@
   "omeprazole": {
    "abstract_only": 118,
    "backend": "ollama",
-   "calls": 247,
+   "calls": 1007,
    "combination": null,
    "curated_models": 0,
    "drug": "omeprazole",
@@ -119298,7 +119301,7 @@
     "investigational",
     "vet_approved"
    ],
-   "elapsed_s": 623.5,
+   "elapsed_s": 3805.9,
    "eu_status": "not_centrally_authorised",
    "grobid": 27,
    "has_truth": false,
@@ -119317,13 +119320,13 @@
    "pdftext": 0,
    "pgx_extracted": 2,
    "pgx_gapfill": null,
-   "pgx_other": 9,
+   "pgx_other": 10,
    "pgx_rejected": 0,
    "pgx_review_models": 0,
    "pk_gapfill": 24,
    "pk_review_models": 14,
-   "poppk_extracted": 18,
-   "poppk_other": 4,
+   "poppk_extracted": 19,
+   "poppk_other": 3,
    "poppk_rejected": 1,
    "relevant": 52,
    "reused_cache": false,
@@ -119334,7 +119337,7 @@
    "src_pgx_grobid": 1,
    "src_pgx_jats": 1,
    "src_pk_abstract_only": 4,
-   "src_pk_grobid": 2,
+   "src_pk_grobid": 3,
    "src_pk_jats": 12,
    "supp_nonmem": 6,
    "supp_other": 24,
@@ -119342,13 +119345,13 @@
    "supp_pd_other": 5,
    "supp_pgx_none": 1,
    "supp_pgx_other": 1,
-   "supp_pk_none": 12,
+   "supp_pk_none": 13,
    "supp_pk_other": 6,
-   "tokens_in": 363413,
-   "tokens_out": 12638
+   "tokens_in": 1537073,
+   "tokens_out": 105663
   },
   "omeprazole_amoxicillin_and_clarithromycin": {
-   "abstract_only": 8,
+   "abstract_only": 16,
    "backend": null,
    "calls": null,
    "combination": "resolved",
@@ -119362,10 +119365,10 @@
    "interactions": 0,
    "jats": 1,
    "model": null,
-   "no_pdf": 8,
-   "non_oa": 0,
-   "oa": 2,
-   "papers": 10,
+   "no_pdf": 14,
+   "non_oa": 1,
+   "oa": 3,
+   "papers": 18,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -119392,7 +119395,7 @@
    "tokens_out": null
   },
   "omeprazole_amoxicillin_and_metronidazole": {
-   "abstract_only": 6,
+   "abstract_only": 11,
    "backend": null,
    "calls": null,
    "combination": "resolved",
@@ -119406,10 +119409,10 @@
    "interactions": 0,
    "jats": 1,
    "model": null,
-   "no_pdf": 6,
+   "no_pdf": 11,
    "non_oa": 0,
    "oa": 3,
-   "papers": 9,
+   "papers": 14,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -119480,7 +119483,7 @@
    "tokens_out": null
   },
   "omeprazole_combinations": {
-   "abstract_only": 28,
+   "abstract_only": 49,
    "backend": null,
    "calls": null,
    "combination": "resolved",
@@ -119494,10 +119497,10 @@
    "interactions": 0,
    "jats": 3,
    "model": null,
-   "no_pdf": 25,
+   "no_pdf": 42,
    "non_oa": 0,
-   "oa": 6,
-   "papers": 31,
+   "oa": 10,
+   "papers": 52,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -119519,7 +119522,7 @@
    "review_papers": 0,
    "review_records": 0,
    "supp_nonmem": 0,
-   "supp_other": 4,
+   "supp_other": 5,
    "tokens_in": null,
    "tokens_out": null
   },
@@ -121297,14 +121300,14 @@
   "otilonium": {
    "abstract_only": 37,
    "backend": "ollama",
-   "calls": 2,
+   "calls": 158,
    "combination": null,
    "curated_models": 0,
    "drug": "otilonium",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 51.2,
+   "elapsed_s": 547.3,
    "eu_status": "not_centrally_authorised",
    "grobid": 4,
    "has_truth": false,
@@ -121318,7 +121321,7 @@
    "pd_extracted": 1,
    "pd_gapfill": 0,
    "pd_other": 0,
-   "pd_rejected": 1,
+   "pd_rejected": 11,
    "pd_review_models": 0,
    "pdftext": 0,
    "pgx_extracted": 0,
@@ -121339,20 +121342,20 @@
    "supp_nonmem": 0,
    "supp_other": 5,
    "supp_pd_none": 1,
-   "tokens_in": 1160,
-   "tokens_out": 288
+   "tokens_in": 290570,
+   "tokens_out": 6657
   },
   "otilonium_bromide": {
    "abstract_only": 38,
    "backend": "ollama",
-   "calls": 9,
+   "calls": 156,
    "combination": null,
    "curated_models": 0,
    "drug": "otilonium_bromide",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 106.5,
+   "elapsed_s": 566.1,
    "eu_status": "not_centrally_authorised",
    "grobid": 3,
    "has_truth": false,
@@ -121366,7 +121369,7 @@
    "pd_extracted": 1,
    "pd_gapfill": 0,
    "pd_other": 0,
-   "pd_rejected": 25,
+   "pd_rejected": 31,
    "pd_review_models": 0,
    "pdftext": 0,
    "pgx_extracted": 0,
@@ -121387,8 +121390,8 @@
    "supp_nonmem": 0,
    "supp_other": 6,
    "supp_pd_none": 1,
-   "tokens_in": 12137,
-   "tokens_out": 469
+   "tokens_in": 282313,
+   "tokens_out": 6708
   },
   "otilonium_bromide_and_psycholeptics": {
    "abstract_only": 0,
@@ -123240,14 +123243,14 @@
   "oxyphencyclimine": {
    "abstract_only": 13,
    "backend": "ollama",
-   "calls": 2,
+   "calls": 52,
    "combination": null,
    "curated_models": 0,
    "drug": "oxyphencyclimine",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 28.4,
+   "elapsed_s": 262.9,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -123280,8 +123283,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 9,
-   "tokens_in": 1324,
-   "tokens_out": 198
+   "tokens_in": 125953,
+   "tokens_out": 2780
   },
   "oxyphencyclimine_and_psycholeptics": {
    "abstract_only": 0,
@@ -123379,14 +123382,14 @@
   "oxyphenonium": {
    "abstract_only": 28,
    "backend": "ollama",
-   "calls": 25,
+   "calls": 71,
    "combination": null,
    "curated_models": 0,
    "drug": "oxyphenonium",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 425.5,
+   "elapsed_s": 190.1,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -123419,8 +123422,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 17763,
-   "tokens_out": 10140
+   "tokens_in": 52102,
+   "tokens_out": 3748
   },
   "oxyphenonium_combinations": {
    "abstract_only": 0,
@@ -124787,7 +124790,7 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 510.7,
+   "elapsed_s": 326.7,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -124812,7 +124815,7 @@
    "pk_gapfill": 0,
    "pk_review_models": 0,
    "poppk_extracted": 0,
-   "poppk_other": 0,
+   "poppk_other": 1,
    "poppk_rejected": 0,
    "relevant": 9,
    "reused_cache": false,
@@ -124823,8 +124826,8 @@
    "supp_other": 1,
    "supp_pd_none": 3,
    "supp_pd_other": 1,
-   "tokens_in": 120589,
-   "tokens_out": 9019
+   "tokens_in": 114194,
+   "tokens_out": 9176
   },
   "papaverine_combinations": {
    "abstract_only": 0,
@@ -127622,14 +127625,14 @@
   "penthienate": {
    "abstract_only": 7,
    "backend": "ollama",
-   "calls": 6,
+   "calls": 11,
    "combination": null,
    "curated_models": 0,
    "drug": "penthienate",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 180.1,
+   "elapsed_s": 38.9,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -127662,8 +127665,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 3296,
-   "tokens_out": 7479
+   "tokens_in": 7445,
+   "tokens_out": 540
   },
   "pentobarbital": {
    "abstract_only": 5,
@@ -133252,14 +133255,14 @@
   "pitofenone": {
    "abstract_only": 1,
    "backend": "ollama",
-   "calls": 5,
+   "calls": 7,
    "combination": null,
    "curated_models": 0,
    "drug": "pitofenone",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 87.2,
+   "elapsed_s": 50.5,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -133292,8 +133295,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 2624,
-   "tokens_out": 1669
+   "tokens_in": 4860,
+   "tokens_out": 445
   },
   "pitofenone_and_analgesics": {
    "abstract_only": 1,
@@ -137002,14 +137005,14 @@
   "prifinium_bromide": {
    "abstract_only": 4,
    "backend": "ollama",
-   "calls": 10,
+   "calls": 13,
    "combination": null,
    "curated_models": 0,
    "drug": "prifinium_bromide",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 81.7,
+   "elapsed_s": 58.2,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -137042,8 +137045,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 6584,
-   "tokens_out": 897
+   "tokens_in": 8613,
+   "tokens_out": 768
   },
   "prilocaine": {
    "abstract_only": 1,
@@ -138345,30 +138348,30 @@
    "tokens_out": null
   },
   "propantheline": {
-   "abstract_only": 11,
+   "abstract_only": 24,
    "backend": "ollama",
-   "calls": 38,
+   "calls": 114,
    "combination": null,
    "curated_models": 0,
    "drug": "propantheline",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 309.1,
+   "elapsed_s": 586.4,
    "eu_status": "not_centrally_authorised",
-   "grobid": 1,
+   "grobid": 2,
    "has_truth": false,
    "interactions": 0,
    "jats": 4,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 11,
+   "no_pdf": 24,
    "non_oa": 0,
-   "oa": 5,
-   "papers": 16,
+   "oa": 6,
+   "papers": 30,
    "pd_extracted": 2,
    "pd_gapfill": 0,
    "pd_other": 0,
-   "pd_rejected": 1,
+   "pd_rejected": 2,
    "pd_review_models": 0,
    "pdftext": 0,
    "pgx_extracted": 0,
@@ -138379,18 +138382,18 @@
    "pk_gapfill": 0,
    "pk_review_models": 0,
    "poppk_extracted": 0,
-   "poppk_other": 0,
+   "poppk_other": 1,
    "poppk_rejected": 0,
-   "relevant": 6,
+   "relevant": 7,
    "reused_cache": false,
-   "review_papers": 0,
-   "review_records": 0,
+   "review_papers": 3,
+   "review_records": 82,
    "src_pd_jats": 2,
    "supp_nonmem": 0,
    "supp_other": 0,
    "supp_pd_none": 2,
-   "tokens_in": 53399,
-   "tokens_out": 2315
+   "tokens_in": 154225,
+   "tokens_out": 20128
   },
   "propantheline_and_psycholeptics": {
    "abstract_only": 0,
@@ -139592,14 +139595,14 @@
   "proxazole": {
    "abstract_only": 1,
    "backend": "ollama",
-   "calls": 4,
+   "calls": 6,
    "combination": null,
    "curated_models": 0,
    "drug": "proxazole",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 48.9,
+   "elapsed_s": 42.7,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -139632,8 +139635,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 1576,
-   "tokens_out": 297
+   "tokens_in": 3371,
+   "tokens_out": 321
   },
   "proxibarbal": {
    "abstract_only": 0,
@@ -144731,7 +144734,7 @@
   "rifabutin": {
    "abstract_only": 41,
    "backend": "ollama",
-   "calls": 427,
+   "calls": 537,
    "combination": null,
    "curated_models": 0,
    "drug": "rifabutin",
@@ -144739,7 +144742,7 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 2405.6,
+   "elapsed_s": 1750.2,
    "eu_status": "not_centrally_authorised",
    "grobid": 4,
    "has_truth": false,
@@ -144761,15 +144764,15 @@
    "pgx_other": 0,
    "pgx_rejected": 0,
    "pgx_review_models": 0,
-   "pk_gapfill": 0,
-   "pk_review_models": 5,
+   "pk_gapfill": 11,
+   "pk_review_models": 6,
    "poppk_extracted": 5,
-   "poppk_other": 1,
-   "poppk_rejected": 3,
-   "relevant": 16,
+   "poppk_other": 0,
+   "poppk_rejected": 5,
+   "relevant": 17,
    "reused_cache": false,
-   "review_papers": 14,
-   "review_records": 278,
+   "review_papers": 17,
+   "review_records": 380,
    "src_pd_jats": 7,
    "src_pk_abstract_only": 1,
    "src_pk_jats": 4,
@@ -144777,11 +144780,11 @@
    "supp_other": 17,
    "supp_pd_none": 2,
    "supp_pd_other": 5,
-   "supp_pk_none": 3,
+   "supp_pk_none": 2,
    "supp_pk_nonmem": 1,
-   "supp_pk_other": 1,
-   "tokens_in": 711172,
-   "tokens_out": 37715
+   "supp_pk_other": 2,
+   "tokens_in": 836801,
+   "tokens_out": 59551
   },
   "rifabutin_pyrazinamide_and_protionamide": {
    "abstract_only": 0,
@@ -146463,7 +146466,7 @@
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 157.4,
+   "elapsed_s": 45.9,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -146496,8 +146499,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 3069,
-   "tokens_out": 3053
+   "tokens_in": 4020,
+   "tokens_out": 357
   },
   "rofecoxib": {
    "abstract_only": 2,
@@ -147915,26 +147918,26 @@
    "tokens_out": 16631
   },
   "roxatidine": {
-   "abstract_only": 36,
+   "abstract_only": 44,
    "backend": "ollama",
-   "calls": 49,
+   "calls": 129,
    "combination": null,
    "curated_models": 0,
    "drug": "roxatidine",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 569.2,
+   "elapsed_s": 578.1,
    "eu_status": "not_centrally_authorised",
    "grobid": 2,
    "has_truth": false,
    "interactions": 0,
    "jats": 1,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 36,
+   "no_pdf": 44,
    "non_oa": 0,
    "oa": 3,
-   "papers": 39,
+   "papers": 47,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -147946,19 +147949,19 @@
    "pgx_other": 0,
    "pgx_rejected": 0,
    "pgx_review_models": 0,
-   "pk_gapfill": 0,
+   "pk_gapfill": 1,
    "pk_review_models": 0,
    "poppk_extracted": 0,
-   "poppk_other": 0,
+   "poppk_other": 1,
    "poppk_rejected": 0,
-   "relevant": 7,
+   "relevant": 10,
    "reused_cache": false,
-   "review_papers": 0,
-   "review_records": 0,
+   "review_papers": 1,
+   "review_records": 43,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 41780,
-   "tokens_out": 4133
+   "tokens_in": 120637,
+   "tokens_out": 11953
   },
   "roxithromycin": {
    "abstract_only": 3,
@@ -151550,24 +151553,24 @@
    "tokens_out": null
   },
   "silicones": {
-   "abstract_only": 58,
+   "abstract_only": 71,
    "backend": "ollama",
-   "calls": 88,
+   "calls": 275,
    "combination": null,
    "curated_models": 0,
    "drug": "silicones",
    "drugbank_groups": [],
-   "elapsed_s": 1305.8,
+   "elapsed_s": 1138.2,
    "eu_status": "not_centrally_authorised",
-   "grobid": 3,
+   "grobid": 4,
    "has_truth": false,
    "interactions": 0,
-   "jats": 20,
+   "jats": 26,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 58,
+   "no_pdf": 71,
    "non_oa": 0,
-   "oa": 23,
-   "papers": 81,
+   "oa": 30,
+   "papers": 101,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -151589,9 +151592,9 @@
    "review_papers": 0,
    "review_records": 0,
    "supp_nonmem": 0,
-   "supp_other": 6,
-   "tokens_in": 185671,
-   "tokens_out": 5849
+   "supp_other": 11,
+   "tokens_in": 630375,
+   "tokens_out": 14214
   },
   "silodosin": {
    "abstract_only": 0,
@@ -157153,7 +157156,7 @@
   "sucralfate": {
    "abstract_only": 40,
    "backend": "ollama",
-   "calls": 110,
+   "calls": 138,
    "combination": null,
    "curated_models": 0,
    "drug": "sucralfate",
@@ -157161,7 +157164,7 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 873.4,
+   "elapsed_s": 619.2,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -157194,8 +157197,8 @@
    "review_records": 0,
    "supp_nonmem": 1,
    "supp_other": 5,
-   "tokens_in": 149356,
-   "tokens_out": 5650
+   "tokens_in": 263773,
+   "tokens_out": 6929
   },
   "sucroferric_oxyhydroxide": {
    "abstract_only": 1,
@@ -159457,14 +159460,14 @@
   "sulglicotide": {
    "abstract_only": 23,
    "backend": "ollama",
-   "calls": 31,
+   "calls": 82,
    "combination": null,
    "curated_models": 0,
    "drug": "sulglicotide",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 480.7,
+   "elapsed_s": 261.3,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -159497,8 +159500,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 43394,
-   "tokens_out": 11376
+   "tokens_in": 126201,
+   "tokens_out": 3884
   },
   "sulindac": {
    "abstract_only": 2,
@@ -162126,7 +162129,7 @@
   "tegaserod": {
    "abstract_only": 30,
    "backend": "ollama",
-   "calls": 74,
+   "calls": 80,
    "combination": null,
    "curated_models": 0,
    "drug": "tegaserod",
@@ -162134,7 +162137,7 @@
     "approved",
     "withdrawn"
    ],
-   "elapsed_s": 759.6,
+   "elapsed_s": 293.0,
    "eu_status": "never_authorised_eu_central",
    "grobid": 0,
    "has_truth": false,
@@ -162161,7 +162164,7 @@
    "poppk_extracted": 0,
    "poppk_other": 0,
    "poppk_rejected": 0,
-   "relevant": 8,
+   "relevant": 9,
    "reused_cache": false,
    "review_papers": 0,
    "review_records": 0,
@@ -162169,8 +162172,8 @@
    "supp_nonmem": 0,
    "supp_other": 5,
    "supp_pd_other": 5,
-   "tokens_in": 99415,
-   "tokens_out": 4220
+   "tokens_in": 107808,
+   "tokens_out": 4650
   },
   "tegomil_fumarate": {
    "abstract_only": 0,
@@ -162219,14 +162222,14 @@
   "tegoprazan": {
    "abstract_only": 4,
    "backend": "ollama",
-   "calls": 155,
+   "calls": 234,
    "combination": null,
    "curated_models": 0,
    "drug": "tegoprazan",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 709.1,
+   "elapsed_s": 1040.2,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -162248,23 +162251,23 @@
    "pgx_other": 1,
    "pgx_rejected": 0,
    "pgx_review_models": 0,
-   "pk_gapfill": 0,
+   "pk_gapfill": 4,
    "pk_review_models": 1,
    "poppk_extracted": 1,
-   "poppk_other": 0,
+   "poppk_other": 2,
    "poppk_rejected": 0,
    "relevant": 6,
    "reused_cache": false,
-   "review_papers": 4,
-   "review_records": 92,
+   "review_papers": 7,
+   "review_records": 162,
    "src_pd_jats": 1,
    "src_pk_jats": 1,
    "supp_nonmem": 1,
    "supp_other": 9,
    "supp_pd_other": 1,
    "supp_pk_none": 1,
-   "tokens_in": 280641,
-   "tokens_out": 17737
+   "tokens_in": 349383,
+   "tokens_out": 22132
   },
   "teicoplanin": {
    "abstract_only": 2,
@@ -163711,26 +163714,26 @@
    "tokens_out": null
   },
   "teprenone": {
-   "abstract_only": 6,
+   "abstract_only": 7,
    "backend": "ollama",
-   "calls": 15,
+   "calls": 27,
    "combination": null,
    "curated_models": 0,
    "drug": "teprenone",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 158.8,
+   "elapsed_s": 117.1,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
    "interactions": 0,
    "jats": 2,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 6,
+   "no_pdf": 7,
    "non_oa": 0,
    "oa": 2,
-   "papers": 8,
+   "papers": 9,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -163753,8 +163756,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 22718,
-   "tokens_out": 1069
+   "tokens_in": 56575,
+   "tokens_out": 1617
   },
   "teprotumumab": {
    "abstract_only": 2,
@@ -166832,14 +166835,14 @@
   "tiemonium_iodide": {
    "abstract_only": 20,
    "backend": "ollama",
-   "calls": 34,
+   "calls": 95,
    "combination": null,
    "curated_models": 0,
    "drug": "tiemonium_iodide",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 652.2,
+   "elapsed_s": 297.1,
    "eu_status": "not_centrally_authorised",
    "grobid": 6,
    "has_truth": false,
@@ -166872,8 +166875,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 2,
-   "tokens_in": 83250,
-   "tokens_out": 6093
+   "tokens_in": 247887,
+   "tokens_out": 4870
   },
   "tiemonium_iodide_and_analgesics": {
    "abstract_only": 0,
@@ -167386,14 +167389,14 @@
   "timepidium": {
    "abstract_only": 1,
    "backend": "ollama",
-   "calls": 5,
+   "calls": 7,
    "combination": null,
    "curated_models": 0,
    "drug": "timepidium",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 64.6,
+   "elapsed_s": 46.8,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -167426,20 +167429,20 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 2635,
-   "tokens_out": 453
+   "tokens_in": 4790,
+   "tokens_out": 541
   },
   "timepidium_bromide": {
    "abstract_only": 1,
    "backend": "ollama",
-   "calls": 5,
+   "calls": 7,
    "combination": null,
    "curated_models": 0,
    "drug": "timepidium_bromide",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 54.2,
+   "elapsed_s": 47.5,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -167472,8 +167475,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 2678,
-   "tokens_out": 518
+   "tokens_in": 4875,
+   "tokens_out": 553
   },
   "timolol": {
    "abstract_only": 2,
@@ -167613,7 +167616,7 @@
   "tinidazole": {
    "abstract_only": 26,
    "backend": "ollama",
-   "calls": 90,
+   "calls": 98,
    "combination": null,
    "curated_models": 0,
    "drug": "tinidazole",
@@ -167621,7 +167624,7 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 627.6,
+   "elapsed_s": 329.4,
    "eu_status": "not_centrally_authorised",
    "grobid": 2,
    "has_truth": false,
@@ -167656,8 +167659,8 @@
    "supp_nonmem": 0,
    "supp_other": 2,
    "supp_pd_none": 2,
-   "tokens_in": 123061,
-   "tokens_out": 4050
+   "tokens_in": 148424,
+   "tokens_out": 4238
   },
   "tinidazole_and_diloxanide": {
    "abstract_only": 0,
@@ -168590,14 +168593,14 @@
   "tiropramide": {
    "abstract_only": 3,
    "backend": "ollama",
-   "calls": 62,
+   "calls": 29,
    "combination": null,
    "curated_models": 0,
    "drug": "tiropramide",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 317.4,
+   "elapsed_s": 87.6,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -168621,19 +168624,17 @@
    "pgx_review_models": 0,
    "pk_gapfill": 0,
    "pk_review_models": 0,
-   "poppk_extracted": 6,
-   "poppk_other": 0,
-   "poppk_rejected": 2,
+   "poppk_extracted": 0,
+   "poppk_other": 2,
+   "poppk_rejected": 0,
    "relevant": 2,
    "reused_cache": false,
    "review_papers": 0,
    "review_records": 0,
-   "src_pk_jats": 6,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "supp_pk_other": 6,
-   "tokens_in": 63954,
-   "tokens_out": 9265
+   "tokens_in": 43448,
+   "tokens_out": 3345
   },
   "tirzepatide": {
    "abstract_only": 6,
@@ -171268,14 +171269,14 @@
   "trepibutone": {
    "abstract_only": 0,
    "backend": "ollama",
-   "calls": 5,
+   "calls": 6,
    "combination": null,
    "curated_models": 0,
    "drug": "trepibutone",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 65.2,
+   "elapsed_s": 44.6,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -171308,8 +171309,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 9202,
-   "tokens_out": 362
+   "tokens_in": 23111,
+   "tokens_out": 361
   },
   "treprostinil": {
    "abstract_only": 20,
@@ -172140,7 +172141,7 @@
   "tridihexethyl": {
    "abstract_only": 3,
    "backend": "ollama",
-   "calls": 5,
+   "calls": 4,
    "combination": null,
    "curated_models": 0,
    "drug": "tridihexethyl",
@@ -172148,7 +172149,7 @@
     "approved",
     "withdrawn"
    ],
-   "elapsed_s": 249.8,
+   "elapsed_s": 36.8,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -172181,8 +172182,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 1831,
-   "tokens_out": 13069
+   "tokens_in": 2188,
+   "tokens_out": 231
   },
   "trientine": {
    "abstract_only": 1,
@@ -172698,9 +172699,9 @@
    "tokens_out": null
   },
   "trimebutine": {
-   "abstract_only": 13,
+   "abstract_only": 17,
    "backend": "ollama",
-   "calls": 27,
+   "calls": 47,
    "combination": null,
    "curated_models": 0,
    "drug": "trimebutine",
@@ -172708,17 +172709,17 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 335.5,
+   "elapsed_s": 189.3,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
    "interactions": 0,
    "jats": 0,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 13,
+   "no_pdf": 17,
    "non_oa": 0,
    "oa": 1,
-   "papers": 14,
+   "papers": 18,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -172735,14 +172736,14 @@
    "poppk_extracted": 0,
    "poppk_other": 0,
    "poppk_rejected": 0,
-   "relevant": 9,
+   "relevant": 10,
    "reused_cache": false,
    "review_papers": 0,
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 22896,
-   "tokens_out": 1813
+   "tokens_in": 52465,
+   "tokens_out": 2851
   },
   "trimetazidine": {
    "abstract_only": 0,
@@ -172889,14 +172890,14 @@
   "trimethyldiphenylpropylamine": {
    "abstract_only": 1,
    "backend": "ollama",
-   "calls": 5,
+   "calls": 7,
    "combination": null,
    "curated_models": 0,
    "drug": "trimethyldiphenylpropylamine",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 53.1,
+   "elapsed_s": 39.2,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -172929,8 +172930,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 2576,
-   "tokens_out": 359
+   "tokens_in": 4790,
+   "tokens_out": 390
   },
   "trimetrexate": {
    "abstract_only": 2,
@@ -173721,7 +173722,7 @@
   "trospium": {
    "abstract_only": 52,
    "backend": "ollama",
-   "calls": 119,
+   "calls": 170,
    "combination": null,
    "curated_models": 0,
    "drug": "trospium",
@@ -173729,7 +173730,7 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 1229.4,
+   "elapsed_s": 464.7,
    "eu_status": "not_centrally_authorised",
    "grobid": 2,
    "has_truth": false,
@@ -173743,7 +173744,7 @@
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
-   "pd_rejected": 0,
+   "pd_rejected": 1,
    "pd_review_models": 0,
    "pdftext": 0,
    "pgx_extracted": 0,
@@ -173754,18 +173755,18 @@
    "pk_gapfill": 0,
    "pk_review_models": 1,
    "poppk_extracted": 1,
-   "poppk_other": 0,
+   "poppk_other": 1,
    "poppk_rejected": 0,
-   "relevant": 11,
+   "relevant": 10,
    "reused_cache": false,
-   "review_papers": 5,
-   "review_records": 103,
+   "review_papers": 6,
+   "review_records": 151,
    "src_pk_jats": 1,
    "supp_nonmem": 0,
    "supp_other": 6,
    "supp_pk_none": 1,
-   "tokens_in": 183114,
-   "tokens_out": 17694
+   "tokens_in": 241251,
+   "tokens_out": 16531
   },
   "trospium_and_analgesics": {
    "abstract_only": 0,
@@ -173861,14 +173862,14 @@
   "troxipide": {
    "abstract_only": 40,
    "backend": "ollama",
-   "calls": 22,
+   "calls": 180,
    "combination": null,
    "curated_models": 0,
    "drug": "troxipide",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 403.1,
+   "elapsed_s": 948.1,
    "eu_status": "not_centrally_authorised",
    "grobid": 3,
    "has_truth": false,
@@ -173901,8 +173902,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 11,
-   "tokens_in": 48237,
-   "tokens_out": 3594
+   "tokens_in": 498695,
+   "tokens_out": 9457
   },
   "trypan_blue": {
    "abstract_only": 1,
@@ -175767,14 +175768,14 @@
   "valethamate": {
    "abstract_only": 16,
    "backend": "ollama",
-   "calls": 21,
+   "calls": 53,
    "combination": null,
    "curated_models": 0,
    "drug": "valethamate",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 290.1,
+   "elapsed_s": 133.1,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -175807,8 +175808,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 20191,
-   "tokens_out": 3517
+   "tokens_in": 57261,
+   "tokens_out": 2722
   },
   "valganciclovir": {
    "abstract_only": 5,
@@ -178967,7 +178968,7 @@
   "vonoprazan": {
    "abstract_only": 3,
    "backend": "ollama",
-   "calls": 36,
+   "calls": 33,
    "combination": null,
    "curated_models": 0,
    "drug": "vonoprazan",
@@ -178975,7 +178976,7 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 114.0,
+   "elapsed_s": 117.2,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -179008,8 +179009,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 41975,
-   "tokens_out": 1185
+   "tokens_in": 40981,
+   "tokens_out": 1183
   },
   "vonoprazan_amoxicillin_and_clarithromycin": {
    "abstract_only": 6,
@@ -180375,14 +180376,14 @@
   "zastaprazan": {
    "abstract_only": 2,
    "backend": "ollama",
-   "calls": 23,
+   "calls": 60,
    "combination": null,
    "curated_models": 0,
    "drug": "zastaprazan",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 261.0,
+   "elapsed_s": 239.6,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -180411,12 +180412,12 @@
    "poppk_rejected": 1,
    "relevant": 1,
    "reused_cache": false,
-   "review_papers": 0,
-   "review_records": 0,
+   "review_papers": 1,
+   "review_records": 44,
    "supp_nonmem": 1,
    "supp_other": 3,
-   "tokens_in": 46465,
-   "tokens_out": 5142
+   "tokens_in": 92870,
+   "tokens_out": 7241
   },
   "zavegepant": {
    "abstract_only": 7,
@@ -181659,14 +181660,14 @@
   "zolimidine": {
    "abstract_only": 17,
    "backend": "ollama",
-   "calls": 24,
+   "calls": 45,
    "combination": null,
    "curated_models": 0,
    "drug": "zolimidine",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 246.8,
+   "elapsed_s": 133.6,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -181699,8 +181700,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 2,
-   "tokens_in": 24296,
-   "tokens_out": 2044
+   "tokens_in": 62260,
+   "tokens_out": 2362
   },
   "zolmitriptan": {
    "abstract_only": 19,
