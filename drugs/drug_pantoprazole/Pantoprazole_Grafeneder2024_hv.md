@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;pantoprazole&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/&quot;},{&quot;label&quot;:&quot;Grafeneder_2024 \u00b7 hv&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pantoprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Olivarez2020_reference&quot;,&quot;label&quot;:&quot;Olivarez_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Smith2021v2_reference&quot;,&quot;label&quot;:&quot;Smith_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Smith2021v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hdp&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hdp&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hdp.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hdp&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hdp&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hdp.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hdp_n_17&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hdp_n_17&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hdp_n_17.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hdp_n_17&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hdp_n_17&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hdp_n_17.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hv&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hv&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hv&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hv&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hv_n_16&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hv_n_16&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv_n_16.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hv_n_16&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hv_n_16&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv_n_16.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Olivarez2022v2_reference&quot;,&quot;label&quot;:&quot;Olivarez_2022_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Olivarez2022v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Pettersen2009_reference&quot;,&quot;label&quot;:&quot;Pettersen_2009_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hv&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hv&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pantoprazole_Knebel2011_reference&quot;,&quot;label&quot;:&quot;Knebel_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Knebel2011_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Olivarez2020_reference&quot;,&quot;label&quot;:&quot;Olivarez_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Olivarez2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Pettersen2009_reference&quot;,&quot;label&quot;:&quot;Pettersen_2009_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Smith2021v2_reference&quot;,&quot;label&quot;:&quot;Smith_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Smith2021v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hdp&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hdp&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hdp.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Olivarez2022v2_reference&quot;,&quot;label&quot;:&quot;Olivarez_2022_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Olivarez2022v2_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hdp&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hdp&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hdp.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hdp_n_17&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hdp_n_17&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hdp_n_17.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hv&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hv&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hv_n_16&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hv_n_16&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv_n_16.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hdp_n_17&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hdp_n_17&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hdp_n_17.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pantoprazole_Grafeneder2024_hv_n_16&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hv_n_16&quot;,&quot;href&quot;:&quot;drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv_n_16.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pantoprazole — `Pantoprazole_Grafeneder2024_hv`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 ### Reviewer guidance
 
@@ -20,140 +20,27 @@
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
-> **Dose compound ≠ measured compound:** dosed `clopidogrel`, measured `clopidogrel active metabolite`.
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-17 15:08:54.596519+00:00) predates the upstream re-run (2026-09-18 06:14:18.838630+00:00). Current validate status: `not captured`.
 
 ## Citation
 Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann MD; et al. et al. (2024). Kidney international reports 9
   ·  DOI: [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029)
 
 ## Model component
-<dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Grafeneder2024_hv" status="model_quarantined" stale="false" population="hemodialysis patients and healthy volunteers" measured-compound="clopidogrel active metabolite" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Grafeneder2024_hv" status="" stale="true" population="hemodialysis patients and healthy volunteers" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Parameterization:** mechanistic.
+**Parameterization:** not captured.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Cmax_CLO [ng/ml] | `Q32` · Cmax | —(suppressed) | not captured | — | not captured | not captured | llm (0.6) | Grafeneder_2024_table_3:row3:col3 | — | not captured |
-| Cmax ratio CAM:CLO | `Q33` · Cmax_ratio | —(suppressed) | not captured | — | not captured | not captured | llm_corrected (0.6) | Grafeneder_2024_table_3:row5:col3 | — | not captured |
-| AUClast_CLO [ng/ml·min] | `Q74` · AUClast | —(suppressed) | not captured | — | not captured | not captured | llm (0.6) | Grafeneder_2024_table_3:row6:col3 | — | not captured |
-| t1/2_CLO [min] | `Q57` · t1/2z | —(suppressed) | not captured | — | not captured | not captured | llm (0.6) | Grafeneder_2024_table_3:row8:col3 | — | not captured |
-| Clearance [ml/min] | `Q22` · CL | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Grafeneder_2024_table_3:row14:col3 | — | not captured |
-| VD [ml] | `Q61` · V | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Grafeneder_2024_table_3:row15:col3 | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
-**Interpretation flags:**
-- dropped unlinked row (NIL): 'n' — extend the ontology if this is a real PK parameter (source ['Grafeneder_2024_table_3:row1:col1', 'Grafeneder_2024_table_3:row1:col2', 'Grafeneder_2024_table_3:row1:col3'])
-- dropped duplicate Q32 ('Cmax_CAM [ng/ml]', value '35.4') — already have one for this compound
-- dropped duplicate Q74 ('AUClast_CAM [ng/ml·min]', value '1706') — already have one for this compound
-- dropped duplicate Q57 ('t1/2_CAM [min]', value '24') — already have one for this compound
-- dropped duplicate Q32 ('Cmax [μg/ml]', value '18.7') — already have one for this compound
-- dropped duplicate Q74 ('AUClast [μg/ml·min]', value '492') — already have one for this compound
-- dropped duplicate Q57 ('t1/2 [min]', value '57.3') — already have one for this compound
-- dropped unlinked row (NIL): 'ADP [U]' — extend the ontology if this is a real PK parameter (source ['Grafeneder_2024_table_3:row17:col3'])
-- dropped unlinked row (NIL): '0 min [%]' — extend the ontology if this is a real PK parameter (source ['Grafeneder_2024_table_3:row19:col3'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clopidogrel active metabolite
-- population split: 'hv' subgroup of Grafeneder_2024 (paper reports 4 populations: hdp, hdp n = 17, hv, hv n = 16)
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from McCann_2023's review values (primary lacked it)
-- gap-filled Q83 (tlag) from McCann_2023's review values (primary lacked it)
-- removed gap-filled parent disposition (Q49, Q83): this record measures 'clopidogrel active metabolite', not pantoprazole, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
-
-**Extraction notes:**
-- unparsed cell Grafeneder_2024_table_3:row3:col1 = '1.9 (1.1–2.1)'
-- unparsed cell Grafeneder_2024_table_3:row3:col2 = '3.1 (2.9–4.2)'
-- unparsed cell Grafeneder_2024_table_3:row3:col4 = '4 (2.1–9.6)'
-- unparsed cell Grafeneder_2024_table_3:row3:col5 = '7.6 (4.1–7.9)'
-- unparsed cell Grafeneder_2024_table_3:row3:col6 = '10.2 (6.7–19.9)'
-- unparsed cell Grafeneder_2024_table_3:row4:col1 = '22.1 (13.3–30.1)'
-- unparsed cell Grafeneder_2024_table_3:row4:col2 = '24.8 (17.8–49.5)'
-- unparsed cell Grafeneder_2024_table_3:row4:col4 = '5.3 (1.2–73.2)'
-- unparsed cell Grafeneder_2024_table_3:row4:col5 = '12.2 (3.6–35.2)'
-- unparsed cell Grafeneder_2024_table_3:row4:col6 = '12.2 (5.1–23.4)'
-- unparsed cell Grafeneder_2024_table_3:row5:col1 = '13.5 (10.5–18)'
-- unparsed cell Grafeneder_2024_table_3:row5:col2 = '8.1 (3.7–28.6)'
-- unparsed cell Grafeneder_2024_table_3:row5:col4 = '2.6 (0.1–18.2)'
-- unparsed cell Grafeneder_2024_table_3:row5:col5 = '1.6 (0.9–14.7)'
-- unparsed cell Grafeneder_2024_table_3:row5:col6 = '1.4 (0.6–1.6)'
-- unparsed cell Grafeneder_2024_table_3:row6:col1 = '160 (94–195)'
-- unparsed cell Grafeneder_2024_table_3:row6:col2 = '279 (193–461)'
-- unparsed cell Grafeneder_2024_table_3:row6:col4 = '389 (184–1599)'
-- unparsed cell Grafeneder_2024_table_3:row6:col5 = '628 (525–1068)'
-- unparsed cell Grafeneder_2024_table_3:row6:col6 = '641 (594–1729)'
-- unparsed cell Grafeneder_2024_table_3:row7:col1 = '1601 (987–1929)'
-- unparsed cell Grafeneder_2024_table_3:row7:col2 = '1354 (1124–2452)'
-- unparsed cell Grafeneder_2024_table_3:row7:col4 = '994 (527–1731)'
-- unparsed cell Grafeneder_2024_table_3:row7:col5 = '156 (1044–2341)'
-- unparsed cell Grafeneder_2024_table_3:row7:col6 = '1057 (458–4794)'
-- unparsed cell Grafeneder_2024_table_3:row8:col1 = '87.5 (66.1–123)'
-- unparsed cell Grafeneder_2024_table_3:row8:col2 = '82 (60.7–139)'
-- unparsed cell Grafeneder_2024_table_3:row8:col4 = '132 (132–132)'
-- unparsed cell Grafeneder_2024_table_3:row8:col5 = '81.8 (65.6–121)'
-- unparsed cell Grafeneder_2024_table_3:row8:col6 = '138 (112–150)'
-- unparsed cell Grafeneder_2024_table_3:row9:col1 = '33 (30.6–42.4)'
-- unparsed cell Grafeneder_2024_table_3:row9:col2 = '43.2 (35–53.2)'
-- unparsed cell Grafeneder_2024_table_3:row9:col4 = '161 (35.8–287)'
-- unparsed cell Grafeneder_2024_table_3:row9:col5 = '49.2 (42.6–149)'
-- unparsed cell Grafeneder_2024_table_3:row9:col6 = '197 (59.5–384)'
-- unparsed cell Grafeneder_2024_table_3:row11:col1 = '12 (3.6–16.7)'
-- unparsed cell Grafeneder_2024_table_3:row11:col2 = '6.8 (4.3–13.3)'
-- unparsed cell Grafeneder_2024_table_3:row11:col4 = '3.9 (0.8–4.3)'
-- unparsed cell Grafeneder_2024_table_3:row11:col5 = '3.2 (2.3–4.1)'
-- unparsed cell Grafeneder_2024_table_3:row11:col6 = '2.7 (1–3.1)'
-- unparsed cell Grafeneder_2024_table_3:row12:col1 = '423 (359–537)'
-- unparsed cell Grafeneder_2024_table_3:row12:col2 = '363 (265–442)'
-- unparsed cell Grafeneder_2024_table_3:row12:col4 = '391 (41.3–500)'
-- unparsed cell Grafeneder_2024_table_3:row12:col5 = '417 (281 – 500)'
-- unparsed cell Grafeneder_2024_table_3:row12:col6 = '329 (56–362)'
-- unparsed cell Grafeneder_2024_table_3:row13:col1 = '83.9 (64.9–97.5)'
-- unparsed cell Grafeneder_2024_table_3:row13:col2 = '69.3 (55.8–92.3)'
-- unparsed cell Grafeneder_2024_table_3:row13:col4 = '129 (39.2–285)'
-- unparsed cell Grafeneder_2024_table_3:row13:col5 = '195 (131–219)'
-- unparsed cell Grafeneder_2024_table_3:row13:col6 = '112 (51.4–134)'
-- unparsed cell Grafeneder_2024_table_3:row14:col1 = '81.9 (59–99.1)'
-- unparsed cell Grafeneder_2024_table_3:row14:col2 = '99.8 (65–144)'
-- unparsed cell Grafeneder_2024_table_3:row14:col4 = '61.2 (58.1–100)'
-- unparsed cell Grafeneder_2024_table_3:row14:col5 = '89.7 (77.9–91.9)'
-- unparsed cell Grafeneder_2024_table_3:row14:col6 = '78 (27.4–389)'
-- unparsed cell Grafeneder_2024_table_3:row15:col1 = '8484 (5923–12,003)'
-- unparsed cell Grafeneder_2024_table_3:row15:col2 = '7682 (3987–11,705)'
-- unparsed cell Grafeneder_2024_table_3:row15:col4 = '17,774 (16,415–17,923'
-- unparsed cell Grafeneder_2024_table_3:row15:col5 = '15,619 (11,837–21,927'
-- unparsed cell Grafeneder_2024_table_3:row15:col6 = '20,376 (14,061–52,852)'
-- unparsed cell Grafeneder_2024_table_3:row17:col1 = '15 (12–18)'
-- unparsed cell Grafeneder_2024_table_3:row17:col2 = '11 (8–20)'
-- unparsed cell Grafeneder_2024_table_3:row17:col4 = '34 (15–87)'
-- unparsed cell Grafeneder_2024_table_3:row17:col5 = '14 (13–28)'
-- unparsed cell Grafeneder_2024_table_3:row17:col6 = '27 (17–44)'
-- unparsed cell Grafeneder_2024_table_3:row19:col1 = '71 (59–80)'
-- unparsed cell Grafeneder_2024_table_3:row19:col2 = '41 (25–53)'
-- unparsed cell Grafeneder_2024_table_3:row19:col4 = '60 (36–71)'
-- unparsed cell Grafeneder_2024_table_3:row19:col5 = '44 (29–66)'
-- unparsed cell Grafeneder_2024_table_3:row19:col6 = '70 (57–73)'
-- companion parameter table 3 transcribed (33 record(s))
-- LLM selected parameter table(s) 2, 3
+_None recorded._
 
 ## Validation
-
-**Scholar closed-form checks:**
-
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['McCann_2023:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['McCann_2023:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 79.0 | not captured | not captured | ['Grafeneder_2024_table_3:row14:col3'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 **Reviewer per-scenario checks:**
 
@@ -171,7 +58,7 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>—(suppressed)</code></td><td>the record is not in an accepted state, so its numbers are withheld. Labels, links and provenance stay visible for audit.</td></tr></tbody></table>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
 ## Raw artifacts

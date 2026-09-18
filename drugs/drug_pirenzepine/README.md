@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;pirenzepine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pirenzepine_Vergin1986_healthy_volunteers&quot;,&quot;label&quot;:&quot;Vergin_1986_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/Pirenzepine_Vergin1986_healthy_volunteers.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pirenzepine_Vergin1989_healthy_adults&quot;,&quot;label&quot;:&quot;Vergin_1989_healthy adults&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/Pirenzepine_Vergin1989_healthy_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pirenzepine_Vergin1986_reference&quot;,&quot;label&quot;:&quot;Vergin_1986_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/Pirenzepine_Vergin1986_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pirenzepine_Vergin1989_reference&quot;,&quot;label&quot;:&quot;Vergin_1989_healthy adults&quot;,&quot;href&quot;:&quot;drugs/drug_pirenzepine/Pirenzepine_Vergin1989_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # pirenzepine
 
@@ -18,20 +18,20 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 20:19 | 2:15 | 0/0/0 | 0/0/0 | 0/0/0 | 13,836/8,576 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-09-18 06:23 | 2:26 | 0/1/1 | 0/0/0 | 0/0/0 | 21,437/9,297 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Vergin_1986_healthy volunteers](drugs/drug_pirenzepine/Pirenzepine_Vergin1986_healthy_volunteers.md) | Vergin H et al., Pharmacokinetics and bioequivalence of…, Arzneimittel-Forschung (1986) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Vergin_1989_healthy adults](drugs/drug_pirenzepine/Pirenzepine_Vergin1989_healthy_adults.md) | Vergin H et al., Effect of an aluminium-hydroxide contai…, Arzneimittel-Forschung (1989) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Vergin_1986_healthy volunteers](drugs/drug_pirenzepine/Pirenzepine_Vergin1986_reference.md) | Vergin H et al., Pharmacokinetics and bioequivalence of…, Arzneimittel-Forschung (1986) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Vergin_1989_healthy adults](drugs/drug_pirenzepine/Pirenzepine_Vergin1989_reference.md) | Vergin H et al., Effect of an aluminium-hydroxide contai…, Arzneimittel-Forschung (1989) | — |
 
 ## Coverage
 
 - **PubMed hits:** 204 matched, 14 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -40,10 +40,10 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Vergin_1986.pdf` | Vergin H et al., Pharmacokinetics and bioequivalence of…, Arzneimittel-Forschung (1986) | popPK | 10 | not captured | [3790194](https://pubmed.ncbi.nlm.nih.gov/3790194) | The paper reports quantitative pharmacokinetic parameters (t1/2, V1, Cl) for pirenzepine in humans, and the specific numeric values are explicitly present in the provided text. |
+| `Vergin_1986.pdf` | Vergin H et al., Pharmacokinetics and bioequivalence of…, Arzneimittel-Forschung (1986) | popPK | 10 | not captured | [3790194](https://pubmed.ncbi.nlm.nih.gov/3790194) | The study reports quantitative PK parameters (t1/2, V1, Cl) for pirenzepine in humans, and the numeric values are explicitly present in the text. |
 | `Vergin_1989.pdf` | Vergin H et al., Effect of an aluminium-hydroxide contai…, Arzneimittel-Forschung (1989) | popPK | 9 | not captured | [2751741](https://pubmed.ncbi.nlm.nih.gov/2751741) | The study reports quantitative PK parameters (half-life, AUC, Cmax) for pirenzepine, but specific values for clearance (CL) and volume (V) are not explicitly listed in the provided text. |
 
-<sub>queue written 2026-09-10T20:17:15.621205+00:00</sub>
+<sub>queue written 2026-09-18T06:20:56.051615+00:00</sub>
 
 ## Screened and excluded
 

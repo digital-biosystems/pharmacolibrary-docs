@@ -6,7 +6,7 @@
 - **model family:** `emax`
 - **driver:** `not_resolved`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** inhibition/unknown
 
 ## Citation
 Blackmore M; Hirst BH et al. (1992). British journal of cancer 66

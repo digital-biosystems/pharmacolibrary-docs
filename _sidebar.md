@@ -45,7 +45,7 @@
 - [metformin <sub>(23/17/7)</sub>](drugs/drug_metformin/)
 - [methotrexate <sub>(22/5/4)</sub>](drugs/drug_methotrexate/)
 - [montelukast <sub>(1/14/0)</sub>](drugs/drug_montelukast/)
-- [omeprazole <sub>(19/6/2)</sub>](drugs/drug_omeprazole/)
+- [omeprazole <sub>(18/6/2)</sub>](drugs/drug_omeprazole/)
 - [salbutamol <sub>(3/13/0)</sub>](drugs/drug_salbutamol/)
 - [tamoxifen <sub>(3/29/2)</sub>](drugs/drug_tamoxifen/)
 - [warfarin <sub>(13/11/17)</sub>](drugs/drug_warfarin/)
@@ -68,22 +68,6 @@
 - survodutide <sub>(0/0/0)</sub>
 - [Taspoglutide <sub>(0/0/0)</sub>](drugs/drug_taspoglutide/)
 - [tirzepatide <sub>(0/2/0)</sub>](drugs/drug_tirzepatide/)
-
-#### toxins
-- [arsenic <sub>(0/0/2)</sub>](drugs/toxin_arsenic/)
-- [cadmium <sub>(6/0/0)</sub>](drugs/toxin_cadmium/)
-- [chromium <sub>(0/0/0)</sub>](drugs/toxin_chromium/)
-- [nickel <sub>(4/0/0)</sub>](drugs/toxin_nickel/)
-- [lead <sub>(0/0/1)</sub>](drugs/toxin_lead/)
-- [112_trichloroethane <sub>(0/0/0)</sub>](drugs/toxin_112_trichloroethane/)
-- [11_dichloroethene <sub>(0/0/0)</sub>](drugs/toxin_11_dichloroethene/)
-- [1267_tetrachlorodibenzo_p_dioxin <sub>(0/0/0)</sub>](drugs/toxin_1267_tetrachlorodibenzo_p_dioxin/)
-- [224_trimethylpentane <sub>(0/0/0)</sub>](drugs/toxin_224_trimethylpentane/)
-- [2378_tetrachlorodibenzo_p_dioxin <sub>(0/0/0)</sub>](drugs/toxin_2378_tetrachlorodibenzo_p_dioxin/)
-- [24_dinitrotoluene <sub>(0/14/0)</sub>](drugs/toxin_24_dinitrotoluene/)
-- [44_methylenedianiline <sub>(0/0/0)</sub>](drugs/toxin_44_methylenedianiline/)
-- [acetonitrile <sub>(0/0/0)</sub>](drugs/toxin_acetonitrile/)
-- [americium <sub>(0/0/0)</sub>](drugs/toxin_americium/)
 
 #### ATC
 - **A Alimentary Tract And Metabolism**
@@ -195,15 +179,15 @@
       - [levofloxacin <sub>(2/0/0)</sub>](drugs/drug_levofloxacin/)
       - methiosulfonium chloride <sub>(0/0/0)</sub>
       - [metronidazole <sub>(0/0/0)</sub>](drugs/drug_metronidazole/)
-      - [misoprostol <sub>(1/1/0)</sub>](drugs/drug_misoprostol/)
+      - [misoprostol <sub>(0/1/0)</sub>](drugs/drug_misoprostol/)
       - niperotidine <sub>(0/0/0)</sub>
       - [nizatidine <sub>(0/0/0)</sub>](drugs/drug_nizatidine/)
-      - [omeprazole <sub>(19/6/2)</sub>](drugs/drug_omeprazole/)
+      - [omeprazole <sub>(18/6/2)</sub>](drugs/drug_omeprazole/)
       - omeprazole amoxicillin and clarithromycin <sub>(0/0/0)</sub>
       - omeprazole amoxicillin and metronidazole <sub>(0/0/0)</sub>
       - omeprazole amoxicillin and rifabutin <sub>(0/0/0)</sub>
       - omeprazole combinations <sub>(0/0/0)</sub>
-      - [pantoprazole <sub>(7/0/0)</sub>](drugs/drug_pantoprazole/)
+      - [pantoprazole <sub>(6/0/0)</sub>](drugs/drug_pantoprazole/)
       - pantoprazole amoxicillin and clarithromycin <sub>(0/0/0)</sub>
       - pantoprazole amoxicillin clarithromycin and metronidazole <sub>(0/0/0)</sub>
       - [pirenzepine <sub>(0/0/0)</sub>](drugs/drug_pirenzepine/)
@@ -212,7 +196,7 @@
       - rabeprazole amoxicillin and clarithromycin <sub>(0/0/0)</sub>
       - rabeprazole amoxicillin and metronidazole <sub>(0/0/0)</sub>
       - rabeprazole combinations <sub>(0/0/0)</sub>
-      - [ranitidine <sub>(0/0/0)</sub>](drugs/drug_ranitidine/)
+      - [ranitidine <sub>(1/0/0)</sub>](drugs/drug_ranitidine/)
       - [ranitidine bismuth citrate <sub>(0/0/0)</sub>](drugs/drug_ranitidine_bismuth_citrate/)
       - [rebamipide <sub>(0/0/0)</sub>](drugs/drug_rebamipide/)
       - [rifabutin <sub>(4/7/0)</sub>](drugs/drug_rifabutin/)
@@ -2195,7 +2179,7 @@
       - gemeprost <sub>(0/0/0)</sub>
       - methylergometrine <sub>(0/0/0)</sub>
       - methylergometrine and oxytocin <sub>(0/0/0)</sub>
-      - [misoprostol <sub>(1/1/0)</sub>](drugs/drug_misoprostol/)
+      - [misoprostol <sub>(0/1/0)</sub>](drugs/drug_misoprostol/)
       - oxytocin <sub>(0/0/0)</sub>
       - sulprostone <sub>(0/0/0)</sub>
     - [G02C Other Gynecologicals](atc/G02C.md)
@@ -3259,7 +3243,7 @@
       - mefenamic acid <sub>(0/0/0)</sub>
       - [meloxicam <sub>(1/0/0)</sub>](drugs/drug_meloxicam/)
       - meloxicam combinations <sub>(0/0/0)</sub>
-      - [misoprostol <sub>(1/1/0)</sub>](drugs/drug_misoprostol/)
+      - [misoprostol <sub>(0/1/0)</sub>](drugs/drug_misoprostol/)
       - mofebutazone <sub>(0/0/0)</sub>
       - morniflumate <sub>(0/0/0)</sub>
       - nabumetone <sub>(0/0/0)</sub>

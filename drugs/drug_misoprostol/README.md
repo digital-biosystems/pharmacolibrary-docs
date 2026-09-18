@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;misoprostol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Misoprostol_Vorontsova2022_reference&quot;,&quot;label&quot;:&quot;Vorontsova_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_misoprostol/Misoprostol_Vorontsova2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Misoprostol_Vorontsova2022_reference&quot;,&quot;label&quot;:&quot;Vorontsova_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_misoprostol/Misoprostol_Vorontsova2022_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # misoprostol
 
@@ -20,13 +20,13 @@ Misoprostol was granted FDA approval on 27 December 1988.[L7616]
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 19:29 | 10:41 | 1/0/0 | 1/1/0 | 0/0/0 | 161,755/12,582 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 1/6 | 7/0 | 0 |
+| 2026-09-18 06:19 | 6:44 | 0/1/0 | 1/1/0 | 0/0/0 | 169,266/9,870 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 1/6 | 7/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Vorontsova_2022_reference](drugs/drug_misoprostol/Misoprostol_Vorontsova2022_reference.md) | Vorontsova Y et al., Pharmacokinetics of vaginal versus bucc…, Clinical and translational… (2022) | [10.1111/cts.13306](https://doi.org/10.1111/cts.13306) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Vorontsova_2022_reference](drugs/drug_misoprostol/Misoprostol_Vorontsova2022_reference.md) | Vorontsova Y et al., Pharmacokinetics of vaginal versus bucc…, Clinical and translational… (2022) | [10.1111/cts.13306](https://doi.org/10.1111/cts.13306) |
 
 ## Pharmacodynamics (PD)
 
@@ -39,7 +39,7 @@ Misoprostol was granted FDA approval on 27 December 1988.[L7616]
 
 - **PubMed hits:** 35 matched, 24 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -50,7 +50,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Morrison_2016.pdf` | Morrison JJ et al., In vitro contractile effects of agents…, European journal of pharmac… (2016) | pd | 5 | [10.1016/j.ejphar.2016.07.025](https://doi.org/10.1016/j.ejphar.2016.07.025) | [27423315](https://www.ncbi.nlm.nih.gov/pubmed/27423315) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-10T19:23:49.514155+00:00</sub>
+<sub>queue written 2026-09-18T06:14:03.896239+00:00</sub>
 
 ## Screened and excluded
 
@@ -59,16 +59,16 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Atuhairwe_2022 | irrelevant | 0 | 0 | The paper is a clinical trial assessing the effectiveness and safety of misoprostol for abortion, not a pharmacokinetic study, and contains no PK parameters. |
 | popPK | Atuhairwe_2022_2 | irrelevant | 0 | 0 | The paper is a mixed-methods study on patient acceptability of misoprostol for abortion care and does not report any pharmacokinetic parameters. |
 | popPK | Cleeve_2016 | irrelevant | 0 | 0 | The paper is a clinical trial assessing patient acceptability of misoprostol treatment and does not report any pharmacokinetic parameters. |
-| PGx | Del_2000 | not_relevant | 0 | 0 | The paper investigates the role of PGE2 receptor subtypes in chondrocyte differentiation using misoprostol as a tool compound, but does not report any pharmacogenomic effects (gene variants) on the PK or PD of misoprostol. |
+| PGx | Del_2000 | not_relevant | 0 | 0 | The paper investigates the role of PGE2 receptor subtypes in chondrocyte differentiation and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of misoprostol. |
 | popPK | Gana_1989 | irrelevant | 0 | 0 | The study investigates ionic fluxes and blood flow in canine gastric mucosa (pharmacodynamics/mechanism) and does not report pharmacokinetic parameters for misoprostol. |
 | PGx | Heikinheimo_1997 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetics of mifepristone and mentions misoprostol only as a combination therapy agent, without reporting any pharmacogenomic effects on misoprostol's PK or PD parameters. |
-| popPK | Holt_2019 | irrelevant | 0 | 0 | The paper is a structural biology study on EP4 receptor homology modeling and docking, not a pharmacokinetic study, and contains no disposition parameters for misoprostol. |
+| popPK | Holt_2019 | irrelevant | 0 | 0 | The paper is a structural homology modeling and docking study of EP4 receptors, not a pharmacokinetic study, and contains no disposition parameters for misoprostol. |
 | PD | Holt_2019 | not_relevant | 2 | 2 | The paper focuses on homology modeling and docking of EP4 receptors; while it cites EC50 values for various agonists (including misoprostol) to validate the model, it does not report a pharmacokinetic or pharmacodynamic exposure-response relationship or fit a PD model for misoprostol. |
 | popPK | Klingberg-Allvin_2015 | irrelevant | 0 | 0 | The paper is a clinical trial assessing the effectiveness and safety of misoprostol for incomplete abortion, not a pharmacokinetic study, and contains no PK parameters. |
-| PGx | Konopka_2016 | not_relevant | 2 | 5 | The study investigates differential gene expression and oxidative markers in myometrial cells from different patient groups (spontaneous vs. non-spontaneous labor) rather than the effect of a specific genetic variant on a pharmacokinetic or pharmacodynamic parameter. |
+| PGx | Konopka_2016 | not_relevant | 2 | 5 | The paper investigates differential gene expression and oxidative markers in myometrial cells from different patient groups (spontaneous vs. non-spontaneous labor) in response to misoprostol, but it does not report a specific genetic variant (genotype) associated with a change in a standard PK or PD parameter of the drug itself. |
 | popPK | Larrea_2022 | irrelevant | 0 | 0 | The paper is a sociological study on abortion service utilization and does not report any pharmacokinetic parameters for misoprostol. |
-| popPK | Longrois_2012 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of vascular tone in human intercostal arteries, not a pharmacokinetic study, and misoprostol is used only as a receptor agonist. |
-| popPK | Morrison_2016 | irrelevant | 0 | 0 | The paper describes in vitro contractile effects, which is a mechanistic study not reporting pharmacokinetic parameters for misoprostol. |
+| popPK | Longrois_2012 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of vascular tone in human intercostal arteries, not a pharmacokinetic study, and misoprostol is used only as a receptor agonist probe. |
+| popPK | Morrison_2016 | irrelevant | 0 | 0 | no_text gate: only 96 chars of text extracted (&lt; 400) |
 | PD | Morrison_2016 | not_relevant | 0 | 0 | The provided text is only the title of a paper and does not contain the full text, data, or numeric PD parameters required to assess the relationship. |
 | popPK | Nazabal_2023 | irrelevant | 0 | 0 | The study is an ex vivo electrophysiological pharmacology experiment measuring receptor potency (EC50) in brain slices, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Norel_1999 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of prostanoid receptors in human bronchial preparations, reporting potency (pD2) and efficacy (Emax) rather than pharmacokinetic disposition parameters. |
