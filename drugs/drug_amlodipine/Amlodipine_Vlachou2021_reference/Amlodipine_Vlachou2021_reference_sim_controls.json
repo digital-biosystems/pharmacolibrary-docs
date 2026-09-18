@@ -49,8 +49,8 @@
   "step": 1
  },
  {
-  "key": "k12",
-  "label": "k12 (central→peripheral)",
+  "key": "k21",
+  "label": "k21 (peripheral→central)",
   "unit": "1/h",
   "scale": 3600,
   "min": 0.2,

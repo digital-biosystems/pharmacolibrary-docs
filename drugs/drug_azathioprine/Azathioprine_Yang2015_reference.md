@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/&quot;},{&quot;label&quot;:&quot;Yang_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_elYazigi1993_reference&quot;,&quot;label&quot;:&quot;el-Yazigi_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Rosario2017_reference&quot;,&quot;label&quot;:&quot;Rosario_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Rosario2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Yang2015_reference&quot;,&quot;label&quot;:&quot;Yang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Yang2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_elYazigi1993_reference&quot;,&quot;label&quot;:&quot;el-Yazigi_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Yang2015_reference&quot;,&quot;label&quot;:&quot;Yang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Yang2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Azathioprine_Ding1979_reference&quot;,&quot;label&quot;:&quot;Ding_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Ding1979_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Rosario2017_reference&quot;,&quot;label&quot;:&quot;Rosario_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Rosario2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # azathioprine — `Azathioprine_Yang2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
@@ -13,33 +13,29 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** a compartment is unreachable, or a metabolite is unlinked.
+**What is wrong:** every check the reviewer could run passed.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
-2. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
-3. Parent/metabolite records commonly miss the formation link.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
-
-> **Dose compound ≠ measured compound:** dosed `unknown`, measured `mycophenolic acid`.
 
 ## Citation
 Yang X; Sherwin CM; Yu T; Yellepeddi VK; Brunner HI; Vinks AA et al. (2015). Expert review of clinical pharmacology 8
   ·  DOI: [10.1586/17512433.2015.1059751](https://doi.org/10.1586/17512433.2015.1059751)
 
 ## Model component
-<dbs-pgx drug="azathioprine" model-id="Azathioprine_Yang2015_reference" status="rejected" stale="false" population="unknown" measured-compound="mycophenolic acid" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="azathioprine" model-id="Azathioprine_Yang2015_reference" status="needs_review" stale="false" population="systemic lupus erythematosus patients" measured-compound="azathioprine" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | initial volume of distribution | `Q61` · V | —(suppressed) | l/kg | — | L | not captured | boundary (0.8) | Yang_2015:other_prose | — | not captured |
-| oral CL (CL/F) | `Q22` · CL | —(suppressed) | l/h/kg | — | L/h | not captured | boundary (0.8) | Yang_2015:other_prose | — | not captured |
 | apparent volume of distribution following oral administration (Vd/F) | `Q76` · V/F | —(suppressed) | 1/kg | — | 1/kg | not captured | boundary (0.8) | Yang_2015:other_prose | — | not captured |
 | absorption lag time | `Q83` · tlag | —(suppressed) | h | — | h | not captured | exact (1.0) | Yang_2015:other_prose | — | not captured |
 | absorption rate constant (Ka) | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | exact (1.0) | Yang_2015:other_prose | — | not captured |
@@ -52,6 +48,10 @@ Yang X; Sherwin CM; Yu T; Yellepeddi VK; Brunner HI; Vinks AA et al. (2015). Exp
 ## Departures & gaps
 
 **Interpretation flags:**
+- column 'dose' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'no. of patients' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'model variability' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'covariates' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'Filler et al. (2003)' — extend the ontology if this is a real PK parameter (source ['T1:row1:col3', 'T1:row1:col6'])
 - dropped unlinked row (NIL): 'Jiao et ai. (2008)' — extend the ontology if this is a real PK parameter (source ['T1:row2:col1', 'T1:row2:col3', 'T1:row2:col6', 'T1:row2:col7', 'T1:row2:col8'])
 - dropped unlinked row (NIL): 'Neumann et ai. (2008)' — extend the ontology if this is a real PK parameter (source ['T1:row3:col1', 'T1:row3:col3', 'T1:row3:col6'])
@@ -71,16 +71,13 @@ Yang X; Sherwin CM; Yu T; Yellepeddi VK; Brunner HI; Vinks AA et al. (2015). Exp
 - dropped unlinked row (NIL): 'Kittanamongkolchai et al. (2015)' — extend the ontology if this is a real PK parameter (source ['T1:row17:col1', 'T1:row17:col3', 'T1:row17:col6'])
 - table mostly unlinked (17/17 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - salvaged Q61 ('initial volume of distribution'=0.18) from results prose — parameter table was unreadable
-- salvaged Q22 ('oral CL (CL/F)'=0.19) from results prose — parameter table was unreadable
 - salvaged Q76 ('apparent volume of distribution following oral administration (Vd/F)'=0.78) from results prose — parameter table was unreadable
 - salvaged Q83 ('absorption lag time'=0.349) from results prose — parameter table was unreadable
 - salvaged Q49 ('absorption rate constant (Ka)'=0.869) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=mycophenolic acid
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=azathioprine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- structure disagreement: deterministic 2C vs LLM 1C — review compartment count
 - status held at route_to_review — not promoted
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell T1:row1:col1 = '15 children (12 ± 3 years)'
@@ -119,6 +116,7 @@ Yang X; Sherwin CM; Yu T; Yellepeddi VK; Brunner HI; Vinks AA et al. (2015). Exp
 - unparsed cell T1:row16:col2 = 'Autoimmune with 23 SLE and 21 vasculitis'
 - unparsed cell T1:row16:col11 = '[61]'
 - unparsed cell T1:row17:col11 = '[62]'
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -126,12 +124,11 @@ Yang X; Sherwin CM; Yu T; Yellepeddi VK; Brunner HI; Vinks AA et al. (2015). Exp
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | pass | 3.0 | 2.846 | 0.9487 | 0.25 | reported t½β |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 13.3 L/h | not captured | not captured | ['Yang_2015:other_prose'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 12.6 L | not captured | not captured | ['Yang_2015:other_prose'] |
 
 <details class="legend">

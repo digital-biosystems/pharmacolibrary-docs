@@ -2,7 +2,7 @@
  "model_id": "Metformin_Liang2017_reference",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
  ],
  "parameters": {
   "Cl": 1.8999999999999998e-05,
@@ -16,7 +16,7 @@
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 0.00010769405011943545
+  "C_central": 0.00010769405011943545
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

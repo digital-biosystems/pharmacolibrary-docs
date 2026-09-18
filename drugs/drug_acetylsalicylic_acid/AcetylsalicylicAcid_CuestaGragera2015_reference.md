@@ -1,35 +1,32 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;acetylsalicylic acid&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/&quot;},{&quot;label&quot;:&quot;Cuesta-Gragera_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AcetylsalicylicAcid_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Koh2025_reference&quot;,&quot;label&quot;:&quot;Koh_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_CuestaGragera2015_reference&quot;,&quot;label&quot;:&quot;Cuesta-Gragera_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_CuestaGragera2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AcetylsalicylicAcid_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Zapadniuk1987_reference&quot;,&quot;label&quot;:&quot;Zapadniuk_1987_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Zapadniuk1987_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Cuny1979_reference&quot;,&quot;label&quot;:&quot;Cuny_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Cuny1979_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Koh2025_reference&quot;,&quot;label&quot;:&quot;Koh_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Shi2008_reference&quot;,&quot;label&quot;:&quot;Shi_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Shi2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_CuestaGragera2015_reference&quot;,&quot;label&quot;:&quot;Cuesta-Gragera_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_CuestaGragera2015_reference.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # acetylsalicylic acid — `AcetylsalicylicAcid_CuestaGragera2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--neutral">not simulated</span>
 
 ### Reviewer guidance
 
-**What is wrong:** a compartment is unreachable, or a metabolite is unlinked
+**What is wrong:** the model was built but never simulated
 
 **Steps:**
-1. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
-2. Parent/metabolite records commonly miss the formation link.
+1. No curator action. Re-run the engineer without --no-simulate.
 
-<sub>owner: **curator** · guidance written by playbook</sub>
-
-> **Dose compound ≠ measured compound:** dosed `acetylsalicylic_acid`, measured `acetylsalicylic acid`.
+<sub>owner: **engineer** · guidance written by playbook</sub>
 
 ## Citation
 Cuesta-Gragera A; Navarro-Fontestad C; Mangas-Sanjuan V; González-Álvarez I; García-Arieta A; Trocóniz IF; et al. et al. (2015). European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 74
   ·  DOI: [10.1016/j.ejps.2015.04.002](https://doi.org/10.1016/j.ejps.2015.04.002)
 
 ## Model component
-<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_CuestaGragera2015_reference" status="rejected" stale="false" population="healthy adults" measured-compound="acetylsalicylic acid" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_CuestaGragera2015_reference" status="not_simulated" stale="false" population="healthy adults" measured-compound="acetylsalicylic_acid" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `not_simulated`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -45,21 +42,24 @@ Cuesta-Gragera A; Navarro-Fontestad C; Mangas-Sanjuan V; González-Álvarez I; G
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'OAT' — extend the ontology if this is a real PK parameter (source ['Cuesta-Gragera_2015:table 1_flattened'])
+- column 'formula' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- routed 'Inter-individual variability model' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- routed 'Inter-occasion variability model' → Q313 (IOV) to iov — variability estimate, not a structural parameter
 - salvaged Q49 ('Real absorption rate constant (k A )'=7) from results prose — parameter table was unreadable
 - salvaged Q22 ('ASA hepatic intrinsic clearance at time 0 (CL i 0H )'=48.3) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=acetylsalicylic acid
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (ASA hepatic intrinsic clearance at time 0 (CL i 0H ))
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=acetylsalicylic_acid
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - status held at route_to_review — not promoted
+- gap-filled Q61 (V) from Thoueille_2023's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
-- gap-filled Q61 (V) from Thoueille_2023's review values (primary lacked it)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
-- text-pointer recovery: parsed 1 structural record(s) from the flattened table 1 sentence
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -69,11 +69,27 @@ Cuesta-Gragera A; Navarro-Fontestad C; Mangas-Sanjuan V; González-Álvarez I; G
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Thoueille_2023:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 48.3 | not captured | not captured | ['Cuesta-Gragera_2015:other_prose'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 48.3 L/h | not captured | not captured | ['Cuesta-Gragera_2015:other_prose'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 2.39e+03 L | not captured | not captured | ['Thoueille_2023:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T3_shared_parameters | not captured | pass | 2 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
+| T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -83,6 +99,8 @@ Cuesta-Gragera A; Navarro-Fontestad C; Mangas-Sanjuan V; González-Álvarez I; G
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cuesta-Gragera_2015` / `Cuesta-Gragera_2015::reference`)
+- model: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/models/modelica/AcetylsalicylicAcid_CuestaGragera2015_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/models/modelica/AcetylsalicylicAcid_CuestaGragera2015_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -91,14 +109,14 @@ Cuesta-Gragera A; Navarro-Fontestad C; Mangas-Sanjuan V; González-Álvarez I; G
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_CuestaGragera2015_reference/AcetylsalicylicAcid_CuestaGragera2015_reference_modelica.zip" download>AcetylsalicylicAcid_CuestaGragera2015_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_CuestaGragera2015_reference/AcetylsalicylicAcid_CuestaGragera2015_reference_matlab.zip" download>AcetylsalicylicAcid_CuestaGragera2015_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_CuestaGragera2015_reference/AcetylsalicylicAcid_CuestaGragera2015_reference_matlab_simbio.zip" download>AcetylsalicylicAcid_CuestaGragera2015_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_CuestaGragera2015_reference/AcetylsalicylicAcid_CuestaGragera2015_reference_sbml.zip" download>AcetylsalicylicAcid_CuestaGragera2015_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_CuestaGragera2015_reference/AcetylsalicylicAcid_CuestaGragera2015_reference_cellml.zip" download>AcetylsalicylicAcid_CuestaGragera2015_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

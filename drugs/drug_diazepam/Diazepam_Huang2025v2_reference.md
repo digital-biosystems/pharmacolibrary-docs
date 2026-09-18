@@ -1,18 +1,19 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;diazepam&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/&quot;},{&quot;label&quot;:&quot;Huang_2025_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Huang2025v2_reference&quot;,&quot;label&quot;:&quot;Huang_2025_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Huang2025v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Diazepam_Klotz1975_albumin&quot;,&quot;label&quot;:&quot;Klotz_1975_albumin&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_albumin.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_albumin&quot;,&quot;label&quot;:&quot;Klotz_1975_albumin&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_albumin.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_alkaline_phosphatase&quot;,&quot;label&quot;:&quot;Klotz_1975_alkaline_phosphatase&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_alkaline_phosphatase.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_alkaline_phosphatase&quot;,&quot;label&quot;:&quot;Klotz_1975_alkaline_phosphatase&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_alkaline_phosphatase.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_bilirubin&quot;,&quot;label&quot;:&quot;Klotz_1975_bilirubin&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_bilirubin.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_bilirubin&quot;,&quot;label&quot;:&quot;Klotz_1975_bilirubin&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_bilirubin.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_ldh&quot;,&quot;label&quot;:&quot;Klotz_1975_ldh&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_ldh.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_ldh&quot;,&quot;label&quot;:&quot;Klotz_1975_ldh&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_ldh.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_sgot&quot;,&quot;label&quot;:&quot;Klotz_1975_sgot&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_sgot.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_sgot&quot;,&quot;label&quot;:&quot;Klotz_1975_sgot&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_sgot.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_t1_2_b&quot;,&quot;label&quot;:&quot;Klotz_1975_t1_2_b&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_t1_2_b.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_t1_2_b&quot;,&quot;label&quot;:&quot;Klotz_1975_t1_2_b&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_t1_2_b.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Ku2018_reference&quot;,&quot;label&quot;:&quot;Ku_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Ku2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_reference&quot;,&quot;label&quot;:&quot;Klotz_1975_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1976_reference&quot;,&quot;label&quot;:&quot;Klotz_1976_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1976_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Ku2018_reference&quot;,&quot;label&quot;:&quot;Ku_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Ku2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Lscher1981_reference&quot;,&quot;label&quot;:&quot;L\u00f6scher_1981_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Lscher1981_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2020v2_reference&quot;,&quot;label&quot;:&quot;Wang_2020_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2020v2_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Huang2025v2_reference&quot;,&quot;label&quot;:&quot;Huang_2025_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Huang2025v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diazepam — `Diazepam_Huang2025v2_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
 ### Reviewer guidance
 
-**What is wrong:** every check the reviewer could run passed
+**What is wrong:** a compartment is unreachable, or a metabolite is unlinked
 
 **Steps:**
-1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+1. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
+2. Parent/metabolite records commonly miss the formation link.
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
@@ -20,16 +21,18 @@
 not matched (stem Huang_2025_2)
 
 ## Model component
-<dbs-pgx drug="diazepam" model-id="Diazepam_Huang2025v2_reference" status="curated_candidate" stale="false" population="" measured-compound="diazepam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="diazepam" model-id="Diazepam_Huang2025v2_reference" status="rejected" stale="false" population="" measured-compound="diazepam" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 3.9 | L/h | 1.0833333333333333e-06 | L/h | not captured | review (0.7) | Huang_2025_2:review | — | not captured |
-| V c | `Q63` · V1 | 65.7 | L | 0.06570000000000001 | L | not captured | review (0.7) | Huang_2025_2:review | — | not captured |
-| V d | `Q30` · Q | 70.0 | L/h | 1.9444444444444445e-05 | L/h | not captured | review (0.7) | Huang_2025_2:review | — | not captured |
+| CL | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Huang_2025_2:review | — | not captured |
+| V c | `Q63` · V1 | —(suppressed) | L | — | L | not captured | review (0.7) | Huang_2025_2:review | — | not captured |
+| V p | `Q64` · V2 | —(suppressed) | L | — | L | not captured | review (0.7) | Huang_2025_2:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -37,9 +40,6 @@ not matched (stem Huang_2025_2)
 </details>
 
 ## Departures & gaps
-
-**Deviations:**
-- `defaulted_parameters`: ['k21']
 
 **Interpretation flags:**
 - built from REVIEW reference values (Huang_2025_2) — secondary source
@@ -53,23 +53,15 @@ not matched (stem Huang_2025_2)
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Huang_2025_2:review'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Huang_2025_2:review'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Huang_2025_2:review'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Huang_2025_2:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.9 | not captured | not captured | ['Huang_2025_2:review'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 3.9 L/h | not captured | not captured | ['Huang_2025_2:review'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 65.7 L | not captured | not captured | ['Huang_2025_2:review'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=diazepam) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q64 | pass | volume within physiological range | 46.2 L | not captured | not captured | ['Huang_2025_2:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -79,9 +71,6 @@ not matched (stem Huang_2025_2)
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_diazepam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Huang_2025_2` / `Huang_2025_2::reference`)
-- model: `../../../knowledgebase/drugs/drug_diazepam/models/modelica/Diazepam_Huang2025v2_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_diazepam/models/modelica/Diazepam_Huang2025v2_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_diazepam/models/modelica/Diazepam_Huang2025v2_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -91,21 +80,18 @@ not matched (stem Huang_2025_2)
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_diazepam/Diazepam_Huang2025v2_reference/Diazepam_Huang2025v2_reference_modelica.zip" download>Diazepam_Huang2025v2_reference_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_diazepam/Diazepam_Huang2025v2_reference/Diazepam_Huang2025v2_reference_fmi.zip" download>Diazepam_Huang2025v2_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_diazepam/Diazepam_Huang2025v2_reference/Diazepam_Huang2025v2_reference_fmi.zip" download>Diazepam_Huang2025v2_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_diazepam/Diazepam_Huang2025v2_reference/Diazepam_Huang2025v2_reference_matlab.zip" download>Diazepam_Huang2025v2_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_diazepam/Diazepam_Huang2025v2_reference/Diazepam_Huang2025v2_reference_matlab_simbio.zip" download>Diazepam_Huang2025v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_diazepam/Diazepam_Huang2025v2_reference/Diazepam_Huang2025v2_reference_sbml.zip" download>Diazepam_Huang2025v2_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_diazepam/Diazepam_Huang2025v2_reference/Diazepam_Huang2025v2_reference_cellml.zip" download>Diazepam_Huang2025v2_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_diazepam/Diazepam_Huang2025v2_reference/Diazepam_Huang2025v2_reference.svg" alt="Diazepam_Huang2025v2_reference diagram"><figcaption>The structure OpenModelica draws for this model, with this record's parameter values in the component labels.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_diazepam/Diazepam_Huang2025v2_reference/Diazepam_Huang2025v2_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_diazepam/Diazepam_Huang2025v2_reference/Diazepam_Huang2025v2_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C` · parameters `Diazepam_Huang2025v2_reference_params.json` · controls `Diazepam_Huang2025v2_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

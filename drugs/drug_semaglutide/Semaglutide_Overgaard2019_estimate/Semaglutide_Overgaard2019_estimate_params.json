@@ -1,0 +1,25 @@
+{
+ "model_id": "Semaglutide_Overgaard2019_estimate",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "C_central"
+ ],
+ "parameters": {
+  "F": 0.847,
+  "Tlag": 0.0,
+  "VdPerKg": 5.1285714285714284e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 2.3522129371711548e-05,
+  "k21": 2.0596205962059627e-05,
+  "ka": 7.027777777777778e-06,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "C_central": 2.5101468551311617e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

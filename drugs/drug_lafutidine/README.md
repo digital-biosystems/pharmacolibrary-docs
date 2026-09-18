@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 15:45 | 4:06 | 0/0/0 | 0/1/0 | 0/0/0 | 15,926/4,746 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-09-18 05:28 | 1:31 | 0/0/0 | 0/1/0 | 0/0/0 | 24,309/1,011 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -44,14 +44,14 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Hagiwara_2007.pdf` | Hagiwara T et al., Improvement in symptoms after H2-recept…, World journal of gastroente… (2007) | pgx | 5 | [10.3748/wjg.v13.i28.3836](https://doi.org/10.3748/wjg.v13.i28.3836) | [17657838](https://www.ncbi.nlm.nih.gov/pubmed/17657838) | metadata signals extractable PGX data (CYP2C19) |
 | `Shimatani_2003.pdf` | Shimatani T et al., Effect of omeprazole 10 mg on intragast…, Alimentary pharmacology & t… (2003) | pgx | 5 | [10.1046/j.1365-2036.2003.01804.x](https://doi.org/10.1046/j.1365-2036.2003.01804.x) | [14653835](https://www.ncbi.nlm.nih.gov/pubmed/14653835) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-09-10T15:45:18.794920+00:00</sub>
+<sub>queue written 2026-09-18T05:28:11.054449+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Hagiwara_2007 | not_relevant | 0 | 0 | The paper compares clinical outcomes of lafutidine vs lansoprazole and mentions CYP2C19 polymorphisms only to state that lafutidine's activity is unaffected, without reporting any pharmacogenomic data or PK/PD parameters. |
-| popPK | Ikawa_2006 | irrelevant | 2 | 0 | The study focuses on peptide release correlations and only mentions a one-compartmental model without reporting specific quantitative PK parameters (CL, V, ka) for lafutidine in the provided text. |
+| popPK | Ikawa_2006 | irrelevant | 2 | 0 | The study focuses on peptide release correlations and only mentions a one-compartmental model without reporting specific quantitative PK parameters like clearance or volume. |
 | PGx | Isomoto_2003 | not_relevant | 0 | 0 | The study reports that CYP2C19 genotype had no significant influence on the clinical outcome (H. pylori eradication rate), but it does not report specific pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, pH levels) or quantitative effect sizes for the drug. |
 | PGx | Shimatani_2003 | not_relevant | 0 | 0 | The paper reports that lafutidine's pharmacodynamic effect (acid suppression) was not influenced by CYP2C19 genotype, meaning no pharmacogenomic effect was observed for the drug in question. |
 

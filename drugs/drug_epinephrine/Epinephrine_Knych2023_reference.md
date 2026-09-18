@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;epinephrine&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/&quot;},{&quot;label&quot;:&quot;Knych_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epinephrine_Knych2023_reference&quot;,&quot;label&quot;:&quot;Knych_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/Epinephrine_Knych2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Epinephrine_Frechen2015_reference&quot;,&quot;label&quot;:&quot;Frechen_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/Epinephrine_Frechen2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epinephrine_Heradstveit2023_reference&quot;,&quot;label&quot;:&quot;Heradstveit_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/Epinephrine_Heradstveit2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Epinephrine_Knych2023_reference&quot;,&quot;label&quot;:&quot;Knych_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_epinephrine/Epinephrine_Knych2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -55,6 +55,7 @@ Knych HK; Katzman S; McKemie DS; Arthur RM; Blea J et al. (2023). BMC veterinary
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Knych_2023:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Knych_2023:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Knych_2023:review'] |

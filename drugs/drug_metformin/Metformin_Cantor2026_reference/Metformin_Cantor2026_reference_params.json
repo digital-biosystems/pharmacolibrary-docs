@@ -2,7 +2,7 @@
  "model_id": "Metformin_Cantor2026_reference",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
  ],
  "parameters": {
   "Cl": 2.4080555555555555e-05,
@@ -16,7 +16,7 @@
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 0.0017587904268354273
+  "C_central": 0.00012186787448011009
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

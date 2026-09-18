@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;minocycline&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Minocycline_Athanassa2025_reference&quot;,&quot;label&quot;:&quot;Athanassa_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/Minocycline_Athanassa2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Minocycline_Barrasa2024_reference&quot;,&quot;label&quot;:&quot;Barrasa_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/Minocycline_Barrasa2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Minocycline_Pardos2024_reference&quot;,&quot;label&quot;:&quot;Pardos_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/Minocycline_Pardos2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Minocycline_Tynan2016_reference&quot;,&quot;label&quot;:&quot;Tynan_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/Minocycline_Tynan2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Minocycline_Athanassa2025_reference&quot;,&quot;label&quot;:&quot;Athanassa_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/Minocycline_Athanassa2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Minocycline_Barrasa2024_reference&quot;,&quot;label&quot;:&quot;Barrasa_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_minocycline/Minocycline_Barrasa2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # minocycline
 
@@ -20,12 +20,14 @@ Minocycline was granted FDA approval on 30 June 1971.[L11695]
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 08:57 | 24:00 | 0/1/1 | 2/0/0 | 0/0/0 | 247,901/29,174 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 6/11 | 16/1 | 0 |
+| 2026-09-18 01:49 | 10:24 | 2/1/1 | 2/0/0 | 0/0/0 | 231,420/27,987 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 6/11 | 16/1 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Pardos_2024_reference](drugs/drug_minocycline/Minocycline_Pardos2024_reference.md) | Pardos SL et al., Population pharmacokinetics/pharmacodyn…, The Journal of antimicrobia… (2024) | [10.1093/jac/dkae363](https://doi.org/10.1093/jac/dkae363) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Tynan_2016_reference](drugs/drug_minocycline/Minocycline_Tynan2016_reference.md) | Tynan BE et al., Pharmacokinetics of minocycline in dome…, Journal of feline medicine… (2016) | [10.1177/1098612X15579114](https://doi.org/10.1177/1098612X15579114) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.2567)</sub><br><sub>route_to: `human_review`</sub> | [Athanassa_2025_reference](drugs/drug_minocycline/Minocycline_Athanassa2025_reference.md) | Athanassa Z et al., Population pharmacokinetic model of ora…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf090](https://doi.org/10.1093/jac/dkaf090) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Barrasa_2024_reference](drugs/drug_minocycline/Minocycline_Barrasa2024_reference.md) | Barrasa H et al., Optimizing Antibiotic Therapy for, Antibiotics (Basel, Switzer… (2024) | [10.3390/antibiotics13060553](https://doi.org/10.3390/antibiotics13060553) |
 
@@ -40,7 +42,7 @@ Minocycline was granted FDA approval on 30 June 1971.[L11695]
 
 - **PubMed hits:** 69 matched, 44 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 2  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -59,26 +61,26 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Wehring_2018.pdf` | Wehring HJ et al., Adjunctive Minocycline in Clozapine-Tre…, The Psychiatric quarterly (2018) | pgx | 7 | [10.1007/s11126-017-9515-x](https://doi.org/10.1007/s11126-017-9515-x) | [28466366](https://www.ncbi.nlm.nih.gov/pubmed/28466366) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Furuta_2000.pdf` | Furuta T et al., Cure of refractory duodenal ulcer and i…, Clinical pharmacology and t… (2000) | pgx | 5 | [10.1067/mcp.2000.106826](https://doi.org/10.1067/mcp.2000.106826) | [10872651](https://www.ncbi.nlm.nih.gov/pubmed/10872651) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-09-10T08:46:37.109329+00:00</sub>
+<sub>queue written 2026-09-18T01:40:20.802760+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ahmad_2021 | irrelevant | 0 | 0 | The paper concerns gabapentinoids and neuropathic pain, not minocycline pharmacokinetics. |
+| popPK | Ahmad_2021 | irrelevant | 0 | 0 | no_text gate: only 88 chars of text extracted (&lt; 400) |
 | PD | Ahmad_2021 | not_relevant | 0 | 0 | The paper focuses on gabapentinoids and microglial mechanisms, not minocycline, and does not report any pharmacodynamic or exposure-response data for minocycline. |
 | popPK | Aranzana-Climent_2020 | irrelevant | 0 | 0 | The paper reports pharmacodynamic parameters (kill rates, EC50) for minocycline in an in-vitro bacterial growth model, not pharmacokinetic disposition parameters (CL, V, ka). |
 | popPK | Arnett_2023 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the antimicrobial and clinical efficacy of minocycline microspheres in periodontitis, not a pharmacokinetic study, and it does not report quantitative PK parameters (CL, V, ka, etc.) for minocycline. |
 | popPK | Barrasa_2024 | irrelevant | 2 | 1 | The study is a PK/PD simulation using literature-sourced parameters rather than a primary PK study, and specific numeric disposition parameters (CL, V, ka) for minocycline are not explicitly listed in the provided text. |
 | PGx | Bartos_2020 | not_relevant | 0 | 0 | The paper is a systematic review of treatment regimens for histoid leprosy and does not report any pharmacogenomic effects on minocycline PK or PD parameters. |
 | popPK | Beganovic_2021 | irrelevant | 1 | 0 | The study is an in vitro pharmacodynamic simulation of antibiotic combinations, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, etc.) for minocycline. |
-| popPK | Bowker_2008 | irrelevant | 1 | 0 | The study is an in vitro pharmacodynamic model, not a pharmacokinetic study reporting quantitative disposition parameters for minocycline. |
+| popPK | Bowker_2008 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
 | PD | Bowker_2008 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, abstract, or results necessary to verify the presence of numeric PD parameters or an exposure-response relationship. |
 | popPK | Burgess_2007 | irrelevant | 2 | 5 | The paper is a PK-PD breakpoint study for Neisseria meningitidis that uses minocycline as one of 15 comparator agents, reporting only summary literature values (Vd, t1/2, AUC) rather than original population PK parameters like clearance or intercompartmental clearance. |
 | PD | Burgess_2007 | not_relevant | 2 | 1 | The study uses Monte Carlo simulation to derive susceptibility breakpoints based on predefined PK-PD targets (e.g., AUC/MIC) borrowed from other organisms, rather than reporting a fitted PD model or numeric PD parameters (like Emax or EC50) for minocycline. |
-| PGx | Bühler_2019 | not_relevant | 0 | 0 | The paper discusses azole antifungal hepatotoxicity and mentions HLA B*35:02 only in the context of a known association with minocycline-induced liver injury, but does not report any pharmacogenomic effect on the PK or PD of minocycline. |
+| PGx | Bühler_2019 | not_relevant | 0 | 0 | The paper reports a case of azole-induced hepatotoxicity in a patient with HLA B*35:02, which is associated with minocycline toxicity, but it does not report pharmacokinetic or pharmacodynamic parameters for minocycline. |
 | PGx | Cabral_2026 | not_relevant | 0 | 0 | The paper investigates a combination therapy strategy in a mouse model and does not report any pharmacogenomic effects (gene variants) on minocycline PK or PD parameters. |
-| PGx | Clare_2017 | not_relevant | 0 | 0 | The paper reports genetic associations with drug-induced liver injury (DILI) susceptibility, not pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Clare_2017 | not_relevant | 0 | 0 | The paper discusses genetic susceptibility to drug-induced liver injury (DILI), which is an adverse event, rather than changes in pharmacokinetic or pharmacodynamic parameters. |
 | popPK | Deng_2021 | irrelevant | 0 | 0 | The study focuses on the mechanism of thalidomide in neuropathic pain, using minocycline only as a microglial inhibitor for mechanistic validation, with no pharmacokinetic parameters reported. |
 | PD | Deng_2021 | not_relevant | 0 | 0 | The paper focuses on thalidomide's mechanism of action; minocycline is used only as a qualitative microglial inhibitor to block the effect, with no dose-response or concentration-effect data reported for minocycline. |
 | PGx | Fernando_2014 | not_relevant | 0 | 0 | The paper discusses DRESS syndrome and mentions minocycline as a causative agent and HLA associations generally, but does not report specific pharmacogenomic effects on minocycline PK or PD parameters. |
@@ -86,24 +88,24 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Groenewold_2018 | not_relevant | 0 | 0 | The paper investigates bacterial protein variants and their effect on antibiotic susceptibility in Pseudomonas aeruginosa, not human pharmacogenomics or PK/PD parameters. |
 | popPK | Gumbo_2020 | irrelevant | 0 | 0 | The study is an in-vitro microbiological efficacy and MIC determination for Mycobacterium abscessus, not a pharmacokinetic study reporting disposition parameters for minocycline. |
 | PD | Gumbo_2020 | not_relevant | 0 | 0 | The paper reports MICs and concentration-response data (EC50) for other drugs (e.g., daunorubicin, tebipenem/avibactam), but minocycline was only tested for MICs and no PD parameters or concentration-effect analysis were performed or reported for it. |
-| PGx | Kim_2025 | not_relevant | 0 | 0 | The paper reports bacterial resistance mechanisms (tetB gene in Acinetobacter baumannii) affecting antibiotic susceptibility, not human pharmacogenomics affecting drug PK/PD. |
+| PGx | Kim_2025 | not_relevant | 0 | 0 | The paper investigates bacterial resistance (tetB gene in Acinetobacter baumannii) and its effect on MICs, not human pharmacogenomics affecting drug PK/PD. |
 | popPK | Lodise_2021 | relevant | 10 | 0 | The paper describes a population PK study for minocycline, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
-| PGx | Marcatili_2022 | not_relevant | 0 | 0 | The paper describes clinical case reports of minocycline use in depression and mentions pharmacogenetic testing for other drugs (e.g., MTHFR for folate), but does not report any pharmacogenomic effect on the pharmacokinetic or pharmacodynamic parameters of minocycline itself. |
+| PGx | Marcatili_2022 | not_relevant | 0 | 0 | The paper reports clinical case studies of minocycline use in depression and mentions pharmacogenomic testing for other drugs, but does not report any pharmacogenomic effect on the PK or PD parameters of minocycline. |
 | PGx | Mitchell_2011 | not_relevant | 2 | 5 | The paper reports a genotype-dependent difference in the efficacy of minocycline to increase glutamate uptake (a PD parameter), but it is a mechanistic cell study rather than a clinical pharmacogenomic report of PK/PD parameters in humans. |
-| PGx | Mori_2021 | not_relevant | 0 | 0 | The paper investigates the chemical degradation of insulin amyloids by minocycline in vitro, not the effect of genetic variants on minocycline pharmacokinetics or pharmacodynamics. |
+| PGx | Mori_2021 | not_relevant | 0 | 0 | The paper investigates the chemical degradation of insulin amyloids by minocycline in vitro and does not report any pharmacogenomic effects on minocycline's pharmacokinetics or pharmacodynamics. |
 | PGx | Nakajima_2012 | not_relevant | 0 | 0 | The paper reports a clinical case of H. pylori eradication using minocycline and mentions CYP2C19 genotype, but it does not report any pharmacokinetic or pharmacodynamic parameters of minocycline or how the genotype affected them. |
 | popPK | Nicolau_1993 | relevant | 9 | 0 | The study reports quantitative PK parameters for minocycline in rabbits using a two-compartment model, but the specific numeric values are not present in the provided evidence. |
 | PGx | Okanda_2026 | not_relevant | 0 | 0 | The paper reports in vitro antimicrobial synergy between minocycline and biapenem against bacteria, not a pharmacogenomic effect on human PK or PD parameters. |
 | popPK | Pai_2014 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of tigecycline, not minocycline. |
 | popPK | Qu_2022 | irrelevant | 2 | 1 | The study is an in vitro PK/PD simulation using literature-derived parameters for minocycline rather than an original pharmacokinetic study, and it only reports AUC values without specific clearance, volume, or rate constants. |
-| PGx | Shashikumar_2021 | not_relevant | 0 | 0 | The paper is a retrospective clinical study on the treatment of a skin condition and does not report any pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Shashikumar_2021 | not_relevant | 0 | 0 | The paper is a retrospective clinical study on a dermatological condition and does not investigate pharmacogenomic effects on minocycline PK or PD parameters. |
 | popPK | Tao_2023 | irrelevant | 2 | 3 | The paper is a narrative review of food-drug interactions that reports only absorption metrics (Cmax, AUC, Tmax, half-life) and lacks the compartmental parameters (CL, V, Q, ka) required for population pharmacokinetic modeling. |
 | popPK | Vallé_2021 | relevant | 5 | 2 | The study reports PK data (AUC, Cmax) for minocycline in pigs but lacks standard compartmental parameters (CL, V, ka) and the specific AUC values are in a table not fully provided in the evidence. |
-| PGx | Vidor_2019 | not_relevant | 0 | 0 | The paper reports bacterial tetracycline resistance mechanisms (MICs) in P. sordellii, not human pharmacogenomic effects on minocycline PK/PD. |
+| PGx | Vidor_2019 | not_relevant | 0 | 0 | The paper investigates bacterial tetracycline resistance genes (Tet P) in P. sordellii and C. difficile, not human pharmacogenomics or PK/PD parameters of minocycline. |
 | PGx | Wang_2024 | not_relevant | 0 | 0 | The paper uses minocycline only as a negative control to validate the model's predictive validity for analgesic efficacy, without reporting any pharmacokinetic or pharmacodynamic parameters or genotype-specific effects on the drug's action. |
 | PGx | Wehring_2018 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (minocycline affecting clozapine levels) but does not report any pharmacogenomic effects (gene variants) on minocycline's PK or PD parameters. |
-| PGx | Yi_2020 | not_relevant | 0 | 0 | The paper identifies minocycline as a therapeutic candidate for acute rejection based on gene expression networks but does not report any pharmacogenomic effects on its pharmacokinetic or pharmacodynamic parameters. |
-| PGx | Yukawa_2025 | not_relevant | 0 | 0 | The paper focuses on the clinical spectrum and antimicrobial resistance of Corynebacterium striatum, not on human pharmacogenomics or PK/PD parameters of minocycline. |
+| PGx | Yi_2020 | not_relevant | 0 | 0 | The paper investigates gene targets in renal allograft rejection and uses minocycline as a treatment, but does not report pharmacogenomic effects on minocycline's PK or PD parameters. |
+| PGx | Yukawa_2025 | not_relevant | 0 | 0 | The paper focuses on bacterial resistance and nosocomial transmission of Corynebacterium striatum, not human pharmacogenomics. |
 | popPK | Zhanel_2020 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of omadacycline, not minocycline, which is only mentioned as a structural derivative. |
 | PGx | Zhang_2015 | not_relevant | 0 | 0 | The study compares clinical eradication rates of two treatment regimens and does not report pharmacokinetic or pharmacodynamic parameters influenced by gene variants for minocycline. |
 | PGx | de_2017 | not_relevant | 0 | 0 | The paper investigates the autoimmune features of drug-induced liver injury and HLA allele frequencies, but does not report pharmacokinetic or pharmacodynamic parameters of minocycline. |

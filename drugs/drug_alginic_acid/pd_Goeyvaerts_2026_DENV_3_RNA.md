@@ -6,7 +6,7 @@
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Goeyvaerts N; de Trixhe XW; Neyens M; Kakuda TN; Van Wesenbeeck L; Buelens A; Rasschaert F; Durbin A; Ackaert O et al. (2026). Clinical pharmacology and therapeutics

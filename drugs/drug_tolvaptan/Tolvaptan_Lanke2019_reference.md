@@ -96,7 +96,7 @@ Lanke S; Shoaf SE et al. (2019). Journal of clinical pharmacology 59
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=tolvaptan) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=tolvaptan) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |

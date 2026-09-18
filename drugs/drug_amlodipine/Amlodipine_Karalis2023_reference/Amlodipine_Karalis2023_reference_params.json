@@ -2,7 +2,7 @@
  "model_id": "Amlodipine_Karalis2023_reference",
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
  ],
  "parameters": {
   "Cl": 6.166666666666666e-06,
@@ -17,7 +17,7 @@
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 2.202475912493143e-08
+  "C_central": 2.202475912493143e-08
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

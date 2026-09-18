@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_elYazigi1993_reference&quot;,&quot;label&quot;:&quot;el-Yazigi_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Rosario2017_reference&quot;,&quot;label&quot;:&quot;Rosario_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Rosario2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Yang2015_reference&quot;,&quot;label&quot;:&quot;Yang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Yang2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_elYazigi1993_reference&quot;,&quot;label&quot;:&quot;el-Yazigi_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Yang2015_reference&quot;,&quot;label&quot;:&quot;Yang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Yang2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Ding1979_reference&quot;,&quot;label&quot;:&quot;Ding_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Ding1979_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Rosario2017_reference&quot;,&quot;label&quot;:&quot;Rosario_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Rosario2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # MAdCAM-1-a4b7 binding inhibition — PD  <span class="pk-badge pk-badge--red">rejected</span>
@@ -16,41 +16,41 @@ Rosario M; Dirks NL; Milch C; Parikh A; Bargfrede M; Wyant T; et al. et al. (201
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|
-| C max (lg/mL) — Vedolizumab dose a | `Q32` · not captured | 5.62 | lg/mL | not captured | llm (not captured) | tab_0:row2:col1 |
-| C max (lg/mL) | `Q32` · not captured | 10.4 | lg/mL | not captured | llm (not captured) | tab_0:row2:col2 |
-| C max (lg/mL) | `Q32` · not captured | 58.4 | lg/mL | not captured | llm (not captured) | tab_0:row2:col3 |
-| C max (lg/mL) | `Q32` · not captured | 150 | lg/mL | not captured | llm (not captured) | tab_0:row2:col4 |
-| C max (lg/mL) | `Q32` · not captured | 243 | lg/mL | not captured | llm (not captured) | tab_0:row2:col5 |
-| AUC 0-tlast (lgÁday/mL) — Vedolizumab dose a | `Q19` · not captured | 31.3 | lgÁday/mL | not captured | llm_corrected (not captured) | tab_0:row3:col1 |
-| AUC 0-tlast (lgÁday/mL) | `Q19` · not captured | 119 | lgÁday/mL | not captured | llm_corrected (not captured) | tab_0:row3:col2 |
-| AUC 0-tlast (lgÁday/mL) | `Q19` · not captured | 955 | lgÁday/mL | not captured | llm_corrected (not captured) | tab_0:row3:col3 |
-| AUC 0-tlast (lgÁday/mL) | `Q19` · not captured | 3020 | lgÁday/mL | not captured | llm_corrected (not captured) | tab_0:row3:col4 |
-| AUC 0-tlast (lgÁday/mL) | `Q19` · not captured | 4840 | lgÁday/mL | not captured | llm_corrected (not captured) | tab_0:row3:col5 |
+| C max (lg/mL) — Vedolizumab dose a | `Q32` · not captured | 5.62 | lg/mL | not captured | space_fold (not captured) | tab_0:row2:col1 |
+| C max (lg/mL) | `Q32` · not captured | 10.4 | lg/mL | not captured | space_fold (not captured) | tab_0:row2:col2 |
+| C max (lg/mL) | `Q32` · not captured | 58.4 | lg/mL | not captured | space_fold (not captured) | tab_0:row2:col3 |
+| C max (lg/mL) | `Q32` · not captured | 150 | lg/mL | not captured | space_fold (not captured) | tab_0:row2:col4 |
+| C max (lg/mL) | `Q32` · not captured | 243 | lg/mL | not captured | space_fold (not captured) | tab_0:row2:col5 |
+| AUC 0-tlast (lgÁday/mL) — Vedolizumab dose a | `Q74` · not captured | 31.3 | lgÁday/mL | not captured | space_fold (not captured) | tab_0:row3:col1 |
+| AUC 0-tlast (lgÁday/mL) | `Q74` · not captured | 119 | lgÁday/mL | not captured | space_fold (not captured) | tab_0:row3:col2 |
+| AUC 0-tlast (lgÁday/mL) | `Q74` · not captured | 955 | lgÁday/mL | not captured | space_fold (not captured) | tab_0:row3:col3 |
+| AUC 0-tlast (lgÁday/mL) | `Q74` · not captured | 3020 | lgÁday/mL | not captured | space_fold (not captured) | tab_0:row3:col4 |
+| AUC 0-tlast (lgÁday/mL) | `Q74` · not captured | 4840 | lgÁday/mL | not captured | space_fold (not captured) | tab_0:row3:col5 |
 | AUC 0-? (lgÁday/mL) — Vedolizumab dose a | `Q88` · not captured | 39.1 | lgÁday/mL | not captured | llm_confirmed (not captured) | tab_0:row4:col1 |
 | AUC 0-? (lgÁday/mL) | `Q88` · not captured | 127 | lgÁday/mL | not captured | llm_confirmed (not captured) | tab_0:row4:col2 |
 | AUC 0-? (lgÁday/mL) | `Q88` · not captured | 969 | lgÁday/mL | not captured | llm_confirmed (not captured) | tab_0:row4:col3 |
 | AUC 0-? (lgÁday/mL) | `Q88` · not captured | 3030 | lgÁday/mL | not captured | llm_confirmed (not captured) | tab_0:row4:col4 |
 | AUC 0-? (lgÁday/mL) | `Q88` · not captured | 4850 | lgÁday/mL | not captured | llm_confirmed (not captured) | tab_0:row4:col5 |
-| V z (L) — Vedolizumab dose a | `Q61` · not captured | 4.02 | L | not captured | llm (not captured) | tab_0:row5:col1 |
-| V z (L) | `Q61` · not captured | 4.89 | L | not captured | llm (not captured) | tab_0:row5:col2 |
-| V z (L) | `Q61` · not captured | 3.28 | L | not captured | llm (not captured) | tab_0:row5:col3 |
-| V z (L) | `Q61` · not captured | 2.92 | L | not captured | llm (not captured) | tab_0:row5:col4 |
-| V z (L) | `Q61` · not captured | 2.73 | L | not captured | llm (not captured) | tab_0:row5:col5 |
+| V z (L) — Vedolizumab dose a | `Q61` · not captured | 4.02 | L | not captured | space_fold (not captured) | tab_0:row5:col1 |
+| V z (L) | `Q61` · not captured | 4.89 | L | not captured | space_fold (not captured) | tab_0:row5:col2 |
+| V z (L) | `Q61` · not captured | 3.28 | L | not captured | space_fold (not captured) | tab_0:row5:col3 |
+| V z (L) | `Q61` · not captured | 2.92 | L | not captured | space_fold (not captured) | tab_0:row5:col4 |
+| V z (L) | `Q61` · not captured | 2.73 | L | not captured | space_fold (not captured) | tab_0:row5:col5 |
 | CL (L/day) — Vedolizumab dose a | `Q22` · not captured | 0.412 | L/day | not captured | exact (not captured) | tab_0:row6:col1 |
 | CL (L/day) | `Q22` · not captured | 0.297 | L/day | not captured | exact (not captured) | tab_0:row6:col2 |
 | CL (L/day) | `Q22` · not captured | 0.164 | L/day | not captured | exact (not captured) | tab_0:row6:col3 |
 | CL (L/day) | `Q22` · not captured | 0.136 | L/day | not captured | exact (not captured) | tab_0:row6:col4 |
 | CL (L/day) | `Q22` · not captured | 0.139 | L/day | not captured | exact (not captured) | tab_0:row6:col5 |
 | t (day) — Vedolizumab dose a | `Q900` · not captured | 6.79 | day | not captured | llm (not captured) | tab_0:row7:col1 |
-| C max (lg/mL) — Vedolizumab dose a | `Q32` · not captured | 48.2 | lg/mL | not captured | llm (not captured) | tab_0:row14:col1 |
-| C max (lg/mL) | `Q32` · not captured | 115 | lg/mL | not captured | llm (not captured) | tab_0:row14:col2 |
-| C max (lg/mL) | `Q32` · not captured | 188 | lg/mL | not captured | llm (not captured) | tab_0:row14:col3 |
-| C max (lg/mL) | `Q32` · not captured | 206 | lg/mL | not captured | llm (not captured) | tab_0:row14:col4 |
-| C max (lg/mL) | `Q32` · not captured | 239 | lg/mL | not captured | llm (not captured) | tab_0:row14:col5 |
-| AUC 0-tlast (lgÁday/mL) — Vedolizumab dose a | `Q19` · not captured | 884 | lgÁday/mL | not captured | llm_corrected (not captured) | tab_0:row15:col1 |
-| AUC 0-tlast (lgÁday/mL) | `Q19` · not captured | 1990 | lgÁday/mL | not captured | llm_corrected (not captured) | tab_0:row15:col2 |
-| AUC 0-tlast (lgÁday/mL) | `Q19` · not captured | 3750 | lgÁday/mL | not captured | llm_corrected (not captured) | tab_0:row15:col4 |
-| AUC 0-tlast (lgÁday/mL) | `Q19` · not captured | 5488 | lgÁday/mL | not captured | llm_corrected (not captured) | tab_0:row15:col5 |
+| C max (lg/mL) — Vedolizumab dose a | `Q32` · not captured | 48.2 | lg/mL | not captured | space_fold (not captured) | tab_0:row14:col1 |
+| C max (lg/mL) | `Q32` · not captured | 115 | lg/mL | not captured | space_fold (not captured) | tab_0:row14:col2 |
+| C max (lg/mL) | `Q32` · not captured | 188 | lg/mL | not captured | space_fold (not captured) | tab_0:row14:col3 |
+| C max (lg/mL) | `Q32` · not captured | 206 | lg/mL | not captured | space_fold (not captured) | tab_0:row14:col4 |
+| C max (lg/mL) | `Q32` · not captured | 239 | lg/mL | not captured | space_fold (not captured) | tab_0:row14:col5 |
+| AUC 0-tlast (lgÁday/mL) — Vedolizumab dose a | `Q74` · not captured | 884 | lgÁday/mL | not captured | space_fold (not captured) | tab_0:row15:col1 |
+| AUC 0-tlast (lgÁday/mL) | `Q74` · not captured | 1990 | lgÁday/mL | not captured | space_fold (not captured) | tab_0:row15:col2 |
+| AUC 0-tlast (lgÁday/mL) | `Q74` · not captured | 3750 | lgÁday/mL | not captured | space_fold (not captured) | tab_0:row15:col4 |
+| AUC 0-tlast (lgÁday/mL) | `Q74` · not captured | 5488 | lgÁday/mL | not captured | space_fold (not captured) | tab_0:row15:col5 |
 | AUC 0-? (lgÁday/mL) — Vedolizumab dose a | `Q88` · not captured | 899 | lgÁday/mL | not captured | llm_confirmed (not captured) | tab_0:row16:col1 |
 | AUC 0-? (lgÁday/mL) | `Q88` · not captured | 2000 | lgÁday/mL | not captured | llm_confirmed (not captured) | tab_0:row16:col2 |
 | AUC 0-? (lgÁday/mL) | `Q88` · not captured | 3890 | lgÁday/mL | not captured | llm_confirmed (not captured) | tab_0:row16:col4 |
@@ -59,12 +59,12 @@ Rosario M; Dirks NL; Milch C; Parikh A; Bargfrede M; Wyant T; et al. et al. (201
 | CL (L/day) — Vedolizumab dose a | `Q22` · not captured | 0.200 | L/day | not captured | exact (not captured) | tab_0:row18:col1 |
 | CL (L/day) | `Q22` · not captured | 0.150 | L/day | not captured | exact (not captured) | tab_0:row18:col2 |
 | CL (L/day) | `Q22` · not captured | 0.154 | L/day | not captured | exact (not captured) | tab_0:row18:col4 |
-| V z (L) — Vedolizumab dose a | `Q61` · not captured | 4.05 | L | not captured | llm (not captured) | tab_0:row19:col1 |
-| V z (L) | `Q61` · not captured | 3.87 | L | not captured | llm (not captured) | tab_0:row19:col2 |
-| V z (L) | `Q61` · not captured | 4.57 | L | not captured | llm (not captured) | tab_0:row19:col4 |
-| V ss (L) — Vedolizumab dose a | `Q65` · not captured | 5.72 | L | not captured | llm (not captured) | tab_0:row20:col1 |
-| V ss (L) | `Q65` · not captured | 4.49 | L | not captured | llm (not captured) | tab_0:row20:col2 |
-| V ss (L) | `Q65` · not captured | 4.95 | L | not captured | llm (not captured) | tab_0:row20:col4 |
+| V z (L) — Vedolizumab dose a | `Q61` · not captured | 4.05 | L | not captured | space_fold (not captured) | tab_0:row19:col1 |
+| V z (L) | `Q61` · not captured | 3.87 | L | not captured | space_fold (not captured) | tab_0:row19:col2 |
+| V z (L) | `Q61` · not captured | 4.57 | L | not captured | space_fold (not captured) | tab_0:row19:col4 |
+| V ss (L) — Vedolizumab dose a | `Q65` · not captured | 5.72 | L | not captured | space_fold (not captured) | tab_0:row20:col1 |
+| V ss (L) | `Q65` · not captured | 4.49 | L | not captured | space_fold (not captured) | tab_0:row20:col2 |
+| V ss (L) | `Q65` · not captured | 4.95 | L | not captured | space_fold (not captured) | tab_0:row20:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

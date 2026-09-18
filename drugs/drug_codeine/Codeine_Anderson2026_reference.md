@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/&quot;},{&quot;label&quot;:&quot;Anderson_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Anderson2026_reference&quot;,&quot;label&quot;:&quot;Anderson_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Anderson2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Codeine_Ashraf2024_descriptiona&quot;,&quot;label&quot;:&quot;Ashraf_2024_descriptiona&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Ashraf2024_descriptiona.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Ashraf2024_descriptiona&quot;,&quot;label&quot;:&quot;Ashraf_2024_descriptiona&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Ashraf2024_descriptiona.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Ashraf2024_parameter_estimate&quot;,&quot;label&quot;:&quot;Ashraf_2024_parameter_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Ashraf2024_parameter_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Ashraf2024_parameter_estimate&quot;,&quot;label&quot;:&quot;Ashraf_2024_parameter_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Ashraf2024_parameter_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Capparelli2005_reference&quot;,&quot;label&quot;:&quot;Capparelli_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Capparelli2005_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Shah1990_reference&quot;,&quot;label&quot;:&quot;Shah_1990_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Shah1990_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Anderson2026_reference&quot;,&quot;label&quot;:&quot;Anderson_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Anderson2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Codeine_Ashraf2024_reference&quot;,&quot;label&quot;:&quot;Ashraf_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Ashraf2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Capparelli2005_reference&quot;,&quot;label&quot;:&quot;Capparelli_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Capparelli2005_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Gretler2020_reference&quot;,&quot;label&quot;:&quot;Gretler_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Gretler2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,10 +9,10 @@
 
 ### Reviewer guidance
 
-**What is wrong:** a parameter falls outside the physiological window
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Confirm the value and unit against the paper before treating it as an error.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
@@ -36,10 +36,7 @@ _No resolved parameters._
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=morphine
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- gap-filled Q22 (CL) from Capparelli_2005's review values (primary lacked it)
-- removed gap-filled parent disposition (Q22): this record measures 'morphine', not codeine, and reports no metabolite CL/V — the imported values describe a compartment this record did not measure
+- review gap-fill skipped: this record measures 'morphine', not codeine — the review values are the parent's
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -51,12 +48,9 @@ _No resolved parameters._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Capparelli_2005:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.18 | not captured | not captured | ['Capparelli_2005:review'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | fail | clearance within physiological range | 0.00018 L/h | not captured | not captured | ['Capparelli_2005:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

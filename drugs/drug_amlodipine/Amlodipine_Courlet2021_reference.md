@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;amlodipine&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/&quot;},{&quot;label&quot;:&quot;Courlet_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amlodipine_Angeloni2016_reference&quot;,&quot;label&quot;:&quot;Angeloni_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Angeloni2016_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Karalis2023_reference&quot;,&quot;label&quot;:&quot;Karalis_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Karalis2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mao2024_reference&quot;,&quot;label&quot;:&quot;Mao_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mao2024_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mukherjee2018_reference&quot;,&quot;label&quot;:&quot;Mukherjee_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mukherjee2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_buffer&quot;,&quot;label&quot;:&quot;Vlachou_2021_buffer&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_buffer.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_buffer&quot;,&quot;label&quot;:&quot;Vlachou_2021_buffer&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_buffer.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_parameter&quot;,&quot;label&quot;:&quot;Vlachou_2021_parameter&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_parameter.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_parameter&quot;,&quot;label&quot;:&quot;Vlachou_2021_parameter&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_parameter.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_parameter_4&quot;,&quot;label&quot;:&quot;Vlachou_2021_parameter_4&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_parameter_4.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_parameter_4&quot;,&quot;label&quot;:&quot;Vlachou_2021_parameter_4&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_parameter_4.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amlodipine_Heo2016_reference&quot;,&quot;label&quot;:&quot;Heo_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Heo2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_value&quot;,&quot;label&quot;:&quot;Vlachou_2021_value&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_value&quot;,&quot;label&quot;:&quot;Vlachou_2021_value&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amlodipine_Angeloni2016_reference&quot;,&quot;label&quot;:&quot;Angeloni_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Angeloni2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Flynn2006_reference&quot;,&quot;label&quot;:&quot;Flynn_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Flynn2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Jeppesen1998_reference&quot;,&quot;label&quot;:&quot;Jeppesen_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Jeppesen1998_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Karalis2023_reference&quot;,&quot;label&quot;:&quot;Karalis_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Karalis2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mao2024_reference&quot;,&quot;label&quot;:&quot;Mao_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mao2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Morgan2018_reference&quot;,&quot;label&quot;:&quot;Morgan_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Morgan2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mukherjee2018_reference&quot;,&quot;label&quot;:&quot;Mukherjee_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mukherjee2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amlodipine_Heo2016_reference&quot;,&quot;label&quot;:&quot;Heo_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Heo2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 ### Reviewer guidance
 
-**What is wrong:** the simulated model does not reproduce a value the paper reports; the engineer did not exercise the covariate scenarios this record defines. Evidence: T1_cmax — expected 1.3599999999999999e-05 — got 8.979977381174378e-05 — ratio 6.6029; T2_covariates_not_exercised
+**What is wrong:** the simulated model does not reproduce a value the paper reports; the engineer did not exercise the covariate scenarios this record defines. Evidence: T1_cmax — expected 1.3599999999999999e-05 — got 9.105217479129188e-05 — ratio 6.695; T2_covariates_not_exercised
 
 **Steps:**
 1. Open the paper's reported table and confirm the target value and its units.
@@ -26,7 +26,7 @@ Courlet P; Guidi M; Alves Saldanha S; Cavassini M; Stoeckle M; Buclin T; et al. 
   ·  DOI: [10.1007/s00228-020-03060-2](https://doi.org/10.1007/s00228-020-03060-2)
 
 ## Model component
-<dbs-pgx drug="amlodipine" model-id="Amlodipine_Courlet2021_reference" status="needs_review" stale="false" population="adults living with HIV" measured-compound="amlodipine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="amlodipine" model-id="Amlodipine_Courlet2021_reference" status="needs_review" stale="false" population="elderly people living with HIV" measured-compound="amlodipine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -35,12 +35,11 @@ Courlet P; Guidi M; Alves Saldanha S; Cavassini M; Stoeckle M; Buclin T; et al. 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Courlet_2021:review | — | not captured |
-| V/F (L) | `Q76` · V/F | —(suppressed) | L | — | L | not captured | review (0.7) | Courlet_2021:review | — | not captured |
-| ka | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review (0.7) | Courlet_2021:review | — | not captured |
-| ALAG | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review (0.7) | Courlet_2021:review | — | not captured |
-| CYP2D6 | `Q900` · CYP2D6 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
-| SLC22A1 | `Q900` · SLC22A1 | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| ka (h−1) | `Q49` · kabs | —(suppressed) | h−1 | — | [1] / [h] | not captured | exact (1.0) | Tab2:row2:col1, Tab2:row2:col2, Tab2:row2:col3, Tab2:row2:col4 | — | not captured |
+| ALAG (h) | `Q83` · tlag | —(suppressed) | h | — | [h] | not captured | exact (1.0) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col3, Tab2:row3:col4 | — | not captured |
+| V/F (L) | `Q76` · V/F | —(suppressed) | L | — | [l] | not captured | exact (1.0) | Tab2:row4:col1, Tab2:row4:col2, Tab2:row4:col3, Tab2:row4:col4 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | Tab2:row5:col1, Tab2:row5:col2, Tab2:row5:col3, Tab2:row5:col4 | — | not captured |
+| θefavirenz | `Q900` · θefavirenz | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,8 +52,14 @@ Courlet P; Guidi M; Alves Saldanha S; Cavassini M; Stoeckle M; Buclin T; et al. 
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- built from REVIEW reference values (Courlet_2021) — secondary source
-- volume reported by review
+- dropped unlinked row (NIL): 'θCYP3A4 inhibitors' — extend the ontology if this is a real PK parameter (source ['Tab2:row7:col1', 'Tab2:row7:col2', 'Tab2:row7:col3'])
+- kept covariate coefficient θefavirenz=1.40 (covariate efavirenz) — not an ontology parameter
+- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number 17.0 (source ['Tab2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number -0.49 (source ['Tab2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 1.4 (source ['Tab2:footnote']); the table cell was unparseable — needs review
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=amlodipine
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell Tab2:row7:col4 = '−0.60 to −0.34'
@@ -66,18 +71,18 @@ Courlet P; Guidi M; Alves Saldanha S; Cavassini M; Stoeckle M; Buclin T; et al. 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | pass | 40.8 | 40.559 | 0.9941 | 0.25 | reported t½β |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Courlet_2021:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Courlet_2021:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Courlet_2021:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Courlet_2021:review'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C1_half_life_beta | pass | 40.8 | 40.773 | 0.9993 | 0.25 | reported t½β |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row5:col1', 'Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col4'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col3', 'Tab2:row2:col4'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col4'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 17.1 L/h | not captured | not captured | ['Courlet_2021:review'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 1e+03 L | not captured | not captured | ['Courlet_2021:review'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 17 L/h | not captured | not captured | ['Tab2:row5:col1', 'Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col4'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 1e+03 L | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col4'] |
 
 **Reviewer per-scenario checks:**
 
@@ -85,13 +90,13 @@ Courlet P; Guidi M; Alves Saldanha S; Cavassini M; Stoeckle M; Buclin T; et al. 
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=amlodipine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=amlodipine) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | fail | 1.3599999999999999e-05 | 8.979977381174378e-05 | 6.6029 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.3599999999999999e-05 | 9.105217479129188e-05 | 6.695 | ng/mL→SI vs simulated kg/m3 |
 | T1_cmin_ss | reference | skipped | 10.2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | pass | 40.8 | 40.57394654500603 | 0.9945 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 40.8 | 40.783154603886075 | 0.9996 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -112,7 +117,7 @@ Courlet P; Guidi M; Alves Saldanha S; Cavassini M; Stoeckle M; Buclin T; et al. 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amlodipine/Amlodipine_Courlet2021_reference/Amlodipine_Courlet2021_reference_modelica.zip" download>Amlodipine_Courlet2021_reference_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amlodipine/Amlodipine_Courlet2021_reference/Amlodipine_Courlet2021_reference_modelica.zip" download>Amlodipine_Courlet2021_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amlodipine/Amlodipine_Courlet2021_reference/Amlodipine_Courlet2021_reference_fmi.zip" download>Amlodipine_Courlet2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amlodipine/Amlodipine_Courlet2021_reference/Amlodipine_Courlet2021_reference_matlab.zip" download>Amlodipine_Courlet2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amlodipine/Amlodipine_Courlet2021_reference/Amlodipine_Courlet2021_reference_matlab_simbio.zip" download>Amlodipine_Courlet2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

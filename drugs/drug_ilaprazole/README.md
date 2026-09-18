@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;ilaprazole&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ilaprazole_Yu2023_bootstrapping&quot;,&quot;label&quot;:&quot;Yu_2023_bootstrapping&quot;,&quot;href&quot;:&quot;drugs/drug_ilaprazole/Ilaprazole_Yu2023_bootstrapping.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ilaprazole_Yu2023_bootstrapping&quot;,&quot;label&quot;:&quot;Yu_2023_bootstrapping&quot;,&quot;href&quot;:&quot;drugs/drug_ilaprazole/Ilaprazole_Yu2023_bootstrapping.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ilaprazole_Yu2023_final_model&quot;,&quot;label&quot;:&quot;Yu_2023_final_model&quot;,&quot;href&quot;:&quot;drugs/drug_ilaprazole/Ilaprazole_Yu2023_final_model.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ilaprazole_Yu2023_final_model&quot;,&quot;label&quot;:&quot;Yu_2023_final_model&quot;,&quot;href&quot;:&quot;drugs/drug_ilaprazole/Ilaprazole_Yu2023_final_model.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ilaprazole_Yu2023_reference&quot;,&quot;label&quot;:&quot;Yu_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ilaprazole/Ilaprazole_Yu2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # ilaprazole
 
@@ -16,22 +16,19 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 15:28 | 2:08 | 0/2/0 | 0/0/0 | 0/0/0 | 30,765/3,618 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-09-18 05:17 | 0:48 | 0/1/0 | 0/0/0 | 0/0/0 | 24,656/843 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yu_2023_bootstrapping](drugs/drug_ilaprazole/Ilaprazole_Yu2023_bootstrapping.md) | Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yu_2023_bootstrapping](drugs/drug_ilaprazole/Ilaprazole_Yu2023_bootstrapping.md) | Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yu_2023_final_model](drugs/drug_ilaprazole/Ilaprazole_Yu2023_final_model.md) | Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yu_2023_final_model](drugs/drug_ilaprazole/Ilaprazole_Yu2023_final_model.md) | Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yu_2023_reference](drugs/drug_ilaprazole/Ilaprazole_Yu2023_reference.md) | Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222) |
 
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -42,7 +39,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Jia_2021.pdf` | Jia R et al., Accelerating Development of Benziamidaz…, Pharmaceutics (2021) | popPK | 10 | [10.3390/pharmaceutics13030392](https://doi.org/10.3390/pharmaceutics13030392) | [33804279](https://pubmed.ncbi.nlm.nih.gov/33804279) | The paper describes a population PK/PD model for ilaprazole, but the specific numeric parameter values are not present in the provided abstract text. |
 
-<sub>queue written 2026-09-10T15:26:37.110006+00:00</sub>
+<sub>queue written 2026-09-18T05:16:30.523924+00:00</sub>
 
 ## Screened and excluded
 

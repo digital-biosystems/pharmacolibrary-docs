@@ -3,7 +3,7 @@
 # guinea-pig aorta contraction — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Eglen_1989`
-- **model family:** `emax`
+- **model family:** `unknown`
 - **driver:** `not_resolved`
 - **tier:** descriptive
 - **effect:** stimulation/unknown

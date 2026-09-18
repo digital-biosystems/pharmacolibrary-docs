@@ -11,7 +11,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 05:15 | 7:17 | 0/0/0 | 1/0/0 | 0/0/0 | 68,002/14,441 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/4 | 6/0 | 0 |
+| 2026-09-18 01:19 | 3:36 | 0/0/0 | 1/0/0 | 0/0/0 | 124,990/1,889 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/4 | 6/0 | 0 |
 
 ## popPK records
 
@@ -29,7 +29,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 8 matched, 8 returned
+- **PubMed hits:** 9 matched, 9 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -38,7 +38,7 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Apgar_2018 | irrelevant | 0 | 0 | The paper describes a QSP model for hUGT1A1-modRNA to treat Crigler-Najjar syndrome and does not study benzoxonium_chloride. |
+| popPK | Apgar_2018 | irrelevant | 0 | 0 | The paper describes a QSP model for hUGT1A1-modRNA (an mRNA therapeutic) and does not study benzoxonium_chloride. |
 | popPK | Belenichev_2025 | irrelevant | 0 | 0 | The paper studies the neuroprotective efficacy of Angiolin gel in rats and does not report pharmacokinetic parameters for benzoxonium chloride. |
 | PD | Belenichev_2025 | not_relevant | 0 | 0 | The paper reports group-level biochemical and behavioral outcomes for a single dose of Angiolin gel (benzoxonium chloride) compared to controls, but it does not provide concentration-effect data, dose-response curves, or any numeric pharmacodynamic parameters (e.g., Emax, EC50). |
 | popPK | EFSA_2023 | irrelevant | 0 | 0 | The paper is a risk assessment of N-nitrosamines in food and does not involve benzoxonium_chloride or report any pharmacokinetic parameters. |
@@ -46,6 +46,8 @@ _not available_
 | popPK | Futane_2023 | irrelevant | 0 | 0 | The paper is a review on aptamer-based biosensors for point-of-care diagnostics and does not contain any pharmacokinetic data or parameters for benzoxonium_chloride. |
 | PD | Futane_2023 | not_relevant | 0 | 0 | The paper is a review on aptamer-based biosensors for point-of-care diagnosis and does not contain any pharmacodynamic or exposure-response data for benzoxonium chloride. |
 | popPK | Hakimi_2019 | irrelevant | 0 | 0 | The study is an in-vitro investigation of antileishmanial activity and drug release from niosomes, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for benzoxonium chloride. |
+| popPK | Kayukova_2026 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in vitro biological activity of new amidoxime derivatives, not a pharmacokinetic study of benzoxonium chloride. |
+| PD | Kayukova_2026 | not_relevant | 0 | 0 | The paper reports the synthesis and in vitro biological screening (MIC/MIC90 or similar activity comparisons) of new chemical compounds, but does not contain any pharmacokinetic data, exposure-response analysis, or numeric PD parameters (Emax, EC50, etc.) for benzoxonium chloride or the synthesized derivatives. |
 | popPK | Mertes_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of transcrocetin (TC) in a liposomal formulation, not benzoxonium_chloride. |
 | PD | Mertes_2022 | not_relevant | 0 | 0 | The paper reports clinical outcomes (PaO2/FiO2, SOFA) and dose selection for a different drug (LEAF-4L6715/transcrocetin), not benzoxonium chloride, and contains no PD modeling or numeric PD parameters. |
 

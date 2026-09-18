@@ -2,7 +2,7 @@
  "model_id": "Omeprazole_Yusuff2026_reference",
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
  ],
  "parameters": {
   "Cl": 1.7277777777777778e-06,
@@ -15,7 +15,7 @@
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 0.0006768927830345015
+  "C_central": 0.0006768927830345015
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

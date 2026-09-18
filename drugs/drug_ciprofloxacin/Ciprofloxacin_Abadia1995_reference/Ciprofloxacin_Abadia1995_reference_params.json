@@ -1,0 +1,24 @@
+{
+ "model_id": "Ciprofloxacin_Abadia1995_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "C_central"
+ ],
+ "parameters": {
+  "Cl": 1.575e-05,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00020999999999999998,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.0002777777777777778,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "C_central": 0.0009852391148411242
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

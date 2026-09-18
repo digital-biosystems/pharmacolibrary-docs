@@ -2,7 +2,7 @@
  "model_id": "Diazepam_Helfer2026_reference",
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
  ],
  "parameters": {
   "Cl": 8.36111111111111e-07,
@@ -15,7 +15,7 @@
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 0.0022096444289523096
+  "C_central": 0.0022096444289523096
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

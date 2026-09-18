@@ -1,33 +1,32 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;montelukast&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/&quot;},{&quot;label&quot;:&quot;Okubo_2016 \u00b7 all&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Li2019_reference&quot;,&quot;label&quot;:&quot;Li_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Li2019_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_10_15_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_10_15_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_10_15_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_10_15_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_10_15_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_10_15_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_1_5_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_1_5_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_1_5_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_1_5_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_1_5_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_1_5_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_6_9_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_6_9_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_6_9_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_6_9_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_6_9_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_6_9_years_old.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_all&quot;,&quot;label&quot;:&quot;Okubo_2016_all&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_all.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Montelukast_Okubo2016_all&quot;,&quot;label&quot;:&quot;Okubo_2016_all&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_all.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Knorr2006_reference&quot;,&quot;label&quot;:&quot;Knorr_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Knorr2006_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Li2019_reference&quot;,&quot;label&quot;:&quot;Li_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Li2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_10_15_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_10_15_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_10_15_years_old.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_10_15_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_10_15_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_10_15_years_old.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_1_5_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_1_5_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_1_5_years_old.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_1_5_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_1_5_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_1_5_years_old.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_6_9_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_6_9_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_6_9_years_old.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_6_9_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_6_9_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_6_9_years_old.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_all&quot;,&quot;label&quot;:&quot;Okubo_2016_all&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_all.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Montelukast_Okubo2016_all&quot;,&quot;label&quot;:&quot;Okubo_2016_all&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_all.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # montelukast — `Montelukast_Okubo2016_all`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
 Okubo K; Inoue Y; Numaguchi H; Tanaka K; Saito I; Oshima N; Matsumoto Y; Prohn M; Mehta A; Nishida C; Philip G et al. (2016). Journal of drug assessment 5
   ·  DOI: [10.1080/21556660.2016.1209507](https://doi.org/10.1080/21556660.2016.1209507)
 
 ## Model component
-<dbs-pgx drug="montelukast" model-id="Montelukast_Okubo2016_all" status="model_quarantined" stale="false" population="paediatric Japanese patients with perennial allergic rhinitis" measured-compound="montelukast" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="montelukast" model-id="Montelukast_Okubo2016_all" status="needs_review" stale="false" population="paediatric Japanese patients with perennial allergic rhinitis" measured-compound="montelukast" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -68,6 +67,7 @@ Okubo K; Inoue Y; Numaguchi H; Tanaka K; Saito I; Oshima N; Matsumoto Y; Prohn M
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['t0003:row2:col4'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Li_2019:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Zhu_2024:review'] |
@@ -75,22 +75,6 @@ Okubo K; Inoue Y; Numaguchi H; Tanaka K; Saito I; Oshima N; Matsumoto Y; Prohn M
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.87 | not captured | not captured | ['Li_2019:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.87 L/h | not captured | not captured | ['Li_2019:review'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 510 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 438 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 344 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 471 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 283 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 1.59 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 2.99 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -100,8 +84,6 @@ Okubo K; Inoue Y; Numaguchi H; Tanaka K; Saito I; Oshima N; Matsumoto Y; Prohn M
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_montelukast/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Okubo_2016` / `Okubo_2016::all`)
-- model: `../../../knowledgebase/drugs/drug_montelukast/models/modelica/_needs_review/Montelukast_Okubo2016_all.mo`
-- deviation: `../../../knowledgebase/drugs/drug_montelukast/models/modelica/_needs_review/Montelukast_Okubo2016_all.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -9,10 +9,10 @@
 
 ### Reviewer guidance
 
-**What is wrong:** every check the reviewer could run passed
+**What is wrong:** a parameter falls outside the physiological window
 
 **Steps:**
-1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+1. Confirm the value and unit against the paper before treating it as an error.
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
@@ -30,12 +30,12 @@ Danielak D; Karaźniewicz-Łada M; Komosa A; Burchardt P; Lesiak M; Kruszyna Ł;
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| k12 [1/h] | `Q301` · k12 | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Tab2:row2:col1, Tab2:row2:col2, Tab2:row2:col3 | — | 25.3 (None% RSE) |
-| V2/F [L] | `Q82` · V2/F | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col3 | — | 63.7 (None% RSE) |
-| CL/F [L/h] | `Q27` · CL/F | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Tab2:row4:col1, Tab2:row4:col2, Tab2:row4:col3 | — | 49.8 (None% RSE) |
+| k12 [1/h] | `Q301` · k12 | —(suppressed) | 1/h | — | [1] / [h] | not captured | llm_confirmed (0.6) | Tab2:row2:col1, Tab2:row2:col2, Tab2:row2:col3 | — | 25.3 (None% RSE) |
+| V2/F [L] | `Q82` · V2/F | —(suppressed) | L | — | [l] | not captured | llm_confirmed (0.6) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col3 | — | 63.7 (None% RSE) |
+| CL/F [L/h] | `Q27` · CL/F | —(suppressed) | L/h | — | [l] / [h] | not captured | llm_confirmed (0.6) | Tab2:row4:col1, Tab2:row4:col2, Tab2:row4:col3 | — | 49.8 (None% RSE) |
 | FM | `Q45` · fm | —(suppressed) | not captured | — | not captured | not captured | exact (1.0) | Tab2:row5:col1, Tab2:row5:col2, Tab2:row5:col3 | — | 71.4 (None% RSE) |
-| V3/F [L] | `Q78` · V3/F | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Tab2:row6:col1, Tab2:row6:col2, Tab2:row6:col3 | — | not captured |
-| Q2/F [L/h] | `Q80` · Q2/F | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Tab2:row7:col1, Tab2:row7:col2, Tab2:row7:col3 | — | not captured |
+| V3/F [L] | `Q78` · V3/F | —(suppressed) | L | — | [l] | not captured | llm_confirmed (0.6) | Tab2:row6:col1, Tab2:row6:col2, Tab2:row6:col3 | — | not captured |
+| Q2/F [L/h] | `Q80` · Q2/F | —(suppressed) | L/h | — | [l] / [h] | not captured | llm_confirmed (0.6) | Tab2:row7:col1, Tab2:row7:col2, Tab2:row7:col3 | — | not captured |
 | V/F (L) | `Q76` · V/F | —(suppressed) | L | — | L | not captured | review_gapfill (0.7) | Jiang_2025:review | — | not captured |
 | ka (1/h) | `Q49` · kabs | —(suppressed) | 1/h | — | 1/h | not captured | review_gapfill (0.7) | Henrich_2021:review | — | not captured |
 | absorption delay in patients with ACS | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review_gapfill (0.7) | Schilling_2020:review | — | not captured |
@@ -71,12 +71,19 @@ Danielak D; Karaźniewicz-Łada M; Komosa A; Burchardt P; Lesiak M; Kruszyna Ł;
 | C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col3'] |
+| C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2', 'Tab2:row2:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Henrich_2021:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jiang_2025:review'] |
+| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col3'] |
+| C5_dimension_Q80 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row7:col1', 'Tab2:row7:col2', 'Tab2:row7:col3'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col3'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Schilling_2020:review'] |
 | C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | Fm=0.045 present with apparent parameterization | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | fail | clearance within physiological range | 1.45e+04 L/h | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col3'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 140 L | not captured | not captured | ['Jiang_2025:review'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 7.66e+03 L | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col3'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

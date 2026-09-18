@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-17 08:33 | 27:48 | 8/0/0 | 2/1/0 | 2/0/11 | 120,694/75,877 | ollama / qwen3.8:27b-mtp-q8_0 | 33 | 25/13 | 16/17 | 0 |
+| 2026-09-17 22:48 | 2:47 | 8/0/0 | 2/1/0 | 2/0/11 | 87,337/3,597 | ollama / qwen3.8:27b-mtp-q8_0 | 33 | 25/13 | 16/17 | 0 |
 
 ## popPK records
 
@@ -90,19 +90,19 @@
 | PGx | Akutsu_2020 | not_relevant | 0 | 0 | The paper describes an analytical method for measuring tolvaptan enantiomers and does not report pharmacogenomic effects on PK/PD parameters. |
 | PGx | Aperis_2011 | not_relevant | 0 | 0 | The paper is a general review of tolvaptan's clinical use and metabolism (CYP3A4) but does not report specific pharmacogenomic effects of gene variants on PK or PD parameters. |
 | popPK | Beaudoin_2019 | relevant | 5 | 2 | The study reports quantitative clearance parameters for tolvaptan in rat isolated perfused livers, but the specific numeric values are located in Table 1 which is not fully provided in the evidence. |
-| PD | Bhatt_2014 | not_relevant | 2 | 1 | The paper is a review that qualitatively discusses dose escalation and pharmacodynamic properties but does not present a specific PK/PD model or extractable numeric PD parameters (e.g., EC50, Emax) in the provided text. |
-| PGx | Bhatt_2014 | not_relevant | 0 | 0 | The paper is a general review of tolvaptan's PK/PD and drug interactions, with no mention of gene variants or pharmacogenomic effects. |
+| PD | Bhatt_2014 | not_relevant | 2 | 1 | The paper is a qualitative review of pharmacokinetic and pharmacodynamic properties and drug interactions, lacking specific numeric PD parameters or extractable concentration-effect curves in the provided text. |
+| PGx | Bhatt_2014 | not_relevant | 0 | 0 | The paper is a general review of tolvaptan's PK/PD and drug interactions, with no mention of genetic variants or pharmacogenomic effects. |
 | PGx | Bou_2026 | not_relevant | 0 | 0 | The paper is a review of SGLT2 inhibitors in ADPKD and does not report pharmacogenomic effects on tolvaptan PK/PD parameters. |
 | popPK | Castro-Suárez_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of nimotuzumab, not tolvaptan, which is only mentioned as a comparator in the introduction. |
 | PD | Castro-Suárez_2020 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics (PopPK) of nimotuzumab, not tolvaptan, and does not report a pharmacodynamic (PD) model or numeric PD parameters for the drug of interest. |
 | popPK | Chebib_2025 | irrelevant | 0 | 0 | The paper is a pooled efficacy analysis of tolvaptan in ADPKD focusing on eGFR decline rates, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | PGx | Chen_2025 | not_relevant | 0 | 0 | The text is a review of emerging therapies for ADPKD and mentions tolvaptan only as background context without reporting any pharmacogenomic effects on its PK or PD parameters. |
 | popPK | Cukoski_2023 | irrelevant | 0 | 0 | The study analyzes plasma sodium evolution in hyponatremia patients and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for tolvaptan. |
-| PGx | Dixon_2008 | not_relevant | 0 | 0 | The paper is a general review of tolvaptan's clinical use and safety, mentioning CYP3A4 metabolism but not reporting any specific pharmacogenomic effects of gene variants on PK or PD parameters. |
-| PD | Dumont_2025 | not_relevant | 0 | 0 | The paper focuses on the PD of GLPG2737 (a CFTR inhibitor); tolvaptan is used only as a positive control in in vivo models without any reported exposure-response or dose-response analysis for tolvaptan itself. |
+| PGx | Dixon_2008 | not_relevant | 0 | 0 | The paper is a general review of tolvaptan's clinical efficacy and safety, mentioning CYP3A4 metabolism but not reporting any specific pharmacogenomic effects of gene variants on PK or PD parameters. |
+| PD | Dumont_2025 | not_relevant | 2 | 1 | The paper reports dose-response data (IC50s) for the novel compound GLPG2737, but for tolvaptan it only provides qualitative comparisons and single-dose effect percentages without deriving specific PD parameters like Emax or EC50. |
 | PGx | Fang_2016 | not_relevant | 2 | 5 | The study investigates the role of SULT enzymes in tolvaptan metabolism and cytotoxicity in cell lines, but does not report pharmacogenomic effects of specific gene variants on PK or PD parameters in humans. |
 | PD | Golestaneh_2004 | not_relevant | 1 | 0 | The text is a narrative review discussing mechanisms of diuretic resistance and the general efficacy of vaptans, but it does not report any specific numeric PD parameters (e.g., Emax, EC50) or exposure-response data for tolvaptan. |
-| PGx | Hadla_2026 | not_relevant | 0 | 0 | The paper investigates a pharmacodynamic interaction between probenecid and tolvaptan, not a pharmacogenomic effect of a gene variant on tolvaptan's PK/PD. |
+| PGx | Hadla_2026 | not_relevant | 0 | 0 | The paper investigates a pharmacodynamic interaction between probenecid and tolvaptan, not a pharmacogenomic effect (gene variant/genotype) on tolvaptan's PK or PD. |
 | popPK | Helmlinger_2019 | irrelevant | 0 | 0 | The paper is a review on QSP modeling workflows and focuses on SGLT2 inhibitors and immuno-oncology, with tolvaptan mentioned only in passing without any PK parameter data. |
 | PD | Helmlinger_2019 | not_relevant | 0 | 0 | The paper is a review of QSP modeling workflows and case studies for SGLT2 inhibitors and immuno-oncology drugs; it does not contain any data, analysis, or parameters for tolvaptan. |
 | PD | Hines_2020 | not_relevant | 2 | 1 | The text is a review/case study summary that qualitatively mentions pharmacodynamics and clinical effects but does not provide specific numeric PD parameters or exposure-response data. |
@@ -113,11 +113,11 @@
 | PD | Lanke_2019 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for tolvaptan, including dose-dependent bioavailability, but does not contain any pharmacodynamic (PD) or exposure-response analysis. |
 | popPK | Marshall_2026 | irrelevant | 0 | 0 | The paper is a clinical outcome study evaluating kidney function decline (eGFR slopes) and does not report any pharmacokinetic parameters for tolvaptan. |
 | PGx | Mazzarino_2017 | not_relevant | 3 | 2 | The paper reports in vitro metabolic differences based on CYP3A5 allelic variants, but does not report in vivo pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, PD effect) in humans. |
-| PD | Mekahli_2023 | not_relevant | 2 | 1 | The paper reports clinical efficacy (mean changes in urine osmolality and kidney volume) but does not provide a concentration-effect or dose-response analysis with numeric PD parameters (e.g., Emax, EC50) or a PK/PD model fit. |
-| PGx | Nguyen_2023 | not_relevant | 2 | 1 | The paper reports a clinical case of a specific adverse event (isolated bilirubin elevation) in a patient with Gilbert syndrome, but it does not report a pharmacokinetic or pharmacodynamic parameter change (e.g., AUC, Cmax, Emax) resulting from the genotype. |
+| PD | Mekahli_2023 | not_relevant | 0 | 0 | The paper is a clinical trial report focusing on efficacy (kidney volume, eGFR) and safety; it does not report a pharmacodynamic model, exposure-response analysis, or numeric PD parameters (e.g., Emax, EC50) for tolvaptan. |
+| PGx | Nguyen_2023 | not_relevant | 4 | 5 | The paper reports a clinical case of altered drug safety (isolated bilirubin elevation) in a patient with a specific genotype (UGT1A1), but it does not report changes in standard pharmacokinetic (e.g., AUC, Cmax) or pharmacodynamic (e.g., aquaresis, serum osmolality) parameters of tolvaptan. |
 | popPK | Oka_2021 | irrelevant | 0 | 0 | This is a clinical outcomes study assessing renal function and diuretic dosing, not a pharmacokinetic study, so no disposition parameters are reported. |
 | popPK | Oruc_2026 | irrelevant | 0 | 0 | The study is a clinical retrospective analysis of inflammatory markers and kidney volume progression in ADPKD patients and contains no pharmacokinetic parameters or population-PK modeling for tolvaptan. |
-| PD | Perrone_2020 | not_relevant | 2 | 1 | The paper reports clinical efficacy (TKV change) for fixed dose groups but does not provide concentration-effect data, PK/PD modeling, or numeric PD parameters like Emax or EC50. |
+| PD | Perrone_2020 | not_relevant | 2 | 1 | The paper is a clinical trial comparing formulations that reports group-level mean changes in kidney volume and urine output, but it does not provide individual subject concentration data or fit a pharmacodynamic model to derive numeric parameters like Emax or EC50. |
 | PD | Plosker_2010 | not_relevant | 0 | 0 | The text describes a safety/tolerability analysis of adverse events in clinical trials and does not report any pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters. |
 | popPK | Saha_2022 | irrelevant | 0 | 0 | The paper is a review on electron crystallography and contains no information regarding tolvaptan or pharmacokinetics. |
 | PD | Saha_2022 | not_relevant | 0 | 0 | The paper is a review on electron diffraction crystallography and contains no pharmacodynamic or exposure-response data for tolvaptan. |

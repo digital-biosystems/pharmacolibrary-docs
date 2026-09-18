@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;esomeprazole&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/&quot;},{&quot;label&quot;:&quot;Chung_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Esomeprazole_Chung2022_reference&quot;,&quot;label&quot;:&quot;Chung_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Esomeprazole_Gebreyesus2022_reference&quot;,&quot;label&quot;:&quot;Gebreyesus_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/Esomeprazole_Gebreyesus2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Esomeprazole_Chung2022_reference&quot;,&quot;label&quot;:&quot;Chung_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Esomeprazole_Nagase2020_reference&quot;,&quot;label&quot;:&quot;Nagase_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/Esomeprazole_Nagase2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Esomeprazole_Gebreyesus2022_reference&quot;,&quot;label&quot;:&quot;Gebreyesus_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/Esomeprazole_Gebreyesus2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -55,6 +55,7 @@ Chung TK; Lee HA; Lee KR; Jang SB; Yu KS; Lee H et al. (2022). CPT: pharmacometr
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Chung_2022:review'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chung_2022:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chung_2022:review'] |

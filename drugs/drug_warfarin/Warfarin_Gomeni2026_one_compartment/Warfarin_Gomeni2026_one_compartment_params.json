@@ -2,7 +2,7 @@
  "model_id": "Warfarin_Gomeni2026_one_compartment",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
  ],
  "parameters": {
   "Cl": 3.777777777777779e-08,
@@ -16,7 +16,7 @@
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 0.008955771975411617
+  "C_central": 0.008955771975411617
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

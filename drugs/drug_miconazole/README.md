@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;miconazole&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Miconazole_Mikamo1997_patients_undergoing_radical_hysterecto&quot;,&quot;label&quot;:&quot;Mikamo_1997_patients undergoing radical hysterectomy and pelvic lymphadenectomy&quot;,&quot;href&quot;:&quot;drugs/drug_miconazole/Miconazole_Mikamo1997_patients_undergoing_radical_hysterecto.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Miconazole_Mikamo1997_reference&quot;,&quot;label&quot;:&quot;Mikamo_1997_reference&quot;,&quot;href&quot;:&quot;drugs/drug_miconazole/Miconazole_Mikamo1997_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # miconazole
 
@@ -20,13 +20,13 @@ Miconazole was first synthesized in 1969 and first granted FDA approval on Janua
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 08:33 | 0:09 | 0/0/0 | 0/0/0 | 0/0/0 | 3,004/260 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-09-18 01:39 | 0:14 | 0/1/0 | 0/0/0 | 0/0/0 | 3,516/759 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Mikamo_1997_patients undergoing radical hysterectomy and pelvic lymphadenectomy](drugs/drug_miconazole/Miconazole_Mikamo1997_patients_undergoing_radical_hysterecto.md) | Mikamo H et al., Pharmacokinetics of miconazole in serum…, International journal of an… (1997) | [10.1016/s0924-8579(97)00050-2](https://doi.org/10.1016/s0924-8579(97)00050-2) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mikamo_1997_reference](drugs/drug_miconazole/Miconazole_Mikamo1997_reference.md) | Mikamo H et al., Pharmacokinetics of miconazole in serum…, International journal of an… (1997) | [10.1016/s0924-8579(97)00050-2](https://doi.org/10.1016/s0924-8579(97)00050-2) |
 
 ## Coverage
 
@@ -43,7 +43,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Mikamo_1997.pdf` | Mikamo H et al., Pharmacokinetics of miconazole in serum…, International journal of an… (1997) | popPK | 9 | [10.1016/s0924-8579(97)00050-2](https://doi.org/10.1016/s0924-8579(97)00050-2) | [9552718](https://pubmed.ncbi.nlm.nih.gov/9552718) | The study reports quantitative pharmacokinetic parameters (Cmax, t1/2, AUC) for miconazole in serum and exudate, derived from a two-compartment model, with specific numeric values provided in the text. |
 
-<sub>queue written 2026-09-10T08:33:33.800494+00:00</sub>
+<sub>queue written 2026-09-18T01:39:00.148992+00:00</sub>
 
 ## Screened and excluded
 

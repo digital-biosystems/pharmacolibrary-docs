@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;abacavir&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/&quot;},{&quot;label&quot;:&quot;Chandasana_2024_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chandasana2024v2_reference&quot;,&quot;label&quot;:&quot;Chandasana_2024_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chandasana2024v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhao2013_reference&quot;,&quot;label&quot;:&quot;Zhao_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhao2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chandasana2024v2_reference&quot;,&quot;label&quot;:&quot;Chandasana_2024_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chandasana2024v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhao2013_reference&quot;,&quot;label&quot;:&quot;Zhao_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhao2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,14 +21,14 @@
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
-> **Dose compound ≠ measured compound:** dosed `abacavir/dolutegravir/lamivudine`, measured `abacavir, dolutegravir, lamivudine`.
+> **Dose compound ≠ measured compound:** dosed `abacavir/dolutegravir/lamivudine`, measured `abacavir`.
 
 ## Citation
 Chandasana H; van Dijkman SC; Mehta R; Bush M; Rabie H; Flynn P; et al. et al. (2024). Infectious diseases and therapy 13
   ·  DOI: [10.1007/s40121-024-01008-y](https://doi.org/10.1007/s40121-024-01008-y)
 
 ## Model component
-<dbs-pgx drug="abacavir" model-id="Abacavir_Chandasana2024v2_reference" status="needs_review" stale="false" population="children with HIV-1" measured-compound="abacavir, dolutegravir, lamivudine" parameterization="apparent" topology="3C"></dbs-pgx>
+<dbs-pgx drug="abacavir" model-id="Abacavir_Chandasana2024v2_reference" status="needs_review" stale="false" population="children with HIV-1" measured-compound="abacavir" parameterization="apparent" topology="3C"></dbs-pgx>
 
 **Parameterization:** CL/F, Q/F, V/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -37,21 +37,21 @@ Chandasana H; van Dijkman SC; Mehta R; Bush M; Rabie H; Flynn P; et al. et al. (
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Apparent clearance, CL/F [L/h] | `Q27` · CL/F | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Chandasana_2024_2_table_1:row0:col1 | — | not captured |
-| Apparent central volume of distribution, V2/F [l] | `Q82` · V2/F | —(suppressed) | not captured | — | not captured | not captured | llm_corrected (0.6) | Chandasana_2024_2_table_1:row1:col1 | — | not captured |
-| Absorption rate constant, KA [h−1] | `Q49` · kabs | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Chandasana_2024_2_table_1:row2:col1, Chandasana_2024_2_table_3:row0:col1 | — | not captured |
-| Intercompartment clearance, Q/F [l/h] | `Q69` · Q/F | —(suppressed) | not captured | — | not captured | not captured | llm_corrected (0.6) | Chandasana_2024_2_table_1:row3:col1 | — | not captured |
-| Apparent peripheral compartment volume of distribution, V3/F [l] | `Q78` · V3/F | —(suppressed) | not captured | — | not captured | not captured | llm_corrected (0.6) | Chandasana_2024_2_table_1:row4:col1 | — | not captured |
-| F, tablet ARROW PK Substudy Part 2 | `Q40` · Fab | —(suppressed) | not captured | — | not captured | not captured | llm (0.6) | Chandasana_2024_2_table_1:row5:col1 | — | not captured |
-| Apparent central volume of distribution, V/F [l] | `Q290` · V1/F | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Chandasana_2024_2_table_2:row1:col1, Chandasana_2024_2_table_3:row2:col1 | — | not captured |
+| Apparent clearance, CL/F [L/h] | `Q27` · CL/F | —(suppressed) | L/h | — | [l] / [h] | 3.62 | llm_confirmed (0.6) | Chandasana_2024_2_table_1:row0:col1 | — | not captured |
+| Apparent central volume of distribution, V2/F [l] | `Q82` · V2/F | —(suppressed) | l | — | [l] | 7.56 | llm_corrected (0.6) | Chandasana_2024_2_table_1:row1:col1 | — | not captured |
+| Absorption rate constant, KA [h−1] | `Q49` · kabs | —(suppressed) | not captured | — | not captured | 2.31 | llm_confirmed (0.6) | Chandasana_2024_2_table_1:row2:col1, Chandasana_2024_2_table_3:row0:col1 | — | not captured |
+| Intercompartment clearance, Q/F [l/h] | `Q69` · Q/F | —(suppressed) | l/h | — | [l] / [h] | 7.87 | llm_corrected (0.6) | Chandasana_2024_2_table_1:row3:col1 | — | not captured |
+| Apparent peripheral compartment volume of distribution, V3/F [l] | `Q78` · V3/F | —(suppressed) | l | — | [l] | 17.4 | llm_corrected (0.6) | Chandasana_2024_2_table_1:row4:col1 | — | not captured |
+| F, tablet ARROW PK Substudy Part 2 | `Q40` · Fab | —(suppressed) | not captured | — | not captured | 8.02 | llm (0.6) | Chandasana_2024_2_table_1:row5:col1 | — | not captured |
+| Apparent central volume of distribution, V/F [l] | `Q290` · V1/F | —(suppressed) | l | — | [l] | 2.42 | llm_confirmed (0.6) | Chandasana_2024_2_table_2:row1:col1, Chandasana_2024_2_table_3:row2:col1 | — | not captured |
 | V/F | `Q76` · V/F | —(suppressed) | not captured | — | not captured | not captured | exact (1.0) | Chandasana_2024_2_table_2:row14:col1, Chandasana_2024_2_table_3:row11:col1 | — | not captured |
-| Lag time ALAG1 (h) | `Q83` · tlag | —(suppressed) | h | — | [h] | not captured | llm_confirmed (0.6) | Chandasana_2024_2_table_3:row1:col1 | — | not captured |
+| Lag time ALAG1 (h) | `Q83` · tlag | —(suppressed) | h | — | [h] | 12.1 | llm_confirmed (0.6) | Chandasana_2024_2_table_3:row1:col1 | — | not captured |
 | theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Chandasana_2024_2_table_1:row7:col1 | — | not captured |
 | theta_q61_wt_power | `Q900` · theta_q61_wt_power | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Chandasana_2024_2_table_1:row8:col1 | — | not captured |
-| theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Chandasana_2024_2_table_2:row7:col1 | — | not captured |
-| theta_v_f_wt_power | `Q900` · theta_v_f_wt_power | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Chandasana_2024_2_table_2:row8:col1 | — | not captured |
-| theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Chandasana_2024_2_table_3:row6:col1 | — | not captured |
-| theta_v_f_wt_power | `Q900` · theta_v_f_wt_power | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Chandasana_2024_2_table_3:row7:col1 | — | not captured |
+| theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | —(suppressed) | not captured | — | not captured | 4.15 | not captured (not captured) | Chandasana_2024_2_table_2:row7:col1 | — | not captured |
+| theta_v_f_wt_power | `Q900` · theta_v_f_wt_power | —(suppressed) | not captured | — | not captured | 3.87 | not captured (not captured) | Chandasana_2024_2_table_2:row8:col1 | — | not captured |
+| theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | —(suppressed) | not captured | — | not captured | 7.07 | not captured (not captured) | Chandasana_2024_2_table_3:row6:col1 | — | not captured |
+| theta_v_f_wt_power | `Q900` · theta_v_f_wt_power | —(suppressed) | not captured | — | not captured | 8.98 | not captured (not captured) | Chandasana_2024_2_table_3:row7:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -73,7 +73,7 @@ Chandasana H; van Dijkman SC; Mehta R; Bush M; Rabie H; Flynn P; et al. et al. (
 - dropped PD-category row 'Hill coefficient related to the slope of the enzyme maturation process' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Chandasana_2024_2_table_2:row11:col1'])
 - dropped duplicate Q49 ('KA', value '76.5') — already have one for this compound
 - covariate effect for Q61 has no base parameter row (kept as unattached equation-variable)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=abacavir, dolutegravir, lamivudine
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=abacavir
 
 **Extraction notes:**
 - companion parameter table 1 transcribed (14 record(s))
@@ -89,10 +89,19 @@ Chandasana H; van Dijkman SC; Mehta R; Bush M; Rabie H; Flynn P; et al. et al. (
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 15 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_center_consistency_wt | fail | not captured | [15.6, 18.5, 70.0] | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Chandasana_2024_2_table_1:row0:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chandasana_2024_2_table_2:row1:col1', 'Chandasana_2024_2_table_3:row2:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Chandasana_2024_2_table_1:row3:col1'] |
+| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chandasana_2024_2_table_1:row4:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chandasana_2024_2_table_1:row1:col1'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Chandasana_2024_2_table_3:row1:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 16.3 L/h | not captured | not captured | ['Chandasana_2024_2_table_1:row0:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 23.1 L | not captured | not captured | ['Chandasana_2024_2_table_2:row1:col1', 'Chandasana_2024_2_table_3:row2:col1'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 10.1 L | not captured | not captured | ['Chandasana_2024_2_table_1:row1:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

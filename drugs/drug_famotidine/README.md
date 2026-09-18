@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;famotidine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Famotidine_Ikawa2007_reference&quot;,&quot;label&quot;:&quot;Ikawa_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_Ikawa2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Famotidine_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Famotidine_Ikawa2007_reference&quot;,&quot;label&quot;:&quot;Ikawa_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_Ikawa2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Famotidine_Maish1998_reference&quot;,&quot;label&quot;:&quot;Maish_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_Maish1998_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Famotidine_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_famotidine/Famotidine_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # famotidine
 
@@ -24,13 +24,14 @@ Over-the-counter famotidine is used for the management and prevention of heartbu
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 15:00 | 3:48 | 2/0/0 | 0/1/0 | 0/0/0 | 44,714/10,466 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
+| 2026-09-18 04:47 | 1:40 | 3/0/0 | 0/1/0 | 0/0/0 | 27,548/4,746 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ikawa_2007_reference](drugs/drug_famotidine/Famotidine_Ikawa2007_reference.md) | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Maish_1998_reference](drugs/drug_famotidine/Famotidine_Maish1998_reference.md) | Maish WA et al., Pharmacokinetics of famotidine in patie…, Journal of clinical pharmac… (1998) | [10.1177/009127009803801104](https://doi.org/10.1177/009127009803801104) |
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [McCann_2023_reference](drugs/drug_famotidine/Famotidine_McCann2023_reference.md) | McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01254-2](https://doi.org/10.1007/s40262-023-01254-2) |
 
 ## Pharmacodynamics (PD)
@@ -43,7 +44,7 @@ Over-the-counter famotidine is used for the management and prevention of heartbu
 
 - **PubMed hits:** 29 matched, 19 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -52,11 +53,11 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Escher_2024.pdf` | Escher OG et al., Pharmacokinetics of famotidine in goats…, Journal of veterinary pharm… (2024) | popPK | 10 | [10.1111/jvp.13449](https://doi.org/10.1111/jvp.13449) | [38720597](https://pubmed.ncbi.nlm.nih.gov/38720597) | The study reports quantitative non-compartmental pharmacokinetic parameters (Vd, t1/2, MRT, AUC) for famotidine in goats directly in the text. |
+| `Escher_2024.pdf` | Escher OG et al., Pharmacokinetics of famotidine in goats…, Journal of veterinary pharm… (2024) | popPK | 10 | [10.1111/jvp.13449](https://doi.org/10.1111/jvp.13449) | [38720597](https://pubmed.ncbi.nlm.nih.gov/38720597) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, t1/2, MRT, Vd, AUC) for famotidine in goats directly in the text. |
 | `Maish_1998.pdf` | Maish WA et al., Pharmacokinetics of famotidine in patie…, Journal of clinical pharmac… (1998) | popPK | 10 | [10.1177/009127009803801104](https://doi.org/10.1177/009127009803801104) | [9824781](https://pubmed.ncbi.nlm.nih.gov/9824781) | The study reports quantitative compartmental PK parameters (Cl, Vd, t1/2) for famotidine with specific numeric values present in the text. |
 | `Nagita_1994.pdf` | Nagita A et al., Pharmacokinetics and pharmacodynamics o…, Therapeutic drug monitoring (1994) | popPK | 10 | [10.1097/00007691-199410000-00002](https://doi.org/10.1097/00007691-199410000-00002) | [7846741](https://pubmed.ncbi.nlm.nih.gov/7846741) | The paper reports quantitative pharmacokinetic parameters (Vd, t1/2, AUC, bioavailability) for famotidine in children, with all numeric values explicitly present in the text. |
 
-<sub>queue written 2026-09-10T14:56:53.650354+00:00</sub>
+<sub>queue written 2026-09-18T04:46:27.839443+00:00</sub>
 
 ## Screened and excluded
 
@@ -64,7 +65,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | McCann_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of posaconazole, with famotidine serving only as a co-administered drug to assess its effect on posaconazole bioavailability. |
 | popPK | Schlachter_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of atogepant, with famotidine mentioned only as a concomitant medication that does not require dose adjustment. |
-| popPK | Wilton_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the FAK scaffold inhibitor C4 in dogs, not famotidine. |
+| popPK | Wilton_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the drug C4 in dogs, not famotidine. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_famotidine`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

@@ -1,35 +1,51 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;doxycycline&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/&quot;},{&quot;label&quot;:&quot;Toutain_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxycycline_Altan2024_reference&quot;,&quot;label&quot;:&quot;Altan_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Altan2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Toutain2025_bsv&quot;,&quot;label&quot;:&quot;Toutain_2025_bsv&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Toutain2025_bsv.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Toutain2025_bsv&quot;,&quot;label&quot;:&quot;Toutain_2025_bsv&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Toutain2025_bsv.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Toutain2025_reference&quot;,&quot;label&quot;:&quot;Toutain_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Toutain2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Doxycycline_Toutain2025_units&quot;,&quot;label&quot;:&quot;Toutain_2025_units&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Toutain2025_units.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Toutain2025_units&quot;,&quot;label&quot;:&quot;Toutain_2025_units&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Toutain2025_units.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Duyen2026_reference&quot;,&quot;label&quot;:&quot;Duyen_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Duyen2026_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Mileva2021_estimates&quot;,&quot;label&quot;:&quot;Mileva_2021_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Mileva2021_estimates.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Mileva2021_estimates&quot;,&quot;label&quot;:&quot;Mileva_2021_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Mileva2021_estimates.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Mileva2021_parameter_name&quot;,&quot;label&quot;:&quot;Mileva_2021_parameter_name&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Mileva2021_parameter_name.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Mileva2021_parameter_name&quot;,&quot;label&quot;:&quot;Mileva_2021_parameter_name&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Mileva2021_parameter_name.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Mileva2021_units&quot;,&quot;label&quot;:&quot;Mileva_2021_units&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Mileva2021_units.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Mileva2021_units&quot;,&quot;label&quot;:&quot;Mileva_2021_units&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Mileva2021_units.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Petkova2022_estimates&quot;,&quot;label&quot;:&quot;Petkova_2022_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Petkova2022_estimates.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Petkova2022_estimates&quot;,&quot;label&quot;:&quot;Petkova_2022_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Petkova2022_estimates.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Petkova2022_units&quot;,&quot;label&quot;:&quot;Petkova_2022_units&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Petkova2022_units.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Petkova2022_units&quot;,&quot;label&quot;:&quot;Petkova_2022_units&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Petkova2022_units.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Toutain2025_estimate&quot;,&quot;label&quot;:&quot;Toutain_2025_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Toutain2025_estimate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Toutain2025_estimate&quot;,&quot;label&quot;:&quot;Toutain_2025_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Toutain2025_estimate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxycycline_Altan2024_reference&quot;,&quot;label&quot;:&quot;Altan_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Altan2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Thompson2019_reference&quot;,&quot;label&quot;:&quot;Thompson_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Thompson2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Duyen2026_reference&quot;,&quot;label&quot;:&quot;Duyen_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Duyen2026_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Mileva2021_reference&quot;,&quot;label&quot;:&quot;Mileva_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Mileva2021_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Petkova2022_reference&quot;,&quot;label&quot;:&quot;Petkova_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Petkova2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Toutain2025_reference&quot;,&quot;label&quot;:&quot;Toutain_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Toutain2025_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Doxycycline_Yang2016_reference&quot;,&quot;label&quot;:&quot;Yang_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Yang2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # doxycycline — `Doxycycline_Toutain2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
 
 ### Reviewer guidance
 
-**What is wrong:** every check the reviewer could run passed
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `CL`, `MAT`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
 
 **Steps:**
-1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+1. Not a curation fix — scholar limitation.
+2. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
+3. If the paper never reports it, the record cannot become a model.
+4. Advisory only — the base model still replicates.
+5. Check the record's covariate_definitions in _interpretv2.yaml.
+6. Re-run the engineer for this drug if the covariate curves are wanted.
 
-<sub>owner: **curator** · guidance written by playbook</sub>
+<sub>owner: **scholar** · guidance written by playbook</sub>
 
 ## Citation
 Toutain PL; Bousquet-Melou A; Ferran AA; Roques BB; Del Castillo JRE; Lees P; et al. et al. (2025). Journal of veterinary pharmacology and therapeutics 48
   ·  DOI: [10.1111/jvp.13511](https://doi.org/10.1111/jvp.13511)
 
 ## Model component
-<dbs-pgx drug="doxycycline" model-id="Doxycycline_Toutain2025_reference" status="curated_candidate" stale="false" population="pigs" measured-compound="doxycycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="doxycycline" model-id="Doxycycline_Toutain2025_reference" status="model_quarantined" stale="false" population="pigs" measured-compound="doxycycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| clearance | `Q22` · CL | 0.26 | L/kg/h | 5.0555555555555555e-06 | L/h | not captured | review (0.7) | Toutain_2025:review | — | not captured |
-| V (derived from CL·t½/ln2) | `Q61` · V | 135.4864 | L | 0.13548637667996433 | L | not captured | review (0.7) | Toutain_2025:review | — | not captured |
+| Vc | `Q63` · V1 | —(suppressed) | not captured | — | not captured | 107.8 | exact (1.0) | jvp13511-tbl-0006:row2:col1, jvp13511-tbl-0006:row2:col6 | — | not captured |
+| V2 | `Q64` · V2 | —(suppressed) | not captured | — | not captured | 63.4 | exact (1.0) | jvp13511-tbl-0006:row3:col1, jvp13511-tbl-0006:row3:col6 | — | not captured |
+| V3 | `Q77` · V3 | —(suppressed) | not captured | — | not captured | 47.5 | exact (1.0) | jvp13511-tbl-0006:row4:col1, jvp13511-tbl-0006:row4:col6 | — | not captured |
+| Clearance | `Q22` · CL | —(suppressed) | Thetas fixed and OMEGA estimated | — | [thetasfixedandomegaestimated] | 27.1 | exact (1.0) | jvp13511-tbl-0006:row5:col1, jvp13511-tbl-0006:row5:col6 | — | not captured |
+| Cld2 | `Q30` · Q | —(suppressed) | not captured | — | not captured | 80.0 | special_case (0.95) | jvp13511-tbl-0006:row6:col1, jvp13511-tbl-0006:row6:col6 | — | not captured |
+| MAT_FEED_TLS | `Q73` · MAT | —(suppressed) | feed, field conditions | — | [feed] | 6.54 | llm (0.6) | jvp13511-tbl-0006:row16:col1, jvp13511-tbl-0006:row16:col3, jvp13511-tbl-0006:row16:col4, jvp13511-tbl-0006:row16:col5 | — | not captured |
+| theta_q88_category | `Q900` · theta_q88_category | —(suppressed) | not captured | — | not captured | 3.81 | not captured (not captured) | jvp13511-tbl-0006:row17:col1, jvp13511-tbl-0006:row17:col3, jvp13511-tbl-0006:row17:col4, jvp13511-tbl-0006:row17:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -39,8 +55,44 @@ Toutain PL; Bousquet-Melou A; Ferran AA; Roques BB; Del Castillo JRE; Lees P; et
 ## Departures & gaps
 
 **Interpretation flags:**
-- built from REVIEW reference values (Toutain_2025) — secondary source
-- central volume derived from CL·t½/ln2
+- column 'units' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- unit_dimension_unknown: 'Thetas fixed and OMEGA estimated' (CL)
+- dropped unlinked row (NIL): 'Cld3' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row7:col1', 'jvp13511-tbl-0006:row7:col6'])
+- dropped duplicate Q22 ('Cov BW Cl', value '0.299') — already have one for this compound
+- dropped duplicate Q22 ('Cov BW Cl2', value '-0.224') — already have one for this compound
+- dropped duplicate Q22 ('Cov BW Cl3', value '-0.544') — already have one for this compound
+- unit_dimension_unknown: 'Thetas fixed and OMEGA estimated' (V3)
+- dropped duplicate Q77 ('Cov BW V3', value '0.376') — already have one for this compound
+- dropped unlinked row (NIL): 'CMultStdevOR_FEEDOTHERS' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row12:col1', 'jvp13511-tbl-0006:row24:col1', 'jvp13511-tbl-0006:row24:col3', 'jvp13511-tbl-0006:row24:col4', 'jvp13511-tbl-0006:row24:col5'])
+- dropped unlinked row (NIL): 'KaOR_FEED_TLS' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row14:col1', 'jvp13511-tbl-0006:row14:col2', 'jvp13511-tbl-0006:row14:col3', 'jvp13511-tbl-0006:row14:col4', 'jvp13511-tbl-0006:row14:col5', 'jvp13511-tbl-0006:row14:col6'])
+- dropped unlinked row (NIL): 'F_FEED_TLS' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row15:col1', 'jvp13511-tbl-0006:row15:col3', 'jvp13511-tbl-0006:row15:col4', 'jvp13511-tbl-0006:row15:col5', 'jvp13511-tbl-0006:row15:col6'])
+- unit_dimension_unknown: 'feed, field conditions' (MAT)
+- dropped unlinked row (NIL): 'CMultStdevOR_FEEDTLS' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row18:col1', 'jvp13511-tbl-0006:row18:col3', 'jvp13511-tbl-0006:row18:col4', 'jvp13511-tbl-0006:row18:col5'])
+- dropped unlinked row (NIL): 'KaOR_FEED_OTHERS' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row20:col1', 'jvp13511-tbl-0006:row20:col2', 'jvp13511-tbl-0006:row20:col3', 'jvp13511-tbl-0006:row20:col4', 'jvp13511-tbl-0006:row20:col5', 'jvp13511-tbl-0006:row20:col6'])
+- dropped unlinked row (NIL): 'F_FEED_OTHERS' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row21:col1', 'jvp13511-tbl-0006:row21:col3', 'jvp13511-tbl-0006:row21:col4', 'jvp13511-tbl-0006:row21:col5', 'jvp13511-tbl-0006:row21:col6'])
+- unit_dimension_unknown: 'feed, laboratory conditions' (MAT)
+- dropped duplicate Q73 ('MAT_FEED_OTHERS', value '6.95') — already have one for this compound
+- dropped unlinked row (NIL): 'KaOR_SOLTUBING' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row26:col1', 'jvp13511-tbl-0006:row26:col2', 'jvp13511-tbl-0006:row26:col3', 'jvp13511-tbl-0006:row26:col4', 'jvp13511-tbl-0006:row26:col5', 'jvp13511-tbl-0006:row26:col6'])
+- dropped unlinked row (NIL): 'F_SOLTUBING' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row27:col1', 'jvp13511-tbl-0006:row27:col3', 'jvp13511-tbl-0006:row27:col4', 'jvp13511-tbl-0006:row27:col5', 'jvp13511-tbl-0006:row27:col6'])
+- unit_dimension_unknown: 'drinking water, stomach tubing' (MAT)
+- dropped duplicate Q73 ('MAT_SOL_TUBING', value '1.38') — already have one for this compound
+- dropped unlinked row (NIL): 'CMultStdevOR_SOL_TUBING' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row30:col1', 'jvp13511-tbl-0006:row30:col3', 'jvp13511-tbl-0006:row30:col4', 'jvp13511-tbl-0006:row30:col5'])
+- dropped unlinked row (NIL): 'KaOR_SOL_DW' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row32:col1', 'jvp13511-tbl-0006:row32:col2', 'jvp13511-tbl-0006:row32:col3', 'jvp13511-tbl-0006:row32:col4', 'jvp13511-tbl-0006:row32:col5', 'jvp13511-tbl-0006:row32:col6'])
+- dropped unlinked row (NIL): 'F_SOL_DW' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row33:col1', 'jvp13511-tbl-0006:row33:col3', 'jvp13511-tbl-0006:row33:col4', 'jvp13511-tbl-0006:row33:col5', 'jvp13511-tbl-0006:row33:col6'])
+- unit_dimension_unknown: 'drinking water, spontaneous intake' (MAT)
+- dropped duplicate Q73 ('MAT_SOL_DW', value '1.45') — already have one for this compound
+- dropped unlinked row (NIL): 'CMultStdevOR_SOL_DW' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row36:col1', 'jvp13511-tbl-0006:row36:col3', 'jvp13511-tbl-0006:row36:col4', 'jvp13511-tbl-0006:row36:col5'])
+- dropped unlinked row (NIL): 'stdev0 IV' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row38:col1', 'jvp13511-tbl-0006:row38:col3', 'jvp13511-tbl-0006:row38:col4', 'jvp13511-tbl-0006:row38:col5'])
+- dropped unlinked row (NIL): 'stdev1 Trial TLS' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row39:col1', 'jvp13511-tbl-0006:row39:col3', 'jvp13511-tbl-0006:row39:col4', 'jvp13511-tbl-0006:row39:col5'])
+- dropped unlinked row (NIL): 'stdev2 trials FEED_OTHERS' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row40:col1', 'jvp13511-tbl-0006:row40:col3', 'jvp13511-tbl-0006:row40:col4', 'jvp13511-tbl-0006:row40:col5'])
+- dropped unlinked row (NIL): 'stdev3 trials Stomach tubing' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row41:col1', 'jvp13511-tbl-0006:row41:col3', 'jvp13511-tbl-0006:row41:col4', 'jvp13511-tbl-0006:row41:col5'])
+- dropped unlinked row (NIL): 'stdev4 Trials drinking water' — extend the ontology if this is a real PK parameter (source ['jvp13511-tbl-0006:row42:col1', 'jvp13511-tbl-0006:row42:col3', 'jvp13511-tbl-0006:row42:col4', 'jvp13511-tbl-0006:row42:col5'])
+- covariate effect for Q88 has no base parameter row (kept as unattached equation-variable)
+- dropped duplicate covariate effect 'category'/'' on Q88 — ambiguous identity (two shifts cannot share one category)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=doxycycline
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
+- status held at route_to_review — not promoted
 
 **Extraction notes:**
 - LLM selected parameter table(s) 6
@@ -52,24 +104,21 @@ Toutain PL; Bousquet-Melou A; Ferran AA; Roques BB; Del Castillo JRE; Lees P; et
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Toutain_2025:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Toutain_2025:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.26 | not captured | not captured | ['Toutain_2025:review'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.259 | not captured | not captured | ['jvp13511-tbl-0006:row5:col1', 'jvp13511-tbl-0006:row5:col6'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 18.2 L/h | not captured | not captured | ['Toutain_2025:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 135 L | not captured | not captured | ['Toutain_2025:review'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T3_output_variable | not captured | pass | C_central (measured=doxycycline) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -79,8 +128,8 @@ Toutain PL; Bousquet-Melou A; Ferran AA; Roques BB; Del Castillo JRE; Lees P; et
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_doxycycline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Toutain_2025` / `Toutain_2025::reference`)
-- model: `../../../knowledgebase/drugs/drug_doxycycline/models/modelica/Doxycycline_Toutain2025_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_doxycycline/models/modelica/Doxycycline_Toutain2025_reference.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_doxycycline/models/modelica/_needs_review/Doxycycline_Toutain2025_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_doxycycline/models/modelica/_needs_review/Doxycycline_Toutain2025_reference.deviation.json`
 - sim: `../../../knowledgebase/drugs/drug_doxycycline/models/modelica/Doxycycline_Toutain2025_reference.json`
 
 

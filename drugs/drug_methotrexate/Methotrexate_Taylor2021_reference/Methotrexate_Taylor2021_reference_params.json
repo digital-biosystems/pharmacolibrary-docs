@@ -1,0 +1,24 @@
+{
+ "model_id": "Methotrexate_Taylor2021_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "C_central"
+ ],
+ "parameters": {
+  "Cl": 2.1194444444444444e-06,
+  "F": 0.9,
+  "Tlag": 1296.0,
+  "VdPerKg": 0.005,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 3.101851851851852e-06,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "C_central": 4.610962216948199e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

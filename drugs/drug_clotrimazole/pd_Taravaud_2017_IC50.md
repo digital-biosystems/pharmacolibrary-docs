@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# IC50 — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Taravaud_2017`
 - **model family:** `unknown`

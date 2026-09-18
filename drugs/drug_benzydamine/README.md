@@ -23,7 +23,7 @@ When used as a topical cream, benzydamine may be employed to relieve symptoms as
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 05:26 | 11:15 | 0/0/0 | 0/0/0 | 0/0/0 | 51,117/3,590 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/1 | 3/0 | 0 |
+| 2026-09-18 01:24 | 4:57 | 0/0/0 | 0/0/0 | 0/0/0 | 52,974/3,253 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/1 | 3/0 | 0 |
 
 ## popPK records
 
@@ -49,7 +49,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Müller-Peddinghaus_1987.pdf` | Müller-Peddinghaus R et al., [The effect of benzydamine on the gener…, Arzneimittel-Forschung (1987) | pd | 4 | not captured | [3040020](https://www.ncbi.nlm.nih.gov/pubmed/3040020) | metadata signals extractable PD data (IC50) |
 | `Giri_2022.pdf` | Giri P et al., ZY12201, A Potent TGR5 Agonist: Identif…, Drug metabolism letters (2022) | pgx | 7 | [10.2174/1872312815666220315145945](https://doi.org/10.2174/1872312815666220315145945) | [35293300](https://www.ncbi.nlm.nih.gov/pubmed/35293300) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
 
-<sub>queue written 2026-09-10T05:24:28.054615+00:00</sub>
+<sub>queue written 2026-09-18T01:22:05.744285+00:00</sub>
 
 ## Screened and excluded
 
@@ -62,24 +62,24 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Gao_2016 | not_relevant | 2 | 0 | The paper focuses on structural modeling and molecular docking of hFMO3 variants with benzydamine, providing mechanistic insights into binding but reporting no in vivo or in vitro pharmacokinetic/pharmacodynamic parameter changes. |
 | popPK | Gentile_2025 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on ER stress and cell viability, not a pharmacokinetic study, and contains no PK parameters for benzydamine. |
 | PD | Gentile_2025 | not_relevant | 2 | 1 | The paper reports qualitative cytoprotective effects and mentions nanomolar concentrations for benzydamine, but provides no numeric dose-response curves, Emax, or EC50 values in the text. |
-| popPK | Giri_2022 | irrelevant | 0 | 0 | The paper focuses on a TGR5 agonist (ZY12201) and CYP450 inhibition, with no mention of benzydamine or its pharmacokinetic parameters. |
+| popPK | Giri_2022 | irrelevant | 0 | 0 | no_text gate: only 116 chars of text extracted (&lt; 400) |
 | PD | Giri_2022 | not_relevant | 0 | 0 | The paper focuses on ZY12201, a TGR5 agonist and CYP450 inhibitor, and does not contain any pharmacodynamic or exposure-response data for benzydamine. |
 | PGx | Giri_2022 | not_relevant | 0 | 0 | The paper describes a CYP450 inhibitor tool compound (ZY12201) and does not report pharmacogenomic effects on benzydamine. |
 | popPK | Guglielmotti_1997 | irrelevant | 0 | 0 | The study is a pharmacodynamic/toxicology investigation of benzydamine's protective effects in a mouse model of endotoxemia and does not report any pharmacokinetic parameters. |
 | PGx | Hoskins_2001 | not_relevant | 0 | 0 | The paper investigates the metabolism of moclobemide, not benzydamine, and does not report pharmacogenomic effects on benzydamine PK/PD. |
 | PGx | Ichinose_2024 | not_relevant | 0 | 0 | The paper compares species differences in xenobiotic metabolism using liver slices and does not investigate the effect of specific gene variants or genotypes on pharmacokinetic or pharmacodynamic parameters. |
-| popPK | Jansen_1987 | irrelevant | 0 | 0 | The paper focuses on the antithrombotic action of benzydamine, which is a pharmacodynamic/mechanistic study, and no pharmacokinetic parameters are reported in the evidence. |
+| popPK | Jansen_1987 | irrelevant | 0 | 0 | no_text gate: only 38 chars of text extracted (&lt; 400) |
 | PD | Jansen_1987 | not_relevant | 0 | 0 | The provided text is only a title and contains no data, analysis, or numeric parameters to assess pharmacodynamic relationships. |
 | popPK | Kalil_2014 | irrelevant | 0 | 0 | The paper is a review of clinical efficacy for preventing postoperative sore throat and does not report any pharmacokinetic parameters for benzydamine. |
 | PD | Kalil_2014 | not_relevant | 1 | 0 | The paper is a review of clinical trials regarding the efficacy of benzydamine for sore throat and explicitly states that dose-response relationships need to be explored in future trials, providing no numeric PD parameters. |
 | popPK | Kaval_2022 | irrelevant | 0 | 0 | The study is an in-vitro investigation of anti-inflammatory cytokine expression and cytotoxicity, containing no pharmacokinetic parameters for benzydamine. |
 | PGx | Lang_2000 | not_relevant | 0 | 0 | The paper reports in vitro enzyme kinetics for benzydamine metabolism by FMO and P450 isoforms but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | PGx | Larsen_2023 | not_relevant | 0 | 0 | The paper investigates the inhibitory effects of acaricides on liver enzymes in bovine microsomes and does not report any pharmacogenomic effects (gene variants) on the PK/PD of benzydamine. |
-| popPK | Miró_2020 | irrelevant | 0 | 0 | The paper focuses on in vitro inhibition of albendazole by thymol and does not involve benzydamine or report its pharmacokinetic parameters. |
+| popPK | Miró_2020 | irrelevant | 0 | 0 | no_text gate: only 123 chars of text extracted (&lt; 400) |
 | PD | Miró_2020 | not_relevant | 0 | 0 | The paper investigates the in vitro inhibition of albendazole metabolism by thymol, not the pharmacodynamics of benzydamine. |
-| popPK | Moncada_1976 | irrelevant | 0 | 0 | The paper concerns prostaglandin and thromboxane systems, not the pharmacokinetics of benzydamine. |
+| popPK | Moncada_1976 | irrelevant | 0 | 0 | no_text gate: only 92 chars of text extracted (&lt; 400) |
 | PD | Moncada_1976 | not_relevant | 0 | 0 | The provided text is a title regarding prostaglandin systems and does not contain any data, analysis, or mention of benzydamine or its pharmacodynamic parameters. |
-| popPK | Müller-Peddinghaus_1987 | irrelevant | 0 | 0 | The paper focuses on the mechanistic effects of benzydamine on reactive oxygen species and enzymes, not on pharmacokinetic parameters. |
+| popPK | Müller-Peddinghaus_1987 | irrelevant | 0 | 0 | no_text gate: only 116 chars of text extracted (&lt; 400) |
 | PD | Müller-Peddinghaus_1987 | not_relevant | 0 | 0 | The paper investigates the biochemical mechanism of benzydamine on reactive oxygen species and enzyme pathways, not a pharmacokinetic-pharmacodynamic (PK/PD) or exposure-response relationship with numeric PD parameters. |
 | popPK | Obrador_2026 | irrelevant | 0 | 0 | The paper is a review of radiomitigators for radiation injury and does not contain any pharmacokinetic data or mention of benzydamine. |
 | PD | Obrador_2026 | not_relevant | 0 | 0 | The text is a general review of radiomitigators and does not contain any specific data, analysis, or mention of benzydamine or its pharmacodynamic parameters. |

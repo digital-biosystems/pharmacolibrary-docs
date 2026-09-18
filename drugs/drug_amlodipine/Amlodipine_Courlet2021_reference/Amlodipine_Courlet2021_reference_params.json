@@ -2,21 +2,21 @@
  "model_id": "Amlodipine_Courlet2021_reference",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
  ],
  "parameters": {
-  "Cl": 4.747222222222223e-06,
+  "Cl": 4.722222222222222e-06,
   "F": 1.0,
-  "Tlag": 3096.0,
+  "Tlag": 3132.0,
   "VdPerKg": 0.014285714285714285,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
-  "ka": 0.00018333333333333334,
+  "ka": 0.00019166666666666665,
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 8.979977381174378e-05
+  "C_central": 9.105217479129188e-05
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

@@ -65,6 +65,7 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
 - dropped unlinked row (NIL): '0 min [%]' — extend the ontology if this is a real PK parameter (source ['Grafeneder_2024_table_3:row19:col3'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clopidogrel active metabolite
 - population split: 'hv' subgroup of Grafeneder_2024 (paper reports 2 populations: hdp, hv)
+- review gap-fill skipped: this record measures 'clopidogrel active metabolite', not clopidogrel — the review values are the parent's
 - engineer: parent_metabolite composite downgraded to a 1C model of the measured compound — the paper reports the metabolite's own CL and V but neither the parent's disposition nor a formation rate, so the parent sub-component could not be populated; the parent's concentration-time course is NOT produced by this model
 
 **Extraction notes:**
@@ -196,7 +197,7 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv/Clopidogrel_Grafeneder2024_hv_modelica.zip" download>Clopidogrel_Grafeneder2024_hv_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv/Clopidogrel_Grafeneder2024_hv_modelica.zip" download>Clopidogrel_Grafeneder2024_hv_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv/Clopidogrel_Grafeneder2024_hv_fmi.zip" download>Clopidogrel_Grafeneder2024_hv_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv/Clopidogrel_Grafeneder2024_hv_matlab.zip" download>Clopidogrel_Grafeneder2024_hv_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv/Clopidogrel_Grafeneder2024_hv_matlab_simbio.zip" download>Clopidogrel_Grafeneder2024_hv_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

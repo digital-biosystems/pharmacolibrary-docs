@@ -11,7 +11,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 05:07 | 3:54 | 0/0/0 | 1/0/0 | 0/0/0 | 67,664/2,821 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 5/0 | 0 |
+| 2026-09-18 01:15 | 3:25 | 0/0/0 | 1/0/0 | 0/0/0 | 124,726/1,808 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 5/0 | 0 |
 
 ## popPK records
 
@@ -29,7 +29,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 6 matched, 6 returned
+- **PubMed hits:** 7 matched, 7 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -38,7 +38,7 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Apgar_2018 | irrelevant | 0 | 0 | The paper describes a QSP model for hUGT1A1-modRNA to treat Crigler-Najjar syndrome and does not study the drug benzoxonium. |
+| popPK | Apgar_2018 | irrelevant | 0 | 0 | The paper studies hUGT1A1-modRNA (an mRNA therapeutic) for Crigler-Najjar syndrome, not benzoxonium. |
 | popPK | Belenichev_2025 | irrelevant | 0 | 0 | The paper studies the neuroprotective effects of Angiolin gel in rats and does not report pharmacokinetic parameters for benzoxonium. |
 | PD | Belenichev_2025 | not_relevant | 0 | 0 | The paper reports a comparative efficacy study of Angiolin gel (not Benzoxonium) in a rat model, providing group-level mean effects without any concentration-effect or dose-response modeling or numeric PD parameters. |
 | popPK | EFSA_2023 | irrelevant | 0 | 0 | The paper is a risk assessment of N-nitrosamines in food and does not involve the drug benzoxonium or report any pharmacokinetic parameters. |
@@ -46,6 +46,8 @@ _not available_
 | popPK | Futane_2023 | irrelevant | 0 | 0 | The paper is a review on aptamer-based biosensors for point-of-care diagnostics and does not contain any pharmacokinetic data or parameters for benzoxonium. |
 | PD | Futane_2023 | not_relevant | 0 | 0 | The paper is a review on aptamer-based biosensors for point-of-care diagnosis and does not contain any pharmacodynamic or exposure-response data for Benzoxonium. |
 | popPK | Hakimi_2019 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of antileishmanial activity and immune modulation, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Kayukova_2026 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in vitro biological activity of new amidoxime derivatives, not a pharmacokinetic study of benzoxonium. |
+| PD | Kayukova_2026 | not_relevant | 0 | 0 | The paper reports the synthesis and qualitative screening of new compounds for antimicrobial, antifungal, and antidiabetic activity, but does not mention Benzoxonium or provide any numeric pharmacodynamic parameters (e.g., MIC, IC50, Emax) or exposure-response relationships. |
 | popPK | Mertes_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of transcrocetin (TC) in a liposomal formulation, not benzoxonium. |
 | PD | Mertes_2022 | not_relevant | 0 | 0 | The paper reports clinical outcomes (PaO2/FiO2, SOFA) and dose-limiting toxicity for a liposomal formulation (LEAF-4L6715), but does not report pharmacokinetic data, exposure-response relationships, or numeric PD parameters for Benzoxonium. |
 

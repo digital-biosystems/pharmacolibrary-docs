@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;abacavir&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/&quot;},{&quot;label&quot;:&quot;Fauchet_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chandasana2024v2_reference&quot;,&quot;label&quot;:&quot;Chandasana_2024_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chandasana2024v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhao2013_reference&quot;,&quot;label&quot;:&quot;Zhao_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhao2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chandasana2024v2_reference&quot;,&quot;label&quot;:&quot;Chandasana_2024_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chandasana2024v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhao2013_reference&quot;,&quot;label&quot;:&quot;Zhao_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhao2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -36,9 +36,9 @@ Fauchet F; Treluyer JM; Préta LH; Valade E; Pannier E; Urien S; et al. et al. (
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (liter • h Ϫ1 ) | `Q27` · CL/F | —(suppressed) | liter • h Ϫ1 | — | [h] · [l] · [ϫ1] | 4.5 | exact (1.0) | tab_0:row2:col1, tab_0:row2:col2, tab_0:row2:col3 | — | not captured |
+| CL/F (liter • h Ϫ1 ) | `Q27` · CL/F | —(suppressed) | liter • h Ϫ1 | — | [l] / [h] | 4.5 | exact (1.0) | tab_0:row2:col1, tab_0:row2:col2, tab_0:row2:col3 | — | not captured |
 | V/F (liters) | `Q76` · V/F | —(suppressed) | liters | — | [l] | 5.8 | exact (1.0) | tab_0:row3:col1, tab_0:row3:col2, tab_0:row3:col3 | — | not captured |
-| ka | `Q49` · kabs | —(suppressed) | h-1 | — | 1/h | not captured | review_gapfill (0.7) | Zhang_2015:review | — | not captured |
+| K a (/h) | `Q49` · kabs | —(suppressed) | /h | — | 1/h | not captured | review_gapfill (0.7) | Chupradit_2024:review | — | not captured |
 | T LAG (h) | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review_gapfill (0.7) | Chupradit_2024:review | — | not captured |
 
 <details class="legend">
@@ -50,7 +50,7 @@ Fauchet F; Treluyer JM; Préta LH; Valade E; Pannier E; Urien S; et al. et al. (
 
 **Interpretation flags:**
 - unit_dimension_unknown: 'liter • h Ϫ1' (CL/F)
-- unit_dimension_unknown: 'h Ϫ1' (CL/F)
+- unit_dimension_mismatch: 'CL/F' → Q27 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q27 ('CL/F', value '0.167') — already have one for this compound
 - dropped unlinked row (NIL): 'ABC' — extend the ontology if this is a real PK parameter (source ['tab_0:row5:col1', 'tab_0:row5:col2', 'tab_0:row5:col3'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=abacavir
@@ -58,7 +58,7 @@ Fauchet F; Treluyer JM; Préta LH; Valade E; Pannier E; Urien S; et al. et al. (
 - status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Zhang_2015's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Chupradit_2024's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Chupradit_2024's review values (primary lacked it)
 
 **Extraction notes:**
@@ -72,7 +72,8 @@ Fauchet F; Treluyer JM; Préta LH; Valade E; Pannier E; Urien S; et al. et al. (
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Zhang_2015:review'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chupradit_2024:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row3:col1', 'tab_0:row3:col2', 'tab_0:row3:col3'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Chupradit_2024:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |

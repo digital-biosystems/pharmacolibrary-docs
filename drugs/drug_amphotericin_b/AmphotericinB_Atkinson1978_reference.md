@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;amphotericin B&quot;,&quot;href&quot;:&quot;drugs/drug_amphotericin_b/&quot;},{&quot;label&quot;:&quot;Atkinson_1978 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AmphotericinB_Atkinson1978_reference&quot;,&quot;label&quot;:&quot;Atkinson_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amphotericin_b/AmphotericinB_Atkinson1978_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AmphotericinB_Atkinson1978_reference&quot;,&quot;label&quot;:&quot;Atkinson_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amphotericin_b/AmphotericinB_Atkinson1978_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;AmphotericinB_Stott2018_reference&quot;,&quot;label&quot;:&quot;Stott_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amphotericin_b/AmphotericinB_Stott2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AmphotericinB_Stott2022_reference&quot;,&quot;label&quot;:&quot;Stott_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,6 +21,8 @@
 3. If the paper never reports it, the record cannot become a model.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
+
+> **Dose compound ≠ measured compound:** dosed `amphotericin_b`, measured `amphotericin B`.
 
 ## Citation
 Atkinson AJ; Bennett JE et al. (1978). Antimicrobial agents and chemotherapy 13

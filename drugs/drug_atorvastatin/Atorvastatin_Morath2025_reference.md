@@ -1,38 +1,36 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;atorvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/&quot;},{&quot;label&quot;:&quot;Morath_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atorvastatin_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Stillemans2022_shrinkage&quot;,&quot;label&quot;:&quot;Stillemans_2022_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Stillemans2022_shrinkage.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Stillemans2022_shrinkage&quot;,&quot;label&quot;:&quot;Stillemans_2022_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Stillemans2022_shrinkage.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Malekinejad2014_reference&quot;,&quot;label&quot;:&quot;Malekinejad_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Malekinejad2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Morath2025_reference&quot;,&quot;label&quot;:&quot;Morath_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atorvastatin_Park2017_reference&quot;,&quot;label&quot;:&quot;Park_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Park2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Wen2023_reference&quot;,&quot;label&quot;:&quot;Wen_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Wen2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Stillemans2022_estimate&quot;,&quot;label&quot;:&quot;Stillemans_2022_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Stillemans2022_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Stillemans2022_estimate&quot;,&quot;label&quot;:&quot;Stillemans_2022_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Stillemans2022_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atorvastatin_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Li2024_reference&quot;,&quot;label&quot;:&quot;Li_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Li2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Morath2025_reference&quot;,&quot;label&quot;:&quot;Morath_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atorvastatin_Malekinejad2014_reference&quot;,&quot;label&quot;:&quot;Malekinejad_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Malekinejad2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Park2017_reference&quot;,&quot;label&quot;:&quot;Park_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Park2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Stillemans2022_reference&quot;,&quot;label&quot;:&quot;Stillemans_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Stillemans2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Wen2023_reference&quot;,&quot;label&quot;:&quot;Wen_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Wen2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atorvastatin — `Atorvastatin_Morath2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
 Morath B; Foerster KI; Chiriac U; Zaradzki M; Hoppe-Tichy T; Schrey D; Burhenne J; Czock D; Karck M; Haefeli WE; Wicha SG et al. (2025). Clinical pharmacokinetics 64
   ·  DOI: [10.1007/s40262-025-01534-z](https://doi.org/10.1007/s40262-025-01534-z)
 
 ## Model component
-<dbs-pgx drug="atorvastatin" model-id="Atorvastatin_Morath2025_reference" status="needs_review" stale="false" population="" measured-compound="atorvastatin" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="atorvastatin" model-id="Atorvastatin_Morath2025_reference" status="curated_candidate" stale="false" population="" measured-compound="atorvastatin" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F [L/h] | `Q27` · CL/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Morath_2025:review | — | not captured |
-| Vd/F [L] | `Q76` · V/F | —(suppressed) | L | — | L | not captured | review (0.7) | Morath_2025:review | — | not captured |
+| CL/F [L/h] | `Q27` · CL/F | 3.05 | L/h | 8.472222222222221e-07 | L/h | not captured | review (0.7) | Morath_2025:review | — | not captured |
+| Vd/F [L] | `Q76` · V/F | 23.7 | L | 0.0237 | L | not captured | review (0.7) | Morath_2025:review | — | not captured |
+| ka [/h] | `Q49` · kabs | 0.652 | /h | 0.0001811111111111111 | 1/h | not captured | review (0.7) | Morath_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -42,10 +40,8 @@ Morath B; Foerster KI; Chiriac U; Zaradzki M; Hoppe-Tichy T; Schrey D; Burhenne 
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
+- `defaulted_parameters`: ['Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - built from REVIEW reference values (Morath_2025) — secondary source
@@ -57,9 +53,11 @@ Morath B; Foerster KI; Chiriac U; Zaradzki M; Hoppe-Tichy T; Schrey D; Burhenne 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Morath_2025:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Morath_2025:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Morath_2025:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -72,10 +70,10 @@ Morath B; Foerster KI; Chiriac U; Zaradzki M; Hoppe-Tichy T; Schrey D; Burhenne 
 |---|---|---|---|---|---|---|
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=atorvastatin) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_output_variable | not captured | pass | C_central (measured=atorvastatin) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -96,11 +94,11 @@ Morath B; Foerster KI; Chiriac U; Zaradzki M; Hoppe-Tichy T; Schrey D; Burhenne 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference/Atorvastatin_Morath2025_reference_modelica.zip" download>Atorvastatin_Morath2025_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference/Atorvastatin_Morath2025_reference_modelica.zip" download>Atorvastatin_Morath2025_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference/Atorvastatin_Morath2025_reference_fmi.zip" download>Atorvastatin_Morath2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference/Atorvastatin_Morath2025_reference_matlab.zip" download>Atorvastatin_Morath2025_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference/Atorvastatin_Morath2025_reference_matlab_simbio.zip" download>Atorvastatin_Morath2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference/Atorvastatin_Morath2025_reference_sbml.zip" download>Atorvastatin_Morath2025_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference/Atorvastatin_Morath2025_reference_matlab.zip" download>Atorvastatin_Morath2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference/Atorvastatin_Morath2025_reference_matlab_simbio.zip" download>Atorvastatin_Morath2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference/Atorvastatin_Morath2025_reference_sbml.zip" download>Atorvastatin_Morath2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference/Atorvastatin_Morath2025_reference_cellml.zip" download>Atorvastatin_Morath2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>

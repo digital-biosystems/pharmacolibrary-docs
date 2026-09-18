@@ -24,7 +24,7 @@ The ophthalmic solution containing neomycin in combination with polymyxin B sulf
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-16 14:44 | 3:14 | 0/4/0 | 1/0/0 | 0/0/0 | 89,069/5,056 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/2 | 3/0 | 0 |
+| 2026-09-18 02:09 | 1:57 | 0/4/0 | 1/0/0 | 0/0/0 | 61,316/3,133 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/2 | 3/0 | 0 |
 
 ## popPK records
 
@@ -47,7 +47,7 @@ The ophthalmic solution containing neomycin in combination with polymyxin B sulf
 ## Coverage
 
 - **PubMed hits:** 54 matched, 19 returned
-- **screened:** 4  ·  **relevant:** 4
+- **screened:** 4  ·  **relevant:** 3
 - **records:** 7  ·  extracted 0  ·  needs_review 0  ·  rejected 7  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -63,7 +63,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Liu_2021_2.pdf` | Liu Y et al., Pharmacokinetics of neomycin sulfate af…, Journal of veterinary pharm… (2021) | popPK | 9 | [10.1111/jvp.12981](https://doi.org/10.1111/jvp.12981) | [34165196](https://pubmed.ncbi.nlm.nih.gov/34165196) | The study reports quantitative non-compartmental pharmacokinetic parameters (half-life, MRT, Cmax, Tmax, AUC, bioavailability) for neomycin in swine, with all numeric values explicitly present in the text. |
 | `Mishra_2024.pdf` | Mishra A et al., Concurrent determination of anti-microb…, Journal of pharmaceutical a… (2024) | popPK | 8 | [10.1016/j.jpba.2023.115920](https://doi.org/10.1016/j.jpba.2023.115920) | [38113826](https://pubmed.ncbi.nlm.nih.gov/38113826) | The study reports ocular pharmacokinetics for neomycin in rabbits, but specific quantitative parameter values (CL, V, t1/2) are not explicitly listed in the provided text, only dosing frequency predictions. |
 
-<sub>queue written 2026-09-16T14:41:03.624648+00:00</sub>
+<sub>queue written 2026-09-18T02:08:31.332481+00:00</sub>
 
 ## Screened and excluded
 
@@ -79,6 +79,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Ponce_2023 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study on TRPV4 channels where neomycin is used only as a phospholipase C inhibitor, not as a subject drug for pharmacokinetic analysis. |
 | PD | Ponce_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of ouabain (reporting an EC50), not neomycin; neomycin is only mentioned as an inhibitor used to probe signaling pathways. |
 | popPK | Rodriguez_2024 | irrelevant | 0 | 0 | The study investigates the protective effects of Castanopsis echinocarpa on hearing loss, using neomycin only as an ototoxic agent to induce injury in zebrafish, and does not report any pharmacokinetic parameters for neomycin. |
+| popPK | Samuel_1968 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cholesterol (using a radioactive tracer) to assess the effect of neomycin on cholesterol pools, rather than measuring the disposition parameters of neomycin itself. |
 | popPK | Sandmann_1991 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on muscarinic receptors where neomycin is used as a pharmacological inhibitor, not a subject of pharmacokinetic analysis. |
 | PD | Sandmann_1991 | not_relevant | 1 | 1 | The paper reports a single-point inhibition percentage (50% and 20%) for neomycin at a fixed concentration (1 mM) without providing a dose-response curve or numeric PD parameters like IC50. |
 | popPK | Seol_2005 | irrelevant | 0 | 0 | The paper is a mechanistic study on calcium signaling where neomycin is used only as a pharmacological inhibitor, not as the subject of a pharmacokinetic analysis. |

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_elYazigi1993_reference&quot;,&quot;label&quot;:&quot;el-Yazigi_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Rosario2017_reference&quot;,&quot;label&quot;:&quot;Rosario_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Rosario2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Yang2015_reference&quot;,&quot;label&quot;:&quot;Yang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Yang2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_elYazigi1993_reference&quot;,&quot;label&quot;:&quot;el-Yazigi_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Yang2015_reference&quot;,&quot;label&quot;:&quot;Yang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Yang2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Ding1979_reference&quot;,&quot;label&quot;:&quot;Ding_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Ding1979_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Rosario2017_reference&quot;,&quot;label&quot;:&quot;Rosario_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Rosario2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # azathioprine
 
@@ -20,16 +20,17 @@ Azathiprine was granted FDA approval on 20 March 1968.[L11214]
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-26 19:43 | 19:56 | 2/2/0 | 0/4/0 | 31/0/48 | 745,851/43,915 | ollama / qwen3.8:27b-mtp-q8_0 | 44 | 39/5 | 23/21 | 0 |
+| 2026-09-17 22:55 | 3:36 | 1/3/1 | 0/4/0 | 31/0/48 | 98,184/6,051 | ollama / qwen3.8:27b-mtp-q8_0 | 44 | 39/5 | 23/21 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [el-Yazigi_1993_reference](drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md) | el-Yazigi A et al., Pharmacokinetics of azathioprine after…, Journal of clinical pharmac… (1993) | [10.1002/j.1552-4604.1993.tb04698.x](https://doi.org/10.1002/j.1552-4604.1993.tb04698.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Lin_2021_reference](drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md) | Lin R et al., Population pharmacokinetics of azathiop…, Basic & clinical pharmacolo… (2021) | [10.1111/bcpt.13530](https://doi.org/10.1111/bcpt.13530) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Yang_2015_reference](drugs/drug_azathioprine/Azathioprine_Yang2015_reference.md) | Yang X et al., Pharmacokinetic modeling of therapies f…, Expert review of clinical p… (2015) | [10.1586/17512433.2015.1059751](https://doi.org/10.1586/17512433.2015.1059751) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ding_1979_reference](drugs/drug_azathioprine/Azathioprine_Ding1979_reference.md) | Ding TL et al., Comparative bioavailability and pharmac…, Drug metabolism and disposi… (1979) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Lin_2021_reference](drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md) | Lin R et al., Population pharmacokinetics of azathiop…, Basic & clinical pharmacolo… (2021) | [10.1111/bcpt.13530](https://doi.org/10.1111/bcpt.13530) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Rosario_2017_reference](drugs/drug_azathioprine/Azathioprine_Rosario2017_reference.md) | Rosario M et al., A Review of the Clinical Pharmacokineti…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0546-0](https://doi.org/10.1007/s40262-017-0546-0) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yang_2015_reference](drugs/drug_azathioprine/Azathioprine_Yang2015_reference.md) | Yang X et al., Pharmacokinetic modeling of therapies f…, Expert review of clinical p… (2015) | [10.1586/17512433.2015.1059751](https://doi.org/10.1586/17512433.2015.1059751) |
 
 ## Pharmacodynamics (PD)
 
@@ -125,9 +126,19 @@ Azathiprine was granted FDA approval on 20 March 1968.[L11214]
 ## Coverage
 
 - **PubMed hits:** 1118 matched, 104 returned
-- **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 1  ·  needs_review 1  ·  rejected 2  ·  stale 0
+- **screened:** 4  ·  **relevant:** 4
+- **records:** 5  ·  extracted 1  ·  needs_review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Ding_1979.pdf` | Ding TL et al., Comparative bioavailability and pharmac…, Drug metabolism and disposi… (1979) | popPK | 8 | not captured | [43222](https://pubmed.ncbi.nlm.nih.gov/43222) | The study reports quantitative PK parameters (CL, Vd, t1/2) for 6-mercaptopurine (the active metabolite of azathioprine) in rhesus monkeys, but does not provide direct compartmental parameters for azathioprine itself. |
+
+<sub>queue written 2026-09-17T18:23:51.862460+00:00</sub>
 
 ## Screened and excluded
 
@@ -137,28 +148,46 @@ Azathiprine was granted FDA approval on 20 March 1968.[L11214]
 | PD | Ali_2023 | not_relevant | 2 | 1 | The paper reports in vitro EC50 values for other compounds and qualitative in vivo efficacy for azathioprine, but provides no numeric PD parameters or concentration-effect curve for azathioprine itself. |
 | popPK | Amlani_2020 | irrelevant | not captured | not captured | The paper is a retrospective clinical cohort study assessing pulmonary function outcomes and contains no quantitative pharmacokinetic parameters or modeling for azathioprine. |
 | PGx | Andoh_2021 | not_relevant | 2 | 0 | The paper is a review discussing the association between NUDT15 variants and toxicity, but it does not report specific quantitative changes in PK or PD parameters for azathioprine. |
+| PGx | Artero_1992 | not_relevant | 0 | 0 | The paper discusses the clinical course and treatment of recurrent focal glomerulosclerosis in transplant patients and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of azathioprine. |
+| popPK | Balevic_2023 | irrelevant | 1 | 0 | The study is an exposure-response analysis for efficacy extrapolation and explicitly states that data were insufficient to quantitatively characterize the exposure-response relationship for azathioprine, reporting no PK parameters. |
+| PD | Balevic_2023 | not_relevant | 1 | 0 | The paper explicitly states that data were not sufficient to quantitatively characterize the exposure-response relationship for azathioprine, and no numeric PD parameters are provided. |
+| PGx | Bardek_2007 | not_relevant | 2 | 0 | The text mentions the importance of TPMT testing for dosing but does not report specific pharmacogenomic effects on PK/PD parameters or provide quantitative data. |
 | PD | Bayoumy_2020 | not_relevant | 2 | 1 | The paper is a comprehensive review of thioguanine that qualitatively discusses pharmacodynamic features and dose-dependent toxicity (e.g., NRH &gt;40 mg/day) but does not report specific numeric PD parameters (Emax, EC50) or extractable concentration-effect curves for azathioprine. |
 | PGx | Bierau_2007 | not_relevant | 0 | 0 | The paper describes the substrate specificity of ITPase in a pooled lysate and does not report a pharmacogenomic effect of a specific gene variant on a PK/PD parameter of azathioprine. |
 | PD | Broen_2020 | not_relevant | 1 | 0 | The text is a narrative review discussing the history and mechanisms of action of conventional DMARDs, containing no quantitative pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for azathioprine. |
 | PD | Carman_2018 | not_relevant | 1 | 0 | The paper is a narrative review of therapeutic drug monitoring in pediatric IBD and does not report specific numeric pharmacodynamic parameters (e.g., Emax, EC50) or exposure-response curves for azathioprine. |
+| popPK | Chadli_2025 | irrelevant | 1 | 0 | The study reports therapeutic drug monitoring of the metabolite 6-TGN concentrations, not pharmacokinetic parameters (CL, V, ka) for azathioprine. |
+| PGx | Chadli_2025 | not_relevant | 0 | 0 | The study focuses on therapeutic drug monitoring and correlations with hematological parameters, but does not report specific pharmacogenomic effects of gene variants on PK/PD parameters. |
 | popPK | Colman_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for infliximab, not azathioprine, which is only a co-administered immunomodulator. |
+| PGx | Daly_2007 | not_relevant | 2 | 0 | The text is a general review mentioning TPMT genotyping for azathioprine toxicity prediction but does not report specific pharmacokinetic or pharmacodynamic parameter changes or quantitative effect sizes. |
 | popPK | Farr_2025 | irrelevant | not captured | not captured | The paper is a clinical quality-of-life study that only mentions azathioprine as a concomitant medication without reporting any pharmacokinetic parameters or modeling. |
+| popPK | Furst_1993 | irrelevant | 0 | 0 | The paper is a review of methotrexate mechanisms and toxicities, with azathioprine mentioned only as a comparator in a meta-analysis, and no PK parameters are reported. |
+| PD | Furst_1993 | not_relevant | 0 | 0 | The paper is a review of methotrexate and does not report any pharmacodynamic or exposure-response data for azathioprine. |
 | PD | Gardiner_2006 | not_relevant | 2 | 0 | The text is a review of pharmacogenetics that qualitatively discusses the need for concentration-effect relationships for azathioprine but does not report any specific numeric PD parameters or exposure-response data. |
 | PD | Geh_2018 | not_relevant | 0 | 0 | The paper is a review of epratuzumab in SLE and does not report any pharmacodynamic or exposure-response data for azathioprine. |
+| PD | Glidden_1988 | not_relevant | 2 | 1 | The study reports a negative result (no shift in dose-response curve) and qualitative transient effects, but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative exposure-response model for azathioprine. |
+| PD | Gramstad_1987 | not_relevant | 1 | 0 | The paper reports dose-response parameters for neuromuscular blocking agents (atracurium, vecuronium, pancuronium), not for azathioprine; the effect of azathioprine is described only qualitatively as a small, transient antagonism without numeric PD parameters. |
 | PGx | Heller_2013 | not_relevant | 0 | 0 | The paper is a general review of pharmacogenomics and only mentions azathioprine in passing without reporting specific gene-variant effects on its PK or PD parameters. |
-| popPK | Hernández-Breijo_2013 | irrelevant | 0 | 0 | No evidence or text was provided to evaluate the paper's content. |
+| popPK | Hernández-Breijo_2013 | irrelevant | 0 | 0 | no_text gate: only 156 chars of text extracted (&lt; 400) |
 | PD | Hernández-Breijo_2013 | not_relevant | 0 | 0 | The provided text contains no abstract or content, making it impossible to verify any pharmacodynamic or exposure-response data for azathioprine. |
 | popPK | Huapaya_2019 | irrelevant | 0 | 0 | The study is a clinical efficacy trial evaluating lung function outcomes (FVC, DLCO) in myositis-related ILD, not a pharmacokinetic study, and reports no PK parameters for azathioprine. |
+| PD | Kahan_1986 | not_relevant | 0 | 0 | The paper is a review of cyclosporine nephrotoxicity and mentions azathioprine only as a therapeutic alternative, providing no pharmacodynamic or exposure-response data for azathioprine. |
 | PD | Kaye_2024 | not_relevant | 0 | 0 | The paper is a narrative review of tacrolimus and mycophenolate toxicity and does not report any pharmacodynamic or exposure-response data for azathioprine. |
 | PGx | Kaye_2024 | not_relevant | 0 | 0 | The paper focuses on tacrolimus and mycophenolate toxicity and management; azathioprine is only mentioned in passing as an early immunosuppressant without any pharmacogenomic data. |
+| PGx | Klemetsdal_1995 | not_relevant | 0 | 0 | The paper discusses a methodological artifact where erythrocyte fraction affects the measurement of TPMT activity, rather than reporting a pharmacogenomic effect of a gene variant on azathioprine PK/PD. |
 | popPK | Kovarik_2006 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of everolimus, with azathioprine serving only as a comparator arm for which no quantitative PK parameters are reported. |
 | PD | Kovarik_2006 | not_relevant | 0 | 0 | The paper focuses on the exposure-response relationship for everolimus, not azathioprine. |
 | popPK | Kowalska_2015 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in-vitro anticancer activity of thiopurine analogs, containing no pharmacokinetic data for azathioprine. |
 | PD | Kowalska_2015 | not_relevant | 3 | 2 | The paper reports in vitro cytotoxicity (EC50) for azathioprine analogs, which is a dose-response metric, but it lacks a formal pharmacodynamic model (e.g., Emax, slope) or exposure-response analysis for the parent drug azathioprine itself, focusing instead on the synthesis and comparative activity of new derivatives. |
 | popPK | Krall_2026 | irrelevant | not captured | not captured | Azathioprine is only a concomitant medication in this efgartigimod study, with no pharmacokinetic parameters or modeling reported for it. |
+| PD | Lake_1992 | not_relevant | 0 | 0 | The paper is a qualitative review of OTC medication guidelines and general pharmacokinetic/pharmacodynamic interactions in cardiac transplant recipients, containing no specific numeric PD parameters or exposure-response analysis for azathioprine. |
 | popPK | Lucafò_2019 | irrelevant | not captured | not captured | The study reports steady-state metabolite concentrations and pharmacogenetic associations but does not provide compartmental or population-PK models or disposition parameters for azathioprine. |
+| popPK | McLarty_1995 | irrelevant | 0 | 0 | The study focuses on cardiac function in lung transplant recipients where azathioprine is used only as a co-administered immunosuppressant, with no pharmacokinetic parameters reported. |
+| PD | McLarty_1995 | not_relevant | 0 | 0 | The paper is a physiological study on cardiac function in lung transplant rejection; azathioprine is only mentioned as part of the immunosuppressive regimen, and no pharmacodynamic or exposure-response analysis is performed. |
+| PGx | Mircheva_1995 | not_relevant | 5 | 5 | The paper reports an association between TPMT activity patterns and rejection rates (PD outcome) but does not report a specific gene variant/genotype effect on a PK/PD parameter. |
 | popPK | Morisset_2017 | irrelevant | not captured | not captured | The study focuses solely on clinical lung function outcomes and tolerability, containing no pharmacokinetic data or modeling for azathioprine. |
 | popPK | Muegge_2026 | irrelevant | 0 | 0 | The study is a clinical trial analyzing pulmonary function outcomes in hypersensitivity pneumonitis, not a pharmacokinetic study, and contains no PK parameters for azathioprine. |
+| PGx | Norman_1991 | not_relevant | 0 | 0 | The paper reports clinical outcomes of renal transplantation and does not investigate the impact of gene variants on azathioprine pharmacokinetics or pharmacodynamics. |
 | popPK | Offner_2002 | irrelevant | 0 | 0 | The study focuses on the safety and efficacy of basiliximab in pediatric renal transplant recipients, and azathioprine is only mentioned as a permitted concurrent medication without any pharmacokinetic data reported. |
 | PD | Offner_2002 | not_relevant | 0 | 0 | The study focuses on basiliximab PK/PD and safety; azathioprine was only permitted as background therapy after day 28 and no specific PD or exposure-response analysis for azathioprine is reported. |
 | PGx | PMID23422873_2013 | not_relevant | 2 | 0 | The paper is a guideline update confirming previous dosing recommendations and does not report new primary data or fitted effect sizes for PK/PD parameters. |
@@ -167,11 +196,15 @@ Azathiprine was granted FDA approval on 20 March 1968.[L11214]
 | PD | Sandborn_2014 | not_relevant | 0 | 0 | The paper is a clinical trial of golimumab for ulcerative colitis and does not report any pharmacodynamic or exposure-response analysis for azathioprine. |
 | popPK | Simon_1997 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of mitochondrial function and does not report pharmacokinetic parameters for azathioprine. |
 | PGx | Somogy_2008 | not_relevant | 2 | 0 | The paper is a general review of the history and evolution of pharmacogenomics; it mentions azathioprine only as an example of a narrow therapeutic index drug but does not report specific gene-variant effects on its PK or PD parameters. |
+| PGx | Swen_2011 | not_relevant | 0 | 0 | The paper is a review of guidelines for multiple drugs and genes, including TPMT, but does not report specific pharmacokinetic or pharmacodynamic effect sizes for azathioprine. |
 | PGx | Szumlanski_1995 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (sulphasalazine inhibiting TPMT) rather than a pharmacogenomic effect of a gene variant on azathioprine PK/PD. |
 | PD | Tham_2024 | not_relevant | 1 | 0 | The paper is a narrative review of pharmacology in veterinary medicine and does not report specific numeric PD parameters or exposure-response data for azathioprine. |
 | popPK | Tsukamoto_2019 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ABC transporter SNPs and drug resistance (EC50), not a pharmacokinetic study reporting disposition parameters like clearance or volume for azathioprine. |
 | PD | Tsukamoto_2019 | not_relevant | 3 | 2 | The paper reports EC50 values for azathioprine in an in vitro cell line study, but the results show no significant difference between genotypes (comparable EC50s), and it is not a pharmacokinetic/pharmacodynamic exposure-response analysis in humans. |
+| PD | Turcotte_1968 | not_relevant | 0 | 0 | The paper discusses medroxyprogesterone acetate, not azathioprine, and does not report any pharmacodynamic or exposure-response data for the target drug. |
+| PD | Vian_1993 | not_relevant | 1 | 0 | The paper reports qualitative genotoxicity results (positive/negative) for azathioprine in an in vitro assay but does not provide numeric concentration-effect data, dose-response curves, or PD parameters. |
 | PGx | Warrington_2005 | not_relevant | 2 | 0 | The paper is a general review of immunosuppressants and does not provide specific quantitative pharmacogenomic data for azathioprine. |
+| PGx | Woillard_2017 | not_relevant | 2 | 0 | The paper is a review of clinical implementation recommendations and does not report primary data or fitted effect sizes for specific pharmacokinetic or pharmacodynamic parameters. |
 | popPK | del_2002 | irrelevant | 0 | 0 | The paper is a review of immunosuppressive pharmacokinetics in pediatric transplant patients that focuses on cyclosporin, tacrolimus, and mycophenolate, mentioning azathioprine only as a comparator or for pharmacodynamic monitoring without providing specific quantitative PK parameters for it. |
 
 ---

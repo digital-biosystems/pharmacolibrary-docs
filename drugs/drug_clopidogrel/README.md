@@ -22,7 +22,7 @@ Clopidogrel was granted FDA approval on 17 November 1997.[L7213]
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-16 20:12 | 1:05:08 | 13/3/1 | 6/5/0 | 14/0/72 | 1,655,024/99,649 | ollama / qwen3.8:27b-mtp-q8_0 | 74 | 16/58 | 63/11 | 0 |
+| 2026-09-17 22:16 | 18:33 | 13/3/1 | 6/5/0 | 14/0/74 | 615,527/13,818 | ollama / qwen3.8:27b-mtp-q8_0 | 74 | 16/58 | 63/11 | 0 |
 
 ## popPK records
 
@@ -43,7 +43,7 @@ Clopidogrel was granted FDA approval on 17 November 1997.[L7213]
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Grafeneder_2024_hdp](drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hdp.md) | Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney international reports (2024) | [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Lee_2012_reference](drugs/drug_clopidogrel/Clopidogrel_Lee2012_reference.md) | Lee J et al., Population pharmacokinetic/pharmacodyna…, Journal of clinical pharmac… (2012) | [10.1177/0091270011409228](https://doi.org/10.1177/0091270011409228) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Ma_2014_reference](drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md) | Ma S et al., Synergistic effects of clopidogrel and…, Evidence-based complementar… (2014) | [10.1155/2014/789142](https://doi.org/10.1155/2014/789142) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Danielak_2017_reference](drugs/drug_clopidogrel/Clopidogrel_Danielak2017_reference.md) | Danielak D et al., Influence of genetic co-factors on the…, European journal of clinica… (2017) | [10.1007/s00228-017-2334-z](https://doi.org/10.1007/s00228-017-2334-z) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Danielak_2017_reference](drugs/drug_clopidogrel/Clopidogrel_Danielak2017_reference.md) | Danielak D et al., Influence of genetic co-factors on the…, European journal of clinica… (2017) | [10.1007/s00228-017-2334-z](https://doi.org/10.1007/s00228-017-2334-z) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Grafeneder_2024_hv](drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv.md) | Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney international reports (2024) | [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Grafeneder_2024_hv](drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv.md) | Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney international reports (2024) | [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Jung_2024_reference](drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md) | Jung YS et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13053](https://doi.org/10.1002/psp4.13053) |
@@ -207,7 +207,7 @@ _28 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Fuster_2010.pdf` | Fuster V et al., Clopidogrel and the reduced-function CY…, JAMA (2010) | pgx | 5 | [10.1001/jama.2010.1566](https://doi.org/10.1001/jama.2010.1566) | [20978263](https://www.ncbi.nlm.nih.gov/pubmed/20978263) | metadata signals extractable PGX data (CYP2C19) |
 | `PMID21716271_2011.pdf` | PMID21716271, Clinical Pharmacogenetics Implementatio… (2011) | pgx | 5 | [10.1038/clpt.2011.132](https://doi.org/10.1038/clpt.2011.132) | [21716271](https://www.ncbi.nlm.nih.gov/pubmed/21716271) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-09-16T19:15:25.570901+00:00</sub>
+<sub>queue written 2026-09-17T18:14:33.368117+00:00</sub>
 
 ## Screened and excluded
 

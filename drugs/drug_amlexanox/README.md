@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 04:26 | 5:28 | 0/0/0 | 1/0/0 | 0/0/0 | 48,848/1,863 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 4/1 | 0 |
+| 2026-09-18 00:38 | 2:44 | 0/0/0 | 1/0/0 | 0/0/0 | 72,877/2,372 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 4/1 | 0 |
 
 ## popPK records
 
@@ -34,7 +34,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 15 matched, 15 returned
+- **PubMed hits:** 17 matched, 15 returned
 - **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -49,7 +49,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Khandwala_1997.pdf` | Khandwala A et al., 5% amlexanox oral paste, a new treatmen…, Oral surgery, oral medicine… (1997) | popPK | 8 | [10.1016/s1079-2104(97)90010-x](https://doi.org/10.1016/s1079-2104(97)90010-x) | [9117755](https://pubmed.ncbi.nlm.nih.gov/9117755) | The paper reports quantitative PK parameters (Cmax, Tmax, t1/2) for amlexanox, though it lacks a full compartmental model or clearance/volume values. |
 | `Makino_1987.pdf` | Makino H et al., Mechanism of action of an antiallergic…, International archives of a… (1987) | pd | 4 | [10.1159/000234292](https://doi.org/10.1159/000234292) | [2433225](https://www.ncbi.nlm.nih.gov/pubmed/2433225) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-10T04:26:00.129989+00:00</sub>
+<sub>queue written 2026-09-18T00:37:50.629613+00:00</sub>
 
 ## Screened and excluded
 
@@ -63,15 +63,15 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Ishikawa_2021 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on anti-inflammatory effects and drug repositioning, reporting no pharmacokinetic parameters for amlexanox. |
 | popPK | Kilgore_2024 | irrelevant | 0 | 0 | The paper is a mechanistic study on biomolecular condensates and small molecule partitioning, not a pharmacokinetic study, and amlexanox is only mentioned as a probe for subcellular localization without any PK parameters. |
 | PD | Kilgore_2024 | not_relevant | 0 | 0 | The paper focuses on the physical chemistry of biomolecular condensates and small molecule partitioning, containing no pharmacodynamic or exposure-response data for amlexanox. |
-| PGx | Lima_2023 | not_relevant | 0 | 0 | The paper reports a pharmacodynamic effect of amlexanox on PAX6 protein levels in aniridia models, but does not report a pharmacokinetic or pharmacodynamic parameter of amlexanox itself (e.g., Cmax, AUC, clearance) or how a gene variant alters amlexanox's PK/PD. |
-| popPK | Makino_1987 | irrelevant | 0 | 0 | The paper focuses on the mechanism of action (histamine release/cAMP) rather than pharmacokinetic disposition parameters. |
+| PGx | Lima_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamic effect of amlexanox on PAX6 protein levels in aniridia models, but does not report a pharmacogenomic effect (i.e., how a gene variant changes the drug's PK/PD parameters). |
+| popPK | Makino_1987 | irrelevant | 0 | 0 | no_text gate: only 182 chars of text extracted (&lt; 400) |
 | popPK | Matsunaga_2008 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of protein interactions using amlexanox as an inhibitor, not a pharmacokinetic study reporting disposition parameters for amlexanox. |
 | PD | Matsunaga_2008 | not_relevant | 0 | 0 | The paper reports metal ion (Ca2+/Cu2+) concentration-response parameters for protein interaction, not pharmacodynamic parameters for the drug amlexanox. |
 | popPK | Omidian_2023 | irrelevant | 0 | 0 | The paper is a review of curcumin delivery systems and does not contain any pharmacokinetic data for amlexanox. |
 | PD | Omidian_2023 | not_relevant | 0 | 0 | The paper is a review on curcumin delivery systems and does not contain any pharmacodynamic or exposure-response data for amlexanox. |
 | popPK | Rankov_1990 | irrelevant | 2 | 0 | The study focuses on pharmacodynamics and histamine concentrations, reporting only qualitative trends in drug concentration without providing quantitative PK parameters like clearance or volume. |
 | PD | Rankov_1990 | not_relevant | 2 | 1 | The study reports qualitative differences in histamine levels and drug concentration trends but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect relationship. |
-| PGx | Wang_2020 | not_relevant | 0 | 0 | The paper investigates the efficacy of amlexanox as an NMD inhibitor in animal models of Leber congenital amaurosis, not the pharmacokinetics or pharmacodynamics of amlexanox itself. |
+| PGx | Wang_2020 | not_relevant | 0 | 0 | The paper investigates the efficacy of amlexanox in animal models of Leber congenital amaurosis, not the pharmacokinetics or pharmacodynamics of amlexanox itself. |
 | popPK | Watanabe_1998 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of anaphylaxis inhibition where amlexanox serves only as a comparator agent, with no pharmacokinetic parameters reported. |
 | PD | Watanabe_1998 | not_relevant | 1 | 1 | The paper reports a single-point effect for amlexanox (85.6% inhibition at 10 mg/kg) but does not provide a dose-response curve, concentration-effect relationship, or numeric PD parameters (Emax, EC50) for this drug. |
 

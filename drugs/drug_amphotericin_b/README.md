@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;amphotericin B&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AmphotericinB_Atkinson1978_reference&quot;,&quot;label&quot;:&quot;Atkinson_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amphotericin_b/AmphotericinB_Atkinson1978_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AmphotericinB_Atkinson1978_reference&quot;,&quot;label&quot;:&quot;Atkinson_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amphotericin_b/AmphotericinB_Atkinson1978_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AmphotericinB_Stott2018_reference&quot;,&quot;label&quot;:&quot;Stott_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amphotericin_b/AmphotericinB_Stott2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AmphotericinB_Stott2022_reference&quot;,&quot;label&quot;:&quot;Stott_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # amphotericin B
 
@@ -18,19 +18,21 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 04:29 | 2:45 | 1/0/0 | 0/0/0 | 0/0/0 | 29,621/5,372 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-09-18 00:39 | 1:12 | 3/0/0 | 0/0/0 | 0/0/0 | 25,672/2,170 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Atkinson_1978_reference](drugs/drug_amphotericin_b/AmphotericinB_Atkinson1978_reference.md) | Atkinson AJ et al., Amphotericin B pharmacokinetics in huma…, Antimicrobial agents and ch… (1978) | [10.1128/AAC.13.2.271](https://doi.org/10.1128/AAC.13.2.271) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Stott_2018_reference](drugs/drug_amphotericin_b/AmphotericinB_Stott2018_reference.md) | Stott KE et al., Population Pharmacokinetic Model and Me…, Antimicrobial agents and ch… (2018) | [10.1128/AAC.02526-17](https://doi.org/10.1128/AAC.02526-17) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Stott_2022_reference](drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference.md) | Stott KE et al., Population pharmacokinetics of liposoma…, The Journal of antimicrobia… (2022) | [10.1093/jac/dkac389](https://doi.org/10.1093/jac/dkac389) |
 
 ## Coverage
 
 - **PubMed hits:** 151 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -45,7 +47,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Han_2026.pdf` | Han S et al., Pharmacokinetic Equivalence of Amphosom, Clinical therapeutics (2026) | popPK | 9 | [10.1016/j.clinthera.2025.12.009](https://doi.org/10.1016/j.clinthera.2025.12.009) | [41513548](https://pubmed.ncbi.nlm.nih.gov/41513548) | The study is a population PK/bioequivalence trial for amphotericin B, but the specific numeric parameter values (CL, V, Q, etc.) are not present in the provided abstract text. |
 | `Smith_2024.pdf` | Smith JS et al., Pharmacokinetics of intraarticular lipo…, Journal of veterinary pharm… (2024) | popPK | 9 | [10.1111/jvp.13442](https://doi.org/10.1111/jvp.13442) | [38557931](https://pubmed.ncbi.nlm.nih.gov/38557931) | The study reports quantitative non-compartmental PK parameters (Cmax, tmax, t1/2, MRT, Vd, AUC) for amphotericin B in goats, with all numeric values explicitly present in the text. |
 
-<sub>queue written 2026-09-10T04:27:18.238451+00:00</sub>
+<sub>queue written 2026-09-18T00:39:02.253785+00:00</sub>
 
 ## Screened and excluded
 

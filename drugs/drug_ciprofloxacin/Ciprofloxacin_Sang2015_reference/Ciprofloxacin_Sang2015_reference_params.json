@@ -2,7 +2,7 @@
  "model_id": "Ciprofloxacin_Sang2015_reference",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
  ],
  "parameters": {
   "Cl": 9.424722222222222e-07,
@@ -16,7 +16,7 @@
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 0.0030084404358902772
+  "C_central": 0.0030084404358902772
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

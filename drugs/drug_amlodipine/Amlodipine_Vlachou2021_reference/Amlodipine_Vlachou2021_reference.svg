@@ -389,7 +389,7 @@ font-family="Sans" font-size="10" font-weight="400" font-style="normal"
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="1" transform="matrix(1,0,0,1,270.179,216.179)"
 font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-4.932" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" text-anchor="middle">ka=0.85 1/h</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-4.932" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" text-anchor="middle">ka=0.5 1/h</text>
 </g>
 
 
@@ -399,7 +399,7 @@ font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal"
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="1" transform="matrix(1,0,0,1,270.179,223.869)"
 font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-4.932" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" text-anchor="middle">Tlag=101 min</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-4.932" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" text-anchor="middle">Tlag=0 min</text>
 </g>
 
 
@@ -563,7 +563,8 @@ font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal"
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="1" transform="matrix(1,0,0,1,278.321,232.464)"
 font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-0.447" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" text-anchor="middle">13.6 1/h</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-6.6875" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
+ >k12</text>
 </g>
 
 
@@ -573,8 +574,7 @@ font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal"
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="1" transform="matrix(1,0,0,1,278.321,255.536)"
 font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-6.6875" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
- >k21</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-0.447" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" text-anchor="middle">0.206 1/h</text>
 </g>
 
 

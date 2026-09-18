@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumFluoride_Setnikar1990_healthy_adults&quot;,&quot;label&quot;:&quot;Setnikar_1990_healthy adults&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_fluoride/SodiumFluoride_Setnikar1990_healthy_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumFluoride_Setnikar1990_reference&quot;,&quot;label&quot;:&quot;Setnikar_1990_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_fluoride/SodiumFluoride_Setnikar1990_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # name — PD  <span class="pk-badge pk-badge--red">rejected</span>

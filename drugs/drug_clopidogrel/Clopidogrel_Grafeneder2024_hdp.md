@@ -63,6 +63,7 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
 - dropped unlinked row (NIL): '0 min [%]' — extend the ontology if this is a real PK parameter (source ['Grafeneder_2024_table_3:row19:col7'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clopidogrel active metabolite
 - population split: 'hdp' subgroup of Grafeneder_2024 (paper reports 2 populations: hdp, hv)
+- review gap-fill skipped: this record measures 'clopidogrel active metabolite', not clopidogrel — the review values are the parent's
 
 **Extraction notes:**
 - unparsed cell Grafeneder_2024_table_3:row3:col1 = '1.9 (1.1–2.1)'

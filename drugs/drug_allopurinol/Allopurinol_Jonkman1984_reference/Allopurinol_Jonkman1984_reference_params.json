@@ -2,7 +2,7 @@
  "model_id": "Allopurinol_Jonkman1984_reference",
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
  ],
  "parameters": {
   "Cl": 0.0008497222222222223,
@@ -14,7 +14,7 @@
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 2.298604897827946e-06
+  "C_central": 2.298604897827946e-06
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

@@ -21,7 +21,7 @@ In ophthalmic preparations, sodium perborate is used as a preservative for produ
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 11:16 | 3:05 | 0/0/0 | 0/1/0 | 0/0/0 | 45,000/1,331 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 2/1 | 0 |
+| 2026-09-18 03:19 | 2:37 | 0/0/0 | 0/1/0 | 0/0/0 | 90,694/2,026 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 2/1 | 0 |
 
 ## popPK records
 
@@ -37,7 +37,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 15 matched, 15 returned
+- **PubMed hits:** 13 matched, 15 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -50,19 +50,21 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Warne_1999.pdf` | Warne MS et al., Toxicity of laundry detergent component…, Ecotoxicology and environme… (1999) | pd | 4 | [10.1006/eesa.1999.1824](https://doi.org/10.1006/eesa.1999.1824) | [10571467](https://www.ncbi.nlm.nih.gov/pubmed/10571467) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-10T11:15:47.423272+00:00</sub>
+<sub>queue written 2026-09-18T03:18:45.597291+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Cebeci_2022 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of anti-cancer effects and does not report any pharmacokinetic parameters for sodium perborate. |
+| popPK | Cebeci_2025 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of anti-cancer effects (apoptosis, cell cycle) and does not report any pharmacokinetic parameters. |
 | PD | Cebeci_2025 | not_relevant | 3 | 1 | The study mentions treatment at IC50 concentrations but does not provide the numeric IC50 values, dose-response curves, or other quantitative PD parameters in the provided text. |
 | popPK | Di_1996 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of oxidative stress and antioxidant capacity using sodium perborate as a pro-oxidant, not a pharmacokinetic study. |
 | popPK | Islek_2026 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of antileishmanial activity and does not report any pharmacokinetic parameters for sodium perborate. |
 | popPK | Kinomoto_2001 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assessment of sodium perborate on periodontal ligament cells and does not report any pharmacokinetic parameters. |
-| popPK | Schröder_2002 | irrelevant | 0 | 0 | The paper is an environmental fate modeling study of boron and LAS in a river, not a pharmacokinetic study of sodium perborate in a biological system. |
-| popPK | Warne_1999 | irrelevant | 0 | 0 | The paper is a toxicology study on laundry detergent components in cladocerans, not a pharmacokinetic study of sodium perborate. |
+| popPK | Omeroglu_2022 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic analysis of anti-proliferative effects and transcriptomics, reporting no pharmacokinetic parameters. |
+| popPK | Schröder_2002 | irrelevant | 0 | 0 | The paper is an environmental fate modeling study for boron and LAS in a river, not a pharmacokinetic study of sodium perborate in a biological system. |
+| popPK | Warne_1999 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
 | PD | Warne_1999 | not_relevant | 0 | 0 | The paper focuses on the toxicity of laundry detergent components to cladocerans and does not report any pharmacodynamic or exposure-response relationship for sodium perborate. |
 | popPK | Xiang_2020 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for bemarituzumab, not sodium_perborate. |
 | PD | Xiang_2020 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) analysis for bemarituzumab, not sodium perborate, and does not provide a pharmacodynamic (PD) model or numeric PD parameters (e.g., Emax, EC50) for the drug in question. |

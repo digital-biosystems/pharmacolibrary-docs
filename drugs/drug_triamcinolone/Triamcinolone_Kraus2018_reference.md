@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;triamcinolone&quot;,&quot;href&quot;:&quot;drugs/drug_triamcinolone/&quot;},{&quot;label&quot;:&quot;Kraus_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Triamcinolone_Kraus2018_reference&quot;,&quot;label&quot;:&quot;Kraus_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_triamcinolone/Triamcinolone_Kraus2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Triamcinolone_Beer2003_reference&quot;,&quot;label&quot;:&quot;Beer_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_triamcinolone/Triamcinolone_Beer2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Triamcinolone_French2000_reference&quot;,&quot;label&quot;:&quot;French_2000_reference&quot;,&quot;href&quot;:&quot;drugs/drug_triamcinolone/Triamcinolone_French2000_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Triamcinolone_Kraus2018_reference&quot;,&quot;label&quot;:&quot;Kraus_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_triamcinolone/Triamcinolone_Kraus2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -54,6 +54,7 @@ Kraus VB; Conaghan PG; Aazami HA; Mehra P; Kivitz AJ; Lufkin J; et al. et al. (2
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kraus_2018:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kraus_2018:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0001 | not captured | not captured | ['Kraus_2018:review'] |

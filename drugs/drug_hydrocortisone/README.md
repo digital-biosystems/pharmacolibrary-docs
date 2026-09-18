@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;hydrocortisone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrocortisone_Werumeus2017_reference&quot;,&quot;label&quot;:&quot;Werumeus_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrocortisone_Hamitouche2017_reference&quot;,&quot;label&quot;:&quot;Hamitouche_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrocortisone/Hydrocortisone_Hamitouche2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrocortisone_Werumeus2017_reference&quot;,&quot;label&quot;:&quot;Werumeus_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # hydrocortisone
 
@@ -20,19 +20,20 @@ Hydrocortisone was granted FDA approval on 5 August 1952.[L10574]
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 05:09 | 4:59 | 0/0/1 | 0/0/0 | 0/0/0 | 22,739/13,702 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-09-18 00:38 | 1:48 | 0/0/2 | 0/0/0 | 0/0/0 | 20,877/6,607 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Hamitouche_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Hamitouche2017_reference.md) | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Werumeus_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md) | Werumeus Buning J et al., Pharmacokinetics of oral hydrocortisone…, Metabolism: clinical and ex… (2017) | [10.1016/j.metabol.2017.02.005](https://doi.org/10.1016/j.metabol.2017.02.005) |
 
 ## Coverage
 
 - **PubMed hits:** 102 matched, 19 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -44,7 +45,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Hamitouche_2017.pdf` | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | popPK | 10 | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) | [28083797](https://pubmed.ncbi.nlm.nih.gov/28083797) | The study reports quantitative population PK parameters (clearance and half-life) for intravenous hydrocortisone in healthy volunteers. |
 | `Rozenveld_2022.pdf` | Rozenveld E et al., Pharmacokinetic Modeling of Hydrocortis…, Pharmaceutics (2022) | popPK | 9 | [10.3390/pharmaceutics14061161](https://doi.org/10.3390/pharmaceutics14061161) | [35745734](https://pubmed.ncbi.nlm.nih.gov/35745734) | The paper describes a population PK model for hydrocortisone, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only contains qualitative results and correlation coefficients. |
 
-<sub>queue written 2026-09-10T05:04:38.750145+00:00</sub>
+<sub>queue written 2026-09-18T00:36:30.238781+00:00</sub>
 
 ## Screened and excluded
 

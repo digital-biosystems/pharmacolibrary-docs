@@ -1,25 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Marques_2024_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Walsh2023_fixed_effects&quot;,&quot;label&quot;:&quot;Walsh_2023_fixed_effects&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_fixed_effects.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_fixed_effects&quot;,&quot;label&quot;:&quot;Walsh_2023_fixed_effects&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_fixed_effects.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_random_effects&quot;,&quot;label&quot;:&quot;Walsh_2023_random_effects&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_random_effects.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_random_effects&quot;,&quot;label&quot;:&quot;Walsh_2023_random_effects&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_random_effects.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_residual_variability&quot;,&quot;label&quot;:&quot;Walsh_2023_residual_variability&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_residual_variability.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_residual_variability&quot;,&quot;label&quot;:&quot;Walsh_2023_residual_variability&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_residual_variability.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Courlet2022_reference&quot;,&quot;label&quot;:&quot;Courlet_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Courlet2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_covariate&quot;,&quot;label&quot;:&quot;Marques_2024_covariate&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_covariate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_covariate&quot;,&quot;label&quot;:&quot;Marques_2024_covariate&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_covariate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_estimate&quot;,&quot;label&quot;:&quot;Marques_2024_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_estimate&quot;,&quot;label&quot;:&quot;Marques_2024_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_fold_error&quot;,&quot;label&quot;:&quot;Marques_2024_fold_error&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_fold_error.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_fold_error&quot;,&quot;label&quot;:&quot;Marques_2024_fold_error&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_fold_error.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_observed&quot;,&quot;label&quot;:&quot;Marques_2024_observed&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_observed.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_observed&quot;,&quot;label&quot;:&quot;Marques_2024_observed&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_observed.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_predicted&quot;,&quot;label&quot;:&quot;Marques_2024_predicted&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_predicted.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_predicted&quot;,&quot;label&quot;:&quot;Marques_2024_predicted&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_predicted.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_value&quot;,&quot;label&quot;:&quot;Marques_2024_value&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_value.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_value&quot;,&quot;label&quot;:&quot;Marques_2024_value&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_value.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Salbutamol_Vet2020_estimation&quot;,&quot;label&quot;:&quot;Vet_2020_estimation&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Vet2020_estimation.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Vet2020_estimation&quot;,&quot;label&quot;:&quot;Vet_2020_estimation&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Vet2020_estimation.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Vet2020_ipv&quot;,&quot;label&quot;:&quot;Vet_2020_ipv&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Vet2020_ipv.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Vet2020_ipv&quot;,&quot;label&quot;:&quot;Vet_2020_ipv&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Vet2020_ipv.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Vet2020_shrinkage&quot;,&quot;label&quot;:&quot;Vet_2020_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Vet2020_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Vet2020_shrinkage&quot;,&quot;label&quot;:&quot;Vet_2020_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Vet2020_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Courlet2022_reference&quot;,&quot;label&quot;:&quot;Courlet_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Courlet2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_estimate&quot;,&quot;label&quot;:&quot;Marques_2024_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_estimate&quot;,&quot;label&quot;:&quot;Marques_2024_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_value&quot;,&quot;label&quot;:&quot;Marques_2024_value&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_value&quot;,&quot;label&quot;:&quot;Marques_2024_value&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Valenzuela2006_reference&quot;,&quot;label&quot;:&quot;Valenzuela_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Valenzuela2006_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Vet2020_reference&quot;,&quot;label&quot;:&quot;Vet_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Vet2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # salbutamol — `Salbutamol_Marques2024v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-> ⚙️ **Pipeline limitation — reviewer_tooling.** the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault<br><sub>evidence: `C6_cl_magnitude failed (ratio None)`</sub>
-
-> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
-
-**What is wrong:** clearance is outside the plausible magnitude window.
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Not a curation fix — reviewer_tooling limitation.
-2. Check the parameter's unit_verbatim — an unconverted per-kg or per-hour unit is the usual cause, not a genuinely extreme value.
-3. Confirm value_si against the paper's reported number.
-4. A 'ratio None' means the check could not compute a ratio, so treat the window as unverified rather than as a failure of the value.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
@@ -27,20 +20,18 @@
 not matched (stem Marques_2024_2)
 
 ## Model component
-<dbs-pgx drug="salbutamol" model-id="Salbutamol_Marques2024v2_reference" status="needs_review" stale="false" population="virtual patients and asthma patients" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="salbutamol" model-id="Salbutamol_Marques2024v2_reference" status="curated_candidate" stale="false" population="virtual patients and asthma patients" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cl (mL/h) | `Q22` · CL | —(suppressed) | mL/h | — | L/h | not captured | review (0.7) | Marques_2024_2:review | — | not captured |
-| V1 (L) | `Q63` · V1 | —(suppressed) | L | — | L | not captured | review (0.7) | Marques_2024_2:review | — | not captured |
-| V2 (L) | `Q64` · V2 | —(suppressed) | L | — | L | not captured | review (0.7) | Marques_2024_2:review | — | not captured |
-| Q (L/h) | `Q30` · Q | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Marques_2024_2:review | — | not captured |
-| ka (h−1) | `Q49` · kabs | —(suppressed) | h−1 | — | 1/h | not captured | review (0.7) | Marques_2024_2:review | — | not captured |
+| ka (h−1) | `Q49` · kabs | 13.55 | h−1 | 0.003763888888888889 | [1] / [h] | 18.0 | exact (1.0) | pharmaceutics-16-00881-t003:row2:col1, pharmaceutics-16-00881-t003:row2:col2, Marques_2024_2_table_4:row1:col1, Marques_2024_2_table_4:row1:col2 | — | not captured |
+| Cl (L/h) | `Q22` · CL | 34.93 | L/h | 9.702777777777779e-06 | [l] / [h] | 16.6 | exact (1.0) | pharmaceutics-16-00881-t003:row3:col1, pharmaceutics-16-00881-t003:row3:col2, Marques_2024_2_table_4:row2:col1, Marques_2024_2_table_4:row2:col2 | — | not captured |
+| Q (L/h) | `Q30` · Q | 10.59 | L/h | 2.9416666666666667e-06 | [l] / [h] | 1.96 | exact (1.0) | pharmaceutics-16-00881-t003:row5:col1, pharmaceutics-16-00881-t003:row5:col2 | — | not captured |
+| V2 (L) | `Q64` · V2 | 0 | L | 0.0 | [l] | 2.40 | exact (1.0) | pharmaceutics-16-00881-t003:row6:col2, Marques_2024_2_table_4:row5:col1 | — | not captured |
+| V1 (L) | `Q63` · V1 | 162.93 | L | 0.16293000000000002 | [l] | 22.6 | exact (1.0) | Marques_2024_2_table_4:row3:col1, Marques_2024_2_table_4:row3:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -49,9 +40,15 @@ not matched (stem Marques_2024_2)
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['F', 'Tlag', 'k21']
+
 **Interpretation flags:**
-- built from REVIEW reference values (Marques_2024_2) — secondary source
-- volume reported by review
+- dropped duplicate Q30 ('ka and Q', value '-0.83') — already have one for this compound
+- dropped unlinked row (NIL): 'V1 and Cl' — extend the ontology if this is a real PK parameter (source ['Marques_2024_2_table_4:row14:col1', 'Marques_2024_2_table_4:row14:col2'])
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (Cl (L/h)); Q30 (Q (L/h)); Q64 (V2 (L)); Q63 (V1 (L))
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=salbutamol
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell pharmaceutics-16-00881-t003:row6:col1 = '0.66×10−2'
@@ -70,15 +67,26 @@ not matched (stem Marques_2024_2)
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Marques_2024_2:review'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Marques_2024_2:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Marques_2024_2:review'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Marques_2024_2:review'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Marques_2024_2:review'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 118.0 | not captured | not captured | ['Marques_2024_2:review'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-16-00881-t003:row3:col1', 'pharmaceutics-16-00881-t003:row3:col2', 'Marques_2024_2_table_4:row2:col1', 'Marques_2024_2_table_4:row2:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-16-00881-t003:row5:col1', 'pharmaceutics-16-00881-t003:row5:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-16-00881-t003:row2:col1', 'pharmaceutics-16-00881-t003:row2:col2', 'Marques_2024_2_table_4:row1:col1', 'Marques_2024_2_table_4:row1:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Marques_2024_2_table_4:row3:col1', 'Marques_2024_2_table_4:row3:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-16-00881-t003:row6:col2', 'Marques_2024_2_table_4:row5:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 34.93 | not captured | not captured | ['pharmaceutics-16-00881-t003:row3:col1', 'pharmaceutics-16-00881-t003:row3:col2', 'Marques_2024_2_table_4:row2:col1', 'Marques_2024_2_table_4:row2:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.118 L/h | not captured | not captured | ['Marques_2024_2:review'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 163 L | not captured | not captured | ['Marques_2024_2:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 34.9 L/h | not captured | not captured | ['pharmaceutics-16-00881-t003:row3:col1', 'pharmaceutics-16-00881-t003:row3:col2', 'Marques_2024_2_table_4:row2:col1', 'Marques_2024_2_table_4:row2:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 163 L | not captured | not captured | ['Marques_2024_2_table_4:row3:col1', 'Marques_2024_2_table_4:row3:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=salbutamol) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -88,6 +96,9 @@ not matched (stem Marques_2024_2)
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_salbutamol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Marques_2024_2` / `Marques_2024_2::reference`)
+- model: `../../../knowledgebase/drugs/drug_salbutamol/models/modelica/Salbutamol_Marques2024v2_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_salbutamol/models/modelica/Salbutamol_Marques2024v2_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_salbutamol/models/modelica/Salbutamol_Marques2024v2_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -96,19 +107,22 @@ not matched (stem Marques_2024_2)
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference/Salbutamol_Marques2024v2_reference_modelica.zip" download>Salbutamol_Marques2024v2_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference/Salbutamol_Marques2024v2_reference_matlab.zip" download>Salbutamol_Marques2024v2_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference/Salbutamol_Marques2024v2_reference_matlab_simbio.zip" download>Salbutamol_Marques2024v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference/Salbutamol_Marques2024v2_reference_sbml.zip" download>Salbutamol_Marques2024v2_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference/Salbutamol_Marques2024v2_reference_cellml.zip" download>Salbutamol_Marques2024v2_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference/Salbutamol_Marques2024v2_reference.svg" alt="Salbutamol_Marques2024v2_reference diagram"><figcaption>The structure OpenModelica draws for this model, with this record's parameter values in the component labels.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+<dbs-fmusim paramsurl="drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference/Salbutamol_Marques2024v2_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference/Salbutamol_Marques2024v2_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Salbutamol_Marques2024v2_reference_params.json` · controls `Salbutamol_Marques2024v2_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

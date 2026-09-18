@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;abacavir&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chandasana2024v2_reference&quot;,&quot;label&quot;:&quot;Chandasana_2024_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chandasana2024v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhao2013_reference&quot;,&quot;label&quot;:&quot;Zhao_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhao2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chandasana2024v2_reference&quot;,&quot;label&quot;:&quot;Chandasana_2024_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chandasana2024v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhao2013_reference&quot;,&quot;label&quot;:&quot;Zhao_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhao2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # abacavir
 
@@ -18,15 +18,15 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-26 20:11 | 28:17 | 4/1/1 | 0/2/0 | 45/0/16 | 862,478/56,134 | ollama / qwen3.8:27b-mtp-q8_0 | 57 | 53/4 | 33/24 | 0 |
+| 2026-09-17 22:42 | 4:44 | 4/1/1 | 1/1/0 | 45/0/16 | 174,943/5,943 | ollama / qwen3.8:27b-mtp-q8_0 | 57 | 53/4 | 33/24 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Chupradit_2024_reference](drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md) | Chupradit S et al., Population Pharmacokinetics of Pediatri…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3174](https://doi.org/10.1002/cpt.3174) |
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Zhang_2015_reference](drugs/drug_abacavir/Abacavir_Zhang2015_reference.md) | Zhang J et al., Population pharmacokinetics of dolutegr…, British journal of clinical… (2015) | [10.1111/bcp.12639](https://doi.org/10.1111/bcp.12639) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C2_center_consistency_wt failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Chandasana_2024_2_reference](drugs/drug_abacavir/Abacavir_Chandasana2024v2_reference.md) | Chandasana H et al., Population Pharmacokinetic Modeling of…, Infectious diseases and the… (2024) | [10.1007/s40121-024-01008-y](https://doi.org/10.1007/s40121-024-01008-y) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Chupradit_2024_reference](drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md) | Chupradit S et al., Population Pharmacokinetics of Pediatri…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3174](https://doi.org/10.1002/cpt.3174) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Fauchet_2014_reference](drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md) | Fauchet F et al., Population pharmacokinetics of abacavir…, Antimicrobial agents and ch… (2014) | [10.1128/AAC.03469-14](https://doi.org/10.1128/AAC.03469-14) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Ji_2024_reference](drugs/drug_abacavir/Abacavir_Ji2024_reference.md) | Ji Y et al., Use of Pharmacokinetic and Pharmacodyna…, Clinical pharmacokinetics (2024) | [10.1007/s40262-023-01338-z](https://doi.org/10.1007/s40262-023-01338-z) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Zhao_2013_reference](drugs/drug_abacavir/Abacavir_Zhao2013_reference.md) | Zhao W et al., Population pharmacokinetics of abacavir…, British journal of clinical… (2013) | [10.1111/bcp.12024](https://doi.org/10.1111/bcp.12024) |
@@ -35,8 +35,8 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Lee_2024](drugs/drug_abacavir/pd_Lee_2024_K_VABS_II_ABC.md) | Lee S et al., Population pharmacokinetic and pharmaco…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1452526](https://doi.org/10.3389/fphar.2024.1452526) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Xia_2022](drugs/drug_abacavir/pd_Xia_2022_CFU_mL.md) | Xia X et al., Emergence and Mechanism of Resistance o…, Frontiers in veterinary sci… (2022) | [10.3389/fvets.2022.801800](https://doi.org/10.3389/fvets.2022.801800) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Lee_2024](drugs/drug_abacavir/pd_Lee_2024_K_VABS_II_ABC.md) | Lee S et al., Population pharmacokinetic and pharmaco…, Frontiers in pharmacology (2024) | [10.3389/fphar.2024.1452526](https://doi.org/10.3389/fphar.2024.1452526) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Xia_2022](drugs/drug_abacavir/pd_Xia_2022_CFU_mL.md) | Xia X et al., Emergence and Mechanism of Resistance o…, Frontiers in veterinary sci… (2022) | [10.3389/fvets.2022.801800](https://doi.org/10.3389/fvets.2022.801800) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Xia_2022](drugs/drug_abacavir/pd_Xia_2022_drug_resistant_bacterial_enrichment.md) | Xia X et al., Emergence and Mechanism of Resistance o…, Frontiers in veterinary sci… (2022) | [10.3389/fvets.2022.801800](https://doi.org/10.3389/fvets.2022.801800) |
 
 ## Pharmacogenomics (PGx)
@@ -92,7 +92,7 @@
 
 - **PubMed hits:** 2203 matched, 100 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 6  ·  extracted 1  ·  needs_review 4  ·  rejected 1  ·  stale 0
+- **records:** 6  ·  extracted 2  ·  needs_review 3  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
@@ -103,24 +103,46 @@
 | popPK | Ampong_2018 | irrelevant | not captured | not captured | The paper focuses on pharmacogenomics of antidepressants and fluoxetine metabolism, containing no mention or pharmacokinetic data for abacavir. |
 | PGx | Ampong_2018 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for antidepressants (specifically fluoxetine) and does not mention abacavir. |
 | popPK | Aung_2014 | irrelevant | not captured | not captured | The paper is a pharmacogenomics review that only mentions abacavir briefly regarding HLA-B*57:01 hypersensitivity screening and contains no quantitative PK parameters or modeling data. |
-| PD | Aung_2014 | not_relevant | 1 | 0 | The paper is a review of antimicrobial pharmacogenomics that mentions abacavir only in the context of HLA-B*57:01 screening for hypersensitivity, without reporting any exposure-response or dose-response PD parameters. |
+| PD | Aung_2014 | not_relevant | 1 | 0 | The paper is a review of antimicrobial pharmacogenomics that mentions abacavir hypersensitivity but does not report any exposure-response or dose-response analysis with numeric PD parameters. |
+| PD | Bellin_1983 | not_relevant | 0 | 0 | The paper studies FSH dose-response in bovine granulosa cells and does not mention abacavir or report any PD parameters for it. |
+| PGx | Bergmans_1993 | not_relevant | 0 | 0 | The paper describes the nucleotide sequence of an HLA allele and does not report any pharmacokinetic or pharmacodynamic data for abacavir. |
+| PD | Bi_2023 | not_relevant | 0 | 0 | The text is a review of transporter-mediated natural product-drug interactions and does not contain any specific pharmacodynamic or exposure-response data for abacavir. |
 | PGx | Boswell-Casteel_2017 | not_relevant | 0 | 0 | The paper reviews the ABCB6 transporter and its role in porphyria and transfusion reactions, with no mention of abacavir or its pharmacokinetics/pharmacodynamics. |
 | PD | Bustos_1995 | not_relevant | 0 | 0 | The paper studies Cyclosporin A, not abacavir, and does not report any pharmacodynamic parameters for abacavir. |
 | PGx | Cascorbi_2018 | not_relevant | 0 | 0 | The paper reviews pharmacogenomics of immunosuppressants (azathioprine, methotrexate, mycophenolate, calcineurin inhibitors) and does not mention abacavir. |
 | PD | Childs_1983 | not_relevant | 0 | 0 | The paper focuses on the cytochemical localization of biotinylated GnRH in rat pituitary cells and does not contain any data or analysis regarding abacavir. |
+| PD | Christensen_2022 | not_relevant | 2 | 1 | The text is an abstract of a review article that mentions pharmacodynamics generally but does not provide specific numeric PD parameters or exposure-response data for abacavir. |
 | popPK | Chupradit_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of lopinavir and ritonavir, with abacavir only mentioned as a co-administered drug in the regimen. |
+| PGx | Concha_1991 | not_relevant | 0 | 0 | The paper discusses MHC antigen expression in cancer and has no relation to abacavir pharmacokinetics or pharmacodynamics. |
+| popPK | Damoiseaux_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of lorlatinib in mice, not abacavir. |
 | PGx | Duchateau_2024 | not_relevant | 0 | 0 | The paper reviews the role of the ABCA7 gene in Alzheimer's disease and does not mention abacavir or any pharmacokinetic/pharmacodynamic parameters. |
+| PGx | Décary_1979 | not_relevant | 0 | 0 | The paper discusses HLA-B cell alloantigens and recombination in families, with no mention of abacavir or pharmacokinetic/pharmacodynamic parameters. |
+| PGx | Eiermann_1990 | not_relevant | 0 | 0 | The paper focuses on HLA alloreactivity and T-cell clones, with no mention of abacavir or its pharmacokinetic/pharmacodynamic parameters. |
+| PGx | Esteban_1989 | not_relevant | 0 | 0 | The paper investigates HLA antigen expression in laryngeal cancer and does not mention abacavir or any pharmacokinetic/pharmacodynamic parameters. |
+| PGx | Esteban_1990 | not_relevant | 0 | 0 | The paper discusses HLA antigen expression in laryngeal cancer and has no connection to abacavir pharmacokinetics or pharmacodynamics. |
+| PGx | Ferron_1989 | not_relevant | 0 | 0 | The paper analyzes HLA antigen expression in gastric carcinomas and does not mention abacavir or any pharmacokinetic/pharmacodynamic parameters. |
 | PGx | Franke_2010 | not_relevant | 0 | 0 | The paper is a general review of drug transporters and does not report specific pharmacogenomic effects on abacavir. |
 | PGx | Fu_2025 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of ibrutinib, not abacavir. |
+| popPK | Fushitani_1991 | irrelevant | 0 | 0 | The paper describes the oxygenation properties of earthworm hemoglobin and is unrelated to abacavir pharmacokinetics. |
+| PD | Fushitani_1991 | not_relevant | 0 | 0 | The paper describes the oxygenation properties of earthworm hemoglobin and is unrelated to abacavir pharmacodynamics. |
+| popPK | Getaneh_2024 | irrelevant | 0 | 0 | The paper is a urology study on overactive bladder therapies and contains no pharmacokinetic data for abacavir. |
+| PGx | Granados_2024 | not_relevant | 0 | 0 | The paper is a theoretical review of organic anion transporters and does not report specific pharmacogenomic data for abacavir. |
 | PD | Hafner_2010 | not_relevant | 0 | 0 | The paper is a general review of pharmacokinetic and pharmacodynamic drug interactions and does not contain any specific data, analysis, or numeric parameters for abacavir. |
 | PGx | Hurwitz_2008 | not_relevant | 0 | 0 | The paper focuses on zidovudine (ZDV) pharmacokinetics and dose optimization, not abacavir, and does not report pharmacogenomic effects on abacavir PK/PD. |
+| PGx | Jakobsen_1981 | not_relevant | 0 | 0 | The paper reports HLA antigen frequencies in a Danish population and does not mention abacavir or any pharmacokinetic/pharmacodynamic parameters. |
+| PGx | Jakobsen_1983 | not_relevant | 0 | 0 | The paper discusses HLA recombination and lymphocyte typing, with no mention of abacavir or its pharmacokinetic/pharmacodynamic parameters. |
+| popPK | Ji_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and exposure-response of ribociclib, not abacavir. |
+| PD | Ji_2023 | not_relevant | 0 | 0 | The paper analyzes the exposure-response relationship for ribociclib, not abacavir. |
 | PD | Ji_2024 | not_relevant | 0 | 0 | The paper reports on ribociclib, not abacavir. |
 | PGx | Kaehler_2019 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for anticancer drugs (e.g., 6-MP, irinotecan, 5-FU, tamoxifen) but does not mention abacavir. |
+| PD | Kamibayashi_1992 | not_relevant | 0 | 0 | The paper describes the expression and characterization of protein phosphatase 2A subunits and their biochemical interactions, containing no information regarding abacavir or any pharmacodynamic exposure-response relationship. |
 | PGx | Langaee_2021 | not_relevant | 0 | 0 | The paper reports pharmacogenomic predictors for nevirapine pharmacokinetics, not abacavir. |
 | popPK | Lee_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of AST-001 (L-serine), not abacavir. |
 | popPK | Li_2022 | irrelevant | 0 | 0 | The paper is a review of HIV RT inhibitors (TAF, RPV, DOR, etc.) and does not report quantitative pharmacokinetic parameters for abacavir. |
 | PD | Li_2022 | not_relevant | 1 | 0 | The paper is a general review of HIV reverse transcriptase inhibitors and does not report specific pharmacodynamic or exposure-response data for abacavir. |
 | PD | Masuyama_1986 | not_relevant | 0 | 0 | The paper investigates the dose-response relationship of interferon-gamma on lymphocyte adhesion, not the pharmacodynamics of abacavir. |
+| PD | Nagayama_1992 | not_relevant | 0 | 0 | The paper studies TSH receptor autoantibodies and does not involve abacavir or any pharmacodynamic modeling of the specified drug. |
+| popPK | Odden_2024 | irrelevant | 0 | 0 | The paper investigates mitochondrial DNA variation and cognitive outcomes, containing no pharmacokinetic data for abacavir. |
 | PGx | Ogasawara_2013 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the pharmacokinetics of tacrolimus, not abacavir. |
 | PD | Radosavljevic_2023 | not_relevant | 0 | 0 | The paper is a review on pharmacogenetics in neuropsychiatric disorders and does not contain any data, analysis, or mention of abacavir or its pharmacodynamics. |
 | PD | Rajman_2020 | not_relevant | 0 | 0 | The paper is a review of genetic polymorphisms in drug transporters and does not report any specific pharmacodynamic or exposure-response data for abacavir. |
@@ -128,7 +150,11 @@
 | PD | Rocha_2018 | not_relevant | 0 | 0 | The paper is a review on statin transporters and does not report any pharmacodynamic or exposure-response data for abacavir. |
 | popPK | Roundhill_2019 | irrelevant | 0 | 0 | The paper is an in-vitro study on osteosarcoma cancer stem cells and ABC transporters, and does not involve abacavir or pharmacokinetic parameters. |
 | PD | Roundhill_2019 | not_relevant | 0 | 0 | The paper focuses on osteosarcoma cancer stem cells and ABC transporter expression, with no mention of abacavir or any pharmacodynamic modeling. |
+| PGx | Sandberg_1977 | not_relevant | 0 | 0 | The paper discusses HLA matching in kidney transplantation and does not mention abacavir or its pharmacokinetics/pharmacodynamics. |
+| PGx | Shriyan_2022 | not_relevant | 0 | 0 | The paper investigates imatinib, not abacavir. |
+| PGx | Swen_2011 | not_relevant | 0 | 0 | The paper is a general review of pharmacogenetic guidelines and does not report specific PK/PD data for abacavir. |
 | PGx | Sáez-Belló_2021 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the pharmacokinetics of capecitabine, not abacavir. |
+| PD | Toussaint_1994 | not_relevant | 3 | 2 | The paper is about vinorelbine, not abacavir, and only provides a qualitative dose-response correlation for vinorelbine without specific PD parameters. |
 | popPK | Tran_2023 | irrelevant | 0 | 0 | The paper is a biophysical study on P-glycoprotein ATPase activity and lipid modulation, and does not report pharmacokinetic parameters for abacavir. |
 | PD | Tran_2023 | not_relevant | 0 | 0 | The paper investigates the biophysical effects of lipid environments on P-glycoprotein ATPase activity using verapamil as a substrate, and does not contain any pharmacodynamic or exposure-response data for abacavir. |
 | popPK | Xia_2022 | irrelevant | 0 | 0 | The study focuses on tulathromycin and Mycoplasma hyopneumoniae, not abacavir. |
@@ -136,13 +162,16 @@
 | PD | Xu_2023 | not_relevant | 0 | 0 | The paper models SARS-CoV-2 viral dynamics and transmission dose-response, not the pharmacodynamics of abacavir. |
 | PGx | Yamasaki_2008 | not_relevant | 0 | 0 | The paper investigates the pharmacogenetics of sulfasalazine, not abacavir. |
 | PGx | Yin_2016 | not_relevant | 0 | 0 | The paper is a general review of renal drug transporters and drug-drug interactions, with no specific mention of abacavir or pharmacogenomic effects. |
-| popPK | Yokota_2023 | irrelevant | 0 | 0 | The paper concerns afatinib, not abacavir, and contains no PK parameters for the subject drug. |
+| popPK | Yokota_2023 | irrelevant | 0 | 0 | no_text gate: only 199 chars of text extracted (&lt; 400) |
 | PD | Yokota_2023 | not_relevant | 0 | 0 | The text describes an ROC curve analysis for afatinib AUC, which is a pharmacokinetic biomarker for toxicity prediction, not a pharmacodynamic exposure-response or dose-response relationship for abacavir. |
 | popPK | Zhang_2015 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for dolutegravir, not abacavir, which is only mentioned as a co-administered background therapy. |
 | popPK | Zhang_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and resistance mechanisms of danofloxacin in Mycoplasma gallisepticum, not abacavir. |
 | PD | Zhang_2018 | not_relevant | 0 | 0 | The paper studies danofloxacin, not abacavir. |
 | PGx | Zhang_2021 | not_relevant | 0 | 0 | The paper discusses pesticide metabolism in plants, not the pharmacogenomics of abacavir in humans. |
+| popPK | Zhang_2024 | irrelevant | 0 | 0 | The paper focuses on the synthesis and antibacterial mechanism of oxadiazole derivatives, not the pharmacokinetics of abacavir. |
+| PD | Zhang_2024 | not_relevant | 0 | 0 | The paper studies antibacterial oxadiazole derivatives, not the drug abacavir. |
 | PGx | Zhao_2015 | not_relevant | 0 | 0 | The paper reviews the role of the ABCA7 gene in Alzheimer's disease pathogenesis and does not mention abacavir or its pharmacokinetics/pharmacodynamics. |
+| popPK | van_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of para-aminosalicylic acid (PAS), and abacavir is only mentioned as a co-administered drug with no effect on PAS PK. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_abacavir`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

@@ -25,8 +25,8 @@ Mody H; Vaidya TR; Lesko LJ; Ait-Oudhia S et al. (2022). Cells 12
 | SC50,CIS (µM) — Estimate (% RSE) | `Q322` · not captured | 2.48 | µM | not captured | llm (not captured) | cells-12-00057-t002:row5:col3 |
 | 1/ƮCIS (h−1) — Estimate (% RSE) | `Q47` · not captured | 1.17 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row6:col2 |
 | 1/ƮCIS (h−1) — Estimate (% RSE) | `Q47` · not captured | 0.101 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row6:col3 |
-| Smax,CIM (h−1) — Estimate (% RSE) | `Q47` · not captured | 0.106 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row7:col2 |
-| Smax,CIM (h−1) — Estimate (% RSE) | `Q47` · not captured | 0.096 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row7:col3 |
+| Smax,CIM (h−1) — Estimate (% RSE) | `Q32` · not captured | 0.106 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row7:col2 |
+| Smax,CIM (h−1) — Estimate (% RSE) | `Q32` · not captured | 0.096 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row7:col3 |
 | SC50,CIM (µM) — Estimate (% RSE) | `Q322` · not captured | 36886.97 | µM | not captured | llm (not captured) | cells-12-00057-t002:row8:col2 |
 | SC50,CIM (µM) — Estimate (% RSE) | `Q322` · not captured | 21453.95 | µM | not captured | llm (not captured) | cells-12-00057-t002:row8:col3 |
 

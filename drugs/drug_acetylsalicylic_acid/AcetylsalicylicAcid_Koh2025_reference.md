@@ -1,41 +1,47 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;acetylsalicylic acid&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/&quot;},{&quot;label&quot;:&quot;Koh_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AcetylsalicylicAcid_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Koh2025_reference&quot;,&quot;label&quot;:&quot;Koh_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;AcetylsalicylicAcid_CuestaGragera2015_reference&quot;,&quot;label&quot;:&quot;Cuesta-Gragera_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_CuestaGragera2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AcetylsalicylicAcid_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Zapadniuk1987_reference&quot;,&quot;label&quot;:&quot;Zapadniuk_1987_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Zapadniuk1987_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Cuny1979_reference&quot;,&quot;label&quot;:&quot;Cuny_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Cuny1979_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Koh2025_reference&quot;,&quot;label&quot;:&quot;Koh_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Shi2008_reference&quot;,&quot;label&quot;:&quot;Shi_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Shi2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_CuestaGragera2015_reference&quot;,&quot;label&quot;:&quot;Cuesta-Gragera_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_CuestaGragera2015_reference.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # acetylsalicylic acid — `AcetylsalicylicAcid_Koh2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 3 covered
+**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 2 covered; T3_output_variable — expected Metabolite_C (measured=acetylsalicylic_acid) — got central.C; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C_enteral
 
 **Steps:**
-1. Open the emitted .mo and compare its base class and parameters with the record.
-2. Check the .deviation.json beside it for what the engineer defaulted or assumed.
-3. A wrong base class or a defaulted core parameter means rebuilding, not curating.
+1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
+2. If the paper never reports it, the record cannot become a model.
+3. Open the emitted .mo and compare its base class and parameters with the record.
+4. Check the .deviation.json beside it for what the engineer defaulted or assumed.
+5. A wrong base class or a defaulted core parameter means rebuilding, not curating.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **scholar** · guidance written by playbook</sub>
 
 ## Citation
 Koh J; Khwarg J; Yu KS; Lee S; Jang IJ; Lee S et al. (2025). Drug design, development and therapy 19
   ·  DOI: [10.2147/dddt.s533428](https://doi.org/10.2147/dddt.s533428)
 
 ## Model component
-<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Koh2025_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="acetylsalicylic_acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Koh2025_reference" status="model_quarantined" stale="false" population="healthy adults" measured-compound="acetylsalicylic_acid" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Parameterization:** Q/F, V/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLm/F, Q/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
+> ⚠️ This record is not accepted (current status `model_quarantined`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL m /F (L/h) | `Q22` · CL | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Koh_2025:review | — | not captured |
-| V 4 /F (L) | `Q76` · V/F | —(suppressed) | L | — | L | not captured | review (0.7) | Koh_2025:review | — | not captured |
-| Q/F (L/h) | `Q69` · Q/F | —(suppressed) | L/h | — | L/h | not captured | review (0.7) | Koh_2025:review | — | not captured |
-| Lag 0 (h) | `Q83` · tlag | —(suppressed) | h | — | h | not captured | review (0.7) | Koh_2025:review | — | not captured |
+| fr | `Q43` · FR | —(suppressed) | not captured | — | not captured | 4.99 | exact (1.0) | t0001:row2:col1, t0001:row2:col2 | — | 0.29 (16.5% RSE) |
+| ka capsule (h−1) | `Q49` · kabs | —(suppressed) | h−1 | — | [1] / [h] | 21.8 | llm_confirmed (0.6) | t0001:row3:col1, t0001:row3:col2 | — | 1.09 (14.7% RSE) |
+| Lag0 (h) | `Q83` · tlag | —(suppressed) | h | — | [h] | 8.26 | llm (0.6) | t0001:row6:col1, t0001:row6:col2 | — | not captured |
+| k23 (h−1) | `Q48` · kcomp | —(suppressed) | h−1 | — | [1] / [h] | 4.11 | exact (1.0) | t0001:row7:col1, t0001:row7:col2 | — | 0.27 (15% RSE) |
+| βweight_k34 | `Q304` · k31 | —(suppressed) | not captured | — | not captured | 30.9 | llm (0.6) | t0001:row10:col1, t0001:row10:col2 | — | not captured |
+| CLm/F (L/h) | `Q351` · CLm/F | —(suppressed) | L/h | — | [l] / [h] | 3.86 | exact (1.0) | t0001:row11:col1, t0001:row11:col2 | — | 0.24 (11.9% RSE) |
+| Q/F (L/h) | `Q69` · Q/F | —(suppressed) | L/h | — | [l] / [h] | not captured | exact (1.0) | t0001:row13:col1 | — | not captured |
+| V3/F (L) | `Q78` · V3/F | —(suppressed) | L | — | [l] | 12.3 | exact (1.0) | t0001:row14:col1, t0001:row14:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -44,12 +50,25 @@ Koh J; Khwarg J; Yu KS; Lee S; Jang IJ; Lee S et al. (2025). Drug design, develo
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['k21']
-
 **Interpretation flags:**
-- built from REVIEW reference values (Koh_2025) — secondary source
-- volume reported by review
+- dropped duplicate Q49 ('ka tablet (h−1)', value '0.053') — already have one for this compound
+- dropped unlinked row (NIL): 'Tk0 (h)' — extend the ontology if this is a real PK parameter (source ['t0001:row5:col1', 't0001:row5:col2'])
+- dropped duplicate Q48 ('k24 (h−1)', value '0.57') — already have one for this compound
+- dropped duplicate Q48 ('k34 (h−1)', value '2.97') — already have one for this compound
+- routed 'βweight_CLm' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- dropped duplicate Q78 ('V4/F (L)', value '7.5') — already have one for this compound
+- dropped duplicate Q78 ('V5/F (L)', value '1.98') — already have one for this compound
+- dropped PD-category row 'R0 (μg/L)' → Q336 (R0, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0001:row17:col1', 't0001:row17:col2'])
+- dropped PD-category row 'kout (h−1)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0001:row18:col1', 't0001:row18:col2'])
+- dropped PD-category row 'Imax' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0001:row19:col1'])
+- dropped PD-category row 'IC50 (mol/L)' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0001:row20:col1'])
+- dropped PD-category row 'Gamma' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0001:row21:col1'])
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=acetylsalicylic_acid
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+
+**Extraction notes:**
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -57,25 +76,28 @@ Koh J; Khwarg J; Yu KS; Lee S; Jang IJ; Lee S et al. (2025). Drug design, develo
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Koh_2025:review'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Koh_2025:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Koh_2025:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Koh_2025:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.76 | not captured | not captured | ['Koh_2025:review'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0001:row11:col1', 't0001:row11:col2'] |
+| C5_dimension_Q48 | pass | 1 / [time] | not captured | not captured | not captured | ['t0001:row7:col1', 't0001:row7:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['t0001:row3:col1', 't0001:row3:col2'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0001:row13:col1'] |
+| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0001:row14:col1', 't0001:row14:col2'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['t0001:row6:col1', 't0001:row6:col2'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.76 L/h | not captured | not captured | ['Koh_2025:review'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 7.5 L | not captured | not captured | ['Koh_2025:review'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=acetylsalicylic_acid) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['tlag'] |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=acetylsalicylic_acid) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['kcomp', 'Q/F'] |
+| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
@@ -86,8 +108,8 @@ Koh J; Khwarg J; Yu KS; Lee S; Jang IJ; Lee S et al. (2025). Drug design, develo
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Koh_2025` / `Koh_2025::reference`)
-- model: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/models/modelica/AcetylsalicylicAcid_Koh2025_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/models/modelica/AcetylsalicylicAcid_Koh2025_reference.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/models/modelica/_needs_review/AcetylsalicylicAcid_Koh2025_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/models/modelica/_needs_review/AcetylsalicylicAcid_Koh2025_reference.deviation.json`
 - sim: `../../../knowledgebase/drugs/drug_acetylsalicylic_acid/models/modelica/AcetylsalicylicAcid_Koh2025_reference.json`
 
 
@@ -98,11 +120,11 @@ Koh J; Khwarg J; Yu KS; Lee S; Jang IJ; Lee S et al. (2025). Drug design, develo
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference/AcetylsalicylicAcid_Koh2025_reference_modelica.zip" download>AcetylsalicylicAcid_Koh2025_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference/AcetylsalicylicAcid_Koh2025_reference_fmi.zip" download>AcetylsalicylicAcid_Koh2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference/AcetylsalicylicAcid_Koh2025_reference_matlab.zip" download>AcetylsalicylicAcid_Koh2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference/AcetylsalicylicAcid_Koh2025_reference_matlab_simbio.zip" download>AcetylsalicylicAcid_Koh2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference/AcetylsalicylicAcid_Koh2025_reference_sbml.zip" download>AcetylsalicylicAcid_Koh2025_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference/AcetylsalicylicAcid_Koh2025_reference_cellml.zip" download>AcetylsalicylicAcid_Koh2025_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference/AcetylsalicylicAcid_Koh2025_reference_fmi.zip" download>AcetylsalicylicAcid_Koh2025_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference/AcetylsalicylicAcid_Koh2025_reference_matlab.zip" download>AcetylsalicylicAcid_Koh2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference/AcetylsalicylicAcid_Koh2025_reference_matlab_simbio.zip" download>AcetylsalicylicAcid_Koh2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference/AcetylsalicylicAcid_Koh2025_reference_sbml.zip" download>AcetylsalicylicAcid_Koh2025_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Koh2025_reference/AcetylsalicylicAcid_Koh2025_reference_cellml.zip" download>AcetylsalicylicAcid_Koh2025_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>

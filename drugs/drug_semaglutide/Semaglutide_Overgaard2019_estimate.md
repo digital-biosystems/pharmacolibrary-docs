@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;semaglutide&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/&quot;},{&quot;label&quot;:&quot;Overgaard_2019 \u00b7 estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2021v2_reference&quot;,&quot;label&quot;:&quot;Overgaard_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2021v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_estimate&quot;,&quot;label&quot;:&quot;Overgaard_2019_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_estimate&quot;,&quot;label&quot;:&quot;Overgaard_2019_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_one_compartment_model&quot;,&quot;label&quot;:&quot;Overgaard_2019_one_compartment_model&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_one_compartment_model&quot;,&quot;label&quot;:&quot;Overgaard_2019_one_compartment_model&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_one_compartment_model_from_phase_3&quot;,&quot;label&quot;:&quot;Overgaard_2019_one_compartment_model_from_phase_3a_trialsa&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_one_compartment_model_from_phase_3&quot;,&quot;label&quot;:&quot;Overgaard_2019_one_compartment_model_from_phase_3a_trialsa&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_two_compartment_final_model&quot;,&quot;label&quot;:&quot;Overgaard_2019_two_compartment_final_model&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_two_compartment_final_model.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_two_compartment_final_model&quot;,&quot;label&quot;:&quot;Overgaard_2019_two_compartment_final_model&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_two_compartment_final_model.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Xie2024_reference&quot;,&quot;label&quot;:&quot;Xie_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Xie2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Choi2025_reference&quot;,&quot;label&quot;:&quot;Choi_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Choi2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Guo2023_reference&quot;,&quot;label&quot;:&quot;Guo_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Guo2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_estimate&quot;,&quot;label&quot;:&quot;Overgaard_2019_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_estimate&quot;,&quot;label&quot;:&quot;Overgaard_2019_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_one_compartment_model&quot;,&quot;label&quot;:&quot;Overgaard_2019_one_compartment_model&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_one_compartment_model&quot;,&quot;label&quot;:&quot;Overgaard_2019_one_compartment_model&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_one_compartment_model_from_phase_3&quot;,&quot;label&quot;:&quot;Overgaard_2019_one_compartment_model_from_phase_3a_trialsa&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_one_compartment_model_from_phase_3&quot;,&quot;label&quot;:&quot;Overgaard_2019_one_compartment_model_from_phase_3a_trialsa&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_two_compartment_final_model&quot;,&quot;label&quot;:&quot;Overgaard_2019_two_compartment_final_model&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_two_compartment_final_model.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_two_compartment_final_model&quot;,&quot;label&quot;:&quot;Overgaard_2019_two_compartment_final_model&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_two_compartment_final_model.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2021v2_reference&quot;,&quot;label&quot;:&quot;Overgaard_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2021v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Xie2024_reference&quot;,&quot;label&quot;:&quot;Xie_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Xie2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Choi2025_reference&quot;,&quot;label&quot;:&quot;Choi_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Choi2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Guo2023_reference&quot;,&quot;label&quot;:&quot;Guo_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Guo2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # semaglutide — `Semaglutide_Overgaard2019_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 ### Reviewer guidance
 
@@ -13,15 +13,13 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable.
+**What is wrong:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
-2. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-3. If the paper never reports it, the record cannot become a model.
-4. Advisory only — the base model still replicates.
-5. Check the record's covariate_definitions in _interpretv2.yaml.
-6. Re-run the engineer for this drug if the covariate curves are wanted.
+2. Advisory only — the base model still replicates.
+3. Check the record's covariate_definitions in _interpretv2.yaml.
+4. Re-run the engineer for this drug if the covariate curves are wanted.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -29,24 +27,22 @@
 not matched (stem Overgaard_2019)
 
 ## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Overgaard2019_estimate" status="model_quarantined" stale="false" population="healthy subjects and subjects with type 2 diabetes" measured-compound="semaglutide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="semaglutide" model-id="Semaglutide_Overgaard2019_estimate" status="accepted_with_caveats" stale="false" population="healthy subjects and subjects with type 2 diabetes" measured-compound="semaglutide" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — parameter **values are suppressed**. Labels, links and provenance shown for audit only.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Absorption rate constant (ka), h−1 | `Q49` · kabs | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Tab4:row1:col1 | — | not captured |
-| Clearance (CL), L/h | `Q22` · CL | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Tab4:row2:col1 | — | not captured |
-| Central volume (Vc), L | `Q63` · V1 | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Tab4:row3:col1 | — | not captured |
-| Intercompartmental clearance (Q), L/h | `Q30` · Q | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Tab4:row4:col1 | — | not captured |
-| Peripheral volume (Vp), L | `Q64` · V2 | —(suppressed) | not captured | — | not captured | not captured | llm_confirmed (0.6) | Tab4:row5:col1 | — | not captured |
-| Absolute bioavailability (F) | `Q40` · Fab | —(suppressed) | F | — | not captured | not captured | exact (1.0) | Tab4:row6:col1 | — | not captured |
-| body_weight_effect_on_cl_and_q | `Q900` · body_weight_effect_on_cl_and_q | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Tab4:row7:col1 | — | not captured |
-| body_weight_effect_on_vc_and_vp | `Q900` · body_weight_effect_on_vc_and_vp | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Tab4:row8:col1 | — | not captured |
-| injection_site_effect_on_f | `Q900` · injection_site_effect_on_f | —(suppressed) | not captured | — | not captured | not captured | not captured (not captured) | Tab4:row10:col1 | — | not captured |
+| Absorption rate constant (ka), h−1 | `Q49` · kabs | 0.0253 | h−1 | 7.027777777777778e-06 | [1] / [h] | not captured | llm_confirmed (0.6) | Tab4:row1:col1 | — | not captured |
+| Clearance (CL), L/h | `Q22` · CL | 0.0348 | L/h | 9.666666666666666e-09 | [l] / [h] | not captured | space_fold (0.95) | Tab4:row2:col1 | — | not captured |
+| Central volume (Vc), L | `Q63` · V1 | 3.59 | L | 0.00359 | [l] | not captured | llm_confirmed (0.6) | Tab4:row3:col1 | — | not captured |
+| Intercompartmental clearance (Q), L/h | `Q30` · Q | 0.304 | L/h | 8.444444444444446e-08 | [l] / [h] | not captured | llm_confirmed (0.6) | Tab4:row4:col1 | — | not captured |
+| Peripheral volume (Vp), L | `Q64` · V2 | 4.10 | L | 0.0040999999999999995 | [l] | not captured | llm_confirmed (0.6) | Tab4:row5:col1 | — | not captured |
+| Absolute bioavailability (F) | `Q40` · Fab | 0.847 | F | not captured | not captured | not captured | exact (1.0) | Tab4:row6:col1 | — | not captured |
+| body_weight_effect_on_cl_and_q | `Q900` · body_weight_effect_on_cl_and_q | 1.01 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab4:row7:col1 | — | not captured |
+| body_weight_effect_on_vc_and_vp | `Q900` · body_weight_effect_on_vc_and_vp | 0.923 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab4:row8:col1 | — | not captured |
+| injection_site_effect_on_f | `Q900` · injection_site_effect_on_f | 0.883 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab4:row10:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,6 +50,9 @@ not matched (stem Overgaard_2019)
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
 
 **Interpretation flags:**
 - covariate level 'Body weight effect on CL and Q' → Q900:body_weight_effect_on_cl_and_q = 1.01 (linear_fractional on Q22)
@@ -97,18 +96,28 @@ not matched (stem Overgaard_2019)
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row2:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row4:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab4:row1:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row3:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row5:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0348 | not captured | not captured | ['Tab4:row2:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0348 L/h | not captured | not captured | ['Tab4:row2:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.59 L | not captured | not captured | ['Tab4:row3:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 4.1 L | not captured | not captured | ['Tab4:row5:col1'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T3_output_variable | not captured | pass | C_central (measured=semaglutide) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -118,8 +127,9 @@ not matched (stem Overgaard_2019)
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_semaglutide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Overgaard_2019` / `Overgaard_2019::estimate`)
-- model: `../../../knowledgebase/drugs/drug_semaglutide/models/modelica/_needs_review/Semaglutide_Overgaard2019_estimate.mo`
-- deviation: `../../../knowledgebase/drugs/drug_semaglutide/models/modelica/_needs_review/Semaglutide_Overgaard2019_estimate.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_semaglutide/models/modelica/Semaglutide_Overgaard2019_estimate.mo`
+- deviation: `../../../knowledgebase/drugs/drug_semaglutide/models/modelica/Semaglutide_Overgaard2019_estimate.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_semaglutide/models/modelica/Semaglutide_Overgaard2019_estimate.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -128,19 +138,22 @@ not matched (stem Overgaard_2019)
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate/Semaglutide_Overgaard2019_estimate_modelica.zip" download>Semaglutide_Overgaard2019_estimate_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate/Semaglutide_Overgaard2019_estimate_matlab.zip" download>Semaglutide_Overgaard2019_estimate_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate/Semaglutide_Overgaard2019_estimate_matlab_simbio.zip" download>Semaglutide_Overgaard2019_estimate_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate/Semaglutide_Overgaard2019_estimate_sbml.zip" download>Semaglutide_Overgaard2019_estimate_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate/Semaglutide_Overgaard2019_estimate_cellml.zip" download>Semaglutide_Overgaard2019_estimate_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate/Semaglutide_Overgaard2019_estimate.svg" alt="Semaglutide_Overgaard2019_estimate diagram"><figcaption>The structure OpenModelica draws for this model, with this record's parameter values in the component labels.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+<dbs-fmusim paramsurl="drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate/Semaglutide_Overgaard2019_estimate_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate/Semaglutide_Overgaard2019_estimate_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Semaglutide_Overgaard2019_estimate_params.json` · controls `Semaglutide_Overgaard2019_estimate_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

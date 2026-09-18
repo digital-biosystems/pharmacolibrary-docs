@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lansoprazole_Sakurai2007_reference&quot;,&quot;label&quot;:&quot;Sakurai_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lansoprazole_Katashima1995_reference&quot;,&quot;label&quot;:&quot;Katashima_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lansoprazole/Lansoprazole_Katashima1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lansoprazole_Sakurai2007_1_compartment&quot;,&quot;label&quot;:&quot;Sakurai_2007_1_compartment&quot;,&quot;href&quot;:&quot;drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_1_compartment.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lansoprazole_Sakurai2007_1_compartment&quot;,&quot;label&quot;:&quot;Sakurai_2007_1_compartment&quot;,&quot;href&quot;:&quot;drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_1_compartment.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lansoprazole_Sakurai2007_2_compartment&quot;,&quot;label&quot;:&quot;Sakurai_2007_2_compartment&quot;,&quot;href&quot;:&quot;drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_2_compartment.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lansoprazole_Sakurai2007_2_compartment&quot;,&quot;label&quot;:&quot;Sakurai_2007_2_compartment&quot;,&quot;href&quot;:&quot;drugs/drug_lansoprazole/Lansoprazole_Sakurai2007_2_compartment.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # name — PD  <span class="pk-badge pk-badge--red">rejected</span>
@@ -16,22 +16,22 @@ Wu L; Liu J; Zheng Y; Zhai Y; Lin M; Wu G; et al. et al. (2019). Clinical drug i
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|
-| Cmax, ng/mL — Dexlansoprazole group | `Q32` · not captured | 1534.86 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col1 |
-| Cmax, ng/mL — Dexlansoprazole group | `Q32` · not captured | 1490.00 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col2 |
-| Cmax, ng/mL — Dexlansoprazole group | `Q32` · not captured | 1512.43 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col3 |
-| Cmax, ng/mL — Dexlansoprazole group | `Q32` · not captured | 3242.14 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col4 |
-| Cmax, ng/mL — Dexlansoprazole group | `Q32` · not captured | 3145.64 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col5 |
-| Cmax, ng/mL — Dexlansoprazole group | `Q32` · not captured | 3193.89 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col6 |
-| Cmax, ng/mL — Lansoprazole group | `Q32` · not captured | 1663.50 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col7 |
-| Cmax, ng/mL — Lansoprazole group | `Q32` · not captured | 848.13 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col8 |
-| t½, h — Dexlansoprazole group | `Q57` · not captured | 2.00 | not captured | not captured | llm (not captured) | Tab2:row4:col1 |
-| t½, h — Dexlansoprazole group | `Q57` · not captured | 1.52 | not captured | not captured | llm (not captured) | Tab2:row4:col2 |
-| t½, h — Dexlansoprazole group | `Q57` · not captured | 1.76 | not captured | not captured | llm (not captured) | Tab2:row4:col3 |
-| t½, h — Dexlansoprazole group | `Q57` · not captured | 2.07 | not captured | not captured | llm (not captured) | Tab2:row4:col4 |
-| t½, h — Dexlansoprazole group | `Q57` · not captured | 2.04 | not captured | not captured | llm (not captured) | Tab2:row4:col5 |
-| t½, h — Dexlansoprazole group | `Q57` · not captured | 2.06 | not captured | not captured | llm (not captured) | Tab2:row4:col6 |
-| t½, h — Lansoprazole group | `Q57` · not captured | 2.32 | not captured | not captured | llm (not captured) | Tab2:row4:col7 |
-| t½, h — Lansoprazole group | `Q57` · not captured | 1.02 | not captured | not captured | llm (not captured) | Tab2:row4:col8 |
+| Cmax, ng/mL — Dexlansoprazole group | `Q32` · not captured | 1534.86 | ng/mL | not captured | exact (not captured) | Tab2:row3:col1 |
+| Cmax, ng/mL — Dexlansoprazole group | `Q32` · not captured | 1490.00 | ng/mL | not captured | exact (not captured) | Tab2:row3:col2 |
+| Cmax, ng/mL — Dexlansoprazole group | `Q32` · not captured | 1512.43 | ng/mL | not captured | exact (not captured) | Tab2:row3:col3 |
+| Cmax, ng/mL — Dexlansoprazole group | `Q32` · not captured | 3242.14 | ng/mL | not captured | exact (not captured) | Tab2:row3:col4 |
+| Cmax, ng/mL — Dexlansoprazole group | `Q32` · not captured | 3145.64 | ng/mL | not captured | exact (not captured) | Tab2:row3:col5 |
+| Cmax, ng/mL — Dexlansoprazole group | `Q32` · not captured | 3193.89 | ng/mL | not captured | exact (not captured) | Tab2:row3:col6 |
+| Cmax, ng/mL — Lansoprazole group | `Q32` · not captured | 1663.50 | ng/mL | not captured | exact (not captured) | Tab2:row3:col7 |
+| Cmax, ng/mL — Lansoprazole group | `Q32` · not captured | 848.13 | ng/mL | not captured | exact (not captured) | Tab2:row3:col8 |
+| t½, h — Dexlansoprazole group | `Q57` · not captured | 2.00 | h | not captured | llm (not captured) | Tab2:row4:col1 |
+| t½, h — Dexlansoprazole group | `Q57` · not captured | 1.52 | h | not captured | llm (not captured) | Tab2:row4:col2 |
+| t½, h — Dexlansoprazole group | `Q57` · not captured | 1.76 | h | not captured | llm (not captured) | Tab2:row4:col3 |
+| t½, h — Dexlansoprazole group | `Q57` · not captured | 2.07 | h | not captured | llm (not captured) | Tab2:row4:col4 |
+| t½, h — Dexlansoprazole group | `Q57` · not captured | 2.04 | h | not captured | llm (not captured) | Tab2:row4:col5 |
+| t½, h — Dexlansoprazole group | `Q57` · not captured | 2.06 | h | not captured | llm (not captured) | Tab2:row4:col6 |
+| t½, h — Lansoprazole group | `Q57` · not captured | 2.32 | h | not captured | llm (not captured) | Tab2:row4:col7 |
+| t½, h — Lansoprazole group | `Q57` · not captured | 1.02 | h | not captured | llm (not captured) | Tab2:row4:col8 |
 | MRTt — Dexlansoprazole group | `Q53` · not captured | 2.28 | not captured | not captured | llm (not captured) | Tab2:row5:col1 |
 | MRTt — Dexlansoprazole group | `Q53` · not captured | 1.88 | not captured | not captured | llm (not captured) | Tab2:row5:col2 |
 | MRTt — Dexlansoprazole group | `Q53` · not captured | 2.08 | not captured | not captured | llm (not captured) | Tab2:row5:col3 |
@@ -40,34 +40,34 @@ Wu L; Liu J; Zheng Y; Zhai Y; Lin M; Wu G; et al. et al. (2019). Clinical drug i
 | MRTt — Dexlansoprazole group | `Q53` · not captured | 2.32 | not captured | not captured | llm (not captured) | Tab2:row5:col6 |
 | MRTt — Lansoprazole group | `Q53` · not captured | 2.50 | not captured | not captured | llm (not captured) | Tab2:row5:col7 |
 | MRTt — Lansoprazole group | `Q53` · not captured | 1.02 | not captured | not captured | llm (not captured) | Tab2:row5:col8 |
-| AUCt, ng·h/mL — Dexlansoprazole group | `Q19` · not captured | 3706.33 | not captured | not captured | llm_confirmed (not captured) | Tab2:row6:col1 |
-| AUCt, ng·h/mL — Dexlansoprazole group | `Q19` · not captured | 2956.61 | not captured | not captured | llm_confirmed (not captured) | Tab2:row6:col2 |
-| AUCt, ng·h/mL — Dexlansoprazole group | `Q19` · not captured | 3331.47 | not captured | not captured | llm_confirmed (not captured) | Tab2:row6:col3 |
-| AUCt, ng·h/mL — Dexlansoprazole group | `Q19` · not captured | 8504.36 | not captured | not captured | llm_confirmed (not captured) | Tab2:row6:col4 |
-| AUCt, ng·h/mL — Dexlansoprazole group | `Q19` · not captured | 7705.40 | not captured | not captured | llm_confirmed (not captured) | Tab2:row6:col5 |
-| AUCt, ng·h/mL — Dexlansoprazole group | `Q19` · not captured | 8104.88 | not captured | not captured | llm_confirmed (not captured) | Tab2:row6:col6 |
-| AUCt, ng·h/mL — Lansoprazole group | `Q19` · not captured | 1140.25 | not captured | not captured | llm_confirmed (not captured) | Tab2:row6:col8 |
-| AUC∞, ng·h/mL — Dexlansoprazole group | `Q17` · not captured | 3973.77 | not captured | not captured | llm_confirmed (not captured) | Tab2:row7:col1 |
-| AUC∞, ng·h/mL — Dexlansoprazole group | `Q17` · not captured | 3022.23 | not captured | not captured | llm_confirmed (not captured) | Tab2:row7:col2 |
-| AUC∞, ng·h/mL — Dexlansoprazole group | `Q17` · not captured | 3498.00 | not captured | not captured | llm_confirmed (not captured) | Tab2:row7:col3 |
-| AUC∞, ng·h/mL — Dexlansoprazole group | `Q17` · not captured | 9380.59 | not captured | not captured | llm_confirmed (not captured) | Tab2:row7:col4 |
-| AUC∞, ng·h/mL — Dexlansoprazole group | `Q17` · not captured | 8206.10 | not captured | not captured | llm_confirmed (not captured) | Tab2:row7:col5 |
-| AUC∞, ng·h/mL — Dexlansoprazole group | `Q17` · not captured | 8793.35 | not captured | not captured | llm_confirmed (not captured) | Tab2:row7:col6 |
-| AUC∞, ng·h/mL — Lansoprazole group | `Q17` · not captured | 1161.07 | not captured | not captured | llm_confirmed (not captured) | Tab2:row7:col8 |
-| Vd, L — Dexlansoprazole group | `Q61` · not captured | 11.00 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col1 |
-| Vd, L — Dexlansoprazole group | `Q61` · not captured | 11.31 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col2 |
-| Vd, L — Dexlansoprazole group | `Q61` · not captured | 11.16 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col3 |
-| Vd, L — Dexlansoprazole group | `Q61` · not captured | 10.03 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col4 |
-| Vd, L — Dexlansoprazole group | `Q61` · not captured | 10.57 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col5 |
-| Vd, L — Dexlansoprazole group | `Q61` · not captured | 10.30 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col6 |
-| Vd, L — Lansoprazole group | `Q61` · not captured | 43.65 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col8 |
-| CL, L/h — Dexlansoprazole group | `Q22` · not captured | 4.90 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col1 |
-| CL, L/h — Dexlansoprazole group | `Q22` · not captured | 5.90 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col2 |
-| CL, L/h — Dexlansoprazole group | `Q22` · not captured | 5.40 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col3 |
-| CL, L/h — Dexlansoprazole group | `Q22` · not captured | 4.65 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col4 |
-| CL, L/h — Dexlansoprazole group | `Q22` · not captured | 4.39 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col5 |
-| CL, L/h — Dexlansoprazole group | `Q22` · not captured | 4.52 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col6 |
-| CL, L/h — Lansoprazole group | `Q358` · not captured | 34.66 | not captured | not captured | llm_corrected (not captured) | Tab2:row9:col8 |
+| AUCt, ng·h/mL — Dexlansoprazole group | `Q19` · not captured | 3706.33 | ng·h/mL | not captured | exact (not captured) | Tab2:row6:col1 |
+| AUCt, ng·h/mL — Dexlansoprazole group | `Q19` · not captured | 2956.61 | ng·h/mL | not captured | exact (not captured) | Tab2:row6:col2 |
+| AUCt, ng·h/mL — Dexlansoprazole group | `Q19` · not captured | 3331.47 | ng·h/mL | not captured | exact (not captured) | Tab2:row6:col3 |
+| AUCt, ng·h/mL — Dexlansoprazole group | `Q19` · not captured | 8504.36 | ng·h/mL | not captured | exact (not captured) | Tab2:row6:col4 |
+| AUCt, ng·h/mL — Dexlansoprazole group | `Q19` · not captured | 7705.40 | ng·h/mL | not captured | exact (not captured) | Tab2:row6:col5 |
+| AUCt, ng·h/mL — Dexlansoprazole group | `Q19` · not captured | 8104.88 | ng·h/mL | not captured | exact (not captured) | Tab2:row6:col6 |
+| AUCt, ng·h/mL — Lansoprazole group | `Q19` · not captured | 1140.25 | ng·h/mL | not captured | exact (not captured) | Tab2:row6:col8 |
+| AUC∞, ng·h/mL — Dexlansoprazole group | `Q17` · not captured | 3973.77 | ng·h/mL | not captured | exact (not captured) | Tab2:row7:col1 |
+| AUC∞, ng·h/mL — Dexlansoprazole group | `Q17` · not captured | 3022.23 | ng·h/mL | not captured | exact (not captured) | Tab2:row7:col2 |
+| AUC∞, ng·h/mL — Dexlansoprazole group | `Q17` · not captured | 3498.00 | ng·h/mL | not captured | exact (not captured) | Tab2:row7:col3 |
+| AUC∞, ng·h/mL — Dexlansoprazole group | `Q17` · not captured | 9380.59 | ng·h/mL | not captured | exact (not captured) | Tab2:row7:col4 |
+| AUC∞, ng·h/mL — Dexlansoprazole group | `Q17` · not captured | 8206.10 | ng·h/mL | not captured | exact (not captured) | Tab2:row7:col5 |
+| AUC∞, ng·h/mL — Dexlansoprazole group | `Q17` · not captured | 8793.35 | ng·h/mL | not captured | exact (not captured) | Tab2:row7:col6 |
+| AUC∞, ng·h/mL — Lansoprazole group | `Q17` · not captured | 1161.07 | ng·h/mL | not captured | exact (not captured) | Tab2:row7:col8 |
+| Vd, L — Dexlansoprazole group | `Q61` · not captured | 11.00 | L | not captured | exact (not captured) | Tab2:row8:col1 |
+| Vd, L — Dexlansoprazole group | `Q61` · not captured | 11.31 | L | not captured | exact (not captured) | Tab2:row8:col2 |
+| Vd, L — Dexlansoprazole group | `Q61` · not captured | 11.16 | L | not captured | exact (not captured) | Tab2:row8:col3 |
+| Vd, L — Dexlansoprazole group | `Q61` · not captured | 10.03 | L | not captured | exact (not captured) | Tab2:row8:col4 |
+| Vd, L — Dexlansoprazole group | `Q61` · not captured | 10.57 | L | not captured | exact (not captured) | Tab2:row8:col5 |
+| Vd, L — Dexlansoprazole group | `Q61` · not captured | 10.30 | L | not captured | exact (not captured) | Tab2:row8:col6 |
+| Vd, L — Lansoprazole group | `Q61` · not captured | 43.65 | L | not captured | exact (not captured) | Tab2:row8:col8 |
+| CL, L/h — Dexlansoprazole group | `Q22` · not captured | 4.90 | L/h | not captured | exact (not captured) | Tab2:row9:col1 |
+| CL, L/h — Dexlansoprazole group | `Q22` · not captured | 5.90 | L/h | not captured | exact (not captured) | Tab2:row9:col2 |
+| CL, L/h — Dexlansoprazole group | `Q22` · not captured | 5.40 | L/h | not captured | exact (not captured) | Tab2:row9:col3 |
+| CL, L/h — Dexlansoprazole group | `Q22` · not captured | 4.65 | L/h | not captured | exact (not captured) | Tab2:row9:col4 |
+| CL, L/h — Dexlansoprazole group | `Q22` · not captured | 4.39 | L/h | not captured | exact (not captured) | Tab2:row9:col5 |
+| CL, L/h — Dexlansoprazole group | `Q22` · not captured | 4.52 | L/h | not captured | exact (not captured) | Tab2:row9:col6 |
+| CL, L/h — Lansoprazole group | `Q22` · not captured | 34.66 | L/h | not captured | exact (not captured) | Tab2:row9:col8 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 05:45 | 19:39 | 0/0/0 | 4/5/0 | 0/0/0 | 287,468/5,627 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 1/16 | 17/0 | 0 |
+| 2026-09-18 01:33 | 9:56 | 0/0/0 | 4/5/0 | 0/0/0 | 327,995/5,964 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 1/16 | 17/0 | 0 |
 
 ## popPK records
 
@@ -60,43 +60,43 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 54 matched, 48 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_6 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Li_2024.pdf` | Li Y et al., An exploratory study of drug concentrat…, Fundamental & clinical phar… (2024) | popPK | 8 | [10.1111/fcp.12972](https://doi.org/10.1111/fcp.12972) | [37985697](https://pubmed.ncbi.nlm.nih.gov/37985697) | The study reports quantitative non-compartmental pharmacokinetic parameters (Cmax, AUC, T1/2, Tmax) for cetylpyridinium chloride in human saliva, with all numeric values explicitly present in the text. |
 | `Martinez-Guerrero_2021.pdf` | Martinez-Guerrero L et al., Cationic Compounds with SARS-CoV-2 Anti…, The Journal of pharmacology… (2021) | pd | 5 | [10.1124/jpet.121.000619](https://doi.org/10.1124/jpet.121.000619) | [34253645](https://www.ncbi.nlm.nih.gov/pubmed/34253645) | metadata signals extractable PD data (IC50) |
 | `Park_2016.pdf` | Park CJ et al., Developmental and acute toxicity of cet…, Aquatic toxicology (Amsterd… (2016) | pd | 5 | [10.1016/j.aquatox.2016.06.022](https://doi.org/10.1016/j.aquatox.2016.06.022) | [27399156](https://www.ncbi.nlm.nih.gov/pubmed/27399156) | metadata signals extractable PD data (EC50) |
 | `Abdelhedi_2016.pdf` | Abdelhedi O et al., Sulfated polysaccharides from common sm…, Carbohydrate polymers (2016) | pd | 4 | [10.1016/j.carbpol.2016.07.048](https://doi.org/10.1016/j.carbpol.2016.07.048) | [27516310](https://www.ncbi.nlm.nih.gov/pubmed/27516310) | metadata signals extractable PD data (IC50) |
 | `Costa_2014.pdf` | Costa SP et al., Automated evaluation of pharmaceuticall…, Journal of hazardous materi… (2014) | pd | 4 | [10.1016/j.jhazmat.2013.11.052](https://doi.org/10.1016/j.jhazmat.2013.11.052) | [24355776](https://www.ncbi.nlm.nih.gov/pubmed/24355776) | metadata signals extractable PD data (EC50) |
 | `Fakhfakh_2017.pdf` | Fakhfakh N et al., Isolation of polysaccharides from Malva…, International journal of bi… (2017) | pd | 4 | [10.1016/j.ijbiomac.2017.07.105](https://doi.org/10.1016/j.ijbiomac.2017.07.105) | [28732725](https://www.ncbi.nlm.nih.gov/pubmed/28732725) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-10T05:41:03.473650+00:00</sub>
+<sub>queue written 2026-09-18T01:30:03.698208+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abdelhedi_2016 | irrelevant | 0 | 0 | The paper focuses on sulfated polysaccharides from smooth hound and their biological activities, with no mention of cetylpyridinium or pharmacokinetic parameters. |
+| popPK | Abdelhedi_2016 | irrelevant | 0 | 0 | no_text gate: only 130 chars of text extracted (&lt; 400) |
 | PD | Abdelhedi_2016 | not_relevant | 0 | 0 | The paper focuses on sulfated polysaccharides from smooth hound and does not mention cetylpyridinium or report any pharmacodynamic parameters for it. |
-| popPK | Acosta_2026 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on the cytotoxicity of cetylpyridinium chloride (CPC) in airway epithelial cells and does not report any pharmacokinetic parameters. |
+| popPK | Acosta_2026 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on mucosal adjuvant safety and does not report pharmacokinetic parameters for cetylpyridinium. |
 | popPK | Alves_2007 | irrelevant | 0 | 0 | The study is a materials science investigation into the corrosion resistance of titanium alloys in mouthwashes, not a pharmacokinetic study of cetylpyridinium. |
 | popPK | Baldissera_2022 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on leishmanicidal activity and does not report pharmacokinetic parameters for cetylpyridinium. |
-| popPK | Burgalassi_2001 | irrelevant | 0 | 0 | The study evaluates cytotoxicity of cetylpyridinium chloride on cell lines and does not report any pharmacokinetic parameters. |
+| PD | Baldissera_2022 | not_relevant | 0 | 0 | The paper studies imidazolium salts (C16Im, C16PyrCl) and does not report any data or parameters for cetylpyridinium. |
+| popPK | Burgalassi_2001 | irrelevant | 0 | 0 | The study evaluates cytotoxicity of cetylpyridinium chloride as a permeation enhancer, not its pharmacokinetic disposition parameters. |
 | popPK | Cai_2024 | irrelevant | 0 | 0 | The paper is an in-vitro and in-vivo mechanistic study of cetylpyridinium chloride's anti-tumor effects, reporting IC50 values and tumor growth data but containing no pharmacokinetic parameters (CL, V, ka, etc.). |
-| popPK | Casas-Arrojo_2021 | irrelevant | 0 | 0 | The paper studies sulfated polysaccharides from algae, using cetylpyridinium bromide only as a precipitation reagent, and contains no pharmacokinetic data for cetylpyridinium. |
-| PD | Casas-Arrojo_2021 | not_relevant | 0 | 0 | The paper studies sulfated polysaccharides from Porphyridium cruentum; cetylpyridinium bromide is used only as a precipitation reagent, not as the subject of pharmacodynamic analysis. |
-| popPK | Costa_2014 | irrelevant | 0 | 0 | The paper focuses on the toxicity of ionic liquids via enzyme inhibition and bioluminescence, not on the pharmacokinetics of cetylpyridinium. |
+| popPK | Casas-Arrojo_2021 | irrelevant | 0 | 0 | The paper studies sulfated polysaccharides from algae, using cetylpyridinium bromide only as a reagent for precipitation, and contains no pharmacokinetic data for cetylpyridinium. |
+| PD | Casas-Arrojo_2021 | not_relevant | 0 | 0 | The paper studies sulfated polysaccharides from Porphyridium cruentum; cetylpyridinium bromide is used only as a reagent for precipitation and is not the subject of any pharmacodynamic or exposure-response analysis. |
+| popPK | Costa_2014 | irrelevant | 0 | 0 | no_text gate: only 145 chars of text extracted (&lt; 400) |
 | popPK | Datta_2017 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on mitochondrial function and estrogen signaling, not a pharmacokinetic study, and contains no disposition parameters for cetylpyridinium. |
-| popPK | Drozd_2001 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of chitosan polysulphate, and cetylpyridinium is only mentioned as a reagent (electrophores) used for detection, not as the subject drug. |
+| popPK | Drozd_2001 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of chitosan polysulphate, using cetylpyridinium chloride only as a reagent for electrophoresis, not as the subject drug. |
 | popPK | Ellinger_2021 | irrelevant | 0 | 0 | The paper is an in-vitro high-content screening study for SARS-CoV-2 cytopathicity and does not report any pharmacokinetic parameters for cetylpyridinium. |
-| popPK | Fakhfakh_2017 | irrelevant | 0 | 0 | The paper focuses on the isolation of polysaccharides and their antioxidant/antibacterial properties, with no mention of cetylpyridinium pharmacokinetics. |
+| popPK | Fakhfakh_2017 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | PD | Fakhfakh_2017 | not_relevant | 0 | 0 | The paper focuses on the isolation of polysaccharides from Malva aegyptiaca and their antioxidant/antibacterial properties, with no mention of cetylpyridinium or any pharmacodynamic modeling. |
 | popPK | Forry_2016 | irrelevant | 0 | 0 | The paper reports antimicrobial activity metrics (IC50, MIC, MBC) for cetylpyridinium against bacteria, not pharmacokinetic disposition parameters. |
 | popPK | Goenka_2023 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assay measuring cell viability and IC50, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
@@ -105,12 +105,13 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Kim_2021 | irrelevant | 0 | 0 | The study focuses on pulmonary toxicity and cytotoxicity (IC50) rather than pharmacokinetic disposition parameters. |
 | popPK | Lapierre_1996 | irrelevant | 0 | 0 | Cetylpyridinium chloride is used only as a precipitating agent in an in-vitro assay, not as the subject drug for pharmacokinetic analysis. |
 | PD | Lapierre_1996 | not_relevant | 0 | 0 | Cetylpyridinium chloride is used only as a reagent for substrate precipitation in the assay, not as the drug being studied for pharmacodynamic effects. |
-| popPK | Martinez-Guerrero_2021 | irrelevant | 0 | 0 | The paper focuses on antiviral activity and transporter interactions, not pharmacokinetic disposition parameters for cetylpyridinium. |
+| popPK | Li_2024 | irrelevant | 0 | 0 | no_text gate: only 157 chars of text extracted (&lt; 400) |
+| popPK | Martinez-Guerrero_2021 | irrelevant | 0 | 0 | no_text gate: only 159 chars of text extracted (&lt; 400) |
 | popPK | Mellor_2026 | irrelevant | 0 | 0 | The paper is an in-vitro drug repurposing study focusing on cytotoxicity and mechanism of action, not pharmacokinetics, and contains no PK parameters for cetylpyridinium. |
 | popPK | Onozuka_2024 | irrelevant | 0 | 0 | The study is a clinical trial assessing the antiviral efficacy of cetylpyridinium mouthwash on viral load, not a pharmacokinetic study, and reports no disposition parameters. |
-| popPK | Park_2016 | irrelevant | 0 | 0 | The paper is a toxicity study in amphibians and does not report pharmacokinetic parameters for cetylpyridinium. |
+| popPK | Park_2016 | irrelevant | 0 | 0 | no_text gate: only 100 chars of text extracted (&lt; 400) |
 | popPK | Popkin_2017 | irrelevant | 0 | 0 | The paper is an in-vitro and in-vivo efficacy study of cetylpyridinium chloride against influenza, reporting virucidal concentrations (EC50) and survival data, but it does not report any pharmacokinetic parameters (CL, V, ka, etc.) for the drug. |
-| popPK | Puhl_2023 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study reporting IC50 values for SARS-CoV-2 protease inhibition, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for cetylpyridinium. |
+| popPK | Puhl_2023 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study reporting IC50 values for SARS-CoV-2 protease inhibition, not a pharmacokinetic study with disposition parameters for cetylpyridinium. |
 | popPK | Sonntag_2025 | irrelevant | 0 | 0 | The study is an in-vitro antimicrobial and cytotoxicity assessment where cetylpyridinium serves only as a comparator, with no pharmacokinetic parameters reported. |
 | popPK | Wasteson_1973 | irrelevant | 0 | 0 | The paper describes a biochemical assay method using cetylpyridinium chloride as a precipitating agent for polysaccharides, not a pharmacokinetic study of the drug itself. |
 | PD | Wasteson_1973 | not_relevant | 0 | 0 | The paper uses cetylpyridinium chloride as a reagent for precipitating polysaccharides in a biochemical assay, not as a drug for which a pharmacodynamic or exposure-response relationship is being studied. |
@@ -118,7 +119,8 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Weller_2024 | irrelevant | 0 | 0 | The paper is a mechanistic toxicology study focusing on mitochondrial inhibition and structural disruption, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Wythe_2022 | irrelevant | 0 | 0 | The study evaluates the antimicrobial efficacy of cetylpyridinium chloride on chicken thighs and does not report any pharmacokinetic parameters. |
 | popPK | Yamamoto_2021 | irrelevant | 0 | 0 | The study focuses on the material properties and antimicrobial efficacy of dental resins containing cetylpyridinium chloride, not on its pharmacokinetics. |
-| popPK | Young_2003 | irrelevant | 0 | 0 | The study investigates the inhibition of volatile sulfur compounds (oral malodor) and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for cetylpyridinium. |
+| popPK | Young_2003 | irrelevant | 0 | 0 | The study investigates the inhibition of volatile sulfur compounds (oral malodor) and does not report pharmacokinetic parameters such as clearance, volume, or half-life for cetylpyridinium. |
+| PD | Young_2003 | not_relevant | 5 | 2 | The paper describes a dose-response study with qualitative comparisons of efficacy at specific concentrations but does not provide numeric PD parameters (e.g., EC50, Emax) or quantitative data points to derive a curve. |
 | popPK | Zarif_2025 | irrelevant | 0 | 0 | The study focuses on atorvastatin, not cetylpyridinium, and does not report pharmacokinetic parameters for the target drug. |
 | PD | Zarif_2025 | not_relevant | 0 | 0 | The paper focuses on atorvastatin delivery and does not report any pharmacodynamic or exposure-response data for cetylpyridinium. |
 | popPK | de_2004 | irrelevant | 0 | 0 | The study is an in-vitro/in-vivo microbiological efficacy study measuring bacterial counts and inhibitory dilutions, not a pharmacokinetic study reporting disposition parameters for cetylpyridinium. |

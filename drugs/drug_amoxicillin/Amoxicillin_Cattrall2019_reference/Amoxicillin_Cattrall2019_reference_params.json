@@ -2,7 +2,7 @@
  "model_id": "Amoxicillin_Cattrall2019_reference",
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
  ],
  "parameters": {
   "Cl": 5.916666666666666e-06,
@@ -18,7 +18,7 @@
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 0.0009322607474974775
+  "C_central": 0.0009322607474974775
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

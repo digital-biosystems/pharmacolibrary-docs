@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;tamoxifen&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/&quot;},{&quot;label&quot;:&quot;Dilli_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Bosch2023_reference&quot;,&quot;label&quot;:&quot;Bosch_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Bosch2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Dilli2022_model_structure&quot;,&quot;label&quot;:&quot;Dilli_2022_model_structure&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Dilli2022_model_structure.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Dilli2022_model_structure&quot;,&quot;label&quot;:&quot;Dilli_2022_model_structure&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Dilli2022_model_structure.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Dilli2022_parameter_estimates&quot;,&quot;label&quot;:&quot;Dilli_2022_parameter_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Dilli2022_parameter_estimates.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Dilli2022_parameter_estimates&quot;,&quot;label&quot;:&quot;Dilli_2022_parameter_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Dilli2022_parameter_estimates.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Dilli2022_reference&quot;,&quot;label&quot;:&quot;Dilli_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Mc2024_reference&quot;,&quot;label&quot;:&quot;Mc_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Mc2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Bosch2023_reference&quot;,&quot;label&quot;:&quot;Bosch_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Bosch2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Dilli2022_reference&quot;,&quot;label&quot;:&quot;Dilli_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Mc2024_reference&quot;,&quot;label&quot;:&quot;Mc_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Mc2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,15 +21,15 @@ Dilli Batcha JS; Raju AP; Matcha S; Raj S EA; Udupa KS; Gota V; et al. et al. (2
   ·  DOI: [10.3390/biology12010051](https://doi.org/10.3390/biology12010051)
 
 ## Model component
-<dbs-pgx drug="tamoxifen" model-id="Tamoxifen_Dilli2022_reference" status="curated_candidate" stale="false" population="adult breast cancer patients" measured-compound="tamoxifen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tamoxifen" model-id="Tamoxifen_Dilli2022_reference" status="curated_candidate" stale="false" population="adult breast cancer patients" measured-compound="tamoxifen" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 5.1 | L h−1 | 1.4166666666666665e-06 | L/h | not captured | review (0.7) | Dilli_2022:review | — | not captured |
-| volume of distribution (Vd) | `Q61` · V | 724.0 | L | 0.724 | L | not captured | review (0.7) | Dilli_2022:review | — | not captured |
+| creatinine clearance of &lt; | `Q22` · CL | 50.0 | ml/min | 8.333333333333332e-07 | L/h | not captured | review_gapfill (0.7) | Bosch_2023:review | — | not captured |
+| volume of distribution (Vd) | `Q61` · V | 724.0 | L | 0.724 | L | not captured | review_gapfill (0.7) | Dilli_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -39,8 +39,23 @@ Dilli Batcha JS; Raju AP; Matcha S; Raj S EA; Udupa KS; Gota V; et al. et al. (2
 ## Departures & gaps
 
 **Interpretation flags:**
-- built from REVIEW reference values (Dilli_2022) — secondary source
-- volume reported by review
+- column 'significant covariates' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'model structure' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'Ter Heine et al. 2014 [15]' — extend the ontology if this is a real PK parameter (source ['biology-12-00051-t003:row1:col4'])
+- dropped unlinked row (NIL): 'Schoell et al. 2020 [32]' — extend the ontology if this is a real PK parameter (source ['biology-12-00051-t003:row11:col4'])
+- dropped unlinked row (NIL): 'Schulze et al. 2020 [33]' — extend the ontology if this is a real PK parameter (source ['biology-12-00051-t003:row25:col4'])
+- dropped unlinked row (NIL): 'Puszkiel et al. 2021 [34]' — extend the ontology if this is a real PK parameter (source ['biology-12-00051-t003:row42:col4', 'biology-12-00051-t003:row42:col5'])
+- dropped unlinked row (NIL): 'Effect of CYP3A4*22 genotype: 0.773' — extend the ontology if this is a real PK parameter (source ['biology-12-00051-t003:row45:col1'])
+- dropped unlinked row (NIL): 'Effect of age: −0.298' — extend the ontology if this is a real PK parameter (source ['biology-12-00051-t003:row46:col1'])
+- dropped unlinked row (NIL): 'Dahmane et al. [35]' — extend the ontology if this is a real PK parameter (source ['biology-12-00051-t003:row74:col4'])
+- table mostly unlinked (7/7 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tamoxifen
+- topology: 4 first-order transfer(s) across 5 compounds → general_linear
+- status held at route_to_review — not promoted
+- gap-filled Q22 (CL) from Bosch_2023's review values (primary lacked it)
+- gap-filled Q61 (V) from Dilli_2022's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell biology-12-00051-t003:row1:col5 = 'CYP2D6 phenotype'
@@ -54,11 +69,12 @@ Dilli Batcha JS; Raju AP; Matcha S; Raj S EA; Udupa KS; Gota V; et al. et al. (2
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dilli_2022:review'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bosch_2023:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dilli_2022:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.1 | not captured | not captured | ['Dilli_2022:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 50.0 | not captured | not captured | ['Bosch_2023:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 5.1 L/h | not captured | not captured | ['Dilli_2022:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 3 L/h | not captured | not captured | ['Bosch_2023:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 724 L | not captured | not captured | ['Dilli_2022:review'] |
 
 **Reviewer per-scenario checks:**
@@ -68,7 +84,8 @@ Dilli Batcha JS; Raju AP; Matcha S; Raj S EA; Udupa KS; Gota V; et al. et al. (2
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=tamoxifen) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
@@ -90,7 +107,7 @@ Dilli Batcha JS; Raju AP; Matcha S; Raj S EA; Udupa KS; Gota V; et al. et al. (2
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference/Tamoxifen_Dilli2022_reference_modelica.zip" download>Tamoxifen_Dilli2022_reference_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference/Tamoxifen_Dilli2022_reference_modelica.zip" download>Tamoxifen_Dilli2022_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference/Tamoxifen_Dilli2022_reference_fmi.zip" download>Tamoxifen_Dilli2022_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference/Tamoxifen_Dilli2022_reference_matlab.zip" download>Tamoxifen_Dilli2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference/Tamoxifen_Dilli2022_reference_matlab_simbio.zip" download>Tamoxifen_Dilli2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

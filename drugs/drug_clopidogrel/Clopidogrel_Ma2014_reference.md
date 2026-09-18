@@ -73,7 +73,7 @@ Ma S; Ju W; Dai G; Zhao W; Cheng X; Fang Z; et al. et al. (2014). Evidence-based
 |---|---|---|---|---|---|---|
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=clopidogrel) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=clopidogrel) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
