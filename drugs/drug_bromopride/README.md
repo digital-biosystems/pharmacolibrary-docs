@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03F&quot;,&quot;href&quot;:&quot;atc/A03F.md&quot;},{&quot;label&quot;:&quot;bromopride&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bromopride_LachiSilva2020_healthy_adults&quot;,&quot;label&quot;:&quot;Lachi-Silva_2020_healthy adults&quot;,&quot;href&quot;:&quot;drugs/drug_bromopride/Bromopride_LachiSilva2020_healthy_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bromopride_LachiSilva2020_reference&quot;,&quot;label&quot;:&quot;Lachi-Silva_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bromopride/Bromopride_LachiSilva2020_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # bromopride
 
@@ -18,19 +18,19 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 01:33 | 0:53 | 0/0/0 | 0/0/0 | 0/0/0 | 6,561/505 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-18 11:43 | 0:32 | 1/0/0 | 0/0/0 | 0/0/0 | 9,892/1,013 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Lachi-Silva_2020_healthy adults](drugs/drug_bromopride/Bromopride_LachiSilva2020_healthy_adults.md) | Lachi-Silva L et al., Population pharmacokinetics of orally a…, European journal of pharmac… (2020) | [10.1016/j.ejps.2019.105081](https://doi.org/10.1016/j.ejps.2019.105081) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: F, Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Lachi-Silva_2020_reference](drugs/drug_bromopride/Bromopride_LachiSilva2020_reference.md) | Lachi-Silva L et al., Population pharmacokinetics of orally a…, European journal of pharmac… (2020) | [10.1016/j.ejps.2019.105081](https://doi.org/10.1016/j.ejps.2019.105081) |
 
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -43,7 +43,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Lachi-Silva_2020.pdf` | Lachi-Silva L et al., Population pharmacokinetics of orally a…, European journal of pharmac… (2020) | popPK | 10 | [10.1016/j.ejps.2019.105081](https://doi.org/10.1016/j.ejps.2019.105081) | [31669384](https://pubmed.ncbi.nlm.nih.gov/31669384) | The paper reports a population PK model for bromopride with explicit numeric values for clearance, volume, and absorption parameters in the text. |
 | `Jung_1982.pdf` | Jung L et al., [Bromopride: pharmacokinetics in dogs (…, Arzneimittel-Forschung (1982) | popPK | 9 | not captured | [7201828](https://pubmed.ncbi.nlm.nih.gov/7201828) | The paper describes a pharmacokinetic study of bromopride in dogs using compartmental models, but the provided evidence contains only qualitative descriptions and no specific numeric parameter values. |
 
-<sub>queue written 2026-09-11T01:33:23.202701+00:00</sub>
+<sub>queue written 2026-09-18T11:43:14.712521+00:00</sub>
 
 ## Screened and excluded
 

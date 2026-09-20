@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05X&quot;,&quot;href&quot;:&quot;atc/B05X.md&quot;},{&quot;label&quot;:&quot;alanyl glutamine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AlanylGlutamine_Albers1988_healthy_adults&quot;,&quot;label&quot;:&quot;Albers_1988_healthy adults&quot;,&quot;href&quot;:&quot;drugs/drug_alanyl_glutamine/AlanylGlutamine_Albers1988_healthy_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AlanylGlutamine_Albers1988_reference&quot;,&quot;label&quot;:&quot;Albers_1988_reference&quot;,&quot;href&quot;:&quot;drugs/drug_alanyl_glutamine/AlanylGlutamine_Albers1988_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # alanyl glutamine
 
@@ -16,13 +16,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-07 20:25 | 6:27 | 0/0/0 | 0/1/0 | 0/0/0 | 85,227/6,871 | ollama / qwen3.8:27b-mtp-q8_0 | 21 | 1/19 | 17/4 | 0 |
+| 2026-09-19 08:51 | 5:24 | 0/1/0 | 0/1/0 | 0/0/0 | 138,018/7,283 | ollama / qwen3.8:27b-mtp-q8_0 | 21 | 1/19 | 17/4 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Albers_1988_healthy adults](drugs/drug_alanyl_glutamine/AlanylGlutamine_Albers1988_healthy_adults.md) | Albers S et al., Availability of amino acids supplied in…, Clinical science (London, E… (1988) | [10.1042/cs0750463](https://doi.org/10.1042/cs0750463) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Albers_1988_reference](drugs/drug_alanyl_glutamine/AlanylGlutamine_Albers1988_reference.md) | Albers S et al., Availability of amino acids supplied in…, Clinical science (London, E… (1988) | [10.1042/cs0750463](https://doi.org/10.1042/cs0750463) |
 
 ## Pharmacodynamics (PD)
 
@@ -51,7 +51,7 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Klassen_2000.pdf` | Klassen P et al., The pharmacokinetic responses of humans…, The Journal of nutrition (2000) | popPK | 8 | [10.1093/jn/130.2.177](https://doi.org/10.1093/jn/130.2.177) | [10720166](https://pubmed.ncbi.nlm.nih.gov/10720166) | The study reports pharmacokinetic responses (AUC, peak concentrations) for alanyl-glutamine, but lacks specific compartmental parameters like clearance (CL), volume (V), or half-life (t1/2) values in the provided text. |
 | `Lochs_1990.pdf` | Lochs H et al., Splanchnic, renal, and muscle clearance…, Metabolism: clinical and ex… (1990) | popPK | 8 | [10.1016/0026-0495(90)90128-y](https://doi.org/10.1016/0026-0495(90)90128-y) | [2377079](https://pubmed.ncbi.nlm.nih.gov/2377079) | The study reports quantitative organ-specific clearance values (kidney, splanchnic, muscle) for alanylglutamine in humans, which are explicit disposition parameters present in the text. |
 
-<sub>queue written 2026-09-07T20:22:13.923421+00:00</sub>
+<sub>queue written 2026-09-19T08:47:46.362628+00:00</sub>
 
 ## Screened and excluded
 
@@ -60,15 +60,15 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Abumrad_1989 | irrelevant | 2 | 0 | The study is an organ balance/metabolism study in dogs that reports qualitative clearance contributions and urinary excretion percentages, but does not provide quantitative compartmental PK parameters (CL, V, ka) for alanyl_glutamine. |
 | popPK | Adibi_1977 | irrelevant | 0 | 0 | The study investigates glycyl-leucine, glycylglycine, and glycylsarcosine, not alanyl-glutamine. |
 | popPK | Arakawa_2014 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of L-phenylalanyl-Ψ[CS-N]-L-alanine (Phe-Ψ-Ala), not alanyl_glutamine. |
-| popPK | Beffinger_2025 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of IL-12Fc fusion proteins in glioblastoma models, not the drug alanyl_glutamine. |
-| PD | Beffinger_2025 | not_relevant | 0 | 0 | The paper studies IL-12Fc, not alanyl_glutamine, and does not report any pharmacodynamic parameters for the target drug. |
+| popPK | Beffinger_2025 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of IL-12Fc fusion proteins, not alanyl_glutamine. |
+| PD | Beffinger_2025 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics (PK) and efficacy of an IL-12Fc fusion protein, not alanyl glutamine, and does not report any pharmacodynamic (PD) parameters for alanyl glutamine. |
 | popPK | Bolleddula_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and catabolism of the antibody-drug conjugate TAK-164, not alanyl_glutamine. |
 | popPK | Boyko_2007 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of GB-115 (N-phenylhexanoylglycyltryptophan), not alanyl_glutamine. |
 | popPK | Cheadle_1986 | irrelevant | 0 | 0 | The paper studies muramyl dipeptide and lead acetate in mice, not alanyl_glutamine, and reports no pharmacokinetic parameters for the target drug. |
 | popPK | Cheng_2026 | irrelevant | 0 | 0 | The paper is a mechanistic study on ER remodeling and bacterial infection, unrelated to the pharmacokinetics of alanyl_glutamine. |
 | popPK | Chua_2022 | irrelevant | 0 | 0 | The paper is a review on autophagy and ALS pathogenesis and does not contain any pharmacokinetic data or parameters for alanyl_glutamine. |
-| popPK | Cornely_2021 | irrelevant | 0 | 0 | The paper is a conference abstract for a medical mycology meeting and contains no pharmacokinetic data for alanyl_glutamine. |
-| PD | Cornely_2021 | not_relevant | 0 | 0 | The text is a conference program header and contains no pharmacodynamic data, models, or parameters for alanyl-glutamine. |
+| popPK | Cornely_2021 | irrelevant | 0 | 0 | no_text gate: only 181 chars of text extracted (&lt; 400) |
+| PD | Cornely_2021 | not_relevant | 0 | 0 | The text is a conference program header and contains no pharmacodynamic data, models, or parameters for alanyl glutamine. |
 | popPK | DAngelo_1994 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of pidotimod, not alanyl_glutamine. |
 | popPK | Duverne_1992 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of cefixime and D-xylose, not alanyl_glutamine. |
 | popPK | Ferrari_2026 | irrelevant | 0 | 0 | The paper investigates VCP modulation in C9orf72 ALS/FTD models and does not involve the drug alanyl_glutamine or report any pharmacokinetic parameters. |
@@ -93,12 +93,12 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Moore_2020 | irrelevant | 0 | 0 | The paper is a clinical trial assessing the efficacy of alanyl-glutamine on gut integrity and growth, not a pharmacokinetic study, and contains no PK parameters. |
 | popPK | Naglah_2021 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and biological activity of novel peptide derivatives, not a pharmacokinetic study of alanyl_glutamine. |
 | popPK | Nahata_1995 | irrelevant | 0 | 0 | The paper is a collection of abstracts for various drugs (CFOL, etoposide, ceftazidime, etc.) and does not contain any pharmacokinetic data for alanyl_glutamine. |
-| PD | Nahata_1995 | not_relevant | 0 | 0 | The provided text is a generic description of a conference abstract collection and does not contain specific data, models, or parameters for alanyl-glutamine. |
+| PD | Nahata_1995 | not_relevant | 0 | 0 | The provided text is a generic description of a conference abstract collection and does not contain specific data, models, or parameters for alanyl glutamine. |
 | popPK | Obrador_2026 | irrelevant | 0 | 0 | The paper is a review of radiomitigators for radiation injury and does not contain any pharmacokinetic data or parameters for alanyl_glutamine. |
-| PD | Obrador_2026 | not_relevant | 0 | 0 | The text is a general review of radiomitigators and does not mention alanyl_glutamine or report any specific pharmacodynamic or exposure-response data. |
+| PD | Obrador_2026 | not_relevant | 0 | 0 | The text is a general review of radiomitigators and does not contain any specific pharmacodynamic or exposure-response data for alanyl glutamine. |
 | popPK | Ortiz_2004 | irrelevant | 0 | 0 | The study focuses on antioxidant systems and hepatic detoxification (antipyrine clearance) rather than the pharmacokinetic disposition parameters of alanyl-glutamine itself. |
 | popPK | Papadopoulou_2025 | irrelevant | 0 | 0 | The paper is a review on marine bioactives for cosmetics and does not contain any pharmacokinetic data for alanyl_glutamine. |
-| PD | Papadopoulou_2025 | not_relevant | 0 | 0 | The paper is a review on marine bioactives for cosmetics and does not contain any pharmacodynamic or exposure-response data for alanyl-glutamine. |
+| PD | Papadopoulou_2025 | not_relevant | 0 | 0 | The paper is a review on marine bioactives for cosmetics and does not contain any pharmacodynamic or exposure-response data for alanyl glutamine. |
 | popPK | Perazzo_2016 | irrelevant | 0 | 0 | The paper is a review of the endogenous dipeptide kyotorphin and its derivatives, and does not contain any pharmacokinetic data for alanyl_glutamine. |
 | popPK | Rathmacher_1998 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of 3-methylhistidine (a marker for muscle protein breakdown), not alanyl_glutamine. |
 | popPK | Raza_2022 | irrelevant | 0 | 0 | The study investigates a glutathione analogue (psi-GSH) and its dipeptide precursor, not alanyl_glutamine, and does not report PK parameters for the target drug. |

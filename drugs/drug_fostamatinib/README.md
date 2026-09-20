@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;fostamatinib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fostamatinib_Bostrm2014_patients_with_rheumatoid_arthritis&quot;,&quot;label&quot;:&quot;Bostr\u00f6m_2014_patients with rheumatoid arthritis&quot;,&quot;href&quot;:&quot;drugs/drug_fostamatinib/Fostamatinib_Bostrm2014_patients_with_rheumatoid_arthritis.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fostamatinib_Bostrm2014_reference&quot;,&quot;label&quot;:&quot;Bostr\u00f6m_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fostamatinib/Fostamatinib_Bostrm2014_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # fostamatinib
 
@@ -20,13 +20,13 @@ Recently, fostamatinib has been identified as a potential therapeutic for contro
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 12:24 | 3:29 | 0/0/0 | 0/0/0 | 0/0/0 | 35,440/1,056 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/0 | 6/0 | 0 |
+| 2026-09-18 22:33 | 1:07 | 0/1/0 | 0/0/0 | 0/0/0 | 31,485/1,107 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Boström_2014_patients with rheumatoid arthritis](drugs/drug_fostamatinib/Fostamatinib_Bostrm2014_patients_with_rheumatoid_arthritis.md) | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Boström_2014_reference](drugs/drug_fostamatinib/Fostamatinib_Bostrm2014_reference.md) | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) |
 
 ## Coverage
 
@@ -45,19 +45,19 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Maringwa_2015.pdf` | Maringwa J et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2015) | pd | 5 | [10.1002/jcph.406](https://doi.org/10.1002/jcph.406) | [25280085](https://www.ncbi.nlm.nih.gov/pubmed/25280085) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Moore_2019.pdf` | Moore DC et al., Fostamatinib for the treatment of immun…, American journal of health-… (2019) | pgx | 7 | [10.1093/ajhp/zxz052](https://doi.org/10.1093/ajhp/zxz052) | [30951590](https://www.ncbi.nlm.nih.gov/pubmed/30951590) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-06T12:23:47.003309+00:00</sub>
+<sub>queue written 2026-09-18T22:32:07.980615+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Ahmadinia_2026 | not_relevant | 0 | 0 | The paper is a narrative review on the immunopathogenesis of autoimmune HIT and does not report pharmacogenomic effects on fostamatinib PK/PD parameters. |
-| PGx | Costa_2025 | not_relevant | 0 | 0 | The paper is a review of autoimmune hemolytic anemia pathogenesis and therapies, mentioning fostamatinib only as a therapeutic agent without reporting any pharmacogenomic effects on its PK or PD parameters. |
-| PGx | Duran_2019 | not_relevant | 0 | 0 | The paper investigates the effect of R406 (fostamatinib metabolite) on P-glycoprotein-mediated drug resistance in cell lines, but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| PGx | Ahmadinia_2026 | not_relevant | 0 | 0 | The paper is a narrative review of immunopathogenic mechanisms and therapeutic targets in autoimmune HIT, and does not report pharmacogenomic effects on the PK or PD of fostamatinib. |
+| PGx | Costa_2025 | not_relevant | 0 | 0 | The paper is a review of autoimmune hemolytic anemia pathogenesis and treatments, mentioning fostamatinib only as a therapeutic option without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| PGx | Duran_2019 | not_relevant | 0 | 0 | The paper investigates the effect of the drug R406 (fostamatinib metabolite) on P-glycoprotein-mediated drug resistance in cell lines, but does not report any pharmacogenomic effects (gene variants/genotypes) on the PK or PD of fostamatinib. |
 | PGx | Flinn_2016 | not_relevant | 0 | 0 | The paper reports clinical efficacy based on cell-of-origin subtypes (GCB/ABC) but does not report pharmacokinetic or pharmacodynamic parameters or specific gene variants affecting drug metabolism. |
-| PGx | Gkouskou_2024 | not_relevant | 0 | 0 | The paper is a review on obesity genetics that only mentions fostamatinib as a potential repurposing target based on in silico predictions, without reporting any pharmacokinetic or pharmacodynamic data. |
+| PGx | Gkouskou_2024 | not_relevant | 0 | 0 | The paper is a review on nutrigenetics and obesity that only mentions fostamatinib in the context of in silico predictions for repurposing, without reporting any pharmacogenomic effects on its PK or PD parameters. |
 | popPK | Maringwa_2015 | irrelevant | 2 | 0 | The paper focuses on pharmacodynamic modeling of efficacy (ACR20) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, etc.) for fostamatinib. |
-| PGx | Martin_2016 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (CYP3A4 inhibitors/inducers) rather than the effect of a specific gene variant or genotype on pharmacokinetics. |
+| PGx | Martin_2016 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (CYP3A4 inhibitors/inducers) rather than pharmacogenomic effects of gene variants on PK/PD parameters. |
 | PGx | Moore_2019 | not_relevant | 0 | 0 | The paper is a general review of fostamatinib's pharmacology and clinical use, mentioning CYP3A4 metabolism but not reporting any specific pharmacogenomic effects of gene variants on PK or PD parameters. |
 | popPK | Thoma_2015 | irrelevant | 0 | 0 | The paper describes a different Syk inhibitor (Compound 5) and does not report pharmacokinetic parameters for fostamatinib. |
 | PD | Thoma_2015 | not_relevant | 0 | 0 | The text is an abstract that mentions activity in a rat PK/PD model but provides no numeric PD parameters, curves, or specific exposure-response data. |

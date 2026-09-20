@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Reducing power — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# Reducing power — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Zhang_2019`
 - **model family:** `unknown`

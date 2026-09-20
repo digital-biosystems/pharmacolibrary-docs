@@ -9,7 +9,8 @@
 - **effect:** inhibition/unknown
 
 ## Citation
-not matched (stem Tanzawa_1992)
+Tanzawa K; Ishii M; Ogita T; Shimada K et al. (1992). The Journal of antibiotics 45
+  ·  DOI: [10.7164/antibiotics.45.1733](https://doi.org/10.7164/antibiotics.45.1733)
 
 ## Parameters
 _No resolved parameters._

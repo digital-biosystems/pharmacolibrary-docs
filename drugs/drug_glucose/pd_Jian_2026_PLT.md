@@ -23,6 +23,7 @@ Jian W; Yin Y; Chen R; Xue J; Gu J; Du Z; He R; Zhou T et al. (2026). Clinical p
 | EC50 (pg/mL) — Bootstrap | `Q321` · not captured | 3971 | pg/mL | not captured | exact (not captured) | cpt70079-tbl-0002:row7:col4 |
 | IIV EC50 (CV%) — Estimate | `Q100` · not captured | 79.2 | not captured | not captured | nil (not captured) | cpt70079-tbl-0002:row9:col1 |
 | IIV EC50 (CV%) — Bootstrap | `Q100` · not captured | 78.3 | not captured | not captured | nil (not captured) | cpt70079-tbl-0002:row9:col4 |
+| RUVprop (%) — Estimate | `Q316` · not captured | 17.0 | not captured | not captured | llm (not captured) | cpt70079-tbl-0002:row10:col1 |
 | MTT (h) — Estimate | `Q81` · not captured | 212 | h | not captured | exact (not captured) | cpt70079-tbl-0002:row13:col1 |
 | MTT (h) — Bootstrap | `Q81` · not captured | 212 | h | not captured | exact (not captured) | cpt70079-tbl-0002:row13:col4 |
 | E max — Estimate | `Q320` · not captured | 0.0952 | not captured | not captured | space_fold (not captured) | cpt70079-tbl-0002:row15:col1 |
@@ -31,6 +32,7 @@ Jian W; Yin Y; Chen R; Xue J; Gu J; Du Z; He R; Zhou T et al. (2026). Clinical p
 | EC50 (pg/mL) — Bootstrap | `Q321` · not captured | 2048 | pg/mL | not captured | exact (not captured) | cpt70079-tbl-0002:row16:col4 |
 | IIV EC50 (CV%) — Estimate | `Q100` · not captured | 129.2 | not captured | not captured | nil (not captured) | cpt70079-tbl-0002:row18:col1 |
 | IIV EC50 (CV%) — Bootstrap | `Q100` · not captured | 126.9 | not captured | not captured | nil (not captured) | cpt70079-tbl-0002:row18:col4 |
+| RUVprop (%) — Estimate | `Q316` · not captured | 19.3 | not captured | not captured | llm (not captured) | cpt70079-tbl-0002:row19:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

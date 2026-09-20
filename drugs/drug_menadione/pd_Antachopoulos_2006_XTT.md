@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# XTT metabolic activity — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# XTT conversion rate — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Antachopoulos_2006`
 - **model family:** `sigmoid_emax`

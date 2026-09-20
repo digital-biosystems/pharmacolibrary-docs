@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;voxelotor&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voxelotor_Savic2022_estimate_rse_a_b&quot;,&quot;label&quot;:&quot;Savic_2022_estimate_rse_a_b&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_estimate_rse_a_b.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Voxelotor_Savic2022_estimate_rse_a_b&quot;,&quot;label&quot;:&quot;Savic_2022_estimate_rse_a_b&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_estimate_rse_a_b.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Voxelotor_Savic2022_shrinkage&quot;,&quot;label&quot;:&quot;Savic_2022_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Voxelotor_Savic2022_shrinkage&quot;,&quot;label&quot;:&quot;Savic_2022_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voxelotor_Savic2022_reference&quot;,&quot;label&quot;:&quot;Savic_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # voxelotor
 
@@ -20,16 +20,13 @@ Voxelotor was granted accelerated FDA approval on November 25 2019, as it is lik
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 07:25 | 6:15 | 1/1/0 | 1/0/0 | 0/0/0 | 83,848/3,786 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
+| 2026-09-19 13:59 | 4:53 | 1/0/0 | 1/0/0 | 0/0/0 | 108,001/7,380 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Savic_2022_estimate_rse_a_b](drugs/drug_voxelotor/Voxelotor_Savic2022_estimate_rse_a_b.md) | Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12731](https://doi.org/10.1002/psp4.12731) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Savic_2022_estimate_rse_a_b](drugs/drug_voxelotor/Voxelotor_Savic2022_estimate_rse_a_b.md) | Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12731](https://doi.org/10.1002/psp4.12731) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'shrinkage' is a table statistic/structure column, not a study pop…</sub><br><sub>route_to: `human_review`</sub> | [Savic_2022_shrinkage](drugs/drug_voxelotor/Voxelotor_Savic2022_shrinkage.md) | Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12731](https://doi.org/10.1002/psp4.12731) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'shrinkage' is a table statistic/structure column, not a study pop…</sub><br><sub>route_to: `human_review`</sub> | [Savic_2022_shrinkage](drugs/drug_voxelotor/Voxelotor_Savic2022_shrinkage.md) | Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12731](https://doi.org/10.1002/psp4.12731) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Savic_2022_reference](drugs/drug_voxelotor/Voxelotor_Savic2022_reference.md) | Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12731](https://doi.org/10.1002/psp4.12731) |
 
 ## Pharmacodynamics (PD)
 
@@ -43,15 +40,15 @@ Voxelotor was granted accelerated FDA approval on November 25 2019, as it is lik
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 4  ·  extracted 0  ·  needs_review 2  ·  rejected 2  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Egesa_2022 | not_relevant | 0 | 0 | The paper is a general review of sickle cell disease and does not report pharmacogenomic effects on voxelotor PK/PD parameters. |
-| popPK | Green_2022 | irrelevant | 4 | 2 | The paper is an exposure-response analysis that uses PK parameters (AUC, Cmax) as covariates but does not report the underlying population PK model parameters (CL, V, Q, ka) or half-life for voxelotor. |
+| PGx | Egesa_2022 | not_relevant | 0 | 0 | The paper is a general review of sickle cell disease epidemiology and management, mentioning voxelotor only as an approved therapy without reporting any pharmacogenomic data or PK/PD parameters. |
+| popPK | Green_2022 | irrelevant | 2 | 1 | The paper is an exposure-response analysis that uses PK parameters derived from a separate population PK study (Savic et al. 2021) rather than reporting original quantitative disposition parameters (CL, V, Q, ka) for voxelotor. |
 | popPK | Rivenbark_2026 | irrelevant | 0 | 0 | The paper is a claims-based epidemiological study analyzing prescription rates and does not report any pharmacokinetic parameters for voxelotor. |
 
 ---

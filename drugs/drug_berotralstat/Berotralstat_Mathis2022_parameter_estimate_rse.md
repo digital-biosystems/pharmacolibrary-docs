@@ -34,13 +34,13 @@ Mathis A; Sale M; Cornpropst M; Sheridan WP; Ma SC et al. (2022). Clinical and t
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Clearance (L/h) | `Q22` · CL | 47.3 | L/h | 1.3138888888888888e-05 | [l] / [h] | not captured | exact (1.0) | cts13233-tbl-0001:row1:col1 | — | not captured |
-| Volume (L) | `Q61` · V | 1650 | L | 1.6500000000000001 | [l] | not captured | exact (1.0) | cts13233-tbl-0001:row2:col1 | — | not captured |
-| Ka (1/h) | `Q49` · kabs | 1.12 | not captured | not captured | not captured | not captured | exact (1.0) | cts13233-tbl-0001:row5:col1 | — | not captured |
-| K23 (1/h) | `Q48` · kcomp | 0.0812 | not captured | not captured | not captured | not captured | exact (1.0) | cts13233-tbl-0001:row6:col1 | — | not captured |
-| Absorption lag time (h) | `Q83` · tlag | 0.468 | h | 1684.8000000000002 | [h] | not captured | exact (1.0) | cts13233-tbl-0001:row8:col1 | — | not captured |
-| Bioavailability as a function of dose | `Q40` · Fab | 0.497 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | cts13233-tbl-0001:row11:col1 | — | not captured |
-| Clearance as a function of weight | `Q319` · allometric_exponent | 0.480 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | cts13233-tbl-0001:row13:col1 | — | not captured |
+| Clearance (L/h) | `Q22` · CL | 47.3 | L/h | 1.3138888888888888e-05 | [l] / [h] | 2.4 | exact (1.0) | cts13233-tbl-0001:row1:col1 | — | not captured |
+| Volume (L) | `Q61` · V | 1650 | L | 1.6500000000000001 | [l] | 2.49 | exact (1.0) | cts13233-tbl-0001:row2:col1 | — | not captured |
+| Ka (1/h) | `Q49` · kabs | 1.12 | not captured | not captured | not captured | 0.0891 | exact (1.0) | cts13233-tbl-0001:row5:col1 | — | not captured |
+| K23 (1/h) | `Q48` · kcomp | 0.0812 | not captured | not captured | not captured | 2.32 | exact (1.0) | cts13233-tbl-0001:row6:col1 | — | not captured |
+| Absorption lag time (h) | `Q83` · tlag | 0.468 | h | 1684.8000000000002 | [h] | 2.15 | exact (1.0) | cts13233-tbl-0001:row8:col1 | — | not captured |
+| Bioavailability as a function of dose | `Q40` · Fab | 0.497 | not captured | not captured | not captured | 5.51 | llm_confirmed (0.6) | cts13233-tbl-0001:row11:col1 | — | not captured |
+| Clearance as a function of weight | `Q319` · allometric_exponent | 0.480 | not captured | not captured | not captured | 14.3 | llm_corrected (0.6) | cts13233-tbl-0001:row13:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,6 +61,8 @@ Mathis A; Sale M; Cornpropst M; Sheridan WP; Ma SC et al. (2022). Clinical and t
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=berotralstat
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - population split: 'parameter estimate (rse%)' subgroup of Mathis_2022 (paper reports 6 populations: adolescents (12–18 years), low weight adults (60–80 kg), normal weight adults (80–100 kg), overweight adults (100–120 kg), parameter estimate (rse%), underweight adults (40–60 kg))
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - transposed table Mathis_2022_table_2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
@@ -75,6 +77,7 @@ Mathis A; Sale M; Cornpropst M; Sheridan WP; Ma SC et al. (2022). Clinical and t
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts13233-tbl-0001:row1:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts13233-tbl-0001:row2:col1'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['cts13233-tbl-0001:row8:col1'] |
@@ -87,6 +90,7 @@ Mathis A; Sale M; Cornpropst M; Sheridan WP; Ma SC et al. (2022). Clinical and t
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=berotralstat) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['kcomp'] |
@@ -112,7 +116,7 @@ Mathis A; Sale M; Cornpropst M; Sheridan WP; Ma SC et al. (2022). Clinical and t
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_modelica.zip" download>Berotralstat_Mathis2022_parameter_estimate_rse_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_modelica.zip" download>Berotralstat_Mathis2022_parameter_estimate_rse_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_fmi.zip" download>Berotralstat_Mathis2022_parameter_estimate_rse_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_matlab.zip" download>Berotralstat_Mathis2022_parameter_estimate_rse_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_berotralstat/Berotralstat_Mathis2022_parameter_estimate_rse/Berotralstat_Mathis2022_parameter_estimate_rse_matlab_simbio.zip" download>Berotralstat_Mathis2022_parameter_estimate_rse_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>

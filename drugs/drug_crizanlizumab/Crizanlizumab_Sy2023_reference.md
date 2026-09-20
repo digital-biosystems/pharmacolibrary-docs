@@ -56,7 +56,6 @@ Sy SKB; Tanaka C; Grosch K et al. (2023). Clinical pharmacokinetics 62
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=crizanlizumab
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - unparsed cell Sy_2023_table_p12_1:row2:col4 = '0.14 (82.9%)'
 - unparsed cell Sy_2023_table_p12_1:row3:col2 = '0.0059 (9.96%)'
 - unparsed cell Sy_2023_table_p12_1:row3:col3 = '0.006 (10.1%)'
@@ -73,6 +72,7 @@ Sy SKB; Tanaka C; Grosch K et al. (2023). Clinical pharmacokinetics 62
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.75 | not captured | not captured | ['Sy_2023_table_p12_1:row7:col2', 'Sy_2023_table_p12_1:row7:col3'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 

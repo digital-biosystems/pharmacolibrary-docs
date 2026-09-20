@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# anti-Factor Xa — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# anti-factor Xa — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Zou_2025`
 - **model family:** `emax`

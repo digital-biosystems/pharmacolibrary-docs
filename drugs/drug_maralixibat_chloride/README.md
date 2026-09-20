@@ -23,7 +23,7 @@ In the US, maralixibat is also indicated for the treatment of cholestatic prurit
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 04:20 | 2:00 | 0/0/0 | 1/0/0 | 0/0/0 | 48,874/900 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/0 | 3/0 | 0 |
+| 2026-09-18 13:58 | 1:45 | 0/0/0 | 2/0/0 | 0/0/0 | 79,359/1,096 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
@@ -33,8 +33,15 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Carreño_2025](drugs/drug_maralixibat_chloride/pd_Carre_o_2025_C4.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_maralixibat_chloride/pd_Billo_2025_ASBT.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_maralixibat_chloride/pd_Billo_2025_NTCP.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_maralixibat_chloride/pd_Billo_2025_OATP1B1.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_maralixibat_chloride/pd_Billo_2025_OATP1B3.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_maralixibat_chloride/pd_Billo_2025_OATP2B1.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_maralixibat_chloride/pd_Billo_2025_SOAT.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Carreño_2025](drugs/drug_maralixibat_chloride/pd_Carre_o_2025_GSRS_diarrhea.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Carreño_2025](drugs/drug_maralixibat_chloride/pd_Carre_o_2025_C4.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Carreño_2025](drugs/drug_maralixibat_chloride/pd_Carre_o_2025_GSRS.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
 
 ## Coverage
 
@@ -48,9 +55,9 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Billo_2025 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study analyzing transporter inhibition (IC50) and cross-reactivity, not a pharmacokinetic study reporting disposition parameters like clearance or volume for maralixibat. |
-| popPK | Carreño_2025 | irrelevant | 0 | 0 | The study focuses on linerixibat, not maralixibat, and reports pharmacodynamic parameters for C4 rather than PK parameters for the target drug. |
-| popPK | de_2026 | irrelevant | 0 | 0 | The paper is a systematic review of dose-response relationships for efficacy outcomes (pruritus and serum bile acids) and does not report pharmacokinetic parameters (CL, V, ka, etc.) for maralixibat. |
-| PD | de_2026 | not_relevant | 3 | 2 | The paper is a systematic review that explicitly concludes no consistent dose-response relationship was observed for maralixibat, and it does not provide a formal PK/PD model or extractable numeric PD parameters (e.g., Emax, EC50). |
+| popPK | Carreño_2025 | irrelevant | 0 | 0 | The study focuses on linerixibat (a different drug) and maralixibat is only mentioned as a comparator in the introduction, with no PK parameters reported for it. |
+| popPK | de_2026 | irrelevant | 0 | 0 | The paper is a systematic review of dose-response relationships for efficacy outcomes (pruritus and serum bile acids) and does not report pharmacokinetic parameters such as clearance or volume for maralixibat. |
+| PD | de_2026 | not_relevant | 3 | 2 | The paper is a systematic review that qualitatively assesses dose-response relationships but explicitly concludes that no evident dose-response relationship was observed, and it does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative effect-vs-concentration curve. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_maralixibat_chloride`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

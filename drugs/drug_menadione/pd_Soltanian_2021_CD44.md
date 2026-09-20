@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CD44 positive cells — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# CD44+ cells — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Soltanian_2021`
 - **model family:** `unknown`

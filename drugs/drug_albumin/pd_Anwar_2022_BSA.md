@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# BSA denaturation protection — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# BSA denaturation inhibition — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Anwar_2022`
 - **model family:** `unknown`

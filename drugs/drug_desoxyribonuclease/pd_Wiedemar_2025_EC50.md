@@ -18,9 +18,6 @@ Wiedemar N; Milne R; Carvalho S; Patterson S; Bodkin M; Masurier N; Lisowski V; 
 | Gam-R1 — atovaquone | `Q307` · not captured | 2 | not captured | not captured | llm_confirmed (not captured) | tbl1:row3:col4 |
 | Gam-R1 — atovaquone | `Q307` · not captured | 4.5 | not captured | not captured | llm_confirmed (not captured) | tbl1:row3:col5 |
 | Gam-R1 — atovaquone | `Q307` · not captured | 3 | not captured | not captured | llm_confirmed (not captured) | tbl1:row3:col6 |
-| Gam-R3 — atovaquone | `Q358` · not captured | 1 | not captured | not captured | llm (not captured) | tbl1:row5:col4 |
-| Gam-R3 — atovaquone | `Q358` · not captured | 2.5 | not captured | not captured | llm (not captured) | tbl1:row5:col5 |
-| Gam-R3 — atovaquone | `Q358` · not captured | 3 | not captured | not captured | llm (not captured) | tbl1:row5:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

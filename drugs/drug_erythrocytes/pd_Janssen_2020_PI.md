@@ -6,7 +6,7 @@
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Janssen JM; Dorlo TPC; Niewerth D; Wilhelm AJ; Zwaan CM; Beijnen JH; et al. et al. (2020). Clinical pharmacokinetics 59

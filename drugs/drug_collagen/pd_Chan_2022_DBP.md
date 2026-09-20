@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# diastolic blood pressure — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# diastolic blood pressure — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Chan_2022`
 - **model family:** `sigmoid_emax`

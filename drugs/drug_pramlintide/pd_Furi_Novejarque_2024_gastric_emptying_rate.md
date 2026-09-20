@@ -18,8 +18,8 @@ Furió-Novejarque C; Sala-Mira I; Díez JL; Bondia J et al. (2024). Computer met
 | 𝑘 𝑞1 — Value | `Q30` · not captured | 0.0974 | not captured | not captured | llm_confirmed (not captured) | tab_5:row8:col2 |
 | 𝑘 𝑞12 — Value | `Q301` · not captured | 0.1667 | not captured | not captured | llm (not captured) | tab_5:row9:col2 |
 | 𝑘 𝑞2 — Value | `Q99` · not captured | 0.0109 | not captured | not captured | llm_confirmed (not captured) | tab_5:row10:col2 |
-| 𝑘 𝑒 — Value | `Q47` · not captured | 0.0322 | not captured | not captured | llm (not captured) | tab_5:row11:col2 |
-| 𝑉 𝑃 — Value | `Q61` · not captured | 31.549 | not captured | not captured | llm (not captured) | tab_5:row12:col2 |
+| 𝑘 𝑒 — Value | `Q47` · not captured | 0.0322 | not captured | not captured | space_fold (not captured) | tab_5:row11:col2 |
+| 𝑉 𝑃 — Value | `Q64` · not captured | 31.549 | not captured | not captured | space_fold (not captured) | tab_5:row12:col2 |
 | 𝑓 — Value | `Q40` · not captured | 0.9 | 𝑄 sto | not captured | exact (not captured) | tab_5:row23:col2 |
 
 <details class="legend">

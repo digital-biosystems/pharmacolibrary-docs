@@ -1,10 +1,11 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Romiplostim_Fan2023_reference&quot;,&quot;label&quot;:&quot;Fan_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_romiplostim/Romiplostim_Fan2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# platelet count — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# platelet count — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Perez_2013`
 - **model family:** `indirect_response_i`
-- **driver:** `not_resolved`
+- **driver:** `cited_pk`
 - **tier:** population
 - **effect:** stimulation/unknown
 
@@ -17,7 +18,6 @@ Perez Ruixo JJ; Doshi S; Wang YM; Mould DR et al. (2013). British journal of cli
 |---|---|---|---|---|---|---|
 | Population estimate [RSE (%)] — k 0 DE (days -1 ) | `Q326` · not captured | 0.16 | days -1 | not captured | llm (not captured) | tab_1:row0:col2 |
 | Population estimate [RSE (%)] — kCirc (days -1 ) | `Q47` · not captured | 0.57 | days -1 | not captured | llm (not captured) | tab_1:row0:col3 |
-| Population estimate [RSE (%)] — Circ0 (¥ 10 9 l -1 )* | `Q358` · not captured | 23.7 | not captured | not captured | llm (not captured) | tab_1:row0:col4 |
 | Population estimate [RSE (%)] — MTT (days) | `Q81` · not captured | 9.58 | days | not captured | llm (not captured) | tab_1:row0:col5 |
 | Population estimate [RSE (%)] — a (day/mg) | `Q358` · not captured | 0.28 | day/mg | not captured | llm (not captured) | tab_1:row0:col8 |
 | Inter-individual variability [RSE (%)] — kCirc (days -1 ) | `Q312` · not captured | 36.3 | days -1 | not captured | llm_confirmed (not captured) | tab_1:row1:col3 |

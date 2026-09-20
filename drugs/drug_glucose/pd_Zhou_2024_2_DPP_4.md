@@ -17,13 +17,9 @@ not matched (stem Zhou_2024_2)
 | AUEC0-24h (h*%) — Parameters | `Q19` · not captured | 1820 | h*% | not captured | llm (not captured) | T3:row4:col1 |
 | AUEC0-24h (h*%) — Cetagliptin | `Q19` · not captured | 2000 | h*% | not captured | llm (not captured) | T3:row4:col2 |
 | AUEC0-24h (h*%) — Cetagliptin | `Q19` · not captured | 1970 | h*% | not captured | llm (not captured) | T3:row4:col3 |
-| E24h (%) — Cetagliptin | `Q359` · not captured | 79.75 | not captured | not captured | llm (not captured) | T3:row6:col2 |
-| E24h (%) — Cetagliptin | `Q359` · not captured | 73.11 | not captured | not captured | llm (not captured) | T3:row6:col3 |
 | AUEC0-24h (h*%) — Parameters | `Q19` · not captured | 2010 | h*% | not captured | llm (not captured) | T3:row10:col1 |
 | AUEC0-24h (h*%) — Cetagliptin | `Q19` · not captured | 2090 | h*% | not captured | llm (not captured) | T3:row10:col2 |
 | AUEC0-24h (h*%) — Cetagliptin | `Q19` · not captured | 2000 | h*% | not captured | llm (not captured) | T3:row10:col3 |
-| E24h (%) — Cetagliptin | `Q359` · not captured | 83.91 | not captured | not captured | llm (not captured) | T3:row12:col2 |
-| E24h (%) — Cetagliptin | `Q359` · not captured | 77.72 | not captured | not captured | llm (not captured) | T3:row12:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

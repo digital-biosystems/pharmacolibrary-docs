@@ -1,24 +1,23 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;lanadelumab&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/&quot;},{&quot;label&quot;:&quot;Wang_2020 \u00b7 base&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lanadelumab_Wang2020_base&quot;,&quot;label&quot;:&quot;Wang_2020_base&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/Lanadelumab_Wang2020_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lanadelumab_Wang2020_base&quot;,&quot;label&quot;:&quot;Wang_2020_base&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/Lanadelumab_Wang2020_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lanadelumab_Wang2020_final&quot;,&quot;label&quot;:&quot;Wang_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/Lanadelumab_Wang2020_final.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lanadelumab_Wang2020_final&quot;,&quot;label&quot;:&quot;Wang_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/Lanadelumab_Wang2020_final.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lanadelumab_Wang2020_base&quot;,&quot;label&quot;:&quot;Wang_2020_base&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/Lanadelumab_Wang2020_base.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lanadelumab_Wang2020_base&quot;,&quot;label&quot;:&quot;Wang_2020_base&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/Lanadelumab_Wang2020_base.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lanadelumab_Wang2020_final&quot;,&quot;label&quot;:&quot;Wang_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/Lanadelumab_Wang2020_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lanadelumab_Wang2020_final&quot;,&quot;label&quot;:&quot;Wang_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_lanadelumab/Lanadelumab_Wang2020_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lanadelumab — `Lanadelumab_Wang2020_base`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `Cmax`, `Cmin`, `kabs`, `AUCSS`</sub>
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `AUCSS`, `Cavg`, `Cmax`, `Cmin`</sub>
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** a structural parameter has the wrong dimension.
+**What is wrong:** every check the reviewer could run passed.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
-2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-3. A misread unit in transcribe is the usual cause.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -27,21 +26,24 @@ Wang Y; Marier JF; Kassir N; Chang C; Martin P et al. (2020). Clinical and trans
   ·  DOI: [10.1111/cts.12806](https://doi.org/10.1111/cts.12806)
 
 ## Model component
-<dbs-pgx drug="lanadelumab" model-id="Lanadelumab_Wang2020_base" status="rejected" stale="false" population="healthy subjects and patients with hereditary angioedema" measured-compound="lanadelumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="lanadelumab" model-id="Lanadelumab_Wang2020_base" status="needs_review" stale="false" population="patients with hereditary angioedema and healthy subjects" measured-compound="lanadelumab" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
+| CL/F (L/hour) | `Q27` · CL/F | 0.0337 | L/hour | 9.361111111111111e-09 | [l] / [h] | 24.3 | exact (1.0) | cts12806-tbl-0001:row0:col4, cts12806-tbl-0001:row0:col8, cts12806-tbl-0001:row0:col12 | — | not captured |
+| AUCtau,ss (µg × day/mL) | `Q18` · AUCSS | 408 | µg × day/mL | not captured | [[d] · [µg]] / [ml] | 24.3 | llm (0.6) | cts12806-tbl-0001:row2:col4, cts12806-tbl-0001:row2:col8, cts12806-tbl-0001:row2:col12 | — | not captured |
+| Cave,ss (µg/mL) | `Q71` · Cavg | 29.2 | µg/mL | not captured | [µg] / [ml] | 24.3 | llm_confirmed (0.6) | cts12806-tbl-0001:row3:col4, cts12806-tbl-0001:row3:col8, cts12806-tbl-0001:row3:col12 | — | not captured |
 | Cmax,ss (µg/mL) | `Q32` · Cmax | 35.5 | µg/mL | not captured | [µg] / [ml] | 33.2 | llm_confirmed (0.6) | cts12806-tbl-0001:row4:col4, cts12806-tbl-0001:row4:col8, cts12806-tbl-0001:row4:col12, Wang_2020_table_S14:row8:col2, Wang_2020_table_S14:row8:col3, Wang_2020_table_S14:row8:col4, Wang_2020_table_S14:row8:col5, Wang_2020_table_S14:row8:col6, Wang_2020_table_S14:row8:col7, Wang_2020_table_S14:row8:col8, Wang_2020_table_S14:row8:col9, Wang_2020_table_S14:row8:col10, Wang_2020_table_S14:row8:col11 | — | not captured |
 | Cmin,ss (µg/mL) | `Q36` · Cmin | 24.6 | µg/mL | not captured | [µg] / [ml] | 33.3 | llm_confirmed (0.6) | cts12806-tbl-0001:row5:col4, cts12806-tbl-0001:row5:col8, cts12806-tbl-0001:row5:col12, Wang_2020_table_S14:row9:col2, Wang_2020_table_S14:row9:col3, Wang_2020_table_S14:row9:col4, Wang_2020_table_S14:row9:col5, Wang_2020_table_S14:row9:col6, Wang_2020_table_S14:row9:col7, Wang_2020_table_S14:row9:col8, Wang_2020_table_S14:row9:col9, Wang_2020_table_S14:row9:col10, Wang_2020_table_S14:row9:col11 | — | not captured |
-| Ka (1/h) | `Q49` · kabs | 0.0179 | hour | not captured | [h] | not captured | exact (1.0) | Wang_2020_table_S7:row0:col1 | — | not captured |
+| Tmax (hour) | `Q56` · tmax | 98.6 | hour | 354960.0 | [h] | 21.1 | exact (1.0) | cts12806-tbl-0001:row6:col4, cts12806-tbl-0001:row6:col8, cts12806-tbl-0001:row6:col12 | — | not captured |
+| t 1/2 (hour) | `Q57` · t1/2z | 361 | hour | 1299600.0 | [h] | 13.5 | space_fold (0.95) | cts12806-tbl-0001:row7:col1, cts12806-tbl-0001:row7:col4, cts12806-tbl-0001:row7:col8, cts12806-tbl-0001:row7:col12 | — | not captured |
+| Ka (1/h) | `Q49` · kabs | 0.0179 | not captured | not captured | not captured | not captured | exact (1.0) | Wang_2020_table_S7:row0:col1 | — | not captured |
 | V/F/BW(L) | `Q353` · Vnorm/F | 0.182 | L | 0.000182 | [l] | 20.2 | llm (0.6) | Wang_2020_table_S14:row3:col2, Wang_2020_table_S14:row3:col3, Wang_2020_table_S14:row3:col4, Wang_2020_table_S14:row3:col5, Wang_2020_table_S14:row3:col6, Wang_2020_table_S14:row3:col7, Wang_2020_table_S14:row3:col8, Wang_2020_table_S14:row3:col9, Wang_2020_table_S14:row3:col10, Wang_2020_table_S14:row3:col11 | — | not captured |
-| AUCtau,ss (µg·h/mL) | `Q18` · AUCSS | 10800 | µg·h/mL | not captured | [[h] · [µg]] / [ml] | 0.033 | llm (0.6) | Wang_2020_table_S14:row5:col2, Wang_2020_table_S14:row5:col3, Wang_2020_table_S14:row5:col4, Wang_2020_table_S14:row5:col5, Wang_2020_table_S14:row5:col6, Wang_2020_table_S14:row5:col7, Wang_2020_table_S14:row5:col8, Wang_2020_table_S14:row5:col9, Wang_2020_table_S14:row5:col10, Wang_2020_table_S14:row5:col11 | — | not captured |
-| Cav,ss(µg/mL) | `Q71` · Cavg | 32.2 | µg/mL | not captured | [µg] / [ml] | 33.0 | llm_confirmed (0.6) | Wang_2020_table_S14:row7:col2, Wang_2020_table_S14:row7:col3, Wang_2020_table_S14:row7:col4, Wang_2020_table_S14:row7:col5, Wang_2020_table_S14:row7:col6, Wang_2020_table_S14:row7:col7, Wang_2020_table_S14:row7:col8, Wang_2020_table_S14:row7:col9, Wang_2020_table_S14:row7:col10, Wang_2020_table_S14:row7:col11 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,23 +54,19 @@ Wang Y; Marier JF; Kassir N; Chang C; Martin P et al. (2020). Clinical and trans
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
 | V/F (L) | Q76 | not captured | exact |
-| t 1/2 (hour) | Q57 | not captured | space_fold |
-| CL/F (L/h) | Q27 | not captured | exact |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'CL/F (L/hour)' (captured trailing unit 'L/hour' for child rows)
-- dropped value-less row: 'AUCtau,ss (µg × day/mL)' (captured trailing unit 'µg × day/mL' for child rows)
-- dropped value-less row: 'Cave,ss (µg/mL)' (captured trailing unit 'µg/mL' for child rows)
-- dropped value-less row: 'Tmax (hour)' (captured trailing unit 'hour' for child rows)
-- unit 'hour' inherited from a section-header row for kabs (not printed on this row itself) — see the unit_dimension_mismatch check below if this is wrong
-- unit_dimension_mismatch: 'Ka (1/h)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
+- unit_dimension_unknown: 'µg × day/mL' (AUCSS)
+- dropped duplicate Q27 ('CL/F (L/h)', value None) — already have one for this compound
 - dropped duplicate Q27 ('CL/F(L/h)', value '0.0278') — already have one for this compound
 - dropped duplicate Q76 ('V/F(L)', value '14.4') — already have one for this compound
 - dropped duplicate Q27 ('CL/F/BW(L/h/kg)', value '0.000353') — already have one for this compound
 - dropped duplicate Q49 ('Ka(h-1)', value '0.0178') — already have one for this compound
+- dropped duplicate Q18 ('AUCtau,ss (µg·h/mL)', value '10800') — already have one for this compound
 - dropped duplicate Q18 ('AUCtau,ss (µg·day/mL)', value '452') — already have one for this compound
+- dropped duplicate Q71 ('Cav,ss(µg/mL)', value '32.2') — already have one for this compound
 - dropped duplicate Q57 ('t1/2(h)', value '345') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lanadelumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
@@ -140,19 +138,20 @@ Wang Y; Marier JF; Kassir N; Chang C; Martin P et al. (2020). Clinical and trans
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q18 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Wang_2020_table_S14:row5:col2', 'Wang_2020_table_S14:row5:col3', 'Wang_2020_table_S14:row5:col4', 'Wang_2020_table_S14:row5:col5', 'Wang_2020_table_S14:row5:col6', 'Wang_2020_table_S14:row5:col7', 'Wang_2020_table_S14:row5:col8', 'Wang_2020_table_S14:row5:col9', 'Wang_2020_table_S14:row5:col10', 'Wang_2020_table_S14:row5:col11'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wang_2020_table_S7:row1:col1'] |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cts12806-tbl-0001:row0:col4', 'cts12806-tbl-0001:row0:col8', 'cts12806-tbl-0001:row0:col12'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['cts12806-tbl-0001:row4:col4', 'cts12806-tbl-0001:row4:col8', 'cts12806-tbl-0001:row4:col12', 'Wang_2020_table_S14:row8:col2', 'Wang_2020_table_S14:row8:col3', 'Wang_2020_table_S14:row8:col4', 'Wang_2020_table_S14:row8:col5', 'Wang_2020_table_S14:row8:col6', 'Wang_2020_table_S14:row8:col7', 'Wang_2020_table_S14:row8:col8', 'Wang_2020_table_S14:row8:col9', 'Wang_2020_table_S14:row8:col10', 'Wang_2020_table_S14:row8:col11'] |
 | C5_dimension_Q353 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2020_table_S14:row3:col2', 'Wang_2020_table_S14:row3:col3', 'Wang_2020_table_S14:row3:col4', 'Wang_2020_table_S14:row3:col5', 'Wang_2020_table_S14:row3:col6', 'Wang_2020_table_S14:row3:col7', 'Wang_2020_table_S14:row3:col8', 'Wang_2020_table_S14:row3:col9', 'Wang_2020_table_S14:row3:col10', 'Wang_2020_table_S14:row3:col11'] |
 | C5_dimension_Q36 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['cts12806-tbl-0001:row5:col4', 'cts12806-tbl-0001:row5:col8', 'cts12806-tbl-0001:row5:col12', 'Wang_2020_table_S14:row9:col2', 'Wang_2020_table_S14:row9:col3', 'Wang_2020_table_S14:row9:col4', 'Wang_2020_table_S14:row9:col5', 'Wang_2020_table_S14:row9:col6', 'Wang_2020_table_S14:row9:col7', 'Wang_2020_table_S14:row9:col8', 'Wang_2020_table_S14:row9:col9', 'Wang_2020_table_S14:row9:col10', 'Wang_2020_table_S14:row9:col11'] |
-| C5_dimension_Q49 | fail | [time] | hour | not captured | not captured | ['Wang_2020_table_S7:row0:col1'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['cts12806-tbl-0001:row6:col4', 'cts12806-tbl-0001:row6:col8', 'cts12806-tbl-0001:row6:col12'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['cts12806-tbl-0001:row7:col1', 'cts12806-tbl-0001:row7:col4', 'cts12806-tbl-0001:row7:col8', 'cts12806-tbl-0001:row7:col12'] |
-| C5_dimension_Q71 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Wang_2020_table_S14:row7:col2', 'Wang_2020_table_S14:row7:col3', 'Wang_2020_table_S14:row7:col4', 'Wang_2020_table_S14:row7:col5', 'Wang_2020_table_S14:row7:col6', 'Wang_2020_table_S14:row7:col7', 'Wang_2020_table_S14:row7:col8', 'Wang_2020_table_S14:row7:col9', 'Wang_2020_table_S14:row7:col10', 'Wang_2020_table_S14:row7:col11'] |
+| C5_dimension_Q71 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['cts12806-tbl-0001:row3:col4', 'cts12806-tbl-0001:row3:col8', 'cts12806-tbl-0001:row3:col12'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['cts12806-tbl-0001:row1:col4', 'cts12806-tbl-0001:row1:col8', 'cts12806-tbl-0001:row1:col12', 'Wang_2020_table_S7:row2:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.0337 L/h | not captured | not captured | ['cts12806-tbl-0001:row0:col4', 'cts12806-tbl-0001:row0:col8', 'cts12806-tbl-0001:row0:col12'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

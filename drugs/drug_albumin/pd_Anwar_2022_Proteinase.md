@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Proteinase inhibitory activity — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# Anti-proteinase activity — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Anwar_2022`
 - **model family:** `unknown`

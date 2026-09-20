@@ -19,7 +19,7 @@ It was first synthesized in the 1970s and was originally used as a prophylactic 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-07 16:57 | 7:28 | 0/0/0 | 3/0/0 | 0/0/0 | 77,059/8,200 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 5/0 | 0 |
+| 2026-09-19 10:09 | 3:08 | 0/0/0 | 3/0/0 | 0/0/0 | 118,717/3,396 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
@@ -37,10 +37,21 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 25 matched, 18 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 32 matched, 25 returned
+- **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
+
+## Full text wanted
+
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Stendel_2007.pdf` | Stendel R et al., Pharmacokinetics of taurolidine followi…, Clinical pharmacokinetics (2007) | popPK | 9 | [10.2165/00003088-200746060-00005](https://doi.org/10.2165/00003088-200746060-00005) | [17518510](https://pubmed.ncbi.nlm.nih.gov/17518510) | The paper is a PK study of taurolidine in humans, but the evidence text only provides qualitative descriptions (e.g., "markedly higher" volume of distribution) and in-vitro ratios, lacking specific numeric PK parameter values like CL, V, or half-life. |
+| `Gong_2007.pdf` | Gong L et al., The pharmacokinetics of taurolidine met…, Journal of clinical pharmac… (2007) | popPK | 8 | [10.1177/0091270007299929](https://doi.org/10.1177/0091270007299929) | [17395893](https://pubmed.ncbi.nlm.nih.gov/17395893) | The paper reports a PK study of taurolidine metabolites in humans, but the specific numeric parameter values (CL, V, t1/2) are not present in the provided text, which only contains qualitative descriptions. |
+
+<sub>queue written 2026-09-19T10:08:32.985196+00:00</sub>
 
 ## Screened and excluded
 
@@ -55,7 +66,7 @@ _not available_
 | popPK | Gong_2007 | relevant | 8 | 2 | The paper reports a PK study of taurolidine metabolites in humans, but the specific numeric parameter values (CL, V, t1/2) are not present in the provided text, which only contains qualitative descriptions. |
 | popPK | Görtz_1997 | irrelevant | 0 | 0 | The paper is a clinical outcome study on intra-abdominal infections and does not report any pharmacokinetic parameters for taurolidine. |
 | popPK | Huang_2022 | irrelevant | 0 | 0 | The paper is a mechanistic immunology study focusing on autophagy and sepsis protection, containing no pharmacokinetic parameters (CL, V, etc.) for taurolidine. |
-| popPK | Lv_2023 | irrelevant | 0 | 0 | The paper is an in-vitro and in-vivo mechanistic study on the antiviral efficacy of taurolidine against H5N1, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Lv_2023 | irrelevant | 0 | 0 | The paper is an in-vitro and in-vivo mechanistic study on antiviral activity and signaling pathways, reporting no pharmacokinetic parameters for taurolidine. |
 | popPK | Martinotti_2011 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity screening of drug combinations and does not report any pharmacokinetic parameters for taurolidine. |
 | popPK | Nguyen_2024 | irrelevant | 0 | 0 | The paper is a clinical review of taurolidine as a catheter lock solution and explicitly states that limited pharmacokinetic data are available, providing no quantitative PK parameters. |
 | PD | Nguyen_2024 | not_relevant | 1 | 0 | The text is a review/summary that explicitly states limited PK/PD data are available and only reports clinical efficacy (risk reduction) without any numeric concentration-effect or dose-response parameters. |
@@ -69,7 +80,7 @@ _not available_
 | popPK | Stendel_2003 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study investigating apoptosis in cell lines and does not report any pharmacokinetic parameters. |
 | popPK | Stendel_2007 | relevant | 9 | 2 | The paper is a PK study of taurolidine in humans, but the evidence text only provides qualitative descriptions (e.g., "markedly higher" volume of distribution) and in-vitro ratios, lacking specific numeric PK parameter values like CL, V, or half-life. |
 | popPK | Wouters_2022 | irrelevant | 0 | 0 | The study investigates the immunological effects of taurolidine on leukocytes and does not report any pharmacokinetic parameters. |
-| popPK | unknown_2010 | irrelevant | 0 | 0 | The evidence consists only of a conference title and dates, containing no study data, drug information, or pharmacokinetic parameters. |
+| popPK | unknown_2010 | irrelevant | 0 | 0 | no_text gate: only 133 chars of text extracted (&lt; 400) |
 | PD | unknown_2010 | not_relevant | 0 | 0 | The provided text is only a citation header for a conference abstract and contains no data, results, or PD parameters. |
 
 ---

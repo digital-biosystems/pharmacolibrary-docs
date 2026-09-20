@@ -19,7 +19,7 @@ Cholic acid, formulated as Cholbam capsules, is approved by the United States Fo
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 03:38 | 1:51 | 0/1/0 | 0/0/0 | 0/0/0 | 38,226/2,115 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/0 | 3/0 | 0 |
+| 2026-09-18 13:36 | 0:42 | 0/1/0 | 0/0/0 | 0/0/0 | 26,426/591 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/1 | 3/0 | 0 |
 
 ## popPK records
 
@@ -38,10 +38,10 @@ Cholic acid, formulated as Cholbam capsules, is approved by the United States Fo
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Hofmann_1983 | relevant | 10 | 2 | The paper describes a detailed physiological pharmacokinetic model for cholic acid in humans, but the specific numeric parameter values (transfer coefficients, clearances) are not present in the provided text evidence, appearing only as fragments or references to figures/supplementary data. |
+| popPK | Hofmann_1983 | relevant | 10 | 2 | The paper describes a detailed compartmental PK model for cholic acid, but the specific numeric parameter values (transfer coefficients, clearances) are not present in the provided text, appearing only as fragments or references to figures/tables not included. |
 | popPK | Molino_1986 | irrelevant | 2 | 0 | The study focuses on chenodeoxycholic acid (CDC) as the subject drug, with cholic acid mentioned only as a comparator for model parameters, and no quantitative PK values for cholic acid are provided in the evidence. |
 | popPK | Strange_1979 | irrelevant | 2 | 0 | The study focuses on subcellular partitioning and distribution percentages in rat liver rather than standard pharmacokinetic parameters like clearance, volume of distribution, or half-life. |
-| popPK | Varma_2021 | irrelevant | 0 | 0 | The paper is a metabolomic and pharmacoepidemiologic study examining the association between bile acid levels and dementia, not a pharmacokinetic study reporting disposition parameters for cholic acid. |
+| popPK | Varma_2021 | irrelevant | 0 | 0 | The study is a metabolomic and pharmacoepidemiologic investigation of bile acid levels and dementia risk, not a pharmacokinetic study reporting disposition parameters for cholic acid. |
 | popPK | Zhou_2018 | irrelevant | 0 | 0 | The study measures fecal concentrations of cholic acid as a metabolite in a toxicology study, not pharmacokinetic disposition parameters (CL, V, ka) for cholic acid as a subject drug. |
 
 ---

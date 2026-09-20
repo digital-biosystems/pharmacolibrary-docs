@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;scopolamine&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/&quot;},{&quot;label&quot;:&quot;Liem-Moolenaar_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Scopolamine_LiemMoolenaar2011_reference&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Scopolamine_AlvarezJimenez2016_reference&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Scopolamine_Ebert2001_reference&quot;,&quot;label&quot;:&quot;Ebert_2001_reference&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_Ebert2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Scopolamine_LiemMoolenaar2011_reference&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -27,7 +27,7 @@ Liem-Moolenaar M; de Boer P; Timmers M; Schoemaker RC; van Hasselt JG; Schmidt S
   ·  DOI: [10.1111/j.1365-2125.2011.03936.x](https://doi.org/10.1111/j.1365-2125.2011.03936.x)
 
 ## Model component
-<dbs-pgx drug="scopolamine" model-id="Scopolamine_LiemMoolenaar2011_reference" status="model_quarantined" stale="false" population="healthy male subjects" measured-compound="scopolamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="scopolamine" model-id="Scopolamine_LiemMoolenaar2011_reference" status="model_quarantined" stale="false" population="healthy males" measured-compound="scopolamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -70,6 +70,7 @@ Liem-Moolenaar M; de Boer P; Timmers M; Schoemaker RC; van Hasselt JG; Schmidt S
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Liem-Moolenaar_2011:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Liem-Moolenaar_2011:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.53 | not captured | not captured | ['Liem-Moolenaar_2011:abstract'] |
@@ -80,6 +81,7 @@ Liem-Moolenaar M; de Boer P; Timmers M; Schoemaker RC; van Hasselt JG; Schmidt S
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |

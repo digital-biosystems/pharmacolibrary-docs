@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cell proliferation — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# cell proliferation — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Al-Keilani_2018`
 - **model family:** `unknown`
@@ -17,8 +17,6 @@ Al-Keilani MS; Alsmadi DH; Darweesh RS; Alzoubi KH et al. (2018). Clinical pharm
 |---|---|---|---|---|---|---|
 | OXA (μM) — Colorectal cancer cell lines | `Q358` · not captured | 43.41 | μM | not captured | llm (not captured) | t1-cpaa-10-023:row4:col1 |
 | OXA (μM) — Colorectal cancer cell lines | `Q358` · not captured | 12.09 | μM | not captured | llm (not captured) | t1-cpaa-10-023:row4:col2 |
-| IRN (μM) — Colorectal cancer cell lines | `Q358` · not captured | 20.22 | μM | not captured | llm (not captured) | t1-cpaa-10-023:row5:col1 |
-| IRN (μM) — Colorectal cancer cell lines | `Q358` · not captured | 2.45 | μM | not captured | llm (not captured) | t1-cpaa-10-023:row5:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

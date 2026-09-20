@@ -12,10 +12,11 @@
   "adminDuration": 600.0,
   "adminMass": 0.0001,
   "k12": 0.000925925925925926,
+  "k21": 0.0005426954732510288,
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 0.0008472004016642428
+  "central.C": 0.00017936483557327425
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

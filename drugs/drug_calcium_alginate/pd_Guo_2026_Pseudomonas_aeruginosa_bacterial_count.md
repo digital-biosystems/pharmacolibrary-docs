@@ -9,7 +9,7 @@
 - **effect:** inhibition/unknown
 
 ## Citation
-Guo Y; Yin J; Aulin LBS; Ciofu O; Moser C; Upadhyay PJ; et al. et al. (2026). Biofilm 12
+Guo Y; Yin J; Aulin LBS; Ciofu O; Moser C; Upadhyay PJ; Høiby N; Wang H; Guo T; van Hasselt JGC et al. (2026). Biofilm 12
   ·  DOI: [10.1016/j.bioflm.2026.100387](https://doi.org/10.1016/j.bioflm.2026.100387)
 
 ## Parameters
@@ -18,7 +18,6 @@ Guo Y; Yin J; Aulin LBS; Ciofu O; Moser C; Upadhyay PJ; et al. et al. (2026). Bi
 | kgr | `Q358` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row3:col5 |
 | kgr | `Q358` · not captured | 0.6 | not captured | not captured | llm (not captured) | tab_0:row3:col6 |
 | kgr | `Q358` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row3:col7 |
-| B0 Bmax ksr — Planktonic (RSE%) | `Q332` · not captured | 3.79 | RSE% | not captured | llm_confirmed (not captured) | tab_0:row4:col3 |
 | EC50S | `Q321` · not captured | 170 | unknown | not captured | llm (not captured) | tab_0:row7:col7 |
 | EC50R ktr | `Q338` · not captured | -4.27 | not captured | not captured | llm_corrected (not captured) | tab_0:row9:col6 |
 | EC50R ktr | `Q338` · not captured | -1.57 | not captured | not captured | llm_corrected (not captured) | tab_0:row9:col7 |

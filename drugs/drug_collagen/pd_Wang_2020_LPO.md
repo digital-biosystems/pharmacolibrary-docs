@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Lipid peroxidation inhibition — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# Lipid peroxidation inhibition — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Wang_2020`
 - **model family:** `unknown`

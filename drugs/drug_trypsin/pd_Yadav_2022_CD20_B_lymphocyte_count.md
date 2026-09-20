@@ -3,10 +3,10 @@
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Yadav_2022`
-- **model family:** `tmdd`
+- **model family:** `indirect_response_ii`
 - **driver:** `conc_no_pk`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** stimulation/unknown
 
 ## Citation
 Yadav R; Sukumaran S; Zabka TS; Li J; Oldendorp A; Morrow G; Reyes A; Cheu M; Li J; Wallin JJ; Tsai S; Sun L; Wang P; Ellerman D; Spiess C; Polson A; Stefanich EG; Kamath AV; Ovacik MA et al. (2022). Pharmaceutics 14
@@ -23,13 +23,13 @@ Yadav R; Sukumaran S; Zabka TS; Li J; Oldendorp A; Morrow G; Reyes A; Cheu M; Li
 | kon_CD79b — Estimate (%RSE) | `Q329` · not captured | 2.96 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row7:col3 |
 | Kd_CD79b — Estimate (%RSE) | `Q331` · not captured | 1.0 | nM | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row8:col3 |
 | ln(2)/kint_complex1 — Estimate (%RSE) | `Q334` · not captured | 346.5 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row11:col3 |
-| ln(2)/kint_complex2 — Estimate (%RSE) | `Q100` · not captured | 7.79 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row12:col3 |
+| ln(2)/kint_complex2 — Estimate (%RSE) | `Q334` · not captured | 7.79 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row12:col3 |
 | ln(2)/kint_complex3 — Estimate (%RSE) | `Q334` · not captured | 5.77 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row13:col3 |
 | ka — Estimate (%RSE) | `Q49` · not captured | 0.31 | not captured | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row14:col3 |
 | F — Estimate (%RSE) | `Q40` · not captured | 0.84 | not captured | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row15:col3 |
 | Emax — Estimate (%RSE) | `Q320` · not captured | 221 | not captured | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row16:col3 |
 | EC50 — Estimate (%RSE) | `Q321` · not captured | 1.20 | nM | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row17:col3 |
-| ln(2)/kout_B-lymphocyte — Estimate (%RSE) | `Q57` · not captured | 55 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row19:col3 |
+| ln(2)/kout_B-lymphocyte — Estimate (%RSE) | `Q328` · not captured | 55 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row19:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

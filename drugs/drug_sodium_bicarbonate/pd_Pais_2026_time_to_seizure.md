@@ -16,6 +16,7 @@ Pais GM; Lesnicki E; Marianski S; Valdez K; Gibson Z; Christopher J; Lepard K; G
 | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|
 | Four-compartment with peripheral compartment (k14 and k41) — −2LL | `Q347` · not captured | 2246.7 | k14 and k41 | not captured | llm (not captured) | T1:row5:col1 |
+| Four-compartment with peripheral compartment (k14 and k41) — BIC | `Q347` · not captured | 2332.5 | k14 and k41 | not captured | llm (not captured) | T1:row5:col2 |
 | Four-compartment with lag compartment to hippocampus (k14 and k43) — −2LL | `Q347` · not captured | 2247.6 | k14 and k43 | not captured | llm (not captured) | T1:row6:col1 |
 | Four-compartment with lag compartment to hippocampus (k14 and k43) — BIC | `Q347` · not captured | 2325.3 | k14 and k43 | not captured | llm (not captured) | T1:row6:col2 |
 

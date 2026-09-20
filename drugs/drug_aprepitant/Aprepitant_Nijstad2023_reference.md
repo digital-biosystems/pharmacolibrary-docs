@@ -1,33 +1,32 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;aprepitant&quot;,&quot;href&quot;:&quot;drugs/drug_aprepitant/&quot;},{&quot;label&quot;:&quot;Nijstad_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aprepitant_Nijstad2023_reference&quot;,&quot;label&quot;:&quot;Nijstad_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_aprepitant/Aprepitant_Nijstad2023_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aprepitant_Nijstad2023_reference&quot;,&quot;label&quot;:&quot;Nijstad_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_aprepitant/Aprepitant_Nijstad2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Aprepitant_Nakade2008_reference&quot;,&quot;label&quot;:&quot;Nakade_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_aprepitant/Aprepitant_Nakade2008_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # aprepitant — `Aprepitant_Nijstad2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
 Nijstad AL; de Vos-Kerkhof E; Enters-Weijnen CF; van de Wetering MD; Tissing WJE; Hanff LM; et al. et al. (2023). Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners 29
   ·  DOI: [10.1177/10781552221089243](https://doi.org/10.1177/10781552221089243)
 
 ## Model component
-<dbs-pgx drug="aprepitant" model-id="Aprepitant_Nijstad2023_reference" status="model_quarantined" stale="false" population="pediatric patients" measured-compound="aprepitant" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="aprepitant" model-id="Aprepitant_Nijstad2023_reference" status="needs_review" stale="false" population="pediatric patients" measured-compound="aprepitant" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -58,21 +57,13 @@ Nijstad AL; de Vos-Kerkhof E; Enters-Weijnen CF; van de Wetering MD; Tissing WJE
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row1:col1', 'tab_1:row1:col2'] |
 | C5_dimension_Q352 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row2:col1', 'tab_1:row2:col2'] |
 | C5_dimension_Q73 | pass | [time] | not captured | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.83 | not captured | not captured | ['tab_1:row1:col1', 'tab_1:row1:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 5.83 L/h | not captured | not captured | ['tab_1:row1:col1', 'tab_1:row1:col2'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -82,8 +73,6 @@ Nijstad AL; de Vos-Kerkhof E; Enters-Weijnen CF; van de Wetering MD; Tissing WJE
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_aprepitant/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Nijstad_2023` / `Nijstad_2023::reference`)
-- model: `../../../knowledgebase/drugs/drug_aprepitant/models/modelica/_needs_review/Aprepitant_Nijstad2023_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_aprepitant/models/modelica/_needs_review/Aprepitant_Nijstad2023_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

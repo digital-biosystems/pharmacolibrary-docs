@@ -22,7 +22,7 @@ In July 2025, the FDA expanded approval to include a new pediatric formulation, 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 04:35 | 7:34 | 0/0/1 | 0/0/0 | 1/0/1 | 50,823/15,328 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-09-18 19:33 | 2:18 | 0/0/1 | 0/0/0 | 1/0/1 | 47,361/5,821 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -55,22 +55,22 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Nomoto_2018.pdf` | Nomoto M et al., Population Pharmacokinetic/Pharmacodyna…, Journal of clinical pharmac… (2018) | popPK | 10 | [10.1002/jcph.1267](https://doi.org/10.1002/jcph.1267) | [29905956](https://pubmed.ncbi.nlm.nih.gov/29905956) | The paper describes a population PK model for avatrombopag, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
-| `Nomoto_2018_2.pdf` | Nomoto M et al., Pharmacokinetic/pharmacodynamic drug-dr…, British journal of clinical… (2018) | popPK | 8 | [10.1111/bcp.13517](https://doi.org/10.1111/bcp.13517) | [29341245](https://pubmed.ncbi.nlm.nih.gov/29341245) | The study reports quantitative PK parameters (AUC ratios, half-life values) for avatrombopag in a DDI context, but lacks full compartmental model parameters (CL, V, Q) typically required for population PK extraction. |
+| `Nomoto_2018.pdf` | Nomoto M et al., Population Pharmacokinetic/Pharmacodyna…, Journal of clinical pharmac… (2018) | popPK | 10 | [10.1002/jcph.1267](https://doi.org/10.1002/jcph.1267) | [29905956](https://pubmed.ncbi.nlm.nih.gov/29905956) | The paper describes a population PK model for avatrombopag, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Nomoto_2018_2.pdf` | Nomoto M et al., Pharmacokinetic/pharmacodynamic drug-dr…, British journal of clinical… (2018) | popPK | 8 | [10.1111/bcp.13517](https://doi.org/10.1111/bcp.13517) | [29341245](https://pubmed.ncbi.nlm.nih.gov/29341245) | The study reports quantitative PK parameters (AUC ratios, half-life values) for avatrombopag in a DDI study, but lacks full compartmental model parameters (CL, V, Q) typically required for population PK extraction. |
 | `Liu_2025.pdf` | Liu X et al., Investigation of the ABCB1 Gene Polymor…, Pharmaceuticals (Basel, Swi… (2025) | pgx | 8 | [10.3390/ph18060903](https://doi.org/10.3390/ph18060903) | [40573298](https://www.ncbi.nlm.nih.gov/pubmed/40573298) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
 
-<sub>queue written 2026-09-06T07:32:11.607044+00:00</sub>
+<sub>queue written 2026-09-18T19:31:17.332211+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Ibrahim_2021 | not_relevant | 0 | 0 | The paper is an in silico study of ABCG2 inhibition and does not report pharmacogenomic effects on avatrombopag PK/PD. |
+| PGx | Ibrahim_2021 | not_relevant | 0 | 0 | The paper is an in silico study of ABCG2 inhibition and does not report pharmacogenomic effects on avatrombopag PK/PD parameters. |
 | PD | Liu_2025_2 | not_relevant | 4 | 3 | The paper reports a population PK model and PK/PD simulations, but the provided text does not contain the specific numeric PD parameters (e.g., Emax, EC50, slope) or the underlying PD model structure required to derive an extractable exposure-response relationship; it only presents qualitative conclusions and simulated outcome values. |
-| popPK | Nomoto_2018 | relevant | 10 | 0 | The paper describes a population PK model for avatrombopag, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
-| PGx | Nomoto_2018 | not_relevant | 0 | 0 | The paper analyzes population PK/PD and the impact of CYP inhibitors, but does not report any pharmacogenomic effects (gene variants) on avatrombopag parameters. |
+| popPK | Nomoto_2018 | relevant | 10 | 0 | The paper describes a population PK model for avatrombopag, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| PGx | Nomoto_2018 | not_relevant | 0 | 0 | The paper analyzes population PK/PD factors like ethnicity, weight, and liver disease, but does not report effects of specific gene variants or genotypes on avatrombopag parameters. |
 | PD | Nomoto_2018_2 | not_relevant | 3 | 2 | The paper reports qualitative changes in maximum platelet count (PD) relative to PK changes (AUC) for drug-drug interactions, but does not provide a concentration-effect curve, Emax/EC50 parameters, or a formal PK/PD model fit. |
-| PGx | Nomoto_2018_2 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (DDIs) involving CYP inhibitors/inducers, not pharmacogenomic effects based on genetic variants or genotypes. |
+| PGx | Nomoto_2018_2 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (DDIs) with CYP inhibitors/inducers, not pharmacogenomic effects of genetic variants. |
 | PGx | Nomoto_2018_3 | not_relevant | 4 | 2 | The paper reports an association between CYP2C9 polymorphisms and increased PK variability, but does not provide fitted effect sizes or demonstrate a clinically important change in PK/PD parameters. |
 
 ---

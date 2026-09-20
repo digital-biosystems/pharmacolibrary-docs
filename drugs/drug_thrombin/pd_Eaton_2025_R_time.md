@@ -3,7 +3,7 @@
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Eaton_2025`
-- **model family:** `sigmoid_emax`
+- **model family:** `effect_compartment`
 - **driver:** `conc_no_pk`
 - **tier:** population
 - **effect:** stimulation/unknown

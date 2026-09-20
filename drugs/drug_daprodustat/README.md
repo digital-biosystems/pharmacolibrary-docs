@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;daprodustat&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daprodustat_Mahar2024_adults_with_chronic_kidney_disease_and&quot;,&quot;label&quot;:&quot;Mahar_2024_adults with chronic kidney disease and anemia&quot;,&quot;href&quot;:&quot;drugs/drug_daprodustat/Daprodustat_Mahar2024_adults_with_chronic_kidney_disease_and.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daprodustat_Mahar2024_reference&quot;,&quot;label&quot;:&quot;Mahar_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_daprodustat/Daprodustat_Mahar2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # daprodustat
 
@@ -23,13 +23,13 @@ of anemia. It is also not indicated in patients not on dialysis.[L44958]
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 13:32 | 1:25 | 0/0/0 | 1/0/0 | 0/0/0 | 35,187/567 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/0 | 2/0 | 0 |
+| 2026-09-19 00:49 | 2:22 | 1/0/0 | 1/0/0 | 0/0/0 | 95,953/2,358 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Mahar_2024_adults with chronic kidney disease and anemia](drugs/drug_daprodustat/Daprodustat_Mahar2024_adults_with_chronic_kidney_disease_and.md) | Mahar KM et al., Integrated Population Pharmacokinetics…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01417-9](https://doi.org/10.1007/s40262-024-01417-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Mahar_2024_reference](drugs/drug_daprodustat/Daprodustat_Mahar2024_reference.md) | Mahar KM et al., Integrated Population Pharmacokinetics…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01417-9](https://doi.org/10.1007/s40262-024-01417-9) |
 
 ## Pharmacodynamics (PD)
 
@@ -41,7 +41,7 @@ of anemia. It is also not indicated in patients not on dialysis.[L44958]
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -53,15 +53,15 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Mahar_2024.pdf` | Mahar KM et al., Integrated Population Pharmacokinetics…, Clinical pharmacokinetics (2024) | popPK | 10 | [10.1007/s40262-024-01417-9](https://doi.org/10.1007/s40262-024-01417-9) | [39259485](https://pubmed.ncbi.nlm.nih.gov/39259485) | The paper is a population pharmacokinetic study of daprodustat that explicitly reports quantitative parameters such as oral clearance (24.6 L/h) and volume of distribution (26.9 L) in the text. |
 | `Janssens_2021.pdf` | Janssens LK et al., Sensing an Oxygen Sensor: Development a…, Analytical chemistry (2021) | pd | 4 | [10.1021/acs.analchem.1c02923](https://doi.org/10.1021/acs.analchem.1c02923) | [34677954](https://www.ncbi.nlm.nih.gov/pubmed/34677954) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-08T19:29:34.798059+00:00</sub>
+<sub>queue written 2026-09-19T00:47:08.582465+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bailey_2019 | irrelevant | 2 | 0 | The study is a dose-ranging efficacy trial that mentions PK summaries but does not report quantitative PK parameters (CL, V, t1/2) in the provided text, which focuses on hemoglobin response and dose conversion. |
+| popPK | Bailey_2019 | relevant | 4 | 8 | The paper reports standard non-compartmental PK parameters (Cmax, AUC, t1/2) for daprodustat in Table S5, but lacks compartmental model parameters (CL, V, Q) required for population PK extraction. |
 | popPK | Janssens_2021 | irrelevant | 0 | 0 | The paper describes an in-vitro mechanistic assay for HIF heterodimerization and reports potency (EC50) data, not pharmacokinetic disposition parameters. |
-| popPK | Mahar_2026 | irrelevant | 2 | 0 | The paper is a review/tutorial on model-informed drug development that discusses PopPK qualitatively but does not report specific quantitative PK parameter values (CL, V, Q, ka) for daprodustat in the provided text. |
+| popPK | Mahar_2026 | relevant | 8 | 2 | The paper describes a population PK model for daprodustat and reports specific covariate effects (e.g., 42% reduction in clearance with clopidogrel), but the primary numeric parameter estimates (CL, V, Q, ka) are not explicitly listed in the provided text. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_daprodustat`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

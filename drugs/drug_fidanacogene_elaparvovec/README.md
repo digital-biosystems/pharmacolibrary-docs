@@ -25,7 +25,7 @@ antibodies to variant AAV serotype Rh74. [L52845]
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 11:59 | 5:12 | 0/1/0 | 0/1/0 | 0/0/0 | 83,696/5,855 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/1 | 2/0 | 1 |
+| 2026-09-18 22:19 | 1:17 | 0/1/0 | 0/1/0 | 0/0/0 | 52,900/624 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 1 |
 
 ## popPK records
 

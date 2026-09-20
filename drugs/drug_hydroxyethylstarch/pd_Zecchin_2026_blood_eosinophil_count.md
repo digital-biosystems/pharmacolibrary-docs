@@ -30,7 +30,7 @@ Zecchin C; Schalkwijk S; Pouliquen IJ; Berges A; Bird N; Follows R; et al. et al
 | BEOS2 on I max — Theta | `Q323` · not captured | -0.380 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row6:col1 |
 | BEOS2 on I max — SE | `Q323` · not captured | 0.0339 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row6:col2 |
 | BEOS2 on I max — %RSEa | `Q323` · not captured | 8.92 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row6:col3 |
-| BPV I max — SE | `Q32` · not captured | 0.0866 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row15:col2 |
+| BPV I max — Theta | `Q323` · not captured | 0.294 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row15:col1 |
 | BPV I max — Parameter estimate (95% CI)b | `Q323` · not captured | 58.5 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row15:col4 |
 | Residual error — Theta | `Q315` · not captured | 0.350 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row17:col1 |
 | Residual error — SE | `Q315` · not captured | 0.0203 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row17:col2 |

@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 06:45 | 5:16 | 0/0/0 | 0/0/0 | 0/0/0 | 1,573/12,740 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-18 14:56 | 0:47 | 0/0/0 | 0/0/0 | 0/0/0 | 2,101/226 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -38,13 +38,13 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Liu_2024.pdf` | Liu Z et al., General hapten skeleton motivated duple…, Food chemistry (2024) | pd | 4 | [10.1016/j.foodchem.2024.139999](https://doi.org/10.1016/j.foodchem.2024.139999) | [38870811](https://www.ncbi.nlm.nih.gov/pubmed/38870811) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-11T06:45:11.048500+00:00</sub>
+<sub>queue written 2026-09-18T14:56:10.935224+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Liu_2024 | irrelevant | 0 | 0 | The paper describes an immunoassay for detecting bisoxatin adulterants in food, which is an analytical/diagnostic study, not a pharmacokinetic study. |
+| popPK | Liu_2024 | irrelevant | 0 | 0 | no_text gate: only 105 chars of text extracted (&lt; 400) |
 | PD | Liu_2024 | not_relevant | 0 | 0 | The paper describes a duplex immunoassay for detecting bisoxatin adulterants in food, which is an analytical chemistry method, not a pharmacodynamic or exposure-response study. |
 
 ---

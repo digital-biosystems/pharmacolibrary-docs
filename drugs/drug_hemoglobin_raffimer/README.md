@@ -11,7 +11,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-07 14:10 | 0:54 | 0/0/0 | 0/0/0 | 0/0/0 | 3,403/425 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
+| 2026-09-19 07:11 | 0:42 | 0/0/0 | 0/0/0 | 0/0/0 | 5,752/427 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
@@ -32,7 +32,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Wicks_2003.pdf` | Wicks D et al., The intravascular persistence and methe…, Artificial cells, blood sub… (2003) | popPK | 9 | [10.1081/bio-120018000](https://doi.org/10.1081/bio-120018000) | [12602813](https://pubmed.ncbi.nlm.nih.gov/12602813) | The study reports quantitative pharmacokinetic parameters (half-life and volume of distribution) for hemoglobin raffimer in dogs, with all numeric values explicitly present in the text. |
 
-<sub>queue written 2026-09-07T14:10:40.697979+00:00</sub>
+<sub>queue written 2026-09-19T07:11:47.271880+00:00</sub>
 
 ## Screened and excluded
 

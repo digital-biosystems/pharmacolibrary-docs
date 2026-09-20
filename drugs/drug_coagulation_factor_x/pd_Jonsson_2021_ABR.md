@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# bleeding count — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# bleeding count — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Jonsson_2021`
 - **model family:** `emax`

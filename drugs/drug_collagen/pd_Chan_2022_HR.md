@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# heart rate — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# heart rate — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Chan_2022`
 - **model family:** `sigmoid_emax`

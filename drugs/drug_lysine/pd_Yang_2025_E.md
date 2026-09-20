@@ -15,26 +15,26 @@ Yang G; Wang Y; Zhao H; Zheng Q; Wang X; Jia L; Xin Q; Ma C; Zhang Y; Zheng S; K
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|
-| λ 0, 1/h — ROS1 positive model | `Q67` · not captured | 0.00851 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row2:col1 |
-| λ 0, 1/h — ROS1 positive model | `Q67` · not captured | 7.2 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row2:col2 |
-| λ 0, 1/h — ALK positive model | `Q67` · not captured | 0.006515 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row2:col3 |
-| λ 0, 1/h — ALK positive model | `Q67` · not captured | 8.4 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row2:col4 |
+| λ 0, 1/h — ROS1 positive model | `Q67` · not captured | 0.00851 | 1/h | not captured | llm (not captured) | cts70287-tbl-0001:row2:col1 |
+| λ 0, 1/h — ROS1 positive model | `Q67` · not captured | 7.2 | 1/h | not captured | llm (not captured) | cts70287-tbl-0001:row2:col2 |
+| λ 0, 1/h — ALK positive model | `Q67` · not captured | 0.006515 | 1/h | not captured | llm (not captured) | cts70287-tbl-0001:row2:col3 |
+| λ 0, 1/h — ALK positive model | `Q67` · not captured | 8.4 | 1/h | not captured | llm (not captured) | cts70287-tbl-0001:row2:col4 |
 | λ 1, mm3/h — ROS1 positive model | `Q67` · not captured | 4.45 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row3:col1 |
 | λ 1, mm3/h — ROS1 positive model | `Q67` · not captured | 2.1 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row3:col2 |
 | λ 1, mm3/h — ALK positive model | `Q67` · not captured | 3.17 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row3:col3 |
 | λ 1, mm3/h — ALK positive model | `Q67` · not captured | 2.9 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row3:col4 |
-| K max, 1/h — ROS1 positive model | `Q1` · not captured | 0.0739 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row4:col1 |
-| K max, 1/h — ROS1 positive model | `Q1` · not captured | 34 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row4:col2 |
-| K max, 1/h — ALK positive model | `Q1` · not captured | 0.092 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row4:col3 |
-| K max, 1/h — ALK positive model | `Q1` · not captured | 37.8 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row4:col4 |
+| K max, 1/h — ROS1 positive model | `Q1` · not captured | 0.0739 | 1/h | not captured | llm (not captured) | cts70287-tbl-0001:row4:col1 |
+| K max, 1/h — ROS1 positive model | `Q1` · not captured | 34 | 1/h | not captured | llm (not captured) | cts70287-tbl-0001:row4:col2 |
+| K max, 1/h — ALK positive model | `Q1` · not captured | 0.092 | 1/h | not captured | llm (not captured) | cts70287-tbl-0001:row4:col3 |
+| K max, 1/h — ALK positive model | `Q1` · not captured | 37.8 | 1/h | not captured | llm (not captured) | cts70287-tbl-0001:row4:col4 |
 | KC50, ng/mL — ROS1 positive model | `Q322` · not captured | 1221 | ng/mL | not captured | llm (not captured) | cts70287-tbl-0001:row5:col1 |
 | KC50, ng/mL — ROS1 positive model | `Q322` · not captured | 44 | ng/mL | not captured | llm (not captured) | cts70287-tbl-0001:row5:col2 |
 | KC50, ng/mL — ALK positive model | `Q322` · not captured | 1674 | ng/mL | not captured | llm (not captured) | cts70287-tbl-0001:row5:col3 |
 | KC50, ng/mL — ALK positive model | `Q322` · not captured | 42.7 | ng/mL | not captured | llm (not captured) | cts70287-tbl-0001:row5:col4 |
-| K 1, 1/h — ROS1 positive model | `Q326` · not captured | 0.168 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row6:col1 |
-| K 1, 1/h — ROS1 positive model | `Q326` · not captured | 52 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row6:col2 |
-| K 1, 1/h — ALK positive model | `Q302` · not captured | 0.0524 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row6:col3 |
-| K 1, 1/h — ALK positive model | `Q302` · not captured | 46.5 | not captured | not captured | llm (not captured) | cts70287-tbl-0001:row6:col4 |
+| K 1, 1/h — ROS1 positive model | `Q358` · not captured | 0.168 | 1/h | not captured | llm (not captured) | cts70287-tbl-0001:row6:col1 |
+| K 1, 1/h — ROS1 positive model | `Q358` · not captured | 52 | 1/h | not captured | llm (not captured) | cts70287-tbl-0001:row6:col2 |
+| K 1, 1/h — ALK positive model | `Q358` · not captured | 0.0524 | 1/h | not captured | llm (not captured) | cts70287-tbl-0001:row6:col3 |
+| K 1, 1/h — ALK positive model | `Q358` · not captured | 46.5 | 1/h | not captured | llm (not captured) | cts70287-tbl-0001:row6:col4 |
 | E0, mm3 — ROS1 positive model | `Q324` · not captured | 221 | not captured | not captured | llm_confirmed (not captured) | cts70287-tbl-0001:row7:col1 |
 | E0, mm3 — ROS1 positive model | `Q324` · not captured | 5.0 | not captured | not captured | llm_confirmed (not captured) | cts70287-tbl-0001:row7:col2 |
 | E0, mm3 — ALK positive model | `Q324` · not captured | 200 | not captured | not captured | llm_confirmed (not captured) | cts70287-tbl-0001:row7:col3 |

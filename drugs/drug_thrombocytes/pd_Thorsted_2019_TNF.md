@@ -28,6 +28,7 @@ Thorsted A; Bouchene S; Tano E; Castegren M; Lipcsey M; Sjölin J; Karlsson MO; 
 | Baseline TNF-α (BioSource, study C+F)b — (unit) | `Q324` · not captured | 3.06 | unit | not captured | llm_confirmed (not captured) | pone.0211981.t002:row11:col1 |
 | Baseline TNF-α (BioSource, study D)b — (unit) | `Q324` · not captured | 68.2 | unit | not captured | llm_confirmed (not captured) | pone.0211981.t002:row12:col1 |
 | Emax — Estimates (RSE%) | `Q320` · not captured | 2540 | RSE% | not captured | exact (not captured) | pone.0211981.t002:row13:col3 |
+| γ — Estimates (RSE%) | `Q89` · not captured | 2.10 | RSE% | not captured | llm (not captured) | pone.0211981.t002:row15:col3 |
 | MTTEC50 — Estimates (RSE%) | `Q321` · not captured | 6.33 | RSE% | not captured | llm (not captured) | pone.0211981.t002:row16:col3 |
 | Tmax — Estimates (RSE%) | `Q56` · not captured | 45100 | RSE% | not captured | exact (not captured) | pone.0211981.t002:row17:col3 |
 | TC50 — Estimates (RSE%) | `Q321` · not captured | 29300 | RSE% | not captured | llm (not captured) | pone.0211981.t002:row18:col3 |

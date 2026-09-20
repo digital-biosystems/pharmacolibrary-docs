@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Hypersalinity-induced hemolysis protection — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# Hypersalinity-induced hemolysis inhibition — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Anwar_2022`
 - **model family:** `unknown`

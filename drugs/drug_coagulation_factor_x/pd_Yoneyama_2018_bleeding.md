@@ -17,10 +17,11 @@ Yoneyama K; Schmitt C; Kotani N; Levy GG; Kasai R; Iida S; Shima M; Kawanishi T 
 |---|---|---|---|---|---|---|
 | CL/F b — Estimate | `Q358` · not captured | 0.222 | not captured | not captured | llm_corrected (not captured) | Tab2:row2:col2 |
 | CL/F b — 95% CIa | `Q27` · not captured | 0.206 | not captured | not captured | llm_confirmed (not captured) | Tab2:row2:col3 |
+| V d/F b — Estimate | `Q76` · not captured | 10.2 | not captured | not captured | llm (not captured) | Tab2:row3:col2 |
 | V d/F b — 95% CIa | `Q76` · not captured | 9.61 | not captured | not captured | llm (not captured) | Tab2:row3:col3 |
 | t ½,abs — Estimate | `Q57` · not captured | 1.56 | not captured | not captured | llm (not captured) | Tab2:row4:col2 |
 | t ½,abs — 95% CIa | `Q57` · not captured | 1.30 | not captured | not captured | llm (not captured) | Tab2:row4:col3 |
-| Variance for CL/F — Estimate | `Q312` · not captured | 0.0737 | not captured | not captured | llm_corrected (not captured) | Tab2:row13:col2 |
+| Variance for CL/F — Estimate | `Q315` · not captured | 0.0737 | not captured | not captured | llm_corrected (not captured) | Tab2:row13:col2 |
 | Variance for CL/F — 95% CIa | `Q312` · not captured | 0.0449 | not captured | not captured | llm_corrected (not captured) | Tab2:row13:col3 |
 | Variance for CL/F — Shrinkage (%) | `Q318` · not captured | 3.6 | not captured | not captured | llm_corrected (not captured) | Tab2:row13:col4 |
 | Variance for V d/F — Shrinkage (%) | `Q318` · not captured | 4.2 | not captured | not captured | llm (not captured) | Tab2:row14:col4 |

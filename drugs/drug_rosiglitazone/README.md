@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;rosiglitazone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rosiglitazone_Gao2012_estimate_cv&quot;,&quot;label&quot;:&quot;Gao_2012_estimate_cv&quot;,&quot;href&quot;:&quot;drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_estimate_cv.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosiglitazone_Gao2012_estimate_cv&quot;,&quot;label&quot;:&quot;Gao_2012_estimate_cv&quot;,&quot;href&quot;:&quot;drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_estimate_cv.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosiglitazone_Gao2012_definition&quot;,&quot;label&quot;:&quot;Gao_2012_definition&quot;,&quot;href&quot;:&quot;drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_definition.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosiglitazone_Gao2012_definition&quot;,&quot;label&quot;:&quot;Gao_2012_definition&quot;,&quot;href&quot;:&quot;drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_definition.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rosiglitazone_Gao2012_estimate_cv&quot;,&quot;label&quot;:&quot;Gao_2012_estimate_cv&quot;,&quot;href&quot;:&quot;drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_estimate_cv.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosiglitazone_Gao2012_estimate_cv&quot;,&quot;label&quot;:&quot;Gao_2012_estimate_cv&quot;,&quot;href&quot;:&quot;drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_estimate_cv.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosiglitazone_Kirchheiner2006_reference&quot;,&quot;label&quot;:&quot;Kirchheiner_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_rosiglitazone/Rosiglitazone_Kirchheiner2006_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosiglitazone_Gao2012_definition&quot;,&quot;label&quot;:&quot;Gao_2012_definition&quot;,&quot;href&quot;:&quot;drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_definition.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rosiglitazone_Gao2012_definition&quot;,&quot;label&quot;:&quot;Gao_2012_definition&quot;,&quot;href&quot;:&quot;drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_definition.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # rosiglitazone
 
@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-16 00:04 | 5:39 | 1/1/0 | 0/0/0 | 0/0/0 | 48,667/13,206 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-09-18 19:15 | 0:50 | 1/1/1 | 0/0/0 | 0/0/0 | 22,406/1,570 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -26,6 +26,7 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Gao_2012_estimate_cv](drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_estimate_cv.md) | Gao W et al., Modeling disease progression and rosigl…, The Journal of pharmacology… (2012) | [10.1124/jpet.112.192419](https://doi.org/10.1124/jpet.112.192419) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Gao_2012_estimate_cv](drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_estimate_cv.md) | Gao W et al., Modeling disease progression and rosigl…, The Journal of pharmacology… (2012) | [10.1124/jpet.112.192419](https://doi.org/10.1124/jpet.112.192419) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Kirchheiner_2006_reference](drugs/drug_rosiglitazone/Rosiglitazone_Kirchheiner2006_reference.md) | Kirchheiner J et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (2006) | [10.1016/j.clpt.2006.09.008](https://doi.org/10.1016/j.clpt.2006.09.008) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'definition' is a table statistic/structure column, not a study po…</sub><br><sub>route_to: `human_review`</sub> | [Gao_2012_definition](drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_definition.md) | Gao W et al., Modeling disease progression and rosigl…, The Journal of pharmacology… (2012) | [10.1124/jpet.112.192419](https://doi.org/10.1124/jpet.112.192419) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'definition' is a table statistic/structure column, not a study po…</sub><br><sub>route_to: `human_review`</sub> | [Gao_2012_definition](drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_definition.md) | Gao W et al., Modeling disease progression and rosigl…, The Journal of pharmacology… (2012) | [10.1124/jpet.112.192419](https://doi.org/10.1124/jpet.112.192419) |
 
@@ -33,7 +34,7 @@
 
 - **PubMed hits:** 63 matched, 17 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs_review 2  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 3  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -45,7 +46,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Kirchheiner_2006.pdf` | Kirchheiner J et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (2006) | popPK | 10 | [10.1016/j.clpt.2006.09.008](https://doi.org/10.1016/j.clpt.2006.09.008) | [17178266](https://pubmed.ncbi.nlm.nih.gov/17178266) | The study reports quantitative pharmacokinetic parameters (clearance, half-life) for rosiglitazone in humans, with specific numeric values provided in the text. |
 | `Kulkarni_2016.pdf` | Kulkarni NM et al., Altered pharmacokinetics of rosiglitazo…, Drug metabolism and persona… (2016) | popPK | 8 | [10.1515/dmpt-2016-0008](https://doi.org/10.1515/dmpt-2016-0008) | [27522101](https://pubmed.ncbi.nlm.nih.gov/27522101) | The study reports quantitative PK parameters (AUC, clearance, half-life) for rosiglitazone in mice, but the specific numeric values are not present in the provided abstract text. |
 
-<sub>queue written 2026-09-15T23:58:51.508555+00:00</sub>
+<sub>queue written 2026-09-18T19:15:19.093997+00:00</sub>
 
 ## Screened and excluded
 

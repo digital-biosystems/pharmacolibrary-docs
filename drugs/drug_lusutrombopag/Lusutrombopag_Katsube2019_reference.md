@@ -1,23 +1,24 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;lusutrombopag&quot;,&quot;href&quot;:&quot;drugs/drug_lusutrombopag/&quot;},{&quot;label&quot;:&quot;Katsube_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lusutrombopag_Katsube2019_reference&quot;,&quot;label&quot;:&quot;Katsube_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lusutrombopag/Lusutrombopag_Katsube2019_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lusutrombopag_Katsube2019_reference&quot;,&quot;label&quot;:&quot;Katsube_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lusutrombopag/Lusutrombopag_Katsube2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lusutrombopag — `Lusutrombopag_Katsube2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 4 scholar param(s) emitted or defaulted — got 3 covered; T6_deviations — got invented_absorption: not acceptable
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `Fab`, `Km`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** a structural parameter has the wrong dimension.
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
-3. Advisory only — the base model still replicates.
-4. Check the record's covariate_definitions in _interpretv2.yaml.
-5. Re-run the engineer for this drug if the covariate curves are wanted.
-6. Open the emitted .mo and compare its base class and parameters with the record.
+1. Not a curation fix — scholar limitation.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -26,25 +27,23 @@ Katsube T; Shimizu R; Fukuhara T; Kano T; Wajima T et al. (2019). Clinical pharm
   ·  DOI: [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4)
 
 ## Model component
-<dbs-pgx drug="lusutrombopag" model-id="Lusutrombopag_Katsube2019_reference" status="model_quarantined" stale="false" population="healthy subjects and patients with chronic liver disease" measured-compound="lusutrombopag" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="lusutrombopag" model-id="Lusutrombopag_Katsube2019_reference" status="rejected" stale="false" population="healthy subjects and patients with chronic liver disease" measured-compound="lusutrombopag" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, Q/F, Q3/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Typical CL/F | `Q27` · CL/F | 0.874 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row3:col1 | — | not captured |
-| effect_of_wt | `Q900` · effect_of_wt | 1.00 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row4:col1, Tab2:row10:col1, Tab2:row15:col1 | — | not captured |
-| effect_of_sex | `Q900` · effect_of_sex | 0.874 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row5:col1 | — | not captured |
-| effect_of_ethnicity | `Q900` · effect_of_ethnicity | 0.868 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row6:col1 | — | not captured |
-| Q3/F [L/h] | `Q309` · Q3/F | 0.872 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row12:col1 | — | not captured |
-| Typical V3/F | `Q78` · V3/F | 9.04 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row14:col1 | — | not captured |
-| Q4/F [L/h] | `Q69` · Q/F | 0.0265 | not captured | not captured | not captured | not captured | llm (0.6) | Tab2:row16:col1 | — | not captured |
-| F1 of solution in the fasted state | `Q40` · Fab | 1.00 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row24:col1 | — | not captured |
-| KM [/h] | `Q1` · Km | 0.0320 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row40:col1 | — | not captured |
-| KL [/h] | `Q47` · kel | 0.00863 | not captured | not captured | not captured | not captured | llm (0.6) | Tab2:row41:col1 | — | not captured |
+| Typical CL/F | `Q27` · CL/F | 0.874 | L/h | 2.427777777777778e-07 | [l] / [h] | 3.9 | llm_confirmed (0.6) | Tab2:row3:col1 | — | not captured |
+| Q3/F [L/h] | `Q309` · Q3/F | 0.872 | L/h | 2.4222222222222224e-07 | [l] / [h] | 8.0 | llm_confirmed (0.6) | Tab2:row12:col1 | — | not captured |
+| Typical V3/F | `Q78` · V3/F | 9.04 | L | 0.00904 | [l] | 6.6 | llm_confirmed (0.6) | Tab2:row14:col1 | — | not captured |
+| Q4/F [L/h] | `Q69` · Q/F | 0.0265 | L/h | 7.361111111111111e-09 | [l] / [h] | 9.7 | llm (0.6) | Tab2:row16:col1 | — | not captured |
+| F1 of solution in the fasted state | `Q40` · Fab | 1.00 | h | not captured | [h] | not captured | llm_confirmed (0.6) | Tab2:row24:col1 | — | not captured |
+| KM [/h] | `Q1` · Km | 0.0320 | /h | not captured | [1] / [h] | 5.3 | llm_confirmed (0.6) | Tab2:row40:col1 | — | not captured |
+| KL [/h] | `Q47` · kel | 0.00863 | /h | 2.3972222222222225e-06 | [1] / [h] | 10.2 | llm (0.6) | Tab2:row41:col1 | — | not captured |
+| KA Solution in the fed state | `Q49` · kabs | 0.166 | /h | 4.6111111111111115e-05 | 1/h | not captured | review_gapfill (0.7) | Katsube_2019:review | — | not captured |
 | Lag time Solution in the fed state | `Q83` · tlag | 0.568 | h | 2044.7999999999997 | h | not captured | review_gapfill (0.7) | Katsube_2019:review | — | not captured |
 
 <details class="legend">
@@ -60,10 +59,11 @@ Katsube T; Shimizu R; Fukuhara T; Kano T; Wajima T et al. (2019). Clinical pharm
 ## Departures & gaps
 
 **Interpretation flags:**
-- covariate level 'Effect of WT' → Q900:effect_of_wt = 1.00 (linear_fractional on Q27)
-- covariate level 'Effect of sex' → Q900:effect_of_sex = 0.874 (linear_fractional on Q27)
-- covariate level 'Effect of ethnicity' → Q900:effect_of_ethnicity = 0.868 (linear_fractional on Q27)
+- dropped unlinked row (NIL): 'Effect of WT' — extend the ontology if this is a real PK parameter (source ['Tab2:row4:col1', 'Tab2:row10:col1', 'Tab2:row15:col1'])
+- dropped unlinked row (NIL): 'Effect of sex' — extend the ontology if this is a real PK parameter (source ['Tab2:row5:col1'])
+- dropped unlinked row (NIL): 'Effect of ethnicity' — extend the ontology if this is a real PK parameter (source ['Tab2:row6:col1'])
 - dropped unlinked row (NIL): 'Effect of subject population' — extend the ontology if this is a real PK parameter (source ['Tab2:row7:col1', 'Tab2:row11:col1'])
+- unit_dimension_mismatch: 'Typical V2/F' → Q82 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
 - dropped duplicate Q82 ('Typical V2/F', value '12.2') — already have one for this compound
 - dropped unlinked row (NIL): 'V4/F [L]' — extend the ontology if this is a real PK parameter (source ['Tab2:row17:col1'])
 - dropped unlinked row (NIL): 'Solution in the fed state' — extend the ontology if this is a real PK parameter (source ['Tab2:row19:col1', 'Tab2:row22:col1', 'Tab2:row26:col1'])
@@ -74,6 +74,7 @@ Katsube T; Shimizu R; Fukuhara T; Kano T; Wajima T et al. (2019). Clinical pharm
 - dropped unlinked row (NIL): '3.0 mg (4 × 0.25 mg tablets and 1 × 2 mg tablet) in the fed state' — extend the ontology if this is a real PK parameter (source ['Tab2:row30:col1'])
 - dropped unlinked row (NIL): '1 mg tablet in the fed state' — extend the ontology if this is a real PK parameter (source ['Tab2:row31:col1'])
 - dropped unlinked row (NIL): '3 mg tablet in the fed state' — extend the ontology if this is a real PK parameter (source ['Tab2:row32:col1'])
+- unit_dimension_mismatch: 'KM [/h]' → Q1 (unit '1 / [time]' vs ontology '[mass] / [length] ** 3') — route to review
 - dropped unlinked row (NIL): 'Typical SLOP' — extend the ontology if this is a real PK parameter (source ['Tab2:row43:col1'])
 - dropped unlinked row (NIL): 'Effect of CPS ≥ 9' — extend the ontology if this is a real PK parameter (source ['Tab2:row44:col1'])
 - dropped unlinked row (NIL): 'PLT0 [×104/µL]' — extend the ontology if this is a real PK parameter (source ['Tab2:row45:col1'])
@@ -82,7 +83,10 @@ Katsube T; Shimizu R; Fukuhara T; Kano T; Wajima T et al. (2019). Clinical pharm
 - NIL: refused to back-fill base 'V3/F' from footnote/prose loose number None (source ['Tab2:footnote']); the table cell was unparseable — needs review
 - NIL: refused to back-fill base 'slope' from footnote/prose loose number None (source ['Tab2:footnote']); the table cell was unparseable — needs review
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lusutrombopag
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
+- status held at route_to_review — not promoted
+- gap-filled Q49 (kabs) from Katsube_2019's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Katsube_2019's review values (primary lacked it)
 
 **Extraction notes:**
@@ -116,22 +120,21 @@ Katsube T; Shimizu R; Fukuhara T; Kano T; Wajima T et al. (2019). Clinical pharm
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q1 | fail | 1 / [time] | /h | not captured | not captured | ['Tab2:row40:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col1'] |
+| C5_dimension_Q309 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row12:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row41:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Katsube_2019:review'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row16:col1'] |
+| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row14:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row8:col1', 'Tab2:row8:col2'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Katsube_2019:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['Q/F'] |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.874 L/h | not captured | not captured | ['Tab2:row3:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -141,8 +144,6 @@ Katsube T; Shimizu R; Fukuhara T; Kano T; Wajima T et al. (2019). Clinical pharm
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_lusutrombopag/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Katsube_2019` / `Katsube_2019::reference`)
-- model: `../../../knowledgebase/drugs/drug_lusutrombopag/models/modelica/_needs_review/Lusutrombopag_Katsube2019_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_lusutrombopag/models/modelica/_needs_review/Lusutrombopag_Katsube2019_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

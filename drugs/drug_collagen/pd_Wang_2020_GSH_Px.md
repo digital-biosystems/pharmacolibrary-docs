@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Glutathione peroxidase — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# Glutathione peroxidase — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Wang_2020`
 - **model family:** `unknown`

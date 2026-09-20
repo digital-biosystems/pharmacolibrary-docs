@@ -15,6 +15,8 @@ Redhi D; Mulubwa M; Mmonwa MM; Njoroge M; Krugmann L; Chibale K et al. (2026). C
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|
+| K kill (1/h) — Estimate | `Q47` · not captured | 0.058 | not captured | not captured | llm (not captured) | cpt70303-tbl-0001:row3:col1 |
+| K kill (1/h) — 2.5th percentile | `Q337` · not captured | 0.048 | not captured | not captured | llm (not captured) | cpt70303-tbl-0001:row3:col3 |
 | Whole blood EC50,blood (ng/mL) — Estimate | `Q321` · not captured | 13.24 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row4:col1 |
 | Whole blood EC50,blood (ng/mL) — R.S.E. (%) | `Q321` · not captured | 43.7 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row4:col2 |
 | Whole blood EC50,blood (ng/mL) — 2.5th percentile | `Q321` · not captured | 6.16 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row4:col3 |

@@ -37,7 +37,7 @@ Liu X; Chen L; Ju G; Li C; Liu B; Fei Y; et al. et al. (2025). Pharmaceuticals (
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F (L/h) | `Q27` · CL/F | 7.85 | L/h | 2.1805555555555555e-06 | [l] / [h] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row2:col1 | — | not captured |
 | Vd/F (L) | `Q76` · V/F | 199 | L | 0.199 | [l] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row3:col1 | — | not captured |
-| ka (/h) | `Q49` · kabs | 0.582 | /h | 0.00016166666666666665 | 1/h | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row4:col1 | — | not captured |
+| ka (/h) | `Q49` · kabs | 0.582 | /h | 0.00016166666666666665 | [1] / [h] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row4:col1 | — | not captured |
 | MTT (h) | `Q81` · MTT | 1.33 | h | not captured | [h] | not captured | exact (1.0) | pharmaceuticals-18-00903-t003:row5:col1 | — | not captured |
 
 <details class="legend">
@@ -48,7 +48,6 @@ Liu X; Chen L; Ju G; Li C; Liu B; Fei Y; et al. et al. (2025). Pharmaceuticals (
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: '/h' (kabs)
 - dropped unlinked row (NIL): 'COV1 *' — extend the ontology if this is a real PK parameter (source ['pharmaceuticals-18-00903-t003:row6:col1'])
 - dropped unlinked row (NIL): 'COV2 *' — extend the ontology if this is a real PK parameter (source ['pharmaceuticals-18-00903-t003:row7:col1'])
 - dropped unlinked row (NIL): 'COV3 *' — extend the ontology if this is a real PK parameter (source ['pharmaceuticals-18-00903-t003:row8:col1'])
@@ -58,12 +57,9 @@ Liu X; Chen L; Ju G; Li C; Liu B; Fei Y; et al. et al. (2025). Pharmaceuticals (
 - dropped duplicate Q81 ('MTT', value '0.131') — already have one for this compound
 - dropped duplicate Q49 ('OCC [KA]', value '0.913') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=avatrombopag
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
-- unit re-normalised: kabs '/h' now converts (value unchanged)
 
 **Extraction notes:**
 - unparsed cell pharmaceuticals-18-00903-t003:row2:col2 = '14%'
@@ -102,8 +98,10 @@ Liu X; Chen L; Ju G; Li C; Liu B; Fei Y; et al. et al. (2025). Pharmaceuticals (
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | fail | 25.68 | 17.572 | 0.6843 | 0.25 | reported t½β |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceuticals-18-00903-t003:row2:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceuticals-18-00903-t003:row4:col1'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceuticals-18-00903-t003:row3:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |

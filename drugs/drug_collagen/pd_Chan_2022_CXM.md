@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# collagen type X marker — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# collagen type X marker — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Chan_2022`
 - **model family:** `sigmoid_emax`

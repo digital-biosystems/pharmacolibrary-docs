@@ -11,7 +11,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-07 11:18 | 3:48 | 0/0/0 | 2/1/0 | 0/0/0 | 58,267/1,372 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 3/2 | 0 |
+| 2026-09-19 07:00 | 2:28 | 0/0/0 | 2/1/0 | 0/0/0 | 112,071/1,592 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 3/2 | 0 |
 
 ## popPK records
 
@@ -44,10 +44,10 @@ _not available_
 |---|---|---|---|---|---|
 | popPK | Akbar_2026 | irrelevant | 0 | 0 | The study focuses on the synthesis and in-vitro antibacterial efficacy of ethacridine-loaded nanocarriers, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Galli_2025 | irrelevant | 0 | 0 | The paper is a high-throughput screening study for anthelmintic activity where ethacridine is only one of many screened compounds, and it does not report any quantitative pharmacokinetic parameters (CL, V, etc.) for ethacridine. |
-| PD | Galli_2025 | not_relevant | 0 | 0 | The paper reports EC50 values for flavonoids and other compounds, but does not contain any data or analysis for ethacridine. |
+| PD | Galli_2025 | not_relevant | 0 | 0 | The paper reports EC50 values for flavonoids and other compounds, but does not contain any data or analysis for Ethacridine. |
 | popPK | Kilgore_2024 | irrelevant | 0 | 0 | The paper is a mechanistic study on biomolecular condensates and small molecule partitioning, not a pharmacokinetic study, and ethacridine is only mentioned as a probe for subcellular localization without any PK parameters. |
-| PD | Kilgore_2024 | not_relevant | 0 | 0 | The paper focuses on the physical chemistry of biomolecular condensates and small molecule partitioning (distribution), not on pharmacodynamic exposure-response or dose-effect relationships for ethacridine. |
-| popPK | Li_2020 | irrelevant | 0 | 0 | The paper is an in-vitro virology study investigating the antiviral mechanism of ethacridine against SARS-CoV-2, not a pharmacokinetic study, and reports no disposition parameters. |
+| PD | Kilgore_2024 | not_relevant | 0 | 0 | The paper focuses on the physicochemical partitioning of small molecules into biomolecular condensates and does not report pharmacodynamic (exposure-response) or dose-response relationships for Ethacridine. |
+| popPK | Li_2020 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral study of ethacridine against SARS-CoV-2 and does not report any pharmacokinetic parameters (CL, V, ka, etc.). |
 | popPK | Li_2021 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral mechanism study reporting EC50/IC50 values, not a pharmacokinetic study with disposition parameters like clearance or volume. |
 | popPK | Rising_1978 | relevant | 8 | 4 | The study reports quantitative PK parameters (half-life ~15h, absorption &lt;0.1%) for ethacridine in dogs, but lacks explicit clearance or volume values. |
 | popPK | Wachsman_1996 | irrelevant | 0 | 0 | The paper is a review on oxidative damage and apoptosis that mentions ethacridine only as a mechanistic inhibitor of poly ADP-ribose glycohydrolase, with no pharmacokinetic data. |

@@ -21,7 +21,7 @@ From a pharmacological perspective, Cannabis' diverse receptor profile explains 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 02:58 | 7:29 | 0/0/0 | 0/0/0 | 0/0/0 | 88,336/2,531 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 0/9 | 9/0 | 0 |
+| 2026-09-18 13:09 | 5:58 | 0/0/0 | 0/0/0 | 0/0/0 | 188,397/3,216 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 0/9 | 9/0 | 0 |
 
 ## popPK records
 
@@ -43,7 +43,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Luba_2024.pdf` | Luba R et al., Evaluating the Abuse Potential of Lenab…, The Journal of pharmacology… (2024) | pd | 5 | [10.1124/jpet.124.002129](https://doi.org/10.1124/jpet.124.002129) | [38936978](https://www.ncbi.nlm.nih.gov/pubmed/38936978) | metadata signals extractable PD data (Emax) |
 | `Pertwee_1996.pdf` | Pertwee RG et al., Evidence for the presence of cannabinoi…, British journal of pharmaco… (1996) | pd | 4 | [10.1111/j.1476-5381.1996.tb15643.x](https://doi.org/10.1111/j.1476-5381.1996.tb15643.x) | [8864542](https://www.ncbi.nlm.nih.gov/pubmed/8864542) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-11T02:57:50.018935+00:00</sub>
+<sub>queue written 2026-09-18T13:08:21.976117+00:00</sub>
 
 ## Screened and excluded
 
@@ -66,7 +66,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Issa_2014 | not_relevant | 3 | 2 | The paper studies dronabinol, not nabilone, and only provides qualitative comparisons of peak effects without deriving numeric PD parameters like Emax or EC50. |
 | popPK | Klumpers_2012 | irrelevant | 0 | 0 | The study investigates a THC formulation (Namisol) and only mentions nabilone as a comparator in the conclusion without providing any quantitative PK parameters for nabilone. |
 | PD | Klumpers_2012 | not_relevant | 2 | 1 | The study reports PK parameters and qualitative/summary PD effects (mean changes in body sway, VAS, heart rate) but does not provide an exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50) or a concentration-effect curve. |
-| popPK | Luba_2024 | irrelevant | 0 | 0 | The paper focuses on the abuse potential of lenabasum, a different drug, and does not report pharmacokinetic parameters for nabilone. |
+| popPK | Luba_2024 | irrelevant | 0 | 0 | no_text gate: only 87 chars of text extracted (&lt; 400) |
 | PD | Luba_2024 | not_relevant | 0 | 0 | The paper evaluates the abuse potential of lenabasum, not nabilone, and does not report PD parameters for nabilone. |
 | popPK | McGilveray_2005 | irrelevant | 2 | 1 | The paper is a review that provides only a qualitative description and a rough half-life estimate for nabilone without reporting quantitative compartmental parameters (CL, V, Q) or population PK model values. |
 | PD | McGilveray_2005 | not_relevant | 2 | 0 | The text is a pharmacokinetic review that qualitatively mentions a PK/PD relationship for THC (proportional effect) and compares nabilone's side effects to THC, but it does not provide any numeric PD parameters (Emax, EC50, etc.) or extractable concentration-effect data for nabilone. |
@@ -74,7 +74,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Molinelli_2008 | not_relevant | 0 | 0 | The text is a legal and pharmacological commentary on Italian regulations regarding off-label use of cannabinoids, explicitly stating the absence of sufficient pharmacokinetic and pharmacodynamic knowledge, and contains no numeric PD parameters or exposure-response data. |
 | popPK | Nouh_2023 | irrelevant | 0 | 0 | The paper is a review of cannabinoids in multiple sclerosis and does not report quantitative pharmacokinetic parameters for nabilone. |
 | PD | Nouh_2023 | not_relevant | 1 | 0 | The paper is a critical review of cannabinoids in MS and does not report specific numeric pharmacodynamic parameters (e.g., Emax, EC50) or exposure-response curves for nabilone. |
-| popPK | Pertwee_1996 | irrelevant | 0 | 0 | The paper is a mechanistic study on cannabinoid receptors in mouse bladder tissue and does not report pharmacokinetic parameters for nabilone. |
+| popPK | Pertwee_1996 | irrelevant | 0 | 0 | no_text gate: only 79 chars of text extracted (&lt; 400) |
 | PD | Pertwee_1996 | not_relevant | 0 | 0 | The paper investigates the presence of CB1 receptors in mouse bladder tissue and does not report any pharmacodynamic or exposure-response data for nabilone. |
 | popPK | Ruthirakuhan_2019 | irrelevant | 0 | 0 | The paper is a study protocol for a clinical trial investigating the efficacy of nabilone for agitation in Alzheimer's disease, not a pharmacokinetic study, and it does not report quantitative disposition parameters. |
 | PD | Ruthirakuhan_2019 | not_relevant | 0 | 0 | The paper is a study protocol for a clinical trial and does not report any results, data, or pharmacodynamic parameters. |

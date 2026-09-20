@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# ABTS cation scavenging — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# ABTS cation scavenging — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Zhang_2019`
 - **model family:** `unknown`

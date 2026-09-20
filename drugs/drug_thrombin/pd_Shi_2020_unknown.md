@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# thrombin activity — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# human thrombin activity — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Shi_2020`
 - **model family:** `unknown`

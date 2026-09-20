@@ -16,7 +16,7 @@
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
-> **Dose compound ≠ measured compound:** dosed `fidanacogene elaparvovec`, measured `factor IX`.
+> **Dose compound ≠ measured compound:** dosed `fidanacogene_elaparvovec`, measured `factor IX`.
 
 ## Citation
 Wojciechowski J; Gaitonde P; Hughes JH; Ravva P et al. (2025). Clinical pharmacokinetics 64

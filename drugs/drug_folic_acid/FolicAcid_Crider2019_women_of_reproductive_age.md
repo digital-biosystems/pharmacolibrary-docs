@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03A&quot;,&quot;href&quot;:&quot;atc/B03A.md&quot;},{&quot;label&quot;:&quot;folic acid&quot;,&quot;href&quot;:&quot;drugs/drug_folic_acid/&quot;},{&quot;label&quot;:&quot;Crider_2019 \u00b7 women of reproductive age&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FolicAcid_Crider2019_women_of_reproductive_age&quot;,&quot;label&quot;:&quot;Crider_2019_women of reproductive age&quot;,&quot;href&quot;:&quot;drugs/drug_folic_acid/FolicAcid_Crider2019_women_of_reproductive_age.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;FolicAcid_Crider2019_women_of_reproductive_age&quot;,&quot;label&quot;:&quot;Crider_2019_women of reproductive age&quot;,&quot;href&quot;:&quot;drugs/drug_folic_acid/FolicAcid_Crider2019_women_of_reproductive_age.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # folic acid — `FolicAcid_Crider2019_women_of_reproductive_age`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 ### Reviewer guidance
 
@@ -16,17 +16,19 @@
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-11 08:46:53.708995+00:00) predates the upstream re-run (2026-09-19 00:57:10.849216+00:00). Current validate status: `not captured`.
+
 ## Citation
 Crider KS; Devine O; Qi YP; Yeung LF; Sekkarie A; Zaganjor I; et al. et al. (2019). Nutrients 11
   ·  DOI: [10.3390/nu11010071](https://doi.org/10.3390/nu11010071)
 
 ## Model component
-<dbs-pgx drug="folic acid" model-id="FolicAcid_Crider2019_women_of_reproductive_age" status="rejected" stale="false" population="women of reproductive age" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<dbs-pgx drug="folic acid" model-id="FolicAcid_Crider2019_women_of_reproductive_age" status="" stale="true" population="women of reproductive age" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
 **Parameterization:** not captured.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 _No resolved parameters._
 

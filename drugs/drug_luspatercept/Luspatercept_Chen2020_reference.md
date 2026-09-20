@@ -1,45 +1,36 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;luspatercept&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/&quot;},{&quot;label&quot;:&quot;Chen_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luspatercept_Chen2021_reference&quot;,&quot;label&quot;:&quot;Chen_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Luspatercept_Chen2020_reference&quot;,&quot;label&quot;:&quot;Chen_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luspatercept_Chen2020_reference&quot;,&quot;label&quot;:&quot;Chen_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Luspatercept_Chen2021_reference&quot;,&quot;label&quot;:&quot;Chen_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # luspatercept — `Luspatercept_Chen2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `CL/F`, `V/F`, `t1/2ka`</sub>
-
-> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
-
-**What is wrong:** a structural parameter has the wrong dimension.
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Not a curation fix — scholar limitation.
-2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-3. A misread unit in transcribe is the usual cause.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
 Chen N; Kassir N; Laadem A; Maxwell SE; Sriraman P; Giuseppi AC; et al. et al. (2020). CPT: pharmacometrics & systems pharmacology 9
   ·  DOI: [10.1002/psp4.12521](https://doi.org/10.1002/psp4.12521)
 
 ## Model component
-<dbs-pgx drug="luspatercept" model-id="Luspatercept_Chen2020_reference" status="rejected" stale="false" population="anemic patients with myelodysplastic syndromes" measured-compound="luspatercept" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="luspatercept" model-id="Luspatercept_Chen2020_reference" status="curated_candidate" stale="false" population="anemic patients with myelodysplastic syndromes" measured-compound="luspatercept" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F, L/day | `Q27` · CL/F | 0.469 | unit | not captured | [unit] | not captured | llm_confirmed (0.6) | psp412521-tbl-0002:row3:col1, psp412521-tbl-0002:row3:col2 | — | not captured |
-| V1/F, L | `Q76` · V/F | 9.20 | unit | not captured | [unit] | not captured | llm_confirmed (0.6) | psp412521-tbl-0002:row4:col1, psp412521-tbl-0002:row4:col2 | — | not captured |
-| K a, 1/day | `Q95` · t1/2ka | 0.456 | unit | not captured | [unit] | not captured | llm (0.6) | psp412521-tbl-0002:row5:col1, psp412521-tbl-0002:row5:col2 | — | not captured |
-| K a, 1/day | `Q49` · kabs | 0.0 | 1/day | 0.0 | 1/h | not captured | review_gapfill (0.7) | Chen_2020:review | — | not captured |
+| CL/F, L/day | `Q27` · CL/F | 0.469 | L/day | 5.42824074074074e-09 | [l] / [d] | not captured | exact (1.0) | psp412521-tbl-0002:row3:col1, psp412521-tbl-0002:row3:col2 | — | not captured |
+| V1/F, L | `Q76` · V/F | 9.20 | L | 0.0092 | [l] | not captured | exact (1.0) | psp412521-tbl-0002:row4:col1, psp412521-tbl-0002:row4:col2 | — | not captured |
+| K a, 1/day | `Q49` · kabs | 0.456 | 1/day | 5.277777777777778e-06 | [1] / [d] | not captured | space_fold (0.95) | psp412521-tbl-0002:row5:col1, psp412521-tbl-0002:row5:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -48,10 +39,11 @@ Chen N; Kassir N; Laadem A; Maxwell SE; Sriraman P; Giuseppi AC; et al. et al. (
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
-- unit_dimension_mismatch: 'CL/F, L/day' → Q27 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: 'V1/F, L' → Q290 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3') — route to review
-- unit_dimension_mismatch: 'K a, 1/day' → Q95 (unit '[luminosity] / [length] ** 2' vs ontology '[time]') — route to review
 - dropped unlinked row (NIL): 'Weight, kg, on CL/F' — extend the ontology if this is a real PK parameter (source ['psp412521-tbl-0002:row6:col1', 'psp412521-tbl-0002:row6:col2'])
 - dropped unlinked row (NIL): 'Age, years, on CL/F' — extend the ontology if this is a real PK parameter (source ['psp412521-tbl-0002:row7:col1', 'psp412521-tbl-0002:row7:col2'])
 - dropped unlinked row (NIL): 'Albumin, g/L, on CL/F' — extend the ontology if this is a real PK parameter (source ['psp412521-tbl-0002:row8:col1', 'psp412521-tbl-0002:row8:col2'])
@@ -60,12 +52,10 @@ Chen N; Kassir N; Laadem A; Maxwell SE; Sriraman P; Giuseppi AC; et al. et al. (
 - routed 'Interindividual variability of CL/F' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - routed 'Interindividual variability of V1/F' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=luspatercept
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V1/F, L' is the general volume)
-- status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Chen_2020's review values (primary lacked it)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell psp412521-tbl-0002:row3:col3 = '0.449, 0.489'
@@ -87,14 +77,28 @@ Chen N; Kassir N; Laadem A; Maxwell SE; Sriraman P; Giuseppi AC; et al. et al. (
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['psp412521-tbl-0002:row3:col1', 'psp412521-tbl-0002:row3:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chen_2020:review'] |
-| C5_dimension_Q76 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['psp412521-tbl-0002:row4:col1', 'psp412521-tbl-0002:row4:col2'] |
-| C5_dimension_Q95 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['psp412521-tbl-0002:row5:col1', 'psp412521-tbl-0002:row5:col2'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412521-tbl-0002:row3:col1', 'psp412521-tbl-0002:row3:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412521-tbl-0002:row5:col1', 'psp412521-tbl-0002:row5:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412521-tbl-0002:row4:col1', 'psp412521-tbl-0002:row4:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.0195 L/h | not captured | not captured | ['psp412521-tbl-0002:row3:col1', 'psp412521-tbl-0002:row3:col2'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 9.2 L | not captured | not captured | ['psp412521-tbl-0002:row4:col1', 'psp412521-tbl-0002:row4:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=luspatercept) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -104,6 +108,9 @@ Chen N; Kassir N; Laadem A; Maxwell SE; Sriraman P; Giuseppi AC; et al. et al. (
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_luspatercept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chen_2020` / `Chen_2020::reference`)
+- model: `../../../knowledgebase/drugs/drug_luspatercept/models/modelica/Luspatercept_Chen2020_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_luspatercept/models/modelica/Luspatercept_Chen2020_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_luspatercept/models/modelica/Luspatercept_Chen2020_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -112,19 +119,22 @@ Chen N; Kassir N; Laadem A; Maxwell SE; Sriraman P; Giuseppi AC; et al. et al. (
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference_modelica.zip" download>Luspatercept_Chen2020_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference_matlab.zip" download>Luspatercept_Chen2020_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference_matlab_simbio.zip" download>Luspatercept_Chen2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference_sbml.zip" download>Luspatercept_Chen2020_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference_cellml.zip" download>Luspatercept_Chen2020_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference.svg" alt="Luspatercept_Chen2020_reference diagram"><figcaption>The structure OpenModelica draws for this model, with this record's parameter values in the component labels.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+<dbs-fmusim paramsurl="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_luspatercept/Luspatercept_Chen2020_reference/Luspatercept_Chen2020_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Luspatercept_Chen2020_reference_params.json` · controls `Luspatercept_Chen2020_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

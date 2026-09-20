@@ -36,14 +36,14 @@ Diep JK; Liu M; Singh P; Dorow S; Cohn DM; Bordone L; et al. et al. (2026). CPT:
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F (L/h) a | `Q27` · CL/F | 12.8 | not captured | not captured | not captured | 2.83 | llm_confirmed (0.6) | psp470206-tbl-0001:row1:col1, psp470206-tbl-0001:row1:col2 | — | 19.6 (13.9% RSE) |
+| covariate_of_weight_on_cl_f | `Q900` · covariate_of_weight_on_cl_f | 1.52 | not captured | not captured | not captured | 8.37 | not captured (not captured) | psp470206-tbl-0001:row2:col1, psp470206-tbl-0001:row2:col2 | — | not captured |
 | V c/F (L) b | `Q290` · V1/F | 69.8 | not captured | not captured | not captured | 6.28 | llm (0.6) | psp470206-tbl-0001:row3:col1, psp470206-tbl-0001:row3:col2 | — | not captured |
 | Q/F (L/h) c | `Q69` · Q/F | 2.58 | not captured | not captured | not captured | 5.25 | llm_confirmed (0.6) | psp470206-tbl-0001:row6:col1, psp470206-tbl-0001:row6:col2 | — | 10.2 (15.7% RSE) |
 | covariate_of_weight_on_q_f | `Q900` · covariate_of_weight_on_q_f | 1.79 | not captured | not captured | not captured | 12.7 | not captured (not captured) | psp470206-tbl-0001:row7:col1, psp470206-tbl-0001:row7:col2 | — | not captured |
 | V p /F (L) d | `Q76` · V/F | 1840 | not captured | not captured | not captured | 6.29 | llm (0.6) | psp470206-tbl-0001:row9:col1, psp470206-tbl-0001:row9:col2 | — | not captured |
 | k a (1/h) e | `Q49` · kabs | 0.952 | not captured | not captured | not captured | 8.26 | llm (0.6) | psp470206-tbl-0001:row11:col1, psp470206-tbl-0001:row11:col2 | — | not captured |
-| theta_q319_weight | `Q900` · theta_q319_weight | 1.52 | not captured | not captured | not captured | 8.37 | not captured (not captured) | psp470206-tbl-0001:row2:col1, psp470206-tbl-0001:row2:col2 | — | not captured |
 | theta_q314_weight | `Q900` · theta_q314_weight | 2.34 | not captured | not captured | not captured | 7.86 | not captured (not captured) | psp470206-tbl-0001:row4:col1, psp470206-tbl-0001:row4:col2 | — | not captured |
-| theta_q314_weight | `Q900` · theta_q314_weight | 1.60 | not captured | not captured | not captured | 17.6 | not captured (not captured) | psp470206-tbl-0001:row10:col1, psp470206-tbl-0001:row10:col2 | — | not captured |
+| theta_q319_weight | `Q900` · theta_q319_weight | 1.60 | not captured | not captured | not captured | 17.6 | not captured (not captured) | psp470206-tbl-0001:row10:col1, psp470206-tbl-0001:row10:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,13 +53,14 @@ Diep JK; Liu M; Singh P; Dorow S; Cohn DM; Bordone L; et al. et al. (2026). CPT:
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Covariate of disease status (patient with HAE) on V c/F' — extend the ontology if this is a real PK parameter (source ['psp470206-tbl-0001:row5:col1', 'psp470206-tbl-0001:row5:col2'])
+- covariate level 'Covariate of weight on CL/F' → Q900:covariate_of_weight_on_cl_f = 1.52 (linear_fractional on Q27)
+- routed 'Covariate of disease status (patient with HAE) on V c/F' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - covariate level 'Covariate of weight on Q/F' → Q900:covariate_of_weight_on_q_f = 1.79 (linear_fractional on Q27)
-- dropped duplicate Q69 ('Covariate of disease status (patient with HAE) on Q/F', value '-0.261') — already have one for this compound
+- dropped unlinked row (NIL): 'Covariate of disease status (patient with HAE) on Q/F' — extend the ontology if this is a real PK parameter (source ['psp470206-tbl-0001:row8:col1', 'psp470206-tbl-0001:row8:col2'])
 - routed 'Covariate of site of administration of k a' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - routed 'Covariate of drug presentation of k a' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - dropped unlinked row (NIL): 'Correlation between CL/F and V c/F' — extend the ontology if this is a real PK parameter (source ['psp470206-tbl-0001:row15:col1', 'psp470206-tbl-0001:row15:col2'])
-- routed 'Correlation between CL/F and Q/F' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'Correlation between CL/F and Q/F' — extend the ontology if this is a real PK parameter (source ['psp470206-tbl-0001:row16:col1', 'psp470206-tbl-0001:row16:col2'])
 - dropped unlinked row (NIL): 'Correlation between CL/F and V p /F' — extend the ontology if this is a real PK parameter (source ['psp470206-tbl-0001:row17:col1', 'psp470206-tbl-0001:row17:col2'])
 - dropped unlinked row (NIL): 'Correlation between CL/F and k a' — extend the ontology if this is a real PK parameter (source ['psp470206-tbl-0001:row18:col1', 'psp470206-tbl-0001:row18:col2'])
 - dropped unlinked row (NIL): 'Correlation between V c/F and Q/F' — extend the ontology if this is a real PK parameter (source ['psp470206-tbl-0001:row20:col1', 'psp470206-tbl-0001:row20:col2'])
@@ -73,8 +74,8 @@ Diep JK; Liu M; Singh P; Dorow S; Cohn DM; Bordone L; et al. et al. (2026). CPT:
 - NIL: refused to back-fill base 'Q/F' from footnote/prose loose number None (source ['psp470206-tbl-0001:footnote']); the table cell was unparseable — needs review
 - NIL: refused to back-fill base 'V2/F' from footnote/prose loose number None (source ['psp470206-tbl-0001:footnote']); the table cell was unparseable — needs review
 - NIL: refused to back-fill base 'kabs' from footnote/prose loose number None (source ['psp470206-tbl-0001:footnote']); the table cell was unparseable — needs review
-- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=donidalorsen
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -90,6 +91,7 @@ Diep JK; Liu M; Singh P; Dorow S; Cohn DM; Bordone L; et al. et al. (2026). CPT:
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -99,6 +101,7 @@ Diep JK; Liu M; Singh P; Dorow S; Cohn DM; Bordone L; et al. et al. (2026). CPT:
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |

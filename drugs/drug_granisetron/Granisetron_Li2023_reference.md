@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;granisetron&quot;,&quot;href&quot;:&quot;drugs/drug_granisetron/&quot;},{&quot;label&quot;:&quot;Li_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Granisetron_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_granisetron/Granisetron_Li2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Granisetron_Addelman1990_reference&quot;,&quot;label&quot;:&quot;Addelman_1990_reference&quot;,&quot;href&quot;:&quot;drugs/drug_granisetron/Granisetron_Addelman1990_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Granisetron_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_granisetron/Granisetron_Li2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -30,9 +30,9 @@ Li J; Hu P; Zhou L; Nagahama F; Chen R et al. (2023). Frontiers in pharmacology 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka (1/h) | `Q49` · kabs | 0.0179879 | not captured | not captured | not captured | not captured | exact (1.0) | T3:row3:col1, T3:row3:col2, T3:row3:col3, T3:row7:col2, T3:row7:col3 | — | not captured |
-| V (mL) | `Q61` · V | 1.5462161 | mL | 1.5462161e-06 | [ml] | not captured | exact (1.0) | T3:row4:col1, T3:row4:col2, T3:row4:col3, T3:row8:col1, T3:row8:col2, T3:row8:col3 | — | not captured |
-| CL (mL/h) | `Q22` · CL | 0.25423392 | mL/h | 7.062053333333333e-11 | [ml] / [h] | not captured | exact (1.0) | T3:row5:col1, T3:row5:col2, T3:row5:col3, T3:row9:col1, T3:row9:col2, T3:row9:col3 | — | not captured |
+| Ka (1/h) | `Q49` · kabs | 0.0179879 | not captured | not captured | not captured | 3.6330732 | exact (1.0) | T3:row3:col1, T3:row3:col2, T3:row3:col3, T3:row7:col2, T3:row7:col3 | — | not captured |
+| V (mL) | `Q61` · V | 1.5462161 | mL | 1.5462161e-06 | [ml] | 13.121334 | exact (1.0) | T3:row4:col1, T3:row4:col2, T3:row4:col3, T3:row8:col1, T3:row8:col2, T3:row8:col3 | — | not captured |
+| CL (mL/h) | `Q22` · CL | 0.25423392 | mL/h | 7.062053333333333e-11 | [ml] / [h] | 5.5226182 | exact (1.0) | T3:row5:col1, T3:row5:col2, T3:row5:col3, T3:row9:col1, T3:row9:col2, T3:row9:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,6 +58,7 @@ Li J; Hu P; Zhou L; Nagahama F; Chen R et al. (2023). Frontiers in pharmacology 
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T3:row5:col1', 'T3:row5:col2', 'T3:row5:col3', 'T3:row9:col1', 'T3:row9:col2', 'T3:row9:col3'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row4:col1', 'T3:row4:col2', 'T3:row4:col3', 'T3:row8:col1', 'T3:row8:col2', 'T3:row8:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.25423392 | not captured | not captured | ['T3:row5:col1', 'T3:row5:col2', 'T3:row5:col3', 'T3:row9:col1', 'T3:row9:col2', 'T3:row9:col3'] |

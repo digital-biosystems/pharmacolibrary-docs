@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;coagulation factor IX&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_ix/&quot;},{&quot;label&quot;:&quot;Preijers_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CoagulationFactorIx_Preijers2022_reference&quot;,&quot;label&quot;:&quot;Preijers_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Preijers2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CoagulationFactorIx_Preijers2018_reference&quot;,&quot;label&quot;:&quot;Preijers_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Preijers2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorIx_Preijers2022_reference&quot;,&quot;label&quot;:&quot;Preijers_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Preijers2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;CoagulationFactorIx_Goldsmith1992_reference&quot;,&quot;label&quot;:&quot;Goldsmith_1992_reference&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Goldsmith1992_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -24,6 +24,8 @@
 6. Re-run the engineer for this drug if the covariate curves are wanted.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
+
+> **Dose compound ≠ measured compound:** dosed `extended half-life factor IX concentrates`, measured `factor IX`.
 
 ## Citation
 Preijers T; van Spengler MWF; Meijer K; Fijnvandraat K; Fischer K; Leebeek FWG; et al. et al. (2022). European journal of clinical pharmacology 78
@@ -86,6 +88,7 @@ Preijers T; van Spengler MWF; Meijer K; Fijnvandraat K; Fischer K; Leebeek FWG; 
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - status held at route_to_review — not promoted
+- review gap-fill skipped: this record measures 'factor IX', not coagulation_factor_ix — the review values are the parent's
 
 **Extraction notes:**
 - unparsed cell Tab1:row3:col1 = '0.684*'
@@ -93,7 +96,6 @@ Preijers T; van Spengler MWF; Meijer K; Fijnvandraat K; Fischer K; Leebeek FWG; 
 - unparsed cell Tab1:row5:col1 = '0.614*'
 - unparsed cell Tab1:row6:col1 = '15.6*'
 - LLM selected parameter table(s) 1
-- LLM region Preijers_2022:other_prose: no JSON records returned
 - LLM region Preijers_2022:other_prose: no JSON records returned
 - LLM region Preijers_2022:other_prose: no JSON records returned
 
@@ -105,6 +107,7 @@ Preijers T; van Spengler MWF; Meijer K; Fijnvandraat K; Fischer K; Leebeek FWG; 
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 23 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Tab1:row29:col1'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Tab1:row29:col3'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Tab1:row29:col5'] |
@@ -116,6 +119,7 @@ Preijers T; van Spengler MWF; Meijer K; Fijnvandraat K; Fischer K; Leebeek FWG; 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_param_coverage | not captured | pass | 12 scholar param(s) emitted or defaulted | 12 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |

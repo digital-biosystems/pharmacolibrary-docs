@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Aldh1a1 expression — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# Aldh1a1 — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Soltanian_2021`
 - **model family:** `unknown`

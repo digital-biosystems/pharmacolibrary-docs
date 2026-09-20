@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05B&quot;,&quot;href&quot;:&quot;atc/A05B.md&quot;},{&quot;label&quot;:&quot;phospholipids&quot;,&quot;href&quot;:&quot;drugs/drug_phospholipids/&quot;},{&quot;label&quot;:&quot;Hummel_1975 \u00b7 non pregnant female rats&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phospholipids_Hummel1975_non_pregnant_female_rats&quot;,&quot;label&quot;:&quot;Hummel_1975_non pregnant female rats&quot;,&quot;href&quot;:&quot;drugs/drug_phospholipids/Phospholipids_Hummel1975_non_pregnant_female_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phospholipids_Hummel1975_non_pregnant_female_rats&quot;,&quot;label&quot;:&quot;Hummel_1975_non pregnant female rats&quot;,&quot;href&quot;:&quot;drugs/drug_phospholipids/Phospholipids_Hummel1975_non_pregnant_female_rats.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # phospholipids — `Phospholipids_Hummel1975_non_pregnant_female_rats`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 ### Reviewer guidance
 
@@ -16,16 +16,18 @@
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-11 08:47:04.836135+00:00) predates the upstream re-run (2026-09-18 16:41:02.087708+00:00). Current validate status: `not captured`.
+
 ## Citation
 Hummel L et al. (1975). Acta biologica et medica Germanica 34
 
 ## Model component
-<dbs-pgx drug="phospholipids" model-id="Phospholipids_Hummel1975_non_pregnant_female_rats" status="rejected" stale="false" population="non pregnant female rats" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<dbs-pgx drug="phospholipids" model-id="Phospholipids_Hummel1975_non_pregnant_female_rats" status="" stale="true" population="non pregnant female rats" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
 **Parameterization:** not captured.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 _No resolved parameters._
 

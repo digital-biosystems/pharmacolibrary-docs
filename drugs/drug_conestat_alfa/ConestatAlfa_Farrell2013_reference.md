@@ -1,50 +1,44 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;conestat alfa&quot;,&quot;href&quot;:&quot;drugs/drug_conestat_alfa/&quot;},{&quot;label&quot;:&quot;Farrell_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ConestatAlfa_Farrell2013_reference&quot;,&quot;label&quot;:&quot;Farrell_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_conestat_alfa/ConestatAlfa_Farrell2013_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ConestatAlfa_Farrell2013_reference&quot;,&quot;label&quot;:&quot;Farrell_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_conestat_alfa/ConestatAlfa_Farrell2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # conestat alfa — `ConestatAlfa_Farrell2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `Km`, `theta_v_category`</sub>
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `Km`</sub>
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised.
+**What is wrong:** every check the reviewer could run passed.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
-2. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-3. If the paper never reports it, the record cannot become a model.
-4. Advisory only — the base model still replicates.
-5. Check the record's covariate_definitions in _interpretv2.yaml.
-6. Re-run the engineer for this drug if the covariate curves are wanted.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
-
-> **Dose compound ≠ measured compound:** dosed `recombinant human C1 inhibitor`, measured `C1 inhibitor`.
 
 ## Citation
 Farrell C; Hayes S; Relan A; van Amersfoort ES; Pijpstra R; Hack CE et al. (2013). British journal of clinical pharmacology 76
   ·  DOI: [10.1111/bcp.12132](https://doi.org/10.1111/bcp.12132)
 
 ## Model component
-<dbs-pgx drug="conestat alfa" model-id="ConestatAlfa_Farrell2013_reference" status="model_quarantined" stale="false" population="healthy volunteers and hereditary angioedema patients" measured-compound="C1 inhibitor" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="conestat alfa" model-id="ConestatAlfa_Farrell2013_reference" status="needs_review" stale="false" population="healthy volunteers and hereditary angioedema patients" measured-compound="recombinant human C1 inhibitor" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Volume of distribution (l) | `Q61` · V | 2.86 | l | 0.00286 | [l] | not captured | exact (1.0) | Farrell_2013_table_p5_1:row2:col1, Farrell_2013_table_p5_1:row2:col2 | — | not captured |
+| theta_v_category | `Q900` · theta_v_category | 0.681 | not captured | not captured | not captured | not captured | not captured (not captured) | Farrell_2013_table_p5_1:row3:col1, Farrell_2013_table_p5_1:row3:col2 | — | not captured |
 | Vmax (U ml-1 h-1) in healthy volunteers and symptomatic HAE patients | `Q66` · Vmax | 1.63 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Farrell_2013_table_p5_1:row5:col1, Farrell_2013_table_p5_1:row5:col2 | — | not captured |
 | Km (U ml-1) | `Q1` · Km | 1.60 | U ml-1 | not captured | [u] / [ml] | not captured | exact (1.0) | Farrell_2013_table_p5_1:row7:col1, Farrell_2013_table_p5_1:row7:col2 | — | not captured |
-| theta_v_category | `Q900` · theta_v_category | 0.681 | l | not captured | not captured | not captured | not captured (not captured) | Farrell_2013_table_p5_1:row3:col1, Farrell_2013_table_p5_1:row3:col2 | — | not captured |
 | theta_v_bodyweight | `Q900` · theta_v_bodyweight | 0.612 | not captured | not captured | not captured | not captured | not captured (not captured) | Farrell_2013_table_p5_1:row4:col1, Farrell_2013_table_p5_1:row4:col2 | — | not captured |
 | theta_vmax_category | `Q900` · theta_vmax_category | 0.644 | not captured | not captured | not captured | not captured | not captured (not captured) | Farrell_2013_table_p5_1:row6:col1, Farrell_2013_table_p5_1:row6:col2 | — | not captured |
 
@@ -58,19 +52,17 @@ Farrell C; Hayes S; Relan A; van Amersfoort ES; Pijpstra R; Hack CE et al. (2013
 **Interpretation flags:**
 - dropped PD-category row 'Baseline levels in HAE patients (U ml-1)' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Farrell_2013_table_p5_1:row0:col1', 'Farrell_2013_table_p5_1:row0:col2'])
 - dropped PD-category row 'Baseline levels in healthy volunteers (U ml-1)' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Farrell_2013_table_p5_1:row1:col1', 'Farrell_2013_table_p5_1:row1:col2'])
+- covariate level 'Fractional change in volume for studies C1 1202-01 and C1 1203-01' → Q900:theta_v_category = 0.681 (additive_shift on Q61)
 - dropped value-less row: 'Interindividual variability in HAE patient baseline levels (%CV)†'
 - dropped value-less row: 'Interindividual variability in healthy volunteer baseline levels (%CV)†'
 - dropped value-less row: 'Interindividual variability in volume (%CV)*'
 - dropped value-less row: 'Interoccasion variability in volume (%CV)*'
 - dropped value-less row: 'Interindividual variability in Vmax (%CV)*'
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=C1 inhibitor
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=recombinant human C1 inhibitor
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- final table tab_1: grid unusable → re-running vision table extraction for Farrell_2013
 - unparsed cell Farrell_2013_table_p5_2:row0:col2 = '21.0%'
 - unparsed cell Farrell_2013_table_p5_2:row1:col2 = '43.1%'
 - unparsed cell Farrell_2013_table_p5_2:row2:col2 = '37.8%'
@@ -90,20 +82,12 @@ Farrell C; Hayes S; Relan A; van Amersfoort ES; Pijpstra R; Hack CE et al. (2013
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Farrell_2013_table_p5_1:row7:col1', 'Farrell_2013_table_p5_1:row7:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Farrell_2013_table_p5_1:row2:col1', 'Farrell_2013_table_p5_1:row2:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 2.86 L | not captured | not captured | ['Farrell_2013_table_p5_1:row2:col1', 'Farrell_2013_table_p5_1:row2:col2'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -113,8 +97,6 @@ Farrell C; Hayes S; Relan A; van Amersfoort ES; Pijpstra R; Hack CE et al. (2013
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_conestat_alfa/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Farrell_2013` / `Farrell_2013::reference`)
-- model: `../../../knowledgebase/drugs/drug_conestat_alfa/models/modelica/_needs_review/ConestatAlfa_Farrell2013_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_conestat_alfa/models/modelica/_needs_review/ConestatAlfa_Farrell2013_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

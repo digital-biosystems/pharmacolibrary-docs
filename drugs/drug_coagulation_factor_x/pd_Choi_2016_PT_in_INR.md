@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Choi_2016`
 - **model family:** `sigmoid_emax`
@@ -19,11 +19,11 @@ Choi HY; Choi S; Kim YH; Lim HS et al. (2016). CPT: pharmacometrics & systems ph
 | Emax, % — RSE % | `Q320` · not captured | 11.3 | not captured | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row3:col2 |
 | Emax, % — 95% CI | `Q320` · not captured | 63.2 | not captured | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row3:col3 |
 | IIVEmax (CV, %) — Estimates | `Q312` · not captured | 0.10 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row4:col1 |
-| IIVEmax (CV, %) — RSE % | `Q320` · not captured | 48.5 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row4:col2 |
+| IIVEmax (CV, %) — RSE % | `Q312` · not captured | 48.5 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row4:col2 |
 | IIVEmax (CV, %) — 95% CI | `Q312` · not captured | 0.01 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row4:col3 |
-| EC50, ng/mL — Estimates | `Q321` · not captured | 2880.0 | ng/mL | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row5:col1 |
-| EC50, ng/mL — RSE % | `Q321` · not captured | 34.1 | ng/mL | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row5:col2 |
-| EC50, ng/mL — 95% CI | `Q321` · not captured | 957.2 | ng/mL | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row5:col3 |
+| EC50, ng/mL — Estimates | `Q321` · not captured | 2880.0 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row5:col1 |
+| EC50, ng/mL — RSE % | `Q321` · not captured | 34.1 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row5:col2 |
+| EC50, ng/mL — 95% CI | `Q321` · not captured | 957.2 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row5:col3 |
 | IIVEC50 (%) — Estimates | `Q321` · not captured | 0.98 | ng/mL | not captured | llm (not captured) | psp412103-tbl-0003:row6:col1 |
 | IIVEC50 (%) — RSE % | `Q321` · not captured | 39.0 | ng/mL | not captured | llm (not captured) | psp412103-tbl-0003:row6:col2 |
 | IIVEC50 (%) — 95% CI | `Q321` · not captured | 0.23 | ng/mL | not captured | llm (not captured) | psp412103-tbl-0003:row6:col3 |
@@ -40,14 +40,14 @@ Choi HY; Choi S; Kim YH; Lim HS et al. (2016). CPT: pharmacometrics & systems ph
 | Emax, % — Estimates | `Q320` · not captured | 42.9 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row14:col1 |
 | Emax, % — RSE % | `Q320` · not captured | 19.0 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row14:col2 |
 | Emax, % — 95% CI | `Q320` · not captured | 26.9 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row14:col3 |
-| EC50, ng/mL — Estimates | `Q321` · not captured | 194.0 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row15:col1 |
-| EC50, ng/mL — RSE % | `Q321` · not captured | 27.4 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row15:col2 |
-| EC50, ng/mL — 95% CI | `Q321` · not captured | 99.9 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row15:col3 |
+| EC50, ng/mL — Estimates | `Q321` · not captured | 194.0 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row15:col1 |
+| EC50, ng/mL — RSE % | `Q321` · not captured | 27.4 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row15:col2 |
+| EC50, ng/mL — 95% CI | `Q321` · not captured | 99.9 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row15:col3 |
 | IIVEC50 (CV, %) — Estimates | `Q321` · not captured | 0.33 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row16:col1 |
 | IIVEC50 (CV, %) — RSE % | `Q321` · not captured | 117.8 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row16:col2 |
 | IIVEC50 (CV, %) — 95% CI | `Q321` · not captured | -0.43 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row16:col3 |
 | IOVEC50 (CV, %) — Estimates | `Q313` · not captured | 0.25 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row17:col1 |
-| IOVEC50 (CV, %) — RSE % | `Q321` · not captured | 155.5 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row17:col2 |
+| IOVEC50 (CV, %) — RSE % | `Q313` · not captured | 155.5 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row17:col2 |
 | IOVEC50 (CV, %) — 95% CI | `Q313` · not captured | -0.51 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row17:col3 |
 | γ — 95% CI | `Q89` · not captured | 0.53 | not captured | not captured | llm (not captured) | psp412103-tbl-0003:row18:col3 |
 | ε (proportional)e — Estimates | `Q316` · not captured | 0.06 | Sigmoid Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row19:col1 |
@@ -57,11 +57,11 @@ Choi HY; Choi S; Kim YH; Lim HS et al. (2016). CPT: pharmacometrics & systems ph
 | Emax, % — RSE % | `Q320` · not captured | 7.3 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row22:col2 |
 | Emax, % — 95% CI | `Q320` · not captured | 85.5 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row22:col3 |
 | IIVEmax (CV, %) — Estimates | `Q312` · not captured | 0.01 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row23:col1 |
-| IIVEmax (CV, %) — RSE % | `Q320` · not captured | 52.1 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row23:col2 |
+| IIVEmax (CV, %) — RSE % | `Q312` · not captured | 52.1 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row23:col2 |
 | IIVEmax (CV, %) — 95% CI | `Q312` · not captured | 0 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row23:col3 |
-| EC50, ng/mL — Estimates | `Q321` · not captured | 420.0 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row24:col1 |
-| EC50, ng/mL — RSE % | `Q321` · not captured | 16.4 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row24:col2 |
-| EC50, ng/mL — 95% CI | `Q321` · not captured | 284.8 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row24:col3 |
+| EC50, ng/mL — Estimates | `Q321` · not captured | 420.0 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row24:col1 |
+| EC50, ng/mL — RSE % | `Q321` · not captured | 16.4 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row24:col2 |
+| EC50, ng/mL — 95% CI | `Q321` · not captured | 284.8 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row24:col3 |
 | IIV + IOVEC50 (%) — Estimates | `Q312` · not captured | 0.08 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row25:col1 |
 | IIV + IOVEC50 (%) — RSE % | `Q312` · not captured | 42.1 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row25:col2 |
 | IIV + IOVEC50 (%) — 95% CI | `Q312` · not captured | 0.01 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row25:col3 |
@@ -77,14 +77,14 @@ Choi HY; Choi S; Kim YH; Lim HS et al. (2016). CPT: pharmacometrics & systems ph
 | Emax, % — Estimates | `Q320` · not captured | 112.0 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row31:col1 |
 | Emax, % — RSE % | `Q320` · not captured | 3.2 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row31:col2 |
 | Emax, % — 95% CI | `Q320` · not captured | 104.9 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row31:col3 |
-| EC50, ng/mL — Estimates | `Q321` · not captured | 126.0 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row32:col1 |
-| EC50, ng/mL — RSE % | `Q321` · not captured | 13.1 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row32:col2 |
-| EC50, ng/mL — 95% CI | `Q321` · not captured | 93.7 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row32:col3 |
+| EC50, ng/mL — Estimates | `Q321` · not captured | 126.0 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row32:col1 |
+| EC50, ng/mL — RSE % | `Q321` · not captured | 13.1 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row32:col2 |
+| EC50, ng/mL — 95% CI | `Q321` · not captured | 93.7 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row32:col3 |
 | IIVEC50 (CV, %) — Estimates | `Q321` · not captured | 0.07 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row33:col1 |
 | IIVEC50 (CV, %) — RSE % | `Q321` · not captured | 62.9 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row33:col2 |
 | IIVEC50 (CV, %) — 95% CI | `Q321` · not captured | -0.02 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row33:col3 |
 | IOVEC50 (CV, %) — Estimates | `Q313` · not captured | 0.01 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row34:col1 |
-| IOVEC50 (CV, %) — RSE % | `Q321` · not captured | 90.1 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row34:col2 |
+| IOVEC50 (CV, %) — RSE % | `Q313` · not captured | 90.1 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row34:col2 |
 | IOVEC50 (CV, %) — 95% CI | `Q313` · not captured | -0.01 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row34:col3 |
 | ε (additive), % — Estimates | `Q317` · not captured | 3.89 | Simple Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row35:col1 |
 | ε (additive), % — RSE % | `Q317` · not captured | 15.0 | Simple Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row35:col2 |
@@ -92,15 +92,15 @@ Choi HY; Choi S; Kim YH; Lim HS et al. (2016). CPT: pharmacometrics & systems ph
 | ε (proportional)e — Estimates | `Q316` · not captured | 0.05 | Simple Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row36:col1 |
 | ε (proportional)e — RSE % | `Q316` · not captured | 33.2 | Simple Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row36:col2 |
 | ε (proportional)e — 95% CI | `Q38` · not captured | 0.02 | Simple Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row36:col3 |
-| Emax, IU/mL — Estimates | `Q320` · not captured | 3.24 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row39:col1 |
-| Emax, IU/mL — RSE % | `Q320` · not captured | 21.3 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row39:col2 |
-| Emax, IU/mL — 95% CI | `Q320` · not captured | 1.89 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row39:col3 |
+| Emax, IU/mL — Estimates | `Q320` · not captured | 3.24 | IU/mL | not captured | exact (not captured) | psp412103-tbl-0003:row39:col1 |
+| Emax, IU/mL — RSE % | `Q320` · not captured | 21.3 | IU/mL | not captured | exact (not captured) | psp412103-tbl-0003:row39:col2 |
+| Emax, IU/mL — 95% CI | `Q320` · not captured | 1.89 | IU/mL | not captured | exact (not captured) | psp412103-tbl-0003:row39:col3 |
 | IIVEmax (CV, %) — Estimates | `Q312` · not captured | 0.04 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row40:col1 |
-| IIVEmax (CV, %) — RSE % | `Q320` · not captured | 62.3 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row40:col2 |
+| IIVEmax (CV, %) — RSE % | `Q312` · not captured | 62.3 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row40:col2 |
 | IIVEmax (CV, %) — 95% CI | `Q312` · not captured | 0.00 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row40:col3 |
-| EC50, ng/mL — Estimates | `Q321` · not captured | 695.0 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row41:col1 |
-| EC50, ng/mL — RSE % | `Q321` · not captured | 26.0 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row41:col2 |
-| EC50, ng/mL — 95% CI | `Q321` · not captured | 340.2 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row41:col3 |
+| EC50, ng/mL — Estimates | `Q321` · not captured | 695.0 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row41:col1 |
+| EC50, ng/mL — RSE % | `Q321` · not captured | 26.0 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row41:col2 |
+| EC50, ng/mL — 95% CI | `Q321` · not captured | 340.2 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row41:col3 |
 | IIV + IOVEC50 (%) — Estimates | `Q312` · not captured | 0.005 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row42:col1 |
 | IIV + IOVEC50 (%) — RSE % | `Q312` · not captured | 48.8 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row42:col2 |
 | IIV + IOVEC50 (%) — 95% CI | `Q312` · not captured | 0.000 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row42:col3 |
@@ -108,25 +108,22 @@ Choi HY; Choi S; Kim YH; Lim HS et al. (2016). CPT: pharmacometrics & systems ph
 | IIVγ (CV, %) — Estimates | `Q312` · not captured | 0.02 | CV, % | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row44:col1 |
 | IIVγ (CV, %) — RSE % | `Q312` · not captured | 51.4 | CV, % | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row44:col2 |
 | IIVγ (CV, %) — 95% CI | `Q312` · not captured | 0.00 | CV, % | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row44:col3 |
-| ε (additive), IU/mL — Estimates | `Q317` · not captured | 0.04 | Sigmoid Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row45:col1 |
-| ε (additive), IU/mL — RSE % | `Q325` · not captured | 12.2 | Sigmoid Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row45:col2 |
 | ε (proportional)e — Estimates | `Q316` · not captured | 0.14 | Sigmoid Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row46:col1 |
 | ε (proportional)e — RSE % | `Q316` · not captured | 8.1 | Sigmoid Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row46:col2 |
 | ε (proportional)e — 95% CI | `Q316` · not captured | 0.12 | Sigmoid Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row46:col3 |
-| ε (proportional)e — Estimates | `Q316` · not captured | 0.29 | Linear model | not captured | llm (not captured) | psp412103-tbl-0003:row51:col1 |
 | ε (proportional)e — RSE % | `Q316` · not captured | 13.0 | Linear model | not captured | llm (not captured) | psp412103-tbl-0003:row51:col2 |
 | EMAX, INR — Estimates | `Q320` · not captured | 1.32 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row54:col1 |
 | EMAX, INR — RSE % | `Q320` · not captured | 20.3 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row54:col2 |
 | EMAX, INR — 95% CI | `Q320` · not captured | 0.79 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row54:col3 |
 | IIVEmax (CV, %) — Estimates | `Q312` · not captured | 0.48 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row55:col1 |
-| IIVEmax (CV, %) — RSE % | `Q320` · not captured | 43.0 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row55:col2 |
+| IIVEmax (CV, %) — RSE % | `Q312` · not captured | 43.0 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row55:col2 |
 | IIVEmax (CV, %) — 95% CI | `Q312` · not captured | 0.08 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row55:col3 |
-| EC50, SAD, ng/mL — Estimates | `Q321` · not captured | 426.0 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row56:col1 |
-| EC50, SAD, ng/mL — RSE % | `Q321` · not captured | 24.4 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row56:col2 |
-| EC50, SAD, ng/mL — 95% CI | `Q321` · not captured | 222.2 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row56:col3 |
-| EC50, SAD/MAD, ng/mL — Estimates | `Q321` · not captured | 1350.0 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row57:col1 |
-| EC50, SAD/MAD, ng/mL — RSE % | `Q321` · not captured | 27.3 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row57:col2 |
-| EC50, SAD/MAD, ng/mL — 95% CI | `Q321` · not captured | 628.7 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row57:col3 |
+| EC50, SAD, ng/mL — Estimates | `Q321` · not captured | 426.0 | ng/mL | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row56:col1 |
+| EC50, SAD, ng/mL — RSE % | `Q321` · not captured | 24.4 | ng/mL | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row56:col2 |
+| EC50, SAD, ng/mL — 95% CI | `Q321` · not captured | 222.2 | ng/mL | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row56:col3 |
+| EC50, SAD/MAD, ng/mL — Estimates | `Q321` · not captured | 1350.0 | ng/mL | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row57:col1 |
+| EC50, SAD/MAD, ng/mL — RSE % | `Q321` · not captured | 27.3 | ng/mL | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row57:col2 |
+| EC50, SAD/MAD, ng/mL — 95% CI | `Q321` · not captured | 628.7 | ng/mL | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row57:col3 |
 | IIVEC50 (CV, %) — Estimates | `Q321` · not captured | 0.89 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row58:col1 |
 | IIVEC50 (CV, %) — RSE % | `Q321` · not captured | 52.3 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row58:col2 |
 | IIVEC50 (CV, %) — 95% CI | `Q321` · not captured | -0.02 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row58:col3 |
@@ -143,27 +140,27 @@ Choi HY; Choi S; Kim YH; Lim HS et al. (2016). CPT: pharmacometrics & systems ph
 | Emax, INR — Estimates | `Q320` · not captured | 0.71 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row64:col1 |
 | Emax, INR — RSE % | `Q320` · not captured | 26.5 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row64:col2 |
 | Emax, INR — 95% CI | `Q320` · not captured | 104.9 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row64:col3 |
-| EC50, ng/mL — Estimates | `Q321` · not captured | 434.0 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row65:col1 |
-| EC50, ng/mL — RSE % | `Q321` · not captured | 37.3 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row65:col2 |
-| EC50, ng/mL — 95% CI | `Q321` · not captured | 116.5 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row65:col3 |
+| EC50, ng/mL — Estimates | `Q321` · not captured | 434.0 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row65:col1 |
+| EC50, ng/mL — RSE % | `Q321` · not captured | 37.3 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row65:col2 |
+| EC50, ng/mL — 95% CI | `Q321` · not captured | 116.5 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row65:col3 |
 | IIV + IOVEC50 (CV, %) — Estimates | `Q312` · not captured | 0.06 | CV, % | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row66:col1 |
 | IIV + IOVEC50 (CV, %) — RSE % | `Q312` · not captured | 53.9 | CV, % | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row66:col2 |
 | IIV + IOVEC50 (CV, %) — 95% CI | `Q313` · not captured | 0.00 | CV, % | not captured | llm_corrected (not captured) | psp412103-tbl-0003:row66:col3 |
 | ε (additive), INR — Estimates | `Q317` · not captured | 0.04 | Simple Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row67:col1 |
 | ε (additive), INR — RSE % | `Q317` · not captured | 6.2 | Simple Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row67:col2 |
 | ε (additive), INR — 95% CI | `Q317` · not captured | 0.04 | Simple Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row67:col3 |
-| Emax, sec — Estimates | `Q320` · not captured | 15.2 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row70:col1 |
-| Emax, sec — RSE % | `Q320` · not captured | 21.5 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row70:col2 |
-| Emax, sec — 95% CI | `Q320` · not captured | 8.8 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row70:col3 |
+| Emax, sec — Estimates | `Q320` · not captured | 15.2 | sec | not captured | exact (not captured) | psp412103-tbl-0003:row70:col1 |
+| Emax, sec — RSE % | `Q320` · not captured | 21.5 | sec | not captured | exact (not captured) | psp412103-tbl-0003:row70:col2 |
+| Emax, sec — 95% CI | `Q320` · not captured | 8.8 | sec | not captured | exact (not captured) | psp412103-tbl-0003:row70:col3 |
 | IIVEmax (CV, %) — Estimates | `Q312` · not captured | 0.41 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row71:col1 |
-| IIVEmax (CV, %) — RSE % | `Q320` · not captured | 64.7 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row71:col2 |
+| IIVEmax (CV, %) — RSE % | `Q312` · not captured | 64.7 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row71:col2 |
 | IIVEmax (CV, %) — 95% CI | `Q312` · not captured | -0.11 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row71:col3 |
-| EC50, SAD, ng/mL — Estimates | `Q321` · not captured | 563.0 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row72:col1 |
-| EC50, SAD, ng/mL — RSE % | `Q321` · not captured | 34.3 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row72:col2 |
-| EC50, SAD, ng/mL — 95% CI | `Q321` · not captured | 184.7 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row72:col3 |
-| EC50, SAD/MAD, ng/mL — Estimates | `Q321` · not captured | 1450.0 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row73:col1 |
-| EC50, SAD/MAD, ng/mL — RSE % | `Q321` · not captured | 30.0 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row73:col2 |
-| EC50, SAD/MAD, ng/mL — 95% CI | `Q321` · not captured | 597.4 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row73:col3 |
+| EC50, SAD, ng/mL — Estimates | `Q321` · not captured | 563.0 | ng/mL | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row72:col1 |
+| EC50, SAD, ng/mL — RSE % | `Q321` · not captured | 34.3 | ng/mL | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row72:col2 |
+| EC50, SAD, ng/mL — 95% CI | `Q321` · not captured | 184.7 | ng/mL | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row72:col3 |
+| EC50, SAD/MAD, ng/mL — Estimates | `Q321` · not captured | 1450.0 | ng/mL | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row73:col1 |
+| EC50, SAD/MAD, ng/mL — RSE % | `Q321` · not captured | 30.0 | ng/mL | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row73:col2 |
+| EC50, SAD/MAD, ng/mL — 95% CI | `Q321` · not captured | 597.4 | ng/mL | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row73:col3 |
 | IIVEC50 (CV, %) — Estimates | `Q321` · not captured | 0.77 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row74:col1 |
 | IIVEC50 (CV, %) — RSE % | `Q321` · not captured | 64.5 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row74:col2 |
 | IIVEC50 (CV, %) — 95% CI | `Q321` · not captured | -0.20 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row74:col3 |
@@ -177,30 +174,28 @@ Choi HY; Choi S; Kim YH; Lim HS et al. (2016). CPT: pharmacometrics & systems ph
 | ε (proportional)e — Estimates | `Q316` · not captured | 0.04 | Sigmoid Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row78:col1 |
 | ε (proportional)e — RSE % | `Q316` · not captured | 6.9 | Sigmoid Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row78:col2 |
 | ε (proportional)e — 95% CI | `Q316` · not captured | 0.04 | Sigmoid Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row78:col3 |
-| Emax, sec — Estimates | `Q320` · not captured | 6.86 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row80:col1 |
-| Emax, sec — RSE % | `Q320` · not captured | 39.1 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row80:col2 |
-| Emax, sec — 95% CI | `Q320` · not captured | 1.61 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row80:col3 |
-| EC50, ng/mL — Estimates | `Q321` · not captured | 418.0 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row81:col1 |
-| EC50, ng/mL — RSE % | `Q321` · not captured | 60.3 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row81:col2 |
-| EC50, ng/mL — 95% CI | `Q321` · not captured | -75.9 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row81:col3 |
+| Emax, sec — Estimates | `Q320` · not captured | 6.86 | sec | not captured | exact (not captured) | psp412103-tbl-0003:row80:col1 |
+| Emax, sec — RSE % | `Q320` · not captured | 39.1 | sec | not captured | exact (not captured) | psp412103-tbl-0003:row80:col2 |
+| Emax, sec — 95% CI | `Q320` · not captured | 1.61 | sec | not captured | exact (not captured) | psp412103-tbl-0003:row80:col3 |
+| EC50, ng/mL — Estimates | `Q321` · not captured | 418.0 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row81:col1 |
+| EC50, ng/mL — RSE % | `Q321` · not captured | 60.3 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row81:col2 |
+| EC50, ng/mL — 95% CI | `Q321` · not captured | -75.9 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row81:col3 |
 | IIV + IOVEC50 (CV, %) — Estimates | `Q312` · not captured | 0.07 | CV, % | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row82:col1 |
 | IIV + IOVEC50 (CV, %) — RSE % | `Q312` · not captured | 71.5 | CV, % | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row82:col2 |
 | IIV + IOVEC50 (CV, %) — 95% CI | `Q313` · not captured | 0.00 | CV, % | not captured | llm_corrected (not captured) | psp412103-tbl-0003:row82:col3 |
-| ε (additive), sec — Estimates | `Q317` · not captured | 0.04 | Simple Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row83:col1 |
-| ε (additive), sec — RSE % | `Q317` · not captured | 9.3 | Simple Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row83:col2 |
-| ε (additive), sec — 95% CI | `Q317` · not captured | 0.03 | Simple Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row83:col3 |
-| Emax, SAD, sec — Estimates | `Q320` · not captured | 16.9 | seconds | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row86:col1 |
-| Emax, SAD, sec — RSE % | `Q320` · not captured | 13.1 | seconds | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row86:col2 |
-| Emax, SAD, sec — 95% CI | `Q100` · not captured | 12.5 | seconds | not captured | llm_corrected (not captured) | psp412103-tbl-0003:row86:col3 |
-| Emax, SAD/MAD, sec — Estimates | `Q320` · not captured | 20.4 | seconds | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row87:col1 |
-| Emax, SAD/MAD, sec — RSE % | `Q320` · not captured | 12.5 | seconds | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row87:col2 |
-| Emax, SAD/MAD, sec — 95% CI | `Q100` · not captured | 15.4 | seconds | not captured | llm_corrected (not captured) | psp412103-tbl-0003:row87:col3 |
+| ε (additive), sec — Estimates | `Q317` · not captured | 0.04 | sec | not captured | llm (not captured) | psp412103-tbl-0003:row83:col1 |
+| Emax, SAD, sec — Estimates | `Q320` · not captured | 16.9 | sec | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row86:col1 |
+| Emax, SAD, sec — RSE % | `Q320` · not captured | 13.1 | sec | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row86:col2 |
+| Emax, SAD, sec — 95% CI | `Q320` · not captured | 12.5 | sec | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row86:col3 |
+| Emax, SAD/MAD, sec — Estimates | `Q320` · not captured | 20.4 | sec | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row87:col1 |
+| Emax, SAD/MAD, sec — RSE % | `Q320` · not captured | 12.5 | sec | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row87:col2 |
+| Emax, SAD/MAD, sec — 95% CI | `Q320` · not captured | 15.4 | sec | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row87:col3 |
 | IIVEmax (CV, %) — Estimates | `Q312` · not captured | 0.09 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row88:col1 |
-| IIVEmax (CV, %) — RSE % | `Q320` · not captured | 86.1 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row88:col2 |
+| IIVEmax (CV, %) — RSE % | `Q312` · not captured | 86.1 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row88:col2 |
 | IIVEmax (CV, %) — 95% CI | `Q312` · not captured | -0.06 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row88:col3 |
-| EC50, ng/mL — Estimates | `Q321` · not captured | 573.0 | seconds | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row89:col1 |
-| EC50, ng/mL — RSE % | `Q321` · not captured | 22.7 | seconds | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row89:col2 |
-| EC50, ng/mL — 95% CI | `Q321` · not captured | 318.2 | seconds | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row89:col3 |
+| EC50, ng/mL — Estimates | `Q321` · not captured | 573.0 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row89:col1 |
+| EC50, ng/mL — RSE % | `Q321` · not captured | 22.7 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row89:col2 |
+| EC50, ng/mL — 95% CI | `Q321` · not captured | 318.2 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row89:col3 |
 | IIVEC50 (CV, %) — Estimates | `Q321` · not captured | 0.33 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row90:col1 |
 | IIVEC50 (CV, %) — RSE % | `Q321` · not captured | 62.3 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row90:col2 |
 | IIVEC50 (CV, %) — 95% CI | `Q321` · not captured | -0.07 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row90:col3 |
@@ -212,26 +207,25 @@ Choi HY; Choi S; Kim YH; Lim HS et al. (2016). CPT: pharmacometrics & systems ph
 | IOVγ (CV, %) — RSE % | `Q313` · not captured | 35.5 | CV, % | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row93:col2 |
 | IOVγ (CV, %) — 95% CI | `Q313` · not captured | 0.02 | CV, % | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row93:col3 |
 | ε (proportional)e — Estimates | `Q316` · not captured | 0.05 | seconds | not captured | llm (not captured) | psp412103-tbl-0003:row94:col1 |
-| Emax, sec — Estimates | `Q320` · not captured | 12.4 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row96:col1 |
-| Emax, sec — RSE % | `Q320` · not captured | 10.3 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row96:col2 |
-| Emax, sec — 95% CI | `Q320` · not captured | 9.9 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row96:col3 |
-| EC50, ng/mL — Estimates | `Q321` · not captured | 135.0 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row97:col1 |
-| EC50, ng/mL — RSE % | `Q321` · not captured | 14.3 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row97:col2 |
-| EC50, ng/mL — 95% CI | `Q321` · not captured | 97.2 | Sigmoid Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row97:col3 |
+| Emax, sec — Estimates | `Q320` · not captured | 12.4 | sec | not captured | exact (not captured) | psp412103-tbl-0003:row96:col1 |
+| Emax, sec — RSE % | `Q320` · not captured | 10.3 | sec | not captured | exact (not captured) | psp412103-tbl-0003:row96:col2 |
+| Emax, sec — 95% CI | `Q320` · not captured | 9.9 | sec | not captured | exact (not captured) | psp412103-tbl-0003:row96:col3 |
+| EC50, ng/mL — Estimates | `Q321` · not captured | 135.0 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row97:col1 |
+| EC50, ng/mL — RSE % | `Q321` · not captured | 14.3 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row97:col2 |
+| EC50, ng/mL — 95% CI | `Q321` · not captured | 97.2 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row97:col3 |
 | γ — 95% CI | `Q89` · not captured | 0.61 | not captured | not captured | llm (not captured) | psp412103-tbl-0003:row98:col3 |
 | IIV + IOVγ (CV, %) — Estimates | `Q312` · not captured | 0.27 | CV, % | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row99:col1 |
 | IIV + IOVγ (CV, %) — RSE % | `Q312` · not captured | 38.5 | CV, % | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row99:col2 |
-| IIV + IOVγ (CV, %) — 95% CI | `Q313` · not captured | 0.07 | CV, % | not captured | llm_corrected (not captured) | psp412103-tbl-0003:row99:col3 |
-| ε (additive), sec — Estimates | `Q325` · not captured | 0.04 | Sigmoid Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row100:col1 |
-| ε (additive), sec — RSE % | `Q325` · not captured | 9.3 | Sigmoid Emax model | not captured | llm (not captured) | psp412103-tbl-0003:row100:col2 |
+| IIV + IOVγ (CV, %) — 95% CI | `Q312` · not captured | 0.07 | CV, % | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row99:col3 |
+| ε (additive), sec — Estimates | `Q317` · not captured | 0.04 | sec | not captured | llm (not captured) | psp412103-tbl-0003:row100:col1 |
 | ε (additive) — Estimates | `Q317` · not captured | 9.28 | additive | not captured | llm (not captured) | psp412103-tbl-0003:row105:col1 |
 | ε (additive) — RSE % | `Q317` · not captured | 10.9 | additive | not captured | llm (not captured) | psp412103-tbl-0003:row105:col2 |
 | Emax — Estimates | `Q320` · not captured | 3.83 | Simple Emax model | not captured | exact (not captured) | psp412103-tbl-0003:row108:col1 |
 | Emax — RSE % | `Q320` · not captured | 11.4 | Simple Emax model | not captured | exact (not captured) | psp412103-tbl-0003:row108:col2 |
 | Emax — 95% CI | `Q320` · not captured | 2.98 | Simple Emax model | not captured | exact (not captured) | psp412103-tbl-0003:row108:col3 |
-| EC50, ng/mL — Estimates | `Q321` · not captured | 759.0 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row110:col1 |
-| EC50, ng/mL — RSE % | `Q321` · not captured | 15.2 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row110:col2 |
-| EC50, ng/mL — 95% CI | `Q321` · not captured | 533.6 | Simple Emax model | not captured | llm_confirmed (not captured) | psp412103-tbl-0003:row110:col3 |
+| EC50, ng/mL — Estimates | `Q321` · not captured | 759.0 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row110:col1 |
+| EC50, ng/mL — RSE % | `Q321` · not captured | 15.2 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row110:col2 |
+| EC50, ng/mL — 95% CI | `Q321` · not captured | 533.6 | ng/mL | not captured | exact (not captured) | psp412103-tbl-0003:row110:col3 |
 | IIVEC50 (CV, %) — Estimates | `Q321` · not captured | 0.29 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row111:col1 |
 | IIVEC50 (CV, %) — RSE % | `Q321` · not captured | 33.9 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row111:col2 |
 | IIVEC50 (CV, %) — 95% CI | `Q321` · not captured | 0.10 | CV, % | not captured | llm (not captured) | psp412103-tbl-0003:row111:col3 |

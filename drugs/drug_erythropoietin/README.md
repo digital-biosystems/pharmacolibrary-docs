@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;erythropoietin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Erythropoietin_Frymoyer2017_reference&quot;,&quot;label&quot;:&quot;Frymoyer_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_erythropoietin/Erythropoietin_Frymoyer2017_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Erythropoietin_Chakraborty2005_reference&quot;,&quot;label&quot;:&quot;Chakraborty_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_erythropoietin/Erythropoietin_Chakraborty2005_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Erythropoietin_Frymoyer2017_reference&quot;,&quot;label&quot;:&quot;Frymoyer_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_erythropoietin/Erythropoietin_Frymoyer2017_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Erythropoietin_OlssonGisleskog2007_reference&quot;,&quot;label&quot;:&quot;Olsson-Gisleskog_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_erythropoietin/Erythropoietin_OlssonGisleskog2007_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Erythropoietin_Gaudard2003_reference&quot;,&quot;label&quot;:&quot;Gaudard_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_erythropoietin/Erythropoietin_Gaudard2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Erythropoietin_Jolling2004_reference&quot;,&quot;label&quot;:&quot;Jolling_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_erythropoietin/Erythropoietin_Jolling2004_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # erythropoietin
 
@@ -23,19 +23,23 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-08 19:43 | 12:07 | 1/0/0 | 0/0/0 | 0/0/0 | 48,020/35,130 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 3/7 | 9/1 | 0 |
+| 2026-09-19 01:03 | 7:46 | 2/2/1 | 0/0/0 | 0/0/0 | 152,043/13,167 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 3/7 | 9/1 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Chakraborty_2005_reference](drugs/drug_erythropoietin/Erythropoietin_Chakraborty2005_reference.md) | Chakraborty A et al., Population pharmacokinetics of erythrop…, Journal of clinical pharmac… (2005) | [10.1177/0091270004269520](https://doi.org/10.1177/0091270004269520) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Frymoyer_2017_reference](drugs/drug_erythropoietin/Erythropoietin_Frymoyer2017_reference.md) | Frymoyer A et al., High-dose erythropoietin population pha…, Pediatric research (2017) | [10.1038/pr.2017.15](https://doi.org/10.1038/pr.2017.15) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Olsson-Gisleskog_2007_reference](drugs/drug_erythropoietin/Erythropoietin_OlssonGisleskog2007_reference.md) | Olsson-Gisleskog P et al., Population pharmacokinetics meta-analys…, Clinical pharmacokinetics (2007) | [10.2165/00003088-200746020-00004](https://doi.org/10.2165/00003088-200746020-00004) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Gaudard_2003_reference](drugs/drug_erythropoietin/Erythropoietin_Gaudard2003_reference.md) | Gaudard A et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical drug investigation (2003) | [10.2165/00044011-200323030-00003](https://doi.org/10.2165/00044011-200323030-00003) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Jolling_2004_reference](drugs/drug_erythropoietin/Erythropoietin_Jolling2004_reference.md) | Jolling K et al., Population pharmacokinetic analysis of…, Journal of pharmaceutical s… (2004) | [10.1002/jps.20200](https://doi.org/10.1002/jps.20200) |
 
 ## Coverage
 
 - **PubMed hits:** 258 matched, 63 returned
 - **screened:** 16  ·  **relevant:** 7
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs_review 3  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -55,7 +59,7 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Keller_2015.pdf` | Keller F et al., Pharmacokinetic and pharmacodynamic con…, Expert opinion on drug meta… (2015) | pd | 5 | [10.1517/17425255.2015.989832](https://doi.org/10.1517/17425255.2015.989832) | [25466552](https://www.ncbi.nlm.nih.gov/pubmed/25466552) | metadata signals extractable PD data (sigmoid) |
 | `Marathe_2024.pdf` | Marathe DD et al., Exposure-Response Analyses for Belzutif…, Journal of clinical pharmac… (2024) | pd | 5 | [10.1002/jcph.2459](https://doi.org/10.1002/jcph.2459) | [38752556](https://www.ncbi.nlm.nih.gov/pubmed/38752556) | metadata signals extractable PD data (Exposure-Response) |
 
-<sub>queue written 2026-09-06T14:15:30.714068+00:00</sub>
+<sub>queue written 2026-09-19T00:56:01.244186+00:00</sub>
 
 ## Screened and excluded
 
@@ -66,24 +70,24 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Altraif_2017 | not_relevant | 0 | 0 | The paper investigates ribavirin dosing strategies in HCV patients and mentions erythropoietin use as a consequence of anemia, but it does not report any pharmacogenomic effects (gene variants) on the PK or PD of erythropoietin. |
 | PGx | Amann_2018 | not_relevant | 0 | 0 | The paper describes engineering CHO cells to alter the glycosylation profile of recombinant erythropoietin, which is a manufacturing process modification, not a study of how human genetic variants affect the PK or PD of the drug. |
 | popPK | An_2017 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for darbepoetin, not erythropoietin. |
-| PGx | Anderson_2015 | not_relevant | 0 | 0 | The study investigates the effect of erythropoietin on hepatic enzyme expression in a rat model of traumatic brain injury, not the effect of a gene variant on erythropoietin's PK/PD. |
+| PGx | Anderson_2015 | not_relevant | 0 | 0 | The study investigates the effect of Erythropoietin (EPO) on hepatic drug-metabolizing enzymes in a rat model of TBI, but does not report any pharmacogenomic effects (gene variants) on the PK or PD of EPO itself. |
 | PGx | Ando_1995 | not_relevant | 0 | 0 | The paper discusses the clinical use of erythropoietin for FAP symptoms but does not report any pharmacogenomic effects on its PK or PD parameters. |
 | PGx | Antonini_2015 | not_relevant | 0 | 0 | The paper reports clinical outcomes and drug-drug interactions in HCV/HIV patients, but does not investigate the effect of gene variants on the pharmacokinetics or pharmacodynamics of erythropoietin. |
 | PGx | Bernabucci_2014 | not_relevant | 0 | 0 | The paper reports clinical efficacy (SVR) of Boceprevir in HCV patients and mentions Erythropoietin use for anemia management, but does not report any pharmacogenomic effects on the PK or PD parameters of Erythropoietin. |
 | PGx | Charache_1992 | not_relevant | 0 | 0 | The paper studies hydroxyurea in sickle cell anemia and does not report pharmacogenomic effects on the PK or PD of erythropoietin. |
 | PGx | Coilly_2014 | not_relevant | 0 | 0 | The paper reports clinical outcomes and drug-drug interactions for protease inhibitors in liver transplant patients, with no mention of pharmacogenomic variants affecting erythropoietin PK/PD. |
-| PGx | Corredor_2020 | not_relevant | 2 | 5 | The paper reports associations between genetic variants and the Erythropoietin Resistance Index (a clinical biomarker), but does not report pharmacokinetic parameters (e.g., clearance, half-life) or direct pharmacodynamic effects of erythropoietin administration. |
+| PGx | Corredor_2020 | not_relevant | 2 | 5 | The paper reports associations between genetic variants and the Erythropoietin Resistance Index (a clinical marker of PD response), but it does not report pharmacokinetic parameters or specific pharmacodynamic effects of the drug itself in a pharmacogenomic context. |
 | PGx | Ellis_2026 | not_relevant | 0 | 0 | The paper is a general review of Polycythemia Vera pathophysiology and management, not a study on the pharmacogenomics of erythropoietin. |
 | PGx | Erbayraktar_2003 | not_relevant | 0 | 0 | The paper describes a structural modification of the drug (asialoerythropoietin) and its pharmacological effects, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | PGx | Faisal_2014 | not_relevant | 0 | 0 | The paper reports clinical outcomes and drug-drug interactions for HCV therapy, with no analysis of genetic variants affecting erythropoietin pharmacokinetics or pharmacodynamics. |
 | PGx | Gaur_2020 | not_relevant | 0 | 0 | The paper reports clinical outcomes for sofosbuvir-velpatasvir in HCV patients and does not involve erythropoietin or pharmacogenomic analysis. |
-| PGx | Ghasemi_2025 | not_relevant | 0 | 0 | The study reports the PK/PD of casdatifan in healthy participants but does not investigate the impact of gene variants or genotypes on these parameters. |
+| PGx | Ghasemi_2025 | not_relevant | 0 | 0 | The study reports the PK/PD of casdatifan in healthy participants but does not investigate the effect of gene variants or genotypes on these parameters. |
 | PGx | Gordon_2015 | not_relevant | 0 | 0 | The paper reports safety outcomes and predictors of anemia in HCV patients but does not investigate the effect of gene variants on the pharmacokinetics or pharmacodynamics of erythropoietin. |
 | popPK | Heh-Foster_2014 | irrelevant | 0 | 0 | The study is a clinical retrospective analysis of hemoglobin recovery rates, not a pharmacokinetic study, and reports no PK parameters for erythropoietin. |
-| PGx | Hermann_2010 | not_relevant | 0 | 0 | The paper is an editorial discussing the neuroprotective properties and delivery of erythropoietin variants in stroke, with no data on gene variants affecting PK or PD parameters. |
+| PGx | Hermann_2010 | not_relevant | 0 | 0 | The paper discusses non-hematopoietic variants of erythropoietin (Neuro-EPO) for stroke treatment and does not report pharmacogenomic effects of gene variants on PK/PD parameters. |
 | PGx | Hu_2019 | not_relevant | 0 | 0 | The paper reviews FLT3 glycosylation in AML and does not report pharmacogenomic effects on the PK or PD of erythropoietin. |
 | popPK | Huber_2025 | irrelevant | 0 | 0 | The study investigates the pathophysiology of anemia and EPO resistance in primary hyperparathyroidism, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for erythropoietin. |
-| PGx | Jain_2022 | not_relevant | 0 | 0 | The paper is a systematic review of therapeutic interventions for Friedreich ataxia and does not report pharmacogenomic effects on the PK or PD of erythropoietin. |
+| PGx | Jain_2022 | not_relevant | 0 | 0 | The paper is a systematic review of clinical efficacy in Friedreich ataxia and does not report pharmacogenomic effects on PK or PD parameters. |
 | PGx | Kamar_2014 | not_relevant | 0 | 0 | The paper reports clinical outcomes of ribavirin therapy for HEV and mentions erythropoietin use as a supportive care measure for anemia, but it does not investigate the effect of gene variants on the PK or PD of erythropoietin. |
 | popPK | Keller_2015 | irrelevant | 2 | 0 | The paper is a review of darbepoetin (a different drug) and reports pharmacodynamic parameters (CE50, half-life) rather than quantitative population-pharmacokinetic disposition parameters (CL, V, Q) for erythropoietin. |
 | PGx | Kwo_2014 | not_relevant | 0 | 0 | The paper reports clinical outcomes of an antiviral regimen and mentions erythropoietin use as an adverse event management strategy, but it does not report any pharmacogenomic effects on the PK or PD of erythropoietin. |
@@ -92,15 +96,15 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Marathe_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and exposure-response of belzutifan, with erythropoietin serving only as a pharmacodynamic biomarker rather than the subject drug. |
 | PGx | Marra_2024 | not_relevant | 0 | 0 | The paper describes the genetic basis of a congenital anemia disorder (CDA I) and compares disease severity markers, but it does not report the effect of a gene variant on the pharmacokinetics or pharmacodynamics of erythropoietin as a therapeutic drug. |
 | popPK | Neelakantan_2009 | irrelevant | 2 | 0 | The study focuses on endogenous EPO PK/PD in sheep rather than the disposition parameters (CL, V, etc.) of administered recombinant erythropoietin, and no quantitative PK parameters for the drug are reported. |
-| PGx | OBrien_2024 | not_relevant | 0 | 0 | The paper investigates genetic associations with placental metabolic phenotypes and endogenous erythropoietin levels in high-altitude pregnancy, not the pharmacokinetics or pharmacodynamics of exogenous erythropoietin therapy. |
+| PGx | OBrien_2024 | not_relevant | 0 | 0 | The paper investigates the association between genetic variants and endogenous erythropoietin levels in high-altitude populations, not the pharmacokinetics or pharmacodynamics of exogenous erythropoietin as a drug. |
 | PGx | Oguro_2011 | not_relevant | 0 | 0 | The paper studies CYP3A4 overexpression in cancer cells and its effect on erythropoietin gene expression, not the pharmacokinetics or pharmacodynamics of erythropoietin as a drug. |
 | PGx | Pergola_2021 | not_relevant | 0 | 0 | The study investigates the effect of a drug (ziltivekimab) in a specific genotype subgroup (rs855791) but does not report a pharmacogenomic effect on the PK or PD parameters of erythropoietin itself. |
 | PGx | Pluthero_2019 | not_relevant | 0 | 0 | The paper reviews inherited platelet disorders and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of erythropoietin. |
 | PGx | Pockros_2016 | not_relevant | 0 | 0 | The paper studies HCV treatment in renal impairment and does not report pharmacogenomic effects on erythropoietin PK/PD. |
 | popPK | Reynaldo-Fernández_2018 | relevant | 10 | 0 | The paper describes a population PK study of erythropoietin in rabbits with a two-compartment model, but the specific numeric parameter values (CL, V, Q, etc.) are not present in the provided evidence. |
-| PGx | Sangrador_2014 | not_relevant | 0 | 0 | The paper compares safety profiles of telaprevir therapy in HCV monoinfected vs. HIV-coinfected patients and does not report pharmacogenomic effects on erythropoietin PK/PD parameters. |
+| PGx | Sangrador_2014 | not_relevant | 0 | 0 | The paper compares toxicity profiles of HCV treatment in monoinfected vs. coinfected patients and does not report pharmacogenomic effects on erythropoietin PK/PD. |
 | PGx | Shah_2023 | not_relevant | 0 | 0 | The paper studies the pathophysiology of Chuvash erythrocytosis and thrombosis risk, not the pharmacokinetics or pharmacodynamics of exogenous erythropoietin therapy. |
-| PGx | Sierra_2019 | not_relevant | 0 | 0 | The study investigates the effect of ACTN3 genotype on hematological and iron metabolism responses to marathon exercise, not the pharmacokinetics or pharmacodynamics of erythropoietin administration. |
+| PGx | Sierra_2019 | not_relevant | 0 | 0 | The study investigates the effect of ACTN3 genotype on endogenous erythropoietin levels and hematological parameters following exercise, not the pharmacokinetics or pharmacodynamics of exogenous erythropoietin administration. |
 | PGx | Sochorcova_2023 | not_relevant | 0 | 0 | The paper investigates genetic causes of congenital erythrocytosis and iron metabolism, not the pharmacokinetics or pharmacodynamics of exogenous erythropoietin therapy. |
 | PGx | Takano_2021 | not_relevant | 0 | 0 | The paper investigates the effect of PHD2 inhibitors on CYP enzyme expression and mentions erythropoietin only as a marker for HIF-α stabilization, not as a drug whose PK/PD is being analyzed for pharmacogenomic effects. |
 | popPK | Thomas_2025 | irrelevant | 0 | 0 | The paper is a review of bioanalytical methods in doping controls and does not report quantitative pharmacokinetic parameters for erythropoietin. |

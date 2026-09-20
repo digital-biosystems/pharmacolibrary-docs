@@ -52,6 +52,8 @@ Mathis A; Sale M; Cornpropst M; Sheridan WP; Ma SC et al. (2022). Clinical and t
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=berotralstat
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - population split: 'normal weight adults (80–100 kg)' subgroup of Mathis_2022 (paper reports 6 populations: adolescents (12–18 years), low weight adults (60–80 kg), normal weight adults (80–100 kg), overweight adults (100–120 kg), parameter estimate (rse%), underweight adults (40–60 kg))
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - transposed table Mathis_2022_table_2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing

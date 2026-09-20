@@ -50,6 +50,7 @@ Haefliger D; Mina L; Guidi M; Marzolini C; Thoueille P; Rothuizen LE; Thoma Y; D
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Haefliger_2025:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Haefliger_2025:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 13.8 | not captured | not captured | ['Haefliger_2025:review'] |
@@ -61,6 +62,7 @@ Haefliger D; Mina L; Guidi M; Marzolini C; Thoueille P; Rothuizen LE; Thoma Y; D
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=hydroxyethylstarch) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |

@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Reactive oxygen species — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# Reactive oxygen species — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Wang_2020`
 - **model family:** `unknown`

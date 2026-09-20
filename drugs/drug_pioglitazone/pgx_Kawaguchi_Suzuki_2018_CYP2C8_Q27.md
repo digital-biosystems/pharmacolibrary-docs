@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pioglitazone_Kadam2013_reference&quot;,&quot;label&quot;:&quot;Kadam_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pioglitazone/Pioglitazone_Kadam2013_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pioglitazone_Kadam2013_reference&quot;,&quot;label&quot;:&quot;Kadam_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pioglitazone/Pioglitazone_Kadam2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # CYP2C8 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>

@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ornithine_Le1997_burn_patients&quot;,&quot;label&quot;:&quot;Le_1997_burn patients&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Le1997_burn_patients.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ornithine_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Le1997_reference&quot;,&quot;label&quot;:&quot;Le_1997_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Le1997_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Serkland2026_reference&quot;,&quot;label&quot;:&quot;Serkland_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Serkland2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ornithine_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ornithine/Ornithine_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Arginase activity — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -14,7 +14,26 @@ Lai YL; Aoyama S; Nagai R; Miyoshi N; Ohshima H et al. (2010). Journal of clinic
   ·  DOI: [10.3164/jcbn.09-104](https://doi.org/10.3164/jcbn.09-104)
 
 ## Parameters
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|
+| IC50 (µM) — L-NMMA | `Q322` · not captured | 5 | µM | not captured | exact (not captured) | T1:row0:col3 |
+| IC50 (µM) — ADMA | `Q322` · not captured | 16 | µM | not captured | exact (not captured) | T1:row0:col4 |
+| IC50 (µM) — CMA | `Q322` · not captured | 830 | µM | not captured | exact (not captured) | T1:row0:col5 |
+| IC50 (µM) — CEA | `Q322` · not captured | 3870 | µM | not captured | exact (not captured) | T1:row0:col6 |
+| IC50 (µM) — MG-H1 | `Q322` · not captured | 1280 | µM | not captured | exact (not captured) | T1:row0:col7 |
+| IC50 (µM) — L-NMMA | `Q322` · not captured | 10 | µM | not captured | exact (not captured) | T1:row1:col3 |
+| IC50 (µM) — ADMA | `Q322` · not captured | 24 | µM | not captured | exact (not captured) | T1:row1:col4 |
+| IC50 (µM) — CMA | `Q322` · not captured | 1160 | µM | not captured | exact (not captured) | T1:row1:col5 |
+| IC50 (µM) — MG-H1 | `Q322` · not captured | 2970 | µM | not captured | exact (not captured) | T1:row1:col7 |
+| IC50 (µM) — L-NMMA | `Q322` · not captured | 8 | µM | not captured | exact (not captured) | T1:row2:col3 |
+| IC50 (µM) — ADMA | `Q322` · not captured | 23 | µM | not captured | exact (not captured) | T1:row2:col4 |
+| IC50 (µM) — MG-H1 | `Q322` · not captured | 4170 | µM | not captured | exact (not captured) | T1:row2:col7 |
+| IC50 (µM) — CML | `Q322` · not captured | 1930 | µM | not captured | exact (not captured) | T1:row2:col8 |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 

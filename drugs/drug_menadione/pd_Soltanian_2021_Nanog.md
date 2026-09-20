@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Nanog expression — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# Nanog — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Soltanian_2021`
 - **model family:** `unknown`

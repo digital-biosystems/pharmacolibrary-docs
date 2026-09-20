@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03F&quot;,&quot;href&quot;:&quot;atc/A03F.md&quot;},{&quot;label&quot;:&quot;metoclopramide&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/&quot;},{&quot;label&quot;:&quot;Brandon_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metoclopramide_Brandon2024_reference&quot;,&quot;label&quot;:&quot;Brandon_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/Metoclopramide_Brandon2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Metoclopramide_Ge2020_reference&quot;,&quot;label&quot;:&quot;Ge_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/Metoclopramide_Ge2020_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metoclopramide_Bateman1978_reference&quot;,&quot;label&quot;:&quot;Bateman_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/Metoclopramide_Bateman1978_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metoclopramide_Brandon2024_reference&quot;,&quot;label&quot;:&quot;Brandon_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/Metoclopramide_Brandon2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Metoclopramide_Ge2020_reference&quot;,&quot;label&quot;:&quot;Ge_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/Metoclopramide_Ge2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -45,14 +45,14 @@ Brandon AM; Williams JM; Davis JL; Martin EG; Capper AM; Crabtree NE et al. (202
 - dropped value-less row: 'Cmax (ng/mL)a'
 - dropped value-less row: 'Tmax (h)a'
 - dropped value-less row: 'A (ng/mL)' (captured trailing unit 'ng/mL' for child rows)
-- dropped value-less row: 'α (h−1)' (captured trailing unit 'h−1' for child rows)
+- dropped value-less row: 'α (h-1)' (captured trailing unit 'h-1' for child rows)
 - dropped value-less row: 'B (ng/mL)' (captured trailing unit 'ng/mL' for child rows)
-- dropped value-less row: 'β (h−1)' (captured trailing unit 'h−1' for child rows)
+- dropped value-less row: 'β (h-1)' (captured trailing unit 'h-1' for child rows)
 - dropped value-less row: 't1/2α (h)' (captured trailing unit 'h' for child rows)
 - dropped value-less row: 't1/2β (h)' (captured trailing unit 'h' for child rows)
-- dropped value-less row: 'k10 (h−1)' (captured trailing unit 'h−1' for child rows)
-- dropped value-less row: 'k12 (h−1)' (captured trailing unit 'h−1' for child rows)
-- dropped value-less row: 'k21 (h−1)' (captured trailing unit 'h−1' for child rows)
+- dropped value-less row: 'k10 (h-1)' (captured trailing unit 'h-1' for child rows)
+- dropped value-less row: 'k12 (h-1)' (captured trailing unit 'h-1' for child rows)
+- dropped value-less row: 'k21 (h-1)' (captured trailing unit 'h-1' for child rows)
 - dropped value-less row: 'k10 t1/2 (h)' (captured trailing unit 'h' for child rows)
 - dropped value-less row: 'AUC0-∞ (h × ng/mL)' (captured trailing unit 'h × ng/mL' for child rows)
 - dropped value-less row: 'Cl (mL/kg/min)' (captured trailing unit 'mL/kg/min' for child rows)
@@ -82,6 +82,7 @@ Brandon AM; Williams JM; Davis JL; Martin EG; Capper AM; Crabtree NE et al. (202
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | fail | 9.83 | 0.168 | 0.0171 | 0.25 | reported t½β |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 14.5 | not captured | not captured | ['Brandon_2024:discussion_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |

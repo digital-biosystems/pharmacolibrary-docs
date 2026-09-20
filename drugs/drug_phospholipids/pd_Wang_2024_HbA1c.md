@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phospholipids_Hummel1975_non_pregnant_female_rats&quot;,&quot;label&quot;:&quot;Hummel_1975_non pregnant female rats&quot;,&quot;href&quot;:&quot;drugs/drug_phospholipids/Phospholipids_Hummel1975_non_pregnant_female_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phospholipids_Hummel1975_non_pregnant_female_rats&quot;,&quot;label&quot;:&quot;Hummel_1975_non pregnant female rats&quot;,&quot;href&quot;:&quot;drugs/drug_phospholipids/Phospholipids_Hummel1975_non_pregnant_female_rats.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # HbA1c — PD  <span class="pk-badge pk-badge--red">rejected</span>
@@ -14,7 +14,37 @@ Wang L; Huang X; Sun M; Zheng T; Zheng L; Lin X; et al. et al. (2024). Nutrition
   ·  DOI: [10.1038/s41387-024-00262-w](https://doi.org/10.1038/s41387-024-00262-w)
 
 ## Parameters
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|
+| Ka — Final model (CV%) | `Q49` · not captured | 1.175 | not captured | not captured | exact (not captured) | Tab2:row2:col1 |
+| Ka — Bootstrap results | `Q49` · not captured | 1.184 | not captured | not captured | exact (not captured) | Tab2:row2:col2 |
+| Ka — Bootstrap results | `Q49` · not captured | 0.005 | not captured | not captured | exact (not captured) | Tab2:row2:col3 |
+| V (L) — Final model (CV%) | `Q61` · not captured | 26.151 | L | not captured | exact (not captured) | Tab2:row3:col1 |
+| V (L) — Bootstrap results | `Q61` · not captured | 25.99 | L | not captured | exact (not captured) | Tab2:row3:col2 |
+| V (L) — Bootstrap results | `Q61` · not captured | 12.995 | L | not captured | exact (not captured) | Tab2:row3:col3 |
+| CL (L·h-1) — Final model (CV%) | `Q22` · not captured | 0.411 | L·h-1 | not captured | exact (not captured) | Tab2:row4:col1 |
+| CL (L·h-1) — Bootstrap results | `Q22` · not captured | 0.568 | L·h-1 | not captured | exact (not captured) | Tab2:row4:col2 |
+| CL (L·h-1) — Bootstrap results | `Q22` · not captured | 0.37 | L·h-1 | not captured | exact (not captured) | Tab2:row4:col3 |
+| σ — Final model (CV%) | `Q315` · not captured | 0.354 | not captured | not captured | llm (not captured) | Tab2:row5:col1 |
+| σ — Bootstrap results | `Q315` · not captured | 0.380 | not captured | not captured | llm (not captured) | Tab2:row5:col2 |
+| σ — Bootstrap results | `Q315` · not captured | 0.008 | not captured | not captured | llm (not captured) | Tab2:row5:col3 |
+| E0 (%) — Final model (CV%) | `Q324` · not captured | 5.641 | not captured | not captured | exact (not captured) | Tab2:row6:col1 |
+| E0 (%) — Bootstrap results | `Q324` · not captured | 5.58 | not captured | not captured | exact (not captured) | Tab2:row6:col2 |
+| E0 (%) — Bootstrap results | `Q324` · not captured | 5.528 | not captured | not captured | exact (not captured) | Tab2:row6:col3 |
+| IC50 (g/L) — Final model (CV%) | `Q322` · not captured | 0.090 | g/L | not captured | exact (not captured) | Tab2:row7:col1 |
+| IC50 (g/L) — Bootstrap results | `Q322` · not captured | 0.089 | g/L | not captured | exact (not captured) | Tab2:row7:col2 |
+| IC50 (g/L) — Bootstrap results | `Q322` · not captured | 0.089 | g/L | not captured | exact (not captured) | Tab2:row7:col3 |
+| Imax (%) — Final model (CV%) | `Q323` · not captured | 0.597 | not captured | not captured | exact (not captured) | Tab2:row8:col1 |
+| Imax (%) — Bootstrap results | `Q323` · not captured | 0.615 | not captured | not captured | exact (not captured) | Tab2:row8:col2 |
+| Imax (%) — Bootstrap results | `Q323` · not captured | 0.425 | not captured | not captured | exact (not captured) | Tab2:row8:col3 |
+| σ — Final model (CV%) | `Q315` · not captured | 0.354 | not captured | not captured | llm (not captured) | Tab2:row9:col1 |
+| σ — Bootstrap results | `Q315` · not captured | 1.615 | not captured | not captured | llm (not captured) | Tab2:row9:col2 |
+| σ — Bootstrap results | `Q315` · not captured | 0.354 | not captured | not captured | llm (not captured) | Tab2:row9:col3 |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 

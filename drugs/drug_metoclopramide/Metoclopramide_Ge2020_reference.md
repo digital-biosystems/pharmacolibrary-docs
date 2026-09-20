@@ -1,37 +1,36 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03F&quot;,&quot;href&quot;:&quot;atc/A03F.md&quot;},{&quot;label&quot;:&quot;metoclopramide&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/&quot;},{&quot;label&quot;:&quot;Ge_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metoclopramide_Brandon2024_reference&quot;,&quot;label&quot;:&quot;Brandon_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/Metoclopramide_Brandon2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metoclopramide_Ge2020_reference&quot;,&quot;label&quot;:&quot;Ge_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/Metoclopramide_Ge2020_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metoclopramide_Bateman1978_reference&quot;,&quot;label&quot;:&quot;Bateman_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/Metoclopramide_Bateman1978_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metoclopramide_Brandon2024_reference&quot;,&quot;label&quot;:&quot;Brandon_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/Metoclopramide_Brandon2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metoclopramide_Ge2020_reference&quot;,&quot;label&quot;:&quot;Ge_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metoclopramide/Metoclopramide_Ge2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # metoclopramide — `Metoclopramide_Ge2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
 Ge S; Mendley SR; Gerhart JG; Melloni C; Hornik CP; Sullivan JE; et al. et al. (2020). Clinical and translational science 13
   ·  DOI: [10.1111/cts.12803](https://doi.org/10.1111/cts.12803)
 
 ## Model component
-<dbs-pgx drug="metoclopramide" model-id="Metoclopramide_Ge2020_reference" status="model_quarantined" stale="false" population="infants, children, and adolescents" measured-compound="metoclopramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="metoclopramide" model-id="Metoclopramide_Ge2020_reference" status="needs_review" stale="false" population="infants, children, and adolescents" measured-compound="metoclopramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| K a, hour−1 | `Q95` · t1/2ka | 0.4 | not captured | not captured | not captured | not captured | llm (0.6) | cts12803-tbl-0002:row2:col1, cts12803-tbl-0002:row2:col2, cts12803-tbl-0002:row2:col3, cts12803-tbl-0002:row2:col4, cts12803-tbl-0002:row2:col5 | — | not captured |
+| K a, hour−1 | `Q49` · kabs | 0.4 | hour−1 | 0.00011111111111111112 | [1] / [h] | not captured | space_fold (0.95) | cts12803-tbl-0002:row2:col1, cts12803-tbl-0002:row2:col2, cts12803-tbl-0002:row2:col3, cts12803-tbl-0002:row2:col4, cts12803-tbl-0002:row2:col5 | — | not captured |
 | CL, L/hour/70 kg | `Q22` · CL | 19.6 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | cts12803-tbl-0002:row3:col1, cts12803-tbl-0002:row3:col2, cts12803-tbl-0002:row3:col3, cts12803-tbl-0002:row3:col4, cts12803-tbl-0002:row3:col5 | — | not captured |
 | V c, L/70 kg | `Q352` · Vnorm | 42.9 | not captured | not captured | not captured | not captured | llm (0.6) | cts12803-tbl-0002:row4:col1, cts12803-tbl-0002:row4:col2, cts12803-tbl-0002:row4:col3, cts12803-tbl-0002:row4:col4, cts12803-tbl-0002:row4:col5 | — | not captured |
 | Q, L/hour/70 kg | `Q30` · Q | 57.1 | not captured | not captured | not captured | not captured | llm (0.6) | cts12803-tbl-0002:row6:col1, cts12803-tbl-0002:row6:col2, cts12803-tbl-0002:row6:col3, cts12803-tbl-0002:row6:col4, cts12803-tbl-0002:row6:col5 | — | not captured |
@@ -50,6 +49,7 @@ Ge S; Mendley SR; Gerhart JG; Melloni C; Hornik CP; Sullivan JE; et al. et al. (
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=metoclopramide
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -62,17 +62,10 @@ Ge S; Mendley SR; Gerhart JG; Melloni C; Hornik CP; Sullivan JE; et al. et al. (
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cts12803-tbl-0002:row2:col1', 'cts12803-tbl-0002:row2:col2', 'cts12803-tbl-0002:row2:col3', 'cts12803-tbl-0002:row2:col4', 'cts12803-tbl-0002:row2:col5'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 19.6 | not captured | not captured | ['cts12803-tbl-0002:row3:col1', 'cts12803-tbl-0002:row3:col2', 'cts12803-tbl-0002:row3:col3', 'cts12803-tbl-0002:row3:col4', 'cts12803-tbl-0002:row3:col5'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -82,8 +75,6 @@ Ge S; Mendley SR; Gerhart JG; Melloni C; Hornik CP; Sullivan JE; et al. et al. (
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_metoclopramide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ge_2020` / `Ge_2020::reference`)
-- model: `../../../knowledgebase/drugs/drug_metoclopramide/models/modelica/_needs_review/Metoclopramide_Ge2020_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_metoclopramide/models/modelica/_needs_review/Metoclopramide_Ge2020_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -29,7 +29,7 @@ Serkland TT; Oma AF; Hallin EI; Øverås MH; Nygaard GO; Myhr KM; Torkildsen Ø;
 | ω V1 — 95% CI | `Q63` · not captured | 0.0882 | unit | not captured | llm_confirmed (not captured) | tab_1:row9:col2 |
 | ω V2 — Estimate (RSE%) | `Q64` · not captured | 0.109 | RSE% | not captured | llm_confirmed (not captured) | tab_1:row10:col1 |
 | ω V2 — 95% CI | `Q64` · not captured | 0.0534 | unit | not captured | llm_confirmed (not captured) | tab_1:row10:col2 |
-| ω CL — Estimate (RSE%) | `Q358` · not captured | 0.234 | RSE% | not captured | llm_corrected (not captured) | tab_1:row11:col1 |
+| ω CL — Estimate (RSE%) | `Q22` · not captured | 0.234 | RSE% | not captured | llm_confirmed (not captured) | tab_1:row11:col1 |
 | ω CL — 95% CI | `Q358` · not captured | 0.154 | unit | not captured | llm_corrected (not captured) | tab_1:row11:col2 |
 | σ add,OCR — Estimate (RSE%) | `Q317` · not captured | 0.545 | RSE% | not captured | llm (not captured) | tab_1:row13:col1 |
 | σ add,OCR — 95% CI | `Q317` · not captured | 0.390 | unit | not captured | llm (not captured) | tab_1:row13:col2 |

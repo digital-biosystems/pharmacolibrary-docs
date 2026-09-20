@@ -1,9 +1,9 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# alkaline phosphatase — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# Alkaline phosphatase — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Ooi_2026`
-- **model family:** `unknown`
+- **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
 - **tier:** population
 - **effect:** inhibition/unknown

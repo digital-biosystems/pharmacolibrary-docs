@@ -11,7 +11,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 10:44 | 11:22 | 0/0/0 | 0/0/0 | 0/0/0 | 21,581/1,024 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/2 | 3/0 | 0 |
+| 2026-09-18 21:31 | 2:44 | 0/0/0 | 0/0/0 | 0/0/0 | 48,934/1,893 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/2 | 3/0 | 0 |
 
 ## popPK records
 
@@ -19,28 +19,31 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 11 matched, 9 returned
+- **PubMed hits:** 13 matched, 12 returned
 - **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Paine_2023.pdf` | Paine SW et al., Novel holistic pharmacokinetic model ap…, Journal of veterinary pharm… (2023) | popPK | 9 | [10.1111/jvp.13387](https://doi.org/10.1111/jvp.13387) | [37255256](https://pubmed.ncbi.nlm.nih.gov/37255256) | The study reports a population PK model for etamsylate (via its metabolite 2,5-HBSA) in horses, but specific numeric parameter values for etamsylate are not explicitly listed in the provided text, only typical values for the shared metabolite. |
+| `Helmy_2013.pdf` | Helmy SA et al., A new and simple HPLC method for determ…, Saudi pharmaceutical journa… (2013) | popPK | 10 | [10.1016/j.jsps.2012.12.001](https://doi.org/10.1016/j.jsps.2012.12.001) | [24227961](https://pubmed.ncbi.nlm.nih.gov/24227961) | The paper describes a PK study for etamsylate and lists parameters, but the specific numeric values are not present in the provided evidence. |
+| `Paine_2023.pdf` | Paine SW et al., Novel holistic pharmacokinetic model ap…, Journal of veterinary pharm… (2023) | popPK | 9 | [10.1111/jvp.13387](https://doi.org/10.1111/jvp.13387) | [37255256](https://pubmed.ncbi.nlm.nih.gov/37255256) | The study reports a compartmental PK model for etamsylate (via its metabolite 2,5-HBSA) in horses, but specific numeric parameter values (CL, V, etc.) for etamsylate are not explicitly listed in the provided text, only typical values for the shared metabolite. |
 | `Yamboliev_1992.pdf` | Yamboliev I et al., In vitro and in situ absorption of etam…, Die Pharmazie (1992) | popPK | 8 | not captured | [1518887](https://pubmed.ncbi.nlm.nih.gov/1518887) | The study reports quantitative absorption parameters (ka, t1/2) for etamsylate in an in situ animal model, which are readable in the provided text. |
 
-<sub>queue written 2026-09-06T10:43:57.123153+00:00</sub>
+<sub>queue written 2026-09-18T21:31:42.970108+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Belal_2011 | irrelevant | 0 | 0 | The paper describes analytical methods for quantifying etamsylate and does not report any pharmacokinetic disposition parameters (CL, V, ka, etc.). |
-| popPK | Dayrens_1983 | irrelevant | 0 | 0 | The paper is an in-vitro immunological study assessing anti-inflammatory and immunostimulant activities, not a pharmacokinetic study, and contains no PK parameters for etamsylate. |
+| popPK | Dayrens_1983 | irrelevant | 0 | 0 | The paper is an in-vivo immunological study assessing anti-inflammatory and immunostimulant activities, not a pharmacokinetic study, and contains no PK parameters for etamsylate. |
+| popPK | El-Masry_2020 | irrelevant | 2 | 0 | The study focuses on in-vitro release and in-silico prediction of plasma profiles without reporting original quantitative PK parameters (CL, V, etc.) for etamsylate. |
+| popPK | Helmy_2013 | relevant | 10 | 0 | The paper describes a PK study for etamsylate and lists parameters, but the specific numeric values are not present in the provided evidence. |
 | popPK | Herrería-Bustillo_2023 | irrelevant | 1 | 0 | The study is an in-vitro thromboelastography (TEG) analysis of etamsylate's effect on coagulation, not a pharmacokinetic study, and does not report quantitative disposition parameters like clearance or volume of distribution for etamsylate. |
 | popPK | Huang_2025 | irrelevant | 0 | 0 | The study investigates analytical interference of ethamsylate on creatinine assays, not pharmacokinetic disposition parameters. |
 | PD | Huang_2025 | not_relevant | 0 | 0 | The paper analyzes analytical interference of ethamsylate on creatinine assay methods, not a pharmacodynamic or exposure-response relationship for the drug's biological effect. |
@@ -48,8 +51,8 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Leminen_2012 | irrelevant | 0 | 0 | The paper is a review of tranexamic acid where etamsylate is only mentioned as a comparator drug, and no pharmacokinetic parameters for etamsylate are reported. |
 | PD | Leminen_2012 | not_relevant | 0 | 0 | The paper is a review of tranexamic acid and only mentions etamsylate as a comparator without providing any pharmacodynamic data, exposure-response analysis, or numeric PD parameters for etamsylate. |
 | popPK | Nong_2017 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on new cinnamic acid derivatives where etamsylate is used only as a comparator for in-vitro coagulation activity, with no pharmacokinetic parameters reported. |
-| PD | Nong_2017 | not_relevant | 3 | 2 | The paper reports an IC50 for etamsylate in a platelet aggregation assay, but this is a single-point in vitro potency value for a new compound series, not a pharmacodynamic exposure-response or dose-response relationship analysis for etamsylate itself. |
-| popPK | Paine_2023 | relevant | 9 | 2 | The study reports a population PK model for etamsylate (via its metabolite 2,5-HBSA) in horses, but specific numeric parameter values for etamsylate are not explicitly listed in the provided text, only typical values for the shared metabolite. |
+| PD | Nong_2017 | not_relevant | 3 | 2 | The paper reports a single IC50 value for etamsylate in an in vitro platelet aggregation assay for comparison, but does not provide a full concentration-effect curve, dose-response relationship, or PK/PD model parameters (Emax, slope, etc.) for etamsylate. |
+| popPK | Paine_2023 | relevant | 9 | 2 | The study reports a compartmental PK model for etamsylate (via its metabolite 2,5-HBSA) in horses, but specific numeric parameter values (CL, V, etc.) for etamsylate are not explicitly listed in the provided text, only typical values for the shared metabolite. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_etamsylate`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

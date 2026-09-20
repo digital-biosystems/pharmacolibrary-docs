@@ -29,7 +29,7 @@ Almeida L; Vaz-da-Silva M; Silveira P; Falcão A; Maia J; Loureiro A; et al. et 
 | t Emax — 400 | `Q56` · not captured | 2.0 | not captured | not captured | llm_corrected (not captured) | tab_2:row2:col6 |
 | [(E 0 -E max )/E 0 ].100 — 50 | `Q100` · not captured | 57.2 | not captured | not captured | llm (not captured) | tab_2:row3:col3 |
 | [(E 0 -E max )/E 0 ].100 — 100 | `Q900` · not captured | 69.2 | not captured | not captured | llm (not captured) | tab_2:row3:col4 |
-| [(E 0 -E max )/E 0 ].100 — 200 | `Q900` · not captured | 80.0 | not captured | not captured | llm (not captured) | tab_2:row3:col5 |
+| [(E 0 -E max )/E 0 ].100 — 200 | `Q100` · not captured | 80.0 | not captured | not captured | llm (not captured) | tab_2:row3:col5 |
 | [(E 0 -E max )/E 0 ].100 — 400 | `Q900` · not captured | 83.8 | not captured | not captured | llm (not captured) | tab_2:row3:col6 |
 
 <details class="legend">

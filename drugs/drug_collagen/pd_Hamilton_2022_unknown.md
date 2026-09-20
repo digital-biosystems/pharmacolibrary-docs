@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# DPPH radical scavenging — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# DPPH radical scavenging — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Hamilton_2022`
 - **model family:** `unknown`

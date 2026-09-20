@@ -3,7 +3,7 @@
 # Vasorelaxation — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Tunaru_2016`
-- **model family:** `emax`
+- **model family:** `unknown`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
 - **effect:** stimulation/unknown

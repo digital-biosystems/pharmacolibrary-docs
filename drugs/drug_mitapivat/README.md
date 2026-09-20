@@ -19,7 +19,7 @@ On February 17, 2022, the FDA approved mitapivat as the first disease-modifying 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 05:06 | 17:24 | 0/0/0 | 3/0/0 | 0/0/1 | 265,593/9,230 | ollama / qwen3.8:27b-mtp-q8_0 | 23 | 2/21 | 23/0 | 0 |
+| 2026-09-19 12:52 | 12:17 | 0/0/0 | 3/0/0 | 0/0/1 | 579,368/7,412 | ollama / qwen3.8:27b-mtp-q8_0 | 23 | 2/21 | 23/0 | 0 |
 
 ## popPK records
 
@@ -51,7 +51,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 46 matched, 39 returned
+- **PubMed hits:** 52 matched, 43 returned
 - **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -62,12 +62,14 @@ _not available_
 |---|---|---|---|---|---|
 | popPK | Angel-Isaza_2026 | irrelevant | 0 | 0 | The paper is a study on essential oils and viral immunity in chickens and does not involve the drug mitapivat or pharmacokinetic parameters. |
 | PD | Angel-Isaza_2026 | not_relevant | 0 | 0 | The paper studies the effects of essential oils on gene expression and viral load in chickens, not the pharmacodynamics of mitapivat. |
+| PGx | Cappellini_2026 | not_relevant | 0 | 0 | The paper reports clinical efficacy and safety outcomes of mitapivat in thalassaemia patients but does not report pharmacogenomic effects on PK or PD parameters. |
 | popPK | Chen_2022 | irrelevant | 0 | 0 | The paper is a commentary on the pharmacokinetics of colistin sulfate, not mitapivat. |
 | PD | Chen_2022 | not_relevant | 0 | 0 | The paper is a commentary on colistin sulfate PK/PD and does not contain any data, analysis, or parameters for mitapivat. |
 | popPK | Darko_2021 | irrelevant | 0 | 0 | The paper is a computational study on Ebola virus protein VP35 inhibitors and does not involve the drug mitapivat or report any pharmacokinetic parameters for it. |
 | PD | Darko_2021 | not_relevant | 0 | 0 | The paper is a computational study on novel anti-Ebola compounds and does not involve mitapivat or report any pharmacodynamic or exposure-response data. |
+| popPK | De_2024 | irrelevant | 2 | 0 | The paper is a short perspective/review describing general properties and lacks original quantitative PK parameter values for mitapivat. |
 | PD | De_2024 | not_relevant | 2 | 1 | The text is a short perspective/review summarizing general properties and lacks specific numeric PD parameters or detailed exposure-response data. |
-| popPK | Flores_2025 | irrelevant | 0 | 0 | The paper studies the drug DNL343 (an eIF2B activator) and does not mention mitapivat. |
+| popPK | Flores_2025 | irrelevant | 0 | 0 | The paper studies the drug DNL343 (an eIF2B activator) for ALS, not mitapivat. |
 | popPK | Gervasi_2024 | irrelevant | 0 | 0 | The paper is a review on oleuropein and hydroxytyrosol for cancer treatment and does not study mitapivat or report its pharmacokinetic parameters. |
 | PD | Gervasi_2024 | not_relevant | 0 | 0 | The paper is a review on oleuropein and hydroxytyrosol for cancer prevention and does not mention mitapivat or report any pharmacodynamic parameters for it. |
 | popPK | Gomeni_2020 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of indomethacin, not mitapivat. |
@@ -76,9 +78,9 @@ _not available_
 | PD | Gomeni_2020_2 | not_relevant | 0 | 0 | The paper focuses on indomethacin, not mitapivat. |
 | popPK | Hayat_2024 | irrelevant | 0 | 0 | The paper is an in-silico study on Ebola virus protein inhibitors and does not involve the drug mitapivat or report any pharmacokinetic parameters. |
 | PD | Hayat_2024 | not_relevant | 0 | 0 | The paper is an in silico study on Ebola virus inhibitors and does not involve mitapivat or report any pharmacodynamic or exposure-response data. |
-| popPK | Huang_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics and mechanism of action of a novel compound (SNH-119014) with mitapivat as a comparator, reporting no pharmacokinetic parameters for mitapivat. |
-| PGx | Idowu_2025 | not_relevant | 0 | 0 | The paper reports clinical efficacy and safety outcomes in a general sickle cell disease population without analyzing specific gene variants or genotypes to determine pharmacokinetic or pharmacodynamic effects. |
-| popPK | Iyer_2024 | relevant | 4 | 2 | The paper reports non-compartmental PK parameters (Cmax, AUC, tmax) for mitapivat but lacks the specific compartmental/population PK parameters (CL, V, Q, ka) required for the target extraction, and the numeric values are primarily located in Tables 2 and 3 which are not included in the evidence. |
+| popPK | Huang_2026 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of a novel compound (SNH-119014) with mitapivat as a comparator, reporting no pharmacokinetic parameters for mitapivat. |
+| PGx | Idowu_2025 | not_relevant | 0 | 0 | The paper reports clinical efficacy and safety outcomes in sickle cell disease patients but does not analyze the impact of specific gene variants or genotypes on the pharmacokinetics or pharmacodynamics of mitapivat. |
+| popPK | Iyer_2024 | relevant | 4 | 2 | The paper reports non-compartmental PK parameters (Cmax, AUC, tmax) for mitapivat but lacks the specific compartmental/population PK parameters (CL, V, Q, ka) required for the target extraction, and the detailed numeric values are primarily located in Tables 2 and 3 which are not fully provided in the evidence. |
 | popPK | Lee_2015 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for a cholesterol-conjugated aptamer against HCV NS5B, not for the drug mitapivat. |
 | PD | Lee_2015 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of a cholesterol-conjugated aptamer against HCV NS5B and does not report any pharmacodynamic or exposure-response relationship for mitapivat. |
 | popPK | Li_2026 | irrelevant | 0 | 0 | The paper focuses on the discovery of PKM2 agonists for aortic dissection, using mitapivat only as a comparator drug without reporting any pharmacokinetic parameters for it. |
@@ -87,33 +89,37 @@ _not available_
 | PD | Lickliter_2021 | not_relevant | 0 | 0 | The paper reports a pharmacokinetic (PK) bioequivalence study for a trastuzumab biosimilar and does not contain any pharmacodynamic (PD) or exposure-response analysis for mitapivat or any other drug. |
 | popPK | Matte_2021 | irrelevant | 0 | 0 | The paper is a mechanistic study of mitapivat's effects on erythropoiesis and iron metabolism in a mouse model, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for the drug. |
 | popPK | Mc_2024 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for TLD-1 (a liposomal doxorubicin formulation), not for mitapivat. |
-| PD | Mc_2024 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics (PK) of TLD-1 (liposomal doxorubicin) but does not contain any pharmacodynamic (PD) or exposure-response analysis, nor does it mention mitapivat. |
+| PD | Mc_2024 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics (PK) of TLD-1 (liposomal doxorubicin) but explicitly states that exposure-response relationships are to be investigated in the future; no PD parameters or effect data are reported. |
+| popPK | Musallam_2026 | irrelevant | 0 | 0 | The paper is a narrative review summarizing clinical efficacy and biological rationale, containing no original quantitative pharmacokinetic parameter values for mitapivat. |
 | PD | Musallam_2026 | not_relevant | 2 | 0 | The text is a narrative review summarizing clinical outcomes and biological rationale without providing specific numeric PD parameters, exposure-response curves, or detailed PK/PD modeling data. |
-| popPK | Nilsson_2025 | irrelevant | 0 | 0 | The paper is a mechanistic study on a fluorescent probe for pyruvate kinase, and mitapivat is used only as a reference compound for binding affinity (KD), not as the subject of a pharmacokinetic study. |
+| popPK | Nilsson_2025 | irrelevant | 0 | 0 | The paper is a mechanistic study on a fluorescent probe for pyruvate kinase, and mitapivat is used only as a positive control for binding, with no pharmacokinetic parameters reported. |
 | popPK | Pham_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of rifapentine, not mitapivat. |
 | PD | Pham_2022 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of rifapentine, not mitapivat, and does not report any pharmacodynamic or exposure-response relationships. |
-| popPK | Saavedra-García_2021 | irrelevant | 0 | 0 | The paper is a mechanistic study on multiple myeloma cells and proteasome inhibition, and does not report pharmacokinetic parameters for mitapivat. |
+| popPK | Saavedra-García_2021 | irrelevant | 0 | 0 | The paper is a mechanistic study on multiple myeloma cells and does not involve the drug mitapivat or report any pharmacokinetic parameters. |
 | PD | Saavedra-García_2021 | not_relevant | 0 | 0 | The paper studies the effects of proteasome inhibitors (carfilzomib, bortezomib) and GCN2 inhibitors on myeloma cells, not mitapivat, and does not report any pharmacodynamic parameters for mitapivat. |
 | popPK | Silva_2025 | irrelevant | 0 | 0 | The paper is a review of hyaluronic acid, glucosamine, and chondroitin sulfate in osteoarthritis and does not mention mitapivat or report its pharmacokinetic parameters. |
 | PD | Silva_2025 | not_relevant | 0 | 0 | The paper is a review of osteoarthritis treatments (glucosamine, chondroitin sulfate, hyaluronic acid) and does not mention mitapivat or report any pharmacodynamic parameters. |
-| popPK | Soeung_2025 | irrelevant | 0 | 0 | The paper focuses on renal medullary carcinoma and immune checkpoint therapy, and the PK parameters mentioned are for a different compound (IACS-16898), not mitapivat. |
+| popPK | Soeung_2025 | irrelevant | 0 | 0 | The paper studies renal medullary carcinoma and the drug IACS-16898, not mitapivat. |
 | PD | Soeung_2025 | not_relevant | 0 | 0 | The paper investigates nivolumab and ipilimumab in renal medullary carcinoma and does not contain any data, analysis, or mention of mitapivat. |
 | popPK | Su_2024 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for tigecycline, not mitapivat. |
 | PD | Su_2024 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics (PPK) of tigecycline, not mitapivat, and does not report any pharmacodynamic (PD) or exposure-response models with numeric PD parameters. |
 | PGx | Taher_2025 | not_relevant | 0 | 0 | The paper reports the clinical efficacy and safety of mitapivat in a phase 3 trial but does not analyze how specific gene variants or genotypes affect the drug's pharmacokinetic or pharmacodynamic parameters. |
 | popPK | Weibel_2020 | irrelevant | 0 | 0 | The paper is a network meta-analysis of antiemetic drugs for postoperative nausea and vomiting and does not involve mitapivat or report any pharmacokinetic parameters. |
 | PD | Weibel_2020 | not_relevant | 0 | 0 | The paper is a network meta-analysis of antiemetics for PONV and does not mention mitapivat or report any pharmacodynamic or exposure-response parameters. |
-| popPK | Wills_2023 | irrelevant | 2 | 1 | The paper is a narrative review that mentions basic PK properties (half-life, bioavailability) but lacks the quantitative compartmental or population-PK parameters (CL, V, Q, ka) required for extraction. |
-| PD | Wills_2023 | not_relevant | 1 | 0 | The text is a narrative review that describes the mechanism of action and clinical trial outcomes but does not report specific numeric pharmacodynamic parameters (e.g., Emax, EC50) or exposure-response curves. |
+| popPK | Wills_2023 | irrelevant | 2 | 2 | The paper is a narrative review that provides only general pharmacokinetic descriptors (half-life, bioavailability) rather than quantitative compartmental or population-PK parameters (CL, V, Q, ka). |
+| PD | Wills_2023 | not_relevant | 1 | 0 | The text is a narrative review that describes the mechanism of action and clinical trial outcomes but does not report any numeric pharmacodynamic parameters (e.g., Emax, EC50) or exposure-response curves. |
 | popPK | Yu_2023 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for vancomycin, not mitapivat. |
 | PD | Yu_2023 | not_relevant | 0 | 0 | The paper focuses exclusively on the population pharmacokinetics (PopPK) of vancomycin and does not report any pharmacodynamic (PD) or exposure-response relationship for mitapivat or any other drug. |
-| popPK | Zhang_2025 | irrelevant | 0 | 0 | The paper is a review on neurodevelopment and endoplasmic reticulum stress, with no mention of mitapivat or pharmacokinetic parameters. |
+| popPK | Yu_2024 | irrelevant | 1 | 0 | The paper is a review of drug interaction mechanisms for 2022 approvals and does not report quantitative population pharmacokinetic parameters (CL, V, etc.) for mitapivat. |
+| popPK | Zhang_2025 | irrelevant | 0 | 0 | The paper is a review on environmental adversity and neurogenesis, with no mention of mitapivat or pharmacokinetic parameters. |
 | PD | Zhang_2025 | not_relevant | 0 | 0 | The paper is a review on environmental adversity, ER stress, and neurogenesis, and does not mention mitapivat or report any pharmacodynamic or exposure-response data. |
-| popPK | Zhao_2023 | irrelevant | 0 | 0 | The paper discusses pharmacokinetics of polymyxin B, not mitapivat. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of T-VEC (talimogene laherparepvec), not mitapivat. |
+| PD | Zhang_2026 | not_relevant | 0 | 0 | The paper describes the pharmacology of T-VEC (talimogene laherparepvec), not mitapivat, and does not contain any data or parameters for the requested drug. |
+| popPK | Zhao_2023 | irrelevant | 0 | 0 | The paper discusses the pharmacokinetics of polymyxin B, not mitapivat. |
 | PD | Zhao_2023 | not_relevant | 0 | 0 | The paper discusses polymyxin B pharmacokinetics and therapeutic drug monitoring, not mitapivat, and does not report any pharmacodynamic or exposure-response parameters for the target drug. |
-| popPK | unknown_2011 | irrelevant | 0 | 0 | The paper is a collection of abstracts from a schizophrenia research congress and contains no pharmacokinetic data for mitapivat. |
+| popPK | unknown_2011 | irrelevant | 0 | 0 | no_text gate: only 128 chars of text extracted (&lt; 400) |
 | PD | unknown_2011 | not_relevant | 0 | 0 | The provided text is a header for a conference abstract collection and does not contain any specific data, analysis, or mention of mitapivat or pharmacodynamic parameters. |
-| popPK | unknown_2016 | irrelevant | 0 | 0 | The provided evidence contains only conference metadata and no pharmacokinetic data or text regarding mitapivat. |
+| popPK | unknown_2016 | irrelevant | 0 | 0 | no_text gate: only 40 chars of text extracted (&lt; 400) |
 | PD | unknown_2016 | not_relevant | 0 | 0 | The provided text is only a conference header and contains no data, analysis, or mention of mitapivat pharmacodynamics. |
 | PGx | van_2025 | not_relevant | 0 | 0 | The paper is a scoping review of metabolomics in sickle cell disease and does not report pharmacogenomic effects on the PK or PD of mitapivat. |
 

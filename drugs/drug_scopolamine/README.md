@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;scopolamine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Scopolamine_LiemMoolenaar2011_reference&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Scopolamine_AlvarezJimenez2016_reference&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Scopolamine_Ebert2001_reference&quot;,&quot;label&quot;:&quot;Ebert_2001_reference&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_Ebert2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Scopolamine_LiemMoolenaar2011_reference&quot;,&quot;label&quot;:&quot;Liem-Moolenaar_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # scopolamine
 
@@ -20,12 +20,14 @@ Scopolamine was first approved by the FDA on December 31, 1979, and is currently
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 03:47 | 8:43 | 1/0/0 | 1/0/0 | 0/0/0 | 91,200/3,182 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/0 | 6/0 | 0 |
+| 2026-09-18 13:43 | 6:27 | 2/0/1 | 1/0/0 | 0/0/0 | 108,685/13,611 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/4 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Alvarez-Jimenez_2016_reference](drugs/drug_scopolamine/Scopolamine_AlvarezJimenez2016_reference.md) | Alvarez-Jimenez R et al., Model-based exposure-response analysis…, British journal of clinical… (2016) | [10.1111/bcp.13031](https://doi.org/10.1111/bcp.13031) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Ebert_2001_reference](drugs/drug_scopolamine/Scopolamine_Ebert2001_reference.md) | Ebert U et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | [10.1177/00912700122009836](https://doi.org/10.1177/00912700122009836) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Liem-Moolenaar_2011_reference](drugs/drug_scopolamine/Scopolamine_LiemMoolenaar2011_reference.md) | Liem-Moolenaar M et al., Pharmacokinetic-pharmacodynamic relatio…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03936.x](https://doi.org/10.1111/j.1365-2125.2011.03936.x) |
 
 ## Pharmacodynamics (PD)
@@ -51,8 +53,8 @@ Scopolamine was first approved by the FDA on December 31, 1979, and is currently
 ## Coverage
 
 - **PubMed hits:** 118 matched, 30 returned
-- **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **screened:** 3  ·  **relevant:** 3
+- **records:** 3  ·  extracted 1  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -62,41 +64,41 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Alvarez-Jimenez_2016.pdf` | Alvarez-Jimenez R et al., Model-based exposure-response analysis…, British journal of clinical… (2016) | popPK | 10 | [10.1111/bcp.13031](https://doi.org/10.1111/bcp.13031) | [27273555](https://pubmed.ncbi.nlm.nih.gov/27273555) | The paper reports a population PK model for scopolamine with explicit numeric values for clearance, central volume, and peripheral volume in the results section. |
-| `Ebert_2001.pdf` | Ebert U et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | popPK | 10 | [10.1177/00912700122009836](https://doi.org/10.1177/00912700122009836) | [11144994](https://pubmed.ncbi.nlm.nih.gov/11144994) | The title confirms a PK-PD modeling study for scopolamine, but the provided evidence contains only the title and no numeric parameter values. |
+| `Ebert_2001.pdf` | Ebert U et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | popPK | 10 | [10.1177/00912700122009836](https://doi.org/10.1177/00912700122009836) | [11144994](https://pubmed.ncbi.nlm.nih.gov/11144994) | The study reports quantitative pharmacokinetic parameters (CL, Vd, half-lives) for scopolamine in humans with explicit numeric values in the text. |
 | `Chen_2025.pdf` | Chen JCC et al., Scopolamine's Anticholinergic Effects o…, Human psychopharmacology (2025) | pd | 5 | [10.1002/hup.70022](https://doi.org/10.1002/hup.70022) | [41122044](https://www.ncbi.nlm.nih.gov/pubmed/41122044) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Marquart_2019.pdf` | Marquart K et al., Human small bowel as model for poisonin…, Toxicology in vitro : an in… (2019) | pd | 5 | [10.1016/j.tiv.2019.02.010](https://doi.org/10.1016/j.tiv.2019.02.010) | [30763608](https://www.ncbi.nlm.nih.gov/pubmed/30763608) | metadata signals extractable PD data (EC50) |
 | `Long_2014.pdf` | Long Z et al., Amide alkaloids from Scopolia tangutica, Planta medica (2014) | pd | 4 | [10.1055/s-0034-1382961](https://doi.org/10.1055/s-0034-1382961) | [25127021](https://www.ncbi.nlm.nih.gov/pubmed/25127021) | metadata signals extractable PD data (EC50) |
 | `Guay_2003.pdf` | Guay DR, Clinical pharmacokinetics of drugs used…, Clinical pharmacokinetics (2003) | pgx | 8 | [10.2165/00003088-200342140-00004](https://doi.org/10.2165/00003088-200342140-00004) | [14606931](https://www.ncbi.nlm.nih.gov/pubmed/14606931) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-09-11T03:44:50.163564+00:00</sub>
+<sub>queue written 2026-09-18T13:37:56.179146+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Calder_2025 | irrelevant | 0 | 0 | The paper is a systematic review of BDNF levels after psychoplastogen administration and does not report pharmacokinetic parameters for scopolamine. |
-| popPK | Chen_2025 | irrelevant | 0 | 0 | The paper focuses on EEG and heart rate variability effects of scopolamine, not pharmacokinetic disposition parameters. |
+| popPK | Calder_2025 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of BDNF levels, not a pharmacokinetic study, and contains no PK parameters for scopolamine. |
+| popPK | Chen_2025 | irrelevant | 0 | 0 | no_text gate: only 117 chars of text extracted (&lt; 400) |
 | PD | Chen_2025 | not_relevant | 0 | 0 | The paper analyzes EEG and HRV effects of scopolamine but does not report a quantitative exposure-response or dose-response relationship with numeric PD parameters (e.g., EC50, Emax) or a concentration-effect curve. |
 | PGx | Coleman_2004 | not_relevant | 0 | 0 | The study investigates muscarinic receptor subtypes in a specific mouse strain (C57BL/6J) but does not report a pharmacogenomic effect (gene variant/genotype) on scopolamine's PK or PD parameters. |
-| popPK | Ebert_2001 | relevant | 10 | 0 | The title confirms a PK-PD modeling study for scopolamine, but the provided evidence contains only the title and no numeric parameter values. |
-| PGx | Geerts_2018 | not_relevant | 0 | 0 | The paper is a computational modeling study of Alzheimer's disease mechanisms and does not report experimental pharmacogenomic data on scopolamine PK/PD parameters. |
-| PGx | Guay_2003 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for tolterodine (CYP2D6) but only mentions scopolamine in a general list of drugs without reporting any specific pharmacokinetic or pharmacodynamic data for it. |
+| PGx | Geerts_2018 | not_relevant | 0 | 0 | The paper uses scopolamine only as a reference for cholinergic manipulation in a QSP model calibration and does not report pharmacogenomic effects on scopolamine PK/PD. |
+| PGx | Guay_2003 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for tolterodine (CYP2D6) but only mentions scopolamine in the context of general pharmacokinetics without reporting any gene variant effects on its PK/PD parameters. |
 | popPK | Kumar_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of a novel D5 receptor agonist (compound 5j), using scopolamine only as a tool to induce amnesia for behavioral testing, and does not report PK parameters for scopolamine. |
 | PD | Kumar_2024 | not_relevant | 0 | 0 | The paper reports an EC50 for a D5 receptor agonist (compound 5j) in vitro, but does not report a pharmacodynamic or exposure-response relationship for scopolamine; scopolamine is only used as a tool to induce amnesia in the behavioral assay. |
-| popPK | Long_2014 | irrelevant | 0 | 0 | The paper title indicates a phytochemical study on alkaloids from a plant species, not a pharmacokinetic study of the drug scopolamine. |
+| popPK | Long_2014 | irrelevant | 0 | 0 | no_text gate: only 39 chars of text extracted (&lt; 400) |
 | PD | Long_2014 | not_relevant | 0 | 0 | The paper focuses on the isolation and structural characterization of amide alkaloids from Scopolia tangutica, not on pharmacodynamic or exposure-response modeling. |
-| popPK | Ma_2024 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of 5α-Epoxyalantolactone using scopolamine only as a tool to induce an Alzheimer's disease model, and does not report any pharmacokinetic parameters for scopolamine. |
+| popPK | Ma_2024 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of 5α-Epoxyalantolactone, using scopolamine only as a tool to induce an Alzheimer's disease model, and does not report any pharmacokinetic parameters for scopolamine. |
+| PD | Ma_2024 | not_relevant | 0 | 0 | The paper investigates the effects of 5α-EAL, not scopolamine; scopolamine is used only as a tool to induce the disease model, and no PD parameters for scopolamine are reported. |
 | PGx | Majhi_2024 | not_relevant | 0 | 0 | The paper investigates the effect of a plant extract (Tinospora cordifolia) on dextromethorphan pharmacokinetics, not the effect of a gene variant/genotype on scopolamine. |
-| popPK | Marquart_2019 | irrelevant | 0 | 0 | The paper title indicates a study on organophosphorus poisoning using a human small bowel model, with no evidence of scopolamine pharmacokinetic parameters. |
+| popPK | Marquart_2019 | irrelevant | 0 | 0 | no_text gate: only 72 chars of text extracted (&lt; 400) |
 | PD | Marquart_2019 | not_relevant | 0 | 0 | The paper focuses on organophosphorus poisoning in a human small bowel model and does not report pharmacodynamic or exposure-response data for scopolamine. |
 | popPK | Miravalles_2026 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for bipolar depression and does not report any pharmacokinetic parameters for scopolamine. |
-| popPK | Nabulsi_2019 | irrelevant | 0 | 0 | The study evaluates a PET tracer (11C-LSN3172176) using scopolamine only as a blocking agent to demonstrate receptor specificity, and does not report pharmacokinetic parameters for scopolamine itself. |
+| popPK | Nabulsi_2019 | irrelevant | 0 | 0 | The study evaluates the PET tracer 11C-LSN3172176, using scopolamine only as a blocking agent to demonstrate receptor specificity, and does not report pharmacokinetic parameters for scopolamine itself. |
 | popPK | Nowakowska_1996 | irrelevant | 0 | 0 | The study investigates the behavioral effects of fluoxetine using scopolamine as a pharmacological tool to induce amnesia, rather than reporting pharmacokinetic parameters for scopolamine. |
 | popPK | Nowakowska_1999 | irrelevant | 0 | 0 | The study focuses on the behavioral effects of mirtazapine, using scopolamine only as a comparator agent to induce memory impairment, with no pharmacokinetic parameters reported. |
 | PGx | Oliverio_1973 | not_relevant | 0 | 0 | The paper investigates the genetic basis of behavioral responses to scopolamine, not the pharmacokinetic or pharmacodynamic parameters of the drug itself. |
 | popPK | Scheinin_1999 | irrelevant | 2 | 0 | The study focuses on PK-PD modeling for atropine and glycopyrrolate, and while scopolamine was administered, no quantitative PK parameters (CL, V, etc.) for scopolamine are reported in the evidence. |
 | popPK | Shimosato_2001 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment examining conditioned place preference and locomotor activity, with no pharmacokinetic parameters reported for scopolamine. |
-| popPK | Swaminathan_2020 | irrelevant | 2 | 0 | The study reports drug release rates and extent from the transdermal patch (input function) rather than systemic disposition parameters like clearance, volume, or half-life. |
+| popPK | Swaminathan_2020 | irrelevant | 2 | 0 | The study reports transdermal release rates and total drug released (input parameters) rather than systemic disposition parameters like clearance, volume, or half-life. |
 | PGx | Ullrich_2016 | not_relevant | 0 | 0 | The paper analyzes plant metabolomics and alkaloid content in Duboisia species, not human pharmacogenomics or PK/PD parameters of scopolamine. |
 | popPK | Xia_2016 | irrelevant | 0 | 0 | The paper is a mechanistic study on insect muscarinic receptors where scopolamine is used only as a pharmacological antagonist, with no pharmacokinetic parameters reported. |
 | PD | Xia_2016 | not_relevant | 1 | 1 | The paper reports a qualitative observation that scopolamine blocked acetylcholine responses at a single high concentration (100 μM) in a cell-based assay, without providing a dose-response curve or numeric PD parameters for scopolamine. |

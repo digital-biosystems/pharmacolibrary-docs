@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# peak thrombin — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Nayak_2026`
 - **model family:** `emax`

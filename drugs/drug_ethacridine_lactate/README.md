@@ -11,7 +11,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-07 11:39 | 20:18 | 0/0/0 | 2/0/0 | 0/0/0 | 194,842/4,960 | ollama / qwen3.8:27b-mtp-q8_0 | 24 | 5/19 | 21/3 | 0 |
+| 2026-09-19 07:08 | 8:45 | 0/0/0 | 2/1/0 | 0/0/0 | 365,228/7,355 | ollama / qwen3.8:27b-mtp-q8_0 | 24 | 5/19 | 21/3 | 0 |
 
 ## popPK records
 
@@ -27,10 +27,13 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Li_2021](drugs/drug_ethacridine_lactate/pd_Li_2021_Mpro_activity.md) | Li X et al., Ethacridine inhibits SARS-CoV-2 by inac…, PLoS pathogens (2021) | [10.1371/journal.ppat.1009898](https://doi.org/10.1371/journal.ppat.1009898) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Li_2021](drugs/drug_ethacridine_lactate/pd_Li_2021_viral_RNA_copies.md) | Li X et al., Ethacridine inhibits SARS-CoV-2 by inac…, PLoS pathogens (2021) | [10.1371/journal.ppat.1009898](https://doi.org/10.1371/journal.ppat.1009898) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Li_2021](drugs/drug_ethacridine_lactate/pd_Li_2021_viral_titer.md) | Li X et al., Ethacridine inhibits SARS-CoV-2 by inac…, PLoS pathogens (2021) | [10.1371/journal.ppat.1009898](https://doi.org/10.1371/journal.ppat.1009898) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Akbar_2026](drugs/drug_ethacridine_lactate/pd_Akbar_2026_IC50.md) | Akbar N et al., Glucosamine functionalized multi-walled…, International microbiology… (2026) | [10.1007/s10123-026-00889-y](https://doi.org/10.1007/s10123-026-00889-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Akbar_2026](drugs/drug_ethacridine_lactate/pd_Akbar_2026_bacterial_inhibition.md) | Akbar N et al., Glucosamine functionalized multi-walled…, International microbiology… (2026) | [10.1007/s10123-026-00889-y](https://doi.org/10.1007/s10123-026-00889-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Akbar_2026](drugs/drug_ethacridine_lactate/pd_Akbar_2026_cytotoxicity.md) | Akbar N et al., Glucosamine functionalized multi-walled…, International microbiology… (2026) | [10.1007/s10123-026-00889-y](https://doi.org/10.1007/s10123-026-00889-y) |
 
 ## Coverage
 
-- **PubMed hits:** 200 matched, 46 returned
+- **PubMed hits:** 7 matched, 46 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -41,8 +44,9 @@ _not available_
 |---|---|---|---|---|---|
 | popPK | Abbasi_2019 | irrelevant | 0 | 0 | The paper focuses on aldehyde oxidase kinetics for six specific substrates and does not study ethacridine_lactate or report its pharmacokinetic parameters. |
 | popPK | Abeesh_2021 | irrelevant | 0 | 0 | The study focuses on withaferin A and does not report pharmacokinetic parameters for ethacridine lactate. |
+| popPK | Akbar_2026 | irrelevant | 0 | 0 | The paper is a materials science study on nanocarrier synthesis and in-vitro antibacterial activity, reporting no pharmacokinetic parameters for ethacridine lactate. |
 | popPK | Awasthi_2022 | irrelevant | 0 | 0 | The paper studies noscapine conjugates for cancer treatment and does not involve ethacridine_lactate or pharmacokinetic parameters. |
-| popPK | Azuma_2018 | irrelevant | 0 | 0 | The paper is a wastewater treatment study focusing on the removal of pharmaceuticals, not a pharmacokinetic study, and ethacridine lactate is not the subject drug. |
+| popPK | Azuma_2018 | irrelevant | 0 | 0 | no_text gate: extracted text is mostly non-alphabetic (garbled or binary) |
 | popPK | Babalska_2021 | irrelevant | 0 | 0 | The paper is a review of wound antiseptics that mentions ethacridine lactate only as an older, non-recommended agent, and contains no pharmacokinetic data or quantitative disposition parameters. |
 | popPK | Barker_1978 | irrelevant | 0 | 0 | The paper studies the mechanism of action of acridine orange on DNA in E. coli, not the pharmacokinetics of ethacridine lactate. |
 | popPK | Benslama_2022 | irrelevant | 0 | 0 | The paper is a computational study on actinomycete metabolites as bioinsecticides and does not involve ethacridine_lactate or report its pharmacokinetic parameters. |
@@ -51,22 +55,22 @@ _not available_
 | popPK | Dharmasivam_2025 | irrelevant | 0 | 0 | The paper is a review on lysosomal chemistry and does not report pharmacokinetic parameters for ethacridine_lactate. |
 | popPK | Fathima_2023 | irrelevant | 0 | 0 | The paper studies the anticancer effects of farnesol in cell lines and does not involve ethacridine_lactate or report any pharmacokinetic parameters. |
 | popPK | Ferrandez_1978 | irrelevant | 0 | 0 | The paper is a clinical case series on osseous hydatidosis treatment and does not report any pharmacokinetic parameters for ethacridine lactate. |
-| popPK | Galal-Khallaf_2025 | irrelevant | 0 | 0 | The paper studies novel thiazolidinedione hybrids in zebrafish and does not report pharmacokinetic parameters for ethacridine lactate. |
-| popPK | Galli_2025 | irrelevant | 0 | 0 | The paper is a high-throughput screening study for anthelmintic activity where ethacridine lactate is only one of many screened compounds, and it does not report any quantitative pharmacokinetic parameters (CL, V, etc.) for it. |
-| PD | Galli_2025 | not_relevant | 0 | 0 | The paper reports dose-response data (EC50) for flavonoids and other compounds, but does not contain any data or analysis for ethacridine lactate. |
+| popPK | Galal-Khallaf_2025 | irrelevant | 0 | 0 | The paper studies novel thiazolidinedione hybrids (compounds 8 and 11) in a zebrafish model and does not investigate ethacridine lactate as the subject drug. |
+| popPK | Galli_2025 | irrelevant | 0 | 0 | The paper is a high-throughput screening study for anthelmintic activity where ethacridine lactate is only one of many screened compounds, and it does not report quantitative pharmacokinetic disposition parameters (CL, V, etc.) for it. |
+| PD | Galli_2025 | not_relevant | 0 | 0 | The paper reports EC50 values for flavonoids and other compounds, but does not contain any data or analysis for ethacridine lactate. |
 | popPK | Garner_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of DPC 333, not ethacridine_lactate. |
 | popPK | Hall_1983 | irrelevant | 0 | 0 | The study investigates amsacrine (NSC 249992), not ethacridine lactate. |
 | popPK | Hanes_1988 | irrelevant | 0 | 0 | The paper is a diagnostic study comparing staining methods for microbiology and does not report any pharmacokinetic parameters for ethacridine lactate. |
 | popPK | Huang_2019 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ethacridine's effects on thyroid cancer cells and does not report any pharmacokinetic parameters. |
-| popPK | Huang_2022 | irrelevant | 0 | 0 | The study focuses on the PPARδ agonist GW1516 and does not report pharmacokinetic parameters for ethacridine lactate. |
+| popPK | Huang_2022 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics and efficacy of GW1516 (a PPARδ agonist) in nanoparticles, not ethacridine lactate. |
 | popPK | Jiang_2019 | irrelevant | 0 | 0 | The paper is a proteomic study of a Parkinson's disease cell model and does not involve ethacridine_lactate or pharmacokinetic parameters. |
 | popPK | Kilgore_2024 | irrelevant | 0 | 0 | The paper is a mechanistic study on biomolecular condensates and small molecule partitioning, not a pharmacokinetic study, and ethacridine is only mentioned as a probe for subcellular localization without any PK parameters. |
-| PD | Kilgore_2024 | not_relevant | 0 | 0 | The paper focuses on the physicochemical partitioning of small molecules into biomolecular condensates and does not report any pharmacodynamic or exposure-response data for ethacridine lactate. |
+| PD | Kilgore_2024 | not_relevant | 0 | 0 | The paper focuses on the physicochemical partitioning of small molecules into biomolecular condensates and does not report any pharmacodynamic (exposure-response or dose-response) analysis for ethacridine lactate or any other drug. |
 | popPK | Koelzer_2016 | irrelevant | 1 | 0 | The paper is a medicolegal case report reporting static postmortem concentrations in body fluids, not a pharmacokinetic study with disposition parameters (CL, V, t1/2) or a PK model. |
 | popPK | Lacher_2014 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of paraquat, not ethacridine_lactate. |
 | popPK | Lapchinskaia_1981 | irrelevant | 0 | 0 | The paper studies the effect of acridine dyes on streptomycete growth and antibiotic production, not the pharmacokinetics of ethacridine lactate. |
 | popPK | Lauer_1981 | irrelevant | 0 | 0 | The paper is a diagnostic study comparing staining techniques for microorganisms and does not contain any pharmacokinetic data for ethacridine lactate. |
-| popPK | Li_2020 | irrelevant | 0 | 0 | The paper is an in-vitro virology study investigating the antiviral mechanism of ethacridine against SARS-CoV-2 and does not report any pharmacokinetic parameters. |
+| popPK | Li_2020 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral study of ethacridine against SARS-CoV-2 and does not report any pharmacokinetic parameters (CL, V, ka, etc.). |
 | popPK | Li_2021 | irrelevant | 0 | 0 | The paper is an in-vitro virology study investigating the antiviral mechanism of ethacridine against SARS-CoV-2 and does not report any pharmacokinetic parameters. |
 | popPK | Li_2025 | irrelevant | 0 | 0 | The paper is a network pharmacology and molecular docking study investigating the antibacterial mechanisms of ethacridine, containing no pharmacokinetic data or disposition parameters. |
 | popPK | Litton_1990 | irrelevant | 0 | 0 | The study investigates CL 246,738, a different acridine derivative, not ethacridine lactate. |

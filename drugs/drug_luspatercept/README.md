@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;luspatercept&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luspatercept_Chen2021_reference&quot;,&quot;label&quot;:&quot;Chen_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Luspatercept_Chen2020_reference&quot;,&quot;label&quot;:&quot;Chen_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Luspatercept_Chen2020_reference&quot;,&quot;label&quot;:&quot;Chen_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Luspatercept_Chen2021_reference&quot;,&quot;label&quot;:&quot;Chen_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # luspatercept
 
@@ -23,14 +23,14 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-08 19:50 | 7:09 | 1/1/0 | 0/0/1 | 0/0/0 | 129,718/11,928 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 5/0 | 0 |
+| 2026-09-19 01:05 | 2:44 | 2/0/0 | 0/0/1 | 0/0/0 | 111,005/3,406 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Chen_2021_reference](drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md) | Chen N et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1696](https://doi.org/10.1002/jcph.1696) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Chen_2020_reference](drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md) | Chen N et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12521](https://doi.org/10.1002/psp4.12521) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Chen_2020_reference](drugs/drug_luspatercept/Luspatercept_Chen2020_reference.md) | Chen N et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12521](https://doi.org/10.1002/psp4.12521) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Chen_2021_reference](drugs/drug_luspatercept/Luspatercept_Chen2021_reference.md) | Chen N et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1696](https://doi.org/10.1002/jcph.1696) |
 
 ## Pharmacodynamics (PD)
 
@@ -44,7 +44,7 @@
 
 - **PubMed hits:** 12 matched, 11 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -55,7 +55,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Bruzzese_2023.pdf` | Bruzzese A et al., Myelodysplastic syndromes with ring sid…, Hematological oncology (2023) | pgx | 5 | [10.1002/hon.3125](https://doi.org/10.1002/hon.3125) | [36794650](https://www.ncbi.nlm.nih.gov/pubmed/36794650) | metadata signals extractable PGX data (ABCB7) |
 
-<sub>queue written 2026-09-08T19:44:32.310590+00:00</sub>
+<sub>queue written 2026-09-19T01:03:23.175399+00:00</sub>
 
 ## Screened and excluded
 
@@ -63,10 +63,10 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | PGx | Bose_2019 | not_relevant | 0 | 0 | The paper is a review of myelofibrosis treatments and does not mention luspatercept or any pharmacogenomic effects. |
 | PGx | Bruzzese_2023 | not_relevant | 0 | 0 | The text describes the mechanism of action of luspatercept and the biology of MDS-RS but does not report any pharmacogenomic study linking specific gene variants to changes in luspatercept's PK or PD parameters. |
-| PGx | Diamantidis_2023 | not_relevant | 0 | 0 | The paper is a case report on a hemoglobinopathy and mentions a luspatercept trial only as background; it does not report pharmacogenomic effects on luspatercept PK/PD. |
-| PGx | Mansour_2025 | not_relevant | 0 | 0 | The paper is a narrative review of iron homeostasis and therapeutic targets, mentioning luspatercept's mechanism and clinical efficacy, but it does not report any pharmacogenomic effects (gene variants) on luspatercept's PK or PD parameters. |
+| PGx | Diamantidis_2023 | not_relevant | 0 | 0 | The paper is a case report on a hemoglobinopathy and mentions a clinical trial for luspatercept but does not report any pharmacogenomic effects on its PK or PD parameters. |
+| PGx | Mansour_2025 | not_relevant | 0 | 0 | The paper is a narrative review of iron metabolism mechanisms and does not report specific pharmacogenomic effects on luspatercept PK/PD parameters. |
 | popPK | Musallam_2026 | irrelevant | 0 | 0 | The paper reports patient-reported outcomes (PROs) and quality of life measures, not pharmacokinetic parameters. |
-| PGx | Panzieri_2026 | not_relevant | 0 | 0 | The paper discusses clinical management and efficacy predictors (HbF) but does not report pharmacogenomic effects on PK/PD parameters. |
+| PGx | Panzieri_2026 | not_relevant | 0 | 0 | The paper discusses clinical management and efficacy in beta-thalassemia but does not report pharmacogenomic effects on luspatercept PK or PD parameters. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_luspatercept`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

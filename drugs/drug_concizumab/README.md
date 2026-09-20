@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;concizumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Concizumab_Agers2014_cynomolgus_monkeys&quot;,&quot;label&quot;:&quot;Agers\u00f8_2014_Cynomolgus monkeys&quot;,&quot;href&quot;:&quot;drugs/drug_concizumab/Concizumab_Agers2014_cynomolgus_monkeys.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Concizumab_Agers2014_reference&quot;,&quot;label&quot;:&quot;Agers\u00f8_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_concizumab/Concizumab_Agers2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # concizumab
 
@@ -22,13 +22,13 @@ Concizumab-mtci (Alhemo) was approved by the FDA in December 2024 for use in pat
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 10:19 | 2:04 | 0/0/0 | 1/0/0 | 0/0/0 | 28,037/1,008 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-09-18 21:22 | 1:13 | 0/0/1 | 1/0/0 | 0/0/0 | 31,514/1,381 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Agersø_2014_Cynomolgus monkeys](drugs/drug_concizumab/Concizumab_Agers2014_cynomolgus_monkeys.md) | Agersø H et al., Pharmacokinetics of an anti-TFPI monocl…, European journal of pharmac… (2014) | [10.1016/j.ejps.2014.02.009](https://doi.org/10.1016/j.ejps.2014.02.009) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Agersø_2014_reference](drugs/drug_concizumab/Concizumab_Agers2014_reference.md) | Agersø H et al., Pharmacokinetics of an anti-TFPI monocl…, European journal of pharmac… (2014) | [10.1016/j.ejps.2014.02.009](https://doi.org/10.1016/j.ejps.2014.02.009) |
 
 ## Pharmacodynamics (PD)
 
@@ -41,7 +41,7 @@ Concizumab-mtci (Alhemo) was approved by the FDA in December 2024 for use in pat
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -50,10 +50,10 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Agersø_2014.pdf` | Agersø H et al., Pharmacokinetics of an anti-TFPI monocl…, European journal of pharmac… (2014) | popPK | 10 | [10.1016/j.ejps.2014.02.009](https://doi.org/10.1016/j.ejps.2014.02.009) | [24568891](https://pubmed.ncbi.nlm.nih.gov/24568891) | The paper reports quantitative PK parameters (clearance, Km, saturation clearance, bioavailability) for concizumab in Cynomolgus monkeys, with values explicitly stated in the text. |
+| `Agersø_2014.pdf` | Agersø H et al., Pharmacokinetics of an anti-TFPI monocl…, European journal of pharmac… (2014) | popPK | 10 | [10.1016/j.ejps.2014.02.009](https://doi.org/10.1016/j.ejps.2014.02.009) | [24568891](https://pubmed.ncbi.nlm.nih.gov/24568891) | The paper reports quantitative PK parameters (CL, Km, CLsat, bioavailability) for concizumab in Cynomolgus monkeys, with values explicitly stated in the abstract. |
 | `Yuan_2019.pdf` | Yuan D et al., A systems pharmacokinetic/pharmacodynam…, European journal of pharmac… (2019) | popPK | 9 | [10.1016/j.ejps.2019.105032](https://doi.org/10.1016/j.ejps.2019.105032) | [31394258](https://pubmed.ncbi.nlm.nih.gov/31394258) | The paper describes a systems PK/PD model for concizumab, but the specific numeric parameter values are not present in the provided evidence text. |
 
-<sub>queue written 2026-09-06T10:19:14.857962+00:00</sub>
+<sub>queue written 2026-09-18T21:21:27.671386+00:00</sub>
 
 ## Screened and excluded
 

@@ -35,18 +35,18 @@ Naik H; Tsai MC; Fiedler-Kelly J; Qiu P; Vakilynejad M et al. (2013). PloS one 8
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Maximum rate of elimination (Vmax), in ng/mL/hr | `Q66` · Vmax | 44.7 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | pone-0066422-t006:row1:col1, pone-0066422-t006:row1:col2, pone-0066422-t006:row1:col3, pone-0066422-t006:row1:col4 | — | not captured |
-| Concentration needed to reach 50% of Vmax (KM),in ng/mL | `Q1` · Km | 1860 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | pone-0066422-t006:row2:col1, pone-0066422-t006:row2:col2, pone-0066422-t006:row2:col3, pone-0066422-t006:row2:col4 | — | 0.0575 (None% RSE) |
-| Central volume of distribution (V2), in mL/kg | `Q64` · V2 | 35.6 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | pone-0066422-t006:row3:col1, pone-0066422-t006:row3:col2, pone-0066422-t006:row3:col3, pone-0066422-t006:row3:col4 | — | 0.100 (None% RSE) |
-| Absorption rate constant (Ka), in 1/hr | `Q49` · kabs | 0.00869 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | pone-0066422-t006:row4:col1, pone-0066422-t006:row4:col2, pone-0066422-t006:row4:col3, pone-0066422-t006:row4:col4 | — | 0.190 (None% RSE) |
-| Subcutaneous bioavailability (F1) | `Q40` · Fab | 0.499 | F1 | not captured | not captured | not captured | llm_confirmed (0.6) | pone-0066422-t006:row5:col1, pone-0066422-t006:row5:col2, pone-0066422-t006:row5:col3, pone-0066422-t006:row5:col4 | — | not captured |
+| Maximum rate of elimination (Vmax), in ng/mL/hr | `Q66` · Vmax | 44.7 | not captured | not captured | not captured | 10.0 | llm_confirmed (0.6) | pone-0066422-t006:row1:col1, pone-0066422-t006:row1:col2, pone-0066422-t006:row1:col3, pone-0066422-t006:row1:col4 | — | not captured |
+| Concentration needed to reach 50% of Vmax (KM),in ng/mL | `Q1` · Km | 1860 | not captured | not captured | not captured | 14.6 | llm_corrected (0.6) | pone-0066422-t006:row2:col1, pone-0066422-t006:row2:col2, pone-0066422-t006:row2:col3, pone-0066422-t006:row2:col4 | — | 0.0575 (29.0% RSE) |
+| Central volume of distribution (V2), in mL/kg | `Q64` · V2 | 35.6 | not captured | not captured | not captured | 2.7 | llm_corrected (0.6) | pone-0066422-t006:row3:col1, pone-0066422-t006:row3:col2, pone-0066422-t006:row3:col3, pone-0066422-t006:row3:col4 | — | 0.100 (8.1% RSE) |
+| Absorption rate constant (Ka), in 1/hr | `Q49` · kabs | 0.00869 | not captured | not captured | not captured | 15.6 | llm_confirmed (0.6) | pone-0066422-t006:row4:col1, pone-0066422-t006:row4:col2, pone-0066422-t006:row4:col3, pone-0066422-t006:row4:col4 | — | 0.190 (32.0% RSE) |
+| Subcutaneous bioavailability (F1) | `Q40` · Fab | 0.499 | F1 | not captured | not captured | 4.4 | llm_confirmed (0.6) | pone-0066422-t006:row5:col1, pone-0066422-t006:row5:col2, pone-0066422-t006:row5:col3, pone-0066422-t006:row5:col4 | — | not captured |
 | Inter–compartmental clearance (Q), in mL/kg/hr | `Q30` · Q | 5.23 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | pone-0066422-t006:row6:col1, pone-0066422-t006:row6:col2 | — | not captured |
-| Peripheral volume of distribution (V3), in mL/kg | `Q77` · V3 | 7.42 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | pone-0066422-t006:row7:col1, pone-0066422-t006:row7:col2, pone-0066422-t006:row7:col3, pone-0066422-t006:row7:col4 | — | not captured |
-| theta_q319_bmi_power | `Q900` · theta_q319_bmi_power | -0.485 | not captured | not captured | not captured | not captured | not captured (not captured) | pone-0066422-t006:row8:col1, pone-0066422-t006:row8:col2 | — | not captured |
-| theta_q335_age | `Q900` · theta_q335_age | -0.125 | not captured | not captured | not captured | not captured | not captured (not captured) | pone-0066422-t006:row9:col1, pone-0066422-t006:row9:col2 | — | not captured |
-| theta_km_weight_power | `Q900` · theta_km_weight_power | -0.190 | not captured | not captured | not captured | not captured | not captured (not captured) | pone-0066422-t006:row10:col1, pone-0066422-t006:row10:col2 | — | not captured |
-| theta_q335_category | `Q900` · theta_q335_category | 0.482 | not captured | not captured | not captured | not captured | not captured (not captured) | pone-0066422-t006:row11:col1, pone-0066422-t006:row11:col2, pone-0066422-t006:row11:col3, pone-0066422-t006:row11:col4 | — | not captured |
-| theta_kabs_category | `Q900` · theta_kabs_category | 0.00815 | not captured | not captured | not captured | not captured | not captured (not captured) | pone-0066422-t006:row13:col1, pone-0066422-t006:row13:col2, pone-0066422-t006:row13:col3, pone-0066422-t006:row13:col4 | — | not captured |
+| Peripheral volume of distribution (V3), in mL/kg | `Q77` · V3 | 7.42 | not captured | not captured | not captured | 10.3 | llm_corrected (0.6) | pone-0066422-t006:row7:col1, pone-0066422-t006:row7:col2, pone-0066422-t006:row7:col3, pone-0066422-t006:row7:col4 | — | not captured |
+| theta_q319_bmi_power | `Q900` · theta_q319_bmi_power | -0.485 | not captured | not captured | not captured | 8.7 | not captured (not captured) | pone-0066422-t006:row8:col1, pone-0066422-t006:row8:col2 | — | not captured |
+| theta_q335_age | `Q900` · theta_q335_age | -0.125 | not captured | not captured | not captured | 19.0 | not captured (not captured) | pone-0066422-t006:row9:col1, pone-0066422-t006:row9:col2 | — | not captured |
+| theta_km_weight_power | `Q900` · theta_km_weight_power | -0.190 | not captured | not captured | not captured | 25.5 | not captured (not captured) | pone-0066422-t006:row10:col1, pone-0066422-t006:row10:col2 | — | not captured |
+| theta_q335_category | `Q900` · theta_q335_category | 0.482 | not captured | not captured | not captured | 22.4 | not captured (not captured) | pone-0066422-t006:row11:col1, pone-0066422-t006:row11:col2, pone-0066422-t006:row11:col3, pone-0066422-t006:row11:col4 | — | not captured |
+| theta_kabs_category | `Q900` · theta_kabs_category | 0.00815 | not captured | not captured | not captured | 20.3 | not captured (not captured) | pone-0066422-t006:row13:col1, pone-0066422-t006:row13:col2, pone-0066422-t006:row13:col3, pone-0066422-t006:row13:col4 | — | not captured |
 | mean volume of distribution | `Q61` · V | 34.9 | mL/kg | 0.0024429999999999994 | L | not captured | review_gapfill (0.7) | Naik_2013:review | — | not captured |
 
 <details class="legend">
@@ -86,6 +86,7 @@ Naik H; Tsai MC; Fiedler-Kelly J; Qiu P; Vakilynejad M et al. (2013). PloS one 8
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 13 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Naik_2013:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |

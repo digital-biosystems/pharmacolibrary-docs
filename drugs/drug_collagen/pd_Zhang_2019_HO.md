@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Hydroxyl radical scavenging — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# Hydroxyl radical scavenging — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Zhang_2019`
 - **model family:** `unknown`

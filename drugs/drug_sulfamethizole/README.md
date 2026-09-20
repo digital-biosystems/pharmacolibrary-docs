@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-07 16:49 | 7:23 | 0/0/0 | 0/0/0 | 0/0/0 | 27,976/1,460 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 5/2 | 8/0 | 0 |
+| 2026-09-19 10:06 | 5:39 | 0/0/0 | 0/0/0 | 0/0/0 | 77,150/3,620 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 5/2 | 8/0 | 0 |
 
 ## popPK records
 
@@ -25,7 +25,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 23 matched, 22 returned
+- **PubMed hits:** 18 matched, 24 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -42,7 +42,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Strum_1978.pdf` | Strum JD et al., Bioavailability of sulfonamide suspensi…, Journal of pharmaceutical s… (1978) | popPK | 8 | [10.1002/jps.2600671018](https://doi.org/10.1002/jps.2600671018) | [702289](https://pubmed.ncbi.nlm.nih.gov/702289) | The study reports pharmacokinetic parameters for sulfamethizole, but the specific numeric values are not present in the provided evidence. |
 | `Komatsu_2000.pdf` | Komatsu K et al., Prediction of in vivo drug-drug interac…, Drug metabolism and disposi… (2000) | pgx | 7 | not captured | [10725317](https://www.ncbi.nlm.nih.gov/pubmed/10725317) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 
-<sub>queue written 2026-09-07T16:49:17.437887+00:00</sub>
+<sub>queue written 2026-09-19T10:05:58.938765+00:00</sub>
 
 ## Screened and excluded
 
@@ -50,10 +50,12 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Eo_2026 | irrelevant | 0 | 0 | The paper is a review of antimicrobial scaffolds where sulfamethizole is mentioned only as a commercial agent for structural comparison, with no pharmacokinetic data reported. |
 | popPK | Hansen_1979 | irrelevant | 0 | 0 | The study focuses on the effect of sulfamethizole on phenytoin metabolism, not on the pharmacokinetic parameters of sulfamethizole itself. |
+| popPK | Janknegt_1999 | irrelevant | 0 | 0 | The paper is a qualitative drug selection study using a judgment analysis method and does not report quantitative pharmacokinetic parameters for sulfamethizole. |
 | popPK | Kamiya_1983 | relevant | 8 | 0 | The study investigates the renal handling and pharmacokinetics of sulfamethizole in multiple species, but the specific quantitative parameter values are not present in the provided abstract text. |
 | popPK | Katayama_1990 | irrelevant | 0 | 0 | The provided evidence contains only metadata and software version information, with no pharmacokinetic data or text regarding sulfamethizole. |
 | popPK | Katayama_1990_2 | irrelevant | 0 | 0 | The provided evidence contains only metadata and software version information, with no scientific content or pharmacokinetic data for sulfamethizole. |
 | popPK | Katayama_1990_3 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding sulfamethizole pharmacokinetics. |
+| popPK | Komatsu_2000 | irrelevant | 1 | 0 | The study focuses on in vitro metabolic inhibition and drug-drug interaction prediction for tolbutamide, with sulfamethizole serving only as a comparator agent without reporting its own quantitative PK parameters. |
 | PGx | Komatsu_2000 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (inhibition of tolbutamide metabolism by sulfamethizole) and does not report any pharmacogenomic effects (gene variants) on the PK or PD of sulfamethizole. |
 | popPK | Komiya_1986 | irrelevant | 2 | 0 | The study focuses on renal reabsorption kinetics and physicochemical properties in rats rather than standard population PK parameters (CL, V, ka), and no numeric values are provided in the evidence. |
 | popPK | Koshi_1983 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding sulfamethizole pharmacokinetics. |
@@ -68,7 +70,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Strum_1978 | relevant | 8 | 0 | The study reports pharmacokinetic parameters for sulfamethizole, but the specific numeric values are not present in the provided evidence. |
 | popPK | Sullivan_1975 | irrelevant | 2 | 0 | The study focuses on urinary drug concentrations in diseased kidneys rather than systemic pharmacokinetic parameters (CL, V, ka) for sulfamethizole. |
 | popPK | Vree_1983 | irrelevant | 2 | 0 | The paper is a theoretical discussion using sulfamethizole as an example of metabolic behavior, without reporting original quantitative PK parameter values. |
-| popPK | Zhao_2025 | irrelevant | 0 | 0 | The paper is a bioinformatics resource for drug detection via metabolomics and mentions sulfamethizole only as an example of metadata curation, providing no pharmacokinetic parameters. |
+| popPK | Zhao_2025 | irrelevant | 0 | 0 | The paper describes a mass spectrometry database resource for drug exposure detection and does not report pharmacokinetic parameters for sulfamethizole. |
 | PD | Zhao_2025 | not_relevant | 0 | 0 | The paper describes a metabolomics resource for detecting drug exposure and does not report any pharmacodynamic or exposure-response analysis for sulfamethizole. |
 
 ---

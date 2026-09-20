@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A05A&quot;,&quot;href&quot;:&quot;atc/A05A.md&quot;},{&quot;label&quot;:&quot;piprozolin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piprozolin_Gladigau1977_rat_dog_and_man&quot;,&quot;label&quot;:&quot;Gladigau_1977_rat, dog and man&quot;,&quot;href&quot;:&quot;drugs/drug_piprozolin/Piprozolin_Gladigau1977_rat_dog_and_man.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piprozolin_Gladigau1977_reference&quot;,&quot;label&quot;:&quot;Gladigau_1977_reference&quot;,&quot;href&quot;:&quot;drugs/drug_piprozolin/Piprozolin_Gladigau1977_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # piprozolin
 
@@ -12,13 +12,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 04:50 | 0:26 | 0/0/0 | 0/0/0 | 0/0/0 | 3,341/298 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-18 14:23 | 0:14 | 0/1/0 | 0/0/0 | 0/0/0 | 4,175/318 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Gladigau_1977_rat, dog and man](drugs/drug_piprozolin/Piprozolin_Gladigau1977_rat_dog_and_man.md) | Gladigau V et al., [Metabolism and pharmacokinetics of pip…, Arzneimittel-Forschung (1977) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Gladigau_1977_reference](drugs/drug_piprozolin/Piprozolin_Gladigau1977_reference.md) | Gladigau V et al., [Metabolism and pharmacokinetics of pip…, Arzneimittel-Forschung (1977) | — |
 
 ## Coverage
 
@@ -35,7 +35,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Gladigau_1977.pdf` | Gladigau V et al., [Metabolism and pharmacokinetics of pip…, Arzneimittel-Forschung (1977) | popPK | 9 | not captured | [577414](https://pubmed.ncbi.nlm.nih.gov/577414) | The study reports quantitative PK parameters (half-life, volume of distribution, AUC) for piprozoline and its metabolite in rat, dog, and man, with values explicitly stated in the text. |
 
-<sub>queue written 2026-09-11T04:50:37.319327+00:00</sub>
+<sub>queue written 2026-09-18T14:22:51.219174+00:00</sub>
 
 ## Screened and excluded
 

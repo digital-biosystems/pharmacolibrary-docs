@@ -70,8 +70,6 @@ Xiang Q; Yang Y; Li G; Chen S; Yang Y; Liu L; et al. et al. (2025). Drug design,
 | Residual errorProportional (%) — Bootstrap Results of the Final Model | `Q316` · not captured | 23.1 | not captured | not captured | llm (not captured) | t0002:row17:col5 |
 | Residual errorProportional (%) — Bootstrap Results of the Final Model | `Q316` · not captured | 3.2 | not captured | not captured | llm (not captured) | t0002:row17:col6 |
 | Residual errorProportional (%) — Bootstrap Results of the Final Model | `Q316` · not captured | 21.7 | not captured | not captured | llm (not captured) | t0002:row17:col7 |
-| eGFR0 (mL/min/1.73 m2) — Final Model | `Q358` · not captured | 52.3 | mL/min/1.73 m2 | not captured | llm (not captured) | t0002:row19:col3 |
-| eGFR0 (mL/min/1.73 m2) — Final Model | `Q358` · not captured | 2.8 | mL/min/1.73 m2 | not captured | llm (not captured) | t0002:row19:col4 |
 | IC50 (ng/mL) — Base Model | `Q322` · not captured | 10 | ng/mL | not captured | exact (not captured) | t0002:row20:col1 |
 | IC50 (ng/mL) — Final Model | `Q322` · not captured | 10 | ng/mL | not captured | exact (not captured) | t0002:row20:col3 |
 | IC50 (ng/mL) — Bootstrap Results of the Final Model | `Q322` · not captured | 10 | ng/mL | not captured | exact (not captured) | t0002:row20:col5 |

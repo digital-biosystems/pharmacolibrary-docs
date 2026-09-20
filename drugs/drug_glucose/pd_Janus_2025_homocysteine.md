@@ -3,7 +3,7 @@
 # homocysteine — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Janus_2025`
-- **model family:** `indirect_response`
+- **model family:** `unknown`
 - **driver:** `not_resolved`
 - **tier:** population
 - **effect:** inhibition/unknown

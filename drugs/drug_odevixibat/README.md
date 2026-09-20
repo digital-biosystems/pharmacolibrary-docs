@@ -19,7 +19,7 @@ Odevixibat was granted FDA and Health Canada approval on 20 July 2021 and 13 Nov
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 04:50 | 3:26 | 0/0/0 | 1/0/0 | 0/0/0 | 99,113/1,394 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/0 | 6/0 | 0 |
+| 2026-09-18 14:22 | 3:02 | 0/0/0 | 2/0/0 | 0/0/0 | 128,646/1,928 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
@@ -29,12 +29,19 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Carreño_2025](drugs/drug_odevixibat/pd_Carre_o_2025_C4.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_odevixibat/pd_Billo_2025_ASBT.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_odevixibat/pd_Billo_2025_NTCP.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_odevixibat/pd_Billo_2025_OATP1B1.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_odevixibat/pd_Billo_2025_OATP1B3.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_odevixibat/pd_Billo_2025_OATP2B1.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_odevixibat/pd_Billo_2025_SOAT.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Carreño_2025](drugs/drug_odevixibat/pd_Carre_o_2025_GSRS_diarrhea.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Carreño_2025](drugs/drug_odevixibat/pd_Carre_o_2025_C4.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Carreño_2025](drugs/drug_odevixibat/pd_Carre_o_2025_GSRS.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
 
 ## Coverage
 
-- **PubMed hits:** 13 matched, 11 returned
+- **PubMed hits:** 14 matched, 12 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -44,19 +51,19 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Ahmed_2025 | irrelevant | 0 | 0 | The paper is a general tutorial on rare disease drug development and does not report any pharmacokinetic parameters for odevixibat. |
-| PD | Ahmed_2025 | not_relevant | 0 | 0 | The paper is a general tutorial on rare disease drug development and does not contain specific pharmacodynamic data, models, or numeric parameters for odevixibat. |
-| popPK | Billo_2025 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study analyzing transporter inhibition (IC50) and cross-reactivity, not a pharmacokinetic study reporting disposition parameters like clearance or volume for odevixibat. |
-| popPK | Carreño_2025 | irrelevant | 0 | 0 | The study focuses on linerixibat, not odevixibat, and reports pharmacodynamic parameters for C4 rather than pharmacokinetic parameters for the subject drug. |
-| popPK | Floerl_2025 | irrelevant | 0 | 0 | The paper is an in-vitro transporter study where odevixibat is used only as a probe inhibitor, not as the subject drug for pharmacokinetic parameter estimation. |
-| PD | Floerl_2025 | not_relevant | 3 | 2 | The paper reports in vitro transporter inhibition data (single-point % inhibition at 10 µM) for odevixibat, but does not provide a concentration-response curve or numeric PD parameters (e.g., IC50) for odevixibat, nor does it describe an in vivo exposure-response relationship. |
-| PGx | Floerl_2025 | not_relevant | 0 | 0 | The paper characterizes transporter inhibition in vitro and does not report pharmacogenomic effects on odevixibat PK/PD parameters. |
+| PD | Ahmed_2025 | not_relevant | 0 | 0 | The paper is a general tutorial on rare disease drug development and does not report specific pharmacodynamic data or parameters for odevixibat. |
+| popPK | Billo_2025 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study analyzing transporter inhibition (IC50) and cross-reactivity, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Carreño_2025 | irrelevant | 0 | 0 | The study focuses on linerixibat (a different drug) and odevixibat is only mentioned as a comparator in the introduction without any PK data. |
+| popPK | Floerl_2025 | irrelevant | 0 | 0 | The paper is an in-vitro transporter study where odevixibat is used as a probe inhibitor, not a subject of pharmacokinetic analysis, and no PK parameters (CL, V, etc.) are reported. |
+| PD | Floerl_2025 | not_relevant | 2 | 2 | The paper reports in vitro transporter inhibition (IC50) for odevixibat, which is a mechanistic/pharmacokinetic parameter, not a pharmacodynamic exposure-response or dose-response relationship for the drug's therapeutic effect. |
+| PGx | Floerl_2025 | not_relevant | 0 | 0 | The paper investigates the transport function of OATP1B2 in rodents and humans using odevixibat as an inhibitor, but does not report pharmacogenomic effects of gene variants on odevixibat's PK/PD parameters. |
 | popPK | Marques_2024 | irrelevant | 0 | 0 | The paper is a general review of in silico approaches in precision medicine and does not report any pharmacokinetic parameters for odevixibat. |
-| PD | Marques_2024 | not_relevant | 0 | 0 | The paper is a general review of in silico approaches in precision medicine and does not contain specific pharmacodynamic data, models, or numeric parameters for odevixibat. |
+| PD | Marques_2024 | not_relevant | 0 | 0 | The paper is a general review of in silico approaches and does not report any specific pharmacodynamic data or numeric parameters for odevixibat. |
 | popPK | Porwal_2023 | irrelevant | 2 | 0 | The paper is a review article that discusses odevixibat's pharmacokinetics generally but does not provide specific quantitative disposition parameters (CL, V, Q, ka) in the provided evidence. |
 | PD | Porwal_2023 | not_relevant | 3 | 2 | The text is a review that provides qualitative dose-response data (percent reduction in bile acid AUC for specific doses) but does not report a formal PK/PD model, concentration-effect curve, or standard PD parameters like Emax or EC50. |
 | popPK | de_2026 | irrelevant | 0 | 0 | The paper is a systematic review of dose-response relationships for efficacy outcomes (pruritus and serum bile acids) and does not report pharmacokinetic parameters such as clearance, volume, or half-life for odevixibat. |
-| PD | de_2026 | not_relevant | 3 | 2 | The paper is a systematic review that explicitly concludes no consistent dose-response relationship was observed for odevixibat, and it does not provide numeric PD parameters (Emax, EC50) or a quantitative exposure-response model. |
-| popPK | unknown_2022 | irrelevant | 0 | 0 | The provided evidence contains only the title of a clinical review or case report regarding odevixibat for pruritus, with no pharmacokinetic data, parameters, or quantitative disposition values present. |
+| PD | de_2026 | not_relevant | 3 | 2 | The paper is a systematic review that concludes no evident dose-response relationship was observed for odevixibat, and it does not provide numeric PD parameters (Emax, EC50, etc.) or a quantitative concentration-effect curve. |
+| popPK | unknown_2022 | irrelevant | 0 | 0 | no_text gate: only 89 chars of text extracted (&lt; 400) |
 | PD | unknown_2022 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric PD parameters required to assess an exposure-response relationship. |
 
 ---

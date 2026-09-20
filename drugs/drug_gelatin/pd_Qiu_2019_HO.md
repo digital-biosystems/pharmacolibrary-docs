@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Hydroxyl radical scavenging activity — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# Hydroxyl radical scavenging — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Qiu_2019`
 - **model family:** `unknown`

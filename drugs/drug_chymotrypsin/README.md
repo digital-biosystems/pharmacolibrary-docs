@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-07 17:54 | 42:01 | 0/0/0 | 10/1/0 | 0/0/0 | 591,614/14,072 | ollama / qwen3.8:27b-mtp-q8_0 | 59 | 7/52 | 57/2 | 0 |
+| 2026-09-19 11:00 | 34:27 | 0/0/0 | 11/1/0 | 0/0/0 | 1,246,093/23,875 | ollama / qwen3.8:27b-mtp-q8_0 | 60 | 7/53 | 58/2 | 0 |
 
 ## popPK records
 
@@ -49,6 +49,8 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Ettari_2019](drugs/drug_chymotrypsin/pd_Ettari_2019_ubiquitin_accumulation.md) | Ettari R et al., Non-covalent immunoproteasome inhibitor…, Journal of enzyme inhibitio… (2019) | [10.1080/14756366.2019.1594802](https://doi.org/10.1080/14756366.2019.1594802) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Guedes_2023](drugs/drug_chymotrypsin/pd_Guedes_2023_cell_viability.md) | Guedes RA et al., New Scaffolds of Proteasome Inhibitors:…, Pharmaceuticals (Basel, Swi… (2023) | [10.3390/ph16081096](https://doi.org/10.3390/ph16081096) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Guedes_2023](drugs/drug_chymotrypsin/pd_Guedes_2023_proteasome_inhibition.md) | Guedes RA et al., New Scaffolds of Proteasome Inhibitors:…, Pharmaceuticals (Basel, Swi… (2023) | [10.3390/ph16081096](https://doi.org/10.3390/ph16081096) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Karges_2023](drugs/drug_chymotrypsin/pd_Karges_2023_SARS_CoV_2_infection.md) | Karges J et al., Enantioselective inhibition of the SARS…, Chemical science (2023) | [10.1039/d2sc05473f](https://doi.org/10.1039/d2sc05473f) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Karges_2023](drugs/drug_chymotrypsin/pd_Karges_2023_SARS_CoV_2_main_protease_activity.md) | Karges J et al., Enantioselective inhibition of the SARS…, Chemical science (2023) | [10.1039/d2sc05473f](https://doi.org/10.1039/d2sc05473f) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Pandey_2025](drugs/drug_chymotrypsin/pd_Pandey_2025_PLpro_deubiquitinase_activity_inhibition.md) | Pandey K et al., 9-aminominocycline potentiates the effi…, Scientific reports (2025) | [10.1038/s41598-025-89717-3](https://doi.org/10.1038/s41598-025-89717-3) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Pandey_2025](drugs/drug_chymotrypsin/pd_Pandey_2025_PLpro_proteolytic_activity_inhibition.md) | Pandey K et al., 9-aminominocycline potentiates the effi…, Scientific reports (2025) | [10.1038/s41598-025-89717-3](https://doi.org/10.1038/s41598-025-89717-3) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Pandey_2025](drugs/drug_chymotrypsin/pd_Pandey_2025_SARS_CoV_2_viral_replication_inhibition.md) | Pandey K et al., 9-aminominocycline potentiates the effi…, Scientific reports (2025) | [10.1038/s41598-025-89717-3](https://doi.org/10.1038/s41598-025-89717-3) |
@@ -68,7 +70,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 657 matched, 125 returned
+- **PubMed hits:** 661 matched, 129 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -91,35 +93,44 @@ _11 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Rauf_2017.pdf` | Rauf A et al., Bioassay-guided isolation of novel and…, Chinese journal of natural… (2017) | pd | 4 | [10.1016/S1875-5364(18)30021-9](https://doi.org/10.1016/S1875-5364(18)30021-9) | [29329614](https://www.ncbi.nlm.nih.gov/pubmed/29329614) | metadata signals extractable PD data (IC50) |
 | `He_2026.pdf` | He Q et al., A Phase I Single and Multiple Ascending…, Clinical therapeutics (2026) | pgx | 7 | [10.1016/j.clinthera.2026.03.017](https://doi.org/10.1016/j.clinthera.2026.03.017) | [41916795](https://www.ncbi.nlm.nih.gov/pubmed/41916795) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-07T17:41:08.201290+00:00</sub>
+<sub>queue written 2026-09-19T10:53:32.563132+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Aggarwal_2023 | irrelevant | 0 | 0 | The paper is a mass spectrometry proteomics report identifying plant proteins (e.g., ribulose bisphosphate carboxylase) and contains no pharmacokinetic data for chymotrypsin. |
 | PD | Aggarwal_2023 | not_relevant | 0 | 0 | The text is a mass spectrometry peptide summary report for plant proteins and contains no pharmacodynamic or exposure-response data for chymotrypsin. |
 | popPK | Alberdi_1998 | irrelevant | 0 | 0 | The paper is a structural biology study on PEDF binding to glycosaminoglycans, where chymotrypsin is used only as a proteolytic enzyme for limited proteolysis, not as a subject drug for pharmacokinetic analysis. |
 | PD | Alberdi_1998 | not_relevant | 0 | 0 | The paper reports a binding affinity (EC50) for PEDF to heparan sulfate, not a pharmacodynamic or exposure-response relationship for chymotrypsin. |
 | popPK | Algov_2026 | irrelevant | 0 | 0 | The paper is a protease substrate discovery study where chymotrypsin is only mentioned as a reference for enzyme activity, not as a subject drug for pharmacokinetic analysis. |
 | PD | Algov_2026 | not_relevant | 0 | 0 | The paper describes a protease substrate discovery platform (PSurf) and biosensor development, focusing on enzyme kinetics and tissue specificity, but does not report pharmacodynamic (exposure-response) parameters for the drug chymotrypsin. |
+| popPK | Alves_2022 | irrelevant | 0 | 0 | The paper is a mechanistic study on marine bromoditerpenes as proteasome inhibitors, where chymotrypsin is only mentioned as a catalytic site for molecular docking, not as a subject drug for PK analysis. |
+| PD | Alves_2022 | not_relevant | 0 | 0 | The paper studies bromoditerpenes as proteasome inhibitors and does not report any pharmacodynamic or exposure-response data for chymotrypsin. |
 | popPK | Amer_2025 | irrelevant | 0 | 0 | The paper is a review on peptide delivery where chymotrypsin is mentioned only as a digestive enzyme, not as the subject drug for pharmacokinetic analysis. |
 | PD | Amer_2025 | not_relevant | 0 | 0 | The paper is a review on peptide delivery technologies and does not report any pharmacodynamic or exposure-response data for chymotrypsin. |
+| popPK | Bao_2023 | irrelevant | 0 | 0 | The paper focuses on the design of SARS-CoV-2 3CL protease inhibitors, not the pharmacokinetics of the drug chymotrypsin. |
 | PD | Bao_2023 | not_relevant | 0 | 0 | The paper reports an IC50 for a novel isatin derivative (5g) against SARS-CoV-2 3CLpro, not for the drug chymotrypsin, and does not provide a PD model or exposure-response relationship for chymotrypsin. |
 | PGx | Baroni_2015 | not_relevant | 0 | 0 | The paper investigates the structure-function relationship of a Factor X mutation, not the pharmacokinetics or pharmacodynamics of the drug chymotrypsin. |
+| popPK | Billings_1990 | irrelevant | 0 | 0 | The study investigates the anticarcinogenic effects of chymostatin (a chymotrypsin inhibitor) and Bowman-Birk inhibitor, not the pharmacokinetics of chymotrypsin itself. |
 | PD | Billings_1990 | not_relevant | 3 | 2 | The paper reports a qualitative dose-response for a soybean extract (BBI) and a qualitative effect for chymostatin, but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve for chymotrypsin. |
 | popPK | Bognanni_2025 | irrelevant | 0 | 0 | The paper studies a suxibuzone-cyclodextrin conjugate and its effect on proteasome chymotrypsin-like activity, not the pharmacokinetics of the drug chymotrypsin. |
-| PD | Bohg_2026 | not_relevant | 0 | 0 | The paper reports IC50 values for inhibitors of the rhomboid protease GlpG, using chymotrypsin only as a negative control for selectivity; it does not report a pharmacodynamic or exposure-response relationship for chymotrypsin itself. |
-| PD | Bravo_2022 | not_relevant | 0 | 0 | The paper studies bioactive peptides from pigeon pea protein; chymotrypsin is used only as a proteolytic enzyme for digestion, not as a drug subject to pharmacodynamic analysis. |
+| popPK | Bohg_2026 | irrelevant | 0 | 0 | The paper is a mechanistic study on rhomboid protease inhibitors where chymotrypsin is used only as a negative control/comparator enzyme, not as the subject drug for pharmacokinetic analysis. |
+| PD | Bohg_2026 | not_relevant | 0 | 0 | The paper focuses on the discovery and mechanistic characterization of inhibitors for the rhomboid protease GlpG; chymotrypsin is used only as a negative control for selectivity screening, and no pharmacodynamic or exposure-response analysis is performed for it. |
+| popPK | Borovsky_1993 | irrelevant | 0 | 0 | The paper studies a peptide hormone (TMOF) that inhibits chymotrypsin-like enzyme biosynthesis in mosquitoes, rather than reporting pharmacokinetic parameters for chymotrypsin as a drug. |
+| popPK | Bravo_2022 | irrelevant | 0 | 0 | The paper is a food science study on bioactive peptides from pigeon pea, using chymotrypsin only as a digestive enzyme for in-vitro hydrolysis, not as a subject drug for pharmacokinetic analysis. |
+| PD | Bravo_2022 | not_relevant | 0 | 0 | The paper studies bioactive peptides from pigeon pea; chymotrypsin is used only as a proteolytic enzyme for digestion, not as a drug subject to pharmacodynamic analysis. |
 | PGx | Brennan_1984 | not_relevant | 0 | 0 | The paper discusses proalbumin cleavage by chymotrypsin in the context of alpha-1-antitrypsin deficiency, not the pharmacokinetics or pharmacodynamics of chymotrypsin as a drug. |
 | popPK | Brown_2020 | irrelevant | 0 | 0 | The paper describes a high-throughput screening assay for SARS-CoV-2 protease inhibitors and does not report pharmacokinetic parameters for the drug chymotrypsin. |
 | popPK | Byler_2020 | irrelevant | 0 | 0 | The paper is a computational study on SARS-CoV-2 inhibitors and does not involve chymotrypsin or pharmacokinetic parameters. |
 | PD | Byler_2020 | not_relevant | 0 | 0 | The paper describes in silico virtual screening of natural products against SARS-CoV-2 proteins and does not involve chymotrypsin or report any pharmacodynamic or exposure-response data. |
 | popPK | Castro_2006 | irrelevant | 0 | 0 | The paper studies the interaction between ecotin and thrombin, mentioning chymotrypsin only as a comparator enzyme for ecotin's inhibitory activity, with no pharmacokinetic data. |
 | PD | Castro_2006 | not_relevant | 0 | 0 | The paper studies the interaction between ecotin and thrombin, not the pharmacodynamics of chymotrypsin. |
-| popPK | Chhetri_2021 | irrelevant | 0 | 0 | The paper is a computational study of azo imidazole derivatives against SARS-CoV-2 Mpro and does not report pharmacokinetic parameters for chymotrypsin. |
+| popPK | Chhetri_2021 | irrelevant | 0 | 0 | The paper is a computational study of azo imidazole derivatives against SARS-CoV-2 protease and does not report pharmacokinetic parameters for chymotrypsin. |
 | PD | Chhetri_2021 | not_relevant | 0 | 0 | The paper is a computational study on azo imidazole derivatives against SARS-CoV-2 Mpro and does not involve chymotrypsin or report any pharmacodynamic exposure-response or dose-response relationships. |
 | popPK | Chiang_1996 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of timolol, using chymotrypsin only as an agent to induce glaucoma in the animal model. |
-| popPK | Chiou_2021 | irrelevant | 0 | 0 | The paper investigates the antiviral activity of ugonin J against SARS-CoV-2 3CLpro (a viral protease with a chymotrypsin-like fold) and does not report pharmacokinetic parameters for the drug chymotrypsin. |
+| popPK | Chiou_2021 | irrelevant | 0 | 0 | The paper investigates the antiviral and anti-inflammatory properties of the flavonoid ugonin J against SARS-CoV-2, and "chymotrypsin" is only mentioned as part of the name of the viral protease (3-chymotrypsin-like protein), not as the subject drug for pharmacokinetic analysis. |
+| popPK | Chorążewska_2026 | irrelevant | 0 | 0 | The paper studies a protein-drug conjugate (TriFHS-MMAE) for pancreatic cancer and does not involve chymotrypsin or report pharmacokinetic parameters for it. |
 | popPK | Concha_2004 | irrelevant | 0 | 0 | The paper studies apolipoproteins in fish and uses chymotrypsin only as a reagent for in-vitro proteolysis, not as the subject drug for PK analysis. |
 | PD | Concha_2004 | not_relevant | 0 | 0 | The paper studies apolipoproteins in fish; chymotrypsin is only used as a reagent for limited proteolysis, and no pharmacodynamic or exposure-response relationship for chymotrypsin is reported. |
 | popPK | Dampalla_2023 | irrelevant | 0 | 0 | The paper is a structure-guided drug design study for SARS-CoV-2 protease inhibitors, and chymotrypsin is only mentioned as a negative control in a selectivity assay, not as a subject drug for PK analysis. |
@@ -129,67 +140,90 @@ _11 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Dose_2016 | not_relevant | 0 | 0 | The paper investigates the effect of APOE genotype on hepatic stress response and proteasome activity, not the pharmacokinetics or pharmacodynamics of the drug chymotrypsin. |
 | popPK | Elekofehinti_2021 | irrelevant | 0 | 0 | The paper is a computational study on SARS-CoV-2 3CLpro inhibitors and does not report pharmacokinetic parameters for the drug chymotrypsin. |
 | PD | Elekofehinti_2021 | not_relevant | 0 | 0 | The paper is a computational study (docking, QSAR, MD) identifying potential inhibitors; it does not report experimental pharmacodynamic data, exposure-response relationships, or numeric PD parameters for chymotrypsin or any other drug. |
-| PD | Elsbaey_2022 | not_relevant | 2 | 2 | The paper reports IC50 values for rosmarinic acid isomers against SARS-CoV-2 3CLpro, but does not report any pharmacodynamic or exposure-response relationship for the drug chymotrypsin. |
-| popPK | Ertelt_2024 | irrelevant | 0 | 0 | The paper is a computational study on predicting post-translational modifications (PTMs) using machine learning and does not report pharmacokinetic parameters for chymotrypsin. |
+| popPK | Elsbaey_2022 | irrelevant | 0 | 0 | The paper is a phytochemical and in silico study of natural compounds against SARS-CoV-2 3CLpro (a chymotrypsin-like protease), not a pharmacokinetic study of the drug chymotrypsin. |
+| PD | Elsbaey_2022 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for plant compounds against SARS-CoV-2 3CLpro, not a pharmacodynamic (exposure-response) relationship for the drug chymotrypsin. |
+| popPK | Ertelt_2024 | irrelevant | 0 | 0 | The paper is a computational study on predicting post-translational modifications using machine learning and does not report pharmacokinetic parameters for chymotrypsin. |
 | PD | Ertelt_2024 | not_relevant | 0 | 0 | The paper focuses on machine learning and protein design for post-translational modifications and does not contain any pharmacodynamic or exposure-response data for chymotrypsin. |
 | PGx | Erukainure_2021 | not_relevant | 0 | 0 | The paper investigates the effect of L-leucine on chymotrypsin activity in the context of oxidative injury, not the effect of a gene variant on chymotrypsin pharmacokinetics or pharmacodynamics. |
-| popPK | Esimbekova_2017 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic analysis of enzyme inhibition by food preservatives, not a pharmacokinetic study reporting disposition parameters for chymotrypsin. |
+| popPK | Esimbekova_2017 | irrelevant | 0 | 0 | no_text gate: only 58 chars of text extracted (&lt; 400) |
+| PD | Esimbekova_2017 | not_relevant | 0 | 0 | The paper discusses the inhibition of endoproteinases by food preservatives, not the pharmacodynamics of chymotrypsin as a drug. |
 | popPK | Ettari_2019 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of proteasome inhibitors in cell lines and does not report pharmacokinetic parameters for chymotrypsin. |
+| popPK | Fang_2015 | irrelevant | 0 | 0 | The paper describes a trypsin inhibitor from rambutan seeds and its in-vitro biological activities, with no pharmacokinetic data for chymotrypsin. |
 | PD | Fang_2015 | not_relevant | 3 | 2 | The paper reports an IC50 for HIV-1 RT and qualitative dose-dependent tumor inhibition, but lacks a formal PK/PD model or detailed concentration-effect curve analysis for chymotrypsin inhibition specifically. |
-| PD | Ghaffari_2016 | not_relevant | 3 | 2 | The paper reports crude plant extract enzyme inhibition with IC50 values reported as "&gt;500 μmol" (non-numeric upper bounds) and single-point inhibition percentages, lacking a defined dose-response curve or specific numeric PD parameters for the drug chymotrypsin. |
+| popPK | Ge_2017 | irrelevant | 0 | 0 | The paper focuses on the design and biological evaluation of proteasome inhibitors, not the pharmacokinetics of chymotrypsin. |
+| popPK | Ghaffari_2016 | irrelevant | 0 | 0 | The paper investigates the in-vitro enzyme inhibition of chymotrypsin by plant extracts, not the pharmacokinetics of chymotrypsin as a drug. |
+| PD | Ghaffari_2016 | not_relevant | 3 | 2 | The paper reports crude plant extract inhibition with IC50 values reported as "&gt;500 μmol" (non-numeric upper bounds) and does not provide a dose-response curve or specific PD parameters for the drug chymotrypsin itself. |
 | popPK | Ghosh_2008 | irrelevant | 0 | 0 | The paper describes the synthesis and antiviral efficacy of SARS-CoV 3CLpro inhibitors, not the pharmacokinetics of the drug chymotrypsin. |
 | PD | Ghosh_2008 | not_relevant | 0 | 0 | The paper focuses on the synthesis and in vitro antiviral/enzyme activity of SARS-CoV 3CLpro inhibitors, not on chymotrypsin pharmacodynamics or exposure-response relationships. |
 | popPK | Ghosh_2021 | irrelevant | 0 | 0 | The paper studies SARS-CoV-2 chymotrypsin-like protease inhibitors, not the pharmacokinetics of the drug chymotrypsin. |
 | PD | Ghosh_2021 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) and antiviral efficacy (EC50) for SARS-CoV-2 3CLpro inhibitors, but does not report any pharmacodynamic or exposure-response relationship for chymotrypsin. |
 | popPK | Grosche_2026 | irrelevant | 0 | 0 | The paper studies the antiviral activity of Lisboaeflavanonol A against SARS-CoV-2, where chymotrypsin-like protease is only mentioned as a viral target, not as the subject drug for PK analysis. |
 | PD | Grosche_2026 | not_relevant | 0 | 0 | The paper reports antiviral activity (EC50/CC50) for a novel compound (LFA) against SARS-CoV-2, not pharmacodynamic parameters for the drug chymotrypsin. |
+| popPK | Guedes_2023 | irrelevant | 0 | 0 | The paper is a study on proteasome inhibitors where "chymotrypsin-like" refers to an enzyme active site, not the drug chymotrypsin, and no PK parameters are reported. |
+| PD | Guedes_2023 | not_relevant | 3 | 2 | The paper reports IC50 values for proteasome inhibition and cell viability, which are single-point potency metrics rather than a full exposure-response or dose-response curve with derived PD parameters (like Emax, EC50, or slope) for chymotrypsin specifically. |
 | popPK | Guerciolini_1997 | irrelevant | 0 | 0 | The paper focuses on the mechanism of action of orlistat, and chymotrypsin is only mentioned as an enzyme not inhibited by the drug, with no pharmacokinetic parameters reported. |
 | PD | Guerciolini_1997 | not_relevant | 3 | 2 | The text describes the mode of action of orlistat and mentions it has no activity against chymotrypsin, but it does not report a PD relationship or numeric PD parameters for chymotrypsin itself. |
 | popPK | Gupta_2019 | irrelevant | 0 | 0 | The paper is a clinical pharmacology review of ixazomib, a proteasome inhibitor that targets the chymotrypsin-like site, but it does not report pharmacokinetic parameters for the drug chymotrypsin itself. |
 | popPK | Hayat_2024 | irrelevant | 0 | 0 | The paper is an in-silico study on Ebola virus protein inhibitors and does not involve chymotrypsin or pharmacokinetic parameters. |
 | PD | Hayat_2024 | not_relevant | 0 | 0 | The paper is an in silico study on Ebola virus inhibitors and does not involve chymotrypsin or report any pharmacodynamic or exposure-response data. |
 | PGx | He_2026 | not_relevant | 0 | 0 | The study evaluates the pharmacokinetics of SAL0133 (a chymotrypsin-like protease inhibitor) but does not report any pharmacogenomic effects or gene variant analyses. |
-| popPK | Hejazi_2021 | irrelevant | 0 | 0 | The paper is an in silico molecular docking study of phytoconstituents against SARS-CoV-2 protease and does not report pharmacokinetic parameters for chymotrypsin. |
+| popPK | Hejazi_2021 | irrelevant | 0 | 0 | The paper is an in-silico molecular docking study of phytoconstituents against SARS-CoV-2 protease and does not report pharmacokinetic parameters for chymotrypsin. |
 | PD | Hejazi_2021 | not_relevant | 0 | 0 | The paper is an in silico molecular docking and dynamics study of phytoconstituents against SARS-CoV-2 protease; it does not involve chymotrypsin or report any pharmacodynamic (exposure-response) data. |
+| popPK | Herbert_1992 | irrelevant | 0 | 0 | The study focuses on the pharmacological activity of the elastase inhibitor SR 26831, and chymotrypsin is only mentioned as a comparator enzyme that was not inhibited, with no PK parameters reported for chymotrypsin. |
+| popPK | Hiwada_1990 | irrelevant | 0 | 0 | The paper is an in-vitro study of an ACE inhibitor (SQ29,852) where chymotrypsin is only mentioned as a negative control for enzyme specificity, with no pharmacokinetic parameters reported. |
 | PD | Hiwada_1990 | not_relevant | 0 | 0 | The paper reports that the drug SQ29,852 has no inhibitory effect on chymotrypsin, and does not provide any exposure-response or dose-response data for chymotrypsin itself. |
 | popPK | Hrvat_2020 | irrelevant | 0 | 0 | The paper is a review on chemical warfare nerve agents and cholinesterases, mentioning chymotrypsin only as a serine esterase target, with no pharmacokinetic parameters for chymotrypsin. |
 | PD | Hrvat_2020 | not_relevant | 0 | 0 | The paper is a review of nerve agent poisoning mechanisms and treatments (atropine, oximes, bioscavengers) and does not report any pharmacodynamic or exposure-response data for chymotrypsin. |
-| popPK | Islam_2022 | irrelevant | 0 | 0 | The paper is a review on immune system measures against coronavirus and does not report pharmacokinetic parameters for chymotrypsin. |
+| popPK | Ilyaskin_2026 | irrelevant | 0 | 0 | The paper focuses on the structural and functional roles of ENaC subunits and does not involve chymotrypsin pharmacokinetics. |
+| PD | Ilyaskin_2026 | not_relevant | 0 | 0 | The paper focuses on the structural and functional roles of GRIP domains in ENaC subunits using electrophysiology and simulations, and does not report any pharmacodynamic or exposure-response analysis for chymotrypsin. |
+| popPK | Islam_2022 | irrelevant | 0 | 0 | The paper is a review on immune system rejuvenation against coronavirus and does not report pharmacokinetic parameters for chymotrypsin. |
 | PD | Islam_2022 | not_relevant | 0 | 0 | The paper is a general review on immune system rejuvenation and does not contain any pharmacodynamic or exposure-response data for chymotrypsin. |
-| PGx | Jan_2023 | not_relevant | 0 | 0 | The paper is a proteomic study of fish muscle proteins and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of chymotrypsin. |
+| PGx | Jan_2023 | not_relevant | 0 | 0 | The paper is a proteomic study of fish muscle proteins and does not investigate pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of chymotrypsin as a drug. |
+| popPK | Jiang_2023 | irrelevant | 0 | 0 | The paper focuses on the enzymatic inhibition of SARS-CoV-2 3CLpro (a protease) by isatin derivatives, not the pharmacokinetics of the drug chymotrypsin. |
 | PD | Jiang_2023 | not_relevant | 0 | 0 | The paper reports in vitro enzymatic IC50 values for SARS-CoV-2 3CLpro inhibitors, which is a pharmacological potency assay, not a pharmacodynamic (exposure-response) or PK/PD analysis for chymotrypsin. |
+| popPK | Jorda_2021 | irrelevant | 0 | 0 | The paper studies proteasome inhibitors targeting the chymotrypsin-like activity of the proteasome, not the pharmacokinetics of the drug chymotrypsin. |
+| popPK | Karges_2023 | irrelevant | 0 | 0 | The paper describes the synthesis and in-vitro inhibition of SARS-CoV-2 main protease (3CLpro) by rhenium complexes, not the pharmacokinetics of the drug chymotrypsin. |
+| popPK | Kawabata_1991 | irrelevant | 0 | 0 | The paper studies the inhibitor ONO-5046, and chymotrypsin is only mentioned as a non-target enzyme in an in-vitro inhibition assay, with no pharmacokinetic parameters reported. |
 | PD | Kawabata_1991 | not_relevant | 0 | 0 | The paper reports that ONO-5046 did not inhibit chymotrypsin even at 100 microM, providing no dose-response curve or numeric PD parameters for chymotrypsin. |
-| PD | Kawall_2022 | not_relevant | 0 | 0 | The paper reports IC50 values for phytochemicals inhibiting SARS-CoV-2 PLpro, but does not report any pharmacodynamic or exposure-response data for chymotrypsin. |
+| popPK | Kawall_2022 | irrelevant | 0 | 0 | The paper is an in-vitro study on phytochemical inhibition of SARS-CoV-2 PLpro and does not report pharmacokinetic parameters for chymotrypsin. |
+| PD | Kawall_2022 | not_relevant | 0 | 0 | The paper investigates the inhibitory effects of phytochemicals on SARS-CoV-2 PLpro, not the pharmacodynamics of chymotrypsin. |
 | popPK | Kern_2021 | irrelevant | 0 | 0 | The paper focuses on SARS-CoV-2 viral kinetics and repurposed antivirals (e.g., ivermectin, hydroxychloroquine) and does not mention chymotrypsin or report its pharmacokinetic parameters. |
 | PD | Kern_2021 | not_relevant | 0 | 0 | The paper models viral kinetics for hydroxychloroquine, lopinavir/ritonavir, ivermectin, artemisinin, and nitazoxanide, but does not mention or analyze chymotrypsin. |
-| popPK | Kern_2021_2 | irrelevant | 0 | 0 | The paper is a viral kinetics modeling study for SARS-CoV-2 and does not report pharmacokinetic parameters for chymotrypsin. |
+| popPK | Kern_2021_2 | irrelevant | 0 | 0 | The paper models viral kinetics for SARS-CoV-2 and does not report pharmacokinetic parameters for chymotrypsin. |
 | PD | Kern_2021_2 | not_relevant | 0 | 0 | The paper models SARS-CoV-2 viral kinetics for hydroxychloroquine, lopinavir/ritonavir, ivermectin, artemisinin, and nitazoxanide, but does not mention or model chymotrypsin. |
 | popPK | Kisselev_2002 | irrelevant | 0 | 0 | The paper studies the enzymatic mechanism of the 20S proteasome (where chymotrypsin-like activity is a site type, not the drug chymotrypsin) and reports no pharmacokinetic parameters. |
 | PD | Kisselev_2002 | not_relevant | 0 | 0 | The paper describes the allosteric mechanism of 20S proteasome activation by peptides, not the pharmacodynamics of the drug chymotrypsin. |
+| popPK | Kobayashi_1985 | irrelevant | 0 | 0 | The provided evidence contains only metadata and software version information, with no pharmacokinetic data or text regarding chymotrypsin. |
 | PD | Kobayashi_1985 | not_relevant | 0 | 0 | The provided text is metadata for the GROBID software and does not contain any scientific content regarding chymotrypsin or pharmacodynamics. |
 | PGx | Kobielak_2014 | not_relevant | 0 | 0 | The paper studies protease-resistant variants of FGF1, not the pharmacogenomics of chymotrypsin. |
-| popPK | Kumar_2024 | irrelevant | 0 | 0 | The paper is an in-silico study on phytochemical inhibitors of furin protease for COVID-19 and does not involve chymotrypsin or report any pharmacokinetic parameters. |
+| popPK | Kumar_2024 | irrelevant | 0 | 0 | The paper is an in-silico study on furin protease inhibitors for COVID-19 and does not involve chymotrypsin or pharmacokinetic parameters. |
 | PD | Kumar_2024 | not_relevant | 0 | 0 | The paper is a computational study (virtual screening, docking, MD simulations) of phytochemicals targeting furin protease and does not involve chymotrypsin or report any pharmacodynamic (exposure-response) data. |
+| popPK | LaDuca_1986 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of platelet-collagen interaction where chymotrypsin is used only as a reagent to digest membrane glycoproteins, not as a subject drug for pharmacokinetic analysis. |
 | PD | LaDuca_1986 | not_relevant | 0 | 0 | The paper investigates the interaction of ristocetin, vWF, and collagen on platelet aggregation; chymotrypsin is used only as a proteolytic tool to remove glycoproteins, not as a drug with a reported exposure-response or dose-response relationship. |
-| PGx | Laffoon_2022 | not_relevant | 0 | 0 | The paper investigates plasma protein biomarkers for Alzheimer's disease and does not report pharmacokinetic or pharmacodynamic parameters of chymotrypsin. |
+| PGx | Laffoon_2022 | not_relevant | 0 | 0 | The paper investigates plasma protein biomarkers for Alzheimer's disease and mentions alpha-1-antichymotrypsin levels, but does not report pharmacokinetic or pharmacodynamic parameters of the drug chymotrypsin. |
+| popPK | Lam_2010 | irrelevant | 0 | 0 | The paper describes a chymotrypsin inhibitor (a protein from Acacia confusa) and its biological activities, not the pharmacokinetics of the drug chymotrypsin. |
 | popPK | Larionova_1996 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of Bowman-Birk soybean protease inhibitor (BBI), not chymotrypsin, which is only mentioned as a target enzyme for inhibition. |
 | PGx | Lechner_1995 | not_relevant | 0 | 0 | The paper investigates the effect of chymotrypsin digestion on hCG epitopes for diagnostic assay standardization, not the pharmacokinetics or pharmacodynamics of chymotrypsin as a drug. |
+| popPK | Li_2019 | irrelevant | 0 | 0 | The paper studies copper complexes that inhibit proteasomal chymotrypsin-like activity in cancer cells, not the pharmacokinetics of the drug chymotrypsin. |
+| popPK | Li_2024 | irrelevant | 0 | 0 | The study focuses on ACE inhibitory peptides from Douchi hydrolysate, using chymotrypsin only as a digestive enzyme for hydrolysis, not as the subject drug for pharmacokinetic analysis. |
 | popPK | Lin_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of carfilzomib, not chymotrypsin. |
 | PD | Lin_2023 | not_relevant | 0 | 0 | The paper reports a PK/PD model for carfilzomib, not chymotrypsin. |
-| popPK | Mast_2021 | irrelevant | 0 | 0 | The paper focuses on nanobodies targeting SARS-CoV-2 spike protein and contains no information regarding chymotrypsin or its pharmacokinetics. |
+| popPK | Mast_2021 | irrelevant | 0 | 0 | The paper is a structural and functional study of nanobodies against SARS-CoV-2 spike protein and does not involve chymotrypsin or pharmacokinetic parameters. |
 | PD | Mast_2021 | not_relevant | 0 | 0 | The paper focuses on nanobodies against SARS-CoV-2 and does not report any pharmacodynamic or exposure-response data for chymotrypsin. |
-| popPK | Medrano_2024 | irrelevant | 0 | 0 | The paper is a structural and mechanistic study of SARS-CoV-2 main protease inhibitors, not a pharmacokinetic study of the drug chymotrypsin. |
+| popPK | Medrano_2024 | irrelevant | 0 | 0 | The paper studies peptidyl nitroalkene inhibitors of SARS-CoV-2 main protease (3CLpro), not the pharmacokinetics of the drug chymotrypsin. |
 | PD | Medrano_2024 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (Ki) and antiviral activity (EC50) for SARS-CoV-2 Mpro inhibitors, but does not contain any data, analysis, or mention of chymotrypsin. |
-| popPK | Ming_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of difelikefalin acetate, and chymotrypsin is only mentioned as an enzyme in an in-vitro degradation assay, not as the subject drug. |
-| PD | Ming_2026 | not_relevant | 2 | 1 | The paper mentions chymotrypsin only in the context of in vitro enzymatic stability (degradation resistance) and reports a single-dose qualitative comparison of PD effects (scratching inhibition) without deriving numeric PD parameters like Emax or EC50. |
+| popPK | Ming_2026 | irrelevant | 0 | 0 | no_text gate: only 139 chars of text extracted (&lt; 400) |
+| PD | Ming_2026 | not_relevant | 0 | 0 | The paper focuses on difelikefalin acetate, not chymotrypsin, and does not report PD parameters for the specified drug. |
 | popPK | Moravec_2009 | irrelevant | 0 | 0 | The paper describes in-vitro cell-based assays for proteasome activity, not pharmacokinetic studies of the drug chymotrypsin. |
+| popPK | Moriyama_1983 | irrelevant | 0 | 0 | The paper describes the purification and characterization of a porcine liver enzyme (post-proline cleaving enzyme) and uses chymotrypsin only as a negative control for substrate specificity, containing no pharmacokinetic data for chymotrypsin. |
 | PD | Moriyama_1983 | not_relevant | 0 | 0 | The paper characterizes a purified enzyme (prolyl oligopeptidase) and reports IC50 values for its inhibitors, but does not report a pharmacodynamic exposure-response or dose-response relationship for the drug chymotrypsin. |
 | PGx | Nieves_2010 | not_relevant | 0 | 0 | The paper studies a mutated receptor (u-PAR) and its interaction with chymotrypsin, but does not report pharmacogenomic effects on the PK/PD of chymotrypsin as a drug. |
 | popPK | Noptana_2026 | irrelevant | 0 | 0 | The paper is a food science study on antioxidant peptides where chymotrypsin is used as a hydrolysis enzyme, not as a subject drug for pharmacokinetic analysis. |
 | PD | Noptana_2026 | not_relevant | 0 | 0 | The paper uses chymotrypsin as a proteolytic enzyme to generate peptides and reports antioxidant activity of the resulting hydrolysates, not a pharmacodynamic or exposure-response relationship for chymotrypsin itself. |
+| popPK | Orlova_1987 | irrelevant | 0 | 0 | The paper investigates radiation inactivation mechanisms of alpha-chymotrypsin in vitro, not pharmacokinetic disposition parameters. |
 | PD | Orlova_1987 | not_relevant | 0 | 0 | The paper discusses radiation inactivation (physical chemistry/radiobiology) of the enzyme, not pharmacodynamic drug exposure-response relationships. |
 | PGx | Paliwal_2014 | not_relevant | 0 | 0 | The paper discusses genetic risk factors for tropical calcific pancreatitis, not the pharmacokinetics or pharmacodynamics of chymotrypsin as a drug. |
-| popPK | Pandey_2025 | irrelevant | 0 | 0 | The paper studies 9-aminominocycline as an antiviral agent and mentions chymotrypsin-like protease (3CLpro) only as a viral enzyme target, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Pandey_2025 | irrelevant | 0 | 0 | The paper studies 9-aminominocycline as an antiviral agent and mentions chymotrypsin-like protease (3CLpro) only as a viral enzyme target, not as the drug chymotrypsin. |
 | popPK | Papadopoulou_2025 | irrelevant | 0 | 0 | The paper is a review on marine bioactives for cosmetics and does not contain any pharmacokinetic data or parameters for chymotrypsin. |
 | PD | Papadopoulou_2025 | not_relevant | 0 | 0 | The paper is a review on marine by-products for cosmetics and does not contain any pharmacodynamic or exposure-response data for chymotrypsin. |
 | popPK | Phan_2025 | irrelevant | 0 | 0 | The paper focuses on viral dynamics of SARS-CoV-2 and PK/PD of nirmatrelvir-ritonavir, not the pharmacokinetics of the enzyme chymotrypsin. |
@@ -197,17 +231,21 @@ _11 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Pierce_2018 | not_relevant | 0 | 0 | The paper reports pharmacological activity (EC50/Ki) for thiasyrbactins, not chymotrypsin, and does not provide a PD model or exposure-response relationship for chymotrypsin. |
 | popPK | Quah_2019 | irrelevant | 0 | 0 | The paper is a study on the identification of cytotoxic peptides from marine coral, where chymotrypsin is used only as a protease for hydrolysis, not as the subject drug for pharmacokinetic analysis. |
 | PD | Quah_2019 | not_relevant | 0 | 0 | The paper reports EC50 values for novel peptides isolated using chymotrypsin, but does not report a pharmacodynamic or exposure-response relationship for the drug chymotrypsin itself. |
+| popPK | Rauf_2017 | irrelevant | 0 | 0 | The paper is a pharmacological study on enzyme inhibition (urease, chymotrypsin) and does not report pharmacokinetic parameters for chymotrypsin. |
 | PD | Rauf_2017 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for urease and mentions chymotrypsin screening, but does not provide numeric PD parameters or exposure-response relationships for chymotrypsin. |
-| PD | Ren_2021 | not_relevant | 0 | 0 | The paper investigates the antioxidant activity of protein hydrolysates produced by chymotrypsin, not the pharmacodynamics of chymotrypsin itself as a drug. |
-| popPK | Ren_2023 | irrelevant | 0 | 0 | The paper is a drug discovery study for SARS-CoV-2 protease inhibitors where chymotrypsin is used only as a selectivity control enzyme, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Ren_2021 | irrelevant | 0 | 0 | The paper is a food science study on the antioxidant activity of rice protein hydrolysates, where chymotrypsin is used as a hydrolyzing enzyme rather than as a subject drug for pharmacokinetic analysis. |
+| PD | Ren_2021 | not_relevant | 0 | 0 | The paper investigates the antioxidant activity of protein hydrolysates produced by chymotrypsin, not the pharmacodynamics of chymotrypsin itself; no exposure-response or dose-response relationship for the enzyme is reported. |
+| popPK | Ren_2023 | irrelevant | 0 | 0 | The paper is a study on SARS-CoV-2 protease inhibitors where chymotrypsin is only mentioned as a negative control for selectivity, with no pharmacokinetic parameters reported. |
 | PD | Ren_2023 | not_relevant | 0 | 0 | The paper reports IC50 values for SARS-CoV-2 proteases and mentions negligible effect on chymotrypsin, but does not provide a dose-response curve or numeric PD parameters for chymotrypsin. |
-| popPK | Ryan_2011 | irrelevant | 0 | 0 | The study focuses on salmon calcitonin conjugates, and chymotrypsin is only mentioned as an enzyme used in stability assays, not as the subject drug for PK parameter extraction. |
-| PD | Ryan_2011 | not_relevant | 0 | 0 | The paper focuses on salmon calcitonin conjugates; chymotrypsin is only mentioned as an enzyme used to test stability, not as the subject of a PD or exposure-response analysis. |
-| popPK | Sagie_2025 | irrelevant | 0 | 0 | The paper is an immunology study on TCR-T cell therapy and does not involve chymotrypsin or pharmacokinetic parameters. |
+| popPK | Ryan_2011 | irrelevant | 0 | 0 | no_text gate: only 100 chars of text extracted (&lt; 400) |
+| PD | Ryan_2011 | not_relevant | 0 | 0 | The paper focuses on PK/PD modelling of salmon calcitonin conjugates, not chymotrypsin. |
+| popPK | Sagie_2025 | irrelevant | 0 | 0 | The paper is an immunology study on TCR-T cell therapy and antigen presentation, containing no pharmacokinetic data for chymotrypsin. |
 | PD | Sagie_2025 | not_relevant | 0 | 0 | The paper focuses on TCR-T cell therapy and chemotherapy synergy in cancer models; it does not contain any pharmacokinetic or pharmacodynamic data for chymotrypsin. |
-| popPK | Sarkar_2021 | irrelevant | 0 | 0 | The paper is an in-silico study on SARS-CoV-2 inhibitors (HCQ/CQ) and mentions chymotrypsin-like protease only as a viral protein, not as a drug subject for PK analysis. |
+| popPK | Sarkar_2021 | irrelevant | 0 | 0 | The paper is an in-silico study on SARS-CoV-2 inhibitors and does not report pharmacokinetic parameters for chymotrypsin. |
 | PD | Sarkar_2021 | not_relevant | 0 | 0 | The paper is a computational docking study of quinolines against SARS-CoV-2 proteins and does not contain any pharmacodynamic or exposure-response data for chymotrypsin. |
-| popPK | Sawant_2026 | irrelevant | 0 | 0 | The paper studies the cellular effects of proteasome inhibitors (Bortezomib and Carfilzomib) on endothelial cells, and chymotrypsin is only mentioned as the binding site name (chymotrypsin site) of the proteasome, not as a drug subject of pharmacokinetic analysis. |
+| popPK | Sarkar_2026 | irrelevant | 0 | 0 | The paper is a review of quercetin in COPD and does not involve chymotrypsin or report any pharmacokinetic parameters. |
+| PD | Sarkar_2026 | not_relevant | 0 | 0 | The paper is a review of quercetin in COPD and does not mention chymotrypsin or report any pharmacodynamic parameters. |
+| popPK | Sawant_2026 | irrelevant | 0 | 0 | The paper studies the cellular effects of proteasome inhibitors (Bortezomib and Carfilzomib) on endothelial and myeloma cells, and chymotrypsin is only mentioned as a binding site name, not as a subject drug for PK analysis. |
 | PD | Sawant_2026 | not_relevant | 0 | 0 | The paper studies Bortezomib and Carfilzomib, not chymotrypsin, and reports only qualitative or single-dose in vitro effects without a dose-response curve or PD parameters for the target drug. |
 | popPK | Shi_2025 | irrelevant | 0 | 0 | The paper is a virtual screening study for norovirus 3CL protease inhibitors and does not report pharmacokinetic parameters for the drug chymotrypsin. |
 | PD | Shi_2025 | not_relevant | 0 | 0 | The paper focuses on virtual screening and in vitro enzyme/cell activity (EC50) for norovirus inhibitors, containing no pharmacokinetic data or exposure-response/PD modeling for chymotrypsin. |
@@ -218,8 +256,9 @@ _11 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Silva-Mendonça_2026 | not_relevant | 0 | 0 | The paper reports in silico drug discovery and in vitro inhibition of a viral protease, not pharmacogenomic effects on PK/PD parameters. |
 | popPK | Simeon_2021 | irrelevant | 0 | 0 | The paper focuses on protein engineering for protease stability, using chymotrypsin only as a digestive enzyme in in-vitro assays, not as the subject drug for PK analysis. |
 | PD | Simeon_2021 | not_relevant | 0 | 0 | The paper reports the effect of chymotrypsin on the stability of a DARPin (T10-2) and its subsequent anti-toxin potency, but does not report a pharmacodynamic exposure-response or dose-response relationship for chymotrypsin itself. |
-| PGx | Singh_2021 | not_relevant | 0 | 0 | The paper discusses amentoflavone as a potential inhibitor of the viral 3-chymotrypsin-like protease (3CLpro) and its metabolic interactions, but does not report any pharmacogenomic effects (gene variants) on the PK or PD of the drug chymotrypsin. |
+| PGx | Singh_2021 | not_relevant | 0 | 0 | The paper discusses amentoflavone as a potential antiviral and its interaction with CYP enzymes, but does not report pharmacogenomic effects on the PK/PD of chymotrypsin. |
 | PGx | Singh_2025 | not_relevant | 0 | 0 | The paper investigates the antiviral mechanism of a small molecule (TMD) against SARS-CoV-2 proteases and does not report any pharmacogenomic effects on the PK or PD of chymotrypsin. |
+| popPK | Stratton_2017 | irrelevant | 0 | 0 | The paper is a mechanistic study on mercury-induced denaturation and aggregation of chymotrypsin, not a pharmacokinetic study, and contains no disposition parameters. |
 | PD | Stratton_2017 | not_relevant | 3 | 2 | The paper reports biochemical inhibition and denaturation data (e.g., DEPC IC50) but does not provide a pharmacodynamic exposure-response model or numeric PD parameters for chymotrypsin itself. |
 | popPK | Sureja_2022 | irrelevant | 0 | 0 | The paper is an in-silico study on lignan derivatives for SARS-CoV-2 and does not involve chymotrypsin or pharmacokinetic parameters. |
 | PD | Sureja_2022 | not_relevant | 0 | 0 | The paper is an in-silico computational study on lignan derivatives for SARS CoV-2 and does not involve chymotrypsin or report any pharmacodynamic or exposure-response data. |
@@ -227,27 +266,35 @@ _11 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Thisted_2024 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of the antibody SNS-101, not chymotrypsin. |
 | PD | Thisted_2024 | not_relevant | 0 | 0 | The paper focuses on the antibody SNS-101 (anti-VISTA), not chymotrypsin, and does not report any pharmacodynamic parameters for chymotrypsin. |
 | PGx | Tian_2024 | not_relevant | 0 | 0 | The paper discusses the development of inhibitors for the viral enzyme 3-chymotrypsin-like protease (3CLpro), not the pharmacogenomics of the drug chymotrypsin. |
-| PGx | Tremblay_2014 | not_relevant | 0 | 0 | The paper investigates the association of CTRC and SPINK1 gene variants with the risk of recurrent pancreatitis hospitalizations in patients with Lipoprotein Lipase Deficiency, not the pharmacokinetic or pharmacodynamic parameters of the drug chymotrypsin. |
-| popPK | Venkatraman_2023 | irrelevant | 0 | 0 | The paper is a cheminformatics study on machine learning models for bioactivity prediction and does not report pharmacokinetic parameters for chymotrypsin. |
+| PGx | Tremblay_2014 | not_relevant | 0 | 0 | The paper investigates the association of CTRC and SPINK1 gene variants with the risk of recurrent pancreatitis hospitalizations, not the pharmacokinetic or pharmacodynamic parameters of chymotrypsin as a drug. |
+| popPK | Venkatraman_2023 | irrelevant | 0 | 0 | The paper is a machine learning study on molecular fingerprints for bioactivity prediction and does not report pharmacokinetic parameters for chymotrypsin. |
 | PD | Venkatraman_2023 | not_relevant | 0 | 0 | The paper describes a machine learning tool for predicting molecular activity from fingerprints and does not contain any pharmacodynamic data, exposure-response analysis, or specific information regarding chymotrypsin. |
 | PGx | Verdin_1988 | not_relevant | 0 | 0 | The paper studies viral clearance mechanisms and uses chymotrypsin as a reagent, but does not report pharmacogenomic effects on the PK/PD of chymotrypsin. |
-| PD | Wang_2024 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for SARS-CoV-2 protein inhibitors, which are potency metrics, not pharmacodynamic (exposure-response) relationships for the drug chymotrypsin. |
+| popPK | Wang_2024 | irrelevant | 0 | 0 | The paper focuses on the discovery of SARS-CoV-2 protease inhibitors using DNA-encoded libraries and does not report pharmacokinetic parameters for the drug chymotrypsin. |
+| PD | Wang_2024 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for SARS-CoV-2 proteases and polymerase, not pharmacodynamic (exposure-response) relationships for the drug chymotrypsin. |
 | popPK | Wang_2025 | irrelevant | 0 | 0 | The paper focuses on the identification of 3-chymotrypsin-like protease (3CLpro) inhibitors from a plant extract, not on the pharmacokinetics of the drug chymotrypsin. |
 | PGx | Ward_2025 | not_relevant | 0 | 0 | The paper is an in silico study identifying potential modifier genes for pain in cystic fibrosis and does not report pharmacokinetic or pharmacodynamic effects of chymotrypsin. |
-| PD | Wu_2022 | not_relevant | 0 | 0 | The paper reports biochemical IC50 values for novel SARS-CoV-2 3CLpro inhibitors, not pharmacodynamic or exposure-response data for the drug chymotrypsin. |
+| popPK | Wintroub_1986 | irrelevant | 0 | 0 | The paper characterizes a chymotrypsin-like enzyme (chymase) in mast cells using in-vitro kinetic assays (Km, pH, inhibition) and does not report pharmacokinetic disposition parameters (CL, V, t1/2) for the drug chymotrypsin. |
+| PD | Wintroub_1986 | not_relevant | 3 | 2 | The paper reports an enzymatic Michaelis constant (Km) for a substrate, which is a kinetic parameter, but does not report a pharmacodynamic exposure-response or dose-response relationship for the drug chymotrypsin itself. |
+| popPK | Wu_2022 | irrelevant | 0 | 0 | The paper focuses on the synthesis and biochemical evaluation of SARS-CoV-2 3CL protease inhibitors, not the pharmacokinetics of the drug chymotrypsin. |
+| PD | Wu_2022 | not_relevant | 0 | 0 | The paper reports biochemical IC50 values for novel compounds against a viral enzyme, not a pharmacodynamic or exposure-response relationship for the drug chymotrypsin. |
 | popPK | Xu_2025 | irrelevant | 0 | 0 | The paper is an in silico and in vitro study on hyperuricemia-inhibiting peptides, where chymotrypsin is used only as a digestive enzyme for virtual hydrolysis, not as the subject drug for pharmacokinetic analysis. |
-| PD | Xu_2025 | not_relevant | 0 | 0 | The paper investigates peptides from Trachurus japonicus, not chymotrypsin, and focuses on in silico docking and in vitro enzyme/cell assays without reporting specific PD parameters for chymotrypsin. |
+| PD | Xu_2025 | not_relevant | 0 | 0 | The paper investigates peptides from Trachurus japonicus, not chymotrypsin, and focuses on in silico docking and in vitro enzyme inhibition without reporting specific PD parameters for chymotrypsin. |
+| popPK | Xue_2024 | irrelevant | 0 | 0 | The paper focuses on the development of inhibitors for the SARS-CoV-2 3-chymotrypsin-like protease enzyme, not the pharmacokinetics of the drug chymotrypsin. |
 | PD | Xue_2024 | not_relevant | 3 | 2 | The paper reports an in vitro IC50 for a specific compound against an enzyme target, which is a pharmacodynamic potency metric, but it does not report an exposure-response or dose-response relationship for the drug in a biological system (e.g., plasma concentration vs. effect) or a PK/PD model. |
+| popPK | Yakoby_2004 | irrelevant | 0 | 0 | The paper describes an in-vitro colorimetric method for measuring enzyme inhibition (IC50) and is not a pharmacokinetic study reporting disposition parameters for chymotrypsin. |
 | popPK | Yang_2011 | irrelevant | 0 | 0 | The study investigates the pharmacological mechanism of schisandrin on rat colon contraction, using chymotrypsin only as a negative control agent, and contains no pharmacokinetic data. |
 | PD | Yang_2011 | not_relevant | 0 | 0 | The paper studies the pharmacodynamics of schisandrin, not chymotrypsin; chymotrypsin is only mentioned as a negative control that did not affect the response. |
 | popPK | Yao_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for simnotrelvir, not chymotrypsin. |
 | PD | Yao_2025 | not_relevant | 0 | 0 | The paper reports pharmacokinetic and exposure-response analyses for simnotrelvir, not chymotrypsin. |
 | popPK | Yegneswaran_2004 | irrelevant | 0 | 0 | The paper is a mechanistic study on prothrombin and factor Va binding, where chymotrypsin is only mentioned as a homologous sequence reference, not as a subject drug for pharmacokinetic analysis. |
 | PD | Yegneswaran_2004 | not_relevant | 0 | 0 | The paper studies a synthetic prothrombin peptide (PT473-487) and its interaction with Factor Va, not the drug chymotrypsin; the mention of chymotrypsin is only for sequence homology. |
-| popPK | Yi_2022 | irrelevant | 0 | 0 | The paper studies schaftoside as an inhibitor of SARS-CoV-2 proteases (3CLpro/PLpro), not the pharmacokinetics of the drug chymotrypsin. |
+| popPK | Yi_2022 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of schaftoside, not chymotrypsin, and chymotrypsin is only mentioned as a protease target (3CLpro). |
+| popPK | Yu_2019 | irrelevant | 0 | 0 | The paper reports in-vitro proteasome inhibitory activity (IC50) for chymotrypsin-like activity, not pharmacokinetic disposition parameters for the drug chymotrypsin. |
 | PD | Yu_2019 | not_relevant | 3 | 2 | The paper reports an in vitro IC50 for chymotrypsin-like activity, which is a pharmacodynamic parameter, but it is a single-point potency value from a biochemical assay, not an exposure-response or dose-response relationship analysis (e.g., Emax model, PK/PD fit) for the drug in a biological system. |
 | popPK | Zapata-Cardona_2022 | irrelevant | 0 | 0 | The paper studies the antiviral activity of atorvastatin against SARS-CoV-2 and does not report pharmacokinetic parameters for chymotrypsin. |
 | PGx | Zarnowski_2007 | not_relevant | 0 | 0 | The paper studies fungal protease production and its inhibition by chymostatin, not the pharmacokinetics or pharmacodynamics of chymotrypsin as a drug in humans. |
+| popPK | Zhang_2016 | irrelevant | 0 | 0 | The paper focuses on the synthesis and biological evaluation of proteasome inhibitors, using chymotrypsin-like activity as a mechanistic assay rather than studying the pharmacokinetics of chymotrypsin itself. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_chymotrypsin`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

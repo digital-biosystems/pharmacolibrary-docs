@@ -15,9 +15,9 @@ van Lier D; Mourisse L; Hollander H; Santos K; Bergmann A; van Herwaarden AE; Ko
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|
-| Fibrinogen [g/L] — PCZ3 mg/kg(n = 6) | `Q41` · not captured | 2 | n = 6 | not captured | llm (not captured) | t0001:row29:col2 |
-| Fibrinogen [g/L] — PCZ6 mg/kg(n = 6) | `Q41` · not captured | 2 | n = 6 | not captured | llm (not captured) | t0001:row29:col3 |
-| Fibrinogen [g/L] — PCZ12 mg/kg(n = 6) | `Q41` · not captured | 2 | n = 6 | not captured | llm (not captured) | t0001:row29:col4 |
+| Fibrinogen [g/L] — PCZ3 mg/kg(n = 6) | `Q41` · not captured | 2 | g/L | not captured | llm (not captured) | t0001:row29:col2 |
+| Fibrinogen [g/L] — PCZ6 mg/kg(n = 6) | `Q41` · not captured | 2 | g/L | not captured | llm (not captured) | t0001:row29:col3 |
+| Fibrinogen [g/L] — PCZ12 mg/kg(n = 6) | `Q41` · not captured | 2 | g/L | not captured | llm (not captured) | t0001:row29:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

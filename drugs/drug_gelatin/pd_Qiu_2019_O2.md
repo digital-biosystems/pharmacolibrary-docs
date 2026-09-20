@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Superoxide anion radical scavenging activity — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# Superoxide anion radical scavenging — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Qiu_2019`
 - **model family:** `unknown`

@@ -1,38 +1,39 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;ondansetron&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/&quot;},{&quot;label&quot;:&quot;Chiang_2021_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021v2_reference&quot;,&quot;label&quot;:&quot;Chiang_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ondansetron_de1998_reference&quot;,&quot;label&quot;:&quot;de_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_de1998_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_shrinkage&quot;,&quot;label&quot;:&quot;Chiang_2021_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_shrinkage&quot;,&quot;label&quot;:&quot;Chiang_2021_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ondansetron_Chiang2021v2_reference&quot;,&quot;label&quot;:&quot;Chiang_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ondansetron_Landau2026_reference&quot;,&quot;label&quot;:&quot;Landau_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Landau2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Baek2015_reference&quot;,&quot;label&quot;:&quot;Baek_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Baek2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_shrinkage&quot;,&quot;label&quot;:&quot;Chiang_2021_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_shrinkage&quot;,&quot;label&quot;:&quot;Chiang_2021_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2024_reference&quot;,&quot;label&quot;:&quot;Chiang_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Lam2025_reference&quot;,&quot;label&quot;:&quot;Lam_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Lam2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_de1998_reference&quot;,&quot;label&quot;:&quot;de_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_de1998_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ondansetron — `Ondansetron_Chiang2021v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
 Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (2021). British journal of clinical pharmacology 87
   ·  DOI: [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412)
 
 ## Model component
-<dbs-pgx drug="ondansetron" model-id="Ondansetron_Chiang2021v2_reference" status="model_quarantined" stale="false" population="adults undergoing elective hip or knee arthroplasty" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="ondansetron" model-id="Ondansetron_Chiang2021v2_reference" status="curated_candidate" stale="false" population="patients undergoing surgery" measured-compound="ondansetron" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 33 | L/h | 9.166666666666666e-06 | L/h | not captured | exact (1.0) | Chiang_2021_2:results_prose | — | not captured |
-| Q (L/h) | `Q30` · Q | 211 | L/h | 5.861111111111111e-05 | L/h | not captured | exact (1.0) | Chiang_2021_2:results_prose | — | not captured |
+| CL (L/h) | `Q22` · CL | 24.6 | L/h | 6.833333333333334e-06 | [l] / [h] | not captured | exact (1.0) | T4:row2:col2, T4:row2:col3, Chiang_2021_2_table_3:row4:col1 | — | 30 (None% RSE) |
+| VC (L) | `Q63` · V1 | 63.3 | L | 0.0633 | [l] | not captured | exact (1.0) | T4:row3:col2, T4:row3:col3 | — | 23 (None% RSE) |
+| Q (L/h) | `Q30` · Q | 211 | L/h | 5.861111111111111e-05 | [l] / [h] | not captured | exact (1.0) | T4:row4:col2, T4:row4:col3 | — | not captured |
+| VT (L) | `Q61` · V | 107 | L | 0.107 | [l] | not captured | llm (0.6) | T4:row5:col2, T4:row5:col3 | — | not captured |
+| KP | `Q410` · Kp | 0.145 | not captured | not captured | not captured | not captured | exact (1.0) | T4:row6:col2, T4:row6:col3 | — | 33 (None% RSE) |
+| V 2 (l) | `Q64` · V2 | 108.0 | l | 0.108 | L | not captured | review_gapfill (0.7) | Lee_2016:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -42,15 +43,23 @@ Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (202
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q22 ('CL (L/h)'=33) from results prose — parameter table was unreadable
-- salvaged Q30 ('Q (L/h)'=211) from results prose — parameter table was unreadable
+- column 'population pharmacokinetic parameters' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'B for (VC, AGE)' — extend the ontology if this is a real PK parameter (source ['T4:row7:col2', 'T4:row7:col3'])
+- dropped unlinked row (NIL): 'RVplasma' — extend the ontology if this is a real PK parameter (source ['T4:row15:col3'])
+- dropped value-less row: 't1/2 (h)' (captured trailing unit 'h' for child rows)
+- dropped value-less row: 'MRT (h)' (captured trailing unit 'h' for child rows)
+- dropped value-less row: 'AUC0−∞ (h·μg/L)' (captured trailing unit 'h·μg/L' for child rows)
+- dropped value-less row: 'Vd,ss (L)' (captured trailing unit 'L' for child rows)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ondansetron
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- gap-filled Q64 (V2) from Lee_2016's review values (primary lacked it)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- text-pointer recovery: parsed 0 structural record(s) from the flattened table 4 sentence
+- unparsed cell T4:row10:col2 = '49.7%'
+- unparsed cell T4:row11:col2 = '41.9%'
+- unparsed cell T4:row12:col2 = '23.7%'
+- unparsed cell T4:row15:col2 = '19.1%'
+- companion parameter table 3 transcribed (5 record(s))
+- LLM selected parameter table(s) 3, 4
 
 ## Validation
 
@@ -58,19 +67,31 @@ Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (202
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 33.0 | not captured | not captured | ['Chiang_2021_2:results_prose'] |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T4:row2:col2', 'T4:row2:col3', 'Chiang_2021_2_table_3:row4:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T4:row4:col2', 'T4:row4:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['T4:row5:col2', 'T4:row5:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['T4:row3:col2', 'T4:row3:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lee_2016:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 24.6 | not captured | not captured | ['T4:row2:col2', 'T4:row2:col3', 'Chiang_2021_2_table_3:row4:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 24.6 L/h | not captured | not captured | ['T4:row2:col2', 'T4:row2:col3', 'Chiang_2021_2_table_3:row4:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 107 L | not captured | not captured | ['T4:row5:col2', 'T4:row5:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 63.3 L | not captured | not captured | ['T4:row3:col2', 'T4:row3:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 108 L | not captured | not captured | ['Lee_2016:review'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped | 4.9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T3_output_variable | not captured | pass | C_central (measured=ondansetron) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -80,8 +101,9 @@ Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (202
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_ondansetron/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chiang_2021_2` / `Chiang_2021_2::reference`)
-- model: `../../../knowledgebase/drugs/drug_ondansetron/models/modelica/_needs_review/Ondansetron_Chiang2021v2_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_ondansetron/models/modelica/_needs_review/Ondansetron_Chiang2021v2_reference.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_ondansetron/models/modelica/Ondansetron_Chiang2021v2_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_ondansetron/models/modelica/Ondansetron_Chiang2021v2_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_ondansetron/models/modelica/Ondansetron_Chiang2021v2_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -90,19 +112,22 @@ Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (202
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference/Ondansetron_Chiang2021v2_reference_modelica.zip" download>Ondansetron_Chiang2021v2_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference/Ondansetron_Chiang2021v2_reference_matlab.zip" download>Ondansetron_Chiang2021v2_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference/Ondansetron_Chiang2021v2_reference_matlab_simbio.zip" download>Ondansetron_Chiang2021v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference/Ondansetron_Chiang2021v2_reference_sbml.zip" download>Ondansetron_Chiang2021v2_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference/Ondansetron_Chiang2021v2_reference_cellml.zip" download>Ondansetron_Chiang2021v2_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference/Ondansetron_Chiang2021v2_reference.svg" alt="Ondansetron_Chiang2021v2_reference diagram"><figcaption>The structure OpenModelica draws for this model, with this record's parameter values in the component labels.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+<dbs-fmusim paramsurl="drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference/Ondansetron_Chiang2021v2_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference/Ondansetron_Chiang2021v2_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C` · parameters `Ondansetron_Chiang2021v2_reference_params.json` · controls `Ondansetron_Chiang2021v2_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

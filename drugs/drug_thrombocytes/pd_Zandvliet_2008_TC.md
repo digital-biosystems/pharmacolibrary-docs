@@ -20,11 +20,13 @@ Zandvliet AS; Schellens JH; Dittrich C; Wanders J; Beijnen JH; Huitema AD et al.
 | Gamma — Estimate | `Q325` · not captured | 0.147 | not captured | not captured | exact (not captured) | tab_1:row3:col1 |
 | Gamma — (Range)* | `Q325` · not captured | 0.143 | not captured | not captured | exact (not captured) | tab_1:row3:col3 |
 | Residual error (%) — Estimate | `Q315` · not captured | 48 | not captured | not captured | llm (not captured) | tab_1:row6:col1 |
+| Residual error (%) — (Range)* | `Q315` · not captured | 42 | not captured | not captured | llm (not captured) | tab_1:row6:col3 |
 | MTT (h) — Estimate | `Q81` · not captured | 142 | h | not captured | exact (not captured) | tab_1:row9:col1 |
 | MTT (h) — (Range)* | `Q81` · not captured | 125 | h | not captured | exact (not captured) | tab_1:row9:col3 |
 | Gamma — Estimate | `Q325` · not captured | 0.176 | not captured | not captured | exact (not captured) | tab_1:row10:col1 |
 | Gamma — (Range)* | `Q325` · not captured | 0.155 | not captured | not captured | exact (not captured) | tab_1:row10:col3 |
 | Residual error (%) — Estimate | `Q315` · not captured | 56 | not captured | not captured | llm (not captured) | tab_1:row13:col1 |
+| Residual error (%) — (Range)* | `Q315` · not captured | 48 | not captured | not captured | llm (not captured) | tab_1:row13:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -3,7 +3,7 @@
 # Hemoglobin — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Bauer_2025`
-- **model family:** `indirect_response_i`
+- **model family:** `tmdd`
 - **driver:** `not_resolved`
 - **tier:** population
 - **effect:** stimulation/unknown

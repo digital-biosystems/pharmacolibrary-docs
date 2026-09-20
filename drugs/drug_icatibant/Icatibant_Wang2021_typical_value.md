@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;icatibant&quot;,&quot;href&quot;:&quot;drugs/drug_icatibant/&quot;},{&quot;label&quot;:&quot;Wang_2021 \u00b7 typical_value&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Icatibant_Wang2021_shrinkage&quot;,&quot;label&quot;:&quot;Wang_2021_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_icatibant/Icatibant_Wang2021_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Icatibant_Wang2021_shrinkage&quot;,&quot;label&quot;:&quot;Wang_2021_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_icatibant/Icatibant_Wang2021_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Icatibant_Wang2021_typical_value&quot;,&quot;label&quot;:&quot;Wang_2021_typical_value&quot;,&quot;href&quot;:&quot;drugs/drug_icatibant/Icatibant_Wang2021_typical_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Icatibant_Wang2021_typical_value&quot;,&quot;label&quot;:&quot;Wang_2021_typical_value&quot;,&quot;href&quot;:&quot;drugs/drug_icatibant/Icatibant_Wang2021_typical_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Icatibant_Wang2021_typical_value_rse&quot;,&quot;label&quot;:&quot;Wang_2021_typical_value_rse&quot;,&quot;href&quot;:&quot;drugs/drug_icatibant/Icatibant_Wang2021_typical_value_rse.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Icatibant_Wang2021_typical_value_rse&quot;,&quot;label&quot;:&quot;Wang_2021_typical_value_rse&quot;,&quot;href&quot;:&quot;drugs/drug_icatibant/Icatibant_Wang2021_typical_value_rse.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Icatibant_Wang2021_typical_value&quot;,&quot;label&quot;:&quot;Wang_2021_typical_value&quot;,&quot;href&quot;:&quot;drugs/drug_icatibant/Icatibant_Wang2021_typical_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Icatibant_Wang2021_typical_value&quot;,&quot;label&quot;:&quot;Wang_2021_typical_value&quot;,&quot;href&quot;:&quot;drugs/drug_icatibant/Icatibant_Wang2021_typical_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Icatibant_Wang2021_typical_value_rse&quot;,&quot;label&quot;:&quot;Wang_2021_typical_value_rse&quot;,&quot;href&quot;:&quot;drugs/drug_icatibant/Icatibant_Wang2021_typical_value_rse.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Icatibant_Wang2021_typical_value_rse&quot;,&quot;label&quot;:&quot;Wang_2021_typical_value_rse&quot;,&quot;href&quot;:&quot;drugs/drug_icatibant/Icatibant_Wang2021_typical_value_rse.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -31,9 +31,9 @@ Wang Y; Jomphe C; Marier JF; Martin P et al. (2021). Journal of clinical pharmac
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ka, h–1 | `Q49` · kabs | 3.27 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | jcph1768-tbl-0002:row1:col1 | — | not captured |
-| tlag, h | `Q83` · tlag | 0.0426 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | jcph1768-tbl-0002:row2:col1 | — | not captured |
-| Vp/F, L | `Q82` · V2/F | 1.75 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | jcph1768-tbl-0002:row12:col1 | — | not captured |
+| ka, h–1 | `Q49` · kabs | 3.27 | h–1 | 0.0009083333333333334 | [1] / [h] | not captured | exact (1.0) | jcph1768-tbl-0002:row1:col1 | — | not captured |
+| tlag, h | `Q83` · tlag | 0.0426 | h | 153.35999999999999 | [h] | not captured | exact (1.0) | jcph1768-tbl-0002:row2:col1 | — | not captured |
+| Vp/F, L | `Q82` · V2/F | 1.75 | L | 0.00175 | [l] | not captured | exact (1.0) | jcph1768-tbl-0002:row12:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -43,8 +43,8 @@ Wang Y; Jomphe C; Marier JF; Martin P et al. (2021). Journal of clinical pharmac
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
-| Cl/F, L/h | Q27 | not captured | llm_confirmed |
-| Vc/F, L | Q290 | not captured | llm_confirmed |
+| Cl/F, L/h | Q27 | not captured | exact |
+| Vc/F, L | Q290 | not captured | exact |
 
 ## Departures & gaps
 
@@ -53,7 +53,8 @@ Wang Y; Jomphe C; Marier JF; Martin P et al. (2021). Journal of clinical pharmac
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=icatibant
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - model equation 'θi = θTypical·expθeffi·Cov=iwhere θTypical is the population value of PK parameters for subjects in the category of reference and exp(θeffi) is the multiplicative effect of category i on parameter θ' not bound — neither LHS nor base term 'θTypical' linked to an ontology parameter
-- population split: 'typical value' subgroup of Wang_2021 (paper reports 3 populations: shrinkage (%), typical value, typical value (rse%))
+- population split: 'typical value' subgroup of Wang_2021 (paper reports 2 populations: typical value, typical value (rse%))
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell jcph1768-tbl-0002:row3:col2 = '2.50 12.7'
@@ -70,8 +71,15 @@ Wang Y; Jomphe C; Marier JF; Martin P et al. (2021). Journal of clinical pharmac
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph1768-tbl-0002:row3:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph1768-tbl-0002:row7:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['jcph1768-tbl-0002:row1:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph1768-tbl-0002:row12:col1'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['jcph1768-tbl-0002:row2:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q82 | pass | volume within physiological range | 1.75 L | not captured | not captured | ['jcph1768-tbl-0002:row12:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

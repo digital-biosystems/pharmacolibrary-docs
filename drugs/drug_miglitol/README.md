@@ -21,7 +21,7 @@ Unlike other drugs of the same class, miglitol is not metabolized and the unmeta
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 22:27 | 14:32 | 0/0/0 | 0/0/0 | 0/0/0 | 93,265/4,604 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 4/1 | 0 |
+| 2026-09-18 18:24 | 5:54 | 0/0/0 | 0/0/0 | 0/0/0 | 162,400/5,901 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 4/1 | 0 |
 
 ## popPK records
 
@@ -47,7 +47,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Qiao_2022.pdf` | Qiao Y et al., Inhibition of α-amylase and α-glucosida…, Journal of food science (2022) | pd | 4 | [10.1111/1750-3841.16098](https://doi.org/10.1111/1750-3841.16098) | [35397147](https://www.ncbi.nlm.nih.gov/pubmed/35397147) | metadata signals extractable PD data (IC50) |
 | `Sarkar_2024.pdf` | Sarkar A et al., Parkia javanica Edible Pods Reveal Pote…, Pharmaceuticals (Basel, Swi… (2024) | pd | 4 | [10.3390/ph17070968](https://doi.org/10.3390/ph17070968) | [39065816](https://www.ncbi.nlm.nih.gov/pubmed/39065816) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-15T22:25:50.634390+00:00</sub>
+<sub>queue written 2026-09-18T18:22:27.015671+00:00</sub>
 
 ## Screened and excluded
 
@@ -63,7 +63,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Chavan_2017 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for new compounds and compares them to miglitol, but does not report a pharmacokinetic or pharmacodynamic model, exposure-response relationship, or dose-response curve for miglitol itself. |
 | popPK | Dinu_2025 | irrelevant | 0 | 0 | The paper is a review of sulfonamides and antioxidants for diabetes management and does not contain pharmacokinetic data for miglitol. |
 | PD | Dinu_2025 | not_relevant | 0 | 0 | The paper is a review of sulfonamides and antioxidants for diabetes and does not mention miglitol or report any pharmacodynamic parameters. |
-| popPK | Dirir_2022 | irrelevant | 0 | 0 | The paper is a review of plant-derived alpha-glucosidase inhibitors and does not report quantitative pharmacokinetic parameters for miglitol. |
+| popPK | Dirir_2022 | irrelevant | 0 | 0 | The paper is a review of plant-derived alpha-glucosidase inhibitors and does not report pharmacokinetic parameters for miglitol, which is only mentioned as a comparator drug. |
 | PD | Dirir_2022 | not_relevant | 1 | 0 | The paper is a review of plant-derived alpha-glucosidase inhibitors and only mentions miglitol as an approved drug in the introduction and provides its chemical structure; it does not report any pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for miglitol. |
 | popPK | Gao_2023 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on novel α-glucosidase inhibitors where miglitol is used only as a standard comparator for in-vitro enzyme inhibition, with no pharmacokinetic data reported. |
 | PD | Gao_2023 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for new compounds and compares them to miglitol, but does not provide a pharmacokinetic/pharmacodynamic (PK/PD) or exposure-response analysis for miglitol itself. |
@@ -97,7 +97,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Mhaldar_2022 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for novel synthesized compounds and compares them to miglitol, but does not report a pharmacodynamic or exposure-response relationship for miglitol itself. |
 | popPK | Mizuno-Yasuhira_2014 | irrelevant | 0 | 0 | no_text gate: only 144 chars of text extracted (&lt; 400) |
 | PD | Mizuno-Yasuhira_2014 | not_relevant | 0 | 0 | The paper discusses a general strategy for assessing drug-drug interactions involving intestinal transporters and does not report specific pharmacodynamic or exposure-response data for miglitol. |
-| popPK | Mohd_2024 | irrelevant | 0 | 0 | The paper is an in-vitro study on new compounds with miglitol used only as a mechanistic comparator, containing no pharmacokinetic parameters. |
+| popPK | Mohd_2024 | irrelevant | 0 | 0 | The paper is an in-vitro study of new compounds with miglitol mentioned only as a mechanistic comparator, containing no pharmacokinetic parameters. |
 | PD | Mohd_2024 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition data (IC50) for new synthetic compounds and mentions miglitol only as a qualitative reference for mechanism of action, without providing any PK/PD or exposure-response data for miglitol. |
 | popPK | Muddather_2026 | irrelevant | 0 | 0 | The paper is a review of DPP-4 inhibitors in cancer and does not report pharmacokinetic parameters for miglitol. |
 | PD | Muddather_2026 | not_relevant | 0 | 0 | The paper is a review of DPP-4 inhibitors in cancer and does not contain any pharmacokinetic or pharmacodynamic data, models, or numeric parameters for miglitol. |
@@ -107,7 +107,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Percha_2015 | not_relevant | 0 | 0 | The paper describes a text mining algorithm for extracting drug-gene relationships from biomedical literature and contains no pharmacokinetic or pharmacodynamic data for miglitol. |
 | popPK | Qiao_2022 | irrelevant | 0 | 0 | no_text gate: only 130 chars of text extracted (&lt; 400) |
 | PD | Qiao_2022 | not_relevant | 0 | 0 | The paper investigates the inhibitory effects of Morus australis fruit extract and its components (iminosugar, anthocyanin, glucose) on enzymes, but does not report any pharmacodynamic or exposure-response data for the specific drug miglitol. |
-| popPK | Rafique_2020 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on new compounds, and miglitol is only mentioned as a background comparator, with no pharmacokinetic data reported. |
+| popPK | Rafique_2020 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on new compounds, and miglitol is only mentioned as a marketed comparator drug with no pharmacokinetic data reported. |
 | PD | Rafique_2020 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for new synthesized compounds, not a pharmacodynamic or exposure-response relationship for the drug miglitol. |
 | PGx | Rong_2026 | not_relevant | 0 | 0 | The study uses Mendelian randomization to assess the causal effect of miglitol's target (lactase) on atrial fibrillation risk, not the effect of genetic variants on miglitol's pharmacokinetics or pharmacodynamics. |
 | popPK | Salehi_1993 | irrelevant | 0 | 0 | The study is mechanistic/in-vitro focusing on enzyme inhibition and insulin secretion, not pharmacokinetic disposition parameters. |
@@ -118,11 +118,11 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Seraj_2024 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for new synthetic compounds, not a pharmacodynamic or exposure-response relationship for miglitol. |
 | popPK | Shahzadi_2026 | irrelevant | 0 | 0 | The study investigates the antidiabetic effects of Fraxinus xanthoxyloides bark extract and does not report pharmacokinetic parameters for miglitol, which is only mentioned as a class example in the introduction. |
 | PD | Shahzadi_2026 | not_relevant | 0 | 0 | The paper studies a plant extract (Fraxinus xanthoxyloides), not the drug miglitol, and does not report any pharmacodynamic parameters for miglitol. |
-| popPK | Su_2025 | irrelevant | 0 | 0 | The paper is a clinical/genetic study on Alzheimer's disease where miglitol is used only as a comparator drug for repurposing analysis, with no pharmacokinetic parameters reported. |
+| popPK | Su_2025 | irrelevant | 0 | 0 | The paper is a genetic association and drug repurposing study for Alzheimer's disease where miglitol is used only as a comparator agent, with no pharmacokinetic parameters reported. |
 | popPK | Su_2026 | irrelevant | 0 | 0 | The paper is a genetic association and drug repurposing study for Alzheimer's disease where miglitol is only mentioned as a comparator drug in a clinical cohort, with no pharmacokinetic parameters reported. |
-| popPK | Venditti_2015 | irrelevant | 0 | 0 | The paper is an in-vitro study on plant extracts where miglitol is only mentioned as a comparator for mechanism of action, with no pharmacokinetic parameters reported. |
+| popPK | Venditti_2015 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of a plant extract, and miglitol is only mentioned as a comparator for mechanism of action, with no PK parameters reported. |
 | PD | Venditti_2015 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for a plant extract, not a pharmacodynamic or exposure-response relationship for the drug miglitol. |
-| popPK | Xu_2020 | irrelevant | 0 | 0 | The paper is a validation study for an insulin assay and only mentions a bioequivalence study of miglitol without providing any quantitative pharmacokinetic parameters for miglitol. |
+| popPK | Xu_2020 | irrelevant | 1 | 0 | The paper is a validation study for an insulin assay that only mentions the application of the assay in a miglitol bioequivalence study without reporting any quantitative pharmacokinetic parameters for miglitol. |
 | PD | Xu_2020 | not_relevant | 1 | 0 | The paper focuses on the validation of an insulin assay and mentions a bioequivalence study of miglitol but does not provide any numeric pharmacodynamic parameters or exposure-response data. |
 | popPK | Yan_2021 | irrelevant | 1 | 0 | The study reports pharmacodynamic parameters (glucose Cmax/AUC) for bioequivalence, not pharmacokinetic disposition parameters (CL, V, ka) for miglitol. |
 | PD | Yan_2021 | not_relevant | 2 | 1 | The study reports bioequivalence metrics (Cmax, AUC) for serum glucose but does not provide a concentration-effect or dose-response model with numeric PD parameters like Emax or EC50. |

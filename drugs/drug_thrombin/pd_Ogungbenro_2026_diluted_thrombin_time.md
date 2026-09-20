@@ -3,10 +3,10 @@
 # name — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Ogungbenro_2026`
-- **model family:** `linear`
+- **model family:** `unknown`
 - **driver:** `not_resolved`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** inhibition/unknown
 
 ## Citation
 Ogungbenro K; Aucott L; Kamali F; Ayuk P et al. (2026). British journal of clinical pharmacology 92

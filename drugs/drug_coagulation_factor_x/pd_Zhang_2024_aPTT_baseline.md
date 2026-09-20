@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# aPTT ratio to baseline — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# aPTT ratio to baseline — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 - **paper:** `Zhang_2024`
 - **model family:** `sigmoid_emax`

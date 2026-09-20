@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# ABCB1 positive cells — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# ABCB1+ cells — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Soltanian_2021`
 - **model family:** `unknown`

@@ -1,37 +1,36 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;ondansetron&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/&quot;},{&quot;label&quot;:&quot;de_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021v2_reference&quot;,&quot;label&quot;:&quot;Chiang_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_de1998_reference&quot;,&quot;label&quot;:&quot;de_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_de1998_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_shrinkage&quot;,&quot;label&quot;:&quot;Chiang_2021_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_shrinkage&quot;,&quot;label&quot;:&quot;Chiang_2021_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ondansetron_Chiang2021v2_reference&quot;,&quot;label&quot;:&quot;Chiang_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Landau2026_reference&quot;,&quot;label&quot;:&quot;Landau_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Landau2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Baek2015_reference&quot;,&quot;label&quot;:&quot;Baek_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Baek2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_shrinkage&quot;,&quot;label&quot;:&quot;Chiang_2021_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_shrinkage&quot;,&quot;label&quot;:&quot;Chiang_2021_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2024_reference&quot;,&quot;label&quot;:&quot;Chiang_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Lam2025_reference&quot;,&quot;label&quot;:&quot;Lam_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Lam2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_de1998_reference&quot;,&quot;label&quot;:&quot;de_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_de1998_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ondansetron — `Ondansetron_de1998_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
 de Alwis DP; Aarons L; Palmer JL et al. (1998). British journal of clinical pharmacology 46
   ·  DOI: [10.1046/j.1365-2125.1998.00756.x](https://doi.org/10.1046/j.1365-2125.1998.00756.x)
 
 ## Model component
-<dbs-pgx drug="ondansetron" model-id="Ondansetron_de1998_reference" status="model_quarantined" stale="false" population="paediatric patients, young, elderly and aged volunteers" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="ondansetron" model-id="Ondansetron_de1998_reference" status="rejected" stale="false" population="mixed (paediatric, young, elderly, aged)" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLd | `Q30` · Q | 278.3 | not captured | not captured | not captured | not captured | exact (1.0) | de_1998_table_2:row6:col3, de_1998_table_2:row16:col1, de_1998_table_2:row16:col2, de_1998_table_2:row16:col3, de_1998_table_2:row22:col1, de_1998_table_2:row22:col2, de_1998_table_2:row22:col3, de_1998_table_2:row28:col1, de_1998_table_2:row28:col2, de_1998_table_2:row28:col3 | — | not captured |
+| CLd | `Q30` · Q | 235.8 | not captured | not captured | not captured | not captured | exact (1.0) | de_1998_table_2:row6:col3, de_1998_table_2:row16:col1, de_1998_table_2:row16:col2, de_1998_table_2:row16:col3, de_1998_table_2:row22:col1, de_1998_table_2:row22:col2, de_1998_table_2:row22:col3, de_1998_table_2:row28:col1, de_1998_table_2:row28:col2, de_1998_table_2:row28:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -42,12 +41,38 @@ de Alwis DP; Aarons L; Palmer JL et al. (1998). British journal of clinical phar
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
 | CL | Q22 | not captured | exact |
-| V 1 | Q63 | not captured | llm |
-| V ss | Q65 | not captured | llm |
+| V 1 | Q61 | not captured | space_fold |
+| V ss | Q65 | not captured | space_fold |
 
 ## Departures & gaps
 
 **Interpretation flags:**
+- column 'covariate relationships' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'compared against' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): '1)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row0:col2'])
+- dropped unlinked row (NIL): '2)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row1:col1', 'de_1998_table_1:row1:col7'])
+- dropped unlinked row (NIL): '3)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row2:col1', 'de_1998_table_1:row2:col7'])
+- dropped unlinked row (NIL): '4)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row3:col1', 'de_1998_table_1:row3:col7'])
+- dropped unlinked row (NIL): '5)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row4:col1', 'de_1998_table_1:row4:col7'])
+- dropped unlinked row (NIL): '6)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row5:col1'])
+- dropped unlinked row (NIL): '7)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row7:col1'])
+- dropped unlinked row (NIL): '8)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row9:col1'])
+- dropped unlinked row (NIL): '9)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row11:col1'])
+- dropped unlinked row (NIL): '10)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row14:col1', 'de_1998_table_1:row14:col7'])
+- dropped unlinked row (NIL): '11)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row18:col1', 'de_1998_table_1:row18:col3'])
+- dropped unlinked row (NIL): '12)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row19:col1', 'de_1998_table_1:row19:col3'])
+- dropped unlinked row (NIL): '13)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row20:col1', 'de_1998_table_1:row20:col3'])
+- dropped unlinked row (NIL): '14)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row21:col1', 'de_1998_table_1:row21:col2', 'de_1998_table_1:row21:col4'])
+- dropped unlinked row (NIL): '15)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row22:col1', 'de_1998_table_1:row22:col3'])
+- dropped unlinked row (NIL): '16)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row23:col1', 'de_1998_table_1:row23:col3'])
+- dropped unlinked row (NIL): '17)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row24:col1', 'de_1998_table_1:row24:col3'])
+- dropped unlinked row (NIL): '18)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row25:col1'])
+- dropped unlinked row (NIL): '19)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row27:col1', 'de_1998_table_1:row27:col3'])
+- dropped unlinked row (NIL): '20)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row28:col1', 'de_1998_table_1:row28:col3'])
+- dropped unlinked row (NIL): '21)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row30:col1', 'de_1998_table_1:row30:col3'])
+- dropped unlinked row (NIL): '22)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row32:col1', 'de_1998_table_1:row32:col2', 'de_1998_table_1:row32:col3', 'de_1998_table_1:row32:col4', 'de_1998_table_1:row32:col6'])
+- dropped unlinked row (NIL): '23)' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row33:col1', 'de_1998_table_1:row33:col5'])
+- dropped unlinked row (NIL): '24) ‡' — extend the ontology if this is a real PK parameter (source ['de_1998_table_1:row35:col1', 'de_1998_table_1:row35:col2', 'de_1998_table_1:row35:col3', 'de_1998_table_1:row35:col5'])
 - dropped duplicate Q22 ('CL male', value None) — already have one for this compound
 - dropped duplicate Q22 ('CL female', value None) — already have one for this compound
 - dropped duplicate Q30 ('CLd male', value None) — already have one for this compound
@@ -55,10 +80,30 @@ de Alwis DP; Aarons L; Palmer JL et al. (1998). British journal of clinical phar
 - dropped duplicate Q65 ('V ssmale', value None) — already have one for this compound
 - dropped duplicate Q65 ('V ssfemale', value None) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ondansetron
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V 1' is the general volume)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- LLM region de_1998:other_prose: no JSON records returned
+- no LLM table selection; kept 2 deterministically-scored parameter table(s)
+- unparsed cell de_1998_table_1:row1:col6 = 'model 1'
+- unparsed cell de_1998_table_1:row2:col6 = 'model 1'
+- unparsed cell de_1998_table_1:row3:col6 = 'model 1'
+- unparsed cell de_1998_table_1:row4:col6 = 'model 1'
+- unparsed cell de_1998_table_1:row14:col6 = 'model 9'
+- unparsed cell de_1998_table_1:row18:col2 = 'model 10'
+- unparsed cell de_1998_table_1:row19:col2 = 'model 10'
+- unparsed cell de_1998_table_1:row20:col2 = 'model 10'
+- unparsed cell de_1998_table_1:row21:col3 = 'model 10'
+- unparsed cell de_1998_table_1:row22:col2 = 'model 10'
+- unparsed cell de_1998_table_1:row23:col2 = 'model 10'
+- unparsed cell de_1998_table_1:row24:col2 = 'model 10'
+- unparsed cell de_1998_table_1:row27:col2 = 'model 18'
+- unparsed cell de_1998_table_1:row28:col2 = 'model 18 & 19'
+- unparsed cell de_1998_table_1:row30:col2 = 'model 20'
+- unparsed cell de_1998_table_1:row32:col5 = 'model 18'
+- unparsed cell de_1998_table_1:row33:col4 = 'model 22'
+- unparsed cell de_1998_table_1:row35:col4 = 'model 21 & 23'
 
 ## Validation
 
@@ -67,16 +112,8 @@ de Alwis DP; Aarons L; Palmer JL et al. (1998). British journal of clinical phar
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -86,8 +123,6 @@ de Alwis DP; Aarons L; Palmer JL et al. (1998). British journal of clinical phar
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_ondansetron/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `de_1998` / `de_1998::reference`)
-- model: `../../../knowledgebase/drugs/drug_ondansetron/models/modelica/_needs_review/Ondansetron_de1998_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_ondansetron/models/modelica/_needs_review/Ondansetron_de1998_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

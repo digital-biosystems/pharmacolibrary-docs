@@ -24,7 +24,7 @@ Pawaskar D; Chen X; Glassman F; May F; Roberts A; Biondo M; et al. et al. (2022)
 | k deg (1/h) — Estimate | `Q328` · not captured | 0.0058 | not captured | not captured | space_fold (not captured) | cts13192-tbl-0001:row8:col2 |
 | k int (1/h) — Estimate | `Q334` · not captured | 0.004 | not captured | not captured | space_fold (not captured) | cts13192-tbl-0001:row9:col2 |
 | α — Estimate | `Q67` · not captured | 1.59 | not captured | not captured | exact (not captured) | cts13192-tbl-0001:row10:col2 |
-| ISF (ml/kg) — Estimate | `Q358` · not captured | 210 | ml/kg | not captured | llm (not captured) | cts13192-tbl-0001:row16:col2 |
+| Kp — Estimate | `Q410` · not captured | 0.4 | not captured | not captured | exact (not captured) | cts13192-tbl-0001:row17:col2 |
 | VP (ml/kg) — Estimate | `Q64` · not captured | 44.9 | ml/kg | not captured | exact (not captured) | cts13192-tbl-0001:row18:col2 |
 | VL (ml/kg) — Estimate | `Q352` · not captured | 89.7 | ml/kg | not captured | llm (not captured) | cts13192-tbl-0001:row19:col2 |
 | L (ml/h/kg) — Estimate | `Q358` · not captured | 3.51 | ml/h/kg | not captured | llm (not captured) | cts13192-tbl-0001:row20:col2 |

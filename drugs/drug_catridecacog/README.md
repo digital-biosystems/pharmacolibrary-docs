@@ -23,7 +23,7 @@ Other dr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 07:41 | 0:27 | 0/0/0 | 0/0/0 | 0/0/0 | 1,394/260 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 3/0 | 0 |
+| 2026-09-18 20:14 | 2:00 | 0/0/0 | 0/0/0 | 0/0/0 | 15,969/859 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 2/2 | 4/0 | 0 |
 
 ## popPK records
 
@@ -31,20 +31,21 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 4 matched, 2 returned
+- **PubMed hits:** 7 matched, 5 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Pasca_2022.pdf` | Pasca S et al., The pharmacokinetics of recombinant FXI…, Journal of thrombosis and t… (2022) | popPK | 9 | [10.1007/s11239-022-02700-x](https://doi.org/10.1007/s11239-022-02700-x) | [36094687](https://pubmed.ncbi.nlm.nih.gov/36094687) | The paper is a direct PK comparison study for catridecacog, but the provided evidence contains only study design and demographic details, with no specific numeric PK parameter values (e.g., CL, V, t1/2) listed. |
 | `Zanon_2023.pdf` | Zanon E et al., A multicenter, real-world experience wi…, Blood transfusion = Trasfus… (2023) | popPK | 8 | [10.2450/2022.0121-22](https://doi.org/10.2450/2022.0121-22) | [36580025](https://pubmed.ncbi.nlm.nih.gov/36580025) | The study reports pharmacokinetic assessments for catridecacog, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 
-<sub>queue written 2026-09-06T07:41:52.299607+00:00</sub>
+<sub>queue written 2026-09-18T20:14:24.699950+00:00</sub>
 
 ## Screened and excluded
 
@@ -61,6 +62,8 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Mitchell_2017 | irrelevant | 0 | 0 | The paper is a case report on acquired factor XIII deficiency and does not involve catridecacog or report any pharmacokinetic parameters. |
 | popPK | Muszbek_2018 | irrelevant | 0 | 0 | The paper is a review of laboratory diagnosis and clinical consequences of anti-Factor XIII antibodies, not a pharmacokinetic study of catridecacog. |
 | popPK | Palumbo_2008 | irrelevant | 0 | 0 | The paper investigates the role of Factor XIII in tumor metastasis and does not report any pharmacokinetic parameters for catridecacog. |
+| popPK | Pasca_2022 | relevant | 9 | 0 | The paper is a direct PK comparison study for catridecacog, but the provided evidence contains only study design and demographic details, with no specific numeric PK parameter values (e.g., CL, V, t1/2) listed. |
+| popPK | Pasca_2023 | irrelevant | 0 | 0 | The provided text consists solely of editorial corrections regarding author affiliations and names, containing no pharmacokinetic data or study results for catridecacog. |
 | popPK | Reynolds_2005 | irrelevant | 0 | 0 | The study evaluates recombinant Factor XIII (rFXIII), not catridecacog. |
 | popPK | Souri_2015 | irrelevant | 0 | 0 | The paper is a mechanistic study on coagulation Factor XIII and fibrin cross-linking, not a pharmacokinetic study of catridecacog. |
 | popPK | Souri_2023 | irrelevant | 0 | 0 | The paper investigates the mechanism of antibody inhibition of Factor XIII activation and is not a pharmacokinetic study of catridecacog. |

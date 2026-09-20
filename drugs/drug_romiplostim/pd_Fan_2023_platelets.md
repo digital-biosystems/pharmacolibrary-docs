@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Romiplostim_Fan2023_reference&quot;,&quot;label&quot;:&quot;Fan_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_romiplostim/Romiplostim_Fan2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # name — PD  <span class="pk-badge pk-badge--red">rejected</span>

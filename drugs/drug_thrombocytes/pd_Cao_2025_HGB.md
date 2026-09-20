@@ -16,12 +16,13 @@ Cao K; Fan X; Wong RSM; Yan X et al. (2025). ACS pharmacology & translational sc
 | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|
 | SC50Iron — estimate | `Q322` · not captured | 3.14 | μg/dL | not captured | llm (not captured) | tbl1:row6:col3 |
-| SC50Iron — % RSE | `Q322` · not captured | 38.93 | μg/dL | not captured | llm (not captured) | tbl1:row6:col4 |
+| SC50Iron — % RSE | `Q321` · not captured | 38.93 | μg/dL | not captured | llm (not captured) | tbl1:row6:col4 |
 | KE — estimate | `Q47` · not captured | 166.5 | not captured | not captured | exact (not captured) | tbl1:row13:col3 |
 | KE — % RSE | `Q47` · not captured | 16.22 | not captured | not captured | exact (not captured) | tbl1:row13:col4 |
 | SC50DF — estimate | `Q321` · not captured | 2062 | μg/dL | not captured | llm (not captured) | tbl1:row15:col3 |
 | σprop‑RBC — estimate | `Q315` · not captured | 0.29 | not captured | not captured | llm (not captured) | tbl1:row16:col3 |
-| σprop‑RBC — % RSE | `Q315` · not captured | 7.13 | not captured | not captured | llm (not captured) | tbl1:row16:col4 |
+| σprop‑RBC — % RSE | `Q316` · not captured | 7.13 | not captured | not captured | llm (not captured) | tbl1:row16:col4 |
+| σadd‑HBG — estimate | `Q315` · not captured | 0.79 | not captured | not captured | llm (not captured) | tbl1:row17:col3 |
 | σadd‑HBG — % RSE | `Q317` · not captured | 5.11 | not captured | not captured | llm (not captured) | tbl1:row17:col4 |
 | σprop‑PLT — estimate | `Q315` · not captured | 0.58 | not captured | not captured | llm (not captured) | tbl1:row18:col3 |
 | σprop‑PLT — % RSE | `Q316` · not captured | 6.80 | not captured | not captured | llm (not captured) | tbl1:row18:col4 |

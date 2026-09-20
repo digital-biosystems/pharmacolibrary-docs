@@ -9,7 +9,8 @@
 - **effect:** inhibition/unknown
 
 ## Citation
-not matched (stem Singh_2025)
+Singh VK; Justaud F; Brahmaiah D; Kumar NS; Baratte B; Robert T; et al. et al. (2025). Beilstein journal of organic chemistry 21
+  ·  DOI: [10.3762/bjoc.21.172](https://doi.org/10.3762/bjoc.21.172)
 
 ## Parameters
 _No resolved parameters._

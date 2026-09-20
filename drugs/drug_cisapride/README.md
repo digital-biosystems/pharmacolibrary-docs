@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03F&quot;,&quot;href&quot;:&quot;atc/A03F.md&quot;},{&quot;label&quot;:&quot;cisapride&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisapride_Michiels1987_rats_rabbits_and_dogs&quot;,&quot;label&quot;:&quot;Michiels_1987_rats, rabbits and dogs&quot;,&quot;href&quot;:&quot;drugs/drug_cisapride/Cisapride_Michiels1987_rats_rabbits_and_dogs.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisapride_Odoul2002_neonates&quot;,&quot;label&quot;:&quot;Odoul_2002_neonates&quot;,&quot;href&quot;:&quot;drugs/drug_cisapride/Cisapride_Odoul2002_neonates.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisapride_Preechagoon1999_young_infants_with_gastro_oesophag&quot;,&quot;label&quot;:&quot;Preechagoon_1999_young infants with gastro-oesophageal reflux disease&quot;,&quot;href&quot;:&quot;drugs/drug_cisapride/Cisapride_Preechagoon1999_young_infants_with_gastro_oesophag.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisapride_Preechagoon1999_reference&quot;,&quot;label&quot;:&quot;Preechagoon_1999_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cisapride/Cisapride_Preechagoon1999_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisapride_Michiels1987_reference&quot;,&quot;label&quot;:&quot;Michiels_1987_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cisapride/Cisapride_Michiels1987_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisapride_Odoul2002_reference&quot;,&quot;label&quot;:&quot;Odoul_2002_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cisapride/Cisapride_Odoul2002_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # cisapride
 
@@ -18,21 +18,21 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 01:47 | 11:19 | 0/0/0 | 0/0/0 | 0/0/0 | 89,570/5,549 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 2/2 | 4/0 | 0 |
+| 2026-09-18 11:51 | 4:49 | 1/2/0 | 0/0/0 | 0/0/0 | 86,724/6,995 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 2/2 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Michiels_1987_rats, rabbits and dogs](drugs/drug_cisapride/Cisapride_Michiels1987_rats_rabbits_and_dogs.md) | Michiels M et al., Pharmacokinetics and tissue distributio…, Arzneimittel-Forschung (1987) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Odoul_2002_neonates](drugs/drug_cisapride/Cisapride_Odoul2002_neonates.md) | Odoul F et al., Population pharmacokinetics of cisaprid…, European journal of clinica… (2002) | [10.1007/s00228-002-0504-z](https://doi.org/10.1007/s00228-002-0504-z) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Preechagoon_1999_young infants with gastro-oesophageal reflux disease](drugs/drug_cisapride/Cisapride_Preechagoon1999_young_infants_with_gastro_oesophag.md) | Preechagoon Y et al., Population pharmacokinetics of enterall…, British journal of clinical… (1999) | [10.1046/j.1365-2125.1999.00068.x](https://doi.org/10.1046/j.1365-2125.1999.00068.x) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Preechagoon_1999_reference](drugs/drug_cisapride/Cisapride_Preechagoon1999_reference.md) | Preechagoon Y et al., Population pharmacokinetics of enterall…, British journal of clinical… (1999) | [10.1046/j.1365-2125.1999.00068.x](https://doi.org/10.1046/j.1365-2125.1999.00068.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Michiels_1987_reference](drugs/drug_cisapride/Cisapride_Michiels1987_reference.md) | Michiels M et al., Pharmacokinetics and tissue distributio…, Arzneimittel-Forschung (1987) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Odoul_2002_reference](drugs/drug_cisapride/Cisapride_Odoul2002_reference.md) | Odoul F et al., Population pharmacokinetics of cisaprid…, European journal of clinica… (2002) | [10.1007/s00228-002-0504-z](https://doi.org/10.1007/s00228-002-0504-z) |
 
 ## Coverage
 
 - **PubMed hits:** 128 matched, 57 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -58,7 +58,7 @@ _16 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Mushiroda_2000.pdf` | Mushiroda T et al., The involvement of flavin-containing mo…, Drug metabolism and disposi… (2000) | pgx | 7 | not captured | [10997945](https://www.ncbi.nlm.nih.gov/pubmed/10997945) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Simard_2001.pdf` | Simard C et al., Study of the drug-drug interaction betw…, European journal of clinica… (2001) | pgx | 7 | [10.1007/s002280100298](https://doi.org/10.1007/s002280100298) | [11497338](https://www.ncbi.nlm.nih.gov/pubmed/11497338) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-11T01:43:55.462603+00:00</sub>
+<sub>queue written 2026-09-18T11:46:58.474265+00:00</sub>
 
 ## Screened and excluded
 
@@ -68,8 +68,8 @@ _16 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Andersson_2001 | not_relevant | 0 | 0 | The paper discusses a drug-drug interaction (esomeprazole inhibiting CYP2C19) affecting cisapride PK, not a pharmacogenomic effect based on a specific gene variant or genotype. |
 | PGx | Arayne_2005 | not_relevant | 0 | 0 | The paper discusses grapefruit juice-drug interactions and mentions cisapride only as a potential victim drug, without reporting any pharmacogenomic effects or specific PK/PD data for cisapride. |
 | PGx | Bailey_1998 | not_relevant | 0 | 0 | The paper discusses grapefruit juice-drug interactions and mentions cisapride only as a potential candidate for interaction, without reporting any pharmacogenomic effects or specific PK/PD data for cisapride. |
-| popPK | Corsi_1991 | irrelevant | 0 | 0 | The paper is a pharmacological study on urinary bladder and does not report pharmacokinetic parameters for cisapride. |
-| PD | Corsi_1991 | not_relevant | 0 | 0 | The paper analyzes the effects of 5-hydroxytryptamine (serotonin) on the urinary bladder, not cisapride. |
+| popPK | Corsi_1991 | irrelevant | 0 | 0 | no_text gate: only 113 chars of text extracted (&lt; 400) |
+| PD | Corsi_1991 | not_relevant | 0 | 0 | The paper analyzes the effects of 5-hydroxytryptamine (5-HT) on human isolated urinary bladder, not cisapride. |
 | popPK | Cvetkovic_2003 | irrelevant | 0 | 0 | The paper is a review of lopinavir/ritonavir and only mentions cisapride as a contraindicated interacting drug, providing no pharmacokinetic parameters for cisapride. |
 | PD | Cvetkovic_2003 | not_relevant | 1 | 0 | The paper is a review of lopinavir/ritonavir and mentions cisapride only as a contraindicated drug interaction, providing no pharmacodynamic or exposure-response data for cisapride. |
 | popPK | Deneer_2004 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of flecainide, with cisapride serving only as a co-administered prokinetic agent. |
@@ -81,29 +81,29 @@ _16 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Dubois_2016 | irrelevant | 2 | 0 | The study focuses on in vitro-in vivo correlations for QT prolongation and hERG binding, using cisapride as a paradigm compound rather than reporting quantitative population PK disposition parameters (CL, V, etc.) for cisapride. |
 | PGx | Ereshefsky_2000 | not_relevant | 0 | 0 | The paper focuses on venlafaxine pharmacokinetics and only mentions cisapride as an example of a drug with high CYP3A4 interaction potential, without reporting any pharmacogenomic effects on cisapride's PK or PD parameters. |
 | PGx | Flockhart_2000 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (CYP3A inhibitors) for cisapride, not pharmacogenomic effects of gene variants on its PK/PD. |
-| PGx | Furuta_2001 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (inhibition by omeprazole/cimetidine) rather than pharmacogenomic effects of gene variants on cisapride PK/PD. |
+| PGx | Furuta_2001 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (inhibition by omeprazole/cimetidine) rather than pharmacogenomic effects (gene variants) on cisapride PK/PD. |
 | PGx | Furuta_2004 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions and metabolic pathways (CYP/UGT inhibition) but does not report any pharmacogenomic effects (gene variants) on cisapride's PK or PD parameters. |
 | PGx | Gross_1999 | not_relevant | 0 | 0 | The study investigates the effect of grapefruit juice (a food interaction) on cisapride pharmacokinetics, not the effect of a gene variant or genotype. |
-| PGx | Hennessy_2008 | not_relevant | 0 | 0 | The study is an epidemiological case-control analysis of cisapride and arrhythmia risk, examining drug-drug interactions with CYP3A4 inhibitors, but it does not report pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| PGx | Katoh_2003 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (mosapride and erythromycin) and does not report any pharmacogenomic effects (gene variants) on cisapride or mosapride PK/PD parameters. |
+| PGx | Hennessy_2008 | not_relevant | 0 | 0 | The study examines the association between cisapride and ventricular arrhythmia in a general population, without reporting any pharmacogenomic effects on PK or PD parameters. |
+| PGx | Katoh_2003 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (mosapride and erythromycin) in healthy volunteers and does not report any pharmacogenomic effects or genetic variants. |
 | PGx | Kearns_2003 | not_relevant | 0 | 0 | The study investigates developmental ontogeny of CYP3A4 in neonates and infants, not the effect of specific genetic variants or genotypes on pharmacokinetics. |
 | popPK | Kempf_2014 | irrelevant | 0 | 0 | The study evaluates pharmacodynamic effects (LES pressure) rather than pharmacokinetic parameters, and no PK values are reported. |
 | popPK | Kim_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ion channel effects, not a pharmacokinetic study, and reports no disposition parameters. |
 | popPK | Koutsoviti-Papadopoulou_1997 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of gall bladder motility, not a pharmacokinetic study, and reports no disposition parameters. |
-| PGx | Lee-Montiel_2021 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (cisapride and ketoconazole) using isogenic hiPSCs, not a pharmacogenomic effect of a specific gene variant on cisapride PK/PD. |
+| PGx | Lee-Montiel_2021 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions using isogenic hiPSCs and does not report pharmacogenomic effects of gene variants on cisapride PK/PD. |
 | popPK | Lennox_2025 | irrelevant | 0 | 0 | The paper is a cardiac safety study for imetelstat where cisapride is used only as a positive control for hERG inhibition, not as the subject drug for PK parameter extraction. |
 | popPK | Linnik_1991 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study examining serotonergic mechanisms and receptor binding, not a pharmacokinetic study reporting disposition parameters for cisapride. |
 | PGx | Lowry_2003 | not_relevant | 0 | 0 | The study evaluates cisapride as a CYP3A4 probe in healthy adults but does not report pharmacogenomic effects (gene variants) on its PK/PD parameters. |
 | PGx | Michalets_2000 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions (CYP3A4 inhibition and QT prolongation) but does not report any pharmacogenomic effects (gene variants) on cisapride PK or PD. |
-| PGx | Mushiroda_2000 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (enzyme inhibition) and metabolic pathways, not the effect of genetic variants or genotypes on pharmacokinetics. |
+| PGx | Mushiroda_2000 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (enzyme inhibition) rather than pharmacogenomic effects of gene variants on cisapride PK/PD. |
 | popPK | Nolan_2006 | irrelevant | 2 | 0 | The study focuses on pharmacodynamic modeling of repolarization prolongation (QT/RT interval) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for cisapride. |
 | PGx | Paakkari_2002 | not_relevant | 0 | 0 | The paper discusses general cardiotoxicity and CYP3A4 interactions but does not report specific pharmacogenomic effects of gene variants on cisapride PK or PD parameters. |
 | popPK | Qiu_2011 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of meranzin hydrate and ferulic acid, with cisapride serving only as a comparator for pharmacodynamic effects (gastric emptying) rather than the subject of PK analysis. |
-| PGx | Simard_2001 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction between simvastatin and cisapride, not a pharmacogenomic effect (gene variant/genotype) on cisapride PK/PD. |
-| popPK | Taniyama_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor interactions and does not report pharmacokinetic parameters. |
+| PGx | Simard_2001 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction between simvastatin and cisapride, not a pharmacogenomic effect involving gene variants. |
+| popPK | Taniyama_1991 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor mechanisms in guinea pig ileum and does not report any pharmacokinetic parameters for cisapride. |
 | PGx | Thomas_1998 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (cisapride-diltiazem) causing QT prolongation, not a pharmacogenomic effect based on a gene variant or genotype. |
 | PGx | Walker_1999 | not_relevant | 0 | 0 | The paper reports on the risk of cardiac arrhythmias associated with cisapride use and drug interactions, but does not investigate the impact of specific gene variants or genotypes on pharmacokinetic or pharmacodynamic parameters. |
-| popPK | Webster_2001 | irrelevant | 1 | 0 | The study is a pharmacodynamic assessment of QT prolongation in dogs, reporting ED50 values rather than quantitative pharmacokinetic disposition parameters (CL, V, ka) for cisapride. |
+| popPK | Webster_2001 | irrelevant | 2 | 0 | The study is a pharmacodynamic assessment of QT prolongation (MAPD) in dogs, reporting ED50 values rather than quantitative pharmacokinetic disposition parameters (CL, V, ka) for cisapride. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_cisapride`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;repaglinide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Repaglinide_Ruzilawati2010_healthy_malaysian_volunteers&quot;,&quot;label&quot;:&quot;Ruzilawati_2010_healthy Malaysian volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_repaglinide/Repaglinide_Ruzilawati2010_healthy_malaysian_volunteers.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Repaglinide_Ruzilawati2010_reference&quot;,&quot;label&quot;:&quot;Ruzilawati_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_repaglinide/Repaglinide_Ruzilawati2010_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # repaglinide
 
@@ -18,13 +18,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 23:58 | 14:30 | 0/0/0 | 0/0/0 | 0/0/0 | 64,283/3,717 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 3/3 | 6/0 | 0 |
+| 2026-09-18 19:15 | 4:29 | 0/1/0 | 0/0/0 | 0/0/0 | 65,216/6,355 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 3/3 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ruzilawati_2010_healthy Malaysian volunteers](drugs/drug_repaglinide/Repaglinide_Ruzilawati2010_healthy_malaysian_volunteers.md) | Ruzilawati AB et al., Population pharmacokinetic modelling of…, Journal of clinical pharmac… (2010) | [10.1111/j.1365-2710.2009.01042.x](https://doi.org/10.1111/j.1365-2710.2009.01042.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Ruzilawati_2010_reference](drugs/drug_repaglinide/Repaglinide_Ruzilawati2010_reference.md) | Ruzilawati AB et al., Population pharmacokinetic modelling of…, Journal of clinical pharmac… (2010) | [10.1111/j.1365-2710.2009.01042.x](https://doi.org/10.1111/j.1365-2710.2009.01042.x) |
 
 ## Coverage
 
@@ -62,7 +62,7 @@ _22 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Xiao_2015.pdf` | Xiao Q et al., Physiologically based pharmacokinetics…, Biopharmaceutics & drug dis… (2015) | pgx | 7 | [10.1002/bdd.1987](https://doi.org/10.1002/bdd.1987) | [26296069](https://www.ncbi.nlm.nih.gov/pubmed/26296069) | metadata signals extractable PGX data (CYP2C8, PK/PD-context) |
 | `Gan_2010.pdf` | Gan J et al., Repaglinide-gemfibrozil drug interactio…, British journal of clinical… (2010) | pgx | 5 | [10.1111/j.1365-2125.2010.03772.x](https://doi.org/10.1111/j.1365-2125.2010.03772.x) | [21175442](https://www.ncbi.nlm.nih.gov/pubmed/21175442) | metadata signals extractable PGX data (UGT1A1) |
 
-<sub>queue written 2026-09-15T23:55:09.024665+00:00</sub>
+<sub>queue written 2026-09-18T19:11:03.329537+00:00</sub>
 
 ## Screened and excluded
 
@@ -84,9 +84,9 @@ _22 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Hu_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of insulinotropic effects on rat islets and does not report pharmacokinetic disposition parameters for repaglinide. |
 | PGx | Ishii_2018 | not_relevant | 0 | 0 | The paper reports drug-drug interactions of BFE1224, not pharmacogenomic effects of gene variants on repaglinide PK/PD. |
 | PGx | Jaiswal_2025 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (DDI) involving dordaviprone and CYP enzymes, not pharmacogenomic effects of genetic variants on repaglinide PK/PD. |
-| PGx | Kahma_2024 | not_relevant | 0 | 0 | The paper investigates the mechanism-based inhibition of CYP enzymes by drug metabolites (including repaglinide glucuronide) in vitro, but does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| PGx | Kahma_2024 | not_relevant | 0 | 0 | The paper investigates the time-dependent inhibition of CYP enzymes by drug glucuronides in vitro and does not report any pharmacogenomic effects on the PK/PD of repaglinide. |
 | PGx | Kajosaari_2005 | not_relevant | 0 | 0 | The study investigates in vitro drug-drug interactions (inhibition by fibrates/rifampicin) and enzyme contributions, but does not report pharmacogenomic effects of genetic variants on repaglinide PK/PD. |
-| PGx | Lenuzza_2016 | not_relevant | 0 | 0 | The paper reports PK parameters for repaglinide as a probe in a cocktail study, but does not report any pharmacogenomic effect (gene variant/genotype) on repaglinide's PK or PD parameters. |
+| PGx | Lenuzza_2016 | not_relevant | 0 | 0 | The paper reports pharmacokinetics of a CIME cocktail in healthy volunteers without stratifying by genotype or reporting pharmacogenomic effects. |
 | popPK | Li_2012 | irrelevant | 0 | 0 | no_text gate: only 152 chars of text extracted (&lt; 400) |
 | popPK | Lim_2004 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
 | PD | Lim_2004 | not_relevant | 0 | 0 | The paper investigates the electrophysiological effects of taurine on cloned ATP-sensitive K+ channels in Xenopus oocytes and does not involve repaglinide or any pharmacokinetic/pharmacodynamic modeling. |
@@ -100,9 +100,9 @@ _22 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Ménochet_2012_2 | irrelevant | 2 | 0 | The study is an in-vitro mechanistic modeling of hepatocyte uptake transporters, not a population pharmacokinetic study reporting in-vivo disposition parameters like CL, V, or ka for repaglinide. |
 | PGx | Ogilvie_2006 | not_relevant | 0 | 0 | The paper investigates the mechanism of gemfibrozil's inhibition of CYP2C8 and its implications for drug-drug interactions with repaglinide, but it does not report any pharmacogenomic effects (gene variants) on repaglinide's PK or PD parameters. |
 | PGx | Pakkir_2018 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving CYP enzymes and OATP1B1, not pharmacogenomic effects of genetic variants on repaglinide PK/PD. |
-| PGx | Sang_2025 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions of isavuconazole and does not report pharmacogenomic effects on repaglinide. |
-| PGx | Stenglein_2026 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction study using repaglinide as a probe substrate for CYP2C8, but it does not report any pharmacogenomic effects (gene variants/genotypes) on repaglinide's PK or PD parameters. |
-| PGx | Topletz-Erickson_2022 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (pharmacokinetic changes due to enzyme inhibitors/inducers) but does not report pharmacogenomic effects (gene variants) on repaglinide PK/PD. |
+| PGx | Sang_2025 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions of isavuconazole and does not report pharmacogenomic effects on repaglinide PK/PD. |
+| PGx | Stenglein_2026 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (zapnometinib affecting repaglinide PK) but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| PGx | Topletz-Erickson_2022 | not_relevant | 0 | 0 | The study evaluates drug-drug interactions (DDIs) with tucatinib, not pharmacogenomic effects of gene variants on repaglinide PK/PD. |
 | PGx | Türk_2020 | not_relevant | 0 | 0 | The paper focuses on a PBPK model for trimethoprim and its interactions, not on the pharmacogenomics of repaglinide itself. |
 | PGx | Varma_2013 | not_relevant | 0 | 0 | The paper focuses on mechanistic modeling of drug-drug interactions (DDIs) involving inhibitors, not on pharmacogenomic effects of genetic variants on repaglinide PK/PD. |
 | PGx | Wang_2015 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions involving clopidogrel and does not report pharmacogenomic effects on repaglinide PK/PD parameters. |

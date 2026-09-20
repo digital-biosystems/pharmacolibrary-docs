@@ -22,8 +22,8 @@ Ter Avest M; Langemeijer SMC; van den Heuvel LPWJ; Baas LM; van de Kar NCAJ; Ter
 | IIVV1 (ω2) — Population estimate (RSE%) | `Q312` · not captured | 0.0812 | RSE% | not captured | llm (not captured) | Tab2:row5:col1 |
 | Volume of distribution 2 (L) — Population estimate (RSE%) | `Q64` · not captured | 2.6 | L | not captured | llm_corrected (not captured) | Tab2:row6:col1 |
 | Q (L/day) — Population estimate (RSE%) | `Q30` · not captured | 0.62 | L/day | not captured | exact (not captured) | Tab2:row7:col1 |
-| Maximum rate (Vmax) [mg/day] — Population estimate (RSE%) | `Q66` · not captured | 25.6 | RSE% | not captured | llm_confirmed (not captured) | Tab2:row8:col1 |
-| Concentration for 50% of the maximum rate (Km) [mg/L] — Population estimate (RSE%) | `Q1` · not captured | 13.5 | RSE% | not captured | llm_confirmed (not captured) | Tab2:row9:col1 |
+| Maximum rate (Vmax) [mg/day] — Population estimate (RSE%) | `Q66` · not captured | 25.6 | mg/day | not captured | llm_confirmed (not captured) | Tab2:row8:col1 |
+| Concentration for 50% of the maximum rate (Km) [mg/L] — Population estimate (RSE%) | `Q1` · not captured | 13.5 | mg/L | not captured | llm_confirmed (not captured) | Tab2:row9:col1 |
 | Additional error — Population estimate (RSE%) | `Q317` · not captured | 19.3 | RSE% | not captured | llm (not captured) | Tab2:row11:col1 |
 | Proportional error assay 1 (Radboudumc) — Population estimate (RSE%) | `Q316` · not captured | 0.0186 | Radboudumc | not captured | llm_confirmed (not captured) | Tab2:row12:col1 |
 | Proportional error assay 2 (Sanquin) — Population estimate (RSE%) | `Q316` · not captured | 0.187 | Sanquin | not captured | llm_confirmed (not captured) | Tab2:row13:col1 |

@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 21:09 | 6:07 | 0/1/0 | 0/1/0 | 0/0/0 | 109,434/9,827 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/8 | 10/0 | 0 |
+| 2026-09-18 23:17 | 1:46 | 0/1/0 | 0/1/0 | 0/0/0 | 77,413/1,693 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/8 | 10/0 | 0 |
 
 ## popPK records
 
@@ -47,7 +47,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Mahlangu_2023.pdf` | Mahlangu J et al., Two-Year Outcomes of Valoctocogene Roxa…, The New England journal of… (2023) | popPK | 8 | [10.1056/NEJMoa2211075](https://doi.org/10.1056/NEJMoa2211075) | [36812433](https://pubmed.ncbi.nlm.nih.gov/36812433) | The paper reports a population PK model for valoctocogene roxaparvovec with a specific numeric half-life (123 weeks) for the transgene-derived factor VIII production system, though other detailed parameters like clearance or volume are not explicitly listed in the text. |
 
-<sub>queue written 2026-09-06T21:07:06.760471+00:00</sub>
+<sub>queue written 2026-09-18T23:17:07.829442+00:00</sub>
 
 ## Screened and excluded
 
@@ -55,7 +55,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Agarwal_2024 | irrelevant | 2 | 1 | The study reports vector DNA biodistribution and shedding kinetics (clearance times, peak concentrations) rather than standard pharmacokinetic parameters (CL, V, ka) for the drug, and no compartmental PK model is presented. |
 | popPK | Cao_2025 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of KJ103 (an IgG-degrading enzyme), not valoctocogene roxaparvovec, which is only mentioned as a context for AAV gene therapy. |
-| popPK | Long_2019 | irrelevant | 2 | 0 | The study reports pharmacodynamic parameters (FVIII-SQ protein levels) rather than pharmacokinetic disposition parameters (CL, V, ka) for the vector itself. |
+| popPK | Long_2019 | irrelevant | 2 | 0 | The study reports pharmacodynamic parameters (FVIII-SQ Cmax and AUC) rather than pharmacokinetic disposition parameters (CL, V, ka) for the vector or transgene. |
 | popPK | Long_2021 | irrelevant | 0 | 0 | The paper focuses exclusively on immunogenicity (antibody titers and cellular responses) and does not report pharmacokinetic parameters such as clearance, volume, or half-life for valoctocogene roxaparvovec. |
 | popPK | Long_2024 | irrelevant | 0 | 0 | The paper focuses on immunogenicity (antibodies and cellular immune responses) and safety outcomes, not pharmacokinetic disposition parameters like clearance or volume. |
 | popPK | Mihaila_2023 | irrelevant | 0 | 0 | The paper is a review focused on emicizumab and general gene therapy concepts, and does not report quantitative pharmacokinetic parameters for valoctocogene roxaparvovec. |

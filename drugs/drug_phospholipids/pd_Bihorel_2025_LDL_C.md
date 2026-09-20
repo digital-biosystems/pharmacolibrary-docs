@@ -1,11 +1,11 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phospholipids_Hummel1975_non_pregnant_female_rats&quot;,&quot;label&quot;:&quot;Hummel_1975_non pregnant female rats&quot;,&quot;href&quot;:&quot;drugs/drug_phospholipids/Phospholipids_Hummel1975_non_pregnant_female_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phospholipids_Hummel1975_non_pregnant_female_rats&quot;,&quot;label&quot;:&quot;Hummel_1975_non pregnant female rats&quot;,&quot;href&quot;:&quot;drugs/drug_phospholipids/Phospholipids_Hummel1975_non_pregnant_female_rats.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# LDL-C — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# LDL-C — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Bihorel_2025`
 - **model family:** `indirect_response_i`
-- **driver:** `conc_no_pk`
+- **driver:** `not_resolved`
 - **tier:** population
 - **effect:** inhibition/unknown
 
@@ -14,7 +14,27 @@ Bihorel S; Dingman R; Mendell J; Wang Y; Banerjee P; Pordy R; Davis JD; DiCiocci
   ·  DOI: [10.1002/psp4.70016](https://doi.org/10.1002/psp4.70016)
 
 ## Parameters
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|
+| LDLC0: Baseline LDL‐C concentration (mg/dL) — Estimate | `Q324` · not captured | 214 | mg/dL | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row1:col1 |
+| LDLC0: Baseline LDL‐C concentration (mg/dL) — %RSE | `Q324` · not captured | 9.74 | mg/dL | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row1:col2 |
+| kin: LDL‐C production rate (mg/dL/day) — Estimate | `Q327` · not captured | 34.7 | mg/dL/day | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row3:col1 |
+| kin: LDL‐C production rate (mg/dL/day) — %RSE | `Q327` · not captured | 16.9 | mg/dL/day | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row3:col2 |
+| Imax: Maximum inhibition (unitless) — Estimate | `Q323` · not captured | 0.574 | unitless | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row4:col1 |
+| Imax: Maximum inhibition (unitless) — %RSE | `Q323` · not captured | 5.95 | unitless | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row4:col2 |
+| IC50: Half‐inhibitory concentration (mg/L) — Estimate | `Q322` · not captured | 32.7 | mg/L | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row6:col1 |
+| IC50: Half‐inhibitory concentration (mg/L) — %RSE | `Q322` · not captured | 23.9 | mg/L | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row6:col2 |
+| IIV in kin (% CV) — Estimate | `Q100` · not captured | 54.5 | unit | not captured | nil (not captured) | psp470016-tbl-0003:row10:col1 |
+| IIV in kin (% CV) — %RSE | `Q100` · not captured | 37.3 | unit | not captured | nil (not captured) | psp470016-tbl-0003:row10:col2 |
+| Constant CV residual variability component — Estimate | `Q315` · not captured | 0.0631 | unit | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row11:col1 |
+| Constant CV residual variability component — %RSE | `Q315` · not captured | 22.0 | unit | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row11:col2 |
+| Additive residual variability component — Estimate | `Q317` · not captured | 60.3 | unit | not captured | llm_corrected (not captured) | psp470016-tbl-0003:row12:col1 |
+| Additive residual variability component — %RSE | `Q315` · not captured | 103 | unit | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row12:col2 |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 

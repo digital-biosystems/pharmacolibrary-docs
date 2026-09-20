@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Alpha-amylase activity — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# Alpha-amylase activity — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `El-Sheekh_2025`
 - **model family:** `unknown`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03B&quot;,&quot;href&quot;:&quot;atc/B03B.md&quot;},{&quot;label&quot;:&quot;cyanocobalamin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cyanocobalamin_NavaOcampo2005_rats&quot;,&quot;label&quot;:&quot;Nava-Ocampo_2005_rats&quot;,&quot;href&quot;:&quot;drugs/drug_cyanocobalamin/Cyanocobalamin_NavaOcampo2005_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cyanocobalamin_NavaOcampo2005_reference&quot;,&quot;label&quot;:&quot;Nava-Ocampo_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cyanocobalamin/Cyanocobalamin_NavaOcampo2005_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # cyanocobalamin
 
@@ -41,13 +41,13 @@ Vitamin B12 supplements are widely available and indicated in patients who requi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 12:41 | 5:31 | 0/0/0 | 0/0/0 | 0/0/0 | 41,857/1,788 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/0 | 5/1 | 0 |
+| 2026-09-19 00:05 | 1:59 | 0/1/0 | 0/0/0 | 0/0/0 | 38,712/2,091 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/5 | 5/1 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nava-Ocampo_2005_rats](drugs/drug_cyanocobalamin/Cyanocobalamin_NavaOcampo2005_rats.md) | Nava-Ocampo AA et al., Pharmacokinetics of high doses of cyano…, Clinical and experimental p… (2005) | [10.1111/j.1440-1681.2005.04145.x](https://doi.org/10.1111/j.1440-1681.2005.04145.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nava-Ocampo_2005_reference](drugs/drug_cyanocobalamin/Cyanocobalamin_NavaOcampo2005_reference.md) | Nava-Ocampo AA et al., Pharmacokinetics of high doses of cyano…, Clinical and experimental p… (2005) | [10.1111/j.1440-1681.2005.04145.x](https://doi.org/10.1111/j.1440-1681.2005.04145.x) |
 
 ## Coverage
 
@@ -68,7 +68,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Kurpad_2023.pdf` | Kurpad AV et al., Bioavailability and daily requirement o…, The American journal of cli… (2023) | popPK | 8 | [10.1016/j.ajcnut.2023.08.020](https://doi.org/10.1016/j.ajcnut.2023.08.020) | [38044024](https://pubmed.ncbi.nlm.nih.gov/38044024) | The study reports bioavailability and excretion rates using a 2-compartment model, but specific PK parameters like clearance (CL) or volume (V) are not explicitly listed in the provided text. |
 | `Egler_2023.pdf` | Egler SG et al., Acute toxicity of single and combined r…, Ecotoxicology and environme… (2023) | pd | 5 | [10.1016/j.ecoenv.2023.114538](https://doi.org/10.1016/j.ecoenv.2023.114538) | [36652740](https://www.ncbi.nlm.nih.gov/pubmed/36652740) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-06T12:39:51.809050+00:00</sub>
+<sub>queue written 2026-09-19T00:03:20.462167+00:00</sub>
 
 ## Screened and excluded
 
@@ -80,20 +80,20 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Dierkes_1999 | not_relevant | 3 | 5 | The paper reports a trend suggesting MTHFR genotype influences the PD response (homocysteine reduction) to cyanocobalamin, but it does not provide a fitted quantitative effect size or definitive pharmacogenomic parameter estimation. |
 | popPK | Egler_2023 | irrelevant | 0 | 0 | The study focuses on the acute toxicity of rare earth elements in Daphnia, using cyanocobalamin only as a chelator in the assay medium, and reports no pharmacokinetic parameters for cyanocobalamin. |
 | PD | Egler_2023 | not_relevant | 0 | 0 | The paper studies the acute toxicity of rare earth elements (La, Nd, Sm) on Daphnia similis; cyanocobalamin is only mentioned as a chelator in the assay medium, and no pharmacodynamic or exposure-response relationship for cyanocobalamin is reported. |
-| PGx | Ferrazzi_2005 | not_relevant | 0 | 0 | The paper investigates the association between MTHFR genotype and homocysteine levels in retinal vein occlusion patients, but does not report pharmacokinetic or pharmacodynamic parameters of cyanocobalamin (Vitamin B12) administration. |
+| PGx | Ferrazzi_2005 | not_relevant | 0 | 0 | The paper investigates the association between MTHFR polymorphism and retinal vein occlusion/homocysteine levels, not the pharmacokinetics or pharmacodynamics of cyanocobalamin. |
 | PGx | Fofou-Caillierez_2013 | not_relevant | 2 | 5 | The paper describes a rare inherited metabolic disorder (cblG-variant) affecting the intracellular processing of cyanocobalamin, rather than a pharmacogenomic effect on the PK/PD of cyanocobalamin as a therapeutic drug in a general population. |
 | PGx | Gherasim_2013 | not_relevant | 0 | 0 | The paper describes the molecular mechanism of intracellular cobalamin trafficking and protein-protein interactions in inborn errors of metabolism, not the pharmacokinetics or pharmacodynamics of exogenous cyanocobalamin administration. |
 | PGx | Hannah-Shmouni_2018 | not_relevant | 2 | 5 | The paper reports clinical outcomes and biochemical normalization in patients with a genetic defect, but does not quantify specific pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, EC50) of cyanocobalamin. |
-| PGx | Kaur_2021 | not_relevant | 0 | 0 | The paper discusses folic acid as a placebo in hydroxychloroquine trials and mentions cyanocobalamin only as a component of a combination therapy for clinical cure, without reporting any pharmacogenomic effects on PK or PD parameters of cyanocobalamin. |
+| PGx | Kaur_2021 | not_relevant | 0 | 0 | The paper discusses folic acid as a placebo in hydroxychloroquine trials and mentions cyanocobalamin only as a component of a combination therapy for general clinical outcomes, without reporting any pharmacogenomic effects on cyanocobalamin PK/PD parameters. |
 | popPK | Kurpad_2023 | relevant | 8 | 3 | The study reports bioavailability and excretion rates using a 2-compartment model, but specific PK parameters like clearance (CL) or volume (V) are not explicitly listed in the provided text. |
 | PGx | Lanska_2010 | not_relevant | 0 | 0 | The text is a historical review of B vitamin deficiency disorders and does not report pharmacogenomic effects on the PK or PD of cyanocobalamin. |
-| PGx | Lioudyno_2024 | not_relevant | 0 | 0 | The paper reports associations between folate cycle gene polymorphisms and baseline blood levels of Vitamin B12 (cyanocobalamin) in MS patients, but does not report a pharmacokinetic or pharmacodynamic effect of a drug intervention. |
-| PGx | Longo_2026 | not_relevant | 0 | 0 | The paper investigates the structural and thermodynamic effects of the MMACHC R161Q mutation on protein stability and oligomerization, not pharmacokinetic or pharmacodynamic parameters of cyanocobalamin. |
+| PGx | Lioudyno_2024 | not_relevant | 0 | 0 | The paper reports on vitamin B9 (folate) levels and folate cycle gene polymorphisms, not cyanocobalamin (vitamin B12) pharmacokinetics or pharmacodynamics. |
+| PGx | Longo_2026 | not_relevant | 0 | 0 | The paper investigates the structural and thermodynamic effects of the MMACHC R161Q mutation on protein stability and oligomerization, not the pharmacokinetic or pharmacodynamic parameters of cyanocobalamin in a clinical or physiological context. |
 | PGx | Paul_2017 | not_relevant | 2 | 0 | The paper is a narrative review discussing general B12 forms and genetic polymorphisms qualitatively, without reporting specific quantitative pharmacokinetic or pharmacodynamic effect sizes for cyanocobalamin. |
 | PGx | Refsum_2006 | not_relevant | 2 | 5 | The paper reports an association between TCN2 genotype and total transcobalamin levels, but does not report a pharmacokinetic or pharmacodynamic effect of a gene variant on cyanocobalamin itself. |
-| PGx | Saviola_2018 | not_relevant | 0 | 0 | The paper reports a clinical case of methotrexate toxicity associated with MTHFR polymorphisms, but it does not report pharmacokinetic or pharmacodynamic parameters for cyanocobalamin. |
+| PGx | Saviola_2018 | not_relevant | 0 | 0 | The paper reports a pharmacogenomic association with methotrexate toxicity, not cyanocobalamin. |
 | popPK | Sivadas_2025 | relevant | 9 | 2 | The study explicitly uses a 2-compartment pharmacokinetic model for cyanocobalamin, but the specific numeric parameter values (CL, V, etc.) are not listed in the provided abstract text. |
-| PGx | Sunebo_2026 | not_relevant | 0 | 0 | The paper investigates an adverse drug reaction (MADD) associated with sertraline and does not report pharmacokinetic or pharmacodynamic parameters of cyanocobalamin. |
+| PGx | Sunebo_2026 | not_relevant | 0 | 0 | The paper reports an association between sertraline and acquired MADD, not a pharmacogenomic effect on cyanocobalamin PK/PD. |
 | PGx | Vaisbich_2017 | not_relevant | 0 | 0 | The paper describes a clinical case of methionine synthase deficiency and treatment response, but does not report pharmacogenomic effects on the pharmacokinetic or pharmacodynamic parameters of cyanocobalamin. |
 
 ---

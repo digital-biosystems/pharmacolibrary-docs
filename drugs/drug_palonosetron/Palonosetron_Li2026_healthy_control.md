@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;palonosetron&quot;,&quot;href&quot;:&quot;drugs/drug_palonosetron/&quot;},{&quot;label&quot;:&quot;Li_2026 \u00b7 healthy_control&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palonosetron_Li2026_healthy_control&quot;,&quot;label&quot;:&quot;Li_2026_healthy_control&quot;,&quot;href&quot;:&quot;drugs/drug_palonosetron/Palonosetron_Li2026_healthy_control.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Palonosetron_Li2026_healthy_control&quot;,&quot;label&quot;:&quot;Li_2026_healthy_control&quot;,&quot;href&quot;:&quot;drugs/drug_palonosetron/Palonosetron_Li2026_healthy_control.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Palonosetron_Li2026_moderate_hepatic_impairment&quot;,&quot;label&quot;:&quot;Li_2026_moderate_hepatic_impairment&quot;,&quot;href&quot;:&quot;drugs/drug_palonosetron/Palonosetron_Li2026_moderate_hepatic_impairment.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Palonosetron_Li2026_moderate_hepatic_impairment&quot;,&quot;label&quot;:&quot;Li_2026_moderate_hepatic_impairment&quot;,&quot;href&quot;:&quot;drugs/drug_palonosetron/Palonosetron_Li2026_moderate_hepatic_impairment.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Palonosetron_Li2026_palonosetron&quot;,&quot;label&quot;:&quot;Li_2026_palonosetron&quot;,&quot;href&quot;:&quot;drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Palonosetron_Li2026_palonosetron&quot;,&quot;label&quot;:&quot;Li_2026_palonosetron&quot;,&quot;href&quot;:&quot;drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palonosetron_Lee2019_reference&quot;,&quot;label&quot;:&quot;Lee_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_palonosetron/Palonosetron_Lee2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Palonosetron_Li2026_healthy_control&quot;,&quot;label&quot;:&quot;Li_2026_healthy_control&quot;,&quot;href&quot;:&quot;drugs/drug_palonosetron/Palonosetron_Li2026_healthy_control.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Palonosetron_Li2026_healthy_control&quot;,&quot;label&quot;:&quot;Li_2026_healthy_control&quot;,&quot;href&quot;:&quot;drugs/drug_palonosetron/Palonosetron_Li2026_healthy_control.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Palonosetron_Li2026_moderate_hepatic_impairment&quot;,&quot;label&quot;:&quot;Li_2026_moderate_hepatic_impairment&quot;,&quot;href&quot;:&quot;drugs/drug_palonosetron/Palonosetron_Li2026_moderate_hepatic_impairment.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Palonosetron_Li2026_moderate_hepatic_impairment&quot;,&quot;label&quot;:&quot;Li_2026_moderate_hepatic_impairment&quot;,&quot;href&quot;:&quot;drugs/drug_palonosetron/Palonosetron_Li2026_moderate_hepatic_impairment.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Palonosetron_Li2026_palonosetron&quot;,&quot;label&quot;:&quot;Li_2026_palonosetron&quot;,&quot;href&quot;:&quot;drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Palonosetron_Li2026_palonosetron&quot;,&quot;label&quot;:&quot;Li_2026_palonosetron&quot;,&quot;href&quot;:&quot;drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -29,7 +29,7 @@ Li Q; Mai J; Wu M; Zhang H; Yang X; Huang Y; et al. et al. (2026). Frontiers in 
   ·  DOI: [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170)
 
 ## Model component
-<dbs-pgx drug="palonosetron" model-id="Palonosetron_Li2026_healthy_control" status="rejected" stale="false" population="Chinese subjects with impaired or normal liver function" measured-compound="fosrolapitant" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="palonosetron" model-id="Palonosetron_Li2026_healthy_control" status="rejected" stale="false" population="Chinese subjects with moderate hepatic impairment and healthy controls" measured-compound="fosrolapitant" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -60,12 +60,7 @@ Li Q; Mai J; Wu M; Zhang H; Yang X; Huang Y; et al. et al. (2026). Frontiers in 
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
 - population split: 'healthy control' subgroup of Li_2026 (paper reports 3 populations: healthy control, moderate hepatic impairment, palonosetron)
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-
-**Extraction notes:**
-- companion parameter table S1 transcribed (8 record(s))
-- LLM selected parameter table(s) 2, S1, S2
+- review gap-fill skipped: this record measures 'fosrolapitant', not palonosetron — the review values are the parent's
 
 ## Validation
 
@@ -75,6 +70,7 @@ Li Q; Mai J; Wu M; Zhang H; Yang X; Huang Y; et al. et al. (2026). Frontiers in 
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Li_2026_table_S1:row0:col2'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Li_2026_table_S1:row4:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.92 | not captured | not captured | ['Li_2026:other_prose'] |

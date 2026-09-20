@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B02B&quot;,&quot;href&quot;:&quot;atc/B02B.md&quot;},{&quot;label&quot;:&quot;coagulation factor IX&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CoagulationFactorIx_Preijers2022_reference&quot;,&quot;label&quot;:&quot;Preijers_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Preijers2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CoagulationFactorIx_Preijers2018_reference&quot;,&quot;label&quot;:&quot;Preijers_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Preijers2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorIx_Preijers2022_reference&quot;,&quot;label&quot;:&quot;Preijers_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Preijers2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CoagulationFactorIx_Goldsmith1992_reference&quot;,&quot;label&quot;:&quot;Goldsmith_1992_reference&quot;,&quot;href&quot;:&quot;drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Goldsmith1992_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # coagulation factor IX
 
@@ -20,25 +20,27 @@ Along with other blood coagulation factors, it is used to reverse acquired coagu
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 06:08 | 10:33 | 1/0/0 | 0/1/0 | 0/0/0 | 76,538/32,516 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-09-18 20:19 | 5:15 | 1/1/1 | 1/0/0 | 0/0/0 | 80,220/19,385 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Preijers_2018_reference](drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Preijers2018_reference.md) | Preijers T et al., Population pharmacokinetics of factor I…, Journal of thrombosis and h… (2018) | [10.1111/jth.14292](https://doi.org/10.1111/jth.14292) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Preijers_2022_reference](drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Preijers2022_reference.md) | Preijers T et al., In silico evaluation of limited samplin…, European journal of clinica… (2022) | [10.1007/s00228-021-03173-2](https://doi.org/10.1007/s00228-021-03173-2) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Goldsmith_1992_reference](drugs/drug_coagulation_factor_ix/CoagulationFactorIx_Goldsmith1992_reference.md) | Goldsmith JC et al., Coagulation factor IX: successful surgi…, American journal of hematol… (1992) | [10.1002/ajh.2830400310](https://doi.org/10.1002/ajh.2830400310) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Jonsson_2021](drugs/drug_coagulation_factor_ix/pd_Jonsson_2021_ABR.md) | Jonsson F et al., Exposure-Bleeding Count Modeling of Emi…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01006-0](https://doi.org/10.1007/s40262-021-01006-0) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jonsson_2021](drugs/drug_coagulation_factor_ix/pd_Jonsson_2021_ABR.md) | Jonsson F et al., Exposure-Bleeding Count Modeling of Emi…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01006-0](https://doi.org/10.1007/s40262-021-01006-0) |
 
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -51,9 +53,9 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Preijers_2018.pdf` | Preijers T et al., Population pharmacokinetics of factor I…, Journal of thrombosis and h… (2018) | popPK | 10 | [10.1111/jth.14292](https://doi.org/10.1111/jth.14292) | [30394056](https://pubmed.ncbi.nlm.nih.gov/30394056) | The paper reports a population PK model for coagulation factor IX with explicit numeric values for clearance, volumes, and intercompartmental clearances in the text. |
 | `Zhang_2016.pdf` | Zhang Y et al., Population pharmacokinetics of a new lo…, Journal of thrombosis and h… (2016) | popPK | 10 | [10.1111/jth.13444](https://doi.org/10.1111/jth.13444) | [27513989](https://pubmed.ncbi.nlm.nih.gov/27513989) | The paper describes a population PK model for coagulation factor IX, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only contains qualitative summaries and simulation outcomes. |
 | `Goldsmith_1992.pdf` | Goldsmith JC et al., Coagulation factor IX: successful surgi…, American journal of hematol… (1992) | popPK | 9 | [10.1002/ajh.2830400310](https://doi.org/10.1002/ajh.2830400310) | [1609775](https://pubmed.ncbi.nlm.nih.gov/1609775) | The paper reports quantitative pharmacokinetic parameters (two-compartment model half-lives and recovery) for coagulation factor IX directly in the text. |
-| `Tegenge_2020.pdf` | Tegenge MA et al., Model-Based Evaluation of Linear Limite…, Journal of clinical pharmac… (2020) | popPK | 9 | [10.1002/jcph.1651](https://doi.org/10.1002/jcph.1651) | [32501555](https://pubmed.ncbi.nlm.nih.gov/32501555) | The paper describes a population PK model for coagulation factor IX, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only reports performance metrics and average doses. |
+| `Tegenge_2020.pdf` | Tegenge MA et al., Model-Based Evaluation of Linear Limite…, Journal of clinical pharmac… (2020) | popPK | 9 | [10.1002/jcph.1651](https://doi.org/10.1002/jcph.1651) | [32501555](https://pubmed.ncbi.nlm.nih.gov/32501555) | The paper describes a population PK model for coagulation factor IX, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only reports performance metrics (bias, RMSE) and dosing averages. |
 
-<sub>queue written 2026-09-06T05:58:46.156901+00:00</sub>
+<sub>queue written 2026-09-18T20:14:51.131962+00:00</sub>
 
 ## Screened and excluded
 
@@ -61,7 +63,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Brekkan_2016 | relevant | 10 | 0 | The paper describes a population PK model for factor IX, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
 | popPK | Jonsson_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and exposure-response of emicizumab, not coagulation_factor_ix, which is only mentioned as a binding target. |
-| popPK | Tegenge_2020 | relevant | 9 | 2 | The paper describes a population PK model for coagulation factor IX, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only reports performance metrics and average doses. |
+| popPK | Tegenge_2020 | relevant | 9 | 2 | The paper describes a population PK model for coagulation factor IX, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only reports performance metrics (bias, RMSE) and dosing averages. |
 | popPK | Zhang_2016 | relevant | 10 | 2 | The paper describes a population PK model for coagulation factor IX, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only contains qualitative summaries and simulation outcomes. |
 
 ---
