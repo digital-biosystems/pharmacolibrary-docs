@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# calpain-2 activation — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# calpain-2 activation — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Hu_2026`
 - **model family:** `emax`

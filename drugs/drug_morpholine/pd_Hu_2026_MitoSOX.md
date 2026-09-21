@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# mitochondrial ROS production — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# mitochondrial ROS production — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Hu_2026`
 - **model family:** `emax`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;phenazone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenazone_Doyle1981_non_human_primates_baboon_cynomolgus_mon&quot;,&quot;label&quot;:&quot;Doyle_1981_non-human primates (baboon, cynomolgus monkey, rhesus monkey)&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/Phenazone_Doyle1981_non_human_primates_baboon_cynomolgus_mon.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Phenazone_Eichelbaum1982_healthy_male_volunteers&quot;,&quot;label&quot;:&quot;Eichelbaum_1982_healthy male volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/Phenazone_Eichelbaum1982_healthy_male_volunteers.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenazone_Doyle1981_reference&quot;,&quot;label&quot;:&quot;Doyle_1981_reference&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/Phenazone_Doyle1981_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Phenazone_Eichelbaum1982_reference&quot;,&quot;label&quot;:&quot;Eichelbaum_1982_reference&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/Phenazone_Eichelbaum1982_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # phenazone
 
@@ -20,14 +20,14 @@ In combination with benzocaine in otic solutions, antipyrine is indicated for th
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-28 14:59 | 15:06 | 0/0/0 | 0/2/0 | 0/0/0 | 120,919/10,404 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/1 | 3/0 | 0 |
+| 2026-09-21 05:46 | 10:52 | 0/0/2 | 0/2/0 | 0/0/0 | 111,821/11,276 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/1 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Doyle_1981_non-human primates (baboon, cynomolgus monkey, rhesus monkey)](drugs/drug_phenazone/Phenazone_Doyle1981_non_human_primates_baboon_cynomolgus_mon.md) | Doyle E et al., Comparative pharmacokinetics of antipyr…, Toxicology (1981) | [10.1016/0300-483x(81)90097-4](https://doi.org/10.1016/0300-483x(81)90097-4) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Eichelbaum_1982_healthy male volunteers](drugs/drug_phenazone/Phenazone_Eichelbaum1982_healthy_male_volunteers.md) | Eichelbaum M et al., Pharmacokinetics and metabolism of anti…, Arzneimittel-Forschung (1982) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Doyle_1981_reference](drugs/drug_phenazone/Phenazone_Doyle1981_reference.md) | Doyle E et al., Comparative pharmacokinetics of antipyr…, Toxicology (1981) | [10.1016/0300-483x(81)90097-4](https://doi.org/10.1016/0300-483x(81)90097-4) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Eichelbaum_1982_reference](drugs/drug_phenazone/Phenazone_Eichelbaum1982_reference.md) | Eichelbaum M et al., Pharmacokinetics and metabolism of anti…, Arzneimittel-Forschung (1982) | — |
 
 ## Pharmacodynamics (PD)
 
@@ -41,16 +41,15 @@ In combination with benzocaine in otic solutions, antipyrine is indicated for th
 
 - **PubMed hits:** 230 matched, 72 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_10 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_9 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Greisen_1976.pdf` | Greisen G et al., Two compartment analysis of plasma elim…, Acta pharmacologica et toxi… (1976) | popPK | 10 | [10.1111/j.1600-0773.1976.tb03098.x](https://doi.org/10.1111/j.1600-0773.1976.tb03098.x) | [946370](https://pubmed.ncbi.nlm.nih.gov/946370) | The title confirms a two-compartment PK study of phenazone, but the provided evidence contains no numeric parameter values. |
 | `Doyle_1981.pdf` | Doyle E et al., Comparative pharmacokinetics of antipyr…, Toxicology (1981) | popPK | 9 | [10.1016/0300-483x(81)90097-4](https://doi.org/10.1016/0300-483x(81)90097-4) | [7268788](https://pubmed.ncbi.nlm.nih.gov/7268788) | The study reports quantitative PK parameters (Vd, t1/2) for phenazone in non-human primates, but specific numeric values for clearance are not explicitly listed in the text. |
 | `Eichelbaum_1982.pdf` | Eichelbaum M et al., Pharmacokinetics and metabolism of anti…, Arzneimittel-Forschung (1982) | popPK | 9 | not captured | [7201837](https://pubmed.ncbi.nlm.nih.gov/7201837) | The study reports quantitative PK parameters (half-life, bioavailability) for phenazone in humans, but specific values for clearance (CL) and volume (V) are not explicitly listed in the provided text. |
 | `Chernyak_2016.pdf` | Chernyak YI et al., Impact of dioxins on antipyrine metabol…, Toxicology letters (2016) | pgx | 8 | [10.1016/j.toxlet.2016.04.006](https://doi.org/10.1016/j.toxlet.2016.04.006) | [27067104](https://www.ncbi.nlm.nih.gov/pubmed/27067104) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
@@ -61,48 +60,49 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `von_1995.pdf` | von Rosensteil NA et al., Macrolide antibacterials. Drug interact…, Drug safety (1995) | pgx | 7 | [10.2165/00002018-199513020-00005](https://doi.org/10.2165/00002018-199513020-00005) | [7576262](https://www.ncbi.nlm.nih.gov/pubmed/7576262) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Chernyak_2020.pdf` | Chernyak YI et al., CYP3A Polymorphism and Chronic Mercury…, Bulletin of experimental bi… (2020) | pgx | 5 | [10.1007/s10517-020-04738-4](https://doi.org/10.1007/s10517-020-04738-4) | [32146629](https://www.ncbi.nlm.nih.gov/pubmed/32146629) | metadata signals extractable PGX data (CYP3A) |
 
-<sub>queue written 2026-08-28T14:53:06.481522+00:00</sub>
+<sub>queue written 2026-09-21T05:36:24.916748+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abotaleb_2025 | irrelevant | 0 | 0 | The paper describes the synthesis and in vitro pharmacological evaluation of a new compound (metamorphine) and does not report any pharmacokinetic parameters for phenazone. |
+| popPK | Abotaleb_2025 | irrelevant | 0 | 0 | The paper describes the synthesis and in-vitro pharmacological evaluation of a morphine-metamizole adduct, containing no pharmacokinetic parameters for phenazone. |
 | PD | Baggot_1992 | not_relevant | 1 | 0 | The text is a general review of veterinary pharmacokinetics that mentions phenazone only to compare intrinsic hepatic clearance rates between species, without providing any specific dose-response data, concentration-effect curves, or numeric PD parameters. |
 | PGx | Brosen_1990 | not_relevant | 0 | 0 | The paper discusses phenazone only as an inducer of P450 enzymes, not as the substrate whose PK/PD is being analyzed for genetic variation. |
-| PD | Brune_2001 | not_relevant | 1 | 0 | The text is a qualitative review discussing the pharmacological properties of phenazone and COX-2 inhibitors without providing any numeric PD parameters or concentration-effect data. |
+| PD | Brune_2001 | not_relevant | 1 | 0 | The text is a qualitative review discussing the pharmacological properties of phenazone and COX-2 inhibitors without providing any numeric PD parameters or exposure-response data. |
 | PGx | Chernyak_2016 | not_relevant | 2 | 5 | The paper reports the impact of environmental dioxin exposure and smoking on antipyrine metabolism, not a pharmacogenomic effect of a specific gene variant on a PK/PD parameter. |
 | PGx | Chernyak_2020 | not_relevant | 5 | 5 | The study examines the association between CYP3A genotypes and 4-hydroxyantipyrine excretion in the context of mercury intoxication, rather than reporting a direct pharmacogenomic effect on phenazone PK/PD parameters. |
+| PGx | Chernyak_2020_2 | not_relevant | 0 | 0 | The study investigates the effect of AhRR polymorphism on CYP1A2 induction using antipyrine as a probe, not phenazone. |
 | PD | Crooks_1976 | not_relevant | 0 | 0 | The text is a general review of pharmacokinetics in the elderly and does not contain any specific data, analysis, or numeric parameters for phenazone. |
 | popPK | Cuny_1979 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of salicylates (acetylsalicylic acid), not phenazone. |
-| PD | Davey_1988 | not_relevant | 0 | 0 | The paper is a review of quinolone drug interactions and does not contain any data, analysis, or numeric parameters for phenazone. |
+| PD | Davey_1988 | not_relevant | 0 | 0 | The paper is a review of quinolone drug interactions and does not contain any data, analysis, or parameters for phenazone. |
 | PGx | DeVane_2001 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetics of quetiapine, not phenazone, and does not report pharmacogenomic effects. |
 | PGx | Eichelbaum_1985 | not_relevant | 0 | 0 | The paper studies carbamazepine metabolism and explicitly states that its epoxidation was not correlated with the metabolism of phenazone (antipyrine). |
 | PGx | Eichelbaum_1986 | not_relevant | 0 | 0 | The paper discusses the pharmacogenetics of sparteine metabolism, not phenazone. |
 | popPK | Elsheikh_1991 | irrelevant | 0 | 0 | The study investigates antipyrine and sulphadimidine, not phenazone. |
 | PD | Galtier_1996 | not_relevant | 0 | 0 | The paper focuses on hepatic drug metabolism and pharmacokinetics in sheep, does not mention phenazone, and provides no numeric pharmacodynamic parameters or exposure-response relationships. |
 | PD | Gomha_2015 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for DPP-IV inhibition and qualitative in vivo hypoglycemic effects, but does not provide a pharmacokinetic-pharmacodynamic (PK/PD) model, exposure-response analysis, or numeric PD parameters (e.g., Emax, EC50, slope) linking drug concentration to effect. |
-| popPK | Greisen_1976 | relevant | 10 | 0 | The title confirms a two-compartment PK study of phenazone, but the provided evidence contains no numeric parameter values. |
-| PD | Gwilt_1991 | not_relevant | 1 | 0 | The text is a review that qualitatively mentions altered dose-response in diabetes but provides no numeric PD parameters or extractable concentration-effect data for phenazone. |
+| popPK | Greisen_1976 | irrelevant | 0 | 0 | no_text gate: only 114 chars of text extracted (&lt; 400) |
+| PD | Gwilt_1991 | not_relevant | 1 | 0 | The text is a review that qualitatively mentions altered dose-response in diabetes and a 20% reduction in phenazone volume of distribution, but it does not provide any numeric PD parameters (Emax, EC50, etc.) or concentration-effect curves. |
 | PGx | Huber_1996 | not_relevant | 0 | 0 | The paper describes the pharmacokinetics of pantoprazole, not phenazone, and does not report pharmacogenomic effects. |
 | PGx | Huber_1996_2 | not_relevant | 0 | 0 | The paper describes the pharmacokinetics of pantoprazole, not phenazone, and does not report pharmacogenomic effects. |
 | PGx | Jürgens_2002 | not_relevant | 0 | 0 | The paper investigates the effect of acute hypoxia on CYP enzyme activity using probe drugs (sparteine, cortisol, caffeine, mephenytoin, antipyrine) and does not mention phenazone or any genetic variants. |
-| PGx | Kalow_1982 | not_relevant | 0 | 0 | The paper discusses antipyrine (phenazone) only as a general example of a probe drug in the context of ethnic differences and does not report specific pharmacogenomic effects or quantitative PK/PD data for it. |
+| PGx | Kalow_1982 | not_relevant | 0 | 0 | The paper discusses ethnic differences in drug metabolism using antipyrine and debrisoquine as examples, but does not report any pharmacogenomic effects on phenazone. |
 | PGx | Kearns_1993 | not_relevant | 0 | 0 | The paper reviews drug metabolism in cystic fibrosis but does not mention phenazone or report pharmacogenomic effects on its PK/PD parameters. |
 | PGx | Klotz_2007 | not_relevant | 0 | 0 | The paper reviews antiarrhythmics and hepatic impairment, but does not mention phenazone or specific gene variants affecting its PK/PD. |
-| PGx | Landes_1995 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of lansoprazole and only mentions phenazone as a probe drug in a general statement about minimal interaction risk, without reporting any pharmacogenomic effects on phenazone. |
+| PGx | Landes_1995 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of lansoprazole and only mentions phenazone as a probe drug in a general interaction study without reporting any pharmacogenomic effects on phenazone. |
 | popPK | Leece_1986 | irrelevant | 0 | 0 | The paper investigates the effects of terphenyls on rat hepatic enzymes and does not report pharmacokinetic parameters for phenazone. |
 | PD | Leece_1986 | not_relevant | 0 | 0 | The paper studies the effects of terphenyls and polychlorinated terphenyls on rat hepatic enzymes, not phenazone, and does not report a pharmacodynamic exposure-response relationship for phenazone. |
-| PD | Levy_1995 | not_relevant | 0 | 0 | The text is a pharmacokinetic review of dipyrone (phenazone) that reports PK parameters (bioavailability, half-life, clearance) but contains no pharmacodynamic data, exposure-response analysis, or numeric PD parameters. |
+| PD | Levy_1995 | not_relevant | 0 | 0 | The text is a pharmacokinetic review of dipyrone (metabolites, clearance, bioavailability) and explicitly states it does not affect the pharmacodynamic response to other drugs, without providing any concentration-effect or dose-response data for dipyrone itself. |
 | popPK | Levy_2010 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of 4-methyl-amino-antipyrine (MAA), the active metabolite of dipyrone, not phenazone. |
-| popPK | Lockwood_1988 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of antipyrine (phenazone) in rats, not phenazone (aminopyrine), and does not report parameters for the target drug. |
-| PGx | Marques_2002 | not_relevant | 0 | 0 | The study investigates the CYP isoforms involved in albendazole metabolism using antipyrine as a marker, but does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
-| PGx | Matzke_2000 | not_relevant | 0 | 0 | The study investigates the effect of diabetes mellitus (a disease state) on antipyrine metabolism, not the effect of a specific gene variant or genotype. |
+| popPK | Lockwood_1988 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of antipyrine in rats, not phenazone. |
+| PGx | Marques_2002 | not_relevant | 0 | 0 | The study investigates the metabolic pathway of albendazole using antipyrine as a marker in patients with neurocysticercosis, but it does not report any pharmacogenomic effects (gene variants) on the PK or PD of phenazone. |
+| PGx | Matzke_2000 | not_relevant | 0 | 0 | The study investigates the effect of diabetes mellitus (a disease state) on antipyrine metabolism, not the effect of a gene variant or genotype. |
 | PGx | Murdock_1975 | not_relevant | 0 | 0 | The paper studies antipyrine (phenazone) pharmacokinetics in infants but does not report any pharmacogenomic effects or gene variant associations. |
 | popPK | Nakamura_2024 | irrelevant | 0 | 0 | The study focuses on antipyrine, metoprolol, and atenolol, not phenazone. |
 | popPK | Nakayama_1999 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of antipyrine, not phenazone. |
 | PD | Nishio_2005 | not_relevant | 2 | 1 | The paper analyzes the correlation between a CYP450 activity marker (antipyrine clearance) and toxicity, but does not report a pharmacodynamic model or numeric PD parameters (e.g., Emax, EC50) for phenazone or the chemotherapy agents. |
-| PD | Park_1990 | not_relevant | 1 | 0 | The text is a review discussing methods for assessing enzyme induction/inhibition and mentions phenazone (antipyrine) only as a probe drug, without reporting any specific pharmacokinetic or pharmacodynamic data or numeric parameters. |
+| PD | Park_1990 | not_relevant | 1 | 0 | The text is a review discussing methods for assessing enzyme induction/inhibition and mentions the need for PK/PD studies, but it does not report any specific data, analysis, or numeric PD parameters for phenazone. |
 | PD | Philip_2024 | not_relevant | 0 | 0 | The paper focuses on molecular docking and simulation of pyrazolone ligands and reports an IC50 for a specific compound (APAU) against MCF-7 cells, but does not report a pharmacodynamic (exposure-response or dose-response) relationship for phenazone. |
 | PGx | Pienimäki_1997 | not_relevant | 0 | 0 | The paper studies oxcarbazepine and carbamazepine, not phenazone, and does not report pharmacogenomic effects. |
 | popPK | Preiss_1985 | irrelevant | 0 | 0 | The study focuses on adriamycin and antipyrine (phenazone is not the subject drug, and antipyrine is a different compound), so it does not report PK parameters for phenazone. |
@@ -112,10 +112,10 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Steinijans_1996_2 | not_relevant | 0 | 0 | The paper is a review of pantoprazole drug interactions and does not report any pharmacodynamic or exposure-response data for phenazone. |
 | popPK | Tanaka_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ketoprofen, not phenazone. |
 | PGx | Ueyama_2007 | not_relevant | 0 | 0 | The paper investigates the effect of diabetes on diazinon toxicity and antipyrine clearance, not the effect of a gene variant on phenazone. |
-| PD | Venkataramanan_1989 | not_relevant | 1 | 0 | The text is a review that mentions phenazone only as a probe for oxidative metabolism (PK) and states kinetics are normal, without providing any numeric PD parameters or concentration-effect relationships. |
+| PD | Venkataramanan_1989 | not_relevant | 1 | 0 | The text is a review that mentions phenazone (antipyrine) only as a probe for oxidative metabolism, stating kinetics are normal, but provides no numeric PD parameters or exposure-response data. |
 | PD | Vesell_1983 | not_relevant | 0 | 0 | The paper is a review of methods for assessing pharmacokinetic variability using antipyrine and does not report any pharmacodynamic or exposure-response data for phenazone. |
-| PGx | Vetticaden_1988 | not_relevant | 0 | 0 | The paper is a general review of pharmacogenetics and does not report specific data or effects for phenazone. |
-| popPK | unknown_1991 | irrelevant | 0 | 0 | The provided evidence is only a conference header with no study data, parameters, or mention of phenazone. |
+| PGx | Vetticaden_1988 | not_relevant | 0 | 0 | The text is a general review of pharmacogenetics and does not report specific data or effects for phenazone. |
+| popPK | unknown_1991 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
 | PD | unknown_1991 | not_relevant | 0 | 0 | The provided text is only a header for a conference abstract collection and contains no specific data, results, or PD parameters for phenazone. |
 | PGx | von_1995 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving macrolides and mentions phenazone only as a rare interaction partner, without reporting any pharmacogenomic effects or specific PK/PD parameter changes. |
 

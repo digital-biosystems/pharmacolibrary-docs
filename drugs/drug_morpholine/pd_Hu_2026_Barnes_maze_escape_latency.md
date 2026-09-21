@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cognitive decline — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# cognitive decline — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Hu_2026`
 - **model family:** `emax`

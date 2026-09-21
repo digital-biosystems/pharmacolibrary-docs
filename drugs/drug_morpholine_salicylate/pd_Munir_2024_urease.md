@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# urease activity — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# urease activity — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Munir_2024`
 - **model family:** `unknown`

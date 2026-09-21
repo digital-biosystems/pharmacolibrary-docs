@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;nefopam&quot;,&quot;href&quot;:&quot;drugs/drug_nefopam/&quot;},{&quot;label&quot;:&quot;Podranski_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nefopam_Podranski2012_reference&quot;,&quot;label&quot;:&quot;Podranski_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nefopam/Nefopam_Podranski2012_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nefopam_Djerada2014_reference&quot;,&quot;label&quot;:&quot;Djerada_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nefopam/Nefopam_Djerada2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nefopam_Mimoz2010_reference&quot;,&quot;label&quot;:&quot;Mimoz_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nefopam/Nefopam_Mimoz2010_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nefopam_Podranski2012_reference&quot;,&quot;label&quot;:&quot;Podranski_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nefopam/Nefopam_Podranski2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nefopam — `Nefopam_Podranski2012_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
 ### Reviewer guidance
 
@@ -13,12 +13,12 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
+**What is wrong:** a compartment is unreachable, or a metabolite is unlinked.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
-2. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-3. If the paper never reports it, the record cannot become a model.
+2. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
+3. Parent/metabolite records commonly miss the formation link.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -27,15 +27,17 @@ Podranski T; Bouillon TW; Riva T; Kurz AM; Oehmke MJ et al. (2012). British jour
   ·  DOI: [10.1093/bja/aer517](https://doi.org/10.1093/bja/aer517)
 
 ## Model component
-<dbs-pgx drug="nefopam" model-id="Nefopam_Podranski2012_reference" status="model_quarantined" stale="false" population="healthy adults" measured-compound="nefopam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="nefopam" model-id="Nefopam_Podranski2012_reference" status="rejected" stale="false" population="healthy adults" measured-compound="nefopam" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
+| V 1 | `Q63` · V1 | 24.3 | litre | 0.024300000000000002 | L | not captured | space_fold (0.95) | Podranski_2012:results_prose | — | not captured |
+| V 2 | `Q64` · V2 | 183.3 | litre | 0.18330000000000002 | L | not captured | space_fold (0.95) | Podranski_2012:results_prose | — | not captured |
 | elimination clearance [Cl el (SE %)] | `Q22` · CL | 52.9 | litre h 21 | not captured | litre h 21 | not captured | boundary (0.8) | Podranski_2012:discussion_prose | — | not captured |
 
 <details class="legend">
@@ -56,6 +58,8 @@ Podranski T; Bouillon TW; Riva T; Kurz AM; Oehmke MJ et al. (2012). British jour
 - dropped unlinked row (NIL): 'POP (B) Individual data' — extend the ontology if this is a real PK parameter (source ['tab_0:row3:col1', 'tab_0:row3:col2', 'tab_0:row3:col3'])
 - dropped unlinked row (NIL): 'POP' — extend the ontology if this is a real PK parameter (source ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col3', 'tab_0:row4:col6', 'tab_0:row6:col1', 'tab_0:row6:col2', 'tab_0:row6:col4', 'tab_0:row6:col6'])
 - table mostly unlinked (3/4 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- salvaged Q63 ('V 1'=24.3) from results prose — parameter table was unreadable
+- salvaged Q64 ('V 2'=183.3) from results prose — parameter table was unreadable
 - salvaged Q22 ('elimination clearance [Cl el (SE %)]'=52.9) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nefopam
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
@@ -77,21 +81,13 @@ Podranski T; Bouillon TW; Riva T; Kurz AM; Oehmke MJ et al. (2012). British jour
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 52.9 | not captured | not captured | ['Podranski_2012:discussion_prose'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_beta | reference | skipped | 5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 4.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q63 | pass | volume within physiological range | 24.3 L | not captured | not captured | ['Podranski_2012:results_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 183 L | not captured | not captured | ['Podranski_2012:results_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -101,8 +97,6 @@ Podranski T; Bouillon TW; Riva T; Kurz AM; Oehmke MJ et al. (2012). British jour
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_nefopam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Podranski_2012` / `Podranski_2012::reference`)
-- model: `../../../knowledgebase/drugs/drug_nefopam/models/modelica/_needs_review/Nefopam_Podranski2012_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_nefopam/models/modelica/_needs_review/Nefopam_Podranski2012_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

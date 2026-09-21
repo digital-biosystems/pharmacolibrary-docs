@@ -3511,9 +3511,9 @@
       - metamizole sodium combinations excl psycholeptics <sub>(0/0/0)</sub>
       - metamizole sodium combinations with psycholeptics <sub>(0/0/0)</sub>
       - [methoxyflurane <sub>(0/2/0)</sub>](drugs/drug_methoxyflurane/)
-      - [mirogabalin <sub>(0/0/0)</sub>](drugs/drug_mirogabalin/)
-      - [Morpholine <sub>(0/0/0)</sub>](drugs/drug_morpholine/)
-      - [morpholine salicylate <sub>(0/0/0)</sub>](drugs/drug_morpholine_salicylate/)
+      - [mirogabalin <sub>(0/5/0)</sub>](drugs/drug_mirogabalin/)
+      - [Morpholine <sub>(0/44/0)</sub>](drugs/drug_morpholine/)
+      - [morpholine salicylate <sub>(0/36/0)</sub>](drugs/drug_morpholine_salicylate/)
       - [nefopam <sub>(1/0/0)</sub>](drugs/drug_nefopam/)
       - [paracetamol <sub>(19/5/0)</sub>](drugs/drug_paracetamol/)
       - paracetamol combinations excl psycholeptics <sub>(0/0/0)</sub>
@@ -3522,9 +3522,9 @@
       - phenacetin combinations excl psycholeptics <sub>(0/0/0)</sub>
       - phenacetin combinations with psycholeptics <sub>(0/0/0)</sub>
       - [phenazone <sub>(0/0/0)</sub>](drugs/drug_phenazone/)
-      - phenazone combinations excl psycholeptics <sub>(0/0/0)</sub>
+      - [phenazone, combinations excl. psycholeptics <sub>(0/0/0)</sub>](drugs/drug_phenazone_combinations_excl_psycholeptics/)
       - phenazone combinations with psycholeptics <sub>(0/0/0)</sub>
-      - potassium salicylate <sub>(0/0/0)</sub>
+      - [potassium salicylate <sub>(0/7/0)</sub>](drugs/drug_potassium_salicylate/)
       - [pregabalin <sub>(3/3/1)</sub>](drugs/drug_pregabalin/)
       - [propacetamol <sub>(0/0/0)</sub>](drugs/drug_propacetamol/)
       - propyphenazone <sub>(0/0/0)</sub>

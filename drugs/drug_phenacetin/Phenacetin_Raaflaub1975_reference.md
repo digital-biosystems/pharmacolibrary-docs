@@ -1,48 +1,70 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;phenazone&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/&quot;},{&quot;label&quot;:&quot;Doyle_1981 \u00b7 non-human primates (baboon, cynomolgus monkey, rhesus monkey)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenazone_Doyle1981_non_human_primates_baboon_cynomolgus_mon&quot;,&quot;label&quot;:&quot;Doyle_1981_non-human primates (baboon, cynomolgus monkey, rhesus monkey)&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/Phenazone_Doyle1981_non_human_primates_baboon_cynomolgus_mon.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Phenazone_Eichelbaum1982_healthy_male_volunteers&quot;,&quot;label&quot;:&quot;Eichelbaum_1982_healthy male volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/Phenazone_Eichelbaum1982_healthy_male_volunteers.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;phenacetin&quot;,&quot;href&quot;:&quot;drugs/drug_phenacetin/&quot;},{&quot;label&quot;:&quot;Raaflaub_1975 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenacetin_Raaflaub1975_reference&quot;,&quot;label&quot;:&quot;Raaflaub_1975_reference&quot;,&quot;href&quot;:&quot;drugs/drug_phenacetin/Phenacetin_Raaflaub1975_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# phenazone — `Phenazone_Doyle1981_non_human_primates_baboon_cynomolgus_mon`
+# phenacetin — `Phenacetin_Raaflaub1975_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">not modelled</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
 ### Reviewer guidance
 
-**What is wrong:** no model exists yet, so there is nothing to judge
+> ⚙️ **Pipeline limitation — fulltext.** the record was built from the abstract alone, so reported summary statistics stood in for a fitted model<br><sub>evidence: `provenance.source=abstract-only`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** every check the reviewer could run passed.
 
 **Steps:**
-1. No curator action. Run the engineer for this drug.
+1. Not a curation fix — fulltext limitation.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
-Doyle E; Chasseaud LF et al. (1981). Toxicology 19
-  ·  DOI: [10.1016/0300-483x(81)90097-4](https://doi.org/10.1016/0300-483x(81)90097-4)
+Raaflaub J; Dubach UC et al. (1975). European journal of clinical pharmacology 8
+  ·  DOI: [10.1007/BF00567125](https://doi.org/10.1007/BF00567125)
 
 ## Model component
-<dbs-pgx drug="phenazone" model-id="Phenazone_Doyle1981_non_human_primates_baboon_cynomolgus_mon" status="not_modelled" stale="false" population="non-human primates (baboon, cynomolgus monkey, rhesus monkey)" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<dbs-pgx drug="phenacetin" model-id="Phenacetin_Raaflaub1975_reference" status="rejected" stale="false" population="healthy adults" measured-compound="phenacetin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Parameterization:** not captured.
+**Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not_modelled`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 _No resolved parameters._
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| The elimination half-life (t1/2)beta | Q60 | not captured | llm_corrected |
+| The volume of distribution (Vd)beta | Q61 | not captured | llm_confirmed |
+
 ## Departures & gaps
 
-_None recorded._
+**Interpretation flags:**
+- unit_dimension_unknown: '1 per kg body weight' (V)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=phenacetin
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
+- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+
+**Extraction notes:**
+- no GROBID TEI available — transcribed from abstract in Raaflaub_1975_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Reviewer per-scenario checks:**
+**Scholar closed-form checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
+| check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no emitted model to inspect (engineer build absent) |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Raaflaub_1975:abstract'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -51,7 +73,7 @@ _None recorded._
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_phenazone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Doyle_1981` / `Doyle_1981::non-human primates (baboon, cynomolgus monkey, rhesus monkey)`)
+- scholar stages: `../../../knowledgebase/drugs/drug_phenacetin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Raaflaub_1975` / `Raaflaub_1975::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

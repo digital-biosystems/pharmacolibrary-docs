@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenazone_Doyle1981_non_human_primates_baboon_cynomolgus_mon&quot;,&quot;label&quot;:&quot;Doyle_1981_non-human primates (baboon, cynomolgus monkey, rhesus monkey)&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/Phenazone_Doyle1981_non_human_primates_baboon_cynomolgus_mon.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Phenazone_Eichelbaum1982_healthy_male_volunteers&quot;,&quot;label&quot;:&quot;Eichelbaum_1982_healthy male volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/Phenazone_Eichelbaum1982_healthy_male_volunteers.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenazone_Doyle1981_reference&quot;,&quot;label&quot;:&quot;Doyle_1981_reference&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/Phenazone_Doyle1981_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Phenazone_Eichelbaum1982_reference&quot;,&quot;label&quot;:&quot;Eichelbaum_1982_reference&quot;,&quot;href&quot;:&quot;drugs/drug_phenazone/Phenazone_Eichelbaum1982_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ductus arteriosus constriction — PD  <span class="pk-badge pk-badge--red">rejected</span>
@@ -19,9 +19,6 @@ Tanaka S; Kanagawa T; Momma K; Hori S; Satoh H; Nagamatsu T; et al. et al. (2017
 | ka | `Q49` · not captured | -1 | not captured | not captured | exact (not captured) | tab_0:row2:col3 |
 | ka | `Q49` · not captured | 5 | not captured | not captured | exact (not captured) | tab_0:row2:col6 |
 | ka | `Q49` · not captured | 6 | not captured | not captured | exact (not captured) | tab_0:row2:col9 |
-| kmf | `Q1` · not captured | -1 | not captured | not captured | llm (not captured) | tab_0:row3:col3 |
-| kmf | `Q1` · not captured | 0.0652 | not captured | not captured | llm (not captured) | tab_0:row3:col5 |
-| kmf | `Q1` · not captured | 0.0429 | not captured | not captured | llm (not captured) | tab_0:row3:col7 |
 | kfm | `Q305` · not captured | -1 | not captured | not captured | exact (not captured) | tab_0:row4:col3 |
 | kfm | `Q305` · not captured | 0.749 | not captured | not captured | exact (not captured) | tab_0:row4:col5 |
 | kfm | `Q305` · not captured | 0.437 | not captured | not captured | exact (not captured) | tab_0:row4:col7 |
@@ -36,7 +33,7 @@ Tanaka S; Kanagawa T; Momma K; Hori S; Satoh H; Nagamatsu T; et al. et al. (2017
 | ke0 | `Q326` · not captured | 0.3154 | not captured | not captured | exact (not captured) | tab_0:row9:col8 |
 | Emax | `Q320` · not captured | 0.898 | B | not captured | exact (not captured) | tab_0:row10:col5 |
 | Emax | `Q320` · not captured | 0.289 | B | not captured | exact (not captured) | tab_0:row10:col9 |
-| lnEC 50,u | `Q321` · not captured | 5.32 | B | not captured | llm (not captured) | tab_0:row12:col8 |
+| lnEC 50,u | `Q321` · not captured | 5.32 | u | not captured | llm (not captured) | tab_0:row12:col8 |
 | (EC 50,u ) | `Q100` · not captured | -1 | EC 50,u | not captured | nil (not captured) | tab_0:row13:col2 |
 
 <details class="legend">
