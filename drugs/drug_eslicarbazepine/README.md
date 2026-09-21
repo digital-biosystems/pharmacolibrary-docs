@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;eslicarbazepine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eslicarbazepine_Sunkaraneni2018v2_final&quot;,&quot;label&quot;:&quot;Sunkaraneni_2018_2_final&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eslicarbazepine_Sunkaraneni2018v2_final&quot;,&quot;label&quot;:&quot;Sunkaraneni_2018_2_final&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit&quot;,&quot;label&quot;:&quot;Sunkaraneni_2018_2_interindividual_variability_residual_variabilitya&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit&quot;,&quot;label&quot;:&quot;Sunkaraneni_2018_2_interindividual_variability_residual_variabilitya&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Eslicarbazepine_Falco2012_reference&quot;,&quot;label&quot;:&quot;Falc\u00e3o_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/Eslicarbazepine_Falco2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Eslicarbazepine_Sunkaraneni2018v2_reference&quot;,&quot;label&quot;:&quot;Sunkaraneni_2018_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # eslicarbazepine
 
@@ -16,22 +16,20 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 00:32 | 2:27 | 2/0/0 | 0/0/0 | 0/0/0 | 45,286/4,501 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-09-21 17:34 | 1:49 | 1/0/1 | 0/0/0 | 0/0/0 | 45,585/3,292 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sunkaraneni_2018_2_final](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_final.md) | Sunkaraneni (2018) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sunkaraneni_2018_2_final](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_final.md) | Sunkaraneni (2018) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sunkaraneni_2018_2_interindividual_variability_residual_variabilitya](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit.md) | Sunkaraneni (2018) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sunkaraneni_2018_2_interindividual_variability_residual_variabilitya](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit.md) | Sunkaraneni (2018) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Falcão_2012_reference](drugs/drug_eslicarbazepine/Eslicarbazepine_Falco2012_reference.md) | Falcão A et al., Pharmacokinetics, drug interactions and…, CNS drugs (2012) | [10.2165/11596290-000000000-00000](https://doi.org/10.2165/11596290-000000000-00000) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sunkaraneni_2018_2_reference](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference.md) | Sunkaraneni (2018) | — |
 
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs_review 4  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -41,18 +39,18 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Falcão_2012.pdf` | Falcão A et al., Pharmacokinetics, drug interactions and…, CNS drugs (2012) | popPK | 10 | [10.2165/11596290-000000000-00000](https://doi.org/10.2165/11596290-000000000-00000) | [22171585](https://pubmed.ncbi.nlm.nih.gov/22171585) | The paper is a population PK study for eslicarbazepine and explicitly provides the quantitative clearance equation and base value (2.36 L/h) in the text. |
-| `Gidal_2018.pdf` | Gidal BE et al., Exposure-safety and efficacy response r…, Acta neurologica Scandinavi… (2018) | popPK | 10 | [10.1111/ane.12950](https://doi.org/10.1111/ane.12950) | [29732549](https://pubmed.ncbi.nlm.nih.gov/29732549) | The paper describes a population PK model for eslicarbazepine, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| `Gidal_2018.pdf` | Gidal BE et al., Exposure-safety and efficacy response r…, Acta neurologica Scandinavi… (2018) | popPK | 10 | [10.1111/ane.12950](https://doi.org/10.1111/ane.12950) | [29732549](https://pubmed.ncbi.nlm.nih.gov/29732549) | The paper describes a population PK study for eslicarbazepine, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
 | `Sunkaraneni_2018.pdf` | Sunkaraneni S et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2018) | popPK | 10 | [10.1002/jcph.1086](https://doi.org/10.1002/jcph.1086) | [29528499](https://pubmed.ncbi.nlm.nih.gov/29528499) | The paper describes a population PK model for eslicarbazepine, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
 | `Sunkaraneni_2018_3.pdf` | Sunkaraneni S et al., Population Pharmacokinetic Evaluation a…, Clinical pharmacology in dr… (2018) | popPK | 9 | [10.1002/cpdd.382](https://doi.org/10.1002/cpdd.382) | [28881418](https://pubmed.ncbi.nlm.nih.gov/28881418) | The paper describes a population PK model for eslicarbazepine, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 
-<sub>queue written 2026-09-10T00:30:31.581081+00:00</sub>
+<sub>queue written 2026-09-21T17:33:15.693820+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Gidal_2018 | relevant | 10 | 0 | The paper describes a population PK model for eslicarbazepine, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
-| popPK | Liu_2026 | irrelevant | 2 | 0 | The paper is a simulation study using existing population PK models for 14 drugs, and the specific numeric parameter values for eslicarbazepine are not reported in the provided evidence. |
+| popPK | Gidal_2018 | relevant | 10 | 0 | The paper describes a population PK study for eslicarbazepine, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Liu_2026 | irrelevant | 2 | 0 | The paper is a simulation study using existing population PK models for 14 drugs, including eslicarbazepine, but does not report original quantitative PK parameter values (CL, V, etc.) for eslicarbazepine in the provided evidence. |
 | popPK | Sunkaraneni_2017 | irrelevant | 2 | 0 | The paper is a modeling and simulation study using a previously developed PK model, and it does not report original quantitative PK parameter values (CL, V, etc.) for eslicarbazepine in the provided evidence. |
 | popPK | Sunkaraneni_2018 | relevant | 10 | 0 | The paper describes a population PK model for eslicarbazepine, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
 | popPK | Sunkaraneni_2018_3 | relevant | 9 | 0 | The paper describes a population PK model for eslicarbazepine, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |

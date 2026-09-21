@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;felbamate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Felbamate_Graves1989_patients_with_epilepsy&quot;,&quot;label&quot;:&quot;Graves_1989_patients with epilepsy&quot;,&quot;href&quot;:&quot;drugs/drug_felbamate/Felbamate_Graves1989_patients_with_epilepsy.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Felbamate_Kelley1997_children&quot;,&quot;label&quot;:&quot;Kelley_1997_children&quot;,&quot;href&quot;:&quot;drugs/drug_felbamate/Felbamate_Kelley1997_children.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Felbamate_Graves1989_reference&quot;,&quot;label&quot;:&quot;Graves_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_felbamate/Felbamate_Graves1989_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Felbamate_Kelley1997_reference&quot;,&quot;label&quot;:&quot;Kelley_1997_reference&quot;,&quot;href&quot;:&quot;drugs/drug_felbamate/Felbamate_Kelley1997_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # felbamate
 
@@ -18,20 +18,20 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 00:54 | 6:58 | 0/0/0 | 0/0/0 | 0/0/0 | 26,263/2,579 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-09-21 17:46 | 2:06 | 0/1/1 | 0/0/0 | 0/0/0 | 23,467/2,592 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Graves_1989_patients with epilepsy](drugs/drug_felbamate/Felbamate_Graves1989_patients_with_epilepsy.md) | Graves NM et al., Pharmacokinetics of felbamate, a novel…, Pharmacotherapy (1989) | [10.1002/j.1875-9114.1989.tb04151.x](https://doi.org/10.1002/j.1875-9114.1989.tb04151.x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kelley_1997_children](drugs/drug_felbamate/Felbamate_Kelley1997_children.md) | Kelley MT et al., Population pharmacokinetics of felbamat…, Therapeutic drug monitoring (1997) | [10.1097/00007691-199702000-00005](https://doi.org/10.1097/00007691-199702000-00005) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Graves_1989_reference](drugs/drug_felbamate/Felbamate_Graves1989_reference.md) | Graves NM et al., Pharmacokinetics of felbamate, a novel…, Pharmacotherapy (1989) | [10.1002/j.1875-9114.1989.tb04151.x](https://doi.org/10.1002/j.1875-9114.1989.tb04151.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kelley_1997_reference](drugs/drug_felbamate/Felbamate_Kelley1997_reference.md) | Kelley MT et al., Population pharmacokinetics of felbamat…, Therapeutic drug monitoring (1997) | [10.1097/00007691-199702000-00005](https://doi.org/10.1097/00007691-199702000-00005) |
 
 ## Coverage
 
 - **PubMed hits:** 49 matched, 49 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -55,43 +55,43 @@ _14 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Turnheim_2004.pdf` | Turnheim K, [Drug interactions with antiepileptic a…, Wiener klinische Wochenschr… (2004) | pgx | 7 | [10.1007/BF03040747](https://doi.org/10.1007/BF03040747) | [15038401](https://www.ncbi.nlm.nih.gov/pubmed/15038401) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Walzer_2012.pdf` | Walzer M et al., Pharmacokinetic drug interactions betwe…, Pharmacotherapy (2012) | pgx | 7 | [10.1002/j.1875-9114.2012.01028.x](https://doi.org/10.1002/j.1875-9114.2012.01028.x) | [22422635](https://www.ncbi.nlm.nih.gov/pubmed/22422635) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-10T00:52:26.287713+00:00</sub>
+<sub>queue written 2026-09-21T17:44:43.187459+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Anderson_1998 | not_relevant | 0 | 0 | The paper discusses general drug-drug interactions and enzyme induction/inhibition mechanisms for antiepileptic drugs, but does not report any pharmacogenomic effects (gene variants) on felbamate's PK or PD parameters. |
-| PGx | Aylón_2026 | not_relevant | 0 | 0 | The paper is a review that explicitly states there is insufficient information to determine if felbamate is a P-gp substrate, and it does not report any specific pharmacogenomic effect on felbamate's PK or PD parameters. |
+| PGx | Anderson_1998 | not_relevant | 0 | 0 | The paper discusses general drug-drug interactions and enzyme induction/inhibition by AEDs, but does not report any pharmacogenomic effects (gene variants) on felbamate PK/PD. |
+| PGx | Aylón_2026 | not_relevant | 0 | 0 | The paper is a review that explicitly states there is not enough information to determine if Felbamate is a P-gp substrate, and it does not report specific pharmacogenomic effects on Felbamate PK/PD. |
 | popPK | Banfield_1996 | relevant | 10 | 2 | The paper is a population PK study of felbamate, but the evidence only provides relative changes (e.g., 40% higher, 32-38% increase) rather than absolute numeric parameter values (CL, V, etc.). |
-| PGx | Benedetti_2000 | not_relevant | 0 | 0 | The paper reviews enzyme induction/inhibition properties of felbamate on other drugs, but does not report pharmacogenomic effects (gene variants) on felbamate's PK/PD. |
-| PGx | Bergin_2002 | not_relevant | 0 | 0 | The text is a general review of antiepileptic drugs and mentions pharmacogenetics as a future challenge, but it does not report any specific gene variant effects on felbamate PK or PD parameters. |
+| PGx | Benedetti_2000 | not_relevant | 0 | 0 | The paper reviews enzyme induction and inhibition properties of felbamate on other drugs, but does not report pharmacogenomic effects (gene variants) on felbamate's own PK or PD parameters. |
+| PGx | Bergin_2002 | not_relevant | 0 | 0 | The text is a general review of antiepileptic drugs and mentions pharmacogenetics only as a future hope, without reporting any specific gene variant effects on felbamate PK or PD. |
 | PGx | Burns_2016 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of clobazam, not felbamate, and does not report pharmacogenomic effects on felbamate parameters. |
-| popPK | Citraro_2016 | irrelevant | 0 | 0 | The study is a pharmacodynamic interaction study in mice where felbamate is a co-administered agent, and no quantitative PK parameters (CL, V, etc.) for felbamate are reported. |
-| PD | Citraro_2016 | not_relevant | 1 | 0 | The paper reports qualitative potentiation of felbamate's anticonvulsant effect by cannabinoids but does not provide numeric PD parameters or concentration-effect curves for felbamate. |
+| popPK | Citraro_2016 | irrelevant | 0 | 0 | The study is a pharmacodynamic interaction study in mice that explicitly states it did not find significant influences on plasma/brain levels and does not report quantitative PK parameters (CL, V, etc.) for felbamate. |
+| PD | Citraro_2016 | not_relevant | 1 | 0 | The paper reports qualitative potentiation of felbamate's anticonvulsant effect by cannabinoids but does not provide numeric PD parameters, dose-response curves, or exposure-response data for felbamate. |
 | PGx | Cokley_2022 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions between Paxlovid and felbamate, not pharmacogenomic effects of gene variants on felbamate PK/PD. |
 | PGx | Dieckhaus_2000 | not_relevant | 2 | 5 | The paper investigates species differences and UGT activity but explicitly concludes that poor UGT activity is not associated with increased toxicity or mercapturate excretion in patients, failing to report a significant pharmacogenomic effect. |
 | PGx | Egnell_2003 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (felbamate affecting carbamazepine metabolism via CYP3A4 heteroactivation) and does not report any pharmacogenomic effects (gene variants) on felbamate's PK or PD parameters. |
 | PGx | Glue_1997 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions and CYP450 enzyme mechanisms, but does not report pharmacogenomic effects (gene variants) on felbamate PK/PD. |
 | popPK | Graves_1998 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for carbamazepine, not felbamate, which is only mentioned as a co-medication affecting carbamazepine clearance. |
 | PGx | Hachad_2002 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions for felbamate but does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
-| popPK | Harty_2000 | irrelevant | 0 | 0 | The paper describes in-vitro mechanistic studies of felbamate on NMDA receptors, not pharmacokinetic disposition parameters. |
+| popPK | Harty_2000 | irrelevant | 0 | 0 | no_text gate: only 95 chars of text extracted (&lt; 400) |
 | PGx | Hosomi_2011 | not_relevant | 0 | 0 | The paper describes a general cytotoxicity assay system for CYP3A4-mediated activation and does not report pharmacogenomic effects on the PK or PD of felbamate. |
-| PGx | Italiano_2014 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions between antiepileptics and antidepressants and does not report pharmacogenomic effects on felbamate PK/PD. |
-| PGx | Levy_1995 | not_relevant | 0 | 0 | The paper discusses CYP450 isoform-mediated drug interactions (felbamate inhibiting CYP2C19) but does not report how a gene variant or genotype affects the PK/PD of felbamate. |
+| PGx | Italiano_2014 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions between antiepileptics and antidepressants and does not report pharmacogenomic effects (gene variants) on felbamate PK/PD. |
+| PGx | Levy_1995 | not_relevant | 0 | 0 | The paper discusses CYP450 isoform-mediated drug interactions for phenytoin and carbamazepine, mentioning felbamate only as an inhibitor of CYP2C19, but does not report pharmacogenomic effects on felbamate's PK or PD. |
 | popPK | Lukka_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of lacosamide, with felbamate serving only as a covariate affecting lacosamide clearance rather than being the subject drug. |
 | popPK | McCabe_1998 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on receptor binding, not a pharmacokinetic study, and contains no disposition parameters. |
 | PGx | Plissonneau_2026 | not_relevant | 0 | 0 | The paper investigates the effect of hepatic steatosis (a disease state) on drug metabolism, not a genetic variant or genotype, and reports no significant metabolic changes for felbamate. |
 | PGx | Reidenberg_1995 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (felbamate affecting phenobarbital PK) and mentions CYP2C19 inhibition in vitro, but it does not report a pharmacogenomic effect (gene variant/genotype) on the PK or PD of felbamate. |
-| PGx | Russell_2018 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (specifically CYP3A4/2C19 induction/inhibition) affecting clobazam pharmacokinetics, not the impact of genetic variants on felbamate. |
-| popPK | Tolbert_2016 | irrelevant | 0 | 0 | The paper focuses on clobazam pharmacokinetics and drug-drug interactions, not felbamate. |
+| PGx | Russell_2018 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (specifically CYP3A4/CYP2C19) affecting clobazam pharmacokinetics, not pharmacogenomic effects on felbamate. |
+| popPK | Tolbert_2016 | irrelevant | 0 | 0 | no_text gate: only 129 chars of text extracted (&lt; 400) |
 | PGx | Tolbert_2016 | not_relevant | 0 | 0 | The paper focuses on clobazam drug-drug interactions, not felbamate pharmacogenomics. |
 | PGx | Turnheim_2004 | not_relevant | 0 | 0 | The paper discusses general pharmacokinetic drug interactions (CYP induction/inhibition) involving felbamate but does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
-| popPK | Wallis_1993 | irrelevant | 0 | 0 | The paper title indicates a mechanistic study on hypoxic protection, not a pharmacokinetic study, and no PK parameters are present in the evidence. |
+| popPK | Wallis_1993 | irrelevant | 0 | 0 | no_text gate: only 48 chars of text extracted (&lt; 400) |
 | PD | Wallis_1993 | not_relevant | 0 | 0 | The paper investigates the mechanism of hypoxic protection (glycine reversal) and does not report pharmacokinetic data, concentration-effect curves, or numeric PD parameters for felbamate. |
-| popPK | Wallis_1995 | irrelevant | 0 | 0 | The paper title indicates a neuroprotection study, and the provided evidence contains no pharmacokinetic parameters or quantitative disposition data for felbamate. |
+| popPK | Wallis_1995 | irrelevant | 0 | 0 | no_text gate: only 63 chars of text extracted (&lt; 400) |
 | PD | Wallis_1995 | not_relevant | 0 | 0 | The provided text is only a title and does not contain any data, analysis, or numeric parameters regarding a pharmacodynamic or exposure-response relationship for felbamate. |
-| popPK | Walzer_2012 | irrelevant | 0 | 0 | The paper focuses on clobazam and CYP450 interactions, with no evidence of felbamate pharmacokinetic parameters. |
+| popPK | Walzer_2012 | irrelevant | 0 | 0 | no_text gate: only 102 chars of text extracted (&lt; 400) |
 | PGx | Walzer_2012 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving clobazam and CYP450 substrates, but does not report pharmacogenomic effects on felbamate. |
 | PGx | Yap_2008 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions between chemotherapeutic agents and antiepileptics, and does not report pharmacogenomic effects (gene variants) on felbamate PK/PD. |
 

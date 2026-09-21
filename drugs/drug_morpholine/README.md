@@ -11,7 +11,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-21 02:51 | 1:08:07 | 0/0/0 | 7/4/1 | 0/0/0 | 1,149,471/20,888 | ollama / qwen3.8:27b-mtp-q8_0 | 46 | 8/38 | 42/4 | 0 |
+| 2026-09-21 10:00 | 38:19 | 0/0/0 | 7/4/1 | 0/0/0 | 1,067,187/18,481 | ollama / qwen3.8:27b-mtp-q8_0 | 47 | 8/39 | 43/4 | 0 |
 
 ## popPK records
 
@@ -74,7 +74,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 327 matched, 148 returned
+- **PubMed hits:** 371 matched, 150 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -94,7 +94,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Noguchi_2000.pdf` | Noguchi K et al., Identification of cytochrome P450 isofo…, Xenobiotica; the fate of fo… (2000) | pgx | 7 | [10.1080/004982500237505](https://doi.org/10.1080/004982500237505) | [10875683](https://www.ncbi.nlm.nih.gov/pubmed/10875683) | metadata signals extractable PGX data (CYP1A1, PK/PD-context) |
 | `Obach_2022.pdf` | Obach RS, Linezolid Metabolism Is Catalyzed by Cy…, Drug metabolism and disposi… (2022) | pgx | 7 | [10.1124/dmd.121.000776](https://doi.org/10.1124/dmd.121.000776) | [35042700](https://www.ncbi.nlm.nih.gov/pubmed/35042700) | metadata signals extractable PGX data (CYP2J2, PK/PD-context) |
 
-<sub>queue written 2026-09-21T02:38:07.134690+00:00</sub>
+<sub>queue written 2026-09-21T09:49:06.998609+00:00</sub>
 
 ## Screened and excluded
 
@@ -170,6 +170,8 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Keglevich_2020 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in vitro cytotoxicity of vindoline derivatives, where morpholine is used only as a chemical building block, not as a subject drug for pharmacokinetic analysis. |
 | popPK | Kravchenko_2005 | irrelevant | 0 | 0 | The paper describes the synthesis and biological activity of caspase-3 inhibitors where morpholine is a structural component, not a subject drug for pharmacokinetic analysis. |
 | PD | Kravchenko_2005 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for a series of novel pyrroloquinoline compounds, not for the drug Morpholine, and does not contain any pharmacokinetic or pharmacodynamic modeling. |
+| popPK | Kumar_2026 | irrelevant | 0 | 0 | The paper studies the pharmacological properties of Pongamia pinnata leaf extract and does not involve morpholine or report any pharmacokinetic parameters for it. |
+| PD | Kumar_2026 | not_relevant | 0 | 0 | The paper studies a plant extract (Pongamia pinnata), not Morpholine, and does not report pharmacodynamic parameters for the specified drug. |
 | popPK | Kumari_2023 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in vitro antioxidant activity of indole derivatives containing a morpholine moiety, not a pharmacokinetic study of morpholine as a drug. |
 | popPK | Kułaga_2026 | irrelevant | 0 | 0 | The paper studies morpholine-based triazine derivatives as anticancer agents, not the drug morpholine itself, and reports no pharmacokinetic parameters for morpholine. |
 | PGx | Kułaga_2026 | not_relevant | 0 | 0 | The paper reports the synthesis and biological evaluation of new morpholine-based anticancer compounds, not the pharmacogenomics of the drug morpholine. |
@@ -244,6 +246,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Soraluce_2020 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for linezolid, not morpholine. |
 | popPK | Su_2026 | irrelevant | 0 | 0 | The paper describes the discovery of a bacterial methionyl-tRNA synthetase inhibitor and does not involve morpholine or pharmacokinetic studies. |
 | PGx | Tang_2022 | not_relevant | 0 | 0 | The paper investigates the mechanism-based inactivation of CYP3A by pemigatinib, not the pharmacokinetics or pharmacodynamics of morpholine, and does not report any pharmacogenomic effects. |
+| PD | Thimmaiah_1992 | not_relevant | 0 | 0 | The paper reports the synthesis and characterization of N-substituted phenoxazines (including morpholine derivatives) and their qualitative/semi-quantitative effects on drug accumulation and cytotoxicity (IC50), but it does not report a pharmacodynamic exposure-response or dose-response relationship for the drug Morpholine itself. |
 | popPK | Tian_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of linezolid, not morpholine, which is only mentioned as a structural component of linezolid's metabolism. |
 | PD | Tian_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model and Monte Carlo simulations for probability of target attainment (PTA) based on MIC, but it does not report a pharmacodynamic (PD) model or numeric PD parameters (e.g., Emax, EC50) linking drug exposure to clinical effect. |
 | PGx | Treiber_2025 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions and metabolite-mediated enzyme inhibition of nivasorexant, not the pharmacogenomics of morpholine. |

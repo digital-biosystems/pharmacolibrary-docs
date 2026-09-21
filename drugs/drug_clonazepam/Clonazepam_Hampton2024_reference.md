@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;clonazepam&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/&quot;},{&quot;label&quot;:&quot;Hampton_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonazepam_Kruizinga2022_estimate_shrinkage&quot;,&quot;label&quot;:&quot;Kruizinga_2022_estimate_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Kruizinga2022_estimate_shrinkage.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonazepam_Kruizinga2022_estimate_shrinkage&quot;,&quot;label&quot;:&quot;Kruizinga_2022_estimate_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Kruizinga2022_estimate_shrinkage.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonazepam_Hampton2024_reference&quot;,&quot;label&quot;:&quot;Hampton_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Hampton2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Clonazepam_Kruizinga2022_parameter&quot;,&quot;label&quot;:&quot;Kruizinga_2022_parameter&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Kruizinga2022_parameter.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonazepam_Kruizinga2022_parameter&quot;,&quot;label&quot;:&quot;Kruizinga_2022_parameter&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Kruizinga2022_parameter.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonazepam_Yukawa2001_reference&quot;,&quot;label&quot;:&quot;Yukawa_2001_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Yukawa2001_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonazepam_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonazepam_Kruizinga2022_reference&quot;,&quot;label&quot;:&quot;Kruizinga_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Kruizinga2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonazepam_Hampton2024_reference&quot;,&quot;label&quot;:&quot;Hampton_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Hampton2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Clonazepam_Yukawa2001_reference&quot;,&quot;label&quot;:&quot;Yukawa_2001_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Yukawa2001_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonazepam_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonazepam/Clonazepam_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clonazepam — `Clonazepam_Hampton2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
@@ -13,28 +13,25 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable.
+**What is wrong:** every check the reviewer could run passed.
 
 **Steps:**
 1. Not a curation fix — fulltext limitation.
-2. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-3. If the paper never reports it, the record cannot become a model.
-4. Read the .deviation.json and confirm each deviation names what changed and why.
-5. Anything undocumented needs the engineer, not a curator.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
 Hampton CE; Kleine SA; Smith JS; Mulon PY; Smith CK; Shanks GA; et al. et al. (2024). Journal of veterinary pharmacology and therapeutics 47
   ·  DOI: [10.1111/jvp.13451](https://doi.org/10.1111/jvp.13451)
 
 ## Model component
-<dbs-pgx drug="clonazepam" model-id="Clonazepam_Hampton2024_reference" status="model_quarantined" stale="false" population="growing commercial pigs" measured-compound="clonazepam" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="clonazepam" model-id="Clonazepam_Hampton2024_reference" status="needs_review" stale="false" population="growing commercial pigs" measured-compound="clonazepam" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -66,22 +63,13 @@ Hampton CE; Kleine SA; Smith JS; Mulon PY; Smith CK; Shanks GA; et al. et al. (2
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q53 | pass | [time] | not captured | not captured | not captured | ['Hampton_2024:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Hampton_2024:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Hampton_2024:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q76 | pass | volume within physiological range | 399 L | not captured | not captured | ['Hampton_2024:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -91,8 +79,6 @@ Hampton CE; Kleine SA; Smith JS; Mulon PY; Smith CK; Shanks GA; et al. et al. (2
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_clonazepam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Hampton_2024` / `Hampton_2024::reference`)
-- model: `../../../knowledgebase/drugs/drug_clonazepam/models/modelica/_needs_review/Clonazepam_Hampton2024_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_clonazepam/models/modelica/_needs_review/Clonazepam_Hampton2024_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

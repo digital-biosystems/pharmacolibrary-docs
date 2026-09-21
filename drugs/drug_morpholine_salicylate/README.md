@@ -82,7 +82,7 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Noguchi_2000.pdf` | Noguchi K et al., Identification of cytochrome P450 isofo…, Xenobiotica; the fate of fo… (2000) | pgx | 7 | [10.1080/004982500237505](https://doi.org/10.1080/004982500237505) | [10875683](https://www.ncbi.nlm.nih.gov/pubmed/10875683) | metadata signals extractable PGX data (CYP1A1, PK/PD-context) |
 | `Obach_2022.pdf` | Obach RS, Linezolid Metabolism Is Catalyzed by Cy…, Drug metabolism and disposi… (2022) | pgx | 7 | [10.1124/dmd.121.000776](https://doi.org/10.1124/dmd.121.000776) | [35042700](https://www.ncbi.nlm.nih.gov/pubmed/35042700) | metadata signals extractable PGX data (CYP2J2, PK/PD-context) |
 
-<sub>queue written 2026-09-21T03:47:54.994082+00:00</sub>
+<sub>queue written 2026-09-21T10:07:27.682055+00:00</sub>
 
 ## Screened and excluded
 

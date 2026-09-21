@@ -1,0 +1,30 @@
+{
+ "guid": "{f60deb20-54c6-4d6e-a3bd-69c35842815b}",
+ "model": "Pharmacolibrary.Pharmacodynamic.SigmoidEmaxSweep",
+ "model_identifier": "Pharmacolibrary_Pharmacodynamic_SigmoidEmaxSweep",
+ "generation_tool": "OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc",
+ "start_time": 0.0,
+ "stop_time": 1000.0,
+ "tolerance": 1e-06,
+ "vr": {
+  "effect": 0,
+  "exposure": 1,
+  "frac": 2,
+  "response": 3,
+  "E0": 4,
+  "EC50": 5,
+  "Emax": 6,
+  "exposure_per_s": 7,
+  "gamma": 8
+ },
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 1.0,
+  "Emax": 1.0,
+  "exposure_per_s": 1.0,
+  "gamma": 1.0
+ },
+ "outputs": [],
+ "fmu_sha256": "e9eb3eb2e713b3819a1920dca6604a5e926758248a345f8fe2b05414ef6c54ff",
+ "js_bytes": 1732884
+}

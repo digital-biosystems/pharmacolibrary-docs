@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;propacetamol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propacetamol_Krekels2015_reference&quot;,&quot;label&quot;:&quot;Krekels_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/Propacetamol_Krekels2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propacetamol_Prins2008_reference&quot;,&quot;label&quot;:&quot;Prins_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/Propacetamol_Prins2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propacetamol_Allegaert2004_reference&quot;,&quot;label&quot;:&quot;Allegaert_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/Propacetamol_Allegaert2004_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propacetamol_Anderson2005_reference&quot;,&quot;label&quot;:&quot;Anderson_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/Propacetamol_Anderson2005_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propacetamol_Krekels2015_reference&quot;,&quot;label&quot;:&quot;Krekels_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/Propacetamol_Krekels2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # propacetamol
 
@@ -18,19 +18,22 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-29 15:21 | 6:21 | 0/1/0 | 0/0/0 | 0/0/0 | 44,162/7,563 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-09-21 16:58 | 3:35 | 1/3/0 | 0/0/0 | 0/0/0 | 77,676/6,683 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Krekels_2015_reference](drugs/drug_propacetamol/Propacetamol_Krekels2015_reference.md) | Krekels EH et al., Developmental changes rather than repea…, European journal of clinica… (2015) | [10.1007/s00228-015-1887-y](https://doi.org/10.1007/s00228-015-1887-y) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Prins_2008_reference](drugs/drug_propacetamol/Propacetamol_Prins2008_reference.md) | Prins SA et al., Pharmacokinetics and analgesic effects…, Paediatric anaesthesia (2008) | [10.1111/j.1460-9592.2008.02619.x](https://doi.org/10.1111/j.1460-9592.2008.02619.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Allegaert_2004_reference](drugs/drug_propacetamol/Propacetamol_Allegaert2004_reference.md) | Allegaert K et al., Intravenous paracetamol (propacetamol)…, European journal of clinica… (2004) | [10.1007/s00228-004-0756-x](https://doi.org/10.1007/s00228-004-0756-x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Anderson_2005_reference](drugs/drug_propacetamol/Propacetamol_Anderson2005_reference.md) | Anderson BJ et al., Pediatric intravenous paracetamol (prop…, Paediatric anaesthesia (2005) | [10.1111/j.1460-9592.2005.01455.x](https://doi.org/10.1111/j.1460-9592.2005.01455.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Krekels_2015_reference](drugs/drug_propacetamol/Propacetamol_Krekels2015_reference.md) | Krekels EH et al., Developmental changes rather than repea…, European journal of clinica… (2015) | [10.1007/s00228-015-1887-y](https://doi.org/10.1007/s00228-015-1887-y) |
 
 ## Coverage
 
 - **PubMed hits:** 13 matched, 13 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -40,12 +43,12 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Allegaert_2004.pdf` | Allegaert K et al., Intravenous paracetamol (propacetamol)…, European journal of clinica… (2004) | popPK | 10 | [10.1007/s00228-004-0756-x](https://doi.org/10.1007/s00228-004-0756-x) | [15071761](https://pubmed.ncbi.nlm.nih.gov/15071761) | The study reports quantitative population pharmacokinetic parameters (Vd, CL) for propacetamol in neonates with specific numeric values provided in the text. |
-| `Anderson_2005.pdf` | Anderson BJ et al., Pediatric intravenous paracetamol (prop…, Paediatric anaesthesia (2005) | popPK | 10 | [10.1111/j.1460-9592.2005.01455.x](https://doi.org/10.1111/j.1460-9592.2005.01455.x) | [15787918](https://pubmed.ncbi.nlm.nih.gov/15787918) | The paper is a population pharmacokinetic study of propacetamol (via paracetamol profiles) and explicitly reports numeric values for clearance, volumes, intercompartmental clearance, and absorption rate constant in the text. |
+| `Anderson_2005.pdf` | Anderson BJ et al., Pediatric intravenous paracetamol (prop…, Paediatric anaesthesia (2005) | popPK | 10 | [10.1111/j.1460-9592.2005.01455.x](https://doi.org/10.1111/j.1460-9592.2005.01455.x) | [15787918](https://pubmed.ncbi.nlm.nih.gov/15787918) | The paper is a population pharmacokinetic study of propacetamol (via paracetamol profiles) and explicitly reports numeric values for clearance, volumes, intercompartmental clearance, and hydrolysis rate constant in the text. |
 | `Prins_2008.pdf` | Prins SA et al., Pharmacokinetics and analgesic effects…, Paediatric anaesthesia (2008) | popPK | 10 | [10.1111/j.1460-9592.2008.02619.x](https://doi.org/10.1111/j.1460-9592.2008.02619.x) | [18482233](https://pubmed.ncbi.nlm.nih.gov/18482233) | The paper reports a population pharmacokinetic analysis for propacetamol (via its metabolite paracetamol) with explicit numeric values for clearance, volumes, and half-lives in the text. |
 | `Hahn_2003.pdf` | Hahn TW et al., Analgesic effect of i.v. paracetamol: p…, Acta anaesthesiologica Scan… (2003) | popPK | 8 | [10.1034/j.1399-6576.2003.00046.x](https://doi.org/10.1034/j.1399-6576.2003.00046.x) | [12631041](https://pubmed.ncbi.nlm.nih.gov/12631041) | The study fits a pharmacokinetic model for paracetamol (the active metabolite of propacetamol) and reports initial concentrations, but specific quantitative disposition parameters (CL, V, ka) are not explicitly listed in the provided text. |
 | `Cai_2025.pdf` | Cai X et al., Genetic and clinical factors associated…, Progress in neuro-psychopha… (2025) | pgx | 5 | [10.1016/j.pnpbp.2025.111468](https://doi.org/10.1016/j.pnpbp.2025.111468) | [40812711](https://www.ncbi.nlm.nih.gov/pubmed/40812711) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-08-29T15:17:34.747031+00:00</sub>
+<sub>queue written 2026-09-21T16:55:31.114400+00:00</sub>
 
 ## Screened and excluded
 

@@ -2,6 +2,7 @@
 - [Index](/)
 - [Extraction ledger](/ledger)
 - [Query the data](/query)
+- [Sites & interactions](/sites)
 
 #### ddd
 - [allopurinol <sub>(9/15/40)</sub>](drugs/drug_allopurinol/)
@@ -3524,9 +3525,9 @@
       - [phenazone <sub>(0/0/0)</sub>](drugs/drug_phenazone/)
       - [phenazone, combinations excl. psycholeptics <sub>(0/0/0)</sub>](drugs/drug_phenazone_combinations_excl_psycholeptics/)
       - phenazone combinations with psycholeptics <sub>(0/0/0)</sub>
-      - [potassium salicylate <sub>(0/7/0)</sub>](drugs/drug_potassium_salicylate/)
-      - [pregabalin <sub>(3/3/1)</sub>](drugs/drug_pregabalin/)
-      - [propacetamol <sub>(0/0/0)</sub>](drugs/drug_propacetamol/)
+      - [potassium salicylate <sub>(0/20/0)</sub>](drugs/drug_potassium_salicylate/)
+      - [pregabalin <sub>(1/3/1)</sub>](drugs/drug_pregabalin/)
+      - [propacetamol <sub>(1/0/0)</sub>](drugs/drug_propacetamol/)
       - propyphenazone <sub>(0/0/0)</sub>
       - propyphenazone combinations excl psycholeptics <sub>(0/0/0)</sub>
       - propyphenazone combinations with psycholeptics <sub>(0/0/0)</sub>
@@ -3577,12 +3578,12 @@
       - [barbexaclone <sub>(0/0/0)</sub>](drugs/drug_barbexaclone/)
       - beclamide <sub>(0/0/0)</sub>
       - [brivaracetam <sub>(0/0/0)</sub>](drugs/drug_brivaracetam/)
-      - [cannabidiol <sub>(6/16/1)</sub>](drugs/drug_cannabidiol/)
-      - [carbamazepine <sub>(8/0/2)</sub>](drugs/drug_carbamazepine/)
+      - [cannabidiol <sub>(4/16/1)</sub>](drugs/drug_cannabidiol/)
+      - [carbamazepine <sub>(12/0/23)</sub>](drugs/drug_carbamazepine/)
       - [carisbamate <sub>(0/9/0)</sub>](drugs/drug_carisbamate/)
       - [cenobamate <sub>(0/7/0)</sub>](drugs/drug_cenobamate/)
-      - [clonazepam <sub>(2/0/0)</sub>](drugs/drug_clonazepam/)
-      - [eslicarbazepine <sub>(2/0/0)</sub>](drugs/drug_eslicarbazepine/)
+      - [clonazepam <sub>(1/0/0)</sub>](drugs/drug_clonazepam/)
+      - [eslicarbazepine <sub>(1/0/0)</sub>](drugs/drug_eslicarbazepine/)
       - ethadione <sub>(0/0/0)</sub>
       - [ethosuximide <sub>(0/0/0)</sub>](drugs/drug_ethosuximide/)
       - ethosuximide combinations <sub>(0/0/0)</sub>
@@ -3608,7 +3609,7 @@
       - phensuximide <sub>(0/0/0)</sub>
       - phenytoin <sub>(0/0/0)</sub>
       - phenytoin combinations <sub>(0/0/0)</sub>
-      - [pregabalin <sub>(3/3/1)</sub>](drugs/drug_pregabalin/)
+      - [pregabalin <sub>(1/3/1)</sub>](drugs/drug_pregabalin/)
       - primidone <sub>(0/0/0)</sub>
       - progabide <sub>(0/0/0)</sub>
       - retigabine <sub>(0/0/0)</sub>

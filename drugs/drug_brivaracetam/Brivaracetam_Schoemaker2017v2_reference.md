@@ -26,7 +26,7 @@
 not matched (stem Schoemaker_2017_2)
 
 ## Model component
-<dbs-pgx drug="brivaracetam" model-id="Brivaracetam_Schoemaker2017v2_reference" status="rejected" stale="false" population="paediatric patients with epilepsy" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="brivaracetam" model-id="Brivaracetam_Schoemaker2017v2_reference" status="rejected" stale="false" population="children with epilepsy aged 1 month to 16 years" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -62,6 +62,7 @@ not matched (stem Schoemaker_2017_2)
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | fail | [length] ** 3 | L | not captured | not captured | ['Tab1:row4:col1'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row5:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |

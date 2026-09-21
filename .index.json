@@ -2736,13 +2736,13 @@
   "curated": 0,
   "details": [
    {
-    "label": "Iven_1983 \u00b7 mice",
-    "model_id": "Barbexaclone_Iven1983_mice"
+    "label": "Iven_1983 \u00b7 reference",
+    "model_id": "Barbexaclone_Iven1983_reference"
    }
   ],
   "dir": "drug_barbexaclone",
   "extracted": 0,
-  "last_change": "2026-09-11T08:46:41.988428+00:00",
+  "last_change": "2026-09-21T17:47:32.567611+00:00",
   "name": "barbexaclone",
   "needs_review": 0,
   "records": 1,
@@ -3698,7 +3698,7 @@
   ],
   "dir": "drug_brivaracetam",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:14.259113+00:00",
+  "last_change": "2026-09-21T17:47:32.584243+00:00",
   "name": "brivaracetam",
   "needs_review": 0,
   "records": 1,
@@ -4459,25 +4459,29 @@
   "counts": {
    "pd": 16,
    "pgx": 1,
-   "pk": 6
+   "pk": 4
   },
   "curated": 0,
   "details": [
    {
-    "label": "Eichler_2023 \u00b7 first_trial_0_2_mg_kg_n_3",
-    "model_id": "Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3"
+    "label": "Nachnani_2024 \u00b7 reference",
+    "model_id": "Cannabidiol_Nachnani2024_reference"
+   },
+   {
+    "label": "Shaik_2026 \u00b7 reference",
+    "model_id": "Cannabidiol_Shaik2026_reference"
+   },
+   {
+    "label": "S\u00e1nchez_2023 \u00b7 reference",
+    "model_id": "Cannabidiol_Snchez2023_reference"
    },
    {
     "label": "Eichler_2023 \u00b7 first_trial_0_2_mg_kg_n_3",
     "model_id": "Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3"
    },
    {
-    "label": "Eichler_2023 \u00b7 omega",
-    "model_id": "Cannabidiol_Eichler2023_omega"
-   },
-   {
-    "label": "Eichler_2023 \u00b7 omega",
-    "model_id": "Cannabidiol_Eichler2023_omega"
+    "label": "Eichler_2023 \u00b7 first_trial_0_2_mg_kg_n_3",
+    "model_id": "Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3"
    },
    {
     "label": "Eichler_2023 \u00b7 population_value",
@@ -4494,14 +4498,6 @@
    {
     "label": "Eichler_2023 \u00b7 second_trial_1_mg_kg_n_3",
     "model_id": "Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3"
-   },
-   {
-    "label": "Eichler_2023 \u00b7 shrinkage",
-    "model_id": "Cannabidiol_Eichler2023_shrinkage"
-   },
-   {
-    "label": "Eichler_2023 \u00b7 shrinkage",
-    "model_id": "Cannabidiol_Eichler2023_shrinkage"
    },
    {
     "label": "Eichler_2023 \u00b7 third_trial_3_mg_kg_n_5",
@@ -4513,11 +4509,11 @@
    }
   ],
   "dir": "drug_cannabidiol",
-  "extracted": 0,
-  "last_change": "2026-09-17T15:08:15.697651+00:00",
+  "extracted": 3,
+  "last_change": "2026-09-21T17:47:32.823664+00:00",
   "name": "cannabidiol",
-  "needs_review": 12,
-  "records": 12,
+  "needs_review": 8,
+  "records": 11,
   "rejected": 0,
   "rendered": true,
   "slug": "cannabidiol",
@@ -4746,23 +4742,11 @@
   ],
   "counts": {
    "pd": 0,
-   "pgx": 2,
-   "pk": 8
+   "pgx": 23,
+   "pk": 12
   },
   "curated": 0,
   "details": [
-   {
-    "label": "Li_2021 \u00b7 reference",
-    "model_id": "Carbamazepine_Li2021_reference"
-   },
-   {
-    "label": "Milovanovic_2016 \u00b7 reference",
-    "model_id": "Carbamazepine_Milovanovic2016_reference"
-   },
-   {
-    "label": "Yip_2021 \u00b7 reference",
-    "model_id": "Carbamazepine_Yip2021_reference"
-   },
    {
     "label": "Djordjevic_2016 \u00b7 reference",
     "model_id": "Carbamazepine_Djordjevic2016_reference"
@@ -4772,12 +4756,40 @@
     "model_id": "Carbamazepine_Djordjevic2025_reference"
    },
    {
+    "label": "Milovanovic_2016 \u00b7 reference",
+    "model_id": "Carbamazepine_Milovanovic2016_reference"
+   },
+   {
+    "label": "Teixeira-da-Silva_2022 \u00b7 reference",
+    "model_id": "Carbamazepine_TeixeiradaSilva2022_reference"
+   },
+   {
+    "label": "Yip_2021 \u00b7 reference",
+    "model_id": "Carbamazepine_Yip2021_reference"
+   },
+   {
+    "label": "Kudo_1999 \u00b7 reference",
+    "model_id": "Carbamazepine_Kudo1999_reference"
+   },
+   {
     "label": "Naik_2021 \u00b7 reference",
     "model_id": "Carbamazepine_Naik2021_reference"
    },
    {
     "label": "Punyawudho_2012 \u00b7 reference",
     "model_id": "Carbamazepine_Punyawudho2012_reference"
+   },
+   {
+    "label": "Rambeck_1993 \u00b7 reference",
+    "model_id": "Carbamazepine_Rambeck1993_reference"
+   },
+   {
+    "label": "Roberti_2021 \u00b7 reference",
+    "model_id": "Carbamazepine_Roberti2021_reference"
+   },
+   {
+    "label": "Yu_2025 \u00b7 reference",
+    "model_id": "Carbamazepine_Yu2025_reference"
    },
    {
     "label": "Lukic_2024 \u00b7 reference",
@@ -4801,11 +4813,11 @@
    }
   ],
   "dir": "drug_carbamazepine",
-  "extracted": 3,
-  "last_change": "2026-09-17T15:08:18.043962+00:00",
+  "extracted": 5,
+  "last_change": "2026-09-21T17:47:33.496503+00:00",
   "name": "carbamazepine",
-  "needs_review": 4,
-  "records": 12,
+  "needs_review": 6,
+  "records": 16,
   "rejected": 5,
   "rendered": true,
   "slug": "carbamazepine",
@@ -6162,29 +6174,17 @@
   "counts": {
    "pd": 0,
    "pgx": 0,
-   "pk": 2
+   "pk": 1
   },
   "curated": 0,
   "details": [
    {
-    "label": "Kruizinga_2022 \u00b7 estimate_shrinkage",
-    "model_id": "Clonazepam_Kruizinga2022_estimate_shrinkage"
-   },
-   {
-    "label": "Kruizinga_2022 \u00b7 estimate_shrinkage",
-    "model_id": "Clonazepam_Kruizinga2022_estimate_shrinkage"
+    "label": "Kruizinga_2022 \u00b7 reference",
+    "model_id": "Clonazepam_Kruizinga2022_reference"
    },
    {
     "label": "Hampton_2024 \u00b7 reference",
     "model_id": "Clonazepam_Hampton2024_reference"
-   },
-   {
-    "label": "Kruizinga_2022 \u00b7 parameter",
-    "model_id": "Clonazepam_Kruizinga2022_parameter"
-   },
-   {
-    "label": "Kruizinga_2022 \u00b7 parameter",
-    "model_id": "Clonazepam_Kruizinga2022_parameter"
    },
    {
     "label": "Yukawa_2001 \u00b7 reference",
@@ -6196,12 +6196,12 @@
    }
   ],
   "dir": "drug_clonazepam",
-  "extracted": 2,
-  "last_change": "2026-09-17T15:08:21.976290+00:00",
+  "extracted": 1,
+  "last_change": "2026-09-21T17:47:33.576876+00:00",
   "name": "clonazepam",
   "needs_review": 1,
-  "records": 7,
-  "rejected": 4,
+  "records": 4,
+  "rejected": 2,
   "rendered": true,
   "slug": "clonazepam",
   "stale": 0
@@ -10472,33 +10472,25 @@
   "counts": {
    "pd": 0,
    "pgx": 0,
-   "pk": 2
+   "pk": 1
   },
   "curated": 0,
   "details": [
    {
-    "label": "Sunkaraneni_2018_2 \u00b7 final",
-    "model_id": "Eslicarbazepine_Sunkaraneni2018v2_final"
+    "label": "Falc\u00e3o_2012 \u00b7 reference",
+    "model_id": "Eslicarbazepine_Falco2012_reference"
    },
    {
-    "label": "Sunkaraneni_2018_2 \u00b7 final",
-    "model_id": "Eslicarbazepine_Sunkaraneni2018v2_final"
-   },
-   {
-    "label": "Sunkaraneni_2018_2 \u00b7 interindividual_variability_residual_variabilitya",
-    "model_id": "Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit"
-   },
-   {
-    "label": "Sunkaraneni_2018_2 \u00b7 interindividual_variability_residual_variabilitya",
-    "model_id": "Eslicarbazepine_Sunkaraneni2018v2_interindividual_variabilit"
+    "label": "Sunkaraneni_2018_2 \u00b7 reference",
+    "model_id": "Eslicarbazepine_Sunkaraneni2018v2_reference"
    }
   ],
   "dir": "drug_eslicarbazepine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:31.068073+00:00",
+  "last_change": "2026-09-21T17:47:33.611628+00:00",
   "name": "eslicarbazepine",
-  "needs_review": 4,
-  "records": 4,
+  "needs_review": 2,
+  "records": 2,
   "rejected": 0,
   "rendered": true,
   "slug": "eslicarbazepine",
@@ -10642,13 +10634,13 @@
   "curated": 0,
   "details": [
    {
-    "label": "el_1978 \u00b7 dogs",
-    "model_id": "Ethosuximide_el1978_dogs"
+    "label": "el_1978 \u00b7 reference",
+    "model_id": "Ethosuximide_el1978_reference"
    }
   ],
   "dir": "drug_ethosuximide",
   "extracted": 0,
-  "last_change": "2026-09-11T08:46:51.693680+00:00",
+  "last_change": "2026-09-21T17:47:33.620118+00:00",
   "name": "ethosuximide",
   "needs_review": 0,
   "records": 1,
@@ -11049,21 +11041,21 @@
   "curated": 0,
   "details": [
    {
-    "label": "Graves_1989 \u00b7 patients with epilepsy",
-    "model_id": "Felbamate_Graves1989_patients_with_epilepsy"
+    "label": "Graves_1989 \u00b7 reference",
+    "model_id": "Felbamate_Graves1989_reference"
    },
    {
-    "label": "Kelley_1997 \u00b7 children",
-    "model_id": "Felbamate_Kelley1997_children"
+    "label": "Kelley_1997 \u00b7 reference",
+    "model_id": "Felbamate_Kelley1997_reference"
    }
   ],
   "dir": "drug_felbamate",
   "extracted": 0,
-  "last_change": "2026-09-11T08:46:52.199126+00:00",
+  "last_change": "2026-09-21T17:47:33.634043+00:00",
   "name": "felbamate",
-  "needs_review": 0,
+  "needs_review": 1,
   "records": 2,
-  "rejected": 2,
+  "rejected": 1,
   "rendered": true,
   "slug": "felbamate",
   "stale": 0
@@ -19731,7 +19723,7 @@
   ],
   "dir": "drug_nefopam",
   "extracted": 1,
-  "last_change": "2026-09-21T08:20:41.000742+00:00",
+  "last_change": "2026-09-21T16:58:45.322528+00:00",
   "name": "nefopam",
   "needs_review": 1,
   "records": 3,
@@ -21838,7 +21830,7 @@
   ],
   "dir": "drug_phenacetin",
   "extracted": 0,
-  "last_change": "2026-09-21T08:20:41.019518+00:00",
+  "last_change": "2026-09-21T16:58:45.343670+00:00",
   "name": "phenacetin",
   "needs_review": 0,
   "records": 1,
@@ -21892,7 +21884,7 @@
   ],
   "dir": "drug_phenazone",
   "extracted": 0,
-  "last_change": "2026-09-21T08:20:41.060293+00:00",
+  "last_change": "2026-09-21T16:58:45.380952+00:00",
   "name": "phenazone",
   "needs_review": 2,
   "records": 2,
@@ -22476,7 +22468,7 @@
    "N02BA12"
   ],
   "counts": {
-   "pd": 7,
+   "pd": 20,
    "pgx": 0,
    "pk": 0
   },
@@ -22720,7 +22712,7 @@
   "counts": {
    "pd": 3,
    "pgx": 1,
-   "pk": 3
+   "pk": 1
   },
   "curated": 0,
   "details": [
@@ -22729,40 +22721,20 @@
     "model_id": "Pregabalin_Bae2016_reference"
    },
    {
-    "label": "Chan_2021 \u00b7 estimate_rse",
-    "model_id": "Pregabalin_Chan2021_estimate_rse"
+    "label": "Chan_2021 \u00b7 reference",
+    "model_id": "Pregabalin_Chan2021_reference"
    },
    {
-    "label": "Chan_2021 \u00b7 estimate_rse",
-    "model_id": "Pregabalin_Chan2021_estimate_rse"
-   },
-   {
-    "label": "Hong_2016 \u00b7 estimate",
-    "model_id": "Pregabalin_Hong2016_estimate"
-   },
-   {
-    "label": "Hong_2016 \u00b7 estimate",
-    "model_id": "Pregabalin_Hong2016_estimate"
+    "label": "Hong_2016 \u00b7 reference",
+    "model_id": "Pregabalin_Hong2016_reference"
    },
    {
     "label": "Bender_2009 \u00b7 reference",
     "model_id": "Pregabalin_Bender2009_reference"
    },
    {
-    "label": "Chan_2021 \u00b7 model",
-    "model_id": "Pregabalin_Chan2021_model"
-   },
-   {
-    "label": "Chan_2021 \u00b7 model",
-    "model_id": "Pregabalin_Chan2021_model"
-   },
-   {
-    "label": "Hong_2016 \u00b7 description_unit",
-    "model_id": "Pregabalin_Hong2016_description_unit"
-   },
-   {
-    "label": "Hong_2016 \u00b7 description_unit",
-    "model_id": "Pregabalin_Hong2016_description_unit"
+    "label": "Feng_2001 \u00b7 reference",
+    "model_id": "Pregabalin_Feng2001_reference"
    },
    {
     "label": "Park_2023 \u00b7 reference",
@@ -22775,11 +22747,11 @@
   ],
   "dir": "drug_pregabalin",
   "extracted": 1,
-  "last_change": "2026-09-21T08:20:41.305629+00:00",
+  "last_change": "2026-09-21T16:58:45.597170+00:00",
   "name": "pregabalin",
-  "needs_review": 4,
-  "records": 12,
-  "rejected": 7,
+  "needs_review": 2,
+  "records": 7,
+  "rejected": 4,
   "rendered": true,
   "slug": "pregabalin",
   "stale": 0
@@ -22918,10 +22890,22 @@
   "counts": {
    "pd": 0,
    "pgx": 0,
-   "pk": 0
+   "pk": 1
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Prins_2008 \u00b7 reference",
+    "model_id": "Propacetamol_Prins2008_reference"
+   },
+   {
+    "label": "Allegaert_2004 \u00b7 reference",
+    "model_id": "Propacetamol_Allegaert2004_reference"
+   },
+   {
+    "label": "Anderson_2005 \u00b7 reference",
+    "model_id": "Propacetamol_Anderson2005_reference"
+   },
    {
     "label": "Krekels_2015 \u00b7 reference",
     "model_id": "Propacetamol_Krekels2015_reference"
@@ -22929,11 +22913,11 @@
   ],
   "dir": "drug_propacetamol",
   "extracted": 0,
-  "last_change": "2026-09-21T08:20:41.332249+00:00",
+  "last_change": "2026-09-21T16:58:45.685367+00:00",
   "name": "propacetamol",
-  "needs_review": 0,
-  "records": 1,
-  "rejected": 1,
+  "needs_review": 1,
+  "records": 4,
+  "rejected": 3,
   "rendered": true,
   "slug": "propacetamol",
   "stale": 0

@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 23:55 | 5:58 | 0/0/0 | 2/0/0 | 0/0/0 | 111,738/2,840 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 6/0 | 0 |
+| 2026-09-21 17:17 | 5:23 | 0/0/0 | 2/0/0 | 0/0/0 | 170,733/3,578 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 6/0 | 0 |
 
 ## popPK records
 
@@ -37,32 +37,33 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 16 matched, 19 returned
+- **PubMed hits:** 23 matched, 21 returned
 - **screened:** 4  ·  **relevant:** 4
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Levy_2008.pdf` | Levy R et al., Pharmacokinetics, safety, and tolerabil…, Epilepsy research (2008) | popPK | 9 | [10.1016/j.eplepsyres.2007.12.013](https://doi.org/10.1016/j.eplepsyres.2007.12.013) | [18280116](https://pubmed.ncbi.nlm.nih.gov/18280116) | The paper is a primary PK study of carisbamate, but the provided evidence contains only qualitative descriptions of results without specific numeric parameter values (e.g., CL, V, t1/2). |
-| `Moore_2012.pdf` | Moore K et al., Effect of mild and moderate hepatic imp…, Journal of clinical pharmac… (2012) | popPK | 9 | [10.1177/0091270011403313](https://doi.org/10.1177/0091270011403313) | [21566203](https://pubmed.ncbi.nlm.nih.gov/21566203) | The study reports quantitative PK parameters for carisbamate, including specific half-life values (11h, 21h) and geometric mean ratios for AUC and Cmax, though absolute clearance values are not explicitly listed. |
-| `Zannikos_2009.pdf` | Zannikos P et al., Pharmacokinetics of carisbamate (RWJ-33…, Epilepsia (2009) | popPK | 9 | [10.1111/j.1528-1167.2009.02081.x](https://doi.org/10.1111/j.1528-1167.2009.02081.x) | [19453703](https://pubmed.ncbi.nlm.nih.gov/19453703) | The study reports quantitative pharmacokinetic parameters for carisbamate, including specific ranges for oral clearance (35.1-41.4 ml/h/kg) and half-life (11.5-12.8 h) in the results section. |
+| `Moore_2012.pdf` | Moore K et al., Effect of mild and moderate hepatic imp…, Journal of clinical pharmac… (2012) | popPK | 9 | [10.1177/0091270011403313](https://doi.org/10.1177/0091270011403313) | [21566203](https://pubmed.ncbi.nlm.nih.gov/21566203) | The study reports quantitative PK parameters for carisbamate, including specific half-life values (11h, 21h) and geometric mean ratios for AUC and Cmax, though absolute clearance values are described qualitatively. |
+| `Zannikos_2009.pdf` | Zannikos P et al., Pharmacokinetics of carisbamate (RWJ-33…, Epilepsia (2009) | popPK | 9 | [10.1111/j.1528-1167.2009.02081.x](https://doi.org/10.1111/j.1528-1167.2009.02081.x) | [19453703](https://pubmed.ncbi.nlm.nih.gov/19453703) | The paper reports quantitative pharmacokinetic parameters for carisbamate, including specific ranges for oral clearance (35.1-41.4 ml/h/kg) and half-life (11.5-12.8 h) in the results section. |
+| `Vashi_2026.pdf` | Vashi V et al., Carisbamate treatment of adult and pedi…, Epilepsy research (2026) | popPK | 8 | [10.1016/j.eplepsyres.2026.107869](https://doi.org/10.1016/j.eplepsyres.2026.107869) | [42431071](https://pubmed.ncbi.nlm.nih.gov/42431071) | The study reports quantitative PK parameters (t1/2, accumulation ratios) for carisbamate, but lacks specific values for clearance (CL) and volume (V) in the provided text. |
 
-<sub>queue written 2026-09-09T23:54:36.196368+00:00</sub>
+<sub>queue written 2026-09-21T17:16:12.169256+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bhamidipati_2017 | irrelevant | 2 | 0 | The paper focuses on interspecies scaling of urinary excretion amounts for multiple drugs, including carisbamate, but does not report specific quantitative PK parameters (CL, V, ka) for carisbamate as the primary subject. |
+| popPK | Bhamidipati_2017 | irrelevant | 2 | 0 | The paper focuses on allometric scaling of urinary excretion amounts for multiple drugs, including carisbamate, but does not report specific compartmental PK parameters (CL, V, ka) for carisbamate as the primary subject. |
 | popPK | Cady_2009 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for migraine prophylaxis and does not report any pharmacokinetic parameters for carisbamate. |
 | PD | Cady_2009 | not_relevant | 2 | 1 | The paper reports a clinical dose-response trial with no statistically significant differences between doses and placebo, and does not provide PK data or numeric PD parameters (e.g., Emax, EC50) to derive a pharmacodynamic model. |
-| popPK | Choi_2026 | irrelevant | 0 | 0 | The paper is a review of the discovery of cenobamate, where carisbamate is mentioned only as a precursor/comparator, and no quantitative pharmacokinetic parameters for carisbamate are reported. |
-| PD | Choi_2026 | not_relevant | 2 | 2 | The paper is a review of cenobamate (not carisbamate) and only provides qualitative context or preclinical PK/PD data for cenobamate, lacking specific numeric PD parameters for carisbamate. |
+| popPK | Choi_2026 | irrelevant | 0 | 0 | The paper is a review of the discovery of cenobamate, where carisbamate is only mentioned as a precursor/comparator, and no quantitative pharmacokinetic parameters for carisbamate are reported. |
+| PD | Choi_2026 | not_relevant | 3 | 2 | The paper is a review of cenobamate (not carisbamate) and only provides qualitative context or preclinical PK/PD data for cenobamate, lacking specific numeric PD parameters for carisbamate. |
 | popPK | Gonzalez_2012 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of warfarin as the subject drug, with carisbamate acting only as a co-administered agent, and no quantitative PK parameters for carisbamate are reported. |
 | PD | Gonzalez_2012 | not_relevant | 1 | 0 | The paper reports that the pharmacodynamic effect (INR) was unaltered and provides no numeric PD parameters or concentration-effect relationship. |
 | popPK | Hung_2023 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study investigating the mechanism of action on ion channels, not a pharmacokinetic study reporting disposition parameters. |
@@ -72,6 +73,8 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Liu_2009 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study reporting electrophysiological parameters (IC50) rather than pharmacokinetic disposition parameters. |
 | popPK | Luszczki_2009 | irrelevant | 2 | 0 | The paper is a review article summarizing mechanisms and PK profiles without providing original quantitative parameter values for carisbamate. |
 | popPK | Mateias_2024 | irrelevant | 0 | 0 | The study focuses on the in vitro cardiac safety pharmacology of cenobamate, not the pharmacokinetics of carisbamate. |
+| popPK | Nasreddine_2010 | irrelevant | 1 | 0 | The paper is a narrative review of emerging antiepileptic drugs and does not report original quantitative pharmacokinetic parameter values for carisbamate. |
+| popPK | Vashi_2026 | relevant | 8 | 4 | The study reports quantitative PK parameters (t1/2, accumulation ratios) for carisbamate, but lacks specific values for clearance (CL) and volume (V) in the provided text. |
 | popPK | Vohora_2010 | irrelevant | 1 | 0 | The paper is a review article discussing carisbamate as a third-generation antiepileptic drug, but the provided evidence contains no quantitative pharmacokinetic parameter values. |
 | PGx | Zannikos_2009 | not_relevant | 0 | 0 | The study compares pharmacokinetics between Japanese and Caucasian populations based on body weight differences, not on specific gene variants or genotypes. |
 

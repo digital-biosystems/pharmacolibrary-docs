@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-21 01:43 | 8:10 | 0/0/0 | 1/1/0 | 0/0/0 | 120,892/2,352 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 2/5 | 7/0 | 0 |
+| 2026-09-21 09:22 | 4:03 | 0/0/0 | 1/1/0 | 0/0/0 | 115,721/2,049 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 2/5 | 7/0 | 0 |
 
 ## popPK records
 
@@ -52,7 +52,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Hutmacher_2016.pdf` | Hutmacher MM et al., Exposure-response modeling of average d…, Journal of clinical pharmac… (2016) | pd | 5 | [10.1002/jcph.567](https://doi.org/10.1002/jcph.567) | [26073181](https://www.ncbi.nlm.nih.gov/pubmed/26073181) | metadata signals extractable PD data (Exposure-response) |
 | `Ahmad_2021.pdf` | Ahmad KA et al., Microglial IL-10 and β-endorphin expres…, Brain, behavior, and immuni… (2021) | pd | 4 | [10.1016/j.bbi.2021.04.007](https://doi.org/10.1016/j.bbi.2021.04.007) | [33862171](https://www.ncbi.nlm.nih.gov/pubmed/33862171) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-09-21T01:41:20.870627+00:00</sub>
+<sub>queue written 2026-09-21T09:21:20.017011+00:00</sub>
 
 ## Screened and excluded
 

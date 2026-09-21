@@ -78,6 +78,83 @@
     #pkq-out th, #pkq-out td { padding: 4px 10px; border-bottom: 1px solid #e2e8f0;
       white-space: nowrap; }
     #pkq-out td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    /* ── sites page ────────────────────────────────────────────────────────────
+       Only the /sites route uses these (pk-sites.js + the ADME database, fetched by the
+       plugin below and never on any other page). Evidence tiers are one blue ramp; the
+       drug colours are the fixed categorical order pk-sites.js carries. */
+    :root { --pks-ev0: #f1f0eb; --pks-ev1: #86b6ef; --pks-ev2: #3987e5; --pks-ev3: #1c5cab;
+      --pks-warn: #b4530f; --pks-organ: #e6e4dd; --pks-organ-line: #b9b5aa; --pks-body: #f3f2ed; }
+    .pks-results { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 8px; }
+    .pks-results button { font: inherit; font-size: 13px; padding: 4px 10px; cursor: pointer;
+      border: 1px solid #cbd5e1; border-radius: 999px; background: #fff; color: #334155; }
+    .pks-results button:hover { border-color: var(--theme-color, #0074d9); color: var(--theme-color, #0074d9); }
+    .pks-results button small { color: #94a3b8; }
+    .pks-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 10px; }
+    .pks-chip { display: inline-flex; align-items: center; gap: 7px; padding: 4px 8px 4px 5px;
+      border: 1px solid #cbd5e1; border-radius: 999px; background: #fff; font-size: 13px;
+      font-weight: 500; color: #1e293b; cursor: pointer; }
+    .pks-chip[aria-pressed="true"] { border-color: #1e293b; box-shadow: inset 0 0 0 1px #1e293b; }
+    .pks-chip .sw { width: 18px; height: 18px; border-radius: 50%; display: inline-grid;
+      place-items: center; color: #fff; font: 600 10px ui-monospace, Menlo, monospace; }
+    .pks-chip .x { color: #94a3b8; padding-left: 4px; font-size: 14px; line-height: 1; }
+    .pks-chip .x:hover { color: #b91c1c; }
+    .pks-controls label { display: inline-flex; gap: 5px; align-items: center; cursor: pointer; }
+    .pks-controls input[type=checkbox] { min-width: 0; width: auto; margin: 0; }
+    .pks-evkey { display: flex; gap: 12px; flex-wrap: wrap; font-size: 12px; color: #475569; margin: 6px 0 4px; }
+    .pks-evkey i { display: inline-block; width: 13px; height: 13px; border-radius: 3px;
+      border: 1px solid #cbd5e1; vertical-align: -2px; margin-right: 4px; }
+    .pks-evkey i.e0 { background: var(--pks-ev0); } .pks-evkey i.e1 { background: var(--pks-ev1); }
+    .pks-evkey i.e2 { background: var(--pks-ev2); } .pks-evkey i.e3 { background: var(--pks-ev3); }
+    .pks-evkey i.aff { box-shadow: inset 0 0 0 2px var(--pks-warn); }
+    .pks-scroll { overflow-x: auto; }
+    .pks-hm { border-collapse: separate; border-spacing: 2px; font-size: 12px; }
+    .pks-hm th { font-weight: 500; color: #475569; text-align: left; padding: 2px 6px; white-space: nowrap; }
+    .pks-hm th.proc { font: 500 11px ui-monospace, Menlo, monospace; letter-spacing: .06em;
+      text-transform: uppercase; color: #94a3b8; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; }
+    .pks-hm th.tissue { height: 118px; vertical-align: bottom; padding: 0; }
+    .pks-hm th.tissue span { writing-mode: vertical-rl; transform: rotate(180deg); display: block;
+      font-size: 11px; padding: 6px 0; }
+    .pks-hm th.drug { font-weight: 600; padding-right: 10px; }
+    .pks-hm th.drug i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+    .pks-hm td { width: 30px; height: 30px; border-radius: 4px; background: var(--pks-ev0); }
+    .pks-hm td.e1 { background: var(--pks-ev1); } .pks-hm td.e2 { background: var(--pks-ev2); }
+    .pks-hm td.e3 { background: var(--pks-ev3); }
+    .pks-hm td.aff { box-shadow: inset 0 0 0 2px var(--pks-warn); }
+    .pks-hm td:focus-visible { outline: 2px solid #1e293b; outline-offset: 1px; }
+    .pks-hm .gap { background: transparent; width: 8px; }
+    .pks-hm tr.dim { opacity: .3; }
+    .pks-tip { position: fixed; z-index: 40; pointer-events: none; background: #1e293b; color: #f8fafc;
+      padding: 8px 10px; border-radius: 6px; font-size: 12px; max-width: 320px; line-height: 1.35;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, .25); opacity: 0; transition: opacity .08s; }
+    .pks-tip b { display: block; margin-bottom: 2px; } .pks-tip small { opacity: .75; }
+    .pks-grid { display: grid; grid-template-columns: minmax(280px, 400px) 1fr; gap: 20px; align-items: start; }
+    @media (max-width: 760px) { .pks-grid { grid-template-columns: 1fr; } }
+    .pks-body { width: 100%; height: auto; max-width: 400px; display: block; margin: 0 auto; }
+    .pks-body .sil { fill: var(--pks-body); stroke: var(--pks-organ-line); stroke-width: 1; }
+    .pks-body .organ { fill: var(--pks-organ); stroke: var(--pks-organ-line); stroke-width: 1.2; }
+    .pks-body .lbl { font: 500 10px ui-monospace, Menlo, monospace; fill: #475569; letter-spacing: .04em; text-transform: uppercase; }
+    .pks-body .slot { stroke: #fff; stroke-width: 1.2; } .pks-body .slot.dim { opacity: .25; }
+    .pks-body .slot.e0 { fill: var(--pks-ev0); } .pks-body .slot.e1 { fill: var(--pks-ev1); }
+    .pks-body .slot.e2 { fill: var(--pks-ev2); } .pks-body .slot.e3 { fill: var(--pks-ev3); }
+    .pks-body .cd { font: 600 7.5px ui-monospace, Menlo, monospace; fill: #94a3b8; pointer-events: none; }
+    .pks-body .cd.on { fill: #fff; }
+    .pks-body .aff { fill: none; stroke: var(--pks-warn); stroke-width: 2; stroke-dasharray: 3 2; }
+    .pks-body .arrow { fill: none; stroke-width: 2; marker-end: url(#pks-ah); }
+    .pks-detailbox h4 { margin: 0 0 6px; font-size: 14px; } .pks-detailbox h4.warn { color: var(--pks-warn); margin-top: 12px; }
+    .pks-detail { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+    .pks-detail td, .pks-detail th { text-align: left; padding: 5px 6px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+    .pks-detail th { color: #475569; font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
+    .mono { font-family: ui-monospace, Menlo, monospace; font-size: 12px; }
+    .pks-role { display: inline-block; padding: 1px 6px; border-radius: 4px; background: #f1f5f9; font-size: 11px; margin-right: 3px; }
+    .pks-role.inhibitor, .pks-role.inducer { background: #fdebd9; color: var(--pks-warn); }
+    .pks-row { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: baseline;
+      padding: 8px 10px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 8px; font-size: 13px; }
+    .pks-row .who { font-weight: 600; white-space: nowrap; }
+    .pks-row .who i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; }
+    .pks-row .warn, .pks-detailbox .warn { color: var(--pks-warn); }
+    .pks-tbl { border-collapse: collapse; font-size: 12px; }
+    .pks-tbl td, .pks-tbl th { border-bottom: 1px solid #e2e8f0; padding: 4px 6px; text-align: left; white-space: nowrap; }
+    .pks-empty, .pks-meta { color: #64748b; font-size: 12.5px; }
     /* ── breadcrumbs ──────────────────────────────────────────────────────────
        build.py stamps <div class="pk-crumbs" data-crumbs="[…]"> with labels it already
        knows (generic name, ATC class, paper stem). A plugin that only split the URL could
@@ -632,6 +709,115 @@
       });
     });
 
+    // ── sites page ──────────────────────────────────────────────────────────────
+    // /sites builds an ADME site heat-map + anatomogram for any set of drugs, on demand,
+    // from the second database. The rendering code (assets/js/pk-sites.js) and the
+    // database are fetched the first time the page is opened and never elsewhere. The
+    // selected set lives in the hash (#/sites?drugs=a,b,c) so a comparison is a link.
+    (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
+      var DB = null, MODEL = null, SEL = [], focus = null, scriptP = null, wired = false;
+      function el(id) {
+        var live = document.querySelectorAll('.markdown-section [id="' + id + '"]');
+        return live.length ? live[live.length - 1] : document.getElementById(id);
+      }
+      function status(msg, isErr) {
+        var s = el('pks-status'); if (!s) return;
+        s.textContent = msg; s.className = 'pkq-status' + (isErr ? ' err' : ''); s.hidden = !msg;
+      }
+      function script() {
+        if (scriptP) return scriptP;
+        scriptP = new Promise(function (resolve, reject) {
+          if (window.pkSites) return resolve();
+          var t = document.createElement('script'); t.src = 'assets/js/pk-sites.js';
+          t.onload = resolve; t.onerror = function () { scriptP = null; reject(new Error('could not load pk-sites.js')); };
+          document.body.appendChild(t);
+        });
+        return scriptP;
+      }
+      function slugsFromHash() {
+        var m = /[?&]drugs=([^&]+)/.exec(location.hash || '');
+        return m ? decodeURIComponent(m[1]).split(',').map(function (x) { return x.trim(); }).filter(Boolean) : [];
+      }
+      function writeHash() {
+        var base = location.hash.split('?')[0] || '#/sites';
+        var h = SEL.length ? base + '?drugs=' + SEL.map(function (d) { return encodeURIComponent(d.slug); }).join(',') : base;
+        if (location.hash !== h) history.replaceState(null, '', h);
+      }
+      function chips() {
+        var box = el('pks-chips'); if (!box) return;
+        box.innerHTML = SEL.map(function (d, i) {
+          return '<button type="button" class="pks-chip" data-slug="' + pkSites.esc(d.slug) + '" aria-pressed="' + (focus === d.slug) + '">' +
+            '<span class="sw" style="background:' + pkSites.COLORS[i] + '">' + pkSites.esc(pkSites.code(d.name)) + '</span>' + pkSites.esc(d.name) +
+            (d.has_records ? '' : ' <small class="pkq-meta">(no records)</small>') + '<span class="x" title="remove" data-rm="' + pkSites.esc(d.slug) + '">×</span></button>';
+        }).join('') + (SEL.length ? '<span class="pkq-meta">' + (focus ? 'isolating ' + pkSites.esc(focus) + ' — click again to clear' : 'click a drug to isolate it; × removes it') + '</span>' : '<span class="pkq-meta">pick two or more drugs to compare</span>');
+      }
+      function draw() {
+        if (!DB || !window.pkSites) return;
+        chips(); writeHash();
+        var root = el('pk-sites'); if (!root) return;
+        MODEL = pkSites.compute(DB, SEL, { text: (el('pks-text') || {}).checked !== false });
+        var det = root.querySelector('.pks-detailbox'); if (det) delete det.dataset.pin;
+        pkSites.render(root, MODEL, { focus: focus, ddi: (el('pks-ddi') || {}).checked !== false });
+        var m = el('pks-meta'); if (m) m.textContent = MODEL.rows.length + ' site row(s), ' + MODEL.affected.length + ' affected-site row(s)';
+      }
+      function add(slug) {
+        if (SEL.length >= pkSites.MAX || SEL.some(function (d) { return d.slug === slug; })) return;
+        var r = pkSites.resolve(DB, [slug]); if (!r.length) return;
+        SEL.push(r[0]); draw();
+      }
+      function boot() {
+        status('Loading the site database…');
+        Promise.all([window.pkdb.loadAdme(status), script()]).then(function (res) {
+          DB = res[0];
+          status('');
+          el('pks-ui').hidden = false;
+          var want = slugsFromHash();
+          if (want.length) { SEL = pkSites.resolve(DB, want); }
+          else if (!SEL.length) { SEL = pkSites.resolve(DB, ['tolvaptan', 'telmisartan', 'hydrochlorothiazide', 'cilazapril', 'allopurinol']); }
+          draw();
+        }).catch(function (e) { status(String(e.message || e), true); });
+      }
+      hook.doneEach(function () {
+        if (!document.getElementById('pk-sites')) return;      // every other page stops here
+        boot();
+        if (wired) return;
+        wired = true;
+        document.addEventListener('input', function (ev) {
+          var t = ev.target; if (!t || t.id !== 'pks-pick' || !DB || !window.pkSites) return;
+          var box = el('pks-results'); if (!box) return;
+          var hits = pkSites.search(DB, t.value);
+          box.innerHTML = hits.map(function (h) {
+            return '<button type="button" data-add="' + pkSites.esc(h.slug) + '">' + pkSites.esc(h.name) + (h.via ? ' <small>(' + pkSites.esc(h.via) + ')</small>' : '') + (h.has_records ? '' : ' <small>no records</small>') + '</button>';
+          }).join('');
+        });
+        document.addEventListener('keydown', function (ev) {
+          var t = ev.target; if (!t || t.id !== 'pks-pick' || ev.key !== 'Enter') return;
+          var first = el('pks-results') && el('pks-results').querySelector('button[data-add]');
+          if (first) { add(first.dataset.add); t.value = ''; el('pks-results').innerHTML = ''; }
+        });
+        document.addEventListener('click', function (ev) {
+          var t = ev.target; if (!t || !DB) return;
+          var b = t.closest && t.closest('button[data-add]');
+          if (b) { add(b.dataset.add); var p = el('pks-pick'); if (p) p.value = ''; el('pks-results').innerHTML = ''; return; }
+          if (t.dataset && t.dataset.rm) { SEL = SEL.filter(function (d) { return d.slug !== t.dataset.rm; }); if (focus === t.dataset.rm) focus = null; draw(); ev.stopPropagation(); return; }
+          var c = t.closest && t.closest('.pks-chip');
+          if (c) { focus = focus === c.dataset.slug ? null : c.dataset.slug; draw(); return; }
+          if (t.id === 'pks-share') {
+            writeHash();
+            var url = location.href;
+            (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () { el('pks-hint').textContent = 'link copied'; }, function () { el('pks-hint').textContent = url; });
+          }
+        });
+        document.addEventListener('change', function (ev) {
+          var t = ev.target; if (t && (t.id === 'pks-ddi' || t.id === 'pks-text')) draw();
+        });
+        document.addEventListener('dblclick', function (ev) {
+          var d = ev.target.closest && ev.target.closest('.pks-detailbox');
+          if (d) { delete d.dataset.pin; draw(); }
+        });
+      });
+    });
+
     // ── breadcrumbs ────────────────────────────────────────────────────────────
     // Renders the trail the BUILDER stamped into .pk-crumbs. Nothing here derives a label
     // from the route: the builder knows the drug's generic name and its ATC class, a URL
@@ -778,7 +964,32 @@
         });
         return promise;
       }
-      return { load: load, get: function () { return DB; } };
+      // The ADME-sites database (export.adme_sqlite): same engine, its own file and pointer,
+      // loaded only by the /sites page. sql.js is initialised once for both.
+      var admePromise = null, ADME = null;
+      function engine(onStatus) {
+        return new Promise(function (resolve, reject) {
+          if (window.initSqlJs) return resolve(window.initSqlJs({ locateFile: function (f) { return 'assets/sqljs/' + f; } }));
+          onStatus('Loading the query engine…');
+          var tag = document.createElement('script');
+          tag.src = 'assets/sqljs/sql-wasm.js';
+          tag.onerror = function () { reject(new Error('could not load sql.js')); };
+          tag.onload = function () { resolve(window.initSqlJs({ locateFile: function (f) { return 'assets/sqljs/' + f; } })); };
+          document.body.appendChild(tag);
+        });
+      }
+      function loadAdme(onStatus) {
+        if (admePromise) return admePromise;
+        onStatus = onStatus || function () {};
+        admePromise = engine(onStatus).then(function (SQL) {
+          onStatus('Fetching the site database…');
+          return fetch('data/adme-latest.json').then(function (r) { if (!r.ok) throw new Error('adme-latest.json missing — run the docs set build'); return r.json(); })
+            .then(function (meta) { return bytes('data/' + meta.file); })
+            .then(function (buf) { ADME = new SQL.Database(new Uint8Array(buf)); return ADME; });
+        }).catch(function (e) { admePromise = null; throw e; });
+        return admePromise;
+      }
+      return { load: load, get: function () { return DB; }, loadAdme: loadAdme, getAdme: function () { return ADME; } };
     })();
   </script>
 

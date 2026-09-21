@@ -1,0 +1,66 @@
+{
+ "model_id": "Clopidogrel_Jung2024_PD_pru",
+ "note": "Values for the shared PD_IndirectTurnoverSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 204.16666666666669,
+  "EC50": 6.731999999999999e-05,
+  "Emax": 57.84,
+  "exposure_per_s": 1e-06,
+  "gamma": 1.851
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 204.16666666666669,
+  "6.731999999999999e-05": 6.823752228163993
+ },
+ "stop_time": 673.2,
+ "template": "PD_IndirectTurnoverSweep",
+ "template_fmu": "PD_IndirectTurnoverSweep.fmu",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "ng/mL",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "ng/mL",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": ""
+ },
+ "x_axis": {
+  "display_unit": "ng/mL",
+  "factor": 1e-06,
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "",
+  "factor": 1.0,
+  "label": "response"
+ }
+}

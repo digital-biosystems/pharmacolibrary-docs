@@ -14,10 +14,8 @@ not matched (stem OToole_2011)
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|
-| R313E — n | `Q313` · not captured | 12 | not captured | not captured | llm (not captured) | tab_0:row4:col4 |
-| R313E — n | `Q313` · not captured | 10 | not captured | not captured | llm (not captured) | tab_0:row4:col9 |
-| K337E — n | `Q339` · not captured | 11 | not captured | not captured | llm (not captured) | tab_0:row14:col4 |
-| K337E — n | `Q339` · not captured | 9 | not captured | not captured | llm (not captured) | tab_0:row14:col9 |
+| n — K337E | `Q339` · not captured | 11 | not captured | not captured | llm (not captured) | tab_0:row3:col15 |
+| n — K337E | `Q339` · not captured | 9 | not captured | not captured | llm (not captured) | tab_0:row8:col15 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

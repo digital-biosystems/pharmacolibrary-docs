@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;cannabidiol&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/&quot;},{&quot;label&quot;:&quot;Eichler_2023 \u00b7 first_trial_0_2_mg_kg_n_3&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3&quot;,&quot;label&quot;:&quot;Eichler_2023_first_trial_0_2_mg_kg_n_3&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3&quot;,&quot;label&quot;:&quot;Eichler_2023_first_trial_0_2_mg_kg_n_3&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_omega&quot;,&quot;label&quot;:&quot;Eichler_2023_omega&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_omega.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_omega&quot;,&quot;label&quot;:&quot;Eichler_2023_omega&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_omega.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_population_value&quot;,&quot;label&quot;:&quot;Eichler_2023_population_value&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_population_value&quot;,&quot;label&quot;:&quot;Eichler_2023_population_value&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3&quot;,&quot;label&quot;:&quot;Eichler_2023_second_trial_1_mg_kg_n_3&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3&quot;,&quot;label&quot;:&quot;Eichler_2023_second_trial_1_mg_kg_n_3&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_shrinkage&quot;,&quot;label&quot;:&quot;Eichler_2023_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_shrinkage.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_shrinkage&quot;,&quot;label&quot;:&quot;Eichler_2023_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_shrinkage.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5&quot;,&quot;label&quot;:&quot;Eichler_2023_third_trial_3_mg_kg_n_5&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5&quot;,&quot;label&quot;:&quot;Eichler_2023_third_trial_3_mg_kg_n_5&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cannabidiol_Nachnani2024_reference&quot;,&quot;label&quot;:&quot;Nachnani_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Nachnani2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Shaik2026_reference&quot;,&quot;label&quot;:&quot;Shaik_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Shaik2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Snchez2023_reference&quot;,&quot;label&quot;:&quot;S\u00e1nchez_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Snchez2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3&quot;,&quot;label&quot;:&quot;Eichler_2023_first_trial_0_2_mg_kg_n_3&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3&quot;,&quot;label&quot;:&quot;Eichler_2023_first_trial_0_2_mg_kg_n_3&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_population_value&quot;,&quot;label&quot;:&quot;Eichler_2023_population_value&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_population_value&quot;,&quot;label&quot;:&quot;Eichler_2023_population_value&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3&quot;,&quot;label&quot;:&quot;Eichler_2023_second_trial_1_mg_kg_n_3&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3&quot;,&quot;label&quot;:&quot;Eichler_2023_second_trial_1_mg_kg_n_3&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_second_trial_1_mg_kg_n_3.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5&quot;,&quot;label&quot;:&quot;Eichler_2023_third_trial_3_mg_kg_n_5&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5&quot;,&quot;label&quot;:&quot;Eichler_2023_third_trial_3_mg_kg_n_5&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cannabidiol — `Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
@@ -13,12 +13,11 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
+**What is wrong:** every check the reviewer could run passed.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
-2. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-3. If the paper never reports it, the record cannot become a model.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -27,12 +26,12 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
   ·  DOI: [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551)
 
 ## Model component
-<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3" status="model_quarantined" stale="false" population="horses" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3" status="needs_review" stale="false" population="horses" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -41,6 +40,7 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
 | tmax (hr) | `Q56` · tmax | 1.01 | hr | 3636.0 | [h] | not captured | exact (1.0) | Eichler_2023_table_5:row2:col1 | — | not captured |
 | Q2 | `Q30` · Q | 1.35 | L/h/kg | 2.625e-05 | L/h | not captured | special_case (0.95) | Eichler_2023:discussion_prose | — | not captured |
 | clearance | `Q22` · CL | 10.75 | L/h/kg | 0.00020902777777777781 | L/h | not captured | exact (1.0) | Eichler_2023:discussion_prose | — | not captured |
+| THC Volumedist (L) | `Q61` · V | 3173.0 | L | 3.173 | L | not captured | review_gapfill (0.7) | Hansen_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -62,7 +62,8 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
-- population split: 'first trial (0.2 mg/kg, n = 3)' subgroup of Eichler_2023 (paper reports 6 populations: first trial (0.2 mg/kg, n = 3), omega, population value, second trial (1 mg/kg, n = 3), shrinkage (%), third trial (3 mg/kg, n = 5))
+- population split: 'first trial (0.2 mg/kg, n = 3)' subgroup of Eichler_2023 (paper reports 4 populations: first trial (0.2 mg/kg, n = 3), population value, second trial (1 mg/kg, n = 3), third trial (3 mg/kg, n = 5))
+- gap-filled Q61 (V) from Hansen_2024's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
@@ -75,28 +76,18 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C1_half_life_beta | fail | 161.29 | 204.591 | 1.2685 | 0.25 | reported t½β |
 | C5_dimension_Q19 | pass | [time] * [mass] / [length] ** 3 | not captured | not captured | not captured | ['Eichler_2023_table_5:row0:col1'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Eichler_2023_table_5:row1:col1'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Eichler_2023_table_5:row2:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Hansen_2024:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.75 | not captured | not captured | ['Eichler_2023:discussion_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 753 L/h | not captured | not captured | ['Eichler_2023:discussion_prose'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 0.39 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.7 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.72 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 161.29 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 79.85 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| C9_phys_window_Q61 | pass | volume within physiological range | 3.17e+03 L | not captured | not captured | ['Hansen_2024:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -106,8 +97,6 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_cannabidiol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Eichler_2023` / `Eichler_2023::first_trial_0_2_mg_kg_n_3`)
-- model: `../../../knowledgebase/drugs/drug_cannabidiol/models/modelica/_needs_review/Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3.mo`
-- deviation: `../../../knowledgebase/drugs/drug_cannabidiol/models/modelica/_needs_review/Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -1,0 +1,54 @@
+{
+ "model_id": "Allopurinol_Wen2023_PD_su",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 0.017599999999999998,
+  "Emax": -0.07599999999999998,
+  "exposure_per_s": 0.0009999999999999998,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "0.017599999999999998": -0.03799999999999999
+ },
+ "stop_time": 176.0,
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "mg/dL",
+   "factor": 0.009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "mg/dL"
+ },
+ "x_axis": {
+  "display_unit": "mg/L",
+  "factor": 0.0009999999999999998,
+  "per_s": 0.0009999999999999998,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mg/dL",
+  "factor": 0.009999999999999998,
+  "label": "response"
+ }
+}

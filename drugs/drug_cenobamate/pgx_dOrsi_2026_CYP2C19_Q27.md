@@ -8,7 +8,7 @@
 - **applies to:** pk
 - **target:** `Q27` CL/F
 - **effect (θ / form):** categorical_fractional
-- **phenotype map:** standardized
+- **phenotype map:** partial
 - **evidence:** risk_association
 
 ## Citation
