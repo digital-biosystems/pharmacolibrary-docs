@@ -3,7 +3,7 @@
 # left atrial contractile force — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Yabuuchi_1977`
-- **model family:** `unknown`
+- **model family:** `emax`
 - **driver:** `not_resolved`
 - **tier:** descriptive
 - **effect:** stimulation/unknown

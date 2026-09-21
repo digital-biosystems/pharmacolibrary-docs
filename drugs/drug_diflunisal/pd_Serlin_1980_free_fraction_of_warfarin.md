@@ -1,10 +1,11 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diflunisal_Gao1998_reference&quot;,&quot;label&quot;:&quot;Gao_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diflunisal/Diflunisal_Gao1998_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Serlin_1980`
 - **model family:** `linear`
-- **driver:** `conc_no_pk`
+- **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
 

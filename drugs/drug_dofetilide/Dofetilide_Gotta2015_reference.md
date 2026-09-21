@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;dofetilide&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/&quot;},{&quot;label&quot;:&quot;Gotta_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dofetilide_Gotta2015_reference&quot;,&quot;label&quot;:&quot;Gotta_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/Dofetilide_Gotta2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dofetilide_Le1995_reference&quot;,&quot;label&quot;:&quot;Le_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/Dofetilide_Le1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dofetilide_Gotta2015_reference&quot;,&quot;label&quot;:&quot;Gotta_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/Dofetilide_Gotta2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -21,7 +21,7 @@ Gotta V; Cools F; van Ammel K; Gallacher DJ; Visser SA; Sannajust F; et al. et a
   ·  DOI: [10.1111/bph.13218](https://doi.org/10.1111/bph.13218)
 
 ## Model component
-<dbs-pgx drug="dofetilide" model-id="Dofetilide_Gotta2015_reference" status="rejected" stale="false" population="conscious dogs" measured-compound="moxifloxacin, dofetilide, sotalol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="dofetilide" model-id="Dofetilide_Gotta2015_reference" status="rejected" stale="false" population="conscious dogs" measured-compound="dofetilide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -45,7 +45,7 @@ Gotta V; Cools F; van Ammel K; Gallacher DJ; Visser SA; Sannajust F; et al. et a
 - dropped PD-category row 'ρ Emax-EC50' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row44:col2'])
 - dropped PD-category row 'ρ Emax-Hill coefficient' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row45:col2'])
 - dropped PD-category row 'ρ EC50-Hill coefficient' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row46:col2'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=moxifloxacin, dofetilide, sotalol
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dofetilide
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Gotta_2015's review values (primary lacked it)

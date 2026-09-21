@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flupirtine_Giorgi2016_healthy_adult_mares&quot;,&quot;label&quot;:&quot;Giorgi_2016_healthy adult mares&quot;,&quot;href&quot;:&quot;drugs/drug_flupirtine/Flupirtine_Giorgi2016_healthy_adult_mares.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flupirtine_Giorgi2016_reference&quot;,&quot;label&quot;:&quot;Giorgi_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_flupirtine/Flupirtine_Giorgi2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # GSTP1 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>

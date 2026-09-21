@@ -1,37 +1,32 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;galcanezumab&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/&quot;},{&quot;label&quot;:&quot;Kielbasa_2020 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_final&quot;,&quot;label&quot;:&quot;Kielbasa_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_final.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_final&quot;,&quot;label&quot;:&quot;Kielbasa_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_final.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_base&quot;,&quot;label&quot;:&quot;Kielbasa_2020_base&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_base&quot;,&quot;label&quot;:&quot;Kielbasa_2020_base&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Galcanezumab_FiedlerKelly2021_reference&quot;,&quot;label&quot;:&quot;Fiedler-Kelly_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_FiedlerKelly2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_final&quot;,&quot;label&quot;:&quot;Kielbasa_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_final&quot;,&quot;label&quot;:&quot;Kielbasa_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_base&quot;,&quot;label&quot;:&quot;Kielbasa_2020_base&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_base&quot;,&quot;label&quot;:&quot;Kielbasa_2020_base&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # galcanezumab — `Galcanezumab_Kielbasa2020_final`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
-3. Advisory only — the base model still replicates.
-4. Check the record's covariate_definitions in _interpretv2.yaml.
-5. Re-run the engineer for this drug if the covariate curves are wanted.
-6. Read the .deviation.json and confirm each deviation names what changed and why.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
 Kielbasa W; Quinlan T et al. (2020). Journal of clinical pharmacology 60
   ·  DOI: [10.1002/jcph.1511](https://doi.org/10.1002/jcph.1511)
 
 ## Model component
-<dbs-pgx drug="galcanezumab" model-id="Galcanezumab_Kielbasa2020_final" status="model_quarantined" stale="false" population="healthy individuals and patients with migraine" measured-compound="galcanezumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="galcanezumab" model-id="Galcanezumab_Kielbasa2020_final" status="needs_review" stale="false" population="healthy individuals and patients with migraine" measured-compound="galcanezumab" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -80,19 +75,10 @@ Kielbasa W; Quinlan T et al. (2020). Journal of clinical pharmacology 60
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -102,8 +88,6 @@ Kielbasa W; Quinlan T et al. (2020). Journal of clinical pharmacology 60
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_galcanezumab/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kielbasa_2020` / `Kielbasa_2020::final`)
-- model: `../../../knowledgebase/drugs/drug_galcanezumab/models/modelica/_needs_review/Galcanezumab_Kielbasa2020_final.mo`
-- deviation: `../../../knowledgebase/drugs/drug_galcanezumab/models/modelica/_needs_review/Galcanezumab_Kielbasa2020_final.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

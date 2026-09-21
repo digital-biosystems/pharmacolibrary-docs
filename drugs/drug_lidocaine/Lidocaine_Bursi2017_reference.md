@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;lidocaine&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/&quot;},{&quot;label&quot;:&quot;Bursi_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lidocaine_Bursi2017_reference&quot;,&quot;label&quot;:&quot;Bursi_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Bursi2017_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lidocaine_Reichel1998_reference&quot;,&quot;label&quot;:&quot;Reichel_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Reichel1998_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_He2025_reference&quot;,&quot;label&quot;:&quot;He_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_He2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_reference&quot;,&quot;label&quot;:&quot;Kim_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lidocaine_Bursi2017_reference&quot;,&quot;label&quot;:&quot;Bursi_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Bursi2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lidocaine_Reichel1998_reference&quot;,&quot;label&quot;:&quot;Reichel_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Reichel1998_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_He2025_reference&quot;,&quot;label&quot;:&quot;He_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_He2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_0_3_solution_iv&quot;,&quot;label&quot;:&quot;Kim_2021_0_3_solution_iv&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_0_3_solution_iv.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_0_3_solution_iv&quot;,&quot;label&quot;:&quot;Kim_2021_0_3_solution_iv&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_0_3_solution_iv.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_0_3_solution_sc&quot;,&quot;label&quot;:&quot;Kim_2021_0_3_solution_sc&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_0_3_solution_sc.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_0_3_solution_sc&quot;,&quot;label&quot;:&quot;Kim_2021_0_3_solution_sc&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_0_3_solution_sc.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_estimate&quot;,&quot;label&quot;:&quot;Kim_2021_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_estimate&quot;,&quot;label&quot;:&quot;Kim_2021_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_group_1&quot;,&quot;label&quot;:&quot;Kim_2021_group_1&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_group_1.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_group_1&quot;,&quot;label&quot;:&quot;Kim_2021_group_1&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_group_1.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_group_2&quot;,&quot;label&quot;:&quot;Kim_2021_group_2&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_group_2.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_group_2&quot;,&quot;label&quot;:&quot;Kim_2021_group_2&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_group_2.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_group_3&quot;,&quot;label&quot;:&quot;Kim_2021_group_3&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_group_3.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_group_3&quot;,&quot;label&quot;:&quot;Kim_2021_group_3&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_group_3.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_group_4&quot;,&quot;label&quot;:&quot;Kim_2021_group_4&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_group_4.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_group_4&quot;,&quot;label&quot;:&quot;Kim_2021_group_4&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_group_4.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_group_5&quot;,&quot;label&quot;:&quot;Kim_2021_group_5&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_group_5.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_group_5&quot;,&quot;label&quot;:&quot;Kim_2021_group_5&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_group_5.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_gx&quot;,&quot;label&quot;:&quot;Kim_2021_gx&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_gx.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_gx&quot;,&quot;label&quot;:&quot;Kim_2021_gx&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_gx.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_lha_0_3_sc&quot;,&quot;label&quot;:&quot;Kim_2021_lha_0_3_sc&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_lha_0_3_sc.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_lha_0_3_sc&quot;,&quot;label&quot;:&quot;Kim_2021_lha_0_3_sc&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_lha_0_3_sc.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_lha_1_sc&quot;,&quot;label&quot;:&quot;Kim_2021_lha_1_sc&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_lha_1_sc.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_lha_1_sc&quot;,&quot;label&quot;:&quot;Kim_2021_lha_1_sc&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_lha_1_sc.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_lha_3_sc&quot;,&quot;label&quot;:&quot;Kim_2021_lha_3_sc&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_lha_3_sc.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lidocaine_Kim2021_lha_3_sc&quot;,&quot;label&quot;:&quot;Kim_2021_lha_3_sc&quot;,&quot;href&quot;:&quot;drugs/drug_lidocaine/Lidocaine_Kim2021_lha_3_sc.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lidocaine — `Lidocaine_Bursi2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
@@ -13,15 +13,11 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 2 scholar param(s) emitted or defaulted — got 1 covered.
+**What is wrong:** every check the reviewer could run passed.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
-2. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-3. If the paper never reports it, the record cannot become a model.
-4. Advisory only — the base model still replicates.
-5. Check the record's covariate_definitions in _interpretv2.yaml.
-6. Re-run the engineer for this drug if the covariate curves are wanted.
+2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -30,12 +26,12 @@ Bursi R; Piana C; Grevel J; Huntjens D; Boesl I et al. (2017). European journal 
   ·  DOI: [10.1007/s13318-017-0400-7](https://doi.org/10.1007/s13318-017-0400-7)
 
 ## Model component
-<dbs-pgx drug="lidocaine" model-id="Lidocaine_Bursi2017_reference" status="model_quarantined" stale="false" population="post-herpetic neuralgia patients" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="lidocaine" model-id="Lidocaine_Bursi2017_reference" status="needs_review" stale="false" population="post-herpetic neuralgia patients" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -109,20 +105,11 @@ Bursi R; Piana C; Grevel J; Huntjens D; Boesl I et al. (2017). European journal 
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q304 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row7:col1', 'Tab3:row7:col2'] |
 | C5_dimension_Q48 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row3:col1', 'Tab3:row3:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T3_param_coverage | not captured | fail | 2 scholar param(s) emitted or defaulted | 1 covered | not captured | neither emitted nor in defaulted[]: ['kcomp'] |
-| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -132,8 +119,6 @@ Bursi R; Piana C; Grevel J; Huntjens D; Boesl I et al. (2017). European journal 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_lidocaine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bursi_2017` / `Bursi_2017::reference`)
-- model: `../../../knowledgebase/drugs/drug_lidocaine/models/modelica/_needs_review/Lidocaine_Bursi2017_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_lidocaine/models/modelica/_needs_review/Lidocaine_Bursi2017_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

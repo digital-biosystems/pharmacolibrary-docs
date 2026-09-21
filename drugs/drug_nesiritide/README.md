@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 23:21 | 45:21 | 0/0/0 | 3/3/0 | 0/0/0 | 656,516/12,785 | ollama / qwen3.8:27b-mtp-q8_0 | 71 | 9/62 | 69/2 | 0 |
+| 2026-09-20 21:11 | 54:47 | 0/0/0 | 3/4/0 | 0/0/0 | 1,282,269/21,049 | ollama / qwen3.8:27b-mtp-q8_0 | 72 | 10/62 | 70/2 | 0 |
 
 ## popPK records
 
@@ -31,12 +31,13 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Krause_2017](drugs/drug_nesiritide/pd_Krause_2017_unknown.md) | Krause A et al., Population Modeling of Selexipag Pharma…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12202](https://doi.org/10.1002/psp4.12202) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Steichert_2025](drugs/drug_nesiritide/pd_Steichert_2025_unknown.md) | Steichert M et al., Angiotensin II/Angiotensin I Ratio as a…, Pharmaceutics (2025) | [10.3390/pharmaceutics17101345](https://doi.org/10.3390/pharmaceutics17101345) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Addisu_2008](drugs/drug_nesiritide/pd_Addisu_2008_unknown.md) | Addisu A et al., B-type natriuretic peptide decreases ga…, Experimental biology and me… (2008) | [10.3181/0708-RM-216](https://doi.org/10.3181/0708-RM-216) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Fontana_2026](drugs/drug_nesiritide/pd_Fontana_2026_TTR.md) | Fontana M et al., Vutrisiran-Mediated Knockdown of Transt…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01651-3](https://doi.org/10.1007/s40262-026-01651-3) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Rothman_2025](drugs/drug_nesiritide/pd_Rothman_2025_TPR.md) | Rothman AMK et al., Positioning Imatinib for Pulmonary Arte…, American journal of respira… (2025) | [10.1164/rccm.202410-1929oc](https://doi.org/10.1164/rccm.202410-1929oc) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2017](drugs/drug_nesiritide/pd_Zhang_2017_unknown.md) | Zhang MY et al., DanHong injection targets endothelin re…, Oncotarget (2017) | [10.18632/oncotarget.21900](https://doi.org/10.18632/oncotarget.21900) |
 
 ## Coverage
 
-- **PubMed hits:** 291 matched, 156 returned
+- **PubMed hits:** 292 matched, 160 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -57,7 +58,7 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Takagi_1993.pdf` | Takagi K et al., Relaxant effects of brain natriuretic p…, Clinical and experimental p… (1993) | pd | 4 | [10.1111/j.1440-1681.1993.tb01676.x](https://doi.org/10.1111/j.1440-1681.1993.tb01676.x) | [8387413](https://www.ncbi.nlm.nih.gov/pubmed/8387413) | metadata signals extractable PD data (EC50) |
 | `Yandle_1993.pdf` | Yandle TG et al., Assay of brain natriuretic peptide (BNP…, The Journal of clinical end… (1993) | pd | 4 | [10.1210/jcem.76.4.8473392](https://doi.org/10.1210/jcem.76.4.8473392) | [8473392](https://www.ncbi.nlm.nih.gov/pubmed/8473392) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-09T23:10:47.242465+00:00</sub>
+<sub>queue written 2026-09-20T20:54:32.616583+00:00</sub>
 
 ## Screened and excluded
 
@@ -66,61 +67,62 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Abdallah_2026 | irrelevant | 0 | 0 | The paper is a review on biogenic nanoparticles for antibiotic resistance and does not mention nesiritide or report any pharmacokinetic parameters for it. |
 | PD | Abdallah_2026 | not_relevant | 0 | 0 | The paper is a review on biogenic nanoparticles for antibiotic resistance and does not mention nesiritide or report any pharmacodynamic parameters. |
 | PGx | Abuzaanona_2017 | not_relevant | 2 | 0 | The text is a review summary that mentions nesiritide and the potential for genetic impacts on PK/PD but does not report specific quantitative pharmacogenomic effects or fitted parameters. |
-| PGx | Ain_2025 | not_relevant | 0 | 0 | The paper investigates pharmacogenomic effects of empagliflozin, not nesiritide. |
-| popPK | Alonso-Vega_2021 | irrelevant | 0 | 0 | The paper is a study design for Chagas disease treatment using benznidazole and nifurtimox, and does not involve nesiritide. |
+| PGx | Ain_2025 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomic response to empagliflozin, not nesiritide. |
+| popPK | Alonso-Vega_2021 | irrelevant | 0 | 0 | The paper is a clinical trial design for Chagas disease treatment using benznidazole and nifurtimox, and does not involve nesiritide. |
 | PD | Alonso-Vega_2021 | not_relevant | 0 | 0 | The paper is a study protocol for a clinical trial involving benznidazole and nifurtimox, not nesiritide, and does not report any pharmacodynamic or exposure-response data. |
 | popPK | Andrinopoulou_2015 | irrelevant | 0 | 0 | The paper focuses on dynamic prediction of outcomes in aortic stenosis using BNP data and does not involve nesiritide or report any pharmacokinetic parameters. |
 | PD | Bachmann_2019 | not_relevant | 0 | 0 | The paper investigates the effect of testosterone on natriuretic peptide levels, not the pharmacodynamics of nesiritide. |
 | popPK | Bianco_2020 | irrelevant | 0 | 0 | The paper is a retrospective study on QT interval prolongation in COVID-19 patients and does not mention nesiritide or report any pharmacokinetic parameters. |
 | PD | Bianco_2020 | not_relevant | 0 | 0 | The paper is a retrospective clinical study on QTc prolongation in COVID-19 patients and does not report any pharmacodynamic or exposure-response analysis for nesiritide. |
-| PD | Brojakowska_2023 | not_relevant | 0 | 0 | The paper investigates radiation dose-response in mice and does not involve the drug nesiritide or any pharmacodynamic modeling. |
+| PD | Brojakowska_2023 | not_relevant | 0 | 0 | The paper investigates radiation dose-response relationships in mice, not the pharmacodynamics of the drug nesiritide. |
 | popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy that does not mention nesiritide or report any pharmacokinetic parameters for it. |
 | PD | Cabré_2026 | not_relevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report any specific pharmacodynamic or exposure-response data for nesiritide. |
-| PGx | Cao_2024 | not_relevant | 0 | 0 | The paper analyzes serum markers in COVID-19 patients and does not mention nesiritide or any pharmacogenomic effects on its PK/PD parameters. |
+| PGx | Cao_2024 | not_relevant | 0 | 0 | The paper analyzes serum biomarkers in COVID-19 patients and does not mention nesiritide or any pharmacogenomic effects on its PK/PD. |
+| PD | Cao_2026 | not_relevant | 0 | 0 | The paper studies mavacamten, not nesiritide, and reports clinical outcomes rather than a pharmacodynamic exposure-response model. |
 | popPK | Cermak_1996 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study on rat mesangial cells investigating the mechanism of natriuretic peptides, not a pharmacokinetic study of nesiritide. |
 | popPK | Chrysant_2017 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics and effects of LCZ-696 (sacubitril/valsartan), not nesiritide, and contains no quantitative PK parameters for nesiritide. |
-| PD | Chrysant_2017 | not_relevant | 0 | 0 | The text is a qualitative introduction/review of LCZ-696's mechanism and does not contain any numeric PD parameters, concentration-effect curves, or dose-response data. |
-| PGx | Cipriani_2022 | not_relevant | 0 | 0 | The paper investigates the prognostic value of low QRS voltages in cardiac amyloidosis and does not mention nesiritide or any pharmacokinetic/pharmacodynamic parameters. |
-| popPK | Dabour_2026 | irrelevant | 0 | 0 | The study focuses on the PK/PD of doxorubicin and biomarkers GDF15/NT-proBNP, and does not involve nesiritide. |
+| PD | Chrysant_2017 | not_relevant | 0 | 0 | The text is a qualitative introduction/review of LCZ-696 (sacubitril/valsartan) and does not contain any numeric PD parameters, concentration-effect curves, or specific exposure-response data for nesiritide. |
+| PGx | Cipriani_2022 | not_relevant | 0 | 0 | The paper investigates the prognostic significance of low QRS voltages in cardiac amyloidosis and does not mention nesiritide or any pharmacokinetic/pharmacodynamic parameters. |
+| popPK | Dabour_2026 | irrelevant | 0 | 0 | The paper focuses on the PK/PD of doxorubicin and biomarkers GDF15/NT-proBNP, and does not study nesiritide. |
 | popPK | Dahrouj_2013 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on retinal pigment epithelium barrier function using natriuretic peptides (ANP, BNP, CNP) and does not involve nesiritide or report pharmacokinetic parameters. |
-| PD | Dahrouj_2013 | not_relevant | 0 | 0 | The paper investigates the effect of natriuretic peptides (ANP, BNP, CNP) on retinal barrier function, not nesiritide. |
+| PD | Dahrouj_2013 | not_relevant | 0 | 0 | The paper investigates the effect of natriuretic peptides (ANP, BNP, CNP) on RPE barrier function, not nesiritide. |
 | PGx | Dickey_2008 | not_relevant | 0 | 0 | The paper describes the design and receptor binding properties of novel synthetic natriuretic peptides, not the pharmacogenomics of nesiritide. |
-| PGx | Dickey_2010 | not_relevant | 0 | 0 | The paper investigates the structure-activity relationship of synthetic BNP analogs (L-BNP, M-BNP) and their receptor binding affinities, but does not report any pharmacogenomic effects (gene variants in patients) on the PK or PD of nesiritide. |
+| PGx | Dickey_2010 | not_relevant | 0 | 0 | The paper investigates the molecular binding properties of engineered BNP variants (L-BNP) to receptors, not the effect of human genetic variants on the pharmacokinetics or pharmacodynamics of nesiritide. |
 | popPK | Ding_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for vancomycin, not nesiritide. |
 | PD | Ding_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for vancomycin, not nesiritide, and contains no pharmacodynamic (PD) or exposure-response analysis. |
-| PD | Dou_2024 | not_relevant | 0 | 0 | The paper investigates black ginseng, not nesiritide, and does not report any pharmacodynamic or exposure-response data for nesiritide. |
+| PD | Dou_2024 | not_relevant | 0 | 0 | The paper investigates the pharmacological effects of black ginseng on heart failure in rats and does not mention nesiritide or report any exposure-response or dose-response PD parameters for it. |
 | popPK | El-Mowafy_2007 | irrelevant | 0 | 0 | The paper investigates the mechanism of resveratrol and estradiol on guanylyl cyclase in coronary cells and does not involve nesiritide or pharmacokinetic parameters. |
 | PD | El-Mowafy_2007 | not_relevant | 0 | 0 | The paper investigates the pharmacology of resveratrol and estradiol, not nesiritide. |
+| popPK | Fontana_2026 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics and pharmacodynamics of vutrisiran, not nesiritide. |
 | PD | Fridkin_2011 | not_relevant | 0 | 0 | The paper reports in vitro binding affinities (IC50) for somatostatin and BNP analogs, not nesiritide, and does not contain any pharmacodynamic or exposure-response analysis. |
-| PD | Furukawa_2017 | not_relevant | 0 | 0 | The paper is an epidemiological study analyzing the association between BNP levels and renal function in diabetic patients; it does not involve the drug nesiritide or report any pharmacodynamic or exposure-response parameters. |
+| PD | Furukawa_2017 | not_relevant | 0 | 0 | The paper is an observational cohort study analyzing the association between endogenous BNP levels and renal function in diabetic patients, not a pharmacodynamic study of the drug nesiritide. |
 | popPK | Gardner_2022 | irrelevant | 0 | 0 | The study investigates the correlation between BNP levels and growth factors in infants and does not report any pharmacokinetic parameters for nesiritide. |
-| popPK | Gower_2006 | irrelevant | 0 | 0 | The paper investigates natriuretic peptide receptor expression and binding in gastric cells, not the pharmacokinetics of nesiritide. |
+| popPK | Gower_2006 | irrelevant | 0 | 0 | The paper investigates receptor binding and cell proliferation in gastric epithelial cells and does not report pharmacokinetic parameters for nesiritide. |
 | PD | Gower_2006 | not_relevant | 0 | 0 | The paper studies ANP/BNP/CNP receptor binding and signaling in gastric cells, not nesiritide pharmacodynamics. |
 | popPK | Guslits_2021 | irrelevant | 0 | 0 | The study evaluates BNP as a biomarker for outcome prediction in infants with congenital diaphragmatic hernia and does not report pharmacokinetic parameters for nesiritide. |
-| popPK | Hachamovitch_2015 | irrelevant | 0 | 0 | The paper is a prognostic imaging study using 123I-mIBG and does not involve nesiritide or report any pharmacokinetic parameters. |
-| PGx | Hahn_2022 | not_relevant | 0 | 0 | The paper investigates genetic effects on endogenous natriuretic peptide levels, not the pharmacokinetics or pharmacodynamics of the drug nesiritide. |
+| popPK | Hachamovitch_2015 | irrelevant | 0 | 0 | The paper is a prognostic imaging study using 123I-mIBG and does not report pharmacokinetic parameters for nesiritide. |
+| PGx | Hahn_2022 | not_relevant | 0 | 0 | The paper investigates the genetic determinants of endogenous natriuretic peptide (BNP/NT-proBNP) levels, not the pharmacokinetics or pharmacodynamics of the drug nesiritide. |
 | PD | Hellmann_2020 | not_relevant | 0 | 0 | The paper analyzes the effect of genetic polymorphisms on cardiac biomarker concentrations in patients treated with doxorubicin, not nesiritide, and does not report any exposure-response or dose-response PD parameters. |
 | PGx | Hellmann_2020 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of doxorubicin, not nesiritide. |
 | popPK | Hernández_1994 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on natriuretic peptides in guinea-pig cerebellar slices and does not report pharmacokinetic parameters for nesiritide. |
 | PD | Hernández_1994 | not_relevant | 0 | 0 | The paper studies natriuretic peptides (ANP, BNP, CNP) in guinea-pig cerebellar slices, not nesiritide, and does not report any PD relationship for the target drug. |
-| PD | Hill_1994 | not_relevant | 0 | 0 | The paper discusses brain natriuretic peptide (BNP) and hypoxic pulmonary hypertension, not nesiritide, and does not report any exposure-response or dose-response data for nesiritide. |
+| PD | Hill_1994 | not_relevant | 0 | 0 | The paper studies brain natriuretic peptide (BNP) in rats, not the drug nesiritide, and does not report a PD relationship for nesiritide. |
 | popPK | Hill_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ambrisentan, not nesiritide. |
 | PD | Hill_2020 | not_relevant | 0 | 0 | The paper studies ambrisentan, not nesiritide. |
 | popPK | Hu_2025 | irrelevant | 0 | 0 | The study focuses on pharmacokinetic modeling of vancomycin, not nesiritide. |
 | popPK | Hussain_2019 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on pulmonary artery rings using ANP and BNP, not a pharmacokinetic study of nesiritide. |
-| PD | Hussain_2019 | not_relevant | 0 | 0 | The paper studies ANP and BNP in an in vitro myograph assay, not nesiritide. |
+| PD | Hussain_2019 | not_relevant | 0 | 0 | The paper reports PD parameters for ANP and BNP, but does not report any data or parameters for nesiritide. |
 | popPK | Israni_2026 | irrelevant | 0 | 0 | The paper is a review on bioactive anti-inflammatory compounds and does not mention nesiritide or report any pharmacokinetic parameters for it. |
 | PD | Israni_2026 | not_relevant | 0 | 0 | The paper is a review on natural anti-inflammatory compounds and does not mention nesiritide or report any pharmacodynamic parameters for it. |
-| PGx | Jia_2023 | not_relevant | 0 | 0 | The paper studies the effect of Nprc gene deletion on exercise performance in mice and does not involve the drug nesiritide. |
-| PGx | Jonas_2017 | not_relevant | 0 | 0 | The paper investigates the signaling mechanisms of C-type natriuretic peptide (CNP) in pituitary cells and does not mention nesiritide or any pharmacogenomic effects on its PK/PD parameters. |
-| PD | Kambayashi_1990 | not_relevant | 0 | 0 | The paper characterizes BNP (a different peptide) and does not report pharmacodynamic or exposure-response data for nesiritide. |
-| PGx | Karmacharya_2019 | not_relevant | 0 | 0 | The paper studies gut microbiota in Bengal tigers and does not mention nesiritide or any pharmacokinetic/pharmacodynamic parameters. |
+| PGx | Jia_2023 | not_relevant | 0 | 0 | The paper investigates the effect of Nprc gene deletion on exercise performance in mice and does not involve the drug nesiritide or its pharmacokinetic/pharmacodynamic parameters. |
+| PGx | Jonas_2017 | not_relevant | 0 | 0 | The paper investigates the signaling mechanism of C-type natriuretic peptide (CNP) in GH3 cells, not the pharmacokinetics or pharmacodynamics of the drug nesiritide in humans or animal models. |
+| PGx | Karmacharya_2019 | not_relevant | 0 | 0 | The paper studies gut microbiota in Bengal tigers and contains no information regarding nesiritide or human pharmacogenomics. |
 | popPK | Karpińska_2024 | irrelevant | 0 | 0 | The paper is an ecological study on bird distribution in forests and contains no information regarding nesiritide or pharmacokinetics. |
 | popPK | Kassem_2021 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for candesartan, not nesiritide. |
 | PD | Kassem_2021 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for candesartan, not nesiritide, and does not include a pharmacodynamic (PD) or exposure-response model. |
 | popPK | Katoli_2010 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of natriuretic peptide receptors in corneal epithelium and does not report pharmacokinetic parameters for nesiritide. |
-| PD | Katoli_2010 | not_relevant | 0 | 0 | The paper studies natriuretic peptides (CNP, ANP, BNP) in corneal cells, not the drug nesiritide. |
-| popPK | Khurana_1993 | irrelevant | 0 | 0 | The paper studies the effect of natriuretic peptides on testosterone production in mouse Leydig cells and does not involve nesiritide or pharmacokinetic parameters. |
+| PD | Katoli_2010 | not_relevant | 0 | 0 | The paper studies natriuretic peptides (CNP, ANP, BNP) in corneal cells, not nesiritide. |
+| popPK | Khurana_1993 | irrelevant | 0 | 0 | no_text gate: only 236 chars of text extracted (&lt; 400) |
 | PD | Khurana_1993 | not_relevant | 0 | 0 | The paper investigates the effect of natriuretic peptides on testosterone production in mouse Leydig cells and does not mention nesiritide or report any pharmacodynamic parameters for it. |
 | popPK | Kimura_2007 | irrelevant | 0 | 0 | The study investigates ANP and BNP, not nesiritide, which is the required subject drug. |
 | popPK | Koomen_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for atrasentan, not nesiritide. |
@@ -136,10 +138,11 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Li_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for dexamethasone, not nesiritide. |
 | PD | Li_2023 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics (PK) of dexamethasone, not nesiritide, and contains no pharmacodynamic (PD) or exposure-response analysis. |
 | popPK | Liang_2007 | irrelevant | 0 | 0 | The study investigates the mechanistic effects of BNP on cholesterol biosynthesis in cell culture and does not report pharmacokinetic parameters for nesiritide. |
+| PD | Liang_2007 | not_relevant | 0 | 0 | The paper studies B-type natriuretic peptide (BNP) in cell culture, not the drug nesiritide, and does not report a pharmacokinetic or population pharmacodynamic model for nesiritide. |
 | PGx | Liu_2022 | not_relevant | 0 | 0 | The paper investigates genetic predictors of cardiac toxicity in breast cancer chemotherapy and does not mention nesiritide. |
-| PD | Liu_2025 | not_relevant | 0 | 0 | The paper analyzes the association between the Systemic Immune-Inflammatory Index (SII) and cardiac biomarkers in a general population cohort; it does not involve the drug nesiritide or any pharmacodynamic exposure-response relationship. |
+| PD | Liu_2025 | not_relevant | 0 | 0 | The paper analyzes the association between the Systemic Immune-Inflammatory Index (SII) and cardiac biomarkers in a general population cohort; it does not involve the drug nesiritide or any pharmacodynamic modeling. |
 | popPK | Loss_2024 | irrelevant | 0 | 0 | The paper is a clinical study on pediatric heart failure focusing on BNP levels and vasoactive drug weaning, and does not report pharmacokinetic parameters for nesiritide. |
-| PD | Lu_2022 | not_relevant | 0 | 0 | The paper investigates the cardioprotective effects of Aidi injection (ADI) on doxorubicin-induced toxicity, not nesiritide. |
+| PD | Lu_2022 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of Aidi injection (ADI) and Doxorubicin (DOX), not nesiritide. |
 | PGx | Maimaitiming_2010 | not_relevant | 0 | 0 | The paper studies the association between NPPA/NPPB variants and blood pressure/kidney outcomes in a general population, and does not involve the drug nesiritide or its pharmacokinetics/pharmacodynamics. |
 | popPK | Makhaeva_2025 | irrelevant | 0 | 0 | The paper describes the synthesis and biological activity of ferrocene derivatives for Alzheimer's disease and does not involve nesiritide or pharmacokinetic parameters. |
 | PD | Makhaeva_2025 | not_relevant | 0 | 0 | The paper studies ferrocene derivatives for Alzheimer's disease and does not mention nesiritide or report any pharmacodynamic/exposure-response data for it. |
@@ -154,28 +157,28 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Mohammed_2025 | irrelevant | 0 | 0 | The paper investigates sphingolipids as biomarkers for doxorubicin-induced cardiotoxicity and does not involve nesiritide or report any pharmacokinetic parameters. |
 | popPK | Mohammed_2025_2 | irrelevant | 0 | 0 | The paper investigates sphingolipid biomarkers for doxorubicin cardiotoxicity and does not mention nesiritide or report any pharmacokinetic parameters. |
 | popPK | Müller_2013 | irrelevant | 0 | 0 | The paper is a statistical review of Bayesian nonparametric inference methods and does not contain any pharmacokinetic data or parameters for nesiritide. |
-| PD | Nakagawa_1995 | not_relevant | 0 | 0 | The paper focuses on the preparation of an antibody against BNP and its tissue distribution, containing no pharmacodynamic or exposure-response analysis for nesiritide. |
+| PD | Nakagawa_1995 | not_relevant | 0 | 0 | The paper describes the preparation of a monoclonal antibody and radioimmunoassay for mouse BNP and its tissue distribution, containing no pharmacodynamic or exposure-response analysis for nesiritide. |
 | popPK | Nakashima_2022 | irrelevant | 0 | 0 | The study investigates the effect of luseogliflozin on estimated plasma volume in heart failure patients and does not involve nesiritide or report any pharmacokinetic parameters for it. |
 | popPK | Narayan_2017 | irrelevant | 0 | 0 | The study evaluates cardiotoxicity of sunitinib and does not report pharmacokinetic parameters for nesiritide. |
 | PGx | Nishimura_2016 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of PDE-5 inhibitors in pulmonary hypertension, not nesiritide. |
-| PD | Oehlenschlager_1989 | not_relevant | 0 | 0 | The paper focuses on the shared binding sites of atrial and brain natriuretic peptides in the kidney and heart, not on the pharmacodynamic or exposure-response relationship of nesiritide. |
+| PD | Oehlenschlager_1989 | not_relevant | 0 | 0 | The paper is a receptor binding study on ANP and BNP in rats and does not involve nesiritide or report any pharmacodynamic exposure-response or dose-response parameters. |
 | PD | Ohyama_1992 | not_relevant | 0 | 0 | The paper studies the antagonist HS-142-1 and does not report any pharmacodynamic or exposure-response data for nesiritide. |
 | PGx | Okamoto_2013 | not_relevant | 0 | 0 | The paper studies carvedilol, not nesiritide. |
 | popPK | Okamoto_2025 | irrelevant | 0 | 0 | The paper is a clinical study on SGLT2 inhibitors in Fabry disease and does not report pharmacokinetic parameters for nesiritide. |
 | popPK | Petersen_2026 | irrelevant | 0 | 0 | The paper is a plasma proteomics study investigating cardiac function after myocardial infarction and does not involve nesiritide or report any pharmacokinetic parameters. |
 | popPK | Pichon_2005 | irrelevant | 0 | 0 | The study focuses on BNP as a biomarker for cardiotoxicity of anthracyclines and does not report pharmacokinetic parameters for nesiritide. |
 | popPK | Portella_2021 | irrelevant | 0 | 0 | The paper is an in-vitro study on anti-Trypanosoma cruzi drug discovery using hiPSC-CMs and does not involve nesiritide or report any pharmacokinetic parameters. |
-| PD | Portella_2021 | not_relevant | 0 | 0 | The paper focuses on anti-Trypanosoma cruzi drug discovery using hiPSC-CMs and does not mention nesiritide or report any pharmacodynamic parameters for it. |
+| PD | Portella_2021 | not_relevant | 0 | 0 | The paper focuses on anti-Trypanosoma cruzi drug discovery and cardiotoxicity screening in hiPSC-CMs, and does not mention or analyze nesiritide. |
 | popPK | Prathapan_2013 | irrelevant | 0 | 0 | The paper is an in-vitro study on the plant extract Boerhaavia diffusa and does not involve nesiritide or pharmacokinetic parameters. |
 | PD | Prathapan_2013 | not_relevant | 0 | 0 | The paper studies a plant extract (Boerhaavia diffusa) and does not report any pharmacodynamic or exposure-response data for the drug nesiritide. |
 | PGx | Prickett_2018 | not_relevant | 0 | 0 | The paper studies natriuretic peptides (BNP/CNP) and their genetic variants, not the pharmacokinetics or pharmacodynamics of the drug nesiritide. |
 | PGx | Prickett_2019 | not_relevant | 0 | 0 | The paper studies endogenous natriuretic peptides and cardiovascular health, not the pharmacokinetics or pharmacodynamics of the drug nesiritide. |
 | PGx | Prickett_2023 | not_relevant | 0 | 0 | The paper is a protocol for a longitudinal observational study on natriuretic peptides and cardiovascular risk, and does not report pharmacokinetic or pharmacodynamic effects of nesiritide. |
 | PGx | Prickett_2025 | not_relevant | 0 | 0 | The paper studies endogenous natriuretic peptides and metabolic health, not the pharmacokinetics or pharmacodynamics of the drug nesiritide. |
-| popPK | Ranasinghe_2025 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of biomarkers for diabetic cardiomyopathy in rodent models and does not study nesiritide or report any pharmacokinetic parameters. |
-| PD | Ranasinghe_2025 | not_relevant | 0 | 0 | The paper is a systematic review and meta-analysis of biomarkers in diabetic cardiomyopathy and does not contain any pharmacodynamic or exposure-response data for nesiritide. |
-| popPK | Robert_2001 | irrelevant | 0 | 0 | The paper describes a mechanistic study on EDG1 receptor stimulation in rat myocytes and does not involve nesiritide or pharmacokinetic parameters. |
-| PD | Robert_2001 | not_relevant | 0 | 0 | The paper focuses on EDG1 receptor stimulation in rat neonatal myocytes and does not mention nesiritide or report any pharmacodynamic parameters for it. |
+| popPK | Ranasinghe_2025 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of biomarkers for diabetic cardiomyopathy in rodent models and does not report pharmacokinetic parameters for nesiritide. |
+| PD | Ranasinghe_2025 | not_relevant | 0 | 0 | The paper is a systematic review and meta-analysis of biomarkers in diabetic cardiomyopathy and does not report any pharmacodynamic or exposure-response data for nesiritide. |
+| popPK | Robert_2001 | irrelevant | 0 | 0 | no_text gate: only 79 chars of text extracted (&lt; 400) |
+| PD | Robert_2001 | not_relevant | 0 | 0 | The paper focuses on EDG1 receptor stimulation in rat neonatal myocytes and does not mention nesiritide or report any pharmacodynamic or exposure-response data for it. |
 | popPK | Robinson_2011 | irrelevant | 0 | 0 | The paper investigates the mechanism of action of Gö6976 on guanylyl cyclases and does not report pharmacokinetic parameters for nesiritide. |
 | PD | Robinson_2011 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of Gö6976 on guanylyl cyclases and does not report any pharmacodynamic or exposure-response data for nesiritide. |
 | popPK | Roman_2026 | irrelevant | 0 | 0 | The paper studies sodium valproate, not nesiritide, and contains no pharmacokinetic parameters for the target drug. |
@@ -186,7 +189,7 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Safranow_2009 | not_relevant | 0 | 0 | The paper studies TNF-alpha levels in CAD patients and does not mention nesiritide or its pharmacokinetics/pharmacodynamics. |
 | popPK | Sandeep_2020 | irrelevant | 0 | 0 | The paper is a cardiovascular magnetic resonance imaging study of right ventricular function in Tetralogy of Fallot patients and does not involve nesiritide or pharmacokinetic parameters. |
 | PD | Sandeep_2020 | not_relevant | 0 | 0 | The paper evaluates right ventricular-pulmonary artery coupling in post-operative Tetralogy of Fallot patients and does not involve nesiritide or any drug pharmacodynamics. |
-| popPK | Soleh_2014 | irrelevant | 0 | 0 | The paper describes the production of recombinant proBNP variants for immunoassay and does not involve nesiritide or pharmacokinetic parameters. |
+| popPK | Soleh_2014 | irrelevant | 0 | 0 | no_text gate: only 141 chars of text extracted (&lt; 400) |
 | PD | Soleh_2014 | not_relevant | 0 | 0 | The paper describes a method for producing recombinant proBNP/NT-proBNP variants for immunoassay and does not report any pharmacodynamic or exposure-response data for nesiritide. |
 | popPK | Steichert_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of enalapril/enalaprilat, not nesiritide. |
 | PGx | Sun_2000 | not_relevant | 0 | 0 | The paper studies ANP knockout mice and endogenous natriuretic peptides, not the pharmacokinetics or pharmacodynamics of the drug nesiritide. |
@@ -196,9 +199,9 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Superchi_2022 | irrelevant | 0 | 0 | The paper is a scoping review of clinical trial designs for personalized medicine and does not report any pharmacokinetic parameters for nesiritide. |
 | PD | Superchi_2022 | not_relevant | 0 | 0 | The paper is a scoping review of clinical trial designs for personalized medicine and does not report any pharmacodynamic or exposure-response data for nesiritide. |
 | PGx | Sutter_2013 | not_relevant | 0 | 0 | The paper investigates the association between CYP2D6 polymorphisms and methamphetamine-induced cardiomyopathy, not the pharmacokinetics or pharmacodynamics of nesiritide. |
-| popPK | Takagi_1993 | irrelevant | 0 | 0 | The paper studies the pharmacological effect of brain natriuretic peptide on guinea-pig smooth muscle, not the pharmacokinetics of nesiritide. |
-| PD | Takagi_1993 | not_relevant | 0 | 0 | The paper studies brain natriuretic peptide (BNP) in guinea-pig tracheal smooth muscle, not nesiritide, and does not report a PD relationship for the specified drug. |
-| popPK | Taylor_2026 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for methotrexate, not nesiritide. |
+| popPK | Takagi_1993 | irrelevant | 0 | 0 | no_text gate: only 82 chars of text extracted (&lt; 400) |
+| PD | Takagi_1993 | not_relevant | 0 | 0 | The paper studies brain natriuretic peptide (BNP) in guinea-pig tracheal smooth muscle, not nesiritide (CNP) in humans or a relevant clinical PD context. |
+| popPK | Taylor_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for methotrexate, not nesiritide. |
 | PD | Taylor_2026 | not_relevant | 0 | 0 | The paper focuses on methotrexate pharmacokinetics and its relationship to acute kidney injury, not nesiritide. |
 | popPK | Terasaki_2015 | irrelevant | 0 | 0 | The paper investigates the chronic toxicity of parabens in aquatic organisms and does not involve nesiritide or pharmacokinetic parameters. |
 | PD | Terasaki_2015 | not_relevant | 0 | 0 | The paper investigates the chronic toxicity of parabens in aquatic organisms, not the pharmacodynamics of nesiritide. |
@@ -208,43 +211,44 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Usman_2023 | irrelevant | 0 | 0 | The paper is a general review of pharmacometrics in low- and middle-income countries and does not contain any specific pharmacokinetic data or parameters for nesiritide. |
 | PD | Usman_2023 | not_relevant | 0 | 0 | The paper is a general review of pharmacometrics in LMICs and does not report any specific PD or exposure-response data for nesiritide. |
 | PGx | Vassalle_2007 | not_relevant | 0 | 0 | The paper investigates the effect of genetic variants on endogenous natriuretic peptide concentrations in heart failure patients, not on the pharmacokinetics or pharmacodynamics of the drug nesiritide. |
-| PGx | Vinnakota_2020 | not_relevant | 0 | 0 | The paper is a review of natriuretic peptides and does not report pharmacogenomic effects on the PK or PD of nesiritide. |
-| popPK | Vizza_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sildenafil, not nesiritide. |
+| PGx | Vinnakota_2020 | not_relevant | 0 | 0 | The paper is a review of natriuretic peptides in cardiometabolic diseases and does not report pharmacogenomic effects on the PK or PD of nesiritide. |
+| popPK | Vizza_2017 | irrelevant | 0 | 0 | The study investigates sildenafil pharmacokinetics and efficacy in pulmonary arterial hypertension, not nesiritide. |
 | PD | Vizza_2017 | not_relevant | 0 | 0 | The paper studies sildenafil, not nesiritide, and while it mentions EC50/EC90 values for sildenafil in a figure legend, it does not report PD parameters for the requested drug. |
 | popPK | Wang_2022 | irrelevant | 0 | 0 | The paper describes the discovery and synthesis of a new antibiotic (cilagicin) and does not involve nesiritide or pharmacokinetic parameters. |
 | PD | Wang_2022 | not_relevant | 0 | 0 | The paper describes the discovery and synthesis of a new antibiotic (cilagicin) and its mechanism of action, but does not report any pharmacodynamic or exposure-response data for nesiritide. |
 | popPK | Wiley_2001 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study on coronary arteries investigating endothelin-1 and natriuretic peptides, and does not involve nesiritide or report any pharmacokinetic parameters. |
-| PD | Wiley_2001 | not_relevant | 0 | 0 | The paper investigates the physiological antagonism of endothelin-1 by natriuretic peptides (ANP, BNP, CNP) and NO in human coronary arteries, and does not mention or test nesiritide. |
+| PD | Wiley_2001 | not_relevant | 0 | 0 | The paper investigates the pharmacology of endothelin-1 and natriuretic peptides (ANP, BNP, CNP) in human coronary arteries, but does not mention or test nesiritide. |
 | popPK | Wiley_2002 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study on vasodilators (ghrelin, ET-1, etc.) in human arteries and does not involve nesiritide or report any pharmacokinetic parameters. |
 | PD | Wiley_2002 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of ghrelin and other vasodilators, not nesiritide. |
 | PGx | Winkler_2010 | not_relevant | 0 | 0 | The paper investigates the association between ApoE genotype and cardiovascular outcomes in dialysis patients, with no mention of nesiritide or its pharmacokinetic/pharmacodynamic parameters. |
 | popPK | Wodschow_2023 | irrelevant | 0 | 0 | The study investigates the effects of oral ketone esters on myocardial function in post-COVID-19 patients and does not involve nesiritide or report any pharmacokinetic parameters for it. |
-| PD | Wu_2023 | not_relevant | 0 | 0 | The paper investigates the dose-response of isoprenaline to induce a disease model in mice and does not contain any data, analysis, or mention of nesiritide. |
-| PD | Xiong_2025 | not_relevant | 0 | 0 | The paper focuses on doxorubicin cardiotoxicity and mitochondrial mechanisms, not nesiritide, and does not report any PD or exposure-response parameters for nesiritide. |
-| popPK | Xue_2025 | irrelevant | 0 | 0 | The paper is a clinical study on hypotension during continuous renal replacement therapy and does not involve nesiritide or pharmacokinetic parameters. |
+| PD | Wu_2023 | not_relevant | 0 | 0 | The paper investigates the dose-response of isoprenaline (ISO) in a mouse model, not nesiritide. |
+| PD | Xiong_2025 | not_relevant | 0 | 0 | The paper investigates doxorubicin-induced cardiotoxicity and mitochondrial mechanisms, not nesiritide. |
+| popPK | Xue_2025 | irrelevant | 0 | 0 | The paper is a clinical study on hypotension during CRRT and does not involve nesiritide or report any pharmacokinetic parameters. |
 | PD | Xue_2025 | not_relevant | 0 | 0 | The paper investigates risk factors for hypotension during CRRT using logistic regression and does not involve nesiritide or any pharmacodynamic modeling. |
 | popPK | Yamasaki_2026 | irrelevant | 0 | 0 | The paper is a study on muscle oxygenation dynamics in heart failure patients and does not involve nesiritide or report any pharmacokinetic parameters. |
-| PD | Yandle_1993 | not_relevant | 0 | 0 | The paper focuses on the assay of BNP and its molecular weight in heart failure, with no mention of nesiritide or any pharmacodynamic/exposure-response analysis. |
+| PD | Yandle_1993 | not_relevant | 0 | 0 | The paper describes a BNP assay and plasma levels in various conditions but does not report a pharmacodynamic or exposure-response relationship for nesiritide. |
 | popPK | Yang_2024 | irrelevant | 0 | 0 | The paper investigates the mechanisms of Guizhi-Gancao Decoction in cardiac hypertrophy and does not mention nesiritide or report any pharmacokinetic parameters for it. |
 | PD | Yang_2024 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of Guizhi-Gancao Decoction (GGD), not nesiritide. |
-| PD | Yasuda_2000 | not_relevant | 0 | 0 | The paper studies the pharmacology of brain natriuretic peptide (BNP) in guinea pig smooth muscle, not the drug nesiritide. |
+| PD | Yasuda_2000 | not_relevant | 0 | 0 | The paper studies brain natriuretic peptide (BNP) in guinea pig smooth muscle cells, not the drug nesiritide. |
 | popPK | Yeung_1991 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding study on natriuretic peptides (BNP/ANP) in mouse astrocytes and does not involve nesiritide or pharmacokinetic parameters. |
 | popPK | Yoshikawa_2026 | irrelevant | 0 | 0 | The study focuses on the temporal profiles of endogenous natriuretic peptides (BNP, hANP) and echocardiographic indices in hemodialysis patients, not the pharmacokinetics of the drug nesiritide. |
 | popPK | Youssef_2026 | irrelevant | 0 | 0 | The paper is a review on pharmacovigilance in cell and gene therapy and does not contain any pharmacokinetic data or parameters for nesiritide. |
 | PD | Youssef_2026 | not_relevant | 0 | 0 | The paper is a review on pharmacovigilance in cell and gene therapy and does not contain any pharmacodynamic or exposure-response data for nesiritide. |
-| PD | Yu_2026 | not_relevant | 0 | 0 | The paper investigates the mechanism of Persicae Ramulus (a herbal medicine) using network pharmacology and molecular docking, and does not mention nesiritide or report any exposure-response or dose-response PD parameters. |
+| PD | Yu_2026 | not_relevant | 0 | 0 | The paper investigates the mechanism of Persicae Ramulus (a herbal medicine) using network pharmacology and molecular docking, and does not mention nesiritide or report any exposure-response or dose-response PD parameters for it. |
 | PGx | Zaiou_2009 | not_relevant | 0 | 0 | The paper is a general review of cardiovascular genomics and does not report specific pharmacogenomic effects on the PK or PD of nesiritide. |
 | popPK | Zakaria_2022 | irrelevant | 0 | 0 | The paper studies the developmental toxicity of gold nanorods in zebrafish and does not involve the drug nesiritide or report any pharmacokinetic parameters for it. |
 | PD | Zakaria_2022 | not_relevant | 0 | 0 | The paper studies the toxicity of gold nanorods in zebrafish, not the pharmacodynamics of the drug nesiritide. |
-| PD | Zhang_2016 | not_relevant | 0 | 0 | The paper studies hydrogen (H2) and isoproterenol, not nesiritide, and does not report any exposure-response or dose-response relationship for nesiritide. |
+| PD | Zhang_2016 | not_relevant | 0 | 0 | The paper studies the pharmacodynamics of hydrogen (H2) on isoproterenol-induced hypertrophy, not nesiritide, and does not report any exposure-response or dose-response parameters for nesiritide. |
+| PD | Zhang_2017 | not_relevant | 0 | 0 | The paper investigates DanHong injection, not nesiritide. |
 | PGx | Zhang_2025 | not_relevant | 0 | 0 | The paper investigates the pathogenic mechanism of a TNNI3 mutation in hypertrophic cardiomyopathy and does not mention nesiritide or any pharmacokinetic/pharmacodynamic parameters. |
-| PD | Zhong_2023 | not_relevant | 0 | 0 | The paper studies a traditional Chinese medicine preparation (Qiweiqiangxin I granules) and does not mention nesiritide or report any pharmacodynamic parameters for it. |
+| PD | Zhong_2023 | not_relevant | 0 | 0 | The paper studies a traditional Chinese medicine (Qiweiqiangxin I granules), not nesiritide, and reports no exposure-response or dose-response PD parameters for nesiritide. |
 | popPK | Zhu_2026 | irrelevant | 0 | 0 | The study focuses on a microneedle biosensor platform and uses irinotecan and antibiotics as model drugs, not nesiritide. |
-| PD | Zhu_2026 | not_relevant | 0 | 0 | The paper focuses on a microneedle biosensor platform for monitoring pharmacokinetics (clearance) of irinotecan and antibiotics, not on the pharmacodynamic (exposure-response) relationship of nesiritide. |
+| PD | Zhu_2026 | not_relevant | 0 | 0 | The paper focuses on a microneedle biosensor platform for monitoring pharmacokinetics (PK) of other drugs (irinotecan, antibiotics) and does not report any pharmacodynamic (PD) or exposure-response data for nesiritide. |
 | PGx | Zordoky_2008 | not_relevant | 0 | 0 | The paper studies doxorubicin's effect on CYP gene expression in H9c2 cells and does not involve nesiritide or pharmacogenomics. |
 | popPK | Zou_2026 | irrelevant | 0 | 0 | The study investigates SGLT2 inhibitors in pulmonary arterial hypertension and does not involve nesiritide or report any pharmacokinetic parameters. |
 | popPK | Şenkal_2020 | irrelevant | 0 | 0 | The paper is a retrospective cohort study on ACE inhibitors and ARBs in COVID-19 patients and does not involve nesiritide or report any pharmacokinetic parameters. |
-| PD | Şenkal_2020 | not_relevant | 0 | 0 | The paper is a retrospective cohort study on ACE inhibitors in COVID-19 and does not involve nesiritide or report any pharmacodynamic exposure-response relationship. |
+| PD | Şenkal_2020 | not_relevant | 0 | 0 | The paper is a retrospective cohort study on ACE inhibitors in COVID-19 and does not involve nesiritide or any pharmacodynamic modeling. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_nesiritide`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

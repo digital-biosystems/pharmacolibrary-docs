@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levosimendan_Bertin2025_reference&quot;,&quot;label&quot;:&quot;Bertin_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_levosimendan/Levosimendan_Bertin2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levosimendan_Bertin2026_reference&quot;,&quot;label&quot;:&quot;Bertin_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_levosimendan/Levosimendan_Bertin2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levosimendan_Bertin2025_reference&quot;,&quot;label&quot;:&quot;Bertin_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_levosimendan/Levosimendan_Bertin2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levosimendan_Jonsson2003_reference&quot;,&quot;label&quot;:&quot;Jonsson_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_levosimendan/Levosimendan_Jonsson2003_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levosimendan_Bertin2026_reference&quot;,&quot;label&quot;:&quot;Bertin_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_levosimendan/Levosimendan_Bertin2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vasorelaxation — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,7 +17,7 @@ Wanderer S; Andereggen L; Mrosek J; Kashefiolasl S; Schubert GA; Marbacher S; et
 | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|
 | Emax | `Q320` · not captured | 103 | % | not captured | review_gapfill (not captured) | Wanderer_2022:review |
-| pD2 (-log10EC50) | `Q321` · not captured | 5.38 | (-log10EC50) | not captured | review_gapfill (not captured) | Wanderer_2022:review |
+| pD2 (-log10EC50) | `Q321` · not captured | 5.38 | -log10EC50 | not captured | review_gapfill (not captured) | Wanderer_2022:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

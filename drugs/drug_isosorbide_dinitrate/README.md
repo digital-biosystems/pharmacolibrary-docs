@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;isosorbide dinitrate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IsosorbideDinitrate_Doyle1981_rhesus_monkey_cynomolgus_monke&quot;,&quot;label&quot;:&quot;Doyle_1981_rhesus monkey, cynomolgus monkey, and baboon&quot;,&quot;href&quot;:&quot;drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Doyle1981_rhesus_monkey_cynomolgus_monke.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;IsosorbideDinitrate_Straehl1985_healthy_adults&quot;,&quot;label&quot;:&quot;Straehl_1985_healthy adults&quot;,&quot;href&quot;:&quot;drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Straehl1985_healthy_adults.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;IsosorbideDinitrate_Taylor1980_normal_human_subjects&quot;,&quot;label&quot;:&quot;Taylor_1980_normal human subjects&quot;,&quot;href&quot;:&quot;drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Taylor1980_normal_human_subjects.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;IsosorbideDinitrate_Taylor1980_reference&quot;,&quot;label&quot;:&quot;Taylor_1980_reference&quot;,&quot;href&quot;:&quot;drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Taylor1980_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;IsosorbideDinitrate_Doyle1981_reference&quot;,&quot;label&quot;:&quot;Doyle_1981_reference&quot;,&quot;href&quot;:&quot;drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Doyle1981_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;IsosorbideDinitrate_Straehl1985_reference&quot;,&quot;label&quot;:&quot;Straehl_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Straehl1985_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # isosorbide dinitrate
 
@@ -18,21 +18,21 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 22:01 | 8:11 | 0/0/0 | 0/0/0 | 0/0/0 | 34,954/3,380 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-09-20 19:31 | 9:36 | 0/2/1 | 0/0/0 | 0/0/0 | 43,158/4,531 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Doyle_1981_rhesus monkey, cynomolgus monkey, and baboon](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Doyle1981_rhesus_monkey_cynomolgus_monke.md) | Doyle E et al., Pharmacokinetics of isosorbide dinitrat…, Journal of pharmaceutical s… (1981) | [10.1002/jps.2600701122](https://doi.org/10.1002/jps.2600701122) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Straehl_1985_healthy adults](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Straehl1985_healthy_adults.md) | Straehl P et al., Isosorbide dinitrate bioavailability, k…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.150](https://doi.org/10.1038/clpt.1985.150) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Taylor_1980_normal human subjects](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Taylor1980_normal_human_subjects.md) | Taylor T et al., Pharmacokinetics of isosorbide dinitrat…, Biopharmaceutics & drug dis… (1980) | [10.1002/bdd.2510010310](https://doi.org/10.1002/bdd.2510010310) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Taylor_1980_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Taylor1980_reference.md) | Taylor T et al., Pharmacokinetics of isosorbide dinitrat…, Biopharmaceutics & drug dis… (1980) | [10.1002/bdd.2510010310](https://doi.org/10.1002/bdd.2510010310) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Doyle_1981_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Doyle1981_reference.md) | Doyle E et al., Pharmacokinetics of isosorbide dinitrat…, Journal of pharmaceutical s… (1981) | [10.1002/jps.2600701122](https://doi.org/10.1002/jps.2600701122) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Straehl_1985_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Straehl1985_reference.md) | Straehl P et al., Isosorbide dinitrate bioavailability, k…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.150](https://doi.org/10.1038/clpt.1985.150) |
 
 ## Coverage
 
 - **PubMed hits:** 45 matched, 34 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 3  ·  extracted 0  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -48,7 +48,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Assinder_1977.pdf` | Assinder DF et al., Plasma isosorbide dinitrate concentrati…, Journal of pharmaceutical s… (1977) | popPK | 8 | [10.1002/jps.2600660607](https://doi.org/10.1002/jps.2600660607) | [577507](https://pubmed.ncbi.nlm.nih.gov/577507) | The paper reports quantitative PK parameters including half-life (30-40 min), peak concentrations, and bioavailability for isosorbide dinitrate in humans, with values explicitly present in the text. |
 | `Wallén_1993.pdf` | Wallén NH et al., Effects of an oral dose of isosorbide d…, British journal of clinical… (1993) | pd | 5 | [10.1111/j.1365-2125.1993.tb05680.x](https://doi.org/10.1111/j.1365-2125.1993.tb05680.x) | [8443032](https://www.ncbi.nlm.nih.gov/pubmed/8443032) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-09T21:59:36.256266+00:00</sub>
+<sub>queue written 2026-09-20T19:22:13.970697+00:00</sub>
 
 ## Screened and excluded
 
@@ -80,7 +80,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Taylor_1981 | irrelevant | 2 | 0 | The study reports quantitative pharmacokinetic parameters for isosorbide 5-mononitrate (the metabolite), not the subject drug isosorbide dinitrate, for which only qualitative comparisons and metabolite formation data are provided. |
 | popPK | Vincent_1992 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic tolerance (venodilation) and does not report any pharmacokinetic parameters for isosorbide dinitrate. |
 | PGx | Vuppugalla_2004 | not_relevant | 0 | 0 | The study investigates the effect of nitric oxide donors on CYP450 activity in rat livers and does not report any pharmacogenomic effects (gene variants) on the PK or PD of isosorbide dinitrate. |
-| popPK | Wallén_1993 | irrelevant | 0 | 0 | The paper focuses on platelet function and fibrinolysis, not pharmacokinetic parameters, and no PK data is provided in the evidence. |
+| popPK | Wallén_1993 | irrelevant | 0 | 0 | no_text gate: only 107 chars of text extracted (&lt; 400) |
 | PD | Wallén_1993 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, data, or numeric PD parameters required to assess the exposure-response relationship. |
 
 ---

@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-29 21:20 | 7:09 | 0/0/0 | 0/2/0 | 0/0/0 | 46,180/2,730 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
+| 2026-09-21 07:22 | 4:46 | 0/0/0 | 0/2/0 | 0/0/0 | 75,923/3,739 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
 
 ## popPK records
 
@@ -32,7 +32,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 28 matched, 27 returned
+- **PubMed hits:** 33 matched, 31 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -48,39 +48,51 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Hiner_1986.pdf` | Hiner BC et al., Antimigraine drug interactions with 5-h…, Annals of neurology (1986) | pd | 4 | [10.1002/ana.410190518](https://doi.org/10.1002/ana.410190518) | [2940961](https://www.ncbi.nlm.nih.gov/pubmed/2940961) | metadata signals extractable PD data (IC50) |
 | `Peters_1990.pdf` | Peters W et al., The chemotherapy of rodent malaria. XLV…, Annals of tropical medicine… (1990) | pd | 4 | [10.1080/00034983.1990.11812509](https://doi.org/10.1080/00034983.1990.11812509) | [1981663](https://www.ncbi.nlm.nih.gov/pubmed/1981663) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-08-29T21:18:52.727319+00:00</sub>
+<sub>queue written 2026-09-21T07:21:01.735547+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Aellig_1983 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of pizotifen on venous compliance and receptor antagonism, not pharmacokinetic disposition parameters. |
-| PD | Aellig_1983 | not_relevant | 4 | 2 | The paper describes a dose-response shift (competitive antagonism) for pizotifen on 5-HT-induced venoconstriction, but the provided text lacks the specific numeric PD parameters (e.g., EC50 values, pA2, or curve data) required to extract a quantitative relationship. |
-| popPK | Brazenor_1981 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor mechanisms in isolated canine coronary arteries, not a pharmacokinetic study, and pizotifen is used only as a comparator antagonist. |
-| PD | Brazenor_1981 | not_relevant | 3 | 2 | The paper reports qualitative noncompetitive antagonism of ergometrine/5-HT curves by pizotifen but provides no numeric PD parameters (e.g., Ki, IC50, or specific curve shifts) for pizotifen itself. |
-| popPK | Friedman_1983 | irrelevant | 0 | 0 | The study is a behavioral pharmacology investigation in rats using pizotifen (pizotyline) as a comparator antagonist, and it does not report any pharmacokinetic parameters. |
-| PD | Friedman_1983 | not_relevant | 1 | 0 | The paper describes a qualitative competitive antagonism of a behavioral cue by pizotyline but does not provide numeric PD parameters (e.g., IC50, Emax) or a quantitative dose-response curve for the drug. |
-| popPK | Glusa_2000 | irrelevant | 0 | 0 | The paper is a pharmacological study characterizing 5-HT receptors in pig pulmonary artery, not a pharmacokinetic study, and pizotifen is used only as a receptor antagonist. |
-| popPK | Gudelsky_1987 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of serotonin receptor desensitization in rats, and pizotifen is used only as a comparator agent without any pharmacokinetic parameter reporting. |
+| PD | Aellig_1983 | not_relevant | 4 | 2 | The paper describes a dose-response shift (competitive antagonism) for pizotifen on 5-HT-induced venoconstriction, but the provided text lacks the specific numeric PD parameters (e.g., EC50 values, pA2, or curve coordinates) required to extract a quantitative relationship. |
+| popPK | Brazenor_1981 | irrelevant | 0 | 0 | no_text gate: only 116 chars of text extracted (&lt; 400) |
+| PD | Brazenor_1981 | not_relevant | 0 | 0 | The paper studies ergometrine, not pizotifen. |
+| popPK | Fiorella_1995 | irrelevant | 0 | 0 | The study is a behavioral pharmacology investigation of hallucinogenic drugs where pizotifen (pizotyline) is used only as a serotonergic antagonist, with no pharmacokinetic parameters reported. |
+| popPK | Friedman_1983 | irrelevant | 0 | 0 | The study is a behavioral pharmacology investigation of serotonin receptors using pizotifen (pizotyline) as a comparator antagonist, and it does not report any pharmacokinetic parameters. |
+| PD | Friedman_1983 | not_relevant | 2 | 1 | The paper describes a qualitative dose-response relationship for L-5-HTP and competitive antagonism by pizotifen, but it does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve for pizotifen. |
+| popPK | Glusa_1984 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of 5-HT receptor blocking properties on platelet aggregation, not a pharmacokinetic study, and reports no disposition parameters for pizotifen. |
+| popPK | Glusa_1996 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor-mediated vascular relaxation in porcine arteries, not a pharmacokinetic study, and pizotifen is used only as a receptor antagonist. |
+| popPK | Glusa_2000 | irrelevant | 0 | 0 | The paper is a pharmacological study characterizing 5-HT2B receptors in pig pulmonary artery, using pizotifen as an antagonist, and does not report any pharmacokinetic parameters. |
+| popPK | Gudelsky_1987 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of serotonin receptor desensitization in rats, with pizotifen serving only as a comparator agent and no pharmacokinetic parameters reported. |
 | PD | Gudelsky_1987 | not_relevant | 2 | 1 | The paper mentions pizotifen only qualitatively as one of several antagonists that diminished a hyperthermic response, without providing specific numeric dose-response parameters or concentration-effect data for pizotifen. |
 | popPK | Hamel_1989 | irrelevant | 0 | 0 | The study is a pharmacological investigation of receptor subtypes in feline arteries where pizotifen is used only as a comparative antagonist, with no pharmacokinetic parameters reported. |
 | PD | Hamel_1989 | not_relevant | 3 | 1 | The paper describes qualitative receptor pharmacology and potency rankings for pizotifen in an isolated organ bath but does not provide numeric PD parameters (e.g., pA2, Ki, IC50) or extractable concentration-effect curves. |
+| popPK | Hiner_1986 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay measuring affinity (IC50) and does not report pharmacokinetic disposition parameters for pizotifen. |
+| popPK | Holmes_1984 | irrelevant | 0 | 0 | The paper is a review of flunarizine, and pizotifen is only mentioned as a comparator in therapeutic trials without any pharmacokinetic parameter values. |
 | PD | Holmes_1984 | not_relevant | 0 | 0 | The text is a review of flunarizine and only mentions pizotifen in the context of comparative efficacy trials, providing no pharmacodynamic or exposure-response data for pizotifen. |
-| popPK | Mokler_1983 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in rats assessing the antagonistic effects of pizotifen on other drugs, and it does not report any pharmacokinetic parameters for pizotifen. |
+| popPK | Kato_2013 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of UGT2B10 enzyme kinetics, not a pharmacokinetic study reporting disposition parameters for pizotifen. |
+| popPK | Mokler_1983 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in rats assessing the antagonistic effects of pizotifen on other drugs, reporting no pharmacokinetic parameters. |
 | popPK | Müller-Schweinitzer_1976 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor antagonism in canine arteries, not a pharmacokinetic study, and reports no disposition parameters for pizotifen. |
-| popPK | Müller-Schweinitzer_1986 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic effects (venoconstriction and receptor binding) in dogs and humans, reporting no quantitative pharmacokinetic parameters such as clearance, volume, or half-life for pizotifen. |
+| popPK | Müller-Schweinitzer_1986 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic effects (venoconstriction and receptor binding) rather than pharmacokinetic disposition parameters. |
+| popPK | Müller-Schweinitzer_1987 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of dihydroergotamine (DHE) in dogs, using pizotifen only as a pharmacological antagonist to determine receptor mechanisms, not as the subject drug for PK parameter estimation. |
 | PD | Müller-Schweinitzer_1987 | not_relevant | 1 | 0 | The paper focuses on dihydroergotamine (DHE) PK/PD; pizotifen is only mentioned as a qualitative antagonist to identify receptor mechanisms, with no numeric PD parameters or exposure-response data provided for pizotifen. |
-| PD | Nielsen_1982 | not_relevant | 0 | 0 | The paper studies the serotonergic actions of tetrahydro-beta-carbolines (THBCs) and uses pizotifen only as a qualitative antagonist to confirm the mechanism; it does not report a pharmacodynamic or exposure-response relationship for pizotifen itself. |
+| popPK | Nielsen_1982 | irrelevant | 0 | 0 | Pizotifen is used only as a pharmacological antagonist in a behavioral study, with no pharmacokinetic parameters reported. |
+| PD | Nielsen_1982 | not_relevant | 0 | 0 | The paper uses pizotifen only as a qualitative antagonist to confirm the serotonergic mechanism of THBCs and does not report any exposure-response or dose-response data for pizotifen itself. |
+| popPK | Peters_1980 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay where pizotifen is used only as a competitive inhibitor, not as the subject of pharmacokinetic analysis. |
 | PD | Peters_1980 | not_relevant | 2 | 1 | The paper reports receptor binding affinity (KD) and qualitative rank order of potency for pizotifen, but does not provide a pharmacodynamic exposure-response model or numeric PD parameters (e.g., Emax, EC50 for effect) for pizotifen. |
-| popPK | Peters_1990 | irrelevant | 0 | 0 | The study examines the antimalarial activity of pizotifen (pizotyline) and does not report any pharmacokinetic parameters. |
-| popPK | Roth_1986 | irrelevant | 0 | 0 | The study is a pharmacological investigation of 5-HT2 receptor mechanisms in rat aorta, not a pharmacokinetic study, and pizotifen is used only as a receptor antagonist probe. |
+| popPK | Peters_1990 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
+| PD | Peters_1990 | not_relevant | 0 | 0 | The paper focuses on chloroquine resistance reversal by antihistaminic agents and does not report pharmacodynamic or exposure-response data for pizotifen. |
+| popPK | Rolan_1997 | irrelevant | 0 | 0 | Pizotifen is only a co-administered drug in a study focused on the pharmacokinetics of zolmitriptan, and no PK parameters for pizotifen are reported. |
+| popPK | Roth_1986 | irrelevant | 0 | 0 | The study is a pharmacological investigation of 5-HT2 receptor mechanisms in rat aorta, not a pharmacokinetic study, and reports no disposition parameters for pizotifen. |
 | PD | Roth_1986 | not_relevant | 3 | 2 | The paper reports qualitative potency (low nanomolar range) and correlation data for pizotifen as a 5-HT2 antagonist, but does not provide specific numeric PD parameters (e.g., Ki, IC50) or a concentration-effect curve for pizotifen in the provided text. |
 | popPK | Scott_1994 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of sumatriptan, and pizotifen is only mentioned as a co-administered drug in an interaction study without any PK parameters reported for it. |
 | popPK | Signs_1988 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment using pizotifen as a receptor antagonist to test ethanol discrimination, and it does not report any pharmacokinetic parameters. |
-| PD | Signs_1988 | not_relevant | 0 | 0 | The paper reports qualitative behavioral results (ineffective blocking) for pizotifen in a drug discrimination paradigm, without providing any numeric concentration-effect data, dose-response curves, or PD parameters. |
+| PD | Signs_1988 | not_relevant | 1 | 0 | The paper reports qualitative behavioral results (ineffective blocking) for pizotifen in a drug discrimination paradigm without providing numeric concentration-effect data, dose-response curves, or PD parameters. |
 | popPK | Smith_1995 | irrelevant | 0 | 0 | The study is a behavioral pharmacology investigation of serotonin receptor discrimination where pizotifen is used only as a comparator antagonist, with no pharmacokinetic parameters reported. |
 | PD | Smith_1995 | not_relevant | 2 | 1 | The paper reports behavioral dose-response curves for quipazine and ketanserin and mentions pizotifen as a generalizing antagonist, but it does not provide numeric PD parameters (e.g., ED50, Emax) or concentration-effect data for pizotifen. |
-| popPK | unknown_2022 | irrelevant | 0 | 0 | The evidence consists only of a conference title with no pharmacokinetic data or specific study content for pizotifen. |
+| popPK | Srinivasu_2000 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sumatriptan, with pizotifen mentioned only as a comparator in the introduction. |
+| popPK | unknown_2022 | irrelevant | 0 | 0 | no_text gate: only 75 chars of text extracted (&lt; 400) |
 | PD | unknown_2022 | not_relevant | 0 | 0 | The provided text is only a title of a conference abstract collection and contains no specific data, models, or parameters for pizotifen. |
 
 ---

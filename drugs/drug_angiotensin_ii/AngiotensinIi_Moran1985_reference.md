@@ -52,6 +52,7 @@ Moran SM; Myers BD et al. (1985). The Journal of clinical investigation 76
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q24 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Moran_1985:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Moran_1985:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |

@@ -1,42 +1,37 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01D&quot;,&quot;href&quot;:&quot;atc/C01D.md&quot;},{&quot;label&quot;:&quot;nicorandil&quot;,&quot;href&quot;:&quot;drugs/drug_nicorandil/&quot;},{&quot;label&quot;:&quot;Iida_2008_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nicorandil_Iida2008_obj&quot;,&quot;label&quot;:&quot;Iida_2008_obj&quot;,&quot;href&quot;:&quot;drugs/drug_nicorandil/Nicorandil_Iida2008_obj.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nicorandil_Iida2008_obj&quot;,&quot;label&quot;:&quot;Iida_2008_obj&quot;,&quot;href&quot;:&quot;drugs/drug_nicorandil/Nicorandil_Iida2008_obj.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nicorandil_Iida2008_sig&quot;,&quot;label&quot;:&quot;Iida_2008_sig&quot;,&quot;href&quot;:&quot;drugs/drug_nicorandil/Nicorandil_Iida2008_sig.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nicorandil_Iida2008_sig&quot;,&quot;label&quot;:&quot;Iida_2008_sig&quot;,&quot;href&quot;:&quot;drugs/drug_nicorandil/Nicorandil_Iida2008_sig.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nicorandil_Iida2008v2_reference&quot;,&quot;label&quot;:&quot;Iida_2008_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nicorandil/Nicorandil_Iida2008v2_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nicorandil_Iida2008_obj&quot;,&quot;label&quot;:&quot;Iida_2008_obj&quot;,&quot;href&quot;:&quot;drugs/drug_nicorandil/Nicorandil_Iida2008_obj.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nicorandil_Iida2008_obj&quot;,&quot;label&quot;:&quot;Iida_2008_obj&quot;,&quot;href&quot;:&quot;drugs/drug_nicorandil/Nicorandil_Iida2008_obj.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nicorandil_Iida2008_sig&quot;,&quot;label&quot;:&quot;Iida_2008_sig&quot;,&quot;href&quot;:&quot;drugs/drug_nicorandil/Nicorandil_Iida2008_sig.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nicorandil_Iida2008_sig&quot;,&quot;label&quot;:&quot;Iida_2008_sig&quot;,&quot;href&quot;:&quot;drugs/drug_nicorandil/Nicorandil_Iida2008_sig.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nicorandil_Iida2008v2_reference&quot;,&quot;label&quot;:&quot;Iida_2008_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nicorandil/Nicorandil_Iida2008v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nicorandil — `Nicorandil_Iida2008v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
-3. Read the .deviation.json and confirm each deviation names what changed and why.
-4. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
 Iida S; Kinoshita H; Holford NH et al. (2008). British journal of clinical pharmacology 66
   ·  DOI: [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x)
 
 ## Model component
-<dbs-pgx drug="nicorandil" model-id="Nicorandil_Iida2008v2_reference" status="model_quarantined" stale="false" population="healthy subjects and acute heart failure patients" measured-compound="nicorandil" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="nicorandil" model-id="Nicorandil_Iida2008v2_reference" status="needs_review" stale="false" population="healthy subjects and acute heart failure patients" measured-compound="nicorandil" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| PPV_Sss | `Q65` · Vss | 0.431 | not captured | not captured | not captured | not captured | llm (0.5) | tab_2:row3:col5, tab_2:row3:col6, tab_2:row3:col8, tab_2:row3:col9 | — | not captured |
-| PPV_EC50 | `Q321` · EC50 | 1.76 | not captured | not captured | not captured | not captured | llm (0.5) | tab_2:row4:col5, tab_2:row4:col6, tab_2:row4:col8, tab_2:row4:col9 | — | not captured |
-| R78 | `Q78` · V3/F | 0.709 | not captured | not captured | not captured | not captured | llm (0.5) | tab_2:row11:col7, tab_2:row11:col8, tab_2:row11:col10, tab_2:row11:col11 | — | not captured |
-| R89 | `Q89` · t1/2γ | 1.00 | not captured | not captured | not captured | not captured | llm (0.5) | tab_2:row12:col7, tab_2:row12:col8, tab_2:row12:col10, tab_2:row12:col11 | — | not captured |
+| R78 | `Q78` · V3/F | 0.257 | not captured | not captured | not captured | not captured | llm (0.6) | tab_2:row11:col7, tab_2:row11:col8, tab_2:row11:col10, tab_2:row11:col11 | — | not captured |
+| R89 | `Q89` · t1/2γ | 0.957 | not captured | not captured | not captured | not captured | llm (0.6) | tab_2:row12:col7, tab_2:row12:col8, tab_2:row12:col10, tab_2:row12:col11 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -46,19 +41,26 @@ Iida S; Kinoshita H; Holford NH et al. (2008). British journal of clinical pharm
 ## Departures & gaps
 
 **Interpretation flags:**
+- column 'obj' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'sig' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'PPV_S0' — extend the ontology if this is a real PK parameter (source ['tab_2:row2:col5', 'tab_2:row2:col6', 'tab_2:row2:col8', 'tab_2:row2:col9'])
+- dropped unlinked row (NIL): 'PPV_Sss' — extend the ontology if this is a real PK parameter (source ['tab_2:row3:col5', 'tab_2:row3:col6', 'tab_2:row3:col8', 'tab_2:row3:col9'])
+- dropped PD-category row 'PPV_EC50' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_2:row4:col5', 'tab_2:row4:col6', 'tab_2:row4:col8', 'tab_2:row4:col9'])
 - dropped unlinked row (NIL): 'R12' — extend the ontology if this is a real PK parameter (source ['tab_2:row9:col7', 'tab_2:row9:col8', 'tab_2:row9:col10', 'tab_2:row9:col11'])
 - dropped unlinked row (NIL): 'R23' — extend the ontology if this is a real PK parameter (source ['tab_2:row10:col7', 'tab_2:row10:col8', 'tab_2:row10:col10', 'tab_2:row10:col11'])
-- dropped unlinked row (NIL): 'PPV_RUVFX' — extend the ontology if this is a real PK parameter (source ['tab_2:row13:col3', 'tab_2:row13:col4', 'tab_2:row13:col6', 'tab_2:row13:col7'])
-- dropped unlinked row (NIL): 'RUV_SDFX' — extend the ontology if this is a real PK parameter (source ['tab_2:row14:col4', 'tab_2:row14:col5', 'tab_2:row14:col7', 'tab_2:row14:col8'])
-- dropped unlinked row (NIL): 'PPV_RUVCP' — extend the ontology if this is a real PK parameter (source ['tab_2:row15:col3', 'tab_2:row15:col4', 'tab_2:row15:col6', 'tab_2:row15:col7'])
-- dropped unlinked row (NIL): 'RUV_CVCP' — extend the ontology if this is a real PK parameter (source ['tab_2:row16:col3', 'tab_2:row16:col4', 'tab_2:row16:col6', 'tab_2:row16:col7'])
-- dropped unlinked row (NIL): 'RUV_SDCP' — extend the ontology if this is a real PK parameter (source ['tab_2:row17:col4', 'tab_2:row17:col5', 'tab_2:row17:col7', 'tab_2:row17:col8'])
+- dropped unlinked row (NIL): '10' — extend the ontology if this is a real PK parameter (source ['Iida_2008_2_table_2:row0:col5', 'Iida_2008_2_table_2:row0:col6'])
+- dropped unlinked row (NIL): '11' — extend the ontology if this is a real PK parameter (source ['Iida_2008_2_table_2:row1:col5', 'Iida_2008_2_table_2:row1:col6'])
+- dropped unlinked row (NIL): '12' — extend the ontology if this is a real PK parameter (source ['Iida_2008_2_table_2:row2:col5', 'Iida_2008_2_table_2:row2:col6'])
+- dropped unlinked row (NIL): '13' — extend the ontology if this is a real PK parameter (source ['Iida_2008_2_table_2:row3:col5', 'Iida_2008_2_table_2:row3:col6'])
+- dropped unlinked row (NIL): '14' — extend the ontology if this is a real PK parameter (source ['Iida_2008_2_table_2:row4:col5', 'Iida_2008_2_table_2:row4:col6'])
+- dropped unlinked row (NIL): '15' — extend the ontology if this is a real PK parameter (source ['Iida_2008_2_table_2:row5:col5', 'Iida_2008_2_table_2:row5:col6'])
+- dropped unlinked row (NIL): '16' — extend the ontology if this is a real PK parameter (source ['Iida_2008_2_table_2:row6:col5', 'Iida_2008_2_table_2:row6:col6'])
+- dropped unlinked row (NIL): '17' — extend the ontology if this is a real PK parameter (source ['Iida_2008_2_table_2:row7:col5'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=nicorandil
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell tab_2:row1:col10 = '5%'
-- unparsed cell tab_2:row1:col11 = '95%'
 - unparsed cell tab_2:row2:col1 = 'Population parameter variability in S0'
 - unparsed cell tab_2:row4:col1 = 'Population parameter variability in EC50'
 - unparsed cell tab_2:row6:col1 = 'Between subject variability in V1'
@@ -66,13 +68,13 @@ Iida S; Kinoshita H; Holford NH et al. (2008). British journal of clinical pharm
 - unparsed cell tab_2:row10:col2 = 'Correlation of Sss and EC50'
 - unparsed cell tab_2:row11:col2 = 'Correlation of CL and V1'
 - unparsed cell tab_2:row12:col2 = 'Correlation of V1 and Q'
-- unparsed cell tab_2:row18:col1 = ') nicorandil (ng ml -1'
-- unparsed cell tab_2:row18:col2 = '500 1000 1500'
-- unparsed cell tab_2:row18:col9 = 'nicorandil (ng ml -1 )'
-- unparsed cell tab_2:row18:col10 = '1500 500 1000'
-- unparsed cell tab_2:row23:col1 = ') nicorandil (ng ml -1'
-- unparsed cell tab_2:row23:col2 = '1 10 100 1000'
-- unparsed cell tab_2:row23:col10 = '1 10 100 1000'
+- unparsed cell Iida_2008_2_table_2:row0:col3 = 'Covariance of S0, SS, EC50'
+- unparsed cell Iida_2008_2_table_2:row1:col3 = 'Covariance of S0, SS, EC50'
+- unparsed cell Iida_2008_2_table_2:row2:col3 = 'Covariance of S0, SS, EC50'
+- unparsed cell Iida_2008_2_table_2:row4:col3 = 'Covariance of S0, alpha, Emax, EC50'
+- unparsed cell Iida_2008_2_table_2:row5:col3 = 'Covariance of S0, alpha, Emax, EC50'
+- unparsed cell Iida_2008_2_table_2:row7:col3 = 'Covariance of S0, Emax, EC50'
+- companion parameter table 2 transcribed (15 record(s))
 
 ## Validation
 
@@ -80,23 +82,11 @@ Iida S; Kinoshita H; Holford NH et al. (2008). British journal of clinical pharm
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no structural disposition parameters in record |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped | 5.3 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 2.2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 5.8 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -106,8 +96,6 @@ Iida S; Kinoshita H; Holford NH et al. (2008). British journal of clinical pharm
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_nicorandil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Iida_2008_2` / `Iida_2008_2::reference`)
-- model: `../../../knowledgebase/drugs/drug_nicorandil/models/modelica/_needs_review/Nicorandil_Iida2008v2_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_nicorandil/models/modelica/_needs_review/Nicorandil_Iida2008v2_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

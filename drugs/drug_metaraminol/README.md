@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 20:54 | 4:04 | 0/0/0 | 0/0/1 | 0/0/0 | 70,321/1,795 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-09-20 19:18 | 2:49 | 0/0/0 | 0/0/1 | 0/0/0 | 84,245/1,424 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
@@ -47,23 +47,23 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Ungell_1987.pdf` | Ungell AL et al., Failure of K+ to affect the potency of…, Naunyn-Schmiedeberg's archi… (1987) | pd | 4 | [10.1007/BF00172792](https://doi.org/10.1007/BF00172792) | [3587371](https://www.ncbi.nlm.nih.gov/pubmed/3587371) | metadata signals extractable PD data (IC50) |
 | `Waldmeier_1977.pdf` | Waldmeier PC et al., Metaraminol uptake by human thrombocyte…, Experientia (1977) | pd | 4 | [10.1007/BF01920177](https://doi.org/10.1007/BF01920177) | [908413](https://www.ncbi.nlm.nih.gov/pubmed/908413) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-09T20:53:09.658516+00:00</sub>
+<sub>queue written 2026-09-20T19:16:31.142638+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Babich_1987 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding and functional analysis, not a pharmacokinetic study, and reports no disposition parameters for metaraminol. |
-| popPK | Liu_2022 | irrelevant | 0 | 0 | The paper is a clinical dose-response study for hypotension prevention, not a pharmacokinetic study reporting quantitative disposition parameters for metaraminol. |
-| popPK | Morris_2007 | irrelevant | 0 | 0 | The provided evidence contains only a title regarding a cardiopulmonary bypass simulation system and lacks any pharmacokinetic data or mention of metaraminol. |
+| popPK | Liu_2022 | irrelevant | 0 | 0 | no_text gate: only 211 chars of text extracted (&lt; 400) |
+| popPK | Morris_2007 | irrelevant | 0 | 0 | no_text gate: only 50 chars of text extracted (&lt; 400) |
 | PD | Morris_2007 | not_relevant | 0 | 0 | The text describes a cardiopulmonary bypass simulation system and does not contain any pharmacodynamic or exposure-response data for metaraminol. |
 | popPK | Mu_2020 | irrelevant | 0 | 0 | The study investigates the PET tracer [11C]mHED (meta-hydroxyephedrine), not metaraminol, which is only mentioned as a chemical precursor for radiolabeling. |
 | popPK | Tong_1992 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vascular reactivity, not a pharmacokinetic study, and reports no disposition parameters for metaraminol. |
-| popPK | Ungell_1987 | irrelevant | 0 | 0 | The paper title indicates a mechanistic study on neuronal noradrenaline carriers in rat vas deferens, with no evidence of pharmacokinetic parameters for metaraminol. |
+| popPK | Ungell_1987 | irrelevant | 0 | 0 | no_text gate: only 111 chars of text extracted (&lt; 400) |
 | PD | Ungell_1987 | not_relevant | 0 | 0 | The paper investigates the effect of potassium on noradrenaline carrier inhibitors in rat vas deferens and does not mention metaraminol or report any pharmacodynamic parameters for it. |
-| popPK | Ungell_1989 | irrelevant | 0 | 0 | The paper title indicates a mechanistic study on neuronal noradrenaline carrier inhibitors in rat vas deferens, with no evidence of metaraminol pharmacokinetic parameters. |
-| PD | Ungell_1989 | not_relevant | 0 | 0 | The paper investigates the chloride-dependence of noradrenaline carrier inhibitors in rat vas deferens and does not mention metaraminol or report any pharmacodynamic parameters for it. |
-| popPK | Waldmeier_1977 | irrelevant | 0 | 0 | The paper focuses on the uptake of metaraminol by human thrombocytes as a mechanistic model, not on pharmacokinetic disposition parameters. |
+| popPK | Ungell_1989 | irrelevant | 0 | 0 | no_text gate: only 110 chars of text extracted (&lt; 400) |
+| PD | Ungell_1989 | not_relevant | 0 | 0 | The paper investigates the chloride-dependence of neuronal noradrenaline carrier inhibitors in rat vas deferens and does not report pharmacodynamic or exposure-response data for metaraminol. |
+| popPK | Waldmeier_1977 | irrelevant | 0 | 0 | no_text gate: only 88 chars of text extracted (&lt; 400) |
 | PD | Waldmeier_1977 | not_relevant | 0 | 0 | The paper investigates the mechanism of metaraminol uptake by thrombocytes (transport kinetics) rather than a pharmacodynamic exposure-response or dose-response relationship for a therapeutic effect. |
 | popPK | Xiao_2021 | irrelevant | 0 | 0 | The study is a dose-response clinical trial determining ED50/ED90 for hemodynamic effects, not a pharmacokinetic study reporting clearance, volume, or compartmental parameters. |
 

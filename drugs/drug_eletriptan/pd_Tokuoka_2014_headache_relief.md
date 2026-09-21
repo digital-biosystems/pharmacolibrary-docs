@@ -15,49 +15,33 @@ Tokuoka K; Takayanagi R; Suzuki Y; Watanabe M; Kitagawa Y; Yamada Y et al. (2014
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|
-| SC 3 mg ※ — T max | `Q56` · not captured | 0.21 | not captured | not captured | llm (not captured) | tab_2:row3:col1 |
-| SC 3 mg ※ — C max | `Q32` · not captured | 44 | not captured | not captured | llm (not captured) | tab_2:row3:col2 |
-| SC 3 mg ※ — Φ max 1B * | `Q32` · not captured | 88.6 | not captured | not captured | llm (not captured) | tab_2:row3:col4 |
-| SC 3 mg ※ — Φ max | `Q32` · not captured | 88.6 | not captured | not captured | llm (not captured) | tab_2:row3:col5 |
-| SC 6 mg — T max | `Q56` · not captured | 0.2 | not captured | not captured | llm (not captured) | tab_2:row4:col1 |
-| SC 6 mg — C max | `Q32` · not captured | 95.5 | not captured | not captured | llm (not captured) | tab_2:row4:col2 |
-| SC 6 mg — Φ max | `Q32` · not captured | 94.4 | not captured | not captured | llm (not captured) | tab_2:row4:col5 |
-| PO 50 mg ※ — T max | `Q56` · not captured | 1.8 | not captured | not captured | llm (not captured) | tab_2:row6:col1 |
-| PO 50 mg ※ — C max | `Q32` · not captured | 32.6 | not captured | not captured | llm (not captured) | tab_2:row6:col2 |
-| PO 50 mg ※ — Φ max 1B * | `Q32` · not captured | 85.3 | not captured | not captured | llm (not captured) | tab_2:row6:col4 |
-| PO 50 mg ※ — Φ max | `Q32` · not captured | 85.3 | not captured | not captured | llm (not captured) | tab_2:row6:col5 |
-| PO 100 mg — T max | `Q56` · not captured | 2 | not captured | not captured | llm (not captured) | tab_2:row7:col1 |
-| PO 100 mg — C max | `Q32` · not captured | 58.2 | not captured | not captured | llm (not captured) | tab_2:row7:col2 |
-| PO 100 mg — Φ max 1B * | `Q32` · not captured | 91.2 | not captured | not captured | llm (not captured) | tab_2:row7:col4 |
-| PO 100 mg — Φ max | `Q32` · not captured | 91.2 | not captured | not captured | llm (not captured) | tab_2:row7:col5 |
-| NS 10 mg — T max | `Q56` · not captured | 1.1 | not captured | not captured | llm (not captured) | tab_2:row9:col1 |
-| NS 10 mg — C max | `Q32` · not captured | 6.4 | not captured | not captured | llm (not captured) | tab_2:row9:col2 |
-| NS 10 mg — Φ max | `Q32` · not captured | 53.2 | not captured | not captured | llm (not captured) | tab_2:row9:col5 |
-| NS 20 mg ※ — T max | `Q56` · not captured | 1.3 | not captured | not captured | llm (not captured) | tab_2:row10:col1 |
-| NS 20 mg ※ — C max | `Q32` · not captured | 12.2 | not captured | not captured | llm (not captured) | tab_2:row10:col2 |
-| NS 20 mg ※ — Φ max 1B * | `Q32` · not captured | 68.4 | not captured | not captured | llm (not captured) | tab_2:row10:col4 |
-| NS 20 mg ※ — Φ max | `Q32` · not captured | 68.4 | not captured | not captured | llm (not captured) | tab_2:row10:col5 |
-| PO 2.5 mg ※ — Φ max 1B * | `Q32` · not captured | 89.4 | not captured | not captured | llm (not captured) | tab_2:row12:col4 |
-| PO 2.5 mg ※ — Φ max | `Q32` · not captured | 96.2 | not captured | not captured | llm (not captured) | tab_2:row12:col5 |
-| PO 20 mg ※ — T max | `Q56` · not captured | 1 | not captured | not captured | llm (not captured) | tab_2:row17:col1 |
-| PO 20 mg ※ — C max | `Q32` · not captured | 38.9 | not captured | not captured | llm (not captured) | tab_2:row17:col2 |
-| PO 20 mg ※ — Φ max 1B * | `Q32` · not captured | 56.9 | not captured | not captured | llm (not captured) | tab_2:row17:col4 |
-| PO 20 mg ※ — Φ max | `Q32` · not captured | 91.7 | not captured | not captured | llm (not captured) | tab_2:row17:col5 |
-| PO 40 mg — T max | `Q56` · not captured | 1.2 | not captured | not captured | llm (not captured) | tab_2:row18:col1 |
-| PO 40 mg — C max | `Q32` · not captured | 69.7 | not captured | not captured | llm (not captured) | tab_2:row18:col2 |
-| PO 40 mg — Φ max 1B * | `Q32` · not captured | 70.3 | not captured | not captured | llm (not captured) | tab_2:row18:col4 |
-| PO 40 mg — Φ max | `Q32` · not captured | 95.2 | not captured | not captured | llm (not captured) | tab_2:row18:col5 |
-| PO 10 mg ※ — T max | `Q56` · not captured | 1 | not captured | not captured | llm (not captured) | tab_2:row20:col1 |
-| PO 10 mg ※ — C max | `Q32` · not captured | 20.3 | not captured | not captured | llm (not captured) | tab_2:row20:col2 |
-| PO 10 mg ※ — Φ max 1B * | `Q32` · not captured | 32.0 | not captured | not captured | llm (not captured) | tab_2:row20:col4 |
-| PO 10 mg ※ — Φ max | `Q32` · not captured | 83.2 | not captured | not captured | llm (not captured) | tab_2:row20:col5 |
-| PO 1 mg — T max | `Q56` · not captured | 2.17 | not captured | not captured | llm (not captured) | tab_2:row22:col1 |
-| PO 1 mg — C max | `Q32` · not captured | 2.12 | not captured | not captured | llm (not captured) | tab_2:row22:col2 |
-| PO 1 mg — Φ max | `Q32` · not captured | 66.1 | not captured | not captured | llm (not captured) | tab_2:row22:col5 |
-| PO 2.5 mg ※ — T max | `Q56` · not captured | 2.68 | not captured | not captured | llm (not captured) | tab_2:row23:col1 |
-| PO 2.5 mg ※ — C max | `Q32` · not captured | 5.62 | not captured | not captured | llm (not captured) | tab_2:row23:col2 |
-| PO 2.5 mg ※ — Φ max 1B * | `Q32` · not captured | 84.4 | not captured | not captured | llm (not captured) | tab_2:row23:col4 |
-| PO 2.5 mg ※ — Φ max | `Q32` · not captured | 83.8 | not captured | not captured | llm (not captured) | tab_2:row23:col5 |
+| T max — SC 3 mg ※ | `Q56` · not captured | 0.21 | not captured | not captured | space_fold (not captured) | tab_2:row0:col4 |
+| T max — SC 6 mg | `Q56` · not captured | 0.2 | not captured | not captured | space_fold (not captured) | tab_2:row0:col5 |
+| T max — PO 50 mg ※ | `Q56` · not captured | 1.8 | not captured | not captured | space_fold (not captured) | tab_2:row0:col7 |
+| T max — PO 100 mg | `Q56` · not captured | 2 | not captured | not captured | space_fold (not captured) | tab_2:row0:col8 |
+| T max — NS 10 mg | `Q56` · not captured | 1.1 | not captured | not captured | space_fold (not captured) | tab_2:row0:col10 |
+| T max — NS 20 mg ※ | `Q56` · not captured | 1.3 | not captured | not captured | space_fold (not captured) | tab_2:row0:col11 |
+| T max | `Q56` · not captured | 3 | not captured | not captured | space_fold (not captured) | tab_2:row0:col14 |
+| T max | `Q56` · not captured | 3 | not captured | not captured | space_fold (not captured) | tab_2:row0:col16 |
+| T max — PO 20 mg ※ | `Q56` · not captured | 1 | not captured | not captured | space_fold (not captured) | tab_2:row0:col18 |
+| T max — PO 40 mg | `Q56` · not captured | 1.2 | not captured | not captured | space_fold (not captured) | tab_2:row0:col19 |
+| T max — PO 10 mg ※ | `Q56` · not captured | 1 | not captured | not captured | space_fold (not captured) | tab_2:row0:col21 |
+| T max — PO 1 mg | `Q56` · not captured | 2.17 | not captured | not captured | space_fold (not captured) | tab_2:row0:col23 |
+| T max — PO 2.5 mg ※ | `Q56` · not captured | 2.68 | not captured | not captured | space_fold (not captured) | tab_2:row0:col24 |
+| C max — SC 3 mg ※ | `Q32` · not captured | 44 | not captured | not captured | space_fold (not captured) | tab_2:row1:col4 |
+| C max — SC 6 mg | `Q32` · not captured | 95.5 | not captured | not captured | space_fold (not captured) | tab_2:row1:col5 |
+| C max — PO 50 mg ※ | `Q32` · not captured | 32.6 | not captured | not captured | space_fold (not captured) | tab_2:row1:col7 |
+| C max — PO 100 mg | `Q32` · not captured | 58.2 | not captured | not captured | space_fold (not captured) | tab_2:row1:col8 |
+| C max — NS 10 mg | `Q32` · not captured | 6.4 | not captured | not captured | space_fold (not captured) | tab_2:row1:col10 |
+| C max — NS 20 mg ※ | `Q32` · not captured | 12.2 | not captured | not captured | space_fold (not captured) | tab_2:row1:col11 |
+| C max | `Q32` · not captured | 5.23 | not captured | not captured | space_fold (not captured) | tab_2:row1:col14 |
+| C max | `Q32` · not captured | 3.5 | not captured | not captured | space_fold (not captured) | tab_2:row1:col16 |
+| C max — PO 20 mg ※ | `Q32` · not captured | 38.9 | not captured | not captured | space_fold (not captured) | tab_2:row1:col18 |
+| C max — PO 40 mg | `Q32` · not captured | 69.7 | not captured | not captured | space_fold (not captured) | tab_2:row1:col19 |
+| C max — PO 10 mg ※ | `Q32` · not captured | 20.3 | not captured | not captured | space_fold (not captured) | tab_2:row1:col21 |
+| C max — PO 1 mg | `Q32` · not captured | 2.12 | not captured | not captured | space_fold (not captured) | tab_2:row1:col23 |
+| C max — PO 2.5 mg ※ | `Q32` · not captured | 5.62 | not captured | not captured | space_fold (not captured) | tab_2:row1:col24 |
+| Φ max — SC 6 mg | `Q32` · not captured | 94.4 | not captured | not captured | llm (not captured) | tab_2:row4:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

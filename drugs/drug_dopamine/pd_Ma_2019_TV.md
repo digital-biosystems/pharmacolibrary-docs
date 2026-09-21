@@ -24,14 +24,14 @@ Ma YH; Wang SY; Ren YP; Li J; Guo TJ; Lu W; et al. et al. (2019). Acta pharmacol
 | N 0 (mm 3 ) — IIV | `Q312` · not captured | 29.3 | mm 3 | not captured | llm (not captured) | tab_0:row5:col3 |
 | λ 0 (per day) — TV | `Q67` · not captured | 0.229 | per day | not captured | llm (not captured) | tab_0:row6:col1 |
 | λ 0 (per day) | `Q67` · not captured | 5.7 | per day | not captured | llm (not captured) | tab_0:row6:col2 |
-| λ 0 (per day) — IIV | `Q67` · not captured | 9.2 | per day | not captured | llm (not captured) | tab_0:row6:col3 |
+| λ 0 (per day) — IIV | `Q312` · not captured | 9.2 | per day | not captured | llm (not captured) | tab_0:row6:col3 |
 | λ 0 (per day) | `Q67` · not captured | 31.2 | per day | not captured | llm (not captured) | tab_0:row6:col4 |
 | λ 1 (mm 3 /day) — TV | `Q67` · not captured | 273 | mm 3 /day | not captured | space_fold (not captured) | tab_0:row7:col1 |
 | λ 1 (mm 3 /day) | `Q67` · not captured | 7.9 | mm 3 /day | not captured | space_fold (not captured) | tab_0:row7:col2 |
 | λ 1 (mm 3 /day) — IIV | `Q67` · not captured | 17.9 | mm 3 /day | not captured | space_fold (not captured) | tab_0:row7:col3 |
 | λ 1 (mm 3 /day) | `Q67` · not captured | 19.6 | mm 3 /day | not captured | space_fold (not captured) | tab_0:row7:col4 |
 | k max (per day) — TV | `Q66` · not captured | 1.60 | per day | not captured | llm (not captured) | tab_0:row8:col1 |
-| k max (per day) — IIV | `Q312` · not captured | 0 | per day | not captured | llm (not captured) | tab_0:row8:col3 |
+| k max (per day) — IIV | `Q320` · not captured | 0 | per day | not captured | llm (not captured) | tab_0:row8:col3 |
 | kC 50 (mg/L) — TV | `Q321` · not captured | 2.10 | mg/L | not captured | llm (not captured) | tab_0:row9:col1 |
 | kC 50 (mg/L) | `Q321` · not captured | 12.1 | mg/L | not captured | llm (not captured) | tab_0:row9:col2 |
 | kC 50 (mg/L) — IIV | `Q321` · not captured | 0 | mg/L | not captured | llm (not captured) | tab_0:row9:col3 |

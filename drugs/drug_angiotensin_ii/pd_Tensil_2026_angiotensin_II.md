@@ -1,7 +1,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AngiotensinIi_Athanassa2025_reference&quot;,&quot;label&quot;:&quot;Athanassa_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AngiotensinIi_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AngiotensinIi_van2026_reference&quot;,&quot;label&quot;:&quot;van_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_van2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AngiotensinIi_Kurup2024_reference&quot;,&quot;label&quot;:&quot;Kurup_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Kurup2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AngiotensinIi_Moran1985_reference&quot;,&quot;label&quot;:&quot;Moran_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_angiotensin_ii/AngiotensinIi_Moran1985_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# angiotensin II — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# name — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Tensil_2026`
 - **model family:** `indirect_response_ii`
@@ -16,7 +16,7 @@ Tensil E; Myshkina M; König M et al. (2026). Pharmaceutics 18
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|
-| Sekino2003 [37] — Dose [mg] | `Q100` · not captured | 25 | not captured | not captured | llm (not captured) | pharmaceutics-18-00262-t001:row21:col5 |
+| Sekino2003 [37] — Dose [mg] | `Q100` · not captured | 25 | mg | not captured | llm (not captured) | pharmaceutics-18-00262-t001:row21:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

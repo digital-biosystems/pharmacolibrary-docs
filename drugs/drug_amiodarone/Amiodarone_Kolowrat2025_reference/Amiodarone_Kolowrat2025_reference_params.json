@@ -1,0 +1,24 @@
+{
+ "model_id": "Amiodarone_Kolowrat2025_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.6666666666666667e-07,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0006207142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.00022777777777777775,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.002027365379780583
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

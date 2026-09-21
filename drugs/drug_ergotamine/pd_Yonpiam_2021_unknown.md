@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergotamine_TfeltHansen1985_subjects_with_migraine&quot;,&quot;label&quot;:&quot;Tfelt-Hansen_1985_subjects with migraine&quot;,&quot;href&quot;:&quot;drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_subjects_with_migraine.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergotamine_TfeltHansen1985_reference&quot;,&quot;label&quot;:&quot;Tfelt-Hansen_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # arterial contractile response — PD  <span class="pk-badge pk-badge--red">rejected</span>

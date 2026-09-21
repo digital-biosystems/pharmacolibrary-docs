@@ -15,7 +15,7 @@ Mandema JW; Cox E; Alderman J et al. (2005). Cephalalgia : an international jour
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|
-| k pl (h -1 ) — Pain relief | `Q326` · not captured | 1.56 | h -1 | not captured | llm (not captured) | tab_1:row4:col1 |
+| k pl (h -1 ) — Pain relief | `Q47` · not captured | 1.56 | h -1 | not captured | llm (not captured) | tab_1:row4:col1 |
 | k pl (h -1 ) | `Q358` · not captured | 1.39 | h -1 | not captured | llm (not captured) | tab_1:row4:col2 |
 | k pl (h -1 ) | `Q358` · not captured | 1.75 | h -1 | not captured | llm (not captured) | tab_1:row4:col3 |
 | k pl (h -1 ) — Pain free | `Q326` · not captured | 0.99 | h -1 | not captured | llm (not captured) | tab_1:row4:col4 |

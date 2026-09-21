@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;aprindine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aprindine_Kobari1984_healthy_volunteers&quot;,&quot;label&quot;:&quot;Kobari_1984_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_aprindine/Aprindine_Kobari1984_healthy_volunteers.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aprindine_Kobari1984_reference&quot;,&quot;label&quot;:&quot;Kobari_1984_reference&quot;,&quot;href&quot;:&quot;drugs/drug_aprindine/Aprindine_Kobari1984_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # aprindine
 
@@ -16,13 +16,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 08:08 | 3:02 | 0/0/0 | 0/0/0 | 0/0/1 | 27,246/1,143 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
+| 2026-09-19 14:44 | 11:20 | 0/1/0 | 0/0/0 | 0/0/1 | 24,995/1,417 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kobari_1984_healthy volunteers](drugs/drug_aprindine/Aprindine_Kobari1984_healthy_volunteers.md) | Kobari T et al., Dose-dependent pharmacokinetics of apri…, European journal of clinica… (1984) | [10.1007/BF00546721](https://doi.org/10.1007/BF00546721) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kobari_1984_reference](drugs/drug_aprindine/Aprindine_Kobari1984_reference.md) | Kobari T et al., Dose-dependent pharmacokinetics of apri…, European journal of clinica… (1984) | [10.1007/BF00546721](https://doi.org/10.1007/BF00546721) |
 
 ## Pharmacogenomics (PGx)
 
@@ -53,15 +53,15 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Wirth_1983.pdf` | Wirth KE et al., [Detection of aprindine and its metabol…, Herz (1983) | popPK | 8 | not captured | [6642401](https://pubmed.ncbi.nlm.nih.gov/6642401) | The study reports a two-compartment model and elimination half-lives (37h plasma, 31h urine) for aprindine, but lacks explicit values for clearance, volume of distribution, or absorption rate constants. |
 | `Kobayashi_1998.pdf` | Kobayashi K et al., Inhibitory effects of antiarrhythmic dr…, British journal of clinical… (1998) | pgx | 7 | [10.1046/j.1365-2125.1998.t01-1-00692.x](https://doi.org/10.1046/j.1365-2125.1998.t01-1-00692.x) | [9578183](https://www.ncbi.nlm.nih.gov/pubmed/9578183) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-09-09T08:07:51.115200+00:00</sub>
+<sub>queue written 2026-09-19T14:43:28.034424+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Kobayashi_1998 | not_relevant | 0 | 0 | The paper reports in vitro CYP1A2 inhibition by aprindine, not a pharmacogenomic effect (gene variant) on aprindine's PK or PD. |
+| PGx | Kobayashi_1998 | not_relevant | 0 | 0 | The paper reports in vitro CYP1A2 inhibition by aprindine, not a pharmacogenomic effect (gene variant) on aprindine's PK or PD parameters. |
 | popPK | Matsuo_2000 | irrelevant | 0 | 0 | The study focuses on propiverine and receptor binding in mice, with aprindine mentioned only as a prior comparator for inducing catalepsy, and no PK parameters for aprindine are reported. |
-| PD | Matsuo_2000 | not_relevant | 2 | 1 | The paper focuses on propiverine and other drugs, mentioning aprindine only in the context of previous work; it provides qualitative rankings of catalepsy intensity and in vitro binding affinities (Ki/Kd) rather than a quantitative exposure-response or dose-response curve with PD parameters (Emax, EC50) for aprindine. |
+| PD | Matsuo_2000 | not_relevant | 1 | 0 | The paper focuses on propiverine and other drugs, mentioning aprindine only in the context of previous work without providing any new numeric PD parameters or exposure-response data for aprindine. |
 | popPK | Taguchi_2006 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for bepridil, with aprindine serving only as a co-administered inhibitor/comparator, not as the subject drug. |
 | PGx | Taguchi_2006 | not_relevant | 0 | 0 | The paper reports pharmacokinetic parameters for bepridil, not aprindine; aprindine is only mentioned as a co-administered drug affecting bepridil clearance. |
 | popPK | Tanaka_1990 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of aprindine's mechanism of action on ion channels, not a pharmacokinetic study reporting disposition parameters. |

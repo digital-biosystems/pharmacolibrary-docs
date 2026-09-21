@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bretylium_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/Bretylium_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bretylium_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/Bretylium_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bretylium_Kamath1981_reference&quot;,&quot;label&quot;:&quot;Kamath_1981_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/Bretylium_Kamath1981_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bretylium_Rapeport1985_reference&quot;,&quot;label&quot;:&quot;Rapeport_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/Bretylium_Rapeport1985_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bretylium_Garrett1982_reference&quot;,&quot;label&quot;:&quot;Garrett_1982_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/Bretylium_Garrett1982_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bretylium_Narang1980_reference&quot;,&quot;label&quot;:&quot;Narang_1980_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bretylium/Bretylium_Narang1980_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hemodynamic stability — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -18,7 +18,6 @@ Yoon JY; Park CG; Kim EJ; Choi BM; Yoon JU; Kim YH; Lee MO; Han KS; Ahn JH et al
 |---|---|---|---|---|---|---|
 | Ce50 (ng/ml) — Estimates (SE) | `Q321` · not captured | 3.22 | ng/ml | not captured | llm (not captured) | T3:row1:col1 |
 | Ce50 (ng/ml) — RSE (%) | `Q321` · not captured | 4.6 | ng/ml | not captured | llm (not captured) | T3:row1:col2 |
-| γ — Estimates (SE) | `Q89` · not captured | 10.6 | not captured | not captured | llm (not captured) | T3:row2:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

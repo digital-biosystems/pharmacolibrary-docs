@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;tanezumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tanezumab_Jonsson2016_reference&quot;,&quot;label&quot;:&quot;Jonsson_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tanezumab/Tanezumab_Jonsson2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tanezumab_Jonsson2016_reference&quot;,&quot;label&quot;:&quot;Jonsson_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tanezumab/Tanezumab_Jonsson2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tanezumab_Shoji2022_reference&quot;,&quot;label&quot;:&quot;Shoji_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tanezumab/Tanezumab_Shoji2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # tanezumab
 
@@ -16,19 +16,20 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-29 15:48 | 8:28 | 0/1/0 | 0/0/0 | 0/0/0 | 46,176/1,173 | ollama / qwen3.8:27b-q4_K_M | 3 | 0/3 | 3/0 | 0 |
+| 2026-09-21 03:26 | 2:11 | 0/2/0 | 0/0/0 | 0/0/0 | 58,555/2,760 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Jonsson_2016_reference](drugs/drug_tanezumab/Tanezumab_Jonsson2016_reference.md) | Jonsson EN et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2016) | [10.1111/bcp.12850](https://doi.org/10.1111/bcp.12850) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Shoji_2022_reference](drugs/drug_tanezumab/Tanezumab_Shoji2022_reference.md) | Shoji S et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2022) | [10.1111/bcp.15259](https://doi.org/10.1111/bcp.15259) |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -37,17 +38,17 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Shoji_2022.pdf` | Shoji S et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2022) | popPK | 10 | [10.1111/bcp.15259](https://doi.org/10.1111/bcp.15259) | [35112378](https://pubmed.ncbi.nlm.nih.gov/35112378) | The paper is a population PK study for tanezumab and explicitly reports numeric values for clearance (CL), central volume (Vc), peripheral volume (Vp), and bioavailability in the text. |
+| `Shoji_2022.pdf` | Shoji S et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2022) | popPK | 10 | [10.1111/bcp.15259](https://doi.org/10.1111/bcp.15259) | [35112378](https://pubmed.ncbi.nlm.nih.gov/35112378) | The paper reports a population PK model for tanezumab with explicit numeric values for clearance, volumes, and bioavailability in the text. |
 
-<sub>queue written 2026-08-29T15:42:38.502594+00:00</sub>
+<sub>queue written 2026-09-21T03:24:43.604568+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PD | Lian_2022 | not_relevant | 1 | 0 | The paper is a meta-analysis of clinical outcomes (pain intensity) and does not report any pharmacokinetic data, concentration-effect relationships, or numeric PD parameters (e.g., Emax, EC50). |
-| popPK | Shoji_2023 | relevant | 8 | 2 | The paper is a PK-PD modeling study for tanezumab, but the specific numeric PK parameter values (CL, V, ka) are fixed from a previous study and are not listed in the provided evidence, appearing only as references to Table S1 or Appendix S1. |
-| PD | Tahir_2023 | not_relevant | 2 | 1 | The paper is a meta-analysis of clinical trial outcomes (pain scores) comparing fixed doses, but it does not report pharmacokinetic data, concentration-effect curves, or derived PD parameters like Emax or EC50. |
+| PD | Lian_2022 | not_relevant | 1 | 0 | The paper is a meta-analysis of clinical trials reporting aggregate efficacy outcomes (mean differences in pain scores) and safety, but it does not report any pharmacokinetic data, exposure-response relationships, or numeric PD parameters (e.g., Emax, EC50). |
+| popPK | Shoji_2023 | relevant | 5 | 1 | The study uses a population PK model for tanezumab but fixes the PK parameters to values from a previous study (reference 13/Table S1), which are not provided in the evidence, reporting only NGF-related parameters. |
+| PD | Tahir_2023 | not_relevant | 2 | 1 | The paper is a meta-analysis of clinical trial outcomes (dose-response in terms of fixed doses vs placebo) but does not report pharmacokinetic data, concentration-effect relationships, or formal PD model parameters (Emax, EC50, etc.). |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_tanezumab`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

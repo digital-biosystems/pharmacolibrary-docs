@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;ajmaline&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ajmaline_Iven1977_mice&quot;,&quot;label&quot;:&quot;Iven_1977_mice&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/Ajmaline_Iven1977_mice.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ajmaline_Iven1977_reference&quot;,&quot;label&quot;:&quot;Iven_1977_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/Ajmaline_Iven1977_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # ajmaline
 
@@ -18,13 +18,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 07:30 | 4:34 | 0/0/0 | 1/0/0 | 0/0/0 | 65,458/4,023 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 3/0 | 0 |
+| 2026-09-19 14:12 | 2:21 | 0/1/0 | 1/0/0 | 0/0/0 | 57,393/3,675 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Iven_1977_mice](drugs/drug_ajmaline/Ajmaline_Iven1977_mice.md) | Iven H, The pharmacokinetics and organ distribu…, Naunyn-Schmiedeberg's archi… (1977) | [10.1007/BF00510985](https://doi.org/10.1007/BF00510985) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Iven_1977_reference](drugs/drug_ajmaline/Ajmaline_Iven1977_reference.md) | Iven H, The pharmacokinetics and organ distribu…, Naunyn-Schmiedeberg's archi… (1977) | [10.1007/BF00510985](https://doi.org/10.1007/BF00510985) |
 
 ## Pharmacodynamics (PD)
 
@@ -46,30 +46,29 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Elfner_1987.pdf` | Elfner R et al., Pharmacokinetics of n-propyl-ajmaline-b…, European journal of drug me… (1987) | popPK | 10 | [10.1007/BF03189865](https://doi.org/10.1007/BF03189865) | [3609075](https://pubmed.ncbi.nlm.nih.gov/3609075) | The paper reports quantitative pharmacokinetic parameters (clearance and volume of distribution) for n-propyl-ajmaline, a specific ajmaline derivative, in a human study. |
-| `Yasuhara_1987.pdf` | Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharmacokinetics… (1987) | popPK | 10 | [10.1007/BF01062938](https://doi.org/10.1007/BF01062938) | [3625478](https://pubmed.ncbi.nlm.nih.gov/3625478) | The title confirms a pharmacokinetic study of ajmaline in beagle dogs, but the provided evidence contains only the title and no numeric parameter values. |
+| `Elfner_1987.pdf` | Elfner R et al., Pharmacokinetics of n-propyl-ajmaline-b…, European journal of drug me… (1987) | popPK | 10 | [10.1007/BF03189865](https://doi.org/10.1007/BF03189865) | [3609075](https://pubmed.ncbi.nlm.nih.gov/3609075) | The study reports quantitative pharmacokinetic parameters (clearance and volume of distribution) for n-propyl-ajmaline, a specific ajmaline derivative, in a human population. |
 | `Iven_1977.pdf` | Iven H, The pharmacokinetics and organ distribu…, Naunyn-Schmiedeberg's archi… (1977) | popPK | 9 | [10.1007/BF00510985](https://doi.org/10.1007/BF00510985) | [882146](https://pubmed.ncbi.nlm.nih.gov/882146) | The study reports quantitative pharmacokinetic parameters (t0.5alpha, t0.5beta, Vdbeta) for ajmaline in mice, and the specific numeric values are explicitly present in the provided text. |
+| `Yasuhara_1987.pdf` | Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharmacokinetics… (1987) | popPK | 9 | [10.1007/BF01062938](https://doi.org/10.1007/BF01062938) | [3625478](https://pubmed.ncbi.nlm.nih.gov/3625478) | The paper describes a pharmacokinetic study of ajmaline in dogs using a two-compartment model, but the specific numeric parameter values are not present in the provided evidence. |
 | `Hori_1984.pdf` | Hori R et al., Quinidine-induced rise in ajmaline plas…, The Journal of pharmacy and… (1984) | popPK | 8 | [10.1111/j.2042-7158.1984.tb06942.x](https://doi.org/10.1111/j.2042-7158.1984.tb06942.x) | [6144760](https://pubmed.ncbi.nlm.nih.gov/6144760) | The study reports quantitative PK parameters (ka, elimination rate constant, AUC, Cmax) for ajmaline in humans, though specific clearance or volume values are not explicitly listed in the text. |
 | `Spilker_1975.pdf` | Spilker B et al., Cardiovascular effects and blood concen…, Archives internationales de… (1975) | popPK | 8 | not captured | [1164107](https://pubmed.ncbi.nlm.nih.gov/1164107) | The study reports quantitative PK parameters for ajmaline in cats, specifically a half-life of 100 min and peak blood level timing, though full compartmental model parameters (CL, V) are not explicitly listed. |
 | `Miao_2025.pdf` | Miao Z et al., Zebrafish embryos as a teratogenicity s…, Reproductive toxicology (El… (2025) | pd | 5 | [10.1016/j.reprotox.2025.108895](https://doi.org/10.1016/j.reprotox.2025.108895) | [40097051](https://www.ncbi.nlm.nih.gov/pubmed/40097051) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-09T07:28:19.015954+00:00</sub>
+<sub>queue written 2026-09-19T14:11:12.897330+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Alvarez_1992 | irrelevant | 0 | 0 | The study focuses on the electrophysiological mechanism of action of prajmalium (an ajmaline derivative) in rabbit cardiomyocytes and does not report pharmacokinetic parameters for ajmaline. |
+| popPK | Alvarez_1992 | irrelevant | 0 | 0 | The study focuses on the cellular mechanism of action of prajmalium (an ajmaline derivative) in rabbit cardiomyocytes and does not report pharmacokinetic parameters for ajmaline. |
 | popPK | Bébarová_2005 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of ionic currents in rat myocytes, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Friedrich_2007 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study investigating ajmaline's effects on ion channels in skeletal muscle, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Miao_2025 | irrelevant | 0 | 0 | The paper title indicates a teratogenicity study in zebrafish, and the provided evidence contains no pharmacokinetic parameters or data for ajmaline. |
-| PD | Miao_2025 | not_relevant | 0 | 0 | The paper focuses on zebrafish teratogenicity screening and does not report any pharmacodynamic or exposure-response analysis for ajmaline. |
+| popPK | Miao_2025 | irrelevant | 0 | 0 | no_text gate: only 86 chars of text extracted (&lt; 400) |
+| PD | Miao_2025 | not_relevant | 0 | 0 | The paper focuses on zebrafish teratogenicity screening and does not report any pharmacodynamic or exposure-response data for ajmaline. |
 | popPK | Rukachaisirikul_2017 | irrelevant | 0 | 0 | The paper is a phytochemical study on the isolation and structural elucidation of alkaloids, not a pharmacokinetic study. |
-| PD | Rukachaisirikul_2017 | not_relevant | 0 | 0 | The paper is a phytochemical isolation study reporting the discovery of a new alkaloid and identifying known compounds; it does not report pharmacodynamic modeling or exposure-response relationships for ajmaline. |
-| PGx | Sheludko_2020 | not_relevant | 0 | 0 | The paper investigates the biosynthesis of plant alkaloids using CYP3A4 and does not report pharmacogenomic effects on the PK or PD of the drug ajmaline. |
-| PD | Si_0000 | not_relevant | 0 | 0 | The paper reports IC50 values for various natural product compounds (including ajmaline-type alkaloids) in cell assays, but does not report a pharmacodynamic (exposure-response) model or specific PD parameters (Emax, EC50, slope) for the drug ajmaline itself. |
-| popPK | Yasuhara_1987 | relevant | 10 | 0 | The title confirms a pharmacokinetic study of ajmaline in beagle dogs, but the provided evidence contains only the title and no numeric parameter values. |
-| PD | Yasuhara_1987 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, abstract, or data required to determine if numeric PD parameters or exposure-response relationships are reported. |
+| PD | Rukachaisirikul_2017 | not_relevant | 0 | 0 | The paper is a phytochemical isolation study reporting the identification of alkaloids; it does not report a pharmacodynamic or exposure-response relationship for ajmaline, only mentioning its isolation. |
+| PGx | Sheludko_2020 | not_relevant | 0 | 0 | The paper focuses on the biosynthesis of plant alkaloids using CYP3A4, not on the pharmacokinetics or pharmacodynamics of ajmaline in humans. |
+| PD | Si_0000 | not_relevant | 0 | 0 | The paper reports IC50 values for novel compounds (nutanosides/nutanesters) and mentions ajmaline only as a structural class reference, providing no pharmacodynamic or exposure-response data for ajmaline itself. |
+| popPK | Yasuhara_1987 | relevant | 9 | 0 | The paper describes a pharmacokinetic study of ajmaline in dogs using a two-compartment model, but the specific numeric parameter values are not present in the provided evidence. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_ajmaline`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

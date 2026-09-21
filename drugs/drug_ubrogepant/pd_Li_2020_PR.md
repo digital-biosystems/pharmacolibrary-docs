@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# 2-hour pain relief — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# 2-hour pain relief — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Li_2020`
 - **model family:** `emax`

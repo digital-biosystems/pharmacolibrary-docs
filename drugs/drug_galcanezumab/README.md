@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;galcanezumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_final&quot;,&quot;label&quot;:&quot;Kielbasa_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_final.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_final&quot;,&quot;label&quot;:&quot;Kielbasa_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_final.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_base&quot;,&quot;label&quot;:&quot;Kielbasa_2020_base&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_base&quot;,&quot;label&quot;:&quot;Kielbasa_2020_base&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Galcanezumab_FiedlerKelly2021_reference&quot;,&quot;label&quot;:&quot;Fiedler-Kelly_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_FiedlerKelly2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_final&quot;,&quot;label&quot;:&quot;Kielbasa_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_final&quot;,&quot;label&quot;:&quot;Kielbasa_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_base&quot;,&quot;label&quot;:&quot;Kielbasa_2020_base&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Galcanezumab_Kielbasa2020_base&quot;,&quot;label&quot;:&quot;Kielbasa_2020_base&quot;,&quot;href&quot;:&quot;drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # galcanezumab
 
@@ -18,14 +18,15 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-29 20:32 | 4:20 | 1/1/0 | 0/0/0 | 1/0/5 | 77,930/2,960 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/4 | 4/0 | 0 |
+| 2026-09-21 05:57 | 3:09 | 1/1/1 | 0/0/0 | 1/0/5 | 80,498/3,404 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/4 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kielbasa_2020_final](drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_final.md) | Kielbasa W et al., Population Pharmacokinetics of Galcanez…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1511](https://doi.org/10.1002/jcph.1511) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kielbasa_2020_final](drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_final.md) | Kielbasa W et al., Population Pharmacokinetics of Galcanez…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1511](https://doi.org/10.1002/jcph.1511) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Fiedler-Kelly_2021_reference](drugs/drug_galcanezumab/Galcanezumab_FiedlerKelly2021_reference.md) | Fiedler-Kelly J et al., Relationship of the Calcitonin Gene-Rel…, Clinical pharmacology in dr… (2021) | [10.1002/cpdd.929](https://doi.org/10.1002/cpdd.929) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Kielbasa_2020_final](drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_final.md) | Kielbasa W et al., Population Pharmacokinetics of Galcanez…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1511](https://doi.org/10.1002/jcph.1511) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Kielbasa_2020_final](drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_final.md) | Kielbasa W et al., Population Pharmacokinetics of Galcanez…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1511](https://doi.org/10.1002/jcph.1511) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kielbasa_2020_base](drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_base.md) | Kielbasa W et al., Population Pharmacokinetics of Galcanez…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1511](https://doi.org/10.1002/jcph.1511) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kielbasa_2020_base](drugs/drug_galcanezumab/Galcanezumab_Kielbasa2020_base.md) | Kielbasa W et al., Population Pharmacokinetics of Galcanez…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1511](https://doi.org/10.1002/jcph.1511) |
 
@@ -49,7 +50,7 @@
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs_review 2  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 1  ·  needs_review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -60,7 +61,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Fiedler-Kelly_2021.pdf` | Fiedler-Kelly J et al., Relationship of the Calcitonin Gene-Rel…, Clinical pharmacology in dr… (2021) | popPK | 10 | [10.1002/cpdd.929](https://doi.org/10.1002/cpdd.929) | [33740315](https://pubmed.ncbi.nlm.nih.gov/33740315) | The evidence explicitly reports quantitative PK parameters (CL, V, ka, tlag, t1/2) for galcanezumab in the text. |
 
-<sub>queue written 2026-08-29T20:30:43.063811+00:00</sub>
+<sub>queue written 2026-09-21T05:55:18.290652+00:00</sub>
 
 ## Screened and excluded
 
@@ -68,7 +69,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Cho_2026 | irrelevant | 0 | 0 | The paper is a real-world effectiveness and safety study reporting clinical outcomes (headache days) and does not contain any pharmacokinetic parameters for galcanezumab. |
 | popPK | Martín-Yeves_2026 | irrelevant | 0 | 0 | The paper is a clinical effectiveness study comparing migraine outcomes and does not report any pharmacokinetic parameters for galcanezumab. |
-| PGx | Szkutnik-Fiedler_2020 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions and general pharmacokinetics for anti-migraine drugs, but it does not report any pharmacogenomic effects (gene variants) on the PK or PD of galcanezumab. |
+| PGx | Szkutnik-Fiedler_2020 | not_relevant | 0 | 0 | The paper is a review of drug-drug and drug-food interactions for anti-migraine drugs and does not report pharmacogenomic effects (gene variants) on the PK or PD of galcanezumab. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_galcanezumab`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

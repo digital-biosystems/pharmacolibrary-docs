@@ -3,7 +3,7 @@
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Gunasekera_1990`
-- **model family:** `emax`
+- **model family:** `unknown`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
 - **effect:** stimulation/unknown

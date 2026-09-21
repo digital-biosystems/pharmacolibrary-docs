@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;ergotamine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergotamine_TfeltHansen1985_subjects_with_migraine&quot;,&quot;label&quot;:&quot;Tfelt-Hansen_1985_subjects with migraine&quot;,&quot;href&quot;:&quot;drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_subjects_with_migraine.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ergotamine_TfeltHansen1985_reference&quot;,&quot;label&quot;:&quot;Tfelt-Hansen_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # ergotamine
 
@@ -18,13 +18,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-29 22:06 | 13:26 | 0/0/0 | 0/4/0 | 0/0/0 | 223,098/14,389 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 1/6 | 7/0 | 0 |
+| 2026-09-21 05:09 | 9:13 | 0/1/0 | 0/4/0 | 0/0/0 | 225,363/14,915 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 1/6 | 7/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Tfelt-Hansen_1985_subjects with migraine](drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_subjects_with_migraine.md) | Tfelt-Hansen P et al., Intramuscular ergotamine: plasma levels…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.7](https://doi.org/10.1038/clpt.1985.7) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Tfelt-Hansen_1985_reference](drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_reference.md) | Tfelt-Hansen P et al., Intramuscular ergotamine: plasma levels…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.7](https://doi.org/10.1038/clpt.1985.7) |
 
 ## Pharmacodynamics (PD)
 
@@ -56,22 +56,22 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Dresser_2000.pdf` | Dresser GK et al., Pharmacokinetic-pharmacodynamic consequ…, Clinical pharmacokinetics (2000) | pgx | 7 | [10.2165/00003088-200038010-00003](https://doi.org/10.2165/00003088-200038010-00003) | [10668858](https://www.ncbi.nlm.nih.gov/pubmed/10668858) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Fung_2000.pdf` | Fung HB et al., Amprenavir: a new human immunodeficienc…, Clinical therapeutics (2000) | pgx | 7 | [10.1016/S0149-2918(00)80044-2](https://doi.org/10.1016/S0149-2918(00)80044-2) | [10868554](https://www.ncbi.nlm.nih.gov/pubmed/10868554) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-08-29T21:58:11.429830+00:00</sub>
+<sub>queue written 2026-09-21T05:00:50.048629+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Ahmad_2025 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (ritonavir inhibiting CYP3A4) causing ergotism, not a pharmacogenomic effect based on a specific gene variant or genotype. |
+| PGx | Ahmad_2025 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (CYP3A4 inhibition by ritonavir) causing ergotism, not a pharmacogenomic effect based on a specific gene variant or genotype. |
 | PGx | Avihingsanon_2014 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (CYP3A4 inhibition) causing toxicity, not pharmacogenomic effects of genetic variants on PK/PD parameters. |
-| PGx | Bailey_2004 | not_relevant | 0 | 0 | The paper discusses drug-food interactions (grapefruit juice) and does not report any pharmacogenomic effects (gene variants) on ergotamine PK/PD. |
+| PGx | Bailey_2004 | not_relevant | 0 | 0 | The paper discusses a drug-food interaction (grapefruit juice) affecting ergotamine, not a pharmacogenomic effect (gene variant/genotype). |
 | popPK | Bax_1993 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor-mediated contractions in isolated human coronary arteries, not a pharmacokinetic study, and reports no disposition parameters for ergotamine. |
 | PGx | Buchan_2002 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions for frovatriptan and does not report pharmacogenomic effects on ergotamine. |
-| PGx | Christensen_2016 | not_relevant | 2 | 5 | The paper reports associations between genetic variants and clinical drug response (efficacy/success), not specific pharmacokinetic (PK) or pharmacodynamic (PD) parameters like AUC, Cmax, or receptor binding affinity. |
-| PGx | Coufal-Majewski_2016 | not_relevant | 0 | 0 | The paper is a review on the toxicology and detection of ergot alkaloids in livestock feed, not a pharmacogenomic study of ergotamine as a drug. |
+| PGx | Christensen_2016 | not_relevant | 2 | 5 | The study reports associations between genetic variants and clinical drug response (efficacy/success), not specific pharmacokinetic (PK) or pharmacodynamic (PD) parameters like AUC, Cmax, or receptor binding affinity. |
+| PGx | Coufal-Majewski_2016 | not_relevant | 0 | 0 | The paper discusses the toxicology and contamination of ergot alkaloids in animal feed, not the pharmacogenomics of ergotamine as a therapeutic drug. |
 | popPK | Dresser_2000 | irrelevant | 0 | 0 | The paper is a review of CYP3A4 drug interactions that mentions ergotamine only as an example of a drug causing ergotism, without reporting any quantitative pharmacokinetic parameters for ergotamine. |
 | PD | Dresser_2000 | not_relevant | 1 | 0 | The text is a general review of CYP3A4 drug interactions that mentions ergotamine only qualitatively in the context of adverse effects (ergotism) without providing any specific pharmacokinetic data, concentration-effect curves, or numeric PD parameters. |
-| PGx | Dresser_2000 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving CYP3A4 inhibitors and ergotamine, but does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| PGx | Dresser_2000 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving CYP3A4 inhibitors and ergotamine, not pharmacogenomic effects of gene variants on ergotamine PK/PD. |
 | PGx | Fung_2000 | not_relevant | 0 | 0 | The paper reviews amprenavir and mentions ergotamine only as a contraindicated drug interaction, without reporting any pharmacogenomic effects on ergotamine's PK or PD. |
 | popPK | Inoue_2003 | irrelevant | 0 | 0 | The study is a pharmacological investigation of 5-HT7 receptor-mediated relaxation in porcine oviducts, where ergotamine is used only as a comparative agonist, and no pharmacokinetic parameters are reported. |
 | PD | Inoue_2003 | not_relevant | 0 | 0 | The paper investigates 5-HT receptor pharmacology in porcine oviducts and only qualitatively mentions ergotamine as a less effective agonist without providing any numeric PD parameters or concentration-effect data for it. |
@@ -80,8 +80,8 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | MaassenVanDenBrink_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of coronary artery contraction (EC50/Emax) and does not report pharmacokinetic disposition parameters (CL, V, ka, t1/2) for ergotamine. |
 | PGx | Misra_2026 | not_relevant | 5 | 2 | The text is a review summary that mentions associations (e.g., TSPAN2, CYP3A4) but does not report specific fitted effect sizes or detailed quantitative PK/PD parameters for ergotamine. |
 | PGx | Moubarak_2003 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (modulation of CYP3A4 by ergonovine/dihydroergotamine) in rats, not the effect of a human gene variant or genotype on ergotamine pharmacokinetics or pharmacodynamics. |
-| PGx | Mulac_2012 | not_relevant | 0 | 0 | The paper investigates the permeability of ergot alkaloids across the blood-brain barrier in an in vitro model without involving any genetic variants or pharmacogenomic factors. |
-| PGx | Rosenkrans_2015 | not_relevant | 2 | 5 | The study examines the effect of a CYP450 genotype on the inhibition of CYP450 activity by ergot alkaloids in cattle urine, rather than the effect of a gene variant on the pharmacokinetic or pharmacodynamic parameters of ergotamine itself. |
+| PGx | Mulac_2012 | not_relevant | 0 | 0 | The paper investigates the permeability of ergot alkaloids across the blood-brain barrier in an in vitro model and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Rosenkrans_2015 | not_relevant | 2 | 5 | The paper reports a pharmacogenomic effect on CYP450 enzyme activity (a mechanism), not on a pharmacokinetic (e.g., AUC, Cmax) or pharmacodynamic (e.g., blood pressure, growth rate) parameter of ergotamine. |
 | popPK | Rosenkranz_2008 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on programmed cell death in trypanosomes and leukemia cells, reporting cytotoxicity (EC50) rather than pharmacokinetic disposition parameters for ergotamine. |
 | PGx | Srisuma_2014 | not_relevant | 0 | 0 | The paper describes drug-drug interactions with CYP3A4 inhibitors, not pharmacogenomic effects of specific gene variants on PK/PD parameters. |
 | popPK | Walkembach_2005 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor interactions and does not report pharmacokinetic disposition parameters for ergotamine. |

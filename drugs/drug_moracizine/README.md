@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 11:06 | 1:10 | 0/0/0 | 0/0/0 | 0/0/0 | 1,438/452 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-20 16:34 | 1:10 | 0/0/0 | 0/0/0 | 0/0/0 | 13,253/1,212 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -36,11 +36,11 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Guo_1993.pdf` | Guo WY et al., [Pharmacokinetics of moracizine and mor…, Zhongguo yao li xue bao = A… (1993) | popPK | 8 | not captured | [8010035](https://pubmed.ncbi.nlm.nih.gov/8010035) | The study reports quantitative PK parameters (Cmax, T1/2) for moracizine in humans, but lacks explicit clearance (CL) or volume (V) values. |
+| `Guo_1993.pdf` | Guo WY et al., [Pharmacokinetics of moracizine and mor…, Zhongguo yao li xue bao = A… (1993) | popPK | 8 | not captured | [8010035](https://pubmed.ncbi.nlm.nih.gov/8010035) | The paper reports quantitative PK parameters (Cmax, T1/2) for moracizine in humans, but lacks explicit clearance (CL) or volume (V) values. |
 | `Mannhold_1990.pdf` | Mannhold R et al., Molecular pharmacological aspects of an…, Archiv der Pharmazie (1990) | pd | 4 | [10.1002/ardp.19903230809](https://doi.org/10.1002/ardp.19903230809) | [2278515](https://www.ncbi.nlm.nih.gov/pubmed/2278515) | metadata signals extractable PD data (IC50) |
 | `Ratner_1992.pdf` | Ratner EI et al., Effect of moracizine and ethacizine on…, Arzneimittel-Forschung (1992) | pd | 4 | not captured | [1326968](https://www.ncbi.nlm.nih.gov/pubmed/1326968) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-09T11:06:54.569555+00:00</sub>
+<sub>queue written 2026-09-20T16:34:24.275720+00:00</sub>
 
 ## Screened and excluded
 
@@ -50,12 +50,12 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Abdalla_1989 | not_relevant | 1 | 0 | The text describes a qualitative safety and efficacy study of drug combinations without providing any numeric concentration-effect data, dose-response curves, or PD parameters. |
 | popPK | Beloborodov_1986 | irrelevant | 0 | 0 | The study investigates ethacizine, not moracizine. |
 | popPK | Chan_1989 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ethmozine, not moracizine. |
-| popPK | Mannhold_1990 | irrelevant | 0 | 0 | The paper focuses on molecular pharmacology and calmodulin interaction, not pharmacokinetic parameters. |
+| popPK | Mannhold_1990 | irrelevant | 0 | 0 | no_text gate: only 114 chars of text extracted (&lt; 400) |
 | PD | Mannhold_1990 | not_relevant | 0 | 0 | The paper focuses on molecular pharmacology and calmodulin interaction, not clinical exposure-response or dose-response relationships for moracizine. |
 | popPK | Morganroth_1987 | irrelevant | 0 | 0 | The paper is a clinical efficacy and tolerance study reporting dose-response and side effects, with no pharmacokinetic parameters (CL, V, t1/2) reported. |
-| popPK | Ratner_1992 | irrelevant | 0 | 0 | The paper focuses on the effect of moracizine on calcium channels and proteins, which is a mechanistic study, not a pharmacokinetic study reporting disposition parameters. |
-| PD | Ratner_1992 | not_relevant | 0 | 0 | The paper investigates the effect of moracizine on calcium channel receptors and binding proteins in vitro, which is a mechanistic/pharmacological study, not a pharmacokinetic-pharmacodynamic (PK/PD) or exposure-response analysis in a biological system. |
-| popPK | Rozenshtraukh_1985 | irrelevant | 0 | 0 | The study investigates ethacizin (ethacyzin), a different drug, and does not report pharmacokinetic parameters for moracizine. |
+| popPK | Ratner_1992 | irrelevant | 0 | 0 | no_text gate: only 116 chars of text extracted (&lt; 400) |
+| PD | Ratner_1992 | not_relevant | 0 | 0 | The paper investigates the effect of moracizine on calcium channel receptors and binding proteins in vitro, not a pharmacodynamic exposure-response or dose-response relationship in a biological system with numeric PD parameters. |
+| popPK | Rozenshtraukh_1985 | irrelevant | 0 | 0 | The paper studies ethacizin (an analog of ethmozine), not moracizine, and does not report quantitative PK parameters for the target drug. |
 | popPK | Vanerio_1992 | irrelevant | 1 | 0 | The text is a clinical review/summary that discusses pharmacodynamics and dosage but does not report quantitative pharmacokinetic parameters (CL, V, t1/2) for moricizine. |
 | PD | Vanerio_1992 | not_relevant | 1 | 0 | The text is a qualitative review summarizing general efficacy rates and dosage, lacking any specific concentration-effect data, dose-response curves, or numeric PD parameters. |
 

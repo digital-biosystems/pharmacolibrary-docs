@@ -1,11 +1,11 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dofetilide_Gotta2015_reference&quot;,&quot;label&quot;:&quot;Gotta_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/Dofetilide_Gotta2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dofetilide_Le1995_reference&quot;,&quot;label&quot;:&quot;Le_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/Dofetilide_Le1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dofetilide_Gotta2015_reference&quot;,&quot;label&quot;:&quot;Gotta_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/Dofetilide_Gotta2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# QTc prolongation — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# QTc prolongation — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Gotta_2015`
 - **model family:** `sigmoid_emax`
-- **driver:** `pk_record`
+- **driver:** `not_resolved`
 - **tier:** population
 - **effect:** stimulation/unknown
 

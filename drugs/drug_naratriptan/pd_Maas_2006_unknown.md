@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# headache score — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# headache intensity score — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 - **paper:** `Maas_2006`
 - **model family:** `categorical`

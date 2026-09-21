@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Tang_2011`
 - **model family:** `unknown`
@@ -56,7 +56,7 @@ Tang G; Lin X; Qiu Z; Li W; Zhu L; Wang L; et al. et al. (2011). ACS medicinal c
 | 21 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 49.8 | not captured | not captured | llm (not captured) | tab_0:row16:col5 |
 | 22 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.015 | nM | not captured | llm (not captured) | tab_0:row17:col3 |
 | 22 — CC 50 (μM) b | `Q322` · not captured | 4.4 | nM | not captured | llm (not captured) | tab_0:row17:col4 |
-| 22 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 85.1 | not captured | not captured | llm (not captured) | tab_0:row17:col5 |
+| 22 — MLM CL h (mL/min/kg) c | `Q22` · not captured | 85.1 | not captured | not captured | llm (not captured) | tab_0:row17:col5 |
 | 23 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.018 | nM | not captured | llm (not captured) | tab_0:row18:col3 |
 | 23 — CC 50 (μM) b | `Q322` · not captured | 2.8 | nM | not captured | llm (not captured) | tab_0:row18:col4 |
 | 23 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 62.4 | not captured | not captured | llm (not captured) | tab_0:row18:col5 |

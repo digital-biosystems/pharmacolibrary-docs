@@ -1,38 +1,36 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;Metamizole&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/&quot;},{&quot;label&quot;:&quot;Morath_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_aa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_aa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_aa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_aa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_aa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_aa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_aaa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_aaa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_aaa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_aaa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_aaa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_aaa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_faa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_faa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_faa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_faa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_faa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_faa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_maa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_maa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_maa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_4_maa&quot;,&quot;label&quot;:&quot;Blaser_2021_4_maa&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_4_maa.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_metamizole_n_8&quot;,&quot;label&quot;:&quot;Blaser_2021_metamizole_n_8&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_metamizole_n_8.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_metamizole_n_8&quot;,&quot;label&quot;:&quot;Blaser_2021_metamizole_n_8&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_metamizole_n_8.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_naproxen_n_7&quot;,&quot;label&quot;:&quot;Blaser_2021_naproxen_n_7&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_naproxen_n_7.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_naproxen_n_7&quot;,&quot;label&quot;:&quot;Blaser_2021_naproxen_n_7&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_naproxen_n_7.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Morath2025_reference&quot;,&quot;label&quot;:&quot;Morath_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Morath2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Metamizole_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Morath2025_reference&quot;,&quot;label&quot;:&quot;Morath_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Morath2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Metamizole_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_metamizole_n_8&quot;,&quot;label&quot;:&quot;Blaser_2021_metamizole_n_8&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_metamizole_n_8.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_metamizole_n_8&quot;,&quot;label&quot;:&quot;Blaser_2021_metamizole_n_8&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_metamizole_n_8.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_naproxen_n_7&quot;,&quot;label&quot;:&quot;Blaser_2021_naproxen_n_7&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_naproxen_n_7.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Blaser2021_naproxen_n_7&quot;,&quot;label&quot;:&quot;Blaser_2021_naproxen_n_7&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Blaser2021_naproxen_n_7.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Metamizole_Ziesenitz2019_reference&quot;,&quot;label&quot;:&quot;Ziesenitz_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole/Metamizole_Ziesenitz2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Metamizole — `Metamizole_Morath2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
 Morath B; Foerster KI; Chiriac U; Zaradzki M; Hoppe-Tichy T; Schrey D; Burhenne J; Czock D; Karck M; Haefeli WE; Wicha SG et al. (2025). Clinical pharmacokinetics 64
   ·  DOI: [10.1007/s40262-025-01534-z](https://doi.org/10.1007/s40262-025-01534-z)
 
 ## Model component
-<dbs-pgx drug="Metamizole" model-id="Metamizole_Morath2025_reference" status="needs_review" stale="false" population="" measured-compound="metamizole" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="Metamizole" model-id="Metamizole_Morath2025_reference" status="curated_candidate" stale="false" population="" measured-compound="metamizole" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F [L/h] | `Q27` · CL/F | 3.05 | L/h | 8.472222222222221e-07 | L/h | not captured | review (0.7) | Morath_2025:review | — | not captured |
 | Vd/F [L] | `Q76` · V/F | 23.7 | L | 0.0237 | L | not captured | review (0.7) | Morath_2025:review | — | not captured |
+| ka [/h] | `Q49` · kabs | 0.652 | /h | 0.0001811111111111111 | 1/h | not captured | review (0.7) | Morath_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -42,10 +40,8 @@ Morath B; Foerster KI; Chiriac U; Zaradzki M; Hoppe-Tichy T; Schrey D; Burhenne 
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
+- `defaulted_parameters`: ['Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - built from REVIEW reference values (Morath_2025) — secondary source
@@ -57,9 +53,11 @@ Morath B; Foerster KI; Chiriac U; Zaradzki M; Hoppe-Tichy T; Schrey D; Burhenne 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Morath_2025:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Morath_2025:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Morath_2025:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -70,12 +68,13 @@ Morath B; Foerster KI; Chiriac U; Zaradzki M; Hoppe-Tichy T; Schrey D; Burhenne 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=metamizole) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -96,12 +95,12 @@ Morath B; Foerster KI; Chiriac U; Zaradzki M; Hoppe-Tichy T; Schrey D; Burhenne 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metamizole/Metamizole_Morath2025_reference/Metamizole_Morath2025_reference_modelica.zip" download>Metamizole_Morath2025_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metamizole/Metamizole_Morath2025_reference/Metamizole_Morath2025_reference_modelica.zip" download>Metamizole_Morath2025_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metamizole/Metamizole_Morath2025_reference/Metamizole_Morath2025_reference_fmi.zip" download>Metamizole_Morath2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metamizole/Metamizole_Morath2025_reference/Metamizole_Morath2025_reference_matlab.zip" download>Metamizole_Morath2025_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metamizole/Metamizole_Morath2025_reference/Metamizole_Morath2025_reference_matlab_simbio.zip" download>Metamizole_Morath2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_metamizole/Metamizole_Morath2025_reference/Metamizole_Morath2025_reference_sbml.zip" download>Metamizole_Morath2025_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_metamizole/Metamizole_Morath2025_reference/Metamizole_Morath2025_reference_cellml.zip" download>Metamizole_Morath2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metamizole/Metamizole_Morath2025_reference/Metamizole_Morath2025_reference_matlab.zip" download>Metamizole_Morath2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metamizole/Metamizole_Morath2025_reference/Metamizole_Morath2025_reference_matlab_simbio.zip" download>Metamizole_Morath2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_metamizole/Metamizole_Morath2025_reference/Metamizole_Morath2025_reference_sbml.zip" download>Metamizole_Morath2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_metamizole/Metamizole_Morath2025_reference/Metamizole_Morath2025_reference_cellml.zip" download>Metamizole_Morath2025_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>

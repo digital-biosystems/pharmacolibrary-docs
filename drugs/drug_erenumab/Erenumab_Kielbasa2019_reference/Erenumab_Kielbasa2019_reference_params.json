@@ -1,0 +1,24 @@
+{
+ "model_id": "Erenumab_Kielbasa2019_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.222222222222222e-09,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 9.285714285714286e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 5.555555555555556e-06,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.005753943030765814
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -20,8 +20,8 @@ Kim CO; Jeon S; Han S; Hong T; Park MS; Yoon YR; et al. et al. (2017). Translati
 | Kin — RSE | `Q327` · not captured | 17.7 | not captured | not captured | exact (not captured) | T4:row3:col3 |
 | Emax — Estimate | `Q320` · not captured | 21.3 | not captured | not captured | exact (not captured) | T4:row4:col2 |
 | Emax — RSE | `Q320` · not captured | 5.8 | not captured | not captured | exact (not captured) | T4:row4:col3 |
-| EC50,H — Estimate | `Q321` · not captured | 2.28 | unknown | not captured | llm_confirmed (not captured) | T4:row7:col2 |
-| EC50,H — RSE | `Q321` · not captured | 20.7 | unknown | not captured | llm_confirmed (not captured) | T4:row7:col3 |
+| EC50,H — Estimate | `Q321` · not captured | 2.28 | H | not captured | exact (not captured) | T4:row7:col2 |
+| EC50,H — RSE | `Q321` · not captured | 20.7 | H | not captured | exact (not captured) | T4:row7:col3 |
 | EC50, A+B — Estimate | `Q321` · not captured | 9.19 | unknown | not captured | llm_confirmed (not captured) | T4:row8:col2 |
 | EC50, A+B — RSE | `Q321` · not captured | 53.8 | unknown | not captured | llm_confirmed (not captured) | T4:row8:col3 |
 | Koutb — Estimate | `Q328` · not captured | 0.69 | not captured | not captured | llm (not captured) | T4:row9:col2 |

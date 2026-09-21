@@ -16,7 +16,7 @@ Prajapati R; Seong SH; Paudel P; Park SE; Jung HA; Choi JS et al. (2021). ACS om
 | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|
 | EC50c (IC50)d — hD1 | `Q322` · not captured | 42.1 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col2 |
-| EC50c (IC50)d — hD2L | `Q321` · not captured | 22.4 | μM | not captured | llm_corrected (not captured) | tbl2:row1:col3 |
+| EC50c (IC50)d — hD2L | `Q322` · not captured | 22.4 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col3 |
 | EC50c (IC50)d — hD4 | `Q322` · not captured | 71.3 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col4 |
 | reference EC50g (IC50)h — hD1 | `Q322` · not captured | 44 | μM | not captured | llm_confirmed (not captured) | tbl2:row3:col2 |
 | reference EC50g (IC50)h — hD2L | `Q322` · not captured | 31 | μM | not captured | llm_confirmed (not captured) | tbl2:row3:col3 |

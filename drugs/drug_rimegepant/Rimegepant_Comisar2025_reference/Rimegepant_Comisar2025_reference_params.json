@@ -1,0 +1,25 @@
+{
+ "model_id": "Rimegepant_Comisar2025_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0016142857142857144,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 1.0226155358898721e-05,
+  "k21": 2.4691358024691357e-05,
+  "ka": 0.0008472222222222222,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.0006062728003490696
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

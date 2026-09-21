@@ -26,6 +26,10 @@ Tokuoka K; Takayanagi R; Toyabe M; Watanabe M; Kitagawa Y; Yamada Y et al. (2015
 | fu — Eletriptan (oral tablet) [22] | `Q46` · not captured | 0.13 | not captured | not captured | exact (not captured) | Tab1:row3:col6 |
 | fu — Rizatriptan (oral tablet) [23, 24] | `Q46` · not captured | 0.86 | not captured | not captured | exact (not captured) | Tab1:row3:col7 |
 | fu — Naratriptan (oral tablet) [15] | `Q46` · not captured | 0.71 | not captured | not captured | exact (not captured) | Tab1:row3:col8 |
+| Ki (nM) — Sumatriptan (subcutaneous injection) [19] | `Q322` · not captured | 12.59 | nM | not captured | llm (not captured) | Tab1:row4:col3 |
+| Ki (nM) — Rizatriptan (oral tablet) [23, 24] | `Q1` · not captured | 7.24 | nM | not captured | llm (not captured) | Tab1:row4:col7 |
+| Ki (nM) — Sumatriptan (subcutaneous injection) [19] | `Q322` · not captured | 12.59 | nM | not captured | llm (not captured) | Tab1:row5:col3 |
+| Ki (nM) — Rizatriptan (oral tablet) [23, 24] | `Q1` · not captured | 2.34 | nM | not captured | llm (not captured) | Tab1:row5:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

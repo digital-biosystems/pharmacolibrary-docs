@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amrinone_Park1983_healthy_males&quot;,&quot;label&quot;:&quot;Park_1983_healthy males&quot;,&quot;href&quot;:&quot;drugs/drug_amrinone/Amrinone_Park1983_healthy_males.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amrinone_Park1983_reference&quot;,&quot;label&quot;:&quot;Park_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amrinone/Amrinone_Park1983_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cyclic GMP concentration — PD  <span class="pk-badge pk-badge--green">extracted</span>

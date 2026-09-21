@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tilidine_Ringwelski1975_reference&quot;,&quot;label&quot;:&quot;Ringwelski_1975_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tilidine/Tilidine_Ringwelski1975_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # CYP2C19 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span>

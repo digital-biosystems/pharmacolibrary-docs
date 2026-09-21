@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# airway responsiveness — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# airway smooth muscle relaxation — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Long_2009`
 - **model family:** `unknown`

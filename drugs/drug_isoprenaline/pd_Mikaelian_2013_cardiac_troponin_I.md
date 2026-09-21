@@ -31,8 +31,8 @@ Mikaelian I; Dunn ME; Mould DR; Hirkaler G; Geng W; Coluccio D; Nicklaus R; Sing
 | Emax for A group — SD (%) | `Q320` · not captured | 21.8 | units | not captured | llm_confirmed (not captured) | tbl3:row4:col2 |
 | Emax for RR group — Typical value | `Q320` · not captured | 7.77 | units | not captured | llm_confirmed (not captured) | tbl3:row5:col1 |
 | Emax for RR group — SD (%) | `Q320` · not captured | 32.3 | units | not captured | llm_confirmed (not captured) | tbl3:row5:col2 |
-| EC50, pg/mL — Typical value | `Q321` · not captured | 0.089 | units | not captured | llm_confirmed (not captured) | tbl3:row6:col1 |
-| EC50, pg/mL — SD (%) | `Q321` · not captured | 36.6 | units | not captured | llm_confirmed (not captured) | tbl3:row6:col2 |
+| EC50, pg/mL — Typical value | `Q321` · not captured | 0.089 | pg/mL | not captured | exact (not captured) | tbl3:row6:col1 |
+| EC50, pg/mL — SD (%) | `Q321` · not captured | 36.6 | pg/mL | not captured | exact (not captured) | tbl3:row6:col2 |
 | Study 1 Additive error (pg/mL) — Typical value | `Q317` · not captured | 0.617 | pg/mL | not captured | llm_confirmed (not captured) | tbl3:row7:col1 |
 | Study 1 Additive error (pg/mL) — SD (%) | `Q317` · not captured | 8.7 | pg/mL | not captured | llm_confirmed (not captured) | tbl3:row7:col2 |
 | Study 2 Additive error (pg/mL) — Typical value | `Q317` · not captured | 0.452 | pg/mL | not captured | llm_confirmed (not captured) | tbl3:row8:col1 |

@@ -19,12 +19,12 @@ Courlet P; Wilkins JJ; Oeuvray C; Gao W; Khandelwal A et al. (2023). Antimicrobi
 | EC50,b,IBSM (ng/mL) — Estimate | `Q321` · not captured | 7.60 | ng/mL | not captured | llm_confirmed (not captured) | T1:row3:col1 |
 | EC50,b,IBSM (ng/mL) — Relative standard error (%) | `Q321` · not captured | 10.2 | ng/mL | not captured | llm_confirmed (not captured) | T1:row3:col2 |
 | EC50,b,SpzCh (ng/mL)c — Estimate | `Q321` · not captured | 1.29 | ng/mL | not captured | llm_confirmed (not captured) | T1:row4:col1 |
-| EC50,l (ng/mL) — Estimate | `Q321` · not captured | 0.66 | ng/mL | not captured | llm_confirmed (not captured) | T1:row5:col1 |
-| EC50,l (ng/mL) — Relative standard error (%) | `Q321` · not captured | 19.9 | ng/mL | not captured | llm_confirmed (not captured) | T1:row5:col2 |
+| EC50,l (ng/mL) — Estimate | `Q321` · not captured | 0.66 | ng/mL | not captured | exact (not captured) | T1:row5:col1 |
+| EC50,l (ng/mL) — Relative standard error (%) | `Q321` · not captured | 19.9 | ng/mL | not captured | exact (not captured) | T1:row5:col2 |
 | Delay rate constant (kt /h)a — Estimate | `Q47` · not captured | 0.030 | not captured | not captured | llm (not captured) | T1:row8:col1 |
 | IIV on P0a — Estimate | `Q312` · not captured | 197 | not captured | not captured | llm_confirmed (not captured) | T1:row14:col1 |
 | IIV on kkia — Estimate | `Q312` · not captured | 19 | not captured | not captured | llm_confirmed (not captured) | T1:row15:col1 |
-| IIV on EC50,b,IBSM — Estimate | `Q321` · not captured | 45 | ng/mL | not captured | llm_confirmed (not captured) | T1:row16:col1 |
+| IIV on EC50,b,IBSM — Estimate | `Q312` · not captured | 45 | not captured | not captured | llm_corrected (not captured) | T1:row16:col1 |
 | IIV on EC50,b,IBSM — Relative standard error (%) | `Q321` · not captured | 16.8 | ng/mL | not captured | llm_confirmed (not captured) | T1:row16:col2 |
 | IIV on kgr,ba — Estimate | `Q312` · not captured | 12 | not captured | not captured | llm_confirmed (not captured) | T1:row17:col1 |
 | IIV on kgr,la — Estimate | `Q312` · not captured | 11 | not captured | not captured | llm_confirmed (not captured) | T1:row18:col1 |

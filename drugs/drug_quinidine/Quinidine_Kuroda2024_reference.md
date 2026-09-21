@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;quinidine&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/&quot;},{&quot;label&quot;:&quot;Kuroda_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinidine_Fattinger1991v2_population_mean_estimate&quot;,&quot;label&quot;:&quot;Fattinger_1991_2_population_mean_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Fattinger1991v2_population_mean_estimate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinidine_Fattinger1991v2_population_mean_estimate&quot;,&quot;label&quot;:&quot;Fattinger_1991_2_population_mean_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Fattinger1991v2_population_mean_estimate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinidine_Fattinger1991v2_s_e&quot;,&quot;label&quot;:&quot;Fattinger_1991_2_s_e&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Fattinger1991v2_s_e.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinidine_Fattinger1991v2_s_e&quot;,&quot;label&quot;:&quot;Fattinger_1991_2_s_e&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Fattinger1991v2_s_e.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinidine_Kuroda2024_reference&quot;,&quot;label&quot;:&quot;Kuroda_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Kuroda2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinidine_Fattinger1991v2_reference&quot;,&quot;label&quot;:&quot;Fattinger_1991_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Fattinger1991v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinidine_Kuroda2024_reference&quot;,&quot;label&quot;:&quot;Kuroda_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Kuroda2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Quinidine_Rakhit1984_reference&quot;,&quot;label&quot;:&quot;Rakhit_1984_reference&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Rakhit1984_reference.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinidine_Ueda1980_reference&quot;,&quot;label&quot;:&quot;Ueda_1980_reference&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Ueda1980_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinidine_Verme1992_reference&quot;,&quot;label&quot;:&quot;Verme_1992_reference&quot;,&quot;href&quot;:&quot;drugs/drug_quinidine/Quinidine_Verme1992_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -29,7 +29,7 @@ Kuroda T; Minamijima Y; Kinman CK; Takahashi Y; Ebisuda Y; Inoue K; et al. et al
   ·  DOI: [10.3389/fvets.2024.1454342](https://doi.org/10.3389/fvets.2024.1454342)
 
 ## Model component
-<dbs-pgx drug="quinidine" model-id="Quinidine_Kuroda2024_reference" status="model_quarantined" stale="false" population="Thoroughbred horses" measured-compound="quinidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="quinidine" model-id="Quinidine_Kuroda2024_reference" status="model_quarantined" stale="false" population="Thoroughbred racehorses" measured-compound="quinidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -81,6 +81,7 @@ Kuroda T; Minamijima Y; Kinman CK; Takahashi Y; Ebisuda Y; Inoue K; et al. et al
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 13 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.49 | not captured | not captured | ['tab1:row4:col2', 'tab1:row4:col3', 'tab1:row4:col4', 'tab1:row4:col5', 'tab1:row4:col6'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
@@ -88,6 +89,7 @@ Kuroda T; Minamijima Y; Kinman CK; Takahashi Y; Ebisuda Y; Inoue K; et al. et al
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |

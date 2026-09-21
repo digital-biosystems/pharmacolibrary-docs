@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 14:43 | 8:22 | 0/0/0 | 2/0/0 | 0/0/0 | 152,969/1,726 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 1/8 | 8/1 | 0 |
+| 2026-09-20 17:53 | 8:00 | 0/0/0 | 2/0/0 | 0/0/0 | 257,992/2,665 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 1/8 | 8/1 | 0 |
 
 ## popPK records
 
@@ -40,23 +40,23 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Auerbach_2016 | irrelevant | 0 | 0 | The paper is a review of high-throughput screening data for environmental chemicals related to obesity and diabetes, and does not report pharmacokinetic parameters for centhaquine. |
-| PD | Auerbach_2016 | not_relevant | 0 | 0 | The paper is a high-throughput screening review using ToxCast data to prioritize environmental chemicals for obesity/diabetes research and does not report pharmacodynamic or exposure-response models for centhaquine. |
+| PD | Auerbach_2016 | not_relevant | 0 | 0 | The paper is a high-throughput screening review using ToxCast data to prioritize environmental chemicals for obesity/diabetes research; it does not report pharmacodynamic modeling or specific exposure-response parameters for centhaquine. |
 | popPK | Courlet_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for cabamiquine, not centhaquine. |
 | popPK | Dardano_2026 | irrelevant | 0 | 0 | The paper is a review on gut microbiota and epilepsy and does not mention centhaquine or report any pharmacokinetic parameters. |
 | PD | Dardano_2026 | not_relevant | 0 | 0 | The paper is a review on gut microbiota, antioxidants, and epilepsy, and does not mention centhaquine or report any pharmacodynamic or exposure-response data. |
-| popPK | Dreyer_2019 | irrelevant | 0 | 0 | The paper studies the effects of fipronil and ivermectin on mosquitoes, not the pharmacokinetics of centhaquine. |
+| popPK | Dreyer_2019 | irrelevant | 0 | 0 | The paper studies the effects of fipronil and ivermectin on mosquitoes and does not involve the drug centhaquine or report any pharmacokinetic parameters. |
 | PD | Dreyer_2019 | not_relevant | 0 | 0 | The paper investigates the effect of fipronil and ivermectin on mosquitoes, not centhaquine, and does not report any pharmacodynamic parameters for the target drug. |
 | popPK | Fosse_2011 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ketoprofen, not centhaquine. |
 | popPK | Li_2024 | irrelevant | 0 | 0 | The paper is a clinical efficacy study of Peg-IFN α-2b for chronic hepatitis B and does not report pharmacokinetic parameters for centhaquine. |
 | popPK | Phee_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of colistin and fusidic acid, not centhaquine. |
-| popPK | Shen_2024 | irrelevant | 0 | 0 | The paper is a multi-omics microsampling study focused on metabolic responses to an Ensure shake and does not report pharmacokinetic parameters for centhaquine. |
+| popPK | Shen_2024 | irrelevant | 0 | 0 | The paper is a multi-omics microsampling study focused on metabolic profiling and does not report pharmacokinetic parameters for centhaquine. |
 | PD | Shen_2024 | not_relevant | 0 | 0 | The paper focuses on multi-omics microsampling for health profiling and does not mention centhaquine or report any pharmacodynamic or exposure-response relationships. |
 | popPK | Sugita_1992 | irrelevant | 0 | 0 | The paper describes an enzymatic assay for creatinine and reports creatinine clearance reference intervals, but does not study the drug centhaquine or report its pharmacokinetic parameters. |
 | popPK | Vossen_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of doripenem, not centhaquine. |
 | PD | Vossen_2018 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of doripenem (not centhaquine) and does not report any pharmacodynamic or exposure-response relationship. |
 | popPK | Woodall_2025 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral efficacy study for SARS-CoV-2 drugs (remdesivir, nirmatrelvir, etc.) and does not mention centhaquine or report any pharmacokinetic parameters. |
 | PD | Woodall_2025 | not_relevant | 0 | 0 | The paper does not mention or report any data for centhaquine; it focuses on SARS-CoV-2 antivirals (remdesivir, nirmatrelvir, etc.). |
-| popPK | unknown_2023 | irrelevant | 0 | 0 | The provided evidence contains only a conference title and no pharmacokinetic data or parameters for centhaquine. |
+| popPK | unknown_2023 | irrelevant | 0 | 0 | no_text gate: only 65 chars of text extracted (&lt; 400) |
 | PD | unknown_2023 | not_relevant | 0 | 0 | The provided text is only a conference title and contains no data, analysis, or mention of centhaquine pharmacodynamics. |
 
 ---

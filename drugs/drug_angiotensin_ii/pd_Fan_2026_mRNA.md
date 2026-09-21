@@ -28,6 +28,8 @@ Fan X; Xiao Y; Cao K; Zhang R; Yan X et al. (2026). Molecular therapy. Nucleic a
 | PSLiver (L/h) — Ratsb | `Q358` · not captured | 211 | L/h | not captured | llm (not captured) | tbl1:row5:col3 |
 | PSLiver (L/h) — Monkeysc | `Q358` · not captured | 56.73 | L/h | not captured | llm (not captured) | tbl1:row5:col4 |
 | PSLiver (L/h) — Humansa | `Q358` · not captured | 144.7 | L/h | not captured | llm (not captured) | tbl1:row5:col5 |
+| KPLiver — Humansa | `Q410` · not captured | 0.18 | units | not captured | llm (not captured) | tbl1:row6:col5 |
+| KDEGD (1/h) — Ratsb | `Q47` · not captured | 0.040 | units | not captured | llm (not captured) | tbl1:row8:col3 |
 | KDEGD (1/h) — Humansa | `Q358` · not captured | 0.014 | units | not captured | llm (not captured) | tbl1:row8:col5 |
 | RTOT0 (nM) — Micea | `Q333` · not captured | 33.1 | nM | not captured | llm (not captured) | tbl1:row9:col2 |
 | RTOT0 (nM) — Ratsb | `Q333` · not captured | 33.1 | nM | not captured | llm (not captured) | tbl1:row9:col3 |
@@ -55,7 +57,6 @@ Fan X; Xiao Y; Cao K; Zhang R; Yan X et al. (2026). Molecular therapy. Nucleic a
 | Kdis (∗10−3 h−1) — Ratsb | `Q331` · not captured | 0.073 | nM | not captured | llm (not captured) | tbl1:row21:col3 |
 | Kdis (∗10−3 h−1) — Monkeysc | `Q331` · not captured | 0.14 | nM | not captured | llm (not captured) | tbl1:row21:col4 |
 | Kdis (∗10−3 h−1) — Humansa | `Q331` · not captured | 0.0061 | nM | not captured | llm (not captured) | tbl1:row21:col5 |
-| KDEGE (∗10−6 h−1) — Micea | `Q358` · not captured | 0.0083 | nM | not captured | llm (not captured) | tbl1:row22:col2 |
 | KDEGE (∗10−6 h−1) — Ratsb | `Q47` · not captured | 0.014 | nM | not captured | llm (not captured) | tbl1:row22:col3 |
 | KDEGE (∗10−6 h−1) — Monkeysc | `Q47` · not captured | 0.0083 | nM | not captured | llm (not captured) | tbl1:row22:col4 |
 | KDEGE (∗10−6 h−1) — Humansa | `Q358` · not captured | 0.0076 | nM | not captured | llm (not captured) | tbl1:row22:col5 |

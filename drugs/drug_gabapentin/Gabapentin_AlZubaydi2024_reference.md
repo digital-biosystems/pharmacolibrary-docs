@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;gabapentin&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/&quot;},{&quot;label&quot;:&quot;Al-Zubaydi_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Gabapentin_Silvola2025_reference&quot;,&quot;label&quot;:&quot;Silvola_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Silvola2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Zhou2026_reference&quot;,&quot;label&quot;:&quot;Zhou_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Adrian2018_reference&quot;,&quot;label&quot;:&quot;Adrian_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Adrian2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Ahmed2017_reference&quot;,&quot;label&quot;:&quot;Ahmed_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Ahmed2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Silvola2025_reference&quot;,&quot;label&quot;:&quot;Silvola_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Silvola2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Hampton2021_reference&quot;,&quot;label&quot;:&quot;Hampton_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Hampton2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Larsen2016_reference&quot;,&quot;label&quot;:&quot;Larsen_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Larsen2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Zhou2026_reference&quot;,&quot;label&quot;:&quot;Zhou_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -29,8 +29,8 @@ Al-Zubaydi F; Wassef A; Kagan L; Brunetti L et al. (2024). Pharmaceutics 16
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ka (h−1) | `Q49` · kabs | 0.778 | h−1 | 0.00021611111111111112 | [1] / [h] | not captured | exact (1.0) | pharmaceutics-16-01514-t002:row2:col1, pharmaceutics-16-01514-t002:row2:col2 | — | not captured |
-| Vd (L) | `Q61` · V | 44.61 | L | 0.044610000000000004 | [l] | not captured | exact (1.0) | pharmaceutics-16-01514-t002:row3:col1 | — | not captured |
-| Cl (L/h) | `Q22` · CL | 5.73 | L/h | 1.591666666666667e-06 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-16-01514-t002:row4:col1 | — | not captured |
+| Vd (L) | `Q61` · V | 44.61 | L | 0.044610000000000004 | [l] | not captured | exact (1.0) | pharmaceutics-16-01514-t002:row3:col1 | — | 0.77 (None% RSE) |
+| Cl (L/h) | `Q22` · CL | 5.73 | L/h | 1.591666666666667e-06 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-16-01514-t002:row4:col1 | — | 0.28 (None% RSE) |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -43,10 +43,10 @@ Al-Zubaydi F; Wassef A; Kagan L; Brunetti L et al. (2024). Pharmaceutics 16
 - `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
-- dropped duplicate Q22 ('β Cl_SCR', value '-0.89') — already have one for this compound
-- dropped duplicate Q61 ('ω Vd', value '0.77') — already have one for this compound
-- dropped duplicate Q22 ('ω Cl', value '0.28') — already have one for this compound
+- column 'population estimates (rses (%))' classified 'rse' by the LLM but kept as the estimate: the header names the point value
+- dropped unlinked row (NIL): 'β Cl_SCR' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-16-01514-t002:row5:col1'])
 - dropped unlinked row (NIL): 'a' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-16-01514-t002:row10:col1'])
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (Vd (L)); Q22 (Cl (L/h))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=gabapentin
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -69,6 +69,7 @@ Al-Zubaydi F; Wassef A; Kagan L; Brunetti L et al. (2024). Pharmaceutics 16
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-16-01514-t002:row4:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-16-01514-t002:row2:col1', 'pharmaceutics-16-01514-t002:row2:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-16-01514-t002:row3:col1'] |
@@ -81,6 +82,7 @@ Al-Zubaydi F; Wassef A; Kagan L; Brunetti L et al. (2024). Pharmaceutics 16
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=gabapentin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
@@ -106,7 +108,7 @@ Al-Zubaydi F; Wassef A; Kagan L; Brunetti L et al. (2024). Pharmaceutics 16
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_modelica.zip" download>Gabapentin_AlZubaydi2024_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_modelica.zip" download>Gabapentin_AlZubaydi2024_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_fmi.zip" download>Gabapentin_AlZubaydi2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_matlab.zip" download>Gabapentin_AlZubaydi2024_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference/Gabapentin_AlZubaydi2024_reference_matlab_simbio.zip" download>Gabapentin_AlZubaydi2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

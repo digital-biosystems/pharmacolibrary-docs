@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;gabapentin&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/&quot;},{&quot;label&quot;:&quot;Zhou_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Silvola2025_reference&quot;,&quot;label&quot;:&quot;Silvola_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Silvola2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Zhou2026_reference&quot;,&quot;label&quot;:&quot;Zhou_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Adrian2018_reference&quot;,&quot;label&quot;:&quot;Adrian_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Adrian2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Ahmed2017_reference&quot;,&quot;label&quot;:&quot;Ahmed_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Ahmed2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Silvola2025_reference&quot;,&quot;label&quot;:&quot;Silvola_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Silvola2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Hampton2021_reference&quot;,&quot;label&quot;:&quot;Hampton_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Hampton2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Larsen2016_reference&quot;,&quot;label&quot;:&quot;Larsen_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Larsen2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Zhou2026_reference&quot;,&quot;label&quot;:&quot;Zhou_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -27,7 +27,7 @@ Zhou L; Yamamoto PA; Walker M; Conchon Costa AC; Lauretti GR; Dach F; et al. et 
   ·  DOI: [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901)
 
 ## Model component
-<dbs-pgx drug="gabapentin" model-id="Gabapentin_Zhou2026_reference" status="rejected" stale="false" population="adults with chronic neuropathic pain" measured-compound="gabapentin" parameterization="apparent" topology="3C"></dbs-pgx>
+<dbs-pgx drug="gabapentin" model-id="Gabapentin_Zhou2026_reference" status="rejected" stale="false" population="patients with chronic neuropathic pain" measured-compound="gabapentin" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Parameterization:** CL/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -36,17 +36,15 @@ Zhou L; Yamamoto PA; Walker M; Conchon Costa AC; Lauretti GR; Dach F; et al. et 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| tlag (h) | `Q83` · tlag | 0.34 | h | 1224.0 | [h] | not captured | exact (1.0) | T1:row2:col1 | — | not captured |
-| ka (h-1) | `Q49` · kabs | 0.14 | h-1 | 3.888888888888889e-05 | [1] / [h] | not captured | exact (1.0) | T1:row3:col1 | — | not captured |
-| CL/F (L/h) | `Q27` · CL/F | 10.16 | L/h | 2.8222222222222223e-06 | [l] / [h] | not captured | exact (1.0) | T1:row4:col1 | — | not captured |
-| V1/F (L) | `Q290` · V1/F | 18.16 | L | 0.01816 | [l] | not captured | exact (1.0) | T1:row6:col1 | — | not captured |
-| Q (L/h) | `Q30` · Q | 6.58 | L/h | 1.8277777777777777e-06 | [l] / [h] | not captured | exact (1.0) | T1:row7:col1 | — | not captured |
-| V2/F (L) | `Q82` · V2/F | 357.67 | L | 0.35767000000000004 | [l] | not captured | exact (1.0) | T1:row8:col1 | — | not captured |
-| ke1 (h-1) | `Q47` · kel | 0.53 | h-1 | 0.00014722222222222223 | [1] / [h] | not captured | llm (0.6) | T1:row9:col1 | — | not captured |
+| tlag (h) | `Q83` · tlag | 0.34 | h | 1224.0 | [h] | 8.03 | exact (1.0) | T1:row2:col1 | — | 0.52 (14.23% RSE) |
+| ka (h-1) | `Q49` · kabs | 0.14 | h-1 | 3.888888888888889e-05 | [1] / [h] | 7.04 | exact (1.0) | T1:row3:col1 | — | 0.15 (45.06% RSE) |
+| CL/F (L/h) | `Q27` · CL/F | 10.16 | L/h | 2.8222222222222223e-06 | [l] / [h] | 12.15 | exact (1.0) | T1:row4:col1 | — | not captured |
+| logt_egfr_84.85_on_cl_f | `Q900` · logt_egfr_84.85_on_cl_f | 1.34 | not captured | not captured | not captured | 24.38 | not captured (not captured) | T1:row5:col1 | — | not captured |
+| V1/F (L) | `Q290` · V1/F | 18.16 | L | 0.01816 | [l] | 15.13 | exact (1.0) | T1:row6:col1 | — | not captured |
+| Q (L/h) | `Q30` · Q | 6.58 | L/h | 1.8277777777777777e-06 | [l] / [h] | 18.68 | exact (1.0) | T1:row7:col1 | — | 0.64 (16.19% RSE) |
+| V2/F (L) | `Q82` · V2/F | 357.67 | L | 0.35767000000000004 | [l] | 31.27 | exact (1.0) | T1:row8:col1 | — | not captured |
+| ke1 (h-1) | `Q47` · kel | 0.53 | h-1 | 0.00014722222222222223 | [1] / [h] | 55.76 | llm (0.6) | T1:row9:col1 | — | not captured |
 | ke2 (h-1) | `Q68` · λ2 | 1 | h-1 | not captured | [1] / [h] | not captured | llm (0.6) | T1:row13:col1 | — | not captured |
-| ωCL | `Q22` · CL | 0.46 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | T1:row18:col1 | — | not captured |
-| ωV1 | `Q63` · V1 | 0.54 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | T1:row19:col1 | — | not captured |
-| theta_cl_f_egfr_power | `Q900` · theta_cl_f_egfr_power | 1.34 | not captured | not captured | not captured | not captured | not captured (not captured) | T1:row5:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,21 +54,16 @@ Zhou L; Yamamoto PA; Walker M; Conchon Costa AC; Lauretti GR; Dach F; et al. et 
 ## Departures & gaps
 
 **Interpretation flags:**
+- covariate level 'logt (eGFR/84.85) on CL/F' → Q900:logt_egfr_84.85_on_cl_f = 1.34 (power on Q27)
 - dropped unlinked row (NIL): 'OCT2 on ke1' — extend the ontology if this is a real PK parameter (source ['T1:row10:col1'])
 - dropped PD-category row 'E0' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T1:row11:col1'])
 - dropped PD-category row 'IC50 (ng/mL)' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T1:row12:col1'])
 - unit_dimension_mismatch: 'ke2 (h-1)' → Q68 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
 - dropped PD-category row 'Imax' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T1:row14:col1'])
-- dropped duplicate Q83 ('ωTlag', value '0.52') — already have one for this compound
-- dropped duplicate Q49 ('ωka', value '0.15') — already have one for this compound
-- dropped duplicate Q30 ('ωQ', value '0.64') — already have one for this compound
-- dropped unlinked row (NIL): 'ωke1' — extend the ontology if this is a real PK parameter (source ['T1:row21:col1'])
-- dropped PD-category row 'ωE0' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T1:row22:col1'])
-- routed 'Additive (a)' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
-- routed 'Proportional (b)' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'Additive (a)' — extend the ontology if this is a real PK parameter (source ['T1:row24:col1', 'T1:row26:col1'])
+- dropped unlinked row (NIL): 'Proportional (b)' — extend the ontology if this is a real PK parameter (source ['T1:row27:col1'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=gabapentin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 3C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 
 **Extraction notes:**
@@ -102,8 +95,9 @@ Zhou L; Yamamoto PA; Walker M; Conchon Costa AC; Lauretti GR; Dach F; et al. et 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_base_Q27 | fail | 10.16 | 12.66 | 1.2461 | 0.05 | footnote reference category |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T1:row4:col1'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['T1:row6:col1'] |

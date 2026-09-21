@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;erenumab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Erenumab_Vu2017_mean_estimate&quot;,&quot;label&quot;:&quot;Vu_2017_mean_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_Vu2017_mean_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Erenumab_Vu2017_mean_estimate&quot;,&quot;label&quot;:&quot;Vu_2017_mean_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_Vu2017_mean_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Erenumab_Vu2017_shrinkage&quot;,&quot;label&quot;:&quot;Vu_2017_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_Vu2017_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Erenumab_Vu2017_shrinkage&quot;,&quot;label&quot;:&quot;Vu_2017_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_Vu2017_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Erenumab_Vu2017_units&quot;,&quot;label&quot;:&quot;Vu_2017_units&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_Vu2017_units.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Erenumab_Vu2017_units&quot;,&quot;label&quot;:&quot;Vu_2017_units&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_Vu2017_units.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Erenumab_FiedlerKelly2019_reference&quot;,&quot;label&quot;:&quot;Fiedler-Kelly_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_FiedlerKelly2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Erenumab_Kielbasa2019_reference&quot;,&quot;label&quot;:&quot;Kielbasa_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_Kielbasa2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Erenumab_Vu2017_reference&quot;,&quot;label&quot;:&quot;Vu_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_erenumab/Erenumab_Vu2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # erenumab
 
@@ -20,46 +20,53 @@ In particular, erenumab-aooe is a human immunoglobulin G2 monoclonal antibody th
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-29 21:53 | 19:00 | 0/3/0 | 1/2/0 | 0/0/0 | 235,403/11,939 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 2/15 | 17/0 | 0 |
+| 2026-09-21 05:00 | 13:38 | 2/1/0 | 3/0/0 | 0/0/1 | 336,409/20,596 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 2/15 | 17/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Vu_2017_mean_estimate](drugs/drug_erenumab/Erenumab_Vu2017_mean_estimate.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Vu_2017_mean_estimate](drugs/drug_erenumab/Erenumab_Vu2017_mean_estimate.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'shrinkage (%)' is a table statistic/structure column, not a study…</sub><br><sub>route_to: `human_review`</sub> | [Vu_2017_shrinkage](drugs/drug_erenumab/Erenumab_Vu2017_shrinkage.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'shrinkage (%)' is a table statistic/structure column, not a study…</sub><br><sub>route_to: `human_review`</sub> | [Vu_2017_shrinkage](drugs/drug_erenumab/Erenumab_Vu2017_shrinkage.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Vu_2017_units](drugs/drug_erenumab/Erenumab_Vu2017_units.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Vu_2017_units](drugs/drug_erenumab/Erenumab_Vu2017_units.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Fiedler-Kelly_2019_reference](drugs/drug_erenumab/Erenumab_FiedlerKelly2019_reference.md) | Fiedler-Kelly JB et al., Population pharmacokinetic modelling an…, British journal of clinical… (2019) | [10.1111/bcp.14096](https://doi.org/10.1111/bcp.14096) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Kielbasa_2019_reference](drugs/drug_erenumab/Erenumab_Kielbasa2019_reference.md) | Kielbasa W et al., A new era for migraine: Pharmacokinetic…, Cephalalgia : an internatio… (2019) | [10.1177/0333102419840780](https://doi.org/10.1177/0333102419840780) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Vu_2017_reference](drugs/drug_erenumab/Erenumab_Vu2017_reference.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Chan_2021](drugs/drug_erenumab/pd_Chan_2021_Dermal_blood_flow_DBF.md) | Chan P et al., Translational and pharmacokinetic-pharm…, Clinical and translational… (2021) | [10.1111/cts.13049](https://doi.org/10.1111/cts.13049) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Kielbasa_2019](drugs/drug_erenumab/pd_Kielbasa_2019_free_CGRP.md) | Kielbasa W et al., A new era for migraine: Pharmacokinetic…, Cephalalgia : an internatio… (2019) | [10.1177/0333102419840780](https://doi.org/10.1177/0333102419840780) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Vu_2017](drugs/drug_erenumab/pd_Vu_2017_DBF.md) | Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017) | [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Chan_2021](drugs/drug_erenumab/pd_Chan_2021_Dermal_blood_flow_DBF.md) | Chan P et al., Translational and pharmacokinetic-pharm…, Clinical and translational… (2021) | [10.1111/cts.13049](https://doi.org/10.1111/cts.13049) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Kielbasa_2019](drugs/drug_erenumab/pd_Kielbasa_2019_free_CGRP.md) | Kielbasa W et al., A new era for migraine: Pharmacokinetic…, Cephalalgia : an internatio… (2019) | [10.1177/0333102419840780](https://doi.org/10.1177/0333102419840780) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **RAMP1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Zecca_2022](drugs/drug_erenumab/pgx_Zecca_2022_RAMP1_Q100.md) | Zecca C et al., Clinic and genetic predictors in respon…, European journal of neurolo… (2022) | [10.1111/ene.15236](https://doi.org/10.1111/ene.15236) |
+
+<details class="legend">
+<summary>What the PGx columns mean</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Coverage
 
 - **PubMed hits:** 40 matched, 38 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 6  ·  extracted 0  ·  needs_review 0  ·  rejected 6  ·  stale 0
+- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `de_2018.pdf` | de Hoon J et al., Phase I, Randomized, Double-blind, Plac…, Clinical pharmacology and t… (2018) | popPK | 10 | [10.1002/cpt.799](https://doi.org/10.1002/cpt.799) | [28736918](https://pubmed.ncbi.nlm.nih.gov/28736918) | The paper is a Phase I PK study of erenumab, but the provided evidence contains only qualitative descriptions of the PK profile without specific numeric parameter values. |
 | `Gupta_2025.pdf` | Gupta P et al., A Semi-Mechanistic Mathematical Model o…, Pharmaceutics (2025) | popPK | 8 | [10.3390/pharmaceutics17070845](https://doi.org/10.3390/pharmaceutics17070845) | [40733054](https://pubmed.ncbi.nlm.nih.gov/40733054) | The paper describes a population PK model for erenumab in rats, but the specific numeric parameter values are not present in the provided evidence. |
 | `Shen_2022.pdf` | Shen Q et al., Pharmacokinetics and Safety of Erenumab…, Clinical drug investigation (2022) | popPK | 8 | [10.1007/s40261-022-01171-5](https://doi.org/10.1007/s40261-022-01171-5) | [35727536](https://pubmed.ncbi.nlm.nih.gov/35727536) | The study reports non-compartmental PK parameters (Cmax, AUC) for erenumab, but lacks specific compartmental parameters like clearance (CL) or volume (V) in the provided text. |
 | `Garelja_2024.pdf` | Garelja ML et al., Pharmacological characterisation of ere…, British journal of pharmaco… (2024) | pd | 4 | [10.1111/bph.16218](https://doi.org/10.1111/bph.16218) | [37580864](https://www.ncbi.nlm.nih.gov/pubmed/37580864) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-08-29T21:50:15.055406+00:00</sub>
+<sub>queue written 2026-09-21T04:48:23.079935+00:00</sub>
 
 ## Screened and excluded
 
@@ -108,9 +115,8 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Xu_2019 | not_relevant | 0 | 0 | The study evaluates pharmacokinetic drug-drug interactions and qualitative hormonal markers, but does not report a concentration-effect or dose-response model for erenumab with numeric PD parameters. |
 | popPK | Yang_2022 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of clinical efficacy and safety outcomes, not a pharmacokinetic study, and it does not report quantitative PK parameters like clearance or volume for erenumab. |
 | PD | Yang_2022 | not_relevant | 2 | 1 | The paper is a meta-analysis comparing fixed doses (70mg vs 140mg) and does not report concentration-effect relationships or numeric PD parameters like Emax or EC50. |
-| PGx | Zecca_2022 | not_relevant | 4 | 8 | The study reports a nominal association between a genetic variant and a clinical response endpoint (50/75% reduction in migraine days), but the association did not survive adjustment for confounders, and no specific pharmacokinetic or pharmacodynamic parameter (e.g., AUC, Cmax, receptor occupancy) was measured or reported as a fitted effect size. |
 | popPK | de_2018 | relevant | 10 | 0 | The paper is a Phase I PK study of erenumab, but the provided evidence contains only qualitative descriptions of the PK profile without specific numeric parameter values. |
-| popPK | unknown_2022 | irrelevant | 0 | 0 | The evidence consists only of a conference title with no pharmacokinetic data or specific study content for erenumab. |
+| popPK | unknown_2022 | irrelevant | 0 | 0 | no_text gate: only 75 chars of text extracted (&lt; 400) |
 | PD | unknown_2022 | not_relevant | 0 | 0 | The provided text is only a title of a conference abstract collection and contains no data, analysis, or parameters regarding erenumab pharmacodynamics. |
 
 ---

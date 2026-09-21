@@ -59,6 +59,7 @@ van Lier D; Mourisse L; Hollander H; Santos K; Bergmann A; van Herwaarden AE; Ko
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['van_2026:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['van_2026:review'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 716.15 | not captured | not captured | ['van_2026:review'] |

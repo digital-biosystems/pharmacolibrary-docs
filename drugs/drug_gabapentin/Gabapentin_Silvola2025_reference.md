@@ -1,42 +1,45 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;gabapentin&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/&quot;},{&quot;label&quot;:&quot;Silvola_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Silvola2025_reference&quot;,&quot;label&quot;:&quot;Silvola_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Silvola2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Gabapentin_Zhou2026_reference&quot;,&quot;label&quot;:&quot;Zhou_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Adrian2018_reference&quot;,&quot;label&quot;:&quot;Adrian_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Adrian2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Ahmed2017_reference&quot;,&quot;label&quot;:&quot;Ahmed_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Ahmed2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Silvola2025_reference&quot;,&quot;label&quot;:&quot;Silvola_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Silvola2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Gabapentin_Hampton2021_reference&quot;,&quot;label&quot;:&quot;Hampton_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Hampton2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Larsen2016_reference&quot;,&quot;label&quot;:&quot;Larsen_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Larsen2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Zhou2026_reference&quot;,&quot;label&quot;:&quot;Zhou_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gabapentin — `Gabapentin_Silvola2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-> ⚙️ **Pipeline limitation — engineer.** the topology is outside the template set the engineer can build<br><sub>evidence: `topology_template=manual_model_class`</sub>
+> ⚙️ **Pipeline limitation — reviewer_tooling.** the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault<br><sub>evidence: `C6_cl_magnitude failed (ratio None)`</sub>
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** every check the reviewer could run passed.
+**What is wrong:** clearance is outside the plausible magnitude window.
 
 **Steps:**
-1. Not a curation fix — engineer limitation.
-2. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+1. Not a curation fix — reviewer_tooling limitation.
+2. Check the parameter's unit_verbatim — an unconverted per-kg or per-hour unit is the usual cause, not a genuinely extreme value.
+3. Confirm value_si against the paper's reported number.
+4. A 'ratio None' means the check could not compute a ratio, so treat the window as unverified rather than as a failure of the value.
 
-<sub>owner: **engineer** · guidance written by playbook</sub>
+<sub>owner: **modeller** · guidance written by playbook</sub>
 
 ## Citation
 Silvola R; O'Kane A; Heathman M; Marotta H; Trussel H; Ray B; et al. et al. (2025). CPT: pharmacometrics & systems pharmacology 14
   ·  DOI: [10.1002/psp4.13295](https://doi.org/10.1002/psp4.13295)
 
 ## Model component
-<dbs-pgx drug="gabapentin" model-id="Gabapentin_Silvola2025_reference" status="rejected" stale="false" population="postpartum lactating women" measured-compound="gabapentin" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+<dbs-pgx drug="gabapentin" model-id="Gabapentin_Silvola2025_reference" status="needs_review" stale="false" population="postpartum lactating women" measured-compound="gabapentin" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| absorption rate constant (ka) | `Q49` · kabs | 0.14 | h-1 | 3.888888888888889e-05 | 1/h | not captured | review_gapfill (0.7) | Zhou_2026:review | — | not captured |
-| tlag | `Q83` · tlag | 0.34 | h | 1224.0 | h | not captured | review_gapfill (0.7) | Zhou_2026:review | — | not captured |
+| CL (mL/kg/hr) | `Q22` · CL | 160.67 | mL/kg/hr | 3.1241388888888886e-06 | L/h | not captured | review_gapfill (0.7) | Adrian_2018:review | — | not captured |
+| K01 (1/hr) | `Q49` · kabs | 5.24 | 1/hr | 0.0014555555555555556 | 1/h | not captured | review_gapfill (0.7) | Adrian_2018:review | — | not captured |
+| TLAG (hr) | `Q83` · tlag | 0.45 | hr | 1620.0 | h | not captured | review_gapfill (0.7) | Adrian_2018:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -50,10 +53,11 @@ Silvola R; O'Kane A; Heathman M; Marotta H; Trussel H; Ray B; et al. et al. (202
 - control_stream ADVAN13: topology=manual_model_class, parameterization=mechanistic (clearance)
 - theta_crosscheck: table present but its labels did not align to bound THETAs (skipped)
 - status held at route_to_review — not promoted
+- gap-filled Q22 (CL) from Adrian_2018's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is MANUAL_MODEL_CLASS (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is MANUAL_MODEL_CLASS (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Zhou_2026's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Zhou_2026's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Adrian_2018's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Adrian_2018's review values (primary lacked it)
 
 ## Validation
 
@@ -61,11 +65,15 @@ Silvola R; O'Kane A; Heathman M; Marotta H; Trussel H; Ray B; et al. et al. (202
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Zhou_2026:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Zhou_2026:review'] |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Adrian_2018:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Adrian_2018:review'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Adrian_2018:review'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 160.67 | not captured | not captured | ['Adrian_2018:review'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 11.2 L/h | not captured | not captured | ['Adrian_2018:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

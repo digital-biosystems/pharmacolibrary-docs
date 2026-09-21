@@ -1,0 +1,24 @@
+{
+ "model_id": "SodiumSalicylate_Lowenthal1974_six_anephric_patients",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 7.777777777777778e-07,
+  "F": 0.9,
+  "Tlag": 1512.0,
+  "VdPerKg": 7.157142857142857e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.00017777777777777779,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 0.007046575985844669
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

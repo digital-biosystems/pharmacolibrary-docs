@@ -1,7 +1,7 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydroergotamine_Hilke1978_adults_undergoing_spinal_anaesth&quot;,&quot;label&quot;:&quot;Hilke_1978_adults undergoing spinal anaesthesia&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergotamine/Dihydroergotamine_Hilke1978_adults_undergoing_spinal_anaesth.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dihydroergotamine_Schran1985_healthy_volunteers&quot;,&quot;label&quot;:&quot;Schran_1985_healthy volunteers&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergotamine/Dihydroergotamine_Schran1985_healthy_volunteers.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydroergotamine_Hilke1978_reference&quot;,&quot;label&quot;:&quot;Hilke_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergotamine/Dihydroergotamine_Hilke1978_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dihydroergotamine_Schran1985_reference&quot;,&quot;label&quot;:&quot;Schran_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergotamine/Dihydroergotamine_Schran1985_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `McConnachie_2023`
 - **model family:** `unknown`

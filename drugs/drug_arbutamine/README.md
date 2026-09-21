@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 14:21 | 2:11 | 0/0/0 | 0/0/0 | 0/0/0 | 7,361/952 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-20 17:28 | 0:53 | 0/0/0 | 0/0/0 | 0/0/0 | 8,836/840 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -38,18 +38,18 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Abou-Mohamed_1996.pdf` | Abou-Mohamed G et al., Characterization of the adrenergic acti…, Cardiovascular drugs and th… (1996) | pd | 4 | [10.1007/BF00051129](https://doi.org/10.1007/BF00051129) | [8723169](https://www.ncbi.nlm.nih.gov/pubmed/8723169) | metadata signals extractable PD data (concentration-effect) |
 
-<sub>queue written 2026-09-09T14:21:23.254108+00:00</sub>
+<sub>queue written 2026-09-20T17:28:18.275664+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abou-Mohamed_1996 | irrelevant | 0 | 0 | The paper focuses on the adrenergic activity and pharmacological stress testing of arbutamine, not on pharmacokinetic disposition parameters. |
+| popPK | Abou-Mohamed_1996 | irrelevant | 0 | 0 | no_text gate: only 107 chars of text extracted (&lt; 400) |
 | PD | Abou-Mohamed_1996 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, data, or numeric PD parameters required to assess the exposure-response relationship. |
 | popPK | Cramer_1995 | irrelevant | 0 | 0 | The study focuses on the safety and efficacy of arbutamine for myocardial stress testing (pharmacodynamics/diagnostic utility) and does not report quantitative pharmacokinetic parameters such as clearance or volume. |
 | PD | Cramer_1995 | not_relevant | 2 | 1 | The paper reports clinical efficacy (sensitivity) and time-to-maximum effects for two dosing regimens but does not provide concentration-effect data, dose-response curves, or numeric PD parameters like Emax or EC50. |
 | popPK | Kisanuki_2001 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of myocardial viability using arbutamine as a diagnostic agent, reporting no pharmacokinetic parameters. |
-| popPK | Nagarajan_1996 | irrelevant | 0 | 0 | The study is a pharmacodynamic evaluation of arbutamine as a cardiac stress agent in dogs and does not report any pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
+| popPK | Nagarajan_1996 | irrelevant | 1 | 0 | The study reports pharmacodynamic effects (hemodynamics, ischemia) rather than quantitative pharmacokinetic parameters (CL, V, t1/2) for arbutamine. |
 | popPK | Valcke_1997 | irrelevant | 2 | 0 | The paper focuses on pharmacodynamic modeling and control algorithms for heart rate response, not pharmacokinetic disposition parameters (CL, V, etc.) for arbutamine. |
 
 ---

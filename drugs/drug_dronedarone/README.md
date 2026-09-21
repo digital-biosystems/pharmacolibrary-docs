@@ -19,7 +19,7 @@ Dronedarone is a related benzofuran compound to amiodarone but its chemical stru
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 09:31 | 22:00 | 0/0/0 | 4/0/0 | 0/0/1 | 168,943/12,613 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 5/8 | 13/0 | 0 |
+| 2026-09-19 15:22 | 7:50 | 0/0/0 | 4/0/0 | 0/0/1 | 155,617/6,456 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 5/8 | 13/0 | 0 |
 
 ## popPK records
 
@@ -50,19 +50,20 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 87 matched, 81 returned
+- **PubMed hits:** 87 matched, 85 returned
 - **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_11 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_12 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Baek_2019.pdf` | Baek IH, Dose proportionality and pharmacokineti…, Xenobiotica; the fate of fo… (2019) | popPK | 9 | [10.1080/00498254.2018.1496369](https://doi.org/10.1080/00498254.2018.1496369) | [29962267](https://pubmed.ncbi.nlm.nih.gov/29962267) | The paper is a PK study of dronedarone in rats reporting a compartmental model, but specific numeric parameter values (CL, V, ka) are not present in the provided text, only qualitative descriptions and bioavailability. |
 | `Simó-Vicens_2017.pdf` | Simó-Vicens R et al., Effect of antiarrhythmic drugs on small…, European journal of pharmac… (2017) | pd | 5 | [10.1016/j.ejphar.2017.03.039](https://doi.org/10.1016/j.ejphar.2017.03.039) | [28322838](https://www.ncbi.nlm.nih.gov/pubmed/28322838) | metadata signals extractable PD data (IC50) |
+| `Gautier_2003.pdf` | Gautier P et al., Electrophysiologic characterization of…, Journal of cardiovascular p… (2003) | pd | 4 | [10.1097/00005344-200302000-00007](https://doi.org/10.1097/00005344-200302000-00007) | [12548079](https://www.ncbi.nlm.nih.gov/pubmed/12548079) | metadata signals extractable PD data (IC50) |
 | `Marcolino_2019.pdf` | Marcolino AIP et al., Comparative evaluation of the hepatotox…, Photochemical & photobiolog… (2019) | pd | 4 | [10.1039/c8pp00559a](https://doi.org/10.1039/c8pp00559a) | [31037283](https://www.ncbi.nlm.nih.gov/pubmed/31037283) | metadata signals extractable PD data (IC50) |
 | `de_2022.pdf` | de Souza TG et al., Effects of amiodarone, amioder, and dro…, Parasitology research (2022) | pd | 4 | [10.1007/s00436-022-07521-8](https://doi.org/10.1007/s00436-022-07521-8) | [35435511](https://www.ncbi.nlm.nih.gov/pubmed/35435511) | metadata signals extractable PD data (IC50) |
 | `Damy_2004.pdf` | Damy T et al., Pharmacokinetic and pharmacodynamic int…, Fundamental & clinical phar… (2004) | pgx | 8 | [10.1046/j.1472-8206.2003.00216.x](https://doi.org/10.1046/j.1472-8206.2003.00216.x) | [14748763](https://www.ncbi.nlm.nih.gov/pubmed/14748763) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
@@ -73,54 +74,59 @@ _11 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Kim_2018.pdf` | Kim MS et al., Effect of dronedarone on the pharmacoki…, European journal of pharmac… (2018) | pgx | 7 | [10.1016/j.ejps.2017.09.029](https://doi.org/10.1016/j.ejps.2017.09.029) | [28942006](https://www.ncbi.nlm.nih.gov/pubmed/28942006) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Wen_2022.pdf` | Wen HN et al., Predicting drug-drug interactions with…, Thrombosis research (2022) | pgx | 7 | [10.1016/j.thromres.2022.08.007](https://doi.org/10.1016/j.thromres.2022.08.007) | [35985100](https://www.ncbi.nlm.nih.gov/pubmed/35985100) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-09T09:24:24.851629+00:00</sub>
+<sub>queue written 2026-09-19T15:18:49.783146+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ahmed_2023 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on antiviral activity and does not report pharmacokinetic disposition parameters for dronedarone. |
+| popPK | Ahmed_2023 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of dronedarone's antiviral activity against SARS-CoV-2 and does not report any pharmacokinetic disposition parameters (CL, V, ka, etc.). |
 | popPK | Aimond_2000 | irrelevant | 0 | 0 | The study focuses on electrophysiological effects (action potentials, ionic currents) and antiarrhythmic activity, not pharmacokinetic disposition parameters. |
 | popPK | Ali_2017 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of MRP3 transporter inhibition, not a pharmacokinetic study reporting disposition parameters for dronedarone. |
 | popPK | Baek_2019 | relevant | 9 | 2 | The paper is a PK study of dronedarone in rats reporting a compartmental model, but specific numeric parameter values (CL, V, ka) are not present in the provided text, only qualitative descriptions and bioavailability. |
-| PD | Baek_2019 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetics and dose proportionality in rats, reporting PK parameters (AUC, Cmax, clearance) rather than pharmacodynamic or exposure-response relationships. |
+| PD | Baek_2019 | not_relevant | 0 | 0 | The study focuses exclusively on pharmacokinetics (PK) and dose proportionality in rats, with no pharmacodynamic (PD) measurements or exposure-response analysis reported. |
 | PGx | Bai_2020 | not_relevant | 0 | 0 | The paper investigates flavonoid-mediated CYP3A4 activation (drug-drug interaction), not the effect of a gene variant or genotype on dronedarone PK/PD. |
 | popPK | Bogdan_2011 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ion channel effects and does not report pharmacokinetic parameters. |
 | PGx | Chen_2018 | not_relevant | 0 | 0 | The study investigates the role of CYP enzymes in dronedarone metabolism and cytotoxicity in cell lines but does not report pharmacogenomic effects of specific gene variants on PK or PD parameters in humans. |
 | PGx | Chen_2021 | not_relevant | 0 | 0 | The paper characterizes CYP-overexpressing cell lines and tests stability using dronedarone as a probe, but does not report pharmacogenomic effects of human gene variants on dronedarone PK/PD parameters. |
 | popPK | Chen_2021_2 | irrelevant | 0 | 0 | The paper is a mechanistic study on NLRP3 inhibition and does not report any pharmacokinetic parameters for dronedarone. |
-| popPK | Cheng_2010 | irrelevant | 0 | 0 | The paper is a review of antiarrhythmic and anticoagulant agents for atrial fibrillation and does not report quantitative pharmacokinetic parameters for dronedarone. |
+| popPK | Cheng_2010 | irrelevant | 0 | 0 | The paper is a review of antiarrhythmic and anticoagulant agents for atrial fibrillation and does not report original quantitative pharmacokinetic parameters for dronedarone. |
 | PD | Cheng_2010 | not_relevant | 1 | 0 | The text is a general review comparing pharmacology and efficacy of agents, mentioning dronededarone qualitatively without providing any numeric PD parameters, concentration-effect curves, or dose-response data. |
 | PGx | Cheong_2017 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions between rivaroxaban and dronedarone, not the effect of a gene variant on dronedarone's PK/PD. |
-| PGx | Choi_2020 | not_relevant | 0 | 0 | The paper discusses a drug-drug interaction between voriconazole and dronedarone, but does not report a pharmacogenomic effect on dronedarone's PK/PD parameters. |
-| popPK | Damy_2004 | irrelevant | 1 | 0 | The evidence provided contains only the title of a study involving dronedarone as a co-administered agent, with no quantitative pharmacokinetic parameter values present. |
+| PGx | Choi_2020 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction between voriconazole and dronedarone, not a pharmacogenomic effect on dronedarone's PK/PD parameters. |
+| popPK | Damy_2004 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
+| popPK | Deneer_2011 | irrelevant | 1 | 0 | The paper is a review that discusses dronedarone only qualitatively (stating no dose reduction is needed) without reporting any quantitative pharmacokinetic parameter values. |
+| PD | Deneer_2011 | not_relevant | 1 | 0 | The paper is a qualitative review stating that no dose reduction is required for dronedarone in the elderly, but it does not provide any numeric PD parameters, concentration-effect curves, or specific exposure-response data. |
 | PGx | Deneer_2011 | not_relevant | 1 | 0 | The paper is a general review of antiarrhythmic pharmacokinetics in the elderly and mentions dronedarone only to state that no dose reduction is required, without reporting specific pharmacogenomic effects on its PK or PD parameters. |
 | PGx | Denisov_2018 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions mediated by CYP3A4, not pharmacogenomic effects of gene variants on dronedarone PK/PD. |
 | PGx | Djebli_2015 | not_relevant | 0 | 0 | The paper focuses on the pharmacogenomics of clopidogrel (CYP2C19), and dronedarone is only mentioned as a co-administered inhibitor for model validation, not as the subject of the pharmacogenomic analysis. |
-| PGx | Dorian_2010 | not_relevant | 0 | 0 | The paper is a general clinical pharmacology review of dronedarone that discusses drug-drug interactions and demographic factors (age, gender, renal/hepatic function) but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
-| PGx | Gandhi_2021 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (dronedarone + DOACs) and bleeding risk, but does not investigate the effect of any gene variant or genotype on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Dorian_2010 | not_relevant | 0 | 0 | The paper discusses general pharmacokinetics and drug-drug interactions (CYP3A4, P-gp) but does not report any pharmacogenomic effects (gene variants) on dronedarone PK/PD. |
+| PGx | Gandhi_2021 | not_relevant | 0 | 0 | The study is a retrospective claims database analysis of bleeding risk in patients taking dronedarone and DOACs, and it does not report any pharmacogenomic effects on PK or PD parameters. |
 | PGx | Gao_2011 | not_relevant | 0 | 0 | The study is a claims database analysis of prescribing adherence and contraindications, containing no genetic data or pharmacokinetic/pharmacodynamic measurements. |
+| popPK | Gautier_2003 | irrelevant | 0 | 0 | no_text gate: only 82 chars of text extracted (&lt; 400) |
 | popPK | Guillemare_2000 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channel inhibition, not a pharmacokinetic study, and reports no disposition parameters. |
 | popPK | Guo_2014 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on Kv1.5 inhibitors where dronedarone is used only as a positive control/comparator, and no pharmacokinetic parameters are reported. |
-| PD | Guo_2014 | not_relevant | 1 | 0 | The paper reports in vitro Kv1.5 inhibition data for new derivatives and mentions dronedarone only as a qualitative positive control without providing specific numeric PD parameters or exposure-response curves for dronedarone. |
-| popPK | Gómez_2014 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of Kir2.1 channel interactions and does not report any pharmacokinetic parameters for dronedarone. |
+| PD | Guo_2014 | not_relevant | 1 | 0 | The paper reports qualitative comparison of Kv1.5 inhibition potency against dronedarone but does not provide numeric PD parameters or concentration-effect curves for dronedarone. |
+| popPK | Gómez_2014 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of Kir2.1 channels and does not report any pharmacokinetic parameters for dronedarone. |
 | PD | Gómez_2014 | not_relevant | 0 | 0 | The paper explicitly states that dronedarone did not modify IKir2.1 currents, and no numeric PD parameters or dose-response relationship for dronedarone are reported. |
-| PGx | Hanigan_2020 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (DDI) involving dronedarone as an inhibitor of rivaroxaban/apixaban, not a pharmacogenomic effect on dronedarone's own PK/PD. |
+| PGx | Hanigan_2020 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (DDI) between anticoagulants and inhibitors (including dronedarone), not a pharmacogenomic effect of dronedarone. |
 | PGx | Hong_2016 | not_relevant | 0 | 0 | The paper investigates the mechanism of CYP3A4/3A5 inactivation by dronedarone in vitro and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| PGx | Hügl_2023 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (DDI) between rivaroxaban and dronedarone, not pharmacogenomic effects (gene variants) on dronedarone's PK/PD. |
+| PGx | Hügl_2023 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (DDI) between rivaroxaban and dronedarone/amiodarone, not pharmacogenomic effects (gene variants) on dronedarone's PK/PD. |
 | popPK | Kambayashi_2020 | irrelevant | 2 | 0 | The study focuses on the electrophysiological effects of a deuterated analogue (poyendarone) in dogs and only qualitatively states that its pharmacokinetics are similar to dronedarone without providing quantitative PK parameters for dronedarone. |
 | PGx | Karkhanis_2016 | not_relevant | 0 | 0 | The paper investigates the mechanism of CYP2J2 inhibition by dronedarone in vitro but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | Karkhanis_2018 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of mitochondrial toxicity in cardiomyocytes and does not report pharmacokinetic disposition parameters. |
 | popPK | Khan_2020 | irrelevant | 0 | 0 | The paper is a case report on acute hepatic and renal toxicity and does not report any pharmacokinetic parameters for dronedarone. |
 | PD | Khan_2020 | not_relevant | 0 | 0 | The paper is a single case report of acute toxicity without any pharmacokinetic data, dose-response analysis, or numeric PD parameters. |
-| popPK | Kim_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of carvedilol in rats, with dronedarone acting as a co-administered agent rather than the subject drug. |
-| PGx | Kim_2018 | not_relevant | 0 | 0 | The study investigates the effect of dronedarone on carvedilol pharmacokinetics in rats, not the effect of a gene variant on dronedarone pharmacokinetics or pharmacodynamics. |
-| PGx | Klieber_2014 | not_relevant | 0 | 0 | The paper describes in vitro metabolic pathways and enzyme identification for dronedarone but does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| popPK | Kim_2018 | irrelevant | 0 | 0 | no_text gate: only 97 chars of text extracted (&lt; 400) |
+| PGx | Kim_2018 | not_relevant | 0 | 0 | The study investigates the drug-drug interaction between dronedarone and carvedilol in rats, not the effect of a gene variant on dronedarone's PK/PD. |
+| PGx | Klieber_2014 | not_relevant | 0 | 0 | The paper describes in vitro metabolic pathways and enzyme involvement (CYPs, MAO) but does not report pharmacogenomic effects of specific gene variants on PK/PD parameters. |
 | PD | Leow_2023 | not_relevant | 0 | 0 | The paper focuses on a PBPK model for drug-drug interactions (PK only) and does not report any pharmacodynamic (PD) or exposure-response parameters for dronedarone. |
-| PGx | Leow_2023 | not_relevant | 0 | 0 | The paper reports a PBPK model for drug-drug interactions (dronedarone-rivaroxaban) and does not investigate the impact of gene variants or genotypes on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Leow_2023 | not_relevant | 0 | 0 | The paper focuses on a PBPK model for drug-drug interactions (dronedarone-rivaroxaban) and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Lip_2014 | irrelevant | 0 | 0 | The paper is a review of edoxaban, and dronedarone is only mentioned as a P-gp inhibitor in a drug-drug interaction context without any PK parameters for dronedarone itself. |
+| PD | Lip_2014 | not_relevant | 1 | 0 | The paper is a review of edoxaban that only qualitatively mentions dronedarone as a P-gp inhibitor requiring dose adjustment, without providing any numeric PD parameters or exposure-response data for dronedarone. |
 | popPK | Loewe_2014 | irrelevant | 0 | 0 | The paper is an in-silico electrophysiology study focusing on pharmacodynamic effects (action potential morphology) rather than pharmacokinetic disposition parameters. |
-| popPK | Marcolino_2019 | irrelevant | 0 | 0 | The paper focuses on hepatotoxicity and phototoxicity of dronedarone cyclodextrin complexes, not pharmacokinetic disposition parameters. |
-| PD | Marcolino_2019 | not_relevant | 0 | 0 | The paper focuses on the comparative evaluation of hepatotoxicity, phototoxicity, and photosensitizing potential of dronedarone and its cyclodextrin complexes, likely using in vitro or ex vivo assays, rather than reporting an in vivo pharmacokinetic/pharmacodynamic (PK/PD) exposure-response relationship with numeric PD parameters. |
+| popPK | Marcolino_2019 | irrelevant | 0 | 0 | no_text gate: only 166 chars of text extracted (&lt; 400) |
+| PD | Marcolino_2019 | not_relevant | 0 | 0 | The paper focuses on comparative toxicology (hepatotoxicity, phototoxicity) of dronedarone and its complexes, not on pharmacodynamic exposure-response modeling or dose-effect relationships for therapeutic efficacy. |
 | popPK | Martinez-Sotillo_2019 | irrelevant | 0 | 0 | The study focuses on the antiproliferative mechanism of a new compound (AMIODER) in Leishmania, with dronedarone mentioned only as a background comparator, and no pharmacokinetic parameters are reported. |
 | PD | Martinez-Sotillo_2019 | not_relevant | 0 | 0 | The paper focuses on the antiproliferative effect of AMIODER (a new benzofuran derivative) on Leishmania donovani, not dronedarone, and does not report dronedarone PD parameters. |
 | popPK | Nishida_2025 | irrelevant | 0 | 0 | The study is an in-vitro high-throughput screening for antiproliferative activity (IC50) and does not report quantitative pharmacokinetic disposition parameters (CL, V, Q, ka) for dronedarone. |
@@ -128,25 +134,25 @@ _11 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Pamukcu_2011 | not_relevant | 2 | 1 | The text is a review summary that qualitatively describes dronedarone's pharmacodynamic properties (ion channel blocking) and clinical efficacy but does not provide specific numeric PD parameters (e.g., Emax, EC50) or exposure-response data. |
 | popPK | Quintana-Villamandos_2019 | irrelevant | 0 | 0 | The study focuses on vascular remodeling and oxidative stress biomarkers in rats, not on the pharmacokinetic disposition parameters (CL, V, etc.) of dronedarone. |
 | PD | Quintana-Villamandos_2019 | not_relevant | 2 | 1 | The study reports qualitative improvements in vascular function and remodeling after a fixed dose of dronedarone, but does not provide concentration-effect data, dose-response curves for the drug itself, or numeric PD parameters (e.g., EC50, Emax) for dronedarone. |
-| popPK | Ridley_2004 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study investigating HERG channel blockade and does not report pharmacokinetic parameters. |
+| popPK | Ridley_2004 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of HERG channel blockade and does not report pharmacokinetic disposition parameters for dronedarone. |
 | popPK | Rosa_2014 | irrelevant | 1 | 0 | The paper is a narrative review of clinical trials and does not report original quantitative pharmacokinetic parameter values for dronedarone. |
-| PD | Rosa_2014 | not_relevant | 1 | 0 | The text is a review article summarizing clinical trials and general pharmacological properties without providing specific numeric pharmacodynamic parameters or exposure-response data. |
+| PD | Rosa_2014 | not_relevant | 1 | 0 | The text is a review article summarizing clinical trials and general pharmacological properties without providing specific numeric PD parameters or exposure-response data. |
 | PGx | Schafer_2010 | not_relevant | 0 | 0 | The paper is a general review of dronedarone clinical trials and safety, containing no information on pharmacogenomics or gene-variant effects on PK/PD. |
 | popPK | Schmidt_2012 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study reporting IC50 values for channel inhibition, not a pharmacokinetic study with disposition parameters. |
 | PGx | Shirolkar_2010 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions between dronedarone and warfarin, not pharmacogenomic effects of gene variants on dronedarone PK/PD. |
-| popPK | Simó-Vicens_2017 | irrelevant | 0 | 0 | The paper title indicates a mechanistic study on ion channels, not a pharmacokinetic study reporting quantitative disposition parameters for dronedarone. |
+| popPK | Simó-Vicens_2017 | irrelevant | 0 | 0 | no_text gate: only 90 chars of text extracted (&lt; 400) |
 | PD | Simó-Vicens_2017 | not_relevant | 0 | 0 | The paper focuses on the electrophysiological effects of antiarrhythmic drugs on ion channels and does not report pharmacokinetic or pharmacodynamic modeling (exposure-response or dose-response) for dronedarone. |
-| popPK | Thomas_2003 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiological study investigating channel blocking mechanisms (IC50, voltage shifts) and does not report pharmacokinetic disposition parameters such as clearance, volume, or half-life. |
+| popPK | Thomas_2003 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiological study investigating channel blocking mechanisms (IC50, voltage shifts) in Xenopus oocytes, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Watanabe_2008 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology experiment measuring ion channel inhibition (IC50) in guinea pig myocytes, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Wen_2022 | irrelevant | 2 | 0 | The study focuses on apixaban and rivaroxaban with dronedarone as a co-administered agent, and no quantitative PK parameters for dronedarone are present in the evidence. |
+| popPK | Wen_2022 | irrelevant | 0 | 0 | no_text gate: only 184 chars of text extracted (&lt; 400) |
 | PD | Wen_2022 | not_relevant | 0 | 0 | The paper focuses on PK modeling and DDI prediction for apixaban and rivaroxaban, with no reported PD or exposure-response analysis for dronedarone. |
 | PGx | Wen_2022 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (DDI) between anticoagulants and dronedarone, not pharmacogenomic effects. |
-| popPK | Yu_2020 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channel inhibition (SK channels) and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Yu_2020 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study investigating the mechanism of action (SK channel inhibition) of dronedarone, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Zhang_2011 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study characterizing a hERG channel mutation, and dronedarone is used only as a probe drug to assess channel inhibition, not as the subject of a pharmacokinetic study. |
 | PGx | Zhanyi_2026 | not_relevant | 0 | 0 | The paper discusses amiodarone and direct oral anticoagulants, not dronedarone. |
 | PGx | Zhu_2025 | not_relevant | 0 | 0 | The paper characterizes CYP2J2 activity in hESC-CMs and notes dronedarone is an inhibitor, but does not report a pharmacogenomic effect of a gene variant on dronedarone's PK or PD parameters. |
-| popPK | de_2022 | irrelevant | 0 | 0 | The paper investigates the effects of dronedarone on Trichomonas vaginalis, which is a mechanistic/antimicrobial study, not a pharmacokinetic study reporting disposition parameters. |
-| PD | de_2022 | not_relevant | 0 | 0 | The paper investigates the in vitro antimicrobial effects of dronedarone on Trichomonas vaginalis, which is a microbiological efficacy study, not a pharmacodynamic (exposure-response) analysis in a biological host or cell system with numeric PD parameters like Emax or EC50 in the context of drug action. |
+| popPK | de_2022 | irrelevant | 0 | 0 | no_text gate: only 72 chars of text extracted (&lt; 400) |
+| PD | de_2022 | not_relevant | 0 | 0 | The paper investigates the in vitro antimicrobial effects of dronedarone on Trichomonas vaginalis, not pharmacodynamic exposure-response relationships in a clinical or physiological context. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_dronedarone`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

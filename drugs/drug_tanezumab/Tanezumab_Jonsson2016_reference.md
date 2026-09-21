@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;tanezumab&quot;,&quot;href&quot;:&quot;drugs/drug_tanezumab/&quot;},{&quot;label&quot;:&quot;Jonsson_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tanezumab_Jonsson2016_reference&quot;,&quot;label&quot;:&quot;Jonsson_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tanezumab/Tanezumab_Jonsson2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tanezumab_Jonsson2016_reference&quot;,&quot;label&quot;:&quot;Jonsson_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tanezumab/Tanezumab_Jonsson2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tanezumab_Shoji2022_reference&quot;,&quot;label&quot;:&quot;Shoji_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tanezumab/Tanezumab_Shoji2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 ### Reviewer guidance
 
-> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `Km`, `V`</sub>
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `Km`, `Vmax`</sub>
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
@@ -27,7 +27,7 @@ Jonsson EN; Xie R; Marshall SF; Arends RH et al. (2016). British journal of clin
   ·  DOI: [10.1111/bcp.12850](https://doi.org/10.1111/bcp.12850)
 
 ## Model component
-<dbs-pgx drug="tanezumab" model-id="Tanezumab_Jonsson2016_reference" status="rejected" stale="false" population="adults with osteoarthritis" measured-compound="tanezumab" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<dbs-pgx drug="tanezumab" model-id="Tanezumab_Jonsson2016_reference" status="rejected" stale="false" population="adults with osteoarthritis" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -37,11 +37,11 @@ Jonsson EN; Xie R; Marshall SF; Arends RH et al. (2016). British journal of clin
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL † (l day –1) | `Q22` · CL | 0.135 | l day –1 | 1.5625e-09 | [l] / [d] | not captured | exact (1.0) | bcp12850-tbl-0002:row1:col1 | — | not captured |
-| V 1 † (l) | `Q63` · V1 | 2.71 | l | 0.00271 | [l] | not captured | llm (0.6) | bcp12850-tbl-0002:row2:col1 | — | not captured |
+| V 1 † (l) | `Q63` · V1 | 2.71 | l | 0.00271 | [l] | not captured | space_fold (0.95) | bcp12850-tbl-0002:row2:col1 | — | not captured |
 | Q † (l day –1) | `Q30` · Q | 0.371 | l day –1 | 4.293981481481482e-09 | [l] / [d] | not captured | exact (1.0) | bcp12850-tbl-0002:row3:col1 | — | not captured |
-| V 2 † (l) | `Q64` · V2 | 1.98 | l | 0.00198 | [l] | not captured | llm (0.6) | bcp12850-tbl-0002:row4:col1 | — | not captured |
+| V 2 † (l) | `Q64` · V2 | 1.98 | l | 0.00198 | [l] | not captured | space_fold (0.95) | bcp12850-tbl-0002:row4:col1 | — | not captured |
 | KM (ng ml –1) | `Q1` · Km | 27.7 | ng ml –1 | not captured | [ng] / [ml] | not captured | exact (1.0) | bcp12850-tbl-0002:row6:col1 | — | not captured |
-| VM (μg day –1) | `Q61` · V | 8.03 | μg day –1 | not captured | [µg] / [d] | not captured | llm (0.6) | bcp12850-tbl-0002:row7:col1 | — | not captured |
+| VM (μg day –1) | `Q66` · Vmax | 8.03 | μg day –1 | not captured | [µg] / [d] | not captured | special_case (0.95) | bcp12850-tbl-0002:row7:col1 | — | not captured |
 | theta_cl_wt | `Q900` · theta_cl_wt | 0.77 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp12850-tbl-0002:row8:col1 | — | not captured |
 | theta_v1_wt | `Q900` · theta_v1_wt | 0.554 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp12850-tbl-0002:row9:col1 | — | not captured |
 | theta_v2_wt | `Q900` · theta_v2_wt | 0.302 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp12850-tbl-0002:row10:col1 | — | not captured |
@@ -58,15 +58,14 @@ Jonsson EN; Xie R; Marshall SF; Arends RH et al. (2016). British journal of clin
 **Interpretation flags:**
 - dropped value-less row: 'Parameter'
 - dropped unlinked row (NIL): 'Mixture probability with low RSV' — extend the ontology if this is a real PK parameter (source ['bcp12850-tbl-0002:row5:col1'])
-- unit_dimension_mismatch: 'VM (μg day –1)' → Q61 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'VM (μg day –1)' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
 - dropped duplicate Q22 ('CL cr on CL', value '0.108') — already have one for this compound
-- dropped duplicate Q22 ('Dose on CL', value '0.0669') — already have one for this compound
+- dropped unlinked row (NIL): 'Dose on CL' — extend the ontology if this is a real PK parameter (source ['bcp12850-tbl-0002:row12:col1'])
 - routed 'Cov CL‐V 1 ‡' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - dropped unlinked row (NIL): 'Low RSV, %CV' — extend the ontology if this is a real PK parameter (source ['bcp12850-tbl-0002:row20:col1'])
 - dropped unlinked row (NIL): 'High RSV, %CV' — extend the ontology if this is a real PK parameter (source ['bcp12850-tbl-0002:row21:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tanezumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 3C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 
 **Extraction notes:**
@@ -101,13 +100,14 @@ Jonsson EN; Xie R; Marshall SF; Arends RH et al. (2016). British journal of clin
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['bcp12850-tbl-0002:row6:col1'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp12850-tbl-0002:row1:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp12850-tbl-0002:row3:col1'] |
-| C5_dimension_Q61 | fail | [mass] / [time] | μg day –1 | not captured | not captured | ['bcp12850-tbl-0002:row7:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp12850-tbl-0002:row2:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp12850-tbl-0002:row4:col1'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | μg day –1 | not captured | not captured | ['bcp12850-tbl-0002:row7:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.135 | not captured | not captured | ['bcp12850-tbl-0002:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.00562 L/h | not captured | not captured | ['bcp12850-tbl-0002:row1:col1'] |

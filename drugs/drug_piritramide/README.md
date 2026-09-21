@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;piritramide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Piritramide_Kietzmann1996_reference&quot;,&quot;label&quot;:&quot;Kietzmann_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Kietzmann1996_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piritramide_Mller2006_reference&quot;,&quot;label&quot;:&quot;M\u00fcller_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Mller2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piritramide_Bouillon1999_reference&quot;,&quot;label&quot;:&quot;Bouillon_1999_reference&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Bouillon1999_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piritramide_Bouillon2004_reference&quot;,&quot;label&quot;:&quot;Bouillon_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Bouillon2004_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Piritramide_Hinrichs2017_reference&quot;,&quot;label&quot;:&quot;Hinrichs_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_piritramide/Piritramide_Hinrichs2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # piritramide
 
@@ -15,11 +16,17 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-28 09:13 | 8:43 | 0/0/0 | 0/0/0 | 0/0/5 | 47,052/2,042 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 4/4 | 8/0 | 0 |
+| 2026-09-20 21:28 | 5:17 | 4/0/1 | 0/0/0 | 0/0/5 | 102,140/7,690 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 4/4 | 8/0 | 0 |
 
 ## popPK records
 
-_not available_
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Kietzmann_1996_reference](drugs/drug_piritramide/Piritramide_Kietzmann1996_reference.md) | Kietzmann D et al., Pharmacokinetics of piritramide after a…, Acta anaesthesiologica Scan… (1996) | [10.1111/j.1399-6576.1996.tb04557.x](https://doi.org/10.1111/j.1399-6576.1996.tb04557.x) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Müller_2006_reference](drugs/drug_piritramide/Piritramide_Mller2006_reference.md) | Müller C et al., Pharmacokinetics of piritramide in newb…, European journal of pediatr… (2006) | [10.1007/s00431-005-0021-z](https://doi.org/10.1007/s00431-005-0021-z) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Bouillon_1999_reference](drugs/drug_piritramide/Piritramide_Bouillon1999_reference.md) | Bouillon T et al., Population pharmacokinetics of piritram…, Anesthesiology (1999) | [10.1097/00000542-199901000-00004](https://doi.org/10.1097/00000542-199901000-00004) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Bouillon_2004_reference](drugs/drug_piritramide/Piritramide_Bouillon2004_reference.md) | Bouillon T et al., The pharmacokinetics of piritramide aft…, European journal of anaesth… (2004) | [10.1017/s0265021504009019](https://doi.org/10.1017/s0265021504009019) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Hinrichs_2017_reference](drugs/drug_piritramide/Piritramide_Hinrichs2017_reference.md) | Hinrichs M et al., [Piritramide : A critical review], Schmerz (Berlin, Germany) (2017) | [10.1007/s00482-017-0197-y](https://doi.org/10.1007/s00482-017-0197-y) |
 
 ## Pharmacogenomics (PGx)
 
@@ -39,32 +46,52 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 34 matched, 32 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 5  ·  extracted 2  ·  needs_review 3  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Bouillon_1999.pdf` | Bouillon T et al., Population pharmacokinetics of piritram…, Anesthesiology (1999) | popPK | 10 | [10.1097/00000542-199901000-00004](https://doi.org/10.1097/00000542-199901000-00004) | [9915307](https://pubmed.ncbi.nlm.nih.gov/9915307) | The paper is a population pharmacokinetic study of piritramide that explicitly reports numeric values for volumes, clearances, and half-lives in the text. |
+| `Bouillon_2004.pdf` | Bouillon T et al., The pharmacokinetics of piritramide aft…, European journal of anaesth… (2004) | popPK | 10 | [10.1017/s0265021504009019](https://doi.org/10.1017/s0265021504009019) | [15595577](https://pubmed.ncbi.nlm.nih.gov/15595577) | The study reports quantitative compartmental pharmacokinetic parameters (V1, V2, V3, Cl1, Cl2, Cl3, half-life) for piritramide in humans, with all numeric values explicitly present in the text. |
+| `Kietzmann_1996.pdf` | Kietzmann D et al., Pharmacokinetics of piritramide after a…, Acta anaesthesiologica Scan… (1996) | popPK | 10 | [10.1111/j.1399-6576.1996.tb04557.x](https://doi.org/10.1111/j.1399-6576.1996.tb04557.x) | [8908225](https://pubmed.ncbi.nlm.nih.gov/8908225) | The paper reports quantitative pharmacokinetic parameters (Vss, CL, t1/2) for piritramide in humans with values clearly present in the text. |
+| `Müller_2006.pdf` | Müller C et al., Pharmacokinetics of piritramide in newb…, European journal of pediatr… (2006) | popPK | 10 | [10.1007/s00431-005-0021-z](https://doi.org/10.1007/s00431-005-0021-z) | [16496200](https://pubmed.ncbi.nlm.nih.gov/16496200) | The paper reports quantitative pharmacokinetic parameters (Cmax, t1/2, Cl, Vd) for piritramide in pediatric populations with specific numeric values provided in the text. |
 | `Bouillon_2003.pdf` | Bouillon T et al., Piritramide and alfentanil display simi…, Acta anaesthesiologica Scan… (2003) | pd | 5 | [10.1046/j.1399-6576.2003.00251.x](https://doi.org/10.1046/j.1399-6576.2003.00251.x) | [14616320](https://www.ncbi.nlm.nih.gov/pubmed/14616320) | metadata signals extractable PD data (PKPD) |
 
-<sub>queue written 2026-08-28T09:10:46.030534+00:00</sub>
+<sub>queue written 2026-09-20T21:23:28.600191+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Branson_2011 | irrelevant | 0 | 0 | The provided evidence contains only a file link and no actual text, data, or pharmacokinetic parameters for piritramide. |
+| PD | Bouillon_1999 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model only and explicitly states that pharmacodynamic data were "published" elsewhere, providing no numeric PD parameters or exposure-response relationship in this text. |
+| popPK | Bouillon_2003 | irrelevant | 2 | 0 | The study focuses on pharmacodynamic parameters (C50, ke0) for respiratory depression and does not report quantitative pharmacokinetic disposition parameters (CL, V, ka) for piritramide. |
+| PGx | Brack_2004 | not_relevant | 0 | 0 | The paper discusses piritramide only in the context of general analgesic efficacy compared to morphine, without reporting any pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Branson_2011 | irrelevant | 0 | 0 | no_text gate: only 72 chars of text extracted (&lt; 400) |
 | PD | Branson_2011 | not_relevant | 0 | 0 | The provided text is a placeholder for a PDF file and contains no scientific content, data, or PD parameters. |
-| popPK | Chase_2012 | irrelevant | 0 | 0 | The provided evidence is only a conference session header with no pharmacokinetic data or text for piritramide. |
+| popPK | Chase_2012 | irrelevant | 0 | 0 | no_text gate: only 89 chars of text extracted (&lt; 400) |
 | PD | Chase_2012 | not_relevant | 0 | 0 | The provided text is a conference header and file link, containing no scientific content, data, or pharmacodynamic analysis for piritramide. |
+| PD | Englbrecht_2017 | not_relevant | 0 | 0 | The paper is a clinical case report describing the use of piritramide for postoperative analgesia without providing any pharmacokinetic data, concentration measurements, or quantitative dose-response analysis. |
 | PD | Hinrichs_2017 | not_relevant | 2 | 1 | The text is a critical review summarizing general pharmacokinetic properties (e.g., volume of distribution) and clinical usage statistics, but it does not report specific numeric pharmacodynamic parameters (Emax, EC50) or an exposure-response relationship for piritramide. |
-| popPK | Meijer_2020 | irrelevant | 0 | 0 | The study focuses on fentanyl dosing and postoperative pain, with piritramide used only as a rescue analgesic without any pharmacokinetic parameter reporting. |
-| PD | Meijer_2020 | not_relevant | 0 | 0 | The paper is a clinical trial comparing dosing strategies for fentanyl and does not report any pharmacodynamic model, exposure-response relationship, or numeric PD parameters for piritramide. |
-| PGx | Stamer_2013 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on oxycodone, not piritramide. |
+| PD | Huenseler_2008 | not_relevant | 3 | 2 | The paper reports qualitative dose-response observations (e.g., 50-70 microg/kg provides 120 min analgesia) but lacks a formal PK/PD model or numeric PD parameters (Emax, EC50) derived from concentration-effect data. |
+| PD | Jantzen_1992 | not_relevant | 0 | 0 | The paper investigates the effect of induced hypotension on intraocular pressure; piritramide is only mentioned as part of the background anesthesia protocol, and no pharmacodynamic or exposure-response analysis for piritramide is performed or reported. |
+| popPK | Javillier_2026 | irrelevant | 0 | 0 | The study is a clinical trial of ropivacaine where piritramide is only used as a comparator for opioid consumption, with no pharmacokinetic parameters reported. |
+| popPK | Kietzmann_1997 | irrelevant | 2 | 0 | The study focuses on pharmacodynamic modeling (EC50, T1/2keo) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for piritramide. |
+| popPK | Meijer_2020 | irrelevant | 0 | 0 | The study focuses on fentanyl dosing strategies and pain outcomes, with piritramide used only as a rescue analgesic without any pharmacokinetic parameter reporting. |
+| PD | Meijer_2020 | not_relevant | 0 | 0 | The paper is a clinical trial comparing dosing strategies for fentanyl and does not report any pharmacodynamic model, exposure-response analysis, or numeric PD parameters for piritramide. |
+| PD | Müller_2006 | not_relevant | 0 | 0 | The paper reports only pharmacokinetic parameters (Cmax, t1/2, Cl, Vd) and explicitly states that subsequent trials comparing PK and effectiveness are needed, indicating no PD or exposure-response analysis was performed. |
+| PGx | Stamer_2013 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on oxycodone metabolism and consumption, not on the pharmacokinetic or pharmacodynamic parameters of piritramide. |
+| PD | Thigpen_2019 | not_relevant | 1 | 0 | The text is a general review introduction that mentions piritramide but provides no specific pharmacodynamic data, exposure-response relationships, or numeric PD parameters. |
+| popPK | Weibel_2020 | irrelevant | 0 | 0 | The paper is a network meta-analysis of antiemetic drugs for postoperative nausea and vomiting and does not report pharmacokinetic parameters for piritramide. |
+| PD | Weibel_2020 | not_relevant | 0 | 0 | The paper is a network meta-analysis of antiemetics for PONV and does not mention piritramide or report any pharmacodynamic or exposure-response parameters. |
+| popPK | Weinstein_2018 | irrelevant | 0 | 0 | The paper is a systematic review on regional anaesthesia for postoperative pain and does not report pharmacokinetic parameters for piritramide. |
+| PD | Weinstein_2018 | not_relevant | 0 | 0 | The paper is a systematic review of regional anaesthesia for postoperative pain and does not contain any pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for piritramide. |
+| popPK | Weinstein_2018_2 | irrelevant | 0 | 0 | The paper is a systematic review on regional anaesthesia for postoperative pain and does not report pharmacokinetic parameters for piritramide. |
+| PD | Weinstein_2018_2 | not_relevant | 0 | 0 | The paper is a systematic review of regional anaesthesia for postoperative pain and does not contain any pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for piritramide. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_piritramide`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CGRP-induced relaxation — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# CGRP-induced relaxation — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Boucherie_2024`
 - **model family:** `unknown`
