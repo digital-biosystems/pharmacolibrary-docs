@@ -26,6 +26,17 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Williams_2020_reference](drugs/drug_isoflurane/Isoflurane_Williams2020_reference.md) | Williams CJA et al., Ectothermy and cardiac shunts profoundl…, Scientific reports (2020) | [10.1038/s41598-020-74014-y](https://doi.org/10.1038/s41598-020-74014-y) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=isoflurane) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| metabolism | liver | `CYP2B6` inducer/substrate, `CYP2E1` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ATP2C1 (inhibitor), ATP5F1D (unknown), CALM1 (other/unknown), CHRNA4 (target), CHRNB2 (target), GABRA1 (positive allosteric modulator), GABRA1 (target), GLRA1 (target), GRIA1 (target), KCNA1 (inducer), MT-ND1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 280 matched, 60 returned

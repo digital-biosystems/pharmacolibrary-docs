@@ -27,6 +27,32 @@ From a pharmacological perspective, Cannabis' diverse receptor profile explains 
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dronabinol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inhibitor | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | heart | `CYP2J2` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor, `UGT1A9` substrate | DrugBank actor |
+| metabolism | liver | `CES1` inhibitor, `CYP1A2` inhibitor, `CYP2A6` inhibitor, `CYP2B6` inhibitor, `CYP2C19` inhibitor/substrate, `CYP2C9` inducer/inhibitor/substrate, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor, `CYP3A7` inhibitor, `UGT1A1` substrate, `UGT1A3` substrate, `UGT1A9` substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` inducer/inhibitor, `CYP1B1` inhibitor | DrugBank actor |
+| metabolism | skin | `CYP1B1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inducer/inhibitor, `CYP2J2` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor, `UGT1A1` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…nol and its biotransformation products are excreted in both feces and urine. Biliary excre…”</sub> | prose |
+| excretion | kidney | <sub>“…s biotransformation products are excreted in both feces and urine. Biliary excretion is th…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CNR1 (target), CNR2 (target), PTGS1 (inhibitor), UGT1A10 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 32 matched, 30 returned

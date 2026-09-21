@@ -32,6 +32,24 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Fohlen_2021](drugs/drug_streptozocin/pd_Fohlen_2021_CV.md) | Fohlen A et al., Anticancer Drugs for Intra-Arterial Tre…, Pharmaceuticals (Basel, Swi… (2021) | [10.3390/ph14070639](https://doi.org/10.3390/ph14070639) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Holmes_1998](drugs/drug_streptozocin/pd_Holmes_1998_unknown.md) | Holmes BB et al., Heroin acts on delta opioid receptors i…, Proceedings of the Society… (1998) | [10.3181/00379727-218-44301](https://doi.org/10.3181/00379727-218-44301) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=streptozocin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer | DrugBank actor |
+| absorption | liver | `ABCB1` inducer | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer | DrugBank actor |
+| absorption | small intestine | `ABCB1` inducer | DrugBank actor |
+| metabolism | liver | `CYP1A2` inducer, `CYP2E1` inducer | DrugBank actor |
+| metabolism | lung | `CYP1A1` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inducer | DrugBank actor |
+| excretion | kidney | <sub>“…N-nitrosourea group) is metabolized and/or excreted by the kidney.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), OGA (inhibitor), SLC2A2 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 1142539 matched, 136 returned

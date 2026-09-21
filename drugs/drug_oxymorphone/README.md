@@ -29,6 +29,21 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Sadiq_2013_bootstrap_resampling](drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_bootstrap_resampling.md) | Sadiq MW et al., Oxymorphone active uptake at the blood-…, Journal of pharmaceutical s… (2013) | [10.1002/jps.23492](https://doi.org/10.1002/jps.23492) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Sadiq_2013_bootstrap_resampling](drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_bootstrap_resampling.md) | Sadiq MW et al., Oxymorphone active uptake at the blood-…, Journal of pharmaceutical s… (2013) | [10.1002/jps.23492](https://doi.org/10.1002/jps.23492) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=oxymorphone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | <sub>“…g oral dose, 49% was excreted over a five-day period in the urine. Of this, 82% was excret…”</sub> | prose |
+| metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…, &lt;1% of the administered dose is excreted unchanged in the urine.…”</sub> | prose |
+| excretion | liver | <sub>“…Oxymorphone is highly metabolized, principally in the liver, and undergoes reduction or co…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: OPRD1 (target), OPRM1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 220 matched, 102 returned

@@ -28,6 +28,19 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Greenberg_2022_reference](drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_reference.md) | Greenberg RG et al., Population Pharmacokinetics of Moxiflox…, Paediatric drugs (2022) | [10.1007/s40272-022-00493-3](https://doi.org/10.1007/s40272-022-00493-3) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yun_2022_reference](drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference.md) | Yun HY et al., Model-Based Efficacy and Toxicity Compa…, Open forum infectious disea… (2022) | [10.1093/ofid/ofab660](https://doi.org/10.1093/ofid/ofab660) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=moxifloxacin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Well absorbed from the gastrointestinal tract. Absolute oral bioavailability is approximat…”</sub> | prose |
+| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…in is excreted as unchanged drug (~20% in urine and ~25% in feces).…”</sub> | prose |
+| excretion | kidney | <sub>“…dose of moxifloxacin is excreted as unchanged drug (~20% in urine and ~25% in feces).…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: PON1 (inhibitor), TOP2A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 209 matched, 20 returned

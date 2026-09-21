@@ -30,6 +30,30 @@ Daunorubicin is indicated in combination with [cytarabine] for the treatment of 
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hempel_2003_reference](drugs/drug_daunorubicin/Daunorubicin_Hempel2003_reference.md) | Hempel G et al., Population pharmacokinetics of liposoma…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01886.x](https://doi.org/10.1046/j.1365-2125.2003.01886.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2019_reference](drugs/drug_daunorubicin/Daunorubicin_Wang2019_reference.md) | Wang Q et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1366](https://doi.org/10.1002/jcph.1366) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=daunorubicin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer/inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inducer/inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inducer/inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inhibitor/substrate | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
+| metabolism | liver | `CYP3A4` inhibitor/substrate, `CYP3A5` inducer, `POR` inducer/substrate | DrugBank actor |
+| metabolism | lung | `CYP1B1` inhibitor | DrugBank actor |
+| metabolism | skin | `CYP1B1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inducer | DrugBank actor |
+| excretion | bile duct | <sub>“…minated hepatically. 40% of daunorubicin is excreted in the bile while 25% is excreted in…”</sub> | prose |
+| excretion | kidney | <sub>“…d in an active form (daunorubicin or daunorubicinol) in the urine.[L35460] In the liposoma…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ABCC10 (substrate), ABCC6 (substrate), AKR1B1 (substrate), CBR1 (substrate), CBR3 (substrate), DNA (intercalation), TOP2A (inhibitor), TOP2B (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 47 matched, 20 returned

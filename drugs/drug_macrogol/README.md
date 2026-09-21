@@ -71,6 +71,20 @@ The rationale of using PEG in gastroenterology is due to the physical properties
 | <span class="pk-badge pk-badge--red">rejected</span> | [Mui_2013](drugs/drug_macrogol/pd_Mui_2013_FVII_protein_concentration.md) | Mui BL et al., Influence of Polyethylene Glycol Lipid…, Molecular therapy. Nucleic… (2013) | [10.1038/mtna.2013.66](https://doi.org/10.1038/mtna.2013.66) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Sun_2018](drugs/drug_macrogol/pd_Sun_2018_specific_binding_ratio.md) | Sun Y et al., Hepatocellular carcinoma-targeted effec…, International journal of na… (2018) | [10.2147/IJN.S153944](https://doi.org/10.2147/IJN.S153944) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=macrogol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | small intestine | <sub>“…col is a metabolically inert laxative that does not undergo intestinal enzymatic degradati…”</sub> | prose |
+| excretion | bile duct | <sub>“…jects, up to 85% to 99% of the compound was excreted in the feces.[L6421]…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 3261 matched, 198 returned

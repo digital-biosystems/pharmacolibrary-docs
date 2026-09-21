@@ -31,6 +31,32 @@ Clozapine is also indicated for reducing the risk of recurrent suicidal behavior
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Geers_2022_reference](drugs/drug_clozapine/Clozapine_Geers2022_reference.md) | Geers LM et al., Population pharmacokinetic model and li…, Therapeutic advances in psy… (2022) | [10.1177/20451253211065857](https://doi.org/10.1177/20451253211065857) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Reeves_2024_reference](drugs/drug_clozapine/Clozapine_Reeves2024_reference.md) | Reeves S et al., A population pharmacokinetic model to g…, British journal of clinical… (2024) | [10.1111/bcp.15691](https://doi.org/10.1111/bcp.15691) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=clozapine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| distribution | liver | `SLC22A3` substrate | DrugBank actor |
+| distribution | placenta | `SLC22A3` substrate | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` substrate | DrugBank actor |
+| metabolism | bile duct | <sub>“…ace amounts of unchanged drug are detected in the urine and feces. Clozapine is a substrat…”</sub> | prose |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | <sub>“…nd only trace amounts of unchanged drug are detected in the urine and feces. Clozapine is…”</sub> | prose |
+| metabolism | liver | `CYP1A2` substrate, `CYP2A6` substrate, `CYP2C19` inhibitor/substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inducer/inhibitor/substrate, `FMO3` substrate, `GSTP1` unknown, `SLC22A1` substrate, `UGT1A4` substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` inducer, `GSTP1` unknown | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inducer, `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…e administered dose is excreted in the urine and 30% in the feces.[L905]…”</sub> | prose |
+| excretion | kidney | `SLC22A2` unknown | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA2A (target), ADRA2B (target), ADRA2C (target), CALY (unknown), CHRM1 (partial agonist), CHRM2 (partial agonist), CHRM3 (target), CHRM4 (partial agonist), CHRM5 (target), DRD1 (target), DRD2 (target), DRD3 (target), DRD4 (target), DRD5 (binder), GABBR1 (positive modulator), GABBR2 (positive modulator), GABRA1 (target), GABRB1 (target), GABRG1 (target), HRH1 (target), HRH4 (target), HTR1A (target), HTR1B (target), HTR1D (target), HTR1E (target), HTR2A (target), HTR2C (target), HTR3A (target), HTR6 (target), HTR7 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 143 matched, 40 returned

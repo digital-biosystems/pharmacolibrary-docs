@@ -63,7 +63,6 @@ Tamoxifen was granted FDA approval on 30 December 1977.[L7799]
 | <span class="pk-badge pk-badge--green">extracted</span> | [Xu_2023](drugs/drug_tamoxifen/pd_Xu_2023_ROS.md) | Xu Z et al., RelB-activated GPX4 inhibits ferroptosi…, Redox biology (2023) | [10.1016/j.redox.2023.102952](https://doi.org/10.1016/j.redox.2023.102952) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Xu_2023](drugs/drug_tamoxifen/pd_Xu_2023_TV.md) | Xu Z et al., RelB-activated GPX4 inhibits ferroptosi…, Redox biology (2023) | [10.1016/j.redox.2023.102952](https://doi.org/10.1016/j.redox.2023.102952) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Xu_2023](drugs/drug_tamoxifen/pd_Xu_2023_survival_rate.md) | Xu Z et al., RelB-activated GPX4 inhibits ferroptosi…, Redox biology (2023) | [10.1016/j.redox.2023.102952](https://doi.org/10.1016/j.redox.2023.102952) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [van_2026](drugs/drug_tamoxifen/pd_van_2026_QTcF.md) | van Dijkman SC et al., An open-label, single-arm, dose-escalat…, British journal of clinical… (2026) | [10.1002/bcp.70398](https://doi.org/10.1002/bcp.70398) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Sanchez-Spitman_2020](drugs/drug_tamoxifen/pd_Sanchez_Spitman_2020_RFS.md) | Sanchez-Spitman AB et al., Exposure-response analysis of endoxifen…, Cancer chemotherapy and pha… (2020) | [10.1007/s00280-020-04089-x](https://doi.org/10.1007/s00280-020-04089-x) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Sanchez-Spitman_2020](drugs/drug_tamoxifen/pd_Sanchez_Spitman_2020_discontinuation.md) | Sanchez-Spitman AB et al., Exposure-response analysis of endoxifen…, Cancer chemotherapy and pha… (2020) | [10.1007/s00280-020-04089-x](https://doi.org/10.1007/s00280-020-04089-x) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Sanchez-Spitman_2020](drugs/drug_tamoxifen/pd_Sanchez_Spitman_2020_relapse.md) | Sanchez-Spitman AB et al., Exposure-response analysis of endoxifen…, Cancer chemotherapy and pha… (2020) | [10.1007/s00280-020-04089-x](https://doi.org/10.1007/s00280-020-04089-x) |
@@ -71,6 +70,7 @@ Tamoxifen was granted FDA approval on 30 December 1977.[L7799]
 | <span class="pk-badge pk-badge--red">rejected</span> | [Etienne_1989](drugs/drug_tamoxifen/pd_Etienne_1989_tritiated_thymidine_incorporation.md) | Etienne MC et al., Tamoxifen metabolism: pharmacokinetic a…, British journal of cancer (1989) | [10.1038/bjc.1989.214](https://doi.org/10.1038/bjc.1989.214) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Fröhlich_2020](drugs/drug_tamoxifen/pd_Fr_hlich_2020_unknown.md) | Fröhlich T et al., Synthesis of Tamoxifen-Artemisinin and…, ChemMedChem (2020) | [10.1002/cmdc.202000174](https://doi.org/10.1002/cmdc.202000174) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Xu_2026](drugs/drug_tamoxifen/pd_Xu_2026_CCL5.md) | Xu H et al., Noncanonical NF-κB pathway driven infla…, Frontiers in immunology (2026) | [10.3389/fimmu.2026.1825442](https://doi.org/10.3389/fimmu.2026.1825442) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [van_2026](drugs/drug_tamoxifen/pd_van_2026_QTcF.md) | van Dijkman SC et al., An open-label, single-arm, dose-escalat…, British journal of clinical… (2026) | [10.1002/bcp.70398](https://doi.org/10.1002/bcp.70398) |
 
 ## Pharmacogenomics (PGx)
 
@@ -120,6 +120,34 @@ Tamoxifen was granted FDA approval on 30 December 1977.[L7799]
 <summary>What the PGx columns mean</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
+
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=tamoxifen) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer/inhibitor/substrate/transport, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer/inhibitor/substrate/transport | DrugBank actor |
+| absorption | liver | `ABCB1` inducer/inhibitor/substrate/transport, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer/inhibitor/substrate/transport | DrugBank actor |
+| absorption | small intestine | `ABCB1` inducer/inhibitor/substrate/transport, `ABCG2` substrate | DrugBank actor |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` formation/inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` metabolism/substrate, `CYP4F2` metabolism, `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `CES1` inhibitor, `CYP1A2` substrate, `CYP2A6` substrate, `CYP2B6` inhibitor/metabolism/substrate, `CYP2C19` metabolism/substrate, `CYP2C8` inhibitor, `CYP2C9` inhibitor/safety_allele/substrate, `CYP2D6` formation/inhibitor/substrate, `CYP2E1` substrate, `CYP3A4` inducer/inhibitor/metabolism/substrate, `CYP3A5` metabolism/substrate, `CYP3A7` substrate, `CYP4F2` metabolism, `FMO3` substrate, `SULT1A1` metabolism/substrate, `SULT1E1` substrate, `UGT2B17` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` substrate, `CYP1B1` inhibitor/substrate | DrugBank actor |
+| metabolism | skin | `CYP1B1` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` inducer/inhibitor/metabolism/substrate, `CYP3A5` metabolism/substrate, `SULT1A1` metabolism/substrate, `UGT2B17` substrate, `UGT2B7` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Tamoxifen is mainly eliminated in the feces.[L7799,L7802] Animal studies have shown 75% of…”</sub> | prose |
+| excretion | kidney | `ABCC2` substrate | DrugBank actor |
+| excretion | liver | `ABCB11` inhibitor, `ABCC2` substrate | DrugBank actor |
+| excretion | small intestine | `ABCC2` substrate | DrugBank actor |
+| target | adipose tissue | `CYP19A1` inhibitor/target | DrugBank actor |
+| target | ovary | `CYP19A1` inhibitor/target | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCA1 (substrate), AR (target), CBR3 (metabolism), CYP3A (formation), EBP (inhibitor), ESR1 (target), ESR2 (target), ESRRG (binder), FCGR3A (target), FMO1 (substrate), KCNH2 (inhibitor), MAPK8 (modulator), NR1I2 (target), PRKCA (inhibitor), SERPINA7 (inducer), SHBG (inducer), SULT2A1 (substrate), UGT1A10 (substrate), VKORC1 (target).</sub>
 
 ## Coverage
 

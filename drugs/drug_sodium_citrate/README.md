@@ -58,6 +58,18 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2022](drugs/drug_sodium_citrate/pd_Liu_2022_anti_FIIa.md) | Liu YO et al., Population pharmacokinetic analysis for…, Frontiers in cardiovascular… (2022) | [10.3389/fcvm.2022.998751](https://doi.org/10.3389/fcvm.2022.998751) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Valke_2024](drugs/drug_sodium_citrate/pd_Valke_2024_unknown.md) | Valke LLFG et al., Pharmacokinetic-Pharmacodynamic Modelli…, European journal of drug me… (2024) | [10.1007/s13318-024-00876-6](https://doi.org/10.1007/s13318-024-00876-6) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=sodium_citrate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…Citrate is metabolized to bicarbonate in the liver and plays a role as an intermediate in…”</sub> | prose |
+| excretion | kidney | <sub>“…through hepatic metabolism with very little cleared by the kidneys [A19414] [A19415].…”</sub> | prose |
+| excretion | liver | <sub>“…Largely eliminated through hepatic metabolism with very little cleared by the kidneys [A19…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CA4 (inhibitor), SLC13A2 (substrate), SLC13A5 (substrate), SLC25A1 (substrate), SLC25A21 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 260 matched, 110 returned

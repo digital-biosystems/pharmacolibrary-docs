@@ -33,6 +33,27 @@ In patients requiring preventative migraine therapy, current practice guidelines
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Schlachter_2026_phase_3_modela](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_3_modela.md) | Schlachter (2026) | — |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Schlachter_2026_phase_3_modela](drugs/drug_atogepant/Atogepant_Schlachter2026_phase_3_modela.md) | Schlachter (2026) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=atogepant) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| metabolism | bile duct | <sub>“…ly,[A239069] with at least 10 other metabolites detected in feces representing &lt;10% of the…”</sub> | prose |
+| metabolism | liver | `CYP3A4` substrate, `SLC22A1` inhibitor, `SLCO1B1` inhibitor/substrate, `SLCO1B3` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…nistered dose was recovered as unchanged parent drug in the feces and 5% as unchanged pare…”</sub> | prose |
+| excretion | kidney | `SLC22A6` substrate, `SLC47A1` inhibitor | DrugBank actor |
+| excretion | liver | `SLC47A1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CALCRL (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 15 matched, 15 returned

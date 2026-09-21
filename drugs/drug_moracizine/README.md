@@ -23,6 +23,19 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=moracizine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>“…ed, absorption is complete within 2 to 3 hours. Significant first-pass metabolism results…”</sub> | prose |
+| metabolism | liver | <sub>“…Hepatic and extensive, to at least 26 metabolites, none accounting…”</sub> | prose |
+| excretion | bile duct | <sub>“…proximately 56% of the administered dose is excreted in the feces and 39% is excreted in t…”</sub> | prose |
+| excretion | kidney | <sub>“…orally administered Ethmozine® is excreted unchanged in the urine. Approximately 56% of th…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: SCN5A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned

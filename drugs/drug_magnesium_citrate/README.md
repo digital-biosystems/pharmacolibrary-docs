@@ -27,6 +27,16 @@ Magnesium citrate can be one of the forms used for the administration of dietary
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=magnesium_citrate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | bile duct | <sub>“…A33129] Magnesium citrate is also widely eliminated via the feces because, when present in…”</sub> | prose |
+| excretion | kidney | <sub>“…nistration of magnesium citrate, there is a 40% increase in urine excretion of magnesium.[…”</sub> | prose |
+| excretion | small intestine | <sub>“…in the bowel, it relaxes the bowel and pulls water into the intestine which increases bowe…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 15 matched, 11 returned

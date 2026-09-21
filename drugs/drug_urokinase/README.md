@@ -52,6 +52,17 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Yu_2017](drugs/drug_urokinase/pd_Yu_2017_uPA_activity.md) | Yu B et al., Inhibition of PAI-1 Activity by Toddalo…, Frontiers in pharmacology (2017) | [10.3389/fphar.2017.00489](https://doi.org/10.3389/fphar.2017.00489) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Yu_2017](drugs/drug_urokinase/pd_Yu_2017_uPA_mediated_lysis_of_fibrin_clots.md) | Yu B et al., Inhibition of PAI-1 Activity by Toddalo…, Frontiers in pharmacology (2017) | [10.3389/fphar.2017.00489](https://doi.org/10.3389/fphar.2017.00489) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=urokinase) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | bile duct | <sub>“…Urokinase is eliminated in the bile and urine.[L12138]…”</sub> | prose |
+| excretion | kidney | <sub>“…Urokinase is eliminated in the bile and urine.[L12138]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: LRP2 (substrate), MMP12 (substrate), NID1 (target), PLAU (modulator), PLAUR (inducer), PLAUR (modulator), PLG (activator), SERPINA5 (substrate), SERPINB2 (inducer), SERPINB2 (substrate), SERPINE1 (inducer), SERPINE1 (substrate), ST14 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 353 matched, 126 returned

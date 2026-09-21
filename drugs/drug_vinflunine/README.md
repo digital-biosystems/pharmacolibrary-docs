@@ -25,6 +25,25 @@ Having an incidence of 429,700 new cases per year worldwide, urothelial carcinom
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=vinflunine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | blood | `ALB` substrate, `ORM1` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Fecal excretion accounts for 2/3 of the total elimination of vinf…”</sub> | prose |
+| excretion | kidney | <sub>“…olites and the remaining 1/3 of their elimination indicates urinary excretion [L2381].…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ABCB5 (substrate), TUBB (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 26 matched, 25 returned

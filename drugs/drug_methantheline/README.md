@@ -23,6 +23,18 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=methantheline) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…Hepatic, by enzymatic hydrolysis.…”</sub> | prose |
+| target | blood | `ACHE` inhibitor | DrugBank actor |
+| target | neuromuscular junction | `ACHE` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (unknown), CHRM3 (unknown), CHRM4 (unknown), CHRM5 (target), HRH2 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 6 matched, 7 returned

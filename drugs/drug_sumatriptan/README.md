@@ -36,6 +36,26 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Longmore_1996](drugs/drug_sumatriptan/pd_Longmore_1996_isometric_tension.md) | Longmore J et al., 5-HT1D receptor agonists and human coro…, British journal of clinical… (1996) | [10.1046/j.1365-2125.1996.04217.x](https://doi.org/10.1046/j.1365-2125.1996.04217.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [MaassenVanDenBrink_1998](drugs/drug_sumatriptan/pd_MaassenVanDenBrink_1998_unknown.md) | MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circulation (1998) | [10.1161/01.cir.98.1.25](https://doi.org/10.1161/01.cir.98.1.25) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=sumatriptan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate, `SLCO1A2` inducer | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate, `SLCO1A2` inducer | DrugBank actor |
+| metabolism | brain | `MAOA` substrate | DrugBank actor |
+| metabolism | liver | `MAOA` substrate, `SLCO1B1` substrate | DrugBank actor |
+| metabolism | small intestine | `MAOA` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…etic acid[L6799,L6805] approximately 40% is excreted in the feces[L6811,L6793].…”</sub> | prose |
+| excretion | kidney | <sub>“…22±4% is excreted in the urine as unchanged sumatriptan and 38±7% in urine as indole aceti…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: HTR1A (target), HTR1B (target), HTR1D (target), HTR1F (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 133 matched, 56 returned

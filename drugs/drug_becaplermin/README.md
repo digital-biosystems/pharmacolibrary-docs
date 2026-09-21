@@ -40,6 +40,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Wierzbicki_2026](drugs/drug_becaplermin/pd_Wierzbicki_2026_SRB.md) | Wierzbicki PM et al., Exploratory Multi-Level Analysis of the…, International journal of mo… (2026) | [10.3390/ijms27083505](https://doi.org/10.3390/ijms27083505) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Wierzbicki_2026](drugs/drug_becaplermin/pd_Wierzbicki_2026_wound_closure.md) | Wierzbicki PM et al., Exploratory Multi-Level Analysis of the…, International journal of mo… (2026) | [10.3390/ijms27083505](https://doi.org/10.3390/ijms27083505) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=becaplermin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: A2M (modulator), PDGFRA (target), PDGFRB (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 209 matched, 92 returned

@@ -25,6 +25,20 @@ First approved by the FDA in 1991,[L11743] isosorbide mononitrate is used for th
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=isosorbide_mononitrate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…ide mononitrate is rapidly and completely absorbed from the gastrointestinal tract. Isosor…”</sub> | prose |
+| metabolism | liver | `GSTM1` substrate, `XDH` substrate | DrugBank actor |
+| metabolism | small intestine | `XDH` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…ally active. Renal excretion was complete after 5 days, and fecal excretion accounted for…”</sub> | prose |
+| excretion | kidney | <sub>“…drug study, about 93% of the total dose was excreted in the urine within 48 hours.[L11698]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADH5 (substrate), GUCY1A2 (activator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 27 matched, 26 returned

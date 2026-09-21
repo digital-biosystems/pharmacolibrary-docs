@@ -110,6 +110,25 @@ Shock is the inability to maintain blood flow to vital tissues and the potential
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=angiotensin_ii) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` transport | paper PGx gene |
+| absorption | kidney | `ABCB1` transport | paper PGx gene |
+| absorption | liver | `ABCB1` transport | paper PGx gene |
+| absorption | placenta | `ABCB1` transport | paper PGx gene |
+| absorption | small intestine | `ABCB1` transport | paper PGx gene |
+| metabolism | blood | <sub>“…otensin III] and angiotensin-(1-7), respectively in plasma, erythrocytes and many of the m…”</sub> | prose |
+| metabolism | kidney | <sub>“…erythrocytes and many of the major organs (i.e. intestine, kidney, liver and lung). Angiot…”</sub> | prose |
+| metabolism | liver | `CYP2C9` safety_allele | paper PGx gene |
+| metabolism | lung | <sub>“…many of the major organs (i.e. intestine, kidney, liver and lung). Angiotensin II type 1 r…”</sub> | prose |
+| metabolism | small intestine | <sub>“…in plasma, erythrocytes and many of the major organs (i.e. intestine, kidney, liver and lu…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: AGTR1 (target), AGTR2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 3271 matched, 233 returned

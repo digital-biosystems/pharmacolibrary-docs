@@ -28,6 +28,18 @@
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Stott_2023_reference](drugs/drug_flucytosine/Flucytosine_Stott2023_reference.md) | Stott KE et al., Population pharmacokinetics and CSF pen…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad038](https://doi.org/10.1093/jac/dkad038) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Stegman_1999_reference](drugs/drug_flucytosine/Flucytosine_Stegman1999_reference.md) | Stegman LD et al., Noninvasive quantitation of cytosine de…, Proceedings of the National… (1999) | [10.1073/pnas.96.17.9821](https://doi.org/10.1073/pnas.96.17.9821) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=flucytosine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | small intestine | <sub>“…Flucytosine is deaminated, possibly by gut bacteria or by the fungal targets, to 5-fluorou…”</sub> | prose |
+| excretion | bile duct | <sub>“…absorption. A small portion of the dose is excreted in the feces.…”</sub> | prose |
+| excretion | kidney | <sub>“…Flucytosine is excreted via the kidneys by means of glomerular filtration without signific…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), DNMT1 (other).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned

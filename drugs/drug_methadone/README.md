@@ -32,6 +32,30 @@ Methadone is also indicated for detoxification treatment of opioid addiction (he
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Foster_2004_reference](drugs/drug_methadone/Methadone_Foster2004_reference.md) | Foster DJ et al., Population pharmacokinetics of (R)-, (S…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02079.x](https://doi.org/10.1111/j.1365-2125.2004.02079.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=methadone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | stomach | <sub>“…ay reflect the pharmacological effect of opioids in slowing gastric emptying and mobility.…”</sub> | prose |
+| distribution | blood | `ALB` unknown, `ORM1` unknown | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | <sub>“…ther inactive metabolites, which are excreted mainly in the urine. Methadone first undergo…”</sub> | prose |
+| metabolism | liver | `CYP1A2` substrate, `CYP2B6` inducer/substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inducer/inhibitor/substrate, `CYP3A7` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…iated by extensive biotransformation, followed by renal and fecal excretion. Unmetabolized…”</sub> | prose |
+| excretion | kidney | <sub>“…one is mediated by extensive biotransformation, followed by renal and fecal excretion. Unm…”</sub> | prose |
+| target | adipose tissue | `CYP19A1` substrate | DrugBank actor |
+| target | ovary | `CYP19A1` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CHRNA3 (target), CHRNA4 (target), CHRNA7 (target), CHRNB2 (target), CYP2C18 (substrate), GRIN1 (target), HTR3A (target), OPRD1 (target), OPRM1 (target), UGT2B4 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 114 matched, 20 returned

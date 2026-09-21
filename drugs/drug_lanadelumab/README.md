@@ -37,6 +37,15 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2020](drugs/drug_lanadelumab/pd_Wang_2020_TTF.md) | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2020](drugs/drug_lanadelumab/pd_Wang_2020_cHMWK.md) | Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020) | [10.1111/cts.12806](https://doi.org/10.1111/cts.12806) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=lanadelumab) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: KLKB1 (inhibitor), KLKB1 (regulator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 3 matched, 3 returned

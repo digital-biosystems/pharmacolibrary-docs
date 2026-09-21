@@ -32,6 +32,22 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Barrett-Jolley_1998](drugs/drug_glipizide/pd_Barrett_Jolley_1998_unknown.md) | Barrett-Jolley R et al., Characterization of K(ATP) channels in…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0701727](https://doi.org/10.1038/sj.bjp.0701727) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=glipizide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Gastrointestinal absorption of glipizide is uniform, rapid, and essentially…”</sub> | prose |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | `CYP2C9` substrate, `UGT1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `UGT1A1` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…e initial dose of the drug can be detected in the urine and feces as unchanged glipizide.…”</sub> | prose |
+| excretion | kidney | <sub>“…10% of the initial dose of the drug can be detected in the urine and feces as unchanged gl…”</sub> | prose |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC8 (inhibitor), KCNJ10 (blocker), PPARG (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 18 matched, 18 returned

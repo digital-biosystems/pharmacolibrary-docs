@@ -26,6 +26,21 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Ruzilawati_2010_reference](drugs/drug_repaglinide/Repaglinide_Ruzilawati2010_reference.md) | Ruzilawati AB et al., Population pharmacokinetic modelling of…, Journal of clinical pharmac… (2010) | [10.1111/j.1365-2710.2009.01042.x](https://doi.org/10.1111/j.1365-2710.2009.01042.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=repaglinide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate, `SLCO1B1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…90% eliminated in feces (&lt;2% as unchanged drug), 8% in urine (0.1% as unchanged dru…”</sub> | prose |
+| excretion | kidney | <sub>“…90% eliminated in feces (&lt;2% as unchanged drug), 8% in urine (0.1% as unchanged drug)…”</sub> | prose |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC8 (inhibitor), ABCC9 (blocker), HRH1 (target), PPARG (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 292 matched, 58 returned

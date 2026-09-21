@@ -26,6 +26,27 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Byon_2019_reference](drugs/drug_apixaban/Apixaban_Byon2019_reference.md) | Byon W et al., Apixaban: A Clinical Pharmacokinetic an…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00775-z](https://doi.org/10.1007/s40262-019-00775-z) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=apixaban) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| metabolism | heart | `CYP2J2` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP2J2` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…56% of an orally administered dose is recovered in the feces and 24.5-28.8% of the dose is…”</sub> | prose |
+| excretion | kidney | <sub>“…in the feces and 24.5-28.8% of the dose is recovered in the urine[label,A177565,A6897]. 83…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: F10 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 47 matched, 20 returned

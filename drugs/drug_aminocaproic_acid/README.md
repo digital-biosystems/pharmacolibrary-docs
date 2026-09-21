@@ -26,6 +26,18 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ross_2007_reference](drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference.md) | Ross J et al., Pharmacokinetics and pharmacodynamics o…, American journal of veterin… (2007) | [10.2460/ajvr.68.9.1016](https://doi.org/10.2460/ajvr.68.9.1016) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=aminocaproic_acid) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>“…Sixty-five percent of the dose is recovered in the urine as unchanged drug and 11% of the…”</sub> | prose |
+| metabolism | liver | `AOX1` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…Renal excretion is the primary route of elimination, whether amin…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: LPA (other), PLAT (target), PLG (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 15 matched, 15 returned

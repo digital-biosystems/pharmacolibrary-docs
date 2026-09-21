@@ -31,6 +31,22 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Yin_2017](drugs/drug_tenapanor/pd_Yin_2017_NHE3.md) | Yin J et al., A common NHE3 single-nucleotide polymor…, American journal of physiol… (2017) | [10.1152/ajpgi.00044.2017](https://doi.org/10.1152/ajpgi.00044.2017) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=tenapanor) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | `SLCO2B1` inhibitor | DrugBank actor |
+| absorption | small intestine | `SLCO2B1` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…of tenapanor, 70% of the radioactivity was excreted in the feces within 120 hours of admin…”</sub> | prose |
+| excretion | kidney | <sub>“…stration. Only 9% of the administered dose was found in the urine, existing primarily as m…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: SLC9A3 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 33 matched, 33 returned

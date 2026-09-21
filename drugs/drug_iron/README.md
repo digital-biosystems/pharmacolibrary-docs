@@ -50,6 +50,15 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Rognås_2025](drugs/drug_iron/pd_Rogn_s_2025_RBC.md) | Rognås SV et al., A semi-mechanistic population pharmacok…, Journal of pharmacokinetics… (2025) | [10.1007/s10928-025-09990-7](https://doi.org/10.1007/s10928-025-09990-7) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Rognås_2025](drugs/drug_iron/pd_Rogn_s_2025_RET.md) | Rognås SV et al., A semi-mechanistic population pharmacok…, Journal of pharmacokinetics… (2025) | [10.1007/s10928-025-09990-7](https://doi.org/10.1007/s10928-025-09990-7) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=iron) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: AHSP (unknown), CP (unknown), EGLN1 (unknown), FEN1 (unknown), FTH1 (unknown), FXN (unknown), HBA1 (activator), HDAC8 (cofactor), NEIL1 (unknown), NEIL2 (unknown), POLB (unknown), TF (unknown), TFRC (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 5916 matched, 250 returned

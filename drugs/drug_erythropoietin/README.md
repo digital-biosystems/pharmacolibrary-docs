@@ -35,6 +35,16 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Gaudard_2003_reference](drugs/drug_erythropoietin/Erythropoietin_Gaudard2003_reference.md) | Gaudard A et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical drug investigation (2003) | [10.2165/00044011-200323030-00003](https://doi.org/10.2165/00044011-200323030-00003) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Jolling_2004_reference](drugs/drug_erythropoietin/Erythropoietin_Jolling2004_reference.md) | Jolling K et al., Population pharmacokinetic analysis of…, Journal of pharmaceutical s… (2004) | [10.1002/jps.20200](https://doi.org/10.1002/jps.20200) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=erythropoietin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…ly a small amount of unchanged epoetin alfa is found in the urine [F86].…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: EPOR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 258 matched, 63 returned

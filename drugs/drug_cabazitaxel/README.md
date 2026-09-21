@@ -41,6 +41,27 @@ Cabazitaxel is used to treat metastatic castration-resistant prostate cancer. It
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'nonmem' is a table statistic/structure column, not a study popula…</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_nonmem](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_nonmem.md) | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'nonmem' is a table statistic/structure column, not a study popula…</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_nonmem](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_nonmem.md) | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=cabazitaxel) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…ted within two weeks. Cabazitaxel is mainly excreted in the feces as numerous metabolites…”</sub> | prose |
+| excretion | kidney | <sub>“…the feces as numerous metabolites (76% of the dose), while renal excretion of cabazitaxel…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: GPIHBP1 (binder), LDLR (binder), TUBB1 (inhibitor), VLDLR (binder).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned

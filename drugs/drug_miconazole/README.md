@@ -28,6 +28,29 @@ Miconazole was first synthesized in 1969 and first granted FDA approval on Janua
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mikamo_1997_reference](drugs/drug_miconazole/Miconazole_Mikamo1997_reference.md) | Mikamo H et al., Pharmacokinetics of miconazole in serum…, International journal of an… (1997) | [10.1016/s0924-8579(97)00050-2](https://doi.org/10.1016/s0924-8579(97)00050-2) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=miconazole) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2A6` inhibitor, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…Miconazole is excreted through both urine and feces; less than 1% of unchanged miconazole…”</sub> | prose |
+| excretion | kidney | <sub>“…Miconazole is excreted through both urine and feces; less than 1% of unchanged miconazole…”</sub> | prose |
+| target | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
+| target | adrenal gland | `CYP11B1` inhibitor | DrugBank actor |
+| target | ovary | `CYP19A1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CACNA1C (inhibitor), CYP51A1 (inhibitor), KCND1 (inhibitor), KCNJ12 (inhibitor), KCNMA1 (inhibitor), NOS2 (inhibitor), NOS3 (inhibitor), NR1I2 (partial agonist).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 22 matched, 14 returned

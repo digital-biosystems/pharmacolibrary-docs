@@ -107,6 +107,16 @@ In combination with [antihemophilic factor human], vWF is also used to manage an
 | <span class="pk-badge pk-badge--red">rejected</span> | [Daniel_2026](drugs/drug_von_willebrand_factor/pd_Daniel_2026_FVIII_C.md) | Daniel MY et al., Modeling response to high-purity von Wi…, Blood advances (2026) | [10.1182/bloodadvances.2025017898](https://doi.org/10.1182/bloodadvances.2025017898) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Daniel_2026](drugs/drug_von_willebrand_factor/pd_Daniel_2026_VWF_Act.md) | Daniel MY et al., Modeling response to high-purity von Wi…, Blood advances (2026) | [10.1182/bloodadvances.2025017898](https://doi.org/10.1182/bloodadvances.2025017898) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=von_willebrand_factor) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | liver | <sub>“…rces of vWF are also expected to undergo elimination by the liver and spleen, which take u…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADAMTS13 (substrate), ASGR1 (target), COL1A1 (binder), F8 (carrier), F8 (stabilization), LRP1 (binder).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 419 matched, 104 returned

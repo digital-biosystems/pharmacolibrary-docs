@@ -67,6 +67,28 @@ Indicated for the long-term treatment of the above conditions.[F3202]
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Grafeneder_2024_hv_n_16](drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv_n_16.md) | Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney international reports (2024) | [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Grafeneder_2024_hv_n_16](drugs/drug_pantoprazole/Pantoprazole_Grafeneder2024_hv_n_16.md) | Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney international reports (2024) | [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=pantoprazole) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | stomach | <sub>“…ion of pantoprazole begins only after the tablet leaves the stomach.…”</sub> | prose |
+| metabolism | bile duct | <sub>“…excreted as metabolites in urine; the remainder is found in feces and originates from bili…”</sub> | prose |
+| metabolism | kidney | <sub>“…f an oral or intravenous dose is excreted as metabolites in urine; the remainder is found…”</sub> | prose |
+| metabolism | liver | `CYP2C19` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…he dose was excreted in the urine, with 18% excreted in the feces by biliary excretion. Th…”</sub> | prose |
+| excretion | kidney | `SLC22A8` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ATP4A (inhibitor), ATP4B (modulator), DDAH1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 28 matched, 15 returned

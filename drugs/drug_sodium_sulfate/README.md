@@ -49,6 +49,18 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [de-Carvalho_2022](drugs/drug_sodium_sulfate/pd_de_Carvalho_2022_IC50.md) | de-Carvalho RR et al., Evaluation of the developmental toxicit…, Journal of toxicology and e… (2022) | [10.1080/15287394.2022.2089413](https://doi.org/10.1080/15287394.2022.2089413) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [de-Carvalho_2022](drugs/drug_sodium_sulfate/pd_de_Carvalho_2022_LC50.md) | de-Carvalho RR et al., Evaluation of the developmental toxicit…, Journal of toxicology and e… (2022) | [10.1080/15287394.2022.2089413](https://doi.org/10.1080/15287394.2022.2089413) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=sodium_sulfate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | <sub>“…on in rats was investigated. 35)S-Radioactivity excreted in urine during 24 hr indicated a…”</sub> | prose |
+| absorption | small intestine | <sub>“…rine during 24 hr indicated almost complete absorption from GI tract. Determination in ser…”</sub> | prose |
+| excretion | kidney | <sub>“…Rectal effluent if unabsorbed sulfates ; urine (predominant route for absorbed sulfates )…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CA1 (inhibitor), CA2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 157 matched, 96 returned

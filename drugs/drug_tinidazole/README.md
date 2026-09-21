@@ -30,6 +30,22 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Bansal_2004](drugs/drug_tinidazole/pd_Bansal_2004_percentage_inhibition.md) | Bansal D et al., In vitro activity of antiamoebic drugs…, Annals of clinical microbio… (2004) | [10.1186/1476-0711-3-27](https://doi.org/10.1186/1476-0711-3-27) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Singh_2023](drugs/drug_tinidazole/pd_Singh_2023_percentage_inhibition_of_E_histolytica.md) | Singh A et al., Creep in nitroimidazole inhibitory conc…, Scientific reports (2023) | [10.1038/s41598-023-39382-1](https://doi.org/10.1038/s41598-023-39382-1) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=tinidazole) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…ed dose). Approximately 12% of the drug is excreted in the feces.…”</sub> | prose |
+| excretion | kidney | <sub>“…in breast milk. Tinidazole is excreted by the liver and the kidneys. Tinidazole is excrete…”</sub> | prose |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+| excretion | mammary gland | <sub>“…Tinidazole crosses the placental barrier and is secreted in breast milk. Tinidazole is exc…”</sub> | prose |
+| excretion | placenta | <sub>“…Tinidazole crosses the placental barrier and is secreted in breast milk. Tinidazole is exc…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: DNA (binder).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 39 matched, 39 returned

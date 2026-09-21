@@ -26,6 +26,17 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Lalka_1976_reference](drugs/drug_tocainide/Tocainide_Lalka1976_reference.md) | Lalka D et al., Kinetics of the oral antiarrhythmic lid…, Clinical pharmacology and t… (1976) | [10.1002/cpt1976196757](https://doi.org/10.1002/cpt1976196757) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=tocainide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` other/unknown | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: SCN5A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 96 matched, 68 returned

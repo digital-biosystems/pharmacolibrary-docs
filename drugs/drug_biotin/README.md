@@ -34,6 +34,17 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Niu_2024](drugs/drug_biotin/pd_Niu_2024_TB.md) | Niu G et al., Leucinostatins target Plasmodium mitoch…, Parasites & vectors (2024) | [10.1186/s13071-024-06608-8](https://doi.org/10.1186/s13071-024-06608-8) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Niu_2024](drugs/drug_biotin/pd_Niu_2024_unknown.md) | Niu G et al., Leucinostatins target Plasmodium mitoch…, Parasites & vectors (2024) | [10.1186/s13071-024-06608-8](https://doi.org/10.1186/s13071-024-06608-8) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=biotin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | lung | `CYP1B1` inducer | DrugBank actor |
+| metabolism | skin | `CYP1B1` inducer | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ACACA (cofactor), ACACB (cofactor), HLCS (substrate), MCCC1 (cofactor), MCCC2 (cofactor), PC (cofactor), PCCA (cofactor), PCCB (cofactor), SLC5A6 (substrate), SLC5A8 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 182 matched, 63 returned

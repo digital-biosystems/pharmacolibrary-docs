@@ -42,6 +42,15 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Rump_1994](drugs/drug_levosimendan/pd_Rump_1994_left_ventricular_pressure.md) | Rump AF et al., A quantitative comparison of functional…, British journal of pharmaco… (1994) | [10.1111/j.1476-5381.1994.tb13143.x](https://doi.org/10.1111/j.1476-5381.1994.tb13143.x) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Wanderer_2022](drugs/drug_levosimendan/pd_Wanderer_2022_unknown.md) | Wanderer S et al., Levosimendan as a therapeutic strategy…, Journal of neurointerventio… (2022) | [10.1136/neurintsurg-2021-017504](https://doi.org/10.1136/neurintsurg-2021-017504) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=levosimendan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: KCNJ11 (inducer), KCNJ8 (inducer), PDE3A (inhibitor), TNNC1 (potentiator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 36 matched, 21 returned

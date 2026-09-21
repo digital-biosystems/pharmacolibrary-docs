@@ -32,6 +32,20 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Tongluan_2017](drugs/drug_orlistat/pd_Tongluan_2017_unknown.md) | Tongluan N et al., Involvement of fatty acid synthase in d…, Virology journal (2017) | [10.1186/s12985-017-0685-9](https://doi.org/10.1186/s12985-017-0685-9) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Steketee_2021](drugs/drug_orlistat/pd_Steketee_2021_unknown.md) | Steketee PC et al., Divergent metabolism between Trypanosom…, PLoS pathogens (2021) | [10.1371/journal.ppat.1009734](https://doi.org/10.1371/journal.ppat.1009734) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=orlistat) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | `CYP3A4` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |
+| excretion | bile duct | <sub>“…olabled orlistat in both normal weight and obese volunteers fecal excretion of the unabsor…”</sub> | prose |
+| excretion | kidney | <sub>“…rug was found to be the major route of elimination with &lt;2% urinary excretion.[A229743,L32…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CNR1 (inhibitor), FASN (inhibitor), LIPF (inhibitor), PLA2G4A (inhibitor), PNLIP (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 210 matched, 55 returned

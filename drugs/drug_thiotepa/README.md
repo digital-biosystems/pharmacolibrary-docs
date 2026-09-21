@@ -28,6 +28,19 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Przepiorka_1995_adults undergoing marrow transplantation](drugs/drug_thiotepa/Thiotepa_Przepiorka1995_adults_undergoing_marrow_transplanta.md) | Przepiorka D et al., Dosing of thioTEPA for myeloablative th…, Cancer chemotherapy and pha… (1995) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [de_2004_patients receiving high-dose chemotherapy](drugs/drug_thiotepa/Thiotepa_de2004_patients_receiving_high_dose_chemotherapy.md) | de Jonge ME et al., Integrated Population Pharmacokinetic M…, Journal of pharmacokinetics… (2004) | [10.1023/b:jopa.0000034405.03895.c2](https://doi.org/10.1023/b:jopa.0000034405.03895.c2) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=thiotepa) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
+| metabolism | liver | `BCHE` inhibitor, `CYP2B6` inhibitor, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…Urinary excretion of 14C-labeled thiotepa and metabolites in a 34-y…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: DNA (cross-linking/alkylation).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 80 matched, 54 returned

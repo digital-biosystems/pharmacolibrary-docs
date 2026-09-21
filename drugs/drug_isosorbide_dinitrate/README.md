@@ -28,6 +28,17 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Doyle_1981_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Doyle1981_reference.md) | Doyle E et al., Pharmacokinetics of isosorbide dinitrat…, Journal of pharmaceutical s… (1981) | [10.1002/jps.2600701122](https://doi.org/10.1002/jps.2600701122) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Straehl_1985_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Straehl1985_reference.md) | Straehl P et al., Isosorbide dinitrate bioavailability, k…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.150](https://doi.org/10.1038/clpt.1985.150) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=isosorbide_dinitrate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>“…vailability is highly variable (10% to 90%), with extensive first-pass metabolism in the l…”</sub> | prose |
+| metabolism | liver | `CYP2E1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: NPR1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 45 matched, 34 returned

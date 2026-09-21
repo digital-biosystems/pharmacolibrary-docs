@@ -29,6 +29,14 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Saito_2023](drugs/drug_natamycin/pd_Saito_2023_unknown.md) | Saito S et al., Sensitivity of Mucor piriformis to Nata…, Plant disease (2023) | [10.1094/PDIS-04-23-0796-RE](https://doi.org/10.1094/PDIS-04-23-0796-RE) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=natamycin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…and as with other polyene antibiotics, absorption from the gastrointestinal tract is very…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 70 matched, 81 returned

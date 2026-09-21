@@ -36,6 +36,17 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Rubino_2018](drugs/drug_carmustine/pd_Rubino_2018_FACS.md) | Rubino S et al., Downregulation of Leucine-Rich Repeat-C…, Frontiers in oncology (2018) | [10.3389/fonc.2018.00142](https://doi.org/10.3389/fonc.2018.00142) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Rubino_2018](drugs/drug_carmustine/pd_Rubino_2018_MTT_signal.md) | Rubino S et al., Downregulation of Leucine-Rich Repeat-C…, Frontiers in oncology (2018) | [10.3389/fonc.2018.00142](https://doi.org/10.3389/fonc.2018.00142) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=carmustine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…Hepatic and rapid with active metabolites. Metabolites may persist…”</sub> | prose |
+| excretion | kidney | <sub>“…Approximately 60% to 70% of a total dose is excreted in the urine in 96 hours and about 10…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), GSR (allosteric modulator), RNA (cross-linking/alkylation).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 215 matched, 108 returned

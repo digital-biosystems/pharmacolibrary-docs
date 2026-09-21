@@ -30,6 +30,14 @@ There has been a case of barbexaclone abuse due to the amphetamine like properti
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Iven_1983_reference](drugs/drug_barbexaclone/Barbexaclone_Iven1983_reference.md) | Iven H et al., Pharmacokinetics of phenobarbital and p…, Naunyn-Schmiedeberg's archi… (1983) | [10.1007/BF00497022](https://doi.org/10.1007/BF00497022) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=barbexaclone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | brain | <sub>“…er 4 minutes, and propylhexedrine was seen to penetrate the blood brain barrier rapidly. B…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 1 matched, 1 returned

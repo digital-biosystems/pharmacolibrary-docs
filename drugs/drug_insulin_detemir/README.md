@@ -39,6 +39,19 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Haahr_2016](drugs/drug_insulin_detemir/pd_Haahr_2016_GIR.md) | Haahr H et al., Insulin degludec/insulin aspart in Japa…, Journal of diabetes investi… (2016) | [10.1111/jdi.12461](https://doi.org/10.1111/jdi.12461) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Heise_2014](drugs/drug_insulin_detemir/pd_Heise_2014_glucose_infusion_rate.md) | Heise T et al., Distinct Prandial and Basal Glucose-Low…, Diabetes therapy : research… (2014) | [10.1007/s13300-014-0070-2](https://doi.org/10.1007/s13300-014-0070-2) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=insulin_detemir) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | kidney | <sub>“…The liver and kidney play the major role in metabolizing insulin.[A231654]Howeve…”</sub> | prose |
+| metabolism | liver | `CYP1A2` inducer | DrugBank actor |
+| excretion | kidney | <sub>“…30 to 80% of circulating insulin is removed by the kidney.[A249935]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: IDE (substrate), IGF1R (activator), INS (modulator), INSR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 119 matched, 53 returned

@@ -49,6 +49,24 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Chapagain_2022](drugs/drug_rifabutin/pd_Chapagain_2022_bacterial_burden.md) | Chapagain M et al., Omadacycline efficacy in the hollow fib…, The Journal of antimicrobia… (2022) | [10.1093/jac/dkac068](https://doi.org/10.1093/jac/dkac068) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Chapagain_2022](drugs/drug_rifabutin/pd_Chapagain_2022_gamma_slope.md) | Chapagain M et al., Omadacycline efficacy in the hollow fib…, The Journal of antimicrobia… (2022) | [10.1093/jac/dkac068](https://doi.org/10.1093/jac/dkac068) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=rifabutin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer | DrugBank actor |
+| absorption | liver | `ABCB1` inducer | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer | DrugBank actor |
+| absorption | small intestine | `ABCB1` inducer | DrugBank actor |
+| metabolism | liver | `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inducer, `CYP2C9` inducer, `CYP3A4` inducer/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…ly as metabolites. About 30% of the dose is excreted in the feces.…”</sub> | prose |
+| excretion | kidney | <sub>“…abutin showed that 53% of the oral dose was excreted in the urine, primarily as metabolite…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: HSP90AA1 (other/unknown), HSP90B1 (other/unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 259 matched, 104 returned

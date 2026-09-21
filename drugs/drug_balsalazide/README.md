@@ -27,6 +27,17 @@ Balsalazide works by deliverying mesalazine to the large intestine to act direct
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=balsalazide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | bile duct | <sub>“…lated metabolites have been identified in plasma, urine and feces. Following single-dose a…”</sub> | prose |
+| excretion | kidney | <sub>“…ir N-acetylated metabolites have been identified in plasma, urine and feces. Following sin…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ALOX5 (inhibitor), PPARG (target), PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 29 matched, 30 returned

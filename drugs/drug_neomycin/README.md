@@ -44,6 +44,18 @@ The ophthalmic solution containing neomycin in combination with polymyxin B sulf
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Rodriguez_2024](drugs/drug_neomycin/pd_Rodriguez_2024_unknown.md) | Rodriguez I et al., Effects of, Nutrients (2024) | [10.3390/nu16162716](https://doi.org/10.3390/nu16162716) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=neomycin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Neomycin is poorly absorbed from the gastrointestinal tract. Gastrointestinal absorption o…”</sub> | prose |
+| excretion | bile duct | <sub>“…unabsorbed portion of the drug is excreted unchanged in the feces.[L11979]…”</sub> | prose |
+| excretion | kidney | <sub>“…The small absorbed fraction of neomycin is excreted by the kidney. The unabsorbed portion…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CASR (activator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 54 matched, 19 returned

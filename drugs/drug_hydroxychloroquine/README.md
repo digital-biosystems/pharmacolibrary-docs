@@ -34,6 +34,27 @@ A recent study reported a fatality in the group being treated with hydroxychloro
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: CLelim[central], Q1 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Alvarez_2022_reference](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Alvarez2022_reference.md) | Alvarez JC et al., Population Pharmacokinetics of Hydroxyc…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15020256](https://doi.org/10.3390/ph15020256) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Zahr_2021_reference](drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_reference.md) | Zahr N et al., Pharmacokinetics and pharmacodynamics o…, Therapie (2021) | [10.1016/j.therap.2021.01.056](https://doi.org/10.1016/j.therap.2021.01.056) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=hydroxychloroquine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP2C8` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…s sloughed off in skin and 24-25% is eliminated through the feces.[T671]…”</sub> | prose |
+| excretion | kidney | <sub>“…ted renally, while only 16-21% of a dose is excreted in the urine as unchanged drug.[A1830…”</sub> | prose |
+| excretion | skin | <sub>“…as unchanged drug.[A183047] 5% of a dose is sloughed off in skin and 24-25% is eliminated…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ACE2 (modulator), DNA (cross-linking/alkylation), TLR7 (target), TLR9 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 74 matched, 20 returned

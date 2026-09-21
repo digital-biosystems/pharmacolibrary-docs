@@ -33,6 +33,20 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Yang_2010](drugs/drug_sodium_fluoride/pd_Yang_2010_Vascular_tension.md) | Yang E et al., Calcium sensitization induced by sodium…, The Korean journal of physi… (2010) | [10.4196/kjpp.2010.14.1.51](https://doi.org/10.4196/kjpp.2010.14.1.51) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Discigil_2008](drugs/drug_sodium_fluoride/pd_Discigil_2008_vascular_relaxation.md) | Discigil B et al., High-frequency ultrasonic waves cause e…, Revista brasileira de cirur… (2008) | [10.1590/s0102-76382008000200007](https://doi.org/10.1590/s0102-76382008000200007) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=sodium_fluoride) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Sodium fluoride is 90% absorbed from the gastrointestinal tract, with 77% of absorption in…”</sub> | prose |
+| absorption | stomach | <sub>“…f absorption in the proximal intestine and about 25% in the stomach. The rate of absorptio…”</sub> | prose |
+| metabolism | kidney | <sub>“…low altitude, the level physical activity, hormonal status, renal function, genetic predis…”</sub> | prose |
+| excretion | bile duct | <sub>“…absorbed by the renal tubules. About 10% is excreted in the feces.[A181652]…”</sub> | prose |
+| excretion | kidney | <sub>“…Sodium fluoride is rapidly excreted, mainly in the urine. About 90% of fluoride is filtere…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ENOPH1 (inhibitor), Hydroxyapatite (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 41 matched, 24 returned

@@ -26,6 +26,18 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Reinbold_2010_reference](drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference.md) | Reinbold JB et al., Plasma pharmacokinetics of oral chlorte…, Journal of veterinary pharm… (2010) | [10.1111/j.1365-2885.2009.1116.x](https://doi.org/10.1111/j.1365-2885.2009.1116.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=chlortetracycline) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| excretion | bile duct | <sub>“…Chlortetracycline is mainly eliminated in feces [A1424]. Renal function does not appear to…”</sub> | prose |
+| excretion | kidney | <sub>“…Chlortetracycline is mainly eliminated in feces [A1424]. Renal function does not appear to…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ARF1 (inhibitor), EPHB1 (inhibitor), PADI4 (inhibitor), PNLIP (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 24 matched, 20 returned

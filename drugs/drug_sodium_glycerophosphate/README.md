@@ -23,6 +23,14 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=sodium_glycerophosphate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…Inorganic phosphate produced is eliminated in the urine [A32667]. There may be a very smal…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 6 matched, 20 returned

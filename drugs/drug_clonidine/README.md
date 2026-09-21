@@ -32,6 +32,29 @@ Additionally, clonidine is also indicated for the treatment of Attention Deficit
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Bardol_2025_reference](drugs/drug_clonidine/Clonidine_Bardol2025_reference.md) | Bardol M et al., Pharmacokinetic and Pharmacodynamic Mod…, Paediatric anaesthesia (2025) | [10.1111/pan.70050](https://doi.org/10.1111/pan.70050) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=clonidine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | small intestine | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…he urine as the unchanged drug and 20% is eliminated in the feces.[A180559,L7237]…”</sub> | prose |
+| excretion | kidney | <sub>“…Approximately 50% of a clonidine dose is excreted in the urine as the unchanged drug and 2…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), ADRA2A (target), ADRA2B (target), ADRA2C (target), AOC3 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 225 matched, 20 returned

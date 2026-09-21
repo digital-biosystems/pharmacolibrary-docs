@@ -29,6 +29,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Li_2015](drugs/drug_taspoglutide/pd_Li_2015_HbA1c.md) | Li (2015) | — |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Li_2015_2](drugs/drug_taspoglutide/pd_Li_2015_2_WT.md) | Li (2015) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=taspoglutide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: GLP1R (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned

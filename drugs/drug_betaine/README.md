@@ -32,6 +32,19 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Matthews_2002](drugs/drug_betaine/pd_Matthews_2002_HCY.md) | Matthews A et al., An indirect response model of homocyste…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01620.x](https://doi.org/10.1046/j.1365-2125.2002.01620.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Rankovic_2023](drugs/drug_betaine/pd_Rankovic_2023_unknown.md) | Rankovic A et al., Serum metabolomic analysis of the dose-…, PloS one (2023) | [10.1371/journal.pone.0280734](https://doi.org/10.1371/journal.pone.0280734) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=betaine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
+| metabolism | kidney | <sub>“…aine is catabolized mainly in the mitochondria of liver and kidney cells. The transmethyla…”</sub> | prose |
+| metabolism | liver | `BCHE` inhibitor | DrugBank actor |
+| excretion | kidney | <sub>“…low elimination rate and assuming 100% bioavailability, the renal clearance of betaine is…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: BHMT (substrate), PRODH (inhibitor), SLC6A12 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 357 matched, 121 returned

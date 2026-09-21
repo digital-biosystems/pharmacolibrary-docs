@@ -41,6 +41,15 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Kim_2019](drugs/drug_darbepoetin_alfa/pd_Kim_2019_red_blood_cell_count.md) | Kim S et al., Comparison of the Pharmacokinetic-Pharm…, BioDrugs : clinical immunot… (2019) | [10.1007/s40259-018-0323-0](https://doi.org/10.1007/s40259-018-0323-0) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Kim_2019](drugs/drug_darbepoetin_alfa/pd_Kim_2019_reticulocyte_count.md) | Kim S et al., Comparison of the Pharmacokinetic-Pharm…, BioDrugs : clinical immunot… (2019) | [10.1007/s40259-018-0323-0](https://doi.org/10.1007/s40259-018-0323-0) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=darbepoetin_alfa) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: EPOR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 24 matched, 22 returned

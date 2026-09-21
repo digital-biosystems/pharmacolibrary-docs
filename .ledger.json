@@ -1,5 +1,5 @@
 {
- "kb_mtime": 1790018193.5904684,
+ "kb_mtime": 1790020148.7243094,
  "rows": [
   {
    "abstract_only": 83,
@@ -19011,9 +19011,9 @@
    "tokens_out": 3576
   },
   {
-   "abstract_only": 82,
+   "abstract_only": 79,
    "backend": "ollama",
-   "calls": 138,
+   "calls": 258,
    "combination": null,
    "curated_models": 0,
    "drug": "lactulose",
@@ -19021,22 +19021,22 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 2108.0,
+   "elapsed_s": 1610.1,
    "eu_status": "not_centrally_authorised",
-   "grobid": 8,
+   "grobid": 10,
    "has_truth": false,
    "interactions": 0,
-   "jats": 20,
+   "jats": 31,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 70,
+   "no_pdf": 78,
    "non_oa": 0,
-   "oa": 40,
+   "oa": 42,
    "panel": "dg-A06A-2",
-   "papers": 110,
-   "pd_extracted": 0,
+   "papers": 120,
+   "pd_extracted": 1,
    "pd_gapfill": 0,
-   "pd_other": 0,
-   "pd_rejected": 6,
+   "pd_other": 1,
+   "pd_rejected": 7,
    "pd_review_models": 0,
    "pdftext": 0,
    "pgx_extracted": 0,
@@ -19049,17 +19049,19 @@
    "poppk_extracted": 0,
    "poppk_other": 0,
    "poppk_rejected": 0,
-   "relevant": 11,
+   "relevant": 12,
    "reused_cache": false,
    "review_papers": 0,
    "review_records": 0,
+   "src_pd_jats": 1,
    "supp_nonmem": 1,
-   "supp_other": 19,
-   "tokens_in": 411732,
-   "tokens_out": 8699
+   "supp_other": 22,
+   "supp_pd_other": 1,
+   "tokens_in": 717676,
+   "tokens_out": 14860
   },
   {
-   "abstract_only": 19,
+   "abstract_only": 16,
    "backend": null,
    "calls": null,
    "combination": "resolved",
@@ -19068,16 +19070,16 @@
    "drugbank_groups": [],
    "elapsed_s": null,
    "eu_status": "not_centrally_authorised",
-   "grobid": 0,
+   "grobid": 1,
    "has_truth": false,
    "interactions": 0,
-   "jats": 0,
+   "jats": 5,
    "model": null,
-   "no_pdf": 9,
+   "no_pdf": 12,
    "non_oa": 0,
    "oa": 10,
    "panel": "dg-A06A-2",
-   "papers": 19,
+   "papers": 22,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -19489,24 +19491,24 @@
    "tokens_out": null
   },
   {
-   "abstract_only": 654,
-   "calls": 1289,
+   "abstract_only": 648,
+   "calls": 1409,
    "drug": "TOTAL",
    "drugs": 16,
-   "elapsed_s": 11503.4,
-   "grobid": 37,
+   "elapsed_s": 11005.5,
+   "grobid": 40,
    "interactions": 0,
    "is_total": true,
-   "jats": 121,
-   "no_pdf": 483,
+   "jats": 137,
+   "no_pdf": 494,
    "non_oa": 17,
-   "oa": 314,
+   "oa": 316,
    "panel": "dg-A06A-2",
-   "papers": 814,
-   "pd_extracted": 70,
+   "papers": 827,
+   "pd_extracted": 71,
    "pd_gapfill": 0,
-   "pd_other": 5,
-   "pd_rejected": 66,
+   "pd_other": 6,
+   "pd_rejected": 67,
    "pd_review_models": 0,
    "pdftext": 2,
    "pgx_extracted": 0,
@@ -19519,13 +19521,13 @@
    "poppk_extracted": 1,
    "poppk_other": 0,
    "poppk_rejected": 0,
-   "relevant": 124,
+   "relevant": 125,
    "review_papers": 0,
    "review_records": 0,
    "supp_nonmem": 5,
-   "supp_other": 152,
-   "tokens_in": 3710158,
-   "tokens_out": 72169
+   "supp_other": 155,
+   "tokens_in": 4016102,
+   "tokens_out": 78330
   },
   {
    "abstract_only": 9,
@@ -64378,7 +64380,7 @@
    "tokens_out": null
   }
  ],
- "run_mtime": 1790018696.3784275,
+ "run_mtime": 1790020877.33725,
  "runs": {
   "clopidogrel": {
    "attempts": 1,
@@ -90191,6 +90193,22 @@
    "stem": "Yakatan_1978",
    "title": "Pharmacokinetic considerations in exchange transfusion in neonates",
    "year": "1978"
+  },
+  {
+   "authors": "Lin CJ; Pan CF; Ju SY; Tzeng HK; Chen SW; Syu JT; et al.",
+   "doi": "10.1016/j.jfda.2016.05.007",
+   "doi_url": "https://doi.org/10.1016/j.jfda.2016.05.007",
+   "domain": "poppk",
+   "drug": "lactulose",
+   "journal": "Journal of food and drug analysis 24(4):876\u2013880",
+   "pmid": "28911627",
+   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28911627",
+   "reason": "The study reports quantitative PK parameters (Cmax, Tmax, AUC) for lactulose in humans, but lacks derived disposition parameters like clearance (CL) or volume of distribution (V).",
+   "relevance_score": 8,
+   "slug": "lactulose",
+   "stem": "Lin_2016",
+   "title": "Assessment of the pharmacokinetics, removal rate of hemodialysis, and safety of lactulose in hemodialysis patients",
+   "year": "2016"
   },
   {
    "authors": "Dewan B; Chimata R",
@@ -159012,7 +159030,7 @@
   }
  ],
  "wanted_stamp": [
-  718,
-  1790016650.218815
+  719,
+  1790019754.1923413
  ]
 }

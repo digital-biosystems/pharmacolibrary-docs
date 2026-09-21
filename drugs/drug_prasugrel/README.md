@@ -32,6 +32,20 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kim_2023](drugs/drug_prasugrel/pd_Kim_2023_maximal_platelet_aggregation.md) | Kim MJ et al., Pharmacokinetic and Pharmacodynamic Mod…, Clinical pharmacology in dr… (2023) | [10.1002/cpdd.1172](https://doi.org/10.1002/cpdd.1172) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=prasugrel) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| metabolism | liver | `CES2` substrate, `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CES2` substrate, `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…rally administered dose is excreted in urine and 27% in the feces, as inactive metabolites…”</sub> | prose |
+| excretion | kidney | <sub>“…ximately 68% of the orally administered dose is excreted in urine and 27% in the feces, as…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: P2RY12 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 22 matched, 20 returned

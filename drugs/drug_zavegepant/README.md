@@ -29,6 +29,26 @@ Small molecule CGRP antagonists are also known as "gepants", and this category i
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Shahin_2025_reference](drugs/drug_zavegepant/Zavegepant_Shahin2025_reference.md) | Shahin MH et al., A Pharmacokinetic Study of Zavegepant N…, Clinical and translational… (2025) | [10.1111/cts.70199](https://doi.org/10.1111/cts.70199) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Comisar_2025_reference](drugs/drug_zavegepant/Zavegepant_Comisar2025_reference.md) | Comisar CM et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13257](https://doi.org/10.1002/psp4.13257) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=zavegepant) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate, `SLC10A1` substrate, `SLCO1B3` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Zavegepant is mainly excreted via the biliary/fecal route, while the renal route plays a m…”</sub> | prose |
+| excretion | kidney | `SLC47A1` substrate, `SLC47A2` unknown | DrugBank actor |
+| excretion | liver | `SLC47A1` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CALCRL (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned

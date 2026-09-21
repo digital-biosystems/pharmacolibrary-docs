@@ -34,6 +34,23 @@ Bupropion is also used off-label as a first-line treatment in patients with ADHD
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Butz_1981_beagle dogs](drugs/drug_bupropion/Bupropion_Butz1981_beagle_dogs.md) | Butz RF et al., Radioimmunoassay and pharmacokinetic pr…, The Journal of pharmacology… (1981) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=bupropion) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ORM1` target | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | <sub>“…eta-chlorobenzoic acid, which is then excreted as the major urinary metabolite. The potenc…”</sub> | prose |
+| metabolism | liver | `CYP2B6` substrate, `CYP2C9` substrate, `CYP2D6` inhibitor, `CYP2E1` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…10% of the radioactive dose were recovered in the urine and feces, respectively. However,…”</sub> | prose |
+| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
+| target | brain | `SLC6A4` inhibitor | DrugBank actor |
+| target | platelet | `SLC6A4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CHRNA3 (target), HTR3A (negative modulator), SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 135 matched, 15 returned

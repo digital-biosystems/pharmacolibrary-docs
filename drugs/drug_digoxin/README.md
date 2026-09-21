@@ -81,6 +81,25 @@ In adults with heart failure, when it is clinically possible, digoxin should be 
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=digoxin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer/inhibitor/substrate/transport, `SLCO1A2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer/inhibitor/substrate/transport | DrugBank actor |
+| absorption | liver | `ABCB1` inducer/inhibitor/substrate/transport | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer/inhibitor/substrate/transport | DrugBank actor |
+| absorption | small intestine | `ABCB1` inducer/inhibitor/substrate/transport, `SLCO1A2` substrate | DrugBank actor |
+| metabolism | kidney | <sub>“…ose is found to be metabolized in healthy subjects. Several urinary metabolites of digoxin…”</sub> | prose |
+| metabolism | liver | `SLCO1B1` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…y 25 to 28% of digoxin is eliminated outside of the kidney. Biliary excretion appears to b…”</sub> | prose |
+| excretion | kidney | <sub>“…f the dose is measured excreted as unchanged digoxin in the urine. Approximately 25 to 28%…”</sub> | prose |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ATP1A1 (inhibitor), ATP1A2 (inhibitor), ATP1A3 (inhibitor), ATP1B1 (inhibitor), ATP1B2 (inhibitor), ATP1B3 (inhibitor), CYP11A1 (inhibitor), SLC51A (substrate), SLC51B (substrate), SLCO4C1 (modulator), SLCO4C1 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 1462 matched, 158 returned

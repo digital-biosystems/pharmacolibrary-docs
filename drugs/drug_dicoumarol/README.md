@@ -30,6 +30,17 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Duhaiman_1996](drugs/drug_dicoumarol/pd_Duhaiman_1996_oxidoreductase_activity_of_camel_lens_alpha_cr.md) | Duhaiman AS, Inhibition of zeta-crystallin by Coumar…, Journal of protein chemistry (1996) | [10.1007/BF01887114](https://doi.org/10.1007/BF01887114) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Lee_2005](drugs/drug_dicoumarol/pd_Lee_2005_NQO1.md) | Lee YY et al., Human NAD(P)H:quinone oxidoreductase in…, Free radical biology & medi… (2005) | [10.1016/j.freeradbiomed.2005.03.013](https://doi.org/10.1016/j.freeradbiomed.2005.03.013) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dicoumarol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| metabolism | liver | `CYP2C9` substrate, `NQO1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CRYZ (inhibitor), VKORC1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 59 matched, 59 returned

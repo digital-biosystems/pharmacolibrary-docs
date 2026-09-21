@@ -73,6 +73,17 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Traynelis_1990](drugs/drug_glycine/pd_Traynelis_1990_NMDA_current.md) | Traynelis SF et al., Proton inhibition of N-methyl-D-asparta…, Nature (1990) | [10.1038/345347a0](https://doi.org/10.1038/345347a0) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zhu_2026](drugs/drug_glycine/pd_Zhu_2026_BIS.md) | Zhu (2026) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=glycine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Absorbed from the small intestine via an active transport mechanism.…”</sub> | prose |
+| metabolism | liver | <sub>“…Hepatic…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: AGXT (substrate), AGXT2 (product), ALAS1 (substrate), ALAS2 (substrate), AMT (substrate), BAAT (substrate), DLD (substrate), GARS1 (substrate), GATM (substrate), GCAT (substrate), GCSH (substrate), GLDC (substrate), GLRA1 (target), GLRA2 (target), GLRA3 (target), GLRB (target), GLYAT (substrate), GLYATL1 (substrate), GLYATL2 (substrate), GNMT (substrate), GPR18 (substrate), GRIN2A (target), GRIN2C (target), GRIN3B (substrate), GSS (substrate), PIPOX (product), SHMT1 (product), SHMT2 (product), SLC16A10 (inhibitor), SLC16A10 (substrate), SLC32A1 (substrate), SLC36A1 (substrate), SLC6A5 (substrate), SLC6A9 (substrate), Serine hydroxymethyltransferase (product).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 3763 matched, 222 returned

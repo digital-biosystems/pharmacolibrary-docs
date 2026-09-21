@@ -30,6 +30,16 @@ Marketed as the brand name pr
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ruan_2014_adults with type 2 diabetes](drugs/drug_insulin_lispro/InsulinLispro_Ruan2014_adults_with_type_2_diabetes.md) | Ruan Y et al., Pharmacokinetics of insulin lispro in t…, Computer methods and progra… (2014) | [10.1016/j.cmpb.2014.07.004](https://doi.org/10.1016/j.cmpb.2014.07.004) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=insulin_lispro) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP1A2` inducer | DrugBank actor |
+
+<sub>Actors without a tissue in the table: IDE (substrate), IGF1R (activator), INSR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned

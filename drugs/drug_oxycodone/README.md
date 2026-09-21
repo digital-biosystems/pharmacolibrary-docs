@@ -27,6 +27,21 @@
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Shi_2026_reference](drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md) | Shi S et al., Pharmacokinetics of intravenous oxycodo…, Frontiers in medicine (2026) | [10.3389/fmed.2026.1834903](https://doi.org/10.3389/fmed.2026.1834903) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Saari_2012_reference](drugs/drug_oxycodone/Oxycodone_Saari2012_reference.md) | Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of anaesthe… (2012) | [10.1093/bja/aer395](https://doi.org/10.1093/bja/aer395) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=oxycodone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…Oxycodone and its metabolites are eliminated in the urine.[Label] Unbound noroxycodone mak…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CACNA1B (inhibitor), OPRD1 (target), OPRK1 (target), OPRM1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 95 matched, 20 returned

@@ -123,6 +123,28 @@ Azathiprine was granted FDA approval on 20 March 1968.[L11214]
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=azathioprine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` transport | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate, `ABCG2` transport | DrugBank actor |
+| absorption | mammary gland | `ABCG2` transport | paper PGx gene |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` transport | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | blood | `BCHE` metabolism, `TPMT` safety_allele/substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` metabolism | paper PGx gene |
+| metabolism | kidney | `CYP3A5` metabolism, `CYP4F2` metabolism | paper PGx gene |
+| metabolism | liver | `BCHE` metabolism, `CYP1A2` substrate, `CYP2B6` metabolism, `CYP2C19` metabolism, `CYP2C9` safety_allele, `CYP2D6` metabolism, `CYP3A5` metabolism, `CYP4F2` metabolism, `GSTM1` metabolism/substrate, `NAT2` metabolism, `SLCO1B1` transport, `TPMT` safety_allele/substrate, `UGT1A1` safety_allele, `XDH` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A5` metabolism, `NAT2` metabolism, `UGT1A1` safety_allele, `XDH` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…Azathioprine and mercaptopurine are not detectable in urine after 8 hours.[L11214] Further…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: G6PD (safety_allele), GMPS (substrate), GSTA1 (metabolism), GSTA1 (substrate), GSTA2 (substrate), HLA-A (safety_allele), HLA-B (safety_allele), HLA-B*57:01 (safety_allele), HLA-B*58:01 (safety_allele), HLA-DQA1 (safety_allele), HLA-DRB1 (safety_allele), HPRT1 (substrate), IFNL3 (target), IMPDH1 (substrate), IMPDH2 (substrate), ITPA (substrate), ITPASE (metabolism), MTRNR1 (safety_allele), NUDT15 (safety_allele), NUDT15 (substrate), PPAT (inhibitor), PTPN2 (target), RAC1 (modulator), SLC28A3 (substrate), SLC29A2 (substrate), SLC43A3 (substrate), VKORC1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 1118 matched, 104 returned

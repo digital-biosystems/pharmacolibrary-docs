@@ -30,6 +30,27 @@ Dabigatran etexilate is also approved by the EMA to prevent VTE in adult patient
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2022_reference](drugs/drug_dabigatran_etexilate/DabigatranEtexilate_Liu2022_reference.md) | Liu YO et al., Population pharmacokinetic analysis for…, Frontiers in cardiovascular… (2022) | [10.3389/fcvm.2022.998751](https://doi.org/10.3389/fcvm.2022.998751) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dabigatran_etexilate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | bile duct | <sub>“…hich are present in only trace amounts in plasma, urine, or feces. These include a variety…”</sub> | prose |
+| metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `CES1` substrate, `CES2` substrate, `UGT1A9` substrate, `UGT2B15` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | small intestine | `CES2` substrate, `UGT2B7` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…radioactivity is recovered in urine and 86% is recovered in feces.[L34675, L34680]…”</sub> | prose |
+| excretion | kidney | <sub>“…Dabigatran is primarily eliminated in the urine. Following oral administration of radiolab…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: F2 (inhibitor), NQO2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 19 matched, 14 returned

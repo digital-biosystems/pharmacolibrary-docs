@@ -26,6 +26,17 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Gouin-Thibault_2024_reference](drugs/drug_tinzaparin/Tinzaparin_GouinThibault2024_reference.md) | Gouin-Thibault I et al., Tinzaparin, an alternative to subcutane…, Journal of thrombosis and h… (2024) | [10.1016/j.jtha.2024.07.006](https://doi.org/10.1016/j.jtha.2024.07.006) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=tinzaparin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…Sulfation and polymerization occurs in the liver.…”</sub> | prose |
+| excretion | kidney | <sub>“…Linear elimination through kidneys…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADAMTS4 (inhibitor), CXCL12 (binder), ITGA4 (inhibitor), SERPINC1 (potentiator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned

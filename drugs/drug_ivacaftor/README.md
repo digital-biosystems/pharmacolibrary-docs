@@ -37,6 +37,26 @@ When used in combination with tezacaftor and [elexacaftor] in the product Trikaf
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Truong_2025_reference](drugs/drug_ivacaftor/Ivacaftor_Truong2025_reference.md) | Truong NH et al., Elexacaftor/Tezacaftor/Ivacaftor Popula…, Clinical and translational… (2025) | [10.1111/cts.70245](https://doi.org/10.1111/cts.70245) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Vonk_2025_reference](drugs/drug_ivacaftor/Ivacaftor_Vonk2025_reference.md) | Vonk SEM et al., Real-world pharmacokinetics of elexacaf…, Journal of cystic fibrosis… (2025) | [10.1016/j.jcf.2025.03.008](https://doi.org/10.1016/j.jcf.2025.03.008) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ivacaftor) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` carrier, `ORM1` carrier | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP2C9` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…oral administration, ivacaftor is mainly eliminated in the feces after metabolic conversio…”</sub> | prose |
+| excretion | kidney | <sub>“…being 22% for M1 and 43% for M6. Ivacaftor shows negligible urinary excretion as the uncha…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CFTR (potentiator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 43 matched, 18 returned

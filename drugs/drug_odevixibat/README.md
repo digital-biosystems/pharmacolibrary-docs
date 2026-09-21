@@ -39,6 +39,23 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Carreño_2025](drugs/drug_odevixibat/pd_Carre_o_2025_C4.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Carreño_2025](drugs/drug_odevixibat/pd_Carre_o_2025_GSRS.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=odevixibat) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | ileum | `SLC10A2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| metabolism | bile duct | <sub>“…olites accounting for &gt;10% of the dose in plasma, urine, or feces.[L34798] No metabolites…”</sub> | prose |
+| metabolism | kidney | <sub>“…e of metabolites accounting for &gt;10% of the dose in plasma, urine, or feces.[L34798] No me…”</sub> | prose |
+| excretion | bile duct | <sub>“…Odevixibat is 82.9% recovered in the feces and &lt;0.002% recovered in the urine.[L34793] The…”</sub> | prose |
+| excretion | kidney | <sub>“…s 82.9% recovered in the feces and &lt;0.002% recovered in the urine.[L34793] The dose recove…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 14 matched, 12 returned

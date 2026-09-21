@@ -31,6 +31,15 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Tradtrantip_2010](drugs/drug_crofelemer/pd_Tradtrantip_2010_SCC.md) | Tradtrantip L et al., Crofelemer, an antisecretory antidiarrh…, Molecular pharmacology (2010) | [10.1124/mol.109.061051](https://doi.org/10.1124/mol.109.061051) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Tradtrantip_2010](drugs/drug_crofelemer/pd_Tradtrantip_2010_TMEM16A.md) | Tradtrantip L et al., Crofelemer, an antisecretory antidiarrh…, Molecular pharmacology (2010) | [10.1124/mol.109.061051](https://doi.org/10.1124/mol.109.061051) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=crofelemer) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ANO1 (target), CFTR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 2 matched, 3 returned

@@ -23,6 +23,16 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=bismuth_subnitrate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Bismuth subnitrate may undergo minimal gastrointestinal absorption which may be potentiate…”</sub> | prose |
+| excretion | bile duct | <sub>“…Bismuth may undergo both urinary and faecal excretion, however the exact proportion contri…”</sub> | prose |
+| excretion | kidney | <sub>“…Bismuth may undergo both urinary and faecal excretion, however the exact proportion contri…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned

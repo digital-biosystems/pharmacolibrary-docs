@@ -59,6 +59,16 @@ It was first patented in 1957[A230108] and received its initial US approval in 1
 | <span class="pk-badge pk-badge--green">extracted</span> | [Shakur-Still_2023](drugs/drug_tranexamic_acid/pd_Shakur_Still_2023_D_dimer.md) | Shakur-Still H et al., Alternative routes for tranexamic acid…, BJOG : an international jou… (2023) | [10.1111/1471-0528.17455](https://doi.org/10.1111/1471-0528.17455) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Zufferey_2025](drugs/drug_tranexamic_acid/pd_Zufferey_2025_unknown.md) | Zufferey PJ et al., Dose-effect relationship of intravenous…, BMJ open (2025) | [10.1136/bmjopen-2025-100265](https://doi.org/10.1136/bmjopen-2025-100265) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=tranexamic_acid) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…Urinary excretion is the primary means of tranexamic acid eliminati…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: PLG (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 58 matched, 28 returned

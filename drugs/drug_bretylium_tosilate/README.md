@@ -35,6 +35,15 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Sakuta_1993](drugs/drug_bretylium_tosilate/pd_Sakuta_1993_unknown.md) | Sakuta H et al., Antiarrhythmic drugs, clofilium and cib…, British journal of pharmaco… (1993) | [10.1111/j.1476-5381.1993.tb13655.x](https://doi.org/10.1111/j.1476-5381.1993.tb13655.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=bretylium_tosilate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ADRB1 (target), ATP1A1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned

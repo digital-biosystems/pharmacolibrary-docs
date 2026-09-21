@@ -98,6 +98,18 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2022](drugs/drug_phospholipids/pd_Zhang_2022_DBP.md) | Zhang X et al., Omega-3 Polyunsaturated Fatty Acids Int…, Journal of the American Hea… (2022) | [10.1161/JAHA.121.025071](https://doi.org/10.1161/JAHA.121.025071) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2022](drugs/drug_phospholipids/pd_Zhang_2022_SBP.md) | Zhang X et al., Omega-3 Polyunsaturated Fatty Acids Int…, Journal of the American Hea… (2022) | [10.1161/JAHA.121.025071](https://doi.org/10.1161/JAHA.121.025071) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=phospholipids) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | bile duct | <sub>“…oglycerides and free fatty acids—are then incorporated into bile-salt– containing micelles…”</sub> | prose |
+| absorption | small intestine | <sub>“…After ingestion, dietary lipids are hydrolyzed in the intestinal lumen. The hydrolysis pro…”</sub> | prose |
+| metabolism | liver | <sub>“…ALA, DHA and EPA are metabolized and oxidized in the liver, which is the site of biosynthe…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ALOX5 (substrate), PPARA (activator), PPARG (target), PTGS2 (substrate), SREBF1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 2300 matched, 226 returned

@@ -33,6 +33,19 @@ It was approved by the EMA in June 2019[L16965] and by the FDA in January 2025 f
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column '735' is a table statistic/structure column, not a study populatio…</sub><br><sub>route_to: `human_review`</sub> | [Główka_2008_735](drugs/drug_treosulfan/Treosulfan_Gwka2008_735.md) | Główka FK et al., Pharmacokinetics of high-dose i.v. treo…, Bone marrow transplantation (2008) | [10.1038/bmt.2008.287](https://doi.org/10.1038/bmt.2008.287) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column '735' is a table statistic/structure column, not a study populatio…</sub><br><sub>route_to: `human_review`</sub> | [Główka_2008_735](drugs/drug_treosulfan/Treosulfan_Gwka2008_735.md) | Główka FK et al., Pharmacokinetics of high-dose i.v. treo…, Bone marrow transplantation (2008) | [10.1038/bmt.2008.287](https://doi.org/10.1038/bmt.2008.287) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=treosulfan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C19` inhibitor, `CYP2C8` substrate, `CYP2D6` substrate, `CYP3A4` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| excretion | kidney | <sub>“…f administered treosulfan dose is excreted unchanged in the urine within 24 hours, and 89%…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: DNA (cross-linking/alkylation).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 20 matched, 18 returned

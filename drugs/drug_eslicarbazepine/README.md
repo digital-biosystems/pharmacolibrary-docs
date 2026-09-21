@@ -25,6 +25,17 @@
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Falcão_2012_reference](drugs/drug_eslicarbazepine/Eslicarbazepine_Falco2012_reference.md) | Falcão A et al., Pharmacokinetics, drug interactions and…, CNS drugs (2012) | [10.2165/11596290-000000000-00000](https://doi.org/10.2165/11596290-000000000-00000) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sunkaraneni_2018_2_reference](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference.md) | Sunkaraneni (2018) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=eslicarbazepine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C19` inhibitor, `CYP3A4` inducer, `UGT1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer, `UGT1A1` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: P2RX4 (unknown), SCN11A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned

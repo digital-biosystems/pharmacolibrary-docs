@@ -37,6 +37,15 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2026](drugs/drug_marstacimab/pd_Jin_2026_RO.md) | Jin M et al., Discovery and optimization of marstacim…, mAbs (2026) | [10.1080/19420862.2026.2685362](https://doi.org/10.1080/19420862.2026.2685362) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Nayak_2026](drugs/drug_marstacimab/pd_Nayak_2026_peak_thrombin.md) | Nayak S et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01695-5](https://doi.org/10.1007/s40262-026-01695-5) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=marstacimab) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: TFPI (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 10 matched, 8 returned

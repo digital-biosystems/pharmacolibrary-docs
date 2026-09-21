@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;glycerol&quot;,&quot;href&quot;:&quot;drugs/drug_glycerol/&quot;},{&quot;label&quot;:&quot;Beylot_1987 \u00b7 healthy adults and insulin-dependent diabetic patients&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia&quot;,&quot;label&quot;:&quot;Beylot_1987_healthy adults and insulin-dependent diabetic patients&quot;,&quot;href&quot;:&quot;drugs/drug_glycerol/Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia&quot;,&quot;label&quot;:&quot;Beylot_1987_healthy adults and insulin-dependent diabetic patients&quot;,&quot;href&quot;:&quot;drugs/drug_glycerol/Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # glycerol — `Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 ### Reviewer guidance
 
@@ -16,16 +16,18 @@
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-11 12:33:44.371304+00:00) predates the upstream re-run (2026-09-21 18:50:54.191859+00:00). Current validate status: `not captured`.
+
 ## Citation
 Beylot M; Martin C; Beaufrere B; Riou JP; Mornex R et al. (1987). Journal of lipid research 28
 
 ## Model component
-<dbs-pgx drug="glycerol" model-id="Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia" status="rejected" stale="false" population="healthy adults and insulin-dependent diabetic patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<dbs-pgx drug="glycerol" model-id="Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia" status="" stale="true" population="normal subjects and insulin-dependent diabetic patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
 **Parameterization:** not captured.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 _No resolved parameters._
 

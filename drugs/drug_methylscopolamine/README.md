@@ -31,6 +31,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Abe_2009](drugs/drug_methylscopolamine/pd_Abe_2009_M_AR.md) | Abe M et al., Pharmacologically relevant receptor bin…, Biological & pharmaceutical… (2009) | [10.1248/bpb.32.646](https://doi.org/10.1248/bpb.32.646) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Abe_2009](drugs/drug_methylscopolamine/pd_Abe_2009_alpha1_AR.md) | Abe M et al., Pharmacologically relevant receptor bin…, Biological & pharmaceutical… (2009) | [10.1248/bpb.32.646](https://doi.org/10.1248/bpb.32.646) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=methylscopolamine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CHRM2 (target), CHRM3 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 206 matched, 88 returned

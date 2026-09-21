@@ -39,6 +39,32 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Yagita_1988](drugs/drug_cimetidine/pd_Yagita_1988_total_acid_output.md) | Yagita M, [Effect of histamine H2-antagonists on…, Journal of UOEH (1988) | [10.7888/juoeh.10.189](https://doi.org/10.7888/juoeh.10.189) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zhou_2026](drugs/drug_cimetidine/pd_Zhou_2026_VAS.md) | Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=cimetidine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer/substrate, `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inducer/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer/substrate | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inducer/substrate, `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| distribution | liver | `SLC22A3` inhibitor/substrate | DrugBank actor |
+| distribution | placenta | `SLC22A3` inhibitor/substrate | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor/substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor, `SLC22A7` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor, `CYP3A5` inhibitor, `FMO3` substrate, `SLC22A1` inhibitor/substrate, `SLC22A7` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor, `CYP3A5` inhibitor | DrugBank actor |
+| excretion | kidney | `SLC22A2` inhibitor/substrate, `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor/substrate, `SLC47A1` inhibitor/substrate, `SLC47A2` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCB11` inhibitor, `SLC47A1` inhibitor/substrate | DrugBank actor |
+| target | adrenal gland | `CYP11B1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: FMO1 (substrate), HRH2 (target), SLC22A11 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 1048 matched, 221 returned

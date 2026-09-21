@@ -27,6 +27,14 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Comets_1998](drugs/drug_fluindione/pd_Comets_1998_INR.md) | Comets E et al., Modeling INR data to predict maintenanc…, Therapeutic drug monitoring (1998) | [10.1097/00007691-199812000-00009](https://doi.org/10.1097/00007691-199812000-00009) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=fluindione) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C9` substrate | DrugBank actor |
+
 ## Coverage
 
 - **PubMed hits:** 39 matched, 38 returned

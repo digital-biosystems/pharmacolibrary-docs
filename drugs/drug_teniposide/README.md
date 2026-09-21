@@ -27,6 +27,24 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Cheng_1999_patients with ovarian cancer](drugs/drug_teniposide/Teniposide_Cheng1999_patients_with_ovarian_cancer.md) | Cheng A et al., [A pharmacokinetic study of teniposide…, Hua xi yi ke da xue xue bao… (1999) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Holthuis_1987_cancer patients](drugs/drug_teniposide/Teniposide_Holthuis1987_cancer_patients.md) | Holthuis JJ et al., Pharmacokinetics of high-dose teniposide, Cancer treatment reports (1987) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=teniposide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCG2` substrate | DrugBank actor |
+| absorption | liver | `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | small intestine | `ABCG2` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C19` substrate, `CYP2C9` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…om 4% to 12% of a dose is excreted in urine as parent drug. Fecal excretion of radioactivi…”</sub> | prose |
+| excretion | kidney | <sub>“…From 4% to 12% of a dose is excreted in urine as parent drug. Fecal excretion of radioacti…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ABCC6 (substrate), TOP2A (inhibitor), TOP2B (modulator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 64 matched, 43 returned

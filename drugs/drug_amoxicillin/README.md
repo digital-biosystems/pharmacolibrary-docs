@@ -76,6 +76,17 @@ Amoxicillin is used in combination with [vonoprazan] and [clarithromycin] as co-
 | <span class="pk-badge pk-badge--red">rejected</span> | [Scaglione_2012](drugs/drug_amoxicillin/pd_Scaglione_2012_none.md) | Scaglione F et al., In vitro and in vivo pharmacokinetic/ph…, Journal of chemotherapy (Fl… (2012) | [10.1179/1973947812Y.0000000018](https://doi.org/10.1179/1973947812Y.0000000018) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Scaglione_2012](drugs/drug_amoxicillin/pd_Scaglione_2012_unknown.md) | Scaglione F et al., In vitro and in vivo pharmacokinetic/ph…, Journal of chemotherapy (Fl… (2012) | [10.1179/1973947812Y.0000000018](https://doi.org/10.1179/1973947812Y.0000000018) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=amoxicillin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `SLC15A1` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | `CYP2C8` inhibitor | DrugBank actor |
+| excretion | kidney | `SLC15A2` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
+
 ## Coverage
 
 - **PubMed hits:** 930 matched, 69 returned

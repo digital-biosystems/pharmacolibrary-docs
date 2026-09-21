@@ -36,6 +36,25 @@ Clarithromycin is indicated in combination with [vonoprazan] and [amoxicillin] a
 | <span class="pk-badge pk-badge--red">rejected</span> | [Singh_2025](drugs/drug_clarithromycin/pd_Singh_2025_relative_light_units.md) | Singh S et al., Repurposing drugs to advance the treatm…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00029-25](https://doi.org/10.1128/aac.00029-25) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2023](drugs/drug_clarithromycin/pd_Zhang_2023_Microcystis_aeruginosa_growth_inhibition.md) | Zhang Q et al., The influence of pH and dissolved organ…, The Science of the total en… (2023) | [10.1016/j.scitotenv.2023.166781](https://doi.org/10.1016/j.scitotenv.2023.166781) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=clarithromycin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor/substrate, `SLC22A7` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `SLC22A7` inhibitor, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | <sub>“…12 hours, approximately 20% of the dose is excreted in the urine as clarithromycin, while…”</sub> | prose |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: KCNH2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 714 matched, 75 returned

@@ -32,6 +32,16 @@ Milrinone was originally synthesized at the Sterling Winthrop Research Institute
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [OHanlon_2024_units](drugs/drug_milrinone/Milrinone_OHanlon2024_units.md) | OHanlon (2024) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [OHanlon_2024_units](drugs/drug_milrinone/Milrinone_OHanlon2024_units.md) | OHanlon (2024) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=milrinone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…Milrinone is primarily excreted in the urine, with 60% of a dose recovered after two hours…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: PDE3A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 96 matched, 20 returned

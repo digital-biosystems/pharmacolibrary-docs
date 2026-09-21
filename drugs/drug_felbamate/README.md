@@ -27,6 +27,17 @@
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Graves_1989_reference](drugs/drug_felbamate/Felbamate_Graves1989_reference.md) | Graves NM et al., Pharmacokinetics of felbamate, a novel…, Pharmacotherapy (1989) | [10.1002/j.1875-9114.1989.tb04151.x](https://doi.org/10.1002/j.1875-9114.1989.tb04151.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kelley_1997_reference](drugs/drug_felbamate/Felbamate_Kelley1997_reference.md) | Kelley MT et al., Population pharmacokinetics of felbamat…, Therapeutic drug monitoring (1997) | [10.1097/00007691-199702000-00005](https://doi.org/10.1097/00007691-199702000-00005) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=felbamate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2E1` substrate, `CYP3A4` inducer/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: GRIN2A (target), GRIN2B (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 49 matched, 49 returned

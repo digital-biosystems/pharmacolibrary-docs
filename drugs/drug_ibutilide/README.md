@@ -30,6 +30,19 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [McBride_2009](drugs/drug_ibutilide/pd_McBride_2009_IKr_block.md) | McBride (2009) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Tisdale_2012](drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md) | Tisdale JE et al., Enhanced sensitivity to drug-induced QT…, Journal of clinical pharmac… (2012) | [10.1177/0091270011416939](https://doi.org/10.1177/0091270011416939) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ibutilide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>“…olites of ibutilide were detected in metabolic profiling of urine. These metabolites are t…”</sub> | prose |
+| metabolism | liver | <sub>“…Primarily hepatic. Eight metabolites of ibutilide were detected in metabolic…”</sub> | prose |
+| excretion | bile duct | <sub>“…utilide) and the remainder (about 19%) was recovered in the feces.…”</sub> | prose |
+| excretion | kidney | <sub>“…mg/kg dose of [14C] ibutilide fumarate was excreted in the urine (about 7% of the dose as…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CACNA1C (activator), CACNA2D1 (activator), CACNB1 (activator), CACNG1 (activator), KCNH2 (inhibitor), KCNH6 (inhibitor), KCNH7 (inhibitor), KCNJ11 (inhibitor), KCNK1 (inhibitor), KCNK6 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 31 matched, 31 returned

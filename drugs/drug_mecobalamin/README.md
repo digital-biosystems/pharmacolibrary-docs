@@ -24,6 +24,15 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Mezcord_2026](drugs/drug_mecobalamin/pd_Mezcord_2026_bacterial_viable_count.md) | Mezcord V et al., Vitamin B12 promotes cefiderocol resist…, mBio (2026) | [10.1128/mbio.03760-25](https://doi.org/10.1128/mbio.03760-25) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Mezcord_2026](drugs/drug_mecobalamin/pd_Mezcord_2026_cefiderocol_MIC.md) | Mezcord V et al., Vitamin B12 promotes cefiderocol resist…, mBio (2026) | [10.1128/mbio.03760-25](https://doi.org/10.1128/mbio.03760-25) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=mecobalamin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: MTR (cofactor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 55 matched, 35 returned

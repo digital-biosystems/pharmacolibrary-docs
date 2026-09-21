@@ -32,6 +32,18 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2017](drugs/drug_mitiglinide/pd_Liu_2017_glucose.md) | Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & toxicolo… (2017) | [10.1186/s40360-017-0161-6](https://doi.org/10.1186/s40360-017-0161-6) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=mitiglinide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `UGT1A3` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | small intestine | `UGT2B7` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC8 (inhibitor), KCNJ10 (blocker), PPARG (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 3 matched, 3 returned

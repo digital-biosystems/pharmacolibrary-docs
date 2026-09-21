@@ -32,6 +32,15 @@ Dextran as well presents ophthalmic applications as solutions or ointments for t
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Schwarz_1981_reference](drugs/drug_dextran/Dextran_Schwarz1981_reference.md) | Schwarz JA et al., Pharmacokinetics of low molecular (mono…, International journal of cl… (1981) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dextran) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…of dextran such as dextran 60 are highly metabolized in the liver until formation of lower…”</sub> | prose |
+| excretion | kidney | <sub>“…an 1, it is reported to be mainly secreted unchanged in the urine in a ratio of 80% of the…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 240 matched, 60 returned

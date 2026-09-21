@@ -55,6 +55,24 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Foti_2016](drugs/drug_clotrimazole/pd_Foti_2016_unknown.md) | Foti RS et al., Comparison of the ligand binding site o…, Journal of enzyme inhibitio… (2016) | [10.1080/14756366.2016.1193734](https://doi.org/10.1080/14756366.2016.1193734) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ishii_1997](drugs/drug_clotrimazole/pd_Ishii_1997_unknown.md) | Ishii TM et al., A human intermediate conductance calciu…, Proceedings of the National… (1997) | [10.1073/pnas.94.21.11651](https://doi.org/10.1073/pnas.94.21.11651) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=clotrimazole) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer/inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer/inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inducer/inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer/inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inducer/inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2A6` inhibitor, `CYP2B6` inducer/inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A7` inducer, `SLCO1B1` inhibitor/substrate, `SLCO1B3` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCB11` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CXCR2 (modulator), HCAR2 (partial agonist), KCNN4 (inhibitor), NR1I2 (activator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 336 matched, 147 returned

@@ -35,6 +35,25 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Herington_2015](drugs/drug_dipyridamole/pd_Herington_2015_Ca2_mobilization.md) | Herington JL et al., High-Throughput Screening of Myometrial…, PloS one (2015) | [10.1371/journal.pone.0143243](https://doi.org/10.1371/journal.pone.0143243) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Herington_2015](drugs/drug_dipyridamole/pd_Herington_2015_uterine_contractility.md) | Herington JL et al., High-Throughput Screening of Myometrial…, PloS one (2015) | [10.1371/journal.pone.0143243](https://doi.org/10.1371/journal.pone.0143243) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dipyridamole) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate, `SLCO2B1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `SLCO2B1` inhibitor | DrugBank actor |
+| distribution | blood | `ORM1` binder | DrugBank actor |
+| metabolism | liver | `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…iver to the glucuronic acid conjugate and excreted with the bile.…”</sub> | prose |
+| excretion | kidney | `ABCC4` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB11` substrate, `ABCC4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC5 (inhibitor), ADA (inhibitor), PDE10A (inhibitor), PDE4A (inhibitor), PDE5A (inhibitor), RCAN1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 132 matched, 57 returned

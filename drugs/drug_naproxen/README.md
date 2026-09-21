@@ -26,6 +26,27 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Björnsson_2011_reference](drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference.md) | Björnsson MA et al., Modelling of pain intensity and informa…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03924.x](https://doi.org/10.1111/j.1365-2125.2011.03924.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=naproxen) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `UGT1A3` substrate, `UGT1A6` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | small intestine | `UGT1A6` substrate, `UGT2B7` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…][L6582][L6583] Less than 5% of naproxen is excreted in the feces.[L6582][L6583]…”</sub> | prose |
+| excretion | kidney | `SLC22A6` inhibitor, `SLC22A8` unknown | DrugBank actor |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: PNLIP (inhibitor), PTGS1 (inhibitor), PTGS2 (inhibitor), UGT1A10 (substrate), UGT1A7 (substrate), UGT1A8 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 65 matched, 40 returned

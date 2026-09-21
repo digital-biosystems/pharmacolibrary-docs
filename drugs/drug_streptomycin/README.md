@@ -35,6 +35,18 @@ _Enterococcus faecalis_ in urinary tract infections, _Streptococcus viridans_, _
 | <span class="pk-badge pk-badge--green">extracted</span> | [Regoes_2004](drugs/drug_streptomycin/pd_Regoes_2004_unknown.md) | Regoes RR et al., Pharmacodynamic functions: a multiparam…, Antimicrobial agents and ch… (2004) | [10.1128/AAC.48.10.3670-3676.2004](https://doi.org/10.1128/AAC.48.10.3670-3676.2004) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Harding_2022](drugs/drug_streptomycin/pd_Harding_2022_minimum_biocide_eradication_concentration.md) | Harding MW et al., Bactericidal Efficacy of Oxidized Silve…, The plant pathology journal (2022) | [10.5423/PPJ.OA.04.2022.0055](https://doi.org/10.5423/PPJ.OA.04.2022.0055) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=streptomycin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skeletal muscle | <sub>“…administered parenterally. Streptomycin is available as an intramuscular injection, and in…”</sub> | prose |
+| excretion | kidney | <sub>“…Approximately 50% of streptomycin is eliminated in the urine within 24 hours after intrave…”</sub> | prose |
+| excretion | skeletal muscle | <sub>“…liminated in the urine within 24 hours after intravenous or intramuscular administration.[…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: PADI4 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 42 matched, 20 returned

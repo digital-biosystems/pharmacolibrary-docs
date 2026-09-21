@@ -26,6 +26,22 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Cuffari_2016_reference](drugs/drug_mesalazine/Mesalazine_Cuffari2016_reference.md) | Cuffari C et al., Randomized clinical trial: pharmacokine…, Drug design, development an… (2016) | [10.2147/DDDT.S95316](https://doi.org/10.2147/DDDT.S95316) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=mesalazine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | `SLCO2B1` substrate | DrugBank actor |
+| absorption | small intestine | `SLCO2B1` substrate | DrugBank actor |
+| metabolism | blood | `NAT1` substrate | DrugBank actor |
+| metabolism | liver | `NAT1` substrate, `SLCO1B1` substrate, `SLCO1B3` substrate | DrugBank actor |
+| metabolism | small intestine | <sub>“…Mesalazine is metabolized both pre-systemically by the intestinal mucosa and systemically…”</sub> | prose |
+| excretion | bile duct | <sub>“…mulation, about 130 mg free mesalazine was recovered in the feces following a single 1-g d…”</sub> | prose |
+| excretion | kidney | <sub>“…Elimination of mesalazine is mainly via the renal route following metabolism to N-acetyl-5…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ALOX5 (inhibitor), CHUK (inhibitor), IKBKB (inhibitor), NOS2 (inhibitor), PPARG (target), PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned

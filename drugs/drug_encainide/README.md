@@ -29,6 +29,19 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Li_2023](drugs/drug_encainide/pd_Li_2023_Kv.md) | Li H et al., Encainide, a class Ic anti-arrhythmic a…, The Korean journal of physi… (2023) | [10.4196/kjpp.2023.27.4.399](https://doi.org/10.4196/kjpp.2023.27.4.399) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=encainide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…is excreted in approximately equal amounts in the urine and feces.…”</sub> | prose |
+| excretion | kidney | <sub>“…encainide is excreted in approximately equal amounts in the urine and feces.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: SCN5A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 85 matched, 90 returned

@@ -45,6 +45,22 @@ For the treatment of HER2-positive, trastuzumab-resistant, advanced breast cance
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Pétain_2019_oral_vinorelbine_n_222](drugs/drug_vinorelbine/Vinorelbine_Ptain2019_oral_vinorelbine_n_222.md) | Pétain A et al., Effect of ethnicity on vinorelbine phar…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-019-03872-9](https://doi.org/10.1007/s00280-019-03872-9) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Pétain_2019_oral_vinorelbine_n_222](drugs/drug_vinorelbine/Vinorelbine_Ptain2019_oral_vinorelbine_n_222.md) | Pétain A et al., Effect of ethnicity on vinorelbine phar…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-019-03872-9](https://doi.org/10.1007/s00280-019-03872-9) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=vinorelbine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | <sub>“…inorelbine have been identified in human blood, plasma, and urine; vinorelbine N-oxide and…”</sub> | prose |
+| metabolism | liver | `CYP2D6` inhibitor, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…atic elimination in humans, with large amounts recovered in feces after intravenous admini…”</sub> | prose |
+| excretion | kidney | <sub>“…eces after intravenous administration to humans [L1998]. Urinary excretion of unchanged dr…”</sub> | prose |
+| excretion | liver | <sub>“…Vinorelbine undergoes substantial hepatic elimination in humans, with large amounts recove…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: BCL2 (downregulator), MAP4 (modulator), MAPK1 (activator), TUBB (inhibitor), TUBB (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 122 matched, 56 returned

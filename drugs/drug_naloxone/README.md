@@ -41,6 +41,25 @@ Naloxone has been used off-label for the treatment of neuraxial opioid-induced p
 | <span class="pk-badge pk-badge--green">extracted</span> | [Yang_2024](drugs/drug_naloxone/pd_Yang_2024_ventilation.md) | Yang TE et al., Mechanistic pharmacokinetic-pharmacodyn…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13215](https://doi.org/10.1002/psp4.13215) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Mu_2024](drugs/drug_naloxone/pd_Mu_2024_unknown.md) | Mu RJ et al., PBPK-PD model for predicting morphine p…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01255-2](https://doi.org/10.1038/s41401-024-01255-2) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=naloxone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | skeletal muscle | <sub>“…5 hours, and an AUC of 16.7-19.0 h\*ng/mL.[L33694] A 0.4 mg intramuscular dose reaches a C…”</sub> | prose |
+| absorption | small intestine | `ABCB1` substrate, `SLCO1A2` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | `CES1` binder, `CYP2C19` substrate, `CYP3A4` inhibitor/substrate, `UGT1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `UGT1A1` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…venous administration, naloxone is 25-40% eliminated in the urine within 6 hours, 50% in 2…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CYP2C18 (substrate), ESR1 (target), OPRD1 (target), OPRK1 (target), OPRM1 (target), TLR4 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 432 matched, 61 returned

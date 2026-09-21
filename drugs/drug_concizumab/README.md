@@ -37,6 +37,15 @@ Concizumab-mtci (Alhemo) was approved by the FDA in December 2024 for use in pat
 | <span class="pk-badge pk-badge--green">extracted</span> | [Eichler_2019](drugs/drug_concizumab/pd_Eichler_2019_free_TFPI.md) | Eichler H et al., Concizumab restores thrombin generation…, Haemophilia : the official… (2019) | [10.1111/hae.13627](https://doi.org/10.1111/hae.13627) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Eichler_2019](drugs/drug_concizumab/pd_Eichler_2019_peak_TG.md) | Eichler H et al., Concizumab restores thrombin generation…, Haemophilia : the official… (2019) | [10.1111/hae.13627](https://doi.org/10.1111/hae.13627) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=concizumab) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: TFPI (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned

@@ -34,6 +34,14 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Ding_2020](drugs/drug_buformin/pd_Ding_2020_invaded_cells.md) | Ding Y et al., Buformin suppresses osteosarcoma via ta…, Open life sciences (2020) | [10.1515/biol-2020-0041](https://doi.org/10.1515/biol-2020-0041) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Ding_2020](drugs/drug_buformin/pd_Ding_2020_lactate.md) | Ding Y et al., Buformin suppresses osteosarcoma via ta…, Open life sciences (2020) | [10.1515/biol-2020-0041](https://doi.org/10.1515/biol-2020-0041) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=buformin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `SLC22A1` substrate | DrugBank actor |
+
 ## Coverage
 
 - **PubMed hits:** 17 matched, 17 returned

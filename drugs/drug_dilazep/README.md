@@ -23,6 +23,15 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Lee_1988](drugs/drug_dilazep/pd_Lee_1988_uridine_transport.md) | Lee (1988) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dilazep) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `SLC29A1` inhibitor | DrugBank actor |
+| distribution | liver | `SLC29A1` inhibitor | DrugBank actor |
+
 ## Coverage
 
 - **PubMed hits:** 70 matched, 57 returned

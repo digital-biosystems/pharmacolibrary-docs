@@ -39,6 +39,17 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Huang_2026](drugs/drug_dezocine/pd_Huang_2026_volume.md) | Huang L et al., Dezocine alleviates cancer-induced bone…, Molecular pain (2026) | [10.1177/17448069261460286](https://doi.org/10.1177/17448069261460286) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Huang_2026](drugs/drug_dezocine/pd_Huang_2026_von_Frey.md) | Huang L et al., Dezocine alleviates cancer-induced bone…, Molecular pain (2026) | [10.1177/17448069261460286](https://doi.org/10.1177/17448069261460286) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dezocine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skeletal muscle | <sub>“…Rapid and complete following intramuscular administration.…”</sub> | prose |
+| metabolism | liver | <sub>“…Hepatic, via conjugation (glucuronidation).…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: OPRK1 (target), OPRM1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned

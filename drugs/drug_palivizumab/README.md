@@ -45,6 +45,15 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Wang_2016](drugs/drug_palivizumab/pd_Wang_2016_TNF_alpha.md) | Wang RE et al., Rational design of a Kv1.3 channel-bloc…, Proceedings of the National… (2016) | [10.1073/pnas.1612803113](https://doi.org/10.1073/pnas.1612803113) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Wang_2016](drugs/drug_palivizumab/pd_Wang_2016_proliferation.md) | Wang RE et al., Rational design of a Kv1.3 channel-bloc…, Proceedings of the National… (2016) | [10.1073/pnas.1612803113](https://doi.org/10.1073/pnas.1612803113) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=palivizumab) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: C1QA (activator), C1QB (activator), C1QC (activator), C1R (activator), FCGR1A (binder), FCGR2B (binder), FCGR3A (binder), FCGR3B (binder).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 49 matched, 33 returned

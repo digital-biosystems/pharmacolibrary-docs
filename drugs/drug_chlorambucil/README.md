@@ -26,6 +26,22 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Al-Nadaf_2022_cats with indolent lymphoproliferative malignancies](drugs/drug_chlorambucil/Chlorambucil_AlNadaf2022_cats_with_indolent_lymphoproliferat.md) | Al-Nadaf S et al., Population pharmacokinetics identifies…, American journal of veterin… (2022) | [10.2460/ajvr.22.06.0099](https://doi.org/10.2460/ajvr.22.06.0099) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=chlorambucil) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `SLCO1A2` unknown | DrugBank actor |
+| absorption | small intestine | `SLCO1A2` unknown | DrugBank actor |
+| metabolism | liver | `GSTP1` substrate | DrugBank actor |
+| metabolism | lung | `GSTP1` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…t it is almost completely metabolized, having extremely low urinary excretion.…”</sub> | prose |
+| excretion | liver | <sub>“…Chlorambucil is extensively metabolized in the liver primarily to phenylacetic acid mustar…”</sub> | prose |
+| excretion | small intestine | <sub>“…inetic data suggests that oral chlorambucil undergoes rapid gastrointestinal absorption an…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), GSTA1 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 31 matched, 31 returned

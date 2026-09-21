@@ -34,6 +34,16 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Shen_2019](drugs/drug_beraprost/pd_Shen_2019_cell_proliferation_inhibition.md) | Shen L et al., Pharmacology of the single isomer, esub…, Biochemical pharmacology (2019) | [10.1016/j.bcp.2019.05.026](https://doi.org/10.1016/j.bcp.2019.05.026) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Shen_2019](drugs/drug_beraprost/pd_Shen_2019_vascular_relaxation.md) | Shen L et al., Pharmacology of the single isomer, esub…, Biochemical pharmacology (2019) | [10.1016/j.bcp.2019.05.026](https://doi.org/10.1016/j.bcp.2019.05.026) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=beraprost) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C8` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: PTGIR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 655659 matched, 49 returned

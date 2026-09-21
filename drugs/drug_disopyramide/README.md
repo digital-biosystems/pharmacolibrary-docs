@@ -50,6 +50,19 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Luo_2017_2](drugs/drug_disopyramide/pd_Luo_2017_2_VW.md) | Luo (2017) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Whiting_1980](drugs/drug_disopyramide/pd_Whiting_1980_QT.md) | Whiting B et al., Quantitative analysis of the disopyrami…, British journal of clinical… (1980) | [10.1111/j.1365-2125.1980.tb04799.x](https://doi.org/10.1111/j.1365-2125.1980.tb04799.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=disopyramide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ORM1` other/unknown, `ORM2` binder | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP3A4` substrate, `SLC22A1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target), KCND2 (inhibitor), KCND3 (inhibitor), KCNH2 (inhibitor), SCN5A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 27 matched, 20 returned

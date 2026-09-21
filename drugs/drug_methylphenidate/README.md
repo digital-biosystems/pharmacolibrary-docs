@@ -28,6 +28,19 @@ While its exact mechanism is unclear, methylphenidate (MPH) has been shown to ac
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Teuscher_2015_reference](drugs/drug_methylphenidate/Methylphenidate_Teuscher2015_reference.md) | Teuscher NS et al., Population pharmacokinetics of methylph…, Drug design, development an… (2015) | [10.2147/DDDT.S83234](https://doi.org/10.2147/DDDT.S83234) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=methylphenidate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>“…following oral administration; however, owing to extensive first-pass metabolism, bioavail…”</sub> | prose |
+| absorption | stomach | <sub>“…e drug overcoat. Within an aqueous environment, such as the stomach, the drug overcoat, wh…”</sub> | prose |
+| excretion | bile duct | <sub>“…%-97% of the dose is excreted in the urine and 1%-3% in the feces in the form of metabolit…”</sub> | prose |
+| excretion | kidney | <sub>“…of methylphenidate, 78%-97% of the dose is excreted in the urine and 1%-3% in the feces in…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CES1A1a (substrate), HTR1A (target), SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 56 matched, 20 returned

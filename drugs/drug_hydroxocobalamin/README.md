@@ -27,6 +27,21 @@
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [de_1994_reference](drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md) | de La Coussaye JE et al., Pharmacokinetics of hydroxocobalamin in…, Journal of neurosurgical an… (1994) | [10.1097/00008506-199404000-00006](https://doi.org/10.1097/00008506-199404000-00006) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Houeto_1996_reference](drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference.md) | Houeto P et al., Pharmacokinetics of hydroxocobalamin in…, Journal of toxicology. Clin… (1996) | [10.3109/15563659609013809](https://doi.org/10.3109/15563659609013809) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=hydroxocobalamin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Readily absorbed from the gastrointestinal tract, except in malabsorption syndromes. Vitam…”</sub> | prose |
+| metabolism | bile duct | <sub>“…uously undergo enterohepatic recycling via secretion in the bile. Part of a dose is excret…”</sub> | prose |
+| metabolism | kidney | <sub>“…ia secretion in the bile. Part of a dose is excreted in the urine, most of it in the first…”</sub> | prose |
+| metabolism | liver | <sub>“…Primarily hepatic. Cobalamins are absorbed in the ileum and stored in the liv…”</sub> | prose |
+| metabolism | small intestine | <sub>“…Primarily hepatic. Cobalamins are absorbed in the ileum and stored in the liver. They cont…”</sub> | prose |
+| excretion | kidney | <sub>“…ion, to form cyanocobalamin, which is then excreted in the urine.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: AMN (other), CUBN (other), MMAA (other/unknown), MMACHC (other/unknown), MMUT (cofactor), MTR (cofactor), TCN1 (other), TCN2 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 41 matched, 35 returned

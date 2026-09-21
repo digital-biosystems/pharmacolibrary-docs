@@ -29,6 +29,27 @@ Hydrocortisone was granted FDA approval on 5 August 1952.[L10574]
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Hamitouche_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Hamitouche2017_reference.md) | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Werumeus_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md) | Werumeus Buning J et al., Pharmacokinetics of oral hydrocortisone…, Metabolism: clinical and ex… (2017) | [10.1016/j.metabol.2017.02.005](https://doi.org/10.1016/j.metabol.2017.02.005) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=hydrocortisone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer/substrate, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inducer/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inducer/substrate, `SLCO1A2` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2A6` inducer, `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inducer, `CYP2C9` inducer, `CYP3A4` inducer/substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
+| metabolism | lung | `CYP1B1` inducer | DrugBank actor |
+| metabolism | skin | `CYP1B1` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | kidney | `SLC22A8` substrate | DrugBank actor |
+| target | adrenal gland | `CYP11B1` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: AKR1D1 (substrate), ANXA1 (target), CYP11B2 (substrate), HSD11B1 (substrate), HSD11B2 (substrate), NR3C1 (target), SERPINA6 (binder), SHBG (binder), SRD5A2 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 102 matched, 19 returned

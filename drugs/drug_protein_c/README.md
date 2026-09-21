@@ -48,6 +48,15 @@ Along with other blood coagulation factors, it is used to reverse acquired coagu
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'standard error' is a table statistic/structure column, not a stud…</sub><br><sub>route_to: `human_review`</sub> | [Li_2025_2_standard_error](drugs/drug_protein_c/ProteinC_Li2025v2_standard_error.md) | Li (2025) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Macias_2002_reference](drugs/drug_protein_c/ProteinC_Macias2002_reference.md) | Macias WL et al., Pharmacokinetic-pharmacodynamic analysi…, Clinical pharmacology and t… (2002) | [10.1067/mcp.2002.128148](https://doi.org/10.1067/mcp.2002.128148) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=protein_c) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: F5 (inactivator), F8 (inactivator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 143 matched, 62 returned

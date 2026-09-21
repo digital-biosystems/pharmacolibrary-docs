@@ -53,6 +53,18 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Murthy_2023](drugs/drug_nicotinamide/pd_Murthy_2023_unknown.md) | Murthy S et al., [1,2,4]Triazolo[3,4-b]benzothiazole Sca…, Journal of medicinal chemis… (2023) | [10.1021/acs.jmedchem.2c01460](https://doi.org/10.1021/acs.jmedchem.2c01460) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Wurm_2023](drugs/drug_nicotinamide/pd_Wurm_2023_K_V_7_2_3_opening_activity.md) | Wurm KW et al., Replacing the oxidation-sensitive triam…, Archiv der Pharmazie (2023) | [10.1002/ardp.202200473](https://doi.org/10.1002/ardp.202200473) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=nicotinamide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2D6` inhibitor, `CYP2E1` inhibitor/substrate, `CYP3A4` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: BST1 (product), LDHA (unknown), PARP1 (binder), SIRT5 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 1324 matched, 207 returned

@@ -23,6 +23,16 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ethotoin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…Hepatic. The drug exhibits saturable metabolism with respect to the…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: NR1I2 (activator), SCN5A (inhibitor), SERPINA7 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 8 matched, 9 returned

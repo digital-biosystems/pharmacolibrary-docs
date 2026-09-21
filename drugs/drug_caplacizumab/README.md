@@ -39,6 +39,16 @@ Previously, capacizumab was under review for the prevention of thrombosis in hig
 | <span class="pk-badge pk-badge--green">extracted</span> | [Bergstrand_2022](drugs/drug_caplacizumab/pd_Bergstrand_2022_von_Willebrand_factor_antigen.md) | Bergstrand M et al., Caplacizumab Model-Based Dosing Recomme…, Journal of clinical pharmac… (2022) | [10.1002/jcph.1991](https://doi.org/10.1002/jcph.1991) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Fan_2025](drugs/drug_caplacizumab/pd_Fan_2025_unknown.md) | Fan X et al., Pharmacokinetic-pharmacodynamic modelin…, Microbiology spectrum (2025) | [10.1128/spectrum.00805-25](https://doi.org/10.1128/spectrum.00805-25) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=caplacizumab) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…get disposition driven by the combination of catabolism and renal elimination.[F3457]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: VWF (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 31 matched, 27 returned

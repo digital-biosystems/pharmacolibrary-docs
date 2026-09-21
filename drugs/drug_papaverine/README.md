@@ -35,6 +35,15 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Rehman_2022_2](drugs/drug_papaverine/pd_Rehman_2022_2_inhibition_of_high_K_induced_contraction.md) | Rehman (2022) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Rehman_2022_2](drugs/drug_papaverine/pd_Rehman_2022_2_percent_inhibition_of_diarrhea.md) | Rehman (2022) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=papaverine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: PDE10A (inhibitor), PDE4B (inhibitor), PDE4D (inhibitor), PDE5A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 114 matched, 28 returned

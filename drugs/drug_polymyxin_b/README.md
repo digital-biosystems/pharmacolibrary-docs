@@ -38,6 +38,17 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Mahadevan_2026](drugs/drug_polymyxin_b/pd_Mahadevan_2026_bacterial_load.md) | Mahadevan R et al., A mechanism-based pharmacokinetic/pharm…, Antimicrobial agents and ch… (2026) | [10.1128/aac.00782-25](https://doi.org/10.1128/aac.00782-25) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Soeorg_2026](drugs/drug_polymyxin_b/pd_Soeorg_2026_bacterial_count.md) | Soeorg H et al., Pharmacokinetic-pharmacodynamic modelin…, Antimicrobial agents and ch… (2026) | [10.1128/aac.00274-26](https://doi.org/10.1128/aac.00274-26) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=polymyxin_b) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | bile duct | <sub>“…en metabolised[A176432]. Polymyxin B has also been found in bile, not having undergone met…”</sub> | prose |
+| metabolism | kidney | <sub>“…In one study, &lt;1% of polymyxin B was eliminated through the kidneys and it had not been me…”</sub> | prose |
+| excretion | bile duct | <sub>“…d but all 4 components of polymyxin B have been detected in bile[A176390].…”</sub> | prose |
+| excretion | kidney | `SLC15A2` unknown | DrugBank actor |
+
 ## Coverage
 
 - **PubMed hits:** 151 matched, 41 returned

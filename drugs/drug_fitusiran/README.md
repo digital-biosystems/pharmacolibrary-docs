@@ -41,6 +41,16 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Fan_2026](drugs/drug_fitusiran/pd_Fan_2026_mRNA.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Fan_2026](drugs/drug_fitusiran/pd_Fan_2026_protein.md) | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=fitusiran) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…inistered 50 mg dose of fitusiran is recovered unchanged in urine within 24 hours.[L52860]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: SERPINC1 (degradation).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 24 matched, 19 returned

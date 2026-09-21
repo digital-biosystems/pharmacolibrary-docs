@@ -28,6 +28,22 @@ Cytarabine is indicated in combination with [daunorubicin] for the treatment of 
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Crook_2013_healthy dogs](drugs/drug_cytarabine/Cytarabine_Crook2013_healthy_dogs.md) | Crook KI et al., The pharmacokinetics of cytarabine in d…, Journal of veterinary pharm… (2013) | [10.1111/jvp.12008](https://doi.org/10.1111/jvp.12008) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=cytarabine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC22A4` substrate | DrugBank actor |
+| absorption | small intestine | `SLC22A4` substrate | DrugBank actor |
+| distribution | blood | `SLC29A1` substrate | DrugBank actor |
+| distribution | liver | `SLC29A1` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…e is metabolism to the inactive compound ara-U, followed by urinary excretion of ara-U.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ABCC10 (substrate), CDA (substrate), DCK (substrate), DCTD (substrate), DNA (cross-linking/alkylation), NT5E (substrate), POLB (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 53 matched, 20 returned

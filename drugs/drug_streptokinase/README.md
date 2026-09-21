@@ -29,6 +29,15 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Rox_2017](drugs/drug_streptokinase/pd_Rox_2017_unknown.md) | Rox K et al., Linoleic and palmitoleic acid block str…, Scientific reports (2017) | [10.1038/s41598-017-11276-z](https://doi.org/10.1038/s41598-017-11276-z) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=streptokinase) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: F2R (activator), PLA2G4A (inducer), PLG (activator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 91 matched, 55 returned

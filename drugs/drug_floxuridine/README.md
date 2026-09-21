@@ -34,6 +34,17 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Yeo_2018](drugs/drug_floxuridine/pd_Yeo_2018_Murine_survival.md) | Yeo WS et al., The FDA-approved anti-cancer drugs, str…, Scientific reports (2018) | [10.1038/s41598-018-20617-5](https://doi.org/10.1038/s41598-018-20617-5) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Yeo_2018](drugs/drug_floxuridine/pd_Yeo_2018_Sae_regulated_promoter_activity.md) | Yeo WS et al., The FDA-approved anti-cancer drugs, str…, Scientific reports (2018) | [10.1038/s41598-018-20617-5](https://doi.org/10.1038/s41598-018-20617-5) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=floxuridine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C9` inhibitor | DrugBank actor |
+| excretion | kidney | <sub>“…uoro-b-guanidopropionic acid and a-fluoro-b-alanine via the kidneys. Floxuridine may also…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: SERPINA7 (inducer), TYMP (substrate), TYMS (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 22 matched, 14 returned

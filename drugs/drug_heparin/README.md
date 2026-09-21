@@ -33,6 +33,17 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Lanoiselée_2026](drugs/drug_heparin/pd_Lanoisel_e_2026_ACT.md) | Lanoiselée J et al., Optimising protamine dosing for heparin…, British journal of anaesthe… (2026) | [10.1016/j.bja.2025.11.057](https://doi.org/10.1016/j.bja.2025.11.057) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=heparin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Heparin is not absorbed through the gastrointestinal tract and is therefore administered v…”</sub> | prose |
+| excretion | kidney | <sub>“…occurs with very high doses of heparin and is dependent on renal function.[L47396] High-mo…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: F10 (inhibitor), FGF1 (activator), FGF19 (activator), FGF2 (activator), FGF4 (activator), FGFR1 (activator), FGFR2 (activator), FGFR4 (unknown), HGF (allosteric modulator), HPSE (substrate), PF4 (allosteric modulator), SELP (inhibitor), SERPINC1 (potentiator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 462 matched, 70 returned

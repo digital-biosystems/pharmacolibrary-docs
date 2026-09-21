@@ -37,6 +37,21 @@ Ganaxolone, similar to its endogenous counterparts, is a positive allosteric mod
 | <span class="pk-badge pk-badge--green">extracted</span> | [Pinna_2014](drugs/drug_ganaxolone/pd_Pinna_2014_fear_extinction.md) | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Pinna_2014](drugs/drug_ganaxolone/pd_Pinna_2014_locomotion.md) | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ganaxolone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…55% of the administered radioactivity was recovered in the feces (2% as unchanged parent d…”</sub> | prose |
+| excretion | kidney | <sub>“…(2% as unchanged parent drug) and 18% was recovered in the urine (none of which comprised…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: GABRA1 (positive allosteric modulator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned

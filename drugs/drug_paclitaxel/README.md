@@ -34,6 +34,33 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Li_2021_reference](drugs/drug_paclitaxel/Paclitaxel_Li2021_reference.md) | Li (2021) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Tsushima_2020_reference](drugs/drug_paclitaxel/Paclitaxel_Tsushima2020_reference.md) | Tsushima (2020) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=paclitaxel) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inhibitor | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C8` substrate, `CYP3A4` inducer/substrate, `CYP3A5` substrate, `CYP3A7` substrate, `SLCO1B3` substrate | DrugBank actor |
+| metabolism | lung | `CYP1B1` inhibitor | DrugBank actor |
+| metabolism | skin | `CYP1B1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…ion, a mean of 71% of the radioactivity was excreted in the feces in 120 hours, and 14% wa…”</sub> | prose |
+| excretion | kidney | `ABCC2` substrate | DrugBank actor |
+| excretion | liver | `ABCB11` inhibitor/substrate, `ABCC2` substrate | DrugBank actor |
+| excretion | small intestine | `ABCC2` substrate | DrugBank actor |
+| target | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
+| target | ovary | `CYP19A1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC10 (inhibitor), ABCC10 (substrate), BCL2 (inhibitor), NR1I2 (inducer), TUBB1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 257 matched, 20 returned

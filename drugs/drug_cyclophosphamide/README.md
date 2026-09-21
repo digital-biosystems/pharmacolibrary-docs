@@ -30,6 +30,20 @@ Cyclophosphamide oral capsules are additionally indicated for the treatment of m
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Iliopoulou_2021_patients with autoimmune glomerulonephritis](drugs/drug_cyclophosphamide/Cyclophosphamide_Iliopoulou2021_patients_with_autoimmune_glo.md) | Iliopoulou VN et al., Population pharmacokinetics of cyclopho…, The Journal of pharmacy and… (2021) | [10.1093/jpp/rgab135](https://doi.org/10.1093/jpp/rgab135) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Veal_2016_children with B-cell non-Hodgkin's lymphoma](drugs/drug_cyclophosphamide/Cyclophosphamide_Veal2016_children_with_b_cell_non_hodgkin_s.md) | Veal GJ et al., Cyclophosphamide pharmacokinetics and p…, European journal of cancer… (2016) | [10.1016/j.ejca.2015.12.007](https://doi.org/10.1016/j.ejca.2015.12.007) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=cyclophosphamide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2A6` substrate, `CYP2B6` inducer/substrate, `CYP2C19` substrate, `CYP2C8` inducer/substrate, `CYP2C9` substrate, `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…s excreted unchanged in the urine and 4% is excreted in the bile following IV administrati…”</sub> | prose |
+| excretion | kidney | <sub>“…he form of metabolites. 10-20% is excreted unchanged in the urine and 4% is excreted in th…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CYP2C18 (substrate), DNA (cross-linking/alkylation), NR1I2 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 165 matched, 20 returned

@@ -28,6 +28,32 @@ The use of docetaxel may lead to udesired outcomes such as hepatic impairment, h
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2024_reference](drugs/drug_docetaxel/Docetaxel_Wang2024_reference.md) | Wang D et al., Oral docetaxel plus encequidar - A phar…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09913-y](https://doi.org/10.1007/s10928-024-09913-y) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=docetaxel) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` substrate | DrugBank actor |
+| distribution | lung | `ABCC1` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate, `SLC22A7` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `CYP3A7` substrate, `SLC22A7` substrate, `SLCO1B3` substrate | DrugBank actor |
+| metabolism | lung | `CYP1B1` binder | DrugBank actor |
+| metabolism | skin | `CYP1B1` binder | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Docetaxel was eliminated in urine and feces following oxidative metabolism of the tert-but…”</sub> | prose |
+| excretion | kidney | `ABCC2` substrate | DrugBank actor |
+| excretion | liver | `ABCC2` substrate | DrugBank actor |
+| excretion | small intestine | `ABCC2` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC10 (substrate), BCL2 (unknown), NR1I2 (binder), TUBB1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 139 matched, 20 returned

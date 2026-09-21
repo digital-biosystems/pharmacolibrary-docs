@@ -28,6 +28,15 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hua_2019_reference](drugs/drug_coagulation_factor_viii/CoagulationFactorViii_Hua2019_reference.md) | Hua BL et al., [Population pharmacokinetics of two rec…, Zhonghua xue ye xue za zhi… (2019) | [10.3760/cma.j.issn.0253-2727.2019.08.009](https://doi.org/10.3760/cma.j.issn.0253-2727.2019.08.009) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Preijers_2018_reference](drugs/drug_coagulation_factor_viii/CoagulationFactorViii_Preijers2018_reference.md) | Preijers T et al., Cross-evaluation of Pharmacokinetic-Gui…, Thrombosis and haemostasis (2018) | [10.1055/s-0038-1623531](https://doi.org/10.1055/s-0038-1623531) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=coagulation_factor_viii) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ASGR2 (binder), CALR (chaperone), CANX (chaperone), F10 (activator), F2 (activator), F9 (cofactor), HSPA5 (chaperone), LMAN1 (binder), LMAN1 (transporter), LRP1 (modulator), MCFD2 (modulator), PHYH (target), PROC (substrate), VWF (binder).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 32 matched, 12 returned

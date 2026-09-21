@@ -151,6 +151,28 @@ Prednisolone was granted FDA approval on 21 June 1955.[L9431]
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=prednisolone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `SLCO1A2` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | brain | `CYP2D6` metabolism | paper PGx gene |
+| metabolism | kidney | `CYP3A5` metabolism | paper PGx gene |
+| metabolism | liver | `CYP1A2` metabolism, `CYP2A6` metabolism, `CYP2B6` metabolism, `CYP2C19` metabolism, `CYP2C8` metabolism, `CYP2C9` safety_allele, `CYP2D6` metabolism, `CYP2E1` metabolism, `CYP3A4` inducer/metabolism/substrate, `CYP3A5` metabolism | DrugBank actor |
+| metabolism | lung | `CYP1B1` metabolism | paper PGx gene |
+| metabolism | skin | `CYP1B1` metabolism | paper PGx gene |
+| metabolism | small intestine | `CYP3A4` inducer/metabolism/substrate, `CYP3A5` metabolism | DrugBank actor |
+| excretion | kidney | <sub>“…Prednisolone is over 98% eliminated in urine.[A187394]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CYP2C18 (metabolism), CYP2C29 (metabolism), CYP2F1 (metabolism), CYP2F10 (metabolism), CYP2F11 (metabolism), CYP2F12 (metabolism), CYP2F13 (metabolism), CYP2F14 (metabolism), CYP2F15 (metabolism), CYP2F16 (metabolism), CYP2F17 (metabolism), CYP2F18 (metabolism), CYP2F19 (metabolism), CYP2F2 (metabolism), CYP2F20 (metabolism), CYP2F21 (metabolism), CYP2F22 (metabolism), CYP2F23 (metabolism), CYP2F24 (metabolism), CYP2F25 (metabolism), CYP2F26 (metabolism), CYP2F27 (metabolism), CYP2F28 (metabolism), CYP2F29 (metabolism), CYP2F30 (metabolism), CYP2F31 (metabolism), CYP2F32 (metabolism), CYP2F33 (metabolism), CYP2F34 (metabolism), CYP2F35 (metabolism), CYP2F36 (metabolism), CYP2F37 (metabolism), CYP2F38 (metabolism), CYP2F39 (metabolism), CYP2F40 (metabolism), CYP2F41 (metabolism), CYP2F42 (metabolism), CYP2F43 (metabolism), CYP2F44 (metabolism), CYP2F45 (metabolism), CYP2F46 (metabolism), CYP2F47 (metabolism), CYP2F48 (metabolism), CYP2F49 (metabolism), CYP2F50 (metabolism), CYP2F51 (metabolism), CYP2F52 (metabolism), CYP2F53 (metabolism), CYP2F54 (metabolism), CYP2F55 (metabolism), CYP2F56 (metabolism), CYP2F57 (metabolism), CYP2F58 (metabolism), CYP2F59 (metabolism), CYP2F60 (metabolism), CYP2F61 (metabolism), CYP2F62 (metabolism), CYP2F63 (metabolism), CYP2F64 (metabolism), CYP2F65 (metabolism), CYP2F66 (metabolism), CYP2F67 (metabolism), CYP2F68 (metabolism), CYP2F69 (metabolism), CYP2F70 (metabolism), CYP2F71 (metabolism), CYP2F72 (metabolism), CYP2F73 (metabolism), CYP2F74 (metabolism), CYP2F75 (metabolism), CYP2F76 (metabolism), CYP2F77 (metabolism), CYP2F78 (metabolism), CYP2F79 (metabolism), CYP2F8 (metabolism), CYP2F80 (metabolism), CYP2F81 (metabolism), CYP2F82 (metabolism), CYP2F83 (metabolism), CYP2F84 (metabolism), CYP2F85 (metabolism), CYP2F86 (metabolism), CYP2F87 (metabolism), CYP2F9 (metabolism), FRMD4B (unknown), HSD11B1 (metabolism), NR3C1 (target), NR3C2 (target), PLEKHA8 (target), SERPINA6 (binder), TGFBR3 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 340 matched, 78 returned

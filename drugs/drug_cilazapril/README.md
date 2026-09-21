@@ -85,6 +85,21 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Louis_1992](drugs/drug_cilazapril/pd_Louis_1992_BP_decrease.md) | Louis WJ et al., Comparison of the pharmacokinetics and…, Clinical and experimental p… (1992) | [10.1111/j.1440-1681.1992.tb02811.x](https://doi.org/10.1111/j.1440-1681.1992.tb02811.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Louis_1992](drugs/drug_cilazapril/pd_Louis_1992_BP_reduction.md) | Louis WJ et al., Comparison of the pharmacokinetics and…, Clinical and experimental p… (1992) | [10.1111/j.1440-1681.1992.tb02811.x](https://doi.org/10.1111/j.1440-1681.1992.tb02811.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=cilazapril) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor, `SLC15A1` substrate | DrugBank actor |
+| excretion | kidney | `SLC15A2` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ACE (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 55 matched, 44 returned

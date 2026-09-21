@@ -36,6 +36,23 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Rosenkranz_2008](drugs/drug_ergotamine/pd_Rosenkranz_2008_mitochondrial_membrane_potential.md) | Rosenkranz V et al., Alkaloids induce programmed cell death…, Molecules (Basel, Switzerla… (2008) | [10.3390/molecules13102462](https://doi.org/10.3390/molecules13102462) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Yonpiam_2021](drugs/drug_ergotamine/pd_Yonpiam_2021_unknown.md) | Yonpiam R et al., Vasoactive Effects of Acute Ergot Expos…, Toxins (2021) | [10.3390/toxins13040291](https://doi.org/10.3390/toxins13040291) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ergotamine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | bile duct | <sub>“…ed pathways, and 90% of the metabolites are excreted in the bile.…”</sub> | prose |
+| metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (partial agonist), ADRA1B (partial agonist), ADRA1D (partial agonist), ADRA2A (partial agonist), ADRA2C (unknown), DRD1 (target), DRD2 (target), HTR1A (target), HTR1B (target), HTR1D (target), HTR1F (target), HTR2A (target), HTR2B (unknown), HTR2C (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 41 matched, 31 returned

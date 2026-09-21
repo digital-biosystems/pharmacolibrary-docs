@@ -40,6 +40,24 @@ Temozolomide was granted FDA approval on August 11, 1999, as an oral capsule and
 | <span class="pk-badge pk-badge--red">rejected</span> | [Nelson_2025](drugs/drug_temozolomide/pd_Nelson_2025_DNA_A.md) | Nelson N et al., Personalized chronotherapy in glioblast…, NPJ precision oncology (2025) | [10.1038/s41698-025-01205-z](https://doi.org/10.1038/s41698-025-01205-z) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Nelson_2025](drugs/drug_temozolomide/pd_Nelson_2025_N.md) | Nelson N et al., Personalized chronotherapy in glioblast…, NPJ precision oncology (2025) | [10.1038/s41698-025-01205-z](https://doi.org/10.1038/s41698-025-01205-z) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=temozolomide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| excretion | bile duct | <sub>“…over seven days, with 38% in the urine and only 0.8% in the feces. The recovered material…”</sub> | prose |
+| excretion | kidney | <sub>“…ozolomide can be recovered over seven days, with 38% in the urine and only 0.8% in the fec…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: DNA (cross-linking/alkylation).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 192 matched, 60 returned

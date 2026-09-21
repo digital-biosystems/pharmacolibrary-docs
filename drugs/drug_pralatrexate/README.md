@@ -39,6 +39,26 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Scotto_2020](drugs/drug_pralatrexate/pd_Scotto_2020_growth_inhibition.md) | Scotto L et al., Generation of pralatrexate resistant T-…, Genes, chromosomes & cancer (2020) | [10.1002/gcc.22884](https://doi.org/10.1002/gcc.22884) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2020](drugs/drug_pralatrexate/pd_Zhang_2020_viral_yield.md) | Zhang H et al., A novel virtual screening procedure ide…, PLoS computational biology (2020) | [10.1371/journal.pcbi.1008489](https://doi.org/10.1371/journal.pcbi.1008489) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=pralatrexate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | <sub>“…fall is thought to reflect the clearance of pralatrexate by renal and non-renal mechanism…”</sub> | prose |
+| absorption | liver | `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | small intestine | `ABCG2` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | `SLCO1B3` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…ed in urine as unchanged pralatrexate and 34% (CV = 88%) in feces as unchanged pralatrexat…”</sub> | prose |
+| excretion | kidney | `ABCC2` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor/substrate | DrugBank actor |
+| excretion | small intestine | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: DHFR (inhibitor), DHFR (substrate), FPGS (substrate), PDF (inhibitor), SLC19A1 (substrate), SLC46A1 (substrate), TYMS (inhibitor), TYMS (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 25 matched, 24 returned

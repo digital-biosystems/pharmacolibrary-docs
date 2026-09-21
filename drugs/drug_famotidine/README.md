@@ -40,6 +40,18 @@ Over-the-counter famotidine is used for the management and prevention of heartbu
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ikawa_2007](drugs/drug_famotidine/pd_Ikawa_2007_pH.md) | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=famotidine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
+| excretion | kidney | `SLC22A2` inhibitor, `SLC22A6` substrate, `SLC22A8` inhibitor/substrate, `SLC47A1` inhibitor | DrugBank actor |
+| excretion | liver | `SLC47A1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HRH2 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 29 matched, 19 returned

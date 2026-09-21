@@ -34,6 +34,18 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Janbaz_2013](drugs/drug_dicycloverine/pd_Janbaz_2013_isolated_rabbit_jejunum_contraction.md) | Janbaz KH et al., Pharmacological Effects of Lactuca serr…, Evidence-based complementar… (2013) | [10.1155/2013/304394](https://doi.org/10.1155/2013/304394) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Janbaz_2013](drugs/drug_dicycloverine/pd_Janbaz_2013_isolated_rabbit_trachea_contraction.md) | Janbaz KH et al., Pharmacological Effects of Lactuca serr…, Evidence-based complementar… (2013) | [10.1155/2013/304394](https://doi.org/10.1155/2013/304394) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dicycloverine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | <sub>“…well absorbed as the primary route of elimination is in the urine.[A182525,L7967] Dicyclom…”</sub> | prose |
+| excretion | bile duct | <sub>“…icyclomine is 79.5% eliminated in the urine and 8.4% in the feces.[A182525,L7967]…”</sub> | prose |
+| excretion | kidney | <sub>“…Dicyclomine is 79.5% eliminated in the urine and 8.4% in the feces.[A182525,L7967]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 32 matched, 32 returned

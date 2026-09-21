@@ -57,6 +57,26 @@ Prescribing of statin medications is considered standard practice following any 
 | <span class="pk-badge pk-badge--red">rejected</span> | [Aggarwal_2024](drugs/drug_rosuvastatin/pd_Aggarwal_2024_ASCVD.md) | Aggarwal SK et al., Individualized Dose-Response to Statins…, JACC. Advances (2024) | [10.1016/j.jacadv.2024.100894](https://doi.org/10.1016/j.jacadv.2024.100894) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Aggarwal_2024](drugs/drug_rosuvastatin/pd_Aggarwal_2024_LDL_C.md) | Aggarwal SK et al., Individualized Dose-Response to Statins…, JACC. Advances (2024) | [10.1016/j.jacadv.2024.100894](https://doi.org/10.1016/j.jacadv.2024.100894) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=rosuvastatin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCG2` substrate, `SLCO1A2` unknown | DrugBank actor |
+| absorption | liver | `ABCG2` substrate, `SLCO2B1` unknown | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | skeletal muscle | <sub>“…se effects from the increased exposure to the drug, such as muscle pain and risk of rhabdo…”</sub> | prose |
+| absorption | small intestine | `ABCG2` substrate, `SLCO1A2` unknown, `SLCO2B1` unknown | DrugBank actor |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C9` substrate, `SLC10A1` unknown, `SLCO1B1` inhibitor/substrate, `SLCO1B3` unknown | DrugBank actor |
+| excretion | bile duct | <sub>“…uvastatin and its metabolites are primarily excreted in the feces (90%). After an intraven…”</sub> | prose |
+| excretion | kidney | `ABCC2` substrate, `ABCC4` substrate, `SLC22A8` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCB11` substrate, `ABCC2` substrate, `ABCC4` substrate | DrugBank actor |
+| excretion | small intestine | `ABCC2` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HMGCR (inhibitor), ITGAL (inhibitory allosteric modulator), SLC7A11 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 57 matched, 20 returned

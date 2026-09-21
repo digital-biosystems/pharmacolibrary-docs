@@ -31,6 +31,19 @@ It is also used in the prevention of clotting during hemodialysis and hemofiltra
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Damle_2021_reference](drugs/drug_dalteparin/Dalteparin_Damle2021_reference.md) | Damle B et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1716](https://doi.org/10.1002/jcph.1716) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [van_2022_reference](drugs/drug_dalteparin/Dalteparin_van2022_reference.md) | van der Heijden CDCC et al., Effects of dalteparin on anti-Xa activi…, British journal of clinical… (2022) | [10.1111/bcp.15208](https://doi.org/10.1111/bcp.15208) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dalteparin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…Liver and the reticulo-endothelial system are the sites of biotra…”</sub> | prose |
+| excretion | kidney | <sub>“…After 4 hours, about 20% is seen in urine. Most of the remainder is found in the liver, ga…”</sub> | prose |
+| excretion | liver | <sub>“…20% is seen in urine. Most of the remainder is found in the liver, gastrointestinal tract…”</sub> | prose |
+| excretion | small intestine | <sub>“…seen in urine. Most of the remainder is found in the liver, gastrointestinal tract and kid…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: HPSE (substrate), SELP (inhibitor), SERPINC1 (potentiator), VEGFA (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 14 matched, 14 returned

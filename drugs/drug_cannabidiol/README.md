@@ -86,6 +86,35 @@ Due to the need for confirmatory studies to verify the clinical benefit coupled 
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=cannabidiol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor, `ABCG2` inhibitor, `SLC15A1` target | DrugBank actor |
+| distribution | blood | `SLC29A1` inhibitor | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inhibitor | DrugBank actor |
+| distribution | liver | `SLC29A1` inhibitor | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
+| metabolism | bile duct | <sub>“…ack into the blood stream and metabolized via the renal and biliary systems. The main prim…”</sub> | prose |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | heart | `CYP2J2` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor/metabolism/substrate, `UGT1A9` inhibitor/substrate, `UGT2B7` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `AOX1` metabolism, `CES1` inhibitor, `CYP1A2` inducer/inhibitor/substrate, `CYP2A6` inhibitor, `CYP2B6` inducer/inhibitor/substrate, `CYP2C19` inhibitor/metabolism/substrate, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor/safety_allele/substrate, `CYP2D6` inhibitor/substrate, `CYP2E1` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/metabolism/substrate, `CYP3A7` inhibitor, `NQO1` inhibitor, `UGT1A9` inhibitor/substrate, `UGT2B17` substrate, `UGT2B7` inhibitor/substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` inhibitor, `CYP1B1` inhibitor | DrugBank actor |
+| metabolism | skin | `CYP1B1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inhibitor, `CYP2J2` inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/metabolism/substrate, `UGT2B17` substrate, `UGT2B7` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…to 36 hours or longer. Sativex is excreted in the urine and faeces.…”</sub> | prose |
+| excretion | kidney | <sub>“…der of 24 to 36 hours or longer. Sativex is excreted in the urine and faeces.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: AANAT (inhibitor), AANAT (unknown), ABCC5 (target), ABP1 (metabolism), ACAT1 (inhibitor), ADORA1 (activator), ALOX15 (inhibitor), ALOX5 (inhibitor), CACNA1G (inhibitor), CACNA1H (inhibitor), CACNA1I (inhibitor), CAT (inhibitor), CHRNA7 (positive allosteric modulator), CNR1 (modulator), CNR1 (target), CNR2 (inverse agonist), CNR2 (target), CRYZ (unknown), CYP17A1 (inhibitor), FAAH (inhibitor), GLRA1 (allosteric modulator), GLRA3 (potentiator), GPR12 (inverse agonist), GPR18 (partial agonist), GPR55 (target), GPX1 (stimulator), GSR (stimulator), HMGCR (stimulator), HTR1A (target), HTR2A (target), HTR3A (target), IDO1 (inhibitor), NAAA (inhibitor), OPRD1 (allosteric modulator), OPRM1 (allosteric modulator), PPARG (activator), PTGS1 (inhibitor), PTGS2 (inhibitor), SOD1 (inhibitor), TRPA1 (target), TRPM8 (target), TRPV1 (activator), TRPV2 (activator), TRPV3 (activator), TRPV4 (activator), UGT1A7 (substrate), VDAC1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 897 matched, 129 returned

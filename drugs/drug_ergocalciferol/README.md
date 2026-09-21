@@ -43,6 +43,22 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ooi_2026](drugs/drug_ergocalciferol/pd_Ooi_2026_ALP.md) | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ooi_2026](drugs/drug_ergocalciferol/pd_Ooi_2026_TB.md) | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ergocalciferol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | bile duct | <sub>“…577] However, for absorption to take place, the presence of bile is required.[L6088]…”</sub> | prose |
+| absorption | liver | <sub>“…ocalciferol is absorbed in the intestine and carried to the liver in chylomicrons. Its int…”</sub> | prose |
+| absorption | small intestine | <sub>“…Ergocalciferol is absorbed in the intestine and carried to the liver in chylomicrons. Its…”</sub> | prose |
+| metabolism | kidney | <sub>“…on of 24(R),25dihydroxyvitamin D is performed mainly in the kidneys by the action of 25-(O…”</sub> | prose |
+| metabolism | liver | <sub>“…gocalciferol is transformed into 25-hydroxyvitamin D in the liver by the activity of D-25-…”</sub> | prose |
+| excretion | bile duct | <sub>“…re, ergocalciferol and its metabolites are excreted via the bile with a minor contribution…”</sub> | prose |
+| excretion | kidney | <sub>“…ites are excreted via the bile with a minor contribution of renal elimination. This major…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CACNG1 (inducer), CYP11A1 (substrate), CYP24A1 (substrate), CYP27A1 (substrate), CYP27B1 (substrate), CYP2R1 (substrate), GC (binder), RPE (substrate), VDR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 8772 matched, 120 returned

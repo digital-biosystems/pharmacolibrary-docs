@@ -38,6 +38,25 @@ It is important to note that lamotirigine should not be used in the treatment of
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Karanam_2025_reference](drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference.md) | Karanam A et al., Characterization of lamotrigine disposi…, Pharmacotherapy (2025) | [10.1002/phar.4640](https://doi.org/10.1002/phar.4640) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Methaneethorn_2020_reference](drugs/drug_lamotrigine/Lamotrigine_Methaneethorn2020_reference.md) | Methaneethorn J et al., Sources of lamotrigine pharmacokinetic…, Seizure (2020) | [10.1016/j.seizure.2020.07.014](https://doi.org/10.1016/j.seizure.2020.07.014) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=lamotrigine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| metabolism | liver | `SLC22A1` substrate, `UGT1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `UGT1A1` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Lamotrigine is excreted in both the urine and feces.[A192027] Following oral administratio…”</sub> | prose |
+| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADORA1 (inhibitor), ADORA2A (inhibitor), ADRA1A (inhibitor), ADRA2A (inhibitor), ADRB1 (inhibitor), CACNA1E (inhibitor), CHRNA1 (inhibitor), DHFR (inhibitor), DRD1 (inhibitor), DRD2 (inhibitor), DRD2 (target), GABRA1 (inducer), GABRA1 (inhibitor), GABRA1 (target), GRIA1 (inhibitor), HRH1 (target), HTR2A (inhibitor), HTR3A (inhibitor), OPRK1 (inhibitor), SCN11A (blocker), SCN1A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 100 matched, 20 returned

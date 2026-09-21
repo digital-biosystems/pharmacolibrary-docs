@@ -35,6 +35,21 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Growcott_2006](drugs/drug_iloprost/pd_Growcott_2006_MMP_9.md) | Growcott EJ et al., Phosphodiesterase type 4 expression and…, Respiratory research (2006) | [10.1186/1465-9921-7-9](https://doi.org/10.1186/1465-9921-7-9) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Santhosh_2011](drugs/drug_iloprost/pd_Santhosh_2011_Calcium_mobilization.md) | Santhosh KT et al., Milrinone attenuates thromboxane recept…, British journal of pharmaco… (2011) | [10.1111/j.1476-5381.2011.01306.x](https://doi.org/10.1111/j.1476-5381.2011.01306.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=iloprost) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | `SLCO2B1` substrate | DrugBank actor |
+| absorption | lung | <sub>“…Following inhalation of iloprost (5 mcg) patients with pulmonary hypertension have ilopros…”</sub> | prose |
+| absorption | small intestine | `SLCO2B1` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| excretion | bile duct | <sub>“…sion at the rate of 2 ng/kg/min and oral dose at 0.1 ug/kg, fecal excretion was 12% and 17…”</sub> | prose |
+| excretion | kidney | <sub>“…changed iloprost and its metabolites are mainly excreted in urine.[L50146] About 70% of th…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: PDE4A (inducer), PDE4B (inducer), PDE4C (inducer), PDE4D (inducer), PLAT (other/unknown), PTGDR2 (target), PTGER1 (target), PTGER2 (target), PTGIR (target), SLCO2A1 (substrate), SLCO3A1 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 242 matched, 73 returned

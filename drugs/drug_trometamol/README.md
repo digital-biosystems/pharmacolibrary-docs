@@ -43,6 +43,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Na_2025](drugs/drug_trometamol/pd_Na_2025_DHO.md) | Na JY et al., Translational Pharmacokinetic-Pharmacod…, Pharmaceutics (2025) | [10.3390/pharmaceutics17040412](https://doi.org/10.3390/pharmaceutics17040412) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ngara_2025](drugs/drug_trometamol/pd_Ngara_2025_CFU.md) | Ngara B et al., Translational Modeling of BTZ-043 to Pr…, The Journal of infectious d… (2025) | [10.1093/infdis/jiaf088](https://doi.org/10.1093/infdis/jiaf088) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=trometamol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: AMD1 (inhibitor), APP (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 1318 matched, 210 returned

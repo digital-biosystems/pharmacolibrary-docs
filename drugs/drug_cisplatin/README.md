@@ -26,6 +26,31 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Urien_2004_reference](drugs/drug_cisplatin/Cisplatin_Urien2004_reference.md) | Urien S et al., Population pharmacokinetics of total an…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02082.x](https://doi.org/10.1111/j.1365-2125.2004.02082.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=cisplatin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | <sub>“…centrations of platinum are highest in liver, prostate, and kidney; somewhat lower in blad…”</sub> | prose |
+| absorption | liver | `ABCG2` substrate | DrugBank actor |
+| absorption | lung | <sub>“…pancreas, and spleen; and lowest in bowel, adrenal, heart, lung, cerebrum, and cerebellum.…”</sub> | prose |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | skeletal muscle | <sub>“…in liver, prostate, and kidney; somewhat lower in bladder, muscle, testicle, pancreas, and…”</sub> | prose |
+| absorption | small intestine | `ABCG2` substrate | DrugBank actor |
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| metabolism | blood | `BCHE` inhibitor, `GSTT1` substrate | DrugBank actor |
+| metabolism | liver | `BCHE` inhibitor, `CYP2B6` inhibitor, `CYP2C9` inhibitor, `GSTM1` substrate, `GSTP1` substrate, `GSTT1` substrate, `NQO1` substrate, `XDH` inducer | DrugBank actor |
+| metabolism | lung | `GSTP1` substrate | DrugBank actor |
+| metabolism | small intestine | `XDH` inducer | DrugBank actor |
+| excretion | bile duct | <sub>“…rine. Although small amounts of platinum are present in the bile and large intestine after…”</sub> | prose |
+| excretion | kidney | `ABCC2` inducer, `SLC22A2` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCC2` inducer, `ABCC3` inducer | DrugBank actor |
+| excretion | small intestine | `ABCC2` inducer, `ABCC3` inducer | DrugBank actor |
+
+<sub>Actors without a tissue in the table: A2M (binder), ABCC5 (inducer), ABCC6 (substrate), ATOX1 (binder), ATP7A (substrate), ATP7B (substrate), CYP4A11 (inducer), DNA (cross-linking/alkylation), MPG (blocker), MPO (inducer), MT1A (substrate), MT2A (substrate), PTGS2 (inhibitor), SLC31A1 (substrate), SLC31A2 (substrate), SOD1 (substrate), TF (binder).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 274 matched, 60 returned

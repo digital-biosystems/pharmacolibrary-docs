@@ -32,6 +32,31 @@ Glyburide was granted FDA approval on 1 May 1984.[L8117] A formulation with metf
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: F, Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Savic_2007_transit](drugs/drug_glibenclamide/Glibenclamide_Savic2007_transit.md) | Savic RM et al., Implementation of a transit compartment…, Journal of pharmacokinetics… (2007) | [10.1007/s10928-007-9066-0](https://doi.org/10.1007/s10928-007-9066-0) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: F, Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Savic_2007_transit](drugs/drug_glibenclamide/Glibenclamide_Savic2007_transit.md) | Savic RM et al., Implementation of a transit compartment…, Journal of pharmacokinetics… (2007) | [10.1007/s10928-007-9066-0](https://doi.org/10.1007/s10928-007-9066-0) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=glibenclamide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor, `ABCG2` substrate, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor, `ABCG2` substrate, `SLCO2B1` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor, `ABCG2` substrate, `SLC15A1` inhibitor, `SLCO1A2` inhibitor, `SLCO2B1` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inhibitor | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate, `SLC22A7` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2C19` substrate, `CYP2C9` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `CYP3A7` substrate, `SLC22A7` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…reas, glyburide is 50% excreted in the urine and 50% in the feces.[L8123] Glyburide is mai…”</sub> | prose |
+| excretion | kidney | `ABCC2` inhibitor, `SLC15A2` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB11` inhibitor/substrate, `ABCC2` inhibitor, `ABCC3` inhibitor | DrugBank actor |
+| excretion | small intestine | `ABCC2` inhibitor, `ABCC3` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCA1 (inhibitor), ABCC8 (blocker), ABCC8 (modulator), ABCC9 (modulator), CFTR (target), CPT1A (inhibitor), KCNJ11 (inhibitor), TRPM4 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 401 matched, 20 returned

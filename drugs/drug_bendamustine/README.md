@@ -28,6 +28,18 @@ The indication for chronic lymphocytic leukemia (CLL) was removed from the US dr
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kim_2018_reference](drugs/drug_bendamustine/Bendamustine_Kim2018_reference.md) | Kim T et al., Clinical response and pharmacokinetics…, BMC cancer (2018) | [10.1186/s12885-018-4632-y](https://doi.org/10.1186/s12885-018-4632-y) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=bendamustine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP1A2` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…rine and approximately 25% of the dose was recovered in the feces. Urinary excretion was c…”</sub> | prose |
+| excretion | kidney | <sub>“…he dose. Approximately 50% of the dose was recovered in the urine and approximately 25% of…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: DNA (cross-linking/alkylation).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 15 matched, 13 returned

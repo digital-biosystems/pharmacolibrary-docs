@@ -27,6 +27,18 @@
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Nijstad_2023_reference](drugs/drug_aprepitant/Aprepitant_Nijstad2023_reference.md) | Nijstad AL et al., A simple extemporaneous oral suspension…, Journal of oncology pharmac… (2023) | [10.1177/10781552221089243](https://doi.org/10.1177/10781552221089243) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Nakade_2008_reference](drugs/drug_aprepitant/Aprepitant_Nakade2008_reference.md) | Nakade S et al., Population pharmacokinetics of aprepita…, Cancer chemotherapy and pha… (2008) | [10.1007/s00280-008-0713-y](https://doi.org/10.1007/s00280-008-0713-y) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=aprepitant) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C19` inhibitor/substrate, `CYP2C9` inducer/inhibitor, `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
+| excretion | mammary gland | <sub>“…tant is not renally excreted. Aprepitant is excreted in the milk of rats. It is not known…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: TACR1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned

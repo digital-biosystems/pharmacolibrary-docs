@@ -27,6 +27,17 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nelson_1979_patients with advanced cancer](drugs/drug_vindesine/Vindesine_Nelson1979_patients_with_advanced_cancer.md) | Nelson RL et al., Clinical pharmacokinetics of vindesine, Cancer chemotherapy and pha… (1979) | [10.1007/BF00257188](https://doi.org/10.1007/BF00257188) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Owellen_1977_humans](drugs/drug_vindesine/Vindesine_Owellen1977_humans.md) | Owellen RJ et al., Pharmacokinetics of vindesine and vincr…, Cancer research (1977) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=vindesine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: TUBB1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 16 matched, 16 returned

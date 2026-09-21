@@ -51,6 +51,25 @@ CIC is one of the most common chronic functional gastrointestinal disorders worl
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Broad_2013](drugs/drug_prucalopride/pd_Broad_2013_AUC.md) | Broad J et al., Cholinergic interactions between donepe…, British journal of pharmaco… (2013) | [10.1111/bph.12397](https://doi.org/10.1111/bph.12397) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=prucalopride) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…dministered dose while only 13% of the dose is recovered in feces.[A40255]…”</sub> | prose |
+| excretion | kidney | <sub>“…n a biphasic manner. Prucalopride is mainly excreted by the urine, representing 84% of the…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: HTR4 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned

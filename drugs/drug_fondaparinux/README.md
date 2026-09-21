@@ -32,6 +32,16 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Chang_2016](drugs/drug_fondaparinux/pd_Chang_2016_unknown.md) | Chang JB et al., A novel, rapid method to compare the th…, Scientific reports (2016) | [10.1038/srep29387](https://doi.org/10.1038/srep29387) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=fondaparinux) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…In individuals with normal kidney function, fondaparinux is eliminated in urine mainly as…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: F10 (inhibitor), SERPINC1 (potentiator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 18 matched, 18 returned

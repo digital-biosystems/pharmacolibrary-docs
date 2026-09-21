@@ -27,6 +27,15 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'parameter' is a table statistic/structure column, not a study pop…</sub><br><sub>route_to: `human_review`</sub> | [Sy_2018_parameter](drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_parameter.md) | Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy and pha… (2018) | [10.1007/s00280-018-3562-3](https://doi.org/10.1007/s00280-018-3562-3) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'parameter' is a table statistic/structure column, not a study pop…</sub><br><sub>route_to: `human_review`</sub> | [Sy_2018_parameter](drugs/drug_etirinotecan_pegol/EtirinotecanPegol_Sy2018_parameter.md) | Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy and pha… (2018) | [10.1007/s00280-018-3562-3](https://doi.org/10.1007/s00280-018-3562-3) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=etirinotecan_pegol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: TOP1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 3 matched, 3 returned

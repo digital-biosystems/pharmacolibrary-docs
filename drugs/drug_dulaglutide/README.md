@@ -59,6 +59,15 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zheng_2023](drugs/drug_dulaglutide/pd_Zheng_2023_body_weight.md) | Zheng S et al., A long-acting GDF15 analog causes robus…, Clinical and translational… (2023) | [10.1111/cts.13543](https://doi.org/10.1111/cts.13543) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zheng_2023](drugs/drug_dulaglutide/pd_Zheng_2023_energy_intake.md) | Zheng S et al., A long-acting GDF15 analog causes robus…, Clinical and translational… (2023) | [10.1111/cts.13543](https://doi.org/10.1111/cts.13543) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dulaglutide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: GLP1R (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 103 matched, 56 returned

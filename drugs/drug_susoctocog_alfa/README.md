@@ -27,6 +27,15 @@ Susoctocog alfa was approved by the FDA in October 2014 and is marketed under th
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=susoctocog_alfa) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: VWF (binding).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 11 matched, 8 returned

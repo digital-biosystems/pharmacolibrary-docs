@@ -131,6 +131,33 @@
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=doxorubicin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer/inhibitor/substrate/transport, `ABCG2` substrate/transport | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer/inhibitor/substrate/transport | DrugBank actor |
+| absorption | liver | `ABCB1` inducer/inhibitor/substrate/transport, `ABCG2` substrate/transport | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate/transport | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer/inhibitor/substrate/transport | DrugBank actor |
+| absorption | small intestine | `ABCB1` inducer/inhibitor/substrate/transport, `ABCG2` substrate/transport | DrugBank actor |
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inhibitor/substrate | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor/substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/metabolism/substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` inhibitor, `CYP2D6` inhibitor/metabolism/substrate, `CYP3A4` inhibitor/metabolism/substrate, `GSTM1` metabolism, `NQO1` substrate, `POR` substrate, `XDH` substrate | DrugBank actor |
+| metabolism | lung | `CYP1B1` inducer/inhibitor | DrugBank actor |
+| metabolism | skin | `CYP1B1` inducer/inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/metabolism/substrate, `XDH` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Approximately 40% of the dose appears in the bile in 5 days, while only 5% to 12% of the d…”</sub> | prose |
+| excretion | kidney | `ABCC2` substrate/transport | DrugBank actor |
+| excretion | liver | `ABCB11` substrate, `ABCC2` substrate/transport, `ABCC3` inhibitor | DrugBank actor |
+| excretion | small intestine | `ABCC2` substrate/transport, `ABCC3` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCB4 (transport), ABCB5 (transport), ABCB8 (substrate), ABCC10 (inhibitor), ABCC10 (transport), ABCC5 (transport), ABCC6 (inhibitor), ABCC6 (substrate), ABCC9 (transport), AKR1A1 (substrate), AKR1B1 (substrate), AKR1B10 (substrate), AKR1C3 (substrate), AKR1C4 (substrate), CBR1 (metabolism), CBR1 (substrate), CBR3 (metabolism), CBR3 (substrate), CELF4 (target), CRB1 (metabolism), CRB3 (metabolism), DNA (intercalation), HAS3 (unknown), NDUFS2 (substrate), NDUFS3 (substrate), NDUFS7 (substrate), NOLC1 (inhibitor), NOS1 (substrate), NOS2 (substrate), NOS3 (substrate), PXR (metabolism), RAC2 (target), RALBP1 (substrate), RARG (unknown), RLIP76 (transport), SLC22A16 (substrate), SLC22A16 (transport), SLC22A17 (transport), SLC28A1 (transport), SLC28A3 (transport), SPG7 (unknown), TERT (other/unknown), TOP1 (inhibitor), TOP2A (inhibitor), TOP2B (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 4961 matched, 158 returned

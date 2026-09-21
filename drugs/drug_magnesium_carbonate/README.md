@@ -31,6 +31,16 @@ _not available_
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Kemal_2026](drugs/drug_magnesium_carbonate/pd_Kemal_2026_any_grade_hypertension_events.md) | Kemal CC et al., Population Pharmacokinetic Modeling and…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70257](https://doi.org/10.1002/psp4.70257) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Kemal_2026](drugs/drug_magnesium_carbonate/pd_Kemal_2026_best_overall_response.md) | Kemal CC et al., Population Pharmacokinetic Modeling and…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70257](https://doi.org/10.1002/psp4.70257) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=magnesium_carbonate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…Primarily eliminated in urine [L593].…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CNNM2 (substrate), GRIN1 (blocker), SLC41A3 (substrate), TRPM6 (substrate), TRPM7 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 433 matched, 73 returned

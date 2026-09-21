@@ -37,6 +37,26 @@ Opiods, including morphine, are effective for the short term management of pain.
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Simons_2023](drugs/drug_morphine/pd_Simons_2023_V_E55.md) | Simons P et al., Respiratory Effects of Biased Ligand Ol…, Anesthesiology (2023) | [10.1097/ALN.0000000000004473](https://doi.org/10.1097/ALN.0000000000004473) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=morphine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate, `UGT1A1` substrate, `UGT1A3` substrate, `UGT2B15` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` substrate, `UGT2B7` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“….[A176059] 7-10% of a dose of morphine is eliminated in the feces.[L12114]…”</sub> | prose |
+| excretion | kidney | <sub>“…hours.[A176119] Morphine is predominantly eliminated in the urine with 2-10% of a dose rec…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: LY96 (activator), OPRD1 (target), OPRK1 (target), OPRM1 (target), UGT1A8 (substrate), UGT2B4 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 588 matched, 20 returned

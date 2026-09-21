@@ -33,6 +33,18 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Hoeben_2026](drugs/drug_alfacalcidol/pd_Hoeben_2026_TV.md) | Hoeben E et al., PKPD-Based Translational Modeling of Ca…, European journal of drug me… (2026) | [10.1007/s13318-026-01010-4](https://doi.org/10.1007/s13318-026-01010-4) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=alfacalcidol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…ol is absorbed passively and almost completely in the small intestine.[L33369]…”</sub> | prose |
+| metabolism | bile duct | <sub>“…polar inactive metabolites, excreted primarily through the bile.[L33369]…”</sub> | prose |
+| metabolism | liver | <sub>“…Alfacalcidol is rapidly converted in the liver to 1,25-dihydroxyvitamin D, which is essent…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: Alpha globin (binder), CYP27B1 (unknown), GC (substrate), RXRA (unknown), VDR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 9088 matched, 71 returned

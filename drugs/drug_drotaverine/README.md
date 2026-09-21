@@ -25,6 +25,20 @@ Drotaverine is not approved by the FDA, European Medicines Agency, or Health Can
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=drotaverine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | bile duct | <sub>“…which is its main route of elimination. It may also undergo biliary excretion to form conj…”</sub> | prose |
+| metabolism | liver | <sub>“…Drotaverine is reported to undergo extensive hepatic metabolism, which is its main route o…”</sub> | prose |
+| excretion | bile duct | <sub>“…epatic metabolism.[A7036] About 67% of the drug is found in feces and 20% of the drug was…”</sub> | prose |
+| excretion | kidney | <sub>“…g is found in feces and 20% of the drug was eliminated with urine.[A231644]…”</sub> | prose |
+| excretion | liver | <sub>“…Drotaverine is mainly eliminated via hepatic metabolism.[A7036] About 67% of the drug is f…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CACNA1C (inhibitor), PDE4A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 11 matched, 9 returned

@@ -38,6 +38,22 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Schramm_2022](drugs/drug_obeticholic_acid/pd_Schramm_2022_C4.md) | Schramm C et al., Farnesoid X receptor agonist tropifexor…, JHEP reports : innovation i… (2022) | [10.1016/j.jhepr.2022.100544](https://doi.org/10.1016/j.jhepr.2022.100544) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Schramm_2022](drugs/drug_obeticholic_acid/pd_Schramm_2022_FGF19.md) | Schramm C et al., Farnesoid X receptor agonist tropifexor…, JHEP reports : innovation i… (2022) | [10.1016/j.jhepr.2022.100544](https://doi.org/10.1016/j.jhepr.2022.100544) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=obeticholic_acid) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Obeticholic acid is absorbed in the gastrointestinal tract. The Cmax of obeticholic acid o…”</sub> | prose |
+| metabolism | bile duct | <sub>“…jugated with glycine or taurine, followed by secretion into bile. The conjugates are then…”</sub> | prose |
+| metabolism | liver | `CYP1A2` downregulator/inhibitor | DrugBank actor |
+| metabolism | small intestine | <sub>“…on into bile. The conjugates are then absorbed in the small intestine and then re-enter th…”</sub> | prose |
+| excretion | bile duct | <sub>“…87% of an orally administered dose is accounted for in the feces. Less than 3% of the dose…”</sub> | prose |
+| excretion | kidney | <sub>“…the feces. Less than 3% of the dose can be recovered in the urine.[L12633,L12720]…”</sub> | prose |
+| excretion | liver | `ABCB11` inducer/inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: NR1H4 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 97 matched, 95 returned

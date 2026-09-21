@@ -31,6 +31,20 @@ Efavirenz is also used in combination with other antiretroviral agents as part o
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Chala_2023_reference](drugs/drug_efavirenz/Efavirenz_Chala2023_reference.md) | Chala A et al., Genetic and non-genetic factors influen…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12951](https://doi.org/10.1002/psp4.12951) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Vucicevic_2025_reference](drugs/drug_efavirenz/Efavirenz_Vucicevic2025_reference.md) | Vucicevic K et al., Population Pharmacokinetic-Pharmacogene…, Cureus (2025) | [10.7759/cureus.88533](https://doi.org/10.7759/cureus.88533) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=efavirenz) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2B6` inducer/substrate, `CYP2C19` inducer, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer, `CYP3A7` inducer, `SLC22A1` inhibitor, `UGT1A1` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer, `UGT1A1` inducer | DrugBank actor |
+| excretion | kidney | <sub>“…Nearly all of the urinary excretion of the radiolabeled drug was in the form of metab…”</sub> | prose |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+
 ## Coverage
 
 - **PubMed hits:** 217 matched, 20 returned

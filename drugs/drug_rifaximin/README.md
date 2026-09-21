@@ -38,6 +38,19 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2021](drugs/drug_rifaximin/pd_Wang_2021_log10CFU_gland.md) | Wang H et al., PK/PD Modeling to Assess Rifaximin Clin…, Frontiers in veterinary sci… (2021) | [10.3389/fvets.2021.651369](https://doi.org/10.3389/fvets.2021.651369) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2023](drugs/drug_rifaximin/pd_Wang_2023_bacterial_colony_count_reduction.md) | Wang H et al., A PK/PD model for the evaluation of cli…, BMC veterinary research (2023) | [10.1186/s12917-022-03564-2](https://doi.org/10.1186/s12917-022-03564-2) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=rifaximin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C19` inducer, `CYP2C8` inducer, `CYP3A4` inducer/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…, 96.62% of the administered radioactivity was recovered in feces almost exclusively as th…”</sub> | prose |
+| excretion | kidney | <sub>“…xclusively as the unchanged drug and 0.32% was recovered in urine mostly as metabolites wi…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: NR1I2 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 69 matched, 51 returned

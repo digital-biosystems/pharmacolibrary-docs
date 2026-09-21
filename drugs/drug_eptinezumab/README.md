@@ -26,6 +26,18 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Baker_2020_reference](drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md) | Baker B et al., Population pharmacokinetic and exposure…, Pharmacology research & per… (2020) | [10.1002/prp2.567](https://doi.org/10.1002/prp2.567) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=eptinezumab) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | bile duct | <sub>“…nezumab are generally not eliminated via hepatic, renal, or biliary routes.[F94]…”</sub> | prose |
+| excretion | kidney | <sub>“…like eptinezumab are generally not eliminated via hepatic, renal, or biliary routes.[F94]…”</sub> | prose |
+| excretion | liver | <sub>“…dy agents like eptinezumab are generally not eliminated via hepatic, renal, or biliary rou…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CALCA (antibody), CALCA (binder), CALCB (antibody), CALCB (binder).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned

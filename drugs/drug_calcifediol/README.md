@@ -29,6 +29,16 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Hoeben_2026](drugs/drug_calcifediol/pd_Hoeben_2026_TV.md) | Hoeben E et al., PKPD-Based Translational Modeling of Ca…, European journal of drug me… (2026) | [10.1007/s13318-026-01010-4](https://doi.org/10.1007/s13318-026-01010-4) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=calcifediol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>“…Calcidiol undergoes hydroxylation in the mitochondria of kidney tissue, and this reaction…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CYP24A1 (substrate), CYP27B1 (substrate), VDR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 9086 matched, 69 returned

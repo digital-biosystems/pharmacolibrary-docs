@@ -28,6 +28,19 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Michiels_1987_reference](drugs/drug_cisapride/Cisapride_Michiels1987_reference.md) | Michiels M et al., Pharmacokinetics and tissue distributio…, Arzneimittel-Forschung (1987) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Odoul_2002_reference](drugs/drug_cisapride/Cisapride_Odoul2002_reference.md) | Odoul F et al., Population pharmacokinetics of cisaprid…, European journal of clinica… (2002) | [10.1007/s00228-002-0504-z](https://doi.org/10.1007/s00228-002-0504-z) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=cisapride) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2A6` substrate, `CYP2B6` substrate, `CYP2C19` inhibitor/substrate, `CYP2C8` substrate, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HTR2A (target), HTR3A (target), HTR4 (target), KCNH2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 128 matched, 57 returned

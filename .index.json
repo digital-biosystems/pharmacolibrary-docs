@@ -9737,7 +9737,7 @@
    "A06AX09"
   ],
   "counts": {
-   "pd": 2,
+   "pd": 7,
    "pgx": 0,
    "pk": 0
   },
@@ -13050,7 +13050,7 @@
    "A06AX01"
   ],
   "counts": {
-   "pd": 17,
+   "pd": 26,
    "pgx": 0,
    "pk": 0
   },
@@ -13063,14 +13063,14 @@
   ],
   "dir": "drug_glycerol",
   "extracted": 0,
-  "last_change": "2026-09-11T12:33:44.371304+00:00",
+  "last_change": "2026-09-21T18:50:54.191859+00:00",
   "name": "glycerol",
   "needs_review": 0,
   "records": 1,
-  "rejected": 1,
+  "rejected": 0,
   "rendered": true,
   "slug": "glycerol",
-  "stale": 0
+  "stale": 1
  },
  "drug_glyceryl_trinitrate": {
   "atc_codes": [
@@ -15317,7 +15317,7 @@
    "A06AD11"
   ],
   "counts": {
-   "pd": 0,
+   "pd": 1,
    "pgx": 0,
    "pk": 0
   },

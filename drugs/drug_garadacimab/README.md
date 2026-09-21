@@ -37,6 +37,15 @@ Garadacimab received its first approval in Australia and the UK in January 2025,
 | <span class="pk-badge pk-badge--green">extracted</span> | [Pawaskar_2022](drugs/drug_garadacimab/pd_Pawaskar_2022_FXIIa.md) | Pawaskar D et al., Pharmacokinetic/pharmacodynamic modelin…, Clinical and translational… (2022) | [10.1111/cts.13192](https://doi.org/10.1111/cts.13192) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Pawaskar_2022](drugs/drug_garadacimab/pd_Pawaskar_2022_aPTT.md) | Pawaskar D et al., Pharmacokinetic/pharmacodynamic modelin…, Clinical and translational… (2022) | [10.1111/cts.13192](https://doi.org/10.1111/cts.13192) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=garadacimab) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: F12 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 3 matched, 3 returned

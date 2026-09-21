@@ -27,6 +27,26 @@ In addition to the above, tocofersolan has been studied as a promising applicati
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=tocofersolan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | bile duct | <sub>“…s readily taken up into enterocytes, even in the absence of bile salts; fat-soluble _d-alp…”</sub> | prose |
+| absorption | blood-brain barrier | `ABCB1` target | DrugBank actor |
+| absorption | kidney | `ABCB1` target | DrugBank actor |
+| absorption | liver | `ABCB1` target | DrugBank actor |
+| absorption | placenta | `ABCB1` target | DrugBank actor |
+| absorption | small intestine | `ABCB1` target | DrugBank actor |
+| metabolism | kidney | `CYP4F2` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate, `CYP4F2` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Vitamin E is primarily eliminated in the bile (75%) and feces, either as free tocopherol o…”</sub> | prose |
+| excretion | kidney | <sub>“…and feces, either as free tocopherol or in oxidized forms. Urine is a minor elimination ro…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ABCA1 (substrate), ABCG5 (substrate), ABCG8 (substrate), APOBR (substrate), NPC1L1 (substrate), SCARB1 (substrate), SEC14L2 (substrate), SEC14L3 (substrate), SEC14L4 (substrate), TTPA (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 31 matched, 48 returned

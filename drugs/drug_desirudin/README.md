@@ -32,6 +32,17 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Lefèvre_1997](drugs/drug_desirudin/pd_Lef_vre_1997_activated_partial_thromboplastin_time.md) | Lefèvre G et al., Effect of renal impairment on the pharm…, Clinical pharmacology and t… (1997) | [10.1016/S0009-9236(97)90151-X](https://doi.org/10.1016/S0009-9236(97)90151-X) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=desirudin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>“…at desirudin is primarily eliminated and metabolized by the kidney. The total urinary excr…”</sub> | prose |
+| excretion | kidney | <sub>“…Urine (40% to 50% as unchanged drug).…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CPA1 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 12 matched, 11 returned

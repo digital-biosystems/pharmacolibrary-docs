@@ -1,7 +1,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Argatroban_Akimoto2011_patients_undergoing_elective_percutan&quot;,&quot;label&quot;:&quot;Akimoto_2011_patients undergoing elective percutaneous coronary intervention&quot;,&quot;href&quot;:&quot;drugs/drug_argatroban/Argatroban_Akimoto2011_patients_undergoing_elective_percutan.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Argatroban_Cox2004_patients_undergoing_percutaneous_coronary&quot;,&quot;label&quot;:&quot;Cox_2004_patients undergoing percutaneous coronary intervention&quot;,&quot;href&quot;:&quot;drugs/drug_argatroban/Argatroban_Cox2004_patients_undergoing_percutaneous_coronary.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# activated clotting time — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# activated clotting time — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 - **paper:** `Cox_2004`
 - **model family:** `sigmoid_emax`
@@ -42,6 +42,23 @@ Closed-form check points (response, SI): `at_0` = 148, `at_EC50` = 306, `at_inf`
 Deviations:
 
 - `defaulted_parameters` — gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">accepted (caveats)</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.00%) |
+| `T2_direction` | pass | curve direction matches effect_direction |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 

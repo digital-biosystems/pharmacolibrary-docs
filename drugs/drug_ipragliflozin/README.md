@@ -37,6 +37,14 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Saito_2020](drugs/drug_ipragliflozin/pd_Saito_2020_HbA1c.md) | Saito M et al., Model-based Prediction of the Long-term…, Diabetes therapy : research… (2020) | [10.1007/s13300-020-00785-2](https://doi.org/10.1007/s13300-020-00785-2) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Sato_2024](drugs/drug_ipragliflozin/pd_Sato_2024_HbA1c.md) | Sato H et al., Model-based meta-analysis of HbA1c redu…, Scientific reports (2024) | [10.1038/s41598-024-76256-6](https://doi.org/10.1038/s41598-024-76256-6) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ipragliflozin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| target | kidney | `SLC5A2` modulator | DrugBank actor |
+
 ## Coverage
 
 - **PubMed hits:** 42 matched, 40 returned

@@ -29,6 +29,18 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Rehan_2023](drugs/drug_potassium_acetate/pd_Rehan_2023_Cytokine_secretion.md) | Rehan S et al., Signal peptide mimicry primes Sec61 for…, Nature chemical biology (2023) | [10.1038/s41589-023-01326-1](https://doi.org/10.1038/s41589-023-01326-1) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Rehan_2023](drugs/drug_potassium_acetate/pd_Rehan_2023_GLuc_activity.md) | Rehan S et al., Signal peptide mimicry primes Sec61 for…, Nature chemical biology (2023) | [10.1038/s41589-023-01326-1](https://doi.org/10.1038/s41589-023-01326-1) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=potassium_acetate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | bile duct | <sub>“…Mostly urine but also skin and feces.…”</sub> | prose |
+| excretion | kidney | <sub>“…Mostly urine but also skin and feces.…”</sub> | prose |
+| excretion | skin | <sub>“…Mostly urine but also skin and feces.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ATP1A1 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 23 matched, 26 returned

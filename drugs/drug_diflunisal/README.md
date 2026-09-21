@@ -35,6 +35,20 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Şenkardeş_2016_2](drugs/drug_diflunisal/pd_enkarde_2016_2_anti_HCV_activity.md) | Şenkardeş (2016) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Şenkardeş_2016_2](drugs/drug_diflunisal/pd_enkarde_2016_2_antiproliferative_activity.md) | Şenkardeş (2016) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=diflunisal) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| metabolism | kidney | `UGT1A9` inhibitor | DrugBank actor |
+| metabolism | liver | `UGT1A9` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…ministered dose. Little or no diflunisal is excreted in the feces.…”</sub> | prose |
+| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor), TTR (unknown), UGT1A8 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 81 matched, 60 returned

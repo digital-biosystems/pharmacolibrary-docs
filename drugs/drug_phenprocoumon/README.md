@@ -26,6 +26,18 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Abduljalil_2013_patients on steady-state phenprocoumon](drugs/drug_phenprocoumon/Phenprocoumon_Abduljalil2013_patients_on_steady_state_phenpr.md) | Abduljalil K et al., Quantifying the effect of covariates on…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0043-z](https://doi.org/10.1007/s40262-013-0043-z) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=phenprocoumon) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder/regulator, `ORM1` unknown | DrugBank actor |
+| metabolism | liver | `CYP2C8` substrate, `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: VKORC1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 3 matched, 3 returned

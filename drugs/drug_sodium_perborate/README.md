@@ -35,6 +35,14 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Xiang_2021](drugs/drug_sodium_perborate/pd_Xiang_2021_proliferation.md) | Xiang H et al., Preclinical characterization of bemarit…, mAbs (2021) | [10.1080/19420862.2021.1981202](https://doi.org/10.1080/19420862.2021.1981202) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Xiang_2021](drugs/drug_sodium_perborate/pd_Xiang_2021_specific_lysis.md) | Xiang H et al., Preclinical characterization of bemarit…, mAbs (2021) | [10.1080/19420862.2021.1981202](https://doi.org/10.1080/19420862.2021.1981202) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=sodium_perborate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skin | <sub>“…Dermal absorption is assumed to be very low due to the high hydrop…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 13 matched, 15 returned

@@ -39,6 +39,15 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ahn_2014](drugs/drug_calcium_carbonate/pd_Ahn_2014_Ca2.md) | Ahn JE et al., Modeling of the parathyroid hormone res…, The Korean journal of physi… (2014) | [10.4196/kjpp.2014.18.3.217](https://doi.org/10.4196/kjpp.2014.18.3.217) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ahn_2014](drugs/drug_calcium_carbonate/pd_Ahn_2014_PTH.md) | Ahn JE et al., Modeling of the parathyroid hormone res…, The Korean journal of physi… (2014) | [10.4196/kjpp.2014.18.3.217](https://doi.org/10.4196/kjpp.2014.18.3.217) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=calcium_carbonate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…mg or less taken with food. Oral bioavailability depends on intestinal pH, the presence of…”</sub> | prose |
+| excretion | bile duct | <sub>“…Excreted mainly in the feces. The majority of renally filtered calcium is reabsorbed in…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 143 matched, 76 returned

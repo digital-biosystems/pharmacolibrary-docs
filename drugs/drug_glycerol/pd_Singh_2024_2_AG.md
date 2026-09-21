@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia&quot;,&quot;label&quot;:&quot;Beylot_1987_healthy adults and insulin-dependent diabetic patients&quot;,&quot;href&quot;:&quot;drugs/drug_glycerol/Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia&quot;,&quot;label&quot;:&quot;Beylot_1987_healthy adults and insulin-dependent diabetic patients&quot;,&quot;href&quot;:&quot;drugs/drug_glycerol/Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # 2-arachidonoyl glycerol — PD  <span class="pk-badge pk-badge--red">rejected</span>

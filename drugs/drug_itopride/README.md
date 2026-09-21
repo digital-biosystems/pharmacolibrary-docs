@@ -30,6 +30,17 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Lim_2008](drugs/drug_itopride/pd_Lim_2008_colonic_transit_time.md) | Lim HC et al., Effect of itopride hydrochloride on the…, Yonsei medical journal (2008) | [10.3349/ymj.2008.49.3.472](https://doi.org/10.3349/ymj.2008.49.3.472) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Lim_2008](drugs/drug_itopride/pd_Lim_2008_propagation_velocity_of_peristaltic_contraction.md) | Lim HC et al., Effect of itopride hydrochloride on the…, Yonsei medical journal (2008) | [10.3349/ymj.2008.49.3.472](https://doi.org/10.3349/ymj.2008.49.3.472) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=itopride) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| target | blood | `ACHE` inhibitor | DrugBank actor |
+| target | neuromuscular junction | `ACHE` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: DRD2 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 38 matched, 31 returned

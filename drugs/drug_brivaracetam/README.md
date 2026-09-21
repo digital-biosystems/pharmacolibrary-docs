@@ -26,6 +26,19 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Schoemaker_2017_2_reference](drugs/drug_brivaracetam/Brivaracetam_Schoemaker2017v2_reference.md) | Schoemaker (2017) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=brivaracetam) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…with &lt;10% of the parent compound unchanged. &lt;1% excreted in feces [FDA Label].…”</sub> | prose |
+| excretion | kidney | <sub>“…\&gt;95% excreted in urine with &lt;10% of the parent compound unchanged. &lt;1% excreted in…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: SCN1A (inhibitor), SV2A (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 19 matched, 16 returned

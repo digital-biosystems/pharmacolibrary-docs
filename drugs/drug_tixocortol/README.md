@@ -23,6 +23,18 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=tixocortol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | blood | <sub>“…Tixocortol is rapidly modified within red blood cells and it is immediately metabolized by…”</sub> | prose |
+| metabolism | liver | <sub>“…thin red blood cells and it is immediately metabolized by a first-pass liver metabolism.[L…”</sub> | prose |
+| excretion | kidney | <sub>“…cortol has a rapid elimination after continuous metabolism. Urine analysis of oral adminis…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: HDAC2 (stimulator), NR3C1 (binder).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned

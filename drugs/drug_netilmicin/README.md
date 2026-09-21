@@ -28,6 +28,15 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Jauregizar_2003_reference](drugs/drug_netilmicin/Netilmicin_Jauregizar2003_reference.md) | Jauregizar N et al., Population pharmacokinetics of netilmic…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01783.x](https://doi.org/10.1046/j.1365-2125.2003.01783.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Siegel_1979_reference](drugs/drug_netilmicin/Netilmicin_Siegel1979_reference.md) | Siegel JD et al., Pharmacokinetic properties of netilmici…, Antimicrobial agents and ch… (1979) | [10.1128/AAC.15.2.246](https://doi.org/10.1128/AAC.15.2.246) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=netilmicin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skin | <sub>“…orbed orally. Topical absorption is also poor unless severe skin damage is present.…”</sub> | prose |
+| metabolism | kidney | <sub>“…tabolic transformation, typically 80% is recoverable in the urine within 24 hours…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 31 matched, 15 returned

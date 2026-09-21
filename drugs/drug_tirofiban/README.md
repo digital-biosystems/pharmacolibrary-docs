@@ -26,6 +26,17 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Emani_2020_pediatric patients undergoing aortopulmonary shunting](drugs/drug_tirofiban/Tirofiban_Emani2020_pediatric_patients_undergoing_aortopulmo.md) | Emani S et al., Platelet Inhibition With IV Glycoprotei…, Pediatric critical care med… (2020) | [10.1097/PCC.0000000000002292](https://doi.org/10.1097/PCC.0000000000002292) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=tirofiban) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | bile duct | <sub>“…of an administered dose appearing in urine and about 25% in feces, both largely as unchang…”</sub> | prose |
+| excretion | kidney | <sub>“…It is cleared from the plasma largely by renal excretion, with about 65% of an administere…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ITGA2B (target), ITGB3 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 14 matched, 14 returned

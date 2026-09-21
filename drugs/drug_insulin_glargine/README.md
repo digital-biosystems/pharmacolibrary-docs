@@ -36,6 +36,16 @@ Available as the brand name pro
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Sommerfeld_2010](drugs/drug_insulin_glargine/pd_Sommerfeld_2010_unknown.md) | Sommerfeld MR et al., In vitro metabolic and mitogenic signal…, PloS one (2010) | [10.1371/journal.pone.0009540](https://doi.org/10.1371/journal.pone.0009540) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=insulin_glargine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP1A2` inducer | DrugBank actor |
+
+<sub>Actors without a tissue in the table: IGF1R (activator), INS (modulator), INSR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 20 matched, 18 returned

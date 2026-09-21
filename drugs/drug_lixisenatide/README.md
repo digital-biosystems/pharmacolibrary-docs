@@ -39,6 +39,16 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Saporta_2026](drugs/drug_lixisenatide/pd_Saporta_2026_bacterial_counts.md) | Saporta R et al., Pharmacokinetic-pharmacodynamic modelin…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01788-25](https://doi.org/10.1128/aac.01788-25) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Takayanagi_2018](drugs/drug_lixisenatide/pd_Takayanagi_2018_HbA1c.md) | Takayanagi R et al., Evaluation of Drug Efficacy of GLP-1 Re…, Biological & pharmaceutical… (2018) | [10.1248/bpb.b17-00237](https://doi.org/10.1248/bpb.b17-00237) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=lixisenatide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…Lixisenatide is presumably eliminated via glomerular filtration and proteolytic degradatio…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: GLP1R (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 5663 matched, 101 returned

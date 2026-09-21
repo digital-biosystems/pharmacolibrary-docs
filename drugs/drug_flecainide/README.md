@@ -38,6 +38,26 @@ Flecainide was granted FDA approval on 31 October 1985.[L8875]
 | <span class="pk-badge pk-badge--green">extracted</span> | [Abriel_2000](drugs/drug_flecainide/pd_Abriel_2000_unknown.md) | Abriel H et al., Molecular pharmacology of the sodium ch…, Circulation (2000) | [10.1161/01.cir.102.8.921](https://doi.org/10.1161/01.cir.102.8.921) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Allan_1986](drugs/drug_flecainide/pd_Allan_1986_unknown.md) | Allan G et al., BW A256C, a chemically novel class 1 an…, British journal of pharmaco… (1986) | [10.1111/j.1476-5381.1986.tb10209.x](https://doi.org/10.1111/j.1476-5381.1986.tb10209.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=flecainide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…n metabolites.[A186853,L8878,L5056] 5% is eliminated in the feces.[A186853,L5056]…”</sub> | prose |
+| excretion | kidney | `SLC47A1` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `SLC47A1` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: KCNH2 (inhibitor), RYR2 (inhibitor), SCN4A (inhibitor), SCN5A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 31 matched, 31 returned

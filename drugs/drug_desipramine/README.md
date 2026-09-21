@@ -27,6 +27,32 @@
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Asiimwe_2024_reference](drugs/drug_desipramine/Desipramine_Asiimwe2024_reference.md) | Asiimwe IG et al., Machine-Learning Assisted Screening of…, The AAPS journal (2024) | [10.1208/s12248-024-00934-6](https://doi.org/10.1208/s12248-024-00934-6) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Gueorguieva_2010_reference](drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference.md) | Gueorguieva I et al., Desipramine, substrate for CYP2D6 activ…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03731.x](https://doi.org/10.1111/j.1365-2125.2010.03731.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=desipramine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor, `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor, `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| distribution | blood | `ORM1` unknown | DrugBank actor |
+| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` product, `CYP2B6` inhibitor, `CYP2D6` inhibitor/substrate, `CYP2E1` inhibitor, `CYP3A4` inhibitor, `SLC22A1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
+| excretion | liver | <sub>“…Desipramine is metabolized in the liver, and approximately 70% is excreted in the urine.…”</sub> | prose |
+| target | brain | `SLC6A4` inhibitor | DrugBank actor |
+| target | platelet | `SLC6A4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA2A (binder), ADRB1 (other), ADRB2 (target), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), DRD2 (binder), HRH1 (target), HTR1A (binder), HTR2A (target), HTR2C (binder), SLC6A2 (inhibitor), SMPD1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 76 matched, 20 returned

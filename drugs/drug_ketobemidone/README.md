@@ -29,6 +29,18 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Vandeputte_2023](drugs/drug_ketobemidone/pd_Vandeputte_2023_unknown.md) | Vandeputte MM et al., Detection, chemical analysis, and pharm…, Analytical and bioanalytica… (2023) | [10.1007/s00216-023-04722-7](https://doi.org/10.1007/s00216-023-04722-7) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ketobemidone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP3A4` substrate, `UGT1A9` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: GRIN1 (target), OPRD1 (target), OPRK1 (target), OPRM1 (target), PTGS1 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 21 matched, 21 returned

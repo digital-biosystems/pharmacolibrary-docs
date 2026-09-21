@@ -26,6 +26,21 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Rindi_1980_rats](drugs/drug_thiamine_vit_b1/ThiamineVitB1_Rindi1980_rats.md) | Rindi G et al., Thiamine content and turnover rates of…, Brain research (1980) | [10.1016/0006-8993(80)90619-8](https://doi.org/10.1016/0006-8993(80)90619-8) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=thiamine_vit_b1) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | small intestine | `SLC22A5` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | `SLC22A1` substrate | DrugBank actor |
+| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CYP4B1 (inducer), ENTPD5 (substrate), SLC19A2 (substrate), SLC19A3 (substrate), THTPA (substrate), TPK1 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 268 matched, 65 returned

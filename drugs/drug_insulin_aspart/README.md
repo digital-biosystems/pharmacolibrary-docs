@@ -38,6 +38,16 @@ M
 | <span class="pk-badge pk-badge--red">rejected</span> | [Heise_2014](drugs/drug_insulin_aspart/pd_Heise_2014_glucose_infusion_rate.md) | Heise T et al., Distinct Prandial and Basal Glucose-Low…, Diabetes therapy : research… (2014) | [10.1007/s13300-014-0070-2](https://doi.org/10.1007/s13300-014-0070-2) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Rüppel_2017](drugs/drug_insulin_aspart/pd_R_ppel_2017_glucose_infusion_rate.md) | Rüppel D et al., A Population Dose-Response Model for In…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12189](https://doi.org/10.1002/psp4.12189) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=insulin_aspart) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP1A2` inducer | DrugBank actor |
+
+<sub>Actors without a tissue in the table: IGF1R (activator), INS (modulator), INSR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 207 matched, 53 returned

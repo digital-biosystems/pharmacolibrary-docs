@@ -37,6 +37,23 @@ of anemia. It is also not indicated in patients not on dialysis.[L44958]
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Bailey_2019](drugs/drug_daprodustat/pd_Bailey_2019_hemoglobin.md) | Bailey CK et al., A randomized, 29-day, dose-ranging, eff…, BMC nephrology (2019) | [10.1186/s12882-019-1547-z](https://doi.org/10.1186/s12882-019-1547-z) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=daprodustat) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCG2` substrate | DrugBank actor |
+| absorption | liver | `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | small intestine | `ABCG2` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C8` inhibitor/substrate, `CYP3A4` substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…daprodustat, 74% of the radioactivity was recovered in the feces, and 21% of the radioacti…”</sub> | prose |
+| excretion | kidney | `SLC22A6` substrate, `SLC22A8` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: EGLN1 (inhibitor), EGLN2 (inhibitor), EGLN3 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned

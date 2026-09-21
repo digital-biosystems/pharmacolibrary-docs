@@ -30,6 +30,27 @@ Use of the first-generation antipsychotics (including haloperidol) is considered
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.4134)</sub><br><sub>route_to: `human_review`</sub> | [Franken_2017_reference](drugs/drug_haloperidol/Haloperidol_Franken2017_reference.md) | Franken LG et al., Population pharmacokinetics of haloperi…, European journal of clinica… (2017) | [10.1007/s00228-017-2283-6](https://doi.org/10.1007/s00228-017-2283-6) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Pilla_2013_reference](drugs/drug_haloperidol/Haloperidol_Pilla2013_reference.md) | Pilla (2013) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=haloperidol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | skeletal muscle | <sub>“…sm decreases its oral bioavailability to 40 - 75%. After intramuscular administration, the…”</sub> | prose |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate, `UGT1A9` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `CYP3A7` substrate, `UGT1A9` substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…, approximately 30% of the radioactivity is excreted in the urine following a single oral…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA2A (target), ADRA2B (target), ADRA2C (target), CBR1 (substrate), CHRM3 (target), DRD1 (target), DRD2 (target), DRD3 (inverse agonist), GRIN2B (target), HRH1 (target), HTR1A (target), HTR2A (target), HTR2C (target), HTR6 (target), HTR7 (target), MCHR1 (inhibitor), SIGMAR1 (target), SLC18A2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 169 matched, 20 returned

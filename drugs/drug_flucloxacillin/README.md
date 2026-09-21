@@ -28,6 +28,16 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Jager_2020_reference](drugs/drug_flucloxacillin/Flucloxacillin_Jager2020_reference.md) | Jager NGL et al., Optimization of flucloxacillin dosing r…, The Journal of antimicrobia… (2020) | [10.1093/jac/dkaa187](https://doi.org/10.1093/jac/dkaa187) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wallenburg_2021_reference](drugs/drug_flucloxacillin/Flucloxacillin_Wallenburg2021_reference.md) | Wallenburg E et al., High unbound flucloxacillin fraction in…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkab314](https://doi.org/10.1093/jac/dkab314) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=flucloxacillin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` inducer/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+
 ## Coverage
 
 - **PubMed hits:** 29 matched, 12 returned

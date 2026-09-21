@@ -29,6 +29,19 @@ As a laxative, it is used for the relief of occasional constipation by promoting
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=magnesium_hydroxide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…gnesium hydroxide is absorbed very slowly through the small intestine.…”</sub> | prose |
+| metabolism | kidney | <sub>“…not undergo any metabolism as it is rapidly excreted in the urine.…”</sub> | prose |
+| metabolism | small intestine | <sub>“…t is deficient in magnesium, very little is absorbed by the intestine. Overall, about 15%-…”</sub> | prose |
+| excretion | bile duct | <sub>“…the kidneys. The unabsorbed drug is mainly excreted in the feces and saliva.…”</sub> | prose |
+| excretion | kidney | <sub>“…rough the small intestines and then rapidly excreted in the urine through the kidneys. The…”</sub> | prose |
+| excretion | small intestine | <sub>“…pension may be absorbed as magnesium ions through the small intestines and then rapidly ex…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 33 matched, 30 returned

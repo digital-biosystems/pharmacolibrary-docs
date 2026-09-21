@@ -33,6 +33,19 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Rönnpagel_2025](drugs/drug_trospium/pd_R_nnpagel_2025_OCT1_mediated_uptake.md) | Rönnpagel V et al., Substrate-specific inhibition of organi…, Drug metabolism and disposi… (2025) | [10.1016/j.dmd.2025.100074](https://doi.org/10.1016/j.dmd.2025.100074) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=trospium) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2D6` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…chloride, the majority of the dose (85.2%) was recovered in feces and a smaller amount (5.…”</sub> | prose |
+| excretion | kidney | <sub>“…es and a smaller amount (5.8% of the dose) was recovered in urine; 60% of the radioactivit…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CHRM1 (target), CHRM3 (target), CHRM5 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 127 matched, 84 returned

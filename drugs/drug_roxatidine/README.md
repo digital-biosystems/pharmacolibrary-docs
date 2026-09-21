@@ -26,6 +26,15 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Gladziwa_1995_reference](drugs/drug_roxatidine/Roxatidine_Gladziwa1995_reference.md) | Gladziwa U et al., Pharmacokinetics and pharmacodynamics o…, British journal of clinical… (1995) | [10.1111/j.1365-2125.1995.tb04423.x](https://doi.org/10.1111/j.1365-2125.1995.tb04423.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=roxatidine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: HRH2 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 46 matched, 62 returned

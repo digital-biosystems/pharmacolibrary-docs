@@ -37,6 +37,15 @@ HES is a general term and can be sub-classified according to average molecular w
 | <span class="pk-badge pk-badge--red">rejected</span> | [Singh_2022](drugs/drug_hydroxyethylstarch/pd_Singh_2022_blood_eosinophil_count.md) | Singh D et al., A Phase 1 study of the long-acting anti…, British journal of clinical… (2022) | [10.1111/bcp.15002](https://doi.org/10.1111/bcp.15002) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zecchin_2026](drugs/drug_hydroxyethylstarch/pd_Zecchin_2026_blood_eosinophil_count.md) | Zecchin C et al., Straight to Phase III: Model-Informed A…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70183](https://doi.org/10.1002/cpt.70183) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=hydroxyethylstarch) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>“…When given intravenously, molecules smaller than the renal threshold (60,000-70,000 dalton…”</sub> | prose |
+| excretion | kidney | <sub>“…2 % of HES was excreted as hydroxyethyl starch molecules in urine within 72 hours.…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 236 matched, 113 returned

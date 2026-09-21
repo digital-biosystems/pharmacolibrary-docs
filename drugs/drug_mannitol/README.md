@@ -30,6 +30,16 @@ Mannitol is also indicated as add-on maintenance therapy for improving pulmonary
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Noorani_2022_awake young adult mice](drugs/drug_mannitol/Mannitol_Noorani2022_awake_young_adult_mice.md) | Noorani B et al., A Semi-Physiological Three-Compartment…, Pharmaceutical research (2022) | [10.1007/s11095-022-03175-4](https://doi.org/10.1007/s11095-022-03175-4) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=mannitol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Approximately 7% of ingested mannitol is absorbed during gastrointestinal perfusion in ure…”</sub> | prose |
+| metabolism | liver | <sub>“…is metabolized only slightly, if at all, to glycogen in the liver.…”</sub> | prose |
+| excretion | kidney | <sub>“…Mannitol is primarily excreted unchanged in the urine. Following oral inhalation of 635 mg…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 98 matched, 20 returned

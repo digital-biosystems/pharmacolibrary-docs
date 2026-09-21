@@ -35,6 +35,27 @@ Chloroquine is also used off label for the treatment of rheumatic diseases,[A191
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Karunajeewa_2010_reference](drugs/drug_chloroquine/Chloroquine_Karunajeewa2010_reference.md) | Karunajeewa HA et al., Pharmacokinetics of chloroquine and mon…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.01269-09](https://doi.org/10.1128/AAC.01269-09) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Yao_2021_reference](drugs/drug_chloroquine/Chloroquine_Yao2021_reference.md) | Yao X et al., Population-based meta-analysis of chlor…, European journal of clinica… (2021) | [10.1007/s00228-020-03032-6](https://doi.org/10.1007/s00228-020-03032-6) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=chloroquine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C8` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate, `CYP3A5` substrate, `GSTM1` inhibitor | DrugBank actor |
+| metabolism | lung | `CYP1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…Chloroquine is predominantly eliminated in the urine.[A191676] 50% of a dose is recovered…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ACE2 (modulator), ACKR1 (modulator), GSTA2 (inhibitor), HMGB1 (inhibitor), TLR9 (inhibitor), TNF (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 2723 matched, 67 returned

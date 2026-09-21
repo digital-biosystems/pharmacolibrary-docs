@@ -26,6 +26,17 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Powell_1975_reference](drugs/drug_phenolphthalein/Phenolphthalein_Powell1975_reference.md) | Powell GM et al., A model system for investigating the bi…, The Biochemical journal (1975) | [10.1042/bj1480303](https://doi.org/10.1042/bj1480303) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=phenolphthalein) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | `UGT1A9` unknown | DrugBank actor |
+| metabolism | liver | `UGT1A9` unknown | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ESR1 (target), NR1I2 (unknown), NR1I3 (unknown), SHBG (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned

@@ -26,6 +26,17 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [el_1978_reference](drugs/drug_ethosuximide/Ethosuximide_el1978_reference.md) | el Sayed MA et al., Pharmacokinetics of ethosuximide in the…, Archives internationales de… (1978) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ethosuximide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2E1` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CACNA1G (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 33 matched, 32 returned

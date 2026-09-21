@@ -46,6 +46,31 @@ Dexamethasone was granted FDA approval on 30 October 1958.[L10695] In a press re
 | <span class="pk-badge pk-badge--red">rejected</span> | [Snaterse_2023](drugs/drug_dexamethasone/pd_Snaterse_2023_cell_proliferation.md) | Snaterse G et al., Androgen receptor mutations modulate ac…, Prostate cancer and prostat… (2023) | [10.1038/s41391-022-00491-z](https://doi.org/10.1038/s41391-022-00491-z) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Snaterse_2023](drugs/drug_dexamethasone/pd_Snaterse_2023_luciferase_activity.md) | Snaterse G et al., Androgen receptor mutations modulate ac…, Prostate cancer and prostat… (2023) | [10.1038/s41391-022-00491-z](https://doi.org/10.1038/s41391-022-00491-z) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dexamethasone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
+| absorption | skeletal muscle | <sub>“…Absorption via the intramuscular route is slower than via the intravenous route.[L10701] A…”</sub> | prose |
+| absorption | small intestine | `ABCB1` inducer/inhibitor/substrate, `ABCG2` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inducer/substrate | DrugBank actor |
+| metabolism | liver | `CYP2A6` inducer, `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inducer, `CYP2E1` inducer, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer/substrate, `CYP3A7` inducer/substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` inducer/inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inducer/inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` inducer/substrate | DrugBank actor |
+| excretion | kidney | `ABCC2` inducer, `SLC22A8` substrate | DrugBank actor |
+| excretion | liver | `ABCB11` inducer, `ABCC2` inducer | DrugBank actor |
+| excretion | small intestine | `ABCC2` inducer | DrugBank actor |
+| target | adrenal gland | `CYP11B1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ANXA1 (target), CYP17A1 (inhibitor), CYP3A43 (inducer), CYP4A11 (inducer), HSD11B1 (substrate), HSD11B2 (substrate), NOS2 (negative modulator), NR0B1 (stimulator), NR1I2 (target), NR3C1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 1173 matched, 85 returned

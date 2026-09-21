@@ -30,6 +30,19 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Glusa_1996](drugs/drug_pizotifen/pd_Glusa_1996_unknown.md) | Glusa E et al., Endothelial 5-HT receptors mediate rela…, British journal of pharmaco… (1996) | [10.1111/j.1476-5381.1996.tb15990.x](https://doi.org/10.1111/j.1476-5381.1996.tb15990.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Glusa_2000](drugs/drug_pizotifen/pd_Glusa_2000_unknown.md) | Glusa E et al., Further evidence that 5-HT-induced rela…, British journal of pharmaco… (2000) | [10.1038/sj.bjp.0703341](https://doi.org/10.1038/sj.bjp.0703341) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=pizotifen) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>“…e accounts for at least 50% of the plasma and 60-70% of the urinary-excreted radioactivity…”</sub> | prose |
+| metabolism | liver | <sub>“…Pizotifen is extensively metabolized in the liver, where it primarily undergoes N-glucuron…”</sub> | prose |
+| excretion | bile duct | <sub>“…of the total orally administered dose is excreted into the feces. Less than 1% of the tota…”</sub> | prose |
+| excretion | kidney | <sub>“…he feces. Less than 1% of the total dose is excreted in the urine as the unchanged parent…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), ADRA2A (target), ADRA2B (target), ADRA2C (target), CHRM1 (target), CHRM2 (target), CHRM3 (target), HRH1 (target), HTR1A (partial agonist), HTR1B (target), HTR2A (target), HTR2B (target), HTR2C (target), UGT2B10 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 33 matched, 31 returned

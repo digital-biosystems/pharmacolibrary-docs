@@ -36,6 +36,15 @@ Along with other blood coagulation factors, it is used to reverse acquired coagu
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Jonsson_2021](drugs/drug_coagulation_factor_ix/pd_Jonsson_2021_ABR.md) | Jonsson F et al., Exposure-Bleeding Count Modeling of Emi…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01006-0](https://doi.org/10.1007/s40262-021-01006-0) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=coagulation_factor_ix) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: F10 (activator), F11 (target), F7 (target), F8 (cofactor), GGCX (substrate), LRP1 (binder).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned

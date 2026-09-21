@@ -35,6 +35,16 @@ Misoprostol was granted FDA approval on 27 December 1988.[L7616]
 | <span class="pk-badge pk-badge--green">extracted</span> | [Nazabal_2023](drugs/drug_misoprostol/pd_Nazabal_2023_LC_neuron_firing_rate.md) | Nazabal A et al., Inhibition of rat locus coeruleus neuro…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1290605](https://doi.org/10.3389/fphar.2023.1290605) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Norel_1999](drugs/drug_misoprostol/pd_Norel_1999_relaxation.md) | Norel X et al., Prostanoid receptors involved in the re…, British journal of pharmaco… (1999) | [10.1038/sj.bjp.0702392](https://doi.org/10.1038/sj.bjp.0702392) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=misoprostol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…radiolabelled oral dose of misoprostol is recovered in the urine.[A181574,L7619]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: PTGER1 (target), PTGER2 (target), PTGER3 (target), PTGER4 (target), PTGIR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 35 matched, 24 returned

@@ -29,6 +29,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Einstein_1994](drugs/drug_dopexamine/pd_Einstein_1994_cardiac_contractility.md) | Einstein R et al., Cardiovascular actions of dopexamine in…, British journal of pharmaco… (1994) | [10.1111/j.1476-5381.1994.tb14044.x](https://doi.org/10.1111/j.1476-5381.1994.tb14044.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Einstein_1994](drugs/drug_dopexamine/pd_Einstein_1994_heart_rate.md) | Einstein R et al., Cardiovascular actions of dopexamine in…, British journal of pharmaco… (1994) | [10.1111/j.1476-5381.1994.tb14044.x](https://doi.org/10.1111/j.1476-5381.1994.tb14044.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dopexamine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: DRD2 (modulator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 60 matched, 86 returned

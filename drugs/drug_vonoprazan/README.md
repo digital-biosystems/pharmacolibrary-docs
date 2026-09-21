@@ -34,6 +34,27 @@ In February 2015, vonoprazan was first marketed in Japan for the treatment of ac
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Echizen_2016_reference](drugs/drug_vonoprazan/Vonoprazan_Echizen2016_reference.md) | Echizen H, The First-in-Class Potassium-Competitiv…, Clinical pharmacokinetics (2016) | [10.1007/s40262-015-0326-7](https://doi.org/10.1007/s40262-015-0326-7) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=vonoprazan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` substrate, `CYP2C19` inhibitor/substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Vonoprazan is excreted in urine (67%) and feces (31%). Approximately 8% and 1.4% of the do…”</sub> | prose |
+| excretion | kidney | <sub>“…Vonoprazan is excreted in urine (67%) and feces (31%). Approximately 8% and 1.4% of the do…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ATP4A (inhibitor), ATP4A (modulator), ATP4B (modulator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned

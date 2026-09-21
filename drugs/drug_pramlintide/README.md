@@ -32,6 +32,17 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Parkinson_2019](drugs/drug_pramlintide/pd_Parkinson_2019_HbA1c.md) | Parkinson J et al., Model-based characterization of the rel…, Diabetes, obesity & metabol… (2019) | [10.1111/dom.13664](https://doi.org/10.1111/dom.13664) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Pons_2025](drugs/drug_pramlintide/pd_Pons_2025_k_empt.md) | Pons Torres B et al., In silico evaluation of pramlintide dos…, Computers in biology and me… (2025) | [10.1016/j.compbiomed.2025.110447](https://doi.org/10.1016/j.compbiomed.2025.110447) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=pramlintide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>“…Metabolized primarily by the kidneys.…”</sub> | prose |
+| excretion | kidney | <sub>“…Pramlintide is metabolized primarily by the kidneys.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CALCR (target), GLP1R (target), RAMP1 (target), RAMP2 (target), RAMP3 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 35 matched, 32 returned

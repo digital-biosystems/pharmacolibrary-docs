@@ -62,6 +62,21 @@ It
 | <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2019](drugs/drug_doxycycline/pd_Zhang_2019_E.md) | Zhang H et al., Pharmacokinetic/Pharmacodynamic Integra…, Frontiers in pharmacology (2019) | [10.3389/fphar.2019.01088](https://doi.org/10.3389/fphar.2019.01088) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2022](drugs/drug_doxycycline/pd_Zhang_2022_bacterial_burden_reduction.md) | Zhang H et al., PK/PD integration of florfenicol alone…, Frontiers in veterinary sci… (2022) | [10.3389/fvets.2022.975673](https://doi.org/10.3389/fvets.2022.975673) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=doxycycline) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder/substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…Tetracyclines, including doxycycline, are concentrated in bile by the liver and excreted i…”</sub> | prose |
+| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
+| excretion | liver | <sub>“…nes, including doxycycline, are concentrated in bile by the liver and excreted in the urin…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: 30S ribosomal protein (inhibitor), ABCB5 (inducer).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 164 matched, 60 returned

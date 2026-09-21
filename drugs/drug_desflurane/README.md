@@ -28,6 +28,19 @@ Desflurane was granted FDA approval on 18 September 1992.[L30285]
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hendrickx_2006_reference](drugs/drug_desflurane/Desflurane_Hendrickx2006_reference.md) | Hendrickx JF et al., Do distribution volumes and clearances…, BMC anesthesiology (2006) | [10.1186/1471-2253-6-7](https://doi.org/10.1186/1471-2253-6-7) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=desflurane) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | `CYP2E1` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…of the metabolite trifluoroacetic acid is eliminated in the urine[A226385] and only 0.02%…”</sub> | prose |
+| excretion | lung | <sub>“…Initially, desflurane is rapidly eliminated from the lungs.[A226530] A small amount of the…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ATP2C1 (inhibitor), ATP5F1D (other/unknown), GABRA1 (positive allosteric modulator), GLRA1 (target), GRIA1 (target), KCNA1 (inducer), MT-ND1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 49 matched, 20 returned

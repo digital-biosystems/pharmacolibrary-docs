@@ -34,6 +34,26 @@ In its ophthalmic formulation, levofloxacin is indicated for the treatment of ba
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Setiawan_2022_median](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_median.md) | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [He_2024_reference](drugs/drug_levofloxacin/Levofloxacin_He2024_reference.md) | He YY et al., Population pharmacokinetics and dose op…, British journal of clinical… (2024) | [10.1111/bcp.16003](https://doi.org/10.1111/bcp.16003) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=levofloxacin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `SLCO1A2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate, `SLC22A4` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `SLC22A4` inhibitor, `SLCO1A2` substrate | DrugBank actor |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| metabolism | kidney | <sub>“…less than 5% of the administered dose was recovered in the urine as these metabolites, ind…”</sub> | prose |
+| metabolism | liver | `CYP2C9` inhibitor, `SLC22A1` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…rine within 48 hours and less than 4% was eliminated in the feces within 72 hours.[L11638]…”</sub> | prose |
+| excretion | kidney | `SLC22A2` inhibitor, `SLC47A1` inhibitor/substrate, `SLC47A2` inhibitor | DrugBank actor |
+| excretion | liver | `SLC47A1` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: SLCO4C1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 237 matched, 20 returned

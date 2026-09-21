@@ -31,6 +31,23 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Tokuoka_2014](drugs/drug_eletriptan/pd_Tokuoka_2014_headache_relief.md) | Tokuoka K et al., Theory-based analysis of clinical effic…, The journal of headache and… (2014) | [10.1186/1129-2377-15-85](https://doi.org/10.1186/1129-2377-15-85) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Tokuoka_2015](drugs/drug_eletriptan/pd_Tokuoka_2015_headache_recurrence_rate.md) | Tokuoka K et al., Theoretical analysis of headache recurr…, The journal of headache and… (2015) | [10.1186/s10194-015-0558-9](https://doi.org/10.1186/s10194-015-0558-9) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=eletriptan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2A6` inducer, `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HTR1A (partial agonist), HTR1B (target), HTR1D (target), HTR1E (modulator), HTR1F (target), HTR2B (modulator), HTR7 (modulator), PTGS1 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 57 matched, 83 returned

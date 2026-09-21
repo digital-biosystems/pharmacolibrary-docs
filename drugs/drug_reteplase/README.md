@@ -32,6 +32,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2023](drugs/drug_reteplase/pd_Yang_2023_fibrinogen_concentration.md) | Yang Y et al., In Silico Study of Different Thrombolyt…, Pharmaceutics (2023) | [10.3390/pharmaceutics15030797](https://doi.org/10.3390/pharmaceutics15030797) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2023](drugs/drug_reteplase/pd_Yang_2023_intracranial_hemorrhage_risk.md) | Yang Y et al., In Silico Study of Different Thrombolyt…, Pharmaceutics (2023) | [10.3390/pharmaceutics15030797](https://doi.org/10.3390/pharmaceutics15030797) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=reteplase) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: FGA (unknown), PLG (activator), SERPINE1 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 15 matched, 13 returned

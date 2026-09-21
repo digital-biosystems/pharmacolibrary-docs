@@ -48,6 +48,18 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Soares_2018](drugs/drug_sodium_acetate/pd_Soares_2018_LDA.md) | Soares AMS et al., Myracrodruon urundeuva seed exudates pr…, PloS one (2018) | [10.1371/journal.pone.0200848](https://doi.org/10.1371/journal.pone.0200848) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Soares_2018](drugs/drug_sodium_acetate/pd_Soares_2018_LEIA.md) | Soares AMS et al., Myracrodruon urundeuva seed exudates pr…, PloS one (2018) | [10.1371/journal.pone.0200848](https://doi.org/10.1371/journal.pone.0200848) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=sodium_acetate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…In liver, sodium acetate is being metabolized into bicarbonate. To f…”</sub> | prose |
+| excretion | bile duct | <sub>“…xcreted mainly in the urine. Some sodium is excreted in the feces, and small amounts may a…”</sub> | prose |
+| excretion | kidney | <sub>“…the sodium and bicarbonate ions are excreted mainly in the urine. Some sodium is excreted…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ACSS2 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 198 matched, 86 returned

@@ -35,6 +35,17 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'standard error' is a table statistic/structure column, not a stud…</sub><br><sub>route_to: `human_review`</sub> | [Phelps_2013_standard_error](drugs/drug_inositol/Inositol_Phelps2013_standard_error.md) | Phelps DL et al., Pharmacokinetics and safety of a single…, Pediatric research (2013) | [10.1038/pr.2013.162](https://doi.org/10.1038/pr.2013.162) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'standard error' is a table statistic/structure column, not a stud…</sub><br><sub>route_to: `human_review`</sub> | [Phelps_2013_standard_error](drugs/drug_inositol/Inositol_Phelps2013_standard_error.md) | Phelps DL et al., Pharmacokinetics and safety of a single…, Pediatric research (2013) | [10.1038/pr.2013.162](https://doi.org/10.1038/pr.2013.162) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=inositol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Inositol is absorbed from the small intestine.[T184] In patients with inositol deficiency,…”</sub> | prose |
+| excretion | kidney | <sub>“…Most of the administered dose is excreted in urine.[A32809]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: APP (inhibitor), SLC5A3 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 1137 matched, 20 returned

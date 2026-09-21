@@ -23,6 +23,17 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=bemiparin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…This drug is eliminated by the renal and hepatic routes. Elimination is prolonged in those…”</sub> | prose |
+| excretion | liver | <sub>“…This drug is eliminated by the renal and hepatic routes. Elimination is prolonged in those…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: F10 (target), SERPINC1 (target), SERPIND1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 165 matched, 41 returned

@@ -50,6 +50,19 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ma_2020](drugs/drug_senna_glycosides/pd_Ma_2020_Insulin.md) | Ma L et al., Sennoside A Induces GLP-1 Secretion Thr…, Diabetes, metabolic syndrom… (2020) | [10.2147/DMSO.S247251](https://doi.org/10.2147/DMSO.S247251) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Satoh_2001](drugs/drug_senna_glycosides/pd_Satoh_2001_unknown.md) | Satoh K et al., [The effects of kampo-formulation and t…, Yakugaku zasshi : Journal o… (2001) | [10.1248/yakushi.121.173](https://doi.org/10.1248/yakushi.121.173) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=senna_glycosides) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…&lt;10% is absorbed from the gut mostly in the form of the active metabolite rheinanthrone […”</sub> | prose |
+| metabolism | small intestine | <sub>“…Sennosides A and B are metabolised to sennidins A and B by gut bacteria[A19239]. Sennidins…”</sub> | prose |
+| excretion | bile duct | <sub>“…3-6% of metabolites are excreted in urine with some in bile. &gt;90% of sennosides are excret…”</sub> | prose |
+| excretion | kidney | <sub>“…3-6% of metabolites are excreted in urine with some in bile. &gt;90% of sennosides are excret…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: AQP3 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 39 matched, 59 returned

@@ -51,6 +51,16 @@ The use of amikacin in the treatmen
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Alhadab_2018](drugs/drug_amikacin/pd_Alhadab_2018_CFU_ml.md) | Alhadab AA et al., Amikacin Pharmacokinetic-Pharmacodynami…, Antimicrobial agents and ch… (2018) | [10.1128/AAC.01781-17](https://doi.org/10.1128/AAC.01781-17) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=amikacin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | <sub>“…single dose of amikacin of 7.5 mg/kg in adults with normal renal function, peak plasma ami…”</sub> | prose |
+| absorption | skeletal muscle | <sub>“…Rapidly absorbed after intramuscular administration. Rapid absorption occurs from the peri…”</sub> | prose |
+| excretion | kidney | <sub>“…This drug is eliminated by the kidneys. In adults with normal renal function, 94-98% of a…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 568 matched, 66 returned

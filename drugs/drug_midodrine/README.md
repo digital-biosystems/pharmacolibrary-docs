@@ -23,6 +23,19 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=midodrine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | brain | <sub>“…. As desglymidodrine displays poor diffusibility across the blood-brain barrier, it is exp…”</sub> | prose |
+| absorption | small intestine | `SLC15A1` unknown | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 46 matched, 55 returned

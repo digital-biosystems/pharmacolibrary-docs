@@ -26,6 +26,15 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Abboud_2009_reference](drugs/drug_drotrecogin_alfa/DrotrecoginAlfa_Abboud2009_reference.md) | Abboud I et al., Pharmacokinetics of epinephrine in pati…, Critical care (London, Engl… (2009) | [10.1186/cc7972](https://doi.org/10.1186/cc7972) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=drotrecogin_alfa) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: F2 (unknown), F5 (inhibitor), F8 (inhibitor), PF4 (unknown), PROCR (unknown), PROS1 (unknown), SERPINA5 (unknown), SERPINB6 (unknown), SERPINE1 (unknown), THBD (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 132 matched, 60 returned

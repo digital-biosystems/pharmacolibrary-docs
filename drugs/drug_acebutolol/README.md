@@ -23,6 +23,25 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=acebutolol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…al mechanisms 50% to 60%, which includes excretion into the bile and direct passage throug…”</sub> | prose |
+| excretion | kidney | <sub>“…Elimination via renal excretion is approximately 30% to 40% and by non-renal mech…”</sub> | prose |
+| excretion | small intestine | <sub>“…udes excretion into the bile and direct passage through the intestinal wall.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADRB1 (partial agonist), ADRB2 (partial agonist).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 47 matched, 21 returned

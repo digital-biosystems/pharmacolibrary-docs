@@ -33,6 +33,22 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Al-Huniti_2017](drugs/drug_naloxegol/pd_Al_Huniti_2017_SBM_response.md) | Al-Huniti N et al., Population Exposure-Response Modeling S…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12229](https://doi.org/10.1002/psp4.12229) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Al-Huniti_2017](drugs/drug_naloxegol/pd_Al_Huniti_2017_dropout.md) | Al-Huniti N et al., Population Exposure-Response Modeling S…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12229](https://doi.org/10.1002/psp4.12229) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=naloxegol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | bile duct | <sub>“…total of 6 metabolites were identified in plasma, urine and feces. These metabolites were…”</sub> | prose |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | <sub>“…humans, a total of 6 metabolites were identified in plasma, urine and feces. These metabol…”</sub> | prose |
+| metabolism | liver | `CYP2C19` inhibitor, `CYP2D6` inhibitor, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Feces: 68% after oral administration. Urine: 16% after oral admi…”</sub> | prose |
+| excretion | kidney | <sub>“…Feces: 68% after oral administration. Urine: 16% after oral administration.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: OPRM1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 21 matched, 21 returned

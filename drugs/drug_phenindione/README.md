@@ -29,6 +29,17 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Comets_2012](drugs/drug_phenindione/pd_Comets_2012_INR.md) | Comets E et al., Pharmacokinetic and pharmacodynamic var…, Clinical pharmacology and t… (2012) | [10.1038/clpt.2011.309](https://doi.org/10.1038/clpt.2011.309) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=phenindione) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Absorbed slowly from the gastrointestinal tract.…”</sub> | prose |
+| metabolism | liver | <sub>“…Hepatic.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: VKORC1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 7 matched, 5 returned

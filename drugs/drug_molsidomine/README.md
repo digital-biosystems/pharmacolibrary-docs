@@ -23,6 +23,17 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=molsidomine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>“…ed to be 56% and metabolism is reported extensive by Liver. Renal Excretion accounts for 9…”</sub> | prose |
+| metabolism | liver | <sub>“…is noted to be 56% and metabolism is reported extensive by Liver. Renal Excretion accounts…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: GUCY1A2 (inducer), GUCY1A2 (target), PDE5A (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 92 matched, 93 returned

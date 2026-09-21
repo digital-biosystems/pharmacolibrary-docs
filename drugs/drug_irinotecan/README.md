@@ -72,6 +72,34 @@ Irinotecan liposome injection is used in adults for the treatment of:
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zhu_2023_vtis](drugs/drug_irinotecan/Irinotecan_Zhu2023_vtis.md) | Zhu J et al., Translational Pharmacokinetic/Pharmacod…, Pharmaceutics (2023) | [10.3390/pharmaceutics15092274](https://doi.org/10.3390/pharmaceutics15092274) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zhu_2023_vtis](drugs/drug_irinotecan/Irinotecan_Zhu2023_vtis.md) | Zhu J et al., Translational Pharmacokinetic/Pharmacod…, Pharmaceutics (2023) | [10.3390/pharmaceutics15092274](https://doi.org/10.3390/pharmaceutics15092274) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=irinotecan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder/substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` substrate | DrugBank actor |
+| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | lung | `ABCC1` substrate | DrugBank actor |
+| distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate, `UGT1A9` substrate | DrugBank actor |
+| metabolism | liver | `CES2` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `CYP3A7` substrate, `SLCO1B1` inhibitor, `UGT1A1` substrate, `UGT1A9` substrate | DrugBank actor |
+| metabolism | small intestine | `CES2` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `UGT1A1` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…e are 11% to 20%, &lt;1%, and 3%, respectively. The cumulative biliary and urinary excretion…”</sub> | prose |
+| excretion | kidney | `ABCC2` substrate | DrugBank actor |
+| excretion | liver | `ABCC2` substrate | DrugBank actor |
+| excretion | small intestine | `ABCC2` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: TOP1 (inhibitor), TOP1MT (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 95 matched, 20 returned

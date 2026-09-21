@@ -26,6 +26,23 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Abdel-Rahman_2004_reference](drugs/drug_nizatidine/Nizatidine_AbdelRahman2004_reference.md) | Abdel-Rahman SM et al., Developmental pharmacokinetics and phar…, Journal of pediatric gastro… (2004) | [10.1097/00005176-200404000-00015](https://doi.org/10.1097/00005176-200404000-00015) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=nizatidine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
+| metabolism | kidney | <sub>“…tagonist, which is the principal metabolite excreted in the urine. Other likely metabolite…”</sub> | prose |
+| metabolism | liver | `BCHE` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HRH2 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 46 matched, 42 returned

@@ -50,6 +50,21 @@ In addition to the above, epinephrine is used as an over the counter (OTC) agent
 | <span class="pk-badge pk-badge--red">rejected</span> | [Yoo_2015](drugs/drug_epinephrine/pd_Yoo_2015_visual_analog_scale_2.md) | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Yoo_2015](drugs/drug_epinephrine/pd_Yoo_2015_visual_analog_scale_3.md) | Yoo H et al., Mechanism-based population pharmacokine…, European journal of clinica… (2015) | [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=epinephrine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skeletal muscle | <sub>“…ears rapidly from the blood stream. Subcutaneously or I.M. (intramuscular) administered ep…”</sub> | prose |
+| metabolism | brain | `COMT` substrate, `MAOA` substrate | DrugBank actor |
+| metabolism | kidney | `COMT` substrate | DrugBank actor |
+| metabolism | liver | `COMT` substrate, `CYP2C9` inhibitor, `CYP3A4` inhibitor, `MAOA` substrate, `SLC22A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor, `MAOA` substrate | DrugBank actor |
+| excretion | kidney | `SLC22A2` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), ADRA2A (target), ADRA2B (target), ADRB1 (target), ADRB2 (target), TNF (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 621 matched, 66 returned

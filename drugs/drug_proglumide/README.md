@@ -24,6 +24,15 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Martins_2006](drugs/drug_proglumide/pd_Martins_2006_unknown.md) | Martins SR et al., Activation of neural cholecystokinin-1…, Brazilian journal of medica… (2006) | [10.1590/s0100-879x2006000200014](https://doi.org/10.1590/s0100-879x2006000200014) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Blackmore_1992](drugs/drug_proglumide/pd_Blackmore_1992_unknown.md) | Blackmore M et al., Autocrine stimulation of growth of AR4-…, British journal of cancer (1992) | [10.1038/bjc.1992.212](https://doi.org/10.1038/bjc.1992.212) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=proglumide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CCKAR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 87 matched, 55 returned

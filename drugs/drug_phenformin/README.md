@@ -54,6 +54,18 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Renz_2025](drugs/drug_phenformin/pd_Renz_2025_infection_rate.md) | Renz A et al., Metabolic modeling elucidates phenformi…, Communications biology (2025) | [10.1038/s42003-025-08148-y](https://doi.org/10.1038/s42003-025-08148-y) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Renz_2025](drugs/drug_phenformin/pd_Renz_2025_viral_titer.md) | Renz A et al., Metabolic modeling elucidates phenformi…, Communications biology (2025) | [10.1038/s42003-025-08148-y](https://doi.org/10.1038/s42003-025-08148-y) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=phenformin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate, `SLC22A1` substrate | DrugBank actor |
+| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: KCNJ8 (inhibitor), PRKAA1 (activator), PRKAB1 (activator), PRKAG1 (activator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 94 matched, 94 returned

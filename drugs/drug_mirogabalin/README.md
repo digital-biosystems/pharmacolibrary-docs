@@ -35,6 +35,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kitano_2019](drugs/drug_mirogabalin/pd_Kitano_2019_spontaneous_activity.md) | Kitano Y et al., [Pharmacological, pharmacodynamics, and…, Nihon yakurigaku zasshi. Fo… (2019) | [10.1254/fpj.154.352](https://doi.org/10.1254/fpj.154.352) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kitano_2019](drugs/drug_mirogabalin/pd_Kitano_2019_von_Frey_threshold.md) | Kitano Y et al., [Pharmacological, pharmacodynamics, and…, Nihon yakurigaku zasshi. Fo… (2019) | [10.1254/fpj.154.352](https://doi.org/10.1254/fpj.154.352) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=mirogabalin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CACNA2D1 (modulator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 18 matched, 18 returned

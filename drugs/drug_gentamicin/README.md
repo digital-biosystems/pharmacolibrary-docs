@@ -28,6 +28,18 @@ Although gentamicin is well-established and may be used in a variety of clinical
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Albanell-Fernández_2025_reference](drugs/drug_gentamicin/Gentamicin_AlbanellFernndez2025_reference.md) | Albanell-Fernández M et al., A Review of Vancomycin, Gentamicin, and…, Clinical pharmacokinetics (2025) | [10.1007/s40262-024-01459-z](https://doi.org/10.1007/s40262-024-01459-z) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hodiamont_2022_2_reference](drugs/drug_gentamicin/Gentamicin_Hodiamont2022v2_reference.md) | Hodiamont CJ et al., Clinical Pharmacokinetics of Gentamicin…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01143-0](https://doi.org/10.1007/s40262-022-01143-0) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=gentamicin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | `ABCC2` substrate, `SLC22A2` substrate | DrugBank actor |
+| excretion | liver | `ABCC2` substrate | DrugBank actor |
+| excretion | small intestine | `ABCC2` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: LRP2 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 352 matched, 20 returned

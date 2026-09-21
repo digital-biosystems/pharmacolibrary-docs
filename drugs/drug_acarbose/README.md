@@ -32,6 +32,19 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Safamansouri_2014](drugs/drug_acarbose/pd_Safamansouri_2014_alpha_amylase_inhibitory_activity.md) | Safamansouri H et al., α-Amylase inhibitory activity of some t…, Journal of diabetes and met… (2014) | [10.1186/s40200-014-0114-1](https://doi.org/10.1186/s40200-014-0114-1) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Mauldina_2017](drugs/drug_acarbose/pd_Mauldina_2017_unknown.md) | Mauldina MG et al., α-Glucosidase Inhibitory Activity from…, Pharmacognosy magazine (2017) | [10.4103/pm.pm_25_17](https://doi.org/10.4103/pm.pm_25_17) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=acarbose) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…the parent drug. As acarbose is intended to work within the gut, its minimal degree of ora…”</sub> | prose |
+| metabolism | small intestine | <sub>“…Acarbose is extensively metabolized within the gastrointestinal tract, primarily by intest…”</sub> | prose |
+| excretion | bile duct | <sub>“…ghly half of an orally administered dose is excreted in the feces within 96 hours of admin…”</sub> | prose |
+| excretion | kidney | <sub>“…f an orally administered dose) is excreted primarily by the kidneys, suggesting renal excr…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: AMY2A (inhibitor), GAA (inhibitor), MGAM (inhibitor), SI (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 1910 matched, 118 returned

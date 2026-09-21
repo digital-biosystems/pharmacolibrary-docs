@@ -405,14 +405,14 @@
       - dantron incl combinations <sub>(0/0/0)</sub>
       - [docusate sodium <sub>(0/1/0)</sub>](drugs/drug_docusate_sodium/)
       - docusate sodium incl combinations <sub>(0/0/0)</sub>
-      - [elobixibat <sub>(0/2/0)</sub>](drugs/drug_elobixibat/)
+      - [elobixibat <sub>(0/7/0)</sub>](drugs/drug_elobixibat/)
       - enemas a06ag20 <sub>(0/0/0)</sub>
       - ethulose <sub>(0/0/0)</sub>
-      - [glycerol <sub>(0/17/0)</sub>](drugs/drug_glycerol/)
+      - [glycerol <sub>(0/26/0)</sub>](drugs/drug_glycerol/)
       - ispaghula combinations <sub>(0/0/0)</sub>
       - ispaghula psylla seeds <sub>(0/0/0)</sub>
       - [lactitol <sub>(0/0/0)</sub>](drugs/drug_lactitol/)
-      - [lactulose <sub>(0/0/0)</sub>](drugs/drug_lactulose/)
+      - [lactulose <sub>(0/1/0)</sub>](drugs/drug_lactulose/)
       - lactulose combinations <sub>(0/0/0)</sub>
       - linaclotide <sub>(0/0/0)</sub>
       - [linseed <sub>(0/1/0)</sub>](drugs/drug_linseed/)

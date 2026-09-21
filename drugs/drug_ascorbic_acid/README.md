@@ -26,6 +26,17 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Bluck_1996_reference](drugs/drug_ascorbic_acid/AscorbicAcid_Bluck1996_reference.md) | Bluck LJ et al., Measurement of ascorbic acid kinetics i…, Journal of mass spectrometr… (1996) | [10.1002/(SICI)1096-9888(199607)31:7&lt;741::AID-JMS352&gt;3.0.CO;2-H](https://doi.org/10.1002/(SICI)1096-9888(199607)31:7&lt;741::AID-JMS352&gt;3.0.CO;2-H) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ascorbic_acid) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | <sub>“…Hepatic. Ascorbic acid is reversibly oxidised (by removal of the hy…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ALKBH2 (activator), ALKBH3 (activator), BBOX1 (cofactor), DBH (cofactor), DNA (cleavage), EGLN1 (cofactor), EGLN2 (cofactor), EGLN3 (cofactor), KDM5D (cofactor), OGFOD1 (cofactor), OGFOD2 (cofactor), P3H1 (cofactor), P3H2 (cofactor), P3H3 (cofactor), P4HA1 (cofactor), P4HTM (cofactor), PAM (cofactor), PHYH (cofactor), PLOD1 (cofactor), PLOD2 (cofactor), PLOD3 (cofactor), SLC23A1 (modulator), SLC23A1 (substrate), SLC23A2 (modulator), SLC23A2 (substrate), SLC2A1 (substrate), SLC2A3 (substrate), SLC2A4 (substrate), TMLHE (cofactor), TXNRD1 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 2245 matched, 70 returned

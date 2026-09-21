@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 08:27 | 9:13 | 0/0/0 | 1/1/0 | 0/0/0 | 144,689/16,550 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/1 | 4/0 | 0 |
+| 2026-09-21 17:51 | 3:48 | 0/0/0 | 2/1/0 | 0/0/0 | 154,287/2,194 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/3 | 4/0 | 0 |
 
 ## popPK records
 
@@ -25,16 +25,31 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Carreño_2025](drugs/drug_elobixibat/pd_Carre_o_2025_C4.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_elobixibat/pd_Billo_2025_ASBT.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_elobixibat/pd_Billo_2025_NTCP.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_elobixibat/pd_Billo_2025_OATP1B1.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_elobixibat/pd_Billo_2025_OATP1B3.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_elobixibat/pd_Billo_2025_OATP2B1.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Billo_2025](drugs/drug_elobixibat/pd_Billo_2025_SOAT.md) | Billo V et al., Carrier cross-reactivities of the bile…, Journal of lipid research (2025) | [10.1016/j.jlr.2025.100910](https://doi.org/10.1016/j.jlr.2025.100910) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Carreño_2025](drugs/drug_elobixibat/pd_Carre_o_2025_GSRS_diarrhea.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Carreño_2025](drugs/drug_elobixibat/pd_Carre_o_2025_C4.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Carreño_2025](drugs/drug_elobixibat/pd_Carre_o_2025_GSRS.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kumagai_2018](drugs/drug_elobixibat/pd_Kumagai_2018_7_hydroxy_4_cholesten_3_one.md) | Kumagai Y et al., Effect of single and multiple doses of…, British journal of clinical… (2018) | [10.1111/bcp.13698](https://doi.org/10.1111/bcp.13698) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kumagai_2018](drugs/drug_elobixibat/pd_Kumagai_2018_high_density_lipoprotein_cholesterol.md) | Kumagai Y et al., Effect of single and multiple doses of…, British journal of clinical… (2018) | [10.1111/bcp.13698](https://doi.org/10.1111/bcp.13698) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kumagai_2018](drugs/drug_elobixibat/pd_Kumagai_2018_low_density_lipoprotein_cholesterol.md) | Kumagai Y et al., Effect of single and multiple doses of…, British journal of clinical… (2018) | [10.1111/bcp.13698](https://doi.org/10.1111/bcp.13698) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kumagai_2018](drugs/drug_elobixibat/pd_Kumagai_2018_spontaneous_bowel_movement_frequency.md) | Kumagai Y et al., Effect of single and multiple doses of…, British journal of clinical… (2018) | [10.1111/bcp.13698](https://doi.org/10.1111/bcp.13698) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=elobixibat) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | ileum | `SLC10A2` modulator | DrugBank actor |
+
 ## Coverage
 
-- **PubMed hits:** 11 matched, 13 returned
+- **PubMed hits:** 12 matched, 15 returned
 - **screened:** 2  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -47,17 +62,17 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Michiba_2025.pdf` | Michiba K et al., Characterization of intestinal transpor…, Drug metabolism and disposi… (2025) | pgx | 5 | [10.1016/j.dmd.2025.100075](https://doi.org/10.1016/j.dmd.2025.100075) | [40319556](https://www.ncbi.nlm.nih.gov/pubmed/40319556) | metadata signals extractable PGX data (SLC46A1) |
 
-<sub>queue written 2026-09-11T08:20:48.051130+00:00</sub>
+<sub>queue written 2026-09-21T17:49:26.432455+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Billo_2025 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study analyzing transporter inhibition (IC50) and cross-reactivity, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Carreño_2025 | irrelevant | 0 | 0 | The study focuses on linerixibat, not elobixibat, and models C4 biomarker kinetics rather than drug pharmacokinetics. |
+| popPK | Carreño_2025 | irrelevant | 0 | 0 | The study focuses on linerixibat (a different drug) and models C4 biomarker concentrations rather than reporting pharmacokinetic parameters for elobixibat. |
 | popPK | Chedid_2018 | irrelevant | 0 | 0 | The paper is a narrative review of elobixibat's mechanism and clinical efficacy for constipation, containing no quantitative pharmacokinetic parameters or compartmental models. |
 | PD | Chedid_2018 | not_relevant | 1 | 0 | The text is a narrative review summarizing clinical efficacy and mechanism of action but does not report specific numeric PD parameters (e.g., EC50, Emax) or quantitative exposure-response data. |
-| popPK | Michiba_2025 | irrelevant | 0 | 0 | The paper focuses on in-vitro characterization of intestinal transporters for absorption prediction and does not report quantitative population pharmacokinetic parameters for elobixibat. |
+| popPK | Michiba_2025 | irrelevant | 0 | 0 | no_text gate: only 145 chars of text extracted (&lt; 400) |
 | PGx | Michiba_2025 | not_relevant | 0 | 0 | The paper focuses on characterizing intestinal transporters in cell models for general drug absorption prediction and does not report pharmacogenomic effects on elobixibat PK/PD. |
 | popPK | Wong_2013 | irrelevant | 1 | 0 | The paper is a review of clinical efficacy and mechanism of action, containing no quantitative pharmacokinetic parameter values for elobixibat. |
 | PD | Wong_2013 | not_relevant | 2 | 0 | The text is a qualitative review/overview of Phase II trials and mechanism of action, containing no numeric PD parameters, dose-response curves, or PK/PD model fits. |

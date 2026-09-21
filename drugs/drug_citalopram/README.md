@@ -29,6 +29,28 @@ Citalopram was approved by the FDA in 1998 for the treatment of depression in ad
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: CLelim[central] left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Akil_2016_reference](drugs/drug_citalopram/Citalopram_Akil2016_reference.md) | Akil A et al., A population pharmacokinetic model for…, Journal of pharmacokinetics… (2016) | [10.1007/s10928-015-9457-6](https://doi.org/10.1007/s10928-015-9457-6) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Weisskopf_2020_reference](drugs/drug_citalopram/Citalopram_Weisskopf2020_reference.md) | Weisskopf E et al., A population pharmacokinetic model for…, British journal of clinical… (2020) | [10.1111/bcp.14278](https://doi.org/10.1111/bcp.14278) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=citalopram) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate, `MAOA` substrate, `MAOB` substrate | DrugBank actor |
+| metabolism | liver | `AOX1` substrate, `CYP1A2` inhibitor, `CYP2C19` inhibitor/substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `MAOA` substrate | DrugBank actor |
+| metabolism | platelet | `MAOB` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `MAOA` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…pram is found unchanged in the urine, while 10% is found in feces.[A37688] Following intra…”</sub> | prose |
+| excretion | kidney | <sub>“…23% of an oral dose of citalopram is found unchanged in the urine, while 10% is found in f…”</sub> | prose |
+| target | brain | `SLC6A4` inhibitor | DrugBank actor |
+| target | platelet | `SLC6A4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HRH1 (binder).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 75 matched, 20 returned

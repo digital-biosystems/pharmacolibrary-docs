@@ -33,6 +33,21 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Asl_2021](drugs/drug_olsalazine/pd_Asl_2021_Cell_viability.md) | Asl MM et al., Comparison of the effects of olsalazine…, Research in pharmaceutical… (2021) | [10.4103/1735-5362.314826](https://doi.org/10.4103/1735-5362.314826) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Asl_2021](drugs/drug_olsalazine/pd_Asl_2021_uPA_expression.md) | Asl MM et al., Comparison of the effects of olsalazine…, Research in pharmaceutical… (2021) | [10.4103/1735-5362.314826](https://doi.org/10.4103/1735-5362.314826) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=olsalazine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | blood | `TPMT` inhibitor | DrugBank actor |
+| metabolism | liver | `TPMT` inhibitor, `XDH` inhibitor | DrugBank actor |
+| metabolism | small intestine | `XDH` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…ning mesalamine is partially acetylated and excreted in the feces. From fecal dialysis, th…”</sub> | prose |
+| excretion | kidney | `SLC22A6` upregulator, `SLC22A8` upregulator | DrugBank actor |
+| excretion | small intestine | <sub>“…as excreted in feces as unchanged olsalazine when the whole gut transit time was decreased…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ATP1A1 (inhibitor), PTGS1 (inhibitor), SLC20A1 (upregulator), SLC2A9 (downregulator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 39 matched, 55 returned

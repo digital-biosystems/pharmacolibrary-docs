@@ -35,6 +35,18 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Schulz_2025](drugs/drug_zinc_chloride/pd_Schulz_2025_shoot_length.md) | Schulz VM et al., A versatile Lepidium sativum bioassay f…, Scientific reports (2025) | [10.1038/s41598-025-17215-7](https://doi.org/10.1038/s41598-025-17215-7) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Schulz_2025](drugs/drug_zinc_chloride/pd_Schulz_2025_total_length.md) | Schulz VM et al., A versatile Lepidium sativum bioassay f…, Scientific reports (2025) | [10.1038/s41598-025-17215-7](https://doi.org/10.1038/s41598-025-17215-7) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=zinc_chloride) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder, `ORM2` binder | DrugBank actor |
+| excretion | bile duct | <sub>“…Zinc is predominantly eliminated in the feces.[A204089,L14186] Gastrointestinal eliminatio…”</sub> | prose |
+| excretion | small intestine | <sub>“…c is predominantly eliminated in the feces.[A204089,L14186] Gastrointestinal elimination o…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: A2M (target), ADH1C (target), AHSG (chelator), ALDOA (target), APLP1 (target), APLP2 (target), APOA1 (inducer), APOA1 (target), APOB (target), APOBEC1 (chelator), APOBEC1 (cofactor), APOBR (inducer), APOE (target), APOL1 (inhibitor), APP (target), ASPA (cofactor), BDKRB1 (target), BRCC3 (cofactor), C1QB (modulator), C1QC (modulator), C1R (modulator), C1S (modulator), C3 (inhibitor), C3 (target), C4B (modulator), C4BPA (modulator), C4BPB (modulator), C5 (target), CA2 (cofactor), CCS (cofactor), CFH (target), CLU (inducer), CP (target), CPE (inhibitor), CPE (target), CPN1 (cofactor), CPN2 (cofactor), DCD (stabilization), EEF1A1 (binder), ENO1 (binder), ESR1 (binder), F11 (activator), FGA (binder), FN1 (modulator), FN1 (target), GAPDHS (binder), GLRA1 (inhibitor), HBA1 (inducer), HBB (inducer), HDAC1 (cofactor), HDAC4 (cofactor), HDAC8 (cofactor), HP (binder), HPX (target), HRG (cofactor), IDE (cofactor), IGFALS (inducer), IL3 (binder), INS (stabilization), ITIH1 (binder), ITIH2 (binder), ITIH3 (binder), ITIH4 (binder), JCHAIN (component of), KLKB1 (inhibitor), KNG1 (cofactor), KRT9 (target), MDM2 (binder), MGMT (stabilization), MMP9 (binder), MPG (cofactor), MT1A (binder), MT2A (cofactor), MT3 (cofactor), NME1 (inhibitor), P4HB (binder), PARP1 (component of), PDIA3 (binder), PGLYRP2 (binder), PON1 (inducer), PRDX1 (binder), PSPH (binder), PZP (binder), S100A2 (inactivator), S100A2 (regulator), S100A7 (binder), S100A8 (regulator), S100A9 (regulator), SELENOP (binder), SEMG1 (cofactor), SEMG2 (cofactor), SERPINA1 (target), SERPINA3 (binder), SERPINA6 (modulator), SERPIND1 (target), SHBG (modulator), SIVA1 (binder), SLC30A1 (substrate), SLC30A10 (substrate), SLC30A2 (substrate), SLC30A3 (substrate), SLC30A4 (substrate), SLC30A5 (substrate), SLC30A6 (substrate), SLC30A7 (substrate), SLC30A8 (substrate), SLC30A9 (substrate), SLC39A1 (substrate), SLC39A10 (substrate), SLC39A11 (substrate), SLC39A12 (substrate), SLC39A13 (substrate), SLC39A14 (substrate), SLC39A2 (substrate), SLC39A3 (substrate), SLC39A4 (substrate), SLC39A5 (substrate), SLC39A6 (substrate), SLC39A7 (substrate), SLC39A8 (substrate), SLC39A9 (substrate), SOD1 (cofactor), TF (target), TP53 (chaperone), TP73 (chaperone), TPI1 (binder), TTR (inducer), TUFM (cofactor), UTRN (cofactor), VTN (inducer).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 40 matched, 36 returned

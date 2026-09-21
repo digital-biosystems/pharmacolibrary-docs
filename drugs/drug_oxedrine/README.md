@@ -35,6 +35,15 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Zhidkova_2025](drugs/drug_oxedrine/pd_Zhidkova_2025_IC50.md) | Zhidkova EM et al., Anti-Cancer Outcome of Glucocorticoid R…, International journal of mo… (2025) | [10.3390/ijms262311404](https://doi.org/10.3390/ijms262311404) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Zhidkova_2025](drugs/drug_oxedrine/pd_Zhidkova_2025_Tumor_growth.md) | Zhidkova EM et al., Anti-Cancer Outcome of Glucocorticoid R…, International journal of mo… (2025) | [10.3390/ijms262311404](https://doi.org/10.3390/ijms262311404) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=oxedrine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ADRA1A (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 33 matched, 33 returned

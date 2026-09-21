@@ -29,6 +29,19 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Vila_1979](drugs/drug_chlorpropamide/pd_Vila_1979_unknown.md) | Vila Jato JL et al., [Relation between the pharmacokinetic a…, Bollettino chimico farmaceu… (1979) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=chlorpropamide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `SLC15A1` inhibitor | DrugBank actor |
+| metabolism | kidney | <sub>“…ulfonamide (CBSA); CBSA may be produced by decomposition in urine. It is unknown whether c…”</sub> | prose |
+| metabolism | liver | `CYP2C19` substrate, `CYP2C9` substrate | DrugBank actor |
+| excretion | kidney | `SLC15A2` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC8 (inhibitor), KCNJ10 (blocker), PTGS1 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 45 matched, 45 returned

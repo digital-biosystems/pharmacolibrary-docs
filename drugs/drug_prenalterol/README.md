@@ -23,6 +23,15 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Carlsöö_1981](drugs/drug_prenalterol/pd_Carls_1981_unknown.md) | Carlsöö B et al., Characterization of the rat parotid bet…, British journal of pharmaco… (1981) | [10.1111/j.1476-5381.1981.tb09124.x](https://doi.org/10.1111/j.1476-5381.1981.tb09124.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=prenalterol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ADRB3 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 49 matched, 41 returned

@@ -34,6 +34,17 @@ Currently, patients are prescribed [hydroxyurea] to raise levels of fetal hemogl
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Sy_2023](drugs/drug_crizanlizumab/pd_Sy_2023_sP_selectin.md) | Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2023) | [10.1007/s40262-022-01193-4](https://doi.org/10.1007/s40262-022-01193-4) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=crizanlizumab) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | bile duct | <sub>“…inated in the urine, and only a small amount is excreted in bile.[A40006]…”</sub> | prose |
+| excretion | kidney | <sub>“…] Monoclonal antibodies are generally not eliminated in the urine, and only a small amount…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: SELP (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned

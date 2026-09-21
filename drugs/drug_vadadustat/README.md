@@ -38,6 +38,26 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Todsaporn_2026](drugs/drug_vadadustat/pd_Todsaporn_2026_STAT3_protein_expression.md) | Todsaporn D et al., Integrating QSAR-Machine Learning, Bioc…, Journal of chemical informa… (2026) | [10.1021/acs.jcim.6c00414](https://doi.org/10.1021/acs.jcim.6c00414) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Todsaporn_2026](drugs/drug_vadadustat/pd_Todsaporn_2026_STAT5_protein_expression.md) | Todsaporn D et al., Integrating QSAR-Machine Learning, Bioc…, Journal of chemical informa… (2026) | [10.1021/acs.jcim.6c00414](https://doi.org/10.1021/acs.jcim.6c00414) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=vadadustat) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood | <sub>“…0.55, suggesting that the sequestration of vadadustat into red blood cells is minimal.[L46…”</sub> | prose |
+| absorption | blood-brain barrier | `ABCG2` inhibitor | DrugBank actor |
+| absorption | liver | `ABCG2` inhibitor | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCG2` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` inducer, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP3A4` downregulator, `UGT1A1` inducer/substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` downregulator, `UGT1A1` inducer/substrate, `UGT2B7` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…e was recovered, with 58.9% appearing in urine and 26.9% in feces. Small amounts of the un…”</sub> | prose |
+| excretion | kidney | `SLC22A6` substrate, `SLC22A8` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: EGLN1 (inhibitor), EGLN2 (inhibitor), EGLN3 (inhibitor), EPAS1 (stabilization), HIF1A (stabilization), UGT1A7 (substrate), UGT1A8 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 106 matched, 70 returned

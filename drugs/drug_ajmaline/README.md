@@ -33,6 +33,16 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Friedrich_2007](drugs/drug_ajmaline/pd_Friedrich_2007_I_K.md) | Friedrich O et al., NA+- and K+-channels as molecular targe…, British journal of pharmaco… (2007) | [10.1038/sj.bjp.0707194](https://doi.org/10.1038/sj.bjp.0707194) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Friedrich_2007](drugs/drug_ajmaline/pd_Friedrich_2007_I_Na.md) | Friedrich O et al., NA+- and K+-channels as molecular targe…, British journal of pharmaco… (2007) | [10.1038/sj.bjp.0707194](https://doi.org/10.1038/sj.bjp.0707194) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ajmaline) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ORM1` unknown | DrugBank actor |
+
+<sub>Actors without a tissue in the table: SCN5A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 43 matched, 31 returned

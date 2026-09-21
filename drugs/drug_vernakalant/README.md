@@ -26,6 +26,18 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Mao_2012_reference](drugs/drug_vernakalant/Vernakalant_Mao2012_reference.md) | Mao ZL et al., Population pharmacokinetics of vernakal…, Journal of clinical pharmac… (2012) | [10.1177/0091270011408425](https://doi.org/10.1177/0091270011408425) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=vernakalant) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | <sub>“…Mainly eliminated via renal excretion.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: KCNA5 (blocker), KCND3 (blocker), KCNH2 (blocker), SCN5A (blocker).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 23 matched, 23 returned

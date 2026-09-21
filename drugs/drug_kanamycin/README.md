@@ -39,6 +39,15 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Suominen_2020](drugs/drug_kanamycin/pd_Suominen_2020_growth_inhibition.md) | Suominen EN et al., Investigating the short- and long-term…, Heliyon (2020) | [10.1016/j.heliyon.2020.e04232](https://doi.org/10.1016/j.heliyon.2020.e04232) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Suominen_2020](drugs/drug_kanamycin/pd_Suominen_2020_luminescence_inhibition.md) | Suominen EN et al., Investigating the short- and long-term…, Heliyon (2020) | [10.1016/j.heliyon.2020.e04232](https://doi.org/10.1016/j.heliyon.2020.e04232) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=kanamycin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skeletal muscle | <sub>“…Kanamycin is rapidly absorbed after intramuscular injection and peak serum levels are gene…”</sub> | prose |
+| absorption | skin | <sub>“…e hour. Poor oral and topical absorption except with severe skin damage.…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 28 matched, 28 returned

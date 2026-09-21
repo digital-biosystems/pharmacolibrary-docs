@@ -29,6 +29,32 @@
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Toffoli_2001_mean_with_covariables](drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md) | Toffoli G et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01468.x](https://doi.org/10.1046/j.0306-5251.2001.01468.x) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Toffoli_2001_mean_with_covariables](drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md) | Toffoli G et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01468.x](https://doi.org/10.1046/j.0306-5251.2001.01468.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=etoposide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inhibitor/substrate | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor/substrate | DrugBank actor |
+| metabolism | blood | `GSTT1` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2E1` substrate, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate, `GSTP1` substrate, `GSTT1` substrate, `UGT1A1` substrate | DrugBank actor |
+| metabolism | lung | `GSTP1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate, `UGT1A1` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…by both renal and nonrenal processes, i.e., metabolism and biliary excretion. Glucuronide…”</sub> | prose |
+| excretion | kidney | `ABCC2` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor/substrate | DrugBank actor |
+| excretion | small intestine | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC10 (inhibitor), ABCC10 (substrate), ABCC6 (inhibitor), ABCC6 (substrate), PTGS1 (substrate), PTGS2 (substrate), TOP2A (inhibitor), TOP2B (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 130 matched, 20 returned

@@ -33,6 +33,14 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Takada_2017](drugs/drug_sorbitol/pd_Takada_2017_dietary_intake.md) | Takada T et al., A mannitol/sorbitol receptor stimulates…, PloS one (2017) | [10.1371/journal.pone.0186420](https://doi.org/10.1371/journal.pone.0186420) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Takada_2017](drugs/drug_sorbitol/pd_Takada_2017_receptor_current.md) | Takada T et al., A mannitol/sorbitol receptor stimulates…, PloS one (2017) | [10.1371/journal.pone.0186420](https://doi.org/10.1371/journal.pone.0186420) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=sorbitol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…Sorbitol will either be excreted in the urine by the kidneys, or metabolized to carbon dio…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 91 matched, 53 returned

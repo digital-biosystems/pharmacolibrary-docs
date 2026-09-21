@@ -26,6 +26,20 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Raaflaub_1975_reference](drugs/drug_phenacetin/Phenacetin_Raaflaub1975_reference.md) | Raaflaub J et al., On the pharmacokinetics of phenacetin i…, European journal of clinica… (1975) | [10.1007/BF00567125](https://doi.org/10.1007/BF00567125) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=phenacetin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2A6` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP2E1` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CYP2A13 (substrate), IMPDH1 (inhibitor), PTGS1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 689 matched, 77 returned

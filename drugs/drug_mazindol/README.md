@@ -29,6 +29,18 @@
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Konofal_2014_final](drugs/drug_mazindol/Mazindol_Konofal2014_final.md) | Konofal E et al., Pilot Phase II study of mazindol in chi…, Drug design, development an… (2014) | [10.2147/DDDT.S65495](https://doi.org/10.2147/DDDT.S65495) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Konofal_2014_final](drugs/drug_mazindol/Mazindol_Konofal2014_final.md) | Konofal E et al., Pilot Phase II study of mazindol in chi…, Drug design, development an… (2014) | [10.2147/DDDT.S65495](https://doi.org/10.2147/DDDT.S65495) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=mazindol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…Hepatic.…”</sub> | prose |
+| target | brain | `SLC6A4` inhibitor | DrugBank actor |
+| target | platelet | `SLC6A4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: SLC18A2 (unknown), SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned

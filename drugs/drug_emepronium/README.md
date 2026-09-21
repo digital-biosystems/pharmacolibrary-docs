@@ -20,6 +20,15 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Pilbrant_1985_reference](drugs/drug_emepronium/Emepronium_Pilbrant1985_reference.md) | Pilbrant A et al., Pharmacokinetics and pharmacodynamics o…, Acta pharmacologica et toxi… (1985) | [10.1111/j.1600-0773.1985.tb01292.x](https://doi.org/10.1111/j.1600-0773.1985.tb01292.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=emepronium) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CHRM5 (modulator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned

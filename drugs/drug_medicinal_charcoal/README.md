@@ -44,6 +44,14 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Alothaid_2022](drugs/drug_medicinal_charcoal/pd_Alothaid_2022_serum_urea.md) | Alothaid H, Evaluation of cytotoxicity, oxidative s…, Saudi journal of biological… (2022) | [10.1016/j.sjbs.2022.103387](https://doi.org/10.1016/j.sjbs.2022.103387) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Alothaid_2022](drugs/drug_medicinal_charcoal/pd_Alothaid_2022_total_bilirubin.md) | Alothaid H, Evaluation of cytotoxicity, oxidative s…, Saudi journal of biological… (2022) | [10.1016/j.sjbs.2022.103387](https://doi.org/10.1016/j.sjbs.2022.103387) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=medicinal_charcoal) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | bile duct | <sub>“…Fecal excretion.…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 78 matched, 66 returned

@@ -37,6 +37,29 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Retlich_2015](drugs/drug_linagliptin/pd_Retlich_2015_DPP_4.md) | Retlich S et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2015) | [10.1007/s40262-014-0232-4](https://doi.org/10.1007/s40262-014-0232-4) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Tadayasu_2013](drugs/drug_linagliptin/pd_Tadayasu_2013_DPP_4_inhibition.md) | Tadayasu Y et al., Population pharmacokinetic/pharmacodyna…, Journal of pharmacy & pharm… (2013) | [10.18433/j3s304](https://doi.org/10.18433/j3s304) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=linagliptin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
+| metabolism | bile duct | <sub>“…An oral dose of linagliptin is excreted primarily in the feces[A176948]. 90% of an oral do…”</sub> | prose |
+| metabolism | kidney | <sub>“…[A176948]. 90% of an oral dose is excreted unchanged in the urine and feces[A176948,A37050…”</sub> | prose |
+| metabolism | liver | `CYP3A4` inhibitor/substrate, `SLC22A1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…84.7% of linagliptin is eliminated in the feces and 5.4% is eliminated in the urine[A17694…”</sub> | prose |
+| excretion | kidney | `SLC22A2` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: DPP4 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 13 matched, 13 returned

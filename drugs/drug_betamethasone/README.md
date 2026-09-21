@@ -26,6 +26,29 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Krzyzanski_2021_2_reference](drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference.md) | Krzyzanski (2021) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=betamethasone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
+| metabolism | liver | `CYP2A6` inducer, `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inducer, `CYP2C9` inducer, `CYP3A4` inducer/substrate, `CYP3A5` inducer, `CYP3A7` unknown | DrugBank actor |
+| metabolism | lung | `CYP1B1` inducer | DrugBank actor |
+| metabolism | skin | `CYP1B1` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` inducer | DrugBank actor |
+| excretion | kidney | <sub>“…Corticosteroids are eliminated predominantly in the urine.[A187436]…”</sub> | prose |
+| target | adipose tissue | `CYP19A1` inhibitor/substrate | DrugBank actor |
+| target | ovary | `CYP19A1` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: NR3C1 (target), SERPINA6 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 28 matched, 19 returned

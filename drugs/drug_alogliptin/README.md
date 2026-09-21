@@ -51,6 +51,20 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Dudkowski_2017](drugs/drug_alogliptin/pd_Dudkowski_2017_DPP_4.md) | Dudkowski C et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2017) | [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=alogliptin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Renal excretion (76%) and feces (13%). 60% to 71% of the dose is excreted as unchanged dru…”</sub> | prose |
+| excretion | kidney | <sub>“…Renal excretion (76%) and feces (13%). 60% to 71% of the dose is…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: DPP4 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 16 matched, 16 returned

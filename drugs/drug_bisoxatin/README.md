@@ -23,6 +23,15 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=bisoxatin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | bile duct | <sub>“…Primarily excreted in the feces 48-72 h after administration as the free parent compound w…”</sub> | prose |
+| excretion | kidney | <sub>“…and a trace amount of parent compound are eliminated in the urine.…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 2 matched, 2 returned

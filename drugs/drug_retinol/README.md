@@ -39,6 +39,18 @@
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Czuba_2024](drugs/drug_retinol/pd_Czuba_2024_IL_1_LRAT.md) | Czuba LC et al., LX-2 Stellate Cells Are a Model System…, Drug metabolism and disposi… (2024) | [10.1124/dmd.124.001679](https://doi.org/10.1124/dmd.124.001679) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Czuba_2024](drugs/drug_retinol/pd_Czuba_2024_LRAT.md) | Czuba LC et al., LX-2 Stellate Cells Are a Model System…, Drug metabolism and disposi… (2024) | [10.1124/dmd.124.001679](https://doi.org/10.1124/dmd.124.001679) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=retinol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Readily absorbed from the normal gastrointestinal tract…”</sub> | prose |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | <sub>“…Hepatic. Retinol is conjugated with glucuronic acid; the B-glucuron…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ALDH1A1 (substrate), ALDH1A2 (substrate), ALDH1A3 (substrate), APOD (target), CYP26A1 (inducer), CYP26A1 (substrate), DHRS3 (substrate), DHRS4 (substrate), LRAT (substrate), PTGDS (target), RBP1 (binder), RBP2 (binder), RBP3 (binder), RBP4 (binder), RBP5 (binder), RBP7 (binder), RDH11 (substrate), RDH12 (substrate), RDH13 (substrate), RDH14 (substrate), RDH5 (substrate), RDH8 (substrate), RETSAT (substrate), RLBP1 (binder), RXRG (binder), STRA6 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 707 matched, 136 returned

@@ -40,6 +40,19 @@ It may also be indicated for use in combination with metformin or insulin to low
 | <span class="pk-badge pk-badge--green">extracted</span> | [Mele_2014](drugs/drug_glimepiride/pd_Mele_2014_mitochondrial_succinic_dehydrogenases_SDH_activity.md) | Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014) | [10.1002/prp2.28](https://doi.org/10.1002/prp2.28) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Mele_2014](drugs/drug_glimepiride/pd_Mele_2014_percent_changes_of_the_protein_content_muscle_weig.md) | Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014) | [10.1002/prp2.28](https://doi.org/10.1002/prp2.28) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=glimepiride) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C9` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…proximately 40% of the total radioactivity was recovered in feces where M1 and M2 accounte…”</sub> | prose |
+| excretion | kidney | <sub>“…imately 60% of the total radioactivity was recovered in the urine in 7 days, with M1 and M…”</sub> | prose |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC8 (inducer), ABCC9 (blocker), KCNJ1 (inhibitor), KCNJ11 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 18 matched, 18 returned

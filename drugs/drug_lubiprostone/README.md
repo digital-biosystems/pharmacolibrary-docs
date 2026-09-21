@@ -29,6 +29,18 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Fei_2009](drugs/drug_lubiprostone/pd_Fei_2009_short_circuit_current.md) | Fei G et al., Stimulation of mucosal secretion by lub…, American journal of physiol… (2009) | [10.1152/ajpgi.90447.2008](https://doi.org/10.1152/ajpgi.90447.2008) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=lubiprostone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…oxidation. These biotransformations are not mediated by the hepatic cytochrome P450 system…”</sub> | prose |
+| excretion | bile duct | <sub>“…prostone and M3 are only detected in trace amounts in human feces.…”</sub> | prose |
+| excretion | kidney | <sub>“…und 1.14 hours, with a majority of the drug excreted in the urine within 48 hours. Lubipro…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CBR1 (substrate), CLCN2 (inducer).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 24 matched, 21 returned

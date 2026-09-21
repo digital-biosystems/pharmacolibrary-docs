@@ -37,6 +37,17 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2021](drugs/drug_fludarabine/pd_Yang_2021_cell_viability.md) | Yang J et al., A new high-content screening assay of t…, JHEP reports : innovation i… (2021) | [10.1016/j.jhepr.2021.100296](https://doi.org/10.1016/j.jhepr.2021.100296) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2021](drugs/drug_fludarabine/pd_Yang_2021_percent_inhibition_of_HBV_infection.md) | Yang J et al., A new high-content screening assay of t…, JHEP reports : innovation i… (2021) | [10.1016/j.jhepr.2021.100296](https://doi.org/10.1016/j.jhepr.2021.100296) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=fludarabine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `SLC29A1` substrate | DrugBank actor |
+| distribution | liver | `SLC29A1` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADA (inhibitor), DCK (target), DNA (incorporation into and destabilization), POLA1 (inhibitor), RRM1 (inhibitor), SLC28A3 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 108 matched, 54 returned

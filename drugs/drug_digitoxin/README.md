@@ -26,6 +26,23 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Flasch_1979_reference](drugs/drug_digitoxin/Digitoxin_Flasch1979_reference.md) | Flasch H et al., Pharmacokinetics of dihydrodigitoxin in…, Naunyn-Schmiedeberg's archi… (1979) | [10.1007/BF00500279](https://doi.org/10.1007/BF00500279) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=digitoxin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `SLCO1A2` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ATP1A1 (inhibitor), ATP1A2 (inhibitor), ATP1A3 (inhibitor), ATP1B1 (inhibitor), ATP1B2 (inhibitor), ATP1B3 (inhibitor), CYP11A1 (inhibitor), SLCO4C1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 25 matched, 25 returned

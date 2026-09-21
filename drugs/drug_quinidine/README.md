@@ -41,6 +41,29 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Luo_2017](drugs/drug_quinidine/pd_Luo_2017_S2_min.md) | Luo C et al., Modelling the effects of quinidine, dis…, Physiological measurement (2017) | [10.1088/1361-6579/aa8695](https://doi.org/10.1088/1361-6579/aa8695) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Luo_2017](drugs/drug_quinidine/pd_Luo_2017_VW.md) | Luo C et al., Modelling the effects of quinidine, dis…, Physiological measurement (2017) | [10.1088/1361-6579/aa8695](https://doi.org/10.1088/1361-6579/aa8695) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=quinidine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate, `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `SLC22A4` inhibitor, `SLC22A5` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor, `CYP2B6` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor/substrate, `CYP2D6` inhibitor, `CYP2E1` substrate, `CYP3A4` inhibitor/substrate, `CYP3A7` substrate, `SLC22A1` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
+| metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inhibitor, `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | `ABCC2` inhibitor, `SLC22A2` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB11` inhibitor, `ABCC2` inhibitor | DrugBank actor |
+| excretion | small intestine | `ABCC2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), KCNH2 (inhibitor), KCNK1 (inhibitor), KCNK6 (inhibitor), SCN5A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 114 matched, 20 returned

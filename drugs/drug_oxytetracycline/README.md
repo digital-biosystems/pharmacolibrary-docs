@@ -26,6 +26,19 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Winter_2024_reference](drugs/drug_oxytetracycline/Oxytetracycline_Winter2024_reference.md) | Winter EA et al., Determination of pharmacokinetic-pharma…, Frontiers in microbiology (2024) | [10.3389/fmicb.2024.1498219](https://doi.org/10.3389/fmicb.2024.1498219) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=oxytetracycline) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | kidney | `SLC22A7` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `SLC22A7` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | `SLC22A6` inhibitor/substrate, `SLC22A8` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: SLC22A11 (inhibitor), SLC22A11 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 79 matched, 20 returned

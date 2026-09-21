@@ -27,6 +27,16 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2020_healthy Chinese subjects](drugs/drug_eptifibatide/Eptifibatide_Liu2020_healthy_chinese_subjects.md) | Liu L et al., Clinical Evaluation of the Tolerability…, Clinical pharmacology in dr… (2020) | [10.1002/cpdd.717](https://doi.org/10.1002/cpdd.717) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2015_healthy Chinese volunteers](drugs/drug_eptifibatide/Eptifibatide_Wang2015_healthy_chinese_volunteers.md) | Wang XP et al., Population pharmacokinetics and safety…, International journal of cl… (2015) | [10.5414/CP202196](https://doi.org/10.5414/CP202196) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=eptifibatide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>“…ide and other, more polar metabolites have been detected in urine.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CACNA2D1 (target), ITGA2B (modulator), ITGB3 (modulator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 17 matched, 17 returned

@@ -17,6 +17,17 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=clebopride) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| target | blood | `ACHE` inhibitor | DrugBank actor |
+| target | neuromuscular junction | `ACHE` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: DRD2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 13 matched, 13 returned

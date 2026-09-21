@@ -27,6 +27,17 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Cullberg_2005_patients with acute deep vein thrombosis](drugs/drug_ximelagatran/Ximelagatran_Cullberg2005_patients_with_acute_deep_vein_thro.md) | Cullberg M et al., Pharmacokinetics of ximelagatran and re…, Clinical pharmacology and t… (2005) | [10.1016/j.clpt.2004.11.001](https://doi.org/10.1016/j.clpt.2004.11.001) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Eriksson_2003_orthopaedic surgery patients](drugs/drug_ximelagatran/Ximelagatran_Eriksson2003_orthopaedic_surgery_patients.md) | Eriksson UG et al., Pharmacokinetics of melagatran and the…, Clinical pharmacokinetics (2003) | [10.2165/00003088-200342070-00006](https://doi.org/10.2165/00003088-200342070-00006) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ximelagatran) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Rapidly absorbed by the small intestine with an oral bioavailability of 20%.…”</sub> | prose |
+| metabolism | liver | `CYP2C9` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: F2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 29 matched, 29 returned

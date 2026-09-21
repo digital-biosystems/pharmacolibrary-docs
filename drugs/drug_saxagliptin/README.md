@@ -32,6 +32,24 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2024](drugs/drug_saxagliptin/pd_Wang_2024_DPP_4.md) | Wang T et al., Pharmacokinetic/Pharmacodynamic modelli…, BMC pharmacology & toxicolo… (2024) | [10.1186/s40360-024-00757-3](https://doi.org/10.1186/s40360-024-00757-3) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=saxagliptin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood-brain barrier | `ABCC1` substrate | DrugBank actor |
+| distribution | lung | `ABCC1` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…l of 22% of the administered radioactivity was recovered in feces representing the fractio…”</sub> | prose |
+| excretion | kidney | `SLC22A8` substrate | DrugBank actor |
+| excretion | liver | <sub>“…Saxagliptin is eliminated by both renal and hepatic pathways. Following a single 50 mg dos…”</sub> | prose |
+| excretion | small intestine | <sub>“…iptin dose excreted in bile and/or unabsorbed drug from the gastrointestinal tract.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: DPP4 (inhibitor), SLCO4C1 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 42 matched, 42 returned

@@ -41,6 +41,26 @@ Ticagrelor was granted FDA approval on 20 July 2011.[L14201]
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022](drugs/drug_ticagrelor/pd_Kathman_2022_PRU.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022](drugs/drug_ticagrelor/pd_Kathman_2022_VASP.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ticagrelor) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | kidney | `CYP3A5` activator/substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` inducer, `CYP2C9` inducer/inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` activator/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` activator/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…A radiolabelled dose of ticagrelor is 57.8% recovered in feces and 26.5% recovered in urin…”</sub> | prose |
+| excretion | kidney | <sub>“…cagrelor is 57.8% recovered in feces and 26.5% recovered in urine.[A17595,L14201] Less tha…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: P2RY12 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 48 matched, 20 returned

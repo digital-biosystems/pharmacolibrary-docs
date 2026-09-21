@@ -67,6 +67,15 @@ Along with other blood coagulation factors, it is used to reverse acquired coagu
 | <span class="pk-badge pk-badge--red">rejected</span> | [Gandhi_2024](drugs/drug_coagulation_factor_vii/pd_Gandhi_2024_total_FVII_a.md) | Gandhi PS et al., A bispecific antibody approach for the…, Nature cardiovascular resea… (2024) | [10.1038/s44161-023-00418-4](https://doi.org/10.1038/s44161-023-00418-4) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Mohammed_2008](drugs/drug_coagulation_factor_vii/pd_Mohammed_2008_prothrombin_complex_activity.md) | Mohammed Abdul MI et al., Pharmacodynamic interaction of warfarin…, British journal of pharmaco… (2008) | [10.1038/bjp.2008.210](https://doi.org/10.1038/bjp.2008.210) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=coagulation_factor_vii) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: F10 (activator), F3 (activator), F9 (activator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 246 matched, 57 returned

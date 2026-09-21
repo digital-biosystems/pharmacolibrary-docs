@@ -39,6 +39,16 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Tang_2019](drugs/drug_decitabine/pd_Tang_2019_IC50.md) | Tang LJ et al., Down-regulation of miR-29c is a prognos…, Cancer cell international (2019) | [10.1186/s12935-019-0894-y](https://doi.org/10.1186/s12935-019-0894-y) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Tang_2019](drugs/drug_decitabine/pd_Tang_2019_apoptosis.md) | Tang LJ et al., Down-regulation of miR-29c is a prognos…, Cancer cell international (2019) | [10.1186/s12935-019-0894-y](https://doi.org/10.1186/s12935-019-0894-y) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=decitabine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…Less than 1% of administered decitabine is excreted in the urine.[A2264]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CDA (substrate), CMPK1 (substrate), DCK (substrate), DNA (other/unknown), DNMT1 (inhibitor), DNMT3A (inhibitor), DNMT3B (inhibitor), HDAC1 (inhibitor), NME1 (substrate), SLC28A1 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 297 matched, 128 returned

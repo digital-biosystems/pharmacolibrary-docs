@@ -36,6 +36,20 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Franken_2026](drugs/drug_betacarotene/pd_Franken_2026_hallucinations.md) | Franken LG et al., Pediatric pharmacokinetics and pharmaco…, Scientific reports (2026) | [10.1038/s41598-026-47959-9](https://doi.org/10.1038/s41598-026-47959-9) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Franken_2026](drugs/drug_betacarotene/pd_Franken_2026_mean_arterial_pressure.md) | Franken LG et al., Pediatric pharmacokinetics and pharmaco…, Scientific reports (2026) | [10.1038/s41598-026-47959-9](https://doi.org/10.1038/s41598-026-47959-9) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=betacarotene) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | adipose tissue | <sub>“…bed into the circulatory system unchanged and stored in the fat tissue. The coadministrati…”</sub> | prose |
+| metabolism | liver | <sub>“…ene is broken down in the mucosa of the small intestine and liver by beta-carotene dioxyge…”</sub> | prose |
+| metabolism | small intestine | <sub>“…Beta-carotene is broken down in the mucosa of the small intestine and liver by beta-carote…”</sub> | prose |
+| excretion | bile duct | <sub>“…The unabsorbed carotene is excreted in feces.[L2202] It is also excreted in feces and urin…”</sub> | prose |
+| excretion | kidney | <sub>“…excreted in feces.[L2202] It is also excreted in feces and urine as metabolites.[L2214] Th…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: BCO1 (substrate), Free radicals (binder), RBP1 (substrate), RBP2 (substrate), RBP3 (substrate), RBP4 (substrate), RBP5 (substrate), VLDLR (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 1151 matched, 191 returned

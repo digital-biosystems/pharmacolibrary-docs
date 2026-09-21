@@ -23,6 +23,20 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=trimebutine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>“…-demethylation to form N-didesmethyltrimebutine. Other main urinary metabolites (2-amino,…”</sub> | prose |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Renal elimination is predominant while excretion into feces is also observed (5-12%). Abou…”</sub> | prose |
+| excretion | kidney | <sub>“…Renal elimination is predominant while excretion into feces is al…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CACNA1C (inhibitor), CACNA1G (activator), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), KCNMA1 (inhibitor), OPRM1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 24 matched, 24 returned

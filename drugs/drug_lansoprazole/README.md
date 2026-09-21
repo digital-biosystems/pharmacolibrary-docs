@@ -43,6 +43,30 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Wu_2019](drugs/drug_lansoprazole/pd_Wu_2019_percentage_of_time_with_intragastric_pH_above_4_0.md) | Wu L et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Clinical drug investigation (2019) | [10.1007/s40261-019-00824-2](https://doi.org/10.1007/s40261-019-00824-2) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Wu_2019](drugs/drug_lansoprazole/pd_Wu_2019_percentage_of_time_with_intragastric_pH_above_6_0.md) | Wu L et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Clinical drug investigation (2019) | [10.1007/s40261-019-00824-2](https://doi.org/10.1007/s40261-019-00824-2) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=lansoprazole) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| distribution | liver | `SLC22A3` unknown | DrugBank actor |
+| distribution | placenta | `SLC22A3` unknown | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` unknown | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2C19` inhibitor/substrate, `CYP2C8` substrate, `CYP2C9` inducer/inhibitor, `CYP2D6` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `SLC22A1` unknown | DrugBank actor |
+| metabolism | lung | `CYP1A1` inducer, `CYP1B1` inducer | DrugBank actor |
+| metabolism | skin | `CYP1B1` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inducer, `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
+| excretion | kidney | `SLC22A2` unknown, `SLC22A8` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ATP4A (inhibitor), CYP2C18 (substrate), MAPT (binder).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 20 matched, 19 returned

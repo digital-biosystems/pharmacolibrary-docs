@@ -35,6 +35,16 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Rothman_2025](drugs/drug_nesiritide/pd_Rothman_2025_TPR.md) | Rothman AMK et al., Positioning Imatinib for Pulmonary Arte…, American journal of respira… (2025) | [10.1164/rccm.202410-1929oc](https://doi.org/10.1164/rccm.202410-1929oc) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2017](drugs/drug_nesiritide/pd_Zhang_2017_unknown.md) | Zhang MY et al., DanHong injection targets endothelin re…, Oncotarget (2017) | [10.18632/oncotarget.21900](https://doi.org/10.18632/oncotarget.21900) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=nesiritide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…, which are present on the vascular lumenal surface; and 3) renal filtration.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: NPR1 (binder), NPR2 (unknown), NPR3 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 292 matched, 160 returned

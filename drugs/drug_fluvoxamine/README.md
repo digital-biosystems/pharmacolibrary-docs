@@ -24,6 +24,28 @@ Fluvoxamine has been in use in clinical practice since 1983 and has a clinical t
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=fluvoxamine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inhibitor, `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | <sub>“…fluvoxamine maleate, constituting approximately 85% of the urinary excretion products of f…”</sub> | prose |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+| target | brain | `SLC6A4` inhibitor | DrugBank actor |
+| target | platelet | `SLC6A4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: KCNH2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 47 matched, 47 returned

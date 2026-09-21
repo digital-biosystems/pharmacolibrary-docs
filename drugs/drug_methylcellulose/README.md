@@ -84,6 +84,17 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Lippert_2015](drugs/drug_methylcellulose/pd_Lippert_2015_VHN.md) | Lippert F et al., Fluoride dose-response of human and bov…, Clinical oral investigations (2015) | [10.1007/s00784-015-1436-1](https://doi.org/10.1007/s00784-015-1436-1) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Lippert_2015](drugs/drug_methylcellulose/pd_Lippert_2015_Z.md) | Lippert F et al., Fluoride dose-response of human and bov…, Clinical oral investigations (2015) | [10.1007/s00784-015-1436-1](https://doi.org/10.1007/s00784-015-1436-1) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=methylcellulose) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | bile duct | <sub>“…of orally ingested methyl cellulose can be recovered in the feces withihn four days, indic…”</sub> | prose |
+| metabolism | kidney | <sub>“…its retention & accumulation in liver, spleen, lymph nodes, kidney, and vascular walls.…”</sub> | prose |
+| metabolism | liver | <sub>“…to degrade substance led to its retention & accumulation in liver, spleen, lymph nodes, ki…”</sub> | prose |
+| excretion | bile duct | <sub>“…absorbed to any appreciable degree and appear unchanged in feces.…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 298 matched, 103 returned

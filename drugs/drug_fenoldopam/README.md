@@ -26,6 +26,17 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Ziemniak_1989_reference](drugs/drug_fenoldopam/Fenoldopam_Ziemniak1989_reference.md) | Ziemniak JA et al., A retrospective analysis of fenoldopam…, Pharmaceutical research (1989) | [10.1023/a:1015990506743](https://doi.org/10.1023/a:1015990506743) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=fenoldopam) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | bile duct | <sub>“…ut 90% of infused fenoldopam is eliminated in urine, 10% in feces. Elimination is largely…”</sub> | prose |
+| excretion | kidney | <sub>“…show that about 90% of infused fenoldopam is eliminated in urine, 10% in feces. Eliminatio…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADRA1A (inhibitor), ADRA1B (inhibitor), ADRA1D (inhibitor), ADRA2A (target), ADRA2B (target), ADRA2C (target), DRD1 (target), DRD5 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 18 matched, 14 returned

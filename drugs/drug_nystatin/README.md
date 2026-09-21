@@ -35,6 +35,15 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Mukhametkaliyev_2026](drugs/drug_nystatin/pd_Mukhametkaliyev_2026_IC50.md) | Mukhametkaliyev A et al., Antiviral Activity of Polyene Macrolide…, Molecules (Basel, Switzerla… (2026) | [10.3390/molecules31111915](https://doi.org/10.3390/molecules31111915) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2018](drugs/drug_nystatin/pd_Wang_2018_intracellular_A_fumigatus_inoculum.md) | Wang T et al., A strategy for designing voriconazole d…, Journal of translational me… (2018) | [10.1186/s12967-018-1533-4](https://doi.org/10.1186/s12967-018-1533-4) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=nystatin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…orally administered nystatin is eliminated unchanged in the feces.[L10686]…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 298 matched, 116 returned

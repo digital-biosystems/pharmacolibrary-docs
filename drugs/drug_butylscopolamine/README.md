@@ -23,6 +23,18 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=butylscopolamine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | brain | <sub>“…d 0.25-2 hours. Scopolamine butylbromide does not cross the blood brain barrier.…”</sub> | prose |
+| excretion | bile duct | <sub>“…Mainly eliminated in the feces (69.7%) with very little in the urine (4.4%) [A7905]. Only…”</sub> | prose |
+| excretion | kidney | <sub>“…nly eliminated in the feces (69.7%) with very little in the urine (4.4%) [A7905]. Only 2.8…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CHRM2 (target), CHRM3 (target), CHRM5 (modulator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 22 matched, 28 returned

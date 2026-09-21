@@ -26,6 +26,17 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Vásquez-Bahena_2010_2_reference](drugs/drug_lumiracoxib/Lumiracoxib_VsquezBahena20102_reference.md) | Vásquez-Bahena DA et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2010) | [10.1111/j.1476-5381.2009.00508.x](https://doi.org/10.1111/j.1476-5381.2009.00508.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=lumiracoxib) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `UGT1A9` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned

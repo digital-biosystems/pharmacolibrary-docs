@@ -44,6 +44,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Schendzielorz_2015](drugs/drug_octopamine/pd_Schendzielorz_2015_IP3.md) | Schendzielorz T et al., Octopamine regulates antennal sensory n…, PloS one (2015) | [10.1371/journal.pone.0121230](https://doi.org/10.1371/journal.pone.0121230) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Schendzielorz_2015](drugs/drug_octopamine/pd_Schendzielorz_2015_cAMP.md) | Schendzielorz T et al., Octopamine regulates antennal sensory n…, PloS one (2015) | [10.1371/journal.pone.0121230](https://doi.org/10.1371/journal.pone.0121230) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=octopamine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: F10 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 143 matched, 100 returned

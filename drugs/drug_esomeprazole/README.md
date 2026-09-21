@@ -38,6 +38,26 @@ PPIs such as esomeprazole have also been shown to inhibit the activity of dimeth
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Chung_2022](drugs/drug_esomeprazole/pd_Chung_2022_pH.md) | Chung TK et al., A population PK-PD model of YH4808, a n…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=esomeprazole) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | <sub>“…ls of the S- than of the R-isomer.[FDA Label] Nine major urinary metabolites have been det…”</sub> | prose |
+| metabolism | liver | `CYP2C19` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| metabolism | stomach | <sub>“…le. The major metabolites of esomeprazole have no effect on gastric acid secretion.[F4495]…”</sub> | prose |
+| excretion | bile duct | <sub>“…, and the remainder is found as inactive metabolites in the feces.…”</sub> | prose |
+| excretion | kidney | `SLC22A8` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ATP4A (inhibitor), ATP4B (modulator), DDAH1 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 29 matched, 16 returned

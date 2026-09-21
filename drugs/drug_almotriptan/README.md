@@ -23,6 +23,20 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=almotriptan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate, `MAOA` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C19` substrate, `CYP2C8` substrate, `CYP2D6` substrate, `CYP2E1` substrate, `CYP3A4` substrate, `FMO3` substrate, `MAOA` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `MAOA` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Approximately 13% of the administered dose is excreted via feces, both unchanged and metab…”</sub> | prose |
+| excretion | kidney | <sub>“…Almotriptan is eliminated primarily by renal excretion (about 75% of the oral dose), with…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: HTR1B (target), HTR1D (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 25 matched, 25 returned

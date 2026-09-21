@@ -46,6 +46,23 @@ Levetiracetam is also available as an orally dissolvable tablet that is indicate
 | <span class="pk-badge pk-badge--green">extracted</span> | [Schoemaker_2018](drugs/drug_levetiracetam/pd_Schoemaker_2018_seizure_count.md) | Schoemaker (2018) | — |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Lee_2019](drugs/drug_levetiracetam/pd_Lee_2019_ETCO2.md) | Lee JH et al., A pharmacodynamic model of respiratory…, Acta pharmacologica Sinica (2019) | [10.1038/s41401-018-0156-x](https://doi.org/10.1038/s41401-018-0156-x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=levetiracetam) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| metabolism | liver | <sub>“…are unclear, but this pathway is known to be independent of hepatic CYP enzymes and has be…”</sub> | prose |
+| excretion | bile duct | <sub>“…8600] while only 0.3% of the total dose is excreted via the feces.[L8615] The primary inac…”</sub> | prose |
+| excretion | kidney | <sub>“…f the administered dose of levetiracetam is excreted in the urine as unchanged drug,[L8606…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CACNA1B (inhibitor), HTR3A (target), SV2A (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 211 matched, 62 returned

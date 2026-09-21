@@ -28,6 +28,27 @@ It is also used off-label in the treatment of Crohn's disease, as a prophylactic
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Suyagh_2011_reference](drugs/drug_metronidazole/Metronidazole_Suyagh2011_reference.md) | Suyagh M et al., Metronidazole population pharmacokineti…, Pediatrics (2011) | [10.1542/peds.2010-0807](https://doi.org/10.1542/peds.2010-0807) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=metronidazole) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | bile duct | <sub>“…he administered metronidazole was measured in the urine and feces.[L7432]…”</sub> | prose |
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | skin | <sub>“…mg dose of 14C-labelled metronidazole 2% cream to unbroken skin. After 12 hours, metronida…”</sub> | prose |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2A6` substrate, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP3A4` inhibitor, `CYP3A5` substrate, `CYP3A7` substrate, `UGT1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor, `CYP3A5` substrate, `UGT1A1` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…0 to 80% eliminated in the urine, and 6-15% excreted in the feces.[A181045,L3754]…”</sub> | prose |
+| excretion | kidney | <sub>“…tronidazole and metabolites are 60 to 80% eliminated in the urine, and 6-15% excreted in t…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: Anaerobic bacterial DNA (inhibitor), Protozoal DNA (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 267 matched, 63 returned

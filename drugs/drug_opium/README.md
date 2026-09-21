@@ -34,6 +34,21 @@ Illegal use of opium has been registered to be for both recreational and medicin
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2016_neonates with abstinence syndrome](drugs/drug_opium/Opium_Liu2016_neonates_with_abstinence_syndrome.md) | Liu T et al., Mechanistic Population Pharmacokinetics…, Journal of clinical pharmac… (2016) | [10.1002/jcph.696](https://doi.org/10.1002/jcph.696) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=opium) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | <sub>“…differentiations were based in the presence of morphine in urine without evidence of 6-mon…”</sub> | prose |
+| metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…preparations, codeine and morphine can be found excreted in urine. The presence of codeine…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: B2M (binder), OPRD1 (target), OPRK1 (target), OPRM1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 25 matched, 24 returned

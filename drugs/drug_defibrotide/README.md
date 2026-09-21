@@ -30,6 +30,15 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Bianchi_1993](drugs/drug_defibrotide/pd_Bianchi_1993_trachealis_muscle_relaxation.md) | Bianchi G et al., Defibrotide, a single-stranded polydeox…, European journal of pharmac… (1993) | [10.1016/0014-2999(93)90864-e](https://doi.org/10.1016/0014-2999(93)90864-e) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Pennesi_2022](drugs/drug_defibrotide/pd_Pennesi_2022_minimal_residual_disease_status.md) | Pennesi E et al., Inotuzumab ozogamicin as single agent i…, Leukemia (2022) | [10.1038/s41375-022-01576-3](https://doi.org/10.1038/s41375-022-01576-3) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=defibrotide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ADORA1 (target), ADORA2A (target), ADORA2B (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 48 matched, 41 returned

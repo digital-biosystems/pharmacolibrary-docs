@@ -27,6 +27,22 @@
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Chang_2024_reference](drugs/drug_mavacamten/Mavacamten_Chang2024_reference.md) | Chang P et al., Characterization of mavacamten pharmaco…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13197](https://doi.org/10.1002/psp4.13197) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Merali_2025_reference](drugs/drug_mavacamten/Mavacamten_Merali2025_reference.md) | Merali S et al., Exposure-Response Modeling and Simulati…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70072](https://doi.org/10.1002/jcph.70072) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=mavacamten) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>“…atients with mild (Child-Pugh A) or moderate (Child-Pugh B) hepatic impairment. The effect…”</sub> | prose |
+| metabolism | brain | `CYP2D6` unknown | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` inducer, `CYP2C19` inducer/substrate, `CYP2C8` substrate, `CYP2C9` inducer/substrate, `CYP2D6` unknown, `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…of radiolabeled mavacamten, 7% of the dose was recovered in feces (1% unchanged) and 85% i…”</sub> | prose |
+| excretion | kidney | <sub>“…f the dose was recovered in feces (1% unchanged) and 85% in urine (3% unchanged).[L41680]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: MYH7 (inhibitory allosteric modulator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned

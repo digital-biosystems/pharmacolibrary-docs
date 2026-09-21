@@ -56,6 +56,24 @@ ii) clinical experience in the use of ondansetron in the prevention and treatmen
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Lam_2025_reference](drugs/drug_ondansetron/Ondansetron_Lam2025_reference.md) | Lam K et al., Bayesian Population Pharmacokinetic Mod…, Clinical and translational… (2025) | [10.1111/cts.70147](https://doi.org/10.1111/cts.70147) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [de_1998_reference](drugs/drug_ondansetron/Ondansetron_de1998_reference.md) | de Alwis DP et al., Population pharmacokinetics of ondanset…, British journal of clinical… (1998) | [10.1046/j.1365-2125.1998.00756.x](https://doi.org/10.1046/j.1365-2125.1998.00756.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ondansetron) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>“…from the gastrointestinal tract and undergoes some limited first-pass metabolism [F3178].…”</sub> | prose |
+| absorption | small intestine | <sub>“…Ondansetron is absorbed from the gastrointestinal tract and undergoes some limited first-p…”</sub> | prose |
+| metabolism | bile duct | <sub>“…on is extensively metabolised and excreted in the urine and faeces [F3178, F3181, F3184].…”</sub> | prose |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP2E1` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…on is extensively metabolised and excreted in the urine and faeces [F3181, F3184].…”</sub> | prose |
+| excretion | kidney | <sub>“…ondansetron is extensively metabolised and excreted in the urine and faeces [F3181, F3184]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: HTR1A (other/unknown), HTR1B (other/unknown), HTR3A (target), HTR4 (target), OPRM1 (other/unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 79 matched, 20 returned

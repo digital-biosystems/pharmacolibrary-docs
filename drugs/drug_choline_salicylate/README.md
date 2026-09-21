@@ -39,6 +39,26 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Zhu_2018](drugs/drug_choline_salicylate/pd_Zhu_2018_EC50.md) | Zhu X et al., Design, synthesis and biological activi…, Chemistry Central journal (2018) | [10.1186/s13065-018-0478-2](https://doi.org/10.1186/s13065-018-0478-2) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Zhu_2018](drugs/drug_choline_salicylate/pd_Zhu_2018_inhibition_rate.md) | Zhu X et al., Design, synthesis and biological activi…, Chemistry Central journal (2018) | [10.1186/s13065-018-0478-2](https://doi.org/10.1186/s13065-018-0478-2) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=choline_salicylate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | small intestine | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
+| metabolism | blood | `BCHE` product | DrugBank actor |
+| metabolism | liver | `BCHE` product, `SLC22A1` inhibitor/substrate | DrugBank actor |
+| excretion | kidney | `SLC22A2` inhibitor/substrate | DrugBank actor |
+| target | blood | `ACHE` product | DrugBank actor |
+| target | neuromuscular junction | `ACHE` product | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CEPT1 (substrate), CHAT (substrate), CHDH (substrate), CHKA (substrate), CHKB (substrate), CHRNA7 (unknown), PCYT1A (product), PCYT1B (product), PLD1 (product), PLD2 (product), SLC44A1 (substrate), SLC44A3 (substrate), SLC44A4 (substrate), SLC5A7 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 896 matched, 173 returned

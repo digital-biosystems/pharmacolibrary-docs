@@ -27,6 +27,19 @@
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Hallik_2020_reference](drugs/drug_dobutamine/Dobutamine_Hallik2020_reference.md) | Hallik M et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2020) | [10.1111/bcp.14146](https://doi.org/10.1111/bcp.14146) |
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Šíma_2015_reference](drugs/drug_dobutamine/Dobutamine_ma2015_reference.md) | Šíma M et al., Effect of co-medication on the pharmaco…, Physiological research (2015) | [10.33549/physiolres.933213](https://doi.org/10.33549/physiolres.933213) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dobutamine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `COMT` substrate | DrugBank actor |
+| metabolism | kidney | `COMT` substrate | DrugBank actor |
+| metabolism | liver | `COMT` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…In human urine, the major excretion products are the conjugates of dobutam…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRB1 (target), ADRB2 (target), ESR1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 107 matched, 20 returned

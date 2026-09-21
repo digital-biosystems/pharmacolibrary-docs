@@ -24,6 +24,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Xie_2017](drugs/drug_meptazinol/pd_Xie_2017_AChE_inhibition.md) | Xie Q et al., Pharmacophore-based design and discover…, Journal of enzyme inhibitio… (2017) | [10.1080/14756366.2016.1265521](https://doi.org/10.1080/14756366.2016.1265521) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Xie_2017](drugs/drug_meptazinol/pd_Xie_2017_A_42_levels.md) | Xie Q et al., Pharmacophore-based design and discover…, Journal of enzyme inhibitio… (2017) | [10.1080/14756366.2016.1265521](https://doi.org/10.1080/14756366.2016.1265521) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=meptazinol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
+| metabolism | liver | `BCHE` inhibitor | DrugBank actor |
+
 ## Coverage
 
 - **PubMed hits:** 18 matched, 16 returned

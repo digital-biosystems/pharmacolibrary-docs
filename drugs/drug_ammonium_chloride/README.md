@@ -48,6 +48,16 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Liang_2023](drugs/drug_ammonium_chloride/pd_Liang_2023_MIC.md) | Liang Y et al., Self-Aggregation, Antimicrobial Activit…, Molecules (Basel, Switzerla… (2023) | [10.3390/molecules28145469](https://doi.org/10.3390/molecules28145469) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Yu_2022](drugs/drug_ammonium_chloride/pd_Yu_2022_relative_luminescence_units.md) | Yu R et al., The development and characterization of…, Frontiers in microbiology (2022) | [10.3389/fmicb.2022.1101850](https://doi.org/10.3389/fmicb.2022.1101850) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ammonium_chloride) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | bile duct | <sub>“…lly complete. Only 1 to 3% of the dose was recovered in the feces.…”</sub> | prose |
+| metabolism | liver | <sub>“…Ammonium ion is converted to urea in the liver; chloride ion replaces bicarbonate.…”</sub> | prose |
+| excretion | kidney | <sub>“…Excretion: Urine…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 151 matched, 106 returned

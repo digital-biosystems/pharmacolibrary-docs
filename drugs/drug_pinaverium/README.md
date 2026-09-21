@@ -23,6 +23,20 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=pinaverium) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>“…pinaverium is poorly absorbed (5-10%) followed by uptake by liver. Poor absorption is due…”</sub> | prose |
+| absorption | small intestine | <sub>“…all cell membranes and promotes its selectivity towards the gastrointestinal tracts []. Pe…”</sub> | prose |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Pinaverium is predominantly eliminated into feces [L873].…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CACNA1S (inhibitor), CACNA1S (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 11 matched, 14 returned

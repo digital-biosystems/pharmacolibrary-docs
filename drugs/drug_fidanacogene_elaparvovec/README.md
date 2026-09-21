@@ -39,6 +39,17 @@ antibodies to variant AAV serotype Rh74. [L52845]
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Cao_2025](drugs/drug_fidanacogene_elaparvovec/pd_Cao_2025_IgG.md) | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=fidanacogene_elaparvovec) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | <sub>“…serum/plasma compared to the other liquid matrices (saliva, urine, semen).[L49444]…”</sub> | prose |
+| excretion | kidney | <sub>“…shed in peripheral blood mononuclear cells (PBMC), saliva, urine, semen, and serum/plasma.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: Coagulation factor IX (F9) (gene replacement).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 6 matched, 4 returned

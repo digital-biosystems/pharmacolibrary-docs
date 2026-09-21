@@ -27,6 +27,30 @@ In May 2023, sotagliflozin was approved by the FDA to reduce the risk of cardiov
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=sotagliflozin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor, `UGT1A1` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `UGT1A1` substrate, `UGT2B7` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…ug material appearing in the urine and 37% appearing in the feces.[L39705]…”</sub> | prose |
+| excretion | kidney | `ABCC2` inhibitor | DrugBank actor |
+| excretion | liver | `ABCC2` inhibitor | DrugBank actor |
+| excretion | small intestine | `ABCC2` inhibitor | DrugBank actor |
+| target | kidney | `SLC5A2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: SLC5A1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 31 matched, 31 returned

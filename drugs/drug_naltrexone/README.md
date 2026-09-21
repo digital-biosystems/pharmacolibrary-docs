@@ -40,6 +40,20 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Berríos-Cárcamo_2016](drugs/drug_naltrexone/pd_Berr_os_C_rcamo_2016_beta_arrestin.md) | Berríos-Cárcamo P et al., Racemic Salsolinol and its Enantiomers…, Frontiers in behavioral neu… (2016) | [10.3389/fnbeh.2016.00253](https://doi.org/10.3389/fnbeh.2016.00253) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Berríos-Cárcamo_2016](drugs/drug_naltrexone/pd_Berr_os_C_rcamo_2016_cAMP.md) | Berríos-Cárcamo P et al., Racemic Salsolinol and its Enantiomers…, Frontiers in behavioral neu… (2016) | [10.3389/fnbeh.2016.00253](https://doi.org/10.3389/fnbeh.2016.00253) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=naltrexone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>“…well absorbed orally, naltrexone is subject to significant first pass metabolism with oral…”</sub> | prose |
+| metabolism | liver | `UGT1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `UGT1A1` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…ed naltrexone accounts for less than 2% of an oral dose and fecal excretion is a minor eli…”</sub> | prose |
+| excretion | kidney | <sub>“…h parent drug and metabolites are excreted primarily by the kidney (53% to 79% of the dose…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: OPRD1 (target), OPRK1 (target), OPRM1 (target), SIGMAR1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 72 matched, 60 returned

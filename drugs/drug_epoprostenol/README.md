@@ -54,6 +54,17 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Tunaru_2016](drugs/drug_epoprostenol/pd_Tunaru_2016_Vasorelaxation.md) | Tunaru S et al., Arachidonic Acid Metabolite 19(S)-HETE…, PloS one (2016) | [10.1371/journal.pone.0163633](https://doi.org/10.1371/journal.pone.0163633) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Tunaru_2016](drugs/drug_epoprostenol/pd_Tunaru_2016_cAMP.md) | Tunaru S et al., Arachidonic Acid Metabolite 19(S)-HETE…, PloS one (2016) | [10.1371/journal.pone.0163633](https://doi.org/10.1371/journal.pone.0163633) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=epoprostenol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>“…urteen additional minor metabolites have been isolated from urine, indicating that epopros…”</sub> | prose |
+| excretion | kidney | <sub>“…urteen additional minor metabolites have been isolated from urine, indicating that epopros…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: P2RY12 (target), PTGIR (target), PTGIS (inducer).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 2856 matched, 141 returned

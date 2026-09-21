@@ -29,6 +29,15 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Kojima_2006](drugs/drug_mosapride/pd_Kojima_2006_intrinsic_R_R_reflex_index.md) | Kojima Y et al., Enhancement of the intrinsic defecation…, Journal of smooth muscle re… (2006) | [10.1540/jsmr.42.139](https://doi.org/10.1540/jsmr.42.139) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Park_2019](drugs/drug_mosapride/pd_Park_2019_unknown.md) | Park YS et al., Gastroprokinetic agent, mosapride inhib…, The Korean journal of physi… (2019) | [10.4196/kjpp.2019.23.5.419](https://doi.org/10.4196/kjpp.2019.23.5.419) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=mosapride) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: HTR4 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 38 matched, 35 returned

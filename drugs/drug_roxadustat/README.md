@@ -49,6 +49,24 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Czock_2022](drugs/drug_roxadustat/pd_Czock_2022_EPO.md) | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Czock_2022](drugs/drug_roxadustat/pd_Czock_2022_Hb.md) | Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=roxadustat) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCG2` inhibitor | DrugBank actor |
+| absorption | liver | `ABCG2` inhibitor | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCG2` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C8` substrate, `SLCO1B1` inhibitor, `UGT1A9` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…ubjects, the mean recovery of radioactivity was 96% (50% in feces, 46% in urine). In feces…”</sub> | prose |
+| excretion | kidney | `SLC22A6` substrate, `SLC22A8` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: EGLN1 (inhibitor), EGLN2 (inhibitor), EGLN3 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned

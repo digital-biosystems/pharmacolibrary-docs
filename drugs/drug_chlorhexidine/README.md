@@ -40,6 +40,19 @@ Chlorhexidine was developed in the UK by Imperial Chemical Industries in the ear
 | <span class="pk-badge pk-badge--red">rejected</span> | [Martin_2023](drugs/drug_chlorhexidine/pd_Martin_2023_trophozoite_survival.md) | Martin KA et al., Assessment of, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1282274](https://doi.org/10.3389/fvets.2023.1282274) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Martin_2023](drugs/drug_chlorhexidine/pd_Martin_2023_trophozoite_viability.md) | Martin KA et al., Assessment of, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1282274](https://doi.org/10.3389/fvets.2023.1282274) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=chlorhexidine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | <sub>“…4 PerioChips in 18 adult patients, no detectable plasma or urine chlorhexidine levels were…”</sub> | prose |
+| absorption | small intestine | <sub>“…inses for dental purposes, is very poorly absorbed from the gastrointestinal tract - the C…”</sub> | prose |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| metabolism | small intestine | <sub>“…As chlorhexidine is very poorly absorbed in the gastrointestinal tract, it is unlikely to…”</sub> | prose |
+| excretion | bile duct | <sub>“…f chlorhexidine gluconate occurs almost exclusively via the feces, with less than 1% of an…”</sub> | prose |
+| excretion | kidney | <sub>“…eces, with less than 1% of an ingested dose excreted in the urine.[L11512]…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 37 matched, 37 returned

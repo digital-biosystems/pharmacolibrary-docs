@@ -20,6 +20,15 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hartmann_1997_patients with liver metastases from colorectal carcinoma](drugs/drug_fotemustine/Fotemustine_Hartmann1997_patients_with_liver_metastases_from.md) | Hartmann J et al., Hepatic arterial infusion of the nitros…, Oncology reports (1997) | [10.3892/or.4.1.167](https://doi.org/10.3892/or.4.1.167) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=fotemustine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: TXNRD1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 14 matched, 13 returned

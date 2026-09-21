@@ -50,6 +50,30 @@ It is important to note that this drug is **not** indicated for the treatment of
 | <span class="pk-badge pk-badge--red">rejected</span> | [Sato_2024](drugs/drug_canagliflozin/pd_Sato_2024_HbA1c.md) | Sato H et al., Model-based meta-analysis of HbA1c redu…, Scientific reports (2024) | [10.1038/s41598-024-76256-6](https://doi.org/10.1038/s41598-024-76256-6) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Wang_2024](drugs/drug_canagliflozin/pd_Wang_2024_unknown.md) | Wang N et al., SGLT2 Inhibitors in Patients with Heart…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01443-7](https://doi.org/10.1007/s40262-024-01443-7) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=canagliflozin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` unknown | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` unknown | DrugBank actor |
+| absorption | mammary gland | `ABCG2` unknown | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` unknown | DrugBank actor |
+| distribution | blood | `ORM1` substrate | DrugBank actor |
+| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate, `UGT1A9` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…ratios of canagliflozin or metabolites were measured in the feces and urine [FDA label]: *…”</sub> | prose |
+| excretion | kidney | `ABCC2` substrate | DrugBank actor |
+| excretion | liver | `ABCC2` substrate | DrugBank actor |
+| excretion | small intestine | `ABCC2` substrate | DrugBank actor |
+| target | kidney | `SLC5A2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: UGT2B4 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 60 matched, 43 returned

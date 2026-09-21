@@ -33,6 +33,15 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Byun_2021](drugs/drug_methoxy_polyethylene_glycol_epoetin_beta/pd_Byun_2021_Histological_index.md) | Byun JY et al., Target modulation and pharmacokinetics/…, Scientific reports (2021) | [10.1038/s41598-021-98255-7](https://doi.org/10.1038/s41598-021-98255-7) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Yan_2013](drugs/drug_methoxy_polyethylene_glycol_epoetin_beta/pd_Yan_2013_hemoglobin.md) | Yan X et al., Quantitative assessment of minimal effe…, CPT: pharmacometrics & syst… (2013) | [10.1038/psp.2013.39](https://doi.org/10.1038/psp.2013.39) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=methoxy_polyethylene_glycol_epoetin_beta) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: EPOR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 39 matched, 36 returned

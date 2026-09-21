@@ -63,6 +63,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Cígler_2005](drugs/drug_pepsin/pd_C_gler_2005_IC50_Ki.md) | Cígler P et al., From nonpeptide toward noncarbon protea…, Proceedings of the National… (2005) | [10.1073/pnas.0507577102](https://doi.org/10.1073/pnas.0507577102) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Lubkowicz_2022](drugs/drug_pepsin/pd_Lubkowicz_2022_UOx.md) | Lubkowicz D et al., An engineered bacterial therapeutic low…, Molecular systems biology (2022) | [10.15252/msb.202110539](https://doi.org/10.15252/msb.202110539) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=pepsin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | small intestine | <sub>“…ollowing this, a variety of proteases and peptidases in the intestine complete the process…”</sub> | prose |
+| metabolism | stomach | <sub>“…s the first of several enzymes that digest proteins. In the stomach, polypeptide chains bi…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 476 matched, 104 returned

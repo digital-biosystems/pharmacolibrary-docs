@@ -28,6 +28,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Guo_2025](drugs/drug_orforglipron/pd_Guo_2025_weight_reduction.md) | Guo H et al., Comparative efficacy and safety of GLP-…, Obesity pillars (2025) | [10.1016/j.obpill.2025.100162](https://doi.org/10.1016/j.obpill.2025.100162) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Sonne_2026](drugs/drug_orforglipron/pd_Sonne_2026_cAMP.md) | Sonne N et al., Generation and characterisation of a hu…, EBioMedicine (2026) | [10.1016/j.ebiom.2026.106121](https://doi.org/10.1016/j.ebiom.2026.106121) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=orforglipron) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: GLP1R (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 19 matched, 19 returned

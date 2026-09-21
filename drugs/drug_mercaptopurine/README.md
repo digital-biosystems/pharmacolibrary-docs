@@ -35,6 +35,25 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Gebhard_2023](drugs/drug_mercaptopurine/pd_Gebhard_2023_ANC.md) | Gebhard A et al., Pharmacokinetic-pharmacodynamic modelin…, Scientific reports (2023) | [10.1038/s41598-023-38414-0](https://doi.org/10.1038/s41598-023-38414-0) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Tsukamoto_2017](drugs/drug_mercaptopurine/pd_Tsukamoto_2017_MTT_assay.md) | Tsukamoto M et al., Quantitative Evaluation of Drug Resista…, International journal of mo… (2017) | [10.3390/ijms18071435](https://doi.org/10.3390/ijms18071435) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=mercaptopurine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC28A2` substrate | DrugBank actor |
+| absorption | small intestine | `SLC28A2` substrate | DrugBank actor |
+| distribution | blood | `SLC29A1` substrate | DrugBank actor |
+| distribution | liver | `SLC29A1` substrate | DrugBank actor |
+| metabolism | blood | `TPMT` substrate | DrugBank actor |
+| metabolism | kidney | <sub>“…ter oral administration of &lt;sup&gt;35&lt;/sup&gt;S-6-mercaptopurine, urine contains intact mercapto…”</sub> | prose |
+| metabolism | liver | `AOX1` substrate, `TPMT` substrate, `XDH` substrate | DrugBank actor |
+| metabolism | small intestine | `XDH` substrate | DrugBank actor |
+| excretion | kidney | `ABCC4` substrate, `SLC22A8` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCC4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC5 (substrate), HPRT1 (inhibitor), IMPDH1 (inhibitor), PPAT (inhibitor), SLC28A3 (substrate), SLC29A2 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 25 matched, 20 returned

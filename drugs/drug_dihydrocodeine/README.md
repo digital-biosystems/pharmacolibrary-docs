@@ -37,6 +37,21 @@ In heroin addicts, dihydrocodeine has been used as a substitute drug, in doses u
 | <span class="pk-badge pk-badge--green">extracted</span> | [Webb_2001](drugs/drug_dihydrocodeine/pd_Webb_2001_CPT.md) | Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01414.x](https://doi.org/10.1046/j.0306-5251.2001.01414.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Rezaee_2025](drugs/drug_dihydrocodeine/pd_Rezaee_2025_cough.md) | Rezaee S et al., Dextromethorphan Versus Dextrorphan: A…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70049](https://doi.org/10.1002/jcph.70049) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dihydrocodeine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>“…on. It is also likely due to pre-systemic metabolism by the liver and intestinal wall. [2]…”</sub> | prose |
+| absorption | small intestine | <sub>“…mately 20%) if administered orally. This may be due to poor gastrointestinal absorption. I…”</sub> | prose |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…Renal elimination and urinary excretion. [1]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: OPRM1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 124 matched, 78 returned

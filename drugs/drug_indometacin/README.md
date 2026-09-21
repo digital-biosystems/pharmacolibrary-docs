@@ -30,6 +30,30 @@ Intravenous indometacin is indicated to induce closure of a hemodynamically sign
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Smyth_2004_2_reference](drugs/drug_indometacin/Indometacin_Smyth2004v2_reference.md) | Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02139.x](https://doi.org/10.1111/j.1365-2125.2004.02139.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=indometacin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `SLCO1A2` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `SLCO1A2` inhibitor/substrate | DrugBank actor |
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inhibitor | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
+| metabolism | kidney | `SLC22A7` substrate, `UGT1A9` substrate, `UGT2B7` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CES1` substrate, `CYP2C19` inhibitor/substrate, `CYP2C9` substrate, `SLC10A1` substrate, `SLC22A7` substrate, `SLCO1B1` inhibitor, `UGT1A1` inhibitor/substrate, `UGT1A9` substrate, `UGT2B7` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `UGT1A1` inhibitor/substrate, `UGT2B7` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…ometacin is eliminated via renal excretion, metabolism, and biliary excretion. It is also…”</sub> | prose |
+| excretion | kidney | `ABCC2` inhibitor/substrate, `ABCC4` inhibitor, `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB11` substrate, `ABCC2` inhibitor/substrate, `ABCC3` inhibitor, `ABCC4` inhibitor | DrugBank actor |
+| excretion | small intestine | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC11 (inhibitor), ABCC6 (inhibitor), AKR1C3 (inhibitor), EIF2AK2 (inducer), GLO1 (inhibitor), PLA2G2A (inhibitor), PPARA (target), PPARG (activator), PTGDR2 (other/unknown), PTGR2 (inhibitor), PTGS1 (inhibitor), PTGS2 (inhibitor), SLC22A11 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned

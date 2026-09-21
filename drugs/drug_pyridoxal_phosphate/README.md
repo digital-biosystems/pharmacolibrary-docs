@@ -44,6 +44,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ge_2022](drugs/drug_pyridoxal_phosphate/pd_Ge_2022_daytime_sleepiness.md) | Ge L et al., Association of Pyridoxal 5'-Phosphate w…, Nutrients (2022) | [10.3390/nu14173516](https://doi.org/10.3390/nu14173516) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ge_2022](drugs/drug_pyridoxal_phosphate/pd_Ge_2022_sleep_duration.md) | Ge L et al., Association of Pyridoxal 5'-Phosphate w…, Nutrients (2022) | [10.3390/nu14173516](https://doi.org/10.3390/nu14173516) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=pyridoxal_phosphate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: AADAT (cofactor), ABAT (inhibitor), AGXT (cofactor), AGXT2 (cofactor), ALAS1 (cofactor), ALAS2 (cofactor), AZIN2 (cofactor), BCAT1 (cofactor), BCAT2 (cofactor), CBS (cofactor), CSAD (cofactor), CTH (cofactor), DDC (cofactor), F2 (inhibitor), GAD1 (cofactor), GAD2 (cofactor), GAD65 (cofactor), GADL1 (cofactor), GCAT (cofactor), GLDC (cofactor), GOT1 (activator), GOT1 (cofactor), GOT2 (cofactor), GPT (cofactor), GPT2 (cofactor), HDC (cofactor), IGSF10 (cofactor), KYAT1 (cofactor), KYAT3 (cofactor), KYNU (cofactor), MOCOS (cofactor), NFS1 (cofactor), OAT (cofactor), ODC1 (cofactor), PDXP (cofactor), PHYKPL (cofactor), PLPBP (binder), PNPO (cofactor), PSAT1 (cofactor), PYGB (cofactor), PYGL (cofactor), PYGM (cofactor), SCLY (cofactor), SDS (cofactor), SDSL (cofactor), SEPSECS (cofactor), SGPL1 (cofactor), SHMT1 (cofactor), SHMT2 (cofactor), SPTLC1 (cofactor), SPTLC2 (cofactor), SPTLC3 (cofactor), SRR (cofactor), Serine hydroxymethyltransferase (cofactor), TAT (cofactor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 327 matched, 117 returned

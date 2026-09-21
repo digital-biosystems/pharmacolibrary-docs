@@ -26,6 +26,25 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Fillastre_1987_reference](drugs/drug_ofloxacin/Ofloxacin_Fillastre1987_reference.md) | Fillastre JP et al., Ofloxacin pharmacokinetics in renal fai…, Antimicrobial agents and ch… (1987) | [10.1128/AAC.31.2.156](https://doi.org/10.1128/AAC.31.2.156) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ofloxacin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | small intestine | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inhibitor | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…dosing. About 4-8% of an ofloxacin dose is excreted in the feces and the drug is minimally…”</sub> | prose |
+| excretion | kidney | `ABCC2` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
+| excretion | liver | `ABCB11` substrate, `ABCC2` inhibitor | DrugBank actor |
+| excretion | small intestine | `ABCC2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: TOP2A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 62 matched, 20 returned

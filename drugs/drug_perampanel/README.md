@@ -26,6 +26,20 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Jing_2023_reference](drugs/drug_perampanel/Perampanel_Jing2023_reference.md) | Jing S et al., A Single- and Multiple-Dose Pharmacokin…, Clinical drug investigation (2023) | [10.1007/s40261-022-01241-8](https://doi.org/10.1007/s40261-022-01241-8) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=perampanel) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2B6` inducer/substrate, `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Perampanel is eliminated mostely in the feces (48%) and to a lesser exten in the urine (22…”</sub> | prose |
+| excretion | kidney | <sub>“…ted mostely in the feces (48%) and to a lesser exten in the urine (22%).…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: GRIA1 (target), GRIA2 (inhibitor), GRIA3 (inhibitor), GRIA4 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 17 matched, 11 returned

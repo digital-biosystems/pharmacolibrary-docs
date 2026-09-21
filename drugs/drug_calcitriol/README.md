@@ -42,6 +42,21 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ooi_2026](drugs/drug_calcitriol/pd_Ooi_2026_ALP.md) | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ooi_2026](drugs/drug_calcitriol/pd_Ooi_2026_TB.md) | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=calcitriol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…pon administration, calcitriol is rapidly absorbed from the intestines. When a single oral…”</sub> | prose |
+| metabolism | kidney | <sub>“…. The first pathway involves 24-hydroxylase activity in the kidney; this enzyme is also pr…”</sub> | prose |
+| metabolism | liver | `CYP3A4` inducer/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…proximately 27% and 7% of the radioactivity appeared in the feces and urine, respectively,…”</sub> | prose |
+| excretion | kidney | <sub>“…y 27% and 7% of the radioactivity appeared in the feces and urine, respectively, within 24…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CYP24A1 (inducer), CYP24A1 (substrate), GC (binder), HOXA10 (upregulator), VDR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 9280 matched, 162 returned

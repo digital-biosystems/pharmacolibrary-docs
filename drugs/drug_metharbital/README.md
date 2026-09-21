@@ -23,6 +23,15 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=metharbital) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CHRNA4 (target), CHRNA7 (target), GABRA1 (positive allosteric modulator), GABRA1 (potentiator), GABRA2 (potentiator), GABRA3 (potentiator), GABRA4 (potentiator), GABRA5 (potentiator), GABRA6 (potentiator), GABRG3 (modulator), GRIA2 (target), GRIK2 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned

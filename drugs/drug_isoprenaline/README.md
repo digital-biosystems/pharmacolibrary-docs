@@ -73,6 +73,25 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Yabuuchi_1977](drugs/drug_isoprenaline/pd_Yabuuchi_1977_unknown.md) | Yabuuchi Y, The beta-adrenoceptor stimulant propert…, British journal of pharmaco… (1977) | [10.1111/j.1476-5381.1977.tb07543.x](https://doi.org/10.1111/j.1476-5381.1977.tb07543.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [van_2007](drugs/drug_isoprenaline/pd_van_2007_HR.md) | van Steeg TJ et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2007) | [10.1038/sj.bjp.0707234](https://doi.org/10.1038/sj.bjp.0707234) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=isoprenaline) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
+| metabolism | brain | `COMT` substrate | DrugBank actor |
+| metabolism | kidney | `COMT` substrate | DrugBank actor |
+| metabolism | liver | `BCHE` inhibitor, `COMT` substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` inducer/inhibitor, `CYP1B1` inducer | DrugBank actor |
+| metabolism | skin | `CYP1B1` inducer | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inducer/inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…Isoprenaline is 12.2-27.0% recovered in the feces and 59.1-106.8% recovered in the urine a…”</sub> | prose |
+| excretion | kidney | <sub>“….0% recovered in the feces and 59.1-106.8% recovered in the urine after 48 hours.[A233664]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRB3 (target), IL12B (modulator), SOD1 (stabilization).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 1324 matched, 158 returned

@@ -46,6 +46,18 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Yamada_2018](drugs/drug_tilactase/pd_Yamada_2018_IE1_IE2_protein_amount.md) | Yamada KH et al., Characterization of phenyl pyrimidine d…, Antiviral chemistry & chemo… (2018) | [10.1177/2040206618763193](https://doi.org/10.1177/2040206618763193) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Yamada_2018](drugs/drug_tilactase/pd_Yamada_2018_X_gal_positive_foci.md) | Yamada KH et al., Characterization of phenyl pyrimidine d…, Antiviral chemistry & chemo… (2018) | [10.1177/2040206618763193](https://doi.org/10.1177/2040206618763193) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=tilactase) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Tilactase is not absorbed in the GI tract and thus the pharmacokinetic parameters related…”</sub> | prose |
+| metabolism | stomach | <sub>“…Tilactase is degraded by the stomach acid and by the normal flora bacterial metabolism.[L2…”</sub> | prose |
+| excretion | bile duct | <sub>“…Tilactase is completely eliminated in the feces either unchanged or as metabolites.[L2345]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: Lactose (cleavage).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 663 matched, 190 returned

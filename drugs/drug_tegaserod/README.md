@@ -35,6 +35,28 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2020](drugs/drug_tegaserod/pd_Liu_2020_Tumor_volume.md) | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2020](drugs/drug_tegaserod/pd_Liu_2020_p_S6.md) | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=tegaserod) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor, `CYP2C8` inhibitor, `CYP2D6` inhibitor/substrate, `CYP2E1` inhibitor | DrugBank actor |
+| metabolism | stomach | <sub>“…[F4223, A38972]. The substance is firstly hydrolyzed in the stomach [F4223, A38972]. It th…”</sub> | prose |
+| excretion | bile duct | <sub>“…administered dose of tegaserod is excreted unchanged in the feces, with the remaining one-…”</sub> | prose |
+| excretion | kidney | <sub>“…in the feces, with the remaining one-third excreted in the urine as metabolites [F4223].…”</sub> | prose |
+| target | brain | `SLC6A4` inhibitor/substrate | DrugBank actor |
+| target | platelet | `SLC6A4` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HTR2A (target), HTR2B (target), HTR2C (target), HTR4 (partial agonist), HTR4 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 48 matched, 48 returned

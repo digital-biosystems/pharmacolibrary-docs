@@ -53,6 +53,26 @@ The FDA withdrew its approval for the use of all liquid oral drug products formu
 | <span class="pk-badge pk-badge--red">rejected</span> | [Li_1993](drugs/drug_tetracycline/pd_Li_1993_bactericidal_rate_constant.md) | Li RC et al., The fractional maximal effect method: a…, Antimicrobial agents and ch… (1993) | [10.1128/AAC.37.3.523](https://doi.org/10.1128/AAC.37.3.523) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Srivastava_2016](drugs/drug_tetracycline/pd_Srivastava_2016_luciferase_reporter_activity.md) | Srivastava A et al., Reconstitution of Protein Translation o…, PloS one (2016) | [10.1371/journal.pone.0162020](https://doi.org/10.1371/journal.pone.0162020) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=tetracycline) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | `SLCO2B1` inhibitor | DrugBank actor |
+| absorption | mammary gland | <sub>“…ravenously, and 60-80% orally (fasting adults). Food and/or milk reduce GI absorption of o…”</sub> | prose |
+| absorption | skeletal muscle | <sub>“…Bioavailability is less than 40% when administered via intramuscular injection, 100% intra…”</sub> | prose |
+| absorption | small intestine | `SLCO2B1` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| metabolism | kidney | `SLC22A7` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP3A4` inhibitor/substrate, `SLC22A7` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…They are concentrated by the liver in the bile and excreted in the urine and feces at high…”</sub> | prose |
+| excretion | kidney | `SLC22A6` inhibitor, `SLC22A8` inhibitor/substrate | DrugBank actor |
+| excretion | liver | <sub>“…They are concentrated by the liver in the bile and excreted in the urine and feces at high…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: PRNP (inhibitor), SLC22A11 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 703 matched, 168 returned

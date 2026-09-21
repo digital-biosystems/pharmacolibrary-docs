@@ -33,6 +33,17 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Glatfelter_2022](drugs/drug_rimonabant/pd_Glatfelter_2022_catalepsy.md) | Glatfelter GC et al., Structure-activity relationships for 5F…, Neuropsychopharmacology : o… (2022) | [10.1038/s41386-021-01227-8](https://doi.org/10.1038/s41386-021-01227-8) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Glatfelter_2022](drugs/drug_rimonabant/pd_Glatfelter_2022_hypothermia.md) | Glatfelter GC et al., Structure-activity relationships for 5F…, Neuropsychopharmacology : o… (2022) | [10.1038/s41386-021-01227-8](https://doi.org/10.1038/s41386-021-01227-8) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=rimonabant) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CNR1 (target), GPR55 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 113 matched, 73 returned

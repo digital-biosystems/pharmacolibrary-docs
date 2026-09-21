@@ -34,6 +34,15 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Ting_2023](drugs/drug_omecamtiv_mecarbil/pd_Ting_2023_transient_voltage_gated_Na_current_INa_T.md) | Ting CY et al., Characterization of Stimulatory Action…, Biomedicines (2023) | [10.3390/biomedicines11051351](https://doi.org/10.3390/biomedicines11051351) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Ting_2023](drugs/drug_omecamtiv_mecarbil/pd_Ting_2023_window_Na_current_INa_W.md) | Ting CY et al., Characterization of Stimulatory Action…, Biomedicines (2023) | [10.3390/biomedicines11051351](https://doi.org/10.3390/biomedicines11051351) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=omecamtiv_mecarbil) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: MYBPC3 (modulator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned

@@ -51,6 +51,17 @@ Camostat mesylate was first approved in Japan in January 2006.[L13197]
 | <span class="pk-badge pk-badge--red">rejected</span> | [Raghavan_2022](drugs/drug_camostat/pd_Raghavan_2022_SARS_CoV_2.md) | Raghavan PR, Metadichol®: A Novel Nanolipid Formulat…, BioMed research internation… (2022) | [10.1155/2022/1558860](https://doi.org/10.1155/2022/1558860) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Raghavan_2022](drugs/drug_camostat/pd_Raghavan_2022_TMPRSS2.md) | Raghavan PR, Metadichol®: A Novel Nanolipid Formulat…, BioMed research internation… (2022) | [10.1155/2022/1558860](https://doi.org/10.1155/2022/1558860) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=camostat) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | bile duct | <sub>“…5.6% eliminated in the urine and 1.0-1.7% eliminated in the feces.[A193842]…”</sub> | prose |
+| excretion | kidney | <sub>“…Camostat mesylate is 89.8-95.6% eliminated in the urine and 1.0-1.7% eliminated in the fec…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CCK (inhibitor), PRSS1 (inhibitor), ST14 (inhibitor), TMPRSS2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 15 matched, 15 returned

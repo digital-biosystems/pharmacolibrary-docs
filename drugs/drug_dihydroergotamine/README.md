@@ -43,6 +43,27 @@ DHE is not indicated for migraine prevention or the management of hemiplegic or 
 | <span class="pk-badge pk-badge--green">extracted</span> | [McConnachie_2023](drugs/drug_dihydroergotamine/pd_McConnachie_2023_radioligand_binding.md) | McConnachie L et al., New characterization of dihydroergotami…, Frontiers in neurology (2023) | [10.3389/fneur.2023.1282846](https://doi.org/10.3389/fneur.2023.1282846) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [MaassenVanDenBrink_1998](drugs/drug_dihydroergotamine/pd_MaassenVanDenBrink_1998_unknown.md) | MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circulation (1998) | [10.1161/01.cir.98.1.25](https://doi.org/10.1161/01.cir.98.1.25) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dihydroergotamine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | skeletal muscle | <sub>“…g to a high degree of first-pass metabolism. [A239234] Both intramuscular and intravenous…”</sub> | prose |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…primarily eliminated through hepatic metabolism followed by biliary excretion. [L38469, A2…”</sub> | prose |
+| excretion | kidney | <sub>“…234] 6-7% of a single intramuscular dose is excreted in the urine.[A239234]…”</sub> | prose |
+| excretion | liver | <sub>“…DHE is primarily eliminated through hepatic metabolism followed by biliary excretion. [L38…”</sub> | prose |
+| excretion | skeletal muscle | <sub>“…ed by biliary excretion. [L38469, A239234] 6-7% of a single intramuscular dose is excreted…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA2A (target), ADRB3 (target), DRD2 (target), DRD3 (target), DRD4 (target), HTR1A (target), HTR1B (target), HTR1D (target), HTR1E (target), HTR1F (target), HTR2A (target), HTR2B (target), HTR2C (target), HTR4 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 36 matched, 29 returned

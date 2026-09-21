@@ -44,6 +44,24 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Xu_2023](drugs/drug_edoxaban/pd_Xu_2023_PT.md) | Xu R et al., Physiologically-based pharmacokinetic p…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12977](https://doi.org/10.1002/psp4.12977) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Xu_2023](drugs/drug_edoxaban/pd_Xu_2023_aPTT.md) | Xu R et al., Physiologically-based pharmacokinetic p…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12977](https://doi.org/10.1002/psp4.12977) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=edoxaban) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| metabolism | small intestine | <sub>“…ycoprotein), which is used to transport edoxaban across the intestinal wall. Unchanged edo…”</sub> | prose |
+| excretion | bile duct | <sub>“…the total clearance of edoxaban (22 L/hour). Metabolism and biliary/intestinal excretion a…”</sub> | prose |
+| excretion | kidney | <sub>“…Edoxaban is eliminated primarily as unchanged drug in urine. Renal clearance (11 L/hour) a…”</sub> | prose |
+| excretion | small intestine | <sub>“…l clearance of edoxaban (22 L/hour). Metabolism and biliary/intestinal excretion account f…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: F10 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 127 matched, 60 returned

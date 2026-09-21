@@ -32,6 +32,16 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Naik_2013](drugs/drug_peginesatide/pd_Naik_2013_Hgb.md) | Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013) | [10.1371/journal.pone.0066422](https://doi.org/10.1371/journal.pone.0066422) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=peginesatide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…d intravenously or subcutaneously is primarily excreted via urine. Most of the excreted do…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: EPOR (stimulator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 3 matched, 3 returned

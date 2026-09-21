@@ -37,6 +37,19 @@ In combination with benzocaine in otic solutions, antipyrine is indicated for th
 | <span class="pk-badge pk-badge--red">rejected</span> | [Abotaleb_2025](drugs/drug_phenazone/pd_Abotaleb_2025_unknown.md) | Abotaleb A et al., Synthesis and Biological Evaluation of…, ACS pharmacology & translat… (2025) | [10.1021/acsptsci.4c00546](https://doi.org/10.1021/acsptsci.4c00546) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Tanaka_2017](drugs/drug_phenazone/pd_Tanaka_2017_DA.md) | Tanaka S et al., Prediction of sustained fetal toxicity…, British journal of clinical… (2017) | [10.1111/bcp.13352](https://doi.org/10.1111/bcp.13352) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=phenazone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2A6` substrate, `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP2E1` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CYP2C18 (substrate), PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 230 matched, 72 returned

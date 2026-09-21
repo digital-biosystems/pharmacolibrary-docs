@@ -23,6 +23,19 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=alvimopan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | small intestine | <sub>“…Alvimopan is primarily metabolized by intestinal flora to an active metabolite although it…”</sub> | prose |
+| excretion | bile duct | <sub>“…Biliary secretion was considered the primary pathway for alvimopan…”</sub> | prose |
+| excretion | kidney | <sub>“…abolite’ by gut microflora. Feces (via biliary excretion) & urine (35%)…”</sub> | prose |
+| excretion | small intestine | <sub>“…liary excretion were then hydrolyzed to its ‘metabolite’ by gut microflora. Feces (via bil…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: OPRD1 (target), OPRK1 (target), OPRM1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 16 matched, 19 returned

@@ -28,6 +28,20 @@
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Yeo_2013_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Yeo2013_reference.md) | Yeo TW et al., A randomized pilot study of L-arginine…, PloS one (2013) | [10.1371/journal.pone.0069587](https://doi.org/10.1371/journal.pone.0069587) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Awan_2024_reference](drugs/drug_arginine_hydrochloride/ArginineHydrochloride_Awan2024_reference.md) | Awan SF et al., Phase 1 trial evaluating safety and pha…, JCI insight (2024) | [10.1172/jci.insight.175375](https://doi.org/10.1172/jci.insight.175375) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=arginine_hydrochloride) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | small intestine | `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| metabolism | liver | <sub>“…the portal circulation from whence it is transported to the liver, where again some portio…”</sub> | prose |
+| metabolism | small intestine | <sub>“…Some metabolism of L-arginine takes place in the enterocytes. L-arginine not metabolized i…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ARG2 (unknown), ASL (unknown), ASS1 (unknown), AZIN2 (unknown), NOS2 (unknown), NOS3 (unknown), SLC16A10 (inhibitor), SLC7A1 (unknown), SLC7A3 (unknown), SLC7A4 (unknown), TK1 (modulator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 20 matched, 18 returned

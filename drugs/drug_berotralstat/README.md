@@ -41,6 +41,26 @@ In December 2025, the FDA expanded Berotralstat pediatric use with approval of a
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mathis_2022_underweight_adults_40_60_kg](drugs/drug_berotralstat/Berotralstat_Mathis2022_underweight_adults_40_60_kg.md) | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mathis_2022_underweight_adults_40_60_kg](drugs/drug_berotralstat/Berotralstat_Mathis2022_underweight_adults_40_60_kg.md) | Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022) | [10.1111/cts.13233](https://doi.org/10.1111/cts.13233) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=berotralstat) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2D6` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…nchanged parent drug. About 79% of the drug was excreted in feces.[L26661]…”</sub> | prose |
+| excretion | kidney | <sub>“…otralstat, approximately 9% of the drug was excreted in the urine, where 1.8 to 4.7% of th…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: KLKB1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned

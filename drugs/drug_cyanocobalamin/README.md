@@ -49,6 +49,27 @@ Vitamin B12 supplements are widely available and indicated in patients who requi
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nava-Ocampo_2005_reference](drugs/drug_cyanocobalamin/Cyanocobalamin_NavaOcampo2005_reference.md) | Nava-Ocampo AA et al., Pharmacokinetics of high doses of cyano…, Clinical and experimental p… (2005) | [10.1111/j.1440-1681.2005.04145.x](https://doi.org/10.1111/j.1440-1681.2005.04145.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=cyanocobalamin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skeletal muscle | <sub>“…Vitamin B12 is quickly absorbed from intramuscular (IM) and subcutaneous (SC) sites of inj…”</sub> | prose |
+| absorption | small intestine | <sub>“…The separation of Vitamin B12 and IF occurs in the terminal ileum when calcium is present,…”</sub> | prose |
+| absorption | stomach | <sub>“…s to intrinsic factor (IF) during its transport through the stomach. The separation of Vit…”</sub> | prose |
+| distribution | blood-brain barrier | `ABCC1` unknown | DrugBank actor |
+| distribution | lung | `ABCC1` unknown | DrugBank actor |
+| metabolism | liver | <sub>“…. Cyanocobalamin then passes through the portal vein in the liver, and then reaches the sy…”</sub> | prose |
+| metabolism | small intestine | <sub>“…acid degradation due to its binding to haptocorrin. In the duodenum, pancreatic _proteases…”</sub> | prose |
+| metabolism | stomach | <sub>“…ptocorrin-B12_ complex. Cyanocobalamin passes through the stomach and is protected from ac…”</sub> | prose |
+| excretion | bile duct | <sub>“…2 is secreted into the gastrointestinal tract daily via the bile. In patients with adequat…”</sub> | prose |
+| excretion | kidney | <sub>“…This drug is partially excreted in the urine [F3739]. According to a clinical study, appro…”</sub> | prose |
+| excretion | liver | <sub>“…at saturate the binding capacity of plasma proteins and the liver, the unbound vitamin B12…”</sub> | prose |
+| excretion | small intestine | <sub>“…, approximately 3-8 mcg of vitamin B12 is secreted into the gastrointestinal tract daily v…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: AMN (substrate), CBLIF (substrate), CUBN (substrate), LRP2 (unknown), MMAA (binder), MMAB (substrate), MMACHC (cofactor), MMUT (cofactor), MTHFR (cofactor), MTR (cofactor), MTRR (cofactor), Pancreatic proteases (substrate), TCN1 (substrate), TCN2 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 25 matched, 24 returned

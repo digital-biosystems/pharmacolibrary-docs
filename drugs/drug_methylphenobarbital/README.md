@@ -31,6 +31,17 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Hamouda_2014](drugs/drug_methylphenobarbital/pd_Hamouda_2014_3H_tenocyclidine_binding.md) | Hamouda AK et al., Identifying barbiturate binding sites i…, Molecular pharmacology (2014) | [10.1124/mol.113.090985](https://doi.org/10.1124/mol.113.090985) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Hamouda_2014](drugs/drug_methylphenobarbital/pd_Hamouda_2014_ACh_induced_currents.md) | Hamouda AK et al., Identifying barbiturate binding sites i…, Molecular pharmacology (2014) | [10.1124/mol.113.090985](https://doi.org/10.1124/mol.113.090985) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=methylphenobarbital) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…y 50% of an oral dose of mephobarbital is absorbed from the gastrointestinal tract.…”</sub> | prose |
+| metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CHRNA4 (target), CHRNA7 (target), GABRA1 (potentiator), GABRA2 (potentiator), GABRA3 (potentiator), GABRA4 (potentiator), GABRA5 (potentiator), GABRA6 (potentiator), GRIA2 (target), GRIK2 (target), NR1I2 (activator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 27 matched, 27 returned

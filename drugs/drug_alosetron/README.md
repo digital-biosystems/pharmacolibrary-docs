@@ -23,6 +23,18 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=alosetron) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2C9` substrate, `CYP2E1` inhibitor, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…Renal elimination of unchanged alosetron accounts for only 6% of…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: HTR3A (target), HTR3B (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 30 matched, 30 returned

@@ -36,6 +36,15 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Seifert_2006](drugs/drug_paromomycin/pd_Seifert_2006_percent_inhibition_of_Leishmania_donovani_amast.md) | Seifert K et al., In vitro and in vivo interactions betwe…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.50.1.73-79.2006](https://doi.org/10.1128/AAC.50.1.73-79.2006) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=paromomycin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: RPL10L (inhibitor), RPSA (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 22 matched, 14 returned

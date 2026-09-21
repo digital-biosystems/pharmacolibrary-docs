@@ -77,6 +77,18 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [da_2016](drugs/drug_castor_oil/pd_da_2016_unknown.md) | da Silva AD et al., Croton grewioides Baill. (Euphorbiaceae…, Pharmacognosy research (2016) | [10.4103/0974-8490.181465](https://doi.org/10.4103/0974-8490.181465) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [van_2022](drugs/drug_castor_oil/pd_van_2022_TSP_1.md) | van Eijk M et al., Development of a population pharmacokin…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04445-z](https://doi.org/10.1007/s00280-022-04445-z) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=castor_oil) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…f castor oil, ricinoleic acid is released by lipases in the intestinal lumen and absorbed…”</sub> | prose |
+| metabolism | small intestine | <sub>“…ydrolyzed to glycerol and ricinoleic acid via pancreatic or intestinal lipase activity [F7…”</sub> | prose |
+| excretion | bile duct | <sub>“…Fecal recovery of radio-labelled castor oil ranged from 11.4% (fo…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: PTGER3 (activator), PTGER3 (target), PTGER4 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 193 matched, 110 returned

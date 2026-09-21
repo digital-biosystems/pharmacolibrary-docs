@@ -34,6 +34,23 @@ In September 2015, lusutrombopag received its first global approval in Japan to 
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Katsube_2019](drugs/drug_lusutrombopag/pd_Katsube_2019_PLT.md) | Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=lusutrombopag) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…nistered dose of lusutrombopag undergoes urinary excretion. Fecal excretion accounted for…”</sub> | prose |
+| excretion | kidney | <sub>“…bout 1% of the administered dose of lusutrombopag undergoes urinary excretion. Fecal excre…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CYP4A11 (substrate), MPL (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned

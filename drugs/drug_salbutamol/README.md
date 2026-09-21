@@ -65,6 +65,23 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Venkatasubramanian_2020](drugs/drug_salbutamol/pd_Venkatasubramanian_2020_MAP.md) | Venkatasubramanian R et al., Semi-mechanistic modelling platform to…, British journal of pharmaco… (2020) | [10.1111/bph.15079](https://doi.org/10.1111/bph.15079) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Venkatasubramanian_2020](drugs/drug_salbutamol/pd_Venkatasubramanian_2020_dPdt_max.md) | Venkatasubramanian R et al., Semi-mechanistic modelling platform to…, British journal of pharmaco… (2020) | [10.1111/bph.15079](https://doi.org/10.1111/bph.15079) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=salbutamol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skeletal muscle | <sub>“…g inhalation, salbutamol acts topically on bronchial smooth muscle and the drug is initial…”</sub> | prose |
+| absorption | small intestine | <sub>“…portion of the dose which is swallowed and absorbed in the gut.[F3265] In particular, the…”</sub> | prose |
+| metabolism | kidney | <sub>“…nide.[F3265,F3268] Salbutamol is ultimately excreted in the urine as free drug and as the…”</sub> | prose |
+| metabolism | liver | `CYP3A4` inhibitor | DrugBank actor |
+| metabolism | lung | <sub>“…Salbutamol is not metabolized in the lung but is converted in the liver to the 4'-o-sulpha…”</sub> | prose |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…tabolites.[F3265,F3268] A small fraction is excreted in the feces.[F3265,F3268]…”</sub> | prose |
+| excretion | kidney | <sub>“…oral administration, 58-78% of the dose is excreted in the urine in 24 hours, approximatel…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRB3 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 741 matched, 56 returned

@@ -29,6 +29,17 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kim_2020_liver transplant recipients](drugs/drug_antithrombin_iii/AntithrombinIii_Kim2020_liver_transplant_recipients.md) | Kim BR et al., Pharmacokinetics of human antithrombin…, British journal of clinical… (2020) | [10.1111/bcp.14200](https://doi.org/10.1111/bcp.14200) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Knot_1987_healthy volunteers](drugs/drug_antithrombin_iii/AntithrombinIii_Knot1987_healthy_volunteers.md) | Knot EA et al., Antithrombin III: biodistribution in he…, Thrombosis and haemostasis (1987) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=antithrombin_iii) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…er proteinases cleared principally by liver and excreted in urine.…”</sub> | prose |
+| excretion | liver | <sub>“…I with thrombin or other proteinases cleared principally by liver and excreted in urine.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: SERPINC1 (other).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 26 matched, 17 returned

@@ -35,6 +35,21 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Mooney_2024](drugs/drug_thiamine/pd_Mooney_2024_cell_count.md) | Mooney R et al., Sodium Metabisulfite Inhibits Acanthamo…, Pathogens (Basel, Switzerla… (2024) | [10.3390/pathogens13060431](https://doi.org/10.3390/pathogens13060431) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Noguchi_2018](drugs/drug_thiamine/pd_Noguchi_2018_BDK.md) | Noguchi S et al., Ca2+-dependent inhibition of branched-c…, Biochemical and biophysical… (2018) | [10.1016/j.bbrc.2018.09.038](https://doi.org/10.1016/j.bbrc.2018.09.038) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=thiamine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
+| absorption | small intestine | `SLC22A5` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | `SLC22A1` substrate | DrugBank actor |
+| excretion | kidney | `SLC22A2` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CYP4B1 (inducer), ENTPD5 (substrate), SLC19A2 (substrate), SLC19A3 (substrate), THTPA (substrate), TPK1 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 308 matched, 89 returned

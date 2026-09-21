@@ -38,6 +38,14 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Carreño_2025](drugs/drug_linerixibat/pd_Carre_o_2025_C4.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Carreño_2025](drugs/drug_linerixibat/pd_Carre_o_2025_GSRS.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=linerixibat) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | ileum | `SLC10A2` modulator | DrugBank actor |
+
 ## Coverage
 
 - **PubMed hits:** 14 matched, 14 returned

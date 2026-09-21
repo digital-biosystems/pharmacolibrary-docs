@@ -38,6 +38,19 @@ Minocycline was granted FDA approval on 30 June 1971.[L11695]
 | <span class="pk-badge pk-badge--green">extracted</span> | [Aranzana-Climent_2020](drugs/drug_minocycline/pd_Aranzana_Climent_2020_unknown.md) | Aranzana-Climent V et al., Semi-mechanistic PK/PD modelling of com…, Clinical microbiology and i… (2020) | [10.1016/j.cmi.2020.01.017](https://doi.org/10.1016/j.cmi.2020.01.017) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Vallé_2021](drugs/drug_minocycline/pd_Vall_2021_mean_inoculum_growth.md) | Vallé Q et al., Prediction of Minocycline Activity in t…, Frontiers in microbiology (2021) | [10.3389/fmicb.2021.671376](https://doi.org/10.3389/fmicb.2021.671376) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=minocycline) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | `SLC22A7` inhibitor | DrugBank actor |
+| metabolism | liver | `SLC22A7` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…Minocycline is predominantly eliminated through the biliary route.[A190699] 4.5-9% of an i…”</sub> | prose |
+| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ALOX5 (inhibitor), CASP1 (negative modulator), CASP3 (negative modulator), CYCS (negative modulator), IL1B (modulator), MAPK1 (inhibitor), MMP9 (inhibitor), NOS2 (inhibitor), VEGFA (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 69 matched, 44 returned

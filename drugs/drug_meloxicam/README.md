@@ -37,6 +37,21 @@ Off-label uses include the treatment of dental or post-surgical pain.
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Meineke_2003_reference](drugs/drug_meloxicam/Meloxicam_Meineke2003_reference.md) | Meineke I et al., Population pharmacokinetic analysis of…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01753.x](https://doi.org/10.1046/j.1365-2125.2003.01753.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Aoyama_2017_reference](drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference.md) | Aoyama T et al., Pharmacokinetics and Pharmacodynamics o…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12259](https://doi.org/10.1002/psp4.12259) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=meloxicam) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| metabolism | liver | `CYP2C8` substrate, `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…h metabolism. Its metabolites are cleared through renal and fecal elimination.[A190195] Le…”</sub> | prose |
+| excretion | kidney | `ABCC4` binder | DrugBank actor |
+| excretion | liver | `ABCC4` binder | DrugBank actor |
+
+<sub>Actors without a tissue in the table: Human vesicular glutamate transporters (modulator), PGD (inhibitor), PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 57 matched, 33 returned

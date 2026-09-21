@@ -32,6 +32,18 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Tokuoka_2014](drugs/drug_naratriptan/pd_Tokuoka_2014_unknown.md) | Tokuoka K et al., Theory-based analysis of clinical effic…, The journal of headache and… (2014) | [10.1186/1129-2377-15-85](https://doi.org/10.1186/1129-2377-15-85) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Tokuoka_2015](drugs/drug_naratriptan/pd_Tokuoka_2015_headache_recurrence_rate.md) | Tokuoka K et al., Theoretical analysis of headache recurr…, The journal of headache and… (2015) | [10.1186/s10194-015-0558-9](https://doi.org/10.1186/s10194-015-0558-9) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=naratriptan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `MAOA` substrate | DrugBank actor |
+| metabolism | liver | `MAOA` substrate | DrugBank actor |
+| metabolism | small intestine | `MAOA` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HTR1A (target), HTR1B (target), HTR1D (target), HTR1F (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 51 matched, 59 returned

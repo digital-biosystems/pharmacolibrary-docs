@@ -107,6 +107,24 @@ In the setting of acute myocardial infarction, or before percutaneous interventi
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=acetylsalicylic_acid) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer/modulator/substrate/transport | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer/modulator/substrate/transport | DrugBank actor |
+| absorption | liver | `ABCB1` inducer/modulator/substrate/transport | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer/modulator/substrate/transport | DrugBank actor |
+| absorption | small intestine | `ABCB1` inducer/modulator/substrate/transport | DrugBank actor |
+| absorption | stomach | <sub>“…ncluding but not limited to the rate of tablet dissolution, gastric contents, gastric empt…”</sub> | prose |
+| metabolism | liver | `CES1` metabolism, `CYP2C19` formation/inducer, `CYP2C9` substrate, `NAT2` substrate, `UGT1A6` metabolism/substrate | DrugBank actor |
+| metabolism | small intestine | `NAT2` substrate, `UGT1A6` metabolism/substrate | DrugBank actor |
+| excretion | kidney | `SLC22A6` inhibitor, `SLC22A8` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA2A (target), AKR1C1 (inhibitor), ALOX12 (target), ALOX5AP (target), CASP1 (downregulator), CASP1 (inhibitor), CASP3 (downregulator), CASP3 (inhibitor), CCND1 (downregulator), COX-1 (target), CYP2C1 (metabolism), Cyclin A (downregulator), EDNRA (inhibitor), G6PD (target), GP1BA (target), HMGCR (inhibitor), HO1 (target), HSPA5 (binder), HSPA5 (inhibitor), ITGA2 (target), ITGB1 (target), ITGB3 (target), MDR1 (transport), MYC (downregulator), NEU1 (inhibitor), NFKBIA (inhibitor), P2RY1 (target), PCNA (downregulator), PEAR1 (target), PLA2G7 (target), PON1 (metabolism), PRKAA1 (activator), PTGS1 (inhibitor), PTGS1 (target), PTGS2 (inhibitor), PTGS2 (target), RPS6KA3 (inhibitor), TBXA2R (target), TNFAIP6 (downregulator), TNFAIP6 (inhibitor), TP53 (inducer).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 604 matched, 101 returned

@@ -30,6 +30,24 @@ Mirtazapine has been used off-label for a variety of conditions including panic 
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Yan_2026_reference](drugs/drug_mirtazapine/Mirtazapine_Yan2026_reference.md) | Yan H et al., Optimizing Mirtazapine Initial Dosing:…, Drug design, development an… (2026) | [10.2147/DDDT.S601238](https://doi.org/10.2147/DDDT.S601238) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=mirtazapine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>“…this drug is rapid and complete.[A177826, FDA label] Due to first pass metabolism in the l…”</sub> | prose |
+| absorption | small intestine | <sub>“…to first pass metabolism in the liver and metabolism in the gut wall, absolute bioavailabi…”</sub> | prose |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2D6` substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…It is 75% eliminated in the urine and 15% eliminated in the feces.[A177826]…”</sub> | prose |
+| excretion | kidney | <sub>“…This drug is mainly excreted by the kidney. It is 75% eliminated in the urine and 15% elim…”</sub> | prose |
+| target | brain | `SLC6A4` inhibitor/substrate | DrugBank actor |
+| target | platelet | `SLC6A4` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: 5HT3 serotonin receptor (target), ADRA1A (target), ADRA2A (target), HRH1 (target), HTR2A (target), HTR2C (target), OPRK1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 18 matched, 12 returned

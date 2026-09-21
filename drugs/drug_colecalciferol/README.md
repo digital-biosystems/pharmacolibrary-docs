@@ -39,6 +39,23 @@ Concurrently, as one of the most commonly utilized forms of vitamin D, cholecalc
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Hoeben_2026](drugs/drug_colecalciferol/pd_Hoeben_2026_TV.md) | Hoeben E et al., PKPD-Based Translational Modeling of Ca…, European journal of drug me… (2026) | [10.1007/s13318-026-01010-4](https://doi.org/10.1007/s13318-026-01010-4) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=colecalciferol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | bile duct | <sub>“…f fat absorption is normal [F4027, F4042, F4048]. Moreover, bile is necessary for absorpti…”</sub> | prose |
+| absorption | small intestine | <sub>“…Cholecalciferol is readily absorbed from the small intestine if fat absorption is normal […”</sub> | prose |
+| metabolism | heart | `CYP2J2` substrate | DrugBank actor |
+| metabolism | kidney | <sub>“…zyme vitamin D-25-hydroxylase [F4027, F4042, F4048]. At the kidney, calcifediol subsequent…”</sub> | prose |
+| metabolism | liver | `CYP2C8` inhibitor, `CYP3A4` substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inhibitor, `CYP2J2` substrate, `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…alciferol and its metabolites are excreted primarily in the bile and feces [T527].…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CYP11A1 (substrate), CYP27A1 (substrate), CYP2R1 (substrate), GC (unknown), VDR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 9645 matched, 70 returned

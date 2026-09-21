@@ -35,6 +35,17 @@ Donidalorsen was approved by the FDA in August 2025 for prophylactic use to prev
 | <span class="pk-badge pk-badge--green">extracted</span> | [Diep_2026](drugs/drug_donidalorsen/pd_Diep_2026_PKK.md) | Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Singh_2025](drugs/drug_donidalorsen/pd_Singh_2025_HAE_attack_rate.md) | Singh P et al., Exposure-Response Analysis of Donidalor…, Clinical and translational… (2025) | [10.1111/cts.70388](https://doi.org/10.1111/cts.70388) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=donidalorsen) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…short oligonucleotide fragments of varying sizes within the liver. _In vitro_ studies indi…”</sub> | prose |
+| excretion | kidney | <sub>“…The mean fraction of unchanged ASO eliminated in urine is less than 1% of the administered…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: KLKB1 (antisense oligonucleotide), KLKB1 (binder).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 3 matched, 3 returned

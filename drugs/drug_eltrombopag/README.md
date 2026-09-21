@@ -34,6 +34,23 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Farrell_2014](drugs/drug_eltrombopag/pd_Farrell_2014_unknown.md) | Farrell C et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2014) | [10.1111/bcp.12244](https://doi.org/10.1111/bcp.12244) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=eltrombopag) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCG2` inhibitor | DrugBank actor |
+| absorption | liver | `ABCG2` inhibitor | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCG2` inhibitor | DrugBank actor |
+| metabolism | kidney | `UGT1A9` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2C8` inhibitor/substrate, `SLCO1B1` inhibitor, `UGT1A1` inhibitor/substrate, `UGT1A3` substrate, `UGT1A9` inhibitor | DrugBank actor |
+| metabolism | small intestine | `UGT1A1` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Eltrombopag is eliminated primarily via the feces (59%), along with 31% being renally excr…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: MPL (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 18 matched, 17 returned

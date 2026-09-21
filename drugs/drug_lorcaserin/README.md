@@ -32,6 +32,23 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Han_2015](drugs/drug_lorcaserin/pd_Han_2015_BW.md) | Han S et al., Exposure-response model for sibutramine…, Drug design, development an… (2015) | [10.2147/dddt.s85435](https://doi.org/10.2147/dddt.s85435) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Sharma_2018](drugs/drug_lorcaserin/pd_Sharma_2018_BW.md) | Sharma VD et al., Model-Based Approach to Predict Adheren…, Journal of clinical pharmac… (2018) | [10.1002/jcph.994](https://doi.org/10.1002/jcph.994) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=lorcaserin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | <sub>“…moyl glucuronide lorcaserin (M5) is the major metabolite in urine. Other minor metabolites…”</sub> | prose |
+| metabolism | liver | `CYP1A2` substrate, `CYP2A6` substrate, `CYP2B6` substrate, `CYP2C19` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…are eliminated mostly in the urine (92.3%) and some through feces (2.2%).…”</sub> | prose |
+| excretion | kidney | <sub>“…etabolism, and the metabolites are eliminated mostly in the urine (92.3%) and some through…”</sub> | prose |
+| excretion | liver | <sub>“…Lorcaserin is eliminated by hepatic metabolism, and the metabolites are eliminated mostly…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: FMO1 (substrate), HTR2C (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 44 matched, 45 returned

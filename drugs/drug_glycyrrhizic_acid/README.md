@@ -73,6 +73,24 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Xu_2014](drugs/drug_glycyrrhizic_acid/pd_Xu_2014_urinary_cortisol_cortisone_ratio.md) | Xu R et al., A semi-physiologically based pharmacoki…, PloS one (2014) | [10.1371/journal.pone.0114049](https://doi.org/10.1371/journal.pone.0114049) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Xu_2014](drugs/drug_glycyrrhizic_acid/pd_Xu_2014_urinary_cortisone.md) | Xu R et al., A semi-physiologically based pharmacoki…, PloS one (2014) | [10.1371/journal.pone.0114049](https://doi.org/10.1371/journal.pone.0114049) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=glycyrrhizic_acid) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | <sub>“…nd. The finding of a minimal amount of glycyrrhizic acid in urine suggests the existence o…”</sub> | prose |
+| absorption | small intestine | <sub>“…urine suggests the existence of a partial absorption in the gastrointestinal tract.[A33067…”</sub> | prose |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | <sub>“…acid.[F79] This metabolite is transported and taken in the liver for its metabolization to…”</sub> | prose |
+| metabolism | small intestine | <sub>“…tered, glycyrrhizic acid is almost completely hydrolyzed by intestinal bacteria for the fo…”</sub> | prose |
+| excretion | bile duct | <sub>“…The majority of the administered dose is eliminated by the bile in which glycyrrhizic acid…”</sub> | prose |
+| excretion | kidney | <sub>“…the administered dose of glycyrrhizic acid can be found in urine which corresponds to the…”</sub> | prose |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+| excretion | small intestine | <sub>“…se conjugates are efficiently transported into the bile and duodenum where commensal bacte…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: AKR1C2 (substrate), AKR1C3 (substrate), AKR1C4 (substrate), CASP3 (target), HSD11B1 (inhibitor), HSD11B1 (target), LPL (inducer), NFKB2 (translocation inhibitor), TNF (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 340 matched, 160 returned

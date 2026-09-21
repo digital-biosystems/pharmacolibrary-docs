@@ -41,6 +41,16 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zhou_2024](drugs/drug_ziconotide/pd_Zhou_2024_tumor_volume.md) | Zhou R et al., Machine learning-aided discovery of T79…, Cell communication and sign… (2024) | [10.1186/s12964-024-01954-7](https://doi.org/10.1186/s12964-024-01954-7) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zhou_2024](drugs/drug_ziconotide/pd_Zhou_2024_tumor_weight.md) | Zhou R et al., Machine learning-aided discovery of T79…, Cell communication and sign… (2024) | [10.1186/s12964-024-01954-7](https://doi.org/10.1186/s12964-024-01954-7) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ziconotide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…l fraction of intravenous ziconotide (&lt; 1%) is recovered in urine.[L13389]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CACNA1A (inhibitor), CACNA1B (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 35 matched, 35 returned

@@ -34,6 +34,16 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [da_2020_rsea](drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_rsea.md) | da Costa TX et al., Population Pharmacokinetics of Magnesiu…, Drugs in R&D (2020) | [10.1007/s40268-020-00315-2](https://doi.org/10.1007/s40268-020-00315-2) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [da_2020_rsea](drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_rsea.md) | da Costa TX et al., Population Pharmacokinetics of Magnesiu…, Drugs in R&D (2020) | [10.1007/s40268-020-00315-2](https://doi.org/10.1007/s40268-020-00315-2) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=magnesium_sulfate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…Magnesium is excreted solely by the kidney at a rate proportional to the serum concentrati…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CACNA1C (blocker), CACNA1C (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 28 matched, 20 returned

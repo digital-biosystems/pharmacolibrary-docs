@@ -34,6 +34,16 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Lingvay_2025](drugs/drug_insulin_icodec/pd_Lingvay_2025_SMBG.md) | Lingvay I et al., Pharmacokinetic/Pharmacodynamic Modelin…, Endocrine practice : offici… (2025) | [10.1016/j.eprac.2024.11.009](https://doi.org/10.1016/j.eprac.2024.11.009) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Lingvay_2025](drugs/drug_insulin_icodec/pd_Lingvay_2025_resp.md) | Lingvay I et al., Pharmacokinetic/Pharmacodynamic Modelin…, Endocrine practice : offici… (2025) | [10.1016/j.eprac.2024.11.009](https://doi.org/10.1016/j.eprac.2024.11.009) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=insulin_icodec) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder | DrugBank actor |
+
+<sub>Actors without a tissue in the table: IDE (substrate), IGF1R (target), INSR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 16 matched, 16 returned

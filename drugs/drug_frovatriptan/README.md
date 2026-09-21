@@ -23,6 +23,18 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=frovatriptan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Frovatriptan is rapidly absorbed from the duodenum, but has low oral bioavailability.…”</sub> | prose |
+| metabolism | liver | `CYP1A2` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…Radiolabeled compounds excreted in urine were unchanged frovatriptan, hydroxylated frovatr…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: HTR1B (target), HTR1D (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 34 matched, 56 returned

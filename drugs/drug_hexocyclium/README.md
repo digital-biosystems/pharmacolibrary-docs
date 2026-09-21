@@ -29,6 +29,15 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Verspohl_1990](drugs/drug_hexocyclium/pd_Verspohl_1990_unknown.md) | Verspohl EJ et al., Muscarinic receptor subtypes in rat pan…, European journal of pharmac… (1990) | [10.1016/0014-2999(90)90109-j](https://doi.org/10.1016/0014-2999(90)90109-j) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=hexocyclium) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned

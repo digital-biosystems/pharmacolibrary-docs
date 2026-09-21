@@ -32,6 +32,16 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Ishikawa_2021](drugs/drug_amlexanox/pd_Ishikawa_2021_TNF_alpha.md) | Ishikawa S et al., T-Cell Activation-Inhibitory Assay to S…, Biological & pharmaceutical… (2021) | [10.1248/bpb.b20-00889](https://doi.org/10.1248/bpb.b20-00889) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Ishikawa_2021](drugs/drug_amlexanox/pd_Ishikawa_2021_T_cell_activation.md) | Ishikawa S et al., T-Cell Activation-Inhibitory Assay to S…, Biological & pharmaceutical… (2021) | [10.1248/bpb.b20-00889](https://doi.org/10.1248/bpb.b20-00889) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=amlexanox) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…he active ulcer. Most of the systemic absorption is via the gastrointestinal tract.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: FGF1 (inhibitor), HSP90AA1 (inhibitor), IL3 (target), S100A12 (target), S100A13 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 17 matched, 15 returned

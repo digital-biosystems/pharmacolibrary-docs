@@ -35,6 +35,26 @@ In Canada, oxcarbazepine is indicated for use as monotherapy or adjunctive thera
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Faison_2020_population](drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_population.md) | Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Faison_2020_population](drugs/drug_oxcarbazepine/Oxcarbazepine_Faison2020_population.md) | Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020) | [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=oxcarbazepine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inducer/inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2C19` inhibitor, `CYP3A4` inducer/inhibitor, `CYP3A5` inducer/inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/inhibitor, `CYP3A5` inducer/inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…d oxcarbazepine, and less than 1% is unchanged parent drug. Fecal elimination accounts for…”</sub> | prose |
+| excretion | kidney | <sub>“…% of the administered dose of oxcarbazepine is found in the urine. Of this, approximately…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: AKR1C1 (substrate), AKR1C2 (substrate), AKR1C3 (substrate), AKR1C4 (substrate), CBR1 (substrate), CBR3 (substrate), SCN11A (blocker), SCN1A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 58 matched, 16 returned

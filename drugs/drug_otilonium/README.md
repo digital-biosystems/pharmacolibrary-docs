@@ -34,6 +34,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Camarda_2025](drugs/drug_otilonium/pd_Camarda_2025_unknown.md) | Camarda L et al., Repurposing 1,4-Dihydropyridine Scaffol…, Pharmaceuticals (Basel, Swi… (2025) | [10.3390/ph18101476](https://doi.org/10.3390/ph18101476) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Camarda_2025](drugs/drug_otilonium/pd_Camarda_2025_visceral_nociception_pain.md) | Camarda L et al., Repurposing 1,4-Dihydropyridine Scaffol…, Pharmaceuticals (Basel, Swi… (2025) | [10.3390/ph18101476](https://doi.org/10.3390/ph18101476) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=otilonium) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
 ## Coverage
 
 - **PubMed hits:** 26 matched, 54 returned

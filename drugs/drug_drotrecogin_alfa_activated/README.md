@@ -26,6 +26,15 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Macias_2002_patients with severe sepsis](drugs/drug_drotrecogin_alfa_activated/DrotrecoginAlfaActivated_Macias2002_patients_with_severe_sep.md) | Macias WL et al., Pharmacokinetic-pharmacodynamic analysi…, Clinical pharmacology and t… (2002) | [10.1067/mcp.2002.128148](https://doi.org/10.1067/mcp.2002.128148) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=drotrecogin_alfa_activated) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: F2 (unknown), F5 (inhibitor), F8 (inhibitor), PF4 (unknown), PROCR (unknown), PROS1 (unknown), SERPINA5 (unknown), SERPINB6 (unknown), SERPINE1 (unknown), THBD (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 30 matched, 30 returned

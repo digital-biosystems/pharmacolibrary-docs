@@ -33,6 +33,18 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Douglas_2025](drugs/drug_sucralfate/pd_Douglas_2025_pain.md) | Douglas C et al., Mucositis Pain and Its Temporal Relatio…, Paediatric anaesthesia (2025) | [10.1111/pan.15063](https://doi.org/10.1111/pan.15063) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=sucralfate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | <sub>“…abel] The adsorbed sulfated disaccharide is excreted in the urine [F4519]. This drug conta…”</sub> | prose |
+| absorption | small intestine | <sub>“…This drug is absorbed from the gastrointestinal tract in very minimal quantities.[FDA labe…”</sub> | prose |
+| excretion | kidney | <sub>“…unt of this drug that is absorbed is excreted mainly in the urine within 48 hours [FDA lab…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: EGF (inducer), FGA (binder), FGF2 (inducer), FGF2 (target), PGA5 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 59 matched, 54 returned

@@ -49,6 +49,30 @@
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Skinner_2004_reference](drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md) | Skinner MH et al., Effect of age on the pharmacokinetics o…, British journal of clinical… (2004) | [10.1046/j.1365-2125.2003.01963.x](https://doi.org/10.1046/j.1365-2125.2003.01963.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Ngo_2020_reference](drugs/drug_duloxetine/Duloxetine_Ngo2020_reference.md) | Ngo TL et al., Application of an Inter-Species Extrapo…, International journal of mo… (2020) | [10.3390/ijms21051862](https://doi.org/10.3390/ijms21051862) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=duloxetine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | stomach | <sub>“…an enteric coating to protect it during transit through the stomach. This creates a 2 hour…”</sub> | prose |
+| distribution | blood | `ALB` target, `ORM1` target | DrugBank actor |
+| metabolism | bile duct | <sub>“…r uncharacterized metabolite is known to be excreted in the feces but comprises &lt;5% of the…”</sub> | prose |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…onjugated metabolites.[label] Another 20% is present in the feces as the parent drug, 4-hy…”</sub> | prose |
+| excretion | kidney | <sub>“…About 70% of duloxetine is excreted in the urine mainly as conjugated metabolites.[label]…”</sub> | prose |
+| target | brain | `SLC6A4` inhibitor | DrugBank actor |
+| target | platelet | `SLC6A4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 47 matched, 35 returned

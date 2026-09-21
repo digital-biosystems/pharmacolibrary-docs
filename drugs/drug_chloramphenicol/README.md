@@ -28,6 +28,21 @@ The FDA has withdrawn all oral drug products containing chloramphenicol, due to 
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Anderson_1983_reference](drugs/drug_chloramphenicol/Chloramphenicol_Anderson1983_reference.md) | Anderson KL et al., Pharmacokinetics of chloramphenicol in…, Journal of veterinary pharm… (1983) | [10.1111/j.1365-2885.1983.tb00005.x](https://doi.org/10.1111/j.1365-2885.1983.tb00005.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=chloramphenicol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skeletal muscle | <sub>“…ministration (bioavailability 80%). Well absorbed following intramuscular administration (…”</sub> | prose |
+| absorption | small intestine | <sub>“…Rapidly and completely absorbed from gastrointestinal tract following oral administration…”</sub> | prose |
+| metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2C19` inhibitor, `CYP3A4` inhibitor, `CYP3A5` inhibitor, `CYP3A7` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor, `CYP3A5` inhibitor | DrugBank actor |
+| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CD55 (other).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 376 matched, 69 returned

@@ -33,6 +33,22 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Jonkers_2001](drugs/drug_tolbutamide/pd_Jonkers_2001_Ca2_i.md) | Jonkers FC et al., Tolbutamide stimulation of pancreatic b…, British journal of pharmaco… (2001) | [10.1038/sj.bjp.0704108](https://doi.org/10.1038/sj.bjp.0704108) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Schwanstecher_1994](drugs/drug_tolbutamide/pd_Schwanstecher_1994_unknown.md) | Schwanstecher M et al., Location of the sulphonylurea receptor…, British journal of pharmaco… (1994) | [10.1111/j.1476-5381.1994.tb17078.x](https://doi.org/10.1111/j.1476-5381.1994.tb17078.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=tolbutamide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | liver | `SLCO2B1` substrate | DrugBank actor |
+| absorption | small intestine | `SLC15A1` inhibitor, `SLCO1A2` inhibitor, `SLCO2B1` substrate | DrugBank actor |
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| metabolism | liver | `CYP2C19` substrate, `CYP2C8` inhibitor/substrate, `CYP2C9` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…hanged drug and metabolites are eliminated in the urine and feces. Approximately 75-85% of…”</sub> | prose |
+| excretion | kidney | `SLC15A2` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC8 (inhibitor), ABCC9 (blocker), CYP2C18 (substrate), KCNJ1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 56 matched, 20 returned

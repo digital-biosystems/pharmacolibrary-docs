@@ -31,6 +31,16 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Haupt_1971_2](drugs/drug_glisoxepide/pd_Haupt_1971_2_free_fatty_acids.md) | Haupt (1971) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Haupt_1971_2](drugs/drug_glisoxepide/pd_Haupt_1971_2_serum_insulin.md) | Haupt (1971) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=glisoxepide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C9` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: INS (regulator), KCNJ10 (blocker), KCNJ8 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned

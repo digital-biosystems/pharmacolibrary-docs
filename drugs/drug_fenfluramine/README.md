@@ -37,6 +37,23 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [van_2026](drugs/drug_fenfluramine/pd_van_2026_bacterial_load.md) | van den Berg S et al., The pharmacodynamics of polymyxin B in…, The Journal of antimicrobia… (2026) | [10.1093/jac/dkag097](https://doi.org/10.1093/jac/dkag097) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Erenburg_2024](drugs/drug_fenfluramine/pd_Erenburg_2024_unknown.md) | Erenburg N et al., Stereoselective Analysis of the Antisei…, International journal of mo… (2024) | [10.3390/ijms25052522](https://doi.org/10.3390/ijms25052522) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=fenfluramine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…0% of fenfluramine is excreted in urine and less than 5% in feces; unchanged fenfluramine…”</sub> | prose |
+| excretion | kidney | <sub>“…Over 90% of fenfluramine is excreted in urine and less than 5% in feces; unchanged fenflur…”</sub> | prose |
+| target | brain | `SLC6A4` inhibitor/substrate | DrugBank actor |
+| target | platelet | `SLC6A4` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HTR1A (target), HTR1D (target), HTR2A (target), HTR2B (target), HTR2C (target), SIGMAR1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 167 matched, 88 returned

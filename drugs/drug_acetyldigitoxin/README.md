@@ -39,6 +39,15 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Ji_2026](drugs/drug_acetyldigitoxin/pd_Ji_2026_apoptosis.md) | Ji X et al., Repurposing acetyldigitoxin as a potent…, Journal of computer-aided m… (2026) | [10.1007/s10822-026-00777-7](https://doi.org/10.1007/s10822-026-00777-7) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Ji_2026](drugs/drug_acetyldigitoxin/pd_Ji_2026_cell_viability.md) | Ji X et al., Repurposing acetyldigitoxin as a potent…, Journal of computer-aided m… (2026) | [10.1007/s10822-026-00777-7](https://doi.org/10.1007/s10822-026-00777-7) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=acetyldigitoxin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ATP1A1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned

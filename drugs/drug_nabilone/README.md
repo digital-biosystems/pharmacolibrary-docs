@@ -27,6 +27,21 @@ From a pharmacological perspective, Cannabis' diverse receptor profile explains 
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=nabilone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Nabilone appears to be completely absorbed from the human gastrointestinal tract when admi…”</sub> | prose |
+| metabolism | heart | `CYP2J2` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor/substrate, `CYP2E1` inhibitor/substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP2J2` substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…, the drug and its metabolites are eliminated mainly in the feces (approximately 67%) and…”</sub> | prose |
+| excretion | kidney | <sub>“…the feces (approximately 67%) and to a lesser extent in the urine (approximately 22%) with…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CNR1 (partial agonist), CNR2 (partial agonist).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 29 matched, 25 returned

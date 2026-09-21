@@ -30,6 +30,28 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ooi_2026](drugs/drug_elafibranor/pd_Ooi_2026_ALP.md) | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ooi_2026](drugs/drug_elafibranor/pd_Ooi_2026_TB.md) | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=elafibranor) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCG2` inhibitor/substrate | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | heart | `CYP2J2` substrate | DrugBank actor |
+| metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C8` substrate, `CYP3A4` inducer, `UGT1A3` substrate, `UGT1A4` substrate, `UGT1A6` inhibitor, `UGT2B7` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP2J2` substrate, `CYP3A4` inducer, `UGT1A6` inhibitor, `UGT2B7` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…subjects, approximately 77.1% of the dose was recovered in feces, primarily as elafibranor…”</sub> | prose |
+| excretion | kidney | `ABCC2` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCB11` inhibitor, `ABCC2` inhibitor/substrate, `ABCC3` inhibitor | DrugBank actor |
+| excretion | small intestine | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: PPARA (target), PPARD (target), PPARG (target), PTGR1 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 10 matched, 12 returned

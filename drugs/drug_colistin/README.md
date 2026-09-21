@@ -34,6 +34,16 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yu_2022_shrinkage](drugs/drug_colistin/Colistin_Yu2022_shrinkage.md) | Yu XB et al., Population Pharmacokinetics of Colistin…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.915958](https://doi.org/10.3389/fphar.2022.915958) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yu_2022_shrinkage](drugs/drug_colistin/Colistin_Yu2022_shrinkage.md) | Yu XB et al., Population Pharmacokinetics of Colistin…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.915958](https://doi.org/10.3389/fphar.2022.915958) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=colistin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Very poor absorption from gastrointestinal tract.…”</sub> | prose |
+| metabolism | bile duct | <sub>“…se can be recovered unchanged in the urine, and there is no biliary excretion, it can be a…”</sub> | prose |
+| metabolism | kidney | <sub>“…As 80% of the dose can be recovered unchanged in the urine, and there is no biliary excret…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 142 matched, 20 returned

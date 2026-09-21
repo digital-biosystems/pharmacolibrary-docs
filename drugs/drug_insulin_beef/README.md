@@ -21,6 +21,16 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=insulin_beef) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP1A2` inducer | DrugBank actor |
+
+<sub>Actors without a tissue in the table: IDE (substrate), IGF1R (activator), INSR (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 15 matched, 45 returned

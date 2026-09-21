@@ -31,6 +31,19 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Park_2014_shrinkage](drugs/drug_triflusal/Triflusal_Park2014_shrinkage.md) | Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & toxicolo… (2014) | [10.1186/2050-6511-15-75](https://doi.org/10.1186/2050-6511-15-75) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Park_2014_shrinkage](drugs/drug_triflusal/Triflusal_Park2014_shrinkage.md) | Park SM et al., Population pharmacokinetic and pharmaco…, BMC pharmacology & toxicolo… (2014) | [10.1186/2050-6511-15-75](https://doi.org/10.1186/2050-6511-15-75) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=triflusal) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Absorbed in the small intestine with a bioavailability range from 83% to 100%. There is no…”</sub> | prose |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| metabolism | liver | <sub>“…In the liver, triflusal undergoes deacetylation, forming its main metabo…”</sub> | prose |
+| excretion | kidney | <sub>“…The elimination pathway of triflusal is primarily renal. Urine analysis has shown the pres…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: NFKB1 (target), NOS2 (target), PDE10A (target), PTGS1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned

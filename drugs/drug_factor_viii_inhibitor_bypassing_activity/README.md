@@ -29,6 +29,15 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Jonsson_2021](drugs/drug_factor_viii_inhibitor_bypassing_activity/pd_Jonsson_2021_ABR.md) | Jonsson F et al., Exposure-Bleeding Count Modeling of Emi…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01006-0](https://doi.org/10.1007/s40262-021-01006-0) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=factor_viii_inhibitor_bypassing_activity) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: F10 (target), F13A1 (target), F2 (target), F5 (target), F7 (target), F8 (target), FGA (cleavage), FGB (cleavage).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 43 matched, 61 returned

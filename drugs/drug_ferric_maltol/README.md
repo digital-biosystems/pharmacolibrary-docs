@@ -25,6 +25,22 @@ Ferric maltol was initially granted FDA approval on July 25, 2019, for use in ad
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ferric_maltol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | <sub>“…marrow, 18±1% is present in the liver, and 2.6±1% is in the urine.[A189297] Maltol has an…”</sub> | prose |
+| absorption | liver | <sub>“…dose is present in the bone marrow, 18±1% is present in the liver, and 2.6±1% is in the ur…”</sub> | prose |
+| absorption | small intestine | <sub>“…Ferric maltol dissociates in the gastrointestinal tract, leading to a T&lt;sub&gt;max&lt;/sub&gt; of 1…”</sub> | prose |
+| metabolism | liver | `UGT1A6` substrate | DrugBank actor |
+| metabolism | small intestine | `UGT1A6` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…the urine and unabsorbed ferric maltol is eliminated in the feces.[A189306]…”</sub> | prose |
+| excretion | kidney | <sub>“…9.8-60% of an oral dose of ferric maltol is excreted in the urine as a glucuronide conjuga…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ITGB3 (substrate), SLC11A2 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned

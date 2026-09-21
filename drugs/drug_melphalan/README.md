@@ -28,6 +28,22 @@ Melphalan is a component of HEPZATO KIT, a liver-directed therapy indicated for 
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Shah_2022_reference](drugs/drug_melphalan/Melphalan_Shah2022_reference.md) | Shah GL et al., Population Pharmacokinetics of Melphala…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01093-z](https://doi.org/10.1007/s40262-021-01093-z) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=melphalan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>“…ty may be due to incomplete intestinal absorption, variable first-pass hepatic metabolism,…”</sub> | prose |
+| absorption | small intestine | <sub>“…igh variability in bioavailability may be due to incomplete intestinal absorption, variabl…”</sub> | prose |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |
+| distribution | skeletal muscle | `SLC22A3` inhibitor | DrugBank actor |
+| excretion | kidney | <sub>“…About 5.8% to 21.3% of melphalan is excreted in urine.[L47890]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), SLC7A10 (substrate), SLC7A5 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 114 matched, 63 returned

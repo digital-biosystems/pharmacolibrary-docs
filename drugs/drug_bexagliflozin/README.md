@@ -23,6 +23,26 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=bexagliflozin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | stomach | <sub>“…iflozin is taken after a meal or with medications that slow gastric emptying. Between sing…”</sub> | prose |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C8` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `UGT1A1` substrate, `UGT1A9` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Bexagliflozin is mainly eliminated through feces and urine. In healthy subjects given an o…”</sub> | prose |
+| excretion | kidney | <sub>“…Bexagliflozin is mainly eliminated through feces and urine. In healthy subjects given an o…”</sub> | prose |
+| target | kidney | `SLC5A2` inhibitor | DrugBank actor |
+
 ## Coverage
 
 - **PubMed hits:** 12 matched, 26 returned

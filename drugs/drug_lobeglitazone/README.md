@@ -39,6 +39,25 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021](drugs/drug_lobeglitazone/pd_Jin_2021_p38_MAPK_phosphorylation.md) | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Rocha_2020](drugs/drug_lobeglitazone/pd_Rocha_2020_PTP1B.md) | Rocha RF et al., The antidiabetic drug lobeglitazone has…, Bioorganic chemistry (2020) | [10.1016/j.bioorg.2020.103927](https://doi.org/10.1016/j.bioorg.2020.103927) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=lobeglitazone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` unknown | DrugBank actor |
+| absorption | kidney | `ABCB1` unknown | DrugBank actor |
+| absorption | liver | `ABCB1` unknown | DrugBank actor |
+| absorption | placenta | `ABCB1` unknown | DrugBank actor |
+| absorption | small intestine | `ABCB1` unknown | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor, `CYP3A4` substrate, `SLCO1B1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…he combined extent of the excretion of lobeglitazone to the bile, urine and intestine is l…”</sub> | prose |
+| excretion | kidney | <sub>“…bined extent of the excretion of lobeglitazone to the bile, urine and intestine is low (le…”</sub> | prose |
+| excretion | small intestine | <sub>“…nt of the excretion of lobeglitazone to the bile, urine and intestine is low (less than 10…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: PPARA (target), PPARG (activator), SLCO3A1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 37 matched, 53 returned

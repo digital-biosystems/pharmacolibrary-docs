@@ -36,6 +36,20 @@ Voxelotor was granted accelerated FDA approval on November 25 2019, as it is lik
 | <span class="pk-badge pk-badge--green">extracted</span> | [Green_2022](drugs/drug_voxelotor/pd_Green_2022_hemoglobin.md) | Green ML et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12780](https://doi.org/10.1002/psp4.12780) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Green_2022](drugs/drug_voxelotor/pd_Green_2022_white_blood_cell_count.md) | Green ML et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12780](https://doi.org/10.1002/psp4.12780) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=voxelotor) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood | <sub>“…ax&lt;/sub&gt; of 2 hours.[A188126,L10406] T&lt;sub&gt;max&lt;/sub&gt; in the red blood cells ranges from 17…”</sub> | prose |
+| metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…About 62.6% of the oral dose is found in the feces, of which 33.3% is an unchanged drug. A…”</sub> | prose |
+| excretion | kidney | <sub>“…an unchanged drug. About 35.5% of the dose is recovered in urine, with only 0.08% as the u…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: HBA1 (binder).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned

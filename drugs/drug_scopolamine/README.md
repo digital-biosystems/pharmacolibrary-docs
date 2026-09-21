@@ -50,6 +50,22 @@ Scopolamine was first approved by the FDA on December 31, 1979, and is currently
 | <span class="pk-badge pk-badge--green">extracted</span> | [Liem-Moolenaar_2011](drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_latency.md) | Liem-Moolenaar M et al., Pharmacokinetic-pharmacodynamic relatio…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03936.x](https://doi.org/10.1111/j.1365-2125.2011.03936.x) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Liem-Moolenaar_2011](drugs/drug_scopolamine/pd_Liem_Moolenaar_2011_pupil.md) | Liem-Moolenaar M et al., Pharmacokinetic-pharmacodynamic relatio…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03936.x](https://doi.org/10.1111/j.1365-2125.2011.03936.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=scopolamine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>“…te bioavailability is low at 13 ± 1%, presumably because of first-pass metabolism.[A228758…”</sub> | prose |
+| absorption | skeletal muscle | <sub>“…&lt;sub&gt;max&lt;/sub&gt; of 14.6 min, and an AUC of 158.2 ng\*min/mL. Intramuscular administration o…”</sub> | prose |
+| absorption | skin | <sub>“…0%.[A228758] Due to dose-dependent adverse effects, the transdermal patch was developed to…”</sub> | prose |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…approximately 2.6% of unchanged scopolamine is recovered in urine.[A228758] Compared to th…”</sub> | prose |
+| excretion | skin | <sub>“…is recovered in urine.[A228758] Compared to this, using the transdermal patch system, less…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), CHRNA4 (inducer), CHRNA4 (inhibitor), CHRNB2 (inducer), CHRNB2 (inhibitor), SI (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 118 matched, 30 returned

@@ -58,6 +58,15 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Gandhi_2024](drugs/drug_coagulation_factor_viia/pd_Gandhi_2024_FVIIa.md) | Gandhi PS et al., A bispecific antibody approach for the…, Nature cardiovascular resea… (2024) | [10.1038/s44161-023-00418-4](https://doi.org/10.1038/s44161-023-00418-4) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Gandhi_2024](drugs/drug_coagulation_factor_viia/pd_Gandhi_2024_total_FVII_a.md) | Gandhi PS et al., A bispecific antibody approach for the…, Nature cardiovascular resea… (2024) | [10.1038/s44161-023-00418-4](https://doi.org/10.1038/s44161-023-00418-4) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=coagulation_factor_viia) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: F10 (activator), F3 (binder).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 155 matched, 43 returned

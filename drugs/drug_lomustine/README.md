@@ -26,6 +26,20 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Rodón_2015_reference](drugs/drug_lomustine/Lomustine_Rodn2015_reference.md) | Rodón J et al., Pharmacokinetic, pharmacodynamic and bi…, Investigational new drugs (2015) | [10.1007/s10637-014-0192-4](https://doi.org/10.1007/s10637-014-0192-4) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=lomustine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Well and rapidly absorbed from the gastrointestinal tract.…”</sub> | prose |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2D6` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| excretion | kidney | <sub>“…, about half of the radioactivity given was excreted in the urine in the form of degradati…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: DNA (cross-linking/alkylation), STMN4 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 13 matched, 13 returned

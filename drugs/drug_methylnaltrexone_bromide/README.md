@@ -30,6 +30,17 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Singleton_2010](drugs/drug_methylnaltrexone_bromide/pd_Singleton_2010_VEGF_induced_human_pulmonary_microvascular_en.md) | Singleton PA et al., Methylnaltrexone potentiates the anti-a…, Journal of angiogenesis res… (2010) | [10.1186/2040-2384-2-5](https://doi.org/10.1186/2040-2384-2-5) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Singleton_2010](drugs/drug_methylnaltrexone_bromide/pd_Singleton_2010_VEGF_induced_human_pulmonary_microvascular_en.md) | Singleton PA et al., Methylnaltrexone potentiates the anti-a…, Journal of angiogenesis res… (2010) | [10.1186/2040-2384-2-5](https://doi.org/10.1186/2040-2384-2-5) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=methylnaltrexone_bromide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | bile duct | <sub>“…f of the dose is excreted in the urine and somewhat less in feces.…”</sub> | prose |
+| excretion | kidney | <sub>“…ctivity). Approximately half of the dose is excreted in the urine and somewhat less in fec…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: MC4R (target), OPRK1 (target), OPRM1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 15 matched, 25 returned

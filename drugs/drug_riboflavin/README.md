@@ -23,6 +23,20 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=riboflavin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Vitamin B2 is readily absorbed from the upper gastrointestinal tract.…”</sub> | prose |
+| metabolism | brain | `MAOA` cofactor | DrugBank actor |
+| metabolism | liver | `MAOA` cofactor | DrugBank actor |
+| metabolism | small intestine | `MAOA` cofactor | DrugBank actor |
+| excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: BLVRB (product), MPO (modulator), MTHFR (cofactor), RFK (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 195 matched, 61 returned

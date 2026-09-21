@@ -32,6 +32,16 @@ _not available_
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Biesdorf_2026](drugs/drug_mesuximide/pd_Biesdorf_2026_unknown.md) | Biesdorf C et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70432](https://doi.org/10.1002/cpt.70432) |
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Tran_2026](drugs/drug_mesuximide/pd_Tran_2026_infection.md) | Tran TM et al., Pharmacokinetics and pharmacodynamics o…, The Journal of clinical inv… (2026) | [10.1172/jci207559](https://doi.org/10.1172/jci207559) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=mesuximide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP2C19` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CACNA1G (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 925 matched, 53 returned

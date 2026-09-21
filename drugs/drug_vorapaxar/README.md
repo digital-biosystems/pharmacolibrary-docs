@@ -23,6 +23,26 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=vorapaxar) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` unknown | DrugBank actor |
+| absorption | kidney | `ABCB1` unknown | DrugBank actor |
+| absorption | liver | `ABCB1` unknown | DrugBank actor |
+| absorption | placenta | `ABCB1` unknown | DrugBank actor |
+| absorption | small intestine | `ABCB1` unknown | DrugBank actor |
+| metabolism | bile duct | <sub>“…tabolite, M20, and its predominant metabolite excreted into feces, M19, by CYP3A4 and CYP…”</sub> | prose |
+| metabolism | heart | `CYP2J2` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP2J2` substrate, `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…r is primarily eliminated as its metabolite M19 through the feces (91.5%), and partially e…”</sub> | prose |
+| excretion | kidney | <sub>“…through the feces (91.5%), and partially eliminated in the urine (8.5%).…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: F2R (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 48 matched, 45 returned

@@ -24,6 +24,29 @@ Unlabeled indications include: depression, panic disorder, chronic pain (e.g. ce
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=clomipramine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate, `GSTP1` inhibitor | DrugBank actor |
+| metabolism | lung | `GSTP1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Urine (51-60%) and feces via biliary elimination (24-32%)…”</sub> | prose |
+| excretion | kidney | <sub>“…Urine (51-60%) and feces via biliary elimination (24-32%)…”</sub> | prose |
+| target | brain | `SLC6A4` inhibitor | DrugBank actor |
+| target | platelet | `SLC6A4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HTR2A (target), HTR2B (target), HTR2C (target), SLC6A2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 24 matched, 24 returned

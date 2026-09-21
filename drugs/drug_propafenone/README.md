@@ -28,6 +28,24 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Arboix_1985_reference](drugs/drug_propafenone/Propafenone_Arboix1985_reference.md) | Arboix M et al., Pharmacokinetics of intravenous propafe…, Methods and findings in exp… (1985) | — |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Fernández_1991_reference](drugs/drug_propafenone/Propafenone_Fernndez1991_reference.md) | Fernández J et al., Tissue distribution of propafenone in t…, European journal of drug me… (1991) | [10.1007/BF03189870](https://doi.org/10.1007/BF03189870) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=propafenone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…ximately 50% of propafenone metabolites are excreted in the urine following administration…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), KCNH2 (inhibitor), SCN5A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 17 matched, 15 returned

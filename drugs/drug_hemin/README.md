@@ -45,6 +45,15 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Regan_2004](drugs/drug_hemin/pd_Regan_2004_Protein_carbonyl_signal_intensity.md) | Regan RF et al., Heme oxygenase-2 gene deletion attenuat…, BMC neuroscience (2004) | [10.1186/1471-2202-5-34](https://doi.org/10.1186/1471-2202-5-34) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Sahoo_2022](drugs/drug_hemin/pd_Sahoo_2022_Kv10_1.md) | Sahoo N et al., Intracellular hemin is a potent inhibit…, Scientific reports (2022) | [10.1038/s41598-022-18975-2](https://doi.org/10.1038/s41598-022-18975-2) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=hemin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ALAS1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 128 matched, 99 returned

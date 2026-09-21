@@ -25,6 +25,16 @@ Ecallantide works by blocking kallikrein to participate in the kallikrein-kinin 
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ecallantide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…Ecallantide undergoes renal elimination [FDA Label].…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: KLKB1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 10 matched, 9 returned

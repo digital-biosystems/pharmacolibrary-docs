@@ -29,6 +29,19 @@
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl[chlorcycloguanil], Vd[chlorcycloguanil], formation_rate l…</sub><br><sub>route_to: `scholar`</sub> | [Simpson_2006_2_reference](drugs/drug_dapsone/Dapsone_Simpson2006v2_reference.md) | Simpson JA et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02567.x](https://doi.org/10.1111/j.1365-2125.2005.02567.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Falloon_1994_reference](drugs/drug_dapsone/Dapsone_Falloon1994_reference.md) | Falloon J et al., Pharmacokinetics and safety of weekly d…, Antimicrobial agents and ch… (1994) | [10.1128/AAC.38.7.1580](https://doi.org/10.1128/AAC.38.7.1580) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=dapsone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` inducer/substrate, `CYP2E1` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate, `FMO3` substrate, `NAT2` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate, `NAT2` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…Renal…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CYP2C18 (substrate), MPO (substrate), PTGS1 (substrate), PTGS2 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 23 matched, 17 returned

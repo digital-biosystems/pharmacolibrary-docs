@@ -40,6 +40,17 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Popović_2023](drugs/drug_citric_acid/pd_Popovi_2023_resp.md) | Popović BM et al., Cytotoxicity profiling of choline chlor…, RSC advances (2023) | [10.1039/d2ra07488e](https://doi.org/10.1039/d2ra07488e) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Łoczechin_2019](drugs/drug_citric_acid/pd_oczechin_2019_unknown.md) | Łoczechin A et al., Functional Carbon Quantum Dots as Medic…, ACS applied materials & int… (2019) | [10.1021/acsami.9b15032](https://doi.org/10.1021/acsami.9b15032) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=citric_acid) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | `SLCO2B1` inhibitor | DrugBank actor |
+| absorption | small intestine | `SLCO2B1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: AKR1B1 (inhibitor), APRT (unknown), C8G (unknown), CPB1 (unknown), CS (unknown), CTDSP1 (unknown), HGS (unknown), IL4I1 (unknown), ITPA (unknown), LSM6 (unknown), MDH2 (unknown), PLEKHA1 (unknown), RNASE1 (unknown), RNASE3 (unknown), SRC (unknown), TRPV4 (activator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 492 matched, 175 returned

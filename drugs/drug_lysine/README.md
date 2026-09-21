@@ -70,6 +70,18 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Walton_1984](drugs/drug_lysine/pd_Walton_1984_unknown.md) | Walton MJ et al., The effect of dietary lysine levels on…, The British journal of nutr… (1984) | [10.1079/bjn19840077](https://doi.org/10.1079/bjn19840077) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Yanagawa_1987](drugs/drug_lysine/pd_Yanagawa_1987_specific_binding_of_3H_Pr_CGIIIA.md) | Yanagawa Y et al., Mu-conotoxins share a common binding si…, The Journal of neuroscience… (1987) | [10.1523/JNEUROSCI.07-05-01498.1987](https://doi.org/10.1523/JNEUROSCI.07-05-01498.1987) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=lysine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | `SLC22A4` inhibitor | DrugBank actor |
+| absorption | small intestine | `SLC22A4` inhibitor | DrugBank actor |
+| metabolism | liver | <sub>“…Hepatic…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: KARS1 (unknown), SLC16A10 (inhibitor), SLC16A10 (substrate), SLC7A1 (unknown), SLC7A2 (unknown), SLC7A3 (unknown), SLC7A4 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 12043 matched, 228 returned

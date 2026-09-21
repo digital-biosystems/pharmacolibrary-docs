@@ -35,6 +35,16 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Chiu_2008](drugs/drug_propantheline/pd_Chiu_2008_hair_cell_survival.md) | Chiu LL et al., Using the zebrafish lateral line to scr…, Journal of the Association… (2008) | [10.1007/s10162-008-0118-y](https://doi.org/10.1007/s10162-008-0118-y) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Chiu_2008](drugs/drug_propantheline/pd_Chiu_2008_unknown.md) | Chiu LL et al., Using the zebrafish lateral line to scr…, Journal of the Association… (2008) | [10.1007/s10162-008-0118-y](https://doi.org/10.1007/s10162-008-0118-y) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=propantheline) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…Approximately 70% of the dose is excreted in the urine, mostly as metabolites.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CHRM1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 39 matched, 39 returned

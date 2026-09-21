@@ -33,6 +33,26 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Li_2020](drugs/drug_ubrogepant/pd_Li_2020_PF.md) | Li CC et al., Making Better Dose Decisions: Using Exp…, Clinical and translational… (2020) | [10.1111/cts.12730](https://doi.org/10.1111/cts.12730) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Li_2020](drugs/drug_ubrogepant/pd_Li_2020_PR.md) | Li CC et al., Making Better Dose Decisions: Using Exp…, Clinical and translational… (2020) | [10.1111/cts.12730](https://doi.org/10.1111/cts.12730) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ubrogepant) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor, `MAOA` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP3A4` substrate, `MAOA` inhibitor, `SLCO1B1` inhibitor/substrate, `SLCO1B3` inhibitor/substrate, `UGT1A1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `MAOA` inhibitor, `UGT1A1` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…The main route of elimination is fecal/biliary, while renal excretion is comparatively min…”</sub> | prose |
+| excretion | kidney | `SLC22A2` inhibitor, `SLC22A6` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CALCRL (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 29 matched, 28 returned

@@ -27,6 +27,16 @@ Due to the long terminal half-life of 37 days, the use of chlorobutanol as a sed
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=chlorobutanol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…ysiological conditions, chlorobutanol is unstable. The mean urinary recovery accounts for…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: KCNH2 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 13 matched, 20 returned

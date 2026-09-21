@@ -40,6 +40,26 @@ Olanzapine is also indicated in combination with [samidorphan] for the treatment
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2024_reference](drugs/drug_olanzapine/Olanzapine_Zhang2024_reference.md) | Zhang C et al., Effects of Aripiprazole on Olanzapine P…, Neuropsychiatric disease an… (2024) | [10.2147/NDT.S455183](https://doi.org/10.2147/NDT.S455183) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2025_reference](drugs/drug_olanzapine/Olanzapine_Zhang2025_reference.md) | Zhang C et al., Drug-drug interaction of paroxetine on…, Frontiers in psychiatry (2025) | [10.3389/fpsyt.2025.1538996](https://doi.org/10.3389/fpsyt.2025.1538996) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=olanzapine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor, `FMO3` substrate, `UGT1A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…represents around 53% of the excreted dose followed by the feces that represent about 30%.…”</sub> | prose |
+| excretion | kidney | <sub>“…e found as the unchanged form. It is mainly excreted in the urine which represents around…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRB1 (inhibitor), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), DRD1 (target), DRD2 (target), DRD3 (target), DRD4 (target), DRD5 (target), GABRA1 (inhibitor), HRH1 (target), HTR1A (inhibitor), HTR2A (target), HTR2C (target), HTR3A (target), HTR6 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 109 matched, 20 returned

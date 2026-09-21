@@ -27,6 +27,28 @@ Cholic acid, formulated as Cholbam capsules, is approved by the United States Fo
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Quarfordt_1973_reference](drugs/drug_cholic_acid/CholicAcid_Quarfordt1973_reference.md) | Quarfordt SH et al., Estimation of cholesterol and bile acid…, The Journal of clinical inv… (1973) | [10.1172/JCI107378](https://doi.org/10.1172/JCI107378) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=cholic_acid) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inducer, `SLCO1A2` inducer/inhibitor/substrate | DrugBank actor |
+| absorption | ileum | `SLC10A2` inducer/inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inducer | DrugBank actor |
+| absorption | liver | `ABCB1` inducer | DrugBank actor |
+| absorption | placenta | `ABCB1` inducer | DrugBank actor |
+| absorption | small intestine | `ABCB1` inducer, `SLCO1A2` inducer/inhibitor/substrate | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inducer | DrugBank actor |
+| distribution | lung | `ABCC1` inducer | DrugBank actor |
+| metabolism | kidney | `SLC22A7` inhibitor | DrugBank actor |
+| metabolism | liver | `CES1` inhibitor, `SLC10A1` inhibitor/substrate, `SLC22A7` inhibitor, `SLCO1B1` inducer/inhibitor/substrate, `SLCO1B3` substrate | DrugBank actor |
+| excretion | kidney | `ABCC2` inducer, `ABCC4` inhibitor, `SLC22A8` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCB11` inducer/inhibitor/substrate, `ABCC2` inducer, `ABCC3` inhibitor, `ABCC4` inhibitor | DrugBank actor |
+| excretion | small intestine | `ABCC2` inducer, `ABCC3` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADH1C (unknown), COX4I1 (unknown), COX5A (unknown), COX5B (unknown), COX6A2 (unknown), COX6B1 (unknown), COX6C (unknown), COX7A1 (unknown), COX7B (unknown), COX7C (unknown), COX8A (unknown), ESRRG (unknown), FABP1 (unknown), FABP6 (unknown), FECH (inhibitor), GPBAR1 (unknown), MT-CO1 (unknown), MT-CO2 (unknown), MT-CO3 (unknown), NR1H4 (unknown), PLA2G1B (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 13 matched, 13 returned

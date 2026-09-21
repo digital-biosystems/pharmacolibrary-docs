@@ -45,6 +45,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Alugubelli_2022](drugs/drug_carbamide/pd_Alugubelli_2022_IC50.md) | Alugubelli YR et al., A systematic exploration of boceprevir-…, European journal of medicin… (2022) | [10.1016/j.ejmech.2022.114596](https://doi.org/10.1016/j.ejmech.2022.114596) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zorc_2019](drugs/drug_carbamide/pd_Zorc_2019_MTT_assay.md) | Zorc B et al., Antiproliferative evaluation of various…, Acta pharmaceutica (Zagreb,… (2019) | [10.2478/acph-2019-0048](https://doi.org/10.2478/acph-2019-0048) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=carbamide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ARG1 (unknown), CA2 (unknown), CTNNB1 (unknown), SLC14A1 (substrate), SLC14A2 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 4106 matched, 236 returned

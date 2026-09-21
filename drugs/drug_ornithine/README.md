@@ -88,6 +88,17 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ooi_2026](drugs/drug_ornithine/pd_Ooi_2026_ALP.md) | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Ooi_2026](drugs/drug_ornithine/pd_Ooi_2026_TB.md) | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ornithine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Absorbed from the small intestine via a sodium-dependent active transport process…”</sub> | prose |
+| metabolism | liver | <sub>“…Ornithine undergoes extensive metabolism in the liver to L-arginine, polyamines, and proli…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ARG1 (unknown), ARG2 (unknown), GATM (unknown), OAT (unknown), OAZ1 (unknown), OTC (unknown), SLC25A15 (unknown), SLC25A2 (unknown), SLC7A1 (unknown), SLC7A2 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 606 matched, 117 returned

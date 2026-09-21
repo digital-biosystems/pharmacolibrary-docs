@@ -27,6 +27,21 @@
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Addelman_1990_reference](drugs/drug_granisetron/Granisetron_Addelman1990_reference.md) | Addelman M et al., Phase I/II trial of granisetron: a nove…, Journal of clinical oncolog… (1990) | [10.1200/JCO.1990.8.2.337](https://doi.org/10.1200/JCO.1990.8.2.337) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Li_2023_reference](drugs/drug_granisetron/Granisetron_Li2023_reference.md) | Li J et al., Population pharmacokinetic analysis of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1154026](https://doi.org/10.3389/fphar.2023.1154026) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=granisetron) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | liver | <sub>“…oral bioavailability is reduced to about 60% as a result of first pass metabolism.…”</sub> | prose |
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…is excreted as metabolites, 48% in the urine and 38% in the feces.…”</sub> | prose |
+| excretion | kidney | <sub>“…emainder of the dose is excreted as metabolites, 48% in the urine and 38% in the feces.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: HTR3A (target), HTR3B (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 40 matched, 18 returned

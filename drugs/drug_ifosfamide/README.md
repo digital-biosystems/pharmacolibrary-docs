@@ -33,6 +33,19 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Brain_2008](drugs/drug_ifosfamide/pd_Brain_2008_ANC.md) | Brain EG et al., Population pharmacokinetics and explora…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2007.03095.x](https://doi.org/10.1111/j.1365-2125.2007.03095.x) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Brain_2008](drugs/drug_ifosfamide/pd_Brain_2008_BMG.md) | Brain EG et al., Population pharmacokinetics and explora…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2007.03095.x](https://doi.org/10.1111/j.1365-2125.2007.03095.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ifosfamide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP2A6` substrate, `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C8` inducer/substrate, `CYP2C9` substrate, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…70% to 86% of the dosed radioactivity was recovered in the urine, with about 61% of the do…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CYP2C18 (substrate), DNA (cross-linking/alkylation), NR1I2 (activator), PTGS1 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 30 matched, 18 returned

@@ -32,6 +32,20 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ohno_2018_reference](drugs/drug_fosphenytoin/Fosphenytoin_Ohno2018_reference.md) | Ohno Y et al., Time-Dependent Decline in Serum Phenyto…, Therapeutic drug monitoring (2018) | [10.1097/FTD.0000000000000521](https://doi.org/10.1097/FTD.0000000000000521) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wainwright_2018_reference](drugs/drug_fosphenytoin/Fosphenytoin_Wainwright2018_reference.md) | Wainwright (2018) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=fosphenytoin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` other/unknown | DrugBank actor |
+| metabolism | kidney | `UGT1A9` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP1A2` inducer, `CYP2B6` inducer, `CYP2C19` substrate, `CYP2C9` inducer/substrate, `CYP3A4` inducer/substrate, `UGT1A6` inhibitor, `UGT1A9` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate, `UGT1A6` inhibitor | DrugBank actor |
+| excretion | kidney | <sub>“…derived from fosphenytoin administration is excreted in the urine primarily as 5-(p-hydrox…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: SCN5A (inhibitor), SERPINA7 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 30 matched, 19 returned

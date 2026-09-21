@@ -29,6 +29,21 @@ MDD is a highly prevalent psychiatric disorder, with a lifetime prevalence estim
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Mangas-Sanjuán_2023_reference](drugs/drug_desvenlafaxine/Desvenlafaxine_MangasSanjun2023_reference.md) | Mangas-Sanjuán V et al., Alternative Pharmacokinetic Metrics in…, Pharmaceutics (2023) | [10.3390/pharmaceutics15020409](https://doi.org/10.3390/pharmaceutics15020409) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2022_reference](drugs/drug_desvenlafaxine/Desvenlafaxine_Wang2022_reference.md) | Wang Z et al., Joint population pharmacokinetic modeli…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.978202](https://doi.org/10.3389/fphar.2022.978202) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=desvenlafaxine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP2C19` substrate, `CYP2D6` inhibitor, `CYP3A4` inhibitor/substrate, `UGT1A1` substrate, `UGT1A3` substrate, `UGT2B15` substrate, `UGT2B17` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor/substrate, `UGT1A1` substrate, `UGT2B17` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…Desvenlafaxine is mainly excreted in the urine.[A6991] Approximately 45% of desvenlafaxine…”</sub> | prose |
+| target | brain | `SLC6A4` inhibitor | DrugBank actor |
+| target | platelet | `SLC6A4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: SLC6A2 (inhibitor), SLC6A3 (inhibitor), UGT2B4 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 23 matched, 14 returned

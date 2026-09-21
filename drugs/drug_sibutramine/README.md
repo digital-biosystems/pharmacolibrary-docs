@@ -34,6 +34,22 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Yun_2015](drugs/drug_sibutramine/pd_Yun_2015_HR.md) | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Yun_2015](drugs/drug_sibutramine/pd_Yun_2015_hERG.md) | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=sibutramine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…ly administered radiolabeled dose was excreted in urine and feces over a 15-day collection…”</sub> | prose |
+| excretion | kidney | <sub>“…ingle orally administered radiolabeled dose was excreted in urine and feces over a 15-day…”</sub> | prose |
+| excretion | liver | <sub>“…Sibutramine is metabolized in the liver principally by the cytochrome P450 (3A4) isoenzyme…”</sub> | prose |
+| target | brain | `SLC6A4` inhibitor | DrugBank actor |
+| target | platelet | `SLC6A4` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 72 matched, 69 returned

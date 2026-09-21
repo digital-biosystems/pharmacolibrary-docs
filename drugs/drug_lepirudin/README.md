@@ -25,6 +25,17 @@ Lepirudin is used as an anticoagulant in patients with heparin-induced thrombocy
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=lepirudin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>“…be metabolized by the sequential cleavage of amino acids by kidney exoproteases, which hav…”</sub> | prose |
+| excretion | kidney | <sub>“…Lepirudin is mostly excreted through urine (48.3%). About 35% of lepirudin is excreted unc…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: F2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 29 matched, 24 returned

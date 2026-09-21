@@ -34,6 +34,25 @@ Zolmitriptan was first approved by the FDA for sale by Zeneca Pharmaceuticals un
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [MaassenVanDenBrink_1998](drugs/drug_zolmitriptan/pd_MaassenVanDenBrink_1998_unknown.md) | MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circulation (1998) | [10.1161/01.cir.98.1.25](https://doi.org/10.1161/01.cir.98.1.25) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=zolmitriptan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` unknown | DrugBank actor |
+| absorption | kidney | `ABCB1` unknown | DrugBank actor |
+| absorption | liver | `ABCB1` unknown | DrugBank actor |
+| absorption | placenta | `ABCB1` unknown | DrugBank actor |
+| absorption | small intestine | `ABCB1` unknown | DrugBank actor |
+| metabolism | brain | `MAOA` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `MAOA` substrate | DrugBank actor |
+| metabolism | small intestine | `MAOA` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…ptan is primarily excreted in urine (approximately 65%) and feces (approximately 30%). Wit…”</sub> | prose |
+| excretion | kidney | <sub>“…Zolmitriptan is primarily excreted in urine (approximately 65%) and feces (approximately 3…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: HTR1A (target), HTR1B (target), HTR1D (target), HTR1E (target), HTR1F (target), HTR2A (target), HTR2B (target), HTR7 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 28 matched, 28 returned

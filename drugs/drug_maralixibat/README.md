@@ -43,6 +43,21 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Carreño_2025](drugs/drug_maralixibat/pd_Carre_o_2025_C4.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Carreño_2025](drugs/drug_maralixibat/pd_Carre_o_2025_GSRS.md) | Carreño F et al., Analysis of C4 Concentrations to Predic…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=maralixibat) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | ileum | `SLC10A2` inhibitor | DrugBank actor |
+| absorption | liver | `SLCO2B1` inhibitor | DrugBank actor |
+| absorption | small intestine | `SLCO2B1` inhibitor | DrugBank actor |
+| metabolism | bile duct | <sub>“…r metabolites, accounting for &lt;3% of maralixibat-associated fecal radioactivity in total,…”</sub> | prose |
+| metabolism | liver | `CYP3A4` inhibitor, `SLC10A1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…Fecal excretion was found to be the major route of elimination. F…”</sub> | prose |
+| excretion | kidney | <sub>“…3% of the dose was excreted in the feces with 0.066% in the urine. 94% of the fecal excret…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 6 matched, 5 returned

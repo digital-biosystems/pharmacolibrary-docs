@@ -40,6 +40,20 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Shindo_1998](drugs/drug_nicorandil/pd_Shindo_1998_unknown.md) | Shindo T et al., SUR2 subtype (A and B)-dependent differ…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0701927](https://doi.org/10.1038/sj.bjp.0701927) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Wanstall_1992](drugs/drug_nicorandil/pd_Wanstall_1992_relaxation.md) | Wanstall JC et al., Responses to vasodilator drugs on pulmo…, British journal of pharmaco… (1992) | [10.1111/j.1476-5381.1992.tb14227.x](https://doi.org/10.1111/j.1476-5381.1992.tb14227.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=nicorandil) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…g oral administration, nicorandil is well absorbed from the gastrointestinal tract with th…”</sub> | prose |
+| metabolism | kidney | <sub>“…ted metabolite 2-nicotinamidoethanol can be detected in the urine. The derivatives formed…”</sub> | prose |
+| metabolism | liver | <sub>“…Nicorandil undergoes extensive hepatic metabolism [L887]. The main biotransformation pathw…”</sub> | prose |
+| excretion | bile duct | <sub>“…. Less than 2% of administered dose is excreted through the biliary system [A20328].…”</sub> | prose |
+| excretion | kidney | <sub>“…The main route of elimination is the kidney with more than 60% of the administered dose wa…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ABCC9 (activator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 34 matched, 12 returned

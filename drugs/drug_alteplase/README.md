@@ -29,6 +29,17 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> | [Martin_1992](drugs/drug_alteplase/pd_Martin_1992_thrombolysis.md) | Martin U et al., Pharmacokinetic and thrombolytic proper…, Naunyn-Schmiedeberg's archi… (1992) | [10.1007/BF00167579](https://doi.org/10.1007/BF00167579) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=alteplase) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…Alteplase is mainly metabolized by the liver. The carbohydrate and polypeptide domains of…”</sub> | prose |
+| excretion | kidney | <sub>“…olunteers, more than 80% of alteplase is eliminated through urine 18 hours after administr…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: FGA (binder), FGG (binder), PLG (activator), SERPINE1 (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 128 matched, 97 returned

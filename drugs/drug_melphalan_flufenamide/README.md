@@ -28,6 +28,15 @@ Melphalan flufenamide was granted FDA approval on 26 February 2021.[L32173]. It 
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Huledal_2024_patients with relapsed refractory multiple myeloma](drugs/drug_melphalan_flufenamide/MelphalanFlufenamide_Huledal2024_patients_with_relapsed_refr.md) | Huledal G et al., Pharmacokinetics and Metabolism of Melf…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2355](https://doi.org/10.1002/jcph.2355) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=melphalan_flufenamide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: ANPEP (substrate), DNA (cross-linking/alkylation).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned

@@ -47,6 +47,16 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Orlando_2015](drugs/drug_hyaluronidase/pd_Orlando_2015_unknown.md) | Orlando Z et al., Autodisplay of Human Hyaluronidase Hyal…, Molecules (Basel, Switzerla… (2015) | [10.3390/molecules200915449](https://doi.org/10.3390/molecules200915449) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Pagels_2022](drugs/drug_hyaluronidase/pd_Pagels_2022_unknown.md) | Pagels F et al., Cosmetic Potential of Pigments Extracts…, Marine drugs (2022) | [10.3390/md20080481](https://doi.org/10.3390/md20080481) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=hyaluronidase) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…tein synthesis or further broken down and eliminated by the kidneys.[A182009,A199065]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: TGFB1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 364 matched, 128 returned

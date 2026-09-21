@@ -36,8 +36,23 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Akimoto_2011](drugs/drug_argatroban/pd_Akimoto_2011_ecarin_time.md) | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Akimoto_2011](drugs/drug_argatroban/pd_Akimoto_2011_endogenous_thrombin_potential.md) | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Akimoto_2011](drugs/drug_argatroban/pd_Akimoto_2011_prothrombinase_induced_clotting_time.md) | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Cox_2004](drugs/drug_argatroban/pd_Cox_2004_ACT.md) | Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004) | [10.1177/0091270004267651](https://doi.org/10.1177/0091270004267651) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Cox_2004](drugs/drug_argatroban/pd_Cox_2004_ACT.md) | Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004) | [10.1177/0091270004267651](https://doi.org/10.1177/0091270004267651) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Chang_2016](drugs/drug_argatroban/pd_Chang_2016_unknown.md) | Chang JB et al., A novel, rapid method to compare the th…, Scientific reports (2016) | [10.1038/srep29387](https://doi.org/10.1038/srep29387) |
+
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=argatroban) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…Argatroban is excreted primarily in the feces (65%), presumably through biliary secretion;…”</sub> | prose |
+| excretion | kidney | <sub>“…presumably through biliary secretion; 22% is eliminated via urine.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: F2 (inhibitor).</sub>
 
 ## Coverage
 

@@ -27,6 +27,22 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Lee_2014_healthy Korean subjects](drugs/drug_cilostazol/Cilostazol_Lee2014_healthy_korean_subjects.md) | Lee D et al., Population pharmacokinetic analysis of…, Therapeutic drug monitoring (2014) | [10.1097/FTD.0000000000000077](https://doi.org/10.1097/FTD.0000000000000077) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Yoo_2010_healthy subjects](drugs/drug_cilostazol/Cilostazol_Yoo2010_healthy_subjects.md) | Yoo HD et al., Population pharmacokinetic analysis of…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2009.03558.x](https://doi.org/10.1111/j.1365-2125.2009.03558.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=cilostazol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `CYP3A5` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…ion was via the urine (74%), with the remainder excreted in feces (20%). No measurable amo…”</sub> | prose |
+| excretion | kidney | <sub>“…a lesser extent, 2C19, with metabolites largely excreted in urine. Cilostazol is eliminate…”</sub> | prose |
+| excretion | liver | <sub>“…Cilostazol is extensively metabolized by hepatic cytochrome P-450 enzymes, mainly 3A4, and…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: PDE3A (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 19 matched, 18 returned

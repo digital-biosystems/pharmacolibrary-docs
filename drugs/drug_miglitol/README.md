@@ -27,6 +27,16 @@ Unlike other drugs of the same class, miglitol is not metabolized and the unmeta
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=miglitol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…n man or in any animal species studied. It is eliminated by renal excretion as an unchange…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: AMY2A (inhibitor), GAA (target), GANAB (target), GANC (target), MGAM (inhibitor), MGAM (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 57 matched, 45 returned

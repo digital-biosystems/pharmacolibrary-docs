@@ -29,6 +29,14 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [de_2022](drugs/drug_calcium_pantothenate/pd_de_2022_parasitemia.md) | de Vries LE et al., Preclinical characterization and target…, Nature communications (2022) | [10.1038/s41467-022-29688-5](https://doi.org/10.1038/s41467-022-29688-5) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=calcium_pantothenate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…yzed again to free pantothenic acid by Pantetheinase in the intestinal lumen. Free pantoth…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 140 matched, 95 returned

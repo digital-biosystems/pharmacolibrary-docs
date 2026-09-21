@@ -34,6 +34,23 @@ Glycopyrronium was originally granted FDA approval on 11 August 1961.[L33090]
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Bartels_2013_population_mean_cv](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv.md) | Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013) | [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Bartels_2021_reference](drugs/drug_glycopyrronium/Glycopyrronium_Bartels2021_reference.md) | Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of drug me… (2021) | [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=glycopyrronium) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skeletal muscle | <sub>“…AUC&lt;sub&gt;0-inf&lt;/sub&gt; of 255 h\*pg/mL.[L33105] An 8 µg/kg intramuscular dose reaches a C&lt;sub…”</sub> | prose |
+| distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C9` unknown, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…dose was recovered in the urine, with &lt;5% recovered in the bile.[L4755] &gt;80% of the recove…”</sub> | prose |
+| excretion | kidney | `SLC22A2` substrate, `SLC47A1` substrate | DrugBank actor |
+| excretion | liver | `SLC47A1` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), CYP2C18 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 31 matched, 20 returned

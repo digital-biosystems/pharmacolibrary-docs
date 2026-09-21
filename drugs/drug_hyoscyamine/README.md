@@ -41,6 +41,16 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Naguib_1989](drugs/drug_hyoscyamine/pd_Naguib_1989_HR.md) | Naguib M et al., Atropine-neostigmine mixture: a dose-re…, Canadian journal of anaesth… (1989) | [10.1007/BF03005340](https://doi.org/10.1007/BF03005340) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Rahbar_2016](drugs/drug_hyoscyamine/pd_Rahbar_2016_fV.md) | Rahbar S et al., Purinergic and Cholinergic Drugs Mediat…, PloS one (2016) | [10.1371/journal.pone.0154261](https://doi.org/10.1371/journal.pone.0154261) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=hyoscyamine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…The majority of hyoscyamine is eliminated in the urine as the unmetabolized parent compoun…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADCY1 (inhibitor), CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 2431 matched, 213 returned

@@ -31,6 +31,15 @@
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Blair_2004_total_cohort](drugs/drug_raltitrexed/Raltitrexed_Blair2004_total_cohort.md) | Blair EY et al., Population pharmacokinetics of raltitre…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2003.02050.x](https://doi.org/10.1111/j.1365-2125.2003.02050.x) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Blair_2004_total_cohort](drugs/drug_raltitrexed/Raltitrexed_Blair2004_total_cohort.md) | Blair EY et al., Population pharmacokinetics of raltitre…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2003.02050.x](https://doi.org/10.1111/j.1365-2125.2003.02050.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=raltitrexed) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: FPGS (target), TYMS (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned

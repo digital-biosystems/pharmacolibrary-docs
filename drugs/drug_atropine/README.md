@@ -31,6 +31,21 @@ In combination with difenoxin or diphenoxylate (tablets for oral use), atropine 
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hinderling_1985_reference](drugs/drug_atropine/Atropine_Hinderling1985_reference.md) | Hinderling PH et al., Integrated pharmacokinetics and pharmac…, Journal of pharmaceutical s… (1985) | [10.1002/jps.2600740702](https://doi.org/10.1002/jps.2600740702) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Parrot_2024_reference](drugs/drug_atropine/Atropine_Parrot2024_reference.md) | Parrot M et al., Clinical pharmacokinetics of atropine o…, Clinical and translational… (2024) | [10.1111/cts.13753](https://doi.org/10.1111/cts.13753) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=atropine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skeletal muscle | <sub>“…inetic model at doses between 0.5 and 4 mg.[L42835] After intramuscular administration, at…”</sub> | prose |
+| absorption | small intestine | <sub>“…tes, respectively.[L42830] Atropine is well absorbed in the gastrointestinal tract and rap…”</sub> | prose |
+| distribution | blood | `ORM1` binder | DrugBank actor |
+| metabolism | liver | <sub>“…ropine is mainly metabolized by enzymatic hydrolysis in the liver.[L42815,L42825,L42835] T…”</sub> | prose |
+| excretion | kidney | <sub>“…ximately 13 to 50% of atropine is excreted unchanged in the urine.[L42815,L42825,L42835] I…”</sub> | prose |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: CHRM1 (target), CHRM2 (target), CHRM3 (target), CHRM4 (target), CHRM5 (target), CHRNA4 (substrate), CHRNB2 (substrate), GLRA1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 689 matched, 20 returned

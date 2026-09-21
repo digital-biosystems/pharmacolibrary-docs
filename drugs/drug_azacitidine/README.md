@@ -42,6 +42,18 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Yoshida-Sakai_2022](drugs/drug_azacitidine/pd_Yoshida_Sakai_2022_THEMIS_expression.md) | Yoshida-Sakai N et al., Adult T-cell leukemia-lymphoma acquires…, International journal of ca… (2022) | [10.1002/ijc.33901](https://doi.org/10.1002/ijc.33901) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Yoshida-Sakai_2022](drugs/drug_azacitidine/pd_Yoshida_Sakai_2022_cell_growth.md) | Yoshida-Sakai N et al., Adult T-cell leukemia-lymphoma acquires…, International journal of ca… (2022) | [10.1002/ijc.33901](https://doi.org/10.1002/ijc.33901) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=azacitidine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…An in vitro study of azacitidine incubation in human liver fractions indicated that cytoch…”</sub> | prose |
+| excretion | bile duct | <sub>“…mulative urinary excretion was 85% of the radioactive dose. Fecal excretion accounted for…”</sub> | prose |
+| excretion | kidney | <sub>“…Azacitidine and its metabolites are mainly excreted through urine.[A1414,L46861] In five c…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CDA (substrate), DNA (other), DNMT1 (inhibitor), PARP1 (inhibitor), RNA (other).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 97 matched, 89 returned

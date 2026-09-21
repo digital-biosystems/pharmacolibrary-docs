@@ -30,6 +30,24 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Mansour_2011](drugs/drug_troglitazone/pd_Mansour_2011_unknown.md) | Mansour M et al., Thiazolidinediones/PPARγ agonists and f…, International journal of on… (2011) | [10.3892/ijo.2010.877](https://doi.org/10.3892/ijo.2010.877) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Bouwmeester_2023](drugs/drug_troglitazone/pd_Bouwmeester_2023_unknown.md) | Bouwmeester MC et al., Drug Metabolism of Hepatocyte-like Orga…, Molecules (Basel, Switzerla… (2023) | [10.3390/molecules28020621](https://doi.org/10.3390/molecules28020621) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=troglitazone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `SLC29A1` inhibitor | DrugBank actor |
+| distribution | liver | `SLC29A1` inhibitor | DrugBank actor |
+| metabolism | kidney | `CYP3A5` inhibitor, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `CYP2B6` inducer, `CYP2C19` inhibitor, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor/substrate, `CYP3A4` inducer, `CYP3A5` inhibitor, `CYP3A7` inhibitor, `GSTP1` unknown, `SLCO1B1` inhibitor, `UGT1A1` substrate, `UGT1A3` substrate, `UGT1A4` substrate, `UGT1A6` inhibitor/substrate, `UGT1A9` substrate, `UGT2B15` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | lung | `CYP1A1` inducer, `GSTP1` unknown | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inducer, `CYP3A4` inducer, `CYP3A5` inhibitor, `UGT1A1` substrate, `UGT1A6` inhibitor/substrate, `UGT2B7` substrate | DrugBank actor |
+| excretion | liver | `ABCB11` inhibitor | DrugBank actor |
+| target | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
+| target | ovary | `CYP19A1` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ACSL4 (inhibitor), ESRRA (inverse agonist), ESRRG (inverse agonist), PPARA (unknown), PPARD (unknown), PPARG (regulator), PPARG (target), SERPINE1 (target), UGT1A10 (substrate), UGT1A7 (substrate), UGT1A8 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 233 matched, 139 returned

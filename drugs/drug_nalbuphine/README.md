@@ -55,6 +55,16 @@
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Tang_2025](drugs/drug_nalbuphine/pd_Tang_2025_catheter_related_bladder_discomfort.md) | Tang J et al., Dose-Response Analysis of Nalbuphine fo…, Drug design, development an… (2025) | [10.2147/DDDT.S511613](https://doi.org/10.2147/DDDT.S511613) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Li_2025](drugs/drug_nalbuphine/pd_Li_2025_unknown.md) | Li SX et al., Comparison of intravenous nalbuphine an…, BMC anesthesiology (2025) | [10.1186/s12871-025-03208-6](https://doi.org/10.1186/s12871-025-03208-6) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=nalbuphine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skeletal muscle | <sub>“…solute bioavailability was 81% and 83% for the 10 and 20 mg intramuscular doses, respectiv…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: OPRD1 (target), OPRK1 (target), OPRM1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 118 matched, 72 returned

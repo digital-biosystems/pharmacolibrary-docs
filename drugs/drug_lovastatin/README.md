@@ -36,6 +36,30 @@ Before administering lovastatin, it is important to rule out the presence of sec
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: CLelim[central], Q1 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Huff_1992_reference](drugs/drug_lovastatin/Lovastatin_Huff1992_reference.md) | Huff MW et al., Dietary fish oil plus lovastatin decrea…, Arteriosclerosis and thromb… (1992) | [10.1161/01.atv.12.8.902](https://doi.org/10.1161/01.atv.12.8.902) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=lovastatin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | bile duct | <sub>“…ction, with subsequent excretion of drug equivalents in the bile. As a consequence of exte…”</sub> | prose |
+| absorption | blood-brain barrier | `ABCB1` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor, `SLCO2B1` unknown | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
+| absorption | skeletal muscle | <sub>“…dverse effects from increased exposure to the drug, such as muscle pain and risk of rhabdo…”</sub> | prose |
+| absorption | small intestine | `ABCB1` inhibitor, `SLCO1A2` inhibitor, `SLCO2B1` unknown | DrugBank actor |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C19` substrate, `CYP2C8` substrate, `CYP3A4` substrate, `SLCO1B1` inhibitor/substrate, `SLCO1B3` unknown, `UGT1A1` substrate, `UGT1A3` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `UGT1A1` substrate, `UGT2B7` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…in to man, 10% of the dose was excreted in urine and 83% in feces. The latter represents a…”</sub> | prose |
+| excretion | kidney | `ABCC2` substrate | DrugBank actor |
+| excretion | liver | `ABCB11` substrate, `ABCC2` substrate | DrugBank actor |
+| excretion | small intestine | `ABCC2` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HDAC2 (inhibitor), HMGCR (inhibitor), ITGAL (inhibitor), PON3 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 24 matched, 16 returned

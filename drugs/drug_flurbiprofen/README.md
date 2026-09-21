@@ -28,6 +28,22 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kumpulainen_2010_2_reference](drugs/drug_flurbiprofen/Flurbiprofen_Kumpulainen2010v2_reference.md) | Kumpulainen E et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03720.x](https://doi.org/10.1111/j.1365-2125.2010.03720.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2018_reference](drugs/drug_flurbiprofen/Flurbiprofen_Zhang2018_reference.md) | Zhang J et al., Population pharmacokinetic modeling of…, Journal of pain research (2018) | [10.2147/JPR.S176475](https://doi.org/10.2147/JPR.S176475) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=flurbiprofen) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` other/unknown | DrugBank actor |
+| metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C9` substrate, `UGT1A1` inhibitor/substrate, `UGT1A3` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | small intestine | `UGT1A1` inhibitor/substrate, `UGT2B7` substrate | DrugBank actor |
+| excretion | kidney | `ABCC4` inhibitor, `SLC22A6` inhibitor | DrugBank actor |
+| excretion | liver | `ABCC4` inhibitor | DrugBank actor |
+| excretion | mammary gland | <sub>“…Flurbiprofen is poorly excreted into human milk. Following dosing with flurbiprofen, less…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor), UGT2B4 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 36 matched, 20 returned

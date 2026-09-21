@@ -54,6 +54,17 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2026](drugs/drug_glutamic_acid/pd_Liu_2026_hERG_current.md) | Liu (2026) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Shave_2025](drugs/drug_glutamic_acid/pd_Shave_2025_nuclei_counts.md) | Shave S et al., Cellular Activity of CQWW Nullomer-Deri…, ACS omega (2025) | [10.1021/acsomega.4c08860](https://doi.org/10.1021/acsomega.4c08860) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=glutamic_acid) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Absorbed from the lumen of the small intestine into the enterocytes.Absorption is efficien…”</sub> | prose |
+| metabolism | liver | <sub>“…Hepatic…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: AADAT (unknown), AASS (unknown), ABAT (unknown), ALDH18A1 (unknown), ASNS (unknown), BCAT1 (unknown), BCAT2 (unknown), CPQ (unknown), DNPEP (unknown), EARS2 (unknown), ENPEP (unknown), EPRS1 (unknown), FOLH1 (unknown), FPGS (unknown), FTCD (unknown), GAD1 (unknown), GAD2 (unknown), GCLC (substrate), GCLM (unknown), GGCX (unknown), GLS (unknown), GLS2 (unknown), GLUD1 (unknown), GLUD2 (substrate), GLUL (unknown), GMPS (unknown), GOT1 (substrate), GOT1 (unknown), GOT2 (unknown), GPT (unknown), GPT2 (product), GPT2 (substrate), GRIA1 (unknown), GRIA2 (unknown), GRIA3 (unknown), GRIA4 (unknown), GRIK1 (unknown), GRIK2 (unknown), GRIK3 (unknown), GRIK4 (unknown), GRIK5 (unknown), GRIN1 (unknown), GRIN2A (unknown), GRIN2B (unknown), GRIN2C (unknown), GRIN2D (unknown), GRIN3A (unknown), GRM1 (unknown), GRM4 (unknown), GRM7 (unknown), GRM8 (unknown), NADSYN1 (product), NAGS (unknown), OPLAH (unknown), PFAS (unknown), PSAT1 (unknown), SLC16A1 (substrate), SLC16A10 (inhibitor), SLC16A10 (substrate), SLC1A1 (unknown), SLC1A2 (unknown), SLC1A3 (unknown), SLC1A6 (unknown), SLC1A7 (unknown), SLC25A18 (unknown), SLC25A22 (unknown), SLC7A11 (unknown), TAT (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 1074 matched, 195 returned

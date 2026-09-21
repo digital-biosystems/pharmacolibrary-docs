@@ -35,6 +35,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kereiakes_2020](drugs/drug_abciximab/pd_Kereiakes_2020_inhibition_of_platelet_aggregation.md) | Kereiakes DJ et al., First Human Use of RUC-4: A Nonactivati…, Journal of the American Hea… (2020) | [10.1161/jaha.120.016552](https://doi.org/10.1161/jaha.120.016552) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Mager_2003](drugs/drug_abciximab/pd_Mager_2003_unknown.md) | Mager DE et al., Simultaneous modeling of abciximab plas…, The Journal of pharmacology… (2003) | [10.1124/jpet.103.057299](https://doi.org/10.1124/jpet.103.057299) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=abciximab) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: FCGR2A (unknown), FCGR2B (unknown), ITGA2B (target), ITGB3 (target), VTN (unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 127 matched, 56 returned

@@ -29,6 +29,15 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Kim_2009](drugs/drug_belotecan/pd_Kim_2009_cell_viability.md) | Kim YY et al., CKD-602, a camptothecin derivative, inh…, Oncology reports (2009) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Wu_2012_2](drugs/drug_belotecan/pd_Wu_2012_2_MONO.md) | Wu (2012) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=belotecan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: TOP1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 14 matched, 78 returned

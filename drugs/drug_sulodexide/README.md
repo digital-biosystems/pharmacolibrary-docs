@@ -35,6 +35,19 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012](drugs/drug_sulodexide/pd_Masola_2012_VIM.md) | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012](drugs/drug_sulodexide/pd_Masola_2012_migration.md) | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=sulodexide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…ation is approximately 90%. After a rapid absorption in the intestine, the dermatan and he…”</sub> | prose |
+| metabolism | liver | <sub>“…It is mainly metabolized in the liver.…”</sub> | prose |
+| excretion | bile duct | <sub>“…Sulodexide is eliminated via the renal, fecal and bile routes. The main clearance occurs r…”</sub> | prose |
+| excretion | kidney | <sub>“…Sulodexide is eliminated via the renal, fecal and bile routes. The main clearance occurs r…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: SERPINC1 (potentiator), SERPIND1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 423 matched, 45 returned

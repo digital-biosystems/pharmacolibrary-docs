@@ -30,6 +30,22 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'definition' is a table statistic/structure column, not a study po…</sub><br><sub>route_to: `human_review`</sub> | [Gao_2012_definition](drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_definition.md) | Gao W et al., Modeling disease progression and rosigl…, The Journal of pharmacology… (2012) | [10.1124/jpet.112.192419](https://doi.org/10.1124/jpet.112.192419) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'definition' is a table statistic/structure column, not a study po…</sub><br><sub>route_to: `human_review`</sub> | [Gao_2012_definition](drugs/drug_rosiglitazone/Rosiglitazone_Gao2012_definition.md) | Gao W et al., Modeling disease progression and rosigl…, The Journal of pharmacology… (2012) | [10.1124/jpet.112.192419](https://doi.org/10.1124/jpet.112.192419) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=rosiglitazone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | liver | `CYP1A2` inhibitor, `CYP2B6` inducer, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor/substrate, `CYP2D6` inhibitor, `CYP2E1` substrate, `CYP3A4` inducer/substrate, `SLC10A1` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…and 23% of the dose was eliminated in the urine and in the feces, respectively.…”</sub> | prose |
+| excretion | kidney | <sub>“…approximately 64% and 23% of the dose was eliminated in the urine and in the feces, respec…”</sub> | prose |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ACSL4 (inhibitor), PPARG (target), PTGS1 (substrate), RXRA (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 63 matched, 17 returned

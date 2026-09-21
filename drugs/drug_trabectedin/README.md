@@ -36,6 +36,18 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Miao_2016](drugs/drug_trabectedin/pd_Miao_2016_fraction_of_cells_in_S_phase.md) | Miao (2016) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Miao_2016](drugs/drug_trabectedin/pd_Miao_2016_fraction_of_cells_in_sub_G1_phase_apoptosis.md) | Miao (2016) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=trabectedin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP2E1` substrate, `CYP3A4` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: DNA (binder), PTGS1 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 44 matched, 44 returned

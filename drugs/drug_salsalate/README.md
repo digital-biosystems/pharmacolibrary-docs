@@ -31,6 +31,18 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Cao_2011](drugs/drug_salsalate/pd_Cao_2011_body_weight.md) | Cao Y et al., Modeling diabetes disease progression a…, The Journal of pharmacology… (2011) | [10.1124/jpet.111.185686](https://doi.org/10.1124/jpet.111.185686) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Cao_2011](drugs/drug_salsalate/pd_Cao_2011_food_intake.md) | Cao Y et al., Modeling diabetes disease progression a…, The Journal of pharmacology… (2011) | [10.1124/jpet.111.185686](https://doi.org/10.1124/jpet.111.185686) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=salsalate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…s (&lt; 0.1 mg/ml at pH 1.0), but readily soluble in the small intestine where it is partiall…”</sub> | prose |
+| absorption | stomach | <sub>“…Salsalate is insoluble in acid gastric fluids (&lt; 0.1 mg/ml at pH 1.0), but readily soluble…”</sub> | prose |
+| metabolism | small intestine | <sub>“…Salsalate is readily soluble in the small intestine where it is partially hydrolyzed to tw…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 18 matched, 22 returned

@@ -25,6 +25,18 @@ Bisacodyl was patented on 25 September 1956[L33045] but has been used as a laxat
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=bisacodyl) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | small intestine | <sub>“…active bis-(p-hydroxyphenyl)-pyridyl-2-methane (BHPM) by an intestinal deacetylase.[A23329…”</sub> | prose |
+| excretion | bile duct | <sub>“…The majority of bisacodyl is eliminated in the feces. 13.8-17.0% of a bisacodyl dose is el…”</sub> | prose |
+| excretion | kidney | <sub>“…feces. 13.8-17.0% of a bisacodyl dose is eliminated in the urine as the active metabolite…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: AQP3 (negative modulator), ATP1A1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 34 matched, 21 returned

@@ -33,6 +33,15 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Xiao_2004](drugs/drug_carbenoxolone/pd_Xiao_2004_unknown.md) | Xiao D et al., Cortisol-mediated regulation of uterine…, American journal of physiol… (2004) | [10.1152/ajpheart.00805.2003](https://doi.org/10.1152/ajpheart.00805.2003) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Liu_2012](drugs/drug_carbenoxolone/pd_Liu_2012_loss_of_righting_reflex.md) | Liu Z et al., The gap junction blocker carbenoxolone…, Neural regeneration research (2012) | [10.3969/j.issn.1673-5374.2012.07.002](https://doi.org/10.3969/j.issn.1673-5374.2012.07.002) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=carbenoxolone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: HSD11B1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 82 matched, 53 returned

@@ -37,6 +37,20 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Frey_2003](drugs/drug_gliclazide/pd_Frey_2003_fasting_plasma_glucose.md) | Frey N et al., Population PKPD modelling of the long-t…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=gliclazide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` unknown | DrugBank actor |
+| metabolism | kidney | <sub>“…1% of the orally administered dose appears unchanged in the urine. Metabolites include oxi…”</sub> | prose |
+| metabolism | liver | `CYP2C19` substrate, `CYP2C9` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…liminated primarily by the kidneys (60-70%) and also in the feces (10-20%).…”</sub> | prose |
+| excretion | kidney | <sub>“…Metabolites and conjugates are eliminated primarily by the kidneys (60-70%) and also in th…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ABCC8 (binder), VEGFA (other/unknown).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned

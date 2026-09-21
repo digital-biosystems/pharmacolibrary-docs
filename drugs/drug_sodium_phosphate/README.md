@@ -41,6 +41,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Soares_2015](drugs/drug_sodium_phosphate/pd_Soares_2015_egg_hatching_inhibition.md) | Soares AM et al., Anthelmintic activity of Leucaena leuco…, Revista brasileira de paras… (2015) | [10.1590/S1984-29612015072](https://doi.org/10.1590/S1984-29612015072) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Soares_2015](drugs/drug_sodium_phosphate/pd_Soares_2015_larval_exsheathment.md) | Soares AM et al., Anthelmintic activity of Leucaena leuco…, Revista brasileira de paras… (2015) | [10.1590/S1984-29612015072](https://doi.org/10.1590/S1984-29612015072) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=sodium_phosphate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: SLC20A1 (substrate), SLC20A2 (substrate), SLC34A1 (substrate), SLC34A2 (substrate), SLC34A3 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 132 matched, 111 returned

@@ -46,6 +46,16 @@
 | <span class="pk-badge pk-badge--red">rejected</span> | [Fan_2023_2](drugs/drug_romiplostim/pd_Fan_2023_2_red_blood_cells.md) | Fan (2023) | — |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Fan_2023_2](drugs/drug_romiplostim/pd_Fan_2023_2_reticulocytes.md) | Fan (2023) | — |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=romiplostim) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…Renal clearance (more dominant mode of clearance as dose increase…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: AHR (modulator), FGFR1 (inhibitor), FLT1 (inhibitor), KDR (inhibitor), KIT (inhibitor), MPL (target), PDGFRA (inhibitor), PDGFRB (inhibitor), RET (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 58 matched, 48 returned

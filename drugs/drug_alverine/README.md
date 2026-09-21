@@ -39,6 +39,16 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Cho_2026_po](drugs/drug_alverine/Alverine_Cho2026_po.md) | Cho A et al., Development of Integrated Parent-Metabo…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70342](https://doi.org/10.1002/psp4.70342) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Cho_2026_po](drugs/drug_alverine/Alverine_Cho2026_po.md) | Cho A et al., Development of Integrated Parent-Metabo…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70342](https://doi.org/10.1002/psp4.70342) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=alverine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…High renal clearance of all metabolites indicating that they are elimi…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: HTR1A (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned

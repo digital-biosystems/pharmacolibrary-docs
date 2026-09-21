@@ -1,10 +1,10 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# name — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 - **paper:** `Oku_1998`
-- **model family:** `linear`
-- **driver:** `not_resolved`
+- **model family:** `categorical`
+- **driver:** `dose_only`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
 

@@ -43,6 +43,26 @@ Off-label, hydromorphone can be administered for the suppression of refractory c
 | <span class="pk-badge pk-badge--red">rejected</span> | [Walsh_2024](drugs/drug_hydromorphone/pd_Walsh_2024_COWS.md) | Walsh SL et al., Pharmacokinetic-pharmacodynamic analysi…, Neuropsychopharmacology : o… (2024) | [10.1038/s41386-023-01793-z](https://doi.org/10.1038/s41386-023-01793-z) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Walsh_2024](drugs/drug_hydromorphone/pd_Walsh_2024_VAS.md) | Walsh SL et al., Pharmacokinetic-pharmacodynamic analysi…, Neuropsychopharmacology : o… (2024) | [10.1038/s41386-023-01793-z](https://doi.org/10.1038/s41386-023-01793-z) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=hydromorphone) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | kidney | <sub>“…ines rapidly due to fast redistribution into liver, spleen, kidney and skeletal muscle. In…”</sub> | prose |
+| absorption | liver | <sub>“…ll intestine with a bioavailability of 60% due to intensive first-pass metabolism. In the…”</sub> | prose |
+| absorption | skeletal muscle | <sub>“…fast redistribution into liver, spleen, kidney and skeletal muscle. In the parenteral rout…”</sub> | prose |
+| absorption | skin | <sub>“…dministration routes such as rectal, nasal, intraspinal and transdermal present lower bioa…”</sub> | prose |
+| absorption | small intestine | <sub>“…orally, hydromorphone is absorbed mainly in the upper small intestine with a bioavailabili…”</sub> | prose |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
+| metabolism | liver | `CYP2C9` substrate, `UGT1A3` substrate, `UGT2B7` substrate | DrugBank actor |
+| metabolism | small intestine | `UGT2B7` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…mpound represents 7% of the urine elimination and 1% of the fecal elimination.[A176468]…”</sub> | prose |
+| excretion | kidney | <sub>“…The main elimination route of hydromorphone is through the urine in the form of the main m…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: OPRD1 (partial agonist), OPRK1 (target), OPRM1 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 43 matched, 20 returned

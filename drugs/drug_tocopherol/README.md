@@ -25,6 +25,26 @@ Tocopherol, due to its antioxidant properties, is studied for its use in prevent
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=tocopherol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` transporter | DrugBank actor |
+| absorption | kidney | `ABCB1` transporter | DrugBank actor |
+| absorption | liver | `ABCB1` transporter | DrugBank actor |
+| absorption | placenta | `ABCB1` transporter | DrugBank actor |
+| absorption | small intestine | `ABCB1` transporter | DrugBank actor |
+| metabolism | bile duct | <sub>“…These intermediate-chain metabolites can be found in human feces and urine. The catabolic…”</sub> | prose |
+| metabolism | kidney | `CYP4F2` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` substrate, `CYP4F2` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…fferent conjugated metabolites are excreted in the urine or feces depending on the length…”</sub> | prose |
+| excretion | kidney | <sub>“…7] The different conjugated metabolites are excreted in the urine or feces depending on th…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: APOBR (transporter), Free radicals (binder), LDLR (binder), SCARB1 (transporter), SEC14L2 (substrate), SEC14L3 (substrate), SEC14L4 (substrate), TTPA (substrate), VLDLR (binder).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 1019 matched, 100 returned

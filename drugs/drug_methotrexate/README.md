@@ -73,12 +73,12 @@ Other formulations are indicated to treat gestational choriocarcinoma, chorioade
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Cronstein_1991](drugs/drug_methotrexate/pd_Cronstein_1991_none.md) | Cronstein BN et al., Methotrexate inhibits neutrophil functi…, Proceedings of the National… (1991) | [10.1073/pnas.88.6.2441](https://doi.org/10.1073/pnas.88.6.2441) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Cronstein_1991](drugs/drug_methotrexate/pd_Cronstein_1991_unknown.md) | Cronstein BN et al., Methotrexate inhibits neutrophil functi…, Proceedings of the National… (1991) | [10.1073/pnas.88.6.2441](https://doi.org/10.1073/pnas.88.6.2441) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Pan_2026](drugs/drug_methotrexate/pd_Pan_2026_PASI.md) | Pan S et al., Evaluation of a Therapeutic Drug Monito…, Clinical and translational… (2026) | [10.1111/cts.70563](https://doi.org/10.1111/cts.70563) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Tan_2024](drugs/drug_methotrexate/pd_Tan_2024_DAS_28_3.md) | Tan JM et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2024) | [10.1111/bcp.16158](https://doi.org/10.1111/bcp.16158) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [van_2024](drugs/drug_methotrexate/pd_van_2024_PASI.md) | van Huizen A et al., Quantifying the Effect of Methotrexate…, The Journal of investigativ… (2024) | [10.1016/j.jid.2023.10.022](https://doi.org/10.1016/j.jid.2023.10.022) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Gebhard_2023](drugs/drug_methotrexate/pd_Gebhard_2023_ANC.md) | Gebhard A et al., Pharmacokinetic-pharmacodynamic modelin…, Scientific reports (2023) | [10.1038/s41598-023-38414-0](https://doi.org/10.1038/s41598-023-38414-0) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Muthukrishnan_2025](drugs/drug_methotrexate/pd_Muthukrishnan_2025_high_sensitivity_C_reactive_protein.md) | Muthukrishnan VY et al., Population Pharmacokinetic and Pharmaco…, Clinical and translational… (2025) | [10.1111/cts.70381](https://doi.org/10.1111/cts.70381) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Muthukrishnan_2025](drugs/drug_methotrexate/pd_Muthukrishnan_2025_hs_CRP.md) | Muthukrishnan VY et al., Population Pharmacokinetic and Pharmaco…, Clinical and translational… (2025) | [10.1111/cts.70381](https://doi.org/10.1111/cts.70381) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Pan_2026](drugs/drug_methotrexate/pd_Pan_2026_PASI.md) | Pan S et al., Evaluation of a Therapeutic Drug Monito…, Clinical and translational… (2026) | [10.1111/cts.70563](https://doi.org/10.1111/cts.70563) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Toyoshima_2021](drugs/drug_methotrexate/pd_Toyoshima_2021_ACR20.md) | Toyoshima J et al., Exposure-response modeling of peficitin…, Pharmacology research & per… (2021) | [10.1002/prp2.744](https://doi.org/10.1002/prp2.744) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Toyoshima_2021](drugs/drug_methotrexate/pd_Toyoshima_2021_DAS28_CRP.md) | Toyoshima J et al., Exposure-response modeling of peficitin…, Pharmacology research & per… (2021) | [10.1002/prp2.744](https://doi.org/10.1002/prp2.744) |
 
@@ -110,6 +110,32 @@ Other formulations are indicated to treat gestational choriocarcinoma, chorioade
 <summary>What the PGx columns mean</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
+
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=methotrexate) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate/transport, `SLCO1A2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate, `ABCG2` substrate/transport | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate/transport | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate/transport, `SLC15A1` substrate, `SLCO1A2` substrate | DrugBank actor |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| distribution | blood-brain barrier | `ABCC1` inhibitor/substrate | DrugBank actor |
+| distribution | lung | `ABCC1` inhibitor/substrate | DrugBank actor |
+| metabolism | blood | `TPMT` safety_allele | paper PGx gene |
+| metabolism | kidney | `SLC22A7` substrate, `UGT1A9` metabolism | DrugBank actor |
+| metabolism | liver | `AOX1` substrate, `CYP3A4` substrate, `SLC22A7` substrate, `SLCO1B1` substrate/transport, `SLCO1B3` substrate, `TPMT` safety_allele, `UGT1A9` metabolism | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…urine with 8.7-26% of an intravenous dose appearing in the bile.[A180322]…”</sub> | prose |
+| excretion | kidney | `ABCC2` inhibitor/substrate/transport, `ABCC4` inhibitor/substrate/transport, `SLC22A6` inhibitor/substrate, `SLC22A8` inhibitor/substrate | DrugBank actor |
+| excretion | liver | `ABCC2` inhibitor/substrate/transport, `ABCC3` inhibitor/substrate, `ABCC4` inhibitor/substrate/transport | DrugBank actor |
+| excretion | small intestine | `ABCC2` inhibitor/substrate/transport, `ABCC3` inhibitor/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ABCC10 (inhibitor), ABCC11 (substrate), ADORA2A (target), ATIC (inhibitor), DHFR (inhibitor), DHFR (substrate), FOLR1 (substrate), FOLR2 (substrate), FPGS (substrate), GGH (substrate), IMPDH1 (target), MTHFR (safety_allele), MTHFR (substrate), NUDT15 (safety_allele), PGD (inhibitor), SLC16A1 (substrate), SLC19A1 (modulator), SLC19A1 (substrate), SLC19A1 (transport), SLC22A11 (substrate), SLC36A1 (substrate), SLC46A1 (inhibitor), SLC46A1 (modulator), SLC46A1 (substrate), SLCO1C1 (substrate), SLCO3A1 (substrate), SLCO4C1 (unknown), TYMS (inhibitor), TYMS (substrate), TYMS (target).</sub>
 
 ## Coverage
 

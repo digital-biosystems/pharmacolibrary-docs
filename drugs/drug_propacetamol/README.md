@@ -29,6 +29,22 @@
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Anderson_2005_reference](drugs/drug_propacetamol/Propacetamol_Anderson2005_reference.md) | Anderson BJ et al., Pediatric intravenous paracetamol (prop…, Paediatric anaesthesia (2005) | [10.1111/j.1460-9592.2005.01455.x](https://doi.org/10.1111/j.1460-9592.2005.01455.x) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Krekels_2015_reference](drugs/drug_propacetamol/Propacetamol_Krekels2015_reference.md) | Krekels EH et al., Developmental changes rather than repea…, European journal of clinica… (2015) | [10.1007/s00228-015-1887-y](https://doi.org/10.1007/s00228-015-1887-y) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=propacetamol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | brain | <sub>“…, significant concentrations of paracetamol are observed in cerebrospinal fluid.[L1509]…”</sub> | prose |
+| metabolism | blood | `BCHE` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
+| metabolism | liver | `BCHE` substrate, `CYP1A2` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP2E1` substrate, `CYP3A4` inducer/substrate, `NAT2` inhibitor, `SULT1A1` substrate, `SULT1E1` substrate, `UGT1A1` substrate, `UGT1A6` substrate, `UGT1A9` substrate, `UGT2B15` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/substrate, `NAT2` inhibitor, `SULT1A1` substrate, `UGT1A1` substrate, `UGT1A6` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…The metabolites of propacetamol are mainly excreted in the urine. From the elimination rat…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CNR1 (target), PTGS1 (target), PTGS2 (target), SULT1A3 (substrate), SULT2A1 (substrate), TRPV1 (target), UGT1A10 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 13 matched, 13 returned

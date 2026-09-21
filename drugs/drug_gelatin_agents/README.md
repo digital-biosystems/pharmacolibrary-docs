@@ -106,6 +106,14 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Navarro_2015](drugs/drug_gelatin_agents/pd_Navarro_2015_unknown.md) | Navarro E et al., Effects of Differently Coated Silver Na…, Environmental science & tec… (2015) | [10.1021/acs.est.5b01089](https://doi.org/10.1021/acs.est.5b01089) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Tanzawa_1992](drugs/drug_gelatin_agents/pd_Tanzawa_1992_unknown.md) | Tanzawa K et al., Matlystatins, new inhibitors of typeIV…, The Journal of antibiotics (1992) | [10.7164/antibiotics.45.1733](https://doi.org/10.7164/antibiotics.45.1733) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=gelatin_agents) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…d that 41.91% of the digested gelatin was absorbed from the intestine in the peptide form,…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 575 matched, 182 returned

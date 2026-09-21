@@ -37,6 +37,16 @@ Icatibant was approved by the FDA on August 25, 2011, and by the EMA in 2008 as 
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Wang_2021](drugs/drug_icatibant/pd_Wang_2021_time_to_onset_of_symptom_relief.md) | Wang Y et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1768](https://doi.org/10.1002/jcph.1768) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=icatibant) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…tibant's inactive metabolites are primarily excreted in the urine, with less than 10% of t…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ANPEP (inhibitor), BDKRB2 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 16 matched, 12 returned

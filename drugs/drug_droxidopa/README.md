@@ -31,6 +31,16 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Kanodia_2021](drugs/drug_droxidopa/pd_Kanodia_2021_norepinephrine_transporter_occupancy.md) | Kanodia J et al., Pharmacokinetics of Ampreloxetine, a No…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00918-7](https://doi.org/10.1007/s40262-020-00918-7) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=droxidopa) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| excretion | kidney | <sub>“…Droxidopa is mainly excreted in the urine, with the main metabolite being 3-O-methyldihydr…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), ADRA2A (target), ADRA2B (target), ADRA2C (target), ADRB1 (target), ADRB2 (target), ADRB3 (target), DDC (substrate), PAH (inhibitor), SLC16A10 (inhibitor), SLC6A2 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 25 matched, 19 returned

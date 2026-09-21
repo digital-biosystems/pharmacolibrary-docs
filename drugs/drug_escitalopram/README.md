@@ -27,6 +27,28 @@
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Liu_2022_reference](drugs/drug_escitalopram/Escitalopram_Liu2022_reference.md) | Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.964758](https://doi.org/10.3389/fphar.2022.964758) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2023_reference](drugs/drug_escitalopram/Escitalopram_Liu2023_reference.md) | Liu X et al., Escitalopram Personalized Dosing: A Pop…, Drug design, development an… (2023) | [10.2147/DDDT.S425654](https://doi.org/10.2147/DDDT.S425654) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=escitalopram) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` inhibitor/substrate, `MAOA` substrate, `MAOB` substrate | DrugBank actor |
+| metabolism | liver | `AOX1` substrate, `CYP2C19` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate, `MAOA` substrate | DrugBank actor |
+| metabolism | platelet | `MAOB` substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` substrate, `MAOA` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…am, approximately 8% of the total dose is eliminated in the urine as unchanged escitalopra…”</sub> | prose |
+| excretion | liver | <sub>“…e as S-desmethylcitalopram.[L8513,L8516,L8522] The apparent hepatic clearance of escitalop…”</sub> | prose |
+| target | brain | `SLC6A4` binder | DrugBank actor |
+| target | platelet | `SLC6A4` binder | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (inhibitor), ADRA2A (inhibitor), CHRM1 (inhibitor), DRD2 (inhibitor), HRH1 (inhibitor), HTR1A (inhibitor), HTR2A (inhibitor), HTR2C (inhibitor), SLC6A2 (inhibitor), SLC6A3 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 129 matched, 20 returned

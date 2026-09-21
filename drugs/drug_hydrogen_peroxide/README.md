@@ -77,6 +77,16 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Whorton_1985](drugs/drug_hydrogen_peroxide/pd_Whorton_1985_lactate_dehydrogenase_release.md) | Whorton AR et al., Effect of hydrogen peroxide on prostagl…, The Journal of clinical inv… (1985) | [10.1172/JCI111960](https://doi.org/10.1172/JCI111960) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2024](drugs/drug_hydrogen_peroxide/pd_Zhang_2024_U_ox.md) | Zhang S et al., Nedosiran population pharmacokinetic an…, British journal of clinical… (2024) | [10.1111/bcp.16194](https://doi.org/10.1111/bcp.16194) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=hydrogen_peroxide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…at hydrogen peroxide is decomposed before absorption in the intestine. Solutions of hydrog…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ALPG (inhibitor), CAT (substrate), GPX1 (substrate), PTPN1 (inhibitor).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 2212 matched, 233 returned

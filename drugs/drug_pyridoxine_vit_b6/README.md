@@ -53,6 +53,21 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Xie_2014](drugs/drug_pyridoxine_vit_b6/pd_Xie_2014_Hcy.md) | Xie M et al., Effects of pyridoxine on growth perform…, Asian-Australasian journal… (2014) | [10.5713/ajas.2014.14252](https://doi.org/10.5713/ajas.2014.14252) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Xie_2014](drugs/drug_pyridoxine_vit_b6/pd_Xie_2014_unknown.md) | Xie M et al., Effects of pyridoxine on growth perform…, Asian-Australasian journal… (2014) | [10.5713/ajas.2014.14252](https://doi.org/10.5713/ajas.2014.14252) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=pyridoxine_vit_b6) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…The B vitamins are readily absorbed from the gastrointestinal tract, except in malabsorpti…”</sub> | prose |
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | liver | <sub>“…Pyridoxine is a prodrug primarily metabolized in the liver. The metabolic scheme for pyrid…”</sub> | prose |
+| metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP1A1` inhibitor | DrugBank actor |
+| excretion | kidney | <sub>“…yridoxine, 4-pyridoxic acid, is inactive and is excreted in urine…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ALPL (substrate), DDC (cofactor), PDXK (substrate), PDXK (target), PDXP (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 243 matched, 141 returned

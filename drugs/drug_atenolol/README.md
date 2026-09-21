@@ -85,6 +85,24 @@ Despite being one of the most widely prescribed beta blockers, evidence suggests
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=atenolol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | bile duct | <sub>“…l tract, with the remainder being excreted unchanged in the feces.[label] Administering at…”</sub> | prose |
+| absorption | brain | <sub>“…the AUC by about 20%.[A178180] While atenolol can cross the blood-brain barrier, it does s…”</sub> | prose |
+| absorption | small intestine | <sub>“…Approximately 50% of an oral dose is absorbed from the gastrointestinal tract, with the re…”</sub> | prose |
+| distribution | blood | `ALB` substrate | DrugBank actor |
+| metabolism | brain | `CYP2D6` substrate | DrugBank actor |
+| metabolism | liver | `CYP2D6` substrate | DrugBank actor |
+| excretion | bile duct | <sub>“…dneys following IV administration with 10% appearing in the feces.[label,A178180]…”</sub> | prose |
+| excretion | kidney | <sub>“…85% is eliminated by the kidneys following IV administration with 10% appearing in the fec…”</sub> | prose |
+| excretion | liver | `ABCB11` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRB1 (target), ADRB2 (target), ADRBK1 (target), GRK4 (target), GRK5 (safety_allele), LRRC15 (target), OR10P1 (unknown), PTPRD (target), SLC25A31 (target), SNX9 (unknown), UNKNOWN (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 568 matched, 73 returned

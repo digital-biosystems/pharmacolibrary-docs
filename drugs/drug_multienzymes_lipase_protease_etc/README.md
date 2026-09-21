@@ -35,6 +35,18 @@ _not available_
 | <span class="pk-badge pk-badge--green">extracted</span> | [Azhagesan_2025](drugs/drug_multienzymes_lipase_protease_etc/pd_Azhagesan_2025_salivary_amylase_activity.md) | Azhagesan A et al., Exposure of Polystyrene Micro- and Nano…, ACS omega (2025) | [10.1021/acsomega.4c07974](https://doi.org/10.1021/acsomega.4c07974) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Lubkowicz_2022](drugs/drug_multienzymes_lipase_protease_etc/pd_Lubkowicz_2022_UOx.md) | Lubkowicz D et al., An engineered bacterial therapeutic low…, Molecular systems biology (2022) | [10.15252/msb.202110539](https://doi.org/10.15252/msb.202110539) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=multienzymes_lipase_protease_etc) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Pancrelipase acts locally in the GI tract and it is not absorbed in any significant amount…”</sub> | prose |
+| metabolism | small intestine | <sub>“…Pancrelipase acts locally in the GI tract and it is not absorbed in any significant amount…”</sub> | prose |
+| excretion | bile duct | <sub>“…Pancrelipase is entirely eliminated in the feces.[L2521]…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: Dietary fat (cleavage), Dietary protein (cleavage), Dietary starch (cleavage).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 126 matched, 63 returned

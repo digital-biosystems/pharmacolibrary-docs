@@ -31,6 +31,17 @@ Enoxaparin is also indicated in the prophylaxis of DVT in abdominal surgery, hip
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: F, Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Zufferey_2021_value_r_s_e](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_value_r_s_e.md) | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: F, Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Zufferey_2021_value_r_s_e](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_value_r_s_e.md) | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=enoxaparin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…Enoxaparin is mainly metabolized by the liver via desulfation and/or depolymerization to l…”</sub> | prose |
+| excretion | kidney | <sub>“…Enoxaparin is mainly excreted by the kidneys.[A228143] Renal clearance of active fragments…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: F10 (inhibitor), F2 (inhibitor), MPO (other), SERPINC1 (potentiator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 66 matched, 36 returned

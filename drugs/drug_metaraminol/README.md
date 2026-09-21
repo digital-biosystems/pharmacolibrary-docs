@@ -29,6 +29,16 @@ _not available_
 |---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> | [Xiao_2021](drugs/drug_metaraminol/pd_Xiao_2021_unknown.md) | Xiao F et al., A Randomized Double-Blinded Dose-depend…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.608198](https://doi.org/10.3389/fphar.2021.608198) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=metaraminol) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…Hepatic…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), DRD2 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned

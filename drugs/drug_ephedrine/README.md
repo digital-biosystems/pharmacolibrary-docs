@@ -34,6 +34,21 @@
 | <span class="pk-badge pk-badge--green">extracted</span> | [Kloth_2017](drugs/drug_ephedrine/pd_Kloth_2017_arterial_tension.md) | Kloth B et al., Akrinor, Frontiers in pharmacology (2017) | [10.3389/fphar.2017.00272](https://doi.org/10.3389/fphar.2017.00272) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Kloth_2017](drugs/drug_ephedrine/pd_Kloth_2017_force_of_contraction.md) | Kloth B et al., Akrinor, Frontiers in pharmacology (2017) | [10.3389/fphar.2017.00272](https://doi.org/10.3389/fphar.2017.00272) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ephedrine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| distribution | blood | `ALB` binder | DrugBank actor |
+| metabolism | blood | `BCHE` substrate | DrugBank actor |
+| metabolism | liver | `BCHE` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…Ephedrine is mainly eliminated in the urine.[A193641,L12972] Approximately 60% is eliminat…”</sub> | prose |
+| target | blood | `ACHE` inhibitor | DrugBank actor |
+| target | neuromuscular junction | `ACHE` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ADRA1A (target), ADRB1 (target), ADRB2 (target), DRD2 (target), SLC18A2 (inhibitor), SLC6A2 (inverse agonist).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 42 matched, 38 returned

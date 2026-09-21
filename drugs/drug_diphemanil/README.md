@@ -21,6 +21,16 @@
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=diphemanil) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Poorly absorbed from the gastrointestinal tract with an absolute bioavailability of 15 to…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: CHRM1 (modulator), CHRM3 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned

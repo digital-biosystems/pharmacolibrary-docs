@@ -33,6 +33,25 @@ Oral cladribine is indicated for the treatment of relapsing forms of multiple sc
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Lindemalm_2005_population_average](drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average.md) | Lindemalm S et al., Application of population pharmacokinet…, BMC pharmacology (2005) | [10.1186/1471-2210-5-4](https://doi.org/10.1186/1471-2210-5-4) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Savic_2017_reference](drugs/drug_cladribine/Cladribine_Savic2017_reference.md) | Savic RM et al., Population Pharmacokinetics of Cladribi…, Clinical pharmacokinetics (2017) | [10.1007/s40262-017-0516-6](https://doi.org/10.1007/s40262-017-0516-6) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=cladribine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| distribution | blood | `SLC29A1` unknown | DrugBank actor |
+| distribution | liver | `SLC29A1` unknown | DrugBank actor |
+| metabolism | liver | <sub>“…haracterized; however, extensive whole blood and negligible hepatic enzyme metabolism was…”</sub> | prose |
+| excretion | kidney | <sub>“…e administered dose has been reported to be excreted in the urine of patients with solid t…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ADA (inhibitor), DCK (substrate), DGUOK (substrate), DNA (disruptor), DNA (other/unknown), PARP1 (inducer), PNP (inducer), POLA1 (inhibitor), POLE (inhibitor), POLE2 (inhibitor), POLE3 (inhibitor), POLE4 (inhibitor), RRM1 (inhibitor), RRM2 (inhibitor), RRM2B (inhibitor), SLC28A3 (substrate).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 38 matched, 38 returned

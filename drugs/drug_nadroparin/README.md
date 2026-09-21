@@ -37,6 +37,17 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Jaspers_2022](drugs/drug_nadroparin/pd_Jaspers_2022_anti_Xa.md) | Jaspers TCC et al., Optimising the Nadroparin Dose for Thro…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01162-x](https://doi.org/10.1007/s40262-022-01162-x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=nadroparin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | liver | <sub>“…Nadroparin is metabolized in the liver.…”</sub> | prose |
+| excretion | kidney | <sub>“…Nadroparin is eliminated via the kidneys through non-saturable mechanisms.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: F10 (modulator), FOS (inhibitor), MYC (inhibitor), SELP (inhibitor), SERPINC1 (potentiator).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned

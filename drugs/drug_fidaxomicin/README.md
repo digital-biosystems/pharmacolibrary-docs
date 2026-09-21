@@ -27,6 +27,23 @@ Fidaxomicin should only be used in patients with proven or strongly suspected _C
 
 _not available_
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=fidaxomicin) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` substrate | DrugBank actor |
+| absorption | liver | `ABCB1` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| metabolism | liver | `CYP3A4` inhibitor | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| metabolism | stomach | <sub>“…it is speculated that this biotransformation is mediated by gastric acid or enzymatic acti…”</sub> | prose |
+| excretion | bile duct | <sub>“…wing oral administration, fidaxomicin is mainly excreted in feces. More than 92% of the do…”</sub> | prose |
+| excretion | kidney | <sub>“…fo the oral dose (200 mg) administered was recovered in the urine as the main metabolite,…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 50 matched, 42 returned

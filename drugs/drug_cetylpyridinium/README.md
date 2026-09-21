@@ -57,6 +57,15 @@ _not available_
 | <span class="pk-badge pk-badge--red">rejected</span> | [Khorolsuren_2021](drugs/drug_cetylpyridinium/pd_Khorolsuren_2021_normalized_cell_index.md) | Khorolsuren Z et al., Effect of dental antiseptic agents on t…, The Saudi dental journal (2021) | [10.1016/j.sdentj.2021.09.016](https://doi.org/10.1016/j.sdentj.2021.09.016) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Puhl_2023](drugs/drug_cetylpyridinium/pd_Puhl_2023_unknown.md) | Puhl AC et al., Discovery of PLpro and Mpro Inhibitors…, ACS omega (2023) | [10.1021/acsomega.3c01110](https://doi.org/10.1021/acsomega.3c01110) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=cetylpyridinium) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | skin | <sub>“…ystemic effects from percutaneous absorption through intact skin is considered rare [L2757…”</sub> | prose |
+| excretion | bile duct | <sub>“…y large amounts of the compound are therefore eliminated in faeces [L2757].…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 54 matched, 48 returned

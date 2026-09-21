@@ -28,6 +28,14 @@
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Stott_2018_reference](drugs/drug_amphotericin_b/AmphotericinB_Stott2018_reference.md) | Stott KE et al., Population Pharmacokinetic Model and Me…, Antimicrobial agents and ch… (2018) | [10.1128/AAC.02526-17](https://doi.org/10.1128/AAC.02526-17) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Stott_2022_reference](drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference.md) | Stott KE et al., Population pharmacokinetics of liposoma…, The Journal of antimicrobia… (2022) | [10.1093/jac/dkac389](https://doi.org/10.1093/jac/dkac389) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=amphotericin_b) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | kidney | <sub>“…Exclusively renal…”</sub> | prose |
+
 ## Coverage
 
 - **PubMed hits:** 151 matched, 20 returned

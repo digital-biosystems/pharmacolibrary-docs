@@ -26,6 +26,18 @@
 |---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Welling_1982_healthy male volunteers](drugs/drug_tolazamide/Tolazamide_Welling1982_healthy_male_volunteers.md) | Welling PG et al., Bioavailability of tolazamide from tabl…, Journal of pharmaceutical s… (1982) | [10.1002/jps.2600711119](https://doi.org/10.1002/jps.2600711119) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=tolazamide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | <sub>“…Rapidly and well absorbed from the gastrointestinal tract.…”</sub> | prose |
+| metabolism | liver | `CYP2C9` substrate | DrugBank actor |
+| excretion | kidney | <sub>“…tivity from 0% to 70%. They are excreted principally in the urine.…”</sub> | prose |
+
+<sub>Actors without a tissue in the table: ABCC8 (blocker), KCNJ10 (blocker).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 13 matched, 13 returned

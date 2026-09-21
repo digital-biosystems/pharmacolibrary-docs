@@ -28,6 +28,29 @@ The prevalence of GERD is thought to be 10-20% in western countries.[A176843] Ra
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Hawwa_2013_reference](drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference.md) | Hawwa AF et al., Prophylactic ranitidine treatment in cr…, British journal of clinical… (2013) | [10.1111/j.1365-2125.2012.04473.x](https://doi.org/10.1111/j.1365-2125.2012.04473.x) |
 
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ranitidine) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| metabolism | bile duct | <sub>“…xide (1%) and desmethyl ranitidine (1%).[L10818,L10923] The feces contain the remainder of…”</sub> | prose |
+| metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
+| metabolism | kidney | <sub>“…The major metabolite in the urine is N-oxide, which represents less than 4% of the dose. O…”</sub> | prose |
+| metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2D6` inhibitor, `CYP3A4` inhibitor, `SLC22A1` inhibitor/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
+| excretion | bile duct | <sub>“…ug is mainly excreted in the urine but also excreted in the feces.[A188817,L10923] About 3…”</sub> | prose |
+| excretion | kidney | `SLC22A2` substrate, `SLC22A8` substrate | DrugBank actor |
+| target | blood | `ACHE` inhibitor | DrugBank actor |
+| target | neuromuscular junction | `ACHE` inhibitor | DrugBank actor |
+
+<sub>Actors without a tissue in the table: HRH2 (target).</sub>
+
 ## Coverage
 
 - **PubMed hits:** 140 matched, 60 returned
