@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Streptomycin_Du2013_rats&quot;,&quot;label&quot;:&quot;Du_2013_rats&quot;,&quot;href&quot;:&quot;drugs/drug_streptomycin/Streptomycin_Du2013_rats.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Streptomycin_Du2013_reference&quot;,&quot;label&quot;:&quot;Du_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_streptomycin/Streptomycin_Du2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bacterial growth rate — PD  <span class="pk-badge pk-badge--green">extracted</span>

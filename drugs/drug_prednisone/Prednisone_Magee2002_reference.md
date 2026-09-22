@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;prednisone&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/&quot;},{&quot;label&quot;:&quot;Magee_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisone_Magee2002_reference&quot;,&quot;label&quot;:&quot;Magee_2002_reference&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Magee2002_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Prednisone_Bouazza2025_covariate_effect&quot;,&quot;label&quot;:&quot;Bouazza_2025_covariate_effect&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Bouazza2025_covariate_effect.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Bouazza2025_covariate_effect&quot;,&quot;label&quot;:&quot;Bouazza_2025_covariate_effect&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Bouazza2025_covariate_effect.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Bouazza2025_estimate_rse&quot;,&quot;label&quot;:&quot;Bouazza_2025_estimate_rse&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Bouazza2025_estimate_rse.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Bouazza2025_estimate_rse&quot;,&quot;label&quot;:&quot;Bouazza_2025_estimate_rse&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Bouazza2025_estimate_rse.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_de2023_reference&quot;,&quot;label&quot;:&quot;de_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_de2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisone_Magee2002_reference&quot;,&quot;label&quot;:&quot;Magee_2002_reference&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Magee2002_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Prednisone_Sassen2020_reference&quot;,&quot;label&quot;:&quot;Sassen_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_prednisone/Prednisone_Sassen2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prednisone — `Prednisone_Magee2002_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
@@ -13,16 +13,14 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable.
+**What is wrong:** a structural parameter has the wrong dimension.
 
 **Steps:**
 1. Not a curation fix — fulltext limitation.
-2. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-3. If the paper never reports it, the record cannot become a model.
-4. Read the .deviation.json and confirm each deviation names what changed and why.
-5. Anything undocumented needs the engineer, not a curator.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 > **Dose compound ≠ measured compound:** dosed `prednisone`, measured `prednisolone`.
 
@@ -31,12 +29,12 @@ Magee MH; Blum RA; Lates CD; Jusko WJ et al. (2002). British journal of clinical
   ·  DOI: [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x)
 
 ## Model component
-<dbs-pgx drug="prednisone" model-id="Prednisone_Magee2002_reference" status="model_quarantined" stale="false" population="healthy adults" measured-compound="prednisolone" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="prednisone" model-id="Prednisone_Magee2002_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="prednisolone" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, CLnorm/F, V/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -45,9 +43,9 @@ Magee MH; Blum RA; Lates CD; Jusko WJ et al. (2002). British journal of clinical
 | V c /F(l) | `Q76` · V/F | 44.8 | l | 0.0448 | [l] | not captured | space_fold (0.95) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
 | V c /F/TBW(lkgx1) | `Q353` · Vnorm/F | 0.59 | lkgx1 | not captured | [kg] · [l] · [x1] | not captured | llm (0.6) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
 | CL/F(lhx1) | `Q27` · CL/F | 13.5 | lhx1 | not captured | [h] · [l] · [x1] | not captured | exact (1.0) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
+| CL/F/TBW(lhx1kgx1) | `Q355` · CLnorm/F | 0.178 | lhx1kgx1 | not captured | [h] · [kg] · [l] · [x1]^2 | not captured | llm (0.6) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
 | t 1/2 (h) | `Q57` · t1/2z | 2.33 | h | 8388.0 | [h] | not captured | space_fold (0.95) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
 | AUC(ngmlx1h) | `Q88` · AUC | 1638 | ngmlx1h | not captured | [h] · [ng] · [ml] · [x1] | not captured | exact (1.0) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
-| CL/F/TBW(lhx1kg) | `Q355` · CLnorm/F | 0.788 | lhx1kg | not captured | [h] · [kg] · [l] · [x1] | not captured | llm (0.6) | Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract, Magee_2002:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,17 +58,16 @@ Magee MH; Blum RA; Lates CD; Jusko WJ et al. (2002). British journal of clinical
 - unit_dimension_unknown: 'hx1' (kabs)
 - unit_dimension_unknown: 'lkgx1' (Vnorm/F)
 - unit_dimension_unknown: 'lhx1' (CL/F)
-- unit_dimension_unknown: 'lhx1kgx1' (CL/F)
-- dropped duplicate Q27 ('CL/F/TBW(lhx1kgx1)', value 0.178) — already have one for this compound
+- unit_dimension_unknown: 'lhx1kgx1' (CLnorm/F)
 - unit_dimension_unknown: 'ngmlx1h' (AUC)
 - unit_dimension_unknown: 'lhx1kg' (CLnorm/F)
+- dropped duplicate Q355 ('CL/F/TBW(lhx1kg)', value 0.788) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=prednisolone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V c /F(l)' is the general volume)
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- review gap-fill skipped: this record measures 'prednisolone', not prednisone — the review values are the parent's
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from cached Magee_2002_extracted.txt (64 record(s)); values are summary statistics, not a fitted model
@@ -83,22 +80,18 @@ Magee MH; Blum RA; Lates CD; Jusko WJ et al. (2002). British journal of clinical
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | lhx1 | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
+| C5_unit_missing_Q353 | fail | [length] ** 3 | lkgx1 | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
+| C5_unit_missing_Q355 | fail | [length] ** 3 / [time] | lhx1kgx1 | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
+| C5_unit_missing_Q49 | fail | 1 / [time] | hx1 | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | ngmlx1h | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q76 | pass | volume within physiological range | 44.8 L | not captured | not captured | ['Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract', 'Magee_2002:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -108,8 +101,6 @@ Magee MH; Blum RA; Lates CD; Jusko WJ et al. (2002). British journal of clinical
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_prednisone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Magee_2002` / `Magee_2002::reference`)
-- model: `../../../knowledgebase/drugs/drug_prednisone/models/modelica/_needs_review/Prednisone_Magee2002_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_prednisone/models/modelica/_needs_review/Prednisone_Magee2002_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

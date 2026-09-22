@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# malondialdehyde level — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# malondialdehyde content — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Ji_2024`
 - **model family:** `unknown`

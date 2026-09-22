@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11H&quot;,&quot;href&quot;:&quot;atc/A11H.md&quot;},{&quot;label&quot;:&quot;inositol&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/&quot;},{&quot;label&quot;:&quot;Phelps_2013 \u00b7 estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Inositol_Phelps2013_covariate_estimate_standard_error&quot;,&quot;label&quot;:&quot;Phelps_2013_covariate_estimate_standard_error&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_covariate_estimate_standard_error.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_covariate_estimate_standard_error&quot;,&quot;label&quot;:&quot;Phelps_2013_covariate_estimate_standard_error&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_covariate_estimate_standard_error.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_estimate&quot;,&quot;label&quot;:&quot;Phelps_2013_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_estimate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Inositol_Phelps2013_estimate&quot;,&quot;label&quot;:&quot;Phelps_2013_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_estimate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Inositol_Phelps2013_2_loglikelihood_p_value_e&quot;,&quot;label&quot;:&quot;Phelps_2013_2_loglikelihood_p_value_e&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_2_loglikelihood_p_value_e.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_2_loglikelihood_p_value_e&quot;,&quot;label&quot;:&quot;Phelps_2013_2_loglikelihood_p_value_e&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_2_loglikelihood_p_value_e.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_parametername_a&quot;,&quot;label&quot;:&quot;Phelps_2013_parametername_a&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_parametername_a.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_parametername_a&quot;,&quot;label&quot;:&quot;Phelps_2013_parametername_a&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_parametername_a.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_standard_error&quot;,&quot;label&quot;:&quot;Phelps_2013_standard_error&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_standard_error.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_standard_error&quot;,&quot;label&quot;:&quot;Phelps_2013_standard_error&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_standard_error.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Inositol_Phelps2013_covariate_estimate_standard_error&quot;,&quot;label&quot;:&quot;Phelps_2013_covariate_estimate_standard_error&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_covariate_estimate_standard_error.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_covariate_estimate_standard_error&quot;,&quot;label&quot;:&quot;Phelps_2013_covariate_estimate_standard_error&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_covariate_estimate_standard_error.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_estimate&quot;,&quot;label&quot;:&quot;Phelps_2013_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Inositol_Phelps2013_estimate&quot;,&quot;label&quot;:&quot;Phelps_2013_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # inositol — `Inositol_Phelps2013_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
@@ -13,12 +13,12 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
+**What is wrong:** a structural parameter has the wrong dimension.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
-2. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-3. If the paper never reports it, the record cannot become a model.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -27,12 +27,12 @@ Phelps DL; Ward RM; Williams RL; Watterberg KL; Laptook AR; Wrage LA; et al. et 
   ·  DOI: [10.1038/pr.2013.162](https://doi.org/10.1038/pr.2013.162)
 
 ## Model component
-<dbs-pgx drug="inositol" model-id="Inositol_Phelps2013_estimate" status="model_quarantined" stale="false" population="preterm infants" measured-compound="myo-inositol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="inositol" model-id="Inositol_Phelps2013_estimate" status="needs_review" stale="false" population="preterm infants" measured-compound="myo-inositol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -59,7 +59,7 @@ Phelps DL; Ward RM; Williams RL; Watterberg KL; Laptook AR; Wrage LA; et al. et 
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=myo-inositol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- population split: 'estimate' subgroup of Phelps_2013 (paper reports 5 populations: covariate estimate(standard error), estimate, parametername a, standard error, −2 loglikelihood(p-value e))
+- population split: 'estimate' subgroup of Phelps_2013 (paper reports 2 populations: covariate estimate(standard error), estimate)
 
 **Extraction notes:**
 - unparsed cell T7:row2:col6 = '2708.2 (NA)'
@@ -74,20 +74,14 @@ Phelps DL; Ward RM; Williams RL; Watterberg KL; Laptook AR; Wrage LA; et al. et 
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | pass | 5.22 | 5.222 | 1.0004 | 0.25 | reported t½β |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | clearance | not captured | not captured | ['Phelps_2013_table_4:row2:col2'] |
+| C5_unit_missing_Q47 | fail | 1 / [time] | elimination rate; Cl/V | not captured | not captured | ['Phelps_2013_table_4:row6:col2'] |
+| C5_unit_missing_Q57 | fail | [time] | half-life; 0.693/k | not captured | not captured | ['Phelps_2013_table_4:row7:col2'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 | volume | not captured | not captured | ['Phelps_2013_table_4:row1:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0679 | not captured | not captured | ['Phelps_2013_table_4:row2:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped | 5.22 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -97,8 +91,6 @@ Phelps DL; Ward RM; Williams RL; Watterberg KL; Laptook AR; Wrage LA; et al. et 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_inositol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Phelps_2013` / `Phelps_2013::estimate`)
-- model: `../../../knowledgebase/drugs/drug_inositol/models/modelica/_needs_review/Inositol_Phelps2013_estimate.mo`
-- deviation: `../../../knowledgebase/drugs/drug_inositol/models/modelica/_needs_review/Inositol_Phelps2013_estimate.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

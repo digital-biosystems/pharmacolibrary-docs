@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;betamethasone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Betamethasone_Krzyzanski2021v2_reference&quot;,&quot;label&quot;:&quot;Krzyzanski_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Betamethasone_Schoenmakers2025_reference&quot;,&quot;label&quot;:&quot;Schoenmakers_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_betamethasone/Betamethasone_Schoenmakers2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Betamethasone_Krzyzanski2021v2_reference&quot;,&quot;label&quot;:&quot;Krzyzanski_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Betamethasone_Sullivan2026_reference&quot;,&quot;label&quot;:&quot;Sullivan_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_betamethasone/Betamethasone_Sullivan2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # betamethasone
 
@@ -18,13 +18,15 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 21:52 | 6:00 | 1/0/0 | 0/0/0 | 0/0/0 | 47,390/15,669 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-09-22 04:49 | 2:53 | 0/2/1 | 0/0/0 | 0/0/0 | 47,484/7,335 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Krzyzanski_2021_2_reference](drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference.md) | Krzyzanski (2021) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Schoenmakers_2025_reference](drugs/drug_betamethasone/Betamethasone_Schoenmakers2025_reference.md) | Schoenmakers S et al., Pharmacokinetics of betamethasone in pr…, British journal of clinical… (2025) | [10.1002/bcp.70035](https://doi.org/10.1002/bcp.70035) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Krzyzanski_2021_2_reference](drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference.md) | Krzyzanski (2021) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Sullivan_2026_reference](drugs/drug_betamethasone/Betamethasone_Sullivan2026_reference.md) | Sullivan J et al., Pharmacokinetics and Anti-Inflammatory…, Journal of veterinary pharm… (2026) | [10.1111/jvp.70052](https://doi.org/10.1111/jvp.70052) |
 
 ## ADME sites
 
@@ -53,7 +55,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 28 matched, 19 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -62,24 +64,24 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Foissac_2020.pdf` | Foissac F et al., Maternal Betamethasone for Prevention o…, Clinical pharmacology and t… (2020) | popPK | 10 | [10.1002/cpt.1887](https://doi.org/10.1002/cpt.1887) | [32394434](https://pubmed.ncbi.nlm.nih.gov/32394434) | The paper is a population PK study for betamethasone, but specific numeric parameter values (CL, V) are not listed in the provided text, only qualitative descriptions and a transplacental transfer ratio. |
-| `Schoenmakers_2025.pdf` | Schoenmakers S et al., Pharmacokinetics of betamethasone in pr…, British journal of clinical… (2025) | popPK | 10 | [10.1002/bcp.70035](https://doi.org/10.1002/bcp.70035) | [40083164](https://pubmed.ncbi.nlm.nih.gov/40083164) | The study reports a population PK model for betamethasone with specific numeric clearance values (9.35 vs 15.78 L/h) and exposure metrics present in the text. |
-| `Zhang_2025.pdf` | Zhang C et al., Across-Species Meta-Analysis of Betamet…, Biopharmaceutics & drug dis… (2025) | popPK | 10 | [10.1002/bdd.70017](https://doi.org/10.1002/bdd.70017) | [41250930](https://pubmed.ncbi.nlm.nih.gov/41250930) | The paper is a highly relevant PK study for betamethasone, but specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, only model descriptions and a partition coefficient. |
+| `Foissac_2020.pdf` | Foissac F et al., Maternal Betamethasone for Prevention o…, Clinical pharmacology and t… (2020) | popPK | 10 | [10.1002/cpt.1887](https://doi.org/10.1002/cpt.1887) | [32394434](https://pubmed.ncbi.nlm.nih.gov/32394434) | The paper is a population PK study for betamethasone, but the specific numeric parameter values (CL, V, Q) are not listed in the provided abstract text, only qualitative descriptions and a transplacental transfer ratio. |
+| `Schoenmakers_2025.pdf` | Schoenmakers S et al., Pharmacokinetics of betamethasone in pr…, British journal of clinical… (2025) | popPK | 10 | [10.1002/bcp.70035](https://doi.org/10.1002/bcp.70035) | [40083164](https://pubmed.ncbi.nlm.nih.gov/40083164) | The study reports a population PK model for betamethasone with specific numeric values for clearance (9.35 vs 15.78 L/h) and exposure (AUC) provided in the text. |
+| `Zhang_2025.pdf` | Zhang C et al., Across-Species Meta-Analysis of Betamet…, Biopharmaceutics & drug dis… (2025) | popPK | 10 | [10.1002/bdd.70017](https://doi.org/10.1002/bdd.70017) | [41250930](https://pubmed.ncbi.nlm.nih.gov/41250930) | The paper is a highly relevant PK study for betamethasone, but specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only contains summary statistics and model descriptions. |
 | `unknown_2025.pdf` | unknown, Population pharmacokinetics and pharmac…, BMJ open (2025) | popPK | 10 | [10.1136/bmjopen-2024-096523](https://doi.org/10.1136/bmjopen-2024-096523) | [40484425](https://pubmed.ncbi.nlm.nih.gov/40484425) | The paper is a protocol for a population PK study of betamethasone, but it contains no quantitative parameter values as the study has not yet been conducted. |
 | `Loo_1981.pdf` | Loo JC et al., Pharmacokinetic evaluation of betametha…, Biopharmaceutics & drug dis… (1981) | popPK | 9 | [10.1002/bdd.2510020307](https://doi.org/10.1002/bdd.2510020307) | [7295883](https://pubmed.ncbi.nlm.nih.gov/7295883) | The paper describes a human PK study of betamethasone using a one-compartment model, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided evidence text. |
 | `Samtani_2005.pdf` | Samtani MN et al., Betamethasone pharmacokinetics after tw…, Drug metabolism and disposi… (2005) | popPK | 9 | [10.1124/dmd.105.004309](https://doi.org/10.1124/dmd.105.004309) | [15860658](https://pubmed.ncbi.nlm.nih.gov/15860658) | The study is a relevant animal PK study for betamethasone, but only half-lives are provided in the text while specific clearance and volume parameters are not explicitly listed in the evidence. |
 | `Sullivan_2026.pdf` | Sullivan J et al., Pharmacokinetics and Anti-Inflammatory…, Journal of veterinary pharm… (2026) | popPK | 9 | [10.1111/jvp.70052](https://doi.org/10.1111/jvp.70052) | [41653445](https://pubmed.ncbi.nlm.nih.gov/41653445) | The study reports population PK parameters for betamethasone in horses, but specific clearance (CL) and volume (V) values are not explicitly listed in the provided text, only Cmax, Tmax, and half-life. |
 
-<sub>queue written 2026-09-11T21:47:00.303705+00:00</sub>
+<sub>queue written 2026-09-22T04:47:22.582943+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Foissac_2020 | relevant | 10 | 2 | The paper is a population PK study for betamethasone, but specific numeric parameter values (CL, V) are not listed in the provided text, only qualitative descriptions and a transplacental transfer ratio. |
+| popPK | Foissac_2020 | relevant | 10 | 2 | The paper is a population PK study for betamethasone, but the specific numeric parameter values (CL, V, Q) are not listed in the provided abstract text, only qualitative descriptions and a transplacental transfer ratio. |
 | popPK | Loo_1981 | relevant | 9 | 0 | The paper describes a human PK study of betamethasone using a one-compartment model, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided evidence text. |
 | popPK | Samtani_2005 | relevant | 9 | 2 | The study is a relevant animal PK study for betamethasone, but only half-lives are provided in the text while specific clearance and volume parameters are not explicitly listed in the evidence. |
-| popPK | Zhang_2025 | relevant | 10 | 2 | The paper is a highly relevant PK study for betamethasone, but specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, only model descriptions and a partition coefficient. |
+| popPK | Zhang_2025 | relevant | 10 | 2 | The paper is a highly relevant PK study for betamethasone, but specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only contains summary statistics and model descriptions. |
 | popPK | unknown_2025 | relevant | 10 | 0 | The paper is a protocol for a population PK study of betamethasone, but it contains no quantitative parameter values as the study has not yet been conducted. |
 
 ---

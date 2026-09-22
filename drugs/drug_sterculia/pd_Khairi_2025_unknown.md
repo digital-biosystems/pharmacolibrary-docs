@@ -3,7 +3,7 @@
 # Elastase inhibition — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Khairi_2025`
-- **model family:** `linear`
+- **model family:** `unknown`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
 - **effect:** inhibition/unknown

@@ -1,10 +1,10 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Hawtin_2023`
 - **model family:** `unknown`
-- **driver:** `not_resolved`
+- **driver:** `conc_no_pk`
 - **tier:** descriptive
 - **effect:** inhibition/unknown
 

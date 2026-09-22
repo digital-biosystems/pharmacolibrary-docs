@@ -1,10 +1,10 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# apoptosis — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# apoptosis — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Dimba_2004`
 - **model family:** `unknown`
-- **driver:** `conc_no_pk`
+- **driver:** `not_resolved`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
 

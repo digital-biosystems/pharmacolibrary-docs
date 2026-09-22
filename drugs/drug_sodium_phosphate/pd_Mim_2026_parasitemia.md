@@ -13,7 +13,22 @@ Mim SR; Vieira Santos V; Pereira LC; Pica K; Miranda ALLdS; Quadros HC; Moreira 
   ·  DOI: [10.1128/aac.01717-25](https://doi.org/10.1128/aac.01717-25)
 
 ## Parameters
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|
+| Baseline response, R0 — Estimate | `Q336` · not captured | 17.8 | not captured | not captured | llm_corrected (not captured) | T3:row1:col2 |
+| Degradation rate, Kout — Estimate | `Q328` · not captured | 0.08 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col2 |
+| Half-maximal inhibitory concentration, IC50 (MQ) — Estimate | `Q322` · not captured | 0.011 | MQ | not captured | llm_confirmed (not captured) | T3:row3:col2 |
+| Half-maximal inhibitory concentration, IC50 (MQ) — Relative SE (%) | `Q322` · not captured | 11.2 | MQ | not captured | llm_confirmed (not captured) | T3:row3:col3 |
+| Half-maximal inhibitory concentration, IC50 (MQ) — Bootstrap95% CI | `Q322` · not captured | 0.0086 | MQ | not captured | llm_confirmed (not captured) | T3:row3:col4 |
+| Half-maximal inhibitory concentration, IC50 (AS) — Estimate | `Q322` · not captured | 0.0044 | AS | not captured | llm_confirmed (not captured) | T3:row5:col2 |
+| Half-maximal inhibitory concentration, IC50 (AS) — Relative SE (%) | `Q322` · not captured | 4.62 | AS | not captured | llm_confirmed (not captured) | T3:row5:col3 |
+| Half-maximal inhibitory concentration, IC50 (AS) — Bootstrap95% CI | `Q322` · not captured | 0.0040 | AS | not captured | llm_confirmed (not captured) | T3:row5:col4 |
+| Constant error model — Estimate | `Q317` · not captured | 0.52 | not captured | not captured | llm_confirmed (not captured) | T3:row7:col2 |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 

@@ -21,7 +21,7 @@ In addition to the above, tocofersolan has been studied as a promising applicati
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-16 11:37 | 12:01 | 0/0/0 | 0/0/0 | 0/0/0 | 108,226/2,797 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 0/12 | 11/1 | 0 |
+| 2026-09-22 00:52 | 11:00 | 0/0/0 | 0/0/0 | 0/0/0 | 307,638/7,263 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 0/12 | 11/1 | 0 |
 
 ## popPK records
 
@@ -49,7 +49,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 31 matched, 48 returned
+- **PubMed hits:** 5 matched, 48 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -62,7 +62,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Cuerq_2018.pdf` | Cuerq C et al., Efficacy of two vitamin E formulations…, Journal of lipid research (2018) | popPK | 8 | [10.1194/jlr.m085043](https://doi.org/10.1194/jlr.m085043) | [30021760](https://pubmed.ncbi.nlm.nih.gov/30021760) | The study reports bioavailability percentages for tocofersolan but lacks explicit compartmental PK parameters (CL, V, ka) in the provided text. |
 
-<sub>queue written 2026-09-16T11:36:54.013063+00:00</sub>
+<sub>queue written 2026-09-22T00:52:10.928745+00:00</sub>
 
 ## Screened and excluded
 
@@ -89,8 +89,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Kumbhar_2021 | irrelevant | 0 | 0 | The study focuses on aripiprazole, not tocofersolan, and does not report PK parameters for the target drug. |
 | popPK | Li_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of S-HM-3 and paclitaxel, not tocofersolan. |
 | popPK | Liu_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of isoliquiritigenin (ISL), not tocofersolan. |
-| PD | Maji_2026 | not_relevant | 3 | 2 | The paper reports IC50 values for the drug (Ibrutinib) in the presence of the carrier (TPGS-liposomes), which is a formulation efficacy study, not a pharmacodynamic exposure-response or dose-response analysis of tocofersolan itself. |
-| popPK | Modi_2020 | irrelevant | 0 | 0 | The paper focuses on membrane materials for bioartificial kidneys and does not study tocofersolan or report any pharmacokinetic parameters for it. |
+| popPK | Maji_2026 | irrelevant | 0 | 0 | The study focuses on tocofersolan (TPGS) as a targeting ligand for Ibrutinib delivery, not as the subject drug for pharmacokinetic parameter estimation. |
+| PD | Maji_2026 | not_relevant | 3 | 2 | The paper reports IC50 values for the drug formulation, which are potency metrics, but does not provide a concentration-effect curve, Emax, or a PK/PD model linking exposure to response. |
+| popPK | Modi_2020 | irrelevant | 0 | 0 | The paper focuses on membrane materials for bioartificial kidneys and does not involve tocofersolan or report any pharmacokinetic parameters. |
 | popPK | Mugundhan_2025 | irrelevant | 0 | 0 | The study focuses on Axitinib nanomicelles and does not involve tocofersolan or report any pharmacokinetic parameters for it. |
 | popPK | Mustafa_2016 | irrelevant | 0 | 0 | The study focuses on kanamycin sulphate, not tocofersolan, and reports no PK parameters for the target drug. |
 | popPK | Mustafa_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Kanamycin Sulphate (KS) loaded in nanoparticles, not tocofersolan. |
@@ -110,12 +111,13 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Verma_2018 | irrelevant | 0 | 0 | The paper is an in-vitro study on hemodialysis membrane performance and does not report pharmacokinetic parameters for tocofersolan. |
 | popPK | Viswanadh_2021 | irrelevant | 0 | 0 | The study focuses on docetaxel-loaded nanoparticles and does not involve tocofersolan. |
 | popPK | Warsi_2014 | irrelevant | 0 | 0 | The study focuses on dorzolamide-loaded nanoparticles, not tocofersolan, and does not report PK parameters for the target drug. |
-| PD | Westergren_2010 | not_relevant | 2 | 1 | The paper is a review of dosage recommendations and qualitative bioavailability comparisons; it does not report a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., Emax, EC50) for tocofersolan. |
+| popPK | Westergren_2010 | irrelevant | 1 | 0 | The paper is a review of dosage and formulation issues that explicitly states there are few pharmacokinetic studies and no PK studies for tocofersolan in neonates, providing no quantitative PK parameters. |
+| PD | Westergren_2010 | not_relevant | 1 | 0 | The paper is a narrative review of dosage recommendations and bioavailability comparisons, containing no quantitative pharmacodynamic modeling, concentration-effect curves, or numeric PD parameters for tocofersolan. |
 | popPK | Yadav_2023 | irrelevant | 0 | 0 | The study focuses on Paclitaxel and Baicalein, not tocofersolan. |
 | popPK | Yadav_2023_2 | irrelevant | 0 | 0 | The study focuses on paclitaxel-loaded nanoemulsions and does not report pharmacokinetic parameters for tocofersolan. |
 | popPK | Yang_2021 | irrelevant | 0 | 0 | The study focuses on apremilast, not tocofersolan, and does not report PK parameters for the target drug. |
 | popPK | Zhang_2024 | irrelevant | 0 | 0 | The study focuses on chlorogenic acid (CGA) and its liposomal formulation, not tocofersolan. |
-| popPK | Zhao_2025 | irrelevant | 0 | 0 | The paper is a bioinformatics resource for drug detection in metabolomics and mentions tocofersolan only as an example of a false-positive analog to be filtered out, providing no pharmacokinetic parameters. |
+| popPK | Zhao_2025 | irrelevant | 0 | 0 | The paper is a bioinformatics resource for drug exposure detection via metabolomics and mentions tocofersolan only as an example of a false-positive analog to be filtered out, providing no pharmacokinetic parameters. |
 | PD | Zhao_2025 | not_relevant | 0 | 0 | The paper describes a metabolomics database for drug detection and does not report any pharmacodynamic or exposure-response analysis for tocofersolan. |
 | popPK | Zhen_2020 | irrelevant | 0 | 0 | The study focuses on 6-Gingerol, not tocofersolan, and does not report PK parameters for the target drug. |
 

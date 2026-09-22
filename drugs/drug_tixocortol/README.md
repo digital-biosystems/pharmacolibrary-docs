@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 23:55 | 2:35 | 0/0/0 | 0/0/0 | 0/0/0 | 10,459/1,028 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-22 06:17 | 1:21 | 0/0/0 | 0/0/0 | 0/0/0 | 13,783/1,174 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -48,9 +48,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Chanoine_1984.pdf` | Chanoine F et al., Comparative pharmacokinetic studies of…, Journal of steroid biochemi… (1984) | popPK | 10 | [10.1016/0022-4731(84)90311-x](https://doi.org/10.1016/0022-4731(84)90311-x) | [6492803](https://pubmed.ncbi.nlm.nih.gov/6492803) | The paper reports specific quantitative pharmacokinetic parameters (clearance and volume of distribution) for tixocortol pivalate in rats directly in the text. |
+| `Chanoine_1984.pdf` | Chanoine F et al., Comparative pharmacokinetic studies of…, Journal of steroid biochemi… (1984) | popPK | 10 | [10.1016/0022-4731(84)90311-x](https://doi.org/10.1016/0022-4731(84)90311-x) | [6492803](https://pubmed.ncbi.nlm.nih.gov/6492803) | The study reports quantitative pharmacokinetic parameters (clearance and volume of distribution) for tixocortol pivalate in rats, with specific numeric values provided in the text. |
 
-<sub>queue written 2026-09-11T23:55:20.051498+00:00</sub>
+<sub>queue written 2026-09-22T06:17:25.713921+00:00</sub>
 
 ## Screened and excluded
 
@@ -60,7 +60,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Ardizzone_1998 | not_relevant | 1 | 0 | The text is a general review of treatment guidelines for distal ulcerative colitis and mentions tixocortol only as a class of topically acting corticosteroids without providing any specific pharmacodynamic data, exposure-response analysis, or numeric parameters. |
 | PGx | Ardizzone_2002 | not_relevant | 0 | 0 | The paper is a general review of ulcerative colitis therapies and mentions tixocortol pivalate only in the context of adverse event profiles, without reporting any pharmacogenomic effects on its PK or PD parameters. |
 | popPK | Frankild_2001 | irrelevant | 0 | 0 | The paper describes a contact allergy study (GPMT) and does not report any pharmacokinetic parameters for tixocortol. |
-| PD | Frankild_2001 | not_relevant | 2 | 1 | The paper describes a qualitative dose-response trend in a contact allergy model (GPMT) but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve. |
+| PD | Frankild_2001 | not_relevant | 2 | 1 | The paper describes a qualitative dose-response relationship in a contact allergy model (GPMT) but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve. |
 | popPK | Isaksson_2000 | irrelevant | 0 | 0 | The paper is a patch-testing study investigating allergic cross-reactivity and dose-response relationships, not a pharmacokinetic study reporting disposition parameters. |
 | PD | Isaksson_2000 | not_relevant | 2 | 1 | The paper describes a qualitative dose-response pattern in patch testing (allergy) but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve for tixocortol. |
 | popPK | Karp_1988 | irrelevant | 0 | 0 | The text is a brief news summary of clinical trials for enemas and contains no pharmacokinetic data or quantitative disposition parameters for tixocortol. |

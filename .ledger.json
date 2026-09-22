@@ -1,5 +1,5 @@
 {
- "kb_mtime": 1790063590.0620248,
+ "kb_mtime": 1790064741.910931,
  "rows": [
   {
    "abstract_only": 83,
@@ -28285,27 +28285,27 @@
    "tokens_out": 5348
   },
   {
-   "abstract_only": 33,
+   "abstract_only": 36,
    "backend": "ollama",
-   "calls": 58,
+   "calls": 144,
    "combination": null,
    "curated_models": 0,
    "drug": "imeglimin",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 1094.9,
+   "elapsed_s": 760.6,
    "eu_status": "not_centrally_authorised",
-   "grobid": 1,
+   "grobid": 2,
    "has_truth": false,
    "interactions": 0,
    "jats": 12,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 33,
+   "no_pdf": 36,
    "non_oa": 0,
-   "oa": 13,
+   "oa": 14,
    "panel": "dg-A10B-3",
-   "papers": 46,
+   "papers": 50,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -28322,14 +28322,14 @@
    "poppk_extracted": 0,
    "poppk_other": 0,
    "poppk_rejected": 0,
-   "relevant": 4,
+   "relevant": 5,
    "reused_cache": false,
    "review_papers": 0,
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 15,
-   "tokens_in": 122068,
-   "tokens_out": 10292
+   "tokens_in": 346470,
+   "tokens_out": 7845
   },
   {
    "abstract_only": 25,
@@ -28367,12 +28367,12 @@
    "pk_gapfill": 0,
    "pk_review_models": 0,
    "poppk_extracted": 0,
-   "poppk_other": 0,
+   "poppk_other": 1,
    "poppk_rejected": 0,
    "relevant": 13,
    "reused_cache": false,
-   "review_papers": 0,
-   "review_records": 0,
+   "review_papers": 2,
+   "review_records": 30,
    "src_pd_grobid": 7,
    "supp_nonmem": 1,
    "supp_other": 7,
@@ -28909,20 +28909,20 @@
    "tokens_out": null
   },
   {
-   "abstract_only": 350,
-   "calls": 866,
+   "abstract_only": 353,
+   "calls": 952,
    "drug": "TOTAL",
    "drugs": 16,
-   "elapsed_s": 5290.8,
-   "grobid": 38,
+   "elapsed_s": 4956.5,
+   "grobid": 39,
    "interactions": 0,
    "is_total": true,
    "jats": 103,
-   "no_pdf": 344,
+   "no_pdf": 347,
    "non_oa": 7,
-   "oa": 140,
+   "oa": 141,
    "panel": "dg-A10B-3",
-   "papers": 491,
+   "papers": 495,
    "pd_extracted": 39,
    "pd_gapfill": 1,
    "pd_other": 0,
@@ -28937,15 +28937,15 @@
    "pk_gapfill": 23,
    "pk_review_models": 13,
    "poppk_extracted": 24,
-   "poppk_other": 4,
+   "poppk_other": 5,
    "poppk_rejected": 12,
-   "relevant": 109,
-   "review_papers": 44,
-   "review_records": 880,
+   "relevant": 110,
+   "review_papers": 46,
+   "review_records": 910,
    "supp_nonmem": 7,
    "supp_other": 59,
-   "tokens_in": 1235223,
-   "tokens_out": 71101
+   "tokens_in": 1459625,
+   "tokens_out": 68654
   },
   {
    "abstract_only": 1,
@@ -64403,7 +64403,7 @@
    "tokens_out": null
   }
  ],
- "run_mtime": 1790063899.3149998,
+ "run_mtime": 1790064756.72293,
  "runs": {
   "clopidogrel": {
    "attempts": 1,
@@ -73628,7 +73628,7 @@
    "journal": "Clinical and translational science 15(4):1014\u20131026",
    "pmid": "34962074",
    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34962074",
-   "reason": "The paper is a population PK study for imeglimin, but the provided evidence contains only the abstract and qualitative descriptions, with no specific numeric parameter values (CL, V, etc.) present.",
+   "reason": "The paper is a population PK study for imeglimin, but the provided evidence contains only the abstract and qualitative descriptions without specific numeric parameter values (CL, V, etc.).",
    "relevance_score": 10,
    "slug": "imeglimin",
    "stem": "Tomita_2022",
@@ -73737,31 +73737,15 @@
    "doi_url": "https://doi.org/10.1111/bcp.13972",
    "domain": "poppk",
    "drug": "ipragliflozin",
-   "journal": "British journal of clinical pharmacology",
+   "journal": "British journal of clinical pharmacology 85(8):1808\u20131819",
    "pmid": "31026084",
    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31026084",
-   "reason": "The title confirms a PK/PD modeling study for ipragliflozin, but the provided evidence contains only the title and no numeric parameter values.",
+   "reason": "The paper reports a population PK model for ipragliflozin with a specific numeric value for oral clearance (9.47 L/h) and describes a 2-compartment model, though other parameters like volume and half-life are not explicitly listed in the provided text.",
    "relevance_score": 10,
    "slug": "ipragliflozin",
    "stem": "Saito_2019",
    "title": "Pharmacokinetic and pharmacodynamic modelling for renal function dependent urinary glucose excretion effect of ipragliflozin, a selective sodium-glucose cotransporter 2 inhibitor, both in healthy subjects and patients with type 2 diabetes mellitus",
    "year": "2019"
-  },
-  {
-   "authors": "Toyoshima J; Saito M; Kaibara A; Isaka H; Sakatani T",
-   "doi": "10.1016/j.clinthera.2020.07.009",
-   "doi_url": "https://doi.org/10.1016/j.clinthera.2020.07.009",
-   "domain": "poppk",
-   "drug": "ipragliflozin",
-   "journal": "Clinical therapeutics",
-   "pmid": "32839028",
-   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32839028",
-   "reason": "The title confirms a PK study of ipragliflozin, but the provided evidence contains only the title and no numeric parameter values.",
-   "relevance_score": 10,
-   "slug": "ipragliflozin",
-   "stem": "Toyoshima_2020",
-   "title": "Comparison of the Pharmacokinetic and Pharmacodynamic Relationship of Ipragliflozin Between Patients With Type 1 and Type 2 Diabetes Mellitus",
-   "year": "2020"
   },
   {
    "authors": "Platzer R; Reutemann G; Galeazzi RL",
@@ -89979,6 +89963,22 @@
    "stem": "Nelson_1976",
    "title": "Pharmacokinetics of divided-dose ifosfamide",
    "year": "1976"
+  },
+  {
+   "authors": "Chevalier C; Dubourg J; Bolze S; Fouqueray P",
+   "doi": "10.1007/s40262-020-00948-1",
+   "doi_url": "https://doi.org/10.1007/s40262-020-00948-1",
+   "domain": "poppk",
+   "drug": "imeglimin",
+   "journal": "Clinical pharmacokinetics 60(4):485\u2013490",
+   "pmid": "33169345",
+   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33169345",
+   "reason": "The study reports PK parameters for imeglimin, but the evidence only provides relative fold-changes (Cmax/AUC ratios) rather than absolute quantitative disposition parameters like clearance or volume.",
+   "relevance_score": 8,
+   "slug": "imeglimin",
+   "stem": "Chevalier_2021",
+   "title": "Pharmacokinetics of Imeglimin in Subjects with Moderate Hepatic Impairment",
+   "year": "2021"
   },
   {
    "authors": "Kitamura A; Yumizaki T; Kondo T; Sekino H; Kakuyama H",
@@ -159523,6 +159523,6 @@
  ],
  "wanted_stamp": [
   721,
-  1790063813.8710067
+  1790064718.526933
  ]
 }

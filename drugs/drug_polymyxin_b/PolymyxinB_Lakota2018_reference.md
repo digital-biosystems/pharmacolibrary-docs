@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;polymyxin B&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/&quot;},{&quot;label&quot;:&quot;Lakota_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PolymyxinB_Chauzy2022_reference&quot;,&quot;label&quot;:&quot;Chauzy_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Chauzy2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Lakota2018_reference&quot;,&quot;label&quot;:&quot;Lakota_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Lakota2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PolymyxinB_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Li2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Manchandani2018_reference&quot;,&quot;label&quot;:&quot;Manchandani_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Manchandani2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Chauzy2022_reference&quot;,&quot;label&quot;:&quot;Chauzy_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Chauzy2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Lakota2018_reference&quot;,&quot;label&quot;:&quot;Lakota_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Lakota2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -13,13 +13,15 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** clearance is outside the plausible magnitude window.
+**What is wrong:** a structural parameter has the wrong dimension; clearance is outside the plausible magnitude window.
 
 **Steps:**
 1. Not a curation fix — reviewer_tooling limitation.
-2. Check the parameter's unit_verbatim — an unconverted per-kg or per-hour unit is the usual cause, not a genuinely extreme value.
-3. Confirm value_si against the paper's reported number.
-4. A 'ratio None' means the check could not compute a ratio, so treat the window as unverified rather than as a failure of the value.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
+4. Check the parameter's unit_verbatim — an unconverted per-kg or per-hour unit is the usual cause, not a genuinely extreme value.
+5. Confirm value_si against the paper's reported number.
+6. A 'ratio None' means the check could not compute a ratio, so treat the window as unverified rather than as a failure of the value.
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
@@ -28,7 +30,7 @@ Lakota EA; Landersdorfer CB; Nation RL; Li J; Kaye KS; Rao GG; et al. et al. (20
   ·  DOI: [10.1128/AAC.00483-18](https://doi.org/10.1128/AAC.00483-18)
 
 ## Model component
-<dbs-pgx drug="polymyxin B" model-id="PolymyxinB_Lakota2018_reference" status="needs_review" stale="false" population="patients with multidrug-resistant Gram-negative bacterial infections" measured-compound="polymyxin B" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="polymyxin B" model-id="PolymyxinB_Lakota2018_reference" status="needs_review" stale="false" population="adults with multidrug-resistant Gram-negative bacterial infections" measured-compound="polymyxin_b" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -68,7 +70,7 @@ Lakota EA; Landersdorfer CB; Nation RL; Li J; Kaye KS; Rao GG; et al. et al. (20
 - dropped unlinked row (NIL): 'Cystic fibrosis patients' — extend the ontology if this is a real PK parameter (source ['T2:row19:col1', 'T2:row19:col2', 'T2:row19:col3', 'T2:row19:col4'])
 - table mostly unlinked (16/16 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - salvaged Q22 ('ssAUC0–24 that resulted in rates of mild nephrotoxicity (≤25% decreases in creatinine clearance [CLCR]) in ≤40% of subjects'=100) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=polymyxin B
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=polymyxin_b
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -85,6 +87,8 @@ Lakota EA; Landersdorfer CB; Nation RL; Li J; Kaye KS; Rao GG; et al. et al. (20
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | mg · h/liter | not captured | not captured | ['Lakota_2018:other_prose'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 100.0 | not captured | not captured | ['Lakota_2018:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 

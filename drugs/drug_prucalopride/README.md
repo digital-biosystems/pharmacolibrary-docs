@@ -32,7 +32,7 @@ CIC is one of the most common chronic functional gastrointestinal disorders worl
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 12:39 | 5:36 | 0/3/0 | 1/0/0 | 0/0/0 | 54,729/1,709 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/1 | 2/0 | 0 |
+| 2026-09-21 22:21 | 2:33 | 0/3/0 | 1/0/0 | 0/0/0 | 53,547/2,944 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
@@ -50,6 +50,7 @@ CIC is one of the most common chronic functional gastrointestinal disorders worl
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Broad_2013](drugs/drug_prucalopride/pd_Broad_2013_AUC.md) | Broad J et al., Cholinergic interactions between donepe…, British journal of pharmaco… (2013) | [10.1111/bph.12397](https://doi.org/10.1111/bph.12397) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Broad_2013](drugs/drug_prucalopride/pd_Broad_2013_cholinergically_mediated_contractions.md) | Broad J et al., Cholinergic interactions between donepe…, British journal of pharmaco… (2013) | [10.1111/bph.12397](https://doi.org/10.1111/bph.12397) |
 
 ## ADME sites
 
@@ -86,23 +87,23 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Zhou_2020.pdf` | Zhou Z et al., Pharmacokinetics, Bioequivalence, and S…, Clinical pharmacology in dr… (2020) | popPK | 8 | [10.1002/cpdd.754](https://doi.org/10.1002/cpdd.754) | [31797570](https://pubmed.ncbi.nlm.nih.gov/31797570) | The study is a PK/bioequivalence trial for prucalopride, but the evidence only provides bioequivalence confidence intervals and model description, lacking specific numeric values for CL, V, or t1/2. |
 | `Broad_2014.pdf` | Broad J et al., Drugs acting at 5-HT4 , D2 , motilin, a…, Neurogastroenterology and m… (2014) | pd | 4 | [10.1111/nmo.12338](https://doi.org/10.1111/nmo.12338) | [24750304](https://www.ncbi.nlm.nih.gov/pubmed/24750304) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-09-11T12:36:16.872366+00:00</sub>
+<sub>queue written 2026-09-21T22:20:10.297349+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Broad_2013 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study on human colon tissue examining cholinergic interactions, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Broad_2014 | irrelevant | 0 | 0 | The paper focuses on neuromuscular functions in isolated stomach tissue and does not report pharmacokinetic parameters for prucalopride. |
+| popPK | Broad_2013 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of prucalopride's effect on human colon contractions, reporting efficacy parameters (EC50, Emax) rather than pharmacokinetic disposition parameters (CL, V, ka). |
+| popPK | Broad_2014 | irrelevant | 0 | 0 | no_text gate: only 144 chars of text extracted (&lt; 400) |
 | PD | Broad_2014 | not_relevant | 0 | 0 | The paper investigates neuromuscular functions in isolated stomachs using various receptor agonists but does not report pharmacokinetic or pharmacodynamic data for prucalopride. |
-| popPK | De_2006 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor agonism, not a pharmacokinetic study, and reports no disposition parameters for prucalopride. |
+| popPK | De_2006 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor agonism in tissue strips, not a pharmacokinetic study reporting disposition parameters for prucalopride. |
 | popPK | Kim_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ion channels where prucalopride is used only as a comparator agent, with no pharmacokinetic parameters reported. |
 | PD | Kim_2016 | not_relevant | 0 | 0 | The paper reports PD parameters (IC50, Hill coefficient) for cisapride, but explicitly states that prucalopride did not affect the basal Kv current, providing no numeric PD relationship for prucalopride. |
-| popPK | LePard_2004 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiological study investigating synaptic transmission mechanisms, not a pharmacokinetic study, and contains no disposition parameters for prucalopride. |
+| popPK | LePard_2004 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiological study investigating receptor mechanisms in guinea pig ileum, not a pharmacokinetic study, and contains no disposition parameters for prucalopride. |
 | PD | LePard_2004 | not_relevant | 3 | 2 | The paper reports a single-point effect (30-33% potentiation) for prucalopride without providing a concentration-response curve, EC50, or other numeric PD parameters. |
 | popPK | Lefebvre_2010 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of prucalopride's effect on acetylcholine release and does not report pharmacokinetic parameters. |
 | PD | Lefebvre_2010 | not_relevant | 4 | 2 | The paper reports qualitative maintenance of prucalopride's effect in endometriosis but does not provide numeric PD parameters (EC50/Emax) for prucalopride itself, only for carbachol. |
-| PGx | Manabe_2010 | not_relevant | 0 | 0 | The paper is a review of 5-HT4 agonists focusing on safety and efficacy, with no mention of pharmacogenomics or gene variants affecting prucalopride PK/PD. |
+| PGx | Manabe_2010 | not_relevant | 0 | 0 | The paper is a review of 5-HT4 receptor agonists and does not report any pharmacogenomic effects on prucalopride PK or PD parameters. |
 | PGx | Mearin_2012 | not_relevant | 0 | 0 | The paper is a general summary of a gastroenterology congress and mentions prucalopride only in the context of safety and efficacy for constipation, without reporting any pharmacogenomic effects on PK or PD parameters. |
 | popPK | Zhou_2020 | relevant | 8 | 2 | The study is a PK/bioequivalence trial for prucalopride, but the evidence only provides bioequivalence confidence intervals and model description, lacking specific numeric values for CL, V, or t1/2. |
 

@@ -13,7 +13,21 @@ Khan AS; Hichami A; Murtaza B; Louillat-Habermeyer ML; Ramseyer C; Azadi M; Yesy
   ·  DOI: [10.1016/j.jcmgh.2022.11.003](https://doi.org/10.1016/j.jcmgh.2022.11.003)
 
 ## Parameters
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|
+| Clearance (L/h) — Estimation mean | `Q22` · not captured | 0.202 | L/h | not captured | exact (not captured) | tbl17:row1:col1 |
+| Clearance (L/h) — Interindividual variability (coefficient of variation, %) | `Q22` · not captured | 44.1 | L/h | not captured | exact (not captured) | tbl17:row1:col2 |
+| Volume of central compartment (L) — Estimation mean | `Q63` · not captured | 0.0634 | L | not captured | llm_corrected (not captured) | tbl17:row2:col1 |
+| Intercompartmental clearance (L/h) — Estimation mean | `Q30` · not captured | 0.739 | L/h | not captured | exact (not captured) | tbl17:row3:col1 |
+| Intercompartmental clearance (L/h) — Interindividual variability (coefficient of variation, %) | `Q30` · not captured | 66.7 | L/h | not captured | exact (not captured) | tbl17:row3:col2 |
+| Volume of peripheral compartment (L) — Estimation mean | `Q64` · not captured | 2.24 | L | not captured | llm_corrected (not captured) | tbl17:row4:col1 |
+| Volume of peripheral compartment (L) — Interindividual variability (coefficient of variation, %) | `Q64` · not captured | 24.8 | L | not captured | llm_corrected (not captured) | tbl17:row4:col2 |
+| Proportional residual error (%) — Estimation mean | `Q316` · not captured | 1.89 | not captured | not captured | exact (not captured) | tbl17:row5:col1 |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 

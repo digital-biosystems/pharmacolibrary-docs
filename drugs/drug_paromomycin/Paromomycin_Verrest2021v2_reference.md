@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;paromomycin&quot;,&quot;href&quot;:&quot;drugs/drug_paromomycin/&quot;},{&quot;label&quot;:&quot;Verrest_2021_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paromomycin_Verrest2023_estimate&quot;,&quot;label&quot;:&quot;Verrest_2023_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_paromomycin/Paromomycin_Verrest2023_estimate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paromomycin_Verrest2023_estimate&quot;,&quot;label&quot;:&quot;Verrest_2023_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_paromomycin/Paromomycin_Verrest2023_estimate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paromomycin_Verrest2021v2_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_paromomycin/Paromomycin_Verrest2021v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Paromomycin_Verrest2023_shrinkage&quot;,&quot;label&quot;:&quot;Verrest_2023_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_paromomycin/Paromomycin_Verrest2023_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paromomycin_Verrest2023_shrinkage&quot;,&quot;label&quot;:&quot;Verrest_2023_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_paromomycin/Paromomycin_Verrest2023_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paromomycin_Lentzen1981_reference&quot;,&quot;label&quot;:&quot;Lentzen_1981_reference&quot;,&quot;href&quot;:&quot;drugs/drug_paromomycin/Paromomycin_Lentzen1981_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paromomycin_Verrest2021v2_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_paromomycin/Paromomycin_Verrest2021v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Paromomycin_Verrest2023_reference&quot;,&quot;label&quot;:&quot;Verrest_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_paromomycin/Paromomycin_Verrest2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # paromomycin — `Paromomycin_Verrest2021v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
@@ -26,14 +26,21 @@ Verrest L; Wasunna M; Kokwaro G; Aman R; Musa AM; Khalil EAG; et al. et al. (202
   ·  DOI: [10.1007/s40262-021-01036-8](https://doi.org/10.1007/s40262-021-01036-8)
 
 ## Model component
-<dbs-pgx drug="paromomycin" model-id="Paromomycin_Verrest2021v2_reference" status="rejected" stale="false" population="visceral leishmaniasis patients" measured-compound="paromomycin" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+<dbs-pgx drug="paromomycin" model-id="Paromomycin_Verrest2021v2_reference" status="needs_review" stale="false" population="visceral leishmaniasis patients" measured-compound="paromomycin" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| the volume of distribution was | `Q61` · V | 0.998 | liters/kg | 0.06985999999999999 | L | not captured | review_gapfill (0.7) | Seifert_2006:review | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
@@ -63,6 +70,7 @@ _No resolved parameters._
 - control_stream ADVAN13: topology=manual_model_class, parameterization=mechanistic (clearance)
 - theta_crosscheck: table present but its labels did not align to bound THETAs (skipped)
 - status held at route_to_review — not promoted
+- gap-filled Q61 (V) from Seifert_2006's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is MANUAL_MODEL_CLASS (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is MANUAL_MODEL_CLASS (peripheral family needs ≥2C)
 
@@ -72,9 +80,12 @@ _No resolved parameters._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Seifert_2006:review'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q61 | pass | volume within physiological range | 69.9 L | not captured | not captured | ['Seifert_2006:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

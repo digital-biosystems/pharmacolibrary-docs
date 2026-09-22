@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;kanamycin&quot;,&quot;href&quot;:&quot;drugs/drug_kanamycin/&quot;},{&quot;label&quot;:&quot;Dijkstra_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Kanamycin_Dijkstra2015_reference&quot;,&quot;label&quot;:&quot;Dijkstra_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_kanamycin/Kanamycin_Dijkstra2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Kanamycin_Strydom2019v2_reference&quot;,&quot;label&quot;:&quot;Strydom_2019_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Kanamycin_Chang2017v2_reference&quot;,&quot;label&quot;:&quot;Chang_2017_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_kanamycin/Kanamycin_Chang2017v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Kanamycin_Dijkstra2015_reference&quot;,&quot;label&quot;:&quot;Dijkstra_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_kanamycin/Kanamycin_Dijkstra2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Kanamycin_Strydom2019v2_reference&quot;,&quot;label&quot;:&quot;Strydom_2019_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -52,6 +52,7 @@ Dijkstra JA; van Altena R; Akkerman OW; de Lange WC; Proost JH; van der Werf TS;
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dijkstra_2015:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dijkstra_2015:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.62 | not captured | not captured | ['Dijkstra_2015:review'] |
@@ -63,6 +64,7 @@ Dijkstra JA; van Altena R; Akkerman OW; de Lange WC; Proost JH; van der Werf TS;
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=kanamycin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |

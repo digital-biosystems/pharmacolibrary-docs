@@ -60,6 +60,7 @@ van Schaick E; Benninga MA; Levine A; Magnusson M; Troy S et al. (2016). Pharmac
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - population split: 'spd555‐303' subgroup of van_2016 (paper reports 3 populations: estimate, pru‐usa‐12, spd555‐303)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - companion parameter table 4 transcribed (29 record(s))
@@ -73,10 +74,12 @@ van Schaick E; Benninga MA; Levine A; Magnusson M; Troy S et al. (2016). Pharmac
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['van_2016_table_4:row2:col4', 'van_2016_table_4:row2:col5', 'van_2016_table_4:row2:col6'] |
 | C5_dimension_Q34 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['van_2016_table_4:row5:col4', 'van_2016_table_4:row5:col5', 'van_2016_table_4:row5:col6'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['van_2016_table_4:row3:col4', 'van_2016_table_4:row3:col5', 'van_2016_table_4:row3:col6'] |
 | C5_dimension_Q86 | fail | [mass] / [length] ** 3 | ng mL−1 | not captured | not captured | ['van_2016_table_4:row6:col4', 'van_2016_table_4:row6:col5', 'van_2016_table_4:row6:col6'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | ng mL−1 h | not captured | not captured | ['van_2016_table_4:row4:col4', 'van_2016_table_4:row4:col5', 'van_2016_table_4:row4:col6'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 11.7 | not captured | not captured | ['van_2016_table_4:row2:col4', 'van_2016_table_4:row2:col5', 'van_2016_table_4:row2:col6'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 11.7 L/h | not captured | not captured | ['van_2016_table_4:row2:col4', 'van_2016_table_4:row2:col5', 'van_2016_table_4:row2:col6'] |

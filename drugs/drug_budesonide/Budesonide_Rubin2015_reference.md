@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;budesonide&quot;,&quot;href&quot;:&quot;drugs/drug_budesonide/&quot;},{&quot;label&quot;:&quot;Rubin_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Budesonide_Lnnebo2007_reference&quot;,&quot;label&quot;:&quot;L\u00f6nnebo_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_budesonide/Budesonide_Lnnebo2007_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Budesonide_Rubin2015_reference&quot;,&quot;label&quot;:&quot;Rubin_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_budesonide/Budesonide_Rubin2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Budesonide_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_budesonide/Budesonide_Back2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Budesonide_Lnnebo2007_reference&quot;,&quot;label&quot;:&quot;L\u00f6nnebo_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_budesonide/Budesonide_Lnnebo2007_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Budesonide_Rubin2015_reference&quot;,&quot;label&quot;:&quot;Rubin_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_budesonide/Budesonide_Rubin2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Budesonide_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_budesonide/Budesonide_Back2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -13,15 +13,12 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the simulated model does not reproduce a value the paper reports; the engineer's deviations are not documented and quantified. Evidence: T1_cmax — expected 5.699999999999999e-07 — got 2.119841615230656e-05 — ratio 37.1902; T6_deviations — got invented_absorption: not acceptable.
+**What is wrong:** a structural parameter has the wrong dimension.
 
 **Steps:**
 1. Not a curation fix — scholar limitation.
-2. Open the paper's reported table and confirm the target value and its units.
-3. Compare with the transcribed value in _transcribev2.yaml for this stem.
-4. If the transcription is right, the extracted parameters are suspect — check CL and volume in _interpretv2.yaml against the paper.
-5. If the transcription is wrong, fix the extraction; the model rebuild follows.
-6. Read the .deviation.json and confirm each deviation names what changed and why.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
@@ -52,12 +49,6 @@ Rubin DT; Sandborn WJ; Bosworth B; Zakko S; Gordon GL; Sale ME; et al. et al. (2
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['ka']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Parameter, mean (CV)' — extend the ontology if this is a real PK parameter (source ['Tab4:row0:col1'])
 - unit_dimension_unknown: 'ng h/mL' (AUC)
@@ -78,26 +69,16 @@ Rubin DT; Sandborn WJ; Bosworth B; Zakko S; Gordon GL; Sale ME; et al. et al. (2
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row1:col1'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab4:row5:col1'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row2:col1'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tab4:row3:col1'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | ng h/mL | not captured | not captured | ['Tab4:row4:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 464 L/h | not captured | not captured | ['Tab4:row1:col1'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 2.7e+03 L | not captured | not captured | ['Tab4:row2:col1'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=budesonide) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | fail | 5.699999999999999e-07 | 2.119841615230656e-05 | 37.1902 | ng/mL→SI vs simulated kg/m3 |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -107,9 +88,6 @@ Rubin DT; Sandborn WJ; Bosworth B; Zakko S; Gordon GL; Sale ME; et al. et al. (2
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_budesonide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Rubin_2015` / `Rubin_2015::reference`)
-- model: `../../../knowledgebase/drugs/drug_budesonide/models/modelica/Budesonide_Rubin2015_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_budesonide/models/modelica/Budesonide_Rubin2015_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_budesonide/models/modelica/Budesonide_Rubin2015_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -119,21 +97,18 @@ Rubin DT; Sandborn WJ; Bosworth B; Zakko S; Gordon GL; Sale ME; et al. et al. (2
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_budesonide/Budesonide_Rubin2015_reference/Budesonide_Rubin2015_reference_modelica.zip" download>Budesonide_Rubin2015_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_budesonide/Budesonide_Rubin2015_reference/Budesonide_Rubin2015_reference_fmi.zip" download>Budesonide_Rubin2015_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_budesonide/Budesonide_Rubin2015_reference/Budesonide_Rubin2015_reference_fmi.zip" download>Budesonide_Rubin2015_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_budesonide/Budesonide_Rubin2015_reference/Budesonide_Rubin2015_reference_matlab.zip" download>Budesonide_Rubin2015_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_budesonide/Budesonide_Rubin2015_reference/Budesonide_Rubin2015_reference_matlab_simbio.zip" download>Budesonide_Rubin2015_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_budesonide/Budesonide_Rubin2015_reference/Budesonide_Rubin2015_reference_sbml.zip" download>Budesonide_Rubin2015_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_budesonide/Budesonide_Rubin2015_reference/Budesonide_Rubin2015_reference_cellml.zip" download>Budesonide_Rubin2015_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_budesonide/Budesonide_Rubin2015_reference/Budesonide_Rubin2015_reference.svg" alt="Budesonide_Rubin2015_reference diagram"><figcaption>The structure OpenModelica draws for this model, with this record's parameter values in the component labels.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_budesonide/Budesonide_Rubin2015_reference/Budesonide_Rubin2015_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_budesonide/Budesonide_Rubin2015_reference/Budesonide_Rubin2015_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Budesonide_Rubin2015_reference_params.json` · controls `Budesonide_Rubin2015_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

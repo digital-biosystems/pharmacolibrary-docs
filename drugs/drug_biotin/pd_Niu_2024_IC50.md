@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Biotin_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_biotin/Biotin_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Biotin_Wang2001_reference&quot;,&quot;label&quot;:&quot;Wang_2001_reference&quot;,&quot;href&quot;:&quot;drugs/drug_biotin/Biotin_Wang2001_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Biotin_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_biotin/Biotin_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Cytotoxicity — PD  <span class="pk-badge pk-badge--green">extracted</span>

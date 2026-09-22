@@ -1,9 +1,9 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# PXR activation — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# PXR reporter activity — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Nilles_2023`
-- **model family:** `unknown`
+- **model family:** `emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
 - **effect:** stimulation/unknown

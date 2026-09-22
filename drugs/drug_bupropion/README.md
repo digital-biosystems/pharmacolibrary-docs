@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;bupropion&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bupropion_Butz1981_beagle_dogs&quot;,&quot;label&quot;:&quot;Butz_1981_beagle dogs&quot;,&quot;href&quot;:&quot;drugs/drug_bupropion/Bupropion_Butz1981_beagle_dogs.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bupropion_Butz1981_reference&quot;,&quot;label&quot;:&quot;Butz_1981_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bupropion/Bupropion_Butz1981_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # bupropion
 
@@ -26,13 +26,13 @@ Bupropion is also used off-label as a first-line treatment in patients with ADHD
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 23:58 | 0:09 | 0/0/0 | 0/0/0 | 0/0/0 | 3,079/268 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/0 | 3/0 | 0 |
+| 2026-09-22 06:32 | 0:12 | 0/1/0 | 0/0/0 | 0/0/0 | 3,792/287 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/0 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Butz_1981_beagle dogs](drugs/drug_bupropion/Bupropion_Butz1981_beagle_dogs.md) | Butz RF et al., Radioimmunoassay and pharmacokinetic pr…, The Journal of pharmacology… (1981) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Butz_1981_reference](drugs/drug_bupropion/Bupropion_Butz1981_reference.md) | Butz RF et al., Radioimmunoassay and pharmacokinetic pr…, The Journal of pharmacology… (1981) | — |
 
 ## ADME sites
 
@@ -64,10 +64,10 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Butz_1981.pdf` | Butz RF et al., Radioimmunoassay and pharmacokinetic pr…, The Journal of pharmacology… (1981) | popPK | 9 | not captured | [6785419](https://pubmed.ncbi.nlm.nih.gov/6785419) | The study reports quantitative PK parameters (half-life, bioavailability, peak levels) for bupropion in dogs, but specific clearance and volume values are not explicitly listed in the text. |
+| `Butz_1981.pdf` | Butz RF et al., Radioimmunoassay and pharmacokinetic pr…, The Journal of pharmacology… (1981) | popPK | 9 | not captured | [6785419](https://pubmed.ncbi.nlm.nih.gov/6785419) | The study reports quantitative PK parameters (half-life, bioavailability, Cmax) for bupropion in dogs, but specific clearance and volume values are not explicitly listed in the text. |
 | `Wang_2006.pdf` | Wang JS et al., Population pharmacokinetic analysis of…, Psychopharmacology (2006) | popPK | 8 | [10.1007/s00213-005-0209-y](https://doi.org/10.1007/s00213-005-0209-y) | [16283256](https://pubmed.ncbi.nlm.nih.gov/16283256) | The study is a population PK analysis in mice involving bupropion, but the provided evidence only contains qualitative interaction results (fold-changes in AUC) and lacks specific numeric PK parameter values (CL, V, ka) for bupropion. |
 
-<sub>queue written 2026-09-11T23:58:33.995078+00:00</sub>
+<sub>queue written 2026-09-22T06:32:05.697421+00:00</sub>
 
 ## Screened and excluded
 

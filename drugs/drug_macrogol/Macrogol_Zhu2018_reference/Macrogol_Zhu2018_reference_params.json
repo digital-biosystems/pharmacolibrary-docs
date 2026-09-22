@@ -1,0 +1,26 @@
+{
+ "model_id": "Macrogol_Zhu2018_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.411111111111111e-05,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00068,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.00012605042016806722,
+  "k21": 1.06951871657754e-05,
+  "ka": 0.00013444444444444444,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 8.228081641077844e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

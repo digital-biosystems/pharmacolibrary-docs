@@ -36,7 +36,7 @@ _No resolved parameters._
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pantothenate
-- refused review gap-fill of the disposition families: this record measures 'pantothenate', not pantethine, and reports no metabolite CL/V — a parent value cannot stand in for the analyte
+- review gap-fill skipped: this record measures 'pantothenate', not pantethine — the review values are the parent's
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery

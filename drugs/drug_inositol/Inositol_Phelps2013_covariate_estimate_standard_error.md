@@ -1,33 +1,32 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11H&quot;,&quot;href&quot;:&quot;atc/A11H.md&quot;},{&quot;label&quot;:&quot;inositol&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/&quot;},{&quot;label&quot;:&quot;Phelps_2013 \u00b7 covariate_estimate_standard_error&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Inositol_Phelps2013_covariate_estimate_standard_error&quot;,&quot;label&quot;:&quot;Phelps_2013_covariate_estimate_standard_error&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_covariate_estimate_standard_error.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Inositol_Phelps2013_covariate_estimate_standard_error&quot;,&quot;label&quot;:&quot;Phelps_2013_covariate_estimate_standard_error&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_covariate_estimate_standard_error.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Inositol_Phelps2013_estimate&quot;,&quot;label&quot;:&quot;Phelps_2013_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_estimate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_estimate&quot;,&quot;label&quot;:&quot;Phelps_2013_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_estimate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_2_loglikelihood_p_value_e&quot;,&quot;label&quot;:&quot;Phelps_2013_2_loglikelihood_p_value_e&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_2_loglikelihood_p_value_e.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_2_loglikelihood_p_value_e&quot;,&quot;label&quot;:&quot;Phelps_2013_2_loglikelihood_p_value_e&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_2_loglikelihood_p_value_e.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_parametername_a&quot;,&quot;label&quot;:&quot;Phelps_2013_parametername_a&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_parametername_a.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_parametername_a&quot;,&quot;label&quot;:&quot;Phelps_2013_parametername_a&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_parametername_a.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_standard_error&quot;,&quot;label&quot;:&quot;Phelps_2013_standard_error&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_standard_error.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_standard_error&quot;,&quot;label&quot;:&quot;Phelps_2013_standard_error&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_standard_error.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Inositol_Phelps2013_covariate_estimate_standard_error&quot;,&quot;label&quot;:&quot;Phelps_2013_covariate_estimate_standard_error&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_covariate_estimate_standard_error.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Inositol_Phelps2013_covariate_estimate_standard_error&quot;,&quot;label&quot;:&quot;Phelps_2013_covariate_estimate_standard_error&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_covariate_estimate_standard_error.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Inositol_Phelps2013_estimate&quot;,&quot;label&quot;:&quot;Phelps_2013_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Inositol_Phelps2013_estimate&quot;,&quot;label&quot;:&quot;Phelps_2013_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_inositol/Inositol_Phelps2013_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # inositol — `Inositol_Phelps2013_covariate_estimate_standard_error`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
 Phelps DL; Ward RM; Williams RL; Watterberg KL; Laptook AR; Wrage LA; et al. et al. (2013). Pediatric research 74
   ·  DOI: [10.1038/pr.2013.162](https://doi.org/10.1038/pr.2013.162)
 
 ## Model component
-<dbs-pgx drug="inositol" model-id="Inositol_Phelps2013_covariate_estimate_standard_error" status="model_quarantined" stale="false" population="preterm infants" measured-compound="myo-inositol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="inositol" model-id="Inositol_Phelps2013_covariate_estimate_standard_error" status="needs_review" stale="false" population="preterm infants" measured-compound="myo-inositol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -41,14 +40,24 @@ Phelps DL; Ward RM; Williams RL; Watterberg KL; Laptook AR; Wrage LA; et al. et 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'GA Strata' — extend the ontology if this is a real PK parameter (source ['T7:row8:col4'])
+- dropped value-less row: 'Base Model'
+- dropped value-less row: 'log(Size)' (captured trailing unit 'Size' for child rows)
+- dropped value-less row: 'Clearance (Cl)' (captured trailing unit 'Cl' for child rows)
+- dropped unlinked row (NIL): 'GA Strata' — extend the ontology if this is a real PK parameter (source ['T7:row8:col2', 'T7:row8:col4'])
+- dropped value-less row: 'Creatinine Clearance'
 - dropped unlinked row (NIL): 'Endogenous Production (R)' — extend the ontology if this is a real PK parameter (source ['T7:row13:col4', 'T7:row16:col4'])
-- dropped unlinked row (NIL): 'All Covariates' — extend the ontology if this is a real PK parameter (source ['T7:row14:col4'])
+- dropped unlinked row (NIL): 'All Covariates' — extend the ontology if this is a real PK parameter (source ['T7:row14:col2', 'T7:row14:col4'])
+- dropped value-less row: 'V (volume)' (captured trailing unit 'volume' for child rows)
+- dropped value-less row: 'Cl (clearance)' (captured trailing unit 'clearance' for child rows)
+- dropped value-less row: 'R (endogenous infusion rate)'
+- dropped value-less row: 'k (elimination rate; Cl/V)'
+- dropped value-less row: 't1/2 (half-life; 0.693/k)' (captured trailing unit 'half-life; 0.693/k' for child rows)
+- dropped value-less row: 'E (endogenous concentration; R/Cl)'
 - salvaged Q61 ('central volume of distribution'=0.5115) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=myo-inositol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- population split: 'covariate estimate(standard error)' subgroup of Phelps_2013 (paper reports 5 populations: covariate estimate(standard error), estimate, parametername a, standard error, −2 loglikelihood(p-value e))
+- population split: 'covariate estimate(standard error)' subgroup of Phelps_2013 (paper reports 2 populations: covariate estimate(standard error), estimate)
 
 **Extraction notes:**
 - unparsed cell T7:row2:col6 = '2708.2 (NA)'
@@ -63,19 +72,9 @@ Phelps DL; Ward RM; Williams RL; Watterberg KL; Laptook AR; Wrage LA; et al. et 
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 35.8 L | not captured | not captured | ['Phelps_2013:discussion_prose'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped | 5.22 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -85,8 +84,6 @@ Phelps DL; Ward RM; Williams RL; Watterberg KL; Laptook AR; Wrage LA; et al. et 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_inositol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Phelps_2013` / `Phelps_2013::covariate_estimate_standard_error`)
-- model: `../../../knowledgebase/drugs/drug_inositol/models/modelica/_needs_review/Inositol_Phelps2013_covariate_estimate_standard_error.mo`
-- deviation: `../../../knowledgebase/drugs/drug_inositol/models/modelica/_needs_review/Inositol_Phelps2013_covariate_estimate_standard_error.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

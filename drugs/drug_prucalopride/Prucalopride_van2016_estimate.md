@@ -60,6 +60,7 @@ van Schaick E; Benninga MA; Levine A; Magnusson M; Troy S et al. (2016). Pharmac
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - status held at route_to_review — not promoted
 - population split: 'estimate' subgroup of van_2016 (paper reports 3 populations: estimate, pru‐usa‐12, spd555‐303)
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - companion parameter table 4 transcribed (29 record(s))
@@ -73,8 +74,12 @@ van Schaick E; Benninga MA; Levine A; Magnusson M; Troy S et al. (2016). Pharmac
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['prp2236-tbl-0003:row8:col1'] |
 | C5_dimension_Q95 | fail | 1 / [time] | h−1 | not captured | not captured | ['prp2236-tbl-0003:row7:col1'] |
+| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['prp2236-tbl-0003:row5:col1'] |
+| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['prp2236-tbl-0003:row4:col1'] |
+| C5_unit_missing_Q77 | fail | [length] ** 3 | not captured | not captured | not captured | ['prp2236-tbl-0003:row6:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">

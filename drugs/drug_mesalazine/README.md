@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;mesalazine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mesalazine_Cuffari2016_reference&quot;,&quot;label&quot;:&quot;Cuffari_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_mesalazine/Mesalazine_Cuffari2016_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mesalazine_Cuffari2016_multimatrix_mesalamine&quot;,&quot;label&quot;:&quot;Cuffari_2016_multimatrix_mesalamine&quot;,&quot;href&quot;:&quot;drugs/drug_mesalazine/Mesalazine_Cuffari2016_multimatrix_mesalamine.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mesalazine_Cuffari2016_multimatrix_mesalamine&quot;,&quot;label&quot;:&quot;Cuffari_2016_multimatrix_mesalamine&quot;,&quot;href&quot;:&quot;drugs/drug_mesalazine/Mesalazine_Cuffari2016_multimatrix_mesalamine.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mesalazine_Cuffari2016_nonmem_estimates&quot;,&quot;label&quot;:&quot;Cuffari_2016_nonmem_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mesalazine_Cuffari2016_nonmem_estimates&quot;,&quot;label&quot;:&quot;Cuffari_2016_nonmem_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # mesalazine
 
@@ -18,13 +18,26 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 22:33 | 14:58 | 1/0/0 | 0/0/0 | 0/0/0 | 162,034/31,472 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 3/1 | 4/0 | 0 |
+| 2026-09-22 05:16 | 4:53 | 2/0/0 | 1/0/0 | 0/0/0 | 135,966/8,514 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 2/2 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Cuffari_2016_reference](drugs/drug_mesalazine/Mesalazine_Cuffari2016_reference.md) | Cuffari C et al., Randomized clinical trial: pharmacokine…, Drug design, development an… (2016) | [10.2147/DDDT.S95316](https://doi.org/10.2147/DDDT.S95316) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl[Ac-5-ASA], Vd[Ac-5-ASA], formation_rate left at base-clas…</sub><br><sub>route_to: `scholar`</sub> | [Cuffari_2016_multimatrix_mesalamine](drugs/drug_mesalazine/Mesalazine_Cuffari2016_multimatrix_mesalamine.md) | Cuffari C et al., Randomized clinical trial: pharmacokine…, Drug design, development an… (2016) | [10.2147/DDDT.S95316](https://doi.org/10.2147/DDDT.S95316) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl[Ac-5-ASA], Vd[Ac-5-ASA], formation_rate left at base-clas…</sub><br><sub>route_to: `scholar`</sub> | [Cuffari_2016_multimatrix_mesalamine](drugs/drug_mesalazine/Mesalazine_Cuffari2016_multimatrix_mesalamine.md) | Cuffari C et al., Randomized clinical trial: pharmacokine…, Drug design, development an… (2016) | [10.2147/DDDT.S95316](https://doi.org/10.2147/DDDT.S95316) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Cuffari_2016_nonmem_estimates](drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates.md) | Cuffari C et al., Randomized clinical trial: pharmacokine…, Drug design, development an… (2016) | [10.2147/DDDT.S95316](https://doi.org/10.2147/DDDT.S95316) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Cuffari_2016_nonmem_estimates](drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates.md) | Cuffari C et al., Randomized clinical trial: pharmacokine…, Drug design, development an… (2016) | [10.2147/DDDT.S95316](https://doi.org/10.2147/DDDT.S95316) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | citation | doi |
+|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Oliván-Viguera_2013](drugs/drug_mesalazine/pd_Oliv_n_Viguera_2013_Contraction.md) | Oliván-Viguera A et al., Novel phenolic inhibitors of small/inte…, PloS one (2013) | [10.1371/journal.pone.0058614](https://doi.org/10.1371/journal.pone.0058614) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Oliván-Viguera_2013](drugs/drug_mesalazine/pd_Oliv_n_Viguera_2013_KCa2_3.md) | Oliván-Viguera A et al., Novel phenolic inhibitors of small/inte…, PloS one (2013) | [10.1371/journal.pone.0058614](https://doi.org/10.1371/journal.pone.0058614) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Oliván-Viguera_2013](drugs/drug_mesalazine/pd_Oliv_n_Viguera_2013_KCa3_1.md) | Oliván-Viguera A et al., Novel phenolic inhibitors of small/inte…, PloS one (2013) | [10.1371/journal.pone.0058614](https://doi.org/10.1371/journal.pone.0058614) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Oliván-Viguera_2013](drugs/drug_mesalazine/pd_Oliv_n_Viguera_2013_Proliferation.md) | Oliván-Viguera A et al., Novel phenolic inhibitors of small/inte…, PloS one (2013) | [10.1371/journal.pone.0058614](https://doi.org/10.1371/journal.pone.0058614) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Oliván-Viguera_2013](drugs/drug_mesalazine/pd_Oliv_n_Viguera_2013_Relaxation.md) | Oliván-Viguera A et al., Novel phenolic inhibitors of small/inte…, PloS one (2013) | [10.1371/journal.pone.0058614](https://doi.org/10.1371/journal.pone.0058614) |
 
 ## ADME sites
 
@@ -46,7 +59,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 12  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 4  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -55,17 +68,23 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Zhang_2022.pdf` | Zhang Y et al., Population pharmacokinetics and IVIVC f…, Journal of controlled relea… (2022) | popPK | 8 | [10.1016/j.jconrel.2022.04.024](https://doi.org/10.1016/j.jconrel.2022.04.024) | [35461968](https://pubmed.ncbi.nlm.nih.gov/35461968) | The paper is a mesalazine population-PK/IVIVC study, but the actual numeric PK parameter values are not shown in the provided evidence and appear only to be summarized narratively. |
+| `Zhang_2022.pdf` | Zhang Y et al., Population pharmacokinetics and IVIVC f…, Journal of controlled relea… (2022) | popPK | 8 | [10.1016/j.jconrel.2022.04.024](https://doi.org/10.1016/j.jconrel.2022.04.024) | [35461968](https://pubmed.ncbi.nlm.nih.gov/35461968) | The paper describes a population PK analysis of mesalazine, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided text, which only reports variability coefficients and qualitative findings. |
 
-<sub>queue written 2026-07-18T21:51:34.437486+00:00 · relevance threshold 5</sub>
+<sub>queue written 2026-09-22T05:12:29.248962+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Markopoulos_2015 | relevant | 7 | 4 | Mesalamine is the subject drug and a first-order absorption rate equation/parameter is reported, but the actual numeric value(s) appear to be derived from prior permeability inputs and not fully readable here. |
-| popPK | Yarlas_2018 | irrelevant | 0 | 0 | This is a clinical outcomes study of mesalamine, not a PK study, and no quantitative disposition parameters are present. |
-| popPK | Zhang_2022 | relevant | 8 | 1 | The paper is a mesalazine population-PK/IVIVC study, but the actual numeric PK parameter values are not shown in the provided evidence and appear only to be summarized narratively. |
+| popPK | Kumar_2021 | irrelevant | 0 | 0 | The study is a pharmacological investigation of smooth muscle contractility and intestinal transit, not a pharmacokinetic study, and mesalazine is used only as a reference drug. |
+| PD | Kumar_2021 | not_relevant | 0 | 0 | The paper reports pharmacodynamic effects of roxithromycin and mesalazine on intestinal transit and cholinergic responsiveness (EC50 of acetylcholine), but does not report a concentration-effect or dose-response relationship for mesalazine itself (i.e., no mesalazine exposure linked to effect magnitude). |
+| popPK | Lin_2021_2 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of azathioprine (6-TGN), with mesalazine serving only as a covariate for co-therapy, not as the subject drug. |
+| popPK | Markopoulos_2015 | irrelevant | 2 | 0 | The study is an in-vitro dissolution and biorelevant media simulation study, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, etc.) for mesalazine. |
+| popPK | Oliván-Viguera_2013 | irrelevant | 0 | 0 | The paper is a mechanistic electrophysiology study on KCa3.1 channel inhibition, not a pharmacokinetic study, and mesalazine is only a comparator compound. |
+| popPK | Xu_2025 | irrelevant | 0 | 0 | The study focuses on the mechanism of action of bakuchiol for colitis, using mesalazine only as a clinical comparator without reporting any pharmacokinetic parameters. |
+| PD | Xu_2025 | not_relevant | 0 | 0 | The paper reports an EC50 for bakuchiol, not mesalazine, and provides no exposure-response or dose-response data for mesalazine. |
+| popPK | Yarlas_2018 | irrelevant | 0 | 0 | The paper is a clinical trial analyzing health-related quality of life and work outcomes in ulcerative colitis patients, containing no pharmacokinetic data or disposition parameters for mesalazine. |
+| popPK | Zhang_2022 | relevant | 8 | 2 | The paper describes a population PK analysis of mesalazine, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided text, which only reports variability coefficients and qualitative findings. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) from `knowledgebase/drugs/drug_mesalazine`. Every value traces to an artifact field; `not captured` = absent from the KB.</sub>

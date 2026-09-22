@@ -1,44 +1,42 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;polymyxin B&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/&quot;},{&quot;label&quot;:&quot;Chauzy_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PolymyxinB_Chauzy2022_reference&quot;,&quot;label&quot;:&quot;Chauzy_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Chauzy2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;PolymyxinB_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Lakota2018_reference&quot;,&quot;label&quot;:&quot;Lakota_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Lakota2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PolymyxinB_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Li2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Manchandani2018_reference&quot;,&quot;label&quot;:&quot;Manchandani_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Manchandani2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Chauzy2022_reference&quot;,&quot;label&quot;:&quot;Chauzy_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Chauzy2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;PolymyxinB_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Lakota2018_reference&quot;,&quot;label&quot;:&quot;Lakota_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Lakota2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # polymyxin B — `PolymyxinB_Chauzy2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
+**What is wrong:** a structural parameter has the wrong dimension
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
-3. Read the .deviation.json and confirm each deviation names what changed and why.
-4. Anything undocumented needs the engineer, not a curator.
+1. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+2. A misread unit in transcribe is the usual cause.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
 Chauzy A; Akrong G; Aranzana-Climent V; Moreau J; Prouvensier L; Mirfendereski H; et al. et al. (2022). Frontiers in pharmacology 13
   ·  DOI: [10.3389/fphar.2022.842921](https://doi.org/10.3389/fphar.2022.842921)
 
 ## Model component
-<dbs-pgx drug="polymyxin B" model-id="PolymyxinB_Chauzy2022_reference" status="model_quarantined" stale="false" population="neutropenic mice" measured-compound="polymyxin B" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="polymyxin B" model-id="PolymyxinB_Chauzy2022_reference" status="needs_review" stale="false" population="neutropenic mice with Acinetobacter baumannii thigh infection" measured-compound="polymyxin_b" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Maximum absorption rate | `Q49` · kabs | 14.7 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | T1:row1:col2 | — | not captured |
-| Clearance | `Q22` · CL | 0.437 | not captured | not captured | not captured | not captured | exact (1.0) | T1:row3:col2 | — | not captured |
-| Distribution volume of the central compartment | `Q63` · V1 | 0.740 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | T1:row4:col2 | — | not captured |
-| Distribution volume of the peripheral compartment | `Q64` · V2 | 0.743 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | T1:row5:col2 | — | not captured |
-| Intercompartmental clearance | `Q30` · Q | 0.315 | not captured | not captured | not captured | not captured | exact (1.0) | T1:row6:col2 | — | not captured |
-| Fraction unbound | `Q46` · fu | 0.166 | not captured | not captured | not captured | not captured | exact (1.0) | T1:row7:col2 | — | not captured |
+| Maximum absorption rate | `Q49` · kabs | 14.7 | not captured | not captured | not captured | 10.3 | llm_confirmed (0.6) | T1:row1:col2 | — | not captured |
+| Clearance | `Q22` · CL | 0.437 | not captured | not captured | not captured | 3.9 | exact (1.0) | T1:row3:col2 | — | not captured |
+| Distribution volume of the central compartment | `Q63` · V1 | 0.740 | not captured | not captured | not captured | 16.7 | llm_confirmed (0.6) | T1:row4:col2 | — | not captured |
+| Distribution volume of the peripheral compartment | `Q64` · V2 | 0.743 | not captured | not captured | not captured | 16.4 | llm_confirmed (0.6) | T1:row5:col2 | — | not captured |
+| Intercompartmental clearance | `Q30` · Q | 0.315 | not captured | not captured | not captured | 27.3 | exact (1.0) | T1:row6:col2 | — | not captured |
+| Fraction unbound | `Q46` · fu | 0.166 | not captured | not captured | not captured | 9.3 | exact (1.0) | T1:row7:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -50,7 +48,7 @@ Chauzy A; Akrong G; Aranzana-Climent V; Moreau J; Prouvensier L; Mirfendereski H
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Amount in the subcutaneous compartment that produces 50% of the maximum absorption rate' — extend the ontology if this is a real PK parameter (source ['T1:row2:col2'])
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (Clearance); Q63 (Distribution volume of the central compartment); Q64 (Distribution volume of the peripheral compartment); Q30 (Intercompartmental clearance)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=polymyxin B
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=polymyxin_b
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
@@ -64,21 +62,14 @@ Chauzy A; Akrong G; Aranzana-Climent V; Moreau J; Prouvensier L; Mirfendereski H
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['T1:row3:col2'] |
+| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['T1:row6:col2'] |
+| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['T1:row1:col2'] |
+| C5_unit_missing_Q63 | fail | [length] ** 3 | not captured | not captured | not captured | ['T1:row4:col2'] |
+| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['T1:row5:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.437 | not captured | not captured | ['T1:row3:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 0.92 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 13.75 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 0.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -88,8 +79,6 @@ Chauzy A; Akrong G; Aranzana-Climent V; Moreau J; Prouvensier L; Mirfendereski H
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_polymyxin_b/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Chauzy_2022` / `Chauzy_2022::reference`)
-- model: `../../../knowledgebase/drugs/drug_polymyxin_b/models/modelica/_needs_review/PolymyxinB_Chauzy2022_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_polymyxin_b/models/modelica/_needs_review/PolymyxinB_Chauzy2022_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

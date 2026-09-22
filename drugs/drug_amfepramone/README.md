@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-11 23:58 | 1:58 | 0/0/0 | 0/0/0 | 0/0/2 | 23,378/810 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/0 | 2/0 | 0 |
+| 2026-09-22 06:32 | 2:38 | 0/0/0 | 0/0/0 | 0/0/2 | 56,687/1,533 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
@@ -59,8 +59,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 7 matched, 7 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 7 matched, 10 returned
+- **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -72,17 +72,19 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Dangor_1987.pdf` | Dangor CM et al., Bioavailability of amfepramone hydrochl…, Arzneimittel-Forschung (1987) | popPK | 8 | not captured | [3663274](https://pubmed.ncbi.nlm.nih.gov/3663274) | The paper is a pharmacokinetic study of amfepramone in humans, but the provided evidence contains only qualitative descriptions of the profile without specific numeric parameter values. |
 
-<sub>queue written 2026-09-11T23:58:08.522042+00:00</sub>
+<sub>queue written 2026-09-22T06:31:51.445296+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Branis_2015 | irrelevant | 0 | 0 | The paper is a case report on Diethylpropion and amphetamine-like analogues in diabetes, not a pharmacokinetic study of amfepramone. |
+| popPK | Branis_2015 | irrelevant | 0 | 0 | The paper is a case report regarding Diethylpropion and does not study amfepramone or report any pharmacokinetic parameters for it. |
 | popPK | Dangor_1987 | relevant | 8 | 0 | The paper is a pharmacokinetic study of amfepramone in humans, but the provided evidence contains only qualitative descriptions of the profile without specific numeric parameter values. |
-| popPK | Gómez_1993 | irrelevant | 0 | 0 | The study focuses on diethylpropion, not amfepramone, and is an in vitro stability/dissolution study without PK parameters. |
+| popPK | Douglas_1982 | irrelevant | 0 | 0 | The paper is a clinical review of obesity treatment guidelines and does not report any pharmacokinetic parameters for amfepramone. |
+| popPK | Gómez_1993 | irrelevant | 0 | 0 | The study focuses on diethylpropion, not amfepramone, and is an in-vitro stability/dissolution study without PK parameters. |
 | popPK | Mey_1998 | irrelevant | 0 | 0 | The study investigates the racemization kinetics of diethylpropion, not the pharmacokinetics of amfepramone. |
-| popPK | Yang_2022 | irrelevant | 0 | 0 | The paper describes a forensic hair analysis method and reports concentration levels in hair, not pharmacokinetic disposition parameters (CL, V, ka, etc.). |
+| popPK | Poyatos_2022 | irrelevant | 2 | 0 | The paper is a systematic review of cathinones (cathinone, mephedrone, methylone, diethylpropion) and does not report original quantitative disposition parameters (CL, V, Q, ka) for amfepramone (diethylpropion), only citing Cmax/AUC/Tmax from other studies. |
+| popPK | Yang_2022 | irrelevant | 0 | 0 | The paper is a forensic toxicology study reporting hair concentrations, not a pharmacokinetic study with disposition parameters. |
 | PD | Yang_2022 | not_relevant | 0 | 0 | The paper describes a forensic LC-MS/MS method for detecting amfepramone in hair and reports concentration ranges in authentic cases, but it does not report any pharmacodynamic, exposure-response, or dose-response relationship or numeric PD parameters. |
 
 ---

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11H&quot;,&quot;href&quot;:&quot;atc/A11H.md&quot;},{&quot;label&quot;:&quot;biotin&quot;,&quot;href&quot;:&quot;drugs/drug_biotin/&quot;},{&quot;label&quot;:&quot;Wang_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Biotin_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_biotin/Biotin_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Biotin_Wang2001_reference&quot;,&quot;label&quot;:&quot;Wang_2001_reference&quot;,&quot;href&quot;:&quot;drugs/drug_biotin/Biotin_Wang2001_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Biotin_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_biotin/Biotin_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -50,6 +50,7 @@ Wang Y; Liu Z; Han G; Yu P; Yang X; Wang J; et al. et al. (2023). PLoS neglected
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wang_2023:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2023:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.04 | not captured | not captured | ['Wang_2023:review'] |
@@ -61,6 +62,7 @@ Wang Y; Liu Z; Han G; Yu P; Yang X; Wang J; et al. et al. (2023). PLoS neglected
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=biotin) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
@@ -87,7 +89,7 @@ Wang Y; Liu Z; Han G; Yu P; Yang X; Wang J; et al. et al. (2023). PLoS neglected
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_biotin/Biotin_Wang2023_reference/Biotin_Wang2023_reference_modelica.zip" download>Biotin_Wang2023_reference_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_biotin/Biotin_Wang2023_reference/Biotin_Wang2023_reference_fmi.zip" download>Biotin_Wang2023_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_biotin/Biotin_Wang2023_reference/Biotin_Wang2023_reference_matlab.zip" download>Biotin_Wang2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_biotin/Biotin_Wang2023_reference/Biotin_Wang2023_reference_matlab_simbio.zip" download>Biotin_Wang2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_biotin/Biotin_Wang2023_reference/Biotin_Wang2023_reference_sbml.zip" download>Biotin_Wang2023_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>

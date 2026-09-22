@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# activated partial thromboplastin time — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Maas_2018`
 - **model family:** `emax`

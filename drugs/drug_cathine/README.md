@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-12 00:08 | 6:00 | 0/0/0 | 3/0/0 | 0/0/2 | 102,234/2,146 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/0 | 5/0 | 0 |
+| 2026-09-22 06:41 | 3:02 | 0/0/0 | 2/1/0 | 0/0/2 | 91,974/2,349 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/4 | 5/0 | 0 |
 
 ## popPK records
 
@@ -27,15 +27,20 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Dimba_2004](drugs/drug_cathine/pd_Dimba_2004_apoptosis.md) | Dimba EA et al., Khat (Catha edulis)-induced apoptosis i…, British journal of cancer (2004) | [10.1038/sj.bjc.6602197](https://doi.org/10.1038/sj.bjc.6602197) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Lim_2022](drugs/drug_cathine/pd_Lim_2022_CYP2A6.md) | Lim SYM et al., Protein-Ligand Identification and In Vi…, International journal of to… (2022) | [10.1177/10915818221103790](https://doi.org/10.1177/10915818221103790) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Lim_2022](drugs/drug_cathine/pd_Lim_2022_CYP3A4.md) | Lim SYM et al., Protein-Ligand Identification and In Vi…, International journal of to… (2022) | [10.1177/10915818221103790](https://doi.org/10.1177/10915818221103790) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mohan_2016](drugs/drug_cathine/pd_Mohan_2016_Bax.md) | Mohan S et al., Catha edulis Extract Induces H9c2 Cell…, Pharmacognosy magazine (2016) | [10.4103/0973-1296.185732](https://doi.org/10.4103/0973-1296.185732) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Mohan_2016](drugs/drug_cathine/pd_Mohan_2016_Bax_expression.md) | Mohan S et al., Catha edulis Extract Induces H9c2 Cell…, Pharmacognosy magazine (2016) | [10.4103/0973-1296.185732](https://doi.org/10.4103/0973-1296.185732) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mohan_2016](drugs/drug_cathine/pd_Mohan_2016_Bcl_2.md) | Mohan S et al., Catha edulis Extract Induces H9c2 Cell…, Pharmacognosy magazine (2016) | [10.4103/0973-1296.185732](https://doi.org/10.4103/0973-1296.185732) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Mohan_2016](drugs/drug_cathine/pd_Mohan_2016_Bcl_2_expression.md) | Mohan S et al., Catha edulis Extract Induces H9c2 Cell…, Pharmacognosy magazine (2016) | [10.4103/0973-1296.185732](https://doi.org/10.4103/0973-1296.185732) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mohan_2016](drugs/drug_cathine/pd_Mohan_2016_ROS.md) | Mohan S et al., Catha edulis Extract Induces H9c2 Cell…, Pharmacognosy magazine (2016) | [10.4103/0973-1296.185732](https://doi.org/10.4103/0973-1296.185732) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Mohan_2016](drugs/drug_cathine/pd_Mohan_2016_ROS_generation.md) | Mohan S et al., Catha edulis Extract Induces H9c2 Cell…, Pharmacognosy magazine (2016) | [10.4103/0973-1296.185732](https://doi.org/10.4103/0973-1296.185732) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Mohan_2016](drugs/drug_cathine/pd_Mohan_2016_apoptosis.md) | Mohan S et al., Catha edulis Extract Induces H9c2 Cell…, Pharmacognosy magazine (2016) | [10.4103/0973-1296.185732](https://doi.org/10.4103/0973-1296.185732) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mohan_2016](drugs/drug_cathine/pd_Mohan_2016_caspase_3_7.md) | Mohan S et al., Catha edulis Extract Induces H9c2 Cell…, Pharmacognosy magazine (2016) | [10.4103/0973-1296.185732](https://doi.org/10.4103/0973-1296.185732) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Mohan_2016](drugs/drug_cathine/pd_Mohan_2016_caspase_3_7_activity.md) | Mohan S et al., Catha edulis Extract Induces H9c2 Cell…, Pharmacognosy magazine (2016) | [10.4103/0973-1296.185732](https://doi.org/10.4103/0973-1296.185732) |
 | <span class="pk-badge pk-badge--green">extracted</span> | [Mohan_2016](drugs/drug_cathine/pd_Mohan_2016_cell_viability.md) | Mohan S et al., Catha edulis Extract Induces H9c2 Cell…, Pharmacognosy magazine (2016) | [10.4103/0973-1296.185732](https://doi.org/10.4103/0973-1296.185732) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mohan_2016](drugs/drug_cathine/pd_Mohan_2016_unknown.md) | Mohan S et al., Catha edulis Extract Induces H9c2 Cell…, Pharmacognosy magazine (2016) | [10.4103/0973-1296.185732](https://doi.org/10.4103/0973-1296.185732) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Dimba_2004](drugs/drug_cathine/pd_Dimba_2004_apoptosis.md) | Dimba EA et al., Khat (Catha edulis)-induced apoptosis i…, British journal of cancer (2004) | [10.1038/sj.bjc.6602197](https://doi.org/10.1038/sj.bjc.6602197) |
 
 ## Pharmacogenomics (PGx)
 
@@ -74,24 +79,23 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Ademiluyi_2016.pdf` | Ademiluyi AO et al., Alkaloid extracts from Jimson weed (Dat…, Neurotoxicology (2016) | pd | 4 | [10.1016/j.neuro.2016.06.012](https://doi.org/10.1016/j.neuro.2016.06.012) | [27450719](https://www.ncbi.nlm.nih.gov/pubmed/27450719) | metadata signals extractable PD data (EC50) |
 | `Bedada_2015.pdf` | Bedada W et al., The Psychostimulant Khat (Catha edulis)…, Journal of clinical psychop… (2015) | pgx | 5 | [10.1097/JCP.0000000000000413](https://doi.org/10.1097/JCP.0000000000000413) | [26444948](https://www.ncbi.nlm.nih.gov/pubmed/26444948) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-09-12T00:06:27.078821+00:00</sub>
+<sub>queue written 2026-09-22T06:39:54.270816+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ademiluyi_2016 | irrelevant | 0 | 0 | The paper focuses on the modulation of purinergic enzymes by Jimson weed extracts and does not report pharmacokinetic parameters for cathine. |
+| popPK | Ademiluyi_2016 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
 | PD | Ademiluyi_2016 | not_relevant | 0 | 0 | The paper studies alkaloid extracts from Jimson weed (Datura stramonium) and their effects on purinergic enzymes, not the specific drug cathine, and does not report pharmacodynamic parameters for cathine. |
 | PGx | Bedada_2015 | not_relevant | 0 | 0 | The paper investigates the effect of khat consumption on CYP2D6 activity using dextromethorphan as a probe, not the effect of a gene variant on the PK/PD of cathine. |
-| popPK | Dimba_2004 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on apoptosis induced by khat alkaloids and does not report any pharmacokinetic parameters for cathine. |
+| popPK | Dimba_2004 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on apoptosis induced by khat extract and its alkaloids, containing no pharmacokinetic parameters for cathine. |
 | popPK | Frosch_1977 | irrelevant | 0 | 0 | The study investigates D-norpseudoephedrine, not cathine. |
 | popPK | Guo_2025 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological and chemical analysis of Ephedra species, not a pharmacokinetic study, and does not report any disposition parameters for cathine. |
 | PD | Guo_2025 | not_relevant | 0 | 0 | The paper focuses on chemical profiling and network pharmacology of Ephedra species, with no specific pharmacodynamic or exposure-response analysis for cathine. |
-| popPK | Lim_2022 | irrelevant | 0 | 0 | The study is an in-vitro investigation of CYP enzyme inhibition and molecular docking, not a pharmacokinetic study reporting disposition parameters like clearance or volume for cathine. |
-| PGx | Lim_2022 | not_relevant | 0 | 0 | The paper investigates the in vitro inhibitory effects of cathine on CYP enzymes but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| popPK | Mohan_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of apoptosis in cell lines and does not report pharmacokinetic parameters for cathine. |
+| popPK | Lim_2022 | irrelevant | 1 | 0 | The study is an in-vitro mechanistic investigation of CYP inhibition (IC50/Ki) and molecular docking, not a pharmacokinetic study reporting disposition parameters like clearance or volume for cathine. |
+| PGx | Lim_2022 | not_relevant | 0 | 0 | The study investigates in vitro CYP inhibition by cathine but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Mohan_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of apoptosis in cell lines and does not report any pharmacokinetic parameters for cathine. |
 | popPK | Moya-Huff_1987 | irrelevant | 0 | 0 | The study focuses on the cardiovascular pharmacodynamics of norephedrine isomers in rats and does not report pharmacokinetic parameters for cathine. |
-| PD | Moya-Huff_1987 | not_relevant | 3 | 2 | The paper reports qualitative dose-response observations (potency ranking, tachyphylaxis) for norephedrine isomers but does not provide numeric PD parameters (EC50, Emax) or extractable concentration-effect curves for cathine. |
 | popPK | Pehek_1990 | irrelevant | 0 | 0 | The study is a behavioral pharmacology investigation of drug discrimination and tolerance, reporting no quantitative pharmacokinetic parameters for cathine. |
 | popPK | Rothman_2003 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic characterization of transporter and receptor binding, not a pharmacokinetic study reporting disposition parameters for cathine. |
 | popPK | Widler_1994 | irrelevant | 2 | 2 | The study focuses on cathinone (the primary active alkaloid of khat) rather than cathine, and reports only basic non-compartmental parameters (Cmax, AUC, t1/2) without volume or clearance values. |

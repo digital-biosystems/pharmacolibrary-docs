@@ -1,0 +1,60 @@
+{
+ "model_id": "PolymyxinB_Akrong2022_PD_viable_bacterial_burden",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 0.0014599999999999997,
+  "Emax": -8.96,
+  "exposure_per_s": 0.0009999999999999998,
+  "gamma": 0.656
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "0.0014599999999999997": -4.48
+ },
+ "stop_time": 14.6,
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "CFU/mL",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "CFU/mL"
+ },
+ "x_axis": {
+  "display_unit": "mg/L",
+  "factor": 0.0009999999999999998,
+  "per_s": 0.0009999999999999998,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "CFU/mL",
+  "factor": 1.0,
+  "label": "response"
+ }
+}

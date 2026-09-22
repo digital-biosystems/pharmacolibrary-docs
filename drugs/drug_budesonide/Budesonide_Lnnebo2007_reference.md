@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;budesonide&quot;,&quot;href&quot;:&quot;drugs/drug_budesonide/&quot;},{&quot;label&quot;:&quot;L\u00f6nnebo_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Budesonide_Lnnebo2007_reference&quot;,&quot;label&quot;:&quot;L\u00f6nnebo_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_budesonide/Budesonide_Lnnebo2007_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Budesonide_Rubin2015_reference&quot;,&quot;label&quot;:&quot;Rubin_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_budesonide/Budesonide_Rubin2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Budesonide_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_budesonide/Budesonide_Back2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Budesonide_Lnnebo2007_reference&quot;,&quot;label&quot;:&quot;L\u00f6nnebo_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_budesonide/Budesonide_Lnnebo2007_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Budesonide_Rubin2015_reference&quot;,&quot;label&quot;:&quot;Rubin_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_budesonide/Budesonide_Rubin2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Budesonide_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_budesonide/Budesonide_Back2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # budesonide — `Budesonide_Lnnebo2007_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 ### Reviewer guidance
 
@@ -13,26 +13,26 @@
 
 > This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
+**What is wrong:** a structural parameter has the wrong dimension.
 
 **Steps:**
 1. Not a curation fix — fulltext limitation.
-2. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-3. If the paper never reports it, the record cannot become a model.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
 
-<sub>owner: **scholar** · guidance written by playbook</sub>
+<sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
 Lönnebo A; Grahnén A; Karlsson MO et al. (2007). British journal of clinical pharmacology 64
   ·  DOI: [10.1111/j.1365-2125.2007.02867.x](https://doi.org/10.1111/j.1365-2125.2007.02867.x)
 
 ## Model component
-<dbs-pgx drug="budesonide" model-id="Budesonide_Lnnebo2007_reference" status="model_quarantined" stale="false" population="healthy volunteers" measured-compound="budesonide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="budesonide" model-id="Budesonide_Lnnebo2007_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="budesonide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -72,20 +72,13 @@ Lönnebo A; Grahnén A; Karlsson MO et al. (2007). British journal of clinical p
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Lönnebo_2007:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lönnebo_2007:abstract'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | lh-1 | not captured | not captured | ['Lönnebo_2007:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 81.5 | not captured | not captured | ['Lönnebo_2007:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 219 L | not captured | not captured | ['Lönnebo_2007:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -95,8 +88,6 @@ Lönnebo A; Grahnén A; Karlsson MO et al. (2007). British journal of clinical p
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_budesonide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lönnebo_2007` / `Lönnebo_2007::reference`)
-- model: `../../../knowledgebase/drugs/drug_budesonide/models/modelica/_needs_review/Budesonide_Lnnebo2007_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_budesonide/models/modelica/_needs_review/Budesonide_Lnnebo2007_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

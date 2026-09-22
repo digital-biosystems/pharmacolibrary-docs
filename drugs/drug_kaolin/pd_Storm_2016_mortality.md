@@ -3,7 +3,7 @@
 # name — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 - **paper:** `Storm_2016`
-- **model family:** `sigmoid_emax`
+- **model family:** `unknown`
 - **driver:** `not_resolved`
 - **tier:** descriptive
 - **effect:** inhibition/unknown

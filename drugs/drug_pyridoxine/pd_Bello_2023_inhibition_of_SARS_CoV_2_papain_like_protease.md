@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# name — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 - **paper:** `Bello_2023`
 - **model family:** `emax`

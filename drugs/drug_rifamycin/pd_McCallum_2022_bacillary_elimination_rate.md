@@ -6,14 +6,83 @@
 - **model family:** `linear`
 - **driver:** `not_resolved`
 - **tier:** population
-- **effect:** stimulation/additive
+- **effect:** inhibition/unknown
 
 ## Citation
 McCallum AD; Pertinez HE; Chirambo AP; Sheha I; Chasweka M; Malamba R; Shani D; Chitani A; Mallewa JE; Meghji JZ; Ghany JF; Corbett EL; Gordon SB; Davies GR; Khoo SH; Sloan DJ; Mwandumba HC et al. (2022). Clinical infectious diseases : an official publication of the Infectious Diseases Society of America 75
   ·  DOI: [10.1093/cid/ciac228](https://doi.org/10.1093/cid/ciac228)
 
 ## Parameters
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|
+| C max — Matrix | `Q32` · not captured | 125 | not captured | not captured | space_fold (not captured) | T1:row3:col1 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | 0.0078 | not captured | not captured | space_fold (not captured) | T1:row3:col2 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -1.954 | not captured | not captured | space_fold (not captured) | T1:row3:col3 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | 70 | not captured | not captured | space_fold (not captured) | T1:row3:col5 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | 0.0246 | not captured | not captured | space_fold (not captured) | T1:row3:col6 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | -2.002 | not captured | not captured | space_fold (not captured) | T1:row3:col7 |
+| C max — Matrix | `Q32` · not captured | 42 | not captured | not captured | space_fold (not captured) | T1:row5:col1 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -0.0020 | not captured | not captured | space_fold (not captured) | T1:row5:col2 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -5.009 | not captured | not captured | space_fold (not captured) | T1:row5:col3 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | 30 | not captured | not captured | space_fold (not captured) | T1:row5:col5 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | -0.0020 | not captured | not captured | space_fold (not captured) | T1:row5:col6 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | -1.069 | not captured | not captured | space_fold (not captured) | T1:row5:col7 |
+| C max — Matrix | `Q32` · not captured | 42 | not captured | not captured | space_fold (not captured) | T1:row7:col1 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | 0.0010 | not captured | not captured | space_fold (not captured) | T1:row7:col2 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -0.003 | not captured | not captured | space_fold (not captured) | T1:row7:col3 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | 30 | not captured | not captured | space_fold (not captured) | T1:row7:col5 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | 0.0010 | not captured | not captured | space_fold (not captured) | T1:row7:col6 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | -1.710 | not captured | not captured | space_fold (not captured) | T1:row7:col7 |
+| C max — Matrix | `Q32` · not captured | 125 | not captured | not captured | space_fold (not captured) | T1:row9:col1 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | 0.0019 | not captured | not captured | space_fold (not captured) | T1:row9:col2 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -0.112 | not captured | not captured | space_fold (not captured) | T1:row9:col3 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | 70 | not captured | not captured | space_fold (not captured) | T1:row9:col5 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | -0.0008 | not captured | not captured | space_fold (not captured) | T1:row9:col6 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | -0.159 | not captured | not captured | space_fold (not captured) | T1:row9:col7 |
+| C max — Matrix | `Q32` · not captured | 42 | not captured | not captured | space_fold (not captured) | T1:row11:col1 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -0.0145 | not captured | not captured | space_fold (not captured) | T1:row11:col2 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -4.741 | not captured | not captured | space_fold (not captured) | T1:row11:col3 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | 30 | not captured | not captured | space_fold (not captured) | T1:row11:col5 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | -0.0085 | not captured | not captured | space_fold (not captured) | T1:row11:col6 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | -2.120 | not captured | not captured | space_fold (not captured) | T1:row11:col7 |
+| C max — Matrix | `Q32` · not captured | 42 | not captured | not captured | space_fold (not captured) | T1:row13:col1 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -0.0001 | not captured | not captured | space_fold (not captured) | T1:row13:col2 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -0.001 | not captured | not captured | space_fold (not captured) | T1:row13:col3 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | 30 | not captured | not captured | space_fold (not captured) | T1:row13:col5 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | 0.0030 | not captured | not captured | space_fold (not captured) | T1:row13:col6 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | -0.332 | not captured | not captured | space_fold (not captured) | T1:row13:col7 |
+| C max — Matrix | `Q32` · not captured | 125 | not captured | not captured | space_fold (not captured) | T1:row15:col1 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -0.0026 | not captured | not captured | space_fold (not captured) | T1:row15:col2 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -0.017 | not captured | not captured | space_fold (not captured) | T1:row15:col3 |
+| C max — Matrix | `Q32` · not captured | 42 | not captured | not captured | space_fold (not captured) | T1:row17:col1 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -0.0310 | not captured | not captured | space_fold (not captured) | T1:row17:col2 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -2.289 | not captured | not captured | space_fold (not captured) | T1:row17:col3 |
+| C max — Matrix | `Q32` · not captured | 42 | not captured | not captured | space_fold (not captured) | T1:row19:col1 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | 0.0121 | not captured | not captured | space_fold (not captured) | T1:row19:col2 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -1.242 | not captured | not captured | space_fold (not captured) | T1:row19:col3 |
+| C max — Matrix | `Q32` · not captured | 125 | not captured | not captured | space_fold (not captured) | T1:row21:col1 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -0.0002 | not captured | not captured | space_fold (not captured) | T1:row21:col2 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -0.052 | not captured | not captured | space_fold (not captured) | T1:row21:col3 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | 70 | not captured | not captured | space_fold (not captured) | T1:row21:col5 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | -0.0002 | not captured | not captured | space_fold (not captured) | T1:row21:col6 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | -0.010 | not captured | not captured | space_fold (not captured) | T1:row21:col7 |
+| C max — Matrix | `Q32` · not captured | 42 | not captured | not captured | space_fold (not captured) | T1:row23:col1 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | 0.0008 | not captured | not captured | space_fold (not captured) | T1:row23:col2 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -0.013 | not captured | not captured | space_fold (not captured) | T1:row23:col3 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | 30 | not captured | not captured | space_fold (not captured) | T1:row23:col5 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | -0.0028 | not captured | not captured | space_fold (not captured) | T1:row23:col6 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | -1.511 | not captured | not captured | space_fold (not captured) | T1:row23:col7 |
+| C max — Matrix | `Q32` · not captured | 42 | not captured | not captured | space_fold (not captured) | T1:row25:col1 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | 0.0119 | not captured | not captured | space_fold (not captured) | T1:row25:col2 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | -0.804 | not captured | not captured | space_fold (not captured) | T1:row25:col3 |
+| C max — Model Fit: No MIC Data | `Q32` · not captured | 30 | not captured | not captured | space_fold (not captured) | T1:row25:col5 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | 0.0004 | not captured | not captured | space_fold (not captured) | T1:row25:col6 |
+| C max — Model Fit: Including MIC Data | `Q32` · not captured | -0.007 | not captured | not captured | space_fold (not captured) | T1:row25:col7 |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 

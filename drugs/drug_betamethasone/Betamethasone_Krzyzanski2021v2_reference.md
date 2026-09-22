@@ -1,44 +1,47 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;betamethasone&quot;,&quot;href&quot;:&quot;drugs/drug_betamethasone/&quot;},{&quot;label&quot;:&quot;Krzyzanski_2021_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Betamethasone_Krzyzanski2021v2_reference&quot;,&quot;label&quot;:&quot;Krzyzanski_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Betamethasone_Schoenmakers2025_reference&quot;,&quot;label&quot;:&quot;Schoenmakers_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_betamethasone/Betamethasone_Schoenmakers2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Betamethasone_Krzyzanski2021v2_reference&quot;,&quot;label&quot;:&quot;Krzyzanski_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Betamethasone_Sullivan2026_reference&quot;,&quot;label&quot;:&quot;Sullivan_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_betamethasone/Betamethasone_Sullivan2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # betamethasone — `Betamethasone_Krzyzanski2021v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `t1/2ka`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** a structural parameter has the wrong dimension.
 
 **Steps:**
-1. Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-2. If the paper never reports it, the record cannot become a model.
-3. Read the .deviation.json and confirm each deviation names what changed and why.
-4. Anything undocumented needs the engineer, not a curator.
+1. Not a curation fix — scholar limitation.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
-
-> **Dose compound ≠ measured compound:** dosed `dexamethasone phosphate, betamethasone phosphate, betamethasone acetate`, measured `dexamethasone, betamethasone`.
 
 ## Citation
 not matched (stem Krzyzanski_2021_2)
 
 ## Model component
-<dbs-pgx drug="betamethasone" model-id="Betamethasone_Krzyzanski2021v2_reference" status="model_quarantined" stale="false" population="healthy nonpregnant Indian women" measured-compound="dexamethasone, betamethasone" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="betamethasone" model-id="Betamethasone_Krzyzanski2021v2_reference" status="rejected" stale="false" population="healthy nonpregnant Indian women" measured-compound="betamethasone" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, CLm/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/FIM, L/h | `Q27` · CL/F | 9.29 | not captured | not captured | not captured | not captured | llm (0.6) | Tab4:row1:col2, Krzyzanski_2021_2_table_3:row0:col2 | — | not captured |
-| kaIM, 1/h | `Q95` · t1/2ka | 0.460 | not captured | not captured | not captured | not captured | llm (0.6) | Tab4:row3:col2, Krzyzanski_2021_2_table_3:row2:col2 | — | not captured |
-| kaIMa, 1/h | `Q49` · kabs | 0.00638 | not captured | not captured | not captured | not captured | llm (0.6) | Tab4:row4:col2 | — | not captured |
-| Fr | `Q43` · FR | 1.04 | not captured | not captured | not captured | not captured | exact (1.0) | Tab4:row6:col2, Krzyzanski_2021_2_table_3:row4:col2 | — | not captured |
-| Fra | `Q40` · Fab | 0.819 | not captured | not captured | not captured | not captured | llm (0.6) | Tab4:row7:col2 | — | not captured |
+| CL/FIM, L/h | `Q351` · CLm/F | 9.29 | L/h | 2.5805555555555555e-06 | [l] / [h] | 8.6 | llm_confirmed (0.6) | Tab4:row1:col2, Krzyzanski_2021_2_table_3:row0:col2 | — | not captured |
+| Vp/FIM, L | `Q76` · V/F | 51.3 | L | 0.0513 | [l] | 3.2 | llm (0.6) | Tab4:row2:col2, Krzyzanski_2021_2_table_3:row1:col2 | — | not captured |
+| kaIM, 1/h | `Q49` · kabs | 0.460 | 1/h | 0.0001277777777777778 | [1] / [h] | 3.6 | llm (0.6) | Tab4:row3:col2, Krzyzanski_2021_2_table_3:row2:col2 | — | not captured |
+| kaIMa, 1/h | `Q95` · t1/2ka | 0.00638 | 1/h | not captured | [1] / [h] | 14.7 | llm (0.6) | Tab4:row4:col2 | — | not captured |
+| Fr | `Q43` · FR | 1.04 | not captured | not captured | not captured | 9.7 | exact (1.0) | Tab4:row6:col2, Krzyzanski_2021_2_table_3:row4:col2 | — | not captured |
+| Fra | `Q40` · Fab | 0.819 | not captured | not captured | not captured | 9.1 | llm (0.6) | Tab4:row7:col2 | — | not captured |
+| CLD/FIM, L/h | `Q27` · CL/F | 0.538 | L/h | 1.4944444444444445e-07 | [l] / [h] | 4.1 | llm (0.6) | Tab4:row8:col2, Krzyzanski_2021_2_table_3:row5:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -48,11 +51,12 @@ not matched (stem Krzyzanski_2021_2)
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Vp/FIM, L' — extend the ontology if this is a real PK parameter (source ['Tab4:row2:col2', 'Krzyzanski_2021_2_table_3:row1:col2'])
+- unit_dimension_mismatch: 'kaIMa, 1/h' → Q95 (unit '1 / [time]' vs ontology '[time]') — route to review
 - dropped duplicate Q49 ('kaPO, 1/h', value '0.936') — already have one for this compound
-- dropped duplicate Q27 ('CLD/FIM, L/h', value '0.538') — already have one for this compound
-- dropped unlinked row (NIL): 'VT/FIM, L' — extend the ontology if this is a real PK parameter (source ['Tab4:row9:col2', 'Krzyzanski_2021_2_table_3:row6:col2'])
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=dexamethasone, betamethasone
+- dropped duplicate Q76 ('VT/FIM, L', value '5.06') — already have one for this compound
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=betamethasone
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 
 **Extraction notes:**
 - unparsed cell Tab4:row1:col3 = '0.0210 (13.9) (14.6)*'
@@ -75,39 +79,18 @@ not matched (stem Krzyzanski_2021_2)
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row8:col2', 'Krzyzanski_2021_2_table_3:row5:col2'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row1:col2', 'Krzyzanski_2021_2_table_3:row0:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab4:row3:col2', 'Krzyzanski_2021_2_table_3:row2:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row2:col2', 'Krzyzanski_2021_2_table_3:row1:col2'] |
+| C5_dimension_Q95 | fail | 1 / [time] | 1/h | not captured | not captured | ['Tab4:row4:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 62.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 78.9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 66.9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 65.9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 35.8 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 7.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 7.6 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 14.9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 18.7 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 77.6 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 0.74 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 0.57 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 109 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 77.6 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 3.3 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 2.2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 2.8 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 2.6 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 2.9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.538 L/h | not captured | not captured | ['Tab4:row8:col2', 'Krzyzanski_2021_2_table_3:row5:col2'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 51.3 L | not captured | not captured | ['Tab4:row2:col2', 'Krzyzanski_2021_2_table_3:row1:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -117,8 +100,6 @@ not matched (stem Krzyzanski_2021_2)
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_betamethasone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Krzyzanski_2021_2` / `Krzyzanski_2021_2::reference`)
-- model: `../../../knowledgebase/drugs/drug_betamethasone/models/modelica/_needs_review/Betamethasone_Krzyzanski2021v2_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_betamethasone/models/modelica/_needs_review/Betamethasone_Krzyzanski2021v2_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

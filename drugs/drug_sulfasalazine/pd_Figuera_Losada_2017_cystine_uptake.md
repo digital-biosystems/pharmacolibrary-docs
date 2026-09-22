@@ -3,7 +3,7 @@
 # name — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 - **paper:** `Figuera-Losada_2017`
-- **model family:** `emax`
+- **model family:** `unknown`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
 - **effect:** inhibition/unknown

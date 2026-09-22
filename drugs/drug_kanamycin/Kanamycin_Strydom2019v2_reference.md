@@ -1,20 +1,18 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;kanamycin&quot;,&quot;href&quot;:&quot;drugs/drug_kanamycin/&quot;},{&quot;label&quot;:&quot;Strydom_2019_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Kanamycin_Dijkstra2015_reference&quot;,&quot;label&quot;:&quot;Dijkstra_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_kanamycin/Kanamycin_Dijkstra2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Kanamycin_Strydom2019v2_reference&quot;,&quot;label&quot;:&quot;Strydom_2019_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Kanamycin_Chang2017v2_reference&quot;,&quot;label&quot;:&quot;Chang_2017_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_kanamycin/Kanamycin_Chang2017v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Kanamycin_Dijkstra2015_reference&quot;,&quot;label&quot;:&quot;Dijkstra_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_kanamycin/Kanamycin_Dijkstra2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Kanamycin_Strydom2019v2_reference&quot;,&quot;label&quot;:&quot;Strydom_2019_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # kanamycin — `Kanamycin_Strydom2019v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 ### Reviewer guidance
 
-**What is wrong:** a compartment is unreachable, or a metabolite is unlinked; the reference covariate scenario does not reconstruct
+**What is wrong:** every check the reviewer could run passed
 
 **Steps:**
-1. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
-2. Parent/metabolite records commonly miss the formation link.
-3. Check covariate_definitions and the reference category in _interpretv2.yaml.
+1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
@@ -23,19 +21,16 @@ Strydom N; Gupta SV; Fox WS; Via LE; Bang H; Lee M; et al. et al. (2019). PLoS m
   ·  DOI: [10.1371/journal.pmed.1002773](https://doi.org/10.1371/journal.pmed.1002773)
 
 ## Model component
-<dbs-pgx drug="kanamycin" model-id="Kanamycin_Strydom2019v2_reference" status="rejected" stale="false" population="pulmonary tuberculosis patients undergoing lung resection surgery" measured-compound="rifampin, isoniazid, linezolid, moxifloxacin, clofazimine, pyrazinamide, kanamycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="kanamycin" model-id="Kanamycin_Strydom2019v2_reference" status="curated_candidate" stale="false" population="adults with tuberculosis" measured-compound="kanamycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Lag time (h) | `Q83` · tlag | -0.13 | h | -468.0 | h | not captured | exact (1.0) | Strydom_2019_2:other_prose | — | not captured |
-| Clearance (L/h) | `Q22` · CL | 5.72 | L/h | 1.588888888888889e-06 | L/h | not captured | exact (1.0) | Strydom_2019_2:other_prose | — | not captured |
-| Central volume (L) | `Q63` · V1 | 52.3 | L | 0.0523 | L | not captured | exact (1.0) | Strydom_2019_2:other_prose | — | not captured |
-| Peripheral volume (L) | `Q64` · V2 | -40.4 | L | -0.0404 | L | not captured | exact (1.0) | Strydom_2019_2:other_prose | — | not captured |
+| Rate of absorption (h−1) | `Q49` · kabs | 1.65 | h−1 | 0.0004583333333333333 | [1] / [h] | not captured | llm_corrected (0.6) | pmed.1002773.t002:row1:col6 | — | not captured |
+| Clearance (L/h) | `Q22` · CL | 4.61 | L/h | 1.2805555555555557e-06 | [l] / [h] | not captured | exact (1.0) | pmed.1002773.t002:row3:col6 | — | not captured |
+| Central volume (L) | `Q61` · V | 30.6 | L | 0.030600000000000002 | [l] | not captured | exact (1.0) | pmed.1002773.t002:row4:col6 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -44,18 +39,20 @@ Strydom N; Gupta SV; Fox WS; Via LE; Bang H; Lee M; et al. et al. (2019). PLoS m
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['F', 'Tlag']
+
 **Interpretation flags:**
-- salvaged Q83 ('Lag time (h)'=-0.13) from results prose — parameter table was unreadable
-- salvaged Q22 ('Clearance (L/h)'=5.72) from results prose — parameter table was unreadable
-- salvaged Q63 ('Central volume (L)'=52.3) from results prose — parameter table was unreadable
-- salvaged Q64 ('Peripheral volume (L)'=-40.4) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=rifampin, isoniazid, linezolid, moxifloxacin, clofazimine, pyrazinamide, kanamycin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (Clearance (L/h)); Q63 (Central volume (L))
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=kanamycin
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'Central volume (L)' is the general volume)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- text-pointer recovery: parsed 0 structural record(s) from the flattened table 1 sentence
+- unparsed cell pmed.1002773.t002:row3:col2 = 's: 9.41 (3.26)i: 24.0 (9.41)f: 38.1 (5.41)'
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -63,13 +60,27 @@ Strydom N; Gupta SV; Fox WS; Via LE; Bang H; Lee M; et al. et al. (2019). PLoS m
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_sign_Q64 | fail | not captured | -40.4 | not captured | not captured | not captured |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.72 | not captured | not captured | ['Strydom_2019_2:other_prose'] |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 5.72 L/h | not captured | not captured | ['Strydom_2019_2:other_prose'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 52.3 L | not captured | not captured | ['Strydom_2019_2:other_prose'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pmed.1002773.t002:row3:col6'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pmed.1002773.t002:row1:col6'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['pmed.1002773.t002:row4:col6'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.61 | not captured | not captured | ['pmed.1002773.t002:row3:col6'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 4.61 L/h | not captured | not captured | ['pmed.1002773.t002:row3:col6'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 30.6 L | not captured | not captured | ['pmed.1002773.t002:row4:col6'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=kanamycin) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -79,6 +90,9 @@ Strydom N; Gupta SV; Fox WS; Via LE; Bang H; Lee M; et al. et al. (2019). PLoS m
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_kanamycin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Strydom_2019_2` / `Strydom_2019_2::reference`)
+- model: `../../../knowledgebase/drugs/drug_kanamycin/models/modelica/Kanamycin_Strydom2019v2_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_kanamycin/models/modelica/Kanamycin_Strydom2019v2_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_kanamycin/models/modelica/Kanamycin_Strydom2019v2_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -87,19 +101,22 @@ Strydom N; Gupta SV; Fox WS; Via LE; Bang H; Lee M; et al. et al. (2019). PLoS m
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference_modelica.zip" download>Kanamycin_Strydom2019v2_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference_matlab.zip" download>Kanamycin_Strydom2019v2_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference_matlab_simbio.zip" download>Kanamycin_Strydom2019v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference_sbml.zip" download>Kanamycin_Strydom2019v2_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference_cellml.zip" download>Kanamycin_Strydom2019v2_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference.svg" alt="Kanamycin_Strydom2019v2_reference diagram"><figcaption>The structure OpenModelica draws for this model, with this record's parameter values in the component labels.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+<dbs-fmusim paramsurl="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_kanamycin/Kanamycin_Strydom2019v2_reference/Kanamycin_Strydom2019v2_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Kanamycin_Strydom2019v2_reference_params.json` · controls `Kanamycin_Strydom2019v2_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

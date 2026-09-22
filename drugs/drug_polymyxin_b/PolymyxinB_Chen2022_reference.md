@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07A&quot;,&quot;href&quot;:&quot;atc/A07A.md&quot;},{&quot;label&quot;:&quot;polymyxin B&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/&quot;},{&quot;label&quot;:&quot;Chen_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PolymyxinB_Chauzy2022_reference&quot;,&quot;label&quot;:&quot;Chauzy_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Chauzy2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;PolymyxinB_Lakota2018_reference&quot;,&quot;label&quot;:&quot;Lakota_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Lakota2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PolymyxinB_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Li2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Manchandani2018_reference&quot;,&quot;label&quot;:&quot;Manchandani_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Manchandani2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Chauzy2022_reference&quot;,&quot;label&quot;:&quot;Chauzy_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Chauzy2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PolymyxinB_Chen2022_reference&quot;,&quot;label&quot;:&quot;Chen_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Chen2022_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;PolymyxinB_Lakota2018_reference&quot;,&quot;label&quot;:&quot;Lakota_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_polymyxin_b/PolymyxinB_Lakota2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,7 +25,7 @@ Chen N; Guo J; Xie J; Xu M; Hao X; Ma K; et al. et al. (2022). Annals of transla
   ·  DOI: [10.21037/atm-22-236](https://doi.org/10.21037/atm-22-236)
 
 ## Model component
-<dbs-pgx drug="polymyxin B" model-id="PolymyxinB_Chen2022_reference" status="model_quarantined" stale="false" population="patients with severe infections" measured-compound="polymyxin B" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="polymyxin B" model-id="PolymyxinB_Chen2022_reference" status="model_quarantined" stale="false" population="adults with severe infections" measured-compound="polymyxin_b" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -66,7 +66,7 @@ Chen N; Guo J; Xie J; Xu M; Hao X; Ma K; et al. et al. (2022). Annals of transla
 - salvaged Q22 ('total clearance (CL)'=2.43) from results prose — parameter table was unreadable
 - salvaged Q61 ('central compartment distribution volume'=13.4) from results prose — parameter table was unreadable
 - salvaged Q30 ('distribution clearance'=8.78) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=polymyxin B
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=polymyxin_b
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - bound model equation to Q22 (CL): CL = 1.59 L/h, IIV =13.0%; CL (L/h) = 1.59 * (CrCL/80)^0.408; V =20.5 L; RV (CV%) =40.5%
@@ -106,6 +106,7 @@ Chen N; Guo J; Xie J; Xu M; Hao X; Ma K; et al. et al. (2022). Annals of transla
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 13.4 L | not captured | not captured | ['Chen_2022:other_prose'] |
 
@@ -113,6 +114,7 @@ Chen N; Guo J; Xie J; Xu M; Hao X; Ma K; et al. et al. (2022). Annals of transla
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | fail | 2 scholar param(s) emitted or defaulted | 1 covered | not captured | neither emitted nor in defaulted[]: ['Q'] |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
