@@ -1,5 +1,5 @@
 {
- "kb_mtime": 1790073554.800331,
+ "kb_mtime": 1790076530.767089,
  "rows": {
   "13c_urea": {
    "abstract_only": 3,
@@ -4756,9 +4756,9 @@
    "tokens_out": null
   },
   "algeldrate": {
-   "abstract_only": 72,
+   "abstract_only": 77,
    "backend": "ollama",
-   "calls": 78,
+   "calls": 212,
    "combination": null,
    "curated_models": 0,
    "drug": "algeldrate",
@@ -4766,17 +4766,17 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 1114.0,
+   "elapsed_s": 1572.1,
    "eu_status": "not_centrally_authorised",
-   "grobid": 5,
+   "grobid": 6,
    "has_truth": false,
    "interactions": 0,
-   "jats": 11,
+   "jats": 17,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 67,
+   "no_pdf": 77,
    "non_oa": 1,
-   "oa": 20,
-   "papers": 88,
+   "oa": 22,
+   "papers": 100,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -4799,10 +4799,10 @@
    "review_records": 0,
    "src_pgx_jats": 1,
    "supp_nonmem": 0,
-   "supp_other": 12,
+   "supp_other": 14,
    "supp_pgx_none": 1,
-   "tokens_in": 150490,
-   "tokens_out": 4562
+   "tokens_in": 449756,
+   "tokens_out": 10707
   },
   "alginic_acid": {
    "abstract_only": 79,
@@ -5467,12 +5467,12 @@
   "almagate": {
    "abstract_only": 15,
    "backend": "ollama",
-   "calls": 25,
+   "calls": 50,
    "combination": null,
    "curated_models": 0,
    "drug": "almagate",
    "drugbank_groups": [],
-   "elapsed_s": 357.7,
+   "elapsed_s": 215.3,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -5505,20 +5505,20 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 5,
-   "tokens_in": 51521,
-   "tokens_out": 4070
+   "tokens_in": 145586,
+   "tokens_out": 2435
   },
   "almasilate": {
    "abstract_only": 3,
    "backend": "ollama",
-   "calls": 7,
+   "calls": 14,
    "combination": null,
    "curated_models": 0,
    "drug": "almasilate",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 108.2,
+   "elapsed_s": 72.2,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -5551,8 +5551,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 9639,
-   "tokens_out": 546
+   "tokens_in": 27094,
+   "tokens_out": 745
   },
   "alminoprofen": {
    "abstract_only": 2,
@@ -5753,7 +5753,7 @@
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 159.0,
+   "elapsed_s": 40.3,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -5786,8 +5786,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 860,
-   "tokens_out": 7761
+   "tokens_in": 1445,
+   "tokens_out": 210
   },
   "alosetron": {
    "abstract_only": 21,
@@ -6353,7 +6353,7 @@
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 45.9,
+   "elapsed_s": 38.4,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -6386,8 +6386,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 839,
-   "tokens_out": 893
+   "tokens_in": 1424,
+   "tokens_out": 213
   },
   "aluminium_acetotartrate": {
    "abstract_only": 0,
@@ -6621,14 +6621,14 @@
   "aluminium_glycinate": {
    "abstract_only": 4,
    "backend": "ollama",
-   "calls": 8,
+   "calls": 11,
    "combination": null,
    "curated_models": 0,
    "drug": "aluminium_glycinate",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 122.9,
+   "elapsed_s": 63.2,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -6661,11 +6661,11 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 11824,
-   "tokens_out": 713
+   "tokens_in": 25002,
+   "tokens_out": 639
   },
   "aluminium_hydroxide": {
-   "abstract_only": 48,
+   "abstract_only": 72,
    "backend": "ollama",
    "calls": 91,
    "combination": null,
@@ -6674,21 +6674,21 @@
    "drugbank_groups": [],
    "elapsed_s": 1495.4,
    "eu_status": "not_centrally_authorised",
-   "grobid": 9,
+   "grobid": 12,
    "has_truth": false,
    "interactions": 0,
-   "jats": 22,
+   "jats": 27,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 48,
-   "non_oa": 4,
-   "oa": 28,
-   "papers": 80,
+   "no_pdf": 69,
+   "non_oa": 5,
+   "oa": 37,
+   "papers": 111,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
    "pd_rejected": 0,
    "pd_review_models": 0,
-   "pdftext": 1,
+   "pdftext": 0,
    "pgx_extracted": 1,
    "pgx_gapfill": null,
    "pgx_other": 0,
@@ -6705,7 +6705,7 @@
    "review_records": 0,
    "src_pgx_jats": 1,
    "supp_nonmem": 0,
-   "supp_other": 18,
+   "supp_other": 24,
    "supp_pgx_none": 1,
    "tokens_in": 225677,
    "tokens_out": 5390
