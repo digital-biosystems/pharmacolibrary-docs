@@ -334,7 +334,13 @@
   }
   function renderTable(root, M) {
     root.innerHTML = '<table class="pks-tbl"><tr><th>drug</th><th>process</th><th>tissue</th><th>actor</th><th>role</th><th>evidence</th></tr>' +
-      M.rows.map(function (r) { return '<tr><td>' + esc(nameOf(M, r.drug)) + '</td><td>' + esc(r.process) + '</td><td>' + esc(r.tissue || '—') + '</td><td class="mono">' + esc(r.actor || (r.quote ? '“' + r.quote.slice(0, 70) + '…”' : '')) + '</td><td>' + esc(r.role || '') + '</td><td>' + evidenceCell(r) + '</td></tr>'; }).join('') + '</table>';
+      M.rows.map(function (r) {
+        // a prose row's actor cell is the quote: clipped to one short line, the whole
+        // sentence on hover — a 200-character quote used to push role and evidence off screen
+        var actor = r.actor ? '<span class="mono">' + esc(r.actor) + '</span>'
+                  : (r.quote ? '<span class="pks-quote" title="' + esc(r.quote) + '">“' + esc(r.quote) + '”</span>' : '');
+        return '<tr><td>' + esc(nameOf(M, r.drug)) + '</td><td>' + esc(r.process) + '</td><td>' + esc(r.tissue || '—') + '</td><td>' + actor + '</td><td>' + esc(r.role || '') + '</td><td>' + evidenceCell(r) + '</td></tr>';
+      }).join('') + '</table>';
   }
 
   function render(root, M, opts) {
