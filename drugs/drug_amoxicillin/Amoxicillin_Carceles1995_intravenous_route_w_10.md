@@ -9,7 +9,7 @@
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>accepted, but a check is unmet or a value is borderline; the record page says which.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>a model of the other family re-read the paper and agreed on every compared field.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>the second reading differs on a non-structural field (a population label, a flag).</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>the second reading differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>a model of the other family re-read the paper and agreed on every compared field.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>the second reading differs on a non-structural field (a population label, a flag).</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>the second reading differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -30,20 +30,69 @@
 
 <sub>owner: **scholar** · guidance written by playbook</sub>
 
+> **Dose compound ≠ measured compound:** dosed `amoxicillin-clavulanic acid`, measured `amoxicillin and clavulanic acid`.
+
 ## Citation
 not matched (stem Carceles_1995)
 
 ## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Carceles1995_intravenous_route_w_10" status="rejected" stale="false" population="turkeys and chickens" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Carceles1995_intravenous_route_w_10" status="rejected" stale="false" population="turkeys and chickens" measured-compound="amoxicillin and clavulanic acid" parameterization="apparent" topology="2C"></dbs-pgx>
 
-**Parameterization:** not captured.
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ha (h) | `Q57` · t1/2z | 0.09 | h | 324.0 | [h] | not captured | llm (0.6) | tab_1:row4:col3 | — | not captured |
+| C max (mg/1) | `Q32` · Cmax | 7.99 | mg/1 | not captured | [mg] / [1] | not captured | llm (0.6) | tab_1:row8:col3, tab_1:row8:col4 | — | not captured |
+| F K (I/kg) | `Q76` · V/F | 2.311 | I/kg | not captured | [i] / [kg] | not captured | llm (0.6) | tab_1:row10:col3, tab_1:row10:col4 | — | not captured |
+| AUC (mg/h/1) | `Q88` · AUC | 14.32 | mg/h/1 | not captured | [mg] / [[h] · [1]] | not captured | exact (1.0) | tab_1:row11:col3, tab_1:row11:col4 | — | not captured |
+| 2VlRT(h) | `Q64` · V2 | 1.51 | h | not captured | [h] | not captured | llm (0.6) | tab_1:row12:col3, tab_1:row12:col4 | — | not captured |
+| MAT(h) | `Q73` · MAT | 0.34 | h | 1224.0 | [h] | not captured | exact (1.0) | tab_1:row13:col3, tab_1:row13:col4 | — | not captured |
+| CUF (1/h/kg) | `Q27` · CL/F | 1.08 | h | not captured | [h] | not captured | llm (0.6) | tab_1:row14:col3, tab_1:row14:col4 | — | not captured |
+| F (%) | `Q40` · Fab | 85.49 | not captured | not captured | not captured | not captured | exact (1.0) | tab_1:row15:col3, tab_1:row15:col4 | — | not captured |
+| ka (h−1) | `Q49` · kabs | 0.17 | h−1 | 4.722222222222223e-05 | 1/h | not captured | review_gapfill (0.7) | Baklouti_2026:review | — | not captured |
+| T lagpo | `Q83` · tlag | 0.25 | h | 900.0 | h | not captured | review_gapfill (0.7) | Dubbelboer_2025:review | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
+
+**Interpretation flags:**
+- dropped value-less row: '¿.(h" 1 ) A, (h" 1 )' (captured trailing unit 'h" 1' for child rows)
+- dropped value-less row: 'tixi (h)' (captured trailing unit 'h' for child rows)
+- unit_dimension_mismatch: 'C max (mg/1)' → Q32 (unit '[mass]' vs ontology '[mass] / [length] ** 3') — route to review
+- unit_dimension_unknown: 'I/kg' (V/F)
+- unit_dimension_mismatch: 'AUC (mg/h/1)' → Q88 (unit '[mass] / [time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- unit_dimension_mismatch: '2VlRT(h)' → Q64 (unit '[time]' vs ontology '[length] ** 3') — route to review
+- unit 'h' inherited from a section-header row for CL/F (not printed on this row itself) — see the unit_dimension_mismatch check below if this is wrong
+- unit_dimension_mismatch: 'CUF (1/h/kg)' → Q27 (unit '[time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped value-less row: 'k a'
+- dropped value-less row: 'Ai'
+- dropped value-less row: 'X z'
+- dropped value-less row: 'fj a'
+- dropped value-less row: 't{x\\:'
+- dropped value-less row: 'r^:'
+- dropped value-less row: 'w:'
+- dropped value-less row: 'C m ":'
+- dropped value-less row: 'V z :'
+- dropped value-less row: 'V a :'
+- dropped value-less row: 'AUC:'
+- dropped value-less row: 'MRT:'
+- dropped value-less row: 'MAT:'
+- dropped value-less row: 'CL/F:'
+- dropped value-less row: 'F:'
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=amoxicillin and clavulanic acid
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
+- population split: 'intravenous route (w= 10)' subgroup of Carceles_1995 (paper reports 2 populations: intramuscular route (n = 5), intravenous route (w= 10))
+- gap-filled Q49 (kabs) from Baklouti_2026's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Dubbelboer_2025's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell tab_1:row2:col3 = '7.35 ± 0.93 -'
@@ -77,6 +126,24 @@ second reader `gpt-oss:120b` · first reading `qwen3.6:27b-q8_0` · agreement 0.
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>the model that re-read the paper. It is chosen from the OTHER family (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them means little.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields the two readings agree on.</td></tr><tr><td><code>verdict</code></td><td>`elevate` both readings agree · `flag` a non-structural field differs · `block` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the primary extracted nothing and was given one hinted retry.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the primary — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
 </details>
 
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | fail | [time] | h | not captured | not captured | ['tab_1:row14:col3', 'tab_1:row14:col4'] |
+| C5_dimension_Q32 | fail | [mass] | mg/1 | not captured | not captured | ['tab_1:row8:col3', 'tab_1:row8:col4'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Baklouti_2026:review'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['tab_1:row4:col3'] |
+| C5_dimension_Q64 | fail | [time] | h | not captured | not captured | ['tab_1:row12:col3', 'tab_1:row12:col4'] |
+| C5_dimension_Q73 | pass | [time] | not captured | not captured | not captured | ['tab_1:row13:col3', 'tab_1:row13:col4'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Dubbelboer_2025:review'] |
+| C5_dimension_Q88 | fail | [mass] / [time] | mg/h/1 | not captured | not captured | ['tab_1:row11:col3', 'tab_1:row11:col4'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
