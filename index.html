@@ -120,6 +120,20 @@
     .pks-evkey i.e2 { background: var(--pks-ev2); } .pks-evkey i.e3 { background: var(--pks-ev3); }
     .pks-evkey i.aff { box-shadow: inset 0 0 0 2px var(--pks-warn); }
     .pks-scroll { overflow-x: auto; }
+    /* who-affects-whom: the partner codes on a heat-map row label and the directed matrix */
+    .pks-partners { font-size: 11px; color: #64748b; white-space: nowrap; margin-left: 4px; }
+    .pks-code { display: inline-block; font: 600 10.5px ui-monospace, Menlo, monospace; color: #1e293b;
+      border: 1px solid #cbd5e1; border-radius: 999px; padding: 0 5px 0 3px; margin-left: 2px; background: #fff; }
+    .pks-code i, .pks-hm th.drug .pks-code i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 3px; vertical-align: 0; }
+    .pks-ddi { border-collapse: separate; border-spacing: 2px; font-size: 12px; }
+    .pks-ddi th { font-weight: 500; color: #475569; text-align: left; padding: 3px 8px; white-space: nowrap; vertical-align: bottom; }
+    .pks-ddi th.corner span { font: 500 11px ui-monospace, Menlo, monospace; letter-spacing: .04em; text-transform: uppercase; color: #94a3b8; }
+    .pks-ddi th i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+    .pks-ddi td { min-width: 96px; height: 30px; padding: 4px 8px; border-radius: 4px; background: var(--pks-ev0); vertical-align: middle; }
+    .pks-ddi td.self { background: repeating-linear-gradient(135deg, #e2e8f0 0 3px, transparent 3px 7px); }
+    .pks-ddi td.hit { background: #fff; box-shadow: inset 0 0 0 2px var(--pks-warn); line-height: 1.5; }
+    .pks-ddi .pks-act { white-space: nowrap; }
+    .pks-ddi .dim, .pks-ddi tr.dim th, .pks-ddi tr.dim td { opacity: .35; }
     .pks-hm { border-collapse: separate; border-spacing: 2px; font-size: 12px; }
     .pks-hm th { font-weight: 500; color: #475569; text-align: left; padding: 2px 6px; white-space: nowrap; }
     .pks-hm th.proc { font: 500 11px ui-monospace, Menlo, monospace; letter-spacing: .06em;

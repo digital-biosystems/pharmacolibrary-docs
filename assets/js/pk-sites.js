@@ -132,6 +132,25 @@
     return s;
   }
   function nameOf(M, slug) { var d = M.drugs.filter(function (x) { return x.slug === slug; })[0]; return d ? d.name : slug; }
+  function codePill(M, slug) {
+    var i = M.drugs.map(function (z) { return z.slug; }).indexOf(slug);
+    return '<span class="pks-code" title="' + esc(nameOf(M, slug)) + '"><i style="background:' + COLORS[i] + '"></i>' + esc(code(nameOf(M, slug))) + '</span>';
+  }
+  // The row label's answer to "who": ⇠ the drugs that inhibit/induce an actor this drug is a
+  // substrate of (perpetrators), ⇢ the drugs this one affects (victims). Each code wears the
+  // drug's own colour — the same swatch that names it in the row header, the chips and the
+  // organ slots — so the reader never has to hover to learn which drug the ring points at.
+  function partnerCodes(M, slug) {
+    var perps = [], victs = [];
+    M.affected.forEach(function (a) {
+      if (a.victim === slug && perps.indexOf(a.perpetrator) < 0) perps.push(a.perpetrator);
+      if (a.perpetrator === slug && victs.indexOf(a.victim) < 0) victs.push(a.victim);
+    });
+    var h = '';
+    if (perps.length) h += ' <span class="pks-partners" title="affected by">\u21E0 ' + perps.map(function (p) { return codePill(M, p); }).join('') + '</span>';
+    if (victs.length) h += ' <span class="pks-partners" title="affects">\u21E2 ' + victs.map(function (v) { return codePill(M, v); }).join('') + '</span>';
+    return h;
+  }
 
   function renderHeatmap(root, M, opts) {
     var focus = opts.focus, showDDI = opts.ddi !== false;
@@ -148,7 +167,7 @@
     cols.forEach(function (c, k) { h += '<th class="tissue"><span>' + esc(c[1]) + '</span></th>' + (k + 1 < cols.length && cols[k + 1][0] !== c[0] ? '<th class="gap"></th>' : ''); });
     h += '</tr>';
     M.drugs.forEach(function (d, di) {
-      h += '<tr' + (focus && focus !== d.slug ? ' class="dim"' : '') + '><th class="drug"><i style="background:' + COLORS[di] + '"></i>' + esc(d.name) + '</th>';
+      h += '<tr' + (focus && focus !== d.slug ? ' class="dim"' : '') + '><th class="drug"><i style="background:' + COLORS[di] + '"></i>' + esc(d.name) + (showDDI ? partnerCodes(M, d.slug) : '') + '</th>';
       cols.forEach(function (c, k) {
         var cl = cellOf(M, d.slug, c[0], c[1]); var aff = showDDI ? affectedAt(M, d.slug, c[0], c[1]) : [];
         h += '<td class="e' + cl.w + (aff.length ? ' aff' : '') + '" tabindex="0" data-d="' + esc(d.slug) + '" data-p="' + esc(c[0]) + '" data-t="' + esc(c[1]) + '" aria-label="' + esc(d.name + ' ' + c[0] + ' ' + c[1] + ' tier ' + cl.w) + '"></td>';
@@ -237,6 +256,41 @@
     root.innerHTML = h;
   }
 
+  // "Who affects whom": rows are perpetrators, columns victims, a cell the actor(s) through
+  // which the row drug changes the column drug's fate — ⊣ inhibits, ↑ induces — with the
+  // tissue in the tooltip. Every drug of the set sits on both axes so an EMPTY row or column
+  // is itself readable (this drug affects nothing / is affected by nothing here). The
+  // shared-actors list below carries the same facts undirected; this is the directed view.
+  function renderDdi(root, M, opts) {
+    var focus = opts.focus, showDDI = opts.ddi !== false;
+    if (!showDDI) { root.innerHTML = '<p class="pks-empty">co-administration layer is off.</p>'; return; }
+    if (!M.affected.length) { root.innerHTML = '<p class="pks-empty">No perpetrator \u2192 victim pair in this set: no drug here inhibits or induces an actor another one is a substrate of.</p>'; return; }
+    var cell = {};
+    M.affected.forEach(function (a) {
+      var k = a.perpetrator + '|' + a.victim, c = cell[k] = cell[k] || {};
+      var v = c[a.actor] = c[a.actor] || { effect: a.effect, tissues: [], process: a.process };
+      if (a.tissue && v.tissues.indexOf(a.tissue) < 0) v.tissues.push(a.tissue);
+    });
+    var h = '<table class="pks-ddi"><tr><th class="corner"><span>perpetrator \u2193 \u00b7 victim \u2192</span></th>';
+    M.drugs.forEach(function (d, i) { h += '<th class="victim' + (focus && focus !== d.slug ? ' dim' : '') + '"><i style="background:' + COLORS[i] + '"></i>' + esc(d.name) + '</th>'; });
+    h += '</tr>';
+    M.drugs.forEach(function (p, i) {
+      h += '<tr' + (focus && focus !== p.slug ? ' class="dim"' : '') + '><th class="perp"><i style="background:' + COLORS[i] + '"></i>' + esc(p.name) + '</th>';
+      M.drugs.forEach(function (v) {
+        if (v.slug === p.slug) { h += '<td class="self"></td>'; return; }
+        var c = cell[p.slug + '|' + v.slug];
+        if (!c) { h += '<td class="none' + (focus && focus !== v.slug && focus !== p.slug ? ' dim' : '') + '"></td>'; return; }
+        var acts = Object.keys(c).sort().map(function (g) {
+          var x = c[g], glyph = x.effect.indexOf('inducer') >= 0 ? (x.effect.indexOf('inhibitor') >= 0 ? '\u22A3\u2191' : '\u2191') : '\u22A3';
+          return '<span class="pks-act" title="' + esc(p.name + ' ' + x.effect + ' ' + g + ' \u2192 ' + v.name + ' (substrate)' + (x.process ? ' \u00b7 ' + x.process : '') + ' \u00b7 ' + (x.tissues.length ? x.tissues.join(', ') : 'site unmapped')) + '"><span class="mono">' + esc(g) + '</span> ' + glyph + '</span>';
+        });
+        h += '<td class="hit' + (focus && focus !== v.slug && focus !== p.slug ? ' dim' : '') + '">' + acts.join('<br>') + '</td>';
+      });
+      h += '</tr>';
+    });
+    root.innerHTML = '<div class="pks-scroll">' + h + '</table></div><p class="pks-meta">\u22A3 inhibits the actor \u00b7 \u2191 induces it; the column drug is that actor\u2019s substrate. Hover a cell for the tissue.</p>';
+  }
+
   function renderShared(root, M) {
     var order = { ddi_candidate: 0, shared_substrate: 1, shared: 2 };
     var list = M.shared.slice().sort(function (a, b) { return (order[a.kind] - order[b.kind]) || a.actor.localeCompare(b.actor); });
@@ -265,6 +319,8 @@
       renderDetail(det, M, d, t, !!pin);
     } }));
     if (det && !det.dataset.pin && M.drugs.length) renderDetail(det, M, opts.focus || M.drugs[0].slug, null, false);
+    var ddi = root.querySelector('.pks-ddi-box');
+    if (ddi) renderDdi(ddi, M, opts);
     if (sh) renderShared(sh, M);
     if (tb) renderTable(tb, M);
   }

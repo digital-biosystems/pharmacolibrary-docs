@@ -26,6 +26,9 @@ DrugBank's curated actors + a tissue table), downloaded once; nothing is sent an
     <div class="pks-evkey"><span><i class="e3"></i>DrugBank actor</span><span><i class="e2"></i>paper PGx gene</span><span><i class="e1"></i>ADME prose</span><span><i class="e0"></i>none</span><span><i class="aff"></i>affected by co-administration</span></div>
     <h2>Site heat-map</h2>
     <div class="pks-heatmap"></div>
+    <h2>Who affects whom</h2>
+    <p class="pkq-meta">Rows are perpetrators, columns victims: the cell names the enzyme or transporter through which the row drug can change the column drug's exposure (⊣ inhibits, ↑ induces; the column drug is its substrate). The same pairs are marked on the heat-map row labels — ⇠ the drugs that affect this one, ⇢ the drugs it affects.</p>
+    <div class="pks-ddi-box"></div>
     <h2>Anatomogram</h2>
     <p class="pkq-meta">Each organ carries one slot per drug, in the chips' order, shaded by evidence. A dashed ring marks an organ where another drug in the set inhibits or induces the actor at work there; click a chip to isolate a drug and draw the perpetrator → victim arrows. Hover an organ for its actors, click to pin.</p>
     <div class="pks-grid"><div class="pks-anatomogram"></div><div class="pks-detailbox"></div></div>
