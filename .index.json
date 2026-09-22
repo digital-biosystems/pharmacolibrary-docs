@@ -3191,22 +3191,30 @@
   "counts": {
    "pd": 0,
    "pgx": 0,
-   "pk": 1
+   "pk": 0
   },
   "curated": 0,
   "details": [
    {
+    "label": "Schoenmakers_2025 \u00b7 reference",
+    "model_id": "Betamethasone_Schoenmakers2025_reference"
+   },
+   {
     "label": "Krzyzanski_2021_2 \u00b7 reference",
     "model_id": "Betamethasone_Krzyzanski2021v2_reference"
+   },
+   {
+    "label": "Sullivan_2026 \u00b7 reference",
+    "model_id": "Betamethasone_Sullivan2026_reference"
    }
   ],
   "dir": "drug_betamethasone",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:13.134408+00:00",
+  "last_change": "2026-09-22T06:18:58.543228+00:00",
   "name": "betamethasone",
   "needs_review": 1,
-  "records": 1,
-  "rejected": 0,
+  "records": 3,
+  "rejected": 2,
   "rendered": true,
   "slug": "betamethasone",
   "stale": 0
@@ -3263,21 +3271,25 @@
   "counts": {
    "pd": 3,
    "pgx": 0,
-   "pk": 1
+   "pk": 2
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Wang_2001 \u00b7 reference",
+    "model_id": "Biotin_Wang2001_reference"
+   },
    {
     "label": "Wang_2023 \u00b7 reference",
     "model_id": "Biotin_Wang2023_reference"
    }
   ],
   "dir": "drug_biotin",
-  "extracted": 1,
-  "last_change": "2026-09-17T15:08:13.174140+00:00",
+  "extracted": 2,
+  "last_change": "2026-09-22T01:57:16.965422+00:00",
   "name": "biotin",
   "needs_review": 0,
-  "records": 1,
+  "records": 2,
   "rejected": 0,
   "rendered": true,
   "slug": "biotin",
@@ -3772,7 +3784,7 @@
   "counts": {
    "pd": 4,
    "pgx": 0,
-   "pk": 2
+   "pk": 0
   },
   "curated": 0,
   "details": [
@@ -3791,7 +3803,7 @@
   ],
   "dir": "drug_budesonide",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:14.324593+00:00",
+  "last_change": "2026-09-22T06:18:58.593518+00:00",
   "name": "budesonide",
   "needs_review": 2,
   "records": 3,
@@ -3872,13 +3884,13 @@
   "curated": 0,
   "details": [
    {
-    "label": "Butz_1981 \u00b7 beagle dogs",
-    "model_id": "Bupropion_Butz1981_beagle_dogs"
+    "label": "Butz_1981 \u00b7 reference",
+    "model_id": "Bupropion_Butz1981_reference"
    }
   ],
   "dir": "drug_bupropion",
   "extracted": 0,
-  "last_change": "2026-09-12T01:27:30.743788+00:00",
+  "last_change": "2026-09-22T07:52:45.173104+00:00",
   "name": "bupropion",
   "needs_review": 0,
   "records": 1,
@@ -5136,7 +5148,7 @@
    "A08AA07"
   ],
   "counts": {
-   "pd": 9,
+   "pd": 13,
    "pgx": 0,
    "pk": 0
   },
@@ -6954,54 +6966,34 @@
   "counts": {
    "pd": 0,
    "pgx": 0,
-   "pk": 0
+   "pk": 2
   },
   "curated": 0,
   "details": [
    {
-    "label": "Yu_2022 \u00b7 estimate",
-    "model_id": "Colistin_Yu2022_estimate"
+    "label": "Ma_2026 \u00b7 reference",
+    "model_id": "Colistin_Ma2026_reference"
    },
    {
-    "label": "Yu_2022 \u00b7 estimate",
-    "model_id": "Colistin_Yu2022_estimate"
+    "label": "Boonyasiri_2025 \u00b7 reference",
+    "model_id": "Colistin_Boonyasiri2025_reference"
+   },
+   {
+    "label": "Yu_2022 \u00b7 reference",
+    "model_id": "Colistin_Yu2022_reference"
    },
    {
     "label": "Xie_2022 \u00b7 reference",
     "model_id": "Colistin_Xie2022_reference"
-   },
-   {
-    "label": "Yu_2022 \u00b7 pk_formula",
-    "model_id": "Colistin_Yu2022_pk_formula"
-   },
-   {
-    "label": "Yu_2022 \u00b7 pk_formula",
-    "model_id": "Colistin_Yu2022_pk_formula"
-   },
-   {
-    "label": "Yu_2022 \u00b7 pk_parameter",
-    "model_id": "Colistin_Yu2022_pk_parameter"
-   },
-   {
-    "label": "Yu_2022 \u00b7 pk_parameter",
-    "model_id": "Colistin_Yu2022_pk_parameter"
-   },
-   {
-    "label": "Yu_2022 \u00b7 shrinkage",
-    "model_id": "Colistin_Yu2022_shrinkage"
-   },
-   {
-    "label": "Yu_2022 \u00b7 shrinkage",
-    "model_id": "Colistin_Yu2022_shrinkage"
    }
   ],
   "dir": "drug_colistin",
-  "extracted": 0,
-  "last_change": "2026-09-17T15:08:24.958683+00:00",
+  "extracted": 1,
+  "last_change": "2026-09-22T02:28:01.315489+00:00",
   "name": "colistin",
   "needs_review": 2,
-  "records": 9,
-  "rejected": 7,
+  "records": 4,
+  "rejected": 1,
   "rendered": true,
   "slug": "colistin",
   "stale": 0
@@ -7169,14 +7161,23 @@
    "pk": 0
   },
   "curated": 0,
-  "details": [],
+  "details": [
+   {
+    "label": "Fuller_1983 \u00b7 reference",
+    "model_id": "CromoglicicAcid_Fuller1983_reference"
+   },
+   {
+    "label": "Neale_1986 \u00b7 reference",
+    "model_id": "CromoglicicAcid_Neale1986_reference"
+   }
+  ],
   "dir": "drug_cromoglicic_acid",
   "extracted": 0,
-  "last_change": null,
+  "last_change": "2026-09-22T06:18:58.610855+00:00",
   "name": "cromoglicic acid",
-  "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
+  "needs_review": 1,
+  "records": 2,
+  "rejected": 1,
   "rendered": true,
   "slug": "cromoglicic_acid",
   "stale": 0
@@ -7898,7 +7899,7 @@
    "A08AA04"
   ],
   "counts": {
-   "pd": 2,
+   "pd": 0,
    "pgx": 0,
    "pk": 0
   },
@@ -8615,7 +8616,7 @@
    "A07BC05"
   ],
   "counts": {
-   "pd": 4,
+   "pd": 11,
    "pgx": 0,
    "pk": 0
   },
@@ -11066,7 +11067,7 @@
    "N03AX26"
   ],
   "counts": {
-   "pd": 6,
+   "pd": 5,
    "pgx": 0,
    "pk": 0
   },
@@ -14372,7 +14373,7 @@
   "counts": {
    "pd": 0,
    "pgx": 0,
-   "pk": 2
+   "pk": 0
   },
   "curated": 0,
   "details": [
@@ -14391,39 +14392,15 @@
    {
     "label": "Phelps_2013 \u00b7 estimate",
     "model_id": "Inositol_Phelps2013_estimate"
-   },
-   {
-    "label": "Phelps_2013 \u00b7 2_loglikelihood_p_value_e",
-    "model_id": "Inositol_Phelps2013_2_loglikelihood_p_value_e"
-   },
-   {
-    "label": "Phelps_2013 \u00b7 2_loglikelihood_p_value_e",
-    "model_id": "Inositol_Phelps2013_2_loglikelihood_p_value_e"
-   },
-   {
-    "label": "Phelps_2013 \u00b7 parametername_a",
-    "model_id": "Inositol_Phelps2013_parametername_a"
-   },
-   {
-    "label": "Phelps_2013 \u00b7 parametername_a",
-    "model_id": "Inositol_Phelps2013_parametername_a"
-   },
-   {
-    "label": "Phelps_2013 \u00b7 standard_error",
-    "model_id": "Inositol_Phelps2013_standard_error"
-   },
-   {
-    "label": "Phelps_2013 \u00b7 standard_error",
-    "model_id": "Inositol_Phelps2013_standard_error"
    }
   ],
   "dir": "drug_inositol",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:40.642073+00:00",
+  "last_change": "2026-09-22T01:57:17.004145+00:00",
   "name": "inositol",
   "needs_review": 4,
-  "records": 10,
-  "rejected": 6,
+  "records": 4,
+  "rejected": 0,
   "rendered": true,
   "slug": "inositol",
   "stale": 0
@@ -15144,12 +15121,16 @@
    "S01AA24"
   ],
   "counts": {
-   "pd": 4,
+   "pd": 6,
    "pgx": 0,
-   "pk": 1
+   "pk": 3
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Chang_2017_2 \u00b7 reference",
+    "model_id": "Kanamycin_Chang2017v2_reference"
+   },
    {
     "label": "Dijkstra_2015 \u00b7 reference",
     "model_id": "Kanamycin_Dijkstra2015_reference"
@@ -15160,12 +15141,12 @@
    }
   ],
   "dir": "drug_kanamycin",
-  "extracted": 1,
-  "last_change": "2026-09-17T15:08:41.609514+00:00",
+  "extracted": 3,
+  "last_change": "2026-09-22T02:28:01.388552+00:00",
   "name": "kanamycin",
   "needs_review": 0,
-  "records": 2,
-  "rejected": 1,
+  "records": 3,
+  "rejected": 0,
   "rendered": true,
   "slug": "kanamycin",
   "stale": 0
@@ -15175,7 +15156,7 @@
    "A07BC02"
   ],
   "counts": {
-   "pd": 7,
+   "pd": 16,
    "pgx": 0,
    "pk": 0
   },
@@ -16129,7 +16110,7 @@
    "A06AC05"
   ],
   "counts": {
-   "pd": 1,
+   "pd": 6,
    "pgx": 0,
    "pk": 0
   },
@@ -16178,7 +16159,7 @@
    "A06AA01"
   ],
   "counts": {
-   "pd": 7,
+   "pd": 44,
    "pgx": 0,
    "pk": 0
   },
@@ -16341,7 +16322,7 @@
    "A07DA03"
   ],
   "counts": {
-   "pd": 4,
+   "pd": 6,
    "pgx": 0,
    "pk": 2
   },
@@ -16362,31 +16343,15 @@
    {
     "label": "Valenzuela_2025 \u00b7 m1",
     "model_id": "Loperamide_Valenzuela2025_m1"
-   },
-   {
-    "label": "Valenzuela_2025 \u00b7 loperamide_model",
-    "model_id": "Loperamide_Valenzuela2025_loperamide_model"
-   },
-   {
-    "label": "Valenzuela_2025 \u00b7 loperamide_model",
-    "model_id": "Loperamide_Valenzuela2025_loperamide_model"
-   },
-   {
-    "label": "Valenzuela_2025 \u00b7 m1_model",
-    "model_id": "Loperamide_Valenzuela2025_m1_model"
-   },
-   {
-    "label": "Valenzuela_2025 \u00b7 m1_model",
-    "model_id": "Loperamide_Valenzuela2025_m1_model"
    }
   ],
   "dir": "drug_loperamide",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:44.267008+00:00",
+  "last_change": "2026-09-22T04:51:07.448850+00:00",
   "name": "loperamide",
   "needs_review": 4,
-  "records": 8,
-  "rejected": 4,
+  "records": 4,
+  "rejected": 0,
   "rendered": true,
   "slug": "loperamide",
   "stale": 0
@@ -16499,7 +16464,7 @@
    "A06AX03"
   ],
   "counts": {
-   "pd": 1,
+   "pd": 2,
    "pgx": 0,
    "pk": 0
   },
@@ -16656,23 +16621,47 @@
    "A06AD15"
   ],
   "counts": {
-   "pd": 28,
+   "pd": 38,
    "pgx": 0,
-   "pk": 1
+   "pk": 7
   },
   "curated": 0,
   "details": [
    {
+    "label": "Jeon_2013 \u00b7 reference",
+    "model_id": "Macrogol_Jeon2013_reference"
+   },
+   {
+    "label": "Jian_2025 \u00b7 reference",
+    "model_id": "Macrogol_Jian2025_reference"
+   },
+   {
+    "label": "Li_2022 \u00b7 reference",
+    "model_id": "Macrogol_Li2022_reference"
+   },
+   {
     "label": "Sharda_2021 \u00b7 reference",
     "model_id": "Macrogol_Sharda2021_reference"
+   },
+   {
+    "label": "Zhu_2018 \u00b7 reference",
+    "model_id": "Macrogol_Zhu2018_reference"
+   },
+   {
+    "label": "Harrison_2022 \u00b7 reference",
+    "model_id": "Macrogol_Harrison2022_reference"
+   },
+   {
+    "label": "Wang_2019 \u00b7 reference",
+    "model_id": "Macrogol_Wang2019_reference"
    }
   ],
   "dir": "drug_macrogol",
-  "extracted": 0,
-  "last_change": "2026-09-17T15:08:44.498476+00:00",
+  "extracted": 5,
+  "last_change": "2026-09-21T21:50:10.317824+00:00",
   "name": "macrogol",
-  "needs_review": 1,
-  "records": 1,
+  "needs_review": 2,
+  "records": 7,
   "rejected": 0,
   "rendered": true,
   "slug": "macrogol",
@@ -17144,7 +17133,7 @@
    "A07BA01"
   ],
   "counts": {
-   "pd": 16,
+   "pd": 23,
    "pgx": 0,
    "pk": 0
   },
@@ -17406,23 +17395,35 @@
    "A07EC02"
   ],
   "counts": {
-   "pd": 0,
+   "pd": 5,
    "pgx": 0,
-   "pk": 1
+   "pk": 2
   },
   "curated": 0,
   "details": [
    {
-    "label": "Cuffari_2016 \u00b7 reference",
-    "model_id": "Mesalazine_Cuffari2016_reference"
+    "label": "Cuffari_2016 \u00b7 multimatrix_mesalamine",
+    "model_id": "Mesalazine_Cuffari2016_multimatrix_mesalamine"
+   },
+   {
+    "label": "Cuffari_2016 \u00b7 multimatrix_mesalamine",
+    "model_id": "Mesalazine_Cuffari2016_multimatrix_mesalamine"
+   },
+   {
+    "label": "Cuffari_2016 \u00b7 nonmem_estimates",
+    "model_id": "Mesalazine_Cuffari2016_nonmem_estimates"
+   },
+   {
+    "label": "Cuffari_2016 \u00b7 nonmem_estimates",
+    "model_id": "Mesalazine_Cuffari2016_nonmem_estimates"
    }
   ],
   "dir": "drug_mesalazine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:44.967302+00:00",
+  "last_change": "2026-09-22T06:18:58.721351+00:00",
   "name": "mesalazine",
-  "needs_review": 1,
-  "records": 1,
+  "needs_review": 4,
+  "records": 4,
   "rejected": 0,
   "rendered": true,
   "slug": "mesalazine",
@@ -19941,7 +19942,7 @@
    "A07AX03"
   ],
   "counts": {
-   "pd": 8,
+   "pd": 14,
    "pgx": 0,
    "pk": 0
   },
@@ -20086,7 +20087,7 @@
    "J01RA19"
   ],
   "counts": {
-   "pd": 5,
+   "pd": 11,
    "pgx": 0,
    "pk": 0
   },
@@ -20309,7 +20310,7 @@
    "A07EC03"
   ],
   "counts": {
-   "pd": 3,
+   "pd": 8,
    "pgx": 0,
    "pk": 0
   },
@@ -20552,13 +20553,13 @@
   "curated": 0,
   "details": [
    {
-    "label": "Liu_2016 \u00b7 neonates with abstinence syndrome",
-    "model_id": "Opium_Liu2016_neonates_with_abstinence_syndrome"
+    "label": "Liu_2016 \u00b7 reference",
+    "model_id": "Opium_Liu2016_reference"
    }
   ],
   "dir": "drug_opium",
   "extracted": 0,
-  "last_change": "2026-09-11T21:25:27.207731+00:00",
+  "last_change": "2026-09-22T04:51:07.461377+00:00",
   "name": "opium",
   "needs_review": 0,
   "records": 1,
@@ -21176,7 +21177,7 @@
   ],
   "dir": "drug_pantethine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:54.401061+00:00",
+  "last_change": "2026-09-22T01:57:17.012157+00:00",
   "name": "pantethine",
   "needs_review": 0,
   "records": 1,
@@ -21493,38 +21494,30 @@
   "counts": {
    "pd": 1,
    "pgx": 0,
-   "pk": 1
+   "pk": 0
   },
   "curated": 0,
   "details": [
    {
-    "label": "Verrest_2023 \u00b7 estimate",
-    "model_id": "Paromomycin_Verrest2023_estimate"
-   },
-   {
-    "label": "Verrest_2023 \u00b7 estimate",
-    "model_id": "Paromomycin_Verrest2023_estimate"
+    "label": "Lentzen_1981 \u00b7 reference",
+    "model_id": "Paromomycin_Lentzen1981_reference"
    },
    {
     "label": "Verrest_2021_2 \u00b7 reference",
     "model_id": "Paromomycin_Verrest2021v2_reference"
    },
    {
-    "label": "Verrest_2023 \u00b7 shrinkage",
-    "model_id": "Paromomycin_Verrest2023_shrinkage"
-   },
-   {
-    "label": "Verrest_2023 \u00b7 shrinkage",
-    "model_id": "Paromomycin_Verrest2023_shrinkage"
+    "label": "Verrest_2023 \u00b7 reference",
+    "model_id": "Paromomycin_Verrest2023_reference"
    }
   ],
   "dir": "drug_paromomycin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:55.966272+00:00",
+  "last_change": "2026-09-22T02:28:01.451420+00:00",
   "name": "paromomycin",
-  "needs_review": 2,
-  "records": 5,
-  "rejected": 3,
+  "needs_review": 3,
+  "records": 3,
+  "rejected": 0,
   "rendered": true,
   "slug": "paromomycin",
   "stale": 0
@@ -21534,7 +21527,7 @@
    "A07BC01"
   ],
   "counts": {
-   "pd": 24,
+   "pd": 48,
    "pgx": 0,
    "pk": 0
   },
@@ -22411,12 +22404,20 @@
    "S03AA03"
   ],
   "counts": {
-   "pd": 5,
+   "pd": 6,
    "pgx": 0,
-   "pk": 2
+   "pk": 3
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Li_2023 \u00b7 reference",
+    "model_id": "PolymyxinB_Li2023_reference"
+   },
+   {
+    "label": "Manchandani_2018 \u00b7 reference",
+    "model_id": "PolymyxinB_Manchandani2018_reference"
+   },
    {
     "label": "Chauzy_2022 \u00b7 reference",
     "model_id": "PolymyxinB_Chauzy2022_reference"
@@ -22431,11 +22432,11 @@
    }
   ],
   "dir": "drug_polymyxin_b",
-  "extracted": 0,
-  "last_change": "2026-09-17T15:08:56.332058+00:00",
+  "extracted": 2,
+  "last_change": "2026-09-22T03:49:25.152522+00:00",
   "name": "polymyxin B",
   "needs_review": 3,
-  "records": 3,
+  "records": 5,
   "rejected": 0,
   "rendered": true,
   "slug": "polymyxin_b",
@@ -22668,38 +22669,34 @@
   "counts": {
    "pd": 2,
    "pgx": 0,
-   "pk": 1
+   "pk": 3
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Bouazza_2025 \u00b7 reference",
+    "model_id": "Prednisone_Bouazza2025_reference"
+   },
+   {
+    "label": "de_2023 \u00b7 reference",
+    "model_id": "Prednisone_de2023_reference"
+   },
    {
     "label": "Magee_2002 \u00b7 reference",
     "model_id": "Prednisone_Magee2002_reference"
    },
    {
-    "label": "Bouazza_2025 \u00b7 covariate_effect",
-    "model_id": "Prednisone_Bouazza2025_covariate_effect"
-   },
-   {
-    "label": "Bouazza_2025 \u00b7 covariate_effect",
-    "model_id": "Prednisone_Bouazza2025_covariate_effect"
-   },
-   {
-    "label": "Bouazza_2025 \u00b7 estimate_rse",
-    "model_id": "Prednisone_Bouazza2025_estimate_rse"
-   },
-   {
-    "label": "Bouazza_2025 \u00b7 estimate_rse",
-    "model_id": "Prednisone_Bouazza2025_estimate_rse"
+    "label": "Sassen_2020 \u00b7 reference",
+    "model_id": "Prednisone_Sassen2020_reference"
    }
   ],
   "dir": "drug_prednisone",
-  "extracted": 0,
-  "last_change": "2026-09-17T15:08:56.570808+00:00",
+  "extracted": 2,
+  "last_change": "2026-09-22T06:18:58.849920+00:00",
   "name": "prednisone",
-  "needs_review": 1,
-  "records": 5,
-  "rejected": 4,
+  "needs_review": 2,
+  "records": 4,
+  "rejected": 0,
   "rendered": true,
   "slug": "prednisone",
   "stale": 0
@@ -23125,7 +23122,7 @@
    "A06AX05"
   ],
   "counts": {
-   "pd": 1,
+   "pd": 2,
    "pgx": 0,
    "pk": 0
   },
@@ -23158,7 +23155,7 @@
   ],
   "dir": "drug_prucalopride",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:57.273258+00:00",
+  "last_change": "2026-09-22T00:52:41.921357+00:00",
   "name": "prucalopride",
   "needs_review": 0,
   "records": 6,
@@ -23710,16 +23707,43 @@
    "pk": 0
   },
   "curated": 0,
-  "details": [],
+  "details": [
+   {
+    "label": "Zempleni_1996_2 \u00b7 reference",
+    "model_id": "Riboflavin_Zempleni1996v2_reference"
+   }
+  ],
   "dir": "drug_riboflavin",
   "extracted": 0,
-  "last_change": null,
+  "last_change": "2026-09-22T01:57:17.020536+00:00",
   "name": "riboflavin",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "riboflavin",
+  "stale": 0
+ },
+ "drug_riboflavin_vit_b2": {
+  "atc_codes": [
+   "A11HA04"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_riboflavin_vit_b2",
+  "extracted": 0,
+  "last_change": null,
+  "name": "riboflavin (vit B2)",
   "needs_review": 0,
   "records": 0,
   "rejected": 0,
   "rendered": true,
-  "slug": "riboflavin",
+  "slug": "riboflavin_vit_b2",
   "stale": 0
  },
  "drug_rifabutin": {
@@ -23795,7 +23819,7 @@
    "S02AA12"
   ],
   "counts": {
-   "pd": 6,
+   "pd": 13,
    "pgx": 0,
    "pk": 0
   },
@@ -23825,37 +23849,21 @@
   "curated": 0,
   "details": [
    {
-    "label": "Wang_2021 \u00b7 estimate",
-    "model_id": "Rifaximin_Wang2021_estimate"
+    "label": "Francis_2019 \u00b7 reference",
+    "model_id": "Rifaximin_Francis2019_reference"
    },
    {
-    "label": "Wang_2021 \u00b7 estimate",
-    "model_id": "Rifaximin_Wang2021_estimate"
-   },
-   {
-    "label": "Wang_2021 \u00b7 administered_dose_g_gland_n_8",
-    "model_id": "Rifaximin_Wang2021_administered_dose_g_gland_n_8"
-   },
-   {
-    "label": "Wang_2021 \u00b7 administered_dose_g_gland_n_8",
-    "model_id": "Rifaximin_Wang2021_administered_dose_g_gland_n_8"
-   },
-   {
-    "label": "Wang_2021 \u00b7 units",
-    "model_id": "Rifaximin_Wang2021_units"
-   },
-   {
-    "label": "Wang_2021 \u00b7 units",
-    "model_id": "Rifaximin_Wang2021_units"
+    "label": "Wang_2021 \u00b7 reference",
+    "model_id": "Rifaximin_Wang2021_reference"
    }
   ],
   "dir": "drug_rifaximin",
-  "extracted": 0,
-  "last_change": "2026-09-17T15:08:58.116731+00:00",
+  "extracted": 1,
+  "last_change": "2026-09-22T03:49:25.224191+00:00",
   "name": "rifaximin",
-  "needs_review": 2,
-  "records": 6,
-  "rejected": 4,
+  "needs_review": 0,
+  "records": 2,
+  "rejected": 1,
   "rendered": true,
   "slug": "rifaximin",
   "stale": 0
@@ -24724,7 +24732,7 @@
    "A06AB06"
   ],
   "counts": {
-   "pd": 17,
+   "pd": 41,
    "pgx": 0,
    "pk": 0
   },
@@ -25112,7 +25120,7 @@
    "V03AG05"
   ],
   "counts": {
-   "pd": 8,
+   "pd": 10,
    "pgx": 0,
    "pk": 0
   },
@@ -25200,7 +25208,7 @@
    "A12CA02"
   ],
   "counts": {
-   "pd": 17,
+   "pd": 41,
    "pgx": 0,
    "pk": 0
   },
@@ -25247,12 +25255,16 @@
    "V04CC01"
   ],
   "counts": {
-   "pd": 2,
+   "pd": 3,
    "pgx": 0,
    "pk": 0
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Molino_1986 \u00b7 reference",
+    "model_id": "Sorbitol_Molino1986_reference"
+   },
    {
     "label": "Nau_1992 \u00b7 reference",
     "model_id": "Sorbitol_Nau1992_reference"
@@ -25260,11 +25272,11 @@
   ],
   "dir": "drug_sorbitol",
   "extracted": 0,
-  "last_change": "2026-09-17T15:09:01.876661+00:00",
+  "last_change": "2026-09-22T00:52:41.938674+00:00",
   "name": "sorbitol",
   "needs_review": 0,
-  "records": 1,
-  "rejected": 1,
+  "records": 2,
+  "rejected": 2,
   "rendered": true,
   "slug": "sorbitol",
   "stale": 0
@@ -25340,7 +25352,7 @@
    "A06AC03"
   ],
   "counts": {
-   "pd": 8,
+   "pd": 18,
    "pgx": 0,
    "pk": 0
   },
@@ -25393,17 +25405,17 @@
   "curated": 0,
   "details": [
    {
-    "label": "Du_2013 \u00b7 rats",
-    "model_id": "Streptomycin_Du2013_rats"
+    "label": "Du_2013 \u00b7 reference",
+    "model_id": "Streptomycin_Du2013_reference"
    }
   ],
   "dir": "drug_streptomycin",
   "extracted": 0,
-  "last_change": "2026-09-11T20:36:56.603620+00:00",
+  "last_change": "2026-09-22T03:49:25.244081+00:00",
   "name": "streptomycin",
-  "needs_review": 0,
+  "needs_review": 1,
   "records": 1,
-  "rejected": 1,
+  "rejected": 0,
   "rendered": true,
   "slug": "streptomycin",
   "stale": 0
@@ -25504,7 +25516,7 @@
    "A07EC01"
   ],
   "counts": {
-   "pd": 15,
+   "pd": 17,
    "pgx": 0,
    "pk": 0
   },
@@ -26782,21 +26794,65 @@
    "A11HA03"
   ],
   "counts": {
-   "pd": 0,
+   "pd": 3,
    "pgx": 0,
    "pk": 0
   },
   "curated": 0,
-  "details": [],
+  "details": [
+   {
+    "label": "Hidiroglou_1996 \u00b7 reference",
+    "model_id": "Tocopherol_Hidiroglou1996_reference"
+   }
+  ],
   "dir": "drug_tocopherol",
   "extracted": 0,
-  "last_change": null,
+  "last_change": "2026-09-22T01:57:17.043005+00:00",
   "name": "Tocopherol",
   "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
+  "records": 1,
+  "rejected": 1,
   "rendered": true,
   "slug": "tocopherol",
+  "stale": 0
+ },
+ "drug_tocopherol_vit_e": {
+  "atc_codes": [
+   "A11HA03"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Violet_2020 \u00b7 iv_d6_tocopherol",
+    "model_id": "TocopherolVitE_Violet2020_iv_d6_tocopherol"
+   },
+   {
+    "label": "Violet_2020 \u00b7 iv_d6_tocopherol",
+    "model_id": "TocopherolVitE_Violet2020_iv_d6_tocopherol"
+   },
+   {
+    "label": "Violet_2020 \u00b7 po_d3_tocopherol",
+    "model_id": "TocopherolVitE_Violet2020_po_d3_tocopherol"
+   },
+   {
+    "label": "Violet_2020 \u00b7 po_d3_tocopherol",
+    "model_id": "TocopherolVitE_Violet2020_po_d3_tocopherol"
+   }
+  ],
+  "dir": "drug_tocopherol_vit_e",
+  "extracted": 0,
+  "last_change": "2026-09-22T01:57:17.091838+00:00",
+  "name": "tocopherol (vit E)",
+  "needs_review": 0,
+  "records": 4,
+  "rejected": 4,
+  "rendered": true,
+  "slug": "tocopherol_vit_e",
   "stale": 0
  },
  "drug_tolazamide": {
@@ -27718,9 +27774,9 @@
    "S01AA28"
   ],
   "counts": {
-   "pd": 1,
+   "pd": 0,
    "pgx": 0,
-   "pk": 3
+   "pk": 2
   },
   "curated": 0,
   "details": [
@@ -27743,23 +27799,15 @@
    {
     "label": "Yoon_2023 \u00b7 reference",
     "model_id": "Vancomycin_Yoon2023_reference"
-   },
-   {
-    "label": "Goyal_2022 \u00b7 formula",
-    "model_id": "Vancomycin_Goyal2022_formula"
-   },
-   {
-    "label": "Goyal_2022 \u00b7 formula",
-    "model_id": "Vancomycin_Goyal2022_formula"
    }
   ],
   "dir": "drug_vancomycin",
-  "extracted": 5,
-  "last_change": "2026-09-17T15:09:10.049903+00:00",
+  "extracted": 4,
+  "last_change": "2026-09-22T03:49:25.337912+00:00",
   "name": "vancomycin",
-  "needs_review": 0,
-  "records": 7,
-  "rejected": 2,
+  "needs_review": 1,
+  "records": 5,
+  "rejected": 0,
   "rendered": true,
   "slug": "vancomycin",
   "stale": 0
