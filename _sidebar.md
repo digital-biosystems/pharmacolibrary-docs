@@ -9,7 +9,7 @@
 - [amoxicillin <sub>(21/3/0)</sub>](drugs/drug_amoxicillin/)
 - [clopidogrel <sub>(13/14/14)</sub>](drugs/drug_clopidogrel/)
 - [ibuprofen <sub>(8/19/8)</sub>](drugs/drug_ibuprofen/)
-- [metformin <sub>(23/17/7)</sub>](drugs/drug_metformin/)
+- [metformin <sub>(19/17/7)</sub>](drugs/drug_metformin/)
 - [semaglutide <sub>(11/45/0)</sub>](drugs/drug_semaglutide/)
 - [tolvaptan <sub>(8/21/2)</sub>](drugs/drug_tolvaptan/)
 
@@ -45,7 +45,7 @@
 - [diazepam <sub>(9/1/0)</sub>](drugs/drug_diazepam/)
 - [diclofenac <sub>(2/15/3)</sub>](drugs/drug_diclofenac/)
 - [Levothyroxine <sub>(13/11/0)</sub>](drugs/drug_levothyroxine/)
-- [metformin <sub>(23/17/7)</sub>](drugs/drug_metformin/)
+- [metformin <sub>(19/17/7)</sub>](drugs/drug_metformin/)
 - [methotrexate <sub>(22/5/4)</sub>](drugs/drug_methotrexate/)
 - [montelukast <sub>(1/14/0)</sub>](drugs/drug_montelukast/)
 - [omeprazole <sub>(19/8/2)</sub>](drugs/drug_omeprazole/)
@@ -628,9 +628,9 @@
       - [liraglutide <sub>(1/37/0)</sub>](drugs/drug_liraglutide/)
       - [lixisenatide <sub>(0/1/0)</sub>](drugs/drug_lixisenatide/)
       - [lobeglitazone <sub>(0/9/0)</sub>](drugs/drug_lobeglitazone/)
-      - [luseogliflozin <sub>(1/1/0)</sub>](drugs/drug_luseogliflozin/)
+      - [luseogliflozin <sub>(1/2/0)</sub>](drugs/drug_luseogliflozin/)
       - metahexamide <sub>(0/0/0)</sub>
-      - [metformin <sub>(23/17/7)</sub>](drugs/drug_metformin/)
+      - [metformin <sub>(19/17/7)</sub>](drugs/drug_metformin/)
       - metformin and acarbose <sub>(0/0/0)</sub>
       - metformin and alogliptin <sub>(0/0/0)</sub>
       - metformin and canagliflozin <sub>(0/0/0)</sub>

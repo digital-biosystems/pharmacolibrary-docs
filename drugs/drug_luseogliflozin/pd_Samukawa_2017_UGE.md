@@ -10,8 +10,7 @@
 - **effect:** inhibition/unknown
 
 ## Citation
-Samukawa Y; Mutoh M; Chen S; Mizui N et al. (2017). Biological & pharmaceutical bulletin 40
-  ·  DOI: [10.1248/bpb.b16-00998](https://doi.org/10.1248/bpb.b16-00998)
+not matched (stem Samukawa_2017)
 
 ## Parameters
 _No resolved parameters._

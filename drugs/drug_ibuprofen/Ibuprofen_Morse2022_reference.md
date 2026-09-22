@@ -5,7 +5,7 @@
 
 # ibuprofen — `Ibuprofen_Morse2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="gpt-oss:120b re-read this paper; the two readings agree on 0.25 of the compared fields. The first reading is what the record holds.">cross-check: disputed</span>
 
 ### Reviewer guidance
 
@@ -58,6 +58,28 @@ not matched (stem Morse_2022)
 - gap-filled Q49 (kabs) from Hong_2008's review values (primary lacked it)
 
 ## Validation
+
+**Cross-check (two models):** <span class="pk-badge pk-badge--red">not confirmed</span>  
+second reader `gpt-oss:120b` · first reading `qwen3.6:27b-q8_0` · agreement 0.25 (2/8 fields) · the first reading is what this page shows
+
+<details><summary>6 field(s) the two readings disagree on</summary>
+
+| field | first reading | second reading | agreement |
+|---|---|---|---|
+| `parameters[factor for fat (ffat) on cl]` | not captured | 0.816 | only_one_extracted |
+| `parameters[factor for fat (ffat) on cl]` | 0.816 | not captured | only_one_extracted |
+| `parameters[lag time on the tablet formulation increased ... under fed conditions]` | 4.6 | not captured | only_one_extracted |
+| `parameters[lag time on the tablet formulation]` | not captured | 4.6 | only_one_extracted |
+| `screen.dose_compound` | acetaminophen, ibuprofen | acetaminophen and ibuprofen | mismatch |
+| `screen.primary_analyte` | acetaminophen, ibuprofen | acetaminophen and ibuprofen | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>the model that re-read the paper. It is chosen from the OTHER family (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them means little.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields the two readings agree on.</td></tr><tr><td><code>verdict</code></td><td>`elevate` both readings agree · `flag` a non-structural field differs · `block` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the primary extracted nothing and was given one hinted retry.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the primary — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

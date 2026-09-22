@@ -5,7 +5,7 @@
 
 # ibuprofen — `Ibuprofen_Brown1998_ibu05`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="gpt-oss:120b re-read this paper; the two readings agree on 0.087 of the compared fields. The first reading is what the record holds.">cross-check: disputed</span>
 
 ### Reviewer guidance
 
@@ -79,6 +79,43 @@ Brown RD; Kearns GL; Wilson JT et al. (1998). Journal of pharmacokinetics and bi
 - skipped illustrative/example figure caption(s) fig_1, fig_2, fig_3 — per-individual fit, not model parameters
 
 ## Validation
+
+**Cross-check (two models):** <span class="pk-badge pk-badge--red">not confirmed</span>  
+second reader `gpt-oss:120b` · first reading `qwen3.6:27b-q8_0` · agreement 0.087 (2/23 fields) · the first reading is what this page shows
+
+<details><summary>21 field(s) the two readings disagree on</summary>
+
+| field | first reading | second reading | agreement |
+|---|---|---|---|
+| `parameters[b]` | 0.83 | not captured | only_one_extracted |
+| `parameters[b]` | not captured | 0.83 | only_one_extracted |
+| `parameters[duration]` | not captured | 2.7 | only_one_extracted |
+| `parameters[ec 50]` | 8.18 | not captured | only_one_extracted |
+| `parameters[ec 50]` | not captured | 8.18 | only_one_extracted |
+| `parameters[g]` | 2.73 | not captured | only_one_extracted |
+| `parameters[g]` | not captured | 2.73 | only_one_extracted |
+| `parameters[j3]` | 0.42 | not captured | only_one_extracted |
+| `parameters[j3]` | not captured | 0.42 | only_one_extracted |
+| `parameters[k a]` | 7.86 | not captured | only_one_extracted |
+| `parameters[k e0]` | 0.33 | not captured | only_one_extracted |
+| `parameters[k e0]` | not captured | 0.33 | only_one_extracted |
+| `parameters[slope]` | +0.20 | not captured | only_one_extracted |
+| `parameters[slope]` | not captured | 0.2 | only_one_extracted |
+| `parameters[t lag]` | 0.52 | not captured | only_one_extracted |
+| `parameters[t lag]` | not captured | 0.52 | only_one_extracted |
+| `parameters[v d /f]` | 0.15 | not captured | only_one_extracted |
+| `parameters[v d /f]` | not captured | 0.15 | only_one_extracted |
+| `parameters[y]` | 2.44 | not captured | only_one_extracted |
+| `screen.dose_compound` | acetaminophen and ibuprofen | acetaminophen, ibuprofen | mismatch |
+| `screen.primary_analyte` | acetaminophen and ibuprofen | acetaminophen, ibuprofen | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>the model that re-read the paper. It is chosen from the OTHER family (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them means little.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields the two readings agree on.</td></tr><tr><td><code>verdict</code></td><td>`elevate` both readings agree · `flag` a non-structural field differs · `block` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the primary extracted nothing and was given one hinted retry.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the primary — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

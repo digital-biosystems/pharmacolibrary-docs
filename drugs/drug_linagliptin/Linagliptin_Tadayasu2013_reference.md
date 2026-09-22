@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;linagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/&quot;},{&quot;label&quot;:&quot;Tadayasu_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Linagliptin_Retlich2015_description&quot;,&quot;label&quot;:&quot;Retlich_2015_description&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2015_description.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linagliptin_Retlich2015_description&quot;,&quot;label&quot;:&quot;Retlich_2015_description&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2015_description.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linagliptin_Retlich2015_value&quot;,&quot;label&quot;:&quot;Retlich_2015_value&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2015_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linagliptin_Retlich2015_value&quot;,&quot;label&quot;:&quot;Retlich_2015_value&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2015_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linagliptin_Tadayasu2013_reference&quot;,&quot;label&quot;:&quot;Tadayasu_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Tadayasu2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Linagliptin_Retlich2015_reference&quot;,&quot;label&quot;:&quot;Retlich_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linagliptin_GraefeMody2012_reference&quot;,&quot;label&quot;:&quot;Graefe-Mody_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_GraefeMody2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linagliptin_Tadayasu2013_reference&quot;,&quot;label&quot;:&quot;Tadayasu_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Tadayasu2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,13 +9,20 @@
 
 ### Reviewer guidance
 
-**What is wrong:** a compartment is unreachable, or a metabolite is unlinked
+> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `Bmax`, `KD`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** a structural parameter has the wrong dimension; a compartment is unreachable, or a metabolite is unlinked.
 
 **Steps:**
-1. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
-2. Parent/metabolite records commonly miss the formation link.
+1. Not a curation fix — scholar limitation.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
+4. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
+5. Parent/metabolite records commonly miss the formation link.
 
-<sub>owner: **curator** · guidance written by playbook</sub>
+<sub>owner: **scholar** · guidance written by playbook</sub>
 
 ## Citation
 Tadayasu Y; Sarashina A; Tsuda Y; Tatami S; Friedrich C; Retlich S; et al. et al. (2013). Journal of pharmacy & pharmaceutical sciences : a publication of the Canadian Society for Pharmaceutical Sciences, Societe canadienne des sciences pharmaceutiques 16
@@ -33,12 +40,12 @@ Tadayasu Y; Sarashina A; Tsuda Y; Tatami S; Friedrich C; Retlich S; et al. et al
 |---|---|---|---|---|---|---|---|---|---|---|
 | F1 | `Q40` · Fab | 1 | not captured | not captured | not captured | not captured | exact (1.0) | tab_2:row2:col1 | — | 46.7 (None% RSE) |
 | KA [h -1 ] | `Q49` · kabs | 1.63 | not captured | not captured | not captured | 22.2 | llm_confirmed (0.6) | tab_2:row3:col1, tab_2:row3:col2 | — | 73.6 (None% RSE) |
-| CL/F1 [L/h] | `Q27` · CL/F | 121 | not captured | not captured | not captured | 15.5 | llm (0.6) | tab_2:row4:col1, tab_2:row4:col2 | — | not captured |
-| V2/F1 [L] | `Q82` · V2/F | 633 | not captured | not captured | not captured | 12.7 | llm (0.6) | tab_2:row5:col1, tab_2:row5:col2 | — | not captured |
-| Q3/F1 [L/h] | `Q309` · Q3/F | 73.0 | not captured | not captured | not captured | 68.8 | llm (0.6) | tab_2:row7:col1, tab_2:row7:col2 | — | not captured |
-| V3/F1 [L] | `Q78` · V3/F | 683 | not captured | not captured | not captured | 14.0 | llm (0.6) | tab_2:row9:col1, tab_2:row9:col2 | — | not captured |
-| BMAX [nmol/L] | `Q332` · Bmax | 6.07 | not captured | not captured | not captured | 5.17 | llm_confirmed (0.6) | tab_2:row11:col1, tab_2:row11:col2 | — | 14.2 (None% RSE) |
-| KD [nmol/L] | `Q331` · KD | 0.108 | not captured | not captured | not captured | 28.5 | llm_confirmed (0.6) | tab_2:row13:col1, tab_2:row13:col2 | — | not captured |
+| CL/F1 [L/h] | `Q27` · CL/F | 121 | L/h | 3.361111111111111e-05 | [l] / [h] | 15.5 | llm (0.6) | tab_2:row4:col1, tab_2:row4:col2 | — | not captured |
+| V2/F1 [L] | `Q82` · V2/F | 633 | L | 0.633 | [l] | 12.7 | llm (0.6) | tab_2:row5:col1, tab_2:row5:col2 | — | not captured |
+| Q3/F1 [L/h] | `Q309` · Q3/F | 73.0 | L/h | 2.0277777777777776e-05 | [l] / [h] | 68.8 | llm (0.6) | tab_2:row7:col1, tab_2:row7:col2 | — | not captured |
+| V3/F1 [L] | `Q78` · V3/F | 683 | L | 0.683 | [l] | 14.0 | llm (0.6) | tab_2:row9:col1, tab_2:row9:col2 | — | not captured |
+| BMAX [nmol/L] | `Q332` · Bmax | 6.07 | nmol/L | not captured | [nM] / [l] | 5.17 | llm_confirmed (0.6) | tab_2:row11:col1, tab_2:row11:col2 | — | 14.2 (None% RSE) |
+| KD [nmol/L] | `Q331` · KD | 0.108 | nmol/L | not captured | [nM] / [l] | 28.5 | llm_confirmed (0.6) | tab_2:row13:col1, tab_2:row13:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -49,10 +56,13 @@ Tadayasu Y; Sarashina A; Tsuda Y; Tatami S; Friedrich C; Retlich S; et al. et al
 
 **Interpretation flags:**
 - column 'parameter' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- unit_dimension_mismatch: 'KD [nmol/L]' → Q331 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
 - dropped unlinked row (NIL): 'AMAX2/F1[nmol]' — extend the ontology if this is a real PK parameter (source ['tab_2:row14:col1', 'tab_2:row14:col2'])
 - dropped PD-category row 'EMAX [%]' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_2:row16:col1', 'tab_2:row16:col2'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=linagliptin
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at route_to_review — not promoted
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -73,8 +83,16 @@ Tadayasu Y; Sarashina A; Tsuda Y; Tatami S; Friedrich C; Retlich S; et al. et al
 | C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
+| C5_dimension_Q309 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row7:col1', 'tab_2:row7:col2'] |
+| C5_dimension_Q331 | fail | [substance] / [length] ** 3 | nmol/L | not captured | not captured | ['tab_2:row13:col1', 'tab_2:row13:col2'] |
+| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row9:col1', 'tab_2:row9:col2'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2'] |
+| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['tab_2:row3:col1', 'tab_2:row3:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 121 L/h | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 633 L | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

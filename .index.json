@@ -14691,13 +14691,18 @@
    "pk": 0
   },
   "curated": 0,
-  "details": [],
+  "details": [
+   {
+    "label": "Saito_2019 \u00b7 reference",
+    "model_id": "Ipragliflozin_Saito2019_reference"
+   }
+  ],
   "dir": "drug_ipragliflozin",
   "extracted": 0,
-  "last_change": null,
+  "last_change": "2026-09-22T10:31:26.548382+00:00",
   "name": "ipragliflozin",
-  "needs_review": 0,
-  "records": 0,
+  "needs_review": 1,
+  "records": 1,
   "rejected": 0,
   "rendered": true,
   "slug": "ipragliflozin",
@@ -16047,20 +16052,12 @@
   "curated": 0,
   "details": [
    {
-    "label": "Retlich_2015 \u00b7 description",
-    "model_id": "Linagliptin_Retlich2015_description"
+    "label": "Retlich_2015 \u00b7 reference",
+    "model_id": "Linagliptin_Retlich2015_reference"
    },
    {
-    "label": "Retlich_2015 \u00b7 description",
-    "model_id": "Linagliptin_Retlich2015_description"
-   },
-   {
-    "label": "Retlich_2015 \u00b7 value",
-    "model_id": "Linagliptin_Retlich2015_value"
-   },
-   {
-    "label": "Retlich_2015 \u00b7 value",
-    "model_id": "Linagliptin_Retlich2015_value"
+    "label": "Graefe-Mody_2012 \u00b7 reference",
+    "model_id": "Linagliptin_GraefeMody2012_reference"
    },
    {
     "label": "Tadayasu_2013 \u00b7 reference",
@@ -16069,11 +16066,11 @@
   ],
   "dir": "drug_linagliptin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:43.926941+00:00",
+  "last_change": "2026-09-22T10:31:26.627014+00:00",
   "name": "linagliptin",
-  "needs_review": 0,
-  "records": 5,
-  "rejected": 5,
+  "needs_review": 1,
+  "records": 3,
+  "rejected": 2,
   "rendered": true,
   "slug": "linagliptin",
   "stale": 0
@@ -16513,7 +16510,7 @@
    "A10BK07"
   ],
   "counts": {
-   "pd": 1,
+   "pd": 2,
    "pgx": 0,
    "pk": 1
   },
@@ -16526,7 +16523,7 @@
   ],
   "dir": "drug_luseogliflozin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:44.374703+00:00",
+  "last_change": "2026-09-22T10:31:26.728543+00:00",
   "name": "luseogliflozin",
   "needs_review": 1,
   "records": 1,
@@ -17622,7 +17619,7 @@
   "counts": {
    "pd": 17,
    "pgx": 7,
-   "pk": 23
+   "pk": 19
   },
   "curated": 0,
   "details": [
@@ -17837,7 +17834,7 @@
   ],
   "dir": "drug_metformin",
   "extracted": 19,
-  "last_change": "2026-09-17T22:36:58.678044+00:00",
+  "last_change": "2026-09-22T10:31:29.307165+00:00",
   "name": "metformin",
   "needs_review": 19,
   "records": 52,

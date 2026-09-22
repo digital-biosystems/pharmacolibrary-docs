@@ -5,7 +5,7 @@
 
 # amoxicillin — `Amoxicillin_Spyker1977_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="gpt-oss:120b re-read this paper; the two readings agree on 0.571 of the compared fields. The first reading is what the record holds.">cross-check: disputed</span>
 
 ### Reviewer guidance
 
@@ -71,6 +71,25 @@ Spyker DA; Rugloski RJ; Vann RL; O'Brien WM et al. (1977). Antimicrobial agents 
 - unparsed cell tab_2:row16:col3 = 'e.0'
 
 ## Validation
+
+**Cross-check (two models):** <span class="pk-badge pk-badge--red">not confirmed</span>  
+second reader `gpt-oss:120b` · first reading `qwen3.6:27b-q8_0` · agreement 0.571 (4/7 fields) · the first reading is what this page shows
+
+<details><summary>3 field(s) the two readings disagree on</summary>
+
+| field | first reading | second reading | agreement |
+|---|---|---|---|
+| `parameters[1000]` | not captured | 50.9 | only_one_extracted |
+| `parameters[250]` | not captured | 55.8 | only_one_extracted |
+| `parameters[standard deviation 4.00]` | 26.9 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>the model that re-read the paper. It is chosen from the OTHER family (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them means little.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields the two readings agree on.</td></tr><tr><td><code>verdict</code></td><td>`elevate` both readings agree · `flag` a non-structural field differs · `block` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the primary extracted nothing and was given one hinted retry.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the primary — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

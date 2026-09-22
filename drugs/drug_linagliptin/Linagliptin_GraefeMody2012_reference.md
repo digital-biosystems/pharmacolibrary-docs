@@ -1,37 +1,46 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;linagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/&quot;},{&quot;label&quot;:&quot;Retlich_2015 \u00b7 description&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Linagliptin_Retlich2015_description&quot;,&quot;label&quot;:&quot;Retlich_2015_description&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2015_description.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Linagliptin_Retlich2015_description&quot;,&quot;label&quot;:&quot;Retlich_2015_description&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2015_description.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Linagliptin_Retlich2015_value&quot;,&quot;label&quot;:&quot;Retlich_2015_value&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2015_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linagliptin_Retlich2015_value&quot;,&quot;label&quot;:&quot;Retlich_2015_value&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2015_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linagliptin_Tadayasu2013_reference&quot;,&quot;label&quot;:&quot;Tadayasu_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Tadayasu2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;linagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/&quot;},{&quot;label&quot;:&quot;Graefe-Mody_2012 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Linagliptin_Retlich2015_reference&quot;,&quot;label&quot;:&quot;Retlich_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linagliptin_GraefeMody2012_reference&quot;,&quot;label&quot;:&quot;Graefe-Mody_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_GraefeMody2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Linagliptin_Tadayasu2013_reference&quot;,&quot;label&quot;:&quot;Tadayasu_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Tadayasu2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# linagliptin — `Linagliptin_Retlich2015_description`
+# linagliptin — `Linagliptin_GraefeMody2012_reference`
 
 > ## <span class="pk-badge pk-badge--red">rejected</span>
 
 ### Reviewer guidance
 
-**What is wrong:** every check the reviewer could run passed
+> ⚙️ **Pipeline limitation — fulltext.** the record was built from the abstract alone, so reported summary statistics stood in for a fitted model<br><sub>evidence: `provenance.source=abstract-only`</sub>
+
+> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
+
+**What is wrong:** a structural parameter has the wrong dimension.
 
 **Steps:**
-1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
+1. Not a curation fix — fulltext limitation.
+2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+3. A misread unit in transcribe is the usual cause.
 
 <sub>owner: **curator** · guidance written by playbook</sub>
 
 ## Citation
-Retlich S; Duval V; Graefe-Mody U; Friedrich C; Patel S; Jaehde U; et al. et al. (2015). Clinical pharmacokinetics 54
-  ·  DOI: [10.1007/s40262-014-0232-4](https://doi.org/10.1007/s40262-014-0232-4)
+Graefe-Mody U; Retlich S; Friedrich C et al. (2012). Clinical pharmacokinetics 51
+  ·  DOI: [10.2165/11630900-000000000-00000](https://doi.org/10.2165/11630900-000000000-00000)
 
 ## Model component
-<dbs-pgx drug="linagliptin" model-id="Linagliptin_Retlich2015_description" status="rejected" stale="false" population="patients with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="linagliptin" model-id="Linagliptin_GraefeMody2012_reference" status="rejected" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V C/F (L) | `Q76` · V/F | 715 | L | 0.715 | L | not captured | space_fold (0.95) | Retlich_2015:results_prose | — | not captured |
-| CL/F (L/h) | `Q27` · CL/F | 258 | L/h | 7.166666666666667e-05 | L/h | not captured | exact (1.0) | Retlich_2015:results_prose | — | not captured |
+| AUC | `Q88` · AUC | 150 | nmol · h/L | not captured | [[h] · [nM]] / [l] | not captured | exact (1.0) | Graefe-Mody_2012:abstract | — | not captured |
+| protein binding | `Q46` · fu | 99 | % | not captured | [%] | not captured | exact (1.0) | Graefe-Mody_2012:abstract, Graefe-Mody_2012:abstract | — | not captured |
+| oral bioavailability | `Q40` · Fab | 30 | % | not captured | not captured | not captured | exact (1.0) | Graefe-Mody_2012:abstract | — | not captured |
+| terminal half-life | `Q57` · t1/2z | 100 | hours | 360000.0 | [h] | not captured | llm (0.6) | Graefe-Mody_2012:abstract | — | not captured |
+| excreted in the urine | `Q44` · fe | 5 | % | not captured | [%] | not captured | llm (0.6) | Graefe-Mody_2012:abstract | — | not captured |
 | KA [h -1 ] | `Q49` · kabs | 1.63 | h -1 | 0.00045277777777777775 | 1/h | not captured | review_gapfill (0.7) | Tadayasu_2013:review | — | not captured |
 
 <details class="legend">
@@ -39,35 +48,22 @@ Retlich S; Duval V; Graefe-Mody U; Friedrich C; Patel S; Jaehde U; et al. et al.
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| K a,3 (1/h) | Q303 | not captured | llm |
-| Dose_B max,C g | Q32 | not captured | llm |
-
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'description' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'Dose_K a c' — extend the ontology if this is a real PK parameter (source ['Tab4:row8:col2'])
-- salvaged Q290 ('V C/F (L)'=715) from results prose — parameter table was unreadable
-- salvaged Q27 ('CL/F (L/h)'=258) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=linagliptin
+- dropped value-less row: 'C(max)' (captured trailing unit 'max' for child rows)
+- unit_dimension_mismatch: 'AUC' → Q88 (unit '[substance] * [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped duplicate Q57 ('accumulation half-life', value 10) — already have one for this compound
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=linagliptin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V C/F (L)' is the general volume)
 - status held at route_to_review — not promoted
-- population split: 'description' subgroup of Retlich_2015 (paper reports 2 populations: description, value)
+- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Tadayasu_2013's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell Tab4:row3:col2 = 'Typical relative bioavailability in study 4'
-- unparsed cell Tab4:row5:col2 = 'Typical absorption rate constant study 1 (powder in bottle formulation)'
-- unparsed cell Tab4:row6:col2 = 'Typical absorption rate constant study 2 (tablet formulation 1)'
-- unparsed cell Tab4:row15:col2 = 'Percentage change in B max,C per RFU change from the median DPP-4 activity of the population'
-- LLM selected parameter table(s) 4
+- no GROBID TEI available — transcribed from abstract in Graefe-Mody_2012_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -75,14 +71,13 @@ Retlich S; Duval V; Graefe-Mody U; Friedrich C; Patel S; Jaehde U; et al. et al.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q44 | pass | dimensionless | not captured | not captured | not captured | ['Graefe-Mody_2012:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tadayasu_2013:review'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Graefe-Mody_2012:abstract'] |
+| C5_dimension_Q88 | fail | [substance] * [time] / [length] ** 3 | nmol · h/L | not captured | not captured | ['Graefe-Mody_2012:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 258 L/h | not captured | not captured | ['Retlich_2015:results_prose'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 715 L | not captured | not captured | ['Retlich_2015:results_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -91,7 +86,7 @@ Retlich S; Duval V; Graefe-Mody U; Friedrich C; Patel S; Jaehde U; et al. et al.
 
 ## Raw artifacts
 
-- scholar stages: `../../../knowledgebase/drugs/drug_linagliptin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Retlich_2015` / `Retlich_2015::description`)
+- scholar stages: `../../../knowledgebase/drugs/drug_linagliptin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Graefe-Mody_2012` / `Graefe-Mody_2012::reference`)
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

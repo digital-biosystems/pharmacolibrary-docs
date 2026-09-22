@@ -5,7 +5,7 @@
 
 # clopidogrel — `Clopidogrel_Jung2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="gpt-oss:120b re-read this paper; the two readings agree on 0.615 of the compared fields. The first reading is what the record holds.">cross-check: disputed</span>
 
 ### Reviewer guidance
 
@@ -71,6 +71,32 @@ Jung YS; Jin BH; Park MS; Kim CO; Chae D et al. (2024). CPT: pharmacometrics & s
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (two models):** <span class="pk-badge pk-badge--red">not confirmed</span>  
+second reader `gpt-oss:120b` · first reading `qwen3.6:27b-q8_0` · agreement 0.615 (16/26 fields) · the first reading is what this page shows
+
+<details><summary>10 field(s) the two readings disagree on</summary>
+
+| field | first reading | second reading | agreement |
+|---|---|---|---|
+| `parameters[k a].parameter_id` | Q95 | Q49 | mismatch |
+| `parameters[k in]` | 0.120 | not captured | only_one_extracted |
+| `parameters[q c]` | 0.307 | not captured | only_one_extracted |
+| `parameters[q m2]` | 4.476 | not captured | only_one_extracted |
+| `parameters[q p]` | not captured | 587.93 | only_one_extracted |
+| `parameters[v c (=vh)].parameter_id` | Q61 | Q63 | mismatch |
+| `parameters[v m1]` | 51.45 | not captured | only_one_extracted |
+| `parameters[v m2]` | not captured | 17.34 | only_one_extracted |
+| `parameters[v p2].parameter_id` | Q64 | Q77 | mismatch |
+| `parameters[v p]` | not captured | 2823.98 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>the model that re-read the paper. It is chosen from the OTHER family (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them means little.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields the two readings agree on.</td></tr><tr><td><code>verdict</code></td><td>`elevate` both readings agree · `flag` a non-structural field differs · `block` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the primary extracted nothing and was given one hinted retry.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the primary — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Ground-truth comparison:** <span class="pk-badge pk-badge--orange">unconfirmed</span>  (8/10 matched, agreement 0.8, tol 0.25)
 

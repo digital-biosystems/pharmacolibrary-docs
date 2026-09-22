@@ -1,4 +1,4 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Linagliptin_Retlich2015_description&quot;,&quot;label&quot;:&quot;Retlich_2015_description&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2015_description.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linagliptin_Retlich2015_description&quot;,&quot;label&quot;:&quot;Retlich_2015_description&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2015_description.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linagliptin_Retlich2015_value&quot;,&quot;label&quot;:&quot;Retlich_2015_value&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2015_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linagliptin_Retlich2015_value&quot;,&quot;label&quot;:&quot;Retlich_2015_value&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2015_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linagliptin_Tadayasu2013_reference&quot;,&quot;label&quot;:&quot;Tadayasu_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Tadayasu2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Linagliptin_Retlich2015_reference&quot;,&quot;label&quot;:&quot;Retlich_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Retlich2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linagliptin_GraefeMody2012_reference&quot;,&quot;label&quot;:&quot;Graefe-Mody_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_GraefeMody2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Linagliptin_Tadayasu2013_reference&quot;,&quot;label&quot;:&quot;Tadayasu_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_linagliptin/Linagliptin_Tadayasu2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # DPP-4 inhibition — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -19,26 +19,24 @@ Tadayasu Y; Sarashina A; Tsuda Y; Tatami S; Friedrich C; Retlich S; et al. et al
 | F1 — Parameter | `Q40` · not captured | 1 | not captured | not captured | exact (not captured) | tab_2:row2:col1 |
 | KA [h -1 ] — Parameter | `Q49` · not captured | 1.63 | not captured | not captured | llm_confirmed (not captured) | tab_2:row3:col1 |
 | KA [h -1 ] — SE (%) | `Q49` · not captured | 22.2 | not captured | not captured | llm_confirmed (not captured) | tab_2:row3:col2 |
-| CL/F1 [L/h] — Parameter | `Q358` · not captured | 121 | not captured | not captured | llm (not captured) | tab_2:row4:col1 |
-| CL/F1 [L/h] — SE (%) | `Q27` · not captured | 15.5 | not captured | not captured | llm (not captured) | tab_2:row4:col2 |
-| V2/F1 [L] — Parameter | `Q82` · not captured | 633 | not captured | not captured | llm (not captured) | tab_2:row5:col1 |
-| V2/F1 [L] — SE (%) | `Q82` · not captured | 12.7 | not captured | not captured | llm (not captured) | tab_2:row5:col2 |
-| Q3/F1 [L/h] — Parameter | `Q309` · not captured | 73.0 | not captured | not captured | llm (not captured) | tab_2:row7:col1 |
-| Q3/F1 [L/h] — SE (%) | `Q309` · not captured | 68.8 | not captured | not captured | llm (not captured) | tab_2:row7:col2 |
-| V3/F1 [L] — Parameter | `Q78` · not captured | 683 | not captured | not captured | llm (not captured) | tab_2:row9:col1 |
-| V3/F1 [L] — SE (%) | `Q78` · not captured | 14.0 | not captured | not captured | llm (not captured) | tab_2:row9:col2 |
-| BMAX [nmol/L] — Parameter | `Q332` · not captured | 6.07 | not captured | not captured | llm_confirmed (not captured) | tab_2:row11:col1 |
-| BMAX [nmol/L] — SE (%) | `Q332` · not captured | 5.17 | not captured | not captured | llm_confirmed (not captured) | tab_2:row11:col2 |
-| KD [nmol/L] — Parameter | `Q331` · not captured | 0.108 | unknown | not captured | llm_confirmed (not captured) | tab_2:row13:col1 |
-| KD [nmol/L] — SE (%) | `Q331` · not captured | 28.5 | unknown | not captured | llm_confirmed (not captured) | tab_2:row13:col2 |
+| CL/F1 [L/h] — Parameter | `Q358` · not captured | 121 | L/h | not captured | llm (not captured) | tab_2:row4:col1 |
+| CL/F1 [L/h] — SE (%) | `Q27` · not captured | 15.5 | L/h | not captured | llm (not captured) | tab_2:row4:col2 |
+| V2/F1 [L] — Parameter | `Q82` · not captured | 633 | L | not captured | llm (not captured) | tab_2:row5:col1 |
+| V2/F1 [L] — SE (%) | `Q82` · not captured | 12.7 | L | not captured | llm (not captured) | tab_2:row5:col2 |
+| Q3/F1 [L/h] — Parameter | `Q309` · not captured | 73.0 | L/h | not captured | llm (not captured) | tab_2:row7:col1 |
+| Q3/F1 [L/h] — SE (%) | `Q309` · not captured | 68.8 | L/h | not captured | llm (not captured) | tab_2:row7:col2 |
+| V3/F1 [L] — Parameter | `Q78` · not captured | 683 | L | not captured | llm (not captured) | tab_2:row9:col1 |
+| V3/F1 [L] — SE (%) | `Q78` · not captured | 14.0 | L | not captured | llm (not captured) | tab_2:row9:col2 |
+| BMAX [nmol/L] — Parameter | `Q332` · not captured | 6.07 | nmol/L | not captured | llm_confirmed (not captured) | tab_2:row11:col1 |
+| BMAX [nmol/L] — SE (%) | `Q332` · not captured | 5.17 | nmol/L | not captured | llm_confirmed (not captured) | tab_2:row11:col2 |
+| KD [nmol/L] — Parameter | `Q331` · not captured | 0.108 | nmol/L | not captured | llm_confirmed (not captured) | tab_2:row13:col1 |
+| KD [nmol/L] — SE (%) | `Q331` · not captured | 28.5 | nmol/L | not captured | llm_confirmed (not captured) | tab_2:row13:col2 |
 | EMAX [%] — Parameter | `Q320` · not captured | 92.5 | not captured | not captured | llm_confirmed (not captured) | tab_2:row16:col1 |
 | EMAX [%] — SE (%) | `Q320` · not captured | 0.48 | not captured | not captured | llm_confirmed (not captured) | tab_2:row16:col2 |
 | IIV in F1 [CV%] — Parameter | `Q312` · not captured | 46.7 | not captured | not captured | llm_confirmed (not captured) | tab_2:row19:col1 |
 | IIV in KA [CV%] — Parameter | `Q312` · not captured | 73.6 | not captured | not captured | llm_confirmed (not captured) | tab_2:row21:col1 |
 | IIV in CL [CV%] — Parameter | `Q312` · not captured | 68.8 | not captured | not captured | llm_confirmed (not captured) | tab_2:row23:col1 |
 | IIV in BMAX [CV%] — Parameter | `Q312` · not captured | 14.2 | not captured | not captured | llm_corrected (not captured) | tab_2:row24:col1 |
-| Proportional residual — Parameter | `Q316` · not captured | 27.0 | not captured | not captured | llm (not captured) | tab_2:row27:col1 |
-| Proportional residual — Parameter | `Q316` · not captured | 20.1 | not captured | not captured | llm (not captured) | tab_2:row29:col1 |
 | Proportional residual — SE (%) | `Q316` · not captured | 14.6 | not captured | not captured | llm (not captured) | tab_2:row29:col2 |
 
 <details class="legend">

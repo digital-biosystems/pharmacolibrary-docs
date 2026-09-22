@@ -1,3 +1,4 @@
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ipragliflozin_Saito2019_reference&quot;,&quot;label&quot;:&quot;Saito_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # HbA1c — PD  <span class="pk-badge pk-badge--red">rejected</span>
@@ -33,6 +34,7 @@ Sato H; Ishikawa A; Yoshioka H; Jin R; Sano Y; Hisaka A et al. (2024). Scientifi
 | IC50 — Ipragliflozin | `Q322` · not captured | 1880 | unknown | not captured | exact (not captured) | Tab1:row4:col6 |
 | IC50 — Luseogliflozin | `Q322` · not captured | 2900 | unknown | not captured | exact (not captured) | Tab1:row4:col7 |
 | IC50 — Tofogliflozin | `Q322` · not captured | 8200 | unknown | not captured | exact (not captured) | Tab1:row4:col8 |
+| Emax [%] | `Q320` · not captured | -0.796 | % | not captured | review_gapfill (not captured) | Sato_2024:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
