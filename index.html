@@ -119,6 +119,7 @@
     .pks-evkey i.e0 { background: var(--pks-ev0); } .pks-evkey i.e1 { background: var(--pks-ev1); }
     .pks-evkey i.e2 { background: var(--pks-ev2); } .pks-evkey i.e3 { background: var(--pks-ev3); }
     .pks-evkey i.aff { box-shadow: inset 0 0 0 2px var(--pks-warn); }
+    .pks-evkey i.dot { border-radius: 50%; width: 9px; height: 9px; background: #64748b; border: 2px solid #64748b; box-sizing: border-box; }
     .pks-scroll { overflow-x: auto; }
     /* who-affects-whom: the partner codes on a heat-map row label and the directed matrix */
     .pks-partners { font-size: 11px; color: #64748b; white-space: nowrap; margin-left: 4px; }
@@ -146,7 +147,12 @@
     .pks-hm td { width: 30px; height: 30px; border-radius: 4px; background: var(--pks-ev0); }
     .pks-hm td.e1 { background: var(--pks-ev1); } .pks-hm td.e2 { background: var(--pks-ev2); }
     .pks-hm td.e3 { background: var(--pks-ev3); }
-    .pks-hm td.aff { box-shadow: inset 0 0 0 2px var(--pks-warn); }
+    .pks-hm td.aff { box-shadow: inset 0 0 0 2px var(--pks-warn); position: relative; }
+    /* perpetrator dots in an affected cell: filled = inhibits, hollow = induces, colour = the drug */
+    .pks-hm .pks-dots { position: absolute; right: 3px; bottom: 3px; display: flex; gap: 2px; pointer-events: none; }
+    .pks-hm .pks-dots i { display: block; width: 7px; height: 7px; border-radius: 50%; box-sizing: border-box;
+      border: 2px solid transparent; box-shadow: 0 0 0 1px #fff; }
+    .pks-hm .pks-dots i.ind { background: #fff; }
     .pks-hm td:focus-visible { outline: 2px solid #1e293b; outline-offset: 1px; }
     .pks-hm .gap { background: transparent; width: 8px; }
     .pks-hm tr.dim { opacity: .3; }

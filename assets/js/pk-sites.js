@@ -140,6 +140,21 @@
   // substrate of (perpetrators), ⇢ the drugs this one affects (victims). Each code wears the
   // drug's own colour — the same swatch that names it in the row header, the chips and the
   // organ slots — so the reader never has to hover to learn which drug the ring points at.
+  // Inside an affected cell: one dot per perpetrator at THIS site, in the perpetrator's
+  // colour — filled when it inhibits the actor, hollow when it induces it — so the ring says
+  // "affected" and the dots say by whom, at the tissue where it happens (tolvaptan's
+  // intestinal cell shows Te + Ci, allopurinol's only Te).
+  function perpDots(M, aff) {
+    if (!aff.length) return '';
+    var slugs = M.drugs.map(function (z) { return z.slug; }), seen = {}, dots = [];
+    aff.forEach(function (a) {
+      var k = a.perpetrator + (a.effect.indexOf('inducer') >= 0 ? '|ind' : '|inh');
+      if (seen[k]) return; seen[k] = 1;
+      var col = COLORS[slugs.indexOf(a.perpetrator)];
+      dots.push('<i class="' + (a.effect.indexOf('inducer') >= 0 ? 'ind' : 'inh') + '" style="' + (a.effect.indexOf('inducer') >= 0 ? 'border-color:' : 'background:') + col + '" title="' + esc(nameOf(M, a.perpetrator) + ' ' + a.effect + ' ' + a.actor) + '"></i>');
+    });
+    return '<span class="pks-dots">' + dots.join('') + '</span>';
+  }
   function partnerCodes(M, slug) {
     var perps = [], victs = [];
     M.affected.forEach(function (a) {
@@ -170,7 +185,7 @@
       h += '<tr' + (focus && focus !== d.slug ? ' class="dim"' : '') + '><th class="drug"><i style="background:' + COLORS[di] + '"></i>' + esc(d.name) + (showDDI ? partnerCodes(M, d.slug) : '') + '</th>';
       cols.forEach(function (c, k) {
         var cl = cellOf(M, d.slug, c[0], c[1]); var aff = showDDI ? affectedAt(M, d.slug, c[0], c[1]) : [];
-        h += '<td class="e' + cl.w + (aff.length ? ' aff' : '') + '" tabindex="0" data-d="' + esc(d.slug) + '" data-p="' + esc(c[0]) + '" data-t="' + esc(c[1]) + '" aria-label="' + esc(d.name + ' ' + c[0] + ' ' + c[1] + ' tier ' + cl.w) + '"></td>';
+        h += '<td class="e' + cl.w + (aff.length ? ' aff' : '') + '" tabindex="0" data-d="' + esc(d.slug) + '" data-p="' + esc(c[0]) + '" data-t="' + esc(c[1]) + '" aria-label="' + esc(d.name + ' ' + c[0] + ' ' + c[1] + ' tier ' + cl.w) + '">' + perpDots(M, aff) + '</td>';
         if (k + 1 < cols.length && cols[k + 1][0] !== c[0]) h += '<td class="gap"></td>';
       });
       h += '</tr>';
