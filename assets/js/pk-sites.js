@@ -313,10 +313,11 @@
       var st = organState[o.id] || { w: 0, aff: [] };
       el.classList.add('organ', 'e' + st.w);
       if (o.whole && !st.w) el.classList.add('hidden');
-      // The kidney has its own (red) ramp: it lies on the liver and the intestine in the
-      // front view, and three tier-3 organs in one blue read as one blob. Organs are drawn
+      // The kidney and the blood have their own (red) ramp: the kidney lies on the liver
+      // and the intestine in the front view, and three tier-3 organs in one blue read as one
+      // blob; the vessel tree runs through every organ and is blood. Organs are drawn
       // translucent, as in the Atlas, so overlaps stay legible.
-      var ramp = o.t === 'kidney' ? '--pks-kid' : '--pks-ev';
+      var ramp = (o.t === 'kidney' || o.t === 'blood') ? '--pks-kid' : '--pks-ev';
       el.style.fill = st.w ? 'var(' + ramp + st.w + ')' : (o.whole ? 'none' : 'var(--pks-organ)');
       el.style.fillOpacity = st.w ? '.55' : '.4';
       if (st.aff.length) {
