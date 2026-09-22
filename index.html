@@ -96,6 +96,7 @@
        plugin below and never on any other page). Evidence tiers are one blue ramp; the
        drug colours are the fixed categorical order pk-sites.js carries. */
     :root { --pks-ev0: #f1f0eb; --pks-ev1: #86b6ef; --pks-ev2: #3987e5; --pks-ev3: #1c5cab;
+      --pks-kid1: #f0a3a3; --pks-kid2: #d94a4a; --pks-kid3: #a3201f;   /* the kidney's own ramp on the body */
       --pks-warn: #b4530f; --pks-organ: #e6e4dd; --pks-organ-line: #b9b5aa; --pks-body: #f3f2ed; }
     .pks-results { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 8px; }
     .pks-results button { font: inherit; font-size: 13px; padding: 4px 10px; cursor: pointer;
@@ -162,9 +163,9 @@
       padding: 8px 10px; border-radius: 6px; font-size: 12px; max-width: 320px; line-height: 1.35;
       box-shadow: 0 4px 14px rgba(15, 23, 42, .25); opacity: 0; transition: opacity .08s; }
     .pks-tip b { display: block; margin-bottom: 2px; } .pks-tip small { opacity: .75; }
-    .pks-grid { display: grid; grid-template-columns: minmax(280px, 400px) 1fr; gap: 20px; align-items: start; }
+    .pks-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; align-items: start; }
     @media (max-width: 760px) { .pks-grid { grid-template-columns: 1fr; } }
-    .pks-body { width: 100%; height: auto; max-width: 640px; display: block; margin: 0 auto; }
+    .pks-body { width: 100%; height: auto; max-width: 800px; display: block; margin: 0 auto; }
     /* the EBI drawing: silhouette grey, organs coloured per id by pk-sites.js (inline style) */
     .pks-body .anat #LAYER_OUTLINE { fill: #b9b5aa; opacity: .9; }
     .pks-body .anat .organ { cursor: pointer; transition: fill-opacity .12s; }

@@ -313,12 +313,16 @@
       var st = organState[o.id] || { w: 0, aff: [] };
       el.classList.add('organ', 'e' + st.w);
       if (o.whole && !st.w) el.classList.add('hidden');
-      el.style.fill = st.w ? 'var(--pks-ev' + st.w + ')' : (o.whole ? 'none' : 'var(--pks-organ)');
-      el.style.fillOpacity = st.w ? '.8' : '.55';
+      // The kidney has its own (red) ramp: it lies on the liver and the intestine in the
+      // front view, and three tier-3 organs in one blue read as one blob. Organs are drawn
+      // translucent, as in the Atlas, so overlaps stay legible.
+      var ramp = o.t === 'kidney' ? '--pks-kid' : '--pks-ev';
+      el.style.fill = st.w ? 'var(' + ramp + st.w + ')' : (o.whole ? 'none' : 'var(--pks-organ)');
+      el.style.fillOpacity = st.w ? '.55' : '.4';
       if (st.aff.length) {
         var col = st.aff.length === 1 ? COLORS[slugs.indexOf(st.aff[0])] : 'var(--pks-warn)';
         el.style.stroke = col; el.style.strokeWidth = '0.7'; el.style.strokeDasharray = '1.4 0.9'; el.style.strokeLinejoin = 'round';
-        el.style.fillOpacity = '.9';
+        el.style.fillOpacity = '.65';
       } else if (st.w) {   // a hairline of surface between tinted neighbours (kidney sits on the intestine)
         el.style.stroke = '#fff'; el.style.strokeWidth = '0.35'; el.style.strokeDasharray = 'none';
       } else { el.style.stroke = 'none'; }
