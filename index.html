@@ -164,9 +164,15 @@
     .pks-tip b { display: block; margin-bottom: 2px; } .pks-tip small { opacity: .75; }
     .pks-grid { display: grid; grid-template-columns: minmax(280px, 400px) 1fr; gap: 20px; align-items: start; }
     @media (max-width: 760px) { .pks-grid { grid-template-columns: 1fr; } }
-    .pks-body { width: 100%; height: auto; max-width: 400px; display: block; margin: 0 auto; }
-    .pks-body .sil { fill: var(--pks-body); stroke: var(--pks-organ-line); stroke-width: 1; }
-    .pks-body .organ { fill: var(--pks-organ); stroke: var(--pks-organ-line); stroke-width: 1.2; }
+    .pks-body { width: 100%; height: auto; max-width: 640px; display: block; margin: 0 auto; }
+    /* the EBI drawing: silhouette grey, organs coloured per id by pk-sites.js (inline style) */
+    .pks-body .anat #LAYER_OUTLINE { fill: #b9b5aa; opacity: .9; }
+    .pks-body .anat .organ { cursor: pointer; transition: fill-opacity .12s; }
+    .pks-body .anat .organ:hover { fill-opacity: 1 !important; }
+    .pks-body .anat .organ.hidden { pointer-events: none; }
+    .pks-body .lead { fill: none; stroke: #94a3b8; stroke-width: .8; stroke-dasharray: 2 2; opacity: .8; }
+    .pks-body .credit { font: 9px system-ui, sans-serif; fill: #94a3b8; }
+    .pks-body a:hover .credit { fill: var(--theme-color, #0074d9); }
     .pks-body .lbl { font: 500 10px ui-monospace, Menlo, monospace; fill: #475569; letter-spacing: .04em; text-transform: uppercase; }
     .pks-body .slot { stroke: #fff; stroke-width: 1.2; } .pks-body .slot.dim { opacity: .25; }
     .pks-body .slot.e0 { fill: var(--pks-ev0); } .pks-body .slot.e1 { fill: var(--pks-ev1); }

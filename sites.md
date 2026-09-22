@@ -30,7 +30,7 @@ DrugBank's curated actors + a tissue table), downloaded once; nothing is sent an
     <p class="pkq-meta">Rows are perpetrators, columns victims: the cell names the enzyme or transporter through which the row drug can change the column drug's exposure (⊣ inhibits, ↑ induces; the column drug is its substrate). The same pairs are marked on the heat-map row labels — ⇠ the drugs that affect this one, ⇢ the drugs it affects.</p>
     <div class="pks-ddi-box"></div>
     <h2>Anatomogram</h2>
-    <p class="pkq-meta">Each organ carries one slot per drug, in the chips' order, shaded by evidence. A dashed ring marks an organ where another drug in the set inhibits or induces the actor at work there; click a chip to isolate a drug and draw the perpetrator → victim arrows. Hover an organ for its actors, click to pin.</p>
+    <p class="pkq-meta">The body is the EMBL-EBI Expression Atlas anatomogram (female view, CC BY 4.0), each organ tinted by the set's strongest evidence there and outlined in the perpetrator's colour where another drug in the set inhibits or induces the actor at work in it. Beside each organ, one slot per drug in the chips' order, shaded by evidence, ringed when affected; click a chip to isolate a drug and draw the perpetrator → victim arrows. Hover an organ or a slot for its actors, click to pin.</p>
     <div class="pks-grid"><div class="pks-anatomogram"></div><div class="pks-detailbox"></div></div>
     <h2>Shared actors — the co-administration table</h2>
     <p class="pkq-meta">An actor two drugs share, with both roles. Substrate on one side and inhibitor/inducer on the other is a mechanism for one drug to change the other's exposure at that actor's tissue.</p>

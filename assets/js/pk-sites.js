@@ -198,56 +198,137 @@
     });
   }
 
+  // ── anatomogram ─────────────────────────────────────────────────────────────────────────
+  // The body is the EMBL-EBI Expression Atlas homo_sapiens.female drawing (CC BY 4.0), pruned
+  // to these organs by scripts/docs/prune-anatomogram.py and fetched once on this page; each
+  // organ is a <g>/<path> whose id is its UBERON id, so the drawing is driven by id. A KB
+  // tissue with no organ of its own rides on a neighbour (blood-brain barrier on the brain,
+  // bile duct on the gall bladder). Anchors are the organ's centre in the drawing's own
+  // 105 × 195 viewBox units (measured once), nudged to the side the label column sits on;
+  // whole-body shapes (skin, vessels, fat, muscle) anchor at a point where they read well.
+  var BODY_URL = 'assets/img/anatomogram-hs-female.svg';
+  var BODY_W = 105.43713, BODY_H = 194.70567, BODY_SCALE = 3.1, BODY_X = 160, BODY_Y = 8;
   var ORGANS = [
-    { t: 'brain', label: 'brain', lx: 262, ly: 48, sx: 262, sy: 56 },
-    { t: 'blood-brain barrier', label: 'blood–brain barrier', lx: 262, ly: 84, sx: 262, sy: 92 },
-    { t: 'lung', label: 'lung', lx: 262, ly: 150, sx: 262, sy: 158 },
-    { t: 'blood', label: 'blood', lx: 262, ly: 230, sx: 262, sy: 238 },
-    { t: 'liver', label: 'liver', lx: 40, ly: 282, sx: 40, sy: 290 },
-    { t: 'bile duct', label: 'bile duct', lx: 40, ly: 322, sx: 40, sy: 330 },
-    { t: 'kidney', label: 'kidney', lx: 262, ly: 326, sx: 262, sy: 334 },
-    { t: 'small intestine', label: 'small intestine', lx: 262, ly: 380, sx: 262, sy: 388 },
-    { t: 'placenta', label: 'placenta', lx: 40, ly: 430, sx: 40, sy: 438 },
-    { t: 'mammary gland', label: 'mammary gland', lx: 40, ly: 200, sx: 40, sy: 208 },
-    { t: 'skin', label: 'skin', lx: 40, ly: 500, sx: 40, sy: 508 },
+    { t: 'brain', id: 'UBERON_0000955', label: 'brain', side: 'R', ax: 57, ay: 5 },
+    { t: 'blood-brain barrier', id: 'UBERON_0000955', label: 'blood–brain barrier', side: 'L', ax: 45, ay: 7, proxy: true },
+    { t: 'lung', id: 'UBERON_0002048', label: 'lung', side: 'R', ax: 61, ay: 42 },
+    { t: 'mammary gland', id: 'UBERON_0000310', label: 'mammary gland', side: 'L', ax: 39, ay: 47 },
+    { t: 'heart', id: 'UBERON_0000948', label: 'heart', side: 'R', ax: 54, ay: 47 },
+    { t: 'blood', id: 'UBERON_0001981', label: 'blood', side: 'L', ax: 28, ay: 62, whole: true },
+    { t: 'adrenal gland', id: 'UBERON_0002369', label: 'adrenal gland', side: 'R', ax: 58, ay: 59 },
+    { t: 'stomach', id: 'UBERON_0000945', label: 'stomach', side: 'R', ax: 62, ay: 61 },
+    { t: 'liver', id: 'UBERON_0002107', label: 'liver', side: 'L', ax: 41, ay: 65 },
+    { t: 'kidney', id: 'UBERON_0002113', label: 'kidney', side: 'R', ax: 59, ay: 68 },
+    { t: 'bile duct', id: 'UBERON_0002110', label: 'bile duct', side: 'L', ax: 45, ay: 69 },
+    { t: 'small intestine', id: 'UBERON_0002108', label: 'small intestine', side: 'R', ax: 60, ay: 80 },
+    { t: 'adipose tissue', id: 'UBERON_0001013', label: 'adipose tissue', side: 'L', ax: 34, ay: 82, whole: true },
+    { t: 'ileum', id: 'UBERON_0002116', label: 'ileum', side: 'R', ax: 57, ay: 87 },
+    { t: 'placenta', id: 'UBERON_0001987', label: 'placenta', side: 'L', ax: 51, ay: 88 },
+    { t: 'ovary', id: 'UBERON_0000992', label: 'ovary', side: 'R', ax: 57, ay: 90 },
+    { t: 'skeletal muscle', id: 'UBERON_0001134', label: 'skeletal muscle', side: 'L', ax: 40, ay: 112, whole: true },
+    { t: 'skin', id: 'UBERON_0000014', label: 'skin', side: 'R', ax: 90, ay: 118, whole: true },
   ];
+  var bodyText = null, bodyWaiters = [];
+  function loadBody(cb) {
+    if (bodyText) { cb(bodyText); return; }
+    bodyWaiters.push(cb);
+    if (bodyWaiters.length > 1) return;
+    fetch(BODY_URL).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+      .then(function (t) { bodyText = t; bodyWaiters.splice(0).forEach(function (f) { f(t); }); })
+      .catch(function (e) { bodyWaiters.splice(0).forEach(function (f) { f(null, e); }); });
+  }
   function organTier(M, slug, tissue) { var w = 0; PROC.forEach(function (p) { w = Math.max(w, cellOf(M, slug, p, tissue).w); }); return w; }
+  // the drawing's two layers without its <svg> wrapper: a nested <svg> would size itself to
+  // the whole viewport and then be scaled again by the group's transform
+  function bodyInner(text) {
+    var m = /<svg\b[^>]*>([\s\S]*)<\/svg>/i.exec(text);
+    return m ? m[1] : text;
+  }
+  function bx(x) { return BODY_X + x * BODY_SCALE; }
+  function by(y) { return BODY_Y + y * BODY_SCALE; }
 
   function renderBody(root, M, opts) {
+    loadBody(function (text, err) {
+      if (!text) { root.innerHTML = '<p class="pks-empty">The body drawing could not be loaded' + (err ? ' (' + esc(err.message || err) + ')' : '') + '.</p>'; return; }
+      drawBody(root, M, opts, text);
+    });
+  }
+
+  function drawBody(root, M, opts, bodySvg) {
     var focus = opts.focus, showDDI = opts.ddi !== false, n = M.drugs.length;
-    var step = n > 5 ? 15 : 19, wid = n > 5 ? 13 : 17;
-    var slots = [], labels = [], arrows = [];
+    var step = n > 5 ? 15 : 19, wid = n > 5 ? 13 : 17, ROW = 36;
+    var W = 640, H = 620, LEFT_EDGE = 150, RIGHT_EDGE = 494;
+    // rows: one per organ with any evidence, laid out per side by anchor y, pushed apart
+    var rows = [];
     ORGANS.forEach(function (o) {
-      var any = M.drugs.some(function (d) { return organTier(M, d.slug, o.t); });
-      if (!any) return;
-      labels.push('<text class="lbl" x="' + o.lx + '" y="' + o.ly + '">' + esc(o.label) + '</text>');
+      if (!M.drugs.some(function (d) { return organTier(M, d.slug, o.t); })) return;
+      rows.push({ o: o, ay: by(o.ay), y: by(o.ay) });
+    });
+    ['L', 'R'].forEach(function (side) {
+      var rs = rows.filter(function (r) { return r.o.side === side; }).sort(function (a, b) { return a.ay - b.ay; });
+      var yMin = 26;
+      rs.forEach(function (r) { r.y = Math.max(r.ay, yMin); yMin = r.y + ROW; });
+      var over = rs.length ? rs[rs.length - 1].y + 16 - H : 0;
+      if (over > 0) rs.forEach(function (r) { r.y -= over; });
+    });
+    var organState = {};       // id → {w, aff: [perpetrator slugs]}
+    var slots = [], labels = [], leaders = [], arrows = [];
+    rows.forEach(function (r) {
+      var o = r.o, left = o.side === 'L';
+      var x0 = left ? LEFT_EDGE - n * step : RIGHT_EDGE, y = r.y;
+      var st = organState[o.id] = organState[o.id] || { w: 0, aff: [] };
+      labels.push('<text class="lbl" x="' + (left ? LEFT_EDGE - 2 : RIGHT_EDGE) + '" y="' + (y - 4) + '"' + (left ? ' text-anchor="end"' : '') + '>' + esc(o.label) + '</text>');
+      leaders.push('<path class="lead" d="M' + (left ? LEFT_EDGE + 2 : RIGHT_EDGE - 2) + ',' + (y + 7) + ' L' + bx(o.ax) + ',' + by(o.ay) + '"/>');
       M.drugs.forEach(function (d, i) {
         var w = organTier(M, d.slug, o.t), aff = showDDI ? affectedAt(M, d.slug, null, o.t) : [];
-        var x = o.sx + i * step, y = o.sy, dim = focus && focus !== d.slug ? ' dim' : '';
+        if (!o.proxy) { st.w = Math.max(st.w, w); aff.forEach(function (a) { if (st.aff.indexOf(a.perpetrator) < 0) st.aff.push(a.perpetrator); }); }
+        var x = x0 + i * step, dim = focus && focus !== d.slug ? ' dim' : '';
         slots.push('<g class="slotg" data-d="' + esc(d.slug) + '" data-t="' + esc(o.t) + '"><rect class="slot e' + w + dim + '" x="' + x + '" y="' + y + '" width="' + wid + '" height="14" rx="3"/>' +
           (aff.length ? '<rect class="aff" x="' + (x - 2) + '" y="' + (y - 2) + '" width="' + (wid + 4) + '" height="18" rx="4"/>' : '') +
           '<text x="' + (x + wid / 2) + '" y="' + (y + 10.5) + '" text-anchor="middle" class="cd' + (w >= 2 ? ' on' : '') + '">' + esc(n > 5 ? code(d.name)[0] : code(d.name)) + '</text></g>');
+        // focus: perpetrator → victim arrows between the two drugs' slots of the same organ row
         if (showDDI && focus && aff.length && (focus === d.slug || aff.some(function (a) { return a.perpetrator === focus; }))) {
           aff.forEach(function (a) { if (focus !== d.slug && focus !== a.perpetrator) return;
             var pi = M.drugs.map(function (z) { return z.slug; }).indexOf(a.perpetrator);
-            var px = 210 + (pi - (n - 1) / 2) * 18, py = 560;
-            arrows.push('<path class="arrow" style="stroke:' + COLORS[pi] + '" d="M' + px + ',' + (py - 8) + ' C' + px + ',' + ((py + y) / 2) + ' ' + (x + wid / 2) + ',' + ((py + y) / 2) + ' ' + (x + wid / 2) + ',' + (y + 18) + '"/>'); });
+            if (pi < 0 || pi === i) return;
+            var px = x0 + pi * step + wid / 2, vx = x + wid / 2, top = y - 14;
+            arrows.push('<path class="arrow" style="stroke:' + COLORS[pi] + '" d="M' + px + ',' + (y - 3) + ' C' + px + ',' + top + ' ' + vx + ',' + top + ' ' + vx + ',' + (y - 3) + '"/>'); });
         }
       });
     });
-    var perps = {}; M.affected.forEach(function (a) { perps[a.perpetrator] = 1; });
-    var perpRow = showDDI && Object.keys(perps).length ? M.drugs.map(function (d, i) { return perps[d.slug] ? '<g><circle cx="' + (210 + (i - (n - 1) / 2) * 18) + '" cy="560" r="7" fill="' + COLORS[i] + '"/><text x="' + (210 + (i - (n - 1) / 2) * 18) + '" y="563.5" text-anchor="middle" class="cd on">' + esc(code(d.name)[0]) + '</text></g>' : ''; }).join('') + '<text class="lbl" x="210" y="585" text-anchor="middle">perpetrators (inhibit / induce)</text>' : '';
-    root.innerHTML = '<svg class="pks-body" viewBox="0 0 420 600" role="img" aria-label="schematic body with ADME organs">' +
+    var slugs = M.drugs.map(function (z) { return z.slug; });
+    root.innerHTML = '<svg class="pks-body" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="female body with the ADME organs of this drug set">' +
       '<defs><marker id="pks-ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="context-stroke"/></marker></defs>' +
-      '<circle class="sil" cx="210" cy="60" r="38"/><path class="sil" d="M150,120 h120 a34,34 0 0 1 34,34 v300 a34,34 0 0 1 -34,34 h-120 a34,34 0 0 1 -34,-34 v-300 a34,34 0 0 1 34,-34 z"/>' +
-      '<ellipse class="organ" cx="210" cy="58" rx="24" ry="19"/>' +
-      '<path class="organ" d="M186,232 c-6,18 6,38 24,42 18,4 30,-8 36,-24 6,-16 -8,-30 -30,-28 -12,1 -26,2 -30,10 z"/>' +
-      '<path class="organ" d="M150,285 c-8,18 6,40 40,46 26,4 44,-6 46,-20 2,-14 -14,-26 -40,-30 -22,-3 -40,-6 -46,4 z"/>' +
-      '<ellipse class="organ" cx="176" cy="342" rx="9" ry="16"/><ellipse class="organ" cx="244" cy="342" rx="9" ry="16"/>' +
-      '<path class="organ" d="M172,372 c0,24 14,40 38,40 24,0 38,-16 38,-40 0,-18 -12,-26 -20,-14 -6,10 -8,22 -18,22 -10,0 -12,-12 -18,-22 -8,-12 -20,-4 -20,14 z"/>' +
-      '<path class="organ" d="M180,150 c-14,0 -22,14 -22,34 0,16 8,26 22,26 z M240,150 c14,0 22,14 22,34 0,16 -8,26 -22,26 z" opacity=".6"/>' +
-      '<line x1="210" y1="100" x2="210" y2="232" stroke="var(--pks-organ-line)" stroke-width="3" stroke-linecap="round" opacity=".55"/>' +
-      labels.join('') + slots.join('') + arrows.join('') + perpRow + '</svg>';
+      '<g class="anat" transform="translate(' + BODY_X + ',' + BODY_Y + ') scale(' + BODY_SCALE + ')">' + bodyInner(bodySvg) + '</g>' +
+      leaders.join('') + labels.join('') + slots.join('') + arrows.join('') +
+      '<a href="https://github.com/ebi-gene-expression-group/anatomogram" target="_blank" rel="noopener"><text class="credit" x="' + (W - 4) + '" y="' + (H - 6) + '" text-anchor="end">body: EMBL-EBI Expression Atlas anatomogram, CC BY 4.0</text></a>' +
+      '</svg>';
+    var svg = root.querySelector('svg.pks-body');
+    // colour the drawing: fill by the set's strongest evidence at the organ, dashed stroke in
+    // the perpetrator's colour where another drug of the set can act on it; organs the set
+    // has no evidence for stay faint; whole-body shapes stay invisible unless evidenced
+    ORGANS.forEach(function (o) {
+      if (o.proxy) return;
+      var el = svg.querySelector('#' + o.id); if (!el) return;
+      var st = organState[o.id] || { w: 0, aff: [] };
+      el.classList.add('organ', 'e' + st.w);
+      if (o.whole && !st.w) el.classList.add('hidden');
+      el.style.fill = st.w ? 'var(--pks-ev' + st.w + ')' : (o.whole ? 'none' : 'var(--pks-organ)');
+      el.style.fillOpacity = st.w ? '.8' : '.55';
+      if (st.aff.length) {
+        var col = st.aff.length === 1 ? COLORS[slugs.indexOf(st.aff[0])] : 'var(--pks-warn)';
+        el.style.stroke = col; el.style.strokeWidth = '0.7'; el.style.strokeDasharray = '1.4 0.9'; el.style.strokeLinejoin = 'round';
+        el.style.fillOpacity = '.9';
+      } else if (st.w) {   // a hairline of surface between tinted neighbours (kidney sits on the intestine)
+        el.style.stroke = '#fff'; el.style.strokeWidth = '0.35'; el.style.strokeDasharray = 'none';
+      } else { el.style.stroke = 'none'; }
+      if (focus && st.w) el.style.opacity = M.drugs.some(function (d) { return d.slug === focus && organTier(M, focus, o.t); }) ? '1' : '.45';
+      var tissues = ORGANS.filter(function (z) { return z.id === o.id; }).map(function (z) { return z.t; });
+      el.addEventListener('mouseenter', function (e) { organTip(M, tissues, e, showDDI); if (opts.onOrgan) { var d = firstDrugAt(M, tissues, focus); if (d) opts.onOrgan(d, o.t, false); } });
+      el.addEventListener('mousemove', function (e) { organTip(M, tissues, e, showDDI); });
+      el.addEventListener('mouseleave', function () { tip(null); });
+      el.addEventListener('click', function () { if (opts.onOrgan) { var d = firstDrugAt(M, tissues, focus); if (d) opts.onOrgan(d, o.t, true); } });
+    });
     root.querySelectorAll('.slotg').forEach(function (g) {
       var d = g.dataset.d, t = g.dataset.t;
       var rs = M.rows.filter(function (r) { return r.drug === d && r.tissue === t; });
@@ -257,6 +338,27 @@
       g.onmousemove = function (e) { tip(html, e); }; g.onmouseleave = function () { tip(null); };
       g.onclick = function () { if (opts.onOrgan) opts.onOrgan(d, t, true); };
     });
+  }
+  function firstDrugAt(M, tissues, focus) {
+    if (focus && tissues.some(function (t) { return organTier(M, focus, t); })) return focus;
+    var d = M.drugs.filter(function (z) { return tissues.some(function (t) { return organTier(M, z.slug, t); }); })[0];
+    return d ? d.slug : null;
+  }
+  // the organ's own tooltip: every drug of the set with evidence there, its tier and actors
+  function organTip(M, tissues, ev, showDDI) {
+    var lines = [];
+    tissues.forEach(function (t) {
+      M.drugs.forEach(function (d) {
+        var rs = M.rows.filter(function (r) { return r.drug === d.slug && r.tissue === t; });
+        if (!rs.length) return;
+        var acts = [], seen = {};
+        rs.forEach(function (r) { if (r.actor) { var k = r.actor + ' (' + r.role + ')'; if (!seen[k]) { seen[k] = 1; acts.push(k); } } });
+        var aff = showDDI ? affectedAt(M, d.slug, null, t) : [];
+        lines.push('<b>' + esc(d.name) + '</b> · ' + esc(t) + ': ' + (acts.length ? esc(acts.join(', ')) : '<i>prose only</i>') +
+          (aff.length ? ' <span class="warn">⇠ ' + esc(aff.map(function (a) { return nameOf(M, a.perpetrator); }).filter(function (v, i, arr) { return arr.indexOf(v) === i; }).join(', ')) + '</span>' : ''));
+      });
+    });
+    tip(lines.join('<br>') || '<i>no evidence here</i>', ev);
   }
 
   function renderDetail(root, M, slug, tissue, pinned) {
