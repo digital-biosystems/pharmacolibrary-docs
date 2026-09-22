@@ -79,6 +79,7 @@ Min JS; Jo SJ; Lee S; Kim DY; Kim DH; Lee CB; Bae SK et al. (2025). Drug design,
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=semaglutide) | C_central | not captured | output must be the measured/analyte compartment |

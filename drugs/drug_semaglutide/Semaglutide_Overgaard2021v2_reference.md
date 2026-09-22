@@ -5,7 +5,7 @@
 
 # semaglutide — `Semaglutide_Overgaard2021v2_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="gpt-oss:120b re-read this paper; the two readings agree on 1.0 of the compared fields. The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -35,7 +35,7 @@ not matched (stem Overgaard_2021_2)
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL | `Q22` · CL | 0.059 | L/h | 1.6388888888888888e-08 | L/h | not captured | review_gapfill (0.7) | Choi_2025:review | — | not captured |
 | Vd threshold | `Q61` · V | 5.0 | L/kg | 0.35000000000000003 | L | not captured | review_gapfill (0.7) | Hernández-Gago_2026:review | — | not captured |
-| Kaglc (h−1) | `Q49` · kabs | 1.38 | h−1 | 0.0003833333333333333 | 1/h | not captured | review_gapfill (0.7) | Bosch_2025:review | — | not captured |
+| ka | `Q49` · kabs | 0.0286 | h−1 | 7.944444444444445e-06 | 1/h | not captured | review_gapfill (0.7) | Carlsson_2018:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,9 +53,20 @@ not matched (stem Overgaard_2021_2)
 - gap-filled Q61 (V) from Hernández-Gago_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Bosch_2025's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Carlsson_2018's review values (primary lacked it)
 
 ## Validation
+
+**Cross-check (two models):** <span class="pk-badge pk-badge--green">confirmed</span>  
+second reader `gpt-oss:120b` · first reading `qwen3.8:27b-mtp-q8_0` · agreement 1.0 (4/4 fields) · the first reading is what this page shows
+
+_Both readings agree on every compared field of this record._
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>the model that re-read the paper. It is chosen from the OTHER family (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them means little.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields the two readings agree on.</td></tr><tr><td><code>verdict</code></td><td>`elevate` both readings agree · `flag` a non-structural field differs · `block` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the primary extracted nothing and was given one hinted retry.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the primary — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
@@ -65,7 +76,7 @@ not matched (stem Overgaard_2021_2)
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Choi_2025:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Bosch_2025:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Carlsson_2018:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Hernández-Gago_2026:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.059 | not captured | not captured | ['Choi_2025:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -76,8 +87,9 @@ not matched (stem Overgaard_2021_2)
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=semaglutide) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=semaglutide) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
@@ -101,7 +113,7 @@ not matched (stem Overgaard_2021_2)
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_semaglutide/Semaglutide_Overgaard2021v2_reference/Semaglutide_Overgaard2021v2_reference_modelica.zip" download>Semaglutide_Overgaard2021v2_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_semaglutide/Semaglutide_Overgaard2021v2_reference/Semaglutide_Overgaard2021v2_reference_modelica.zip" download>Semaglutide_Overgaard2021v2_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_semaglutide/Semaglutide_Overgaard2021v2_reference/Semaglutide_Overgaard2021v2_reference_fmi.zip" download>Semaglutide_Overgaard2021v2_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_semaglutide/Semaglutide_Overgaard2021v2_reference/Semaglutide_Overgaard2021v2_reference_matlab.zip" download>Semaglutide_Overgaard2021v2_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_semaglutide/Semaglutide_Overgaard2021v2_reference/Semaglutide_Overgaard2021v2_reference_matlab_simbio.zip" download>Semaglutide_Overgaard2021v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

@@ -1,0 +1,41 @@
+[
+ {
+  "key": "Emax",
+  "label": "Effect term Emax",
+  "unit": "",
+  "scale": 1.0,
+  "min": 0.2,
+  "max": 3,
+  "step": 0.05,
+  "mult": true
+ },
+ {
+  "key": "EC50",
+  "label": "Potency EC50",
+  "unit": "ng/ml",
+  "scale": 1000000.0,
+  "min": 0.1,
+  "max": 10,
+  "step": 0.1,
+  "mult": true
+ },
+ {
+  "key": "gamma",
+  "label": "Hill coefficient",
+  "unit": "",
+  "scale": 1,
+  "min": 0.5,
+  "max": 5,
+  "step": 0.1
+ },
+ {
+  "key": "stop_time",
+  "label": "Exposure range",
+  "unit": "ng/ml",
+  "scale": 1.0,
+  "min": 26.4,
+  "max": 1320.0,
+  "step": 2.64,
+  "sim": true
+ }
+]

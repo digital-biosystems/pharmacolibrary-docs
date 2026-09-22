@@ -1,0 +1,26 @@
+{
+ "model_id": "Ibuprofen_Trocniz2000_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.666666666666667e-06,
+  "F": 0.9,
+  "Tlag": 57600.0,
+  "VdPerKg": 6.285714285714286e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.0029040404040404037,
+  "k21": 0.00019658119658119656,
+  "ka": 0.008611111111111111,
+  "weight": 70.0
+ },
+ "reference_peaks": {
+  "central.C": 5.1301497398199264e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

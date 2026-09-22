@@ -5,7 +5,7 @@
 
 # semaglutide — `Semaglutide_Overgaard2019_one_compartment_model_from_phase_3`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="gpt-oss:120b re-read this paper; the two readings agree on 1.0 of the compared fields. The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -40,7 +40,7 @@ not matched (stem Overgaard_2019)
 | Total volume/Fb, L | `Q76` · V/F | 12.2 | L | 0.012199999999999999 | [l] | not captured | llm (0.6) | Overgaard_2019_table_5:row3:col3 | — | not captured |
 | theta_q27_body_weight | `Q900` · theta_q27_body_weight | 0.0478 | not captured | not captured | not captured | not captured | not captured (not captured) | Overgaard_2019_table_5:row1:col3 | — | not captured |
 | CL/F | `Q27` · CL/F | 0.0478 | l/h | 1.3277777777777778e-08 | L/h | not captured | review_gapfill (0.7) | Carlsson_2018:review | — | not captured |
-| Kaglc (h−1) | `Q49` · kabs | 1.38 | h−1 | 0.0003833333333333333 | 1/h | not captured | review_gapfill (0.7) | Bosch_2025:review | — | not captured |
+| ka | `Q49` · kabs | 0.0286 | h−1 | 7.944444444444445e-06 | 1/h | not captured | review_gapfill (0.7) | Carlsson_2018:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,7 +61,7 @@ not matched (stem Overgaard_2019)
 - gap-filled Q27 (CL/F) from Carlsson_2018's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Bosch_2025's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Carlsson_2018's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell Tab4:row1:col2 = '[0.0236–0.027]'
@@ -84,6 +84,17 @@ not matched (stem Overgaard_2019)
 
 ## Validation
 
+**Cross-check (two models):** <span class="pk-badge pk-badge--green">confirmed</span>  
+second reader `gpt-oss:120b` · first reading `qwen3.8:27b-mtp-q8_0` · agreement 1.0 (6/6 fields) · the first reading is what this page shows
+
+_Both readings agree on every compared field of this record._
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>the model that re-read the paper. It is chosen from the OTHER family (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them means little.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields the two readings agree on.</td></tr><tr><td><code>verdict</code></td><td>`elevate` both readings agree · `flag` a non-structural field differs · `block` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the primary extracted nothing and was given one hinted retry.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the primary — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -92,7 +103,7 @@ not matched (stem Overgaard_2019)
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Carlsson_2018:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Bosch_2025:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Carlsson_2018:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Overgaard_2019_table_5:row3:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -104,8 +115,9 @@ not matched (stem Overgaard_2019)
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=semaglutide) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=semaglutide) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
@@ -130,7 +142,7 @@ not matched (stem Overgaard_2019)
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3_modelica.zip" download>Semaglutide_Overgaard2019_one_compartment_model_from_phase_3_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3_fmi.zip" download>Semaglutide_Overgaard2019_one_compartment_model_from_phase_3_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3_matlab.zip" download>Semaglutide_Overgaard2019_one_compartment_model_from_phase_3_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3_matlab_simbio.zip" download>Semaglutide_Overgaard2019_one_compartment_model_from_phase_3_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3_sbml.zip" download>Semaglutide_Overgaard2019_one_compartment_model_from_phase_3_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

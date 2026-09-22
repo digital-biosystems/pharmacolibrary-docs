@@ -6,10 +6,10 @@
 
 #### ddd
 - [allopurinol <sub>(9/15/40)</sub>](drugs/drug_allopurinol/)
-- [amoxicillin <sub>(21/3/0)</sub>](drugs/drug_amoxicillin/)
-- [clopidogrel <sub>(13/14/14)</sub>](drugs/drug_clopidogrel/)
+- [amoxicillin <sub>(8/3/0)</sub>](drugs/drug_amoxicillin/)
+- [clopidogrel <sub>(13/13/14)</sub>](drugs/drug_clopidogrel/)
 - [ibuprofen <sub>(8/19/8)</sub>](drugs/drug_ibuprofen/)
-- [metformin <sub>(19/17/7)</sub>](drugs/drug_metformin/)
+- [metformin <sub>(17/17/7)</sub>](drugs/drug_metformin/)
 - [semaglutide <sub>(11/45/0)</sub>](drugs/drug_semaglutide/)
 - [tolvaptan <sub>(8/21/2)</sub>](drugs/drug_tolvaptan/)
 
@@ -36,16 +36,16 @@
 #### dph
 - [abacavir <sub>(4/1/45)</sub>](drugs/drug_abacavir/)
 - [amlodipine <sub>(14/16/3)</sub>](drugs/drug_amlodipine/)
-- [amoxicillin <sub>(21/3/0)</sub>](drugs/drug_amoxicillin/)
+- [amoxicillin <sub>(8/3/0)</sub>](drugs/drug_amoxicillin/)
 - [atorvastatin <sub>(6/12/3)</sub>](drugs/drug_atorvastatin/)
 - [azathioprine <sub>(1/0/31)</sub>](drugs/drug_azathioprine/)
 - [ciprofloxacin <sub>(18/15/1)</sub>](drugs/drug_ciprofloxacin/)
-- [clopidogrel <sub>(13/14/14)</sub>](drugs/drug_clopidogrel/)
+- [clopidogrel <sub>(13/13/14)</sub>](drugs/drug_clopidogrel/)
 - [codeine <sub>(1/0/0)</sub>](drugs/drug_codeine/)
 - [diazepam <sub>(9/1/0)</sub>](drugs/drug_diazepam/)
 - [diclofenac <sub>(2/15/3)</sub>](drugs/drug_diclofenac/)
 - [Levothyroxine <sub>(13/11/0)</sub>](drugs/drug_levothyroxine/)
-- [metformin <sub>(19/17/7)</sub>](drugs/drug_metformin/)
+- [metformin <sub>(17/17/7)</sub>](drugs/drug_metformin/)
 - [methotrexate <sub>(22/5/4)</sub>](drugs/drug_methotrexate/)
 - [montelukast <sub>(1/14/0)</sub>](drugs/drug_montelukast/)
 - [omeprazole <sub>(19/8/2)</sub>](drugs/drug_omeprazole/)
@@ -150,7 +150,7 @@
     - [A02B Drugs For Peptic Ulcer And Gastro-Oesophageal Reflux Disease (Gord)](atc/A02B.md)
       - acetoxolone <sub>(0/0/0)</sub>
       - [alginic acid <sub>(0/4/0)</sub>](drugs/drug_alginic_acid/)
-      - [amoxicillin <sub>(21/3/0)</sub>](drugs/drug_amoxicillin/)
+      - [amoxicillin <sub>(8/3/0)</sub>](drugs/drug_amoxicillin/)
       - [bismuth subcitrate <sub>(0/0/0)</sub>](drugs/drug_bismuth_subcitrate/)
       - bismuth subcitrate tetracycline and metronidazole <sub>(0/0/0)</sub>
       - [bismuth subnitrate <sub>(0/0/0)</sub>](drugs/drug_bismuth_subnitrate/)
@@ -630,7 +630,7 @@
       - [lobeglitazone <sub>(0/9/0)</sub>](drugs/drug_lobeglitazone/)
       - [luseogliflozin <sub>(1/2/0)</sub>](drugs/drug_luseogliflozin/)
       - metahexamide <sub>(0/0/0)</sub>
-      - [metformin <sub>(19/17/7)</sub>](drugs/drug_metformin/)
+      - [metformin <sub>(17/17/7)</sub>](drugs/drug_metformin/)
       - metformin and acarbose <sub>(0/0/0)</sub>
       - metformin and alogliptin <sub>(0/0/0)</sub>
       - metformin and canagliflozin <sub>(0/0/0)</sub>
@@ -864,7 +864,7 @@
       - [caplacizumab <sub>(2/1/0)</sub>](drugs/drug_caplacizumab/)
       - carbasalate calcium <sub>(0/0/0)</sub>
       - [cilostazol <sub>(0/0/0)</sub>](drugs/drug_cilostazol/)
-      - [clopidogrel <sub>(13/14/14)</sub>](drugs/drug_clopidogrel/)
+      - [clopidogrel <sub>(13/13/14)</sub>](drugs/drug_clopidogrel/)
       - cloricromen <sub>(0/0/0)</sub>
       - clorindione <sub>(0/0/0)</sub>
       - [dabigatran etexilate <sub>(0/0/0)</sub>](drugs/drug_dabigatran_etexilate/)
@@ -2326,7 +2326,7 @@
       - thiamphenicol <sub>(0/0/0)</sub>
       - thiamphenicol combinations <sub>(0/0/0)</sub>
     - [J01C Beta-Lactam Antibacterials, Penicillins](atc/J01C.md)
-      - [amoxicillin <sub>(21/3/0)</sub>](drugs/drug_amoxicillin/)
+      - [amoxicillin <sub>(8/3/0)</sub>](drugs/drug_amoxicillin/)
       - amoxicillin and beta lactamase inhibitor <sub>(0/0/0)</sub>
       - ampicillin <sub>(0/0/0)</sub>
       - ampicillin and beta lactamase inhibitor <sub>(0/0/0)</sub>

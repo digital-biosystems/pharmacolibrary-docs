@@ -700,7 +700,7 @@
   ],
   "dir": "drug_allopurinol",
   "extracted": 4,
-  "last_change": "2026-09-18T06:36:41.271765+00:00",
+  "last_change": "2026-09-22T22:15:29.685744+00:00",
   "name": "allopurinol",
   "needs_review": 8,
   "records": 17,
@@ -1580,17 +1580,13 @@
   "counts": {
    "pd": 3,
    "pgx": 0,
-   "pk": 21
+   "pk": 8
   },
   "curated": 0,
   "details": [
    {
     "label": "Albanell-Fern\u00e1ndez_2025 \u00b7 reference",
     "model_id": "Amoxicillin_AlbanellFernndez2025_reference"
-   },
-   {
-    "label": "Arancibia_1980 \u00b7 reference",
-    "model_id": "Amoxicillin_Arancibia1980_reference"
    },
    {
     "label": "Bardhi_2026 \u00b7 reference",
@@ -1601,12 +1597,12 @@
     "model_id": "Amoxicillin_Cattrall2019_reference"
    },
    {
-    "label": "Eshelman_1978 \u00b7 reference",
-    "model_id": "Amoxicillin_Eshelman1978_reference"
-   },
-   {
     "label": "Spyker_1977 \u00b7 reference",
     "model_id": "Amoxicillin_Spyker1977_reference"
+   },
+   {
+    "label": "Arancibia_1980 \u00b7 reference",
+    "model_id": "Amoxicillin_Arancibia1980_reference"
    },
    {
     "label": "Baklouti_2026 \u00b7 reference",
@@ -1653,6 +1649,10 @@
     "model_id": "Amoxicillin_Echizen2016_reference"
    },
    {
+    "label": "Eshelman_1978 \u00b7 reference",
+    "model_id": "Amoxicillin_Eshelman1978_reference"
+   },
+   {
     "label": "Foulds_1983 \u00b7 reference",
     "model_id": "Amoxicillin_Foulds1983_reference"
    },
@@ -1682,10 +1682,10 @@
    }
   ],
   "dir": "drug_amoxicillin",
-  "extracted": 6,
-  "last_change": "2026-09-18T06:01:19.242118+00:00",
+  "extracted": 4,
+  "last_change": "2026-09-22T22:15:27.572155+00:00",
   "name": "amoxicillin",
-  "needs_review": 16,
+  "needs_review": 18,
   "records": 24,
   "rejected": 2,
   "rendered": true,
@@ -6198,7 +6198,7 @@
    "B01AC04"
   ],
   "counts": {
-   "pd": 14,
+   "pd": 13,
    "pgx": 14,
    "pk": 13
   },
@@ -6253,6 +6253,14 @@
     "model_id": "Clopidogrel_Grafeneder2024_hdp"
    },
    {
+    "label": "Grafeneder_2024 \u00b7 hv",
+    "model_id": "Clopidogrel_Grafeneder2024_hv"
+   },
+   {
+    "label": "Jung_2024 \u00b7 reference",
+    "model_id": "Clopidogrel_Jung2024_reference"
+   },
+   {
     "label": "Lee_2012 \u00b7 reference",
     "model_id": "Clopidogrel_Lee2012_reference"
    },
@@ -6265,25 +6273,17 @@
     "model_id": "Clopidogrel_Danielak2017_reference"
    },
    {
-    "label": "Grafeneder_2024 \u00b7 hv",
-    "model_id": "Clopidogrel_Grafeneder2024_hv"
-   },
-   {
-    "label": "Jung_2024 \u00b7 reference",
-    "model_id": "Clopidogrel_Jung2024_reference"
-   },
-   {
     "label": "Xie_2014 \u00b7 reference",
     "model_id": "Clopidogrel_Xie2014_reference"
    }
   ],
   "dir": "drug_clopidogrel",
   "extracted": 10,
-  "last_change": "2026-09-17T22:16:44.449498+00:00",
+  "last_change": "2026-09-22T22:15:31.129967+00:00",
   "name": "clopidogrel",
-  "needs_review": 3,
+  "needs_review": 5,
   "records": 18,
-  "rejected": 4,
+  "rejected": 2,
   "rendered": true,
   "slug": "clopidogrel",
   "stale": 0
@@ -13985,6 +13985,10 @@
     "model_id": "Ibuprofen_Clissold1987_reference"
    },
    {
+    "label": "DeGraves_1993_2 \u00b7 reference",
+    "model_id": "Ibuprofen_DeGraves1993v2_reference"
+   },
+   {
     "label": "Gonzalez_1987 \u00b7 reference",
     "model_id": "Ibuprofen_Gonzalez1987_reference"
    },
@@ -13995,6 +13999,10 @@
    {
     "label": "Todd_1986 \u00b7 reference",
     "model_id": "Ibuprofen_Todd1986_reference"
+   },
+   {
+    "label": "Troc\u00f3niz_2000 \u00b7 reference",
+    "model_id": "Ibuprofen_Trocniz2000_reference"
    },
    {
     "label": "Brown_1992 \u00b7 reference",
@@ -14029,10 +14037,6 @@
     "model_id": "Ibuprofen_DeGraves1993_reference"
    },
    {
-    "label": "DeGraves_1993_2 \u00b7 reference",
-    "model_id": "Ibuprofen_DeGraves1993v2_reference"
-   },
-   {
     "label": "Hannam_2018 \u00b7 reference",
     "model_id": "Ibuprofen_Hannam2018_reference"
    },
@@ -14043,19 +14047,15 @@
    {
     "label": "Morse_2022 \u00b7 reference",
     "model_id": "Ibuprofen_Morse2022_reference"
-   },
-   {
-    "label": "Troc\u00f3niz_2000 \u00b7 reference",
-    "model_id": "Ibuprofen_Trocniz2000_reference"
    }
   ],
   "dir": "drug_ibuprofen",
-  "extracted": 4,
-  "last_change": "2026-09-17T22:23:04.681288+00:00",
+  "extracted": 6,
+  "last_change": "2026-09-22T22:15:26.403476+00:00",
   "name": "ibuprofen",
   "needs_review": 4,
   "records": 17,
-  "rejected": 9,
+  "rejected": 7,
   "rendered": true,
   "slug": "ibuprofen",
   "stale": 0
@@ -17547,7 +17547,7 @@
   "counts": {
    "pd": 17,
    "pgx": 7,
-   "pk": 19
+   "pk": 17
   },
   "curated": 0,
   "details": [
@@ -17596,14 +17596,6 @@
     "model_id": "Metformin_Mak2023_saem_estimates"
    },
    {
-    "label": "Nikolaidis_2026 \u00b7 base",
-    "model_id": "Metformin_Nikolaidis2026_base"
-   },
-   {
-    "label": "Nikolaidis_2026 \u00b7 final",
-    "model_id": "Metformin_Nikolaidis2026_final"
-   },
-   {
     "label": "Zhang_2025 \u00b7 reference",
     "model_id": "Metformin_Zhang2025_reference"
    },
@@ -17642,6 +17634,14 @@
    {
     "label": "Min_2025 \u00b7 reference",
     "model_id": "Metformin_Min2025_reference"
+   },
+   {
+    "label": "Nikolaidis_2026 \u00b7 base",
+    "model_id": "Metformin_Nikolaidis2026_base"
+   },
+   {
+    "label": "Nikolaidis_2026 \u00b7 final",
+    "model_id": "Metformin_Nikolaidis2026_final"
    },
    {
     "label": "Pentik\u00e4inen_1979 \u00b7 reference",
@@ -17697,10 +17697,10 @@
    }
   ],
   "dir": "drug_metformin",
-  "extracted": 15,
-  "last_change": "2026-09-22T10:31:29.307165+00:00",
+  "extracted": 13,
+  "last_change": "2026-09-22T22:15:25.510110+00:00",
   "name": "metformin",
-  "needs_review": 12,
+  "needs_review": 14,
   "records": 36,
   "rejected": 9,
   "rendered": true,
@@ -24533,7 +24533,7 @@
   ],
   "dir": "drug_semaglutide",
   "extracted": 9,
-  "last_change": "2026-09-17T22:45:34.096766+00:00",
+  "last_change": "2026-09-22T22:15:28.414474+00:00",
   "name": "semaglutide",
   "needs_review": 2,
   "records": 13,
@@ -26781,16 +26781,16 @@
   "curated": 0,
   "details": [
    {
-    "label": "Lanke_2019 \u00b7 reference",
-    "model_id": "Tolvaptan_Lanke2019_reference"
-   },
-   {
     "label": "Plosker_2010 \u00b7 reference",
     "model_id": "Tolvaptan_Plosker2010_reference"
    },
    {
     "label": "Bhatt_2014 \u00b7 reference",
     "model_id": "Tolvaptan_Bhatt2014_reference"
+   },
+   {
+    "label": "Lanke_2019 \u00b7 reference",
+    "model_id": "Tolvaptan_Lanke2019_reference"
    },
    {
     "label": "Shoaf_2012_3 \u00b7 reference",
@@ -26806,10 +26806,10 @@
    }
   ],
   "dir": "drug_tolvaptan",
-  "extracted": 2,
-  "last_change": "2026-09-17T22:48:23.419830+00:00",
+  "extracted": 1,
+  "last_change": "2026-09-22T22:15:28.794058+00:00",
   "name": "tolvaptan",
-  "needs_review": 4,
+  "needs_review": 5,
   "records": 6,
   "rejected": 0,
   "rendered": true,
