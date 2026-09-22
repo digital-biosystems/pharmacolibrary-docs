@@ -56,12 +56,12 @@
     var rows = [];                            // {drug, process, tissue, actor, role, evidence, quote}
     var byActor = {};                         // gene -> {slug -> Set(role)}   (drugbank actors only)
     drugs.forEach(function (d) {
-      q(db, 'SELECT gene, kind, role, evidence, source FROM adme_actor WHERE drug_slug = ?', [d.slug]).forEach(function (a) {
+      q(db, 'SELECT gene, kind, role, evidence, source, page, doi FROM adme_actor WHERE drug_slug = ?', [d.slug]).forEach(function (a) {
         var site = sites[a.gene];
         var proc = site ? site.process : (a.kind === 'target' ? 'target' : a.kind === 'enzyme' ? 'metabolism' : 'distribution');
         var tissues = site ? site.tissues : [[null, null]];
         tissues.forEach(function (t) {
-          rows.push({ drug: d.slug, process: proc, tissue: t[0], actor: a.gene, role: a.role, evidence: a.evidence, cell: site ? site.cell : null });
+          rows.push({ drug: d.slug, process: proc, tissue: t[0], actor: a.gene, role: a.role, evidence: a.evidence, cell: site ? site.cell : null, source: a.source, page: a.page, doi: a.doi });
         });
         if (a.evidence === 'drugbank_actor') {
           var m = byActor[a.gene] = byActor[a.gene] || {};
@@ -318,9 +318,23 @@
     }).join('');
   }
 
+  // The evidence cell names its source: a paper_pgx gene links to the record's own page on
+  // this site (which carries the citation and the DOI) and, when the paper has one, straight
+  // to the DOI; a DrugBank actor names DrugBank; prose quotes DrugBank's ADME text.
+  function evidenceCell(r) {
+    if (r.evidence === 'paper_pgx') {
+      var h = 'paper PGx';
+      if (r.source) h += ' · ' + (r.page ? '<a href="#/' + esc(r.page.replace(/\.md$/, '')) + '" title="the record on this site">' + esc(r.source) + '</a>' : esc(r.source));
+      if (r.doi) h += ' <a class="pks-doi" href="https://doi.org/' + esc(r.doi) + '" target="_blank" rel="noopener" title="' + esc(r.doi) + '">doi</a>';
+      return h;
+    }
+    if (r.evidence === 'drugbank_actor') return 'DrugBank actor';
+    if (r.evidence === 'drugbank_text') return 'DrugBank ADME prose';
+    return esc(r.evidence);
+  }
   function renderTable(root, M) {
     root.innerHTML = '<table class="pks-tbl"><tr><th>drug</th><th>process</th><th>tissue</th><th>actor</th><th>role</th><th>evidence</th></tr>' +
-      M.rows.map(function (r) { return '<tr><td>' + esc(nameOf(M, r.drug)) + '</td><td>' + esc(r.process) + '</td><td>' + esc(r.tissue || '—') + '</td><td class="mono">' + esc(r.actor || (r.quote ? '“' + r.quote.slice(0, 70) + '…”' : '')) + '</td><td>' + esc(r.role || '') + '</td><td>' + esc(r.evidence) + '</td></tr>'; }).join('') + '</table>';
+      M.rows.map(function (r) { return '<tr><td>' + esc(nameOf(M, r.drug)) + '</td><td>' + esc(r.process) + '</td><td>' + esc(r.tissue || '—') + '</td><td class="mono">' + esc(r.actor || (r.quote ? '“' + r.quote.slice(0, 70) + '…”' : '')) + '</td><td>' + esc(r.role || '') + '</td><td>' + evidenceCell(r) + '</td></tr>'; }).join('') + '</table>';
   }
 
   function render(root, M, opts) {

@@ -44,7 +44,7 @@ DrugBank's curated actors + a tissue table), downloaded once; nothing is sent an
 | table | what it holds |
 |---|---|
 | `adme_drug` | every KB drug with a curated actor, an ADME paragraph or an extracted record (~11k) |
-| `adme_actor` | DrugBank enzymes / transporters / carriers / targets with the drug's **role** (substrate, inhibitor, inducer …); the genes named by the KB's own PGx records |
+| `adme_actor` | DrugBank enzymes / transporters / carriers / targets with the drug's **role** (substrate, inhibitor, inducer …); the genes named by the KB's own PGx records, each with the paper it came from (its page here and its DOI) |
 | `adme_site` | the actor → process / tissue (UBERON) / cell hand table (~75 ADME genes) |
 | `adme_text` | organ words found in DrugBank's absorption / metabolism / elimination prose, with the quote |
 
