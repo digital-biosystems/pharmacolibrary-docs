@@ -670,14 +670,6 @@
     "model_id": "Allopurinol_Wen2023_base"
    },
    {
-    "label": "Wen_2023 \u00b7 base",
-    "model_id": "Allopurinol_Wen2023_base"
-   },
-   {
-    "label": "Wen_2023 \u00b7 final",
-    "model_id": "Allopurinol_Wen2023_final"
-   },
-   {
     "label": "Wen_2023 \u00b7 final",
     "model_id": "Allopurinol_Wen2023_final"
    },
@@ -698,14 +690,6 @@
     "model_id": "Allopurinol_Wright2013_base"
    },
    {
-    "label": "Wright_2013 \u00b7 base",
-    "model_id": "Allopurinol_Wright2013_base"
-   },
-   {
-    "label": "Wright_2013 \u00b7 final",
-    "model_id": "Allopurinol_Wright2013_final"
-   },
-   {
     "label": "Wright_2013 \u00b7 final",
     "model_id": "Allopurinol_Wright2013_final"
    },
@@ -718,9 +702,9 @@
   "extracted": 4,
   "last_change": "2026-09-18T06:36:41.271765+00:00",
   "name": "allopurinol",
-  "needs_review": 10,
-  "records": 21,
-  "rejected": 7,
+  "needs_review": 8,
+  "records": 17,
+  "rejected": 5,
   "rendered": true,
   "slug": "allopurinol",
   "stale": 0
@@ -1637,20 +1621,8 @@
     "model_id": "Amoxicillin_Dubbelboer2025_cat_1"
    },
    {
-    "label": "Dubbelboer_2025 \u00b7 cat_1",
-    "model_id": "Amoxicillin_Dubbelboer2025_cat_1"
-   },
-   {
     "label": "Dubbelboer_2025 \u00b7 cat_2",
     "model_id": "Amoxicillin_Dubbelboer2025_cat_2"
-   },
-   {
-    "label": "Dubbelboer_2025 \u00b7 cat_2",
-    "model_id": "Amoxicillin_Dubbelboer2025_cat_2"
-   },
-   {
-    "label": "Dubbelboer_2025 \u00b7 cat_3",
-    "model_id": "Amoxicillin_Dubbelboer2025_cat_3"
    },
    {
     "label": "Dubbelboer_2025 \u00b7 cat_3",
@@ -1661,14 +1633,6 @@
     "model_id": "Amoxicillin_Dubbelboer2025_cat_4"
    },
    {
-    "label": "Dubbelboer_2025 \u00b7 cat_4",
-    "model_id": "Amoxicillin_Dubbelboer2025_cat_4"
-   },
-   {
-    "label": "Dubbelboer_2025 \u00b7 cat_5",
-    "model_id": "Amoxicillin_Dubbelboer2025_cat_5"
-   },
-   {
     "label": "Dubbelboer_2025 \u00b7 cat_5",
     "model_id": "Amoxicillin_Dubbelboer2025_cat_5"
    },
@@ -1677,20 +1641,8 @@
     "model_id": "Amoxicillin_Dubbelboer2025_cat_6"
    },
    {
-    "label": "Dubbelboer_2025 \u00b7 cat_6",
-    "model_id": "Amoxicillin_Dubbelboer2025_cat_6"
-   },
-   {
     "label": "Dubbelboer_2025 \u00b7 median",
     "model_id": "Amoxicillin_Dubbelboer2025_median"
-   },
-   {
-    "label": "Dubbelboer_2025 \u00b7 median",
-    "model_id": "Amoxicillin_Dubbelboer2025_median"
-   },
-   {
-    "label": "Dubbelboer_2025 \u00b7 typical_value",
-    "model_id": "Amoxicillin_Dubbelboer2025_typical_value"
    },
    {
     "label": "Dubbelboer_2025 \u00b7 typical_value",
@@ -1725,14 +1677,6 @@
     "model_id": "Amoxicillin_Carceles1995_intramuscular_route_n_5"
    },
    {
-    "label": "Carceles_1995 \u00b7 intramuscular_route_n_5",
-    "model_id": "Amoxicillin_Carceles1995_intramuscular_route_n_5"
-   },
-   {
-    "label": "Carceles_1995 \u00b7 intravenous_route_w_10",
-    "model_id": "Amoxicillin_Carceles1995_intravenous_route_w_10"
-   },
-   {
     "label": "Carceles_1995 \u00b7 intravenous_route_w_10",
     "model_id": "Amoxicillin_Carceles1995_intravenous_route_w_10"
    }
@@ -1741,9 +1685,9 @@
   "extracted": 6,
   "last_change": "2026-09-18T06:01:19.242118+00:00",
   "name": "amoxicillin",
-  "needs_review": 24,
-  "records": 34,
-  "rejected": 4,
+  "needs_review": 16,
+  "records": 24,
+  "rejected": 2,
   "rendered": true,
   "slug": "amoxicillin",
   "stale": 0
@@ -6309,10 +6253,6 @@
     "model_id": "Clopidogrel_Grafeneder2024_hdp"
    },
    {
-    "label": "Grafeneder_2024 \u00b7 hdp",
-    "model_id": "Clopidogrel_Grafeneder2024_hdp"
-   },
-   {
     "label": "Lee_2012 \u00b7 reference",
     "model_id": "Clopidogrel_Lee2012_reference"
    },
@@ -6323,10 +6263,6 @@
    {
     "label": "Danielak_2017 \u00b7 reference",
     "model_id": "Clopidogrel_Danielak2017_reference"
-   },
-   {
-    "label": "Grafeneder_2024 \u00b7 hv",
-    "model_id": "Clopidogrel_Grafeneder2024_hv"
    },
    {
     "label": "Grafeneder_2024 \u00b7 hv",
@@ -6345,9 +6281,9 @@
   "extracted": 10,
   "last_change": "2026-09-17T22:16:44.449498+00:00",
   "name": "clopidogrel",
-  "needs_review": 4,
-  "records": 20,
-  "rejected": 5,
+  "needs_review": 3,
+  "records": 18,
+  "rejected": 4,
   "rendered": true,
   "slug": "clopidogrel",
   "stale": 0
@@ -14069,14 +14005,6 @@
     "model_id": "Ibuprofen_Brown1998_ibu05"
    },
    {
-    "label": "Brown_1998 \u00b7 ibu05",
-    "model_id": "Ibuprofen_Brown1998_ibu05"
-   },
-   {
-    "label": "Brown_1998 \u00b7 ibu10",
-    "model_id": "Ibuprofen_Brown1998_ibu10"
-   },
-   {
     "label": "Brown_1998 \u00b7 ibu10",
     "model_id": "Ibuprofen_Brown1998_ibu10"
    },
@@ -14125,8 +14053,8 @@
   "extracted": 4,
   "last_change": "2026-09-17T22:23:04.681288+00:00",
   "name": "ibuprofen",
-  "needs_review": 6,
-  "records": 19,
+  "needs_review": 4,
+  "records": 17,
   "rejected": 9,
   "rendered": true,
   "slug": "ibuprofen",
@@ -17664,28 +17592,12 @@
     "model_id": "Metformin_Mak2023_focei_estimates"
    },
    {
-    "label": "Mak_2023 \u00b7 focei_estimates",
-    "model_id": "Metformin_Mak2023_focei_estimates"
-   },
-   {
-    "label": "Mak_2023 \u00b7 saem_estimates",
-    "model_id": "Metformin_Mak2023_saem_estimates"
-   },
-   {
     "label": "Mak_2023 \u00b7 saem_estimates",
     "model_id": "Metformin_Mak2023_saem_estimates"
    },
    {
     "label": "Nikolaidis_2026 \u00b7 base",
     "model_id": "Metformin_Nikolaidis2026_base"
-   },
-   {
-    "label": "Nikolaidis_2026 \u00b7 base",
-    "model_id": "Metformin_Nikolaidis2026_base"
-   },
-   {
-    "label": "Nikolaidis_2026 \u00b7 final",
-    "model_id": "Metformin_Nikolaidis2026_final"
    },
    {
     "label": "Nikolaidis_2026 \u00b7 final",
@@ -17704,20 +17616,8 @@
     "model_id": "Metformin_Ailabouni2026_250_mg"
    },
    {
-    "label": "Ailabouni_2026 \u00b7 250_mg",
-    "model_id": "Metformin_Ailabouni2026_250_mg"
-   },
-   {
     "label": "Ailabouni_2026 \u00b7 850_mg",
     "model_id": "Metformin_Ailabouni2026_850_mg"
-   },
-   {
-    "label": "Ailabouni_2026 \u00b7 850_mg",
-    "model_id": "Metformin_Ailabouni2026_850_mg"
-   },
-   {
-    "label": "Ailabouni_2026 \u00b7 final_model_estimate",
-    "model_id": "Metformin_Ailabouni2026_final_model_estimate"
    },
    {
     "label": "Ailabouni_2026 \u00b7 final_model_estimate",
@@ -17726,10 +17626,6 @@
    {
     "label": "Fernandez_2025 \u00b7 reference",
     "model_id": "Metformin_Fernandez2025_reference"
-   },
-   {
-    "label": "Jacobs_2026 \u00b7 oral",
-    "model_id": "Metformin_Jacobs2026_oral"
    },
    {
     "label": "Jacobs_2026 \u00b7 oral",
@@ -17756,20 +17652,8 @@
     "model_id": "Metformin_Sinnappah2020_duong_et_al4"
    },
    {
-    "label": "Sinnappah_2020 \u00b7 duong_et_al4",
-    "model_id": "Metformin_Sinnappah2020_duong_et_al4"
-   },
-   {
     "label": "Sinnappah_2020 \u00b7 parameter_estimates_rse",
     "model_id": "Metformin_Sinnappah2020_parameter_estimates_rse"
-   },
-   {
-    "label": "Sinnappah_2020 \u00b7 parameter_estimates_rse",
-    "model_id": "Metformin_Sinnappah2020_parameter_estimates_rse"
-   },
-   {
-    "label": "Yoon_2013 \u00b7 estimate_rse",
-    "model_id": "Metformin_Yoon2013_estimate_rse"
    },
    {
     "label": "Yoon_2013 \u00b7 estimate_rse",
@@ -17792,28 +17676,12 @@
     "model_id": "Metformin_Jacobs2026_intravenous"
    },
    {
-    "label": "Jacobs_2026 \u00b7 intravenous",
-    "model_id": "Metformin_Jacobs2026_intravenous"
-   },
-   {
-    "label": "Patel_2019 \u00b7 ator_grt",
-    "model_id": "Metformin_Patel2019_ator_grt"
-   },
-   {
     "label": "Patel_2019 \u00b7 ator_grt",
     "model_id": "Metformin_Patel2019_ator_grt"
    },
    {
     "label": "Patel_2019 \u00b7 met",
     "model_id": "Metformin_Patel2019_met"
-   },
-   {
-    "label": "Patel_2019 \u00b7 met",
-    "model_id": "Metformin_Patel2019_met"
-   },
-   {
-    "label": "Patel_2019 \u00b7 met_grt",
-    "model_id": "Metformin_Patel2019_met_grt"
    },
    {
     "label": "Patel_2019 \u00b7 met_grt",
@@ -17826,19 +17694,15 @@
    {
     "label": "Yoon_2013 \u00b7 shrinkage",
     "model_id": "Metformin_Yoon2013_shrinkage"
-   },
-   {
-    "label": "Yoon_2013 \u00b7 shrinkage",
-    "model_id": "Metformin_Yoon2013_shrinkage"
    }
   ],
   "dir": "drug_metformin",
-  "extracted": 19,
+  "extracted": 15,
   "last_change": "2026-09-22T10:31:29.307165+00:00",
   "name": "metformin",
-  "needs_review": 19,
-  "records": 52,
-  "rejected": 14,
+  "needs_review": 12,
+  "records": 36,
+  "rejected": 9,
   "rendered": true,
   "slug": "metformin",
   "stale": 0
@@ -24619,14 +24483,6 @@
     "model_id": "Semaglutide_Carlsson2018_base"
    },
    {
-    "label": "Carlsson_2018 \u00b7 base",
-    "model_id": "Semaglutide_Carlsson2018_base"
-   },
-   {
-    "label": "Carlsson_2018 \u00b7 full",
-    "model_id": "Semaglutide_Carlsson2018_full"
-   },
-   {
     "label": "Carlsson_2018 \u00b7 full",
     "model_id": "Semaglutide_Carlsson2018_full"
    },
@@ -24639,28 +24495,12 @@
     "model_id": "Semaglutide_Overgaard2019_estimate"
    },
    {
-    "label": "Overgaard_2019 \u00b7 estimate",
-    "model_id": "Semaglutide_Overgaard2019_estimate"
-   },
-   {
-    "label": "Overgaard_2019 \u00b7 one_compartment_model",
-    "model_id": "Semaglutide_Overgaard2019_one_compartment_model"
-   },
-   {
     "label": "Overgaard_2019 \u00b7 one_compartment_model",
     "model_id": "Semaglutide_Overgaard2019_one_compartment_model"
    },
    {
     "label": "Overgaard_2019 \u00b7 one_compartment_model_from_phase_3a_trialsa",
     "model_id": "Semaglutide_Overgaard2019_one_compartment_model_from_phase_3"
-   },
-   {
-    "label": "Overgaard_2019 \u00b7 one_compartment_model_from_phase_3a_trialsa",
-    "model_id": "Semaglutide_Overgaard2019_one_compartment_model_from_phase_3"
-   },
-   {
-    "label": "Overgaard_2019 \u00b7 two_compartment_final_model",
-    "model_id": "Semaglutide_Overgaard2019_two_compartment_final_model"
    },
    {
     "label": "Overgaard_2019 \u00b7 two_compartment_final_model",
@@ -24692,11 +24532,11 @@
    }
   ],
   "dir": "drug_semaglutide",
-  "extracted": 15,
+  "extracted": 9,
   "last_change": "2026-09-17T22:45:34.096766+00:00",
   "name": "semaglutide",
   "needs_review": 2,
-  "records": 19,
+  "records": 13,
   "rejected": 2,
   "rendered": true,
   "slug": "semaglutide",
