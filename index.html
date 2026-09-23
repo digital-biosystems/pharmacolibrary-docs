@@ -525,9 +525,12 @@
 
     // ── sidebar search, over the database ──────────────────────────────────────
     // docsify's plugin indexed rendered pages into localStorage and blew its quota. This
-    // searches 5420 ENTITIES — drugs, paper titles, genes, parameter names and the ontology's
+    // searches 11k ENTITIES — every ATC drug the KB knows (not only the extracted ones), the
+    // ATC classes by code and by name, paper titles, genes, parameter names and the ontology's
     // synonyms — from the same file the query page uses. The database loads on the first
     // keystroke, never on page load, so no page pays for a search nobody performed.
+    // A drug with no page of its own resolves to its ATC level-3 class page, which lists it
+    // with its (zero) counts: not a dead end, a worklist.
     (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
       var box, res, hint, timer;
 
@@ -578,7 +581,7 @@
         if (!nav || nav.querySelector('.pks')) return;   // built once, survives navigation
         var wrap = document.createElement('div');
         wrap.className = 'pks';
-        wrap.innerHTML = '<input type="search" placeholder="Search drugs, papers, genes…" ' +
+        wrap.innerHTML = '<input type="search" placeholder="Search drugs, ATC classes, papers, genes…" ' +
                          'aria-label="Search the knowledge base" autocomplete="off">' +
                          '<div class="pks-hint"></div><ul class="pks-res"></ul>';
         nav.insertBefore(wrap, nav.firstChild);
