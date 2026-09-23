@@ -1,43 +1,39 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;hydrochlorothiazide&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/&quot;},{&quot;label&quot;:&quot;Thoueille_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrochlorothiazide_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hedaya2015_reference&quot;,&quot;label&quot;:&quot;Hedaya_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hedaya2015_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Prichard1985_reference&quot;,&quot;label&quot;:&quot;Prichard_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Commander2021_reference&quot;,&quot;label&quot;:&quot;Commander_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Commander2021_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Shimizu2012_reference&quot;,&quot;label&quot;:&quot;Shimizu_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydrochlorothiazide_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Van2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrochlorothiazide_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hedaya2015_reference&quot;,&quot;label&quot;:&quot;Hedaya_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hedaya2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Prichard1985_reference&quot;,&quot;label&quot;:&quot;Prichard_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydrochlorothiazide_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Commander2021_reference&quot;,&quot;label&quot;:&quot;Commander_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Commander2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Van2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Shimizu2012_reference&quot;,&quot;label&quot;:&quot;Shimizu_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hydrochlorothiazide — `Hydrochlorothiazide_Thoueille2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+
+<details class="legend">
+<summary>What the badges above mean</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
-
-**Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
-3. Advisory only — the base model still replicates.
-4. Check the record's covariate_definitions in _interpretv2.yaml.
-5. Re-run the engineer for this drug if the covariate curves are wanted.
-
-<sub>owner: **engineer** · guidance written by playbook</sub>
+**Why:** every check the reviewer could run passed
+**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
+<sub>owner: **curator**</sub>
 
 ## Citation
 Thoueille P; Alves Saldanha S; Desfontaine V; Kusejko K; Courlet P; Andre P; Cavassini M; Decosterd LA; Buclin T; Guidi M; Swiss HIV Cohort Study et al. (2023). The Journal of antimicrobial chemotherapy 78
   ·  DOI: [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103)
 
 ## Model component
-<dbs-pgx drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Thoueille2023_reference" status="needs_review" stale="false" population="" measured-compound="hydrochlorothiazide" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Thoueille2023_reference" status="curated_candidate" stale="false" population="" measured-compound="hydrochlorothiazide" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CLTFV (L/h) | `Q27` · CL/F | 42.2 | L/h | 1.1722222222222222e-05 | L/h | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
 | V TFV (L) | `Q61` · V | 2390.0 | L | 2.39 | L | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
-| ABCB1 | `Q900` · ABCB1 | {'C/C': 0.0805, 'G/A': -0.0449, 'G/G': 0.0256, 'IM': -0.0199, 'NM': -0.086, 'PM': 0.0, 'T/C': -0.0232, 'T/G': -0.0163, 'T/T': -0.1076, 'UM': -0.0229} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
-| SLC22A1 | `Q900` · SLC22A1 | {'C/C': 0.0805, 'G/A': -0.0449, 'G/G': 0.0256, 'IM': -0.0199, 'NM': -0.086, 'PM': 0.0, 'T/C': -0.0232, 'T/G': -0.0163, 'T/T': -0.1076, 'UM': -0.0229} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| k a (h−1) | `Q49` · kabs | 2.0 | h−1 | 0.0005555555555555556 | 1/h | not captured | review (0.7) | Thoueille_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -47,10 +43,8 @@ Thoueille P; Alves Saldanha S; Desfontaine V; Kusejko K; Courlet P; Andre P; Cav
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
+- `defaulted_parameters`: ['Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - built from REVIEW reference values (Thoueille_2023) — secondary source
@@ -62,10 +56,11 @@ Thoueille P; Alves Saldanha S; Desfontaine V; Kusejko K; Courlet P; Andre P; Cav
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Thoueille_2023:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Thoueille_2023:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Thoueille_2023:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -76,12 +71,13 @@ Thoueille P; Alves Saldanha S; Desfontaine V; Kusejko K; Courlet P; Andre P; Cav
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=hydrochlorothiazide) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -102,12 +98,12 @@ Thoueille P; Alves Saldanha S; Desfontaine V; Kusejko K; Courlet P; Andre P; Cav
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference/Hydrochlorothiazide_Thoueille2023_reference_modelica.zip" download>Hydrochlorothiazide_Thoueille2023_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference/Hydrochlorothiazide_Thoueille2023_reference_fmi.zip" download>Hydrochlorothiazide_Thoueille2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference/Hydrochlorothiazide_Thoueille2023_reference_matlab.zip" download>Hydrochlorothiazide_Thoueille2023_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference/Hydrochlorothiazide_Thoueille2023_reference_matlab_simbio.zip" download>Hydrochlorothiazide_Thoueille2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference/Hydrochlorothiazide_Thoueille2023_reference_modelica.zip" download>Hydrochlorothiazide_Thoueille2023_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference/Hydrochlorothiazide_Thoueille2023_reference_fmi.zip" download>Hydrochlorothiazide_Thoueille2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference/Hydrochlorothiazide_Thoueille2023_reference_matlab.zip" download>Hydrochlorothiazide_Thoueille2023_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference/Hydrochlorothiazide_Thoueille2023_reference_matlab_simbio.zip" download>Hydrochlorothiazide_Thoueille2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference/Hydrochlorothiazide_Thoueille2023_reference_sbml.zip" download>Hydrochlorothiazide_Thoueille2023_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference/Hydrochlorothiazide_Thoueille2023_reference_cellml.zip" download>Hydrochlorothiazide_Thoueille2023_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference/Hydrochlorothiazide_Thoueille2023_reference_cellml.zip" download>Hydrochlorothiazide_Thoueille2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>

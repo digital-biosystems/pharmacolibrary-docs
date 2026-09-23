@@ -700,7 +700,7 @@
   ],
   "dir": "drug_allopurinol",
   "extracted": 4,
-  "last_change": "2026-09-22T22:15:29.685744+00:00",
+  "last_change": "2026-09-23T12:15:40.683784+00:00",
   "name": "allopurinol",
   "needs_review": 8,
   "records": 17,
@@ -3430,7 +3430,7 @@
    "L01DC01"
   ],
   "counts": {
-   "pd": 5,
+   "pd": 35,
    "pgx": 1,
    "pk": 3
   },
@@ -3453,20 +3453,16 @@
     "model_id": "Bleomycin_Giri1986_reference"
    },
    {
-    "label": "Han_2024 \u00b7 reference",
-    "model_id": "Bleomycin_Han2024_reference"
-   },
-   {
     "label": "Schober_1978_2 \u00b7 reference",
     "model_id": "Bleomycin_Schober1978v2_reference"
    }
   ],
   "dir": "drug_bleomycin",
   "extracted": 3,
-  "last_change": "2026-09-17T15:08:13.760105+00:00",
+  "last_change": "2026-09-23T12:15:44.143187+00:00",
   "name": "bleomycin",
-  "needs_review": 3,
-  "records": 6,
+  "needs_review": 2,
+  "records": 5,
   "rejected": 0,
   "rendered": true,
   "slug": "bleomycin",
@@ -5596,28 +5592,28 @@
    "C09BA08"
   ],
   "counts": {
-   "pd": 31,
+   "pd": 45,
    "pgx": 0,
-   "pk": 2
+   "pk": 1
   },
   "curated": 0,
   "details": [
    {
-    "label": "Deget_1991 \u00b7 reference",
-    "model_id": "Cilazapril_Deget1991_reference"
-   },
-   {
     "label": "Meredith_1989 \u00b7 reference",
     "model_id": "Cilazapril_Meredith1989_reference"
+   },
+   {
+    "label": "Gross_1993 \u00b7 reference",
+    "model_id": "Cilazapril_Gross1993_reference"
    }
   ],
   "dir": "drug_cilazapril",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:19.028219+00:00",
+  "last_change": "2026-09-23T12:15:40.958825+00:00",
   "name": "cilazapril",
-  "needs_review": 2,
+  "needs_review": 1,
   "records": 2,
-  "rejected": 0,
+  "rejected": 1,
   "rendered": true,
   "slug": "cilazapril",
   "stale": 0
@@ -7289,7 +7285,7 @@
    "L01AX04"
   ],
   "counts": {
-   "pd": 15,
+   "pd": 10,
    "pgx": 0,
    "pk": 0
   },
@@ -7302,7 +7298,7 @@
   ],
   "dir": "drug_dacarbazine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:25.196452+00:00",
+  "last_change": "2026-09-23T12:15:44.426148+00:00",
   "name": "dacarbazine",
   "needs_review": 0,
   "records": 1,
@@ -9005,7 +9001,7 @@
    "G04CA55"
   ],
   "counts": {
-   "pd": 15,
+   "pd": 17,
    "pgx": 1,
    "pk": 3
   },
@@ -9028,17 +9024,21 @@
     "model_id": "Doxazosin_Aljaeid2019_reference"
    },
    {
+    "label": "Meredith_1985 \u00b7 reference",
+    "model_id": "Doxazosin_Meredith1985_reference"
+   },
+   {
     "label": "Vincent_1983 \u00b7 reference",
     "model_id": "Doxazosin_Vincent1983_reference"
    }
   ],
   "dir": "drug_doxazosin",
   "extracted": 3,
-  "last_change": "2026-09-17T15:08:27.859652+00:00",
+  "last_change": "2026-09-23T12:15:40.824082+00:00",
   "name": "doxazosin",
   "needs_review": 0,
-  "records": 5,
-  "rejected": 2,
+  "records": 6,
+  "rejected": 3,
   "rendered": true,
   "slug": "doxazosin",
   "stale": 0
@@ -9071,9 +9071,9 @@
    "L01DB01"
   ],
   "counts": {
-   "pd": 12,
+   "pd": 24,
    "pgx": 0,
-   "pk": 13
+   "pk": 8
   },
   "curated": 0,
   "details": [
@@ -9106,56 +9106,32 @@
     "model_id": "Doxorubicin_Augustin2026_reference"
    },
    {
+    "label": "Mc_2024 \u00b7 reference",
+    "model_id": "Doxorubicin_Mc2024_reference"
+   },
+   {
     "label": "Mody_2023 \u00b7 reference",
     "model_id": "Doxorubicin_Mody2023_reference"
    },
    {
-    "label": "P\u00e9rez-Blanco_2016 \u00b7 1",
-    "model_id": "Doxorubicin_PrezBlanco2016_1"
-   },
-   {
-    "label": "P\u00e9rez-Blanco_2016 \u00b7 1",
-    "model_id": "Doxorubicin_PrezBlanco2016_1"
-   },
-   {
-    "label": "P\u00e9rez-Blanco_2016 \u00b7 a_u_c_m_mg_h_l",
-    "model_id": "Doxorubicin_PrezBlanco2016_a_u_c_m_mg_h_l"
-   },
-   {
-    "label": "P\u00e9rez-Blanco_2016 \u00b7 a_u_c_m_mg_h_l",
-    "model_id": "Doxorubicin_PrezBlanco2016_a_u_c_m_mg_h_l"
-   },
-   {
-    "label": "P\u00e9rez-Blanco_2016 \u00b7 a_u_c_total_ng_ml",
-    "model_id": "Doxorubicin_PrezBlanco2016_a_u_c_total_ng_ml"
-   },
-   {
-    "label": "P\u00e9rez-Blanco_2016 \u00b7 a_u_c_total_ng_ml",
-    "model_id": "Doxorubicin_PrezBlanco2016_a_u_c_total_ng_ml"
-   },
-   {
-    "label": "P\u00e9rez-Blanco_2016 \u00b7 auc_mg_h_l",
-    "model_id": "Doxorubicin_PrezBlanco2016_auc_mg_h_l"
-   },
-   {
-    "label": "P\u00e9rez-Blanco_2016 \u00b7 auc_mg_h_l",
-    "model_id": "Doxorubicin_PrezBlanco2016_auc_mg_h_l"
-   },
-   {
-    "label": "P\u00e9rez-Blanco_2016 \u00b7 final_model_n_44",
-    "model_id": "Doxorubicin_PrezBlanco2016_final_model_n_44"
-   },
-   {
-    "label": "P\u00e9rez-Blanco_2016 \u00b7 final_model_n_44",
-    "model_id": "Doxorubicin_PrezBlanco2016_final_model_n_44"
+    "label": "P\u00e9rez-Blanco_2016 \u00b7 reference",
+    "model_id": "Doxorubicin_PrezBlanco2016_reference"
    },
    {
     "label": "Sinha_2026 \u00b7 reference",
     "model_id": "Doxorubicin_Sinha2026_reference"
    },
    {
+    "label": "Bressolle_1991 \u00b7 reference",
+    "model_id": "Doxorubicin_Bressolle1991_reference"
+   },
+   {
     "label": "Choi_2021 \u00b7 reference",
     "model_id": "Doxorubicin_Choi2021_reference"
+   },
+   {
+    "label": "Embree_1993 \u00b7 reference",
+    "model_id": "Doxorubicin_Embree1993_reference"
    },
    {
     "label": "Harashima_1999 \u00b7 reference",
@@ -9168,19 +9144,15 @@
    {
     "label": "Liang_2016 \u00b7 reference",
     "model_id": "Doxorubicin_Liang2016_reference"
-   },
-   {
-    "label": "Mc_2024 \u00b7 reference",
-    "model_id": "Doxorubicin_Mc2024_reference"
    }
   ],
   "dir": "drug_doxorubicin",
   "extracted": 6,
-  "last_change": "2026-09-17T15:08:28.845463+00:00",
+  "last_change": "2026-09-23T12:15:43.850351+00:00",
   "name": "doxorubicin",
-  "needs_review": 13,
-  "records": 24,
-  "rejected": 5,
+  "needs_review": 5,
+  "records": 17,
+  "rejected": 6,
   "rendered": true,
   "slug": "doxorubicin",
   "stale": 0
@@ -11053,9 +11025,9 @@
    "N02AB03"
   ],
   "counts": {
-   "pd": 2,
+   "pd": 14,
    "pgx": 0,
-   "pk": 9
+   "pk": 5
   },
   "curated": 0,
   "details": [
@@ -11066,10 +11038,6 @@
    {
     "label": "Davis_1986 \u00b7 reference",
     "model_id": "Fentanyl_Davis1986_reference"
-   },
-   {
-    "label": "Lemmens_1994 \u00b7 reference",
-    "model_id": "Fentanyl_Lemmens1994_reference"
    },
    {
     "label": "Tulbah_2026 \u00b7 reference",
@@ -11084,36 +11052,20 @@
     "model_id": "Fentanyl_Choi2016_reference"
    },
    {
+    "label": "Craft_1983 \u00b7 reference",
+    "model_id": "Fentanyl_Craft1983_reference"
+   },
+   {
+    "label": "Koehntop_1986 \u00b7 reference",
+    "model_id": "Fentanyl_Koehntop1986_reference"
+   },
+   {
     "label": "Langley_1988 \u00b7 reference",
     "model_id": "Fentanyl_Langley1988_reference"
    },
    {
     "label": "Lemmens_1995 \u00b7 reference",
     "model_id": "Fentanyl_Lemmens1995_reference"
-   },
-   {
-    "label": "Reed_2024 \u00b7 dose_absorbed_mg",
-    "model_id": "Fentanyl_Reed2024_dose_absorbed_mg"
-   },
-   {
-    "label": "Reed_2024 \u00b7 dose_absorbed_mg",
-    "model_id": "Fentanyl_Reed2024_dose_absorbed_mg"
-   },
-   {
-    "label": "Reed_2024 \u00b7 fractional_bioavailability",
-    "model_id": "Fentanyl_Reed2024_fractional_bioavailability"
-   },
-   {
-    "label": "Reed_2024 \u00b7 fractional_bioavailability",
-    "model_id": "Fentanyl_Reed2024_fractional_bioavailability"
-   },
-   {
-    "label": "Reed_2024 \u00b7 target_dose_mg",
-    "model_id": "Fentanyl_Reed2024_target_dose_mg"
-   },
-   {
-    "label": "Reed_2024 \u00b7 target_dose_mg",
-    "model_id": "Fentanyl_Reed2024_target_dose_mg"
    },
    {
     "label": "Bragg_1995 \u00b7 reference",
@@ -11124,20 +11076,20 @@
     "model_id": "Fentanyl_Egan1995_reference"
    },
    {
-    "label": "Reed_2024 \u00b7 estimate",
-    "model_id": "Fentanyl_Reed2024_estimate"
+    "label": "Lemmens_1994 \u00b7 reference",
+    "model_id": "Fentanyl_Lemmens1994_reference"
    },
    {
-    "label": "Reed_2024 \u00b7 estimate",
-    "model_id": "Fentanyl_Reed2024_estimate"
+    "label": "Reed_2024 \u00b7 reference",
+    "model_id": "Fentanyl_Reed2024_reference"
    }
   ],
   "dir": "drug_fentanyl",
-  "extracted": 5,
-  "last_change": "2026-09-17T15:08:32.629922+00:00",
+  "extracted": 4,
+  "last_change": "2026-09-23T12:15:50.126022+00:00",
   "name": "fentanyl",
-  "needs_review": 9,
-  "records": 18,
+  "needs_review": 5,
+  "records": 13,
   "rejected": 4,
   "rendered": true,
   "slug": "fentanyl",
@@ -11657,19 +11609,15 @@
    "L01BC02"
   ],
   "counts": {
-   "pd": 23,
-   "pgx": 37,
-   "pk": 16
+   "pd": 33,
+   "pgx": 43,
+   "pk": 7
   },
   "curated": 0,
   "details": [
    {
     "label": "Bae_2026 \u00b7 reference",
     "model_id": "Fluorouracil_Bae2026_reference"
-   },
-   {
-    "label": "Kang_2025 \u00b7 reference",
-    "model_id": "Fluorouracil_Kang2025_reference"
    },
    {
     "label": "Lubomirov_2025 \u00b7 reference",
@@ -11700,12 +11648,20 @@
     "model_id": "Fluorouracil_Brooks2025_reference"
    },
    {
+    "label": "Coust\u00e8re_1991 \u00b7 reference",
+    "model_id": "Fluorouracil_Coustre1991_reference"
+   },
+   {
     "label": "Diasio_1989_2 \u00b7 reference",
     "model_id": "Fluorouracil_Diasio1989v2_reference"
    },
    {
     "label": "Joel_2004 \u00b7 reference",
     "model_id": "Fluorouracil_Joel2004_reference"
+   },
+   {
+    "label": "Kang_2025 \u00b7 reference",
+    "model_id": "Fluorouracil_Kang2025_reference"
    },
    {
     "label": "Kuzuya_1994 \u00b7 reference",
@@ -11720,14 +11676,6 @@
     "model_id": "Fluorouracil_Schmulenson2023_estimate"
    },
    {
-    "label": "Schmulenson_2023 \u00b7 estimate",
-    "model_id": "Fluorouracil_Schmulenson2023_estimate"
-   },
-   {
-    "label": "Schmulenson_2023 \u00b7 estimate_relative_standard_error",
-    "model_id": "Fluorouracil_Schmulenson2023_estimate_relative_standard_erro"
-   },
-   {
     "label": "Schmulenson_2023 \u00b7 estimate_relative_standard_error",
     "model_id": "Fluorouracil_Schmulenson2023_estimate_relative_standard_erro"
    },
@@ -11740,20 +11688,8 @@
     "model_id": "Fluorouracil_Valderrama2025_reference"
    },
    {
-    "label": "Yamada_2025 \u00b7 nca",
-    "model_id": "Fluorouracil_Yamada2025_nca"
-   },
-   {
-    "label": "Yamada_2025 \u00b7 nca",
-    "model_id": "Fluorouracil_Yamada2025_nca"
-   },
-   {
-    "label": "Yamada_2025 \u00b7 poppk",
-    "model_id": "Fluorouracil_Yamada2025_poppk"
-   },
-   {
-    "label": "Yamada_2025 \u00b7 poppk",
-    "model_id": "Fluorouracil_Yamada2025_poppk"
+    "label": "Yamada_2025 \u00b7 reference",
+    "model_id": "Fluorouracil_Yamada2025_reference"
    },
    {
     "label": "van_2012 \u00b7 reference",
@@ -11764,20 +11700,8 @@
     "model_id": "Fluorouracil_van2013_bresole_et_al_1999"
    },
    {
-    "label": "van_2013 \u00b7 bresole_et_al_1999",
-    "model_id": "Fluorouracil_van2013_bresole_et_al_1999"
-   },
-   {
     "label": "van_2013 \u00b7 climente_marti_et_al_2003",
     "model_id": "Fluorouracil_van2013_climente_marti_et_al_2003"
-   },
-   {
-    "label": "van_2013 \u00b7 climente_marti_et_al_2003",
-    "model_id": "Fluorouracil_van2013_climente_marti_et_al_2003"
-   },
-   {
-    "label": "van_2013 \u00b7 couitre_et_al_1991",
-    "model_id": "Fluorouracil_van2013_couitre_et_al_1991"
    },
    {
     "label": "van_2013 \u00b7 couitre_et_al_1991",
@@ -11788,20 +11712,8 @@
     "model_id": "Fluorouracil_van2013_di_paolo_et_al_2002"
    },
    {
-    "label": "van_2013 \u00b7 di_paolo_et_al_2002",
-    "model_id": "Fluorouracil_van2013_di_paolo_et_al_2002"
-   },
-   {
     "label": "van_2013 \u00b7 gusella_et_al_2002",
     "model_id": "Fluorouracil_van2013_gusella_et_al_2002"
-   },
-   {
-    "label": "van_2013 \u00b7 gusella_et_al_2002",
-    "model_id": "Fluorouracil_van2013_gusella_et_al_2002"
-   },
-   {
-    "label": "van_2013 \u00b7 maring_et_al_2003",
-    "model_id": "Fluorouracil_van2013_maring_et_al_2003"
    },
    {
     "label": "van_2013 \u00b7 maring_et_al_2003",
@@ -11812,20 +11724,8 @@
     "model_id": "Fluorouracil_van2013_moore_et_al_1993"
    },
    {
-    "label": "van_2013 \u00b7 moore_et_al_1993",
-    "model_id": "Fluorouracil_van2013_moore_et_al_1993"
-   },
-   {
     "label": "van_2013 \u00b7 sandstrom_et_al_1996",
     "model_id": "Fluorouracil_van2013_sandstrom_et_al_1996"
-   },
-   {
-    "label": "van_2013 \u00b7 sandstrom_et_al_1996",
-    "model_id": "Fluorouracil_van2013_sandstrom_et_al_1996"
-   },
-   {
-    "label": "van_2013 \u00b7 terret_et_al_2000",
-    "model_id": "Fluorouracil_van2013_terret_et_al_2000"
    },
    {
     "label": "van_2013 \u00b7 terret_et_al_2000",
@@ -11836,112 +11736,76 @@
     "model_id": "Fluorouracil_van2013_van_kuilenburg_et_al_2012"
    },
    {
-    "label": "van_2013 \u00b7 van_kuilenburg_et_al_2012",
-    "model_id": "Fluorouracil_van2013_van_kuilenburg_et_al_2012"
-   },
-   {
     "label": "van_2013 \u00b7 woloch_et_al_2012",
     "model_id": "Fluorouracil_van2013_woloch_et_al_2012"
    },
    {
-    "label": "van_2013 \u00b7 woloch_et_al_2012",
-    "model_id": "Fluorouracil_van2013_woloch_et_al_2012"
+    "label": "Daryani_2016 \u00b7 reference",
+    "model_id": "Fluorouracil_Daryani2016_reference"
    },
    {
-    "label": "Coust\u00e8re_1991 \u00b7 reference",
-    "model_id": "Fluorouracil_Coustre1991_reference"
+    "label": "Deyme_2019 \u00b7 bastian_26",
+    "model_id": "Fluorouracil_Deyme2019_bastian_26"
    },
    {
-    "label": "Daryani_2016 \u00b7 estimate_se",
-    "model_id": "Fluorouracil_Daryani2016_estimate_se"
+    "label": "Deyme_2019 \u00b7 beaty_31",
+    "model_id": "Fluorouracil_Deyme2019_beaty_31"
    },
    {
-    "label": "Daryani_2016 \u00b7 estimate_se",
-    "model_id": "Fluorouracil_Daryani2016_estimate_se"
+    "label": "Deyme_2019 \u00b7 berg_37",
+    "model_id": "Fluorouracil_Deyme2019_berg_37"
    },
    {
-    "label": "Daryani_2016 \u00b7 unit",
-    "model_id": "Fluorouracil_Daryani2016_unit"
+    "label": "Deyme_2019 \u00b7 delord_25",
+    "model_id": "Fluorouracil_Deyme2019_delord_25"
    },
    {
-    "label": "Daryani_2016 \u00b7 unit",
-    "model_id": "Fluorouracil_Daryani2016_unit"
+    "label": "Deyme_2019 \u00b7 fouadi_30",
+    "model_id": "Fluorouracil_Deyme2019_fouadi_30"
    },
    {
-    "label": "Deyme_2019 \u00b7 clsn38_fsn38_l_h",
-    "model_id": "Fluorouracil_Deyme2019_clsn38_fsn38_l_h"
+    "label": "Deyme_2019 \u00b7 kimura_29",
+    "model_id": "Fluorouracil_Deyme2019_kimura_29"
    },
    {
-    "label": "Deyme_2019 \u00b7 clsn38_fsn38_l_h",
-    "model_id": "Fluorouracil_Deyme2019_clsn38_fsn38_l_h"
+    "label": "Deyme_2019 \u00b7 klein_38",
+    "model_id": "Fluorouracil_Deyme2019_klein_38"
    },
    {
-    "label": "Deyme_2019 \u00b7 ksn38_10_h",
-    "model_id": "Fluorouracil_Deyme2019_ksn38_10_h"
+    "label": "Deyme_2019 \u00b7 klo_24",
+    "model_id": "Fluorouracil_Deyme2019_klo_24"
    },
    {
-    "label": "Deyme_2019 \u00b7 ksn38_10_h",
-    "model_id": "Fluorouracil_Deyme2019_ksn38_10_h"
+    "label": "Deyme_2019 \u00b7 nikanjan_32",
+    "model_id": "Fluorouracil_Deyme2019_nikanjan_32"
    },
    {
-    "label": "Deyme_2019 \u00b7 ksn38_21_h",
-    "model_id": "Fluorouracil_Deyme2019_ksn38_21_h"
+    "label": "Deyme_2019 \u00b7 porta_oltra_34",
+    "model_id": "Fluorouracil_Deyme2019_porta_oltra_34"
    },
    {
-    "label": "Deyme_2019 \u00b7 ksn38_21_h",
-    "model_id": "Fluorouracil_Deyme2019_ksn38_21_h"
+    "label": "Deyme_2019 \u00b7 poujol_27",
+    "model_id": "Fluorouracil_Deyme2019_poujol_27"
    },
    {
-    "label": "Deyme_2019 \u00b7 qsn38_fsn38_l_h",
-    "model_id": "Fluorouracil_Deyme2019_qsn38_fsn38_l_h"
+    "label": "Deyme_2019 \u00b7 terret_23",
+    "model_id": "Fluorouracil_Deyme2019_terret_23"
    },
    {
-    "label": "Deyme_2019 \u00b7 qsn38_fsn38_l_h",
-    "model_id": "Fluorouracil_Deyme2019_qsn38_fsn38_l_h"
+    "label": "Deyme_2019 \u00b7 thompson_28",
+    "model_id": "Fluorouracil_Deyme2019_thompson_28"
    },
    {
-    "label": "Deyme_2019 \u00b7 v2sn38_fsn38_l",
-    "model_id": "Fluorouracil_Deyme2019_v2sn38_fsn38_l"
+    "label": "Deyme_2019 \u00b7 van_kuijlenburg_36",
+    "model_id": "Fluorouracil_Deyme2019_van_kuijlenburg_36"
    },
    {
-    "label": "Deyme_2019 \u00b7 v2sn38_fsn38_l",
-    "model_id": "Fluorouracil_Deyme2019_v2sn38_fsn38_l"
-   },
-   {
-    "label": "Gieschke_2003 \u00b7 re",
-    "model_id": "Fluorouracil_Gieschke2003_re"
-   },
-   {
-    "label": "Gieschke_2003 \u00b7 re",
-    "model_id": "Fluorouracil_Gieschke2003_re"
-   },
-   {
-    "label": "Gieschke_2003 \u00b7 remark",
-    "model_id": "Fluorouracil_Gieschke2003_remark"
-   },
-   {
-    "label": "Gieschke_2003 \u00b7 remark",
-    "model_id": "Fluorouracil_Gieschke2003_remark"
-   },
-   {
-    "label": "Gieschke_2003 \u00b7 tv",
-    "model_id": "Fluorouracil_Gieschke2003_tv"
-   },
-   {
-    "label": "Gieschke_2003 \u00b7 tv",
-    "model_id": "Fluorouracil_Gieschke2003_tv"
+    "label": "Gieschke_2003 \u00b7 reference",
+    "model_id": "Fluorouracil_Gieschke2003_reference"
    },
    {
     "label": "Hirose_2010 \u00b7 interindividual_variability",
     "model_id": "Fluorouracil_Hirose2010_interindividual_variability"
-   },
-   {
-    "label": "Hirose_2010 \u00b7 interindividual_variability",
-    "model_id": "Fluorouracil_Hirose2010_interindividual_variability"
-   },
-   {
-    "label": "Hirose_2010 \u00b7 population_mean",
-    "model_id": "Fluorouracil_Hirose2010_population_mean"
    },
    {
     "label": "Hirose_2010 \u00b7 population_mean",
@@ -11950,23 +11814,15 @@
    {
     "label": "Kobuchi_2017 \u00b7 reference",
     "model_id": "Fluorouracil_Kobuchi2017_reference"
-   },
-   {
-    "label": "Schmulenson_2023 \u00b7 shrinkage",
-    "model_id": "Fluorouracil_Schmulenson2023_shrinkage"
-   },
-   {
-    "label": "Schmulenson_2023 \u00b7 shrinkage",
-    "model_id": "Fluorouracil_Schmulenson2023_shrinkage"
    }
   ],
   "dir": "drug_fluorouracil",
-  "extracted": 5,
-  "last_change": "2026-09-17T15:08:36.937498+00:00",
+  "extracted": 4,
+  "last_change": "2026-09-23T12:15:48.100304+00:00",
   "name": "fluorouracil",
-  "needs_review": 41,
-  "records": 74,
-  "rejected": 28,
+  "needs_review": 27,
+  "records": 50,
+  "rejected": 19,
   "rendered": true,
   "slug": "fluorouracil",
   "stale": 0
@@ -13536,9 +13392,9 @@
    "C09XA54"
   ],
   "counts": {
-   "pd": 2,
+   "pd": 3,
    "pgx": 2,
-   "pk": 9
+   "pk": 7
   },
   "curated": 0,
   "details": [
@@ -13559,6 +13415,10 @@
     "model_id": "Hydrochlorothiazide_Snelder2014_reference"
    },
    {
+    "label": "Thoueille_2023 \u00b7 reference",
+    "model_id": "Hydrochlorothiazide_Thoueille2023_reference"
+   },
+   {
     "label": "Zhang_2025 \u00b7 reference",
     "model_id": "Hydrochlorothiazide_Zhang2025_reference"
    },
@@ -13567,23 +13427,19 @@
     "model_id": "Hydrochlorothiazide_Commander2021_reference"
    },
    {
-    "label": "Shimizu_2012 \u00b7 reference",
-    "model_id": "Hydrochlorothiazide_Shimizu2012_reference"
-   },
-   {
-    "label": "Thoueille_2023 \u00b7 reference",
-    "model_id": "Hydrochlorothiazide_Thoueille2023_reference"
-   },
-   {
     "label": "Van_2013 \u00b7 reference",
     "model_id": "Hydrochlorothiazide_Van2013_reference"
+   },
+   {
+    "label": "Shimizu_2012 \u00b7 reference",
+    "model_id": "Hydrochlorothiazide_Shimizu2012_reference"
    }
   ],
   "dir": "drug_hydrochlorothiazide",
-  "extracted": 5,
-  "last_change": "2026-09-17T15:08:39.023637+00:00",
+  "extracted": 6,
+  "last_change": "2026-09-23T12:15:41.930068+00:00",
   "name": "hydrochlorothiazide",
-  "needs_review": 3,
+  "needs_review": 2,
   "records": 9,
   "rejected": 1,
   "rendered": true,
@@ -14009,14 +13865,6 @@
     "model_id": "Ibuprofen_Brown1992_reference"
    },
    {
-    "label": "Brown_1998 \u00b7 ibu05",
-    "model_id": "Ibuprofen_Brown1998_ibu05"
-   },
-   {
-    "label": "Brown_1998 \u00b7 ibu10",
-    "model_id": "Ibuprofen_Brown1998_ibu10"
-   },
-   {
     "label": "Gregoire_2004 \u00b7 reference",
     "model_id": "Ibuprofen_Gregoire2004_reference"
    },
@@ -14031,6 +13879,14 @@
    {
     "label": "Asif_2025 \u00b7 reference",
     "model_id": "Ibuprofen_Asif2025_reference"
+   },
+   {
+    "label": "Brown_1998 \u00b7 ibu05",
+    "model_id": "Ibuprofen_Brown1998_ibu05"
+   },
+   {
+    "label": "Brown_1998 \u00b7 ibu10",
+    "model_id": "Ibuprofen_Brown1998_ibu10"
    },
    {
     "label": "DeGraves_1993 \u00b7 reference",
@@ -14051,11 +13907,11 @@
   ],
   "dir": "drug_ibuprofen",
   "extracted": 6,
-  "last_change": "2026-09-22T22:15:26.403476+00:00",
+  "last_change": "2026-09-23T12:15:38.722443+00:00",
   "name": "ibuprofen",
-  "needs_review": 4,
+  "needs_review": 2,
   "records": 17,
-  "rejected": 7,
+  "rejected": 9,
   "rendered": true,
   "slug": "ibuprofen",
   "stale": 0
@@ -18403,7 +18259,7 @@
    "N05CD08"
   ],
   "counts": {
-   "pd": 17,
+   "pd": 20,
    "pgx": 1,
    "pk": 12
   },
@@ -18416,10 +18272,6 @@
    {
     "label": "Bertin_2026 \u00b7 reference",
     "model_id": "Midazolam_Bertin2026_reference"
-   },
-   {
-    "label": "Burtin_1994 \u00b7 mean_estimate_se_index_data_set",
-    "model_id": "Midazolam_Burtin1994_mean_estimate_se_index_data_set"
    },
    {
     "label": "Burtin_1994 \u00b7 mean_estimate_se_index_data_set",
@@ -18446,48 +18298,28 @@
     "model_id": "Midazolam_Jia2026_reference"
    },
    {
+    "label": "Maitre_1991 \u00b7 reference",
+    "model_id": "Midazolam_Maitre1991_reference"
+   },
+   {
     "label": "McCann_2025 \u00b7 reference",
     "model_id": "Midazolam_McCann2025_reference"
+   },
+   {
+    "label": "Yalcin_2022 \u00b7 reference",
+    "model_id": "Midazolam_Yalcin2022_reference"
    },
    {
     "label": "Gupta_2023 \u00b7 reference",
     "model_id": "Midazolam_Gupta2023_reference"
    },
    {
-    "label": "Maitre_1991 \u00b7 reference",
-    "model_id": "Midazolam_Maitre1991_reference"
-   },
-   {
     "label": "Persson_1987 \u00b7 reference",
     "model_id": "Midazolam_Persson1987_reference"
    },
    {
-    "label": "Aarons_1991 \u00b7 individual_fitb_x",
-    "model_id": "Midazolam_Aarons1991_individual_fitb_x"
-   },
-   {
-    "label": "Aarons_1991 \u00b7 individual_fitb_x",
-    "model_id": "Midazolam_Aarons1991_individual_fitb_x"
-   },
-   {
-    "label": "Aarons_1991 \u00b7 population_fita_estimate",
-    "model_id": "Midazolam_Aarons1991_population_fita_estimate"
-   },
-   {
-    "label": "Aarons_1991 \u00b7 population_fita_estimate",
-    "model_id": "Midazolam_Aarons1991_population_fita_estimate"
-   },
-   {
-    "label": "Aarons_1991 \u00b7 population_fita_variabilityc",
-    "model_id": "Midazolam_Aarons1991_population_fita_variabilityc"
-   },
-   {
-    "label": "Aarons_1991 \u00b7 population_fita_variabilityc",
-    "model_id": "Midazolam_Aarons1991_population_fita_variabilityc"
-   },
-   {
-    "label": "Brown_1993 \u00b7 i_v_bolus",
-    "model_id": "Midazolam_Brown1993_i_v_bolus"
+    "label": "Aarons_1991 \u00b7 reference",
+    "model_id": "Midazolam_Aarons1991_reference"
    },
    {
     "label": "Brown_1993 \u00b7 i_v_bolus",
@@ -18496,14 +18328,6 @@
    {
     "label": "Brown_1993 \u00b7 i_v_infusion",
     "model_id": "Midazolam_Brown1993_i_v_infusion"
-   },
-   {
-    "label": "Brown_1993 \u00b7 i_v_infusion",
-    "model_id": "Midazolam_Brown1993_i_v_infusion"
-   },
-   {
-    "label": "Burtin_1994 \u00b7 mean_estimate_se_whole_data_set",
-    "model_id": "Midazolam_Burtin1994_mean_estimate_se_whole_data_set"
    },
    {
     "label": "Burtin_1994 \u00b7 mean_estimate_se_whole_data_set",
@@ -18515,12 +18339,12 @@
    }
   ],
   "dir": "drug_midazolam",
-  "extracted": 10,
-  "last_change": "2026-09-17T15:08:50.934251+00:00",
+  "extracted": 11,
+  "last_change": "2026-09-23T12:15:49.618731+00:00",
   "name": "midazolam",
-  "needs_review": 3,
-  "records": 26,
-  "rejected": 13,
+  "needs_review": 2,
+  "records": 18,
+  "rejected": 5,
   "rendered": true,
   "slug": "midazolam",
   "stale": 0
@@ -20931,7 +20755,7 @@
    "J06BD01"
   ],
   "counts": {
-   "pd": 0,
+   "pd": 8,
    "pgx": 0,
    "pk": 1
   },
@@ -20946,25 +20770,21 @@
     "model_id": "Palivizumab_Reuter2019_reference"
    },
    {
-    "label": "Huang_2017 \u00b7 reference",
-    "model_id": "Palivizumab_Huang2017_reference"
+    "label": "Robbie_2012 \u00b7 reference",
+    "model_id": "Palivizumab_Robbie2012_reference"
    },
    {
     "label": "Madhi_2025 \u00b7 reference",
     "model_id": "Palivizumab_Madhi2025_reference"
-   },
-   {
-    "label": "Robbie_2012 \u00b7 reference",
-    "model_id": "Palivizumab_Robbie2012_reference"
    }
   ],
   "dir": "drug_palivizumab",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:54.322478+00:00",
+  "last_change": "2026-09-23T12:15:48.719832+00:00",
   "name": "palivizumab",
-  "needs_review": 1,
-  "records": 5,
-  "rejected": 3,
+  "needs_review": 2,
+  "records": 4,
+  "rejected": 1,
   "rendered": true,
   "slug": "palivizumab",
   "stale": 0
@@ -21164,9 +20984,9 @@
    "N02BE01"
   ],
   "counts": {
-   "pd": 5,
+   "pd": 6,
    "pgx": 0,
-   "pk": 19
+   "pk": 4
   },
   "curated": 0,
   "details": [
@@ -21175,104 +20995,48 @@
     "model_id": "Paracetamol_Anderson2015_reference"
    },
    {
-    "label": "Brookhuis_2021 \u00b7 miners_et_al_1986_28",
-    "model_id": "Paracetamol_Brookhuis2021_miners_et_al_1986_28"
-   },
-   {
-    "label": "Brookhuis_2021 \u00b7 miners_et_al_1986_28",
-    "model_id": "Paracetamol_Brookhuis2021_miners_et_al_1986_28"
+    "label": "Fritz_1984 \u00b7 reference",
+    "model_id": "Paracetamol_Fritz1984_reference"
    },
    {
     "label": "Anderson_2005 \u00b7 reference",
     "model_id": "Paracetamol_Anderson2005_reference"
    },
    {
-    "label": "Brookhuis_2021 \u00b7 allegaert_et_al_2015_16",
-    "model_id": "Paracetamol_Brookhuis2021_allegaert_et_al_2015_16"
+    "label": "Brookhuis_2021 \u00b7 allegaert_et_al_16",
+    "model_id": "Paracetamol_Brookhuis2021_allegaert_et_al_16"
    },
    {
-    "label": "Brookhuis_2021 \u00b7 allegaert_et_al_2015_16",
-    "model_id": "Paracetamol_Brookhuis2021_allegaert_et_al_2015_16"
+    "label": "Brookhuis_2021 \u00b7 clark_and_seagel_23",
+    "model_id": "Paracetamol_Brookhuis2021_clark_and_seagel_23"
    },
    {
-    "label": "Brookhuis_2021 \u00b7 clark_and_seagel_1983_23",
-    "model_id": "Paracetamol_Brookhuis2021_clark_and_seagel_1983_23"
+    "label": "Brookhuis_2021 \u00b7 kulo_et_al_15",
+    "model_id": "Paracetamol_Brookhuis2021_kulo_et_al_15"
    },
    {
-    "label": "Brookhuis_2021 \u00b7 clark_and_seagel_1983_23",
-    "model_id": "Paracetamol_Brookhuis2021_clark_and_seagel_1983_23"
+    "label": "Brookhuis_2021 \u00b7 miners_et_al_28",
+    "model_id": "Paracetamol_Brookhuis2021_miners_et_al_28"
    },
    {
-    "label": "Brookhuis_2021 \u00b7 kulo_et_al_2013_15",
-    "model_id": "Paracetamol_Brookhuis2021_kulo_et_al_2013_15"
+    "label": "Brookhuis_2021 \u00b7 nimmo_et_al_26",
+    "model_id": "Paracetamol_Brookhuis2021_nimmo_et_al_26"
    },
    {
-    "label": "Brookhuis_2021 \u00b7 kulo_et_al_2013_15",
-    "model_id": "Paracetamol_Brookhuis2021_kulo_et_al_2013_15"
+    "label": "Brookhuis_2021 \u00b7 simpson_et_al_34",
+    "model_id": "Paracetamol_Brookhuis2021_simpson_et_al_34"
    },
    {
-    "label": "Brookhuis_2021 \u00b7 nimmo_et_al_1975_26",
-    "model_id": "Paracetamol_Brookhuis2021_nimmo_et_al_1975_26"
+    "label": "Brookhuis_2021 \u00b7 stanley_et_al_33",
+    "model_id": "Paracetamol_Brookhuis2021_stanley_et_al_33"
    },
    {
-    "label": "Brookhuis_2021 \u00b7 nimmo_et_al_1975_26",
-    "model_id": "Paracetamol_Brookhuis2021_nimmo_et_al_1975_26"
+    "label": "Brookhuis_2021 \u00b7 whitehead_et_al_14",
+    "model_id": "Paracetamol_Brookhuis2021_whitehead_et_al_14"
    },
    {
-    "label": "Brookhuis_2021 \u00b7 simpson_et_al_1988_34",
-    "model_id": "Paracetamol_Brookhuis2021_simpson_et_al_1988_34"
-   },
-   {
-    "label": "Brookhuis_2021 \u00b7 simpson_et_al_1988_34",
-    "model_id": "Paracetamol_Brookhuis2021_simpson_et_al_1988_34"
-   },
-   {
-    "label": "Brookhuis_2021 \u00b7 stanley_et_al_1995_33",
-    "model_id": "Paracetamol_Brookhuis2021_stanley_et_al_1995_33"
-   },
-   {
-    "label": "Brookhuis_2021 \u00b7 stanley_et_al_1995_33",
-    "model_id": "Paracetamol_Brookhuis2021_stanley_et_al_1995_33"
-   },
-   {
-    "label": "Brookhuis_2021 \u00b7 whitehead_et_al_1993_14",
-    "model_id": "Paracetamol_Brookhuis2021_whitehead_et_al_1993_14"
-   },
-   {
-    "label": "Brookhuis_2021 \u00b7 whitehead_et_al_1993_14",
-    "model_id": "Paracetamol_Brookhuis2021_whitehead_et_al_1993_14"
-   },
-   {
-    "label": "Hannam_2018 \u00b7 clacet_l_h_70_kg_1",
-    "model_id": "Paracetamol_Hannam2018_clacet_l_h_70_kg_1"
-   },
-   {
-    "label": "Hannam_2018 \u00b7 clacet_l_h_70_kg_1",
-    "model_id": "Paracetamol_Hannam2018_clacet_l_h_70_kg_1"
-   },
-   {
-    "label": "Hannam_2018 \u00b7 erradd_acet_mg_l",
-    "model_id": "Paracetamol_Hannam2018_erradd_acet_mg_l"
-   },
-   {
-    "label": "Hannam_2018 \u00b7 erradd_acet_mg_l",
-    "model_id": "Paracetamol_Hannam2018_erradd_acet_mg_l"
-   },
-   {
-    "label": "Hannam_2018 \u00b7 tabsacet_h",
-    "model_id": "Paracetamol_Hannam2018_tabsacet_h"
-   },
-   {
-    "label": "Hannam_2018 \u00b7 tabsacet_h",
-    "model_id": "Paracetamol_Hannam2018_tabsacet_h"
-   },
-   {
-    "label": "Hannam_2018 \u00b7 vacet_l_70_kg_1",
-    "model_id": "Paracetamol_Hannam2018_vacet_l_70_kg_1"
-   },
-   {
-    "label": "Hannam_2018 \u00b7 vacet_l_70_kg_1",
-    "model_id": "Paracetamol_Hannam2018_vacet_l_70_kg_1"
+    "label": "Hannam_2018 \u00b7 reference",
+    "model_id": "Paracetamol_Hannam2018_reference"
    },
    {
     "label": "Holladay_2023 \u00b7 reference",
@@ -21283,6 +21047,10 @@
     "model_id": "Paracetamol_Langeskov2022_reference"
    },
    {
+    "label": "Rawlins_1977 \u00b7 reference",
+    "model_id": "Paracetamol_Rawlins1977_reference"
+   },
+   {
     "label": "Wu_2025 \u00b7 reference",
     "model_id": "Paracetamol_Wu2025_reference"
    },
@@ -21291,37 +21059,25 @@
     "model_id": "Paracetamol_Allegaert2015_reference"
    },
    {
-    "label": "Brookhuis_2021 \u00b7 beaulac_baillargeon_et_al_1993_12",
-    "model_id": "Paracetamol_Brookhuis2021_beaulac_baillargeon_et_al_1993_12"
+    "label": "Brookhuis_2021 \u00b7 beaulac_baillargeon_et_al_12",
+    "model_id": "Paracetamol_Brookhuis2021_beaulac_baillargeon_et_al_12"
    },
    {
-    "label": "Brookhuis_2021 \u00b7 beaulac_baillargeon_et_al_1993_12",
-    "model_id": "Paracetamol_Brookhuis2021_beaulac_baillargeon_et_al_1993_12"
+    "label": "Brookhuis_2021 \u00b7 beaulac_baillargeon_et_al_22",
+    "model_id": "Paracetamol_Brookhuis2021_beaulac_baillargeon_et_al_22"
    },
    {
-    "label": "Brookhuis_2021 \u00b7 beaulac_baillargeon_et_al_1994_22",
-    "model_id": "Paracetamol_Brookhuis2021_beaulac_baillargeon_et_al_1994_22"
-   },
-   {
-    "label": "Brookhuis_2021 \u00b7 beaulac_baillargeon_et_al_1994_22",
-    "model_id": "Paracetamol_Brookhuis2021_beaulac_baillargeon_et_al_1994_22"
-   },
-   {
-    "label": "Brookhuis_2021 \u00b7 kulo_et_al_2012_31",
-    "model_id": "Paracetamol_Brookhuis2021_kulo_et_al_2012_31"
-   },
-   {
-    "label": "Brookhuis_2021 \u00b7 kulo_et_al_2012_31",
-    "model_id": "Paracetamol_Brookhuis2021_kulo_et_al_2012_31"
+    "label": "Brookhuis_2021 \u00b7 kulo_et_al_31",
+    "model_id": "Paracetamol_Brookhuis2021_kulo_et_al_31"
    }
   ],
   "dir": "drug_paracetamol",
-  "extracted": 3,
-  "last_change": "2026-09-17T15:08:55.861613+00:00",
+  "extracted": 2,
+  "last_change": "2026-09-23T12:15:39.746936+00:00",
   "name": "paracetamol",
-  "needs_review": 26,
-  "records": 36,
-  "rejected": 6,
+  "needs_review": 14,
+  "records": 20,
+  "rejected": 3,
   "rendered": true,
   "slug": "paracetamol",
   "stale": 0
@@ -23311,23 +23067,15 @@
    "J05AB16"
   ],
   "counts": {
-   "pd": 6,
+   "pd": 7,
    "pgx": 0,
-   "pk": 5
+   "pk": 4
   },
   "curated": 0,
   "details": [
    {
     "label": "Morrisette_2020 \u00b7 reference",
     "model_id": "Remdesivir_Morrisette2020_reference"
-   },
-   {
-    "label": "Sukeishi_2022 \u00b7 reference",
-    "model_id": "Remdesivir_Sukeishi2022_reference"
-   },
-   {
-    "label": "Abouellil_2023 \u00b7 remdesivir",
-    "model_id": "Remdesivir_Abouellil2023_remdesivir"
    },
    {
     "label": "Abouellil_2023 \u00b7 remdesivir",
@@ -23346,57 +23094,41 @@
     "model_id": "Remdesivir_Roberts2025_reference"
    },
    {
+    "label": "Zhang_2025 \u00b7 parameters_for_a_renal_impaired_patient_with_egfr_0_s_rgel_et_al_2021",
+    "model_id": "Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient"
+   },
+   {
+    "label": "Zhang_2025 \u00b7 parameters_for_healthy_control_zhang_et_al_2020",
+    "model_id": "Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et"
+   },
+   {
+    "label": "Zhang_2025 \u00b7 parameters_for_severe_renal_impaired_patients_zhang_et_al_2020",
+    "model_id": "Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa"
+   },
+   {
+    "label": "Abouellil_2023 \u00b7 gs_441524",
+    "model_id": "Remdesivir_Abouellil2023_gs_441524"
+   },
+   {
+    "label": "Abouellil_2023 \u00b7 gs_704277",
+    "model_id": "Remdesivir_Abouellil2023_gs_704277"
+   },
+   {
+    "label": "Sukeishi_2022 \u00b7 reference",
+    "model_id": "Remdesivir_Sukeishi2022_reference"
+   },
+   {
     "label": "Tamura_2023 \u00b7 reference",
     "model_id": "Remdesivir_Tamura2023_reference"
-   },
-   {
-    "label": "Zhang_2025 \u00b7 parameters_for_a_renal_impaired_patient_with_egfr_0_s_rgel_et_al_2021",
-    "model_id": "Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient"
-   },
-   {
-    "label": "Zhang_2025 \u00b7 parameters_for_a_renal_impaired_patient_with_egfr_0_s_rgel_et_al_2021",
-    "model_id": "Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient"
-   },
-   {
-    "label": "Zhang_2025 \u00b7 parameters_for_healthy_control_zhang_et_al_2020",
-    "model_id": "Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et"
-   },
-   {
-    "label": "Zhang_2025 \u00b7 parameters_for_healthy_control_zhang_et_al_2020",
-    "model_id": "Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et"
-   },
-   {
-    "label": "Zhang_2025 \u00b7 parameters_for_severe_renal_impaired_patients_zhang_et_al_2020",
-    "model_id": "Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa"
-   },
-   {
-    "label": "Zhang_2025 \u00b7 parameters_for_severe_renal_impaired_patients_zhang_et_al_2020",
-    "model_id": "Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa"
-   },
-   {
-    "label": "Abouellil_2023 \u00b7 gs_441524",
-    "model_id": "Remdesivir_Abouellil2023_gs_441524"
-   },
-   {
-    "label": "Abouellil_2023 \u00b7 gs_441524",
-    "model_id": "Remdesivir_Abouellil2023_gs_441524"
-   },
-   {
-    "label": "Abouellil_2023 \u00b7 gs_704277",
-    "model_id": "Remdesivir_Abouellil2023_gs_704277"
-   },
-   {
-    "label": "Abouellil_2023 \u00b7 gs_704277",
-    "model_id": "Remdesivir_Abouellil2023_gs_704277"
    }
   ],
   "dir": "drug_remdesivir",
-  "extracted": 2,
-  "last_change": "2026-09-17T15:08:57.892882+00:00",
+  "extracted": 1,
+  "last_change": "2026-09-23T12:15:48.618713+00:00",
   "name": "remdesivir",
-  "needs_review": 12,
-  "records": 18,
-  "rejected": 0,
+  "needs_review": 7,
+  "records": 12,
+  "rejected": 2,
   "rendered": true,
   "slug": "remdesivir",
   "stale": 0
@@ -24661,9 +24393,9 @@
    "C10BX01"
   ],
   "counts": {
-   "pd": 1,
+   "pd": 2,
    "pgx": 5,
-   "pk": 11
+   "pk": 10
   },
   "curated": 0,
   "details": [
@@ -24712,28 +24444,8 @@
     "model_id": "Simvastatin_Methaneethorn2014v2_reference"
    },
    {
-    "label": "Ogungbenro_2019 \u00b7 base",
-    "model_id": "Simvastatin_Ogungbenro2019_base"
-   },
-   {
-    "label": "Ogungbenro_2019 \u00b7 base",
-    "model_id": "Simvastatin_Ogungbenro2019_base"
-   },
-   {
-    "label": "Ogungbenro_2019 \u00b7 between_subject_variability_bsvb",
-    "model_id": "Simvastatin_Ogungbenro2019_between_subject_variability_bsvb"
-   },
-   {
-    "label": "Ogungbenro_2019 \u00b7 between_subject_variability_bsvb",
-    "model_id": "Simvastatin_Ogungbenro2019_between_subject_variability_bsvb"
-   },
-   {
-    "label": "Ogungbenro_2019 \u00b7 parameters",
-    "model_id": "Simvastatin_Ogungbenro2019_parameters"
-   },
-   {
-    "label": "Ogungbenro_2019 \u00b7 parameters",
-    "model_id": "Simvastatin_Ogungbenro2019_parameters"
+    "label": "Ogungbenro_2019 \u00b7 reference",
+    "model_id": "Simvastatin_Ogungbenro2019_reference"
    },
    {
     "label": "Tsamandouras_2014 \u00b7 reference",
@@ -24746,11 +24458,11 @@
   ],
   "dir": "drug_simvastatin",
   "extracted": 6,
-  "last_change": "2026-09-17T15:09:01.843044+00:00",
+  "last_change": "2026-09-23T12:15:42.974806+00:00",
   "name": "simvastatin",
   "needs_review": 3,
-  "records": 19,
-  "rejected": 10,
+  "records": 14,
+  "rejected": 5,
   "rendered": true,
   "slug": "simvastatin",
   "stale": 0
@@ -25800,9 +25512,9 @@
    "C10BX20"
   ],
   "counts": {
-   "pd": 37,
+   "pd": 47,
    "pgx": 4,
-   "pk": 17
+   "pk": 5
   },
   "curated": 0,
   "details": [
@@ -25815,48 +25527,32 @@
     "model_id": "Telmisartan_Hao2007_reference"
    },
    {
-    "label": "Ieiri_2011 \u00b7 reference",
-    "model_id": "Telmisartan_Ieiri2011_reference"
-   },
-   {
     "label": "Jeong_2025 \u00b7 reference",
     "model_id": "Telmisartan_Jeong2025_reference"
+   },
+   {
+    "label": "Ieiri_2011 \u00b7 reference",
+    "model_id": "Telmisartan_Ieiri2011_reference"
    },
    {
     "label": "Petersen_2024 \u00b7 reference",
     "model_id": "Telmisartan_Petersen2024_reference"
    },
    {
-    "label": "Tatami_2003 \u00b7 calculated_exposures",
-    "model_id": "Telmisartan_Tatami2003_calculated_exposures"
-   },
-   {
-    "label": "Tatami_2003 \u00b7 calculated_exposures",
-    "model_id": "Telmisartan_Tatami2003_calculated_exposures"
-   },
-   {
-    "label": "Tatami_2003 \u00b7 covariates",
-    "model_id": "Telmisartan_Tatami2003_covariates"
-   },
-   {
-    "label": "Tatami_2003 \u00b7 covariates",
-    "model_id": "Telmisartan_Tatami2003_covariates"
-   },
-   {
     "label": "Tatami_2003 \u00b7 estimated_parameters",
     "model_id": "Telmisartan_Tatami2003_estimated_parameters"
    },
    {
-    "label": "Tatami_2003 \u00b7 estimated_parameters",
-    "model_id": "Telmisartan_Tatami2003_estimated_parameters"
+    "label": "Tatami_2003 \u00b7 estimated_value",
+    "model_id": "Telmisartan_Tatami2003_estimated_value"
    },
    {
-    "label": "Tatami_2003 \u00b7 final",
-    "model_id": "Telmisartan_Tatami2003_final"
+    "label": "Tatami_2003 \u00b7 final_estimates_of_the_model_parameters",
+    "model_id": "Telmisartan_Tatami2003_final_estimates_of_the_model_paramete"
    },
    {
-    "label": "Tatami_2003 \u00b7 final",
-    "model_id": "Telmisartan_Tatami2003_final"
+    "label": "Tatami_2003 \u00b7 hypothesized_value",
+    "model_id": "Telmisartan_Tatami2003_hypothesized_value"
    },
    {
     "label": "Liu_2023 \u00b7 reference",
@@ -25865,19 +25561,15 @@
    {
     "label": "Tatami_2003 \u00b7 value",
     "model_id": "Telmisartan_Tatami2003_value"
-   },
-   {
-    "label": "Tatami_2003 \u00b7 value",
-    "model_id": "Telmisartan_Tatami2003_value"
    }
   ],
   "dir": "drug_telmisartan",
-  "extracted": 2,
-  "last_change": "2026-09-17T15:09:04.685452+00:00",
+  "extracted": 3,
+  "last_change": "2026-09-23T12:15:41.593094+00:00",
   "name": "telmisartan",
-  "needs_review": 11,
-  "records": 16,
-  "rejected": 3,
+  "needs_review": 6,
+  "records": 11,
+  "rejected": 2,
   "rendered": true,
   "slug": "telmisartan",
   "stale": 0
@@ -26781,16 +26473,16 @@
   "curated": 0,
   "details": [
    {
+    "label": "Lanke_2019 \u00b7 reference",
+    "model_id": "Tolvaptan_Lanke2019_reference"
+   },
+   {
     "label": "Plosker_2010 \u00b7 reference",
     "model_id": "Tolvaptan_Plosker2010_reference"
    },
    {
     "label": "Bhatt_2014 \u00b7 reference",
     "model_id": "Tolvaptan_Bhatt2014_reference"
-   },
-   {
-    "label": "Lanke_2019 \u00b7 reference",
-    "model_id": "Tolvaptan_Lanke2019_reference"
    },
    {
     "label": "Shoaf_2012_3 \u00b7 reference",
@@ -26806,10 +26498,10 @@
    }
   ],
   "dir": "drug_tolvaptan",
-  "extracted": 1,
-  "last_change": "2026-09-22T22:15:28.794058+00:00",
+  "extracted": 2,
+  "last_change": "2026-09-23T12:15:37.737154+00:00",
   "name": "tolvaptan",
-  "needs_review": 5,
+  "needs_review": 4,
   "records": 6,
   "rejected": 0,
   "rendered": true,
@@ -27731,7 +27423,7 @@
    "L01CA01"
   ],
   "counts": {
-   "pd": 3,
+   "pd": 8,
    "pgx": 0,
    "pk": 4
   },
@@ -27746,24 +27438,16 @@
     "model_id": "Vinblastine_Zhou1990_estimated_parameters_cls_l_kg"
    },
    {
-    "label": "Zhou_1990 \u00b7 estimated_parameters_cls_l_kg",
-    "model_id": "Vinblastine_Zhou1990_estimated_parameters_cls_l_kg"
+    "label": "Zhou_1990 \u00b7 estimated_parameters_vc_l_h_kg",
+    "model_id": "Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg"
    },
    {
     "label": "Zhou_1990 \u00b7 estimated_parameters_vt_l_kg",
     "model_id": "Vinblastine_Zhou1990_estimated_parameters_vt_l_kg"
    },
    {
-    "label": "Zhou_1990 \u00b7 estimated_parameters_vt_l_kg",
-    "model_id": "Vinblastine_Zhou1990_estimated_parameters_vt_l_kg"
-   },
-   {
-    "label": "Zhou_1990 \u00b7 first_exponential_at1_2_g_ml_h",
-    "model_id": "Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h"
-   },
-   {
-    "label": "Zhou_1990 \u00b7 first_exponential_at1_2_g_ml_h",
-    "model_id": "Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h"
+    "label": "Owellen_1977 \u00b7 reference",
+    "model_id": "Vinblastine_Owellen1977_reference"
    },
    {
     "label": "Petric_2023 \u00b7 reference",
@@ -27775,12 +27459,12 @@
    }
   ],
   "dir": "drug_vinblastine",
-  "extracted": 7,
-  "last_change": "2026-09-17T15:09:10.205545+00:00",
+  "extracted": 4,
+  "last_change": "2026-09-23T12:15:44.343695+00:00",
   "name": "vinblastine",
   "needs_review": 0,
-  "records": 9,
-  "rejected": 2,
+  "records": 7,
+  "rejected": 3,
   "rendered": true,
   "slug": "vinblastine",
   "stale": 0

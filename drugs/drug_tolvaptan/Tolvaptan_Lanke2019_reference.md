@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03X&quot;,&quot;href&quot;:&quot;atc/C03X.md&quot;},{&quot;label&quot;:&quot;tolvaptan&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/&quot;},{&quot;label&quot;:&quot;Lanke_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Bhatt2014_reference&quot;,&quot;label&quot;:&quot;Bhatt_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_reference&quot;,&quot;label&quot;:&quot;Lanke_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2012v3_reference&quot;,&quot;label&quot;:&quot;Shoaf_2012_3_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2012v3_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolvaptan_Lanke2019_reference&quot;,&quot;label&quot;:&quot;Lanke_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tolvaptan_Plosker2010_reference&quot;,&quot;label&quot;:&quot;Plosker_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Bhatt2014_reference&quot;,&quot;label&quot;:&quot;Bhatt_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2012v3_reference&quot;,&quot;label&quot;:&quot;Shoaf_2012_3_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2012v3_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Shoaf2017_reference&quot;,&quot;label&quot;:&quot;Shoaf_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Shoaf2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolvaptan_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolvaptan/Tolvaptan_Van2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tolvaptan — `Tolvaptan_Lanke2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--red" title="gpt-oss:120b re-read this paper; the two readings agree on 0.5 of the compared fields. The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-5.6-luna (not confirmed, agreement 0.571), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>a model of the other family re-read the paper and agreed on every compared field.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>the second reading differs on a non-structural field (a population label, a flag).</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>the second reading differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -17,29 +17,21 @@
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
-
-**Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
-3. Advisory only — the base model still replicates.
-4. Check the record's covariate_definitions in _interpretv2.yaml.
-5. Re-run the engineer for this drug if the covariate curves are wanted.
-
-<sub>owner: **engineer** · guidance written by playbook</sub>
+**Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
+**Second reading:** `gpt-5.6-luna` read this paper differently on `parameters[cl/f].covariate_forms` ([] vs ['power']) and 5 more field(s) — a structural parameter, so the record is disputed.
+**How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
+<sub>owner: **curator**</sub>
 
 ## Citation
 Lanke S; Shoaf SE et al. (2019). Journal of clinical pharmacology 59
   ·  DOI: [10.1002/jcph.1370](https://doi.org/10.1002/jcph.1370)
 
 ## Model component
-<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Lanke2019_reference" status="needs_review" stale="false" population="adults with autosomal dominant polycystic kidney disease" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Lanke2019_reference" status="accepted_with_caveats" stale="false" population="adults with autosomal dominant polycystic kidney disease" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F (L/h) | `Q27` · CL/F | 13.4 | L/h | 3.7222222222222225e-06 | [l] / [h] | not captured | exact (1.0) | jcph1370-tbl-0003:row2:col1, jcph1370-tbl-0003:row2:col2, jcph1370-tbl-0003:row2:col3, jcph1370-tbl-0003:row2:col4, jcph1370-tbl-0003:row2:col5 | — | not captured |
@@ -48,6 +40,7 @@ Lanke S; Shoaf SE et al. (2019). Journal of clinical pharmacology 59
 | theta_q319_egfr_power | `Q900` · theta_q319_egfr_power | 0.54 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1370-tbl-0003:row3:col2, jcph1370-tbl-0003:row3:col3, jcph1370-tbl-0003:row3:col4, jcph1370-tbl-0003:row3:col5 | — | not captured |
 | theta_q319_wt_power | `Q900` · theta_q319_wt_power | -0.35 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1370-tbl-0003:row4:col2, jcph1370-tbl-0003:row4:col3, jcph1370-tbl-0003:row4:col4, jcph1370-tbl-0003:row4:col5 | — | not captured |
 | theta_q319_wt_power | `Q900` · theta_q319_wt_power | 0.44 | not captured | not captured | not captured | not captured | not captured (not captured) | jcph1370-tbl-0003:row7:col2, jcph1370-tbl-0003:row7:col3, jcph1370-tbl-0003:row7:col4, jcph1370-tbl-0003:row7:col5 | — | not captured |
+| k a (h -1 ) | `Q49` · kabs | 1.34 | h -1 | 0.00037222222222222225 | 1/h | not captured | review_gapfill (0.7) | Van_2013_2:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,10 +50,8 @@ Lanke S; Shoaf SE et al. (2019). Journal of clinical pharmacology 59
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
+- `defaulted_parameters`: ['Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Fractional change of CL/F with Inha' — extend the ontology if this is a real PK parameter (source ['jcph1370-tbl-0003:row5:col2', 'jcph1370-tbl-0003:row5:col3', 'jcph1370-tbl-0003:row5:col4', 'jcph1370-tbl-0003:row5:col5'])
@@ -78,32 +69,46 @@ Lanke S; Shoaf SE et al. (2019). Journal of clinical pharmacology 59
 - routed 'Proportional' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
 - covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tolvaptan
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Van_2013_2's review values (primary lacked it)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 3
 
 ## Validation
 
-**Cross-check (two models):** <span class="pk-badge pk-badge--red">not confirmed</span>  
-second reader `gpt-oss:120b` · first reading `qwen3.8:27b-mtp-q8_0` · agreement 0.5 (7/14 fields) · the first reading is what this page shows
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
-<details><summary>7 field(s) the two readings disagree on</summary>
-
-| field | first reading | second reading | agreement |
+| second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `parameters[cl/f].covariate_forms` | [] | ['power', 'power'] | mismatch |
-| `parameters[theta_cl_f_egfr_power]` | not captured | 0.54 | only_one_extracted |
-| `parameters[theta_cl_f_wt_power]` | not captured | -0.35 | only_one_extracted |
-| `parameters[theta_q319_egfr_power]` | 0.54 | not captured | only_one_extracted |
-| `parameters[theta_q319_wt_power]` | -0.35 | not captured | only_one_extracted |
-| `parameters[theta_v_f_wt_power]` | not captured | 0.44 | only_one_extracted |
-| `parameters[vd/f].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-5.6-luna` | not confirmed | 0.571 (8/14 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.5 (7/14 fields) | 7 |
+
+<details><summary>13 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-5.6-luna` | `parameters[cl/f].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-5.6-luna` | `parameters[k a]` | 1.34 | not captured | only_one_extracted |
+| `gpt-5.6-luna` | `parameters[theta_cl_f_egfr_power]` | not captured | 0.54 | only_one_extracted |
+| `gpt-5.6-luna` | `parameters[theta_q319_egfr_power]` | 0.54 | not captured | only_one_extracted |
+| `gpt-5.6-luna` | `parameters[theta_v_f_wt_power]` | not captured | 0.44 | only_one_extracted |
+| `gpt-5.6-luna` | `parameters[vd/f].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss:120b` | `parameters[cl/f].covariate_forms` | [] | ['power', 'power'] | mismatch |
+| `gpt-oss:120b` | `parameters[theta_cl_f_egfr_power]` | not captured | 0.54 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_cl_f_wt_power]` | not captured | -0.35 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q319_egfr_power]` | 0.54 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q319_wt_power]` | -0.35 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_v_f_wt_power]` | not captured | 0.44 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vd/f].covariate_forms` | [] | ['power'] | mismatch |
 
 </details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>the model that re-read the paper. It is chosen from the OTHER family (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them means little.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields the two readings agree on.</td></tr><tr><td><code>verdict</code></td><td>`elevate` both readings agree · `flag` a non-structural field differs · `block` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the primary extracted nothing and was given one hinted retry.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the primary — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
 </details>
 
 
@@ -111,11 +116,12 @@ second reader `gpt-oss:120b` · first reading `qwen3.8:27b-mtp-q8_0` · agreemen
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['jcph1370-tbl-0003:row2:col1', 'jcph1370-tbl-0003:row2:col2', 'jcph1370-tbl-0003:row2:col3', 'jcph1370-tbl-0003:row2:col4', 'jcph1370-tbl-0003:row2:col5'] |
 | C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['jcph1370-tbl-0003:row8:col1', 'jcph1370-tbl-0003:row8:col2', 'jcph1370-tbl-0003:row8:col3', 'jcph1370-tbl-0003:row8:col4', 'jcph1370-tbl-0003:row8:col5'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Van_2013_2:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['jcph1370-tbl-0003:row6:col1', 'jcph1370-tbl-0003:row6:col2', 'jcph1370-tbl-0003:row6:col3', 'jcph1370-tbl-0003:row6:col4', 'jcph1370-tbl-0003:row6:col5'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -130,9 +136,9 @@ second reader `gpt-oss:120b` · first reading `qwen3.8:27b-mtp-q8_0` · agreemen
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=tolvaptan) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -153,12 +159,12 @@ second reader `gpt-oss:120b` · first reading `qwen3.8:27b-mtp-q8_0` · agreemen
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_modelica.zip" download>Tolvaptan_Lanke2019_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_fmi.zip" download>Tolvaptan_Lanke2019_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_matlab.zip" download>Tolvaptan_Lanke2019_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_matlab_simbio.zip" download>Tolvaptan_Lanke2019_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_modelica.zip" download>Tolvaptan_Lanke2019_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_fmi.zip" download>Tolvaptan_Lanke2019_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_matlab.zip" download>Tolvaptan_Lanke2019_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_matlab_simbio.zip" download>Tolvaptan_Lanke2019_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_sbml.zip" download>Tolvaptan_Lanke2019_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_cellml.zip" download>Tolvaptan_Lanke2019_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_cellml.zip" download>Tolvaptan_Lanke2019_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>

@@ -5,10 +5,10 @@
   "central.C"
  ],
  "parameters": {
-  "Cl": 3.3888888888888884e-06,
+  "Cl": 5.277777777777778e-06,
   "F": 0.9,
   "Tlag": 0.0,
-  "VdPerKg": 0.021,
+  "VdPerKg": 0.0027285714285714287,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
@@ -16,7 +16,7 @@
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 5.665580522432455e-05
+  "central.C": 0.0003034750695907879
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

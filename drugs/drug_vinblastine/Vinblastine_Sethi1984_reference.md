@@ -1,33 +1,31 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Sethi_1984 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_cls_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_cls_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_cls_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_cls_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vt_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vt_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vt_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vt_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h&quot;,&quot;label&quot;:&quot;Zhou_1990_first_exponential_at1_2_g_ml_h&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h&quot;,&quot;label&quot;:&quot;Zhou_1990_first_exponential_at1_2_g_ml_h&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Petric2023_reference&quot;,&quot;label&quot;:&quot;Petric_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Petric2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Sethi1984_reference&quot;,&quot;label&quot;:&quot;Sethi_1984_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Sethi1984_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_cls_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_cls_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vc_l_h_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vt_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vt_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Owellen1977_reference&quot;,&quot;label&quot;:&quot;Owellen_1977_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Owellen1977_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Petric2023_reference&quot;,&quot;label&quot;:&quot;Petric_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Petric2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Sethi1984_reference&quot;,&quot;label&quot;:&quot;Sethi_1984_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Sethi1984_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vinblastine — `Vinblastine_Sethi1984_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.923). The first reading is what the record holds.">cross-check: disputed</span>
+
+<details class="legend">
+<summary>What the badges above mean</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
 
 ### Reviewer guidance
 
-> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `AUC∞`</sub>
-
-> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
-
-**What is wrong:** a structural parameter has the wrong dimension.
-
-**Steps:**
-1. Not a curation fix — scholar limitation.
-2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-3. A misread unit in transcribe is the usual cause.
-
-<sub>owner: **scholar** · guidance written by playbook</sub>
+**Why:** a structural parameter has the wrong dimension.
+**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (vinblastine vs vincristine, vinblastine, vindesine) — a structural parameter, so the record is disputed.
+**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
+<sub>owner: **scholar**</sub>
 
 ## Citation
 Sethi VS; Surratt P; Spurr CL et al. (1984). Cancer chemotherapy and pharmacology 12
   ·  DOI: [10.1007/BF00255905](https://doi.org/10.1007/BF00255905)
 
 ## Model component
-<dbs-pgx drug="vinblastine" model-id="Vinblastine_Sethi1984_reference" status="rejected" stale="false" population="adult male rhesus monkeys" measured-compound="vincristine, vinblastine, vindesine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="vinblastine" model-id="Vinblastine_Sethi1984_reference" status="rejected" stale="false" population="adult male rhesus monkeys" measured-compound="vinblastine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -40,7 +38,7 @@ Sethi VS; Surratt P; Spurr CL et al. (1984). Cancer chemotherapy and pharmacolog
 | βt1/2 (min) | `Q60` · t1/2β | 152 | min | 9120.0 | [min] | not captured | llm_corrected (0.6) | Sethi_1984_table_1:row1:col3 | — | not captured |
 | Vc (l/kg) | `Q63` · V1 | 0.210 | l/kg | 0.014700000000000001 | [l] / [kg] | not captured | exact (1.0) | Sethi_1984_table_1:row2:col3 | — | not captured |
 | VD (l/kg) | `Q61` · V | 1.50 | l/kg | 0.105 | [l] / [kg] | not captured | exact (1.0) | Sethi_1984_table_1:row3:col3 | — | not captured |
-| AUC0∞ (nM · min) | `Q17` · AUC∞ | 31146 | nM · min | not captured | [min] · [nM] | not captured | llm_confirmed (0.6) | Sethi_1984_table_1:row4:col3 | — | not captured |
+| AUC₀∞ (nM · min) | `Q17` · AUC∞ | 31146 | nM · min | not captured | [min] · [nM] | not captured | llm_confirmed (0.6) | Sethi_1984_table_1:row4:col3 | — | not captured |
 | Plasma Clearance (ml/min/kg) | `Q22` · CL | 7.0 | ml/min/kg | 8.166666666666666e-06 | [ml] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Sethi_1984_table_1:row6:col3 | — | not captured |
 | k10 (min⁻¹) | `Q47` · kel | 0.054 | min⁻¹ | 0.0009 | [1] / [min] | not captured | exact (1.0) | Sethi_1984_table_1:row7:col3 | — | not captured |
 | k12 (min⁻¹) | `Q301` · k12 | 0.281 | min⁻¹ | 0.004683333333333334 | [1] / [min] | not captured | exact (1.0) | Sethi_1984_table_1:row8:col3 | — | not captured |
@@ -55,10 +53,10 @@ Sethi VS; Surratt P; Spurr CL et al. (1984). Cancer chemotherapy and pharmacolog
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'AUC0∞ (nM · min)' → Q17 (unit '[length] * [time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'AUC0∞ (nM · min/mg)' → Q17 (unit '[length] * [time] / [mass]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped duplicate Q17 ('AUC0∞ (nM · min/mg)', value '16745') — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vincristine, vinblastine, vindesine
+- unit_dimension_mismatch: 'AUC₀∞ (nM · min)' → Q17 (unit '[length] * [time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- unit_dimension_mismatch: 'AUC₀∞ (nM · min/mg)' → Q17 (unit '[length] * [time] / [mass]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped duplicate Q17 ('AUC₀∞ (nM · min/mg)', value '16745') — already have one for this compound
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vinblastine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
@@ -71,12 +69,34 @@ Sethi VS; Surratt P; Spurr CL et al. (1984). Cancer chemotherapy and pharmacolog
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.923 (12/13 fields) | 1 |
+
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `screen.dose_compound` | vinblastine | vincristine, vinblastine, vindesine | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q17 | fail | [length] * [time] | nM · min | not captured | not captured | ['Sethi_1984_table_1:row4:col3'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Sethi_1984_table_1:row6:col3'] |
 | C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['Sethi_1984_table_1:row8:col3'] |

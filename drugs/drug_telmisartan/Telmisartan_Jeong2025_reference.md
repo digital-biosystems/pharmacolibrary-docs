@@ -1,44 +1,45 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;telmisartan&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/&quot;},{&quot;label&quot;:&quot;Jeong_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Chae2018_reference&quot;,&quot;label&quot;:&quot;Chae_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Chae2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Hao2007_reference&quot;,&quot;label&quot;:&quot;Hao_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Hao2007_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Jeong2025_reference&quot;,&quot;label&quot;:&quot;Jeong_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Jeong2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_calculated_exposures&quot;,&quot;label&quot;:&quot;Tatami_2003_calculated_exposures&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_calculated_exposures.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_calculated_exposures&quot;,&quot;label&quot;:&quot;Tatami_2003_calculated_exposures&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_calculated_exposures.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_covariates&quot;,&quot;label&quot;:&quot;Tatami_2003_covariates&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_covariates.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_covariates&quot;,&quot;label&quot;:&quot;Tatami_2003_covariates&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_covariates.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_estimated_parameters&quot;,&quot;label&quot;:&quot;Tatami_2003_estimated_parameters&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_parameters.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_estimated_parameters&quot;,&quot;label&quot;:&quot;Tatami_2003_estimated_parameters&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_parameters.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_final&quot;,&quot;label&quot;:&quot;Tatami_2003_final&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_final.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_final&quot;,&quot;label&quot;:&quot;Tatami_2003_final&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_final.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Liu2023_reference&quot;,&quot;label&quot;:&quot;Liu_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Liu2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_value&quot;,&quot;label&quot;:&quot;Tatami_2003_value&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_value&quot;,&quot;label&quot;:&quot;Tatami_2003_value&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Chae2018_reference&quot;,&quot;label&quot;:&quot;Chae_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Chae2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Hao2007_reference&quot;,&quot;label&quot;:&quot;Hao_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Hao2007_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Jeong2025_reference&quot;,&quot;label&quot;:&quot;Jeong_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Jeong2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_estimated_parameters&quot;,&quot;label&quot;:&quot;Tatami_2003_estimated_parameters&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_parameters.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_estimated_value&quot;,&quot;label&quot;:&quot;Tatami_2003_estimated_value&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_final_estimates_of_the_model_paramete&quot;,&quot;label&quot;:&quot;Tatami_2003_final_estimates_of_the_model_parameters&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_final_estimates_of_the_model_paramete.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_hypothesized_value&quot;,&quot;label&quot;:&quot;Tatami_2003_hypothesized_value&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_hypothesized_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Liu2023_reference&quot;,&quot;label&quot;:&quot;Liu_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Liu2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_value&quot;,&quot;label&quot;:&quot;Tatami_2003_value&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # telmisartan — `Telmisartan_Jeong2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
+
+<details class="legend">
+<summary>What the badges above mean</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
+
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
 
 ### Reviewer guidance
 
-**What is wrong:** the engineer's deviations are not documented and quantified; the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised; T6_deviations — got invented_absorption: not acceptable
-
-**Steps:**
-1. Read the .deviation.json and confirm each deviation names what changed and why.
-2. Anything undocumented needs the engineer, not a curator.
-3. Advisory only — the base model still replicates.
-4. Check the record's covariate_definitions in _interpretv2.yaml.
-5. Re-run the engineer for this drug if the covariate curves are wanted.
-
-<sub>owner: **engineer** · guidance written by playbook</sub>
+**Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
+**Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 6 more field(s) — a structural parameter, so the record is disputed.
+**How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
+<sub>owner: **curator**</sub>
 
 ## Citation
 Jeong IH; Ryu S; Han N; Staatz CE; Baek IH et al. (2025). Clinical pharmacokinetics 64
   ·  DOI: [10.1007/s40262-024-01471-3](https://doi.org/10.1007/s40262-024-01471-3)
 
 ## Model component
-<dbs-pgx drug="telmisartan" model-id="Telmisartan_Jeong2025_reference" status="needs_review" stale="false" population="healthy subjects and hypertensive patients" measured-compound="telmisartan" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="telmisartan" model-id="Telmisartan_Jeong2025_reference" status="accepted_with_caveats" stale="false" population="healthy subjects and hypertensive patients" measured-compound="telmisartan" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 18.3 | L/h | 5.0833333333333335e-06 | L/h | not captured | review (0.7) | Jeong_2025:review | — | not captured |
-| V 1 /F (L) | `Q290` · V1/F | 20.7 | L | 0.0207 | L | not captured | review (0.7) | Jeong_2025:review | — | not captured |
-| V 2 /F (L) | `Q82` · V2/F | 360.0 | L | 0.36 | L | not captured | review (0.7) | Jeong_2025:review | — | not captured |
-| Q/F (L/h) | `Q69` · Q/F | 12.7 | L/h | 3.5277777777777775e-06 | L/h | not captured | review (0.7) | Jeong_2025:review | — | not captured |
-| ALAG (h) | `Q83` · tlag | 0.228 | h | 820.8000000000001 | h | not captured | review (0.7) | Jeong_2025:review | — | not captured |
+| k a (h -1 ) | `Q49` · kabs | 0.182 | h -1 | 5.055555555555555e-05 | 1/h | not captured | space_fold (0.95) | Jeong_2025:discussion_prose | — | not captured |
+| V 1 /F (L) | `Q290` · V1/F | 20.7 | L | 0.0207 | L | not captured | space_fold (0.95) | Jeong_2025:discussion_prose | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 18.3 | L/h | 5.0833333333333335e-06 | L/h | not captured | exact (1.0) | Jeong_2025:discussion_prose | — | not captured |
+| V 2 /F (L) | `Q82` · V2/F | 360 | L | 0.36 | L | not captured | space_fold (0.95) | Jeong_2025:discussion_prose | — | not captured |
+| Q/F (L/h) | `Q69` · Q/F | 12.7 | L/h | 3.5277777777777775e-06 | L/h | not captured | exact (1.0) | Jeong_2025:discussion_prose | — | not captured |
+| ALAG (h) | `Q83` · tlag | 0.228 | h | 820.8000000000001 | h | not captured | exact (1.0) | Jeong_2025:discussion_prose | — | not captured |
 | ABCC2 | `Q900` · ABCC2 | {'C/C': 0.0, 'C/T': -0.0269, 'T/T': -0.0853} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
@@ -49,51 +50,79 @@ Jeong IH; Ryu S; Han N; Staatz CE; Baek IH et al. (2025). Clinical pharmacokinet
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['ka']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- built from REVIEW reference values (Jeong_2025) — secondary source
-- volume reported by review
+- salvaged Q49 ('k a (h -1 )'=0.182) from results prose — parameter table was unreadable
+- salvaged Q290 ('V 1 /F (L)'=20.7) from results prose — parameter table was unreadable
+- salvaged Q27 ('CL/F (L/h)'=18.3) from results prose — parameter table was unreadable
+- salvaged Q82 ('V 2 /F (L)'=360) from results prose — parameter table was unreadable
+- salvaged Q69 ('Q/F (L/h)'=12.7) from results prose — parameter table was unreadable
+- salvaged Q83 ('ALAG (h)'=0.228) from results prose — parameter table was unreadable
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=telmisartan
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 
 **Extraction notes:**
 - LLM selected parameter table(s) 1
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
+
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `parameters[alag]` | 0.228 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | 18.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k a]` | 0.182 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q/f]` | 12.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v 1 /f]` | 20.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v 2 /f]` | 360 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jeong_2025:review'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jeong_2025:review'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jeong_2025:review'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jeong_2025:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Jeong_2025:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 18.3 L/h | not captured | not captured | ['Jeong_2025:review'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 20.7 L | not captured | not captured | ['Jeong_2025:review'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 360 L | not captured | not captured | ['Jeong_2025:review'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 18.3 L/h | not captured | not captured | ['Jeong_2025:discussion_prose'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 20.7 L | not captured | not captured | ['Jeong_2025:discussion_prose'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 360 L | not captured | not captured | ['Jeong_2025:discussion_prose'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=telmisartan) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 10.46 | 7.259918237242894e-05 | not captured | unresolved concentration unit (exp 'ng/mL/mg', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 6.67 | 7.259918237242894e-05 | not captured | unresolved concentration unit (exp 'ng/mL/mg', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 4.0 | 7.259918237242894e-05 | not captured | unresolved concentration unit (exp 'ng/mL/mg', sim 'kg/m3') |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 10.46 | 2.782140756375443e-05 | not captured | unresolved concentration unit (exp 'ng/mL/mg', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 6.67 | 2.782140756375443e-05 | not captured | unresolved concentration unit (exp 'ng/mL/mg', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 4.0 | 2.782140756375443e-05 | not captured | unresolved concentration unit (exp 'ng/mL/mg', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -114,12 +143,12 @@ Jeong IH; Ryu S; Han N; Staatz CE; Baek IH et al. (2025). Clinical pharmacokinet
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_telmisartan/Telmisartan_Jeong2025_reference/Telmisartan_Jeong2025_reference_modelica.zip" download>Telmisartan_Jeong2025_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_telmisartan/Telmisartan_Jeong2025_reference/Telmisartan_Jeong2025_reference_modelica.zip" download>Telmisartan_Jeong2025_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_telmisartan/Telmisartan_Jeong2025_reference/Telmisartan_Jeong2025_reference_fmi.zip" download>Telmisartan_Jeong2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Jeong2025_reference/Telmisartan_Jeong2025_reference_matlab.zip" download>Telmisartan_Jeong2025_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Jeong2025_reference/Telmisartan_Jeong2025_reference_matlab_simbio.zip" download>Telmisartan_Jeong2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Jeong2025_reference/Telmisartan_Jeong2025_reference_sbml.zip" download>Telmisartan_Jeong2025_reference_sbml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Jeong2025_reference/Telmisartan_Jeong2025_reference_cellml.zip" download>Telmisartan_Jeong2025_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Jeong2025_reference/Telmisartan_Jeong2025_reference_matlab.zip" download>Telmisartan_Jeong2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Jeong2025_reference/Telmisartan_Jeong2025_reference_matlab_simbio.zip" download>Telmisartan_Jeong2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Jeong2025_reference/Telmisartan_Jeong2025_reference_sbml.zip" download>Telmisartan_Jeong2025_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Jeong2025_reference/Telmisartan_Jeong2025_reference_cellml.zip" download>Telmisartan_Jeong2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>

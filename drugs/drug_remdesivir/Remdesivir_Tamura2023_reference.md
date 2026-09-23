@@ -1,70 +1,101 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Tamura_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_reference&quot;,&quot;label&quot;:&quot;Sukeishi_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_remdesivir&quot;,&quot;label&quot;:&quot;Abouellil_2023_remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_remdesivir.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_remdesivir&quot;,&quot;label&quot;:&quot;Abouellil_2023_remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_remdesivir.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Humeniuk2021_reference&quot;,&quot;label&quot;:&quot;Humeniuk_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Leegwater2022_reference&quot;,&quot;label&quot;:&quot;Leegwater_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Tamura2023_reference&quot;,&quot;label&quot;:&quot;Tamura_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Tamura2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_a_renal_impaired_patient_with_egfr_0_s_rgel_et_al_2021&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_a_renal_impaired_patient_with_egfr_0_s_rgel_et_al_2021&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_healthy_control_zhang_et_al_2020&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_healthy_control_zhang_et_al_2020&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_severe_renal_impaired_patients_zhang_et_al_2020&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_severe_renal_impaired_patients_zhang_et_al_2020&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_gs_441524&quot;,&quot;label&quot;:&quot;Abouellil_2023_gs_441524&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_441524.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_gs_441524&quot;,&quot;label&quot;:&quot;Abouellil_2023_gs_441524&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_441524.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_gs_704277&quot;,&quot;label&quot;:&quot;Abouellil_2023_gs_704277&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_704277.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_gs_704277&quot;,&quot;label&quot;:&quot;Abouellil_2023_gs_704277&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_704277.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_remdesivir&quot;,&quot;label&quot;:&quot;Abouellil_2023_remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_remdesivir.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Humeniuk2021_reference&quot;,&quot;label&quot;:&quot;Humeniuk_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Leegwater2022_reference&quot;,&quot;label&quot;:&quot;Leegwater_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_a_renal_impaired_patient_with_egfr_0_s_rgel_et_al_2021&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_healthy_control_zhang_et_al_2020&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_severe_renal_impaired_patients_zhang_et_al_2020&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_gs_441524&quot;,&quot;label&quot;:&quot;Abouellil_2023_gs_441524&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_441524.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_gs_704277&quot;,&quot;label&quot;:&quot;Abouellil_2023_gs_704277&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_704277.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_reference&quot;,&quot;label&quot;:&quot;Sukeishi_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Tamura2023_reference&quot;,&quot;label&quot;:&quot;Tamura_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Tamura2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Tamura2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+
+<details class="legend">
+<summary>What the badges above mean</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
 
 ### Reviewer guidance
 
-> ⚙️ **Pipeline limitation — reviewer_tooling.** the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault<br><sub>evidence: `C6_cl_magnitude failed (ratio None)`</sub>
+**Why:** every check the reviewer could run passed
+**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['remdesivir', 'gs-441524', 'metabolism']] vs []) and 1 more field(s) — a structural parameter, so the record is disputed.
+**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
+<sub>owner: **curator**</sub>
 
-> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
-
-**What is wrong:** clearance is outside the plausible magnitude window.
-
-**Steps:**
-1. Not a curation fix — reviewer_tooling limitation.
-2. Check the parameter's unit_verbatim — an unconverted per-kg or per-hour unit is the usual cause, not a genuinely extreme value.
-3. Confirm value_si against the paper's reported number.
-4. A 'ratio None' means the check could not compute a ratio, so treat the window as unverified rather than as a failure of the value.
-
-<sub>owner: **curator** · guidance written by playbook</sub>
+> **Dose compound ≠ measured compound:** dosed `remdesivir`, measured `GS-441524`.
 
 ## Citation
 Tamura R; Irie K; Nakagawa A; Muroi H; Eto M; Ikesue H; Muroi N; Fukushima S; Tomii K; Hashida T et al. (2023). CPT: pharmacometrics & systems pharmacology 12
   ·  DOI: [10.1002/psp4.12936](https://doi.org/10.1002/psp4.12936)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Tamura2023_reference" status="needs_review" stale="false" population="patients with moderate and severe COVID-19" measured-compound="remdesivir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Tamura2023_reference" status="rejected" stale="false" population="patients with moderate and severe COVID-19" measured-compound="GS-441524" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></dbs-pgx>
 
-**Parameterization:** mechanistic.
+**Parameterization:** apparent_wrt_Fm.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CLpm | `Q22` · CL | 863.0 | mL/min | 1.4383333333333332e-05 | L/h | not captured | review (0.7) | Tamura_2023:review | — | not captured |
-| V p | `Q61` · V | 73.4 | L | 0.0734 | L | not captured | review (0.7) | Tamura_2023:review | — | not captured |
+_No resolved parameters._
 
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | 0 | not captured |
+| not captured | not captured | 10 | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | 0 | not captured |
+| not captured | not captured | 150 | not captured |
+| not captured | not captured | 1 | not captured |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- built from REVIEW reference values (Tamura_2023) — secondary source
-- volume reported by review
+- $THETA(1) has no $PK binding — index may be misassigned
+- $THETA(2) has no $PK binding — index may be misassigned
+- $THETA(3) has no $PK binding — index may be misassigned
+- $THETA(4) has no $PK binding — index may be misassigned
+- $THETA(5) has no $PK binding — index may be misassigned
+- $THETA(7) has no $PK binding — index may be misassigned
+- $THETA(8) has no $PK binding — index may be misassigned
+- control_stream: nonlinear kinetics (MM/product $DES or general ODE ADVAN) — manual_model_class, route_to_review
+- apparent-ness: parameterization=apparent_wrt_Fm (metabolite model)
+- theta_crosscheck: table present but its labels did not align to bound THETAs (skipped)
+- status held at route_to_review — not promoted
+- review gap-fill skipped: this record measures 'GS-441524', not remdesivir — the review values are the parent's
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
+
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.links` | [['remdesivir', 'gs-441524', 'metabolism']] | [] | mismatch |
+| `gpt-oss:120b` | `model.parameterization` | apparent_wrt_Fm | mechanistic | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tamura_2023:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tamura_2023:review'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 863.0 | not captured | not captured | ['Tamura_2023:review'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 51.8 L/h | not captured | not captured | ['Tamura_2023:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 73.4 L | not captured | not captured | ['Tamura_2023:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

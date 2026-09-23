@@ -1,35 +1,37 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Zhou_1990 \u00b7 estimated_parameters_cls_l_kg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_cls_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_cls_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_cls_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_cls_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vt_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vt_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vt_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vt_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h&quot;,&quot;label&quot;:&quot;Zhou_1990_first_exponential_at1_2_g_ml_h&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h&quot;,&quot;label&quot;:&quot;Zhou_1990_first_exponential_at1_2_g_ml_h&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_first_exponential_at1_2_g_ml_h.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Petric2023_reference&quot;,&quot;label&quot;:&quot;Petric_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Petric2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Sethi1984_reference&quot;,&quot;label&quot;:&quot;Sethi_1984_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Sethi1984_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_cls_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_cls_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vc_l_h_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vt_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vt_l_kg&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Owellen1977_reference&quot;,&quot;label&quot;:&quot;Owellen_1977_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Owellen1977_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Petric2023_reference&quot;,&quot;label&quot;:&quot;Petric_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Petric2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Sethi1984_reference&quot;,&quot;label&quot;:&quot;Sethi_1984_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Sethi1984_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vinblastine — `Vinblastine_Zhou1990_estimated_parameters_cls_l_kg`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+
+<details class="legend">
+<summary>What the badges above mean</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
 
 ### Reviewer guidance
 
-**What is wrong:** every check the reviewer could run passed
-
-**Steps:**
-1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
-
-<sub>owner: **curator** · guidance written by playbook</sub>
+**Why:** every check the reviewer could run passed
+**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
+<sub>owner: **curator**</sub>
 
 ## Citation
 Zhou XJ; Martin M; Placidi M; Cano JP; Rahmani R et al. (1990). European journal of drug metabolism and pharmacokinetics 15
   ·  DOI: [10.1007/BF03190222](https://doi.org/10.1007/BF03190222)
 
 ## Model component
-<dbs-pgx drug="vinblastine" model-id="Vinblastine_Zhou1990_estimated_parameters_cls_l_kg" status="curated_candidate" stale="false" population="rats" measured-compound="vinblastine, vincristine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="vinblastine" model-id="Vinblastine_Zhou1990_estimated_parameters_cls_l_kg" status="curated_candidate" stale="false" population="rats" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| VLB | `Q352` · Vnorm | 11.46 | l/kg | 0.8022000000000001 | [l] / [kg] | not captured | llm (0.6) | Zhou_1990_table_1:row0:col5, Zhou_1990_table_1:row0:col6 | — | not captured |
-| VCR | `Q61` · V | 0.41 | l/kg | 0.0287 | [l] / [kg] | not captured | llm (0.6) | Zhou_1990_table_1:row1:col5, Zhou_1990_table_1:row1:col6 | — | not captured |
+| VLB 0.6 | `Q61` · V | 1.49 | l/kg | 0.1043 | [l] / [kg] | not captured | llm (0.6) | Zhou_1990_table_1:row0:col7 | — | not captured |
 | Systemic clearance | `Q22` · CL | 46.2 | L/h | 1.2833333333333335e-05 | L/h | not captured | review_gapfill (0.7) | Levêque_1996:review | — | not captured |
 | Tlag_pop | `Q83` · tlag | 0.17 | h | 612.0 | h | not captured | review_gapfill (0.7) | Petric_2023:review | — | not captured |
 
@@ -41,9 +43,10 @@ Zhou XJ; Martin M; Placidi M; Cano JP; Rahmani R et al. (1990). European journal
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vinblastine, vincristine
+- dropped duplicate Q61 ('VCR 0.1', value '0.12') — already have one for this compound
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vinblastine
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- population split: 'estimated parameters cls (l/kg)' subgroup of Zhou_1990 (paper reports 3 populations: estimated parameters cls (l/kg), estimated parameters vt (l/kg), first exponential at1/2α (µg/ml) (h))
+- population split: 'estimated parameters cls (l/kg)' subgroup of Zhou_1990 (paper reports 3 populations: estimated parameters cls (l/kg), estimated parameters vc (l/h/kg), estimated parameters vt (l/kg))
 - gap-filled Q22 (CL) from Levêque_1996's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -52,10 +55,6 @@ Zhou XJ; Martin M; Placidi M; Cano JP; Rahmani R et al. (1990). European journal
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 1
-- unparsed cell Zhou_1990_table_1:row0:col2 = '87.0±52.0 0.51±0.15'
-- unparsed cell Zhou_1990_table_1:row0:col3 = '47.0±13.0 7.5±2.8'
-- unparsed cell Zhou_1990_table_1:row1:col2 = '714.0±383.0 0.78±0.21'
-- unparsed cell Zhou_1990_table_1:row1:col3 = '12.2±10.1 14.3±6.3'
 
 ## Validation
 
@@ -63,23 +62,24 @@ Zhou XJ; Martin M; Placidi M; Cano JP; Rahmani R et al. (1990). European journal
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Levêque_1996:review'] |
-| C5_dimension_Q352 | pass | [length] ** 3 | not captured | not captured | not captured | ['Zhou_1990_table_1:row0:col5', 'Zhou_1990_table_1:row0:col6'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Zhou_1990_table_1:row1:col5', 'Zhou_1990_table_1:row1:col6'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Zhou_1990_table_1:row0:col7'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Petric_2023:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 46.2 | not captured | not captured | ['Levêque_1996:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 46.2 L/h | not captured | not captured | ['Levêque_1996:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 28.7 L | not captured | not captured | ['Zhou_1990_table_1:row1:col5', 'Zhou_1990_table_1:row1:col6'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 104 L | not captured | not captured | ['Zhou_1990_table_1:row0:col7'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=vinblastine, vincristine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=vinblastine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
@@ -103,8 +103,8 @@ Zhou XJ; Martin M; Placidi M; Cano JP; Rahmani R et al. (1990). European journal
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg_modelica.zip" download>Vinblastine_Zhou1990_estimated_parameters_cls_l_kg_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg_modelica.zip" download>Vinblastine_Zhou1990_estimated_parameters_cls_l_kg_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg_fmi.zip" download>Vinblastine_Zhou1990_estimated_parameters_cls_l_kg_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg_matlab.zip" download>Vinblastine_Zhou1990_estimated_parameters_cls_l_kg_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg_matlab_simbio.zip" download>Vinblastine_Zhou1990_estimated_parameters_cls_l_kg_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg_sbml.zip" download>Vinblastine_Zhou1990_estimated_parameters_cls_l_kg_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>

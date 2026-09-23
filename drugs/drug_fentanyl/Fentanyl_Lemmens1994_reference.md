@@ -1,37 +1,45 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Lemmens_1994 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Lemmens1994_reference&quot;,&quot;label&quot;:&quot;Lemmens_1994_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fentanyl_Tulbah2026_reference&quot;,&quot;label&quot;:&quot;Tulbah_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Tulbah2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Choi2016_reference&quot;,&quot;label&quot;:&quot;Choi_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Choi2016_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Langley1988_reference&quot;,&quot;label&quot;:&quot;Langley_1988_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Langley1988_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Lemmens1995_reference&quot;,&quot;label&quot;:&quot;Lemmens_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Reed2024_dose_absorbed_mg&quot;,&quot;label&quot;:&quot;Reed_2024_dose_absorbed_mg&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Reed2024_dose_absorbed_mg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Reed2024_dose_absorbed_mg&quot;,&quot;label&quot;:&quot;Reed_2024_dose_absorbed_mg&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Reed2024_dose_absorbed_mg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Reed2024_fractional_bioavailability&quot;,&quot;label&quot;:&quot;Reed_2024_fractional_bioavailability&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Reed2024_fractional_bioavailability.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Reed2024_fractional_bioavailability&quot;,&quot;label&quot;:&quot;Reed_2024_fractional_bioavailability&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Reed2024_fractional_bioavailability.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Reed2024_target_dose_mg&quot;,&quot;label&quot;:&quot;Reed_2024_target_dose_mg&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Reed2024_target_dose_mg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Reed2024_target_dose_mg&quot;,&quot;label&quot;:&quot;Reed_2024_target_dose_mg&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Reed2024_target_dose_mg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Egan1995_reference&quot;,&quot;label&quot;:&quot;Egan_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Egan1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Reed2024_estimate&quot;,&quot;label&quot;:&quot;Reed_2024_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Reed2024_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Reed2024_estimate&quot;,&quot;label&quot;:&quot;Reed_2024_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Reed2024_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Tulbah2026_reference&quot;,&quot;label&quot;:&quot;Tulbah_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Tulbah2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Choi2016_reference&quot;,&quot;label&quot;:&quot;Choi_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Choi2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Craft1983_reference&quot;,&quot;label&quot;:&quot;Craft_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Craft1983_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Langley1988_reference&quot;,&quot;label&quot;:&quot;Langley_1988_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Langley1988_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Lemmens1995_reference&quot;,&quot;label&quot;:&quot;Lemmens_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Egan1995_reference&quot;,&quot;label&quot;:&quot;Egan_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Egan1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Lemmens1994_reference&quot;,&quot;label&quot;:&quot;Lemmens_1994_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fentanyl_Reed2024_reference&quot;,&quot;label&quot;:&quot;Reed_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Reed2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fentanyl — `Fentanyl_Lemmens1994_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
+
+<details class="legend">
+<summary>What the badges above mean</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
 
 ### Reviewer guidance
 
-**What is wrong:** every check the reviewer could run passed
-
-**Steps:**
-1. Confirm the model card and promote to 'curated' if it should be an exemplar. Promotion is a human decision; the reviewer never makes it.
-
-<sub>owner: **curator** · guidance written by playbook</sub>
-
-> **Dose compound ≠ measured compound:** dosed `trefentanil`, measured `fentanyl`.
+**Why:** a structural parameter has the wrong dimension.
+**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (trefentanil vs trefentanil, fentanyl, alfentanil) and 1 more field(s) — a structural parameter, so the record is disputed.
+**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
+<sub>owner: **scholar**</sub>
 
 ## Citation
 Lemmens HJ; Dyck JB; Shafer SL; Stanski DR et al. (1994). Clinical pharmacology and therapeutics 56
   ·  DOI: [10.1038/clpt.1994.136](https://doi.org/10.1038/clpt.1994.136)
 
 ## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Lemmens1994_reference" status="curated_candidate" stale="false" population="healthy male volunteers" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fentanyl" model-id="Fentanyl_Lemmens1994_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="trefentanil" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| bolic clearance | `Q22` · CL | 0.483 | L/min | 8.05e-06 | L/h | not captured | review (0.7) | Lemmens_1994:review | — | not captured |
-| Vc (L) | `Q63` · V1 | 4.5 | L | 0.0045000000000000005 | L | not captured | review (0.7) | Lemmens_1994:review | — | not captured |
+| α (min-1) | `Q67` · λ1 | 0.628 | min-1 | not captured | [1] / [min] | not captured | exact (1.0) | Lemmens_1994_table_p7_2:row2:col1, Lemmens_1994_table_p7_2:row2:col2 | — | not captured |
+| β (min-1) | `Q47` · kel | 0.053 | min-1 | 0.0008833333333333333 | [1] / [min] | not captured | exact (1.0) | Lemmens_1994_table_p7_2:row4:col1, Lemmens_1994_table_p7_2:row4:col2 | — | not captured |
+| t½γ (min) | `Q89` · t1/2γ | 128 | min | 7680.0 | [min] | not captured | llm (0.6) | Lemmens_1994_table_p7_2:row7:col1, Lemmens_1994_table_p7_2:row7:col2 | — | not captured |
+| VC (L) | `Q61` · V | 4.5 | L | 0.0045000000000000005 | [l] | not captured | exact (1.0) | Lemmens_1994_table_p7_2:row8:col1, Lemmens_1994_table_p7_2:row8:col2 | — | not captured |
+| Vss (L) | `Q65` · Vss | 39.3 | L | 0.039299999999999995 | [l] | not captured | exact (1.0) | Lemmens_1994_table_p7_2:row9:col1, Lemmens_1994_table_p7_2:row9:col2 | — | not captured |
+| CLC (L/min) | `Q22` · CL | 0.483 | L/min | 8.05e-06 | [l] / [min] | not captured | central_subscript (0.9) | Lemmens_1994_table_p7_2:row10:col1, Lemmens_1994_table_p7_2:row10:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -41,36 +49,62 @@ Lemmens HJ; Dyck JB; Shafer SL; Stanski DR et al. (1994). Clinical pharmacology 
 ## Departures & gaps
 
 **Interpretation flags:**
-- built from REVIEW reference values (Lemmens_1994) — secondary source
-- volume reported by review
-
-**Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
+- dropped unlinked row (NIL): 'Dose (mg)' — extend the ontology if this is a real PK parameter (source ['Lemmens_1994_table_p7_2:row0:col1', 'Lemmens_1994_table_p7_2:row0:col2'])
+- dropped unlinked row (NIL): 'A' — extend the ontology if this is a real PK parameter (source ['Lemmens_1994_table_p7_2:row1:col1', 'Lemmens_1994_table_p7_2:row1:col2'])
+- unit_dimension_mismatch: 'α (min-1)' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
+- dropped unlinked row (NIL): 'B' — extend the ontology if this is a real PK parameter (source ['Lemmens_1994_table_p7_2:row3:col1', 'Lemmens_1994_table_p7_2:row3:col2'])
+- dropped unlinked row (NIL): 'C' — extend the ontology if this is a real PK parameter (source ['Lemmens_1994_table_p7_2:row5:col1', 'Lemmens_1994_table_p7_2:row5:col2'])
+- dropped duplicate Q22 ('CLdis (L/min)', value '1.27') — already have one for this compound
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=trefentanil
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'VC (L)' is the general volume)
+- status held at route_to_review — not promoted
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.8 (8/10 fields) | 2 |
+
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `screen.dose_compound` | trefentanil | trefentanil, fentanyl, alfentanil | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | trefentanil | trefentanil, fentanyl, alfentanil | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lemmens_1994:review'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lemmens_1994:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.483 | not captured | not captured | ['Lemmens_1994:review'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lemmens_1994_table_p7_2:row10:col1', 'Lemmens_1994_table_p7_2:row10:col2'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Lemmens_1994_table_p7_2:row4:col1', 'Lemmens_1994_table_p7_2:row4:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lemmens_1994_table_p7_2:row8:col1', 'Lemmens_1994_table_p7_2:row8:col2'] |
+| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lemmens_1994_table_p7_2:row9:col1', 'Lemmens_1994_table_p7_2:row9:col2'] |
+| C5_dimension_Q67 | fail | 1 / [time] | min-1 | not captured | not captured | ['Lemmens_1994_table_p7_2:row2:col1', 'Lemmens_1994_table_p7_2:row2:col2'] |
+| C5_dimension_Q89 | pass | [time] | not captured | not captured | not captured | ['Lemmens_1994_table_p7_2:row7:col1', 'Lemmens_1994_table_p7_2:row7:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.483 | not captured | not captured | ['Lemmens_1994_table_p7_2:row10:col1', 'Lemmens_1994_table_p7_2:row10:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 29 L/h | not captured | not captured | ['Lemmens_1994:review'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 4.5 L | not captured | not captured | ['Lemmens_1994:review'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=fentanyl) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 29 L/h | not captured | not captured | ['Lemmens_1994_table_p7_2:row10:col1', 'Lemmens_1994_table_p7_2:row10:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 4.5 L | not captured | not captured | ['Lemmens_1994_table_p7_2:row8:col1', 'Lemmens_1994_table_p7_2:row8:col2'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 39.3 L | not captured | not captured | ['Lemmens_1994_table_p7_2:row9:col1', 'Lemmens_1994_table_p7_2:row9:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -80,9 +114,6 @@ Lemmens HJ; Dyck JB; Shafer SL; Stanski DR et al. (1994). Clinical pharmacology 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_fentanyl/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lemmens_1994` / `Lemmens_1994::reference`)
-- model: `../../../knowledgebase/drugs/drug_fentanyl/models/modelica/Fentanyl_Lemmens1994_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_fentanyl/models/modelica/Fentanyl_Lemmens1994_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_fentanyl/models/modelica/Fentanyl_Lemmens1994_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -92,21 +123,18 @@ Lemmens HJ; Dyck JB; Shafer SL; Stanski DR et al. (1994). Clinical pharmacology 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference/Fentanyl_Lemmens1994_reference_modelica.zip" download>Fentanyl_Lemmens1994_reference_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference/Fentanyl_Lemmens1994_reference_fmi.zip" download>Fentanyl_Lemmens1994_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference/Fentanyl_Lemmens1994_reference_fmi.zip" download>Fentanyl_Lemmens1994_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference/Fentanyl_Lemmens1994_reference_matlab.zip" download>Fentanyl_Lemmens1994_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference/Fentanyl_Lemmens1994_reference_matlab_simbio.zip" download>Fentanyl_Lemmens1994_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference/Fentanyl_Lemmens1994_reference_sbml.zip" download>Fentanyl_Lemmens1994_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference/Fentanyl_Lemmens1994_reference_cellml.zip" download>Fentanyl_Lemmens1994_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference/Fentanyl_Lemmens1994_reference.svg" alt="Fentanyl_Lemmens1994_reference diagram"><figcaption>The structure OpenModelica draws for this model, with this record's parameter values in the component labels.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference/Fentanyl_Lemmens1994_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference/Fentanyl_Lemmens1994_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Fentanyl_Lemmens1994_reference_params.json` · controls `Fentanyl_Lemmens1994_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

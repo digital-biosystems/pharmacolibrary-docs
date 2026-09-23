@@ -5,28 +5,20 @@
 
 # allopurinol — `Allopurinol_Wright2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="gpt-oss:120b re-read this paper; the two readings agree on 0.889 of the compared fields. The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-5.6-luna (not confirmed, agreement 0.692), gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>a model of the other family re-read the paper and agreed on every compared field.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>the second reading differs on a non-structural field (a population label, a flag).</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>the second reading differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ### Reviewer guidance
 
-> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `Vnorm`</sub>
-
-> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
-
-**What is wrong:** a structural parameter has the wrong dimension.
-
-**Steps:**
-1. Not a curation fix — scholar limitation.
-2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-3. A misread unit in transcribe is the usual cause.
-
-<sub>owner: **scholar** · guidance written by playbook</sub>
+**Why:** a structural parameter has the wrong dimension.
+**Second reading:** `gpt-5.6-luna` read this paper differently on `parameters[bcrp]` ({'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
+**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
+<sub>owner: **scholar**</sub>
 
 > **Dose compound ≠ measured compound:** dosed `allopurinol`, measured `oxypurinol`.
 
@@ -85,20 +77,29 @@ Wright DF; Doogue MP; Barclay ML; Chapman PT; Cross NB; Irvine JH; et al. et al.
 
 ## Validation
 
-**Cross-check (two models):** <span class="pk-badge pk-badge--red">not confirmed</span>  
-second reader `gpt-oss:120b` · first reading `qwen3.6:27b-q8_0` · agreement 0.889 (8/9 fields) · the first reading is what this page shows
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
-<details><summary>1 field(s) the two readings disagree on</summary>
-
-| field | first reading | second reading | agreement |
+| second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `parameters[k a].parameter_id` | Q95 | Q49 | mismatch |
+| `gpt-5.6-luna` | not confirmed | 0.692 (9/13 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.889 (8/9 fields) | 1 |
+
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-5.6-luna` | `parameters[bcrp]` | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | only_one_extracted |
+| `gpt-5.6-luna` | `parameters[θ cl (l/h/70 kg].covariate_forms` | ['categorical_fractional'] | [] | mismatch |
+| `gpt-5.6-luna` | `parameters[θ cl (l/h/70 kg].parameter_id` | Q22 | Q354 | mismatch |
+| `gpt-5.6-luna` | `parameters[θ rfexp].parameter_id` | Q900 | Q319 | mismatch |
+| `gpt-oss:120b` | `parameters[k a].parameter_id` | Q95 | Q49 | mismatch |
 
 </details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>the model that re-read the paper. It is chosen from the OTHER family (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them means little.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields the two readings agree on.</td></tr><tr><td><code>verdict</code></td><td>`elevate` both readings agree · `flag` a non-structural field differs · `block` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the primary extracted nothing and was given one hinted retry.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the primary — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
 </details>
 
 

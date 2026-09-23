@@ -7,14 +7,14 @@
  "parameters": {
   "Cl": 1.2833333333333335e-05,
   "F": 1.0,
-  "VdPerKg": 0.00041,
+  "VdPerKg": 0.00149,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
   "weight": 70.0
  },
  "reference_peaks": {
-  "central.C": 0.0030560528601578756
+  "central.C": 0.0009242368798051436
  },
  "stop_time": 86400.0,
  "template": "PK_1C",
