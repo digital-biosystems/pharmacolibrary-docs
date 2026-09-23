@@ -16,6 +16,9 @@
   "ka": 7.027777777777778e-06,
   "weight": 70.0
  },
+ "reference_peak_times": {
+  "central.C": 1675.0189538129448
+ },
  "reference_peaks": {
   "central.C": 2.5087821789758705e-05
  },
