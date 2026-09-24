@@ -3873,13 +3873,13 @@
       - [tianeptine <sub>(2/0/0)</sub>](drugs/drug_tianeptine/)
       - [toloxatone <sub>(1/0/0)</sub>](drugs/drug_toloxatone/)
       - tranylcypromine <sub>(0/0/0)</sub>
-      - trazodone <sub>(0/0/0)</sub>
+      - [trazodone <sub>(2/0/0)</sub>](drugs/drug_trazodone/)
       - trimipramine <sub>(0/0/0)</sub>
-      - tryptophan <sub>(0/0/0)</sub>
-      - venlafaxine <sub>(0/0/0)</sub>
+      - [tryptophan <sub>(0/1/0)</sub>](drugs/drug_tryptophan/)
+      - [venlafaxine <sub>(4/0/0)</sub>](drugs/drug_venlafaxine/)
       - vilazodone <sub>(0/0/0)</sub>
-      - viloxazine <sub>(0/0/0)</sub>
-      - vortioxetine <sub>(0/0/0)</sub>
+      - [viloxazine <sub>(0/0/0)</sub>](drugs/drug_viloxazine/)
+      - [vortioxetine <sub>(1/5/0)</sub>](drugs/drug_vortioxetine/)
       - zimeldine <sub>(0/0/0)</sub>
       - zuranolone <sub>(0/0/0)</sub>
     - [N06B Psychostimulants, Agents Used For Adhd And Nootropics](atc/N06B.md)
