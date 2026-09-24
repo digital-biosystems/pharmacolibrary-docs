@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** a parameter falls outside the physiological window
+**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
 **Second reading:** `gpt-5.6-luna` read this paper differently on `screen.primary_analyte` (ibuprofen vs R- and S-ibuprofen) and 4 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the value and unit against the paper before treating it as an error.
+**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
 <sub>owner: **curator**</sub>
 
 ## Citation
@@ -106,7 +106,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Hong_2008:review'] |

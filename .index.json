@@ -623,9 +623,9 @@
    "M04AA01"
   ],
   "counts": {
-   "pd": 15,
+   "pd": 13,
    "pgx": 40,
-   "pk": 9
+   "pk": 8
   },
   "curated": 0,
   "details": [
@@ -644,14 +644,6 @@
    {
     "label": "Wright_2024 \u00b7 reference",
     "model_id": "Allopurinol_Wright2024_reference"
-   },
-   {
-    "label": "Chu_2022 \u00b7 reference",
-    "model_id": "Allopurinol_Chu2022_reference"
-   },
-   {
-    "label": "Chu_2024 \u00b7 reference",
-    "model_id": "Allopurinol_Chu2024_reference"
    },
    {
     "label": "Day_2007 \u00b7 reference",
@@ -678,6 +670,14 @@
     "model_id": "Allopurinol_Wright2017_reference"
    },
    {
+    "label": "Chu_2022 \u00b7 reference",
+    "model_id": "Allopurinol_Chu2022_reference"
+   },
+   {
+    "label": "Chu_2024 \u00b7 reference",
+    "model_id": "Allopurinol_Chu2024_reference"
+   },
+   {
     "label": "Hishe_2023 \u00b7 reference",
     "model_id": "Allopurinol_Hishe2023_reference"
    },
@@ -700,11 +700,11 @@
   ],
   "dir": "drug_allopurinol",
   "extracted": 4,
-  "last_change": "2026-09-23T12:15:40.683784+00:00",
+  "last_change": "2026-09-24T20:51:33.973832+00:00",
   "name": "allopurinol",
-  "needs_review": 8,
+  "needs_review": 6,
   "records": 17,
-  "rejected": 5,
+  "rejected": 7,
   "rendered": true,
   "slug": "allopurinol",
   "stale": 0
@@ -1687,7 +1687,7 @@
   ],
   "dir": "drug_amoxicillin",
   "extracted": 4,
-  "last_change": "2026-09-22T22:15:27.572155+00:00",
+  "last_change": "2026-09-24T20:51:31.928506+00:00",
   "name": "amoxicillin",
   "needs_review": 18,
   "records": 24,
@@ -6327,7 +6327,7 @@
   ],
   "dir": "drug_clopidogrel",
   "extracted": 10,
-  "last_change": "2026-09-22T22:15:31.129967+00:00",
+  "last_change": "2026-09-24T20:51:35.616645+00:00",
   "name": "clopidogrel",
   "needs_review": 5,
   "records": 18,
@@ -13988,7 +13988,7 @@
    "R02AX02"
   ],
   "counts": {
-   "pd": 19,
+   "pd": 14,
    "pgx": 8,
    "pk": 8
   },
@@ -14065,7 +14065,7 @@
   ],
   "dir": "drug_ibuprofen",
   "extracted": 6,
-  "last_change": "2026-09-23T12:15:38.722443+00:00",
+  "last_change": "2026-09-24T20:51:30.843637+00:00",
   "name": "ibuprofen",
   "needs_review": 2,
   "records": 17,
@@ -17788,7 +17788,7 @@
   ],
   "dir": "drug_metformin",
   "extracted": 13,
-  "last_change": "2026-09-22T22:15:25.510110+00:00",
+  "last_change": "2026-09-24T20:51:29.918827+00:00",
   "name": "metformin",
   "needs_review": 14,
   "records": 36,
@@ -24619,9 +24619,9 @@
    "A10BJ06"
   ],
   "counts": {
-   "pd": 45,
+   "pd": 43,
    "pgx": 0,
-   "pk": 11
+   "pk": 10
   },
   "curated": 0,
   "details": [
@@ -24654,10 +24654,6 @@
     "model_id": "Semaglutide_Overgaard2019_two_compartment_final_model"
    },
    {
-    "label": "Overgaard_2021_2 \u00b7 reference",
-    "model_id": "Semaglutide_Overgaard2021v2_reference"
-   },
-   {
     "label": "Yu_2024 \u00b7 reference",
     "model_id": "Semaglutide_Yu2024_reference"
    },
@@ -24676,15 +24672,19 @@
    {
     "label": "Guo_2023 \u00b7 reference",
     "model_id": "Semaglutide_Guo2023_reference"
+   },
+   {
+    "label": "Overgaard_2021_2 \u00b7 reference",
+    "model_id": "Semaglutide_Overgaard2021v2_reference"
    }
   ],
   "dir": "drug_semaglutide",
-  "extracted": 9,
-  "last_change": "2026-09-22T22:15:28.414474+00:00",
+  "extracted": 8,
+  "last_change": "2026-09-24T20:51:32.705274+00:00",
   "name": "semaglutide",
   "needs_review": 2,
   "records": 13,
-  "rejected": 2,
+  "rejected": 3,
   "rendered": true,
   "slug": "semaglutide",
   "stale": 0
@@ -27031,7 +27031,7 @@
   ],
   "dir": "drug_tolvaptan",
   "extracted": 2,
-  "last_change": "2026-09-23T12:15:37.737154+00:00",
+  "last_change": "2026-09-24T20:51:33.096701+00:00",
   "name": "tolvaptan",
   "needs_review": 4,
   "records": 6,

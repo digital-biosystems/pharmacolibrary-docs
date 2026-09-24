@@ -5,30 +5,20 @@
 
 # amoxicillin — `Amoxicillin_Carceles1995_intravenous_route_w_10`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="gpt-oss:120b re-read this paper; the two readings agree on 0.5 of the compared fields. The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-5.6-luna (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>a model of the other family re-read the paper and agreed on every compared field.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>the second reading differs on a non-structural field (a population label, a flag).</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>the second reading differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ### Reviewer guidance
 
-> ⚙️ **Pipeline limitation — scholar.** a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value<br><sub>evidence: `Cmax`, `V/F`, `AUC`, `V2`</sub>
-
-> This is not a curation fix: the record is waiting on the pipeline, not on a reviewer's judgement.
-
-**What is wrong:** a structural parameter has the wrong dimension; a compartment is unreachable, or a metabolite is unlinked.
-
-**Steps:**
-1. Not a curation fix — scholar limitation.
-2. Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-3. A misread unit in transcribe is the usual cause.
-4. Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
-5. Parent/metabolite records commonly miss the formation link.
-
-<sub>owner: **scholar** · guidance written by playbook</sub>
+**Why:** C5 dimension mismatch on a structural parameter; C8 unreachable/orphan compartment or unlinked metabolite.
+**Second reading:** `gpt-5.6-luna` read this paper differently on `screen.dose_compound` (amoxicillin-clavulanic acid vs amoxicillin and clavulanic acid) and 17 more field(s) — a structural parameter, so the record is disputed.
+**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
+<sub>owner: **scholar**</sub>
 
 > **Dose compound ≠ measured compound:** dosed `amoxicillin-clavulanic acid`, measured `amoxicillin and clavulanic acid`.
 
@@ -103,27 +93,41 @@ not matched (stem Carceles_1995)
 
 ## Validation
 
-**Cross-check (two models):** <span class="pk-badge pk-badge--red">not confirmed</span>  
-second reader `gpt-oss:120b` · first reading `qwen3.6:27b-q8_0` · agreement 0.5 (8/16 fields) · the first reading is what this page shows
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
-<details><summary>8 field(s) the two readings disagree on</summary>
-
-| field | first reading | second reading | agreement |
+| second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `model.parameterization` | apparent | mechanistic | mismatch |
-| `parameters[2vlrt]` | not captured | 1.46 | only_one_extracted |
-| `parameters[cuf]` | 1.01 | not captured | only_one_extracted |
-| `parameters[f k].parameter_id` | Q27 | Q22 | mismatch |
-| `parameters[ha].parameter_id` | Q57 | Q59 | mismatch |
-| `parameters[tixi]` | not captured | 0.05 | only_one_extracted |
-| `screen.dose_compound` | amoxicillin-clavulanic acid combination | amoxicillin/clavulanic acid | mismatch |
-| `screen.primary_analyte` | amoxicillin and clavulanic acid | amoxicillin | mismatch |
+| `gpt-5.6-luna` | not confirmed | 0.25 (6/24 fields) | 18 |
+
+<details><summary>18 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-5.6-luna` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-5.6-luna` | `parameters[2vlrt].parameter_id` | Q64 | Q60 | mismatch |
+| `gpt-5.6-luna` | `parameters[2vlrt].value` | 1.51 | 1.17 | mismatch |
+| `gpt-5.6-luna` | `parameters[auc].value` | 14.32 | 16.75 | mismatch |
+| `gpt-5.6-luna` | `parameters[civf]` | not captured | 1.02 | only_one_extracted |
+| `gpt-5.6-luna` | `parameters[cuf]` | 1.08 | not captured | only_one_extracted |
+| `gpt-5.6-luna` | `parameters[f k].parameter_id` | Q76 | Q61 | mismatch |
+| `gpt-5.6-luna` | `parameters[f k].value` | 2.311 | 1.59 | mismatch |
+| `gpt-5.6-luna` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-5.6-luna` | `parameters[ha].parameter_id` | Q57 | Q95 | mismatch |
+| `gpt-5.6-luna` | `parameters[ii«]` | not captured | 0.09 | only_one_extracted |
+| `gpt-5.6-luna` | `parameters[ka]` | 0.17 | not captured | only_one_extracted |
+| `gpt-5.6-luna` | `parameters[mrt]` | not captured | 1.86 | only_one_extracted |
+| `gpt-5.6-luna` | `parameters[t lagpo]` | 0.25 | not captured | only_one_extracted |
+| `gpt-5.6-luna` | `parameters[tixi]` | not captured | 0.05 | only_one_extracted |
+| `gpt-5.6-luna` | `parameters[¿.(h" 1 ) a,]` | not captured | 14.07 | only_one_extracted |
+| `gpt-5.6-luna` | `screen.dose_compound` | amoxicillin-clavulanic acid | amoxicillin and clavulanic acid | mismatch |
+| `gpt-5.6-luna` | `screen.primary_analyte` | amoxicillin | amoxicillin and clavulanic acid | mismatch |
 
 </details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>the model that re-read the paper. It is chosen from the OTHER family (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them means little.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields the two readings agree on.</td></tr><tr><td><code>verdict</code></td><td>`elevate` both readings agree · `flag` a non-structural field differs · `block` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the primary extracted nothing and was given one hinted retry.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the primary — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
 </details>
 
 
@@ -131,7 +135,7 @@ second reader `gpt-oss:120b` · first reading `qwen3.6:27b-q8_0` · agreement 0.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | fail | [time] | h | not captured | not captured | ['tab_1:row14:col3', 'tab_1:row14:col4'] |
@@ -164,7 +168,7 @@ second reader `gpt-oss:120b` · first reading `qwen3.6:27b-q8_0` · agreement 0.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (pure)</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -179,4 +183,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2). This page is a browsable view of the KB artifacts, not a replacement for them.</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 01:04 UTC</sub>

@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**Why:** a structural parameter has the wrong dimension.
+**Why:** C5 dimension mismatch on a structural parameter.
 **Second reading:** `gpt-5.6-luna` read this paper differently on `screen.dose_compound` (ibuprofen vs acetaminophen or ibuprofen) and 1 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
 <sub>owner: **scholar**</sub>

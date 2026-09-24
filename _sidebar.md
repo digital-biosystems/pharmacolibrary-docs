@@ -5,16 +5,16 @@
 - [Sites & interactions](/sites)
 
 #### ddd
-- [allopurinol <sub>(9/15/40)</sub>](drugs/drug_allopurinol/)
+- [allopurinol <sub>(8/13/40)</sub>](drugs/drug_allopurinol/)
 - [amoxicillin <sub>(8/3/0)</sub>](drugs/drug_amoxicillin/)
 - [clopidogrel <sub>(13/13/14)</sub>](drugs/drug_clopidogrel/)
-- [ibuprofen <sub>(8/19/8)</sub>](drugs/drug_ibuprofen/)
+- [ibuprofen <sub>(8/14/8)</sub>](drugs/drug_ibuprofen/)
 - [metformin <sub>(17/17/7)</sub>](drugs/drug_metformin/)
-- [semaglutide <sub>(11/45/0)</sub>](drugs/drug_semaglutide/)
+- [semaglutide <sub>(10/43/0)</sub>](drugs/drug_semaglutide/)
 - [tolvaptan <sub>(8/21/2)</sub>](drugs/drug_tolvaptan/)
 
 #### dbs
-- [allopurinol <sub>(9/15/40)</sub>](drugs/drug_allopurinol/)
+- [allopurinol <sub>(8/13/40)</sub>](drugs/drug_allopurinol/)
 - [bleomycin <sub>(3/35/1)</sub>](drugs/drug_bleomycin/)
 - [cilazapril <sub>(1/45/0)</sub>](drugs/drug_cilazapril/)
 - [dacarbazine <sub>(0/10/0)</sub>](drugs/drug_dacarbazine/)
@@ -23,7 +23,7 @@
 - [fentanyl <sub>(5/14/0)</sub>](drugs/drug_fentanyl/)
 - [fluorouracil <sub>(7/33/43)</sub>](drugs/drug_fluorouracil/)
 - [hydrochlorothiazide <sub>(7/3/2)</sub>](drugs/drug_hydrochlorothiazide/)
-- [ibuprofen <sub>(8/19/8)</sub>](drugs/drug_ibuprofen/)
+- [ibuprofen <sub>(8/14/8)</sub>](drugs/drug_ibuprofen/)
 - [midazolam <sub>(12/20/1)</sub>](drugs/drug_midazolam/)
 - [palivizumab <sub>(1/8/0)</sub>](drugs/drug_palivizumab/)
 - [paracetamol <sub>(4/6/0)</sub>](drugs/drug_paracetamol/)
@@ -68,7 +68,7 @@
 - petrelintide <sub>(0/0/0)</sub>
 - [pramlintide <sub>(0/1/0)</sub>](drugs/drug_pramlintide/)
 - [Retatrutide <sub>(0/0/0)</sub>](drugs/drug_retatrutide/)
-- [semaglutide <sub>(11/45/0)</sub>](drugs/drug_semaglutide/)
+- [semaglutide <sub>(10/43/0)</sub>](drugs/drug_semaglutide/)
 - survodutide <sub>(0/0/0)</sub>
 - [Taspoglutide <sub>(0/0/0)</sub>](drugs/drug_taspoglutide/)
 - [tirzepatide <sub>(0/2/0)</sub>](drugs/drug_tirzepatide/)
@@ -668,7 +668,7 @@
       - [rosuvastatin <sub>(6/7/0)</sub>](drugs/drug_rosuvastatin/)
       - [saxagliptin <sub>(0/1/0)</sub>](drugs/drug_saxagliptin/)
       - saxagliptin and dapagliflozin <sub>(0/0/0)</sub>
-      - [semaglutide <sub>(11/45/0)</sub>](drugs/drug_semaglutide/)
+      - [semaglutide <sub>(10/43/0)</sub>](drugs/drug_semaglutide/)
       - [simvastatin <sub>(10/2/5)</sub>](drugs/drug_simvastatin/)
       - [sitagliptin <sub>(0/0/0)</sub>](drugs/drug_sitagliptin/)
       - sitagliptin and dapagliflozin <sub>(0/0/0)</sub>
@@ -1265,7 +1265,7 @@
       - creatinolfosfate <sub>(0/0/0)</sub>
       - fosfocreatine <sub>(0/0/0)</sub>
       - fructose 16 diphosphate <sub>(0/0/0)</sub>
-      - [ibuprofen <sub>(8/19/8)</sub>](drugs/drug_ibuprofen/)
+      - [ibuprofen <sub>(8/14/8)</sub>](drugs/drug_ibuprofen/)
       - [indometacin <sub>(1/0/0)</sub>](drugs/drug_indometacin/)
       - ivabradine <sub>(0/0/0)</sub>
       - [mavacamten <sub>(1/0/0)</sub>](drugs/drug_mavacamten/)
@@ -2199,7 +2199,7 @@
       - fezolinetant <sub>(0/0/0)</sub>
       - flibanserin <sub>(0/0/0)</sub>
       - flunoxaprofen <sub>(0/0/0)</sub>
-      - [ibuprofen <sub>(8/19/8)</sub>](drugs/drug_ibuprofen/)
+      - [ibuprofen <sub>(8/14/8)</sub>](drugs/drug_ibuprofen/)
       - lisuride <sub>(0/0/0)</sub>
       - metergoline <sub>(0/0/0)</sub>
       - [naproxen <sub>(1/0/0)</sub>](drugs/drug_naproxen/)
@@ -3229,7 +3229,7 @@
       - [flurbiprofen <sub>(1/0/0)</sub>](drugs/drug_flurbiprofen/)
       - glucosamine <sub>(0/0/0)</sub>
       - glucosaminoglycan polysulfate <sub>(0/0/0)</sub>
-      - [ibuprofen <sub>(8/19/8)</sub>](drugs/drug_ibuprofen/)
+      - [ibuprofen <sub>(8/14/8)</sub>](drugs/drug_ibuprofen/)
       - ibuprofen combinations <sub>(0/0/0)</sub>
       - ibuproxam <sub>(0/0/0)</sub>
       - [indometacin <sub>(1/0/0)</sub>](drugs/drug_indometacin/)
@@ -3297,7 +3297,7 @@
       - etofenamate <sub>(0/0/0)</sub>
       - felbinac <sub>(0/0/0)</sub>
       - [flurbiprofen <sub>(1/0/0)</sub>](drugs/drug_flurbiprofen/)
-      - [ibuprofen <sub>(8/19/8)</sub>](drugs/drug_ibuprofen/)
+      - [ibuprofen <sub>(8/14/8)</sub>](drugs/drug_ibuprofen/)
       - idrocilamide <sub>(0/0/0)</sub>
       - [indometacin <sub>(1/0/0)</sub>](drugs/drug_indometacin/)
       - [naproxen <sub>(1/0/0)</sub>](drugs/drug_naproxen/)
@@ -3309,7 +3309,7 @@
       - zucapsaicin <sub>(0/0/0)</sub>
   - M04 Antigout Preparations
     - [M04A Antigout Preparations](atc/M04A.md)
-      - [allopurinol <sub>(9/15/40)</sub>](drugs/drug_allopurinol/)
+      - [allopurinol <sub>(8/13/40)</sub>](drugs/drug_allopurinol/)
       - allopurinol combinations <sub>(0/0/0)</sub>
       - benzbromarone <sub>(0/0/0)</sub>
       - cinchophen <sub>(0/0/0)</sub>
@@ -3445,7 +3445,7 @@
       - [hydromorphone <sub>(1/0/0)</sub>](drugs/drug_hydromorphone/)
       - hydromorphone and antispasmodics <sub>(0/0/0)</sub>
       - hydromorphone and naloxone <sub>(0/0/0)</sub>
-      - [ibuprofen <sub>(8/19/8)</sub>](drugs/drug_ibuprofen/)
+      - [ibuprofen <sub>(8/14/8)</sub>](drugs/drug_ibuprofen/)
       - [ketobemidone <sub>(0/0/0)</sub>](drugs/drug_ketobemidone/)
       - ketobemidone and antispasmodics <sub>(0/0/0)</sub>
       - [meptazinol <sub>(0/0/0)</sub>](drugs/drug_meptazinol/)
@@ -4095,7 +4095,7 @@
       - fusafungine <sub>(0/0/0)</sub>
       - gramicidin <sub>(0/0/0)</sub>
       - hexylresorcinol <sub>(0/0/0)</sub>
-      - [ibuprofen <sub>(8/19/8)</sub>](drugs/drug_ibuprofen/)
+      - [ibuprofen <sub>(8/14/8)</sub>](drugs/drug_ibuprofen/)
       - [lidocaine <sub>(0/5/0)</sub>](drugs/drug_lidocaine/)
       - myristyl benzalkonium <sub>(0/0/0)</sub>
       - [neomycin <sub>(0/1/0)</sub>](drugs/drug_neomycin/)

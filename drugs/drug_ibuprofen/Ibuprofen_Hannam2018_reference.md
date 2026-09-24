@@ -15,8 +15,8 @@
 
 ### Reviewer guidance
 
-**Why:** a parameter falls outside the physiological window
-**How to address:** Confirm the value and unit against the paper before treating it as an error.
+**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
+**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
 <sub>owner: **curator**</sub>
 
 ## Citation
@@ -66,7 +66,7 @@ Hannam JA; Anderson BJ; Potts A et al. (2018). Paediatric anaesthesia 28
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Hong_2008:review'] |

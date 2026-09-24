@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**Why:** a parameter falls outside the physiological window.
+**Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 **Second reading:** `gpt-5.6-luna` read this paper differently on `parameters[first-order absorption rate constant]` (1.1 vs not captured) and 1 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
 <sub>owner: **curator**</sub>
@@ -88,7 +88,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Hong_2008:review'] |

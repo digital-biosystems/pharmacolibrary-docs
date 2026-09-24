@@ -15,8 +15,8 @@
 
 ### Reviewer guidance
 
-**Why:** a compartment is unreachable, or a metabolite is unlinked
-**How to address:** Check the record's links in _interpretv2.yaml — every compartment needs a path to the dosed one.
+**Why:** C8 unreachable/orphan compartment or unlinked metabolite
+**How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
 <sub>owner: **curator**</sub>
 
 ## Citation
@@ -68,7 +68,7 @@ Albert KS; Gernaat CM et al. (1984). The American journal of medicine 77
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Hong_2008:review'] |

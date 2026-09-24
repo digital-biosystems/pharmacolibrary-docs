@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**Why:** a compartment is unreachable, or a metabolite is unlinked.
+**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
 **How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
 <sub>owner: **scholar**</sub>
 
@@ -65,7 +65,7 @@ Kirchheiner J; Meineke I; Freytag G; Meisel C; Roots I; Brockmöller J et al. (2
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Hong_2008:review'] |

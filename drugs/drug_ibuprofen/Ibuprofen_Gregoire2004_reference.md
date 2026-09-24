@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
+**Why:** C1_half_life_beta failed (ratio 0.2818)
 **Second reading:** `gpt-5.6-luna` read this paper differently on `screen.primary_analyte` (R-ibuprofen, S-ibuprofen vs R-ibuprofen and S-ibuprofen) and 5 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
@@ -94,7 +94,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | fail | 30.5 | 8.595 | 0.2818 | 0.25 | reported t½β |
