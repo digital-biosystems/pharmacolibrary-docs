@@ -3817,30 +3817,30 @@
       - agomelatine <sub>(0/0/0)</sub>
       - alaproclate <sub>(0/0/0)</sub>
       - amineptine <sub>(0/0/0)</sub>
-      - [amitriptyline <sub>(2/1/0)</sub>](drugs/drug_amitriptyline/)
+      - [amitriptyline <sub>(1/1/0)</sub>](drugs/drug_amitriptyline/)
       - amoxapine <sub>(0/0/0)</sub>
       - bifemelane <sub>(0/0/0)</sub>
-      - brexanolone <sub>(0/0/0)</sub>
+      - [brexanolone <sub>(1/0/0)</sub>](drugs/drug_brexanolone/)
       - [bupropion <sub>(0/0/0)</sub>](drugs/drug_bupropion/)
       - bupropion and dextromethorphan <sub>(0/0/0)</sub>
       - butriptyline <sub>(0/0/0)</sub>
       - [citalopram <sub>(2/0/0)</sub>](drugs/drug_citalopram/)
       - [clomipramine <sub>(0/0/0)</sub>](drugs/drug_clomipramine/)
-      - [desipramine <sub>(2/0/0)</sub>](drugs/drug_desipramine/)
-      - [desvenlafaxine <sub>(1/0/0)</sub>](drugs/drug_desvenlafaxine/)
-      - dextromethorphan <sub>(0/0/0)</sub>
+      - [desipramine <sub>(1/0/0)</sub>](drugs/drug_desipramine/)
+      - [desvenlafaxine <sub>(0/0/0)</sub>](drugs/drug_desvenlafaxine/)
+      - [dextromethorphan <sub>(0/1/0)</sub>](drugs/drug_dextromethorphan/)
       - dibenzepin <sub>(0/0/0)</sub>
       - dimetacrine <sub>(0/0/0)</sub>
       - dosulepin <sub>(0/0/0)</sub>
       - [doxepin <sub>(0/0/0)</sub>](drugs/drug_doxepin/)
       - [duloxetine <sub>(1/0/0)</sub>](drugs/drug_duloxetine/)
-      - [escitalopram <sub>(1/0/0)</sub>](drugs/drug_escitalopram/)
-      - etoperidone <sub>(0/0/0)</sub>
-      - [fluoxetine <sub>(0/0/0)</sub>](drugs/drug_fluoxetine/)
-      - [fluvoxamine <sub>(0/0/0)</sub>](drugs/drug_fluvoxamine/)
+      - [escitalopram <sub>(2/0/0)</sub>](drugs/drug_escitalopram/)
+      - [etoperidone <sub>(0/0/0)</sub>](drugs/drug_etoperidone/)
+      - [fluoxetine <sub>(0/3/0)</sub>](drugs/drug_fluoxetine/)
+      - [fluvoxamine <sub>(1/4/0)</sub>](drugs/drug_fluvoxamine/)
       - gepirone <sub>(0/0/0)</sub>
-      - hyperici herba <sub>(0/0/0)</sub>
-      - imipramine <sub>(0/0/0)</sub>
+      - [Hyperici herba <sub>(0/0/0)</sub>](drugs/drug_hyperici_herba/)
+      - [imipramine <sub>(0/1/0)</sub>](drugs/drug_imipramine/)
       - imipramine oxide <sub>(0/0/0)</sub>
       - iprindole <sub>(0/0/0)</sub>
       - iproclozide <sub>(0/0/0)</sub>
@@ -3848,30 +3848,30 @@
       - isocarboxazid <sub>(0/0/0)</sub>
       - levomilnacipran <sub>(0/0/0)</sub>
       - lofepramine <sub>(0/0/0)</sub>
-      - maprotiline <sub>(0/0/0)</sub>
-      - medifoxamine <sub>(0/0/0)</sub>
+      - [maprotiline <sub>(0/0/0)</sub>](drugs/drug_maprotiline/)
+      - [medifoxamine <sub>(0/0/0)</sub>](drugs/drug_medifoxamine/)
       - melitracen <sub>(0/0/0)</sub>
-      - mianserin <sub>(0/0/0)</sub>
+      - [mianserin <sub>(1/0/0)</sub>](drugs/drug_mianserin/)
       - milnacipran <sub>(0/0/0)</sub>
       - minaprine <sub>(0/0/0)</sub>
       - [mirtazapine <sub>(0/0/0)</sub>](drugs/drug_mirtazapine/)
-      - moclobemide <sub>(0/0/0)</sub>
+      - [moclobemide <sub>(1/0/0)</sub>](drugs/drug_moclobemide/)
       - nefazodone <sub>(0/0/0)</sub>
       - nialamide <sub>(0/0/0)</sub>
       - nomifensine <sub>(0/0/0)</sub>
-      - nortriptyline <sub>(0/0/0)</sub>
+      - [nortriptyline <sub>(0/2/0)</sub>](drugs/drug_nortriptyline/)
       - opipramol <sub>(0/0/0)</sub>
       - oxaflozane <sub>(0/0/0)</sub>
       - oxitriptan <sub>(0/0/0)</sub>
-      - paroxetine <sub>(0/0/0)</sub>
+      - [paroxetine <sub>(3/4/0)</sub>](drugs/drug_paroxetine/)
       - phenelzine <sub>(0/0/0)</sub>
       - pivagabine <sub>(0/0/0)</sub>
-      - protriptyline <sub>(0/0/0)</sub>
-      - quinupramine <sub>(0/0/0)</sub>
+      - [protriptyline <sub>(0/0/0)</sub>](drugs/drug_protriptyline/)
+      - [quinupramine <sub>(0/0/0)</sub>](drugs/drug_quinupramine/)
       - reboxetine <sub>(0/0/0)</sub>
-      - sertraline <sub>(0/0/0)</sub>
-      - tianeptine <sub>(0/0/0)</sub>
-      - toloxatone <sub>(0/0/0)</sub>
+      - [sertraline <sub>(2/4/0)</sub>](drugs/drug_sertraline/)
+      - [tianeptine <sub>(2/0/0)</sub>](drugs/drug_tianeptine/)
+      - [toloxatone <sub>(1/0/0)</sub>](drugs/drug_toloxatone/)
       - tranylcypromine <sub>(0/0/0)</sub>
       - trazodone <sub>(0/0/0)</sub>
       - trimipramine <sub>(0/0/0)</sub>
@@ -3922,9 +3922,9 @@
       - temgicoluril <sub>(0/0/0)</sub>
       - vinpocetine <sub>(0/0/0)</sub>
     - [N06C Psycholeptics And Psychoanaleptics In Combination](atc/N06C.md)
-      - [amitriptyline <sub>(2/1/0)</sub>](drugs/drug_amitriptyline/)
+      - [amitriptyline <sub>(1/1/0)</sub>](drugs/drug_amitriptyline/)
       - amitriptyline and psycholeptics <sub>(0/0/0)</sub>
-      - [fluoxetine <sub>(0/0/0)</sub>](drugs/drug_fluoxetine/)
+      - [fluoxetine <sub>(0/3/0)</sub>](drugs/drug_fluoxetine/)
       - fluoxetine and psycholeptics <sub>(0/0/0)</sub>
       - melitracen and psycholeptics <sub>(0/0/0)</sub>
   - N07 Other Nervous System Drugs
@@ -4263,6 +4263,7 @@
       - clofedanol <sub>(0/0/0)</sub>
       - cloperastine <sub>(0/0/0)</sub>
       - [codeine <sub>(1/0/0)</sub>](drugs/drug_codeine/)
+      - [dextromethorphan <sub>(0/1/0)</sub>](drugs/drug_dextromethorphan/)
       - dibunate <sub>(0/0/0)</sub>
       - dimemorfan <sub>(0/0/0)</sub>
       - dimethoxanate <sub>(0/0/0)</sub>

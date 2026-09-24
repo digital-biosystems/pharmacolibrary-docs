@@ -1377,10 +1377,14 @@
   "counts": {
    "pd": 1,
    "pgx": 0,
-   "pk": 2
+   "pk": 1
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Yukawa_2002 \u00b7 reference",
+    "model_id": "Amitriptyline_Yukawa2002_reference"
+   },
    {
     "label": "Koh_2019 \u00b7 reference",
     "model_id": "Amitriptyline_Koh2019_reference"
@@ -1391,11 +1395,11 @@
    }
   ],
   "dir": "drug_amitriptyline",
-  "extracted": 0,
+  "extracted": 1,
   "last_change": "2026-09-17T15:08:07.280310+00:00",
   "name": "amitriptyline",
   "needs_review": 2,
-  "records": 2,
+  "records": 3,
   "rejected": 0,
   "rendered": true,
   "slug": "amitriptyline",
@@ -3595,6 +3599,33 @@
   "rejected": 3,
   "rendered": true,
   "slug": "bretylium_tosilate",
+  "stale": 0
+ },
+ "drug_brexanolone": {
+  "atc_codes": [
+   "N06AX29"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Wald_2022 \u00b7 reference",
+    "model_id": "Brexanolone_Wald2022_reference"
+   }
+  ],
+  "dir": "drug_brexanolone",
+  "extracted": 1,
+  "last_change": "2026-09-23T19:46:11.755062+00:00",
+  "name": "brexanolone",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "brexanolone",
   "stale": 0
  },
  "drug_brexpiprazole": {
@@ -5924,6 +5955,10 @@
   "curated": 0,
   "details": [
    {
+    "label": "Friberg_2006 \u00b7 reference",
+    "model_id": "Citalopram_Friberg2006_reference"
+   },
+   {
     "label": "Akil_2016 \u00b7 reference",
     "model_id": "Citalopram_Akil2016_reference"
    },
@@ -5933,11 +5968,11 @@
    }
   ],
   "dir": "drug_citalopram",
-  "extracted": 0,
-  "last_change": "2026-09-17T15:08:21.567521+00:00",
+  "extracted": 1,
+  "last_change": "2026-09-23T19:57:10.915069+00:00",
   "name": "citalopram",
   "needs_review": 2,
-  "records": 2,
+  "records": 3,
   "rejected": 0,
   "rendered": true,
   "slug": "citalopram",
@@ -6107,14 +6142,31 @@
    "pk": 0
   },
   "curated": 0,
-  "details": [],
+  "details": [
+   {
+    "label": "Lainesse_2006 \u00b7 reference",
+    "model_id": "Clomipramine_Lainesse2006_reference"
+   },
+   {
+    "label": "Gex-Fabry_2000 \u00b7 reference",
+    "model_id": "Clomipramine_GexFabry2000_reference"
+   },
+   {
+    "label": "Kurata_1986 \u00b7 reference",
+    "model_id": "Clomipramine_Kurata1986_reference"
+   },
+   {
+    "label": "Nielsen-Kudsk_1980 \u00b7 reference",
+    "model_id": "Clomipramine_NielsenKudsk1980_reference"
+   }
+  ],
   "dir": "drug_clomipramine",
   "extracted": 0,
-  "last_change": null,
+  "last_change": "2026-09-23T20:01:25.433527+00:00",
   "name": "clomipramine",
-  "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
+  "needs_review": 1,
+  "records": 4,
+  "rejected": 3,
   "rendered": true,
   "slug": "clomipramine",
   "stale": 0
@@ -7643,7 +7695,7 @@
   "counts": {
    "pd": 0,
    "pgx": 0,
-   "pk": 2
+   "pk": 1
   },
   "curated": 0,
   "details": [
@@ -7654,15 +7706,19 @@
    {
     "label": "Gueorguieva_2010 \u00b7 reference",
     "model_id": "Desipramine_Gueorguieva2010_reference"
+   },
+   {
+    "label": "DeVane_1981 \u00b7 reference",
+    "model_id": "Desipramine_DeVane1981_reference"
    }
   ],
   "dir": "drug_desipramine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:25.782618+00:00",
+  "last_change": "2026-09-23T20:06:35.313093+00:00",
   "name": "desipramine",
   "needs_review": 2,
-  "records": 2,
-  "rejected": 0,
+  "records": 3,
+  "rejected": 1,
   "rendered": true,
   "slug": "desipramine",
   "stale": 0
@@ -7741,7 +7797,7 @@
   "counts": {
    "pd": 0,
    "pgx": 0,
-   "pk": 1
+   "pk": 0
   },
   "curated": 0,
   "details": [
@@ -7750,16 +7806,20 @@
     "model_id": "Desvenlafaxine_MangasSanjun2023_reference"
    },
    {
+    "label": "Nichols_2018 \u00b7 reference",
+    "model_id": "Desvenlafaxine_Nichols2018_reference"
+   },
+   {
     "label": "Wang_2022 \u00b7 reference",
     "model_id": "Desvenlafaxine_Wang2022_reference"
    }
   ],
   "dir": "drug_desvenlafaxine",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:25.891273+00:00",
+  "last_change": "2026-09-23T20:10:59.096750+00:00",
   "name": "desvenlafaxine",
-  "needs_review": 0,
-  "records": 2,
+  "needs_review": 1,
+  "records": 3,
   "rejected": 1,
   "rendered": true,
   "slug": "desvenlafaxine",
@@ -7917,6 +7977,34 @@
   "rejected": 1,
   "rendered": true,
   "slug": "dextran",
+  "stale": 0
+ },
+ "drug_dextromethorphan": {
+  "atc_codes": [
+   "N06AX62",
+   "R05DA09"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Abduljalil_2010 \u00b7 reference",
+    "model_id": "Dextromethorphan_Abduljalil2010_reference"
+   }
+  ],
+  "dir": "drug_dextromethorphan",
+  "extracted": 0,
+  "last_change": "2026-09-23T21:12:05.710246+00:00",
+  "name": "dextromethorphan",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "dextromethorphan",
   "stale": 0
  },
  "drug_dextropropoxyphene": {
@@ -10350,10 +10438,14 @@
   "counts": {
    "pd": 0,
    "pgx": 0,
-   "pk": 1
+   "pk": 2
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Friberg_2006 \u00b7 reference",
+    "model_id": "Escitalopram_Friberg2006_reference"
+   },
    {
     "label": "Liu_2022 \u00b7 reference",
     "model_id": "Escitalopram_Liu2022_reference"
@@ -10364,11 +10456,11 @@
    }
   ],
   "dir": "drug_escitalopram",
-  "extracted": 0,
-  "last_change": "2026-09-17T15:08:30.995677+00:00",
+  "extracted": 1,
+  "last_change": "2026-09-23T21:45:09.354227+00:00",
   "name": "escitalopram",
   "needs_review": 1,
-  "records": 2,
+  "records": 3,
   "rejected": 1,
   "rendered": true,
   "slug": "escitalopram",
@@ -10666,6 +10758,28 @@
   "rejected": 2,
   "rendered": true,
   "slug": "etirinotecan_pegol",
+  "stale": 0
+ },
+ "drug_etoperidone": {
+  "atc_codes": [
+   "N06AB09"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_etoperidone",
+  "extracted": 0,
+  "last_change": null,
+  "name": "etoperidone",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "etoperidone",
   "stale": 0
  },
  "drug_etoposide": {
@@ -11833,12 +11947,16 @@
    "N06CA03"
   ],
   "counts": {
-   "pd": 0,
+   "pd": 3,
    "pgx": 0,
    "pk": 0
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Wilens_2002 \u00b7 reference",
+    "model_id": "Fluoxetine_Wilens2002_reference"
+   },
    {
     "label": "van_2024 \u00b7 reference",
     "model_id": "Fluoxetine_van2024_reference"
@@ -11846,11 +11964,11 @@
   ],
   "dir": "drug_fluoxetine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:37.011371+00:00",
+  "last_change": "2026-09-23T21:57:04.490409+00:00",
   "name": "fluoxetine",
   "needs_review": 0,
-  "records": 1,
-  "rejected": 1,
+  "records": 2,
+  "rejected": 2,
   "rendered": true,
   "slug": "fluoxetine",
   "stale": 0
@@ -11925,19 +12043,32 @@
    "N06AB08"
   ],
   "counts": {
-   "pd": 0,
+   "pd": 4,
    "pgx": 0,
-   "pk": 0
+   "pk": 1
   },
   "curated": 0,
-  "details": [],
+  "details": [
+   {
+    "label": "Strauss_1999 \u00b7 reference",
+    "model_id": "Fluvoxamine_Strauss1999_reference"
+   },
+   {
+    "label": "Geldof_2007 \u00b7 reference",
+    "model_id": "Fluvoxamine_Geldof2007_reference"
+   },
+   {
+    "label": "Geldof_2007_2 \u00b7 reference",
+    "model_id": "Fluvoxamine_Geldof2007v2_reference"
+   }
+  ],
   "dir": "drug_fluvoxamine",
-  "extracted": 0,
-  "last_change": null,
+  "extracted": 1,
+  "last_change": "2026-09-23T22:08:38.860007+00:00",
   "name": "fluvoxamine",
   "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
+  "records": 3,
+  "rejected": 2,
   "rendered": true,
   "slug": "fluvoxamine",
   "stale": 0
@@ -13795,6 +13926,33 @@
   "slug": "hyoscyamine",
   "stale": 0
  },
+ "drug_hyperici_herba": {
+  "atc_codes": [
+   "N06AX25"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Biber_1998 \u00b7 reference",
+    "model_id": "HypericiHerba_Biber1998_reference"
+   }
+  ],
+  "dir": "drug_hyperici_herba",
+  "extracted": 0,
+  "last_change": "2026-09-23T22:31:51.509853+00:00",
+  "name": "Hyperici herba",
+  "needs_review": 1,
+  "records": 1,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "hyperici_herba",
+  "stale": 0
+ },
  "drug_ibopamine": {
   "atc_codes": [
    "C01CA16",
@@ -14095,6 +14253,33 @@
   "rejected": 0,
   "rendered": true,
   "slug": "imidazole_salicylate",
+  "stale": 0
+ },
+ "drug_imipramine": {
+  "atc_codes": [
+   "N06AA02"
+  ],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Tamayo_1992 \u00b7 reference",
+    "model_id": "Imipramine_Tamayo1992_reference"
+   }
+  ],
+  "dir": "drug_imipramine",
+  "extracted": 0,
+  "last_change": "2026-09-23T22:36:16.811704+00:00",
+  "name": "imipramine",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "imipramine",
   "stale": 0
  },
  "drug_indobufen": {
@@ -16704,6 +16889,28 @@
   "slug": "mannosulfan",
   "stale": 0
  },
+ "drug_maprotiline": {
+  "atc_codes": [
+   "N06AA21"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_maprotiline",
+  "extracted": 0,
+  "last_change": null,
+  "name": "maprotiline",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "maprotiline",
+  "stale": 0
+ },
  "drug_maralixibat": {
   "atc_codes": [
    "A05AX04"
@@ -16929,6 +17136,33 @@
   "rejected": 0,
   "rendered": true,
   "slug": "medicinal_charcoal",
+  "stale": 0
+ },
+ "drug_medifoxamine": {
+  "atc_codes": [
+   "N06AX13"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Saleh_1990 \u00b7 reference",
+    "model_id": "Medifoxamine_Saleh1990_reference"
+   }
+  ],
+  "dir": "drug_medifoxamine",
+  "extracted": 0,
+  "last_change": "2026-09-24T00:02:09.643599+00:00",
+  "name": "medifoxamine",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "medifoxamine",
   "stale": 0
  },
  "drug_mefenorex": {
@@ -18222,6 +18456,37 @@
   "slug": "mexiletine",
   "stale": 0
  },
+ "drug_mianserin": {
+  "atc_codes": [
+   "N06AX03"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Timmer_1985 \u00b7 reference",
+    "model_id": "Mianserin_Timmer1985_reference"
+   },
+   {
+    "label": "Maguire_1983 \u00b7 reference",
+    "model_id": "Mianserin_Maguire1983_reference"
+   }
+  ],
+  "dir": "drug_mianserin",
+  "extracted": 1,
+  "last_change": "2026-09-24T00:15:14.596658+00:00",
+  "name": "mianserin",
+  "needs_review": 0,
+  "records": 2,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "mianserin",
+  "stale": 0
+ },
  "drug_miconazole": {
   "atc_codes": [
    "A01AB09",
@@ -18624,6 +18889,37 @@
   "rejected": 0,
   "rendered": true,
   "slug": "mitiglinide",
+  "stale": 0
+ },
+ "drug_moclobemide": {
+  "atc_codes": [
+   "N06AG02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "G\u0142\u00f3wka_2019 \u00b7 reference",
+    "model_id": "Moclobemide_Gwka2019_reference"
+   },
+   {
+    "label": "Raaflaub_1984 \u00b7 reference",
+    "model_id": "Moclobemide_Raaflaub1984_reference"
+   }
+  ],
+  "dir": "drug_moclobemide",
+  "extracted": 1,
+  "last_change": "2026-09-24T00:52:38.560693+00:00",
+  "name": "moclobemide",
+  "needs_review": 1,
+  "records": 2,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "moclobemide",
   "stale": 0
  },
  "drug_molidustat": {
@@ -19762,6 +20058,28 @@
   "rejected": 4,
   "rendered": true,
   "slug": "norepinephrine",
+  "stale": 0
+ },
+ "drug_nortriptyline": {
+  "atc_codes": [
+   "N06AA10"
+  ],
+  "counts": {
+   "pd": 2,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_nortriptyline",
+  "extracted": 0,
+  "last_change": null,
+  "name": "nortriptyline",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "nortriptyline",
   "stale": 0
  },
  "drug_nystatin": {
@@ -21137,6 +21455,49 @@
   "rejected": 0,
   "rendered": true,
   "slug": "paromomycin",
+  "stale": 0
+ },
+ "drug_paroxetine": {
+  "atc_codes": [
+   "N06AB05"
+  ],
+  "counts": {
+   "pd": 4,
+   "pgx": 0,
+   "pk": 3
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Chen_2025 \u00b7 reference",
+    "model_id": "Paroxetine_Chen2025_reference"
+   },
+   {
+    "label": "Yan_2026 \u00b7 reference",
+    "model_id": "Paroxetine_Yan2026_reference"
+   },
+   {
+    "label": "Zhang_2025 \u00b7 reference",
+    "model_id": "Paroxetine_Zhang2025_reference"
+   },
+   {
+    "label": "Feng_2006 \u00b7 base",
+    "model_id": "Paroxetine_Feng2006_base"
+   },
+   {
+    "label": "Feng_2006 \u00b7 final",
+    "model_id": "Paroxetine_Feng2006_final"
+   }
+  ],
+  "dir": "drug_paroxetine",
+  "extracted": 3,
+  "last_change": "2026-09-24T03:33:18.885143+00:00",
+  "name": "paroxetine",
+  "needs_review": 0,
+  "records": 5,
+  "rejected": 2,
+  "rendered": true,
+  "slug": "paroxetine",
   "stale": 0
  },
  "drug_pectin": {
@@ -22734,6 +23095,33 @@
   "slug": "protein_hydrolysates",
   "stale": 0
  },
+ "drug_protriptyline": {
+  "atc_codes": [
+   "N06AA11"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Ziegler_1978 \u00b7 reference",
+    "model_id": "Protriptyline_Ziegler1978_reference"
+   }
+  ],
+  "dir": "drug_protriptyline",
+  "extracted": 0,
+  "last_change": "2026-09-24T04:07:19.478208+00:00",
+  "name": "protriptyline",
+  "needs_review": 1,
+  "records": 1,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "protriptyline",
+  "stale": 0
+ },
  "drug_prucalopride": {
   "atc_codes": [
    "A06AX05"
@@ -22888,6 +23276,33 @@
   "rejected": 2,
   "rendered": true,
   "slug": "quinidine",
+  "stale": 0
+ },
+ "drug_quinupramine": {
+  "atc_codes": [
+   "N06AA23"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Bouquet_1982 \u00b7 reference",
+    "model_id": "Quinupramine_Bouquet1982_reference"
+   }
+  ],
+  "dir": "drug_quinupramine",
+  "extracted": 0,
+  "last_change": "2026-09-24T04:10:10.672149+00:00",
+  "name": "quinupramine",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "quinupramine",
   "stale": 0
  },
  "drug_rabeprazole": {
@@ -24316,6 +24731,53 @@
   "rejected": 0,
   "rendered": true,
   "slug": "senna_glycosides",
+  "stale": 0
+ },
+ "drug_sertraline": {
+  "atc_codes": [
+   "N06AB06"
+  ],
+  "counts": {
+   "pd": 4,
+   "pgx": 0,
+   "pk": 2
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Castillo_2024 \u00b7 reference",
+    "model_id": "Sertraline_Castillo2024_reference"
+   },
+   {
+    "label": "Xia_2025 \u00b7 reference",
+    "model_id": "Sertraline_Xia2025_reference"
+   },
+   {
+    "label": "Cooper_2015 \u00b7 reference",
+    "model_id": "Sertraline_Cooper2015_reference"
+   },
+   {
+    "label": "Monfort_2024 \u00b7 reference",
+    "model_id": "Sertraline_Monfort2024_reference"
+   },
+   {
+    "label": "Poweleit_2023 \u00b7 reference",
+    "model_id": "Sertraline_Poweleit2023_reference"
+   },
+   {
+    "label": "Zhang_2024 \u00b7 reference",
+    "model_id": "Sertraline_Zhang2024_reference"
+   }
+  ],
+  "dir": "drug_sertraline",
+  "extracted": 2,
+  "last_change": "2026-09-24T04:39:17.176678+00:00",
+  "name": "sertraline",
+  "needs_review": 4,
+  "records": 6,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "sertraline",
   "stale": 0
  },
  "drug_sibutramine": {
@@ -25946,6 +26408,45 @@
   "slug": "thrombocytes",
   "stale": 0
  },
+ "drug_tianeptine": {
+  "atc_codes": [
+   "N06AX14"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 2
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Szafarz_2018 \u00b7 intraperitoneal_10_mg_kg",
+    "model_id": "Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg"
+   },
+   {
+    "label": "Szafarz_2018 \u00b7 intravenous_1_mg_kg",
+    "model_id": "Tianeptine_Szafarz2018_intravenous_1_mg_kg"
+   },
+   {
+    "label": "Grasela_1993 \u00b7 reference",
+    "model_id": "Tianeptine_Grasela1993_reference"
+   },
+   {
+    "label": "Szafarz_2018 \u00b7 estimate",
+    "model_id": "Tianeptine_Szafarz2018_estimate"
+   }
+  ],
+  "dir": "drug_tianeptine",
+  "extracted": 2,
+  "last_change": "2026-09-24T04:53:59.123007+00:00",
+  "name": "tianeptine",
+  "needs_review": 2,
+  "records": 4,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "tianeptine",
+  "stale": 0
+ },
  "drug_ticagrelor": {
   "atc_codes": [
    "B01AC24"
@@ -26437,6 +26938,37 @@
   "rejected": 0,
   "rendered": true,
   "slug": "tolbutamide",
+  "stale": 0
+ },
+ "drug_toloxatone": {
+  "atc_codes": [
+   "N06AG03"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Vistelle_1992 \u00b7 reference",
+    "model_id": "Toloxatone_Vistelle1992_reference"
+   },
+   {
+    "label": "Benedetti_1982 \u00b7 reference",
+    "model_id": "Toloxatone_Benedetti1982_reference"
+   }
+  ],
+  "dir": "drug_toloxatone",
+  "extracted": 1,
+  "last_change": "2026-09-24T05:01:37.519746+00:00",
+  "name": "toloxatone",
+  "needs_review": 0,
+  "records": 2,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "toloxatone",
   "stale": 0
  },
  "drug_tolrestat": {
