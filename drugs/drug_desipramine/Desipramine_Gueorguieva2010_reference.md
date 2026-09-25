@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**Why:** the simulated model does not reproduce a value the paper reports. Evidence: T1_t_half_terminal — expected 20.0 — got 1657.3443244206876 — ratio 82.8672; T1_t_half_terminal — expected 25.0 — got 1657.3443244206876 — ratio 66.2938; T1_t_half_terminal — expected 23.0 — got 1657.3443244206876 — ratio 72.0584; T1_t_half_terminal — expected 18.0 — got 1657.3443244206876 — ratio 92.0747
+**Why:** T1_t_half_terminal; T1_t_half_beta
 **Second reading:** Independently confirmed by `gpt-oss:120b`.
 **How to address:** Open the paper's reported table and confirm the target value and its units.
 <sub>owner: **scholar**</sub>

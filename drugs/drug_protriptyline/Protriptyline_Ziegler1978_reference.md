@@ -15,9 +15,10 @@
 
 ### Reviewer guidance
 
+**Why:** disposition incomplete — only volume extracted — the engineer needs both; the missing half would be silently filled from the library default.
 **Second reading:** `gpt-oss:120b` read this paper differently on `parameters[mean protriptyline half-life]` (74.3 vs not captured) and 1 more field(s) — a structural parameter, so the record is disputed.
-
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
+<sub>owner: **curator**</sub>
 
 ## Citation
 Ziegler VE; Biggs JT; Wylie LT; Coryell WH; Hanifl KM; Hawf DJ; et al. et al. (1978). Clinical pharmacology and therapeutics 23

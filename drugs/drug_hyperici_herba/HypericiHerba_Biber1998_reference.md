@@ -15,9 +15,10 @@
 
 ### Reviewer guidance
 
+**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
 **Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (hypericum extract vs hyperforin) and 4 more field(s) — a structural parameter, so the record is disputed.
-
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
+<sub>owner: **curator**</sub>
 
 > **Dose compound ≠ measured compound:** dosed `hypericum extract`, measured `hyperforin`.
 

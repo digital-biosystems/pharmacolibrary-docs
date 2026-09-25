@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;brexanolone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexanolone_Wald2022_reference&quot;,&quot;label&quot;:&quot;Wald_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexanolone/Brexanolone_Wald2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexanolone_Wald2022_reference&quot;,&quot;label&quot;:&quot;Wald_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexanolone/Brexanolone_Wald2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # brexanolone
 
@@ -28,7 +28,7 @@ And finally, although brexanolone may also be undergoing clinical trials to inve
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> | [Wald_2022_reference](drugs/drug_brexanolone/Brexanolone_Wald2022_reference.md) | Wald J et al., Allopregnanolone Concentrations in Brea…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01155-w](https://doi.org/10.1007/s40262-022-01155-w) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Wald_2022_reference](drugs/drug_brexanolone/Brexanolone_Wald2022_reference.md) | Wald J et al., Allopregnanolone Concentrations in Brea…, Clinical pharmacokinetics (2022) | [10.1007/s40262-022-01155-w](https://doi.org/10.1007/s40262-022-01155-w) |
 
 ## ADME sites
 
@@ -51,7 +51,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 50 matched, 15 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

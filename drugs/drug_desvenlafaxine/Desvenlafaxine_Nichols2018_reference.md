@@ -15,9 +15,10 @@
 
 ### Reviewer guidance
 
+**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
 **Second reading:** Independently confirmed by `gpt-oss:120b`.
-
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
+<sub>owner: **curator**</sub>
 
 ## Citation
 Nichols AI; Liao S; Abbas R et al. (2018). Clinical pharmacology in drug development 7

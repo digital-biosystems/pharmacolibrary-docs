@@ -9,49 +9,49 @@
 - [amoxicillin <sub>(8/3/0)</sub>](drugs/drug_amoxicillin/)
 - [clopidogrel <sub>(13/13/14)</sub>](drugs/drug_clopidogrel/)
 - [ibuprofen <sub>(8/14/8)</sub>](drugs/drug_ibuprofen/)
-- [metformin <sub>(17/17/7)</sub>](drugs/drug_metformin/)
+- [metformin <sub>(17/15/7)</sub>](drugs/drug_metformin/)
 - [semaglutide <sub>(10/43/0)</sub>](drugs/drug_semaglutide/)
 - [tolvaptan <sub>(8/21/2)</sub>](drugs/drug_tolvaptan/)
 
 #### dbs
 - [allopurinol <sub>(8/13/40)</sub>](drugs/drug_allopurinol/)
-- [bleomycin <sub>(3/35/1)</sub>](drugs/drug_bleomycin/)
-- [cilazapril <sub>(1/45/0)</sub>](drugs/drug_cilazapril/)
-- [dacarbazine <sub>(0/10/0)</sub>](drugs/drug_dacarbazine/)
-- [doxazosin <sub>(3/17/1)</sub>](drugs/drug_doxazosin/)
+- [bleomycin <sub>(3/32/1)</sub>](drugs/drug_bleomycin/)
+- [cilazapril <sub>(1/44/0)</sub>](drugs/drug_cilazapril/)
+- [dacarbazine <sub>(0/9/0)</sub>](drugs/drug_dacarbazine/)
+- [doxazosin <sub>(3/14/1)</sub>](drugs/drug_doxazosin/)
 - [doxorubicin <sub>(8/24/0)</sub>](drugs/drug_doxorubicin/)
 - [fentanyl <sub>(5/14/0)</sub>](drugs/drug_fentanyl/)
-- [fluorouracil <sub>(7/33/43)</sub>](drugs/drug_fluorouracil/)
+- [fluorouracil <sub>(7/32/43)</sub>](drugs/drug_fluorouracil/)
 - [hydrochlorothiazide <sub>(7/3/2)</sub>](drugs/drug_hydrochlorothiazide/)
 - [ibuprofen <sub>(8/14/8)</sub>](drugs/drug_ibuprofen/)
-- [midazolam <sub>(12/20/1)</sub>](drugs/drug_midazolam/)
+- [midazolam <sub>(12/18/1)</sub>](drugs/drug_midazolam/)
 - [palivizumab <sub>(1/8/0)</sub>](drugs/drug_palivizumab/)
 - [paracetamol <sub>(4/6/0)</sub>](drugs/drug_paracetamol/)
 - [remdesivir <sub>(4/7/0)</sub>](drugs/drug_remdesivir/)
 - [simvastatin <sub>(10/2/5)</sub>](drugs/drug_simvastatin/)
-- [telmisartan <sub>(5/47/4)</sub>](drugs/drug_telmisartan/)
+- [telmisartan <sub>(5/45/4)</sub>](drugs/drug_telmisartan/)
 - [tolvaptan <sub>(8/21/2)</sub>](drugs/drug_tolvaptan/)
 - [vinblastine <sub>(4/8/0)</sub>](drugs/drug_vinblastine/)
 
 #### dph
-- [abacavir <sub>(4/1/45)</sub>](drugs/drug_abacavir/)
-- [amlodipine <sub>(14/16/3)</sub>](drugs/drug_amlodipine/)
+- [abacavir <sub>(3/1/45)</sub>](drugs/drug_abacavir/)
+- [amlodipine <sub>(12/15/3)</sub>](drugs/drug_amlodipine/)
 - [amoxicillin <sub>(8/3/0)</sub>](drugs/drug_amoxicillin/)
-- [atorvastatin <sub>(6/12/3)</sub>](drugs/drug_atorvastatin/)
-- [azathioprine <sub>(1/0/31)</sub>](drugs/drug_azathioprine/)
-- [ciprofloxacin <sub>(18/15/1)</sub>](drugs/drug_ciprofloxacin/)
+- [atorvastatin <sub>(6/11/3)</sub>](drugs/drug_atorvastatin/)
+- [azathioprine <sub>(2/0/31)</sub>](drugs/drug_azathioprine/)
+- [ciprofloxacin <sub>(16/15/1)</sub>](drugs/drug_ciprofloxacin/)
 - [clopidogrel <sub>(13/13/14)</sub>](drugs/drug_clopidogrel/)
 - [codeine <sub>(1/0/0)</sub>](drugs/drug_codeine/)
-- [diazepam <sub>(9/1/0)</sub>](drugs/drug_diazepam/)
-- [diclofenac <sub>(2/15/3)</sub>](drugs/drug_diclofenac/)
-- [Levothyroxine <sub>(13/11/0)</sub>](drugs/drug_levothyroxine/)
-- [metformin <sub>(17/17/7)</sub>](drugs/drug_metformin/)
-- [methotrexate <sub>(22/5/4)</sub>](drugs/drug_methotrexate/)
+- [diazepam <sub>(8/1/0)</sub>](drugs/drug_diazepam/)
+- [diclofenac <sub>(1/25/3)</sub>](drugs/drug_diclofenac/)
+- [Levothyroxine <sub>(1/11/0)</sub>](drugs/drug_levothyroxine/)
+- [metformin <sub>(17/15/7)</sub>](drugs/drug_metformin/)
+- [methotrexate <sub>(11/4/4)</sub>](drugs/drug_methotrexate/)
 - [montelukast <sub>(1/14/0)</sub>](drugs/drug_montelukast/)
-- [omeprazole <sub>(19/8/2)</sub>](drugs/drug_omeprazole/)
-- [salbutamol <sub>(3/13/0)</sub>](drugs/drug_salbutamol/)
+- [omeprazole <sub>(17/8/2)</sub>](drugs/drug_omeprazole/)
+- [salbutamol <sub>(2/12/0)</sub>](drugs/drug_salbutamol/)
 - [tamoxifen <sub>(3/29/2)</sub>](drugs/drug_tamoxifen/)
-- [warfarin <sub>(13/11/17)</sub>](drugs/drug_warfarin/)
+- [warfarin <sub>(9/9/17)</sub>](drugs/drug_warfarin/)
 
 #### dse
 - [albiglutide <sub>(0/0/0)</sub>](drugs/drug_albiglutide/)
@@ -61,7 +61,7 @@
 - ecnoglutide <sub>(0/0/0)</sub>
 - [Efpeglenatide <sub>(1/0/0)</sub>](drugs/drug_efpeglenatide/)
 - [exenatide <sub>(9/6/0)</sub>](drugs/drug_exenatide/)
-- [liraglutide <sub>(1/37/0)</sub>](drugs/drug_liraglutide/)
+- [liraglutide <sub>(1/35/0)</sub>](drugs/drug_liraglutide/)
 - [lixisenatide <sub>(0/1/0)</sub>](drugs/drug_lixisenatide/)
 - [Mazdutide <sub>(0/0/0)</sub>](drugs/drug_mazdutide/)
 - [Orforglipron <sub>(0/0/0)</sub>](drugs/drug_orforglipron/)
@@ -72,6 +72,22 @@
 - survodutide <sub>(0/0/0)</sub>
 - [Taspoglutide <sub>(0/0/0)</sub>](drugs/drug_taspoglutide/)
 - [tirzepatide <sub>(0/2/0)</sub>](drugs/drug_tirzepatide/)
+
+#### toxins
+- [arsenic <sub>(0/0/2)</sub>](drugs/toxin_arsenic/)
+- [cadmium <sub>(6/0/0)</sub>](drugs/toxin_cadmium/)
+- [chromium <sub>(0/0/0)</sub>](drugs/toxin_chromium/)
+- [nickel <sub>(4/0/0)</sub>](drugs/toxin_nickel/)
+- [lead <sub>(0/0/1)</sub>](drugs/toxin_lead/)
+- [112_trichloroethane <sub>(0/0/0)</sub>](drugs/toxin_112_trichloroethane/)
+- [11_dichloroethene <sub>(0/0/0)</sub>](drugs/toxin_11_dichloroethene/)
+- [1267_tetrachlorodibenzo_p_dioxin <sub>(0/0/0)</sub>](drugs/toxin_1267_tetrachlorodibenzo_p_dioxin/)
+- [224_trimethylpentane <sub>(0/0/0)</sub>](drugs/toxin_224_trimethylpentane/)
+- [2378_tetrachlorodibenzo_p_dioxin <sub>(0/0/0)</sub>](drugs/toxin_2378_tetrachlorodibenzo_p_dioxin/)
+- [24_dinitrotoluene <sub>(0/14/0)</sub>](drugs/toxin_24_dinitrotoluene/)
+- [44_methylenedianiline <sub>(0/0/0)</sub>](drugs/toxin_44_methylenedianiline/)
+- [acetonitrile <sub>(0/0/0)</sub>](drugs/toxin_acetonitrile/)
+- [americium <sub>(0/0/0)</sub>](drugs/toxin_americium/)
 
 #### ATC
 - **A Alimentary Tract And Metabolism**
@@ -186,7 +202,7 @@
       - [misoprostol <sub>(0/1/0)</sub>](drugs/drug_misoprostol/)
       - niperotidine <sub>(0/0/0)</sub>
       - [nizatidine <sub>(0/0/0)</sub>](drugs/drug_nizatidine/)
-      - [omeprazole <sub>(19/8/2)</sub>](drugs/drug_omeprazole/)
+      - [omeprazole <sub>(17/8/2)</sub>](drugs/drug_omeprazole/)
       - omeprazole amoxicillin and clarithromycin <sub>(0/0/0)</sub>
       - omeprazole amoxicillin and metronidazole <sub>(0/0/0)</sub>
       - omeprazole amoxicillin and rifabutin <sub>(0/0/0)</sub>
@@ -388,7 +404,7 @@
       - [ornithine oxoglurate <sub>(1/0/0)</sub>](drugs/drug_ornithine_oxoglurate/)
       - [phospholipids <sub>(0/19/0)</sub>](drugs/drug_phospholipids/)
       - [resmetirom <sub>(0/0/0)</sub>](drugs/drug_resmetirom/)
-      - [silymarin <sub>(0/42/0)</sub>](drugs/drug_silymarin/)
+      - [silymarin <sub>(0/40/0)</sub>](drugs/drug_silymarin/)
       - tidiacic arginine <sub>(0/0/0)</sub>
   - A06 Drugs For Constipation
     - [A06A Drugs For Constipation](atc/A06A.md)
@@ -401,7 +417,7 @@
       - [cascara <sub>(0/2/0)</sub>](drugs/drug_cascara/)
       - cascara combinations <sub>(0/0/0)</sub>
       - [castor oil <sub>(0/49/0)</sub>](drugs/drug_castor_oil/)
-      - [contact laxatives in combination <sub>(0/0/0)</sub>](drugs/drug_contact_laxatives_in_combination/)
+      - contact laxatives in combination <sub>(0/0/0)</sub>
       - contact laxatives in combination with belladonna alkaloids <sub>(0/0/0)</sub>
       - dantron <sub>(0/0/0)</sub>
       - dantron combinations <sub>(0/0/0)</sub>
@@ -453,7 +469,7 @@
       - [sodium sulfate <sub>(0/41/0)</sub>](drugs/drug_sodium_sulfate/)
       - [sodium tartrate <sub>(0/1/0)</sub>](drugs/drug_sodium_tartrate/)
       - [sorbitol <sub>(0/3/0)</sub>](drugs/drug_sorbitol/)
-      - [sterculia <sub>(0/18/0)</sub>](drugs/drug_sterculia/)
+      - [sterculia <sub>(0/17/0)</sub>](drugs/drug_sterculia/)
       - sterculia combinations <sub>(0/0/0)</sub>
       - [tegaserod <sub>(0/5/0)</sub>](drugs/drug_tegaserod/)
       - [tenapanor <sub>(0/0/0)</sub>](drugs/drug_tenapanor/)
@@ -465,14 +481,14 @@
       - [broxyquinoline <sub>(0/3/0)</sub>](drugs/drug_broxyquinoline/)
       - [colistin <sub>(2/0/0)</sub>](drugs/drug_colistin/)
       - [fidaxomicin <sub>(0/0/0)</sub>](drugs/drug_fidaxomicin/)
-      - [kanamycin <sub>(3/6/0)</sub>](drugs/drug_kanamycin/)
+      - [kanamycin <sub>(3/5/0)</sub>](drugs/drug_kanamycin/)
       - [miconazole <sub>(0/0/0)</sub>](drugs/drug_miconazole/)
       - [natamycin <sub>(0/1/0)</sub>](drugs/drug_natamycin/)
       - [neomycin <sub>(0/1/0)</sub>](drugs/drug_neomycin/)
       - neomycin combinations <sub>(0/0/0)</sub>
       - [nifuroxazide <sub>(0/14/0)</sub>](drugs/drug_nifuroxazide/)
       - nifurzide <sub>(0/0/0)</sub>
-      - [nystatin <sub>(0/11/0)</sub>](drugs/drug_nystatin/)
+      - [nystatin <sub>(0/10/0)</sub>](drugs/drug_nystatin/)
       - [paromomycin <sub>(0/1/0)</sub>](drugs/drug_paromomycin/)
       - phthalylsulfathiazole <sub>(0/0/0)</sub>
       - [polymyxin B <sub>(3/6/0)</sub>](drugs/drug_polymyxin_b/)
@@ -488,8 +504,8 @@
       - attapulgite combinations <sub>(0/0/0)</sub>
       - crospovidone <sub>(0/0/0)</sub>
       - [diosmectite <sub>(0/11/0)</sub>](drugs/drug_diosmectite/)
-      - [kaolin <sub>(0/16/0)</sub>](drugs/drug_kaolin/)
-      - [medicinal charcoal <sub>(0/23/0)</sub>](drugs/drug_medicinal_charcoal/)
+      - [kaolin <sub>(0/15/0)</sub>](drugs/drug_kaolin/)
+      - [medicinal charcoal <sub>(0/20/0)</sub>](drugs/drug_medicinal_charcoal/)
       - medicinal charcoal combinations <sub>(0/0/0)</sub>
       - other intestinal adsorbents a07bc30 <sub>(0/0/0)</sub>
       - [pectin <sub>(0/48/0)</sub>](drugs/drug_pectin/)
@@ -499,7 +515,7 @@
       - eluxadoline <sub>(0/0/0)</sub>
       - [loperamide <sub>(2/6/0)</sub>](drugs/drug_loperamide/)
       - loperamide combinations <sub>(0/0/0)</sub>
-      - [loperamide oxide <sub>(0/0/0)</sub>](drugs/drug_loperamide_oxide/)
+      - loperamide oxide <sub>(0/0/0)</sub>
       - morphine combinations <sub>(0/0/0)</sub>
       - [opium <sub>(0/0/0)</sub>](drugs/drug_opium/)
     - [A07E Intestinal Antiinflammatory Agents](atc/A07E.md)
@@ -516,7 +532,7 @@
       - [sulfasalazine <sub>(0/17/0)</sub>](drugs/drug_sulfasalazine/)
       - [tixocortol <sub>(0/0/0)</sub>](drugs/drug_tixocortol/)
     - [A07F Antidiarrheal Microorganisms](atc/A07F.md)
-      - [escherichia coli <sub>(1/16/0)</sub>](drugs/drug_escherichia_coli/)
+      - [escherichia coli <sub>(10/20/0)</sub>](drugs/drug_escherichia_coli/)
       - lactic acid producing organisms <sub>(0/0/0)</sub>
       - lactic acid producing organisms combinations <sub>(0/0/0)</sub>
       - [saccharomyces boulardii <sub>(0/12/0)</sub>](drugs/drug_saccharomyces_boulardii/)
@@ -537,7 +553,7 @@
       - [dexfenfluramine <sub>(0/0/0)</sub>](drugs/drug_dexfenfluramine/)
       - ephedrine combinations <sub>(0/0/0)</sub>
       - etilamfetamine <sub>(0/0/0)</sub>
-      - [fenfluramine <sub>(0/5/0)</sub>](drugs/drug_fenfluramine/)
+      - [fenfluramine <sub>(0/4/0)</sub>](drugs/drug_fenfluramine/)
       - [lorcaserin <sub>(0/1/0)</sub>](drugs/drug_lorcaserin/)
       - [mazindol <sub>(2/0/0)</sub>](drugs/drug_mazindol/)
       - [mefenorex <sub>(0/0/0)</sub>](drugs/drug_mefenorex/)
@@ -583,7 +599,7 @@
       - insulins and analogues for injection intermediate acting a10ac30 <sub>(0/0/0)</sub>
       - insulins and analogues for injection intermediate or long acting combined with fast acting a10ad30 <sub>(0/0/0)</sub>
       - insulins and analogues for injection long acting a10ae30 <sub>(0/0/0)</sub>
-      - [liraglutide <sub>(1/37/0)</sub>](drugs/drug_liraglutide/)
+      - [liraglutide <sub>(1/35/0)</sub>](drugs/drug_liraglutide/)
       - [lixisenatide <sub>(0/1/0)</sub>](drugs/drug_lixisenatide/)
     - [A10B Blood Glucose Lowering Drugs, Excl. Insulins](atc/A10B.md)
       - [acarbose <sub>(0/1/0)</sub>](drugs/drug_acarbose/)
@@ -619,18 +635,18 @@
       - [glipizide <sub>(0/1/0)</sub>](drugs/drug_glipizide/)
       - [gliquidone <sub>(0/0/0)</sub>](drugs/drug_gliquidone/)
       - [glisoxepide <sub>(0/3/0)</sub>](drugs/drug_glisoxepide/)
-      - [glymidine <sub>(0/0/0)</sub>](drugs/drug_glymidine/)
+      - glymidine <sub>(0/0/0)</sub>
       - [guar gum <sub>(0/0/0)</sub>](drugs/drug_guar_gum/)
       - [imeglimin <sub>(0/0/0)</sub>](drugs/drug_imeglimin/)
       - [ipragliflozin <sub>(0/7/0)</sub>](drugs/drug_ipragliflozin/)
       - [linagliptin <sub>(0/2/0)</sub>](drugs/drug_linagliptin/)
       - linagliptin and empagliflozin <sub>(0/0/0)</sub>
-      - [liraglutide <sub>(1/37/0)</sub>](drugs/drug_liraglutide/)
+      - [liraglutide <sub>(1/35/0)</sub>](drugs/drug_liraglutide/)
       - [lixisenatide <sub>(0/1/0)</sub>](drugs/drug_lixisenatide/)
       - [lobeglitazone <sub>(0/9/0)</sub>](drugs/drug_lobeglitazone/)
       - [luseogliflozin <sub>(1/2/0)</sub>](drugs/drug_luseogliflozin/)
       - metahexamide <sub>(0/0/0)</sub>
-      - [metformin <sub>(17/17/7)</sub>](drugs/drug_metformin/)
+      - [metformin <sub>(17/15/7)</sub>](drugs/drug_metformin/)
       - metformin and acarbose <sub>(0/0/0)</sub>
       - metformin and alogliptin <sub>(0/0/0)</sub>
       - metformin and canagliflozin <sub>(0/0/0)</sub>
@@ -920,7 +936,7 @@
       - [triflusal <sub>(1/0/0)</sub>](drugs/drug_triflusal/)
       - [urokinase <sub>(0/0/0)</sub>](drugs/drug_urokinase/)
       - [vorapaxar <sub>(0/0/0)</sub>](drugs/drug_vorapaxar/)
-      - [warfarin <sub>(13/11/17)</sub>](drugs/drug_warfarin/)
+      - [warfarin <sub>(9/9/17)</sub>](drugs/drug_warfarin/)
       - [ximelagatran <sub>(0/0/0)</sub>](drugs/drug_ximelagatran/)
   - B02 Antihemorrhagics
     - [B02A Antifibrinolytics](atc/B02A.md)
@@ -961,13 +977,13 @@
       - local hemostatics b02bc30 <sub>(0/0/0)</sub>
       - [lusutrombopag <sub>(0/1/0)</sub>](drugs/drug_lusutrombopag/)
       - [marstacimab <sub>(1/3/0)</sub>](drugs/drug_marstacimab/)
-      - [menadione <sub>(0/57/0)</sub>](drugs/drug_menadione/)
+      - [menadione <sub>(0/55/0)</sub>](drugs/drug_menadione/)
       - oxidized cellulose <sub>(0/0/0)</sub>
       - [phytomenadione <sub>(0/1/0)</sub>](drugs/drug_phytomenadione/)
       - [romiplostim <sub>(0/1/0)</sub>](drugs/drug_romiplostim/)
       - [susoctocog alfa <sub>(0/0/0)</sub>](drugs/drug_susoctocog_alfa/)
       - tetragalacturonic acid hydroxymethylester <sub>(0/0/0)</sub>
-      - [thrombin <sub>(0/43/1)</sub>](drugs/drug_thrombin/)
+      - [thrombin <sub>(0/39/1)</sub>](drugs/drug_thrombin/)
       - [valoctocogene roxaparvovec <sub>(0/0/0)</sub>](drugs/drug_valoctocogene_roxaparvovec/)
       - [von Willebrand factor <sub>(6/19/0)</sub>](drugs/drug_von_willebrand_factor/)
       - von willebrand factor and coagulation factor viii in combination <sub>(0/0/0)</sub>
@@ -1030,7 +1046,7 @@
   - B05 Blood Substitutes And Perfusion Solutions
     - [B05A Blood And Related Products](atc/B05A.md)
       - [albumin <sub>(0/36/0)</sub>](drugs/drug_albumin/)
-      - [blood plasma <sub>(6/11/1)</sub>](drugs/drug_blood_plasma/)
+      - [blood plasma <sub>(6/10/1)</sub>](drugs/drug_blood_plasma/)
       - [dextran <sub>(0/0/0)</sub>](drugs/drug_dextran/)
       - [erythrocytes <sub>(0/30/1)</sub>](drugs/drug_erythrocytes/)
       - fluorocarbon blood substitutes <sub>(0/0/0)</sub>
@@ -1119,14 +1135,14 @@
       - mozafancogene autotemcel <sub>(0/0/0)</sub>
       - sebetralstat <sub>(0/0/0)</sub>
       - streptokinase combinations <sub>(0/0/0)</sub>
-      - [trypsin <sub>(0/50/0)</sub>](drugs/drug_trypsin/)
+      - [trypsin <sub>(0/49/0)</sub>](drugs/drug_trypsin/)
       - [voxelotor <sub>(1/3/0)</sub>](drugs/drug_voxelotor/)
     - [B06C](atc/B06C.md)
       - [conestat alfa <sub>(0/0/0)</sub>](drugs/drug_conestat_alfa/)
 - **C Cardiovascular System**
   - C01 Cardiac Therapy
     - [C01A Cardiac Glycosides](atc/C01A.md)
-      - [acetyldigitoxin <sub>(0/11/0)</sub>](drugs/drug_acetyldigitoxin/)
+      - [acetyldigitoxin <sub>(0/10/0)</sub>](drugs/drug_acetyldigitoxin/)
       - [acetyldigoxin <sub>(0/0/0)</sub>](drugs/drug_acetyldigoxin/)
       - acetyldigoxin combinations <sub>(0/0/0)</sub>
       - [cymarin <sub>(0/3/0)</sub>](drugs/drug_cymarin/)
@@ -1135,7 +1151,7 @@
       - [digitoxin <sub>(0/0/0)</sub>](drugs/drug_digitoxin/)
       - [digoxin <sub>(20/9/0)</sub>](drugs/drug_digoxin/)
       - [g-strophanthin <sub>(0/11/0)</sub>](drugs/drug_g_strophanthin/)
-      - [gitoformate <sub>(0/0/0)</sub>](drugs/drug_gitoformate/)
+      - gitoformate <sub>(0/0/0)</sub>
       - [lanatoside C <sub>(0/0/0)</sub>](drugs/drug_lanatoside_c/)
       - [metildigoxin <sub>(0/0/0)</sub>](drugs/drug_metildigoxin/)
       - [peruvoside <sub>(0/1/0)</sub>](drugs/drug_peruvoside/)
@@ -1195,8 +1211,8 @@
       - [fenoldopam <sub>(0/0/0)</sub>](drugs/drug_fenoldopam/)
       - gepefrine <sub>(0/0/0)</sub>
       - [ibopamine <sub>(0/0/0)</sub>](drugs/drug_ibopamine/)
-      - [isoprenaline <sub>(0/29/0)</sub>](drugs/drug_isoprenaline/)
-      - [levosimendan <sub>(2/9/0)</sub>](drugs/drug_levosimendan/)
+      - [isoprenaline <sub>(0/28/0)</sub>](drugs/drug_isoprenaline/)
+      - [levosimendan <sub>(2/6/0)</sub>](drugs/drug_levosimendan/)
       - mephentermine <sub>(0/0/0)</sub>
       - [metaraminol <sub>(0/0/0)</sub>](drugs/drug_metaraminol/)
       - [methoxamine <sub>(0/16/0)</sub>](drugs/drug_methoxamine/)
@@ -1299,7 +1315,7 @@
     - [C02C Antiadrenergic Agents, Peripherally Acting](atc/C02C.md)
       - betanidine <sub>(0/0/0)</sub>
       - debrisoquine <sub>(0/0/0)</sub>
-      - [doxazosin <sub>(3/17/1)</sub>](drugs/drug_doxazosin/)
+      - [doxazosin <sub>(3/14/1)</sub>](drugs/drug_doxazosin/)
       - guanazodine <sub>(0/0/0)</sub>
       - guanethidine <sub>(0/0/0)</sub>
       - guanoclor <sub>(0/0/0)</sub>
@@ -1490,7 +1506,7 @@
       - pindolol and other diuretics <sub>(0/0/0)</sub>
     - [C07F Beta Blocking Agents, Other Combinations](atc/C07F.md)
       - [acetylsalicylic acid <sub>(6/3/0)</sub>](drugs/drug_acetylsalicylic_acid/)
-      - [amlodipine <sub>(14/16/3)</sub>](drugs/drug_amlodipine/)
+      - [amlodipine <sub>(12/15/3)</sub>](drugs/drug_amlodipine/)
       - [atenolol <sub>(1/0/1)</sub>](drugs/drug_atenolol/)
       - atenolol and nifedipine <sub>(0/0/0)</sub>
       - [bisoprolol <sub>(7/0/0)</sub>](drugs/drug_bisoprolol/)
@@ -1511,7 +1527,7 @@
       - sotalol and acetylsalicylic acid <sub>(0/0/0)</sub>
   - C08 Calcium Channel Blockers
     - [C08C Selective Calcium Channel Blockers With Mainly Vascular Effects](atc/C08C.md)
-      - [amlodipine <sub>(14/16/3)</sub>](drugs/drug_amlodipine/)
+      - [amlodipine <sub>(12/15/3)</sub>](drugs/drug_amlodipine/)
       - amlodipine and celecoxib <sub>(0/0/0)</sub>
       - barnidipine <sub>(0/0/0)</sub>
       - benidipine <sub>(0/0/0)</sub>
@@ -1531,14 +1547,14 @@
       - nisoldipine <sub>(0/0/0)</sub>
       - nitrendipine <sub>(0/0/0)</sub>
     - [C08G Calcium Channel Blockers And Diuretics](atc/C08G.md)
-      - [amlodipine <sub>(14/16/3)</sub>](drugs/drug_amlodipine/)
+      - [amlodipine <sub>(12/15/3)</sub>](drugs/drug_amlodipine/)
       - amlodipine and diuretics <sub>(0/0/0)</sub>
       - nifedipine and diuretics <sub>(0/0/0)</sub>
   - C09 Agents Acting On The Renin-Angiotensin System
     - [C09A Ace Inhibitors, Plain](atc/C09A.md)
       - benazepril <sub>(0/0/0)</sub>
       - captopril <sub>(0/0/0)</sub>
-      - [cilazapril <sub>(1/45/0)</sub>](drugs/drug_cilazapril/)
+      - [cilazapril <sub>(1/44/0)</sub>](drugs/drug_cilazapril/)
       - delapril <sub>(0/0/0)</sub>
       - enalapril <sub>(0/0/0)</sub>
       - fosinopril <sub>(0/0/0)</sub>
@@ -1553,12 +1569,12 @@
       - trandolapril <sub>(0/0/0)</sub>
       - zofenopril <sub>(0/0/0)</sub>
     - [C09B Ace Inhibitors, Combinations](atc/C09B.md)
-      - [amlodipine <sub>(14/16/3)</sub>](drugs/drug_amlodipine/)
+      - [amlodipine <sub>(12/15/3)</sub>](drugs/drug_amlodipine/)
       - benazepril and amlodipine <sub>(0/0/0)</sub>
       - benazepril and diuretics <sub>(0/0/0)</sub>
       - [bisoprolol <sub>(7/0/0)</sub>](drugs/drug_bisoprolol/)
       - captopril and diuretics <sub>(0/0/0)</sub>
-      - [cilazapril <sub>(1/45/0)</sub>](drugs/drug_cilazapril/)
+      - [cilazapril <sub>(1/44/0)</sub>](drugs/drug_cilazapril/)
       - cilazapril and diuretics <sub>(0/0/0)</sub>
       - delapril and diuretics <sub>(0/0/0)</sub>
       - delapril and manidipine <sub>(0/0/0)</sub>
@@ -1597,11 +1613,11 @@
       - olmesartan <sub>(0/0/0)</sub>
       - olmesartan medoxomil <sub>(0/0/0)</sub>
       - tasosartan <sub>(0/0/0)</sub>
-      - [telmisartan <sub>(5/47/4)</sub>](drugs/drug_telmisartan/)
+      - [telmisartan <sub>(5/45/4)</sub>](drugs/drug_telmisartan/)
       - valsartan <sub>(0/0/0)</sub>
     - [C09D Angiotensin Ii Receptor Blockers (Arbs), Combinations](atc/C09D.md)
       - aliskiren <sub>(0/0/0)</sub>
-      - [amlodipine <sub>(14/16/3)</sub>](drugs/drug_amlodipine/)
+      - [amlodipine <sub>(12/15/3)</sub>](drugs/drug_amlodipine/)
       - azilsartan medoxomil and diuretics <sub>(0/0/0)</sub>
       - candesartan amlodipine and hydrochlorothiazide <sub>(0/0/0)</sub>
       - candesartan amlodipine and indapamide <sub>(0/0/0)</sub>
@@ -1621,7 +1637,7 @@
       - olmesartan medoxomil and amlodipine <sub>(0/0/0)</sub>
       - olmesartan medoxomil and diuretics <sub>(0/0/0)</sub>
       - sacubitril <sub>(0/0/0)</sub>
-      - [telmisartan <sub>(5/47/4)</sub>](drugs/drug_telmisartan/)
+      - [telmisartan <sub>(5/45/4)</sub>](drugs/drug_telmisartan/)
       - telmisartan amlodipine and hydrochlorothiazide <sub>(0/0/0)</sub>
       - telmisartan and amlodipine <sub>(0/0/0)</sub>
       - telmisartan and diuretics <sub>(0/0/0)</sub>
@@ -1636,7 +1652,7 @@
       - aliskiren amlodipine and hydrochlorothiazide <sub>(0/0/0)</sub>
       - aliskiren and amlodipine <sub>(0/0/0)</sub>
       - aliskiren and hydrochlorothiazide <sub>(0/0/0)</sub>
-      - [amlodipine <sub>(14/16/3)</sub>](drugs/drug_amlodipine/)
+      - [amlodipine <sub>(12/15/3)</sub>](drugs/drug_amlodipine/)
       - [hydrochlorothiazide <sub>(7/3/2)</sub>](drugs/drug_hydrochlorothiazide/)
       - remikiren <sub>(0/0/0)</sub>
       - sparsentan <sub>(0/0/0)</sub>
@@ -1647,7 +1663,7 @@
       - alirocumab <sub>(0/0/0)</sub>
       - aluminium clofibrate <sub>(0/0/0)</sub>
       - aluminium nicotinate <sub>(0/0/0)</sub>
-      - [atorvastatin <sub>(6/12/3)</sub>](drugs/drug_atorvastatin/)
+      - [atorvastatin <sub>(6/11/3)</sub>](drugs/drug_atorvastatin/)
       - bempedoic acid <sub>(0/0/0)</sub>
       - bezafibrate <sub>(0/0/0)</sub>
       - cerivastatin <sub>(0/0/0)</sub>
@@ -1691,8 +1707,8 @@
       - volanesorsen <sub>(0/0/0)</sub>
     - [C10B Lipid Modifying Agents, Combinations](atc/C10B.md)
       - [acetylsalicylic acid <sub>(6/3/0)</sub>](drugs/drug_acetylsalicylic_acid/)
-      - [amlodipine <sub>(14/16/3)</sub>](drugs/drug_amlodipine/)
-      - [atorvastatin <sub>(6/12/3)</sub>](drugs/drug_atorvastatin/)
+      - [amlodipine <sub>(12/15/3)</sub>](drugs/drug_amlodipine/)
+      - [atorvastatin <sub>(6/11/3)</sub>](drugs/drug_atorvastatin/)
       - atorvastatin acetylsalicylic acid and perindopril <sub>(0/0/0)</sub>
       - atorvastatin acetylsalicylic acid and ramipril <sub>(0/0/0)</sub>
       - atorvastatin amlodipine and candesartan <sub>(0/0/0)</sub>
@@ -1737,7 +1753,7 @@
       - simvastatin and acetylsalicylic acid <sub>(0/0/0)</sub>
       - simvastatin and ezetimibe <sub>(0/0/0)</sub>
       - simvastatin and fenofibrate <sub>(0/0/0)</sub>
-      - [telmisartan <sub>(5/47/4)</sub>](drugs/drug_telmisartan/)
+      - [telmisartan <sub>(5/45/4)</sub>](drugs/drug_telmisartan/)
 - **D Dermatologicals**
   - D01 Antifungals For Dermatological Use
     - [D01A Antifungals For Topical Use](atc/D01A.md)
@@ -1776,7 +1792,7 @@
       - naftifine <sub>(0/0/0)</sub>
       - [natamycin <sub>(0/1/0)</sub>](drugs/drug_natamycin/)
       - neticonazole <sub>(0/0/0)</sub>
-      - [nystatin <sub>(0/11/0)</sub>](drugs/drug_nystatin/)
+      - [nystatin <sub>(0/10/0)</sub>](drugs/drug_nystatin/)
       - omoconazole <sub>(0/0/0)</sub>
       - other antifungals for topical use d01ae20 <sub>(0/0/0)</sub>
       - oxiconazole <sub>(0/0/0)</sub>
@@ -1826,7 +1842,7 @@
       - bromelains <sub>(0/0/0)</sub>
       - collagenase <sub>(0/0/0)</sub>
       - collagenase combinations <sub>(0/0/0)</sub>
-      - [trypsin <sub>(0/50/0)</sub>](drugs/drug_trypsin/)
+      - [trypsin <sub>(0/49/0)</sub>](drugs/drug_trypsin/)
   - D04 Antipruritics, Incl. Antihistamines, Anesthetics, Etc.
     - [D04A Antipruritics, Incl. Antihistamines, Anesthetics, Etc.](atc/D04A.md)
       - bamipine <sub>(0/0/0)</sub>
@@ -2105,7 +2121,7 @@
       - [cromoglicic acid <sub>(0/0/0)</sub>](drugs/drug_cromoglicic_acid/)
       - delgocitinib <sub>(0/0/0)</sub>
       - deoxycholic acid <sub>(0/0/0)</sub>
-      - [diclofenac <sub>(2/15/3)</sub>](drugs/drug_diclofenac/)
+      - [diclofenac <sub>(1/25/3)</sub>](drugs/drug_diclofenac/)
       - dupilumab <sub>(0/0/0)</sub>
       - eflornithine <sub>(0/0/0)</sub>
       - finasteride <sub>(0/0/0)</sub>
@@ -2162,7 +2178,7 @@
       - [miconazole <sub>(0/0/0)</sub>](drugs/drug_miconazole/)
       - [natamycin <sub>(0/1/0)</sub>](drugs/drug_natamycin/)
       - nifuratel <sub>(0/0/0)</sub>
-      - [nystatin <sub>(0/11/0)</sub>](drugs/drug_nystatin/)
+      - [nystatin <sub>(0/10/0)</sub>](drugs/drug_nystatin/)
       - nystatin combinations <sub>(0/0/0)</sub>
       - ornidazole <sub>(0/0/0)</sub>
       - [oxyquinoline <sub>(0/30/0)</sub>](drugs/drug_oxyquinoline/)
@@ -2247,7 +2263,7 @@
     - [G04C Drugs Used In Benign Prostatic Hypertrophy](atc/G04C.md)
       - alfuzosin <sub>(0/0/0)</sub>
       - alfuzosin and finasteride <sub>(0/0/0)</sub>
-      - [doxazosin <sub>(3/17/1)</sub>](drugs/drug_doxazosin/)
+      - [doxazosin <sub>(3/14/1)</sub>](drugs/drug_doxazosin/)
       - doxazosin and finasteride <sub>(0/0/0)</sub>
       - dutasteride <sub>(0/0/0)</sub>
       - fexapotide <sub>(0/0/0)</sub>
@@ -2284,7 +2300,7 @@
   - H03 Thyroid Therapy
     - [H03A Thyroid Preparations](atc/H03A.md)
       - combinations of levothyroxine and liothyronine <sub>(0/0/0)</sub>
-      - [Levothyroxine <sub>(13/11/0)</sub>](drugs/drug_levothyroxine/)
+      - [Levothyroxine <sub>(1/11/0)</sub>](drugs/drug_levothyroxine/)
       - levothyroxine sodium <sub>(0/0/0)</sub>
       - levothyroxine sodium and iodine compounds <sub>(0/0/0)</sub>
       - liothyronine <sub>(0/0/0)</sub>
@@ -2432,7 +2448,7 @@
       - [dibekacin <sub>(0/0/0)</sub>](drugs/drug_dibekacin/)
       - [gentamicin <sub>(2/0/0)</sub>](drugs/drug_gentamicin/)
       - isepamicin <sub>(0/0/0)</sub>
-      - [kanamycin <sub>(3/6/0)</sub>](drugs/drug_kanamycin/)
+      - [kanamycin <sub>(3/5/0)</sub>](drugs/drug_kanamycin/)
       - [neomycin <sub>(0/1/0)</sub>](drugs/drug_neomycin/)
       - [netilmicin <sub>(1/0/0)</sub>](drugs/drug_netilmicin/)
       - plazomicin <sub>(0/0/0)</sub>
@@ -2443,7 +2459,7 @@
       - tobramycin <sub>(0/0/0)</sub>
     - [J01M Quinolone Antibacterials](atc/J01M.md)
       - cinoxacin <sub>(0/0/0)</sub>
-      - [ciprofloxacin <sub>(18/15/1)</sub>](drugs/drug_ciprofloxacin/)
+      - [ciprofloxacin <sub>(16/15/1)</sub>](drugs/drug_ciprofloxacin/)
       - delafloxacin <sub>(0/0/0)</sub>
       - enoxacin <sub>(0/0/0)</sub>
       - fleroxacin <sub>(0/0/0)</sub>
@@ -2481,7 +2497,7 @@
       - cefixime and azithromycin <sub>(0/0/0)</sub>
       - cefixime and ornidazole <sub>(0/0/0)</sub>
       - cefuroxime and metronidazole <sub>(0/0/0)</sub>
-      - [ciprofloxacin <sub>(18/15/1)</sub>](drugs/drug_ciprofloxacin/)
+      - [ciprofloxacin <sub>(16/15/1)</sub>](drugs/drug_ciprofloxacin/)
       - ciprofloxacin and metronidazole <sub>(0/0/0)</sub>
       - ciprofloxacin and ornidazole <sub>(0/0/0)</sub>
       - ciprofloxacin and tinidazole <sub>(0/0/0)</sub>
@@ -2491,7 +2507,7 @@
       - nitazoxanide <sub>(0/0/0)</sub>
       - norfloxacin and metronidazole <sub>(0/0/0)</sub>
       - norfloxacin and tinidazole <sub>(0/0/0)</sub>
-      - [nystatin <sub>(0/11/0)</sub>](drugs/drug_nystatin/)
+      - [nystatin <sub>(0/10/0)</sub>](drugs/drug_nystatin/)
       - [ofloxacin <sub>(1/0/0)</sub>](drugs/drug_ofloxacin/)
       - ofloxacin and nitazoxanide <sub>(0/0/0)</sub>
       - ofloxacin and ornidazole <sub>(0/0/0)</sub>
@@ -2593,7 +2609,7 @@
       - dapsone rifampicin and clofazimine <sub>(0/0/0)</sub>
   - J05 Antivirals For Systemic Use
     - [J05A Direct Acting Antivirals](atc/J05A.md)
-      - [abacavir <sub>(4/1/45)</sub>](drugs/drug_abacavir/)
+      - [abacavir <sub>(3/1/45)</sub>](drugs/drug_abacavir/)
       - adefovir dipivoxil <sub>(0/0/0)</sub>
       - amenamevir <sub>(0/0/0)</sub>
       - amprenavir <sub>(0/0/0)</sub>
@@ -2779,7 +2795,7 @@
       - [chlorambucil <sub>(0/0/0)</sub>](drugs/drug_chlorambucil/)
       - chlormethine <sub>(0/0/0)</sub>
       - [cyclophosphamide <sub>(0/0/0)</sub>](drugs/drug_cyclophosphamide/)
-      - [dacarbazine <sub>(0/10/0)</sub>](drugs/drug_dacarbazine/)
+      - [dacarbazine <sub>(0/9/0)</sub>](drugs/drug_dacarbazine/)
       - etoglucid <sub>(0/0/0)</sub>
       - [fotemustine <sub>(0/0/0)</sub>](drugs/drug_fotemustine/)
       - [ifosfamide <sub>(1/2/0)</sub>](drugs/drug_ifosfamide/)
@@ -2811,11 +2827,11 @@
       - decitabine combinations <sub>(0/0/0)</sub>
       - [floxuridine <sub>(0/3/0)</sub>](drugs/drug_floxuridine/)
       - [fludarabine <sub>(1/0/0)</sub>](drugs/drug_fludarabine/)
-      - [fluorouracil <sub>(7/33/43)</sub>](drugs/drug_fluorouracil/)
+      - [fluorouracil <sub>(7/32/43)</sub>](drugs/drug_fluorouracil/)
       - fluorouracil combinations <sub>(0/0/0)</sub>
       - [gemcitabine <sub>(2/21/1)</sub>](drugs/drug_gemcitabine/)
       - [mercaptopurine <sub>(0/0/0)</sub>](drugs/drug_mercaptopurine/)
-      - [methotrexate <sub>(22/5/4)</sub>](drugs/drug_methotrexate/)
+      - [methotrexate <sub>(11/4/4)</sub>](drugs/drug_methotrexate/)
       - [nelarabine <sub>(0/2/0)</sub>](drugs/drug_nelarabine/)
       - [pemetrexed <sub>(3/0/1)</sub>](drugs/drug_pemetrexed/)
       - [pralatrexate <sub>(0/9/0)</sub>](drugs/drug_pralatrexate/)
@@ -2847,7 +2863,7 @@
     - [L01D Cytotoxic Antibiotics And Related Substances](atc/L01D.md)
       - aclarubicin <sub>(0/0/0)</sub>
       - amrubicin <sub>(0/0/0)</sub>
-      - [bleomycin <sub>(3/35/1)</sub>](drugs/drug_bleomycin/)
+      - [bleomycin <sub>(3/32/1)</sub>](drugs/drug_bleomycin/)
       - dactinomycin <sub>(0/0/0)</sub>
       - [daunorubicin <sub>(1/0/0)</sub>](drugs/drug_daunorubicin/)
       - [doxorubicin <sub>(8/24/0)</sub>](drugs/drug_doxorubicin/)
@@ -3100,7 +3116,7 @@
       - apremilast <sub>(0/0/0)</sub>
       - avacopan <sub>(0/0/0)</sub>
       - axatilimab <sub>(0/0/0)</sub>
-      - [azathioprine <sub>(1/0/31)</sub>](drugs/drug_azathioprine/)
+      - [azathioprine <sub>(2/0/31)</sub>](drugs/drug_azathioprine/)
       - baricitinib <sub>(0/0/0)</sub>
       - basiliximab <sub>(0/0/0)</sub>
       - begelomab <sub>(0/0/0)</sub>
@@ -3145,7 +3161,7 @@
       - leflunomide <sub>(0/0/0)</sub>
       - lenalidomide <sub>(0/0/0)</sub>
       - levilimab <sub>(0/0/0)</sub>
-      - [methotrexate <sub>(22/5/4)</sub>](drugs/drug_methotrexate/)
+      - [methotrexate <sub>(11/4/4)</sub>](drugs/drug_methotrexate/)
       - mirikizumab <sub>(0/0/0)</sub>
       - monomethyl fumarate <sub>(0/0/0)</sub>
       - muromonab cd3 <sub>(0/0/0)</sub>
@@ -3213,7 +3229,7 @@
       - dexibuprofen <sub>(0/0/0)</sub>
       - dexketoprofen <sub>(0/0/0)</sub>
       - diacerein <sub>(0/0/0)</sub>
-      - [diclofenac <sub>(2/15/3)</sub>](drugs/drug_diclofenac/)
+      - [diclofenac <sub>(1/25/3)</sub>](drugs/drug_diclofenac/)
       - diclofenac combinations <sub>(0/0/0)</sub>
       - difenpiramide <sub>(0/0/0)</sub>
       - droxicam <sub>(0/0/0)</sub>
@@ -3292,7 +3308,7 @@
       - bendazac <sub>(0/0/0)</sub>
       - [benzydamine <sub>(0/0/0)</sub>](drugs/drug_benzydamine/)
       - capsaicin <sub>(0/0/0)</sub>
-      - [diclofenac <sub>(2/15/3)</sub>](drugs/drug_diclofenac/)
+      - [diclofenac <sub>(1/25/3)</sub>](drugs/drug_diclofenac/)
       - esflurbiprofen <sub>(0/0/0)</sub>
       - etofenamate <sub>(0/0/0)</sub>
       - felbinac <sub>(0/0/0)</sub>
@@ -3539,7 +3555,7 @@
       - salicylamide combinations excl psycholeptics <sub>(0/0/0)</sub>
       - salicylamide combinations with psycholeptics <sub>(0/0/0)</sub>
       - [salsalate <sub>(0/0/0)</sub>](drugs/drug_salsalate/)
-      - [sodium salicylate <sub>(3/2/0)</sub>](drugs/drug_sodium_salicylate/)
+      - [sodium salicylate <sub>(3/1/0)</sub>](drugs/drug_sodium_salicylate/)
       - [tanezumab <sub>(0/0/0)</sub>](drugs/drug_tanezumab/)
       - [viminol <sub>(0/0/0)</sub>](drugs/drug_viminol/)
       - [ziconotide <sub>(0/0/0)</sub>](drugs/drug_ziconotide/)
@@ -3592,7 +3608,7 @@
       - ethosuximide combinations <sub>(0/0/0)</sub>
       - [ethotoin <sub>(0/0/0)</sub>](drugs/drug_ethotoin/)
       - [felbamate <sub>(0/0/0)</sub>](drugs/drug_felbamate/)
-      - [fenfluramine <sub>(0/5/0)</sub>](drugs/drug_fenfluramine/)
+      - [fenfluramine <sub>(0/4/0)</sub>](drugs/drug_fenfluramine/)
       - [fosphenytoin <sub>(1/0/0)</sub>](drugs/drug_fosphenytoin/)
       - [ganaxolone <sub>(0/4/0)</sub>](drugs/drug_ganaxolone/)
       - [lacosamide <sub>(3/0/0)</sub>](drugs/drug_lacosamide/)
@@ -3712,7 +3728,7 @@
       - clobazam <sub>(0/0/0)</sub>
       - clotiazepam <sub>(0/0/0)</sub>
       - cloxazolam <sub>(0/0/0)</sub>
-      - [diazepam <sub>(9/1/0)</sub>](drugs/drug_diazepam/)
+      - [diazepam <sub>(8/1/0)</sub>](drugs/drug_diazepam/)
       - emylcamate <sub>(0/0/0)</sub>
       - ethyl loflazepate <sub>(0/0/0)</sub>
       - etifoxine <sub>(0/0/0)</sub>
@@ -3784,7 +3800,7 @@
       - methylpentynol <sub>(0/0/0)</sub>
       - methylpentynol combinations <sub>(0/0/0)</sub>
       - methyprylon <sub>(0/0/0)</sub>
-      - [midazolam <sub>(12/20/1)</sub>](drugs/drug_midazolam/)
+      - [midazolam <sub>(12/18/1)</sub>](drugs/drug_midazolam/)
       - niaprazine <sub>(0/0/0)</sub>
       - nimetazepam <sub>(0/0/0)</sub>
       - nitrazepam <sub>(0/0/0)</sub>
@@ -3814,16 +3830,16 @@
       - zopiclone <sub>(0/0/0)</sub>
   - N06 Psychoanaleptics
     - [N06A Antidepressants](atc/N06A.md)
-      - agomelatine <sub>(0/0/0)</sub>
+      - [agomelatine <sub>(0/0/1)</sub>](drugs/drug_agomelatine/)
       - alaproclate <sub>(0/0/0)</sub>
-      - amineptine <sub>(0/0/0)</sub>
+      - [amineptine <sub>(0/0/0)</sub>](drugs/drug_amineptine/)
       - [amitriptyline <sub>(1/1/0)</sub>](drugs/drug_amitriptyline/)
-      - amoxapine <sub>(0/0/0)</sub>
-      - bifemelane <sub>(0/0/0)</sub>
+      - [amoxapine <sub>(0/0/0)</sub>](drugs/drug_amoxapine/)
+      - [bifemelane <sub>(0/0/0)</sub>](drugs/drug_bifemelane/)
       - [brexanolone <sub>(1/0/0)</sub>](drugs/drug_brexanolone/)
       - [bupropion <sub>(0/0/0)</sub>](drugs/drug_bupropion/)
       - bupropion and dextromethorphan <sub>(0/0/0)</sub>
-      - butriptyline <sub>(0/0/0)</sub>
+      - [butriptyline <sub>(0/0/0)</sub>](drugs/drug_butriptyline/)
       - [citalopram <sub>(2/0/0)</sub>](drugs/drug_citalopram/)
       - [clomipramine <sub>(0/0/0)</sub>](drugs/drug_clomipramine/)
       - [desipramine <sub>(1/0/0)</sub>](drugs/drug_desipramine/)
@@ -3831,57 +3847,57 @@
       - [dextromethorphan <sub>(0/1/0)</sub>](drugs/drug_dextromethorphan/)
       - dibenzepin <sub>(0/0/0)</sub>
       - dimetacrine <sub>(0/0/0)</sub>
-      - dosulepin <sub>(0/0/0)</sub>
+      - [dosulepin <sub>(0/0/0)</sub>](drugs/drug_dosulepin/)
       - [doxepin <sub>(0/0/0)</sub>](drugs/drug_doxepin/)
       - [duloxetine <sub>(1/0/0)</sub>](drugs/drug_duloxetine/)
       - [escitalopram <sub>(2/0/0)</sub>](drugs/drug_escitalopram/)
       - [etoperidone <sub>(0/0/0)</sub>](drugs/drug_etoperidone/)
       - [fluoxetine <sub>(0/3/0)</sub>](drugs/drug_fluoxetine/)
       - [fluvoxamine <sub>(1/4/0)</sub>](drugs/drug_fluvoxamine/)
-      - gepirone <sub>(0/0/0)</sub>
+      - [gepirone <sub>(0/0/0)</sub>](drugs/drug_gepirone/)
       - [Hyperici herba <sub>(0/0/0)</sub>](drugs/drug_hyperici_herba/)
       - [imipramine <sub>(0/1/0)</sub>](drugs/drug_imipramine/)
       - imipramine oxide <sub>(0/0/0)</sub>
-      - iprindole <sub>(0/0/0)</sub>
+      - [iprindole <sub>(0/0/0)</sub>](drugs/drug_iprindole/)
       - iproclozide <sub>(0/0/0)</sub>
-      - iproniazide <sub>(0/0/0)</sub>
-      - isocarboxazid <sub>(0/0/0)</sub>
-      - levomilnacipran <sub>(0/0/0)</sub>
-      - lofepramine <sub>(0/0/0)</sub>
+      - [iproniazide <sub>(0/0/0)</sub>](drugs/drug_iproniazide/)
+      - [isocarboxazid <sub>(0/0/0)</sub>](drugs/drug_isocarboxazid/)
+      - [levomilnacipran <sub>(0/0/0)</sub>](drugs/drug_levomilnacipran/)
+      - [lofepramine <sub>(0/0/0)</sub>](drugs/drug_lofepramine/)
       - [maprotiline <sub>(0/0/0)</sub>](drugs/drug_maprotiline/)
       - [medifoxamine <sub>(0/0/0)</sub>](drugs/drug_medifoxamine/)
-      - melitracen <sub>(0/0/0)</sub>
+      - [melitracen <sub>(0/0/0)</sub>](drugs/drug_melitracen/)
       - [mianserin <sub>(1/0/0)</sub>](drugs/drug_mianserin/)
-      - milnacipran <sub>(0/0/0)</sub>
-      - minaprine <sub>(0/0/0)</sub>
+      - [milnacipran <sub>(0/0/0)</sub>](drugs/drug_milnacipran/)
+      - [minaprine <sub>(0/0/0)</sub>](drugs/drug_minaprine/)
       - [mirtazapine <sub>(0/0/0)</sub>](drugs/drug_mirtazapine/)
       - [moclobemide <sub>(1/0/0)</sub>](drugs/drug_moclobemide/)
-      - nefazodone <sub>(0/0/0)</sub>
-      - nialamide <sub>(0/0/0)</sub>
-      - nomifensine <sub>(0/0/0)</sub>
+      - [nefazodone <sub>(0/0/0)</sub>](drugs/drug_nefazodone/)
+      - [nialamide <sub>(0/0/0)</sub>](drugs/drug_nialamide/)
+      - [nomifensine <sub>(0/0/0)</sub>](drugs/drug_nomifensine/)
       - [nortriptyline <sub>(0/2/0)</sub>](drugs/drug_nortriptyline/)
-      - opipramol <sub>(0/0/0)</sub>
+      - [opipramol <sub>(0/0/0)</sub>](drugs/drug_opipramol/)
       - oxaflozane <sub>(0/0/0)</sub>
-      - oxitriptan <sub>(0/0/0)</sub>
+      - [oxitriptan <sub>(0/0/0)</sub>](drugs/drug_oxitriptan/)
       - [paroxetine <sub>(3/4/0)</sub>](drugs/drug_paroxetine/)
-      - phenelzine <sub>(0/0/0)</sub>
+      - [phenelzine <sub>(0/0/0)</sub>](drugs/drug_phenelzine/)
       - pivagabine <sub>(0/0/0)</sub>
       - [protriptyline <sub>(0/0/0)</sub>](drugs/drug_protriptyline/)
       - [quinupramine <sub>(0/0/0)</sub>](drugs/drug_quinupramine/)
-      - reboxetine <sub>(0/0/0)</sub>
+      - [reboxetine <sub>(0/0/0)</sub>](drugs/drug_reboxetine/)
       - [sertraline <sub>(2/4/0)</sub>](drugs/drug_sertraline/)
       - [tianeptine <sub>(2/0/0)</sub>](drugs/drug_tianeptine/)
       - [toloxatone <sub>(1/0/0)</sub>](drugs/drug_toloxatone/)
-      - tranylcypromine <sub>(0/0/0)</sub>
+      - [tranylcypromine <sub>(0/0/0)</sub>](drugs/drug_tranylcypromine/)
       - [trazodone <sub>(2/0/0)</sub>](drugs/drug_trazodone/)
-      - trimipramine <sub>(0/0/0)</sub>
+      - [trimipramine <sub>(0/0/0)</sub>](drugs/drug_trimipramine/)
       - [tryptophan <sub>(0/1/0)</sub>](drugs/drug_tryptophan/)
       - [venlafaxine <sub>(4/0/0)</sub>](drugs/drug_venlafaxine/)
-      - vilazodone <sub>(0/0/0)</sub>
+      - [vilazodone <sub>(0/0/0)</sub>](drugs/drug_vilazodone/)
       - [viloxazine <sub>(0/0/0)</sub>](drugs/drug_viloxazine/)
       - [vortioxetine <sub>(1/5/0)</sub>](drugs/drug_vortioxetine/)
-      - zimeldine <sub>(0/0/0)</sub>
-      - zuranolone <sub>(0/0/0)</sub>
+      - [zimeldine <sub>(0/0/0)</sub>](drugs/drug_zimeldine/)
+      - [zuranolone <sub>(0/0/0)</sub>](drugs/drug_zuranolone/)
     - [N06B Psychostimulants, Agents Used For Adhd And Nootropics](atc/N06B.md)
       - acetylcarnitine <sub>(0/0/0)</sub>
       - adrafinil <sub>(0/0/0)</sub>
@@ -3926,6 +3942,7 @@
       - amitriptyline and psycholeptics <sub>(0/0/0)</sub>
       - [fluoxetine <sub>(0/3/0)</sub>](drugs/drug_fluoxetine/)
       - fluoxetine and psycholeptics <sub>(0/0/0)</sub>
+      - [melitracen <sub>(0/0/0)</sub>](drugs/drug_melitracen/)
       - melitracen and psycholeptics <sub>(0/0/0)</sub>
   - N07 Other Nervous System Drugs
     - [N07B Drugs Used In Addictive Disorders](atc/N07B.md)
@@ -4129,7 +4146,7 @@
       - indacaterol and mometasone <sub>(0/0/0)</sub>
       - indacaterol glycopyrronium bromide and mometasone <sub>(0/0/0)</sub>
       - isoetarine <sub>(0/0/0)</sub>
-      - [isoprenaline <sub>(0/29/0)</sub>](drugs/drug_isoprenaline/)
+      - [isoprenaline <sub>(0/28/0)</sub>](drugs/drug_isoprenaline/)
       - isoprenaline and other drugs for obstructive airway diseases <sub>(0/0/0)</sub>
       - olodaterol <sub>(0/0/0)</sub>
       - olodaterol and tiotropium bromide <sub>(0/0/0)</sub>
@@ -4139,7 +4156,7 @@
       - reproterol <sub>(0/0/0)</sub>
       - reproterol and sodium cromoglicate <sub>(0/0/0)</sub>
       - rimiterol <sub>(0/0/0)</sub>
-      - [salbutamol <sub>(3/13/0)</sub>](drugs/drug_salbutamol/)
+      - [salbutamol <sub>(2/12/0)</sub>](drugs/drug_salbutamol/)
       - salbutamol and beclometasone <sub>(0/0/0)</sub>
       - salbutamol and budesonide <sub>(0/0/0)</sub>
       - salbutamol and ipratropium bromide <sub>(0/0/0)</sub>
@@ -4177,11 +4194,11 @@
       - bambuterol <sub>(0/0/0)</sub>
       - clenbuterol and ambroxol <sub>(0/0/0)</sub>
       - [ephedrine <sub>(1/2/0)</sub>](drugs/drug_ephedrine/)
-      - [isoprenaline <sub>(0/29/0)</sub>](drugs/drug_isoprenaline/)
+      - [isoprenaline <sub>(0/28/0)</sub>](drugs/drug_isoprenaline/)
       - isoprenaline combinations <sub>(0/0/0)</sub>
       - methoxyphenamine <sub>(0/0/0)</sub>
       - orciprenaline combinations <sub>(0/0/0)</sub>
-      - [salbutamol <sub>(3/13/0)</sub>](drugs/drug_salbutamol/)
+      - [salbutamol <sub>(2/12/0)</sub>](drugs/drug_salbutamol/)
       - terbutaline combinations <sub>(0/0/0)</sub>
     - [R03D Other Systemic Drugs For Obstructive Airway Diseases](atc/R03D.md)
       - acefylline <sub>(0/0/0)</sub>
@@ -4331,14 +4348,14 @@
       - [chloramphenicol <sub>(1/0/0)</sub>](drugs/drug_chloramphenicol/)
       - [chlorhexidine <sub>(0/4/0)</sub>](drugs/drug_chlorhexidine/)
       - [chlortetracycline <sub>(1/0/0)</sub>](drugs/drug_chlortetracycline/)
-      - [ciprofloxacin <sub>(18/15/1)</sub>](drugs/drug_ciprofloxacin/)
+      - [ciprofloxacin <sub>(16/15/1)</sub>](drugs/drug_ciprofloxacin/)
       - combinations of different antibiotics <sub>(0/0/0)</sub>
       - [dibekacin <sub>(0/0/0)</sub>](drugs/drug_dibekacin/)
       - dihydrostreptomycin <sub>(0/0/0)</sub>
       - fomivirsen <sub>(0/0/0)</sub>
       - [gentamicin <sub>(2/0/0)</sub>](drugs/drug_gentamicin/)
       - interferon <sub>(0/0/0)</sub>
-      - [kanamycin <sub>(3/6/0)</sub>](drugs/drug_kanamycin/)
+      - [kanamycin <sub>(3/5/0)</sub>](drugs/drug_kanamycin/)
       - [levofloxacin <sub>(2/0/0)</sub>](drugs/drug_levofloxacin/)
       - lotilaner <sub>(0/0/0)</sub>
       - mercury compounds <sub>(0/0/0)</sub>
@@ -4368,7 +4385,7 @@
       - betamethasone and mydriatics <sub>(0/0/0)</sub>
       - bromfenac <sub>(0/0/0)</sub>
       - [dexamethasone <sub>(2/5/0)</sub>](drugs/drug_dexamethasone/)
-      - [diclofenac <sub>(2/15/3)</sub>](drugs/drug_diclofenac/)
+      - [diclofenac <sub>(1/25/3)</sub>](drugs/drug_diclofenac/)
       - fluorometholone and mydriatics <sub>(0/0/0)</sub>
       - [flurbiprofen <sub>(1/0/0)</sub>](drugs/drug_flurbiprofen/)
       - formocortal <sub>(0/0/0)</sub>
@@ -4390,7 +4407,7 @@
       - clobetasone and antiinfectives <sub>(0/0/0)</sub>
       - [dexamethasone <sub>(2/5/0)</sub>](drugs/drug_dexamethasone/)
       - dexamethasone and antiinfectives <sub>(0/0/0)</sub>
-      - [diclofenac <sub>(2/15/3)</sub>](drugs/drug_diclofenac/)
+      - [diclofenac <sub>(1/25/3)</sub>](drugs/drug_diclofenac/)
       - diclofenac and antiinfectives <sub>(0/0/0)</sub>
       - fludrocortisone and antiinfectives <sub>(0/0/0)</sub>
       - fluocinolone acetonide and antiinfectives <sub>(0/0/0)</sub>
@@ -4506,7 +4523,7 @@
       - boric acid <sub>(0/0/0)</sub>
       - [chloramphenicol <sub>(1/0/0)</sub>](drugs/drug_chloramphenicol/)
       - [chlorhexidine <sub>(0/4/0)</sub>](drugs/drug_chlorhexidine/)
-      - [ciprofloxacin <sub>(18/15/1)</sub>](drugs/drug_ciprofloxacin/)
+      - [ciprofloxacin <sub>(16/15/1)</sub>](drugs/drug_ciprofloxacin/)
       - [gentamicin <sub>(2/0/0)</sub>](drugs/drug_gentamicin/)
       - [hydrogen peroxide <sub>(0/37/0)</sub>](drugs/drug_hydrogen_peroxide/)
       - [miconazole <sub>(0/0/0)</sub>](drugs/drug_miconazole/)
@@ -4536,7 +4553,7 @@
     - [S03A Antiinfectives](atc/S03A.md)
       - [chloramphenicol <sub>(1/0/0)</sub>](drugs/drug_chloramphenicol/)
       - [chlorhexidine <sub>(0/4/0)</sub>](drugs/drug_chlorhexidine/)
-      - [ciprofloxacin <sub>(18/15/1)</sub>](drugs/drug_ciprofloxacin/)
+      - [ciprofloxacin <sub>(16/15/1)</sub>](drugs/drug_ciprofloxacin/)
       - [gentamicin <sub>(2/0/0)</sub>](drugs/drug_gentamicin/)
       - [neomycin <sub>(0/1/0)</sub>](drugs/drug_neomycin/)
       - [polymyxin B <sub>(3/6/0)</sub>](drugs/drug_polymyxin_b/)
@@ -4670,5 +4687,21 @@
     - [V06D Other Nutrients](atc/V06D.md)
       - fructose <sub>(0/0/0)</sub>
       - [glucose <sub>(0/9/0)</sub>](drugs/drug_glucose/)
+  - V10 Therapeutic Radiopharmaceuticals
+    - [V10B Pain Palliation (Bone Seeking Agents)](atc/V10B.md)
+      - rhenium 186re etidronic acid <sub>(0/0/0)</sub>
+      - [samarium (153Sm) lexidronam <sub>(0/0/0)</sub>](drugs/drug_samarium_153sm_lexidronam/)
+      - [strontium (89Sr) chloride <sub>(0/0/0)</sub>](drugs/drug_strontium_89sr_chloride/)
+    - [V10X Other Therapeutic Radiopharmaceuticals](atc/V10X.md)
+      - [ibritumomab tiuxetan <sub>(0/0/0)</sub>](drugs/drug_ibritumomab_tiuxetan/)
+      - [ibritumomab tiuxetan (90Y) <sub>(0/0/0)</sub>](drugs/drug_ibritumomab_tiuxetan_90y/)
+      - iodine 131i apamistamab <sub>(0/0/0)</sub>
+      - [iodine (131I) omburtamab <sub>(0/0/0)</sub>](drugs/drug_iodine_131i_omburtamab/)
+      - [lutetium (177Lu) oxodotreotide <sub>(2/0/0)</sub>](drugs/drug_lutetium_177lu_oxodotreotide/)
+      - [lutetium (177Lu) vipivotide tetraxetan <sub>(1/0/0)</sub>](drugs/drug_lutetium_177lu_vipivotide_tetraxetan/)
+      - [radium (223Ra) dichloride <sub>(0/0/0)</sub>](drugs/drug_radium_223ra_dichloride/)
+      - sodium phosphate 32p <sub>(0/0/0)</sub>
+      - tositumomab <sub>(0/0/0)</sub>
+      - tositumomab iodine 131i tositumomab <sub>(0/0/0)</sub>
 
 <!-- AUTOGEN:drugs END -->

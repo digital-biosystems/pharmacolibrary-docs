@@ -15,9 +15,10 @@
 
 ### Reviewer guidance
 
+**Why:** C5 dimensioned parameter(s) without a unit: Q17, Q22, Q88 — no SI value to build from.
 **Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (90 vs not captured) and 10 more field(s) — a structural parameter, so the record is disputed.
-
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+**How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
+<sub>owner: **curator**</sub>
 
 ## Citation
 Lainesse C; Frank D; Meucci V; Intorre L; Soldani G; Doucet M et al. (2006). Journal of veterinary pharmacology and therapeutics 29
