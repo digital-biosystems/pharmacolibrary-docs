@@ -1,7 +1,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sertraline_Castillo2024_reference&quot;,&quot;label&quot;:&quot;Castillo_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Castillo2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Xia2025_reference&quot;,&quot;label&quot;:&quot;Xia_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Xia2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Cooper2015_reference&quot;,&quot;label&quot;:&quot;Cooper_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Cooper2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Monfort2024_reference&quot;,&quot;label&quot;:&quot;Monfort_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Monfort2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Poweleit2023_reference&quot;,&quot;label&quot;:&quot;Poweleit_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Poweleit2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# IL-6 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
+# IL-6 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -40,34 +40,14 @@ Romanelli MM; da Costa-Silva TA; Cunha-Junior E; Dias Ferreira D; Guerra JM; Gal
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.0 (0/15 fields) | 15 |
+| `gpt-oss:120b` | confirmed | 1.0 (15/15 fields) | none |
 
-<details><summary>15 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | sertraline | not captured | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | not captured | mismatch |
-| `gpt-oss:120b` | `effect_form` | unknown | not captured | mismatch |
-| `gpt-oss:120b` | `model_family` | unknown | not captured | mismatch |
-| `gpt-oss:120b` | `parameters[Q321]` | 0.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 4.2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 27.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 6.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 2.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 12.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 4.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 16.2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 3.1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 127.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | 40.9 | not captured | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this PD record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>

@@ -5,7 +5,7 @@
 
 # clomipramine — `Clomipramine_Lainesse2006_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,7 @@
 ### Reviewer guidance
 
 **Why:** C5 dimensioned parameter(s) without a unit: Q17, Q22, Q88 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (90 vs not captured) and 10 more field(s) — a structural parameter, so the record is disputed.
+**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (90 vs not captured) and 10 more field(s) — not a structural parameter.
 **How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
 <sub>owner: **curator**</sub>
 
@@ -70,12 +70,12 @@ Lainesse C; Frank D; Meucci V; Intorre L; Soldani G; Doucet M et al. (2006). Jou
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.267 (4/15 fields) | 11 |
+| `gpt-oss:120b` | partly confirmed | 0.267 (4/15 fields) | 11 |
 
 <details><summary>11 field(s) a reader read differently</summary>
 

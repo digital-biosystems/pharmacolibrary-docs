@@ -27,8 +27,8 @@ _not available_
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **ABCB1** | `Q27` · CL/F | transport | [Gómez-Silva_2019](drugs/drug_amfepramone/pgx_G_mez_Silva_2019_ABCB1_Q27.md) | Gómez-Silva M et al., Pharmacogenetics of amfepramone in heal…, Scientific reports (2019) | [10.1038/s41598-019-54436-z](https://doi.org/10.1038/s41598-019-54436-z) |
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP3A4** | `Q27` · CL/F | metabolism | [Gómez-Silva_2019](drugs/drug_amfepramone/pgx_G_mez_Silva_2019_CYP3A4_Q27.md) | Gómez-Silva M et al., Pharmacogenetics of amfepramone in heal…, Scientific reports (2019) | [10.1038/s41598-019-54436-z](https://doi.org/10.1038/s41598-019-54436-z) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **ABCB1** | `Q27` · CL/F | transport | [Gómez-Silva_2019](drugs/drug_amfepramone/pgx_G_mez_Silva_2019_ABCB1_Q27.md) | Gómez-Silva M et al., Pharmacogenetics of amfepramone in heal…, Scientific reports (2019) | [10.1038/s41598-019-54436-z](https://doi.org/10.1038/s41598-019-54436-z) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CYP3A4** | `Q27` · CL/F | metabolism | [Gómez-Silva_2019](drugs/drug_amfepramone/pgx_G_mez_Silva_2019_CYP3A4_Q27.md) | Gómez-Silva M et al., Pharmacogenetics of amfepramone in heal…, Scientific reports (2019) | [10.1038/s41598-019-54436-z](https://doi.org/10.1038/s41598-019-54436-z) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>

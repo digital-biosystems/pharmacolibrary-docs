@@ -1,7 +1,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumSalicylate_Mathurkar2018_reference&quot;,&quot;label&quot;:&quot;Mathurkar_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_salicylate/SodiumSalicylate_Mathurkar2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumSalicylate_Lowenthal1974_four_normal_subjects&quot;,&quot;label&quot;:&quot;Lowenthal_1974_four_normal_subjects&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_four_normal_subjects.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumSalicylate_Lowenthal1974_six_anephric_patients&quot;,&quot;label&quot;:&quot;Lowenthal_1974_six_anephric_patients&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_six_anephric_patients.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# name — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -60,6 +60,64 @@ Cao Y; Dubois DC; Sun H; Almon RR; Jusko WJ et al. (2011). The Journal of pharma
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
+
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | secondary_empty | 0.0 (0/38 fields) | 38 |
+
+<details><summary>38 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `driver_compound` | salicylate | not captured | mismatch |
+| `gpt-oss:120b` | `effect_direction` | inhibition | not captured | mismatch |
+| `gpt-oss:120b` | `effect_form` | unknown | not captured | mismatch |
+| `gpt-oss:120b` | `model_family` | disease_progression | not captured | mismatch |
+| `gpt-oss:120b` | `parameters[Q312]` | 37.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | 5.68 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | 49.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | 7.97 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | 25.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q327]` | 223 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q327]` | 0.527 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q327]` | 55.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q327]` | 332 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q328]` | 1.34 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q328]` | 0.87 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q328]` | 0.451 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q328]` | 70.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q331]` | 8.56 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q331]` | 4.76 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q331]` | 12.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q331]` | 398 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q358]` | 4.73 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q358]` | 17.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q358]` | 793 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q358]` | 0.429 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q358]` | 11.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q358]` | 71.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q358]` | 32.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q358]` | 19.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q358]` | 253 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q358]` | 1.49 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q358]` | 12.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q358]` | 390 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q358]` | 34.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q358]` | 4.62 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q358]` | 793 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q359]` | 0.0116 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | 0.136 | not captured | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
 </details>
 
 

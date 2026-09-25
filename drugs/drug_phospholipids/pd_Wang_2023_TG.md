@@ -1,7 +1,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phospholipids_Hummel1975_non_pregnant_female_rats&quot;,&quot;label&quot;:&quot;Hummel_1975_non pregnant female rats&quot;,&quot;href&quot;:&quot;drugs/drug_phospholipids/Phospholipids_Hummel1975_non_pregnant_female_rats.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# triglyceride — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# triglyceride — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.088). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,6 +21,57 @@ Wang T; Zhang X; Zhou N; Shen Y; Li B; Chen BE; et al. et al. (2023). Journal of
 
 ## Parameters
 _No resolved parameters._
+
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.088 (3/34 fields) | 31 |
+
+<details><summary>31 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `driver_compound` | DHA + EPA | DHA+EPA | mismatch |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | 7.64 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | 51 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | 2.92 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | 1.93 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | -52.75 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | 3.02 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | 24 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | 4.98 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | -3.52 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | -25.54 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | 55 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | -19.21 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | 87 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | -23.05 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | -27.36 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | -8.24 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 1.06 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | -0.83 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | -1.90 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 5.00 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 3.56 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | -7.61 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 3.48 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 2.43 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | -4.13 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 4.17 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 4.01 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q54]` | not captured | -11.47 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q54]` | not captured | -5.83 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q54]` | not captured | 8.20 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

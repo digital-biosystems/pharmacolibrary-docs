@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Okada_2013](drugs/drug_maprotiline/pd_Okada_2013_I_K_ACh.md) | Okada M et al., Inhibitory effects of psychotropic drug…, The Journal of veterinary m… (2013) | [10.1292/jvms.12-0511](https://doi.org/10.1292/jvms.12-0511) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.846). The first reading is what the record holds.">cross-check: disputed</span> | [Okada_2013](drugs/drug_maprotiline/pd_Okada_2013_I_K_ACh.md) | Okada M et al., Inhibitory effects of psychotropic drug…, The Journal of veterinary m… (2013) | [10.1292/jvms.12-0511](https://doi.org/10.1292/jvms.12-0511) |
 
 ## ADME sites
 

@@ -1,7 +1,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sertraline_Castillo2024_reference&quot;,&quot;label&quot;:&quot;Castillo_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Castillo2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Xia2025_reference&quot;,&quot;label&quot;:&quot;Xia_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Xia2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Cooper2015_reference&quot;,&quot;label&quot;:&quot;Cooper_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Cooper2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Monfort2024_reference&quot;,&quot;label&quot;:&quot;Monfort_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Monfort2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Poweleit2023_reference&quot;,&quot;label&quot;:&quot;Poweleit_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Poweleit2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# parasite burden — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
+# parasite burden — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -45,16 +45,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.0 (0/15 fields) | 15 |
+| `gpt-oss:120b` | not confirmed | 0.154 (4/26 fields) | 22 |
 
-<details><summary>15 field(s) a reader read differently</summary>
+<details><summary>22 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | sertraline | not captured | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | not captured | mismatch |
-| `gpt-oss:120b` | `effect_form` | unknown | not captured | mismatch |
-| `gpt-oss:120b` | `model_family` | unknown | not captured | mismatch |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 0.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 4.2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 27.4 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 6.4 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 2.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 12.0 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 4.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 16.2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 3.1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 127.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 40.9 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | 0.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | 4.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | 27.4 | not captured | only_one_extracted |

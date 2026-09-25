@@ -5,7 +5,7 @@
 
 # moclobemide — `Moclobemide_Raaflaub1984_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,7 @@
 ### Reviewer guidance
 
 **Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default.
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (44 vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
+**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (44 vs not captured) and 5 more field(s) — not a structural parameter.
 **How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
 <sub>owner: **curator**</sub>
 
@@ -65,20 +65,22 @@ Raaflaub J; Haefelfinger P; Trautmann KH et al. (1984). Arzneimittel-Forschung 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss:120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.bioavailability.theta` | 44 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[oral bioavailability]` | 44 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[relatively high systemic clearance]` | 63.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t 1/2 beta]` | 1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t lag [h]]` | 0.202 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[tmax-values]` | 1 | not captured | only_one_extracted |
 
 </details>

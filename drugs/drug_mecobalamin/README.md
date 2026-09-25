@@ -21,8 +21,8 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mezcord_2026](drugs/drug_mecobalamin/pd_Mezcord_2026_bacterial_viable_count.md) | Mezcord V et al., Vitamin B12 promotes cefiderocol resist…, mBio (2026) | [10.1128/mbio.03760-25](https://doi.org/10.1128/mbio.03760-25) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mezcord_2026](drugs/drug_mecobalamin/pd_Mezcord_2026_cefiderocol_MIC.md) | Mezcord V et al., Vitamin B12 promotes cefiderocol resist…, mBio (2026) | [10.1128/mbio.03760-25](https://doi.org/10.1128/mbio.03760-25) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Mezcord_2026](drugs/drug_mecobalamin/pd_Mezcord_2026_bacterial_viable_count.md) | Mezcord V et al., Vitamin B12 promotes cefiderocol resist…, mBio (2026) | [10.1128/mbio.03760-25](https://doi.org/10.1128/mbio.03760-25) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Mezcord_2026](drugs/drug_mecobalamin/pd_Mezcord_2026_cefiderocol_MIC.md) | Mezcord V et al., Vitamin B12 promotes cefiderocol resist…, mBio (2026) | [10.1128/mbio.03760-25](https://doi.org/10.1128/mbio.03760-25) |
 
 ## ADME sites
 

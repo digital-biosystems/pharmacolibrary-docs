@@ -5,7 +5,7 @@
 
 # desipramine — `Desipramine_DeVane1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.611). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,7 @@
 ### Reviewer guidance
 
 **Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[[-tg/kg free base] 577]` (not captured vs 563) and 6 more field(s) — a structural parameter, so the record is disputed.
+**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[auc [h -ng/ml] 243]` (391 vs not captured) and 4 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
 <sub>owner: **scholar**</sub>
 
@@ -70,18 +70,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.611 (11/18 fields) | 7 |
+| `gpt-oss:120b` | not confirmed | 0.688 (11/16 fields) | 5 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[[-tg/kg free base] 577]` | not captured | 563 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc [h -ng/ml] 243]` | 391 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[c1b [1/kg/h]].parameter_id` | Q22 | Q23 | mismatch |
 | `gpt-oss:120b` | `parameters[f *a]` | not captured | 0.40 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka [h -1]].parameter_id` | Q95 | Q49 | mismatch |
-| `gpt-oss:120b` | `parameters[t'afl [h]].parameter_id` | Q57 | Q56 | mismatch |
+| `gpt-oss:120b` | `parameters[t'afl [h]].parameter_id` | Q57 | Q83 | mismatch |
 | `gpt-oss:120b` | `parameters[vd- [1/kg]].parameter_id` | Q352 | Q61 | mismatch |
 
 </details>

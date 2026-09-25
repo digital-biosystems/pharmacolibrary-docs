@@ -32,7 +32,7 @@ Dextromethorphan was granted FDA approval before 3 December 1957.[A215412,L14997
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Bespalov_2025](drugs/drug_dextromethorphan/pd_Bespalov_2025_NR1_NR2D_receptor_blockade.md) | Bespalov A et al., Deuteration may reduce the efficacy of…, Alzheimer's research & ther… (2025) | [10.1186/s13195-025-01780-0](https://doi.org/10.1186/s13195-025-01780-0) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Bespalov_2025](drugs/drug_dextromethorphan/pd_Bespalov_2025_NR1_NR2D_receptor_blockade.md) | Bespalov A et al., Deuteration may reduce the efficacy of…, Alzheimer's research & ther… (2025) | [10.1186/s13195-025-01780-0](https://doi.org/10.1186/s13195-025-01780-0) |
 
 ## Pharmacogenomics (PGx)
 

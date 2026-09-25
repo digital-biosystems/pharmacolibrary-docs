@@ -37,11 +37,11 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Goeyvaerts_2026](drugs/drug_ergocalciferol/pd_Goeyvaerts_2026_DENV_3_RNA.md) | Goeyvaerts N et al., Viral Dynamic Model-Informed Dose Selec…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70439](https://doi.org/10.1002/cpt.70439) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Li_2026](drugs/drug_ergocalciferol/pd_Li_2026_Grade_2_peripheral_neuropathy.md) | Li (2026) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Li_2026](drugs/drug_ergocalciferol/pd_Li_2026_Tumor_size.md) | Li (2026) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Ooi_2026](drugs/drug_ergocalciferol/pd_Ooi_2026_ALP.md) | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Ooi_2026](drugs/drug_ergocalciferol/pd_Ooi_2026_TB.md) | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Goeyvaerts_2026](drugs/drug_ergocalciferol/pd_Goeyvaerts_2026_DENV_3_RNA.md) | Goeyvaerts N et al., Viral Dynamic Model-Informed Dose Selec…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70439](https://doi.org/10.1002/cpt.70439) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Li_2026](drugs/drug_ergocalciferol/pd_Li_2026_Grade_2_peripheral_neuropathy.md) | Li (2026) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.077). The first reading is what the record holds.">cross-check: disputed</span> | [Li_2026](drugs/drug_ergocalciferol/pd_Li_2026_Tumor_size.md) | Li (2026) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Ooi_2026](drugs/drug_ergocalciferol/pd_Ooi_2026_ALP.md) | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Ooi_2026](drugs/drug_ergocalciferol/pd_Ooi_2026_TB.md) | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
 
 ## ADME sites
 

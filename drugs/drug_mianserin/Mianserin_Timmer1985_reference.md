@@ -5,7 +5,7 @@
 
 # mianserin — `Mianserin_Timmer1985_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,7 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (mianserin vs mianserin HCl) and 7 more field(s) — a structural parameter, so the record is disputed.
+**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (22 vs not captured) and 6 more field(s) — not a structural parameter.
 **How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
 <sub>owner: **curator**</sub>
 
@@ -57,14 +57,14 @@ Timmer CJ; Pourbaix S; Desager JP; Sclavons M; Harvengt C et al. (1985). Europea
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.273 (3/11 fields) | 8 |
+| `gpt-oss:120b` | partly confirmed | 0.364 (4/11 fields) | 7 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -75,7 +75,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[mean absorption half-life]` | 0.43 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean plasma clearance of mianserin]` | 19 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[steady-state volume of distribution]` | 242 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | mianserin | mianserin HCl | mismatch |
 
 </details>
 

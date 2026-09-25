@@ -27,15 +27,15 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Erenburg_2024](drugs/drug_dexfenfluramine/pd_Erenburg_2024_unknown.md) | Erenburg N et al., Stereoselective Analysis of the Antisei…, International journal of mo… (2024) | [10.3390/ijms25052522](https://doi.org/10.3390/ijms25052522) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Sheeni_2025](drugs/drug_dexfenfluramine/pd_Sheeni_2025_MES.md) | Sheeni Y et al., Enantioselective comparative analysis o…, Epilepsia (2025) | [10.1111/epi.18542](https://doi.org/10.1111/epi.18542) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Sheeni_2025](drugs/drug_dexfenfluramine/pd_Sheeni_2025_MMI.md) | Sheeni Y et al., Enantioselective comparative analysis o…, Epilepsia (2025) | [10.1111/epi.18542](https://doi.org/10.1111/epi.18542) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Erenburg_2024](drugs/drug_dexfenfluramine/pd_Erenburg_2024_unknown.md) | Erenburg N et al., Stereoselective Analysis of the Antisei…, International journal of mo… (2024) | [10.3390/ijms25052522](https://doi.org/10.3390/ijms25052522) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Sheeni_2025](drugs/drug_dexfenfluramine/pd_Sheeni_2025_MES.md) | Sheeni Y et al., Enantioselective comparative analysis o…, Epilepsia (2025) | [10.1111/epi.18542](https://doi.org/10.1111/epi.18542) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.211). The first reading is what the record holds.">cross-check: disputed</span> | [Sheeni_2025](drugs/drug_dexfenfluramine/pd_Sheeni_2025_MMI.md) | Sheeni Y et al., Enantioselective comparative analysis o…, Epilepsia (2025) | [10.1111/epi.18542](https://doi.org/10.1111/epi.18542) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Gross_1996](drugs/drug_dexfenfluramine/pgx_Gross_1996_CYP2D6_Q27.md) | Gross AS et al., The influence of the sparteine/debrisoq…, British journal of clinical… (1996) | [10.1046/j.1365-2125.1996.03178.x](https://doi.org/10.1046/j.1365-2125.1996.03178.x) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Gross_1996](drugs/drug_dexfenfluramine/pgx_Gross_1996_CYP2D6_Q27.md) | Gross AS et al., The influence of the sparteine/debrisoq…, British journal of clinical… (1996) | [10.1046/j.1365-2125.1996.03178.x](https://doi.org/10.1046/j.1365-2125.1996.03178.x) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>

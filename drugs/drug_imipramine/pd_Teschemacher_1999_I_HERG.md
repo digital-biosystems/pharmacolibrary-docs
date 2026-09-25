@@ -34,7 +34,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | imipramine | imipramine and amitriptyline | mismatch |
+| `gpt-oss:120b` | `driver_compound` | imipramine | imipramine, amitriptyline | mismatch |
 
 </details>
 

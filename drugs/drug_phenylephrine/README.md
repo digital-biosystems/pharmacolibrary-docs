@@ -32,17 +32,17 @@ Phenylephrine was granted FDA approval in 1939.[L9413]
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hu_2025](drugs/drug_phenylephrine/pd_Hu_2025_human_prostate_smooth_muscle_contraction.md) | Hu S et al., Antagonism of prostate α, The Journal of pharmacology… (2025) | [10.1016/j.jpet.2025.103603](https://doi.org/10.1016/j.jpet.2025.103603) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Panta_2019](drugs/drug_phenylephrine/pd_Panta_2019_vascular_tone.md) | Panta CR et al., Sphingosine-1-Phosphate Enhances α, International journal of mo… (2019) | [10.3390/ijms20246361](https://doi.org/10.3390/ijms20246361) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Choi_2024](drugs/drug_phenylephrine/pd_Choi_2024_maximum_normalized_constriction.md) | Choi R et al., Optimization of resting tension for wir…, Physiological reports (2024) | [10.14814/phy2.15911](https://doi.org/10.14814/phy2.15911) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Choi_2024](drugs/drug_phenylephrine/pd_Choi_2024_maximum_normalized_relaxation.md) | Choi R et al., Optimization of resting tension for wir…, Physiological reports (2024) | [10.14814/phy2.15911](https://doi.org/10.14814/phy2.15911) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Hu_2025](drugs/drug_phenylephrine/pd_Hu_2025_human_prostate_smooth_muscle_contraction.md) | Hu S et al., Antagonism of prostate α, The Journal of pharmacology… (2025) | [10.1016/j.jpet.2025.103603](https://doi.org/10.1016/j.jpet.2025.103603) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Panta_2019](drugs/drug_phenylephrine/pd_Panta_2019_vascular_tone.md) | Panta CR et al., Sphingosine-1-Phosphate Enhances α, International journal of mo… (2019) | [10.3390/ijms20246361](https://doi.org/10.3390/ijms20246361) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Choi_2024](drugs/drug_phenylephrine/pd_Choi_2024_maximum_normalized_constriction.md) | Choi R et al., Optimization of resting tension for wir…, Physiological reports (2024) | [10.14814/phy2.15911](https://doi.org/10.14814/phy2.15911) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Choi_2024](drugs/drug_phenylephrine/pd_Choi_2024_maximum_normalized_relaxation.md) | Choi R et al., Optimization of resting tension for wir…, Physiological reports (2024) | [10.14814/phy2.15911](https://doi.org/10.14814/phy2.15911) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **ADRA1A** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Zhang_2019](drugs/drug_phenylephrine/pgx_Zhang_2019_ADRA1A_Q100.md) | Zhang (2019) | — |
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **EDN2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Zhang_2019](drugs/drug_phenylephrine/pgx_Zhang_2019_EDN2_Q100.md) | Zhang (2019) | — |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **ADRA1A** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Zhang_2019](drugs/drug_phenylephrine/pgx_Zhang_2019_ADRA1A_Q100.md) | Zhang (2019) | — |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **EDN2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Zhang_2019](drugs/drug_phenylephrine/pgx_Zhang_2019_EDN2_Q100.md) | Zhang (2019) | — |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>

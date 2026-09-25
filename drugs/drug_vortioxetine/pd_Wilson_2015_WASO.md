@@ -1,7 +1,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vortioxetine_Areberg2014v2_reference&quot;,&quot;label&quot;:&quot;Areberg_2014_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vortioxetine_Frederiksen2021v2_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a&quot;,&quot;label&quot;:&quot;Miao_2019_2_pooled_healthy_subjects_22_a&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vortioxetine_Miao2019v2_pooled_mdd_gad_patients_23_b&quot;,&quot;label&quot;:&quot;Miao_2019_2_pooled_mdd_gad_patients_23_b&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Miao2019v2_pooled_mdd_gad_patients_23_b.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vortioxetine_Naik2016v2_reference&quot;,&quot;label&quot;:&quot;Naik_2016_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Naik2016v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# wake after sleep onset — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span>
+# wake after sleep onset — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -38,13 +38,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.778 (7/9 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.667 (6/9 fields) | 3 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | vortioxetine | vortioxetine and paroxetine | mismatch |
+| `gpt-oss:120b` | `driver_compound` | vortioxetine | vortioxetine/paroxetine | mismatch |
+| `gpt-oss:120b` | `effect_form` | additive | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[Q315]` | not captured | 18 | only_one_extracted |
 
 </details>

@@ -45,7 +45,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | plasma asparaginase activity | plasma asparaginase activity (PAA) | mismatch |
+| `gpt-oss:120b` | `driver_compound` | plasma asparaginase activity | asparaginase activity (PAA) | mismatch |
 | `gpt-oss:120b` | `effect_form` | unknown | additive | mismatch |
 | `gpt-oss:120b` | `model_family` | linear | disease_progression | mismatch |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 70.0 | only_one_extracted |

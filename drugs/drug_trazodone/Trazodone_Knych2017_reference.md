@@ -5,7 +5,7 @@
 
 # trazodone — `Trazodone_Knych2017_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,7 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[elimination half-life]` (8.58 vs not captured) and 2 more field(s) — not a structural parameter.
+**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[elimination half-life]` (8.58 vs not captured) and 3 more field(s) — not a structural parameter.
 **How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
 <sub>owner: **curator**</sub>
 
@@ -62,15 +62,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[elimination half-life]` | 8.58 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total clearance of trazodone]` | 6.85 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of distribution at steady state]` | 1.06 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution]` | 0.84 | not captured | only_one_extracted |
 
 </details>
 

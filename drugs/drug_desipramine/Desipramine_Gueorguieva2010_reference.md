@@ -5,7 +5,7 @@
 
 # desipramine — `Desipramine_Gueorguieva2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,7 @@
 ### Reviewer guidance
 
 **Why:** T1_t_half_terminal; T1_t_half_beta
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
+**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl].value` (16 vs 73) and 4 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Open the paper's reported table and confirm the target value and its units.
 <sub>owner: **scholar**</sub>
 
@@ -56,14 +56,24 @@ Gueorguieva I; Jackson K; Wrighton SA; Sinha VP; Chien JY et al. (2010). British
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (9/9 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[cl].value` | 16 | 73 | mismatch |
+| `gpt-oss:120b` | `parameters[plasma within-subject variability]` | 7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q].value` | 13 | 58 | mismatch |
+| `gpt-oss:120b` | `parameters[v1].value` | 22 | 58 | mismatch |
+| `gpt-oss:120b` | `parameters[v2].value` | 13 | 1050 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

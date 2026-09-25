@@ -5,7 +5,7 @@
 
 # escitalopram — `Escitalopram_Liu2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,7 @@
 ### Reviewer guidance
 
 **Why:** T6_deviations
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[θ im]` (not captured vs 0.74) — a structural parameter, so the record is disputed.
+**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl/f].value` (14.7 vs 16.3) and 4 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
 <sub>owner: **engineer**</sub>
 
@@ -75,17 +75,21 @@ Liu S; Xiao T; Huang S; Li X; Kong W; Yang Y; et al. et al. (2022). Frontiers in
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.857 (6/7 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[θ im]` | not captured | 0.74 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f].value` | 14.7 | 16.3 | mismatch |
+| `gpt-oss:120b` | `parameters[theta_q47_im]` | not captured | 0.847 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q49_pm]` | not captured | 0.479 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/f].value` | 581.9 | 815 | mismatch |
+| `gpt-oss:120b` | `parameters[θ age]` | not captured | 0.0077 | only_one_extracted |
 
 </details>
 

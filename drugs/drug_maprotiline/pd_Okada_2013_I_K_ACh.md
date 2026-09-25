@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
+# name — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.846). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -42,25 +42,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.0 (0/13 fields) | 13 |
+| `gpt-oss:120b` | not confirmed | 0.846 (11/13 fields) | 2 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | unknown | not captured | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | not captured | mismatch |
-| `gpt-oss:120b` | `effect_form` | unknown | not captured | mismatch |
-| `gpt-oss:120b` | `model_family` | unknown | not captured | mismatch |
-| `gpt-oss:120b` | `parameters[Q322]` | 0.03 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 0.22 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 1.81 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 0.53 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 0.06 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 2.69 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 2.66 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 42.3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 0.07 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `driver_compound` | unknown | psychotropic drug | mismatch |
+| `gpt-oss:120b` | `model_family` | unknown | sigmoid_emax | mismatch |
 
 </details>
 

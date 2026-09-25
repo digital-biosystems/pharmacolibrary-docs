@@ -27,8 +27,8 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bansal_2004](drugs/drug_tinidazole/pd_Bansal_2004_percentage_inhibition.md) | Bansal D et al., In vitro activity of antiamoebic drugs…, Annals of clinical microbio… (2004) | [10.1186/1476-0711-3-27](https://doi.org/10.1186/1476-0711-3-27) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Singh_2023](drugs/drug_tinidazole/pd_Singh_2023_percentage_inhibition_of_E_histolytica.md) | Singh A et al., Creep in nitroimidazole inhibitory conc…, Scientific reports (2023) | [10.1038/s41598-023-39382-1](https://doi.org/10.1038/s41598-023-39382-1) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Bansal_2004](drugs/drug_tinidazole/pd_Bansal_2004_percentage_inhibition.md) | Bansal D et al., In vitro activity of antiamoebic drugs…, Annals of clinical microbio… (2004) | [10.1186/1476-0711-3-27](https://doi.org/10.1186/1476-0711-3-27) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Singh_2023](drugs/drug_tinidazole/pd_Singh_2023_percentage_inhibition_of_E_histolytica.md) | Singh A et al., Creep in nitroimidazole inhibitory conc…, Scientific reports (2023) | [10.1038/s41598-023-39382-1](https://doi.org/10.1038/s41598-023-39382-1) |
 
 ## ADME sites
 

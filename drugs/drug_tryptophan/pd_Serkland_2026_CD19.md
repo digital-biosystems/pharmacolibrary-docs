@@ -61,18 +61,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `effect_form` | proportional | unknown | mismatch |
 | `gpt-oss:120b` | `model_family` | indirect_response_ii | indirect_response_i | mismatch |
 | `gpt-oss:120b` | `parameters[Q22]` | 0.234 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 0.0534 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 0.154 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | not captured | 0.138 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | not captured | 0.0882 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q314]` | not captured | 0.0534 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q314]` | not captured | 0.234 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 0.138 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 0.0882 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q314]` | not captured | 0.154 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q315]` | not captured | 0.0510 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q315]` | 2.28 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q316]` | 0.0510 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q317]` | not captured | 2.28 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q328]` | 1.70 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | not captured | 0.94 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q358]` | 0.154 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q47]` | not captured | 1.70 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q63]` | 0.138 | not captured | only_one_extracted |

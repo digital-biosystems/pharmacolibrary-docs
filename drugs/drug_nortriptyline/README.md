@@ -27,8 +27,8 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Shin_2017](drugs/drug_nortriptyline/pd_Shin_2017_Kv.md) | Shin SE et al., Nortriptyline, a tricyclic antidepressa…, The Korean journal of physi… (2017) | [10.4196/kjpp.2017.21.2.225](https://doi.org/10.4196/kjpp.2017.21.2.225) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Tylutki_2018](drugs/drug_nortriptyline/pd_Tylutki_2018_R_R_interval_length.md) | Tylutki (2018) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Shin_2017](drugs/drug_nortriptyline/pd_Shin_2017_Kv.md) | Shin SE et al., Nortriptyline, a tricyclic antidepressa…, The Korean journal of physi… (2017) | [10.4196/kjpp.2017.21.2.225](https://doi.org/10.4196/kjpp.2017.21.2.225) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tylutki_2018](drugs/drug_nortriptyline/pd_Tylutki_2018_R_R_interval_length.md) | Tylutki (2018) | — |
 
 ## Pharmacogenomics (PGx)
 

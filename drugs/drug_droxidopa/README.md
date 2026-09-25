@@ -29,7 +29,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kanodia_2021](drugs/drug_droxidopa/pd_Kanodia_2021_norepinephrine_transporter_occupancy.md) | Kanodia J et al., Pharmacokinetics of Ampreloxetine, a No…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00918-7](https://doi.org/10.1007/s40262-020-00918-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kanodia_2021](drugs/drug_droxidopa/pd_Kanodia_2021_norepinephrine_transporter_occupancy.md) | Kanodia J et al., Pharmacokinetics of Ampreloxetine, a No…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00918-7](https://doi.org/10.1007/s40262-020-00918-7) |
 
 ## ADME sites
 

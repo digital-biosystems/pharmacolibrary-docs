@@ -31,7 +31,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Douglas_2025](drugs/drug_sucralfate/pd_Douglas_2025_pain.md) | Douglas C et al., Mucositis Pain and Its Temporal Relatio…, Paediatric anaesthesia (2025) | [10.1111/pan.15063](https://doi.org/10.1111/pan.15063) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.129). The first reading is what the record holds.">cross-check: disputed</span> | [Douglas_2025](drugs/drug_sucralfate/pd_Douglas_2025_pain.md) | Douglas C et al., Mucositis Pain and Its Temporal Relatio…, Paediatric anaesthesia (2025) | [10.1111/pan.15063](https://doi.org/10.1111/pan.15063) |
 
 ## ADME sites
 

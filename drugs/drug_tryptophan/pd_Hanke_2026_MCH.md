@@ -1,6 +1,6 @@
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# mean corpuscular hemoglobin — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+# mean corpuscular hemoglobin — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,18 +27,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.5 (3/6 fields) | 3 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model_family` | emax | indirect_response_i | mismatch |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 4.40 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.183 | only_one_extracted |
+| `gpt-oss:120b` | `model_family` | emax | indirect_response_iii | mismatch |
 | `gpt-oss:120b` | `parameters[Q39]` | not captured | 5.76 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q39]` | not captured | 0.244 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q43]` | not captured | not captured | only_one_extracted |
 
 </details>
 

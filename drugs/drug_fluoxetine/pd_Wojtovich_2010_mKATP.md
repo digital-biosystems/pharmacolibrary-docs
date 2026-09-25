@@ -1,7 +1,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluoxetine_Wilens2002_reference&quot;,&quot;label&quot;:&quot;Wilens_2002_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fluoxetine/Fluoxetine_Wilens2002_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluoxetine_van2024_reference&quot;,&quot;label&quot;:&quot;van_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fluoxetine/Fluoxetine_van2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# mKATP activity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
+# mKATP activity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,18 +23,21 @@ Wojtovich AP; Williams DM; Karcz MK; Lopes CM; Gray DA; Nehrke KW; et al. et al.
 _No resolved parameters._
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.75 (3/4 fields) | 1 |
+| `gpt-oss:120b` | secondary_empty | 0.0 (0/4 fields) | 4 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model_family` | emax | sigmoid_emax | mismatch |
+| `gpt-oss:120b` | `driver_compound` | fluoxetine | not captured | mismatch |
+| `gpt-oss:120b` | `effect_direction` | inhibition | not captured | mismatch |
+| `gpt-oss:120b` | `effect_form` | unknown | not captured | mismatch |
+| `gpt-oss:120b` | `model_family` | emax | not captured | mismatch |
 
 </details>
 

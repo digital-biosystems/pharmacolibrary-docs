@@ -5,7 +5,7 @@
 
 # desvenlafaxine — `Desvenlafaxine_Wang2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.545). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,7 @@
 ### Reviewer guidance
 
 **Why:** C7 apparent-parameter coherence violated (double correction)
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (venlafaxine vs O-desmethyl venlafaxine) and 4 more field(s) — a structural parameter, so the record is disputed.
+**Second reading:** `gpt-oss:120b` read this paper differently on `model.bioavailability.theta` (0.048 vs not captured) and 3 more field(s) — not a structural parameter.
 **How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
 <sub>owner: **curator**</sub>
 
@@ -77,14 +77,14 @@ Wang Z; Li L; Huang S; Wang X; Liu S; Li X; et al. et al. (2022). Frontiers in p
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.545 (6/11 fields) | 5 |
+| `gpt-oss:120b` | partly confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -92,7 +92,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[clm/f]` | not captured | 22.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v m/f]` | not captured | 238 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vm/f]` | 238 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.primary_analyte` | venlafaxine | O-desmethyl venlafaxine | mismatch |
 
 </details>
 

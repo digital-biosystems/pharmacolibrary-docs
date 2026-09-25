@@ -22,7 +22,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hori_1987_reference](drugs/drug_nimustine/Nimustine_Hori1987_reference.md) | Hori T et al., Influence of modes of ACNU administrati…, Journal of neurosurgery (1987) | [10.3171/jns.1987.66.3.0372](https://doi.org/10.3171/jns.1987.66.3.0372) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hori_1987_reference](drugs/drug_nimustine/Nimustine_Hori1987_reference.md) | Hori T et al., Influence of modes of ACNU administrati…, Journal of neurosurgery (1987) | [10.3171/jns.1987.66.3.0372](https://doi.org/10.3171/jns.1987.66.3.0372) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

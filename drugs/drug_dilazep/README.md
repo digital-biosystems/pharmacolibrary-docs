@@ -21,7 +21,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lee_1988](drugs/drug_dilazep/pd_Lee_1988_uridine_transport.md) | Lee (1988) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Lee_1988](drugs/drug_dilazep/pd_Lee_1988_uridine_transport.md) | Lee (1988) | — |
 
 ## ADME sites
 

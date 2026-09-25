@@ -27,8 +27,8 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Lim_2008](drugs/drug_itopride/pd_Lim_2008_colonic_transit_time.md) | Lim HC et al., Effect of itopride hydrochloride on the…, Yonsei medical journal (2008) | [10.3349/ymj.2008.49.3.472](https://doi.org/10.3349/ymj.2008.49.3.472) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Lim_2008](drugs/drug_itopride/pd_Lim_2008_propagation_velocity_of_peristaltic_contraction.md) | Lim HC et al., Effect of itopride hydrochloride on the…, Yonsei medical journal (2008) | [10.3349/ymj.2008.49.3.472](https://doi.org/10.3349/ymj.2008.49.3.472) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Lim_2008](drugs/drug_itopride/pd_Lim_2008_colonic_transit_time.md) | Lim HC et al., Effect of itopride hydrochloride on the…, Yonsei medical journal (2008) | [10.3349/ymj.2008.49.3.472](https://doi.org/10.3349/ymj.2008.49.3.472) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Lim_2008](drugs/drug_itopride/pd_Lim_2008_propagation_velocity_of_peristaltic_contraction.md) | Lim HC et al., Effect of itopride hydrochloride on the…, Yonsei medical journal (2008) | [10.3349/ymj.2008.49.3.472](https://doi.org/10.3349/ymj.2008.49.3.472) |
 
 ## ADME sites
 

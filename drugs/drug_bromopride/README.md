@@ -24,7 +24,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: F, Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Lachi-Silva_2020_reference](drugs/drug_bromopride/Bromopride_LachiSilva2020_reference.md) | Lachi-Silva L et al., Population pharmacokinetics of orally a…, European journal of pharmac… (2020) | [10.1016/j.ejps.2019.105081](https://doi.org/10.1016/j.ejps.2019.105081) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: F, Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Lachi-Silva_2020_reference](drugs/drug_bromopride/Bromopride_LachiSilva2020_reference.md) | Lachi-Silva L et al., Population pharmacokinetics of orally a…, European journal of pharmac… (2020) | [10.1016/j.ejps.2019.105081](https://doi.org/10.1016/j.ejps.2019.105081) |
 
 ## ADME sites
 

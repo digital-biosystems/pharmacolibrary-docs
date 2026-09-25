@@ -21,7 +21,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Julien_2017](drugs/drug_methylatropine/pd_Julien_2017_mean_arterial_pressure.md) | Julien C et al., Renal sympathetic nerve activity and va…, Physiological reports (2017) | [10.14814/phy2.13139](https://doi.org/10.14814/phy2.13139) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.115). The first reading is what the record holds.">cross-check: disputed</span> | [Julien_2017](drugs/drug_methylatropine/pd_Julien_2017_mean_arterial_pressure.md) | Julien C et al., Renal sympathetic nerve activity and va…, Physiological reports (2017) | [10.14814/phy2.13139](https://doi.org/10.14814/phy2.13139) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

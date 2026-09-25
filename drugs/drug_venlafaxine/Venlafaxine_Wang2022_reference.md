@@ -5,7 +5,7 @@
 
 # venlafaxine — `Venlafaxine_Wang2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,7 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed
-**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([] vs [['venlafaxine', 'o-desmethyl venlafaxine', 'metabolism']]) — a structural parameter, so the record is disputed.
+**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([] vs [['venlafaxine', 'o-desmethyl venlafaxine', 'metabolism']]) and 1 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
 
@@ -87,13 +87,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.889 (8/9 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.8 (8/10 fields) | 2 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.links` | [] | [['venlafaxine', 'o-desmethyl venlafaxine', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `parameters[fp]` | not captured | 0.048 | only_one_extracted |
 
 </details>
 

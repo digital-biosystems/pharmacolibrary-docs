@@ -5,7 +5,7 @@
 
 # citalopram — `Citalopram_Akil2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -18,7 +18,7 @@
 ### Reviewer guidance
 
 **Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 2 scholar param(s) emitted or defaulted — got 1 covered.
-**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (R- and S-citalopram and desmethylcitalopram vs citalopram) and 2 more field(s) — a structural parameter, so the record is disputed.
+**Second reading:** `gpt-oss:120b` read this paper differently on `screen.primary_analyte` (R- and S-citalopram and desmethylcitalopram vs citalopram) and 11 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
 <sub>owner: **scholar**</sub>
 
@@ -81,17 +81,26 @@ Akil A; Bies RR; Pollock BG; Avramopoulos D; Devanand DP; Mintzer JE; et al. et 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.727 (8/11 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.25 (4/16 fields) | 12 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[r, %]` | not captured | 21.54 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl rm /f]` | 24.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | not captured | 1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[r]` | 13.42 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q27_category]` | not captured | 13 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q27_em]` | not captured | 22.1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q27_im]` | not captured | 16.3 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q27_rm]` | not captured | 24.4 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/f].value` | 1390 | 1830 | mismatch |
+| `gpt-oss:120b` | `parameters[x clm , %]` | not captured | 30.61 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[x clp , %]` | not captured | 26.38 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[x v , %].parameter_id` | Q65 | Q61 | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | R- and S-citalopram and desmethylcitalopram | citalopram | mismatch |
 

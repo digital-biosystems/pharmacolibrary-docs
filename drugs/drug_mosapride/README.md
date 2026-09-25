@@ -25,9 +25,9 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kojima_2006](drugs/drug_mosapride/pd_Kojima_2006_intrinsic_R_IAS_reflex_index.md) | Kojima Y et al., Enhancement of the intrinsic defecation…, Journal of smooth muscle re… (2006) | [10.1540/jsmr.42.139](https://doi.org/10.1540/jsmr.42.139) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kojima_2006](drugs/drug_mosapride/pd_Kojima_2006_intrinsic_R_R_reflex_index.md) | Kojima Y et al., Enhancement of the intrinsic defecation…, Journal of smooth muscle re… (2006) | [10.1540/jsmr.42.139](https://doi.org/10.1540/jsmr.42.139) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Park_2019](drugs/drug_mosapride/pd_Park_2019_unknown.md) | Park YS et al., Gastroprokinetic agent, mosapride inhib…, The Korean journal of physi… (2019) | [10.4196/kjpp.2019.23.5.419](https://doi.org/10.4196/kjpp.2019.23.5.419) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kojima_2006](drugs/drug_mosapride/pd_Kojima_2006_intrinsic_R_IAS_reflex_index.md) | Kojima Y et al., Enhancement of the intrinsic defecation…, Journal of smooth muscle re… (2006) | [10.1540/jsmr.42.139](https://doi.org/10.1540/jsmr.42.139) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kojima_2006](drugs/drug_mosapride/pd_Kojima_2006_intrinsic_R_R_reflex_index.md) | Kojima Y et al., Enhancement of the intrinsic defecation…, Journal of smooth muscle re… (2006) | [10.1540/jsmr.42.139](https://doi.org/10.1540/jsmr.42.139) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Park_2019](drugs/drug_mosapride/pd_Park_2019_unknown.md) | Park YS et al., Gastroprokinetic agent, mosapride inhib…, The Korean journal of physi… (2019) | [10.4196/kjpp.2019.23.5.419](https://doi.org/10.4196/kjpp.2019.23.5.419) |
 
 ## ADME sites
 

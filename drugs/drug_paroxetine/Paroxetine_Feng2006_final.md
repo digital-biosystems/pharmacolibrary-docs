@@ -5,7 +5,7 @@
 
 # paroxetine — `Paroxetine_Feng2006_final`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.682). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,7 @@
 ### Reviewer guidance
 
 **Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[theta_q367_im]` (182 vs not captured) and 6 more field(s) — a structural parameter, so the record is disputed.
+**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[theta_q367_im]` (182 vs not captured) and 6 more field(s) — not a structural parameter.
 **How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
 <sub>owner: **scholar**</sub>
 
@@ -83,12 +83,12 @@ Feng Y; Pollock BG; Ferrell RE; Kimak MA; Reynolds CF; Bies RR et al. (2006). Br
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.667 (14/21 fields) | 7 |
+| `gpt-oss:120b` | partly confirmed | 0.682 (15/22 fields) | 7 |
 
 <details><summary>7 field(s) a reader read differently</summary>
 
@@ -98,9 +98,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[theta_q367_um]` | 3670 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q61_im]` | not captured | 182 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q61_pm]` | not captured | 125 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q61_um]` | not captured | 3670 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_vmax_pm]` | 125 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v m].covariate_forms` | ['linear_fractional', 'linear_fractional'] | ['linear_fractional'] | mismatch |
+| `gpt-oss:120b` | `parameters[theta_vmax_um]` | not captured | 3670 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution]` | 1010.0 | not captured | only_one_extracted |
 
 </details>
 

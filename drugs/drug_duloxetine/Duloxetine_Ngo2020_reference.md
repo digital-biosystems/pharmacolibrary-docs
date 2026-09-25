@@ -5,7 +5,7 @@
 
 # duloxetine — `Duloxetine_Ngo2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.64). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,6 @@
 ### Reviewer guidance
 
 **Why:** C7 apparent-parameter coherence violated (double correction)
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[k a].parameter_id` (Q95 vs Q49) and 8 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
 <sub>owner: **curator**</sub>
 
@@ -83,35 +82,6 @@ Ngo TL; Lee CH; Han N; Back HM; Rhee SJ; Noh K; et al. et al. (2020). Internatio
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=duloxetine
 
 ## Validation
-
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.64 (16/25 fields) | 9 |
-
-<details><summary>9 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[absorption rate constant]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[apparent oral clearance]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[apparent volume of distribution]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[elimination rate constant]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k a].parameter_id` | Q95 | Q49 | mismatch |
-| `gpt-oss:120b` | `parameters[prop_p]` | not captured | 21.9 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v m /f m]` | not captured | 110 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v p].parameter_id` | Q61 | Q64 | mismatch |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | not captured | not captured | only_one_extracted |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check legend</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
-</details>
-
 
 **Scholar closed-form checks:**
 

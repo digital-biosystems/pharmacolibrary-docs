@@ -100,7 +100,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[c o/c max]` | not captured | 1.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/(cl/f)].parameter_id` | Q27 | Q87 | mismatch |
+| `gpt-oss:120b` | `parameters[cl/(cl/f)].parameter_id` | Q27 | Q40 | mismatch |
 
 </details>
 

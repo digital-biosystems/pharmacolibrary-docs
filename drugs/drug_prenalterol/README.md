@@ -21,7 +21,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Carlsöö_1981](drugs/drug_prenalterol/pd_Carls_1981_unknown.md) | Carlsöö B et al., Characterization of the rat parotid bet…, British journal of pharmaco… (1981) | [10.1111/j.1476-5381.1981.tb09124.x](https://doi.org/10.1111/j.1476-5381.1981.tb09124.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Carlsöö_1981](drugs/drug_prenalterol/pd_Carls_1981_unknown.md) | Carlsöö B et al., Characterization of the rat parotid bet…, British journal of pharmaco… (1981) | [10.1111/j.1476-5381.1981.tb09124.x](https://doi.org/10.1111/j.1476-5381.1981.tb09124.x) |
 
 ## ADME sites
 

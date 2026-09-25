@@ -24,14 +24,14 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Doroshyenko_2005_reference](drugs/drug_trospium/Trospium_Doroshyenko2005_reference.md) | Doroshyenko O et al., Clinical pharmacokinetics of trospium c…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544070-00003](https://doi.org/10.2165/00003088-200544070-00003) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Doroshyenko_2005_reference](drugs/drug_trospium/Trospium_Doroshyenko2005_reference.md) | Doroshyenko O et al., Clinical pharmacokinetics of trospium c…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544070-00003](https://doi.org/10.2165/00003088-200544070-00003) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Oefelein_2013_reference](drugs/drug_trospium/Trospium_Oefelein2013_reference.md) | Oefelein MG et al., Effect of concomitant administration of…, Clinical drug investigation (2013) | [10.1007/s40261-012-0049-6](https://doi.org/10.1007/s40261-012-0049-6) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Rönnpagel_2025](drugs/drug_trospium/pd_R_nnpagel_2025_OCT1_mediated_uptake.md) | Rönnpagel V et al., Substrate-specific inhibition of organi…, Drug metabolism and disposi… (2025) | [10.1016/j.dmd.2025.100074](https://doi.org/10.1016/j.dmd.2025.100074) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rönnpagel_2025](drugs/drug_trospium/pd_R_nnpagel_2025_OCT1_mediated_uptake.md) | Rönnpagel V et al., Substrate-specific inhibition of organi…, Drug metabolism and disposi… (2025) | [10.1016/j.dmd.2025.100074](https://doi.org/10.1016/j.dmd.2025.100074) |
 
 ## ADME sites
 

@@ -22,7 +22,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Saleh_1990_reference](drugs/drug_medifoxamine/Medifoxamine_Saleh1990_reference.md) | Saleh S et al., Tolerability and kinetics of intravenou…, International clinical psyc… (1990) | [10.1097/00004850-199004000-00003](https://doi.org/10.1097/00004850-199004000-00003) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Saleh_1990_reference](drugs/drug_medifoxamine/Medifoxamine_Saleh1990_reference.md) | Saleh S et al., Tolerability and kinetics of intravenou…, International clinical psyc… (1990) | [10.1097/00004850-199004000-00003](https://doi.org/10.1097/00004850-199004000-00003) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

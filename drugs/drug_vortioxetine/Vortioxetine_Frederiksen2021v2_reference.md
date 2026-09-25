@@ -5,7 +5,7 @@
 
 # vortioxetine — `Vortioxetine_Frederiksen2021v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,7 @@
 ### Reviewer guidance
 
 **Why:** C5 dimensioned parameter(s) without a unit: Q49, Q77, Q30, Q64, Q63, Q22, Q83 — no SI value to build from.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[lu aa34443 clearance, clmet].covariate_forms` (['linear_fractional'] vs ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional']) and 9 more field(s) — a structural parameter, so the record is disputed.
+**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[lu aa34443 clearance, clmet].covariate_forms` (['linear_fractional'] vs ['linear_fractional', 'linear_fractional']) and 5 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
 <sub>owner: **scholar**</sub>
 
@@ -86,21 +86,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.667 (20/30 fields) | 10 |
+| `gpt-oss:120b` | not confirmed | 0.769 (20/26 fields) | 6 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[lu aa34443 clearance, clmet].covariate_forms` | ['linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss:120b` | `parameters[lu aa34443 clearance, clmet].covariate_forms` | ['linear_fractional'] | ['linear_fractional', 'linear_fractional'] | mismatch |
 | `gpt-oss:120b` | `parameters[theta_cl_age]` | not captured | 0.157 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_cl_creatinine]` | not captured | 0.0668 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_cl_cyp2c19]` | not captured | 7.70 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_v3_height]` | not captured | 1.48 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_v_weight]` | not captured | 0.455 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of distribution, lu aa34443 central compartment, v5]` | 155 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of distribution, vortioxetine central compartment, v3].covariate_forms` | [] | ['linear_fractional'] | mismatch |
-| `gpt-oss:120b` | `parameters[volume of distribution, vortioxetine peripheral compartment, v4].covariate_forms` | [] | ['linear_fractional'] | mismatch |
 | `gpt-oss:120b` | `parameters[volume of distribution, vortioxetine peripheral compartment, v4].parameter_id` | Q64 | Q61 | mismatch |
 
 </details>

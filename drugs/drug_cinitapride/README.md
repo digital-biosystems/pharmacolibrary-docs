@@ -27,7 +27,7 @@ _not available_
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | **CYP2C8** | `Q22` · CL | metabolism | [Campodónico_2022](drugs/drug_cinitapride/pgx_Campod_nico_2022_CYP2C8_Q22.md) | Campodónico DM et al., CYP2C8*3 and *4 define CYP2C8 phenotype…, Clinical and translational… (2022) | [10.1111/cts.13386](https://doi.org/10.1111/cts.13386) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **CYP2C8** | `Q22` · CL | metabolism | [Campodónico_2022](drugs/drug_cinitapride/pgx_Campod_nico_2022_CYP2C8_Q22.md) | Campodónico DM et al., CYP2C8*3 and *4 define CYP2C8 phenotype…, Clinical and translational… (2022) | [10.1111/cts.13386](https://doi.org/10.1111/cts.13386) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>

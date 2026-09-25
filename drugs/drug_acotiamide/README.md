@@ -25,7 +25,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yoshii_2016](drugs/drug_acotiamide/pd_Yoshii_2016_acetylcholine.md) | Yoshii (2016) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yoshii_2016](drugs/drug_acotiamide/pd_Yoshii_2016_acetylcholine.md) | Yoshii (2016) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
