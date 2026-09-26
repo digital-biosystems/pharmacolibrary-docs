@@ -1,5 +1,5 @@
 {
- "kb_mtime": 1790348291.9057693,
+ "kb_mtime": 1790416015.399136,
  "rows": [
   {
    "abstract_only": 83,
@@ -5688,7 +5688,7 @@
   {
    "abstract_only": 77,
    "backend": "ollama",
-   "calls": 212,
+   "calls": 4,
    "combination": null,
    "curated_models": 0,
    "drug": "algeldrate",
@@ -5696,7 +5696,7 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 1572.1,
+   "elapsed_s": 207.6,
    "eu_status": "not_centrally_authorised",
    "grobid": 6,
    "has_truth": false,
@@ -5732,18 +5732,18 @@
    "supp_nonmem": 0,
    "supp_other": 14,
    "supp_pgx_none": 1,
-   "tokens_in": 449756,
-   "tokens_out": 10707
+   "tokens_in": 5170,
+   "tokens_out": 1056
   },
   {
    "abstract_only": 15,
    "backend": "ollama",
-   "calls": 50,
+   "calls": 2,
    "combination": null,
    "curated_models": 0,
    "drug": "almagate",
    "drugbank_groups": [],
-   "elapsed_s": 215.3,
+   "elapsed_s": 34.1,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -5777,20 +5777,20 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 5,
-   "tokens_in": 145586,
-   "tokens_out": 2435
+   "tokens_in": 1532,
+   "tokens_out": 110
   },
   {
    "abstract_only": 3,
    "backend": "ollama",
-   "calls": 14,
+   "calls": 2,
    "combination": null,
    "curated_models": 0,
    "drug": "almasilate",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 72.2,
+   "elapsed_s": 22.6,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -5824,8 +5824,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 27094,
-   "tokens_out": 745
+   "tokens_in": 1372,
+   "tokens_out": 208
   },
   {
    "abstract_only": 1,
@@ -5837,7 +5837,7 @@
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 40.3,
+   "elapsed_s": 34.4,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -5884,7 +5884,7 @@
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 38.4,
+   "elapsed_s": 30.2,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -5924,14 +5924,14 @@
   {
    "abstract_only": 4,
    "backend": "ollama",
-   "calls": 11,
+   "calls": 2,
    "combination": null,
    "curated_models": 0,
    "drug": "aluminium_glycinate",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 63.2,
+   "elapsed_s": 30.9,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -5965,29 +5965,29 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 25002,
-   "tokens_out": 639
+   "tokens_in": 1336,
+   "tokens_out": 186
   },
   {
    "abstract_only": 72,
    "backend": "ollama",
-   "calls": 91,
+   "calls": 17,
    "combination": null,
    "curated_models": 0,
    "drug": "aluminium_hydroxide",
    "drugbank_groups": [],
-   "elapsed_s": 1495.4,
+   "elapsed_s": 246.2,
    "eu_status": "not_centrally_authorised",
    "grobid": 12,
    "has_truth": false,
    "interactions": 0,
-   "jats": 27,
+   "jats": 30,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 69,
+   "no_pdf": 72,
    "non_oa": 5,
    "oa": 37,
    "panel": "dg-A02A-1",
-   "papers": 111,
+   "papers": 114,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -6012,13 +6012,13 @@
    "supp_nonmem": 0,
    "supp_other": 24,
    "supp_pgx_none": 1,
-   "tokens_in": 225677,
-   "tokens_out": 5390
+   "tokens_in": 31420,
+   "tokens_out": 1840
   },
   {
-   "abstract_only": 13,
+   "abstract_only": 21,
    "backend": "ollama",
-   "calls": 37,
+   "calls": 11,
    "combination": null,
    "curated_models": 0,
    "drug": "aluminium_phosphate",
@@ -6026,18 +6026,18 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 396.0,
+   "elapsed_s": 172.8,
    "eu_status": "not_centrally_authorised",
    "grobid": 3,
    "has_truth": false,
    "interactions": 0,
-   "jats": 7,
+   "jats": 8,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 13,
+   "no_pdf": 21,
    "non_oa": 0,
-   "oa": 10,
+   "oa": 11,
    "panel": "dg-A02A-1",
-   "papers": 23,
+   "papers": 32,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -6059,14 +6059,14 @@
    "review_papers": 0,
    "review_records": 0,
    "supp_nonmem": 0,
-   "supp_other": 3,
-   "tokens_in": 82783,
-   "tokens_out": 2209
+   "supp_other": 4,
+   "tokens_in": 13953,
+   "tokens_out": 712
   },
   {
    "abstract_only": 40,
    "backend": "ollama",
-   "calls": 300,
+   "calls": 8,
    "combination": null,
    "curated_models": 0,
    "drug": "calcium_carbonate",
@@ -6074,7 +6074,7 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 1900.2,
+   "elapsed_s": 86.2,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -6099,46 +6099,45 @@
    "pgx_review_models": 0,
    "pk_gapfill": 0,
    "pk_review_models": 2,
-   "poppk_extracted": 3,
+   "poppk_extracted": 2,
    "poppk_other": 0,
-   "poppk_rejected": 0,
+   "poppk_rejected": 1,
    "relevant": 8,
    "reused_cache": false,
    "review_papers": 12,
    "review_records": 244,
    "src_pd_jats": 4,
-   "src_pk_jats": 3,
+   "src_pk_jats": 2,
    "supp_nonmem": 2,
    "supp_other": 10,
    "supp_pd_none": 4,
-   "supp_pk_none": 1,
    "supp_pk_nonmem": 1,
    "supp_pk_other": 1,
-   "tokens_in": 501073,
-   "tokens_out": 33340
+   "tokens_in": 22687,
+   "tokens_out": 1628
   },
   {
-   "abstract_only": 41,
+   "abstract_only": 43,
    "backend": "ollama",
-   "calls": 79,
+   "calls": 16,
    "combination": null,
    "curated_models": 0,
    "drug": "calcium_silicate",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 1472.0,
+   "elapsed_s": 143.4,
    "eu_status": "not_centrally_authorised",
    "grobid": 8,
    "has_truth": false,
    "interactions": 0,
    "jats": 26,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 41,
+   "no_pdf": 43,
    "non_oa": 0,
    "oa": 34,
    "panel": "dg-A02A-1",
-   "papers": 75,
+   "papers": 77,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -6161,29 +6160,29 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 4,
-   "tokens_in": 221736,
-   "tokens_out": 5215
+   "tokens_in": 51724,
+   "tokens_out": 847
   },
   {
-   "abstract_only": 0,
+   "abstract_only": 29,
    "backend": "ollama",
-   "calls": 3,
+   "calls": 37,
    "combination": null,
    "curated_models": 0,
    "drug": "dihydroxialumini_sodium_carbonate",
    "drugbank_groups": [],
-   "elapsed_s": 161.0,
+   "elapsed_s": 583.1,
    "eu_status": "not_centrally_authorised",
-   "grobid": 0,
+   "grobid": 3,
    "has_truth": false,
    "interactions": 0,
-   "jats": 0,
+   "jats": 2,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 0,
-   "non_oa": 0,
-   "oa": 0,
+   "no_pdf": 29,
+   "non_oa": 1,
+   "oa": 4,
    "panel": "dg-A02A-1",
-   "papers": 0,
+   "papers": 34,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -6205,25 +6204,25 @@
    "review_papers": 0,
    "review_records": 0,
    "supp_nonmem": 0,
-   "supp_other": 0,
-   "tokens_in": 857,
-   "tokens_out": 9011
+   "supp_other": 4,
+   "tokens_in": 59259,
+   "tokens_out": 2242
   },
   {
-   "abstract_only": 266,
-   "calls": 803,
+   "abstract_only": 305,
+   "calls": 105,
    "drug": "TOTAL",
    "drugs": 11,
-   "elapsed_s": 7426.1,
-   "grobid": 31,
+   "elapsed_s": 1591.5,
+   "grobid": 34,
    "interactions": 0,
    "is_total": true,
-   "jats": 114,
-   "no_pdf": 262,
-   "non_oa": 7,
-   "oa": 142,
+   "jats": 120,
+   "no_pdf": 304,
+   "non_oa": 8,
+   "oa": 147,
    "panel": "dg-A02A-1",
-   "papers": 411,
+   "papers": 459,
    "pd_extracted": 4,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -6237,16 +6236,16 @@
    "pgx_review_models": 0,
    "pk_gapfill": 0,
    "pk_review_models": 2,
-   "poppk_extracted": 3,
+   "poppk_extracted": 2,
    "poppk_other": 0,
-   "poppk_rejected": 0,
+   "poppk_rejected": 1,
    "relevant": 23,
    "review_papers": 12,
    "review_records": 244,
    "supp_nonmem": 2,
-   "supp_other": 62,
-   "tokens_in": 1682433,
-   "tokens_out": 70114
+   "supp_other": 67,
+   "tokens_in": 191322,
+   "tokens_out": 9252
   },
   {
    "abstract_only": 38,
@@ -11705,14 +11704,14 @@
   {
    "abstract_only": 2,
    "backend": "ollama",
-   "calls": 6,
+   "calls": 3,
    "combination": null,
    "curated_models": 0,
    "drug": "moxaverine",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 56.5,
+   "elapsed_s": 42.9,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -11746,20 +11745,20 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 3474,
-   "tokens_out": 321
+   "tokens_in": 1763,
+   "tokens_out": 168
   },
   {
    "abstract_only": 19,
    "backend": "ollama",
-   "calls": 35,
+   "calls": 2,
    "combination": null,
    "curated_models": 0,
    "drug": "nicofetamide",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 121.9,
+   "elapsed_s": 22.0,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -11793,20 +11792,20 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 3,
-   "tokens_in": 82353,
-   "tokens_out": 1794
+   "tokens_in": 1542,
+   "tokens_out": 114
   },
   {
    "abstract_only": 37,
    "backend": "ollama",
-   "calls": 158,
+   "calls": 30,
    "combination": null,
    "curated_models": 0,
    "drug": "otilonium",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 547.3,
+   "elapsed_s": 209.4,
    "eu_status": "not_centrally_authorised",
    "grobid": 4,
    "has_truth": false,
@@ -11842,20 +11841,20 @@
    "supp_nonmem": 0,
    "supp_other": 5,
    "supp_pd_none": 1,
-   "tokens_in": 290570,
-   "tokens_out": 6657
+   "tokens_in": 32692,
+   "tokens_out": 10533
   },
   {
    "abstract_only": 38,
    "backend": "ollama",
-   "calls": 156,
+   "calls": 30,
    "combination": null,
    "curated_models": 0,
    "drug": "otilonium_bromide",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 566.1,
+   "elapsed_s": 205.5,
    "eu_status": "not_centrally_authorised",
    "grobid": 3,
    "has_truth": false,
@@ -11891,20 +11890,20 @@
    "supp_nonmem": 0,
    "supp_other": 6,
    "supp_pd_none": 1,
-   "tokens_in": 282313,
-   "tokens_out": 6708
+   "tokens_in": 32744,
+   "tokens_out": 10533
   },
   {
    "abstract_only": 13,
    "backend": "ollama",
-   "calls": 52,
+   "calls": 2,
    "combination": null,
    "curated_models": 0,
    "drug": "oxyphencyclimine",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 262.9,
+   "elapsed_s": 37.4,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -11938,20 +11937,20 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 9,
-   "tokens_in": 125953,
-   "tokens_out": 2780
+   "tokens_in": 1698,
+   "tokens_out": 168
   },
   {
    "abstract_only": 28,
    "backend": "ollama",
-   "calls": 71,
+   "calls": 2,
    "combination": null,
    "curated_models": 0,
    "drug": "oxyphenonium",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 190.1,
+   "elapsed_s": 32.0,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -11985,8 +11984,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 52102,
-   "tokens_out": 3748
+   "tokens_in": 1654,
+   "tokens_out": 154
   },
   {
    "abstract_only": 0,
@@ -12036,7 +12035,7 @@
   {
    "abstract_only": 19,
    "backend": "ollama",
-   "calls": 89,
+   "calls": 20,
    "combination": null,
    "curated_models": 0,
    "drug": "papaverine",
@@ -12044,7 +12043,7 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 326.7,
+   "elapsed_s": 127.7,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -12081,20 +12080,20 @@
    "supp_other": 1,
    "supp_pd_none": 3,
    "supp_pd_other": 1,
-   "tokens_in": 114194,
-   "tokens_out": 9176
+   "tokens_in": 21523,
+   "tokens_out": 7016
   },
   {
    "abstract_only": 7,
    "backend": "ollama",
-   "calls": 11,
+   "calls": 2,
    "combination": null,
    "curated_models": 0,
    "drug": "penthienate",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 38.9,
+   "elapsed_s": 30.4,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -12128,31 +12127,31 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 7445,
-   "tokens_out": 540
+   "tokens_in": 1454,
+   "tokens_out": 114
   },
   {
-   "abstract_only": 60,
+   "abstract_only": 65,
    "backend": "ollama",
-   "calls": 28,
+   "calls": 88,
    "combination": null,
    "curated_models": 0,
    "drug": "phloroglucinol",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 294.5,
+   "elapsed_s": 489.7,
    "eu_status": "not_centrally_authorised",
    "grobid": 4,
    "has_truth": false,
    "interactions": 0,
-   "jats": 25,
+   "jats": 26,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 60,
+   "no_pdf": 65,
    "non_oa": 2,
-   "oa": 27,
+   "oa": 28,
    "panel": "dg-A03A-3",
-   "papers": 89,
+   "papers": 95,
    "pd_extracted": 4,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -12169,7 +12168,7 @@
    "poppk_extracted": 0,
    "poppk_other": 0,
    "poppk_rejected": 0,
-   "relevant": 29,
+   "relevant": 31,
    "reused_cache": false,
    "review_papers": 0,
    "review_records": 0,
@@ -12177,8 +12176,8 @@
    "supp_nonmem": 0,
    "supp_other": 17,
    "supp_pd_other": 4,
-   "tokens_in": 106577,
-   "tokens_out": 1709
+   "tokens_in": 112530,
+   "tokens_out": 19849
   },
   {
    "abstract_only": 11,
@@ -12191,7 +12190,7 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 59.9,
+   "elapsed_s": 56.5,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -12225,31 +12224,31 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 1244,
-   "tokens_out": 212
+   "tokens_in": 1634,
+   "tokens_out": 128
   },
   {
-   "abstract_only": 11,
+   "abstract_only": 12,
    "backend": "ollama",
-   "calls": 9,
+   "calls": 3,
    "combination": null,
    "curated_models": 0,
    "drug": "pipenzolate",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 105.5,
+   "elapsed_s": 35.8,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
    "interactions": 0,
    "jats": 0,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 11,
+   "no_pdf": 12,
    "non_oa": 0,
    "oa": 1,
    "panel": "dg-A03A-3",
-   "papers": 12,
+   "papers": 13,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -12272,8 +12271,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 5099,
-   "tokens_out": 619
+   "tokens_in": 2366,
+   "tokens_out": 188
   },
   {
    "abstract_only": 0,
@@ -12285,7 +12284,7 @@
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 75.7,
+   "elapsed_s": 30.4,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -12319,20 +12318,20 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 830,
-   "tokens_out": 3483
+   "tokens_in": 1415,
+   "tokens_out": 168
   },
   {
    "abstract_only": 11,
    "backend": "ollama",
-   "calls": 10,
+   "calls": 2,
    "combination": null,
    "curated_models": 0,
    "drug": "poldine",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 146.2,
+   "elapsed_s": 21.0,
    "eu_status": "not_centrally_authorised",
    "grobid": 0,
    "has_truth": false,
@@ -12366,20 +12365,20 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 5461,
-   "tokens_out": 1780
+   "tokens_in": 1558,
+   "tokens_out": 134
   },
   {
    "abstract_only": 20,
    "backend": "ollama",
-   "calls": 26,
+   "calls": 3,
    "combination": null,
    "curated_models": 0,
    "drug": "prifinium",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 262.7,
+   "elapsed_s": 30.6,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -12413,24 +12412,24 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 20532,
-   "tokens_out": 3916
+   "tokens_in": 2349,
+   "tokens_out": 161
   },
   {
-   "abstract_only": 276,
-   "calls": 656,
+   "abstract_only": 282,
+   "calls": 192,
    "drug": "TOTAL",
    "drugs": 15,
-   "elapsed_s": 3054.9,
+   "elapsed_s": 1371.3,
    "grobid": 16,
    "interactions": 0,
    "is_total": true,
-   "jats": 56,
-   "no_pdf": 274,
+   "jats": 57,
+   "no_pdf": 280,
    "non_oa": 5,
-   "oa": 69,
+   "oa": 70,
    "panel": "dg-A03A-3",
-   "papers": 348,
+   "papers": 355,
    "pd_extracted": 10,
    "pd_gapfill": 1,
    "pd_other": 0,
@@ -12447,13 +12446,13 @@
    "poppk_extracted": 0,
    "poppk_other": 1,
    "poppk_rejected": 0,
-   "relevant": 67,
+   "relevant": 69,
    "review_papers": 4,
    "review_records": 47,
    "supp_nonmem": 0,
    "supp_other": 42,
-   "tokens_in": 1098147,
-   "tokens_out": 43443
+   "tokens_in": 216922,
+   "tokens_out": 49428
   },
   {
    "abstract_only": 4,
@@ -68466,7 +68465,7 @@
    "tokens_out": null
   }
  ],
- "run_mtime": 1790320201.8460126,
+ "run_mtime": 1790416135.8813372,
  "runs": {
   "dbs": {
    "attempts": 1,
@@ -68655,23 +68654,21 @@
    }
   },
   "dg-A02A-1": {
-   "attempts": 2,
+   "attempts": 3,
    "drugs": 11,
-   "elapsed_h": 1.004,
-   "finished_at": "2026-09-22T11:30:15+00:00",
-   "host": "http://sasdsnode02.vito.local:56456",
-   "interrupt_reason": "SIGTERM",
-   "interrupted_on": "aluminium_hydroxide",
+   "elapsed_h": 0.442,
+   "finished_at": "2026-09-26T09:48:53+00:00",
+   "host": "http://sasdsnode03.vito.local:56456",
    "label": "dg-A02A-1",
    "model": "qwen3.8:27b-mtp-q8_0",
    "pid": null,
-   "processed": 6,
-   "started_at": "2026-09-22T10:29:59+00:00",
-   "status": "interrupted",
+   "processed": 11,
+   "started_at": "2026-09-26T09:22:21+00:00",
+   "status": "finished",
    "tokens": {
-    "calls": 634,
-    "in": 1257299,
-    "out": 73710
+    "calls": 105,
+    "in": 191322,
+    "out": 9252
    },
    "totals": {
     "PD": {
@@ -68685,9 +68682,9 @@
      "rejected": 0
     },
     "popPK": {
-     "extracted": 3,
+     "extracted": 2,
      "other": 0,
-     "rejected": 0
+     "rejected": 1
     }
    }
   },
@@ -68972,27 +68969,27 @@
    }
   },
   "dg-A03A-3": {
-   "attempts": 3,
+   "attempts": 4,
    "drugs": 15,
-   "elapsed_h": 0.508,
-   "finished_at": null,
-   "host": "http://sasdsnode03.vito.local:56456",
+   "elapsed_h": 0.382,
+   "finished_at": "2026-09-26T09:45:18+00:00",
+   "host": "http://sasdsnode02.vito.local:56456",
    "label": "dg-A03A-3",
    "model": "qwen3.8:27b-mtp-q8_0",
-   "pid": 175197,
+   "pid": null,
    "processed": 14,
-   "started_at": "2026-09-18T09:20:22+00:00",
-   "status": "interrupted",
+   "started_at": "2026-09-26T09:22:23+00:00",
+   "status": "finished",
    "tokens": {
-    "calls": 127,
-    "in": 177892,
-    "out": 30919
+    "calls": 192,
+    "in": 216922,
+    "out": 49428
    },
    "totals": {
     "PD": {
      "extracted": 10,
      "other": 0,
-     "rejected": 26
+     "rejected": 42
     },
     "PGx": {
      "extracted": 0,
@@ -69001,8 +68998,8 @@
     },
     "popPK": {
      "extracted": 0,
-     "other": 0,
-     "rejected": 1
+     "other": 1,
+     "rejected": 0
     }
    }
   },
@@ -98111,6 +98108,22 @@
    "stem": "Dollo_1999",
    "title": "[Bioavailability of phloroglucinol in man]",
    "year": "1999"
+  },
+  {
+   "authors": "Sun Q; Li X; Dong Y; Shen J; Xie H; Jia Y",
+   "doi": "10.1016/j.jchromb.2026.125298",
+   "doi_url": "https://doi.org/10.1016/j.jchromb.2026.125298",
+   "domain": "poppk",
+   "drug": "phloroglucinol",
+   "journal": "Journal of chromatography. B, Analytical technologies in the biomedical and life sciences 1284:125298",
+   "pmid": "42790030",
+   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42790030",
+   "reason": "The paper describes a PK study for phloroglucinol, but the provided evidence contains only method validation details and no quantitative PK parameter values (e.g., CL, V, Cmax, AUC).",
+   "relevance_score": 8,
+   "slug": "phloroglucinol",
+   "stem": "Sun_2026",
+   "title": "SIL-IS LC-MS/MS method for rapid quantification of phloroglucinol in human plasma: development, validation and application to a pharmacokinetic study",
+   "year": "2026"
   },
   {
    "authors": "Hummel L",
@@ -171938,6 +171951,6 @@
  ],
  "wanted_stamp": [
   780,
-  1790317730.5684752
+  1790415918.0675025
  ]
 }

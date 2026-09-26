@@ -18,15 +18,15 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 12:59 | 31:40 | 3/0/0 | 1/1/0 | 0/0/0 | 501,073/33,340 | ollama / qwen3.8:27b-mtp-q8_0 | 30 | 1/29 | 29/1 | 0 |
+| 2026-09-26 09:36 | 1:26 | 2/1/0 | 1/1/0 | 0/0/0 | 22,687/1,628 | ollama / qwen3.8:27b-mtp-q8_0 | 30 | 1/29 | 29/1 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ekobena_2025_reference](drugs/drug_calcium_carbonate/CalciumCarbonate_Ekobena2025_reference.md) | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> | [Ekobena_2025_reference](drugs/drug_calcium_carbonate/CalciumCarbonate_Ekobena2025_reference.md) | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: F, Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Ahn_2014_reference](drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference.md) | Ahn JE et al., Modeling of the parathyroid hormone res…, The Korean journal of physi… (2014) | [10.4196/kjpp.2014.18.3.217](https://doi.org/10.4196/kjpp.2014.18.3.217) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Kemal_2026_reference](drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference.md) | Kemal CC et al., Population Pharmacokinetic Modeling and…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70257](https://doi.org/10.1002/psp4.70257) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Kemal_2026_reference](drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference.md) | Kemal CC et al., Population Pharmacokinetic Modeling and…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70257](https://doi.org/10.1002/psp4.70257) |
 
 ## Pharmacodynamics (PD)
 
@@ -57,7 +57,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 143 matched, 76 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 9  ·  **relevant:** 1
 - **records:** 3  ·  extracted 1  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 

@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="assets/w3.css">
   <link rel="stylesheet" href="assets/buble.css">
+  <link rel="stylesheet" href="assets/sidebar-collapse.min.css">
   <style>
     /* Sidebar legibility: in the generated ATC tree a drug WITH a rendered page is a
        link and one without is plain list text. The buble theme gives .sidebar ul li a
@@ -18,21 +19,22 @@
     .sidebar ul li { color: #8a9199; }
     /* the theme's own .sidebar li.active a (0,2,2) outranks the rule above (0,1,3),
        so the CURRENT page's entry needs a selector that beats it, or it reverts to grey */
-    .sidebar ul li.active a,
+    .sidebar ul li.active > a,
     .sidebar ul li a.active { color: var(--theme-color, #0074d9); font-weight: 600; }
-    /* ATC tree folding (see the pk-fold plugin below): level-1 groups and level-3 classes
-       carry a chevron and hide their list until opened; level 2 stays a plain heading. */
-    .sidebar ul li.pk-fold { position: relative; }
-    /* absolutely placed: the theme makes the label <a> a block, so an inline chevron
-       would sit on a line of its own above it */
-    .sidebar ul li.pk-fold > .pk-fold-btn {
-      position: absolute; left: -14px; top: 0.35em; width: 12px; cursor: pointer;
-      color: #8a9199; font-size: 10px; line-height: 1; user-select: none;
-      transition: transform .12s ease-in-out; transform: rotate(0deg);
-    }
-    .sidebar ul li.pk-fold.pk-open > .pk-fold-btn { transform: rotate(90deg); }
-    .sidebar ul li.pk-fold > strong { cursor: pointer; }
-    .sidebar ul li.pk-fold:not(.pk-open) > ul { display: none; }
+    /* docsify-sidebar-collapse marks every OPENED folder li.active too, and the theme shades
+       a whole li.active (children included): keep the shade and the weight on the page's own
+       entry, not on the folder's entire subtree */
+    .sidebar li.folder.active { background-color: transparent; }
+    .sidebar li.folder.active li:not(.active) > a { font-weight: normal; }
+    .sidebar li.folder.active li:not(.active) { background-color: transparent; }
+    /* Sidebar folders (docsify-sidebar-collapse, assets/): every item with a child list
+       folds — the panels, toxins, the ATC tree and each of its levels. The plugin shows the
+       arrow and hides the child list; the rules here only give the folder labels ink. */
+    .sidebar-nav li.folder > strong,
+    .sidebar-nav li.folder { color: #34495e; }
+    .sidebar-nav li.folder > strong { font-weight: 600; }
+    .sidebar-nav ul:not(.app-sub-sidebar) > li:not(.file)::before { border-color: #8a9199; }
+    .sidebar-nav > ul { padding-left: 8px; }   /* room for the top level's arrows */
     /* Collapsed column legends under the Parameters / Validation tables on a record page.
        Built as raw HTML by docs/build.py because docsify does not re-enter markdown inside
        an HTML block. */
@@ -291,15 +293,6 @@
     .markdown-section table.pk-models td:first-child { white-space: nowrap; }
     .markdown-section .pk-missing { color: #9aa1a9; font-style: italic; }
     .markdown-section .pk-size { color: #6b7280; font-size: 13px; }
-    /* collapsed sidebar sections */
-    .sidebar details.pk-navgroup > summary { list-style: none; cursor: pointer; }
-    .sidebar details.pk-navgroup > summary::-webkit-details-marker { display: none; }
-    .sidebar details.pk-navgroup > summary h4 { display: inline-block; margin: 0; }
-    .sidebar details.pk-navgroup > summary::before {
-      content: "▸"; display: inline-block; width: 1em; color: #8a9199;
-      transition: transform .12s ease;
-    }
-    .sidebar details.pk-navgroup[open] > summary::before { transform: rotate(90deg); }
   </style>
 </head>
 <body>
@@ -402,126 +395,13 @@
     });
   </script>
   <script>
-    // Collapse the sidebar's curated-panel sections. Wrapping them in <details> in the
-    // markdown is not an option: docsify does not re-enter markdown inside an HTML block, so
-    // every drug link inside would render as literal text. Instead the section headings are
-    // found in the DOM after render and each heading + its list is moved into a <details>.
-    //
-    // The ATC tree is folded by the next plugin (pk-fold), per level-1 group and level-3
-    // class, not wrapped in <details>: a class label is a link to its own page and must
-    // stay one, and the drug leaves must stay real list items for docsify's active-link
-    // handling.
     window.$docsify = window.$docsify || {};
-    (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
-      var COLLAPSE = ['ddd', 'dbs', 'dph', 'dse', 'toxins'];
-      hook.doneEach(function () {
-        var nav = document.querySelector('.sidebar-nav') || document.querySelector('.sidebar');
-        if (!nav) return;
-        nav.querySelectorAll('h4').forEach(function (h) {
-          var name = (h.textContent || '').trim().split(/\s+/)[0].toLowerCase();
-          if (COLLAPSE.indexOf(name) < 0) return;
-          if (h.parentNode && h.parentNode.tagName === 'SUMMARY') return;   // already done
-          var list = h.nextElementSibling;
-          if (!list || list.tagName !== 'UL') return;
-          var d = document.createElement('details');
-          d.className = 'pk-navgroup';
-          var sm = document.createElement('summary');
-          h.parentNode.insertBefore(d, h);
-          sm.appendChild(h);
-          d.appendChild(sm);
-          d.appendChild(list);
-          // Keep the section open when the page being viewed is inside it, so the reader is
-          // never looking at a page whose own entry is hidden.
-          if (list.querySelector('a.active, li.active')) d.open = true;
-        });
-      });
-    });
-
-
-
-    // ── ATC tree folding ────────────────────────────────────────────────────────
-    // nav.py emits the ATC tree as one nested list: level 1 "- **A Alimentary …**", level 2
-    // "  - A01 …" (plain text), level 3 "    - [A01A …](atc/A01A.md)" with the drugs as its
-    // leaves — 4 600 lines that every page used to show in full. Levels 1 and 3 fold: a
-    // chevron before the label toggles the list, closed by default; level 2 is a plain
-    // heading and stays as it is. The level-3 label is still the link to the class page —
-    // only the chevron (and, for level 1, the bold text, which links nowhere) toggles.
-    // The branch holding the page being viewed is opened on every route change, and the
-    // reader's own opens/closes survive navigation and reloads (localStorage, best effort:
-    // a private window or blocked storage just means "closed" again next time).
-    (window.$docsify.plugins = window.$docsify.plugins || []).push(function (hook) {
-      var KEY = 'pk-sidebar-open';
-      function readOpen() {
-        try { return JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { return {}; }
-      }
-      function writeOpen(o) { try { localStorage.setItem(KEY, JSON.stringify(o)); } catch (e) {} }
-      function idOf(li) {
-        var a = li.querySelector(':scope > a'), st = li.querySelector(':scope > strong');
-        return a ? a.getAttribute('href') : (st ? 'l1:' + (st.textContent || '').trim().split(/\s+/)[0] : null);
-      }
-      function setOpen(li, open, persist) {
-        li.classList.toggle('pk-open', !!open);
-        if (!persist) return;
-        var o = readOpen(), id = li.getAttribute('data-pk-fold');
-        if (open) o[id] = 1; else delete o[id];
-        writeOpen(o);
-      }
-      function fold(li, open) {
-        var btn = document.createElement('span');
-        btn.className = 'pk-fold-btn';
-        btn.textContent = '▶';
-        btn.setAttribute('role', 'button');
-        btn.setAttribute('aria-label', 'toggle');
-        btn.addEventListener('click', function (ev) {
-          ev.preventDefault(); ev.stopPropagation();
-          setOpen(li, !li.classList.contains('pk-open'), true);
-        });
-        li.insertBefore(btn, li.firstChild);
-        var st = li.querySelector(':scope > strong');
-        if (st) st.addEventListener('click', function () { btn.click(); });
-        li.classList.add('pk-fold');
-        li.setAttribute('data-pk-fold', idOf(li));
-        setOpen(li, open, false);
-      }
-      function atcList(nav) {
-        var h = Array.prototype.find.call(nav.querySelectorAll('h4'), function (x) {
-          return (x.textContent || '').trim() === 'ATC';
-        });
-        var ul = h && h.nextElementSibling;
-        return (ul && ul.tagName === 'UL') ? ul : null;
-      }
-      function build(nav) {
-        var ul = atcList(nav);
-        if (!ul || ul.getAttribute('data-pk-folded')) return;
-        ul.setAttribute('data-pk-folded', '1');
-        var open = readOpen();
-        // level 1: <li><strong>A …</strong><ul>…</ul></li>
-        Array.prototype.forEach.call(ul.children, function (l1) {
-          if (!l1.querySelector(':scope > strong') || !l1.querySelector(':scope > ul')) return;
-          fold(l1, !!open[idOf(l1)]);
-          // level 3: two lists down, <li><a href="#/atc/A01A">…</a><ul>drugs</ul></li>
-          l1.querySelectorAll(':scope > ul > li > ul > li').forEach(function (l3) {
-            var a = l3.querySelector(':scope > a');
-            if (!a || !/\/atc\//.test(a.getAttribute('href') || '') || !l3.querySelector(':scope > ul')) return;
-            fold(l3, !!open[idOf(l3)]);
-          });
-        });
-      }
-      function reveal(nav) {
-        // open every fold above the active entry, without recording it as the reader's choice
-        var act = nav.querySelector('.sidebar-nav li.active, .sidebar-nav a.active') ||
-                  nav.querySelector('li.active, a.active');
-        for (var el = act; el && el !== nav; el = el.parentNode) {
-          if (el.classList && el.classList.contains('pk-fold')) setOpen(el, true, false);
-        }
-      }
-      hook.doneEach(function () {
-        var nav = document.querySelector('.sidebar-nav') || document.querySelector('.sidebar');
-        if (!nav) return;
-        build(nav);
-        reveal(nav);
-      });
-    });
+    // Sidebar folding is docsify-sidebar-collapse (loaded below, pinned 1.3.5,
+    // vendored in assets/): nav.py emits ONE nested list, and every item with a child list is a folder.
+    // Closed by default; the branch of the page being viewed opens on every route change.
+    // It replaced two hand-written folds (a <details> wrap of the panel headings and a
+    // chevron button per ATC level) that looked and behaved differently from each other.
+    window.$docsify.sidebarDisplayLevel = 0;
 
     // ── sidebar search, over the database ──────────────────────────────────────
     // docsify's plugin indexed rendered pages into localStorage and blew its quota. This
@@ -1127,6 +1007,7 @@
   </script>
 
   <script src="assets/docsify.js"></script>
+  <script src="assets/docsify-sidebar-collapse.min.js"></script>
   <!-- The official docsify search plugin is NOT loaded. It caches its index in localStorage
        (~5 MB) and paths:'auto' crawls 8283 pages holding 62 MB of text, so it threw
        QuotaExceededError and stored nothing. The sidebar box below searches the database

@@ -18,22 +18,22 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 09:55 | 5:26 | 0/0/1 | 2/0/0 | 0/0/0 | 114,194/9,176 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/5 | 5/1 | 0 |
+| 2026-09-26 09:33 | 2:07 | 0/0/1 | 2/0/0 | 0/0/0 | 21,523/7,016 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/5 | 5/1 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Ritschel_1977_reference](drugs/drug_papaverine/Papaverine_Ritschel1977_reference.md) | Ritschel WA et al., Pharmacokinetics of papaverine in man, International journal of cl… (1977) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Ritschel_1977_reference](drugs/drug_papaverine/Papaverine_Ritschel1977_reference.md) | Ritschel WA et al., Pharmacokinetics of papaverine in man, International journal of cl… (1977) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Rehman_2022](drugs/drug_papaverine/pd_Rehman_2022_unknown.md) | Rehman (2022) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Rehman_2022_2](drugs/drug_papaverine/pd_Rehman_2022_2_inhibition_of_carbachol_induced_contraction.md) | Rehman (2022) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Rehman_2022_2](drugs/drug_papaverine/pd_Rehman_2022_2_inhibition_of_high_K_induced_contraction.md) | Rehman (2022) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Rehman_2022_2](drugs/drug_papaverine/pd_Rehman_2022_2_percent_inhibition_of_diarrhea.md) | Rehman (2022) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: disputed</span> | [Rehman_2022](drugs/drug_papaverine/pd_Rehman_2022_unknown.md) | Rehman (2022) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rehman_2022_2](drugs/drug_papaverine/pd_Rehman_2022_2_inhibition_of_carbachol_induced_contraction.md) | Rehman (2022) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rehman_2022_2](drugs/drug_papaverine/pd_Rehman_2022_2_inhibition_of_high_K_induced_contraction.md) | Rehman (2022) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rehman_2022_2](drugs/drug_papaverine/pd_Rehman_2022_2_percent_inhibition_of_diarrhea.md) | Rehman (2022) | — |
 
 ## ADME sites
 
@@ -70,7 +70,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Ritschel_1991.pdf` | Ritschel WA et al., Pharmacokinetics of papaverine HCl upon…, Methods and findings in exp… (1991) | popPK | 9 | not captured | [1870358](https://pubmed.ncbi.nlm.nih.gov/1870358) | The study is a relevant in vivo PK study of papaverine in dogs using a two-compartment model, but the specific numeric parameter values are not present in the provided evidence. |
 | `Hiraga_2001.pdf` | Hiraga H et al., Nitric oxide donor FK409 and 8-bromogua…, Fundamental & clinical phar… (2001) | pd | 4 | [10.1046/j.1472-8206.2001.00012.x](https://doi.org/10.1046/j.1472-8206.2001.00012.x) | [11468022](https://www.ncbi.nlm.nih.gov/pubmed/11468022) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-09-18T09:50:42.136369+00:00</sub>
+<sub>queue written 2026-09-26T09:31:36.227887+00:00</sub>
 
 ## Screened and excluded
 

@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 21:34 | 4:54 | 0/0/0 | 3/0/0 | 0/0/0 | 106,577/1,709 | ollama / qwen3.8:27b-mtp-q8_0 | 29 | 4/25 | 27/2 | 0 |
+| 2026-09-26 09:42 | 8:09 | 0/0/0 | 3/0/0 | 0/0/0 | 112,530/19,849 | ollama / qwen3.8:27b-mtp-q8_0 | 30 | 4/26 | 28/2 | 0 |
 
 ## popPK records
 
@@ -25,10 +25,10 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jarque_2018](drugs/drug_phloroglucinol/pd_Jarque_2018_mortality.md) | Jarque S et al., An automated screening method for detec…, PloS one (2018) | [10.1371/journal.pone.0203087](https://doi.org/10.1371/journal.pone.0203087) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jarque_2018](drugs/drug_phloroglucinol/pd_Jarque_2018_tg_mCherry_fluorescence.md) | Jarque S et al., An automated screening method for detec…, PloS one (2018) | [10.1371/journal.pone.0203087](https://doi.org/10.1371/journal.pone.0203087) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Weiz_2024](drugs/drug_phloroglucinol/pd_Weiz_2024_unknown.md) | Weiz G et al., Rutinosides-derived from Sarocladium st…, Microbial cell factories (2024) | [10.1186/s12934-024-02395-0](https://doi.org/10.1186/s12934-024-02395-0) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yuk_2020](drugs/drug_phloroglucinol/pd_Yuk_2020_XO.md) | Yuk HJ et al., Phloroglucinol Derivatives from Dryopte…, Molecules (Basel, Switzerla… (2020) | [10.3390/molecules26010122](https://doi.org/10.3390/molecules26010122) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.535). The first reading is what the record holds.">cross-check: disputed</span> | [Jarque_2018](drugs/drug_phloroglucinol/pd_Jarque_2018_mortality.md) | Jarque S et al., An automated screening method for detec…, PloS one (2018) | [10.1371/journal.pone.0203087](https://doi.org/10.1371/journal.pone.0203087) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Jarque_2018](drugs/drug_phloroglucinol/pd_Jarque_2018_tg_mCherry_fluorescence.md) | Jarque S et al., An automated screening method for detec…, PloS one (2018) | [10.1371/journal.pone.0203087](https://doi.org/10.1371/journal.pone.0203087) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Weiz_2024](drugs/drug_phloroglucinol/pd_Weiz_2024_unknown.md) | Weiz G et al., Rutinosides-derived from Sarocladium st…, Microbial cell factories (2024) | [10.1186/s12934-024-02395-0](https://doi.org/10.1186/s12934-024-02395-0) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yuk_2020](drugs/drug_phloroglucinol/pd_Yuk_2020_XO.md) | Yuk HJ et al., Phloroglucinol Derivatives from Dryopte…, Molecules (Basel, Switzerla… (2020) | [10.3390/molecules26010122](https://doi.org/10.3390/molecules26010122) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -38,18 +38,19 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 247 matched, 96 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 233 matched, 103 returned
+- **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_9 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_10 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Dollo_1999.pdf` | Dollo G et al., [Bioavailability of phloroglucinol in m…, Journal de pharmacie de Bel… (1999) | popPK | 8 | not captured | [10431474](https://pubmed.ncbi.nlm.nih.gov/10431474) | The paper reports a pharmacokinetic study of phloroglucinol in humans with parameters like T1/2 and AUC, but the specific numeric values are not present in the provided evidence text. |
+| `Sun_2026.pdf` | Sun Q et al., SIL-IS LC-MS/MS method for rapid quanti…, Journal of chromatography.… (2026) | popPK | 8 | [10.1016/j.jchromb.2026.125298](https://doi.org/10.1016/j.jchromb.2026.125298) | [42790030](https://pubmed.ncbi.nlm.nih.gov/42790030) | The paper describes a PK study for phloroglucinol, but the provided evidence contains only method validation details and no quantitative PK parameter values (e.g., CL, V, Cmax, AUC). |
 | `Cao_2018.pdf` | Cao JQ et al., Rearranged Phloroglucinol-Monoterpenoid…, Journal of natural products (2018) | pd | 4 | [10.1021/acs.jnatprod.7b00606](https://doi.org/10.1021/acs.jnatprod.7b00606) | [29261312](https://www.ncbi.nlm.nih.gov/pubmed/29261312) | metadata signals extractable PD data (IC50) |
 | `Hu_2016.pdf` | Hu L et al., (±)-Japonicols A-D, Acylphloroglucinol-…, Journal of natural products (2016) | pd | 4 | [10.1021/acs.jnatprod.5b01119](https://doi.org/10.1021/acs.jnatprod.5b01119) | [27116034](https://www.ncbi.nlm.nih.gov/pubmed/27116034) | metadata signals extractable PD data (EC50) |
 | `Hu_2024.pdf` | Hu RD et al., New α-Glucosidase Inhibitors from the W…, Journal of agricultural and… (2024) | pd | 4 | [10.1021/acs.jafc.4c00500](https://doi.org/10.1021/acs.jafc.4c00500) | [38736181](https://www.ncbi.nlm.nih.gov/pubmed/38736181) | metadata signals extractable PD data (IC50) |
@@ -59,7 +60,7 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Rajauria_2018.pdf` | Rajauria G, Optimization and validation of reverse…, Journal of pharmaceutical a… (2018) | pd | 4 | [10.1016/j.jpba.2017.10.002](https://doi.org/10.1016/j.jpba.2017.10.002) | [29055247](https://www.ncbi.nlm.nih.gov/pubmed/29055247) | metadata signals extractable PD data (EC50) |
 | `Rengasamy_2013.pdf` | Rengasamy KR et al., Potential antiradical and alpha-glucosi…, Food chemistry (2013) | pd | 4 | [10.1016/j.foodchem.2013.04.019](https://doi.org/10.1016/j.foodchem.2013.04.019) | [23790932](https://www.ncbi.nlm.nih.gov/pubmed/23790932) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-15T21:34:48.600043+00:00</sub>
+<sub>queue written 2026-09-26T09:37:26.107704+00:00</sub>
 
 ## Screened and excluded
 
@@ -92,6 +93,7 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Hu_2016 | irrelevant | 0 | 0 | The paper describes the isolation and anti-viral activity of acylphloroglucinol-based meroterpenoids, not the pharmacokinetics of phloroglucinol. |
 | popPK | Hu_2024 | irrelevant | 0 | 0 | no_text gate: only 127 chars of text extracted (&lt; 400) |
 | PD | Hu_2024 | not_relevant | 0 | 0 | The paper focuses on the discovery of new alpha-glucosidase inhibitors from Hypericum beanii and does not report pharmacodynamic or exposure-response data for phloroglucinol. |
+| popPK | Huong_2023 | irrelevant | 0 | 0 | The paper is a review of Icaritin, and phloroglucinol is only mentioned as a precursor in the synthesis of Icaritin, not as the subject drug for PK analysis. |
 | popPK | Ijaz_2016 | irrelevant | 0 | 0 | The paper focuses on the antioxidant potential of cyanobacteria and does not involve pharmacokinetic studies of phloroglucinol. |
 | PD | Ijaz_2016 | not_relevant | 0 | 0 | The paper focuses on the antioxidant potential of cyanobacteria and their phenolic/flavonoid content, with no mention of phloroglucinol or any pharmacodynamic/exposure-response analysis. |
 | popPK | Ivanova_2020 | irrelevant | 0 | 0 | The paper is an in-vitro antioxidant screening study of chemical derivatives containing phloroglucinol fragments, not a pharmacokinetic study reporting disposition parameters for phloroglucinol. |
@@ -121,6 +123,7 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Mendonça_2024 | irrelevant | 0 | 0 | The paper is an in-vitro/in-silico study on the antiviral activity of plant extracts and does not report any pharmacokinetic parameters for phloroglucinol. |
 | PD | Mendonça_2024 | not_relevant | 2 | 1 | The paper reports a single EC50 value for crude plant extracts against viral replication and uses chemometric (PLS) models to correlate LC-MS features with activity, but it does not provide a concentration-effect curve, dose-response relationship, or numeric PD parameters (Emax, EC50, slope) for the specific compound phloroglucinol. |
 | popPK | Menezes_2017 | irrelevant | 0 | 0 | The paper investigates the anti-parasitic activity and mechanism of action of a phloroglucinol derivative, not its pharmacokinetic parameters. |
+| popPK | Mohos_2020 | irrelevant | 0 | 0 | The study is an in-vitro investigation of protein binding and enzyme inhibition, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for phloroglucinol. |
 | PGx | Mohos_2020 | not_relevant | 0 | 0 | The study investigates in vitro pharmacokinetic interactions (protein binding and enzyme inhibition) of phloroglucinol but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 | popPK | Mondal_2025 | irrelevant | 0 | 0 | The study focuses on the therapeutic efficacy and biodistribution of phloroglucinol-encased vesicles in a Parkinson's disease model, without reporting quantitative pharmacokinetic parameters such as clearance, volume, or half-life. |
 | PD | Mondal_2025 | not_relevant | 0 | 0 | The paper reports qualitative therapeutic efficacy and biodistribution of a drug delivery vehicle but does not provide any quantitative pharmacokinetic data, concentration-effect curves, or numeric PD parameters (e.g., Emax, EC50) for phloroglucinol. |
@@ -134,6 +137,7 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Pereira_2021 | irrelevant | 0 | 0 | The paper is a review on seaweed diets for neurodegenerative diseases and does not report pharmacokinetic parameters for phloroglucinol. |
 | PD | Pereira_2021 | not_relevant | 0 | 0 | The paper is a general review on seaweed diets and neurodegenerative diseases; it does not report specific pharmacodynamic or exposure-response data for phloroglucinol. |
 | popPK | Pham_2019 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study on immunosuppressive activities of phloroglucinol derivatives and does not report any pharmacokinetic parameters. |
+| popPK | Piras_2024 | irrelevant | 0 | 0 | The study focuses on the neuroprotective effects of arzanol (a phloroglucinol derivative) in cell lines and does not report quantitative pharmacokinetic parameters for phloroglucinol. |
 | popPK | Popoola_2015 | irrelevant | 0 | 0 | The paper is a phytochemical and in-vitro biological activity study of acylphloroglucinol derivatives, containing no pharmacokinetic data or disposition parameters. |
 | popPK | Qadan_2011 | irrelevant | 0 | 0 | The paper is a phytochemical study on Ginkgo biloba antioxidants where phloroglucinol is used only as a reagent for acid-catalyzed degradation, not as a subject drug for pharmacokinetic analysis. |
 | PD | Qadan_2011 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant activity (IC50) of Ginkgo biloba compounds, not a pharmacodynamic or exposure-response relationship for the drug phloroglucinol. |
@@ -160,6 +164,8 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Silva_2026 | irrelevant | 0 | 0 | The paper is a pharmacological study on the antileishmanial activity of a phloroglucinol derivative and does not report any pharmacokinetic parameters. |
 | popPK | Sukandar_2024 | irrelevant | 0 | 0 | The paper is a phytochemical study on the isolation and structure elucidation of polyprenylated benzoylphloroglucinols, containing no pharmacokinetic data for the drug phloroglucinol. |
 | PD | Sukandar_2024 | not_relevant | 3 | 3 | The paper reports IC50 values for cytotoxicity (dose-response) but does not provide the full concentration-effect curves or data points required to derive standard PD parameters like Emax or slope, nor does it involve PK modeling. |
+| popPK | Sun_2026 | relevant | 8 | 0 | The paper describes a PK study for phloroglucinol, but the provided evidence contains only method validation details and no quantitative PK parameter values (e.g., CL, V, Cmax, AUC). |
+| popPK | Voynikov_2025 | irrelevant | 0 | 0 | The paper is a review of arzanol (a phloroglucinol derivative), not a primary pharmacokinetic study of phloroglucinol itself, and no quantitative PK parameters are provided. |
 | popPK | Wang_2022 | irrelevant | 0 | 0 | Phloroglucinol is used only as a chemical precursor for synthesizing the mesoporous carbon nanoparticles, not as the subject drug for pharmacokinetic analysis. |
 | popPK | Wang_2024 | irrelevant | 0 | 0 | The paper investigates microbial biotransformation of flavonols (quercetin, kaempferol, fisetin) and does not report pharmacokinetic parameters for phloroglucinol. |
 | popPK | Wang_2026 | irrelevant | 0 | 0 | The paper describes a computational metabolomics framework (TidyMass2) and does not report pharmacokinetic parameters for phloroglucinol. |
@@ -176,6 +182,7 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Zhang_2025 | irrelevant | 0 | 0 | The paper reports on the isolation and antifungal activity of phloroglucinol derivatives, not pharmacokinetic parameters for phloroglucinol. |
 | popPK | Zhi_2018 | irrelevant | 0 | 0 | The paper is a natural product isolation and structural elucidation study of phloroglucinol derivatives, containing no pharmacokinetic data or disposition parameters. |
 | PD | Zhi_2018 | not_relevant | 2 | 2 | The paper reports IC50 values for anti-inflammatory activity, which are single-point potency metrics, but does not provide a dose-response curve, Emax, or any pharmacokinetic/pharmacodynamic modeling parameters. |
+| popPK | da_2023 | irrelevant | 0 | 0 | The study is an in silico ADMET prediction for dimeric acylphloroglucinols, not a pharmacokinetic study reporting quantitative disposition parameters for the specific drug phloroglucinol. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

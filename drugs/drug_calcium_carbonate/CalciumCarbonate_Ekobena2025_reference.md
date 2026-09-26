@@ -5,7 +5,7 @@
 
 # calcium carbonate — `CalciumCarbonate_Ekobena2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q27]` (0.504 vs not captured) and 11 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
 
@@ -53,14 +54,31 @@ Ekobena P; Briki M; Dao K; Marzolini C; Andre P; Buclin T; Cavassini M; Guidi M;
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `values[Q27]` | 0.504 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | 124 | 22 | mismatch |
+| `gpt-oss:120b` | `values[Q316]` | not captured | 27 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q37]` | 2781 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 61 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q44]` | 1.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q49]` | 2.6 | 0.64 | mismatch |
+| `gpt-oss:120b` | `values[Q56]` | 4.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 17.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q61]` | 11.6 | 10.9 | mismatch |
+| `gpt-oss:120b` | `values[Q83]` | 0.235 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -74,6 +92,7 @@ _Every reader agrees on every compared field of this record._
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ekobena_2025:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Ekobena_2025:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ekobena_2025:review'] |

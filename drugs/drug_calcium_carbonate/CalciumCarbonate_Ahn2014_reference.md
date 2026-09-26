@@ -94,15 +94,10 @@ Ahn JE; Jeon S; Lee J; Han S; Yim DS et al. (2014). The Korean journal of physio
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ekobena_2025:review'] |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Ahn_2014_table_p3_1:row4:col1', 'Ahn_2014_table_p3_1:row4:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ekobena_2025:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.46 | not captured | not captured | ['Ekobena_2025:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.46 L/h | not captured | not captured | ['Ekobena_2025:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 11.6 L | not captured | not captured | ['Ekobena_2025:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -134,21 +129,18 @@ Ahn JE; Jeon S; Lee J; Han S; Yim DS et al. (2014). The Korean journal of physio
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference_modelica.zip" download>CalciumCarbonate_Ahn2014_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference_fmi.zip" download>CalciumCarbonate_Ahn2014_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference_fmi.zip" download>CalciumCarbonate_Ahn2014_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference_matlab.zip" download>CalciumCarbonate_Ahn2014_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference_matlab_simbio.zip" download>CalciumCarbonate_Ahn2014_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference_sbml.zip" download>CalciumCarbonate_Ahn2014_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference_cellml.zip" download>CalciumCarbonate_Ahn2014_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference.svg" alt="CalciumCarbonate_Ahn2014_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference/CalciumCarbonate_Ahn2014_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `CalciumCarbonate_Ahn2014_reference_params.json` · controls `CalciumCarbonate_Ahn2014_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
