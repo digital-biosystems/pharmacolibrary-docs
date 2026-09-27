@@ -1,12 +1,16 @@
 {
  "model_id": "Omeprazole_KhanAsa2020_reference",
+ "molar_masses": {
+  "C_central": 0.345416
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
  ],
  "parameters": {
   "Cl": 9.527777777777779e-07,
   "F": 1.0,
+  "MM": 0.345416,
   "Tlag": 0.0,
   "VdPerKg": 0.00068,
   "adminCount": 1.0,
@@ -16,10 +20,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 9919.7335438203
+  "C_central": 9919.7335438203
  },
  "reference_peaks": {
-  "central.C": 0.0017353014479510537
+  "C_central": 0.0017353014479510537
  },
  "stop_time": 259200.0,
  "template": "PK_1C_enteral",

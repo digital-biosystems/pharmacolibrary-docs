@@ -1,5 +1,8 @@
 {
  "model_id": "Doxazosin_Young1988_reference",
+ "molar_masses": {
+  "central.C": 0.4514751
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,11 +10,15 @@
  "parameters": {
   "Cl": 1.3833333333333336e-06,
   "F": 1.0,
+  "MM": 0.4514751,
   "VdPerKg": 0.00025659361798668,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
   "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662079
  },
  "reference_peaks": {
   "central.C": 0.005440770509167031

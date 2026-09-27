@@ -1,12 +1,16 @@
 {
  "model_id": "Atorvastatin_Li2024_reference",
+ "molar_masses": {
+  "central.C": 0.5586398
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 4.839444444444445e-05,
   "F": 1.0,
+  "MM": 0.5586398,
   "Tlag": 0.0,
   "VdPerKg": 0.015994571428571427,
   "adminCount": 1.0,
@@ -15,10 +19,13 @@
   "ka": 0.0002111111111111111,
   "weight": 70.0
  },
- "reference_peaks": {
-  "C_central": 5.93648126264419e-05
+ "reference_peak_times": {
+  "central.C": 9739.478957915831
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 5.936432673372033e-05
+ },
+ "stop_time": 97200.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

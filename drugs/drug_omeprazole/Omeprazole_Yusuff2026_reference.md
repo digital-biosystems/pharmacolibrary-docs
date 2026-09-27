@@ -28,6 +28,9 @@ Yusuff H; Gadsby J; Isgro G; Zochios V; Jenkins D; Cooke S; Mulla H et al. (2026
 ## Model component
 <dbs-pgx drug="omeprazole" model-id="Omeprazole_Yusuff2026_reference" status="accepted_with_caveats" stale="false" population="" measured-compound="omeprazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 3 extracted, plus 2 covariate effects.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -128,6 +131,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_omeprazole/Omeprazole_Yusuff2026_reference/Omeprazole_Yusuff2026_reference.svg" alt="Omeprazole_Yusuff2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
 
 <dbs-fmusim paramsurl="drugs/drug_omeprazole/Omeprazole_Yusuff2026_reference/Omeprazole_Yusuff2026_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_omeprazole/Omeprazole_Yusuff2026_reference/Omeprazole_Yusuff2026_reference_sim_controls.json"></dbs-fmusim>
 

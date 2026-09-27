@@ -29,6 +29,9 @@ Gieschke R; Burger HU; Reigner B; Blesch KS; Steimer JL et al. (2003). British j
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Gieschke2003_reference" status="rejected" stale="false" population="patients with advanced or metastatic colorectal cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 7 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters

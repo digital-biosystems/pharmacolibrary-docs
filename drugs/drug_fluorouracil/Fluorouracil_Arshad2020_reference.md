@@ -27,6 +27,9 @@ Arshad U; Ploylearmsaeng SA; Karlsson MO; Doroshyenko O; Langer D; Schömig E; e
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Arshad2020_reference" status="model_quarantined" stale="false" population="gastrointestinal cancer patients" measured-compound="5-fluorouracil" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></dbs-pgx>
 
+**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Parameters:** 4 extracted.
+
 **Parameterization:** CL/F, V/F — apparent_wrt_Fm, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
@@ -109,7 +112,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kang_2025:review'] |
@@ -152,12 +155,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Arshad2020_reference/Fluorouracil_Arshad2020_reference_matlab.zip" download>Fluorouracil_Arshad2020_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Arshad2020_reference/Fluorouracil_Arshad2020_reference_matlab_simbio.zip" download>Fluorouracil_Arshad2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Arshad2020_reference/Fluorouracil_Arshad2020_reference_sbml.zip" download>Fluorouracil_Arshad2020_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Arshad2020_reference/Fluorouracil_Arshad2020_reference_cellml.zip" download>Fluorouracil_Arshad2020_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

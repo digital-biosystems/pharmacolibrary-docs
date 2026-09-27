@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Kathman2022_reference&quot;,&quot;label&quot;:&quot;Kathman_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Kathman2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# P2Y12 reaction units — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# P2Y12 reaction units — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -76,16 +76,20 @@ Deviations:
 
 ## Review
 
-Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
+Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `scholar`
 
 | check | status | note |
 |---|---|---|
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.00%) |
+| `T1b_fmu` | fail | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 100.00%) |
 | `T2_direction` | pass | curve direction matches effect_direction |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Blocking:
+
+- T1b the template FMU departs from the closed form by 100.0%
 
 Advisory:
 
@@ -94,20 +98,9 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_PD_pru/Ticagrelor_strand2019_PD_pru_modelica.zip" download>Ticagrelor_strand2019_PD_pru_modelica.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_PD_pru/Ticagrelor_strand2019_PD_pru_fmi.zip" download>Ticagrelor_strand2019_PD_pru_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_PD_pru/Ticagrelor_strand2019_PD_pru_matlab.zip" download>Ticagrelor_strand2019_PD_pru_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_PD_pru/Ticagrelor_strand2019_PD_pru_sbml.zip" download>Ticagrelor_strand2019_PD_pru_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_strand2019_PD_pru/Ticagrelor_strand2019_PD_pru_cellml.zip" download>Ticagrelor_strand2019_PD_pru_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PD_SigmoidEmaxSweep.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

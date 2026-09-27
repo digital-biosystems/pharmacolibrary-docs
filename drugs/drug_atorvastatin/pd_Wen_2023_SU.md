@@ -1,7 +1,8 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atorvastatin_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Li2024_reference&quot;,&quot;label&quot;:&quot;Li_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Li2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Malekinejad2014_reference&quot;,&quot;label&quot;:&quot;Malekinejad_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Malekinejad2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Morath2025_reference&quot;,&quot;label&quot;:&quot;Morath_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Wen2023_reference&quot;,&quot;label&quot;:&quot;Wen_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Wen2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Park2017_reference&quot;,&quot;label&quot;:&quot;Park_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Park2017_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Stillemans2022_reference&quot;,&quot;label&quot;:&quot;Stillemans_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Stillemans2022_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;atorvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/&quot;},{&quot;label&quot;:&quot;Wen_2023 \u00b7 PD serum urate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atorvastatin_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Kong2025_reference&quot;,&quot;label&quot;:&quot;Kong_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Kong2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Li2024_reference&quot;,&quot;label&quot;:&quot;Li_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Li2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Malekinejad2014_reference&quot;,&quot;label&quot;:&quot;Malekinejad_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Malekinejad2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Morath2025_reference&quot;,&quot;label&quot;:&quot;Morath_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Wen2023_reference&quot;,&quot;label&quot;:&quot;Wen_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Wen2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Courlet2020_reference&quot;,&quot;label&quot;:&quot;Courlet_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Courlet2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Park2017_reference&quot;,&quot;label&quot;:&quot;Park_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Park2017_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Stillemans2022_reference&quot;,&quot;label&quot;:&quot;Stillemans_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Stillemans2022_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Narwal2010_reference&quot;,&quot;label&quot;:&quot;Narwal_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Narwal2010_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Tsamandouras2017_reference&quot;,&quot;label&quot;:&quot;Tsamandouras_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Tsamandouras2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# serum urate — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+# serum urate — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -38,6 +39,47 @@ Wen YF; Brundage RC; Roman YM; Culhane-Pera KA; Straka RJ et al. (2023). British
 </details>
 
 
+## Exposure-response model
+
+`Atorvastatin_Wen2023_PD_su` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| Emax | -7.6 mg/dL | -0.076 kg/m3 |
+| EC50 | 17.6 mg/L | 0.0176 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -0.038, `at_inf` = -0.076
+
+Deviations:
+
+- `defaulted_parameters` — E0, gamma
+- `pd_binding_off_target_driver` — driver compound 'oxypurinol' is not 'atorvastatin' nor one of its metabolites — the curve belongs to that compound's exposure (S12)
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | fail | off-target driver — the curve belongs to that compound |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | curve direction matches effect_direction |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Blocking:
+
+- off_target_driver: 'oxypurinol' is not 'atorvastatin' (S12)
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
 
@@ -68,23 +110,15 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+<dbs-fmusim paramsurl="drugs/drug_atorvastatin/Atorvastatin_Wen2023_PD_su/Atorvastatin_Wen2023_PD_su_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_atorvastatin/Atorvastatin_Wen2023_PD_su/Atorvastatin_Wen2023_PD_su_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PD_SigmoidEmaxSweep` · parameters `Atorvastatin_Wen2023_PD_su_params.json` · controls `Atorvastatin_Wen2023_PD_su_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

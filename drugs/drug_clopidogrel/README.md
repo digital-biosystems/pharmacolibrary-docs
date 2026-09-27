@@ -5,7 +5,8 @@
 
 - **generic name:** clopidogrel
 - **ATC codes:** `B01AC04`
-- **DrugBank:** [DB00758](https://go.drugbank.com/drugs/DB00758)
+- **DrugBank:** [DB00758](https://go.drugbank.com/drugs/DB00758) · **PubChem:** [CID 60606](https://pubchem.ncbi.nlm.nih.gov/compound/60606)
+- **molar mass:** 321.822 g/mol (C16H16ClNO2S) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -17,6 +18,18 @@ It has been shown to be superior to [aspirin] in reducing cardiovascular outcome
 Clopidogrel was granted FDA approval on 17 November 1997.[L7213]
 
 **Indication.** Clopidogrel is indicated to reduce the risk of myocardial infarction for patients with non-ST elevated acute coronary syndrome (ACS), patients with ST-elevated myocardial infarction, and in recent MI, stroke, or established peripheral arterial disease,[L7213]
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| clopidogrel | parent | 321.822 | C16H16ClNO2S | DrugBank | [60606](https://pubchem.ncbi.nlm.nih.gov/compound/60606) | Danielak_2017, Grafeneder_2024, Henrich_2021, Jiang_2025, Jung_2024, Koh_2025, Lee_2012, Lv_2025, Ma_2014, Purohit_2026, Wang_2025, Xie_2014, Yata_2026, Zhang_2024, Zhang_2025 |
+| clopidogrel active metabolite | metabolite | 355.833 | C16H18ClNO4S | PubChem | [10066813](https://pubchem.ncbi.nlm.nih.gov/compound/10066813) | Grafeneder_2024, Xie_2014 |
+| clopidogrel carboxylic acid (SR26334) | metabolite | 307.792 | C15H14ClNO2S | PubChem | [9861403](https://pubchem.ncbi.nlm.nih.gov/compound/9861403) | Jung_2024, Lee_2012 |
+| clopidogrel H4 | metabolite | — (mass units only) | — | — | — | — |
+| H4 | metabolite | — (mass units only) | — | — | — | — |
 
 ## Extraction summary
 
@@ -52,7 +65,6 @@ Clopidogrel was granted FDA approval on 17 November 1997.[L7213]
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Garcia_2025](drugs/drug_clopidogrel/pd_Garcia_2025_FXIIa_KA.md) | Garcia R et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70009](https://doi.org/10.1002/psp4.70009) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Garcia_2025](drugs/drug_clopidogrel/pd_Garcia_2025_HAE_attack.md) | Garcia R et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70009](https://doi.org/10.1002/psp4.70009) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.66). The first reading is what the record holds.">cross-check: disputed</span> | [Jung_2024](drugs/drug_clopidogrel/pd_Jung_2024_PRU.md) | Jung YS et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13053](https://doi.org/10.1002/psp4.13053) |
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.567). The first reading is what the record holds.">cross-check: disputed</span> | [Koh_2025](drugs/drug_clopidogrel/pd_Koh_2025_TXB2.md) | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/dddt.s533428](https://doi.org/10.2147/dddt.s533428) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Orr-Burks_2021](drugs/drug_clopidogrel/pd_Orr_Burks_2021_TCID50_HA_endpoint.md) | Orr-Burks N et al., Drug repositioning of Clopidogrel or Tr…, PloS one (2021) | [10.1371/journal.pone.0259129](https://doi.org/10.1371/journal.pone.0259129) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Orr-Burks_2021](drugs/drug_clopidogrel/pd_Orr_Burks_2021_influenza_NP_immunostaining.md) | Orr-Burks N et al., Drug repositioning of Clopidogrel or Tr…, PloS one (2021) | [10.1371/journal.pone.0259129](https://doi.org/10.1371/journal.pone.0259129) |
@@ -68,6 +80,7 @@ Clopidogrel was granted FDA approval on 17 November 1997.[L7213]
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.422). The first reading is what the record holds.">cross-check: disputed</span> | [Tosca_2024](drugs/drug_clopidogrel/pd_Tosca_2024_WBC.md) | Tosca EM et al., In silico trial for the assessment of g…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13087](https://doi.org/10.1002/psp4.13087) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Henrich_2021](drugs/drug_clopidogrel/pd_Henrich_2021_IPA.md) | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Henrich_2021](drugs/drug_clopidogrel/pd_Henrich_2021_PRU.md) | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.66). The first reading is what the record holds.">cross-check: disputed</span> | [Jung_2024](drugs/drug_clopidogrel/pd_Jung_2024_PRU.md) | Jung YS et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13053](https://doi.org/10.1002/psp4.13053) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Li_2025](drugs/drug_clopidogrel/pd_Li_2025_P2Y12_receptor_occupancy.md) | Li H et al., Real-time platelet P2Y12 receptor occup…, Acta pharmaceutica Sinica. B (2025) | [10.1016/j.apsb.2024.08.008](https://doi.org/10.1016/j.apsb.2024.08.008) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Liu_2020](drugs/drug_clopidogrel/pd_Liu_2020_Inhibition_of_Platelet_Aggregation.md) | Liu S et al., Predicting the Effects of CYP2C19 and C…, Frontiers in pharmacology (2020) | [10.3389/fphar.2020.591854](https://doi.org/10.3389/fphar.2020.591854) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.514). The first reading is what the record holds.">cross-check: disputed</span> | [Mahar_2025](drugs/drug_clopidogrel/pd_Mahar_2025_Hgb.md) | Mahar KM et al., Integrated Longitudinal Population Dose…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3544](https://doi.org/10.1002/cpt.3544) |

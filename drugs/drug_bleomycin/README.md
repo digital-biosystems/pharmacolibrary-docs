@@ -1,11 +1,12 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;bleomycin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Giri1986_reference&quot;,&quot;label&quot;:&quot;Giri_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Giri1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Schober1978v2_reference&quot;,&quot;label&quot;:&quot;Schober_1978_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Schober1978v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Giri1986_reference&quot;,&quot;label&quot;:&quot;Giri_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Giri1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Hall1982_abnormal_renal&quot;,&quot;label&quot;:&quot;Hall_1982_abnormal_renal&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Hall1982_abnormal_renal.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Hall1982_all_patients&quot;,&quot;label&quot;:&quot;Hall_1982_all_patients&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Hall1982_all_patients.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Hall1982_patients_with&quot;,&quot;label&quot;:&quot;Hall_1982_patients_with&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Hall1982_patients_with.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Schober1978v2_reference&quot;,&quot;label&quot;:&quot;Schober_1978_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Schober1978v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # bleomycin
 
 - **generic name:** bleomycin
 - **ATC codes:** `L01DC01`
-- **DrugBank:** [DB00290](https://go.drugbank.com/drugs/DB00290)
+- **DrugBank:** [DB00290](https://go.drugbank.com/drugs/DB00290) · **PubChem:** [CID 5360373](https://pubchem.ncbi.nlm.nih.gov/compound/5360373)
+- **molar mass:** 1415.552 g/mol (C55H84N17O21S3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -14,21 +15,32 @@
 
 **Indication.** For palliative treatment in the management malignant neoplasm (trachea, bronchus, lung), squamous cell carcinoma, and lymphomas.
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| bleomycin | parent | 1415.55 | C55H84N17O21S3 | DrugBank | [5360373](https://pubchem.ncbi.nlm.nih.gov/compound/5360373) | Hall_1982 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-23 06:07 | 32:36 | 3/0/3 | 10/2/1 | 1/0/4 | 679,566/63,039 | ollama / qwen3.8:27b-mtp-q8_0 | 64 | 69/30 | 31/31 | 0 |
+| 2026-09-27 14:17 | 8:05 | 3/1/5 | 10/2/1 | 1/0/4 | 129,328/18,148 | ollama / qwen3.8:27b-mtp-q8_0 | 64 | 61/40 | 31/31 | 0 |
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wilde_2007_reference](drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md) | Wilde S et al., Population pharmacokinetics of the BEAC…, Clinical pharmacokinetics (2007) | [10.2165/00003088-200746040-00005](https://doi.org/10.2165/00003088-200746040-00005) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yadav_2023_reference](drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md) | Yadav R et al., Utilizing PK and PD Biomarkers to Guide…, Journal of pharmaceutical s… (2023) | [10.1016/j.xphs.2023.07.005](https://doi.org/10.1016/j.xphs.2023.07.005) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Zhao_2025_reference](drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md) | Zhao (2025) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Giri_1986_reference](drugs/drug_bleomycin/Bleomycin_Giri1986_reference.md) | Giri SN, Pharmacokinetics, subcellular distribut…, Experimental and molecular… (1986) | [10.1016/0014-4800(86)90060-2](https://doi.org/10.1016/0014-4800(86)90060-2) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Schober_1978_2_reference](drugs/drug_bleomycin/Bleomycin_Schober1978v2_reference.md) | Schober O et al., [Studies of 57-co-bleomycin in patients…, RoFo : Fortschritte auf dem… (1978) | [10.1055/s-0029-1230942](https://doi.org/10.1055/s-0029-1230942) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: partial</span> | [Wilde_2007_reference](drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md) | 2-compartment, IV | 4 | Wilde S et al., Population pharmacokinetics of the BEAC…, Clinical pharmacokinetics (2007) | [10.2165/00003088-200746040-00005](https://doi.org/10.2165/00003088-200746040-00005) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.308). The first reading is what the record holds.">cross-check: disputed</span> | [Yadav_2023_reference](drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md) | 2-compartment, IV | 3 | Yadav R et al., Utilizing PK and PD Biomarkers to Guide…, Journal of pharmaceutical s… (2023) | [10.1016/j.xphs.2023.07.005](https://doi.org/10.1016/j.xphs.2023.07.005) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Zhao_2025_reference](drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md) | 2-compartment, IV | 4 | Zhao (2025) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Giri_1986_reference](drugs/drug_bleomycin/Bleomycin_Giri1986_reference.md) | 1-compartment (no model) | 1 | Giri SN, Pharmacokinetics, subcellular distribut…, Experimental and molecular… (1986) | [10.1016/0014-4800(86)90060-2](https://doi.org/10.1016/0014-4800(86)90060-2) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q61 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Hall_1982_abnormal_renal](drugs/drug_bleomycin/Bleomycin_Hall1982_abnormal_renal.md) | 1-compartment (no model) | 2 | Hall (1982) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q61 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Hall_1982_all_patients](drugs/drug_bleomycin/Bleomycin_Hall1982_all_patients.md) | 1-compartment (no model) | 2 | Hall (1982) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q61 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Hall_1982_patients_with](drugs/drug_bleomycin/Bleomycin_Hall1982_patients_with.md) | 1-compartment (no model) | 2 | Hall (1982) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Schober_1978_2_reference](drugs/drug_bleomycin/Bleomycin_Schober1978v2_reference.md) | 1-compartment (no model) | 4 | Schober O et al., [Studies of 57-co-bleomycin in patients…, RoFo : Fortschritte auf dem… (1978) | [10.1055/s-0029-1230942](https://doi.org/10.1055/s-0029-1230942) |
 
 ## Pharmacodynamics (PD)
 
@@ -107,8 +119,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 510 matched, 153 returned
-- **screened:** 6  ·  **relevant:** 5
-- **records:** 5  ·  extracted 3  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **screened:** 39  ·  **relevant:** 5
+- **records:** 8  ·  extracted 3  ·  needs_review 5  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
@@ -301,4 +313,4 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | van_2022 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of nintedanib on SIK2 in a bleomycin-induced fibrosis model using genetic knockouts and in vitro assays, but does not report any population pharmacodynamic or exposure-response modeling. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-23 05:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-27 14:12 UTC</sub>

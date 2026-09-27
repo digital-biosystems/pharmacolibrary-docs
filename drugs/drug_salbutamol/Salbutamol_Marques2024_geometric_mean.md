@@ -28,6 +28,9 @@ not matched (stem Marques_2024)
 ## Model component
 <dbs-pgx drug="salbutamol" model-id="Salbutamol_Marques2024_geometric_mean" status="needs_review" stale="true" population="virtual patients (healthy and cirrhosis)" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -95,7 +98,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | fail | 2.78 | 2.011 | 0.7234 | 0.25 | reported t½β |

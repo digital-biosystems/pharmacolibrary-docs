@@ -27,6 +27,9 @@ Daryani VM; Patel YT; Tagen M; Turner DC; Carcaboso AM; Atkinson JM; et al. et a
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Daryani2016_reference" status="rejected" stale="false" population="children with ependymoma" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 9 extracted, plus 3 covariate effects.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -137,7 +140,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 12 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q30 | fail | [length] | Qm | not captured | not captured | ['psp412075-tbl-0001:row5:col2', 'psp412075-tbl-0001:row5:col3'] |

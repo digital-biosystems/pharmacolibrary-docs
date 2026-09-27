@@ -26,6 +26,9 @@ Tsamandouras N; Dickinson G; Guo Y; Hall S; Rostami-Hodjegan A; Galetin A; et al
 ## Model component
 <dbs-pgx drug="simvastatin" model-id="Simvastatin_Tsamandouras2015_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="simvastatin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 5 extracted, plus 2 covariate effects.
+
 **Parameterization:** mechanistic.
 
 ## Parameters

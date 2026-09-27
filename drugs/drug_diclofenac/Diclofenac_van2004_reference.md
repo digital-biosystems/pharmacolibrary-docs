@@ -29,6 +29,9 @@ van der Marel CD; Anderson BJ; Rømsing J; Jacqz-Aigrain E; Tibboel D et al. (20
 ## Model component
 <dbs-pgx drug="diclofenac" model-id="Diclofenac_van2004_reference" status="rejected" stale="true" population="children undergoing tonsillectomy" measured-compound="diclofenac" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 5 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -101,7 +104,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['van_2004:abstract'] |

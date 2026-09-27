@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;telmisartan&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/&quot;},{&quot;label&quot;:&quot;Petersen_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Chae2018_reference&quot;,&quot;label&quot;:&quot;Chae_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Chae2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Hao2007_reference&quot;,&quot;label&quot;:&quot;Hao_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Hao2007_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Jeong2025_reference&quot;,&quot;label&quot;:&quot;Jeong_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Jeong2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_estimated_parameters&quot;,&quot;label&quot;:&quot;Tatami_2003_estimated_parameters&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_parameters.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_estimated_value&quot;,&quot;label&quot;:&quot;Tatami_2003_estimated_value&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_final_estimates_of_the_model_paramete&quot;,&quot;label&quot;:&quot;Tatami_2003_final_estimates_of_the_model_parameters&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_final_estimates_of_the_model_paramete.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_hypothesized_value&quot;,&quot;label&quot;:&quot;Tatami_2003_hypothesized_value&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_hypothesized_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Liu2023_reference&quot;,&quot;label&quot;:&quot;Liu_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Liu2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_value&quot;,&quot;label&quot;:&quot;Tatami_2003_value&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Chae2018_reference&quot;,&quot;label&quot;:&quot;Chae_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Chae2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Hao2007_reference&quot;,&quot;label&quot;:&quot;Hao_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Hao2007_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Jeong2025_reference&quot;,&quot;label&quot;:&quot;Jeong_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Jeong2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Telmisartan_Huang2019_reference&quot;,&quot;label&quot;:&quot;Huang_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Huang2019_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_estimated_parameters&quot;,&quot;label&quot;:&quot;Tatami_2003_estimated_parameters&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_parameters.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_estimated_value&quot;,&quot;label&quot;:&quot;Tatami_2003_estimated_value&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_final_estimates_of_the_model_paramete&quot;,&quot;label&quot;:&quot;Tatami_2003_final_estimates_of_the_model_parameters&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_final_estimates_of_the_model_paramete.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_hypothesized_value&quot;,&quot;label&quot;:&quot;Tatami_2003_hypothesized_value&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_hypothesized_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Liu2023_reference&quot;,&quot;label&quot;:&quot;Liu_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Liu2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_value&quot;,&quot;label&quot;:&quot;Tatami_2003_value&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # telmisartan — `Telmisartan_Petersen2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -18,21 +18,27 @@
 ### Reviewer guidance
 
 **Why:** T6_deviations
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (not captured vs 9.4) and 6 more field(s) — not a structural parameter.
 **How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
 <sub>owner: **engineer**</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-23 12:15:41.503850+00:00) predates the upstream re-run (2026-09-27 13:49:44.569966+00:00). Current validate status: `extracted`.
+
+> **Dose compound ≠ measured compound:** dosed `dolasetron mesylate`, measured `telmisartan`.
 
 ## Citation
 Petersen KU; Schmalix W; Pesic M; Stohr T et al. (2024). Current drug metabolism 25
   ·  DOI: [10.2174/0113892002308233240801104910](https://doi.org/10.2174/0113892002308233240801104910)
 
 ## Model component
-<dbs-pgx drug="telmisartan" model-id="Telmisartan_Petersen2024_reference" status="needs_review" stale="false" population="" measured-compound="telmisartan" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="telmisartan" model-id="Telmisartan_Petersen2024_reference" status="extracted" stale="true" population="unknown" measured-compound="telmisartan" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted, plus 1 covariate effect.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | apparent clearance | `Q27` · CL/F | 13.4 | mL/min/kg | 1.5633333333333335e-05 | L/h | not captured | review (0.7) | Petersen_2024:review | — | not captured |
@@ -63,9 +69,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.5 (7/14 fields) | 7 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | not captured | 9.4 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q31]` | not captured | 44 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q320]` | not captured | 9.8 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q33]` | not captured | 15 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q38]` | not captured | 21.2 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q58]` | not captured | 21 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q84]` | not captured | 28 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -120,7 +138,7 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_modelica.zip" download>Telmisartan_Petersen2024_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_fmi.zip" download>Telmisartan_Petersen2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_fmi.zip" download>Telmisartan_Petersen2024_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_matlab.zip" download>Telmisartan_Petersen2024_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_matlab_simbio.zip" download>Telmisartan_Petersen2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_sbml.zip" download>Telmisartan_Petersen2024_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -132,6 +150,8 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+
 <dbs-fmusim paramsurl="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_telmisartan/Telmisartan_Petersen2024_reference/Telmisartan_Petersen2024_reference_sim_controls.json"></dbs-fmusim>
 
 <sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Telmisartan_Petersen2024_reference_params.json` · controls `Telmisartan_Petersen2024_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
@@ -139,4 +159,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 13:49 UTC</sub>

@@ -28,6 +28,9 @@ not matched (stem Marques_2024)
 ## Model component
 <dbs-pgx drug="salbutamol" model-id="Salbutamol_Marques2024_estimate" status="needs_review" stale="true" population="virtual patients (healthy and cirrhosis)" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 7 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters

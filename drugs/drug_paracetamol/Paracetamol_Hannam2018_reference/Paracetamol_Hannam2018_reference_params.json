@@ -1,5 +1,8 @@
 {
  "model_id": "Paracetamol_Hannam2018_reference",
+ "molar_masses": {
+  "central.C": 0.151165
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,11 +10,15 @@
  "parameters": {
   "Cl": 0.00025666666666666665,
   "F": 1.0,
+  "MM": 0.151165,
   "VdPerKg": 9.071428571428571e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
   "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 519.438877755511
  },
  "reference_peaks": {
   "central.C": 0.0006493524209918755

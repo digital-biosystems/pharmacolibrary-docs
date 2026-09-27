@@ -5,7 +5,7 @@
 
 - **generic name:** palivizumab
 - **ATC codes:** `J06BD01`
-- **DrugBank:** [DB00110](https://go.drugbank.com/drugs/DB00110)
+- **DrugBank:** [DB00110](https://go.drugbank.com/drugs/DB00110) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About
@@ -18,16 +18,16 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-23 10:00 | 27:24 | 1/2/2 | 2/0/1 | 0/0/0 | 595,774/55,679 | ollama / qwen3.8:27b-mtp-q8_0 | 20 | 13/7 | 10/10 | 1 |
+| 2026-09-27 14:37 | 0:37 | 1/3/1 | 2/0/1 | 0/0/0 | 13,754/813 | ollama / qwen3.8:27b-mtp-q8_0 | 20 | 12/8 | 10/10 | 1 |
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Li_2021_reference](drugs/drug_palivizumab/Palivizumab_Li2021_reference.md) | Li J et al., Model Informed Development of VRC01 in…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2026](https://doi.org/10.1002/cpt.2026) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Reuter_2019_reference](drugs/drug_palivizumab/Palivizumab_Reuter2019_reference.md) | Reuter SE et al., Reducing Palivizumab Dose Requirements…, CPT: pharmacometrics & syst… (2019) | [10.1002/psp4.12364](https://doi.org/10.1002/psp4.12364) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q30, Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Robbie_2012_reference](drugs/drug_palivizumab/Palivizumab_Robbie2012_reference.md) | Robbie GJ et al., Population pharmacokinetics of palivizu…, Antimicrobial agents and ch… (2012) | [10.1128/aac.06446-11](https://doi.org/10.1128/aac.06446-11) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Madhi_2025_reference](drugs/drug_palivizumab/Palivizumab_Madhi2025_reference.md) | Madhi SA et al., A Phase 1b/2a Trial of a Half-life Exte…, The Journal of infectious d… (2025) | [10.1093/infdis/jiae581](https://doi.org/10.1093/infdis/jiae581) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span> | [Li_2021_reference](drugs/drug_palivizumab/Palivizumab_Li2021_reference.md) | 1-compartment, IV | 2 | Li J et al., Model Informed Development of VRC01 in…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2026](https://doi.org/10.1002/cpt.2026) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Reuter_2019_reference](drugs/drug_palivizumab/Palivizumab_Reuter2019_reference.md) | nonlinear / manual (no model) | 2 | Reuter SE et al., Reducing Palivizumab Dose Requirements…, CPT: pharmacometrics & syst… (2019) | [10.1002/psp4.12364](https://doi.org/10.1002/psp4.12364) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q30, Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Robbie_2012_reference](drugs/drug_palivizumab/Palivizumab_Robbie2012_reference.md) | 1-compartment (no model) | 4 (+2 cov.) | Robbie GJ et al., Population pharmacokinetics of palivizu…, Antimicrobial agents and ch… (2012) | [10.1128/aac.06446-11](https://doi.org/10.1128/aac.06446-11) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Madhi_2025_reference](drugs/drug_palivizumab/Palivizumab_Madhi2025_reference.md) | 1-compartment (no model) | 2 | Madhi SA et al., A Phase 1b/2a Trial of a Half-life Exte…, The Journal of infectious d… (2025) | [10.1093/infdis/jiae581](https://doi.org/10.1093/infdis/jiae581) |
 
 ## Pharmacodynamics (PD)
 
@@ -62,7 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 49 matched, 33 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 7  ·  **relevant:** 2
 - **records:** 4  ·  extracted 1  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

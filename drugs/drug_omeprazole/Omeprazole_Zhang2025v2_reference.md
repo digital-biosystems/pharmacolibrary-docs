@@ -28,6 +28,9 @@ not matched (stem Zhang_2025_2)
 ## Model component
 <dbs-pgx drug="omeprazole" model-id="Omeprazole_Zhang2025v2_reference" status="accepted_with_caveats" stale="false" population="" measured-compound="omeprazole" parameterization="apparent" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted, plus 2 covariate effects.
+
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
@@ -130,6 +133,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference/Omeprazole_Zhang2025v2_reference.svg" alt="Omeprazole_Zhang2025v2_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.861 /h, F 1).
 
 <dbs-fmusim paramsurl="drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference/Omeprazole_Zhang2025v2_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference/Omeprazole_Zhang2025v2_reference_sim_controls.json"></dbs-fmusim>
 

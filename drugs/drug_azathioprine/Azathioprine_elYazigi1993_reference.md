@@ -29,6 +29,9 @@ el-Yazigi A; Wahab FA et al. (1993). Journal of clinical pharmacology 33
 ## Model component
 <dbs-pgx drug="azathioprine" model-id="Azathioprine_elYazigi1993_reference" status="extracted" stale="true" population="renal transplant patients and rabbits" measured-compound="azathioprine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -56,7 +59,6 @@ el-Yazigi A; Wahab FA et al. (1993). Journal of clinical pharmacology 33
 - gap-filled Q22 (CL) from Rosario_2017's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q22 (CL) from Colman_2024's review values (primary lacked it)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -93,7 +95,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Rosario_2017:review'] |
@@ -144,6 +146,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference/Azathioprine_elYazigi1993_reference.svg" alt="Azathioprine_elYazigi1993_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
 
 <dbs-fmusim paramsurl="drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference/Azathioprine_elYazigi1993_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference/Azathioprine_elYazigi1993_reference_sim_controls.json"></dbs-fmusim>
 

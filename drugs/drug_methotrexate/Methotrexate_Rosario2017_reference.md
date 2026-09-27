@@ -5,7 +5,7 @@
 
 # methotrexate — `Methotrexate_Rosario2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** C8 unreachable/orphan compartment or unlinked metabolite
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q37]` (not captured vs 10) — not a structural parameter.
 **How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
 <sub>owner: **curator**</sub>
 
@@ -27,6 +28,9 @@ Rosario M; Dirks NL; Milch C; Parikh A; Bargfrede M; Wyant T; et al. et al. (201
 
 ## Model component
 <dbs-pgx drug="methotrexate" model-id="Methotrexate_Rosario2017_reference" status="rejected" stale="true" population="" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -57,9 +61,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.889 (8/9 fields) | 1 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q37]` | not captured | 10 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

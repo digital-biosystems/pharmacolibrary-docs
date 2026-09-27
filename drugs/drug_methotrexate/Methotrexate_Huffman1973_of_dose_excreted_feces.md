@@ -25,6 +25,9 @@ not matched (stem Huffman_1973)
 ## Model component
 <dbs-pgx drug="methotrexate" model-id="Methotrexate_Huffman1973_of_dose_excreted_feces" status="model_quarantined" stale="false" population="patients with malignancies" measured-compound="methotrexate" parameterization="apparent" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
+
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
@@ -91,7 +94,7 @@ not matched (stem Huffman_1973)
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | pass | 0.75 | 0.62 | 0.8267 | 0.25 | reported t½β |

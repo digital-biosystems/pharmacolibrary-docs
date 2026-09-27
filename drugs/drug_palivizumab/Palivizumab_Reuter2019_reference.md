@@ -27,6 +27,9 @@ Reuter SE; Evans AM; Ward MB et al. (2019). CPT: pharmacometrics & systems pharm
 ## Model component
 <dbs-pgx drug="palivizumab" model-id="Palivizumab_Reuter2019_reference" status="needs_review" stale="false" population="premature infants" measured-compound="palivizumab" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
 
+**Model structure:** nonlinear / manual; no model was built for this record.  
+**Parameters:** 2 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -86,7 +89,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Huang_2017:review'] |

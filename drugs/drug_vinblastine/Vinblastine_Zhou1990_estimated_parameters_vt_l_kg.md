@@ -26,6 +26,9 @@ Zhou XJ; Martin M; Placidi M; Cano JP; Rahmani R et al. (1990). European journal
 ## Model component
 <dbs-pgx drug="vinblastine" model-id="Vinblastine_Zhou1990_estimated_parameters_vt_l_kg" status="curated_candidate" stale="false" population="rats" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -62,7 +65,7 @@ Zhou XJ; Martin M; Placidi M; Cano JP; Rahmani R et al. (1990). European journal
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Levêque_1996:review'] |
@@ -115,6 +118,8 @@ Zhou XJ; Martin M; Placidi M; Cano JP; Rahmani R et al. (1990). European journal
 </div><figure class="pk-models-diagram"><img src="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.svg" alt="Vinblastine_Zhou1990_estimated_parameters_vt_l_kg diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
 
 <dbs-fmusim paramsurl="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg_sim_controls.json"></dbs-fmusim>
 

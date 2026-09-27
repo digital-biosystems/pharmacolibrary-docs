@@ -1,12 +1,16 @@
 {
  "model_id": "Warfarin_Mungall1985_reference",
+ "molar_masses": {
+  "central.C": 0.3083279
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 9.666666666666667e-08,
   "F": 0.9,
+  "MM": 0.3083279,
   "Tlag": 0.0,
   "VdPerKg": 0.00020428571428571428,
   "adminCount": 1.0,
@@ -15,10 +19,13 @@
   "ka": 0.0005439814814814814,
   "weight": 70.0
  },
- "reference_peaks": {
-  "C_central": 0.005955294696832404
+ "reference_peak_times": {
+  "central.C": 8541.023259905993
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 0.005955282856570614
+ },
+ "stop_time": 518400.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

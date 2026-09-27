@@ -27,6 +27,9 @@ Han B; Xu N; Ma C; Ju G; Xi X; Qian C; Guo N; Liu X; Zhu X; Li C; Liu L et al. (
 ## Model component
 <dbs-pgx drug="omeprazole" model-id="Omeprazole_Han2025_reference" status="rejected" stale="false" population="" measured-compound="omeprazole" parameterization="apparent" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted, plus 2 covariate effects.
+
 **Parameterization:** CL/F, V/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters

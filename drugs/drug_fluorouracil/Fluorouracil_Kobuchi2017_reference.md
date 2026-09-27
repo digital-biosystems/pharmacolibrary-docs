@@ -5,7 +5,7 @@
 
 # fluorouracil — `Fluorouracil_Kobuchi2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** C8 unreachable/orphan compartment or unlinked metabolite
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (2.5 vs not captured) and 2 more field(s) — not a structural parameter.
 **How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
 <sub>owner: **curator**</sub>
 
@@ -25,6 +26,9 @@ Kobuchi S; Ito Y; Sakaeda T et al. (2017). European journal of drug metabolism a
 
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Kobuchi2017_reference" status="rejected" stale="false" population="" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -55,9 +59,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 2.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q30]` | not captured | 2.5 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q31]` | not captured | 18.0 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

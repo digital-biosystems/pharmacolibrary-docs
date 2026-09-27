@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;hydrochlorothiazide&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/&quot;},{&quot;label&quot;:&quot;Snelder_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrochlorothiazide_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hedaya2015_reference&quot;,&quot;label&quot;:&quot;Hedaya_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hedaya2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Prichard1985_reference&quot;,&quot;label&quot;:&quot;Prichard_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydrochlorothiazide_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Commander2021_reference&quot;,&quot;label&quot;:&quot;Commander_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Commander2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Van2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Shimizu2012_reference&quot;,&quot;label&quot;:&quot;Shimizu_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrochlorothiazide_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hedaya2015_reference&quot;,&quot;label&quot;:&quot;Hedaya_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hedaya2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Prichard1985_reference&quot;,&quot;label&quot;:&quot;Prichard_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydrochlorothiazide_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Commander2021_reference&quot;,&quot;label&quot;:&quot;Commander_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Commander2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Van2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Shimizu2012_reference&quot;,&quot;label&quot;:&quot;Shimizu_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hydrochlorothiazide — `Hydrochlorothiazide_Snelder2014_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q25]` (4.7 vs not captured) and 7 more field(s) — not a structural parameter.
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
 
@@ -25,6 +26,9 @@ Snelder N; Ploeger BA; Luttringer O; Rigel DF; Fu F; Beil M; et al. et al. (2014
 
 ## Model component
 <dbs-pgx drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Snelder2014_reference" status="curated_candidate" stale="false" population="" measured-compound="hydrochlorothiazide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -56,9 +60,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.5 (8/16 fields) | 8 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q25]` | 4.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | not captured | 22.7 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q320]` | not captured | 0.0918 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q33]` | not captured | 0.331 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q47]` | not captured | 4.7 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q71]` | not captured | -1 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q75]` | not captured | -1 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q87]` | -1.98 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -111,7 +128,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference/Hydrochlorothiazide_Snelder2014_reference_modelica.zip" download>Hydrochlorothiazide_Snelder2014_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference/Hydrochlorothiazide_Snelder2014_reference_modelica.zip" download>Hydrochlorothiazide_Snelder2014_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference/Hydrochlorothiazide_Snelder2014_reference_fmi.zip" download>Hydrochlorothiazide_Snelder2014_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference/Hydrochlorothiazide_Snelder2014_reference_matlab.zip" download>Hydrochlorothiazide_Snelder2014_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference/Hydrochlorothiazide_Snelder2014_reference_matlab_simbio.zip" download>Hydrochlorothiazide_Snelder2014_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -123,6 +140,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference/Hydrochlorothiazide_Snelder2014_reference.svg" alt="Hydrochlorothiazide_Snelder2014_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.17 /h, F 0.9).
 
 <dbs-fmusim paramsurl="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference/Hydrochlorothiazide_Snelder2014_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference/Hydrochlorothiazide_Snelder2014_reference_sim_controls.json"></dbs-fmusim>
 

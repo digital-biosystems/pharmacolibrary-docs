@@ -29,6 +29,9 @@ Valenzuela B; López-Pintor E; Pérez-Ruixo JJ; Nácher A; Martín-Villodre A; C
 ## Model component
 <dbs-pgx drug="salbutamol" model-id="Salbutamol_Valenzuela2006_reference" status="rejected" stale="true" population="rats" measured-compound="salbutamol sulphate" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -98,7 +101,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q1 | fail | [length] | mM | not captured | not captured | ['Valenzuela_2006:abstract'] |

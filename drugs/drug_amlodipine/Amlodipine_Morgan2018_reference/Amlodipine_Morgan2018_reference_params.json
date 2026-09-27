@@ -1,12 +1,16 @@
 {
  "model_id": "Amlodipine_Morgan2018_reference",
+ "molar_masses": {
+  "central.C": 0.40887599999999996
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 3.8333333333333326e-08,
   "F": 0.9,
+  "MM": 0.40887599999999996,
   "Tlag": 3096.0,
   "VdPerKg": 0.014,
   "adminCount": 1.0,
@@ -15,10 +19,13 @@
   "ka": 0.00040555555555555554,
   "weight": 70.0
  },
- "reference_peaks": {
-  "C_central": 9.195275947355996e-05
+ "reference_peak_times": {
+  "central.C": 25971.943887775553
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 9.175527011326204e-05
+ },
+ "stop_time": 259200.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

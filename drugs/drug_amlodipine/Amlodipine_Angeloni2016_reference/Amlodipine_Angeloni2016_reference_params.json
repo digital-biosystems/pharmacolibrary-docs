@@ -1,22 +1,29 @@
 {
  "model_id": "Amlodipine_Angeloni2016_reference",
+ "molar_masses": {
+  "central.C": 0.40887599999999996
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 3.8333333333333326e-08,
   "F": 1.0,
+  "MM": 0.40887599999999996,
   "VdPerKg": 3.128587245813494e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
   "weight": 70.0
  },
- "reference_peaks": {
-  "C_central": 0.04542293110083686
+ "reference_peak_times": {
+  "central.C": 660.0000000662023
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 0.04542293110083698
+ },
+ "stop_time": 259200.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

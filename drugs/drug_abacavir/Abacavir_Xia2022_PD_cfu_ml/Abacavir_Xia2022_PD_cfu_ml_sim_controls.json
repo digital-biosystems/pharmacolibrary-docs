@@ -1,0 +1,22 @@
+[
+ {
+  "key": "E0",
+  "label": "Baseline E0",
+  "unit": "Log 10 CFU/mL",
+  "scale": 1.0,
+  "min": 0.2,
+  "max": 3,
+  "step": 0.05,
+  "mult": true
+ },
+ {
+  "key": "stop_time",
+  "label": "Exposure range",
+  "unit": "µg/mL",
+  "scale": 1.0,
+  "min": 17.45,
+  "max": 872.5,
+  "step": 1.745,
+  "sim": true
+ }
+]

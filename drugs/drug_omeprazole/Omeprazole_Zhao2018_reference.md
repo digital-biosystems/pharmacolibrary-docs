@@ -27,6 +27,9 @@ Zhao W; Leroux S; Biran V; Jacqz-Aigrain E et al. (2018). British journal of cli
 ## Model component
 <dbs-pgx drug="omeprazole" model-id="Omeprazole_Zhao2018_reference" status="needs_review" stale="false" population="neonates and young infants" measured-compound="omeprazole" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
+**Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameters:** 12 extracted, plus 1 covariate effect.
+
 **Parameterization:** CL/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters

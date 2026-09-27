@@ -5,7 +5,7 @@
 
 # vinblastine — `Vinblastine_Levque1996_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q21]` (not captured vs 90) and 4 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
 
@@ -25,6 +26,9 @@ Levêque D; Jehl F et al. (1996). Clinical pharmacokinetics 31
 
 ## Model component
 <dbs-pgx drug="vinblastine" model-id="Vinblastine_Levque1996_reference" status="curated_candidate" stale="false" population="" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -47,14 +51,24 @@ Levêque D; Jehl F et al. (1996). Clinical pharmacokinetics 31
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.5 (5/10 fields) | 5 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q21]` | not captured | 90 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q32]` | 70.9 | 114.3 | mismatch |
+| `gpt-oss:120b` | `values[Q56]` | not captured | 1.49 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | not captured | 4.7 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q65]` | 544 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -107,7 +121,7 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vinblastine/Vinblastine_Levque1996_reference/Vinblastine_Levque1996_reference_modelica.zip" download>Vinblastine_Levque1996_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_vinblastine/Vinblastine_Levque1996_reference/Vinblastine_Levque1996_reference_fmi.zip" download>Vinblastine_Levque1996_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_vinblastine/Vinblastine_Levque1996_reference/Vinblastine_Levque1996_reference_fmi.zip" download>Vinblastine_Levque1996_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_vinblastine/Vinblastine_Levque1996_reference/Vinblastine_Levque1996_reference_matlab.zip" download>Vinblastine_Levque1996_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vinblastine/Vinblastine_Levque1996_reference/Vinblastine_Levque1996_reference_matlab_simbio.zip" download>Vinblastine_Levque1996_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_vinblastine/Vinblastine_Levque1996_reference/Vinblastine_Levque1996_reference_sbml.zip" download>Vinblastine_Levque1996_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
@@ -118,6 +132,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_vinblastine/Vinblastine_Levque1996_reference/Vinblastine_Levque1996_reference.svg" alt="Vinblastine_Levque1996_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
 
 <dbs-fmusim paramsurl="drugs/drug_vinblastine/Vinblastine_Levque1996_reference/Vinblastine_Levque1996_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_vinblastine/Vinblastine_Levque1996_reference/Vinblastine_Levque1996_reference_sim_controls.json"></dbs-fmusim>
 

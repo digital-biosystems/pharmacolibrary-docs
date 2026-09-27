@@ -5,7 +5,8 @@
 
 - **generic name:** ibuprofen
 - **ATC codes:** `C01EB16`, `G02CC01`, `M01AE01`, `M02AA13`, `N02AJ08`, `N02AJ19`, `N02AJ23`, `R02AX02`
-- **DrugBank:** [DB01050](https://go.drugbank.com/drugs/DB01050)
+- **DrugBank:** [DB01050](https://go.drugbank.com/drugs/DB01050) · **PubChem:** [CID 3672](https://pubchem.ncbi.nlm.nih.gov/compound/3672)
+- **molar mass:** 206.2808 g/mol (C13H18O2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -38,7 +39,7 @@ As ibuprofen is a widely used medication, the main therapeutic indications are:
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-26 23:47 | 1:09:37 | 8/7/3 | 10/4/0 | 8/0/32 | 1,227,535/190,407 | ollama / qwen3.8:27b-mtp-q8_0 | 63 | 46/9 | 13/43 | 0 |
+| 2026-09-26 23:47 | 1:09:37 | 5/7/3 | 10/4/0 | 8/0/32 | 1,227,535/190,407 | ollama / qwen3.8:27b-mtp-q8_0 | 63 | 46/9 | 13/43 | 0 |
 
 ## popPK records
 

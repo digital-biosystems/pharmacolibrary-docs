@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;bleomycin&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/&quot;},{&quot;label&quot;:&quot;Yadav_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Giri1986_reference&quot;,&quot;label&quot;:&quot;Giri_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Giri1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Schober1978v2_reference&quot;,&quot;label&quot;:&quot;Schober_1978_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Schober1978v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Giri1986_reference&quot;,&quot;label&quot;:&quot;Giri_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Giri1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Hall1982_abnormal_renal&quot;,&quot;label&quot;:&quot;Hall_1982_abnormal_renal&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Hall1982_abnormal_renal.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Hall1982_all_patients&quot;,&quot;label&quot;:&quot;Hall_1982_all_patients&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Hall1982_all_patients.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Hall1982_patients_with&quot;,&quot;label&quot;:&quot;Hall_1982_patients_with&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Hall1982_patients_with.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Schober1978v2_reference&quot;,&quot;label&quot;:&quot;Schober_1978_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Schober1978v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bleomycin — `Bleomycin_Yadav2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.308). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q19]` (111000 vs not captured) and 8 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
 
@@ -25,6 +26,9 @@ Yadav R; Sukumaran S; Lutman J; Mitra MS; Halpern W; Sun T; et al. et al. (2023)
 
 ## Model component
 <dbs-pgx drug="bleomycin" model-id="Bleomycin_Yadav2023_reference" status="curated_candidate" stale="false" population="" measured-compound="bleomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -51,14 +55,28 @@ Yadav R; Sukumaran S; Lutman J; Mitra MS; Halpern W; Sun T; et al. et al. (2023)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.308 (4/13 fields) | 9 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>9 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.topology_template` | 2C | 1C | mismatch |
+| `gpt-oss:120b` | `values[Q19]` | 111000 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q22]` | 8 | 3.1 | mismatch |
+| `gpt-oss:120b` | `values[Q30]` | 11.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | not captured | 30 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q319]` | 0.85 | 0.85 | mismatch |
+| `gpt-oss:120b` | `values[Q322]` | 51 | 15 | mismatch |
+| `gpt-oss:120b` | `values[Q32]` | 1900 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q331]` | 3.2 | 3.1 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -113,7 +131,7 @@ _Every reader agrees on every compared field of this record._
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_modelica.zip" download>Bleomycin_Yadav2023_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_fmi.zip" download>Bleomycin_Yadav2023_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_matlab.zip" download>Bleomycin_Yadav2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_matlab.zip" download>Bleomycin_Yadav2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_matlab_simbio.zip" download>Bleomycin_Yadav2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_sbml.zip" download>Bleomycin_Yadav2023_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_cellml.zip" download>Bleomycin_Yadav2023_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -123,6 +141,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference.svg" alt="Bleomycin_Yadav2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
 
 <dbs-fmusim paramsurl="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_bleomycin/Bleomycin_Yadav2023_reference/Bleomycin_Yadav2023_reference_sim_controls.json"></dbs-fmusim>
 

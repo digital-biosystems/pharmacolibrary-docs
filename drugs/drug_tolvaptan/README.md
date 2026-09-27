@@ -5,7 +5,8 @@
 
 - **generic name:** tolvaptan
 - **ATC codes:** `C03XA01`
-- **DrugBank:** [DB06212](https://go.drugbank.com/drugs/DB06212)
+- **DrugBank:** [DB06212](https://go.drugbank.com/drugs/DB06212) · **PubChem:** [CID 443894](https://pubchem.ncbi.nlm.nih.gov/compound/443894)
+- **molar mass:** 448.941 g/mol (C26H25ClN2O3) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -18,7 +19,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 02:38 | 37:17 | 8/0/0 | 2/1/0 | 2/0/11 | 699,562/103,259 | ollama / qwen3.8:27b-mtp-q8_0 | 33 | 25/13 | 16/17 | 0 |
+| 2026-09-27 13:30 | 0:27 | 7/0/0 | 2/1/0 | 2/0/11 | 385/102 | ollama / qwen3.8:27b-mtp-q8_0 | 33 | 25/13 | 16/17 | 0 |
 
 ## popPK records
 

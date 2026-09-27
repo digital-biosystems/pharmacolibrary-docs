@@ -1,11 +1,12 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02C&quot;,&quot;href&quot;:&quot;atc/C02C.md&quot;},{&quot;label&quot;:&quot;doxazosin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxazosin_Chrisp1990_reference&quot;,&quot;label&quot;:&quot;Chrisp_1990_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Young1988_reference&quot;,&quot;label&quot;:&quot;Young_1988_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Young1988_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_unknown2023_reference&quot;,&quot;label&quot;:&quot;unknown_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Aljaeid2019_reference&quot;,&quot;label&quot;:&quot;Aljaeid_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Aljaeid2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Meredith1985_reference&quot;,&quot;label&quot;:&quot;Meredith_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Meredith1985_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Vincent1983_reference&quot;,&quot;label&quot;:&quot;Vincent_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Vincent1983_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxazosin_Chrisp1990_reference&quot;,&quot;label&quot;:&quot;Chrisp_1990_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Young1988_reference&quot;,&quot;label&quot;:&quot;Young_1988_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Young1988_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_unknown2023_reference&quot;,&quot;label&quot;:&quot;unknown_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Aljaeid2019_reference&quot;,&quot;label&quot;:&quot;Aljaeid_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Aljaeid2019_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Meredith1985_reference&quot;,&quot;label&quot;:&quot;Meredith_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Meredith1985_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Vincent1983_reference&quot;,&quot;label&quot;:&quot;Vincent_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Vincent1983_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # doxazosin
 
 - **generic name:** doxazosin
 - **ATC codes:** `C02CA04`, `G04CA55`
-- **DrugBank:** [DB00590](https://go.drugbank.com/drugs/DB00590)
+- **DrugBank:** [DB00590](https://go.drugbank.com/drugs/DB00590) · **PubChem:** [CID 3157](https://pubchem.ncbi.nlm.nih.gov/compound/3157)
+- **molar mass:** 451.4751 g/mol (C23H25N5O5) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -14,22 +15,30 @@
 
 **Indication.** Doxazosin is indicated to treat the symptoms of benign prostatic hypertrophy, which may include urinary frequency, urgency, and nocturia, among other symptoms. In addition, doxazosin is indicated alone or in combination with various antihypertensive agents for the management of hypertension.[L7282] Off-label uses of doxazosin include the treatment of pediatric hypertension[A180634] and the treatment of ureteric calculi.[A180637]
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| 1-hydroxy trimazosin | metabolite | — (mass units only) | — | — | — | — |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-23 01:49 | 20:56 | 3/3/0 | 6/0/0 | 1/0/17 | 395,702/50,784 | ollama / qwen3.8:27b-mtp-q8_0 | 32 | 23/5 | 14/18 | 0 |
+| 2026-09-27 13:40 | 4:01 | 3/3/0 | 6/0/0 | 1/0/17 | 55,841/6,529 | ollama / qwen3.8:27b-mtp-q8_0 | 32 | 19/9 | 14/18 | 0 |
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Chrisp_1990_reference](drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md) | Chrisp P et al., Dilevalol. A review of its pharmacodyna…, Drugs (1990) | [10.2165/00003495-199039020-00007](https://doi.org/10.2165/00003495-199039020-00007) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Young_1988_reference](drugs/drug_doxazosin/Doxazosin_Young1988_reference.md) | Young RA et al., Doxazosin. A review of its pharmacodyna…, Drugs (1988) | [10.2165/00003495-198835050-00003](https://doi.org/10.2165/00003495-198835050-00003) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [unknown_2023_reference](drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md) | unknown (2023) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Aljaeid_2019_reference](drugs/drug_doxazosin/Doxazosin_Aljaeid2019_reference.md) | Aljaeid BM et al., Chitosan-TPP nanoparticles stabilized b…, Drug development and indust… (2019) | [10.1080/03639045.2019.1597105](https://doi.org/10.1080/03639045.2019.1597105) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Meredith_1985_reference](drugs/drug_doxazosin/Doxazosin_Meredith1985_reference.md) | Meredith PA et al., Application of pharmacokinetic-pharmaco…, Journal of cardiovascular p… (1985) | [10.1097/00005344-198505000-00019](https://doi.org/10.1097/00005344-198505000-00019) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Vincent_1983_reference](drugs/drug_doxazosin/Doxazosin_Vincent1983_reference.md) | Vincent J et al., Doxazosin, an alpha 1-adrenoceptor anta…, British journal of clinical… (1983) | [10.1111/j.1365-2125.1983.tb01556.x](https://doi.org/10.1111/j.1365-2125.1983.tb01556.x) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Chrisp_1990_reference](drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md) | 1-compartment, IV | 2 | Chrisp P et al., Dilevalol. A review of its pharmacodyna…, Drugs (1990) | [10.2165/00003495-199039020-00007](https://doi.org/10.2165/00003495-199039020-00007) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Young_1988_reference](drugs/drug_doxazosin/Doxazosin_Young1988_reference.md) | 1-compartment, IV | 2 | Young RA et al., Doxazosin. A review of its pharmacodyna…, Drugs (1988) | [10.2165/00003495-198835050-00003](https://doi.org/10.2165/00003495-198835050-00003) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span> | [unknown_2023_reference](drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md) | 1-compartment, oral | 3 | unknown (2023) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Aljaeid_2019_reference](drugs/drug_doxazosin/Doxazosin_Aljaeid2019_reference.md) | 1-compartment (no model) | 2 | Aljaeid BM et al., Chitosan-TPP nanoparticles stabilized b…, Drug development and indust… (2019) | [10.1080/03639045.2019.1597105](https://doi.org/10.1080/03639045.2019.1597105) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Meredith_1985_reference](drugs/drug_doxazosin/Doxazosin_Meredith1985_reference.md) | parent + metabolite (no model) | 0 | Meredith PA et al., Application of pharmacokinetic-pharmaco…, Journal of cardiovascular p… (1985) | [10.1097/00005344-198505000-00019](https://doi.org/10.1097/00005344-198505000-00019) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Vincent_1983_reference](drugs/drug_doxazosin/Doxazosin_Vincent1983_reference.md) | 1-compartment (no model) | 3 | Vincent J et al., Doxazosin, an alpha 1-adrenoceptor anta…, British journal of clinical… (1983) | [10.1111/j.1365-2125.1983.tb01556.x](https://doi.org/10.1111/j.1365-2125.1983.tb01556.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -98,8 +107,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 119 matched, 49 returned
-- **screened:** 6  ·  **relevant:** 6
-- **records:** 6  ·  extracted 3  ·  needs_review 0  ·  rejected 3  ·  stale 0
+- **screened:** 25  ·  **relevant:** 6
+- **records:** 6  ·  extracted 3  ·  needs_review 0  ·  rejected 3  ·  stale 4
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -160,4 +169,4 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Şenkal_2020 | not_relevant | 0 | 0 | The paper is a retrospective clinical cohort study analyzing the association between chronic ACE inhibitor/ARB exposure and severe COVID-19 outcomes; it does not report any pharmacokinetic data, concentration-effect relationships, or numeric pharmacodynamic parameters (e.g., Emax, EC50) for doxazosin or any other drug. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-23 01:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-27 13:39 UTC</sub>

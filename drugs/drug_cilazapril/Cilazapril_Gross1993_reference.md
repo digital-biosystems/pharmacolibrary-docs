@@ -5,7 +5,7 @@
 
 # cilazapril — `Cilazapril_Gross1993_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,7 @@
 ### Reviewer guidance
 
 **Why:** C8 unreachable/orphan compartment or unlinked metabolite.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[1st phase: 2.5 +/- 0.8 h vs.]` (2.5 vs not captured) and 1 more field(s) — a structural parameter, so the record is disputed.
+**Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['cilazapril', 'cilazaprilat', 'hydrolysis']] vs []) and 7 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** not a curation fix — the pipeline is the limit here (fulltext: the record was built from the abstract alone, so reported summary statistics stood in for a fitted model).
 <sub>owner: **curator**</sub>
 
@@ -26,6 +26,9 @@ Gross V; Treher E; Haag K; Neis W; Wiegand U; Schölmerich J et al. (1993). Jour
 
 ## Model component
 <dbs-pgx drug="cilazapril" model-id="Cilazapril_Gross1993_reference" status="rejected" stale="false" population="healthy volunteers and cirrhotic patients" measured-compound="cilazapril" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -67,14 +70,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.667 (4/6 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `model.links` | [['cilazapril', 'cilazaprilat', 'hydrolysis']] | [] | mismatch |
+| `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `gpt-oss:120b` | `parameters[1st phase: 2.5 +/- 0.8 h vs.]` | 2.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[7.8 +/- 6.0 l/h vs.]` | 7.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[apparent oral clearance]` | not captured | 7.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | 0.319 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[lag]` | 2.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[plasma half-life]` | not captured | 2.5 | only_one_extracted |
 
 </details>
 
@@ -88,7 +97,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Gross_1993:abstract'] |

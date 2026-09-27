@@ -26,6 +26,9 @@ Wang Z; Zhang N; Chen C; Chen S; Xu J; Zhou Y; et al. et al. (2019). Current dru
 ## Model component
 <dbs-pgx drug="methotrexate" model-id="Methotrexate_Wang2019_reference" status="rejected" stale="false" population="Chinese patients with rheumatoid arthritis" measured-compound="methotrexate" parameterization="apparent" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
+
 **Parameterization:** CL/F, V/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
@@ -76,7 +79,7 @@ Wang Z; Zhang N; Chen C; Chen S; Xu J; Zhou Y; et al. et al. (2019). Current dru
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T3:row1:col1', 'T3:row1:col2'] |

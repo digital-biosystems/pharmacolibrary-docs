@@ -5,7 +5,8 @@
 
 - **generic name:** dihydrocodeine
 - **ATC codes:** `N02AA08`, `N02AJ01`, `N02AJ02`
-- **DrugBank:** [DB01551](https://go.drugbank.com/drugs/DB01551)
+- **DrugBank:** [DB01551](https://go.drugbank.com/drugs/DB01551) · **PubChem:** [CID 5284543](https://pubchem.ncbi.nlm.nih.gov/compound/5284543)
+- **molar mass:** 301.3801 g/mol (C18H23NO3) — DrugBank
 - **groups:** approved, illicit
 
 ## About
@@ -17,6 +18,15 @@ It is semi-synthetic, and was developed in Germany in 1908 during an internation
 **Indication.** Dihydrocodeine is used for the treatment of moderate to severe pain, including post-operative and dental pain [2]. It  can also be used to treat chronic pain [1], breathlessness and coughing. 
 
 In heroin addicts, dihydrocodeine has been used as a substitute drug, in doses up to 2500mg/day to treat addiction. [http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2014322/]
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| dihydrocodeine | parent | 301.38 | C18H23NO3 | DrugBank | [5284543](https://pubchem.ncbi.nlm.nih.gov/compound/5284543) | Webb_2001 |
+| dihydromorphine | metabolite | 287.359 | C17H21NO3 | PubChem | [5359421](https://pubchem.ncbi.nlm.nih.gov/compound/5359421) | Webb_2001 |
 
 ## Extraction summary
 

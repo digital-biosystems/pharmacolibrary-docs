@@ -5,7 +5,7 @@
 
 # diclofenac — `Diclofenac_Karunanidhi2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q21]` (14.7 vs not captured) and 1 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
 <sub>owner: **curator**</sub>
 
@@ -27,6 +28,9 @@ Karunanidhi A; Singh N; Watkins JV; Smith NM; Zang Y; Shan X; Espinoza G; Li J; 
 
 ## Model component
 <dbs-pgx drug="diclofenac" model-id="Diclofenac_Karunanidhi2026_reference" status="rejected" stale="true" population="" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -51,14 +55,21 @@ Karunanidhi A; Singh N; Watkins JV; Smith NM; Zang Y; Shan X; Espinoza G; Li J; 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.75 (6/8 fields) | 2 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q21]` | 14.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q310]` | 3 | 0.5 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

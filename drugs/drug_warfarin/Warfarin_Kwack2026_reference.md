@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Kwack_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Aoyama2022_reference&quot;,&quot;label&quot;:&quot;Aoyama_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Aoyama2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Hirai2024_estimates&quot;,&quot;label&quot;:&quot;Hirai_2024_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Hirai2024_estimates.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Hirai2024_median&quot;,&quot;label&quot;:&quot;Hirai_2024_median&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Hirai2024_median.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Hirai2024_prior_values&quot;,&quot;label&quot;:&quot;Hirai_2024_prior_values&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Hirai2024_prior_values.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Warfarin_Mungall1985_reference&quot;,&quot;label&quot;:&quot;Mungall_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Mungall1985_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_NeffDavis1981_reference&quot;,&quot;label&quot;:&quot;Neff-Davis_1981_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_NeffDavis1981_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Yuen2010_reference&quot;,&quot;label&quot;:&quot;Yuen_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Yuen2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_deep_learning&quot;,&quot;label&quot;:&quot;Gomeni_2026_deep_learning&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_deep_learning.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_one_compartment&quot;,&quot;label&quot;:&quot;Gomeni_2026_one_compartment&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_one_compartment.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Lane2012_r_warfarin&quot;,&quot;label&quot;:&quot;Lane_2012_r_warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Lane2012_s_warfarin&quot;,&quot;label&quot;:&quot;Lane_2012_s_warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ohara2019_reference&quot;,&quot;label&quot;:&quot;Ohara_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ohara2019_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Aoyama2022_reference&quot;,&quot;label&quot;:&quot;Aoyama_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Aoyama2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Hirai2024_estimates&quot;,&quot;label&quot;:&quot;Hirai_2024_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Hirai2024_estimates.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Hirai2024_median&quot;,&quot;label&quot;:&quot;Hirai_2024_median&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Hirai2024_median.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Hirai2024_prior_values&quot;,&quot;label&quot;:&quot;Hirai_2024_prior_values&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Hirai2024_prior_values.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Warfarin_Mungall1985_reference&quot;,&quot;label&quot;:&quot;Mungall_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Mungall1985_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_NeffDavis1981_reference&quot;,&quot;label&quot;:&quot;Neff-Davis_1981_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_NeffDavis1981_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Yuen2010_reference&quot;,&quot;label&quot;:&quot;Yuen_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Yuen2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_deep_learning&quot;,&quot;label&quot;:&quot;Gomeni_2026_deep_learning&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_deep_learning.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_one_compartment&quot;,&quot;label&quot;:&quot;Gomeni_2026_one_compartment&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_one_compartment.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kubo2017_reference&quot;,&quot;label&quot;:&quot;Kubo_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kubo2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Lane2012_r_warfarin&quot;,&quot;label&quot;:&quot;Lane_2012_r_warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Lane2012_s_warfarin&quot;,&quot;label&quot;:&quot;Lane_2012_s_warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gibbons2015_reference&quot;,&quot;label&quot;:&quot;Gibbons_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gibbons2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ohara2014_reference&quot;,&quot;label&quot;:&quot;Ohara_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ohara2014_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ohara2019_reference&quot;,&quot;label&quot;:&quot;Ohara_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ohara2019_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # warfarin — `Warfarin_Kwack2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (0.135 vs 0.133) and 10 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
 
@@ -27,6 +28,9 @@ Kwack H; Kong H; Lim J; Zhang BT; Hahn J; Chang MJ et al. (2026). Pharmaceutics 
 
 ## Model component
 <dbs-pgx drug="warfarin" model-id="Warfarin_Kwack2026_reference" status="extracted" stale="true" population="" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -54,14 +58,30 @@ Kwack H; Kong H; Lim J; Zhang BT; Hahn J; Chang MJ et al. (2026). Pharmaceutics 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.154 (2/13 fields) | 11 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>11 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.topology_template` | 1C | 2C | mismatch |
+| `gpt-oss:120b` | `values[Q22]` | 0.135 | 0.133 | mismatch |
+| `gpt-oss:120b` | `values[Q30]` | not captured | 6.85 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | not captured | 0.519 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q318]` | not captured | 42.8 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q352]` | not captured | 7.86 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q354]` | not captured | 0.135 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q49]` | 1.15 | 0.545 | mismatch |
+| `gpt-oss:120b` | `values[Q61]` | 7.86 | 7.22 | mismatch |
+| `gpt-oss:120b` | `values[Q63]` | not captured | 4.59 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | not captured | 13.2 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -126,6 +146,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_warfarin/Warfarin_Kwack2026_reference/Warfarin_Kwack2026_reference.svg" alt="Warfarin_Kwack2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.15 /h, lag 49.5 min, F 0.9).
 
 <dbs-fmusim paramsurl="drugs/drug_warfarin/Warfarin_Kwack2026_reference/Warfarin_Kwack2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_warfarin/Warfarin_Kwack2026_reference/Warfarin_Kwack2026_reference_sim_controls.json"></dbs-fmusim>
 

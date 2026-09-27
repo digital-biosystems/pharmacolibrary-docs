@@ -1,5 +1,8 @@
 {
  "model_id": "Bleomycin_Yadav2023_reference",
+ "molar_masses": {
+  "central.C": 1.415552
+ },
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,6 +10,7 @@
  "parameters": {
   "Cl": 6.4814814814814815e-09,
   "F": 1.0,
+  "MM": 1.415552,
   "VdPerKg": 0.00013041963169636232,
   "adminCount": 1.0,
   "adminDuration": 600.0,
@@ -14,10 +18,13 @@
   "k12": 1.0116915891284844e-06,
   "weight": 70.0
  },
- "reference_peaks": {
-  "central.C": 0.010883314591978686
+ "reference_peak_times": {
+  "central.C": 660.0000000662005
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 0.010951244207372531
+ },
+ "stop_time": 5443200.0,
  "template": "PK_2C",
  "template_fmu": "PK_2C.fmu"
 }

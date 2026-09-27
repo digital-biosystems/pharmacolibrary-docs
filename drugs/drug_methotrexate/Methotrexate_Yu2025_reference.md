@@ -31,6 +31,9 @@ Yu B; Wan Y; Mei K; Zhan D; Tang Q; Hu X; et al. et al. (2025). Drug design, dev
 ## Model component
 <dbs-pgx drug="methotrexate" model-id="Methotrexate_Yu2025_reference" status="extracted" stale="true" population="pediatric patients with acute lymphoblastic leukemia" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -101,7 +104,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0002:row2:col1', 't0002:row2:col2', 't0002:row2:col3', 't0002:row2:col4'] |
@@ -145,7 +148,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_methotrexate/Methotrexate_Yu2025_reference/Methotrexate_Yu2025_reference_modelica.zip" download>Methotrexate_Yu2025_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_methotrexate/Methotrexate_Yu2025_reference/Methotrexate_Yu2025_reference_modelica.zip" download>Methotrexate_Yu2025_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_methotrexate/Methotrexate_Yu2025_reference/Methotrexate_Yu2025_reference_fmi.zip" download>Methotrexate_Yu2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_methotrexate/Methotrexate_Yu2025_reference/Methotrexate_Yu2025_reference_matlab.zip" download>Methotrexate_Yu2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_methotrexate/Methotrexate_Yu2025_reference/Methotrexate_Yu2025_reference_matlab_simbio.zip" download>Methotrexate_Yu2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -157,6 +160,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_methotrexate/Methotrexate_Yu2025_reference/Methotrexate_Yu2025_reference.svg" alt="Methotrexate_Yu2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0112 /h, lag 21.6 min, F 0.9).
 
 <dbs-fmusim paramsurl="drugs/drug_methotrexate/Methotrexate_Yu2025_reference/Methotrexate_Yu2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_methotrexate/Methotrexate_Yu2025_reference/Methotrexate_Yu2025_reference_sim_controls.json"></dbs-fmusim>
 

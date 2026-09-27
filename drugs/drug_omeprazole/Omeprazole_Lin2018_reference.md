@@ -27,6 +27,9 @@ Lin S; Nikanjam M; Capparelli EV; Allegrini A; Pavone D; Yim DS; et al. et al. (
 ## Model component
 <dbs-pgx drug="omeprazole" model-id="Omeprazole_Lin2018_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted, plus 2 covariate effects.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -82,7 +85,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |

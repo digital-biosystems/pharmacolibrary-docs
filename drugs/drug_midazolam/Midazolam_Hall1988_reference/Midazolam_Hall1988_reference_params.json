@@ -1,5 +1,8 @@
 {
  "model_id": "Midazolam_Hall1988_reference",
+ "molar_masses": {
+  "central.C": 0.325767
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,11 +10,15 @@
  "parameters": {
   "Cl": 0.0003716666666666667,
   "F": 1.0,
+  "MM": 0.325767,
   "VdPerKg": 4.257142857142857e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
   "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 143.73716245690554
  },
  "reference_peaks": {
   "central.C": 0.0004484312950672647

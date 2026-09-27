@@ -1,7 +1,8 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;dacarbazine&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/&quot;},{&quot;label&quot;:&quot;Piotrowska_2019 \u00b7 PD name&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacarbazine_Buesa1991_reference&quot;,&quot;label&quot;:&quot;Buesa_1991_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.95). The first reading is what the record holds.">cross-check: disputed</span>
+# name — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.056). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -50,13 +51,46 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.95 (19/20 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.056 (2/36 fields) | 34 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>34 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | cisplatin | cisplatin and dacarbazine | mismatch |
+| `gpt-oss:120b` | `driver_compound` | cisplatin | unknown | mismatch |
+| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 0.017 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 0.011 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 0.013 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 0.017 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 0.012 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 4.81 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 9.37 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 2.57 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 1.97 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 3.47 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 3.71 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 2.13 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 1.07 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 1.17 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 1.04 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | not captured | 0.85 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 0.017 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 0.011 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 0.013 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 0.017 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 0.012 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 4.81 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 9.37 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 2.57 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 1.97 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 3.47 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 3.71 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 2.13 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 1.07 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 1.17 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 1.04 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 0.85 | not captured | only_one_extracted |
 
 </details>
 

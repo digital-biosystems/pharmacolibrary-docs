@@ -26,6 +26,9 @@ Petric Z; Paixão P; Filipe A; Guimarães Morais J et al. (2023). Pharmaceutics 
 ## Model component
 <dbs-pgx drug="vinblastine" model-id="Vinblastine_Petric2023_reference" status="rejected" stale="false" population="" measured-compound="vinblastine" parameterization="apparent" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
+
 **Parameterization:** CL/F, V/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters

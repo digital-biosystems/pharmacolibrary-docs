@@ -1,5 +1,8 @@
 {
  "model_id": "Telmisartan_Jeong2025_reference",
+ "molar_masses": {
+  "central.C": 0.5146168999999999
+ },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,6 +10,7 @@
  "parameters": {
   "Cl": 5.0833333333333335e-06,
   "F": 1.0,
+  "MM": 0.5146168999999999,
   "Tlag": 820.8000000000001,
   "VdPerKg": 0.0002957142857142857,
   "adminCount": 1.0,
@@ -17,8 +21,11 @@
   "ka": 5.055555555555555e-05,
   "weight": 70.0
  },
+ "reference_peak_times": {
+  "central.C": 46230.06012024048
+ },
  "reference_peaks": {
-  "central.C": 2.782140756375443e-05
+  "central.C": 6.93480147409601e-05
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

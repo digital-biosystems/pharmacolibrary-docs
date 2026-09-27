@@ -1,12 +1,16 @@
 {
  "model_id": "Omeprazole_Katashima1995_reference",
+ "molar_masses": {
+  "C_central": 0.345416
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
  ],
  "parameters": {
   "Cl": 6.72e-05,
   "F": 0.9,
+  "MM": 0.345416,
   "Tlag": 9000.0,
   "VdPerKg": 9.328571428571429e-06,
   "adminCount": 1.0,
@@ -16,10 +20,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 9669.033701943477
+  "C_central": 9669.033701943477
  },
  "reference_peaks": {
-  "central.C": 0.0008716927955904931
+  "C_central": 0.0008716927955904931
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

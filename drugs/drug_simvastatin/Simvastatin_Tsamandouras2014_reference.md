@@ -26,6 +26,9 @@ Tsamandouras N; Dickinson G; Guo Y; Hall S; Rostami-Hodjegan A; Galetin A; et al
 ## Model component
 <dbs-pgx drug="simvastatin" model-id="Simvastatin_Tsamandouras2014_reference" status="rejected" stale="false" population="individuals from three clinical trials" measured-compound="simvastatin" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 6 extracted, plus 6 covariate effects.
+
 **Parameterization:** CL/F, Q/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters

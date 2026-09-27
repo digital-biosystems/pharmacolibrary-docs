@@ -1,5 +1,8 @@
 {
  "model_id": "Fluorouracil_Lubomirov2025_reference",
+ "molar_masses": {
+  "central.C": 0.1300772
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,11 +10,15 @@
  "parameters": {
   "Cl": 3.055555555555555e-06,
   "F": 1.0,
+  "MM": 0.1300772,
   "VdPerKg": 0.0001657142857142857,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
   "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662078
  },
  "reference_peaks": {
   "central.C": 0.007973972077704635

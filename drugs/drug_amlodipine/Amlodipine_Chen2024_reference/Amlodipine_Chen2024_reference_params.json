@@ -1,12 +1,16 @@
 {
  "model_id": "Amlodipine_Chen2024_reference",
+ "molar_masses": {
+  "central.C": 0.40887599999999996
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 3.277777777777778e-05,
   "F": 1.0,
+  "MM": 0.40887599999999996,
   "Tlag": 0.0,
   "VdPerKg": 2.857142857142857e-05,
   "adminCount": 1.0,
@@ -15,8 +19,11 @@
   "ka": 0.00040555555555555554,
   "weight": 70.0
  },
+ "reference_peak_times": {
+  "central.C": 755.8115072167171
+ },
  "reference_peaks": {
-  "C_central": 0.001056431847515943
+  "central.C": 0.0010564033959601302
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

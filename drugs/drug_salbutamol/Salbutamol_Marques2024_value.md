@@ -27,6 +27,9 @@ not matched (stem Marques_2024)
 ## Model component
 <dbs-pgx drug="salbutamol" model-id="Salbutamol_Marques2024_value" status="needs_review" stale="true" population="virtual patients (healthy and cirrhosis)" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 7 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -79,7 +82,7 @@ not matched (stem Marques_2024)
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Marques_2024_table_3:row6:col1'] |

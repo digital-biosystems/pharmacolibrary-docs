@@ -27,6 +27,9 @@ Deyme L; Barbolosi D; Gattacceca F et al. (2019). Cancer chemotherapy and pharma
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Deyme2019_klo_24" status="rejected" stale="false" population="patients with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 8 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -155,7 +158,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Arshad_2020:review'] |

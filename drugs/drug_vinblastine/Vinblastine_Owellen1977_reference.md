@@ -26,6 +26,9 @@ Owellen RJ; Hartke CA; Hains FO et al. (1977). Cancer research 37
 ## Model component
 <dbs-pgx drug="vinblastine" model-id="Vinblastine_Owellen1977_reference" status="rejected" stale="false" population="humans" measured-compound="vinblastine" parameterization="mechanistic" topology="3C"></dbs-pgx>
 
+**Model structure:** 3-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -90,7 +93,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Levêque_1996:review'] |

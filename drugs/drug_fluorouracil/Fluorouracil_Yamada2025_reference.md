@@ -26,6 +26,9 @@ Yamada A; Yang J; Bonate PL; Heo N; Poondru S et al. (2025). Cancer chemotherapy
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Yamada2025_reference" status="needs_review" stale="false" population="adults with locally advanced unresectable or metastatic gastric or gastroesophageal junction adenocarcinoma" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -80,7 +83,7 @@ Yamada A; Yang J; Bonate PL; Heo N; Poondru S et al. (2025). Cancer chemotherapy
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Arshad_2020:review'] |

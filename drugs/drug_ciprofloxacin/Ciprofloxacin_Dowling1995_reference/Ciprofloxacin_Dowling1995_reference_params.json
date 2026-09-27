@@ -1,12 +1,16 @@
 {
  "model_id": "Ciprofloxacin_Dowling1995_reference",
+ "molar_masses": {
+  "central.C": 0.3313415
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 2.1139999999999997e-05,
   "F": 6.8,
+  "MM": 0.3313415,
   "Tlag": 0.0,
   "VdPerKg": 0.00020999999999999998,
   "adminCount": 1.0,
@@ -15,8 +19,11 @@
   "ka": 0.0002777777777777778,
   "weight": 70.0
  },
+ "reference_peak_times": {
+  "central.C": 1802.6905820436095
+ },
  "reference_peaks": {
-  "C_central": 0.0059919454135735975
+  "central.C": 0.005991928431034897
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

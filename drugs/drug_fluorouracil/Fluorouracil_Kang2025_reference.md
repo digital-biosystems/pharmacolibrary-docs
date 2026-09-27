@@ -5,7 +5,7 @@
 
 # fluorouracil — `Fluorouracil_Kang2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** T6_deviations
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q32]` (not captured vs 1551) and 3 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
 <sub>owner: **engineer**</sub>
 
@@ -25,6 +26,9 @@ Kang M; Kim J; Lee Y; Shin JS; Park MS; Jiang Q; Chung EK; Lee JI et al. (2025).
 
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Kang2025_reference" status="needs_review" stale="false" population="" measured-compound="fluorouracil" parameterization="apparent" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** CL/F, Q/F, V/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -57,14 +61,23 @@ Kang M; Kim J; Lee Y; Shin JS; Park MS; Jiang Q; Chung EK; Lee JI et al. (2025).
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q32]` | not captured | 1551 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q37]` | not captured | 960 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q69]` | 132 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q81]` | 1.88 | 1.88 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -132,6 +145,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_fluorouracil/Fluorouracil_Kang2025_reference/Fluorouracil_Kang2025_reference.svg" alt="Fluorouracil_Kang2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
 
 <dbs-fmusim paramsurl="drugs/drug_fluorouracil/Fluorouracil_Kang2025_reference/Fluorouracil_Kang2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_fluorouracil/Fluorouracil_Kang2025_reference/Fluorouracil_Kang2025_reference_sim_controls.json"></dbs-fmusim>
 

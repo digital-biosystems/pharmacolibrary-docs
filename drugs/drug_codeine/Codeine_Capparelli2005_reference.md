@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/&quot;},{&quot;label&quot;:&quot;Capparelli_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Shah1990_reference&quot;,&quot;label&quot;:&quot;Shah_1990_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Shah1990_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Anderson2026_reference&quot;,&quot;label&quot;:&quot;Anderson_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Anderson2026_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Ashraf2024_reference&quot;,&quot;label&quot;:&quot;Ashraf_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Ashraf2024_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Capparelli2005_reference&quot;,&quot;label&quot;:&quot;Capparelli_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Capparelli2005_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Codeine_Gretler2020_reference&quot;,&quot;label&quot;:&quot;Gretler_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Gretler2020_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Shah1990_reference&quot;,&quot;label&quot;:&quot;Shah_1990_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Shah1990_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Anderson2026_reference&quot;,&quot;label&quot;:&quot;Anderson_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Anderson2026_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Ashraf2024_reference&quot;,&quot;label&quot;:&quot;Ashraf_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Ashraf2024_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Capparelli2005_reference&quot;,&quot;label&quot;:&quot;Capparelli_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Capparelli2005_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Codeine_Gretler2020_reference&quot;,&quot;label&quot;:&quot;Gretler_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Gretler2020_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # codeine — `Codeine_Capparelli2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error)
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q316]` (not captured vs 13) and 2 more field(s) — not a structural parameter.
 **How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
 <sub>owner: **curator**</sub>
 
@@ -27,6 +28,9 @@ Capparelli EV; Bloom BT; Kueser TJ; Oelberg DG; Bifano EM; White RD; Schelonka R
 
 ## Model component
 <dbs-pgx drug="codeine" model-id="Codeine_Capparelli2005_reference" status="rejected" stale="true" population="" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -56,9 +60,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.7 (7/10 fields) | 3 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q316]` | not captured | 13 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q60]` | not captured | 701 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q71]` | not captured | 6.1 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

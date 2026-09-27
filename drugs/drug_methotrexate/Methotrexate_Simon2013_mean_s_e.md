@@ -26,6 +26,9 @@ Simon N; Marsot A; Villard E; Choquet S; Khe HX; Zahr N; et al. et al. (2013). T
 ## Model component
 <dbs-pgx drug="methotrexate" model-id="Methotrexate_Simon2013_mean_s_e" status="model_quarantined" stale="false" population="patients with lymphoid malignancy" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 9 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -73,7 +76,7 @@ Simon N; Marsot A; Villard E; Choquet S; Khe HX; Zahr N; et al. et al. (2013). T
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Blackman_2026:review'] |

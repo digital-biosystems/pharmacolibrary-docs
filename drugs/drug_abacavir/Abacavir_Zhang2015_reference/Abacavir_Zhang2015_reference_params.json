@@ -1,12 +1,16 @@
 {
  "model_id": "Abacavir_Zhang2015_reference",
+ "molar_masses": {
+  "central.C": 0.2863323
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 2.5027777777777776e-07,
   "F": 1.0,
+  "MM": 0.2863323,
   "Tlag": 946.8000000000001,
   "VdPerKg": 0.00024857142857142857,
   "adminCount": 1.0,
@@ -15,10 +19,13 @@
   "ka": 0.0006222222222222223,
   "weight": 70.0
  },
- "reference_peaks": {
-  "C_central": 0.005245938585260023
+ "reference_peak_times": {
+  "central.C": 7516.333871720026
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 0.0052562460239570005
+ },
+ "stop_time": 259200.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

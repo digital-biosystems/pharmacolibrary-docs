@@ -27,6 +27,9 @@ Robbie GJ; Zhao L; Mondick J; Losonsky G; Roskos LK et al. (2012). Antimicrobial
 ## Model component
 <dbs-pgx drug="palivizumab" model-id="Palivizumab_Robbie2012_reference" status="needs_review" stale="false" population="adults and children" measured-compound="palivizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted, plus 2 covariate effects.
+
 **Parameterization:** mechanistic.
 
 ## Parameters

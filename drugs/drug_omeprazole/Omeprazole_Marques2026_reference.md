@@ -29,6 +29,9 @@ Marques L; Vale N et al. (2026). Pharmaceutics 18
 ## Model component
 <dbs-pgx drug="omeprazole" model-id="Omeprazole_Marques2026_reference" status="accepted_with_caveats" stale="false" population="" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted, plus 2 covariate effects.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -134,6 +137,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_omeprazole/Omeprazole_Marques2026_reference/Omeprazole_Marques2026_reference.svg" alt="Omeprazole_Marques2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
 
 <dbs-fmusim paramsurl="drugs/drug_omeprazole/Omeprazole_Marques2026_reference/Omeprazole_Marques2026_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_omeprazole/Omeprazole_Marques2026_reference/Omeprazole_Marques2026_reference_sim_controls.json"></dbs-fmusim>
 

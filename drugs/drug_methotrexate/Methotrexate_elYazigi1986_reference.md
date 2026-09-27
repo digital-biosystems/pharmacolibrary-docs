@@ -29,6 +29,9 @@ el-Yazigi A; Amer M; Al-Saleh I; Martin C et al. (1986). International journal o
 ## Model component
 <dbs-pgx drug="methotrexate" model-id="Methotrexate_elYazigi1986_reference" status="rejected" stale="true" population="cancer patients" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -92,7 +95,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | fail | [length] ** 3 * [mass] / [time] | l/hr.kg | not captured | not captured | ['el-Yazigi_1986:abstract'] |

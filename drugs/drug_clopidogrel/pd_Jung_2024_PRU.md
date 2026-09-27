@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clopidogrel_Jung2024&quot;,&quot;label&quot;:&quot;Jung_2024_EM&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024.md&quot;,&quot;status&quot;:&quot;curated&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Koh2025_reference&quot;,&quot;label&quot;:&quot;Koh_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Koh2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Lv2025_reference&quot;,&quot;label&quot;:&quot;Lv_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Lv2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Purohit2026_reference&quot;,&quot;label&quot;:&quot;Purohit_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Wang2025_reference&quot;,&quot;label&quot;:&quot;Wang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yata2026_reference&quot;,&quot;label&quot;:&quot;Yata_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Grafeneder2024_hdp&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hdp&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hdp.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Grafeneder2024_hv&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hv&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Jung2024_reference&quot;,&quot;label&quot;:&quot;Jung_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Ma2014_reference&quot;,&quot;label&quot;:&quot;Ma_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Danielak2017_reference&quot;,&quot;label&quot;:&quot;Danielak_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Danielak2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Lee2012_reference&quot;,&quot;label&quot;:&quot;Lee_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Lee2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Xie2014_reference&quot;,&quot;label&quot;:&quot;Xie_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Xie2014_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# P2Y12 reaction unit — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.66). The first reading is what the record holds.">cross-check: disputed</span>
+# P2Y12 reaction unit — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.66). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -88,16 +88,20 @@ Deviations:
 
 ## Review
 
-Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `human_review`
 
 | check | status | note |
 |---|---|---|
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | pass | shared PD_IndirectTurnoverSweep FMU reproduces the reference points (worst 0.00%) |
+| `T1b_fmu` | fail | shared PD_IndirectTurnoverSweep FMU reproduces the reference points (worst 2891.80%) |
 | `T2_direction` | pass | curve direction matches effect_direction |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | pass | nothing defaulted |
+
+Blocking:
+
+- T1b the template FMU departs from the closed form by 2891.8%
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -139,20 +143,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024_PD_pru/Clopidogrel_Jung2024_PD_pru_modelica.zip" download>Clopidogrel_Jung2024_PD_pru_modelica.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024_PD_pru/Clopidogrel_Jung2024_PD_pru_fmi.zip" download>Clopidogrel_Jung2024_PD_pru_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_IndirectTurnoverSweep.fmu" download>PD_IndirectTurnoverSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024_PD_pru/Clopidogrel_Jung2024_PD_pru_matlab.zip" download>Clopidogrel_Jung2024_PD_pru_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024_PD_pru/Clopidogrel_Jung2024_PD_pru_sbml.zip" download>Clopidogrel_Jung2024_PD_pru_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024_PD_pru/Clopidogrel_Jung2024_PD_pru_cellml.zip" download>Clopidogrel_Jung2024_PD_pru_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PD_IndirectTurnoverSweep.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

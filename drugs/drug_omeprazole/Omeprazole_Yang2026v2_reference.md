@@ -26,6 +26,9 @@ not matched (stem Yang_2026_2)
 ## Model component
 <dbs-pgx drug="omeprazole" model-id="Omeprazole_Yang2026v2_reference" status="needs_review" stale="false" population="" measured-compound="omeprazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted, plus 2 covariate effects.
+
 **Parameterization:** mechanistic.
 
 ## Parameters

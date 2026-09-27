@@ -27,6 +27,9 @@ Schmulenson E; Zimmermann N; Müller L; Kapsa S; Sihinevich I; Jaehde U et al. (
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Schmulenson2023_estimate_relative_standard_erro" status="needs_review" stale="false" population="oncology patients" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -97,7 +100,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cam45118-tbl-0005:row1:col1'] |

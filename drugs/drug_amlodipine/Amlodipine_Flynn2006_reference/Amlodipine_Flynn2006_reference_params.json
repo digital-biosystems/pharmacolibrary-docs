@@ -1,12 +1,16 @@
 {
  "model_id": "Amlodipine_Flynn2006_reference",
+ "molar_masses": {
+  "central.C": 0.40887599999999996
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 6.583333333333333e-06,
   "F": 1.0,
+  "MM": 0.40887599999999996,
   "Tlag": 3096.0,
   "VdPerKg": 0.0251,
   "adminCount": 1.0,
@@ -15,10 +19,13 @@
   "ka": 0.00040555555555555554,
   "weight": 70.0
  },
- "reference_peaks": {
-  "C_central": 5.42335165689633e-05
+ "reference_peak_times": {
+  "central.C": 15236.87374749499
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 5.448061928242086e-05
+ },
+ "stop_time": 950400.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

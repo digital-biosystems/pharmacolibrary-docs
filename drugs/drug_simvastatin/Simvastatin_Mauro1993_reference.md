@@ -27,6 +27,9 @@ Mauro VF et al. (1993). Clinical pharmacokinetics 24
 ## Model component
 <dbs-pgx drug="simvastatin" model-id="Simvastatin_Mauro1993_reference" status="curated_candidate" stale="false" population="adults with hypercholesterolaemia" measured-compound="simvastatin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -127,6 +130,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_simvastatin/Simvastatin_Mauro1993_reference/Simvastatin_Mauro1993_reference.svg" alt="Simvastatin_Mauro1993_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
 
 <dbs-fmusim paramsurl="drugs/drug_simvastatin/Simvastatin_Mauro1993_reference/Simvastatin_Mauro1993_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_simvastatin/Simvastatin_Mauro1993_reference/Simvastatin_Mauro1993_reference_sim_controls.json"></dbs-fmusim>
 

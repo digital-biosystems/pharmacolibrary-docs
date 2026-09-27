@@ -29,6 +29,9 @@ Standing JF; Howard RF; Johnson A; Savage I; Wong IC et al. (2008). British jour
 ## Model component
 <dbs-pgx drug="diclofenac" model-id="Diclofenac_Standing2008_reference" status="rejected" stale="true" population="children and adults" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -77,7 +80,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Karunanidhi_2026:review'] |

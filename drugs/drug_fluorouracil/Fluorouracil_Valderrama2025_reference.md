@@ -5,7 +5,7 @@
 
 # fluorouracil — `Fluorouracil_Valderrama2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** C6_cl_magnitude failed (ratio None).
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q354]` (not captured vs 739) — not a structural parameter.
 **How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
 <sub>owner: **curator**</sub>
 
@@ -25,6 +26,9 @@ Valderrama D; Teplytska O; Koltermann LM; Trunz E; Schmulenson E; Fritsch A; Jae
 
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Valderrama2025_reference" status="needs_review" stale="false" population="" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -55,9 +59,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q354]` | not captured | 739 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

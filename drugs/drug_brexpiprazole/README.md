@@ -5,7 +5,8 @@
 
 - **generic name:** brexpiprazole
 - **ATC codes:** `N05AX16`
-- **DrugBank:** [DB09128](https://go.drugbank.com/drugs/DB09128)
+- **DrugBank:** [DB09128](https://go.drugbank.com/drugs/DB09128) · **PubChem:** [CID 11978813](https://pubchem.ncbi.nlm.nih.gov/compound/11978813)
+- **molar mass:** 433.57 g/mol (C25H27N3O2S) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -17,6 +18,16 @@ Brexpiprazole was first approved by the FDA on July 10, 2015.[A182186] Currently
 **Indication.** Brexpiprazole is indicated as adjunctive therapy to antidepressants for the treatment of major depressive disorder in adults.[L39568] It is also indicated for the treatment of schizophrenia in patients 13 years of age and older.[L39568]
 
 Brexpiprazole is also indicated for the treatment of agitation associated with dementia due to Alzheimer’s disease; however, it is not indicated as an as-needed (“prn”) treatment for this condition.[L46417]
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| brexpiprazole | parent | 433.57 | C25H27N3O2S | DrugBank | [11978813](https://pubchem.ncbi.nlm.nih.gov/compound/11978813) | Frederiksen_2023_3, Higashi_2025, Mauri_2018, Wang_2023, Wong_2021 |
+| DM-3411 | metabolite | 449.569 | C25H27N3O3S | PubChem | [44256485](https://pubchem.ncbi.nlm.nih.gov/compound/44256485) | Frederiksen_2023_3 |
+| DM-3412 | metabolite | 467.584 | C25H29N3O4S | PubChem | [156596854](https://pubchem.ncbi.nlm.nih.gov/compound/156596854) | Frederiksen_2023_3 |
 
 ## Extraction summary
 

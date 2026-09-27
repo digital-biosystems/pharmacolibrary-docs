@@ -1,12 +1,16 @@
 {
  "model_id": "Abacavir_Chupradit2024_reference",
+ "molar_masses": {
+  "central.C": 0.2863323
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 2.2303921568627456e-06,
   "F": 1.0,
+  "MM": 0.2863323,
   "Tlag": 1656.0,
   "VdPerKg": 0.0017720588235294122,
   "adminCount": 1.0,
@@ -15,10 +19,13 @@
   "ka": 0.0001277777777777778,
   "weight": 70.0
  },
- "reference_peaks": {
-  "C_central": 0.0005793942174325518
+ "reference_peak_times": {
+  "central.C": 19953.31801689934
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 0.0005847053100358489
+ },
+ "stop_time": 259200.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

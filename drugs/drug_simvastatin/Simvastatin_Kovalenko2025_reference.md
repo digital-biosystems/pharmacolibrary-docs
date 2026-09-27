@@ -27,6 +27,9 @@ Kovalenko P; Harnisch L; Mendell J; Wang Y; Davis JD; DiCioccio AT et al. (2025)
 ## Model component
 <dbs-pgx drug="simvastatin" model-id="Simvastatin_Kovalenko2025_reference" status="curated_candidate" stale="false" population="" measured-compound="simvastatin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -140,6 +143,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_simvastatin/Simvastatin_Kovalenko2025_reference/Simvastatin_Kovalenko2025_reference.svg" alt="Simvastatin_Kovalenko2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0139 /h, F 0.9).
 
 <dbs-fmusim paramsurl="drugs/drug_simvastatin/Simvastatin_Kovalenko2025_reference/Simvastatin_Kovalenko2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_simvastatin/Simvastatin_Kovalenko2025_reference/Simvastatin_Kovalenko2025_reference_sim_controls.json"></dbs-fmusim>
 

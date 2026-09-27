@@ -26,6 +26,9 @@ Sáez-Belló M; Mangas-Sanjuán V; Martínez-Gómez MA; López-Montenegro Soria 
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_SezBell2021_reference" status="needs_review" stale="false" population="adults with colorectal cancer" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 6 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters

@@ -1,22 +1,29 @@
 {
  "model_id": "Diazepam_Cavallaro2026_reference",
+ "molar_masses": {
+  "central.C": 0.28474
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 1.2658333333333334e-05,
   "F": 1.0,
+  "MM": 0.28474,
   "VdPerKg": 0.0047,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
   "weight": 70.0
  },
- "reference_peaks": {
-  "C_central": 0.00030046983905862264
+ "reference_peak_times": {
+  "central.C": 660.0000000662069
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 0.0003004698433649464
+ },
+ "stop_time": 93600.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

@@ -27,6 +27,9 @@ Sun Q; Li L; Zhou Q et al. (2022). Drug design, development and therapy 16
 ## Model component
 <dbs-pgx drug="simvastatin" model-id="Simvastatin_Sun2022_reference" status="curated_candidate" stale="false" population="" measured-compound="simvastatin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -119,6 +122,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_simvastatin/Simvastatin_Sun2022_reference/Simvastatin_Sun2022_reference.svg" alt="Simvastatin_Sun2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
 
 <dbs-fmusim paramsurl="drugs/drug_simvastatin/Simvastatin_Sun2022_reference/Simvastatin_Sun2022_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_simvastatin/Simvastatin_Sun2022_reference/Simvastatin_Sun2022_reference_sim_controls.json"></dbs-fmusim>
 

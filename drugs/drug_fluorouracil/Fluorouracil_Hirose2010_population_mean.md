@@ -28,6 +28,9 @@ Hirose T; Fujita K; Nishimura K; Ishida H; Yamashita K; Sunakawa Y; et al. et al
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Hirose2010_population_mean" status="rejected" stale="false" population="Japanese patients with advanced cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 3 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -72,7 +75,7 @@ Hirose T; Fujita K; Nishimura K; Ishida H; Yamashita K; Sunakawa Y; et al. et al
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Deyme_2019:review'] |

@@ -25,6 +25,9 @@ not matched (stem Bischoff_1971)
 ## Model component
 <dbs-pgx drug="methotrexate" model-id="Methotrexate_Bischoff1971_5_kg_dog_monkey" status="model_quarantined" stale="false" population="mice, rats, dogs, and man" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 7 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -115,7 +118,7 @@ not matched (stem Bischoff_1971)
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Blackman_2026:review'] |

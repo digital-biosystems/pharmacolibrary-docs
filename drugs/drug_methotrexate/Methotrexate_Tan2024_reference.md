@@ -5,7 +5,7 @@
 
 # methotrexate — `Methotrexate_Tan2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.235). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** T3_param_coverage
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (7.74 vs 8.4) and 12 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Open the emitted .mo and compare its base class and parameters with the record.
 <sub>owner: **engineer**</sub>
 
@@ -27,6 +28,9 @@ Tan JM; Upton RN; Foster DJR; Proudman SM; Dhir V; Wiese MD et al. (2024). Briti
 
 ## Model component
 <dbs-pgx drug="methotrexate" model-id="Methotrexate_Tan2024_reference" status="extracted" stale="true" population="" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -50,14 +54,32 @@ Tan JM; Upton RN; Foster DJR; Proudman SM; Dhir V; Wiese MD et al. (2024). Briti
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.235 (4/17 fields) | 13 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>13 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 7.74 | 8.4 | mismatch |
+| `gpt-oss:120b` | `values[Q301]` | 0.81 | 0.81 | mismatch |
+| `gpt-oss:120b` | `values[Q302]` | 0.55 | 0.55 | mismatch |
+| `gpt-oss:120b` | `values[Q312]` | 31 | 14 | mismatch |
+| `gpt-oss:120b` | `values[Q316]` | not captured | 0.590 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q317]` | not captured | 8.260 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q327]` | 6.55 | 12 | mismatch |
+| `gpt-oss:120b` | `values[Q40]` | not captured | 0.7 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q47]` | not captured | 0.144 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q51]` | not captured | 0.171 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q63]` | 9.6 | 0.3 | mismatch |
+| `gpt-oss:120b` | `values[Q77]` | 0.3 | 0.3 | mismatch |
+| `gpt-oss:120b` | `values[Q87]` | not captured | 1 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -109,7 +131,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_methotrexate/Methotrexate_Tan2024_reference/Methotrexate_Tan2024_reference_modelica.zip" download>Methotrexate_Tan2024_reference_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_methotrexate/Methotrexate_Tan2024_reference/Methotrexate_Tan2024_reference_modelica.zip" download>Methotrexate_Tan2024_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_methotrexate/Methotrexate_Tan2024_reference/Methotrexate_Tan2024_reference_fmi.zip" download>Methotrexate_Tan2024_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_methotrexate/Methotrexate_Tan2024_reference/Methotrexate_Tan2024_reference_matlab.zip" download>Methotrexate_Tan2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_methotrexate/Methotrexate_Tan2024_reference/Methotrexate_Tan2024_reference_matlab_simbio.zip" download>Methotrexate_Tan2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -121,6 +143,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_methotrexate/Methotrexate_Tan2024_reference/Methotrexate_Tan2024_reference.svg" alt="Methotrexate_Tan2024_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
 
 <dbs-fmusim paramsurl="drugs/drug_methotrexate/Methotrexate_Tan2024_reference/Methotrexate_Tan2024_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_methotrexate/Methotrexate_Tan2024_reference/Methotrexate_Tan2024_reference_sim_controls.json"></dbs-fmusim>
 

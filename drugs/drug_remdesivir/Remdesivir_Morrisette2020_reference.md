@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Morrisette_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_remdesivir&quot;,&quot;label&quot;:&quot;Abouellil_2023_remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_remdesivir.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Humeniuk2021_reference&quot;,&quot;label&quot;:&quot;Humeniuk_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Leegwater2022_reference&quot;,&quot;label&quot;:&quot;Leegwater_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_a_renal_impaired_patient_with_egfr_0_s_rgel_et_al_2021&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_healthy_control_zhang_et_al_2020&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_severe_renal_impaired_patients_zhang_et_al_2020&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_gs_441524&quot;,&quot;label&quot;:&quot;Abouellil_2023_gs_441524&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_441524.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_gs_704277&quot;,&quot;label&quot;:&quot;Abouellil_2023_gs_704277&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_704277.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_reference&quot;,&quot;label&quot;:&quot;Sukeishi_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Tamura2023_reference&quot;,&quot;label&quot;:&quot;Tamura_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Tamura2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_remdesivir&quot;,&quot;label&quot;:&quot;Abouellil_2023_remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_remdesivir.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Humeniuk2021_reference&quot;,&quot;label&quot;:&quot;Humeniuk_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Leegwater2022_reference&quot;,&quot;label&quot;:&quot;Leegwater_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_a_renal_impaired_patient_with_egfr_0_s_rgel_et_al_2021&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_healthy_control_zhang_et_al_2020&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_severe_renal_impaired_patients_zhang_et_al_2020&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_gs_441524&quot;,&quot;label&quot;:&quot;Abouellil_2023_gs_441524&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_441524.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_gs_704277&quot;,&quot;label&quot;:&quot;Abouellil_2023_gs_704277&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_704277.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_reference&quot;,&quot;label&quot;:&quot;Sukeishi_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Tamura2023_reference&quot;,&quot;label&quot;:&quot;Tamura_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Tamura2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Morrisette2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,15 +16,23 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q322]` (100 vs not captured) and 5 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-23 12:15:48.539546+00:00) predates the upstream re-run (2026-09-27 14:36:04.742933+00:00). Current validate status: `extracted`.
+
+> **Dose compound ≠ measured compound:** dosed `hydroxychloroquine`, measured `remdesivir`.
 
 ## Citation
 Morrisette T; Lodise TP; Scheetz MH; Goswami S; Pogue JM; Rybak MJ et al. (2020). Infectious diseases and therapy 9
   ·  DOI: [10.1007/s40121-020-00325-2](https://doi.org/10.1007/s40121-020-00325-2)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Morrisette2020_reference" status="curated_candidate" stale="false" population="" measured-compound="remdesivir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Morrisette2020_reference" status="extracted" stale="true" population="unknown" measured-compound="remdesivir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -47,14 +55,25 @@ Morrisette T; Lodise TP; Scheetz MH; Goswami S; Pogue JM; Rybak MJ et al. (2020)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.455 (5/11 fields) | 6 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q322]` | 100 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q34]` | not captured | 1 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q364]` | not captured | 800 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q37]` | not captured | 0.72 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q54]` | not captured | 4.8 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 30 | 43.3 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -119,6 +138,8 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
+
 <dbs-fmusim paramsurl="drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference/Remdesivir_Morrisette2020_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference/Remdesivir_Morrisette2020_reference_sim_controls.json"></dbs-fmusim>
 
 <sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Remdesivir_Morrisette2020_reference_params.json` · controls `Remdesivir_Morrisette2020_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
@@ -126,4 +147,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 14:36 UTC</sub>

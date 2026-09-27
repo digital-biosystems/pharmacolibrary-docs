@@ -28,6 +28,9 @@ Katashima M; Yamamoto K; Sugiura M; Sawada Y; Iga T et al. (1995). Drug metaboli
 ## Model component
 <dbs-pgx drug="omeprazole" model-id="Omeprazole_Katashima1995_reference" status="accepted_with_caveats" stale="false" population="rats" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted, plus 2 covariate effects.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -92,7 +95,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
@@ -147,6 +150,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_omeprazole/Omeprazole_Katashima1995_reference/Omeprazole_Katashima1995_reference.svg" alt="Omeprazole_Katashima1995_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 3 /h, lag 150 min, F 0.9).
 
 <dbs-fmusim paramsurl="drugs/drug_omeprazole/Omeprazole_Katashima1995_reference/Omeprazole_Katashima1995_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_omeprazole/Omeprazole_Katashima1995_reference/Omeprazole_Katashima1995_reference_sim_controls.json"></dbs-fmusim>
 

@@ -29,6 +29,9 @@ Gao T; Xu W; Li X; Guo Q; Liu D; Zhang X; Leng P; Sun J et al. (2025). Frontiers
 ## Model component
 <dbs-pgx drug="omeprazole" model-id="Omeprazole_Gao2025_reference" status="accepted_with_caveats" stale="false" population="" measured-compound="omeprazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted, plus 2 covariate effects.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -147,6 +150,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_omeprazole/Omeprazole_Gao2025_reference/Omeprazole_Gao2025_reference.svg" alt="Omeprazole_Gao2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 3 /h, F 0.9).
 
 <dbs-fmusim paramsurl="drugs/drug_omeprazole/Omeprazole_Gao2025_reference/Omeprazole_Gao2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_omeprazole/Omeprazole_Gao2025_reference/Omeprazole_Gao2025_reference_sim_controls.json"></dbs-fmusim>
 

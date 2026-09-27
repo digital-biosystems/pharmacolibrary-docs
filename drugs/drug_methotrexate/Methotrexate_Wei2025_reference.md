@@ -27,6 +27,9 @@ Wei S; Zhang S; Wang D; Zhang D; Lu Q; Mo J; et al. et al. (2025). Frontiers in 
 ## Model component
 <dbs-pgx drug="methotrexate" model-id="Methotrexate_Wei2025_reference" status="curated_candidate" stale="false" population="adult patients with primary central nervous system lymphoma" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 8 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -149,7 +152,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_3:row2:col1', 'tab_3:row2:col3', 'tab_3:row2:col5', 'tab_3:row2:col7'] |
@@ -207,6 +210,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 </div><figure class="pk-models-diagram"><img src="drugs/drug_methotrexate/Methotrexate_Wei2025_reference/Methotrexate_Wei2025_reference.svg" alt="Methotrexate_Wei2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0112 /h, lag 21.6 min, F 0.9).
 
 <dbs-fmusim paramsurl="drugs/drug_methotrexate/Methotrexate_Wei2025_reference/Methotrexate_Wei2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_methotrexate/Methotrexate_Wei2025_reference/Methotrexate_Wei2025_reference_sim_controls.json"></dbs-fmusim>
 

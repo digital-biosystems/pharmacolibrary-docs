@@ -31,6 +31,9 @@ Lin R; Lin W; Wang C; Dong J; Zheng W; Zeng D; et al. et al. (2021). Basic & cli
 ## Model component
 <dbs-pgx drug="azathioprine" model-id="Azathioprine_Lin2021_reference" status="rejected" stale="true" population="adults with inflammatory bowel disease" measured-compound="6-thioguanine nucleotides" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted, plus 1 covariate effect.
+
 **Parameterization:** mechanistic.
 
 ## Parameters

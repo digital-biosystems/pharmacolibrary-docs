@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;montelukast&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/&quot;},{&quot;label&quot;:&quot;Okubo_2016 \u00b7 10_15_years_old&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Knorr2006_reference&quot;,&quot;label&quot;:&quot;Knorr_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Knorr2006_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Li2019_reference&quot;,&quot;label&quot;:&quot;Li_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Li2019_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_10_15_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_10_15_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_10_15_years_old.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Montelukast_Okubo2016_1_5_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_1_5_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_1_5_years_old.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_6_9_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_6_9_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_6_9_years_old.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_all&quot;,&quot;label&quot;:&quot;Okubo_2016_all&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_all.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Montelukast_Zhu2024_reference&quot;,&quot;label&quot;:&quot;Zhu_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Zhu2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Knorr2006_reference&quot;,&quot;label&quot;:&quot;Knorr_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Knorr2006_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Li2019_reference&quot;,&quot;label&quot;:&quot;Li_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Li2019_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_10_15_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_10_15_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_10_15_years_old.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Montelukast_Okubo2016_1_5_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_1_5_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_1_5_years_old.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_6_9_years_old&quot;,&quot;label&quot;:&quot;Okubo_2016_6_9_years_old&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_6_9_years_old.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Montelukast_Okubo2016_all&quot;,&quot;label&quot;:&quot;Okubo_2016_all&quot;,&quot;href&quot;:&quot;drugs/drug_montelukast/Montelukast_Okubo2016_all.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # montelukast — `Montelukast_Okubo2016_10_15_years_old`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,19 +20,22 @@
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 23:33:24.402375+00:00) predates the upstream re-run (2026-09-24 17:00:42.042880+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-17 23:33:24.402375+00:00) predates the upstream re-run (2026-09-24 17:00:42.042880+00:00). Current validate status: `rejected`.
 
 ## Citation
 Okubo K; Inoue Y; Numaguchi H; Tanaka K; Saito I; Oshima N; Matsumoto Y; Prohn M; Mehta A; Nishida C; Philip G et al. (2016). Journal of drug assessment 5
   ·  DOI: [10.1080/21556660.2016.1209507](https://doi.org/10.1080/21556660.2016.1209507)
 
 ## Model component
-<dbs-pgx drug="montelukast" model-id="Montelukast_Okubo2016_10_15_years_old" status="needs_review" stale="true" population="paediatric Japanese patients with perennial allergic rhinitis" measured-compound="montelukast" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="montelukast" model-id="Montelukast_Okubo2016_10_15_years_old" status="rejected" stale="true" population="paediatric Japanese patients with perennial allergic rhinitis" measured-compound="montelukast" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -85,7 +88,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['t0003:row2:col3'] |
@@ -108,19 +111,9 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

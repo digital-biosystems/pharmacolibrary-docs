@@ -5,7 +5,8 @@
 
 - **generic name:** allopurinol
 - **ATC codes:** `M04AA01`
-- **DrugBank:** [DB00437](https://go.drugbank.com/drugs/DB00437)
+- **DrugBank:** [DB00437](https://go.drugbank.com/drugs/DB00437) · **PubChem:** [CID 2094](https://pubchem.ncbi.nlm.nih.gov/compound/2094)
+- **molar mass:** 136.1115 g/mol (C5H4N4O) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -21,6 +22,15 @@ Allopurinol is a xanthine oxidase enzyme inhibitor that is considered to be one 
 2) the management of patients with leukemia, lymphoma and malignancies who are receiving cancer therapy which causes elevations of serum and urinary uric acid levels. Treatment with allopurinol should be discontinued when the potential for overproduction of uric acid is no longer present.
 
 3) the management of patients with recurrent calcium oxalate calculi whose daily uric acid excretion exceeds 800 mg/day in male patients and 750 mg/day in female patients. Therapy in such patients should be carefully assessed initially and reassessed periodically to determine in each case that treatment is beneficial and that the benefits outweigh the risks.
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| allopurinol | parent | 136.112 | C5H4N4O | DrugBank | [2094](https://pubchem.ncbi.nlm.nih.gov/compound/2094) | Chu_2022, Stocker_2012, Vora_2021, Wen_2023, Wright_2013, Wright_2016 |
+| oxypurinol | metabolite | 152.11 | — | PubChem | [135398752](https://pubchem.ncbi.nlm.nih.gov/compound/135398752) | Chu_2022, Stocker_2012, Vora_2021, Wen_2023, Wright_2013, Wright_2016 |
 
 ## Extraction summary
 

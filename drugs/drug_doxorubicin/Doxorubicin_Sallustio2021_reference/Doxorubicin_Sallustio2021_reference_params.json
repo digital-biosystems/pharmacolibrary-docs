@@ -1,12 +1,16 @@
 {
  "model_id": "Doxorubicin_Sallustio2021_reference",
+ "molar_masses": {
+  "C_central": 0.5435193
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
  ],
  "parameters": {
   "Cl": 1.1888888888888888e-05,
   "F": 1.0,
+  "MM": 0.5435193,
   "VdPerKg": 0.033299999999999996,
   "adminCount": 1.0,
   "adminDuration": 600.0,
@@ -14,10 +18,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662011
+  "C_central": 660.0000000662011
  },
  "reference_peaks": {
-  "central.C": 4.283447273060043e-05
+  "C_central": 4.283447273060043e-05
  },
  "stop_time": 691200.0,
  "template": "PK_1C",

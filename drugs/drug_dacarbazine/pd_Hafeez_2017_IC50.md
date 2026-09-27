@@ -1,7 +1,8 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;dacarbazine&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/&quot;},{&quot;label&quot;:&quot;Hafeez_2017 \u00b7 PD cytotoxicity&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacarbazine_Buesa1991_reference&quot;,&quot;label&quot;:&quot;Buesa_1991_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cytotoxicity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
+# cytotoxicity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,12 +24,12 @@ Hafeez A; Kazmi I et al. (2017). Scientific reports 7
 _No resolved parameters._
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.0 (0/4 fields) | 4 |
+| `gpt-oss:120b` | secondary_empty | 0.0 (0/4 fields) | 4 |
 
 <details><summary>4 field(s) a reader read differently</summary>
 

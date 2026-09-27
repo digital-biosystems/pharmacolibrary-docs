@@ -5,7 +5,7 @@
 
 # fluorouracil — `Fluorouracil_Diasio1989v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** C6_cl_magnitude failed (ratio None).
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q34]` (20 vs 20) and 2 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
 <sub>owner: **curator**</sub>
 
@@ -27,6 +28,9 @@ Diasio RB; Harris BE et al. (1989). Clinical pharmacokinetics 16
 
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Diasio1989v2_reference" status="needs_review" stale="false" population="unknown" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -51,14 +55,22 @@ Diasio RB; Harris BE et al. (1989). Clinical pharmacokinetics 16
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q34]` | 20 | 20 | mismatch |
+| `gpt-oss:120b` | `values[Q56]` | not captured | 12 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q72]` | not captured | 16 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

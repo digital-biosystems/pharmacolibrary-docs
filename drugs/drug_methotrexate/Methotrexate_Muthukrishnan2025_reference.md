@@ -28,6 +28,9 @@ Muthukrishnan VY; Kerbusch T; Strong LE; Kleijn HJ; Pfister M; Chang AM; Acharya
 ## Model component
 <dbs-pgx drug="methotrexate" model-id="Methotrexate_Muthukrishnan2025_reference" status="extracted" stale="true" population="" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 4 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -124,6 +127,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_methotrexate/Methotrexate_Muthukrishnan2025_reference/Methotrexate_Muthukrishnan2025_reference.svg" alt="Methotrexate_Muthukrishnan2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
 
 <dbs-fmusim paramsurl="drugs/drug_methotrexate/Methotrexate_Muthukrishnan2025_reference/Methotrexate_Muthukrishnan2025_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_methotrexate/Methotrexate_Muthukrishnan2025_reference/Methotrexate_Muthukrishnan2025_reference_sim_controls.json"></dbs-fmusim>
 

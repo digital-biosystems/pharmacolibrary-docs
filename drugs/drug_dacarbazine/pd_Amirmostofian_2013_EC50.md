@@ -1,7 +1,8 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;dacarbazine&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/&quot;},{&quot;label&quot;:&quot;Amirmostofian_2013 \u00b7 PD cytotoxicity&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacarbazine_Buesa1991_reference&quot;,&quot;label&quot;:&quot;Buesa_1991_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cytotoxicity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
+# cytotoxicity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +20,14 @@
 Amirmostofian M; Pourahmad Jaktaji J; Soleimani Z; Tabib K; Tanbakosazan F; Omrani M; et al. et al. (2013). Iranian journal of pharmaceutical research : IJPR 12
 
 ## Parameters
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|
+| EC50 2h concentration for DTIC | `Q321` · not captured | 56 | µM | not captured | review_gapfill (not captured) | Amirmostofian_2013:review |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -27,16 +35,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.0 (0/4 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.75 (3/4 fields) | 1 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | dacarbazine | not captured | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | not captured | mismatch |
-| `gpt-oss:120b` | `effect_form` | unknown | not captured | mismatch |
-| `gpt-oss:120b` | `model_family` | emax | not captured | mismatch |
+| `gpt-oss:120b` | `driver_compound` | dacarbazine | dacarbazine (or pyridine analog) | mismatch |
 
 </details>
 

@@ -5,7 +5,7 @@
 
 # fluorouracil — `Fluorouracil_Yang2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q320]` (not captured vs 57.6) and 1 more field(s) — not a structural parameter.
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
 
@@ -25,6 +26,9 @@ Yang J; Yamada A; Shitara K; Xu RH; Ilson D; Lonardi S; et al. et al. (2025). Cl
 
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Yang2025_reference" status="curated_candidate" stale="false" population="" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -52,9 +56,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.778 (7/9 fields) | 2 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q320]` | not captured | 57.6 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q33]` | not captured | 1.01 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -106,7 +117,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference/Fluorouracil_Yang2025_reference_modelica.zip" download>Fluorouracil_Yang2025_reference_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference/Fluorouracil_Yang2025_reference_modelica.zip" download>Fluorouracil_Yang2025_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference/Fluorouracil_Yang2025_reference_fmi.zip" download>Fluorouracil_Yang2025_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference/Fluorouracil_Yang2025_reference_matlab.zip" download>Fluorouracil_Yang2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference/Fluorouracil_Yang2025_reference_matlab_simbio.zip" download>Fluorouracil_Yang2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -118,6 +129,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference/Fluorouracil_Yang2025_reference.svg" alt="Fluorouracil_Yang2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
 
 <dbs-fmusim paramsurl="drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference/Fluorouracil_Yang2025_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference/Fluorouracil_Yang2025_reference_sim_controls.json"></dbs-fmusim>
 

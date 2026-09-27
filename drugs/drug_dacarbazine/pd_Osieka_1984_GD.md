@@ -1,7 +1,8 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;dacarbazine&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/&quot;},{&quot;label&quot;:&quot;Osieka_1984 \u00b7 PD growth delay&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dacarbazine_Buesa1991_reference&quot;,&quot;label&quot;:&quot;Buesa_1991_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# growth delay — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+# growth delay — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,14 +24,20 @@ Osieka R et al. (1984). Cancer 54
 _No resolved parameters._
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.75 (3/4 fields) | 1 |
 
-_Every reader agrees on every compared field of this PD record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `driver_compound` | dacarbazine | dacarbazine (DTIC) | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

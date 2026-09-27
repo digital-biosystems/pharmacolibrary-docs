@@ -1,7 +1,8 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;cilazapril&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/&quot;},{&quot;label&quot;:&quot;Kleinbloesem_1991 \u00b7 PD Blood pressure&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilazapril_Meredith1989_reference&quot;,&quot;label&quot;:&quot;Meredith_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Meredith1989_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilazapril_Gross1993_reference&quot;,&quot;label&quot;:&quot;Gross_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_cilazapril/Cilazapril_Gross1993_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Blood pressure — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+# Blood pressure — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,14 +24,22 @@ Kleinbloesem CH; van Brummelen P; Francis RJ; Wiegand UW et al. (1991). Drugs 41
 _No resolved parameters._
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.25 (1/4 fields) | 3 |
 
-_Every reader agrees on every compared field of this PD record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `driver_compound` | cilazaprilat | unknown | mismatch |
+| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
+| `gpt-oss:120b` | `model_family` | sigmoid_emax | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

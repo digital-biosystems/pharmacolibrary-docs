@@ -31,6 +31,9 @@ Vet NJ; de Winter BCM; Koninckx M; Boeschoten SA; Boehmer ALM; Verhallen JT; PlÃ
 ## Model component
 <dbs-pgx drug="salbutamol" model-id="Salbutamol_Vet2020_reference" status="rejected" stale="true" population="children with refractory status asthmaticus" measured-compound="R-salbutamol, S-salbutamol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 6 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -95,7 +98,7 @@ first reading `qwen3.8:27b-mtp-q8_0` â€” the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col3', 'Tab2:row3:col4'] |

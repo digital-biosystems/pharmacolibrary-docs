@@ -5,7 +5,7 @@
 
 # methotrexate — `Methotrexate_Pan2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.733). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (0.358 vs not captured) and 3 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
 
@@ -27,6 +28,9 @@ Pan S; Tsakok T; Wei R; Dand N; Loeff FC; Bloem K; de Vries A; Baudry D; Duckwor
 
 ## Model component
 <dbs-pgx drug="methotrexate" model-id="Methotrexate_Pan2026_reference" status="extracted" stale="true" population="" measured-compound="methotrexate" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -54,14 +58,23 @@ Pan S; Tsakok T; Wei R; Dand N; Loeff FC; Bloem K; de Vries A; Baudry D; Duckwor
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.733 (11/15 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 0.358 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q328]` | 17.3 | 0.04 | mismatch |
+| `gpt-oss:120b` | `values[Q32]` | 5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 64 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -126,6 +139,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_methotrexate/Methotrexate_Pan2026_reference/Methotrexate_Pan2026_reference.svg" alt="Methotrexate_Pan2026_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0112 /h, F 1).
 
 <dbs-fmusim paramsurl="drugs/drug_methotrexate/Methotrexate_Pan2026_reference/Methotrexate_Pan2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_methotrexate/Methotrexate_Pan2026_reference/Methotrexate_Pan2026_reference_sim_controls.json"></dbs-fmusim>
 

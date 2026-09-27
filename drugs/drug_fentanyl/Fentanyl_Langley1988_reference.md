@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Langley_1988 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Tulbah2026_reference&quot;,&quot;label&quot;:&quot;Tulbah_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Tulbah2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Choi2016_reference&quot;,&quot;label&quot;:&quot;Choi_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Choi2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Craft1983_reference&quot;,&quot;label&quot;:&quot;Craft_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Craft1983_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Langley1988_reference&quot;,&quot;label&quot;:&quot;Langley_1988_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Langley1988_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fentanyl_Lemmens1995_reference&quot;,&quot;label&quot;:&quot;Lemmens_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Egan1995_reference&quot;,&quot;label&quot;:&quot;Egan_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Egan1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Lemmens1994_reference&quot;,&quot;label&quot;:&quot;Lemmens_1994_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Reed2024_reference&quot;,&quot;label&quot;:&quot;Reed_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Reed2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Tulbah2026_reference&quot;,&quot;label&quot;:&quot;Tulbah_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Tulbah2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Choi2016_reference&quot;,&quot;label&quot;:&quot;Choi_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Choi2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Craft1983_reference&quot;,&quot;label&quot;:&quot;Craft_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Craft1983_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Hagos2019_reference&quot;,&quot;label&quot;:&quot;Hagos_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Hagos2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Langley1988_reference&quot;,&quot;label&quot;:&quot;Langley_1988_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Langley1988_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fentanyl_Lemmens1995_reference&quot;,&quot;label&quot;:&quot;Lemmens_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Egan1995_reference&quot;,&quot;label&quot;:&quot;Egan_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Egan1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Lemmens1994_reference&quot;,&quot;label&quot;:&quot;Lemmens_1994_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Reed2024_reference&quot;,&quot;label&quot;:&quot;Reed_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Reed2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fentanyl — `Fentanyl_Langley1988_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,15 +16,23 @@
 ### Reviewer guidance
 
 **Why:** C6_cl_magnitude failed (ratio None).
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (132 vs 86) and 6 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
 <sub>owner: **curator**</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-23 12:15:50.011720+00:00) predates the upstream re-run (2026-09-27 15:38:33.713511+00:00). Current validate status: `needs_review`.
+
+> **Dose compound ≠ measured compound:** dosed `propofol`, measured `fentanyl`.
 
 ## Citation
 Langley MS; Heel RC et al. (1988). Drugs 35
   ·  DOI: [10.2165/00003495-198835040-00002](https://doi.org/10.2165/00003495-198835040-00002)
 
 ## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Langley1988_reference" status="needs_review" stale="false" population="" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fentanyl" model-id="Fentanyl_Langley1988_reference" status="needs_review" stale="true" population="patients undergoing anaesthesia" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -49,14 +57,26 @@ Langley MS; Heel RC et al. (1988). Drugs 35
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 132 | 86 | mismatch |
+| `gpt-oss:120b` | `values[Q307]` | not captured | 0.45 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | not captured | 834 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q59]` | not captured | 2.9 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q60]` | not captured | 100 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q61]` | 76 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q65]` | 239 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -111,4 +131,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 15:38 UTC</sub>

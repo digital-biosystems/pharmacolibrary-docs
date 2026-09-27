@@ -5,7 +5,7 @@
 
 - **generic name:** semaglutide
 - **ATC codes:** `A10BJ06`
-- **DrugBank:** [DB13928](https://go.drugbank.com/drugs/DB13928)
+- **DrugBank:** [DB13928](https://go.drugbank.com/drugs/DB13928) · **PubChem:** not captured
 - **groups:** approved, investigational
 
 ## About

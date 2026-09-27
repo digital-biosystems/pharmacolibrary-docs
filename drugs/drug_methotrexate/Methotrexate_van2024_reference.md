@@ -5,7 +5,7 @@
 
 # methotrexate — `Methotrexate_van2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** T6_deviations
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q312]` (0.101 vs 37) and 6 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
 <sub>owner: **engineer**</sub>
 
@@ -27,6 +28,9 @@ van Huizen A; Bank P; van der Kraaij G; Musters A; Busard C; Menting S; et al. e
 
 ## Model component
 <dbs-pgx drug="methotrexate" model-id="Methotrexate_van2024_reference" status="extracted" stale="true" population="" measured-compound="methotrexate" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -55,14 +59,26 @@ van Huizen A; Bank P; van der Kraaij G; Musters A; Busard C; Menting S; et al. e
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.364 (4/11 fields) | 7 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q312]` | 0.101 | 37 | mismatch |
+| `gpt-oss:120b` | `values[Q315]` | 33.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q319]` | not captured | 1 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q320]` | 1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q322]` | 1.19 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q328]` | 0.0314 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q37]` | not captured | 6.8 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -115,7 +131,7 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_methotrexate/Methotrexate_van2024_reference/Methotrexate_van2024_reference_modelica.zip" download>Methotrexate_van2024_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_methotrexate/Methotrexate_van2024_reference/Methotrexate_van2024_reference_fmi.zip" download>Methotrexate_van2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_methotrexate/Methotrexate_van2024_reference/Methotrexate_van2024_reference_fmi.zip" download>Methotrexate_van2024_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_methotrexate/Methotrexate_van2024_reference/Methotrexate_van2024_reference_matlab.zip" download>Methotrexate_van2024_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_methotrexate/Methotrexate_van2024_reference/Methotrexate_van2024_reference_matlab_simbio.zip" download>Methotrexate_van2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_methotrexate/Methotrexate_van2024_reference/Methotrexate_van2024_reference_sbml.zip" download>Methotrexate_van2024_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -126,6 +142,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_methotrexate/Methotrexate_van2024_reference/Methotrexate_van2024_reference.svg" alt="Methotrexate_van2024_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
 
 <dbs-fmusim paramsurl="drugs/drug_methotrexate/Methotrexate_van2024_reference/Methotrexate_van2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_methotrexate/Methotrexate_van2024_reference/Methotrexate_van2024_reference_sim_controls.json"></dbs-fmusim>
 

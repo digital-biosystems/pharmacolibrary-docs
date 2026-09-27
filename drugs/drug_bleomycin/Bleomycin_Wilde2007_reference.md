@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;bleomycin&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/&quot;},{&quot;label&quot;:&quot;Wilde_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Giri1986_reference&quot;,&quot;label&quot;:&quot;Giri_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Giri1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Schober1978v2_reference&quot;,&quot;label&quot;:&quot;Schober_1978_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Schober1978v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bleomycin_Wilde2007_reference&quot;,&quot;label&quot;:&quot;Wilde_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Wilde2007_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bleomycin_Yadav2023_reference&quot;,&quot;label&quot;:&quot;Yadav_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Yadav2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Zhao2025_reference&quot;,&quot;label&quot;:&quot;Zhao_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Zhao2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Giri1986_reference&quot;,&quot;label&quot;:&quot;Giri_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Giri1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Hall1982_abnormal_renal&quot;,&quot;label&quot;:&quot;Hall_1982_abnormal_renal&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Hall1982_abnormal_renal.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Hall1982_all_patients&quot;,&quot;label&quot;:&quot;Hall_1982_all_patients&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Hall1982_all_patients.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Hall1982_patients_with&quot;,&quot;label&quot;:&quot;Hall_1982_patients_with&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Hall1982_patients_with.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bleomycin_Schober1978v2_reference&quot;,&quot;label&quot;:&quot;Schober_1978_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bleomycin/Bleomycin_Schober1978v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bleomycin — `Bleomycin_Wilde2007_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (0.962 vs not captured) and 7 more field(s) — not a structural parameter.
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
 
@@ -25,6 +26,9 @@ Wilde S; Jetter A; Rietbrock S; Kasel D; Engert A; Josting A; et al. et al. (200
 
 ## Model component
 <dbs-pgx drug="bleomycin" model-id="Bleomycin_Wilde2007_reference" status="curated_candidate" stale="false" population="" measured-compound="bleomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -54,9 +58,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.111 (1/9 fields) | 8 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 0.962 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q301]` | 4.67 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q303]` | 3.84 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q30]` | 1.22 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q347]` | 2.86 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q47]` | 1.009 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | 789.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q88]` | 0.721 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -123,6 +140,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_bleomycin/Bleomycin_Wilde2007_reference/Bleomycin_Wilde2007_reference.svg" alt="Bleomycin_Wilde2007_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
 
 <dbs-fmusim paramsurl="drugs/drug_bleomycin/Bleomycin_Wilde2007_reference/Bleomycin_Wilde2007_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_bleomycin/Bleomycin_Wilde2007_reference/Bleomycin_Wilde2007_reference_sim_controls.json"></dbs-fmusim>
 

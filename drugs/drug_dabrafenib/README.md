@@ -5,7 +5,8 @@
 
 - **generic name:** dabrafenib
 - **ATC codes:** `L01EC02`
-- **DrugBank:** [DB08912](https://go.drugbank.com/drugs/DB08912)
+- **DrugBank:** [DB08912](https://go.drugbank.com/drugs/DB08912) · **PubChem:** [CID 44462760](https://pubchem.ncbi.nlm.nih.gov/compound/44462760)
+- **molar mass:** 519.562 g/mol (C23H20F3N5O2S2) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -26,6 +27,15 @@ In combination with [trametinib], dabrafenib is indicated to treat for:
 - the treatment of pediatric patients one year of age and older with low-grade glioma (LGG) with a BRAF V600E mutation who require systemic therapy.[L45548]
 
 Dabrafenib has limitations of use: it is neither indicated for treating patients with colorectal cancer because of known intrinsic resistance to BRAF inhibition nor wild-type BRAF solid tumours.[L45548]
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| dabrafenib | parent | 519.562 | C23H20F3N5O2S2 | DrugBank | [44462760](https://pubchem.ncbi.nlm.nih.gov/compound/44462760) | Balakirouchenane_2020 |
+| hydroxy-dabrafenib | metabolite | 535.559 | C23H20F3N5O3S2 | PubChem | [57989740](https://pubchem.ncbi.nlm.nih.gov/compound/57989740) | Balakirouchenane_2020 |
 
 ## Extraction summary
 

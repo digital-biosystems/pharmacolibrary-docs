@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;amlodipine&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/&quot;},{&quot;label&quot;:&quot;Snelder_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amlodipine_Angeloni2016_reference&quot;,&quot;label&quot;:&quot;Angeloni_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Angeloni2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Flynn2006_reference&quot;,&quot;label&quot;:&quot;Flynn_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Flynn2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Heo2016_reference&quot;,&quot;label&quot;:&quot;Heo_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Heo2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Jeppesen1998_reference&quot;,&quot;label&quot;:&quot;Jeppesen_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Jeppesen1998_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Karalis2023_reference&quot;,&quot;label&quot;:&quot;Karalis_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Karalis2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mao2024_reference&quot;,&quot;label&quot;:&quot;Mao_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mao2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Morgan2018_reference&quot;,&quot;label&quot;:&quot;Morgan_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Morgan2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amlodipine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mukherjee2018_reference&quot;,&quot;label&quot;:&quot;Mukherjee_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mukherjee2018_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amlodipine_Angeloni2016_reference&quot;,&quot;label&quot;:&quot;Angeloni_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Angeloni2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Flynn2006_reference&quot;,&quot;label&quot;:&quot;Flynn_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Flynn2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Heo2016_reference&quot;,&quot;label&quot;:&quot;Heo_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Heo2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Jeppesen1998_reference&quot;,&quot;label&quot;:&quot;Jeppesen_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Jeppesen1998_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Karalis2023_reference&quot;,&quot;label&quot;:&quot;Karalis_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Karalis2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mao2024_reference&quot;,&quot;label&quot;:&quot;Mao_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mao2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Morgan2018_reference&quot;,&quot;label&quot;:&quot;Morgan_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Morgan2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amlodipine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mukherjee2018_reference&quot;,&quot;label&quot;:&quot;Mukherjee_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mukherjee2018_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amlodipine — `Amlodipine_Snelder2014_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q25]` (4.7 vs not captured) and 7 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
 
@@ -27,6 +28,9 @@ Snelder N; Ploeger BA; Luttringer O; Rigel DF; Fu F; Beil M; et al. et al. (2014
 
 ## Model component
 <dbs-pgx drug="amlodipine" model-id="Amlodipine_Snelder2014_reference" status="extracted" stale="true" population="" measured-compound="amlodipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -53,14 +57,27 @@ Snelder N; Ploeger BA; Luttringer O; Rigel DF; Fu F; Beil M; et al. et al. (2014
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.385 (5/13 fields) | 8 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q25]` | 4.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q321]` | 245 | 245 | mismatch |
+| `gpt-oss:120b` | `values[Q326]` | 0.163 | 0.163 | mismatch |
+| `gpt-oss:120b` | `values[Q328]` | 11.6 | 11.6 | mismatch |
+| `gpt-oss:120b` | `values[Q39]` | not captured | 0.0918 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q47]` | not captured | 4.70 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q49]` | 1.17 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q75]` | not captured | -1 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -113,7 +130,7 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amlodipine/Amlodipine_Snelder2014_reference/Amlodipine_Snelder2014_reference_modelica.zip" download>Amlodipine_Snelder2014_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amlodipine/Amlodipine_Snelder2014_reference/Amlodipine_Snelder2014_reference_fmi.zip" download>Amlodipine_Snelder2014_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amlodipine/Amlodipine_Snelder2014_reference/Amlodipine_Snelder2014_reference_fmi.zip" download>Amlodipine_Snelder2014_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amlodipine/Amlodipine_Snelder2014_reference/Amlodipine_Snelder2014_reference_matlab.zip" download>Amlodipine_Snelder2014_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amlodipine/Amlodipine_Snelder2014_reference/Amlodipine_Snelder2014_reference_matlab_simbio.zip" download>Amlodipine_Snelder2014_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amlodipine/Amlodipine_Snelder2014_reference/Amlodipine_Snelder2014_reference_sbml.zip" download>Amlodipine_Snelder2014_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -124,6 +141,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_amlodipine/Amlodipine_Snelder2014_reference/Amlodipine_Snelder2014_reference.svg" alt="Amlodipine_Snelder2014_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.17 /h, F 0.9).
 
 <dbs-fmusim paramsurl="drugs/drug_amlodipine/Amlodipine_Snelder2014_reference/Amlodipine_Snelder2014_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_amlodipine/Amlodipine_Snelder2014_reference/Amlodipine_Snelder2014_reference_sim_controls.json"></dbs-fmusim>
 

@@ -29,6 +29,9 @@ Courlet P; Buclin T; Biollaz J; Mazzoni I; Rabin O; Guidi M et al. (2022). CPT: 
 ## Model component
 <dbs-pgx drug="salbutamol" model-id="Salbutamol_Courlet2022_reference" status="rejected" stale="true" population="healthy adults" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 7 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -51,9 +54,6 @@ Courlet P; Buclin T; Biollaz J; Mazzoni I; Rabin O; Guidi M et al. (2022). CPT: 
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
-
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'logitF 2' — extend the ontology if this is a real PK parameter (source ['psp412773-tbl-0001:row3:col1'])
 - unit_dimension_mismatch: 'k a2 (h−1)' → Q95 (unit '1 / [time]' vs ontology '[time]') — route to review
@@ -74,7 +74,6 @@ Courlet P; Buclin T; Biollaz J; Mazzoni I; Rabin O; Guidi M et al. (2022). CPT: 
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
-- dropped duplicate Q49 ('k a2 (h−1)', value '1.47') — already have one for this compound
 
 **Extraction notes:**
 - unparsed cell psp412773-tbl-0001:row10:col2 = '4.8 × 10−6'
@@ -109,7 +108,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412773-tbl-0001:row8:col1', 'psp412773-tbl-0001:row8:col2', 'psp412773-tbl-0001:row8:col3', 'psp412773-tbl-0001:row8:col4'] |
@@ -157,9 +156,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_salbutamol/Salbutamol_Courlet2022_reference/Salbutamol_Courlet2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_salbutamol/Salbutamol_Courlet2022_reference/Salbutamol_Courlet2022_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Salbutamol_Courlet2022_reference_params.json` · controls `Salbutamol_Courlet2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

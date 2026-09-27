@@ -27,6 +27,9 @@ Bressolle F; Joulia JM; Pinguet F; Ychou M; Astre C; Duffour J; et al. et al. (1
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Bressolle1999_reference" status="needs_review" stale="false" population="patients with metastatic colorectal cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -91,7 +94,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bressolle_1999:abstract'] |

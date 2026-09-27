@@ -5,7 +5,8 @@
 
 - **generic name:** ticagrelor
 - **ATC codes:** `B01AC24`
-- **DrugBank:** [DB08816](https://go.drugbank.com/drugs/DB08816)
+- **DrugBank:** [DB08816](https://go.drugbank.com/drugs/DB08816) · **PubChem:** [CID 9871419](https://pubchem.ncbi.nlm.nih.gov/compound/9871419)
+- **molar mass:** 522.568 g/mol (C23H28F2N6O4S) — DrugBank
 - **groups:** approved, investigational
 
 ## About
@@ -16,6 +17,15 @@ Ticagrelor was granted EMA approval on 3 December 2010.[L14207]
 Ticagrelor was granted FDA approval on 20 July 2011.[L14201]
 
 **Indication.** Ticagrelor is indicated to reduce the risk of cardiovascular death, myocardial infarction, and stroke in patients with acute coronary syndrome or a history of myocardial infarction.[L14201] Ticagrelor is also indicated to reduce the risk of a first myocardial infarction or stroke in high risk patients with coronary artery disease.[L14201]
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| ticagrelor | parent | 522.568 | C23H28F2N6O4S | DrugBank | [9871419](https://pubchem.ncbi.nlm.nih.gov/compound/9871419) | Henrich_2021, Kathman_2022, Åstrand_2019 |
+| AR-C124910XX | metabolite | 478.518 | C21H24F2N6O3S | PubChem | [49846084](https://pubchem.ncbi.nlm.nih.gov/compound/49846084) | Åstrand_2019 |
 
 ## Extraction summary
 
@@ -35,11 +45,11 @@ Ticagrelor was granted FDA approval on 20 July 2011.[L14201]
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Åstrand_2019](drugs/drug_ticagrelor/pd_strand_2019_PRU.md) | Åstrand M et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2019) | [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Henrich_2021](drugs/drug_ticagrelor/pd_Henrich_2021_PRU.md) | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022](drugs/drug_ticagrelor/pd_Kathman_2022_LTA.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022](drugs/drug_ticagrelor/pd_Kathman_2022_PRU.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022](drugs/drug_ticagrelor/pd_Kathman_2022_VASP.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Åstrand_2019](drugs/drug_ticagrelor/pd_strand_2019_PRU.md) | Åstrand M et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2019) | [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812) |
 
 ## ADME sites
 

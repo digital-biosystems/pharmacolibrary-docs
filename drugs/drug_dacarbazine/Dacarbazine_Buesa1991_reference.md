@@ -27,6 +27,9 @@ Buesa JM; Urréchaga E et al. (1991). Cancer chemotherapy and pharmacology 28
 ## Model component
 <dbs-pgx drug="dacarbazine" model-id="Dacarbazine_Buesa1991_reference" status="rejected" stale="false" population="cancer patients" measured-compound="DTIC" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 0 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters

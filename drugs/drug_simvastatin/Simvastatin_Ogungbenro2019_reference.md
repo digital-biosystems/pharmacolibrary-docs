@@ -27,6 +27,9 @@ Ogungbenro K; Wagner JB; Abdel-Rahman S; Leeder JS; Galetin A et al. (2019). Eur
 ## Model component
 <dbs-pgx drug="simvastatin" model-id="Simvastatin_Ogungbenro2019_reference" status="rejected" stale="false" population="children and adolescents" measured-compound="simvastatin" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 8 extracted, plus 2 covariate effects.
+
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters

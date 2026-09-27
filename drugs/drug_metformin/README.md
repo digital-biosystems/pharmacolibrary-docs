@@ -5,7 +5,8 @@
 
 - **generic name:** metformin
 - **ATC codes:** `A10BA02`, `A10BD02`, `A10BD03`, `A10BD05`, `A10BD07`, `A10BD08`, `A10BD10`, `A10BD11`, `A10BD13`, `A10BD14`, `A10BD15`, `A10BD16`, `A10BD17`, `A10BD18`, `A10BD20`, `A10BD22`, `A10BD23`, `A10BD26`, `A10BD28`
-- **DrugBank:** [DB00331](https://go.drugbank.com/drugs/DB00331)
+- **DrugBank:** [DB00331](https://go.drugbank.com/drugs/DB00331) · **PubChem:** [CID 4091](https://pubchem.ncbi.nlm.nih.gov/compound/4091)
+- **molar mass:** 129.1636 g/mol (C4H11N5) — DrugBank
 - **groups:** approved, investigational
 
 ## About

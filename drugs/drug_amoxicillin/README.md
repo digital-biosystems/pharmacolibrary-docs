@@ -5,7 +5,8 @@
 
 - **generic name:** amoxicillin
 - **ATC codes:** `A02BD01`, `A02BD03`, `A02BD04`, `A02BD05`, `A02BD06`, `A02BD07`, `A02BD10`, `A02BD12`, `A02BD13`, `A02BD14`, `A02BD15`, `A02BD16`, `A02BD17`, `J01CA04`
-- **DrugBank:** [DB01060](https://go.drugbank.com/drugs/DB01060)
+- **DrugBank:** [DB01060](https://go.drugbank.com/drugs/DB01060) · **PubChem:** [CID 33613](https://pubchem.ncbi.nlm.nih.gov/compound/33613)
+- **molar mass:** 365.404 g/mol (C16H19N3O5S) — DrugBank
 - **groups:** approved, investigational, vet_approved
 
 ## About
@@ -22,7 +23,7 @@ Amoxicillin is used in combination with [vonoprazan] and [clarithromycin] as co-
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 01:03 | 1:15:45 | 18/2/5 | 2/2/0 | 0/0/0 | 1,483,614/207,893 | ollama / qwen3.8:27b-mtp-q8_0 | 54 | 36/16 | 23/31 | 0 |
+| 2026-09-27 12:56 | 0:07 | 18/2/5 | 2/2/0 | 0/0/0 | 1,811/234 | ollama / qwen3.8:27b-mtp-q8_0 | 54 | 36/16 | 23/31 | 0 |
 
 ## popPK records
 

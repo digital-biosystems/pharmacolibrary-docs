@@ -31,6 +31,9 @@ Yang X; Sherwin CM; Yu T; Yellepeddi VK; Brunner HI; Vinks AA et al. (2015). Exp
 ## Model component
 <dbs-pgx drug="azathioprine" model-id="Azathioprine_Yang2015_reference" status="needs_review" stale="true" population="unknown" measured-compound="azathioprine" parameterization="apparent" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
+
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters

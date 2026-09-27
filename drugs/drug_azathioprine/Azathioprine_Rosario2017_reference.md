@@ -5,7 +5,7 @@
 
 # azathioprine — `Azathioprine_Rosario2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** C8 unreachable/orphan compartment or unlinked metabolite
+**Second reading:** Independently confirmed by `gpt-oss:120b`.
 **How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
 <sub>owner: **curator**</sub>
 
@@ -27,6 +28,9 @@ Rosario M; Dirks NL; Milch C; Parikh A; Bargfrede M; Wyant T; et al. et al. (201
 
 ## Model component
 <dbs-pgx drug="azathioprine" model-id="Azathioprine_Rosario2017_reference" status="rejected" stale="true" population="" measured-compound="azathioprine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -52,12 +56,12 @@ Rosario M; Dirks NL; Milch C; Parikh A; Bargfrede M; Wyant T; et al. et al. (201
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 
 _Every reader agrees on every compared field of this record._
 

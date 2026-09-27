@@ -1,12 +1,16 @@
 {
  "model_id": "Salbutamol_Walsh2023_reference",
+ "molar_masses": {
+  "central.C": 0.2393107
+ },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 1.45e-07,
   "F": 0.0925,
+  "MM": 0.2393107,
   "Tlag": 0.0,
   "VdPerKg": 2.5571428571428572e-05,
   "adminCount": 1.0,
@@ -17,8 +21,11 @@
   "ka": 0.004638888888888889,
   "weight": 70.0
  },
+ "reference_peak_times": {
+  "central.C": 2077.755511022044
+ },
  "reference_peaks": {
-  "C_central": 1.087635220772732e-05
+  "central.C": 4.037725408102366e-05
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

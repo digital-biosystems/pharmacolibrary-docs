@@ -29,6 +29,9 @@ Meredith PA; Elliott HL; Reid JL; Francis RJ et al. (1989). British journal of c
 ## Model component
 <dbs-pgx drug="cilazapril" model-id="Cilazapril_Meredith1989_reference" status="needs_review" stale="false" population="patients with essential hypertension" measured-compound="cilazaprilat" parameterization="apparent" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
+
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
@@ -103,9 +106,10 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C1_half_life_beta | pass | 1.5 | 1.433 | 0.9553 | 0.25 | reported t½β |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Kim_2017:review'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Kim_2017:review'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | 1 h-1 | not captured | not captured | ['Meredith_1989:other_prose'] |

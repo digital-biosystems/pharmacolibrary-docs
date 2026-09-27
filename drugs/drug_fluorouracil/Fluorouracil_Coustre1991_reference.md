@@ -27,6 +27,9 @@ Coustère C; Mentré F; Sommadossi JP; Diasio RB; Steimer JL et al. (1991). Canc
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Coustre1991_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 5 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -97,7 +100,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Arshad_2020:review'] |

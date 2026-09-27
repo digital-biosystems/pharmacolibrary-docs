@@ -25,6 +25,9 @@ not matched (stem van_2013)
 ## Model component
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_van2013_climente_marti_et_al_2003" status="needs_review" stale="false" population="cancer patients" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -75,7 +78,7 @@ not matched (stem van_2013)
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Bae_2026:review'] |

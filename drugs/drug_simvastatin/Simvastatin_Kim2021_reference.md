@@ -27,6 +27,9 @@ Kim MS; Baek IH et al. (2021). Journal of veterinary pharmacology and therapeuti
 ## Model component
 <dbs-pgx drug="simvastatin" model-id="Simvastatin_Kim2021_reference" status="needs_review" stale="false" population="beagle dogs" measured-compound="simvastatin" parameterization="apparent" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted.
+
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
@@ -160,6 +163,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </div><figure class="pk-models-diagram"><img src="drugs/drug_simvastatin/Simvastatin_Kim2021_reference/Simvastatin_Kim2021_reference.svg" alt="Simvastatin_Kim2021_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.83 /h, F 1).
 
 <dbs-fmusim paramsurl="drugs/drug_simvastatin/Simvastatin_Kim2021_reference/Simvastatin_Kim2021_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_simvastatin/Simvastatin_Kim2021_reference/Simvastatin_Kim2021_reference_sim_controls.json"></dbs-fmusim>
 

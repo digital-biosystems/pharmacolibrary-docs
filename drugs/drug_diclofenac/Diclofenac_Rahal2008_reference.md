@@ -29,6 +29,9 @@ Rahal A; Kumar A; Ahmad AH; Malik JK et al. (2008). Research in veterinary scien
 ## Model component
 <dbs-pgx drug="diclofenac" model-id="Diclofenac_Rahal2008_reference" status="needs_review" stale="true" population="sheep" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 5 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters

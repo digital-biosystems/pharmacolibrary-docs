@@ -29,6 +29,9 @@ Jung YS; Son M; Lee SG; Chong JW; Kim SJ; Jang JE; et al. et al. (2024). British
 ## Model component
 <dbs-pgx drug="methotrexate" model-id="Methotrexate_Jung2024_reference" status="rejected" stale="true" population="Korean patients with haematologic malignancy" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -118,7 +121,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jung_2024_table_p6_1:row2:col1', 'Jung_2024_table_p6_1:row2:col2'] |
