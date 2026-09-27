@@ -137,7 +137,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.4 /h, F 0.9).
+**Administration: oral** — 600 mg, single dose, first-order absorption (ka 0.4 /h, F 0.9). Doses in the paper: 600, 1200 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference/Clopidogrel_Purohit2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference/Clopidogrel_Purohit2026_reference_sim_controls.json"></dbs-fmusim>
 

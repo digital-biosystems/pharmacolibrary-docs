@@ -27,7 +27,7 @@ Jung YS; Jin BH; Park MS; Kim CO; Chae D et al. (2024). CPT: pharmacometrics & s
 <dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Jung2024" status="curated" stale="false" population="healthy male participants" measured-compound="clopidogrel" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 10 extracted.
+**Parameters:** 15 extracted.
 
 **Parameterization:** apparent.
 
@@ -38,17 +38,17 @@ Jung YS; Jin BH; Park MS; Kim CO; Chae D et al. (2024). CPT: pharmacometrics & s
 | not captured | `Q64` · Vp | 2823.98 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
 | not captured | `Q22` · CLc | 9257.28 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
 | not captured | `Q30` · Qp | 587.93 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
-| not captured | `Q900` · Qc | 845.70 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
+| not captured | `Q369` · Qc | 845.70 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
 | not captured | `Q49` · ka | 19.64 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
 | not captured | `Q83` · Tlag | 0.196 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
 | not captured | `Q45` · fm1 | 0.125 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
 | not captured | `Q900` · fm2 | 0.960 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
-| not captured | `Q367` · Vm1 | 51.45 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
-| not captured | `Q351` · CLm1 | 74.25 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
-| not captured | `Q900` · Vm2 | 17.34 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
-| not captured | `Q900` · Vp2 | 51.89 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
-| not captured | `Q900` · CLm2 | 7.248 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
-| not captured | `Q900` · Qm2 | 4.476 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
+| not captured | `Q61` · Vm1 | 51.45 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
+| not captured | `Q22` · CLm1 | 74.25 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
+| not captured | `Q63` · Vm2 | 17.34 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
+| not captured | `Q64` · Vp2 | 51.89 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
+| not captured | `Q22` · CLm2 | 7.248 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
+| not captured | `Q30` · Qm2 | 4.476 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024'} | — | not captured |
 | not captured | `Q45` · fm1 | 0.125 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024::EM'} | — | not captured |
 | not captured | `Q900` · fm2 | 0.960 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024::EM'} | — | not captured |
 | not captured | `Q900` · fmH4 | 0.120 | not captured | not captured | not captured | not captured | curated (1.0) | {'kind': 'curated_truth', 'record': 'Jung_2024::EM'} | — | not captured |
@@ -139,18 +139,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_modelica.zip" download>Clopidogrel_Jung2024_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_fmi.zip" download>Clopidogrel_Jung2024_fmi.zip</a> <span class="pk-size">(1.3 MB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_fmi.zip" download>Clopidogrel_Jung2024_fmi.zip</a> <span class="pk-size">(1.3 MB)</span><br><a href="models/fmu/PK_3M_3C.fmu" download>PK_3M_3C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_matlab.zip" download>Clopidogrel_Jung2024_matlab.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_matlab_simbio.zip" download>Clopidogrel_Jung2024_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_sbml.zip" download>Clopidogrel_Jung2024_sbml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_cellml.zip" download>Clopidogrel_Jung2024_cellml.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_3M_3C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024.svg" alt="Clopidogrel_Jung2024 diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 300 mg, single dose, first-order absorption into a hepatic compartment first (first pass) (ka 19.6 /h, lag 11.8 min, F 1). _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_params.json" metaurl="assets/fmu/PK_3M_3C.vr.json" wasmurl="assets/fmu/PK_3M_3C.js" controlsurl="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_3M_3C` · parameters `Clopidogrel_Jung2024_params.json` · controls `Clopidogrel_Jung2024_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

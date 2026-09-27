@@ -163,7 +163,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.41 /h, lag 20.4 min, F 7.86).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.41 /h, lag 20.4 min, F 7.86). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_metformin/Metformin_Jacobs2026_oral/Metformin_Jacobs2026_oral_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metformin/Metformin_Jacobs2026_oral/Metformin_Jacobs2026_oral_sim_controls.json"></dbs-fmusim>
 

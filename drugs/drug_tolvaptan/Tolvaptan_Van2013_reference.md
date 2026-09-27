@@ -196,7 +196,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 30 mg, single dose, first-order absorption (ka 0.832 /h, lag 9.24 min, F 1).
+**Administration: oral** — 5 mg, single dose, first-order absorption (ka 0.832 /h, lag 9.24 min, F 1). Doses in the paper: 5, 10, 15, 30, 60, 90 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_tolvaptan/Tolvaptan_Van2013_reference/Tolvaptan_Van2013_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_tolvaptan/Tolvaptan_Van2013_reference/Tolvaptan_Van2013_reference_sim_controls.json"></dbs-fmusim>
 

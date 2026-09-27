@@ -214,7 +214,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.02 /h, lag 24.7 min, F 0.9).
+**Administration: oral** — 0.15 mg, single dose, first-order absorption (ka 1.02 /h, lag 24.7 min, F 0.9). Doses in the paper: 0.15–12 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference/Brexpiprazole_Frederiksen2023v3_reference_params.json" metaurl="assets/fmu/PK_3M_9C.vr.json" wasmurl="assets/fmu/PK_3M_9C.js" controlsurl="drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference/Brexpiprazole_Frederiksen2023v3_reference_sim_controls.json"></dbs-fmusim>
 

@@ -6238,7 +6238,7 @@
   "counts": {
    "pd": 19,
    "pgx": 14,
-   "pk": 12
+   "pk": 13
   },
   "curated": 1,
   "details": [
@@ -14357,7 +14357,7 @@
   "counts": {
    "pd": 0,
    "pgx": 0,
-   "pk": 1
+   "pk": 0
   },
   "curated": 0,
   "details": [
@@ -15099,6 +15099,55 @@
   "rejected": 0,
   "rendered": true,
   "slug": "itopride",
+  "stale": 0
+ },
+ "drug_ivabradine": {
+  "atc_codes": [
+   "C01EB17",
+   "C07FX05",
+   "C07FX06"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Lang_2021 \u00b7 1_3_years",
+    "model_id": "Ivabradine_Lang2021_1_3_years"
+   },
+   {
+    "label": "Lang_2021 \u00b7 3_18_years_bw_40kg",
+    "model_id": "Ivabradine_Lang2021_3_18_years_bw_40kg"
+   },
+   {
+    "label": "Lang_2021 \u00b7 3_18_years_bw_40kg_2",
+    "model_id": "Ivabradine_Lang2021_3_18_years_bw_40kg_2"
+   },
+   {
+    "label": "Lang_2021 \u00b7 adult_value_reference",
+    "model_id": "Ivabradine_Lang2021_adult_value_reference"
+   },
+   {
+    "label": "Lang_2021 \u00b7 adults_18_years",
+    "model_id": "Ivabradine_Lang2021_adults_18_years"
+   },
+   {
+    "label": "Lang_2021 \u00b7 class_1_0_5_1_year_0_05mg_kg_salem",
+    "model_id": "Ivabradine_Lang2021_class_1_0_5_1_year_0_05mg_kg_salem"
+   }
+  ],
+  "dir": "drug_ivabradine",
+  "extracted": 0,
+  "last_change": "2026-09-27T16:53:54.479149+00:00",
+  "name": "ivabradine",
+  "needs_review": 0,
+  "records": 6,
+  "rejected": 6,
+  "rendered": true,
+  "slug": "ivabradine",
   "stale": 0
  },
  "drug_ivacaftor": {
@@ -17271,6 +17320,33 @@
   "rejected": 2,
   "rendered": true,
   "slug": "melagatran",
+  "stale": 0
+ },
+ "drug_meldonium": {
+  "atc_codes": [
+   "C01EB22"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Forsdahl_2018 \u00b7 reference",
+    "model_id": "Meldonium_Forsdahl2018_reference"
+   }
+  ],
+  "dir": "drug_meldonium",
+  "extracted": 0,
+  "last_change": "2026-09-27T17:08:23.052686+00:00",
+  "name": "meldonium",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "meldonium",
   "stale": 0
  },
  "drug_melitracen": {
@@ -23701,6 +23777,28 @@
   "slug": "ranitidine_bismuth_citrate",
   "stale": 0
  },
+ "drug_ranolazine": {
+  "atc_codes": [
+   "C01EB18"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_ranolazine",
+  "extracted": 0,
+  "last_change": null,
+  "name": "ranolazine",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "ranolazine",
+  "stale": 0
+ },
  "drug_rebamipide": {
   "atc_codes": [
    "A02BX14"
@@ -28099,6 +28197,33 @@
   "rejected": 0,
   "rendered": true,
   "slug": "tryptophan",
+  "stale": 0
+ },
+ "drug_ubidecarenone": {
+  "atc_codes": [
+   "C01EB09"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Tomono_1986 \u00b7 reference",
+    "model_id": "Ubidecarenone_Tomono1986_reference"
+   }
+  ],
+  "dir": "drug_ubidecarenone",
+  "extracted": 0,
+  "last_change": "2026-09-27T18:45:15.252799+00:00",
+  "name": "ubidecarenone",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "ubidecarenone",
   "stale": 0
  },
  "drug_ubrogepant": {

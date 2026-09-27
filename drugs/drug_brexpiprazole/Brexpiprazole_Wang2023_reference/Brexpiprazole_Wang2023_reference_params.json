@@ -1,11 +1,17 @@
 {
  "model_id": "Brexpiprazole_Wang2023_reference",
  "molar_masses": {
-  "central.C": 0.43357
+  "C_central": 0.43357
  },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1.0,
+  2.0,
+  4.0
  ],
  "parameters": {
   "Cl": 3.722222222222222e-07,
@@ -15,17 +21,17 @@
   "VdPerKg": 0.0011142857142857144,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-06,
   "k12": 3.005698005698006e-06,
   "k21": 8.525252525252525e-06,
   "ka": 0.0004138888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 7915.356727091564
+  "C_central": 7791.583166332665
  },
  "reference_peaks": {
-  "central.C": 0.0009339832393040089
+  "C_central": 9.339109091595649e-06
  },
  "stop_time": 777600.0,
  "template": "PK_2C_enteral",

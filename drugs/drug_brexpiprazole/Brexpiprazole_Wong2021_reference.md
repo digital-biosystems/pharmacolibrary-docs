@@ -142,7 +142,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+**Administration: oral** — 0.25 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 0.25, 0.5, 1, 2, 4, 5, 6 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference/Brexpiprazole_Wong2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference/Brexpiprazole_Wong2021_reference_sim_controls.json"></dbs-fmusim>
 

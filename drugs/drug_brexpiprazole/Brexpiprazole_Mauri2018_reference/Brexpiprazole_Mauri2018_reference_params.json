@@ -1,11 +1,11 @@
 {
  "model_id": "Brexpiprazole_Mauri2018_reference",
  "molar_masses": {
-  "central.C": 0.43357
+  "C_central": 0.43357
  },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
  ],
  "parameters": {
   "Cl": 6.3e-06,
@@ -18,10 +18,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662062
+  "C_central": 660.0000000662062
  },
  "reference_peaks": {
-  "central.C": 0.0012673393063859617
+  "C_central": 0.0012673393063859617
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

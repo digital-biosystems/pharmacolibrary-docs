@@ -29,6 +29,9 @@ Chang P; Perera V; Salinger DH; Merali S; Thanneer N; Back H; et al. et al. (202
 ## Model component
 <dbs-pgx drug="mavacamten" model-id="Mavacamten_Chang2024_reference" status="model_quarantined" stale="false" population="participants with hypertrophic cardiomyopathy and healthy adults" measured-compound="mavacamten" parameterization="apparent" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
+
 **Parameterization:** CL/F, Q/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
@@ -96,8 +99,13 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 6.9 L/h | not captured | not captured | ['Chang_2024:other_prose'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.914 L/h | not captured | not captured | ['Chang_2024:discussion_prose'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 6.63 L | not captured | not captured | ['Chang_2024:discussion_prose'] |
 
 **Reviewer per-scenario checks:**
 

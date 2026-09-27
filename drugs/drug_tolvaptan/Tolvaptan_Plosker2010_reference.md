@@ -136,7 +136,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
+**Administration: intravenous** — 15 mg infusion over 10 min, single dose. Doses in the paper: 15, 30, 60, 90 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference/Tolvaptan_Plosker2010_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_tolvaptan/Tolvaptan_Plosker2010_reference/Tolvaptan_Plosker2010_reference_sim_controls.json"></dbs-fmusim>
 

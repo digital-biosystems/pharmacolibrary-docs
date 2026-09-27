@@ -1,11 +1,16 @@
 {
  "model_id": "Clopidogrel_Yata2026_reference",
  "molar_masses": {
-  "central.C": 0.321822
+  "C_central": 0.321822
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "central.C"
+  "C_central"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  56.0,
+  252.0
  ],
  "parameters": {
   "Cl": 1.886111111111111e-05,
@@ -15,15 +20,15 @@
   "VdPerKg": 0.004030000000000001,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 5.6e-05,
   "ka": 0.0001722222222222222,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 9349.899799599198
+  "C_central": 9349.899799599198
  },
  "reference_peaks": {
-  "central.C": 0.00019442965661763652
+  "C_central": 0.00010888126732454872
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

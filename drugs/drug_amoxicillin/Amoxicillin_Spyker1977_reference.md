@@ -129,7 +129,7 @@ Spyker DA; Rugloski RJ; Vann RL; O'Brien WM et al. (1977). Antimicrobial agents 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.17 /h, F 0.9).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.17 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_amoxicillin/Amoxicillin_Spyker1977_reference/Amoxicillin_Spyker1977_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_amoxicillin/Amoxicillin_Spyker1977_reference/Amoxicillin_Spyker1977_reference_sim_controls.json"></dbs-fmusim>
 

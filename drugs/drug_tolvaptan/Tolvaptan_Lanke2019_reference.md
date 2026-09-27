@@ -176,7 +176,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.34 /h, F 1).
+**Administration: oral** — 15 mg, single dose, first-order absorption (ka 1.34 /h, F 1). Doses in the paper: 15, 30, 45, 60, 120 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tolvaptan/Tolvaptan_Lanke2019_reference/Tolvaptan_Lanke2019_reference_sim_controls.json"></dbs-fmusim>
 

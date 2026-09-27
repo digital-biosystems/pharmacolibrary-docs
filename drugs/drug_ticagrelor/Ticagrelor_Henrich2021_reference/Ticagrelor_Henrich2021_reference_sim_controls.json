@@ -5,9 +5,8 @@
   "unit": "mg",
   "scale": 1000000.0,
   "min": 0.1,
-  "max": 4,
-  "step": 0.05,
-  "mult": true
+  "max": 16.0,
+  "step": 0.159
  },
  {
   "key": "Cl",

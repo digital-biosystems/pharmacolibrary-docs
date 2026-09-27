@@ -1,0 +1,62 @@
+{
+ "model_id": "Clopidogrel_Jung2024_reference",
+ "molar_masses": {
+  "C_M1": 0.355833,
+  "C_M2": 0.30779199999999995,
+  "C_central": 0.321822
+ },
+ "note": "Values for the shared PK_3M_3C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "clopidogrel H4",
+  "C_M2": "clopidogrel carboxylic acid",
+  "C_central": "clopidogrel"
+ },
+ "observables": [
+  "C_central",
+  "C_M1",
+  "C_M2"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  75.0
+ ],
+ "parameters": {
+  "CL1": 0.00010285866666666669,
+  "CLm1": 2.0625e-05,
+  "CLm2": 2.0133333333333333e-06,
+  "F": 0.9,
+  "MW": 0.321822,
+  "MW_m1": 0.355833,
+  "MW_m2": 0.30779199999999995,
+  "Tlag": 705.6,
+  "Vd1": 1.46392,
+  "Vd1m1": 0.05145,
+  "Vd1m2": 0.01734,
+  "Vd2": 1.46392,
+  "Vd2m2": 0.05189,
+  "Vd3": 2.82398,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7.5e-05,
+  "ka": 0.0054555555555555555,
+  "q12": 0.0002349166666666667,
+  "q1_m11": 0.0003085760000000001,
+  "q1_m21": 0.0021600320000000005,
+  "q21": 0.0002349166666666667,
+  "qm21_m22": 0.00016331388888888887,
+  "qm22_m21": 0.00016331388888888887
+ },
+ "reference_peak_times": {
+  "C_M1": 2373.308252493937,
+  "C_M2": 3375.396613592702,
+  "C_central": 2770.3406813627253
+ },
+ "reference_peaks": {
+  "C_M1": 0.00010312579596891116,
+  "C_M2": 0.0006806274625338762,
+  "C_central": 3.069339564055642e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_3M_3C",
+ "template_fmu": "PK_3M_3C.fmu"
+}

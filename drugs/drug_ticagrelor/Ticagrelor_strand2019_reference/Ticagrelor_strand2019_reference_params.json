@@ -1,6 +1,7 @@
 {
  "model_id": "Ticagrelor_strand2019_reference",
  "molar_masses": {
+  "C_M1": 0.478518,
   "C_central": 0.522568
  },
  "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
@@ -12,11 +13,18 @@
   "C_central",
   "C_M1"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  60.0,
+  90.0,
+  180.0
+ ],
  "parameters": {
   "CL1": 3.596666666666667e-06,
   "CLm1": 2.833333333333333e-06,
   "F": 1.0,
   "MW": 0.522568,
+  "MW_m1": 0.478518,
   "Tlag": 1728.0,
   "Vd1": 0.156,
   "Vd1m1": 0.00704,
@@ -24,7 +32,7 @@
   "Vd2m1": 0.0423,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 6e-05,
   "ka": 0.0028055555555555555,
   "q12": 2.8888888888888894e-06,
   "q1_m11": 1.0144444444444444e-06,
@@ -34,11 +42,11 @@
  },
  "reference_peak_times": {
   "C_M1": 7618.436873747495,
-  "C_central": 3613.960037754704
+  "C_central": 3615.3199770682972
  },
  "reference_peaks": {
-  "C_M1": 0.00013080093153139253,
-  "C_central": 0.0005964088224043849
+  "C_M1": 7.186543637316374e-05,
+  "C_central": 0.00035783688727179276
  },
  "stop_time": 118800.0,
  "template": "PK_3M_9C",

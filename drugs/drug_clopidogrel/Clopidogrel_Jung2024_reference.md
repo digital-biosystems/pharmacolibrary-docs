@@ -27,7 +27,7 @@ Jung YS; Jin BH; Park MS; Kim CO; Chae D et al. (2024). CPT: pharmacometrics & s
 ## Model component
 <dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Jung2024_reference" status="needs_review" stale="false" population="healthy male participants" measured-compound="clopidogrel" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
+**Model structure:** parent–metabolite model: parent with 2 compartment(s) plus a liver compartment (first pass); metabolite clopidogrel H4: 1 compartment(s); metabolite clopidogrel carboxylic acid: 2 compartment(s); formed in the liver; oral dose — template `PK_3M_3C`.  
 **Parameters:** 14 extracted, plus 4 covariate effects.
 
 **Parameterization:** mechanistic.
@@ -62,6 +62,9 @@ Jung YS; Jin BH; Park MS; Kim CO; Chae D et al. (2024). CPT: pharmacometrics & s
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['F']
 
 **Interpretation flags:**
 - dropped value-less row: 'Cor(Vc, CLc)' (captured trailing unit 'Vc, CLc' for child rows)
@@ -148,7 +151,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 18 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | fail | not captured | not captured | not captured | not captured | not captured |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413053-tbl-0002:row4:col1', 'psp413053-tbl-0002:row4:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413053-tbl-0002:row19:col1'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp413053-tbl-0002:row22:col1', 'psp413053-tbl-0002:row22:col2'] |
@@ -161,7 +164,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413053-tbl-0002:row3:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp413053-tbl-0002:row21:col1', 'psp413053-tbl-0002:row21:col2'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['psp413053-tbl-0002:row9:col1'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 9257.28 | not captured | not captured | ['psp413053-tbl-0002:row4:col1', 'psp413053-tbl-0002:row4:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 9.26e+03 L/h | not captured | not captured | ['psp413053-tbl-0002:row4:col1', 'psp413053-tbl-0002:row4:col2'] |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 74.2 L/h | not captured | not captured | ['psp413053-tbl-0002:row19:col1'] |
@@ -188,19 +190,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference/Clopidogrel_Jung2024_reference_modelica.zip" download>Clopidogrel_Jung2024_reference_modelica.zip</a> <span class="pk-size">(5.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference/Clopidogrel_Jung2024_reference_fmi.zip" download>Clopidogrel_Jung2024_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_3M_3C.fmu" download>PK_3M_3C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference/Clopidogrel_Jung2024_reference_matlab.zip" download>Clopidogrel_Jung2024_reference_matlab.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference/Clopidogrel_Jung2024_reference_sbml.zip" download>Clopidogrel_Jung2024_reference_sbml.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference/Clopidogrel_Jung2024_reference_cellml.zip" download>Clopidogrel_Jung2024_reference_cellml.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_3M_3C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference/Clopidogrel_Jung2024_reference.svg" alt="Clopidogrel_Jung2024_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 75 mg, single dose, first-order absorption into a hepatic compartment first (first pass) (ka 19.6 /h, lag 11.8 min, F 0.9). Dose in the paper: 75 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference/Clopidogrel_Jung2024_reference_params.json" metaurl="assets/fmu/PK_3M_3C.vr.json" wasmurl="assets/fmu/PK_3M_3C.js" controlsurl="drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference/Clopidogrel_Jung2024_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_3M_3C` · parameters `Clopidogrel_Jung2024_reference_params.json` · controls `Clopidogrel_Jung2024_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

@@ -27,6 +27,9 @@ Merali S; Bunn H; Sychterz C; Chiang M; Puli S; Sehnert AJ; et al. et al. (2025)
 ## Model component
 <dbs-pgx drug="mavacamten" model-id="Mavacamten_Merali2025_reference" status="rejected" stale="false" population="patients with obstructive hypertrophic cardiomyopathy" measured-compound="mavacamten" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
@@ -65,6 +68,7 @@ _Every reader agrees on every compared field of this record._
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">

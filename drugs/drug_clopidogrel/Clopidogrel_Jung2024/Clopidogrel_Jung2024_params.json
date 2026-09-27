@@ -1,0 +1,52 @@
+{
+ "model_id": "Clopidogrel_Jung2024",
+ "note": "The curated exemplar's own structure, expressed on the shared PK_3M_3C template (export.curated.pk3m_parameters).",
+ "observable_labels": {
+  "C_M1": "clopidogrel H4 (active metabolite)",
+  "C_M2": "clopidogrel carboxylic acid (inactive metabolite)",
+  "C_central": "clopidogrel (parent)"
+ },
+ "observables": [
+  "C_central",
+  "C_M1",
+  "C_M2"
+ ],
+ "parameters": {
+  "CL1": 0.00010285833333333333,
+  "CLm1": 2.0625e-05,
+  "CLm2": 2.0133333333333333e-06,
+  "F": 1.0,
+  "Tlag": 705.6,
+  "Vd1": 1.46392,
+  "Vd1m1": 0.05145,
+  "Vd1m2": 0.01734,
+  "Vd2": 1.46392,
+  "Vd2m2": 0.05189,
+  "Vd3": 2.82398,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0003,
+  "ka": 0.0054555555555555555,
+  "q12": 0.00023491666666666667,
+  "q1_m11": 0.00030857499999999995,
+  "q1_m21": 0.002160033333333333,
+  "q21": 0.00023491666666666667,
+  "q23": 0.00016331388888888887,
+  "q32": 0.00016331388888888887,
+  "qm21_m22": 1.2433333333333332e-06,
+  "qm22_m21": 1.2433333333333332e-06
+ },
+ "reference_peak_times": {
+  "C_M1": 2373.6,
+  "C_M2": 2702.4,
+  "C_central": 2544.0
+ },
+ "reference_peaks": {
+  "C_M1": 0.0004144265496142134,
+  "C_M2": 0.010301566535928291,
+  "C_central": 1.2303661005311165e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_3M_3C",
+ "template_fmu": "PK_3M_3C.fmu"
+}

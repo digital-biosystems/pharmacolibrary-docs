@@ -152,7 +152,7 @@
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 10.1 /h, lag 28.8 min, F 1).
+**Administration: oral** — 60 mg, single dose, first-order absorption (ka 10.1 /h, lag 28.8 min, F 1). Doses in the paper: 60, 90, 180 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_ticagrelor/Ticagrelor_strand2019_reference/Ticagrelor_strand2019_reference_params.json" metaurl="assets/fmu/PK_3M_9C.vr.json" wasmurl="assets/fmu/PK_3M_9C.js" controlsurl="drugs/drug_ticagrelor/Ticagrelor_strand2019_reference/Ticagrelor_strand2019_reference_sim_controls.json"></dbs-fmusim>
 

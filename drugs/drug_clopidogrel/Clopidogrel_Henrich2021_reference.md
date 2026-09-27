@@ -150,7 +150,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 5.95 /h, F 0.9).
+**Administration: oral** — 1.6 mg, single dose, first-order absorption (ka 5.95 /h, F 0.9). Doses in the paper: 1.6, 8, 16, 32 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference/Clopidogrel_Henrich2021_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference/Clopidogrel_Henrich2021_reference_sim_controls.json"></dbs-fmusim>
 

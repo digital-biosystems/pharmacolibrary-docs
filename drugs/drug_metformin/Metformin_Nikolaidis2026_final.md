@@ -165,7 +165,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.35 /h, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.35 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final_sim_controls.json"></dbs-fmusim>
 

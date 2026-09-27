@@ -5,7 +5,7 @@
 
 # indometacin — `Indometacin_Smyth2004v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,7 @@
 ### Reviewer guidance
 
 **Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped.
-**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[q 1]` (not captured vs 1.3) and 2 more field(s) — a structural parameter, so the record is disputed.
+**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[q 1]` (not captured vs 0.00711) and 4 more field(s) — not a structural parameter.
 **How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
 <sub>owner: **scholar**</sub>
 
@@ -26,6 +26,9 @@ Smyth JM; Collier PS; Darwish M; Millership JS; Halliday HL; Petersen S; et al. 
 
 ## Model component
 <dbs-pgx drug="indometacin" model-id="Indometacin_Smyth2004v2_reference" status="model_quarantined" stale="false" population="preterm infants with symptomatic patent ductus arteriosus" measured-compound="indometacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -52,23 +55,26 @@ Smyth JM; Collier PS; Darwish M; Millership JS; Halliday HL; Petersen S; et al. 
 - NIL: refused to back-fill base 'CL' from footnote/prose loose number None (source ['tab_3:footnote']); the table cell was unparseable — needs review
 - NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['tab_3:footnote']); the table cell was unparseable — needs review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=indometacin
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `gpt-oss:120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[q 1]` | not captured | 1.3 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q 1]` | not captured | 0.00711 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[q 2]` | 0.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q 3]` | not captured | 1.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q 3]` | not captured | 0.0338 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[s]` | 4.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tvcl]` | not captured | not captured | only_one_extracted |
 
 </details>
 
@@ -83,6 +89,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_3:row3:col1', 'tab_3:row3:col2', 'tab_3:row3:col3', 'tab_3:row3:col4', 'tab_3:row3:col5'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 **Reviewer per-scenario checks:**

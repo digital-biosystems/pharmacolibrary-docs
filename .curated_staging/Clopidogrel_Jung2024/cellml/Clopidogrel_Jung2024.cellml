@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.cellml.org/cellml/2.0#" name="Clopidogrel_Jung2024">
+  <component name="Clopidogrel_Jung2024">
+    <variable name="time" units="second"/>
+    <variable name="A_depot" units="kilogram" initial_value="0.0003"/>
+    <variable name="ka" units="per_second" initial_value="0.0054555555555555555"/>
+    <variable name="Tlag" units="second" initial_value="705.6"/>
+    <variable name="A_hepatic" units="kilogram" initial_value="0"/>
+    <variable name="V_hepatic" units="metre3" initial_value="1.46392"/>
+    <variable name="C_hepatic" units="kilogram_per_metre3"/>
+    <variable name="A_central" units="kilogram" initial_value="0"/>
+    <variable name="V_central" units="metre3" initial_value="1.46392"/>
+    <variable name="C_central" units="kilogram_per_metre3"/>
+    <variable name="A_peripheral" units="kilogram" initial_value="0"/>
+    <variable name="V_peripheral" units="metre3" initial_value="2.82398"/>
+    <variable name="C_peripheral" units="kilogram_per_metre3"/>
+    <variable name="A_central_H4" units="kilogram" initial_value="0"/>
+    <variable name="V_central_H4" units="metre3" initial_value="0.05145"/>
+    <variable name="C_central_H4" units="kilogram_per_metre3"/>
+    <variable name="A_central_carboxylic_acid" units="kilogram" initial_value="0"/>
+    <variable name="V_central_carboxylic_acid" units="metre3" initial_value="0.01734"/>
+    <variable name="C_central_carboxylic_acid" units="kilogram_per_metre3"/>
+    <variable name="A_peripheral_carboxylic_acid" units="kilogram" initial_value="0"/>
+    <variable name="V_peripheral_carboxylic_acid" units="metre3" initial_value="0.05189"/>
+    <variable name="C_peripheral_carboxylic_acid" units="kilogram_per_metre3"/>
+    <variable name="CL_Qc" units="metre3_per_second" initial_value="0.00023491666666666667"/>
+    <variable name="CL_Qp" units="metre3_per_second" initial_value="0.00016331388888888887"/>
+    <variable name="CL_Qm2" units="metre3_per_second" initial_value="1.2433333333333332e-06"/>
+    <variable name="CLf_Qhm1" units="metre3_per_second" initial_value="0.00030857499999999995"/>
+    <variable name="CLf_Qhm2" units="metre3_per_second" initial_value="0.002160033333333333"/>
+    <variable name="CLe_CLm11" units="metre3_per_second" initial_value="0.00010285833333333333"/>
+    <variable name="CLe_CLm1" units="metre3_per_second" initial_value="2.0625e-05"/>
+    <variable name="CLe_CLm2" units="metre3_per_second" initial_value="2.0133333333333333e-06"/>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <apply><eq/><ci>C_hepatic</ci><apply><divide/><ci>A_hepatic</ci><ci>V_hepatic</ci></apply></apply>
+      <apply><eq/><ci>C_central</ci><apply><divide/><ci>A_central</ci><ci>V_central</ci></apply></apply>
+      <apply><eq/><ci>C_peripheral</ci><apply><divide/><ci>A_peripheral</ci><ci>V_peripheral</ci></apply></apply>
+      <apply><eq/><ci>C_central_H4</ci><apply><divide/><ci>A_central_H4</ci><ci>V_central_H4</ci></apply></apply>
+      <apply><eq/><ci>C_central_carboxylic_acid</ci><apply><divide/><ci>A_central_carboxylic_acid</ci><ci>V_central_carboxylic_acid</ci></apply></apply>
+      <apply><eq/><ci>C_peripheral_carboxylic_acid</ci><apply><divide/><ci>A_peripheral_carboxylic_acid</ci><ci>V_peripheral_carboxylic_acid</ci></apply></apply>
+      <apply><eq/><apply><diff/><bvar><ci>time</ci></bvar><ci>A_depot</ci></apply><apply><minus/><apply><times/><ci>ka</ci><ci>A_depot</ci></apply></apply></apply>
+      <apply><eq/><apply><diff/><bvar><ci>time</ci></bvar><ci>A_hepatic</ci></apply><apply><minus/><apply><minus/><apply><minus/><apply><minus/><apply><times/><ci>ka</ci><ci>A_depot</ci></apply><apply><times/><ci>CL_Qc</ci><apply><minus/><ci>C_hepatic</ci><ci>C_central</ci></apply></apply></apply><apply><times/><ci>CLf_Qhm1</ci><ci>C_hepatic</ci></apply></apply><apply><times/><ci>CLf_Qhm2</ci><ci>C_hepatic</ci></apply></apply><apply><times/><ci>CLe_CLm11</ci><ci>C_hepatic</ci></apply></apply></apply>
+      <apply><eq/><apply><diff/><bvar><ci>time</ci></bvar><ci>A_central</ci></apply><apply><minus/><apply><times/><ci>CL_Qc</ci><apply><minus/><ci>C_hepatic</ci><ci>C_central</ci></apply></apply><apply><times/><ci>CL_Qp</ci><apply><minus/><ci>C_central</ci><ci>C_peripheral</ci></apply></apply></apply></apply>
+      <apply><eq/><apply><diff/><bvar><ci>time</ci></bvar><ci>A_peripheral</ci></apply><apply><times/><ci>CL_Qp</ci><apply><minus/><ci>C_central</ci><ci>C_peripheral</ci></apply></apply></apply>
+      <apply><eq/><apply><diff/><bvar><ci>time</ci></bvar><ci>A_central_H4</ci></apply><apply><minus/><apply><times/><ci>CLf_Qhm1</ci><ci>C_hepatic</ci></apply><apply><times/><ci>CLe_CLm1</ci><ci>C_central_H4</ci></apply></apply></apply>
+      <apply><eq/><apply><diff/><bvar><ci>time</ci></bvar><ci>A_central_carboxylic_acid</ci></apply><apply><minus/><apply><plus/><apply><minus/><apply><times/><ci>CL_Qm2</ci><apply><minus/><ci>C_central_carboxylic_acid</ci><ci>C_peripheral_carboxylic_acid</ci></apply></apply></apply><apply><times/><ci>CLf_Qhm2</ci><ci>C_hepatic</ci></apply></apply><apply><times/><ci>CLe_CLm2</ci><ci>C_central_carboxylic_acid</ci></apply></apply></apply>
+      <apply><eq/><apply><diff/><bvar><ci>time</ci></bvar><ci>A_peripheral_carboxylic_acid</ci></apply><apply><times/><ci>CL_Qm2</ci><apply><minus/><ci>C_central_carboxylic_acid</ci><ci>C_peripheral_carboxylic_acid</ci></apply></apply></apply>
+    </math>
+  </component>
+</model>

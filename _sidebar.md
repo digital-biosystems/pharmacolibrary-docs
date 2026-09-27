@@ -7,7 +7,7 @@
   - [allopurinol <sub>(10/15/41)</sub>](drugs/drug_allopurinol/)
   - [amoxicillin <sub>(18/3/0)</sub>](drugs/drug_amoxicillin/)
   - [brexpiprazole <sub>(4/1/1)</sub>](drugs/drug_brexpiprazole/)
-  - [clopidogrel <sub>(12/19/14)</sub>](drugs/drug_clopidogrel/)
+  - [clopidogrel <sub>(13/19/14)</sub>](drugs/drug_clopidogrel/)
   - [ibuprofen <sub>(5/15/8)</sub>](drugs/drug_ibuprofen/)
   - [metformin <sub>(21/15/7)</sub>](drugs/drug_metformin/)
   - [semaglutide <sub>(10/48/0)</sub>](drugs/drug_semaglutide/)
@@ -38,7 +38,7 @@
   - [atorvastatin <sub>(7/11/3)</sub>](drugs/drug_atorvastatin/)
   - [azathioprine <sub>(2/0/31)</sub>](drugs/drug_azathioprine/)
   - [ciprofloxacin <sub>(14/15/1)</sub>](drugs/drug_ciprofloxacin/)
-  - [clopidogrel <sub>(12/19/14)</sub>](drugs/drug_clopidogrel/)
+  - [clopidogrel <sub>(13/19/14)</sub>](drugs/drug_clopidogrel/)
   - [codeine <sub>(1/0/0)</sub>](drugs/drug_codeine/)
   - [diazepam <sub>(6/1/0)</sub>](drugs/drug_diazepam/)
   - [diclofenac <sub>(1/25/3)</sub>](drugs/drug_diclofenac/)
@@ -898,7 +898,7 @@
         - [caplacizumab <sub>(2/1/0)</sub>](drugs/drug_caplacizumab/)
         - carbasalate calcium <sub>(0/0/0)</sub>
         - [cilostazol <sub>(0/0/0)</sub>](drugs/drug_cilostazol/)
-        - [clopidogrel <sub>(12/19/14)</sub>](drugs/drug_clopidogrel/)
+        - [clopidogrel <sub>(13/19/14)</sub>](drugs/drug_clopidogrel/)
         - cloricromen <sub>(0/0/0)</sub>
         - clorindione <sub>(0/0/0)</sub>
         - [dabigatran etexilate <sub>(0/0/0)</sub>](drugs/drug_dabigatran_etexilate/)
@@ -1306,16 +1306,16 @@
         - fosfocreatine <sub>(0/0/0)</sub>
         - fructose 16 diphosphate <sub>(0/0/0)</sub>
         - [ibuprofen <sub>(5/15/8)</sub>](drugs/drug_ibuprofen/)
-        - [indometacin <sub>(1/0/0)</sub>](drugs/drug_indometacin/)
-        - ivabradine <sub>(0/0/0)</sub>
+        - [indometacin <sub>(0/0/0)</sub>](drugs/drug_indometacin/)
+        - [ivabradine <sub>(0/0/0)</sub>](drugs/drug_ivabradine/)
         - [mavacamten <sub>(1/0/0)</sub>](drugs/drug_mavacamten/)
-        - meldonium <sub>(0/0/0)</sub>
-        - ranolazine <sub>(0/0/0)</sub>
+        - [meldonium <sub>(0/0/0)</sub>](drugs/drug_meldonium/)
+        - [ranolazine <sub>(0/0/0)</sub>](drugs/drug_ranolazine/)
         - regadenoson <sub>(0/0/0)</sub>
         - tiazotic acid <sub>(0/0/0)</sub>
         - tiracizine <sub>(0/0/0)</sub>
         - trimetazidine <sub>(0/0/0)</sub>
-        - ubidecarenone <sub>(0/0/0)</sub>
+        - [ubidecarenone <sub>(0/0/0)</sub>](drugs/drug_ubidecarenone/)
     - C02 Antihypertensives
       - [C02A Antiadrenergic Agents, Centrally Acting](atc/C02A.md)
         - bietaserpine <sub>(0/0/0)</sub>
@@ -1540,6 +1540,7 @@
         - [carvedilol <sub>(2/1/0)</sub>](drugs/drug_carvedilol/)
         - carvedilol and ivabradine <sub>(0/0/0)</sub>
         - felodipine <sub>(0/0/0)</sub>
+        - [ivabradine <sub>(0/0/0)</sub>](drugs/drug_ivabradine/)
         - [metoprolol <sub>(2/0/0)</sub>](drugs/drug_metoprolol/)
         - metoprolol and acetylsalicylic acid <sub>(0/0/0)</sub>
         - metoprolol and amlodipine <sub>(0/0/0)</sub>
@@ -3274,7 +3275,7 @@
         - [ibuprofen <sub>(5/15/8)</sub>](drugs/drug_ibuprofen/)
         - ibuprofen combinations <sub>(0/0/0)</sub>
         - ibuproxam <sub>(0/0/0)</sub>
-        - [indometacin <sub>(1/0/0)</sub>](drugs/drug_indometacin/)
+        - [indometacin <sub>(0/0/0)</sub>](drugs/drug_indometacin/)
         - indometacin combinations <sub>(0/0/0)</sub>
         - indoprofen <sub>(0/0/0)</sub>
         - kebuzone <sub>(0/0/0)</sub>
@@ -3341,7 +3342,7 @@
         - [flurbiprofen <sub>(1/0/0)</sub>](drugs/drug_flurbiprofen/)
         - [ibuprofen <sub>(5/15/8)</sub>](drugs/drug_ibuprofen/)
         - idrocilamide <sub>(0/0/0)</sub>
-        - [indometacin <sub>(1/0/0)</sub>](drugs/drug_indometacin/)
+        - [indometacin <sub>(0/0/0)</sub>](drugs/drug_indometacin/)
         - [naproxen <sub>(1/0/0)</sub>](drugs/drug_naproxen/)
         - nifenazone <sub>(0/0/0)</sub>
         - other topical products for joint and muscular pain m02ax10 <sub>(0/0/0)</sub>
@@ -4444,7 +4445,7 @@
         - formocortal <sub>(0/0/0)</sub>
         - [hydrocortisone <sub>(0/0/0)</sub>](drugs/drug_hydrocortisone/)
         - hydrocortisone and mydriatics <sub>(0/0/0)</sub>
-        - [indometacin <sub>(1/0/0)</sub>](drugs/drug_indometacin/)
+        - [indometacin <sub>(0/0/0)</sub>](drugs/drug_indometacin/)
         - loteprednol <sub>(0/0/0)</sub>
         - medrysone <sub>(0/0/0)</sub>
         - nepafenac <sub>(0/0/0)</sub>
@@ -4468,7 +4469,7 @@
         - fluorometholone and antiinfectives <sub>(0/0/0)</sub>
         - [hydrocortisone <sub>(0/0/0)</sub>](drugs/drug_hydrocortisone/)
         - hydrocortisone and antiinfectives <sub>(0/0/0)</sub>
-        - [indometacin <sub>(1/0/0)</sub>](drugs/drug_indometacin/)
+        - [indometacin <sub>(0/0/0)</sub>](drugs/drug_indometacin/)
         - indometacin and antiinfectives <sub>(0/0/0)</sub>
         - loteprednol and antiinfectives <sub>(0/0/0)</sub>
         - methylprednisolone and antiinfectives <sub>(0/0/0)</sub>

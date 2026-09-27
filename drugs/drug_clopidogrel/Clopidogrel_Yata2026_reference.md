@@ -140,7 +140,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.62 /h, F 1).
+**Administration: oral** — 56 mg, single dose, first-order absorption (ka 0.62 /h, F 1). Doses in the paper: 56–252 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference/Clopidogrel_Yata2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference/Clopidogrel_Yata2026_reference_sim_controls.json"></dbs-fmusim>
 

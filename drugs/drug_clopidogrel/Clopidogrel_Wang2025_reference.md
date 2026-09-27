@@ -129,7 +129,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
+**Administration: intravenous** — 280 mg infusion over 10 min, single dose. Doses in the paper: 280, 420 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference/Clopidogrel_Wang2025_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference/Clopidogrel_Wang2025_reference_sim_controls.json"></dbs-fmusim>
 
