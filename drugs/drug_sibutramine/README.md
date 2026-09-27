@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-12 02:51 | 18:33 | 0/0/0 | 2/0/0 | 0/0/0 | 192,824/5,084 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 0/0 | 12/0 | 0 |
+| 2026-09-26 10:40 | 3:47 | 0/0/0 | 2/0/0 | 0/0/0 | 9,463/2,728 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 0/2 | 12/0 | 0 |
 
 ## popPK records
 
@@ -27,12 +27,12 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Han_2015](drugs/drug_sibutramine/pd_Han_2015_BW.md) | Han S et al., Exposure-response model for sibutramine…, Drug design, development an… (2015) | [10.2147/dddt.s85435](https://doi.org/10.2147/dddt.s85435) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yun_2015](drugs/drug_sibutramine/pd_Yun_2015_APD50.md) | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yun_2015](drugs/drug_sibutramine/pd_Yun_2015_APD90.md) | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yun_2015](drugs/drug_sibutramine/pd_Yun_2015_BP.md) | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yun_2015](drugs/drug_sibutramine/pd_Yun_2015_HR.md) | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yun_2015](drugs/drug_sibutramine/pd_Yun_2015_hERG.md) | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Han_2015](drugs/drug_sibutramine/pd_Han_2015_BW.md) | Han S et al., Exposure-response model for sibutramine…, Drug design, development an… (2015) | [10.2147/dddt.s85435](https://doi.org/10.2147/dddt.s85435) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Yun_2015](drugs/drug_sibutramine/pd_Yun_2015_APD50.md) | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Yun_2015](drugs/drug_sibutramine/pd_Yun_2015_APD90.md) | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Yun_2015](drugs/drug_sibutramine/pd_Yun_2015_BP.md) | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Yun_2015](drugs/drug_sibutramine/pd_Yun_2015_HR.md) | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yun_2015](drugs/drug_sibutramine/pd_Yun_2015_hERG.md) | Yun J et al., Cardiovascular Safety Pharmacology of S…, Biomolecules & therapeutics (2015) | [10.4062/biomolther.2015.033](https://doi.org/10.4062/biomolther.2015.033) |
 
 ## ADME sites
 
@@ -84,7 +84,7 @@ _14 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Shinde_2014.pdf` | Shinde DD et al., Enantioselective N-demethylation and hy…, Journal of toxicology and e… (2014) | pgx | 7 | [10.1080/15287394.2014.951758](https://doi.org/10.1080/15287394.2014.951758) | [25343291](https://www.ncbi.nlm.nih.gov/pubmed/25343291) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Bae_2008.pdf` | Bae SK et al., Cytochrome P450 2B6 catalyzes the forma…, Drug metabolism and disposi… (2008) | pgx | 5 | [10.1124/dmd.108.020727](https://doi.org/10.1124/dmd.108.020727) | [18474675](https://www.ncbi.nlm.nih.gov/pubmed/18474675) | metadata signals extractable PGX data (CYP2B6) |
 
-<sub>queue written 2026-09-12T02:48:08.163808+00:00</sub>
+<sub>queue written 2026-09-26T10:38:48.953725+00:00</sub>
 
 ## Screened and excluded
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;dabrafenib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dabrafenib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dabrafenib_Balakirouchenane2020_final_final_tra_model&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_final_final_tra_model&quot;,&quot;href&quot;:&quot;drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_final_tra_model.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dabrafenib_Balakirouchenane2020_base&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_base&quot;,&quot;href&quot;:&quot;drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dabrafenib_Balakirouchenane2020_final&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # dabrafenib
 
@@ -31,13 +31,15 @@ Dabrafenib has limitations of use: it is neither indicated for treating patients
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 1/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 11 | 1/0 | 2/0 | 0 |
+| 2026-09-26 20:42 | 1:57 | 2/1/0 | 0/0/0 | 0/0/0 | 40,609/2,083 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 0/1 | 2/0 | 0 |
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Balakirouchenane_2020_reference](drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_reference.md) | Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (2020) | [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span> | [Balakirouchenane_2020_final_final_tra_model](drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_final_tra_model.md) | parent + 1 metabolite (1-cmt each) | 6 | Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (2020) | [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Balakirouchenane_2020_base](drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base.md) | parent 2-cmt + 1 metabolite (2-cmt) | 10 | Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (2020) | [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Balakirouchenane_2020_final](drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final.md) | 1-compartment, oral | 11 | Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (2020) | [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931) |
 
 ## ADME sites
 
@@ -71,19 +73,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 1  ·  **relevant:** 3
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full text wanted
-
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Ouellet_2014.pdf` | Ouellet D et al., Population pharmacokinetics of dabrafen…, Journal of clinical pharmac… (2014) | popPK | 10 | [10.1002/jcph.263](https://doi.org/10.1002/jcph.263) | [24408395](https://pubmed.ncbi.nlm.nih.gov/24408395) | The paper explicitly presents a population pharmacokinetic model for dabrafenib with quantitative estimates of clearance, volume of distribution, intercompartmental clearance, and absorption rate derived from clinical data. |
-| `Janssen_2020.pdf` | Janssen JM et al., Evaluation of Extrapolation Methods to…, Therapeutic drug monitoring (2020) | popPK | 8 | [10.1097/FTD.0000000000000767](https://doi.org/10.1097/FTD.0000000000000767) | [32384536](https://pubmed.ncbi.nlm.nih.gov/32384536) | The paper explicitly describes and tabulates a two-compartment population PK model with quantitative disposition parameters for dabrafenib. |
-
-<sub>queue written 2026-07-18T02:32:08.266846+00:00 · relevance threshold 5</sub>
 
 ## Screened and excluded
 
@@ -92,4 +83,4 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Isberner_2022 | irrelevant | not captured | not captured | The study relies on a previously published population PK model to derive empirical Bayesian estimates and reports observed concentrations, but does not present new quantitative disposition parameters or a novel compartmental/popPK model for dabrafenib. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-07-15 11:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-26 20:40 UTC</sub>

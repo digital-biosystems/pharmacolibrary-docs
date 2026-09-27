@@ -28,6 +28,9 @@ Kathman SJ; Wheeler JJ; Bhatt DL; Arnold SE; Lee JS et al. (2022). CPT: pharmaco
 ## Model component
 <dbs-pgx drug="ticagrelor" model-id="Ticagrelor_Kathman2022_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="PB2452" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 1 extracted, plus 5 covariate effects.
+
 **Parameterization:** CL/F, Q3/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters

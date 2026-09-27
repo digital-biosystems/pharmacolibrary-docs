@@ -5,7 +5,7 @@
 
 # allopurinol — `Allopurinol_Jonkman1984_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -18,6 +18,7 @@
 ### Reviewer guidance
 
 **Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q31]` (not captured vs 33) — not a structural parameter.
 **How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
 <sub>owner: **curator**</sub>
 
@@ -30,14 +31,17 @@ Jonkman JH; Upton RA et al. (1984). Clinical pharmacokinetics 9
 ## Model component
 <dbs-pgx drug="allopurinol" model-id="Allopurinol_Jonkman1984_reference" status="accepted_with_caveats" stale="false" population="healthy adults and asthmatic patients" measured-compound="allopurinol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted, plus 1 covariate effect.
+
 **Parameterization:** mechanistic.
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Clearance (L/h/kg) | `Q22` · CL | 43.7 | L/h/kg | 0.0008497222222222223 | L/h | not captured | review (0.7) | Jonkman_1984:review | — | not captured |
-| V (derived from CL·t½/ln2) | `Q61` · V | 43249.4005 | L | 43.24940047477753 | L | not captured | review (0.7) | Jonkman_1984:review | — | not captured |
-| BCRP | `Q900` · BCRP | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| Clearance (L/h/kg) | `Q22` · CL | 0.0437 | L/h/kg | 8.497222222222223e-07 | L/h | not captured | review (0.7) | Jonkman_1984:review | — | not captured |
+| V (derived from CL·t½/ln2) | `Q61` · V | 43.2494 | L | 0.04324940047477753 | L | not captured | review (0.7) | Jonkman_1984:review | — | not captured |
+| ABCB2 | `Q900` · ABCB2 | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,9 +61,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.8 (4/5 fields) | 1 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q31]` | not captured | 33 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -77,10 +87,10 @@ _Every reader agrees on every compared field of this record._
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jonkman_1984:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jonkman_1984:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 43.7 | not captured | not captured | ['Jonkman_1984:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0437 | not captured | not captured | ['Jonkman_1984:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 3.06e+03 L/h | not captured | not captured | ['Jonkman_1984:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 4.32e+04 L | not captured | not captured | ['Jonkman_1984:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 3.06 L/h | not captured | not captured | ['Jonkman_1984:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 43.2 L | not captured | not captured | ['Jonkman_1984:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -88,7 +98,7 @@ _Every reader agrees on every compared field of this record._
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable | not captured | pass | C_central (measured=allopurinol) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=allopurinol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
@@ -113,7 +123,7 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_allopurinol/Allopurinol_Jonkman1984_reference/Allopurinol_Jonkman1984_reference_modelica.zip" download>Allopurinol_Jonkman1984_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_allopurinol/Allopurinol_Jonkman1984_reference/Allopurinol_Jonkman1984_reference_fmi.zip" download>Allopurinol_Jonkman1984_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_allopurinol/Allopurinol_Jonkman1984_reference/Allopurinol_Jonkman1984_reference_fmi.zip" download>Allopurinol_Jonkman1984_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Jonkman1984_reference/Allopurinol_Jonkman1984_reference_matlab.zip" download>Allopurinol_Jonkman1984_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Jonkman1984_reference/Allopurinol_Jonkman1984_reference_matlab_simbio.zip" download>Allopurinol_Jonkman1984_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Jonkman1984_reference/Allopurinol_Jonkman1984_reference_sbml.zip" download>Allopurinol_Jonkman1984_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
@@ -124,6 +134,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_allopurinol/Allopurinol_Jonkman1984_reference/Allopurinol_Jonkman1984_reference.svg" alt="Allopurinol_Jonkman1984_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose.
 
 <dbs-fmusim paramsurl="drugs/drug_allopurinol/Allopurinol_Jonkman1984_reference/Allopurinol_Jonkman1984_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_allopurinol/Allopurinol_Jonkman1984_reference/Allopurinol_Jonkman1984_reference_sim_controls.json"></dbs-fmusim>
 

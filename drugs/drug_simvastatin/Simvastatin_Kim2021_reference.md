@@ -113,21 +113,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | fail | 2.8769999999999997e-05 | 6.434983266294248e-05 | 2.2367 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00011395999999999999 | 6.434983266294248e-05 | 0.5647 | ng/ ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped | 1.44 | 6.434983266294248e-05 | not captured | unresolved concentration unit (exp 'ng ml -1 mg -1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 1.42 | 6.434983266294248e-05 | not captured | unresolved concentration unit (exp 'ng ml -1 mg -1', sim 'kg/m3') |
-| T1_cmax | reference | fail | 2.8769999999999997e-05 | 6.434983266294248e-05 | 2.2367 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00011395999999999999 | 6.434983266294248e-05 | 0.5647 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1.4299999999999999e-06 | 6.434983266294248e-05 | 44.9999 | ng/ml→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | fail | 6.77 | 2.9552303606533266 | 0.4365 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.62 | 2.9552303606533266 | 1.128 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.62 | 2.9552303606533266 | 1.128 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 6.77 | 2.9552303606533266 | 0.4365 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 4.7 | 2.9552303606533266 | 0.6288 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 1.58 | 1.238652742403716 | 0.784 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 1.25 | 1.238652742403716 | 0.9909 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 1.41 | 1.238652742403716 | 0.8785 | h→SI vs simulated h |
+| T1_cmax | reference | fail | 2.8769999999999997e-05 | 6.554452235316763e-05 | 2.2782 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00011395999999999999 | 6.554452235316763e-05 | 0.5752 | ng/ ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 1.44 | 6.554452235316763e-05 | not captured | unresolved concentration unit (exp 'ng ml -1 mg -1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.42 | 6.554452235316763e-05 | not captured | unresolved concentration unit (exp 'ng ml -1 mg -1', sim 'kg/m3') |
+| T1_cmax | reference | fail | 2.8769999999999997e-05 | 6.554452235316763e-05 | 2.2782 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00011395999999999999 | 6.554452235316763e-05 | 0.5752 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.4299999999999999e-06 | 6.554452235316763e-05 | 45.8353 | ng/ml→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | fail | 6.77 | 2.7019518509501794 | 0.3991 | hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.62 | 2.7019518509501794 | 1.0313 | hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.62 | 2.7019518509501794 | 1.0313 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 6.77 | 2.7019518509501794 | 0.3991 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 4.7 | 2.7019518509501794 | 0.5749 | h→SI vs simulated h |
+| T1_tmax | reference | pass | 1.58 | 1.2971861564808338 | 0.821 | h→SI vs simulated h |
+| T1_tmax | reference | pass | 1.25 | 1.2971861564808338 | 1.0377 | h→SI vs simulated h |
+| T1_tmax | reference | pass | 1.41 | 1.2971861564808338 | 0.92 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -148,7 +148,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_simvastatin/Simvastatin_Kim2021_reference/Simvastatin_Kim2021_reference_modelica.zip" download>Simvastatin_Kim2021_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_simvastatin/Simvastatin_Kim2021_reference/Simvastatin_Kim2021_reference_modelica.zip" download>Simvastatin_Kim2021_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_simvastatin/Simvastatin_Kim2021_reference/Simvastatin_Kim2021_reference_fmi.zip" download>Simvastatin_Kim2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Kim2021_reference/Simvastatin_Kim2021_reference_matlab.zip" download>Simvastatin_Kim2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Kim2021_reference/Simvastatin_Kim2021_reference_matlab_simbio.zip" download>Simvastatin_Kim2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

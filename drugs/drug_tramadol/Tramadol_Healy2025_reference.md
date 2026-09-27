@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tramadol&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/&quot;},{&quot;label&quot;:&quot;Healy_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Bailey2019_reference&quot;,&quot;label&quot;:&quot;Bailey_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bailey2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Yoo2022_reference&quot;,&quot;label&quot;:&quot;Yoo_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Yoo2022_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Allegaert2015_reference&quot;,&quot;label&quot;:&quot;Allegaert_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Allegaert2015_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Chun2025_reference&quot;,&quot;label&quot;:&quot;Chun_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Chun2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Elghazali2008_reference&quot;,&quot;label&quot;:&quot;Elghazali_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Elghazali2008_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Hannam2018_reference&quot;,&quot;label&quot;:&quot;Hannam_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Hannam2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Healy2025_reference&quot;,&quot;label&quot;:&quot;Healy_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Healy2025_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_SoriaChacartegui2026_reference&quot;,&quot;label&quot;:&quot;Soria-Chacartegui_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_AlQurain2022_base&quot;,&quot;label&quot;:&quot;Al-Qurain_2022_base&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_AlQurain2022_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_AlQurain2022_final&quot;,&quot;label&quot;:&quot;Al-Qurain_2022_final&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_AlQurain2022_final.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Allegaert2014v2_reference&quot;,&quot;label&quot;:&quot;Allegaert_2014_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Allegaert2014v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Giorgi2010_reference&quot;,&quot;label&quot;:&quot;Giorgi_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Giorgi2010_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Itami2016_reference&quot;,&quot;label&quot;:&quot;Itami_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Itami2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Bailey2019_reference&quot;,&quot;label&quot;:&quot;Bailey_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bailey2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Yoo2022_reference&quot;,&quot;label&quot;:&quot;Yoo_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Yoo2022_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Allegaert2015_reference&quot;,&quot;label&quot;:&quot;Allegaert_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Allegaert2015_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Elghazali2008_reference&quot;,&quot;label&quot;:&quot;Elghazali_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Elghazali2008_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Hannam2018_reference&quot;,&quot;label&quot;:&quot;Hannam_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Hannam2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Healy2025_reference&quot;,&quot;label&quot;:&quot;Healy_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Healy2025_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_SoriaChacartegui2026_reference&quot;,&quot;label&quot;:&quot;Soria-Chacartegui_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_AlQurain2022_base&quot;,&quot;label&quot;:&quot;Al-Qurain_2022_base&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_AlQurain2022_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_AlQurain2022_final&quot;,&quot;label&quot;:&quot;Al-Qurain_2022_final&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_AlQurain2022_final.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Allegaert2014v2_reference&quot;,&quot;label&quot;:&quot;Allegaert_2014_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Allegaert2014v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Chun2025_reference&quot;,&quot;label&quot;:&quot;Chun_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Chun2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Giorgi2010_reference&quot;,&quot;label&quot;:&quot;Giorgi_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Giorgi2010_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Itami2016_reference&quot;,&quot;label&quot;:&quot;Itami_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Itami2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tramadol — `Tramadol_Healy2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,9 +13,11 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 3 covered; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C_enteral
+**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 6 scholar param(s) emitted or defaulted — got 2 covered; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C_enteral; T6_deviations — got invented_absorption: not acceptable
 **Second reading:** `gpt-oss:120b` read this paper differently on `parameters[clmo]` (not captured vs 78.7) and 5 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
 <sub>owner: **scholar**</sub>
@@ -25,21 +27,25 @@ Healy P; Allegaert K; Della Pasqua O et al. (2025). British journal of clinical 
   ·  DOI: [10.1111/bcp.16201](https://doi.org/10.1111/bcp.16201)
 
 ## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_Healy2025_reference" status="model_quarantined" stale="false" population="neonates" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="tramadol" model-id="Tramadol_Healy2025_reference" status="model_quarantined" stale="false" population="neonatal patients" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLPO | `Q27` · CL/F | 25.6 | not captured | not captured | not captured | 10 | exact (1.0) | bcp16201-tbl-0005:row4:col1, bcp16201-tbl-0005:row4:col2, bcp16201-tbl-0005:row4:col3 | — | not captured |
-| QP | `Q30` · Q | 111 | not captured | not captured | not captured | 58.3 | llm (0.6) | bcp16201-tbl-0005:row5:col1, bcp16201-tbl-0005:row5:col2, bcp16201-tbl-0005:row5:col3 | — | not captured |
-| VP1 | `Q64` · V2 | 0.211 | not captured | not captured | not captured | 62.2 | exact (1.0) | bcp16201-tbl-0005:row6:col1, bcp16201-tbl-0005:row6:col2, bcp16201-tbl-0005:row6:col3, bcp16201-tbl-0005:row24:col2 | — | not captured |
-| VP2 | `Q77` · V3 | 102 | not captured | not captured | not captured | 73.6 | exact (1.0) | bcp16201-tbl-0005:row7:col1, bcp16201-tbl-0005:row7:col2, bcp16201-tbl-0005:row7:col3 | — | not captured |
-| Vz/F (L/kg) | `Q76` · V/F | 9.824 | L/kg | 0.68768 | L | not captured | review_gapfill (0.7) | Bao_2023:review | — | not captured |
-| kₐ | `Q49` · kabs | 0.65 | 1/h | 0.00018055555555555557 | 1/h | not captured | review_gapfill (0.7) | Ekstrand_2026:review | — | not captured |
+| CLPO | `Q27` · CL/F | 25.6 | L/h | 7.111111111111112e-06 | L/h | 10 | exact (1.0) | bcp16201-tbl-0005:row4:col1, bcp16201-tbl-0005:row4:col2, bcp16201-tbl-0005:row4:col3 | — | not captured |
+| QP | `Q30` · Q | 111 | L/h | 3.0833333333333335e-05 | L/h | 58.3 | exact (1.0) | bcp16201-tbl-0005:row5:col1, bcp16201-tbl-0005:row5:col2, bcp16201-tbl-0005:row5:col3 | — | not captured |
+| VP1 | `Q63` · V1 | 0.211 | L | 0.000211 | L | 62.2 | exact (1.0) | bcp16201-tbl-0005:row6:col1, bcp16201-tbl-0005:row6:col2, bcp16201-tbl-0005:row6:col3, bcp16201-tbl-0005:row24:col2 | — | not captured |
+| VP2 | `Q64` · V2 | 102 | L | 0.10200000000000001 | L | 73.6 | exact (1.0) | bcp16201-tbl-0005:row7:col1, bcp16201-tbl-0005:row7:col2, bcp16201-tbl-0005:row7:col3 | — | not captured |
+| CLMO (OCT1‐G2) | `Q22` · CL | 62.2 | L/h | 1.7277777777777778e-05 | L/h | 32 | exact (1.0) | bcp16201-tbl-0005:row10:col1, bcp16201-tbl-0005:row10:col2, bcp16201-tbl-0005:row10:col3 | — | not captured |
+| QM | `Q30` · Q | 1.98 | L/h | 5.5e-07 | L/h | not captured | exact (1.0) | bcp16201-tbl-0005:row11:col1, bcp16201-tbl-0005:row11:col2, bcp16201-tbl-0005:row29:col2 | — | not captured |
+| VM1 | `Q63` · V1 | 1.45 | L/kg | 0.10149999999999999 | L | not captured | exact (1.0) | bcp16201-tbl-0005:row12:col1, bcp16201-tbl-0005:row12:col2, bcp16201-tbl-0005:row30:col2 | — | not captured |
+| VM2 | `Q64` · V2 | 101 | L | 0.101 | L | 101 | exact (1.0) | bcp16201-tbl-0005:row13:col1, bcp16201-tbl-0005:row13:col2, bcp16201-tbl-0005:row13:col3 | — | not captured |
+| theta_q22_cyp2d6 | `Q900` · theta_q22_cyp2d6 | 43 | not captured | not captured | not captured | 7.9 | not captured (not captured) | bcp16201-tbl-0005:row3:col1, bcp16201-tbl-0005:row3:col2, bcp16201-tbl-0005:row3:col3 | — | not captured |
+| theta_q370_cyp2d6 | `Q900` · theta_q370_cyp2d6 | 14.7 | not captured | not captured | not captured | 32 | not captured (not captured) | bcp16201-tbl-0005:row16:col1, bcp16201-tbl-0005:row16:col2, bcp16201-tbl-0005:row16:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -50,18 +56,7 @@ Healy P; Allegaert K; Della Pasqua O et al. (2025). British journal of clinical 
 
 **Interpretation flags:**
 - column 'units' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'CLPP (CYP2D6‐G1)' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row1:col1', 'bcp16201-tbl-0005:row1:col2', 'bcp16201-tbl-0005:row1:col3'])
-- dropped unlinked row (NIL): 'CLPP (CYP2D6‐G2)' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row2:col1', 'bcp16201-tbl-0005:row2:col2', 'bcp16201-tbl-0005:row2:col3'])
-- dropped unlinked row (NIL): 'CLPP (CYP2D6‐G3)' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row3:col1', 'bcp16201-tbl-0005:row3:col2', 'bcp16201-tbl-0005:row3:col3'])
-- dropped unlinked row (NIL): 'CLMO (OCT1‐G0)' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row8:col1', 'bcp16201-tbl-0005:row8:col2', 'bcp16201-tbl-0005:row8:col3'])
-- dropped unlinked row (NIL): 'CLMO (OCT1‐G1)' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row9:col1', 'bcp16201-tbl-0005:row9:col2', 'bcp16201-tbl-0005:row9:col3'])
-- dropped unlinked row (NIL): 'CLMO (OCT1‐G2)' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row10:col1', 'bcp16201-tbl-0005:row10:col2', 'bcp16201-tbl-0005:row10:col3'])
-- dropped unlinked row (NIL): 'QM' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row11:col1', 'bcp16201-tbl-0005:row11:col2', 'bcp16201-tbl-0005:row29:col2'])
-- dropped unlinked row (NIL): 'VM1' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row12:col1', 'bcp16201-tbl-0005:row12:col2', 'bcp16201-tbl-0005:row30:col2'])
-- dropped unlinked row (NIL): 'VM2' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row13:col1', 'bcp16201-tbl-0005:row13:col2', 'bcp16201-tbl-0005:row13:col3'])
-- dropped unlinked row (NIL): 'CLPM (CYP2D6‐G1)' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row14:col1', 'bcp16201-tbl-0005:row14:col2', 'bcp16201-tbl-0005:row14:col3'])
-- dropped unlinked row (NIL): 'CLPM (CYP2D6‐G2)' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row15:col1', 'bcp16201-tbl-0005:row15:col2', 'bcp16201-tbl-0005:row15:col3'])
-- dropped unlinked row (NIL): 'CLPM (CYP2D6‐G3)' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row16:col1', 'bcp16201-tbl-0005:row16:col2', 'bcp16201-tbl-0005:row16:col3'])
+- unit_dimension_unknown: 'OCT1‐G2' (CL)
 - dropped unlinked row (NIL): 'TM50 CLPO' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row17:col2'])
 - dropped PD-category row 'Hill coefficient CLPO' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['bcp16201-tbl-0005:row18:col2'])
 - dropped unlinked row (NIL): 'TM50 CLPM' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row19:col2'])
@@ -70,12 +65,30 @@ Healy P; Allegaert K; Della Pasqua O et al. (2025). British journal of clinical 
 - dropped PD-category row 'Hill coefficient CLMO' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['bcp16201-tbl-0005:row22:col2'])
 - unit_dimension_unknown: 'CYP1' (CL/F)
 - dropped duplicate Q27 ('CLPO (CYP1)', value '0.161') — already have one for this compound
-- dropped unlinked row (NIL): 'CLPM (CYP1)' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row26:col2', 'bcp16201-tbl-0005:row26:col3'])
-- dropped unlinked row (NIL): 'CLPM (CYP2)' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row27:col2', 'bcp16201-tbl-0005:row27:col3'])
-- dropped unlinked row (NIL): 'CLPM (CYP3)' — extend the ontology if this is a real PK parameter (source ['bcp16201-tbl-0005:row28:col2', 'bcp16201-tbl-0005:row28:col3'])
+- relinked 'CLPM (CYP1)' Q370 → Q22 for O-desmethyltramadol: a metabolite's own clearance is its elimination, not its formation
+- unit_dimension_unknown: 'CYP1' (CL)
+- dropped duplicate Q22 ('CLPM (CYP1)', value '0.628') — already have one for this compound
+- relinked 'CLPM (CYP2)' Q370 → Q22 for O-desmethyltramadol: a metabolite's own clearance is its elimination, not its formation
+- unit_dimension_unknown: 'CYP2' (CL)
+- dropped duplicate Q22 ('CLPM (CYP2)', value '0.0915') — already have one for this compound
+- relinked 'CLPM (CYP3)' Q370 → Q22 for O-desmethyltramadol: a metabolite's own clearance is its elimination, not its formation
+- unit_dimension_unknown: 'CYP3' (CL)
+- dropped duplicate Q22 ('CLPM (CYP3)', value '0.00878') — already have one for this compound
+- covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q370 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'CLPO' → L/h (from the popPK convention: 'CLPO is a clearance parameter (Total clearance following oral administration adjusted for bioavailability). In populatio')
+- implicit units: 'QP' → L/h (from the popPK convention: 'QP is an intercompartmental clearance. In population PK, intercompartmental clearances are conventionally expressed in L')
+- implicit units: 'VP1' → L (from the popPK convention: 'VP1 is a volume of distribution (central compartment). In population PK, volumes are conventionally expressed in L. The ')
+- implicit units: 'VP2' → L (from the popPK convention: 'VP2 is a volume of distribution (peripheral compartment). The value 102 is consistent with L for a reference adult weigh')
+- implicit units: 'CLMO (OCT1‐G2)' → L/h (from the popPK convention: 'CLMO is a clearance parameter (M1 clearance). In population PK, clearances are conventionally expressed in L/h. The valu')
+- implicit units: 'QM' → L/h (from the popPK convention: 'QM is an intercompartmental clearance. In population PK, intercompartmental clearances are conventionally expressed in L')
+- implicit units: 'VM1' → L/kg (from the paper text: "The text states: 'estimates for the central volume of distribution (VM1) were fixed to a value of 78.9 L/70 kg'. This is")
+- implicit units: 'VM2' → L (from the popPK convention: 'VM2 is a volume of distribution (peripheral compartment). The value 101 is consistent with L for a reference adult weigh')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tramadol
-- gap-filled Q76 (V/F) from Bao_2023's review values (primary lacked it)
-- gap-filled Q49 (kabs) from Ekstrand_2026's review values (primary lacked it)
+- template fit: PK_3M_9C — formed from central; parent 2, metabolites [2]
+- row roles: 3 per-group rows of O-desmethyltramadol covariate_effect but 0 reference group(s) — kept as printed
+- row roles: per-genotype parameters — typical value from the reference group: CLPP (CYP2D6‐G3), CLMO (OCT1‐G2), CLPM (CYP2D6‐G3)
+- row roles (LLM): model_class=compartmental; 30/30 row label(s) assigned, 31 linked by role; re-tagged parent→O-desmethyltramadol ×29
 
 **Extraction notes:**
 - LLM selected parameter table(s) 5
@@ -112,25 +125,37 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Ekstrand_2026:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bao_2023:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp16201-tbl-0005:row10:col1', 'bcp16201-tbl-0005:row10:col2', 'bcp16201-tbl-0005:row10:col3'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp16201-tbl-0005:row4:col1', 'bcp16201-tbl-0005:row4:col2', 'bcp16201-tbl-0005:row4:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp16201-tbl-0005:row5:col1', 'bcp16201-tbl-0005:row5:col2', 'bcp16201-tbl-0005:row5:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp16201-tbl-0005:row11:col1', 'bcp16201-tbl-0005:row11:col2', 'bcp16201-tbl-0005:row29:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp16201-tbl-0005:row6:col1', 'bcp16201-tbl-0005:row6:col2', 'bcp16201-tbl-0005:row6:col3', 'bcp16201-tbl-0005:row24:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp16201-tbl-0005:row12:col1', 'bcp16201-tbl-0005:row12:col2', 'bcp16201-tbl-0005:row30:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp16201-tbl-0005:row7:col1', 'bcp16201-tbl-0005:row7:col2', 'bcp16201-tbl-0005:row7:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp16201-tbl-0005:row13:col1', 'bcp16201-tbl-0005:row13:col2', 'bcp16201-tbl-0005:row13:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q76 | pass | volume within physiological range | 688 L | not captured | not captured | ['Bao_2023:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 62.2 L/h | not captured | not captured | ['bcp16201-tbl-0005:row10:col1', 'bcp16201-tbl-0005:row10:col2', 'bcp16201-tbl-0005:row10:col3'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 25.6 L/h | not captured | not captured | ['bcp16201-tbl-0005:row4:col1', 'bcp16201-tbl-0005:row4:col2', 'bcp16201-tbl-0005:row4:col3'] |
+| C9_phys_window_Q63 | fail | volume within physiological range | 0.211 L | not captured | not captured | ['bcp16201-tbl-0005:row6:col1', 'bcp16201-tbl-0005:row6:col2', 'bcp16201-tbl-0005:row6:col3', 'bcp16201-tbl-0005:row24:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 102 L | not captured | not captured | ['bcp16201-tbl-0005:row12:col1', 'bcp16201-tbl-0005:row12:col2', 'bcp16201-tbl-0005:row30:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 102 L | not captured | not captured | ['bcp16201-tbl-0005:row7:col1', 'bcp16201-tbl-0005:row7:col2', 'bcp16201-tbl-0005:row7:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 101 L | not captured | not captured | ['bcp16201-tbl-0005:row13:col1', 'bcp16201-tbl-0005:row13:col2', 'bcp16201-tbl-0005:row13:col3'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['Q', 'V2'] |
+| T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['Q', 'V2', 'Q', 'V2'] |
+| T3_shared_parameters | not captured | pass | 3 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
 | T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -167,4 +192,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 21:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:42 UTC</sub>

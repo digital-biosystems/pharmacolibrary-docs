@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tapentadol&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/&quot;},{&quot;label&quot;:&quot;Jo\u0144czyk_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tapentadol_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tapentadol_Khalil2020_final&quot;,&quot;label&quot;:&quot;Khalil_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Khalil2020_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tapentadol_Joczyk2022_reference&quot;,&quot;label&quot;:&quot;Jo\u0144czyk_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Joczyk2022_reference.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tapentadol_Zhang2017_reference&quot;,&quot;label&quot;:&quot;Zhang_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Zhang2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tapentadol_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tapentadol_Joczyk2022_reference&quot;,&quot;label&quot;:&quot;Jo\u0144czyk_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Joczyk2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tapentadol_Khalil2020_final&quot;,&quot;label&quot;:&quot;Khalil_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Khalil2020_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tapentadol_Zhang2017_reference&quot;,&quot;label&quot;:&quot;Zhang_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Zhang2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tapentadol — `Tapentadol_Joczyk2022_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**Why:** the model was built but never simulated.
+**Why:** C5 dimensioned parameter(s) without a unit: Q19, Q18 — no SI value to build from.
 **Second reading:** `gpt-oss:120b` read this paper differently on `model.parameterization` (apparent vs mechanistic) and 4 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
 <sub>owner: **scholar**</sub>
@@ -25,12 +25,12 @@ Jończyk R; Beuter C; Bulawa B; Buller S; Eibl C; Elling C; et al. et al. (2022)
   ·  DOI: [10.2147/JPR.S364902](https://doi.org/10.2147/JPR.S364902)
 
 ## Model component
-<dbs-pgx drug="tapentadol" model-id="Tapentadol_Joczyk2022_reference" status="not_simulated" stale="false" population="children aged 2 to &lt;7 years with acute pain" measured-compound="tapentadol" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="tapentadol" model-id="Tapentadol_Joczyk2022_reference" status="needs_review" stale="false" population="children aged 2 to &lt;7 years" measured-compound="tapentadol" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not_simulated`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -49,10 +49,6 @@ Jończyk R; Beuter C; Bulawa B; Buller S; Eibl C; Elling C; et al. et al. (2022)
 
 ## Departures & gaps
 
-**Deviations:**
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-
 **Interpretation flags:**
 - unit_dimension_unknown: 'h•ng/mL' (AUCt)
 - dropped duplicate Q32 ('Cmax,ss (ng/mL)', value '201.2') — already have one for this compound
@@ -62,12 +58,14 @@ Jończyk R; Beuter C; Bulawa B; Buller S; Eibl C; Elling C; et al. et al. (2022)
 - salvaged Q22 ('Tapentadol mature CL'=93.7) from results prose — parameter table was unreadable
 - salvaged Q27 ('CL/F'=272) from results prose — parameter table was unreadable
 - salvaged Q76 ('V/F'=1203) from results prose — parameter table was unreadable
+- implicit units: 'AUCτ,sd (h•ng/mL)' — the LLM proposed 'h•ng/mL', whose dimension does not fit Q19; left unset
+- implicit units: 'AUCτ,ss (h•ng/mL)' — the LLM proposed 'h•ng/mL', whose dimension does not fit Q18; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tapentadol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0, 0]
 - status held at route_to_review — not promoted
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 0 linked by role
 
 **Extraction notes:**
 - transposed table t0003: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
@@ -109,22 +107,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['t0003:row0:col3', 't0003:row0:col4', 't0003:row0:col5', 't0003:row0:col6', 't0003:row0:col8', 't0003:row0:col9', 't0003:row0:col10', 't0003:row0:col11', 't0003:row0:col13', 't0003:row0:col14', 't0003:row0:col15', 't0003:row0:col16'] |
 | C5_dimension_Q36 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['t0003:row1:col3', 't0003:row1:col4', 't0003:row1:col5', 't0003:row1:col6', 't0003:row1:col8', 't0003:row1:col9', 't0003:row1:col10', 't0003:row1:col11', 't0003:row1:col13', 't0003:row1:col14', 't0003:row1:col15', 't0003:row1:col16'] |
+| C5_unit_missing_Q18 | fail | [mass] * [time] / [length] ** 3 | h•ng/mL | not captured | not captured | ['t0003:row5:col3', 't0003:row5:col4', 't0003:row5:col5', 't0003:row5:col6', 't0003:row5:col8', 't0003:row5:col9', 't0003:row5:col10', 't0003:row5:col11', 't0003:row5:col13', 't0003:row5:col14', 't0003:row5:col15', 't0003:row5:col16'] |
+| C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 | h•ng/mL | not captured | not captured | ['t0003:row2:col3', 't0003:row2:col4', 't0003:row2:col5', 't0003:row2:col6', 't0003:row2:col8', 't0003:row2:col9', 't0003:row2:col10', 't0003:row2:col11', 't0003:row2:col13', 't0003:row2:col14', 't0003:row2:col15', 't0003:row2:col16'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 93.7 L/h | not captured | not captured | ['Jończyk_2022:other_prose'] |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 272 L/h | not captured | not captured | ['Jończyk_2022:other_prose'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 1.2e+03 L | not captured | not captured | ['Jończyk_2022:other_prose'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -134,8 +123,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_tapentadol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jończyk_2022` / `Jończyk_2022::reference`)
-- model: `../../../knowledgebase/drugs/drug_tapentadol/models/modelica/Tapentadol_Joczyk2022_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_tapentadol/models/modelica/Tapentadol_Joczyk2022_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -144,14 +131,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tapentadol/Tapentadol_Joczyk2022_reference/Tapentadol_Joczyk2022_reference_modelica.zip" download>Tapentadol_Joczyk2022_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tapentadol/Tapentadol_Joczyk2022_reference/Tapentadol_Joczyk2022_reference_matlab.zip" download>Tapentadol_Joczyk2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tapentadol/Tapentadol_Joczyk2022_reference/Tapentadol_Joczyk2022_reference_matlab_simbio.zip" download>Tapentadol_Joczyk2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tapentadol/Tapentadol_Joczyk2022_reference/Tapentadol_Joczyk2022_reference_sbml.zip" download>Tapentadol_Joczyk2022_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tapentadol/Tapentadol_Joczyk2022_reference/Tapentadol_Joczyk2022_reference_cellml.zip" download>Tapentadol_Joczyk2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -161,4 +148,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-20 21:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:44 UTC</sub>

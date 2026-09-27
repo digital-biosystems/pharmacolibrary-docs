@@ -1,5 +1,8 @@
 {
  "model_id": "Amoxicillin_Spyker1977_reference",
+ "molar_masses": {
+  "central.C": 0.365404
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,7 +10,8 @@
  "parameters": {
   "Cl": 3.5e-06,
   "F": 0.9,
-  "Tlag": 900.0,
+  "MM": 0.365404,
+  "Tlag": 0.0,
   "VdPerKg": 0.00173,
   "adminCount": 1.0,
   "adminDuration": 600.0,
@@ -15,10 +19,13 @@
   "ka": 4.722222222222223e-05,
   "weight": 70.0
  },
- "reference_peaks": {
-  "central.C": 0.00034041262637638225
+ "reference_peak_times": {
+  "central.C": 27010.821643286574
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 0.0003425402284571542
+ },
+ "stop_time": 259200.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

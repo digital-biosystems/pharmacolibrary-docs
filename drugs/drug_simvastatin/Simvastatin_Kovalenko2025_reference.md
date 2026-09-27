@@ -5,7 +5,7 @@
 
 # simvastatin — `Simvastatin_Kovalenko2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q22]` (0.131 vs not captured) and 5 more field(s) — not a structural parameter.
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
 
@@ -58,9 +59,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.6 (9/15 fields) | 6 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q22]` | 0.131 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q30]` | 0.318 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | 0.108 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q315]` | 0.277 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q60]` | 15.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | 1.14 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

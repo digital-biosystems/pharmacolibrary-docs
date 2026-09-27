@@ -18,13 +18,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 15:08 | 4:55 | 2/1/3 | 3/0/0 | 0/0/0 | 143,184/9,089 | ollama / qwen3.8:27b-mtp-q8_0 | 23 | 5/1 | 6/0 | 0 |
+| 2026-09-26 10:58 | 3:18 | 2/2/2 | 3/0/0 | 0/0/0 | 55,636/3,368 | ollama / qwen3.8:27b-mtp-q8_0 | 23 | 22/1 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Bryson_1978_reference](drugs/drug_disopyramide/Disopyramide_Bryson1978_reference.md) | Bryson SM et al., Disopyramide serum and pharmacologic ef…, British journal of clinical… (1978) | [10.1111/j.1365-2125.1978.tb04605.x](https://doi.org/10.1111/j.1365-2125.1978.tb04605.x) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> | [Bryson_1978_reference](drugs/drug_disopyramide/Disopyramide_Bryson1978_reference.md) | Bryson SM et al., Disopyramide serum and pharmacologic ef…, British journal of clinical… (1978) | [10.1111/j.1365-2125.1978.tb04605.x](https://doi.org/10.1111/j.1365-2125.1978.tb04605.x) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Aso_2001_reference](drugs/drug_disopyramide/Disopyramide_Aso2001_reference.md) | Aso R et al., Population pharmacokinetics, protein bi…, International journal of cl… (2001) | — |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Bonde_1989_reference](drugs/drug_disopyramide/Disopyramide_Bonde1989_reference.md) | Bonde J et al., Disposition kinetics of disopyramide in…, Pharmacology & toxicology (1989) | [10.1111/j.1600-0773.1989.tb00677.x](https://doi.org/10.1111/j.1600-0773.1989.tb00677.x) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Pedersen_1986_reference](drugs/drug_disopyramide/Disopyramide_Pedersen1986_reference.md) | Pedersen LE et al., The pharmacokinetics and protein bindin…, Acta pharmacologica et toxi… (1986) | [10.1111/j.1600-0773.1986.tb00110.x](https://doi.org/10.1111/j.1600-0773.1986.tb00110.x) |
@@ -72,7 +72,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 27 matched, 20 returned
-- **screened:** 9  ·  **relevant:** 5
+- **screened:** 26  ·  **relevant:** 5
 - **records:** 6  ·  extracted 1  ·  needs_review 4  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

@@ -1,21 +1,29 @@
 {
  "model_id": "Metformin_Ailabouni2026_final_model_estimate",
+ "molar_masses": {
+  "central.C": 0.1291636
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
+  "Cl": 2.6777777777777782e-05,
   "F": 1.0,
+  "MM": 0.1291636,
   "Tlag": 0.0,
   "VdPerKg": 0.0078000000000000005,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
-  "ka": 0.0001388888888888889,
+  "ka": 0.00026138888888888886,
   "weight": 70.0
  },
+ "reference_peak_times": {
+  "central.C": 8308.116290651007
+ },
  "reference_peaks": {
-  "C_central": 0.00010374968018917292
+  "central.C": 0.00012441447670561963
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

@@ -33,9 +33,11 @@ Ivaturi V; Dvorak CC; Chan D; Liu T; Cowan MJ; Wahlstrom J; et al. et al. (2017)
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Typical value forf-ara-a CL, L/h/15 kg | `Q22` · CL | 3.1 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | T2:row2:col1, T2:row2:col2, T2:row2:col3, T2:row2:col4 | — | not captured |
-| Vc, L/kg | `Q63` · V1 | 13.4 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | T2:row4:col1, T2:row4:col2, T2:row4:col3, T2:row4:col4 | — | not captured |
-| Vp, L/15 | `Q64` · V2 | 13.4 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | T2:row6:col1, T2:row6:col2, T2:row6:col3, T2:row6:col4 | — | not captured |
+| Typical value forf-ara-a CL, L/h/15 kg | `Q22` · CL | 3.1 | L/h | 8.611111111111112e-07 | L/h | not captured | exact (1.0) | T2:row2:col1, T2:row2:col2, T2:row2:col3, T2:row2:col4 | — | not captured |
+| Vc, L/kg | `Q63` · V1 | 13.4 | L/kg | 0.9380000000000001 | [l] / [kg] | not captured | exact (1.0) | T2:row4:col1, T2:row4:col2, T2:row4:col3, T2:row4:col4 | — | not captured |
+| Vp, L/15 | `Q64` · V2 | 13.4 | L | 0.0134 | L | not captured | exact (1.0) | T2:row6:col1, T2:row6:col2, T2:row6:col3, T2:row6:col4 | — | not captured |
+| Kin† | `Q305` · kfm | 0.005 | 1/h | 1.388888888888889e-06 | 1/h | not captured | exact (1.0) | T2:row7:col1, T2:row7:col2, T2:row7:col3 | — | not captured |
+| Kout‡ | `Q47` · kel | 0.09 | 1/h | 2.4999999999999998e-05 | 1/h | not captured | exact (1.0) | T2:row9:col1, T2:row9:col2, T2:row9:col3 | — | not captured |
 | theta_cl_creatinine | `Q900` · theta_cl_creatinine | 0.006 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row3:col1, T2:row3:col2, T2:row3:col3 | — | not captured |
 
 <details class="legend">
@@ -47,15 +49,18 @@ Ivaturi V; Dvorak CC; Chan D; Liu T; Cowan MJ; Wahlstrom J; et al. et al. (2017)
 
 **Interpretation flags:**
 - dropped duplicate Q22 ('Intercompartmental CL, L/h/kg', value '2.2') — already have one for this compound
-- dropped PD-category row 'Kin†' → Q327 (kin, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row7:col1', 'T2:row7:col2', 'T2:row7:col3'])
+- unit_dimension_unknown: 'L/15' (V2)
 - dropped PD-category row 'Time effect on kin' → Q327 (kin, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row8:col1', 'T2:row8:col2', 'T2:row8:col3'])
-- dropped PD-category row 'Kout‡' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row9:col1', 'T2:row9:col2', 'T2:row9:col3'])
 - dropped diagnostic row 'Interindividual variability on CL§ (% shrinkage)' → Q318 (shrinkage) — reported statistic, not a parameter
 - dropped diagnostic row 'Interindividual variability on Vc§ (% shrinkage)' → Q318 (shrinkage) — reported statistic, not a parameter
 - dropped diagnostic row 'Interindividual variability on Kin§ (% shrinkage)' → Q318 (shrinkage) — reported statistic, not a parameter
-- dropped unlinked row (NIL): 'Correlation' — extend the ontology if this is a real PK parameter (source ['T2:row15:col2', 'T2:row15:col3'])
+- implicit units: 'Typical value forf-ara-a CL, L/h/15 kg' → L/h (from the paper text: "The text states: 'where, 3.1L/hour is the typical value of f-ara-a CL'.")
+- implicit units: 'Vp, L/15' → L (from the popPK convention: 'The parameter is a volume of distribution (Vp). In population PK, volumes are typically expressed in liters (L). The val')
+- implicit units: 'Kin†' → 1/h (from the popPK convention: 'The parameter is a first-order rate constant (Kin). First-order rate constants are expressed in reciprocal time units, t')
+- implicit units: 'Kout‡' → 1/h (from the popPK convention: 'The parameter is a first-order rate constant (Kout). First-order rate constants are expressed in reciprocal time units, ')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fludarabine
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
+- row roles (LLM): model_class=compartmental; 14/14 row label(s) assigned, 22 linked by role; re-tagged parent→f-ara-ATP ×17
 
 **Extraction notes:**
 - unparsed cell T2:row3:col4 = '.004-.008'
@@ -70,11 +75,20 @@ Ivaturi V; Dvorak CC; Chan D; Liu T; Cowan MJ; Wahlstrom J; et al. et al. (2017)
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col3', 'T2:row2:col4'] |
+| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row7:col1', 'T2:row7:col2', 'T2:row7:col3'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row9:col1', 'T2:row9:col2', 'T2:row9:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row6:col1', 'T2:row6:col2', 'T2:row6:col3', 'T2:row6:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.1 | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col3', 'T2:row2:col4'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 3.1 L/h | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col3', 'T2:row2:col4'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 938 L | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col3', 'T2:row4:col4'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 13.4 L | not captured | not captured | ['T2:row6:col1', 'T2:row6:col2', 'T2:row6:col3', 'T2:row6:col4'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -99,4 +113,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 07:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:47 UTC</sub>

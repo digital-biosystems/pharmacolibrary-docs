@@ -28,6 +28,9 @@ Hishe HZ; Stocker SL; Stamp LK; Dalbeth N; Merriman TR; Phipps-Green A; et al. e
 ## Model component
 <dbs-pgx drug="allopurinol" model-id="Allopurinol_Hishe2023_reference" status="rejected" stale="false" population="adults with gout" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
+
 **Parameterization:** apparent.
 
 ## Parameters

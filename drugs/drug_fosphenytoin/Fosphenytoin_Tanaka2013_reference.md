@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C
+**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped
 **Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['fosphenytoin sodium', 'phenytoin', 'metabolism']] vs []) and 1 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
 <sub>owner: **scholar**</sub>
@@ -27,7 +27,7 @@ Tanaka J; Kasai H; Shimizu K; Shimasaki S; Kumagai Y et al. (2013). European jou
   ·  DOI: [10.1007/s00228-012-1373-8](https://doi.org/10.1007/s00228-012-1373-8)
 
 ## Model component
-<dbs-pgx drug="fosphenytoin" model-id="Fosphenytoin_Tanaka2013_reference" status="model_quarantined" stale="false" population="pediatric patients, adult patients, and healthy volunteers" measured-compound="phenytoin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="fosphenytoin" model-id="Fosphenytoin_Tanaka2013_reference" status="model_quarantined" stale="false" population="pediatric patients, adult patients, and healthy volunteers" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -36,12 +36,12 @@ Tanaka J; Kasai H; Shimizu K; Shimasaki S; Kumagai Y et al. (2013). European jou
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) a | `Q22` · CL | 1.48 | not captured | not captured | not captured | 1.61 | boundary (0.8) | tab_2:row2:col2, tab_2:row2:col3, tab_2:row2:col4, tab_2:row2:col5, tab_2:row2:col6, tab_2:row2:col7 | — | not captured |
-| V 2 (L) a | `Q64` · V2 | 16.1 | not captured | not captured | not captured | 20.8 | llm (0.5) | tab_2:row4:col2, tab_2:row4:col3, tab_2:row4:col4, tab_2:row4:col5, tab_2:row4:col6, tab_2:row4:col7 | — | not captured |
-| Q (L/h) | `Q30` · Q | 44.9 | L/h | 1.2472222222222223e-05 | [l] / [h] | 53.0 | exact (1.0) | tab_2:row5:col2, tab_2:row5:col3, tab_2:row5:col4, tab_2:row5:col5, tab_2:row5:col6, tab_2:row5:col7 | — | not captured |
-| V 3 (L) a | `Q77` · V3 | 22.8 | not captured | not captured | not captured | 26.0 | llm (0.5) | tab_2:row6:col2, tab_2:row6:col3, tab_2:row6:col4, tab_2:row6:col5, tab_2:row6:col6, tab_2:row6:col7 | — | not captured |
-| K 12 (1/h) | `Q301` · k12 | 4.21 | not captured | not captured | not captured | 5.02 | llm (0.5) | tab_2:row8:col2, tab_2:row8:col3, tab_2:row8:col4, tab_2:row8:col5, tab_2:row8:col6, tab_2:row8:col7 | — | not captured |
-| ω Q,Q | `Q314` · omega_cov | 0.121 | not captured | not captured | not captured | 0.0840 | llm (0.5) | tab_2:row12:col2, tab_2:row12:col3, tab_2:row12:col4, tab_2:row12:col5, tab_2:row12:col6 | — | not captured |
+| CL (L/h)a | `Q22` · CL | 1.61 | L/h | 4.4722222222222223e-07 | L/h | 0.0878 | exact (1.0) | Tab3:row2:col2, Tab3:row2:col3, Tab3:row2:col4, Tab3:row2:col5, Tab3:row2:col6, Tab3:row2:col7 | — | 0.190 (0.0348% RSE) |
+| V2 (L)a | `Q63` · V1 | 20.3 | L | 0.020300000000000002 | L | 2.68 | exact (1.0) | Tab3:row4:col2, Tab3:row4:col3, Tab3:row4:col4, Tab3:row4:col5, Tab3:row4:col6, Tab3:row4:col7 | — | not captured |
+| Q (L/h) | `Q30` · Q | 53.4 | L/h | 1.4833333333333334e-05 | [l] / [h] | 5.87 | exact (1.0) | Tab3:row5:col2, Tab3:row5:col3, Tab3:row5:col4, Tab3:row5:col5, Tab3:row5:col6, Tab3:row5:col7 | — | not captured |
+| V3 (L)a | `Q64` · V2 | 26.5 | L | 0.0265 | L | 2.43 | exact (1.0) | Tab3:row6:col2, Tab3:row6:col3, Tab3:row6:col4, Tab3:row6:col5, Tab3:row6:col6, Tab3:row6:col7 | — | 0.133 (0.0684% RSE) |
+| ΘWT (V3) | `Q77` · V3 | 0.591 | V3 | not captured | [v3] | 0.0520 | llm (0.6) | Tab3:row7:col2, Tab3:row7:col3, Tab3:row7:col4, Tab3:row7:col5, Tab3:row7:col6, Tab3:row7:col7 | — | 0.0470 (0.0214% RSE) |
+| K12 (1/h) | `Q305` · kfm | 4.96 | 1/h | 0.0013777777777777777 | 1/h | 0.518 | exact (1.0) | Tab3:row8:col2, Tab3:row8:col3, Tab3:row8:col4, Tab3:row8:col5, Tab3:row8:col6, Tab3:row8:col7 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -51,31 +51,36 @@ Tanaka J; Kasai H; Shimizu K; Shimasaki S; Kumagai Y et al. (2013). European jou
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Θ WT' — extend the ontology if this is a real PK parameter (source ['tab_2:row3:col3', 'tab_2:row3:col4', 'tab_2:row3:col5', 'tab_2:row3:col6', 'tab_2:row3:col7', 'tab_2:row3:col8', 'tab_2:row7:col3', 'tab_2:row7:col4', 'tab_2:row7:col5', 'tab_2:row7:col6', 'tab_2:row7:col7', 'tab_2:row7:col8'])
-- dropped duplicate Q22 ('ω CL,CL', value '0.135') — already have one for this compound
-- dropped duplicate Q64 ('ω V2,V2', value '0.0164') — already have one for this compound
-- dropped duplicate Q77 ('ω V3,V3', value '0.0179') — already have one for this compound
-- dropped duplicate Q301 ('ω K12,K12', value '0.0377') — already have one for this compound
+- unit_dimension_mismatch: 'ΘWT (CL)' → Q22 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('ΘWT (CL)', value '0.575') — already have one for this compound
+- unit_dimension_unknown: 'V3' (V3)
+- implicit units: 'CL (L/h)a' → L/h (from the paper text: "The text states: 'The basic pharmacokinetic parameters were total clearance (CL, L/h)'. Additionally, Table 3 lists 'Pop")
+- implicit units: 'V2 (L)a' → L (from the paper text: "The text states: 'central volume of distribution (V2, L)'. Additionally, Table 3 lists 'V2 (L)a'.")
+- implicit units: 'V3 (L)a' → L (from the paper text: "The text states: 'peripheral volume of distribution (V3, L)'. Additionally, Table 3 lists 'V3 (L)a'.")
+- implicit units: 'K12 (1/h)' → 1/h (from the paper text: "The text states: 'metabolism rate constant (K12, h−1)'. Note: h−1 is equivalent to 1/h.")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=phenytoin
-- review gap-fill skipped: this record measures 'phenytoin', not fosphenytoin — the review values are the parent's
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: PK_3M_9C — formed from central; parent 0, metabolites [3]
+- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 14/14 row label(s) assigned, 30 linked by role
 
 **Extraction notes:**
-- unparsed cell tab_2:row0:col1 = 'Estimate Standard error 95% CI'
-- unparsed cell tab_2:row0:col2 = 'Bootstrap estimate Bootstrap standard error Bootstrap 95% CI'
-- unparsed cell tab_2:row2:col1 = 'θ 1'
-- unparsed cell tab_2:row3:col2 = 'θ 2'
-- unparsed cell tab_2:row4:col1 = 'θ 3'
-- unparsed cell tab_2:row5:col1 = 'θ 4'
-- unparsed cell tab_2:row6:col1 = 'θ 5'
-- unparsed cell tab_2:row7:col1 = '(V3)'
-- unparsed cell tab_2:row7:col2 = 'θ 6'
-- unparsed cell tab_2:row8:col1 = 'θ 7'
-- unparsed cell tab_2:row10:col1 = 'ω 1,1 0.194'
-- unparsed cell tab_2:row11:col1 = 'ω 2,2 0.161'
-- unparsed cell tab_2:row12:col1 = 'ω 3,3 0.271'
-- unparsed cell tab_2:row13:col1 = 'ω 4,4 0.0430'
-- unparsed cell tab_2:row14:col1 = 'ω 5,5 0.106'
-- unparsed cell tab_2:row17:col1 = 'σ 2,2'
+- unparsed cell Tab3:row2:col1 = 'θ1'
+- unparsed cell Tab3:row3:col1 = 'θ2'
+- unparsed cell Tab3:row4:col1 = 'θ3'
+- unparsed cell Tab3:row5:col1 = 'θ4'
+- unparsed cell Tab3:row6:col1 = 'θ5'
+- unparsed cell Tab3:row7:col1 = 'θ6'
+- unparsed cell Tab3:row8:col1 = 'θ7'
+- unparsed cell Tab3:row10:col1 = 'ω1,1'
+- unparsed cell Tab3:row11:col1 = 'ω2,2'
+- unparsed cell Tab3:row12:col1 = 'ω3,3'
+- unparsed cell Tab3:row13:col1 = 'ω4,4'
+- unparsed cell Tab3:row14:col1 = 'ω5,5'
+- unparsed cell Tab3:row16:col1 = 'σ1,1'
+- unparsed cell Tab3:row17:col1 = 'σ2,2'
+- LLM selected parameter table(s) 3
 
 ## Validation
 
@@ -107,21 +112,28 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5', 'tab_2:row5:col6', 'tab_2:row5:col7'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.48 | not captured | not captured | ['tab_2:row2:col2', 'tab_2:row2:col3', 'tab_2:row2:col4', 'tab_2:row2:col5', 'tab_2:row2:col6', 'tab_2:row2:col7'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row2:col2', 'Tab3:row2:col3', 'Tab3:row2:col4', 'Tab3:row2:col5', 'Tab3:row2:col6', 'Tab3:row2:col7'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row5:col2', 'Tab3:row5:col3', 'Tab3:row5:col4', 'Tab3:row5:col5', 'Tab3:row5:col6', 'Tab3:row5:col7'] |
+| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row8:col2', 'Tab3:row8:col3', 'Tab3:row8:col4', 'Tab3:row8:col5', 'Tab3:row8:col6', 'Tab3:row8:col7'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row4:col2', 'Tab3:row4:col3', 'Tab3:row4:col4', 'Tab3:row4:col5', 'Tab3:row4:col6', 'Tab3:row4:col7'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row6:col2', 'Tab3:row6:col3', 'Tab3:row6:col4', 'Tab3:row6:col5', 'Tab3:row6:col6', 'Tab3:row6:col7'] |
+| C5_unit_missing_Q77 | fail | [length] ** 3 | V3 | not captured | not captured | ['Tab3:row7:col2', 'Tab3:row7:col3', 'Tab3:row7:col4', 'Tab3:row7:col5', 'Tab3:row7:col6', 'Tab3:row7:col7'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.61 | not captured | not captured | ['Tab3:row2:col2', 'Tab3:row2:col3', 'Tab3:row2:col4', 'Tab3:row2:col5', 'Tab3:row2:col6', 'Tab3:row2:col7'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.61 L/h | not captured | not captured | ['Tab3:row2:col2', 'Tab3:row2:col3', 'Tab3:row2:col4', 'Tab3:row2:col5', 'Tab3:row2:col6', 'Tab3:row2:col7'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 20.3 L | not captured | not captured | ['Tab3:row4:col2', 'Tab3:row4:col3', 'Tab3:row4:col4', 'Tab3:row4:col5', 'Tab3:row4:col6', 'Tab3:row4:col7'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 26.5 L | not captured | not captured | ['Tab3:row6:col2', 'Tab3:row6:col3', 'Tab3:row6:col4', 'Tab3:row6:col5', 'Tab3:row6:col6', 'Tab3:row6:col7'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 20 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -158,4 +170,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-16 13:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:45 UTC</sub>

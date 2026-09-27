@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;omeprazole&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/&quot;},{&quot;label&quot;:&quot;Zhao_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Omeprazole_Ala2013_reference&quot;,&quot;label&quot;:&quot;Ala_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Ala2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Chen2022v2_final_estimates&quot;,&quot;label&quot;:&quot;Chen_2022_2_final_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Chen2022v2_final_estimates.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Chen2022v2_sir_median&quot;,&quot;label&quot;:&quot;Chen_2022_2_sir_median&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Chen2022v2_sir_median.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Chung2022_reference&quot;,&quot;label&quot;:&quot;Chung_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Chung2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Gao2025_reference&quot;,&quot;label&quot;:&quot;Gao_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Gao2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Gaspar2025_reference&quot;,&quot;label&quot;:&quot;Gaspar_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Katashima1995_reference&quot;,&quot;label&quot;:&quot;Katashima_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Katashima1995_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_KhanAsa2020_reference&quot;,&quot;label&quot;:&quot;Khan-Asa_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_KhanAsa2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Li2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Marier2004_reference&quot;,&quot;label&quot;:&quot;Marier_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Marier2004_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Marques2026_reference&quot;,&quot;label&quot;:&quot;Marques_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Marques2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Panetta2024_reference&quot;,&quot;label&quot;:&quot;Panetta_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Panetta2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Yusuff2026_reference&quot;,&quot;label&quot;:&quot;Yusuff_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Yusuff2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhang2025v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhang2025v3_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_3_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhang2025v3_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Leucuta2004_reference&quot;,&quot;label&quot;:&quot;Leucuta_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Leucuta2004_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Lin2018_reference&quot;,&quot;label&quot;:&quot;Lin_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Lin2018_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Solana2014_reference&quot;,&quot;label&quot;:&quot;Solana_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Solana2014_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Yang2026v2_reference&quot;,&quot;label&quot;:&quot;Yang_2026_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Yang2026v2_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhao2018_reference&quot;,&quot;label&quot;:&quot;Zhao_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhao2018_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Omeprazole_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Han2025_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Omeprazole_Ala2013_reference&quot;,&quot;label&quot;:&quot;Ala_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Ala2013_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Chen2022v2_final_estimates&quot;,&quot;label&quot;:&quot;Chen_2022_2_final_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Chen2022v2_final_estimates.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Chen2022v2_sir_median&quot;,&quot;label&quot;:&quot;Chen_2022_2_sir_median&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Chen2022v2_sir_median.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Gao2025_reference&quot;,&quot;label&quot;:&quot;Gao_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Gao2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Katashima1995_reference&quot;,&quot;label&quot;:&quot;Katashima_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Katashima1995_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_KhanAsa2020_reference&quot;,&quot;label&quot;:&quot;Khan-Asa_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_KhanAsa2020_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Marier2004_reference&quot;,&quot;label&quot;:&quot;Marier_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Marier2004_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Marques2026_reference&quot;,&quot;label&quot;:&quot;Marques_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Marques2026_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_McCann2023_reference&quot;,&quot;label&quot;:&quot;McCann_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_McCann2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Panetta2024_reference&quot;,&quot;label&quot;:&quot;Panetta_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Panetta2024_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Yusuff2026_reference&quot;,&quot;label&quot;:&quot;Yusuff_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Yusuff2026_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhang2025v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhang2025v2_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhang2025v3_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_3_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhang2025v3_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Chung2022_reference&quot;,&quot;label&quot;:&quot;Chung_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Chung2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Gaspar2025_reference&quot;,&quot;label&quot;:&quot;Gaspar_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Gaspar2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Leucuta2004_reference&quot;,&quot;label&quot;:&quot;Leucuta_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Leucuta2004_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Li2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Lin2018_reference&quot;,&quot;label&quot;:&quot;Lin_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Lin2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Solana2014_reference&quot;,&quot;label&quot;:&quot;Solana_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Solana2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Yang2026v2_reference&quot;,&quot;label&quot;:&quot;Yang_2026_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Yang2026v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Omeprazole_Zhao2018_reference&quot;,&quot;label&quot;:&quot;Zhao_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Zhao2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Omeprazole_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_omeprazole/Omeprazole_Han2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # omeprazole — `Omeprazole_Zhao2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.579). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.579). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,41 +13,40 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
-
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 1 covered.
+**Why:** C5 dimensioned parameter(s) without a unit: Q99, Q370, Q22, Q22, Q49, Q370 — no SI value to build from; C2_reference failed (ratio None).
 **Second reading:** `gpt-oss:120b` read this paper differently on `model.links` ([['omeprazole', '5-hydroxy-omeprazole', 'metabolism'], ['omeprazole', 'omeprazole sulfone', 'metabolism']] vs [['omeprazole', '5-hydroxy-omeprazole', 'metabolism']]) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
-<sub>owner: **scholar**</sub>
-
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-18 07:51:28.714452+00:00) predates the upstream re-run (2026-09-23 21:29:23.870268+00:00). Current validate status: `needs_review`.
+**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
+<sub>owner: **curator**</sub>
 
 ## Citation
 Zhao W; Leroux S; Biran V; Jacqz-Aigrain E et al. (2018). British journal of clinical pharmacology 84
   ·  DOI: [10.1111/bcp.13526](https://doi.org/10.1111/bcp.13526)
 
 ## Model component
-<dbs-pgx drug="omeprazole" model-id="Omeprazole_Zhao2018_reference" status="needs_review" stale="true" population="neonates and young infants" measured-compound="omeprazole" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="omeprazole" model-id="Omeprazole_Zhao2018_reference" status="needs_review" stale="false" population="neonates and young infants" measured-compound="omeprazole" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
-**Parameterization:** CLm/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V 1 /F (l) | `Q290` · V1/F | 0.513 | l | 0.000513 | [l] | not captured | space_fold (0.95) | tab_1:row8:col5, tab_1:row8:col6, tab_1:row8:col7, tab_1:row8:col8 | — | not captured |
-| V 2 /F (l) | `Q82` · V2/F | 1 | l | 0.001 | [l] | not captured | space_fold (0.95) | tab_1:row9:col5 | — | not captured |
-| V 3 /F (l) | `Q78` · V3/F | 1 | l | 0.001 | [l] | not captured | space_fold (0.95) | tab_1:row10:col5 | — | not captured |
-| θ2 | `Q99` · Q2 | 0.658 | not captured | not captured | not captured | not captured | llm (0.6) | tab_1:row13:col6, tab_1:row13:col7, tab_1:row13:col8, tab_1:row13:col9 | — | not captured |
-| CL OMZ-M2 (l h | `Q22` · CL | 0.140 | l h | not captured | [h] · [l] | not captured | llm_confirmed (0.6) | tab_1:row18:col4, tab_1:row18:col5, tab_1:row18:col6, tab_1:row18:col7 | — | not captured |
-| CL M1 /F (l h | `Q351` · CLm/F | 0.846 | l h | not captured | [h] · [l] | not captured | llm_corrected (0.6) | tab_1:row19:col4, tab_1:row19:col5, tab_1:row19:col6, tab_1:row19:col7 | — | not captured |
-| Ka | `Q49` · kabs | 130.0 | not captured | not captured | not captured | not captured | exact (1.0) | tab_1:row22:col6, tab_1:row22:col7, tab_1:row22:col8, tab_1:row22:col9 | — | not captured |
+| V 1 /F (l) | `Q290` · V1/F | 0.513 | l | 0.000513 | [l] | not captured | exact (1.0) | tab_1:row8:col5, tab_1:row8:col6, tab_1:row8:col7, tab_1:row8:col8 | — | not captured |
+| V 2 /F (l) | `Q290` · V1/F | 1 | l | 0.001 | [l] | not captured | exact (1.0) | tab_1:row9:col5 | — | not captured |
+| V 3 /F (l) | `Q290` · V1/F | 1 | l | 0.001 | [l] | not captured | exact (1.0) | tab_1:row10:col5 | — | not captured |
+| θ2 | `Q99` · Q2 | 0.658 | L/h | 1.827777777777778e-07 | L/h | not captured | llm (0.6) | tab_1:row13:col6, tab_1:row13:col7, tab_1:row13:col8, tab_1:row13:col9 | — | not captured |
+| CL OMZ-M2 (l h | `Q370` · CLfm | 0.140 | L/h | 3.888888888888889e-08 | L/h | not captured | exact (1.0) | tab_1:row18:col4, tab_1:row18:col5, tab_1:row18:col6, tab_1:row18:col7 | — | not captured |
+| CL M1 /F (l h | `Q27` · CL/F | 0.846 | L/h | 2.35e-07 | L/h | not captured | exact (1.0) | tab_1:row19:col4, tab_1:row19:col5, tab_1:row19:col6, tab_1:row19:col7 | — | not captured |
+| CL M2 /F (l h | `Q27` · CL/F | 0.130 | L/h | 3.611111111111111e-08 | L/h | not captured | exact (1.0) | tab_1:row20:col4, tab_1:row20:col5, tab_1:row20:col6, tab_1:row20:col7 | — | not captured |
+| Ka | `Q49` · kabs | 130.0 | 1/h | 0.03611111111111111 | 1/h | not captured | exact (1.0) | tab_1:row22:col6, tab_1:row22:col7, tab_1:row22:col8, tab_1:row22:col9 | — | not captured |
+| CL OMZ-M1 | `Q22` · CL | 52.6 | L/h | 1.4611111111111112e-05 | L/h | not captured | llm_confirmed (0.6) | tab_1:row24:col4, tab_1:row24:col5, tab_1:row24:col6, tab_1:row24:col7 | — | not captured |
+| CL OMZ-M2 | `Q22` · CL | 35.9 | L/h | 9.972222222222222e-06 | L/h | not captured | llm_confirmed (0.6) | tab_1:row25:col4, tab_1:row25:col5, tab_1:row25:col6, tab_1:row25:col7 | — | not captured |
+| CL M1 /F | `Q22` · CL | 55.9 | L/h | 1.5527777777777776e-05 | L/h | not captured | llm_corrected (0.6) | tab_1:row26:col5, tab_1:row26:col6, tab_1:row26:col7, tab_1:row26:col8 | — | not captured |
+| CL M2 /F | `Q22` · CL | 68.8 | L/h | 1.911111111111111e-05 | L/h | not captured | llm_corrected (0.6) | tab_1:row27:col5, tab_1:row27:col6, tab_1:row27:col7, tab_1:row27:col8 | — | not captured |
 | theta_kabs_abcb1 | `Q900` · theta_kabs_abcb1 | 0.0497 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row4:col3, tab_1:row4:col4, tab_1:row4:col5, tab_1:row4:col6 | — | not captured |
-| CYP2C19 | `Q900` · CYP2C19 | {'IM': 0.0, 'NM': 0.1935, 'RM': 0.4064} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
-| CYP2C19 | `Q900` · CYP2C19 | {'EM': 0.0, 'IM': -0.5198, 'PM': -0.9054} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,30 +59,35 @@ Zhao W; Leroux S; Biran V; Jacqz-Aigrain E et al. (2018). British journal of cli
 - column 'developmental pharmacogenetics of cyp2c19' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'Parameters' — extend the ontology if this is a real PK parameter (source ['tab_1:row2:col7'])
 - dropped unlinked row (NIL): 'F ABCB1 WT' — extend the ontology if this is a real PK parameter (source ['tab_1:row5:col4'])
-- dropped unlinked row (NIL): 'F ABCB1 HET' — extend the ontology if this is a real PK parameter (source ['tab_1:row6:col4', 'tab_1:row6:col5', 'tab_1:row6:col6', 'tab_1:row6:col7'])
-- dropped unlinked row (NIL): 'F ABCB1 MUT' — extend the ontology if this is a real PK parameter (source ['tab_1:row7:col3', 'tab_1:row7:col4', 'tab_1:row7:col5', 'tab_1:row7:col6'])
 - dropped unlinked row (NIL): 'F CYP2C19 EM/UM' — extend the ontology if this is a real PK parameter (source ['tab_1:row14:col3'])
-- dropped unlinked row (NIL): 'F CYP2C19 IM' — extend the ontology if this is a real PK parameter (source ['tab_1:row15:col3', 'tab_1:row15:col4', 'tab_1:row15:col5', 'tab_1:row15:col6'])
-- dropped unlinked row (NIL): 'F CYP2C19 PM' — extend the ontology if this is a real PK parameter (source ['tab_1:row16:col3', 'tab_1:row16:col4', 'tab_1:row16:col5', 'tab_1:row16:col6'])
 - dropped unlinked row (NIL): 'F PNA = (PNA/38)' — extend the ontology if this is a real PK parameter (source ['tab_1:row17:col3', 'tab_1:row17:col4', 'tab_1:row17:col5', 'tab_1:row17:col6'])
-- unit_dimension_unknown: 'l h' (CL)
-- unit_dimension_unknown: 'l h' (CLm/F)
-- dropped duplicate Q351 ('CL M2 /F (l h', value '0.130') — already have one for this compound
+- unit_dimension_unknown: 'l h' (CLfm)
+- unit_dimension_unknown: 'l h' (CL/F)
 - unit_dimension_unknown: 'l h' (V1/F)
 - dropped duplicate Q290 ('V 1 /F', value '99.0') — already have one for this compound
-- dropped duplicate Q22 ('CL OMZ-M1', value '52.6') — already have one for this compound
-- dropped duplicate Q22 ('CL OMZ-M2', value '35.9') — already have one for this compound
-- dropped duplicate Q351 ('CL M1 /F', value '55.9') — already have one for this compound
-- dropped duplicate Q351 ('CL M2 /F', value '68.8') — already have one for this compound
+- unit_dimension_unknown: 'l h' (CL)
+- unit_dimension_unknown: 'l h' (CLm/F)
 - unit_dimension_mismatch: 'Ka: absorption rate constant (h' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
 - dropped duplicate Q49 ('Ka: absorption rate constant (h', value None) — already have one for this compound
+- implicit units: 'θ2' → L/h (from the popPK convention: 'The parameter is an intercompartmental clearance (Q2). In population PK, clearances are conventionally expressed in L/h.')
+- implicit units: 'CL OMZ-M2 (l h' → L/h (from the paper text: "The table caption/footnote fragment provided in the prompt for this parameter explicitly states 'l h' (liters per hour).")
+- implicit units: 'CL M1 /F (l h' → L/h (from the paper text: "The table caption/footnote fragment provided in the prompt for this parameter explicitly states 'l h' (liters per hour).")
+- implicit units: 'CL M2 /F (l h' → L/h (from the paper text: "The table caption/footnote fragment provided in the prompt for this parameter explicitly states 'l h' (liters per hour).")
+- implicit units: 'Ka' → 1/h (from the popPK convention: 'The parameter is the absorption rate constant (Ka). First-order rate constants are conventionally expressed in 1/h (or h')
+- implicit units: 'CL OMZ-M1' → L/h (from the popPK convention: 'The parameter is a clearance (CL OMZ-M1). Clearances are conventionally expressed in L/h. The value 52.6 is consistent w')
+- implicit units: 'CL OMZ-M2' → L/h (from the popPK convention: 'The parameter is a clearance (CL OMZ-M2). Clearances are conventionally expressed in L/h. The value 35.9 is consistent w')
+- implicit units: 'CL M1 /F' → L/h (from the popPK convention: 'The parameter is an apparent clearance (CL M1 /F). Clearances are conventionally expressed in L/h. The value 55.9 is con')
+- implicit units: 'CL M2 /F' → L/h (from the popPK convention: 'The parameter is an apparent clearance (CL M2 /F). Clearances are conventionally expressed in L/h. The value 68.8 is con')
+- metabolite 5-hydroxy-omeprazole: Q351→Q22 — the model states fm, so its CL/V are not fm-divided
+- metabolite omeprazole sulfone: Q351→Q22 — the model states fm, so its CL/V are not fm-divided
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=omeprazole
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [1, 1]
 - model equation 'PNA = (PNA/38)^θ' not bound — neither LHS nor base term 'PNA' linked to an ontology parameter
-- status held at route_to_review — not promoted
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- row roles: per-genotype parameters — typical value from the reference group: F ABCB1 WT, F CYP2C19 EM/UM
+- row roles (LLM): model_class=compartmental; 24/24 row label(s) assigned, 22 linked by role; re-tagged parent→5-hydroxy-omeprazole ×18, parent→omeprazole sulfone ×17
+- molar mass: '5-hydroxy-omeprazole' ('5-hydroxy-omeprazole') not found in PubChem — left in mass units
+- molar mass: none found for '5-hydroxy-omeprazole' — its concentrations stay mass-only
 
 **Extraction notes:**
 - unparsed cell tab_1:row2:col8 = 'th -95'
@@ -129,33 +133,33 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 13 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_reference | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row24:col4', 'tab_1:row24:col5', 'tab_1:row24:col6', 'tab_1:row24:col7'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row25:col4', 'tab_1:row25:col5', 'tab_1:row25:col6', 'tab_1:row25:col7'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row26:col5', 'tab_1:row26:col6', 'tab_1:row26:col7', 'tab_1:row26:col8'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row27:col5', 'tab_1:row27:col6', 'tab_1:row27:col7', 'tab_1:row27:col8'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row19:col4', 'tab_1:row19:col5', 'tab_1:row19:col6', 'tab_1:row19:col7'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row20:col4', 'tab_1:row20:col5', 'tab_1:row20:col6', 'tab_1:row20:col7'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row8:col5', 'tab_1:row8:col6', 'tab_1:row8:col7', 'tab_1:row8:col8'] |
-| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row10:col5'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row9:col5'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | l h | not captured | not captured | ['tab_1:row18:col4', 'tab_1:row18:col5', 'tab_1:row18:col6', 'tab_1:row18:col7'] |
-| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] | l h | not captured | not captured | ['tab_1:row19:col4', 'tab_1:row19:col5', 'tab_1:row19:col6', 'tab_1:row19:col7'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['tab_1:row22:col6', 'tab_1:row22:col7', 'tab_1:row22:col8', 'tab_1:row22:col9'] |
-| C5_unit_missing_Q99 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row13:col6', 'tab_1:row13:col7', 'tab_1:row13:col8', 'tab_1:row13:col9'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row9:col5'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row10:col5'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row18:col4', 'tab_1:row18:col5', 'tab_1:row18:col6', 'tab_1:row18:col7'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row22:col6', 'tab_1:row22:col7', 'tab_1:row22:col8', 'tab_1:row22:col9'] |
+| C5_dimension_Q99 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row13:col6', 'tab_1:row13:col7', 'tab_1:row13:col8', 'tab_1:row13:col9'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 52.6 L/h | not captured | not captured | ['tab_1:row24:col4', 'tab_1:row24:col5', 'tab_1:row24:col6', 'tab_1:row24:col7'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 35.9 L/h | not captured | not captured | ['tab_1:row25:col4', 'tab_1:row25:col5', 'tab_1:row25:col6', 'tab_1:row25:col7'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 55.9 L/h | not captured | not captured | ['tab_1:row26:col5', 'tab_1:row26:col6', 'tab_1:row26:col7', 'tab_1:row26:col8'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 68.8 L/h | not captured | not captured | ['tab_1:row27:col5', 'tab_1:row27:col6', 'tab_1:row27:col7', 'tab_1:row27:col8'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.846 L/h | not captured | not captured | ['tab_1:row19:col4', 'tab_1:row19:col5', 'tab_1:row19:col6', 'tab_1:row19:col7'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.13 L/h | not captured | not captured | ['tab_1:row20:col4', 'tab_1:row20:col5', 'tab_1:row20:col6', 'tab_1:row20:col7'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 0.513 L | not captured | not captured | ['tab_1:row8:col5', 'tab_1:row8:col6', 'tab_1:row8:col7', 'tab_1:row8:col8'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 1 L | not captured | not captured | ['tab_1:row9:col5'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 1 covered | not captured | neither emitted nor in defaulted[]: ['V1/F', 'V2/F', 'Q2', 'kabs'] |
-| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | pass | general_linear → PK_General_Linear* | PK_General_Linear | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q290 | pass | volume within physiological range | 1 L | not captured | not captured | ['tab_1:row9:col5'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 1 L | not captured | not captured | ['tab_1:row10:col5'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -165,8 +169,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_omeprazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhao_2018` / `Zhao_2018::reference`)
-- model: `../../../knowledgebase/drugs/drug_omeprazole/models/modelica/_needs_review/Omeprazole_Zhao2018_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_omeprazole/models/modelica/_needs_review/Omeprazole_Zhao2018_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -192,4 +194,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 21:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:37 UTC</sub>

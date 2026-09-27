@@ -1,5 +1,5 @@
 {
- "guid": "{eaa98ec0-3e68-441f-9df2-22f0342c00f9}",
+ "guid": "{e1a5a6b7-5dfe-4658-b2a2-dc107417ac81}",
  "model": "Pharmacolibrary.Pharmacokinetic.Models.PK_2C",
  "model_identifier": "Pharmacolibrary_Pharmacokinetic_Models_PK_2C",
  "generation_tool": "OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc",
@@ -67,12 +67,13 @@
   "periodicDose.adminPeriod": 63,
   "periodicDose.firstAdminTime": 64,
   "periodicDose.route.F": 71,
-  "peripheral.C0": 72,
-  "peripheral.V": 73,
-  "peripheral.molarWeight": 75,
-  "transfer.CLa": 76,
-  "transfer.CLb": 77,
-  "weight": 78,
+  "periodicDose.route.Tlag": 72,
+  "peripheral.C0": 73,
+  "peripheral.V": 74,
+  "peripheral.molarWeight": 76,
+  "transfer.CLa": 77,
+  "transfer.CLb": 78,
+  "weight": 79,
   "central.C": 0,
   "central.cport.c": 0,
   "centralCPort.c": 0,
@@ -89,7 +90,7 @@
   "transfer.cport_a.c": 0,
   "transfer.cport_a.qm": 27,
   "transfer.cport_b.c": 1,
-  "transfer.cport_b.qm": 98,
+  "transfer.cport_b.qm": 99,
   "adminCount": 1,
   "periodicDose.doseCount": 2,
   "elim.useClInput": 7
@@ -102,19 +103,18 @@
   "Ctox_trough": 0.006,
   "F": 1.0,
   "LD50": 0.0,
-  "MM": 1.0,
-  "VdPerKg": 0.9,
-  "VdpPerKg": 0.9,
+  "MM": 0.0,
+  "VdPerKg": 0.0009,
+  "VdpPerKg": 0.0009,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
   "adminPeriod": 28800.0,
   "adminTime": 60.0,
   "central.C0": 0.0,
-  "central.molarWeight": 1.0,
   "k12": 1.0,
   "k21": 1.0,
+  "periodicDose.route.Tlag": 0.0,
   "peripheral.C0": 0.0,
-  "peripheral.molarWeight": 1.0,
   "weight": 75.0
  },
  "outputs": [
@@ -124,6 +124,6 @@
   "elim.C",
   "peripheral.C"
  ],
- "fmu_sha256": "88f6a63dca0e9b69c7fec811de854d56fe1357254b86a04cd9bf5c6d8606a6be",
- "js_bytes": 1818553
+ "fmu_sha256": "996bc09b7ec1818c187d3f95464b5055d63a0c8cbddd6137a69f289081e92dfc",
+ "js_bytes": 1819390
 }

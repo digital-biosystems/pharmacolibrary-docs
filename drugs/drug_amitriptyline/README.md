@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;amitriptyline&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Koh2019_reference&quot;,&quot;label&quot;:&quot;Koh_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_RatajczakEnselme2015_reference&quot;,&quot;label&quot;:&quot;Ratajczak-Enselme_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Koh2019_reference&quot;,&quot;label&quot;:&quot;Koh_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_RatajczakEnselme2015_reference&quot;,&quot;label&quot;:&quot;Ratajczak-Enselme_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # amitriptyline
 
@@ -30,15 +30,15 @@ Off-label uses: irritable bowel syndrome, sleep disorders, diabetic neuropathy, 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-23 19:26 | 9:13 | 1/0/2 | 1/0/0 | 0/0/49 | 133,433/21,545 | ollama / qwen3.8:27b-mtp-q8_0 | 27 | 39/0 | 8/19 | 0 |
+| 2026-09-26 20:40 | 0:46 | 1/0/2 | 1/0/0 | 0/0/49 | 27,246/411 | ollama / qwen3.8:27b-mtp-q8_0 | 27 | 39/0 | 8/19 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Koh_2019_reference](drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md) | Koh A et al., Quantitative Modeling Analysis Demonstr…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1344](https://doi.org/10.1002/jcph.1344) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Ratajczak-Enselme_2015_reference](drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md) | Ratajczak-Enselme M et al., Population Pharmacokinetics of Amitript…, Regional anesthesia and pai… (2015) | [10.1097/AAP.0000000000000322](https://doi.org/10.1097/AAP.0000000000000322) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yukawa_2002_reference](drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md) | Yukawa E et al., Population pharmacokinetics of haloperi…, Clinical pharmacokinetics (2002) | [10.2165/00003088-200241020-00006](https://doi.org/10.2165/00003088-200241020-00006) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Koh_2019_reference](drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md) | Koh A et al., Quantitative Modeling Analysis Demonstr…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1344](https://doi.org/10.1002/jcph.1344) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q30 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Ratajczak-Enselme_2015_reference](drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md) | Ratajczak-Enselme M et al., Population Pharmacokinetics of Amitript…, Regional anesthesia and pai… (2015) | [10.1097/AAP.0000000000000322](https://doi.org/10.1097/AAP.0000000000000322) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yukawa_2002_reference](drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md) | Yukawa E et al., Population pharmacokinetics of haloperi…, Clinical pharmacokinetics (2002) | [10.2165/00003088-200241020-00006](https://doi.org/10.2165/00003088-200241020-00006) |
 
 ## Pharmacodynamics (PD)
 
@@ -139,7 +139,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 553 matched, 55 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
@@ -192,4 +192,4 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | PGx | Zobdeh_2022 | not_relevant | 2 | 1 | The paper is a systematic review that lists amitriptyline/CYP2D6 and CYP2C19 as relevant interactions but does not report specific quantitative PK/PD effect sizes or detailed genotype-phenotype data for amitriptyline. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-07-22 09:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-26 20:39 UTC</sub>

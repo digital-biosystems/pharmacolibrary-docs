@@ -1,12 +1,16 @@
 {
  "model_id": "Tolvaptan_Shoaf2017_reference",
+ "molar_masses": {
+  "central.C": 0.448941
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 5.611666666666667e-06,
   "F": 1.0,
+  "MM": 0.448941,
   "Tlag": 0.0,
   "VdPerKg": 0.0017903556918423859,
   "adminCount": 1.0,
@@ -15,8 +19,11 @@
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
+ "reference_peak_times": {
+  "central.C": 12425.44193915523
+ },
  "reference_peaks": {
-  "C_central": 0.00046560721925072206
+  "central.C": 0.0004656060864777519
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

@@ -18,27 +18,27 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 15:14 | 6:21 | 0/1/1 | 0/2/0 | 0/0/2 | 152,545/15,921 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 5/1 | 0 |
+| 2026-09-26 11:03 | 4:26 | 0/1/1 | 0/2/0 | 0/0/2 | 45,214/14,232 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 5/1 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Le_1995_reference](drugs/drug_dofetilide/Dofetilide_Le1995_reference.md) | Le Coz F et al., Pharmacokinetic and pharmacodynamic mod…, Clinical pharmacology and t… (1995) | [10.1016/0009-9236(95)90038-1](https://doi.org/10.1016/0009-9236(95)90038-1) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Gotta_2015_reference](drugs/drug_dofetilide/Dofetilide_Gotta2015_reference.md) | Gotta V et al., Inter-study variability of preclinical…, British journal of pharmaco… (2015) | [10.1111/bph.13218](https://doi.org/10.1111/bph.13218) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Le_1995_reference](drugs/drug_dofetilide/Dofetilide_Le1995_reference.md) | Le Coz F et al., Pharmacokinetic and pharmacodynamic mod…, Clinical pharmacology and t… (1995) | [10.1016/0009-9236(95)90038-1](https://doi.org/10.1016/0009-9236(95)90038-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Gotta_2015_reference](drugs/drug_dofetilide/Dofetilide_Gotta2015_reference.md) | Gotta V et al., Inter-study variability of preclinical…, British journal of pharmaco… (2015) | [10.1111/bph.13218](https://doi.org/10.1111/bph.13218) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Aguado-Sierra_2024](drugs/drug_dofetilide/pd_Aguado_Sierra_2024_QT.md) | Aguado-Sierra J et al., Virtual clinical QT exposure-response s…, Journal of pharmacological… (2024) | [10.1016/j.vascn.2024.107498](https://doi.org/10.1016/j.vascn.2024.107498) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Gotta_2015](drugs/drug_dofetilide/pd_Gotta_2015_QTc.md) | Gotta V et al., Inter-study variability of preclinical…, British journal of pharmaco… (2015) | [10.1111/bph.13218](https://doi.org/10.1111/bph.13218) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Aguado-Sierra_2024](drugs/drug_dofetilide/pd_Aguado_Sierra_2024_QT.md) | Aguado-Sierra J et al., Virtual clinical QT exposure-response s…, Journal of pharmacological… (2024) | [10.1016/j.vascn.2024.107498](https://doi.org/10.1016/j.vascn.2024.107498) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Gotta_2015](drugs/drug_dofetilide/pd_Gotta_2015_QTc.md) | Gotta V et al., Inter-study variability of preclinical…, British journal of pharmaco… (2015) | [10.1111/bph.13218](https://doi.org/10.1111/bph.13218) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **SLC47A1** | `Q22` · CL | transport | [Uddin_2022](drugs/drug_dofetilide/pgx_Uddin_2022_SLC47A1_Q22.md) | Uddin ME et al., MATE1 Deficiency Exacerbates Dofetilide…, International journal of mo… (2022) | [10.3390/ijms23158607](https://doi.org/10.3390/ijms23158607) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **SLC47A1** | `Q22` · CL | transport | [Uddin_2022](drugs/drug_dofetilide/pgx_Uddin_2022_SLC47A1_Q22.md) | Uddin ME et al., MATE1 Deficiency Exacerbates Dofetilide…, International journal of mo… (2022) | [10.3390/ijms23158607](https://doi.org/10.3390/ijms23158607) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>
@@ -87,7 +87,7 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Walker_1996.pdf` | Walker DK et al., Significance of metabolism in the dispo…, Drug metabolism and disposi… (1996) | pgx | 7 | not captured | [8801060](https://www.ncbi.nlm.nih.gov/pubmed/8801060) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Yamreudeewong_2003.pdf` | Yamreudeewong W et al., Potentially significant drug interactio…, Drug safety (2003) | pgx | 7 | [10.2165/00002018-200326060-00004](https://doi.org/10.2165/00002018-200326060-00004) | [12688833](https://www.ncbi.nlm.nih.gov/pubmed/12688833) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-09-19T15:08:54.862981+00:00</sub>
+<sub>queue written 2026-09-26T10:58:52.988069+00:00</sub>
 
 ## Screened and excluded
 

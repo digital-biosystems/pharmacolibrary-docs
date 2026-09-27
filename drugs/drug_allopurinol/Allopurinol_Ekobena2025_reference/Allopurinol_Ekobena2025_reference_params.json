@@ -1,12 +1,16 @@
 {
  "model_id": "Allopurinol_Ekobena2025_reference",
+ "molar_masses": {
+  "central.C": 0.1361115
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 1.4e-07,
   "F": 1.0,
+  "MM": 0.1361115,
   "Tlag": 846.0,
   "VdPerKg": 0.0001657142857142857,
   "adminCount": 1.0,
@@ -15,10 +19,13 @@
   "ka": 0.0007222222222222223,
   "weight": 70.0
  },
- "reference_peaks": {
-  "C_central": 0.008034353054331152
+ "reference_peak_times": {
+  "central.C": 6980.224966930247
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 0.008040534471315437
+ },
+ "stop_time": 345600.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

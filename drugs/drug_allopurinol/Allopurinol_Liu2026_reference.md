@@ -5,7 +5,7 @@
 
 # allopurinol — `Allopurinol_Liu2026_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -18,6 +18,7 @@
 ### Reviewer guidance
 
 **Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q31]` (not captured vs 30) and 3 more field(s) — not a structural parameter.
 **How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
 <sub>owner: **curator**</sub>
 
@@ -28,6 +29,9 @@ Liu Z; Liu X; Gong Q; Qin S; Zhu X; Kuan IH; Mak WY; Xiang X; Jia C; Wang Q; Che
 ## Model component
 <dbs-pgx drug="allopurinol" model-id="Allopurinol_Liu2026_reference" status="accepted_with_caveats" stale="false" population="" measured-compound="allopurinol" parameterization="apparent" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted, plus 1 covariate effect.
+
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
@@ -36,7 +40,7 @@ Liu Z; Liu X; Gong Q; Qin S; Zhu X; Kuan IH; Mak WY; Xiang X; Jia C; Wang Q; Che
 | CL/F (L/h) | `Q27` · CL/F | 7.33 | L/h | 2.0361111111111113e-06 | L/h | not captured | review (0.7) | Liu_2026:review | — | not captured |
 | Vd/F (L) | `Q76` · V/F | 181.0 | L | 0.181 | L | not captured | review (0.7) | Liu_2026:review | — | not captured |
 | Ka (/h) | `Q49` · kabs | 0.16 | /h | 4.4444444444444447e-05 | 1/h | not captured | review (0.7) | Liu_2026:review | — | not captured |
-| BCRP | `Q900` · BCRP | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| ABCB2 | `Q900` · ABCB2 | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,9 +64,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q312]` | 53 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q31]` | not captured | 30 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | not captured | 67 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q87]` | not captured | 2.99 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -93,7 +106,7 @@ _Every reader agrees on every compared field of this record._
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=allopurinol) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=allopurinol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
@@ -117,7 +130,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_allopurinol/Allopurinol_Liu2026_reference/Allopurinol_Liu2026_reference_modelica.zip" download>Allopurinol_Liu2026_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_allopurinol/Allopurinol_Liu2026_reference/Allopurinol_Liu2026_reference_modelica.zip" download>Allopurinol_Liu2026_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_allopurinol/Allopurinol_Liu2026_reference/Allopurinol_Liu2026_reference_fmi.zip" download>Allopurinol_Liu2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Liu2026_reference/Allopurinol_Liu2026_reference_matlab.zip" download>Allopurinol_Liu2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Liu2026_reference/Allopurinol_Liu2026_reference_matlab_simbio.zip" download>Allopurinol_Liu2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -130,6 +143,8 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.16 /h, F 1).
+
 <dbs-fmusim paramsurl="drugs/drug_allopurinol/Allopurinol_Liu2026_reference/Allopurinol_Liu2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_allopurinol/Allopurinol_Liu2026_reference/Allopurinol_Liu2026_reference_sim_controls.json"></dbs-fmusim>
 
 <sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Allopurinol_Liu2026_reference_params.json` · controls `Allopurinol_Liu2026_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
@@ -137,4 +152,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 00:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 08:00 UTC</sub>

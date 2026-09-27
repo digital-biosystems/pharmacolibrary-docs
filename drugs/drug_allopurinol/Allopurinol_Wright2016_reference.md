@@ -5,7 +5,7 @@
 
 # allopurinol — `Allopurinol_Wright2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,8 +15,8 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimension mismatch on a structural parameter.
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
+**Why:** C5 dimension mismatch on a structural parameter; C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
+**Second reading:** `gpt-oss:120b` read this paper differently on `screen.dose_compound` (allopurinol vs unknown) and 3 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
 <sub>owner: **scholar**</sub>
 
@@ -27,7 +27,10 @@ Wright DF; Duffull SB; Merriman TR; Dalbeth N; Barclay ML; Stamp LK et al. (2016
   ·  DOI: [10.1111/bcp.12799](https://doi.org/10.1111/bcp.12799)
 
 ## Model component
-<dbs-pgx drug="allopurinol" model-id="Allopurinol_Wright2016_reference" status="rejected" stale="false" population="adults with gout" measured-compound="oxypurinol" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="allopurinol" model-id="Allopurinol_Wright2016_reference" status="rejected" stale="false" population="gout patients" measured-compound="oxypurinol" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 5 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
@@ -36,11 +39,13 @@ Wright DF; Duffull SB; Merriman TR; Dalbeth N; Barclay ML; Stamp LK et al. (2016
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| θ CL (l h | `Q22` · CL | 0.848 | l h | not captured | [h] · [l] | 4.5 | llm_confirmed (0.6) | tab_0:row1:col4 | — | not captured |
-| θ V (l) | `Q61` · V | 41.6 | l | 0.041600000000000005 | [l] | not captured | llm (0.6) | tab_0:row2:col5, tab_0:row2:col6 | — | not captured |
-| K α (h | `Q47` · kel | 1.09 | h | not captured | [h] | not captured | llm (0.6) | tab_0:row3:col4, tab_0:row3:col5, tab_0:row3:col6 | — | not captured |
+| θ CL (l h | `Q22` · CL | 0.848 | L/h | 2.3555555555555556e-07 | L/h | 4.5 | exact (1.0) | tab_0:row1:col4 | — | not captured |
+| θ V (l) | `Q63` · V1 | 41.6 | l | 0.041600000000000005 | [l] | not captured | exact (1.0) | tab_0:row2:col5, tab_0:row2:col6 | — | not captured |
+| K α (h | `Q47` · kel | 1.09 | h | not captured | [h] | not captured | exact (1.0) | tab_0:row3:col4, tab_0:row3:col5, tab_0:row3:col6 | — | not captured |
+| λ (Hill coefficient) | `Q47` · kel | 1.30 | 1/h | 0.00036111111111111115 | 1/h | 11 | exact (1.0) | tab_0:row9:col2, tab_0:row9:col3 | — | not captured |
+| F_ ω Voxy | `Q61` · V | 0.0355 | L | 3.5499999999999996e-05 | L | not captured | llm (0.6) | tab_0:row14:col3, tab_0:row14:col4 | — | not captured |
 | θ diuretic | `Q900` · θ diuretic | 0.74 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
-| BCRP | `Q900` · BCRP | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| ABCB2 | `Q900` · ABCB2 | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -55,21 +60,24 @@ Wright DF; Duffull SB; Merriman TR; Dalbeth N; Barclay ML; Stamp LK et al. (2016
 - kept covariate coefficient θ diuretic=0.740 (covariate diuretic) — not an ontology parameter
 - dropped value-less row: 'θ RFexp'
 - dropped PD-category row 'E max' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_0:row6:col5', 'tab_0:row6:col6'])
-- dropped unlinked row (NIL): 'U o (Baseline urate (mmol l' — extend the ontology if this is a real PK parameter (source ['tab_0:row7:col2', 'tab_0:row7:col3'])
+- dropped PD-category row 'U o (Baseline urate (mmol l' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_0:row7:col2', 'tab_0:row7:col3'])
 - dropped PD-category row 'C 50 (μmol l' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_0:row8:col3', 'tab_0:row8:col4'])
 - unit_dimension_unknown: 'Hill coefficient' (kel)
-- dropped duplicate Q47 ('λ (Hill coefficient)', value '1.30') — already have one for this compound
 - dropped unlinked row (NIL): 'θE 0 diuretic' — extend the ontology if this is a real PK parameter (source ['tab_0:row11:col4'])
-- dropped duplicate Q61 ('F_ ω Voxy', value '0.0355') — already have one for this compound
 - routed 'Covar η Emax , η C50' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - routed 'Covar η Emax , η E0' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - routed 'Covar η C50 , η E0' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - dropped unlinked row (NIL): 'Oxypurinol σ prop (CV%)' — extend the ontology if this is a real PK parameter (source ['tab_0:row23:col1', 'tab_0:row23:col2'])
 - routed 'Urate σ add (mmol l' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
+- implicit units: 'θ CL (l h' → L/h (from the paper text: "The paper text states: 'Renal function (RF) was then normalized to a standard creatinine clearance (CL cr STD ) of 6 l h")
+- implicit units: 'λ (Hill coefficient)' → 1/h (from the popPK convention: "The parameter is identified as 'Elimination rate constant (terminal/beta phase)' or 'K α , elimination rate constant' in")
+- implicit units: 'F_ ω Voxy' → L (from the paper text: "The table footnote states 'volume expressed per 70 kg body weight'. The parameter is defined as 'oxypurinol volume'. Vol")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=oxypurinol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: PK_Parent_Metabolite — one metabolite formed from central, both 1-compartment
 - status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 21/21 row label(s) assigned, 6 linked by role; re-tagged parent→oxypurinol ×16, parent→urate ×26
 - review gap-fill skipped: this record measures 'oxypurinol', not allopurinol — the review values are the parent's
 
 **Extraction notes:**
@@ -108,14 +116,23 @@ Wright DF; Duffull SB; Merriman TR; Dalbeth N; Barclay ML; Stamp LK et al. (2016
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (9/9 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.692 (9/13 fields) | 4 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>4 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[θ diuretic]` | 0.74 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[θ diuretic]` | not captured | 0.74 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | allopurinol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | oxypurinol | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -127,16 +144,20 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row1:col4'] |
 | C5_dimension_Q47 | fail | [time] | h | not captured | not captured | ['tab_0:row3:col4', 'tab_0:row3:col5', 'tab_0:row3:col6'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row2:col5', 'tab_0:row2:col6'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | l h | not captured | not captured | ['tab_0:row1:col4'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_0:row9:col2', 'tab_0:row9:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row14:col3', 'tab_0:row14:col4'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row2:col5', 'tab_0:row2:col6'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.848 | not captured | not captured | ['tab_0:row1:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 41.6 L | not captured | not captured | ['tab_0:row2:col5', 'tab_0:row2:col6'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.848 L/h | not captured | not captured | ['tab_0:row1:col4'] |
+| C9_phys_window_Q61 | fail | volume within physiological range | 0.0355 L | not captured | not captured | ['tab_0:row14:col3', 'tab_0:row14:col4'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 41.6 L | not captured | not captured | ['tab_0:row2:col5', 'tab_0:row2:col6'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -161,4 +182,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 00:33 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 08:04 UTC</sub>

@@ -18,13 +18,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-16 13:42 | 0:43 | 1/6/0 | 0/0/0 | 0/0/0 | 12,474/980 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 14/2 | 4/0 | 0 |
+| 2026-09-26 20:47 | 2:09 | 0/6/1 | 0/0/0 | 0/0/0 | 24,046/6,654 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 14/2 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.882). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Tanaka_2013_reference](drugs/drug_fosphenytoin/Fosphenytoin_Tanaka2013_reference.md) | Tanaka J et al., Population pharmacokinetics of phenytoi…, European journal of clinica… (2013) | [10.1007/s00228-012-1373-8](https://doi.org/10.1007/s00228-012-1373-8) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.882). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Tanaka_2013_reference](drugs/drug_fosphenytoin/Fosphenytoin_Tanaka2013_reference.md) | Tanaka J et al., Population pharmacokinetics of phenytoi…, European journal of clinica… (2013) | [10.1007/s00228-012-1373-8](https://doi.org/10.1007/s00228-012-1373-8) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Coles_2015_reference](drugs/drug_fosphenytoin/Fosphenytoin_Coles2015_reference.md) | Coles LD et al., Use of IV fosphenytoin pharmacokinetics…, Epilepsia (2015) | [10.1111/epi.12961](https://doi.org/10.1111/epi.12961) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Empey_2013_reference](drugs/drug_fosphenytoin/Fosphenytoin_Empey2013_reference.md) | Empey PE et al., Therapeutic hypothermia decreases pheny…, Critical care medicine (2013) | [10.1097/CCM.0b013e318292316c](https://doi.org/10.1097/CCM.0b013e318292316c) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Higuchi_2019_reference](drugs/drug_fosphenytoin/Fosphenytoin_Higuchi2019_reference.md) | Higuchi K et al., Population Pharmacokinetic Analysis of…, Therapeutic drug monitoring (2019) | [10.1097/FTD.0000000000000651](https://doi.org/10.1097/FTD.0000000000000651) |
@@ -59,20 +59,6 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 - **records:** 7  ·  extracted 0  ·  needs_review 1  ·  rejected 6  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full text wanted
-
-_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Moffett_2018.pdf` | Moffett BS et al., Fosphenytoin Population Pharmacokinetic…, Pediatric critical care med… (2018) | popPK | 10 | [10.1097/PCC.0000000000001627](https://doi.org/10.1097/PCC.0000000000001627) | [29927880](https://pubmed.ncbi.nlm.nih.gov/29927880) | The study is a population PK analysis of fosphenytoin, and all key model parameters (CL, Vc, Q, Vp) with their numeric estimates are directly provided in the main text and Table 2 rather than hidden in supplementary files. |
-| `Coles_2015.pdf` | Coles LD et al., Use of IV fosphenytoin pharmacokinetics…, Epilepsia (2015) | popPK | 9 | [10.1111/epi.12961](https://doi.org/10.1111/epi.12961) | [25952988](https://pubmed.ncbi.nlm.nih.gov/25952988) | The study is a dedicated pharmacokinetic investigation of fosphenytoin in dogs, and all quantitative population and noncompartmental parameter values are explicitly provided in the included tables rather than hidden in supplementary material. |
-| `Higuchi_2019.pdf` | Higuchi K et al., Population Pharmacokinetic Analysis of…, Therapeutic drug monitoring (2019) | popPK | 9 | [10.1097/FTD.0000000000000651](https://doi.org/10.1097/FTD.0000000000000651) | [31095070](https://pubmed.ncbi.nlm.nih.gov/31095070) | All quantitative population pharmacokinetic parameters for fosphenytoin are explicitly reported in the main text and Table 2. |
-| `Empey_2013.pdf` | Empey PE et al., Therapeutic hypothermia decreases pheny…, Critical care medicine (2013) | popPK | 8 | [10.1097/CCM.0b013e318292316c](https://doi.org/10.1097/CCM.0b013e318292316c) | [23896831](https://pubmed.ncbi.nlm.nih.gov/23896831) | The population pharmacokinetic parameters are fully reported with numeric estimates in Table 2 of the main text. |
-| `Ohno_2018.pdf` | Ohno Y et al., Time-Dependent Decline in Serum Phenyto…, Therapeutic drug monitoring (2018) | popPK | 8 | [10.1097/FTD.0000000000000521](https://doi.org/10.1097/FTD.0000000000000521) | [29683874](https://pubmed.ncbi.nlm.nih.gov/29683874) | Quantitative clearance averages and simulated doses are explicitly stated in the main text, though full compartmental population-PK parameters are not tabulated. |
-
-<sub>queue written 2026-09-16T13:42:05.347086+00:00</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
@@ -83,4 +69,4 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Noro_2026 | irrelevant | 1 | 0 | The study is a clinical efficacy trial that measures drug concentrations for PK-PD correlation but does not report any population pharmacokinetic parameters or numeric values in the provided text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-16 13:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-26 20:45 UTC</sub>

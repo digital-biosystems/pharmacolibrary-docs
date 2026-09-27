@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;amitriptyline&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/&quot;},{&quot;label&quot;:&quot;Koh_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Koh2019_reference&quot;,&quot;label&quot;:&quot;Koh_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amitriptyline_RatajczakEnselme2015_reference&quot;,&quot;label&quot;:&quot;Ratajczak-Enselme_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Koh2019_reference&quot;,&quot;label&quot;:&quot;Koh_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amitriptyline_RatajczakEnselme2015_reference&quot;,&quot;label&quot;:&quot;Ratajczak-Enselme_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amitriptyline — `Amitriptyline_Koh2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,33 +15,37 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the model was built differently from what the record describes. Evidence: T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 3 covered; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C
+**Why:** C6_cl_magnitude failed (ratio None).
 **Second reading:** `gpt-oss:120b` read this paper differently on `parameters[d1].value` (0.95 vs 1.13) and 13 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**How to address:** not a curation fix — the pipeline is the limit here (reviewer_tooling: the check reported a failure without computing a comparison, so this is an inconclusive check rather than a demonstrated fault).
+<sub>owner: **curator**</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-26 12:19:05.296937+00:00) predates the upstream re-run (2026-09-26 20:39:54.417007+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Koh A; Pak KC; Choi HY; Ryu S; Choi SE; Kim KS; et al. et al. (2019). Journal of clinical pharmacology 59
   ·  DOI: [10.1002/jcph.1344](https://doi.org/10.1002/jcph.1344)
 
 ## Model component
-<dbs-pgx drug="amitriptyline" model-id="Amitriptyline_Koh2019_reference" status="model_quarantined" stale="false" population="healthy adults" measured-compound="amitriptyline" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="amitriptyline" model-id="Amitriptyline_Koh2019_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="amitriptyline" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| TVCL TRM, AMIT , L/h | `Q22` · CL | 76.23 | not captured | not captured | not captured | not captured | llm (0.5) | tab_1:row3:col1, tab_1:row3:col2, tab_1:row3:col3 | — | 0.05 (None% RSE) |
-| TVV c, AMIT , L | `Q61` · V | 117.91 | not captured | not captured | not captured | not captured | llm (0.5) | tab_1:row11:col1, tab_1:row11:col2, tab_1:row11:col3 | — | not captured |
-| TVKa, 1/h | `Q95` · t1/2ka | 0.09 | not captured | not captured | not captured | not captured | llm (0.5) | tab_1:row16:col1, tab_1:row16:col2, tab_1:row16:col3 | — | not captured |
-| TVALAG, h | `Q83` · tlag | 0.31 | not captured | not captured | not captured | not captured | llm (0.5) | tab_1:row18:col1, tab_1:row18:col2, tab_1:row18:col3 | — | not captured |
-| D1, h | `Q310` · D1 | 0.95 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_1:row20:col1, tab_1:row20:col2, tab_1:row20:col3 | — | not captured |
-| K24, 1/h | `Q48` · kcomp | 0.00 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_1:row21:col1, tab_1:row21:col2, tab_1:row21:col3 | — | not captured |
-| K56, 1/h | `Q47` · kel | 0.77 | not captured | not captured | not captured | not captured | llm (0.5) | tab_1:row29:col1, tab_1:row29:col2, tab_1:row29:col3 | — | not captured |
-| K65, 1/h | `Q65` · Vss | 0.13 | not captured | not captured | not captured | not captured | llm (0.5) | tab_1:row30:col1, tab_1:row30:col2, tab_1:row30:col3 | — | not captured |
+| TVCL TRM, AMIT , L/h | `Q22` · CL | 92.1 | L/h | 2.5583333333333333e-05 | [l] / [h] | not captured | llm (0.6) | tab_1:row3:col1, tab_1:row3:col2, tab_1:row3:col3 | — | 0.203 (None% RSE) |
+| TVV c, AMIT , L | `Q61` · V | 155 | L | 0.155 | [l] | not captured | llm (0.6) | tab_1:row11:col1, tab_1:row11:col2, tab_1:row11:col3 | — | not captured |
+| TVQ, L/h | `Q30` · Q | 109 | L/h | 3.027777777777778e-05 | [l] / [h] | not captured | tv_prefix (0.95) | tab_1:row13:col1, tab_1:row13:col2, tab_1:row13:col3 | — | not captured |
+| TVKa, 1/h | `Q49` · kabs | 0.125 | 1/h | 3.472222222222222e-05 | [1] / [h] | not captured | tv_prefix (0.95) | tab_1:row16:col1, tab_1:row16:col2, tab_1:row16:col3 | — | 0.137 (None% RSE) |
+| TVALAG, h | `Q83` · tlag | 0.414 | h | 1490.3999999999999 | [h] | not captured | tv_prefix (0.95) | tab_1:row18:col1, tab_1:row18:col2, tab_1:row18:col3 | — | 0.339 (None% RSE) |
+| D1, h | `Q310` · D1 | 1.13 | h | 4067.9999999999995 | [h] | not captured | exact (1.0) | tab_1:row20:col1, tab_1:row20:col2, tab_1:row20:col3 | — | not captured |
+| K24, 1/h | `Q48` · kcomp | 0.00581 | 1/h | 1.613888888888889e-06 | [1] / [h] | not captured | exact (1.0) | tab_1:row21:col1, tab_1:row21:col2, tab_1:row21:col3 | — | 0.123 (None% RSE) |
+| K41, 1/h | `Q348` · k41 | 80.4 | 1/h | 0.022333333333333334 | [1] / [h] | not captured | exact (1.0) | tab_1:row22:col1, tab_1:row22:col2, tab_1:row22:col3 | — | 0.174 (None% RSE) |
+| MTIME1 a , h | `Q81` · MTT | 4 | h | not captured | [h] | not captured | llm (0.6) | tab_1:row24:col1, tab_1:row24:col2, tab_1:row24:col3 | — | not captured |
+| CL T, NOR , L/h | `Q22` · CL | 58.2 | L/h | 1.6166666666666665e-05 | [l] / [h] | not captured | llm_confirmed (0.6) | tab_1:row27:col1, tab_1:row27:col2, tab_1:row27:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -51,24 +55,19 @@ Koh A; Pak KC; Choi HY; Ryu S; Choi SE; Kim KS; et al. et al. (2019). Journal of
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q22 ('TVCL TPM, AMIT , L/h', value '17.77') — already have one for this compound
-- dropped duplicate Q22 ('TVCL MRM, AMIT , L/h', value '45.89') — already have one for this compound
-- dropped duplicate Q22 ('TVCL MPM, AMIT , L/h', value '11.57') — already have one for this compound
-- dropped duplicate Q22 ('TVCL ORM, AMIT , L/h', value '15.06') — already have one for this compound
-- dropped duplicate Q22 ('TVCL OPM, AMIT , L/h', value '0.72') — already have one for this compound
-- dropped duplicate Q22 ('TVQ, L/h', value '68.59') — already have one for this compound
-- dropped duplicate Q61 ('TVV p, AMIT , L', value '1475.45') — already have one for this compound
-- dropped unlinked row (NIL): 'K41, 1/h' — extend the ontology if this is a real PK parameter (source ['tab_1:row22:col1', 'tab_1:row22:col2', 'tab_1:row22:col3'])
-- dropped unlinked row (NIL): 'MTIME1 a , h' — extend the ontology if this is a real PK parameter (source ['tab_1:row24:col1', 'tab_1:row24:col2', 'tab_1:row24:col3'])
-- dropped unlinked row (NIL): 'MTIME2, h' — extend the ontology if this is a real PK parameter (source ['tab_1:row25:col1', 'tab_1:row25:col2', 'tab_1:row25:col3'])
-- dropped duplicate Q22 ('CL T, NOR , L/h', value '42.08') — already have one for this compound
+- compound tags: 6 row(s) → nortriptyline (abbreviation 6)
+- dropped duplicate Q22 ('TVCL TPM, AMIT , L/h', value '35.8') — already have one for this compound
+- dropped duplicate Q22 ('TVCL MRM, AMIT , L/h', value '61.5') — already have one for this compound
+- dropped duplicate Q22 ('TVCL MPM, AMIT , L/h', value '17') — already have one for this compound
+- dropped duplicate Q22 ('TVCL ORM, AMIT , L/h', value '30.6') — already have one for this compound
+- dropped duplicate Q22 ('TVCL OPM, AMIT , L/h', value '18.8') — already have one for this compound
+- dropped duplicate Q61 ('TVV p, AMIT , L', value '1670') — already have one for this compound
+- dropped duplicate Q81 ('MTIME2, h', value '2.65') — already have one for this compound
+- dropped duplicate Q48 ('K56, 1/h', value '1.09') — already have one for this compound
+- dropped duplicate Q48 ('K65, 1/h', value '0.168') — already have one for this compound
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (TVCL TRM, AMIT , L/h); Q61 (TVV c, AMIT , L); Q30 (TVQ, L/h); Q22 (CL T, NOR , L/h)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amitriptyline
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-
-**Extraction notes:**
-- unparsed cell tab_1:row2:col3 = '95%CI'
-- unparsed cell tab_1:row53:col1 = '1 and 2 are represented as coefficients of variation.'
+- template fit: PK_Parent_Metabolite — one metabolite formed from central, both 1-compartment
 
 ## Validation
 
@@ -110,28 +109,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3'] |
-| C5_unit_missing_Q310 | fail | [time] | not captured | not captured | not captured | ['tab_1:row20:col1', 'tab_1:row20:col2', 'tab_1:row20:col3'] |
-| C5_unit_missing_Q47 | fail | 1 / [time] | not captured | not captured | not captured | ['tab_1:row29:col1', 'tab_1:row29:col2', 'tab_1:row29:col3'] |
-| C5_unit_missing_Q48 | fail | 1 / [time] | not captured | not captured | not captured | ['tab_1:row21:col1', 'tab_1:row21:col2', 'tab_1:row21:col3'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col3'] |
-| C5_unit_missing_Q65 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row30:col1', 'tab_1:row30:col2', 'tab_1:row30:col3'] |
-| C5_unit_missing_Q83 | fail | [time] | not captured | not captured | not captured | ['tab_1:row18:col1', 'tab_1:row18:col2', 'tab_1:row18:col3'] |
-| C5_unit_missing_Q95 | fail | [time] | not captured | not captured | not captured | ['tab_1:row16:col1', 'tab_1:row16:col2', 'tab_1:row16:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 76.23 | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row27:col1', 'tab_1:row27:col2', 'tab_1:row27:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row13:col1', 'tab_1:row13:col2', 'tab_1:row13:col3'] |
+| C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['tab_1:row20:col1', 'tab_1:row20:col2', 'tab_1:row20:col3'] |
+| C5_dimension_Q348 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row22:col1', 'tab_1:row22:col2', 'tab_1:row22:col3'] |
+| C5_dimension_Q48 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row21:col1', 'tab_1:row21:col2', 'tab_1:row21:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row16:col1', 'tab_1:row16:col2', 'tab_1:row16:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col3'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['tab_1:row18:col1', 'tab_1:row18:col2', 'tab_1:row18:col3'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 92.1 | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['tlag', 'kcomp'] |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 92.1 L/h | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 58.2 L/h | not captured | not captured | ['tab_1:row27:col1', 'tab_1:row27:col2', 'tab_1:row27:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 155 L | not captured | not captured | ['tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col3'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -141,8 +135,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_amitriptyline/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Koh_2019` / `Koh_2019::reference`)
-- model: `../../../knowledgebase/drugs/drug_amitriptyline/models/modelica/_needs_review/Amitriptyline_Koh2019_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_amitriptyline/models/modelica/_needs_review/Amitriptyline_Koh2019_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -168,4 +160,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-22 09:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:39 UTC</sub>

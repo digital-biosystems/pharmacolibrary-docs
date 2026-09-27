@@ -1,12 +1,16 @@
 {
  "model_id": "Metformin_Nikolaidis2026_final",
+ "molar_masses": {
+  "central.C": 0.1291636
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 2.322222222222222e-05,
   "F": 1.0,
+  "MM": 0.1291636,
   "Tlag": 0.0,
   "VdPerKg": 0.0024114285714285713,
   "adminCount": 1.0,
@@ -15,8 +19,11 @@
   "ka": 9.722222222222222e-05,
   "weight": 70.0
  },
+ "reference_peak_times": {
+  "central.C": 9003.607214428857
+ },
  "reference_peaks": {
-  "C_central": 0.00018134544861998287
+  "central.C": 0.0001813454414262626
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

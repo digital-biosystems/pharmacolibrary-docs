@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 10:17 | 18:37 | 0/0/0 | 1/0/0 | 0/0/0 | 93,622/3,993 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 5/5 | 8/2 | 0 |
+| 2026-09-26 11:38 | 2:36 | 0/0/0 | 1/0/0 | 0/0/0 | 12,964/1,479 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 5/5 | 8/2 | 0 |
 
 ## popPK records
 
@@ -25,7 +25,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Griffin_2012](drugs/drug_hydroquinidine/pd_Griffin_2012_P_falciparum_growth_inhibition.md) | Griffin CE et al., Mutation in the Plasmodium falciparum C…, Antimicrobial agents and ch… (2012) | [10.1128/AAC.05667-11](https://doi.org/10.1128/AAC.05667-11) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Griffin_2012](drugs/drug_hydroquinidine/pd_Griffin_2012_P_falciparum_growth_inhibition.md) | Griffin CE et al., Mutation in the Plasmodium falciparum C…, Antimicrobial agents and ch… (2012) | [10.1128/AAC.05667-11](https://doi.org/10.1128/AAC.05667-11) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -35,7 +35,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 12 matched, 55 returned
+- **PubMed hits:** 13 matched, 56 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -56,10 +56,12 @@ _not available_
 | popPK | Edwards_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of quinidine, not hydroquinidine, which is the required subject drug. |
 | popPK | Eisner_1977 | irrelevant | 0 | 0 | The paper is a case report on quinidine-induced agranulocytosis and does not report any pharmacokinetic parameters for hydroquinidine. |
 | popPK | Fenster_1984 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of digoxin, with quinidine acting only as a co-administered interacting agent rather than the subject drug. |
+| popPK | French_1965 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
 | PD | French_1965 | not_relevant | 0 | 0 | The paper focuses on the analytical identification of chemical complexes in pharmaceutical dosage forms, not on pharmacodynamic or exposure-response relationships. |
 | popPK | Fu_1979 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for cefotaxime, not hydroquinidine. |
 | popPK | Fukao_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of quinidine transport in canine kidney cells, not a pharmacokinetic study of hydroquinidine. |
 | popPK | Gaita_2004 | irrelevant | 0 | 0 | The study reports electrophysiological effects (QT interval prolongation) rather than pharmacokinetic parameters (CL, V, ka) for hydroquinidine. |
+| popPK | Griffin_2012 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of antimalarial drug susceptibility (IC50) in Plasmodium falciparum, not a pharmacokinetic study reporting disposition parameters for hydroquinidine. |
 | popPK | Guharoy_1991 | irrelevant | 0 | 0 | The paper is a case report on quinidine-induced hepatotoxicity and does not report pharmacokinetic parameters for hydroquinidine. |
 | popPK | HAYWARD_1961 | irrelevant | 0 | 0 | The evidence only lists "Quinidine" and contains no pharmacokinetic data, parameters, or mention of hydroquinidine. |
 | popPK | Ha_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of quinidine-N-oxide, not hydroquinidine. |
@@ -91,12 +93,14 @@ _not available_
 | popPK | Tzivoni_1984 | irrelevant | 0 | 0 | The paper reports on the use of magnesium sulfate for torsades de pointes and does not contain any pharmacokinetic parameters for hydroquinidine. |
 | popPK | Ueda_1976 | irrelevant | 0 | 0 | The study focuses on quinidine, not hydroquinidine, and does not report PK parameters for the target drug. |
 | popPK | Van_1985 | irrelevant | 0 | 0 | The study focuses on quinidine (not hydroquinidine) and provides no quantitative PK parameters for the subject drug. |
+| popPK | Victor_1987 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
 | popPK | Viskin_2013 | irrelevant | 0 | 0 | The paper is a survey on the global availability of quinidine and does not report any pharmacokinetic parameters for hydroquinidine. |
 | popPK | Weiss_2024 | irrelevant | 0 | 0 | The paper is a review of distribution clearance for 15 other drugs (e.g., rocuronium, propranolol) and does not mention or report parameters for hydroquinidine. |
 | popPK | Wertz_1990 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for etomidate in cats, not hydroquinidine. |
 | popPK | White_1981 | irrelevant | 0 | 0 | The study focuses on quinidine (not hydroquinidine) and reports clinical efficacy and in-vitro MICs, not quantitative pharmacokinetic parameters. |
 | popPK | Wilson_1988 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for doxycycline in dogs, not hydroquinidine. |
 | popPK | Yang_2009 | irrelevant | 0 | 0 | The paper is a review of quinidine (not hydroquinidine) and contains no quantitative pharmacokinetic parameters. |
+| popPK | Yavuz_2023 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of hydroquinidine's anti-carcinogenic effects on GBM cells and does not report any pharmacokinetic parameters. |
 | popPK | Yoshitomi_2019 | irrelevant | 0 | 0 | The paper is a case report on quinidine (not hydroquinidine) and does not report pharmacokinetic parameters such as clearance or volume. |
 
 ---

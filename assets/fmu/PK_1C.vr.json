@@ -1,5 +1,5 @@
 {
- "guid": "{6fee5e78-26a1-452b-a152-54e489efafe3}",
+ "guid": "{19eaf442-b743-4f3c-b07d-e5b76045e977}",
  "model": "Pharmacolibrary.Pharmacokinetic.Models.PK_1C",
  "model_identifier": "Pharmacolibrary_Pharmacokinetic_Models_PK_1C",
  "generation_tool": "OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc",
@@ -51,7 +51,8 @@
   "periodicDose.adminPeriod": 46,
   "periodicDose.firstAdminTime": 47,
   "periodicDose.route.F": 54,
-  "weight": 55,
+  "periodicDose.route.Tlag": 55,
+  "weight": 56,
   "central.C": 0,
   "central.cport.c": 0,
   "centralCPort.c": 0,
@@ -72,14 +73,14 @@
   "Ctox_trough": 0.006,
   "F": 1.0,
   "LD50": 0.0,
-  "MM": 1.0,
-  "VdPerKg": 0.9,
+  "MM": 0.0,
+  "VdPerKg": 0.0009,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
   "adminPeriod": 28800.0,
   "adminTime": 60.0,
   "central.C0": 0.0,
-  "central.molarWeight": 1.0,
+  "periodicDose.route.Tlag": 0.0,
   "weight": 75.0
  },
  "outputs": [
@@ -87,6 +88,6 @@
   "central.C",
   "elim.C"
  ],
- "fmu_sha256": "99d608c0b557d9020ca802a9ce41b2eb7f8e1f3eadef2bf844206d821b04f072",
- "js_bytes": 1794462
+ "fmu_sha256": "6331f0ed5ad09466607b35e80f19612b69549fd6c30499fb3de3afb00f4cc99c",
+ "js_bytes": 1795186
 }

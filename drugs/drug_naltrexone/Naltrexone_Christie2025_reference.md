@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;naltrexone&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/&quot;},{&quot;label&quot;:&quot;Christie_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naltrexone_Christie2025_reference&quot;,&quot;label&quot;:&quot;Christie_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Christie2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naltrexone_Li1996_reference&quot;,&quot;label&quot;:&quot;Li_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Li1996_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Reuning1979_reference&quot;,&quot;label&quot;:&quot;Reuning_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Reuning1979_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Dunbar2007_reference&quot;,&quot;label&quot;:&quot;Dunbar_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Dunbar2007_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Christie2025_reference&quot;,&quot;label&quot;:&quot;Christie_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Christie2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # naltrexone — `Naltrexone_Christie2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong)
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q17]` (1896 vs not captured) and 11 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
 <sub>owner: **curator**</sub>
 
@@ -52,14 +53,31 @@ Christie JT; Bruce M; Pfitzer S; Laubscher L; Raath JP; Laurence M; et al. et al
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.333 (6/18 fields) | 12 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `values[Q17]` | 1896 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q27]` | -1618 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q316]` | 0.284 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 0.936 | 0.936 | mismatch |
+| `gpt-oss:120b` | `values[Q47]` | 0.0361 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q53]` | 39.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 19.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | 588 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q74]` | 1452.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q84]` | 14.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q95]` | not captured | 1.45 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -73,6 +91,7 @@ _Every reader agrees on every compared field of this record._
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_base_sign_Q27 | fail | not captured | -1618.0 | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Christie_2025:review'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Christie_2025:review'] |

@@ -5,7 +5,7 @@
 
 # allopurinol — `Allopurinol_Ekobena2025_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -18,6 +18,7 @@
 ### Reviewer guidance
 
 **Why:** the engineer did not exercise the covariate scenarios this record defines. Evidence: T2_covariates_not_exercised
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q27]` (0.504 vs not captured) and 10 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Check the record's covariate_definitions in _interpretv2.yaml.
 <sub>owner: **curator**</sub>
 
@@ -29,6 +30,9 @@ Ekobena P; Briki M; Dao K; Marzolini C; Andre P; Buclin T; Cavassini M; Guidi M;
 ## Model component
 <dbs-pgx drug="allopurinol" model-id="Allopurinol_Ekobena2025_reference" status="accepted_with_caveats" stale="false" population="" measured-compound="allopurinol" parameterization="apparent" topology="1C"></dbs-pgx>
 
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted, plus 1 covariate effect.
+
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
@@ -36,9 +40,9 @@ Ekobena P; Briki M; Dao K; Marzolini C; Andre P; Buclin T; Cavassini M; Guidi M;
 |---|---|---|---|---|---|---|---|---|---|---|
 | apparent clearance | `Q27` · CL/F | 0.504 | L/h | 1.4e-07 | L/h | not captured | review (0.7) | Ekobena_2025:review | — | not captured |
 | apparent distribution volume | `Q61` · V | 11.6 | L | 0.0116 | L | not captured | review (0.7) | Ekobena_2025:review | — | not captured |
-| absorption rate | `Q49` · kabs | 2.6 | h−1 | 0.0007222222222222223 | 1/h | not captured | review (0.7) | Ekobena_2025:review | — | not captured |
 | lag time | `Q83` · tlag | 0.235 | h | 846.0 | h | not captured | review (0.7) | Ekobena_2025:review | — | not captured |
-| BCRP | `Q900` · BCRP | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| absorption rate | `Q49` · kabs | 2.6 | h−1 | 0.0007222222222222223 | 1/h | not captured | review (0.7) | Ekobena_2025:review | — | not captured |
+| ABCB2 | `Q900` · ABCB2 | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,14 +60,30 @@ Ekobena P; Briki M; Dao K; Marzolini C; Andre P; Buclin T; Cavassini M; Guidi M;
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.154 (2/13 fields) | 11 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>11 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `values[Q27]` | 0.504 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | 124 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q37]` | 2781 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 61 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q44]` | 1.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q49]` | 2.6 | 0.64 | mismatch |
+| `gpt-oss:120b` | `values[Q56]` | 4.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 17.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q61]` | 11.6 | 10.9 | mismatch |
+| `gpt-oss:120b` | `values[Q83]` | 0.235 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -95,7 +115,7 @@ _Every reader agrees on every compared field of this record._
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=allopurinol) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=allopurinol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
@@ -119,7 +139,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_allopurinol/Allopurinol_Ekobena2025_reference/Allopurinol_Ekobena2025_reference_modelica.zip" download>Allopurinol_Ekobena2025_reference_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_allopurinol/Allopurinol_Ekobena2025_reference/Allopurinol_Ekobena2025_reference_modelica.zip" download>Allopurinol_Ekobena2025_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_allopurinol/Allopurinol_Ekobena2025_reference/Allopurinol_Ekobena2025_reference_fmi.zip" download>Allopurinol_Ekobena2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Ekobena2025_reference/Allopurinol_Ekobena2025_reference_matlab.zip" download>Allopurinol_Ekobena2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Ekobena2025_reference/Allopurinol_Ekobena2025_reference_matlab_simbio.zip" download>Allopurinol_Ekobena2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -132,6 +152,8 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 2.6 /h, lag 14.1 min, F 1).
+
 <dbs-fmusim paramsurl="drugs/drug_allopurinol/Allopurinol_Ekobena2025_reference/Allopurinol_Ekobena2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_allopurinol/Allopurinol_Ekobena2025_reference/Allopurinol_Ekobena2025_reference_sim_controls.json"></dbs-fmusim>
 
 <sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Allopurinol_Ekobena2025_reference_params.json` · controls `Allopurinol_Ekobena2025_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
@@ -139,4 +161,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 00:27 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 07:59 UTC</sub>

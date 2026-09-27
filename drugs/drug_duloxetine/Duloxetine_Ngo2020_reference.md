@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**Why:** C7 apparent-parameter coherence violated (double correction)
+**Why:** C8 unreachable/orphan compartment or unlinked metabolite
 **How to address:** read the paper and record the missing values by hand, or leave the record rejected — there is nothing here to build.
 <sub>owner: **curator**</sub>
 
@@ -26,19 +26,24 @@ Ngo TL; Lee CH; Han N; Back HM; Rhee SJ; Noh K; et al. et al. (2020). Internatio
 ## Model component
 <dbs-pgx drug="duloxetine" model-id="Duloxetine_Ngo2020_reference" status="rejected" stale="false" population="rats and extrapolated humans" measured-compound="duloxetine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| K a | `Q95` · t1/2ka | 1.45 | not captured | not captured | not captured | 1.35 | llm (0.5) | tab_1:row1:col1, tab_1:row1:col2, tab_1:row1:col3, tab_1:row1:col5, tab_1:row1:col6, tab_1:row1:col8 | — | not captured |
-| Emax_F pm | `Q320` · Emax | 0.844 | not captured | not captured | not captured | 0.147 | llm (0.5) | tab_1:row2:col2, tab_1:row2:col3, tab_1:row2:col5, tab_1:row2:col6, tab_1:row2:col8 | — | not captured |
-| IC50_F pm | `Q322` · IC50 | 5478 | not captured | not captured | not captured | 538 | llm (0.5) | tab_1:row3:col2, tab_1:row3:col3, tab_1:row3:col5, tab_1:row3:col6, tab_1:row3:col8 | — | not captured |
-| F pm | `Q45` · fm | 0.746 | not captured | not captured | not captured | 0.589 | llm (0.5) | tab_1:row4:col2, tab_1:row4:col3, tab_1:row4:col5, tab_1:row4:col6, tab_1:row4:col8 | — | not captured |
-| CL p | `Q22` · CL | 2.80 | not captured | not captured | not captured | 1.97 | boundary (0.8) | tab_1:row5:col2, tab_1:row5:col3, tab_1:row5:col5, tab_1:row5:col6, tab_1:row5:col8 | — | 10.2 (14.0% RSE) |
-| V p | `Q61` · V | 19.6 | not captured | not captured | not captured | 14.6 | llm (0.5) | tab_1:row6:col2, tab_1:row6:col3, tab_1:row6:col5, tab_1:row6:col6, tab_1:row6:col8 | — | not captured |
+| K a | `Q49` · kabs | 1.35 | not captured | not captured | not captured | not captured | space_fold (0.95) | tab_1:row1:col1, tab_1:row1:col2, tab_1:row1:col5, tab_1:row1:col6, tab_1:row1:col8 | — | not captured |
+| f_pm | `Q900` · f_pm | 0.589 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row4:col2, tab_1:row4:col5, tab_1:row4:col6, tab_1:row4:col8 | — | not captured |
+| CL p | `Q22` · CL | 1.97 | not captured | not captured | not captured | not captured | space_fold (0.95) | tab_1:row5:col2, tab_1:row5:col5, tab_1:row5:col6, tab_1:row5:col8 | — | 7.90 (None% RSE) |
+| V p | `Q64` · V2 | 14.6 | not captured | not captured | not captured | not captured | space_fold (0.95) | tab_1:row6:col2, tab_1:row6:col5, tab_1:row6:col6, tab_1:row6:col8 | — | not captured |
+| CL m /F m | `Q351` · CLm/F | 12.3 | not captured | not captured | not captured | not captured | space_fold (0.95) | tab_1:row10:col2, tab_1:row10:col5, tab_1:row10:col6, tab_1:row10:col8 | — | not captured |
+| V m /F m | `Q367` · Vm/F | 84.2 | not captured | not captured | not captured | not captured | llm (0.6) | tab_1:row11:col2, tab_1:row11:col5, tab_1:row11:col6, tab_1:row11:col8 | — | not captured |
+| theta_q320_pm | `Q900` · theta_q320_pm | 0.147 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row2:col2, tab_1:row2:col5, tab_1:row2:col6, tab_1:row2:col8 | — | not captured |
+| theta_q322_pm | `Q900` · theta_q322_pm | 538 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row3:col2, tab_1:row3:col5, tab_1:row3:col6, tab_1:row3:col8 | — | not captured |
+| theta_cl_pm | `Q900` · theta_cl_pm | 1.00 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row7:col2, tab_1:row7:col5, tab_1:row7:col6, tab_1:row7:col8 | — | not captured |
+| theta_q322_pm | `Q900` · theta_q322_pm | 276 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row8:col2, tab_1:row8:col5, tab_1:row8:col6, tab_1:row8:col8 | — | not captured |
+| theta_q27_pm | `Q900` · theta_q27_pm | 1.26 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_1:row9:col2, tab_1:row9:col5, tab_1:row9:col6, tab_1:row9:col8 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -48,23 +53,18 @@ Ngo TL; Lee CH; Han N; Back HM; Rhee SJ; Noh K; et al. et al. (2020). Internatio
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
-| absorption rate constant | Q49 | not captured | exact |
-| elimination rate constant | Q47 | not captured | exact |
-| apparent oral clearance | Q27 | not captured | exact |
-| volume of distribution | Q61 | not captured | exact |
-| apparent volume of distribution | Q76 | not captured | exact |
+| bioavailability of DLX after the first-pass effect | Q40 | not captured | llm_confirmed |
 
 ## Departures & gaps
 
 **Interpretation flags:**
+- compound tags: 10 row(s) → 4-hydroxy duloxetine (m_suffix 10)
+- column 'unit' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'estimates rse (%)' classified 'rse' by the LLM but kept as the estimate: the header names the point value
 - dropped value-less row: 'Parameters'
-- dropped duplicate Q22 ('Emax_CL pm', value '1.00') — already have one for this compound
-- dropped duplicate Q322 ('IC50_CL pm', value '596') — already have one for this compound
-- dropped duplicate Q22 ('CL pm /F p', value '1.77') — already have one for this compound
-- dropped duplicate Q22 ('CL m /F m', value '16.0') — already have one for this compound
-- dropped unlinked row (NIL): 'V m /F m' — extend the ontology if this is a real PK parameter (source ['tab_1:row11:col2', 'tab_1:row11:col3', 'tab_1:row11:col5', 'tab_1:row11:col6', 'tab_1:row11:col8'])
-- dropped unlinked row (NIL): 'Prop_p' — extend the ontology if this is a real PK parameter (source ['tab_1:row15:col2', 'tab_1:row15:col3', 'tab_1:row15:col5', 'tab_1:row15:col6', 'tab_1:row15:col8'])
-- dropped unlinked row (NIL): 'Prop_m' — extend the ontology if this is a real PK parameter (source ['tab_1:row16:col2', 'tab_1:row16:col3', 'tab_1:row16:col5', 'tab_1:row16:col6', 'tab_1:row16:col8'])
+- covariate level 'F pm' → Q900:f_pm = 0.589 (linear_fractional on the model)
+- routed 'Prop_p' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
+- routed 'Prop_m' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
 - dropped value-less row: 'RSE'
 - dropped value-less row: 'CI'
 - dropped value-less row: 'Prop_p'
@@ -78,8 +78,17 @@ Ngo TL; Lee CH; Han N; Back HM; Rhee SJ; Noh K; et al. et al. (2020). Internatio
 - dropped value-less row: 'CL m'
 - dropped value-less row: 'V m'
 - dropped value-less row: 'F m'
-- dropped duplicate Q27 ('apparent clearance', value None) — already have one for this compound
+- documentation only: 'absorption rate constant' → Q49 (kabs) comes from ['fig_4:caption'], not from a located parameter table — not emitted as a model parameter
+- documentation only: 'elimination rate constant' → Q47 (kel) comes from ['fig_4:caption'], not from a located parameter table — not emitted as a model parameter
+- documentation only: 'apparent oral clearance' → Q27 (CL/F) comes from ['fig_4:caption', 'fig_4:caption'], not from a located parameter table — not emitted as a model parameter
+- documentation only: 'volume of distribution' → Q61 (V) comes from ['fig_4:caption'], not from a located parameter table — not emitted as a model parameter
+- documentation only: 'apparent clearance' → Q27 (CL/F) comes from ['fig_4:caption'], not from a located parameter table — not emitted as a model parameter
+- documentation only: 'apparent volume of distribution' → Q76 (V/F) comes from ['fig_4:caption'], not from a located parameter table — not emitted as a model parameter
+- covariate effect for Q320 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q322 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q27 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=duloxetine
+- template fit: PK_3M_3C — first-pass formation; parent 1 + hepatic, metabolites [1] (site presystemic: 'The metabolism of DLX converted to 4-HD was described by two metabolism pathways, including the first-pass effect and th')
 
 ## Validation
 
@@ -87,15 +96,17 @@ Ngo TL; Lee CH; Han N; Back HM; Rhee SJ; Noh K; et al. et al. (2020). Internatio
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row5:col2', 'tab_1:row5:col3', 'tab_1:row5:col5', 'tab_1:row5:col6', 'tab_1:row5:col8'] |
-| C5_unit_missing_Q322 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row3:col2', 'tab_1:row3:col3', 'tab_1:row3:col5', 'tab_1:row3:col6', 'tab_1:row3:col8'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row6:col2', 'tab_1:row6:col3', 'tab_1:row6:col5', 'tab_1:row6:col6', 'tab_1:row6:col8'] |
-| C5_unit_missing_Q95 | fail | [time] | not captured | not captured | not captured | ['tab_1:row1:col1', 'tab_1:row1:col2', 'tab_1:row1:col3', 'tab_1:row1:col5', 'tab_1:row1:col6', 'tab_1:row1:col8'] |
-| C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | Fm=0.746 present with apparent parameterization | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row5:col2', 'tab_1:row5:col5', 'tab_1:row5:col6', 'tab_1:row5:col8'] |
+| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row10:col2', 'tab_1:row10:col5', 'tab_1:row10:col6', 'tab_1:row10:col8'] |
+| C5_unit_missing_Q367 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row11:col2', 'tab_1:row11:col5', 'tab_1:row11:col6', 'tab_1:row11:col8'] |
+| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['tab_1:row1:col1', 'tab_1:row1:col2', 'tab_1:row1:col5', 'tab_1:row1:col6', 'tab_1:row1:col8'] |
+| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row6:col2', 'tab_1:row6:col5', 'tab_1:row6:col6', 'tab_1:row6:col8'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

@@ -26,6 +26,9 @@ Webb JA; Rostami-Hodjegan A; Abdul-Manap R; Hofmann U; Mikus G; Kamali F et al. 
 ## Model component
 <dbs-pgx drug="dihydrocodeine" model-id="Dihydrocodeine_Webb2001_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="dihydrocodeine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
+**Model structure:** parent–metabolite model: parent with 1 compartment(s) plus a liver compartment (first pass); metabolite dihydromorphine: 1 compartment(s); formed in the liver; oral dose — template `PK_3M_3C`.  
+**Parameters:** 9 extracted.
+
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
@@ -33,15 +36,15 @@ Webb JA; Rostami-Hodjegan A; Abdul-Manap R; Hofmann U; Mikus G; Kamali F et al. 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 43 | lhx1 | not captured | [h] · [l] · [x1] | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
+| CL/F | `Q27` · CL/F | 43 | L/h | 1.1944444444444446e-05 | L/h | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
 | V/F | `Q76` · V/F | 203 | l | 0.203 | [l] | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
-| ka | `Q49` · kabs | 11 | hx1 | not captured | [h] · [x1] | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
-| t lag | `Q83` · tlag | 0.3 | h | 1080.0 | [h] | not captured | llm (0.6) | Webb_2001:abstract | — | not captured |
-| kel | `Q47` · kel | 0.216 | hx1 | not captured | [h] · [x1] | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
-| fm(DHM) systemic | `Q45` · fm | 0.015 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Webb_2001:abstract | — | not captured |
-| V(DHM) | `Q61` · V | 200 | DHM | not captured | [h] · [d] · [m] | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
+| ka | `Q49` · kabs | 11 | 1/h | 0.0030555555555555557 | 1/h | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
+| t lag | `Q83` · tlag | 0.3 | h | 1080.0 | [h] | not captured | space_fold (0.95) | Webb_2001:abstract | — | not captured |
+| kel | `Q47` · kel | 0.216 | 1/h | 6e-05 | 1/h | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
+| fm(DHM) systemic | `Q45` · fm | 0.015 | not captured | not captured | not captured | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
+| k(DHM) | `Q47` · kel | 0.339 | 1/h | 9.416666666666667e-05 | 1/h | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
+| V(DHM) | `Q61` · V | 200 | L | 0.2 | L | not captured | exact (1.0) | Webb_2001:abstract | — | not captured |
 | half-life of elimination from effect compartment | `Q57` · t1/2z | 13 | min | 780.0 | [min] | not captured | llm (0.6) | Webb_2001:abstract | — | not captured |
-| DHC/DHM plasma concentration-time AUC ratio | `Q21` · AUC ratio | 343 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Webb_2001:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -50,29 +53,38 @@ Webb JA; Rostami-Hodjegan A; Abdul-Manap R; Hofmann U; Mikus G; Kamali F et al. 
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['q12/q21 (hepatic flow, 90 L/h)']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'P' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract'])
 - dropped unlinked row (NIL): 'Mean pain AUC changes' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract'])
 - dropped unlinked row (NIL): 'Caucasians' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract'])
+- dropped unlinked row (NIL): 'Asians' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract'])
+- dropped unlinked row (NIL): 'aged' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract'])
 - dropped unlinked row (NIL): 'DHC/DHM ratio' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract'])
 - unit_dimension_unknown: 'lhx1' (CL/F)
 - unit_dimension_unknown: 'hx1' (kabs)
 - unit_dimension_unknown: 'hx1' (kel)
 - dropped duplicate Q45 ('fm(DHM) 1stpass', value 0.022) — already have one for this compound
 - unit_dimension_unknown: 'DHM' (kel)
-- dropped duplicate Q47 ('k(DHM)', value 0.339) — already have one for this compound
-- unit_dimension_unknown: 'DHM' (V)
-- dropped PD-category row 'ke0' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Webb_2001:abstract'])
-- dropped unlinked row (NIL): 'average ratio' — extend the ontology if this is a real PK parameter (source ['Webb_2001:abstract'])
+- unit_dimension_unknown: 'DHM' (V1)
+- dropped PD-category row 'ke0' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Webb_2001:abstract', 'Webb_2001:abstract', 'Webb_2001:abstract'])
+- implicit units: 'CL/F' → L/h (from the popPK convention: 'CL/F is a clearance parameter. In population PK, clearance is conventionally expressed in L/h. The value 43 is consisten')
+- implicit units: 'ka' → 1/h (from the popPK convention: 'ka is a first-order absorption rate constant. Rate constants are conventionally expressed in 1/h. The value 11 is consis')
+- implicit units: 'kel' → 1/h (from the popPK convention: 'kel is a first-order elimination rate constant. Rate constants are conventionally expressed in 1/h. The value 0.216 is c')
+- implicit units: 'k(DHM)' → 1/h (from the popPK convention: 'k(DHM) is described as an elimination rate constant. Rate constants are conventionally expressed in 1/h. The value 0.339')
+- implicit units: 'V(DHM)' → L (from the popPK convention: 'V(DHM) is a volume of distribution parameter. Volumes are conventionally expressed in L. The value 200 is consistent wit')
+- metabolite volume: 'V(DHM)' Q63→Q61 for dihydromorphine — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=dihydrocodeine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- template fit: PK_3M_3C — first-pass formation; parent 1 + hepatic, metabolites [1] (site presystemic: 'Intercept constant of DHM while fm(DHM) was proportional could be fixed AT 0 (model 9) or be calculated as part of conve')
+- row roles: 3 per-group rows of none other but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 17/17 row label(s) assigned, 9 linked by role; re-tagged dihydrocodeine→parent ×5, dihydrocodeine→dihydromorphine ×4
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from cached Webb_2001_extracted.txt (17 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from cached Webb_2001_extracted.txt (19 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -82,11 +94,19 @@ Webb JA; Rostami-Hodjegan A; Abdul-Manap R; Hofmann U; Mikus G; Kamali F et al. 
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Webb_2001:abstract'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Webb_2001:abstract'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Webb_2001:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Webb_2001:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Webb_2001:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Webb_2001:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Webb_2001:abstract'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Webb_2001:abstract'] |
-| C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | Fm=0.015 present with apparent parameterization | not captured | not captured | not captured |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 43 L/h | not captured | not captured | ['Webb_2001:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 200 L | not captured | not captured | ['Webb_2001:abstract'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 203 L | not captured | not captured | ['Webb_2001:abstract'] |
 
 <details class="legend">
@@ -107,9 +127,13 @@ Webb JA; Rostami-Hodjegan A; Abdul-Manap R; Hofmann U; Mikus G; Kamali F et al. 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 100 mg, single dose, first-order absorption into a hepatic compartment first (first pass) (ka 11 /h, lag 18 min, F 1).
+
+<dbs-fmusim paramsurl="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_params.json" metaurl="assets/fmu/PK_3M_3C.vr.json" wasmurl="assets/fmu/PK_3M_3C.js" controlsurl="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_3M_3C` · parameters `Dihydrocodeine_Webb2001_reference_params.json` · controls `Dihydrocodeine_Webb2001_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-08-27 18:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:55 UTC</sub>

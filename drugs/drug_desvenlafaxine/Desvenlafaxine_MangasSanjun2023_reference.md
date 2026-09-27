@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;desvenlafaxine&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/&quot;},{&quot;label&quot;:&quot;Mangas-Sanju\u00e1n_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Desvenlafaxine_MangasSanjun2023_reference&quot;,&quot;label&quot;:&quot;Mangas-Sanju\u00e1n_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/Desvenlafaxine_MangasSanjun2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Desvenlafaxine_Nichols2018_reference&quot;,&quot;label&quot;:&quot;Nichols_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/Desvenlafaxine_Nichols2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Desvenlafaxine_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/Desvenlafaxine_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Desvenlafaxine_MangasSanjun2023_reference&quot;,&quot;label&quot;:&quot;Mangas-Sanju\u00e1n_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/Desvenlafaxine_MangasSanjun2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Desvenlafaxine_Nichols2018_reference&quot;,&quot;label&quot;:&quot;Nichols_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/Desvenlafaxine_Nichols2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Desvenlafaxine_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/Desvenlafaxine_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # desvenlafaxine — `Desvenlafaxine_MangasSanjun2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** every check the reviewer could run passed
+**Why:** C5 dimensioned parameter(s) without a unit: Q95 — no SI value to build from
 **Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl].value` (11.42 vs 12) and 7 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
+**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
 <sub>owner: **curator**</sub>
 
 ## Citation
@@ -25,11 +25,13 @@ Mangas-Sanjuán V; Simón M; González-Rojano E; Ochoa D; Abad-Santos F; Román 
   ·  DOI: [10.3390/pharmaceutics15020409](https://doi.org/10.3390/pharmaceutics15020409)
 
 ## Model component
-<dbs-pgx drug="desvenlafaxine" model-id="Desvenlafaxine_MangasSanjun2023_reference" status="curated_candidate" stale="false" population="healthy volunteers" measured-compound="desvenlafaxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="desvenlafaxine" model-id="Desvenlafaxine_MangasSanjun2023_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="desvenlafaxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | k a (h -1 ) | `Q49` · kabs | 22 | h -1 | 0.006111111111111111 | [1] / [h] | not captured | llm (0.5) | tab_4:row2:col2, tab_4:row2:col5 | — | not captured |
@@ -114,19 +116,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C9_phys_window_Q22 | pass | clearance within physiological range | 11.4 L/h | not captured | not captured | ['tab_4:row4:col1', 'tab_4:row4:col2', 'tab_4:row4:col4', 'tab_4:row4:col5', 'tab_4:row4:col6'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 65.3 L | not captured | not captured | ['tab_4:row5:col1', 'tab_4:row5:col2', 'tab_4:row5:col4', 'tab_4:row5:col5', 'tab_4:row5:col6'] |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=desvenlafaxine) | central.C | not captured | output must be the measured/analyte compartment |
-| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | not captured | 0.0013203492316415735 | not captured | non-numeric value |
-| T1_cmax | reference | skipped | 97.29 | 0.0013203492316415735 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 19.21 | 0.0013203492316415735 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -135,9 +124,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_desvenlafaxine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Mangas-Sanjuán_2023` / `Mangas-Sanjuán_2023::reference`)
-- model: `../../../knowledgebase/drugs/drug_desvenlafaxine/models/modelica/Desvenlafaxine_MangasSanjun2023_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_desvenlafaxine/models/modelica/Desvenlafaxine_MangasSanjun2023_reference.deviation.json`
-- sim: `../../../knowledgebase/drugs/drug_desvenlafaxine/models/modelica/Desvenlafaxine_MangasSanjun2023_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

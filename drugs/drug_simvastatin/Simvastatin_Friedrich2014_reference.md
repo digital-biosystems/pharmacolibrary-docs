@@ -5,7 +5,7 @@
 
 # simvastatin — `Simvastatin_Friedrich2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** T6_deviations
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q30]` (9.79 vs not captured) and 6 more field(s) — not a structural parameter.
 **How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
 <sub>owner: **engineer**</sub>
 
@@ -61,9 +62,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.222 (2/9 fields) | 7 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q30]` | 9.79 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q314]` | not captured | 50.2 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q49]` | not captured | 0.3 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q61]` | 228 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q69]` | not captured | 9.79 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q78]` | not captured | 827 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q82]` | not captured | 228 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -117,12 +130,12 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_modelica.zip" download>Simvastatin_Friedrich2014_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_modelica.zip" download>Simvastatin_Friedrich2014_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_fmi.zip" download>Simvastatin_Friedrich2014_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_matlab.zip" download>Simvastatin_Friedrich2014_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_matlab_simbio.zip" download>Simvastatin_Friedrich2014_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_sbml.zip" download>Simvastatin_Friedrich2014_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_cellml.zip" download>Simvastatin_Friedrich2014_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference/Simvastatin_Friedrich2014_reference_cellml.zip" download>Simvastatin_Friedrich2014_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>

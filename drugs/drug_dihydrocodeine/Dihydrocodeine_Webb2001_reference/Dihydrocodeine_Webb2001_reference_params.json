@@ -1,0 +1,45 @@
+{
+ "model_id": "Dihydrocodeine_Webb2001_reference",
+ "molar_masses": {
+  "C_M1": 0.28735000000000005,
+  "C_central": 0.30138010000000004
+ },
+ "note": "Values for the shared PK_3M_3C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "dihydromorphine",
+  "C_central": "dihydrocodeine"
+ },
+ "observables": [
+  "C_central",
+  "C_M1"
+ ],
+ "parameters": {
+  "CL1": 1.176527777777778e-05,
+  "CLm1": 1.8833333333333335e-05,
+  "F": 1.0,
+  "MW": 0.30138010000000004,
+  "MW_m1": 0.28735000000000005,
+  "Tlag": 1080.0,
+  "Vd1": 0.203,
+  "Vd1m1": 0.2,
+  "Vd2": 0.203,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.0030555555555555557,
+  "q12": 2.4999999999999998e-05,
+  "q1_m11": 1.791666666666667e-07,
+  "q21": 2.4999999999999998e-05
+ },
+ "reference_peak_times": {
+  "C_M1": 13505.410821643287,
+  "C_central": 11252.192736275178
+ },
+ "reference_peaks": {
+  "C_M1": 1.3725389819110827e-06,
+  "C_central": 0.00017024283317910112
+ },
+ "stop_time": 86400.0,
+ "template": "PK_3M_3C",
+ "template_fmu": "PK_3M_3C.fmu"
+}

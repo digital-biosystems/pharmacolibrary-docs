@@ -15,8 +15,11 @@
   "ka": 0.00014916666666666667,
   "weight": 70.0
  },
+ "reference_peak_times": {
+  "central.C": 16622.044088176353
+ },
  "reference_peaks": {
-  "central.C": 0.00045030356902513955
+  "central.C": 0.0004503033725347821
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

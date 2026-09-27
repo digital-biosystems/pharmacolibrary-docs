@@ -13,10 +13,13 @@
   "adminMass": 0.0001,
   "weight": 70.0
  },
- "reference_peaks": {
-  "central.C": 0.0016654201890724649
+ "reference_peak_times": {
+  "central.C": 660.0000000662086
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 0.001665420240380958
+ },
+ "stop_time": 172800.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

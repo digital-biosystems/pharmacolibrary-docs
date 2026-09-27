@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;naltrexone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naltrexone_Christie2025_reference&quot;,&quot;label&quot;:&quot;Christie_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Christie2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naltrexone_Li1996_reference&quot;,&quot;label&quot;:&quot;Li_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Li1996_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Reuning1979_reference&quot;,&quot;label&quot;:&quot;Reuning_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Reuning1979_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Dunbar2007_reference&quot;,&quot;label&quot;:&quot;Dunbar_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Dunbar2007_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Christie2025_reference&quot;,&quot;label&quot;:&quot;Christie_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Christie2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # naltrexone
 
@@ -18,27 +18,30 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-12 01:26 | 8:35 | 0/1/0 | 2/1/0 | 0/0/0 | 261,900/15,857 | ollama / qwen3.8:27b-mtp-q8_0 | 26 | 8/0 | 17/0 | 0 |
+| 2026-09-26 10:25 | 5:02 | 2/1/1 | 2/1/0 | 0/0/0 | 55,940/20,074 | ollama / qwen3.8:27b-mtp-q8_0 | 26 | 8/3 | 17/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Christie_2025_reference](drugs/drug_naltrexone/Naltrexone_Christie2025_reference.md) | Christie JT et al., Pharmacokinetics and Bioavailability of…, Journal of veterinary pharm… (2025) | [10.1111/jvp.13507](https://doi.org/10.1111/jvp.13507) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Li_1996_reference](drugs/drug_naltrexone/Naltrexone_Li1996_reference.md) | Li H et al., [Pharmacokinetics of naltrexone hydroch…, Yao xue xue bao = Acta phar… (1996) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Reuning_1979_reference](drugs/drug_naltrexone/Naltrexone_Reuning1979_reference.md) | Reuning RH et al., Plasma naltrexone kinetics after intrav…, Journal of pharmaceutical s… (1979) | [10.1002/jps.2600680405](https://doi.org/10.1002/jps.2600680405) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Dunbar_2007_reference](drugs/drug_naltrexone/Naltrexone_Dunbar2007_reference.md) | Dunbar JL et al., Population pharmacokinetics of extended…, Journal of studies on alcoh… (2007) | [10.15288/jsad.2007.68.862](https://doi.org/10.15288/jsad.2007.68.862) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Christie_2025_reference](drugs/drug_naltrexone/Naltrexone_Christie2025_reference.md) | Christie JT et al., Pharmacokinetics and Bioavailability of…, Journal of veterinary pharm… (2025) | [10.1111/jvp.13507](https://doi.org/10.1111/jvp.13507) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Endt_2025](drugs/drug_naltrexone/pd_Endt_2025_beta_arrestin_2.md) | Endt F et al., Carfentanil stabilizes µ opioid recepto…, Archives of toxicology (2025) | [10.1007/s00204-025-04048-6](https://doi.org/10.1007/s00204-025-04048-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Endt_2025](drugs/drug_naltrexone/pd_Endt_2025_cAMP.md) | Endt F et al., Carfentanil stabilizes µ opioid recepto…, Archives of toxicology (2025) | [10.1007/s00204-025-04048-6](https://doi.org/10.1007/s00204-025-04048-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Endt_2025](drugs/drug_naltrexone/pd_Endt_2025_muOR_phos.md) | Endt F et al., Carfentanil stabilizes µ opioid recepto…, Archives of toxicology (2025) | [10.1007/s00204-025-04048-6](https://doi.org/10.1007/s00204-025-04048-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Endt_2025](drugs/drug_naltrexone/pd_Endt_2025_p_ERK_1_2.md) | Endt F et al., Carfentanil stabilizes µ opioid recepto…, Archives of toxicology (2025) | [10.1007/s00204-025-04048-6](https://doi.org/10.1007/s00204-025-04048-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Tan_2022](drugs/drug_naltrexone/pd_Tan_2022_DOR.md) | Tan LA et al., In vivo Characterization of the Opioid…, Neuropsychiatric disease an… (2022) | [10.2147/NDT.S373195](https://doi.org/10.2147/NDT.S373195) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Tan_2022](drugs/drug_naltrexone/pd_Tan_2022_KOR.md) | Tan LA et al., In vivo Characterization of the Opioid…, Neuropsychiatric disease an… (2022) | [10.2147/NDT.S373195](https://doi.org/10.2147/NDT.S373195) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Tan_2022](drugs/drug_naltrexone/pd_Tan_2022_MOR.md) | Tan LA et al., In vivo Characterization of the Opioid…, Neuropsychiatric disease an… (2022) | [10.2147/NDT.S373195](https://doi.org/10.2147/NDT.S373195) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Berríos-Cárcamo_2016](drugs/drug_naltrexone/pd_Berr_os_C_rcamo_2016_beta_arrestin.md) | Berríos-Cárcamo P et al., Racemic Salsolinol and its Enantiomers…, Frontiers in behavioral neu… (2016) | [10.3389/fnbeh.2016.00253](https://doi.org/10.3389/fnbeh.2016.00253) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Berríos-Cárcamo_2016](drugs/drug_naltrexone/pd_Berr_os_C_rcamo_2016_cAMP.md) | Berríos-Cárcamo P et al., Racemic Salsolinol and its Enantiomers…, Frontiers in behavioral neu… (2016) | [10.3389/fnbeh.2016.00253](https://doi.org/10.3389/fnbeh.2016.00253) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Endt_2025](drugs/drug_naltrexone/pd_Endt_2025_beta_arrestin_2.md) | Endt F et al., Carfentanil stabilizes µ opioid recepto…, Archives of toxicology (2025) | [10.1007/s00204-025-04048-6](https://doi.org/10.1007/s00204-025-04048-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Endt_2025](drugs/drug_naltrexone/pd_Endt_2025_cAMP.md) | Endt F et al., Carfentanil stabilizes µ opioid recepto…, Archives of toxicology (2025) | [10.1007/s00204-025-04048-6](https://doi.org/10.1007/s00204-025-04048-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Endt_2025](drugs/drug_naltrexone/pd_Endt_2025_muOR_phos.md) | Endt F et al., Carfentanil stabilizes µ opioid recepto…, Archives of toxicology (2025) | [10.1007/s00204-025-04048-6](https://doi.org/10.1007/s00204-025-04048-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Endt_2025](drugs/drug_naltrexone/pd_Endt_2025_p_ERK_1_2.md) | Endt F et al., Carfentanil stabilizes µ opioid recepto…, Archives of toxicology (2025) | [10.1007/s00204-025-04048-6](https://doi.org/10.1007/s00204-025-04048-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tan_2022](drugs/drug_naltrexone/pd_Tan_2022_DOR.md) | Tan LA et al., In vivo Characterization of the Opioid…, Neuropsychiatric disease an… (2022) | [10.2147/NDT.S373195](https://doi.org/10.2147/NDT.S373195) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tan_2022](drugs/drug_naltrexone/pd_Tan_2022_KOR.md) | Tan LA et al., In vivo Characterization of the Opioid…, Neuropsychiatric disease an… (2022) | [10.2147/NDT.S373195](https://doi.org/10.2147/NDT.S373195) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tan_2022](drugs/drug_naltrexone/pd_Tan_2022_MOR.md) | Tan LA et al., In vivo Characterization of the Opioid…, Neuropsychiatric disease an… (2022) | [10.2147/NDT.S373195](https://doi.org/10.2147/NDT.S373195) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Berríos-Cárcamo_2016](drugs/drug_naltrexone/pd_Berr_os_C_rcamo_2016_beta_arrestin.md) | Berríos-Cárcamo P et al., Racemic Salsolinol and its Enantiomers…, Frontiers in behavioral neu… (2016) | [10.3389/fnbeh.2016.00253](https://doi.org/10.3389/fnbeh.2016.00253) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Berríos-Cárcamo_2016](drugs/drug_naltrexone/pd_Berr_os_C_rcamo_2016_cAMP.md) | Berríos-Cárcamo P et al., Racemic Salsolinol and its Enantiomers…, Frontiers in behavioral neu… (2016) | [10.3389/fnbeh.2016.00253](https://doi.org/10.3389/fnbeh.2016.00253) |
 
 ## ADME sites
 
@@ -64,7 +67,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 72 matched, 60 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 2  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
@@ -78,7 +81,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Li_1996.pdf` | Li H et al., [Pharmacokinetics of naltrexone hydroch…, Yao xue xue bao = Acta phar… (1996) | popPK | 9 | not captured | [9208648](https://pubmed.ncbi.nlm.nih.gov/9208648) | The study reports quantitative PK parameters (half-lives, bioavailability) for naltrexone in dogs, though specific clearance and volume values are not explicitly listed in the text. |
 | `Yun_2007.pdf` | Yun HY et al., Simultaneous analysis of naltrexone and…, Talanta (2007) | popPK | 9 | [10.1016/j.talanta.2006.07.035](https://doi.org/10.1016/j.talanta.2006.07.035) | [19071491](https://pubmed.ncbi.nlm.nih.gov/19071491) | The paper describes a PK study with a parent-metabolite model for naltrexone, but the specific numeric parameter values are not present in the provided evidence. |
 
-<sub>queue written 2026-09-12T01:20:26.228939+00:00</sub>
+<sub>queue written 2026-09-26T10:20:51.897848+00:00</sub>
 
 ## Screened and excluded
 
@@ -163,4 +166,4 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | dAmore_1991 | not_relevant | 2 | 1 | The study reports qualitative antagonism of opioid effects by naltrexone and maximum effect (Emax) values for agonists, but does not provide a quantitative exposure-response or dose-response curve with numeric PD parameters (e.g., IC50, slope) for naltrexone. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-07-15 13:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-12 01:20 UTC</sub>

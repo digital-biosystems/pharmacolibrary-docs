@@ -1,7 +1,8 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M04A&quot;,&quot;href&quot;:&quot;atc/M04A.md&quot;},{&quot;label&quot;:&quot;allopurinol&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/&quot;},{&quot;label&quot;:&quot;Leander_2021 \u00b7 PD serum uric acid&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Allopurinol_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Jonkman1984_reference&quot;,&quot;label&quot;:&quot;Jonkman_1984_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Jonkman1984_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Liu2026_reference&quot;,&quot;label&quot;:&quot;Liu_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Liu2026_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2024_reference&quot;,&quot;label&quot;:&quot;Wright_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2024_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2007_reference&quot;,&quot;label&quot;:&quot;Day_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2007_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2016_reference&quot;,&quot;label&quot;:&quot;Day_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Stocker2012_reference&quot;,&quot;label&quot;:&quot;Stocker_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Stocker2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wen2023_base&quot;,&quot;label&quot;:&quot;Wen_2023_base&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_base.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wen2023_final&quot;,&quot;label&quot;:&quot;Wen_2023_final&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2017_reference&quot;,&quot;label&quot;:&quot;Wright_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Chu2022_reference&quot;,&quot;label&quot;:&quot;Chu_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Chu2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Chu2024_reference&quot;,&quot;label&quot;:&quot;Chu_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Chu2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Hishe2023_reference&quot;,&quot;label&quot;:&quot;Hishe_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Hishe2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Vora2021_reference&quot;,&quot;label&quot;:&quot;Vora_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Vora2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2013_base&quot;,&quot;label&quot;:&quot;Wright_2013_base&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2013_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2013_final&quot;,&quot;label&quot;:&quot;Wright_2013_final&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2013_final.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2016_reference&quot;,&quot;label&quot;:&quot;Wright_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# serum uric acid — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+# serum uric acid — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.095). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,14 +14,23 @@
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
 - **tier:** population
-- **effect:** unknown/unknown
+- **effect:** inhibition/additive
 
 ## Citation
 Leander J; Sunnåker M; Rekić D; Aksenov S; Eriksson UG; Johansson S; et al. et al. (2021). Journal of pharmacokinetics and pharmacodynamics 48
   ·  DOI: [10.1007/s10928-021-09747-y](https://doi.org/10.1007/s10928-021-09747-y)
 
 ## Parameters
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|
+| Emax for febuxostat | `Q320` · not captured | 1 | 2018 | not captured | review_gapfill (not captured) | Leander_2021:review |
+| EC50s of verinurad, febuxostat, and oxypurinol | `Q321` · not captured | 29.3 | ng/mL | not captured | review_gapfill (not captured) | Leander_2021:review |
+| baseline FEUA | `Q324` · not captured | 7.7 | % | not captured | review_gapfill (not captured) | Leander_2021:review |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
@@ -28,12 +38,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.143 (3/21 fields) | 18 |
+| `gpt-oss:120b` | not confirmed | 0.095 (2/21 fields) | 19 |
 
-<details><summary>18 field(s) a reader read differently</summary>
+<details><summary>19 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `effect_form` | additive | unknown | mismatch |
 | `gpt-oss:120b` | `model_family` | emax | indirect_response_i | mismatch |
 | `gpt-oss:120b` | `parameters[Q325]` | not captured | 48 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q325]` | not captured | 23 | only_one_extracted |
@@ -44,14 +55,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[Q325]` | not captured | 64 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q325]` | not captured | 72 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q325]` | not captured | 40 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 23 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 31 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 15 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 64 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 72 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 39 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 22 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q71]` | not captured | 23 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q71]` | not captured | 31 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q71]` | not captured | 15 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q71]` | not captured | 64 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q71]` | not captured | 72 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q71]` | not captured | 39 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q75]` | not captured | 0 | only_one_extracted |
 
 </details>
 

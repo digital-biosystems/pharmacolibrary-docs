@@ -5,7 +5,7 @@
 
 # allopurinol — `Allopurinol_Chu2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-5.6-luna (not confirmed, agreement 0.3), gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (confirmed, agreement 1.0), gpt-5.6-luna (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,7 +25,10 @@ Chu WY; Annink KV; Nijstad AL; Maiwald CA; Schroth M; Bakkali LE; et al. et al. 
   ·  DOI: [10.1007/s40262-021-01068-0](https://doi.org/10.1007/s40262-021-01068-0)
 
 ## Model component
-<dbs-pgx drug="allopurinol" model-id="Allopurinol_Chu2022_reference" status="rejected" stale="false" population="neonates with hypoxic-ischemic encephalopathy" measured-compound="allopurinol" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="allopurinol" model-id="Allopurinol_Chu2022_reference" status="rejected" stale="false" population="neonates with hypoxic-ischemic encephalopathy" measured-compound="allopurinol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 0 extracted, plus 2 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -34,7 +37,8 @@ Chu WY; Annink KV; Nijstad AL; Maiwald CA; Schroth M; Bakkali LE; et al. et al. 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| BCRP | `Q900` · BCRP | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| ABCB2 | `Q900` · ABCB2 | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| ABCB2 | `Q900` · ABCB2 | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -44,7 +48,8 @@ Chu WY; Annink KV; Nijstad AL; Maiwald CA; Schroth M; Bakkali LE; et al. et al. 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
-| Allopurinol clearance (CL1) | Q22 | not captured | llm_confirmed |
+| Allopurinol clearance (CL1) | Q22 | not captured | exact |
+| Oxypurinol clearance (CL2)a | Q22 | not captured | exact |
 
 ## Departures & gaps
 
@@ -53,15 +58,15 @@ Chu WY; Annink KV; Nijstad AL; Maiwald CA; Schroth M; Bakkali LE; et al. et al. 
 - dropped value-less row: 'Allopurinol volume of distribution (V1)' (captured trailing unit 'V1' for child rows)
 - unit 'V1' inherited from a section-header row for CL (not printed on this row itself) — see the unit_dimension_mismatch check below if this is wrong
 - unit_dimension_unknown: 'V1' (CL)
-- dropped duplicate Q22 ('Oxypurinol clearance (CL2)a', value None) — already have one for this compound
 - dropped value-less row: 'Oxypurinol volume of distribution (V2)a'
 - dropped PD-category row 'Oxypurinol concentration with 50% of maximum effect on CL1 (IC50auto)' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row6:col1', 'Tab3:row6:col2'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=allopurinol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: 3 first-order transfer(s) across 5 compounds → general_linear
+- template fit: PK_Parent_Metabolite — one metabolite formed from central, both 1-compartment
 - status held at route_to_review — not promoted
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- imported values removed: this record carried no value of its own, and a model assembled entirely from other papers is not this paper's model (removed Q61, Q49, Q83)
+- row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 6 linked by role; re-tagged parent→oxypurinol ×5
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - unparsed cell Tab3:row2:col1 = '2.43 L'
@@ -70,15 +75,15 @@ Chu WY; Annink KV; Nijstad AL; Maiwald CA; Schroth M; Bakkali LE; et al. et al. 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
 | `gpt-5.6-luna` | not confirmed | 0.3 (3/10 fields) | 7 |
-| `gpt-oss:120b` | not confirmed | 0.8 (4/5 fields) | 1 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -89,7 +94,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-5.6-luna` | `parameters[lag time]` | 0.235 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[v ua]` | 19.0 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `screen.primary_analyte` | allopurinol | allopurinol and oxypurinol | mismatch |
-| `gpt-oss:120b` | `model.links` | [['allopurinol', 'oxypurinol', 'metabolism']] | [['allopurinol', 'oxypurinol', 'metabolism'], ['hypoxanthine', 'xanthine', 'interconversion'], ['xanthine', 'uric acid', 'interconversion']] | mismatch |
 
 </details>
 
@@ -106,7 +110,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | fail | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -131,4 +135,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 00:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 08:03 UTC</sub>

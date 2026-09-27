@@ -1,24 +1,31 @@
 {
  "model_id": "Metformin_Charles2006_reference",
+ "molar_masses": {
+  "central.C": 0.1291636
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
-  "Cl": 7.777777777777777e-06,
+  "Cl": 1.6388888888888888e-08,
   "F": 0.9,
-  "Tlag": 1800.0,
-  "VdPerKg": 0.0027142857142857142,
+  "MM": 0.1291636,
+  "Tlag": 1224.0,
+  "VdPerKg": 0.0005,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
   "ka": 0.00011388888888888888,
   "weight": 70.0
  },
- "reference_peaks": {
-  "C_central": 0.0002671158835215634
+ "reference_peak_times": {
+  "central.C": 49995.991983967935
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 0.0025137659921965825
+ },
+ "stop_time": 118800.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;amoxicillin&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/&quot;},{&quot;label&quot;:&quot;Dubbelboer_2025 \u00b7 cat_2&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amoxicillin_AlbanellFernndez2025_reference&quot;,&quot;label&quot;:&quot;Albanell-Fern\u00e1ndez_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_AlbanellFernndez2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Bardhi2026_reference&quot;,&quot;label&quot;:&quot;Bardhi_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Bardhi2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Cattrall2019_reference&quot;,&quot;label&quot;:&quot;Cattrall_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Cattrall2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Spyker1977_reference&quot;,&quot;label&quot;:&quot;Spyker_1977_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Spyker1977_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Arancibia1980_reference&quot;,&quot;label&quot;:&quot;Arancibia_1980_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Arancibia1980_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Baklouti2026_reference&quot;,&quot;label&quot;:&quot;Baklouti_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Baklouti2026_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Carceles1995v3_reference&quot;,&quot;label&quot;:&quot;Carceles_1995_3_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Carceles1995v3_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_1&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_1&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_1.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_2&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_2&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_3&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_3&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_3.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_4&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_4&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_4.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_5&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_5&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_5.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_6&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_6&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_6.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_median&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_median&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_typical_value&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_typical_value&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_typical_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Echizen2016_reference&quot;,&quot;label&quot;:&quot;Echizen_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Eshelman1978_reference&quot;,&quot;label&quot;:&quot;Eshelman_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Eshelman1978_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Foulds1983_reference&quot;,&quot;label&quot;:&quot;Foulds_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Foulds1983_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Keij2023_reference&quot;,&quot;label&quot;:&quot;Keij_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Keij2023_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Lacampagne2026_reference&quot;,&quot;label&quot;:&quot;Lacampagne_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Lacampagne2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Sturgill1992_reference&quot;,&quot;label&quot;:&quot;Sturgill_1992_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Sturgill1992_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Wu2021_reference&quot;,&quot;label&quot;:&quot;Wu_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Wu2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Carceles1995_intramuscular_route_n_5&quot;,&quot;label&quot;:&quot;Carceles_1995_intramuscular_route_n_5&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Carceles1995_intramuscular_route_n_5.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Carceles1995_intravenous_route_w_10&quot;,&quot;label&quot;:&quot;Carceles_1995_intravenous_route_w_10&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Carceles1995_intravenous_route_w_10.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amoxicillin_AlbanellFernndez2025_reference&quot;,&quot;label&quot;:&quot;Albanell-Fern\u00e1ndez_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_AlbanellFernndez2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Bardhi2026_reference&quot;,&quot;label&quot;:&quot;Bardhi_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Bardhi2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Cattrall2019_reference&quot;,&quot;label&quot;:&quot;Cattrall_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Cattrall2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_1&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_1&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_1.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_2&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_2&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_2.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_3&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_3&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_3.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_4&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_4&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_4.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_5&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_5&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_5.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_median&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_median&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_median.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_typical_value&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_typical_value&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_typical_value.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Lacampagne2026_reference&quot;,&quot;label&quot;:&quot;Lacampagne_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Lacampagne2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Spyker1977_reference&quot;,&quot;label&quot;:&quot;Spyker_1977_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Spyker1977_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Wu2021_reference&quot;,&quot;label&quot;:&quot;Wu_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Wu2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Arancibia1980_reference&quot;,&quot;label&quot;:&quot;Arancibia_1980_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Arancibia1980_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Baklouti2026_reference&quot;,&quot;label&quot;:&quot;Baklouti_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Baklouti2026_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Carceles1995v3_reference&quot;,&quot;label&quot;:&quot;Carceles_1995_3_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Carceles1995v3_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_6&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_6&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_6.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Echizen2016_reference&quot;,&quot;label&quot;:&quot;Echizen_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Eshelman1978_reference&quot;,&quot;label&quot;:&quot;Eshelman_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Eshelman1978_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Foulds1983_reference&quot;,&quot;label&quot;:&quot;Foulds_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Foulds1983_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Keij2023_reference&quot;,&quot;label&quot;:&quot;Keij_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Keij2023_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Sturgill1992_reference&quot;,&quot;label&quot;:&quot;Sturgill_1992_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Sturgill1992_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Carceles1995_intramuscular_route_n_5&quot;,&quot;label&quot;:&quot;Carceles_1995_intramuscular_route_n_5&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Carceles1995_intramuscular_route_n_5.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Carceles1995_intravenous_route_w_10&quot;,&quot;label&quot;:&quot;Carceles_1995_intravenous_route_w_10&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Carceles1995_intravenous_route_w_10.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amoxicillin — `Amoxicillin_Dubbelboer2025_cat_2`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (confirmed, agreement 1.0), gpt-5.6-luna (not confirmed, agreement 0.846). The first reading is what the record holds.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (confirmed, agreement 1.0), gpt-5.6-luna (not confirmed, agreement 0.846). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,34 +15,34 @@
 
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q22, Q61, Q32, Q56, Q17, Q47, Q57 — no SI value to build from
+**Why:** every check the reviewer could run passed.
 **Second reading:** `gpt-5.6-luna` read this paper differently on `parameters[ka]` (0.17 vs not captured) and 1 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
-<sub>owner: **curator**</sub>
+**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
+<sub>owner: **scholar**</sub>
 
 ## Citation
 Dubbelboer IR; Olsén L; Pelander L; Lacroix MZ; Claustre L; Roques B; et al. et al. (2025). Journal of veterinary pharmacology and therapeutics 48
   ·  DOI: [10.1111/jvp.70003](https://doi.org/10.1111/jvp.70003)
 
 ## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Dubbelboer2025_cat_2" status="needs_review" stale="false" population="healthy cats" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Dubbelboer2025_cat_2" status="curated_candidate" stale="false" population="healthy cats" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cl | `Q22` · CL | 0.17 | not captured | not captured | not captured | not captured | exact (1.0) | Dubbelboer_2025_table_1:row0:col3 | — | not captured |
-| V d | `Q61` · V | 0.55 | not captured | not captured | not captured | not captured | space_fold (0.95) | Dubbelboer_2025_table_1:row1:col3 | — | not captured |
-| C maxPO | `Q32` · Cmax | 2.5 | not captured | not captured | not captured | not captured | llm (0.6) | Dubbelboer_2025_table_1:row2:col3 | — | not captured |
-| T maxPO | `Q56` · tmax | 7.1 | not captured | not captured | not captured | not captured | llm (0.6) | Dubbelboer_2025_table_1:row4:col3 | — | not captured |
-| AUC0‐ꚙIV | `Q17` · AUC∞ | 57.7 | not captured | not captured | not captured | not captured | llm (0.6) | Dubbelboer_2025_table_1:row6:col3 | — | not captured |
-| k eIV | `Q47` · kel | 0.31 | not captured | not captured | not captured | not captured | llm (0.6) | Dubbelboer_2025_table_1:row9:col3 | — | not captured |
-| t 1/2zIV | `Q57` · t1/2z | 2.3 | not captured | not captured | not captured | not captured | llm (0.6) | Dubbelboer_2025_table_1:row12:col3 | — | not captured |
+| Cl | `Q22` · CL | 0.17 | L/h/kg | 3.3055555555555558e-06 | L/h | not captured | exact (1.0) | Dubbelboer_2025_table_1:row0:col3 | — | not captured |
+| V d | `Q61` · V | 0.55 | L/kg | 0.0385 | L | not captured | space_fold (0.95) | Dubbelboer_2025_table_1:row1:col3 | — | not captured |
+| C maxPO | `Q32` · Cmax | 2.5 | mg/L | not captured | mg/L | not captured | llm (0.6) | Dubbelboer_2025_table_1:row2:col3 | — | not captured |
+| T maxPO | `Q56` · tmax | 7.1 | h | 25560.0 | h | not captured | llm (0.6) | Dubbelboer_2025_table_1:row4:col3 | — | not captured |
+| AUC0‐ꚙIV | `Q17` · AUC∞ | 57.7 | mg*h/L | not captured | mg*h/L | not captured | llm (0.6) | Dubbelboer_2025_table_1:row6:col3 | — | not captured |
+| k eIV | `Q47` · kel | 0.31 | 1/h | 8.61111111111111e-05 | 1/h | not captured | llm (0.6) | Dubbelboer_2025_table_1:row9:col3 | — | not captured |
+| t 1/2zIV | `Q57` · t1/2z | 2.3 | h | 8280.0 | h | not captured | llm (0.6) | Dubbelboer_2025_table_1:row12:col3 | — | not captured |
 | ka (h−1) | `Q49` · kabs | 0.17 | h−1 | 4.722222222222223e-05 | 1/h | not captured | review_gapfill (0.7) | Baklouti_2026:review | — | not captured |
-| T lagpo | `Q83` · tlag | 0.25 | h | 900.0 | h | not captured | review_gapfill (0.7) | Dubbelboer_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -50,6 +50,9 @@ Dubbelboer IR; Olsén L; Pelander L; Lacroix MZ; Claustre L; Roques B; et al. et
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
 - dropped duplicate Q32 ('C max SC', value '10.4') — already have one for this compound
@@ -60,12 +63,18 @@ Dubbelboer IR; Olsén L; Pelander L; Lacroix MZ; Claustre L; Roques B; et al. et
 - dropped duplicate Q47 ('k eSC', value '0.31') — already have one for this compound
 - dropped duplicate Q57 ('t 1/2zPO', value '2.7') — already have one for this compound
 - dropped duplicate Q57 ('t 1/2zSC', value '2.3') — already have one for this compound
+- implicit units: 'Cl' → L/h/kg (from the paper text: "The paper text states: 'the calculated Cl (present: 0.17 L/kg∙h...)' and the abstract states 'The population clearance w")
+- implicit units: 'V d' → L/kg (from the paper text: "The paper text states: 'and V d (present: 0.36 L/kg...)' and the abstract states 'the volume of the central compartment ")
+- implicit units: 'C maxPO' → mg/L (from the popPK convention: "The paper does not explicitly state the unit for Cmax in the text or table footnotes. However, the text reports AUC in '")
+- implicit units: 'T maxPO' → h (from the popPK convention: 'The paper does not explicitly state the unit for Tmax in the text or table footnotes. Tmax is a time parameter, and the ')
+- implicit units: 'AUC0‐ꚙIV' → mg*h/L (from the paper text: "The paper text states: 'leading to a roughly 2‐fold higher IV AUCIV (57.6 mg∙h/L vs. 23.87 mg∙h/L)'.")
+- implicit units: 'k eIV' → 1/h (from the paper text: "The paper text states: 'Without the use of the covariate “sex” the population value for k apo was 0.34 1/h.' While this ")
+- implicit units: 't 1/2zIV' → h (from the popPK convention: 'The paper does not explicitly state the unit for t1/2z in the text or table footnotes. Half-life is a time parameter, an')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amoxicillin
 - population split: 'cat 2' subgroup of Dubbelboer_2025 (paper reports 8 populations: cat 1, cat 2, cat 3, cat 4, cat 5, cat 6, median, typical value)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - gap-filled Q49 (kabs) from Baklouti_2026's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Dubbelboer_2025's review values (primary lacked it)
 
 **Extraction notes:**
 - companion parameter table 1 transcribed (103 record(s))
@@ -100,20 +109,32 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Dubbelboer_2025_table_1:row6:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dubbelboer_2025_table_1:row0:col3'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Dubbelboer_2025_table_1:row2:col3'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Dubbelboer_2025_table_1:row9:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Baklouti_2026:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Dubbelboer_2025:review'] |
-| C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Dubbelboer_2025_table_1:row6:col3'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dubbelboer_2025_table_1:row0:col3'] |
-| C5_unit_missing_Q32 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Dubbelboer_2025_table_1:row2:col3'] |
-| C5_unit_missing_Q47 | fail | 1 / [time] | not captured | not captured | not captured | ['Dubbelboer_2025_table_1:row9:col3'] |
-| C5_unit_missing_Q56 | fail | [time] | not captured | not captured | not captured | ['Dubbelboer_2025_table_1:row4:col3'] |
-| C5_unit_missing_Q57 | fail | [time] | not captured | not captured | not captured | ['Dubbelboer_2025_table_1:row12:col3'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['Dubbelboer_2025_table_1:row1:col3'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Dubbelboer_2025_table_1:row4:col3'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Dubbelboer_2025_table_1:row12:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dubbelboer_2025_table_1:row1:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.17 | not captured | not captured | ['Dubbelboer_2025_table_1:row0:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 11.9 L/h | not captured | not captured | ['Dubbelboer_2025_table_1:row0:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 38.5 L | not captured | not captured | ['Dubbelboer_2025_table_1:row1:col3'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=amoxicillin) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -123,6 +144,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_amoxicillin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dubbelboer_2025` / `Dubbelboer_2025::cat_2`)
+- model: `../../../knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_Dubbelboer2025_cat_2.mo`
+- deviation: `../../../knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_Dubbelboer2025_cat_2.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_amoxicillin/models/modelica/Amoxicillin_Dubbelboer2025_cat_2.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -131,21 +155,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_2/Amoxicillin_Dubbelboer2025_cat_2_modelica.zip" download>Amoxicillin_Dubbelboer2025_cat_2_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_2/Amoxicillin_Dubbelboer2025_cat_2_fmi.zip" download>Amoxicillin_Dubbelboer2025_cat_2_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_2/Amoxicillin_Dubbelboer2025_cat_2_matlab.zip" download>Amoxicillin_Dubbelboer2025_cat_2_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_2/Amoxicillin_Dubbelboer2025_cat_2_matlab_simbio.zip" download>Amoxicillin_Dubbelboer2025_cat_2_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_2/Amoxicillin_Dubbelboer2025_cat_2_sbml.zip" download>Amoxicillin_Dubbelboer2025_cat_2_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_2/Amoxicillin_Dubbelboer2025_cat_2_cellml.zip" download>Amoxicillin_Dubbelboer2025_cat_2_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_2/Amoxicillin_Dubbelboer2025_cat_2.svg" alt="Amoxicillin_Dubbelboer2025_cat_2 diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.17 /h, F 0.9).
+
+<dbs-fmusim paramsurl="drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_2/Amoxicillin_Dubbelboer2025_cat_2_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_2/Amoxicillin_Dubbelboer2025_cat_2_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Amoxicillin_Dubbelboer2025_cat_2_params.json` · controls `Amoxicillin_Dubbelboer2025_cat_2_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 01:10 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 23:53 UTC</sub>

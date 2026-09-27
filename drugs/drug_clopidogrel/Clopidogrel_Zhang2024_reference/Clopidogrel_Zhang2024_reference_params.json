@@ -1,12 +1,16 @@
 {
  "model_id": "Clopidogrel_Zhang2024_reference",
+ "molar_masses": {
+  "central.C": 0.321822
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 7.666666666666667e-06,
   "F": 1.0,
+  "MM": 0.321822,
   "Tlag": 0.0,
   "VdPerKg": 0.012199999999999999,
   "adminCount": 1.0,
@@ -15,10 +19,13 @@
   "ka": 0.00023916666666666666,
   "weight": 70.0
  },
- "reference_peaks": {
-  "C_central": 0.00010302159962059808
+ "reference_peak_times": {
+  "central.C": 14717.43486973948
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 0.0001030213342263689
+ },
+ "stop_time": 432000.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

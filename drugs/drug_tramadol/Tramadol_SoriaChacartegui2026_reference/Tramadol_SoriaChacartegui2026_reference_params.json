@@ -15,10 +15,13 @@
   "ka": 0.0008583333333333333,
   "weight": 70.0
  },
- "reference_peaks": {
-  "central.C": 1.374434273886291e-06
+ "reference_peak_times": {
+  "central.C": 3784.6020893726386
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 0.00027298491756952496
+ },
+ "stop_time": 151200.0,
  "template": "PK_3C_enteral",
  "template_fmu": "PK_3C_enteral.fmu"
 }

@@ -17,7 +17,7 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 5 scholar param(s) emitted or defaulted — got 4 covered
+**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes; the engineer's deviations are not documented and quantified. Evidence: T2_covariates_not_exercised; T3_param_coverage — expected 3 scholar param(s) emitted or defaulted — got 2 covered; T3_topology_template — expected parent_metabolite → PK_Parent_Metabolite* — got PK_1C_enteral; T6_deviations — got invented_absorption: not acceptable
 **Second reading:** Independently confirmed by `gpt-oss:120b`.
 **How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
 <sub>owner: **scholar**</sub>
@@ -27,22 +27,27 @@ Drevin G; Briet M; Bazzoli C; Gyan E; Schmidt A; Dombret H; et al. et al. (2022)
   ·  DOI: [10.3390/pharmaceutics14040792](https://doi.org/10.3390/pharmaceutics14040792)
 
 ## Model component
-<dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Drevin2022_reference" status="model_quarantined" stale="false" population="acute myeloid leukaemia patients" measured-compound="daunorubicin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Drevin2022_reference" status="model_quarantined" stale="false" population="adults with acute myeloid leukaemia" measured-compound="daunorubicin" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Parameterization:** mechanistic.
+**Parameterization:** apparent.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V1 (L) | `Q63` · V1 | 21.1 | L | 0.0211 | [l] | not captured | exact (1.0) | tab_1:row4:col1, tab_1:row4:col2 | — | not captured |
-| V2 (L) | `Q64` · V2 | 1449 | L | 1.449 | [l] | not captured | exact (1.0) | tab_1:row5:col1, tab_1:row5:col2 | — | not captured |
-| V3 (L) | `Q77` · V3 | 323 | L | 0.323 | [l] | not captured | exact (1.0) | tab_1:row6:col1, tab_1:row6:col2 | — | not captured |
-| Q1 (L/h) | `Q30` · Q | 69.4 | L/h | 1.927777777777778e-05 | [l] / [h] | not captured | exact (1.0) | tab_1:row7:col1, tab_1:row7:col2 | — | not captured |
-| Q3 (L/h) | `Q308` · Q3 | 591 | L/h | 0.00016416666666666665 | [l] / [h] | not captured | exact (1.0) | tab_1:row9:col1, tab_1:row9:col2 | — | not captured |
-| Cl m (L/h) | `Q22` · CL | 41.3 | L/h | 1.1472222222222221e-05 | [l] / [h] | not captured | boundary (0.8) | tab_1:row13:col1, tab_1:row13:col2 | linear_fractional on creatinine=-0.027 | not captured |
-| Corr. Q2 Q1 | `Q99` · Q2 | 1 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_1:row27:col1, tab_1:row27:col2 | — | not captured |
+| V1 (L) | `Q63` · V1 | 22.37 | L | 0.02237 | [l] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row3:col1, pharmaceutics-14-00792-t002:row3:col2 | — | not captured |
+| V2 (L) | `Q64` · V2 | 1393 | L | 1.393 | [l] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row4:col1, pharmaceutics-14-00792-t002:row4:col2 | — | not captured |
+| V3 (L) | `Q77` · V3 | 330 | L | 0.33 | [l] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row5:col1, pharmaceutics-14-00792-t002:row5:col2 | — | not captured |
+| Q1 (L/h) | `Q30` · Q | 75.1 | L/h | 2.086111111111111e-05 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row6:col1, pharmaceutics-14-00792-t002:row6:col2 | — | not captured |
+| Q2 (L/h) | `Q99` · Q2 | 135 | L/h | 3.7500000000000003e-05 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row7:col1, pharmaceutics-14-00792-t002:row7:col2 | — | not captured |
+| Q3 (L/h) | `Q30` · Q | 573 | L/h | 0.0001591666666666667 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row8:col1, pharmaceutics-14-00792-t002:row8:col2 | — | not captured |
+| V5 (L) | `Q64` · V2 | 79.2 | L | 0.0792 | [l] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row9:col1, pharmaceutics-14-00792-t002:row9:col2 | — | not captured |
+| β BSA (m2) on V5 | `Q319` · allometric_exponent | 0.98 | not captured | not captured | not captured | not captured | llm (0.6) | pharmaceutics-14-00792-t002:row10:col1 | — | not captured |
+| Kp1m (1/h) | `Q305` · kfm | 3.9 | 1/h | 0.0010833333333333333 | 1/h | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row11:col1, pharmaceutics-14-00792-t002:row11:col2 | — | not captured |
+| Clm (L/h) | `Q22` · CL | 35.8 | L/h | 9.944444444444445e-06 | [l] / [h] | not captured | exact (1.0) | pharmaceutics-14-00792-t002:row12:col1, pharmaceutics-14-00792-t002:row12:col2 | — | not captured |
+| creatinine_mol_l_on_clm | `Q900` · creatinine_mol_l_on_clm | -0.027 | not captured | not captured | not captured | not captured | not captured (not captured) | pharmaceutics-14-00792-t002:row13:col1 | — | not captured |
+| β BSA (m2) on Clm | `Q22` · CL | 1.04 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | pharmaceutics-14-00792-t002:row14:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,36 +57,17 @@ Drevin G; Briet M; Bazzoli C; Gyan E; Schmidt A; Dombret H; et al. et al. (2022)
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q30 ('Q2 (L/h)', value '125') — already have one for this compound
-- dropped duplicate Q77 ('V5 (L)', value '536') — already have one for this compound
-- dropped unlinked row (NIL): 'β BSA (m 2 ) on V5' — extend the ontology if this is a real PK parameter (source ['tab_1:row11:col1'])
-- dropped unlinked row (NIL): 'Kp1m (1/h)' — extend the ontology if this is a real PK parameter (source ['tab_1:row12:col1', 'tab_1:row12:col2'])
-- dropped duplicate Q22 ('β BSA (m 2 ) on Cl m', value '1.04') — already have one for this compound
-- dropped duplicate Q77 ('Kp3m (1/h)', value '0.25') — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=daunorubicin
+- covariate level 'β creatinine (µmol/L) on Clm' → Q900:creatinine_mol_l_on_clm = -0.027 (linear_fractional on Q30)
+- dropped duplicate Q305 ('Kp3m (1/h)', value '0.26') — already have one for this compound
+- implicit units: 'Kp1m (1/h)' → 1/h (from the popPK convention: "Kp1m is defined in the table caption as a 'metabolite transformation rate' and in the text as a 'first-order transformat")
+- implicit units: 'β BSA (m2) on Clm' — the LLM proposed '1/m2', whose dimension does not fit Q351; left unset
+- metabolite daunorubicinol: Q351→Q22 — the model states fm, so its CL/V are not fm-divided
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=daunorubicin
+- template fit: PK_3M_9C — formed from central; parent 3, metabolites [1]
+- row roles (LLM): model_class=compartmental; 14/14 row label(s) assigned, 20 linked by role; re-tagged parent→daunorubicinol ×13
 
 **Extraction notes:**
-- unparsed cell tab_1:row18:col1 = '36% (28.6)'
-- unparsed cell tab_1:row18:col2 = '40% (30.5)'
-- unparsed cell tab_1:row19:col1 = '53% (29.8)'
-- unparsed cell tab_1:row19:col2 = '42% (26.7)'
-- unparsed cell tab_1:row20:col1 = '33% (25.2)'
-- unparsed cell tab_1:row20:col2 = '42% (26.0)'
-- unparsed cell tab_1:row21:col1 = '43% (25.2)'
-- unparsed cell tab_1:row21:col2 = '53% (24.9)'
-- unparsed cell tab_1:row22:col1 = '64% (25.5)'
-- unparsed cell tab_1:row22:col2 = '66% (24.5)'
-- unparsed cell tab_1:row23:col1 = '42% (21.9)'
-- unparsed cell tab_1:row23:col2 = '39% (24.1)'
-- unparsed cell tab_1:row24:col1 = '30% (22.7)'
-- unparsed cell tab_1:row24:col2 = '58% (20.5)'
-- unparsed cell tab_1:row25:col1 = '21% (25.6)'
-- unparsed cell tab_1:row25:col2 = '41% (19.4)'
-- unparsed cell tab_1:row29:col1 = '16% (8.76)'
-- unparsed cell tab_1:row29:col2 = '17% (9.42)'
-- unparsed cell tab_1:row30:col1 = '11% (9.22)'
-- unparsed cell tab_1:row30:col2 = '11% (8.84)'
-- LLM region Drevin_2022:discussion_prose: no JSON records returned
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -104,27 +90,39 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 12 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row13:col1', 'tab_1:row13:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row7:col1', 'tab_1:row7:col2'] |
-| C5_dimension_Q308 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row9:col1', 'tab_1:row9:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row4:col1', 'tab_1:row4:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row5:col1', 'tab_1:row5:col2'] |
-| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 41.3 | not captured | not captured | ['tab_1:row13:col1', 'tab_1:row13:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row12:col1', 'pharmaceutics-14-00792-t002:row12:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row6:col1', 'pharmaceutics-14-00792-t002:row6:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row8:col1', 'pharmaceutics-14-00792-t002:row8:col2'] |
+| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row11:col1', 'pharmaceutics-14-00792-t002:row11:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row3:col1', 'pharmaceutics-14-00792-t002:row3:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row4:col1', 'pharmaceutics-14-00792-t002:row4:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row9:col1', 'pharmaceutics-14-00792-t002:row9:col2'] |
+| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row5:col1', 'pharmaceutics-14-00792-t002:row5:col2'] |
+| C5_dimension_Q99 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row7:col1', 'pharmaceutics-14-00792-t002:row7:col2'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-00792-t002:row14:col1'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 35.8 L/h | not captured | not captured | ['pharmaceutics-14-00792-t002:row12:col1', 'pharmaceutics-14-00792-t002:row12:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 22.4 L | not captured | not captured | ['pharmaceutics-14-00792-t002:row3:col1', 'pharmaceutics-14-00792-t002:row3:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 1.39e+03 L | not captured | not captured | ['pharmaceutics-14-00792-t002:row4:col1', 'pharmaceutics-14-00792-t002:row4:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 79.2 L | not captured | not captured | ['pharmaceutics-14-00792-t002:row9:col1', 'pharmaceutics-14-00792-t002:row9:col2'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['V2'] |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | fail | 3 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['V2'] |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | pass | parent_metabolite → PK_Parent_Metabolite* | PK_Parent_Metabolite | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T3_shared_parameters | not captured | pass | 1 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -146,12 +144,12 @@ _Every reader agrees on every compared field of this record._
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference/Daunorubicin_Drevin2022_reference_matlab.zip" download>Daunorubicin_Drevin2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference/Daunorubicin_Drevin2022_reference_matlab_simbio.zip" download>Daunorubicin_Drevin2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference/Daunorubicin_Drevin2022_reference_sbml.zip" download>Daunorubicin_Drevin2022_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference/Daunorubicin_Drevin2022_reference_cellml.zip" download>Daunorubicin_Drevin2022_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -161,4 +159,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:56 UTC</sub>

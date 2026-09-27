@@ -16,19 +16,19 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 14:44 | 11:20 | 0/1/0 | 0/0/0 | 0/0/1 | 24,995/1,417 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
+| 2026-09-26 10:50 | 1:12 | 0/1/0 | 0/0/0 | 0/0/1 | 4,360/3,221 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kobari_1984_reference](drugs/drug_aprindine/Aprindine_Kobari1984_reference.md) | Kobari T et al., Dose-dependent pharmacokinetics of apri…, European journal of clinica… (1984) | [10.1007/BF00546721](https://doi.org/10.1007/BF00546721) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kobari_1984_reference](drugs/drug_aprindine/Aprindine_Kobari1984_reference.md) | Kobari T et al., Dose-dependent pharmacokinetics of apri…, European journal of clinica… (1984) | [10.1007/BF00546721](https://doi.org/10.1007/BF00546721) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Ebner_1993](drugs/drug_aprindine/pgx_Ebner_1993_CYP2D6_Q27.md) | Ebner T et al., The metabolism of aprindine in relation…, British journal of clinical… (1993) | [10.1111/j.1365-2125.1993.tb04161.x](https://doi.org/10.1111/j.1365-2125.1993.tb04161.x) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Ebner_1993](drugs/drug_aprindine/pgx_Ebner_1993_CYP2D6_Q27.md) | Ebner T et al., The metabolism of aprindine in relation…, British journal of clinical… (1993) | [10.1111/j.1365-2125.1993.tb04161.x](https://doi.org/10.1111/j.1365-2125.1993.tb04161.x) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>
@@ -71,7 +71,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Wirth_1983.pdf` | Wirth KE et al., [Detection of aprindine and its metabol…, Herz (1983) | popPK | 8 | not captured | [6642401](https://pubmed.ncbi.nlm.nih.gov/6642401) | The study reports a two-compartment model and elimination half-lives (37h plasma, 31h urine) for aprindine, but lacks explicit values for clearance, volume of distribution, or absorption rate constants. |
 | `Kobayashi_1998.pdf` | Kobayashi K et al., Inhibitory effects of antiarrhythmic dr…, British journal of clinical… (1998) | pgx | 7 | [10.1046/j.1365-2125.1998.t01-1-00692.x](https://doi.org/10.1046/j.1365-2125.1998.t01-1-00692.x) | [9578183](https://www.ncbi.nlm.nih.gov/pubmed/9578183) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-09-19T14:43:28.034424+00:00</sub>
+<sub>queue written 2026-09-26T10:49:09.150646+00:00</sub>
 
 ## Screened and excluded
 

@@ -56,9 +56,6 @@ Sethuramalingam S; Mohapatra S; Agarwal PK; Kumar-M P; Hota D; Gopal J; Kulkarni
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - review gap-fill skipped: this record measures 'asparaginase', not escherichia_coli — the review values are the parent's
-- unit_dimension_unknown: '/h' (t1/2ka )
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - companion parameter table 2 transcribed (0 record(s))
@@ -116,9 +113,7 @@ Sethuramalingam S; Mohapatra S; Agarwal PK; Kumar-M P; Hota D; Gopal J; Kulkarni
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_escherichia_coli/EscherichiaColi_Sethuramalingam2026_reference/EscherichiaColi_Sethuramalingam2026_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_escherichia_coli/EscherichiaColi_Sethuramalingam2026_reference/EscherichiaColi_Sethuramalingam2026_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `EscherichiaColi_Sethuramalingam2026_reference_params.json` · controls `EscherichiaColi_Sethuramalingam2026_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

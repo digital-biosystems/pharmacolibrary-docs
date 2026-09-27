@@ -100,16 +100,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=duloxetine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | not captured | 6.884197100005814e-05 | not captured | non-numeric value |
-| T1_cmax | reference | skipped | not captured | 6.884197100005814e-05 | not captured | non-numeric value |
-| T1_t_half_terminal | reference | skipped | not captured | 13.57546826643119 | not captured | non-numeric value |
-| T1_tmax | reference | skipped | not captured | 7.7434869739478955 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | not captured | 6.884169563690553e-05 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | not captured | 6.884169563690553e-05 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | skipped | not captured | 12.569485708314847 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 7.695390781563126 | not captured | non-numeric value |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -130,7 +131,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_modelica.zip" download>Duloxetine_Skinner2004_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_modelica.zip" download>Duloxetine_Skinner2004_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_fmi.zip" download>Duloxetine_Skinner2004_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_matlab.zip" download>Duloxetine_Skinner2004_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_matlab_simbio.zip" download>Duloxetine_Skinner2004_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

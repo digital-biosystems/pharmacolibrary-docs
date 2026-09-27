@@ -5,7 +5,7 @@
 
 # ticagrelor — `Ticagrelor_Henrich2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.545). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q3]` (not captured vs 0.0071) and 9 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
 
@@ -25,6 +26,9 @@ Henrich A; Claussen CH; Dingemanse J; Krause A et al. (2021). CPT: pharmacometri
 
 ## Model component
 <dbs-pgx drug="ticagrelor" model-id="Ticagrelor_Henrich2021_reference" status="curated_candidate" stale="false" population="" measured-compound="ticagrelor" parameterization="mechanistic" topology="2C"></dbs-pgx>
+
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -53,14 +57,29 @@ Henrich A; Claussen CH; Dingemanse J; Krause A et al. (2021). CPT: pharmacometri
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.545 (12/22 fields) | 10 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>10 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q314]` | 0.724 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q316]` | 0.14 | 0.14 | mismatch |
+| `gpt-oss:120b` | `values[Q317]` | 3.65 | 3.65 | mismatch |
+| `gpt-oss:120b` | `values[Q325]` | not captured | 3.63 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q329]` | not captured | 6.57 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q343]` | not captured | 2.49 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q3]` | not captured | 0.0071 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q47]` | not captured | 0.0082 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q61]` | 17.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q63]` | not captured | 17.0 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -89,6 +108,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=ticagrelor) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
@@ -114,7 +134,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference/Ticagrelor_Henrich2021_reference_modelica.zip" download>Ticagrelor_Henrich2021_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference/Ticagrelor_Henrich2021_reference_modelica.zip" download>Ticagrelor_Henrich2021_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference/Ticagrelor_Henrich2021_reference_fmi.zip" download>Ticagrelor_Henrich2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference/Ticagrelor_Henrich2021_reference_matlab.zip" download>Ticagrelor_Henrich2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference/Ticagrelor_Henrich2021_reference_matlab_simbio.zip" download>Ticagrelor_Henrich2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -126,6 +146,8 @@ _Every reader agrees on every compared field of this record._
 </div><figure class="pk-models-diagram"><img src="drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference/Ticagrelor_Henrich2021_reference.svg" alt="Ticagrelor_Henrich2021_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
+
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 5.95 /h, F 0.9).
 
 <dbs-fmusim paramsurl="drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference/Ticagrelor_Henrich2021_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference/Ticagrelor_Henrich2021_reference_sim_controls.json"></dbs-fmusim>
 

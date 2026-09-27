@@ -24,9 +24,12 @@
   ·  DOI: [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812)
 
 ## Model component
-<dbs-pgx drug="ticagrelor" model-id="Ticagrelor_strand2019_reference" status="rejected" stale="false" population="patients with stable coronary artery disease and prior myocardial infarction" measured-compound="ticagrelor" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="ticagrelor" model-id="Ticagrelor_strand2019_reference" status="rejected" stale="false" population="stable coronary artery disease and prior myocardial infarction patients" measured-compound="ticagrelor" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Parameterization:** CL/F, CLm/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Model structure:** parent–metabolite model: parent with 2 compartment(s); metabolite AR-C124910XX: 2 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
+**Parameters:** 12 extracted, plus 1 covariate effect.
+
+**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
@@ -37,13 +40,15 @@
 | Q/F (l h –1 ) | `Q69` · Q/F | 10.4 | l h –1 | 2.8888888888888894e-06 | [l] / [h] | not captured | exact (1.0) | bcp13812-tbl-0002:row2:col1, bcp13812-tbl-0002:row2:col3 | — | not captured |
 | Vc/F (l) | `Q290` · V1/F | 156 | l | 0.156 | [l] | not captured | exact (1.0) | bcp13812-tbl-0002:row3:col1 | — | not captured |
 | Vp/F (l) | `Q82` · V2/F | 55.8 | l | 0.055799999999999995 | [l] | not captured | exact (1.0) | bcp13812-tbl-0002:row4:col1 | — | not captured |
-| KTR (h −1 ) | `Q306` · ktr | 10.1 | h −1 | 0.0028055555555555555 | [1] / [h] | not captured | exact (1.0) | bcp13812-tbl-0002:row5:col1, bcp13812-tbl-0002:row5:col3 | — | not captured |
+| KTR (h −1 ) | `Q49` · kabs | 10.1 | h −1 | 0.0028055555555555555 | [1] / [h] | not captured | exact (1.0) | bcp13812-tbl-0002:row5:col1, bcp13812-tbl-0002:row5:col3 | — | not captured |
 | Absorption lag time prior MI (h) | `Q83` · tlag | 0.48 | h | 1728.0 | [h] | not captured | llm_confirmed (0.6) | bcp13812-tbl-0002:row6:col1 | — | not captured |
 | F rel | `Q87` · Frel | 1 | not captured | not captured | not captured | not captured | exact (1.0) | bcp13812-tbl-0002:row7:col1, bcp13812-tbl-0002:row7:col3 | — | not captured |
-| CL m /F (l h –1 ) | `Q351` · CLm/F | 10.2 | l h –1 | 2.833333333333333e-06 | [l] / [h] | not captured | space_fold (0.95) | bcp13812-tbl-0002:row9:col1, bcp13812-tbl-0002:row9:col3 | — | not captured |
-| F m | `Q45` · fm | 0.22 | not captured | not captured | not captured | not captured | space_fold (0.95) | bcp13812-tbl-0002:row10:col1 | — | not captured |
+| CL m /F (l h –1 ) | `Q27` · CL/F | 10.2 | l h –1 | 2.833333333333333e-06 | [l] / [h] | not captured | exact (1.0) | bcp13812-tbl-0002:row9:col1, bcp13812-tbl-0002:row9:col3 | — | not captured |
+| F m | `Q45` · fm | 0.22 | not captured | not captured | not captured | not captured | exact (1.0) | bcp13812-tbl-0002:row10:col1 | — | not captured |
+| Q m /F (l h –1 ) | `Q69` · Q/F | 4.41 | l h –1 | 1.225e-06 | [l] / [h] | not captured | exact (1.0) | bcp13812-tbl-0002:row11:col1 | — | not captured |
+| Vc m /F (l) | `Q290` · V1/F | 7.04 | l | 0.00704 | [l] | not captured | exact (1.0) | bcp13812-tbl-0002:row12:col1 | — | not captured |
+| Vp m /F (l) | `Q82` · V2/F | 42.3 | l | 0.0423 | [l] | not captured | exact (1.0) | bcp13812-tbl-0002:row13:col1, bcp13812-tbl-0002:row13:col3 | — | not captured |
 | exponent_for_pru_error | `Q900` · exponent_for_pru_error | 0.48 | not captured | not captured | not captured | not captured | not captured (not captured) | bcp13812-tbl-0002:row22:col1 | — | not captured |
-| ka (1/h) | `Q49` · kabs | 5.95 | 1/h | 0.0016527777777777778 | 1/h | not captured | review_gapfill (0.7) | Henrich_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,19 +57,21 @@
 
 ## Departures & gaps
 
+**Deviations:**
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - column 'bsv (%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped duplicate Q69 ('Q m /F (l h –1 )', value '4.41') — already have one for this compound
-- dropped duplicate Q290 ('Vc m /F (l)', value '7.04') — already have one for this compound
-- dropped duplicate Q82 ('Vp m /F (l)', value '42.3') — already have one for this compound
 - dropped PD-category row 'PRU baseline ONSET/OFFSET' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['bcp13812-tbl-0002:row15:col3'])
 - dropped PD-category row 'EC 50 (nmol l –1 )' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['bcp13812-tbl-0002:row17:col1', 'bcp13812-tbl-0002:row17:col3'])
-- dropped PD-category row 'PRU baseline ‐EC 50 correlation' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['bcp13812-tbl-0002:row18:col3'])
+- dropped unlinked row (NIL): 'PRU baseline ‐EC 50 correlation' — extend the ontology if this is a real PK parameter (source ['bcp13812-tbl-0002:row18:col3'])
 - dropped PD-category row 'E max (%)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['bcp13812-tbl-0002:row19:col1', 'bcp13812-tbl-0002:row19:col3'])
 - dropped PD-category row 'Steepness of exposure‐response (γ)' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['bcp13812-tbl-0002:row20:col1'])
 - covariate level 'Exponent for PRU error (α)' → Q900:exponent_for_pru_error = 0.48 (power on Q27)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=ticagrelor
-- gap-filled Q49 (kabs) from Henrich_2021's review values (primary lacked it)
+- template fit: PK_3M_9C — formed from central; parent 2, metabolites [2]
+- row roles (LLM): model_class=compartmental; 21/21 row label(s) assigned, 16 linked by role; re-tagged parent→AR-C124910XX ×8
+- molar mass: none found for 'AR-C124910XX' — its concentrations stay mass-only
 
 **Extraction notes:**
 - unparsed cell bcp13812-tbl-0002:row1:col2 = '(3.6)'
@@ -104,22 +111,28 @@
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 13 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp13812-tbl-0002:row1:col1', 'bcp13812-tbl-0002:row1:col3'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp13812-tbl-0002:row9:col1', 'bcp13812-tbl-0002:row9:col3'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp13812-tbl-0002:row3:col1'] |
-| C5_dimension_Q306 | pass | 1 / [time] | not captured | not captured | not captured | ['bcp13812-tbl-0002:row5:col1', 'bcp13812-tbl-0002:row5:col3'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp13812-tbl-0002:row9:col1', 'bcp13812-tbl-0002:row9:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Henrich_2021:review'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp13812-tbl-0002:row12:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['bcp13812-tbl-0002:row5:col1', 'bcp13812-tbl-0002:row5:col3'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp13812-tbl-0002:row2:col1', 'bcp13812-tbl-0002:row2:col3'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp13812-tbl-0002:row11:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp13812-tbl-0002:row4:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp13812-tbl-0002:row13:col1', 'bcp13812-tbl-0002:row13:col3'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['bcp13812-tbl-0002:row6:col1'] |
-| C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | Fm=0.22 present with apparent parameterization | not captured | not captured | not captured |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 16.6 L/h | not captured | not captured | ['bcp13812-tbl-0002:row1:col1', 'bcp13812-tbl-0002:row1:col3'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 10.2 L/h | not captured | not captured | ['bcp13812-tbl-0002:row9:col1', 'bcp13812-tbl-0002:row9:col3'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 156 L | not captured | not captured | ['bcp13812-tbl-0002:row3:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 7.04 L | not captured | not captured | ['bcp13812-tbl-0002:row12:col1'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 55.8 L | not captured | not captured | ['bcp13812-tbl-0002:row4:col1'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 42.3 L | not captured | not captured | ['bcp13812-tbl-0002:row13:col1', 'bcp13812-tbl-0002:row13:col3'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -139,9 +152,13 @@
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 10.1 /h, lag 28.8 min, F 1).
+
+<dbs-fmusim paramsurl="drugs/drug_ticagrelor/Ticagrelor_strand2019_reference/Ticagrelor_strand2019_reference_params.json" metaurl="assets/fmu/PK_3M_9C.vr.json" wasmurl="assets/fmu/PK_3M_9C.js" controlsurl="drugs/drug_ticagrelor/Ticagrelor_strand2019_reference/Ticagrelor_strand2019_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_3M_9C` · parameters `Ticagrelor_strand2019_reference_params.json` · controls `Ticagrelor_strand2019_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-05 23:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:38 UTC</sub>

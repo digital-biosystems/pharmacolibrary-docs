@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default; C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from
+**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default
 **Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Compare unit_verbatim with unit_canonical in _interpretv2.yaml for that parameter.
+**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
 
 > **Dose compound ≠ measured compound:** dosed `allopurinol`, measured `oxypurinol`.
@@ -27,7 +27,10 @@ Stocker SL; McLachlan AJ; Savic RM; Kirkpatrick CM; Graham GG; Williams KM; et a
   ·  DOI: [10.1111/j.1365-2125.2012.04207.x](https://doi.org/10.1111/j.1365-2125.2012.04207.x)
 
 ## Model component
-<dbs-pgx drug="allopurinol" model-id="Allopurinol_Stocker2012_reference" status="needs_review" stale="false" population="adults with gout" measured-compound="oxypurinol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="allopurinol" model-id="Allopurinol_Stocker2012_reference" status="needs_review" stale="false" population="gouty patients" measured-compound="oxypurinol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 1 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
@@ -36,8 +39,8 @@ Stocker SL; McLachlan AJ; Savic RM; Kirkpatrick CM; Graham GG; Williams KM; et a
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| TVCL | `Q22` · CL | 7 | not captured | not captured | not captured | not captured | tv_prefix (0.95) | tab_0:row0:col1, tab_0:row0:col9, tab_0:row0:col13 | — | not captured |
-| BCRP | `Q900` · BCRP | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| TVCL | `Q22` · CL | 7 | L/h | 1.9444444444444444e-06 | L/h | not captured | exact (1.0) | tab_0:row0:col1, tab_0:row0:col9, tab_0:row0:col13 | — | not captured |
+| ABCB2 | `Q900` · ABCB2 | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -50,7 +53,10 @@ Stocker SL; McLachlan AJ; Savic RM; Kirkpatrick CM; Graham GG; Williams KM; et a
 - column 'm f = × θ 1' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '7' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '8' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- implicit units: 'TVCL' → L/h (from the paper text: "The Results section states: 'CL/Fm for patients with normal, mild, moderate and severe renal impairment was 1.8, 0.6, 0.")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=oxypurinol
+- template fit: PK_Parent_Metabolite — one metabolite formed from central, both 1-compartment
+- row roles (LLM): model_class=compartmental; 1/1 row label(s) assigned, 3 linked by role
 - review gap-fill skipped: this record measures 'oxypurinol', not allopurinol — the review values are the parent's
 
 **Extraction notes:**
@@ -83,9 +89,10 @@ _Every reader agrees on every compared field of this record._
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row0:col1', 'tab_0:row0:col9', 'tab_0:row0:col13'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row0:col1', 'tab_0:row0:col9', 'tab_0:row0:col13'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.0 | not captured | not captured | ['tab_0:row0:col1', 'tab_0:row0:col9', 'tab_0:row0:col13'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 7 L/h | not captured | not captured | ['tab_0:row0:col1', 'tab_0:row0:col9', 'tab_0:row0:col13'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -120,4 +127,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 00:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 08:03 UTC</sub>

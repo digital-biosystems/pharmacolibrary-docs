@@ -19,7 +19,7 @@ Orlistat is a lipase inhibitor used in the treatment of obesity that works by in
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-12 01:43 | 17:20 | 0/0/0 | 1/1/0 | 0/0/0 | 354,088/5,826 | ollama / qwen3.8:27b-mtp-q8_0 | 21 | 0/0 | 21/0 | 0 |
+| 2026-09-26 10:28 | 2:37 | 0/0/0 | 1/1/0 | 0/0/0 | 14,081/2,042 | ollama / qwen3.8:27b-mtp-q8_0 | 21 | 0/2 | 21/0 | 0 |
 
 ## popPK records
 
@@ -29,8 +29,8 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Tongluan_2017](drugs/drug_orlistat/pd_Tongluan_2017_unknown.md) | Tongluan N et al., Involvement of fatty acid synthase in d…, Virology journal (2017) | [10.1186/s12985-017-0685-9](https://doi.org/10.1186/s12985-017-0685-9) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Steketee_2021](drugs/drug_orlistat/pd_Steketee_2021_unknown.md) | Steketee PC et al., Divergent metabolism between Trypanosom…, PLoS pathogens (2021) | [10.1371/journal.ppat.1009734](https://doi.org/10.1371/journal.ppat.1009734) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Tongluan_2017](drugs/drug_orlistat/pd_Tongluan_2017_unknown.md) | Tongluan N et al., Involvement of fatty acid synthase in d…, Virology journal (2017) | [10.1186/s12985-017-0685-9](https://doi.org/10.1186/s12985-017-0685-9) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Steketee_2021](drugs/drug_orlistat/pd_Steketee_2021_unknown.md) | Steketee PC et al., Divergent metabolism between Trypanosom…, PLoS pathogens (2021) | [10.1371/journal.ppat.1009734](https://doi.org/10.1371/journal.ppat.1009734) |
 
 ## ADME sites
 
@@ -54,7 +54,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 210 matched, 55 returned
+- **PubMed hits:** 210 matched, 56 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -71,7 +71,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Zhang_2021.pdf` | Zhang L et al., Drug-guided screening for pancreatic li…, Food & function (2021) | pd | 4 | [10.1039/d0fo03366a](https://doi.org/10.1039/d0fo03366a) | [33912875](https://www.ncbi.nlm.nih.gov/pubmed/33912875) | metadata signals extractable PD data (IC50) |
 | `Hwang_2014.pdf` | Hwang IC et al., Effects of CYP3A5, CYP2C19, and CYP2B6…, Clinica chimica acta; inter… (2014) | pgx | 8 | [10.1016/j.cca.2013.11.007](https://doi.org/10.1016/j.cca.2013.11.007) | [24262967](https://www.ncbi.nlm.nih.gov/pubmed/24262967) | metadata signals extractable PGX data (CYP3A5, PK/PD-context) |
 
-<sub>queue written 2026-09-12T01:39:05.761681+00:00</sub>
+<sub>queue written 2026-09-26T10:27:26.133485+00:00</sub>
 
 ## Screened and excluded
 

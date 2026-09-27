@@ -1,5 +1,8 @@
 {
  "model_id": "Amoxicillin_AlbanellFernndez2025_reference",
+ "molar_masses": {
+  "central.C": 0.365404
+ },
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,6 +10,7 @@
  "parameters": {
   "Cl": 3.5e-06,
   "F": 1.0,
+  "MM": 0.365404,
   "VdPerKg": 0.00132,
   "adminCount": 1.0,
   "adminDuration": 600.0,
@@ -15,10 +19,13 @@
   "k21": 0.00014726027397260274,
   "weight": 70.0
  },
- "reference_peaks": {
-  "central.C": 0.0008319626313436267
+ "reference_peak_times": {
+  "central.C": 660.0000000662055
  },
- "stop_time": 86400.0,
+ "reference_peaks": {
+  "central.C": 0.0009075858694365088
+ },
+ "stop_time": 93600.0,
  "template": "PK_2C",
  "template_fmu": "PK_2C.fmu"
 }

@@ -5,7 +5,7 @@
 
 # allopurinol — `Allopurinol_Wen2023_final`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-5.6-luna (not confirmed, agreement 0.636), gpt-oss:120b (partly confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583), gpt-5.6-luna (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,12 +13,14 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+
 ### Reviewer guidance
 
-**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default
-**Second reading:** `gpt-5.6-luna` read this paper differently on `parameters[cl/fm].covariate_forms` (['power'] vs []) and 3 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
-<sub>owner: **curator**</sub>
+**Why:** T6_deviations
+**Second reading:** `gpt-oss:120b` read this paper differently on `parameters[cl/fm].parameter_id` (Q27 vs Q351) and 4 more field(s) — a structural parameter, so the record is disputed.
+**How to address:** Read the .deviation.json and confirm each deviation names what changed and why.
+<sub>owner: **engineer**</sub>
 
 > **Dose compound ≠ measured compound:** dosed `allopurinol`, measured `oxypurinol`.
 
@@ -29,17 +31,21 @@ Wen YF; Brundage RC; Roman YM; Culhane-Pera KA; Straka RJ et al. (2023). British
 ## Model component
 <dbs-pgx drug="allopurinol" model-id="Allopurinol_Wen2023_final" status="needs_review" stale="false" population="Hmong adults with gout and/or hyperuricemia" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted, plus 2 covariate effects.
+
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/fm (L/h) | `Q351` · CLm/F | 1.05 | L/h | 2.916666666666667e-07 | [l] / [h] | not captured | exact (1.0) | T2:row2:col2 | — | not captured |
-| V/fm (L) | `Q367` · Vm/F | 59.3 | L | 0.0593 | [l] | not captured | exact (1.0) | T2:row3:col2 | — | not captured |
+| CL/fm (L/h) | `Q27` · CL/F | 1.05 | L/h | 2.916666666666667e-07 | [l] / [h] | not captured | exact (1.0) | T2:row2:col2 | — | not captured |
+| V/fm (L) | `Q76` · V/F | 59.3 | L | 0.0593 | [l] | not captured | exact (1.0) | T2:row3:col2 | — | not captured |
 | Kfm (/h) | `Q305` · kfm | 1.1 | /h | 0.0003055555555555556 | [1] / [h] | not captured | exact (1.0) | T2:row4:col2 | — | 27.9 (None% RSE) |
 | standardized_creatinine_clearance_power_on_baseline_su | `Q900` · standardized_creatinine_clearance_power_on_baseline_su | -0.18 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row12:col2 | — | not captured |
+| ABCB2 | `Q900` · ABCB2 | {'AA': 0.0, 'CA': 0.0539, 'CC': 0.0183} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -48,16 +54,25 @@ Wen YF; Brundage RC; Roman YM; Culhane-Pera KA; Straka RJ et al. (2023). British
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'BLurate (mg/dL)' — extend the ontology if this is a real PK parameter (source ['T2:row5:col2'])
 - dropped PD-category row 'Imax (mg/dL)' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row6:col2'])
 - dropped PD-category row 'IC50 (mg/L)' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row7:col2'])
 - dropped unlinked row (NIL): 'Standardized creatinine clearance (power)' — extend the ontology if this is a real PK parameter (source ['T2:row9:col2'])
 - dropped unlinked row (NIL): 'SLC22A12 rs505802 T allelea' — extend the ontology if this is a real PK parameter (source ['T2:row10:col2'])
-- covariate level 'Standardized creatinine clearance (power) on baseline SU' → Q900:standardized_creatinine_clearance_power_on_baseline_su = -0.18 (power on Q351)
-- dropped PD-category row 'PDZK1 rs12129861 A allele on IC50a' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row13:col2'])
+- covariate level 'Standardized creatinine clearance (power) on baseline SU' → Q900:standardized_creatinine_clearance_power_on_baseline_su = -0.18 (power on Q27)
+- dropped unlinked row (NIL): 'PDZK1 rs12129861 A allele on IC50a' — extend the ontology if this is a real PK parameter (source ['T2:row13:col2'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=oxypurinol
+- template fit: PK_Parent_Metabolite — one metabolite formed from central, both 1-compartment
+- 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V/fm (L)' is the general volume)
 - model-stage split: 'final model' is the final model of Wen_2023 (paper reports 2 stages: base model, final model); same population, different model-building step
+- row roles (LLM): model_class=compartmental; 13/13 row label(s) assigned, 7 linked by role; re-tagged oxypurinol→serum urate ×14
 - review gap-fill skipped: this record measures 'oxypurinol', not allopurinol — the review values are the parent's
 
 **Extraction notes:**
@@ -79,10 +94,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.583 (7/12 fields) | 5 |
 | `gpt-5.6-luna` | not confirmed | 0.636 (7/11 fields) | 4 |
-| `gpt-oss:120b` | partly confirmed | 0.9 (9/10 fields) | 1 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -90,7 +105,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-5.6-luna` | `parameters[standardized_creatinine_clearance_power_on_baseline_su]` | -0.18 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[theta_q319_creatinine_power]` | not captured | 0.45 | only_one_extracted |
 | `gpt-5.6-luna` | `parameters[theta_q354_creatinine_power]` | not captured | -0.18 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q22_creatinine_power]` | not captured | 0.45 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/fm].covariate_forms` | ['power'] | [] | mismatch |
+| `gpt-oss:120b` | `parameters[cl/fm].parameter_id` | Q27 | Q351 | mismatch |
+| `gpt-oss:120b` | `parameters[standardized_creatinine_clearance_power_on_baseline_su]` | -0.18 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q22_creatinine_power]` | not captured | -0.18 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/fm].parameter_id` | Q76 | Q367 | mismatch |
 
 </details>
 
@@ -106,13 +125,27 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row2:col2'] |
 | C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row4:col2'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row2:col2'] |
-| C5_dimension_Q367 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row3:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row3:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 1.05 L/h | not captured | not captured | ['T2:row2:col2'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 59.3 L | not captured | not captured | ['T2:row3:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=oxypurinol) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -122,6 +155,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_allopurinol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Wen_2023` / `Wen_2023::final`)
+- model: `../../../knowledgebase/drugs/drug_allopurinol/models/modelica/Allopurinol_Wen2023_final.mo`
+- deviation: `../../../knowledgebase/drugs/drug_allopurinol/models/modelica/Allopurinol_Wen2023_final.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_allopurinol/models/modelica/Allopurinol_Wen2023_final.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -130,21 +166,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_modelica.zip" download>Allopurinol_Wen2023_final_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_fmi.zip" download>Allopurinol_Wen2023_final_fmi.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_modelica.zip" download>Allopurinol_Wen2023_final_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_fmi.zip" download>Allopurinol_Wen2023_final_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_matlab.zip" download>Allopurinol_Wen2023_final_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_matlab_simbio.zip" download>Allopurinol_Wen2023_final_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_sbml.zip" download>Allopurinol_Wen2023_final_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_sbml.zip" download>Allopurinol_Wen2023_final_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_cellml.zip" download>Allopurinol_Wen2023_final_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final.svg" alt="Allopurinol_Wen2023_final diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1).
+
+<dbs-fmusim paramsurl="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_allopurinol/Allopurinol_Wen2023_final/Allopurinol_Wen2023_final_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Allopurinol_Wen2023_final_params.json` · controls `Allopurinol_Wen2023_final_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 00:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 08:03 UTC</sub>

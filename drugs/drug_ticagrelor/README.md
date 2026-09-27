@@ -21,21 +21,21 @@ Ticagrelor was granted FDA approval on 20 July 2011.[L14201]
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-06 00:04 | 23:35 | 1/2/0 | 1/2/0 | 0/0/0 | 858,465/40,326 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 1/6 | 7/0 | 0 |
+| 2026-09-26 20:39 | 1:16 | 2/1/0 | 1/2/0 | 0/0/0 | 25,556/1,000 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 1/6 | 7/0 | 0 |
 
 ## popPK records
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Henrich_2021_reference](drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md) | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kathman_2022_reference](drugs/drug_ticagrelor/Ticagrelor_Kathman2022_reference.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Åstrand_2019_reference](drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md) | Åstrand M et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2019) | [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812) |
+| status | detail | model structure | params | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.545). The first reading is what the record holds.">cross-check: disputed</span> | [Henrich_2021_reference](drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md) | 2-compartment, oral | 5 | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kathman_2022_reference](drugs/drug_ticagrelor/Ticagrelor_Kathman2022_reference.md) | parent + metabolite (no model) | 1 (+5 cov.) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Åstrand_2019_reference](drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md) | parent 2-cmt + 1 metabolite (2-cmt) | 12 (+1 cov.) | Åstrand M et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2019) | [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Åstrand_2019](drugs/drug_ticagrelor/pd_strand_2019_PRU.md) | Åstrand M et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2019) | [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Åstrand_2019](drugs/drug_ticagrelor/pd_strand_2019_PRU.md) | Åstrand M et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2019) | [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Henrich_2021](drugs/drug_ticagrelor/pd_Henrich_2021_PRU.md) | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022](drugs/drug_ticagrelor/pd_Kathman_2022_LTA.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
 | <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022](drugs/drug_ticagrelor/pd_Kathman_2022_PRU.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
@@ -74,21 +74,6 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 - **records:** 3  ·  extracted 1  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full text wanted
-
-_6 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Amilon_2019.pdf` | Amilon C et al., Population Pharmacokinetics/Pharmacodyn…, Clinical pharmacokinetics (2019) | popPK | 10 | [10.1007/s40262-019-00758-0](https://doi.org/10.1007/s40262-019-00758-0) | [30972696](https://pubmed.ncbi.nlm.nih.gov/30972696) | The paper reports a population PK model for ticagrelor with specific numeric values for clearance (22.8 L/h) and PK/PD parameters (EC50 233 nmol/L) present in the text. |
-| `Li_2016.pdf` | Li J et al., Population pharmacokinetics of ticagrel…, International journal of cl… (2016) | popPK | 10 | [10.5414/CP202549](https://doi.org/10.5414/CP202549) | [27191766](https://pubmed.ncbi.nlm.nih.gov/27191766) | The paper is a population PK study for ticagrelor and explicitly reports numeric values for ka, CL, and V in the text. |
-| `Liu_2018.pdf` | Liu S et al., Population pharmacokinetics and pharmac…, European journal of clinica… (2018) | popPK | 10 | [10.1007/s00228-018-2427-3](https://doi.org/10.1007/s00228-018-2427-3) | [29442148](https://pubmed.ncbi.nlm.nih.gov/29442148) | The paper describes a population PK study for ticagrelor, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| `Liu_2024.pdf` | Liu M et al., Population pharmacokinetic study and ap…, International journal of cl… (2024) | popPK | 10 | [10.5414/CP204550](https://doi.org/10.5414/CP204550) | [39037109](https://pubmed.ncbi.nlm.nih.gov/39037109) | The study is a population PK analysis of ticagrelor, but only the absorption rate constant (0.67/h) is explicitly provided in the text, while other key parameters like clearance and volume are described qualitatively or implied to be in the full model not shown. |
-| `Liu_2023.pdf` | Liu Z et al., Integrated Pharmacokinetics/Pharmacodyn…, Clinical pharmacokinetics (2023) | popPK | 9 | [10.1007/s40262-022-01208-0](https://doi.org/10.1007/s40262-022-01208-0) | [36735213](https://pubmed.ncbi.nlm.nih.gov/36735213) | The paper describes a population PK model for ticagrelor, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, only PD metrics and model structure descriptions. |
-| `Liu_2023_2.pdf` | Liu Y et al., Model-Informed Dosing Regimen of Ticagr…, Clinical pharmacology and t… (2023) | popPK | 9 | [10.1002/cpt.3048](https://doi.org/10.1002/cpt.3048) | [37702259](https://pubmed.ncbi.nlm.nih.gov/37702259) | The paper describes a population pharmacokinetic model for ticagrelor, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract/evidence. |
-
-<sub>queue written 2026-09-05T23:42:38.708536+00:00</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
@@ -115,4 +100,4 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Zhou_2025 | irrelevant | 0 | 0 | The paper is a clinical trial evaluating antiplatelet efficacy and safety outcomes, not a pharmacokinetic study, and contains no PK parameters for ticagrelor. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-05 23:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-26 20:38 UTC</sub>

@@ -19,7 +19,7 @@ Dronedarone is a related benzofuran compound to amiodarone but its chemical stru
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 15:22 | 7:50 | 0/0/0 | 4/0/0 | 0/0/1 | 155,617/6,456 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 5/8 | 13/0 | 0 |
+| 2026-09-26 11:08 | 5:39 | 0/0/0 | 4/0/0 | 0/0/1 | 29,078/10,953 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 5/8 | 13/0 | 0 |
 
 ## popPK records
 
@@ -29,19 +29,19 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ahmed_2023](drugs/drug_dronedarone/pd_Ahmed_2023_Mpro_enzymatic_activity.md) | Ahmed MS et al., FDA approved drugs with antiviral activ…, Biomedicine & pharmacothera… (2023) | [10.1016/j.biopha.2023.114614](https://doi.org/10.1016/j.biopha.2023.114614) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ahmed_2023](drugs/drug_dronedarone/pd_Ahmed_2023_NT5E_expression.md) | Ahmed MS et al., FDA approved drugs with antiviral activ…, Biomedicine & pharmacothera… (2023) | [10.1016/j.biopha.2023.114614](https://doi.org/10.1016/j.biopha.2023.114614) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ahmed_2023](drugs/drug_dronedarone/pd_Ahmed_2023_SARS_CoV_2_viral_replication.md) | Ahmed MS et al., FDA approved drugs with antiviral activ…, Biomedicine & pharmacothera… (2023) | [10.1016/j.biopha.2023.114614](https://doi.org/10.1016/j.biopha.2023.114614) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Nishida_2025](drugs/drug_dronedarone/pd_Nishida_2025_cell_viability.md) | Nishida M et al., Exploratory high-throughput screening o…, BMC veterinary research (2025) | [10.1186/s12917-025-05053-8](https://doi.org/10.1186/s12917-025-05053-8) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Thomas_2003](drugs/drug_dronedarone/pd_Thomas_2003_HERG.md) | Thomas D et al., Acute effects of dronedarone on both co…, British journal of pharmaco… (2003) | [10.1038/sj.bjp.0705502](https://doi.org/10.1038/sj.bjp.0705502) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Thomas_2003](drugs/drug_dronedarone/pd_Thomas_2003_KvLQT1_minK.md) | Thomas D et al., Acute effects of dronedarone on both co…, British journal of pharmaco… (2003) | [10.1038/sj.bjp.0705502](https://doi.org/10.1038/sj.bjp.0705502) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yu_2020](drugs/drug_dronedarone/pd_Yu_2020_IKAS.md) | Yu Y et al., Inhibitory Effects of Dronedarone on Sm…, Medical science monitor : i… (2020) | [10.12659/MSM.924215](https://doi.org/10.12659/MSM.924215) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ahmed_2023](drugs/drug_dronedarone/pd_Ahmed_2023_Mpro_enzymatic_activity.md) | Ahmed MS et al., FDA approved drugs with antiviral activ…, Biomedicine & pharmacothera… (2023) | [10.1016/j.biopha.2023.114614](https://doi.org/10.1016/j.biopha.2023.114614) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ahmed_2023](drugs/drug_dronedarone/pd_Ahmed_2023_NT5E_expression.md) | Ahmed MS et al., FDA approved drugs with antiviral activ…, Biomedicine & pharmacothera… (2023) | [10.1016/j.biopha.2023.114614](https://doi.org/10.1016/j.biopha.2023.114614) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ahmed_2023](drugs/drug_dronedarone/pd_Ahmed_2023_SARS_CoV_2_viral_replication.md) | Ahmed MS et al., FDA approved drugs with antiviral activ…, Biomedicine & pharmacothera… (2023) | [10.1016/j.biopha.2023.114614](https://doi.org/10.1016/j.biopha.2023.114614) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Nishida_2025](drugs/drug_dronedarone/pd_Nishida_2025_cell_viability.md) | Nishida M et al., Exploratory high-throughput screening o…, BMC veterinary research (2025) | [10.1186/s12917-025-05053-8](https://doi.org/10.1186/s12917-025-05053-8) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Thomas_2003](drugs/drug_dronedarone/pd_Thomas_2003_HERG.md) | Thomas D et al., Acute effects of dronedarone on both co…, British journal of pharmaco… (2003) | [10.1038/sj.bjp.0705502](https://doi.org/10.1038/sj.bjp.0705502) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Thomas_2003](drugs/drug_dronedarone/pd_Thomas_2003_KvLQT1_minK.md) | Thomas D et al., Acute effects of dronedarone on both co…, British journal of pharmaco… (2003) | [10.1038/sj.bjp.0705502](https://doi.org/10.1038/sj.bjp.0705502) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Yu_2020](drugs/drug_dronedarone/pd_Yu_2020_IKAS.md) | Yu Y et al., Inhibitory Effects of Dronedarone on Sm…, Medical science monitor : i… (2020) | [10.12659/MSM.924215](https://doi.org/10.12659/MSM.924215) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **PITX2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Hwang_2021](drugs/drug_dronedarone/pgx_Hwang_2021_PITX2_Q100.md) | Hwang I et al., Computational Modeling for Antiarrhythm…, Frontiers in physiology (2021) | [10.3389/fphys.2021.650449](https://doi.org/10.3389/fphys.2021.650449) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **PITX2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Hwang_2021](drugs/drug_dronedarone/pgx_Hwang_2021_PITX2_Q100.md) | Hwang I et al., Computational Modeling for Antiarrhythm…, Frontiers in physiology (2021) | [10.3389/fphys.2021.650449](https://doi.org/10.3389/fphys.2021.650449) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>
@@ -102,7 +102,7 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Kim_2018.pdf` | Kim MS et al., Effect of dronedarone on the pharmacoki…, European journal of pharmac… (2018) | pgx | 7 | [10.1016/j.ejps.2017.09.029](https://doi.org/10.1016/j.ejps.2017.09.029) | [28942006](https://www.ncbi.nlm.nih.gov/pubmed/28942006) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Wen_2022.pdf` | Wen HN et al., Predicting drug-drug interactions with…, Thrombosis research (2022) | pgx | 7 | [10.1016/j.thromres.2022.08.007](https://doi.org/10.1016/j.thromres.2022.08.007) | [35985100](https://www.ncbi.nlm.nih.gov/pubmed/35985100) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-19T15:18:49.783146+00:00</sub>
+<sub>queue written 2026-09-26T11:05:45.217760+00:00</sub>
 
 ## Screened and excluded
 

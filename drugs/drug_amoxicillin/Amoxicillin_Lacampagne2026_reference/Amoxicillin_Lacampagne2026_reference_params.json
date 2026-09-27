@@ -1,0 +1,33 @@
+{
+ "model_id": "Amoxicillin_Lacampagne2026_reference",
+ "molar_masses": {
+  "central.C": 0.365404
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.536111111111111e-05,
+  "F": 25.0,
+  "MM": 0.365404,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00028000000000000003,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.0005952380952380951,
+  "k21": 0.000980392156862745,
+  "ka": 0.00011388888888888888,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 5940.789779282092
+ },
+ "reference_peaks": {
+  "central.C": 0.009771094994409136
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

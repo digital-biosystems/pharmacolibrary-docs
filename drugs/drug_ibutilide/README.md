@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 10:28 | 11:32 | 0/0/0 | 2/0/0 | 0/0/0 | 114,351/3,486 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 1/8 | 7/2 | 0 |
+| 2026-09-26 11:42 | 4:20 | 0/0/0 | 2/0/0 | 0/0/0 | 9,574/4,553 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 1/8 | 7/2 | 0 |
 
 ## popPK records
 
@@ -27,8 +27,8 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [McBride_2009](drugs/drug_ibutilide/pd_McBride_2009_IKr_block.md) | McBride (2009) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Tisdale_2012](drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md) | Tisdale JE et al., Enhanced sensitivity to drug-induced QT…, Journal of clinical pharmac… (2012) | [10.1177/0091270011416939](https://doi.org/10.1177/0091270011416939) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [McBride_2009](drugs/drug_ibutilide/pd_McBride_2009_IKr_block.md) | McBride (2009) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Tisdale_2012](drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md) | Tisdale JE et al., Enhanced sensitivity to drug-induced QT…, Journal of clinical pharmac… (2012) | [10.1177/0091270011416939](https://doi.org/10.1177/0091270011416939) |
 
 ## ADME sites
 
@@ -68,7 +68,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Yang_1995.pdf` | Yang T et al., Ibutilide, a methanesulfonanilide antia…, Circulation (1995) | pd | 4 | [10.1161/01.cir.91.6.1799](https://doi.org/10.1161/01.cir.91.6.1799) | [7882490](https://www.ncbi.nlm.nih.gov/pubmed/7882490) | metadata signals extractable PD data (EC50) |
 | `Yamreudeewong_2003.pdf` | Yamreudeewong W et al., Potentially significant drug interactio…, Drug safety (2003) | pgx | 7 | [10.2165/00002018-200326060-00004](https://doi.org/10.2165/00002018-200326060-00004) | [12688833](https://www.ncbi.nlm.nih.gov/pubmed/12688833) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-09-09T10:26:45.798229+00:00</sub>
+<sub>queue written 2026-09-26T11:39:09.071069+00:00</sub>
 
 ## Screened and excluded
 

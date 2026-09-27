@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**Why:** C8 unreachable/orphan compartment or unlinked metabolite.
+**Why:** C5 dimension mismatch on a structural parameter.
 **How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
 <sub>owner: **scholar**</sub>
 
@@ -24,7 +24,7 @@ Tsamandouras N; Dickinson G; Guo Y; Hall S; Rostami-Hodjegan A; Galetin A; et al
   ·  DOI: [10.1007/s11095-014-1581-2](https://doi.org/10.1007/s11095-014-1581-2)
 
 ## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Tsamandouras2015_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="simvastatin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="simvastatin" model-id="Simvastatin_Tsamandouras2015_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="simvastatin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
@@ -33,11 +33,13 @@ Tsamandouras N; Dickinson G; Guo Y; Hall S; Rostami-Hodjegan A; Galetin A; et al
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLintCYP3A,vitro (μL/min/pmol CYP3A) | `Q3` · CLint | 14.208 | μL/min/pmol CYP3A | not captured | [µl] / [[min] · [pM] · [a] · [cyp3]] | not captured | llm (0.6) | Tsamandouras_2015_table_3:row2:col1, Tsamandouras_2015_table_3:row2:col2 | — | not captured |
-| CLUact (L/h) | `Q22` · CL | 8001.1 | L/h | 0.002222527777777778 | [l] / [h] | not captured | llm (0.6) | Tsamandouras_2015_table_3:row9:col1, Tsamandouras_2015_table_3:row9:col2 | — | not captured |
-| Central volume of distribution (V2/F) | `Q61` · V | 228.0 | (l) | 0.228 | L | not captured | review_gapfill (0.7) | Friedrich_2014:review | — | not captured |
-| Ka, h−1 | `Q49` · kabs | 1.4 | h−1 | 0.00038888888888888887 | 1/h | not captured | review_gapfill (0.7) | Jadhav_2023:review | — | not captured |
-| LAG (hr) | `Q83` · tlag | 0.212 | hr | 763.1999999999999 | h | not captured | review_gapfill (0.7) | Kim_2011:review | — | not captured |
+| CL&lt;sub&gt;int,CYP3A,vitro&lt;/sub&gt; (µL/min/pmol CYP3A) | `Q3` · CLint | 14.208 | µL/min/pmol CYP3A | not captured | [µl] / [[min] · [pM] · [a] · [cyp3]] | 7.97 | llm_corrected (0.6) | Tsamandouras_2015_table_3:row2:col1, Tsamandouras_2015_table_3:row2:col2 | — | not captured |
+| KP&lt;sub&gt;T,B,rob&lt;/sub&gt; | `Q410` · Kp | 35.19 | a | not captured | [a] | 7.34 | llm_confirmed (0.6) | Tsamandouras_2015_table_3:row4:col1, Tsamandouras_2015_table_3:row4:col2, Tsamandouras_2015_table_3:row20:col1, Tsamandouras_2015_table_3:row20:col2 | — | not captured |
+| CL&lt;sub&gt;int,CYP3A,vitro&lt;/sub&gt; (mL/min/mg of MP) | `Q3` · CLint | 0.0504 | mL/min/mg of MP | not captured | [ml] / [[min] · [mg] · [ofmp]] | 12.55 | llm_corrected (0.6) | Tsamandouras_2015_table_3:row6:col1, Tsamandouras_2015_table_3:row6:col2 | — | not captured |
+| KP'&lt;sub&gt;T,B,rob&lt;/sub&gt; | `Q410` · Kp | 61.00 | a | not captured | [a] | 17.33 | llm_confirmed (0.6) | Tsamandouras_2015_table_3:row8:col1, Tsamandouras_2015_table_3:row8:col2, Tsamandouras_2015_table_3:row22:col1, Tsamandouras_2015_table_3:row22:col2 | — | not captured |
+| CL&lt;sub&gt;U,act&lt;/sub&gt; (L/h) | `Q22` · CL | 8001.1 | L/h | 0.002222527777777778 | [l] / [h] | 21.23 | llm_confirmed (0.6) | Tsamandouras_2015_table_3:row9:col1, Tsamandouras_2015_table_3:row9:col2 | — | not captured |
+| theta_kp_pm | `Q900` · theta_kp_pm | 4362.8 | not captured | not captured | not captured | 23.72 | not captured (not captured) | Tsamandouras_2015_table_3:row3:col1, Tsamandouras_2015_table_3:row3:col2 | — | not captured |
+| theta_kp_pm | `Q900` · theta_kp_pm | 1.4562 | not captured | not captured | not captured | 18.66 | not captured (not captured) | Tsamandouras_2015_table_3:row7:col1, Tsamandouras_2015_table_3:row7:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -47,41 +49,36 @@ Tsamandouras N; Dickinson G; Guo Y; Hall S; Rostami-Hodjegan A; Galetin A; et al
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Peff (cm/h)' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row1:col1', 'Tsamandouras_2015_table_3:row1:col2'])
-- unit_dimension_unknown: 'μL/min/pmol CYP3A' (CLint)
-- dropped unlinked row (NIL): 'KPT:Pm' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row3:col1', 'Tsamandouras_2015_table_3:row3:col2'])
-- dropped unlinked row (NIL): 'KPT:B,rob' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row4:col1', 'Tsamandouras_2015_table_3:row4:col2', 'Tsamandouras_2015_table_3:row20:col1', 'Tsamandouras_2015_table_3:row20:col2'])
-- dropped unlinked row (NIL): 'KPT:Blh' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row5:col1', 'Tsamandouras_2015_table_3:row5:col2'])
+- dropped unlinked row (NIL): 'P&lt;sub&gt;eff&lt;/sub&gt; (cm/h)' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row1:col1', 'Tsamandouras_2015_table_3:row1:col2'])
+- unit_dimension_unknown: 'µL/min/pmol CYP3A' (CLint)
+- unit_dimension_mismatch: 'KP&lt;sub&gt;T,B,rob&lt;/sub&gt;' → Q410 (unit '[time]' vs ontology 'dimensionless') — route to review
+- unit_dimension_mismatch: 'KP&lt;sub&gt;T,Blit&lt;/sub&gt;' → Q410 (unit '[time]' vs ontology 'dimensionless') — route to review
+- dropped duplicate Q410 ('KP&lt;sub&gt;T,Blit&lt;/sub&gt;', value '3033.6') — already have one for this compound
 - unit_dimension_unknown: 'mL/min/mg of MP' (CLint)
-- dropped duplicate Q3 ("CL'intCYP3A,vitro (mL/min/mg of MP)", value '0.0504') — already have one for this compound
-- dropped unlinked row (NIL): "K'PT:Pm" — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row7:col1', 'Tsamandouras_2015_table_3:row7:col2'])
-- dropped unlinked row (NIL): "K'PT:B,rob" — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row8:col1', 'Tsamandouras_2015_table_3:row8:col2', 'Tsamandouras_2015_table_3:row22:col1', 'Tsamandouras_2015_table_3:row22:col2'])
-- dropped unlinked row (NIL): 'khydr,pl (h⁻¹)' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row10:col1', 'Tsamandouras_2015_table_3:row10:col2'])
-- dropped unlinked row (NIL): 'khydr,buff (h⁻¹)' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row11:col1', 'Tsamandouras_2015_table_3:row11:col2'])
-- dropped unlinked row (NIL): 'khydr,SS (h⁻¹)' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row12:col1', 'Tsamandouras_2015_table_3:row12:col2'])
-- unit_dimension_unknown: 'μL/min/mg of MP' (CLint)
-- dropped duplicate Q3 ('CLintglic,uro (μL/min/mg of MP)', value '0.3703') — already have one for this compound
-- dropped unlinked row (NIL): 'khydr,hyb (h⁻¹)' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row14:col1', 'Tsamandouras_2015_table_3:row14:col2'])
+- unit_dimension_mismatch: "KP'&lt;sub&gt;T,B,rob&lt;/sub&gt;" → Q410 (unit '[time]' vs ontology 'dimensionless') — route to review
+- dropped unlinked row (NIL): 'k&lt;sub&gt;hydr,pl&lt;/sub&gt; (h&lt;sup&gt;-1&lt;/sup&gt;)' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row10:col1', 'Tsamandouras_2015_table_3:row10:col2'])
+- dropped unlinked row (NIL): 'k&lt;sub&gt;hydr,buff&lt;/sub&gt; (h&lt;sup&gt;-1&lt;/sup&gt;)' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row11:col1', 'Tsamandouras_2015_table_3:row11:col2'])
+- dropped unlinked row (NIL): 'k&lt;sub&gt;hydr,59&lt;/sub&gt; (h&lt;sup&gt;-1&lt;/sup&gt;)' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row12:col1', 'Tsamandouras_2015_table_3:row12:col2'])
+- unit_dimension_unknown: 'µL/min/mg of MP' (CLint)
+- dropped duplicate Q3 ('CL&lt;sub&gt;int,glic,vitro&lt;/sub&gt; (µL/min/mg of MP)', value '0.3703') — already have one for this compound
+- dropped unlinked row (NIL): 'k&lt;sub&gt;hydr,hybrid&lt;/sub&gt; (h&lt;sup&gt;-1&lt;/sup&gt;)' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row14:col1', 'Tsamandouras_2015_table_3:row14:col2'])
 - dropped unlinked row (NIL): 'GRT' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row16:col1', 'Tsamandouras_2015_table_3:row16:col2'])
 - dropped unlinked row (NIL): 'SIRT' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row17:col1', 'Tsamandouras_2015_table_3:row17:col2'])
-- dropped unlinked row (NIL): 'Peff' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row18:col1', 'Tsamandouras_2015_table_3:row18:col2'])
-- unit_dimension_mismatch: 'CLintCYP3A,vitro' → Q3 (unit '[time]' vs ontology '[length] ** 3 / [time] / [mass]') — route to review
-- dropped duplicate Q3 ('CLintCYP3A,vitro', value '36.51') — already have one for this compound
-- unit_dimension_mismatch: "CL'intCYP3A,vitro" → Q3 (unit '[time]' vs ontology '[length] ** 3 / [time] / [mass]') — route to review
-- dropped duplicate Q3 ("CL'intCYP3A,vitro", value '38.30') — already have one for this compound
-- dropped unlinked row (NIL): 'CLUact' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row23:col1', 'Tsamandouras_2015_table_3:row23:col2'])
-- dropped unlinked row (NIL): 'khydr,hyb' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row24:col1', 'Tsamandouras_2015_table_3:row24:col2'])
-- dropped unlinked row (NIL): 'εpSV' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row26:col1', 'Tsamandouras_2015_table_3:row26:col2'])
-- dropped unlinked row (NIL): 'εpSVA' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row27:col1', 'Tsamandouras_2015_table_3:row27:col2'])
+- dropped unlinked row (NIL): 'P&lt;sub&gt;eff&lt;/sub&gt;' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row18:col1', 'Tsamandouras_2015_table_3:row18:col2'])
+- unit_dimension_mismatch: 'CL&lt;sub&gt;int,CYP3A,vitro&lt;/sub&gt;' → Q3 (unit '[time]' vs ontology '[length] ** 3 / [time] / [mass]') — route to review
+- dropped duplicate Q3 ('CL&lt;sub&gt;int,CYP3A,vitro&lt;/sub&gt;', value '38.30') — already have one for this compound
+- unit_dimension_mismatch: 'CL&lt;sub&gt;U,act&lt;/sub&gt;' → Q22 (unit '[time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('CL&lt;sub&gt;U,act&lt;/sub&gt;', value '71.87') — already have one for this compound
+- dropped unlinked row (NIL): 'k&lt;sub&gt;hydr,hybrid&lt;/sub&gt;' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row24:col1', 'Tsamandouras_2015_table_3:row24:col2'])
+- dropped unlinked row (NIL): 'eps&lt;sub&gt;SV&lt;/sub&gt;' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row26:col1', 'Tsamandouras_2015_table_3:row26:col2'])
+- dropped unlinked row (NIL): 'eps&lt;sub&gt;SVA&lt;/sub&gt;' — extend the ontology if this is a real PK parameter (source ['Tsamandouras_2015_table_3:row27:col1', 'Tsamandouras_2015_table_3:row27:col2'])
+- implicit units: 'CL&lt;sub&gt;int,CYP3A,vitro&lt;/sub&gt; (µL/min/pmol CYP3A)' — the LLM proposed 'µL/min/pmol CYP3A', whose dimension does not fit Q3; left unset
+- implicit units: 'CL&lt;sub&gt;int,CYP3A,vitro&lt;/sub&gt; (mL/min/mg of MP)' — the LLM proposed 'mL/min/mg of MP', whose dimension does not fit Q3; left unset
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=simvastatin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — pbpk model — not a compartmental parent–metabolite model (site presystemic: 'This provides additional confidence that the model adequately captures the first pass metabolism of SV.')
 - status held at route_to_review — not promoted
-- gap-filled Q61 (V) from Friedrich_2014's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Jadhav_2023's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Kim_2011's review values (primary lacked it)
+- row roles (LLM): model_class=pbpk; 22/22 row label(s) assigned, 0 linked by role; re-tagged parent→simvastatin acid ×16
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -93,18 +90,18 @@ Tsamandouras N; Dickinson G; Guo Y; Hall S; Rostami-Hodjegan A; Galetin A; et al
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C2_reference | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tsamandouras_2015_table_3:row9:col1', 'Tsamandouras_2015_table_3:row9:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Jadhav_2023:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Friedrich_2014:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Kim_2011:review'] |
-| C5_unit_missing_Q3 | fail | [length] ** 3 / [time] / [mass] | μL/min/pmol CYP3A | not captured | not captured | ['Tsamandouras_2015_table_3:row2:col1', 'Tsamandouras_2015_table_3:row2:col2'] |
+| C5_dimension_Q410 | fail | [time] | a | not captured | not captured | ['Tsamandouras_2015_table_3:row4:col1', 'Tsamandouras_2015_table_3:row4:col2', 'Tsamandouras_2015_table_3:row20:col1', 'Tsamandouras_2015_table_3:row20:col2'] |
+| C5_dimension_Q410 | fail | [time] | a | not captured | not captured | ['Tsamandouras_2015_table_3:row8:col1', 'Tsamandouras_2015_table_3:row8:col2', 'Tsamandouras_2015_table_3:row22:col1', 'Tsamandouras_2015_table_3:row22:col2'] |
+| C5_unit_missing_Q3 | fail | [length] ** 3 / [time] / [mass] | µL/min/pmol CYP3A | not captured | not captured | ['Tsamandouras_2015_table_3:row2:col1', 'Tsamandouras_2015_table_3:row2:col2'] |
+| C5_unit_missing_Q3 | fail | [length] ** 3 / [time] / [mass] | mL/min/mg of MP | not captured | not captured | ['Tsamandouras_2015_table_3:row6:col1', 'Tsamandouras_2015_table_3:row6:col2'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 8001.1 | not captured | not captured | ['Tsamandouras_2015_table_3:row9:col1', 'Tsamandouras_2015_table_3:row9:col2'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 8e+03 L/h | not captured | not captured | ['Tsamandouras_2015_table_3:row9:col1', 'Tsamandouras_2015_table_3:row9:col2'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 228 L | not captured | not captured | ['Friedrich_2014:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -129,4 +126,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-16 00:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:48 UTC</sub>

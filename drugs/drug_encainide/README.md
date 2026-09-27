@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 09:49 | 18:49 | 0/0/0 | 1/0/0 | 0/0/0 | 113,149/10,915 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 6/1 | 4/3 | 0 |
+| 2026-09-26 11:12 | 3:42 | 0/0/0 | 1/0/0 | 0/0/0 | 12,494/1,832 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 6/1 | 4/3 | 0 |
 
 ## popPK records
 
@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Li_2023](drugs/drug_encainide/pd_Li_2023_Kv.md) | Li H et al., Encainide, a class Ic anti-arrhythmic a…, The Korean journal of physi… (2023) | [10.4196/kjpp.2023.27.4.399](https://doi.org/10.4196/kjpp.2023.27.4.399) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Li_2023](drugs/drug_encainide/pd_Li_2023_Kv.md) | Li H et al., Encainide, a class Ic anti-arrhythmic a…, The Korean journal of physi… (2023) | [10.4196/kjpp.2023.27.4.399](https://doi.org/10.4196/kjpp.2023.27.4.399) |
 
 ## ADME sites
 
@@ -75,12 +75,13 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Sheldon_1994.pdf` | Sheldon RS et al., Class I antiarrhythmic drugs: allosteri…, The Journal of pharmacology… (1994) | pd | 4 | not captured | [8301556](https://www.ncbi.nlm.nih.gov/pubmed/8301556) | metadata signals extractable PD data (IC50) |
 | `Buchert_1992.pdf` | Buchert E et al., Clinical implications of variable antia…, Pharmacogenetics (1992) | pgx | 5 | [10.1097/00008571-199202000-00002](https://doi.org/10.1097/00008571-199202000-00002) | [1302039](https://www.ncbi.nlm.nih.gov/pubmed/1302039) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-09-19T15:28:04.459853+00:00</sub>
+<sub>queue written 2026-09-26T11:11:37.851662+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Abi_1989 | irrelevant | 0 | 0 | The paper is a review of class IC antiarrhythmic drugs focusing on pharmacodynamics and toxicity, with no quantitative pharmacokinetic parameters reported for encainide. |
 | PD | Abi_1989 | not_relevant | 1 | 0 | The text is a qualitative review of class IC antiarrhythmic drugs and does not provide specific numeric PD parameters or concentration-effect data for encainide. |
 | PGx | Arcavi_1993 | not_relevant | 2 | 0 | The text is a review introduction listing encainide as a drug with genetic polymorphism but does not report specific quantitative PK/PD effects or fitted parameters. |
 | popPK | Bergstrand_1986 | relevant | 9 | 2 | The paper is a relevant PK study of encainide in renal failure, but the provided evidence contains only qualitative descriptions of changes (e.g., "significantly lower," "80% higher") without specific numeric parameter values for clearance, volume, or half-life. |
@@ -88,6 +89,7 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Boriani_1990 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of propafenone, with encainide mentioned only as a comparator drug in the introduction. |
 | PD | Boriani_1990 | not_relevant | 1 | 0 | The paper focuses on propafenone PK/PD correlations with oxidative phenotype; encainide is only mentioned as a drug undergoing oxidative metabolism, with no data or parameters reported for it. |
 | popPK | Bottorff_1989 | irrelevant | 0 | 0 | The study uses encainide as a probe/co-administered agent to assess its effect on antipyrine metabolism, rather than reporting pharmacokinetic parameters for encainide itself. |
+| popPK | Brown_1987 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of ACC-9358, with encainide serving only as a comparator agent without reported PK parameters. |
 | PD | Brown_1987 | not_relevant | 3 | 2 | The paper focuses on ACC-9358 and only provides a qualitative correlation (r-value) for ACC-9358, without reporting specific numeric PD parameters (Emax, EC50) or a dose-response curve for encainide. |
 | popPK | Bryson_1993 | irrelevant | 0 | 0 | The paper is a review of propafenone, and encainide is only mentioned as a comparator in a meta-analysis without any specific pharmacokinetic parameters reported. |
 | PD | Bryson_1993 | not_relevant | 0 | 0 | The paper is a review of propafenone and does not report any pharmacodynamic or exposure-response data for encainide. |
@@ -98,14 +100,19 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Distlerath_1985 | not_relevant | 2 | 0 | The paper characterizes the enzyme (CYP2D6) responsible for encainide metabolism but does not report specific pharmacokinetic or pharmacodynamic parameter changes linked to genotypes. |
 | popPK | Dorian_1986 | irrelevant | 0 | 0 | no_text gate: only 102 chars of text extracted (&lt; 400) |
 | PGx | Eichelbaum_1984 | not_relevant | 2 | 0 | The paper mentions encainide as a substrate affected by the PM phenotype but provides no specific PK/PD data, effect sizes, or quantitative parameters for encainide. |
+| popPK | Follath_1991 | irrelevant | 0 | 0 | The paper is a general review of antiarrhythmic drugs and does not report specific quantitative pharmacokinetic parameters for encainide. |
 | PD | Follath_1991 | not_relevant | 1 | 0 | The paper is a review discussing general variability in metabolism and dose requirements for antiarrhythmic drugs, without reporting specific numeric PD parameters or concentration-effect curves for encainide. |
+| popPK | Follmer_1992 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channel block, not a pharmacokinetic study, and reports no disposition parameters for encainide. |
 | popPK | Fronc_1992 | irrelevant | 2 | 0 | The paper is a case report and literature review that discusses dosing adjustments qualitatively but does not report quantitative pharmacokinetic parameters (CL, V, ka) for encainide. |
 | PD | Fronc_1992 | not_relevant | 2 | 1 | The text is a case report and literature review that qualitatively mentions the correlation between metabolite concentrations and electrophysiologic response but does not provide specific numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve in the provided abstract. |
 | PD | Funck-Brentano_1989 | not_relevant | 3 | 2 | The paper reports PK changes and qualitative ECG effects (QRS prolongation) but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve for encainide. |
 | popPK | Furlanello_1987 | irrelevant | 2 | 0 | The text is a qualitative review of clinical effects and general pharmacokinetic properties (metabolism, variability) without reporting any quantitative PK parameters (CL, V, t1/2, etc.) for encainide. |
+| popPK | Galimberti_2011 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic assay measuring efficacy and potency (IC50) for calcium wave suppression, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Gillis_1984 | irrelevant | 2 | 1 | The paper is a review that provides only a qualitative description and a general half-life range (1-3h) for encainide, lacking specific quantitative disposition parameters like clearance or volume of distribution. |
+| popPK | Gomoll_1986 | irrelevant | 1 | 0 | The paper is an electrophysiology and efficacy study in animal models that does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for encainide. |
 | PD | Gomoll_1986 | not_relevant | 3 | 2 | The text provides qualitative efficacy data and relative potency comparisons (e.g., 7-11x quinidine) and specific effective doses (0.67 mg/kg), but it does not report a formal concentration-effect curve, Emax/EC50 parameters, or a PK/PD model fit. |
 | popPK | Halvorsen_1991 | irrelevant | 2 | 0 | The study is a single-case report focusing on dialysis clearance rather than standard population PK parameters, and no specific numeric values for clearance, volume, or half-life are provided in the evidence. |
+| popPK | Hilleman_1992 | irrelevant | 2 | 0 | The study reports only qualitative changes in AUC (e.g., "threefold increase") and detectability rates, without providing specific quantitative PK parameters like clearance, volume, or half-life. |
 | PD | Hilleman_1992 | not_relevant | 1 | 0 | The study reports PK changes (AUC) and a qualitative lack of significant ECG effect, but provides no numeric PD parameters or concentration-effect relationship. |
 | popPK | Jones_1995 | irrelevant | 0 | 0 | The paper is a case report on propafenone-induced amnesia and does not report quantitative pharmacokinetic parameters for encainide. |
 | PGx | Kazierad_1989 | not_relevant | 2 | 5 | The paper reports a drug-drug interaction (diltiazem) and mentions genetic phenotypes (EM/PM) as context, but does not report a direct pharmacogenomic effect size or fitted parameter for encainide. |
@@ -127,10 +134,13 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Roden_1980 | relevant | 8 | 2 | The study reports pharmacokinetic data for encainide, including a specific half-life range (1.9-3.8 hours), but lacks other quantitative disposition parameters like clearance or volume of distribution. |
 | popPK | Roden_1988 | irrelevant | 2 | 0 | The text is a qualitative review/abstract describing metabolic phenotypes and general disposition characteristics without providing specific quantitative PK parameter values (e.g., CL, V, t1/2) for encainide. |
 | popPK | Roden_1989 | irrelevant | 2 | 3 | The study focuses on the pharmacokinetics of the metabolite MODE, not the parent drug encainide, and only provides limited historical clearance data for encainide in poor metabolizers without a full PK model. |
+| popPK | Sanna_1984 | irrelevant | 1 | 0 | The paper is a general review of antiarrhythmic drugs that mentions encainide but provides no original quantitative pharmacokinetic parameter values. |
+| popPK | Sheldon_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of sodium channel binding and does not report pharmacokinetic disposition parameters for encainide. |
 | PD | Sheldon_1994 | not_relevant | 0 | 0 | The paper focuses on the mechanism of action (allosteric inhibition of batrachotoxinin binding) and does not report pharmacokinetic or pharmacodynamic exposure-response relationships for encainide. |
 | popPK | Svensson_1987 | irrelevant | 1 | 0 | The study focuses on encainide's effect on antipyrine metabolism (drug interaction) rather than reporting quantitative pharmacokinetic disposition parameters for encainide itself. |
 | popPK | Thale_1985 | relevant | 4 | 2 | The study reports a terminal half-life (~75 min) and metabolite concentrations, but lacks explicit clearance, volume of distribution, or compartmental model parameters required for population PK extraction. |
 | popPK | Tordjman_1987 | irrelevant | 2 | 0 | The text is a review summary that mentions a half-life but lacks quantitative disposition parameters (CL, V, Q, ka) or a compartmental model. |
+| popPK | Turgeon_1990 | irrelevant | 2 | 0 | The study focuses on pharmacodynamic interactions (QRS prolongation) and plasma concentrations rather than reporting quantitative disposition parameters like clearance, volume, or half-life. |
 | PD | Turgeon_1990 | not_relevant | 3 | 2 | The paper reports qualitative changes in QRS prolongation and arrhythmia suppression rates with drug interaction but does not provide a concentration-effect curve, Emax/EC50 parameters, or a formal PK/PD model fit. |
 | PGx | Turgeon_1991 | not_relevant | 0 | 0 | The study concludes that the observed variability in encainide metabolism among extensive metabolizers is not determined by the CYP2D6 genotype, but rather by non-genetic factors. |
 | PGx | Venkatakrishnan_2000 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving CYP2D6 inhibition by terbinafine affecting encainide, but does not report pharmacogenomic effects (gene variants) on encainide PK/PD. |

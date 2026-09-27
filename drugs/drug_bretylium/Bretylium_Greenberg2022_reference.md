@@ -5,7 +5,7 @@
 
 # Bretylium — `Bretylium_Greenberg2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.529). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,6 +16,7 @@
 ### Reviewer guidance
 
 **Why:** every check the reviewer could run passed
+**Second reading:** `gpt-oss:120b` read this paper differently on `values[Q27]` (10.53 vs not captured) and 7 more field(s) — a structural parameter, so the record is disputed.
 **How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
 <sub>owner: **curator**</sub>
 
@@ -52,14 +53,27 @@ Greenberg RG; Landersdorfer CB; Rivera-Chaparro N; Harward M; Conrad T; Nakamura
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | not confirmed | 0.529 (9/17 fields) | 8 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>8 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `values[Q27]` | 10.53 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | 41 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q319]` | not captured | 0.75 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 0.2 | 0.2 | mismatch |
+| `gpt-oss:120b` | `values[Q49]` | 0.537 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q87]` | not captured | 0.71 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q88]` | not captured | 1.92 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

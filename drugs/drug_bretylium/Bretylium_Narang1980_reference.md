@@ -71,7 +71,7 @@ Narang PK; Adir J; Josselson J; Yacobi A; Sadler J et al. (1980). Journal of pha
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | fail | dimensionless | % | not captured | not captured | ['Narang_1980:abstract'] |

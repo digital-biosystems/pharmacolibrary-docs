@@ -1,0 +1,33 @@
+{
+ "model_id": "Amoxicillin_Wu2021_reference",
+ "molar_masses": {
+  "central.C": 0.365404
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.972222222222222e-07,
+  "F": 0.9,
+  "MM": 0.365404,
+  "Tlag": 0.0,
+  "VdPerKg": 3.1e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 9.101382488479262e-05,
+  "k21": 9.729064039408868e-05,
+  "ka": 4.722222222222223e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 41901.40280561122
+ },
+ "reference_peaks": {
+  "central.C": 0.0009720713407100591
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

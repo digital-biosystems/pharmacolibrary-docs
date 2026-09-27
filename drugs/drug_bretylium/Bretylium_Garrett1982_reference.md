@@ -69,13 +69,14 @@ Garrett ER; Green JR; Bialer M et al. (1982). Biopharmaceutics & drug dispositio
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Garrett_1982:abstract', 'Garrett_1982:abstract', 'Garrett_1982:abstract', 'Garrett_1982:abstract', 'Garrett_1982:abstract', 'Garrett_1982:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Greenberg_2022:review'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Garrett_1982:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Greenberg_2022:review'] |
+| C5_unit_missing_Q65 | fail | [length] ** 3 | i.v. | not captured | not captured | ['Garrett_1982:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 167 L | not captured | not captured | ['Greenberg_2022:review'] |
 

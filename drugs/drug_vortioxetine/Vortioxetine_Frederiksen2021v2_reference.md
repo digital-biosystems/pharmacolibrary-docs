@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;vortioxetine&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/&quot;},{&quot;label&quot;:&quot;Frederiksen_2021_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vortioxetine_Areberg2014v2_reference&quot;,&quot;label&quot;:&quot;Areberg_2014_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vortioxetine_Frederiksen2021v2_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a&quot;,&quot;label&quot;:&quot;Miao_2019_2_pooled_healthy_subjects_22_a&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vortioxetine_Miao2019v2_pooled_mdd_gad_patients_23_b&quot;,&quot;label&quot;:&quot;Miao_2019_2_pooled_mdd_gad_patients_23_b&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Miao2019v2_pooled_mdd_gad_patients_23_b.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vortioxetine_Naik2016v2_reference&quot;,&quot;label&quot;:&quot;Naik_2016_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Naik2016v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vortioxetine_Areberg2014v2_reference&quot;,&quot;label&quot;:&quot;Areberg_2014_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vortioxetine_Frederiksen2021v2_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a&quot;,&quot;label&quot;:&quot;Miao_2019_2_pooled_healthy_subjects_22_a&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vortioxetine_Miao2019v2_pooled_mdd_gad_patients_23_b&quot;,&quot;label&quot;:&quot;Miao_2019_2_pooled_mdd_gad_patients_23_b&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Miao2019v2_pooled_mdd_gad_patients_23_b.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vortioxetine_Naik2016v2_reference&quot;,&quot;label&quot;:&quot;Naik_2016_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Naik2016v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vortioxetine — `Vortioxetine_Frederiksen2021v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,35 +13,41 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+
 ### Reviewer guidance
 
-**Why:** C5 dimensioned parameter(s) without a unit: Q49, Q77, Q30, Q64, Q63, Q22, Q83 — no SI value to build from.
+**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer did not exercise the covariate scenarios this record defines; the model was built differently from what the record describes. Evidence: T2_covariates_not_exercised; T3_topology_template — expected parent_metabolite_hepatic → PK_3M_3C* — got PK_1C_enteral
 **Second reading:** `gpt-oss:120b` read this paper differently on `parameters[lu aa34443 clearance, clmet].covariate_forms` (['linear_fractional'] vs ['linear_fractional', 'linear_fractional']) and 5 more field(s) — a structural parameter, so the record is disputed.
-**How to address:** not a curation fix — the pipeline is the limit here (scholar: a reported unit is missing from the conversion table, so the parameter reached the engineer without an SI value).
+**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
 <sub>owner: **scholar**</sub>
 
 ## Citation
 not matched (stem Frederiksen_2021_2)
 
 ## Model component
-<dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Frederiksen2021v2_reference" status="needs_review" stale="false" population="subjects from 29 clinical pharmacology studies" measured-compound="vortioxetine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Frederiksen2021v2_reference" status="model_quarantined" stale="false" population="subjects from 29 clinical pharmacology studies" measured-compound="vortioxetine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Absorption rate constant, ka | `Q49` · kabs | 0.160 | not captured | not captured | not captured | 50.8 | llm_confirmed (0.6) | cpt1972-tbl-0002:row2:col1, cpt1972-tbl-0002:row2:col2, cpt1972-tbl-0002:row2:col3 | — | not captured |
-| Presystemic metabolite formation, Fmet | `Q45` · fm | 0.190 | not captured | not captured | not captured | 55.9 | llm (0.6) | cpt1972-tbl-0002:row4:col1, cpt1972-tbl-0002:row4:col2, cpt1972-tbl-0002:row4:col3 | — | not captured |
-| Volume of distribution, vortioxetine central compartment, V3 | `Q77` · V3 | 1510 | not captured | not captured | not captured | 30.1 | llm_corrected (0.6) | cpt1972-tbl-0002:row5:col1, cpt1972-tbl-0002:row5:col2, cpt1972-tbl-0002:row5:col3 | — | not captured |
-| Inter‐compartmental clearance, vortioxetine, Q | `Q30` · Q | 21.1 | not captured | not captured | not captured | 75.5 | llm_corrected (0.6) | cpt1972-tbl-0002:row7:col1, cpt1972-tbl-0002:row7:col2, cpt1972-tbl-0002:row7:col3 | — | not captured |
-| Volume of distribution, vortioxetine peripheral compartment, V4 | `Q64` · V2 | 571 | not captured | not captured | not captured | 60.7 | llm_corrected (0.6) | cpt1972-tbl-0002:row8:col1, cpt1972-tbl-0002:row8:col2, cpt1972-tbl-0002:row8:col3 | — | not captured |
-| Volume of distribution, Lu AA34443 central compartment, V5 | `Q63` · V1 | 155 | not captured | not captured | not captured | 26.1 | llm_corrected (0.6) | cpt1972-tbl-0002:row10:col1, cpt1972-tbl-0002:row10:col2, cpt1972-tbl-0002:row10:col3 | — | not captured |
-| Lu AA34443 clearance, CLmet | `Q22` · CL | 22.5 | not captured | not captured | not captured | 27.4 | llm_confirmed (0.6) | cpt1972-tbl-0002:row11:col1, cpt1972-tbl-0002:row11:col2, cpt1972-tbl-0002:row11:col3 | — | not captured |
-| Lag‐time (ALAG) | `Q83` · tlag | 0.966 | ALAG | not captured | [alag] | 50.5 | llm (0.6) | cpt1972-tbl-0002:row13:col1, cpt1972-tbl-0002:row13:col2, cpt1972-tbl-0002:row13:col3 | — | not captured |
-| theta_cl_cyp2d6 | `Q900` · theta_cl_cyp2d6 | 13.1 | not captured | not captured | not captured | 43.2 | not captured (not captured) | cpt1972-tbl-0002:row6:col1, cpt1972-tbl-0002:row6:col2, cpt1972-tbl-0002:row6:col3 | — | not captured |
+| Absorption rate constant, ka | `Q49` · kabs | 0.160 | 1/h | 4.4444444444444447e-05 | 1/h | 50.8 | llm_confirmed (0.6) | cpt1972-tbl-0002:row2:col1, cpt1972-tbl-0002:row2:col2, cpt1972-tbl-0002:row2:col3 | — | not captured |
+| Absorption rate constant, metabolite, ka,met | `Q49` · kabs | 0.281 | 1/h | 7.805555555555556e-05 | 1/h | 40.4 | exact (1.0) | cpt1972-tbl-0002:row3:col1, cpt1972-tbl-0002:row3:col2, cpt1972-tbl-0002:row3:col3 | — | not captured |
+| Presystemic metabolite formation, Fmet | `Q45` · fm | 0.190 | not captured | not captured | not captured | 55.9 | exact (1.0) | cpt1972-tbl-0002:row4:col1, cpt1972-tbl-0002:row4:col2, cpt1972-tbl-0002:row4:col3 | — | not captured |
+| Volume of distribution, vortioxetine central compartment, V3 | `Q63` · V1 | 1510 | L | 1.51 | L | 30.1 | exact (1.0) | cpt1972-tbl-0002:row5:col1, cpt1972-tbl-0002:row5:col2, cpt1972-tbl-0002:row5:col3 | — | not captured |
+| Inter‐compartmental clearance, vortioxetine, Q | `Q30` · Q | 21.1 | L/h | 5.861111111111111e-06 | L/h | 75.5 | llm_corrected (0.6) | cpt1972-tbl-0002:row7:col1, cpt1972-tbl-0002:row7:col2, cpt1972-tbl-0002:row7:col3 | — | not captured |
+| Volume of distribution, vortioxetine peripheral compartment, V4 | `Q64` · V2 | 571 | L | 0.5710000000000001 | L | 60.7 | exact (1.0) | cpt1972-tbl-0002:row8:col1, cpt1972-tbl-0002:row8:col2, cpt1972-tbl-0002:row8:col3 | — | not captured |
+| Intercompartmental clearance, vortioxetine, Qmet | `Q30` · Q | 7.69 | L/h | 2.136111111111111e-06 | L/h | 14.3 | exact (1.0) | cpt1972-tbl-0002:row9:col1, cpt1972-tbl-0002:row9:col2, cpt1972-tbl-0002:row9:col3 | — | not captured |
+| Volume of distribution, Lu AA34443 central compartment, V5 | `Q63` · V1 | 155 | L | 0.155 | L | 26.1 | exact (1.0) | cpt1972-tbl-0002:row10:col1, cpt1972-tbl-0002:row10:col2, cpt1972-tbl-0002:row10:col3 | — | not captured |
+| Lu AA34443 clearance, CLmet | `Q22` · CL | 22.5 | L/h | 6.2499999999999995e-06 | L/h | 27.4 | exact (1.0) | cpt1972-tbl-0002:row11:col1, cpt1972-tbl-0002:row11:col2, cpt1972-tbl-0002:row11:col3 | — | not captured |
+| Volume of distribution, Lu AA34443 peripheral compartment, V6 | `Q64` · V2 | 211 | L | 0.211 | L | 19.1 | exact (1.0) | cpt1972-tbl-0002:row12:col1, cpt1972-tbl-0002:row12:col2, cpt1972-tbl-0002:row12:col3 | — | not captured |
+| Lag‐time (ALAG) | `Q83` · tlag | 0.966 | h | 3477.6 | h | 50.5 | llm (0.6) | cpt1972-tbl-0002:row13:col1, cpt1972-tbl-0002:row13:col2, cpt1972-tbl-0002:row13:col3 | — | not captured |
+| theta_q370_cyp2d6 | `Q900` · theta_q370_cyp2d6 | 13.1 | not captured | not captured | not captured | 43.2 | not captured (not captured) | cpt1972-tbl-0002:row6:col1, cpt1972-tbl-0002:row6:col2, cpt1972-tbl-0002:row6:col3 | — | not captured |
+| theta_q22_cyp2c19 | `Q900` · theta_q22_cyp2c19 | 12.5 | not captured | not captured | not captured | 58.6 | not captured (not captured) | cpt1972-tbl-0002:row17:col1, cpt1972-tbl-0002:row17:col2, cpt1972-tbl-0002:row17:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -51,30 +57,30 @@ not matched (stem Frederiksen_2021_2)
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q49 ('Absorption rate constant, metabolite, ka,met', value '0.281') — already have one for this compound
-- dropped duplicate Q30 ('Intercompartmental clearance, vortioxetine, Qmet', value '7.69') — already have one for this compound
-- dropped duplicate Q64 ('Volume of distribution, Lu AA34443 peripheral compartment, V6', value '211') — already have one for this compound
 - unit_dimension_unknown: 'ALAG' (tlag)
-- dropped unlinked row (NIL): 'CYP2C19 poor metabolizers' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row15:col1', 'cpt1972-tbl-0002:row15:col2', 'cpt1972-tbl-0002:row15:col3'])
-- dropped unlinked row (NIL): 'CYP2C19 intermediate metabolizers' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row16:col1', 'cpt1972-tbl-0002:row16:col2', 'cpt1972-tbl-0002:row16:col3'])
-- dropped unlinked row (NIL): 'CYP2C19 normal metabolizers' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row17:col1', 'cpt1972-tbl-0002:row17:col2', 'cpt1972-tbl-0002:row17:col3'])
 - dropped unlinked row (NIL): 'Age on CLother' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row18:col1', 'cpt1972-tbl-0002:row18:col3'])
 - dropped unlinked row (NIL): 'Creatinine clearance on CLother' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row19:col1', 'cpt1972-tbl-0002:row19:col3'])
 - dropped unlinked row (NIL): 'LBM on CLother' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row20:col1', 'cpt1972-tbl-0002:row20:col3'])
 - dropped unlinked row (NIL): 'Height on V3' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row21:col1', 'cpt1972-tbl-0002:row21:col3'])
 - dropped unlinked row (NIL): 'Weight on V4' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row22:col1', 'cpt1972-tbl-0002:row22:col3'])
 - dropped unlinked row (NIL): 'Weight on V5' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row23:col1', 'cpt1972-tbl-0002:row23:col3'])
-- dropped unlinked row (NIL): 'ρ (Fmet,V3)' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row25:col1'])
-- dropped unlinked row (NIL): 'ρ (Fmet,CLCYP2D6)' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row26:col1'])
-- unit_dimension_unknown: 'CLCYP2D6,V3' (V3)
-- dropped duplicate Q77 ('ρ (CLCYP2D6,V3)', value '0.22') — already have one for this compound
-- unit_dimension_unknown: 'CLmet,V5' (CL)
-- dropped duplicate Q22 ('ρ (CLmet,V5)', value '0.99') — already have one for this compound
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q30 (Inter‐compartmental clearance, vortioxetine, Q); Q64 (Volume of distribution, vortioxetine peripheral compartment, V4); Q63 (Volume of distribution, Lu AA34443 central compartment, V5); Q22 (Lu AA34443 clearance, CLmet)
+- covariate effect for Q370 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'Absorption rate constant, ka' → 1/h (from the popPK convention: 'Absorption rate constants (ka) are first-order rate constants, conventionally expressed in 1/h. The value 0.160 is consi')
+- implicit units: 'Absorption rate constant, metabolite, ka,met' → 1/h (from the popPK convention: 'Absorption rate constants (ka) are first-order rate constants, conventionally expressed in 1/h. The value 0.281 is consi')
+- implicit units: 'Volume of distribution, vortioxetine central compartment, V3' → L (from the popPK convention: 'Volumes of distribution are conventionally expressed in L. The value 1510 is consistent with the text stating a steady-s')
+- implicit units: 'Inter‐compartmental clearance, vortioxetine, Q' → L/h (from the popPK convention: 'Intercompartmental clearances are conventionally expressed in L/h. The value 21.1 is consistent with this unit.')
+- implicit units: 'Volume of distribution, vortioxetine peripheral compartment, V4' → L (from the popPK convention: 'Volumes of distribution are conventionally expressed in L. The value 571 is consistent with this unit.')
+- implicit units: 'Intercompartmental clearance, vortioxetine, Qmet' → L/h (from the popPK convention: 'Intercompartmental clearances are conventionally expressed in L/h. The value 7.69 is consistent with this unit.')
+- implicit units: 'Volume of distribution, Lu AA34443 central compartment, V5' → L (from the popPK convention: 'Volumes of distribution are conventionally expressed in L. The value 155 is consistent with this unit.')
+- implicit units: 'Lu AA34443 clearance, CLmet' → L/h (from the popPK convention: "Clearances are conventionally expressed in L/h. The text explicitly states 'CLother was fixed to 12.5 L/h', establishing")
+- implicit units: 'Volume of distribution, Lu AA34443 peripheral compartment, V6' → L (from the popPK convention: 'Volumes of distribution are conventionally expressed in L. The value 211 is consistent with this unit.')
+- implicit units: 'Lag‐time (ALAG)' → h (from the popPK convention: 'Lag times are time parameters, conventionally expressed in h. The value 0.966 is consistent with this unit.')
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (Volume of distribution, vortioxetine central compartment, V3); Q30 (Inter‐compartmental clearance, vortioxetine, Q); Q64 (Volume of distribution, vortioxetine peripheral compartment, V4); Q30 (Intercompartmental clearance, vortioxetine, Qmet); Q63 (Volume of distribution, Lu AA34443 central compartment, V5); Q22 (Lu AA34443 clearance, CLmet); Q64 (Volume of distribution, Lu AA34443 peripheral compartment, V6)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vortioxetine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at route_to_review — not promoted
+- template fit: PK_3M_3C — first-pass formation; parent 2 + hepatic, metabolites [2] (site presystemic: 'An early appearance of Lu AA34443 in plasma indicated presence of presystemic formation of the metabolite, which was ass')
+- row roles: per-genotype parameters — typical value from the reference group: CYP2C19 normal metabolizers
+- row roles (LLM): model_class=compartmental; 26/26 row label(s) assigned, 39 linked by role; re-tagged parent→Lu AA34443 ×23
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -111,19 +117,37 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 13 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row11:col1', 'cpt1972-tbl-0002:row11:col2', 'cpt1972-tbl-0002:row11:col3'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row7:col1', 'cpt1972-tbl-0002:row7:col2', 'cpt1972-tbl-0002:row7:col3'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row2:col1', 'cpt1972-tbl-0002:row2:col2', 'cpt1972-tbl-0002:row2:col3'] |
-| C5_unit_missing_Q63 | fail | [length] ** 3 | not captured | not captured | not captured | ['cpt1972-tbl-0002:row10:col1', 'cpt1972-tbl-0002:row10:col2', 'cpt1972-tbl-0002:row10:col3'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | not captured | not captured | not captured | ['cpt1972-tbl-0002:row8:col1', 'cpt1972-tbl-0002:row8:col2', 'cpt1972-tbl-0002:row8:col3'] |
-| C5_unit_missing_Q77 | fail | [length] ** 3 | not captured | not captured | not captured | ['cpt1972-tbl-0002:row5:col1', 'cpt1972-tbl-0002:row5:col2', 'cpt1972-tbl-0002:row5:col3'] |
-| C5_unit_missing_Q83 | fail | [time] | ALAG | not captured | not captured | ['cpt1972-tbl-0002:row13:col1', 'cpt1972-tbl-0002:row13:col2', 'cpt1972-tbl-0002:row13:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row11:col1', 'cpt1972-tbl-0002:row11:col2', 'cpt1972-tbl-0002:row11:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row7:col1', 'cpt1972-tbl-0002:row7:col2', 'cpt1972-tbl-0002:row7:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row9:col1', 'cpt1972-tbl-0002:row9:col2', 'cpt1972-tbl-0002:row9:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row2:col1', 'cpt1972-tbl-0002:row2:col2', 'cpt1972-tbl-0002:row2:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row3:col1', 'cpt1972-tbl-0002:row3:col2', 'cpt1972-tbl-0002:row3:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1972-tbl-0002:row5:col1', 'cpt1972-tbl-0002:row5:col2', 'cpt1972-tbl-0002:row5:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1972-tbl-0002:row10:col1', 'cpt1972-tbl-0002:row10:col2', 'cpt1972-tbl-0002:row10:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1972-tbl-0002:row8:col1', 'cpt1972-tbl-0002:row8:col2', 'cpt1972-tbl-0002:row8:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1972-tbl-0002:row12:col1', 'cpt1972-tbl-0002:row12:col2', 'cpt1972-tbl-0002:row12:col3'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row13:col1', 'cpt1972-tbl-0002:row13:col2', 'cpt1972-tbl-0002:row13:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 22.5 | not captured | not captured | ['cpt1972-tbl-0002:row11:col1', 'cpt1972-tbl-0002:row11:col2', 'cpt1972-tbl-0002:row11:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 22.5 L/h | not captured | not captured | ['cpt1972-tbl-0002:row11:col1', 'cpt1972-tbl-0002:row11:col2', 'cpt1972-tbl-0002:row11:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 1.51e+03 L | not captured | not captured | ['cpt1972-tbl-0002:row5:col1', 'cpt1972-tbl-0002:row5:col2', 'cpt1972-tbl-0002:row5:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 155 L | not captured | not captured | ['cpt1972-tbl-0002:row10:col1', 'cpt1972-tbl-0002:row10:col2', 'cpt1972-tbl-0002:row10:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 571 L | not captured | not captured | ['cpt1972-tbl-0002:row8:col1', 'cpt1972-tbl-0002:row8:col2', 'cpt1972-tbl-0002:row8:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 211 L | not captured | not captured | ['cpt1972-tbl-0002:row12:col1', 'cpt1972-tbl-0002:row12:col2', 'cpt1972-tbl-0002:row12:col3'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage | not captured | pass | 8 scholar param(s) emitted or defaulted | 8 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | fail | parent_metabolite_hepatic → PK_3M_3C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T1_t_half_beta | reference | skipped | 66 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -133,6 +157,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_vortioxetine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Frederiksen_2021_2` / `Frederiksen_2021_2::reference`)
+- model: `../../../knowledgebase/drugs/drug_vortioxetine/models/modelica/_needs_review/Vortioxetine_Frederiksen2021v2_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_vortioxetine/models/modelica/_needs_review/Vortioxetine_Frederiksen2021v2_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -143,12 +169,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference/Vortioxetine_Frederiksen2021v2_reference_matlab.zip" download>Vortioxetine_Frederiksen2021v2_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference/Vortioxetine_Frederiksen2021v2_reference_matlab_simbio.zip" download>Vortioxetine_Frederiksen2021v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference/Vortioxetine_Frederiksen2021v2_reference_sbml.zip" download>Vortioxetine_Frederiksen2021v2_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Frederiksen2021v2_reference/Vortioxetine_Frederiksen2021v2_reference_cellml.zip" download>Vortioxetine_Frederiksen2021v2_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -158,4 +184,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 21:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:57 UTC</sub>

@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-12 00:58 | 14:50 | 0/0/0 | 1/0/0 | 0/0/0 | 141,480/4,373 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 0/0 | 13/1 | 0 |
+| 2026-09-26 11:20 | 3:09 | 0/0/0 | 1/0/0 | 0/0/0 | 27,665/2,002 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 1/2 | 13/1 | 0 |
 
 ## popPK records
 
@@ -25,7 +25,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kanodia_2020](drugs/drug_racecadotril/pd_Kanodia_2020_cGMP.md) | Kanodia J et al., Safety, Pharmacokinetics, and Pharmacod…, Clinical and translational… (2020) | [10.1111/cts.12831](https://doi.org/10.1111/cts.12831) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Kanodia_2020](drugs/drug_racecadotril/pd_Kanodia_2020_cGMP.md) | Kanodia J et al., Safety, Pharmacokinetics, and Pharmacod…, Clinical and translational… (2020) | [10.1111/cts.12831](https://doi.org/10.1111/cts.12831) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -35,15 +35,26 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 239 matched, 59 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 18 matched, 63 returned
+- **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
+
+## Full text wanted
+
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Tras_2022.pdf` | Tras B et al., Can diarrhea affect the pharmacokinetic…, Journal of veterinary pharm… (2022) | popPK | 9 | [10.1111/jvp.13078](https://doi.org/10.1111/jvp.13078) | [35706330](https://pubmed.ncbi.nlm.nih.gov/35706330) | The study reports quantitative non-compartmental pharmacokinetic parameters (t1/2, Cmax, Tmax, AUC) for racecadotril in neonatal calves, with specific numeric values provided in the text. |
+
+<sub>queue written 2026-09-26T11:19:45.076313+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Ali_2011 | irrelevant | 0 | 0 | The paper describes analytical methods for quantifying racecadotril concentration, not a pharmacokinetic study reporting disposition parameters. |
 | PD | Ali_2011 | not_relevant | 0 | 0 | The paper describes analytical methods for quantifying racecadotril concentration, not pharmacodynamic or exposure-response relationships. |
 | popPK | Bado_1987 | irrelevant | 0 | 0 | The paper studies the pharmacological effects of acetorphan on gastric secretion in cats and does not involve racecadotril or pharmacokinetic parameters. |
 | popPK | Bado_1989 | irrelevant | 0 | 0 | The paper investigates the role of opioid peptides on food intake in cats and does not involve racecadotril or report any pharmacokinetic parameters. |
@@ -55,8 +66,11 @@ _not available_
 | popPK | Chen_2018 | irrelevant | 0 | 0 | The paper is a clinical practice guideline for pediatric diarrhea management and does not report any pharmacokinetic parameters for racecadotril. |
 | popPK | Cheng_2002 | irrelevant | 0 | 0 | The paper is a general review of traveler's diarrhea that mentions racecadotril only as a symptomatic agent without providing any pharmacokinetic data or quantitative disposition parameters. |
 | popPK | De_1988 | irrelevant | 0 | 0 | The study focuses on enkephalinase inhibition using acetorphan/thiorphan in mice and does not involve racecadotril or report its pharmacokinetic parameters. |
+| popPK | Deng_2017 | irrelevant | 2 | 0 | The study focuses on in vitro dissolution and IVIVC in rats without reporting specific quantitative PK parameters (CL, V, ka) for racecadotril in the provided evidence. |
 | PD | Deng_2017 | not_relevant | 0 | 0 | The paper focuses on in vitro dissolution and PK correlation (IVIVC) for formulation discrimination, reporting no pharmacodynamic or exposure-response data. |
+| popPK | Duval-Iflah_1999 | irrelevant | 0 | 0 | The study is a toxicological and microbiological assessment in piglets, not a pharmacokinetic study, and reports no quantitative disposition parameters for racecadotril. |
 | PD | Duval-Iflah_1999 | not_relevant | 1 | 0 | The study reports qualitative safety and efficacy comparisons (bacterial counts, mortality) at fixed doses but does not provide concentration-effect data, dose-response curves, or numeric PD parameters (e.g., Emax, EC50) for racecadotril. |
+| popPK | Eberlin_2012 | relevant | 4 | 3 | The paper is a review that summarizes pharmacokinetic data for racecadotril, reporting specific numeric values for Cmax, tmax, and t1/2 in the text, but lacks a compartmental model or clearance/volume parameters. |
 | PD | Eberlin_2012 | not_relevant | 3 | 2 | The paper is a review that reports in vitro IC50/Ki values and qualitative clinical PK/PD observations (e.g., time to peak effect, inhibition of NEP activity) but does not provide a quantitative exposure-response or dose-response model with derivable PD parameters like Emax or EC50 for the clinical effect. |
 | popPK | Eberlin_2018 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of clinical efficacy (diarrhea duration, stool output) and does not report quantitative pharmacokinetic parameters (CL, V, ka) for racecadotril. |
 | popPK | Fang_2025 | irrelevant | 0 | 0 | The paper is a clinical practice guideline review that discusses racecadotril as a treatment option but does not report any original pharmacokinetic parameters or quantitative disposition data. |
@@ -82,6 +96,7 @@ _not available_
 | popPK | Lecomte_1986 | irrelevant | 0 | 0 | The paper studies acetorphan, not racecadotril, and reports pharmacological effects rather than PK parameters. |
 | popPK | Lecomte_2000 | irrelevant | 0 | 0 | The paper is a clinical efficacy review of racecadotril for diarrhea treatment and does not report any pharmacokinetic parameters. |
 | popPK | Lehert_2011 | irrelevant | 0 | 0 | The paper is a clinical efficacy meta-analysis of racecadotril for gastroenteritis and does not report any pharmacokinetic parameters. |
+| popPK | Li_2020 | irrelevant | 2 | 0 | The study reports bioequivalence metrics (AUC, Cmax ratios) for the metabolite thiorphan rather than quantitative population pharmacokinetic parameters (CL, V, ka) for racecadotril. |
 | PD | Li_2020 | not_relevant | 0 | 0 | The study is a bioequivalence assessment based on PK parameters (AUC, Cmax) of a metabolite and does not report any pharmacodynamic measurements or exposure-response relationships. |
 | popPK | Li_2023 | irrelevant | 0 | 0 | The study investigates probiotic-driven metabolism of racecadotril in vitro and ex vivo, not pharmacokinetic disposition parameters (CL, V, ka) in a host. |
 | popPK | Liang_2019 | irrelevant | 0 | 0 | This is a Cochrane systematic review of clinical efficacy for acute diarrhoea, not a pharmacokinetic study, and it contains no quantitative PK parameters (CL, V, ka, etc.) for racecadotril. |
@@ -90,6 +105,8 @@ _not available_
 | popPK | Manfredi_2025 | irrelevant | 2 | 4 | The paper is a narrative review that summarizes pharmacokinetic parameters (Vd, t1/2) in a table, but it does not report original quantitative disposition parameters like clearance (CL) or intercompartmental clearance (Q) from a primary PK study. |
 | popPK | Matheson_2000 | irrelevant | 0 | 0 | The text is a clinical efficacy summary describing therapeutic outcomes and tolerability, containing no pharmacokinetic parameters or quantitative disposition data for racecadotril. |
 | popPK | Nagpal_2004 | irrelevant | 0 | 0 | The evidence contains only a misspelled drug name with no pharmacokinetic data, study details, or numeric values. |
+| popPK | Pieścik-Lech_2013 | irrelevant | 0 | 0 | The paper is a clinical review of acute gastroenteritis management that mentions racecadotril only as an adjunctive therapy, without reporting any pharmacokinetic parameters. |
+| popPK | Pınarbaşlı_2022 | irrelevant | 0 | 0 | The paper is a pharmaceutical formulation and in-vitro dissolution study, not a pharmacokinetic study, and reports no disposition parameters (CL, V, ka, etc.) for racecadotril. |
 | PD | Pınarbaşlı_2022 | not_relevant | 0 | 0 | The paper is a pharmaceutical formulation study focusing on taste masking and in vitro dissolution, containing no pharmacokinetic or pharmacodynamic data. |
 | popPK | Roge_1993 | irrelevant | 0 | 0 | The study focuses on acetorphan and loperamide, does not involve racecadotril, and reports clinical efficacy rather than pharmacokinetic parameters. |
 | popPK | Said_2024 | irrelevant | 2 | 0 | The paper describes a bioanalytical method for the metabolite thiorphan and a bioequivalence study, but does not report quantitative PK parameters (CL, V, etc.) for racecadotril itself in the provided evidence. |
@@ -97,6 +114,7 @@ _not available_
 | popPK | Spillantini_1986 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effect of acetorphan on enkephalinase activity and does not involve racecadotril or report any pharmacokinetic parameters. |
 | popPK | Stasch_1995 | irrelevant | 0 | 0 | The study investigates the cardiovascular effects of the NEP inhibitor sinorphan in rats and does not involve racecadotril or report its pharmacokinetic parameters. |
 | popPK | Tack_2012 | irrelevant | 0 | 0 | The text is a general overview of functional diarrhea and does not contain any pharmacokinetic data or parameters for racecadotril. |
+| popPK | Wang_2021 | irrelevant | 2 | 0 | The study is a formulation development paper that reports bioequivalence in Beagle dogs but does not provide specific quantitative PK parameters (CL, V, ka) for racecadotril in the evidence. |
 | popPK | Wielgos_2019 | irrelevant | 0 | 0 | The paper is a clinical management review of acute gastroenteritis that mentions racecadotril as a treatment option but contains no pharmacokinetic data or quantitative disposition parameters. |
 | popPK | Yang_2025 | irrelevant | 0 | 0 | The study is a pharmacological and electrophysiological investigation of racecadotril's mechanism of action on Kv7 channels, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Yohannes_2020 | irrelevant | 0 | 0 | The paper describes an analytical method for enantioseparation of racecadotril and does not report any pharmacokinetic parameters. |

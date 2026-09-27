@@ -6,6 +6,88 @@ pharmacogenomic (PGx) parameters extracted from the published literature**, one 
 with the numbers linked back to the paper and table they came from — and, where a model could
 be built, a simulatable model to download.
 
+<style>
+.pklg { --pklg-ok:#2C7A57; --pklg-bad:#A8452F; --pklg-warn:#96690C; --pklg-faint:#8B9994;
+  --pklg-s1:#186A55; --pklg-s2:#6FB49B; --pklg-s3:#C9A227; --pklg-s4:#C8D2CF; --pklg-s5:#B08A6A;
+  --pklg-rule:var(--theme-color, #DBE3E0); }
+@media (prefers-color-scheme: dark) {
+  .pklg { --pklg-ok:#63BE94; --pklg-bad:#E08A72; --pklg-warn:#D9AA4C; --pklg-faint:#748480;
+    --pklg-s1:#5FC3A4; --pklg-s2:#2F7E67; --pklg-s3:#B99329; --pklg-s4:#2A3733; --pklg-s5:#8A6A50; }
+}
+.pklg table { border-collapse:collapse; width:100%; min-width:max-content; font-size:13px; }
+.pklg th, .pklg td { padding:7px 10px; text-align:left; white-space:nowrap;
+  border-top:1px solid rgba(128,128,128,.18); }
+.pklg thead th { font-size:11px; letter-spacing:.04em; text-transform:uppercase;
+  color:var(--pklg-faint); border-top:0; border-bottom:1px solid rgba(128,128,128,.35); }
+.pklg tfoot th, .pklg tfoot td { font-weight:600; border-top:2px solid rgba(128,128,128,.35); }
+.pklg .n { font-variant-numeric:tabular-nums; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }
+.pklg .ok { color:var(--pklg-ok); } .pklg .bad { color:var(--pklg-bad); }
+.pklg .mut, .pklg .nil { color:var(--pklg-faint); }
+.pklg .warn { color:var(--pklg-warn); border-bottom:1px dotted currentColor; cursor:help; }
+.pklg .sl { color:var(--pklg-faint); padding:0 1px; }
+.pklg .bar { display:flex; height:6px; border-radius:2px; overflow:hidden;
+  background:rgba(128,128,128,.15); min-width:110px; }
+.pklg .bar span { display:block; height:100%; }
+.pklg .s1{background:var(--pklg-s1)} .pklg .s2{background:var(--pklg-s2)}
+.pklg .s3{background:var(--pklg-s3)} .pklg .s4{background:var(--pklg-s4)}
+.pklg .s5{background:var(--pklg-s5)}
+.pklg .mixnum { display:block; margin-top:3px; font-size:11px; color:var(--pklg-faint);
+  font-variant-numeric:tabular-nums; }
+.pklg .scroll { overflow-x:auto; }
+.pklg details { border-top:1px solid rgba(128,128,128,.18); padding:2px 0; }
+.pklg details[open] { padding-bottom:10px; }
+.pklg summary { cursor:pointer; padding:7px 2px; font-size:13px; list-style:none;
+  display:flex; gap:10px; align-items:baseline; flex-wrap:wrap; }
+.pklg summary::-webkit-details-marker { display:none; }
+.pklg .csechead { margin:18px 0 6px; font-size:13px; letter-spacing:.06em;
+  text-transform:uppercase; color:var(--pklg-faint); font-weight:600; }
+.pklg .csechead .csub { text-transform:none; letter-spacing:0; font-weight:400; font-size:12px; }
+.pklg .cstats { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px;
+  margin-bottom:14px; }
+.pklg .cbox { border:1px solid rgba(128,128,128,.22); border-radius:6px; padding:10px 12px; }
+.pklg .cbox h4 { margin:0 0 6px; font-size:12px; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--pklg-faint); }
+.pklg .cnum { display:flex; align-items:baseline; gap:7px; }
+.pklg .cnum b { font-size:20px; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }
+.pklg .cnum b.ok { color:var(--pklg-ok); }
+.pklg .cnum span { font-size:10.5px; color:var(--pklg-faint); }
+.pklg .cbox table { width:100%; margin-top:8px; font-size:11px; border-collapse:collapse; }
+.pklg .cbox td { padding:3px 0; vertical-align:top; border-top:1px solid rgba(128,128,128,.14); }
+.pklg .cbox td:first-child { color:var(--pklg-faint); white-space:nowrap; padding-right:8px; }
+.pklg .chip { display:inline-block; padding:1px 6px; margin:0 3px 2px 0; border-radius:9px;
+  font-size:10px; line-height:1.5; white-space:nowrap; background:rgba(128,128,128,.12); }
+.pklg .chip.ok { color:var(--pklg-ok); } .pklg .chip.bad { color:var(--pklg-bad); }
+.pklg .chip.warn { color:var(--pklg-warn); } .pklg .chip.mut { color:var(--pklg-faint); }
+.pklg td.notes { white-space:normal; min-width:170px; }
+/* The literal arrow, not a CSS hex escape. This stylesheet is a plain Python string, so
+   a backslash followed by digits is read as an OCTAL escape at parse time: the page
+   shipped a NAK control byte and the browser drew that instead of an arrow. */
+.pklg summary::before { content:"▸"; color:var(--pklg-faint); display:inline-block;
+  width:1em; transition:transform .12s ease; }
+.pklg details[open] > summary::before { transform:rotate(90deg); }
+.pklg summary .lbl { font-weight:600; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }
+.pklg .badge { font-size:10px; letter-spacing:.05em; text-transform:uppercase;
+  padding:1px 6px; border-radius:9px; border:1px solid currentColor; }
+.pklg .b-running { color:var(--pklg-warn); }
+.pklg .b-finished { color:var(--pklg-ok); }
+.pklg .b-interrupted { color:var(--pklg-bad); }
+.pklg .b-never_run { color:var(--pklg-faint); }
+.pklg summary .meta { color:var(--pklg-faint); font-size:12px;
+  font-variant-numeric:tabular-nums; }
+.pklg .tiles { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  gap:10px; margin:14px 0 22px; }
+.pklg .tile { border:1px solid rgba(128,128,128,.25); border-radius:4px; padding:10px 12px; }
+.pklg .tile b { display:block; font-size:20px; font-variant-numeric:tabular-nums; }
+.pklg .tile i { display:block; font-style:normal; font-size:11px; letter-spacing:.06em;
+  text-transform:uppercase; color:var(--pklg-faint); }
+.pklg .tile em { font-style:normal; font-size:12px; color:var(--pklg-faint); }
+</style>
+<div class="pklg">
+
+<div class="tiles"><div class="tile"><i>ATC drugs: all / read / with records</i><b>5,225 / 1,331 / 504</b><em>25% of the ATC drugs read · 38% of those gave a popPK, PD or PGx record</em></div><div class="tile"><i>papers for these drugs</i><b>53,062</b><em>11,101 judged relevant to PK/PD/PGx (21%)</em></div><div class="tile"><i>papers with full text</i><b>15,886</b><em>37,176 had an abstract only</em></div><div class="tile"><i>where the full text came from</i><b>4,723 · 11,089</b><em>PDF parsed (GROBID) · publisher XML (JATS)</em></div><div class="tile"><i>LLM tokens</i><b>257.8M read</b><em>16.46M written back</em></div><div class="tile"><i>records taken from reviews</i><b>52,597</b><em>553 became models · 1,365 filled a gap a paper left</em></div><div class="tile"><i>drugs the pipeline read</i><b>1368 of 1438</b><em>70 of the drugs in these panels were never reached</em></div><div class="tile"><i>drugs that produced records</i><b>531</b><em>39% of the 1368 it read came back with something</em></div><div class="tile"><i>drugs by domain</i><b>270 · 403 · 67</b><em>with popPK · PD · PGx records</em></div></div>
+
+</div>
+
 ## What you will find here
 
 - **A page per drug.** Identity (ATC codes, synonyms, brands, DrugBank/PharmGKB ids, EU market
@@ -146,12 +228,12 @@ docsify serve .
 </style>
 <div class="pklg">
 
-### Extraction ledger <sub>KB artifacts as of 2026-09-26 09:46</sub>
+### Extraction ledger <sub>KB artifacts as of 2026-09-27 11:55</sub>
 
-<div class="tiles"><div class="tile"><i>papers for these drugs</i><b>50,225</b><em>10,730 judged relevant to PK/PD/PGx (21%)</em></div><div class="tile"><i>papers with full text</i><b>15,237</b><em>34,988 had an abstract only</em></div><div class="tile"><i>where the full text came from</i><b>4,552 · 10,611</b><em>PDF parsed (GROBID) · publisher XML (JATS)</em></div><div class="tile"><i>LLM tokens</i><b>267.2M read</b><em>16.04M written back</em></div><div class="tile"><i>records taken from reviews</i><b>52,201</b><em>553 became models · 1,396 filled a gap a paper left</em></div><div class="tile"><i>drugs the pipeline read</i><b>1255 of 1323</b><em>68 of the drugs in these panels were never reached</em></div><div class="tile"><i>drugs that produced records</i><b>520</b><em>41% of the 1255 it read came back with something</em></div><div class="tile"><i>drugs by domain</i><b>260 · 399 · 66</b><em>with popPK · PD · PGx records</em></div><div class="tile"><i>ATC drugs: all / read / with records</i><b>5,225 / 1,218 / 493</b><em>23% of the ATC drugs read · 40% of those gave a popPK, PD or PGx record</em></div></div>
-<h3 class="csechead">Corpus inventory <span class="csub">what was extracted, and how much of it can be run</span></h3><div class="cstats"><div class="cbox"><h4>popPK</h4><div class="cnum"><b>1,162</b><span>extracted</span></div><div class="cnum"><b class="ok">570</b><span>simulatable · 49.1%</span></div><table><tr><td>topology</td><td>1C 840 · 2C 232 · parent_metabolite 55</td></tr><tr><td>parameterisation</td><td>mechanistic 796 · apparent 366</td></tr><tr><td>covariate equations</td><td>130 (11.2%)</td></tr><tr><td>simulatable means</td><td>carries a clearance and a volume</td></tr></table></div><div class="cbox"><h4>PD</h4><div class="cnum"><b>1,674</b><span>extracted</span></div><div class="cnum"><b class="ok">75</b><span>simulatable · 4.5%</span></div><table><tr><td>family</td><td>unknown 839 · emax 349 · sigmoid_emax 261</td></tr><tr><td>driver</td><td>conc_no_pk 988 · cited_pk 511</td></tr><tr><td>runnable shapes</td><td>Emax 45 · turnover 30 · effect-cmt 8</td></tr><tr><td>simulatable means</td><td>potency + Emax, or a turnover rate</td></tr></table></div><div class="cbox"><h4>PGx</h4><div class="cnum"><b>85</b><span>extracted</span></div><div class="cnum"><b class="ok">15</b><span>simulatable · 17.6%</span></div><table><tr><td>mechanism</td><td>safety_allele 70 · transport 10</td></tr><tr><td>genes covered</td><td>17</td></tr><tr><td>simulatable means</td><td>shifts a named PK parameter</td></tr></table></div></div>
+<div class="tiles"><div class="tile"><i>ATC drugs: all / read / with records</i><b>5,225 / 1,331 / 504</b><em>25% of the ATC drugs read · 38% of those gave a popPK, PD or PGx record</em></div><div class="tile"><i>papers for these drugs</i><b>53,044</b><em>11,101 judged relevant to PK/PD/PGx (21%)</em></div><div class="tile"><i>papers with full text</i><b>15,876</b><em>37,168 had an abstract only</em></div><div class="tile"><i>where the full text came from</i><b>4,715 · 11,087</b><em>PDF parsed (GROBID) · publisher XML (JATS)</em></div><div class="tile"><i>LLM tokens</i><b>260.1M read</b><em>16.59M written back</em></div><div class="tile"><i>records taken from reviews</i><b>52,597</b><em>553 became models · 1,365 filled a gap a paper left</em></div><div class="tile"><i>drugs the pipeline read</i><b>1368 of 1438</b><em>70 of the drugs in these panels were never reached</em></div><div class="tile"><i>drugs that produced records</i><b>531</b><em>39% of the 1368 it read came back with something</em></div><div class="tile"><i>drugs by domain</i><b>270 · 403 · 67</b><em>with popPK · PD · PGx records</em></div></div>
+<h3 class="csechead">Corpus inventory <span class="csub">what was extracted, and how much of it can be run</span></h3><div class="cstats"><div class="cbox"><h4>popPK</h4><div class="cnum"><b>1,196</b><span>extracted</span></div><div class="cnum"><b class="ok">588</b><span>simulatable · 49.2%</span></div><table><tr><td>topology</td><td>1C 866 · 2C 236 · parent_metabolite 56</td></tr><tr><td>parameterisation</td><td>mechanistic 821 · apparent 375</td></tr><tr><td>covariate equations</td><td>144 (12.0%)</td></tr><tr><td>simulatable means</td><td>carries a clearance and a volume</td></tr></table></div><div class="cbox"><h4>PD</h4><div class="cnum"><b>1,655</b><span>extracted</span></div><div class="cnum"><b class="ok">74</b><span>simulatable · 4.5%</span></div><table><tr><td>family</td><td>unknown 843 · emax 336 · sigmoid_emax 253</td></tr><tr><td>driver</td><td>conc_no_pk 983 · cited_pk 497</td></tr><tr><td>runnable shapes</td><td>Emax 45 · turnover 29 · effect-cmt 7</td></tr><tr><td>simulatable means</td><td>potency + Emax, or a turnover rate</td></tr></table></div><div class="cbox"><h4>PGx</h4><div class="cnum"><b>85</b><span>extracted</span></div><div class="cnum"><b class="ok">15</b><span>simulatable · 17.6%</span></div><table><tr><td>mechanism</td><td>safety_allele 70 · transport 10</td></tr><tr><td>genes covered</td><td>17</td></tr><tr><td>simulatable means</td><td>shifts a named PK parameter</td></tr></table></div></div>
 
-<p class="pnote"><a href="#/ledger">Full extraction ledger — all 1426 drugs, per panel and run group →</a></p>
+<p class="pnote"><a href="#/ledger">Full extraction ledger — all 1551 drugs, per panel and run group →</a></p>
 </div>
 
 <!-- AUTOGEN:ledger END -->

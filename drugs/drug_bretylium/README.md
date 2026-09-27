@@ -18,13 +18,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 14:53 | 9:32 | 3/1/1 | 2/3/0 | 0/0/0 | 292,114/17,984 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 5/7 | 9/3 | 0 |
+| 2026-09-26 10:50 | 0:30 | 2/2/1 | 2/3/0 | 0/0/0 | 2,609/724 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 5/7 | 9/3 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Greenberg_2022_reference](drugs/drug_bretylium/Bretylium_Greenberg2022_reference.md) | Greenberg RG et al., Population Pharmacokinetics of Moxiflox…, Paediatric drugs (2022) | [10.1007/s40272-022-00493-3](https://doi.org/10.1007/s40272-022-00493-3) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.529). The first reading is what the record holds.">cross-check: disputed</span> | [Greenberg_2022_reference](drugs/drug_bretylium/Bretylium_Greenberg2022_reference.md) | Greenberg RG et al., Population Pharmacokinetics of Moxiflox…, Paediatric drugs (2022) | [10.1007/s40272-022-00493-3](https://doi.org/10.1007/s40272-022-00493-3) |
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Kamath_1981_reference](drugs/drug_bretylium/Bretylium_Kamath1981_reference.md) | Kamath BL et al., Pharmacokinetics of [14C]bretylium tosy…, Journal of pharmaceutical s… (1981) | [10.1002/jps.2600700623](https://doi.org/10.1002/jps.2600700623) |
 | <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Rapeport_1985_reference](drugs/drug_bretylium/Bretylium_Rapeport1985_reference.md) | Rapeport WG, Clinical pharmacokinetics of bretylium, Clinical pharmacokinetics (1985) | [10.2165/00003088-198510030-00004](https://doi.org/10.2165/00003088-198510030-00004) |
 | <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Garrett_1982_reference](drugs/drug_bretylium/Bretylium_Garrett1982_reference.md) | Garrett ER et al., Bretylium pharmacokinetics and bioavail…, Biopharmaceutics & drug dis… (1982) | [10.1002/bdd.2510030206](https://doi.org/10.1002/bdd.2510030206) |
@@ -60,7 +60,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 53 matched, 31 returned
-- **screened:** 5  ·  **relevant:** 5
+- **screened:** 6  ·  **relevant:** 5
 - **records:** 5  ·  extracted 3  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

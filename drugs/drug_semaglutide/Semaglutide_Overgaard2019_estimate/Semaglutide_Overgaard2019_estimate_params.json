@@ -5,6 +5,7 @@
   "central.C"
  ],
  "parameters": {
+  "Cl": 9.666666666666666e-09,
   "F": 0.847,
   "Tlag": 0.0,
   "VdPerKg": 5.1285714285714284e-05,
@@ -17,10 +18,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 1675.0189538129448
+  "central.C": 578308.6172344689
  },
  "reference_peaks": {
-  "central.C": 2.5087821789758705e-05
+  "central.C": 0.0010406288726454572
  },
  "stop_time": 1728000.0,
  "template": "PK_2C_enteral",

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;brexpiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/&quot;},{&quot;label&quot;:&quot;Higashi_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_reference&quot;,&quot;label&quot;:&quot;Higashi_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Mauri2018_reference&quot;,&quot;label&quot;:&quot;Mauri_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Mauri2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_reference&quot;,&quot;label&quot;:&quot;Higashi_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # brexpiprazole — `Brexpiprazole_Higashi2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,26 +15,29 @@
 
 ### Reviewer guidance
 
-**Why:** the engineer built the model but a core parameter had no value and was left at its base-class default, so it was not shipped; the engineer's deviations are not documented and quantified. Evidence: T6_deviations — got invented_absorption: not acceptable
-**Second reading:** Independently confirmed by `gpt-oss:120b`.
-**How to address:** Check _transcribev2.yaml for the parameter: if the paper's table carries the number, the interpret stage dropped it — re-run interpret and validate for the drug, then the engineer.
-<sub>owner: **scholar**</sub>
+**Why:** disposition incomplete — only clearance/elimination extracted — the engineer needs both; the missing half would be silently filled from the library default
+**How to address:** Confirm the model card and promote to 'curated' if it should be an exemplar.
+<sub>owner: **curator**</sub>
 
 ## Citation
 Higashi K; Sasaki T; Aoki K; Sekine D; Maeda K; Shiomi Y; et al. et al. (2025). Drug metabolism and pharmacokinetics 62
   ·  DOI: [10.1016/j.dmpk.2025.101057](https://doi.org/10.1016/j.dmpk.2025.101057)
 
 ## Model component
-<dbs-pgx drug="brexpiprazole" model-id="Brexpiprazole_Higashi2025_reference" status="model_quarantined" stale="false" population="Japanese healthy subjects and patients with schizophrenia" measured-compound="brexpiprazole" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="brexpiprazole" model-id="Brexpiprazole_Higashi2025_reference" status="needs_review" stale="false" population="Japanese healthy subjects and patients with schizophrenia" measured-compound="brexpiprazole" parameterization="apparent" topology="1C"></dbs-pgx>
+
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 1 extracted, plus 1 covariate effect.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Apparent clearance extensive metaboliser, CL/F (L/h) | `Q27` · CL/F | 1.15 | L/h | 3.194444444444444e-07 | [l] / [h] | not captured | boundary (0.8) | tab_2:row7:col1 | — | not captured |
+| Apparent clearance extensive metaboliser, CL/F (L/h) | `Q27` · CL/F | 1.15 | L/h | 3.194444444444444e-07 | [l] / [h] | not captured | llm_confirmed (0.6) | tab_2:row7:col1 | — | not captured |
+| CYP2D6 | `Q900` · CYP2D6 | {'EM': 0.0, 'IM': 0.6364} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -45,70 +48,26 @@ Higashi K; Sasaki T; Aoki K; Sekine D; Maeda K; Shiomi Y; et al. et al. (2025). 
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=brexpiprazole
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell tab_2:row5:col1 = '0.74 (6.4%)'
-- unparsed cell tab_2:row5:col2 = '52.8% (7.9%)'
-- unparsed cell tab_2:row5:col3 = '0.73 (0.638, 0.838)'
-- unparsed cell tab_2:row8:col1 = '63.0 (5.1%)'
-- unparsed cell tab_2:row8:col2 = '40.1% (11.7%)'
-- unparsed cell tab_2:row8:col3 = '62.6 (56.8, 71.7)'
-- unparsed cell tab_2:row10:col1 = '1.9 (5.1%)'
-- unparsed cell tab_2:row10:col2 = '48.8% (9.9%)'
-- unparsed cell tab_2:row10:col3 = '1.89 (1.71, 2.12)'
-- unparsed cell tab_2:row12:col1 = '1.0 (17.8%)'
-- unparsed cell tab_2:row12:col3 = '0.989 (0.701, 1.47)'
-- unparsed cell tab_2:row14:col1 = '24.6 (10.7%)'
-- unparsed cell tab_2:row14:col3 = '24.7 (19.8, 30.4)'
-- unparsed cell tab_2:row16:col1 = '-0.228 (20.0%)'
-- unparsed cell tab_2:row16:col3 = '-0.228 (-0.337, -0.133)'
-- unparsed cell tab_2:row17:col1 = '0.62 (6.1%)'
-- unparsed cell tab_2:row17:col3 = '0.61 (0.548, 0.709)'
-- unparsed cell tab_2:row19:col1 = '0.56 (17.9%)'
-- unparsed cell tab_2:row19:col3 = '0.565 (0.361, 0.802)'
-- unparsed cell tab_2:row21:col1 = '-0.30 (26.1%)'
-- unparsed cell tab_2:row21:col3 = '-0.293 (-0.46, -0.133)'
-- unparsed cell tab_2:row22:col1 = '0.4 (42.8%)'
-- unparsed cell tab_2:row22:col3 = '0.374 (0.0527, 0.781)'
-- unparsed cell tab_2:row23:col1 = '0.776 (10.7%)'
-- unparsed cell tab_2:row24:col1 = '18.5 (9.6%)'
-- unparsed cell tab_2:row24:col3 = '0.0329 (0.0237, 0.0491)'
+- LLM selected parameter table(s) 2
 
 ## Validation
-
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (5/5 fields) | none |
-
-_Every reader agrees on every compared field of this record._
-
-<details class="legend">
-<summary>Cross-check legend</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
-</details>
-
 
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row7:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 1.15 L/h | not captured | not captured | ['tab_2:row7:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -118,8 +77,6 @@ _Every reader agrees on every compared field of this record._
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_brexpiprazole/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Higashi_2025` / `Higashi_2025::reference`)
-- model: `../../../knowledgebase/drugs/drug_brexpiprazole/models/modelica/_needs_review/Brexpiprazole_Higashi2025_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_brexpiprazole/models/modelica/_needs_review/Brexpiprazole_Higashi2025_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -145,4 +102,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 10:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 10:49 UTC</sub>

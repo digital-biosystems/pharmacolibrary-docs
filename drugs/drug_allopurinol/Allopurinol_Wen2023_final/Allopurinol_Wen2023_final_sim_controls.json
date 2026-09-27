@@ -10,6 +10,16 @@
   "mult": true
  },
  {
+  "key": "Cl",
+  "label": "Clearance",
+  "unit": "L/h",
+  "scale": 3600000.0,
+  "min": 0.2,
+  "max": 3,
+  "step": 0.05,
+  "mult": true
+ },
+ {
   "key": "VdPerKg",
   "label": "Vd per kg",
   "unit": "L/kg",
@@ -78,11 +88,11 @@
  {
   "key": "stop_time",
   "label": "Simulated time",
-  "unit": "h",
-  "scale": 0.0002777777777777778,
-  "min": 8,
-  "max": 120,
-  "step": 1,
+  "unit": "d",
+  "scale": 1.1574074074074073e-05,
+  "min": 1.0,
+  "max": 18.0,
+  "step": 0.5,
   "sim": true
  }
 ]

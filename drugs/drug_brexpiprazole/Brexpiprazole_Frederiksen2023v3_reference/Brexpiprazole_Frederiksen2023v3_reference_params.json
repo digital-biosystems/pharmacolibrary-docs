@@ -1,0 +1,55 @@
+{
+ "model_id": "Brexpiprazole_Frederiksen2023v3_reference",
+ "molar_masses": {
+  "C_M2": 0.4676,
+  "central.C": 0.43357
+ },
+ "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "DM-3411",
+  "C_M2": "DM-3412",
+  "C_central": "brexpiprazole"
+ },
+ "observables": [
+  "central.C",
+  "C_M1",
+  "C_M2"
+ ],
+ "parameters": {
+  "CL1": 0.0,
+  "CLm1": 9.25e-07,
+  "CLm2": 1.1666666666666667e-07,
+  "F": 0.9,
+  "MW": 0.43357,
+  "MW_m2": 0.4676,
+  "Tlag": 1479.6,
+  "Vd1": 0.08120000000000001,
+  "Vd1m1": 0.00244,
+  "Vd1m2": 0.000447,
+  "Vd2": 0.040100000000000004,
+  "Vd2m2": 0.020399999999999998,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.00028333333333333335,
+  "q12": 1.9833333333333332e-07,
+  "q1_m11": 3.111111111111111e-07,
+  "q1_m21": 6.222222222222222e-09,
+  "q21": 1.9833333333333332e-07,
+  "qm21_m22": 6e-07,
+  "qm22_m21": 6e-07
+ },
+ "reference_peak_times": {
+  "C_M1": 19911.82364729459,
+  "C_M2": 86400.0,
+  "central.C": 15583.16633266533
+ },
+ "reference_peaks": {
+  "C_M1": 0.00033827111706483787,
+  "C_M2": 1.9564586411399624e-05,
+  "central.C": 0.0010166381277115423
+ },
+ "stop_time": 86400.0,
+ "template": "PK_3M_9C",
+ "template_fmu": "PK_3M_9C.fmu"
+}

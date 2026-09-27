@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tapentadol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tapentadol_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tapentadol_Khalil2020_final&quot;,&quot;label&quot;:&quot;Khalil_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Khalil2020_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tapentadol_Joczyk2022_reference&quot;,&quot;label&quot;:&quot;Jo\u0144czyk_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Joczyk2022_reference.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tapentadol_Zhang2017_reference&quot;,&quot;label&quot;:&quot;Zhang_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Zhang2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tapentadol_Watson2019_reference&quot;,&quot;label&quot;:&quot;Watson_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tapentadol_Joczyk2022_reference&quot;,&quot;label&quot;:&quot;Jo\u0144czyk_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Joczyk2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tapentadol_Khalil2020_final&quot;,&quot;label&quot;:&quot;Khalil_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Khalil2020_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tapentadol_Zhang2017_reference&quot;,&quot;label&quot;:&quot;Zhang_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tapentadol/Tapentadol_Zhang2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # tapentadol
 
@@ -24,15 +24,15 @@ The extended-release tablets of tapentadol are indicated for the management of p
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-20 21:39 | 11:34 | 2/1/1 | 1/0/0 | 0/0/2 | 209,101/12,861 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 4/11 | 13/2 | 0 |
+| 2026-09-26 20:44 | 1:03 | 1/1/2 | 1/0/0 | 0/0/2 | 25,324/1,738 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 4/11 | 13/2 | 0 |
 
 ## popPK records
 
 | status | detail | citation | doi |
 |---|---|---|---|
 | <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Watson_2019_reference](drugs/drug_tapentadol/Tapentadol_Watson2019_reference.md) | Watson E et al., Population pharmacokinetic modeling to…, Journal of pain research (2019) | [10.2147/JPR.S208454](https://doi.org/10.2147/JPR.S208454) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q19, Q18 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Jończyk_2022_reference](drugs/drug_tapentadol/Tapentadol_Joczyk2022_reference.md) | Jończyk R et al., Multiple Dose Pharmacokinetics of Tapen…, Journal of pain research (2022) | [10.2147/JPR.S364902](https://doi.org/10.2147/JPR.S364902) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.462). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Khalil_2020_final](drugs/drug_tapentadol/Tapentadol_Khalil2020_final.md) | Khalil F et al., Population Pharmacokinetics of Tapentad…, Journal of pain research (2020) | [10.2147/JPR.S269549](https://doi.org/10.2147/JPR.S269549) |
-| <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span> | [Jończyk_2022_reference](drugs/drug_tapentadol/Tapentadol_Joczyk2022_reference.md) | Jończyk R et al., Multiple Dose Pharmacokinetics of Tapen…, Journal of pain research (2022) | [10.2147/JPR.S364902](https://doi.org/10.2147/JPR.S364902) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2017_reference](drugs/drug_tapentadol/Tapentadol_Zhang2017_reference.md) | Zhang L et al., Quantifying the Exposure of Tapentadol…, Clinical drug investigation (2017) | [10.1007/s40261-016-0482-z](https://doi.org/10.1007/s40261-016-0482-z) |
 
 ## Pharmacodynamics (PD)
@@ -80,25 +80,21 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 46 matched, 46 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 4  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_8 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Göhler_2013.pdf` | Göhler K et al., Comparative pharmacokinetics and bioava…, International journal of cl… (2013) | popPK | 10 | [10.5414/CP201722](https://doi.org/10.5414/CP201722) | [23357834](https://pubmed.ncbi.nlm.nih.gov/23357834) | The paper reports quantitative pharmacokinetic parameters for tapentadol, including clearance, volume of distribution, and half-life, directly in the text. |
-| `Xu_2010.pdf` | Xu XS et al., Population pharmacokinetics of tapentad…, Clinical pharmacokinetics (2010) | popPK | 10 | [10.2165/11535390-000000000-00000](https://doi.org/10.2165/11535390-000000000-00000) | [20818833](https://pubmed.ncbi.nlm.nih.gov/20818833) | The paper is a population PK study for tapentadol, but the specific numeric parameter estimates (e.g., typical CL/F, V/F values) are not present in the provided abstract text, only variability percentages and qualitative covariate effects. |
-| `Lavy_2014.pdf` | Lavy E et al., Use of the novel atypical opioid tapent…, Journal of veterinary pharm… (2014) | popPK | 9 | [10.1111/jvp.12123](https://doi.org/10.1111/jvp.12123) | [24611613](https://pubmed.ncbi.nlm.nih.gov/24611613) | The study reports quantitative PK parameters (Tmax, half-life, bioavailability) for tapentadol in goats, but specific clearance and volume values are not explicitly listed in the provided text. |
-| `Xu_2012.pdf` | Xu XS et al., Pharmacokinetic and pharmacodynamic mod…, Pharmaceutical research (2012) | popPK | 9 | [10.1007/s11095-012-0786-5](https://doi.org/10.1007/s11095-012-0786-5) | [22618801](https://pubmed.ncbi.nlm.nih.gov/22618801) | The paper describes a population PK study for tapentadol, but the specific numeric parameter values are not present in the provided evidence text. |
 | `Karbownik_2020.pdf` | Karbownik A et al., In vivo assessment of potential for UGT…, Biomedicine & pharmacothera… (2020) | pgx | 7 | [10.1016/j.biopha.2020.110530](https://doi.org/10.1016/j.biopha.2020.110530) | [32712531](https://www.ncbi.nlm.nih.gov/pubmed/32712531) | metadata signals extractable PGX data (UGT1A1, PK/PD-context) |
 | `Natoli_2021.pdf` | Natoli S et al., Should we be concerned when COVID-19-po…, European review for medical… (2021) | pgx | 7 | [10.26355/eurrev_202107_26399](https://doi.org/10.26355/eurrev_202107_26399) | [34337735](https://www.ncbi.nlm.nih.gov/pubmed/34337735) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Muriel_2024.pdf` | Muriel J et al., Use of CYP2D6 substrates and inhibitors…, Biomedicine & pharmacothera… (2024) | pgx | 5 | [10.1016/j.biopha.2024.116882](https://doi.org/10.1016/j.biopha.2024.116882) | [38876046](https://www.ncbi.nlm.nih.gov/pubmed/38876046) | metadata signals extractable PGX data (CYP2D6) |
 | `Pesce_2025.pdf` | Pesce AJ et al., CYP450-based reclassification of urinar…, Journal of opioid management (2025) | pgx | 5 | [10.5055/jom.1001](https://doi.org/10.5055/jom.1001) | [42429026](https://www.ncbi.nlm.nih.gov/pubmed/42429026) | metadata signals extractable PGX data (CYP450) |
 
-<sub>queue written 2026-09-20T21:29:10.792097+00:00</sub>
+<sub>queue written 2026-09-26T20:43:59.547729+00:00</sub>
 
 ## Screened and excluded
 
@@ -134,4 +130,4 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Yoshioka_2017 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction between warfarin and opioids (methadone/oxycodone) and does not investigate the effect of gene variants on tapentadol pharmacokinetics or pharmacodynamics. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-20 21:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-26 20:44 UTC</sub>

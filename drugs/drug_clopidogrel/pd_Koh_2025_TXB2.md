@@ -1,7 +1,8 @@
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clopidogrel_Jung2024&quot;,&quot;label&quot;:&quot;Jung_2024_EM&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024.md&quot;,&quot;status&quot;:&quot;curated&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Kang2026_reference&quot;,&quot;label&quot;:&quot;Kang_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Kang2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Koh2025_reference&quot;,&quot;label&quot;:&quot;Koh_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Koh2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Lv2025_reference&quot;,&quot;label&quot;:&quot;Lv_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Lv2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Purohit2026_reference&quot;,&quot;label&quot;:&quot;Purohit_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Wang2025_reference&quot;,&quot;label&quot;:&quot;Wang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yata2026_reference&quot;,&quot;label&quot;:&quot;Yata_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Grafeneder2024_hdp&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hdp&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hdp.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Grafeneder2024_hv&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hv&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Jung2024_reference&quot;,&quot;label&quot;:&quot;Jung_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Lee2012_reference&quot;,&quot;label&quot;:&quot;Lee_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Lee2012_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Ma2014_reference&quot;,&quot;label&quot;:&quot;Ma_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Danielak2017_reference&quot;,&quot;label&quot;:&quot;Danielak_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Danielak2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Xie2014_reference&quot;,&quot;label&quot;:&quot;Xie_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Xie2014_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;clopidogrel&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/&quot;},{&quot;label&quot;:&quot;Koh_2025 \u00b7 PD thromboxane B2&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clopidogrel_Jung2024&quot;,&quot;label&quot;:&quot;Jung_2024_EM&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024.md&quot;,&quot;status&quot;:&quot;curated&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Koh2025_reference&quot;,&quot;label&quot;:&quot;Koh_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Koh2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Lv2025_reference&quot;,&quot;label&quot;:&quot;Lv_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Lv2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Purohit2026_reference&quot;,&quot;label&quot;:&quot;Purohit_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Purohit2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Wang2025_reference&quot;,&quot;label&quot;:&quot;Wang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Wang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yata2026_reference&quot;,&quot;label&quot;:&quot;Yata_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yata2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Grafeneder2024_hdp&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hdp&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hdp.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Grafeneder2024_hv&quot;,&quot;label&quot;:&quot;Grafeneder_2024_hv&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Jung2024_reference&quot;,&quot;label&quot;:&quot;Jung_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Ma2014_reference&quot;,&quot;label&quot;:&quot;Ma_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Danielak2017_reference&quot;,&quot;label&quot;:&quot;Danielak_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Danielak2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Lee2012_reference&quot;,&quot;label&quot;:&quot;Lee_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Lee2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Xie2014_reference&quot;,&quot;label&quot;:&quot;Xie_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Xie2014_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# thromboxane B2 — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.645). The first reading is what the record holds.">cross-check: disputed</span>
+# thromboxane B2 — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.567). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -10,7 +11,7 @@
 </details>
 
 - **paper:** `Koh_2025`
-- **model family:** `indirect_response_i`
+- **model family:** `indirect_response_ii`
 - **driver:** `conc_no_pk`
 - **tier:** population
 - **effect:** inhibition/unknown
@@ -24,11 +25,10 @@ Koh J; Khwarg J; Yu KS; Lee S; Jang IJ; Lee S et al. (2025). Drug design, develo
 |---|---|---|---|---|---|---|
 | fr — Estimate | `Q43` · not captured | 0.69 | not captured | not captured | exact (not captured) | t0001:row2:col1 |
 | fr — RSE (%) | `Q43` · not captured | 4.99 | not captured | not captured | exact (not captured) | t0001:row2:col2 |
-| ka capsule (h−1) — Estimate | `Q49` · not captured | 0.22 | h−1 | not captured | llm_confirmed (not captured) | t0001:row3:col1 |
-| ka capsule (h−1) — RSE (%) | `Q49` · not captured | 21.8 | h−1 | not captured | llm_confirmed (not captured) | t0001:row3:col2 |
+| ka capsule (h−1) — Estimate | `Q49` · not captured | 0.22 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0001:row3:col1 |
+| ka capsule (h−1) — RSE (%) | `Q49` · not captured | 21.8 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0001:row3:col2 |
 | ka tablet (h−1) — Estimate | `Q49` · not captured | 0.053 | h−1 | not captured | llm_confirmed (not captured) | t0001:row4:col1 |
-| Tk0 (h) — Estimate | `Q86` · not captured | 1.58 | h | not captured | llm (not captured) | t0001:row5:col1 |
-| Tk0 (h) — RSE (%) | `Q83` · not captured | 15.8 | h | not captured | llm (not captured) | t0001:row5:col2 |
+| Tk0 (h) — Estimate | `Q56` · not captured | 1.58 | h | not captured | llm (not captured) | t0001:row5:col1 |
 | Lag0 (h) — Estimate | `Q83` · not captured | 2.81 | h | not captured | llm (not captured) | t0001:row6:col1 |
 | Lag0 (h) — RSE (%) | `Q83` · not captured | 8.26 | h | not captured | llm (not captured) | t0001:row6:col2 |
 | k23 (h−1) — Estimate | `Q48` · not captured | 2.32 | h−1 | not captured | exact (not captured) | t0001:row7:col1 |
@@ -41,9 +41,9 @@ Koh J; Khwarg J; Yu KS; Lee S; Jang IJ; Lee S et al. (2025). Drug design, develo
 | Q/F (L/h) — Estimate | `Q69` · not captured | 0.08 | L/h | not captured | exact (not captured) | t0001:row13:col1 |
 | V3/F (L) — Estimate | `Q78` · not captured | 23.51 | L | not captured | exact (not captured) | t0001:row14:col1 |
 | V3/F (L) — RSE (%) | `Q78` · not captured | 12.3 | L | not captured | exact (not captured) | t0001:row14:col2 |
-| V4/F (L) — Estimate | `Q290` · not captured | 7.5 | L | not captured | llm (not captured) | t0001:row15:col1 |
-| V4/F (L) — RSE (%) | `Q290` · not captured | 2.6 | L | not captured | llm (not captured) | t0001:row15:col2 |
-| V5/F (L) — Estimate | `Q290` · not captured | 1.98 | L | not captured | llm (not captured) | t0001:row16:col1 |
+| V4/F (L) — Estimate | `Q78` · not captured | 7.5 | L | not captured | llm (not captured) | t0001:row15:col1 |
+| V4/F (L) — RSE (%) | `Q78` · not captured | 2.6 | L | not captured | llm (not captured) | t0001:row15:col2 |
+| V5/F (L) — Estimate | `Q78` · not captured | 1.98 | L | not captured | llm (not captured) | t0001:row16:col1 |
 | R0 (μg/L) — Estimate | `Q336` · not captured | 26.4 | μg/L | not captured | exact (not captured) | t0001:row17:col1 |
 | R0 (μg/L) — RSE (%) | `Q336` · not captured | 7.67 | μg/L | not captured | exact (not captured) | t0001:row17:col2 |
 | kout (h−1) — Estimate | `Q328` · not captured | 0.023 | h−1 | not captured | exact (not captured) | t0001:row18:col1 |
@@ -51,14 +51,8 @@ Koh J; Khwarg J; Yu KS; Lee S; Jang IJ; Lee S et al. (2025). Drug design, develo
 | Imax — Estimate | `Q323` · not captured | 1 | not captured | not captured | exact (not captured) | t0001:row19:col1 |
 | IC50 (mol/L) — Estimate | `Q322` · not captured | 0.0036 | mol/L | not captured | exact (not captured) | t0001:row20:col1 |
 | Gamma — Estimate | `Q325` · not captured | 1 | not captured | not captured | exact (not captured) | t0001:row21:col1 |
-| Ωfr — Estimate | `Q43` · not captured | 0.29 | not captured | not captured | llm_confirmed (not captured) | t0001:row23:col1 |
-| Ωfr — RSE (%) | `Q43` · not captured | 16.5 | not captured | not captured | llm_confirmed (not captured) | t0001:row23:col2 |
 | Ωka — Estimate | `Q49` · not captured | 1.09 | not captured | not captured | llm_confirmed (not captured) | t0001:row24:col1 |
-| Ωka — RSE (%) | `Q95` · not captured | 14.7 | not captured | not captured | llm_corrected (not captured) | t0001:row24:col2 |
-| ΩTk0 — Estimate | `Q326` · not captured | 0.91 | not captured | not captured | llm (not captured) | t0001:row25:col1 |
-| ΩTk0 — RSE (%) | `Q312` · not captured | 13.7 | not captured | not captured | llm (not captured) | t0001:row25:col2 |
-| Ωlag0 — Estimate | `Q83` · not captured | 0.51 | not captured | not captured | llm (not captured) | t0001:row26:col1 |
-| Ωlag0 — RSE (%) | `Q312` · not captured | 12.6 | not captured | not captured | llm (not captured) | t0001:row26:col2 |
+| Ωka — RSE (%) | `Q49` · not captured | 14.7 | not captured | not captured | llm_confirmed (not captured) | t0001:row24:col2 |
 | Ωk34 — Estimate | `Q304` · not captured | 0.27 | not captured | not captured | llm_corrected (not captured) | t0001:row27:col1 |
 | ΩCLm/F — Estimate | `Q351` · not captured | 0.24 | not captured | not captured | llm_confirmed (not captured) | t0001:row28:col1 |
 | ΩCLm/F — RSE (%) | `Q351` · not captured | 11.9 | not captured | not captured | llm_confirmed (not captured) | t0001:row28:col2 |
@@ -79,7 +73,7 @@ Koh J; Khwarg J; Yu KS; Lee S; Jang IJ; Lee S et al. (2025). Drug design, develo
 
 ## Exposure-response model
 
-`Clopidogrel_Koh2025_PD_txb2` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
+`Clopidogrel_Koh2025_PD_txb2` — turnover (indirect response type II), `response = E0/(1 - Emax*frac)`
 
 | parameter | value (paper units) | SI |
 |---|---|---|
@@ -88,7 +82,7 @@ Koh J; Khwarg J; Yu KS; Lee S; Jang IJ; Lee S et al. (2025). Drug design, develo
 | EC50 | 0.0036 mol/L | 3.6 mol/m3 |
 | gamma | 1 | — |
 
-Closed-form check points (response, SI): `at_0` = 2.64e-05, `at_EC50` = 1.32e-05, `at_inf` = 0
+Closed-form check points (response, SI): `at_0` = 2.64e-05, `at_EC50` = 5.28e-05, `at_inf` = inf
 
 ## Review
 
@@ -99,7 +93,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
 | `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | curve direction matches effect_direction |
+| `T2_direction` | skipped | effect_direction 'inhibition' |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | pass | nothing defaulted |
 
@@ -109,34 +103,38 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.645 (40/62 fields) | 22 |
+| `gpt-oss:120b` | not confirmed | 0.567 (34/60 fields) | 26 |
 
-<details><summary>22 field(s) a reader read differently</summary>
+<details><summary>26 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[Q290]` | 7.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q290]` | 2.6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q290]` | 1.98 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `effect_form` | unknown | proportional | mismatch |
+| `gpt-oss:120b` | `model_family` | indirect_response_ii | indirect_response_i | mismatch |
 | `gpt-oss:120b` | `parameters[Q304]` | 0.27 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | 13.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | 12.6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 0.24 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | not captured | 15 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | not captured | 11.9 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q314]` | not captured | 1.09 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q314]` | not captured | 14.7 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q314]` | not captured | 0.91 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q326]` | 0.91 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q351]` | 0.24 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q314]` | not captured | 13.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q314]` | not captured | 12.1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q336]` | 12.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q351]` | 11.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q43]` | not captured | 0.29 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q43]` | not captured | 16.5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q48]` | not captured | 0.27 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q48]` | not captured | 15 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q49]` | 1.09 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 14.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q76]` | not captured | 7.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q49]` | 14.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q56]` | 1.58 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q76]` | not captured | 2.6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q76]` | not captured | 1.98 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q78]` | 7.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q78]` | 2.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q78]` | 1.98 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q83]` | not captured | 0.51 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q83]` | not captured | 12.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q83]` | 15.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q86]` | 1.58 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q95]` | 14.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q83]` | not captured | 1.58 | only_one_extracted |
 
 </details>
 
@@ -154,7 +152,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Koh2025_PD_txb2/Clopidogrel_Koh2025_PD_txb2_modelica.zip" download>Clopidogrel_Koh2025_PD_txb2_modelica.zip</a> <span class="pk-size">(2.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Koh2025_PD_txb2/Clopidogrel_Koh2025_PD_txb2_matlab.zip" download>Clopidogrel_Koh2025_PD_txb2_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Koh2025_PD_txb2/Clopidogrel_Koh2025_PD_txb2_matlab.zip" download>Clopidogrel_Koh2025_PD_txb2_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Koh2025_PD_txb2/Clopidogrel_Koh2025_PD_txb2_sbml.zip" download>Clopidogrel_Koh2025_PD_txb2_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Koh2025_PD_txb2/Clopidogrel_Koh2025_PD_txb2_cellml.zip" download>Clopidogrel_Koh2025_PD_txb2_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>

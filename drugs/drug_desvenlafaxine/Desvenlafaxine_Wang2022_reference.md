@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;desvenlafaxine&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/&quot;},{&quot;label&quot;:&quot;Wang_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Desvenlafaxine_MangasSanjun2023_reference&quot;,&quot;label&quot;:&quot;Mangas-Sanju\u00e1n_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/Desvenlafaxine_MangasSanjun2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Desvenlafaxine_Nichols2018_reference&quot;,&quot;label&quot;:&quot;Nichols_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/Desvenlafaxine_Nichols2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Desvenlafaxine_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/Desvenlafaxine_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Desvenlafaxine_MangasSanjun2023_reference&quot;,&quot;label&quot;:&quot;Mangas-Sanju\u00e1n_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/Desvenlafaxine_MangasSanjun2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Desvenlafaxine_Nichols2018_reference&quot;,&quot;label&quot;:&quot;Nichols_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/Desvenlafaxine_Nichols2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Desvenlafaxine_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/Desvenlafaxine_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -27,17 +27,20 @@ Wang Z; Li L; Huang S; Wang X; Liu S; Li X; et al. et al. (2022). Frontiers in p
 ## Model component
 <dbs-pgx drug="desvenlafaxine" model-id="Desvenlafaxine_Wang2022_reference" status="rejected" stale="false" population="healthy volunteers and psychiatric patients" measured-compound="venlafaxine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Parameterization:** CL/F, V/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, CLm/F, V/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F, L/h | `Q27` · CL/F | 80.9 | not captured | not captured | not captured | not captured | boundary (0.8) | Wang_2022_table_p5_1:row0:col1 | — | not captured |
-| V/F, L | `Q76` · V/F | 628 | not captured | not captured | not captured | not captured | boundary (0.8) | Wang_2022_table_p5_1:row1:col1 | — | not captured |
-| Vm/F, L | `Q367` · Vm/F | 238 | not captured | not captured | not captured | not captured | boundary_relink (0.8) | Wang_2022_table_p5_1:row3:col1 | — | not captured |
-| Ka, 1/h | `Q49` · kabs | 0.63 | not captured | not captured | not captured | not captured | boundary (0.8) | Wang_2022_table_p5_1:row4:col1 | — | not captured |
+| CL/F, L/h | `Q27` · CL/F | 80.9 | L/h | 2.2472222222222226e-05 | [l] / [h] | not captured | exact (1.0) | Wang_2022_table_p5_1:row0:col1 | — | not captured |
+| V/F, L | `Q76` · V/F | 628 | L | 0.628 | [l] | not captured | exact (1.0) | Wang_2022_table_p5_1:row1:col1 | — | not captured |
+| CLm/F, L/h | `Q351` · CLm/F | 22.1 | L/h | 6.138888888888889e-06 | [l] / [h] | not captured | exact (1.0) | Wang_2022_table_p5_1:row2:col1 | — | not captured |
+| Vm/F, L | `Q367` · Vm/F | 238 | L | 0.23800000000000002 | [l] | not captured | exact (1.0) | Wang_2022_table_p5_1:row3:col1 | — | not captured |
+| Ka, 1/h | `Q49` · kabs | 0.63 | 1/h | 0.000175 | [1] / [h] | not captured | exact (1.0) | Wang_2022_table_p5_1:row4:col1 | — | not captured |
+| F | `Q40` · Fab | 0.048 | not captured | not captured | not captured | not captured | exact (1.0) | Wang_2022_table_p5_1:row5:col1 | — | not captured |
+| θamisulpride on CLm/F | `Q351` · CLm/F | 0.593 | L/h | 1.647222222222222e-07 | [l] / [h] | not captured | llm_confirmed (0.6) | Wang_2022_table_p5_1:row8:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -47,16 +50,16 @@ Wang Z; Li L; Huang S; Wang X; Liu S; Li X; et al. et al. (2022). Frontiers in p
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q27 ('CLm/F, L/h', value '22.1') — already have one for this compound
+- compound tags: 4 row(s) → O-desmethyl venlafaxine (m_suffix 4)
 - dropped duplicate Q27 ('θhealthy state on CL/F', value '0.617') — already have one for this compound
-- dropped duplicate Q27 ('θamisulpride on CL/F', value '0.392') — already have one for this compound
-- dropped duplicate Q27 ('θamisulpride on CLm/F', value '0.593') — already have one for this compound
+- dropped unlinked row (NIL): 'θamisulpride on CL/F' — extend the ontology if this is a real PK parameter (source ['Wang_2022_table_p5_1:row7:col1'])
 - dropped duplicate Q27 ('CL/F', value '0.219') — already have one for this compound
 - dropped duplicate Q76 ('V/F', value '0.106') — already have one for this compound
-- dropped unlinked row (NIL): 'CLm/F' — extend the ontology if this is a real PK parameter (source ['Wang_2022_table_p5_1:row12:col1'])
-- dropped duplicate Q66 ('Vm/F', value '1.38') — already have one for this compound
+- dropped duplicate Q351 ('CLm/F', value '0.156') — already have one for this compound
+- dropped duplicate Q367 ('Vm/F', value '1.38') — already have one for this compound
+- unit inherited for CLm/F (Q351): 'L/h' from a same-Q-code sibling (this row's label had no unit)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=venlafaxine
-- review gap-fill skipped: this record measures 'venlafaxine', not desvenlafaxine — the review values are the parent's
+- template fit: PK_3M_3C — first-pass formation; parent 1 + hepatic, metabolites [1] (site presystemic: 'Results and conclusion: Concentrations of VEN and ODV were well described with a one-compartment model incorporating fir')
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -105,15 +108,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wang_2022_table_p5_1:row0:col1'] |
-| C5_unit_missing_Q367 | fail | [length] ** 3 | not captured | not captured | not captured | ['Wang_2022_table_p5_1:row3:col1'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Wang_2022_table_p5_1:row4:col1'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | not captured | not captured | not captured | ['Wang_2022_table_p5_1:row1:col1'] |
+| C2_base_Q40 | fail | 0.048 | 81.0 | 1687.5 | 0.05 | footnote reference category |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wang_2022_table_p5_1:row0:col1'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wang_2022_table_p5_1:row2:col1'] |
+| C5_dimension_Q367 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2022_table_p5_1:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Wang_2022_table_p5_1:row4:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2022_table_p5_1:row1:col1'] |
 | C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.048 with apparent parameterization | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 80.9 L/h | not captured | not captured | ['Wang_2022_table_p5_1:row0:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 628 L | not captured | not captured | ['Wang_2022_table_p5_1:row1:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
