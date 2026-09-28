@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The amiodarone parent–metabolite model was quarantined because N-desethylamiodarone's clearance, volume of distribution and formation rate had no values and library defaults were substituted, and V2 (3930 L) was also uncovered.**
+**The amiodarone parent–metabolite model was quarantined because N-desethylamiodarone's clearance, volume of distribution and formation rate had no values, so library placeholder numbers stood in for them.**
 
-The record, built from the paper's abstract only, reports amiodarone parameters (CL 6.32 L/h, Q 7.14 L/h, V1 167 L, V2 3930 L, Fab 0.362) but gives no values for N-desethylamiodarone's clearance, volume of distribution or formation rate, so placeholders stood in for these three quantities and the model was held back. The parameter-coverage check expected four parameters emitted or defaulted but covered only three, with V2 neither emitted nor defaulted. The metabolite compartment has zero compartments (n_cmt 0), so the metabolite structure is effectively an unlinked metabolite with no path from the dose. Extracted — amiodarone: CL 6.32 L/h, Q 7.14 L/h, V1 167 L, V2 3.93e+03 L, Fab 0.362.
+The record, built from the paper's abstract only, links amiodarone to N-desethylamiodarone by metabolism, but no source values exist for the metabolite's clearance, volume of distribution or formation rate, so placeholder defaults were substituted and the model was held back rather than published with invented numbers. A parameter-coverage check also found only 3 of 4 expected parameters covered, with V2 neither emitted nor listed as defaulted, even though a peripheral volume of 3930 L appears in the record. The abstract-only provenance means reported summary statistics stood in for a fitted model. Extracted — amiodarone: CL 6.32 L/h, Q 7.14 L/h, V1 167 L, V2 3.93e+03 L, Fab 0.362.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -28,7 +28,7 @@ Lehnert A; Foissac F; Bouazza N; Urien S; Oualha M; Renolleau S; et al. et al. (
 ## Model component
 <dbs-pgx drug="amiodarone" model-id="Amiodarone_Lehnert2022_reference" status="model_quarantined" stale="false" population="paediatric patients with arrhythmias" measured-compound="amiodarone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
@@ -56,6 +56,7 @@ Lehnert A; Foissac F; Bouazza N; Urien S; Oualha M; Renolleau S; et al. et al. (
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amiodarone
 - template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Lehnert_2022_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
@@ -108,12 +109,12 @@ Lehnert A; Foissac F; Bouazza N; Urien S; Oualha M; Renolleau S; et al. et al. (
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amiodarone/Amiodarone_Lehnert2022_reference/Amiodarone_Lehnert2022_reference_modelica.zip" download>Amiodarone_Lehnert2022_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amiodarone/Amiodarone_Lehnert2022_reference/Amiodarone_Lehnert2022_reference_matlab.zip" download>Amiodarone_Lehnert2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amiodarone/Amiodarone_Lehnert2022_reference/Amiodarone_Lehnert2022_reference_matlab_simbio.zip" download>Amiodarone_Lehnert2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amiodarone/Amiodarone_Lehnert2022_reference/Amiodarone_Lehnert2022_reference_sbml.zip" download>Amiodarone_Lehnert2022_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amiodarone/Amiodarone_Lehnert2022_reference/Amiodarone_Lehnert2022_reference_cellml.zip" download>Amiodarone_Lehnert2022_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amiodarone/Amiodarone_Lehnert2022_reference/Amiodarone_Lehnert2022_reference_cellml.zip" download>Amiodarone_Lehnert2022_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>

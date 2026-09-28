@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The oxypurinol elimination-rate constant was extracted as 1.09 with unit 'h' instead of 1/h, a dimension mismatch on a structural parameter, and the clearance/volume values fell outside the physiological window, so the allopurinol–oxypurinol model was rejected.**
+**Rejected because oxypurinol structural parameters show dimension mismatches and implausible magnitudes: kel 1.09 h (unit truncated) and V 0.0355 L, indicating unit/scale extraction errors for allopurinol's metabolite.**
 
-The oxypurinol elimination rate constant is recorded as 1.09 with the unit 'h', an inverted dimension for a first-order rate constant that must be per hour; this dimension mismatch on a structural parameter made the record unusable. The same record's clearance (0.848 L/h) and volume (41.6 L) for oxypurinol were flagged as outside the physiological window, consistent with a unit or scale extraction error. One reported unit could not be converted to SI, so that parameter was carried without an SI value. The covariate coefficient θ diuretic (0.74) was also disputed between readers, one recording 0.74 and the other null, leaving that value inconclusive. Extracted — oxypurinol: CL 0.848 L/h, V1 41.6 l, kel 1.09 h, V 0.0355 L; urate: kel 1.3 1/h.
+The oxypurinol elimination rate constant is recorded as 1.09 with unit 'h' instead of 1/h, a dimension mismatch on a structural parameter, and the volume of distribution V is 0.0355 L, far outside a physiological window for oxypurinol — both consistent with unit/scale extraction errors. The reported unit 'l h' for CL could not be converted to SI units, so clearance (0.848 L/h) entered the model without a standardized value. A second reader also disagreed on the dose compound (allopurinol vs oxypurinol as primary analyte) and on whether the θ diuretic covariate value 0.74 belongs to the record. Extracted — oxypurinol: CL 0.848 L/h, V1 41.6 l, kel 1.09 h, V 0.0355 L; urate: kel 1.3 1/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has allopurinol, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

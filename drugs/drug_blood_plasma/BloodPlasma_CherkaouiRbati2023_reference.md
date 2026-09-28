@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record was held for review because the absorption lag time parameter tlag (0.147 h) is listed but not covered by the model's parameter set — only 4 of the 5 expected parameters were emitted or defaulted.**
+**The two-compartment blood plasma model from Cherkaoui-Rbati_2023 was held back because the absorption lag time parameter tlag (0.147 h) was not covered in the parameter set, leaving only 4 of 5 expected parameters.**
 
-The two-compartment blood plasma model carries five parameters: CL 0.476 L/h, V1 8.58 L, V2 57.3 L, Q 37.1 L/h, and tlag 0.147 h. The coverage check expected 5 parameters to be emitted or defaulted but obtained only 4, with tlag neither emitted nor present in the defaults, so the model was held back. A second reader also left the seven auxiliary value fields without entries, so no independent confirmation of those numbers exists. Extracted — blood plasma: CL 0.476 L/h, V1 8.58 L, V2 57.3 L, Q 37.1 L/h, tlag 0.147 h.
+The record contains CL 0.476 L/h, V1 8.58 L, V2 57.3 L, Q 37.1 L/h and tlag 0.147 h, but the coverage check found only 4 of the 5 expected parameters accounted for, with tlag neither emitted nor defaulted. A second reader returned no values for several fields where this record lists values (e.g. 0.1, 0.179, 0.205, 1.7, 0.0771, 1, 6, 2.85), so those disagreements are unresolved. The model was therefore marked needs_review rather than published. Extracted — blood plasma: CL 0.476 L/h, V1 8.58 L, V2 57.3 L, Q 37.1 L/h, tlag 0.147 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q315: this record has 0.1, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

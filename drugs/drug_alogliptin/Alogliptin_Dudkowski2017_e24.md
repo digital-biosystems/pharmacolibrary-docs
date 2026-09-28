@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The alogliptin one-compartment model was rejected because its single compartment is unreachable from the dose, so the reported CL/F of 53.7 L/hr and V2/F of 27.6 L cannot describe a valid dosing structure.**
+**The alogliptin record was rejected because its one-compartment structure contains an unreachable compartment: V2/F (27.6 L) is defined as a peripheral volume with no path from the dose.**
 
-The record lists a one-compartment structure for alogliptin with oral clearance CL/F = 53.7 L/hr and central volume of distribution V2/F = 27.6 L in pediatric subjects. The review found an unreachable (orphan) compartment: the compartment has no path from the administered dose, meaning drug input is not connected to the state whose clearance and volume are reported. With the dose unable to reach the compartment, the parameter set does not constitute a usable pharmacokinetic model, and the record was rejected. Extracted — alogliptin: CL/F 53.7 L/hr, V2/F 27.6 L.
+The model for alogliptin in children, adolescents, and adults with type 2 diabetes is declared as a one-compartment structure (1C), yet the extracted parameter V2/F = 27.6 L is described as the volume of distribution of the peripheral compartment adjusted for bioavailability. A peripheral compartment cannot exist in a one-compartment model, and the structure check found an orphan compartment with no connection from the dose. The oral clearance CL/F = 53.7 L/hr was extracted without issue, but the inconsistent compartment definition left the model structure invalid, so the record was refused. Extracted — alogliptin: CL/F 53.7 L/hr, V2/F 27.6 L.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The alverine mouse model was rejected because a structural parameter was reported in a unit that could not be converted to SI, leaving a dimension mismatch on that parameter.**
+**The alverine mouse model record was rejected because one reported parameter's unit could not be expressed in SI units, causing a dimension mismatch on a structural parameter.**
 
-The record reports alverine disposition in mice with AUClast 0.5660 μmol·h/L, AUC∞ 0.5712 μmol·h/L, CL 18.5030 L/h/kg, Vd 34.6808 L/kg and t1/2 1.2991 h, plus a linear structure with metabolism links from alverine to M1 and M3 (rate constant Kfm) and from M1 to M2. One of the reported units could not be expressed in SI units, so that parameter entered the model without an SI value. This produced a dimension mismatch on a structural parameter, and the model was refused. Extracted — alverine: AUClast 0.566 μmol·h/L, AUC∞ 0.571 μmol·h/L, CL 18.5 L/h/kg, V 34.7 L/kg, t1/2z 1.3 h.
+The record reports alverine non-compartmental parameters for mice: clearance 18.5030 L/h/kg, volume of distribution 34.6808 L/kg, terminal half-life 1.2991 h, AUClast 0.5660 μmol·h/L and AUC∞ 0.5712 μmol·h/L, in a general linear structure with metabolism links from alverine to M1 and M3 and from M1 to M2. The rejection reason is a dimension mismatch on a structural parameter, arising because one of the reported units could not be translated into a consistent SI unit, so that parameter lacked a usable numeric value in standard units. The findings do not identify which of the listed parameters or units was affected, so the exact parameter concerned is inconclusive from the record. Extracted — alverine: AUClast 0.566 μmol·h/L, AUC∞ 0.571 μmol·h/L, CL 18.5 L/h/kg, V 34.7 L/kg, t1/2z 1.3 h.
 
 Independently confirmed by `gpt-oss:120b`.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The bisoprolol model was quarantined because bioavailability, clearance and absorption lag time had no source values and were left at library defaults, and the intercompartmental clearance Q (43.5 L/h) was also not covered.**
+**The bisoprolol model was quarantined because bioavailability (F), clearance (Cl) and absorption lag time (Tlag) had no source values and were replaced by placeholder numbers, and the intercompartmental clearance Q was not covered by the parameter check.**
 
-The record lists only four fitted parameters for bisoprolol (V1 55.0 L, ka 0.43 h-1, Q 43.5 L/h, Vss 256 L), but the parameter-coverage check expected 3 parameters emitted or defaulted and obtained only 2 covered, with Q neither emitted nor in the defaulted set. The model builder substituted library defaults for the missing bioavailability F, clearance Cl and absorption lag time Tlag. As established, bisoprolol's bioavailability, clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — bisoprolol: V1 55 L, kabs 0.43 h-1, Q 43.5 L/h, Vss 256 L.
+The record for bisoprolol (Grevel_1989, one-compartment structure with a peripheral compartment) carries values for V1 (55.0 L), kabs (0.43 h-1), Q (43.5 L/h) and Vss (256 L), but the paper gave no values for bioavailability, clearance and absorption lag time, so generic placeholder numbers stood in for them. The parameter-coverage check expected 3 parameters emitted or defaulted and obtained only 2, reporting Q as neither emitted nor defaulted despite its value of 43.5 L/h in the record. Because essential disposition parameters (clearance, bioavailability, lag time) were placeholders rather than fitted values, the model was held back rather than published with invented numbers. Extracted — bisoprolol: V1 55 L, kabs 0.43 h-1, Q 43.5 L/h, Vss 256 L.
 
 Independently confirmed by `gpt-oss:120b`.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The arginine hydrochloride one-compartment model was rejected because its clearance of 1.0 mL/day and volume of 0.0117 L fall far outside physiological ranges, indicating a unit or scale extraction error.**
+**The arginine hydrochloride record was rejected because its clearance of 1.0 mL/day and derived volume of distribution of 0.0117 L are physiologically implausible, indicating a unit or scale extraction error.**
 
-The record lists a clearance rate (CL) of 1.0 mL/day and a volume of distribution (V) of 0.0117 L for arginine hydrochloride, derived from CL·t½/ln2. Both magnitudes are physiologically implausible for this molecule, which the review attributed to a unit or scale error in extraction. A second reader recorded no value for this check, so the comparison could not be computed and the finding stands on the implausible magnitudes alone. Extracted — arginine hydrochloride: CL 1 mL/day, V 0.0117 L.
+Total clearance for arginine hydrochloride is recorded as 1.0 mL/day, and the volume of distribution (0.0117 L, derived from CL·t½/ln2) is far below any plausible value for this molecule, so the clearance/volume pair falls outside the physiological window. The implausible magnitudes point to a unit or scale error in extraction. A second reader did not confirm the flagged value, leaving the finding on the recorded values uncorroborated. Extracted — arginine hydrochloride: CL 1 mL/day, V 0.0117 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 1, the second reading none. That field does not shape the model.
 

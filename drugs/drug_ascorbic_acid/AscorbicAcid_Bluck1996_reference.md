@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The ascorbic acid record reports no distribution volume and no clearance, and its only parameter, AUC%ext (150.4, unit 'e'), has a dimension mismatch with a unit that could not be converted to SI, so it is not a compartmental popPK model.**
+**The ascorbic acid record lacks distribution volume and clearance, and the AUC%ext parameter (150.4, unit 'e') has a dimension mismatch, so it is not a compartmental population PK model and was rejected.**
 
-No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The single structural parameter, AUC%ext, carries the value 150.4 with the verbatim unit 'e', a unit that could not be converted to SI, so the parameter was recorded without an SI value and a dimension mismatch was flagged. A second reader instead read 720.7 for the parameter labelled '5% (b) + 95%' and left '5% (f) + 95%' empty, disagreeing with this record's 150.4, so the extracted value itself is uncertain. Extracted — ascorbic acid: AUC%ext 150 e.
+The paper reports no distribution volume and no clearance or elimination rate for ascorbic acid; it is an exposure/outcome paper, not a compartmental population PK model. The structural parameter AUC%ext, extracted as 150.4 with unit 'e', failed a dimensional consistency check. Additionally, the reported unit could not be converted to SI, so the parameter reached the model builder without an SI value. The two readers also disagreed on which parameter was extracted: one read '5% (f) + 95%' as 150.4, the other read '5% (b) + 95%' as 720.7. Extracted — ascorbic acid: AUC%ext 150 e.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 5% (b) + 95%: this record has none, the second reading 720.7; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**This alogliptin 2-compartment record was rejected because a compartment has no path from the dose, and the reported AUC0–24 of 1699 %·hr could not be converted to SI units.**
+**The alogliptin two-compartment model was rejected because a compartment has no path from the dose, and the reported AUCt of 1699 %·hr could not be converted to SI units.**
 
-The model for alogliptin in children, adolescents, and adults with type 2 diabetes was refused because one compartment is unreachable or orphan — it has no connection from the administered dose, so the structure is not a valid closed pharmacokinetic system. In addition, the reported AUC0–24 of 1699 %·hr is expressed in a unit that could not be converted to SI, so that exposure value entered the record without an SI value. A second reader also disagreed on three extracted values: this record lists AUC0–24 as 1699 and Fe as 59.212 % where the second reader found none, and lists no value where the second reader read 57.4 for the 0–24 h exposure. Extracted — alogliptin: AUCt 1.7e+03 %·hr, Cmax 101 ng/mL, AUC∞ 1.22e+03 ng·hr./mL, CL/F 20.7 L/hr, V/F 543 L, t1/2z 18.1 hr, CLR 14.5 L/hr, fe 59.2, … (+1).
+The structure check found an unreachable or orphan compartment in the alogliptin model, so the model structure was judged invalid and the record refused. The AUCt parameter (1699 %·hr) was reported in a unit that could not be converted to SI, so it was passed on without an SI value. The second reader also disagreed on the exposure parameters: this record lists AUCt as 1699 and fe as 59.212, while the second reader read AUCt as absent and instead recorded 57.4 for the 0–24 exposure, and null for fe. Additionally, the parameter labelled central volume of distribution (V2/F, 27.6 L) is annotated as the peripheral compartment volume, an inconsistency within the record. Extracted — alogliptin: AUCt 1.7e+03 %·hr, Cmax 101 ng/mL, AUC∞ 1.22e+03 ng·hr./mL, CL/F 20.7 L/hr, V/F 543 L, t1/2z 18.1 hr, CLR 14.5 L/hr, fe 59.2, … (+1).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auec0-24: this record has 1699, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

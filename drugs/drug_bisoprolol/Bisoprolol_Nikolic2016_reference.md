@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The bisoprolol model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no values in the source, so library placeholder values were substituted for the reported CL/F 0.123 l/h and V 38.07 l.**
+**The bisoprolol model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no values in the source and generic placeholder values were substituted.**
 
-The record lists bisoprolol CL/F of 0.123 l/h and V of 38.07 l for hypertensive hemodialysis patients, yet no values were extracted for clearance, volume of distribution, absorption rate constant or absorption lag time, so placeholder numbers stood in for them. The absorption rate constant was defaulted rather than reported, an invented absorption input judged not acceptable. The parameterization is apparent (F=1, Fm=1, no molar correction) with first-order depot input, so all parameters are apparent (/F) values. The failed check returned 'invented_absorption: not acceptable', confirming the model was held back with placeholder kinetics rather than the paper's reported values. Extracted — bisoprolol: CL/F 0.123, V 38.1, CLR 4.44.
+The paper (Nikolic_2016, hypertensive patients on hemodialysis) reports only CL/F 0.123 l/h, V 38.07 l and renal clearance 4.44 l/h for bisoprolol, but no absorption rate constant or lag time. Since bisoprolol's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, library placeholder numbers stood in for them, and the invented absorption (defaulted ka) was judged not acceptable. The model also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input. Extracted — bisoprolol: CL/F 0.123, V 38.1, CLR 4.44.
 
 Independently confirmed by `gpt-oss:120b`.
 

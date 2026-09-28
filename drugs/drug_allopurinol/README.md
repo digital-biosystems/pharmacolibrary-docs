@@ -29,8 +29,8 @@ Allopurinol is a xanthine oxidase enzyme inhibitor that is considered to be one 
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| allopurinol | parent | 136.112 | C5H4N4O | DrugBank | [2094](https://pubchem.ncbi.nlm.nih.gov/compound/2094) | Chu_2022, Stocker_2012, Vora_2021, Wen_2023, Wright_2013, Wright_2016 |
-| oxypurinol | metabolite | 152.11 | — | PubChem | [135398752](https://pubchem.ncbi.nlm.nih.gov/compound/135398752) | Chu_2022, Stocker_2012, Vora_2021, Wen_2023, Wright_2013, Wright_2016 |
+| allopurinol | parent | 136.112 | C5H4N4O | DrugBank | [2094](https://pubchem.ncbi.nlm.nih.gov/compound/2094) | Chu_2022, Chu_2024, Day_2007, Day_2016, Ekobena_2025, Hishe_2023, Jonkman_1984, Liu_2026, Stocker_2012, Vora_2021, Wen_2023, Wright_2013, Wright_2016, Wright_2017, Wright_2024 |
+| oxypurinol | metabolite | 152.11 | — | PubChem | [135398752](https://pubchem.ncbi.nlm.nih.gov/compound/135398752) | Chu_2022, Chu_2024, Hishe_2023, Stocker_2012, Vora_2021, Wen_2023, Wright_2013, Wright_2016, Wright_2017 |
 
 ## Extraction summary
 

@@ -23,7 +23,8 @@ Long-acting formulations of psychostimulants (such as [DB00422], [DB01576], and 
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| 4-hydroxyatomoxetine | metabolite | — (mass units only) | — | — | — | — |
+| atomoxetine | parent | 255.355 | C17H21NO | DrugBank | [54841](https://pubchem.ncbi.nlm.nih.gov/compound/54841) | Cheng_2024, Notsu_2020, Tobin_2026 |
+| 4-hydroxyatomoxetine | metabolite | 271.36 | C17H21NO2 | PubChem | [9816910](https://pubchem.ncbi.nlm.nih.gov/compound/9816910) | Notsu_2020 |
 
 ## Extraction summary
 

@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The allopurinol record was held back because the absorption rate constant ka and lag time were absent from the source and library defaults were substituted, and the invented absorption input was judged unacceptable.**
+**The allopurinol record was held back because the builder invented an absorption rate (ka) not reported in the source, defaulted Tlag, and assumed F=1 and Fm=1, with a second reader disputing the CL/F value (11.4 vs 15.8 mL/min/kg).**
 
-The record reports allopurinol CL/F of 11.4 mL/min/kg and V/F of 0.58 L/kg, but ka and Tlag were not reported in the source, so placeholder values were used and the first-order depot input with assumed F=1 and Fm=1 (apparent parameterization) was deemed not acceptable. The ABCB2 covariate effects (AA 0.0, CA 0.0539, CC 0.0183) were defined but only the reference individual was simulated, so the covariate scenarios were never exercised. A second reader also disputed several values, reading CL/F as 15.8 instead of 11.4 and V/F as 1.31 instead of 0.58, with three further values absent from this record. Extracted — allopurinol: CL/F 11.4 mL/min/kg, V/F 0.58 L/kg.
+The record's ka and Tlag were left at library defaults because the source did not report them, and the apparent parameterization assumes F=1 and Fm=1 without molar correction, so the extracted CL/F (11.4 mL/min/kg) and V/F (0.58 L/kg) rest on invented absorption. A second reader disagrees on several values, reading CL/F as 15.8 mL/min/kg and V/F as 1.31 L/kg instead of 0.58 L/kg, and reporting values absent from this record (0.19 and 79). The covariate effects defined in the record (e.g., ABCB2) were not exercised in simulation; only the reference individual was simulated. Extracted — allopurinol: CL/F 11.4 mL/min/kg, V/F 0.58 L/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 11.4, the second reading 15.8; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

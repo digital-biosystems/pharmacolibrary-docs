@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The amiodarone model was rejected because the elimination parameter kel was recorded as 62 L/d — a clearance-type unit — instead of a rate constant in reciprocal time, a dimension mismatch on a structural parameter.**
+**The amiodarone record was rejected because the elimination parameter kel, defined as an elimination rate constant, is reported as 62 L/d — a flow unit, a dimension mismatch on a structural parameter.**
 
-The record lists kel (labelled 'Elimination') for amiodarone with value 62 and unit L/d, the same unit as the clearances CL/F (254 L/d) and Q/F (151 L/d); a first-order elimination rate constant must carry units of reciprocal time, so the reported unit could not be reconciled dimensionally. The paper's unit for this parameter was not convertible to SI, so the parameter entered processing without an SI value. A second reading also disagreed with the extracted values: it read CL1/F as 229 (record: 254) and V1/F as 882 (record: 2790), while V2/F 7830 was confirmed, leaving the clearance and central-volume values uncertain. Extracted — amiodarone: V1/F 2.79e+03 L, V2/F 7.83e+03 L, CL/F 254 L/d, Q/F 151 L/d, kel 62 L/d, kabs 0.82 h−1.
+The parameter labelled 'Elimination' carries the meaning of an elimination rate constant (terminal/beta phase) but the value 62 L/d has units of clearance/volume per time, not inverse time, so the dimension check failed. Additionally, the absorption rate constant kabs was reported in h−1, a unit that could not be converted to a standard time-based unit, so no consistent value was available. A second reader also disagreed on the extracted values for oral clearance (254 L/d in this record versus 229) and intercompartmental clearance (151 L/d versus 588), and on the central and peripheral volumes of distribution (2790 L and 7830 L versus 882 and 7830), leaving the apparent clearances and volumes uncertain. Extracted — amiodarone: V1/F 2.79e+03 L, V2/F 7.83e+03 L, CL/F 254 L/d, Q/F 151 L/d, kel 62 L/d, kabs 0.82 h−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl 1 /f: this record has 229, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The amitriptyline record was held back because the absorption rate constant ka and lag time Tlag were not reported in the source and library defaults were substituted, and the resulting invented first-order absorption was judged not acceptable.**
+**The amitriptyline record was held back because the absorption rate constant ka was not reported in the source and a placeholder default was substituted, an invented absorption the review deemed unacceptable.**
 
-The record reports CL/F of 141.65 L/h and V of 9.5 L/kg for amitriptyline in a one-compartment structure, but the source did not report ka or Tlag, so placeholder defaults were used in their place. The builder also assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent, and the (/F) values imply extravascular dosing with a first-order depot input. The invented absorption — a defaulted ka not reported in the source — was adjudicated not acceptable, which is why the model was not published. A second reader recorded no value for several extracted quantities (0.39, 141.65, 30.3, 15.7, 60, 9.5) and gave 9.7 where this record has null, so those comparisons could not be computed. Extracted — amitriptyline: CL/F 142 L/h, V 9.5 L/kg.
+The record for amitriptyline (Yukawa_2002, review reference population) reports CL/F of 141.65 L/h and V of 9.5 L/kg, but ka and Tlag had no values in the source, so library placeholder defaults were used in their place. The model builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. A second reader disagreed on several extracted values, including the volume of distribution (9.5 vs 9.7 L/kg), and could not confirm the CL/F value of 141.65. Extracted — amitriptyline: CL/F 142 L/h, V 9.5 L/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 0.39, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 

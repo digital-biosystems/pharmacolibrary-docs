@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The amiodarone elimination parameter 'kel' carries a volume-per-time unit (55 L/d) instead of a rate unit, a dimensional mismatch on a structural parameter, so the record was rejected.**
+**The amiodarone elimination parameter kel is reported as 55 L/d, a clearance-like unit for what is a rate constant, a dimension mismatch that led to rejection; the h−1 unit of kabs could not be converted to SI.**
 
-The elimination parameter labelled 'Elimination' is listed as 55 L/d, which is dimensionally inconsistent with a first-order rate constant, and its reported unit could not be converted to SI, so the parameter was left without a usable value. A second reader also disagreed on the peripheral volume, reading 7830 L where the record holds 12700 L for V2/F, and on the clearances CL/F (229 L/d) and Q/F (588 L/d), which one reading left unextracted. The metabolism link from amiodarone to desethylamiodarone has no quantified link parameter (kind unknown). Extracted — amiodarone: V1/F 882 L, V2/F 1.27e+04 L, CL/F 229 L/d, Q/F 588 L/d, kel 55 L/d, kabs 0.82 h−1.
+For amiodarone in patients with cardiac arrhythmias, the record lists kel (elimination rate constant, terminal/beta phase) with value 55 and unit L/d, which does not match the dimension of a rate constant, failing the structural-parameter dimension check. The absorption rate constant kabs is reported as 0.82 h−1, a unit that could not be converted to SI, so the parameter arrived without an SI value. A second reader also disagreed on the peripheral volume V2/F, reading 7830 L where this record has 12700 L, and on the presence of the clearance parameters CL1/F (229 L/d) and CL2/F (588 L/d). Extracted — amiodarone: V1/F 882 L, V2/F 1.27e+04 L, CL/F 229 L/d, Q/F 588 L/d, kel 55 L/d, kabs 0.82 h−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl 1 /f: this record has 229, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

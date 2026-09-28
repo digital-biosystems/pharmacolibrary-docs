@@ -15,13 +15,13 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 13.5, model 133); t6_deviations.**
+**The bisoprolol model's terminal half-life is 132.70930720390157 h versus the paper's 13.5 h (ratio 9.8303), and the absorption rate constant ka was invented (defaulted) rather than taken from the source, so the record was held back.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — bisoprolol: CL/F 2.7 L/h, V 513 L, CL 0.0612.
+Simulated as the paper dosed it, the model's terminal half-life (132.70930720390157 h) differs from the reported 13.5 h by far more than the tolerance. No absorption rate constant or lag time was reported in the source, so placeholder values were used in their place, and bioavailability was assumed to be 1 with no molar correction (apparent /F parameterization with first-order depot input). A second reader also disagreed on the interindividual variance of clearance, reading 0.82 where the record holds null. Extracted — bisoprolol: CL/F 2.7 L/h, V 513 L, CL 0.0612.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of dd: this record has none, the second reading 0.82. That field shapes the model, so the record is marked disputed.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Momčilović S; Milovanović JR; Janković SM; Jovanović A; Tasić-Otašević S; Stanojević D; et al. et al. (2019). Journal of cardiovascular pharmacology 73
@@ -131,8 +131,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_modelica.zip" download>Bisoprolol_Momilovi2019_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_fmi.zip" download>Bisoprolol_Momilovi2019_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_modelica.zip" download>Bisoprolol_Momilovi2019_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_fmi.zip" download>Bisoprolol_Momilovi2019_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_matlab.zip" download>Bisoprolol_Momilovi2019_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_matlab_simbio.zip" download>Bisoprolol_Momilovi2019_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_sbml.zip" download>Bisoprolol_Momilovi2019_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

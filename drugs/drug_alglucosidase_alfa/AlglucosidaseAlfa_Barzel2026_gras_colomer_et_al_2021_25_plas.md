@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Rejected because the alglucosidase alfa record carries a dimension mismatch on a structural parameter — Q2 = 0.254 L/h is inconsistent with k21 = 0.0206 d−1 and V2 = 296 L — and CL was extracted with no value.**
+**Rejected because the alglucosidase alfa record has a dimension mismatch on a structural parameter: the intercompartmental clearance Q is given as 0.0206 L/h, numerically identical to the rate constant k21 (0.0206 d−1), and CL carries no value.**
 
-The two-compartment alglucosidase alfa model lists an intercompartmental clearance Q2 of 0.254 L/h alongside k21 of 0.0206 d−1 and V2 of 296 L; the product of k21 and V2 does not equal Q2, a dimensional inconsistency on a structural parameter. The clearance parameter CL appears in the record with no value or unit at all. One reported unit could not be converted to SI, so the parameter reached the model without an SI value. A second reader also disputed the dosed compound and primary analyte fields, though both readers agreed CL had no value. Extracted — alglucosidase alfa: V1 3.35 L, Q2 0.254 L/h, V2 296 L, k21 0.0206 d−1, Vmax 9.82 mg/h, Km 0.451 µg/mL, Q3 1.87 L/h, V3 1.31 L, … (+1).
+In the two-compartment structure, Q (0.0206 L/h) equals k21 (0.0206 d−1) in value but not in dimension, and the unit d−1 could not be converted to SI, so the parameter arrived without an SI value. The total clearance CL is listed without any value. A second reader also disputed the dose compound and primary analyte assignments and read the intercompartmental clearance between central and first peripheral compartment as having no value. Extracted — alglucosidase alfa: V1 3.35 L, Q2 0.254 L/h, V2 296 L, k21 0.0206 d−1, Vmax 9.82 mg/h, Km 0.451 µg/mL, Q3 1.87 L/h, V3 1.31 L, … (+1).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has alglucosidase_alfa, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

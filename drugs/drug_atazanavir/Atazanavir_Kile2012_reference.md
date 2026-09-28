@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The atazanavir model was quarantined because its volume of distribution, absorption rate constant and absorption lag time had no extracted values and were left at library placeholder defaults.**
+**The atazanavir model was quarantined because its volume of distribution, absorption rate constant and absorption lag time were not reported in the source, so library placeholder defaults were substituted for these parameters.**
 
-The record reports only CL/F 16.7 L/h, V2/F 32.2 L and Q/F 7.29 L/h for atazanavir in HIV-negative volunteers; the volume of distribution, absorption rate constant and absorption lag time were missing from the source, so placeholder values stood in for them. The absorption rate constant in particular was invented by defaulting, since it is not reported in the source, and this invented absorption was judged not acceptable. The parameterization is apparent (F=1, Fm=1, no molar correction), implying extravascular dosing with a first-order depot input. Extracted — atazanavir: CL/F 16.7 liters/h, V2/F 32.2 liters, Q/F 7.29 liters/h.
+The record reports only CL/F (16.7 liters/h), V2/F (32.2 liters) and Q/F (7.29 liters/h) for atazanavir in HIV-negative volunteers; the volume of distribution, absorption rate constant ka and lag time Tlag had no source values, and placeholder defaults stood in for them. The absorption check flagged this invented absorption as not acceptable. In addition, the model uses an apparent parameterization with F=1 and Fm=1 and no molar correction, and a first-order depot input consistent with extravascular dosing. Extracted — atazanavir: CL/F 16.7 liters/h, V2/F 32.2 liters, Q/F 7.29 liters/h.
 
 Independently confirmed by `gpt-oss:120b`.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The amphotericin B deoxycholate record lacks values for the intercompartmental rate constants k12 (5.36 h⁻¹) and k21 (9.92 h⁻¹), so only 2 of 4 expected parameters were covered and the model was held back.**
+**The amphotericin B deoxycholate record lacks values for the intercompartmental transfer rate constants k12 and k21, so only 2 of the 4 expected parameters were covered and it was held for review.**
 
-The record reports clearance (0.03 liters/h), volume (0.82 liters), and AUC144-168 (5.83 mg·h/liter) for amphotericin B deoxycholate in adults with cryptococcal meningitis, but the two first-order intercompartmental rate constants k12 and k21 were neither emitted nor defaulted, leaving only 2 of 4 expected parameters covered. In addition, the record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. Extracted — amphotericin_b_deoxycholate: CL 0.03 liters/h, V 0.82 liters, k12 5.36 h-1, k21 9.92 h-1, AUCt 5.83 mg · h/liter.
+The record, built from the paper's abstract only, reports clearance (0.03 liters/h), volume (0.82 liters) and AUC144-168 (5.83 mg·h/liter) for amphotericin B deoxycholate, but neither k12 (5.36 h-1) nor k21 (9.92 h-1) was emitted or defaulted, leaving 2 of 4 parameters covered. Because only the abstract was read, the reported summary statistics stand in for a fitted model, so the two-compartment structure (1C) is not fully parameterized from a fitted model. Extracted — amphotericin_b_deoxycholate: CL 0.03 liters/h, V 0.82 liters, k12 5.36 h-1, k21 9.92 h-1, AUCt 5.83 mg · h/liter.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -107,8 +107,8 @@ Stott KE; Beardsley J; Whalley S; Kibengo FM; Mai NTH; Tùng NLN; et al. et al. 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2018_reference/AmphotericinB_Stott2018_reference_modelica.zip" download>AmphotericinB_Stott2018_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2018_reference/AmphotericinB_Stott2018_reference_modelica.zip" download>AmphotericinB_Stott2018_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2018_reference/AmphotericinB_Stott2018_reference_fmi.zip" download>AmphotericinB_Stott2018_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2018_reference/AmphotericinB_Stott2018_reference_matlab.zip" download>AmphotericinB_Stott2018_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2018_reference/AmphotericinB_Stott2018_reference_matlab_simbio.zip" download>AmphotericinB_Stott2018_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2018_reference/AmphotericinB_Stott2018_reference_sbml.zip" download>AmphotericinB_Stott2018_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>

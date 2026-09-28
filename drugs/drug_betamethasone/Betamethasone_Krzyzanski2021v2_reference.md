@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The betamethasone absorption half-life parameter t1/2ka is dimensionally inconsistent: it is reported as 0.00638 with units 1/h (a rate), although a half-life must carry units of time, so the record was rejected.**
+**The betamethasone record was rejected because the absorption half-life parameter t1/2ka is dimensionally inconsistent: it is reported as 0.00638 with unit 1/h, a rate unit, while a half-life must carry units of time.**
 
-The record lists t1/2ka with the verbatim label 'kaIMa, 1/h' and value 0.00638 in 1/h, mixing a half-life quantity with reciprocal-time units on a structural parameter. The other absorption-rate parameter kabs is correctly given as 0.460 1/h, making the mismatch on t1/2ka apparent. The paper's reported unit for this parameter could not be converted to SI, so the parameter entered the review without an SI value, and the dimension check failed on this structural parameter. Extracted — betamethasone: CLm/F 9.29 L/h, V/F 51.3 L, kabs 0.46 1/h, t1/2ka 0.00638 1/h, FR 1.04, Fab 0.819, CL/F 0.538 L/h.
+In the Krzyzanski_2021_2 model for betamethasone in healthy nonpregnant Indian women, the parameter labeled kaIMa is documented as the half-life of the absorption phase, which should be expressed in hours, but its reported unit is 1/h, matching a rate constant rather than a half-life. This dimension mismatch on a structural parameter triggered the rejection. Additionally, the unit of this parameter could not be converted to SI, so it reached the model builder without an SI value. The remaining parameters (CLm/F 9.29 L/h, V/F 51.3 L, kabs 0.460 1/h, CL/F 0.538 L/h, FR 1.04, Fab 0.819) show no such conflict. Extracted — betamethasone: CLm/F 9.29 L/h, V/F 51.3 L, kabs 0.46 1/h, t1/2ka 0.00638 1/h, FR 1.04, Fab 0.819, CL/F 0.538 L/h.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The angiotensin II clearance of 0.000412 L/h is physiologically implausible, indicating a unit or scale extraction error, so the two-compartment model record was rejected.**
+**The angiotensin II two-compartment model was rejected because its total clearance of 0.000412 L/h is physiologically implausible, indicating a unit or scale extraction error.**
 
-The record lists angiotensin II clearance (CL) as 0.000412 L/h with central volume 3.08 L, peripheral volume 4.36 L and intercompartmental clearance 0.0359 L/h; the rejection reason is that the clearance/volume falls outside the physiological window in magnitude, consistent with a unit or scale extraction error. A second reader disagreed on several extracted values: one intercompartmental parameter was read as 26.7 here versus 0.0225 by the second reader, and one parameter absent here (null) was read as 0.85 by the second reader. The remaining disagreements were cases where the second reader extracted no value (null) against this record's 0.000412, 0.0359, 1.0, 0.0364, 3.08 and 4.36, so the implausible clearance itself was not confirmed by the second reader. Extracted — angiotensin ii: CL 0.000412 L/h, V1 3.08 L, V2 4.36 L, Q 0.0359 L/h.
+The record's clearance (CL, 0.000412 L/h) falls far outside the physiological window for angiotensin II, while the volumes (V1 3.08 L, V2 4.36 L) and intercompartmental clearance (Q 0.0359 L/h) were extracted. A second reader could not confirm several values: they read 26.7 instead of 0.0225 for one parameter and 0.85 for a parameter left empty in this record, and did not confirm the clearance 0.000412 or the intercompartmental clearance 0.0359. The source is a secondary review rather than a primary fitted model, so the parameter provenance is indirect. Extracted — angiotensin ii: CL 0.000412 L/h, V1 3.08 L, V2 4.36 L, Q 0.0359 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.000412, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

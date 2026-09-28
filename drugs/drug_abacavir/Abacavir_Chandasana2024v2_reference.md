@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The abacavir record lists three conflicting weight-exponent values for apparent clearance (0.794, 0.455, 0.758) and two central volumes (V2/F 10.1 L, V1/F 23.1 L), and its consistency check failed without computing a comparison, so it was held for review.**
+**The abacavir record was held for review because the weight-based covariate consistency check could not compute a comparison, and a second reader disputed several extracted values, including the bioavailability (1.62 vs 1.00) and the weight exponent on V/F (0.556 vs 0.698).**
 
-The parameter list contains three different values for the same covariate effect, the weight exponent on apparent clearance (theta_cl_f_wt_power: 0.794, 0.455, 0.758), and two distinct apparent central volumes of distribution (V2/F 10.1 l and V1/F 23.1 l), making the parameter attribution ambiguous. The failed check reported a failure without computing a comparison (ratio None), so it is an inconclusive check rather than a demonstrated fault. A second reader also disagreed on the dosed compound (abacavir/dolutegravir/lamivudine versus abacavir) and on the weight exponent for apparent volume (0.556 versus 0.698). Extracted — abacavir: CL/F 16.3 L/h, V2/F 10.1 l, kabs 2.08, Q/F 1.69 l/h, V3/F 23 l, Fab 1.62, V1/F 23.1 l, V/F 32.7, … (+1).
+The record lists Fab, the absolute bioavailability of abacavir, as 1.62, which a second reader read as 1.00, and the weight exponent on V/F as 0.556 versus the reader's 0.698; the reader also omitted theta_q61_wt_power (0.698) entirely and read the dose compound as abacavir rather than abacavir/dolutegravir/lamivudine. The weight-consistency check failed with ratio None, meaning no comparison could be computed, so the failure is inconclusive rather than a demonstrated fault. Multiple conflicting weight-power exponents for CL/F (0.794, 0.455, 0.758) also appear in the parameter list without resolution. Extracted — abacavir: CL/F 16.3 L/h, V2/F 10.1 l, kabs 2.08, Q/F 1.69 l/h, V3/F 23 l, Fab 1.62, V1/F 23.1 l, V/F 32.7, … (+1).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has abacavir/dolutegravir/lamivudine, the second reading abacavir; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

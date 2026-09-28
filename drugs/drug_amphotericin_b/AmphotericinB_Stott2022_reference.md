@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The liposomal amphotericin B record is incomplete: the intercompartmental transfer rate k21 (2.222 h⁻¹) was neither extracted nor defaulted, leaving only 2 of 3 required parameters covered.**
+**The liposomal amphotericin B record is incomplete: the two-compartment transfer rate constant k21 (2.222 h-1) was not captured, so only 2 of 3 expected parameters (CL 0.416 L/h, V 4.566 L) are present.**
 
-The one-compartment model for liposomal amphotericin B in adults with HIV-associated cryptococcal meningoencephalitis reports clearance 0.416 L/h and volume of distribution 4.566 L, but the first-order transfer rate from central to peripheral compartment (k21, 2.222 h⁻¹) was not captured, so the record was held back for review. Additionally, the record was built from the paper's abstract alone, meaning the reported summary statistics stand in for a fitted model rather than full parameter estimates. Extracted — amphotericin b: CL 0.416 L/h, V 4.57 L, k21 2.22 h-1.
+The record for liposomal amphotericin B in adults with HIV-associated cryptococcal meningoencephalitis lists CL (0.416 L/h), V (4.566 L) and k21 (2.222 h-1), but k21 — the first-order transfer rate from the peripheral compartment back to the central compartment — was neither emitted nor defaulted, leaving the two-compartment structure (1C) under-parameterized. The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model, which limits confidence in the values. Extracted — amphotericin b: CL 0.416 L/h, V 4.57 L, k21 2.22 h-1.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -105,7 +105,7 @@ Stott KE; Moyo M; Ahmadu A; Kajanga C; Gondwe E; Chimang'anga W; et al. et al. (
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference_modelica.zip" download>AmphotericinB_Stott2022_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference_fmi.zip" download>AmphotericinB_Stott2022_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference_matlab.zip" download>AmphotericinB_Stott2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference_matlab_simbio.zip" download>AmphotericinB_Stott2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amphotericin_b/AmphotericinB_Stott2022_reference/AmphotericinB_Stott2022_reference_sbml.zip" download>AmphotericinB_Stott2022_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>

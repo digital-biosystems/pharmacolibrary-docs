@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The atorvastatin record was held back because the absorption rate constant ka and lag time Tlag were absent from the source, so placeholder default values were substituted, alongside assumed F=1 and Fm=1 without molar correction.**
+**The atorvastatin record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was invented, alongside defaulted Tlag and an apparent F=1 parameterization.**
 
-The record describes a one-compartment atorvastatin model with apparent (over /F) parameterization — CL/F 767.7 ml/h/kg and V/F 22267.2 ml/kg — implying extravascular dosing with a first-order depot input. The source did not report ka or Tlag, so no values were extracted and library placeholder defaults were used in their place; this invented absorption was adjudicated as not acceptable. The builder further assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent rather than absolute. A second reader recorded no value for the V/F of 22267.2, disagreeing on that field. Extracted — atorvastatin: CL/F 768 ml/h/kg, V/F 2.23e+04 ml/kg.
+The source reports only CL/F (767.7 ml/h/kg) and V/F (22267.2 ml/kg) for atorvastatin; ka and Tlag were left at library defaults because no values were extracted, and the invented ka was judged not acceptable. The model builder also assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent, and used first-order depot input consistent with extravascular dosing. A second reader recorded no value for the volume of distribution, disagreeing with the extracted 22267.2 ml/kg. Extracted — atorvastatin: CL/F 768 ml/h/kg, V/F 2.23e+04 ml/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of V/F: this record has 22267.2, the second reading none. That field does not shape the model.
 

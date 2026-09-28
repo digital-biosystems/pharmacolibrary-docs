@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The aprepitant record was rejected because the clearance parameter carries a dimension mismatch — 'Clearance of dexamethasone' is given as 24.7 '%' instead of a flow unit — and the record rests on abstract-only summary statistics rather than a fitted model.**
+**The aprepitant clearance parameter is mislabeled as 'Clearance of dexamethasone' with a percent unit (24.7 %), a dimension mismatch on a structural parameter, so the abstract-only record was rejected.**
 
-The structural parameter labelled 'Clearance of dexamethasone' is reported as 24.7 with unit '%', a percentage that cannot serve as a clearance in the one-compartment aprepitant model, which otherwise lists V/F = 72.1 L, absorption constant 0.893 /h and lag time 0.295 h. The record was built from the paper's abstract alone, so the reported summary statistics stood in for a fitted model. A second reader disagreed on the parameterization, judging it mechanistic rather than apparent, and set all four parameter values (0.893 /h, 0.295 h, 72.1 L, 24.7 %) to null in their reading. Extracted — aprepitant: V/F 72.1 L, kabs 0.893 /h, tlag 0.295 h, CL 24.7 %.
+The record lists a clearance parameter for aprepitant labeled 'Clearance of dexamethasone' with value 24.7 and unit '%', which is dimensionally inconsistent for a clearance parameter. The record was built from the paper's abstract alone, so summary statistics stood in for a fitted model. A second reader also disputed the parameterization, reading it as mechanistic rather than apparent, and returned no values for all four parameters (V/F 72.1 L, kabs 0.893 /h, tlag 0.295 h, CL 24.7 %). Extracted — aprepitant: V/F 72.1 L, kabs 0.893 /h, tlag 0.295 h, CL 24.7 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

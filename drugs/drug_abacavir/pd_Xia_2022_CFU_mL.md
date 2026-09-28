@@ -69,7 +69,7 @@ Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `schola
 |---|---|---|
 | `T0_driver` | fail | off-target driver — the curve belongs to that compound |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T1b_fmu` | fail | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 3.77%) |
 | `T2_direction` | fail | curve direction contradicts effect_direction — sign error |
 | `T3_plausibility` | fail | negative baseline -6.32 for a response in continuous |
 | `T4_defaults` | advisory | only convention defaults (gamma = 1) |
@@ -77,6 +77,7 @@ Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `schola
 Blocking:
 
 - off_target_driver: 'tulathromycin' is not 'abacavir' (S12)
+- T1b the template FMU departs from the closed form by 3.8%
 - T2 curve falls but the record says stimulation
 - T3 negative baseline -6.32 for a response in continuous
 

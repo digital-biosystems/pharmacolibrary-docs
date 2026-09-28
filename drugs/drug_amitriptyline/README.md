@@ -33,7 +33,8 @@ Off-label uses: irritable bowel syndrome, sleep disorders, diabetic neuropathy, 
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| nortriptyline | metabolite | — (mass units only) | — | — | — | — |
+| amitriptyline | parent | 277.403 | C20H23N | DrugBank | [2160](https://pubchem.ncbi.nlm.nih.gov/compound/2160) | Koh_2019, Ratajczak-Enselme_2015, Yukawa_2002 |
+| nortriptyline | metabolite | 263.384 | C19H21N | PubChem | [4543](https://pubchem.ncbi.nlm.nih.gov/compound/4543) | Koh_2019 |
 
 ## Extraction summary
 

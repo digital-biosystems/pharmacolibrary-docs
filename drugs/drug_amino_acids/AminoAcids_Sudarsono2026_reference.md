@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The amino acids one-compartment model was rejected because its clearance of 0.03 L/h and volume of distribution of 0.2 L fall outside physiological plausibility, and a second reader read different values (0.033, 0.3).**
+**The record was rejected because the amino acids one-compartment model's clearance (0.03 L/h) and volume of distribution (0.2 L) fall outside physiological plausibility, suggesting a unit or scale extraction error.**
 
-The record reports clearance of 0.03 L/h and volume of distribution of 0.2 L for amino acids, magnitudes judged physiologically implausible and attributed to a unit or scale extraction error. A second reader disagreed on the extracted numbers, reading 0.033 instead of 0.03, 0.11 instead of 0.15, and 0.3 instead of 0.2, so the parameter values themselves are uncertain. Extracted — amino acids: CL 0.03 L/h, V 0.2 L.
+The model, a one-compartment structure for amino acids from the review-secondary source in Sudarsono_2026, lists total clearance of 0.03 L/h and a volume of distribution of 0.2 L; these magnitudes were judged physiologically implausible for the compound. A second reader disagreed on the extracted values, reading 0.033 instead of 0.03 and 0.3 instead of 0.2 for the volume, indicating uncertainty in the value extraction, though the disagreement does not resolve the implausibility finding. Extracted — amino acids: CL 0.03 L/h, V 0.2 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.03, the second reading 0.033; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

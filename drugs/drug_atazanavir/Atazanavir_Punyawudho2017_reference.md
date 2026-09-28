@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The atazanavir model was held back because clearance, volume of distribution, absorption rate constant and absorption lag time had no source values and were left at library defaults, and CL/F was reported with the unconvertible unit '%'.**
+**The atazanavir model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no extracted values, so library placeholder values stood in for them.**
 
-The record lists CL/F = 28.7 with unit '%', a unit that could not be converted to SI, so the parameter reached the model without an SI value. No values were reported for atazanavir's clearance, volume of distribution, absorption rate constant or absorption lag time, so library placeholder defaults were substituted. The absorption rate constant was additionally flagged as invented, since it was defaulted rather than reported in the source. The model was therefore quarantined rather than published with invented numbers. Extracted — atazanavir: CL/F 28.7 %.
+The record reports CL/F for atazanavir as 28.7 with unit '%', a unit that could not be converted to SI, so the parameter arrived without an SI value. No value was available for atazanavir's clearance, volume of distribution, absorption rate constant and absorption lag time; the absorption rate constant was not reported in the source at all, so a placeholder number was used instead. The model also assumed F=1 and Fm=1 with no molar correction (apparent parameterization) and used first-order depot input for extravascular dosing. Extracted — atazanavir: CL/F 28.7 %.
 
 Independently confirmed by `gpt-oss:120b`.
 

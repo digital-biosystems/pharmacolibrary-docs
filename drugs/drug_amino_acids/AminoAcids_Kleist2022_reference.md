@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The homoarginine model record was held back because the reference check failed without computing a comparison (ratio None), leaving the parameter set inconclusive, and the covariate forms on CL and V3 are disputed between readers.**
+**The homoarginine record was held back because the reference check failed without computing a comparison, and the covariate forms on the clearance and peripheral-volume equations are disputed between readers.**
 
-The check on the reference reported a failure with ratio None, meaning no comparison could be computed, so the record is inconclusive rather than showing a demonstrated fault in the homoarginine one-compartment model. A second reader disagreed on the covariate forms for clearance (CL = θ1 × (IBW/75)^θ7, recorded as none here versus linear_fractional) and for peripheral volume V3 = θ3 × (IBW/75)^θ9 (recorded as linear_fractional here versus none). The two readers also disagreed on whether θ2 = 69.5, VD = 0.092 ml g−1, and the covariate terms theta_q64_age_power and theta_v3_body_weight belong in the parameter set, with the second reader leaving those entries empty. Extracted — homoarginine: V 0.092 ml g−1.
+The reference check returned ratio None, so it is an inconclusive check rather than a demonstrated fault in the model. A second reader disagreed on the covariate forms: this record lists none for the clearance equation CL = θ1 × (IBW/75)^θ7 and lists linear_fractional for the peripheral volume V3 = θ3 × (IBW/75)^θ9, while the second reader lists linear_fractional for clearance and none for V3. Several parameters (θ2 = 69.5, VD = 0.092 ml g−1, and the covariate effects theta_q64_age_power and theta_v3_body_weight) were read by only one reader, with the second reader recording no value. Extracted — homoarginine: V 0.092 ml g−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[clearance, cl = θ1 × (ibw/75)^θ7 [l/h]].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

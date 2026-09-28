@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The amino acids model was held back because the absorption rate constant ka was not reported in the source yet a first-order absorption input was invented, with ka and Tlag left at library defaults.**
+**The amino acids record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside an assumed lag time and an apparent (F=1) parameterization.**
 
-The record reports only CL/F of 9.1 L/h and V/F of 28.3 L for amino acids; the absorption rate constant ka and the lag time Tlag are absent from the source, so default placeholder values were substituted for these missing parameters. The builder further assumed F=1 and Fm=1 with no molar correction, an apparent (/F) parameterization implying extravascular dosing with first-order depot input. The invented absorption — ka defaulted and not reported in the source — was adjudicated as not acceptable, which is why the model was not published. The second reader recorded no value for the disputed field, so that comparison could not be computed. Extracted — amino acids: CL/F 9.1 L/h, V/F 28.3 L.
+The source reports only mean apparent clearance (CL/F 9.1 L/h) and mean apparent volume of distribution (V/F 28.3 L) for amino acids; ka and Tlag were missing and left at library defaults, and the invented absorption substitution was judged not acceptable. The model also assumes F=1 and Fm=1 with no molar correction, so the /F parameters are treated as if bioavailability were complete. A second reader's disagreement on one value field is recorded but unresolved. Extracted — amino acids: CL/F 9.1 L/h, V/F 28.3 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 2, the second reading none. That field does not shape the model.
 

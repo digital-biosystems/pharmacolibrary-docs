@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The bivalirudin two-compartment record was rejected because the structural parameter CL carries a per-kilogram unit (0.323 L·h⁻¹·kg⁻¹), a dimension mismatch, and the record was built from the abstract alone rather than a fitted model.**
+**The bivalirudin two-compartment model was rejected because the central volume of distribution V1 is reported as 24.2%, a percentage rather than a volume, so the structural parameter has no usable dimension.**
 
-The clearance parameter CL is reported as 0.323 L·h⁻¹·kg⁻¹ and inter-compartmental clearance Q as 0.0957 L·h⁻¹·kg⁻¹, units scaled per kilogram of body weight that do not match the dimension expected of a structural clearance parameter in the two-compartment structure. The volume parameter V is likewise given per kilogram (0.086 L/kg), and V1 is expressed as a percentage (24.2%) rather than an absolute volume. Because the source was abstract-only, the published summary statistics stood in for a fitted model, so these values could not be reconciled against a full pharmacokinetic model description. Extracted — bivalirudin: CL 0.323 L·h-1·kg-1, V 0.086 L/kg, Q 0.0957 L·h-1·kg-1, V1 24.2 %.
+In the Zhang_2012 record (healthy young Chinese volunteers, abstract-only), the parameter labelled 'V 1 (%)' carries the value 24.2 with unit '%', which is a dimensionless relative measure and cannot serve as a central volume of distribution in L. The other parameters — CL 0.323 L·h-1·kg-1, V 0.086 L/kg and Q 0.0957 L·h-1·kg-1 — are body-weight-normalised and dimensionally consistent. Because the record was built from the abstract alone, the reported summary statistics stood in for a fitted model, and the dimension mismatch on V1 made the model structure unusable. Extracted — bivalirudin: CL 0.323 L·h-1·kg-1, V 0.086 L/kg, Q 0.0957 L·h-1·kg-1, V1 24.2 %.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

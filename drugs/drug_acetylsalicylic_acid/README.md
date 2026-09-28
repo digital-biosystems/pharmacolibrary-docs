@@ -49,7 +49,8 @@ In the setting of acute myocardial infarction, or before percutaneous interventi
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| salicylic_acid | metabolite | — (mass units only) | — | — | — | — |
+| acetylsalicylic_acid (acetylsalicylic acid) | metabolite | 180.157 | C9H8O4 | DrugBank | [2244](https://pubchem.ncbi.nlm.nih.gov/compound/2244) | Cuesta-Gragera_2015, Cuny_1979, Dziubina_2026, Koh_2025, Shi_2008, Thoueille_2023, Zapadniuk_1987 |
+| salicylate (salicylic_acid) | metabolite | 138.122 | C7H6O3 | PubChem | [338](https://pubchem.ncbi.nlm.nih.gov/compound/338) | Cuny_1979, Koh_2025 |
 
 ## Extraction summary
 

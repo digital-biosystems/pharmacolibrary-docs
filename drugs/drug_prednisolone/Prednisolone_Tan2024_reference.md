@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**This prednisolone model record was held back because the oral lag time parameter (tlag, 0.36 hour) was not covered, leaving only 2 of 3 expected parameters extracted, and a second reader disputed several extracted values.**
+**The prednisolone record was held back because the oral absorption lag time tlag (0.36 hour) was neither extracted nor defaulted, leaving only 2 of 3 expected parameters covered, and a second reader disputes the clearance value (7.74 vs 8.4 L/h).**
 
-The record contains three prednisolone parameters — red blood cell clearance (CL, 7.74 L/h), central volume (V1, 9.6 L) and oral lag time (tlag, 0.36 hour) — but the coverage check found only 2 of 3 expected parameters covered, with tlag neither emitted nor defaulted, so the model was marked needs_review. A second reader also disagreed on the clearance value, reading 8.4 L/h against this record's 7.74 L/h, and on other values (31 vs 14, 6.55 vs 12), while reporting values (0.590, 8.260, 0.7) that this record left empty. The source is a review reference read from secondary text, so the extracted numbers may not reflect the fitted model directly. Extracted — prednisolone: CL 7.74 L.hour À1, V1 9.6 L, tlag 0.36 hour.
+The record for prednisolone lists CL 7.74 L/h, V1 9.6 L and tlag 0.36 hour, but the coverage check found only 2 of 3 expected parameters emitted or defaulted, with tlag missing from the covered set. A second reader also disagreed on the clearance value, reading 8.4 L/h against this record's 7.74 L/h, and reported several additional values (e.g. 0.590, 8.260, 0.7) that this record left null. These unresolved value disagreements and the uncovered tlag parameter are why the record was not published. Extracted — prednisolone: CL 7.74 L.hour À1, V1 9.6 L, tlag 0.36 hour.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 7.74, the second reading 8.4; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

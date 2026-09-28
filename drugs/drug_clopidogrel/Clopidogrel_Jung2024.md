@@ -151,7 +151,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 300 mg, single dose, first-order absorption into a hepatic compartment first (first pass) (ka 19.6 /h, lag 11.8 min, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 300 mg, single dose, first-order absorption into a hepatic compartment first (first pass) (ka 19.6 /h, lag 11.8 min, F 1). _The dose is the curated model's own, taken from the paper._
 
 <dbs-fmusim paramsurl="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_params.json" metaurl="assets/fmu/PK_3M_3C.vr.json" wasmurl="assets/fmu/PK_3M_3C.js" controlsurl="drugs/drug_clopidogrel/Clopidogrel_Jung2024/Clopidogrel_Jung2024_sim_controls.json"></dbs-fmusim>
 

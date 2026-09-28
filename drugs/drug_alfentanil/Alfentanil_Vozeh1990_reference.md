@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The alfentanil three-compartment model was quarantined because clearance and volume of distribution had no extracted values and were left at library defaults, with only k12, k21 and k13 (0.104, 0.0673, 0.0170 min⁻¹) recorded.**
+**The alfentanil model was quarantined because clearance and volume of distribution had no source values and library placeholder values were substituted, while k12 and k21 were not covered.**
 
-The record lists alfentanil intercompartmental rate constants k12 = 0.104 min⁻¹, k21 = 0.0673 min⁻¹ and k13 = 0.0170 min⁻¹, but neither clearance nor volume of distribution was extracted from Vozeh_1990. The coverage check expected two parameters emitted or defaulted and obtained zero covered, with k12 and k21 named as neither emitted nor defaulted. The model builder substituted library default placeholders for the missing clearance and volume of distribution, so the model was held back rather than published with invented numbers. Extracted — alfentanil: k12 0.104 min⁻¹, k21 0.0673 min⁻¹, k13 0.017 min⁻¹.
+The record for alfentanil (Vozeh_1990) lists k12 = 0.104 min⁻¹, k21 = 0.0673 min⁻¹ and k13 = 0.0170 min⁻¹, but no clearance or volume of distribution was extracted, so generic library placeholder values stood in for these missing source values. The parameter-coverage check expected 2 parameters emitted or defaulted and obtained 0 covered, with neither k12 nor k21 emitted nor defaulted. The model was therefore held back rather than published with invented numbers. Extracted — alfentanil: k12 0.104 min⁻¹, k21 0.0673 min⁻¹, k13 0.017 min⁻¹.
 
 Independently confirmed by `gpt-oss:120b`.
 

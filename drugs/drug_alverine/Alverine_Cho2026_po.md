@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The alverine mouse record was rejected because the volume of distribution Vd was reported as 1.2590 L/kg, a per-body-weight unit that could not be converted to SI, giving a dimension mismatch on a structural parameter.**
+**The record was rejected because the volume of distribution V for alverine was reported as 1.2590 L/kg, a per-body-weight unit that could not be expressed in SI units, causing a dimension mismatch on this structural parameter.**
 
-The record lists Vd (L/kg) = 1.2590 for alverine in mice; this per-kilogram unit could not be converted to a consistent SI volume unit, so the parameter entered the model without an SI value and failed the dimension check on a structural parameter. The other reported values (tmax 0.2416 h, Cmax 0.3473 μmol/L, AUClast 0.3517 μmol·h/L, t1/2z 0.1913 h) and the linear structure with metabolites M1, M2 and M3 linked by the rate constant Kfm were not themselves flagged. Extracted — alverine: tmax 0.242 h, Cmax 0.347 μmol/L, AUClast 0.352 μmol·h/L, V 1.26 L/kg, t1/2z 0.191 h.
+The only parameter affected is the volume of distribution V of alverine in mice, reported verbatim as 1.2590 L/kg. Because this per-kilogram unit could not be converted to a standard SI volume, the parameter had no usable SI value and failed the dimension check on a structural parameter. The other reported quantities (tmax 0.2416 h, Cmax 0.3473 μmol/L, AUClast 0.3517 μmol·h/L, t1/2z 0.1913 h) are not implicated. Extracted — alverine: tmax 0.242 h, Cmax 0.347 μmol/L, AUClast 0.352 μmol·h/L, V 1.26 L/kg, t1/2z 0.191 h.
 
 Independently confirmed by `gpt-oss:120b`.
 

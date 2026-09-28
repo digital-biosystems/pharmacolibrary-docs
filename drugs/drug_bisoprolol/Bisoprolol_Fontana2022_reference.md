@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The bisoprolol model was quarantined because clearance and volume of distribution had no source values and library placeholders were substituted, and tlag was left uncovered.**
+**The bisoprolol model was quarantined because bisoprolol's clearance and volume of distribution had no extracted values and library placeholders were substituted, and the absorption lag time tlag (0.149) was not covered.**
 
-The record reports tlag 0.149, ka 2.31, V 218.00 and CL 0.382 for bisoprolol, but the model builder defaulted Cl and Vd, meaning no fitted clearance or volume of distribution existed in the source and placeholder values stood in for them. The parameter-coverage check expected 4 parameters emitted or defaulted but obtained 3, with tlag neither emitted nor defaulted. A second reader also disagreed on the extracted values: it read the beta_Cl_diuretic coefficient as null where this record has 0.000882, and read a beta parameter as 0.05 where this record has null, so the parameter set itself is uncertain. Extracted — bisoprolol: tlag 0.149, t1/2ka 2.31, V 218, CL 0.382, CLb 0.000882.
+For bisoprolol in Fontana_2022, the record lists tlag 0.149, absorption half-life 2.31, volume of distribution 218.00, clearance 0.382 and blood clearance 0.000882, yet the model builder substituted library placeholder values for the missing clearance and volume of distribution, so the model was held back rather than published with an invented number. The parameter coverage check expected 4 parameters emitted or defaulted but obtained 3, with tlag neither emitted nor defaulted. A second reader disagreed on the blood clearance parameter, reading 0.05 where this record has 0.000882, and on whether the absorption half-life parameter is the absorption half-life or the absorption rate constant, so those values are contested. Extracted — bisoprolol: tlag 0.149, t1/2ka 2.31, V 218, CL 0.382, CLb 0.000882.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of b: this record has none, the second reading 0.05; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

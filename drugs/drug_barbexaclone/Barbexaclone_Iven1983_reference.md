@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The barbexaclone record was rejected because its hydrolysis links to phenobarbital and propylhexedrine carry no parameter values, and only the paper's abstract was read, so reported summary statistics stood in for a fitted model.**
+**The barbexaclone record was rejected because its hydrolysis to phenobarbital and to propylhexedrine carries no link parameter, leaving the metabolites unlinked, and it was built from the abstract only.**
 
-The structure lists barbexaclone hydrolysing to phenobarbital and to propylhexedrine, but both links have link_parameter 'none' with unknown kind, leaving the metabolite paths without quantitative values. The record is abstract-only, so no fitted model underlies the reported numbers (e.g., phenobarbital half-life 7.5 h, volume of distribution 0.78 l/kg, bioavailability 0.37). The failed check on unreachable or unlinked metabolites could not be resolved because the link parameters were absent. Extracted — phenobarbital: t1/2z 7.5 h, V 0.78 l/kg, t1/2α 0.31 h, t1/2β 2.5 h, V2 19.3 l/kg, Fab 0.37 monoexponentially.
+The model links barbexaclone to phenobarbital and to propylhexedrine by hydrolysis, but both links have no link parameter, so the metabolites have no quantitative path from the dose (unlinked metabolites). The record is abstract-only, so reported summary statistics (e.g., phenobarbital terminal half-life 7.5 h, volume of distribution 0.78 l/kg, bioavailability 0.37) stood in for a fitted model. No unit-conversion or ratio-check failures are reported. Extracted — phenobarbital: t1/2z 7.5 h, V 0.78 l/kg, t1/2α 0.31 h, t1/2β 2.5 h, V2 19.3 l/kg, Fab 0.37 monoexponentially.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

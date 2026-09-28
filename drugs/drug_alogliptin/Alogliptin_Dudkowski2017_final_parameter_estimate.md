@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The alogliptin model was quarantined because its volume of distribution, absorption rate constant and lag time had no source values and were left at library defaults, with ka invented as 0.590 1/hr.**
+**The alogliptin model was quarantined because volume of distribution, absorption rate constant and absorption lag time had no source values and library placeholders were substituted, with V2/F and Q/F also uncovered.**
 
-The record lists alogliptin parameters kabs 0.590 1/hr, CL/F 14.4 L/hr, V2/F 125 L, V3/F 117 L and Q/F 11.7 L/hr, but Vd, ka and Tlag were defaulted, so placeholder values would have been substituted for missing source values. The absorption rate constant was not reported in the source, making the defaulted ka an invented absorption parameter. A coverage check found only 2 of 4 expected parameters covered, with V2/F and Q/F neither emitted nor defaulted. The deviations check returned 'invented_absorption: not acceptable', and the model additionally assumed F=1, Fm=1 with no molar correction (apparent parameterization). Extracted — alogliptin: kabs 0.59, CL/F 14.4 L/hr, V2/F 125 L, V3/F 117 L, Q/F 11.7 L/hr.
+Although the record lists kabs 0.590 1/hr, CL/F 14.4 L/hr, V2/F 125 L, V3/F 117 L and Q/F 11.7 L/hr, the coverage check found only 2 of 4 expected parameters covered, with V2/F and Q/F neither emitted nor defaulted. The builder left Vd, ka and Tlag at library defaults, and the absorption rate constant was flagged as invented since it was not reported in the source. Bioavailability was assumed to be 1 (F=1, Fm=1) with no molar correction, an apparent parameterization. Extracted — alogliptin: kabs 0.59, CL/F 14.4 L/hr, V2/F 125 L, V3/F 117 L, Q/F 11.7 L/hr.
 
 Independently confirmed by `gpt-oss:120b`.
 

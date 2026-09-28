@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The amino acids model was rejected because its clearance (0.03 L/h) and volume of distribution (0.2 L) fall far outside physiologically plausible ranges, pointing to a unit or scale extraction error.**
+**The amino acids model was rejected because its clearance (0.03 L/h) and volume of distribution (0.2 L) fall far outside physiological plausibility, indicating a unit or scale extraction error.**
 
-The record reports a one-compartment model for amino acids with clearance of 0.03 L/h and volume of distribution of 0.2 L. Both magnitudes are outside the physiological window expected for such compounds, and the review judged the values implausible, attributing the error to unit or scale extraction. The source was a secondary review text rather than the primary data, so the numbers may not reflect a fitted model. Extracted — amino acids: CL 0.03 L/h, V 0.2 L.
+The record reports total clearance of 0.03 L/h and a distribution volume of 0.2 L for amino acids, values so small for these endogenous compounds that the review judged them physiologically implausible and attributed the magnitudes to a unit or scale extraction error. The model structure is a single compartment, and the source is a review-secondary text rather than a primary fitted analysis, which is consistent with summary values standing in for a fitted model. No other failed checks are recorded. Extracted — amino acids: CL 0.03 L/h, V 0.2 L.
 
 Independently confirmed by `gpt-oss:120b`.
 

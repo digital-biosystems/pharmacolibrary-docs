@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The two-compartment abacavir model for HIV-infected infants and children was rejected because one compartment has no path from the dose, making it unreachable.**
+**The abacavir two-compartment model was rejected because one compartment is unreachable from the dose: the record lists both Q (0.802 l/h) and Q/F (2.0 l/h) as intercompartmental clearances, leaving the peripheral compartment's connection ambiguous.**
 
-The record describes a two-compartment abacavir model with parameters such as absorption rate constant 0.913 h⁻¹, CL/F 20.1 l·h⁻¹, Q/F 2.0 l·h⁻¹, V1/F 13.0 l and V2/F 13.5 l. The review found an unreachable or orphan compartment, i.e. a compartment not connected to the dosing input, so the model was refused. No other failed checks or builder deviations are recorded. Extracted — abacavir: kabs 0.913 h -1, CL/F 20.1 l h -1, Q 0.802, V2/F 13.5 l, Q/F 2 l h -1.
+The record for abacavir in HIV-infected infants, toddlers and children contains two intercompartmental clearance parameters, Q with value 0.802 (no unit given) and Q/F with value 2.0 l/h, both described as the clearance between the central and peripheral compartment. With two competing values for the same structural link, the two-compartment topology could not be resolved as a connected structure, so the peripheral compartment (V2/F = 13.5 l) was treated as unreachable from the dose. The remaining parameters (kabs 0.913 h⁻¹, CL/F 20.1 l/h, V1/Fref 13.0 l) are otherwise complete. Extracted — abacavir: kabs 0.913 h -1, CL/F 20.1 l h -1, Q 0.802, V2/F 13.5 l, Q/F 2 l h -1.
 
 Independently confirmed by `gpt-oss:120b`.
 

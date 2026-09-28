@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Rejected for a dimension mismatch on a structural clearance of alglucosidase alfa: Qpc was recorded as 0.0157 L/h, numerically identical to the rate constant k21 (0.0157 d−1), and CL was left with no value or unit.**
+**The alglucosidase alfa record was rejected for a dimension mismatch on a structural parameter: the intercompartmental clearance Qpc is reported as 0.0157 L/h, which is the value of the rate constant k21 (0.0157 d−1), and total clearance CL has no value at all.**
 
-The intercompartmental clearance Qpc (Qpc, 0.0157 L/h) carries the same numeric value as the distribution rate constant k21 (0.0157 d−1), a dimension mismatch on a structural parameter indicating a rate constant was read as a clearance in L/h. The reported unit could not be converted to SI, so the parameter reached the model without an SI value. The clearance parameter CL appears in the record with no value and no unit at all. A second reader disputed the Q/Q2 value (0.254 read as absent), the Qpc value (0.0157 read as absent), and the drug/analyte fields, though it agreed CL was null; these disagreements leave the extracted values inconclusive. Extracted — alglucosidase alfa: V1 3.37 L, Q2 0.254 L/h, V2 296 L, k21 0.0157 d−1, Vmax 12 mg/h, Km 0.541 µg/mL, Q3 1.87 L/h, V3 1.31 L, … (+1).
+In the two-compartment structure, k21 is 0.0157 d−1, and the same number 0.0157 appears again as Qpc in L/h, a unit that could not be converted to SI, so the mismatch could not be resolved. The clearance parameter CL is listed without any value. A second reader also disagreed on the dose compound and primary analyte (both recorded as alglucosidase alfa but flagged as unknown) and on the identity and value of the Q/Q2 parameter (0.254 L/h versus no value). Extracted — alglucosidase alfa: V1 3.37 L, Q2 0.254 L/h, V2 296 L, k21 0.0157 d−1, Vmax 12 mg/h, Km 0.541 µg/mL, Q3 1.87 L/h, V3 1.31 L, … (+1).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has alglucosidase_alfa, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

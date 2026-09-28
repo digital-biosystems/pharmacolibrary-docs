@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The clopidogrel model was held back because the absorption rate constant ka and lag time Tlag were not reported in the source; library defaults were substituted, inventing an absorption input the paper never described.**
+**The clopidogrel record was held back because the absorption rate constant ka was invented (defaulted, not reported in the source), alongside other builder deviations such as F=1 and Fm=1 assumptions.**
 
-The record reports only CL/F (0.309 L/h/kg) and V/F (5.079 L/kg) for clopidogrel; ka and Tlag had no values in the source, so defaults were used. The builder further assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization, and imposed a first-order depot input implying extravascular dosing. This invented absorption — a ka not reported in the source — was adjudicated not acceptable, so the model was not published and awaits review. Extracted — clopidogrel: CL/F 0.309 L/h/kg, V/F 5.08 L/kg.
+The source reports only CL/F (0.309 L/h/kg) and V/F (5.079 L/kg) for clopidogrel; ka and Tlag had no values in the source, so library placeholder values were substituted. The model builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. A second reader disagreed on several derived values (e.g., 15.127 vs 10.146) and one value was null in this record but 90.529 for the second reader. Extracted — clopidogrel: CL/F 0.309 L/h/kg, V/F 5.08 L/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 104.965, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

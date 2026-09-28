@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The acetylsalicylic acid record was held back because the absorption rate constant ka and lag time Tlag were not reported in the source, so library placeholder values were used, amounting to an invented first-order absorption for the extravascular model.**
+**The acetylsalicylic acid record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, an invented absorption the review could not accept.**
 
-The record reports CL/F = 36.5 L/h/kg and V/F = 13122.4656 L for acetylsalicylic acid in a one-compartment structure, but ka and Tlag had no values extracted from the source, meaning placeholders would have been used. The model builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input. The failed check flagged this invented absorption as not acceptable, and the second reader returned no value for several extracted quantities (36.5, 187.73, 3.56), leaving those comparisons uncomputed. Extracted — acetylsalicylic acid: CL/F 36.5 L/h/kg, V/F 1.31e+04 L.
+The source reports only CL/F (36.5 L/h/kg) and V/F (13122.4656 L) for acetylsalicylic acid; ka and the absorption lag time Tlag had no values in the source, so library placeholder values were used instead. The model builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. The failed check returned 'invented_absorption: not acceptable'. A second reader could not confirm several extracted values (36.5, 231.44, 187.73, 3.56 were read as null), while agreeing on 137.17, 0.19, 2.91 and 0.083. Extracted — acetylsalicylic acid: CL/F 36.5 L/h/kg, V/F 1.31e+04 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 137.17, the second reading 137.17; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -137,7 +137,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Dziubina2026_reference/AcetylsalicylicAcid_Dziubina2026_reference_modelica.zip" download>AcetylsalicylicAcid_Dziubina2026_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Dziubina2026_reference/AcetylsalicylicAcid_Dziubina2026_reference_modelica.zip" download>AcetylsalicylicAcid_Dziubina2026_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Dziubina2026_reference/AcetylsalicylicAcid_Dziubina2026_reference_fmi.zip" download>AcetylsalicylicAcid_Dziubina2026_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Dziubina2026_reference/AcetylsalicylicAcid_Dziubina2026_reference_matlab.zip" download>AcetylsalicylicAcid_Dziubina2026_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Dziubina2026_reference/AcetylsalicylicAcid_Dziubina2026_reference_matlab_simbio.zip" download>AcetylsalicylicAcid_Dziubina2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>

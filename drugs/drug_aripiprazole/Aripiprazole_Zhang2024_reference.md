@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The olanzapine clearance parameter is negative (CL/F −1.09 L/h) with an implausible volume (V/F 0.47 L), and the record is labelled aripiprazole while the measured compound is olanzapine.**
+**The olanzapine clearance parameter CL/F is negative (-1.09 L/h), which is physiologically implausible, so the record was rejected.**
 
-The extracted olanzapine parameters are pharmacologically impossible: CL/F of −1.09 L/h is negative clearance and V/F of 0.47 L is far below any plausible distribution volume, indicating the base values or covariate shifts were recorded incorrectly. The molecule field lists aripiprazole and its formulations, yet the measured compound and both parameters belong to olanzapine, so the record conflates two different drugs. A second reader found a different value (−3.83) for the aripiprazole parameter where this record has none, showing the disagreement extends to which drug the parameters describe. Extracted — olanzapine: CL/F -1.09 L/h, V/F 0.47 L.
+The record lists aripiprazole as the drug but the measured compound and parameters are for olanzapine, a mismatch in itself. The CL/F value of -1.09 L/h is negative, an implausible clearance for a base or covariate scenario, which triggered rejection. The V/F of 0.47 L is also implausibly small for olanzapine. A second reader recorded a θ aripiprazole value of -3.83 where this record has none, but the rejection rests on the negative clearance. Extracted — olanzapine: CL/F -1.09 L/h, V/F 0.47 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of θ ari: this record has none, the second reading -3.83. That field shapes the model, so the record is marked disputed.
 

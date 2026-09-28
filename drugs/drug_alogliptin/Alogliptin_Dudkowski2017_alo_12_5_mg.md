@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The alogliptin two-compartment record was rejected because a compartment has no path from the dose, and the reported AUEC0–24 unit (%·hr) could not be converted to SI.**
+**The alogliptin two-compartment record was rejected because its model structure contains an unreachable compartment, and the reported AUCt value of 1570 %·hr could not be converted to SI units.**
 
-The model structure lists two compartments, but the rejection cites an unreachable or orphan compartment — a compartment with no dosing path — so the topology was judged invalid. The AUEC0–24 value of 1570 %·hr could not be converted to SI units, leaving that exposure parameter without a usable value. A second reader also disagreed on three extracted values: AUEC0–24 (1570 vs null), E24 (null vs 52.0), and Fe (60.713 vs null), so the urinary excretion fraction and 24-hour exposure entries are contested. Extracted — alogliptin: AUCt 1.57e+03 %·hr, Cmax 57.9 ng/mL, AUC∞ 789 ng·hr./mL, CL/F 16.2 L/hr, V/F 388 L, t1/2z 16.8 hr, CLR 11.6 L/hr, fe 60.7, … (+1).
+The structure check found an orphan compartment with no path from the dose, so the two-compartment topology for alogliptin was refused. The AUEC0–24 parameter (1570 %·hr) carries a unit that could not be converted to SI, so it reached the model builder without a usable value. A second reader also disagreed on the exposure parameters: it read no AUCt value and no Fe value where this record holds 1570 and 60.713, and instead read an E24 of 52.0 that this record lacks. Additionally, the parameter labeled 'Central volume of distribution [V2/F]' (27.6 L) is defined in the record as the peripheral compartment volume, an internal inconsistency. Extracted — alogliptin: AUCt 1.57e+03 %·hr, Cmax 57.9 ng/mL, AUC∞ 789 ng·hr./mL, CL/F 16.2 L/hr, V/F 388 L, t1/2z 16.8 hr, CLR 11.6 L/hr, fe 60.7, … (+1).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auec0-24: this record has 1570, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

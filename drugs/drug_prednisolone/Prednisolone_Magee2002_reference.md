@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the prednisolone distribution volume V is 0.3 L, a physiologically implausible magnitude for this molecule, indicating a unit or scale extraction error.**
+**The prednisolone record was rejected because its clearance of 7.74 L/h and volume of distribution of 0.3 L fall outside plausible physiological windows, suggesting a unit or scale extraction error.**
 
-The one-compartment prednisolone model for healthy adults lists V (labelled V Glu1) as 0.3 L, far below any plausible distribution volume for prednisolone, which is why the plausibility check on clearance/volume magnitudes failed. The clearance CL RBCs is 7.74 L/hour (written 'L.hour À1' in the record) and the oral lag time is 0.36 hour; the second reader did not dispute these three parameter values. The second reader did disagree on the model structure, arguing the record should include a prednisone–prednisolone metabolism link, whereas the record lists none. Extracted — prednisolone: CL 7.74 L.hour À1, V 0.3 L, tlag 0.36 hour.
+For prednisolone in healthy adults, the record lists total clearance as 7.74 L/h (labelled 'CL RBCs') and a distribution volume of 0.3 L (labelled 'V Glu1'), values judged implausible in magnitude and consistent with a unit/scale extraction error. The absorption lag time is 0.36 h. A second reader also disagreed on the model structure: the record contains no link between prednisone and prednisolone via metabolism, whereas the second reader expected such a metabolic link; the second reader gave no alternative values for the clearance, volume, or lag-time parameters. Extracted — prednisolone: CL 7.74 L.hour À1, V 0.3 L, tlag 0.36 hour.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading prednisone → prednisolone (metabolism); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

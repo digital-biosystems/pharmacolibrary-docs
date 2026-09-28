@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The amino acids one-compartment model was held back because ka and Tlag were not reported and defaults were substituted, the invented first-order absorption was judged not acceptable, and a second reader disputed several extracted values.**
+**The amino acids record was held back because the absorption rate constant ka was invented (defaulted) rather than reported in the source, alongside unreported Tlag and an assumed F=1 for the apparent CL/F (0.113 L/day) and V/F (6.44 L).**
 
-The record reports CL/F 0.113 L/day and V/F 6.44 L for amino acids in a one-compartment structure, but the absorption rate constant ka and lag time Tlag were missing from the source, so library defaults were substituted and the invented absorption was adjudicated not acceptable. The apparent (/F) parameterization additionally assumed F=1 and Fm=1 with no molar correction, implying extravascular first-order depot input. A second reader disagreed on multiple extracted values, including CL/F (0.113 vs 0.093 L/day) and a volume-related quantity (39.4 vs 48.6 L), and several fields were extracted by only one of the two readers. Extracted — amino acids: CL/F 0.113 L/day, V/F 6.44 L.
+The source reports only apparent parameters CL/F = 0.113 L/day and V/F = 6.44 L for amino acids; ka and Tlag were not reported and library defaults were substituted, which the adjudication flagged as an invented absorption input not acceptable for publication. The model builder also assumed F=1 and Fm=1 with no molar correction, treating the apparent (/F) parameterization as first-order depot input for extravascular dosing. A second reader further disagreed on several extracted values, including CL/F (0.113 vs 0.093) and a volume-related value (39.4 vs 48.6), and could not confirm several others the record reported. Extracted — amino acids: CL/F 0.113 L/day, V/F 6.44 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q18: this record has 778.8, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The azathioprine model was rejected because its structure contains an unreachable compartment or unlinked metabolite, and the two readers also disagreed on whether the θ MESA coefficient (0.802) belongs in the parameter set.**
+**The azathioprine model record was rejected because its structure leaves a compartment or metabolite (6-thioguanine nucleotides) with no path from the dose, making the PK parameters unusable.**
 
-The rejection cause is structural: the one-compartment model for 6-thioguanine nucleotides includes a compartment or metabolite with no dosing path, so the model as recorded is not a connected, estimable system. The parameters themselves were extracted with values — CL 11.6 L/h, V2 809 L, allometric exponent 0.625, TPMT effect 0.515, and θ MESA 0.802 — but the second reader disagreed on whether θ MESA (0.802) or a null entry belongs in the parameter list, and also on the analyte label (6-thioguanine nucleotides versus 6-TGN). These disagreements do not overturn the structural finding, which alone justified holding the record back. Extracted — 6-thioguanine nucleotides: CL 11.6 L/h, allometric_exponent 0.625, V2 809 L.
+The record describes a one-compartment structure for azathioprine with the measured compound 6-thioguanine nucleotides, carrying parameters CL 11.6 L/h, V2 809 L, an allometric weight exponent of 0.625, a TPMT covariate effect of 0.515, and a θ MESA coefficient of 0.802. The rejection rests on an orphan compartment or unlinked metabolite: the measured 6-thioguanine nucleotide entity has no connection from the administered dose, so the clearance and volume values cannot be interpreted within the model. The second reader's disagreements concern only naming of the analyte (6-TGN versus 6-thioguanine nucleotides) and whether the θ MESA coefficient of 0.802 belongs in the record, not the structural defect. Extracted — 6-thioguanine nucleotides: CL 11.6 L/h, allometric_exponent 0.625, V2 809 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has 6-thioguanine nucleotides, the second reading 6-TGN; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

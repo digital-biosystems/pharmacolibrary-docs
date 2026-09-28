@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The prednisolone record was rejected because a structural parameter carries a dimension mismatch and a clearance/volume value falls outside the physiological window, consistent with a unit/scale extraction error; one reported unit could not be converted to SI.**
+**The prednisolone record was rejected because a structural parameter had a dimension mismatch and a clearance/volume value fell outside the physiological window, consistent with a unit/scale extraction error.**
 
-The record lists prednisolone parameters for paediatric kidney transplant recipients with a one-compartment structure, including Ktr 12.5 h⁻¹, Mtt 0.63 h, VU 101 L/70 kg, CLU 27.6 L/h/70 kg, Bmax 6.77, K1 0.0095 nmol, V Glu1 0.3 L and t lag,oral 0.36 h. The review found a dimension mismatch on a structural parameter and a clearance/volume magnitude outside the physiological window, attributed to a unit/scale extraction error. One of the reported units could not be converted to SI units, so that parameter entered the record without an SI value. A second reader disagreed with the extracted values for t lag,oral (0.36) and V Glu1 (0.3), reading no value for either. Extracted — prednisolone: ktr 12.5 h-1, MTT 0.63 h, Vnorm 101 L/70 kg, CLu 27.6 L/h/70 kg, Bmax 6.77, KD 0.0095 nmol, V 0.3 L, tlag 0.36 hour.
+The clearance/volume check flagged an implausible magnitude attributed to a unit or scale extraction error, and a structural parameter failed the dimension check. A reported unit could not be converted to SI, so the parameter arrived without an SI value. The second reader could not confirm the oral absorption lag time (0.36 h) or the volume V Glu1 (0.3 L), recording no value for either. Extracted — prednisolone: ktr 12.5 h-1, MTT 0.63 h, Vnorm 101 L/70 kg, CLu 27.6 L/h/70 kg, Bmax 6.77, KD 0.0095 nmol, V 0.3 L, tlag 0.36 hour.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of t lag,oral: this record has 0.36, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

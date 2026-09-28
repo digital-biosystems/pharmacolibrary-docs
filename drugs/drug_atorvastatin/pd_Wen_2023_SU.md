@@ -66,7 +66,7 @@ Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `schola
 |---|---|---|
 | `T0_driver` | fail | off-target driver — the curve belongs to that compound |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T1b_fmu` | fail | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 145.51%) |
 | `T2_direction` | pass | curve direction matches effect_direction |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | fail | a core parameter took a library default: E0 |
@@ -74,6 +74,7 @@ Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `schola
 Blocking:
 
 - off_target_driver: 'oxypurinol' is not 'atorvastatin' (S12)
+- T1b the template FMU departs from the closed form by 145.5%
 
 Advisory:
 

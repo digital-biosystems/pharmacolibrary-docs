@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The azathioprine two-compartment model was rejected because one compartment has no dosing path: with CL 0.159 L/day, V1 3.19 L and V2 1.65 L, the peripheral compartment is orphaned.**
+**The azathioprine two-compartment model was rejected because its peripheral compartment (V2 = 1.65 L) is unreachable — no path connects it to the dose, so the structure is invalid.**
 
-The record describes a two-compartment azathioprine model (CL 0.159 L/day, central volume 3.19 L, peripheral volume 1.65 L) taken from a review reference rather than the primary source. The structural check found an unreachable/orphan compartment: the peripheral compartment has no connection from the administered dose, so the stated two-compartment topology is not consistent with a dosed parent. The parameter values themselves are internally plausible, but the disconnected structure makes the record unpublishable as extracted. Extracted — azathioprine: CL 0.159 L/day, V1 3.19 L, V2 1.65 L.
+The record describes a two-compartment structure for azathioprine with clearance 0.159 L/day, central volume 3.19 L, and peripheral volume 1.65 L. The failing check found an unreachable or orphan compartment: the peripheral compartment has no connection from the dose, meaning the reported topology cannot describe drug distribution as claimed. No other parameter values were disputed. Extracted — azathioprine: CL 0.159 L/day, V1 3.19 L, V2 1.65 L.
 
 Independently confirmed by `gpt-oss:120b`.
 

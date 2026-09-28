@@ -33,10 +33,10 @@ Prescribing of statin medications is considered standard practice following any 
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| atorvastatin | parent | 558.64 | C33H35FN2O5 | DrugBank | [60823](https://pubchem.ncbi.nlm.nih.gov/compound/60823) | Courlet_2020, Kong_2025 |
+| atorvastatin | parent | 558.64 | C33H35FN2O5 | DrugBank | [60823](https://pubchem.ncbi.nlm.nih.gov/compound/60823) | Chen_2025, Courlet_2020, Jadhav_2023, Kong_2025, Langeskov_2022, Li_2024, Malekinejad_2014, Morath_2025, Narwal_2010, Park_2017, Stillemans_2022, Tsamandouras_2017, Wen_2023 |
 | atorvastatin acid | metabolite | — (mass units only) | — | — | — | — |
-| atorvastatin lactone | metabolite | — (mass units only) | — | — | — | — |
-| o-OH-atorvastatin | metabolite | 136.1 | — | PubChem | [144226](https://pubchem.ncbi.nlm.nih.gov/compound/144226) | Courlet_2020 |
+| atorvastatin lactone | metabolite | 540.635 | C33H33FN2O4 | PubChem | [6483036](https://pubchem.ncbi.nlm.nih.gov/compound/6483036) | Narwal_2010 |
+| o-OH-atorvastatin | metabolite | 574.649 | C33H35FN2O6 | PubChem | [3364534](https://pubchem.ncbi.nlm.nih.gov/compound/3364534) | Courlet_2020, Tsamandouras_2017 |
 
 ## Extraction summary
 

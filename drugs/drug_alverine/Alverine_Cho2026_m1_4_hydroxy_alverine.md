@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The alverine mouse record was rejected because it reports only exposure statistics (tmax, Cmax, AUC for metabolite M1) with no distribution volume and no clearance, so it is not a compartmental population PK model.**
+**The alverine record was rejected because it reports only exposure statistics (tmax 0.9 h, Cmax 0.0015 μmol/L, AUClast 0.0010 μmol·h/L for M1) with no distribution volume or clearance, and M2 is unreachable from the dose.**
 
-The record contains no distribution volume and no clearance or elimination rate for alverine or its metabolites; the only parameters are tmax (0.9000 h), Cmax (0.0015 μmol/L), AUClast (0.0010 μmol·h/L) and an AUC ratio (0.0019, Metabolite/Parent) for M1, marking it as an exposure/outcome paper rather than a fitted compartmental population PK model. A dimension mismatch was flagged on a structural parameter, and the structure is defective: metabolite M2 is reachable only through M1, but the alverine-to-M1 and alverine-to-M3 links and the M1-to-M2 link all share the single rate constant Kfm, leaving an orphaned metabolite in the topology. Additionally, the AUC ratio's reported unit (Metabolite/Parent) has no SI equivalent, so that parameter could not be given an SI value. Extracted — M1: tmax 0.9 h, Cmax 0.0015 μmol/L, AUClast 0.001 μmol·h/L, AUC ratio 0.0019 Metabolite/Parent.
+The paper gives no distribution volume and no clearance or elimination rate for alverine, so it is an exposure/outcome paper rather than a compartmental population PK model. The structure also fails: a dimension mismatch was found on a structural parameter, and metabolite M2 (formed from M1) has no path from the administered dose. Additionally, the reported concentration unit μmol/L could not be converted to SI units, so the parameters were carried forward without SI values. Extracted — M1: tmax 0.9 h, Cmax 0.0015 μmol/L, AUClast 0.001 μmol·h/L, AUC ratio 0.0019 Metabolite/Parent.
 
 Independently confirmed by `gpt-oss:120b`.
 

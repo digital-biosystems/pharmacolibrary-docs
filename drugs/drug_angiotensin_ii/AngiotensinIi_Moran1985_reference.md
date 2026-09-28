@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The angiotensin II record was rejected because the extracted parameters are implausible: a clearance labelled 'Patient 1 V' of 1.4 ml/min and a volume labelled 'Patient 2 V' of 0.5 ml/min, with ml/min units on a volume, indicating a unit/scale extraction error.**
+**The angiotensin II record was rejected because the volume parameter V is reported as 0.5 ml/min, a clearance unit, indicating a unit/scale extraction error that makes the value physiologically implausible.**
 
-The record lists two parameters for angiotensin II: CLu with the verbatim label 'Patient 1 V' at 1.4 ml/min, and V with the verbatim label 'Patient 2 V' at 0.5 ml/min. The volume parameter carries a flow unit (ml/min) rather than a volume unit, and the labels suggest the values were read from the wrong table entries, so the magnitudes fall outside the physiological window for this peptide. The second reader recorded no values for these fields (null for the 1.4 and 0.5 entries and for the 9.6 and 50 entries, with -44 where this record had none), leaving the comparisons uncomputable and the findings inconclusive on those points. Extracted — angiotensin ii: CLu 1.4 ml/min, V 0.5 ml/min.
+The record lists two parameters for angiotensin II: CLu at 1.4 ml/min (labelled 'Patient 1 V') and V at 0.5 ml/min (labelled 'Patient 2 V'). The volume of distribution V carries a flow unit (ml/min) instead of a volume unit, and its magnitude of 0.5 is implausible for a distribution volume, so the clearance/volume plausibility check failed. The labels also mismatch the meanings — a volume parameter is labelled 'Patient 2 V' but given clearance units — consistent with a unit/scale extraction error. A second reader returned no values for these fields, so the disagreement could not be resolved. Extracted — angiotensin ii: CLu 1.4 ml/min, V 0.5 ml/min.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 9.6, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 

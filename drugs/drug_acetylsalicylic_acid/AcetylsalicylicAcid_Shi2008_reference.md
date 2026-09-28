@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The acetylsalicylic acid record was held back because the absorption rate constant ka and Tlag were not reported in the source, so library defaults were substituted, and the invented first-order absorption was judged not acceptable.**
+**The acetylsalicylic acid record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, an invented absorption parameter flagged as unacceptable.**
 
-Only CL/F (450.0 ml/min) and V/F (467.4332 L) are given for acetylsalicylic acid; ka and Tlag have no extracted values, meaning placeholders would have been used in the model. The builder further assumed F=1, Fm=1, no molar correction (apparent parameterization), and a first-order depot input implying extravascular dosing. The invented-absorption deviation failed adjudication as not acceptable. A second reader also disagreed on several extracted values (e.g., 10.7 vs 60, 25 vs null, 60 vs null), so those fields remain uncertain. Extracted — acetylsalicylic acid: CL/F 450 ml/min, V/F 467 L.
+The record reports only CL/F (450.0 ml/min) and V/F (467.4332 L) for acetylsalicylic acid; ka and lag time were left at library defaults because the source gives no values, and the builder assumed F=1 and Fm=1 with no molar correction under an apparent (/F) parameterization with first-order depot input. The adjudication ruled this invented absorption unacceptable. A second reader also disagreed on several extracted values (e.g., 10.7 vs 60, 25 vs 185), so the record's numbers are contested. Extracted — acetylsalicylic acid: CL/F 450 ml/min, V/F 467 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has 10.7, the second reading 60; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

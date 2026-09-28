@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The atropine horse model was quarantined because clearance, distribution volume, absorption rate, lag time and both intercompartmental rate constants had no reported values, so library defaults were substituted, and the eye-drop absorption parameter's ilogit unit could not be expressed in SI.**
+**The atropine two-compartment horse model was quarantined because clearance, volume of distribution, absorption rate constant, absorption lag time and both intercompartmental rate constants had no extracted values and library placeholder defaults were substituted.**
 
-The record lists atropine's V1 (0.646), V2 (1.148), CL (1.905), Q (2.477) and the half-lives, yet the source reported no values for clearance, volume of distribution, absorption rate constant, absorption lag time, k12 or k21, so library placeholders stood in and the model was held back; the absorption rate constant was defaulted rather than reported, judged not acceptable. The eye-drop absorption parameter (value 0.781 on the ilogit scale) carried a unit that could not be converted to SI, so it entered the model without an SI value. A second reader also disagreed on this eye-drop parameter, reading 0.685 where this record left it empty, and on its parameter identifier. Extracted — atropine: V1 0.646, V2 1.15, CL 1.91, Q 2.48, Fab 0.781 ilogit, eye drop, kabs 5.95, t1/2ka 0.117, t1/2β 0.798 terminal phase, … (+3).
+The record lists fitted values for atropine (V1 0.646, V2 1.148, CL 1.905, Q 2.477, Fab 0.781, kabs 5.948), but the model builder's substitutions show Cl, Vd, ka, Tlag, k12 and k21 were left at library placeholder defaults because the source reported no values, and the invented absorption (defaulted ka) was judged not acceptable. Additionally, a reported unit could not be converted to SI, so one parameter reached the build without an SI value. A second reader also disagreed on the eye-drop bioavailability, reading 0.685 where this record has null. Extracted — atropine: V1 0.646, V2 1.15, CL 1.91, Q 2.48, Fab 0.781 ilogit, eye drop, kabs 5.95, t1/2ka 0.117, t1/2β 0.798 terminal phase, … (+3).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of bioavailability drop: this record has none, the second reading 0.685; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

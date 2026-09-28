@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The amlodipine two-compartment model was held back because the absorption rate constant ka and lag time Tlag were not reported and placeholder values were substituted, alongside an assumed first-order absorption with F=1.**
+**The amlodipine two-compartment model was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside a defaulted lag time.**
 
-The record reports CL/F 39.4 L/h, Vc 13.8 L, Vp 14.2 L and Q 2.02 L/h for amlodipine, but ka and Tlag have no extracted values, so library placeholder values would have stood in for them. The builder further assumed F=1 and Fm=1 with no molar correction, and imposed a first-order depot input consistent with the apparent (/F) parameterization, even though ka was not reported in the source. A second reader also disagreed on the intercompartmental clearance, giving 12 L/h (and 9 L/h in another field) where this record carries no value. Extracted — amlodipine: CL/F 39.4 l h À1, V1 13.8 l, V2 14.2 l, Q 2.02 l h À1.
+The record reports amlodipine apparent clearance (CL/F 39.4 l/h), central volume (13.8 l), peripheral volume (14.2 l) and intercompartmental clearance (2.02 l/h), but the source gives no ka value, so a library default was used for ka and Tlag — an invented absorption not acceptable for publication. The model also assumes F=1 and Fm=1 with no molar correction, making all parameters apparent. A second reader additionally reported different values for two quantities where this record has none. Extracted — amlodipine: CL/F 39.4 l h À1, V1 13.8 l, V2 14.2 l, Q 2.02 l h À1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q38: this record has none, the second reading 12; it also differs on 1 more field. That field does not shape the model.
 

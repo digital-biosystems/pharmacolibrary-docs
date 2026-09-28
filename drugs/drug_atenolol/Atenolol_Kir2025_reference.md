@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The atenolol rat model fails to reproduce the paper's Cmax (0.025 vs 0.000285) and tmax (5 vs 1.81 min), and its absorption was invented: ka was defaulted because the paper never reported it.**
+**The atenolol model (Kir_2025, malnourished and non-malnourished rats) fails to reproduce the paper's Cmax (0.025 vs 0.000285) and tmax (5 vs 1.81), and its absorption rate was invented rather than reported, so it was held back.**
 
-Simulating the one-compartment atenolol model as the paper dosed it gives a peak concentration of 0.000285 against reported values of 0.025, 0.0228, 0.0206 and 0.0143, and a time of peak of 1.81 against the reported 5.0. The absorption rate constant ka was not reported in the source, so a default was substituted, along with defaults for F and Tlag, and the zero-order absorption constant (1.19 mg/min/kg) was flagged as an invented absorption, deemed not acceptable. A reported unit could not be converted to SI, so that parameter reached the model build without an SI value. A second reader also disagreed on whether the dosed compound and primary analyte were atenolol alone or atenolol with metoprolol. Extracted — atenolol: CL 16 mL/min/kg, kabs 1.19 mg/min/kg, V 1.41 L/kg.
+Simulated as the paper dosed it, the model's peak concentration for atenolol is 0.000285 against reported values of 0.025, 0.0228, 0.0143 and 0.0206 (ratios 0.0114–0.0199), and the time of the peak is 1.81 against 5.0 (ratio 0.362), both outside tolerance. The absorption rate constant was not reported in the source and was defaulted, which the adjudication deemed not acceptable; F and Tlag were likewise left at placeholder values for missing source values. One reported parameter unit could not be converted to SI, so that parameter entered the model without an SI value. A second reader disagreed on whether the analyte is atenolol alone or atenolol with metoprolol, and on whether the clearance (16.04), absorption rate (1.19) and volume of distribution (1.41) values belong to this record. Extracted — atenolol: CL 16 mL/min/kg, kabs 1.19 mg/min/kg, V 1.41 L/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atenolol, the second reading atenolol, metoprolol; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -141,7 +141,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_atenolol/Atenolol_Kir2025_reference/Atenolol_Kir2025_reference_modelica.zip" download>Atenolol_Kir2025_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_atenolol/Atenolol_Kir2025_reference/Atenolol_Kir2025_reference_modelica.zip" download>Atenolol_Kir2025_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_atenolol/Atenolol_Kir2025_reference/Atenolol_Kir2025_reference_fmi.zip" download>Atenolol_Kir2025_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_atenolol/Atenolol_Kir2025_reference/Atenolol_Kir2025_reference_matlab.zip" download>Atenolol_Kir2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_atenolol/Atenolol_Kir2025_reference/Atenolol_Kir2025_reference_matlab_simbio.zip" download>Atenolol_Kir2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>

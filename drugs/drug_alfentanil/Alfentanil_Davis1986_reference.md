@@ -15,13 +15,13 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 2.48, model 970); t6_deviations.**
+**The record is filed for alfentanil but its parameters (clearance 11.3 ml/min/kg, volumes 0.39 L/kg and 4.5 times bodyweight) belong to sufentanil, and the model's terminal half-life (969.8613172729558 h) fails to reproduce the paper's values, so it was held back.**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (V/F), so that value has no SI equivalent. None of the extracted parameters is alfentanil's own; they describe sufentanil. Extracted — sufentanil: CL 11.3 ml/min/kg, V 0.39 L/kg, V/F 4.5 times bodyweight.
+The measured compound is sufentanil while the drug is alfentanil, so the extracted clearance and volumes of distribution do not describe the record's molecule. The terminal half-life checks failed badly: the model gives 969.8613172729558 h against paper values of 2.4833333333333334 and 0.035 (ratios 390.5482 and 27710.3234), with the notes indicating a minutes-to-SI versus simulated-hours unit mismatch. The model builder also defaulted ka (absorption rate), Tlag, k12 and k21 because they were not reported, assumed F=1 and Fm=1 without molar correction, and used first-order depot input, and the invented absorption was judged not acceptable. A second reader disagreed on which apparent volume of distribution belongs to alfentanil (1.0 versus none in this record). Extracted — sufentanil: CL 11.3 ml/min/kg, V 0.39 L/kg, V/F 4.5 times bodyweight.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of alfentanil's apparent volume of distribution in adults: this record has none, the second reading 1.0; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Davis PJ; Cook DR et al. (1986). Clinical pharmacokinetics 11
@@ -155,7 +155,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_modelica.zip" download>Alfentanil_Davis1986_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_fmi.zip" download>Alfentanil_Davis1986_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_fmi.zip" download>Alfentanil_Davis1986_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_matlab.zip" download>Alfentanil_Davis1986_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_matlab_simbio.zip" download>Alfentanil_Davis1986_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_alfentanil/Alfentanil_Davis1986_reference/Alfentanil_Davis1986_reference_sbml.zip" download>Alfentanil_Davis1986_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the oxypurinol metabolite compartment is unlinked: it is declared with 0 compartments, so no dose of allopurinol can reach it via the Fm metabolism link.**
+**The allopurinol–oxypurinol parent–metabolite model was rejected because the oxypurinol metabolite compartment is unlinked from the dose, with no path from allopurinol despite a metabolism link via Fm.**
 
-The model is a parent–metabolite structure for allopurinol with oxypurinol as the measured compound, and a metabolism link (Fm) connects allopurinol to oxypurinol. However, the oxypurinol metabolite is specified with 0 compartments, leaving it without a path from the allopurinol dose — the reason for rejection. The parameter table is also internally inconsistent: the entry labelled 'peripheral volume; Q, inter-' carries value 28.9 under the name V2, and the entry labelled 'volume; F, bioavailability; ω,' carries value 0.148 under the name Fab, and a second reader returned null for both of these fields, disagreeing with the extracted values. A further second-reader disagreement concerns the primary analyte, with one reader recording oxypurinol and another allopurinol. Extracted — allopurinol: V2 28.9, Fab 0.148.
+The record describes allopurinol as parent and oxypurinol as measured metabolite, formed in the central compartment, but the metabolite has no compartment count (n_cmt 0) and the check flagged an unreachable compartment or unlinked metabolite, so oxypurinol cannot be reached from the administered allopurinol. The extracted parameters — peripheral volume of distribution V2 of 28.9 and absolute bioavailability Fab of 0.148 — were also disputed by a second reader, who read both values as null. A second reader further disagreed on the primary analyte, reading allopurinol rather than oxypurinol. Extracted — allopurinol: V2 28.9, Fab 0.148.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has allopurinol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

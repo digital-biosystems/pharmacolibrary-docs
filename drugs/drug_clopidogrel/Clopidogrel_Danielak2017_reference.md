@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Rejected because the clopidogrel oral clearance is recorded as 14500 L/h, a physiologically impossible magnitude, and the absorption-rate parameter k12 is given as a negative value (-0.087 1/h).**
+**The clopidogrel record was rejected because CL/F of 14500 L/h and V1/F of 7660 L are physiologically implausible, indicating a unit or scale extraction error.**
 
-The record lists CL/F for clopidogrel as 14500 L/h, far outside any plausible range for oral clearance and consistent with a unit or scale extraction error. The parameter labelled 'k12 and V2/F' carries the value -0.087, which is not admissible for a first-order rate constant. A second reader also disputed several values, reading CL/F as 13250 L/h, FM as 0.044 (absent in this record), k12 as 0.556 1/h, and Q2/F as 232 L/h (null here), and disagreed on whether the clopidogrel-to-H4 metabolism link exists. These conflicting readings leave the extracted parameter set unreliable. Extracted — clopidogrel: kabs 0.592 1/h, V1/F 7.66e+03 L, CL/F 1.45e+04 L/h, k12 -0.087; H4: fm 0.045, V1/F 4.89 L, Q/F 252 L/h.
+The clearance/volume check failed for clopidogrel: CL/F is recorded as 14500 L/h and central V1/F as 7660 L, magnitudes outside the physiological window and consistent with a unit or scale extraction error. The record also carries a negative k12 value of -0.087 1/h for the transfer from central to peripheral compartment, which is not a valid first-order rate constant. A second reader extracted different values for several parameters (e.g., CL/F 13250 L/h, k12 0.556 1/h, Q/F 232 L/h, fm 0.044), and disagreed on whether the clopidogrel-to-H4 metabolism link exists, so the extracted numbers are not consistently established. Extracted — clopidogrel: kabs 0.592 1/h, V1/F 7.66e+03 L, CL/F 1.45e+04 L/h, k12 -0.087; H4: fm 0.045, V1/F 4.89 L, Q/F 252 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has clopidogrel → h4 (metabolism), the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 

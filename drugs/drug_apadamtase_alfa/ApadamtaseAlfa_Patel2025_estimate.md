@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The two-compartment model for apadamtase alfa was rejected because one compartment has no dosing path, and the unbound fraction entry is inconsistent (label 0.204, value 14.7).**
+**The apadamtase alfa record was rejected because its two-compartment structure leaves a compartment unreachable from the dose, and the unbound fraction parameter is inconsistent: the label states 0.204 while the extracted value is 14.7.**
 
-The record describes a two-compartment structure for ADAMTS13 (CL 0.0398 L/h, V1 2.69 L, V2 3.71 L) in congenital thrombotic thrombocytopenic purpura patients, but the structure check found a compartment with no connection from the administered dose, so the model was refused. The unbound fraction parameter is also internally inconsistent: the label reads 'Proportional (Fraction): 0.204' while the extracted value is 14.7, which cannot both describe the same fraction. No other failed checks are recorded for this molecule. Extracted — apadamtase alfa: CL 0.0398, V1 2.69, V2 3.71, fu 14.7.
+The model for ADAMTS13 (apadamtase alfa) in patients with congenital thrombotic thrombocytopenic purpura is a two-compartment structure with clearance 0.0398 L/h, central volume 2.69 L and peripheral volume 3.71 L, but one compartment has no path from the dose, so the structure fails the connectivity check. The unbound fraction parameter carries the label 'Proportional (Fraction): 0.204' yet the recorded value is 14.7, a mismatch between the reported fraction and the extracted number. No other parameter discrepancies are reported. Extracted — apadamtase alfa: CL 0.0398, V1 2.69, V2 3.71, fu 14.7.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

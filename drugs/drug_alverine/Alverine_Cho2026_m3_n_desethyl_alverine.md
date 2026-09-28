@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The alverine mouse record was rejected because the paper reports no distribution volume and no clearance, and the M3 exposure values (Cmax 0.0021 μmol/L, tmax 0.7000 h) carry a μmol/L unit that could not be converted to SI, alongside a dimension mismatch on the structural metabolism rate constant Kfm.**
+**Rejected: the alverine record reports only exposure statistics (tmax 0.7 h, Cmax 0.0021 μmol/L, AUClast 0.0036 μmol·h/L, AUC ratio 0.0064 for M3) with no distribution volume and no clearance, so it is not a compartmental population PK model.**
 
-The record contains only exposure summary statistics for metabolite M3 (tmax 0.7000 h, Cmax 0.0021 μmol/L, AUClast 0.0036 μmol·h/L, AUC ratio 0.0064) with no distribution volume and no clearance or elimination rate, so it is not a compartmental population PK model but an exposure/outcome paper. The Cmax unit μmol/L could not be converted to SI units, so the parameter was carried without an SI value. A dimension mismatch was flagged on a structural parameter: the same metabolism rate constant Kfm is used for all three metabolic links (alverine to M1, alverine to M3, and M1 to M2). An orphan/unlinked-metabolite check was also raised, though its outcome is not quantified in the record. Extracted — M3: tmax 0.7 h, Cmax 0.0021 μmol/L, AUClast 0.0036 μmol·h/L, AUC ratio 0.0064 Metabolite/Parent.
+The paper reports no distribution volume and no clearance or elimination for alverine; it is an exposure/outcome paper, not a compartmental population PK model. The model structure also failed structural checks: a dimension mismatch on a structural parameter, and an unreachable compartment or unlinked metabolite — the metabolism chain links alverine to M1 and M3 and M1 to M2, leaving part of the structure without a path from the dose. Additionally, one reported parameter unit could not be converted to SI units, so that parameter was carried without a usable numeric value. Extracted — M3: tmax 0.7 h, Cmax 0.0021 μmol/L, AUClast 0.0036 μmol·h/L, AUC ratio 0.0064 Metabolite/Parent.
 
 Independently confirmed by `gpt-oss:120b`.
 

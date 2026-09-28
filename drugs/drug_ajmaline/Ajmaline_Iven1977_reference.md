@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The ajmaline record was rejected because its only extracted parameter, a distribution volume Vdbeta of 136 ml in mice, gives a clearance-to-volume ratio outside the physiological window, pointing to a unit or scale extraction error.**
+**The ajmaline record was rejected because the abstract-only volume of distribution Vdbeta of 136 ml is physiologically implausible for mice, indicating a unit or scale extraction error.**
 
-The record rests on abstract-only reading, so the reported summary statistic (Vdbeta = 136 ml for ajmaline in mice) stood in for a fitted model, and the clearance/volume check returned an implausible magnitude consistent with a unit or scale extraction error. A second reader disputed the extraction: it read the volume of distribution as null and instead assigned 136 to a separate Vdbeta field and a half-life-like parameter of 10, disagreeing with the single 136 ml value. The second reader also left the dosing-compartment and primary-analyte fields unresolved (unknown versus ajmaline), so the record's identity and parameter assignments were not consistently established. Extracted — ajmaline: V 136 ml.
+The record for ajmaline in mice was built from the paper's abstract alone, so summary statistics stood in for a fitted model. The extracted volume of distribution Vdbeta of 136 ml falls outside the physiological window for mice, and the rejection cites an implausible magnitude consistent with a unit or scale extraction error. A second reader also disagreed on several fields, reading a Vdbeta of 136 and a 'lasting' value of 10 where this record has null, and left the dose compound and primary analyte as unknown. Extracted — ajmaline: V 136 ml.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ajmaline, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

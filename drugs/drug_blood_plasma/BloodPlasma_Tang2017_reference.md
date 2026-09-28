@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record was held back because the absorption rate constant ka was not reported in the source and a default value was substituted, an invented absorption input the review deemed unacceptable.**
+**The record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside an invented lag time, for the Tang_2017 blood plasma model with CL/F 0.09 l/min/kg and V/F 18.96 l/kg.**
 
-The source reports only apparent parameters CL/F (0.09 l/min/kg) and V/F (18.96 l/kg) for blood plasma, implying extravascular dosing with F=1, Fm=1 and no molar correction. The absorption rate constant ka and the lag time Tlag were missing from the source, so library defaults were substituted, and the ka default counts as an invented absorption process — flagged as not acceptable. A second reader also disagreed on one value field, recording null where the record holds 67.34. Extracted — blood plasma: CL/F 0.09 l/min/kg, V/F 19 l/kg.
+The source reports only apparent oral parameters, CL/F 0.09 l/min/kg and V/F 18.96 l/kg for blood plasma; ka and Tlag are absent, so library defaults were used in their place, and the invented absorption was flagged as not acceptable. The model builder also assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent, and used first-order depot input consistent with extravascular dosing. A second reader disagreed on one value field, reading null where the record holds 67.34. Extracted — blood plasma: CL/F 0.09 l/min/kg, V/F 19 l/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q84: this record has 67.34, the second reading none. That field does not shape the model.
 
@@ -129,7 +129,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Tang2017_reference/BloodPlasma_Tang2017_reference_modelica.zip" download>BloodPlasma_Tang2017_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Tang2017_reference/BloodPlasma_Tang2017_reference_fmi.zip" download>BloodPlasma_Tang2017_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Tang2017_reference/BloodPlasma_Tang2017_reference_fmi.zip" download>BloodPlasma_Tang2017_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Tang2017_reference/BloodPlasma_Tang2017_reference_matlab.zip" download>BloodPlasma_Tang2017_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Tang2017_reference/BloodPlasma_Tang2017_reference_matlab_simbio.zip" download>BloodPlasma_Tang2017_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_blood_plasma/BloodPlasma_Tang2017_reference/BloodPlasma_Tang2017_reference_sbml.zip" download>BloodPlasma_Tang2017_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

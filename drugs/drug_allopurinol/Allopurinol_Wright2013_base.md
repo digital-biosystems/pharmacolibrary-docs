@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The allopurinol model was rejected because its metabolite oxypurinol has no compartment (0 compartments), leaving the formed metabolite unlinked, and the two extracted parameter values (28.9, 0.371) carry ambiguous labels.**
+**The allopurinol parent–metabolite record was rejected because oxypurinol is an unlinked metabolite: the metabolism link from allopurinol carries no usable value for the fraction-metabolized parameter Fm, leaving the metabolite without a quantitative path from the dose.**
 
-The record describes a parent–metabolite structure in which oxypurinol is formed from allopurinol via the metabolism link parameter Fm, yet the metabolite is assigned 0 compartments with only a nominal central site, so it has no path from the dose — the reason for rejection. The two extracted numbers are also mislabeled: 28.9 is listed under 'peripheral volume; Q, inter-' for the parameter named V2, and 0.371 under 'volume; F, bioavailability; ω' for the parameter named Fab, so neither value can be attributed to a single clear pharmacokinetic quantity. A second reader disagreed on which compound is the measured one (oxypurinol versus allopurinol) and on the dose compartment, and could not confirm either parameter value, leaving the parameter assignments inconclusive. Extracted — allopurinol: V2 28.9, Fab 0.371.
+The structure lists oxypurinol as formed from allopurinol in the central compartment, but the metabolism link's Fm parameter has kind 'unknown' and no value, so the metabolite formation is not quantified and the check for unreachable compartments or unlinked metabolites failed. The extracted parameters are otherwise plausible: a peripheral volume of distribution of 28.9 and an absolute bioavailability of 0.371, though the second reader recorded both as null, disagreeing on whether these values belong to the record. The readers also disagreed on whether the dosed compound is allopurinol and whether the primary analyte is oxypurinol or allopurinol. Extracted — allopurinol: V2 28.9, Fab 0.371.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has allopurinol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

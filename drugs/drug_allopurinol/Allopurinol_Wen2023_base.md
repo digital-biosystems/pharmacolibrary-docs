@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The record was held back because the oxypurinol absorption rate constant ka was not reported and a default was invented, and the ABCB2 covariate effects were never simulated.**
+**The allopurinol→oxypurinol model was held back because the builder invented an absorption rate (ka) not reported in the source, alongside defaulting Tlag and assuming F=1 and Fm=1.**
 
-The model builder substituted library defaults for the missing absorption parameters ka and Tlag, and assumed F=1, Fm=1 with no molar correction, giving an apparent (/F) parameterization for the extravascular first-order input. The invented absorption (defaulted ka, not reported in the source) was judged not acceptable. Additionally, although the record defines an ABCB2 covariate effect on oxypurinol clearance (AA 0.0, CA 0.0539, CC 0.0183), only the reference individual was simulated, so these covariate scenarios were not exercised. A second reader also disagreed on the parameter identifiers assigned to CL/Fm and V/Fm. Extracted — oxypurinol: CL/F 1 L/h, V/F 47.7 L, kfm 1.1 /h.
+The record reports oxypurinol parameters (CL/F 1 L/h, V/F 47.7 L, formation rate kfm 1.1 /h) from Wen_2023 in Hmong adults with gout/hyperuricemia, but the absorption rate constant ka and Tlag were not in the source and library defaults were substituted, which the adjudication judged unacceptable. Bioavailability was assumed to be 1 for both parent and metabolite with no molar correction, so all parameters are apparent. Additionally, the ABCB2 covariate effects (e.g., CA 0.0539, CC 0.0183) were defined but only the reference individual was simulated, so covariate scenarios were not exercised. A second reader also disagreed on the identifier assignments for the CL/F and V/F parameters. Extracted — oxypurinol: CL/F 1 L/h, V/F 47.7 L, kfm 1.1 /h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/fm].parameter_id`: this record has Q27, the second reading Q351; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

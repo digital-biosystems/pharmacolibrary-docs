@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The absorption rate constant kabs = 0.01347 for amlodipine was invented rather than taken from the Vlachou_2021 paper, so the record was held back for review.**
+**The amlodipine record was held back because the absorption rate constant kabs (0.01347) is an invented value rather than one reported in the paper.**
 
-The two-compartment amlodipine model for healthy adults carries fitted parameters (CL/F 370 ml/min, V1/F 1300 ml, Q/F 295 ml/min, V2/F 85800 ml, Kd 1.4954), but the 'estimated true absorption rate constant' kabs = 0.01347 is a deviation: the model builder assumed a value not reported in the source. This invented absorption parameter was judged not acceptable, and the record was therefore not published but flagged for review. Extracted — amlodipine: KD 1.5, CL/F 370 ml/min, V1/F 1.3e+03 ml, kabs 0.0135, Q/F 295 ml/min, V2/F 8.58e+04 ml.
+The two-compartment model for amlodipine in healthy adults carries otherwise plausible parameters (CL/F 370 ml/min, V1/F 1300 ml, Q/F 295 ml/min, V2/F 85800 ml, KD 1.4954). The flagged deviation is the 'estimated true absorption rate constant' kabs = 0.01347, which the model builder substituted instead of a value from the paper, and this invented absorption parameter was judged not acceptable. The record was therefore marked needs_review pending the deviations finding. Extracted — amlodipine: KD 1.5, CL/F 370 ml/min, V1/F 1.3e+03 ml, kabs 0.0135, Q/F 295 ml/min, V2/F 8.58e+04 ml.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The prednisolone dog model was rejected because its clearance (7.74 L/h) and volume (0.3 L) fall outside physiological windows, indicating a unit or scale extraction error, and the allometric exponent (3.13) conflicts with a second reader's value (−0.19).**
+**The prednisolone record was rejected because the reported clearance of 7.74 L/h and volume of distribution of 0.3 L fall outside physiological plausibility, indicating a unit or scale extraction error.**
 
-The record reports prednisolone clearance of 7.74 L/h (CL RBCs) and a volume of 0.3 L (V Glu1) in dogs, magnitudes judged physiologically implausible and consistent with a unit or scale extraction error. One reported unit could not be converted to SI, so that parameter reached the record without an SI value. The allometric exponent was read as 3.13 while a second reader obtained −0.19, and the second reader could not confirm the other parameter values (22.8, 7.74, 0.36 h, 0.3 L). Extracted — prednisolone: allometric_exponent 3.13 A, CL 7.74 L.hour À1, V 0.3 L, tlag 0.36 hour.
+The record for prednisolone in dogs lists clearance (CL RBCs) as 7.74 L/h and volume of distribution (V Glu1) as 0.3 L, magnitudes judged physiologically implausible and consistent with a unit/scale extraction error. The reported unit 'L.hour À1' could not be converted to SI, so the parameter reached the record without an SI value. A second reader also disagreed on the allometric exponent, reading -0.19 instead of the recorded 3.13, and left the clearance, volume, lag time (0.36 h) and equation variable (22.8) values unconfirmed. Extracted — prednisolone: allometric_exponent 3.13 A, CL 7.74 L.hour À1, V 0.3 L, tlag 0.36 hour.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of a: this record has 22.8, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

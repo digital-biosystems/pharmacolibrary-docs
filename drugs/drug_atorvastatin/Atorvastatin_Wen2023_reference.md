@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The atorvastatin model was held back because the absorption rate constant ka and lag time Tlag were not reported in the source, so placeholder values were substituted, and the invented first-order absorption was judged not acceptable.**
+**The atorvastatin record was held back because the absorption rate constant ka was not reported in the source and a value was invented for it, alongside unreported Tlag and an assumed F=1/Fm=1 apparent parameterization.**
 
-The record reports only CL/F = 1.05 L/h and V/F = 59.3 L for atorvastatin; ka and Tlag are absent from the source, so no values were extracted and library placeholder defaults were used instead. The builder further assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with a first-order depot input for extravascular dosing. The invented absorption — ka defaulted although not reported in the source — was adjudicated as not acceptable, which is why the model needs review. Extracted — atorvastatin: CL/F 1.05 L/h, V/F 59.3 L.
+The source reports only CL/F = 1.05 L/h and V/F = 59.3 L for atorvastatin; ka and Tlag were missing from the source, so placeholder values were substituted, and the invented absorption rate constant was judged not acceptable. The model builder also assumed F=1 and Fm=1 without molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. These deviations from the source are why the record needs review. Extracted — atorvastatin: CL/F 1.05 L/h, V/F 59.3 L.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

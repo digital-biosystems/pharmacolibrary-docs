@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The atomoxetine model was quarantined because clearance, volume of distribution, absorption rate constant and lag time had no source values and were left at library defaults, with an invented ka of 10.1.**
+**Atomoxetine's clearance, central volume, absorption rate constant and lag time had no extracted values, so library placeholder values stood in and the model was quarantined.**
 
-No value was extracted for atomoxetine's CL/F, V1/F, absorption rate constant or absorption lag time, so library placeholder values were substituted and the model was held back rather than published with invented numbers. The absorption rate constant 10.1 was defaulted, not reported in the source, and this invented absorption was judged not acceptable. The parameterization is apparent: F=1 and Fm=1 were assumed with no molar correction, so CL/F and V1/F are apparent values. A second reader reported CL/F 39.03, V1/F 175.94 and a third parameter 15.52 where this record has null, so the missing values are contested. Extracted — atomoxetine: kabs 10.1, E -0.81, Frel 3.02.
+The record lists kabs, V1/F and CL/F for atomoxetine without values; clearance, volume of distribution, ka and Tlag were left with no source value and placeholder numbers were used instead, and F=1 and Fm=1 were assumed with no molar correction. The defaulted absorption rate constant was judged not acceptable as an invented absorption. A second reader reported values absent from this record: ka 15.52, CL/F 39.03 and Vc/F 175.94, so the disagreement is unresolved. Extracted — atomoxetine: kabs 10.1, E -0.81, Frel 3.02.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 2: this record has none, the second reading 15.52; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The bisoprolol model was quarantined because its volume of distribution, absorption rate constant and absorption lag time had no extracted values, so library placeholder defaults stood in for these parameters.**
+**The bisoprolol model was quarantined because its volume of distribution, absorption rate constant and absorption lag time were not reported in the source, so placeholder values stood in for these parameters.**
 
-The record lists no source values for bisoprolol's volume of distribution, absorption rate constant or absorption lag time; placeholder values were substituted for all three, and the invented absorption (ka defaulted, not reported in the source) was judged not acceptable. The parameterization is apparent (F=1, Fm=1, no molar correction), giving CL/F of 6.45 L/h alongside a separate CL of 2.48, with first-order depot input implying extravascular dosing. A second reader also disagreed on which apparent-clearance entry carried the 6.45 L/h value, swapping the populated and empty parameter fields. Extracted — bisoprolol: CL/F 6.45 L/h, CL 2.48.
+The record carries only bisoprolol's apparent clearance (CL/F, 6.45 L/h) and clearance (2.48), while the volume of distribution, absorption rate constant and absorption lag time had no extracted value and were left at library placeholder defaults; the absorption rate constant was invented by defaulting rather than taken from the source. The model also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. A second reader disagreed on which of the two clearance entries corresponds to the apparent clearance, reading 6.45 as the apparent clearance where this record left that field null. Extracted — bisoprolol: CL/F 6.45 L/h, CL 2.48.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of apparent clearance: this record has none, the second reading 6.45; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The alogliptin record was rejected because the AUEC0–24 exposure parameter (72.8 %·hr) was reported in a unit that could not be expressed in SI, and the 2-compartment structure contains a compartment with no path from the dose.**
+**The alogliptin two-compartment model was rejected because its structure leaves a compartment unreachable from the dose, and the AUEC0–24 value of 72.8 %·hr could not be expressed in SI units.**
 
-The reported AUEC0–24 for alogliptin is 72.8 %·hr, a percentage-based unit that could not be converted to SI, so this exposure parameter was carried without an SI value. The rejection also cites an unreachable or orphan compartment in the 2-compartment structure, meaning part of the model has no path from the administered dose. A second reader left the AUEC0–24 (72.8 %·hr) and time to Emax (92.7 hr) values blank, and instead read a different time-to-Emax entry as 1704.016 hr where the record holds none, so these extractions are inconclusive. Extracted — alogliptin: tmax 92.7 hr, AUCt 72.8 %·hr, AUC∞ 15.1 ng·hr./mL, CL/F 421 L/hr, V/F 19.3 L, t1/2z 11.4 hr, CLR 60.1 L/hr, V2/F 27.6 L.
+The model structure for alogliptin contains an unreachable compartment, i.e. a compartment with no path from the administered dose, which is why the record was refused. The reported AUEC0–24 of 72.8 %·hr uses a unit for which no SI equivalent exists, so this parameter had no SI value. The second reader also disagreed on two time-to-Emax entries: this record gives 92.7 hr where the second reader read null, and gives null where the second reader read 1704.016 hr. Extracted — alogliptin: tmax 92.7 hr, AUCt 72.8 %·hr, AUC∞ 15.1 ng·hr./mL, CL/F 421 L/hr, V/F 19.3 L, t1/2z 11.4 hr, CLR 60.1 L/hr, V2/F 27.6 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auec0-24: this record has 72.8, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
