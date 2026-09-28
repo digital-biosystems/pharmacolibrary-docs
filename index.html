@@ -116,6 +116,15 @@
     .pks-chip .x:hover { color: #b91c1c; }
     .pks-controls label { display: inline-flex; gap: 5px; align-items: center; cursor: pointer; }
     .pks-sex { gap: 6px; }
+    .pks-pgxrow select { font: inherit; font-size: 13px; padding: 4px 6px; max-width: 320px; }
+    .pks-pgxchip { background: #eef2ff; }
+    .pks-pgxm { position: absolute; right: 1px; top: -1px; font-size: 10px; line-height: 1; color: #111827; }
+    .pks-hm td { position: relative; }
+    .pks-body .pgxm { font-size: 10px; fill: #111827; }
+    table.pks-pgx { border-collapse: collapse; font-size: 13px; }
+    table.pks-pgx th, table.pks-pgx td { border-bottom: 1px solid #e2e8f0; padding: 6px 8px; vertical-align: top; text-align: left; }
+    table.pks-pgx td i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; }
+    .pks-gl { margin-bottom: 4px; } .pks-glsrc { font-size: 11px; font-weight: 600; background: #e2e8f0; border-radius: 3px; padding: 0 4px; }
     .pks-sexbtn[aria-pressed="true"] { background: #1e293b; color: #fff; border-color: #1e293b; }
     .pks-controls input[type=checkbox] { min-width: 0; width: auto; margin: 0; }
     .pks-evkey { display: flex; gap: 12px; flex-wrap: wrap; font-size: 12px; color: #475569; margin: 6px 0 4px; }
@@ -734,6 +743,38 @@
       // the anatomogram's body: #/sites?…&sex=male in a shared link, else this viewer's last
       // choice (localStorage, a per-viewer convenience), else female
       var SEX = 'female';
+      // the patient's pharmacogene phenotypes: [{gene, code}] — in the share link only
+      // (#/sites?…&pgx=CYP2C19:PM), never stored in the browser or sent anywhere
+      var PGX = [], PGXGENES = [];
+      function pgxFromHash() {
+        var m = /[?&]pgx=([^&]+)/.exec(location.hash || '');
+        if (!m) return [];
+        return m[1].split(',').map(function (x) {
+          var t = decodeURIComponent(x), i = t.indexOf(':');
+          return i > 0 ? { gene: t.slice(0, i), code: t.slice(i + 1) } : null;
+        }).filter(Boolean);
+      }
+      function pgxPanel() {
+        var gs = el('pks-pgx-gene'), ps = el('pks-pgx-pheno'), ch = el('pks-pgx-chips');
+        if (!gs || !ps || !window.pkSites) return;
+        PGXGENES = pkSites.pgxGenes(DB, SEL);
+        var cur = gs.value;
+        gs.innerHTML = PGXGENES.map(function (g) { return '<option value="' + pkSites.esc(g.gene) + '">' + pkSites.esc(g.gene) + (g.rank === 0 ? ' — guideline' : '') + '</option>'; }).join('') ||
+                       '<option value="">no pharmacogene for this set</option>';
+        if (cur && PGXGENES.some(function (g) { return g.gene === cur; })) gs.value = cur;
+        pgxPhenos();
+        if (ch) ch.innerHTML = PGX.map(function (p) {
+          var g = PGXGENES.filter(function (z) { return z.gene === p.gene; })[0];
+          var lab = g ? (g.phenos.filter(function (z) { return z.code === p.code; })[0] || {}).label : null;
+          return '<span class="pks-chip pks-pgxchip"><b>' + pkSites.esc(p.gene) + '</b> ' + pkSites.esc(lab || p.code) +
+                 '<span class="x" title="remove" data-pgxrm="' + pkSites.esc(p.gene) + '">×</span></span>';
+        }).join('');
+      }
+      function pgxPhenos() {
+        var gs = el('pks-pgx-gene'), ps = el('pks-pgx-pheno'); if (!gs || !ps) return;
+        var g = PGXGENES.filter(function (z) { return z.gene === gs.value; })[0];
+        ps.innerHTML = g ? g.phenos.map(function (p) { return '<option value="' + pkSites.esc(p.code) + '">' + pkSites.esc(p.label.length > 70 ? p.label.slice(0, 70) + '…' : p.label) + '</option>'; }).join('') : '';
+      }
       function sexFromHash() { var m = /[?&]sex=(male|female)\b/.exec(location.hash || ''); return m ? m[1] : null; }
       function savedSex() { try { return localStorage.getItem('pks-sex'); } catch (e) { return null; } }
       function sexButtons() {
@@ -766,6 +807,7 @@
         var q = [];
         if (SEL.length) q.push('drugs=' + SEL.map(function (d) { return encodeURIComponent(d.slug); }).join(','));
         if (SEX === 'male') q.push('sex=male');
+        if (PGX.length) q.push('pgx=' + PGX.map(function (p) { return encodeURIComponent(p.gene + ':' + p.code); }).join(','));
         var h = q.length ? base + '?' + q.join('&') : base;
         if (location.hash !== h) history.replaceState(null, '', h);
       }
@@ -781,10 +823,11 @@
         if (!DB || !window.pkSites) return;
         chips(); writeHash();
         var root = el('pk-sites'); if (!root) return;
-        MODEL = pkSites.compute(DB, SEL, { text: (el('pks-text') || {}).checked !== false });
+        MODEL = pkSites.compute(DB, SEL, { text: (el('pks-text') || {}).checked !== false, pgx: PGX });
+        pgxPanel();
         var det = root.querySelector('.pks-detailbox'); if (det) delete det.dataset.pin;
         sexButtons();
-        pkSites.render(root, MODEL, { focus: focus, ddi: (el('pks-ddi') || {}).checked !== false, sex: SEX });
+        pkSites.render(root, MODEL, { focus: focus, ddi: (el('pks-ddi') || {}).checked !== false, sex: SEX, pgx: PGX });
         var m = el('pks-meta'); if (m) m.textContent = MODEL.rows.length + ' site row(s), ' + MODEL.affected.length + ' affected-site row(s)';
       }
       function add(slug) {
@@ -799,6 +842,7 @@
           status('');
           el('pks-ui').hidden = false;
           SEX = sexFromHash() || (savedSex() === 'male' ? 'male' : 'female');
+          PGX = pgxFromHash();
           var want = slugsFromHash();
           if (want.length) { SEL = pkSites.resolve(DB, want); }
           else if (!SEL.length) { SEL = pkSites.resolve(DB, ['tolvaptan', 'telmisartan', 'hydrochlorothiazide', 'cilazapril', 'allopurinol']); }
@@ -828,6 +872,12 @@
           var b = t.closest && t.closest('button[data-add]');
           if (b) { add(b.dataset.add); var p = el('pks-pick'); if (p) p.value = ''; el('pks-results').innerHTML = ''; return; }
           if (t.dataset && t.dataset.rm) { SEL = SEL.filter(function (d) { return d.slug !== t.dataset.rm; }); if (focus === t.dataset.rm) focus = null; draw(); ev.stopPropagation(); return; }
+          if (t.id === 'pks-pgx-add') {
+            var g = (el('pks-pgx-gene') || {}).value, c = (el('pks-pgx-pheno') || {}).value;
+            if (g && c) { PGX = PGX.filter(function (p) { return p.gene !== g; }).concat([{ gene: g, code: c }]); draw(); }
+            return;
+          }
+          if (t.dataset && t.dataset.pgxrm) { PGX = PGX.filter(function (p) { return p.gene !== t.dataset.pgxrm; }); draw(); return; }
           var sb = t.closest && t.closest('.pks-sexbtn');
           if (sb) { SEX = sb.dataset.sex === 'male' ? 'male' : 'female'; try { localStorage.setItem('pks-sex', SEX); } catch (e) {} draw(); return; }
           var c = t.closest && t.closest('.pks-chip');
@@ -840,6 +890,7 @@
         });
         document.addEventListener('change', function (ev) {
           var t = ev.target; if (t && (t.id === 'pks-ddi' || t.id === 'pks-text')) draw();
+          if (t && t.id === 'pks-pgx-gene') pgxPhenos();
         });
         document.addEventListener('dblclick', function (ev) {
           var d = ev.target.closest && ev.target.closest('.pks-detailbox');

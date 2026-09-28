@@ -11,7 +11,8 @@
   var PROC = ['absorption', 'distribution', 'metabolism', 'excretion'];
   var TISSUES = ['small intestine', 'liver', 'bile duct', 'kidney', 'blood', 'blood-brain barrier',
                  'brain', 'placenta', 'mammary gland', 'lung', 'skin', 'skeletal muscle', 'adipose tissue',
-                 'stomach', 'ileum', 'heart', 'adrenal gland', 'platelet', 'ovary', 'neuromuscular junction'];
+                 'stomach', 'ileum', 'heart', 'adrenal gland', 'platelet', 'ovary', 'testis', 'prostate gland',
+                 'neuromuscular junction'];
   var W = { drugbank_actor: 3, paper_pgx: 2, drugbank_text: 1 };
   var COLORS = ['#2a78d6', '#eb6834', '#1baf7a', '#eda100', '#e87ba4', '#008300', '#4a3aa7', '#e34948'];
   var MAX = 8;
@@ -99,7 +100,81 @@
         }
       }
     });
-    return { drugs: drugs, rows: rows, shared: shared, affected: affected, sites: sites };
+    return { drugs: drugs, rows: rows, shared: shared, affected: affected, sites: sites,
+             pgx: (opts.pgx && opts.pgx.length) ? pgxEffects(db, drugs, opts.pgx) : [] };
+  }
+
+  // ── patient pharmacogenes ───────────────────────────────────────────────────────────────
+  // A phenotype belongs to the patient, so it applies to every drug of the set. Mirrors
+  // pk_knowledge_scripts.pgx_phenotypes: one activity axis (UM +2 … PM −2); the drug's
+  // relation to the gene decides the direction — the gene FORMS its active metabolite (a
+  // prodrug; from the KB's PGx records) or CLEARS it (a paper's metabolism/transport record,
+  // else a DrugBank 'substrate' of a metabolizer/transporter gene). A target or safety gene
+  // has no direction: its guideline row is the answer. Nothing here leaves the browser.
+  var ACT = { UM: 2, RM: 1, NM: 0, IM: -1, PM: -2 };
+  function pgxDirection(code, relation) {
+    var a = ACT[code];
+    if (a === undefined || (relation !== 'formation' && relation !== 'clearance')) return null;
+    if (a === 0) return { sign: 0, words: 'reference activity' };
+    // a formation gene: the parent moves one way, the active metabolite the other
+    if (relation === 'formation') return { sign: a > 0 ? -1 : 1, both: true, words: a > 0 ? 'exposure \u2193 \u00b7 active metabolite \u2191' : 'exposure \u2191 \u00b7 active metabolite \u2193' };
+    return { sign: a > 0 ? -1 : 1, words: a > 0 ? 'exposure \u2193' : 'exposure \u2191' };
+  }
+  function inList(n) { return '(' + new Array(n + 1).join('?,').slice(0, -1) + ')'; }
+  function safeQ(db, sql, params) { try { return q(db, sql, params); } catch (e) { return []; } }
+  // genes a phenotype can be chosen for, most relevant to THIS set first: a guideline or a
+  // paper relation for one of its drugs, then any gene one of them is a substrate of
+  function pgxGenes(db, drugs) {
+    var slugs = drugs.map(function (d) { return d.slug; });
+    if (!slugs.length) return [];
+    var rank = {};
+    safeQ(db, 'SELECT DISTINCT gene FROM adme_pgx_guideline WHERE drug_slug IN ' + inList(slugs.length), slugs).forEach(function (r) { rank[r.gene] = 0; });
+    safeQ(db, 'SELECT DISTINCT gene FROM adme_pgx_relation WHERE drug_slug IN ' + inList(slugs.length), slugs).forEach(function (r) { if (!(r.gene in rank)) rank[r.gene] = 1; });
+    safeQ(db, "SELECT DISTINCT gene FROM adme_actor WHERE role = 'substrate' AND drug_slug IN " + inList(slugs.length), slugs).forEach(function (r) { if (!(r.gene in rank)) rank[r.gene] = 2; });
+    var out = [];
+    Object.keys(rank).forEach(function (g) {
+      var ph = safeQ(db, 'SELECT code, label, activity, kind FROM adme_phenotype WHERE gene = ? ORDER BY activity DESC, label', [g]);
+      if (ph.length) out.push({ gene: g, rank: rank[g], kind: ph[0].kind, phenos: ph });
+    });
+    return out.sort(function (a, b) { return a.rank - b.rank || a.gene.localeCompare(b.gene); });
+  }
+  function pgxEffects(db, drugs, sel) {
+    var out = [];
+    drugs.forEach(function (d) {
+      sel.forEach(function (s) {
+        var ph = safeQ(db, 'SELECT label, activity, kind FROM adme_phenotype WHERE gene = ? AND code = ?', [s.gene, s.code])[0] || {};
+        var rel = (safeQ(db, 'SELECT relation FROM adme_pgx_relation WHERE drug_slug = ? AND gene = ?', [d.slug, s.gene])[0] || {}).relation || null;
+        var sub = (ph.kind === 'metabolizer' || ph.kind === 'transporter') &&
+            safeQ(db, "SELECT 1 FROM adme_actor WHERE drug_slug = ? AND gene = ? AND role = 'substrate' LIMIT 1", [d.slug, s.gene]).length > 0;
+        var gl = safeQ(db, 'SELECT label, source, guideline_id, recommendation, avoid FROM adme_pgx_guideline WHERE drug_slug = ? AND gene = ? AND code = ?', [d.slug, s.gene, s.code]);
+        var ef = safeQ(db, 'SELECT parameter, form, theta, stem, page, doi FROM adme_pgx_effect WHERE drug_slug = ? AND gene = ? AND code = ?', [d.slug, s.gene, s.code]);
+        // a paper's 'clears' call alone is an evidence_only LLM reading (simvastatin–CYP2D6):
+        // it counts when DrugBank, a guideline or a paper effect size supports the pair
+        if (rel === 'clearance' && !sub && !gl.length && !ef.length) rel = null;
+        var how = rel === 'formation' ? 'guideline' : rel ? (sub ? 'drugbank' : 'paper') : null;
+        if (!rel && sub) { rel = 'clearance'; how = 'drugbank'; }
+        if (!rel && !gl.length && !ef.length) return;
+        out.push({ drug: d.slug, gene: s.gene, code: s.code, label: ph.label || s.code, relation: rel, relationFrom: how,
+                   dir: pgxDirection(s.code, rel), guidelines: gl, effects: ef });
+      });
+    });
+    return out;
+  }
+  // ▲/▼ where a chosen phenotype acts on this drug at this site (the gene is one of the
+  // site's actors for the drug)
+  function pgxAt(M, slug, tissue, proc) {
+    return (M.pgx || []).filter(function (e) {
+      return e.drug === slug && e.dir && e.dir.sign && M.rows.some(function (r) {
+        return r.drug === slug && r.actor === e.gene && r.tissue === tissue && (!proc || r.process === proc); });
+    });
+  }
+  function pgxGlyph(hits) {
+    if (!hits.length) return '';
+    var up = hits.some(function (e) { return e.dir.sign > 0 || e.dir.both; }), down = hits.some(function (e) { return e.dir.sign < 0 || e.dir.both; });
+    return (up ? '\u25B2' : '') + (down ? '\u25BC' : '');
+  }
+  function pgxTitle(M, hits) {
+    return hits.map(function (e) { return nameOf(M, e.drug) + ': ' + e.gene + ' ' + e.label + ' \u2192 ' + e.dir.words; }).join('; ');
   }
   function cellOf(M, slug, proc, tissue) {
     var rs = M.rows.filter(function (r) { return r.drug === slug && r.process === proc && r.tissue === tissue; });
@@ -185,7 +260,8 @@
       h += '<tr' + (focus && focus !== d.slug ? ' class="dim"' : '') + '><th class="drug"><i style="background:' + COLORS[di] + '"></i>' + esc(d.name) + (showDDI ? partnerCodes(M, d.slug) : '') + '</th>';
       cols.forEach(function (c, k) {
         var cl = cellOf(M, d.slug, c[0], c[1]); var aff = showDDI ? affectedAt(M, d.slug, c[0], c[1]) : [];
-        h += '<td class="e' + cl.w + (aff.length ? ' aff' : '') + '" tabindex="0" data-d="' + esc(d.slug) + '" data-p="' + esc(c[0]) + '" data-t="' + esc(c[1]) + '" aria-label="' + esc(d.name + ' ' + c[0] + ' ' + c[1] + ' tier ' + cl.w) + '">' + perpDots(M, aff) + '</td>';
+        h += '<td class="e' + cl.w + (aff.length ? ' aff' : '') + '" tabindex="0" data-d="' + esc(d.slug) + '" data-p="' + esc(c[0]) + '" data-t="' + esc(c[1]) + '" aria-label="' + esc(d.name + ' ' + c[0] + ' ' + c[1] + ' tier ' + cl.w) + '">' + perpDots(M, aff) +
+          (function (hits) { return hits.length ? '<span class="pks-pgxm" title="' + esc(pgxTitle(M, hits)) + '">' + pgxGlyph(hits) + '</span>' : ''; })(pgxAt(M, d.slug, c[1], c[0])) + '</td>';
         if (k + 1 < cols.length && cols[k + 1][0] !== c[0]) h += '<td class="gap"></td>';
       });
       h += '</tr>';
@@ -304,7 +380,8 @@
         var x = x0 + i * step, dim = focus && focus !== d.slug ? ' dim' : '';
         slots.push('<g class="slotg" data-d="' + esc(d.slug) + '" data-t="' + esc(o.t) + '"><rect class="slot e' + w + dim + '" x="' + x + '" y="' + y + '" width="' + wid + '" height="14" rx="3"/>' +
           (aff.length ? '<rect class="aff" x="' + (x - 2) + '" y="' + (y - 2) + '" width="' + (wid + 4) + '" height="18" rx="4"/>' : '') +
-          '<text x="' + (x + wid / 2) + '" y="' + (y + 10.5) + '" text-anchor="middle" class="cd' + (w >= 2 ? ' on' : '') + '">' + esc(n > 5 ? code(d.name)[0] : code(d.name)) + '</text></g>');
+          '<text x="' + (x + wid / 2) + '" y="' + (y + 10.5) + '" text-anchor="middle" class="cd' + (w >= 2 ? ' on' : '') + '">' + esc(n > 5 ? code(d.name)[0] : code(d.name)) + '</text>' +
+          (function (hits) { return hits.length ? '<text class="pgxm" x="' + (x + wid / 2) + '" y="' + (y + 23) + '" text-anchor="middle"><title>' + esc(pgxTitle(M, hits)) + '</title>' + pgxGlyph(hits) + '</text>' : ''; })(pgxAt(M, d.slug, o.t, null)) + '</g>');
         // focus: perpetrator → victim arrows between the two drugs' slots of the same organ row
         if (showDDI && focus && aff.length && (focus === d.slug || aff.some(function (a) { return a.perpetrator === focus; }))) {
           aff.forEach(function (a) { if (focus !== d.slug && focus !== a.perpetrator) return;
@@ -432,6 +509,35 @@
     root.innerHTML = '<div class="pks-scroll">' + h + '</table></div><p class="pks-meta">\u22A3 inhibits the actor \u00b7 \u2191 induces it; the column drug is that actor\u2019s substrate. Hover a cell for the tissue.</p>';
   }
 
+  // "Pharmacogenomics for this patient": per drug and chosen phenotype — the direction, a
+  // paper's effect size for that phenotype, and the guideline's own row for it.
+  function renderPgx(root, M, opts) {
+    var sel = opts.pgx || [];
+    if (!sel.length) { root.innerHTML = '<p class="pks-empty">Add the patient\u2019s pharmacogene phenotypes above (e.g. CYP2C19 poor metabolizer) to see what they change for each drug of the set.</p>'; return; }
+    if (!M.pgx.length) { root.innerHTML = '<p class="pks-empty">No drug of this set has a known relation, guideline or paper effect for the chosen phenotype(s).</p>'; return; }
+    var slugs = M.drugs.map(function (d) { return d.slug; });
+    var h = '<table class="pks-pgx"><tr><th>drug</th><th>gene \u00b7 phenotype</th><th>effect</th><th>from papers</th><th>guideline</th></tr>';
+    M.pgx.forEach(function (e) {
+      var i = slugs.indexOf(e.drug);
+      var eff = e.dir ? (e.dir.sign ? '<b>' + (e.dir.both ? '\u25B2\u25BC ' : e.dir.sign > 0 ? '\u25B2 ' : '\u25BC ') + esc(e.dir.words) + '</b>' : esc(e.dir.words)) :
+                (ACT[e.code] === undefined ? '<span class="pkq-meta">no PK axis \u2014 see the guideline</span>' : '<span class="pkq-meta">no known PK role of ' + esc(e.gene) + ' for this drug</span>');
+      if (e.relation) eff += '<br><span class="pkq-meta">' + esc(e.gene) + (e.relation === 'formation' ? ' forms an active metabolite (guideline)' : ' clears / transports the drug (' + (e.relationFrom === 'paper' ? 'PGx papers' : 'DrugBank substrate') + ')') + '</span>';
+      var pap = e.effects.map(function (x) {
+        var v = x.form === 'categorical_fractional' ? esc(x.parameter || 'parameter') + ' \u00d7' + (1 + x.theta).toFixed(2) : esc(x.parameter || 'parameter') + ' \u03b8 ' + x.theta;
+        return v + ' <span class="pkq-meta">' + (x.page ? '<a href="#/' + esc(x.page.replace(/\.md$/, '')) + '">' + esc(x.stem) + '</a>' : esc(x.stem)) +
+               (x.doi ? ' <a href="https://doi.org/' + esc(x.doi) + '" target="_blank" rel="noopener">doi</a>' : '') + '</span>';
+      }).join('<br>') || '<span class="pkq-meta">\u2014</span>';
+      var gl = e.guidelines.map(function (g) {
+        var t = g.recommendation || '';
+        return '<div class="pks-gl"><span class="pks-glsrc">' + esc(g.source || '') + '</span>' + (g.avoid ? ' <b class="warn">alternative / avoid</b>' : '') +
+               ' <span title="' + esc(t) + '">' + esc(t.length > 260 ? t.slice(0, 260) + '\u2026' : t) + '</span>' +
+               (g.guideline_id ? ' <a href="https://www.clinpgx.org/guidelineAnnotation/' + esc(g.guideline_id) + '" target="_blank" rel="noopener">' + esc(g.guideline_id) + '</a>' : '') + '</div>';
+      }).join('') || '<span class="pkq-meta">\u2014</span>';
+      h += '<tr><td><i style="background:' + COLORS[i] + '"></i>' + esc(nameOf(M, e.drug)) + '</td><td class="mono">' + esc(e.gene) + '<br><span class="pkq-meta">' + esc(e.label) + '</span></td><td>' + eff + '</td><td>' + pap + '</td><td>' + gl + '</td></tr>';
+    });
+    root.innerHTML = '<div class="pks-scroll">' + h + '</table></div><p class="pkq-meta">\u25B2/\u25BC mark the same direction on the heat-map cells and anatomogram slots where the gene acts. Guideline text is quoted from CPIC/DPWG via ClinPGx \u2014 read the guideline before a clinical decision. The phenotypes stay in this page\u2019s link; nothing is stored or sent.</p>';
+  }
+
   function renderShared(root, M) {
     var order = { ddi_candidate: 0, shared_substrate: 1, shared: 2 };
     var list = M.shared.slice().sort(function (a, b) { return (order[a.kind] - order[b.kind]) || a.actor.localeCompare(b.actor); });
@@ -482,9 +588,11 @@
     if (det && !det.dataset.pin && M.drugs.length) renderDetail(det, M, opts.focus || M.drugs[0].slug, null, false);
     var ddi = root.querySelector('.pks-ddi-box');
     if (ddi) renderDdi(ddi, M, opts);
+    var pg = root.querySelector('.pks-pgx-box');
+    if (pg) renderPgx(pg, M, opts);
     if (sh) renderShared(sh, M);
     if (tb) renderTable(tb, M);
   }
 
-  window.pkSites = { search: search, resolve: resolve, compute: compute, render: render, COLORS: COLORS, MAX: MAX, code: code, esc: esc };
+  window.pkSites = { search: search, resolve: resolve, compute: compute, render: render, pgxGenes: pgxGenes, COLORS: COLORS, MAX: MAX, code: code, esc: esc };
 })();

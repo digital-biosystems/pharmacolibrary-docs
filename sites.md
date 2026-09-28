@@ -17,6 +17,13 @@ DrugBank's curated actors + a tissue table), downloaded once; nothing is sent an
     </p>
     <div id="pks-results" class="pks-results"></div>
     <div id="pks-chips" class="pks-chips" role="group" aria-label="selected drugs"></div>
+    <p class="pkq-row pks-pgxrow">
+      <label for="pks-pgx-gene">patient pharmacogene</label>
+      <select id="pks-pgx-gene" aria-label="gene"></select>
+      <select id="pks-pgx-pheno" aria-label="phenotype"></select>
+      <button type="button" class="pkq-btn" id="pks-pgx-add">add phenotype</button>
+      <span id="pks-pgx-chips" class="pks-chips" role="group" aria-label="patient phenotypes"></span>
+    </p>
     <p class="pkq-row pks-controls">
       <label><input type="checkbox" id="pks-ddi" checked> co-administration layer</label>
       <label><input type="checkbox" id="pks-text" checked> include prose-only sites</label>
@@ -29,6 +36,9 @@ DrugBank's curated actors + a tissue table), downloaded once; nothing is sent an
     <h2>Who affects whom</h2>
     <p class="pkq-meta">Rows are perpetrators, columns victims: the cell names the enzyme or transporter through which the row drug can change the column drug's exposure (⊣ inhibits, ↑ induces; the column drug is its substrate). The same pairs are marked on the heat-map row labels — ⇠ the drugs that affect this one, ⇢ the drugs it affects.</p>
     <div class="pks-ddi-box"></div>
+    <h2>Pharmacogenomics for this patient</h2>
+    <p class="pkq-meta">A phenotype belongs to the patient, so it applies to every drug of the set. Per drug: the direction (▲ exposure or active metabolite up, ▼ down) from how the gene acts on it — forming an active metabolite (read from the CPIC / DPWG guideline's own wording — both the parent's exposure and the metabolite then move) or clearing it (a DrugBank substrate, or a paper's metabolism/transport record backed by DrugBank, a guideline or a paper effect size) — the size of the effect where a paper reports it for that phenotype, and the CPIC / DPWG guideline's own row for it.</p>
+    <div class="pks-pgx-box"></div>
     <h2>Anatomogram</h2>
     <p class="pkq-row pks-sex" role="group" aria-label="body shown">
       <button type="button" class="pkq-btn pks-sexbtn" data-sex="female" aria-pressed="true">♀ female</button>
