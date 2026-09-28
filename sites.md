@@ -22,8 +22,11 @@ DrugBank's curated actors + a tissue table), downloaded once; nothing is sent an
       <select id="pks-pgx-gene" aria-label="gene"></select>
       <select id="pks-pgx-pheno" aria-label="phenotype"></select>
       <button type="button" class="pkq-btn" id="pks-pgx-add">add phenotype</button>
+      <label class="pkq-btn pks-filebtn" for="pks-pharmcat" title="PharmCAT report.json, phenotype.json or the calls-only report.tsv — read in your browser, never uploaded">import PharmCAT report</label>
+      <input type="file" id="pks-pharmcat" accept=".json,.tsv,.txt,application/json,text/tab-separated-values" hidden>
       <span id="pks-pgx-chips" class="pks-chips" role="group" aria-label="patient phenotypes"></span>
     </p>
+    <p id="pks-pgx-note" class="pkq-meta" hidden></p>
     <p class="pkq-row pks-controls">
       <label><input type="checkbox" id="pks-ddi" checked> co-administration layer</label>
       <label><input type="checkbox" id="pks-text" checked> include prose-only sites</label>

@@ -160,6 +160,87 @@
     });
     return out;
   }
+  // ── PharmCAT import ─────────────────────────────────────────────────────────────────────
+  // A PharmCAT result read IN THE BROWSER (FileReader — nothing is uploaded): report.json
+  // (v3: genes.GENE.recommendationDiplotypes[].phenotypes; v2: genes.CPIC|DPWG.GENE…),
+  // the Phenotyper's phenotype.json (geneReports.CPIC|DPWG.GENE…), the calls-only report.tsv
+  // (Gene … Phenotype columns), or a reduced {genes: {GENE: {phenotype}}}. Only the
+  // NON-normal phenotypes are kept: normal, indeterminate, no result, uncertain and n/a are
+  // skipped, and a gene whose diplotypes disagree is reported, not guessed.
+  var PHENO_RE = [
+    [/ultra[- ]?rapid/i, 'UM'], [/\brapid metaboli/i, 'RM'], [/\b(?:normal|extensive) metaboli/i, 'NM'],
+    [/\bintermediate metaboli/i, 'IM'], [/\bpoor metaboli/i, 'PM'], [/\bincreased function/i, 'UM'],
+    [/\bnormal function/i, 'NM'], [/\bdecreased function/i, 'IM'], [/\b(?:poor|no) function/i, 'PM']];
+  // normal / uninformative calls, including the gene-specific normals: VKORC1 -1639 GG (normal
+  // sensitivity), CFTR 'ivacaftor non-responsive' (no ivacaftor-responsive variant)
+  var SKIP_RE = /^(?:normal|normal function|normal metaboli[sz]er|indeterminate|no result|n\/a|na|uncertain susceptibility|unknown|not called|negative|.*\bnegative|-1639 GG|.*non-responsive.*)$/i;
+  function phenoCode(text) {
+    for (var i = 0; i < PHENO_RE.length; i++) if (PHENO_RE[i][0].test(text)) return PHENO_RE[i][1];
+    return null;
+  }
+  function pharmcatCalls(text) {
+    var calls = {};               // gene -> {phenos: Set, diplotypes: Set}
+    function add(gene, phenos, dip) {
+      if (!gene) return;
+      var c = calls[gene] = calls[gene] || { phenos: {}, dips: {} };
+      (phenos || []).forEach(function (p) { if (p != null && String(p).trim()) c.phenos[String(p).trim()] = 1; });
+      if (dip) c.dips[dip] = 1;
+    }
+    function fromGeneObj(gene, g) {
+      var ds = (g && (g.recommendationDiplotypes || g.sourceDiplotypes)) || [];
+      if (ds.length) ds.forEach(function (d) { add(gene, d.phenotypes || [], d.label || ''); });
+      else if (g && (g.phenotype || g.phenotypes)) add(gene, [].concat(g.phenotype || g.phenotypes), g.label || '');
+    }
+    var meta = { format: '', version: '' }, j = null;
+    try { j = JSON.parse(text); } catch (e) { j = null; }
+    if (j && typeof j === 'object') {
+      meta.version = j.pharmcatVersion || '';
+      var genes = j.genes || (j.geneReports) || {};
+      var bySource = ['CPIC', 'DPWG', 'FDA'].some(function (k) { return genes[k] && typeof genes[k] === 'object'; });
+      meta.format = j.geneReports ? 'phenotype.json' : bySource ? 'report.json (v2)' : 'report.json';
+      if (bySource) Object.keys(genes).forEach(function (src) { Object.keys(genes[src] || {}).forEach(function (g) { fromGeneObj(g, genes[src][g]); }); });
+      else Object.keys(genes).forEach(function (g) { fromGeneObj(g, genes[g]); });
+    } else {
+      var lines = String(text).split(/\r?\n/).filter(function (l) { return l.trim() && l.charAt(0) !== '#'; });
+      var hi = -1, head = [];
+      for (var i = 0; i < Math.min(lines.length, 5); i++) {
+        var cols = lines[i].split('\t').map(function (c) { return c.trim().toLowerCase(); });
+        if (cols.indexOf('gene') >= 0 && cols.some(function (c) { return c.indexOf('phenotype') >= 0; })) { hi = i; head = cols; break; }
+      }
+      if (hi < 0) throw new Error('not a PharmCAT report: expected report.json, phenotype.json or the calls-only report.tsv');
+      meta.format = 'report.tsv';
+      var gi = head.indexOf('gene'), pi = head.findIndex(function (c) { return c.indexOf('phenotype') >= 0; }),
+          di = head.findIndex(function (c) { return c.indexOf('diplotype') >= 0; });
+      lines.slice(hi + 1).forEach(function (l) {
+        var c = l.split('\t');
+        add((c[gi] || '').trim(), (c[pi] || '').split(/;|\//).map(function (x) { return x.trim(); }), di >= 0 ? (c[di] || '').trim() : '');
+      });
+    }
+    return { meta: meta, calls: calls };
+  }
+  // -> {meta, picked: [{gene, code, phenotype, diplotype}], skipped: [gene], ambiguous: [{gene, phenotypes}]}
+  function pharmcatImport(db, text) {
+    var r = pharmcatCalls(text), picked = [], skipped = [], ambiguous = [];
+    Object.keys(r.calls).sort().forEach(function (gene) {
+      var ph = Object.keys(r.calls[gene].phenos).filter(function (p) { return !SKIP_RE.test(p); });
+      if (!ph.length) { skipped.push(gene); return; }
+      var codes = {}; ph.forEach(function (p) {
+        var c = phenoCode(p);
+        if (!c && db) {                      // off the activity axis: the guideline's own label
+          var hit = safeQ(db, 'SELECT code FROM adme_phenotype WHERE gene = ? AND (lower(label) LIKE ? OR lower(code) LIKE ?) LIMIT 1',
+                          [gene, '%' + p.toLowerCase() + '%', '%' + p.toLowerCase() + '%'])[0];
+          c = hit ? hit.code : p;
+        }
+        if (c && c !== 'NM') codes[c] = p;
+      });
+      var cs = Object.keys(codes);
+      if (!cs.length) { skipped.push(gene); return; }
+      if (cs.length > 1) { ambiguous.push({ gene: gene, phenotypes: cs.map(function (c) { return codes[c]; }) }); return; }
+      picked.push({ gene: gene, code: cs[0], phenotype: codes[cs[0]], diplotype: Object.keys(r.calls[gene].dips).join(' / ') });
+    });
+    return { meta: r.meta, picked: picked, skipped: skipped, ambiguous: ambiguous };
+  }
+
   // ▲/▼ where a chosen phenotype acts on this drug at this site (the gene is one of the
   // site's actors for the drug)
   function pgxAt(M, slug, tissue, proc) {
@@ -594,5 +675,5 @@
     if (tb) renderTable(tb, M);
   }
 
-  window.pkSites = { search: search, resolve: resolve, compute: compute, render: render, pgxGenes: pgxGenes, COLORS: COLORS, MAX: MAX, code: code, esc: esc };
+  window.pkSites = { search: search, resolve: resolve, compute: compute, render: render, pgxGenes: pgxGenes, pharmcatImport: pharmcatImport, COLORS: COLORS, MAX: MAX, code: code, esc: esc };
 })();

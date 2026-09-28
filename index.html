@@ -118,6 +118,7 @@
     .pks-sex { gap: 6px; }
     .pks-pgxrow select { font: inherit; font-size: 13px; padding: 4px 6px; max-width: 320px; }
     .pks-pgxchip { background: #eef2ff; }
+    .pks-filebtn { cursor: pointer; }
     .pks-pgxm { position: absolute; right: 1px; top: -1px; font-size: 10px; line-height: 1; color: #111827; }
     .pks-hm td { position: relative; }
     .pks-body .pgxm { font-size: 10px; fill: #111827; }
@@ -766,6 +767,8 @@
         if (ch) ch.innerHTML = PGX.map(function (p) {
           var g = PGXGENES.filter(function (z) { return z.gene === p.gene; })[0];
           var lab = g ? (g.phenos.filter(function (z) { return z.code === p.code; })[0] || {}).label : null;
+          // a gene no drug of this set relates to keeps its chip (it applies once one is added)
+          lab = lab || { UM: 'ultrarapid', RM: 'rapid', IM: 'intermediate', PM: 'poor' }[p.code] || p.code;
           return '<span class="pks-chip pks-pgxchip"><b>' + pkSites.esc(p.gene) + '</b> ' + pkSites.esc(lab || p.code) +
                  '<span class="x" title="remove" data-pgxrm="' + pkSites.esc(p.gene) + '">×</span></span>';
         }).join('');
@@ -891,6 +894,29 @@
         document.addEventListener('change', function (ev) {
           var t = ev.target; if (t && (t.id === 'pks-ddi' || t.id === 'pks-text')) draw();
           if (t && t.id === 'pks-pgx-gene') pgxPhenos();
+          // a PharmCAT report, read here with FileReader — the file never leaves the browser;
+          // its non-normal phenotypes replace the same genes' chips (and go into the link)
+          if (t && t.id === 'pks-pharmcat' && t.files && t.files[0] && DB && window.pkSites) {
+            var f = t.files[0], rd = new FileReader(), note = el('pks-pgx-note');
+            rd.onload = function () {
+              var msg;
+              try {
+                var r = pkSites.pharmcatImport(DB, String(rd.result || ''));
+                var genes = r.picked.map(function (p) { return p.gene; });
+                PGX = PGX.filter(function (p) { return genes.indexOf(p.gene) < 0; })
+                         .concat(r.picked.map(function (p) { return { gene: p.gene, code: p.code }; }));
+                msg = 'PharmCAT ' + (r.meta.format || 'report') + (r.meta.version ? ' ' + r.meta.version : '') + ': ' +
+                      (r.picked.length ? r.picked.length + ' non-normal phenotype(s) added \u2014 ' + r.picked.map(function (p) { return p.gene + ' ' + p.phenotype + (p.diplotype ? ' (' + p.diplotype + ')' : ''); }).join(', ') : 'no non-normal phenotype') +
+                      '; ' + r.skipped.length + ' gene(s) normal / indeterminate / not called' +
+                      (r.ambiguous.length ? '; not added, diplotypes disagree: ' + r.ambiguous.map(function (a) { return a.gene + ' (' + a.phenotypes.join(' or ') + ')'; }).join(', ') : '') +
+                      '. Read in this browser only; nothing was uploaded.';
+                draw();
+              } catch (e) { msg = 'Could not read ' + f.name + ': ' + (e.message || e); }
+              if (note) { note.textContent = msg; note.hidden = false; }
+              t.value = '';
+            };
+            rd.readAsText(f);
+          }
         });
         document.addEventListener('dblclick', function (ev) {
           var d = ev.target.closest && ev.target.closest('.pks-detailbox');
