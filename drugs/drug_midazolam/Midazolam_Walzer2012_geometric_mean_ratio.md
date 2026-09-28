@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The N-desmethylclobazam metabolite has no compartment (n_cmt 0), leaving it unlinked from the clobazam dose, and the clobazam clearance unit ml/kg/hour could not be converted to SI units.**
+**The midazolam/clobazam record was rejected because the N-desmethylclobazam metabolite is unlinked to the dose (no path from administration), and the clearance value 43.2 ml/kg/hour was labelled as lamotrigine clearance while attributed to clobazam.**
 
-The record describes clobazam as the measured compound with N-desmethylclobazam formed from it at the central compartment, but the metabolite is given zero compartments and no path from the dose, so it is an orphan metabolite under the stated linear structure. The clearance parameter for clobazam is reported as 43.2 ml/kg/hour, a unit that could not be converted to SI, so the value could not be used. The AUC, Cmax and half-life values for N-desmethylclobazam (4275, 4360, 223.7 ng/ml or ng·h/mL, 37.5 hrs) were read by a second reader only as nulls, so the disagreement entries could not compute a comparison. Extracted — N-desmethylclobazam: AUC 4.28e+03 ng·h/mL, AUC∞ 4.36e+03 ng·h/mL, Cmax 224 ng/ml, t1/2z 37.5 hrs; midazolam: AUCt 8.78e+03 ng·h/mL; clobazam: CL 43.2 ml/kg/hour.
+The metabolite N-desmethylclobazam, formed from clobazam in the central compartment, has no compartment count (n_cmt 0) and the metabolism link carries no usable fraction-metabolised parameter, leaving it unreachable from the dose. The clearance parameter labelled 'lamotrigine clearance' (43.2 ml/kg/hour) is attributed to clobazam, a mismatch between label and compound. Additionally, the reported units could not be converted to SI, and a second reader recorded the N-desmethylclobazam summary values (AUC 4275 and 4360 ng·h/mL, Cmax 223.7 ng/ml, t1/2 37.5 hrs, AUC0-24 8783 ng·h/mL) under different parameter entries, so the extraction is inconsistent. Extracted — N-desmethylclobazam: AUC 4.28e+03 ng·h/mL, AUC∞ 4.36e+03 ng·h/mL, Cmax 224 ng/ml, t1/2z 37.5 hrs; midazolam: AUCt 8.78e+03 ng·h/mL; clobazam: CL 43.2 ml/kg/hour.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc 0-24: this record has 8783, the second reading none; it also differs on 10 more fields. That field does not shape the model.
 

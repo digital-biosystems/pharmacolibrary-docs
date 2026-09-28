@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The midazolam parent–metabolite model was not simulated because the shared clearance and volume parameters (CL 13.1 L/h, V 27.2 L, and their metabolite counterparts) were duplicated rather than bound to a single value across compartments.**
+**The midazolam parent–metabolite model was not published because the shared clearance and volume parameters (CL, V) appear duplicated rather than bound to one value across the parent and metabolite compartments, so the structure could not be simulated.**
 
-The record lists CL and V twice for the parent (13.1 L/h, 27.2 L) and again for the metabolites (145 L/h, 97.4 L, 2.04 L/h, 1 L), and the shared-parameter check found 'possibly duplicated: CL, V, CL, V' where six shared parameters should have been bound once. A second reader also returned null for the parent clearance, inter-compartmental clearance, and both volumes, and disagreed on the dose compartment and metabolite naming (midazolam vs midazolam, 1'-hydroxymidazolam vs 1-hydroxymidazolam). The model was built but has not been simulated yet, so the verdict is not_simulated. Extracted — midazolam: CL 13.1 L h À1, V 27.2 L, Q 17.6 L h À1; 1'-hydroxymidazolam: fm 0.6, CL 145 L h À1, V 97.4 L; 1'-hydroxymidazolam glucuronide: fm 0.279, CL 2.04 L h À1, V 1 L.
+The shared-parameter check expected 6 shared parameters bound once but found possibly duplicated entries for CL and V, meaning the parent (midazolam, CL 13.1 L/h, V 27.2 L) and 1'-hydroxymidazolam (CL 145 L/h, V 97.4 L) compartments were not linked by single shared values. The model was built but has not been simulated yet. A second reader also disagreed on the dose compound, primary analyte, the metabolism links (reading '1-hydroxymidazolam' instead of "1'-hydroxymidazolam"), and returned null for the midazolam CL, Q, V, 1'-hydroxymidazolam CL and F 1OHM/MDZ values, so the extracted numbers are not independently confirmed. Extracted — midazolam: CL 13.1 L h À1, V 27.2 L, Q 17.6 L h À1; 1'-hydroxymidazolam: fm 0.6, CL 145 L h À1, V 97.4 L; 1'-hydroxymidazolam glucuronide: fm 0.279, CL 2.04 L h À1, V 1 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The midazolam two-compartment pediatric model was rejected because the inter-compartmental clearance Q of 5091.62 mL/min is physiologically implausible next to a systemic clearance of 0.48 mL/min, indicating a unit or scale extraction error.**
+**The midazolam clearance (0.48 mL/min) and intercompartmental clearance (5091.62 mL/min) are physiologically implausible, indicating a unit or scale extraction error, so the record was rejected.**
 
-The record lists midazolam clearance CL of 0.48 mL/min and central volume V1 of 23.59 mL, but the inter-compartmental clearance Q is 5091.62 mL/min and the peripheral volume V2 is 6792.42 mL — magnitudes inconsistent with the other parameters and with pediatric physiology, consistent with a unit or scale error in the extracted values. The absorption parameters (kabs 0.14 /h, lag time 1.23 h) are plausible. The implausible Q/V2 magnitudes are the sole recorded cause of rejection; no other failed checks or builder deviations are reported. Extracted — midazolam: CL 0.48 mL/min, V1 23.6 mL, Q 5.09e+03 mL/min, V2 6.79e+03 mL, kabs 0.14 /h, tlag 1.23 h.
+For midazolam in pediatric surgical patients, the reported total clearance of 0.48 mL/min is far below any plausible value, while the intercompartmental clearance Q of 5091.62 mL/min is implausibly high; both magnitudes point to a unit or scale error in extraction. The remaining parameters (V1 23.59 mL, V2 6792.42 mL, kabs 0.14 /h, tlag 1.23 h) do not by themselves explain the rejection. The failed physiological-window check on clearance/volume is the stated cause of rejection. Extracted — midazolam: CL 0.48 mL/min, V1 23.6 mL, Q 5.09e+03 mL/min, V2 6.79e+03 mL, kabs 0.14 /h, tlag 1.23 h.
 
 Independently confirmed by `gpt-oss:120b`.
 

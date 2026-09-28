@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the metabolite N-desmethylclobazam of clobazam has no compartments (n_cmt 0), leaving it without a path from the dose, and the clearance unit ml/kg/hour could not be converted to SI units.**
+**The clobazam model was rejected because the N-desmethylclobazam metabolite is unlinked (no path from the dose), and the clearance value 43.2 ml/kg/hour was reported in a unit that could not be expressed in SI units.**
 
-The model lists N-desmethylclobazam as formed from clobazam at the central compartment but with n_cmt 0, so the metabolite is an orphan with no compartment to reside in and no path from the dose, failing the structural check. Additionally, the reported clearance of 43.2 ml/kg/hour for clobazam uses a unit that could not be converted to SI units, so the parameter had no SI value. The second reader also disagreed on the AUC values, reading AUC 0-inf as 6432 ng·h/mL and AUC 0-lqc as 6332 ng·h/mL instead of 7851 and 7106 ng·h/mL, and left AUC 0-24 unconfirmed at 8783 ng·h/mL. Extracted — N-desmethylclobazam: AUC 7.11e+03 ng·h/mL, AUC∞ 7.85e+03 ng·h/mL, Cmax 46.3 ng/ml, t1/2z 74 hrs; midazolam: AUCt 8.78e+03 ng·h/mL; clobazam: CL 43.2 ml/kg/hour.
+The metabolite N-desmethylclobazam, formed from clobazam in the central compartment, has no compartment count (n_cmt 0), leaving an unlinked metabolite with no route from the administered dose. The clearance parameter, labelled lamotrigine clearance but attributed to clobazam, was reported as 43.2 ml/kg/hour, a unit that could not be converted to SI so no standardised value was available. The second reader also disagreed on the N-desmethylclobazam exposure values, reading AUC 0-∞ as 6432 ng·h/mL and AUC 0-lqc as 6332 ng·h/mL versus the record's 7851 and 7106, and left Cmax 46.3 ng/ml and t1/2z 74.0 hrs unmatched. Extracted — N-desmethylclobazam: AUC 7.11e+03 ng·h/mL, AUC∞ 7.85e+03 ng·h/mL, Cmax 46.3 ng/ml, t1/2z 74 hrs; midazolam: AUCt 8.78e+03 ng·h/mL; clobazam: CL 43.2 ml/kg/hour.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc 0-24: this record has 8783, the second reading none; it also differs on 10 more fields. That field does not shape the model.
 

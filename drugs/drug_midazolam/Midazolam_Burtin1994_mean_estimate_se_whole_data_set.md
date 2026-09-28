@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The midazolam neonatal two-compartment model was rejected because its parameters are physiologically implausible — clearance 0.0704 L/hr/kg, central volume 0.591 L/kg and peripheral volume 0.419 L — consistent with a unit or scale extraction error.**
+**The midazolam peripheral volume V2 is recorded as 0.419 L while the central volume V1 is 0.591 L/kg, an inconsistent unit/scale that puts the clearance/volume values outside the physiological window, so the record was rejected.**
 
-The record lists clearance of 0.0704 L/hr/kg and central volume of 0.591 L/kg for midazolam in critically ill neonates, magnitudes flagged as outside the physiological window and suggestive of a unit or scale extraction error. The peripheral volume is reported as 0.419 L while the central volume is per kilogram, so the two volumes are on inconsistent scalings, reinforcing the unit-mismatch concern. The remaining parameters (inter-compartmental clearance 0.290 L/hr, absorption rate constant 0.14 /h, lag time 1.23 h) are recorded but the implausible clearance and volumes alone justified rejection. Extracted — midazolam: CL 0.0704 L/hr/kg, V1 0.591 L/kg, V2 0.419 L, Q 0.29 L/hr, kabs 0.14 /h, tlag 1.23 h.
+For midazolam in critically ill neonates (Burtin_1994), the central volume is body-weight-scaled (0.591 L/kg) but the peripheral volume is not (0.419 L), and clearance (0.0704 L/hr/kg) and intercompartmental clearance (0.290 L/hr) mix scaled and unscaled units. This magnitude inconsistency was judged a unit/scale extraction error, failing the physiological plausibility check on clearance and volume. The remaining parameters (kabs 0.14 /h, tlag 1.23 h) are not implicated. Extracted — midazolam: CL 0.0704 L/hr/kg, V1 0.591 L/kg, V2 0.419 L, Q 0.29 L/hr, kabs 0.14 /h, tlag 1.23 h.
 
 Independently confirmed by `gpt-oss:120b`.
 

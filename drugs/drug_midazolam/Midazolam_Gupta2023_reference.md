@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The midazolam 1-compartment model was held back because the absorption rate constant ka and lag time Tlag were not reported in the source and placeholder values were substituted, and the resulting invented first-order absorption was judged not acceptable.**
+**The midazolam record was held back because the absorption rate constant ka was invented (defaulted) rather than taken from the source, alongside an apparent F=1 parameterization and defaulted lag time.**
 
-The record for midazolam reports only CL/F = 10.6 L/h and V/F = 307.0 L; ka and Tlag are missing from the source, so no extracted values existed and library placeholder defaults were used in their place, and the apparent (/F) parameterization additionally assumed F=1 and Fm=1 with no molar correction, giving an extravascular first-order depot input. The failed check found that the defaulted ka amounts to an invented absorption process not reported in the source, which was adjudicated as not acceptable. In addition, six derived quantity values (92, 20276, 5, 46, 25, 12944) lack a second reader's confirmation, with the second reader returning null on each. Extracted — midazolam: CL/F 10.6 L/h, V/F 307 L.
+The record reports midazolam CL/F of 10.6 L/h and V/F of 307.0 L, but the source did not report an absorption rate constant, so a library default was substituted for ka and the lag time was also left at a default. The model builder additionally assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent, and used first-order depot input implying extravascular dosing. A second reader returned no values for several fields, disagreeing with the recorded entries, and the failed check on the invented absorption was judged not acceptable. Extracted — midazolam: CL/F 10.6 L/h, V/F 307 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 92, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 

@@ -3041,6 +3041,28 @@
   "slug": "balsalazide",
   "stale": 0
  },
+ "drug_bamethan": {
+  "atc_codes": [
+   "C04AA31"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_bamethan",
+  "extracted": 0,
+  "last_change": null,
+  "name": "bamethan",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "bamethan",
+  "stale": 0
+ },
  "drug_barbexaclone": {
   "atc_codes": [
    "N03AA04"
@@ -7726,6 +7748,28 @@
   "slug": "conestat_alfa",
   "stale": 0
  },
+ "drug_conivaptan": {
+  "atc_codes": [
+   "C03XA02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_conivaptan",
+  "extracted": 0,
+  "last_change": null,
+  "name": "conivaptan",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "conivaptan",
+  "stale": 0
+ },
  "drug_crataegus_glycosides": {
   "atc_codes": [
    "C01EB04"
@@ -12400,6 +12444,33 @@
   "rejected": 0,
   "rendered": true,
   "slug": "fidaxomicin",
+  "stale": 0
+ },
+ "drug_finerenone": {
+  "atc_codes": [
+   "C03DA05"
+  ],
+  "counts": {
+   "pd": 6,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "van_2022 \u00b7 reference",
+    "model_id": "Finerenone_van2022_reference"
+   }
+  ],
+  "dir": "drug_finerenone",
+  "extracted": 0,
+  "last_change": "2026-09-28T11:22:45.463907+00:00",
+  "name": "finerenone",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "finerenone",
   "stale": 0
  },
  "drug_fitusiran": {

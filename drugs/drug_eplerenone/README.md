@@ -27,7 +27,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 10:22 | 2:52 | 0/0/1 | 0/0/0 | 0/0/0 | 49,602/5,653 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
+| 2026-09-28 11:17 | 2:27 | 0/0/1 | 0/0/0 | 0/0/0 | 2,862/2,948 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
 
 ## popPK records
 
@@ -69,7 +69,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Mori_2010.pdf` | Mori Y et al., A population approach to eplerenone pha…, Drug metabolism and pharmac… (2010) | popPK | 10 | [10.2133/dmpk.dmpk-09-rg-024](https://doi.org/10.2133/dmpk.dmpk-09-rg-024) | [20962434](https://pubmed.ncbi.nlm.nih.gov/20962434) | The paper describes a population PK study for eplerenone, but the provided evidence contains only the abstract and lacks specific numeric parameter values (CL, V, etc.). |
 | `Oishi_2017.pdf` | Oishi M et al., Population Pharmacokinetics of Eplereno…, Journal of clinical pharmac… (2017) | popPK | 10 | [10.1002/jcph.861](https://doi.org/10.1002/jcph.861) | [28032902](https://pubmed.ncbi.nlm.nih.gov/28032902) | The paper is a population PK study for eplerenone and explicitly reports the population mean apparent oral clearance (CL/F) of 5.31 L/h in the text. |
 
-<sub>queue written 2026-09-28T10:19:39.711942+00:00</sub>
+<sub>queue written 2026-09-28T11:14:53.843360+00:00</sub>
 
 ## Screened and excluded
 

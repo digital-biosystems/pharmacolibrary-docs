@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the midazolam metabolite 1-hydroxymidazolam has no metabolic link parameter, and the clobazam clearance unit ml/kg/hour could not be converted to SI.**
+**The record was rejected because the N-desmethylclobazam metabolite is unlinked in the model structure, and the reported exposure parameters carry a unit (ng·h/mL, ng/ml) with no SI conversion, leaving them without SI values.**
 
-The structure links midazolam to its metabolite 1-hydroxymidazolam by metabolism but with link_parameter 'none', leaving that metabolite without a quantitative formation path from the dose — an unlinked metabolite. Additionally, the clobazam clearance (43.2 ml/kg/hour) carries a unit that could not be converted to SI, so it entered the record without an SI value. The exposure values for N-desmethylclobazam (AUC 30883 and 31320 ng·h/mL, Cmax 2208 ng/mL) were read by a second reader only as nulls with alternative values (40622, 40028, 4676), so the disagreements are inconclusive. Extracted — N-desmethylclobazam: AUC 3.09e+04 ng·h/mL, AUC∞ 3.13e+04 ng·h/mL, Cmax 2.21e+03 ng/ml; midazolam: AUCt 8.78e+03 ng·h/mL; clobazam: CL 43.2 ml/kg/hour.
+The model is for clobazam with metabolite N-desmethylclobazam formed in the central compartment, but the metabolite has no path from the dose (orphan metabolite), so the structure check failed. The exposure parameters for N-desmethylclobazam — AUC 0-lqc 30883 ng·h/mL, AUC 0-∞ 31320 ng·h/mL, and Cmax 2208 ng/ml — could not be converted to SI. A second reader also disagreed on these values, reading AUC 0-∞ as 40622, AUC 0-lqc as 40028, and Cmax as 4676, so the extracted numbers are inconclusive. Extracted — N-desmethylclobazam: AUC 3.09e+04 ng·h/mL, AUC∞ 3.13e+04 ng·h/mL, Cmax 2.21e+03 ng/ml; midazolam: AUCt 8.78e+03 ng·h/mL; clobazam: CL 43.2 ml/kg/hour.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc 0-24: this record has 8783, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 

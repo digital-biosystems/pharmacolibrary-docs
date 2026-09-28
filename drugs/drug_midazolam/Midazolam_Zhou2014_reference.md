@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The midazolam 2-compartment model was rejected because a compartment has no path from the dose (orphan/unreachable), and a reported unit could not be converted to SI, leaving a parameter without an SI value.**
+**The midazolam two-compartment model was rejected because its structure leaves a compartment or metabolite with no path from the dose, and a parameter's reported unit could not be converted to SI.**
 
-The structure lists two compartments (V1 133 L, V2 146 L) with MTT 197 h and CL 36 L/h for midazolam, but the review found an unreachable/orphan compartment or unlinked metabolite, meaning part of the structure has no path from the administered dose. Separately, a reported unit could not be converted to SI, so one parameter was recorded without an SI value. The second reader also disagreed on the dosed compound (recorded as AZD7325) and the primary analyte (recorded as midazolam), with the second reader unknown. The record was therefore rejected. Extracted — midazolam: V1 133 L, V2 146 L, MTT 197 h, CL 36 L/h.
+The model for midazolam in healthy adults has a two-compartment structure with V1 = 133 L, V2 = 146 L, CL = 36 L/h and MTT = 197 h, but the structure check found an unreachable or orphan compartment or an unlinked metabolite, so the model was refused. In addition, one parameter was reported in a unit that could not be converted to SI, so it arrived without an SI value. The second reader also disagreed on which compound the dose refers to, with the record listing AZD7325 while the measured analyte is midazolam. Extracted — midazolam: V1 133 L, V2 146 L, MTT 197 h, CL 36 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has AZD7325, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

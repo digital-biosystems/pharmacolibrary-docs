@@ -19,7 +19,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 13:30 | 0:27 | 7/0/0 | 2/1/0 | 2/0/11 | 385/102 | ollama / qwen3.8:27b-mtp-q8_0 | 33 | 25/13 | 16/17 | 0 |
+| 2026-09-28 11:33 | 1:23 | 7/0/0 | 2/1/0 | 2/0/11 | 385/103 | ollama / qwen3.8:27b-mtp-q8_0 | 33 | 25/13 | 16/17 | 0 |
 
 ## popPK records
 
@@ -139,7 +139,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | popPK | Marshall_2026 | irrelevant | 0 | 0 | The paper is a clinical outcome study evaluating kidney function decline (eGFR slopes) and does not report any pharmacokinetic parameters for tolvaptan. |
 | PGx | Mazzarino_2017 | not_relevant | 3 | 2 | The paper reports in vitro metabolic differences based on CYP3A5 allelic variants, but does not report in vivo pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, PD effect) in humans. |
 | PD | Mekahli_2023 | not_relevant | 0 | 0 | The paper is a clinical trial report focusing on efficacy (kidney volume, eGFR) and safety; it does not report a pharmacodynamic model, exposure-response analysis, or numeric PD parameters (e.g., Emax, EC50) for tolvaptan. |
-| PGx | Nguyen_2023 | not_relevant | 4 | 5 | The paper reports a clinical case of altered drug safety (isolated bilirubin elevation) in a patient with a specific genotype (UGT1A1), but it does not report changes in standard pharmacokinetic (e.g., AUC, Cmax) or pharmacodynamic (e.g., aquaresis, serum osmolality) parameters of tolvaptan. |
+| PGx | Nguyen_2023 | not_relevant | 4 | 5 | The paper reports a clinical case of altered drug safety (isolated hyperbilirubinemia) in a patient with a specific genotype (UGT1A1), but it does not report changes in standard pharmacokinetic (e.g., AUC, Cmax) or pharmacodynamic (e.g., aquaresis, serum osmolality) parameters of tolvaptan. |
 | popPK | Oka_2021 | irrelevant | 0 | 0 | This is a clinical outcomes study assessing renal function and diuretic dosing, not a pharmacokinetic study, so no disposition parameters are reported. |
 | popPK | Oruc_2026 | irrelevant | 0 | 0 | The study is a clinical retrospective analysis of inflammatory markers and kidney volume progression in ADPKD patients and contains no pharmacokinetic parameters or population-PK modeling for tolvaptan. |
 | PD | Perrone_2020 | not_relevant | 2 | 1 | The paper is a clinical trial comparing formulations that reports group-level mean changes in kidney volume and urine output, but it does not provide individual subject concentration data or fit a pharmacodynamic model to derive numeric parameters like Emax or EC50. |

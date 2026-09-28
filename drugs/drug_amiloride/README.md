@@ -27,7 +27,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 10:02 | 27:46 | 0/1/0 | 0/0/0 | 0/0/0 | 59,299/8,683 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 3/0 | 0 |
+| 2026-09-28 11:14 | 9:35 | 0/1/0 | 0/0/0 | 0/0/0 | 9,665/5,185 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 3/0 | 0 |
 
 ## popPK records
 
@@ -74,7 +74,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Savic_2007.pdf` | Savic RM et al., Implementation of a transit compartment…, Journal of pharmacokinetics… (2007) | popPK | 8 | [10.1007/s10928-007-9066-0](https://doi.org/10.1007/s10928-007-9066-0) | [17653836](https://pubmed.ncbi.nlm.nih.gov/17653836) | The paper is a population PK study including amiloride, but the specific numeric parameter values are not present in the provided evidence. |
 | `Snelder_2014.pdf` | Snelder N et al., Drug effects on the CVS in conscious ra…, British journal of pharmaco… (2014) | pd | 5 | [10.1111/bph.12824](https://doi.org/10.1111/bph.12824) | [24962208](https://www.ncbi.nlm.nih.gov/pubmed/24962208) | metadata signals extractable PD data (PKPD) |
 
-<sub>queue written 2026-09-28T09:55:58.412552+00:00</sub>
+<sub>queue written 2026-09-28T11:05:18.280794+00:00</sub>
 
 ## Screened and excluded
 

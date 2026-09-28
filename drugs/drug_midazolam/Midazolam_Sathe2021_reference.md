@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The midazolam model was quarantined because Vd, ka and Tlag had no extracted values and library defaults were substituted, and Q/F (26.6 L/h) and V2/F (130 L) were not covered.**
+**The midazolam model was quarantined because its volume of distribution, absorption rate constant and absorption lag time had no reported values and were left at library defaults, and the intercompartmental clearance (Q/F, 26.6 L/h) and peripheral volume (V2/F, 130 L) were not carried into the built model.**
 
-No value for midazolam's volume of distribution, absorption rate constant and absorption lag time was reported, so placeholders stood in and the model was held back rather than published with invented numbers. The coverage check expected 3 parameters emitted or defaulted but obtained only 1, leaving Q/F and V2/F unrepresented. The record defines covariate effects (weight power 0.384, age power -0.217), but only the reference individual was simulated, so these effects were not exercised. The absorption was also flagged as invented: ka was defaulted, not reported in the source. Extracted — midazolam: CL/F 73.9 L/h, Q/F 26.6 L/h, V2/F 130 L.
+Only CL/F (73.9 L/h) was covered; Q/F and V2/F were neither emitted nor defaulted, so the two-compartment structure was incomplete. The absorption rate constant was invented as a default rather than taken from Sathe_2021, which was judged not acceptable. In addition, the covariate effects on weight (0.384) and age (-0.217) were defined but only the reference individual was simulated, so those scenarios were not exercised; a second reader also disagreed on the age-effect parameter value (-0.217 vs null). Extracted — midazolam: CL/F 73.9 L/h, Q/F 26.6 L/h, V2/F 130 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has midazolam, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
