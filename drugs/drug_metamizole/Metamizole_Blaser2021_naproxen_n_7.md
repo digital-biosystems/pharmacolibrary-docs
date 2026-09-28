@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**All seven extracted parameters (kabs 0.538 1/h, V1/F 3.27 L, k12 0.185 1/h, k14 1.334 1/h, kel 0.213 1/h, kcomp 0.009 1/h, t1/2z 1.708 h) describe naproxen, not metamizole, so metamizole's elimination and intercompartmental clearances had no values and library placeholders were substituted, quarantining the model.**
+**The metamizole model was quarantined because metamizole's elimination clearance and intercompartmental clearance had no extracted values and were replaced by library placeholders, while all 7 extracted parameters describe naproxen, not metamizole.**
 
-The record concerns metamizole and its metabolite 4-methylaminoantipyrine, yet every parameter value in it belongs to naproxen, leaving metamizole's elimination clearance and intercompartmental clearance without a source value; placeholders stood in and the model was held back rather than published with invented numbers. The parameter-coverage check found only 4 of 5 expected parameters covered, with V1/F neither extracted nor defaulted. A reported unit could not be converted to SI, so that parameter reached the model build without an SI value. The builder also assumed F=1 and Fm=1 with no molar correction, treating the parameterization as apparent. Extracted — naproxen: kabs 0.538 n = 7, V1/F 3.27 L, k12 0.185 n = 7, k14 1.33 n = 7, kel 0.213 n = 7, kcomp 0.009 n = 7, t1/2z 1.71 h.
+Every extracted parameter (kabs 0.538, V1/F 3.27 L, k12 0.185, k14 1.334, kel 0.213, kcomp 0.009, t1/2z 1.708 h) belongs to naproxen, so metamizole's own disposition is uncharacterized. Metamizole's elimination clearance and intercompartmental clearance had no source values, so standard library placeholder values stood in and the model was held back rather than published with invented numbers. The parameter-coverage check expected 5 parameters emitted or defaulted but covered only 4, with V1/F neither emitted nor defaulted. Additionally, the reported unit 'n = 7' could not be converted to SI, and the builder assumed F=1 and Fm=1 with no molar correction (apparent parameterization). Extracted — naproxen: kabs 0.538 n = 7, V1/F 3.27 L, k12 0.185 n = 7, k14 1.33 n = 7, kel 0.213 n = 7, kcomp 0.009 n = 7, t1/2z 1.71 h.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The imipramine clearance of 12.0 μL/min/mg falls outside the physiological window, indicating a unit or scale extraction error, and the second reader recorded no value for this parameter.**
+**Imipramine clearance was recorded as 12.0 μL/min/mg, an intrinsic-clearance-per-mg-microsomal-protein value whose magnitude falls outside the physiological window, so the record was rejected.**
 
-The record lists imipramine clearance (labelled 'Clearance (CLint)') as 12.0 μL/min/mg in enuretic children, a magnitude judged physiologically implausible and attributed to a unit or scale extraction error. The second reader (gpt-oss:120b) recorded null for this same parameter, disagreeing with the extracted 12.0. The model is a parent–metabolite structure with imipramine linked to desipramine via the metabolism rate constant Kfm. Extracted — imipramine: CL 12 μL/min/mg.
+The parameter CL for imipramine is labelled 'Clearance (CLint)' with unit μL/min/mg, i.e. an intrinsic clearance normalized per mg of protein rather than a systemic total clearance; its value 12.0 was flagged as physiologically implausible, consistent with a unit or scale extraction error. The second reader recorded no value for this clearance parameter, disagreeing with the extracted 12.0. The model itself is a parent–metabolite structure linking imipramine to desipramine via the metabolism rate constant Kfm in enuretic children. Extracted — imipramine: CL 12 μL/min/mg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance (clint): this record has 12.0, the second reading none. That field does not shape the model.
 

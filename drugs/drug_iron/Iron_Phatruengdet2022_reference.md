@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The iron model was quarantined because iron's bioavailability and clearance had no extracted values (library defaults stood in), the parent–metabolite structure did not match the record, and a reported unit could not be converted to SI.**
+**The iron model was quarantined because bioavailability (F) and clearance (Cl) had no extracted values, so library defaults stood in for these iron parameters.**
 
-All five extracted parameters (CLb 0.96 hr-1, metabolite clearance 0.07 hr-1, V 11.6 L, kabs 2.6 h−1, tlag 0.235 h) describe iron-tannic nanoparticles, leaving iron's bioavailability and clearance without values, so placeholders were substituted and the model held back. The declared parent–metabolite topology was not what the record actually contained — a single enteral parent compartment with a metabolism link to nanoparticle metabolites — a mismatch that independently blocked publication. Additionally, one reported unit could not be converted to SI, so that parameter entered the build without an SI value. A second reader also disputed the dosing compound, primary analyte, and link naming, and could not confirm the five parameter values, though these disagreements alone are not the stated cause. Extracted — iron-tannic nanoparticles: CLb 0.96 hr-1, CL 0.07 hr-1, V 11.6 L, kabs 2.6 h−1, tlag 0.235 h.
+All five extracted parameters (kabs 2.6 h−1, tlag 0.235 h, V 11.6 L, CLb 0.96 hr−1, CL 0.07 hr−1) describe iron-tannic nanoparticles, not iron, leaving iron's bioavailability and clearance without values. The declared parent–metabolite structure also did not match the one-compartment enteral structure actually built, and the hr−1 unit could not be converted to SI. A second reader returned null for all five parameter values, so the extraction was inconclusive on those fields. Extracted — iron-tannic nanoparticles: CLb 0.96 hr-1, CL 0.07 hr-1, V 11.6 L, kabs 2.6 h−1, tlag 0.235 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has iron-tannic nanoparticles, the second reading Iron-tannic nanoparticles (FTs); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -117,9 +117,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 | T1_t_half_terminal | reference | skipped | 0.73 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 8.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |

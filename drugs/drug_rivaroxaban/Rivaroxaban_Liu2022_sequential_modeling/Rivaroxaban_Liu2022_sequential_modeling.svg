@@ -213,8 +213,7 @@ font-family="Sans" font-size="10" font-weight="400" font-style="normal"
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="1" transform="matrix(1,0,0,1,161.155,277.929)"
 font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-3.54688" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
- >Cl</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="0.613" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" text-anchor="middle">5.04 L/h</text>
 </g>
 
 
@@ -329,7 +328,7 @@ font-family="Sans" font-size="10" font-weight="400" font-style="normal"
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="1" transform="matrix(1,0,0,1,277.869,174.333)"
 font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" 
 >
-<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-13.073" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" text-anchor="middle">m=100 mg</text>
+<text fill="#000000" fill-opacity="1" stroke="none" xml:space="preserve" x="-13.073" y="3" font-family="Noto Sans" font-size="8" font-weight="400" font-style="normal" text-anchor="middle">m=10 mg</text>
 </g>
 
 

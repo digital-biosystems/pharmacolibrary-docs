@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;dihydrocodeine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydrocodeine_Webb2001_reference&quot;,&quot;label&quot;:&quot;Webb_2001_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydrocodeine_Webb2001_reference&quot;,&quot;label&quot;:&quot;Webb_2001_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # dihydrocodeine
 
@@ -38,7 +38,7 @@ In heroin addicts, dihydrocodeine has been used as a substitute drug, in doses u
 
 | status | detail | model structure | params | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>route_to: `human_review`</sub> | [Webb_2001_reference](drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference.md) | parent 1-cmt + liver + 1 metabolite (1-cmt) | 9 | Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01414.x](https://doi.org/10.1046/j.0306-5251.2001.01414.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Webb_2001_reference](drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference.md) | parent 1-cmt + liver + 1 metabolite (1-cmt) | 9 | Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01414.x](https://doi.org/10.1046/j.0306-5251.2001.01414.x) |
 
 ## Pharmacodynamics (PD)
 
@@ -72,7 +72,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 124 matched, 78 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

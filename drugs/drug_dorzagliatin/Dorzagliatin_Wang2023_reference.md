@@ -116,6 +116,7 @@ Wang K; Feng L; Zhang J; Zou Q; Xu F; Sun Z; et al. et al. (2023). Clinical phar
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=dorzagliatin) | central.C | not captured | output must be the measured/analyte compartment |
@@ -142,8 +143,8 @@ Wang K; Feng L; Zhang J; Zou Q; Xu F; Sun Z; et al. et al. (2023). Clinical phar
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference_modelica.zip" download>Dorzagliatin_Wang2023_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference_modelica.zip" download>Dorzagliatin_Wang2023_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference_fmi.zip" download>Dorzagliatin_Wang2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_3C_enteral.fmu" download>PK_3C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference_matlab.zip" download>Dorzagliatin_Wang2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference_matlab_simbio.zip" download>Dorzagliatin_Wang2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference/Dorzagliatin_Wang2023_reference_sbml.zip" download>Dorzagliatin_Wang2023_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The polymyxin B record lacks a clearance value: total clearance (CL) was never extracted, so a library placeholder was substituted and the model was quarantined.**
+**Polymyxin b's total clearance (CL) has no extracted value, so a placeholder clearance was substituted and the model was quarantined.**
 
-The record lists a total clearance of 2.43 L/h as a typical value, but the CL parameter itself carries no value, and the model builder defaulted CL to a library placeholder because no source value was available. The parameter-coverage check expected two parameters emitted or defaulted but found only one covered, with the distribution clearance Q (8.78 L/h) neither emitted nor defaulted. A second reader also disagreed on the extracted values, reading null for the distribution volume (13.4 L), distribution clearance (8.78 L/h) and total clearance, and null for CL in both readings. Extracted — polymyxin b: V 13.4 L, Q 8.78 L/h.
+The record lists total clearance for polymyxin b only as a typical value of 2.43 L/h, while the CL parameter itself carries no value; a placeholder default was substituted for the missing clearance. The distribution clearance Q (8.78 L/h) was also neither emitted nor recorded as defaulted, so the parameter-coverage check found only 1 of 2 expected parameters covered. The second reader returned no values for the central volume (13.4 L), Q, CL, or total clearance, leaving those entries unconfirmed. Extracted — polymyxin b: V 13.4 L, Q 8.78 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of central compartment distribution volume: this record has 13.4, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The exenatide record was rejected because a structural parameter carried a reported unit that could not be converted to SI, giving a dimension mismatch, and a second reader disputed several extracted values, including Km 567 pg/mL and Vmax 0.0372 mg/day.**
+**The exenatide record was rejected because the reported total clearance of 12.3 L/h is dimensionally inconsistent with the model's structural clearance parameters expressed per day, a C5 dimension mismatch.**
 
-The stated cause is a dimension mismatch on a structural parameter: one of the exenatide parameters was reported in a unit for which no SI equivalent could be established, so the parameter entered the model without an SI value and the structure could not be validated dimensionally. A second reader returned no value at all for Km (567 pg/mL in this record) and for the 110 L/day intrinsic clearance, and read 0.0872 mg/day and 0.722 where this record holds 0.0372 mg/day and 1.18, showing the extracted numbers themselves are contested. The second reader also supplied 2.4 for a parameter this record leaves without a value. These unresolved value disagreements compound the unit problem that triggered the rejection. Extracted — exenatide: kabs 3.85, CLint 110 L/day, V 7.03 L, Fab 1.18, ktr 0.105, Km 567 pg/mL, Vmax 0.0372 mg/day, Q 89.3 L/day, … (+2).
+The paper reports exenatide clearance as 12.3 L/h, while the two-compartment model's clearance parameters (CLint 110 L/day, Q 89.3 L/day) are on a per-day scale, so the value could not be reconciled dimensionally. Because the per-hour unit could not be converted to the model's per-day scale, the clearance value arrived without a usable SI value. A second reader additionally disagreed on several extracted values, reading Km as null versus 567 pg/mL, CLint as null versus 110 L/day, and Vmax as null versus 0.0372 mg/day, and read a value of 2.4 where this record had none; these disagreements were inconclusive. Extracted — exenatide: kabs 3.85, CLint 110 L/day, V 7.03 L, Fab 1.18, ktr 0.105, Km 567 pg/mL, Vmax 0.0372 mg/day, Q 89.3 L/day, … (+2).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of Km: this record has 567, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
@@ -156,7 +156,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 2.5 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). Doses in the paper: 2.5, 5, 7, 10 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_exenatide/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_exenatide/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m_sim_controls.json"></dbs-fmusim>
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The racemic ibuprofen record was rejected because the clearance parameter carries the unconvertible unit '3' (no SI value) and the R↔S-ibuprofen interconversion link has no parameter value.**
+**The ibuprofen record was rejected because the clearance parameter (CL = 0.062) carries the unit '3', which cannot be converted to SI, and the R-ibuprofen to S-ibuprofen interconversion link has no defined parameter, leaving an unlinked metabolite.**
 
-The clearance of racemic ibuprofen is reported as 0.062 with unit '3', a unit that could not be converted to SI, so the parameter entered the model without a usable value. The structure specifies interconversion between R-ibuprofen and S-ibuprofen, but the link parameter is 'none' of unknown kind, leaving the two enantiomers connected without a defined rate. As a result the record fails the check for compartments or species with no connection to the dose and was not published. Extracted — racemic ibuprofen: CL 0.062 3, V 10.9 L, kabs 1.1 h -1.
+The clearance of racemic ibuprofen is reported as 0.062 with unit '3', a unit that could not be converted to standard units, so no SI value could be established for this parameter. The model structure contains an interconversion relation between R-ibuprofen and S-ibuprofen, but the link parameter is recorded as 'none' of unknown kind, so the metabolite has no quantified path and was flagged as unlinked. Volume of distribution (10.9 L) and absorption rate constant (1.1 h-1) were extracted with usable units. Extracted — racemic ibuprofen: CL 0.062 3, V 10.9 L, kabs 1.1 h -1.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The fremanezumab pediatric model was held back because the absorption rate constant ka was not reported and a default value (0.252 1/day) was substituted, an unacceptable invented absorption, and covariate effects were never simulated.**
+**The fremanezumab pediatric model was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, and the covariate effects (weight on clearance, power 0.245 and 1.20) were never simulated.**
 
-The record lists ka = 0.252 1/day, but the source paper did not report an absorption rate constant, so a library default was used along with defaults for bioavailability F and lag time Tlag — this invented absorption was judged not acceptable. In addition, although the record defines weight covariate effects (theta values 0.245 and 1.20), only the reference individual was simulated, so the covariate scenarios were not exercised. A second reader also disagreed on the model parameterization, calling it apparent rather than mechanistic, and read a peripheral volume of 201.396 L where the record has none. Extracted — fremanezumab: CL 0.0905 L/day, V1 1.89 L, kabs 0.252, Q 0.262 L/day, V2 1.72 L.
+The record defines covariate effects of weight (theta_q319_weight_power, values 0.245 and 1.20) but only the reference individual was simulated, so these covariate scenarios were not exercised. The builder defaulted F, ka and Tlag because the source did not report them; the invented absorption (defaulted ka) was judged not acceptable. A second reader also disagreed on the parameterization, reading it as apparent rather than mechanistic. Extracted — fremanezumab: CL 0.0905 L/day, V1 1.89 L, kabs 0.252, Q 0.262 L/day, V2 1.72 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -145,7 +145,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fremanezumab/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de_modelica.zip" download>Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fremanezumab/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de_modelica.zip" download>Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_fremanezumab/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de_fmi.zip" download>Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_fremanezumab/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de_matlab.zip" download>Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_fremanezumab/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de_matlab_simbio.zip" download>Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -158,7 +158,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 120 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). Dose in the paper: 120 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_fremanezumab/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_fremanezumab/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de/Fremanezumab_Jones2021_pediatric_model_to_support_phase_3_de_sim_controls.json"></dbs-fmusim>
 

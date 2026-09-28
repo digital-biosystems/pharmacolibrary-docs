@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The two-compartment tranexamic acid model was refused because the intercompartmental clearance Q (CL2, L/h) has no extracted value, leaving the peripheral compartment without a defined connection to the dosed central compartment.**
+**The two-compartment tranexamic acid model was rejected because the intercompartmental clearance Q (labelled CL2) has no extracted value, leaving the peripheral compartment (V2 = 11.1 L) unlinked from the central compartment.**
 
-The record lists CL2 (L/h) with no value while CL (4.7 L/h), V1 (4.9 L) and V2 (11.1 L) are given, so the intercompartmental clearance would have been left at a library placeholder rather than the published estimate. With Q undefined, the second compartment has no path from the dose, making it unreachable in the structure. A second reader additionally read relative standard errors for the parameters (CL1 6.89%, CL2 21.36%, V1 9.86%, V2 6.83%) that this record leaves blank, and disagreed only on spelling of the drug and analyte names (tranexamic acid vs tranexamic_acid). Extracted — tranexamic acid: CL 4.7 L/h, V1 4.9 L, V2 11.1 L.
+The record lists Q (labelled CL2, L/h) without a value, so the peripheral compartment has no connection to the central compartment and the structure check flagged an unreachable compartment. The remaining parameters are present: CL = 4.7 L/h, V1 = 4.9 L, V2 = 11.1 L, and a separate CL2 typical value of 17.0 L/h. Relative standard errors for CL, Q, V1 and V2 were not recorded in this record, though a second reader reported 6.89%, 21.36%, 9.86% and 6.83% respectively; the second reader otherwise agreed on the analyte being tranexamic acid. Extracted — tranexamic acid: CL 4.7 L/h, V1 4.9 L, V2 11.1 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading tranexamic_acid; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

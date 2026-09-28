@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The chloroquine model was quarantined because bioavailability, clearance, volume of distribution and absorption lag time had no extracted values and were left at library defaults, and the built one-compartment enteral structure did not match the declared parent–metabolite topology.**
+**The chloroquine parent–metabolite model was quarantined because bioavailability, clearance, volume of distribution and absorption lag time had no extracted values and library placeholder values were substituted.**
 
-The only extracted parameter is the absorption rate constant kabs = 0.350 hr⁻¹ for chloroquine; F, Cl, Vd and Tlag had no values in the source, so library placeholder numbers stood in for them and the model was held back rather than published with invented numbers. The declared structure is parent–metabolite (chloroquine metabolising to desethylchloroquine via an unknown link parameter), but the obtained structure was a one-compartment enteral model, a topology mismatch. A second reader also disagreed on the dose compound and primary analyte, reading chloroquine together with azithromycin rather than chloroquine alone. Extracted — chloroquine: kabs 0.35 hr -1.
+Only the absorption rate constant kabs (0.350 hr⁻¹) was extracted for chloroquine; F, Cl, Vd and Tlag had no values in the source, so placeholder numbers stood in and the model was held back rather than published with invented values. The record's structure is a parent–metabolite system (chloroquine metabolized to desethylchloroquine), but the built model came out as a one-compartment enteral model instead of the expected multi-compartment parent–metabolite structure. A second reader also disagreed on the screened dose compound and primary analyte, reading chloroquine and azithromycin where the record lists chloroquine only. Extracted — chloroquine: kabs 0.35 hr -1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has chloroquine, the second reading chloroquine and azithromycin; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -165,7 +165,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">

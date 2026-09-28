@@ -82,6 +82,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=colecalciferol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
@@ -108,7 +109,7 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference/Colecalciferol_Deb2020_reference_modelica.zip" download>Colecalciferol_Deb2020_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference/Colecalciferol_Deb2020_reference_fmi.zip" download>Colecalciferol_Deb2020_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference/Colecalciferol_Deb2020_reference_matlab.zip" download>Colecalciferol_Deb2020_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference/Colecalciferol_Deb2020_reference_matlab_simbio.zip" download>Colecalciferol_Deb2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference/Colecalciferol_Deb2020_reference_sbml.zip" download>Colecalciferol_Deb2020_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
@@ -120,7 +121,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 100 mg infusion over 10 min, single dose. Dose in the paper: 100 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference/Colecalciferol_Deb2020_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_colecalciferol/Colecalciferol_Deb2020_reference/Colecalciferol_Deb2020_reference_sim_controls.json"></dbs-fmusim>
 

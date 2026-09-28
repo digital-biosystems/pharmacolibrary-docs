@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The vincristine 2-compartment model was quarantined because clearance, volume of distribution and the intercompartmental rate constants k12 and k21 had no source values, so library placeholders stood in for them.**
+**The vincristine pediatric model was quarantined because clearance, volume of distribution and the intercompartmental rate constants had no extracted values and library placeholders were substituted, and the absorption lag time (0.058 h) was left uncovered.**
 
-The record lists only the lag time (0.058 h) as a usable parameter; vincristine's clearance, volume of distribution, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The coverage check found 4 of 5 expected parameters covered, with tlag neither emitted nor defaulted. The model builder substituted generic default values for the missing clearance, volume of distribution, k12 and k21, which is what triggered the quarantine. Extracted — vincristine: CL 45.2, V1 23.3, Q 114, V2 576, tlag 0.058 h.
+Although the record lists CL 45.2 L/h, V1 23.3 L, Q 114 L/h and V2 576 L for vincristine, the model builder substituted placeholder values for clearance, volume of distribution, and the central-to-peripheral and peripheral-to-central rate constants, so the model was held back rather than published with invented numbers. The parameter coverage check expected 5 parameters but covered only 4: the absorption lag time tlag (0.058 h) was neither emitted nor defaulted. No inconclusive checks are reported. Extracted — vincristine: CL 45.2, V1 23.3, Q 114, V2 576, tlag 0.058 h.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -74,6 +74,7 @@ not matched (stem Centanni_2024)
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |

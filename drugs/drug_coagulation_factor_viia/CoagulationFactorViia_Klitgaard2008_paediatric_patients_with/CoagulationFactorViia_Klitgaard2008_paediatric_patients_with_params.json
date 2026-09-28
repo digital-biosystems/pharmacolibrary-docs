@@ -1,8 +1,9 @@
 {
+ "dose_source": "library default",
  "model_id": "CoagulationFactorViia_Klitgaard2008_paediatric_patients_with",
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 1.3027777777777776e-06,
@@ -10,14 +11,14 @@
   "VdPerKg": 8.3e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 660.0000000662079
+  "central.C": 660.0000000662008
  },
  "reference_peaks": {
-  "C_central": 0.016104111009348897
+  "central.C": 0.001610410985417772
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

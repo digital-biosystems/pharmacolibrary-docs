@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The empagliflozin model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no values, so library placeholder values stood in for these parameters.**
+**The empagliflozin three-compartment model for type 2 diabetes patients was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no source values and library placeholders were substituted.**
 
-The record lists CL 0.0110, V2 1.27, Q/F 6.34, V3 0.959 and ka 1.23, yet the coverage check found only 2 of 4 expected parameters covered, with V2 and Q/F neither emitted nor defaulted. Placeholder values were substituted for the missing clearance, volume of distribution, absorption rate constant and lag time, and the builder additionally assumed F=1 and Fm=1 with no molar correction (apparent parameterization). The ka default was an invented absorption term since it was not reported in the source, and the deviations check judged this unacceptable. A second reader also disagreed on one absorption parameter field, reading 0.500 where the record had null. Extracted — empagliflozin: CL 0.011, V2 1.27, Q/F 6.34, V3 0.959, kabs 1.23.
+Although the record lists CL 0.0110, V2 1.27, Q/F 6.34, V3 0.959 and kabs 1.23, the coverage check found only 2 of 4 expected parameters emitted or defaulted, with V2 and Q/F neither emitted nor defaulted. The model builder substituted generic placeholder values for empagliflozin's clearance, volume of distribution, absorption rate constant and absorption lag time, and the absorption rate constant was flagged as invented since it was not reported in the source. Bioavailability was assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent. A second reader assigned an absorption lag time of 0.500 where this record has none. Extracted — empagliflozin: CL 0.011, V2 1.27, Q/F 6.34, V3 0.959, kabs 1.23.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of alag1: this record has none, the second reading 0.500. That field shapes the model, so the record is marked disputed.
 
@@ -129,6 +129,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['V2', 'Q/F'] |

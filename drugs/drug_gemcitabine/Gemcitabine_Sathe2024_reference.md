@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The gemcitabine two-compartment record was rejected because its peripheral compartment (V2 = 0.908 L or 2177.0 L) has no intercompartmental clearance linking it to the dose, leaving it unreachable.**
+**The gemcitabine two-compartment record was rejected because its peripheral compartment (V2, 0.908 L) is unreachable — no path links it to the dose — and the second reader disputes the V2 value, reading 0.508 L instead of 0.908 L.**
 
-The structure lists two compartments with volumes V1/F = 49.0 L and V2 = 0.908 L (also V2/F = 2177.0 L) and clearance CL = 0.133 L/h, but no distribution clearance (Q) parameter was extracted, so the second compartment has no path from the administered dose — the reason cited for rejection. The parameter labels also carry the SN38 suffix (CLSG, V1SN38/F, V2SN38/F, V2SN38/F) although the compound is gemcitabine, suggesting labels carried over from another molecule's model. A second reader recorded a value of 0.508 where this record has none, so that comparison could not be computed. Extracted — gemcitabine: CL 0.133 L/h, V1/F 49 L, V2 0.908 L, V2/F 2.18e+03 L.
+The record lists gemcitabine parameters CL 0.133 L/h, V1/F 49.0 L, V2 0.908 L and V2/F 2177.0 L, but the structure check found an unreachable/orphan compartment, meaning the peripheral compartment has no connection from the dose. The second reader disagrees on the V2 value, giving 0.508 L where this record has null for that field. The labels also carry SN38/SG naming, suggesting parameters borrowed from another compound's model. Extracted — gemcitabine: CL 0.133 L/h, V1/F 49 L, V2 0.908 L, V2/F 2.18e+03 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q319: this record has none, the second reading 0.508. That field does not shape the model.
 

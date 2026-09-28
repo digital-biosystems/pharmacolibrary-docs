@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Ifosfamide's clearance had no extracted value, so a library placeholder stood in for Cl and the parent–metabolite model was quarantined rather than published.**
+**The ifosfamide parent–metabolite model was quarantined because clearance had no extracted value and a library placeholder was substituted, leaving the model without a real Cl.**
 
-The record gives ifosfamide's volume of distribution (46.0 L) but no clearance value; the builder's substitution list shows Cl was defaulted, with placeholder values substituted for the missing source value. The established note confirms a placeholder stood in for ifosfamide's clearance and the model was held back rather than published with an invented number. The structural check also failed: the expected parent–metabolite structure (parent with metabolite compartment linked by the metabolism rate constant Kfm) did not match the obtained single-compartment parent structure, so this mismatch is recorded alongside the missing clearance. Extracted — ifosfamide: V 46 l.
+The record contains only a volume of distribution for ifosfamide (V = 46.0 L); clearance had no value from the source, so a library placeholder stood in for it and the model was held back rather than published with an invented number. The model structure also failed its check: a parent–metabolite structure was expected, but the record was built as a one-compartment model, despite the metabolism link from ifosfamide to its metabolites via rate constant Kfm. Extracted — ifosfamide: V 46 l.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -73,10 +73,11 @@ Brain EG; Rezai K; Lokiec F; Gutierrez M; Urien S et al. (2008). British journal
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">

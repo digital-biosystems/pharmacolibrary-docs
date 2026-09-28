@@ -1,5 +1,9 @@
 {
+ "dose_source": "library default",
  "model_id": "Nefopam_Djerada2014_reference",
+ "molar_masses": {
+  "central.C": 0.253345
+ },
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,19 +11,20 @@
  "parameters": {
   "Cl": 4.805555555555555e-06,
   "F": 1.0,
+  "MM": 0.253345,
   "VdPerKg": 0.0016285714285714287,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "k12": 0.0001966374269005848,
   "k21": 0.0001077724358974359,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662083
+  "central.C": 660.0000000662136
  },
  "reference_peaks": {
-  "central.C": 0.0006166335225078187
+  "central.C": 6.166747340718986e-05
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;dihydrocodeine&quot;,&quot;href&quot;:&quot;drugs/drug_dihydrocodeine/&quot;},{&quot;label&quot;:&quot;Webb_2001 \u00b7 PD maximum pain score&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydrocodeine_Webb2001_reference&quot;,&quot;label&quot;:&quot;Webb_2001_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydrocodeine_Webb2001_reference&quot;,&quot;label&quot;:&quot;Webb_2001_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # maximum pain score — PD  <span class="pk-badge pk-badge--green">extracted</span>

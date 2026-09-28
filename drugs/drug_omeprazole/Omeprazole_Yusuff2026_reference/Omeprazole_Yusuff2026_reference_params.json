@@ -1,11 +1,17 @@
 {
+ "dose_source": "paper",
  "model_id": "Omeprazole_Yusuff2026_reference",
  "molar_masses": {
-  "C_central": 0.345416
+  "central.C": 0.345416
  },
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  280.0,
+  420.0
  ],
  "parameters": {
   "Cl": 1.7277777777777778e-06,
@@ -14,15 +20,15 @@
   "VdPerKg": 0.0020685714285714287,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.00028,
   "k12": 4.27793124616329e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 660.0000000662087
+  "central.C": 660.0000000662164
  },
  "reference_peaks": {
-  "C_central": 0.0006881287236963023
+  "central.C": 0.0019267604636429448
  },
  "stop_time": 345600.0,
  "template": "PK_2C",

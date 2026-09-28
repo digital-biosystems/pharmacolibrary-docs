@@ -1,4 +1,5 @@
 {
+ "dose_source": "paper",
  "model_id": "Ibuprofen_Knihinicki1990_reference",
  "molar_masses": {
   "central.C": 0.2062808
@@ -7,6 +8,12 @@
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  700.0,
+  1400.0,
+  2800.0
+ ],
  "parameters": {
   "Cl": 1.47e-05,
   "F": 1.0,
@@ -14,14 +21,14 @@
   "VdPerKg": 0.0028902952449169493,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.0007,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662162
+  "central.C": 660.0000000662044
  },
  "reference_peaks": {
-  "central.C": 0.00048364626862709204
+  "central.C": 0.0033855234068324237
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

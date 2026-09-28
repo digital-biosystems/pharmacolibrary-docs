@@ -1,25 +1,34 @@
 {
+ "dose_source": "paper",
  "model_id": "Rifabutin_Osipova2023_reference",
+ "molar_masses": {
+  "central.C": 0.8470046999999999
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  437.5
+ ],
  "parameters": {
   "Cl": 1.5258333333333333e-08,
   "F": 1.0,
+  "MM": 0.8470046999999999,
   "VdPerKg": 9.954857142857142e-06,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.0004375,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662088
+  "central.C": 660.0000000662029
  },
  "reference_peaks": {
-  "central.C": 0.14256640441342736
+  "central.C": 0.6237280185932332
  },
- "stop_time": 86400.0,
+ "stop_time": 158400.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

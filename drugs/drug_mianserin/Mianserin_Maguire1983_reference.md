@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The mianserin record was rejected for a dimension mismatch on a structural parameter, and it was built from the abstract alone, so reported summary statistics stood in for a fitted model.**
+**The mianserin record was rejected because the apparent volume of distribution, 20.2 l/kg, is reported per kilogram of body weight, giving a dimension mismatch on a structural parameter of the one-compartment model.**
 
-The record for mianserin in elderly depressed patients was refused because of a dimension mismatch on a structural parameter. It was built from the abstract alone, meaning the reported summary statistics (e.g. peak concentration 117 micrograms/l, elimination half-life 33 h, apparent volume of distribution 20.2 l/kg, oral clearance 0.49 l/kg/h) stood in for a fitted model. A second reader disagreed on the model parameterization, reading it as mechanistic rather than apparent, and read all seven parameter values as null, including the absorption half-life of 0.8 h and the distribution half-life of 3.4 h. Extracted — mianserin: t1/2ka 0.8 h, Cmax 117 micrograms/l, tmax 2.2 h, t1/2α 3.4 h, t1/2z 33 h, V/F 20.2 1/kg, CL/F 0.49 l/kg/h.
+The record for mianserin in elderly depressed patients was built from the paper's abstract only, so reported summary statistics (Cmax 117 micrograms/l, tmax 2.2 h, absorption half-life 0.8 h, distribution half-life 3.4 h, terminal half-life 33 h, V/F 20.2 l/kg, CL/F 0.49 l/kg/h) stood in for a fitted model. The refusal rests on a dimension mismatch on a structural parameter: V/F is given per kilogram body weight rather than as an absolute volume, which is inconsistent with the model's parameterization. A second reader also disputed the parameterization itself, reading it as mechanistic rather than apparent, and left all seven parameter values unread, so the disagreement is inconclusive on the numbers. Extracted — mianserin: t1/2ka 0.8 h, Cmax 117 micrograms/l, tmax 2.2 h, t1/2α 3.4 h, t1/2z 33 h, V/F 20.2 1/kg, CL/F 0.49 l/kg/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

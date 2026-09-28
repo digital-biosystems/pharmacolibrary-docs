@@ -1,4 +1,5 @@
 {
+ "dose_source": "WHO ATC DDD 150 mg parenteral (J01XB02)",
  "model_id": "PolymyxinB_Manchandani2018_reference",
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
@@ -10,16 +11,16 @@
   "VdPerKg": 0.00049,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.00015,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662071
+  "central.C": 660.0000000662016
  },
  "reference_peaks": {
-  "central.C": 0.002897815369392353
+  "central.C": 0.004346723005509236
  },
- "stop_time": 86400.0,
+ "stop_time": 172800.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

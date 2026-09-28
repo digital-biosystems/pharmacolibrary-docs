@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The propafenone rat record, built from the abstract alone, was rejected because its clearance of 62.8 ml/min·kg against a volume of 2.4 ml/kg is physiologically implausible, indicating a unit or scale extraction error.**
+**The propafenone record from Fernández_1991 was rejected because the volume of distribution (2.4 ml/kg) and clearance (62.8 ml/min.kg) fail plausibility checks, indicating a unit/scale extraction error from the abstract-only source.**
 
-The record for propafenone in rats was built from the paper's abstract alone, so the reported summary statistics stood in for a fitted model. The extracted parameters were t1/2β of 55.4 min, a central volume of 2.4 ml/kg, clearance of 62.8 ml/min·kg, and AUC∞ of 31.6 micrograms·min/ml. The clearance-to-volume magnitude falls outside the physiological window, consistent with a unit or scale extraction error, and a dimension mismatch was flagged on a structural parameter. A second reader recorded no values for any of the four parameters, so none of the extracted numbers could be corroborated. Extracted — propafenone: t1/2β 55.4 min, V 2.4 ml/kg, CL 62.8 ml/min.kg, AUC∞ 31.6 micrograms.min/ml.
+The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. A dimension mismatch was flagged on a structural parameter, and the clearance of 62.8 ml/min.kg and volume of 2.4 ml/kg for propafenone in rats fell outside the physiological window, pointing to an implausible magnitude from a unit or scale extraction error. A second reader returned no values for all four parameters (t1/2β 55.4 min, V 2.4 ml/kg, CL 62.8 ml/min.kg, AUC∞ 31.6 micrograms.min/ml), disagreeing with each of them. Extracted — propafenone: t1/2β 55.4 min, V 2.4 ml/kg, CL 62.8 ml/min.kg, AUC∞ 31.6 micrograms.min/ml.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc0-oo: this record has 31.6, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

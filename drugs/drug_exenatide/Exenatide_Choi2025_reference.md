@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**This exenatide two-compartment model record was rejected because a compartment has no path from the dose, and a second reader disputed several extracted values, including CL/F (0.044 vs 0.032 L/h).**
+**The exenatide two-compartment model was rejected because a compartment has no path from the dose, and the extracted parameter values conflict with a second reader's readings (e.g. CL/F 0.044 vs 0.032 L/h).**
 
-The record describes a two-compartment exenatide model with CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L and absorption rate constant ka 0.006 h-1, but it was refused because one compartment is unreachable or orphan — it has no dosing path, so the structure is not a connected pharmacokinetic system. A second reader disagreed on multiple extracted values: CL/F 0.044 versus 0.032 L/h, one value 2.68 versus 46.27, and several values present in one reading and absent in the other (e.g. 18 vs null, 6 vs null, 21 vs null, and null vs 5.52, 24.8, 66.93). These disagreements mean the extracted parameter set is not reliably established, though the stated rejection cause is the orphan compartment. Extracted — exenatide: CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
+The record reports exenatide CL/F 0.044 L/h, central volume 2.8 L, peripheral volume 3.96 L and absorption rate constant 0.006 h-1 in a two-compartment structure, but the structure check found an unreachable or orphan compartment or an unlinked metabolite. A second reader disagreed on many values: CL/F 0.044 vs 0.032 L/h, one value 2.68 vs 46.27, and several values present in one reading and absent in the other (18 vs null, 6 vs null, 21 vs null; null vs 5.52, null vs 24.8, null vs 66.93). The source is a review (secondary text), so the numbers may not come from a fitted model. Extracted — exenatide: CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 0.044, the second reading 0.032; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

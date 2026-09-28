@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 2.75e-05, model 2.37e-05).**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 2.75e-05, model 3.57e-07).**
 
 Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — dexamethasone: V/F 26.6 L, CL/F 131 L/h, kabs 0.773 day -1, tlag 0.29 h.
 
@@ -92,14 +92,15 @@ Calderin JM; Resendiz-Galvan JE; Abdelgawad N; Davis A; Stek C; Wiesner L; et al
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=dexamethasone) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | pass | 2.75e-05 | 2.374106187714875e-05 | 0.8633 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 3.47e-05 | 2.374106187714875e-05 | 0.6842 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 2.75e-05 | 3.56956581123157e-07 | 0.013 | mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.47e-05 | 3.56956581123157e-07 | 0.0103 | mg/L→SI vs simulated kg/m3 |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -133,7 +134,7 @@ Calderin JM; Resendiz-Galvan JE; Abdelgawad N; Davis A; Stek C; Wiesner L; et al
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0322 /h, lag 17.4 min, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 1.5 mg, single dose, first-order absorption (ka 0.0322 /h, lag 17.4 min, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1.5 mg oral (H02AB02) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_dexamethasone/Dexamethasone_Calderin2025_reference/Dexamethasone_Calderin2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_dexamethasone/Dexamethasone_Calderin2025_reference/Dexamethasone_Calderin2025_reference_sim_controls.json"></dbs-fmusim>
 

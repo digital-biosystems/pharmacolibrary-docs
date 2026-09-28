@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The empagliflozin paediatric model was quarantined because its volume of distribution, absorption rate constant and absorption lag time had no source values, so library placeholder defaults were substituted, and V2/F and Q/F were not extracted.**
+**The empagliflozin paediatric model was quarantined because volume of distribution, absorption rate constant and absorption lag time had no source values and library placeholder values were substituted.**
 
-The record lists CL/F 6.74 L/h, V2/F 4.12 L, ka 0.239 1/h, Q/F 5.51 L/h, V3/F 71.7 L and D1 0.326 h, yet empagliflozin's volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The parameter coverage check found only 2 of 4 expected parameters covered, with V2/F and Q/F neither emitted nor defaulted. The absorption rate constant was defaulted rather than reported in the source, and the model was parameterized as apparent with F=1, Fm=1 and no molar correction. Extracted — empagliflozin: CL/F 6.74 L/h, V2/F 4.12 L, kabs 0.239, Q/F 5.51 L/h, V3/F 71.7 L, D1 0.326 h.
+The paper reports empagliflozin parameters for patients aged 10–17 years with type 2 diabetes (CL/F 6.74 L/h, V2/F 4.12 L, kabs 0.239 1/h, Q/F 5.51 L/h, V3/F 71.7 L, D1 0.326 h), but the record's volume of distribution, absorption rate constant and absorption lag time had no extracted value, so placeholder values stood in for missing source values and the model was held back rather than published with an invented number. The absorption check also failed because the placeholder absorption rate constant was judged an invented absorption term not acceptable for publication. The parameter coverage check found only 2 of 4 expected parameters covered, with V2/F and Q/F neither emitted nor defaulted. Bioavailability was assumed F=1 and Fm=1 with no molar correction (apparent parameterization). Extracted — empagliflozin: CL/F 6.74 L/h, V2/F 4.12 L, kabs 0.239, Q/F 5.51 L/h, V3/F 71.7 L, D1 0.326 h.
 
 Independently confirmed by `gpt-oss:120b`.
 
@@ -133,6 +133,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['V2/F', 'Q/F'] |

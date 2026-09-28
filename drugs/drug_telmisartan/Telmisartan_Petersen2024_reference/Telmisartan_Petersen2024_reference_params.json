@@ -1,4 +1,5 @@
 {
+ "dose_source": "WHO ATC DDD 40 mg oral (C09CA07)",
  "model_id": "Telmisartan_Petersen2024_reference",
  "molar_masses": {
   "central.C": 0.5146168999999999
@@ -15,7 +16,7 @@
   "VdPerKg": 0.0058,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 4e-05,
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
@@ -23,7 +24,7 @@
   "central.C": 13130.260521042084
  },
  "reference_peaks": {
-  "central.C": 0.00015056576780345232
+  "central.C": 6.02267470373465e-05
  },
  "stop_time": 93600.0,
  "template": "PK_1C_enteral",

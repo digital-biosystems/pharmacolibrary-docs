@@ -1,4 +1,5 @@
 {
+ "dose_source": "WHO ATC DDD 400 mg oral (N02AB02)",
  "model_id": "Pethidine_Koska1981_reference",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
@@ -11,15 +12,15 @@
   "VdPerKg": 0.0037400000000000003,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.0004,
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 12293.386773547094
+  "central.C": 12240.2627389809
  },
  "reference_peaks": {
-  "central.C": 0.00022042969890928745
+  "central.C": 0.0008817315862304143
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

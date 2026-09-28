@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The nefopam two-compartment record was rejected because the elimination clearance unit 'litre h 21' could not be converted to SI and the structure contains a compartment with no path from the dose.**
+**The nefopam two-compartment record was rejected because the clearance parameter (52.9 litre h⁻¹) carries a unit that could not be converted to SI, and the peripheral compartment appears unreachable from the dose.**
 
-The reported elimination clearance of 52.9 (labelled 'Cl el (SE %)') carried the unit 'litre h 21', which could not be converted to SI units, so the parameter entered the model without a usable value. The two-compartment structure was also flagged as containing an unreachable or orphan compartment, i.e. a compartment with no connection from the dose. A second reader disagreed on several parameters: it read the elimination clearance as null instead of 52.9, left V1 (24.3) and V2 (183.3) unread, and read a value of 4481 for NPD where this record had none. Extracted — nefopam: V1 24.3 litre, V2 183 litre, CL 52.9 litre h 21.
+For nefopam in healthy adults, the elimination clearance is reported as 52.9 litre h 21, a unit that could not be converted to a standard (SI) expression, so no SI value could be established for this parameter. The structure check also flagged an unreachable or orphan compartment in the two-compartment topology. A second reader additionally disagreed on the extracted values, reading null for the clearance (52.9), V1 (24.3 litre) and V2 (183.3 litre), and reporting 4481 for a parameter absent from this record. Extracted — nefopam: V1 24.3 litre, V2 183 litre, CL 52.9 litre h 21.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of elimination clearance [cl el (se %)]: this record has 52.9, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 

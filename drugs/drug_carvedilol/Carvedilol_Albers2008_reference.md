@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The absorption rate constant kabs of carvedilol is recorded as 0.62 l h⁻¹, a first-order rate constant that must carry the unit h⁻¹, so the record was rejected for a dimensional mismatch on a structural parameter.**
+**The carvedilol absorption rate constant kabs is reported as 0.62 with unit 'l h -1', a dimension mismatch for a first-order rate constant, so the record was rejected.**
 
-The record lists the first-order absorption rate constant kabs with the verbatim label 'KA (l h -1 )' and value 0.62 in l h⁻¹, but a rate constant has the dimension of reciprocal time (h⁻¹), not flow (l h⁻¹); this unit-versus-dimension mismatch on a structural parameter is the stated reason for rejection. The remaining carvedilol parameters (CL/F 37.6 l h⁻¹, V2/F 21.8 l, V3/F 103.7 l, Q/F 13.6 l h⁻¹, tlag 0.15 h) carry dimensionally consistent units. The finding also notes that the reported unit l h⁻¹ for this parameter could not be converted to SI units, so kabs entered the model without an SI value; the record is otherwise a one-compartment structure for paediatric congestive heart failure patients. Extracted — carvedilol: CL/F 37.6 l h -1, V2/F 21.8 l, V3/F 104 l, Q/F 13.6 l h -1, kabs 0.62 l h -1, tlag 0.15 h.
+In the Albers_2008 paediatric carvedilol model, kabs is defined as an absorption rate constant, whose unit must be reciprocal time (h^-1), but the record carries the unit 'l h -1' (litres per hour), which does not match that dimension. This unit could not be converted to SI, so the parameter reached the model without an SI value and the dimension check on this structural parameter failed. The other parameters (CL/F 37.6 l/h, V2/F 21.8 l, V3/F 103.7 l, Q/F 13.6 l/h, tlag 0.15 h) are dimensionally consistent. Extracted — carvedilol: CL/F 37.6 l h -1, V2/F 21.8 l, V3/F 104 l, Q/F 13.6 l h -1, kabs 0.62 l h -1, tlag 0.15 h.
 
 Independently confirmed by `gpt-oss:120b`.
 

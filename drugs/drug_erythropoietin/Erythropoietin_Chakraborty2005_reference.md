@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The erythropoietin model was held back because absorption was invented: ka and Tlag were never reported in the abstract-only source, so library defaults stood in for them.**
+**The erythropoietin record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, an invented absorption input the review deemed unacceptable.**
 
-The record rests on the paper's abstract alone, so the reported summary statistics stood in for a fitted model, and the absorption rate constant ka and lag time Tlag were not reported — default values were substituted. The invented first-order absorption input was judged not acceptable, which triggered the hold. The parameterization is also disputed: the record assumes apparent parameters (CL/F = 1.86 L/h, V/F = 27.8 L, F = 1, Fm = 1, no molar correction), while a second reader classified it as mechanistic and could not confirm either parameter value. Extracted — erythropoietin: CL/F 1.86 L/h, V/F 27.8 L.
+The record comes from the paper's abstract only, so summary statistics stood in for a fitted model; ka and the lag time were given assumed placeholder values because the source reports none. The builder also assumed bioavailability F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input, and a second reader disputed this parameterization (preferring mechanistic) and could not confirm the reported CL/F of 1.86 L/h or V/F of 27.8 L. Extracted — erythropoietin: CL/F 1.86 L/h, V/F 27.8 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -143,7 +143,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_erythropoietin/Erythropoietin_Chakraborty2005_reference/Erythropoietin_Chakraborty2005_reference_modelica.zip" download>Erythropoietin_Chakraborty2005_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_erythropoietin/Erythropoietin_Chakraborty2005_reference/Erythropoietin_Chakraborty2005_reference_fmi.zip" download>Erythropoietin_Chakraborty2005_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_erythropoietin/Erythropoietin_Chakraborty2005_reference/Erythropoietin_Chakraborty2005_reference_matlab.zip" download>Erythropoietin_Chakraborty2005_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_erythropoietin/Erythropoietin_Chakraborty2005_reference/Erythropoietin_Chakraborty2005_reference_matlab_simbio.zip" download>Erythropoietin_Chakraborty2005_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_erythropoietin/Erythropoietin_Chakraborty2005_reference/Erythropoietin_Chakraborty2005_reference_sbml.zip" download>Erythropoietin_Chakraborty2005_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

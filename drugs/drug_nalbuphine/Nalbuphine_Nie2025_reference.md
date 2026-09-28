@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Nalbuphine's intercompartmental clearance Q (0.0134 L/h) and peripheral volume V2 (0.187 L) fall far outside physiological plausibility, indicating a unit or scale extraction error, so the record was rejected.**
+**The nalbuphine two-compartment model was rejected because the peripheral volume V2 (0.187 L) and intercompartmental clearance Q (0.0134 L/h) fall far outside physiological windows, indicating a unit or scale extraction error.**
 
-The two-compartment nalbuphine model reports CL 176.0 L/h and V1 519.0 L, but Q is recorded as 0.0134 L/h and V2 as 0.187 L — magnitudes implausible for a population distribution clearance and peripheral volume, consistent with a unit or scale error during extraction. A second reader recorded the same Q value as 53.9 L/h, disagreeing with the 0.0134 L/h in this record, which supports a transcription-scale discrepancy in the intercompartmental clearance. Extracted — nalbuphine: CL 176 L/h, V1 519 L, V2 0.187 L, Q 0.0134 L/h.
+The record reports CL 176.0 L/h and V1 519.0 L for nalbuphine, but V2 is only 0.187 L and Q only 0.0134 L/h, magnitudes flagged as implausible and consistent with a unit/scale extraction error. A second reader recorded the disputed value as 53.9, matching the record's own entry, so the disagreement does not resolve the implausible magnitudes. The source is a review reference read from secondary text, so the values are summary statistics rather than a fitted model from the primary paper. Extracted — nalbuphine: CL 176 L/h, V1 519 L, V2 0.187 L, Q 0.0134 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has 53.9, the second reading 53.9. That field shapes the model, so the record is marked disputed.
 

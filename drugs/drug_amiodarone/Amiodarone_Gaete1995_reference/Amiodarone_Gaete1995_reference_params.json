@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 200 mg oral (C01BD01)",
  "model_id": "Amiodarone_Gaete1995_reference",
+ "molar_masses": {
+  "central.C": 0.6453116
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,19 +11,20 @@
  "parameters": {
   "Cl": 4.958333333333334e-06,
   "F": 68.6,
+  "MM": 0.6453116,
   "Tlag": 0.0,
   "VdPerKg": 0.0029900000000000005,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.0002,
   "ka": 0.00022777777777777775,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 11454.45841279315
+  "central.C": 11454.092130428813
  },
  "reference_peaks": {
-  "central.C": 0.025201193231957627
+  "central.C": 0.050402384833392655
  },
  "stop_time": 151200.0,
  "template": "PK_1C_enteral",

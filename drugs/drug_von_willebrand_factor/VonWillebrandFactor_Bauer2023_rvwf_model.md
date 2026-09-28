@@ -135,7 +135,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | skipped | 1.74 | 3.5360853764730136 | not captured | unresolved time unit 'times longer' |
+| T1_t_half_terminal | reference | skipped | 1.74 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -157,11 +157,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Bauer2023_rvwf_model/VonWillebrandFactor_Bauer2023_rvwf_model_modelica.zip" download>VonWillebrandFactor_Bauer2023_rvwf_model_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Bauer2023_rvwf_model/VonWillebrandFactor_Bauer2023_rvwf_model_fmi.zip" download>VonWillebrandFactor_Bauer2023_rvwf_model_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Bauer2023_rvwf_model/VonWillebrandFactor_Bauer2023_rvwf_model_matlab.zip" download>VonWillebrandFactor_Bauer2023_rvwf_model_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Bauer2023_rvwf_model/VonWillebrandFactor_Bauer2023_rvwf_model_matlab_simbio.zip" download>VonWillebrandFactor_Bauer2023_rvwf_model_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Bauer2023_rvwf_model/VonWillebrandFactor_Bauer2023_rvwf_model_sbml.zip" download>VonWillebrandFactor_Bauer2023_rvwf_model_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Bauer2023_rvwf_model/VonWillebrandFactor_Bauer2023_rvwf_model_cellml.zip" download>VonWillebrandFactor_Bauer2023_rvwf_model_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Bauer2023_rvwf_model/VonWillebrandFactor_Bauer2023_rvwf_model_cellml.zip" download>VonWillebrandFactor_Bauer2023_rvwf_model_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>

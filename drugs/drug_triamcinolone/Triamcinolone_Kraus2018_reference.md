@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The triamcinolone record was rejected because its extracted clearance (0.0001 mL/h/kg) and steady-state volume (0.0497 mL/kg) fall far outside physiological ranges, indicating a unit or scale extraction error.**
+**The triamcinolone record was rejected because its extracted clearance (0.0001 mL/h/kg) and volume of distribution (0.0497 mL/kg) are physiologically implausible, indicating a unit or scale extraction error.**
 
-The record lists a geometric-mean clearance of 0.0001 mL/h/kg and an observed steady-state volume of 0.0497 mL/kg for triamcinolone, magnitudes physiologically implausible for this drug and consistent with a unit or scale misreading. A second reader disagreed with several extracted values, for example 231 versus 966.7 and 168.0 versus 7.0, while leaving other contested values unconfirmed. The source is a review paper read at secondary level, so the parameters may not reflect a fitted model from the original study. Extracted — triamcinolone: CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
+For triamcinolone, the total clearance is recorded as 0.0001 mL/h/kg and the volume of distribution as 0.0497 mL/kg, magnitudes far outside the physiological window for these parameters, consistent with a unit/scale extraction error. The review also noted unresolved value disagreements with a second reader, e.g. 231 versus 966.7 and 168.0 versus 7.0, with no second reader recorded for several fields. Extracted — triamcinolone: CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 543, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

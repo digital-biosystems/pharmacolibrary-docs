@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 0.00667, model 7.1).**
+**The model does not reproduce the paper's terminal half-life (paper 0.00667, model 5.26).**
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — luseogliflozin: CL/F 2.78 L/h, V 21.1 L, CL 3.69 L/h, kabs 20.3 1/h.
 
@@ -90,9 +90,9 @@ not matched (stem Samukawa_2017)
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | fail | 0.006666666666666666 | 7.103614219283837 | 1065.5421 | s→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 7.0 | 7.103614219283837 | 1.0148 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 6.81 | 7.103614219283837 | 1.0431 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.006666666666666666 | 5.261143729573358 | 789.1716 | s→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 7.0 | 5.261143729573358 | 0.7516 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 6.81 | 5.261143729573358 | 0.7726 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -113,7 +113,7 @@ not matched (stem Samukawa_2017)
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_modelica.zip" download>Luseogliflozin_Samukawa2017_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_modelica.zip" download>Luseogliflozin_Samukawa2017_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_fmi.zip" download>Luseogliflozin_Samukawa2017_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_matlab.zip" download>Luseogliflozin_Samukawa2017_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_matlab_simbio.zip" download>Luseogliflozin_Samukawa2017_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -126,7 +126,7 @@ not matched (stem Samukawa_2017)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 20.3 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 0.5 mg, single dose, first-order absorption (ka 20.3 /h, F 1). Doses in the paper: 0.5, 1, 2.5, 5 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference/Luseogliflozin_Samukawa2017_reference_sim_controls.json"></dbs-fmusim>
 

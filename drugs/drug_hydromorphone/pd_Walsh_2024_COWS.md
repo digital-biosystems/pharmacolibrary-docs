@@ -47,6 +47,47 @@ Walsh SL; Comer SD; Zdovc JA; Sarr C; Björnsson M; Strandgården K; et al. et a
 </details>
 
 
+## Exposure-response model
+
+`Hydromorphone_Walsh2024_PD_cows` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 45.3 score | — |
+| Emax | -1 score | — |
+| EC50 | 0.116 ng/mL | 1.16e-07 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 45.3, `at_EC50` = 44.8, `at_inf` = 44.3
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+- `pd_binding_off_target_driver` — driver compound 'buprenorphine' is not 'hydromorphone' nor one of its metabolites — the curve belongs to that compound's exposure (S12)
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | fail | off-target driver — the curve belongs to that compound |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | curve direction matches effect_direction |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Blocking:
+
+- off_target_driver: 'buprenorphine' is not 'hydromorphone' (S12)
+
+Advisory:
+
+- defaulted: gamma (convention)
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
@@ -55,7 +96,9 @@ Walsh SL; Comer SD; Zdovc JA; Sarr C; Björnsson M; Strandgården K; et al. et a
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+<dbs-fmusim paramsurl="drugs/drug_hydromorphone/Hydromorphone_Walsh2024_PD_cows/Hydromorphone_Walsh2024_PD_cows_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_hydromorphone/Hydromorphone_Walsh2024_PD_cows/Hydromorphone_Walsh2024_PD_cows_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PD_SigmoidEmaxSweep` · parameters `Hydromorphone_Walsh2024_PD_cows_params.json` · controls `Hydromorphone_Walsh2024_PD_cows_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

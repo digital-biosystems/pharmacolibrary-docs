@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The metformin record was held back because the absorption rate constant ka and lag time Tlag were not reported in the source and library defaults were substituted, so the absorption input was judged invented and not acceptable.**
+**The metformin record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside defaults for Tlag and an apparent (F=1) parameterization.**
 
-The record reports only apparent oral parameters for metformin, CL/F = 1140 mL/min and V/F = 600 L, with a one-compartment structure. The absorption rate constant ka and lag time Tlag are absent from the source, so defaults were substituted and the first-order depot absorption was flagged as invented rather than reported. The parameterization assumes F = 1 and Fm = 1 with no molar correction, meaning all parameters are apparent (/F) values for extravascular dosing. The second reader returned no value for the clearance and volume entries, so the value comparison could not be computed. Extracted — metformin: CL/F 1.14e+03 mL/min, V/F 600 L.
+The source reports only CL/F = 1140 mL/min and V/F = 600 L for metformin; ka and Tlag were missing, so library defaults were used, and the invented ka was flagged as not acceptable. The model also assumes F=1 and Fm=1 with no molar correction, consistent with the apparent (/F) parameterization and first-order depot input for extravascular dosing. A second reader recorded no values for these fields, disagreeing with the extracted 1140 and 600. Extracted — metformin: CL/F 1.14e+03 mL/min, V/F 600 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q26: this record has 500, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
@@ -143,7 +143,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 250 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 250–2000 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_metformin/Metformin_Liang2017_reference/Metformin_Liang2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metformin/Metformin_Liang2017_reference/Metformin_Liang2017_reference_sim_controls.json"></dbs-fmusim>
 

@@ -1,4 +1,5 @@
 {
+ "dose_source": "WHO ATC DDD 7.5 mg oral (B01AA03)",
  "model_id": "Warfarin_Mungall1985_reference",
  "molar_masses": {
   "central.C": 0.3083279
@@ -15,15 +16,15 @@
   "VdPerKg": 0.00020428571428571428,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 7.5e-06,
   "ka": 0.0005439814814814814,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 8541.023259905993
+  "central.C": 8598.161430091193
  },
  "reference_peaks": {
-  "central.C": 0.005955282856570614
+  "central.C": 0.00044664377334287773
  },
  "stop_time": 518400.0,
  "template": "PK_1C_enteral",

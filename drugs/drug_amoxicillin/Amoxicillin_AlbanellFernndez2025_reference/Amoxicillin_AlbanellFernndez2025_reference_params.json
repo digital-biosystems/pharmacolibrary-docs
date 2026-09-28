@@ -1,4 +1,5 @@
 {
+ "dose_source": "WHO ATC DDD 3000 mg parenteral (J01CA04)",
  "model_id": "Amoxicillin_AlbanellFernndez2025_reference",
  "molar_masses": {
   "central.C": 0.365404
@@ -14,16 +15,16 @@
   "VdPerKg": 0.00132,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.003,
   "k12": 8.143939393939394e-05,
   "k21": 0.00014726027397260274,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662055
+  "central.C": 660.0000000662092
  },
  "reference_peaks": {
-  "central.C": 0.0009075858694365088
+  "central.C": 0.027227549769914264
  },
  "stop_time": 93600.0,
  "template": "PK_2C",

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;macitentan&quot;,&quot;href&quot;:&quot;drugs/drug_macitentan/&quot;},{&quot;label&quot;:&quot;Bartolucci_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Macitentan_Bartolucci2021_reference&quot;,&quot;label&quot;:&quot;Bartolucci_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_macitentan/Macitentan_Bartolucci2021_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Macitentan_Bartolucci2021_reference&quot;,&quot;label&quot;:&quot;Bartolucci_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_macitentan/Macitentan_Bartolucci2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # macitentan — `Macitentan_Bartolucci2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,28 +15,28 @@
 
 ### Reviewer guidance
 
-**No value for aprocitentan's clearance and volume of distribution and the rate at which aprocitentan is formed.**
+**The macitentan record was rejected because its structure does not match the parent–metabolite topology: the model is a one-compartment enteral model whose output is the parent compartment, not the measured macitentan analyte compartment, and the aprocitentan metabolite is unlinked.**
 
-The model was built, but aprocitentan's clearance and volume of distribution and the rate at which aprocitentan is formed had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — macitentan: tmax 9 h, tss 3 days, V/F 34 L, CL 1.39 L/h, kabs 13.9 h−1.
+The record declares a parent–metabolite structure with aprocitentan formed from macitentan, but the built model is a single enteral compartment (PK_1C_enteral) instead of a parent–metabolite structure, and the model output is the central parent compartment rather than the measured analyte compartment. The metabolite aprocitentan has no compartment (0 compartments), leaving it without a path from the dose. The record was also built from the abstract alone, so reported summary statistics (tmax 9 h, tss 3 days, V/F 34 L, CL 1.39 L/h, kabs 13.92 h−1) stood in for a fitted model, with a lag time left at defaults and bioavailability assumed to be 1 without molar correction. A second reader additionally assigned an accumulation factor of 12.5 and an oral dose of 10 that this record lacks, and disagreed on the dose compound and primary analyte fields. Extracted — macitentan: tmax 9 h, tss 3 days, V/F 34 L, CL 1.39 L/h, kabs 13.9 h−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has macitentan, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Bartolucci R; Dosne AG; Csonka D; Pérez-Ruixo JJ; Magni P; Poggesi I et al. (2021). Clinical pharmacokinetics 60
   ·  DOI: [10.1007/s40262-021-01049-3](https://doi.org/10.1007/s40262-021-01049-3)
 
 ## Model component
-<dbs-pgx drug="macitentan" model-id="Macitentan_Bartolucci2021_reference" status="model_quarantined" stale="false" population="healthy adults and adult subjects with pulmonary arterial hypertension" measured-compound="macitentan" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="macitentan" model-id="Macitentan_Bartolucci2021_reference" status="rejected" stale="false" population="healthy adults and adult subjects with pulmonary arterial hypertension" measured-compound="macitentan" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -53,6 +53,10 @@ Bartolucci R; Dosne AG; Csonka D; Pérez-Ruixo JJ; Magni P; Poggesi I et al. (20
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'accumulation factor' — extend the ontology if this is a real PK parameter (source ['Bartolucci_2021:abstract', 'Bartolucci_2021:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=macitentan
@@ -62,6 +66,7 @@ Bartolucci R; Dosne AG; Csonka D; Pérez-Ruixo JJ; Magni P; Poggesi I et al. (20
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Liu_2020's review values (primary lacked it)
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Bartolucci_2021_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
@@ -124,9 +129,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=macitentan) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | pass | parent_metabolite → PK_Parent_Metabolite* | PK_Parent_Metabolite | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
@@ -137,29 +143,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_macitentan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Bartolucci_2021` / `Bartolucci_2021::reference`)
-- model: `../../../knowledgebase/drugs/drug_macitentan/models/modelica/_needs_review/Macitentan_Bartolucci2021_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_macitentan/models/modelica/_needs_review/Macitentan_Bartolucci2021_reference.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_macitentan/models/modelica/Macitentan_Bartolucci2021_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_macitentan/models/modelica/Macitentan_Bartolucci2021_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_macitentan/models/modelica/Macitentan_Bartolucci2021_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_macitentan/Macitentan_Bartolucci2021_reference/Macitentan_Bartolucci2021_reference_matlab.zip" download>Macitentan_Bartolucci2021_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_macitentan/Macitentan_Bartolucci2021_reference/Macitentan_Bartolucci2021_reference_matlab_simbio.zip" download>Macitentan_Bartolucci2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_macitentan/Macitentan_Bartolucci2021_reference/Macitentan_Bartolucci2021_reference_sbml.zip" download>Macitentan_Bartolucci2021_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_macitentan/Macitentan_Bartolucci2021_reference/Macitentan_Bartolucci2021_reference_cellml.zip" download>Macitentan_Bartolucci2021_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 10 mg, single dose, first-order absorption (ka 13.9 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 10 mg oral (C02KX04) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_macitentan/Macitentan_Bartolucci2021_reference/Macitentan_Bartolucci2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_macitentan/Macitentan_Bartolucci2021_reference/Macitentan_Bartolucci2021_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Macitentan_Bartolucci2021_reference_params.json` · controls `Macitentan_Bartolucci2021_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

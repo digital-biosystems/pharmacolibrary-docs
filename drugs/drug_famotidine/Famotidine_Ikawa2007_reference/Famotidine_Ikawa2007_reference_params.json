@@ -1,27 +1,36 @@
 {
+ "dose_source": "paper",
  "model_id": "Famotidine_Ikawa2007_reference",
+ "molar_masses": {
+  "central.C": 0.337445
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  10.0
+ ],
  "parameters": {
   "Cl": 3.277777777777778e-06,
   "F": 1.0,
+  "MM": 0.337445,
   "Tlag": 2682.0,
   "VdPerKg": 0.0024571428571428574,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "ka": 0.00026555555555555555,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 13775.570398909114
+  "central.C": 13505.410821643287
  },
  "reference_peaks": {
-  "central.C": 0.00047422543412312937
+  "central.C": 4.741661333782731e-05
  },
- "stop_time": 86400.0,
+ "stop_time": 259200.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

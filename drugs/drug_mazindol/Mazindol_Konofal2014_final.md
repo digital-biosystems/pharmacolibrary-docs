@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;mazindol&quot;,&quot;href&quot;:&quot;drugs/drug_mazindol/&quot;},{&quot;label&quot;:&quot;Konofal_2014 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mazindol_Konofal2014_basic_model&quot;,&quot;label&quot;:&quot;Konofal_2014_basic_model&quot;,&quot;href&quot;:&quot;drugs/drug_mazindol/Mazindol_Konofal2014_basic_model.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mazindol_Konofal2014_final&quot;,&quot;label&quot;:&quot;Konofal_2014_final&quot;,&quot;href&quot;:&quot;drugs/drug_mazindol/Mazindol_Konofal2014_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mazindol_Konofal2014_basic_model&quot;,&quot;label&quot;:&quot;Konofal_2014_basic_model&quot;,&quot;href&quot;:&quot;drugs/drug_mazindol/Mazindol_Konofal2014_basic_model.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mazindol_Konofal2014_final&quot;,&quot;label&quot;:&quot;Konofal_2014_final&quot;,&quot;href&quot;:&quot;drugs/drug_mazindol/Mazindol_Konofal2014_final.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mazindol — `Mazindol_Konofal2014_final`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,14 +21,12 @@ The model was built, but mazindol's clearance and volume of distribution had no 
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-17 15:08:44.743109+00:00) predates the upstream re-run (2026-09-22 07:20:04.434543+00:00). Current validate status: `extracted`.
-
 ## Citation
 Konofal E; Zhao W; Laouénan C; Lecendreux M; Kaguelidou F; Benadjaoud L; et al. et al. (2014). Drug design, development and therapy 8
   ·  DOI: [10.2147/DDDT.S65495](https://doi.org/10.2147/DDDT.S65495)
 
 ## Model component
-<dbs-pgx drug="mazindol" model-id="Mazindol_Konofal2014_final" status="extracted" stale="true" population="children with ADHD" measured-compound="mazindol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="mazindol" model-id="Mazindol_Konofal2014_final" status="model_quarantined" stale="false" population="children with ADHD" measured-compound="mazindol" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.
@@ -36,6 +34,8 @@ Konofal E; Zhao W; Laouénan C; Lecendreux M; Kaguelidou F; Benadjaoud L; et al.
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Lag-time (h) | `Q83` · tlag | 0.3 | h | 1080.0 | [h] | not captured | llm (0.6) | t3-dddt-8-2321:row2:col3 | — | not captured |
@@ -95,6 +95,7 @@ Konofal E; Zhao W; Laouénan C; Lecendreux M; Kaguelidou F; Benadjaoud L; et al.
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |

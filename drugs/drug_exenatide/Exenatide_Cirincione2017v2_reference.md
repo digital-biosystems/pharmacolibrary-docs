@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The exenatide record was held back because the absorption rate constant ka and lag time Tlag are not reported in the source, so library placeholder values were substituted and a first-order absorption with F=1 was invented.**
+**The exenatide record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside unreported lag time and an assumed F=1 apparent parameterization.**
 
-The record reports exenatide apparent clearance (CL/F) of 9.1 L/h and apparent volume of distribution (V) of 7.04 L in a one-compartment structure, but ka and Tlag are missing from the source values, so library placeholder values would have been used in their place. The builder additionally assumed F=1 and Fm=1 with no molar correction, yielding an apparent (/F) parameterization with a first-order depot input for extravascular dosing. The invented absorption assumption — ka defaulted although not reported in the source — was adjudicated not acceptable, so the model was not published and marked for review. A second reader also disagreed on several extracted values (e.g., 4.58 vs null, 1 vs 100), leaving some fields unresolved. Extracted — exenatide: CL/F 9.1 l h−1, V 7.04 l.
+The source reports only CL/F (9.1 l/h) and V (7.04 l) for exenatide; no absorption rate constant or lag time was extracted, so library placeholder values were used in their place, and the invented ka was flagged as not acceptable. The model was built with an apparent parameterization assuming F=1 and Fm=1 without molar correction, using first-order depot input for extravascular dosing. A second reader also disagreed on several extracted values, e.g. reading 1.35 and 96 where this record had none, and 100 where this record had 1. Extracted — exenatide: CL/F 9.1 l h−1, V 7.04 l.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CLint: this record has 4.58, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -147,24 +147,25 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=exenatide) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | not captured | 0.003015707807838548 | not captured | non-numeric value |
-| T1_cmax | reference | skipped | 7 | 0.003015707807838548 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 273 | 0.003015707807838548 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 24 | 0.003015707807838548 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 321 | 0.003015707807838548 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 256 | 0.003015707807838548 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 287 | 0.003015707807838548 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 18 | 0.003015707807838548 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 237 | 0.003015707807838548 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 34 | 0.003015707807838548 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 189 | 0.003015707807838548 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 211 | 0.003015707807838548 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | not captured | 1.5039683164079344e-07 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | 7 | 1.5039683164079344e-07 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 273 | 1.5039683164079344e-07 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 24 | 1.5039683164079344e-07 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 321 | 1.5039683164079344e-07 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 256 | 1.5039683164079344e-07 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 287 | 1.5039683164079344e-07 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 18 | 1.5039683164079344e-07 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 237 | 1.5039683164079344e-07 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 34 | 1.5039683164079344e-07 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 189 | 1.5039683164079344e-07 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 211 | 1.5039683164079344e-07 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -186,7 +187,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference/Exenatide_Cirincione2017v2_reference_modelica.zip" download>Exenatide_Cirincione2017v2_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference/Exenatide_Cirincione2017v2_reference_fmi.zip" download>Exenatide_Cirincione2017v2_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference/Exenatide_Cirincione2017v2_reference_fmi.zip" download>Exenatide_Cirincione2017v2_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference/Exenatide_Cirincione2017v2_reference_matlab.zip" download>Exenatide_Cirincione2017v2_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference/Exenatide_Cirincione2017v2_reference_matlab_simbio.zip" download>Exenatide_Cirincione2017v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference/Exenatide_Cirincione2017v2_reference_sbml.zip" download>Exenatide_Cirincione2017v2_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -198,7 +199,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 0.005 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 0.005, 0.01 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference/Exenatide_Cirincione2017v2_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference/Exenatide_Cirincione2017v2_reference_sim_controls.json"></dbs-fmusim>
 

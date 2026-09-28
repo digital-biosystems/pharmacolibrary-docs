@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 300 mg oral (N03AX18)",
  "model_id": "Lacosamide_Li2025_boostrap",
+ "molar_masses": {
+  "central.C": 0.2502936
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,21 +11,22 @@
  "parameters": {
   "Cl": 4.1944444444444446e-07,
   "F": 1.0,
+  "MM": 0.2502936,
   "Tlag": 0.0,
   "VdPerKg": 0.0003371428571428572,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.0003,
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 17350.722977789337
+  "central.C": 17342.018451056912
  },
  "reference_peaks": {
-  "central.C": 0.0031335943564828653
+  "central.C": 0.009400797008833601
  },
- "stop_time": 86400.0,
+ "stop_time": 259200.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

@@ -1,11 +1,16 @@
 {
+ "dose_source": "paper",
  "model_id": "Omeprazole_Chen2022v2_sir_median",
  "molar_masses": {
-  "C_central": 0.345416
+  "central.C": 0.345416
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  20.0
  ],
  "parameters": {
   "Cl": 6.138888888888889e-05,
@@ -15,15 +20,15 @@
   "VdPerKg": 0.00031714285714285715,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 2e-05,
   "ka": 0.0008333333333333333,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 10033.617911776357
+  "central.C": 10033.774057155853
  },
  "reference_peaks": {
-  "C_central": 0.0007824800251122474
+  "central.C": 0.000156505001818353
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

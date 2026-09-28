@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The rifabutin record was rejected because its clearance of 16.2 L/h against a volume of 0.135 L gives a disposition rate outside any physiological window, pointing to a unit or scale extraction error.**
+**The rifabutin parent–metabolite model was rejected because the extracted clearance (16.2 L/h) and volume of distribution (0.135 L) fall outside plausible physiological windows, suggesting a unit or scale extraction error.**
 
-The extracted rifabutin parameters are clearance 16.2 L/h, volume 0.135 L, absorption rate constant 0.16 h−1 and lag time 0.825 h for HIV/TB co-infected children. The clearance-to-volume combination implies an elimination rate constant of about 120 h−1, an implausibly rapid elimination for rifabutin, which is why the magnitude was judged non-physiological and likely a unit or scale misreading. The second reader recorded no values for any of these parameters (clearance, Ka, lag time, volume all null), so no independent confirmation of the extracted numbers exists. The bioavailability effect field was also null on both sides, leaving that check without a computed comparison. Extracted — rifabutin: CL 16.2 L/h, V 0.135 L, kabs 0.16 h−1, tlag 0.825 h.
+For rifabutin in HIV/TB co-infected children, the record lists total clearance of 16.2 L/h and a volume of distribution of only 0.135 L, magnitudes flagged as implausible and consistent with a unit/scale extraction error. The remaining parameters — absorption rate constant 0.16 h−1, lag time 0.825 h, and bioavailability with no extracted value — were not themselves the basis for rejection. A second reader recorded no values for the clearance, volume, absorption rate constant, lag time, or bioavailability fields, so the disagreement is inconclusive. Extracted — rifabutin: CL 16.2 L/h, V 0.135 L, kabs 0.16 h−1, tlag 0.825 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of zwfa effect (each point below -3) on bioavailabilityd: this record has none, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

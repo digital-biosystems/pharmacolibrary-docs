@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The glibenclamide model was quarantined because bioavailability, clearance, volume of distribution, absorption rate constant and lag time had no reported values and library defaults were substituted, with kcomp (k23) also uncovered.**
+**The glibenclamide model was quarantined because bioavailability, clearance, volume of distribution, absorption rate constant and lag time had no source values and were replaced by library placeholders, and the distribution micro-rate constant k23 (0.30) was never covered.**
 
-No source values exist for glibenclamide's bioavailability (F), clearance (CL), volume of distribution (Vd), absorption rate constant (ka) and absorption lag time (Tlag), so library placeholder values stood in and the model was held back rather than published with invented numbers. The absorption rate constant was explicitly defaulted although it was not reported in the source, an invented-absorption deviation judged not acceptable. The parameter-coverage check expected 5 parameters emitted or defaulted but covered only 4; kcomp (k23, 0.30 1/h) was neither emitted nor defaulted. Additionally, a reported unit could not be converted to SI, so that parameter reached the model build without an SI value. Extracted — glibenclamide: kel 1.02, V 3.39 l, kcomp 0.3, kabs 0.27, MTT -0.359 h, n_transit 22.9, Fab 0.75 F, CL 10.2 l/h.
+The record lists glibenclamide parameters (kel 1.02 1/h, V 3.39 l, ka 0.27 1/h, F 0.75, CL 10.2 l/h), but the review found F, CL, Vd, ka and Tlag left at library placeholder values, meaning no source values were extracted and the model was held back rather than published with invented numbers; the absorption rate constant was flagged as invented because it was not reported in the source. The transit-compartment absorption parameters also look suspect: mean transit time is negative (-0.359 h) with 22.9 transit compartments. One parameter coverage check counted only 4 of 5 expected parameters, with the distribution micro-rate constant k23 (0.30) neither emitted nor defaulted. Additionally, one reported unit could not be converted to SI, so that parameter arrived without an SI value; the deviations check could not be adjudicated and returned no computable comparison. Extracted — glibenclamide: kel 1.02, V 3.39 l, kcomp 0.3, kabs 0.27, MTT -0.359 h, n_transit 22.9, Fab 0.75 F, CL 10.2 l/h.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -103,6 +103,7 @@ Savic RM; Jonker DM; Kerbusch T; Karlsson MO et al. (2007). Journal of pharmacok
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['kcomp'] |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |

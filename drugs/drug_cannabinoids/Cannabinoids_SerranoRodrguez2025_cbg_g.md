@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record was refused because the apparent cannabigerol parameters (e.g. CL 1.75 L/h/kg, V1 43 L/kg) were corrected for bioavailability (Fab 0.29) twice, breaking internal coherence.**
+**Rejected because the metabolite apparent clearance CLm/F of cannabigerol (0.016 L/h/kg) was corrected for bioavailability twice, violating apparent-parameter coherence.**
 
-The record describes a parent–metabolite model for cannabigerol in healthy adult horses, with cannabigerol glucuronide linked through the metabolism parameter Fm. Bioavailability is recorded as Fab 0.29, and the apparent parameters CL 1.75 L/h/kg, V1 43 L/kg, Q 82.35 L/h/kg, V2 41.29 L/kg and Vmax 0.0041 L/kg were found to have had the bioavailability correction applied twice, so the values no longer form one self-consistent F-normalised parameter set. The metabolite clearance CLm/F 0.016 L/h/kg belongs to the same inconsistent set. This double correction is the stated cause of rejection. Extracted — cannabinoids: Fab 0.29, kabs 0.95, kel 1.43, CL 1.75 l/h/kg, V1 43 L/kg, Q 82.3 L/h/kg, V2 41.3 L/kg, Vmax 0.0041 L/kg, … (+1).
+The record reports CLm/F for cannabigerol glucuronide as an apparent metabolite clearance, already normalized by the fraction of parent converted to metabolite, alongside a parent bioavailability Fab of 0.29. The coherence check found a double bioavailability correction applied to this apparent parameter, so the reported value would be inconsistent with the other parameters (CL 1.75 L/h/kg, V1 43 L/kg, kel 1.43 1/h). No other failed checks are reported. Extracted — cannabinoids: Fab 0.29, kabs 0.95, kel 1.43, CL 1.75 l/h/kg, V1 43 L/kg, Q 82.3 L/h/kg, V2 41.3 L/kg, Vmax 0.0041 L/kg, … (+1).
 
 <sub>reviewed by glm-5.3-flash</sub>
 

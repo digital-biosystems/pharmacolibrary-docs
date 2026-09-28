@@ -1,27 +1,37 @@
 {
+ "dose_source": "paper",
  "model_id": "Clonazepam_Kruizinga2022_reference",
+ "molar_masses": {
+  "central.C": 0.315711
+ },
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.5,
+  1.0
+ ],
  "parameters": {
   "Cl": 4.444444444444445e-08,
   "F": 1.0,
+  "MM": 0.315711,
   "VdPerKg": 0.00016428571428571428,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 5e-07,
   "k12": 0.00027053140096618356,
   "k21": 0.00024117140396210163,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662027
+  "central.C": 660.0000000662102
  },
  "reference_peaks": {
-  "central.C": 0.001672159363826456
+  "central.C": 8.359733769818858e-06
  },
- "stop_time": 86400.0,
+ "stop_time": 950400.0,
  "template": "PK_2C",
  "template_fmu": "PK_2C.fmu"
 }

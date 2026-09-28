@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The rifabutin two-compartment model was rejected because it contains a compartment with no path from the administered dose, and the second reader disputed several extracted parameter values.**
+**The rifabutin two-compartment model was rejected because its structure leaves a compartment unreachable from the dose, so the recorded parameters (CL/F 37.1 L/h, V/F 1605.7196 L, V2/F 655.0 L, tlag 0.825 h, kabs 0.397 h−1) cannot be published as a coherent model.**
 
-The record describes a two-compartment rifabutin model with CL/F 37.1 L/h, V/F 1605.7196 L, V2/F 655.0 L, tlag 0.825 h and kabs 0.397 h⁻¹, but the structure check found an unreachable or orphan compartment or an unlinked metabolite, so the model was refused. The second reader disagreed with the first on multiple extracted values: one value recorded as 7925, CL/F recorded as 37.1, one value recorded as 18.5, one as 30, one as 39, and V2/F recorded as 655, each with no second-reader value given; one value absent in this record was read as 2.8 by the second reader. These disagreements leave the extracted parameter set inconclusive. Extracted — rifabutin: CL/F 37.1 liters/h, V/F 1.61e+03 L, V2/F 655 liters, tlag 0.825 h, kabs 0.397 h−1.
+The record for rifabutin (Wang_2020, review reference population) carries a two-compartment structure with oral clearance CL/F of 37.1 liters/h, apparent volume V/F of 1605.7196 L derived from CL·t½/ln2, peripheral volume V2/F of 655.0 liters, absorption lag time 0.825 h and absorption rate constant 0.397 h−1. The refusal rests on the topology check finding an unreachable or orphan compartment or an unlinked metabolite, meaning part of the model structure has no path from the administered dose. A second reader did not confirm several extracted values, including the peripheral volume 655 L and the clearance 37.1 L/h, and read an additional value of 2.8 where the record has none, so the parameter set is not consistently supported. Extracted — rifabutin: CL/F 37.1 liters/h, V/F 1.61e+03 L, V2/F 655 liters, tlag 0.825 h, kabs 0.397 h−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q18: this record has 7925, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 

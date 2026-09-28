@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The emicizumab model was quarantined because clearance, volume of distribution, absorption rate constant and lag time had no source values, and an absorption rate constant of 72.5 was invented.**
+**The emicizumab model was quarantined because its clearance, volume of distribution, absorption rate constant and lag time had no values in the source, so placeholder numbers were substituted.**
 
-The record lists CL/F 28.7, V/F 25.9 and ka 72.5 for emicizumab, but the model builder defaulted Cl, Vd, ka and Tlag because no values were reported in the source, so library placeholders would have been used. The absorption rate constant was invented — not reported in the source — and the absorption check failed with 'invented_absorption: not acceptable'. The builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization). Extracted — emicizumab: CL/F 28.7, V/F 25.9, kabs 72.5.
+The record lists CL/F 28.7, V/F 25.9 and KA 72.5 for emicizumab, but the model builder left clearance, volume of distribution, absorption rate constant and absorption lag time without extracted values, so library placeholder numbers stood in for them. The absorption rate constant was invented by defaulting, which the adjudication marked as not acceptable. The model also assumes bioavailability F=1 and Fm=1 with no molar correction, i.e. an apparent parameterization. Extracted — emicizumab: CL/F 28.7, V/F 25.9, kabs 72.5.
 
 Independently confirmed by `gpt-oss:120b`.
 

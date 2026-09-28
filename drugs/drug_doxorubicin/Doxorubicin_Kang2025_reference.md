@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The doxorubicin two-compartment record was rejected because its structure contains an unreachable/orphan compartment or unlinked metabolite, and several extracted values (1551, 3, 902, 29669) lack second-reader confirmation.**
+**The doxorubicin two-compartment model was rejected because its peripheral compartment (V2/F 519 L) is unreachable — no path links it to the dose, so the structure is incomplete.**
 
-The record lists doxorubicin with CL/F 37.9 L/h, V/F 902.0 L and V2/F (Vp/F) 519.0 L in a two-compartment structure, but the structure check found an unreachable/orphan compartment or unlinked metabolite, so the model was refused. Several extracted values were not confirmed by the second reader: this record has 1551, 3, 902 and 29669 where the second reader gave null, and null where the second reader gave 1.59, 519, 132 and 1.88. The disagreement on 519 is notable because it matches the extracted V2/F of 519.0 L. Extracted — doxorubicin: CL/F 37.9 L/h, V/F 902 L, V2/F 519 L.
+The record reports doxorubicin oral parameters CL/F 37.9 L/h, V/F 902.0 L and V2/F 519.0 L in a two-compartment structure, but the review found an unreachable or orphan compartment, meaning the peripheral compartment has no connection from the administered dose. The second reader also disagreed with several extracted values, reading additional numbers (1.59, 519, 132, 1.88) where the record had none, and differing on others (1551, 3, 902, 29669), so the parameter set is not consistently established. Extracted — doxorubicin: CL/F 37.9 L/h, V/F 902 L, V2/F 519 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 1551, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 

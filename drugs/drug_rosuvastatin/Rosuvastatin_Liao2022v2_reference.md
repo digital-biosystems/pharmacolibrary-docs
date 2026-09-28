@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The rosuvastatin record was held back because the absorption rate constant ka and the lag time Tlag are absent from the source, so placeholder values were used and a first-order absorption with F=1 was invented.**
+**The rosuvastatin record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside unreported lag time Tlag and an assumed bioavailability of 1.**
 
-The source reports only urinary clearance of total 14C (CLu 11.4 L/h) and an apparent volume of distribution V/F of 425.9701 L for rosuvastatin; ka and Tlag are not reported, so placeholder default values were substituted. Because the parameters are apparent (/F), the builder assumed F=1 and Fm=1 with no molar correction, and used an extravascular first-order depot input. The invented absorption (defaulted ka not reported in the source) was judged not acceptable, which is the reason the record needs review. Several extracted values (38, 11.4, 3.21, 0.781, 54, 0.92, 3.7) also lack a second reader's confirmation, and one value was left empty while the second reader read 20. Extracted — rosuvastatin: CLu 11.4 L/h, V/F 426 L.
+The source reports only unbound clearance (CLu, 11.4 L/h) and an apparent volume of distribution (V/F, 425.9701 L) for rosuvastatin; the absorption rate constant ka and lag time Tlag were missing from the source, so library placeholder values were used in their place, and the invented ka was judged not acceptable. The model builder also assumed F=1 and Fm=1 without molar correction, giving an apparent parameterization with first-order depot input implying extravascular dosing. Several extracted values (e.g., 38, 11.4, 3.21, 3.7, 0.92) had no second-reader confirmation, and one value the second reader reported as 20 was absent from this record. Extracted — rosuvastatin: CLu 11.4 L/h, V/F 426 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 38, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -139,7 +139,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Liao2022v2_reference/Rosuvastatin_Liao2022v2_reference_modelica.zip" download>Rosuvastatin_Liao2022v2_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Liao2022v2_reference/Rosuvastatin_Liao2022v2_reference_modelica.zip" download>Rosuvastatin_Liao2022v2_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Liao2022v2_reference/Rosuvastatin_Liao2022v2_reference_fmi.zip" download>Rosuvastatin_Liao2022v2_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Liao2022v2_reference/Rosuvastatin_Liao2022v2_reference_matlab.zip" download>Rosuvastatin_Liao2022v2_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Liao2022v2_reference/Rosuvastatin_Liao2022v2_reference_matlab_simbio.zip" download>Rosuvastatin_Liao2022v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
@@ -152,7 +152,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 10 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 10 mg oral (C10AA07) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_rosuvastatin/Rosuvastatin_Liao2022v2_reference/Rosuvastatin_Liao2022v2_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_rosuvastatin/Rosuvastatin_Liao2022v2_reference/Rosuvastatin_Liao2022v2_reference_sim_controls.json"></dbs-fmusim>
 

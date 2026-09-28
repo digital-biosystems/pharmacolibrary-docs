@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The ofloxacin record was quarantined because clearance, absorption rate constant and lag time had no source values and library defaults were substituted, with the ml/min per 1.73 m² clearance unit unconvertible and a second reader disputing the 241.4 value.**
+**Ofloxacin's clearance, absorption rate constant and absorption lag time were not reported, so library placeholder values were substituted and the model was quarantined; a second reader also disputes the clearance value (241.4 vs 49.2 ml/min per 1.73 m2).**
 
-Ofloxacin's total body clearance, absorption rate constant (ka) and absorption lag time were left without values, so library placeholder defaults stood in for them and the model was held back rather than published with invented numbers. The reported clearance unit ml/min per 1.73 m² could not be converted to SI units, so clearance entered the model without an SI value. The absorption rate constant was flagged as invented because ka was not reported in the source, alongside the apparent-parameterization assumption F=1 and Fm=1 with no molar correction. A second reader disagreed on the total body clearance value, reading 49.2 instead of 241.4 ml/min per 1.73 m². Extracted — ofloxacin: V/F 2.53 liters/kg, CL/F 241 ml/min per 1.73 m2, CL 241 ml/min per 1.73 m2, kabs 2.9 h-i.
+The record for ofloxacin in subjects with renal failure and healthy controls lacks source values for clearance, absorption rate constant and absorption lag time, so placeholder values stood in for these parameters and the model was held back rather than published with invented numbers. The clearance unit (ml/min per 1.73 m2) could not be converted to SI, so clearance reached the model builder without an SI value. A second reader reads total body clearance as 49.2 rather than 241.4 ml/min per 1.73 m2, and the model assumes F=1 and Fm=1 with no molar correction. Extracted — ofloxacin: V/F 2.53 liters/kg, CL/F 241 ml/min per 1.73 m2, CL 241 ml/min per 1.73 m2, kabs 2.9 h-i.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[total body clearance].value`: this record has 241.4, the second reading 49.2. That field shapes the model, so the record is marked disputed.
 
@@ -105,6 +105,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |

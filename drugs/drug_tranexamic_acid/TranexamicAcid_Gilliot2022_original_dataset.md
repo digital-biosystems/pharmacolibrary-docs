@@ -17,7 +17,7 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 1.85, model 9.72e+03); the covariate scenarios were not simulated.**
+**The model does not reproduce the paper's terminal half-life (paper 1.85, model 11.1); the covariate scenarios were not simulated.**
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — tranexamic acid: CL 0.077 L/min, V1 9.25 L, Q 0.32 L/min, V2 9.49 L.
 
@@ -151,11 +151,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_output_variable | not captured | pass | C_central (measured=tranexamic acid) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_t_half_terminal | reference | fail | 1.8499999999999999 | 9720.216833107688 | 5254.1713 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.8499999999999999 | 11.104047416782523 | 6.0022 | min→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -176,8 +177,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_original_dataset/TranexamicAcid_Gilliot2022_original_dataset_modelica.zip" download>TranexamicAcid_Gilliot2022_original_dataset_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_original_dataset/TranexamicAcid_Gilliot2022_original_dataset_fmi.zip" download>TranexamicAcid_Gilliot2022_original_dataset_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_original_dataset/TranexamicAcid_Gilliot2022_original_dataset_modelica.zip" download>TranexamicAcid_Gilliot2022_original_dataset_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_original_dataset/TranexamicAcid_Gilliot2022_original_dataset_fmi.zip" download>TranexamicAcid_Gilliot2022_original_dataset_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_original_dataset/TranexamicAcid_Gilliot2022_original_dataset_matlab.zip" download>TranexamicAcid_Gilliot2022_original_dataset_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_original_dataset/TranexamicAcid_Gilliot2022_original_dataset_matlab_simbio.zip" download>TranexamicAcid_Gilliot2022_original_dataset_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_original_dataset/TranexamicAcid_Gilliot2022_original_dataset_sbml.zip" download>TranexamicAcid_Gilliot2022_original_dataset_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -189,7 +190,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 500 mg infusion over 10 min, single dose. Doses in the paper: 500, 1000 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_original_dataset/TranexamicAcid_Gilliot2022_original_dataset_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_tranexamic_acid/TranexamicAcid_Gilliot2022_original_dataset/TranexamicAcid_Gilliot2022_original_dataset_sim_controls.json"></dbs-fmusim>
 

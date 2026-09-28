@@ -1,11 +1,12 @@
 {
+ "dose_source": "library default",
  "model_id": "Doxorubicin_Taylor2026_reference",
  "molar_masses": {
-  "C_central": 0.5435193
+  "central.C": 0.5435193
  },
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 3.277777777777778e-06,
@@ -14,16 +15,16 @@
   "VdPerKg": 0.0006028571428571428,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "k12": 2.303844128488678e-06,
   "k21": 1.4576045310677996e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 660.0000000662033
+  "central.C": 660.000000066203
  },
  "reference_peaks": {
-  "C_central": 0.0022797467972655618
+  "central.C": 0.00022797458260349955
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

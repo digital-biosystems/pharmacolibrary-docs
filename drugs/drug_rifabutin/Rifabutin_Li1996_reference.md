@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The rifabutin one-compartment model was rejected because its clearance (0.07 L/h) and volume (0.135 L) are physiologically implausible, indicating a unit or scale extraction error.**
+**The rifabutin record was rejected because its clearance (0.07 L/h) and volume of distribution (0.135 L) fall outside physiological plausibility, indicating a unit or scale extraction error.**
 
-The record lists rifabutin clearance as 0.07 L/h and volume as 0.135 L, magnitudes far outside the physiological range for this drug, which points to a unit or scale error when the values were taken from the paper. The absorption rate constant (0.16 h−1) and lag time (0.825 h) were also recorded, but a second reader could not confirm any of the four parameter values, leaving the extracted numbers uncorroborated. The rejection rests on the implausible clearance and volume magnitudes; the failed corroboration of all parameters is inconclusive rather than a confirmed error. Extracted — rifabutin: CL 0.07 L/h, V 0.135 L, kabs 0.16 h−1, tlag 0.825 h.
+For rifabutin in healthy volunteers, the extracted total clearance of 0.07 L/h and volume of distribution of 0.135 L are implausibly small magnitudes, consistent with a unit or scale extraction error; the absorption rate constant (0.16 h−1) and lag time (0.825 h) were also recorded. A second reader could not confirm any of the four parameter values, leaving the clearance, volume, absorption rate constant, and lag time unverified. Extracted — rifabutin: CL 0.07 L/h, V 0.135 L, kabs 0.16 h−1, tlag 0.825 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of extracellular clearance: this record has 0.07, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

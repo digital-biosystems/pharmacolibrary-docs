@@ -102,7 +102,7 @@ _Every reader agrees on every compared field of this record._
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_t_half_beta | reference | fail | 0.7833333333333333 | 2.309133930376156 | 2.9478 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.7833333333333333 | 2.30724676977924 | 2.9454 | minutes→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -124,7 +124,7 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_midazolam/Midazolam_Tolia1991_salonen_et_al_5/Midazolam_Tolia1991_salonen_et_al_5_modelica.zip" download>Midazolam_Tolia1991_salonen_et_al_5_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_midazolam/Midazolam_Tolia1991_salonen_et_al_5/Midazolam_Tolia1991_salonen_et_al_5_fmi.zip" download>Midazolam_Tolia1991_salonen_et_al_5_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Tolia1991_salonen_et_al_5/Midazolam_Tolia1991_salonen_et_al_5_matlab.zip" download>Midazolam_Tolia1991_salonen_et_al_5_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Tolia1991_salonen_et_al_5/Midazolam_Tolia1991_salonen_et_al_5_matlab_simbio.zip" download>Midazolam_Tolia1991_salonen_et_al_5_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Tolia1991_salonen_et_al_5/Midazolam_Tolia1991_salonen_et_al_5_sbml.zip" download>Midazolam_Tolia1991_salonen_et_al_5_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
@@ -136,7 +136,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 7 mg infusion over 10 min, single dose. Dose in the paper: 7 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_midazolam/Midazolam_Tolia1991_salonen_et_al_5/Midazolam_Tolia1991_salonen_et_al_5_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_midazolam/Midazolam_Tolia1991_salonen_et_al_5/Midazolam_Tolia1991_salonen_et_al_5_sim_controls.json"></dbs-fmusim>
 

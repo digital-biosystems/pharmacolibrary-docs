@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The digitoxin volume of distribution (0.241, unit '1') fails the dimensional check for a structural parameter, and the record was built from the abstract alone rather than a fitted model.**
+**The digitoxin record was rejected because the volume of distribution of dihydrodigitoxin (0.241, unit '1') failed a dimension check on a structural parameter, and the record was built from the abstract alone.**
 
-The parameter V, labelled 'volume of distribution of DH-DGT' for digitoxin, is reported as 0.241 with unit '1' (dimensionless), which is dimensionally incompatible with a distribution volume, so the record was rejected. The record was also built from the paper's abstract only, meaning reported summary statistics stood in for a fitted model. A second reader disagreed on the dosing compound and primary analyte, reading dihydrodigitoxin instead of digitoxin, and read the volume of distribution as null rather than 0.241. Extracted — digitoxin: V 0.241 1.
+The parameter labelled as volume of distribution of DH-DGT carries value 0.241 with unit '1', which is dimensionless and mismatched for a volume-based structural parameter, triggering the dimension-mismatch refusal. The record was built from the paper's abstract only, so summary statistics stood in for a fitted model. A second reader also disagreed on the dosed and measured compound, reading dihydrodigitoxin instead of digitoxin, and read the volume parameter as absent rather than 0.241. Extracted — digitoxin: V 0.241 1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has digitoxin, the second reading dihydrodigitoxin; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

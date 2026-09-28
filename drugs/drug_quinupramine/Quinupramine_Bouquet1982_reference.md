@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The quinupramine record was rejected because the apparent-parameter coherence check failed: bioavailability F = 0.75 was applied alongside already-apparent parameters (V/F = 34.2 l/kg), double-correcting them, and the record rests on abstract-only summary statistics rather than a fitted model.**
+**The quinupramine record was rejected because the apparent-parameter coherence check failed: bioavailability F = 0.75 was applied on top of already-apparent parameters (V/F = 34.2 l.kg-1), a double correction.**
 
-The record reports quinupramine in healthy volunteers with a one-compartment structure and apparent parameters taken from the paper's abstract: AUC∞ 43.7 ng·ml⁻¹·h, Cmax 1.1 ng·ml⁻¹, V/F 34.2 l·kg⁻¹, terminal half-life 33.5 h, and an assumed bioavailability F of 0.75. Because V/F is already normalized by bioavailability, combining it with a separately applied F of 0.75 corrects the same quantity twice, which is the coherence violation that led to rejection. The record is also abstract-only, so the reported summary statistics stand in for a fitted model. A second reader disagreed on the parameterization (mechanistic rather than apparent) and would have left the bioavailability value and all five parameter values unextracted. Extracted — quinupramine: Fab 0.75 F, AUC∞ 43.7 ng.ml-1.h, Cmax 1.1 ng.ml-1, V/F 34.2 l.kg-1, t1/2z 33.5 h.
+The record, built from the paper's abstract only, reports quinupramine summary statistics (AUC∞ 43.7 ng.ml-1.h, Cmax 1.1 ng.ml-1, V/F 34.2 l.kg-1, t1/2z 33.5 h, F 0.75) rather than a fitted model. The coherence check found a double correction: the volume of distribution is already given as V/F (adjusted for bioavailability), so applying F = 0.75 again violates apparent-parameter consistency. A second reader disagreed on the parameterization (mechanistic rather than apparent) and on the bioavailability value and all five parameter values, reading them as null. Extracted — quinupramine: Fab 0.75 F, AUC∞ 43.7 ng.ml-1.h, Cmax 1.1 ng.ml-1, V/F 34.2 l.kg-1, t1/2z 33.5 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

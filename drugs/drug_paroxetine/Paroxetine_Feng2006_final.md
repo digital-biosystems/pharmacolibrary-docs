@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The paroxetine Vmax of 32.5 µg h⁻¹ carries a unit that could not be converted to SI, giving a dimension mismatch on a structural parameter, so the record was rejected.**
+**The paroxetine record (Feng_2006, elderly subjects) was rejected because a structural parameter was reported in a unit that could not be converted to SI, giving a dimension mismatch on that parameter.**
 
-The record reports paroxetine Vmax as 32.5 µg h⁻¹ and Km as 83.4 µg l⁻¹ for elderly subjects with major depressive disorder, but the µg h⁻¹ unit of Vmax could not be converted to SI, so the parameter arrived without an SI value and failed the dimensional check on a structural parameter. A second reader also disagreed on several covariate-effect values: this record lists theta_vmax_pm as 125 and theta_q367_um as 3670, while the second reader read these as theta_q61_pm 125 and theta_vmax_um 3670, and left theta_q367_im and theta_q367_um unset; the comparison could not be computed for these fields. Extracted — paroxetine: Vmax 32.5 µg h -1, Km 83.4 µg l -1, V2 6.7 l, V3 102 l, Q 12.3 l h -1, kabs 8.8 h -1, V 1.01e+03 L.
+One parameter of the paroxetine three-compartment model was reported in a unit that could not be expressed in SI, so the parameter arrived without a usable value and the dimension check on a structural parameter failed. The fitted parameters themselves are Vmax 32.5 µg h⁻¹, Km 83.4 µg l⁻¹, V2 6.70 l, V3 102.1 l, Q 12.3 l h⁻¹, kabs 8.8 h⁻¹ and Vd/F 1010.0 L. A second reader also disagreed on several covariate-effect values, reading theta_q61_im as 182 and theta_q61_pm as 125 where this record lists theta_q367_im 182, theta_q367_um 3670, theta_vmax_pm 125 and theta_vmax_um as absent. Extracted — paroxetine: Vmax 32.5 µg h -1, Km 83.4 µg l -1, V2 6.7 l, V3 102 l, Q 12.3 l h -1, kabs 8.8 h -1, V 1.01e+03 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of theta_q367_im: this record has 182, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the lutetium-177 vipivotide tetraxetan model lists rate constants k13, k31, k14 and k41 for compartments 3 and 4 that have no connection from the dose in the stated two-compartment structure.**
+**The record for lutetium-177 vipivotide tetraxetan was rejected because its structure is a two-compartment model, yet it carries rate constants and volumes (k13 0.00867 h−1, k31 0.0141 h−1, k14 0.0238 h−1, k41 0.0283 h−1, V3 30.4 L) pointing to compartments outside that structure.**
 
-The structure is declared as two compartments, yet the parameter set contains k13 (0.00867 h−1), k31 (0.0141 h−1), k14 (0.0238 h−1) and k41 (0.0283 h−1), implying third and fourth compartments that are unreachable from the administered dose. The rejection reason is an unreachable or orphan compartment. The two readings also disagree on compartment 2 and 3 volumes (24.6 L and 30.4 L versus null) and on a k15 of 0.000248 h−1 with tumor volume 0.705 that this record lacks, so the extracted parameter set is inconsistent. Extracted — lutetium 177lu vipivotide tetraxetan: kel 0.288 h−1, k12 0.0238 h−1, k21 0.0307 h−1, k13 0.00867 h−1, k31 0.0141 h−1, k14 0.0238 h−1, k41 0.0283 h−1, V1 10.3 L, … (+2).
+The declared topology is a two-compartment model, but the parameter set includes transfers to a second and third peripheral compartment (k13/k31 and k14/k41) and a volume V3 of 30.4 L, leaving compartments with no place in the stated structure — the orphan-compartment finding. The second reader also disagreed on several parameters: they read a Bmax of 40.4 for compartment 2, a k15 of 0.000248 h−1 with tumor-volume effect 0.705, and no compartment-2/3 volumes, whereas this record lists V2 24.6 L and V3 30.4 L. Disagreements on dose compound and primary analyte were only naming variants of the same molecule. Extracted — lutetium 177lu vipivotide tetraxetan: kel 0.288 h−1, k12 0.0238 h−1, k21 0.0307 h−1, k13 0.00867 h−1, k31 0.0141 h−1, k14 0.0238 h−1, k41 0.0283 h−1, V1 10.3 L, … (+2).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lutetium_177lu_vipivotide_tetraxetan, the second reading lutetium-177 lu vipivotide tetraxetan; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

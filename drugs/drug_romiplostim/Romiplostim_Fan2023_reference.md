@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The romiplostim elimination rate constant kel is reported as 52.94 ×10–4/h with the unit given only as 'units', which cannot be converted to SI, so the structural parameter carries a dimensional mismatch and the record was rejected.**
+**The romiplostim elimination rate constant kel is reported as 52.94 with the unit 'units' (×10–4/h), a dimension mismatch that could not be converted to SI, so the record was rejected.**
 
-The parameter kel (labelled 'KE (×10–4/h)') has value 52.94 with the unit reported only as 'units', a unit that could not be converted to SI, so the elimination rate constant entered the model without a usable SI value; this dimension mismatch on a structural parameter is the stated cause of rejection. The record also omits two parameters the second reader extracted (tmp = 106 and tret = 35.13, both null here), and disagrees on kae: this record gives 0.0269 1/h while the second reader left it null. These extraction deviations leave the romiplostim parameter set incomplete and inconsistent between readers. Extracted — romiplostim: kel 52.9 units, kabs 0.0269 1/h.
+The elimination rate constant kel for romiplostim carries the verbatim unit 'units' (label KE ×10–4/h), which does not match the dimension of a rate constant and could not be expressed in SI units, so no usable value reached the model. The absorption rate constant kabs (0.0269 1/h) was read consistently by both readers. A second reader additionally extracted parameters tmp (106) and tret (35.13) that are absent from this record. Extracted — romiplostim: kel 52.9 units, kabs 0.0269 1/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of tmp: this record has none, the second reading 106; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

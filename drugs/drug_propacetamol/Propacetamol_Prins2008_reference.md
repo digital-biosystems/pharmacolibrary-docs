@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record lacks a value for the intercompartmental clearance Q (116 l.h⁻¹.70 kg⁻¹ in the paper), so only 2 of 3 required parameters were covered and the propacetamol model was held back.**
+**The propacetamol record is incomplete: the intercompartmental clearance Q (116 l.h(-1).70 kg(-1)) was neither extracted nor defaulted, so parameter coverage failed (2 of 3 expected), and the record was built from the abstract only.**
 
-The abstract-only record for propacetamol in infants after craniofacial surgery reports paracetamol parameters (absorption half-life 4.6 h, hydrolysis half-life 0.028 h, clearance 12 l.h⁻¹.70 kg⁻¹, Q 116 l.h⁻¹.70 kg⁻¹, V 7.9 l.70 kg⁻¹), but the intercompartmental clearance Q was neither emitted nor defaulted, leaving 2 of 3 expected parameters covered. Because the record was built from the abstract alone, reported summary statistics stood in for a fitted model. A second reader also disagreed on the model links, proposing a propacetamol-to-paracetamol hydrolysis link that this record omits, and returned null for all five parameter values. Extracted — paracetamol: t1/2ka 4.6 h, t1/2z 0.028 h, CL 12 l.h(-1).70 kg(-1), Q 116 l.h(-1).70 kg(-1), V 7.9 l.70 kg(-1).
+The record covers only 2 of the 3 expected parameters; Q, the apparent intercompartmental clearance between central and peripheral compartments, is missing entirely. Because only the paper's abstract was read, reported summary statistics stand in for a fitted model. A second reader also disagrees on the model structure: this record lists no link between propacetamol and paracetamol, whereas the second reader records a propacetamol-to-paracetamol hydrolysis link, and the second reader reports null for all five parameter values (absorption half-life 4.6 h, hydrolysis half-life 0.028 h, clearance 12 l.h(-1).70 kg(-1), intercompartmental clearance 116 l.h(-1).70 kg(-1), volume 7.9 l.70 kg(-1)). Extracted — paracetamol: t1/2ka 4.6 h, t1/2z 0.028 h, CL 12 l.h(-1).70 kg(-1), Q 116 l.h(-1).70 kg(-1), V 7.9 l.70 kg(-1).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading propacetamol → paracetamol (hydrolysis); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -140,7 +140,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference_modelica.zip" download>Propacetamol_Prins2008_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference_fmi.zip" download>Propacetamol_Prins2008_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference_matlab.zip" download>Propacetamol_Prins2008_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference_matlab_simbio.zip" download>Propacetamol_Prins2008_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference_sbml.zip" download>Propacetamol_Prins2008_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
@@ -152,7 +152,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 6000 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 6000 mg parenteral (N02BE05) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference_sim_controls.json"></dbs-fmusim>
 

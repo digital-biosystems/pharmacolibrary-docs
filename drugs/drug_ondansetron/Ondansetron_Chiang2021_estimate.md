@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;ondansetron&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/&quot;},{&quot;label&quot;:&quot;Chiang_2021 \u00b7 estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ondansetron_Chiang2021v2_reference&quot;,&quot;label&quot;:&quot;Chiang_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Landau2026_reference&quot;,&quot;label&quot;:&quot;Landau_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Landau2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ondansetron_Baek2015_reference&quot;,&quot;label&quot;:&quot;Baek_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Baek2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_shrinkage&quot;,&quot;label&quot;:&quot;Chiang_2021_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2024_reference&quot;,&quot;label&quot;:&quot;Chiang_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Lam2025_reference&quot;,&quot;label&quot;:&quot;Lam_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Lam2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_de1998_reference&quot;,&quot;label&quot;:&quot;de_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_de1998_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ondansetron_Chiang2021_estimate&quot;,&quot;label&quot;:&quot;Chiang_2021_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ondansetron_Chiang2021v2_reference&quot;,&quot;label&quot;:&quot;Chiang_2021_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Landau2026_reference&quot;,&quot;label&quot;:&quot;Landau_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Landau2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Baek2015_reference&quot;,&quot;label&quot;:&quot;Baek_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Baek2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2021_shrinkage&quot;,&quot;label&quot;:&quot;Chiang_2021_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2021_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Chiang2024_reference&quot;,&quot;label&quot;:&quot;Chiang_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Chiang2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_Lam2025_reference&quot;,&quot;label&quot;:&quot;Lam_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_Lam2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ondansetron_de1998_reference&quot;,&quot;label&quot;:&quot;de_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ondansetron/Ondansetron_de1998_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ondansetron — `Ondansetron_Chiang2021_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,7 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 4.9, model 3.05e+03).**
-
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — ondansetron: CL 24.6 L/h, V1 63.3 L, Q 211 L/h, V 107 L, Kp 0.145, V2 108 l.
+**Every check that could be run on this record passed.**
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -26,7 +24,7 @@ Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (202
   ·  DOI: [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412)
 
 ## Model component
-<dbs-pgx drug="ondansetron" model-id="Ondansetron_Chiang2021_estimate" status="needs_review" stale="false" population="adults undergoing elective hip or knee arthroplasty" measured-compound="ondansetron" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="ondansetron" model-id="Ondansetron_Chiang2021_estimate" status="curated_candidate" stale="false" population="adults undergoing elective hip or knee arthroplasty" measured-compound="ondansetron" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 6 extracted.
@@ -34,8 +32,6 @@ Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (202
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL (L/h) | `Q22` · CL | 24.6 | L/h | 6.833333333333334e-06 | [l] / [h] | not captured | exact (1.0) | Chiang_2021_table_4:row1:col2 | — | not captured |
@@ -98,7 +94,7 @@ Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (202
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_t_half_terminal | reference | fail | 4.9 | 3052.784707594828 | 623.0173 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 4.9 | 4.8263696495572415 | 0.985 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -119,8 +115,8 @@ Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (202
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate/Ondansetron_Chiang2021_estimate_modelica.zip" download>Ondansetron_Chiang2021_estimate_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate/Ondansetron_Chiang2021_estimate_fmi.zip" download>Ondansetron_Chiang2021_estimate_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate/Ondansetron_Chiang2021_estimate_modelica.zip" download>Ondansetron_Chiang2021_estimate_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate/Ondansetron_Chiang2021_estimate_fmi.zip" download>Ondansetron_Chiang2021_estimate_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate/Ondansetron_Chiang2021_estimate_matlab.zip" download>Ondansetron_Chiang2021_estimate_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate/Ondansetron_Chiang2021_estimate_matlab_simbio.zip" download>Ondansetron_Chiang2021_estimate_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate/Ondansetron_Chiang2021_estimate_sbml.zip" download>Ondansetron_Chiang2021_estimate_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -132,7 +128,7 @@ Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (202
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 16 mg infusion over 10 min, single dose. Dose in the paper: 16 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate/Ondansetron_Chiang2021_estimate_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_ondansetron/Ondansetron_Chiang2021_estimate/Ondansetron_Chiang2021_estimate_sim_controls.json"></dbs-fmusim>
 

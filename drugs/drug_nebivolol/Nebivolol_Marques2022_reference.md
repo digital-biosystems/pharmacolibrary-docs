@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Nebivolol's clearance, volume of distribution, and both intercompartmental rate constants had no extracted values, so library placeholders were substituted and the model was quarantined.**
+**The nebivolol model was quarantined because clearance, volume of distribution and the intercompartmental rate constants had no source values and library placeholders were used, and the absorption lag time (tlag) was not covered.**
 
-The record lists tlag (0.30), absorption half-life (2.06), CL (0.22), V1 (4.21), Q (0.59), and V2 (7.12) for the two-compartment nebivolol model, but the builder's substitutions show Cl, Vd, k12, and k21 were defaulted because no source values existed — placeholders would have stood in for the drug's clearance, distribution volume, and both distribution rate constants. The parameter coverage check found only 4 of 5 expected parameters covered, with tlag neither emitted nor defaulted. A second reader also disagreed on one parameter value (0.13 versus null) and on an identifier for the absorption half-life entry. Extracted — nebivolol: tlag 0.3, t1/2ka 2.06, CL 0.22, V1 4.21, Q 0.59, V2 7.12.
+Although the record lists nebivolol parameters (tlag 0.30, absorption half-life 2.06, CL 0.22, V1 4.21, Q 0.59, V2 7.12), the model builder substituted placeholder defaults for clearance, volume of distribution, and the central-to-peripheral and peripheral-to-central rate constants, so the model was held back rather than published with invented numbers. The parameter-coverage check expected 5 parameters emitted or defaulted but obtained 4, with the absorption lag time (tlag) neither emitted nor defaulted. A second reader also disagreed on one parameter value (0.13 versus none recorded) and on which parameter the absorption-rate label refers to. Extracted — nebivolol: tlag 0.3, t1/2ka 2.06, CL 0.22, V1 4.21, Q 0.59, V2 7.12.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of b: this record has none, the second reading 0.13; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -94,6 +94,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |

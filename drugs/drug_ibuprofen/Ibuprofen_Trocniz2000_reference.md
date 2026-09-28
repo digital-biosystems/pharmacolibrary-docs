@@ -147,7 +147,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 31 /h, lag 960 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 400 mg, single dose, first-order absorption (ka 31 /h, lag 960 min, F 0.9). Dose in the paper: 400 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference/Ibuprofen_Trocniz2000_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference/Ibuprofen_Trocniz2000_reference_sim_controls.json"></dbs-fmusim>
 

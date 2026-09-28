@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The doxycycline shrimp model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no values in the source, so library placeholder defaults stood in for these four parameters.**
+**The doxycycline model for white leg shrimp was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no source values and generic placeholder values were substituted.**
 
-The record reports doxycycline non-compartmental results for white leg shrimp (ka 1.68, t1/2α 0.41, Cmax 1.09, tmax 1.60, CL/F 2.12, V/F 14.61, AUC∞ 9.45, kel 0.15), yet the model's clearance, volume of distribution, absorption rate constant and absorption lag time were left at library placeholder defaults because no values were extracted. The absorption rate constant was additionally flagged as invented: it was defaulted, not reported in the source, and the deviation was judged not acceptable. The model also assumed F=1 and Fm=1 with no molar correction, i.e. an apparent parameterization. Extracted — doxycycline: kabs 1.68, t1/2α 0.41, Cmax 1.09, tmax 1.6, CL/F 2.12, V/F 14.6, AUC∞ 9.45, kel 0.15.
+The paper reports doxycycline parameters (kabs 1.68, t1/2α 0.41, Cmax 1.09, tmax 1.60, CL/F 2.12, V/F 14.61, AUC∞ 9.45, kel 0.15), but the model's clearance, volume of distribution, absorption rate constant and absorption lag time had no extracted values, so library placeholder values stood in for them and the model was held back rather than published with invented numbers. The absorption rate constant was flagged as invented because it was not reported in the source. The model also assumes F=1 and Fm=1 with no molar correction, i.e. an apparent parameterization. Extracted — doxycycline: kabs 1.68, t1/2α 0.41, Cmax 1.09, tmax 1.6, CL/F 2.12, V/F 14.6, AUC∞ 9.45, kel 0.15.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -82,6 +82,7 @@ Duyen HTK; Thinh NQ; Oanh DTH; Viet LQ; Scippo ML; Douny C; et al. et al. (2026)
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |

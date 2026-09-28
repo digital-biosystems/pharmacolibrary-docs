@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The carvedilol PD parameters carry non-SI units (bpm, μg, ng/mL) and the 32.8% CL/F decrease was recorded as a percentage rather than an absolute clearance, so the record was rejected.**
+**The carvedilol record was rejected because the EC50 parameter, reported as ED50 of 0.685 μg (a dose, not a concentration), failed a dimension check on a structural parameter.**
 
-The record lists carvedilol effect-site parameters E0 = 60.4 bpm, EC50 = 0.685 μg, Emax = 30.7 bpm and IC50 = 16.5 ng/mL, all in units that could not be converted to SI, so the parameters reached the model without SI values. The clearance entry is not an absolute CL/F value but a relative change, 'Carvedilol CL/F decreased by 32.8 %', which is a dimensional mismatch for a structural parameter. A second reader disagreed on the parameter extraction, reading CL/F as 32.8 and ED50 as absent where this record has 32.8 and 0.685 respectively, leaving the clearance and ED50 values uncertain. Extracted — carvedilol: E0 60.4 bpm, EC50 0.685 μg, Emax 30.7 bpm, IC50 16.5 ng/mL, CL/F 32.8 %.
+The paper reports ED50 in μg, a dose unit, while the parameter's meaning defines EC50 as a concentration producing half-maximal effect in a stimulatory Emax model; this unit could not be converted to SI, so the parameter reached the model without an SI value and the dimension check failed. A second reader also disagreed on parameter assignments: it read the 32.8% reduction as CL/F (recorded here as null) and left ED50 empty, whereas this record stores 32.8 under the CL/F-decreased-by entry and 0.685 under ED50. The remaining parameters (E0 60.4 bpm, Emax 30.7 bpm, IC50 16.5 ng/mL) carry no reported findings. Extracted — carvedilol: E0 60.4 bpm, EC50 0.685 μg, Emax 30.7 bpm, IC50 16.5 ng/mL, CL/F 32.8 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of carvedilol cl/f decreased by: this record has 32.8, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The tolbutamide record was held back because the absorption rate constant ka and lag time were not reported in the source, so library defaults were substituted, and a first-order absorption input with F=1 assumed was judged not acceptable.**
+**The tolbutamide record was held back because the absorption rate constant ka was invented (defaulted, not reported in the source), alongside other deviations from the paper.**
 
-The source did not report ka or Tlag for tolbutamide, so placeholder values would have been used in their place, and the model was therefore held back. The builder additionally assumed F=1 and Fm=1 with an apparent (/F) parameterization, implying extravascular dosing with a first-order depot input; this invented absorption was adjudicated as not acceptable. The reported parameters themselves — CL/F of 1.23 L/h/kg and V/F of 1.48 L/kg — drew no disagreement from the second reader, who matched the extracted values on all disputed fields. Extracted — tolbutamide: CL/F 1.23 L/h/kg/, V/F 1.48 L/kg.
+The source reports only CL/F = 1.23 L/h/kg and V/F = 1.48 L/kg for tolbutamide; ka and Tlag were left at library defaults because no values appear in the source. The model builder also assumed F=1 and Fm=1 without molar correction (apparent parameterization) and used first-order depot input consistent with extravascular dosing. The invented ka was judged not acceptable, triggering the needs_review verdict; the second reader's value checks agreed with the record on all compared values (3320.91, 1.96, 1.17, 9010.48). Extracted — tolbutamide: CL/F 1.23 L/h/kg/, V/F 1.48 L/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 3320.91, the second reading 3320.91; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -103,6 +103,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=tolbutamide) | central.C | not captured | output must be the measured/analyte compartment |
@@ -129,8 +130,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_modelica.zip" download>Tolbutamide_Shi2021_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_modelica.zip" download>Tolbutamide_Shi2021_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_fmi.zip" download>Tolbutamide_Shi2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_matlab.zip" download>Tolbutamide_Shi2021_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_matlab_simbio.zip" download>Tolbutamide_Shi2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_sbml.zip" download>Tolbutamide_Shi2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -142,7 +143,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 2100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Dose in the paper: 2100 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference/Tolbutamide_Shi2021_reference_sim_controls.json"></dbs-fmusim>
 

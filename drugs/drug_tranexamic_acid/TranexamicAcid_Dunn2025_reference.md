@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The tranexamic acid record was rejected because its oral absorption compartment is unreachable: no absorption rate or bioavailability value was extracted, leaving the lagged oral input (Tlag 0.16 h) unlinked to the two-compartment model.**
+**The tranexamic acid two-compartment model for pregnant individuals was rejected because a compartment has no path from the dose, making part of the structure unreachable.**
 
-The structure is a two-compartment model with an oral input (Tlagoral 0.16), but the record contains no absorption rate constant or oral bioavailability value, so the absorption compartment has no path from the dose to the central compartment (V1 10.7 L, CLb 8.59). The weight covariate effects on clearance and distribution clearance (0.89) and on the two volumes (0.44) were captured, but a second reader recorded these same effects as parameters with values 0.89 and 0.44 where the record left them empty, and also read the absorption rate as 0.18 and bioavailability as 0.56 where the record had none. The second reader otherwise agreed on the drug and measured compound, differing only in spelling of tranexamic acid and in whether the covariate effect forms were recorded for clearance and central volume. Extracted — tranexamic acid: CLb 8.59, V1 10.7, Qb 28.9, V2 15, tlag 0.16.
+The record contains blood clearance CLb of 8.59, central volume V1 of 10.7, inter-compartmental blood flow Qb of 28.9, peripheral volume V2 of 15.0, and an oral absorption lag time of 0.16, with weight covariate effects of 0.89 on clearance and flow and 0.44 on the volumes. The rejection reason is an unreachable or orphan compartment or unlinked metabolite in the topology. A second reader also disagreed on several fields: it read an oral absorption rate constant of 0.18 and an oral bioavailability fraction of 0.56 where this record has no values, and it assigned linear-fractional covariate forms to the clearance and volume parameters where this record lists them differently or not at all. Extracted — tranexamic acid: CLb 8.59, V1 10.7, Qb 28.9, V2 15, tlag 0.16.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading tranexamic_acid; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The quinidine record was held back because the elimination rate constant kel (0.003 min-1) had no extracted value, so a library placeholder would have been used, and the record rests on abstract-only summary statistics rather than a fitted model.**
+**The quinidine record was not simulated because the elimination rate constant kel (0.003 min-1) was never extracted or defaulted, leaving the parameter set incomplete.**
 
-The parameter-coverage check found only 2 of the expected 3 parameters covered: kel (elimination rate constant, kmu) was neither emitted nor defaulted, meaning no value was extracted and a placeholder would have been used. The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. In addition, a second reader returned null for all six parameter fields (V 0.37 L/kg, CL 3.86 ml/min/kg, kfm 0.0012 min-1, kel 0.003 min-1, bioavailability 0.78), so the values could not be independently confirmed. The model was built but has not been simulated yet. Extracted — quinidine: V 0.37 L/kg, CL 3.86 ml/min/kg, kfm 0.0012 min-1, kel 0.003 min-1, Fab 0.78.
+The parameter-coverage check found only 2 of 3 expected parameters covered; kel (elimination rate constant, 0.003 min-1) was neither emitted nor defaulted, so the model was held back. The record was built from the paper's abstract alone, meaning reported summary statistics stood in for a fitted model. A second reader disputed all extracted values, including clearance 3.86 ml/min/kg, volume of distribution 0.37 L/kg, bioavailability 0.78, and formation rate constant 0.0012 min-1, reading them as null. Extracted — quinidine: V 0.37 L/kg, CL 3.86 ml/min/kg, kfm 0.0012 min-1, kel 0.003 min-1, Fab 0.78.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 0.78, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

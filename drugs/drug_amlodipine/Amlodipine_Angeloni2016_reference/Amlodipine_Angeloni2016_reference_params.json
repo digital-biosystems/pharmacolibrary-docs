@@ -1,4 +1,5 @@
 {
+ "dose_source": "library default",
  "model_id": "Amlodipine_Angeloni2016_reference",
  "molar_masses": {
   "central.C": 0.40887599999999996
@@ -14,14 +15,14 @@
   "VdPerKg": 3.128587245813494e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662023
+  "central.C": 660.0000000662046
  },
  "reference_peaks": {
-  "central.C": 0.04542293110083698
+  "central.C": 0.004542293099819398
  },
  "stop_time": 259200.0,
  "template": "PK_1C",

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;fosphenytoin&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/&quot;},{&quot;label&quot;:&quot;Tanaka_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fosphenytoin_Tanaka2013_reference&quot;,&quot;label&quot;:&quot;Tanaka_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Tanaka2013_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fosphenytoin_Coles2015_reference&quot;,&quot;label&quot;:&quot;Coles_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Coles2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fosphenytoin_Empey2013_reference&quot;,&quot;label&quot;:&quot;Empey_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Empey2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fosphenytoin_Higuchi2019_reference&quot;,&quot;label&quot;:&quot;Higuchi_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Higuchi2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fosphenytoin_Moffett2018_reference&quot;,&quot;label&quot;:&quot;Moffett_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Moffett2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fosphenytoin_Ohno2018_reference&quot;,&quot;label&quot;:&quot;Ohno_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Ohno2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fosphenytoin_Wainwright2018_reference&quot;,&quot;label&quot;:&quot;Wainwright_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Wainwright2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fosphenytoin_Tanaka2013_reference&quot;,&quot;label&quot;:&quot;Tanaka_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Tanaka2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fosphenytoin_Coles2015_reference&quot;,&quot;label&quot;:&quot;Coles_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Coles2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fosphenytoin_Empey2013_reference&quot;,&quot;label&quot;:&quot;Empey_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Empey2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fosphenytoin_Higuchi2019_reference&quot;,&quot;label&quot;:&quot;Higuchi_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Higuchi2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fosphenytoin_Moffett2018_reference&quot;,&quot;label&quot;:&quot;Moffett_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Moffett2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fosphenytoin_Ohno2018_reference&quot;,&quot;label&quot;:&quot;Ohno_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Ohno2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fosphenytoin_Wainwright2018_reference&quot;,&quot;label&quot;:&quot;Wainwright_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fosphenytoin/Fosphenytoin_Wainwright2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fosphenytoin — `Fosphenytoin_Tanaka2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.882). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.882). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**No value for fosphenytoin's volume of distribution — all 6 extracted parameters describe phenytoin, not fosphenytoin.**
+**V3 has no unit.**
 
-The model was built, but fosphenytoin's volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (V3), so that value has no SI equivalent. Extracted — phenytoin: CL 1.61 L/h, V1 20.3 L, Q 53.4 L/h, V2 26.5 L, V3 0.591 V3, kfm 4.96 1/h.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V3), so that value has no SI equivalent. None of the extracted parameters is fosphenytoin's own; they describe phenytoin. Extracted — phenytoin: CL 1.61 L/h, V1 20.3 L, Q 53.4 L/h, V2 26.5 L, V3 0.591 V3, kfm 4.96 1/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has fosphenytoin sodium → phenytoin (metabolism), the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -30,7 +30,7 @@ Tanaka J; Kasai H; Shimizu K; Shimasaki S; Kumagai Y et al. (2013). European jou
   ·  DOI: [10.1007/s00228-012-1373-8](https://doi.org/10.1007/s00228-012-1373-8)
 
 ## Model component
-<dbs-pgx drug="fosphenytoin" model-id="Fosphenytoin_Tanaka2013_reference" status="model_quarantined" stale="false" population="pediatric patients, adult patients, and healthy volunteers" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fosphenytoin" model-id="Fosphenytoin_Tanaka2013_reference" status="needs_review" stale="false" population="pediatric patients, adult patients, and healthy volunteers" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 6 extracted.
@@ -38,7 +38,7 @@ Tanaka J; Kasai H; Shimizu K; Shimasaki S; Kumagai Y et al. (2013). European jou
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -131,16 +131,6 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | C9_phys_window_Q63 | pass | volume within physiological range | 20.3 L | not captured | not captured | ['Tab3:row4:col2', 'Tab3:row4:col3', 'Tab3:row4:col4', 'Tab3:row4:col5', 'Tab3:row4:col6', 'Tab3:row4:col7'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 26.5 L | not captured | not captured | ['Tab3:row6:col2', 'Tab3:row6:col3', 'Tab3:row6:col4', 'Tab3:row6:col5', 'Tab3:row6:col6', 'Tab3:row6:col7'] |
 
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -149,8 +139,6 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_fosphenytoin/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Tanaka_2013` / `Tanaka_2013::reference`)
-- model: `../../../knowledgebase/drugs/drug_fosphenytoin/models/modelica/_needs_review/Fosphenytoin_Tanaka2013_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_fosphenytoin/models/modelica/_needs_review/Fosphenytoin_Tanaka2013_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

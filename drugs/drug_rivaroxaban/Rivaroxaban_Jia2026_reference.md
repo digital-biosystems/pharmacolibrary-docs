@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The rivaroxaban model's simulated peak concentration (0.00396) misses the paper's reported Cmax (0.00014) by a ratio of 28.3132, and its absorption rate constant ka was defaulted rather than taken from the source.**
+**The rivaroxaban model was held back because its simulated peak concentration (0.000198) exceeds the paper's reported Cmax (0.00014) by a ratio of 1.4157, and the builder invented an absorption rate constant not reported in the source.**
 
-Simulating the paper's dosing yields a Cmax of 0.003963842988179458 against the reported 0.00014, a ratio of 28.3132, with the µg/L→SI conversion compared against simulated kg/m³. The absorption rate constant ka was not reported in the source, so a library default was substituted along with a default Tlag. The builder also assumed F=1 and Fm=1 with no molar correction, an apparent-parameterization assumption. A second reader additionally reported 1.22 for alag1 where the record has none. Extracted — rivaroxaban: kabs 0.143, CL/F 7.22 L/h, V/F 4.93 L, D1 0.82 h.
+Simulated as the paper dosed it, the model's Cmax for rivaroxaban is 0.000198 versus the paper's 0.00014, a ratio of 1.4157 beyond tolerance; the check note flags a possible µg/L-to-SI versus kg/m3 unit mismatch. The builder also substituted library defaults for the absorption rate constant (ka) and lag time (Tlag), which are not reported in the source, and assumed F=1 and Fm=1 with no molar correction; this invented absorption was judged not acceptable. A second reader recorded a lag time of 1.22 h where this record has none, so the deviation findings are partly inconclusive. Extracted — rivaroxaban: kabs 0.143, CL/F 7.22 L/h, V/F 4.93 L, D1 0.82 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of alag1: this record has none, the second reading 1.22. That field shapes the model, so the record is marked disputed.
 
@@ -105,13 +105,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=rivaroxaban) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | fail | 0.00014 | 0.003963842988179458 | 28.3132 | µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00014 | 0.0001981928425861676 | 1.4157 | µg/L→SI vs simulated kg/m3 |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -132,7 +133,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference/Rivaroxaban_Jia2026_reference_modelica.zip" download>Rivaroxaban_Jia2026_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference/Rivaroxaban_Jia2026_reference_modelica.zip" download>Rivaroxaban_Jia2026_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference/Rivaroxaban_Jia2026_reference_fmi.zip" download>Rivaroxaban_Jia2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference/Rivaroxaban_Jia2026_reference_matlab.zip" download>Rivaroxaban_Jia2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference/Rivaroxaban_Jia2026_reference_matlab_simbio.zip" download>Rivaroxaban_Jia2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -145,7 +146,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 5 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 5, 7.5, 10, 15 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference/Rivaroxaban_Jia2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference/Rivaroxaban_Jia2026_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,13 +15,13 @@
 
 ### Reviewer guidance
 
-**C8 unreachable/orphan compartment or unlinked metabolite.**
+**The furosemide record was rejected because its two-compartment structure contains an unreachable compartment, and it was built from the abstract only, so summary statistics (e.g. CL 1.53 ml/min/kg, V1 2.61 L) stand in for a fitted model.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — furosemide: CL 1.53 ml/min/kg, V1 2.61 L, V2 2.48 L, t1/2z 0.8 hr, Fab 43.4 %.
+The topology check found a compartment with no path from the dose, so the two-compartment furosemide structure is not fully connected. Because only the paper's abstract was read, the reported values (CL 1.53 ml/min/kg, V1 2.61 L, V2 2.48 L, half-life 0.8 hr, bioavailability 43.4%) are summary statistics rather than a fitted model. A second reader also disagreed on parameter attribution: it assigned 68.9 to an absorbed parameter left null here, and placed the 43.4% bioavailability under the renal failure patients rather than the 500-mg tablets of furosemide. Extracted — furosemide: CL 1.53 ml/min/kg, V1 2.61 L, V2 2.48 L, t1/2z 0.8 hr, Fab 43.4 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorbed: this record has none, the second reading 68.9; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Tilstone WJ; Fine A et al. (1978). Clinical pharmacology and therapeutics 23

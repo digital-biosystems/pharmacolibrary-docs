@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The empagliflozin paediatric record was quarantined because its volume of distribution, absorption rate constant and absorption lag time had no extracted values, so library defaults stood in, and every parameter value disagrees with a second reading.**
+**The empagliflozin paediatric model was quarantined because volume of distribution, absorption rate constant and lag time had no source values and library defaults were substituted, and the recorded values (e.g. CL/F 3269 L/h, kabs 2750 1/h) conflict with a second reader's readings (6.74 L/h, 0.239 1/h).**
 
-For empagliflozin in paediatric patients aged 10–17 years with type 2 diabetes, the record lists CL/F = 3269 L/h, V2/F = 2807 L, ka = 2750 1/h, Q/F = 3074 L/h, V3/F = 2718 L and D1 = 2704 h, but only 2 of the 4 expected parameters were covered, with V2/F and Q/F neither emitted nor defaulted. The absorption rate constant was not reported in the source and was defaulted, an invented absorption treatment judged not acceptable, and F = 1, Fm = 1 with no molar correction were assumed (apparent parameterization). A second reader read every value differently — CL/F 6.74, V2/F 4.12, ka 0.239, Q/F 5.51, V3/F 71.7, D1 0.326 — so the extracted numbers are irreconcilable with the source. Extracted — empagliflozin: CL/F 3.27e+03 L/h, V2/F 2.81e+03 L, kabs 2.75e+03, Q/F 3.07e+03 L/h, V3/F 2.72e+03 L, D1 2.7e+03 h.
+For empagliflozin in patients aged 10–17 years, no value was extracted for the volume of distribution, absorption rate constant or absorption lag time, so placeholders stood in and the model was held back. The coverage check found only 2 of 4 expected parameters covered, with V2/F and Q/F neither emitted nor defaulted, and the invented absorption substitution (ka defaulted, not reported in the source) was judged unacceptable. A second reader disagreed on every parameter value: CL/F 6.74 vs 3269 L/h, D1 0.326 vs 2704 h, kabs 0.239 vs 2750 1/h, Q/F 5.51 vs 3074 L/h, V2/F 4.12 vs 2807 L and V3/F 71.7 vs 2718 L, indicating the recorded values are likely misread. The model also assumed F=1 and Fm=1 without molar correction (apparent parameterization). Extracted — empagliflozin: CL/F 3.27e+03 L/h, V2/F 2.81e+03 L, kabs 2.75e+03, Q/F 3.07e+03 L/h, V3/F 2.72e+03 L, D1 2.7e+03 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f].value`: this record has 3269, the second reading 6.74; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -144,6 +144,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['V2/F', 'Q/F'] |

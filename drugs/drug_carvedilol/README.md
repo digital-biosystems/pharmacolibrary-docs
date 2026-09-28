@@ -39,8 +39,8 @@ Carvedilol was granted FDA approval on 14 September 1995.[L7889]
 
 | status | detail | citation | doi |
 |---|---|---|---|
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span> | [Hwang_2023](drugs/drug_carvedilol/pd_Hwang_2023_HR.md) | Hwang S et al., Population Pharmacokinetic-Pharmacodyna…, Journal of Korean medical s… (2023) | [10.3346/jkms.2023.38.e173](https://doi.org/10.3346/jkms.2023.38.e173) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Yamamoto_2024](drugs/drug_carvedilol/pd_Yamamoto_2024_E.md) | Yamamoto PA et al., Rerouting cardiovascular management fol…, British journal of clinical… (2024) | [10.1111/bcp.16129](https://doi.org/10.1111/bcp.16129) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span> | [Hwang_2023](drugs/drug_carvedilol/pd_Hwang_2023_HR.md) | Hwang S et al., Population Pharmacokinetic-Pharmacodyna…, Journal of Korean medical s… (2023) | [10.3346/jkms.2023.38.e173](https://doi.org/10.3346/jkms.2023.38.e173) |
 
 ## Pharmacogenomics (PGx)
 

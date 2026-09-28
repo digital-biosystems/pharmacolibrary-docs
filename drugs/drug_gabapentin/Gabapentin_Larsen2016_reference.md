@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The gabapentin rat record was rejected because a structural parameter failed a dimensional-consistency check, and the record was built only from the paper's abstract rather than a fitted model.**
+**The gabapentin record was rejected because the Michaelis–Menten affinity parameter Km is reported as 44.1 mg/kg, a dose-based unit that is dimensionally wrong for a substrate-affinity constant.**
 
-The rejection cause is a dimension mismatch on a structural parameter: the Michaelis–Menten capacity Km is recorded as 44.1 mg/kg and Vmax as 41.9 mg/h·kg for gabapentin, alongside CL 160.67 mL/kg/hr, absorption rate 5.24 1/hr and lag time 0.45 hr in a one-compartment structure. Because only the paper's abstract was read, these reported summary statistics stood in for a fitted model, so the record could not be published as a model. A second reader returned no value (null) for every parameter — Km, Vmax, CL, kabs and tlag — so the disagreement checks could not compute a comparison and are inconclusive. Extracted — gabapentin: Km 44.1 mg/kg, Vmax 41.9 mg/h∙kg, CL 161 mL/kg/hr, kabs 5.24 1/hr, tlag 0.45 hr.
+Km, a measure of an enzyme's affinity for its substrate, carries the unit mg/kg in this record, which does not match the concentration dimension expected of a structural Michaelis–Menten parameter; this dimension mismatch caused the rejection. The record was built from the paper's abstract only, so reported summary statistics stood in for a fitted model of gabapentin in rats with CFA-induced inflammatory hyperalgesia. A second reader returned no values for any of the five parameters (Km 44.1 mg/kg, Vmax 41.9 mg/h·kg, CL 160.67 mL/kg/hr, kabs 5.24 1/hr, tlag 0.45 hr), so the disagreement could not be resolved. Extracted — gabapentin: Km 44.1 mg/kg, Vmax 41.9 mg/h∙kg, CL 161 mL/kg/hr, kabs 5.24 1/hr, tlag 0.45 hr.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has 160.67, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

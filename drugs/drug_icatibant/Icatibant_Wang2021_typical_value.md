@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The one-compartment icatibant model lists a peripheral volume V2/F of 1.75 L with no distribution path from the dose, leaving that compartment unreachable, so the record was rejected.**
+**The icatibant two-compartment model record was rejected because one compartment is unreachable from the dose, and the key parameters CL/F and V1/F have no extracted values.**
 
-The structure is stated as one compartment, yet the record carries a peripheral volume V2/F of 1.75 L for icatibant; with no connection from the dose site, that compartment is orphaned. The rejection cause is recorded as an unreachable or orphan compartment. No other failed checks or numeric deviations are reported in the findings. Extracted — icatibant: kabs 3.27 h–1, tlag 0.0426 h, V2/F 1.75 L.
+The record lists kabs (3.27 h–1), tlag (0.0426 h) and V2/F (1.75 L) for icatibant, but CL/F (total clearance adjusted for bioavailability) and V1/F (central volume of distribution adjusted for bioavailability) carry no values. The rejection reason is an unreachable or orphan compartment, meaning a compartment in the model structure has no path from the administered dose. No other failed checks or builder deviations are reported. Extracted — icatibant: kabs 3.27 h–1, tlag 0.0426 h, V2/F 1.75 L.
 
 Independently confirmed by `gpt-oss:120b`.
 

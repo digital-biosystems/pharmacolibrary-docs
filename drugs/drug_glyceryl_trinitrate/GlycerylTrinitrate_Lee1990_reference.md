@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The glyceryl trinitrate record was rejected because its apparent parameters are incoherent: oral bioavailability 0.015 carries the unit mg/kg, and the abstract-only summary statistics were double-corrected as if fitted values.**
+**The glyceryl trinitrate record was rejected because apparent parameters (CL/F 16 ml/min/kg, V/F 6.5 L) were combined with an explicit bioavailability Fab of 0.015, double-correcting for F; Fab's unit is also given as mg/kg instead of a fraction.**
 
-The record for glyceryl trinitrate in conscious dogs was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The coherence check on apparent parameters failed with a double correction: the bioavailability of oral GTN (0.25 mg/kg dose) is given as 0.015 but with the unit mg/kg, a fraction mislabelled as a dose-normalized amount, while CL/F (16 ml/min/kg), V/F (6.5 L), t1/2z (45 min) and kabs (0.02 h−1) are all apparent (F-corrected) values treated inconsistently. A second reader disagreed on the parameterization, preferring a mechanistic rather than apparent reading, and returned null for the bioavailability value (0.015) and for every parameter value, leaving the numeric comparisons unresolved. Extracted — glyceryl trinitrate: Fab 0.015 mg/kg, t1/2z 45 min, CL/F 16 ml/min/kg, V/F 6.5 L, kabs 0.02 h−1.
+The record, built from the abstract of Lee_1990 alone so summary statistics stood in for a fitted model, reports CL/F and V/F as bioavailability-adjusted apparent parameters while also carrying Fab = 0.015, which the coherence check flagged as a double correction for F. The bioavailability value 0.015 is labelled with unit mg/kg although it is defined as the fraction of drug reaching systemic circulation. A second reader disputed the parameterization (apparent vs mechanistic) and left the values 0.015, 16, 45 min, 0.02 h−1 and 6.5 L unmatched. Extracted — glyceryl trinitrate: Fab 0.015 mg/kg, t1/2z 45 min, CL/F 16 ml/min/kg, V/F 6.5 L, kabs 0.02 h−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

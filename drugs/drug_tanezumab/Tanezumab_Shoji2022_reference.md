@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The tanezumab record was rejected because the parameter Cmax carries the unit 'days' instead of a concentration unit, and its peripheral compartment Vp is not connected to the dosing compartment; only the paper abstract was read.**
+**The tanezumab record was rejected because the Cmax parameter carries a unit of days instead of a concentration, and the two-compartment structure contains an unreachable compartment.**
 
-The record lists Cmax for tanezumab with the unit 'days', a time unit on a parameter that should be a maximum concentration, which is a dimensional mismatch on a structural parameter. The two-compartment structure also leaves the peripheral compartment (Vp, 1.77 L) without a link from the dose, so it is unreachable. Because the source was abstract-only, the reported summary statistics stood in for a fitted model, and a second reader recorded no values for any parameter (CL 0.133 L d-1, Vc 2.6 L, Vp 1.77 L, Km 31.2 μg L-1, Cmax null), leaving those comparisons uncomputed. Extracted — tanezumab: CL 0.133 L d-1, V1 2.6 L, V2 1.77 L, Km 31.2 μg L-1.
+The record was extracted from the abstract of Shoji_2022 only, so reported summary statistics stood in for a fitted model. The Cmax parameter, which should be the highest observed drug concentration, is reported with the unit 'days', a dimension mismatch on a structural parameter. The two-compartment structure also failed the check for an orphan compartment with no path from the dose. A second reader returned null for all parameter values (CL 0.133 L d-1, Vc 2.6 L, Vp 1.77 L, Km 31.2 μg L-1), disagreeing with the extracted values. Extracted — tanezumab: CL 0.133 L d-1, V1 2.6 L, V2 1.77 L, Km 31.2 μg L-1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has 0.133, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 

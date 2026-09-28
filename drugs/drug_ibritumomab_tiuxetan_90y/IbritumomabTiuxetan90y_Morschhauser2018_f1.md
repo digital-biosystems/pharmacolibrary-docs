@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record for 90Y-ibritumomab tiuxetan was rejected because the clearance unit was reported as 'ml.min' without the per-time notation, so clearance (1.03 ml.min) could not be given an SI value and a dimension mismatch resulted.**
+**The record was rejected because the clearance of ibritumomab tiuxetan is reported as 1.03 ml.min, a unit with a dimension mismatch (missing the per-time denominator) that could not be converted to SI.**
 
-The reported clearance of 1.03 for ibritumomab tiuxetan carries the unit 'ml.min', which is dimensionally incomplete for a clearance parameter (it should express volume per time, e.g. mL/min). This unit could not be converted to SI, so the parameter entered the model without a valid SI value, producing a dimension mismatch on a structural parameter and the rejection. A second reader also disagreed on the measured compound, reading the analyte as 90Y-ibritumomab tiuxetan rather than ibritumomab tiuxetan, and read additional parameters (AUCcum 7d 558.03, blood 4131.0, vertebrae L2-L4 7.84) that this record lacks. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
+The clearance parameter for ibritumomab tiuxetan carries the verbatim unit ml.min rather than ml/min, so its dimension is inconsistent with a clearance and no SI value could be derived. The other reported parameters (Cmax 0.308 µg.mL−1, terminal half-life 83.6 h, MRT 114.1 h, AUC 1708.1 µg.min.mL−1, AUCt 261.98 µg.min.mL−1) were extracted, but the clearance unit could not be converted to SI units. A second reader also disagreed on the analyte (ibritumomab tiuxetan_90y vs ibritumomab tiuxetan, and ibritumomab tiuxetan_111in as primary analyte) and on the classification of the two AUC parameters, and read additional parameters (AUCcum 7d 558.03, blood 4131.0, vertebrae L2-L4 7.84) absent from this record. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ibritumomab tiuxetan, the second reading ibritumomab tiuxetan_90y; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The lumiracoxib record was rejected because the structural parameter A (1.42 COX-2·h⁻²) has a unit that could not be converted to SI, and the COX-2 compartment is unreachable from the dose.**
+**The lumiracoxib record was rejected because the structural parameter kel (0.21) failed a dimension check and the COX-2 interconversion link leaves a compartment unreachable from the dose, with the COX-2•h⁻² unit of A (1.42) unconvertible to SI.**
 
-The record lists a lumiracoxib–COX-2 interconversion link with no link parameter, leaving COX-2 as a compartment with no path from the dose, and the structural parameter A carries the unit COX-2·h⁻², which could not be expressed in SI units. A dimension mismatch was also flagged on this structural parameter. A second reader assigned different values for two parameters (0.33 and 62 h⁻¹) where this record has none, and read 0.89 h⁻¹ as a different parameter, so the extracted values are not consistently supported. Extracted — lumiracoxib: kel 0.21, AUC 1.42 COX-2•h -2, KD 0.89 h -1, C0 13 s.
+The elimination rate constant kel, labelled kS_COX-2 with value 0.21, was flagged as a dimension mismatch on a structural parameter, and the link from lumiracoxib to COX-2 as interconversion produced an unreachable compartment or unlinked metabolite. The AUC parameter A carries the unit COX-2•h⁻², which could not be converted to SI units, so it reached the model without an SI value. A second reader also disagreed on the links (recording none) and on parameter assignments, reading 0.33 and 62 where this record has null and 0.89 for KD, and a different identifier for the C0 (LT0, 13 s) parameter. Extracted — lumiracoxib: kel 0.21, AUC 1.42 COX-2•h -2, KD 0.89 h -1, C0 13 s.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has lumiracoxib → cox-2 (interconversion), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

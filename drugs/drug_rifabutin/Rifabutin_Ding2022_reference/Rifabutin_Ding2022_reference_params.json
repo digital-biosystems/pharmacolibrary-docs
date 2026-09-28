@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 150 mg oral (J04AB04)",
  "model_id": "Rifabutin_Ding2022_reference",
+ "molar_masses": {
+  "central.C": 0.8470046999999999
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,21 +11,22 @@
  "parameters": {
   "Cl": 4.1527777777777775e-06,
   "F": 0.9,
+  "MM": 0.8470046999999999,
   "Tlag": 0.0,
   "VdPerKg": 0.015714285714285715,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.00015,
   "ka": 0.00013722222222222223,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 27357.114228456914
+  "central.C": 26664.529058116234
  },
  "reference_peaks": {
-  "central.C": 7.390926697149557e-05
+  "central.C": 0.0001108524880228757
  },
- "stop_time": 86400.0,
+ "stop_time": 950400.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

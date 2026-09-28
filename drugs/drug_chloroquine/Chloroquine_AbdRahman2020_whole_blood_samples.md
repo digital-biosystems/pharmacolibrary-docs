@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The chloroquine parent–metabolite record was rejected because apparent parameters (CL/F 54.6 L/h, V1/F 2930 L, Q 47.2 L/h; metabolite CL/F 37.6 L/h, V1/F 40.0 L, Q/F 36.3 L/h) were double-corrected for bioavailability (Frel 0.192).**
+**The chloroquine record was rejected because apparent parameters already adjusted for bioavailability (CL/F 54.6 L/h, V1/F 2930 L) are combined with a relative bioavailability Frel of 0.192, double-correcting for F.**
 
-The record lists bioavailability-corrected parameters for chloroquine (CL/F 54.6 L/h, V1/F 2930 L, Q 47.2 L/h) and desethylchloroquine (CL/F 37.6 L/h, V1/F 40.0 L, Q/F 36.3 L/h) together with a relative bioavailability Frel of 0.192, and the coherence check found a double correction — parameters already divided by F were corrected a second time. A second reader also disagreed on the dosed compound (chloroquine phosphate versus chloroquine) and on the identifiers of the kabs, Q, and V1 parameters, and the peripheral volumes (V p1) were left unextracted for both compounds. Extracted — chloroquine: kabs 0.943 hour -1, CL/F 54.6 L/h, V1/F 2.93e+03 L, Q 47.2 L/h, Frel 0.192; desethylchloroquine: CL/F 37.6 L/h, V1/F 40 L, Q/F 36.3 L/h.
+The reported chloroquine and desethylchloroquine parameters (CL/F 54.6 L/h, V1/F 2930 L, Q 47.2 L/h; DCQ CL/F 37.6 L/h, V1/F 40.0 L, Q/F 36.3 L/h) are each defined as bioavailability-adjusted apparent values, yet the record also carries Frel 0.192 for chloroquine, so applying it would correct for bioavailability twice. A second reader also disagreed on the dose compound (chloroquine phosphate versus chloroquine) and on several parameter identifiers, and noted peripheral volumes of distribution (1079 L and 196 L) absent from this record. Extracted — chloroquine: kabs 0.943 hour -1, CL/F 54.6 L/h, V1/F 2.93e+03 L, Q 47.2 L/h, Frel 0.192; desethylchloroquine: CL/F 37.6 L/h, V1/F 40 L, Q/F 36.3 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has chloroquine phosphate, the second reading chloroquine; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

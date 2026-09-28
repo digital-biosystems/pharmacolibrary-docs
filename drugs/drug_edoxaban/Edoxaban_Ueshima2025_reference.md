@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The edoxaban model was quarantined because its volume of distribution, absorption rate constant and absorption lag time had no extracted values and library defaults were substituted, with ka invented rather than reported.**
+**The edoxaban model (Ueshima_2025, Japanese adults with atrial fibrillation) was quarantined because Vd, ka and Tlag had no source values and library placeholders were substituted, with ka invented.**
 
-The record reports only CL/F = 28.2 L/h for edoxaban in Japanese adults with atrial fibrillation; edoxaban's volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization) and used a first-order depot input consistent with extravascular dosing. A second reader disagreed on the parameterization, judging it mechanistic rather than apparent, and read the CL/F value as null instead of 28.2 L/h. Extracted — edoxaban: CL/F 28.2 L/h.
+Only CL/F = 28.2 L/h for edoxaban was extracted; volume of distribution, absorption rate constant and absorption lag time were absent from the source, so placeholder values stood in for them and the model was held back rather than published with invented numbers. The absorption check failed with 'invented_absorption: not acceptable', since ka was defaulted and not reported in the paper. The builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization) and used first-order depot input, though a second reader disagreed, calling the parameterization mechanistic, and read the CL/F value as null instead of 28.2. Extracted — edoxaban: CL/F 28.2 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -102,6 +102,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |

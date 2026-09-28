@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 3000 mg parenteral (C01BA02)",
  "model_id": "Procainamide_Grasela1984_reference",
+ "molar_masses": {
+  "central.C": 0.2353253
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,19 +11,20 @@
  "parameters": {
   "Cl": 3.333333333333333e-07,
   "F": 1.0,
+  "MM": 0.2353253,
   "VdPerKg": 0.001942857142857143,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.003,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662042
+  "central.C": 660.0000000662068
  },
  "reference_peaks": {
-  "central.C": 0.0007347537266973536
+  "central.C": 0.02204261175933398
  },
- "stop_time": 86400.0,
+ "stop_time": 1468800.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

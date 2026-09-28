@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The hydromorphone arm of the model has no metabolic link to any metabolite (an orphan compound), and the central volume of distribution was reported as 7 %, a unit not convertible to SI, so the record was rejected.**
+**The hydromorphone record was rejected because its metabolism link has no parameter (formation clearance is 'none'), leaving hydromorphone unlinked, and the central volume of distribution was reported as 7% — a unit that could not be converted to SI, so no SI value exists.**
 
-The structure links morphine to its glucuronides via a formation clearance, but the hydromorphone link is recorded with no parameter, no relation and no target, leaving hydromorphone as a compartment with no path from the dose. The central volume of distribution carries the value 7 with the unit '%', which cannot be expressed in SI units, so no SI value could be assigned. A second reader also disagreed on the primary analyte (morphine and hydromorphone versus morphine; hydromorphone), on the glucuronide naming, and on whether the two parameters (clearance 83.8 L/h, volume 7 %) belong to this record at all, reading them as null. Extracted — morphine and hydromorphone: CL 83.8 L h À1, V 7 %.
+The record lists a hydromorphone link with relation 'none' and link parameter 'none', so the metabolite has no path from the dose (unlinked metabolite). The central volume of distribution for morphine and hydromorphone carries the verbatim unit '%', which is not a valid unit for a volume of distribution and could not be converted to SI, so the parameter had no usable numeric value. A second reader also disagreed on the primary analyte (morphine; hydromorphone versus morphine and hydromorphone) and on whether the morphine-to-glucuronide metabolism link exists, and read the clearance 83.8 L/h and volume 7 under different parameter labels; these disagreements are unresolved. Extracted — morphine and hydromorphone: CL 83.8 L h À1, V 7 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has morphine and hydromorphone, the second reading morphine; hydromorphone; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

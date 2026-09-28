@@ -1,25 +1,34 @@
 {
+ "dose_source": "paper",
  "model_id": "Pantoprazole_Smith2021v2_reference",
+ "molar_masses": {
+  "central.C": 0.38337
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  70.0
+ ],
  "parameters": {
   "Cl": 3.9861111111111114e-07,
   "F": 1.0,
+  "MM": 0.38337,
   "VdPerKg": 0.0009,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 7e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662099
+  "central.C": 660.0000000662113
  },
  "reference_peaks": {
-  "central.C": 0.0015842924938957652
+  "central.C": 0.0011090047363612188
  },
- "stop_time": 86400.0,
+ "stop_time": 604800.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

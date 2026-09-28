@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The rifaximin two-compartment mouse model was rejected because a structural parameter failed the dimension check: a reported unit could not be expressed in SI units, leaving that parameter without a valid value.**
+**The rifaximin record was rejected because the terminal half-life is dimensionally inconsistent: t1/2β is 0.11 while t1/2z is 5.98 h for the same two-compartment disposition, a structural-parameter mismatch.**
 
-The record reports rifaximin disposition in mice with S. aureus-induced mastitis as a two-compartment model with V1 = 2.15, V2 = 0.46, CL = 0.29 and Q = 0.89, plus hybrid terms (λ1 = 2.38, t1/2β = 0.11, t1/2z = 5.98 h, MRT = 6.66 h, AUC24 = 176.83 h·μg/g, Cmax = 25.82 μg/g). The failing check was a dimension mismatch on a structural parameter: one of the reported units could not be expressed in SI units, so that parameter was carried without a valid SI value. No other findings, substitutions or second-reader disagreements are recorded; the rejection rests on this unconvertible unit and the resulting dimension inconsistency. Extracted — rifaximin: V1 2.15, V2 0.46, CL 0.29, Q 0.89, λ1 2.38, t1/2β 0.11, t1/2z 5.98 h, MRT 6.66 h, … (+2).
+For rifaximin in mice with S. aureus-induced mastitis, the record carries two terminal half-life values, t1/2β = 0.11 and t1/2z = 5.98 h, which describe the same slowest elimination phase of the two-compartment model and cannot both be right; the dimension check on this structural parameter failed. In addition, the AUCt unit h·μg/g could not be converted to SI, so the parameter reached the model without an SI value. The other parameters (V1 2.15, V2 0.46, CL 0.29, Q 0.89, λ1 2.38, MRT 6.66 h, Cmax 25.82 μg/g) were extracted as reported. Extracted — rifaximin: V1 2.15, V2 0.46, CL 0.29, Q 0.89, λ1 2.38, t1/2β 0.11, t1/2z 5.98 h, MRT 6.66 h, … (+2).
 
 <sub>reviewed by glm-5.3-flash</sub>
 

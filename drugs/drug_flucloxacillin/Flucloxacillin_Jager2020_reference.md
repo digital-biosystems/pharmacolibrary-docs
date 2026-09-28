@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The flucloxacillin two-compartment model was rejected because a structural parameter was reported in a unit that could not be converted to SI, leaving a dimension mismatch on that parameter.**
+**The flucloxacillin two-compartment model (Jager_2020, critically ill adults) was rejected because a binding parameter reported in mmol/L — Bmax 0.316 or KD 0.0260 — failed the dimension check on a structural parameter.**
 
-The record reports flucloxacillin parameters for critically ill adults — CL 42.8 L/h, V1 36.9 L, V2 41.6 L, Q 32.6 L/h, plus binding parameters Bmax 0.316 mmol/L and KD 0.0260 mmol/L — in a two-compartment structure. One of these structural parameters carried a reported unit that could not be expressed in SI units, so it entered the model without a consistent dimension and failed the dimensional consistency check. The model was therefore refused. Extracted — flucloxacillin: Bmax 0.316 mmol/L, KD 0.026 mmol/L, CL 42.8 L/h, V1 36.9 L, V2 41.6 L, Q 32.6 L/h.
+The record carries a dimension mismatch on a structural parameter, and one reported unit could not be converted to SI, so the parameter was carried forward without an SI value. The binding parameters Bmax (0.316 mmol/L) and KD (0.0260 mmol/L) are the only parameters given in mmol/L; the disposition parameters CL 42.8 L/h, V1 36.9 L, V2 41.6 L and Q 32.6 L/h are dimensionally consistent. The findings do not identify which of the two binding parameters triggered the mismatch, so the exact parameter at fault is inconclusive. Extracted — flucloxacillin: Bmax 0.316 mmol/L, KD 0.026 mmol/L, CL 42.8 L/h, V1 36.9 L, V2 41.6 L, Q 32.6 L/h.
 
 Independently confirmed by `gpt-oss:120b`.
 

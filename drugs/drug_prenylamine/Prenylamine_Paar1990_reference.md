@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The prenylamine record was rejected because a structural parameter carries a dimension mismatch, and the record rests on the paper's abstract alone rather than a fitted model.**
+**The prenylamine record was rejected because a structural parameter failed a dimension check, and it was built from the abstract only, so summary statistics stood in for a fitted model.**
 
-The stated cause of rejection is a dimension mismatch on a structural parameter of the one-compartment prenylamine model, meaning a parameter's unit is inconsistent with the role that quantity plays in the model structure. The record was built from the abstract only, so the reported summary statistics — terminal elimination half-life 14.1 h, apparent total clearance 5.8 l/min, relative bioavailability 82.2%, absolute bioavailability 15%, AUC of the (+)-enantiomer 20% — stood in for a fitted model. A second reader left the parameter values (14.1, 5.8, 20, 82.2) unset in its own reading, so no independent confirmation of them exists; the disagreement on the absolute bioavailability field is inconclusive, as one reading gave 15 and the other null. Extracted — prenylamine: t1/2z 14.1 h, CL 5.8 l/min, Frel 82.2 %, Fab 15 %, AUC 20 %.
+The record for prenylamine in healthy volunteers carries a terminal elimination half-life of 14.1 h, apparent total clearance of 5.8 l/min, relative bioavailability of 82.2%, absolute bioavailability of 15%, and an AUC of the (+)-enantiomer of 20%. The refusal rests on a dimension mismatch on a structural parameter, and the second reader could not confirm the dose compound, primary analyte, or any of the five parameter values, leaving the absolute bioavailability disputed between 15 and null. Because only the paper's abstract was read, these reported summary statistics stand in for a fitted model, so the findings are inconclusive on the fitted values themselves. Extracted — prenylamine: t1/2z 14.1 h, CL 5.8 l/min, Frel 82.2 %, Fab 15 %, AUC 20 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has prenylamine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 

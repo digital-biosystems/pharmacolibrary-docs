@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;enoxaparin&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/&quot;},{&quot;label&quot;:&quot;Zufferey_2021 \u00b7 value_r_s_e&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enoxaparin_Zufferey2021_iiv_r_s_e&quot;,&quot;label&quot;:&quot;Zufferey_2021_iiv_r_s_e&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_iiv_r_s_e.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enoxaparin_Zufferey2021_value_r_s_e&quot;,&quot;label&quot;:&quot;Zufferey_2021_value_r_s_e&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_value_r_s_e.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enoxaparin_Zufferey2021_value_r_s_e&quot;,&quot;label&quot;:&quot;Zufferey_2021_value_r_s_e&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_value_r_s_e.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Enoxaparin_Zufferey2021_iiv_r_s_e&quot;,&quot;label&quot;:&quot;Zufferey_2021_iiv_r_s_e&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_iiv_r_s_e.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -124,6 +124,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |

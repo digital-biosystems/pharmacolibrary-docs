@@ -112,23 +112,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=exenatide) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | not captured | 0.0001011881740795551 | not captured | non-numeric value |
-| T1_cmax | reference | skipped | 7 | 0.0001011881740795551 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 273 | 0.0001011881740795551 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 24 | 0.0001011881740795551 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 321 | 0.0001011881740795551 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 256 | 0.0001011881740795551 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 287 | 0.0001011881740795551 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 18 | 0.0001011881740795551 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 237 | 0.0001011881740795551 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 34 | 0.0001011881740795551 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 189 | 0.0001011881740795551 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 211 | 0.0001011881740795551 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | not captured | 5.102000135011231e-09 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | 7 | 5.102000135011231e-09 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 273 | 5.102000135011231e-09 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 24 | 5.102000135011231e-09 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 321 | 5.102000135011231e-09 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 256 | 5.102000135011231e-09 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 287 | 5.102000135011231e-09 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 18 | 5.102000135011231e-09 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 237 | 5.102000135011231e-09 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 34 | 5.102000135011231e-09 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 189 | 5.102000135011231e-09 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 211 | 5.102000135011231e-09 | not captured | unresolved concentration unit (exp 'pg ml−1', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -149,8 +150,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv_modelica.zip" download>Exenatide_Cirincione2017v2_iiv_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv_fmi.zip" download>Exenatide_Cirincione2017v2_iiv_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv_modelica.zip" download>Exenatide_Cirincione2017v2_iiv_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv_fmi.zip" download>Exenatide_Cirincione2017v2_iiv_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv_matlab.zip" download>Exenatide_Cirincione2017v2_iiv_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv_matlab_simbio.zip" download>Exenatide_Cirincione2017v2_iiv_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv_sbml.zip" download>Exenatide_Cirincione2017v2_iiv_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -162,7 +163,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.006 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 0.005 mg, single dose, first-order absorption (ka 0.006 /h, F 0.9). Doses in the paper: 0.005, 0.01 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv_sim_controls.json"></dbs-fmusim>
 

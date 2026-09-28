@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Hydroxychloroquine's elimination clearance and intercompartmental clearance had no extracted values, so library defaults were substituted and the model was quarantined; tlag, kabs, CL/F and V2/F were also uncovered.**
+**The hydroxychloroquine model was quarantined because elimination clearance and intercompartmental clearance had no extracted values and library placeholders were substituted, and only 1 of 5 parameters (CL 7.57) was covered.**
 
-The record lists tlag 0.389, kabs 1.15, CL/F 9.16 and V2/F 2190 for hydroxychloroquine plus CL 7.57 for desethylchloroquine, yet only one of the five expected parameters was covered — tlag, kabs, CL/F and V2/F were neither emitted nor defaulted. Hydroxychloroquine's elimination clearance and intercompartmental clearance had no value extracted, meaning a library placeholder would have stood in for them, so the model was held back rather than published with invented numbers. The builder additionally assumed F=1 and Fm=1 with no molar correction (apparent parameterization), and the structure links hydroxychloroquine by formation clearance to desethylhydroxychloroquine, desethylchloroquine and didesethylchloroquine. Extracted — hydroxychloroquine: tlag 0.389, kabs 1.15, CL/F 9.16, V2/F 2.19e+03, CL 7.57.
+The record lists tlag 0.389, kabs 1.15, CL/F 9.16 and V2/F 2190 for hydroxychloroquine, but the parameter-coverage check found only 1 of 5 expected parameters covered, with tlag, kabs, CL/F and V2/F neither emitted nor defaulted. Hydroxychloroquine's elimination clearance and intercompartmental clearance had no source value, so library placeholders stood in and the model was held back rather than published with invented numbers. The builder also assumed F=1 and Fm=1 with no molar correction, treating the parameterization as apparent. Extracted — hydroxychloroquine: tlag 0.389, kabs 1.15, CL/F 9.16, V2/F 2.19e+03, CL 7.57.
 
 Independently confirmed by `gpt-oss:120b`.
 
@@ -86,6 +86,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 1 covered | not captured | neither emitted nor in defaulted[]: ['tlag', 'kabs', 'CL/F', 'V2/F'] |

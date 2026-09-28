@@ -1,5 +1,9 @@
 {
+ "dose_source": "library default",
  "model_id": "Gemcitabine_Doi2017_reference",
+ "molar_masses": {
+  "central.C": 0.2631981
+ },
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,21 +11,22 @@
  "parameters": {
   "Cl": 1.9083333333333335e-08,
   "F": 1.0,
+  "MM": 0.2631981,
   "VdPerKg": 3.842857142857143e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "k12": 1.2081784386617098e-06,
   "k21": 8.312020460358054e-07,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662083
+  "central.C": 660.0000000662063
  },
  "reference_peaks": {
-  "central.C": 0.032532330706451826
+  "central.C": 0.003253233030286433
  },
- "stop_time": 86400.0,
+ "stop_time": 518400.0,
  "template": "PK_2C",
  "template_fmu": "PK_2C.fmu"
 }

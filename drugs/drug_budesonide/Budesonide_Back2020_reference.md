@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The budesonide two-compartment model was rejected because one compartment has no connection to the dosing route, and the record was built only from the paper's abstract rather than a fitted model.**
+**The budesonide two-compartment model was rejected because a compartment has no path from the dose, and the record was built from the abstract alone rather than a fitted model.**
 
-The record describes a two-compartment model for budesonide in adults with moderate asthma, with V1 = 216 L, CL = 18.4 L·hr−1, absorption rate constant kabs = 19.7 hr−1 and V2 = 106 L. It was rejected because one of these compartments is unreachable or orphan — it has no path from the administered dose, so drug could never reach it. In addition, the record was built from the abstract alone, meaning only the paper's summary statistics stood in for a fitted model. Extracted — budesonide: V1 216 L, CL 18.4 L·hr−1, kabs 19.7 hr−1, V2 106 L.
+The record reports budesonide parameters V1 = 216 L, CL = 18.4 L·hr−1, absorption rate constant 19.7 hr−1, and V2 = 106 L for a two-compartment structure in adults with moderate asthma. The structural check found an unreachable or orphan compartment, meaning part of the model structure has no connection from the dose. Additionally, only the paper's abstract was read, so the reported summary statistics stand in for a fitted model, which is a limitation of the record's provenance. Extracted — budesonide: V1 216 L, CL 18.4 L·hr−1, kabs 19.7 hr−1, V2 106 L.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

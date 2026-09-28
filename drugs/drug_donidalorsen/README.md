@@ -32,8 +32,8 @@ Donidalorsen was approved by the FDA in August 2025 for prophylactic use to prev
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.591). The first reading is what the record holds.">cross-check: disputed</span> | [Diep_2026](drugs/drug_donidalorsen/pd_Diep_2026_PKK.md) | Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span> | [Singh_2025](drugs/drug_donidalorsen/pd_Singh_2025_HAE_attack_rate.md) | Singh P et al., Exposure-Response Analysis of Donidalor…, Clinical and translational… (2025) | [10.1111/cts.70388](https://doi.org/10.1111/cts.70388) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.591). The first reading is what the record holds.">cross-check: disputed</span> | [Diep_2026](drugs/drug_donidalorsen/pd_Diep_2026_PKK.md) | Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206) |
 
 ## ADME sites
 

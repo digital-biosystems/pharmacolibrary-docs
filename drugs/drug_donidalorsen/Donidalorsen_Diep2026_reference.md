@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The donidalorsen record was quarantined because clearance, distribution volume, absorption rate constant, lag time and both intercompartmental rate constants were left as library placeholders instead of the reported values (CL/F 12.8 L/h, V1/F 69.8 L, ka 0.952 1/h), and the weight covariate effects were never simulated.**
+**The donidalorsen record was quarantined because clearance, volume of distribution, absorption rate constant, absorption lag time and both intercompartmental rate constants had no source values and were left at library defaults.**
 
-The paper reports CL/F 12.8 L/h, V1/F 69.8 L, Q/F 2.58 L/h, V/F 1840 L and ka 0.952 1/h, yet clearance, volume of distribution, absorption rate constant, absorption lag time, central→peripheral and peripheral→central rate constants had no extracted value, so defaults stood in and the model was held back rather than published with invented numbers. The absorption rate constant was additionally flagged as invented by defaulting, despite 0.952 1/h appearing in the record. The weight covariate effects on CL/F and Q/F (1.52 and 1.79, plus the theta terms 2.34 and 1.60) were defined but only the reference individual was simulated, so those scenarios were not exercised. The apparent-parameterization assumption (F=1, Fm=1, no molar correction) was also recorded as a deviation. Extracted — donidalorsen: CL/F 12.8, V1/F 69.8, Q/F 2.58, V/F 1.84e+03, kabs 0.952.
+Although the paper reports apparent parameters for donidalorsen (CL/F 12.8 L/h, V1/F 69.8 L, Q/F 2.58 L/h, peripheral V/F 1840 L, ka 0.952 1/h), the model builder substituted library placeholder defaults for clearance, volume of distribution, absorption rate constant, absorption lag time, and the central-to-peripheral and peripheral-to-central rate constants, so the model was held back rather than published with invented numbers. The builder also assumed F=1 and Fm=1 without molar correction, and the ka default was flagged as an invented absorption deviation. In addition, the covariate effects defined in the record (weight effects of 1.52 on CL/F and 1.79 on Q/F, plus further weight terms of 2.34 and 1.60) were not exercised: only the reference individual was simulated. Extracted — donidalorsen: CL/F 12.8, V1/F 69.8, Q/F 2.58, V/F 1.84e+03, kabs 0.952.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

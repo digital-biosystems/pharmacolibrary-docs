@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00014, model 7.93e-07); the model does not reproduce the paper's time of the peak (tmax) (paper 0.43, model 1.68).**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00014, model 3.84e-05); the model does not reproduce the paper's time of the peak (tmax) (paper 0.43, model 0.642).**
 
 Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Extracted — butorphanol: kabs 6.28 1/h, V/F 0.465 L/kg, V2/F 0.42 L/kg, CL/F 9.85 mL/min/kg, V 0.144, V2 0.295, CL 0.053, Q 0.71.
 
@@ -102,14 +102,15 @@ Knych HK; Weiner D; McKemie DS; Traynham M; Blea J et al. (2024). Journal of vet
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=butorphanol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 8 scholar param(s) emitted or defaulted | 8 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 3C → PK_3C* | PK_3C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | fail | 0.0001399 | 7.930289994690939e-07 | 0.0057 | ng/mL→SI vs simulated kg/m3 |
-| T1_tmax | reference | fail | 0.43 | 1.6833667334669338 | 3.9148 | h→SI vs simulated h |
+| T1_cmax | reference | fail | 0.0001399 | 3.839113062556469e-05 | 0.2744 | ng/mL→SI vs simulated kg/m3 |
+| T1_tmax | reference | fail | 0.43 | 0.6416669619608921 | 1.4922 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -130,7 +131,7 @@ Knych HK; Weiner D; McKemie DS; Traynham M; Blea J et al. (2024). Journal of vet
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage/Butorphanol_Knych2024_shrinkage_modelica.zip" download>Butorphanol_Knych2024_shrinkage_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage/Butorphanol_Knych2024_shrinkage_modelica.zip" download>Butorphanol_Knych2024_shrinkage_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage/Butorphanol_Knych2024_shrinkage_fmi.zip" download>Butorphanol_Knych2024_shrinkage_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_3C_enteral.fmu" download>PK_3C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage/Butorphanol_Knych2024_shrinkage_matlab.zip" download>Butorphanol_Knych2024_shrinkage_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage/Butorphanol_Knych2024_shrinkage_matlab_simbio.zip" download>Butorphanol_Knych2024_shrinkage_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -143,7 +144,7 @@ Knych HK; Weiner D; McKemie DS; Traynham M; Blea J et al. (2024). Journal of vet
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 6.28 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 7 mg, single dose, first-order absorption (ka 6.28 /h, F 1). Dose in the paper: 7 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage/Butorphanol_Knych2024_shrinkage_params.json" metaurl="assets/fmu/PK_3C_enteral.vr.json" wasmurl="assets/fmu/PK_3C_enteral.js" controlsurl="drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage/Butorphanol_Knych2024_shrinkage_sim_controls.json"></dbs-fmusim>
 

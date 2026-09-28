@@ -1,25 +1,30 @@
 {
+ "dose_source": "library default",
  "model_id": "Cannabinoids_Nachnani2024_reference",
+ "molar_masses": {
+  "central.C": 0.628938
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 1.007222222222222e-06,
   "F": 1.0,
+  "MM": 0.628938,
   "VdPerKg": 0.0006053259852561912,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 660.0000000662048
+  "central.C": 660.0000000662087
  },
  "reference_peaks": {
-  "C_central": 0.0023432537074973615
+  "central.C": 0.00023432542747050614
  },
- "stop_time": 86400.0,
+ "stop_time": 147600.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

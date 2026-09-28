@@ -119,7 +119,7 @@ Zhou XJ; Martin M; Placidi M; Cano JP; Rahmani R et al. (1990). European journal
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 7 mg infusion over 10 min, single dose. Doses in the paper: 7, 21, 42, 63, 70, 126 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg_sim_controls.json"></dbs-fmusim>
 

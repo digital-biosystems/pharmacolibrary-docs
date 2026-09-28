@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The potassium chloride record lacks a distribution volume and clearance — it is an exposure/outcome paper, not a compartmental popPK model — and a structural parameter has a dimension mismatch.**
+**Rejected: the potassium chloride record reports only exposure metrics (Cmax 4.14 mmol/L, Tmax 6 h, AUC 106.89 mmol·h/L) with no distribution volume or clearance, so it is not a compartmental population PK model.**
 
-The paper reports only exposure metrics for potassium: C0 3.56 mmol/L, Tmax 6.00 h, Cmax 4.14 mmol/L, Ka 0.37 per hour, t1/2 13.53 h and AUC∞ 106.89 mmol·h/L, with no distribution volume and no clearance or elimination rate, so it is not a compartmental population PK model. A dimension mismatch was flagged on a structural parameter, and a reported unit could not be converted to SI, so that parameter reached the build without an SI value. A second reader also disagreed on the dosed compound (potassium chloride versus potassium chloride extended-release tablets and potassium citrate granules) and on the AUC∞ parameter identity. Extracted — potassium chloride: C0 3.56 mmol/L, tmax 6 h, Cmax 4.14 mmol/L, kabs 0.37 per hour, t1/2z 13.5 h, AUC∞ 107 mmol·h/L.
+The paper (Li_2025, cardiovascular emergencies) provides no distribution volume and no clearance or elimination rate for potassium; it is an exposure/outcome study, not a compartmental population PK model. A dimension mismatch was also flagged on a structural parameter, and a reported unit could not be converted to SI, so one parameter reached model assembly without an SI value. A second reader disagreed on the dose compound, reading it as potassium chloride extended-release tablets and potassium citrate granules rather than potassium chloride, and on the identifier assigned to the AUC parameter. Extracted — potassium chloride: C0 3.56 mmol/L, tmax 6 h, Cmax 4.14 mmol/L, kabs 0.37 per hour, t1/2z 13.5 h, AUC∞ 107 mmol·h/L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has potassium chloride, the second reading potassium chloride extended-release tablets and potassium citrate granules; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

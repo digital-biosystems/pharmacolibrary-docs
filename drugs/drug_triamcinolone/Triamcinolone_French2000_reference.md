@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The triamcinolone acetonide record was rejected because its clearance (0.0001 mL/h/kg) and steady-state volume (0.0497 mL/kg) fall far outside physiologically plausible ranges, indicating a unit or scale extraction error from the abstract-only source.**
+**The triamcinolone acetonide record for horses was rejected because the extracted clearance (0.0001 mL/h/kg) and volume of distribution (0.0497 mL/kg) are physiologically implausible, indicating a unit or scale extraction error.**
 
-The record reports triamcinolone acetonide in horses with a one-compartment structure and half-lives of 83.5 min (rapid phase) and 12 h (slower phase), but the clearance of 0.0001 mL/h/kg and volume of distribution at steady state of 0.0497 mL/kg are implausibly small magnitudes, consistent with a unit or scale misreading. Because the record was built from the paper's abstract alone, the reported summary statistics stood in for a fitted model, compounding uncertainty in these values. A second reader left all four parameter values (clearance 0.0001 mL/h/kg, t1/2α 83.5 min, t1/2z 12 h, Vss 0.0497 mL/kg) unconfirmed, so no independent comparison could be computed. Extracted — triamcinolone: t1/2α 83.5 min, t1/2z 12 h, CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
+The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The clearance value of 0.0001 mL/h/kg and volume of 0.0497 mL/kg for triamcinolone acetonide fall far outside physiological windows, consistent with a unit or scale extraction error. A second reader returned no values for the clearance, both half-lives (83.5 min and 12 h), and the volume, disagreeing with all extracted parameters. Extracted — triamcinolone: t1/2α 83.5 min, t1/2z 12 h, CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of gm clearance: this record has 0.0001, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

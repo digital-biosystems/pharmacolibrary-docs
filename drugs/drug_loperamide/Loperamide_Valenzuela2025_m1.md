@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07D&quot;,&quot;href&quot;:&quot;atc/A07D.md&quot;},{&quot;label&quot;:&quot;loperamide&quot;,&quot;href&quot;:&quot;drugs/drug_loperamide/&quot;},{&quot;label&quot;:&quot;Valenzuela_2025 \u00b7 m1&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Loperamide_Valenzuela2025_loperamide&quot;,&quot;label&quot;:&quot;Valenzuela_2025_loperamide&quot;,&quot;href&quot;:&quot;drugs/drug_loperamide/Loperamide_Valenzuela2025_loperamide.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loperamide_Valenzuela2025_m1&quot;,&quot;label&quot;:&quot;Valenzuela_2025_m1&quot;,&quot;href&quot;:&quot;drugs/drug_loperamide/Loperamide_Valenzuela2025_m1.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Loperamide_Valenzuela2025_loperamide&quot;,&quot;label&quot;:&quot;Valenzuela_2025_loperamide&quot;,&quot;href&quot;:&quot;drugs/drug_loperamide/Loperamide_Valenzuela2025_loperamide.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loperamide_Valenzuela2025_m1&quot;,&quot;label&quot;:&quot;Valenzuela_2025_m1&quot;,&quot;href&quot;:&quot;drugs/drug_loperamide/Loperamide_Valenzuela2025_m1.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # loperamide — `Loperamide_Valenzuela2025_m1`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The loperamide parent–metabolite model was quarantined because N-desmethyl loperamide's clearance, volume of distribution and formation rate had no extracted values, so library placeholder values stood in; V2/F, Q/F, kabs and tlag were also uncovered.**
+**The loperamide record was rejected because the model output is the parent compartment instead of the measured analyte, the structure is a one-compartment enteral model rather than the parent–metabolite topology, and V2/F (805 L) and Q/F (96.4 L/h) were left at library placeholder values.**
 
-The record lists fitted values for CL/F (52.4 L/h), V1/F (1650 L), V2/F (805 L), Q/F (96.4 L/h), Frel (1.00), kabs (0.258 h−1) and tlag (0.162 h), yet the coverage check found only 2 of 6 expected parameters emitted or defaulted, with V2/F, Q/F, kabs and tlag neither emitted nor defaulted. The builder substituted generic placeholder values for N-desmethyl loperamide's clearance, volume of distribution and formation rate, and assumed F=1, Fm=1 with no molar correction (apparent parameterization). A second reader also disagreed on the metabolite's identity, reading 'M1' where this record reads N-desmethyl loperamide, and on the primary analyte screen. Extracted — loperamide: CL/F 52.4 L/h, V1/F 1.65e+03 L, V2/F 805 L, Q/F 96.4 L/h, Frel 1, kabs 0.258 h−1, tlag 0.162 h, D1 0.714 h.
+The paper reports a parent–metabolite structure with loperamide metabolized to N-desmethyl loperamide, but the built model is a single enteral compartment, so the metabolite side and the required output compartment are missing. Parameter coverage reached only 4 of 6 expected parameters: V2/F (805 L) and Q/F (96.4 L/h) were neither emitted nor defaulted, and a library placeholder value was substituted for the missing absorption lag time. The builder also assumed apparent parameterization with F=1, Fm=1 and no molar correction. A second reader disagreed on the primary analyte (m1 vs loperamide) and on the metabolite naming in the metabolism link. Extracted — loperamide: CL/F 52.4 L/h, V1/F 1.65e+03 L, V2/F 805 L, Q/F 96.4 L/h, Frel 1, kabs 0.258 h−1, tlag 0.162 h, D1 0.714 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has loperamide, the second reading M1; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -28,15 +28,15 @@ Valenzuela B; Gisleskog PO; Cirillo I; Coenen E; Ariyawansa J; Ali SR; et al. et
   ·  DOI: [10.1111/cts.70114](https://doi.org/10.1111/cts.70114)
 
 ## Model component
-<dbs-pgx drug="loperamide" model-id="Loperamide_Valenzuela2025_m1" status="model_quarantined" stale="false" population="healthy adults" measured-compound="loperamide" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="loperamide" model-id="Loperamide_Valenzuela2025_m1" status="rejected" stale="false" population="healthy adults" measured-compound="loperamide" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 8 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -56,6 +56,10 @@ Valenzuela B; Gisleskog PO; Cirillo I; Coenen E; Ariyawansa J; Ali SR; et al. et
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - dropped duplicate Q87 ('F 48 mg', value '1.10') — already have one for this compound
 - dropped duplicate Q49 ('k a 48 mg (h−1)', value '0.991') — already have one for this compound
@@ -64,6 +68,7 @@ Valenzuela B; Gisleskog PO; Cirillo I; Coenen E; Ariyawansa J; Ali SR; et al. et
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
 - population split: 'm1' subgroup of Valenzuela_2025 (paper reports 2 populations: loperamide, m1)
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - unparsed cell cts70114-tbl-0002:row9:col2 = '0.00001 (−)'
@@ -163,14 +168,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['V2/F', 'Q/F', 'kabs', 'tlag'] |
-| T3_topology_template | not captured | pass | parent_metabolite → PK_Parent_Metabolite* | PK_Parent_Metabolite | not captured | engineer template must match the scholar topology |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=loperamide) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['V2/F', 'Q/F'] |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | -0.53 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 6.06 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | -0.76 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 5.46 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | -0.53 | 3.613369941422713e-06 | not captured | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 6.06 | 3.613369941422713e-06 | not captured | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
+| T1_cmax | reference | skipped | -0.76 | 3.613369941422713e-06 | not captured | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 5.46 | 3.613369941422713e-06 | not captured | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
+| T1_tmax | reference | skipped | not captured | 9.37875751503006 | not captured | non-numeric value |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -180,29 +186,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_loperamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Valenzuela_2025` / `Valenzuela_2025::m1`)
-- model: `../../../knowledgebase/drugs/drug_loperamide/models/modelica/_needs_review/Loperamide_Valenzuela2025_m1.mo`
-- deviation: `../../../knowledgebase/drugs/drug_loperamide/models/modelica/_needs_review/Loperamide_Valenzuela2025_m1.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_loperamide/models/modelica/Loperamide_Valenzuela2025_m1.mo`
+- deviation: `../../../knowledgebase/drugs/drug_loperamide/models/modelica/Loperamide_Valenzuela2025_m1.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_loperamide/models/modelica/Loperamide_Valenzuela2025_m1.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_loperamide/Loperamide_Valenzuela2025_m1/Loperamide_Valenzuela2025_m1_matlab.zip" download>Loperamide_Valenzuela2025_m1_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_loperamide/Loperamide_Valenzuela2025_m1/Loperamide_Valenzuela2025_m1_matlab_simbio.zip" download>Loperamide_Valenzuela2025_m1_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_loperamide/Loperamide_Valenzuela2025_m1/Loperamide_Valenzuela2025_m1_sbml.zip" download>Loperamide_Valenzuela2025_m1_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_loperamide/Loperamide_Valenzuela2025_m1/Loperamide_Valenzuela2025_m1_cellml.zip" download>Loperamide_Valenzuela2025_m1_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 8 mg, single dose, first-order absorption (ka 0.258 /h, F 1). Doses in the paper: 8, 48 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_loperamide/Loperamide_Valenzuela2025_m1/Loperamide_Valenzuela2025_m1_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_loperamide/Loperamide_Valenzuela2025_m1/Loperamide_Valenzuela2025_m1_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Loperamide_Valenzuela2025_m1_params.json` · controls `Loperamide_Valenzuela2025_m1_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

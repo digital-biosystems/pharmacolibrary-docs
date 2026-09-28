@@ -1,4 +1,5 @@
 {
+ "dose_source": "library default",
  "model_id": "Fentanyl_Tulbah2026_reference",
  "molar_masses": {
   "central.C": 0.3364705
@@ -14,16 +15,16 @@
   "VdPerKg": 6.385714285714286e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "k12": 0.011931394481730051,
   "k21": 0.0020050125313283208,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662039
+  "central.C": 660.0000000662144
  },
  "reference_peaks": {
-  "central.C": 0.00026799051310335127
+  "central.C": 2.6799051435011807e-05
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

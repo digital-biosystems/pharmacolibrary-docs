@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The exenatide two-compartment record was held back because the absorption rate constant ka was not reported in the source and a default was substituted, alongside defaulted Tlag and k21 and an assumed F=1 apparent (/F) parameterization.**
+**The exenatide record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside other unreported defaults (Tlag, k21).**
 
-The failed check concerns invented absorption: ka was defaulted because it was not reported in the source, judged not acceptable. The model builder also defaulted Tlag and k21, assumed F=1 and Fm=1 with no molar correction, and used a first-order depot input consistent with the apparent (/F) parameterization implying extravascular dosing. A second reader disagreed on several extracted values: it read 4.45 where this record had null and 1.18 on a field where this record had null, while this record's 1.18 was read as null by the second reader, leaving value extraction inconclusive. Extracted — exenatide: CL/F 0.198 L/h, V/F 1.18 L, Q/F 0.086 L/h.
+The source reports only CL/F (0.198 L/h), V/F (1.18 L) and Q/F (0.086 L/h) for exenatide; ka, Tlag and k21 were left at library defaults because no values were extracted. The model also assumes F=1 and Fm=1 with no molar correction, so all parameters are apparent (/F) values, and uses first-order depot input consistent with extravascular dosing. A second reader additionally disagreed on which parameter several values belong to, reading 4.45 and 1.18 for parameters the record left empty. Extracted — exenatide: CL/F 0.198 L/h, V/F 1.18 L, Q/F 0.086 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q315: this record has none, the second reading 0; it also differs on 3 more fields. That field does not shape the model.
 
@@ -107,6 +107,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=exenatide) | central.C | not captured | output must be the measured/analyte compartment |
@@ -133,8 +134,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_exenatide/Exenatide_Li2012_reference/Exenatide_Li2012_reference_modelica.zip" download>Exenatide_Li2012_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_exenatide/Exenatide_Li2012_reference/Exenatide_Li2012_reference_fmi.zip" download>Exenatide_Li2012_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_exenatide/Exenatide_Li2012_reference/Exenatide_Li2012_reference_modelica.zip" download>Exenatide_Li2012_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_exenatide/Exenatide_Li2012_reference/Exenatide_Li2012_reference_fmi.zip" download>Exenatide_Li2012_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_exenatide/Exenatide_Li2012_reference/Exenatide_Li2012_reference_matlab.zip" download>Exenatide_Li2012_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_exenatide/Exenatide_Li2012_reference/Exenatide_Li2012_reference_matlab_simbio.zip" download>Exenatide_Li2012_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_exenatide/Exenatide_Li2012_reference/Exenatide_Li2012_reference_sbml.zip" download>Exenatide_Li2012_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -146,7 +147,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 0.294 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 0.294, 2.94, 14.7 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_exenatide/Exenatide_Li2012_reference/Exenatide_Li2012_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_exenatide/Exenatide_Li2012_reference/Exenatide_Li2012_reference_sim_controls.json"></dbs-fmusim>
 

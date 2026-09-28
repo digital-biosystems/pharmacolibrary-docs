@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 100 mg oral (N03AA02)",
  "model_id": "Phenobarbital_TeixeiradaSilva2022_reference",
+ "molar_masses": {
+  "central.C": 0.2322353
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,6 +11,7 @@
  "parameters": {
   "Cl": 1.1666666666666667e-07,
   "F": 1.0,
+  "MM": 0.2322353,
   "Tlag": 0.0,
   "VdPerKg": 0.0002,
   "adminCount": 1.0,
@@ -16,12 +21,12 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 6549.298111032257
+  "central.C": 6549.294990380373
  },
  "reference_peaks": {
-  "central.C": 0.006783929552070485
+  "central.C": 0.006783929552982528
  },
- "stop_time": 86400.0,
+ "stop_time": 432000.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

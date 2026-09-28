@@ -116,6 +116,7 @@ Toutain PL; Bousquet-Melou A; Ferran AA; Roques BB; Del Castillo JRE; Lees P; et
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_output_variable | not captured | pass | C_central (measured=doxycycline) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
@@ -140,7 +141,7 @@ Toutain PL; Bousquet-Melou A; Ferran AA; Roques BB; Del Castillo JRE; Lees P; et
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_doxycycline/Doxycycline_Toutain2025_reference/Doxycycline_Toutain2025_reference_modelica.zip" download>Doxycycline_Toutain2025_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_doxycycline/Doxycycline_Toutain2025_reference/Doxycycline_Toutain2025_reference_fmi.zip" download>Doxycycline_Toutain2025_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_doxycycline/Doxycycline_Toutain2025_reference/Doxycycline_Toutain2025_reference_matlab.zip" download>Doxycycline_Toutain2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_doxycycline/Doxycycline_Toutain2025_reference/Doxycycline_Toutain2025_reference_matlab_simbio.zip" download>Doxycycline_Toutain2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

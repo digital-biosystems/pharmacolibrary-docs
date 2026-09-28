@@ -123,9 +123,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | not captured | 0.00021147764070801226 | not captured | non-numeric value |
-| T1_t_half_terminal | reference | skipped | not captured | 1.9408545106681987 | not captured | non-numeric value |
-| T1_tmax | reference | skipped | not captured | 2.538134375066497 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | not captured | 0.002114780673033497 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | skipped | not captured | 1.940684157447688 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 2.5290734674389284 | not captured | non-numeric value |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -159,7 +159,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.44 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 1000 mg, single dose, first-order absorption (ka 0.44 /h, F 1). Dose in the paper: 1000 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_metformin/Metformin_Nikolaidis2026_base/Metformin_Nikolaidis2026_base_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metformin/Metformin_Nikolaidis2026_base/Metformin_Nikolaidis2026_base_sim_controls.json"></dbs-fmusim>
 

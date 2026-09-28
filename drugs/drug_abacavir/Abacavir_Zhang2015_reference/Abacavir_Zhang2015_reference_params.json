@@ -1,4 +1,5 @@
 {
+ "dose_source": "paper",
  "model_id": "Abacavir_Zhang2015_reference",
  "molar_masses": {
   "central.C": 0.2863323
@@ -6,6 +7,12 @@
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  10.0,
+  25.0,
+  50.0
  ],
  "parameters": {
   "Cl": 2.5027777777777776e-07,
@@ -15,15 +22,15 @@
   "VdPerKg": 0.00024857142857142857,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "ka": 0.0006222222222222223,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 7516.333871720026
+  "central.C": 7535.665712693046
  },
  "reference_peaks": {
-  "central.C": 0.0052562460239570005
+  "central.C": 0.0005256231129991093
  },
  "stop_time": 259200.0,
  "template": "PK_1C_enteral",

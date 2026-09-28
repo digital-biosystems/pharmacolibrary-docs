@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The metformin rat model was rejected because the reported volumes V1 and V2 carry dimensionally inconsistent units and the three-compartment structure contains a compartment with no connection to the dose.**
+**Rejected: the metformin three-compartment Wistar rat model reports the central and peripheral volumes V1 (0.03) and V2 (0.01) in μg/mL, a concentration unit rather than a volume, and one compartment is unreachable from the dose.**
 
-The structural volume parameters V1 (0.03) and V2 (0.01) are reported in units of (mg/kg)/(μg/mL), a dimension mismatch for volume-of-distribution parameters that should be in L/kg like the reported Vz/F (0.04 L/kg). The three-compartment topology also includes an unreachable or orphan compartment, i.e. a compartment with no path from the administered dose. In addition, one reported unit could not be converted to SI, so that parameter entered the model without an SI value. Extracted — metformin: tmax 1 h, t1/2z 2.75 h, MRT 4.29 h, V/F 0.04 L/kg, CL/F 0.01 L/kg*hr, V1 0.03 μg/mL, V2 0.01 μg/mL, k12 0.45, … (+3).
+The volumes of distribution of the central and peripheral compartments, V1 = 0.03 and V2 = 0.01, are given in μg/mL, which is a concentration and not dimensionally consistent with a volume, so the structural parameters fail a dimension check. The model structure also contains a compartment with no path from the administered dose, making it unreachable. In addition, the reported units for V/F (L/kg) and CL/F (L/kg*hr) could not be converted to SI units, so those parameters were carried without SI values. Extracted — metformin: tmax 1 h, t1/2z 2.75 h, MRT 4.29 h, V/F 0.04 L/kg, CL/F 0.01 L/kg*hr, V1 0.03 μg/mL, V2 0.01 μg/mL, k12 0.45, … (+3).
 
 Independently confirmed by `gpt-oss:120b`.
 

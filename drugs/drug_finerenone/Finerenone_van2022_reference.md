@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of all asian ethnicities, except japanese: this record has none, the second reading 0.203; it also differs on 3 more fields. That field does not shape the model.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 van den Berg P; Ruppert M; Mesic E; Snelder N; Seelmann A; Heinig R; et al. et al. (2022). Clinical pharmacokinetics 61

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D10A&quot;,&quot;href&quot;:&quot;atc/D10A.md&quot;},{&quot;label&quot;:&quot;dapsone&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/&quot;},{&quot;label&quot;:&quot;Gatti_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapsone_Gatti1996_reference&quot;,&quot;label&quot;:&quot;Gatti_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Gatti1996_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dapsone_Kotila2023_reference&quot;,&quot;label&quot;:&quot;Kotila_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Kotila2023_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Simpson2006v2_reference&quot;,&quot;label&quot;:&quot;Simpson_2006_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Simpson2006v2_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Falloon1994_reference&quot;,&quot;label&quot;:&quot;Falloon_1994_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Falloon1994_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapsone_Gatti1996_reference&quot;,&quot;label&quot;:&quot;Gatti_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Gatti1996_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dapsone_Kotila2023_reference&quot;,&quot;label&quot;:&quot;Kotila_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Kotila2023_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Falloon1994_reference&quot;,&quot;label&quot;:&quot;Falloon_1994_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Falloon1994_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Simpson2006v2_reference&quot;,&quot;label&quot;:&quot;Simpson_2006_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Simpson2006v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The dapsone model's terminal half-life (26.4 h) does not reproduce the reported 19.2 h, and the absorption rate ka was defaulted because the source never reported it, so the record was held for review.**
+**The dapsone model's terminal half-life (26.4 h) exceeds the paper's 19.2 h beyond tolerance, and the absorption rate constant ka was invented rather than taken from Gatti_1996, so the record was held back.**
 
-The one-compartment dapsone model in HIV-infected patients reports CL/F 1.83 liters/h and V/F 69.6 liters, with a 25% clearance decrease with AZT. When simulated as the paper dosed it, the terminal half-life is 26.420415970598686 h versus the paper's 19.2 h, a ratio of 1.3761 beyond tolerance. The absorption rate constant ka and lag time were not reported in the source, so defaults were substituted, and absorption was invented as first-order depot input under an apparent (F=1, Fm=1, no molar correction) parameterization. A reported unit also lacked an SI conversion, and a second reader would additionally have linked dapsone to monoacetyldapsone via metabolism, which this record omits. Extracted — dapsone: CL/F 1.83 liters/h, V/F 69.6 liters, CL 25 %.
+Simulated as the paper dosed it, the model's terminal half-life is 26.35531736878155 h against the reported 19.2 h (ratio 1.3727), an established failure. The model builder defaulted ka and Tlag because no absorption values were reported in the source, and adjudication flagged this invented absorption as not acceptable. Apparent parameterization was assumed (F=1, Fm=1, no molar correction) with first-order depot input, and a reported unit lacked an SI conversion. A second reader also disagreed on the metabolism link to monoacetyldapsone (absent here), read V/F as 70 L where this record has none, and could not confirm the 25% AZT clearance decrease. Extracted — dapsone: CL/F 1.83 liters/h, V/F 69.6 liters, CL 25 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading dapsone → monoacetyldapsone (metabolism); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -119,26 +119,27 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=dapsone) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | 1.42 | 0.0012200698240520458 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 1.52 | 0.0012200698240520458 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 0.84 | 0.0012200698240520458 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 0.9 | 0.0012200698240520458 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 3.7 | 0.0012200698240520458 | not captured | unresolved concentration unit (exp 'h', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.42 | 0.0012200656188790793 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 1.52 | 0.0012200656188790793 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.84 | 0.0012200656188790793 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 0.9 | 0.0012200656188790793 | not captured | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 3.7 | 0.0012200656188790793 | not captured | unresolved concentration unit (exp 'h', sim 'kg/m3') |
 | T1_cmin_ss | reference | skipped | 0.24 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 0.14 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 0.14 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 0.08 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 0.075 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 0.033 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | fail | 19.2 | 26.420415970598686 | 1.3761 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 26.4 | 26.420415970598686 | 1.0008 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 26.4 | 26.420415970598686 | 1.0008 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 19.2 | 26.35531736878155 | 1.3727 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 26.4 | 26.35531736878155 | 0.9983 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 26.4 | 26.35531736878155 | 0.9983 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -160,8 +161,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dapsone/Dapsone_Gatti1996_reference/Dapsone_Gatti1996_reference_modelica.zip" download>Dapsone_Gatti1996_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dapsone/Dapsone_Gatti1996_reference/Dapsone_Gatti1996_reference_matlab.zip" download>Dapsone_Gatti1996_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dapsone/Dapsone_Gatti1996_reference/Dapsone_Gatti1996_reference_fmi.zip" download>Dapsone_Gatti1996_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dapsone/Dapsone_Gatti1996_reference/Dapsone_Gatti1996_reference_matlab.zip" download>Dapsone_Gatti1996_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dapsone/Dapsone_Gatti1996_reference/Dapsone_Gatti1996_reference_matlab_simbio.zip" download>Dapsone_Gatti1996_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dapsone/Dapsone_Gatti1996_reference/Dapsone_Gatti1996_reference_sbml.zip" download>Dapsone_Gatti1996_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dapsone/Dapsone_Gatti1996_reference/Dapsone_Gatti1996_reference_cellml.zip" download>Dapsone_Gatti1996_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -172,7 +173,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Dose in the paper: 100 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_dapsone/Dapsone_Gatti1996_reference/Dapsone_Gatti1996_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_dapsone/Dapsone_Gatti1996_reference/Dapsone_Gatti1996_reference_sim_controls.json"></dbs-fmusim>
 

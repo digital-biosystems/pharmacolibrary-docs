@@ -1,27 +1,37 @@
 {
+ "dose_source": "paper",
  "model_id": "MetamizoleSodium_Stoschus2025_reference",
+ "molar_masses": {
+  "central.C": 0.333338
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  700.0,
+  1400.0
+ ],
  "parameters": {
   "Cl": 1.0555555555555557e-07,
   "F": 0.9,
+  "MM": 0.333338,
   "Tlag": 0.0,
   "VdPerKg": 0.00049,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.0007,
   "ka": 0.0005277777777777777,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 10197.694857189843
+  "central.C": 10176.4546735457
  },
  "reference_peaks": {
-  "central.C": 0.0025458489044073904
+  "central.C": 0.017820970206024293
  },
- "stop_time": 86400.0,
+ "stop_time": 1209600.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

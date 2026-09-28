@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The naldemedine two-compartment model was quarantined because clearance (CL/F) and absorption rate constant (Ka) had no values in the source, so library defaults were substituted instead of reported estimates.**
+**The naldemedine two-compartment model was quarantined because clearance (CL/F) and absorption rate constant (Ka) had no values in the source, so placeholder numbers were substituted.**
 
-The record lists CL/F and Ka with units (L/hr and hr-1) but no values; only V1/F (87.5 L), Q/F (5.59 L/hr), V2/F (46.6 L) and tlag (0.202 hr) carry numbers, with CL/F 8.44 L/hr and Ka 4.45 hr-1 appearing only as typical values. The model builder defaulted both Cl and ka, meaning library placeholder values would have stood in for parameters not reported in the source. The failed check flagged this as invented absorption, judged not acceptable, since Ka was defaulted rather than reported. The model was therefore held back rather than published with an invented number. Extracted — naldemedine: V1/F 87.5 L, Q/F 5.59 L/hr, V2/F 46.6 L, tlag 0.202 hr.
+Although the record lists V1/F = 87.5 L, V2/F = 46.6 L, Q/F = 5.59 L/hr and tlag = 0.202 hr for naldemedine, clearance and Ka were not reported in the source, so library placeholder values stood in for them and the model was held back rather than published with invented numbers. The model builder also assumed F = 1 and Fm = 1 with no molar correction (apparent parameterization), and the invented absorption substitution (defaulted Ka) was judged not acceptable. The failed check returned 'invented_absorption: not acceptable'. Extracted — naldemedine: V1/F 87.5 L, Q/F 5.59 L/hr, V2/F 46.6 L, tlag 0.202 hr.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -118,6 +118,7 @@ Kubota R; Fukumura K; Wajima T et al. (2018). Pharmaceutical research 35
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |

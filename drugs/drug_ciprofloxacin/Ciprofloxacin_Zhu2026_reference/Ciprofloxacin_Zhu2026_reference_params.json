@@ -1,4 +1,5 @@
 {
+ "dose_source": "WHO ATC DDD 800 mg parenteral (J01MA02)",
  "model_id": "Ciprofloxacin_Zhu2026_reference",
  "molar_masses": {
   "central.C": 0.3313415
@@ -14,16 +15,16 @@
   "VdPerKg": 4.214285714285715e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.0008,
   "k12": 0.004293785310734463,
   "k21": 0.00028054632705795494,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662044
+  "central.C": 660.0000000662094
  },
  "reference_peaks": {
-  "central.C": 0.000140492097857674
+  "central.C": 0.0011239367330328608
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

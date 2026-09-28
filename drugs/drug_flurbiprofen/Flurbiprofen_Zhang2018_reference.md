@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The flurbiprofen elimination rate constant kel is recorded as 0.0001 L/h, a dimensionally wrong unit for a rate constant and inconsistent with the reported clearance 0.1068 L/h and volume 0.5159 L, so the record was rejected.**
+**The flurbiprofen elimination rate constant kel is reported as 0.0001 with unit L/h, a dimension mismatch for a rate constant (1/h), so the record was rejected.**
 
-In a one-compartment model the elimination rate constant must carry the unit 1/h, but the record lists kel as 0.0001 L/h, a unit of clearance rather than of a first-order rate constant; this is the dimension mismatch on a structural parameter cited as the rejection reason. The reported unit could not be converted to SI, so the parameter reached the model without an SI value. A second reader also disputed the extracted parameter set, giving 0.2944 where the record holds no value. Extracted — flurbiprofen: kel 0.0001 L/h, V 0.516 L, CL 0.107 L/h.
+In the Zhang_2018 model of flurbiprofen in Chinese patients with postoperative pain, kel (terminal elimination rate constant) carries value 0.0001 with the unit L/h, which is a clearance-like dimension rather than reciprocal time — a dimension mismatch on a structural parameter. The reported unit could not be converted to SI, so the parameter arrived without an SI value. A second reader assigned 0.2944 to the parameter where this record has no value, disagreeing with the extracted record. The other parameters, Vd 0.5159 L and CL 0.1068 L/h, are dimensionally consistent. Extracted — flurbiprofen: kel 0.0001 L/h, V 0.516 L, CL 0.107 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of s: this record has none, the second reading 0.2944. That field does not shape the model.
 

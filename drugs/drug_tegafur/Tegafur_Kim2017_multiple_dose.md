@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;tegafur&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/&quot;},{&quot;label&quot;:&quot;Kim_2017 \u00b7 multiple_dose&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegafur_Comets2003_japanese_analysis&quot;,&quot;label&quot;:&quot;Comets_2003_japanese_analysis&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Comets2003_japanese_analysis.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Comets2003_western_analysis&quot;,&quot;label&quot;:&quot;Comets_2003_western_analysis&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Comets2003_western_analysis.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_multiple_dose&quot;,&quot;label&quot;:&quot;Kim_2017_multiple_dose&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tegafur_Kim2017_parameter&quot;,&quot;label&quot;:&quot;Kim_2017_parameter&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_parameter.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_population_mean_bsv&quot;,&quot;label&quot;:&quot;Kim_2017_population_mean_bsv&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_population_mean_bsv.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_single_dose&quot;,&quot;label&quot;:&quot;Kim_2017_single_dose&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_single_dose.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_symbol&quot;,&quot;label&quot;:&quot;Kim_2017_symbol&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_symbol.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_unit&quot;,&quot;label&quot;:&quot;Kim_2017_unit&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_unit.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Hirose2010_interindividual_variability&quot;,&quot;label&quot;:&quot;Hirose_2010_interindividual_variability&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Hirose2010_interindividual_variability.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Hirose2010_population_mean&quot;,&quot;label&quot;:&quot;Hirose_2010_population_mean&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Hirose2010_population_mean.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tegafur_Comets2003_japanese_analysis&quot;,&quot;label&quot;:&quot;Comets_2003_japanese_analysis&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Comets2003_japanese_analysis.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Comets2003_western_analysis&quot;,&quot;label&quot;:&quot;Comets_2003_western_analysis&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Comets2003_western_analysis.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_population_mean_bsv&quot;,&quot;label&quot;:&quot;Kim_2017_population_mean_bsv&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_population_mean_bsv.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_symbol&quot;,&quot;label&quot;:&quot;Kim_2017_symbol&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_symbol.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_unit&quot;,&quot;label&quot;:&quot;Kim_2017_unit&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_unit.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Hirose2010_interindividual_variability&quot;,&quot;label&quot;:&quot;Hirose_2010_interindividual_variability&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Hirose2010_interindividual_variability.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Hirose2010_population_mean&quot;,&quot;label&quot;:&quot;Hirose_2010_population_mean&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Hirose2010_population_mean.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_multiple_dose&quot;,&quot;label&quot;:&quot;Kim_2017_multiple_dose&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tegafur_Kim2017_parameter&quot;,&quot;label&quot;:&quot;Kim_2017_parameter&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_parameter.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tegafur_Kim2017_single_dose&quot;,&quot;label&quot;:&quot;Kim_2017_single_dose&quot;,&quot;href&quot;:&quot;drugs/drug_tegafur/Tegafur_Kim2017_single_dose.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tegafur — `Tegafur_Kim2017_multiple_dose`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,11 +15,11 @@
 
 ### Reviewer guidance
 
-**No value for 5-FU's clearance and volume of distribution and the rate at which 5-FU is formed.**
+**The model does not reproduce the paper's terminal half-life (paper 2.3, model 3.23); the model does not reproduce the paper's time of the peak (tmax) (paper 1.7, model 3.06) (+3 more).**
 
-The model was built, but 5-FU's clearance and volume of distribution and the rate at which 5-FU is formed had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (AUClast and AUC∞), so that value has no SI equivalent. Extracted — tegafur: AUClast 4.68e+04 ng·h/mL, AUC∞ 4.75e+04 ng·h/mL, CL/F 1.8 mL/min/kg, V/F 0.5 L/kg, tmax 2.4 h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUClast and AUC∞), so that value has no SI equivalent. Extracted — tegafur: AUClast 4.68e+04 ng·h/mL, AUC∞ 4.75e+04 ng·h/mL, CL/F 1.8 mL/min/kg, V/F 0.5 L/kg, tmax 2.4 h.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 > **Dose compound ≠ measured compound:** dosed `S-1`, measured `tegafur`.
 
@@ -28,15 +28,15 @@ Kim TH; Shin S; Shin JC; Bulitta JB; Weon KY; Yoo SD; et al. et al. (2017). Mole
   ·  DOI: [10.3390/molecules22091488](https://doi.org/10.3390/molecules22091488)
 
 ## Model component
-<dbs-pgx drug="tegafur" model-id="Tegafur_Kim2017_multiple_dose" status="model_quarantined" stale="false" population="Sprague-Dawley rats" measured-compound="tegafur" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="tegafur" model-id="Tegafur_Kim2017_multiple_dose" status="rejected" stale="false" population="Sprague-Dawley rats" measured-compound="tegafur" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -53,12 +53,19 @@ Kim TH; Shin S; Shin JC; Bulitta JB; Weon KY; Yoo SD; et al. et al. (2017). Mole
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Tegafur' — extend the ontology if this is a real PK parameter (source ['Kim_2017_table_1:row1:col4', 'Kim_2017_table_1:row1:col5'])
 - dropped unlinked row (NIL): '5-FU' — extend the ontology if this is a real PK parameter (source ['Kim_2017_table_1:row8:col4', 'Kim_2017_table_1:row8:col5'])
 - dropped unlinked row (NIL): 'Gimeracil' — extend the ontology if this is a real PK parameter (source ['Kim_2017_table_1:row14:col4', 'Kim_2017_table_1:row14:col5'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tegafur
 - population split: 'multiple dose' subgroup of Kim_2017 (paper reports 6 populations: multiple dose, parameter, population mean (bsv), single dose, symbol, unit)
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - unparsed cell Kim_2017_table_1:row1:col3 = '3.5 ± 0.7 *'
@@ -99,25 +106,27 @@ Kim TH; Shin S; Shin JC; Bulitta JB; Weon KY; Yoo SD; et al. et al. (2017). Mole
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=tegafur) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | pass | parent_metabolite → PK_Parent_Metabolite* | PK_Parent_Metabolite | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 72.6 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 40.9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 2.3 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 2.6 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 1.2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 19.3 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 1.7 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 0.6 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 3.2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 1.2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | not captured | 0.005280902847872477 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | 72.6 | 0.005280902847872477 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 40.9 | 0.005280902847872477 | not captured | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_t_half_terminal | reference | fail | 2.3 | 3.2261108750457574 | 1.4027 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.6 | 3.2261108750457574 | 1.2408 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.2 | 3.2261108750457574 | 2.6884 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped | not captured | 3.2261108750457574 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | fail | 0.32166666666666666 | 3.2261108750457574 | 10.0294 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped | not captured | 3.2261108750457574 | not captured | non-numeric value |
+| T1_tmax | reference | fail | 1.7 | 3.0568442170807075 | 1.7981 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.6 | 3.0568442170807075 | 5.0947 | h→SI vs simulated h |
+| T1_tmax | reference | pass | 3.2 | 3.0568442170807075 | 0.9553 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.2 | 3.0568442170807075 | 2.5474 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -127,29 +136,24 @@ Kim TH; Shin S; Shin JC; Bulitta JB; Weon KY; Yoo SD; et al. et al. (2017). Mole
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_tegafur/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Kim_2017` / `Kim_2017::multiple_dose`)
-- model: `../../../knowledgebase/drugs/drug_tegafur/models/modelica/_needs_review/Tegafur_Kim2017_multiple_dose.mo`
-- deviation: `../../../knowledgebase/drugs/drug_tegafur/models/modelica/_needs_review/Tegafur_Kim2017_multiple_dose.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_tegafur/models/modelica/Tegafur_Kim2017_multiple_dose.mo`
+- deviation: `../../../knowledgebase/drugs/drug_tegafur/models/modelica/Tegafur_Kim2017_multiple_dose.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_tegafur/models/modelica/Tegafur_Kim2017_multiple_dose.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose/Tegafur_Kim2017_multiple_dose_matlab.zip" download>Tegafur_Kim2017_multiple_dose_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose/Tegafur_Kim2017_multiple_dose_matlab_simbio.zip" download>Tegafur_Kim2017_multiple_dose_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose/Tegafur_Kim2017_multiple_dose_sbml.zip" download>Tegafur_Kim2017_multiple_dose_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose/Tegafur_Kim2017_multiple_dose_cellml.zip" download>Tegafur_Kim2017_multiple_dose_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 350 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Dose in the paper: 350 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose/Tegafur_Kim2017_multiple_dose_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tegafur/Tegafur_Kim2017_multiple_dose/Tegafur_Kim2017_multiple_dose_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Tegafur_Kim2017_multiple_dose_params.json` · controls `Tegafur_Kim2017_multiple_dose_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

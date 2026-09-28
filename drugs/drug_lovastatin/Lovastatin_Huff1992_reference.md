@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The lovastatin model was quarantined because its elimination clearance and intercompartmental clearance had no extracted values, so library defaults stood in, and parameter V2 was left uncovered.**
+**The lovastatin model in miniature pigs was quarantined because elimination clearance and intercompartmental clearance had no extracted values and library placeholder values were substituted, and parameter V2 (0.08) was not covered by the parameter check.**
 
-The record for lovastatin in miniature pigs (measuring apo B in VLDL and LDL) lists only V2 = 0.08, V3 = 0.010, C0 = 8.56, and λ1 = 0.654; the elimination clearance and intercompartmental clearance were missing and base defaults were substituted for them. The parameter-coverage check found 0 of 1 expected parameters covered, with V2 neither emitted nor defaulted. A second reader also disagreed on the dose compound (fish oil (Maxepa) and lovastatin versus VLDL apo B), the primary analyte (apo B in VLDL and LDL versus apo B), the ordering of the VLDL–IDL and VLDL–LDL interconversion links, and the value of L(0,5) (0.654 versus null). Extracted — lovastatin: V2 0.08, V3 0.01, C0 8.56, λ1 0.654.
+No value was available for lovastatin's elimination clearance and intercompartmental clearance, so library placeholder values stood in for these missing source values and the model was held back rather than published with invented numbers. The parameter coverage check expected 1 parameter emitted or defaulted but obtained 0 covered, with V2 (0.08, volume of distribution of the peripheral compartment) neither emitted nor defaulted. A second reader also disagreed on several fields, including the dose compound (fish oil (Maxepa) and lovastatin versus VLDL apo B), the primary analyte, the order of the VLDL/IDL/LDL apo B interconversion links, and the values of parameters λ1 (0.654) and V2 (0.08), which the second reader read as null. Extracted — lovastatin: V2 0.08, V3 0.01, C0 8.56, λ1 0.654.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fish oil (Maxepa) and lovastatin, the second reading VLDL apo B; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -118,6 +118,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | fail | 1 scholar param(s) emitted or defaulted | 0 covered | not captured | neither emitted nor in defaulted[]: ['V2'] |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |

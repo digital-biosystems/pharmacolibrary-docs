@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A08A&quot;,&quot;href&quot;:&quot;atc/A08A.md&quot;},{&quot;label&quot;:&quot;naltrexone&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/&quot;},{&quot;label&quot;:&quot;Li_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naltrexone_Reuning1979_reference&quot;,&quot;label&quot;:&quot;Reuning_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Reuning1979_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Dunbar2007_reference&quot;,&quot;label&quot;:&quot;Dunbar_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Dunbar2007_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Li1996_reference&quot;,&quot;label&quot;:&quot;Li_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Li1996_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Naltrexone_Christie2025_reference&quot;,&quot;label&quot;:&quot;Christie_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Christie2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naltrexone_Reuning1979_reference&quot;,&quot;label&quot;:&quot;Reuning_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Reuning1979_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Dunbar2007_reference&quot;,&quot;label&quot;:&quot;Dunbar_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Dunbar2007_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Christie2025_reference&quot;,&quot;label&quot;:&quot;Christie_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Christie2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naltrexone_Li1996_reference&quot;,&quot;label&quot;:&quot;Li_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_naltrexone/Naltrexone_Li1996_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # naltrexone — `Naltrexone_Li1996_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,27 +15,27 @@
 
 ### Reviewer guidance
 
-**No value for naltrexone glucuronide's clearance and volume of distribution and the rate at which naltrexone glucuronide is formed.**
+**The naltrexone record from Li_1996 was rejected because the model was built as a one-compartment enteral model with the parent drug as output, while the record declares a parent–metabolite structure whose output should be the measured naltrexone compartment.**
 
-The model was built, but naltrexone glucuronide's clearance and volume of distribution and the rate at which naltrexone glucuronide is formed had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — naltrexone: Fab 15.8 %, CL 39.3 mL/min/kg, V 1.46e+03 mL/kg, kabs 0.484 1/ min.
+The declared structure links naltrexone to its metabolite naltrexone glucuronide, but the model output was the parent's central compartment rather than the measured analyte compartment, and the model structure was a one-compartment enteral model instead of the required parent–metabolite structure. The record was built from the paper's abstract only, so reported summary statistics (Fab 15.8%, CL 39.3 mL/min/kg, V 1458 mL/kg, kabs 0.484 1/min) stood in for a fitted model, and the absorption lag time was left at library defaults because no source value existed. A second reader also disagreed on the dosed compound, the primary analyte, and the absolute bioavailability value of 15.8%. Extracted — naltrexone: Fab 15.8 %, CL 39.3 mL/min/kg, V 1.46e+03 mL/kg, kabs 0.484 1/ min.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has naltrexone, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Li H; Zhao SF; Wang N; Ge ZH et al. (1996). Yao xue xue bao = Acta pharmaceutica Sinica 31
 
 ## Model component
-<dbs-pgx drug="naltrexone" model-id="Naltrexone_Li1996_reference" status="model_quarantined" stale="false" population="dogs" measured-compound="naltrexone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="naltrexone" model-id="Naltrexone_Li1996_reference" status="rejected" stale="false" population="dogs" measured-compound="naltrexone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -51,6 +51,9 @@ Li H; Zhao SF; Wang N; Ge ZH et al. (1996). Yao xue xue bao = Acta pharmaceutica
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=naltrexone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
@@ -62,6 +65,7 @@ Li H; Zhao SF; Wang N; Ge ZH et al. (1996). Yao xue xue bao = Acta pharmaceutica
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Christie_2025's review values (primary lacked it)
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Li_1996_metadata.yaml (1 record(s)); values are summary statistics, not a fitted model
@@ -113,8 +117,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=naltrexone) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | parent_metabolite → PK_Parent_Metabolite* | PK_Parent_Metabolite | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
@@ -125,29 +130,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_naltrexone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Li_1996` / `Li_1996::reference`)
-- model: `../../../knowledgebase/drugs/drug_naltrexone/models/modelica/_needs_review/Naltrexone_Li1996_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_naltrexone/models/modelica/_needs_review/Naltrexone_Li1996_reference.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_naltrexone/models/modelica/Naltrexone_Li1996_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_naltrexone/models/modelica/Naltrexone_Li1996_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_naltrexone/models/modelica/Naltrexone_Li1996_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_naltrexone/Naltrexone_Li1996_reference/Naltrexone_Li1996_reference_matlab.zip" download>Naltrexone_Li1996_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_naltrexone/Naltrexone_Li1996_reference/Naltrexone_Li1996_reference_matlab_simbio.zip" download>Naltrexone_Li1996_reference_matlab_simbio.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_naltrexone/Naltrexone_Li1996_reference/Naltrexone_Li1996_reference_sbml.zip" download>Naltrexone_Li1996_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_naltrexone/Naltrexone_Li1996_reference/Naltrexone_Li1996_reference_cellml.zip" download>Naltrexone_Li1996_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 50 mg, single dose, first-order absorption (ka 29 /h, F 15.8). _The paper's dose was not captured; the default is the WHO ATC DDD 50 mg oral (N07BB04) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_naltrexone/Naltrexone_Li1996_reference/Naltrexone_Li1996_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_naltrexone/Naltrexone_Li1996_reference/Naltrexone_Li1996_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Naltrexone_Li1996_reference_params.json` · controls `Naltrexone_Li1996_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

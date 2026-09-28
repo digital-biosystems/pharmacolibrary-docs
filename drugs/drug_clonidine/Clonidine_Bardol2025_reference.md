@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;clonidine&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/&quot;},{&quot;label&quot;:&quot;Bardol_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Larsson2011_reference&quot;,&quot;label&quot;:&quot;Larsson_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Larsson2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Clonidine_Chiang1986_reference&quot;,&quot;label&quot;:&quot;Chiang_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Chiang1986_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Davies1977_reference&quot;,&quot;label&quot;:&quot;Davies_1977_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Davies1977_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Paalzow1979_reference&quot;,&quot;label&quot;:&quot;Paalzow_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Paalzow1979_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Potts2007_reference&quot;,&quot;label&quot;:&quot;Potts_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Potts2007_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Clonidine_Larsson2011_reference&quot;,&quot;label&quot;:&quot;Larsson_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Larsson2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Chiang1986_reference&quot;,&quot;label&quot;:&quot;Chiang_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Chiang1986_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Davies1977_reference&quot;,&quot;label&quot;:&quot;Davies_1977_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Davies1977_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Paalzow1979_reference&quot;,&quot;label&quot;:&quot;Paalzow_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Paalzow1979_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Potts2007_reference&quot;,&quot;label&quot;:&quot;Potts_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Potts2007_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clonidine — `Clonidine_Bardol2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**No model parameters were extracted from this paper.**
+**The clearance plausibility check could not be computed.**
 
-Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — clonidine: V1 202 L/70 kg; 1-OH midazolam: CLfm 33.4 L/h/70 kg, V 90.8 L/70 kg, CL 212 L/h/70 kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clonidine and midazolam, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -28,7 +28,7 @@ Bardol M; Sheng Y; Baarslag M; Ceci A; Dörje F; Ilmoja ML; et al. et al. (2025)
   ·  DOI: [10.1111/pan.70050](https://doi.org/10.1111/pan.70050)
 
 ## Model component
-<dbs-pgx drug="clonidine" model-id="Clonidine_Bardol2025_reference" status="rejected" stale="false" population="mechanically ventilated children in pediatric intensive care" measured-compound="clonidine and midazolam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="clonidine" model-id="Clonidine_Bardol2025_reference" status="needs_review" stale="false" population="mechanically ventilated children in pediatric intensive care" measured-compound="clonidine and midazolam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -36,7 +36,7 @@ Bardol M; Sheng Y; Baarslag M; Ceci A; Dörje F; Ilmoja ML; et al. et al. (2025)
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -150,9 +150,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

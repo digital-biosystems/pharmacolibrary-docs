@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The roxadustat record was held back because the absorption rate constant ka and lag time Tlag were never reported in the source, so placeholder values would have been used, and the absorption input was judged invented, with the model built from the abstract alone.**
+**The roxadustat record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside defaulted Tlag, in a model built only from the paper's abstract.**
 
-The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The absorption rate constant ka and lag time Tlag had no values in the source, so no value was extracted and a library placeholder would have been used; the ka placeholder was judged an invented absorption deviation, which was not acceptable. The apparent parameterization (F=1, Fm=1, no molar correction) with first-order depot input was also disputed by a second reader, who read the parameterization as mechanistic and could not confirm the clearance of 1.1 L/h or the volume of distribution of 14.9 L. Extracted — roxadustat: CL/F 1.1 L/h, V 14.9 L.
+The record comes from Rekić_2021 (abstract-only), so the reported summary statistics — apparent clearance CL/F of 1.1 L/h and apparent volume of distribution of 14.9 L for roxadustat — stood in for a fitted model. The absorption parameters ka and Tlag were missing from the source and left at defaults, which the adjudication judged an invented absorption input and not acceptable. The parameterization is apparent (F=1, Fm=1, no molar correction) with first-order depot input, and a second reader disagreed on this point, preferring a mechanistic parameterization, while reading null for both the 1.1 L/h clearance and 14.9 L volume values. Extracted — roxadustat: CL/F 1.1 L/h, V 14.9 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -135,8 +135,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_roxadustat/Roxadustat_Reki2021_reference/Roxadustat_Reki2021_reference_modelica.zip" download>Roxadustat_Reki2021_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_roxadustat/Roxadustat_Reki2021_reference/Roxadustat_Reki2021_reference_modelica.zip" download>Roxadustat_Reki2021_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_roxadustat/Roxadustat_Reki2021_reference/Roxadustat_Reki2021_reference_fmi.zip" download>Roxadustat_Reki2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Reki2021_reference/Roxadustat_Reki2021_reference_matlab.zip" download>Roxadustat_Reki2021_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Reki2021_reference/Roxadustat_Reki2021_reference_matlab_simbio.zip" download>Roxadustat_Reki2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_roxadustat/Roxadustat_Reki2021_reference/Roxadustat_Reki2021_reference_sbml.zip" download>Roxadustat_Reki2021_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -148,7 +148,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 43 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 43 mg oral (B03XA05) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_roxadustat/Roxadustat_Reki2021_reference/Roxadustat_Reki2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_roxadustat/Roxadustat_Reki2021_reference/Roxadustat_Reki2021_reference_sim_controls.json"></dbs-fmusim>
 

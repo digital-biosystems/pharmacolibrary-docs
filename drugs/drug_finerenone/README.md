@@ -23,7 +23,7 @@ In Europe, finerenone is indicated for the treatment of chronic kidney disease (
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 0/1/0 | 3/0/0 | 0/0/0 | not captured | not captured | 6 | 3/3 | 6/0 | 0 |
+| 2026-09-28 12:14 | 56:11 | 0/1/0 | 3/0/0 | 0/0/0 | 283,864/28,437 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 3/3 | 7/2 | 0 |
 
 ## popPK records
 
@@ -35,12 +35,12 @@ In Europe, finerenone is indicated for the treatment of chronic kidney disease (
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Goulooze_2022](drugs/drug_finerenone/pd_Goulooze_2022_UACR.md) | Goulooze (2022) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Goulooze_2022](drugs/drug_finerenone/pd_Goulooze_2022_eGFR.md) | Goulooze (2022) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Goulooze_2022_2](drugs/drug_finerenone/pd_Goulooze_2022_2_K.md) | Goulooze (2022) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Snelder_2020](drugs/drug_finerenone/pd_Snelder_2020_K.md) | Snelder N et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00820-x](https://doi.org/10.1007/s40262-019-00820-x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Snelder_2020](drugs/drug_finerenone/pd_Snelder_2020_UACR.md) | Snelder N et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00820-x](https://doi.org/10.1007/s40262-019-00820-x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Snelder_2020](drugs/drug_finerenone/pd_Snelder_2020_eGFR_EPI.md) | Snelder N et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00820-x](https://doi.org/10.1007/s40262-019-00820-x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.45). The first reading is what the record holds.">cross-check: disputed</span> | [Goulooze_2022](drugs/drug_finerenone/pd_Goulooze_2022_UACR.md) | Goulooze (2022) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.45). The first reading is what the record holds.">cross-check: disputed</span> | [Goulooze_2022](drugs/drug_finerenone/pd_Goulooze_2022_eGFR.md) | Goulooze (2022) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Snelder_2020](drugs/drug_finerenone/pd_Snelder_2020_K.md) | Snelder N et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00820-x](https://doi.org/10.1007/s40262-019-00820-x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span> | [Snelder_2020](drugs/drug_finerenone/pd_Snelder_2020_UACR.md) | Snelder N et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00820-x](https://doi.org/10.1007/s40262-019-00820-x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span> | [Snelder_2020](drugs/drug_finerenone/pd_Snelder_2020_eGFR_EPI.md) | Snelder N et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00820-x](https://doi.org/10.1007/s40262-019-00820-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.65). The first reading is what the record holds.">cross-check: disputed</span> | [Goulooze_2022_2](drugs/drug_finerenone/pd_Goulooze_2022_2_K.md) | Goulooze (2022) | — |
 
 ## ADME sites
 
@@ -88,6 +88,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Agarwal_2026 | irrelevant | 0 | 0 | The paper is a secondary analysis of blood pressure and albuminuria outcomes in a clinical trial, containing no pharmacokinetic parameters for finerenone. |
 | popPK | Bui_2024 | relevant | 9 | 2 | The study is a rat PK interaction study with a pop-PK model for finerenone, but the evidence only provides relative changes (e.g., % decrease in clearance) rather than absolute numeric parameter values (CL, V, ka) which are likely in the full text or supplementary material not provided. |
+| PGx | Bui_2024 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (CYP3A4 inhibitors) in rats, not pharmacogenomic effects of gene variants on finerenone PK/PD. |
 | popPK | Eissing_2024 | relevant | 9 | 0 | The paper describes a population PK/PD analysis for finerenone, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
 | popPK | Goulooze_2022 | irrelevant | 2 | 0 | The paper focuses on pharmacodynamic (PD) modeling of UACR and eGFR, using finerenone PK parameters from a separate published study rather than reporting original quantitative PK disposition parameters (CL, V, etc.) in the text. |
 | popPK | Goulooze_2022_2 | irrelevant | 2 | 1 | The paper is a pharmacodynamic (potassium response) analysis that relies on PK parameters from a separate study (van den Berg et al.), reporting only a half-life and a single clearance value in a figure caption rather than a full population PK parameter table. |

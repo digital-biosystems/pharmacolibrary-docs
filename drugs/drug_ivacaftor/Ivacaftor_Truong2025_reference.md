@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The ivacaftor record was quarantined because clearance, absorption rate constant and absorption lag time had no extracted values, so library placeholder values stood in for these parameters.**
+**The ivacaftor model was quarantined because clearance, absorption rate constant and absorption lag time had no source values, so library placeholder values stood in for them, and the invented absorption rate constant was judged unacceptable.**
 
-No value for ivacaftor's CL, ka or Tlag was reported in the source, and the builder substituted generic placeholder values for all three, so the published numbers (CL/F 13.4, V/F 183 L/70 kg) rest on placeholders for key disposition and absorption parameters. The absorption rate constant was additionally flagged as invented, since ka was defaulted rather than reported. The record also assumes F=1 and Fm=1 with no molar correction, making the parameterization apparent (/F), and a second reader disputed the additive error identifier and left the proportional error (0.278) unmatched. Extracted — ivacaftor: CL/F 13.4, V/F 183 L/70 kg, CL 0.37, add_error 0.131, prop_error 0.278.
+The record reports ivacaftor CL/F of 13.4 and V/F of 183 L/70 kg, but clearance, absorption rate constant (ka) and absorption lag time (Tlag) had no values in the source, so placeholder values were substituted and the model was held back rather than published with invented numbers. The builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input, and the defaulted ka was judged an invented absorption term, not acceptable. A second reader further disagreed on the primary analyte (recorded as the combination elexacaftor/tezacaftor/ivacaftor versus unknown) and on the additive error parameter identification, and read no value for the proportional error where 0.278 was recorded. Extracted — ivacaftor: CL/F 13.4, V/F 183 L/70 kg, CL 0.37, add_error 0.131, prop_error 0.278.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has elexacaftor/tezacaftor/ivacaftor, the second reading elexacaftor, tezacaftor, ivacaftor; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -111,6 +111,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |

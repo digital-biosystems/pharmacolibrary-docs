@@ -1,11 +1,12 @@
 {
+ "dose_source": "library default",
  "model_id": "Simvastatin_wierczek2024_reference",
  "molar_masses": {
-  "C_central": 0.4185662
+  "central.C": 0.4185662
  },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 3.703703703703704e-09,
@@ -14,14 +15,14 @@
   "VdPerKg": 5.814285714285715e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 660.0000000662021
+  "central.C": 660.0000000662012
  },
  "reference_peaks": {
-  "C_central": 0.02456331816939823
+  "central.C": 0.002456331817277089
  },
  "stop_time": 4233600.0,
  "template": "PK_1C",

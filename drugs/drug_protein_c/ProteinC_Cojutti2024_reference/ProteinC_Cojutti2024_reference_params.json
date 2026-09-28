@@ -1,8 +1,14 @@
 {
+ "dose_source": "paper",
  "model_id": "ProteinC_Cojutti2024_reference",
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  500.0,
+  1500.0
  ],
  "parameters": {
   "Cl": 8.611111111111111e-09,
@@ -10,18 +16,18 @@
   "VdPerKg": 8.47142857142857e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.0005,
   "k12": 1.780026231965524e-06,
   "k21": 1.1052937754508435e-06,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 660.0000000662086
+  "central.C": 660.0000000662051
  },
  "reference_peaks": {
-  "C_central": 0.015430370863698738
+  "central.C": 0.07715185631635622
  },
- "stop_time": 86400.0,
+ "stop_time": 2419200.0,
  "template": "PK_2C",
  "template_fmu": "PK_2C.fmu"
 }

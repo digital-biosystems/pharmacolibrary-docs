@@ -1,5 +1,9 @@
 {
+ "dose_source": "library default",
  "model_id": "Daprodustat_Mahar2024_reference",
+ "molar_masses": {
+  "central.C": 0.39344
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,6 +11,7 @@
  "parameters": {
   "Cl": 6.833333333333334e-06,
   "F": 1.0,
+  "MM": 0.39344,
   "Tlag": 0.0,
   "VdPerKg": 0.0003842857142857143,
   "adminCount": 1.0,

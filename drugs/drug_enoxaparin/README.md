@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;enoxaparin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enoxaparin_Zufferey2021_iiv_r_s_e&quot;,&quot;label&quot;:&quot;Zufferey_2021_iiv_r_s_e&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_iiv_r_s_e.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enoxaparin_Zufferey2021_value_r_s_e&quot;,&quot;label&quot;:&quot;Zufferey_2021_value_r_s_e&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_value_r_s_e.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enoxaparin_Zufferey2021_value_r_s_e&quot;,&quot;label&quot;:&quot;Zufferey_2021_value_r_s_e&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_value_r_s_e.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enoxaparin_Zufferey2021_iiv_r_s_e&quot;,&quot;label&quot;:&quot;Zufferey_2021_iiv_r_s_e&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_iiv_r_s_e.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # enoxaparin
 
@@ -26,8 +26,8 @@ Enoxaparin is also indicated in the prophylaxis of DVT in abdominal surgery, hip
 
 | status | detail | model structure | params | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: F, Cl, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Zufferey_2021_iiv_r_s_e](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_iiv_r_s_e.md) | 1-compartment, oral | 2 | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
 | <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: F, Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Zufferey_2021_value_r_s_e](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_value_r_s_e.md) | 1-compartment, oral | 1 | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: biomarker_kinetics_as_drug_pk</sub><br><sub>route_to: `scholar`</sub> | [Zufferey_2021_iiv_r_s_e](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_iiv_r_s_e.md) | 1-compartment, oral | 2 | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
 
 ## ADME sites
 
@@ -50,7 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 66 matched, 36 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

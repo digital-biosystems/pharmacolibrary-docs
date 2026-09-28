@@ -19,7 +19,8 @@
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| nandrolone | parent | — (mass units only) | C18H26O2 | — | [9904](https://pubchem.ncbi.nlm.nih.gov/compound/9904) | — |
+| nandrolone | parent | 274.398 | C18H26O2 | DrugBank | [9904](https://pubchem.ncbi.nlm.nih.gov/compound/9904) | Wijnand_1985 |
+| nandrolone decanoate | metabolite | 428.657 | C28H44O3 | PubChem | [9677](https://pubchem.ncbi.nlm.nih.gov/compound/9677) | Wijnand_1985 |
 
 ## Extraction summary
 

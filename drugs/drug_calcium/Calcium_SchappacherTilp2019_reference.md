@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**This calcium model was held back because the absorption rate constant ka was not reported in the source, so a library default was substituted, alongside unreported Tlag and apparent (F=1) parameterization.**
+**The calcium model record was held back because the absorption rate constant ka was not reported in the source and a placeholder default was substituted, an invented absorption input the review deemed unacceptable.**
 
-The record reports only CL/F = 314.0 L/h and V = 1000.0 L for calcium in a one-compartment structure; ka and Tlag had no values in the source, so defaults would have been used, and the invented absorption rate constant was judged not acceptable. The builder assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent, with first-order depot input implied by the /F parameterization. A second reader disagreed on several extracted values, reading 2.4, 1.3 and 53 where this record had no value, and no value where this record read 1000; the 0.0526 value was agreed by both. Extracted — calcium: CL/F 314 L/h, V 1e+03 L.
+The record for calcium (Schappacher-Tilp_2019, one-compartment oral model) reports CL/F of 314.0 L/h and V of 1000.0 L, but ka and Tlag had no values extracted from the source, so library placeholder defaults would have been used instead. The builder also assumed F=1 and Fm=1 without molar correction, making the parameterization apparent, and used first-order depot input consistent with extravascular dosing. The failed check flagged this invented absorption as not acceptable. A second reader additionally disagreed on several extracted values, reading 2.4, 1.3 and 53 where this record has none, and null where this record has 1000. Extracted — calcium: CL/F 314 L/h, V 1e+03 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has none, the second reading 2.4; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -104,6 +104,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=calcium) | central.C | not captured | output must be the measured/analyte compartment |
@@ -130,8 +131,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_modelica.zip" download>Calcium_SchappacherTilp2019_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_modelica.zip" download>Calcium_SchappacherTilp2019_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_fmi.zip" download>Calcium_SchappacherTilp2019_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_matlab.zip" download>Calcium_SchappacherTilp2019_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_matlab_simbio.zip" download>Calcium_SchappacherTilp2019_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_sbml.zip" download>Calcium_SchappacherTilp2019_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -143,7 +144,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 60 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 60, 75 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_calcium/Calcium_SchappacherTilp2019_reference/Calcium_SchappacherTilp2019_reference_sim_controls.json"></dbs-fmusim>
 

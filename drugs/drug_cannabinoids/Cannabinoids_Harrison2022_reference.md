@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The cannabinoids record was held back because the absorption rate constant ka and lag time were not reported in the source, so defaults were substituted, and first-order absorption with F=1 was assumed.**
+**The cannabinoids record was held back because the builder invented an absorption rate constant ka (and a lag time) that the source does not report, alongside defaulted apparent parameters F=1, Fm=1 and no molar correction.**
 
-The record reports only apparent oral parameters for cannabinoids (CL/F 4.3 L/h, V1/F 202.1 L) from a review-secondary source. The absorption rate constant ka and lag time were missing from the source, so library defaults were substituted for these deviated parameters. The model builder further assumed F=1 and Fm=1 without molar correction, and invented a first-order absorption input since ka was not reported. The deviations check returned 'invented absorption: not acceptable', leading to the needs_review verdict. Extracted — cannabinoids: CL/F 4.3 L/h, V1/F 202 L.
+The source reports only CL/F = 4.3 L/h and V1/F = 202.1 L for cannabinoids; ka and Tlag were not extracted, so library placeholder values were substituted for the missing absorption parameters. The model was built with first-order depot input under an apparent (/F) parameterization, assuming F=1 and Fm=1 with no molar correction. The invented absorption rate constant was judged not acceptable, so the record was left at needs_review. Extracted — cannabinoids: CL/F 4.3 L/h, V1/F 202 L.
 
 Independently confirmed by `gpt-oss:120b`.
 
@@ -134,7 +134,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 75 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 75, 225 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference/Cannabinoids_Harrison2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_cannabinoids/Cannabinoids_Harrison2022_reference/Cannabinoids_Harrison2022_reference_sim_controls.json"></dbs-fmusim>
 

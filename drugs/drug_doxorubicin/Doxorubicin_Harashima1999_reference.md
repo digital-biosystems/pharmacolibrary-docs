@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Doxorubicin clearance (CLu = 0.0125 ml/h) and volume (V = 16.7 ml/250 g) fall far outside physiological plausibility, indicating a unit or scale extraction error, so the record was rejected.**
+**Rejected because doxorubicin's unbound clearance CLu of 0.0125 ml/h and volume of distribution V of 16.7 ml/250 g fall outside physiological windows, indicating a unit or scale extraction error.**
 
-The record lists doxorubicin unbound clearance CLu as 0.0125 ml/h and central volume V as 16.7 ml/250 g, magnitudes outside the physiological window for this drug; the inter-compartmental flow Q is 9.69 ml/h/g. These implausible values point to a unit or scale error in how the published parameters were extracted. The model structure is a two-compartment system, but because the clearance and volume are not credible, the record was refused. Extracted — doxorubicin: CLu 0.0125 (ml / h), V 16.7 (ml / 250 g), Q 9.69 (ml / h / g).
+The record lists CLu as 0.0125 ml/h for unbound clearance of doxorubicin, a magnitude far below any plausible elimination rate, and V as 16.7 ml/250 g, an implausibly small distribution volume. The intercompartmental clearance Q of 9.69 ml/h/g is given in a per-gram unit while the other parameters are not, suggesting inconsistent unit handling across the parameter set. The review attributed the failure to implausible clearance/volume magnitudes consistent with a unit or scale extraction error. Extracted — doxorubicin: CLu 0.0125 (ml / h), V 16.7 (ml / 250 g), Q 9.69 (ml / h / g).
 
 <sub>reviewed by glm-5.3-flash</sub>
 

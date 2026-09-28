@@ -133,7 +133,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 700 mg infusion over 10 min, single dose. Doses in the paper: 700, 1400, 2800 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference/Ibuprofen_Knihinicki1990_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference/Ibuprofen_Knihinicki1990_reference_sim_controls.json"></dbs-fmusim>
 

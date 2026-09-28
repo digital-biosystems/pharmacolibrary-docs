@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 1.5 mg oral (H02AB02)",
  "model_id": "Dexamethasone_Calderin2025_reference",
+ "molar_masses": {
+  "central.C": 0.3924611
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,21 +11,22 @@
  "parameters": {
   "Cl": 3.638888888888889e-05,
   "F": 1.0,
+  "MM": 0.3924611,
   "Tlag": 1044.0,
   "VdPerKg": 0.00038,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1.5e-06,
   "ka": 8.946759259259258e-06,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 5194.38877755511
+  "central.C": 4848.09619238477
  },
  "reference_peaks": {
-  "central.C": 2.3779993142065657e-05
+  "central.C": 3.56956581123157e-07
  },
- "stop_time": 86400.0,
+ "stop_time": 345600.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

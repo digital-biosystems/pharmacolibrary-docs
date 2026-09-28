@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The darbepoetin alfa record was rejected because the structural parameter V(1) in PD patients was recorded as 17 %, a percentage that is dimensionally incompatible with a compartment volume in litres.**
+**The darbepoetin alfa record was rejected because the central compartment volume parameter V(1) in PD patients is reported as 17 %, a dimension mismatch for a structural volume parameter.**
 
-The record reports a two-compartment structure with clearance CL = 0.0807 l h(-1) and volume V(1) = 2.51 l for darbepoetin alfa, but the third parameter, labelled V(1) in PD patients, is given as 17 % — a relative change rather than a volume, so its dimensions do not match a structural volume parameter. The record was also built from the paper's abstract alone, meaning reported summary statistics stood in for a fitted model. A second reader found no values for CL, V, or the PD-patient parameter in the source, disagreeing with all three extracted numbers and with the compound naming (darbepoetin_alfa versus darbepoetin alfa). Extracted — darbepoetin alfa: CL 0.0807 l h(-1), V 2.51 l, V1 17 %.
+The record was built from the paper's abstract only, so summary statistics stood in for a fitted model. The parameter labelled V(1) in PD patients carries the unit %, which is not a volume unit and cannot describe the central compartment volume of the two-compartment darbepoetin alfa structure. The other parameters, CL 0.0807 l/h and V 2.51 l, are dimensionally consistent, but a second reader returned null for all three parameter values, leaving the extracted numbers unconfirmed. Extracted — darbepoetin alfa: CL 0.0807 l h(-1), V 2.51 l, V1 17 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has darbepoetin_alfa, the second reading darbepoetin alfa; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

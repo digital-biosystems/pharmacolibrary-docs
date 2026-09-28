@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Temozolomide clearance of 3.29 L/h with central volume 10.5 L in pediatric CNS tumor patients yields an implausible disposition rate, and the peripheral distribution parameters (V 0.09 L, Q 0.0327 L/h) are physiologically impossible, indicating unit or scale extraction errors.**
+**The temozolomide record was rejected because the extracted clearance (3.29 liter/h) and volumes (V1 10.5 liter, V 0.09 liter) fall outside physiological plausibility, suggesting a unit or scale extraction error.**
 
-The record reports temozolomide parameters for a two-compartment model in pediatric patients with malignant CNS tumors: absorption rate constant 9.64 h−1, clearance 3.29 L/h, central volume 10.5 L, peripheral volume 0.09 L, intercompartmental clearance 0.0327 L/h, and transit rate 0.983 h−1. The clearance-to-volume relationship falls outside the physiological window, consistent with a unit or scale extraction error in the reported values. The peripheral volume of 0.09 L and intercompartmental clearance of 0.0327 L/h are implausibly small magnitudes for this population, reinforcing the extraction-error finding. A second reader disagreed on the identifier assigned to the intercompartmental clearance parameter, but this does not affect the physiological-plausibility rejection. Extracted — temozolomide: kabs 9.64 h−1, CL 3.29 liter/h, V1 10.5 liter, V 0.09 liter, Q 0.0327 liter/h, ktr 0.983 h−1.
+The two-compartment model for temozolomide in pediatric CNS tumor patients carries a central clearance of 3.29 liter/h, a central volume of 10.5 liter, and a volume of distribution of 0.09 liter; the clearance/volume plausibility check flagged these magnitudes as outside the physiological window, consistent with a unit or scale extraction error. The intercompartmental clearance Q of 0.0327 liter/h is also very small relative to the clearance. A second reader disagreed on the parameter identifier assigned to Qf, so that field's attribution is not settled. Extracted — temozolomide: kabs 9.64 h−1, CL 3.29 liter/h, V1 10.5 liter, V 0.09 liter, Q 0.0327 liter/h, ktr 0.983 h−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[qf].parameter_id`: this record has Q30, the second reading Q54. That field shapes the model, so the record is marked disputed.
 

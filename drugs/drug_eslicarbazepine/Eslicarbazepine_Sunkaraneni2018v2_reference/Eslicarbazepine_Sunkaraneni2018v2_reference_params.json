@@ -1,24 +1,30 @@
 {
+ "dose_source": "WHO ATC DDD 800 mg oral (N03AF04)",
  "model_id": "Eslicarbazepine_Sunkaraneni2018v2_reference",
+ "molar_masses": {
+  "central.C": 0.2542839
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
  "parameters": {
+  "Cl": 8.11111111111111e-07,
   "F": 1.0,
+  "MM": 0.2542839,
   "Tlag": 0.0,
   "VdPerKg": 6.828571428571429e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.0008,
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 6868.258784321637
+  "central.C": 6867.7226427889
  },
  "reference_peaks": {
-  "central.C": 0.006937135962208308
+  "central.C": 0.05549709211557977
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

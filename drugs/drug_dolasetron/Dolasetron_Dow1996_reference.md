@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A04A&quot;,&quot;href&quot;:&quot;atc/A04A.md&quot;},{&quot;label&quot;:&quot;dolasetron&quot;,&quot;href&quot;:&quot;drugs/drug_dolasetron/&quot;},{&quot;label&quot;:&quot;Dow_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolasetron_Dow1996_reference&quot;,&quot;label&quot;:&quot;Dow_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dolasetron/Dolasetron_Dow1996_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolasetron_Dow1996_reference&quot;,&quot;label&quot;:&quot;Dow_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dolasetron/Dolasetron_Dow1996_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dolasetron — `Dolasetron_Dow1996_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The dolasetron→reduced dolasetron model was quarantined because reduced dolasetron's clearance, volume of distribution and formation rate had no values, and the formation rate constant (7 h⁻¹) was left as a rate rather than converted to a clearance.**
+**The dolasetron record was rejected because its structure is a parent–metabolite model but the built model is a one-compartment enteral model whose output is the parent compartment instead of the measured metabolite compartment.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. No value was extracted for reduced dolasetron's clearance, volume of distribution, or formation rate, so library placeholders would have been used for these parameters. The formation rate constant Kfm (7 h⁻¹) is a rate constant, but the conversion to clearance (CL = k·V) failed a unit-class check and the parameter was left unconverted rather than used raw as a clearance. The builder also assumed F=1 and Fm=1 with no molar correction, and a second reader disputed the dose compound, primary analyte, and the apparent versus mechanistic parameterization. Extracted — dolasetron: t1/2z 0.1 h, CL 109 mL/min/kg, V/F 0.83 L/kg, Fab 7 %, V1 8.5 L/kg, kfm 7 h-1, tmax 0.33 h, kabs 14 h-1.
+The record was built from the paper's abstract only, so reported summary statistics (e.g., terminal half-life 0.1 h, clearance 109 mL/min/kg, bioavailability 7%) stood in for a fitted model. The declared topology links dolasetron to reduced dolasetron by metabolism, but the built model is a single enteral compartment, not the required three-compartment parent–metabolite structure, and its output is the parent plasma compartment rather than the measured analyte compartment. The builder also left the absorption lag time at library defaults and assumed F=1 and Fm=1 with no molar correction, and a second reader disputed the analyte, the metabolite link, and several parameter values (bioavailability 7%, formation rate constant 7 h-1, volumes 0.83 and 8.5 L/kg). Extracted — dolasetron: t1/2z 0.1 h, CL 109 mL/min/kg, V/F 0.83 L/kg, Fab 7 %, V1 8.5 L/kg, kfm 7 h-1, tmax 0.33 h, kabs 14 h-1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dolasetron, the second reading dolasetron or red-dolasetron; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -28,15 +28,15 @@ Dow J; Francesco GF; Berg C et al. (1996). Journal of pharmaceutical sciences 85
   ·  DOI: [10.1021/js960041m](https://doi.org/10.1021/js960041m)
 
 ## Model component
-<dbs-pgx drug="dolasetron" model-id="Dolasetron_Dow1996_reference" status="model_quarantined" stale="false" population="dogs" measured-compound="dolasetron" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="dolasetron" model-id="Dolasetron_Dow1996_reference" status="rejected" stale="false" population="dogs" measured-compound="dolasetron" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 8 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -56,6 +56,10 @@ Dow J; Francesco GF; Berg C et al. (1996). Journal of pharmaceutical sciences 85
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - dropped duplicate Q57 ('t1/2', value 4.0) — already have one for this compound
 - dropped duplicate Q22 ('Cltot', value 25) — already have one for this compound
@@ -67,6 +71,7 @@ Dow J; Francesco GF; Berg C et al. (1996). Journal of pharmaceutical sciences 85
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Dow_1996_metadata.yaml (14 record(s)); values are summary statistics, not a fitted model
@@ -133,9 +138,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=dolasetron) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
-| T3_rate_constant_conversion | not captured | fail | Kfm (rate_constant) → CL = k·V | unit_class_mismatch flagged, not converted | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | pass | parent_metabolite → PK_Parent_Metabolite* | PK_Parent_Metabolite | not captured | engineer template must match the scholar topology |
+| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
@@ -146,29 +152,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_dolasetron/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Dow_1996` / `Dow_1996::reference`)
-- model: `../../../knowledgebase/drugs/drug_dolasetron/models/modelica/_needs_review/Dolasetron_Dow1996_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_dolasetron/models/modelica/_needs_review/Dolasetron_Dow1996_reference.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_dolasetron/models/modelica/Dolasetron_Dow1996_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_dolasetron/models/modelica/Dolasetron_Dow1996_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_dolasetron/models/modelica/Dolasetron_Dow1996_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dolasetron/Dolasetron_Dow1996_reference/Dolasetron_Dow1996_reference_matlab.zip" download>Dolasetron_Dow1996_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dolasetron/Dolasetron_Dow1996_reference/Dolasetron_Dow1996_reference_matlab_simbio.zip" download>Dolasetron_Dow1996_reference_matlab_simbio.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dolasetron/Dolasetron_Dow1996_reference/Dolasetron_Dow1996_reference_sbml.zip" download>Dolasetron_Dow1996_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dolasetron/Dolasetron_Dow1996_reference/Dolasetron_Dow1996_reference_cellml.zip" download>Dolasetron_Dow1996_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 200 mg, single dose, first-order absorption (ka 14 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 200 mg oral (A04AA04) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_dolasetron/Dolasetron_Dow1996_reference/Dolasetron_Dow1996_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_dolasetron/Dolasetron_Dow1996_reference/Dolasetron_Dow1996_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Dolasetron_Dow1996_reference_params.json` · controls `Dolasetron_Dow1996_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

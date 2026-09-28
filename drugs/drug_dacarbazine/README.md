@@ -25,7 +25,7 @@
 
 | status | detail | model structure | params | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Buesa_1991_reference](drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference.md) | parent + metabolite (no model) | 0 | Buesa JM et al., Clinical pharmacokinetics of high-dose…, Cancer chemotherapy and pha… (1991) | [10.1007/BF00685826](https://doi.org/10.1007/BF00685826) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Buesa_1991_reference](drugs/drug_dacarbazine/Dacarbazine_Buesa1991_reference.md) | parent + metabolite (no model) | 0 | Buesa JM et al., Clinical pharmacokinetics of high-dose…, Cancer chemotherapy and pha… (1991) | [10.1007/BF00685826](https://doi.org/10.1007/BF00685826) |
 
 ## Pharmacodynamics (PD)
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02A&quot;,&quot;href&quot;:&quot;atc/A02A.md&quot;},{&quot;label&quot;:&quot;calcium carbonate&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_carbonate/&quot;},{&quot;label&quot;:&quot;Kemal_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CalciumCarbonate_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_carbonate/CalciumCarbonate_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CalciumCarbonate_Ahn2014_reference&quot;,&quot;label&quot;:&quot;Ahn_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CalciumCarbonate_Kemal2026_reference&quot;,&quot;label&quot;:&quot;Kemal_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CalciumCarbonate_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_carbonate/CalciumCarbonate_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CalciumCarbonate_Kemal2026_reference&quot;,&quot;label&quot;:&quot;Kemal_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;CalciumCarbonate_Ahn2014_reference&quot;,&quot;label&quot;:&quot;Ahn_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The calcium carbonate model was held back because the absorption rate ka and lag time Tlag were not reported in the source and library defaults were substituted, alongside assumed F=1 and Fm=1 with no molar correction.**
+**The calcium carbonate record was held back because the absorption rate constant ka was invented (defaulted) rather than reported in the source, alongside other unreported deviations.**
 
-The record reports only apparent clearance (CL/F 3.33 L/h) and central volume (V1 120.0 L) for calcium carbonate; ka and Tlag had no values in the source, so base defaults were substituted, and the invented absorption was adjudicated as not acceptable. The builder further assumed F=1 and Fm=1 with no molar correction, parameterizing the model as apparent, consistent with first-order extravascular depot input. A second reader also disagreed on extracted values, reading 1.8 and 1.53 where this record had null, and null where this record had 2. Extracted — calcium carbonate: CL/F 3.33 L/h, V1 120 L.
+The record for calcium carbonate carries CL/F of 3.33 L/h and a central volume of distribution of 120.0 L, but the absorption rate constant ka and lag time Tlag were not reported in the source and library defaults were substituted. The builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent parameterization with first-order depot input for extravascular dosing. The invented ka was judged not acceptable, triggering the needs_review verdict. Two additional values disagree between readers: the record has 2 where the second reader found none, and the second reader reports 1.8 and 1.53 where the record has none. Extracted — calcium carbonate: CL/F 3.33 L/h, V1 120 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has none, the second reading 1.8; it also differs on 2 more fields. That field does not shape the model.
 
@@ -103,6 +103,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=calcium_carbonate) | central.C | not captured | output must be the measured/analyte compartment |
@@ -129,7 +130,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference/CalciumCarbonate_Kemal2026_reference_modelica.zip" download>CalciumCarbonate_Kemal2026_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference/CalciumCarbonate_Kemal2026_reference_modelica.zip" download>CalciumCarbonate_Kemal2026_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference/CalciumCarbonate_Kemal2026_reference_fmi.zip" download>CalciumCarbonate_Kemal2026_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference/CalciumCarbonate_Kemal2026_reference_matlab.zip" download>CalciumCarbonate_Kemal2026_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference/CalciumCarbonate_Kemal2026_reference_matlab_simbio.zip" download>CalciumCarbonate_Kemal2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
@@ -142,7 +143,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 5 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 5–80 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference/CalciumCarbonate_Kemal2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference/CalciumCarbonate_Kemal2026_reference_sim_controls.json"></dbs-fmusim>
 

@@ -1,27 +1,37 @@
 {
+ "dose_source": "paper",
  "model_id": "Pregabalin_Bae2016_reference",
+ "molar_masses": {
+  "central.C": 0.1592261
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  25.0,
+  1000.0
+ ],
  "parameters": {
   "Cl": 3.222222222222222e-07,
   "F": 1.0,
+  "MM": 0.1592261,
   "Tlag": 0.0,
   "VdPerKg": 0.0015571428571428572,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 2.5e-05,
   "ka": 0.0005555555555555556,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 9869.33867735471
+  "central.C": 9696.19238476954
  },
  "reference_peaks": {
-  "central.C": 0.0008920640756001314
+  "central.C": 0.00022301231119199977
  },
- "stop_time": 86400.0,
+ "stop_time": 1209600.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

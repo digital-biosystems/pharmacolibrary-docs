@@ -114,7 +114,7 @@ Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to 
 |---|---|---|
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.00%) |
 | `T2_direction` | pass | curve direction matches effect_direction |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | fail | a core parameter took a library default: E0 |
@@ -231,7 +231,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_polymyxin_b/PolymyxinB_Mahadevan2026_PD_bacterial_load/PolymyxinB_Mahadevan2026_PD_bacterial_load_modelica.zip" download>PolymyxinB_Mahadevan2026_PD_bacterial_load_modelica.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_polymyxin_b/PolymyxinB_Mahadevan2026_PD_bacterial_load/PolymyxinB_Mahadevan2026_PD_bacterial_load_fmi.zip" download>PolymyxinB_Mahadevan2026_PD_bacterial_load_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_polymyxin_b/PolymyxinB_Mahadevan2026_PD_bacterial_load/PolymyxinB_Mahadevan2026_PD_bacterial_load_matlab.zip" download>PolymyxinB_Mahadevan2026_PD_bacterial_load_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_polymyxin_b/PolymyxinB_Mahadevan2026_PD_bacterial_load/PolymyxinB_Mahadevan2026_PD_bacterial_load_sbml.zip" download>PolymyxinB_Mahadevan2026_PD_bacterial_load_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

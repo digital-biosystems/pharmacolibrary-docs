@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**CL, Q2, Q308, CL and Q have no unit.**
+**Kfm has no unit.**
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (kfm), so that value has no SI equivalent. Extracted — doxorubicin: CL 63.4 L/h, V1 17.7 l, Q 52.4 L/h, V2 1.83e+03 l, Q2 29.9 L/h, V3 71 l; doxorubicinol: V1 79.8 l, CL 37 L/h, kfm 0.22 n = 44, V2 653 l, Q 424 L/h.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The capecitabine metabolite model was rejected because the structural parameter V3 is reported as 0.0213 l, a dimension mismatch, and the metabolite FBAL has no metabolic path from the administered dose.**
+**Rejected because the capecitabine metabolite model has a dimension mismatch on a structural parameter (V3 = 0.0213 l, implausibly small) and an unlinked metabolite, with the residual-error parameter mislabelled as fraction unbound (fu = 0.0885).**
 
-V3 is listed as 0.0213 l, which is dimensionally inconsistent for a structural parameter of this linear metabolite model. The metabolite FBAL, the final step of the capecitabine → 5′-DFUR → 5-FU → FBAL metabolic chain, has no path from the dose, so it is unlinked. Additionally, the residual-error unit 'RE' (value 0.0885 for 5-FU) could not be expressed in SI units, so that parameter was left without a usable value. A second reader extracted further parameters absent from this record: CL1 = 0.00952 l/h, CL2 = 0.0337 l/h, KA = 0.166 l/h, and residual errors of 0.0885 (5-FU), 0.0362 (5′-DFUR) and 34 (FBAL). Extracted — capecitabine metabolites: kabs 0.166 l h -1, V1 30 l, V2 17.8 l, Q 0.0337 l h -1, V3 0.0213 l, fu 0.0885 RE.
+The record lists V3, the volume of the second peripheral compartment of a three-compartment structure, as 0.0213 l, a dimension mismatch flagged on a structural parameter, and the metabolism chain capecitabine → 5′-DFUR → 5-FU → FBAL carries no link parameter values, leaving an unlinked metabolite. The parameter labelled 'Res. Error 5-FU' (0.0885, unit RE) is recorded with the meaning of fraction unbound (fu), a misassignment. The unit 'RE' could not be converted to SI, so that parameter reached the model without an SI value; a second reader also assigned values (e.g. CL1 0.00952 l/h, CL2 0.0337 l/h, KA 0.166 l/h) that this record left null, and disagreed on whether the primary analyte is capecitabine or its metabolites. Extracted — capecitabine metabolites: kabs 0.166 l h -1, V1 30 l, V2 17.8 l, Q 0.0337 l h -1, V3 0.0213 l, fu 0.0885 RE.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has capecitabine metabolites, the second reading capecitabine; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 

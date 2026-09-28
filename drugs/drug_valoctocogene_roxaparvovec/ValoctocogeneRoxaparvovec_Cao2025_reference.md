@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The valoctocogene roxaparvovec record was rejected because the extracted clearance (0.011 L/h/kg) and distribution parameters (V1 3.23, V2 14.2, Q 0.591, all in L/h) fall outside physiological plausibility, indicating a unit or scale extraction error.**
+**Rejected because the valoctocogene roxaparvovec two-compartment volumes are recorded in L/h instead of L (Vc 3.23, Vp 14.2), a unit/scale extraction error that puts clearance/volume outside the physiological window.**
 
-The clearance value of 0.011 L/h/kg is implausibly small for a gene-therapy vector, and the volume parameters carry inconsistent units: V1 (Vc, 3.23) and V2 (Vp, 14.2) are volumes but are reported in L/h, the unit of flow, suggesting the units were misread from the source. A second reader could not confirm the inter-compartmental clearance Q (0.591) or the volumes, returning no values for them, and also disagreed on the model structure, reading a one-compartment model where this record holds a two-compartment structure. The rejection rests on the implausible magnitude of the clearance and volume parameters, consistent with a unit or scale extraction error. Extracted — valoctocogene roxaparvovec: CL 0.011 L/h/kg, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
+The central and peripheral volumes of distribution for valoctocogene roxaparvovec carry the unit L/h, which is not a volume unit, indicating a unit or scale extraction error; the clearance CL is 0.011 L/h/kg and intercompartmental clearance Q is 0.591 L/h. A second reader did not confirm the Q value of 0.591, the Vc value of 3.23, or the Vp value of 14.2, and read the model structure as one compartment rather than the recorded two-compartment topology. The record comes from a secondary review source rather than the primary fitted analysis. Extracted — valoctocogene roxaparvovec: CL 0.011 L/h/kg, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of Q: this record has 0.591, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

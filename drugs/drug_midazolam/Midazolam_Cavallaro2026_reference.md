@@ -133,7 +133,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 15 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 15 mg parenteral (N05CD08) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_midazolam/Midazolam_Cavallaro2026_reference/Midazolam_Cavallaro2026_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_midazolam/Midazolam_Cavallaro2026_reference/Midazolam_Cavallaro2026_reference_sim_controls.json"></dbs-fmusim>
 

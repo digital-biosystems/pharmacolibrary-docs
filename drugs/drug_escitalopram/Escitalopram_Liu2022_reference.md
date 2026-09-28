@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The escitalopram record was held back because the absorption rate constant ka and Tlag were not reported in the source and library defaults were substituted, effectively inventing the absorption, and a second reader disputes the CL/F and V/F values.**
+**The escitalopram record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside defaulted Tlag and an assumed F=1 apparent parameterization.**
 
-The model builder defaulted ka and Tlag because these absorption parameters were missing from the source, so the first-order depot input (an apparent /F parameterization with F=1, Fm=1 assumed and no molar correction) rests on an invented ka rather than a reported value. A second reader also extracted different numbers: CL/F of 16.3 L/h versus 14.7 L/h, V/F of 815 L versus 581.9 L, and covariate effects on age (0.0077) and two other covariates (0.847, 0.479) that this record omits entirely. These conflicting extractions of the same published escitalopram model for Chinese psychiatric patients leave the parameter values unconfirmed. Extracted — escitalopram: CL/F 14.7 L/h, V/F 582 L.
+The model for escitalopram in Chinese psychiatric patients (one-compartment, extravascular dosing with apparent CL/F 14.7 L/h and V/F 581.9 L) relies on a first-order depot input whose ka was invented rather than taken from the paper, and Tlag was likewise left at a placeholder. Bioavailability was assumed to be 1 (F=1, Fm=1) with no molar correction, so all parameters are apparent. A second reader also disagrees on the central estimates, reading CL/F as 16.3 L/h and V/F as 815 L versus 14.7 L/h and 581.9 L, and reports covariate effects (age 0.0077, and effects of 0.847 and 0.479) that this record lacks entirely. Extracted — escitalopram: CL/F 14.7 L/h, V/F 582 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f].value`: this record has 14.7, the second reading 16.3; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -123,6 +123,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=escitalopram) | central.C | not captured | output must be the measured/analyte compartment |
@@ -130,7 +131,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 | T1_cmin_ss | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | not captured | 27.500653332757018 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | skipped | not captured | 27.430192013910762 | not captured | non-numeric value |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -152,7 +153,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_modelica.zip" download>Escitalopram_Liu2022_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_fmi.zip" download>Escitalopram_Liu2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_fmi.zip" download>Escitalopram_Liu2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_matlab.zip" download>Escitalopram_Liu2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_matlab_simbio.zip" download>Escitalopram_Liu2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_sbml.zip" download>Escitalopram_Liu2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -164,7 +165,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 5 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 5, 10, 15, 20 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_sim_controls.json"></dbs-fmusim>
 

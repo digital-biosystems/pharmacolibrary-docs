@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The oxytetracycline two-compartment cattle model was rejected because a compartment is unreachable from the dose and the adult clearance unit could not be converted to SI, leaving tvCl (68.35) without an SI value.**
+**The oxytetracycline three-compartment cattle model was rejected because a compartment has no path from the dose, and the reported units (e.g. 'adult' for V1=143, V2=973, V3=2458, CL=68.35) could not be converted to SI.**
 
-The record was refused for an unreachable or orphan compartment in the two-compartment structure, and because the reported unit attached to the adult parameters (tvV1 143, tvV2 973, tvV3 2458 and tvCl 68.35) could not be converted to SI units, so clearance 68.35 entered the build without an SI value. A second reader also disagreed on several extracted values, reading tvCl as 62.67 rather than 68.35, a covariate effect of 14.96 rather than 15.74, and assigning an rse_percent of 68.35 where this record had none. The second reader further read the model as apparent rather than mechanistic parameterization and extracted a calf-to-adult volume ratio of 0.358 where this record had none, while this record carried a calf-to-adult clearance ratio of 0.570 that the second reader did not. Extracted — oxytetracycline: V1 143 adult, V2 973 adult, V3 2.46e+03 adult, CL 68.3 adult, kabs 0.235, Fab 1.42, tlag 1.
+The structure check found an unreachable or orphan compartment in the two-compartment oxytetracycline model, so the record was refused. Volumes and clearance carry the unit 'adult' instead of a physical unit, leaving them without SI values. A second reader also disagreed on several values, reading CL as 62.67 (with 68.35 as the relative standard error in percent) rather than 68.35, and on whether the parameterization is apparent or mechanistic; the covariate effects on tlag and clearance differ between readers (15.74 vs none, 14.96 vs none). Extracted — oxytetracycline: V1 143 adult, V2 973 adult, V3 2.46e+03 adult, CL 68.3 adult, kabs 0.235, Fab 1.42, tlag 1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 

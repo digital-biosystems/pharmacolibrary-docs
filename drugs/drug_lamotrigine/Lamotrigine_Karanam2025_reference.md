@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The lamotrigine model was held back because the absorption rate constant ka and Tlag were not reported and left at defaults, and the clearance value 0.33 'fold' is a relative multiplier whose unit cannot be expressed in SI.**
+**The lamotrigine record was held back because the absorption rate constant ka was not reported in the source and a default was invented, alongside other builder deviations.**
 
-The record reports nonpregnant lamotrigine V/F = 130 L and CL/F = 2.9 L/h, but ka and Tlag are missing from the source, so library defaults were substituted, and the defaulted ka was judged an invented absorption term that is not acceptable. The clearance parameter 0.33 is given as a 'fold' change — a dimensionless ratio relative to a reference — so no absolute clearance in L/h could be derived from it. The model also assumed F=1 and Fm=1 with apparent (/F) parameterization and a first-order depot input. A second reader disagreed on the CL/F and V/F entries, reading 2.9 and 130 as belonging to the error-model fields rather than the parameters themselves. Extracted — lamotrigine: V/F 130 L, CL/F 2.9 L/hour, CL 0.33 fold.
+The model builder substituted library defaults for the missing absorption rate constant ka and lag time Tlag, and the invented absorption was judged not acceptable. The clearance parameter 'nonpregnant clearance' is reported as 0.33 fold, a unit that could not be converted to SI, so it entered the model without an SI value. The model also assumes F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input. A second reader disagreed on several parameter entries, reading 2.9 and 130 as ranges and leaving the clearance values null. Extracted — lamotrigine: V/F 130 L, CL/F 2.9 L/hour, CL 0.33 fold.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of nonpregnant cl/f: this record has 2.9, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -108,6 +108,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=lamotrigine) | central.C | not captured | output must be the measured/analyte compartment |
@@ -134,8 +135,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_modelica.zip" download>Lamotrigine_Karanam2025_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_fmi.zip" download>Lamotrigine_Karanam2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_modelica.zip" download>Lamotrigine_Karanam2025_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_fmi.zip" download>Lamotrigine_Karanam2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_matlab.zip" download>Lamotrigine_Karanam2025_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_matlab_simbio.zip" download>Lamotrigine_Karanam2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_sbml.zip" download>Lamotrigine_Karanam2025_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -147,7 +148,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 300 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 300 mg oral (N03AX09) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_sim_controls.json"></dbs-fmusim>
 

@@ -17,7 +17,7 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 2, model 12.5); the covariate scenarios were not simulated.**
+**The model does not reproduce the paper's terminal half-life (paper 2, model 11.5); the covariate scenarios were not simulated.**
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — pantoprazole: CL 5.08 l h -1, V1 2.2 l, Q 1.1 l h -1, V2 2.69 l, kabs 0.325 h -1, tlag 2.5 h.
 
@@ -147,7 +147,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_beta | reference | fail | 2.0 | 12.462113259103496 | 6.2311 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.0 | 11.467454592412242 | 5.7337 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -181,7 +181,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.325 /h, lag 150 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 40 mg, single dose, first-order absorption (ka 0.325 /h, lag 150 min, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 40 mg oral (A02BC02) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_pantoprazole/Pantoprazole_Pettersen2009_reference/Pantoprazole_Pettersen2009_reference_sim_controls.json"></dbs-fmusim>
 

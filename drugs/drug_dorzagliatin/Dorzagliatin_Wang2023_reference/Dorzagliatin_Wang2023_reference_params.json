@@ -1,5 +1,9 @@
 {
+ "dose_source": "library default",
  "model_id": "Dorzagliatin_Wang2023_reference",
+ "molar_masses": {
+  "central.C": 0.46293
+ },
  "note": "Values for the shared PK_3C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,6 +11,7 @@
  "parameters": {
   "Cl": 2.8888888888888894e-06,
   "F": 1.0,
+  "MM": 0.46293,
   "Tlag": 0.0,
   "VdPerKg": 0.0011514285714285713,
   "adminCount": 1.0,
@@ -18,12 +23,12 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 4057.3804712742735
+  "central.C": 4057.3909604357927
  },
  "reference_peaks": {
-  "central.C": 0.0005764234450222416
+  "central.C": 0.0005764233013580534
  },
- "stop_time": 86400.0,
+ "stop_time": 100800.0,
  "template": "PK_3C_enteral",
  "template_fmu": "PK_3C_enteral.fmu"
 }

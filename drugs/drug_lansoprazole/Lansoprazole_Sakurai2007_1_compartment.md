@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The lansoprazole record lacks a distribution volume and any clearance/elimination parameter, and intercompartmental clearances carry non-convertible L/kg units, so it is not a compartmental population PK model.**
+**The lansoprazole record lacks any distribution volume and any clearance or elimination parameter, so it is not a compartmental population PK model but an exposure/outcome paper, and a unit mismatch on intercompartmental clearance Q (0.104 l/kg) was flagged.**
 
-The paper reports no distribution volume and no clearance or elimination rate for lansoprazole; it is an exposure/outcome paper rather than a compartmental population PK model. Parameter q 1 is reported as 0.104 L/kg, a per-kilogram unit that could not be converted to SI, leaving a dimensional mismatch on a structural parameter. A second reader also disagreed on the parameterization (apparent versus mechanistic) and on which parameters were extracted, reading q 2 = 0.154 and q 3 = 0.547 where this record had no values, and q 1 = 0.181 and q 5 = 0.179 where this record had none. Extracted — lansoprazole: Q 0.104 l/kg, Q3 0.548.
+The record reports only intercompartmental clearances — Q at 0.104 l/kg (a clearance given per kilogram, a dimension mismatch for a structural parameter) and Q3 at 0.548 with no unit — while no distribution volume and no clearance or elimination rate are present. The unit l/kg could not be converted to SI, so Q reached the model without an SI value. A second reader also disagreed on the parameterization (mechanistic versus apparent) and on which q values (0.181, 0.179, 2.50 versus 0.154, 0.547) belong to the model. Extracted — lansoprazole: Q 0.104 l/kg, Q3 0.548.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

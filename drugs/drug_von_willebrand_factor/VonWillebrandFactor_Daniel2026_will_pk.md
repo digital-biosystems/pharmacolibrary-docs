@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The von Willebrand factor model was rejected because structural parameters carry dimension mismatches and physiologically implausible magnitudes — clearance 447 mL/h, volume 193 mL, intercompartmental flow 3290 mL — consistent with a unit/scale extraction error.**
+**Rejected because the von Willebrand factor record carries a dimension error: V2 is reported as 0.30 IU/mL instead of a volume, and clearance/volume values (CL 447 mL/h, V 193 mL) fall outside physiological windows, indicating unit/scale extraction errors.**
 
-The record lists V2 as 0.30 IU/mL, a concentration unit on a volume parameter, and Q as 3290 mL where the label indicates a flow, so structural parameters fail dimensional checks. The clearance of 447 mL/h with volume 193 mL falls outside the physiological window for this molecule, pointing to a unit or scale misreading. A reported unit could not be converted to SI, so the parameters were carried without SI values. A second reader also read the analyte as VWF:Ag, a baseline VWF of 0.28, and a clearance of 74.2 mL/h, disagreeing with the extracted values on several fields. Extracted — von willebrand factor: V2 0.3 IU/mL, CL 447 mL/h, V 193 mL, Q 3.29e+03 mL, kabs 0.5 h−1.
+The peripheral distribution volume V2 was extracted with the unit IU/mL, a concentration unit, so the structural parameter has a dimension mismatch. The clearance of 447 mL/h and volume of 193 mL are implausible in magnitude for von Willebrand factor, consistent with a unit or scale extraction error. A second reader assigned different values, reading CL as 74.2 mL/h and V as 4537 mL, and read a baseline VWF of 0.28 where this record has none, showing the garbled labels (e.g. the clearance label) were misparsed. The record also lacks the link between VWF:Ag and factor VIII interconversion that the second reader identified. Extracted — von willebrand factor: V2 0.3 IU/mL, CL 447 mL/h, V 193 mL, Q 3.29e+03 mL, kabs 0.5 h−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has von Willebrand factor, the second reading VWF:Ag; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 

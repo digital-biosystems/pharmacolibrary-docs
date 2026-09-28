@@ -23,7 +23,8 @@ MDD is a highly prevalent psychiatric disorder, with a lifetime prevalence estim
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| O-desmethyl venlafaxine | metabolite | — (mass units only) | — | — | — | — |
+| desvenlafaxine (O-desmethyl venlafaxine) | parent | 263.375 | C16H25NO2 | DrugBank | [125017](https://pubchem.ncbi.nlm.nih.gov/compound/125017) | Mangas-Sanjuán_2023, Nichols_2018, Wang_2022 |
+| venlafaxine | metabolite | 277.408 | C17H27NO2 | PubChem | [5656](https://pubchem.ncbi.nlm.nih.gov/compound/5656) | Wang_2022 |
 
 ## Extraction summary
 

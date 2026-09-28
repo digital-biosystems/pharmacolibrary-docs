@@ -127,7 +127,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.66 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.66 /h, F 0.9). Dose in the paper: 100 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference/AngiotensinIi_Athanassa2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference/AngiotensinIi_Athanassa2025_reference_sim_controls.json"></dbs-fmusim>
 

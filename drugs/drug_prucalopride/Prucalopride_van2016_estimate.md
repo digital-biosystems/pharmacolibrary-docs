@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**This prucalopride paediatric model record was refused because a structural parameter's reported unit could not be converted to SI, leaving a dimension mismatch in the two-compartment parameter set.**
+**Rejected because the prucalopride absorption parameter t1/2ka carries a half-life meaning but the value 0.792 h−1 is a rate constant, a dimension mismatch on a structural parameter, and the record lacks a clearance value.**
 
-The record reports a two-compartment structure for prucalopride in children with V2 446 L, Q 16.9 L/h, V3 248 L, absorption rate constants Ka1 0.792 h−1 and Ka2 3.87 h−1, mean transit time 0.734 h and bioavailability 0.858. The refusal rests on a dimension mismatch on a structural parameter: one of the reported units could not be converted to SI, so that parameter entered the record without an SI value. A second reader also diverged on several entries, reading an additional clearance of 22.9 L/h absent from this record, a different identifier for Ka1, dropping Ka2, and adding relative standard errors of 15%, 3.3% and 7.9% for Q, V2 and V3 that this record lacks. Extracted — prucalopride: V2 446, Q 16.9, V3 248, t1/2ka 0.792 h−1, k21 3.87 h−1, MTT 0.734 h, Fab 0.858.
+The parameter labelled K a1 (h−1) with value 0.792 h−1 is described as the half-life of the absorption phase, so the reported unit and meaning conflict in dimensions, triggering the structural-parameter mismatch. The record also omits prucalopride clearance: a second reader extracted 22.9 l h−1 for it, while this record has no value. The second reader further disagrees on k a2, reading no value where this record gives 3.87 h−1, and on the precision of Q, V2 and V3, for which this record has no relative standard errors while the second reader reports 15%, 3.3% and 7.9% respectively. Extracted — prucalopride: V2 446, Q 16.9, V3 248, t1/2ka 0.792 h−1, k21 3.87 h−1, MTT 0.734 h, Fab 0.858.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clpru‐usa‐12 (l h-1)a: this record has none, the second reading 22.9; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

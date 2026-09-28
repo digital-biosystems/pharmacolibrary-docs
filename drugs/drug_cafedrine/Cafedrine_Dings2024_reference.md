@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 1, model 0.677).**
+**The model does not reproduce the paper's terminal half-life (paper 1, model 0.0955).**
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — cafedrine: CL 0.0971 L/min, V 1 L.
 
@@ -110,11 +110,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_t_half_beta | reference | fail | 4.34 | 0.6774367969306797 | 0.1561 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.0 | 0.6774367969306797 | 0.6774 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 4.0 | 0.6774367969306797 | 0.1694 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | skipped | not captured | 0.6774367969306797 | not captured | non-numeric value |
-| T1_t_half_terminal | reference | skipped | not captured | 0.6774367969306797 | not captured | non-numeric value |
+| T1_t_half_beta | reference | fail | 4.34 | 0.09547763482979962 | 0.022 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.0 | 0.09547763482979962 | 0.0955 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 4.0 | 0.09547763482979962 | 0.0239 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped | not captured | 0.09547763482979962 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | skipped | not captured | 0.09547763482979962 | not captured | non-numeric value |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -136,7 +136,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cafedrine/Cafedrine_Dings2024_reference/Cafedrine_Dings2024_reference_modelica.zip" download>Cafedrine_Dings2024_reference_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cafedrine/Cafedrine_Dings2024_reference/Cafedrine_Dings2024_reference_fmi.zip" download>Cafedrine_Dings2024_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cafedrine/Cafedrine_Dings2024_reference/Cafedrine_Dings2024_reference_matlab.zip" download>Cafedrine_Dings2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cafedrine/Cafedrine_Dings2024_reference/Cafedrine_Dings2024_reference_matlab_simbio.zip" download>Cafedrine_Dings2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cafedrine/Cafedrine_Dings2024_reference/Cafedrine_Dings2024_reference_sbml.zip" download>Cafedrine_Dings2024_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
@@ -148,7 +148,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 20 mg infusion over 10 min, single dose. Doses in the paper: 20–200 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_cafedrine/Cafedrine_Dings2024_reference/Cafedrine_Dings2024_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_cafedrine/Cafedrine_Dings2024_reference/Cafedrine_Dings2024_reference_sim_controls.json"></dbs-fmusim>
 

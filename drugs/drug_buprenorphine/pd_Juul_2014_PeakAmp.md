@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Buprenorphine_Nelson2024_reference&quot;,&quot;label&quot;:&quot;Nelson_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/Buprenorphine_Nelson2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buprenorphine_Ng2015_reference&quot;,&quot;label&quot;:&quot;Ng_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/Buprenorphine_Ng2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Buprenorphine_Priestley2018_reference&quot;,&quot;label&quot;:&quot;Priestley_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_buprenorphine/Buprenorphine_Priestley2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# PeakAmp — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.521). The first reading is what the record holds.">cross-check: disputed</span>
+# PeakAmp — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.521). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -54,6 +54,31 @@ Juul RV; Foster DJ; Upton RN; Andresen T; Graversen C; Drewes AM; et al. et al. 
 </details>
 
 
+## Exposure-response model
+
+`Buprenorphine_Juul2014_PD_peakamp` — log_linear, `response = E0 + slope*log(exposure)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 18.2 | — |
+| slope | 98.1 | — |
+
+Closed-form check points (response, SI): `at_1` = 18.2, `per_e_fold` = 98.1
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
 
@@ -103,14 +128,14 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peakamp/Buprenorphine_Juul2014_PD_peakamp_modelica.zip" download>Buprenorphine_Juul2014_PD_peakamp_modelica.zip</a> <span class="pk-size">(1.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peakamp/Buprenorphine_Juul2014_PD_peakamp_matlab.zip" download>Buprenorphine_Juul2014_PD_peakamp_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peakamp/Buprenorphine_Juul2014_PD_peakamp_sbml.zip" download>Buprenorphine_Juul2014_PD_peakamp_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Juul2014_PD_peakamp/Buprenorphine_Juul2014_PD_peakamp_cellml.zip" download>Buprenorphine_Juul2014_PD_peakamp_cellml.zip</a> <span class="pk-size">(2.3 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

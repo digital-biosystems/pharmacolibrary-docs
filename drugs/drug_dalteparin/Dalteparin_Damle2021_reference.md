@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The dalteparin two-compartment model was rejected because one compartment has no connection to the dose or sampling, leaving the reported CL/F of 929 mL/h and V2/F of 7180 mL unsupported.**
+**The dalteparin two-compartment model was rejected because one compartment is unreachable from the dose: the peripheral compartment (V2/F = 7180 mL) is unlinked, so no drug can reach it.**
 
-The record describes a two-compartment structure for dalteparin in pediatric VTE patients, but one of the two compartments is unreachable or orphaned — it has no path from the administered dose, so it cannot influence the anti-Xa observations. The extracted parameters (CL/F 929 mL/h, V2/F 7180 mL, kabs 1.04 1/h, and a weight effect of 1 on V/F) therefore do not describe a coherent connected model. This structural defect is the sole recorded reason for rejection. Extracted — dalteparin: CL/F 929, V2/F 7.18e+03, kabs 1.04, V/F 1.
+The record describes dalteparin in pediatric venous thromboembolism patients with a two-compartment structure, first-order absorption (kabs = 1.04 1/h) and clearance CL/F = 929 mL/h. The volume parameter V2/F = 7180 mL is defined as the volume of the peripheral compartment, but the model structure leaves that compartment without a path from the dose, making it an orphan compartment. No other failed checks or builder deviations are reported. Extracted — dalteparin: CL/F 929, V2/F 7.18e+03, kabs 1.04, V/F 1.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

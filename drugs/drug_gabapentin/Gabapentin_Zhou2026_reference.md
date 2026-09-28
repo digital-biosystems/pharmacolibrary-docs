@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The gabapentin two-compartment record was rejected because a structural parameter carries a dimension mismatch: the second distribution rate constant λ2 (labelled ke2, h-1) is recorded as 1, a value whose unit could not be converted to SI.**
+**The gabapentin record was rejected because a structural parameter failed a dimension check — the elimination rate constant kel (0.53 h-1) is dimensionally inconsistent with the macro-rate constant λ2 (1 h-1) — and one reported unit could not be converted to SI.**
 
-The record reports a two-compartment gabapentin model with tlag 0.34 h, ka 0.14 h-1, CL/F 10.16 L/h, V1/F 18.16 L, Q 6.58 L/h and V2/F 357.67 L, but the structural parameter λ2 (ke2) is entered as 1 with no consistent dimension, triggering the dimension-mismatch finding. The reported unit for this parameter could not be converted to SI, so the value entered the record without an SI equivalent and the dimension check could not be completed. A second reader also disagreed on the covariate effect: this record lists logt_egfr_84.85_on_cl_f as 1.34, while the second reader placed the same 1.34 under a power covariate on CL/F, leaving the eGFR covariate's form ambiguous. Extracted — gabapentin: tlag 0.34 h, kabs 0.14 h-1, CL/F 10.2 L/h, V1/F 18.2 L, Q 6.58 L/h, V2/F 358 L, kel 0.53 h-1, λ2 1 h-1.
+The record lists kel (labelled ke1, 0.53 h-1) as the terminal elimination rate constant and λ2 (labelled ke2, 1 h-1) as the slow-phase macro-rate constant of the two-compartment disposition; the dimension check on these structural parameters failed, and one reported unit could not be converted to SI, so that parameter entered model construction without an SI value. A second reader also disagreed on two values: the record carries ke2 as 1 and the eGFR covariate effect on CL/F as 1.34, whereas the second reader left ke2 and the covariate effect unset and instead assigned 1.34 to a power-form eGFR effect on CL/F, so the covariate effect's form and value are not settled. Extracted — gabapentin: tlag 0.34 h, kabs 0.14 h-1, CL/F 10.2 L/h, V1/F 18.2 L, Q 6.58 L/h, V2/F 358 L, kel 0.53 h-1, λ2 1 h-1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ke2: this record has 1, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

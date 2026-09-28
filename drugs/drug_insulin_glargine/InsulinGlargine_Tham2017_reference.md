@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Rejected because a structural parameter failed a dimensional check and the dose effect on clearance is negative (-0.282), an implausible clearance shift, with one reported unit unconvertible to SI.**
+**The insulin glargine record was rejected because the parameter labelled CL carries a negative value (-0.282) that is implausible as a clearance, and a structural parameter failed a dimension check.**
 
-The record for insulin glargine (Tham_2017, healthy adults, 1-compartment) carries a covariate effect of dose on clearance of -0.282, a negative shift that makes clearance decrease with dose and was judged implausible. A structural parameter also failed a dimensional consistency check, and one reported unit could not be converted to SI units, so that parameter entered the record without an SI value. A second reader disputed most extracted values, reading absorption lag 0.378 h, absorption rate constant 0.0830 1/h, apparent clearance 74.5 L/h, apparent volume of distribution 768 L, and a baseline endogenous insulin concentration of 79.7 where the record has none, so the numbers themselves are contested. Extracted — insulin glargine: Fab 1 Unit, kabs 0.0365 Unit, tlag 0.265 h, V/F 43 L, CL/F 30.5 L/h, CL -0.282 Unit.
+The covariate effect of dose on clearance was extracted as -0.282, which fails the plausibility check for negative clearance values, and a dimension mismatch was flagged on a structural parameter. Several parameter values (absorption lag 0.265 h, absorption rate constant 0.0365 1/h, apparent clearance 30.5 L/h, apparent volume 43.0 L) are disputed by a second reader, who read 0.378 h, 0.0830 1/h, 74.5 L/h and 768 L respectively, so the extracted numbers are uncertain. One parameter was reported in a unit that could not be converted to SI, so it was recorded without a usable magnitude. Extracted — insulin glargine: Fab 1 Unit, kabs 0.0365 Unit, tlag 0.265 h, V/F 43 L, CL/F 30.5 L/h, CL -0.282 Unit.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has insulin, the second reading insulin glargine; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 

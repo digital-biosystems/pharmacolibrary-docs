@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The methyldopa record was rejected because a structural parameter failed a dimensional-consistency check, and it was built from the abstract alone rather than a fitted model.**
+**The methyldopa record was rejected because clearance (11.2 l/h) is dimensionally inconsistent with the elimination constant (0.56 h-1) and volume of distribution (0.29 l/kg), and the values came from the paper's abstract only.**
 
-The one-compartment methyldopa model carries an elimination constant of 0.56 h⁻¹, a central volume of distribution of 0.29 L kg⁻¹ and a plasma clearance of 11.2 L h⁻¹, but one of these structural parameters shows a dimension mismatch. The record was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. A second reader returned null (no value) for the elimination constant, clearance and volume parameters, so the comparison could not be computed and the disagreement on these values is inconclusive; the second reader also left the dosed compound and primary analyte fields as unknown. Extracted — methyldopa levorotatory: kel 0.56 h-1, V 0.29 1 kg-1, CL 11.2 1 h-1.
+For a one-compartment model, clearance should equal the elimination rate constant times the volume of distribution; the reported plasma clearance of 11.2 l/h does not match the elimination constant of 0.56 h-1 combined with a volume of distribution of 0.29 l/kg, so the structural parameters fail a dimensional consistency check. The record was also built abstract-only, meaning reported summary statistics stood in for a fitted model. A second reader could not confirm the analyte and dose compound assignments (reading them as unknown) and read the three parameter values as absent, disagreeing with the extracted values 0.56 h-1, 0.29 l/kg and 11.2 l/h. Extracted — methyldopa levorotatory: kel 0.56 h-1, V 0.29 1 kg-1, CL 11.2 1 h-1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has methyldopa, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

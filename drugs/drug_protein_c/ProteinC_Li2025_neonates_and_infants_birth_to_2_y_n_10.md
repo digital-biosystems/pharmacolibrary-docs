@@ -131,25 +131,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=protein C) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=protein C) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_cmax | reference | skipped | 100 | 0.004271334652380301 | not captured | unresolved concentration unit (exp 'IU/dL', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 100 | 0.004271334652380301 | not captured | unresolved concentration unit (exp 'IU/dL', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 100 | 0.004271334652380301 | not captured | unresolved concentration unit (exp 'IU/dL', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 100 | 0.004271334652380301 | not captured | unresolved concentration unit (exp 'IU/dL', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 100 | 0.0004271345102681003 | not captured | unresolved concentration unit (exp 'IU/dL', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 100 | 0.0004271345102681003 | not captured | unresolved concentration unit (exp 'IU/dL', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 100 | 0.0004271345102681003 | not captured | unresolved concentration unit (exp 'IU/dL', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 100 | 0.0004271345102681003 | not captured | unresolved concentration unit (exp 'IU/dL', sim 'kg/m3') |
 | T1_cmin_ss | reference | skipped | 25 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 25 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 2.63 | 1.195853067079107 | not captured | unresolved time unit 'g' |
-| T1_t_half_terminal | reference | skipped | 7.51 | 1.195853067079107 | not captured | unresolved time unit 'b' |
-| T1_t_half_terminal | reference | skipped | 10.4 | 1.195853067079107 | not captured | unresolved time unit 'c' |
-| T1_t_half_terminal | reference | fail | 228.71999999999997 | 1.195853067079107 | 0.0052 | d→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.38 | 1.195853067079107 | 0.5025 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | skipped | 8.19 | 1.195853067079107 | not captured | unresolved time unit 'e' |
-| T1_t_half_terminal | reference | fail | 11.9 | 1.195853067079107 | 0.1005 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 9.96 | 1.195853067079107 | 0.1201 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped | 2.63 | 1.1958530670791077 | not captured | unresolved time unit 'g' |
+| T1_t_half_terminal | reference | skipped | 7.51 | 1.1958530670791077 | not captured | unresolved time unit 'b' |
+| T1_t_half_terminal | reference | skipped | 10.4 | 1.1958530670791077 | not captured | unresolved time unit 'c' |
+| T1_t_half_terminal | reference | fail | 228.71999999999997 | 1.1958530670791077 | 0.0052 | d→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.38 | 1.1958530670791077 | 0.5025 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped | 8.19 | 1.1958530670791077 | not captured | unresolved time unit 'e' |
+| T1_t_half_terminal | reference | fail | 11.9 | 1.1958530670791077 | 0.1005 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 9.96 | 1.1958530670791077 | 0.1201 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -171,7 +172,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_protein_c/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10_modelica.zip" download>ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_protein_c/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10_fmi.zip" download>ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_protein_c/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10_matlab.zip" download>ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_protein_c/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10_matlab_simbio.zip" download>ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_protein_c/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10_sbml.zip" download>ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -183,7 +184,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_protein_c/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_protein_c/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10/ProteinC_Li2025_neonates_and_infants_birth_to_2_y_n_10_sim_controls.json"></dbs-fmusim>
 

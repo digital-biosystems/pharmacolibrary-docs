@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;riociguat&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/&quot;},{&quot;label&quot;:&quot;Saleh_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riociguat_Saleh2016_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Riociguat_Saleh2016v2_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Riociguat_Michalikov2020_reference&quot;,&quot;label&quot;:&quot;Michali\u010dkov\u00e1_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Michalikov2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Riociguat_Saleh2016v2_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Riociguat_Saleh2016_reference&quot;,&quot;label&quot;:&quot;Saleh_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Saleh2016_reference.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Riociguat_Michalikov2020_reference&quot;,&quot;label&quot;:&quot;Michali\u010dkov\u00e1_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_riociguat/Riociguat_Michalikov2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # riociguat — `Riociguat_Saleh2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,27 +15,27 @@
 
 ### Reviewer guidance
 
-**No value for the metabolite's formation rate.**
+**The riociguat parent–metabolite record was not simulated because its structure — a one-compartment enteral parent with metabolite M1 — did not match the required three-compartment parent–metabolite structure, and it was built from the abstract only.**
 
-The model was built, but the metabolite's formation rate had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — riociguat: kabs 2.17 /h, CL 1.81 L/h, V 32.3 L; M1: kabs 0.258 /h, CL 3.16 L/h, V 124 L.
+The declared structure is a parent–metabolite model with riociguat metabolized to M1 (rate constant Kfm), but the obtained structure was a single enteral compartment instead of the expected three-compartment parent–metabolite structure, so the record was held back. Because only the paper's abstract was read, reported summary statistics (kabs 2.17 /h, CL 1.81 L/h, V 32.3 L for riociguat; kabs 0.258 /h, CL 3.16 L/h, V 124 L for M1) stood in for a fitted model. Bioavailability (F) and lag time (Tlag) had no source values, so library defaults were substituted. A second reader disagreed on the dose compound and primary analyte and on whether the riociguat parameters were present or null. Extracted — riociguat: kabs 2.17 /h, CL 1.81 L/h, V 32.3 L; M1: kabs 0.258 /h, CL 3.16 L/h, V 124 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has riociguat, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 not matched (stem Saleh_2016)
 
 ## Model component
-<dbs-pgx drug="riociguat" model-id="Riociguat_Saleh2016_reference" status="model_quarantined" stale="false" population="patients with pulmonary arterial hypertension or chronic thromboembolic pulmonary hypertension" measured-compound="riociguat" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="riociguat" model-id="Riociguat_Saleh2016_reference" status="not_simulated" stale="false" population="patients with pulmonary arterial hypertension or chronic thromboembolic pulmonary hypertension" measured-compound="riociguat" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `not_simulated`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -52,6 +52,9 @@ not matched (stem Saleh_2016)
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
 - unit_dimension_unknown: '% increase' (CL)
@@ -129,7 +132,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 6 scholar param(s) emitted or defaulted | 6 covered | not captured | all structural parameters accounted for |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | pass | parent_metabolite → PK_Parent_Metabolite* | PK_Parent_Metabolite | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
@@ -140,8 +143,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_riociguat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Saleh_2016` / `Saleh_2016::reference`)
-- model: `../../../knowledgebase/drugs/drug_riociguat/models/modelica/_needs_review/Riociguat_Saleh2016_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_riociguat/models/modelica/_needs_review/Riociguat_Saleh2016_reference.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_riociguat/models/modelica/Riociguat_Saleh2016_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_riociguat/models/modelica/Riociguat_Saleh2016_reference.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -150,19 +153,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_matlab.zip" download>Riociguat_Saleh2016_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_matlab_simbio.zip" download>Riociguat_Saleh2016_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_sbml.zip" download>Riociguat_Saleh2016_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_cellml.zip" download>Riociguat_Saleh2016_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_modelica.zip" download>Riociguat_Saleh2016_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_matlab.zip" download>Riociguat_Saleh2016_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_matlab_simbio.zip" download>Riociguat_Saleh2016_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_sbml.zip" download>Riociguat_Saleh2016_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_cellml.zip" download>Riociguat_Saleh2016_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference.svg" alt="Riociguat_Saleh2016_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 4.5 mg, single dose, first-order absorption (ka 2.17 /h, F 0.9).
+
+<dbs-fmusim paramsurl="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_riociguat/Riociguat_Saleh2016_reference/Riociguat_Saleh2016_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Riociguat_Saleh2016_reference_params.json` · controls `Riociguat_Saleh2016_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

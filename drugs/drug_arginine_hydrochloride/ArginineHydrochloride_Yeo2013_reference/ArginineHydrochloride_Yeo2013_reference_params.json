@@ -1,25 +1,34 @@
 {
+ "dose_source": "paper",
  "model_id": "ArginineHydrochloride_Yeo2013_reference",
+ "molar_masses": {
+  "central.C": 0.174201
+ },
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  12000.0
+ ],
  "parameters": {
   "Cl": 8.611111111111112e-06,
   "F": 1.0,
+  "MM": 0.174201,
   "VdPerKg": 0.0003857142857142857,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.012,
   "k12": 0.0007613168724279835,
   "k21": 0.0009788359788359788,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662026
+  "central.C": 660.0000000662088
  },
  "reference_peaks": {
-  "central.C": 0.0013513778480117736
+  "central.C": 0.16216534064899418
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

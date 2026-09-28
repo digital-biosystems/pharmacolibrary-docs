@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The exenatide record was held back because the absorption rate constant ka (77.9/day) was not reported in the source and a placeholder value was substituted, with bioavailability F and lag time Tlag also missing.**
+**The exenatide record was held back because the absorption rate constant ka was not reported in the source and a default value was substituted, an invented absorption parameter flagged as not acceptable.**
 
-The record for exenatide in type 2 diabetes patients lists ka as 77.9/day, but this value was not reported in the source paper; it was assumed by the model builder, and bioavailability F and the absorption lag time Tlag were likewise left without extracted values, so library placeholders would have been used. This invented absorption constant is the reason the model was not published. A second reader also disagreed with several extracted values, leaving them unmatched, though these disagreements alone were not the deciding factor. Extracted — exenatide: kabs 77.9, Fab 83, CL 12.3 L/h, V 10 L.
+The paper reports exenatide clearance 12.3 L/h, volume of distribution 10.0 L and bioavailability 83%, but no ka; the model builder defaulted F, ka and Tlag, so the absorption rate constant is invented rather than sourced. The deviations check returned 'invented_absorption: not acceptable', leading to a needs_review verdict. Several extracted values also lack a second reader's confirmation, so agreement on them is unresolved. Extracted — exenatide: kabs 77.9, Fab 83, CL 12.3 L/h, V 10 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q1: this record has 567, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
@@ -111,6 +111,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=exenatide) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
@@ -136,11 +137,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv/Exenatide_Cirincione2017_single_dose_model_iv_modelica.zip" download>Exenatide_Cirincione2017_single_dose_model_iv_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv/Exenatide_Cirincione2017_single_dose_model_iv_fmi.zip" download>Exenatide_Cirincione2017_single_dose_model_iv_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv/Exenatide_Cirincione2017_single_dose_model_iv_modelica.zip" download>Exenatide_Cirincione2017_single_dose_model_iv_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv/Exenatide_Cirincione2017_single_dose_model_iv_fmi.zip" download>Exenatide_Cirincione2017_single_dose_model_iv_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv/Exenatide_Cirincione2017_single_dose_model_iv_matlab.zip" download>Exenatide_Cirincione2017_single_dose_model_iv_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv/Exenatide_Cirincione2017_single_dose_model_iv_matlab_simbio.zip" download>Exenatide_Cirincione2017_single_dose_model_iv_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv/Exenatide_Cirincione2017_single_dose_model_iv_sbml.zip" download>Exenatide_Cirincione2017_single_dose_model_iv_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv/Exenatide_Cirincione2017_single_dose_model_iv_sbml.zip" download>Exenatide_Cirincione2017_single_dose_model_iv_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv/Exenatide_Cirincione2017_single_dose_model_iv_cellml.zip" download>Exenatide_Cirincione2017_single_dose_model_iv_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
@@ -149,7 +150,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 2.5 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). Doses in the paper: 2.5, 5, 7, 10 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv/Exenatide_Cirincione2017_single_dose_model_iv_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv/Exenatide_Cirincione2017_single_dose_model_iv_sim_controls.json"></dbs-fmusim>
 

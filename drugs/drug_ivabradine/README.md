@@ -21,6 +21,7 @@
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
+| ivabradine | parent | 468.594 | C27H36N2O5 | DrugBank | [132999](https://pubchem.ncbi.nlm.nih.gov/compound/132999) | Lang_2021 |
 | ivabradine metabolite | metabolite | — (mass units only) | — | — | — | — |
 
 ## Extraction summary

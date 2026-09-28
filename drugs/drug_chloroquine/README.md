@@ -27,7 +27,8 @@ Chloroquine is also used off label for the treatment of rheumatic diseases,[A191
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| desethylchloroquine | metabolite | — (mass units only) | — | — | — | — |
+| chloroquine | parent | 319.872 | C18H26ClN3 | DrugBank | [2719](https://pubchem.ncbi.nlm.nih.gov/compound/2719) | Abd-Rahman_2020, Chotsiri_2022, Karunajeewa_2010, Yao_2021 |
+| desethylchloroquine | metabolite | 291.823 | C16H22ClN3 | PubChem | [95478](https://pubchem.ncbi.nlm.nih.gov/compound/95478) | Abd-Rahman_2020 |
 
 ## Extraction summary
 

@@ -131,7 +131,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 3000 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 3000 mg parenteral (J01CA04) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_amoxicillin/Amoxicillin_AlbanellFernndez2025_reference/Amoxicillin_AlbanellFernndez2025_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_amoxicillin/Amoxicillin_AlbanellFernndez2025_reference/Amoxicillin_AlbanellFernndez2025_reference_sim_controls.json"></dbs-fmusim>
 

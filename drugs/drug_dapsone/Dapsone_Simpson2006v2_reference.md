@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D10A&quot;,&quot;href&quot;:&quot;atc/D10A.md&quot;},{&quot;label&quot;:&quot;dapsone&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/&quot;},{&quot;label&quot;:&quot;Simpson_2006_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapsone_Gatti1996_reference&quot;,&quot;label&quot;:&quot;Gatti_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Gatti1996_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Kotila2023_reference&quot;,&quot;label&quot;:&quot;Kotila_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Kotila2023_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Simpson2006v2_reference&quot;,&quot;label&quot;:&quot;Simpson_2006_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Simpson2006v2_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dapsone_Falloon1994_reference&quot;,&quot;label&quot;:&quot;Falloon_1994_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Falloon1994_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapsone_Gatti1996_reference&quot;,&quot;label&quot;:&quot;Gatti_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Gatti1996_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Kotila2023_reference&quot;,&quot;label&quot;:&quot;Kotila_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Kotila2023_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Falloon1994_reference&quot;,&quot;label&quot;:&quot;Falloon_1994_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Falloon1994_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Simpson2006v2_reference&quot;,&quot;label&quot;:&quot;Simpson_2006_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Simpson2006v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dapsone — `Dapsone_Simpson2006v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.846). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.846). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record lacks values for chlorcycloguanil's clearance, volume of distribution and formation rate, which were left as library placeholders, and kabs, Q/F and V2/F are also missing, so the dapsone model was quarantined.**
+**The chlorproguanil parent–metabolite model was rejected because its structure is a one-compartment enteral model instead of a parent–metabolite three-compartment structure, so the simulated terminal half-life (1.71 h) misses the paper's 26.67 h, and Q/F and V2/F were never emitted.**
 
-The model describes chlorproguanil with its metabolite chlorcycloguanil linked by a formation clearance, but no source values exist for chlorcycloguanil's clearance, volume of distribution or formation rate, so library defaults were substituted and the model was held back rather than published with invented numbers. The parameter coverage check found only 3 of 6 expected parameters covered, with kabs (0.93 h⁻¹), Q/F (54.67 l h⁻¹) and V2/F (1612.75 l) neither emitted nor defaulted. The builder also assumed F=1 and Fm=1 with no molar correction, i.e. an apparent parameterization. A second reader additionally disagreed on whether the dosing compound is chlorproguanil/dapsone or both chlorproguanil and dapsone, and on the identifier for the elimination half-life (26.67 h). Extracted — dapsone: kabs 0.93 h -1, CL/F 72 l h -1, Q/F 54.7 l h -1, V1/F 50 l, V2/F 1.61e+03 l, AUC 1.01e+05, t1/2z 26.7 h, V/F 48 l.
+The record describes chlorproguanil metabolized to chlorcycloguanil, but the model was built as a single enteral compartment without the metabolite, so the output is the parent compartment rather than the measured analyte. Simulated as the paper dosed it, the terminal half-life is 1.71 h against the reported 26.67 h (ratio 0.0642), far outside tolerance. Only 4 of the 6 extracted parameters were covered: Q/F (54.67 l/h) and V2/F (1612.75 l) were neither emitted nor defaulted, and Tlag was left at a library placeholder. The builder also assumed F=1, Fm=1 and no molar correction, and a second reader disagreed on the dose compound (chlorproguanil/dapsone vs chlorproguanil and dapsone) and the half-life parameter identifier. Extracted — dapsone: kabs 0.93 h -1, CL/F 72 l h -1, Q/F 54.7 l h -1, V1/F 50 l, V2/F 1.61e+03 l, AUC 1.01e+05, t1/2z 26.7 h, V/F 48 l.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has chlorproguanil/dapsone, the second reading chlorproguanil and dapsone; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -30,15 +30,15 @@ Simpson JA; Hughes D; Manyando C; Bojang K; Aarons L; Winstanley P; et al. et al
   ·  DOI: [10.1111/j.1365-2125.2005.02567.x](https://doi.org/10.1111/j.1365-2125.2005.02567.x)
 
 ## Model component
-<dbs-pgx drug="dapsone" model-id="Dapsone_Simpson2006v2_reference" status="model_quarantined" stale="false" population="healthy volunteers and adults and children with uncomplicated falciparum malaria" measured-compound="chlorproguanil" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="dapsone" model-id="Dapsone_Simpson2006v2_reference" status="rejected" stale="false" population="healthy volunteers and adults and children with uncomplicated falciparum malaria" measured-compound="chlorproguanil" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 8 extracted.
 
 **Parameterization:** CL/F, Q/F, V/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -58,8 +58,13 @@ Simpson JA; Hughes D; Manyando C; Bojang K; Aarons L; Winstanley P; et al. et al
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=chlorproguanil
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 ## Validation
 
@@ -104,12 +109,14 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['kabs', 'Q/F', 'V2/F'] |
-| T3_topology_template | not captured | pass | parent_metabolite → PK_Parent_Metabolite* | PK_Parent_Metabolite | not captured | engineer template must match the scholar topology |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=chlorproguanil) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['Q/F', 'V2/F'] |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_beta | reference | skipped | 26.67 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | fail | 26.67 | 1.7114352133704436 | 0.0642 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -119,29 +126,24 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_dapsone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Simpson_2006_2` / `Simpson_2006_2::reference`)
-- model: `../../../knowledgebase/drugs/drug_dapsone/models/modelica/_needs_review/Dapsone_Simpson2006v2_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_dapsone/models/modelica/_needs_review/Dapsone_Simpson2006v2_reference.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_dapsone/models/modelica/Dapsone_Simpson2006v2_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_dapsone/models/modelica/Dapsone_Simpson2006v2_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_dapsone/models/modelica/Dapsone_Simpson2006v2_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dapsone/Dapsone_Simpson2006v2_reference/Dapsone_Simpson2006v2_reference_matlab.zip" download>Dapsone_Simpson2006v2_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dapsone/Dapsone_Simpson2006v2_reference/Dapsone_Simpson2006v2_reference_matlab_simbio.zip" download>Dapsone_Simpson2006v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dapsone/Dapsone_Simpson2006v2_reference/Dapsone_Simpson2006v2_reference_sbml.zip" download>Dapsone_Simpson2006v2_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dapsone/Dapsone_Simpson2006v2_reference/Dapsone_Simpson2006v2_reference_cellml.zip" download>Dapsone_Simpson2006v2_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 140 mg, single dose, first-order absorption (ka 0.93 /h, F 1). Dose in the paper: 140 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_dapsone/Dapsone_Simpson2006v2_reference/Dapsone_Simpson2006v2_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_dapsone/Dapsone_Simpson2006v2_reference/Dapsone_Simpson2006v2_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Dapsone_Simpson2006v2_reference_params.json` · controls `Dapsone_Simpson2006v2_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

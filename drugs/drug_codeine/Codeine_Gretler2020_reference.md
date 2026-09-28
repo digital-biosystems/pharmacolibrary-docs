@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/&quot;},{&quot;label&quot;:&quot;Gretler_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Shah1990_reference&quot;,&quot;label&quot;:&quot;Shah_1990_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Shah1990_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Anderson2026_reference&quot;,&quot;label&quot;:&quot;Anderson_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Anderson2026_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Ashraf2024_reference&quot;,&quot;label&quot;:&quot;Ashraf_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Ashraf2024_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Capparelli2005_reference&quot;,&quot;label&quot;:&quot;Capparelli_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Capparelli2005_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Gretler2020_reference&quot;,&quot;label&quot;:&quot;Gretler_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Gretler2020_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Shah1990_reference&quot;,&quot;label&quot;:&quot;Shah_1990_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Shah1990_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Anderson2026_reference&quot;,&quot;label&quot;:&quot;Anderson_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Anderson2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Ashraf2024_reference&quot;,&quot;label&quot;:&quot;Ashraf_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Ashraf2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Capparelli2005_reference&quot;,&quot;label&quot;:&quot;Capparelli_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Capparelli2005_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Gretler2020_reference&quot;,&quot;label&quot;:&quot;Gretler_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Gretler2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # codeine — `Codeine_Gretler2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,22 +15,20 @@
 
 ### Reviewer guidance
 
-**The codeine clearance of 0.18 ml/h in this one-compartment horse model is physiologically implausible, indicating a unit or scale extraction error, and the record was built from the abstract alone rather than a fitted model.**
+**The codeine record was rejected because the reported clearance of 0.18 ml/h is physiologically implausible for a horse, indicating a unit or scale extraction error, and the record was built from the abstract only.**
 
-The record reports codeine clearance of 0.18 ml/h, a magnitude far outside the physiological window for a horse, consistent with a unit or scale extraction error. Because the source was abstract-only, the reported summary statistics (Cmax 270.7 ng/mL, tmax 0.438 h, elimination half-life 2.0 h, CL 0.18 ml/h) stood in for a fitted model. A second reader returned no values for Cmax, tmax, and elimination half-life, so no comparison could be computed for those parameters. Extracted — codeine: Cmax 271 ng mL-1, tmax 0.438 hours, t1/2z 2 hours, CL 0.18 ml/h.
+The clearance value 0.18 ml/h for codeine falls far outside any physiological window for a Thoroughbred horse, which the review attributes to a unit or scale extraction error. The record is abstract-only, so the reported summary statistics (Cmax 270.7 ng/mL, tmax 0.438 h, elimination half-life 2.0 h, CL 0.18 ml/h) stood in for a fitted model. A second reader returned no values for Cmax, tmax, and elimination half-life, disagreeing with the extracted values of 270.7, 0.438, and 2.0 respectively. Extracted — codeine: Cmax 271 ng mL-1, tmax 0.438 hours, t1/2z 2 hours, CL 0.18 ml/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cmax: this record has 270.7, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:06:14.223649+00:00) predates the upstream re-run (2026-09-23 14:29:42.341127+00:00). Current validate status: `rejected`.
 
 ## Citation
 Gretler SR; Finno CJ; McKemie DS; Kass PH; Knych HK et al. (2020). Veterinary anaesthesia and analgesia 47
   ·  DOI: [10.1016/j.vaa.2020.04.004](https://doi.org/10.1016/j.vaa.2020.04.004)
 
 ## Model component
-<dbs-pgx drug="codeine" model-id="Codeine_Gretler2020_reference" status="rejected" stale="true" population="Thoroughbred horses" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="codeine" model-id="Codeine_Gretler2020_reference" status="rejected" stale="false" population="Thoroughbred horses" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

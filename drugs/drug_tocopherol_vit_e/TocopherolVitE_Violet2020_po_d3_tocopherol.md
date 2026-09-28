@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The alpha-tocopherol elimination rate (Ke = 0.019) carries no convertible unit, so it could not be given an SI value, and the record was rejected on this dimensional mismatch.**
+**The record was rejected because the elimination rate constant kel of alpha-tocopherol was reported with the unit 'Ke' instead of a dimensioned unit (value 0.019), a dimension mismatch that could not be converted to SI.**
 
-The record reports alpha-tocopherol in a one-compartment model for women with obesity-associated hepatosteatosis and healthy controls, with an elimination rate Ke of 0.019 whose unit is given only as 'Ke' — a unit that could not be converted to SI, so the parameter arrived without a usable value. Other reported quantities include a half-life of 39.0 h, Cmax of 0.20 µM, Tmax of 8.5 h, and AUC0–72h of 8.6 µM×h. A second reader disagreed on the dosed and measured compound, reading d6-α-tocopherol instead of alpha-tocopherol, and extracted a fractional absorption over 0–72 h of 0.537 where this record has none. Extracted — alpha-tocopherol: kel 0.019 Ke, t1/2z 39 h, Cmax 0.2, tmax 8.5, AUCt 8.6.
+The kel parameter for alpha-tocopherol carries the verbatim unit 'Ke' — the label text rather than a physical unit — so its dimension check failed and no SI value could be assigned, since that unit could not be converted. The record also contains a fractional absorption parameter (0–72 hours) that was left without a value; a second reader assigned it 0.537, and further disagreed on the dose compound and primary analyte, reading them as d6-α-tocopherol rather than alpha-tocopherol. The reported PK values themselves (t1/2z 39.0 h, Cmax 0.20 µM, tmax 8.5 h, AUC0–72h 8.6 µM×h) are consistent with the reported kel of 0.019. Extracted — alpha-tocopherol: kel 0.019 Ke, t1/2z 39 h, Cmax 0.2, tmax 8.5, AUCt 8.6.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has alpha-tocopherol, the second reading d6-α-tocopherol; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

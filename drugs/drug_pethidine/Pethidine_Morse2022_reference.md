@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The pethidine two-compartment model record was held back because the absorption lag time parameter tlag (5.3 min) was not extracted, leaving only 4 of the 5 published parameters covered.**
+**The pethidine two-compartment model record was held back because the absorption lag time tlag (5.3 min) was not covered, leaving only 4 of the expected 5 parameters, and a second reader disputed several values.**
 
-The record lists pethidine parameters CL 24.0 L/h/70 kg, V1 43.7 L/70 kg, V2 29.7 L/70 kg and Q 43.5 L/h/70 kg, but the lag time tlag of 5.3 min from the paper is absent, so only 4 of the expected 5 parameters are covered. The second reader also disagreed on several extracted values, reading CL and Q as null and V1 and V2 as null in the opposite direction, and reported three additional parameters (86, 0.61 and 2.5) that this record does not contain, so the parameter set itself is contested. Extracted — pethidine: CL 24 L/h/70 kg, V1 43.7 L/70 kg, V2 29.7 L/70 kg, Q 43.5 L/h/70 kg, tlag 5.3 min.
+The record for pethidine (Morse_2022, two-compartment structure) lists CL 24.0 L/h/70 kg, V1 43.7 L/70 kg, V2 29.7 L/70 kg, Q 43.5 L/h/70 kg and tlag 5.3 min, but the tlag parameter was neither emitted nor defaulted, so only 4 of 5 expected parameters were covered. A second reader disagreed on the clearance (24.0) and intercompartmental clearance (43.5) values, reading them as null, and additionally reported values absent from this record: 86, 0.61 and 2.5. The disagreements are unresolved, so the record's values cannot be confirmed. Extracted — pethidine: CL 24 L/h/70 kg, V1 43.7 L/70 kg, V2 29.7 L/70 kg, Q 43.5 L/h/70 kg, tlag 5.3 min.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 24.0, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 
@@ -137,7 +137,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pethidine/Pethidine_Morse2022_reference/Pethidine_Morse2022_reference_modelica.zip" download>Pethidine_Morse2022_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pethidine/Pethidine_Morse2022_reference/Pethidine_Morse2022_reference_fmi.zip" download>Pethidine_Morse2022_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pethidine/Pethidine_Morse2022_reference/Pethidine_Morse2022_reference_matlab.zip" download>Pethidine_Morse2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pethidine/Pethidine_Morse2022_reference/Pethidine_Morse2022_reference_matlab_simbio.zip" download>Pethidine_Morse2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pethidine/Pethidine_Morse2022_reference/Pethidine_Morse2022_reference_sbml.zip" download>Pethidine_Morse2022_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -149,7 +149,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 400 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 400 mg parenteral (N02AB02) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_pethidine/Pethidine_Morse2022_reference/Pethidine_Morse2022_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_pethidine/Pethidine_Morse2022_reference/Pethidine_Morse2022_reference_sim_controls.json"></dbs-fmusim>
 

@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The nadroparin record was quarantined because its clearance, volume of distribution, absorption rate constant and absorption lag time had no values, so library placeholders stood in, and an absorption rate constant was invented.**
+**The nadroparin model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no values in the source and were replaced by library placeholder defaults.**
 
-The record lists only apparent clearance (7.4 mL/min) and intercompartmental clearance (7.1 mL/min) for nadroparin; clearance, volume of distribution, absorption rate constant and absorption lag time had no extracted value, so placeholders would have been used, and the model was held back rather than published with invented numbers. The absorption rate constant was defaulted rather than reported in the source, judged not acceptable. In addition, the covariate effects (theta_q290_category 3864.2, theta_q82_category 34554.7) were defined but only the reference individual was simulated, so the covariate scenarios were not exercised; bioavailability was assumed to be 1 with no molar correction under an apparent (/F) parameterization with extravascular first-order depot input. Extracted — nadroparin: CL/F 7.4 mL/min, Q 7.1 mL/min.
+The record reports only apparent clearance (7.4 mL/min) and intercompartmental clearance (7.1 mL/min) for nadroparin in hemodialysis patients; clearance, volume of distribution, absorption rate constant and absorption lag time were missing, so placeholder values stood in and the model was held back rather than published with invented numbers. The absorption rate constant was defaulted, not reported in the source, and the first-order depot input reflects an apparent (F=1) parameterization. The covariate effects defined in the record (theta_q290_category 3864.2, theta_q82_category 34554.7) were not exercised: only the reference individual was simulated. Extracted — nadroparin: CL/F 7.4 mL/min, Q 7.1 mL/min.
 
 Independently confirmed by `gpt-oss:120b`.
 
@@ -102,6 +102,7 @@ _Every reader agrees on every compared field of this record._
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |

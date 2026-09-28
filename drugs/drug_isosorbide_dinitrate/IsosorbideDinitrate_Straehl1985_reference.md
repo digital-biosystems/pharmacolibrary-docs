@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The isosorbide dinitrate model was rejected because its metabolite compartments, isosorbide 5-mononitrate and isosorbide 2-mononitrate, are unlinked, and it was built from the abstract alone rather than a fitted model.**
+**The isosorbide dinitrate record was rejected because its metabolites, isosorbide 5-mononitrate and isosorbide 2-mononitrate, are unlinked from the dose, and the model was built from the abstract only.**
 
-The structure assigns a metabolism rate constant Kfm from isosorbide dinitrate to both isosorbide 5-mononitrate and isosorbide 2-mononitrate, but these metabolites have no path from the dose, so the check for unreachable or orphan compartments and unlinked metabolites failed. In addition, the record is abstract-only: only the paper's abstract was read, so the reported summary statistics (t1/2z 4.7 min, Vss 90 L, CL 136 L/hr, Fab 29%) stood in for a fitted model. Extracted — isosorbide dinitrate: t1/2z 4.7 minutes, Vss 90 L, CL 136 L/hr, Fab 29 %.
+The metabolism links from isosorbide dinitrate to both mononitrate metabolites carry no usable rate constant, so the metabolites have no path from the dose and the structure check failed. The record is abstract-only: the reported summary statistics (t1/2z 4.7 minutes, Vss 90 L, CL 136 L/hr, bioavailability 29%) stand in for a fitted model rather than coming from one. Extracted — isosorbide dinitrate: t1/2z 4.7 minutes, Vss 90 L, CL 136 L/hr, Fab 29 %.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

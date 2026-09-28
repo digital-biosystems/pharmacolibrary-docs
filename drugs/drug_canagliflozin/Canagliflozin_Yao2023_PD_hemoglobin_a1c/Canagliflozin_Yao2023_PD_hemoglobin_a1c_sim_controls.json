@@ -1,0 +1,12 @@
+[
+ {
+  "key": "stop_time",
+  "label": "Exposure range",
+  "unit": "ng/mL·h",
+  "scale": 1.0,
+  "min": 56.6,
+  "max": 2830.0,
+  "step": 5.66,
+  "sim": true
+ }
+]

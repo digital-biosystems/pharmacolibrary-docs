@@ -1,11 +1,17 @@
 {
+ "dose_source": "paper",
  "model_id": "Simvastatin_Devineni2015_reference",
  "molar_masses": {
-  "C_central": 0.4185662
+  "central.C": 0.4185662
  },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  50.0,
+  1600.0
  ],
  "parameters": {
   "Cl": 3.3888888888888884e-06,
@@ -14,14 +20,14 @@
   "VdPerKg": 0.002665276038396582,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 5e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 660.0000000662055
+  "central.C": 660.0000000662086
  },
  "reference_peaks": {
-  "C_central": 0.0005330836803758228
+  "central.C": 0.0002665418328425123
  },
  "stop_time": 259200.0,
  "template": "PK_1C",

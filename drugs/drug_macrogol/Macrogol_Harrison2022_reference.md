@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The macrogol model was held back because the absorption rate constant ka and lag time were not reported in the source, so placeholder values were substituted, and the invented absorption was judged not acceptable.**
+**The macrogol record was held back because the absorption rate constant ka was not reported in the source and a placeholder default was substituted, an invented absorption parameter the review deemed unacceptable.**
 
-The record reports only CL/F = 4.3 L/h and V1/F = 202.1 L for macrogol; ka and Tlag were missing from the source, so no value was extracted and library placeholders would have been used. The builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with extravascular first-order input. The failed check returned 'invented_absorption: not acceptable', since ka was defaulted rather than reported, and this deviation was the reason the model needs review. Extracted — macrogol: CL/F 4.3 L/h, V1/F 202 L.
+The record reports macrogol apparent oral parameters CL/F = 4.3 L/h and V1/F = 202.1 L from a review-secondary source. Alongside the defaulted ka, the absorption lag time Tlag also had no extracted value and would have taken a placeholder default. The builder further assumed F=1 and Fm=1 with no molar correction under an apparent (/F) parameterization with first-order depot input. The failed check returned 'invented_absorption: not acceptable', leading to the needs_review verdict. Extracted — macrogol: CL/F 4.3 L/h, V1/F 202 L.
 
 Independently confirmed by `gpt-oss:120b`.
 
@@ -123,7 +123,7 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_macrogol/Macrogol_Harrison2022_reference/Macrogol_Harrison2022_reference_modelica.zip" download>Macrogol_Harrison2022_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_macrogol/Macrogol_Harrison2022_reference/Macrogol_Harrison2022_reference_fmi.zip" download>Macrogol_Harrison2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_macrogol/Macrogol_Harrison2022_reference/Macrogol_Harrison2022_reference_matlab.zip" download>Macrogol_Harrison2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_macrogol/Macrogol_Harrison2022_reference/Macrogol_Harrison2022_reference_matlab_simbio.zip" download>Macrogol_Harrison2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_macrogol/Macrogol_Harrison2022_reference/Macrogol_Harrison2022_reference_sbml.zip" download>Macrogol_Harrison2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -135,7 +135,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 75 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 75, 225 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_macrogol/Macrogol_Harrison2022_reference/Macrogol_Harrison2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_macrogol/Macrogol_Harrison2022_reference/Macrogol_Harrison2022_reference_sim_controls.json"></dbs-fmusim>
 

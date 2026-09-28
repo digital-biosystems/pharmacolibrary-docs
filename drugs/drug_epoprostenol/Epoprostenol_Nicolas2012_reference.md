@@ -119,19 +119,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_output_variable | not captured | pass | C_central (measured=6-keto-prostacyclin F1a) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | fail | 0.25 | 1.046872359864208 | 4.1875 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.22 | 1.046872359864208 | 4.7585 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.08 | 1.046872359864208 | 0.9693 | h→SI vs simulated h |
-| T1_tmax | reference | skipped | not captured | 0.6758245048693737 | not captured | non-numeric value |
-| T1_tmax | reference | skipped | not captured | 0.6758245048693737 | not captured | non-numeric value |
-| T1_tmax | reference | skipped | not captured | 0.6758245048693737 | not captured | non-numeric value |
-| T1_tmax | reference | skipped | not captured | 0.6758245048693737 | not captured | non-numeric value |
-| T1_tmax | reference | skipped | not captured | 0.6758245048693737 | not captured | non-numeric value |
-| T1_tmax | reference | skipped | not captured | 0.6758245048693737 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | fail | 0.25 | 1.0492953725544345 | 4.1972 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.22 | 1.0492953725544345 | 4.7695 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.08 | 1.0492953725544345 | 0.9716 | h→SI vs simulated h |
+| T1_tmax | reference | skipped | not captured | 0.6758242817147024 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 0.6758242817147024 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 0.6758242817147024 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 0.6758242817147024 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 0.6758242817147024 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 0.6758242817147024 | not captured | non-numeric value |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

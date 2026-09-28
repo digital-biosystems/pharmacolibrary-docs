@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Glibenclamide's bioavailability, clearance, volume of distribution, absorption rate constant and lag time had no reported values, so placeholder defaults were substituted; k23 (0.34 1/h) was also uncovered, and the invented absorption was rejected.**
+**The glibenclamide model was quarantined because bioavailability, clearance, volume of distribution, absorption rate constant and lag time were left at library placeholder values, and the transit micro-rate kcomp (0.34) was never carried into the model.**
 
-The record lists kel (1.13 1/h), V (3.84 l), k23 (0.34 1/h), kabs (0.51 1/h), MTT (-0.359 h), n (10.8), F (0.94) and CL (14.5 l/h), yet the coverage check found only 4 of 5 expected parameters covered, with kcomp (k23) neither reported nor defaulted. The model builder substituted placeholder default values for F, CL, Vd, ka and Tlag, and assigned ka a default although it was not reported in the source — an invented absorption judged not acceptable. In addition, one reported parameter's unit could not be converted to SI, so it entered the model without an SI value. The model was therefore quarantined rather than published. Extracted — glibenclamide: kel 1.13, V 3.84 l, kcomp 0.34, kabs 0.51, MTT -0.359 h, n_transit 10.8, Fab 0.94 F, CL 14.5 l/h.
+The record reports glibenclamide parameters (kel 1.13 1/h, V 3.84 l, kabs 0.51 1/h, F 0.94, CL 14.5 l/h, MTT -0.359 h, n_transit 10.8), yet the model builder substituted library placeholders for F, Cl, Vd, ka and Tlag, so the published values were not carried into the model. The transit-compartment micro-rate kcomp (0.34) was neither emitted nor defaulted, leaving parameter coverage at 4 of 5. The absorption deviation was judged invented because ka was defaulted rather than reported in the source. Additionally, one reported unit could not be converted to SI, so that parameter reached the model without an SI value. Extracted — glibenclamide: kel 1.13, V 3.84 l, kcomp 0.34, kabs 0.51, MTT -0.359 h, n_transit 10.8, Fab 0.94 F, CL 14.5 l/h.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -103,6 +103,7 @@ Savic RM; Jonker DM; Kerbusch T; Karlsson MO et al. (2007). Journal of pharmacok
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['kcomp'] |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |

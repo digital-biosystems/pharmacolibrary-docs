@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The fosrolapitant-to-rolapitant hydrolysis link carries no parameter value, leaving rolapitant as an unlinked metabolite, and the AUC unit h×ng/mL could not be converted to SI, so the record was rejected.**
+**The record was rejected because rolapitant, the hydrolysis product of fosrolapitant, has no path from the administered dose, and the reported AUC units (h×ng/mL) could not be converted to SI.**
 
-The record describes palonosetron dosing in Chinese subjects with impaired or normal liver function, but the measured compound is fosrolapitant, linked to rolapitant by hydrolysis with link parameter 'none' — no value was extracted for that link, so rolapitant has no path from the dose and the structure check failed. Additionally, the reported units h×ng/mL for Cmax (139.11 ng/mL), AUC0-t (67715.36) and AUC0-∞ (85607.66) could not be converted to SI, so those parameters reached the model without SI values. Only clearance (7.92 L/h) carried a convertible unit. The record was rejected on these grounds. Extracted — palonosetron: Cmax 139 ng/mL, AUCt 6.77e+04 h×ng/mL, AUC∞ 8.56e+04 h×ng/mL, t1/2z 308 hour; fosrolapitant: CL 7.92 L/h.
+The model links fosrolapitant to rolapitant by hydrolysis, but rolapitant is an unlinked metabolite with no connection from the dose, so the structure fails the orphan-metabolite check. In addition, the reported units for AUCt (67715.36 h×ng/mL) and AUC∞ (85607.66 h×ng/mL) could not be converted to SI units, so those parameters arrived without usable values. The measured compound is fosrolapitant in Chinese subjects with impaired or normal liver function, while the record's drug is palonosetron. Extracted — palonosetron: Cmax 139 ng/mL, AUCt 6.77e+04 h×ng/mL, AUC∞ 8.56e+04 h×ng/mL, t1/2z 308 hour; fosrolapitant: CL 7.92 L/h.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

@@ -1,0 +1,12 @@
+[
+ {
+  "key": "stop_time",
+  "label": "Exposure range",
+  "unit": "-log10EC50",
+  "scale": 1.0,
+  "min": 5.38,
+  "max": 269.0,
+  "step": 0.538,
+  "sim": true
+ }
+]

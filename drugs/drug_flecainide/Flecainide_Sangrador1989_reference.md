@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The flecainide record was rejected because a structural parameter failed a dimensional check, and only the paper's abstract was read, so summary statistics stood in for a fitted model.**
+**The flecainide record was rejected because the volume of distribution (V beta, 7.99 l/kg) is reported per kilogram of body weight, a dimension mismatch for a structural volume parameter.**
 
-The record reports flecainide in critically ill patients with acute myocardial infarction as a one-compartment model with a terminal plasma half-life of 22.0 h and a volume of distribution of 7.99 in units written as '1/kg' (litres per kilogram); the dimensional mismatch on this structural parameter was the stated reason for rejection. Because the source was abstract-only, no fitted model underlies the values — the abstract's summary statistics stand in for one. A second reader (gpt-oss:120b) disagreed on the dose compartment and primary analyte, and on the two parameters: it read the half-life (22.0 h) and volume (7.99 L/kg) as null where the record has values, and as 22.0 and 7.99 where the record has null, so the parameter values themselves are contested between readers. Extracted — flecainide: t1/2β 22 h, V 7.99 1/kg.
+The record comes from Sangrador_1989, abstract-only, so reported summary statistics stood in for a fitted model in critically ill patients with acute myocardial infarction. The terminal half-life (t1/2 beta, 22.0 h) is dimensionally consistent, but the volume of distribution (V beta, 7.99 l/kg) is normalized per kilogram, failing the dimensional check on a structural parameter. A second reader returned null for both parameter values, leaving the extracted 22.0 h and 7.99 l/kg unconfirmed, and disagreed on the dose compound and primary analyte fields. Extracted — flecainide: t1/2β 22 h, V 7.99 1/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has flecainide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

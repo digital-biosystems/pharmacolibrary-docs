@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The celecoxib model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no extracted values, so library placeholder defaults were substituted for these four parameters.**
+**The celecoxib model for cockatiels was quarantined because clearance, volume of distribution, absorption rate constant and lag time had no extracted values and library placeholder defaults were substituted, including an invented absorption rate constant.**
 
-The record reports only V/F = 19.12 for celecoxib; clearance, volume of distribution, absorption rate constant and absorption lag time had no value in the source, so generic placeholder numbers would have stood in and the model was held back rather than published with invented values. The builder further assumed F=1 and Fm=1 without molar correction (apparent parameterization), defaulted the absorption rate constant although it was not reported in the source, and used a first-order depot input implied by the apparent (/F) parameterization. The invented-absorption deviation was judged not acceptable. A second reader also disagreed on several parameter entries, reading values (10, 0.88, 1, 0.9) where this record had none. Extracted — celecoxib: V/F 19.1.
+The record reports only V/F = 19.12 for celecoxib; clearance, volume of distribution, absorption rate constant and absorption lag time had no value in the source, so placeholder numbers would have stood in for the missing parameters and the model was held back rather than published with invented values. The absorption rate constant was invented — not reported in the source — which the deviations check flagged as not acceptable. The model also assumes F=1 and Fm=1 with no molar correction (apparent parameterization) and uses first-order depot input for extravascular dosing. A second reader additionally disagreed on which parameter the reported V/F value corresponds to, and on several half-life and fraction entries that were null in this record. Extracted — celecoxib: V/F 19.1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[po cf 1].parameter_id`: this record has Q76, the second reading Q27; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -123,6 +123,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |

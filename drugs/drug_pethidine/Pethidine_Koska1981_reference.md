@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The pethidine (meperidine) record was held back because an absorption rate constant was invented — ka was never reported in the source, so a library default was substituted and a first-order depot input assumed.**
+**The meperidine (pethidine) record was held back because the absorption rate constant ka was invented as a default rather than reported in the source, alongside defaulted Tlag and an apparent F=1 parameterization.**
 
-The record rests on the paper's abstract alone, so the reported summary statistics (t1/2z 4.4 h, total plasma clearance 10.4 ml/min/kg, apparent volume of distribution 3.74 L/kg for meperidine) stand in for a fitted model. Since the abstract gives no absorption parameters, ka and Tlag were left at library defaults, and the builder then assumed a first-order depot input with F=1, Fm=1 and no molar correction, giving an apparent (/F) parameterization. The invented absorption was judged not acceptable, which triggered the hold-back. A second reader disputed the apparent parameterization, arguing it should be mechanistic, and could not confirm any of the three parameter values (all read back as null). Extracted — pethidine: t1/2z 4.4 hours, CL 10.4 ml/min/kg, V/F 3.74 L/kg.
+The record was built from the paper's abstract only, so summary statistics stood in for a fitted model; the abstract reports a terminal half-life of 4.4 hours, clearance of 10.4 ml/min/kg and apparent volume of distribution of 3.74 L/kg for meperidine, but no absorption parameters. The model builder substituted library defaults for ka and Tlag and assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input. A second reader disagreed on the parameterization, preferring mechanistic over apparent, and could not confirm the three parameter values. The failed check returned 'invented_absorption: not acceptable'. Extracted — pethidine: t1/2z 4.4 hours, CL 10.4 ml/min/kg, V/F 3.74 L/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -138,7 +138,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pethidine/Pethidine_Koska1981_reference/Pethidine_Koska1981_reference_modelica.zip" download>Pethidine_Koska1981_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pethidine/Pethidine_Koska1981_reference/Pethidine_Koska1981_reference_fmi.zip" download>Pethidine_Koska1981_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pethidine/Pethidine_Koska1981_reference/Pethidine_Koska1981_reference_matlab.zip" download>Pethidine_Koska1981_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pethidine/Pethidine_Koska1981_reference/Pethidine_Koska1981_reference_matlab_simbio.zip" download>Pethidine_Koska1981_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pethidine/Pethidine_Koska1981_reference/Pethidine_Koska1981_reference_sbml.zip" download>Pethidine_Koska1981_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -150,7 +150,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 400 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 400 mg oral (N02AB02) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_pethidine/Pethidine_Koska1981_reference/Pethidine_Koska1981_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_pethidine/Pethidine_Koska1981_reference/Pethidine_Koska1981_reference_sim_controls.json"></dbs-fmusim>
 

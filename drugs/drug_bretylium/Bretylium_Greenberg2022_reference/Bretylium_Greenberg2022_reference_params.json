@@ -1,5 +1,9 @@
 {
+ "dose_source": "library default",
  "model_id": "Bretylium_Greenberg2022_reference",
+ "molar_masses": {
+  "central.C": 0.243168
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,6 +11,7 @@
  "parameters": {
   "Cl": 2.925e-06,
   "F": 1.0,
+  "MM": 0.243168,
   "Tlag": 0.0,
   "VdPerKg": 0.0023857142857142857,
   "adminCount": 1.0,
@@ -19,9 +24,9 @@
   "central.C": 16622.044088176353
  },
  "reference_peaks": {
-  "central.C": 0.0004503033725347821
+  "central.C": 0.00045030338920983254
  },
- "stop_time": 86400.0,
+ "stop_time": 259200.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

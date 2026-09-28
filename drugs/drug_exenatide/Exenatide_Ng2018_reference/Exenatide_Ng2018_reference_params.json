@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 0.015 mg parenteral (A10BJ01)",
  "model_id": "Exenatide_Ng2018_reference",
+ "molar_masses": {
+  "central.C": 4.18663
+ },
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,19 +11,20 @@
  "parameters": {
   "Cl": 2.6833333333333328e-06,
   "F": 1.0,
+  "MM": 4.18663,
   "VdPerKg": 0.000111,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1.5e-08,
   "k12": 7.865007865007865e-05,
   "k21": 6.87414073240845e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.000000066206
+  "central.C": 660.0000000662146
  },
  "reference_peaks": {
-  "central.C": 0.0028616092481648244
+  "central.C": 4.306200009977523e-07
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Loperamide_Valenzuela2025_m1",
+ "molar_masses": {
+  "central.C": 0.477038
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  8.0,
+  48.0
+ ],
+ "parameters": {
+  "Cl": 1.4555555555555556e-05,
+  "F": 1.0,
+  "MM": 0.477038,
+  "Tlag": 0.0,
+  "VdPerKg": 0.023571428571428573,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 8e-06,
+  "ka": 7.166666666666667e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 33763.52705410821
+ },
+ "reference_peaks": {
+  "central.C": 3.613369941422713e-06
+ },
+ "stop_time": 432000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

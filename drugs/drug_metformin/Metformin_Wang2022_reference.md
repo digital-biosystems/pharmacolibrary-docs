@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The metformin two-compartment model was rejected because a compartment has no path from the dose, and the record carries two conflicting peripheral volumes (Vp/F 413.0 L versus V2 190.0 L/70 kg).**
+**The metformin two-compartment model was rejected because its peripheral compartment is unreachable from the dose, leaving the 413 L peripheral volume and absorption parameters structurally disconnected.**
 
-The record lists a two-compartment metformin structure with CL/F 102.0 L/h, Vc/F 76.8 L, Vp/F 413.0 L and absorption rate Ka 0.3 /h, but the review found an unreachable or orphan compartment, meaning a compartment with no path from the administered dose, so the structure is not a valid closed model. Two distinct peripheral volume entries appear in the same record (Vp/F 413.0 L and V2 190.0 L/70 kg), an unexplained deviation. The second reader disagreed with this record on one extracted value, reading 0.49 where this record has none, and vice versa, though the affected quantity is not identified in the findings. Extracted — metformin: CL/F 102 L/h, V1/F 76.8 L, V2/F 413 L, V2 190 L/70 kg, kabs 0.3 /h.
+The record describes metformin with a two-compartment structure and parameters CL/F 102.0 L/h, V1/F 76.8 L, V2/F 413.0 L, V2 190.0 L/70 kg and kabs 0.3 /h, but the review found an unreachable or orphan compartment, meaning the peripheral compartment has no path from the administered dose. The two readers also disagreed on which value belongs to which parameter: one assigned 0.49 where this record has none, and this record assigns 0.49 where the second reader found none, so the parameter-value mapping is disputed. Extracted — metformin: CL/F 102 L/h, V1/F 76.8 L, V2/F 413 L, V2 190 L/70 kg, kabs 0.3 /h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q355: this record has none, the second reading 0.49; it also differs on 1 more field. That field does not shape the model.
 

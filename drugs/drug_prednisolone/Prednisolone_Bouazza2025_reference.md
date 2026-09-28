@@ -112,6 +112,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=prednisolone) | central.C | not captured | output must be the measured/analyte compartment |
@@ -138,8 +139,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference_modelica.zip" download>Prednisolone_Bouazza2025_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference_modelica.zip" download>Prednisolone_Bouazza2025_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference_fmi.zip" download>Prednisolone_Bouazza2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference_matlab.zip" download>Prednisolone_Bouazza2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference_matlab_simbio.zip" download>Prednisolone_Bouazza2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference_sbml.zip" download>Prednisolone_Bouazza2025_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -151,7 +152,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 80000 mg, single dose, first-order absorption (ka 1.19 /h, lag 10.2 min, F 1).
+**Administration: oral** — 10 mg, single dose, first-order absorption (ka 1.19 /h, lag 10.2 min, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 10 mg oral (H02AB06) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference_sim_controls.json"></dbs-fmusim>
 

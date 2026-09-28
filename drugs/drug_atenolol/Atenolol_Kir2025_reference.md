@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The atenolol model (Kir_2025, malnourished and non-malnourished rats) fails to reproduce the paper's Cmax (0.025 vs 0.000285) and tmax (5 vs 1.81), and its absorption rate was invented rather than reported, so it was held back.**
+**The atenolol model for malnourished and non-malnourished rats fails to reproduce the paper's Cmax (0.025 vs 0.0498) and tmax (5.0 vs 1.81), and its absorption rate constant was invented rather than reported, so it was held back.**
 
-Simulated as the paper dosed it, the model's peak concentration for atenolol is 0.000285 against reported values of 0.025, 0.0228, 0.0143 and 0.0206 (ratios 0.0114–0.0199), and the time of the peak is 1.81 against 5.0 (ratio 0.362), both outside tolerance. The absorption rate constant was not reported in the source and was defaulted, which the adjudication deemed not acceptable; F and Tlag were likewise left at placeholder values for missing source values. One reported parameter unit could not be converted to SI, so that parameter entered the model without an SI value. A second reader disagreed on whether the analyte is atenolol alone or atenolol with metoprolol, and on whether the clearance (16.04), absorption rate (1.19) and volume of distribution (1.41) values belong to this record. Extracted — atenolol: CL 16 mL/min/kg, kabs 1.19 mg/min/kg, V 1.41 L/kg.
+Simulated as the paper dosed it, the model's peak concentration for atenolol exceeds the reported values (0.025, 0.0228, 0.0143, 0.0206) with ratios of 1.9928, 2.1851, 3.484 and 2.4185, and the time of the peak is 1.81 against a reported 5.0 (ratio 0.3613). The absorption rate constant was not reported in the source and was defaulted, which was judged not acceptable; F and Tlag were likewise left at defaults because no source values were extracted. A reported unit could not be converted to SI, so a parameter was used without an SI value, and a second reader disagreed on whether the analyte was atenolol alone or atenolol with metoprolol. Extracted — atenolol: CL 16 mL/min/kg, kabs 1.19 mg/min/kg, V 1.41 L/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atenolol, the second reading atenolol, metoprolol; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -109,18 +109,19 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=atenolol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | fail | 0.025 | 0.00028469390330175033 | 0.0114 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0228 | 0.00028469390330175033 | 0.0125 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0143 | 0.00028469390330175033 | 0.0199 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0206 | 0.00028469390330175033 | 0.0138 | µg/mL→SI vs simulated kg/m3 |
-| T1_tmax | reference | fail | 5.0 | 1.8099519719819221 | 0.362 | min→SI vs simulated h |
-| T1_tmax | reference | pass | 2.25 | 1.8099519719819221 | 0.8044 | min→SI vs simulated h |
-| T1_tmax | reference | pass | 1.8333333333333333 | 1.8099519719819221 | 0.9872 | min→SI vs simulated h |
+| T1_cmax | reference | fail | 0.025 | 0.04982117140128287 | 1.9928 | µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0228 | 0.04982117140128287 | 2.1851 | µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0143 | 0.04982117140128287 | 3.484 | µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0206 | 0.04982117140128287 | 2.4185 | µg/mL→SI vs simulated kg/m3 |
+| T1_tmax | reference | fail | 5.0 | 1.8062765240005605 | 0.3613 | min→SI vs simulated h |
+| T1_tmax | reference | pass | 2.25 | 1.8062765240005605 | 0.8028 | min→SI vs simulated h |
+| T1_tmax | reference | pass | 1.8333333333333333 | 1.8062765240005605 | 0.9852 | min→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -154,7 +155,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 17500 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). Doses in the paper: 17500, 21840 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_atenolol/Atenolol_Kir2025_reference/Atenolol_Kir2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_atenolol/Atenolol_Kir2025_reference/Atenolol_Kir2025_reference_sim_controls.json"></dbs-fmusim>
 

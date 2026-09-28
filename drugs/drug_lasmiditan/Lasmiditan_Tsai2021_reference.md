@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The lasmiditan pediatric model was held back because its volume of distribution and absorption lag time had no extracted values, so library placeholder values would have been used, with V2/F and Q/F also uncovered and covariate effects unexercised.**
+**The lasmiditan pediatric model was quarantined because Vd and Tlag had no source values and library defaults were substituted, and V2/F and Q/F were not covered.**
 
-The record lists V2/F = 127 L and Q/F = 21.2 L/h among its parameters, yet the coverage check expected 4 parameters emitted or defaulted and obtained only 2, leaving V2/F and Q/F neither emitted nor defaulted. Lasmiditan's volume of distribution and absorption lag time had no value in the source, so a library placeholder would have stood in and the model was held back rather than published with an invented number. The covariate effects of body weight on CL/F and V2/F (0.877 and 1.15) were defined but only the reference individual was simulated, so those scenarios were not exercised. A reported unit could not be converted to SI, and a second reader gave 25.3 for a parameter where this record has null. Extracted — lasmiditan: kabs 0.295 1/h, CL/F 107 L/h, V2/F 127 L, Q/F 21.2 L/h, V3/F 172 L, MTT 0.436 h.
+No value for lasmiditan's volume of distribution and absorption lag time: library placeholders stood in for Vd and Tlag, so the model was held back rather than published with invented numbers. Parameter coverage also failed: of 4 expected parameters only 2 were covered, with V2/F (reported as 127 L) and Q/F (21.2 L/h) neither emitted nor defaulted. The covariate effects on CL/F (theta 0.877 L/h) and V2/F (theta 1.15 L) were defined but only the reference individual was simulated. A second reader additionally reports an ntr value of 25.3 where this record has none, and a reported unit could not be converted to SI. Extracted — lasmiditan: kabs 0.295 1/h, CL/F 107 L/h, V2/F 127 L, Q/F 21.2 L/h, V3/F 172 L, MTT 0.436 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ntr: this record has none, the second reading 25.3. That field does not shape the model.
 

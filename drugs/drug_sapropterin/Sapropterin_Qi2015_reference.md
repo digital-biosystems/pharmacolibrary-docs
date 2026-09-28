@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The sapropterin absorption rate constant kabs is reported as 0.235 with only 'units' as its unit, a dimension that cannot be expressed in SI, so the structural parameter lacks a valid time-based dimension and the record was rejected.**
+**The sapropterin (BH4) model was rejected because the absorption rate constant kabs (0.235) was reported without a usable unit (given only as 'units'), so it could not be expressed in reciprocal hours and failed the dimensional check on a structural parameter.**
 
-The one-compartment sapropterin (BH4) model for infants and young children with phenylketonuria lists kabs = 0.235 with the unit given only as 'units' rather than a reciprocal time unit such as h⁻¹. Because that unit could not be converted to SI, the parameter entered the record without a usable value, giving a dimension mismatch on a structural parameter. The other parameters (CL/F 2710 L/h, V/F 3010 L, tlag 0.321 h, C0 16.6 μg/L) carry convertible units, so the failure is confined to kabs. Extracted — sapropterin (BH4): CL/F 2.71e+03 L/h, V/F 3.01e+03 L, kabs 0.235 units, tlag 0.321 h, C0 16.6 μg/L.
+The record for sapropterin in infants, young children and adults with phenylketonuria lists kabs, the absorption rate constant, with value 0.235 and unit 'units' rather than a reciprocal-time unit such as 1/h. Without a proper unit the value could not be converted to a consistent time base, so the dimensional consistency check on this structural parameter failed. The other parameters carry coherent units (CL/F 2710 L/h, V/F 3010 L, tlag 0.321 h, C0 16.6 μg/L), so the failure is confined to kabs. Extracted — sapropterin (BH4): CL/F 2.71e+03 L/h, V/F 3.01e+03 L, kabs 0.235 units, tlag 0.321 h, C0 16.6 μg/L.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

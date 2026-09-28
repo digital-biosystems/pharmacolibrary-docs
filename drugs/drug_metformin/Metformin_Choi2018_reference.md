@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The metformin model was rejected because its apparent parameters (CL/F 76.7 L/h, V1/F 180 L, Q/F 21.3 L/h, V2/F 109 L) are combined with an explicit bioavailability F1 of 0.289, double-correcting for bioavailability.**
+**The metformin model was rejected because apparent parameters (CL/F 76.7 L/h, V1/F 180 L, Q/F 21.3 L/h, V2/F 109 L) are already bioavailability-adjusted while absolute bioavailability Fab = 0.289 is also included, risking double correction for F.**
 
-The record lists apparent clearance and volumes (CL/F 76.7 L/h, V1/F 180 L, Q/F 21.3 L/h, V2/F 109 L) that already include the F correction, yet also carries a bioavailability parameter F1 = 0.289, so applying both corrections violates apparent-parameter coherence. The absorption side is also inconsistent between readers: this record gives Ka = 0.41 h⁻¹ and tlag = 0.5 h, while a second reader read t1/2ka = 1.19 1/h as the absorption constant and added a second lag time of 0.250 h, so the absorption parameters are ambiguous. No other coherence checks could be computed from the extracted values. Extracted — metformin: CL/F 76.7 L/h, V1/F 180 L, Q/F 21.3 L/h, V2/F 109 L, t1/2ka 1.19, Fab 0.289, D1 4.49 h, kabs 0.41 h -1, … (+1).
+The record's clearance and volume parameters are defined as apparent values adjusted for bioavailability (F), yet the absolute bioavailability Fab (0.289) is carried as a separate parameter, so F would be applied twice — the apparent-parameter coherence violation that caused rejection. Secondary readers also disagreed on several absorption entries: the record lists tlag as 0.5 h while the extracted value is 0.34 h, and readers recorded an absorption lag of 0.250 h where the record has none, plus differing parameter identifications for Ka1 and D2. These disagreements are unresolved in the record. Extracted — metformin: CL/F 76.7 L/h, V1/F 180 L, Q/F 21.3 L/h, V2/F 109 L, t1/2ka 1.19, Fab 0.289, D1 4.49 h, kabs 0.41 h -1, … (+1).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of alag2: this record has none, the second reading 0.250; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

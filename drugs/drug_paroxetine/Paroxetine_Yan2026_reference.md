@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The paroxetine record was held back because the absorption rate constant ka and lag time were not reported in the source, so library defaults were substituted, and the invented first-order absorption was judged not acceptable.**
+**The paroxetine record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was invented, alongside defaulted Tlag and an assumed F=1 apparent parameterization.**
 
-The source reports only apparent parameters, CL/F of 28.9 L/h and V/F of 310.0 L, implying extravascular dosing with unknown bioavailability; the builder assumed F=1 and Fm=1 without molar correction. The absorption rate constant ka was defaulted because it was not reported in the source, and this invented absorption was ruled not acceptable. A second reader recorded no value for CL/F against this record's 28.9, so the comparison could not be computed. Extracted — paroxetine: CL/F 28.9 L/h, V/F 310 L.
+The source reports only CL/F = 28.9 L/h and V/F = 310.0 L for paroxetine; ka and the absorption lag time had no values in the source, so library placeholder defaults were used, and the invented ka absorption was judged not acceptable. The model builder also assumed F=1 and Fm=1 without molar correction, giving an apparent (/F) parameterization with first-order depot input. A second reader recorded no value for the clearance parameter, disagreeing with the extracted 28.9. Extracted — paroxetine: CL/F 28.9 L/h, V/F 310 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL/F: this record has 28.9, the second reading none. That field does not shape the model.
 
@@ -128,8 +128,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_paroxetine/Paroxetine_Yan2026_reference/Paroxetine_Yan2026_reference_modelica.zip" download>Paroxetine_Yan2026_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_paroxetine/Paroxetine_Yan2026_reference/Paroxetine_Yan2026_reference_modelica.zip" download>Paroxetine_Yan2026_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_paroxetine/Paroxetine_Yan2026_reference/Paroxetine_Yan2026_reference_fmi.zip" download>Paroxetine_Yan2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_paroxetine/Paroxetine_Yan2026_reference/Paroxetine_Yan2026_reference_matlab.zip" download>Paroxetine_Yan2026_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_paroxetine/Paroxetine_Yan2026_reference/Paroxetine_Yan2026_reference_matlab_simbio.zip" download>Paroxetine_Yan2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_paroxetine/Paroxetine_Yan2026_reference/Paroxetine_Yan2026_reference_sbml.zip" download>Paroxetine_Yan2026_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -141,7 +141,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 20 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 20 mg oral (N06AB05) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_paroxetine/Paroxetine_Yan2026_reference/Paroxetine_Yan2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_paroxetine/Paroxetine_Yan2026_reference/Paroxetine_Yan2026_reference_sim_controls.json"></dbs-fmusim>
 

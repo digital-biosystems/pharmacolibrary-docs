@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The cisplatin record was rejected because the apparent parameters fm (0.001 L⁻¹) and V/F (0.16) fail apparent-parameter coherence through a double bioavailability correction, and a structural parameter shows a dimension mismatch.**
+**The cisplatin record was rejected because the reported parameters mix apparent and mechanistic forms — e.g. fm/Vm = 0.001 l⁻¹ and CLm0/Vm = 0.002 h⁻¹ — producing a double bioavailability correction and a dimension mismatch on a structural parameter.**
 
-The record reports fm = 0.001 L⁻¹ and V/F = 0.16, both apparently corrected for bioavailability, which violates apparent-parameter coherence (a double correction), and one structural parameter has a dimension mismatch. A reported unit (L⁻¹) could not be converted to SI, so that parameter reached the model without an SI value. A second reader disagreed on the parameterization, reading it as mechanistic rather than apparent, and did not accept the 0.16 value for the V/F parameter. Extracted — cisplatin: fm 0.001 l -1, V/F 0.16, CL 0.002 h -1, t1/2z 50 h.
+The parameter labelled 'f m /V m , q DOSEm' is reported as V/F = 0.16, but its meaning is the fraction converted to metabolite (fm), so the value carries an apparent (F-adjusted) correction on top of a mechanistic ratio, violating apparent-parameter coherence. The same parameter also has a dimension mismatch: fm is a fraction while the reported unit l⁻¹ is a volume-normalized quantity. A second reader disagreed on the parameterization, reading it as mechanistic rather than apparent, and did not accept the 0.16 value for this parameter. Additionally, a reported unit (l⁻¹) could not be converted to SI, so that parameter reached the model builder without an SI value. Extracted — cisplatin: fm 0.001 l -1, V/F 0.16, CL 0.002 h -1, t1/2z 50 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

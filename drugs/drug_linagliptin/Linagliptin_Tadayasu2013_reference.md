@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**This linagliptin model was rejected because a structural parameter has a dimension mismatch and the one-compartment structure leaves the reported peripheral parameters (Q3/F 73.0 L/h, V3/F 683 L) without a connected compartment.**
+**Rejected: the linagliptin binding parameters Bmax (6.07 nmol/L) and KD (0.108 nmol/L) could not be converted to consistent units, and the three-compartment structure contains an unreachable compartment.**
 
-The record lists a one-compartment structure, yet the extracted parameters include two-compartment distribution terms — inter-compartmental clearance Q3/F of 73.0 L/h and peripheral volume V3/F of 683 L — which have no path from the dose in a single-compartment model, making that peripheral compartment unreachable. A dimension mismatch was also flagged on one of the structural parameters. Additionally, one of the reported units could not be expressed in SI units, so that parameter entered the model build without a valid SI value. The record was therefore held back rather than published. Extracted — linagliptin: Fab 1, kabs 1.63, CL/F 121 L/h, V2/F 633 L, Q3/F 73 L/h, V3/F 683 L, Bmax 6.07 nmol/L, KD 0.108 nmol/L.
+The record for linagliptin in Japanese patients with type 2 diabetes reports a three-compartment disposition model with Fab 1, kabs 1.63 h⁻¹, CL/F 121 L/h, V2/F 633 L, Q3/F 73.0 L/h and V3/F 683 L, plus target-binding parameters Bmax 6.07 nmol/L and KD 0.108 nmol/L. The nmol/L unit on the binding parameters could not be reconciled with the units of the other model parameters, so a dimension mismatch arose on a structural parameter. Separately, the model structure was found to contain an unreachable compartment with no path from the dose. Both findings led to rejection. Extracted — linagliptin: Fab 1, kabs 1.63, CL/F 121 L/h, V2/F 633 L, Q3/F 73 L/h, V3/F 683 L, Bmax 6.07 nmol/L, KD 0.108 nmol/L.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

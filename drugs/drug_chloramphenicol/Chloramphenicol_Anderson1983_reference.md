@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The chloramphenicol one-compartment cow model was quarantined because clearance and volume of distribution had no extracted values and were left at library defaults, and the 53.3 min tlag is disputed.**
+**The chloramphenicol model in non-lactating Holstein cows was quarantined because clearance and volume of distribution had no extracted values and library defaults were substituted.**
 
-For chloramphenicol in non-lactating Holstein cows, the record contains only a tlag of 53.3 min; clearance and volume of distribution were defaulted, so placeholder values would have stood in for the actual fitted parameters. The parameter-coverage check found 0 of 1 expected parameters covered, with tlag neither emitted nor defaulted. A second reader (gpt-oss:120b) read tlag as 4.4 and 5.9 where this record has null, so the lag-time value is contested between readers. Extracted — chloramphenicol: tlag 53.3 min.
+No value for chloramphenicol's clearance and volume of distribution. The model was built, but chloramphenicol's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The absorption lag time (tlag, 53.3 min) was also flagged as neither emitted nor defaulted in the parameter coverage check. A second reader additionally reported different values (4.4 and 5.9) for two parameters where this record has none, so the readings disagree. Extracted — chloramphenicol: tlag 53.3 min.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 0.33: this record has none, the second reading 4.4; it also differs on 1 more field. That field does not shape the model.
 
@@ -109,6 +109,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | fail | 1 scholar param(s) emitted or defaulted | 0 covered | not captured | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |

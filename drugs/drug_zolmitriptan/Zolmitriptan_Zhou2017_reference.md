@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;zolmitriptan&quot;,&quot;href&quot;:&quot;drugs/drug_zolmitriptan/&quot;},{&quot;label&quot;:&quot;Zhou_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zolmitriptan_Zhou2017_reference&quot;,&quot;label&quot;:&quot;Zhou_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zolmitriptan_Zhou2017_reference&quot;,&quot;label&quot;:&quot;Zhou_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # zolmitriptan — `Zolmitriptan_Zhou2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,28 +15,28 @@
 
 ### Reviewer guidance
 
-**No value for 183C91's clearance and volume of distribution and the rate at which 183C91 is formed.**
+**The zolmitriptan record was rejected because, despite declaring a parent–metabolite structure, the model is a one-compartment parent-only model whose output is the parent rather than the measured metabolite, and it invents an absorption rate not reported in the source.**
 
-The model was built, but 183C91's clearance and volume of distribution and the rate at which 183C91 is formed had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — zolmitriptan: V/F 136 L, CL 121 L/h.
+The record declares zolmitriptan metabolizing to 183C91 via Kfm, but the built model is a single enteral compartment whose output is the parent (zolmitriptan) compartment rather than the measured metabolite compartment, so the model structure does not match the declared parent–metabolite topology. The builder substituted library defaults for the absorption rate constant ka and lag time Tlag, which are not reported in the source, and assumed F=1 and Fm=1 without molar correction, giving an apparent parameterization (V/F 136 L, CL 121 L/h). A second reader disputed the apparent parameterization, arguing it should be mechanistic, and did not confirm the V and CL values. The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. Extracted — zolmitriptan: V/F 136 L, CL 121 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Zhou W; Li J; Birmingham B; Xu H; Lillieborg S; Zhou D; et al. et al. (2017). Journal of clinical pharmacology 57
   ·  DOI: [10.1002/jcph.935](https://doi.org/10.1002/jcph.935)
 
 ## Model component
-<dbs-pgx drug="zolmitriptan" model-id="Zolmitriptan_Zhou2017_reference" status="model_quarantined" stale="false" population="adults and adolescents with migraine" measured-compound="zolmitriptan" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="zolmitriptan" model-id="Zolmitriptan_Zhou2017_reference" status="rejected" stale="false" population="adults and adolescents with migraine" measured-compound="zolmitriptan" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -50,11 +50,18 @@ Zhou W; Li J; Birmingham B; Xu H; Lillieborg S; Zhou D; et al. et al. (2017). Jo
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=zolmitriptan
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Zhou_2017_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
@@ -105,10 +112,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=zolmitriptan) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | pass | parent_metabolite → PK_Parent_Metabolite* | PK_Parent_Metabolite | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -118,29 +126,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_zolmitriptan/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Zhou_2017` / `Zhou_2017::reference`)
-- model: `../../../knowledgebase/drugs/drug_zolmitriptan/models/modelica/_needs_review/Zolmitriptan_Zhou2017_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_zolmitriptan/models/modelica/_needs_review/Zolmitriptan_Zhou2017_reference.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_zolmitriptan/models/modelica/Zolmitriptan_Zhou2017_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_zolmitriptan/models/modelica/Zolmitriptan_Zhou2017_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_zolmitriptan/models/modelica/Zolmitriptan_Zhou2017_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference/Zolmitriptan_Zhou2017_reference_matlab.zip" download>Zolmitriptan_Zhou2017_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference/Zolmitriptan_Zhou2017_reference_matlab_simbio.zip" download>Zolmitriptan_Zhou2017_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference/Zolmitriptan_Zhou2017_reference_sbml.zip" download>Zolmitriptan_Zhou2017_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference/Zolmitriptan_Zhou2017_reference_cellml.zip" download>Zolmitriptan_Zhou2017_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 2.5 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 2.5 mg oral (N02CC03) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference/Zolmitriptan_Zhou2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference/Zolmitriptan_Zhou2017_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Zolmitriptan_Zhou2017_reference_params.json` · controls `Zolmitriptan_Zhou2017_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

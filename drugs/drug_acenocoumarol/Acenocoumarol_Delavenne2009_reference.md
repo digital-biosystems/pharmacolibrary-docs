@@ -111,6 +111,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=acenocoumarol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
@@ -149,7 +150,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 4.04 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 8 mg, single dose, first-order absorption (ka 4.04 /h, F 0.9). Dose in the paper: 8 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference/Acenocoumarol_Delavenne2009_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference/Acenocoumarol_Delavenne2009_reference_sim_controls.json"></dbs-fmusim>
 

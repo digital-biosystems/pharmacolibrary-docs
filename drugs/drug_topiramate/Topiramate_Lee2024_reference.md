@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The topiramate record was held back because the absorption rate constant ka was not reported and a default value was substituted, an invented absorption input the review could not accept.**
+**The topiramate record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was invented, alongside defaulted Tlag.**
 
-The record was built from the paper's abstract alone, so the reported summary statistics (Cmax 4.2 mg/L, Cmin 3.0 mg/L, AUC24h 87.7 h·mg/L, CL/F 2.1 L/h, V/F 82.4 L) stood in for a fitted model. The builder defaulted ka and Tlag because neither was reported in the source, and assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization. The invented absorption — a first-order depot input with a defaulted ka not reported in the source — was judged not acceptable, which is why the record needs review. Extracted — topiramate: Cmax 4.2 mg/L, Cmin 3 mg/L, AUCt 87.7 h∙mg/L, CL/F 2.1 L/h, V/F 82.4 L.
+The record comes from the paper's abstract only, so reported summary statistics (Cmax 4.2 mg/L, Cmin 3.0 mg/L, AUC24h 87.7 h·mg/L, CL/F 2.1 L/h, V/F 82.4 L) stood in for a fitted model. The builder substituted library defaults for the missing ka and Tlag, and the invented absorption constant was judged not acceptable. The model also assumes bioavailability F=1 and fraction metabolized Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order extravascular input. Extracted — topiramate: Cmax 4.2 mg/L, Cmin 3 mg/L, AUCt 87.7 h∙mg/L, CL/F 2.1 L/h, V/F 82.4 L.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -95,6 +95,7 @@ Lee S; Kim HC; Jang Y; Lee HS; Ahn SJ; Lee ST; et al. et al. (2024). Annals of c
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=topiramate) | central.C | not captured | output must be the measured/analyte compartment |
@@ -134,7 +135,7 @@ Lee S; Kim HC; Jang Y; Lee HS; Ahn SJ; Lee ST; et al. et al. (2024). Annals of c
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 300 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 300 mg oral (N03AX11) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_topiramate/Topiramate_Lee2024_reference/Topiramate_Lee2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_topiramate/Topiramate_Lee2024_reference/Topiramate_Lee2024_reference_sim_controls.json"></dbs-fmusim>
 

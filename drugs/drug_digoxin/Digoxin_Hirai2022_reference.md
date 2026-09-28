@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The digoxin model was held back because its volume of distribution, absorption rate constant and absorption lag time had no reported values, so library defaults stood in; the Vd unit (L/kg) also could not be converted to SI.**
+**The digoxin model was quarantined because its volume of distribution, absorption rate constant and absorption lag time were not reported in Hirai_2022, so library placeholder values (V/F 6.000 L/kg, ka 1.000 h−1) stood in.**
 
-The record reports only CL/F (6.215 L/h) for digoxin; Vd (6.000, unit L/kg, fixed), ka (1.000 h⁻¹, fixed) and Tlag had no value extracted, so a library placeholder would have stood in and the model was held back rather than published with an invented number. The absorption rate constant was not reported in the source, so the default value amounted to an invented absorption input, judged not acceptable. The Vd unit L/kg could not be converted to SI, so that parameter was carried without an SI value. A second reader additionally extracted a 36.5% value for the multiplicative residual error where the record has none; the deviation check could not compute a comparison (ratio None). Extracted — digoxin: CL/F 6.21 L/h, V/F 6 fixed, kabs 1 fixed.
+Only CL/F (6.215 L/h) was extracted from the paper; V/F, ka and Tlag had no source values and were left at library defaults, and the invented absorption constant was judged not acceptable. The record also assumes F=1 and Fm=1 with no molar correction (apparent parameterization), and the reported V/F unit (L/kg, fixed) could not be converted to SI. A second reader recorded a multiplicative error of 36.5% where this record has none. Extracted — digoxin: CL/F 6.21 L/h, V/F 6 fixed, kabs 1 fixed.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of multiplicative, %: this record has none, the second reading 36.5. That field does not shape the model.
 

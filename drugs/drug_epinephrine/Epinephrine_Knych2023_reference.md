@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**This epinephrine two-compartment model record was rejected because one compartment has no path from the dose, and a second reader returned no values for the clearance, volumes, absorption rate and several other parameters.**
+**The epinephrine two-compartment model was rejected because its structure contains an unreachable or orphan compartment or an unlinked metabolite, leaving part of the model disconnected from the dose.**
 
-The record describes a two-compartment epinephrine model with clearance 15.0 mL/min, central volume 410.4 L, peripheral volume 1579.7 L and absorption rate constant 1.92 1/h, but the structure check flagged an unreachable or orphan compartment — a compartment with no connection from the administered dose. The rejection rests on this structural finding. A second reader returned null for eight extracted values, including the clearance (15.0), absorption rate (1.92), central volume (410.4) and peripheral volume (1579.7), so those extractions stand without independent confirmation; the disagreement is inconclusive rather than a confirmed error. Extracted — epinephrine: CL 15 mL/min, V 410 L, V2 1.58e+03 L, kabs 1.92 1/h.
+The record describes a two-compartment epinephrine model with clearance 15.0 mL/min, central volume 410.4 L, peripheral volume 1579.7 L, and absorption rate constant 1.92 1/h, taken from a secondary review source. The structural check found a compartment or metabolite with no path from the administered dose, which is why the record was refused. A second reader returned no values for the extracted parameters, so the value disagreements could not be resolved. Extracted — epinephrine: CL 15 mL/min, V 410 L, V2 1.58e+03 L, kabs 1.92 1/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 15, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 

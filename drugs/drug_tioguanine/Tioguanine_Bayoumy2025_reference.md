@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record for tioguanine (6-thioguanine nucleotides in adults with inflammatory bowel disease) was rejected because the apparent volume of distribution V/F is reported as 270.5 L/h, a unit error making the value implausible.**
+**The tioguanine (6-thioguanine nucleotides) record was rejected because the reported V/F of 270.5 carries the unit L/h instead of L, an implausible magnitude indicating a unit/scale extraction error.**
 
-The one-compartment model lists V/F = 270.5 with the verbatim unit 'L/h', but a distribution volume must be in litres; the L/h unit belongs to clearance, so the extracted magnitude is physiologically implausible and points to a unit or scale extraction error. The other parameters — CL/F = 21.6 L/h and Ka = 0.33 /h — are within plausible ranges, isolating the volume term as the defect. Extracted — 6-thioguanine nucleotides: CL/F 21.6 L/h, V/F 270 L/h, kabs 0.33 /h.
+The record lists V/F for 6-thioguanine nucleotides as 270.5 with unit L/h, but V/F is a volume of distribution adjusted for bioavailability and should be in litres; the L/h unit belongs to clearance, whose value 21.6 L/h is given separately. This unit/scale mismatch makes the volume parameter fall outside a physiological window, so the model was refused. The remaining parameters, CL/F 21.6 L/h and absorption rate constant 0.33 /h, are consistent with their meanings. Extracted — 6-thioguanine nucleotides: CL/F 21.6 L/h, V/F 270 L/h, kabs 0.33 /h.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

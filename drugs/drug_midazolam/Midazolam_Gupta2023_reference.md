@@ -137,7 +137,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_fmi.zip" download>Midazolam_Gupta2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_matlab.zip" download>Midazolam_Gupta2023_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_matlab_simbio.zip" download>Midazolam_Gupta2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_sbml.zip" download>Midazolam_Gupta2023_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_sbml.zip" download>Midazolam_Gupta2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_cellml.zip" download>Midazolam_Gupta2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
@@ -146,7 +146,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 30 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 30–240 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_midazolam/Midazolam_Gupta2023_reference/Midazolam_Gupta2023_reference_sim_controls.json"></dbs-fmusim>
 

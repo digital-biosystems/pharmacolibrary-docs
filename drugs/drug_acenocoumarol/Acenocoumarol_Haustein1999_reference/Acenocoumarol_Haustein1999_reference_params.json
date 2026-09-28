@@ -1,25 +1,34 @@
 {
+ "dose_source": "paper",
  "model_id": "Acenocoumarol_Haustein1999_reference",
+ "molar_masses": {
+  "central.C": 0.35332549999999996
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  12.0
+ ],
  "parameters": {
   "Cl": 1.5500000000000002e-07,
   "F": 1.0,
+  "MM": 0.35332549999999996,
   "VdPerKg": 0.00011999999999999999,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1.2e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662069
+  "central.C": 660.0000000662033
  },
  "reference_peaks": {
-  "central.C": 0.011839103067513665
+  "central.C": 0.0014206923594304412
  },
- "stop_time": 86400.0,
+ "stop_time": 259200.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

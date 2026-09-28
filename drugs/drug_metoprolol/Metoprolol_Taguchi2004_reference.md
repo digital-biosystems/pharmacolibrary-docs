@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Metoprolol's clearance, distribution volume, absorption rate constant and absorption lag time had no extracted values, so placeholder defaults stood in and the model was quarantined.**
+**The metoprolol model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no extracted values and library placeholders were substituted.**
 
-The record lists only Q (3.86), CL/F (29.7), V/F (17.1) and slope (1.79) for metoprolol, while clearance, volume of distribution, absorption rate constant and absorption lag time were left without values because the source paper reported none, so library placeholder values would have been used and the model was held back. The absorption rate constant was additionally flagged as invented, since it was defaulted rather than reported. The builder also assumed F=1 and Fm=1 without molar correction, parameterizing the model as apparent with first-order extravascular input. A second reader disagreed on the Q parameters, reading q 1 as 0.835 where this record has null and leaving q 2 empty where this record has 3.86. Extracted — metoprolol: Q 3.86, CL/F 29.7, V/F 17.1, slope 1.79.
+The record for metoprolol in middle-aged and elderly Japanese patients lists only Q (3.86), CL/F (29.7), V/F (17.1) and a slope (1.79); the absorption rate constant was not reported in the source and was defaulted, which the adjudication judged an invented absorption input. The parameterization is apparent (F=1, Fm=1, no molar correction) with first-order depot input. A second reader also disagreed on the intercompartmental clearance labels, reading q 1 as 0.835 where this record has null and q 2 as null where this record has 3.86. Extracted — metoprolol: Q 3.86, CL/F 29.7, V/F 17.1, slope 1.79.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q 1: this record has none, the second reading 0.835; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -99,6 +99,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |

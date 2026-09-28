@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The medifoxamine record was rejected because its systemic clearance of 1299 l/min against a distribution volume of 1321 l is physiologically implausible, pointing to a unit or scale extraction error.**
+**The medifoxamine record was rejected because the reported systemic clearance of 1299 l/min and volume of distribution of 1321 l are physiologically implausible, indicating a unit or scale extraction error.**
 
-The abstract-only source for medifoxamine in healthy volunteers reports a systemic clearance of 1299 l/min and a volume of distribution of 1321 l, a clearance/volume combination outside the physiological window and consistent with a unit or scale extraction error. The elimination half-life of 1.2 h is on record, while the urinary excretion of parent drug has no value. A second reader returned no values for any of the four parameters, so no independent confirmation of the numbers exists. Extracted — medifoxamine: t1/2z 1.2 h, CL 1.3e+03 l/min, V 1.32e+03 l.
+The clearance value of 1299 l/min for medifoxamine exceeds any physiologically possible blood-flow-limited clearance, and the volume of distribution of 1321 l is likewise implausible, so the clearance/volume check failed on magnitude. The record was built from the paper's abstract only, so the reported summary statistics stood in for a fitted model, which may explain the unit or scale error. A second reader could not confirm any of the parameter values (half-life 1.2 h, clearance 1299, volume 1321) and the urinary excretion fraction was not extracted at all. Extracted — medifoxamine: t1/2z 1.2 h, CL 1.3e+03 l/min, V 1.32e+03 l.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of elimination half-line: this record has 1.2, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 

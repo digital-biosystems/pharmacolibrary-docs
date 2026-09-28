@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**This von Willebrand factor record was held back because the absorption rate constant ka and lag time were not reported in the source, so library defaults were substituted and the assumed first-order extravascular input was judged not acceptable.**
+**The von Willebrand factor record was held back because an absorption rate constant (ka) was invented rather than taken from the source, alongside defaulted Tlag and an apparent (F=1) parameterization implying extravascular dosing.**
 
-The source reports only apparent clearance and volume (CL/F 0.466 mL/h/kg, Vz/F 55.3 mL/kg); ka and Tlag had no values in the paper, so base defaults would have been used and the absorption input was invented rather than reported. The apparent (/F) parameterization further assumes F=1 and Fm=1 with no molar correction. A second reader also disagreed on several extracted values, reading CL/F as 0.437 instead of 0.466 and giving different or missing values for the other reported statistics (e.g. 100 vs 77.5, 88.2 vs 3.75). Extracted — von willebrand factor: CL/F 0.466 mL/h/kg, V/F 55.3 mL/kg.
+The source reports only CL/F (0.466 mL/h/kg) and V/F (55.3 mL/kg) for von Willebrand factor; ka and Tlag were left at library defaults because no values were extracted. The model builder assumed F=1 and Fm=1 without molar correction and used a first-order depot input, an extravascular dosing structure inconsistent with the apparent (/F) parameterization. This invented absorption was judged not acceptable, so the record needs review. A second reader also disagreed on several values, e.g. 0.437 versus null and 100 versus 77.5, though these disagreements are secondary to the absorption issue. Extracted — von willebrand factor: CL/F 0.466 mL/h/kg, V/F 55.3 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has none, the second reading 0.437; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -147,7 +147,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 35 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 35, 140, 700 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Zhu2020_reference/VonWillebrandFactor_Zhu2020_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_von_willebrand_factor/VonWillebrandFactor_Zhu2020_reference/VonWillebrandFactor_Zhu2020_reference_sim_controls.json"></dbs-fmusim>
 

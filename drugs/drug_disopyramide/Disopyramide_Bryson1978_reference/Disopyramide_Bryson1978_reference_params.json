@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 400 mg parenteral (C01BA03)",
  "model_id": "Disopyramide_Bryson1978_reference",
+ "molar_masses": {
+  "central.C": 0.33947449999999996
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,19 +11,20 @@
  "parameters": {
   "Cl": 1.0261666666666666e-06,
   "F": 1.0,
+  "MM": 0.33947449999999996,
   "VdPerKg": 0.0004568232017187436,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.0004,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662149
+  "central.C": 660.0000000662096
  },
  "reference_peaks": {
-  "central.C": 0.0030972736164427113
+  "central.C": 0.012389093595316236
  },
- "stop_time": 86400.0,
+ "stop_time": 111600.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The vericiguat record was held for review because a reference check failed without computing a comparison, and the bioavailability F was left unextracted (null) while a second reader read 1.08.**
+**The vericiguat record was held back because the reference check could not compute a comparison (ratio None), an inconclusive result, and a second reader disputed several extracted values, including the bioavailability fraction, which was left unextracted.**
 
-The record lists F for vericiguat with no value, and the second reader assigned 1.08 to bioavailability theta and parameters[f], disagreeing with the null. The failed check reported 'ratio None,' meaning it could not compute a comparison, so the fault is inconclusive rather than demonstrated. Additional disagreements concern the dose compartment, primary analyte, and model links, plus a sex covariate effect (0.850) attributed to different parameters by the two readers. Extracted — vericiguat: CL/F 1.3 L/h, V/F 38.9 L, kabs 1.5 1/h.
+The record contains vericiguat parameters CL/F 1.3 L/h, V/F 38.9 L, kabs 1.5 1/h, and covariate effects (creatinine power 0.164, sex on V/F 0.850, body weight on kabs 1.28, albumin power 2.37), but the absolute bioavailability parameter Fab has no value. The reference check failed with ratio None, meaning no comparison could be computed, so this is an inconclusive check rather than a demonstrated fault. A second reader disagreed on the dose compound, primary analyte, model links (recorded as empty), and parameter assignments, and read the bioavailability theta as 1.08 where the record has none. Extracted — vericiguat: CL/F 1.3 L/h, V/F 38.9 L, kabs 1.5 1/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has vericiguat, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

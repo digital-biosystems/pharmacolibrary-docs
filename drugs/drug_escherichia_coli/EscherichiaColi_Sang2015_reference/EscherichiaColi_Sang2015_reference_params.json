@@ -1,0 +1,32 @@
+{
+ "dose_source": "paper",
+ "model_id": "EscherichiaColi_Sang2015_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  700.0
+ ],
+ "parameters": {
+  "Cl": 9.424722222222222e-07,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00041301999999999995,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0007,
+  "ka": 0.000775,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4640.353685693433
+ },
+ "reference_peaks": {
+  "central.C": 0.021059098946899314
+ },
+ "stop_time": 111600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

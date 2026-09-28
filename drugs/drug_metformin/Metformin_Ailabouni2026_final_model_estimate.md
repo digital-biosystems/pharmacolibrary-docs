@@ -17,7 +17,7 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000787, model 0.000124); the covariate scenarios were not simulated.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000787, model 0.000311); the covariate scenarios were not simulated.**
 
 Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — metformin: CL/F 96.4 L/h/70 kg, V/F 546 L, kabs 0.941 1/h.
 
@@ -147,8 +147,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | fail | 0.0007866 | 0.00012441447670561963 | 0.1582 | μg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0012439999999999999 | 0.00012441447670561963 | 0.1 | μg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0007866 | 0.0003110432463065666 | 0.3954 | μg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0012439999999999999 | 0.0003110432463065666 | 0.25 | μg/L→SI vs simulated kg/m3 |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -171,7 +171,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Ailabouni2026_final_model_estimate/Metformin_Ailabouni2026_final_model_estimate_modelica.zip" download>Metformin_Ailabouni2026_final_model_estimate_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metformin/Metformin_Ailabouni2026_final_model_estimate/Metformin_Ailabouni2026_final_model_estimate_fmi.zip" download>Metformin_Ailabouni2026_final_model_estimate_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Ailabouni2026_final_model_estimate/Metformin_Ailabouni2026_final_model_estimate_matlab.zip" download>Metformin_Ailabouni2026_final_model_estimate_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Ailabouni2026_final_model_estimate/Metformin_Ailabouni2026_final_model_estimate_matlab.zip" download>Metformin_Ailabouni2026_final_model_estimate_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metformin/Metformin_Ailabouni2026_final_model_estimate/Metformin_Ailabouni2026_final_model_estimate_matlab_simbio.zip" download>Metformin_Ailabouni2026_final_model_estimate_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_metformin/Metformin_Ailabouni2026_final_model_estimate/Metformin_Ailabouni2026_final_model_estimate_sbml.zip" download>Metformin_Ailabouni2026_final_model_estimate_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_metformin/Metformin_Ailabouni2026_final_model_estimate/Metformin_Ailabouni2026_final_model_estimate_cellml.zip" download>Metformin_Ailabouni2026_final_model_estimate_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -182,7 +182,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.941 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 250 mg, single dose, first-order absorption (ka 0.941 /h, F 1). Doses in the paper: 250, 500, 850, 1000 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_metformin/Metformin_Ailabouni2026_final_model_estimate/Metformin_Ailabouni2026_final_model_estimate_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metformin/Metformin_Ailabouni2026_final_model_estimate/Metformin_Ailabouni2026_final_model_estimate_sim_controls.json"></dbs-fmusim>
 

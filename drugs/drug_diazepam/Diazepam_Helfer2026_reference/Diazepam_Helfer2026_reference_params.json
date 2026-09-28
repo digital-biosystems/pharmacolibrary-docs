@@ -1,4 +1,5 @@
 {
+ "dose_source": "paper",
  "model_id": "Diazepam_Helfer2026_reference",
  "molar_masses": {
   "central.C": 0.28474
@@ -7,6 +8,10 @@
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  140.0
+ ],
  "parameters": {
   "Cl": 8.36111111111111e-07,
   "F": 1.0,
@@ -14,15 +19,15 @@
   "VdPerKg": 0.0005342857142857144,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.00014,
   "k12": 0.00013443256090314915,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662062
+  "central.C": 660.0000000662073
  },
  "reference_peaks": {
-  "central.C": 0.002655347042494251
+  "central.C": 0.0037174857201294044
  },
  "stop_time": 158400.0,
  "template": "PK_2C",

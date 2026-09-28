@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The roxadustat one-compartment model fails to reproduce the paper's terminal half-life (13 h reported vs 11.8 h simulated) and Cmax (0.01 vs 0.00193 µg/mL), and its absorption rate constant ka was invented by default rather than taken from the source.**
+**The roxadustat model was held back because it fails to reproduce the paper's terminal half-life (paper 13 h, model 11.8 h) and Cmax (paper 0.01, model 0.00135), and because the absorption rate constant ka was invented rather than reported.**
 
-Simulated as the paper dosed roxadustat to chronic kidney disease patients, the model's terminal half-life (11.8 h) and peak concentration (0.00193 µg/mL) both deviate beyond tolerance from the reported values (13 h and 0.01 µg/mL). The deviations include an absorption rate constant ka and a lag time that were not reported in the source and were left at library defaults, plus apparent assumptions F=1, Fm=1 and no molar correction, with first-order depot input for the (/F) extravascular parameterization. The fraction unbound fu was recorded as 0.94 with unit 'h', which is not a valid unit for fraction unbound, and the AUC unit h·ng/mL per mg could not be converted to SI. A second reader also disputed the extracted V/F of 39.0 L, reading no value for it. Extracted — roxadustat: tmax 9, t1/2z 10, AUC 480 h·ng/mL per mg, CL/F 2.29 L/h, fu 0.94 h, V/F 39 L.
+Simulated as the paper dosed it, the model's terminal half-life (11.8 h) and peak concentration (0.00135 vs 0.01) deviate beyond tolerance from the reported values. The absorption rate constant ka was not reported in the source, so a default value was substituted, and the lag time before absorption (Tlag) likewise had no source value and was left at a placeholder default; the adjudication deemed the invented absorption not acceptable. The builder also assumed F=1 and Fm=1 with apparent (/F) parameterization and first-order depot input. The fu parameter carries a reported unit of 'h' despite being a fraction, and that unit could not be converted to SI, so the parameter arrived without an SI value. Extracted — roxadustat: tmax 9, t1/2z 10, AUC 480 h·ng/mL per mg, CL/F 2.29 L/h, fu 0.94 h, V/F 39 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of dose: this record has none, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -212,23 +212,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | fail | 0.01 | 0.0019281730149761215 | 0.1928 | µg/mL→SI vs simulated kg/m3 |
-| T1_t_half_beta | reference | pass | 11.8 | 11.824535982400858 | 1.0021 | h→SI vs simulated h |
-| T1_t_half_beta | reference | pass | 12.0 | 11.824535982400858 | 0.9854 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 13.0 | 11.824535982400858 | 0.9096 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.46 | 11.824535982400858 | 3.4175 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.74 | 11.824535982400858 | 15.9791 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.1 | 11.824535982400858 | 10.7496 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 8.1 | 11.824535982400858 | 1.4598 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 17.5 | 11.824535982400858 | 0.6757 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 8.5 | 11.824535982400858 | 1.3911 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 14.6 | 11.824535982400858 | 0.8099 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 15.9 | 11.824535982400858 | 0.7437 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 18.2 | 11.824535982400858 | 0.6497 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 14.7 | 11.824535982400858 | 0.8044 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 12.0 | 11.824535982400858 | 0.9854 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 8.5 | 11.824535982400858 | 1.3911 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 12.0 | 11.824535982400858 | 0.9854 | h→SI vs simulated h |
+| T1_cmax | reference | fail | 0.01 | 0.0013497197207968695 | 0.135 | µg/mL→SI vs simulated kg/m3 |
+| T1_t_half_beta | reference | pass | 11.8 | 11.801805942109528 | 1.0002 | h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 12.0 | 11.801805942109528 | 0.9835 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 13.0 | 11.801805942109528 | 0.9078 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.46 | 11.801805942109528 | 3.4109 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.74 | 11.801805942109528 | 15.9484 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.1 | 11.801805942109528 | 10.7289 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 8.1 | 11.801805942109528 | 1.457 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 17.5 | 11.801805942109528 | 0.6744 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 8.5 | 11.801805942109528 | 1.3884 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 14.6 | 11.801805942109528 | 0.8083 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 15.9 | 11.801805942109528 | 0.7423 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 18.2 | 11.801805942109528 | 0.6485 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 14.7 | 11.801805942109528 | 0.8028 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 12.0 | 11.801805942109528 | 0.9835 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 8.5 | 11.801805942109528 | 1.3884 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 12.0 | 11.801805942109528 | 0.9835 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -262,7 +262,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 70 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 70–280 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value/Roxadustat_Czock2022_parameter_value_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_roxadustat/Roxadustat_Czock2022_parameter_value/Roxadustat_Czock2022_parameter_value_sim_controls.json"></dbs-fmusim>
 

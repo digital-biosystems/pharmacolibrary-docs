@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The carmustine one-compartment record was refused because a structural parameter carries a dimension inconsistent with the reported values (λ1 2.898 hr-1, kel 0.1228 hr-1, CL 7.211 liters/hr.kg), and it was built from the abstract alone.**
+**The carmustine (BCNU) rabbit record was rejected because a structural parameter failed a dimensional check, and the record was built from the abstract alone rather than a fitted model.**
 
-The record for BCNU in rabbits lists only three parameters — the alpha rate constant λ1 at 2.898 hr-1, the beta rate constant kel at 0.1228 hr-1, and a total-body clearance of 7.211 liters/hr.kg — and the dimension check failed on a structural parameter of this one-compartment structure. Because only the paper's abstract was read, these reported summary statistics stood in for a fitted model, so the parameter set is incomplete for the stated structure. Extracted — carmustine: λ1 2.9 hr-1, kel 0.123 hr-1, CL 7.21 liters/hr.kg.
+The record reports BCNU disposition in rabbits with a fast-phase macro-rate constant λ1 of 2.898 hr-1, a terminal elimination rate constant of 0.1228 hr-1, and total-body clearance of 7.211 liters/hr.kg. The refusal cites a dimension mismatch on a structural parameter, meaning one of these parameters' dimensions is inconsistent with its role in the one-compartment structure. Because only the paper's abstract was read, the reported summary statistics stood in for a fitted model, so the parameter set may not reflect the actual fit. Extracted — carmustine: λ1 2.9 hr-1, kel 0.123 hr-1, CL 7.21 liters/hr.kg.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

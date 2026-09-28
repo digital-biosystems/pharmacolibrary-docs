@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The buprenorphine absorption-rate unit 'hr À1' could not be converted to SI units, so kabs (0.429 hr⁻¹) entered the model without an SI value, giving a dimension mismatch on a structural parameter and rejection.**
+**The buprenorphine record was rejected because the parameter labelled 'SLP TF (day -1)' was extracted as an elimination rate constant kel with the negative value -0.0203 day⁻¹, a dimension mismatch on a structural parameter.**
 
-The record lists kabs as 0.429 with unit 'hr À1' and t1/2ka as 0.182 hr⁻¹; this per-hour unit could not be converted to SI, so the parameter entered the model without an SI value and failed the dimensional-consistency check on a structural parameter. A second reader also disagreed on two values: they read the maturation parameter (KM, 0.00398 days in this record) as 0.00377, and left the neonatal absorption rate (0.182 hr⁻¹ in this record) unextracted. These deviations leave the parameter set internally inconsistent, so the model was refused rather than published. Extracted — buprenorphine: kabs 0.429 hr À1, t1/2ka 0.182 hr À1, CL 112 L/hr, V2 113 L, Q 283 L/hr, V3 1.49e+03 L, Km 0.00398 days, Emax 0.135, … (+1).
+A negative elimination rate constant is pharmacokinetically impossible, and the verbatim label 'SLP TF' with unit day⁻¹ indicates a slope-type parameter rather than a terminal elimination rate, so the meaning assigned to kel does not match the reported quantity. The record also carries a Km of 0.00398 days, an enzyme-affinity parameter reported in units of time, and one reported unit could not be converted to SI, so a parameter was carried without a usable SI value. A second reader additionally read the base parameter as 0.00377 where this record has none, and left the NAS absorption parameter (0.182 hr⁻¹ here) unread. Extracted — buprenorphine: kabs 0.429 hr À1, t1/2ka 0.182 hr À1, CL 112 L/hr, V2 113 L, Q 283 L/hr, V3 1.49e+03 L, Km 0.00398 days, Emax 0.135, … (+1).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of base: this record has none, the second reading 0.00377; it also differs on 1 more field. That field does not shape the model.
 

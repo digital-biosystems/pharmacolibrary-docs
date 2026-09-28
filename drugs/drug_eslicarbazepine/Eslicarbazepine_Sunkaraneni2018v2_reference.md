@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The eslicarbazepine pediatric model was held back because absorption rate constant ka and lag time were not reported and left at defaults, and the relative bioavailability value 6.76 (dimensionless) is implausible.**
+**The eslicarbazepine pediatric model was held back because the builder invented an absorption rate constant (ka) not reported in the source, a deviation judged not acceptable.**
 
-The record defines covariate effects (theta_cl_category 25.6 L/h; theta_q49_category 0.895) but only the reference individual was simulated, so these effects were never exercised. The absorption input was assumed first-order with ka and Tlag defaulted because the source did not report them, and apparent parameterization assumed F=1 and Fm=1 without molar correction. The relative bioavailability during carbamazepine use was recorded as 6.76, a value that appears inconsistent with a dimensionless fraction. Extracted — eslicarbazepine: CL 2.92 L/h, V/F 4.78 L, Frel 6.76.
+The paper does not report an absorption rate constant (ka) or lag time, so placeholder values were substituted for them, and this invented absorption was judged not acceptable. The model also assumes F=1 and Fm=1 with no molar correction, so CL (2.92 L/h) and V/F (4.78 L) are apparent parameterizations for extravascular dosing. Additionally, the covariate effects (theta_cl_category 25.6 L/h, theta_q49_category 0.895) were not exercised: only the reference individual was simulated, not the covariate scenarios the record defines. One reported unit could not be converted to SI, so that parameter entered simulation without an SI value. Extracted — eslicarbazepine: CL 2.92 L/h, V/F 4.78 L, Frel 6.76.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -133,8 +133,8 @@ not matched (stem Sunkaraneni_2018_2)
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference/Eslicarbazepine_Sunkaraneni2018v2_reference_modelica.zip" download>Eslicarbazepine_Sunkaraneni2018v2_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference/Eslicarbazepine_Sunkaraneni2018v2_reference_modelica.zip" download>Eslicarbazepine_Sunkaraneni2018v2_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference/Eslicarbazepine_Sunkaraneni2018v2_reference_fmi.zip" download>Eslicarbazepine_Sunkaraneni2018v2_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference/Eslicarbazepine_Sunkaraneni2018v2_reference_matlab.zip" download>Eslicarbazepine_Sunkaraneni2018v2_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference/Eslicarbazepine_Sunkaraneni2018v2_reference_matlab_simbio.zip" download>Eslicarbazepine_Sunkaraneni2018v2_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference/Eslicarbazepine_Sunkaraneni2018v2_reference_sbml.zip" download>Eslicarbazepine_Sunkaraneni2018v2_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -146,7 +146,7 @@ not matched (stem Sunkaraneni_2018_2)
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 800 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 800 mg oral (N03AF04) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference/Eslicarbazepine_Sunkaraneni2018v2_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference/Eslicarbazepine_Sunkaraneni2018v2_reference_sim_controls.json"></dbs-fmusim>
 

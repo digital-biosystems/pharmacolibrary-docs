@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The ornithine oxoglurate record was rejected because it was built from the abstract alone and its four metabolic pathways (to ornithine, proline, glutamine and arginine) carry no link parameter values, leaving metabolites unreachable from the dose.**
+**The ornithine oxoglurate record was rejected because its metabolism links leave metabolites (proline, glutamine, arginine) unreachable from the dose, and it was built from the abstract only, so summary statistics stand in for a fitted model.**
 
-The record was built from the paper's abstract only, so reported summary statistics (absorption constant 0.028 min-1, elimination half-life 89 min, creatinine clearance 26.0 mL/min, volume of distribution 33.2 L for ornithine) stood in for a fitted model. All four metabolism links from ornithine oxoglurate to ornithine, proline, glutamine and arginine have no link parameter, so the metabolites have no quantified path from the dose. A second reader also disputed the parent molecule, reading it as ornithine alpha-ketoglutarate rather than ornithine oxoglurate, and read no values for the four parameters. Extracted — ornithine oxoglurate: kabs 0.028 min-1, t1/2z 89 min, CL 26 mL/min, V 33.2 L.
+The structure check found unreachable compartments or unlinked metabolites in the linear model linking ornithine oxoglurate to ornithine, proline, glutamine and arginine, with no link parameters extracted. The record is abstract-only, so the reported values (absorption constant 0.028 min-1, terminal half-life 89 min, clearance 26.0 mL/min, volume of distribution 33.2 L for ornithine) are summary statistics rather than fitted model parameters. A second reader also disagreed on the dose compound name (ornithine_alpha_ketoglutarate) and read no values for the four parameters. Extracted — ornithine oxoglurate: kabs 0.028 min-1, t1/2z 89 min, CL 26 mL/min, V 33.2 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ornithine_oxoglurate, the second reading ornithine_alpha_ketoglutarate; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

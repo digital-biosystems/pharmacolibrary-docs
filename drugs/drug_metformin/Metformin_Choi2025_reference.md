@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**This two-compartment metformin model was rejected because one compartment has no path from the dose, and the second reader extracted different values for several parameters (e.g. 21 vs none, 5.52 vs none, 24.8 vs none, 75.2 vs none).**
+**The metformin two-compartment model was rejected because its peripheral compartment is unreachable from the dose, and the two readers disagree on several extracted values (e.g., 5.52 vs none, 21 vs none, 24.8 vs none, 75.2 vs none).**
 
-The record describes a two-compartment metformin model with CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L and absorption rate constant ka 0.006 h-1, but the structure check found an unreachable or orphan compartment, i.e. a compartment with no connection from the administered dose. The second reader disagreed on several extracted values: this record left them empty where the second reader read 21, 24.8 and 75.2, and recorded 5.52 where the second reader read none. These unresolved disagreements on the parameter values, together with the structural defect, led to rejection. Extracted — metformin: CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
+The record describes metformin with CL/F 0.032 L/h, central volume 2.8 L, peripheral volume 3.96 L, and absorption rate constant 0.006 h-1, but the structure check found an unreachable compartment, meaning the peripheral compartment has no path from the administered dose. The second reader also disagreed on four extracted values: this record has none where the second reader read 21, 24.8, and 75.2, and this record has 5.52 where the second reader read none. Extracted — metformin: CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q18: this record has none, the second reading 21; it also differs on 3 more fields. That field does not shape the model.
 

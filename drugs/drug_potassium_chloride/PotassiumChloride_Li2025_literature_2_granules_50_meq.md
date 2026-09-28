@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record lacks any distribution volume and clearance/elimination parameter, so it is not a compartmental population PK model, and the structural parameter Ka (0.1 h-1) carries a unit (h-1) that could not be converted to SI, leaving it without an SI value.**
+**Rejected: the potassium chloride record lacks distribution volume and clearance, so it is not a compartmental population PK model, and a structural parameter failed a dimension check.**
 
-The paper on potassium in patients with cardiovascular emergencies reports only C0 (4.1 mmol/L), Tmax (1.0 h), Cmax (4.9 mmol/L) and an absorption rate constant Ka of 0.1 h-1 for KCl extended-release tablets; no distribution volume and no clearance or elimination rate are given, so the one-compartment structure is not a compartmental population PK model but an exposure/outcome paper. A dimensional mismatch was also flagged on the structural parameter, because the h-1 unit of Ka could not be converted to SI units, so the parameter entered the record without an SI value. A second reader further disagreed on the dosed compound, reading it as potassium chloride extended-release tablets and potassium citrate granules rather than potassium chloride alone. Extracted — potassium chloride: C0 4.1 mmol/L, tmax 1 h, Cmax 4.9 mmol/L, kabs 0.1 h-1.
+The paper reports only C0 (4.1 mmol/L), Tmax (1.0 h), Cmax (4.9 mmol/L) and an absorption rate constant kabs (0.1 h-1) for potassium; no distribution volume and no clearance or elimination rate are given, making it an exposure/outcome paper rather than a compartmental population PK model. A dimension mismatch was also flagged on a structural parameter. Additionally, one reported parameter unit could not be converted to SI, so that parameter was carried without an SI value. The second reader disagreed on the dose compound, reading it as potassium chloride extended-release tablets and potassium citrate granules rather than potassium chloride. Extracted — potassium chloride: C0 4.1 mmol/L, tmax 1 h, Cmax 4.9 mmol/L, kabs 0.1 h-1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has potassium chloride, the second reading potassium chloride extended-release tablets and potassium citrate granules. That field shapes the model, so the record is marked disputed.
 

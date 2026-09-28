@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The ibritumomab tiuxetan record was rejected because the reported clearance of 1.03 ml.min could not be converted to SI units, leaving a structural parameter without a usable value.**
+**The record was rejected because the clearance of ibritumomab tiuxetan (1.03 ml.min) is reported without a per-unit-time denominator, a dimension mismatch on a structural parameter that could not be converted to SI.**
 
-The paper reports clearance for ibritumomab tiuxetan as 1.03 with the unit ml.min, a unit that could not be converted to SI, so the parameter entered the model build without a numeric value. This dimension mismatch on a structural parameter is the sole reason the record was refused. The other reported quantities (Cmax 0.308 µg.mL−1, terminal half-life 83.6 h, MRT 114.1 h, AUC 1708.1 and 261.98 µg.min.mL−1) were extracted, but the unusable clearance made the record unpublishable. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
+The paper reports clearance for ibritumomab tiuxetan as 1.03 ml.min, missing the reciprocal time unit expected for clearance (e.g. ml/min), so no SI value could be computed and the dimension check on this structural parameter failed. The other reported parameters (Cmax 0.308 µg.mL−1, terminal half-life 83.6 h, MRT 114.1 h, AUC 1708.1 µg.min.mL−1, AUCt 261.98 µg.min.mL−1) carry consistent units, but the clearance unit alone made the record unpublishable. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

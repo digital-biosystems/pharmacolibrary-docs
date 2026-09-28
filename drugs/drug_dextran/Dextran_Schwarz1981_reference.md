@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The dextran record was rejected because a structural parameter failed a dimensional consistency check, and it was built from the abstract alone rather than a fitted model.**
+**The record for dextran 1 was rejected because the terminal half-life parameter (24 h) is dimensionally mismatched — its label refers to dextran 60 (Macrodex), not dextran 1 — and the values come only from the paper's abstract.**
 
-The record was built from the abstract only, so reported summary statistics stood in for a fitted model. A dimension mismatch on a structural parameter was the stated reason for rejection. A second reader returned no value for any of the four extracted parameters — asymptotic urinary elimination 75%, renal clearance 137 ml/min, total clearance 187 ml/min, and terminal half-life 24 h — leaving the extracted values unconfirmed. Extracted — dextran 1: Ae 75 %, CLR 137 ml/min, CL 187 ml/min, t1/2z 24 h.
+The terminal half-life of 24 h is labeled as belonging to dextran 60 (Macrodex) while the record's measured compound is dextran 1, a dimension mismatch on a structural parameter that failed the consistency check. The record was built from the abstract alone, so the reported summary statistics (Ae 75%, CLR 137 ml/min, CL 187 ml/min, t1/2z 24 h) stood in for a fitted model. A second reader returned no values for all four parameters, disagreeing with each of the extracted values. Extracted — dextran 1: Ae 75 %, CLR 137 ml/min, CL 187 ml/min, t1/2z 24 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of mean cumulative asymptotic elimination of dextran in the urine: this record has 75, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 

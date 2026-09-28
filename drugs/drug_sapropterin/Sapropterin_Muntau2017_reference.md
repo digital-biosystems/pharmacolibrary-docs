@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The sapropterin (BH4) record was rejected because a reported parameter unit could not be converted to SI, leaving a structural parameter with a dimension mismatch (C5).**
+**The sapropterin (BH4) model was rejected because the relative bioavailability parameter Frel, reported as 10.9 '% of reference', could not be expressed in SI units, giving a dimension mismatch on a structural parameter.**
 
-The model for sapropterin in children under 4 years with BH4-responsive phenylketonuria is a one-compartment structure with CL/F 2780 L/h, V/F 3870 L, kabs 0.234 1/h, tlag 0.342 h, C0 12.6 μg/L and Frel 10.9 % of reference. One of the reported units could not be expressed in SI units, so that parameter was carried over without a consistent dimension, and the dimension check (C5) flagged a mismatch on a structural parameter. The record was therefore refused; the limitation lies in the unit handling, not in the extracted values themselves. Extracted — sapropterin (BH4): CL/F 2.78e+03 L/h, V/F 3.87e+03 L, kabs 0.234 1/h, tlag 0.342 h, C0 12.6 μg/L, Frel 10.9.
+The record for children &lt;4 years with BH4-responsive phenylketonuria reports CL/F 2780 L/h, V/F 3870 L, kabs 0.234 1/h, tlag 0.342 h and C0 12.6 μg/L, but Frel is given only as 10.9 '% of reference'. That unit could not be converted to a standard SI expression, so Frel entered the model without an SI value and the dimension check on this structural parameter failed. The model was therefore held back and not published. Extracted — sapropterin (BH4): CL/F 2.78e+03 L/h, V/F 3.87e+03 L, kabs 0.234 1/h, tlag 0.342 h, C0 12.6 μg/L, Frel 10.9.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

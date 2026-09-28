@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Metamizole sodium's elimination clearance and intercompartmental clearance had no extracted values, so library placeholders stood in, and the V1/F parameter (71.2) carried a unit that could not be converted to SI, so the model was quarantined rather than published.**
+**The metamizole sodium model was quarantined because elimination clearance and intercompartmental clearance had no source values and library placeholders were used, and the reported parameter V1/F was not covered.**
 
-The record lists no value for metamizole sodium's elimination clearance (CL) or intercompartmental clearance (Q), so library default placeholders were substituted for these missing source values and the model was held back. The parameter-coverage check found 6 of the 7 expected parameters covered, with V1/F (71.2 L) neither emitted nor defaulted. In addition, one reported unit could not be converted to SI, so that parameter entered the model build without an SI value. The builder also assumed F=1 and Fm=1 with no molar correction, parameterizing the model in apparent terms. Extracted — metamizole sodium: kabs 2.53 n = 8, V1/F 71.2 L, k12 0.03 n = 8, k14 0.006 n = 8, kel 0.178 n = 8, V2/F 35.6 L, kcomp 0.552 n = 8, k21 0.008 n = 8, … (+3).
+No value was extracted for metamizole sodium's elimination clearance and intercompartmental clearance, so placeholder defaults stood in and the model was held back rather than published with invented numbers. The parameter coverage check expected 7 parameters but covered only 6, with V1/F (reported as 71.2 L) neither emitted nor defaulted. Additionally, several rate constants (e.g. kabs = 2.528, k12 = 0.030) carry the unit 'n = 8', which could not be converted to SI, so those parameters reached the model builder without SI values. The builder also assumed F=1 and Fm=1 without molar correction (apparent parameterization). Extracted — metamizole sodium: kabs 2.53 n = 8, V1/F 71.2 L, k12 0.03 n = 8, k14 0.006 n = 8, kel 0.178 n = 8, V2/F 35.6 L, kcomp 0.552 n = 8, k21 0.008 n = 8, … (+3).
 
 <sub>reviewed by glm-5.3-flash</sub>
 

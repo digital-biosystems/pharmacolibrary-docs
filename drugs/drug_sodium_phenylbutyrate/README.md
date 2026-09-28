@@ -24,8 +24,9 @@ Phenylbutyric acid, as sodium phenylbutyrate, is used in combination with [tauro
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| phenylacetate | metabolite | — (mass units only) | — | — | — | — |
-| phenylacetylglutamine | metabolite | — (mass units only) | — | — | — | — |
+| phenylacetate | metabolite | 135.142 | C8H7O2- | PubChem | [4409936](https://pubchem.ncbi.nlm.nih.gov/compound/4409936) | Piscitelli_1995 |
+| phenylacetylglutamine | metabolite | 264.281 | C13H16N2O4 | PubChem | [92258](https://pubchem.ncbi.nlm.nih.gov/compound/92258) | Piscitelli_1995 |
+| sodium_phenylbutyrate (phenylbutyrate) | metabolite | 164.201 | C10H12O2 | DrugBank | [4775](https://pubchem.ncbi.nlm.nih.gov/compound/4775) | Eriksen_2023, Piscitelli_1995, Wang_2022 |
 
 ## Extraction summary
 

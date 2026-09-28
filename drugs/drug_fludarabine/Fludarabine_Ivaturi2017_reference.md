@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The fludarabine record was rejected because the metabolite f-ara-ATP is defined with zero compartments (n_cmt = 0), leaving it unlinked despite the metabolism link from fludarabine via Kfm.**
+**The fludarabine parent–metabolite model was rejected because the metabolite f-ara-ATP is unlinked: despite the metabolism link via kfm (0.005 1/h), the metabolite has no reachable compartment (n_cmt 0), so no path from the dose exists.**
 
-The model is a parent–metabolite structure for fludarabine in pediatric hematopoietic cell transplant recipients, with a metabolism link from fludarabine to f-ara-ATP governed by the rate constant Kfm (0.005 1/h) and a metabolite outflow rate constant kel (0.09 1/h). However, the f-ara-ATP metabolite is specified with zero compartments (n_cmt = 0) while being formed at the central site, so the metabolite has no compartment to reside in and no path from the dose. This unlinked metabolite is the sole reason recorded for rejection; no other failed checks or substitutions are reported. Extracted — fludarabine: CL 3.1 L/h, V1 13.4 L/kg, V2 13.4 L; f-ara-ATP: kfm 0.005 1/h, kel 0.09 1/h.
+The record describes fludarabine in pediatric hematopoietic cell transplant recipients with a metabolite f-ara-ATP formed from the parent, with a formation rate constant kfm of 0.005 1/h and an elimination rate constant kel of 0.09 1/h. However, the metabolite has no compartments (n_cmt 0), so the structure check found an unlinked metabolite with no path from the administered dose. Parent parameters (CL 3.1 L/h, V1 13.4 L/kg, V2 13.4 L) were extracted, but the metabolite side of the topology is incomplete, which is why the model was refused. Extracted — fludarabine: CL 3.1 L/h, V1 13.4 L/kg, V2 13.4 L; f-ara-ATP: kfm 0.005 1/h, kel 0.09 1/h.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

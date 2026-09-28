@@ -111,9 +111,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | not captured | 6.884169563690553e-05 | not captured | non-numeric value |
-| T1_cmax | reference | skipped | not captured | 6.884169563690553e-05 | not captured | non-numeric value |
-| T1_t_half_terminal | reference | skipped | not captured | 12.569485708314847 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | not captured | 1.3768285319493181e-05 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | not captured | 1.3768285319493181e-05 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | skipped | not captured | 12.560066348166535 | not captured | non-numeric value |
 | T1_tmax | reference | skipped | not captured | 7.695390781563126 | not captured | non-numeric value |
 
 <details class="legend">
@@ -140,7 +140,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_matlab.zip" download>Duloxetine_Skinner2004_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_matlab_simbio.zip" download>Duloxetine_Skinner2004_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_sbml.zip" download>Duloxetine_Skinner2004_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_cellml.zip" download>Duloxetine_Skinner2004_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_cellml.zip" download>Duloxetine_Skinner2004_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
@@ -148,7 +148,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.257 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 20 mg, single dose, first-order absorption (ka 0.257 /h, F 1). Doses in the paper: 20, 30, 40, 80 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_sim_controls.json"></dbs-fmusim>
 

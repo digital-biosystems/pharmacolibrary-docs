@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The flucytosine model's terminal half-life is 0.453 h instead of the paper's 14.5 h (ratio 0.0312), and the intercompartmental rate constant kcomp (31.97 h⁻¹) is neither emitted nor defaulted, so only 3 of 4 parameters are covered.**
+**The flucytosine model's terminal half-life is 0.452 h versus the paper's 14.5 h (ratio 0.0312), and the distribution micro-rate constant kcomp (31.97 h⁻¹) was not carried into the model, so it was held for review.**
 
-Simulated as the paper dosed it, the model's terminal half-life is 0.4525826489339038 h against the reported 14.5 h, a ratio of 0.0312 — the very fast absorption rate kabs (102.06 h⁻¹) and intercompartmental rate kcomp (31.97 h⁻¹) drive an elimination phase far quicker than the paper's. The parameter coverage check found 3 of the 4 expected parameters covered, with kcomp neither emitted nor given a substituted value. The model builder also had no lag-time value extracted, so a library placeholder would have been used, and assumed F=1, Fm=1 with no molar correction, an apparent-parameterization substitution. Extracted — flucytosine: kabs 102 h -1, CL/F 56.9 L/h, V/F 57.1 L, kcomp 32 h -1.
+Simulated as the paper dosed it, the model's terminal half-life (0.452 h) differs from the reported 14.5 h by far more than the tolerance, indicating the parameterization does not reproduce the paper's disposition. Of the four extracted parameters, only three were emitted; kcomp, the micro-rate constant governing distribution between kinetic compartments, was neither emitted nor defaulted. The builder also left the absorption lag time (Tlag) at library placeholder defaults and assumed F=1 and Fm=1 with no molar correction, so all parameters are apparent (CL/F, V/F). Extracted — flucytosine: kabs 102 h -1, CL/F 56.9 L/h, V/F 57.1 L, kcomp 32 h -1.
 
 Independently confirmed by `gpt-oss:120b`.
 
@@ -99,15 +99,16 @@ _Every reader agrees on every compared field of this record._
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=flucytosine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['kcomp'] |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | not captured | 0.001585022164713422 | not captured | non-numeric value |
-| T1_cmax | reference | skipped | not captured | 0.001585022164713422 | not captured | non-numeric value |
-| T1_t_half_beta | reference | fail | 14.5 | 0.4525826489339038 | 0.0312 | h→SI vs simulated h |
+| T1_cmax | reference | skipped | not captured | 0.027737004950942164 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | not captured | 0.027737004950942164 | not captured | non-numeric value |
+| T1_t_half_beta | reference | fail | 14.5 | 0.4524915496112991 | 0.0312 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -128,7 +129,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_flucytosine/Flucytosine_Stott2023_reference/Flucytosine_Stott2023_reference_modelica.zip" download>Flucytosine_Stott2023_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_flucytosine/Flucytosine_Stott2023_reference/Flucytosine_Stott2023_reference_modelica.zip" download>Flucytosine_Stott2023_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_flucytosine/Flucytosine_Stott2023_reference/Flucytosine_Stott2023_reference_fmi.zip" download>Flucytosine_Stott2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_flucytosine/Flucytosine_Stott2023_reference/Flucytosine_Stott2023_reference_matlab.zip" download>Flucytosine_Stott2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_flucytosine/Flucytosine_Stott2023_reference/Flucytosine_Stott2023_reference_matlab_simbio.zip" download>Flucytosine_Stott2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -141,7 +142,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 102 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 1750 mg, single dose, first-order absorption (ka 102 /h, F 1). Dose in the paper: 1750 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_flucytosine/Flucytosine_Stott2023_reference/Flucytosine_Stott2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_flucytosine/Flucytosine_Stott2023_reference/Flucytosine_Stott2023_reference_sim_controls.json"></dbs-fmusim>
 

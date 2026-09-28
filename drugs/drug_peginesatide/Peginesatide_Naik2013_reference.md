@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The peginesatide record lacks a clearance value — only volumes (V2 35.6 mL/kg, V3 7.42 mL/kg, Q 5.23 mL/kg/hr) were extracted — so the disposition half would default to a library placeholder and the model was held back.**
+**The peginesatide record lacks any clearance parameter — only volumes (V2 35.6 mL/kg, V3 7.42 mL/kg, V 34.9 mL/kg) and Q 5.23 mL/kg/hr were extracted — so the disposition is incomplete and the model was held back.**
 
-The record lists Vmax 44.7 ng/mL/hr, Km 1860 ng/mL, V2 35.6 mL/kg, kabs 0.00869 1/hr, Fab 0.499, Q 5.23 mL/kg/hr and V3 7.42 mL/kg, but no clearance parameter, meaning the missing half would have been silently filled from a library default. A concentration-referencing check could not compute a comparison (ratio None), so it is inconclusive rather than a demonstrated fault. A second reader also disagreed on covariate forms for V2 (power listed versus none) and on whether theta_v2_bmi_power (-0.485) belongs to V2 or the mean volume of distribution entry. Extracted — peginesatide: Vmax 44.7, Km 1.86e+03, V2 35.6, kabs 0.00869, Fab 0.499 F1, Q 5.23, V3 7.42, V 34.9 mL/kg.
+Only volume terms were extracted for peginesatide; no clearance was recorded, so a model would have needed a library default for the missing clearance and was therefore not built. A reference check also failed without computing a comparison (ratio None), so it is inconclusive rather than a demonstrated fault. A second reader further disagreed on covariate forms, reading the BMI effect on Q (-0.485) as a BMI power on the central volume instead, and did not confirm the mean volume of 34.9 mL/kg. Extracted — peginesatide: Vmax 44.7, Km 1.86e+03, V2 35.6, kabs 0.00869, Fab 0.499 F1, Q 5.23, V3 7.42, V 34.9 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[central volume of distribution (v2), in ml/kg].covariate_forms`: this record has none, the second reading ['power']; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

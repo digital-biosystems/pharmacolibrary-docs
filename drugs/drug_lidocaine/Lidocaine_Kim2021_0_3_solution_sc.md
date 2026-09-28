@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The lidocaine rat record was rejected because the paper reports only exposure metrics (t1/2z 1.60 h, Cmax 11.77 ng/mL, tmax 0.78 h, AUC∞ 27.23 h·ng/mL) with no distribution volume or clearance, and the MEGX-to-GX metabolic link is unreachable.**
+**The lidocaine record was rejected because it reports only exposure statistics (t1/2z 1.60 h, Cmax 11.77 ng/mL, tmax 0.78 h, AUC∞ 27.23 h·ng/mL) with no distribution volume or clearance, and the metabolites MEGX and GX are unlinked.**
 
-The record is an exposure/outcome paper, not a compartmental population PK model: no distribution volume and no clearance or elimination rate are reported for lidocaine in male Sprague-Dawley rats. The structure links lidocaine to MEGX and MEGX to GX via metabolism rate constants, but the metabolite chain is unreachable from the dose. Additionally, a reported unit could not be converted to SI, so a parameter reached the model without an SI value. A second reader disagreed on the parameterization (mechanistic vs apparent) and on several values, reading AUC∞, Cmax and half-life as null while extracting cld/f 0.13, clm1/f 14.94, fm1 0.65 and fr 0.373, which the record left unset. Extracted — lidocaine: t1/2z 1.6 h, Cmax 11.8 ng/mL, tmax 0.78 h, AUC∞ 27.2 h × ng/mL.
+The paper is an exposure/outcome study in male Sprague-Dawley rats: it gives no distribution volume and no clearance or elimination rate, so the general-linear structure is not a compartmental population PK model. The metabolism links from lidocaine to MEGX and from MEGX to GX leave the metabolites without a path from the dose (orphan metabolites). Additionally, one reported parameter's unit could not be converted to SI units, so it was carried forward without a usable numeric value. A second reader disagreed on parameterization (apparent rather than mechanistic) and on several parameters, reading CLd/f 0.13, CLm1/f 14.94, fm1 0.65 and fr 0.373 where the record had none, and null for Cmax, AUC∞ and half-life. Extracted — lidocaine: t1/2z 1.6 h, Cmax 11.8 ng/mL, tmax 0.78 h, AUC∞ 27.2 h × ng/mL.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 

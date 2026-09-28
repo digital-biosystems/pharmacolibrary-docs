@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The oxymorphone rat model was rejected because its clearance of 47.8 mL/min and volume of 14.1 mL fall outside the physiological window, indicating a unit or scale extraction error.**
+**Rejected because oxymorphone's clearance (47.8 mL/min) and volume of distribution (14.1 mL) fall outside the physiological window for male Sprague-Dawley rats, suggesting a unit or scale extraction error.**
 
-The record reports a one-compartment model for oxymorphone in male Sprague-Dawley rats with clearance 47.8 mL/min, central volume 14.1 mL, inter-compartmental flow 53.8 mL/min and fraction unbound 11.9%. The plausibility check found the clearance and volume magnitudes physiologically implausible for this species and molecule, attributing the deviation to a unit or scale error during extraction. No other findings were recorded, so the rejection rests on this implausibility alone. Extracted — oxymorphone: CL 47.8 mL/min, V 14.1 mL, Q 53.8 mL/min, fu 11.9.
+The record lists total clearance of 47.8 mL/min, central volume of 14.1 mL, and intercompartmental clearance of 53.8 mL/min for oxymorphone in rats. The review judged the clearance and volume magnitudes physiologically implausible for this species, consistent with a unit or scale error during extraction. The intercompartmental clearance exceeding total clearance (53.8 vs 47.8 mL/min) further reflects the implausible parameter magnitudes. Extracted — oxymorphone: CL 47.8 mL/min, V 14.1 mL, Q 53.8 mL/min, fu 11.9.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

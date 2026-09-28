@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The ephedrine record was held back because the absorption rate constant ka and lag time Tlag were not reported in the source, so placeholder values were substituted, and absorption was invented with F=1 and Fm=1 assumed.**
+**The ephedrine record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside an assumed F=1 apparent parameterization.**
 
-The record reports only CL/F = 22.5 L/h and V/F = 16.3 L for ephedrine in a one-compartment structure with apparent (/F) parameterization, implying extravascular first-order input. The absorption rate constant ka and lag time Tlag were missing from the source, so library placeholder values were used instead, and the builder additionally assumed F=1 and Fm=1 with no molar correction. The invented absorption — a defaulted ka not reported in the source — was adjudicated as not acceptable, which is why the record was not published. A second reader also disagreed on the model structure, reading two compartments where the record states one. Extracted — ephedrine: CL/F 22.5 L/h, V/F 16.3 L.
+The source reports only CL/F (22.5 L/h) and V/F (16.3 L) for ephedrine; ka and Tlag were missing and given library placeholder values instead of source-reported ones, and this invented absorption was judged not acceptable. The model builder also assumed F=1 and Fm=1 without molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. A second reader further disagreed on the structure, reading a two-compartment model where this record uses one compartment, and on several values (e.g., 14 vs 9474). Extracted — ephedrine: CL/F 22.5 L/h, V/F 16.3 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 48, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -134,9 +134,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_modelica.zip" download>Ephedrine_Tran2020_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_modelica.zip" download>Ephedrine_Tran2020_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_fmi.zip" download>Ephedrine_Tran2020_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_matlab.zip" download>Ephedrine_Tran2020_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_matlab.zip" download>Ephedrine_Tran2020_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_matlab_simbio.zip" download>Ephedrine_Tran2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_sbml.zip" download>Ephedrine_Tran2020_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_cellml.zip" download>Ephedrine_Tran2020_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -147,7 +147,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 500 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 500, 640 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ephedrine/Ephedrine_Tran2020_reference/Ephedrine_Tran2020_reference_sim_controls.json"></dbs-fmusim>
 

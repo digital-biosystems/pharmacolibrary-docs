@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The vortioxetine central volume V2 was extracted as 0.95 with the nonsensical unit 'N = 3183b', a dimension mismatch on a structural parameter, and the one-compartment structure left a compartment unreachable from the dose, so the record was rejected.**
+**The vortioxetine record was rejected because the peripheral-volume parameter V2 was extracted as 0.95 with the non-unit 'N = 3183b', a dimension mismatch, and the one-compartment structure leaves a compartment unreachable from the dose.**
 
-For vortioxetine, the absorption rate constant (0.14 L/h) and oral clearance (39 L/h) were extracted with valid units, but the central volume of distribution V2 carries value 0.95 with unit 'N = 3183b', which is not a convertible volume unit, so the parameter could not be given an SI value. This dimension mismatch on a structural parameter, together with a compartment having no path from the dose in the one-compartment structure, led to rejection. A second reader could not confirm the V2 value, recording no alternative reading for it. Extracted — vortioxetine: kabs 0.14 L/h, CL/F 39 L/h, V2 0.95 N = 3183b.
+The parameter labelled as a variance on V2 carries value 0.95 with unit 'N = 3183b', which is not a volume unit and could not be converted to SI, so the peripheral volume of distribution has no usable value; a second reader recorded null for this same parameter, disagreeing with 0.95. The structure is one compartment, yet the model includes a peripheral compartment for V2 with no path from the dose, an orphan compartment. Both the dimension mismatch and the unlinked compartment led to rejection. Extracted — vortioxetine: kabs 0.14 L/h, CL/F 39 L/h, V2 0.95 N = 3183b.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\varpi^2_{\text{v2}}$$\end{document}πv22 d: this record has 0.95, the second reading none. That field does not shape the model.
 

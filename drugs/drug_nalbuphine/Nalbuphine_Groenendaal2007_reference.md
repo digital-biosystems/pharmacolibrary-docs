@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The extracted nalbuphine parameters are physiologically implausible — clearance 20.0 ml/min, V1 68.1 ml, V2 739.0 ml and Q 15.5 ml/min — indicating a unit or scale extraction error, so the record was rejected.**
+**The nalbuphine two-compartment record was rejected because the peripheral volume V2 of 739 ml is physiologically implausible relative to the central volume V1 of 68.1 ml, indicating a unit or scale extraction error.**
 
-The two-compartment nalbuphine model lists CL 20.0 ml/min, V1 68.1 ml, V2 739.0 ml and Q 15.5 ml/min; volumes of 68.1 ml and 739.0 ml are far below any plausible distribution volume for this molecule, consistent with a unit or scale misreading of the published values. The rejection reason records the clearance/volume magnitudes as outside the physiological window due to a unit or scale extraction error. A second reader disagreed on two extracted values (0.074 and 739), but recorded no alternative values, so the disagreement is inconclusive. Extracted — nalbuphine: CL 20 ml min À1, V1 68.1 ml, V2 739 ml, Q 15.5 ml min À1.
+For nalbuphine, the record lists CL 20.0 ml/min, V1 68.1 ml, V2 739.0 ml and Q 15.5 ml/min. The peripheral volume exceeding the central volume by roughly tenfold falls outside the physiological window, which the review attributed to a unit or scale error when reading the values. A second reader did not confirm the extracted values for the intercompartmental clearance and the peripheral volume, leaving those disagreements unresolved. Extracted — nalbuphine: CL 20 ml min À1, V1 68.1 ml, V2 739 ml, Q 15.5 ml min À1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q316: this record has 0.074, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

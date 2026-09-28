@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The digoxin two-compartment record was held back because the absorption rate constant ka and lag time were not reported in the source and library defaults were substituted, an invented absorption deemed not acceptable.**
+**The digoxin record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside defaults for Tlag and an assumed F=1 apparent parameterization.**
 
-The extracted digoxin parameters (CL/F 114.64 L/h, V1/F 14.9 L, V2/F 145.7 L, Q/F 52.02 L/h) are present, but ka and Tlag are missing from the source, so placeholder defaults were used — the model builder invented an absorption step not reported in the paper. The model also assumes F=1 and Fm=1 with no molar correction, using an apparent (/F) parameterization that implies extravascular first-order dosing. A second reader additionally reported values for four fields (77.2, 8, 1.59, 0.282) that this record left empty, so the record is incomplete relative to the source. Extracted — digoxin: CL/F 115 L/h, V1/F 14.9 L, V2/F 146 L, Q/F 52 L/h.
+The source reports only CL/F (114.64 L/h), V1/F (14.9 L), V2/F (145.7 L) and Q/F (52.02 L/h) for digoxin; ka and Tlag are absent, so library defaults were used for the first-order extravascular absorption input. The model builder also assumed F=1 and Fm=1 with no molar correction, making all parameters apparent. A second reader additionally reported values for four fields (77.2, 8, 1.59, 0.282) that are null in this record, so those comparisons could not be computed. Extracted — digoxin: CL/F 115 L/h, V1/F 14.9 L, V2/F 146 L, Q/F 52 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has none, the second reading 77.2; it also differs on 3 more fields. That field does not shape the model.
 
@@ -149,7 +149,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 25 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Dose in the paper: 25 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_digoxin/Digoxin_Gaspar2025_reference/Digoxin_Gaspar2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_digoxin/Digoxin_Gaspar2025_reference/Digoxin_Gaspar2025_reference_sim_controls.json"></dbs-fmusim>
 

@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 0.02 mg parenteral (B03BA03)",
  "model_id": "Hydroxocobalamin_de1994_reference",
+ "molar_masses": {
+  "central.C": 1.3463551
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,19 +11,20 @@
  "parameters": {
   "Cl": 1.611111111111111e-07,
   "F": 1.0,
+  "MM": 1.3463551,
   "VdPerKg": 0.00049,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 2e-08,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662149
+  "central.C": 660.0000000662153
  },
  "reference_peaks": {
-  "central.C": 0.0029113474859662303
+  "central.C": 5.822697154839751e-07
  },
- "stop_time": 86400.0,
+ "stop_time": 133200.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

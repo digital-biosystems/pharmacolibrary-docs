@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The lidocaine model was rejected because its metabolite structure contains an unreachable compartment or unlinked metabolite, and a second reader could not confirm the reported lidocaine clearance of 26.1 L/h.**
+**The lidocaine model was rejected because the metabolite GX has no path from the administered dose: the lidocaine→MEGX→GX metabolic chain is incomplete, and the lidocaine clearance value of 26.1 L/h is disputed.**
 
-The record describes lidocaine with two metabolic links to the metabolites MEGX and GX, but the structure check found an unreachable/orphan compartment or unlinked metabolite, meaning part of the model has no path from the lidocaine dose. The only extracted parameter is lidocaine clearance, 26.1 L/h, labelled as estimated by the final model. A second reader returned no value for this clearance, so the reported 26.1 L/h could not be corroborated. The record was therefore rejected. Extracted — lidocaine: CL 26.1 L/h.
+The structure links lidocaine to MEGX and MEGX to GX via metabolism, but the GX metabolite is unlinked, leaving part of the model unreachable from the dose. The only extracted parameter is lidocaine total clearance, 26.1 L/h, which a second reader recorded as null rather than 26.1. No other parameter values were available to support the record. Extracted — lidocaine: CL 26.1 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of lidocaine clearance estimated by the final model: this record has 26.1, the second reading none. That field shapes the model, so the record is marked disputed.
 

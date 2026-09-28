@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The two-compartment mercaptopurine model was rejected because its peripheral compartment (V2, 1.65 L) is unlinked: no intercompartmental clearance connects it to the central compartment, leaving it unreachable from the dose.**
+**The mercaptopurine two-compartment model (CL 0.159 L/day, V1 3.19 L, V2 1.65 L) was rejected because its peripheral compartment is unreachable, i.e. not connected to the dose path.**
 
-The record describes a two-compartment structure for mercaptopurine with central volume V1 of 3.19 L, peripheral volume V2 of 1.65 L, and clearance CL of 0.159 L/day in UC patients. Only these three parameters were extracted; no distributional clearance between central and peripheral compartments appears, so the peripheral compartment has no path from the administered dose. The record was therefore rejected for an unreachable compartment. Extracted — mercaptopurine: CL 0.159 L/day, V1 3.19 L, V2 1.65 L.
+The record describes a two-compartment structure for mercaptopurine with total clearance 0.159 L/day, central volume of distribution 3.19 L and peripheral volume 1.65 L. The failed check found an unreachable or orphan compartment: the peripheral compartment has no path from the administered dose, so the reported structure is inconsistent with the parameterization. No other parameter values were disputed. Extracted — mercaptopurine: CL 0.159 L/day, V1 3.19 L, V2 1.65 L.
 
 Independently confirmed by `gpt-oss:120b`.
 

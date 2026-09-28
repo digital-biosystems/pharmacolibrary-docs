@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The oxcarbazepine record was quarantined because clearance, volume of distribution, absorption rate constant and lag time had no extracted values, so library defaults were substituted, and the reported units could not be converted to SI.**
+**The oxcarbazepine model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no extracted values and library defaults were substituted; only MHD's absorption half-life (0.83 h) was reported.**
 
-For the 1-compartment MHD model in Chinese paediatric epilepsy patients, only the absorption half-life (0.83 h) carried a value; CL and V/F had empty values with unconvertible units, so CL, Vd, ka and Tlag were left at library defaults. The absorption was further flagged as invented: ka was defaulted, not reported in the source, and the first-order depot input with apparent (/F) parameterization was an assumption. The unit conversion failure meant the parameters reached model building without SI values. A second reader disagreed on the parameterization (mechanistic vs apparent) and read no value for ka where this record read 0.83 h. Extracted — MHD: t1/2ka 0.83 （）.
+The record for Chinese paediatric epilepsy patients reports only one parameter, the MHD absorption half-life of 0.83 h; the paper's CL and V/F entries carry no values, and their reported units could not be converted to SI, so no usable numeric values were available. The model builder defaulted clearance, volume of distribution, absorption rate constant and lag time, and assumed F=1, Fm=1 with no molar correction under an apparent parameterization with first-order extravascular input. The invented absorption default was judged not acceptable, and a second reader disagreed on the parameterization (mechanistic vs apparent) and on whether the 0.83 h value belongs to ka. Extracted — MHD: t1/2ka 0.83 （）.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -111,6 +111,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | skipped | not captured | not captured | not captured | no structural disposition parameters in record |

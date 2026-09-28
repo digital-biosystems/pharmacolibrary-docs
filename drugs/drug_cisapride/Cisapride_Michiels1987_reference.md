@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The cisapride record was rejected because a structural parameter carries a dimension mismatch, and it rests only on the paper's abstract, with the terminal half-life left without a value.**
+**The cisapride record was rejected because a structural parameter failed a dimension check, and the terminal half-life was extracted with no value; the record also rests on abstract-only summary statistics rather than a fitted model.**
 
-The record reports cisapride plasma clearance of 91 ml/min.kg, volume of distribution of 4.7 l/kg and absolute oral bioavailability of 23%, but the terminal plasma half-life has no numeric value. The stated cause of rejection is a dimension mismatch on a structural parameter. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader disagreed on the bioavailability (23 vs none), clearance (91 vs none), volume of distribution (4.7 vs none) and half-life (none vs none) entries, leaving those values unconfirmed. Extracted — cisapride: CL 91 ml/min.kg, V 4.7 l/kg, Fab 23 %.
+The rejection reason is a dimension mismatch on a structural parameter in the one-compartment cisapride model (species: rats, rabbits and dogs). The terminal plasma half-life of cisapride has a unit (h) but no extracted value, so that parameter is incomplete. The record was built from the paper's abstract alone, meaning the reported clearance (91 ml/min.kg), volume of distribution (4.7 l/kg) and absolute bioavailability (23 %) are summary statistics standing in for a fitted model. A second reader disputed all of these values, reading the bioavailability, clearance and volume as absent and agreeing the half-life has no value. Extracted — cisapride: CL 91 ml/min.kg, V 4.7 l/kg, Fab 23 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 23, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 

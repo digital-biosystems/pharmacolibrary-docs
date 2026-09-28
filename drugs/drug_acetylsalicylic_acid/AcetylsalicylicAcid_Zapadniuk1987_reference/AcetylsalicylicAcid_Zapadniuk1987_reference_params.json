@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 3000 mg oral (N02BA01)",
  "model_id": "AcetylsalicylicAcid_Zapadniuk1987_reference",
+ "molar_masses": {
+  "central.C": 0.1801574
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,11 +11,12 @@
  "parameters": {
   "Cl": 7.666666666666666e-07,
   "F": 0.9,
+  "MM": 0.1801574,
   "Tlag": 10116.0,
   "VdPerKg": 0.03414285714285714,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.003,
   "ka": 9.166666666666667e-05,
   "weight": 70.0
  },
@@ -19,7 +24,7 @@
   "central.C": 72468.93787575151
  },
  "reference_peaks": {
-  "central.C": 3.6916526383828314e-05
+  "central.C": 0.0011074949013348341
  },
  "stop_time": 147600.0,
  "template": "PK_1C_enteral",

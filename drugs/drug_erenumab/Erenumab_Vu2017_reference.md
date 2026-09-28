@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Rejected: erenumab's intercompartmental clearance Q (3.34) is reported in a unit that cannot be expressed in SI, giving a dimension mismatch on a structural parameter, and the receptor degradation rate (0.22 per the second reader) is absent.**
+**Rejected because a structural parameter of the erenumab two-compartment TMDD model carries a dimension mismatch: parameters such as Q (3.34), V2 (2.73), kabs (0.432), Fab (74), KD (18.8) and kint (0.0345) were recorded with their labels instead of units, so no SI value could be established.**
 
-The erenumab two-compartment model lists Q = 3.34 and V2 = 2.73 with units given only as 'Q' and 'Vp', units that could not be converted to SI, so the intercompartmental clearance entered the record without an SI value and failed the dimensional check on a structural parameter. A second reader additionally extracted a receptor degradation rate of 0.22 for erenumab that this record does not contain. The remaining parameters (CL 0.214, V1 4.27, kabs 0.432, Fab 74, KD 18.8, kint 0.0345) carry no reported deviations. Extracted — erenumab: CL 0.214, V1 4.27, Q 3.34 Q, V2 2.73 Vp, kabs 0.432 ka, Fab 74 F, KD 18.8 Kss, kint 0.0345 kint.
+The record for erenumab (Vu_2017, healthy and migraine subjects) lists intercompartmental clearance Q = 3.34, peripheral volume V2 = 2.73, absorption rate constant kabs = 0.432, bioavailability Fab = 74, binding affinity KD = 18.8 and internalization rate kint = 0.0345 with unit fields containing only the parameter labels (Q, Vp, ka, F, Kss, kint); without a stated unit these values could not be expressed in SI terms, and a dimension mismatch on a structural parameter was flagged. A second reader additionally assigned a receptor degradation rate of 0.22 where this record has none, a disagreement left unresolved. Extracted — erenumab: CL 0.214, V1 4.27, Q 3.34 Q, V2 2.73 Vp, kabs 0.432 ka, Fab 74 F, KD 18.8 Kss, kint 0.0345 kint.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of receptor degradation rate: this record has none, the second reading 0.22. That field does not shape the model.
 

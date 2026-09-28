@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The ibuprofen volume of distribution was extracted as 22.37 ml, an implausibly small magnitude for children undergoing adenotonsillectomy, indicating a unit or scale error, so the record was rejected.**
+**The ibuprofen volume of distribution is recorded as 22.37 ml, a physiologically implausible magnitude indicating a unit/scale extraction error, so the record was rejected.**
 
-The record lists ibuprofen clearance as 13.2 L/h per 70 kg and an absorption rate constant of 1.1 h⁻¹, both physiologically plausible, but the volume of distribution is given as 22.37 ml. A volume of a few tens of millilitres for ibuprofen in a paediatric adenotonsillectomy population is outside any physiological window, consistent with a unit or scale extraction error (the label reads 'ml' where litres would be expected). The one-compartment structure itself is unremarkable; the implausible volume magnitude is the sole reason for rejection. Extracted — ibuprofen: CL 13.2 L/h.70 kg -1, V 22.4 ml, kabs 1.1 h -1.
+For ibuprofen in children undergoing adenotonsillectomy, the one-compartment model lists V as 22.37 ml, far below any plausible volume of distribution, and the clearance is given as 13.2 L/h.70 kg with a non-standard per-70-kg unit. The clearance/volume check flagged these magnitudes as outside the physiological window, attributing the failure to a unit or scale extraction error. Absorption is described by a first-order rate constant of 1.1 h⁻¹, which is not itself implicated. Extracted — ibuprofen: CL 13.2 L/h.70 kg -1, V 22.4 ml, kabs 1.1 h -1.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

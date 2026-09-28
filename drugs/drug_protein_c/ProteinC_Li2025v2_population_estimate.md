@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The protein C model was quarantined because its clearance, volume of distribution, absorption rate constant and absorption lag time had no extracted values, so library defaults stood in for these parameters.**
+**The protein C model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no extracted values and library placeholder defaults were substituted instead.**
 
-No value for protein C's clearance, volume of distribution, absorption rate constant and absorption lag time was available from the source, so placeholder defaults were substituted and the model was held back rather than published with invented numbers; the absorption rate constant in particular was not reported in the source. In addition, the covariate scenarios were not simulated — only the reference individual was run, not the age effects on protein C production and volume that the record defines. A second reader also disagreed on the primary analyte, reading it as protein C concentrate rather than protein C, and reported relative standard errors of 5.37% for bioavailability and 4.26% for the absorption rate constant where this record had none. Extracted — protein c: CL 7.14 dL/h, V 60.7 dL, kabs 0.0379, Fab 0.79.
+The record lists CL 7.14 dL/h, V 60.7 dL and kabs 0.0379 1/h, but the model builder left clearance, volume of distribution, absorption rate constant and lag time without source values, so placeholder numbers stood in; the defaulted absorption rate constant, not reported in the source, was judged not acceptable. Additionally, the covariate effects defined in the record (effect of age on endogenous protein C production 0.589, theta_v_age -0.112) were not exercised — only the reference individual was simulated. A second reader also disagreed on the analyte (protein C vs protein C concentrate) and reported RSE values (5.37% for bioavailability, 4.26% for the absorption rate constant) that this record lacks. Extracted — protein c: CL 7.14 dL/h, V 60.7 dL, kabs 0.0379, Fab 0.79.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has protein C, the second reading protein C concentrate; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -119,6 +119,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |

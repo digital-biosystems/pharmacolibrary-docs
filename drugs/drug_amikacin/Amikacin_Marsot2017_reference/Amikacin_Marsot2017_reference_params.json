@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 1000 mg parenteral (J01GB06)",
  "model_id": "Amikacin_Marsot2017_reference",
+ "molar_masses": {
+  "central.C": 0.5856024999999999
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,17 +11,18 @@
  "parameters": {
   "Cl": 1.111111111111111e-06,
   "F": 1.0,
+  "MM": 0.5856024999999999,
   "VdPerKg": 0.00026571428571428574,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.001,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662006
+  "central.C": 660.0000000662108
  },
  "reference_peaks": {
-  "central.C": 0.005281134689460044
+  "central.C": 0.05281134723984963
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

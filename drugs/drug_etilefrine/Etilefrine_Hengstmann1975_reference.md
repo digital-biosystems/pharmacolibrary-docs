@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The etilefrine one-compartment record was rejected because a structural parameter carries a dimension mismatch, a compartment has no path from the dose, and all values came from the abstract alone rather than a fitted model.**
+**The etilefrine record was rejected because the peripheral distribution volume (160, unitless) failed a dimensional check and the model structure leaves a compartment with no path from the dose.**
 
-The record for etilefrine in healthy adults was built from the paper's abstract only, so the reported summary statistics (bioavailability factor 0.55, Vd,beta 160, half-life 2 hours) stood in for a fitted model. Two checks failed: a dimension mismatch on a structural parameter, and an unreachable or orphan compartment — a compartment with no path from the dose. A second reader (gpt-oss:120b) disputed all three extracted values, reading the bioavailability factor, half-life, and Vd,beta as absent from the record, though the disagreements do not alter the rejection causes. Extracted — etilefrine: Fab 0.55, V2 160 1, t1/2z 2 hours.
+The volume of distribution of the peripheral compartment is reported as 160 with unit '1', a dimension mismatch for a structural volume parameter. The one-compartment structure also contains an unreachable compartment, so the topology is incomplete. The record was built from the abstract only, so summary statistics stood in for a fitted model, and a second reader recorded no values for the bioavailability (0.55), half-life (2 hours) and distribution volume (160), disagreeing with all three. Extracted — etilefrine: Fab 0.55, V2 160 1, t1/2z 2 hours.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 0.55, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 

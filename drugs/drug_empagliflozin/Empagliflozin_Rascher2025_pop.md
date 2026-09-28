@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The empagliflozin paediatric model record reports placeholder values of 1.00 for all six parameters (CL/F, V2/F, kabs, Q/F, V3/F, D1) because the source gave no values for Vd, ka and Tlag, so the model was quarantined rather than published.**
+**The empagliflozin paediatric model was quarantined because volume of distribution, absorption rate constant and absorption lag time had no source values and were replaced by placeholder numbers, with all six parameters recorded as 1.00.**
 
-Every parameter in the record — CL/F, V2/F, kabs, Q/F, V3/F and D1 for empagliflozin — carries the value 1.00, which reflects library defaults substituted for missing source values rather than fitted estimates. The volume of distribution, absorption rate constant and absorption lag time were never reported in the source, so placeholders stood in and the model was held back. A second reader extracted substantially different values (e.g. CL/F 6.74 L/h vs 1.00, V3/F 71.7 L vs 1.00, ka 0.239 1/h vs 1.00), and the absorption input was flagged as invented since ka was defaulted, not reported. The record also assumes F=1 and Fm=1 without molar correction, i.e. an apparent-parameterization. Extracted — empagliflozin: CL/F 1 L/h, V2/F 1 L, kabs 1, Q/F 1 L/h, V3/F 1 L, D1 1 h.
+Empagliflozin's V2/F, Q/F, V3/F, CL/F, kabs and D1 all carry the value 1.00, and the volume of distribution, absorption rate constant and absorption lag time had no value in the source, so a placeholder stood in; the absorption rate constant was invented rather than reported. A coverage check found only 2 of 4 expected parameters covered, with V2/F and Q/F neither emitted nor defaulted. A second reader disputed every value, reading CL/F as 6.74 L/h, V2/F as 4.12 L, kabs as 0.239 1/h, Q/F as 5.51 L/h, V3/F as 71.7 L and D1 as 0.326 h. The model also assumes apparent parameterization with F=1, Fm=1 and no molar correction. Extracted — empagliflozin: CL/F 1 L/h, V2/F 1 L, kabs 1, Q/F 1 L/h, V3/F 1 L, D1 1 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[cl/f].value`: this record has 1.00, the second reading 6.74; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -145,6 +145,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['V2/F', 'Q/F'] |

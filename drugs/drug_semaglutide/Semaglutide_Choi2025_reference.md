@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The semaglutide two-compartment model was rejected because one compartment is unreachable from the dose, and a second reader disputed several extracted values, including the intercompartmental clearance read as 46.27 versus 2.68.**
+**The semaglutide two-compartment model was rejected because its peripheral compartment is unreachable from the dose, and the extracted parameter values disagree with a second reader (e.g. 46.27 vs 2.68).**
 
-The record lists semaglutide parameters CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L and absorption rate constant 0.006 h-1 in a two-compartment structure, but the structure check found an unreachable or orphan compartment, meaning a compartment has no path from the dose, so the model was rejected. A second reader disagreed on several extracted values: one value was read as 0.059 here but not extracted by the second reader, two values were not extracted here but read as 75.2 and 24.8 by the second reader, and one value was read as 46.27 here against 2.68 by the second reader. These disagreements leave the extracted parameter set uncertain alongside the structural defect. Extracted — semaglutide: CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
+The record for semaglutide (CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1) failed the structure check with an unreachable or orphan compartment, meaning the peripheral compartment has no path from the dose. The second reader also disputed several extracted values: this record gives 0.059 and 46.27 where the second reader gives null and 2.68, and the second reader reports 75.2 and 24.8 where this record has none. The source is a review-secondary text for a review reference population, so the numbers may be summary statistics rather than a fitted model. Extracted — semaglutide: CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 0.059, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

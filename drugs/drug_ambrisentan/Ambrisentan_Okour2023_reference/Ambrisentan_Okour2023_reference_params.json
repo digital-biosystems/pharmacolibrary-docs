@@ -1,0 +1,40 @@
+{
+ "model_id": "Ambrisentan_Okour2023_reference",
+ "molar_masses": {
+  "central.C": 0.378428
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2.5,
+  5.0,
+  7.5,
+  10.0
+ ],
+ "parameters": {
+  "Cl": 3.25e-07,
+  "F": 1.0,
+  "MM": 0.378428,
+  "Tlag": 1890.0,
+  "VdPerKg": 0.00017571428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-06,
+  "k12": 1.0320686540198736e-05,
+  "k21": 1.5614322809894768e-06,
+  "ka": 0.0006833333333333333,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 3595.9758954220106
+ },
+ "reference_peaks": {
+  "central.C": 6.607511013868678e-05
+ },
+ "stop_time": 136800.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The lanadelumab record was held back because the absorption rate constant ka (0.0179 1/h) was not reported in the source and was invented by default, alongside Tlag, with F=1 and Fm=1 assumed and no molar correction.**
+**The lanadelumab record was held back because the absorption rate constant ka was not reported in the source and a default value was invented for it, alongside defaults for Tlag and an F=1 apparent parameterization.**
 
-The record for lanadelumab (Wang_2020, patients with hereditary angioedema and healthy subjects, one-compartment structure) lists ka as 0.0179 1/h, but this value was not reported in the source — it was substituted with a default, as was Tlag, so the absorption description is invented rather than fitted. The parameterization is apparent: bioavailability F and the fraction metabolized Fm were both assumed to be 1, with no molar correction applied. Additionally, the reported unit for CL/F (L/hour) could not be converted to SI units, so CL/F entered the model without an SI value. The failed check on these deviations returned 'invented_absorption: not acceptable', confirmed by adjudication. Extracted — lanadelumab: CL/F 0.0337 L/hour, V/F 16.6 L, AUCSS 408 µg × day/mL, Cavg 29.2 µg/mL, Cmax 35.5 µg/mL, Cmin 24.6 µg/mL, tmax 98.6 hour, t1/2z 361 hour, … (+2).
+The reported ka (0.0179 1/h) is flagged as invented: the source did not report an absorption rate constant, so a placeholder value was substituted, and the lag time before absorption (Tlag) was likewise given a placeholder rather than a source value. The model builder also assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent (CL/F 0.0337 L/h, V/F 16.6 L). Additionally, one reported unit could not be converted to SI, so that parameter entered the record without an SI value. Extracted — lanadelumab: CL/F 0.0337 L/hour, V/F 16.6 L, AUCSS 408 µg × day/mL, Cavg 29.2 µg/mL, Cmax 35.5 µg/mL, Cmin 24.6 µg/mL, tmax 98.6 hour, t1/2z 361 hour, … (+2).
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -194,7 +194,7 @@ Wang Y; Marier JF; Kassir N; Chang C; Martin P et al. (2020). Clinical and trans
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_modelica.zip" download>Lanadelumab_Wang2020_final_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_fmi.zip" download>Lanadelumab_Wang2020_final_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_matlab.zip" download>Lanadelumab_Wang2020_final_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_matlab_simbio.zip" download>Lanadelumab_Wang2020_final_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_sbml.zip" download>Lanadelumab_Wang2020_final_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -206,7 +206,7 @@ Wang Y; Marier JF; Kassir N; Chang C; Martin P et al. (2020). Clinical and trans
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 150 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 150, 300, 400 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_lanadelumab/Lanadelumab_Wang2020_final/Lanadelumab_Wang2020_final_sim_controls.json"></dbs-fmusim>
 

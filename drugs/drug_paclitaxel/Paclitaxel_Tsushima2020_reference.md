@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The paclitaxel population model record was rejected because a structural parameter carries a dimensional mismatch, and the record rests on the paper's abstract alone rather than a fitted model.**
+**Rejected because the paclitaxel Michaelis–Menten parameter Vmax (2.25 μg/mL/h) has a dimension inconsistent with a maximum metabolic rate, a structural-parameter dimension mismatch.**
 
-The record for paclitaxel in adults with metastatic solid cancer lists a one-compartment-like structure with parameters including CL 29.7 L/h, V1 11.4 L, Km 0.108 μg/mL, Vmax 2.25 μg/mL/h, k21 0.207 h−1, Q3 33.5 L/h and V3 61.2 L, but one structural parameter fails a dimensional check (C5), meaning its units are inconsistent with its role in the model structure. Because the source was read at abstract-only level, the reported summary statistics stood in for a fitted model, so the parameter set cannot be traced to a full population fit. The refusal was driven by the dimension mismatch on the structural parameter. Extracted — paclitaxel: CL 29.7 L/h, V1 11.4 L, Km 0.108 μg/mL, Vmax 2.25 μg/mL/h, k21 0.207 h−1, Q3 33.5 L/h, V3 61.2 L.
+The record describes a three-compartment paclitaxel model with CL 29.7 L/h, V1 11.4 L, Km 0.108 μg/mL, Vmax 2.25 μg/mL/h, k21 0.207 h−1, Q3 33.5 L/h and V3 61.2 L, plus a BSA coefficient on V3 of 0.957. The check for dimensional consistency of structural parameters failed on Vmax, whose unit μg/mL/h does not match the expected dimension for a maximum rate of enzymatic metabolism. The record was also built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. Extracted — paclitaxel: CL 29.7 L/h, V1 11.4 L, Km 0.108 μg/mL, Vmax 2.25 μg/mL/h, k21 0.207 h−1, Q3 33.5 L/h, V3 61.2 L.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

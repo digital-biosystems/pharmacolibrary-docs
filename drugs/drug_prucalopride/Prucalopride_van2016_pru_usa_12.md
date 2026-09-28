@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**This prucalopride child-population record was rejected because its one-compartment structure leaves a compartment with no path from the dose, and the AUC unit ng mL−1 h could not be converted to SI.**
+**The prucalopride model record was rejected because its one-compartment structure leaves the peripheral compartment (V2 = 192 l) unreachable from the dose, and the AUC of 62.3 ng mL−1 h was reported in a unit that could not be converted to SI.**
 
-The structure check flagged an unreachable or orphan compartment in the one-compartment model, meaning a compartment or metabolite has no path from the administered dose. The reported AUC unit (ng mL−1 h) could not be converted to SI units, so the extracted values — CL 12.1 l h−1, V2 192 l, AUC 62.3 ng mL−1 h — were held without SI equivalents. A second reader additionally extracted parameters absent from this record, including a prucalopride clearance of 22.9 l h−1, bioavailability 0.858, absorption rate constant 0.792 h−1, mean transit time 0.734 h, and intercompartmental clearance 16.9 l h−1, while disagreeing that CL, V2 and AUC belong in the record. Extracted — prucalopride: CL 12.1 l h−1, V2 192 l, AUC 62.3 ng mL−1 h.
+The record lists a one-compartment structure for prucalopride in children with functional constipation, yet reports a peripheral volume of distribution V2 of 192 l, which the structure check flagged as an orphan compartment with no path from the dose. The AUC of 62.3 ng mL−1 h was reported in a unit that could not be expressed in SI, so it was carried forward without a convertible value. A second reader also disagreed on the extracted parameters, reading CL as 22.9 l h−1 (versus 12.1 l h−1 here) and additionally reporting F1 = 0.858, ka1 = 0.792, mtime = 0.734 and Q = 16.9 l h−1, none of which appear in this record. Extracted — prucalopride: CL 12.1 l h−1, V2 192 l, AUC 62.3 ng mL−1 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 62.3, the second reading none; it also differs on 9 more fields. That field does not shape the model.
 

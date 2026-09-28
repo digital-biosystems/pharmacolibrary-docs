@@ -109,12 +109,13 @@ Sadiq MW; Boström E; Keizer R; Björkman S; Hammarlund-Udenaes M et al. (2013).
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=oxymorphone) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_t_half_terminal | reference | fail | 0.23333333333333334 | 1.0275562803018619 | 4.4038 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.23333333333333334 | 1.0275562803018583 | 4.4038 | min→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -135,7 +136,7 @@ Sadiq MW; Boström E; Keizer R; Björkman S; Hammarlund-Udenaes M et al. (2013).
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_modelica.zip" download>Oxymorphone_Sadiq2013_original_data_set_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_modelica.zip" download>Oxymorphone_Sadiq2013_original_data_set_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_fmi.zip" download>Oxymorphone_Sadiq2013_original_data_set_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_matlab.zip" download>Oxymorphone_Sadiq2013_original_data_set_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_matlab_simbio.zip" download>Oxymorphone_Sadiq2013_original_data_set_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -148,7 +149,7 @@ Sadiq MW; Boström E; Keizer R; Björkman S; Hammarlund-Udenaes M et al. (2013).
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 2.1 mg infusion over 10 min, single dose. Doses in the paper: 2.1, 21 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set/Oxymorphone_Sadiq2013_original_data_set_sim_controls.json"></dbs-fmusim>
 

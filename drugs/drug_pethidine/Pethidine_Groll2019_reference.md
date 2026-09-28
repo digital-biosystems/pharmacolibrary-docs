@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The pethidine record was rejected because its two-compartment structure contains a compartment with no dosing path, and the extracted V/F label actually describes LAmB (amphotericin B), not pethidine, casting doubt on the parameter values.**
+**The pethidine record was rejected because its two-compartment structure leaves a compartment unreachable from the dose, and the V/F parameter (0.42 L/kg) is labelled as the apparent volume of distribution of LAmB, a different molecule.**
 
-The structure is a two-compartment model for pethidine, but the review found an unreachable or orphan compartment — a compartment with no path from the administered dose. The V/F parameter (0.42 L/kg) carries the verbatim label 'apparent volume of distribution of LAmB', a mismatch with the recorded compound pethidine. Additional extraction disagreements remain unresolved: the second reader read 127 where this record has 152, read 1.65 and 152 where this record has none, and read 32 where this record has 54.7, so the numeric content of the record is not consistently established. Extracted — pethidine: CL 0.637 L/h, V/F 0.42 L/kg, V2 49.2 L.
+The record for pethidine carries CL 0.637 L/h, V/F 0.42 L/kg and a peripheral volume V2 of 49.2 L, but the structure check found an orphan compartment with no path from the dose. The V/F parameter's verbatim label reads 'apparent volume of distribution of LAmB' although the compound is pethidine, indicating a mismatched source value. The second reader also disagreed on several extracted values (e.g. 152 vs 127, 54.7 vs 32, and two values the record left null where the reader found 1.65 and 152), so the numeric content is not consistently established. Extracted — pethidine: CL 0.637 L/h, V/F 0.42 L/kg, V2 49.2 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 32, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 0.9 mg parenteral (N05CM05)",
  "model_id": "Scopolamine_AlvarezJimenez2016_reference",
+ "molar_masses": {
+  "central.C": 0.3033529
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,17 +11,18 @@
  "parameters": {
   "Cl": 1.8166666666666667e-05,
   "F": 1.0,
+  "MM": 0.3033529,
   "VdPerKg": 3.8e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 9.000000000000001e-07,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662058
+  "central.C": 660.0000000662104
  },
  "reference_peaks": {
-  "central.C": 0.009021907338483234
+  "central.C": 8.120118409273208e-05
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

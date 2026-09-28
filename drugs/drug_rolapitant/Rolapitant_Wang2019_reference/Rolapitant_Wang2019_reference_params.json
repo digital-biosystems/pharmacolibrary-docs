@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 180 mg oral (A04AD14)",
+ "model_id": "Rolapitant_Wang2019_reference",
+ "molar_masses": {
+  "central.C": 0.5004850000000001
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.083333333333334e-07,
+  "F": 1.0,
+  "MM": 0.5004850000000001,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0030571428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00018,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 30562.147901384917
+ },
+ "reference_peaks": {
+  "central.C": 0.0007836116393530152
+ },
+ "stop_time": 1468800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

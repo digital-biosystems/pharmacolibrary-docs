@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The mirtazapine apparent volume of distribution was recorded as 0.131 L, an implausible value that a second reader read as 302.315 L, and the absorption rate constant was not extracted at all.**
+**The mirtazapine record was rejected because V/F was extracted as 0.131 L, an implausibly small volume of distribution, and the paroxetine covariate effect on clearance (-0.306) was recorded as a negative clearance value.**
 
-The record lists V/F for mirtazapine as 0.131 L, which is physiologically impossible for an orally dosed drug; the second reader extracted 302.315 L for the same parameter, so the recorded value is likely a transcription error. The absorption rate constant (ka) was left unextracted in this record while the second reader found 1.2. The covariate effect of paroxetine on clearance (Θ CL-Paroxetine, -0.306) was also inconsistently captured between the two readers, one recording it and the other leaving it null. Extracted — mirtazapine: CL/F 28.5 L/h, V/F 0.131 L, CL -0.306.
+The apparent volume of distribution V/F for mirtazapine is listed as 0.131 L, which fails the physiological plausibility window and suggests a unit or scale extraction error; a second reader read the same parameter as 302.315 L. The paroxetine effect on clearance was captured as -0.306, a negative value that is implausible as a clearance entry, and the second reader instead treated it as absent from the record. The second reader also reported an absorption rate constant ka of 1.2 that is missing from this record, so the parameter set is incomplete and the discrepancies were not resolved. Extracted — mirtazapine: CL/F 28.5 L/h, V/F 0.131 L, CL -0.306.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of ka: this record has none, the second reading 1.2; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

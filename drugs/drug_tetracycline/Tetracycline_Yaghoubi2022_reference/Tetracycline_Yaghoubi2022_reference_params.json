@@ -1,25 +1,35 @@
 {
+ "dose_source": "paper",
  "model_id": "Tetracycline_Yaghoubi2022_reference",
+ "molar_masses": {
+  "central.C": 0.4444346
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  50.0,
+  100.0
+ ],
  "parameters": {
   "Cl": 3.88888888888889e-06,
   "F": 1.0,
+  "MM": 0.4444346,
   "VdPerKg": 0.007,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 5e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662042
+  "central.C": 660.0000000662014
  },
  "reference_peaks": {
-  "central.C": 0.00020359649939238853
+  "central.C": 0.00010179826422629275
  },
- "stop_time": 86400.0,
+ "stop_time": 518400.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

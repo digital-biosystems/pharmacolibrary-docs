@@ -1,12 +1,22 @@
 {
+ "dose_source": "paper",
  "model_id": "Rifabutin_Bentley2021_reference",
+ "molar_masses": {
+  "central.C": 0.8470046999999999
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  100.0,
+  300.0
+ ],
  "parameters": {
   "Cl": 2.3416666666666666e-06,
   "F": 1.0,
+  "MM": 0.8470046999999999,
   "Tlag": 0.0,
   "VdPerKg": 0.002657142857142857,
   "adminCount": 1.0,
@@ -16,12 +26,12 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 39996.79358717435
+  "central.C": 40169.93987975952
  },
  "reference_peaks": {
-  "central.C": 0.00032657293977240715
+  "central.C": 0.00032656898662715547
  },
- "stop_time": 86400.0,
+ "stop_time": 345600.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

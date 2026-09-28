@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The capecitabine model was quarantined because its elimination clearance had no value and a library placeholder was used, and the V/F parameter was not covered.**
+**The capecitabine model was quarantined because its elimination clearance had no extracted value and a placeholder was used, and the V/F parameter (11.8 L) was neither emitted nor defaulted.**
 
-No value for capecitabine's elimination clearance was extracted, so a library placeholder stood in for it and the model was held back rather than published with an invented number. The parameter coverage check expected 5 parameters emitted or defaulted but obtained 4, with V/F neither emitted nor defaulted. The builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization), and a second reader disagreed on which parameter the beta half-life 'beta_k 23 _t CDA' (44.9 h) actually is. Extracted — capecitabine: kabs 13.6 /h, tlag 10.9 h, Frel 14.4, V/F 11.8 L, kel 12.2 /h, k13 11.6 /h, k31 12.4 /h, k12 14.9 /h, … (+2).
+No value for capecitabine's elimination clearance was available, so a library placeholder stood in for it and the model was held back rather than published with an invented number. The parameter coverage check expected 5 parameters emitted or defaulted but found only 4, with V/F (11.8 L) missing from both. The builder also assumed apparent parameterization (F=1, Fm=1, no molar correction). A second reader disagreed on several parameter assignments, including the terminal half-life identifier, and left the AUC ratio (24), F (14.4), and k23/k34 values (11.6, 12.4 /h) unmatched. Extracted — capecitabine: kabs 13.6 /h, tlag 10.9 h, Frel 14.4, V/F 11.8 L, kel 12.2 /h, k13 11.6 /h, k31 12.4 /h, k12 14.9 /h, … (+2).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[beta_k 23 _t cda].parameter_id`: this record has Q60, the second reading Q68; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -133,6 +133,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['V/F'] |

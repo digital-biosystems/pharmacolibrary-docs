@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The exenatide two-compartment model record was rejected because a structural parameter carried a dimension mismatch, with the reported unit pg/mL for Km (567 pg/mL) not convertible to SI.**
+**The exenatide record was rejected because a structural parameter failed a dimension check — the total clearance is reported as 12.3 L/h while the other rate parameters (kabs 2.98 1/day, Q 89.3 L/day, CLint 110 L/day) use per-day units, giving an inconsistent dimension.**
 
-The record lists Km at 567 pg/mL and Vmax at 0.037 mg/day for exenatide, but the pg/mL unit could not be converted to SI, so the parameter entered the model build without an SI value and a dimension mismatch on a structural parameter was flagged. A second reader also disagreed on several extracted values, reading 2.4 where this record had no value, and leaving 567, 110, 0.0872, 7.03 and 0.037 unread, so those comparisons could not be computed. Extracted — exenatide: kabs 2.98, CLint 110 L/day, V 7.03 L, Fab 1.13, ktr 0.0872, Km 567 pg/mL, Vmax 0.037 mg/day, Q 89.3 L/day, … (+2).
+The model is a two-compartment structure for exenatide in type 2 diabetes patients with transit-compartment absorption (ktr 0.0872 1/day) and Michaelis-Menten elimination (Vmax 0.037 mg/day, Km 567 pg/mL). The clearance parameter carries the unit L/h, which could not be converted to a consistent per-day scale, so the parameter entered the model without a value on the same time basis as the other parameters and the dimension check on the structural parameter failed. A second reader also disagreed on several extracted values, reading 2.4 where this record has no value, and leaving null where this record lists 567, 110, 0.0872, 7.03 and 0.037. Extracted — exenatide: kabs 2.98, CLint 110 L/day, V 7.03 L, Fab 1.13, ktr 0.0872, Km 567 pg/mL, Vmax 0.037 mg/day, Q 89.3 L/day, … (+2).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of Km: this record has 567, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 

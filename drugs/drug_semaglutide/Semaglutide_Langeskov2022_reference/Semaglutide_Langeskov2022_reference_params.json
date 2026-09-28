@@ -1,17 +1,28 @@
 {
+ "dose_source": "paper",
  "model_id": "Semaglutide_Langeskov2022_reference",
+ "molar_masses": {
+  "central.C": 4.113640999999999
+ },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.25,
+  0.5,
+  1.0
+ ],
  "parameters": {
   "Cl": 3.0833333333333336e-06,
   "F": 1.0,
+  "MM": 4.113640999999999,
   "Tlag": 0.0,
   "VdPerKg": 0.04642857142857143,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 2.5e-07,
   "k12": 1.700854700854701e-05,
   "k21": 2.5473630312339992e-05,
   "ka": 0.0026111111111111114,
@@ -21,7 +32,7 @@
   "central.C": 8484.168336673347
  },
  "reference_peaks": {
-  "central.C": 3.0171693752499597e-05
+  "central.C": 7.542808603755543e-08
  },
  "stop_time": 4233600.0,
  "template": "PK_2C_enteral",

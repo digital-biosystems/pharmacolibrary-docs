@@ -1,4 +1,5 @@
 {
+ "dose_source": "WHO ATC DDD 7.5 mg oral (B01AA03)",
  "model_id": "Warfarin_Hirai2024_prior_values",
  "molar_masses": {
   "central.C": 0.3083279
@@ -15,15 +16,15 @@
   "VdPerKg": 0.00020428571428571428,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 7.5e-06,
   "ka": 5.9444444444444445e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 46322.23378377265
+  "central.C": 46056.91382765531
  },
  "reference_peaks": {
-  "central.C": 0.004761661824082932
+  "central.C": 0.0003571216784660849
  },
  "stop_time": 604800.0,
  "template": "PK_1C_enteral",

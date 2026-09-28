@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**Paclitaxel's F, CL, Vd, ka and Tlag had no reported values, so library placeholder defaults were substituted and the absorption rate constant was invented, so the model was quarantined.**
+**The paclitaxel model was quarantined because bioavailability, clearance, volume of distribution, absorption rate constant and lag time had no source values and library placeholders were substituted, with one reported unit unconvertible to SI.**
 
-The record lists fitted paclitaxel parameters (CL 34.4 L/h, V2 176 L, Q 48.0 L/h, V3 855 L, ka 0.724 1/h, Frel 0.895 proportional), yet F, CL, Vd, ka and Tlag had no values in the source, so placeholder numbers stood in for them, and ka was defaulted though not reported. A reported unit could not be converted to SI, so one parameter was carried into the model without an SI value. The covariate effects the model defines were not simulated — only the reference individual was — and the invented absorption substitution was judged not acceptable. A second reader additionally recorded 0.208 for the log-additive parameter where this record had null. Extracted — paclitaxel: CL 34.4, V2 176 L, Q 48 L/h, V3 855 L, kabs 0.724, Frel 0.895 proportional.
+Although the record lists paclitaxel parameters (CL 34.4 L/h, V2 176 L, Q 48.0 L/h, V3 855 L, kabs 0.724 1/h, Frel 0.895), the model builder defaulted F, Cl, Vd, ka and Tlag because they were not reported in the source, and the invented absorption (defaulted ka) was judged not acceptable. One reported unit could not be converted to SI units, so that parameter was carried without a usable numeric value. The covariate scenarios were not simulated — only the reference individual — and the second reader disagreed on the log-additive parameter, reading 0.208 where the record has none. Extracted — paclitaxel: CL 34.4, V2 176 L, Q 48 L/h, V3 855 L, kabs 0.724, Frel 0.895 proportional.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of log additive: this record has none, the second reading 0.208. That field does not shape the model.
 
@@ -118,6 +118,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |

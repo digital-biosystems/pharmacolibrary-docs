@@ -1,27 +1,40 @@
 {
+ "dose_source": "paper",
  "model_id": "Gliclazide_Frey2003_parameters",
+ "molar_masses": {
+  "central.C": 0.32341000000000003
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  15.0,
+  30.0,
+  60.0,
+  90.0,
+  135.0
+ ],
  "parameters": {
   "Cl": 2.5e-07,
   "F": 1.0,
+  "MM": 0.32341000000000003,
   "Tlag": 0.0,
   "VdPerKg": 0.00027142857142857144,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1.5e-05,
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 19119.325866814463
+  "central.C": 19195.072599084528
  },
  "reference_peaks": {
-  "central.C": 0.004112683155462697
+  "central.C": 0.0006168978960468379
  },
- "stop_time": 86400.0,
+ "stop_time": 9072000.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

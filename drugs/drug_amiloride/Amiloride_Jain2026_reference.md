@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
+**The amiloride record was rejected because its apparent parameters (CL/F 19 L/h, V/F 9.83 L) are incoherent with the bioavailability fraction Fab 0.133, indicating a double bioavailability correction.**
+
+The record, built from the paper's abstract only, reports amiloride apparent clearance of 19 L/h and apparent central volume of 9.83 L together with an absolute bioavailability of 0.133; the apparent-parameter coherence check found a double correction, so the values cannot both be used as reported. A second reader also could not confirm the dose compound and primary analyte as amiloride, and read the four parameter values (0.136 h-1, 19 L/h, 9.83 L, 0.133) as absent from the record. Extracted — amiloride: kabs 0.136 h-1, CL/F 19 L/h, V/F 9.83 L, Fab 0.133 uncertainty.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has amiloride, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Jain M; Kumar S; Battaglia M; Davies S; Rower J; Reilly C; et al. et al. (2026). European journal of drug metabolism and pharmacokinetics 51

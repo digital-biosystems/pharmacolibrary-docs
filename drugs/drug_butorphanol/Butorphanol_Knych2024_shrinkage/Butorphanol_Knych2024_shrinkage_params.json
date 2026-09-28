@@ -1,25 +1,34 @@
 {
+ "dose_source": "paper",
  "model_id": "Butorphanol_Knych2024_shrinkage",
+ "molar_masses": {
+  "central.C": 0.32746050000000004
+ },
  "note": "Values for the shared PK_3C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  7.0
+ ],
  "parameters": {
   "Cl": 1.1491666666666665e-05,
   "F": 1.0,
+  "MM": 0.32746050000000004,
   "Tlag": 0.0,
   "VdPerKg": 0.000465,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 7e-06,
   "ka": 0.0017444444444444445,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 2290.9587289012934
+  "central.C": 2310.0010630592114
  },
  "reference_peaks": {
-  "central.C": 0.0005484392947921169
+  "central.C": 3.839113062556469e-05
  },
  "stop_time": 86400.0,
  "template": "PK_3C_enteral",

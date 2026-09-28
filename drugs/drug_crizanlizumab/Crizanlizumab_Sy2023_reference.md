@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The crizanlizumab two-compartment record was rejected because one compartment has no connection to the dose, and the linear elimination rate kint was extracted with no value.**
+**The crizanlizumab two-compartment TMDD model was rejected because one compartment has no path from the dose, making part of the structure unreachable.**
 
-The record describes a two-compartment model for crizanlizumab in healthy subjects and sickle cell disease patients, with a clearance of 0.75, a dissociation constant KD of 0.354, and both volume parameters V and V2 fixed at 1. The structural check found an unreachable or orphan compartment, meaning one of the two compartments has no path from the administered dose, so the stated two-compartment topology is not fully connected. Additionally, the elimination rate constant kint appears in the parameter list without any extracted value, so a placeholder would have stood in for it. These deviations make the record internally incomplete and it was refused. Extracted — crizanlizumab: V 1, KD 0.354, CL 0.75, V2 1.
+The record describes crizanlizumab (Adakveo) in healthy subjects and sickle cell disease patients, with a two-compartment structure and parameters including clearance CL of 0.75, central volume V of 1, peripheral volume V2 of 1, binding affinity KD of 0.354, and an internalisation rate constant kint with no extracted value. The rejection reason is an unreachable or orphan compartment: a compartment in the model structure has no connection from the administered dose, so drug could never reach it. No other failed checks or builder deviations are reported. Extracted — crizanlizumab: V 1, KD 0.354, CL 0.75, V2 1.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

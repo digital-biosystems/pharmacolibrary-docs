@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The olanzapine record reports implausible negative values for apparent clearance (CL/F = -1.02 L/h) and apparent volume of distribution (V/F = -1.52 L), so it was rejected.**
+**Olanzapine clearance CL/F of -1.02 L/h and volume of distribution V/F of -1.52 L are negative, which is physiologically implausible, so the record was rejected.**
 
-For olanzapine in patients with major depressive disorder, the one-compartment model lists CL/F as -1.02 L/h and V/F as -1.52 L; negative apparent clearance and volume are physiologically impossible, indicating the base values or covariate shifts were extracted incorrectly. A second reader additionally read two covariate-effect parameters as negative (-2.08 and -1.96) where this record has no values, so the covariate scenarios may be incomplete as well. Extracted — olanzapine: CL/F -1.02 L/h, V/F -1.52 L.
+The record reports CL/F = -1.02 L/h and V/F = -1.52 L for olanzapine in patients with major depressive disorder; negative clearance and volume cannot occur, indicating the base values are wrong. A second reader extracted different values (-2.08 and -1.96) for the same parameters, so even the extracted numbers are not agreed upon, but both readings remain negative and implausible. Extracted — olanzapine: CL/F -1.02 L/h, V/F -1.52 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q par: this record has none, the second reading -2.08; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

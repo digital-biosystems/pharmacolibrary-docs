@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Metamizole's elimination clearance and intercompartmental clearance had no extracted values, so library defaults were substituted and the model was quarantined; V1/F also lacked a usable unit.**
+**The metamizole model was quarantined because elimination clearance and intercompartmental clearance had no source values and were left at library placeholder defaults, and V1/F was not covered by the parameter check.**
 
-The record reports metamizole dosing to 4-methylaminoantipyrine and downstream metabolites, with parameters kabs 2.528 1/h, V1/F 71.2 L, k12 0.030, k14 0.006, kel 0.178, V2/F 35.6 L, kcomp 0.552, k21 0.008, V3/F 55.1 L, k31 0.074 1/h. But metamizole's elimination clearance and one intercompartmental clearance were never extracted, so placeholder values from a library stood in for them. The parameter-coverage check found 6 of 7 expected parameters covered, with V1/F neither emitted nor defaulted. Also, a reported unit (n = 8, a sample size rather than a unit) could not be converted to SI, so that parameter reached the model builder without an SI value. The builder additionally assumed F=1 and Fm=1 with no molar correction, treating all parameters as apparent. Extracted — metamizole: kabs 2.53 n = 8, V1/F 71.2 L, k12 0.03 n = 8, k14 0.006 n = 8, kel 0.178 n = 8, V2/F 35.6 L, kcomp 0.552 n = 8, k21 0.008 n = 8, … (+3).
+Metamizole's elimination clearance and intercompartmental clearance (Q1) had no values in the paper, so library placeholder values stood in and the model was held back rather than published with invented numbers. The parameter-coverage check expected 7 parameters emitted or defaulted but covered only 6, with V1/F (reported as 71.2 L) neither emitted nor defaulted. Additionally, a reported unit could not be converted to SI, so one parameter reached the model builder without an SI value; the builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization). Extracted — metamizole: kabs 2.53 n = 8, V1/F 71.2 L, k12 0.03 n = 8, k14 0.006 n = 8, kel 0.178 n = 8, V2/F 35.6 L, kcomp 0.552 n = 8, k21 0.008 n = 8, … (+3).
 
 <sub>reviewed by glm-5.3-flash</sub>
 

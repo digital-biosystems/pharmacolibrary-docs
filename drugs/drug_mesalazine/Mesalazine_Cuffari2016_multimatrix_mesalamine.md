@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07E&quot;,&quot;href&quot;:&quot;atc/A07E.md&quot;},{&quot;label&quot;:&quot;mesalazine&quot;,&quot;href&quot;:&quot;drugs/drug_mesalazine/&quot;},{&quot;label&quot;:&quot;Cuffari_2016 \u00b7 multimatrix_mesalamine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mesalazine_Cuffari2016_multimatrix_mesalamine&quot;,&quot;label&quot;:&quot;Cuffari_2016_multimatrix_mesalamine&quot;,&quot;href&quot;:&quot;drugs/drug_mesalazine/Mesalazine_Cuffari2016_multimatrix_mesalamine.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Mesalazine_Cuffari2016_nonmem_estimates&quot;,&quot;label&quot;:&quot;Cuffari_2016_nonmem_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mesalazine_Cuffari2016_nonmem_estimates&quot;,&quot;label&quot;:&quot;Cuffari_2016_nonmem_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_mesalazine/Mesalazine_Cuffari2016_nonmem_estimates.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mesalazine_Cuffari2016_multimatrix_mesalamine&quot;,&quot;label&quot;:&quot;Cuffari_2016_multimatrix_mesalamine&quot;,&quot;href&quot;:&quot;drugs/drug_mesalazine/Mesalazine_Cuffari2016_multimatrix_mesalamine.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # mesalazine — `Mesalazine_Cuffari2016_multimatrix_mesalamine`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,13 +15,13 @@
 
 ### Reviewer guidance
 
-**No value for Ac-5-ASA's clearance and volume of distribution and the rate at which Ac-5-ASA is formed.**
+**The mesalazine (5-ASA) parent–metabolite model was rejected because its simulated time of the peak (0.183 h) does not reproduce the paper's reported tmax values (2–9 h), and its structure and output do not match the required parent–metabolite topology.**
 
-The model was built, but Ac-5-ASA's clearance and volume of distribution and the rate at which Ac-5-ASA is formed had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — mesalazine: CL 85.6 L/h, V 109 L.
+Simulated tmax was 0.183 h against paper values of 6.0, 9.0, 2.0, 9.0 and 7.5 h (ratios 0.0306, 0.0204, 0.0917, 0.0204, 0.0244, 0.0917), exceeding tolerance. The model was built as a one-compartment PK structure instead of the parent–metabolite structure linking 5-ASA to Ac-5-ASA via the metabolic rate constant Kfm. The model output was the central compartment concentration rather than the measured analyte 5-ASA. A second reader also disagreed on the extracted '% dose absorbed, mean' parameter (22.1 in this record, absent in the second reading). Extracted — mesalazine: CL 85.6 L/h, V 109 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of % dose absorbed, mean: this record has 22.1, the second reading none. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `mesalazine`, measured `5-ASA`.
 
@@ -30,15 +30,15 @@ Cuffari C; Pierce D; Korczowski B; Fyderek K; Van Heusen H; Hossack S; et al. et
   ·  DOI: [10.2147/DDDT.S95316](https://doi.org/10.2147/DDDT.S95316)
 
 ## Model component
-<dbs-pgx drug="mesalazine" model-id="Mesalazine_Cuffari2016_multimatrix_mesalamine" status="model_quarantined" stale="false" population="children and adolescents with ulcerative colitis" measured-compound="5-ASA" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="mesalazine" model-id="Mesalazine_Cuffari2016_multimatrix_mesalamine" status="rejected" stale="false" population="children and adolescents with ulcerative colitis" measured-compound="5-ASA" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -70,6 +70,7 @@ Cuffari C; Pierce D; Korczowski B; Fyderek K; Van Heusen H; Hossack S; et al. et
 - population split: 'multimatrix mesalamine' subgroup of Cuffari_2016 (paper reports 2 populations: multimatrix mesalamine, nonmem estimates)
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - unparsed cell ts2-dddt-10-593:row20:col4 = '42.5c'
@@ -148,16 +149,17 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=5-ASA) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | pass | parent_metabolite → PK_Parent_Metabolite* | PK_Parent_Metabolite | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_tmax | reference | skipped | 6 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 7.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_tmax | reference | fail | 6.0 | 0.1833333333517233 | 0.0306 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 9.0 | 0.1833333333517233 | 0.0204 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 2.0 | 0.1833333333517233 | 0.0917 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 9.0 | 0.1833333333517233 | 0.0204 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 7.5 | 0.1833333333517233 | 0.0244 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 2.0 | 0.1833333333517233 | 0.0917 | hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -167,29 +169,24 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_mesalazine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cuffari_2016` / `Cuffari_2016::multimatrix_mesalamine`)
-- model: `../../../knowledgebase/drugs/drug_mesalazine/models/modelica/_needs_review/Mesalazine_Cuffari2016_multimatrix_mesalamine.mo`
-- deviation: `../../../knowledgebase/drugs/drug_mesalazine/models/modelica/_needs_review/Mesalazine_Cuffari2016_multimatrix_mesalamine.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_mesalazine/models/modelica/Mesalazine_Cuffari2016_multimatrix_mesalamine.mo`
+- deviation: `../../../knowledgebase/drugs/drug_mesalazine/models/modelica/Mesalazine_Cuffari2016_multimatrix_mesalamine.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_mesalazine/models/modelica/Mesalazine_Cuffari2016_multimatrix_mesalamine.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_mesalazine/Mesalazine_Cuffari2016_multimatrix_mesalamine/Mesalazine_Cuffari2016_multimatrix_mesalamine_matlab.zip" download>Mesalazine_Cuffari2016_multimatrix_mesalamine_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_mesalazine/Mesalazine_Cuffari2016_multimatrix_mesalamine/Mesalazine_Cuffari2016_multimatrix_mesalamine_matlab_simbio.zip" download>Mesalazine_Cuffari2016_multimatrix_mesalamine_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_mesalazine/Mesalazine_Cuffari2016_multimatrix_mesalamine/Mesalazine_Cuffari2016_multimatrix_mesalamine_sbml.zip" download>Mesalazine_Cuffari2016_multimatrix_mesalamine_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_mesalazine/Mesalazine_Cuffari2016_multimatrix_mesalamine/Mesalazine_Cuffari2016_multimatrix_mesalamine_cellml.zip" download>Mesalazine_Cuffari2016_multimatrix_mesalamine_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 2100 mg infusion over 10 min, single dose. Doses in the paper: 2100, 4200, 7000 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_mesalazine/Mesalazine_Cuffari2016_multimatrix_mesalamine/Mesalazine_Cuffari2016_multimatrix_mesalamine_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_mesalazine/Mesalazine_Cuffari2016_multimatrix_mesalamine/Mesalazine_Cuffari2016_multimatrix_mesalamine_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Mesalazine_Cuffari2016_multimatrix_mesalamine_params.json` · controls `Mesalazine_Cuffari2016_multimatrix_mesalamine_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

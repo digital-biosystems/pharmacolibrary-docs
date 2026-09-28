@@ -130,9 +130,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | skipped | not captured | 0.0001813454414262626 | not captured | non-numeric value |
-| T1_t_half_terminal | reference | skipped | not captured | 2.0314993885419153 | not captured | non-numeric value |
-| T1_tmax | reference | skipped | not captured | 2.501002004008016 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | not captured | 0.0018134689985697871 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | skipped | not captured | 2.0314754544796934 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 2.4919735689099585 | not captured | non-numeric value |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -166,7 +166,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.35 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 1000 mg, single dose, first-order absorption (ka 0.35 /h, F 1). Dose in the paper: 1000 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metformin/Metformin_Nikolaidis2026_final/Metformin_Nikolaidis2026_final_sim_controls.json"></dbs-fmusim>
 

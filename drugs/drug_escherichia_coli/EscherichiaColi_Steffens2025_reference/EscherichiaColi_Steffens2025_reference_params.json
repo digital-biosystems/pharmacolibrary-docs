@@ -1,0 +1,26 @@
+{
+ "dose_source": "library default",
+ "model_id": "EscherichiaColi_Steffens2025_reference",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 4.1388888888888887e-07,
+  "F": 1.0,
+  "VdPerKg": 0.0003311428571428571,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662086
+ },
+ "reference_peaks": {
+  "central.C": 0.00042910378103768756
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The repaglinide record was rejected because its structural parameters carry wrong dimensions — elimination rate constant 0.58 h and distribution volume 23.09 L/h — yielding a physiologically implausible clearance.**
+**The repaglinide record was rejected because the volume of distribution (23.09 L/h) carries a rate-constant unit, a dimension mismatch that makes the value implausible.**
 
-The record, built from the paper's abstract alone (abstract-only), reports repaglinide's mean elimination rate constant as 0.58 with unit 'h' and volume of distribution as 23.09 with unit 'L/h'. Both units are dimensionally wrong for these parameters (an elimination rate constant should be per hour, a distribution volume in litres), so the derived clearance falls outside the physiological window. A second reader could not confirm either value, returning null for both the rate constant and the volume. Extracted — repaglinide: kel 0.58 h, V 23.1 L/h.
+The abstract-only source reports kel = 0.58 h and Vd = 23.09 L/h for repaglinide in healthy Malaysian volunteers; a volume of distribution cannot have units of L/h, so the dimension check failed and the magnitude was judged physiologically implausible, pointing to a unit/scale extraction error. A second reader could not confirm either value, returning null for both kel (0.58) and Vd (23.09). Extracted — repaglinide: kel 0.58 h, V 23.1 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of mean elimination rate constant (k(el)): this record has 0.58, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

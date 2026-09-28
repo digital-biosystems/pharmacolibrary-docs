@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The iron model's structure is nonlinear and cannot be expressed as a standard compartmental model, and a second reader could not confirm any of its four parameter values, so the record was held for review.**
+**The iron model was held back because its model structure is nonlinear and cannot be built from the standard one- and two-compartment structures, and a second reader could not confirm the clearance (0.46 L/h), volume (11.6 L), absorption rate (2.6 h−1) and lag time (0.235 h) values.**
 
-The record describes an iron model in mice with clearance 0.46 L/h, apparent distribution volume 11.6 L, absorption rate 2.6 h−1 and lag time 0.235 h, but its model structure is flagged as nonlinear — a structure outside the set of standard compartmental forms that can be built, which is why it was held back. A second reader disagreed on the dose compound (ferric carboxymaltose vs ferric carboxymaltose (FCM)) and read null for all four parameter values (absorption rate, apparent distribution volume, clearance, lag time), meaning those numbers could not be confirmed from the source. The verdict is needs_review. Extracted — iron: CL 0.46 L/h, V 11.6 L, kabs 2.6 h−1, tlag 0.235 h.
+The record for iron in mice reports CL 0.46 L/h, apparent distribution volume 11.6 L, absorption rate constant 2.6 h−1 and lag time 0.235 h, but the model structure is nonlinear, a structure outside the set of standard compartmental models the builder can construct, so the record was not published. A second reader returned no value for all four parameters, disagreeing with the extracted 0.46, 11.6, 2.6 and 0.235, and also reworded the dose compound as ferric carboxymaltose (FCM). The parameter disagreement is inconclusive: the second reader simply gave no values, so no comparison could be computed. Extracted — iron: CL 0.46 L/h, V 11.6 L, kabs 2.6 h−1, tlag 0.235 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ferric carboxymaltose, the second reading ferric carboxymaltose (FCM); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

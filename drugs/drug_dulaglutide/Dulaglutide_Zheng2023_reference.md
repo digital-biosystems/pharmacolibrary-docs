@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The dulaglutide record was held back because ka and Tlag were not reported in the source and library defaults were substituted, alongside an apparent F=1 parameterization that invented an absorption input.**
+**The dulaglutide record was held back because the absorption rate constant ka and lag time were not reported in the source and placeholder values were used instead, alongside an assumed F=1 parameterization.**
 
-The record reports only CL/F (4.4 mL/day/kg) and V/F (16.7 mL/kg) for dulaglutide; ka and Tlag had no values in the source, so defaults were used in their place. The builder assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent (/F), and the first-order depot input implies extravascular dosing. The invented absorption — a defaulted ka not reported in the source — was adjudicated not acceptable, so the model was not published and awaits review. Extracted — dulaglutide: CL/F 4.4 mL/day/kg, V/F 16.7 mL/kg.
+The source reports only CL/F (4.4 mL/day/kg) and V/F (16.7 mL/kg) for dulaglutide; ka and Tlag were missing and no values were extracted, so library placeholder defaults would have been used for the absorption process, which the adjudication flagged as an invented absorption input. The model builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input implying extravascular dosing. Note the source's own meaning describes CL/F as clearance following oral administration, while dulaglutide is given subcutaneously. Extracted — dulaglutide: CL/F 4.4 mL/day/kg, V/F 16.7 mL/kg.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -97,9 +97,10 @@ _Every reader agrees on every compared field of this record._
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=dulaglutide) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=dulaglutide) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
@@ -124,7 +125,7 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference/Dulaglutide_Zheng2023_reference_modelica.zip" download>Dulaglutide_Zheng2023_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference/Dulaglutide_Zheng2023_reference_fmi.zip" download>Dulaglutide_Zheng2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference/Dulaglutide_Zheng2023_reference_fmi.zip" download>Dulaglutide_Zheng2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference/Dulaglutide_Zheng2023_reference_matlab.zip" download>Dulaglutide_Zheng2023_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference/Dulaglutide_Zheng2023_reference_matlab_simbio.zip" download>Dulaglutide_Zheng2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference/Dulaglutide_Zheng2023_reference_sbml.zip" download>Dulaglutide_Zheng2023_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -136,7 +137,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 3.36 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 3.36, 11.2, 112 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference/Dulaglutide_Zheng2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_dulaglutide/Dulaglutide_Zheng2023_reference/Dulaglutide_Zheng2023_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The colistin sulfate two-compartment model was rejected because one compartment (peripheral volume V2 = 50.5 L) has no connection to the dosed central compartment, leaving it unreachable from the dose.**
+**The colistin sulfate two-compartment model was rejected because its peripheral compartment (volume V2 = 50.5 L) is unreachable — no path connects it to the dose, so the structure is invalid.**
 
-The record describes a two-compartment colistin sulfate model in critically ill patients with central volume V = 16.1 L, peripheral volume V2 = 50.5 L and clearance CL = 1.50 L/h. The review found an unreachable or orphan compartment: the second compartment is not linked by any distribution path from the dose, so the peripheral volume V2 = 50.5 L cannot be reached. No other parameter or structural findings were recorded, and no second-reader disagreements are noted. Extracted — colistin: V 16.1 L, V2 50.5 L, CL 1.5 L/h.
+The record describes colistin (colimycin/colobreathe) in critically ill patients with a two-compartment structure for colistin sulfate, reporting central volume V = 16.1 L, peripheral volume V2 = 50.5 L, and clearance CL = 1.50 L/h. The structural check found an unreachable or orphan compartment: the peripheral compartment has no link from the administered dose, making the topology invalid despite the parameter values being present. Extracted — colistin: V 16.1 L, V2 50.5 L, CL 1.5 L/h.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

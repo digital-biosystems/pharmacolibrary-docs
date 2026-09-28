@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record is filed for alfentanil but its parameters (clearance 11.3 ml/min/kg, volumes 0.39 L/kg and 4.5 times bodyweight) belong to sufentanil, and the model's terminal half-life (969.8613172729558 h) fails to reproduce the paper's values, so it was held back.**
+**The record, nominally for alfentanil, carries sufentanil parameters (CL 11.3 ml/min/kg, V 0.39 L/kg, V/F 4.5 times bodyweight) and fails terminal half-life reproduction (paper 2.48 vs model 1.51), so it was held for review.**
 
-The measured compound is sufentanil while the drug is alfentanil, so the extracted clearance and volumes of distribution do not describe the record's molecule. The terminal half-life checks failed badly: the model gives 969.8613172729558 h against paper values of 2.4833333333333334 and 0.035 (ratios 390.5482 and 27710.3234), with the notes indicating a minutes-to-SI versus simulated-hours unit mismatch. The model builder also defaulted ka (absorption rate), Tlag, k12 and k21 because they were not reported, assumed F=1 and Fm=1 without molar correction, and used first-order depot input, and the invented absorption was judged not acceptable. A second reader disagreed on which apparent volume of distribution belongs to alfentanil (1.0 versus none in this record). Extracted — sufentanil: CL 11.3 ml/min/kg, V 0.39 L/kg, V/F 4.5 times bodyweight.
+The model does not reproduce the paper's terminal half-life (paper 2.48, model 1.51), and further half-life comparisons diverge widely (ratios from 0.0655 to 43.0318), partly because reported times in minutes or hours were compared against simulated hours. The absorption rate constant ka was not reported in the source and was defaulted, which the adjudication deemed not acceptable, and the unit 'times bodyweight' for V/F could not be converted to SI. The two readers also disagree on whether the apparent volume of distribution belongs to alfentanil (null vs 4.5) and on the clearance and volume of distribution values. Extracted — sufentanil: CL 11.3 ml/min/kg, V 0.39 L/kg, V/F 4.5 times bodyweight.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of alfentanil's apparent volume of distribution in adults: this record has none, the second reading 1.0; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -109,6 +109,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=sufentanil) | central.C | not captured | output must be the measured/analyte compartment |
@@ -118,22 +119,22 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | T1_t_half_alpha | reference | skipped | 2.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 2.1 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 2.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | fail | 2.4833333333333334 | 969.8613172729558 | 390.5482 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | skipped | not captured | 969.8613172729558 | not captured | non-numeric value |
-| T1_t_half_beta | reference | fail | 0.7833333333333333 | 969.8613172729558 | 1238.1208 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 0.9083333333333333 | 969.8613172729558 | 1067.7372 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 3.65 | 969.8613172729558 | 265.7154 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 1.6166666666666667 | 969.8613172729558 | 599.9142 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 0.7283333333333334 | 969.8613172729558 | 1331.6174 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 4.6 | 969.8613172729558 | 210.8394 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 0.7866666666666667 | 969.8613172729558 | 1232.8746 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 5.6 | 969.8613172729558 | 173.1895 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 2.1 | 969.8613172729558 | 461.8387 | minutes→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 8.4 | 969.8613172729558 | 115.4597 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 2.7 | 969.8613172729558 | 359.2079 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 23.0 | 969.8613172729558 | 42.1679 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 0.9083333333333333 | 969.8613172729558 | 1067.7372 | minutes→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.035 | 969.8613172729558 | 27710.3234 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.4833333333333334 | 1.5061138940333751 | 0.6065 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | skipped | not captured | 1.5061138940333751 | not captured | non-numeric value |
+| T1_t_half_beta | reference | fail | 0.7833333333333333 | 1.5061138940333751 | 1.9227 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.9083333333333333 | 1.5061138940333751 | 1.6581 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 3.65 | 1.5061138940333751 | 0.4126 | min→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 1.6166666666666667 | 1.5061138940333751 | 0.9316 | min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.7283333333333334 | 1.5061138940333751 | 2.0679 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 4.6 | 1.5061138940333751 | 0.3274 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.7866666666666667 | 1.5061138940333751 | 1.9146 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 5.6 | 1.5061138940333751 | 0.2689 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.1 | 1.5061138940333751 | 0.7172 | minutes→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 8.4 | 1.5061138940333751 | 0.1793 | hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.7 | 1.5061138940333751 | 0.5578 | hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 23.0 | 1.5061138940333751 | 0.0655 | hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.9083333333333333 | 1.5061138940333751 | 1.6581 | minutes→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.035 | 1.5061138940333751 | 43.0318 | minutes→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

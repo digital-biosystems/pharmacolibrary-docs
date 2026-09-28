@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Bosentan record held back because the absorption rate constant ka and lag time Tlag were not reported in the source and default placeholder values were substituted, with an invented first-order absorption deemed not acceptable.**
+**The bosentan record was held back because the model builder invented an absorption rate constant (ka) that the source never reported, alongside defaulted lag time and apparent-parameterization assumptions.**
 
-The record reports only mean CL/F of 3.4 L/h and mean V/F of 77.0 L for bosentan in a one-compartment structure. The absorption rate constant ka and lag time Tlag are missing from the source, so library placeholder values would have been used in their place, and the first-order depot input together with the assumed F=1, Fm=1 and no molar correction are all apparent (/F) parameterizations rather than reported values. The invented absorption deviation — ka defaulted though not reported in the source — was adjudicated not acceptable, so the model was held back. A second reader also disagreed on one extracted value, reading 23 where this record has none. Extracted — bosentan: CL/F 3.4 L/h, V/F 77 L.
+The source reports only mean CL/F of 3.4 L/h and mean V/F of 77.0 L for bosentan; ka and Tlag were not reported and library placeholder defaults were substituted, which the adjudication flagged as an invented absorption parameter. The builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. A second reader disagreed on how the 3.4 L/h clearance value was recorded, listing it under a different field than this record does. Extracted — bosentan: CL/F 3.4 L/h, V/F 77 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q32: this record has 23, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
@@ -130,18 +130,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bosentan/Bosentan_FergusonSells2022_reference/Bosentan_FergusonSells2022_reference_modelica.zip" download>Bosentan_FergusonSells2022_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bosentan/Bosentan_FergusonSells2022_reference/Bosentan_FergusonSells2022_reference_matlab.zip" download>Bosentan_FergusonSells2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bosentan/Bosentan_FergusonSells2022_reference/Bosentan_FergusonSells2022_reference_matlab_simbio.zip" download>Bosentan_FergusonSells2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bosentan/Bosentan_FergusonSells2022_reference/Bosentan_FergusonSells2022_reference_sbml.zip" download>Bosentan_FergusonSells2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_bosentan/Bosentan_FergusonSells2022_reference/Bosentan_FergusonSells2022_reference_cellml.zip" download>Bosentan_FergusonSells2022_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_bosentan/Bosentan_FergusonSells2022_reference/Bosentan_FergusonSells2022_reference.svg" alt="Bosentan_FergusonSells2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 2.5 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 2.5, 10, 20, 40 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_bosentan/Bosentan_FergusonSells2022_reference/Bosentan_FergusonSells2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_bosentan/Bosentan_FergusonSells2022_reference/Bosentan_FergusonSells2022_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Bosentan_FergusonSells2022_reference_params.json` · controls `Bosentan_FergusonSells2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

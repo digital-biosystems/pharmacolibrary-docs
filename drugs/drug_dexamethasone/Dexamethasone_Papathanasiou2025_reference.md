@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The dexamethasone two-compartment model was rejected because its peripheral compartment (V2, 6.63 L) is unreachable — no dosing path connects to it — and a second reader disputes both the compartmental structure and several parameter values.**
+**The dexamethasone two-compartment model was rejected because one compartment is unreachable from the dose, and the parameter set is inconsistent: the central volume is labelled for a different compound (cys-mcMMAF Vc, 12.3 L) and the peripheral volume for an ADC (6.63 L).**
 
-The record describes a two-compartment dexamethasone model with systemic clearance 0.926 L/day, central volume 12.3 L, and peripheral volume 6.63 L, but the peripheral compartment has no link from the administered dose, making it an orphan compartment. A second reader read the structure as one compartment rather than two, and read different values for several parameters (33.2, 2.03, 13.2) that this record leaves empty, while this record's 6.63 L and 2.03 were read as null by the second reader. These unresolved disagreements on structure and parameter values leave the record's contents in doubt. Extracted — dexamethasone: CL 0.926 L/day, V1 12.3 L, V2 6.63 L.
+The record lists dexamethasone clearance of 0.926 L/day, but the central volume of distribution (12.3 L) carries the label 'cys-mcMMAF Vc' and the peripheral volume (6.63 L) the label 'ADC Vp', suggesting values taken from antibody-drug conjugate parameters rather than dexamethasone. The structural check found an unreachable or orphan compartment, i.e. a compartment with no path from the dose. A second reader also disagreed on the structure, reading a one-compartment model instead of two, and read three values (33.2, 2.03, 13.2) where this record has none, while this record assigns 6.63 and 2.03 to fields the second reader left empty. Extracted — dexamethasone: CL 0.926 L/day, V1 12.3 L, V2 6.63 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q31: this record has none, the second reading 33.2; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

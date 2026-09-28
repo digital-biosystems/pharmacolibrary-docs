@@ -1,26 +1,43 @@
 {
+ "dose_source": "paper",
  "model_id": "Eltrombopag_Farrell2014_reference",
+ "molar_masses": {
+  "central.C": 0.44246660000000004
+ },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  5.0,
+  10.0,
+  12.5,
+  20.0,
+  25.0,
+  30.0,
+  37.5,
+  50.0,
+  75.0
+ ],
  "parameters": {
   "Cl": 4.194444444444445e-06,
   "F": 1.0,
+  "MM": 0.44246660000000004,
   "Tlag": 0.0,
   "VdPerKg": 0.00013057142857142857,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 5e-06,
   "k21": 0.00025288526816021723,
   "ka": 0.005611111111111111,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0160968651443
+  "central.C": 660.0000000662055
  },
  "reference_peaks": {
-  "central.C": 4.47181503116471e-07
+  "central.C": 2.235976400563885e-08
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

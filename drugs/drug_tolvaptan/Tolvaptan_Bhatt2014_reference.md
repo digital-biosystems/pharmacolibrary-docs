@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The tolvaptan record was held back because the absorption rate constant ka and lag time Tlag were not reported in the source, so placeholder values were substituted and an absorption input was effectively invented for the apparent (/F) parameterization.**
+**The tolvaptan record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside other unreported assumptions (Tlag, F=1).**
 
-The record reports tolvaptan CL/F of 5.36 mL/min/kg and V/F of 370.2486 L from a secondary review source, but ka and Tlag were missing and placeholder values were substituted, so a first-order absorption input not present in the source was assumed. The parameterization is apparent (F=1, Fm=1, no molar correction), implying extravascular dosing. A second reader also disagreed on several extracted values (74.3 vs 1.15; 28 vs 315; 3.0 vs null; null vs 20), so those quantities remain inconclusive. Extracted — tolvaptan: CL/F 5.36 mL/min/kg, V/F 370 L.
+The source reports only CL/F (5.36 mL/min/kg) and V/F (370.2486 L) for tolvaptan; ka and Tlag were left at library defaults because the paper gives no values, and the invented ka was judged unacceptable. The model also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. A second reader further disagreed on several extracted values, e.g. 74.3 vs 1.15 and 28 vs 315, with one value (3.0) read as absent by the second reader. Extracted — tolvaptan: CL/F 5.36 mL/min/kg, V/F 370 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has 74.3, the second reading 1.15; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -144,7 +144,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 30 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 30 mg oral (C03XA01) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference/Tolvaptan_Bhatt2014_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tolvaptan/Tolvaptan_Bhatt2014_reference/Tolvaptan_Bhatt2014_reference_sim_controls.json"></dbs-fmusim>
 

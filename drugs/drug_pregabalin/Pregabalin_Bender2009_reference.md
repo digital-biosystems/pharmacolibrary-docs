@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The rat pregabalin two-compartment model was rejected because the extracted clearance (0.034 L/hr) and central volume (0.270 L) fall outside physiological plausibility, indicating a unit or scale extraction error.**
+**The pregabalin rat model was rejected because its clearance (0.034 L/hr) and volumes (V1 0.270 L, V2 6.75 L) fall outside plausible physiological windows, suggesting a unit or scale extraction error.**
 
-The record lists pregabalin clearance as 0.034 L/hr and central volume V1 as 0.270 L in rats, magnitudes deemed physiologically implausible for this species and drug, consistent with a unit or scale misreading of the published values. The remaining parameters (Q 0.0225 L/hr, V2 6.75 L, kabs 2.0 h⁻¹, tlag 0.495 h, θSLD 0.302, and the NAT2 covariate effects) were extracted, and a second reader raised no disagreements on the NAT2 covariate values, the absorption rate constant, the lag time, or the categorical-fractional form of the clearance covariate. The rejection therefore rests on the implausible clearance and volume magnitudes alone. Extracted — pregabalin: CL 0.034 L/hr, V1 0.27 L, Q 0.0225 L/hr, V2 6.75 L, kabs 2 h À1, tlag 0.495 hour.
+The plausibility check flagged the magnitudes of CL (0.034 L/hr), V1 (0.270 L) and V2 (6.75 L) as implausible for a rat pregabalin model, consistent with a unit or scale extraction error. The remaining parameters (Q 0.0225 L/hr, kabs 2.0 h⁻¹, tlag 0.495 hour, θSLD 0.302) and the NAT2 covariate effects were recorded, but a second reader returned no values for the NAT2 covariate, kabs, tlag, and no covariate form for CL, so these entries stand without independent confirmation. Extracted — pregabalin: CL 0.034 L/hr, V1 0.27 L, Q 0.0225 L/hr, V2 6.75 L, kabs 2 h À1, tlag 0.495 hour.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of nat2: this record has {'*1/*1': 0.0, '*1/*6': -0.0783, 'C/C': -0.138, 'G/T': -0.2769, 'IM': -0.0496, 'PM': -0.0594, 'T/C': 0.007}, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

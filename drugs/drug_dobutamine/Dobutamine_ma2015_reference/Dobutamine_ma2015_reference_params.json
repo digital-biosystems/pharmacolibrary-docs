@@ -1,25 +1,37 @@
 {
+ "dose_source": "paper",
  "model_id": "Dobutamine_ma2015_reference",
+ "molar_masses": {
+  "central.C": 0.30138010000000004
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  140.0,
+  420.0,
+  700.0,
+  1400.0
+ ],
  "parameters": {
   "Cl": 7.777777777777777e-08,
   "F": 1.0,
+  "MM": 0.30138010000000004,
   "VdPerKg": 0.0004941,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.00014,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662008
+  "central.C": 660.0000000662005
  },
  "reference_peaks": {
-  "central.C": 0.0028893100816374424
+  "central.C": 0.0040450341069013795
  },
- "stop_time": 86400.0,
+ "stop_time": 1555200.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

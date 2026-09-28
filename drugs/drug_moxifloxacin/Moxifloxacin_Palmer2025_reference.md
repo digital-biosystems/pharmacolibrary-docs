@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The moxifloxacin two-compartment model in children with rifampicin-resistant tuberculosis was quarantined because clearance, distribution volume, absorption rate constant, lag time and both intercompartmental rate constants had no extracted values, so library defaults were substituted.**
+**The moxifloxacin model was quarantined because clearance, volume of distribution, absorption rate constant, absorption lag time and both intercompartmental rate constants had no source values and library placeholders were used instead.**
 
-The record lists only CL/F 6.90 L/h, V1/F 61.1 L, Q/F 0.860 L/h, V2/F 44.5 L and MAT 1.01 h for moxifloxacin; the absorption rate constant, lag time and the micro-rate constants (k12, k21) corresponding to the reported Q/F and V2/F were absent, and Cl, Vd, ka, Tlag, k12 and k21 were left at library defaults. The absorption input was additionally invented (ka defaulted, not reported in the source) and judged not acceptable, with an apparent (/F) parameterization assuming F=1 and Fm=1 without molar correction. The established finding confirms the model was built but held back rather than published with invented numbers. Extracted — moxifloxacin: CL/F 6.9, V1/F 61.1, Q/F 0.86, V2/F 44.5, MAT 1.01 h.
+Although the paper reports apparent parameters for moxifloxacin (CL/F 6.90 L/h, V1/F 61.1 L, Q/F 0.860 L/h, V2/F 44.5 L, MAT 1.01 h), the model's clearance, volume of distribution, absorption rate constant, absorption lag time, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The builder also assumed F=1 and Fm=1 without molar correction, giving an apparent (/F) parameterization, and used first-order depot input consistent with extravascular dosing. The absorption rate constant was defaulted because it was not reported in the source, and this invented absorption was judged not acceptable; the deviations check could not compute a comparison (ratio None). Extracted — moxifloxacin: CL/F 6.9, V1/F 61.1, Q/F 0.86, V2/F 44.5, MAT 1.01 h.
 
 Independently confirmed by `gpt-oss:120b`.
 
@@ -90,6 +90,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |

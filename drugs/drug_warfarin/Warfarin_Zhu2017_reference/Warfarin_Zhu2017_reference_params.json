@@ -1,4 +1,5 @@
 {
+ "dose_source": "WHO ATC DDD 7.5 mg parenteral (B01AA03)",
  "model_id": "Warfarin_Zhu2017_reference",
  "molar_masses": {
   "central.C": 0.3083
@@ -14,14 +15,14 @@
   "VdPerKg": 0.00032714285714285717,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 7.5e-06,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.000000066206
+  "central.C": 660.0000000662028
  },
  "reference_peaks": {
-  "central.C": 0.004357513409499471
+  "central.C": 0.0003268135394872197
  },
  "stop_time": 518400.0,
  "template": "PK_1C",

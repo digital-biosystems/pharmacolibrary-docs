@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02A&quot;,&quot;href&quot;:&quot;atc/A02A.md&quot;},{&quot;label&quot;:&quot;calcium carbonate&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_carbonate/&quot;},{&quot;label&quot;:&quot;Ekobena_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CalciumCarbonate_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_carbonate/CalciumCarbonate_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;CalciumCarbonate_Ahn2014_reference&quot;,&quot;label&quot;:&quot;Ahn_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CalciumCarbonate_Kemal2026_reference&quot;,&quot;label&quot;:&quot;Kemal_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;CalciumCarbonate_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_carbonate/CalciumCarbonate_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;CalciumCarbonate_Kemal2026_reference&quot;,&quot;label&quot;:&quot;Kemal_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_carbonate/CalciumCarbonate_Kemal2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;CalciumCarbonate_Ahn2014_reference&quot;,&quot;label&quot;:&quot;Ahn_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_calcium_carbonate/CalciumCarbonate_Ahn2014_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -110,6 +110,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=calcium_carbonate) | central.C | not captured | output must be the measured/analyte compartment |
@@ -149,7 +150,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 2.6 /h, lag 14.1 min, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 50 mg, single dose, first-order absorption (ka 2.6 /h, lag 14.1 min, F 1). Dose in the paper: 50 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_calcium_carbonate/CalciumCarbonate_Ekobena2025_reference/CalciumCarbonate_Ekobena2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_calcium_carbonate/CalciumCarbonate_Ekobena2025_reference/CalciumCarbonate_Ekobena2025_reference_sim_controls.json"></dbs-fmusim>
 

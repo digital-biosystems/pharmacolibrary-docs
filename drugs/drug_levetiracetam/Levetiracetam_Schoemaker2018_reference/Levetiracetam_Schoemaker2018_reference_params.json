@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 1500 mg oral (N03AX14)",
  "model_id": "Levetiracetam_Schoemaker2018_reference",
+ "molar_masses": {
+  "central.C": 0.170212
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,19 +11,20 @@
  "parameters": {
   "Cl": 7e-06,
   "F": 1.0,
+  "MM": 0.170212,
   "Tlag": 0.0,
   "VdPerKg": 0.00133,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.0015,
   "ka": 0.0008277777777777778,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 3562.684119556584
+  "central.C": 3560.964631232645
  },
  "reference_peaks": {
-  "central.C": 0.000844441840477468
+  "central.C": 0.012666573272845363
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

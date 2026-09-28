@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The exenatide one-compartment model was rejected because its clearance of 3.62 ml/min and central volume of 43.2 ml fall outside plausible physiological ranges, suggesting a unit or scale extraction error.**
+**The exenatide record was rejected because its clearance (3.62 ml/min) and central volume of distribution (43.2 ml) fall outside physiological plausibility, indicating a unit or scale extraction error.**
 
-The record reports a one-compartment exenatide model with clearance CL of 3.62 ml/min and central volume V1 of 43.2 ml, values judged physiologically implausible in magnitude and consistent with a unit or scale extraction error. The source text is review-secondary, so the parameters come from a secondary review source rather than the primary publication. A second reader disagreed on several extracted values, reading 4.67, 0.826, and 0.0153 where this record had null, 0.0207, and 0.0153 respectively, indicating the numeric extraction was not reproducible. Extracted — exenatide: CL 3.62 ml/min, V1 43.2 ml.
+The record reports total clearance of 3.62 ml/min and a central volume of 43.2 ml for exenatide, magnitudes flagged as implausible for this molecule and consistent with a unit/scale extraction error. The source is a review (review-secondary) rather than a primary fitted model. A second reader also disagreed with several extracted values, leaving some fields with conflicting or missing numbers (e.g., 0.0207 versus 0.0153, and values present in one reading but null in the other). Extracted — exenatide: CL 3.62 ml/min, V1 43.2 ml.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q3: this record has 0.0966, the second reading none; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -15,13 +15,13 @@
 
 ### Reviewer guidance
 
-**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
+**The bumetanide record from Jullien_2016 was rejected because its clearance (0.063 L/h) and distribution volumes (V1 0.28 L, V2 0.44 L) fall outside physiological plausibility for term newborns, suggesting a unit or scale extraction error.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bumetanide: CL 0.063 L/h, V1 0.28 L, V2 0.44 L, Q 0.59 L/h.
+The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The plausibility check flagged the clearance/volume magnitudes as implausible, consistent with a unit or scale extraction error. A second reader returned null for all four parameter values (clearance 0.063 L/h, V1 0.28 L, V2 0.44 L, Q 0.59 L/h), leaving the extracted numbers unconfirmed, and also disagreed on the dose compound and primary analyte fields. Extracted — bumetanide: CL 0.063 L/h, V1 0.28 L, V2 0.44 L, Q 0.59 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bumetanide, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Jullien V; Pressler RM; Boylan G; Blennow M; Marlow N; Chiron C; et al. et al. (2016). Journal of clinical pharmacology 56

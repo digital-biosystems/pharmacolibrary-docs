@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The ephedrine parent–metabolite record was rejected because the absorption rate constant kabs carries a dimension mismatch (0.064 l·min⁻¹ instead of min⁻¹), and the record was built from the paper's abstract alone rather than a fitted model.**
+**The ephedrine record was rejected because the absorption rate constant kabs is reported with the unit l/min instead of a first-order rate unit (1/min), a dimension mismatch on a structural parameter.**
 
-The structural absorption rate constant for ephedrine is recorded as 0.064 l·min⁻¹, a dimension mismatch for a first-order rate constant, which triggered the rejection. The record is abstract-only, so the reported summary statistics stood in for a fitted model, compounding uncertainty in all extracted values (CL 0.083 l·min⁻¹, V 38.6 l, kabs 0.064, Frel 32 %). A second reader returned null for every parameter, including the relative bioavailability of 32 %, so no independent confirmation of any value exists. Extracted — ephedrine: CL 0.083 l min(-1), V 38.6 l, kabs 0.064 l min(-1), Frel 32 %.
+In this parent–metabolite model of ephedrine with metabolism to norephedrine (Kfm), the absorption rate constant kabs carries value 0.064 with unit 'l min(-1)', which is a clearance-like unit and dimensionally inconsistent for a rate constant. The record was also built from the paper's abstract only, so reported summary statistics stood in for a fitted model. A second reader disagreed with all extracted values — kabs 0.064, clearance 0.083 l/min, volume 38.6 l, and relative bioavailability 32% — reading none of them from the source. Extracted — ephedrine: CL 0.083 l min(-1), V 38.6 l, kabs 0.064 l min(-1), Frel 32 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 32, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 

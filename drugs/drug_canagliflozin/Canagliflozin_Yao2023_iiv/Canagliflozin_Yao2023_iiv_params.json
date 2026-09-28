@@ -1,4 +1,5 @@
 {
+ "dose_source": "library default",
  "model_id": "Canagliflozin_Yao2023_iiv",
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
@@ -10,14 +11,14 @@
   "VdPerKg": 8.042857142857142e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662021
+  "central.C": 660.000000066207
  },
  "reference_peaks": {
-  "central.C": 0.0014472044360628003
+  "central.C": 0.00014472044466070592
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

@@ -1,4 +1,5 @@
 {
+ "dose_source": "WHO ATC DDD 30 mg parenteral (C01EB16)",
  "model_id": "Ibuprofen_Todd1986_reference",
  "molar_masses": {
   "central.C": 0.2062808
@@ -14,14 +15,14 @@
   "VdPerKg": 7.142857142857143e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 3e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662046
+  "central.C": 660.000000066204
  },
  "reference_peaks": {
-  "central.C": 0.019605280283139136
+  "central.C": 0.005881584042648015
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

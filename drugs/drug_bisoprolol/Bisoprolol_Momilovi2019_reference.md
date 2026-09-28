@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The bisoprolol model's terminal half-life is 132.70930720390157 h versus the paper's 13.5 h (ratio 9.8303), and the absorption rate constant ka was invented (defaulted) rather than taken from the source, so the record was held back.**
+**The bisoprolol model's terminal half-life is 131.665565673719 h versus the paper's 13.5 h (ratio 9.753), and the builder invented an absorption rate (ka) not reported in the source, so the record was held back.**
 
-Simulated as the paper dosed it, the model's terminal half-life (132.70930720390157 h) differs from the reported 13.5 h by far more than the tolerance. No absorption rate constant or lag time was reported in the source, so placeholder values were used in their place, and bioavailability was assumed to be 1 with no molar correction (apparent /F parameterization with first-order depot input). A second reader also disagreed on the interindividual variance of clearance, reading 0.82 where the record holds null. Extracted — bisoprolol: CL/F 2.7 L/h, V 513 L, CL 0.0612.
+Simulated as the paper dosed it, the model's terminal half-life (131.665565673719 h) differs from the reported 13.5 h by more than the tolerance, an established failure. The model builder substituted library defaults for ka and Tlag, which the source does not report, and adjudication flagged this invented absorption as not acceptable. The model also assumes F=1 and Fm=1 with apparent (/F) parameterization and no molar correction, and a second reader disagreed on the interindividual variance of CL (0.0612 vs 0.82). Extracted — bisoprolol: CL/F 2.7 L/h, V 513 L, CL 0.0612.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of dd: this record has none, the second reading 0.82. That field shapes the model, so the record is marked disputed.
 
@@ -104,13 +104,14 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=bisoprolol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | fail | 13.5 | 132.70930720390157 | 9.8303 | hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 13.5 | 131.665565673719 | 9.753 | hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -144,7 +145,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 0.625 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 0.625–7.5 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference/Bisoprolol_Momilovi2019_reference_sim_controls.json"></dbs-fmusim>
 

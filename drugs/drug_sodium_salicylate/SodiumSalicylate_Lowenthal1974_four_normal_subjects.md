@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 5, model 1.38).**
+**The model does not reproduce the paper's terminal half-life (paper 5, model 1.37).**
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — sodium salicylate: V 5.43 liter, t1/2β 247 min, CL 0.04 L/h/kg, kabs 0.64 1/h, tlag 0.42 h.
 
@@ -129,8 +129,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_terminal | reference | fail | 5.0 | 1.377159936902736 | 0.2754 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 5.266666666666667 | 1.377159936902736 | 0.2615 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 5.0 | 1.3700019176854161 | 0.274 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 5.266666666666667 | 1.3700019176854161 | 0.2601 | min→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -152,7 +152,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_four_normal_subjects/SodiumSalicylate_Lowenthal1974_four_normal_subjects_modelica.zip" download>SodiumSalicylate_Lowenthal1974_four_normal_subjects_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_four_normal_subjects/SodiumSalicylate_Lowenthal1974_four_normal_subjects_fmi.zip" download>SodiumSalicylate_Lowenthal1974_four_normal_subjects_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_four_normal_subjects/SodiumSalicylate_Lowenthal1974_four_normal_subjects_matlab.zip" download>SodiumSalicylate_Lowenthal1974_four_normal_subjects_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_four_normal_subjects/SodiumSalicylate_Lowenthal1974_four_normal_subjects_matlab_simbio.zip" download>SodiumSalicylate_Lowenthal1974_four_normal_subjects_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_four_normal_subjects/SodiumSalicylate_Lowenthal1974_four_normal_subjects_sbml.zip" download>SodiumSalicylate_Lowenthal1974_four_normal_subjects_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -164,7 +164,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.64 /h, lag 25.2 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 3000 mg, single dose, first-order absorption (ka 0.64 /h, lag 25.2 min, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 3000 mg oral (N02BA04) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_four_normal_subjects/SodiumSalicylate_Lowenthal1974_four_normal_subjects_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_sodium_salicylate/SodiumSalicylate_Lowenthal1974_four_normal_subjects/SodiumSalicylate_Lowenthal1974_four_normal_subjects_sim_controls.json"></dbs-fmusim>
 

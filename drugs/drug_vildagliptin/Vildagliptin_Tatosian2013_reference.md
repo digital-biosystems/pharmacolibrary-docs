@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The vildagliptin record was rejected because its clearance of 60 mL/min is actually an estimated creatinine clearance (a renal function value, not the drug's clearance), and the derived volume of 0.303 L is physiologically implausible.**
+**The vildagliptin record was rejected because its clearance (60 mL/min) is actually estimated creatinine clearance, not drug clearance, and the derived volume of distribution (0.303 L) is physiologically implausible for vildagliptin.**
 
-The parameter labelled 'estimated creatinine clearance' was recorded as the vildagliptin clearance (60.0 mL/min), a unit/scale extraction error since creatinine clearance is a patient renal function measure rather than the drug's systemic clearance. From this clearance and a half-life, the volume was back-calculated as V = CL·t½/ln2 = 0.303 L, a magnitude far outside the physiological window for vildagliptin distribution. A second reader disagreed on the half-life value, reading 9.49 where the record holds 3.5, and left the clearance (60) and another value (200) unconfirmed (null), so the extracted numbers are not consistently supported. Extracted — vildagliptin: CL 60 mL/min, V 0.303 L.
+The parameter labelled 'estimated creatinine clearance' (60 mL/min) was taken as total drug clearance for vildagliptin, a unit/scale extraction error that makes the clearance value implausible as a drug elimination factor. The volume V (0.303 L), derived from CL·t½/ln2, inherits this error and falls far outside any physiological window for volume of distribution. A second reader left the clearance value (60) and another value (200) unconfirmed, and disagreed on one value (3.5 recorded versus 9.49 by the second reader), so the extracted numbers are not consistently supported. Extracted — vildagliptin: CL 60 mL/min, V 0.303 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 60, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

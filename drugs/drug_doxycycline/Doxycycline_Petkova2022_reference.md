@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The doxycycline one-compartment model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no source values, so library placeholders were substituted for all four.**
+**The doxycycline model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no source values and generic placeholder values were used instead.**
 
-The record lists kabs 0.093, V/F 4.73, kel 0.154 and tlag 0.80 for doxycycline, but the review found no value for doxycycline's clearance, volume of distribution, absorption rate constant and absorption lag time in the source, so placeholders stood in for Cl, Vd, ka and Tlag. The absorption rate constant was additionally flagged as invented — it was not reported in the source — and the absorption model was judged not acceptable. The builder also assumed F=1 and Fm=1 with no molar correction, parameterizing the model in apparent terms. Extracted — doxycycline: kabs 0.093, V/F 4.73, kel 0.154, tlag 0.8.
+Although the record lists kabs 0.093, V/F 4.73, kel 0.154 and tlag 0.80 for doxycycline, the review found no reported values for clearance, volume of distribution, absorption rate constant and absorption lag time, so generic placeholder values stood in for these parameters and the model was held back rather than published with invented numbers. The builder also assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent. An adjudicated check flagged the defaulted absorption rate constant as an invented absorption process, which was judged not acceptable. Extracted — doxycycline: kabs 0.093, V/F 4.73, kel 0.154, tlag 0.8.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -80,6 +80,7 @@ Petkova T; Yordanova A; Milanova A et al. (2022). Pharmaceutics 14
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |

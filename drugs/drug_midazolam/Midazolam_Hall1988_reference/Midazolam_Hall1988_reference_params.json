@@ -1,4 +1,5 @@
 {
+ "dose_source": "paper",
  "model_id": "Midazolam_Hall1988_reference",
  "molar_masses": {
   "central.C": 0.325767
@@ -7,6 +8,10 @@
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  175.0
+ ],
  "parameters": {
   "Cl": 0.0003716666666666667,
   "F": 1.0,
@@ -14,14 +19,14 @@
   "VdPerKg": 4.257142857142857e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.000175,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 143.73716245690554
+  "central.C": 660.0000000662053
  },
  "reference_peaks": {
-  "central.C": 0.0004484312950672647
+  "central.C": 0.0007847533622248227
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

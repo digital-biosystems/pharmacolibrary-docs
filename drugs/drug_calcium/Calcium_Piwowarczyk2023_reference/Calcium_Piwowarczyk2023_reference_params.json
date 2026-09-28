@@ -1,5 +1,9 @@
 {
+ "dose_source": "library default",
  "model_id": "Calcium_Piwowarczyk2023_reference",
+ "molar_masses": {
+  "central.C": 0.040078
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,6 +11,7 @@
  "parameters": {
   "Cl": 3.194444444444444e-07,
   "F": 1.0,
+  "MM": 0.040078,
   "Tlag": 0.0,
   "VdPerKg": 9.457142857142858e-05,
   "adminCount": 1.0,
@@ -16,12 +21,12 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 15425.207333397204
+  "central.C": 15425.207642214573
  },
  "reference_peaks": {
-  "central.C": 0.007303115306662007
+  "central.C": 0.007303115185367874
  },
- "stop_time": 86400.0,
+ "stop_time": 108000.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The doxorubicin record was rejected because its extracted clearance (0.148 cm³/day) and central volume (0.0764 L) are physiologically implausible magnitudes, indicating a unit or scale extraction error.**
+**The doxorubicin record was rejected because its extracted clearance (0.148 cm³/day) and central volume (0.0764 l) are physiologically implausible, indicating a unit or scale extraction error.**
 
-The record lists doxorubicin clearance CL as 0.148 cm³/day and central volume of distribution V as 0.0764 L, values far outside any plausible physiological range for this drug, which points to a unit or scale misreading of the source table (the verbatim labels 'L 1 [cm 3 /day]' and 'V c [l] (%CV)' suggest the printed values carry scaling or percentage-CV annotations that were not resolved). A second reader disputed the two key values, reading null for CL (0.148) and null for V (0.0764), while confirming the remaining extracted values (5.86, 0.127, 1.24). The model structure itself is a one-compartment model for doxorubicin, so the refusal rests on the implausible parameter magnitudes rather than the topology. Extracted — doxorubicin: CL 0.148 cm 3 /day, V 0.0764 l.
+The record lists doxorubicin total clearance as 0.148 cm³/day and volume of distribution as 0.0764 l, magnitudes far outside any physiological range for this drug, which the review attributed to a unit/scale extraction error. The second reader could not confirm either value (null for both), while agreeing with the other extracted values (5.86, 0.127, 1.24). The record was therefore held back rather than published. Extracted — doxorubicin: CL 0.148 cm 3 /day, V 0.0764 l.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.148, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The vinblastine two-compartment record in rhesus monkeys was rejected because a structural parameter failed a dimensional check, and the AUC∞ unit nM·min could not be expressed in SI.**
+**Rejected for a dimension mismatch on a structural parameter: the vinblastine two-compartment record mixes time bases, with tlag reported as 0.17 h while all rate constants and half-lives (t1/2α 1.9 min, t1/2β 152 min, kel 0.054 min⁻¹) are in minutes.**
 
-The record reports vinblastine half-lives (t1/2α 1.9 min, t1/2β 152 min), volumes (V1 0.210 l/kg, V 1.50 l/kg), clearance 7.0 ml/min/kg, micro-rate constants (k10 0.054, k12 0.281, k21 0.031 min⁻¹) and a lag time of 0.17 h, but a dimension mismatch was flagged on a structural parameter. The AUC∞ of 31146 nM·min is reported in a unit that could not be converted to SI, so the value entered the review without an SI equivalent. A second reader also disagreed on the dosed compound, reading vincristine, vinblastine and vindesine where the record lists only vinblastine. Extracted — vinblastine: t1/2α 1.9 min, t1/2β 152 min, V1 0.21 l/kg, V 1.5 l/kg, AUC∞ 3.11e+04 nM · min, CL 7 ml/min/kg, kel 0.054 min⁻¹, k12 0.281 min⁻¹, … (+2).
+The record for vinblastine in adult male rhesus monkeys (Sethi_1984) carries an absorption lag time of 0.17 h, a unit that could not be converted to SI, so the parameter arrived without an SI value and failed the dimension check on a structural parameter. The rest of the parameterization is internally in minutes: k12 0.281 min⁻¹, k21 0.031 min⁻¹, kel 0.054 min⁻¹, with V1 0.210 l/kg, V 1.50 l/kg, CL 7.0 ml/min/kg and AUC∞ 31146 nM·min. A second reader also disagreed on the dosed compound, reading the record as covering vincristine, vinblastine and vindesine rather than vinblastine alone. Extracted — vinblastine: t1/2α 1.9 min, t1/2β 152 min, V1 0.21 l/kg, V 1.5 l/kg, AUC∞ 3.11e+04 nM · min, CL 7 ml/min/kg, kel 0.054 min⁻¹, k12 0.281 min⁻¹, … (+2).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has vinblastine, the second reading vincristine, vinblastine, vindesine. That field shapes the model, so the record is marked disputed.
 

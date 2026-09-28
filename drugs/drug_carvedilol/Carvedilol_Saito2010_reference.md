@@ -15,13 +15,13 @@
 
 ### Reviewer guidance
 
-**No value for carvedilol's volume of distribution, absorption rate constant and absorption lag time; t6_deviations.**
+**The carvedilol model was quarantined because Vd, ka and Tlag were not reported in Saito_2010 and library defaults were substituted, with an invented absorption rate constant flagged as unacceptable.**
 
-The model was built, but carvedilol's volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — carvedilol: CL/F 1.89 l/h/kg, Ae 0.116.
+The record reports carvedilol CL/F of 1.89 l/h/kg and fraction excreted unchanged (Ae) of 0.116 for R- and S-carvedilol in Japanese chronic heart failure patients, but the volume of distribution, absorption rate constant and lag time had no source values, so placeholders stood in and the model was held back. The builder also assumed F=1 and Fm=1 without molar correction (apparent parameterization) and used first-order depot input consistent with extravascular dosing. A check on these deviations returned 'invented_absorption: not acceptable'. A second reader disagreed on which parameter the reported 'e abs' value of 0.116 corresponds to — whether it is the amount excreted unchanged or a different quantity. Extracted — carvedilol: CL/F 1.89 l/h/kg, Ae 0.116.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[e abs].parameter_id`: this record has Q91, the second reading Q40. That field shapes the model, so the record is marked disputed.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 > **Dose compound ≠ measured compound:** dosed `carvedilol`, measured `R-carvedilol and S-carvedilol`.
 
@@ -125,6 +125,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |

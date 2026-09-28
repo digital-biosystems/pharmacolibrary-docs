@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The naldemedine model was quarantined because its clearance (CL/F) and absorption rate constant (Ka) had no extracted values, so placeholder defaults stood in for these parameters.**
+**The naldemedine two-compartment model was quarantined because clearance (CL/F) and absorption rate constant (Ka) had no values in the source and placeholder defaults were substituted.**
 
-The record lists naldemedine's CL/F and Ka with units (L/hr and hr-1) but no values, and placeholder default values were substituted for both missing parameters; Ka was not reported in the source paper at all. The model also assumed apparent parameterization (F=1, Fm=1, no molar correction). A second reader extracted values for the two missing parameters (51.36 and 12.66) where this record had none, and the check on the invented absorption rate constant returned 'not acceptable'. Extracted — naldemedine: V1/F 87.5 L, Q/F 5.59 L/hr, V2/F 46.6 L, tlag 0.202 hr.
+The record lists CL/F and Ka for naldemedine without values, so library placeholder values replaced them; the model was held back rather than published with invented numbers. The builder also assumed F=1 and Fm=1 with no molar correction, making all parameters apparent (V1/F 87.5 L, Q/F 5.59 L/hr, V2/F 46.6 L, tlag 0.202 hr). An adjudication flagged the defaulted Ka as an invented absorption parameter. A second reader reported different extreme parameter values (51.36 and 12.66) than this record, which lists none for those fields. Extracted — naldemedine: V1/F 87.5 L, Q/F 5.59 L/hr, V2/F 46.6 L, tlag 0.202 hr.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of max: this record has none, the second reading 51.36; it also differs on 1 more field. That field does not shape the model.
 
@@ -142,6 +142,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |

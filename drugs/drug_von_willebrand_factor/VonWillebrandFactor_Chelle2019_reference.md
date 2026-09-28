@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The von Willebrand factor record was rejected because its intercompartmental clearance Q is recorded as 0.078 L/h, a physiologically implausible magnitude suggesting a misread value, which a second reader gives as 0.456 L/h.**
+**Rejected because the von Willebrand factor two-compartment parameters fall outside physiological plausibility — clearance 0.195 L/h, central volume 2.3 L, peripheral volume 0.449 L and intercompartmental clearance 0.078 L/h suggest a unit or scale extraction error.**
 
-The two-compartment model for von Willebrand factor (Alphanate and related products) lists CL 0.195 L/h, V1 2.3 L, V2 0.449 L and Q 0.078 L/h. The rejection rests on the clearance/volume plausibility check: Q at 0.078 L/h falls outside the physiological window, consistent with a unit or scale extraction error. A second reader disputed the Q value, reading 0.456 L/h where this record holds null-to-0.078, so the recorded magnitude is contested. The remaining parameters were not flagged. Extracted — von willebrand factor: CL 0.195 L/h, V1 2.3 L, V2 0.449 L, Q 0.078 L/h.
+The record for von Willebrand factor (Chelle_2019, two-compartment structure) reports CL 0.195 L/h, V1 2.3 L, V2 0.449 L and Q 0.078 L/h, and the plausibility check judged these magnitudes physiologically implausible, pointing to a unit or scale error in extraction. A second reader disputed one value, reading 0.456 where this record has no value, so the peripheral volume figure is not settled between readers. Extracted — von willebrand factor: CL 0.195 L/h, V1 2.3 L, V2 0.449 L, Q 0.078 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q312: this record has none, the second reading 0.456. That field does not shape the model.
 

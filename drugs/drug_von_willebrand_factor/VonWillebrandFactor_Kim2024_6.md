@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record misreads a table column ('6') as a study population and reports physiologically implausible factor VIII parameters (CL 0.0243 L/h, V1 6.46 L, V2 0.391 L), so it was rejected.**
+**Rejected: the record for von Willebrand factor/factor VIII (Kim_2024) mis-splits the estimates table — column '6' is a table statistic, not a study population — and the factor VIII clearance of 0.0243 L/h is physiologically implausible, indicating a unit or scale extraction error.**
 
-The estimates table was split into one record per column, and column '6' holds a statistic rather than a second set of estimates, so the record does not represent a fitted population. The extracted factor VIII parameters are outside physiological windows — clearance 0.0243 L/h and peripheral volume 0.391 L — consistent with a unit or scale extraction error; a second reader read clearance as 0.000242 L/h. The second reader also disagreed on the dosing compound (BT200 vs unknown) and the primary analyte (factor VIII vs von Willebrand factor), and could not confirm the absorption rate constant (0.0240 1/h) or the volumes V1 (6.46 L) and V2 (0.391 L). Extracted — factor VIII: CL 0.0243 L/h, V1 6.46 L, Q 1.99 L/h, V2 0.391 L, kabs 0.024.
+The estimates table was split into one record per column, and column '6' holds a statistic or structure column rather than a second study population, so the record does not represent a real population. The clearance/volume check flagged the factor VIII parameters as outside physiological windows: CL of 0.0243 L/h with V1 of 6.46 L, Q of 1.99 L/h and V2 of 0.391 L imply implausible magnitudes consistent with a unit or scale extraction error. A second reader read the clearance as 0.000242 L/h (a 100-fold difference) and left the absorption rate constant, intercompartmental clearance and both volumes unread, and disagreed on the dosed compound (BT200 vs factor VIII) and the primary analyte (von Willebrand factor vs factor VIII). Extracted — factor VIII: CL 0.0243 L/h, V1 6.46 L, Q 1.99 L/h, V2 0.391 L, kabs 0.024.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has BT200, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 

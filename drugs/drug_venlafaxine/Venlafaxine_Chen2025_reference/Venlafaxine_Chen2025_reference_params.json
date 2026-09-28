@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 100 mg oral (N06AX16)",
  "model_id": "Venlafaxine_Chen2025_reference",
+ "molar_masses": {
+  "central.C": 0.2774018
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,6 +11,7 @@
  "parameters": {
   "Cl": 3.916666666666667e-05,
   "F": 1.0,
+  "MM": 0.2774018,
   "Tlag": 0.0,
   "VdPerKg": 0.020857142857142855,
   "adminCount": 1.0,

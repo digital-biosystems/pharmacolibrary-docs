@@ -1,17 +1,32 @@
 {
+ "dose_source": "paper",
  "model_id": "Tramadol_Ekstrand2026_reference",
+ "molar_masses": {
+  "central.C": 0.263381
+ },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  140.0,
+  210.0,
+  280.0,
+  700.0,
+  1050.0,
+  1400.0,
+  3500.0
+ ],
  "parameters": {
   "Cl": 9.722222222222224e-07,
   "F": 0.9,
+  "MM": 0.263381,
   "Tlag": 0.0,
   "VdPerKg": 0.00027,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.00014,
   "k12": 0.0009362139917695473,
   "k21": 0.0009362139917695473,
   "ka": 0.00018055555555555557,
@@ -21,7 +36,7 @@
   "central.C": 16448.897795591183
  },
  "reference_peaks": {
-  "central.C": 0.0009068283556068787
+  "central.C": 0.0012695610575834064
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

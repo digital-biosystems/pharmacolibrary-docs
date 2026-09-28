@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The granisetron parameters are physiologically implausible — clearance of 0.25423392 mL/h and volume of 1.5462161 mL are orders of magnitude too small for healthy adults, indicating a unit or scale extraction error.**
+**Granisetron's distribution volume (1.5462161 mL) and clearance (0.25423392 mL/h) are physiologically implausible for a healthy-adult model, indicating a unit or scale extraction error, so the record was rejected.**
 
-The extracted granisetron clearance is 0.25423392 mL/h and the volume of distribution is 1.5462161 mL, values far outside any physiological window for this drug in healthy adults; such magnitudes point to a unit or scale error in how the published values were captured. The absorption rate constant, 0.0179879 1/h, is likewise extremely slow. The rejection rests on this implausible magnitude, attributed to a unit/scale extraction error rather than to the model's one-compartment structure itself. Extracted — granisetron: kabs 0.018, V 1.55 mL, CL 0.254 mL/h.
+The extracted parameters for granisetron give a volume of distribution of 1.5462161 mL and total clearance of 0.25423392 mL/h, magnitudes far below any physiological window for granisetron in healthy adults, consistent with a unit/scale extraction error (the labels read mL and mL/h). The absorption rate constant of 0.0179879 1/h is also very slow. The rejection was based on this implausible clearance/volume magnitude. Extracted — granisetron: kabs 0.018, V 1.55 mL, CL 0.254 mL/h.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

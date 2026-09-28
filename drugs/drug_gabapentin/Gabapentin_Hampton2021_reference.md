@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**This gabapentin swine record was rejected because the clearance parameter carries a dimensionally wrong unit, kg*min, a mismatch on a structural parameter, and it was built from the abstract only.**
+**The gabapentin record from Hampton_2021 was rejected because the clearance parameter carries a dimensionally invalid unit (kg*min) instead of a flow unit, a structural-parameter dimension mismatch.**
 
-The gabapentin clearance is recorded as 1.2 with unit kg*min, which is dimensionally inconsistent for a clearance parameter (a volume flow per unit body weight and time), so the record failed the dimensional-consistency check on a structural parameter. The record was also built from the paper's abstract alone, meaning the reported summary statistics stood in for a fitted model. A second reader found no values to dispute in the bioavailability (47%), absorption half-life (58 min), steady-state volume (594 ml/kg), clearance (1.2), maximal concentration (9155 ng/ml), absorption rate constant (5.24 1/hr) and terminal half-life (360 min), but could not itself supply alternative readings, so those comparisons could not be computed. Extracted — gabapentin: V 170 ml/kg, CL 1.2 kg*min, Vss 594 ml/kg, t1/2z 360 min, t1/2ka 58 min, Cmax 9.16e+03 ng/ml, tmax 194 min, Fab 47 %, … (+2).
+The clearance for gabapentin is recorded as 1.2 with unit 'kg*min', which is not a valid unit for a clearance parameter and fails the dimensional check on structural parameters. The record was also built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. A second reader returned null for all extracted values, including clearance 1.2, Vss 594 ml/kg, terminal half-life 360 min, and bioavailability 47%, leaving the extraction unconfirmed. Extracted — gabapentin: V 170 ml/kg, CL 1.2 kg*min, Vss 594 ml/kg, t1/2z 360 min, t1/2ka 58 min, Cmax 9.16e+03 ng/ml, tmax 194 min, Fab 47 %, … (+2).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 47, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 

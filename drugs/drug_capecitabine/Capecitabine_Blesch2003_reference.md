@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Capecitabine's elimination clearance and intercompartmental clearance had no extracted values, so library defaults were substituted, and the absorption parameters kabs and tlag were also uncovered, so the model was quarantined.**
+**The capecitabine model was quarantined because capecitabine's elimination clearance and intercompartmental clearance had no extracted values and library placeholder values were substituted, and the absorption parameters kabs (1.09) and tlag (5.52E-4) were not covered.**
 
-The record lists CL (CL1, 75.8) and Q (CL2, 1190) among its parameters, yet the model's elimination clearance from the central compartment and intercompartmental clearance had no source values, so placeholder numbers from a library stood in for them. The parameter coverage check expected 6 parameters emitted or defaulted but only 4 were covered, with kabs (KA, 1.09) and tlag (TLAG, 5.52E-4) neither emitted nor defaulted. Because these capecitabine parameters were missing, the model was held back rather than published. Extracted — capecitabine: kabs 1.09, tlag 0.000552, V1 90.6, CL 75.8, V2 17.8, Q 1.19e+03, V3 73.6, CLR 0.615.
+The record covers only 4 of the 6 expected parameters: kabs and tlag were neither emitted nor defaulted. The model builder substituted placeholder values for capecitabine's elimination clearance and intercompartmental clearance (Q1), so the model was held back rather than published with invented numbers. The remaining parameters (V1 90.6, CL 75.8, V2 17.8, Q 1190, V3 73.6, CLR 0.615) were extracted, but the missing clearances make the capecitabine disposition incomplete. Extracted — capecitabine: kabs 1.09, tlag 0.000552, V1 90.6, CL 75.8, V2 17.8, Q 1.19e+03, V3 73.6, CLR 0.615.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -93,6 +93,7 @@ Blesch KS; Gieschke R; Tsukamoto Y; Reigner BG; Burger HU; Steimer JL et al. (20
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['kabs', 'tlag'] |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |

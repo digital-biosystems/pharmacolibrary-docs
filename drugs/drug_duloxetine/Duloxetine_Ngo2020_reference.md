@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The duloxetine parent–metabolite model was rejected because the 4-hydroxy duloxetine metabolite is unlinked: the metabolism rate constant Kfm connecting it to parent duloxetine carries no value, leaving the metabolite compartment unreachable from the dose.**
+**The duloxetine parent–metabolite model was rejected because 4-hydroxy duloxetine is an unlinked metabolite: no usable path from duloxetine to the metabolite compartment could be established.**
 
-The record describes duloxetine converting to 4-hydroxy duloxetine via first-pass and systemic metabolism, with a metabolism link parameter Kfm between the two, but no numerical value is given for Kfm. The metabolite's clearance and volume (CLm/F 12.3, Vm/F 84.2) are listed, yet without a valued formation rate constant the metabolite compartment has no path from the duloxetine dose. The bioavailability parameter Fab after the first-pass effect likewise has no extracted value. The review therefore judged the metabolite compartment orphaned and refused the record. Extracted — duloxetine: kabs 1.35, CL 1.97, V2 14.6; 4-hydroxy duloxetine: CLm/F 12.3, Vm/F 84.2.
+The record describes duloxetine with absorption rate constant kabs 1.35, clearance CL 1.97, peripheral volume V2 14.6, and a presystemic plus systemic metabolism to 4-hydroxy duloxetine, whose apparent clearance CLm/F is 12.3 and apparent volume Vm/F is 84.2. Although a metabolism link from duloxetine to 4-hydroxy duloxetine via the rate constant Kfm is recorded, the structure check found the metabolite side unreachable from the dose, so the model was refused. No numeric comparison could be computed for this finding (ratio None), and no other failed checks are reported. Extracted — duloxetine: kabs 1.35, CL 1.97, V2 14.6; 4-hydroxy duloxetine: CLm/F 12.3, Vm/F 84.2.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

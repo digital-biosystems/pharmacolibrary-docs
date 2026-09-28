@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The meloxicam clearance of 0.390 L/h is an apparent value (CL/F) that was corrected twice for bioavailability, since the relative bioavailability F of 2.00 was also applied, making the parameter incoherent.**
+**The meloxicam model record was rejected because the apparent-parameter coherence check found a double correction: the relative bioavailability Frel of 2.00 (labelled 'x 2 F') and the CL/F parameter were both applied, correcting clearance for bioavailability twice.**
 
-The record lists meloxicam CL as 0.390 L/h, but the paper's label marks it as apparent clearance (CL/F), i.e. already divided by bioavailability. The same record also carries a relative bioavailability parameter F of 2.00 ('x 2 F'), so applying both corrections double-corrects the clearance. The parameter row labelled 'CI, confidence interval; CL, apparent clearance; CL ð' is a footnote fragment rather than a value, and a second reader assigned a different identifier to the 'x 2 F' entry, leaving that field's identity unsettled. Extracted — meloxicam: CL 0.39 L/h, V1 7.8 L, V 1.06, Q 1.24 L/h, V2 2.72 L, kabs 2.05 /h, Frel 2.
+The record contains meloxicam parameters CL = 0.390 L/h, V1 = 7.80 L, Q = 1.24 L/h, V2 = 2.72 L, kabs = 2.05 /h, and a relative bioavailability Frel = 2.00 labelled 'x 2 F', alongside a CL/F parameter (total clearance after oral administration adjusted for bioavailability). Applying the bioavailability factor both through Frel and through the CL/F parameter constitutes a double correction, violating apparent-parameter coherence, so the record was refused. The two readers disagreed only on how the 'x 2 F' bioavailability parameter should be classified, not on the rejection cause. Extracted — meloxicam: CL 0.39 L/h, V1 7.8 L, V 1.06, Q 1.24 L/h, V2 2.72 L, kabs 2.05 /h, Frel 2.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[x 2 f].parameter_id`: this record has Q87, the second reading Q80. That field shapes the model, so the record is marked disputed.
 

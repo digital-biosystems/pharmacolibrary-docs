@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record is not a compartmental population PK model: metamizole's metabolite 4-methylaminoantipyrine is reported with only an AUC∞ of 29.9 mg/L/h, with no distribution volume and no clearance, and the value came from the abstract alone.**
+**The metamizole record reports only the 4-methylaminoantipyrine AUC∞ of 29.9 mg/L·h in children 2–6 years, with no distribution volume and no clearance or elimination, so it is not a compartmental population PK model and was rejected.**
 
-The paper (Ziesenitz_2019, infants and children) reports no distribution volume and no clearance or elimination rate for 4-methylaminoantipyrine, so the single-compartment structure has no estimable PK parameters — it is an exposure/outcome paper. The record was built from the abstract alone, meaning the reported summary statistic (AUC0-inf 29.9 mg/L/h in children 2–6 years) stood in for a fitted model. A dimension check on a structural parameter also failed with a unit mismatch. A second reader found no value for the AUC0-inf parameter, disagreeing with the recorded 29.9 mg/L/h. Extracted — 4-methylaminoantipyrine: AUC∞ 29.9 mg/L/h.
+The paper is an exposure/outcome study read from the abstract alone, so the reported summary statistic (AUC∞ 29.9 mg/L·h for 4-methylaminoantipyrine) stood in for a fitted model. No volume of distribution and no clearance or elimination parameter are given, which is a structural gap, and a dimension mismatch was flagged on a structural parameter. A second reader recorded no value for the AUC∞ parameter, disagreeing with the 29.9 mg/L·h in this record. Extracted — 4-methylaminoantipyrine: AUC∞ 29.9 mg/L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc0-inf of 4-methylaminoantipyrine in children 2-6 years: this record has 29.9, the second reading none. That field does not shape the model.
 

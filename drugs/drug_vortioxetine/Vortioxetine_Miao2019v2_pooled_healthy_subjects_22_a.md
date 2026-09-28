@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The vortioxetine record was rejected because the central volume V2 (0.094) and half-life t1/2z (65.8) carry the non-dimensioned unit 'N = 887a' instead of L and h, and the one-compartment structure leaves a compartment unreachable from the dose.**
+**The vortioxetine record was rejected because the peripheral volume parameter V2 carries the value 0.094 with the unit 'N = 887a' — not a volume unit — and the one-compartment structure contains an unreachable compartment.**
 
-The structural volume parameter V2 is reported as 0.094 with the unit string 'N = 887a', which is not a volume unit, and the elimination half-life t1/2z is 65.8 with the same non-dimensioned unit string, so neither could be converted to SI. The absorption rate constant kabs (0.14 L/h) and oral clearance CL/F (33 L/h) for vortioxetine are dimensionally consistent, but the model structure is a single compartment while a V2 (peripheral/central volume index 2) is reported, and the check for dose-reachable compartments found an unreachable or orphan compartment. The reported unit 'N = 887a' could not be converted, so the affected parameters reached the model build without SI values. Extracted — vortioxetine: kabs 0.14 L/h, CL/F 33 L/h, V2 0.094 N = 887a, t1/2z 65.8 N = 887a.
+The parameter labelled as a LaTeX fragment for ϖ²_V2 is reported with value 0.094 and unit 'N = 887a', which is a sample-size annotation rather than a volume unit, so no SI value could be assigned to this structural parameter (dimension mismatch). In addition, the model structure check found an unreachable or orphan compartment with no path from the dose. The other parameters — kabs 0.14 L/h, CL/F 33 L/h and terminal half-life 65.8 h for vortioxetine — are dimensionally consistent. Extracted — vortioxetine: kabs 0.14 L/h, CL/F 33 L/h, V2 0.094 N = 887a, t1/2z 65.8 N = 887a.
 
 Independently confirmed by `gpt-oss:120b`.
 

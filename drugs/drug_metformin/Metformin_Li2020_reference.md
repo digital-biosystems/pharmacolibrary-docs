@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The metformin model was held back because the CL/F weight-power covariate effect and one CL/F entry carry no values, and the comparison check failed without computing a result.**
+**The metformin record was held back because the reference comparison could not be computed (ratio None), and a second reader reported different values for ka (0.6058 vs 1.4 h−1), t lag (0.4042 vs 0.914 h), and V/F (303.6 vs 438 L).**
 
-The record lists a weight-power covariate effect on CL/F and a second CL/F entry with no value, so library placeholders would have been used and the model was held back. The comparison check reported a failure with ratio None, meaning it could not compute a comparison — an inconclusive check rather than a demonstrated fault. A second reader also read ka as 0.6058 h⁻¹, t lag as 0.4042 h, and V/F as 303.6 L, disagreeing with the recorded 1.4 h⁻¹, 0.914 h, and 438 L, and read two parameters as 0.688 and 0.914 where this record has none. Extracted — metformin: V/F 438 L, kabs 1.4 h−1, tlag 0.914 h.
+The record for metformin in Chinese patients with type 2 diabetes carries V/F of 438 L, ka of 1.4 h−1, t lag of 0.914 h, and CL/F of 18.0 L/h, but the reference check failed without computing a comparison, so the failure is inconclusive rather than a demonstrated fault. A second reader disagreed on several values: ka 0.6058 versus 1.4 h−1, t lag 0.4042 versus 0.914 h, and V/F 303.6 versus 438 L, and read θ2 as 0.688 and θ3 as 0.914 where this record has none. The second reader also left the dose compound and primary analyte as unknown, against this record's metformin. Extracted — metformin: V/F 438 L, kabs 1.4 h−1, tlag 0.914 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metformin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

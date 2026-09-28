@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's time of the peak (tmax) (paper 47.8, model 0.183).**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 8.97e-05, model 6.95e-06); the model does not reproduce the paper's time of the peak (tmax) (paper 47.8, model 0.183).**
 
-Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax, Cavg, Css and AUCt), so that value has no SI equivalent. Extracted — brexanolone: Cmax 89.7 ng/mL, tmax 47.8 h, Cavg 70.6 ng/mL, Css 80.1 ng/mL, AUCt 3.36e+03 ng·h/mL, AUC∞ 3.74e+03 ng·h/mL, t1/2z 11.3 h, kel 0.06 1/h, … (+2).
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax, Cavg, Css and AUCt), so that value has no SI equivalent. Extracted — brexanolone: Cmax 89.7 ng/mL, tmax 47.8 h, Cavg 70.6 ng/mL, Css 80.1 ng/mL, AUCt 3.36e+03 ng·h/mL, AUC∞ 3.74e+03 ng·h/mL, t1/2z 11.3 h, kel 0.06 1/h, … (+2).
 
 Independently confirmed by `gpt-oss:120b`.
 
@@ -120,9 +120,9 @@ _Every reader agrees on every compared field of this record._
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_cmax | reference | pass | 8.97e-05 | 6.95167190998807e-05 | 0.775 | ng/mL→SI vs simulated kg/m3 |
-| T1_t_half_beta | reference | pass | 11.3 | 11.334804617121977 | 1.0031 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 47.8 | 0.1833333333517252 | 0.0038 | h→SI vs simulated h |
+| T1_cmax | reference | fail | 8.97e-05 | 6.95168504972154e-06 | 0.0775 | ng/mL→SI vs simulated kg/m3 |
+| T1_t_half_beta | reference | pass | 11.3 | 11.335063444960905 | 1.0031 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 47.8 | 0.18333333335172533 | 0.0038 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -143,8 +143,8 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_modelica.zip" download>Brexanolone_Wald2022_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_modelica.zip" download>Brexanolone_Wald2022_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_fmi.zip" download>Brexanolone_Wald2022_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_matlab.zip" download>Brexanolone_Wald2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_matlab_simbio.zip" download>Brexanolone_Wald2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_sbml.zip" download>Brexanolone_Wald2022_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
@@ -156,7 +156,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record reports an implausible negative apparent clearance of −1.09 L/h for olanzapine (with V/F of only 0.47 L), so the model was rejected.**
+**The olanzapine model reports a negative apparent clearance of -1.09 L/h, a physiologically impossible value, so the record was rejected.**
 
-The extracted olanzapine parameters are CL/F = −1.09 L/h and V/F = 0.47 L; a negative apparent clearance is physiologically impossible, indicating the base value or a covariate shift was recorded incorrectly. A second reader extracted a different value for the same parameter, −3.83, which is also negative, so the disagreement does not resolve the implausibility. The record was therefore rejected on the ground of negative clearance/volume in a base or covariate scenario. Extracted — olanzapine: CL/F -1.09 L/h, V/F 0.47 L.
+The fitted CL/F for olanzapine is -1.09 L/h, which is implausible since clearance following oral administration cannot be negative; the base value or a covariate shift is wrong. The apparent volume of distribution is 0.47 L, also suspiciously small for olanzapine. A second reader recorded the covariate effect parameter θ ari as -3.83 where this record has no value, but the rejection rests on the negative clearance. Extracted — olanzapine: CL/F -1.09 L/h, V/F 0.47 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of θ ari: this record has none, the second reading -3.83. That field shapes the model, so the record is marked disputed.
 

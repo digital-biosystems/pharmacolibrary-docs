@@ -5,7 +5,7 @@
 
 # brexpiprazole — `Brexpiprazole_Frederiksen2023v3_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves. · molar_mass_missing:DM-3411: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,20 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-> **Caveats:**
-
-> - `covariates_not_exercised` — the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
-> - `molar_mass_missing:DM-3411` — a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
 
 ### Reviewer guidance
 
-**The record was accepted with caveats: the CYP2D6 covariate effect on brexpiprazole metabolism was never simulated, the DM-3411 molar mass is missing (0 instead of 0.43357), and bioavailability F was left at a default placeholder.**
+**Accepted with a caveat: the covariate scenarios were not simulated.**
 
-The record defines a CYP2D6 covariate effect (extensive metaboliser 0, intermediate metaboliser 0.6364) on brexpiprazole, but only the reference individual was simulated, so the covariate scenarios were not exercised. The molar-mass check for DM-3411 could not compute a valid ratio: the metabolite molar mass is 0, meaning 1 mg of metabolite per mg of parent converted rather than a molecule-per-molecule conversion, against a parent molar mass of 0.43357. In addition, bioavailability F had no source value and a default was substituted. The model structure itself — a linear parent model with two central metabolites DM-3411 and DM-3412 formed from brexpiprazole — was otherwise accepted. Extracted — brexpiprazole: kabs 1.02 1/h, tlag 0.411 h, V1 81.2 L, V2 40.1 L, Q 0.714 L/h; DM-3412: CLfm 0.0224 L/h, V1 0.447 L, V2 20.4 L, Q 2.16 L/h, CL 0.42 L/h; DM-3411: CLfm 1.12 L/h, V 2.44 L, CL 3.33 L/h.
+The base model was simulated, not the covariate effects the record defines.
 
 Independently confirmed by `gpt-oss:120b`.
 
-<sub>reviewed by glm-5.3-flash</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem Frederiksen_2023_3)
@@ -176,11 +173,11 @@ _Every reader agrees on every compared field of this record._
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_metabolite_built[DM-3411] | not captured | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.00244, 'CL': 9.25e-07, 'formation': 3.111111111111111e-07} | not captured | DM-3411 = compartment M1 with its own numbers |
 | T3_metabolite_built[DM-3412] | not captured | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.000447, 'CL': 1.1666666666666667e-07, 'formation': 6.222222222222222e-09} | not captured | DM-3412 = compartment M2 with its own numbers |
-| T3_metabolite_output[DM-3411] | not captured | pass | not captured | 0.00033827111706483787 | not captured | C_M1 (DM-3411) must rise above 0 when the parent is dosed |
-| T3_metabolite_output[DM-3412] | not captured | pass | not captured | 1.9564586411399624e-05 | not captured | C_M2 (DM-3412) must rise above 0 when the parent is dosed |
-| T3_molar_mass[DM-3411] | not captured | fail | not captured | {'MW': 0.43357, 'MW_m1': 0} | not captured | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
-| T3_molar_mass[DM-3412] | not captured | pass | not captured | {'MW': 0.43357, 'MW_m2': 0.4676} | not captured | formation is molecule-for-molecule |
-| T3_output_variable | not captured | pass | C_central (measured=brexpiprazole) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_metabolite_output[DM-3411] | not captured | pass | not captured | 5.261428795357089e-07 | not captured | C_M1 (DM-3411) must rise above 0 when the parent is dosed |
+| T3_metabolite_output[DM-3412] | not captured | pass | not captured | 2.9347244404180054e-08 | not captured | C_M2 (DM-3412) must rise above 0 when the parent is dosed |
+| T3_molar_mass[DM-3411] | not captured | pass | not captured | {'MW': 0.43357, 'MW_m1': 0.449569} | not captured | formation is molecule-for-molecule |
+| T3_molar_mass[DM-3412] | not captured | pass | not captured | {'MW': 0.43357, 'MW_m2': 0.467584} | not captured | formation is molecule-for-molecule |
+| T3_output_variable | not captured | pass | C_central (measured=brexpiprazole) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 11 scholar param(s) emitted or defaulted | 11 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |

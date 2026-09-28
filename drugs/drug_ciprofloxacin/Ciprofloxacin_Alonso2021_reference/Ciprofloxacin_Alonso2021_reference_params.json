@@ -1,4 +1,5 @@
 {
+ "dose_source": "WHO ATC DDD 1000 mg oral (J01MA02)",
  "model_id": "Ciprofloxacin_Alonso2021_reference",
  "molar_masses": {
   "central.C": 0.3313415
@@ -15,15 +16,15 @@
   "VdPerKg": 0.00020999999999999998,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.001,
   "ka": 0.0002777777777777778,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 1338.1577036945082
+  "central.C": 1337.9976421679191
  },
  "reference_peaks": {
-  "central.C": 0.0005298681287594395
+  "central.C": 0.0052985861306087765
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

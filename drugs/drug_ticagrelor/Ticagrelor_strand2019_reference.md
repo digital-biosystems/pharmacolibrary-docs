@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;ticagrelor&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/&quot;},{&quot;label&quot;:&quot;\u00c5strand_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_Kathman2022_reference&quot;,&quot;label&quot;:&quot;Kathman_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Kathman2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ticagrelor_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ticagrelor_strand2019_reference&quot;,&quot;label&quot;:&quot;\u00c5strand_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ticagrelor_Kathman2022_reference&quot;,&quot;label&quot;:&quot;Kathman_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_ticagrelor/Ticagrelor_Kathman2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ticagrelor — `Ticagrelor_strand2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,11 +13,13 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+
 ### Reviewer guidance
 
-**The record double-corrects for bioavailability: ticagrelor's relative bioavailability is fixed at 1 while the metabolite link fraction Fm is 0.22, so the apparent parameters CL/F (16.6 l/h), Q/F (10.4 l/h), V1/F (156 l) and V2/F (55.8 l) are not coherent with the metabolite parameters (CLm/F 10.2 l/h, Qm/F 4.41 l/h, Vcm/F 7.04 l, Vpm/F 42.3 l).**
+**The record was held back because the AR-C124910XX metabolite distribution parameters — Q/F 4.41 l/h, V1/F 7.04 l and V2/F 42.3 l — were neither extracted nor defaulted, leaving only 4 of 10 expected parameters covered.**
 
-The model links ticagrelor to its metabolite AR-C124910XX through a metabolism fraction Fm of 0.22, while simultaneously carrying a relative bioavailability Frel of 1 for the parent. Applying both corrections to the same apparent oral-clearance parameters violates their coherence, so the reported values for the parent (CL/F 16.6 l/h, Q/F 10.4 l/h, V1/F 156 l, V2/F 55.8 l) and the metabolite (CLm/F 10.2 l/h, Qm/F 4.41 l/h, Vcm/F 7.04 l, Vpm/F 42.3 l) cannot both be correct as stated. This double correction is the reason the record was rejected. Extracted — ticagrelor: CL/F 16.6 l h –1, Q/F 10.4 l h –1, V1/F 156 l, V2/F 55.8 l, kabs 10.1 h −1, tlag 0.48 h, Frel 1; AR-C124910XX: CL/F 10.2 l h –1, fm 0.22, Q/F 4.41 l h –1, V1/F 7.04 l, V2/F 42.3 l.
+The ticagrelor parent parameters (CL/F 16.6 l/h, Q/F 10.4 l/h, V1/F 156 l, V2/F 55.8 l, kabs 10.1 h−1, tlag 0.48 h) and the metabolite clearance CL/F 10.2 l/h with fm 0.22 were present, but the metabolite's intercompartmental clearance and both volumes of distribution were missing from the record. In addition, the model builder assumed F=1 and Fm=1 with no molar correction, an apparent parameterization, and the covariate effects defined in the record (e.g. the exponent 0.48 for the PRU error) were not exercised — only the reference individual was simulated. Extracted — ticagrelor: CL/F 16.6 l h –1, Q/F 10.4 l h –1, V1/F 156 l, V2/F 55.8 l, kabs 10.1 h −1, tlag 0.48 h, Frel 1; AR-C124910XX: CL/F 10.2 l h –1, fm 0.22, Q/F 4.41 l h –1, V1/F 7.04 l, V2/F 42.3 l.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -26,7 +28,7 @@ The model links ticagrelor to its metabolite AR-C124910XX through a metabolism f
   ·  DOI: [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812)
 
 ## Model component
-<dbs-pgx drug="ticagrelor" model-id="Ticagrelor_strand2019_reference" status="rejected" stale="false" population="stable coronary artery disease and prior myocardial infarction patients" measured-compound="ticagrelor" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="ticagrelor" model-id="Ticagrelor_strand2019_reference" status="needs_review" stale="false" population="stable coronary artery disease and prior myocardial infarction patients" measured-compound="ticagrelor" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent–metabolite model: parent with 2 compartment(s); metabolite AR-C124910XX: 2 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 12 extracted, plus 1 covariate effect.
@@ -34,7 +36,7 @@ The model links ticagrelor to its metabolite AR-C124910XX through a metabolism f
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -136,6 +138,22 @@ The model links ticagrelor to its metabolite AR-C124910XX through a metabolism f
 | C9_phys_window_Q82 | pass | volume within physiological range | 55.8 L | not captured | not captured | ['bcp13812-tbl-0002:row4:col1'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 42.3 L | not captured | not captured | ['bcp13812-tbl-0002:row13:col1', 'bcp13812-tbl-0002:row13:col3'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_metabolite_built[AR-C124910XX] | not captured | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.00704, 'CL': 2.833333333333333e-06, 'formation': 1.0144444444444444e-06} | not captured | AR-C124910XX = compartment M1 with its own numbers |
+| T3_metabolite_output[AR-C124910XX] | not captured | pass | not captured | 7.186543637316374e-05 | not captured | C_M1 (AR-C124910XX) must rise above 0 when the parent is dosed |
+| T3_molar_mass[AR-C124910XX] | not captured | pass | not captured | {'MW': 0.522568, 'MW_m1': 0.478518} | not captured | formation is molecule-for-molecule |
+| T3_output_variable | not captured | pass | C_central (measured=ticagrelor) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | fail | 10 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['Q/F', 'V1/F', 'V2/F', 'Q/F', 'V1/F', 'V2/F'] |
+| T3_topology_template | not captured | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 2096 | 0.00035783688727179276 | not captured | unresolved concentration unit (exp 'nmol l–1', sim 'kg/m3') |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -144,13 +162,26 @@ The model links ticagrelor to its metabolite AR-C124910XX through a metabolism f
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_ticagrelor/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Åstrand_2019` / `Åstrand_2019::reference`)
+- model: `../../../knowledgebase/drugs/drug_ticagrelor/models/modelica/Ticagrelor_strand2019_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_ticagrelor/models/modelica/Ticagrelor_strand2019_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_ticagrelor/models/modelica/Ticagrelor_strand2019_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ticagrelor/Ticagrelor_strand2019_reference/Ticagrelor_strand2019_reference.svg" alt="Ticagrelor_strand2019_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The fitusiran record was rejected because it reports no distribution volume and no clearance or elimination rate — it is an exposure/outcome paper, not a compartmental population PK model — and structural parameters fail dimension checks (kint labeled 1/h but given as nM−1·h−1, Km labeled ∗105 nM but 97.75 in a unit that could not be converted to SI, KD labeled ∗10−3 h−1 but given in nM).**
+**The fitusiran record was rejected because the paper reports no distribution volume and no clearance, and the Km value 97.75 carries a dimension mismatch on a structural parameter.**
 
-The paper reports no distribution volume and no clearance or elimination rate for fitusiran, so it is not a compartmental population PK model but an exposure/outcome paper. Several structural parameters also fail dimension checks: kint is labeled 1/h yet its unit is nM−1·h−1, Km is labeled ∗105 nM with value 97.75 in a unit that could not be converted to SI, and KD is labeled ∗10−3 h−1 yet given in nM. Additionally, the second reader extracted four parameters absent from this record — fesc 0.037, kdegd 0.014, kpliver 0.18, and psliver 144.7 — so the record is incomplete relative to the source. Extracted — fitusiran: kabs 0.23 units, fu 39.3 units, Rtot 14.3 nM, Vmax 4.37 nmol/h, Km 97.8 units, koff 0.023 units, kint 4.69 nM−1·h−1, KD 0.0061 nM.
+The record is not a compartmental population PK model: no distribution volume and no clearance or elimination rate are reported, as it is an exposure/outcome paper. A dimension mismatch was flagged on a structural parameter, and the Km unit could not be converted to SI, so the parameter lacked an SI value. The second reader additionally reported four parameters absent from this record: fesc 0.037, kdegd 0.014, kpliver 0.18, and psliver 144.7. Extracted — fitusiran: kabs 0.23 units, fu 39.3 units, Rtot 14.3 nM, Vmax 4.37 nmol/h, Km 97.8 units, koff 0.023 units, kint 4.69 nM−1·h−1, KD 0.0061 nM.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of fesc: this record has none, the second reading 0.037; it also differs on 3 more fields. That field does not shape the model.
 

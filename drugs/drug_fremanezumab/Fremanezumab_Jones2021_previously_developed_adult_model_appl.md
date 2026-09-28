@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The fremanezumab pediatric two-compartment model was held back because the absorption rate constant ka was not reported in the source and a default value was substituted, and the weight covariate effects were never simulated.**
+**The fremanezumab pediatric model was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, an invented absorption deemed not acceptable.**
 
-The record lists ka = 0.180 1/day, but this value was not reported in the source paper; the model builder substituted a default, which was judged unacceptable. The record also defines weight covariate effects (theta values 1.05 and 1.53), yet only the reference individual was simulated, so these covariate effects were not exercised — the base model was simulated, not the covariate effects. A second reader additionally reported a bioavailability of 0.658 where the record has none, a disagreement left unresolved. Extracted — fremanezumab: CL 0.0902 L/day, V1 1.88 L, kabs 0.18, Q 0.262 L/day, V2 1.72 L, tlag 0.0803 day.
+The record's ka (absorption rate constant) has no source value; a library default was used in its place, and this invented absorption was judged not acceptable. In addition, the record defines weight-based covariate effects (theta_q319_weight_power, values 1.05 and 1.53), but only the reference individual was simulated, so those covariate scenarios were not exercised. A second reader also recorded a bioavailability (f1) of 0.658 where this record has none. Extracted — fremanezumab: CL 0.0902 L/day, V1 1.88 L, kabs 0.18, Q 0.262 L/day, V2 1.72 L, tlag 0.0803 day.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of f1: bioavailability: this record has none, the second reading 0.658. That field does not shape the model.
 
@@ -155,7 +155,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, lag 116 min, F 0.658). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 120 mg, single dose, first-order absorption (ka 0.5 /h, lag 116 min, F 0.658). Dose in the paper: 120 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_fremanezumab/Fremanezumab_Jones2021_previously_developed_adult_model_appl/Fremanezumab_Jones2021_previously_developed_adult_model_appl_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_fremanezumab/Fremanezumab_Jones2021_previously_developed_adult_model_appl/Fremanezumab_Jones2021_previously_developed_adult_model_appl_sim_controls.json"></dbs-fmusim>
 

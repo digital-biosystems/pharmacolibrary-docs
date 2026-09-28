@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The metformin rat model was rejected because the reported volume of distribution V1 = 0.37 (mg/kg)/(µg/mL) could not be expressed in SI units, leaving a dimension mismatch on a structural parameter.**
+**The metformin volume of distribution V1 is reported only as 0.37 µg/mL, a concentration unit rather than a volume, so no SI value could be derived and the record was rejected.**
 
-The record reports metformin in Wistar rats with a one-compartment structure and parameters including tmax 0.67 h, t1/2z 3.12 h, AUC∞ 176.27 µg/mL·h, MRT 5.48 h, k12 7.06 1/h, k21 0.38 1/h, Ka 0.41 h⁻¹ and tlag 0.34 h. The volume of distribution V1 was reported as 0.37 in the unit (mg/kg)/(µg/mL), a unit that could not be converted to SI, so the parameter entered the model without a usable value. This dimension mismatch on a structural parameter is the stated cause of rejection. Extracted — metformin: tmax 0.67 h, t1/2z 3.12 h, AUC∞ 176 µg/mL*h, MRT 5.48 h, V 0.37 μg/mL, k12 7.06, k21 0.38, kabs 0.41 h -1, … (+1).
+The paper (Patel_2019, Wistar rats, one-compartment metformin model) labels the volume parameter 'V1 (mg/kg)/(μg/mL)' with value 0.37, but the unit given verbatim is μg/mL, which is a concentration and does not match the dimension of a volume of distribution. Because this unit could not be converted to SI, the parameter reached the model builder without a usable value. The other parameters (tmax 0.67 h, t1/2z 3.12 h, AUC∞ 176.27 µg/mL*h, MRT 5.48 h, k12 7.06 1/h, k21 0.38 1/h, kabs 0.41 1/h, tlag 0.34 h) carry consistent units and were not flagged. Extracted — metformin: tmax 0.67 h, t1/2z 3.12 h, AUC∞ 176 µg/mL*h, MRT 5.48 h, V 0.37 μg/mL, k12 7.06, k21 0.38, kabs 0.41 h -1, … (+1).
 
 <sub>reviewed by glm-5.3-flash</sub>
 

@@ -1,12 +1,17 @@
 {
+ "dose_source": "library default",
  "model_id": "Levothyroxine_Younis2018_reference",
+ "molar_masses": {
+  "central.C": 0.776856
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 1.9777777777777776e-07,
   "F": 1.0,
+  "MM": 0.776856,
   "Tlag": 0.0,
   "VdPerKg": 0.002355714285714286,
   "adminCount": 1.0,
@@ -16,12 +21,12 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 34802.40480961924
+  "central.C": 35984.67798247119
  },
  "reference_peaks": {
-  "C_central": 0.0005818399292370562
+  "central.C": 0.0005817827002905287
  },
- "stop_time": 86400.0,
+ "stop_time": 3024000.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

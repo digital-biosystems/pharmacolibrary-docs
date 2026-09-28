@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**This methyldopa one-compartment record was rejected because a structural parameter failed a dimensional consistency check, and it was built from the paper's abstract alone rather than the fitted model.**
+**Rejected because methyldopa's structural parameters are dimensionally inconsistent: clearance 11.2 l/h does not match volume 0.29 l/kg times elimination constant 0.56 h-1, and the record was built from the abstract only.**
 
-The rejection cause is a dimension mismatch on a structural parameter: the reported values — overall elimination constant Ke1 = 0.56 h⁻¹, plasma clearance rate = 11.2 l·h⁻¹, and central volume of distribution = 0.29 l·kg⁻¹ — do not reconcile dimensionally as a consistent set (clearance should equal the elimination constant times volume). The record was also built from the abstract only, so the reported summary statistics stood in for a fitted model. A second reader left the three parameter values (0.56, 11.2, 0.29) unset, disagreeing on the dosed compound and primary analyte fields, which were recorded as methyldopa in this record but unknown by the second reader. Extracted — methyldopa: kel 0.56 h-1, V 0.29 1 kg-1, CL 11.2 1 h-1.
+The dimension check on a structural parameter failed for methyldopa: the reported clearance of 11.2 l/h is inconsistent with the reported volume of distribution of 0.29 l/kg and elimination rate constant of 0.56 h-1. The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. A second reader returned null for the elimination constant, clearance and volume values, disagreeing with the extracted 0.56 h-1, 11.2 l/h and 0.29 l/kg, and left the dose compound and primary analyte as unknown rather than methyldopa. Extracted — methyldopa: kel 0.56 h-1, V 0.29 1 kg-1, CL 11.2 1 h-1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has methyldopa, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

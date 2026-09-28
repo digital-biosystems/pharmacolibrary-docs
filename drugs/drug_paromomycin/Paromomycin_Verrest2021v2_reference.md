@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The paromomycin model lacks an extracted clearance — only the volume of distribution (0.998 L/kg) was recorded — and its nonlinear structure cannot be reproduced, so it was held back for review.**
+**The paromomycin record lacks a clearance value — only the volume of distribution (0.998 liters/kg) was extracted — so the model was held back rather than filled with a library default clearance.**
 
-The record contains a single parameter for paromomycin, the volume of distribution of 0.998 liters/kg; no clearance value was extracted. A population model needs both clearance and volume to define disposition; without the clearance, the missing half would have been silently filled from a library default rather than the paper's fitted value, so the model was not published. In addition, the model structure is nonlinear, a topology outside what can be reconstructed from the paper, which further prevents a faithful build. Extracted — paromomycin: V 0.998 liters/kg.
+The record contains a single parameter for paromomycin: volume of distribution V = 0.998 liters/kg, described as based on drug concentration including general (Vd) and terminal-phase (Vz/V_beta) estimates. No clearance was extracted, and a population model needs both clearance and volume; without clearance the missing half would have been silently filled from a library default, so the model was not built. In addition, the model uses a nonlinear topology, which is outside the set of structures that can be built. Extracted — paromomycin: V 0.998 liters/kg.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

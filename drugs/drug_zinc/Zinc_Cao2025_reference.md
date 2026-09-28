@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The zinc clearance of 0.011 L/h/kg is physiologically implausible, indicating a unit or scale extraction error, and a second reader read the value as 0.162 L/h/kg instead.**
+**The zinc clearance of 0.011 L/h/kg is physiologically implausible, suggesting a unit or scale extraction error, and the second reader reads the clearance as 0.162 L/h/kg.**
 
-The record lists zinc clearance (CL) as 0.011 L/h/kg, a magnitude outside the physiological window for clearance per kilogram, consistent with a unit or scale extraction error. The two-compartment structure otherwise carries plausible volumes (V1 3.23 L/h, V2 14.2 L/h) and intercompartmental clearance (Q 0.591 L/h). A second reader disputed the clearance value, reading 0.162 rather than 0.011, so the recorded figure is contested. The model was therefore rejected on the implausible clearance magnitude. Extracted — zinc: CL 0.011 L/h/kg, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
+The two-compartment zinc model lists total clearance as 0.011 L/h/kg, a magnitude outside the physiological window that points to a unit or scale extraction error; the second reader instead reads this clearance as 0.162. The peripheral volume of distribution (V2, 14.2) is reported with the unit L/h, which is a rate unit rather than a volume unit, further indicating inconsistent unit extraction. Because of these implausible values the record was rejected. Extracted — zinc: CL 0.011 L/h/kg, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.011, the second reading 0.162. That field shapes the model, so the record is marked disputed.
 

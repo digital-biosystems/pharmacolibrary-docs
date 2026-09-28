@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The lidocaine rat record reports no distribution volume and no clearance, and the GX parameters (tmax 1786.53 h, t1/2z 61.78 h, Cmax 0.33 ng/mL) come from an exposure paper, not a compartmental population PK model.**
+**The lidocaine record was rejected because it reports no distribution volume and no clearance or elimination rate — an exposure/outcome paper, not a compartmental population PK model — and the metabolite GX is unreachable from the dose.**
 
-The paper reports only half-life (61.78 h), Cmax (0.33 ng/mL) and Tmax (1786.53 h) for the metabolite GX, with no distribution volume and no clearance or elimination rate, so it is an exposure/outcome study rather than a compartmental population PK model. The GX Tmax of 1786.53 h is grossly inconsistent with its 61.78 h half-life, and a reported unit could not be converted to SI. The metabolite chain lidocaine → MEGX → GX was flagged as containing a compartment or metabolite with no path from the dose. A second reader read the parameterization as apparent rather than mechanistic and supplied values (e.g. cld/f 0.13, clm1/f 14.94, fm1 0.65, ka1 5.92) where the record had none. Extracted — GX: t1/2z 61.8 h, Cmax 0.33 ng/mL, tmax 1.79e+03 h.
+The record for lidocaine in male Sprague-Dawley rats contains only summary exposure statistics for the metabolite GX (terminal half-life 61.78 h, Cmax 0.33 ng/mL, Tmax 1786.53 h), with no volume or clearance parameters, so it is not a compartmental population PK model. The GX metabolite has no path from the administered lidocaine dose, leaving it orphaned. Additionally, a reported unit could not be converted to SI, so that parameter lacked an SI value. A second reader disputed the parameterization (apparent rather than mechanistic) and read several parameters (cld/f 0.13, clm1/f 14.94, fm1 0.65, fr 0.373, ka1 5.92, km 136808.67, mtt 0.64) where the record had none. Extracted — GX: t1/2z 61.8 h, Cmax 0.33 ng/mL, tmax 1.79e+03 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 

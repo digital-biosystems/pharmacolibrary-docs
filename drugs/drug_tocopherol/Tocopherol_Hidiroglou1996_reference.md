@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The alpha-tocopherol sheep record was rejected because it lacks a distribution volume and clearance, and the elimination half-life is given with the wrong dimension, 42.4 /h instead of hours.**
+**The alpha-tocopherol record for sheep was refused because the paper reports no distribution volume and no clearance, and the elimination half-life 42.4 carries the unit /h instead of h, a dimension mismatch.**
 
-The paper reports only an absorption rate constant (0.29 /h), an elimination half-life (42.4), a mean residence time (46 h) and an AUC (290 micrograms/h per ml) for alpha-tocopherol in sheep, with no distribution volume and no clearance or elimination rate constant, so it is an exposure/outcome study rather than a compartmental population PK model. The elimination half-life carries the unit /h, a dimension mismatch on a structural parameter since a half-life must be in hours. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader returned no values for all four parameters, leaving the comparisons incomputable. Extracted — alpha-tocopherol: kabs 0.29 /h, t1/2z 42.4 /h, MRT 46 h, AUC 290 micrograms/h per ml.
+The record was built from the abstract alone, so reported summary statistics (Ka1 0.29 /h, half-life 42.4, MRT 46 h, AUC 290 micrograms/h per ml) stood in for a fitted model. The half-life 42.4 is given with unit /h, a dimension mismatch on a structural parameter. A second reader returned null for all four parameter values, disagreeing with each of them. Extracted — alpha-tocopherol: kabs 0.29 /h, t1/2z 42.4 /h, MRT 46 h, AUC 290 micrograms/h per ml.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorption rate constant, ka1: this record has 0.29, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 

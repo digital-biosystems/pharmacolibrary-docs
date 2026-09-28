@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 50 mg oral (N06AB06)",
  "model_id": "Sertraline_Castillo2024_reference",
+ "molar_masses": {
+  "central.C": 0.30623
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,11 +11,12 @@
  "parameters": {
   "Cl": 1.8333333333333333e-05,
   "F": 0.9,
+  "MM": 0.30623,
   "Tlag": 0.0,
   "VdPerKg": 0.0202,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 5e-05,
   "ka": 0.0002375,
   "weight": 70.0
  },
@@ -19,7 +24,7 @@
   "central.C": 13159.118236472947
  },
  "reference_peaks": {
-  "central.C": 5.3806140495347594e-05
+  "central.C": 2.6902858540664875e-05
  },
  "stop_time": 345600.0,
  "template": "PK_1C_enteral",

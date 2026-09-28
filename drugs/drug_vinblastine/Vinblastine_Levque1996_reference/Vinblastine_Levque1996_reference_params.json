@@ -1,4 +1,5 @@
 {
+ "dose_source": "library default",
  "model_id": "Vinblastine_Levque1996_reference",
  "molar_masses": {
   "central.C": 0.8109741
@@ -14,14 +15,14 @@
   "VdPerKg": 0.07,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662042
+  "central.C": 660.0000000662158
  },
  "reference_peaks": {
-  "central.C": 2.0392135142882027e-05
+  "central.C": 2.039213467699478e-06
  },
  "stop_time": 1382400.0,
  "template": "PK_1C",

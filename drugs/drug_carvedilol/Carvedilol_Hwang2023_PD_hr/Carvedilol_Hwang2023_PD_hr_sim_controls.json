@@ -1,0 +1,22 @@
+[
+ {
+  "key": "E0",
+  "label": "Baseline E0",
+  "unit": "bpm",
+  "scale": 1.0,
+  "min": 0.2,
+  "max": 3,
+  "step": 0.05,
+  "mult": true
+ },
+ {
+  "key": "stop_time",
+  "label": "Exposure range",
+  "unit": "μg",
+  "scale": 0.9999999999999999,
+  "min": 0.685,
+  "max": 34.25,
+  "step": 0.0685,
+  "sim": true
+ }
+]

@@ -1,4 +1,5 @@
 {
+ "dose_source": "library default",
  "model_id": "Bleomycin_Wilde2007_reference",
  "molar_masses": {
   "central.C": 1.415552
@@ -14,16 +15,16 @@
   "VdPerKg": 0.0006328571428571428,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "k12": 0.00045899172310007527,
   "k21": 2.574817441222405e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662008
+  "central.C": 660.0000000662093
  },
  "reference_peaks": {
-  "central.C": 0.00040598183557472294
+  "central.C": 4.059213336389718e-05
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

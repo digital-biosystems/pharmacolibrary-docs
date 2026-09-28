@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;dabrafenib&quot;,&quot;href&quot;:&quot;drugs/drug_dabrafenib/&quot;},{&quot;label&quot;:&quot;Balakirouchenane_2020 \u00b7 base&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dabrafenib_Balakirouchenane2020_final_final_tra_model&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_final_final_tra_model&quot;,&quot;href&quot;:&quot;drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_final_tra_model.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dabrafenib_Balakirouchenane2020_base&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_base&quot;,&quot;href&quot;:&quot;drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dabrafenib_Balakirouchenane2020_final&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dabrafenib_Balakirouchenane2020_base&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_base&quot;,&quot;href&quot;:&quot;drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dabrafenib_Balakirouchenane2020_final&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_final&quot;,&quot;href&quot;:&quot;drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dabrafenib_Balakirouchenane2020_final_final_tra_model&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_final_final_tra_model&quot;,&quot;href&quot;:&quot;drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_final_tra_model.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dabrafenib — `Dabrafenib_Balakirouchenane2020_base`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Dabrafenib's clearance, distribution volume and absorption lag time had no extracted values, so library placeholders would have stood in, and V2/F and Q/F were also uncovered, so the model was quarantined.**
+**The dabrafenib parent–metabolite model was held back because only 4 of 10 expected parameters were covered; the peripheral volumes and intercompartmental clearances (V2/F 5.23 L, Q/F 3.85 L/h, and hydroxy-dabrafenib V1/F 19.6 L, V2/F 25.7 L, Q/F 7.39 L/h) were neither emitted nor defaulted.**
 
-The record lists CL/F 17.7 L/h, V1/F 39.5 L and tlag 0.50 h for dabrafenib, yet the established finding states these had no value, meaning a library placeholder would have been used and the model held back rather than published with an invented number. The parameter coverage check found only 3 of 5 expected parameters covered, with V2/F and Q/F neither emitted nor defaulted. The structure also mismatched the parent–metabolite topology, being a one-compartment enteral model instead. A second reader further disagreed that the dose compound was dabrafenib plus trametinib rather than dabrafenib alone. Extracted — dabrafenib: CL/F 17.7 L/h, V1/F 39.5 L, kabs 1.8 1/h, Q/F 3.85 L/h, V2/F 5.23 L, tlag 0.5 h; hydroxy-dabrafenib: V1/F 19.6 L, CL/F 22.8 L/h, Q/F 7.39 L/h, V2/F 25.7 L.
+The record lists ten parameters for the two-compartment parent model and the two-compartment hydroxy-dabrafenib metabolite model, but the coverage check found only 4 covered against 10 expected, leaving V1/F, Q/F and V2/F for both molecules unmatched. The model builder assumed F=1 and Fm=1 with no molar correction, so all parameters are apparent (adjusted for bioavailability). A second reader also disagreed on the dosed compound, reading dabrafenib with trametinib rather than dabrafenib alone, and on the identifier assigned to the absorption rate constant kabs (1.8 1/h). Extracted — dabrafenib: CL/F 17.7 L/h, V1/F 39.5 L, kabs 1.8 1/h, Q/F 3.85 L/h, V2/F 5.23 L, tlag 0.5 h; hydroxy-dabrafenib: V1/F 19.6 L, CL/F 22.8 L/h, Q/F 7.39 L/h, V2/F 25.7 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dabrafenib, the second reading dabrafenib, trametinib; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -28,7 +28,7 @@ Balakirouchenane D; Guégan S; Csajka C; Jouinot A; Heidelberger V; Puszkiel A; 
   ·  DOI: [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931)
 
 ## Model component
-<dbs-pgx drug="dabrafenib" model-id="Dabrafenib_Balakirouchenane2020_base" status="model_quarantined" stale="false" population="adults with BRAF-mutated metastatic melanoma" measured-compound="dabrafenib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="dabrafenib" model-id="Dabrafenib_Balakirouchenane2020_base" status="needs_review" stale="false" population="adults with BRAF-mutated metastatic melanoma" measured-compound="dabrafenib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent–metabolite model: parent with 2 compartment(s); metabolite hydroxy-dabrafenib: 2 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 10 extracted.
@@ -36,7 +36,7 @@ Balakirouchenane D; Guégan S; Csajka C; Jouinot A; Heidelberger V; Puszkiel A; 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -131,9 +131,14 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['V2/F', 'Q/F'] |
+| T3_metabolite_built[hydroxy-dabrafenib] | not captured | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.019600000000000003, 'CL': 6.333333333333333e-06, 'formation': 4.9166666666666665e-06} | not captured | hydroxy-dabrafenib = compartment M1 with its own numbers |
+| T3_metabolite_output[hydroxy-dabrafenib] | not captured | pass | not captured | 0.0006071710741942506 | not captured | C_M1 (hydroxy-dabrafenib) must rise above 0 when the parent is dosed |
+| T3_molar_mass[hydroxy-dabrafenib] | not captured | pass | not captured | {'MW': 0.519562, 'MW_m1': 0.535559} | not captured | formation is molecule-for-molecule |
+| T3_output_variable | not captured | pass | C_central (measured=dabrafenib) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | fail | 10 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['V1/F', 'Q/F', 'V1/F', 'V2/F', 'Q/F', 'V2/F'] |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T3_shared_parameters | not captured | pass | 4 shared param(s) bound once | bound once | not captured | shared params must bind one value to both compartments |
+| T3_topology_template | not captured | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
@@ -144,8 +149,9 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_dabrafenib/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Balakirouchenane_2020` / `Balakirouchenane_2020::base`)
-- model: `../../../knowledgebase/drugs/drug_dabrafenib/models/modelica/_needs_review/Dabrafenib_Balakirouchenane2020_base.mo`
-- deviation: `../../../knowledgebase/drugs/drug_dabrafenib/models/modelica/_needs_review/Dabrafenib_Balakirouchenane2020_base.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_dabrafenib/models/modelica/Dabrafenib_Balakirouchenane2020_base.mo`
+- deviation: `../../../knowledgebase/drugs/drug_dabrafenib/models/modelica/Dabrafenib_Balakirouchenane2020_base.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_dabrafenib/models/modelica/Dabrafenib_Balakirouchenane2020_base.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -167,7 +173,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.8 /h, lag 30 min, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 75 mg, single dose, first-order absorption (ka 1.8 /h, lag 30 min, F 1). Doses in the paper: 75, 150 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_params.json" metaurl="assets/fmu/PK_3M_9C.vr.json" wasmurl="assets/fmu/PK_3M_9C.js" controlsurl="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_sim_controls.json"></dbs-fmusim>
 

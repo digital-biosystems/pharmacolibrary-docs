@@ -1,8 +1,16 @@
 {
+ "dose_source": "paper",
  "model_id": "Macrogol_Jian2025_reference",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.045,
+  0.09,
+  0.18,
+  0.27
  ],
  "parameters": {
   "Cl": 3.805555555555556e-08,
@@ -11,17 +19,17 @@
   "VdPerKg": 4.214285714285715e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 4.5e-08,
   "ka": 1.1574074074074074e-07,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 86400.0
+  "central.C": 373995.99198396795
  },
  "reference_peaks": {
-  "central.C": 0.00018243278296846795
+  "central.C": 1.1804268495656526e-07
  },
- "stop_time": 86400.0,
+ "stop_time": 15552000.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

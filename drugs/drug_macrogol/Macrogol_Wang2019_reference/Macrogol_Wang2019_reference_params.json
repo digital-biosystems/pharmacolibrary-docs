@@ -1,4 +1,5 @@
 {
+ "dose_source": "WHO ATC DDD 10000 mg oral (A06AD15)",
  "model_id": "Macrogol_Wang2019_reference",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
@@ -11,15 +12,15 @@
   "VdPerKg": 0.000560880879131525,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.01,
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 6768.978639643713
+  "central.C": 6764.083534893275
  },
  "reference_peaks": {
-  "central.C": 0.000830638227886807
+  "central.C": 0.08306372710359787
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

@@ -1,4 +1,5 @@
 {
+ "dose_source": "paper",
  "model_id": "Paracetamol_Hannam2018_reference",
  "molar_masses": {
   "central.C": 0.151165
@@ -7,6 +8,13 @@
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  840.0,
+  1050.0,
+  1680.0,
+  2100.0
+ ],
  "parameters": {
   "Cl": 0.00025666666666666665,
   "F": 1.0,
@@ -14,14 +22,14 @@
   "VdPerKg": 9.071428571428571e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.00084,
   "weight": 70.0
  },
  "reference_peak_times": {
   "central.C": 519.438877755511
  },
  "reference_peaks": {
-  "central.C": 0.0006493524209918755
+  "central.C": 0.005454546017367903
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

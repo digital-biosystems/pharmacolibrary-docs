@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;codeine&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/&quot;},{&quot;label&quot;:&quot;Capparelli_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Shah1990_reference&quot;,&quot;label&quot;:&quot;Shah_1990_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Shah1990_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Anderson2026_reference&quot;,&quot;label&quot;:&quot;Anderson_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Anderson2026_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Ashraf2024_reference&quot;,&quot;label&quot;:&quot;Ashraf_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Ashraf2024_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Capparelli2005_reference&quot;,&quot;label&quot;:&quot;Capparelli_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Capparelli2005_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Codeine_Gretler2020_reference&quot;,&quot;label&quot;:&quot;Gretler_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Gretler2020_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Shah1990_reference&quot;,&quot;label&quot;:&quot;Shah_1990_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Shah1990_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Anderson2026_reference&quot;,&quot;label&quot;:&quot;Anderson_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Anderson2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Ashraf2024_reference&quot;,&quot;label&quot;:&quot;Ashraf_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Ashraf2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Codeine_Capparelli2005_reference&quot;,&quot;label&quot;:&quot;Capparelli_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Capparelli2005_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Codeine_Gretler2020_reference&quot;,&quot;label&quot;:&quot;Gretler_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Gretler2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # codeine — `Codeine_Capparelli2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,22 +15,20 @@
 
 ### Reviewer guidance
 
-**The codeine one-compartment model was rejected because its clearance of 0.18 ml/h and volume of distribution of 66.0 ml are physiologically implausible, indicating a unit or scale extraction error.**
+**The codeine record was rejected because its clearance (0.18 ml/h) and central volume (66.0 ml) are physiologically implausible, indicating a unit or scale extraction error.**
 
-The record lists codeine clearance (CL) as 0.18 ml/h and central volume (V1) as 66.0 ml, magnitudes far outside the physiological window for this drug, which is why the model was refused. The source of these values is a review-secondary text rather than the original fitted analysis. A second reader additionally reported different values for three quantities (13, 701 and 6.1) where this record extracted none, so those comparisons could not be computed for this record. Extracted — codeine: CL 0.18 ml/h, V1 66 ml.
+The extracted total clearance of 0.18 ml/h and central volume of distribution of 66.0 ml for codeine fall far outside physiological windows, consistent with a unit/scale extraction error (likely mg-based values misread as ml). A second reader proposed different values (13, 701, 6.1) for the same quantities, but this record carried no values for those fields, so the disagreement could not be resolved from the record itself. Extracted — codeine: CL 0.18 ml/h, V1 66 ml.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q316: this record has none, the second reading 13; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
-
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-17 23:06:14.218948+00:00) predates the upstream re-run (2026-09-23 14:27:45.779098+00:00). Current validate status: `rejected`.
 
 ## Citation
 Capparelli EV; Bloom BT; Kueser TJ; Oelberg DG; Bifano EM; White RD; Schelonka RL; Pearlman SA; Patti J; Hetherington SV et al. (2005). Antimicrobial agents and chemotherapy 49
   ·  DOI: [10.1128/aac.49.10.4121-4127.2005](https://doi.org/10.1128/aac.49.10.4121-4127.2005)
 
 ## Model component
-<dbs-pgx drug="codeine" model-id="Codeine_Capparelli2005_reference" status="rejected" stale="true" population="" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="codeine" model-id="Codeine_Capparelli2005_reference" status="rejected" stale="false" population="" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

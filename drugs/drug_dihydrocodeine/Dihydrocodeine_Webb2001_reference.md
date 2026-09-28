@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;dihydrocodeine&quot;,&quot;href&quot;:&quot;drugs/drug_dihydrocodeine/&quot;},{&quot;label&quot;:&quot;Webb_2001 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydrocodeine_Webb2001_reference&quot;,&quot;label&quot;:&quot;Webb_2001_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydrocodeine_Webb2001_reference&quot;,&quot;label&quot;:&quot;Webb_2001_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dihydrocodeine — `Dihydrocodeine_Webb2001_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The dihydrocodeine record was rejected because its apparent parameters are incoherent: the reported CL/F of 43 L/h and V/F of 203 L imply an elimination rate constant that conflicts with the separately reported kel of 0.216 1/h, a double correction of the same clearance.**
+**The dihydrocodeine record is incomplete: the parameter V/F (203 L) was not captured, leaving only 6 of 7 expected parameters covered, so the model was held back for review.**
 
-The record lists both CL/F (43 L/h) with V/F (203 L) and a separate kel (0.216 1/h) for dihydrocodeine; since kel should equal CL/F divided by V/F, the two sets of values double-correct the same elimination process and fail the apparent-parameter coherence check. The record was additionally built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The metabolite dihydromorphine's formation fraction fm is given as 0.015 systemic, while its presystemic formation link parameter Kfm is left by the abstract as either fixed at 0 or estimated during first-pass modelling. Extracted — dihydrocodeine: CL/F 43 L/h, V/F 203 l, kabs 11 1/h, tlag 0.3 h, kel 0.216 1/h, t1/2z 13 min; dihydromorphine: fm 0.015, kel 0.339 1/h, V 200 L.
+The record, built from the abstract of Webb_2001 alone, covers CL/F 43 L/h, kabs 11 1/h, tlag 0.3 h, kel 0.216 1/h and metabolite parameters, but V/F (203 L) was neither emitted nor defaulted, failing the parameter coverage check (6 of 7). Because only the abstract was read, reported summary statistics stand in for a fitted model. The builder also substituted a default intercompartmental hepatic distribution flow of 90 L/h for the missing source values and assumed F=1 and Fm=1 with no molar correction. Extracted — dihydrocodeine: CL/F 43 L/h, V/F 203 l, kabs 11 1/h, tlag 0.3 h, kel 0.216 1/h, t1/2z 13 min; dihydromorphine: fm 0.015, kel 0.339 1/h, V 200 L.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -26,7 +26,7 @@ Webb JA; Rostami-Hodjegan A; Abdul-Manap R; Hofmann U; Mikus G; Kamali F et al. 
   ·  DOI: [10.1046/j.0306-5251.2001.01414.x](https://doi.org/10.1046/j.0306-5251.2001.01414.x)
 
 ## Model component
-<dbs-pgx drug="dihydrocodeine" model-id="Dihydrocodeine_Webb2001_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="dihydrocodeine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="dihydrocodeine" model-id="Dihydrocodeine_Webb2001_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="dihydrocodeine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent–metabolite model: parent with 1 compartment(s) plus a liver compartment (first pass); metabolite dihydromorphine: 1 compartment(s); formed in the liver; oral dose — template `PK_3M_3C`.  
 **Parameters:** 9 extracted.
@@ -34,7 +34,7 @@ Webb JA; Rostami-Hodjegan A; Abdul-Manap R; Hofmann U; Mikus G; Kamali F et al. 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -111,6 +111,22 @@ Webb JA; Rostami-Hodjegan A; Abdul-Manap R; Hofmann U; Mikus G; Kamali F et al. 
 | C9_phys_window_Q61 | pass | volume within physiological range | 200 L | not captured | not captured | ['Webb_2001:abstract'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 203 L | not captured | not captured | ['Webb_2001:abstract'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_metabolite_built[dihydromorphine] | not captured | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.2, 'CL': 1.8833333333333335e-05, 'formation': 1.791666666666667e-07} | not captured | dihydromorphine = compartment M1 with its own numbers |
+| T3_metabolite_output[dihydromorphine] | not captured | pass | not captured | 1.2353418243819927e-06 | not captured | C_M1 (dihydromorphine) must rise above 0 when the parent is dosed |
+| T3_molar_mass[dihydromorphine] | not captured | pass | not captured | {'MW': 0.30138010000000004, 'MW_m1': 0.287359} | not captured | formation is molecule-for-molecule |
+| T3_output_variable | not captured | pass | C_central (measured=dihydrocodeine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | fail | 7 scholar param(s) emitted or defaulted | 6 covered | not captured | neither emitted nor in defaulted[]: ['V/F'] |
+| T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
+| T3_topology_template | not captured | pass | parent_metabolite_hepatic → PK_3M_3C* | PK_3M_3C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -119,17 +135,30 @@ Webb JA; Rostami-Hodjegan A; Abdul-Manap R; Hofmann U; Mikus G; Kamali F et al. 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_dihydrocodeine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Webb_2001` / `Webb_2001::reference`)
+- model: `../../../knowledgebase/drugs/drug_dihydrocodeine/models/modelica/Dihydrocodeine_Webb2001_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_dihydrocodeine/models/modelica/Dihydrocodeine_Webb2001_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_dihydrocodeine/models/modelica/Dihydrocodeine_Webb2001_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference.svg" alt="Dihydrocodeine_Webb2001_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption into a hepatic compartment first (first pass) (ka 11 /h, lag 18 min, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 90 mg, single dose, first-order absorption into a hepatic compartment first (first pass) (ka 11 /h, lag 18 min, F 1). Dose in the paper: 90 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_params.json" metaurl="assets/fmu/PK_3M_3C.vr.json" wasmurl="assets/fmu/PK_3M_3C.js" controlsurl="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The heparin model was held back because its terminal half-life (8.84) is 176.7595-fold the paper's reported 0.05, a minutes-to-hours unit mismatch, and the intercompartmental clearance Q was never extracted.**
+**The heparin model's terminal half-life (8.77 h) is 175.4939 times the paper's reported 0.05, and the intercompartmental clearance Q (0.29 L/h) was neither extracted nor defaulted, so the record was held back.**
 
-When simulated as the paper dosed it, the model's terminal half-life is 8.84 against the paper's 0.05, a ratio of 176.7595, with the note indicating a minutes-to-SI versus simulated-hours unit discrepancy. The parameter coverage check found only 3 of the 4 expected parameters covered: Q (intercompartmental clearance, 0.29 L/h) was neither emitted nor defaulted. The builder substituted library defaults for the missing bioavailability F and lag time Tlag. A second reader also disputed the model structure, listing UFH–protamine interconversion links where the record has none, though the parameter values themselves were not contested. Extracted — heparin: CL 1.5 L h -1, Q 0.29 L h -1, V 3.66e+03 mL, kabs 0.079 h -1.
+Simulated as the paper dosed it, the model's terminal half-life is 8.77 h against the paper's 0.05, a ratio of 175.4939, far beyond tolerance. Parameter coverage also failed: of 4 expected parameters, only 3 were covered, with Q (intercompartmental clearance, 0.29 L/h) neither emitted nor defaulted. The model builder substituted library defaults for the missing bioavailability F and lag time Tlag. A second reader also disputed the heparin–protamine interconversion link, which this record leaves absent, and could not confirm the values for Q, ka (0.079 h⁻¹), clearance (1.5 L/h) and volume (3661.0 mL). Extracted — heparin: CL 1.5 L h -1, Q 0.29 L h -1, V 3.66e+03 mL, kabs 0.079 h -1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has unfractionated heparin, the second reading UFH; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -129,13 +129,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=unfractionated heparin) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 3 covered | not captured | neither emitted nor in defaulted[]: ['Q'] |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 | T1_t_half_alpha | reference | skipped | 3.5 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | fail | 0.05 | 8.837973973453112 | 176.7595 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.05 | 8.774696676956726 | 175.4939 | min→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -156,8 +157,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_heparin/Heparin_Lanoisele2026_reference/Heparin_Lanoisele2026_reference_modelica.zip" download>Heparin_Lanoisele2026_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_heparin/Heparin_Lanoisele2026_reference/Heparin_Lanoisele2026_reference_fmi.zip" download>Heparin_Lanoisele2026_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_heparin/Heparin_Lanoisele2026_reference/Heparin_Lanoisele2026_reference_modelica.zip" download>Heparin_Lanoisele2026_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_heparin/Heparin_Lanoisele2026_reference/Heparin_Lanoisele2026_reference_fmi.zip" download>Heparin_Lanoisele2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_heparin/Heparin_Lanoisele2026_reference/Heparin_Lanoisele2026_reference_matlab.zip" download>Heparin_Lanoisele2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_heparin/Heparin_Lanoisele2026_reference/Heparin_Lanoisele2026_reference_matlab_simbio.zip" download>Heparin_Lanoisele2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_heparin/Heparin_Lanoisele2026_reference/Heparin_Lanoisele2026_reference_sbml.zip" download>Heparin_Lanoisele2026_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -169,7 +170,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.079 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 200 mg, single dose, first-order absorption (ka 0.079 /h, F 0.9). Dose in the paper: 200 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_heparin/Heparin_Lanoisele2026_reference/Heparin_Lanoisele2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_heparin/Heparin_Lanoisele2026_reference/Heparin_Lanoisele2026_reference_sim_controls.json"></dbs-fmusim>
 

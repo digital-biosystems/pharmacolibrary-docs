@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The clozapine model was quarantined because clearance, absorption rate constant and absorption lag time had no extracted values, so library placeholder defaults would have stood in for these parameters.**
+**The clozapine parent–metabolite model was quarantined because clearance, absorption rate constant and lag time had no source values and library placeholder values were substituted, with an invented absorption step.**
 
-The record reports only V/F = 750 L and a βSmoker CL/F of 0.37 for clozapine, while clozapine's clearance, absorption rate constant (ka) and absorption lag time (Tlag) were left without values, meaning generic placeholder defaults would have been substituted and the model was held back rather than published with invented numbers. The absorption rate constant was not reported in the source, and the builder additionally assumed F = 1 and Fm = 1 with no molar correction, giving an apparent (/F) parameterization with first-order extravascular input. A second reader disagreed on the parameter values: they read the i.v. CL/F for clozapine as 93 where this record has none, and left the βSmoker CL/F blank where this record gives 0.37. A structure check also failed, obtaining a one-compartment enteral topology where a parent–metabolite structure was expected, though this check could not be fully adjudicated. Extracted — clozapine: V/F 750 L, CL/F 0.37.
+The record reports only V/F = 750 L and a smoker CL/F = 0.37 for clozapine; clozapine's clearance, absorption rate constant ka and absorption lag time Tlag are absent from the source, so placeholder values stood in and the model was held back rather than published with invented numbers. The builder also assumed F=1 and Fm=1 without molar correction (apparent parameterization) and defaulted ka, an invented absorption not reported in the source. The structure check expected a parent–metabolite topology but obtained a one-compartment enteral model, and the deviations check returned 'invented_absorption: not acceptable'. A second reader additionally recorded 93 for clozapine's CL/F where this record has null, and null where this record has 0.37, so the clearance value is disputed. Extracted — clozapine: V/F 750 L, CL/F 0.37.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of iiv cl/f clozapine: this record has none, the second reading 93; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -97,11 +97,12 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">

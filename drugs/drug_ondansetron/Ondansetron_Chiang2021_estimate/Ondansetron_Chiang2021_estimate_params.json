@@ -1,25 +1,34 @@
 {
+ "dose_source": "paper",
  "model_id": "Ondansetron_Chiang2021_estimate",
+ "molar_masses": {
+  "central.C": 0.293363
+ },
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  16.0
+ ],
  "parameters": {
   "Cl": 6.833333333333334e-06,
   "F": 1.0,
+  "MM": 0.293363,
   "VdPerKg": 0.0009042857142857142,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1.6e-05,
   "k12": 0.000925925925925926,
   "k21": 0.0005426954732510288,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662011
+  "central.C": 660.0000000662042
  },
  "reference_peaks": {
-  "central.C": 0.0006465254811963775
+  "central.C": 0.00010344422998984
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

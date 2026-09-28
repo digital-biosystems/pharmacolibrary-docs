@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The ticlopidine/S-ketamine parent–metabolite model was rejected because a structural parameter's reported unit could not be converted to SI, leaving a dimension mismatch on that parameter.**
+**The ticlopidine record was rejected because the intrinsic clearance parameter CLint (304 L/h) carries a dimension mismatch on a structural parameter, and a reported unit could not be converted to SI.**
 
-The record describes a parent–metabolite structure for ticlopidine with metabolism from S-ketamine to norketamine (rate constant Kfm) and reports CLint 304 L/h, V 14.4 L and Q 288 L/h. One of the reported units could not be expressed in SI units, so that structural parameter entered the model with an unconvertible unit and failed the dimensional consistency check. Because the mismatched parameter could not be resolved to consistent units, the model was refused rather than published. Extracted — ticlopidine: CLint 304 L/h, V 14.4 L, Q 288 L/h.
+The record describes ticlopidine with a parent–metabolite structure linking S-ketamine to norketamine via the metabolic rate constant Kfm, and reports CLint of 304 L/h, V of 14.4 L, and Q of 288 L/h. The CLint parameter's meaning is the ratio of maximum metabolic rate (Vmax) to the Michaelis-Menten constant (Km), which conflicts with its reported dimension, triggering the dimension-mismatch failure. Additionally, one of the reported units could not be expressed in SI units, so that parameter reached the model builder without an SI value. The findings do not identify which unit failed conversion, so this remains inconclusive. Extracted — ticlopidine: CLint 304 L/h, V 14.4 L, Q 288 L/h.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

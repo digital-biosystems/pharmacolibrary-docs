@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The nandrolone decanoate record was rejected because the hydrolysis link to the metabolite nandrolone carries no parameter, leaving the metabolite unreachable from the dose, and the record rests on abstract-only summary statistics.**
+**The nandrolone record was rejected because the metabolite nandrolone, formed from nandrolone decanoate by hydrolysis, has no compartment (0 compartments), leaving it unlinked from the dose, and the record was built from the abstract only.**
 
-The structure links nandrolone decanoate to nandrolone by hydrolysis, but the link parameter is 'none' (kind unknown), so the metabolite compartment has no path from the dose — an unlinked metabolite. The record was built from the paper's abstract alone, meaning reported summary statistics stand in for a fitted model. The clearance value 1.55 with unit '1 X h-1 X kg-1' contains a unit not convertible to SI. A second reader also disagreed on the dose compound (nandrolone decanoate vs unknown), the primary analyte (nandrolone vs unknown), and the hydrolysis link itself, and several parameter fields (mean half-life, serum clearance) were read as null by one reader and valued by the other. Extracted — nandrolone: CL 1.55 1 X h-1 X kg-1.
+The structure lists nandrolone as a metabolite formed from nandrolone decanoate in the central compartment but with 0 compartments, so the check for unreachable compartments or unlinked metabolites failed. The record is abstract-only, meaning reported summary statistics (e.g., clearance 1.55 with unit '1 X h-1 X kg-1', an unconvertible unit) stood in for a fitted model. A second reader also disagreed on the dose compound (nandrolone decanoate vs unknown), the primary analyte, and the hydrolysis link, and could not confirm the extracted clearance value of 1.55. Extracted — nandrolone: CL 1.55 1 X h-1 X kg-1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has nandrolone decanoate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

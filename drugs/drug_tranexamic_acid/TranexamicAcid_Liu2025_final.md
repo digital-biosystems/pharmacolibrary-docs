@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The two-compartment model for tranexamic acid was rejected because its second compartment is orphaned — no path links the dose to it, leaving the intercompartmental clearance CL2 (17.0 L/h) and peripheral volume V2 (11.1 L) disconnected from the model.**
+**Rejected because the intercompartmental clearance Q between central and peripheral compartments has no extracted value for tranexamic acid, leaving the peripheral compartment (V2 = 11.1 L) unlinked from the dose.**
 
-The record describes a two-compartment structure for tranexamic acid in Chinese cardiac-surgery patients, with clearance CL1 of 4.7 L/h, central volume V1 of 4.9 L, peripheral volume V2 of 11.1 L, and intercompartmental clearance CL2 of 17.0 L/h. The review found the second compartment unreachable: it has no connection from the administered dose, so the reported CL2 and V2 values do not describe a functioning part of the pharmacokinetic model. This structural defect was the sole reason for rejection; no other failed checks are recorded. Extracted — tranexamic acid: CL 4.7 L/h, V1 4.9 L, V2 11.1 L.
+The two-compartment structure lists V1 = 4.9 L, V2 = 11.1 L and CL = 4.7 L/h, but the Q parameter (labelled CL2, L/h) carries no value in its main entry; only a separate typical-value entry gives CL2 = 17.0 L/h. Without a usable intercompartmental clearance, the peripheral compartment has no path from the dose, so the record was refused. Extracted — tranexamic acid: CL 4.7 L/h, V1 4.9 L, V2 11.1 L.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

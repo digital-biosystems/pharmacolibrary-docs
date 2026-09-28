@@ -1,27 +1,37 @@
 {
+ "dose_source": "paper",
  "model_id": "Carbamazepine_Milovanovic2016_reference",
+ "molar_masses": {
+  "central.C": 0.2362686
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  260.0,
+  1000.0
+ ],
  "parameters": {
   "Cl": 5.972222222222223e-08,
   "F": 0.9,
+  "MM": 0.2362686,
   "Tlag": 0.0,
   "VdPerKg": 0.002492857142857143,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.00026,
   "ka": 0.0002425,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 27530.260521042084
+  "central.C": 28486.559896584666
  },
  "reference_peaks": {
-  "central.C": 0.0005109960567287759
+  "central.C": 0.0013285399589090838
  },
- "stop_time": 86400.0,
+ "stop_time": 10281600.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

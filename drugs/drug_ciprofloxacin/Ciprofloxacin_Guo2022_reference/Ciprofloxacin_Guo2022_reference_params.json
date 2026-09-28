@@ -1,4 +1,5 @@
 {
+ "dose_source": "paper",
  "model_id": "Ciprofloxacin_Guo2022_reference",
  "molar_masses": {
   "central.C": 0.3313415
@@ -6,6 +7,10 @@
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  400.0
  ],
  "parameters": {
   "Cl": 4.083333333333333e-06,
@@ -15,17 +20,17 @@
   "VdPerKg": 0.0008742857142857144,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.0004,
   "k12": 0.00020379448075526509,
   "k21": 0.00017419304779639976,
   "ka": 0.0002777777777777778,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 9146.241451252352
+  "central.C": 9128.444695191529
  },
  "reference_peaks": {
-  "central.C": 0.0005064092761666472
+  "central.C": 0.0020256432968301557
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

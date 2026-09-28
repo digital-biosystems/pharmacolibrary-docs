@@ -1,25 +1,36 @@
 {
+ "dose_source": "paper",
  "model_id": "Haloperidol_Li2022_reference",
+ "molar_masses": {
+  "central.C": 0.375864
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.5,
+  1.0,
+  2.0
+ ],
  "parameters": {
   "Cl": 1.7705555555555556e-05,
   "F": 1.0,
+  "MM": 0.375864,
   "VdPerKg": 0.03293142857142857,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 5e-07,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662021
+  "central.C": 660.0000000662174
  },
  "reference_peaks": {
-  "central.C": 4.3280388450766276e-05
+  "central.C": 2.1640208645505652e-07
  },
- "stop_time": 86400.0,
+ "stop_time": 518400.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

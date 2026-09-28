@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record was quarantined because irinotecan's clearance and volume of distribution had no extracted values, so library placeholders stood in, and the only extracted parameter (CL = 0.0 %) describes total irinotecan, not irinotecan itself.**
+**The irinotecan parent–metabolite model was quarantined because irinotecan's clearance and volume of distribution had no extracted values and library defaults were substituted, and the clearance parameter carries a non-convertible '%' unit.**
 
-The single extracted parameter, labelled 'estimated clearance difference' with value 0.0 % for total irinotecan, does not give irinotecan's clearance or volume of distribution; these had no values, meaning library placeholders would have been used and the model was held back. The structure check also failed: the expected parent–metabolite structure was not obtained. Additionally, a reported unit could not be converted to SI, so the parameter reached the model build without an SI value. A second reader further disagreed on the dose compound (liposomal irinotecan vs nal-IRI), the primary analyte (total irinotecan vs tIRI), the metabolite links (adding usn38 metabolism and esn38 interconversion), and the SN-38 clearance factor (null vs 1.0). Extracted — total irinotecan: CL 0 %.
+The only extracted parameter, an 'estimated clearance difference' of 0.0 % for total irinotecan, is not irinotecan's total clearance, and its '%' unit could not be converted to SI. The structure check expected a parent–metabolite topology but obtained a one-compartment structure. A second reader also disagreed on the dose compound (nal-IRI vs liposomal irinotecan), the primary analyte (tIRI vs total irinotecan), and additional links to SN-38 metabolites that the record lacks. Extracted — total irinotecan: CL 0 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has liposomal irinotecan, the second reading nal-IRI; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -107,9 +107,10 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 | T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |

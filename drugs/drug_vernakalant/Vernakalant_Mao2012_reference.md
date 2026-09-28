@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The vernakalant record was rejected for a dimensional mismatch on the clearance parameter (0.35 L/h/kg), and it was built from the abstract alone rather than a fitted model.**
+**The vernakalant record was rejected because the median systemic clearance of 0.35 L/h/kg carries a dimension mismatch on a structural parameter, and the record was built from the abstract alone rather than a fitted model.**
 
-The median systemic clearance of vernakalant, 0.35 L/h/kg, triggered a dimension mismatch on a structural parameter, which led to rejection. The record was abstract-only, meaning the paper's summary statistics stood in for a fitted model. A second reader (gpt-oss:120b) disagreed with both extracted values, reading null for the clearance (0.35) and for the AUC from 0 to 90 minutes (15 %), leaving the parameter values unconfirmed. Extracted — vernakalant: CL 0.35 L/h/kg, AUCt 15 %.
+The clearance value 0.35 L/h/kg for vernakalant failed a dimension check on a structural parameter, so the record was refused. The record is abstract-only: the reported summary statistics (clearance 0.35 L/h/kg and AUC to 90 minutes of 15%) stood in for a fitted model. A second reader found no support for either parameter value, reading both as null. Extracted — vernakalant: CL 0.35 L/h/kg, AUCt 15 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of area under the plasma vernakalant concentration-time curve from 0 to 90 minutes: this record has 15, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

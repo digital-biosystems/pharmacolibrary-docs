@@ -1,11 +1,12 @@
 {
+ "dose_source": "WHO ATC DDD 20 mg oral (A02BC01)",
  "model_id": "Omeprazole_Ala2013_reference",
  "molar_masses": {
-  "C_central": 0.345416
+  "central.C": 0.345416
  },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 5.777777777777779e-06,
@@ -15,15 +16,15 @@
   "VdPerKg": 0.0003085714285714286,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 2e-05,
   "ka": 0.0008333333333333333,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 11384.888697946113
+  "central.C": 11385.54610764225
  },
  "reference_peaks": {
-  "C_central": 0.0026965078188651978
+  "central.C": 0.0005393029210971402
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

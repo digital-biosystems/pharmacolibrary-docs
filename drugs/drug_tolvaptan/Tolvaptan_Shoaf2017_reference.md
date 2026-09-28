@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The tolvaptan record was held back because the absorption rate constant ka was not reported in the source and a default was substituted, alongside other unreported assumptions (Tlag, F=1, Fm=1).**
+**The tolvaptan record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, an unreported deviation from the paper.**
 
-The record deviates from its source (Shoaf_2017) in that ka and Tlag had no reported values and library defaults were substituted, and the invented ka was judged not acceptable. The builder further assumed F=1 and Fm=1 with no molar correction, yielding an apparent (/F) parameterization with first-order extravascular input; only CL/F = 4.81 mL/min/kg was directly reported, while V/F = 125.3249 L was derived from CL·t½/ln2. A second reader also disagreed on three extracted values (222 vs null, 1.02 vs null, null vs 222), leaving those entries unresolved. Extracted — tolvaptan: CL/F 4.81 mL/min/kg, V/F 125 L.
+The record reports tolvaptan CL/F of 4.81 mL/min/kg and V/F of 125.3249 L, but ka and the absorption lag time had no values in the source, so library placeholder defaults were used instead — an invented absorption that was judged not acceptable. The model also assumes F=1 and Fm=1 with no molar correction, so all parameters are apparent (/F) values with first-order depot input for extravascular dosing. A second reader additionally disagreed on several extracted values, reading 222 where this record has null and null where this record has 1.02 and 222. Extracted — tolvaptan: CL/F 4.81 mL/min/kg, V/F 125 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has none, the second reading 222; it also differs on 2 more fields. That field does not shape the model.
 
@@ -106,7 +106,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=tolvaptan) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=tolvaptan) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |

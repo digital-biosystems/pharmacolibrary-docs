@@ -26,7 +26,7 @@ _not available_
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.781). The first reading is what the record holds.">cross-check: disputed</span> | [Noh_2018](drugs/drug_indobufen/pd_Noh_2018_MPA.md) | Noh YH et al., Prediction of the human &lt;i&gt;in vivo&lt;/i&gt;…, Translational and clinical… (2018) | [10.12793/tcp.2018.26.4.160](https://doi.org/10.12793/tcp.2018.26.4.160) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.781). The first reading is what the record holds.">cross-check: disputed</span> | [Noh_2018](drugs/drug_indobufen/pd_Noh_2018_MPA.md) | Noh YH et al., Prediction of the human &lt;i&gt;in vivo&lt;/i&gt;…, Translational and clinical… (2018) | [10.12793/tcp.2018.26.4.160](https://doi.org/10.12793/tcp.2018.26.4.160) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

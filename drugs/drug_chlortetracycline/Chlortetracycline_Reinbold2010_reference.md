@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The chlortetracycline record was held back because the absorption rate constant (ka) and lag time were not reported in the source and placeholder values would have been used, alongside an assumed bioavailability F=1.**
+**The chlortetracycline record was held back because the absorption rate constant ka was not reported in the paper and a default value was invented, alongside other unreported assumptions (Tlag, F=1).**
 
-The paper's abstract reports chlortetracycline V/F 40.9 L/kg, kel 0.0478 h⁻¹, CL/F 1.8 L/kg/h, t1/2z 16.2 h, AUC/dose 0.29 h·µg/L, Cmax/dose 4.5 ng/mL and tmax 23.3 h, but no absorption rate constant or lag time; since no value was extracted for ka and Tlag, library placeholders would have been used and the model was held back. The model builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization, and used a first-order depot input consistent with extravascular dosing. This invented absorption input was judged not acceptable. Because the record was built from the abstract alone, the reported summary statistics stood in for a fitted model. Extracted — chlortetracycline: V/F 40.9 L/kg, kel 0.0478 h(-1), AUC/dose 0.29 h x microg/L, CL/F 1.8 L/kg/h, t1/2z 16.2 h, Cmax/dose 4.5 ng/mL, tmax 23.3 h.
+The record was built from the abstract only, so reported summary statistics (V/F 40.9 L/kg, kel 0.0478 h⁻¹, CL/F 1.8 L/kg/h, t1/2z 16.2 h, Cmax/dose 4.5 ng/mL, tmax 23.3 h, AUC/dose 0.29 h·µg/L) stood in for a fitted model. The source never reports ka or Tlag, so library defaults were substituted, and the invented absorption constant was judged not acceptable. Because the parameters are apparent (/F) values, bioavailability was assumed to be 1 with no molar correction, and a first-order depot input was assumed for the extravascular dosing. Extracted — chlortetracycline: V/F 40.9 L/kg, kel 0.0478 h(-1), AUC/dose 0.29 h x microg/L, CL/F 1.8 L/kg/h, t1/2z 16.2 h, Cmax/dose 4.5 ng/mL, tmax 23.3 h.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -95,6 +95,7 @@ Reinbold JB; Coetzee JF; Gehring R; Havel JA; Hollis LC; Olson KC; et al. et al.
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=chlortetracycline) | central.C | not captured | output must be the measured/analyte compartment |
@@ -122,7 +123,7 @@ Reinbold JB; Coetzee JF; Gehring R; Havel JA; Hollis LC; Olson KC; et al. et al.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_modelica.zip" download>Chlortetracycline_Reinbold2010_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_fmi.zip" download>Chlortetracycline_Reinbold2010_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_matlab.zip" download>Chlortetracycline_Reinbold2010_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_matlab_simbio.zip" download>Chlortetracycline_Reinbold2010_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_sbml.zip" download>Chlortetracycline_Reinbold2010_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -134,7 +135,7 @@ Reinbold JB; Coetzee JF; Gehring R; Havel JA; Hollis LC; Olson KC; et al. et al.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 1000 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1000 mg oral (J01AA03) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_sim_controls.json"></dbs-fmusim>
 

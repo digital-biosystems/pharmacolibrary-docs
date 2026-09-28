@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The metformin record carries parameters labeled as olaparib control values, and the absorption rate constant ka and lag time were not reported in the source, so placeholder values were substituted.**
+**The metformin record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside defaulted Tlag.**
 
-The extracted CL/F (7.84 l/h) and V/F (22.49 l) are labeled verbatim as 'Cl/F of olaparib (control)' and 'Vd/F of olaparib (control)' despite being assigned to metformin, indicating the source values belong to a different compound. The absorption rate constant ka and lag time were not reported in the source, so no values were extracted and library placeholder values would have been used instead. The builder additionally assumed F=1 and Fm=1 without molar correction, giving an apparent (/F) parameterization with first-order depot input. The invented absorption deviation — a defaulted ka not reported in the source — was judged not acceptable, so the model was held back for review. Extracted — metformin: CL/F 7.84 l/h, V/F 22.5 l.
+The record lists metformin CL/F of 7.84 l/h and V/F of 22.49 l, but the source did not report ka or Tlag, so library defaults were used for the first-order absorption input. The builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization. The invented absorption substitution was judged not acceptable, so the record needs review. Extracted — metformin: CL/F 7.84 l/h, V/F 22.5 l.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -126,7 +126,7 @@ _Every reader agrees on every compared field of this record._
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metformin/Metformin_StanisawiakRudowicz2024_reference/Metformin_StanisawiakRudowicz2024_reference_fmi.zip" download>Metformin_StanisawiakRudowicz2024_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_StanisawiakRudowicz2024_reference/Metformin_StanisawiakRudowicz2024_reference_matlab.zip" download>Metformin_StanisawiakRudowicz2024_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metformin/Metformin_StanisawiakRudowicz2024_reference/Metformin_StanisawiakRudowicz2024_reference_matlab_simbio.zip" download>Metformin_StanisawiakRudowicz2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_metformin/Metformin_StanisawiakRudowicz2024_reference/Metformin_StanisawiakRudowicz2024_reference_sbml.zip" download>Metformin_StanisawiakRudowicz2024_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_metformin/Metformin_StanisawiakRudowicz2024_reference/Metformin_StanisawiakRudowicz2024_reference_sbml.zip" download>Metformin_StanisawiakRudowicz2024_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_metformin/Metformin_StanisawiakRudowicz2024_reference/Metformin_StanisawiakRudowicz2024_reference_cellml.zip" download>Metformin_StanisawiakRudowicz2024_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
@@ -135,7 +135,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 7000 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Dose in the paper: 7000 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_metformin/Metformin_StanisawiakRudowicz2024_reference/Metformin_StanisawiakRudowicz2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metformin/Metformin_StanisawiakRudowicz2024_reference/Metformin_StanisawiakRudowicz2024_reference_sim_controls.json"></dbs-fmusim>
 

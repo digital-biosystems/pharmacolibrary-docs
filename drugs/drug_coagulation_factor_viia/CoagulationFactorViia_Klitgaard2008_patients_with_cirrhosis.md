@@ -196,7 +196,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_t_half_terminal | reference | fail | 3.08 | 0.48099706164651435 | 0.1562 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.08 | 0.48099786755964796 | 0.1562 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -230,7 +230,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_patients_with_cirrhosis/CoagulationFactorViia_Klitgaard2008_patients_with_cirrhosis_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_patients_with_cirrhosis/CoagulationFactorViia_Klitgaard2008_patients_with_cirrhosis_sim_controls.json"></dbs-fmusim>
 

@@ -15,9 +15,13 @@
 
 ### Reviewer guidance
 
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — eplerenone: CL/F 5.31 L/h.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has eplerenone, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Oishi M; Tomono Y; Zhao Q; Sweeney K et al. (2017). Journal of clinical pharmacology 57

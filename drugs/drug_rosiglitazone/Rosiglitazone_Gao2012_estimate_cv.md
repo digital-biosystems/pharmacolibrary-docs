@@ -15,13 +15,13 @@
 
 ### Reviewer guidance
 
-**No value for rosiglitazone's clearance, absorption rate constant and absorption lag time; t6_deviations.**
+**The rosiglitazone model in Gao_2012 was quarantined because clearance, absorption rate constant and absorption lag time were not reported, so library defaults stood in for these parameters.**
 
-The model was built, but rosiglitazone's clearance, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — rosiglitazone: kabs 2.01 h Ϫ1, V/F 342 ml/kg.
+The record for rosiglitazone in type 2 diabetic Goto-Kakizaki rats carries only two extracted values, an absorption rate constant of 2.01 h⁻¹ and an apparent volume of distribution of 342 ml/kg, but the source gave no clearance, absorption rate constant or lag time, so placeholders were substituted and the model was held back. The absorption rate constant was flagged as invented, since it was defaulted rather than reported. The parameterization assumed F=1 and Fm=1 with no molar correction, and a reported unit could not be converted to SI. A second reader disputed the primary analyte (glucose versus rosiglitazone), the parameterization (apparent versus mechanistic), and both parameter values, reading them as absent from the source. Extracted — rosiglitazone: kabs 2.01 h Ϫ1, V/F 342 ml/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has glucose, the second reading rosiglitazone; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Gao W; Jusko WJ et al. (2012). The Journal of pharmacology and experimental therapeutics 341

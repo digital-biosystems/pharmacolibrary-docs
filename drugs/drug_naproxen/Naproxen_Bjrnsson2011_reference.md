@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The naproxen one-compartment oral model was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside an assumed Tlag and F=1.**
+**The naproxen record was held back because the absorption rate constant ka was invented (defaulted) rather than reported in the source, alongside other unreported deviations.**
 
-The record's absorption rate constant ka and lag time Tlag were missing from the source, so library default values were substituted for both; the ka default constitutes an invented absorption input not reported for naproxen. The model also assumes F=1 and Fm=1 with no molar correction, making all parameters apparent (/F) values — CL/F of 515 l h⁻¹ and unbound volume of distribution of 4290 l — rather than directly estimated clearances and volumes. A second reader disagreed only on the dose compound naming (naproxcinod versus naproxcinod plus naproxen), not on the parameter findings. Extracted — naproxen: CL/F 515 l h -1, V 4.29e+03 l.
+The source reports only CL/F (515 l/h) and unbound volume of distribution (4290 l) for naproxen; ka and Tlag were not reported and library defaults were substituted, and the invented ka was judged not acceptable. The model also assumes F=1 and Fm=1 with apparent parameterization and no molar correction, and uses first-order depot input. A second reader additionally disagreed on the dosing compound, reading both naproxcinod and naproxen where the record lists only naproxen. Extracted — naproxen: CL/F 515 l h -1, V 4.29e+03 l.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has naproxcinod, the second reading naproxcinod, naproxen. That field shapes the model, so the record is marked disputed.
 
@@ -112,6 +112,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=naproxen) | central.C | not captured | output must be the measured/analyte compartment |
@@ -139,7 +140,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_modelica.zip" download>Naproxen_Bjrnsson2011_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_fmi.zip" download>Naproxen_Bjrnsson2011_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_fmi.zip" download>Naproxen_Bjrnsson2011_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_matlab.zip" download>Naproxen_Bjrnsson2011_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_matlab_simbio.zip" download>Naproxen_Bjrnsson2011_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_sbml.zip" download>Naproxen_Bjrnsson2011_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -151,7 +152,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 375 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 375, 750, 1500, 2250 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_sim_controls.json"></dbs-fmusim>
 

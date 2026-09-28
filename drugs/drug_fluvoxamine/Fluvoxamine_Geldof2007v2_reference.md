@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The fluvoxamine rat parameters — clearance 25.1 ml/min, volume 256 ml, intercompartmental clearance 30.3 ml/min — fall outside physiological plausibility, so the record was rejected.**
+**The fluvoxamine rat record was rejected because its clearance (25.1 ml/min) and volume of distribution (256 ml) fall outside plausible physiological ranges, suggesting a unit or scale extraction error from the abstract-only source.**
 
-The record reports fluvoxamine clearance of 25.1 ml/min, central volume of 256 ml and intercompartmental clearance of 30.3 ml/min in rats, magnitudes judged physiologically implausible and attributed to a unit or scale extraction error. The source is abstract-only, meaning the paper's abstract alone was read and its summary statistics stood in for a fitted model. A second reader returned no values for clearance, volume and intercompartmental clearance, so no comparison could be computed for these parameters (ratio None). Extracted — fluvoxamine: CL 25.1 ml/min, V 256 ml, Q 30.3 ml/min.
+The record for fluvoxamine in rats was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The extracted parameters — total clearance of 25.1 ml/min, volume of distribution of 256 ml, and intercompartmental clearance of 30.3 ml/min — failed the physiological plausibility check, indicating a likely unit or scale extraction error. A second reader returned no values for any of the three parameters, disagreeing with all of them. Extracted — fluvoxamine: CL 25.1 ml/min, V 256 ml, Q 30.3 ml/min.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has 25.1, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

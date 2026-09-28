@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;mavacamten&quot;,&quot;href&quot;:&quot;drugs/drug_mavacamten/&quot;},{&quot;label&quot;:&quot;Merali_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mavacamten_Chang2024_reference&quot;,&quot;label&quot;:&quot;Chang_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_mavacamten/Mavacamten_Chang2024_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mavacamten_Merali2025_reference&quot;,&quot;label&quot;:&quot;Merali_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_mavacamten/Mavacamten_Merali2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mavacamten_Chang2024_reference&quot;,&quot;label&quot;:&quot;Chang_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_mavacamten/Mavacamten_Chang2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Mavacamten_Merali2025_reference&quot;,&quot;label&quot;:&quot;Merali_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_mavacamten/Mavacamten_Merali2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**No model parameters were extracted from this paper.**
+**The paper reports none of the model's key parameters.**
 
-Nothing in the extracted data describes the drug's disposition, so there is no model to build.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
 Independently confirmed by `gpt-oss:120b`.
 

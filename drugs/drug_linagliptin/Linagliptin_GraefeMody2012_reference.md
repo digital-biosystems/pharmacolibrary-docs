@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The linagliptin record was refused because it is an exposure/outcome paper with no distribution volume and no clearance, and a structural parameter (the absorption rate constant, 1.63 h⁻¹) failed the dimensional consistency check.**
+**The linagliptin record was rejected because the paper reports no distribution volume and no clearance or elimination, so it is not a compartmental population PK model, and a structural parameter failed a dimensional check.**
 
-The record contains no distribution volume and no clearance or elimination rate, so it is not a compartmental population PK model; the paper is an exposure/outcome study reporting only summary statistics such as AUC of 150 nmol·h/L, 99% protein binding, 30% oral bioavailability, a 100 h terminal half-life, 5% urinary excretion, and an absorption rate constant of 1.63 h⁻¹. A dimensional mismatch was flagged on a structural parameter. The record was built from the abstract alone, so these reported summary statistics stood in for a fitted model. Extracted — linagliptin: AUC 150 nmol · h/L, fu 99 %, Fab 30 %, t1/2z 100 hours, fe 5 %, kabs 1.63 h -1.
+The record for linagliptin in adults with type 2 diabetes mellitus contains only exposure and summary parameters — AUC of 150 nmol·h/L, protein binding of 99%, oral bioavailability of 30%, terminal half-life of 100 hours, 5% excreted unchanged, and an absorption rate constant of 1.63 h−1 — but no volume of distribution and no clearance or elimination rate, so it is an exposure/outcome paper rather than a compartmental population PK model. A dimensional check on a structural parameter failed with a dimension mismatch. The record was also built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. Extracted — linagliptin: AUC 150 nmol · h/L, fu 99 %, Fab 30 %, t1/2z 100 hours, fe 5 %, kabs 1.63 h -1.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

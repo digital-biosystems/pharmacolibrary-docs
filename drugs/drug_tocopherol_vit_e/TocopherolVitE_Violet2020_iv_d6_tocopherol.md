@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The alpha-tocopherol elimination rate (0.024) carries no convertible unit, so the parameter could not be given an SI value and the record was refused.**
+**The alpha-tocopherol record was rejected because the elimination rate constant (0.024, unit given only as 'Ke') failed a dimension check, and a second reader disputes nearly every reported value, including Cmax 0.48 vs 0.20 and half-life 30.0 vs 39.0 h.**
 
-The elimination rate constant for alpha-tocopherol is reported with the unit written as 'Ke' rather than a proper inverse-time unit, which could not be converted to SI, creating a dimension mismatch on a structural parameter. A second reading of the paper also found different values for nearly every reported figure — half-life 39.0 h instead of 30.0 h, Cmax 0.20 µM instead of 0.48 µM, AUC0–72h 8.6 µM×h instead of 17.5 µM×h, Tmax 8.5 h instead of 7.7 h, elimination rate 0.019 instead of 0.024 — and read the measured compound as d6-α-tocopherol rather than alpha-tocopherol, plus a fractional absorption of 0.537 absent from this record. These conflicting readings leave the extracted parameter values unreliable. Extracted — alpha-tocopherol: kel 0.024 Ke, t1/2z 30 h, Cmax 0.48, tmax 7.7, AUCt 17.5.
+The elimination rate constant for alpha-tocopherol was reported with the unit 'Ke', which could not be converted to SI, so the parameter reached the model build without a usable SI value and failed the dimension check. A second reader disagrees on the dosed and measured compound (d6-α-tocopherol rather than alpha-tocopherol) and on almost all parameter values: Cmax 0.48 vs 0.20 µM, Tmax 7.7 vs 8.5 h, AUC0–72h 17.5 vs 8.6 µM×h, half-life 30.0 vs 39.0 h, elimination rate 0.024 vs 0.019, and a fractional absorption of 0.537 that this record lacks entirely. These conflicting readings leave the record's numbers unreliable. Extracted — alpha-tocopherol: kel 0.024 Ke, t1/2z 30 h, Cmax 0.48, tmax 7.7, AUCt 17.5.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has alpha-tocopherol, the second reading d6-α-tocopherol; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -1,5 +1,9 @@
 {
+ "dose_source": "library default",
  "model_id": "Bretylium_Kamath1981_reference",
+ "molar_masses": {
+  "central.C": 0.243168
+ },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,6 +11,7 @@
  "parameters": {
   "Cl": 3.752777777777778e-05,
   "F": 1.0,
+  "MM": 0.243168,
   "Tlag": 0.0,
   "VdPerKg": 0.015000000000000001,
   "adminCount": 1.0,
@@ -16,12 +21,12 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 13159.118236472947
+  "central.C": 13245.691382765532
  },
  "reference_peaks": {
-  "central.C": 5.819052097112955e-05
+  "central.C": 5.819149269081555e-05
  },
- "stop_time": 86400.0,
+ "stop_time": 122400.0,
  "template": "PK_2C_enteral",
  "template_fmu": "PK_2C_enteral.fmu"
 }

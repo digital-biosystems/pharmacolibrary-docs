@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The hydroxychloroquine model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no values in the source, so library defaults (CL/F 25.1 L, V/F 16.1 L, ka 1.15 h⁻¹ aside) stood in.**
+**The hydroxychloroquine model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no source values and library placeholders were substituted.**
 
-The record reports only three fitted hydroxychloroquine parameters — ka 1.15 h⁻¹, V/F 16.1 L and CL/F 25.1 L — while the source gave no values for clearance, distribution volume, absorption rate constant and absorption lag time, so placeholder defaults were substituted and the model was held back. The builder also assumed F=1 and Fm=1 with no molar correction, i.e. an apparent parameterization, and the defaulted ka amounts to an invented absorption rate constant, which the adjudication judged not acceptable. A second reader additionally disagreed on the dosing compound, reading the dose as hydroxychloroquine rather than hydroxychloroquine sulfate. Extracted — hydroxychloroquine: kabs 1.15, V/F 16.1, CL/F 25.1.
+The record lists kabs 1.15 h-1, V/F 16.1 L and CL/F 25.1 L, but the model builder left clearance, volume of distribution, absorption rate constant and absorption lag time without values, so library placeholders stood in and the model was held back rather than published with invented numbers. The absorption rate constant was defaulted although not reported in the source, judged not acceptable. The model also assumed F=1 and Fm=1 with no molar correction (apparent parameterization). A second reader disagreed on the dosed compound, reading hydroxychloroquine sulfate where this record says hydroxychloroquine. Extracted — hydroxychloroquine: kabs 1.15, V/F 16.1, CL/F 25.1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has hydroxychloroquine sulfate, the second reading hydroxychloroquine. That field shapes the model, so the record is marked disputed.
 
@@ -101,6 +101,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |

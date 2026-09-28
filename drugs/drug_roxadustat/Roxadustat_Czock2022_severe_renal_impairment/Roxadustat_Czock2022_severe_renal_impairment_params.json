@@ -1,27 +1,37 @@
 {
+ "dose_source": "paper",
  "model_id": "Roxadustat_Czock2022_severe_renal_impairment",
+ "molar_masses": {
+  "central.C": 0.352346
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  70.0,
+  280.0
+ ],
  "parameters": {
   "Cl": 3.5000000000000004e-07,
   "F": 1.0,
+  "MM": 0.352346,
   "Tlag": 0.0,
   "VdPerKg": 0.00048571428571428577,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 7e-05,
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 20604.40881763527
+  "central.C": 20638.85161619945
  },
  "reference_peaks": {
-  "central.C": 0.0023880741608186267
+  "central.C": 0.001671655068531977
  },
- "stop_time": 86400.0,
+ "stop_time": 345600.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

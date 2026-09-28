@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The olanzapine model was quarantined because clearance, distribution volume, absorption rate constant and lag time had no reported values and were left at library placeholder defaults, with an invented ka of 0.758 1/h.**
+**The olanzapine model was quarantined because clearance, volume of distribution, absorption rate constant and lag time had no reported values and library placeholder values were substituted, and the invented absorption was judged unacceptable.**
 
-The record lists ka as 0.758 1/h, but this was a placeholder substitution, not a value reported in the source; clearance (CL/F 26.5 L/h per 70 kg), volume (V/F 914.1 L per 70 kg), absorption rate constant and lag time were all missing and replaced by placeholder values. The absorption deviation was adjudicated as 'invented absorption: not acceptable'. Additionally, the reported unit 'L/h, 70 kg' for CL/F could not be converted to SI, so that parameter reached the model without an SI value. A second reader recorded no value for TM50 (weeks), against this record's 317.3 weeks. Extracted — olanzapine: kabs 0.758, CL/F 26.5 L/h, 70 kg, V/F 914 L, 70 kg, t1/2z 317 weeks, Hill 7.08, CL 0.796, prop_error 0.177, add_error 6.49.
+The paper reports CL/F 26.5 L/h (70 kg) and V/F 914.1 L (70 kg), but the model builder substituted placeholder values for the missing clearance, volume of distribution, absorption rate constant and absorption lag time, so the model was held back rather than published with invented numbers. The defaulted absorption rate constant was flagged as an invented absorption, not acceptable, and the deviations check failed. Additionally, the reported unit 'weeks' for the TM50 parameter (value 317.3) could not be converted to SI, so that parameter reached the build without an SI value; a second reader also recorded no value (null) for this TM50 parameter against the record's 317.3. Extracted — olanzapine: kabs 0.758, CL/F 26.5 L/h, 70 kg, V/F 914 L, 70 kg, t1/2z 317 weeks, Hill 7.08, CL 0.796, prop_error 0.177, add_error 6.49.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of tm50: this record has 317.3, the second reading none. That field does not shape the model.
 
@@ -108,6 +108,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |

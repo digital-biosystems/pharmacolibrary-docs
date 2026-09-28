@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The camostat record was rejected because the GBA volume of distribution carries the wrong dimension (h instead of L) and the camostat mesylate-to-GBPA metabolic step has no parameter value, leaving an unlinked metabolite.**
+**The camostat metabolite GBA record was rejected because the volume of distribution V (404.5) is reported with the unit h instead of a volume unit, and GBA is an unlinked metabolite with no path from the administered camostat mesylate dose.**
 
-The structural parameter V for GBA is reported as 404.5 with unit 'h', a dimension mismatch for a volume of distribution, and that unit could not be converted to SI. The metabolism link from camostat mesylate to GBPA has no parameter value, so GBPA has no path from the dose. A second reader also extracted different values for every GBA parameter (e.g., Cmax 376.9 vs 175.5 ng/mL, AUCinf 1710 vs 762.8 h × ng/mL, Vd 604.8 vs 404.5), so the reported numbers are disputed. Extracted — GBA: t1/2z 1.94 h, Cmax 176 ng/mL, AUClast 618 h × ng/mL, AUC∞ 763 h × ng/mL, CL/F 719 L/h, V 404 h.
+The structural parameter V for GBA carries the verbatim unit 'h', a dimension mismatch for a volume of distribution, and this unit could not be converted to SI so no SI value could be established. The metabolism link from camostat mesylate to GBPA has no link parameter, leaving GBA unreachable from the dose. In addition, a second reader (gpt-oss:120b) disagrees on every reported value, reading Cmax as 376.9 ng/mL versus 175.5, AUClast as 1270 versus 618.2, AUC∞ as 1710 versus 762.8, CL/F as 680.4 versus 718.6 L/h, half-life as 2.407 versus 1.942 h, and Vd as 604.8 versus 404.5, so the extracted numbers are uncertain. Extracted — GBA: t1/2z 1.94 h, Cmax 176 ng/mL, AUClast 618 h × ng/mL, AUC∞ 763 h × ng/mL, CL/F 719 L/h, V 404 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[aucinf].value`: this record has 762.8, the second reading 1710; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

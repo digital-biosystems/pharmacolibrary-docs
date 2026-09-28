@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07D&quot;,&quot;href&quot;:&quot;atc/A07D.md&quot;},{&quot;label&quot;:&quot;loperamide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Loperamide_Valenzuela2025_loperamide&quot;,&quot;label&quot;:&quot;Valenzuela_2025_loperamide&quot;,&quot;href&quot;:&quot;drugs/drug_loperamide/Loperamide_Valenzuela2025_loperamide.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loperamide_Valenzuela2025_m1&quot;,&quot;label&quot;:&quot;Valenzuela_2025_m1&quot;,&quot;href&quot;:&quot;drugs/drug_loperamide/Loperamide_Valenzuela2025_m1.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Loperamide_Valenzuela2025_loperamide&quot;,&quot;label&quot;:&quot;Valenzuela_2025_loperamide&quot;,&quot;href&quot;:&quot;drugs/drug_loperamide/Loperamide_Valenzuela2025_loperamide.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Loperamide_Valenzuela2025_m1&quot;,&quot;label&quot;:&quot;Valenzuela_2025_m1&quot;,&quot;href&quot;:&quot;drugs/drug_loperamide/Loperamide_Valenzuela2025_m1.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # loperamide
 
@@ -25,8 +25,8 @@
 
 | status | detail | model structure | params | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl[N-desmethyl loperamide], Vd[N-desmethyl loperamide], form…</sub><br><sub>route_to: `scholar`</sub> | [Valenzuela_2025_loperamide](drugs/drug_loperamide/Loperamide_Valenzuela2025_loperamide.md) | parent + 1 metabolite (1-cmt each) | 8 | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl[N-desmethyl loperamide], Vd[N-desmethyl loperamide], form…</sub><br><sub>route_to: `scholar`</sub> | [Valenzuela_2025_m1](drugs/drug_loperamide/Loperamide_Valenzuela2025_m1.md) | parent + 1 metabolite (1-cmt each) | 8 | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Valenzuela_2025_loperamide](drugs/drug_loperamide/Loperamide_Valenzuela2025_loperamide.md) | 1-compartment, oral | 8 | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Valenzuela_2025_m1](drugs/drug_loperamide/Loperamide_Valenzuela2025_m1.md) | 1-compartment, oral | 8 | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
 
 ## Pharmacodynamics (PD)
 
@@ -80,7 +80,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 130 matched, 57 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

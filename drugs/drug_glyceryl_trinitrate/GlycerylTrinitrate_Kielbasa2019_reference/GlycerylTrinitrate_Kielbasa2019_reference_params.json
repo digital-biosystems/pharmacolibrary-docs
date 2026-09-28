@@ -1,27 +1,40 @@
 {
+ "dose_source": "paper",
  "model_id": "GlycerylTrinitrate_Kielbasa2019_reference",
+ "molar_masses": {
+  "central.C": 0.227085
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  5.0,
+  50.0,
+  120.0,
+  240.0,
+  300.0
  ],
  "parameters": {
   "Cl": 2.222222222222222e-09,
   "F": 1.0,
+  "MM": 0.227085,
   "Tlag": 0.0,
   "VdPerKg": 9.285714285714286e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 5e-06,
   "ka": 5.555555555555556e-06,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 86400.0
+  "central.C": 545410.8216432866
  },
  "reference_peaks": {
-  "C_central": 0.005753943030854919
+  "central.C": 0.0006406538556276413
  },
- "stop_time": 86400.0,
+ "stop_time": 10886400.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

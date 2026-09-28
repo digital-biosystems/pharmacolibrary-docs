@@ -1,8 +1,14 @@
 {
+ "dose_source": "paper",
  "model_id": "Fitusiran_Sten2023_reference",
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  25.0,
+  300.0
  ],
  "parameters": {
   "Cl": 7.694444444444444e-06,
@@ -11,17 +17,17 @@
   "VdPerKg": 0.0003985714285714285,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 2.5e-05,
   "k12": 2.60852250099562e-05,
   "k21": 4.950869236583523e-07,
   "ka": 0.00017638888888888888,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 2267.170948793444
+  "central.C": 2271.136981090647
  },
  "reference_peaks": {
-  "central.C": 0.00037649853724703377
+  "central.C": 9.41235938310815e-05
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The tegoprazan record was held back because ka, Tlag and k21 were not reported in the source, so placeholder values were substituted, and a first-order absorption depot was invented that the source does not support.**
+**The tegoprazan record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, alongside other unreported deviations.**
 
-The tegoprazan model reports CL/F of 21.02 L/h, V/F of 122.72 L and an intercompartmental flow Q of 0.3 mL/min, but the absorption rate constant ka, the lag time Tlag and the rate constant k21 were missing from the source, so library placeholder values would have been used for them. The apparent (/F) parameterization with F=1 and Fm=1 and no molar correction implies extravascular first-order absorption input, yet ka was not reported in the source, so the absorption structure was judged invented and not acceptable. A second reader also disagreed on the structure, reading it as one compartment rather than two, and on several derived values (e.g. 2746.31, 2508.4, 4.5 read as null). Extracted — tegoprazan: CL/F 21 L/h, V/F 123 L, Q 0.3 mL/min.
+The record reports tegoprazan CL/F of 21.02 L/h, V/F of 122.72 L, and intercompartmental clearance Q of 0.3 mL/min, but ka, Tlag, and k21 were missing from the source and left at library defaults. The model also assumes F=1 and Fm=1 without molar correction, so all parameters are apparent (/F) values, and uses first-order depot input consistent with extravascular dosing. A second reader disagreed on several extracted values and on the structure, reading it as one compartment rather than the recorded two-compartment model. Extracted — tegoprazan: CL/F 21 L/h, V/F 123 L, Q 0.3 mL/min.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 2746.31, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -149,7 +149,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 50 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Dose in the paper: 50 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference/Tegoprazan_Kim2024_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_tegoprazan/Tegoprazan_Kim2024_reference/Tegoprazan_Kim2024_reference_sim_controls.json"></dbs-fmusim>
 

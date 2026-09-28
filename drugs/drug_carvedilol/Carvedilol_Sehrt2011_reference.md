@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The carvedilol record was rejected because its three metabolism links carry no parameter values and the reported clearance variation of 24.4 % could not be converted to SI units, leaving the model structurally incomplete.**
+**The carvedilol record was rejected because its metabolites (desmethylcarvedilol, 4'-OH- and 5'-OH-carvedilol) are unlinked to the dose, and the clearance parameters carry a '%' unit that could not be converted to SI.**
 
-The three metabolism links from carvedilol to desmethylcarvedilol, 4'-OH-carvedilol and 5'-OH-carvedilol all have link parameter 'none' of unknown kind, so the metabolites have no quantified formation clearance and are effectively unlinked. The extracted parameters mix incompatible meanings: CL/F of 29.4 l/h for R-carvedilol and a 'variation in total clearance of R-carvedilol accounted for by CYP2D6 genotype' of 24.4 %, the percent unit being one that could not be converted to SI so no SI value could be obtained. A second reader also disputed the primary analyte (carvedilol versus R- and S-carvedilol), the metabolite links (stereo-specific, six links), and whether the 29.4 l/h and 24.4 % values belong to this record at all, while reading a central volume of distribution of 142.8 l/73 kg that this record lacks. Extracted — R-carvedilol and S-carvedilol: CL 24.4 %, CL/F 29.4 l/h.
+The model links carvedilol to three metabolites by metabolism, but these metabolites have no path from the dose, so the structure check failed. The genotype-effect clearance parameter (24.4%) and CL/F (29.4 l/h) were extracted, but the '%' unit could not be converted to SI. A second reader also disagreed on the primary analyte (carvedilol vs R- and S-carvedilol), on splitting the metabolism links into stereoisomer-specific ones, and on whether the 29.4 and 24.4 values belong to these parameters; it additionally read a central volume of 142.8 l per 73 kg that this record lacks. Extracted — R-carvedilol and S-carvedilol: CL 24.4 %, CL/F 29.4 l/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has R-carvedilol and S-carvedilol, the second reading carvedilol; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

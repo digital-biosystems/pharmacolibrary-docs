@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The efavirenz model was quarantined because Vd, ka and Tlag had no values in the source, so library defaults stood in, and the invented absorption rate constant (ka) was judged not acceptable.**
+**The efavirenz model was quarantined because its volume of distribution, absorption rate constant and absorption lag time were not reported in the source, so library defaults were substituted for these missing values.**
 
-The record reports only CL/F = 13.9 L/h for efavirenz; volume of distribution, absorption rate constant and absorption lag time were missing from the source, so generic placeholder values were substituted for the missing parameters. The defaulted ka — not reported in the source — was adjudicated as invented absorption and deemed not acceptable, triggering the quarantine. The model uses a one-compartment structure with first-order depot input and apparent (/F) parameterization assuming F=1 and Fm=1 with no molar correction, but these assumptions alone did not cause the hold-back; the missing Vd, ka and Tlag did. Extracted — efavirenz: CL/F 13.9 L/h.
+Only the oral clearance of efavirenz (CL/F = 13.9 L/h) was extracted from Vucicevic_2025; Vd, ka and Tlag had no source values and were left at library placeholders, which triggered the hold-back. The builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization) and used a first-order depot input consistent with extravascular dosing. The deviations check flagged the invented absorption (defaulted ka not reported in the source) as not acceptable. Extracted — efavirenz: CL/F 13.9 L/h.
 
 Independently confirmed by `gpt-oss:120b`.
 
@@ -96,6 +96,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |

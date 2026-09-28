@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 3000 mg oral (A07AA08)",
  "model_id": "Kanamycin_Chang2017v2_reference",
+ "molar_masses": {
+  "central.C": 0.4844986
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,21 +11,22 @@
  "parameters": {
   "Cl": 2.602777777777778e-06,
   "F": 1.0,
+  "MM": 0.4844986,
   "Tlag": 0.0,
   "VdPerKg": 0.0008100000000000001,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.003,
   "ka": 8.472222222222222e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 16179.121797667918
+  "central.C": 16149.973044322476
  },
  "reference_peaks": {
-  "central.C": 0.000854399125799281
+  "central.C": 0.025632017360182304
  },
- "stop_time": 86400.0,
+ "stop_time": 111600.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

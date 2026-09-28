@@ -129,6 +129,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_output_variable | not captured | pass | C_central (measured=bisoprolol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
@@ -166,7 +167,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 12.2 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 1.25 mg, single dose, first-order absorption (ka 12.2 /h, F 0.9). Doses in the paper: 1.25–20 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference/Bisoprolol_Cvan2016_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference/Bisoprolol_Cvan2016_reference_sim_controls.json"></dbs-fmusim>
 

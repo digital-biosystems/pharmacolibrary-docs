@@ -192,11 +192,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
-| T3_output_variable | not captured | pass | C_central (measured=recombinant activated factor VII) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=recombinant activated factor VII) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_t_half_terminal | reference | fail | 3.08 | 0.5084927405108316 | 0.1651 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.08 | 0.5084934445963855 | 0.1651 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -217,7 +217,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h/CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h_modelica.zip" download>CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h/CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h_modelica.zip" download>CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h/CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h_fmi.zip" download>CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h/CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h_matlab.zip" download>CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h/CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h_matlab_simbio.zip" download>CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
@@ -230,7 +230,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h/CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_coagulation_factor_viia/CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h/CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h_sim_controls.json"></dbs-fmusim>
 

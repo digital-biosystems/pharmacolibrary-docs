@@ -1,17 +1,26 @@
 {
+ "dose_source": "paper",
  "model_id": "Tetracycline_Mileva2021_reference",
+ "molar_masses": {
+  "central.C": 0.4444346
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  350.0
+ ],
  "parameters": {
   "Cl": 3.655555555555556e-05,
   "F": 1.0,
+  "MM": 0.4444346,
   "Tlag": 0.0,
   "VdPerKg": 0.00311,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.00035,
   "ka": 5.555555555555556e-05,
   "weight": 70.0
  },
@@ -19,7 +28,7 @@
   "central.C": 10215.63126252505
  },
  "reference_peaks": {
-  "central.C": 8.794392979122667e-05
+  "central.C": 0.0003078008810998385
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

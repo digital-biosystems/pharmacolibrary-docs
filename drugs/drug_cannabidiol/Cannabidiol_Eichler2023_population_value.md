@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The cannabidiol horse model was held back because it fails to reproduce the paper's Cmax (3.9e-07 vs 1.12e-05) and terminal half-life (161.29 h vs 4.87 h), and an unreported absorption rate constant was invented by default.**
+**The cannabidiol horse model was held back because it fails to reproduce the paper's Cmax (1.572842631025892e-06 vs 3.8999999999999997e-07) and terminal half-life (5.165650385265054 h vs 161.29 h), and the absorption rate ka was invented rather than taken from the source.**
 
-Simulated as the paper dosed it, the two-compartment cannabidiol model gives a peak concentration of 1.12e-05 against the paper's 3.9e-07, a ratio of 28.7859, and a terminal half-life of 4.87 h against the paper's 161.29 h, a ratio of 0.0302. The absorption rate constant (ka) and lag time (Tlag) were not reported in the source, so library defaults were substituted, amounting to an invented first-order absorption. The builder also assumed F=1 and Fm=1 with no molar correction, fitting apparent (/F) parameters under extravascular dosing. A further deviation check could not compute a comparison (ratio None), so it is inconclusive. Extracted — cannabidiol: CL/F 10.8 L/h/kg, V1/F 77.1 L/kg, Q 1.35 L/h/kg, V2/F 313 L/kg, Q3 38.2 L/h/kg, V3/F 242 L/kg.
+Simulated as the paper dosed it, the model's peak concentration exceeds the reported value by a ratio of 4.0329 (1.572842631025892e-06 vs 3.8999999999999997e-07), and the terminal half-life is 5.165650385265054 h against the paper's 161.29 h (ratio 0.032). The absorption rate ka and lag time were not reported in the source, so library defaults were substituted, and the invented absorption was judged not acceptable. The model also assumes F=1 and Fm=1 with no molar correction, using an apparent (/F) parameterization with first-order depot input. Extracted — cannabidiol: CL/F 10.8 L/h/kg, V1/F 77.1 L/kg, Q 1.35 L/h/kg, V2/F 313 L/kg, Q3 38.2 L/h/kg, V3/F 242 L/kg.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -103,11 +103,11 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | fail | 3.8999999999999997e-07 | 1.1226494937503757e-05 | 28.7859 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 7e-07 | 1.1226494937503757e-05 | 16.0378 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped | 0.72 | 1.1226494937503757e-05 | not captured | unresolved concentration unit (exp '(', sim 'kg/m3') |
-| T1_t_half_beta | reference | fail | 161.29 | 4.874810582218251 | 0.0302 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 79.85 | 4.874810582218251 | 0.061 | h→SI vs simulated h |
+| T1_cmax | reference | fail | 3.8999999999999997e-07 | 1.572842631025892e-06 | 4.0329 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 7e-07 | 1.572842631025892e-06 | 2.2469 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 0.72 | 1.572842631025892e-06 | not captured | unresolved concentration unit (exp '(', sim 'kg/m3') |
+| T1_t_half_beta | reference | fail | 161.29 | 5.165650385265054 | 0.032 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 79.85 | 5.165650385265054 | 0.0647 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -129,7 +129,7 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_modelica.zip" download>Cannabidiol_Eichler2023_population_value_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_fmi.zip" download>Cannabidiol_Eichler2023_population_value_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_fmi.zip" download>Cannabidiol_Eichler2023_population_value_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_matlab.zip" download>Cannabidiol_Eichler2023_population_value_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_matlab_simbio.zip" download>Cannabidiol_Eichler2023_population_value_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_sbml.zip" download>Cannabidiol_Eichler2023_population_value_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -141,7 +141,7 @@ Eichler F; Poźniak B; Machnik M; Schenk I; Wingender A; Baudisch N; et al. et a
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 14 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 14, 70, 210 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_sim_controls.json"></dbs-fmusim>
 

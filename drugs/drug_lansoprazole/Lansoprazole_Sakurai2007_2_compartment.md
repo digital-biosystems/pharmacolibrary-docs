@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The lansoprazole record lacks a distribution volume and any clearance/elimination parameter, and a structural parameter's L/kg unit could not be converted to SI, so it is not a compartmental population PK model.**
+**The lansoprazole record lacks any distribution volume and any clearance or elimination parameter, so it is not a compartmental population PK model, and the intercompartmental clearance Q carries a dimension mismatch (L/kg).**
 
-The paper (Sakurai_2007) reports no distribution volume and no clearance or elimination rate for lansoprazole, so the one-compartment structure is not a compartmental population PK model; it is an exposure/outcome paper. A structural parameter was reported in L/kg, a unit that could not be converted to SI units, so the parameter entered the record without an SI value and failed the dimensional check. A second reader also disagreed on the parameterization (apparent versus mechanistic) and on which parameters exist: this record has q1 = 0.181, q5 = 0.179 and s add = 2.50 with q2 and q3 absent, while the second reader read q2 = 0.154 and q3 = 0.547 with q1, q5 and s add absent. Extracted — lansoprazole: Q 0.11 l/kg, Q3 0.612.
+The record for lansoprazole (Sakurai_2007, healthy Japanese males) reports only intercompartmental clearances — Q at 0.110 L/kg between central and peripheral compartments and Q3 at 0.612 between central and the third compartment — with no distribution volume and no clearance or elimination, consistent with an exposure/outcome paper rather than a compartmental population PK model. The Q value is given per kilogram (L/kg), a dimension mismatch on a structural parameter, and that unit could not be converted to SI. A second reader also disagreed on the parameterization (mechanistic versus apparent) and on several parameter values, reading q 2 = 0.154 and q 3 = 0.547 where this record had none, and q 1 = 0.181 and q 5 = 0.179 where this record had 0.110 and 0.612 for q 1 and q 3. Extracted — lansoprazole: Q 0.11 l/kg, Q3 0.612.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

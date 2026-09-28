@@ -1,27 +1,38 @@
 {
+ "dose_source": "paper",
  "model_id": "Levofloxacin_Setiawan2022_median",
+ "molar_masses": {
+  "central.C": 0.3613675
+ },
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  250.0,
+  500.0,
+  750.0
+ ],
  "parameters": {
   "Cl": 2.5000000000000004e-07,
   "F": 1.0,
+  "MM": 0.3613675,
   "VdPerKg": 0.00037714285714285714,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.00025,
   "k12": 0.0003493265993265993,
   "k21": 0.0003305455993628037,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662069
+  "central.C": 660.0000000662077
  },
  "reference_peaks": {
-  "central.C": 0.0013184636203314847
+  "central.C": 0.003296162031667468
  },
- "stop_time": 86400.0,
+ "stop_time": 432000.0,
  "template": "PK_2C",
  "template_fmu": "PK_2C.fmu"
 }

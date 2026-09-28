@@ -1,11 +1,17 @@
 {
+ "dose_source": "paper",
  "model_id": "Simvastatin_Kim2021_reference",
  "molar_masses": {
-  "C_central": 0.4185662
+  "central.C": 0.4185662
  },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  20.0,
+  80.0
  ],
  "parameters": {
   "Cl": 8.11111111111111e-05,
@@ -15,17 +21,17 @@
   "VdPerKg": 0.015085714285714286,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 2e-05,
   "k12": 1.9255050505050504e-05,
   "k21": 1.916431039899466e-05,
   "ka": 0.0005083333333333334,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 4669.870163331002
+  "central.C": 4674.949899799599
  },
  "reference_peaks": {
-  "C_central": 6.554452235316763e-05
+  "central.C": 1.3108999946950363e-05
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

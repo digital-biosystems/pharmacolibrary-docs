@@ -1,26 +1,33 @@
 {
+ "dose_source": "paper",
  "model_id": "Luspatercept_Chen2021_reference",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  14.0,
+  87.5
+ ],
  "parameters": {
+  "Cl": 6.1574074074074075e-09,
   "F": 1.0,
   "Tlag": 0.0,
   "VdPerKg": 0.00011985714285714285,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1.4e-05,
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 38265.330661322645
+  "central.C": 38784.76953907816
  },
  "reference_peaks": {
-  "central.C": 0.011591609538398953
+  "central.C": 0.001622811039613585
  },
- "stop_time": 86400.0,
+ "stop_time": 4838400.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The propafenone one-compartment record was rejected because it was built from the abstract alone and shows a dimension mismatch on a structural parameter plus a compartment with no path from the dose.**
+**The propafenone two-compartment record was rejected because a structural parameter has a dimension mismatch and the model structure contains an unreachable compartment, with all five parameter values (t1/2α 2.8 min, t1/2β 80 min, kel 0.12 min⁻¹, Vdβ 1.6 l/kg, CL 1.03 l/h) disputed by a second reader.**
 
-The record for propafenone in patients with paroxysmal supraventricular tachycardia was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. It was rejected for a dimension mismatch on a structural parameter and for an unreachable/orphan compartment — a compartment with no path from the dose. The parameter set lists t1/2α = 2.8 min, t1/2β = 80 min, kel = 0.12 min⁻¹, V2 (Vd beta) = 1.6 l/kg and CL = 1.03 l/h, and a second reader returned null for all five values, so none could be confirmed. Extracted — propafenone: t1/2α 2.8 min, t1/2β 80 min, kel 0.12 min, -1, V2 1.6 1/kg, CL 1.03 1/h.
+The record was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. A dimension mismatch was flagged on a structural parameter, and the model structure contains an unreachable compartment with no path from the dose. A second reader returned no value for any of the five parameters — kel 0.12 min⁻¹, CL 1.03 l/h, t1/2α 2.8 min, t1/2β 80 min and Vdβ 1.6 l/kg — disagreeing with all of them. Extracted — propafenone: t1/2α 2.8 min, t1/2β 80 min, kel 0.12 min, -1, V2 1.6 1/kg, CL 1.03 1/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has 1.03, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

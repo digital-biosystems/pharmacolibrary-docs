@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The flucytosine model was held back because the absorption rate constant's unit (h Ϫ1) could not be converted to SI, and F, ka and Tlag had no extracted values so placeholders would have been used.**
+**The flucytosine absorption rate constant (Ka) was not reported in Hope_2006, so a default value was substituted for it, along with defaults for bioavailability (F) and lag time (Tlag), making the record unacceptable.**
 
-The record reports flucytosine V = 0.022 liter, CL = 0.021 liter/h and Ka = 19.58 h Ϫ1 in neutropenic CD1 mice with disseminated candidiasis, but the h Ϫ1 unit could not be converted to SI, so the absorption rate constant entered the model without a usable value. The model builder then assumed library placeholder values for the missing bioavailability F, absorption rate ka and lag time Tlag, and defaulted ka although it was not reported in the source. This invented-absorption deviation was judged not acceptable, leaving the record in need of review. Extracted — flucytosine: V 0.022 liter, CL 0.021 liter/h, kabs 19.6 h Ϫ1.
+The record for flucytosine in neutropenic CD1 mice with disseminated candidiasis reports V (0.022 liter) and CL (0.021 liter/h), but the absorption rate constant Ka was invented by defaulting rather than taken from the source. Bioavailability (F) and lag time (Tlag) were likewise left at defaults because no source values were extracted. Additionally, the reported unit for Ka ('h Ϫ1') could not be converted to SI units, so the parameter entered the model without a usable SI value. The failed check returned 'invented_absorption: not acceptable', and the record was held back for review of these deviations. Extracted — flucytosine: V 0.022 liter, CL 0.021 liter/h, kabs 19.6 h Ϫ1.
 
 Independently confirmed by `gpt-oss:120b`.
 
@@ -104,6 +104,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=flucytosine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
@@ -130,7 +131,7 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_flucytosine/Flucytosine_Hope2006_reference/Flucytosine_Hope2006_reference_modelica.zip" download>Flucytosine_Hope2006_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_flucytosine/Flucytosine_Hope2006_reference/Flucytosine_Hope2006_reference_fmi.zip" download>Flucytosine_Hope2006_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_flucytosine/Flucytosine_Hope2006_reference/Flucytosine_Hope2006_reference_matlab.zip" download>Flucytosine_Hope2006_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_flucytosine/Flucytosine_Hope2006_reference/Flucytosine_Hope2006_reference_matlab_simbio.zip" download>Flucytosine_Hope2006_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_flucytosine/Flucytosine_Hope2006_reference/Flucytosine_Hope2006_reference_sbml.zip" download>Flucytosine_Hope2006_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -142,7 +143,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 10000 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 10000 mg oral (J02AX01) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_flucytosine/Flucytosine_Hope2006_reference/Flucytosine_Hope2006_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_flucytosine/Flucytosine_Hope2006_reference/Flucytosine_Hope2006_reference_sim_controls.json"></dbs-fmusim>
 

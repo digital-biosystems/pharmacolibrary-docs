@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The semaglutide apparent clearance (CL/F 0.0575 L/hr) and apparent volume (V/F 0.0028 L) are orders of magnitude outside physiological plausibility, indicating a unit or scale extraction error, so the record was rejected.**
+**The semaglutide record was rejected because the extracted apparent clearance (CL/F 0.0575 L/hr) and apparent volume of distribution (V/F 0.0028 L) are physiologically implausible, indicating a unit or scale extraction error.**
 
-The record lists semaglutide apparent clearance CL/F,ss as 0.0575 L/hr (mean at the 0.2 mg dose) and an apparent volume V/F of 0.0028 L, the latter explicitly derived from CL·t½/ln2. Both magnitudes are physiologically implausible for a large peptide dosed subcutaneously, consistent with a unit or scale error during extraction. The review flagged the clearance/volume as outside the physiological window on this basis and rejected the record. Extracted — semaglutide: CL/F 0.0575 L/hr, V/F 0.0028 L.
+For semaglutide, the record reports CL/F of 0.0575 L/hr and V/F of 0.0028 L, the latter derived from CL·t½/ln2. Both magnitudes fall far outside the physiological window for this molecule, so the clearance/volume plausibility check failed. The source is a review-secondary text, and the implausible values point to a unit or scale error during extraction rather than a genuine fitted result. Extracted — semaglutide: CL/F 0.0575 L/hr, V/F 0.0028 L.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

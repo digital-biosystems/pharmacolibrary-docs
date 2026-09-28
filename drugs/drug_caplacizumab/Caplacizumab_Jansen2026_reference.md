@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The caplacizumab two-compartment record was rejected because its peripheral compartment (Vp 4730 mL) has no intercompartmental clearance linking it to the central compartment, leaving it unreachable from the dose.**
+**The caplacizumab two-compartment record was rejected because its peripheral compartment (V2 = 4730 mL) is unreachable — no dosing path links it, so the structure is invalid.**
 
-The record lists only CL (16.4 mL/h), Vc (3620 mL) and Vp (4730 mL) for caplacizumab; no intercompartmental clearance (Q) is present, so the peripheral compartment has no path from the dose and the structure check failed. A second reader disagreed on several extracted values: they read no clearance (versus 16.4 mL/h), an intercompartmental clearance of 71.8 mL/h where this record has none, no value where this record gives 0.833 and 15.9, and no values for the volumes (3620 mL, 4730 mL). These disagreements indicate the extracted parameter set is not consistently established from the source. Extracted — caplacizumab: CL 16.4 mL/h, V1 3.62e+03 mL, V2 4.73e+03 mL.
+The model for caplacizumab (CL 16.4 mL/h, V1 3620 mL, V2 4730 mL) failed the structure check for an unreachable or orphan compartment, meaning the peripheral compartment has no connection from the dose. A second reader also disagreed on several extracted values, reading 71.8 where this record has none and leaving 16.4, 0.833, 15.9, 3620 and 4730 unconfirmed. The source is a secondary review text rather than the primary fitted analysis. Extracted — caplacizumab: CL 16.4 mL/h, V1 3.62e+03 mL, V2 4.73e+03 mL.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 16.4, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 

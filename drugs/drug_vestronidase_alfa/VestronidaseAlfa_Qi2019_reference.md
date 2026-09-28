@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The vestronidase alfa two-compartment parameters (CL 9.61, V1 9.64, Q 16.3, V2 4.23) carry only the label 'units', so the L/h and L dimensions of the clearance and volume terms could not be converted to SI and the record was rejected.**
+**The vestronidase alfa parameters (CL 9.61, V1 9.64, Q 16.3, V2 4.23) were reported with the unit 'units' instead of L/h or L, so no SI values could be established and the record was rejected.**
 
-The published table lists CL, Vc, Q and Vp for vestronidase alfa with the footnote marker 'a' and the unit column reading only 'units', which is not convertible to SI for either the L/h clearance terms (CL 9.61, Q 16.3) or the L volume terms (Vc 9.64, Vp 4.23). Because of this dimension mismatch on the structural parameters, the disposition clearance and the central and peripheral volumes entered the model without SI values, and the record was held back rather than published. Extracted — vestronidase alfa: CL 9.61 units, V1 9.64 units, Q 16.3 units, V2 4.23 units.
+All four structural parameters of the two-compartment model — clearance 9.61, central volume 9.64, intercompartmental clearance 16.3, and peripheral volume 4.23 — carry the verbatim unit 'units', which does not state the physical dimension (L/h for clearances, L for volumes). This unit could not be converted to SI, so the parameters reached the model without valid SI values, giving a dimension mismatch on structural parameters. The record was therefore rejected. Extracted — vestronidase alfa: CL 9.61 units, V1 9.64 units, Q 16.3 units, V2 4.23 units.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

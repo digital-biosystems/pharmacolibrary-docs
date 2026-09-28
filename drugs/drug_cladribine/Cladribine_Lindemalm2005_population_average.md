@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 16, model 1.2).**
+**The model does not reproduce the paper's terminal half-life (paper 16, model 8.97).**
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — cladribine: CL 39.3 L/h, V1 71.7 L, Q 51.1 L/h, V2 475 L, Q3 105 L/h, V3 73.6 L, kabs 1.31 h-1, Fab 0.353.
 
@@ -112,6 +112,7 @@ Lindemalm S; Savic RM; Karlsson MO; Juliusson G; Liliemark J; Albertioni F et al
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=cladribine) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
@@ -119,9 +120,9 @@ Lindemalm S; Savic RM; Karlsson MO; Juliusson G; Liliemark J; Albertioni F et al
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 | T1_t_half_alpha | reference | skipped | 0.2 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 1.3 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | fail | 16.0 | 1.1963867557428578 | 0.0748 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 58.0 | 1.1963867557428578 | 0.0206 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 5.0 | 1.1963867557428578 | 0.2393 | hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 16.0 | 8.966609039064704 | 0.5604 | hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 58.0 | 8.966609039064704 | 0.1546 | hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 5.0 | 8.966609039064704 | 1.7933 | hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -143,7 +144,7 @@ Lindemalm S; Savic RM; Karlsson MO; Juliusson G; Liliemark J; Albertioni F et al
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average/Cladribine_Lindemalm2005_population_average_modelica.zip" download>Cladribine_Lindemalm2005_population_average_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average/Cladribine_Lindemalm2005_population_average_fmi.zip" download>Cladribine_Lindemalm2005_population_average_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average/Cladribine_Lindemalm2005_population_average_matlab.zip" download>Cladribine_Lindemalm2005_population_average_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average/Cladribine_Lindemalm2005_population_average_matlab_simbio.zip" download>Cladribine_Lindemalm2005_population_average_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average/Cladribine_Lindemalm2005_population_average_sbml.zip" download>Cladribine_Lindemalm2005_population_average_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -155,7 +156,7 @@ Lindemalm S; Savic RM; Karlsson MO; Juliusson G; Liliemark J; Albertioni F et al
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.31 /h, F 0.353). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 0.34 mg, single dose, first-order absorption (ka 1.31 /h, F 0.353). _The paper's dose was not captured; the default is the WHO ATC DDD 0.34 mg oral (L04AA40) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average/Cladribine_Lindemalm2005_population_average_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_cladribine/Cladribine_Lindemalm2005_population_average/Cladribine_Lindemalm2005_population_average_sim_controls.json"></dbs-fmusim>
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Naldemedine's peripheral volume V2/F (Vp/F) is recorded as 43.3 hr−1, a rate unit on a volume parameter, so the record was rejected for a dimensional mismatch on a structural parameter.**
+**The naldemedine record was rejected because clearance-type parameters carry wrong units: CL/F is reported as 43.2 hr−1 and V2/F as 43.3 hr−1, a dimension mismatch for structural parameters.**
 
-In the two-compartment model for naldemedine, the peripheral volume parameter Vp/F carries the value 43.3 with the unit hr−1, an inverse-time unit that cannot describe a volume (the central volume Vc/F is correctly given in L). This unit could not be converted to SI, so the parameter entered the model without an SI value. The remaining parameters (CL/F 43.2 hr−1, Q/F 63.3 hr−1, V1/F 87.5 L, tlag 0.202 hr, Ka 186.4) are dimensionally consistent. Extracted — naldemedine: V1/F 87.5 L, Q/F 63.3 hr−1, V2/F 43.3 hr−1, tlag 0.202 hr.
+In the Kubota_2018 two-compartment model of naldemedine, CL/F (typical value 43.2) and V2/F (43.3) are both given in hr−1, but clearance and volume of distribution must have units of volume per time (e.g. L/h) and volume (L), respectively — only Q/F at 63.3 hr−1 is dimensionally consistent as an intercompartmental clearance. The unit hr−1 could not be converted to SI, so these parameters reached the model builder without valid SI values, triggering the dimension-mismatch refusal. The record also lacks an extracted value for the absorption rate constant Ka. Extracted — naldemedine: V1/F 87.5 L, Q/F 63.3 hr−1, V2/F 43.3 hr−1, tlag 0.202 hr.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

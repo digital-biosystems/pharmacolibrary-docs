@@ -1,17 +1,29 @@
 {
+ "dose_source": "paper",
  "model_id": "Tioguanine_Leblond2023_reference",
+ "molar_masses": {
+  "central.C": 0.167192
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  140.0,
+  280.0,
+  420.0,
+  560.0
+ ],
  "parameters": {
   "Cl": 2.1388888888888892e-05,
   "F": 1.0,
+  "MM": 0.167192,
   "Tlag": 0.0,
   "VdPerKg": 0.006500000000000001,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.00014,
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
@@ -19,7 +31,7 @@
   "central.C": 12120.240480961924
  },
  "reference_peaks": {
-  "central.C": 0.00012624952722298772
+  "central.C": 0.00017674873039924332
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

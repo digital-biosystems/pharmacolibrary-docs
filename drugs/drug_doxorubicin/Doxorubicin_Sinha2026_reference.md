@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The doxorubicin record was held back because the absorption rate constant ka and lag time were not reported in the source, so placeholder values would have been used, and a first-order absorption input with F=1 was assumed that the source does not support.**
+**The doxorubicin record was held back because the absorption rate constant ka was invented (defaulted) rather than reported in the source, alongside defaulted lag time and an apparent (F=1) parameterization.**
 
-The record reports doxorubicin CL/F of 175.0 L/h and V of 50.0 L, but ka and Tlag had no values in the source, so no value was extracted and library placeholder values would have been used in the model. The adjudication found the absorption to be invented: ka was defaulted, not reported, and this was judged not acceptable. The model further assumed F=1, Fm=1 and apparent (/F) parameterization without molar correction, implying extravascular first-order input. A second reader also disagreed on the parameterization, reading it as mechanistic rather than apparent, and on several extracted values (e.g., 3.05 and 45 versus null, 175 and 50 versus null). Extracted — doxorubicin: CL/F 175 L/h, V 50 L.
+The record reports doxorubicin CL/F of 175 L/h and V of 50 L, but the builder substituted library defaults for ka and Tlag, which are not reported in the source — the invented absorption was judged not acceptable. The model also assumes F=1 and Fm=1 with no molar correction, giving an apparent parameterization that the second reader disputes, preferring a mechanistic one. The second reader further disagrees on several extracted values, e.g. assigning 45 and 3.05 where this record has none, and 3.05 where this record has 175. Extracted — doxorubicin: CL/F 175 L/h, V 50 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has none, the second reading 45; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -109,7 +109,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
-| T3_output_variable | not captured | pass | C_central (measured=doxorubicin) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_output_variable | not captured | pass | C_central (measured=doxorubicin) | C_central | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |

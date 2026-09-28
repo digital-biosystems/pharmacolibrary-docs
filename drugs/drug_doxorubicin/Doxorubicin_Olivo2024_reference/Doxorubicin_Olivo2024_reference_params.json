@@ -1,11 +1,12 @@
 {
+ "dose_source": "library default",
  "model_id": "Doxorubicin_Olivo2024_reference",
  "molar_masses": {
-  "C_central": 0.5435193
+  "central.C": 0.5435193
  },
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
  ],
  "parameters": {
   "Cl": 4.194444444444445e-06,
@@ -14,16 +15,16 @@
   "VdPerKg": 0.0011785714285714286,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "k12": 5.993265993265992e-07,
   "k21": 8.644133644133643e-06,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 660.0000000662018
+  "central.C": 660.0000000662092
  },
  "reference_peaks": {
-  "C_central": 0.0011913050135363493
+  "central.C": 0.00011913078183504754
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

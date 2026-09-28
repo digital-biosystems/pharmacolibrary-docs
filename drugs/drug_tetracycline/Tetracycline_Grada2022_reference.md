@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The tetracycline two-compartment model was rejected because one compartment has no path from the dose, and the two readers disagreed on which extracted values belong to which parameter.**
+**The tetracycline two-compartment oral model was rejected because its structure contains an unreachable compartment or unlinked metabolite, and the extracted parameter values are disputed between readers.**
 
-The record describes a two-compartment tetracycline model with CL/F 3.15 L/h, V1/F 54.2 L, V2/F 15.1 L and absorption rate constant ka 3.45 h−1, but the structure contains a compartment that is unreachable from the dose site, so the model was refused. The second reader also disagreed with the extracted values: this record lists 21.7, 19, 26, 22 and 27 where the second reader read null, and null where the second reader read 21.7 and 31, meaning the parameter-to-value assignments are inconsistent between readers. Extracted — tetracycline: CL/F 3.15 L/h, V1/F 54.2 L, V2/F 15.1 L, kabs 3.45 h−1.
+The record reports tetracycline CL/F of 3.15 L/h, V1/F of 54.2 L, V2/F of 15.1 L and an absorption rate constant of 3.45 h−1, but the model structure check found an unreachable compartment or unlinked metabolite with no path from the dose. The second reader disagreed on several extracted values: the first reader recorded 21.7, 19, 26, 22 and 27 where the second reader recorded none, and recorded none where the second reader recorded 21.7 and 31, so the parameter values are not reliably established. Extracted — tetracycline: CL/F 3.15 L/h, V1/F 54.2 L, V2/F 15.1 L, kabs 3.45 h−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q18: this record has 21.7, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 

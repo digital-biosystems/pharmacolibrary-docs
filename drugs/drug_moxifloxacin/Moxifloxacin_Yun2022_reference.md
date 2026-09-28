@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The moxifloxacin absorption half-life (t1/2ka, 0.775 hr−1) carries a unit that could not be converted to SI, so the parameter lacked an SI value and the two-compartment model was rejected.**
+**The moxifloxacin absorption parameter labeled Ka (hr−1) with value 0.775 is recorded as an absorption half-life, a dimension mismatch on a structural parameter, so the record was rejected.**
 
-The record reports moxifloxacin absorption half-life t1/2ka as 0.775 hr−1, but this unit could not be converted to SI, so the parameter entered the model without an SI value. This triggered a dimension mismatch on a structural parameter, and the two-compartment model was rejected. A second reader also disagreed on how the absorption half-life parameter should be classified, reading it as an intercompartmental clearance-type quantity where the record holds it as a rate. Extracted — moxifloxacin: t1/2ka 0.775 hr−1, V1 116 L, CL 8.52 L/hr, Q 0.927 L/hr, V2 523 L, Frel 100.
+The parameter labeled 'Ka (hr−1)' with value 0.775 hr−1 is given the meaning of an absorption half-life (t1/2ka), which is a time, not a first-order rate in hr−1 — a dimension mismatch on a structural parameter. Because the reported unit hr−1 could not be converted to SI units, the parameter was carried without an SI value. A second reader also disagreed on the parameter's identity, assigning it a different identifier than the one in this record. The remaining moxifloxacin parameters (V1 116 L, CL 8.52 L/hr, Q 0.927 L/hr, V2 523 L, Frel 100%) carry no findings. Extracted — moxifloxacin: t1/2ka 0.775 hr−1, V1 116 L, CL 8.52 L/hr, Q 0.927 L/hr, V2 523 L, Frel 100.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[k a].parameter_id`: this record has Q95, the second reading Q49. That field shapes the model, so the record is marked disputed.
 

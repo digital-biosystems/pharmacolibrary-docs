@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**This vinblastine three-compartment record was rejected because its structure contains a compartment with no dosing path, and it was built from the paper's abstract alone rather than a fitted model.**
+**The vinblastine record was rejected because its three-compartment structure contains an unreachable compartment, and it was built from the abstract only, so reported summary statistics (e.g. t1/2γ 1173 min, V 1656 L) stood in for a fitted model.**
 
-The record describes a three-compartment model for vinblastine with half-lives of 3.9 min (alpha), 53.0 min (beta) and 1173.0 min (gamma), volumes of 16.8 L, 79.0 L and 1656 L, clearance of 46.2 L/h and a lag time of 0.17 h. The rejection reason is an unreachable or orphan compartment: one of the three compartments has no path from the dose, so the structure is not a valid closed pharmacokinetic system. The record was also built from the abstract only, meaning the reported summary statistics stood in for a fitted model. A second reader returned no values for the half-lives, volumes and clearance, so the parameter readings could not be independently confirmed. Extracted — vinblastine: t1/2α 3.9 min, V1 16.8 liters, t1/2β 53 min, V2 79 liters, t1/2γ 1.17e+03 min, V 1.66e+03 liters, CL 46.2 L/h, tlag 0.17 h.
+The record for vinblastine (Owellen_1977, humans) lists half-lives of 3.9 min, 53.0 min and 1173.0 min, central and peripheral volumes of 16.8 L and 79.0 L, a terminal-phase volume of 1656.0 L, clearance of 46.2 L/h and a lag time of 0.17 h, but the model structure failed the connectivity check with an unreachable compartment. Because only the paper's abstract was read, these summary statistics were used in place of a fitted model. A second reader returned null for all six of these parameter values, disagreeing with each of them. Extracted — vinblastine: t1/2α 3.9 min, V1 16.8 liters, t1/2β 53 min, V2 79 liters, t1/2γ 1.17e+03 min, V 1.66e+03 liters, CL 46.2 L/h, tlag 0.17 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of alpha phase: t1/2: this record has 3.9, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

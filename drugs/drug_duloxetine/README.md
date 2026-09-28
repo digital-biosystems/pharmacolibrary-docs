@@ -43,7 +43,8 @@
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| 4-hydroxy duloxetine | metabolite | — (mass units only) | — | — | — | — |
+| duloxetine | parent | 297.415 | C18H19NOS | DrugBank | [60835](https://pubchem.ncbi.nlm.nih.gov/compound/60835) | Ngo_2020, Skinner_2004 |
+| 4-hydroxy duloxetine | metabolite | 313.415 | C18H19NO2S | PubChem | [29981497](https://pubchem.ncbi.nlm.nih.gov/compound/29981497) | Ngo_2020 |
 
 ## Extraction summary
 

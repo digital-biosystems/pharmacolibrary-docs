@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The pantoprazole model was quarantined because its clearance and volume of distribution had no extracted values, so library placeholder numbers stood in for these parameters.**
+**The pantoprazole parent–metabolite model was quarantined because pantoprazole's clearance and volume of distribution had no extracted values, so generic library placeholders were used instead of source numbers.**
 
-No clearance or volume of distribution value for pantoprazole was extracted from the source, so the model builder substituted library defaults for both parameters; the model was held back rather than published with invented numbers. The structural check also failed: the record's structure was a one-compartment parent model, not the parent-with-metabolite structure required for a clopidogrel parent–metabolite model linking to the clopidogrel active metabolite via formation clearance. Extracted — pantoprazole: Cmax 1.5, Cmax_ratio 24.2, AUClast 127, t1/2z 131, CL 79, V 4.13e+03.
+The record lists no value for pantoprazole's clearance or volume of distribution; the model builder substituted library placeholder values for these missing source values, and the model was held back rather than published with invented numbers. The extracted parameters that do carry values (Cmax 1.5 ng/ml, Cmax ratio 24.2, AUClast 127 ng/ml·min, half-life 131 min, clearance 79 ml/min, volume 4128 ml) belong to the measured compound, clopidogrel active metabolite, not to pantoprazole itself. A structure check also failed: the expected parent–metabolite topology was not matched, obtaining a one-compartment structure instead. Extracted — pantoprazole: Cmax 1.5, Cmax_ratio 24.2, AUClast 127, t1/2z 131, CL 79, V 4.13e+03.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -87,7 +87,7 @@ Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">

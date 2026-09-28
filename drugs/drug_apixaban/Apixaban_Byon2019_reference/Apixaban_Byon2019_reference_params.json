@@ -1,5 +1,9 @@
 {
+ "dose_source": "library default",
  "model_id": "Apixaban_Byon2019_reference",
+ "molar_masses": {
+  "central.C": 0.4594971
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,17 +11,18 @@
  "parameters": {
   "Cl": 9.166666666666666e-07,
   "F": 1.0,
+  "MM": 0.4594971,
   "VdPerKg": 0.00030000000000000003,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662
+  "central.C": 660.0000000662003
  },
  "reference_peaks": {
-  "central.C": 0.0047000873239252654
+  "central.C": 0.00047000875518006595
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The rifabutin record was rejected because its clearance (0.07 L/h) and volume (0.135 L) fall far outside physiological ranges, likely from a unit or scale extraction error, and only the paper's abstract was read.**
+**The rifabutin record was rejected because its clearance (0.07 L/h) and volume of distribution (0.135 L) fall outside plausible physiological windows, indicating a unit or scale extraction error.**
 
-The extracted rifabutin parameters — extracellular clearance 0.07 L/h, volume 0.135 L, Ka 0.16 h−1 and lag time 0.825 h — were taken from the abstract alone, so summary statistics stood in for a fitted model. The clearance and volume magnitudes are physiologically implausible for rifabutin, pointing to a unit or scale extraction error. A second reader could not confirm any of the four parameter values, leaving each unverified. The record also describes only a parent-to-metabolite link (rifabutin to 25-O-desacetyl rifabutin via Kfm), with no further structural detail available from the abstract-only source. Extracted — rifabutin: CL 0.07 L/h, V 0.135 L, kabs 0.16 h−1, tlag 0.825 h.
+The record was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. The extracted rifabutin total clearance of 0.07 L/h and volume of distribution of 0.135 L were flagged as implausibly small magnitudes, consistent with a unit or scale extraction error. A second reader could not confirm any of the four parameter values (clearance 0.07 L/h, volume 0.135 L, absorption rate constant 0.16 h−1, lag time 0.825 h), returning no values for them. Extracted — rifabutin: CL 0.07 L/h, V 0.135 L, kabs 0.16 h−1, tlag 0.825 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of extracellular clearance: this record has 0.07, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

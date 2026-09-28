@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;procainamide&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/&quot;},{&quot;label&quot;:&quot;Papich_1986 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Procainamide_Grasela1984_reference&quot;,&quot;label&quot;:&quot;Grasela_1984_reference&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Grasela1984_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Procainamide_Papich1986_reference&quot;,&quot;label&quot;:&quot;Papich_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Papich1986_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Procainamide_Singh1982_reference&quot;,&quot;label&quot;:&quot;Singh_1982_reference&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Singh1982_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Procainamide_Kharidia1996_reference&quot;,&quot;label&quot;:&quot;Kharidia_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Kharidia1996_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Procainamide_Grasela1984_reference&quot;,&quot;label&quot;:&quot;Grasela_1984_reference&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Grasela1984_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Procainamide_Singh1982_reference&quot;,&quot;label&quot;:&quot;Singh_1982_reference&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Singh1982_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Procainamide_Kharidia1996_reference&quot;,&quot;label&quot;:&quot;Kharidia_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Kharidia1996_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Procainamide_Papich1986_reference&quot;,&quot;label&quot;:&quot;Papich_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_procainamide/Procainamide_Papich1986_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # procainamide — `Procainamide_Papich1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,27 +17,27 @@
 
 ### Reviewer guidance
 
-**No value for N-acetylprocainamide's clearance and volume of distribution and the rate at which N-acetylprocainamide is formed; the covariate scenarios were not simulated.**
+**The procainamide record was rejected because the model output was the parent's central compartment instead of the measured analyte, the structure was a one-compartment enteral model rather than the required parent–metabolite structure, and an absorption half-life was invented since the abstract-only source did not report it.**
 
-The model was built, but N-acetylprocainamide's clearance and volume of distribution and the rate at which N-acetylprocainamide is formed had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — procainamide: t1/2z 2.43 hours, V/F 1.44 L/kg, CL 0.412 L/kg/hr, Fab 85 %, t1/2ka 0.5 hours.
+The paper (Papich_1986, dogs) describes procainamide metabolized to N-acetylprocainamide, but the built model was a single-compartment model with enteral input instead of a parent–metabolite structure, and its simulated output was the parent's central concentration rather than the measured compound procainamide. The absorption half-life (0.5 h) and lag time were not reported in the source — only abstract summary statistics were available — so defaults were substituted, which was judged unacceptable. The model also assumed apparent parameterization (F=1, Fm=1, no molar correction) despite a reported bioavailability of 85%, and a second reader disputed this, calling the parameterization mechanistic and returning null for the bioavailability and all five parameter values. Additionally, the covariate effects defined in the record were never simulated; only the reference individual was. Extracted — procainamide: t1/2z 2.43 hours, V/F 1.44 L/kg, CL 0.412 L/kg/hr, Fab 85 %, t1/2ka 0.5 hours.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Papich MG; Davis LE; Davis CA; McKiernan BC; Brown SA et al. (1986). American journal of veterinary research 47
 
 ## Model component
-<dbs-pgx drug="procainamide" model-id="Procainamide_Papich1986_reference" status="model_quarantined" stale="false" population="dogs" measured-compound="procainamide" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="procainamide" model-id="Procainamide_Papich1986_reference" status="rejected" stale="false" population="dogs" measured-compound="procainamide" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -54,6 +54,12 @@ Papich MG; Davis LE; Davis CA; McKiernan BC; Brown SA et al. (1986). American jo
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
 - covariate category for t1/2z from footnote/prose kept as documentation only (['Papich_1986:abstract'])
 - dropped duplicate Q57 ('estimated elimination half-life of NAPA', value 4.7) — already have one for this compound
@@ -64,6 +70,7 @@ Papich MG; Davis LE; Davis CA; McKiernan BC; Brown SA et al. (1986). American jo
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Papich_1986_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
@@ -120,9 +127,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=procainamide) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | pass | parent_metabolite → PK_Parent_Metabolite* | PK_Parent_Metabolite | not captured | engineer template must match the scholar topology |
-| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -132,29 +140,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_procainamide/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Papich_1986` / `Papich_1986::reference`)
-- model: `../../../knowledgebase/drugs/drug_procainamide/models/modelica/_needs_review/Procainamide_Papich1986_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_procainamide/models/modelica/_needs_review/Procainamide_Papich1986_reference.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_procainamide/models/modelica/Procainamide_Papich1986_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_procainamide/models/modelica/Procainamide_Papich1986_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_procainamide/models/modelica/Procainamide_Papich1986_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_procainamide/Procainamide_Papich1986_reference/Procainamide_Papich1986_reference_matlab.zip" download>Procainamide_Papich1986_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_procainamide/Procainamide_Papich1986_reference/Procainamide_Papich1986_reference_matlab_simbio.zip" download>Procainamide_Papich1986_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_procainamide/Procainamide_Papich1986_reference/Procainamide_Papich1986_reference_sbml.zip" download>Procainamide_Papich1986_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_procainamide/Procainamide_Papich1986_reference/Procainamide_Papich1986_reference_cellml.zip" download>Procainamide_Papich1986_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 3000 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 3000 mg oral (C01BA02) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_procainamide/Procainamide_Papich1986_reference/Procainamide_Papich1986_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_procainamide/Procainamide_Papich1986_reference/Procainamide_Papich1986_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Procainamide_Papich1986_reference_params.json` · controls `Procainamide_Papich1986_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The calcium chloride record was rejected because its two-compartment structure leaves a compartment with no dosing path, and the parameters (CL 0.18 l/min, V1 10.9 l, V2 16.5 l) come only from the paper's abstract, not a fitted model.**
+**The two-compartment ionized calcium model for parturients undergoing cesarean delivery was rejected because one compartment is unreachable from the dose, and the record was built from the abstract only.**
 
-The record describes a two-compartment model for ionized calcium in parturients undergoing cesarean delivery, with systemic clearance 0.18 l/min, central volume 10.9 l and peripheral volume 16.5 l, but one compartment has no connection from the dose, making it unreachable in the model structure. Because only the paper's abstract was read, the reported summary statistics stood in for a fitted model, so the parameter values are not derived from the full published analysis. A second reader disagreed on the dosing compound (calcium chloride versus unknown) and the primary analyte (ionized calcium versus unknown), and returned null values for all three parameters, so the parameter comparison could not be computed. Extracted — ionized calcium: CL 0.18 l/min, V1 10.9 l, V2 16.5 l.
+The structure check found an orphan compartment or unlinked metabolite in the 2-compartment model for ionized calcium (calcium chloride), so the topology is not connected to the dose. The record is abstract-only: the reported values (CL 0.18 l/min, V1 10.9 l, V2 16.5 l) are summary statistics standing in for a fitted model. A second reader left the dose compound (calcium chloride) and primary analyte (ionized calcium) fields unresolved and recorded null for all three parameter values, disagreeing with the extracted 10.9 l, 16.5 l and 0.18 l/min. Extracted — ionized calcium: CL 0.18 l/min, V1 10.9 l, V2 16.5 l.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has calcium chloride, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 

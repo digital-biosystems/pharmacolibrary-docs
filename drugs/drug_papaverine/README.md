@@ -25,7 +25,7 @@
 
 | status | detail | model structure | params | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Ritschel_1977_reference](drugs/drug_papaverine/Papaverine_Ritschel1977_reference.md) | 1-compartment (no model) | 1 | Ritschel WA et al., Pharmacokinetics of papaverine in man, International journal of cl… (1977) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Ritschel_1977_reference](drugs/drug_papaverine/Papaverine_Ritschel1977_reference.md) | 1-compartment (no model) | 1 | Ritschel WA et al., Pharmacokinetics of papaverine in man, International journal of cl… (1977) | — |
 
 ## Pharmacodynamics (PD)
 

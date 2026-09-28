@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The efpeglenatide two-compartment model was rejected because one compartment has no path from the dose, and several parameter values were left unextracted that a second reader did find.**
+**The efpeglenatide two-compartment model was rejected because a compartment or metabolite has no path from the dose, and the two readers disagree on several extracted values.**
 
-The record describes a two-compartment model for efpeglenatide with CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L and absorption rate constant ka 0.006 h⁻¹, but the structure contains a compartment with no route from the administered dose, so the model was refused. In addition, several values were left at null in this record while a second reader extracted them (e.g. 5.52, 66.93, 24.8, 75.2), and two values present here (18 and 6, 21) were read as null by that second reader, showing disagreement on the extracted numbers. Extracted — efpeglenatide: CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
+The record for efpeglenatide (CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1) failed the structural check for an unreachable compartment or unlinked metabolite, meaning part of the model structure cannot be reached from the administered dose. In addition, the second reader reported values (5.52, 66.93, 24.8, 75.2) where this record has none, and this record has values (18, 6, 21) where the second reader reported none, so the extracted numbers are not consistently established. The source is a review-secondary text rather than the primary publication. Extracted — efpeglenatide: CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q311: this record has none, the second reading 5.52; it also differs on 6 more fields. That field does not shape the model.
 

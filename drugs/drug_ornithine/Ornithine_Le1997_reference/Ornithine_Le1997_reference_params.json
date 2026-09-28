@@ -1,5 +1,9 @@
 {
+ "dose_source": "library default",
  "model_id": "Ornithine_Le1997_reference",
+ "molar_masses": {
+  "central.C": 0.132163
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,6 +11,7 @@
  "parameters": {
   "Cl": 3.75e-08,
   "F": 0.9,
+  "MM": 0.132163,
   "Tlag": 0.0,
   "VdPerKg": 0.00011228571428571429,
   "adminCount": 1.0,

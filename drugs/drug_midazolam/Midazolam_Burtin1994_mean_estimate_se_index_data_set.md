@@ -145,7 +145,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.14 /h, lag 73.8 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 15 mg, single dose, first-order absorption (ka 0.14 /h, lag 73.8 min, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 15 mg oral (N05CD08) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set_sim_controls.json"></dbs-fmusim>
 

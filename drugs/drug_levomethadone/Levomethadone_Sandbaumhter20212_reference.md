@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The levomethadone record was rejected because a structural parameter carries a dimension mismatch and both metabolites (l-EDDP and d-EDDP) have no metabolism rate value, leaving them unlinked.**
+**The levomethadone record was rejected because the disposition macro-rate constants λ1 (0.887) and λ2 (0.017) carry units of L/min instead of 1/min, a dimension mismatch on structural parameters, and the EDDP metabolites are unlinked.**
 
-The metabolism links from l-methadone to l-EDDP and from d-methadone to d-EDDP were extracted with no rate parameter value (link_parameter 'none'), so the EDDP metabolites have no quantified formation path from the dose. A structural parameter also failed the dimension consistency check (C5). Additionally, one reported unit could not be converted to SI, so that parameter entered the model without an SI value. A second reader disputed the dosed substance (racemic methadone vs methadone), the primary analyte (methadone enantiomers vs methadone), and could not confirm the Ct value of 2746.1 ng/mL. Extracted — levomethadone: Ct 2.75e+03 ng/mL, λ1 0.887 L/min, λ2 0.017 L/min, t1/2α 0.939 min, t1/2β 50.7 min, kel 0.245 L/min, k12 0.591 L/min, k21 0.067, … (+7).
+λ1 and λ2 are macro-rate constants describing fast and slow disposition phases, but the paper reports them with units of L/min, which is dimensionally wrong for first-order rate constants (0.887 and 0.017). The metabolism links from l-methadadone and d-methadone to their EDDP metabolites carry no rate parameter, leaving the metabolites unreachable from the dose. Several parameters (k21 0.067, V2 0.823, Vss 0.915, AUC 13.32, CL 17.63) were reported without a unit, so no SI value could be established for them. A second reader also disagreed on the dosed compound (racemic methadone vs methadone) and the analyte, and read the first parameter as absent rather than 2746.1. Extracted — levomethadone: Ct 2.75e+03 ng/mL, λ1 0.887 L/min, λ2 0.017 L/min, t1/2α 0.939 min, t1/2β 50.7 min, kel 0.245 L/min, k12 0.591 L/min, k21 0.067, … (+7).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has racemic methadone, the second reading methadone; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

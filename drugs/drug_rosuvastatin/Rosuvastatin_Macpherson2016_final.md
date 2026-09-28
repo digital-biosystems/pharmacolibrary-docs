@@ -147,7 +147,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.183 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 5 mg, single dose, first-order absorption (ka 0.183 /h, F 1). Doses in the paper: 5, 10, 20, 40, 80 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_rosuvastatin/Rosuvastatin_Macpherson2016_final/Rosuvastatin_Macpherson2016_final_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_rosuvastatin/Rosuvastatin_Macpherson2016_final/Rosuvastatin_Macpherson2016_final_sim_controls.json"></dbs-fmusim>
 

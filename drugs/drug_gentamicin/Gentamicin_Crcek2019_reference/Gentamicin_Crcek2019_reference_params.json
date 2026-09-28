@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 240 mg parenteral (J01GB03)",
  "model_id": "Gentamicin_Crcek2019_reference",
+ "molar_masses": {
+  "central.C": 1.390728
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,19 +11,20 @@
  "parameters": {
   "Cl": 6.805555555555556e-07,
   "F": 1.0,
+  "MM": 1.390728,
   "VdPerKg": 0.0005340000000000001,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.00024,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662044
+  "central.C": 660.0000000662095
  },
  "reference_peaks": {
-  "central.C": 0.0026606685914521543
+  "central.C": 0.006385604592531295
  },
- "stop_time": 86400.0,
+ "stop_time": 259200.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

@@ -1484,9 +1484,9 @@
         - [eplerenone <sub>(0/0/0)</sub>](drugs/drug_eplerenone/)
         - eplerenone and dapagliflozin <sub>(0/0/0)</sub>
         - [finerenone <sub>(0/6/0)</sub>](drugs/drug_finerenone/)
-        - potassium canrenoate <sub>(0/0/0)</sub>
-        - spironolactone <sub>(0/0/0)</sub>
-        - triamterene <sub>(0/0/0)</sub>
+        - [potassium canrenoate <sub>(2/0/0)</sub>](drugs/drug_potassium_canrenoate/)
+        - [spironolactone <sub>(1/0/0)</sub>](drugs/drug_spironolactone/)
+        - [triamterene <sub>(0/0/0)</sub>](drugs/drug_triamterene/)
       - [C03E Diuretics And Potassium-Sparing Agents In Combination](atc/C03E.md)
         - altizide and potassium sparing agents <sub>(0/0/0)</sub>
         - [bendroflumethiazide <sub>(0/0/0)</sub>](drugs/drug_bendroflumethiazide/)
@@ -1517,16 +1517,16 @@
       - [C04A Peripheral Vasodilators](atc/C04A.md)
         - azapetine <sub>(0/0/0)</sub>
         - [bamethan <sub>(0/0/0)</sub>](drugs/drug_bamethan/)
-        - bencyclane <sub>(0/0/0)</sub>
-        - buflomedil <sub>(0/0/0)</sub>
+        - [bencyclane <sub>(0/0/0)</sub>](drugs/drug_bencyclane/)
+        - [buflomedil <sub>(0/0/0)</sub>](drugs/drug_buflomedil/)
         - buphenine <sub>(0/0/0)</sub>
         - butalamine <sub>(0/0/0)</sub>
-        - cetiedil <sub>(0/0/0)</sub>
+        - [cetiedil <sub>(0/0/0)</sub>](drugs/drug_cetiedil/)
         - ciclonicate <sub>(0/0/0)</sub>
         - cinepazide <sub>(0/0/0)</sub>
-        - clazosentan <sub>(0/0/0)</sub>
+        - [clazosentan <sub>(0/0/0)</sub>](drugs/drug_clazosentan/)
         - cyclandelate <sub>(0/0/0)</sub>
-        - dihydroergocristine <sub>(0/0/0)</sub>
+        - [dihydroergocristine <sub>(1/0/0)</sub>](drugs/drug_dihydroergocristine/)
         - dihydroergocristine combinations <sub>(0/0/0)</sub>
         - ergoloid mesylates <sub>(0/0/0)</sub>
         - ergoloid mesylates combinations <sub>(0/0/0)</sub>

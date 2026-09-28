@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The macrogol record was held back because the absorption rate constant ka was not reported in the source and a default placeholder was substituted, alongside an apparent (F=1) extravascular parameterization and several extracted values a second reader disputed.**
+**The macrogol record was held back because the absorption rate constant ka was invented (defaulted) rather than reported in the source, alongside other undocumented deviations.**
 
-The record reports macrogol CL/F of 353.43 ml/h/kg and a V/F of 39.2617 L that was not fitted but derived from CL·t½/ln2, with F=1 and Fm=1 assumed and no molar correction. The absorption rate constant ka and Tlag were missing from the source, so library defaults were substituted — an invented absorption input that the adjudication judged not acceptable. A second reader also disagreed on several extracted values, e.g. 36 versus 128.53, 1.1 versus 2.57, and nulls where the second reader read 8.6, 15.6 and 773.42. Extracted — macrogol: CL/F 353 ml/h/kg, V/F 39.3 L.
+The source reports only CL/F (353.43 ml/h/kg) and V/F (39.2617 L) for macrogol; ka and the absorption lag time had no values extracted from the source, so library placeholder values would have been used instead, and the invented absorption was judged not acceptable. The model builder also assumed F=1 and Fm=1 with no molar correction (apparent parameterization) and used first-order depot input for extravascular dosing. A second reader disagreed on several extracted values, including 36 vs 128.53 and 1.1 vs 2.57, leaving the record's numbers in doubt. Extracted — macrogol: CL/F 353 ml/h/kg, V/F 39.3 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has none, the second reading 8.6; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -134,7 +134,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_macrogol/Macrogol_Wang2019_reference/Macrogol_Wang2019_reference_modelica.zip" download>Macrogol_Wang2019_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_macrogol/Macrogol_Wang2019_reference/Macrogol_Wang2019_reference_fmi.zip" download>Macrogol_Wang2019_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_macrogol/Macrogol_Wang2019_reference/Macrogol_Wang2019_reference_matlab.zip" download>Macrogol_Wang2019_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_macrogol/Macrogol_Wang2019_reference/Macrogol_Wang2019_reference_matlab_simbio.zip" download>Macrogol_Wang2019_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_macrogol/Macrogol_Wang2019_reference/Macrogol_Wang2019_reference_sbml.zip" download>Macrogol_Wang2019_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -146,7 +146,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 10000 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 10000 mg oral (A06AD15) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_macrogol/Macrogol_Wang2019_reference/Macrogol_Wang2019_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_macrogol/Macrogol_Wang2019_reference/Macrogol_Wang2019_reference_sim_controls.json"></dbs-fmusim>
 

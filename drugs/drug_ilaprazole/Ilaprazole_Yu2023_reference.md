@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The ilaprazole two-compartment record lists central and peripheral volumes (V 6.795 L, V2 5.544 L) and clearance (3.394 L/h) but no intercompartmental clearance, leaving the peripheral compartment unreachable from the dose, so it was rejected.**
+**The ilaprazole two-compartment model was rejected because the peripheral compartment (volume 5.544 L) has no linked intercompartmental clearance, leaving it unreachable from the dose.**
 
-The record describes a two-compartment structure for ilaprazole with a central volume of 6.795 L, a peripheral volume (Vp) of 5.544 L, and a clearance of 3.394 L/h, plus covariate effects of weight on Vp (1.545) and sex on clearance (-0.213). However, no intercompartmental clearance parameter connecting the central and peripheral compartments was extracted, so the peripheral compartment has no path from the administered dose. With that compartment orphaned, drug amounts and the weight effect on its volume could never influence the predicted ilaprazole profile, and the model was rejected. Extracted — ilaprazole: V 6.79 L, V2 5.54 L, CL 3.39 L/h.
+The record describes a two-compartment structure for ilaprazole with central volume 6.795 L, peripheral volume 5.544 L, and clearance 3.394 L/h, plus covariate effects of weight on peripheral volume (1.545) and sex on clearance (-0.213). However, no intercompartmental clearance (Q) parameter was extracted, so the peripheral compartment has no connection to the central compartment and no path from the administered dose. This orphan compartment made the model structurally incomplete and it was refused. Extracted — ilaprazole: V 6.79 L, V2 5.54 L, CL 3.39 L/h.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

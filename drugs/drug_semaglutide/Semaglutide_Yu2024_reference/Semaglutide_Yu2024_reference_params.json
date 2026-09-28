@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 10.5 mg oral (A10BJ06)",
  "model_id": "Semaglutide_Yu2024_reference",
+ "molar_masses": {
+  "central.C": 4.113640999999999
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,19 +11,20 @@
  "parameters": {
   "Cl": 2.916666666666667e-07,
   "F": 1.0,
+  "MM": 4.113640999999999,
   "Tlag": 0.0,
   "VdPerKg": 0.00028571428571428574,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1.05e-05,
   "ka": 0.00010555555555555555,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 22137.56944427861
+  "central.C": 22162.725450901802
  },
  "reference_peaks": {
-  "central.C": 0.003640466323683215
+  "central.C": 0.0003822489124545953
  },
  "stop_time": 345600.0,
  "template": "PK_1C_enteral",

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The metformin record for Thoroughbred horses was refused because the volume of distribution Vd is reported as 35.0 L, a unit that could not be converted to SI, leaving this structural parameter without a usable value.**
+**The metformin horse model was rejected because the volume of distribution Vd is reported as 35.0 L without body-weight normalization, a dimension mismatch against the weight-normalized Vss of 4.37 L/kg, and its unit could not be converted to SI.**
 
-The record lists Vd as 35.0 L alongside Vdss as 4.37 L/kg for metformin; the absolute-liter unit on Vd could not be converted to SI, so the parameter arrived without a usable value and the dimension mismatch on this structural parameter blocked publication. The remaining metformin parameters were extracted with convertible units: C0 25553 ng/mL, AUCinf 10489.8 h*ng/mL, AUC % extrap 0.55, clearance 499.8 mL/h/kg, terminal half-life 85.5 h, Ka 0.41 h⁻¹ and tlag 0.34 h. The one-compartment structure itself was not the cause of the refusal. Extracted — metformin: C0 2.56e+04 ng/mL, AUC∞ 1.05e+04 h * ng/mL, AUC%ext 0.55, CL 500 mL/h/kg, Vss 4.37 L/kg, t1/2z 85.5 h, V 35 L, kabs 0.41 h -1, … (+1).
+The record reports Vd for metformin as 35.0 L while Vss is given as 4.37 L/kg, so the two volume parameters are not on a comparable scale and the structural-parameter dimension check failed. The unit of the Vd parameter could not be converted to SI, so the parameter reached the model builder without an SI value. Other parameters (C0 25553 ng/mL, CL 499.8 mL/h/kg, t1/2z 85.5 h, kabs 0.41 h⁻¹, tlag 0.34 h) carried no reported issues. Extracted — metformin: C0 2.56e+04 ng/mL, AUC∞ 1.05e+04 h * ng/mL, AUC%ext 0.55, CL 500 mL/h/kg, Vss 4.37 L/kg, t1/2z 85.5 h, V 35 L, kabs 0.41 h -1, … (+1).
 
 Independently confirmed by `gpt-oss:120b`.
 

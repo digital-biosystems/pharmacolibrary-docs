@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 1000 mg oral (N03AF01)",
  "model_id": "Carbamazepine_Djordjevic2016_reference",
+ "molar_masses": {
+  "central.C": 0.2362686
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,21 +11,22 @@
  "parameters": {
   "Cl": 4.888888888888889e-08,
   "F": 1.0,
+  "MM": 0.2362686,
   "Tlag": 0.0,
   "VdPerKg": 0.018,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.001,
   "ka": 0.0002425,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 36360.72144288577
+  "central.C": 31166.33266533066
  },
  "reference_peaks": {
-  "central.C": 7.925415951961977e-05
+  "central.C": 0.0007923774694393207
  },
- "stop_time": 86400.0,
+ "stop_time": 15552000.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

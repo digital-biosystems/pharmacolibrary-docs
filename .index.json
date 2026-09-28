@@ -21,7 +21,7 @@
   ],
   "dir": "drug_4_aminosalicylic_acid",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:04.145937+00:00",
+  "last_change": "2026-09-28T14:35:48.583794+00:00",
   "name": "4-aminosalicylic acid",
   "needs_review": 1,
   "records": 2,
@@ -71,14 +71,14 @@
   ],
   "dir": "drug_abacavir",
   "extracted": 2,
-  "last_change": "2026-09-27T13:13:37.058111+00:00",
+  "last_change": "2026-09-28T14:35:50.842429+00:00",
   "name": "abacavir",
   "needs_review": 3,
   "records": 6,
   "rejected": 1,
   "rendered": true,
   "slug": "abacavir",
-  "stale": 5
+  "stale": 0
  },
  "drug_abciximab": {
   "atc_codes": [
@@ -189,7 +189,7 @@
   ],
   "dir": "drug_aceclofenac",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:04.431943+00:00",
+  "last_change": "2026-09-28T14:35:50.865058+00:00",
   "name": "aceclofenac",
   "needs_review": 0,
   "records": 1,
@@ -232,7 +232,7 @@
   ],
   "dir": "drug_acenocoumarol",
   "extracted": 3,
-  "last_change": "2026-09-17T15:08:04.592927+00:00",
+  "last_change": "2026-09-28T14:35:51.099823+00:00",
   "name": "acenocoumarol",
   "needs_review": 2,
   "records": 5,
@@ -366,7 +366,7 @@
   ],
   "dir": "drug_acetylsalicylic_acid",
   "extracted": 2,
-  "last_change": "2026-09-26T20:58:46.422517+00:00",
+  "last_change": "2026-09-28T14:35:51.528762+00:00",
   "name": "acetylsalicylic acid",
   "needs_review": 4,
   "records": 7,
@@ -547,7 +547,7 @@
   ],
   "dir": "drug_ajmaline",
   "extracted": 0,
-  "last_change": "2026-09-20T16:12:05.713361+00:00",
+  "last_change": "2026-09-28T14:35:51.559109+00:00",
   "name": "ajmaline",
   "needs_review": 0,
   "records": 1,
@@ -574,7 +574,7 @@
   ],
   "dir": "drug_alanyl_glutamine",
   "extracted": 0,
-  "last_change": "2026-09-19T12:05:55.762641+00:00",
+  "last_change": "2026-09-28T14:35:51.573955+00:00",
   "name": "alanyl glutamine",
   "needs_review": 0,
   "records": 1,
@@ -697,7 +697,7 @@
   ],
   "dir": "drug_alfentanil",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:04.813051+00:00",
+  "last_change": "2026-09-28T14:35:53.692604+00:00",
   "name": "alfentanil",
   "needs_review": 2,
   "records": 3,
@@ -810,7 +810,7 @@
   ],
   "dir": "drug_alglucosidase_alfa",
   "extracted": 1,
-  "last_change": "2026-09-27T01:55:18.273938+00:00",
+  "last_change": "2026-09-28T14:35:53.856659+00:00",
   "name": "alglucosidase alfa",
   "needs_review": 2,
   "records": 6,
@@ -881,14 +881,6 @@
     "model_id": "Allopurinol_Stocker2012_reference"
    },
    {
-    "label": "Wen_2023 \u00b7 base",
-    "model_id": "Allopurinol_Wen2023_base"
-   },
-   {
-    "label": "Wen_2023 \u00b7 final",
-    "model_id": "Allopurinol_Wen2023_final"
-   },
-   {
     "label": "Wright_2017 \u00b7 reference",
     "model_id": "Allopurinol_Wright2017_reference"
    },
@@ -909,6 +901,14 @@
     "model_id": "Allopurinol_Vora2021_reference"
    },
    {
+    "label": "Wen_2023 \u00b7 base",
+    "model_id": "Allopurinol_Wen2023_base"
+   },
+   {
+    "label": "Wen_2023 \u00b7 final",
+    "model_id": "Allopurinol_Wen2023_final"
+   },
+   {
     "label": "Wright_2013 \u00b7 base",
     "model_id": "Allopurinol_Wright2013_base"
    },
@@ -923,11 +923,11 @@
   ],
   "dir": "drug_allopurinol",
   "extracted": 4,
-  "last_change": "2026-09-27T11:20:03.712590+00:00",
+  "last_change": "2026-09-28T14:35:58.612220+00:00",
   "name": "allopurinol",
-  "needs_review": 6,
+  "needs_review": 4,
   "records": 17,
-  "rejected": 7,
+  "rejected": 9,
   "rendered": true,
   "slug": "allopurinol",
   "stale": 0
@@ -1010,7 +1010,7 @@
   ],
   "dir": "drug_alogliptin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:06.358934+00:00",
+  "last_change": "2026-09-28T14:35:58.910660+00:00",
   "name": "alogliptin",
   "needs_review": 1,
   "records": 10,
@@ -1173,7 +1173,7 @@
   ],
   "dir": "drug_alverine",
   "extracted": 0,
-  "last_change": "2026-09-18T08:42:08.118199+00:00",
+  "last_change": "2026-09-28T14:35:59.102583+00:00",
   "name": "alverine",
   "needs_review": 1,
   "records": 7,
@@ -1227,7 +1227,7 @@
   ],
   "dir": "drug_ambrisentan",
   "extracted": 2,
-  "last_change": "2026-09-28T04:21:22.813254+00:00",
+  "last_change": "2026-09-28T14:35:59.194569+00:00",
   "name": "ambrisentan",
   "needs_review": 0,
   "records": 2,
@@ -1317,7 +1317,7 @@
   ],
   "dir": "drug_amikacin",
   "extracted": 2,
-  "last_change": "2026-09-17T15:08:06.589758+00:00",
+  "last_change": "2026-09-28T14:35:59.390423+00:00",
   "name": "amikacin",
   "needs_review": 3,
   "records": 5,
@@ -1344,7 +1344,7 @@
   ],
   "dir": "drug_amiloride",
   "extracted": 0,
-  "last_change": "2026-09-28T09:56:03.471355+00:00",
+  "last_change": "2026-09-28T14:36:01.426586+00:00",
   "name": "amiloride",
   "needs_review": 0,
   "records": 1,
@@ -1413,7 +1413,7 @@
   ],
   "dir": "drug_amino_acids",
   "extracted": 1,
-  "last_change": "2026-09-19T06:46:40.738655+00:00",
+  "last_change": "2026-09-28T14:36:01.967974+00:00",
   "name": "amino acids",
   "needs_review": 3,
   "records": 6,
@@ -1462,7 +1462,7 @@
   ],
   "dir": "drug_aminocaproic_acid",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:06.760832+00:00",
+  "last_change": "2026-09-28T14:36:01.999119+00:00",
   "name": "aminocaproic acid",
   "needs_review": 0,
   "records": 1,
@@ -1525,10 +1525,6 @@
     "model_id": "Amiodarone_Hirai2022_reference"
    },
    {
-    "label": "Lehnert_2022 \u00b7 reference",
-    "model_id": "Amiodarone_Lehnert2022_reference"
-   },
-   {
     "label": "Li_2025 \u00b7 base",
     "model_id": "Amiodarone_Li2025_base"
    },
@@ -1565,6 +1561,10 @@
     "model_id": "Amiodarone_AnastasiouNana1982_reference"
    },
    {
+    "label": "Lehnert_2022 \u00b7 reference",
+    "model_id": "Amiodarone_Lehnert2022_reference"
+   },
+   {
     "label": "Pollak_2000 \u00b7 amiodarone_typical_value",
     "model_id": "Amiodarone_Pollak2000_amiodarone_typical_value"
    },
@@ -1579,11 +1579,11 @@
   ],
   "dir": "drug_amiodarone",
   "extracted": 4,
-  "last_change": "2026-09-26T20:59:01.192802+00:00",
+  "last_change": "2026-09-28T14:36:06.127553+00:00",
   "name": "amiodarone",
-  "needs_review": 10,
+  "needs_review": 9,
   "records": 18,
-  "rejected": 4,
+  "rejected": 5,
   "rendered": true,
   "slug": "amiodarone",
   "stale": 0
@@ -1615,7 +1615,7 @@
   ],
   "dir": "drug_amitriptyline",
   "extracted": 0,
-  "last_change": "2026-09-26T20:59:06.615529+00:00",
+  "last_change": "2026-09-28T14:36:06.251208+00:00",
   "name": "amitriptyline",
   "needs_review": 3,
   "records": 3,
@@ -1701,16 +1701,8 @@
     "model_id": "Amlodipine_Chen2024_reference"
    },
    {
-    "label": "Courlet_2021 \u00b7 reference",
-    "model_id": "Amlodipine_Courlet2021_reference"
-   },
-   {
     "label": "Flynn_2006 \u00b7 reference",
     "model_id": "Amlodipine_Flynn2006_reference"
-   },
-   {
-    "label": "Heo_2016 \u00b7 reference",
-    "model_id": "Amlodipine_Heo2016_reference"
    },
    {
     "label": "Jeppesen_1998 \u00b7 reference",
@@ -1741,6 +1733,14 @@
     "model_id": "Amlodipine_Zheng2024_reference"
    },
    {
+    "label": "Courlet_2021 \u00b7 reference",
+    "model_id": "Amlodipine_Courlet2021_reference"
+   },
+   {
+    "label": "Heo_2016 \u00b7 reference",
+    "model_id": "Amlodipine_Heo2016_reference"
+   },
+   {
     "label": "Mukherjee_2018 \u00b7 reference",
     "model_id": "Amlodipine_Mukherjee2018_reference"
    },
@@ -1750,15 +1750,15 @@
    }
   ],
   "dir": "drug_amlodipine",
-  "extracted": 12,
-  "last_change": "2026-09-27T12:33:09.928238+00:00",
+  "extracted": 10,
+  "last_change": "2026-09-28T14:36:07.212299+00:00",
   "name": "amlodipine",
-  "needs_review": 2,
+  "needs_review": 4,
   "records": 14,
   "rejected": 0,
   "rendered": true,
   "slug": "amlodipine",
-  "stale": 14
+  "stale": 0
  },
  "drug_ammonium_chloride": {
   "atc_codes": [
@@ -1932,7 +1932,7 @@
   ],
   "dir": "drug_amoxicillin",
   "extracted": 14,
-  "last_change": "2026-09-27T11:20:01.728713+00:00",
+  "last_change": "2026-09-28T14:36:08.884143+00:00",
   "name": "amoxicillin",
   "needs_review": 9,
   "records": 25,
@@ -1970,7 +1970,7 @@
   ],
   "dir": "drug_amphotericin_b",
   "extracted": 0,
-  "last_change": "2026-09-18T02:25:10.317618+00:00",
+  "last_change": "2026-09-28T14:36:08.981030+00:00",
   "name": "amphotericin B",
   "needs_review": 3,
   "records": 3,
@@ -1997,7 +1997,7 @@
   ],
   "dir": "drug_amrinone",
   "extracted": 0,
-  "last_change": "2026-09-20T18:58:27.500162+00:00",
+  "last_change": "2026-09-28T14:36:09.020217+00:00",
   "name": "amrinone",
   "needs_review": 1,
   "records": 1,
@@ -2062,7 +2062,7 @@
   ],
   "dir": "drug_angiotensin_ii",
   "extracted": 2,
-  "last_change": "2026-09-20T18:58:27.781698+00:00",
+  "last_change": "2026-09-28T14:36:09.417170+00:00",
   "name": "angiotensin II",
   "needs_review": 1,
   "records": 5,
@@ -2136,7 +2136,7 @@
   ],
   "dir": "drug_apadamtase_alfa",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:10.458947+00:00",
+  "last_change": "2026-09-28T14:36:09.478857+00:00",
   "name": "Apadamtase alfa",
   "needs_review": 0,
   "records": 3,
@@ -2163,7 +2163,7 @@
   ],
   "dir": "drug_apixaban",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:10.477526+00:00",
+  "last_change": "2026-09-28T14:36:09.504955+00:00",
   "name": "apixaban",
   "needs_review": 0,
   "records": 1,
@@ -2190,7 +2190,7 @@
   ],
   "dir": "drug_apraglutide",
   "extracted": 0,
-  "last_change": "2026-09-27T01:55:18.291249+00:00",
+  "last_change": "2026-09-28T14:36:09.520986+00:00",
   "name": "apraglutide",
   "needs_review": 0,
   "records": 1,
@@ -2221,7 +2221,7 @@
   ],
   "dir": "drug_aprepitant",
   "extracted": 0,
-  "last_change": "2026-09-18T13:14:21.392670+00:00",
+  "last_change": "2026-09-28T14:36:09.565471+00:00",
   "name": "aprepitant",
   "needs_review": 1,
   "records": 2,
@@ -2248,7 +2248,7 @@
   ],
   "dir": "drug_aprindine",
   "extracted": 0,
-  "last_change": "2026-09-20T16:12:06.562661+00:00",
+  "last_change": "2026-09-28T14:36:09.579736+00:00",
   "name": "aprindine",
   "needs_review": 0,
   "records": 1,
@@ -2402,7 +2402,7 @@
   ],
   "dir": "drug_arginine",
   "extracted": 7,
-  "last_change": "2026-09-19T12:05:56.215620+00:00",
+  "last_change": "2026-09-28T14:36:10.046685+00:00",
   "name": "Arginine",
   "needs_review": 0,
   "records": 7,
@@ -2429,7 +2429,7 @@
   ],
   "dir": "drug_arginine_glutamate",
   "extracted": 0,
-  "last_change": "2026-09-18T18:13:04.247336+00:00",
+  "last_change": "2026-09-28T14:36:10.069169+00:00",
   "name": "arginine glutamate",
   "needs_review": 1,
   "records": 1,
@@ -2464,7 +2464,7 @@
   ],
   "dir": "drug_arginine_hydrochloride",
   "extracted": 2,
-  "last_change": "2026-09-19T12:05:56.286353+00:00",
+  "last_change": "2026-09-28T14:36:10.126256+00:00",
   "name": "arginine hydrochloride",
   "needs_review": 0,
   "records": 3,
@@ -2507,7 +2507,7 @@
   ],
   "dir": "drug_aripiprazole",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:10.957239+00:00",
+  "last_change": "2026-09-28T14:36:10.267828+00:00",
   "name": "aripiprazole",
   "needs_review": 2,
   "records": 5,
@@ -2537,7 +2537,7 @@
   ],
   "dir": "drug_ascorbic_acid",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:11.016237+00:00",
+  "last_change": "2026-09-28T14:36:10.317158+00:00",
   "name": "ascorbic acid",
   "needs_review": 0,
   "records": 1,
@@ -2627,7 +2627,7 @@
   ],
   "dir": "drug_atazanavir",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:11.206053+00:00",
+  "last_change": "2026-09-28T14:36:10.483419+00:00",
   "name": "atazanavir",
   "needs_review": 4,
   "records": 4,
@@ -2670,7 +2670,7 @@
   ],
   "dir": "drug_atenolol",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:11.320445+00:00",
+  "last_change": "2026-09-28T14:36:13.564179+00:00",
   "name": "atenolol",
   "needs_review": 1,
   "records": 4,
@@ -2705,7 +2705,7 @@
   ],
   "dir": "drug_atogepant",
   "extracted": 0,
-  "last_change": "2026-09-21T05:42:21.122475+00:00",
+  "last_change": "2026-09-28T14:36:13.751680+00:00",
   "name": "atogepant",
   "needs_review": 3,
   "records": 3,
@@ -2740,7 +2740,7 @@
   ],
   "dir": "drug_atomoxetine",
   "extracted": 0,
-  "last_change": "2026-09-26T20:59:09.083375+00:00",
+  "last_change": "2026-09-28T14:36:14.036189+00:00",
   "name": "atomoxetine",
   "needs_review": 2,
   "records": 3,
@@ -2781,20 +2781,16 @@
     "model_id": "Atorvastatin_Li2024_reference"
    },
    {
-    "label": "Malekinejad_2014 \u00b7 reference",
-    "model_id": "Atorvastatin_Malekinejad2014_reference"
-   },
-   {
     "label": "Morath_2025 \u00b7 reference",
     "model_id": "Atorvastatin_Morath2025_reference"
    },
    {
-    "label": "Wen_2023 \u00b7 reference",
-    "model_id": "Atorvastatin_Wen2023_reference"
-   },
-   {
     "label": "Courlet_2020 \u00b7 reference",
     "model_id": "Atorvastatin_Courlet2020_reference"
+   },
+   {
+    "label": "Malekinejad_2014 \u00b7 reference",
+    "model_id": "Atorvastatin_Malekinejad2014_reference"
    },
    {
     "label": "Park_2017 \u00b7 reference",
@@ -2803,6 +2799,10 @@
    {
     "label": "Stillemans_2022 \u00b7 reference",
     "model_id": "Atorvastatin_Stillemans2022_reference"
+   },
+   {
+    "label": "Wen_2023 \u00b7 reference",
+    "model_id": "Atorvastatin_Wen2023_reference"
    },
    {
     "label": "Langeskov_2022 \u00b7 reference",
@@ -2818,15 +2818,15 @@
    }
   ],
   "dir": "drug_atorvastatin",
-  "extracted": 7,
-  "last_change": "2026-09-27T13:13:39.134539+00:00",
+  "extracted": 5,
+  "last_change": "2026-09-28T14:36:14.730780+00:00",
   "name": "atorvastatin",
-  "needs_review": 3,
+  "needs_review": 5,
   "records": 13,
   "rejected": 3,
   "rendered": true,
   "slug": "atorvastatin",
-  "stale": 9
+  "stale": 0
  },
  "drug_atropine": {
   "atc_codes": [
@@ -2861,7 +2861,7 @@
   ],
   "dir": "drug_atropine",
   "extracted": 0,
-  "last_change": "2026-09-18T11:38:51.224861+00:00",
+  "last_change": "2026-09-28T14:36:14.839615+00:00",
   "name": "atropine",
   "needs_review": 1,
   "records": 4,
@@ -2918,7 +2918,7 @@
   ],
   "dir": "drug_avalglucosidase_alfa",
   "extracted": 0,
-  "last_change": "2026-09-27T01:55:18.376946+00:00",
+  "last_change": "2026-09-28T14:36:14.947358+00:00",
   "name": "avalglucosidase alfa",
   "needs_review": 0,
   "records": 3,
@@ -2945,7 +2945,7 @@
   ],
   "dir": "drug_avatrombopag",
   "extracted": 0,
-  "last_change": "2026-09-18T21:18:35.576529+00:00",
+  "last_change": "2026-09-28T14:36:14.992274+00:00",
   "name": "avatrombopag",
   "needs_review": 1,
   "records": 1,
@@ -2988,16 +2988,16 @@
   "curated": 0,
   "details": [
    {
-    "label": "Ding_1979 \u00b7 reference",
-    "model_id": "Azathioprine_Ding1979_reference"
-   },
-   {
     "label": "el-Yazigi_1993 \u00b7 reference",
     "model_id": "Azathioprine_elYazigi1993_reference"
    },
    {
     "label": "Yang_2015 \u00b7 reference",
     "model_id": "Azathioprine_Yang2015_reference"
+   },
+   {
+    "label": "Ding_1979 \u00b7 reference",
+    "model_id": "Azathioprine_Ding1979_reference"
    },
    {
     "label": "Lin_2021 \u00b7 reference",
@@ -3009,15 +3009,15 @@
    }
   ],
   "dir": "drug_azathioprine",
-  "extracted": 2,
-  "last_change": "2026-09-23T14:54:45.030420+00:00",
+  "extracted": 1,
+  "last_change": "2026-09-28T14:36:15.313925+00:00",
   "name": "azathioprine",
   "needs_review": 1,
   "records": 5,
   "rejected": 2,
   "rendered": true,
   "slug": "azathioprine",
-  "stale": 5
+  "stale": 0
  },
  "drug_balsalazide": {
   "atc_codes": [
@@ -3081,7 +3081,7 @@
   ],
   "dir": "drug_barbexaclone",
   "extracted": 0,
-  "last_change": "2026-09-21T17:47:32.567611+00:00",
+  "last_change": "2026-09-28T14:36:15.335100+00:00",
   "name": "barbexaclone",
   "needs_review": 0,
   "records": 1,
@@ -3226,6 +3226,28 @@
   "slug": "bemiparin",
   "stale": 0
  },
+ "drug_bencyclane": {
+  "atc_codes": [
+   "C04AX11"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_bencyclane",
+  "extracted": 0,
+  "last_change": null,
+  "name": "bencyclane",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "bencyclane",
+  "stale": 0
+ },
  "drug_bendamustine": {
   "atc_codes": [
    "L01AA09"
@@ -3244,7 +3266,7 @@
   ],
   "dir": "drug_bendamustine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:12.935860+00:00",
+  "last_change": "2026-09-28T14:36:15.379758+00:00",
   "name": "bendamustine",
   "needs_review": 1,
   "records": 1,
@@ -3281,7 +3303,7 @@
   ],
   "dir": "drug_bendroflumethiazide",
   "extracted": 0,
-  "last_change": "2026-09-28T04:21:21.350538+00:00",
+  "last_change": "2026-09-28T14:36:15.428578+00:00",
   "name": "bendroflumethiazide",
   "needs_review": 1,
   "records": 3,
@@ -3466,7 +3488,7 @@
   ],
   "dir": "drug_berotralstat",
   "extracted": 0,
-  "last_change": "2026-09-19T11:43:36.661577+00:00",
+  "last_change": "2026-09-28T14:36:15.559070+00:00",
   "name": "berotralstat",
   "needs_review": 1,
   "records": 6,
@@ -3584,7 +3606,7 @@
   ],
   "dir": "drug_betamethasone",
   "extracted": 0,
-  "last_change": "2026-09-22T06:18:58.543228+00:00",
+  "last_change": "2026-09-28T14:36:15.626811+00:00",
   "name": "betamethasone",
   "needs_review": 1,
   "records": 3,
@@ -3611,7 +3633,7 @@
   ],
   "dir": "drug_betanidine",
   "extracted": 0,
-  "last_change": "2026-09-28T00:31:48.270776+00:00",
+  "last_change": "2026-09-28T14:36:15.639479+00:00",
   "name": "betanidine",
   "needs_review": 0,
   "records": 1,
@@ -3709,7 +3731,7 @@
   ],
   "dir": "drug_biotin",
   "extracted": 2,
-  "last_change": "2026-09-22T01:57:16.965422+00:00",
+  "last_change": "2026-09-28T14:36:15.683845+00:00",
   "name": "biotin",
   "needs_review": 0,
   "records": 2,
@@ -3763,7 +3785,7 @@
   ],
   "dir": "drug_bismuth_subcitrate",
   "extracted": 0,
-  "last_change": "2026-09-18T06:01:19.300253+00:00",
+  "last_change": "2026-09-28T14:36:15.704030+00:00",
   "name": "bismuth subcitrate",
   "needs_review": 0,
   "records": 2,
@@ -3846,7 +3868,7 @@
   ],
   "dir": "drug_bisoprolol",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:13.589757+00:00",
+  "last_change": "2026-09-28T14:36:19.047080+00:00",
   "name": "bisoprolol",
   "needs_review": 7,
   "records": 8,
@@ -3895,7 +3917,7 @@
   ],
   "dir": "drug_bivalirudin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:13.632646+00:00",
+  "last_change": "2026-09-28T14:36:19.076894+00:00",
   "name": "bivalirudin",
   "needs_review": 0,
   "records": 1,
@@ -3928,10 +3950,6 @@
     "model_id": "Bleomycin_Zhao2025_reference"
    },
    {
-    "label": "Giri_1986 \u00b7 reference",
-    "model_id": "Bleomycin_Giri1986_reference"
-   },
-   {
     "label": "Hall_1982 \u00b7 abnormal_renal",
     "model_id": "Bleomycin_Hall1982_abnormal_renal"
    },
@@ -3946,15 +3964,19 @@
    {
     "label": "Schober_1978_2 \u00b7 reference",
     "model_id": "Bleomycin_Schober1978v2_reference"
+   },
+   {
+    "label": "Giri_1986 \u00b7 reference",
+    "model_id": "Bleomycin_Giri1986_reference"
    }
   ],
   "dir": "drug_bleomycin",
   "extracted": 3,
-  "last_change": "2026-09-27T15:47:38.193696+00:00",
+  "last_change": "2026-09-28T14:36:19.493752+00:00",
   "name": "bleomycin",
-  "needs_review": 5,
+  "needs_review": 4,
   "records": 8,
-  "rejected": 0,
+  "rejected": 1,
   "rendered": true,
   "slug": "bleomycin",
   "stale": 0
@@ -3997,7 +4019,7 @@
   ],
   "dir": "drug_blood_plasma",
   "extracted": 4,
-  "last_change": "2026-09-19T08:34:58.877250+00:00",
+  "last_change": "2026-09-28T14:36:20.204122+00:00",
   "name": "blood plasma",
   "needs_review": 2,
   "records": 6,
@@ -4032,7 +4054,7 @@
   ],
   "dir": "drug_bosentan",
   "extracted": 0,
-  "last_change": "2026-09-28T04:21:22.864991+00:00",
+  "last_change": "2026-09-28T14:36:20.288434+00:00",
   "name": "bosentan",
   "needs_review": 2,
   "records": 3,
@@ -4061,25 +4083,25 @@
     "model_id": "Bretylium_Kamath1981_reference"
    },
    {
-    "label": "Rapeport_1985 \u00b7 reference",
-    "model_id": "Bretylium_Rapeport1985_reference"
-   },
-   {
     "label": "Garrett_1982 \u00b7 reference",
     "model_id": "Bretylium_Garrett1982_reference"
    },
    {
     "label": "Narang_1980 \u00b7 reference",
     "model_id": "Bretylium_Narang1980_reference"
+   },
+   {
+    "label": "Rapeport_1985 \u00b7 reference",
+    "model_id": "Bretylium_Rapeport1985_reference"
    }
   ],
   "dir": "drug_bretylium",
-  "extracted": 3,
-  "last_change": "2026-09-20T16:12:06.677901+00:00",
+  "extracted": 2,
+  "last_change": "2026-09-28T14:36:20.424736+00:00",
   "name": "Bretylium",
   "needs_review": 1,
   "records": 5,
-  "rejected": 1,
+  "rejected": 2,
   "rendered": true,
   "slug": "bretylium",
   "stale": 0
@@ -4096,12 +4118,12 @@
   "curated": 0,
   "details": [
    {
-    "label": "Kamath_1981 \u00b7 reference",
-    "model_id": "BretyliumTosilate_Kamath1981_reference"
-   },
-   {
     "label": "Garrett_1982 \u00b7 reference",
     "model_id": "BretyliumTosilate_Garrett1982_reference"
+   },
+   {
+    "label": "Kamath_1981 \u00b7 reference",
+    "model_id": "BretyliumTosilate_Kamath1981_reference"
    },
    {
     "label": "Narang_1980 \u00b7 reference",
@@ -4114,11 +4136,11 @@
   ],
   "dir": "drug_bretylium_tosilate",
   "extracted": 0,
-  "last_change": "2026-09-20T16:12:06.759050+00:00",
+  "last_change": "2026-09-28T14:36:20.494474+00:00",
   "name": "bretylium tosilate",
-  "needs_review": 1,
+  "needs_review": 2,
   "records": 4,
-  "rejected": 3,
+  "rejected": 2,
   "rendered": true,
   "slug": "bretylium_tosilate",
   "stale": 0
@@ -4141,7 +4163,7 @@
   ],
   "dir": "drug_brexanolone",
   "extracted": 0,
-  "last_change": "2026-09-23T21:31:59.022171+00:00",
+  "last_change": "2026-09-28T14:36:20.539530+00:00",
   "name": "brexanolone",
   "needs_review": 1,
   "records": 1,
@@ -4184,7 +4206,7 @@
   ],
   "dir": "drug_brexpiprazole",
   "extracted": 3,
-  "last_change": "2026-09-27T11:20:05.430125+00:00",
+  "last_change": "2026-09-28T14:36:20.746656+00:00",
   "name": "brexpiprazole",
   "needs_review": 2,
   "records": 5,
@@ -4211,7 +4233,7 @@
   ],
   "dir": "drug_brivaracetam",
   "extracted": 0,
-  "last_change": "2026-09-21T17:47:32.584243+00:00",
+  "last_change": "2026-09-28T14:36:20.766033+00:00",
   "name": "brivaracetam",
   "needs_review": 0,
   "records": 1,
@@ -4238,7 +4260,7 @@
   ],
   "dir": "drug_bromopride",
   "extracted": 0,
-  "last_change": "2026-09-18T13:03:17.978418+00:00",
+  "last_change": "2026-09-28T14:36:20.789020+00:00",
   "name": "bromopride",
   "needs_review": 1,
   "records": 1,
@@ -4304,13 +4326,40 @@
   ],
   "dir": "drug_budesonide",
   "extracted": 0,
-  "last_change": "2026-09-22T06:18:58.593518+00:00",
+  "last_change": "2026-09-28T14:36:20.840482+00:00",
   "name": "budesonide",
   "needs_review": 2,
   "records": 3,
   "rejected": 1,
   "rendered": true,
   "slug": "budesonide",
+  "stale": 0
+ },
+ "drug_buflomedil": {
+  "atc_codes": [
+   "C04AX20"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Rey_1984 \u00b7 reference",
+    "model_id": "Buflomedil_Rey1984_reference"
+   }
+  ],
+  "dir": "drug_buflomedil",
+  "extracted": 0,
+  "last_change": "2026-09-28T14:36:20.857746+00:00",
+  "name": "buflomedil",
+  "needs_review": 1,
+  "records": 1,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "buflomedil",
   "stale": 0
  },
  "drug_buformin": {
@@ -4359,7 +4408,7 @@
   ],
   "dir": "drug_bumetanide",
   "extracted": 0,
-  "last_change": "2026-09-28T10:28:17.155622+00:00",
+  "last_change": "2026-09-28T14:36:20.901722+00:00",
   "name": "bumetanide",
   "needs_review": 1,
   "records": 2,
@@ -4395,7 +4444,7 @@
   ],
   "dir": "drug_buprenorphine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:14.454670+00:00",
+  "last_change": "2026-09-28T14:36:21.054246+00:00",
   "name": "buprenorphine",
   "needs_review": 1,
   "records": 3,
@@ -4424,7 +4473,7 @@
   ],
   "dir": "drug_bupropion",
   "extracted": 0,
-  "last_change": "2026-09-22T07:52:45.173104+00:00",
+  "last_change": "2026-09-28T14:36:21.069158+00:00",
   "name": "bupropion",
   "needs_review": 0,
   "records": 1,
@@ -4490,7 +4539,7 @@
   ],
   "dir": "drug_butorphanol",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:14.638615+00:00",
+  "last_change": "2026-09-28T14:36:22.832818+00:00",
   "name": "butorphanol",
   "needs_review": 2,
   "records": 4,
@@ -4570,7 +4619,7 @@
   ],
   "dir": "drug_c1_inhibitor_plasma_derived",
   "extracted": 1,
-  "last_change": "2026-09-19T11:43:36.735169+00:00",
+  "last_change": "2026-09-28T14:36:22.920664+00:00",
   "name": "c1-inhibitor, plasma derived",
   "needs_review": 2,
   "records": 3,
@@ -4621,7 +4670,7 @@
   ],
   "dir": "drug_cabazitaxel",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:15.009872+00:00",
+  "last_change": "2026-09-28T14:36:23.120542+00:00",
   "name": "cabazitaxel",
   "needs_review": 6,
   "records": 7,
@@ -4652,7 +4701,7 @@
   ],
   "dir": "drug_cafedrine",
   "extracted": 1,
-  "last_change": "2026-09-20T18:58:27.853896+00:00",
+  "last_change": "2026-09-28T14:36:23.176191+00:00",
   "name": "cafedrine",
   "needs_review": 1,
   "records": 2,
@@ -4769,7 +4818,7 @@
   ],
   "dir": "drug_calcium",
   "extracted": 5,
-  "last_change": "2026-09-17T15:08:15.142235+00:00",
+  "last_change": "2026-09-28T14:36:23.417766+00:00",
   "name": "Calcium",
   "needs_review": 1,
   "records": 6,
@@ -4817,21 +4866,21 @@
     "model_id": "CalciumCarbonate_Ekobena2025_reference"
    },
    {
-    "label": "Ahn_2014 \u00b7 reference",
-    "model_id": "CalciumCarbonate_Ahn2014_reference"
-   },
-   {
     "label": "Kemal_2026 \u00b7 reference",
     "model_id": "CalciumCarbonate_Kemal2026_reference"
+   },
+   {
+    "label": "Ahn_2014 \u00b7 reference",
+    "model_id": "CalciumCarbonate_Ahn2014_reference"
    }
   ],
   "dir": "drug_calcium_carbonate",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:15.236480+00:00",
+  "last_change": "2026-09-28T14:36:23.541299+00:00",
   "name": "calcium carbonate",
-  "needs_review": 2,
+  "needs_review": 1,
   "records": 3,
-  "rejected": 0,
+  "rejected": 1,
   "rendered": true,
   "slug": "calcium_carbonate",
   "stale": 0
@@ -4860,7 +4909,7 @@
   ],
   "dir": "drug_calcium_chloride",
   "extracted": 1,
-  "last_change": "2026-09-26T14:02:59.076759+00:00",
+  "last_change": "2026-09-28T14:36:23.587206+00:00",
   "name": "calcium chloride",
   "needs_review": 0,
   "records": 2,
@@ -5060,7 +5109,7 @@
   ],
   "dir": "drug_camostat",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:15.386354+00:00",
+  "last_change": "2026-09-28T14:36:23.972643+00:00",
   "name": "camostat",
   "needs_review": 2,
   "records": 5,
@@ -5118,7 +5167,7 @@
   ],
   "dir": "drug_canagliflozin",
   "extracted": 3,
-  "last_change": "2026-09-17T15:08:15.475785+00:00",
+  "last_change": "2026-09-28T14:36:24.153961+00:00",
   "name": "canagliflozin",
   "needs_review": 0,
   "records": 3,
@@ -5191,7 +5240,7 @@
   ],
   "dir": "drug_cannabidiol",
   "extracted": 3,
-  "last_change": "2026-09-21T17:47:32.823664+00:00",
+  "last_change": "2026-09-28T14:36:32.719510+00:00",
   "name": "cannabidiol",
   "needs_review": 4,
   "records": 7,
@@ -5242,7 +5291,7 @@
   ],
   "dir": "drug_cannabinoids",
   "extracted": 2,
-  "last_change": "2026-09-21T02:19:32.283733+00:00",
+  "last_change": "2026-09-28T14:36:32.981311+00:00",
   "name": "cannabinoids",
   "needs_review": 2,
   "records": 7,
@@ -5263,18 +5312,6 @@
   "curated": 0,
   "details": [
    {
-    "label": "Suyagh_2012 \u00b7 final_pharmacokinetic_model",
-    "model_id": "Canrenone_Suyagh2012_final_pharmacokinetic_model"
-   },
-   {
-    "label": "Suyagh_2012 \u00b7 median",
-    "model_id": "Canrenone_Suyagh2012_median"
-   },
-   {
-    "label": "Suyagh_2013 \u00b7 reference",
-    "model_id": "Canrenone_Suyagh2013_reference"
-   },
-   {
     "label": "Lass_2024 \u00b7 estimate_1",
     "model_id": "Canrenone_Lass2024_estimate_1"
    },
@@ -5283,15 +5320,27 @@
     "model_id": "Canrenone_Lass2024_estimate_2"
    },
    {
+    "label": "Suyagh_2013 \u00b7 reference",
+    "model_id": "Canrenone_Suyagh2013_reference"
+   },
+   {
+    "label": "Suyagh_2012 \u00b7 final_pharmacokinetic_model",
+    "model_id": "Canrenone_Suyagh2012_final_pharmacokinetic_model"
+   },
+   {
+    "label": "Suyagh_2012 \u00b7 median",
+    "model_id": "Canrenone_Suyagh2012_median"
+   },
+   {
     "label": "Ho_1984 \u00b7 reference",
     "model_id": "Canrenone_Ho1984_reference"
    }
   ],
   "dir": "drug_canrenone",
-  "extracted": 3,
-  "last_change": "2026-09-28T10:03:55.159992+00:00",
+  "extracted": 0,
+  "last_change": "2026-09-28T14:36:45.100391+00:00",
   "name": "canrenone",
-  "needs_review": 2,
+  "needs_review": 3,
   "records": 6,
   "rejected": 1,
   "rendered": true,
@@ -5368,7 +5417,7 @@
   ],
   "dir": "drug_capecitabine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:17.592764+00:00",
+  "last_change": "2026-09-28T14:36:45.773077+00:00",
   "name": "capecitabine",
   "needs_review": 6,
   "records": 14,
@@ -5403,7 +5452,7 @@
   ],
   "dir": "drug_caplacizumab",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:17.658676+00:00",
+  "last_change": "2026-09-28T14:36:45.856967+00:00",
   "name": "caplacizumab",
   "needs_review": 1,
   "records": 3,
@@ -5436,6 +5485,10 @@
     "model_id": "Carbamazepine_Milovanovic2016_reference"
    },
    {
+    "label": "Punyawudho_2012 \u00b7 reference",
+    "model_id": "Carbamazepine_Punyawudho2012_reference"
+   },
+   {
     "label": "Teixeira-da-Silva_2022 \u00b7 reference",
     "model_id": "Carbamazepine_TeixeiradaSilva2022_reference"
    },
@@ -5450,10 +5503,6 @@
    {
     "label": "Naik_2021 \u00b7 reference",
     "model_id": "Carbamazepine_Naik2021_reference"
-   },
-   {
-    "label": "Punyawudho_2012 \u00b7 reference",
-    "model_id": "Carbamazepine_Punyawudho2012_reference"
    },
    {
     "label": "Rambeck_1993 \u00b7 reference",
@@ -5481,10 +5530,10 @@
    }
   ],
   "dir": "drug_carbamazepine",
-  "extracted": 5,
-  "last_change": "2026-09-21T17:47:33.496503+00:00",
+  "extracted": 6,
+  "last_change": "2026-09-28T14:36:48.610130+00:00",
   "name": "carbamazepine",
-  "needs_review": 6,
+  "needs_review": 5,
   "records": 14,
   "rejected": 3,
   "rendered": true,
@@ -5650,7 +5699,7 @@
   ],
   "dir": "drug_carmustine",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:18.114904+00:00",
+  "last_change": "2026-09-28T14:36:48.671160+00:00",
   "name": "carmustine",
   "needs_review": 1,
   "records": 3,
@@ -5724,7 +5773,7 @@
   ],
   "dir": "drug_carvedilol",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:18.385798+00:00",
+  "last_change": "2026-09-28T14:36:48.907003+00:00",
   "name": "carvedilol",
   "needs_review": 2,
   "records": 7,
@@ -5872,7 +5921,7 @@
   ],
   "dir": "drug_celecoxib",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:18.599411+00:00",
+  "last_change": "2026-09-28T14:36:49.062143+00:00",
   "name": "celecoxib",
   "needs_review": 3,
   "records": 3,
@@ -5967,6 +6016,28 @@
   "rejected": 0,
   "rendered": true,
   "slug": "cerliponase_alfa",
+  "stale": 0
+ },
+ "drug_cetiedil": {
+  "atc_codes": [
+   "C04AX26"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_cetiedil",
+  "extracted": 0,
+  "last_change": null,
+  "name": "cetiedil",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "cetiedil",
   "stale": 0
  },
  "drug_cetylpyridinium": {
@@ -6068,7 +6139,7 @@
   ],
   "dir": "drug_chloramphenicol",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:18.699394+00:00",
+  "last_change": "2026-09-28T14:36:49.131516+00:00",
   "name": "chloramphenicol",
   "needs_review": 1,
   "records": 1,
@@ -6107,7 +6178,7 @@
   ],
   "dir": "drug_chlorhexidine",
   "extracted": 0,
-  "last_change": "2026-09-18T02:25:10.342789+00:00",
+  "last_change": "2026-09-28T14:36:49.155115+00:00",
   "name": "chlorhexidine",
   "needs_review": 0,
   "records": 2,
@@ -6173,7 +6244,7 @@
   ],
   "dir": "drug_chloroquine",
   "extracted": 0,
-  "last_change": "2026-09-26T12:19:14.839949+00:00",
+  "last_change": "2026-09-28T14:36:55.324969+00:00",
   "name": "chloroquine",
   "needs_review": 3,
   "records": 5,
@@ -6247,7 +6318,7 @@
   ],
   "dir": "drug_chlortalidone",
   "extracted": 0,
-  "last_change": "2026-09-28T05:59:34.843616+00:00",
+  "last_change": "2026-09-28T14:36:55.357012+00:00",
   "name": "chlortalidone",
   "needs_review": 0,
   "records": 1,
@@ -6277,7 +6348,7 @@
   ],
   "dir": "drug_chlortetracycline",
   "extracted": 0,
-  "last_change": "2026-09-18T02:25:10.366904+00:00",
+  "last_change": "2026-09-28T14:36:55.377867+00:00",
   "name": "chlortetracycline",
   "needs_review": 1,
   "records": 1,
@@ -6304,7 +6375,7 @@
   ],
   "dir": "drug_cholic_acid",
   "extracted": 0,
-  "last_change": "2026-09-18T14:36:20.766481+00:00",
+  "last_change": "2026-09-28T14:36:55.391554+00:00",
   "name": "cholic acid",
   "needs_review": 0,
   "records": 1,
@@ -6425,7 +6496,7 @@
   ],
   "dir": "drug_cilazapril",
   "extracted": 0,
-  "last_change": "2026-09-23T12:15:40.958825+00:00",
+  "last_change": "2026-09-28T14:36:55.533650+00:00",
   "name": "cilazapril",
   "needs_review": 1,
   "records": 2,
@@ -6559,18 +6630,6 @@
     "model_id": "Ciprofloxacin_Haefliger2025_reference"
    },
    {
-    "label": "H\u00f6ffken_1985 \u00b7 100_mg_orally",
-    "model_id": "Ciprofloxacin_Hffken1985_100_mg_orally"
-   },
-   {
-    "label": "H\u00f6ffken_1985 \u00b7 50_mg_orally",
-    "model_id": "Ciprofloxacin_Hffken1985_50_mg_orally"
-   },
-   {
-    "label": "H\u00f6ffken_1985 \u00b7 750_mg_orally",
-    "model_id": "Ciprofloxacin_Hffken1985_750_mg_orally"
-   },
-   {
     "label": "Sang_2015 \u00b7 reference",
     "model_id": "Ciprofloxacin_Sang2015_reference"
    },
@@ -6595,8 +6654,20 @@
     "model_id": "Ciprofloxacin_Hffken1985_100_mg_i_v"
    },
    {
+    "label": "H\u00f6ffken_1985 \u00b7 100_mg_orally",
+    "model_id": "Ciprofloxacin_Hffken1985_100_mg_orally"
+   },
+   {
     "label": "H\u00f6ffken_1985 \u00b7 50_mg_i_v",
     "model_id": "Ciprofloxacin_Hffken1985_50_mg_i_v"
+   },
+   {
+    "label": "H\u00f6ffken_1985 \u00b7 50_mg_orally",
+    "model_id": "Ciprofloxacin_Hffken1985_50_mg_orally"
+   },
+   {
+    "label": "H\u00f6ffken_1985 \u00b7 750_mg_orally",
+    "model_id": "Ciprofloxacin_Hffken1985_750_mg_orally"
    },
    {
     "label": "Papich_2017 \u00b7 reference",
@@ -6624,15 +6695,15 @@
    }
   ],
   "dir": "drug_ciprofloxacin",
-  "extracted": 14,
-  "last_change": "2026-09-27T13:13:40.802986+00:00",
+  "extracted": 11,
+  "last_change": "2026-09-28T14:36:57.159533+00:00",
   "name": "ciprofloxacin",
-  "needs_review": 6,
+  "needs_review": 9,
   "records": 24,
   "rejected": 4,
   "rendered": true,
   "slug": "ciprofloxacin",
-  "stale": 22
+  "stale": 0
  },
  "drug_cisapride": {
   "atc_codes": [
@@ -6660,7 +6731,7 @@
   ],
   "dir": "drug_cisapride",
   "extracted": 0,
-  "last_change": "2026-09-18T13:03:18.031086+00:00",
+  "last_change": "2026-09-28T14:36:57.248435+00:00",
   "name": "cisapride",
   "needs_review": 1,
   "records": 3,
@@ -6687,7 +6758,7 @@
   ],
   "dir": "drug_cisplatin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:21.451750+00:00",
+  "last_change": "2026-09-28T14:36:57.287636+00:00",
   "name": "cisplatin",
   "needs_review": 0,
   "records": 1,
@@ -6722,11 +6793,11 @@
   ],
   "dir": "drug_citalopram",
   "extracted": 1,
-  "last_change": "2026-09-23T21:31:59.116795+00:00",
+  "last_change": "2026-09-28T14:37:00.524368+00:00",
   "name": "citalopram",
-  "needs_review": 2,
+  "needs_review": 1,
   "records": 3,
-  "rejected": 0,
+  "rejected": 1,
   "rendered": true,
   "slug": "citalopram",
   "stale": 0
@@ -6784,7 +6855,7 @@
   ],
   "dir": "drug_cladribine",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:21.766630+00:00",
+  "last_change": "2026-09-28T14:37:00.650089+00:00",
   "name": "cladribine",
   "needs_review": 2,
   "records": 4,
@@ -6819,13 +6890,40 @@
   ],
   "dir": "drug_clarithromycin",
   "extracted": 1,
-  "last_change": "2026-09-18T06:01:19.325375+00:00",
+  "last_change": "2026-09-28T14:37:00.680154+00:00",
   "name": "clarithromycin",
   "needs_review": 0,
   "records": 1,
   "rejected": 0,
   "rendered": true,
   "slug": "clarithromycin",
+  "stale": 0
+ },
+ "drug_clazosentan": {
+  "atc_codes": [
+   "C04AX33"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "van_2007 \u00b7 reference",
+    "model_id": "Clazosentan_van2007_reference"
+   }
+  ],
+  "dir": "drug_clazosentan",
+  "extracted": 0,
+  "last_change": "2026-09-28T14:46:15.499277+00:00",
+  "name": "clazosentan",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "clazosentan",
   "stale": 0
  },
  "drug_clebopride": {
@@ -6868,7 +6966,7 @@
   ],
   "dir": "drug_clofarabine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:21.861269+00:00",
+  "last_change": "2026-09-28T14:37:00.713433+00:00",
   "name": "clofarabine",
   "needs_review": 1,
   "records": 1,
@@ -6907,7 +7005,7 @@
   ],
   "dir": "drug_clomipramine",
   "extracted": 0,
-  "last_change": "2026-09-23T21:31:59.168216+00:00",
+  "last_change": "2026-09-28T14:37:00.790914+00:00",
   "name": "clomipramine",
   "needs_review": 1,
   "records": 4,
@@ -6946,7 +7044,7 @@
   ],
   "dir": "drug_clonazepam",
   "extracted": 1,
-  "last_change": "2026-09-21T17:47:33.576876+00:00",
+  "last_change": "2026-09-28T14:37:00.858427+00:00",
   "name": "clonazepam",
   "needs_review": 1,
   "records": 4,
@@ -6971,12 +7069,12 @@
   "curated": 0,
   "details": [
    {
-    "label": "Larsson_2011 \u00b7 reference",
-    "model_id": "Clonidine_Larsson2011_reference"
-   },
-   {
     "label": "Bardol_2025 \u00b7 reference",
     "model_id": "Clonidine_Bardol2025_reference"
+   },
+   {
+    "label": "Larsson_2011 \u00b7 reference",
+    "model_id": "Clonidine_Larsson2011_reference"
    },
    {
     "label": "Chiang_1986 \u00b7 reference",
@@ -6997,11 +7095,11 @@
   ],
   "dir": "drug_clonidine",
   "extracted": 0,
-  "last_change": "2026-09-27T19:37:31.577158+00:00",
+  "last_change": "2026-09-28T14:37:01.033918+00:00",
   "name": "clonidine",
-  "needs_review": 1,
+  "needs_review": 2,
   "records": 6,
-  "rejected": 5,
+  "rejected": 4,
   "rendered": true,
   "slug": "clonidine",
   "stale": 0
@@ -7111,7 +7209,7 @@
   ],
   "dir": "drug_clopidogrel",
   "extracted": 9,
-  "last_change": "2026-09-27T11:20:05.229382+00:00",
+  "last_change": "2026-09-28T14:37:10.211487+00:00",
   "name": "clopidogrel",
   "needs_review": 4,
   "records": 17,
@@ -7166,7 +7264,7 @@
   ],
   "dir": "drug_clozapine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:23.082799+00:00",
+  "last_change": "2026-09-28T14:37:13.637629+00:00",
   "name": "clozapine",
   "needs_review": 2,
   "records": 2,
@@ -7201,7 +7299,7 @@
   ],
   "dir": "drug_coagulation_factor_ix",
   "extracted": 0,
-  "last_change": "2026-09-18T21:18:35.672157+00:00",
+  "last_change": "2026-09-28T14:37:13.751695+00:00",
   "name": "coagulation factor IX",
   "needs_review": 2,
   "records": 3,
@@ -7277,7 +7375,7 @@
   ],
   "dir": "drug_coagulation_factor_vii",
   "extracted": 0,
-  "last_change": "2026-09-18T21:18:36.057536+00:00",
+  "last_change": "2026-09-28T14:37:14.023993+00:00",
   "name": "coagulation factor VII",
   "needs_review": 13,
   "records": 13,
@@ -7356,7 +7454,7 @@
   ],
   "dir": "drug_coagulation_factor_viia",
   "extracted": 0,
-  "last_change": "2026-09-18T21:18:36.672428+00:00",
+  "last_change": "2026-09-28T14:37:14.567127+00:00",
   "name": "coagulation factor VIIa",
   "needs_review": 13,
   "records": 14,
@@ -7391,7 +7489,7 @@
   ],
   "dir": "drug_coagulation_factor_viii",
   "extracted": 0,
-  "last_change": "2026-09-18T21:18:36.733325+00:00",
+  "last_change": "2026-09-28T14:37:14.621037+00:00",
   "name": "coagulation factor VIII",
   "needs_review": 0,
   "records": 3,
@@ -7490,14 +7588,14 @@
   ],
   "dir": "drug_codeine",
   "extracted": 1,
-  "last_change": "2026-09-27T12:03:08.442587+00:00",
+  "last_change": "2026-09-28T14:37:17.574742+00:00",
   "name": "codeine",
   "needs_review": 1,
   "records": 6,
   "rejected": 4,
   "rendered": true,
   "slug": "codeine",
-  "stale": 6
+  "stale": 0
  },
  "drug_codeine_and_ibuprofen": {
   "atc_codes": [
@@ -7621,7 +7719,7 @@
   ],
   "dir": "drug_colecalciferol",
   "extracted": 4,
-  "last_change": "2026-09-17T15:08:24.858560+00:00",
+  "last_change": "2026-09-28T14:37:17.729166+00:00",
   "name": "colecalciferol",
   "needs_review": 0,
   "records": 4,
@@ -7661,7 +7759,7 @@
   ],
   "dir": "drug_colistin",
   "extracted": 1,
-  "last_change": "2026-09-22T02:28:01.315489+00:00",
+  "last_change": "2026-09-28T14:37:17.812959+00:00",
   "name": "colistin",
   "needs_review": 2,
   "records": 4,
@@ -7711,7 +7809,7 @@
   ],
   "dir": "drug_concizumab",
   "extracted": 0,
-  "last_change": "2026-09-18T22:36:12.954695+00:00",
+  "last_change": "2026-09-28T14:37:17.848069+00:00",
   "name": "concizumab",
   "needs_review": 1,
   "records": 1,
@@ -7739,7 +7837,7 @@
   ],
   "dir": "drug_conestat_alfa",
   "extracted": 0,
-  "last_change": "2026-09-19T11:43:36.763119+00:00",
+  "last_change": "2026-09-28T14:37:17.876598+00:00",
   "name": "conestat alfa",
   "needs_review": 1,
   "records": 1,
@@ -7832,7 +7930,7 @@
   ],
   "dir": "drug_crizanlizumab",
   "extracted": 0,
-  "last_change": "2026-09-19T11:43:36.825873+00:00",
+  "last_change": "2026-09-28T14:37:17.925700+00:00",
   "name": "crizanlizumab",
   "needs_review": 0,
   "records": 1,
@@ -7889,7 +7987,7 @@
   ],
   "dir": "drug_cromoglicic_acid",
   "extracted": 0,
-  "last_change": "2026-09-22T06:18:58.610855+00:00",
+  "last_change": "2026-09-28T14:37:17.944528+00:00",
   "name": "cromoglicic acid",
   "needs_review": 1,
   "records": 2,
@@ -7916,7 +8014,7 @@
   ],
   "dir": "drug_cyanocobalamin",
   "extracted": 0,
-  "last_change": "2026-09-19T00:35:37.439398+00:00",
+  "last_change": "2026-09-28T14:37:17.960482+00:00",
   "name": "cyanocobalamin",
   "needs_review": 0,
   "records": 1,
@@ -8075,7 +8173,7 @@
   ],
   "dir": "drug_dabigatran_etexilate",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:25.073538+00:00",
+  "last_change": "2026-09-28T14:37:17.969027+00:00",
   "name": "dabigatran etexilate",
   "needs_review": 0,
   "records": 1,
@@ -8096,25 +8194,25 @@
   "curated": 0,
   "details": [
    {
-    "label": "Balakirouchenane_2020 \u00b7 final_final_tra_model",
-    "model_id": "Dabrafenib_Balakirouchenane2020_final_final_tra_model"
-   },
-   {
     "label": "Balakirouchenane_2020 \u00b7 base",
     "model_id": "Dabrafenib_Balakirouchenane2020_base"
    },
    {
     "label": "Balakirouchenane_2020 \u00b7 final",
     "model_id": "Dabrafenib_Balakirouchenane2020_final"
+   },
+   {
+    "label": "Balakirouchenane_2020 \u00b7 final_final_tra_model",
+    "model_id": "Dabrafenib_Balakirouchenane2020_final_final_tra_model"
    }
   ],
   "dir": "drug_dabrafenib",
-  "extracted": 1,
-  "last_change": "2026-09-26T20:59:10.972183+00:00",
+  "extracted": 0,
+  "last_change": "2026-09-28T14:37:27.517530+00:00",
   "name": "dabrafenib",
-  "needs_review": 2,
+  "needs_review": 1,
   "records": 3,
-  "rejected": 0,
+  "rejected": 2,
   "rendered": true,
   "slug": "dabrafenib",
   "stale": 0
@@ -8137,7 +8235,7 @@
   ],
   "dir": "drug_dacarbazine",
   "extracted": 0,
-  "last_change": "2026-09-23T12:15:44.426148+00:00",
+  "last_change": "2026-09-28T14:37:27.608622+00:00",
   "name": "dacarbazine",
   "needs_review": 0,
   "records": 1,
@@ -8168,7 +8266,7 @@
   ],
   "dir": "drug_dalteparin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:25.236628+00:00",
+  "last_change": "2026-09-28T14:37:27.645254+00:00",
   "name": "dalteparin",
   "needs_review": 0,
   "records": 2,
@@ -8200,7 +8298,7 @@
   ],
   "dir": "drug_dapagliflozin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:25.276750+00:00",
+  "last_change": "2026-09-28T14:37:27.724775+00:00",
   "name": "dapagliflozin",
   "needs_review": 1,
   "records": 1,
@@ -8227,7 +8325,7 @@
   ],
   "dir": "drug_daprodustat",
   "extracted": 0,
-  "last_change": "2026-09-19T01:48:42.133459+00:00",
+  "last_change": "2026-09-28T14:37:27.752607+00:00",
   "name": "daprodustat",
   "needs_review": 1,
   "records": 1,
@@ -8258,21 +8356,21 @@
     "model_id": "Dapsone_Kotila2023_reference"
    },
    {
-    "label": "Simpson_2006_2 \u00b7 reference",
-    "model_id": "Dapsone_Simpson2006v2_reference"
-   },
-   {
     "label": "Falloon_1994 \u00b7 reference",
     "model_id": "Dapsone_Falloon1994_reference"
+   },
+   {
+    "label": "Simpson_2006_2 \u00b7 reference",
+    "model_id": "Dapsone_Simpson2006v2_reference"
    }
   ],
   "dir": "drug_dapsone",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:25.528407+00:00",
+  "last_change": "2026-09-28T14:37:31.297308+00:00",
   "name": "dapsone",
-  "needs_review": 3,
+  "needs_review": 2,
   "records": 4,
-  "rejected": 1,
+  "rejected": 2,
   "rendered": true,
   "slug": "dapsone",
   "stale": 0
@@ -8315,7 +8413,7 @@
   ],
   "dir": "drug_darbepoetin_alfa",
   "extracted": 3,
-  "last_change": "2026-09-19T01:48:42.260566+00:00",
+  "last_change": "2026-09-28T14:37:31.467391+00:00",
   "name": "darbepoetin alfa",
   "needs_review": 1,
   "records": 6,
@@ -8351,7 +8449,7 @@
   ],
   "dir": "drug_daunorubicin",
   "extracted": 0,
-  "last_change": "2026-09-26T20:59:12.750534+00:00",
+  "last_change": "2026-09-28T14:37:31.555510+00:00",
   "name": "daunorubicin",
   "needs_review": 1,
   "records": 3,
@@ -8511,7 +8609,7 @@
   ],
   "dir": "drug_desflurane",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:25.680184+00:00",
+  "last_change": "2026-09-28T14:37:31.565984+00:00",
   "name": "desflurane",
   "needs_review": 0,
   "records": 1,
@@ -8546,7 +8644,7 @@
   ],
   "dir": "drug_desipramine",
   "extracted": 0,
-  "last_change": "2026-09-23T21:31:59.267062+00:00",
+  "last_change": "2026-09-28T14:37:31.700225+00:00",
   "name": "desipramine",
   "needs_review": 2,
   "records": 3,
@@ -8648,7 +8746,7 @@
   ],
   "dir": "drug_desvenlafaxine",
   "extracted": 0,
-  "last_change": "2026-09-26T12:19:58.393690+00:00",
+  "last_change": "2026-09-28T14:37:31.813723+00:00",
   "name": "desvenlafaxine",
   "needs_review": 2,
   "records": 3,
@@ -8709,7 +8807,7 @@
   ],
   "dir": "drug_dexamethasone",
   "extracted": 0,
-  "last_change": "2026-09-18T02:25:10.505084+00:00",
+  "last_change": "2026-09-28T14:37:31.963597+00:00",
   "name": "dexamethasone",
   "needs_review": 4,
   "records": 6,
@@ -8802,7 +8900,7 @@
   ],
   "dir": "drug_dextran",
   "extracted": 0,
-  "last_change": "2026-09-19T08:34:58.906755+00:00",
+  "last_change": "2026-09-28T14:37:31.990731+00:00",
   "name": "dextran",
   "needs_review": 0,
   "records": 1,
@@ -8830,7 +8928,7 @@
   ],
   "dir": "drug_dextromethorphan",
   "extracted": 0,
-  "last_change": "2026-09-23T21:31:59.383580+00:00",
+  "last_change": "2026-09-28T14:37:32.003650+00:00",
   "name": "dextromethorphan",
   "needs_review": 0,
   "records": 1,
@@ -8998,15 +9096,15 @@
    }
   ],
   "dir": "drug_diazepam",
-  "extracted": 5,
-  "last_change": "2026-09-24T04:16:12.673543+00:00",
+  "extracted": 4,
+  "last_change": "2026-09-28T14:37:34.299201+00:00",
   "name": "diazepam",
-  "needs_review": 0,
+  "needs_review": 1,
   "records": 9,
   "rejected": 4,
   "rendered": true,
   "slug": "diazepam",
-  "stale": 9
+  "stale": 0
  },
  "drug_diazoxide": {
   "atc_codes": [
@@ -9027,7 +9125,7 @@
   ],
   "dir": "drug_diazoxide",
   "extracted": 0,
-  "last_change": "2026-09-28T02:49:18.099489+00:00",
+  "last_change": "2026-09-28T14:37:34.321921+00:00",
   "name": "diazoxide",
   "needs_review": 0,
   "records": 1,
@@ -9105,14 +9203,14 @@
   ],
   "dir": "drug_diclofenac",
   "extracted": 1,
-  "last_change": "2026-09-24T03:38:06.397258+00:00",
+  "last_change": "2026-09-28T14:37:34.567964+00:00",
   "name": "diclofenac",
   "needs_review": 1,
   "records": 7,
   "rejected": 5,
   "rendered": true,
   "slug": "diclofenac",
-  "stale": 7
+  "stale": 0
  },
  "drug_dicoumarol": {
   "atc_codes": [
@@ -9176,7 +9274,7 @@
   ],
   "dir": "drug_diflunisal",
   "extracted": 0,
-  "last_change": "2026-09-21T02:19:32.305698+00:00",
+  "last_change": "2026-09-28T14:37:34.590932+00:00",
   "name": "diflunisal",
   "needs_review": 0,
   "records": 1,
@@ -9203,7 +9301,7 @@
   ],
   "dir": "drug_digitoxin",
   "extracted": 0,
-  "last_change": "2026-09-20T16:02:32.932007+00:00",
+  "last_change": "2026-09-28T14:37:34.606221+00:00",
   "name": "digitoxin",
   "needs_review": 0,
   "records": 1,
@@ -9334,7 +9432,7 @@
   ],
   "dir": "drug_digoxin",
   "extracted": 14,
-  "last_change": "2026-09-20T16:02:34.464930+00:00",
+  "last_change": "2026-09-28T14:37:36.213525+00:00",
   "name": "digoxin",
   "needs_review": 10,
   "records": 27,
@@ -9363,7 +9461,7 @@
   ],
   "dir": "drug_dihydralazine",
   "extracted": 0,
-  "last_change": "2026-09-28T02:49:18.113751+00:00",
+  "last_change": "2026-09-28T14:37:36.257951+00:00",
   "name": "dihydralazine",
   "needs_review": 0,
   "records": 1,
@@ -9392,11 +9490,11 @@
   ],
   "dir": "drug_dihydrocodeine",
   "extracted": 0,
-  "last_change": "2026-09-26T20:59:13.598959+00:00",
+  "last_change": "2026-09-28T14:37:39.421373+00:00",
   "name": "dihydrocodeine",
-  "needs_review": 0,
+  "needs_review": 1,
   "records": 1,
-  "rejected": 1,
+  "rejected": 0,
   "rendered": true,
   "slug": "dihydrocodeine",
   "stale": 0
@@ -9445,6 +9543,33 @@
   "slug": "dihydrocodeine_combinations",
   "stale": 0
  },
+ "drug_dihydroergocristine": {
+  "atc_codes": [
+   "C04AE04"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Grognet_1992 \u00b7 reference",
+    "model_id": "Dihydroergocristine_Grognet1992_reference"
+   }
+  ],
+  "dir": "drug_dihydroergocristine",
+  "extracted": 1,
+  "last_change": "2026-09-28T14:53:12.824312+00:00",
+  "name": "dihydroergocristine",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "dihydroergocristine",
+  "stale": 0
+ },
  "drug_dihydroergotamine": {
   "atc_codes": [
    "N02CA01"
@@ -9467,7 +9592,7 @@
   ],
   "dir": "drug_dihydroergotamine",
   "extracted": 0,
-  "last_change": "2026-09-21T05:42:21.170874+00:00",
+  "last_change": "2026-09-28T14:37:39.465095+00:00",
   "name": "dihydroergotamine",
   "needs_review": 2,
   "records": 2,
@@ -9638,10 +9763,6 @@
     "model_id": "Disopyramide_Aso2001_reference"
    },
    {
-    "label": "Bonde_1989 \u00b7 reference",
-    "model_id": "Disopyramide_Bonde1989_reference"
-   },
-   {
     "label": "Pedersen_1986 \u00b7 reference",
     "model_id": "Disopyramide_Pedersen1986_reference"
    },
@@ -9650,17 +9771,21 @@
     "model_id": "Disopyramide_Yukawa2005_reference"
    },
    {
+    "label": "Bonde_1989 \u00b7 reference",
+    "model_id": "Disopyramide_Bonde1989_reference"
+   },
+   {
     "label": "Burk_1983 \u00b7 reference",
     "model_id": "Disopyramide_Burk1983_reference"
    }
   ],
   "dir": "drug_disopyramide",
   "extracted": 1,
-  "last_change": "2026-09-20T16:12:06.996786+00:00",
+  "last_change": "2026-09-28T14:37:47.677096+00:00",
   "name": "disopyramide",
-  "needs_review": 4,
+  "needs_review": 3,
   "records": 6,
-  "rejected": 1,
+  "rejected": 2,
   "rendered": true,
   "slug": "disopyramide",
   "stale": 0
@@ -9709,7 +9834,7 @@
   ],
   "dir": "drug_dobutamine",
   "extracted": 2,
-  "last_change": "2026-09-20T18:58:27.885976+00:00",
+  "last_change": "2026-09-28T14:37:47.725530+00:00",
   "name": "dobutamine",
   "needs_review": 0,
   "records": 2,
@@ -9736,7 +9861,7 @@
   ],
   "dir": "drug_docetaxel",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:27.649291+00:00",
+  "last_change": "2026-09-28T14:37:47.740212+00:00",
   "name": "docetaxel",
   "needs_review": 1,
   "records": 1,
@@ -9789,7 +9914,7 @@
   ],
   "dir": "drug_dofetilide",
   "extracted": 0,
-  "last_change": "2026-09-20T16:12:07.041397+00:00",
+  "last_change": "2026-09-28T14:37:47.777010+00:00",
   "name": "dofetilide",
   "needs_review": 1,
   "records": 2,
@@ -9816,11 +9941,11 @@
   ],
   "dir": "drug_dolasetron",
   "extracted": 0,
-  "last_change": "2026-09-18T13:14:21.420968+00:00",
+  "last_change": "2026-09-28T14:37:49.880356+00:00",
   "name": "dolasetron",
-  "needs_review": 1,
+  "needs_review": 0,
   "records": 1,
-  "rejected": 0,
+  "rejected": 1,
   "rendered": true,
   "slug": "dolasetron",
   "stale": 0
@@ -9865,7 +9990,7 @@
   ],
   "dir": "drug_domperidone",
   "extracted": 0,
-  "last_change": "2026-09-18T13:03:18.046368+00:00",
+  "last_change": "2026-09-28T14:37:49.900004+00:00",
   "name": "domperidone",
   "needs_review": 0,
   "records": 1,
@@ -9892,7 +10017,7 @@
   ],
   "dir": "drug_donidalorsen",
   "extracted": 0,
-  "last_change": "2026-09-19T11:43:36.892814+00:00",
+  "last_change": "2026-09-28T14:37:49.963912+00:00",
   "name": "donidalorsen",
   "needs_review": 1,
   "records": 1,
@@ -9963,7 +10088,7 @@
   ],
   "dir": "drug_dorzagliatin",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:27.784093+00:00",
+  "last_change": "2026-09-28T14:37:50.002578+00:00",
   "name": "dorzagliatin",
   "needs_review": 0,
   "records": 1,
@@ -10033,14 +10158,14 @@
   ],
   "dir": "drug_doxazosin",
   "extracted": 3,
-  "last_change": "2026-09-27T22:49:16.147337+00:00",
+  "last_change": "2026-09-28T14:37:50.205767+00:00",
   "name": "doxazosin",
   "needs_review": 0,
   "records": 6,
   "rejected": 3,
   "rendered": true,
   "slug": "doxazosin",
-  "stale": 4
+  "stale": 0
  },
  "drug_doxepin": {
   "atc_codes": [
@@ -10151,7 +10276,7 @@
   ],
   "dir": "drug_doxorubicin",
   "extracted": 6,
-  "last_change": "2026-09-27T15:47:37.974257+00:00",
+  "last_change": "2026-09-28T14:37:51.258859+00:00",
   "name": "doxorubicin",
   "needs_review": 4,
   "records": 18,
@@ -10203,7 +10328,7 @@
   ],
   "dir": "drug_doxycycline",
   "extracted": 2,
-  "last_change": "2026-09-18T02:46:00.804564+00:00",
+  "last_change": "2026-09-28T14:37:51.575979+00:00",
   "name": "doxycycline",
   "needs_review": 5,
   "records": 7,
@@ -10296,7 +10421,7 @@
   ],
   "dir": "drug_drotrecogin_alfa",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:29.488399+00:00",
+  "last_change": "2026-09-28T14:37:51.603443+00:00",
   "name": "Drotrecogin alfa",
   "needs_review": 1,
   "records": 1,
@@ -10392,7 +10517,7 @@
   ],
   "dir": "drug_dulaglutide",
   "extracted": 3,
-  "last_change": "2026-09-17T15:08:29.646001+00:00",
+  "last_change": "2026-09-28T14:37:52.026468+00:00",
   "name": "dulaglutide",
   "needs_review": 2,
   "records": 6,
@@ -10423,7 +10548,7 @@
   ],
   "dir": "drug_duloxetine",
   "extracted": 1,
-  "last_change": "2026-09-26T12:20:29.193073+00:00",
+  "last_change": "2026-09-28T14:37:52.169481+00:00",
   "name": "duloxetine",
   "needs_review": 0,
   "records": 2,
@@ -10480,7 +10605,7 @@
   ],
   "dir": "drug_edoxaban",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:29.846907+00:00",
+  "last_change": "2026-09-28T14:37:52.285084+00:00",
   "name": "edoxaban",
   "needs_review": 2,
   "records": 3,
@@ -10513,7 +10638,7 @@
   ],
   "dir": "drug_efavirenz",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:29.900756+00:00",
+  "last_change": "2026-09-28T14:37:52.332161+00:00",
   "name": "efavirenz",
   "needs_review": 1,
   "records": 2,
@@ -10542,7 +10667,7 @@
   ],
   "dir": "drug_efpeglenatide",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:29.951619+00:00",
+  "last_change": "2026-09-28T14:37:52.399294+00:00",
   "name": "Efpeglenatide",
   "needs_review": 1,
   "records": 2,
@@ -10635,7 +10760,7 @@
   ],
   "dir": "drug_eliglustat",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:29.967371+00:00",
+  "last_change": "2026-09-28T14:37:52.420579+00:00",
   "name": "eliglustat",
   "needs_review": 0,
   "records": 1,
@@ -10714,7 +10839,7 @@
   ],
   "dir": "drug_eltrombopag",
   "extracted": 1,
-  "last_change": "2026-09-18T22:36:13.143620+00:00",
+  "last_change": "2026-09-28T14:37:52.558548+00:00",
   "name": "eltrombopag",
   "needs_review": 2,
   "records": 3,
@@ -10742,7 +10867,7 @@
   ],
   "dir": "drug_emepronium",
   "extracted": 0,
-  "last_change": "2026-09-18T10:39:45.142811+00:00",
+  "last_change": "2026-09-28T14:37:52.573100+00:00",
   "name": "emepronium",
   "needs_review": 0,
   "records": 1,
@@ -10781,7 +10906,7 @@
   ],
   "dir": "drug_emicizumab",
   "extracted": 0,
-  "last_change": "2026-09-18T22:36:13.275898+00:00",
+  "last_change": "2026-09-28T14:37:52.741800+00:00",
   "name": "emicizumab",
   "needs_review": 4,
   "records": 4,
@@ -10827,7 +10952,7 @@
   ],
   "dir": "drug_empagliflozin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:30.456057+00:00",
+  "last_change": "2026-09-28T14:37:52.994866+00:00",
   "name": "empagliflozin",
   "needs_review": 5,
   "records": 5,
@@ -10914,21 +11039,21 @@
   "curated": 0,
   "details": [
    {
-    "label": "Zufferey_2021 \u00b7 iiv_r_s_e",
-    "model_id": "Enoxaparin_Zufferey2021_iiv_r_s_e"
-   },
-   {
     "label": "Zufferey_2021 \u00b7 value_r_s_e",
     "model_id": "Enoxaparin_Zufferey2021_value_r_s_e"
+   },
+   {
+    "label": "Zufferey_2021 \u00b7 iiv_r_s_e",
+    "model_id": "Enoxaparin_Zufferey2021_iiv_r_s_e"
    }
   ],
   "dir": "drug_enoxaparin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:30.514059+00:00",
+  "last_change": "2026-09-28T14:37:55.016544+00:00",
   "name": "enoxaparin",
-  "needs_review": 2,
+  "needs_review": 1,
   "records": 2,
-  "rejected": 0,
+  "rejected": 1,
   "rendered": true,
   "slug": "enoxaparin",
   "stale": 0
@@ -11003,7 +11128,7 @@
   ],
   "dir": "drug_ephedrine",
   "extracted": 0,
-  "last_change": "2026-09-20T19:22:21.067387+00:00",
+  "last_change": "2026-09-28T14:37:55.072044+00:00",
   "name": "ephedrine",
   "needs_review": 1,
   "records": 2,
@@ -11044,7 +11169,7 @@
   ],
   "dir": "drug_epinephrine",
   "extracted": 2,
-  "last_change": "2026-09-18T02:46:00.872487+00:00",
+  "last_change": "2026-09-28T14:37:55.153366+00:00",
   "name": "epinephrine",
   "needs_review": 0,
   "records": 3,
@@ -11071,7 +11196,7 @@
   ],
   "dir": "drug_eplerenone",
   "extracted": 0,
-  "last_change": "2026-09-28T10:19:44.283087+00:00",
+  "last_change": "2026-09-28T14:37:55.171018+00:00",
   "name": "eplerenone",
   "needs_review": 1,
   "records": 1,
@@ -11110,7 +11235,7 @@
   ],
   "dir": "drug_epoprostenol",
   "extracted": 3,
-  "last_change": "2026-09-17T15:08:30.720063+00:00",
+  "last_change": "2026-09-28T14:37:55.447980+00:00",
   "name": "epoprostenol",
   "needs_review": 1,
   "records": 4,
@@ -11168,7 +11293,7 @@
   ],
   "dir": "drug_eptinezumab",
   "extracted": 0,
-  "last_change": "2026-09-21T05:42:21.264746+00:00",
+  "last_change": "2026-09-28T14:37:55.514421+00:00",
   "name": "eptinezumab",
   "needs_review": 1,
   "records": 1,
@@ -11203,7 +11328,7 @@
   ],
   "dir": "drug_erenumab",
   "extracted": 2,
-  "last_change": "2026-09-21T05:42:21.371314+00:00",
+  "last_change": "2026-09-28T14:37:55.614172+00:00",
   "name": "erenumab",
   "needs_review": 0,
   "records": 3,
@@ -11252,7 +11377,7 @@
   ],
   "dir": "drug_ergotamine",
   "extracted": 0,
-  "last_change": "2026-09-21T05:42:21.390484+00:00",
+  "last_change": "2026-09-28T14:37:55.640165+00:00",
   "name": "ergotamine",
   "needs_review": 0,
   "records": 1,
@@ -11341,7 +11466,7 @@
   ],
   "dir": "drug_erythropoietin",
   "extracted": 0,
-  "last_change": "2026-09-19T01:48:42.373748+00:00",
+  "last_change": "2026-09-28T14:37:55.785161+00:00",
   "name": "erythropoietin",
   "needs_review": 3,
   "records": 5,
@@ -11416,14 +11541,14 @@
   ],
   "dir": "drug_escherichia_coli",
   "extracted": 10,
-  "last_change": "2026-09-26T11:20:55.251020+00:00",
+  "last_change": "2026-09-28T14:37:58.361490+00:00",
   "name": "escherichia coli",
   "needs_review": 2,
   "records": 13,
   "rejected": 1,
   "rendered": true,
   "slug": "escherichia_coli",
-  "stale": 1
+  "stale": 0
  },
  "drug_escitalopram": {
   "atc_codes": [
@@ -11451,7 +11576,7 @@
   ],
   "dir": "drug_escitalopram",
   "extracted": 1,
-  "last_change": "2026-09-23T22:54:59.122165+00:00",
+  "last_change": "2026-09-28T14:37:58.459978+00:00",
   "name": "escitalopram",
   "needs_review": 1,
   "records": 3,
@@ -11482,7 +11607,7 @@
   ],
   "dir": "drug_eslicarbazepine",
   "extracted": 0,
-  "last_change": "2026-09-21T17:47:33.611628+00:00",
+  "last_change": "2026-09-28T14:37:58.501305+00:00",
   "name": "eslicarbazepine",
   "needs_review": 2,
   "records": 2,
@@ -11518,7 +11643,7 @@
   ],
   "dir": "drug_esomeprazole",
   "extracted": 1,
-  "last_change": "2026-09-18T05:41:12.873883+00:00",
+  "last_change": "2026-09-28T14:37:58.555926+00:00",
   "name": "esomeprazole",
   "needs_review": 1,
   "records": 3,
@@ -11657,7 +11782,7 @@
   ],
   "dir": "drug_ethosuximide",
   "extracted": 0,
-  "last_change": "2026-09-21T17:47:33.620118+00:00",
+  "last_change": "2026-09-28T14:37:58.565219+00:00",
   "name": "ethosuximide",
   "needs_review": 0,
   "records": 1,
@@ -11728,7 +11853,7 @@
   ],
   "dir": "drug_etilefrine",
   "extracted": 0,
-  "last_change": "2026-09-20T19:22:21.078969+00:00",
+  "last_change": "2026-09-28T14:37:58.581948+00:00",
   "name": "etilefrine",
   "needs_review": 0,
   "records": 1,
@@ -11759,7 +11884,7 @@
   ],
   "dir": "drug_etirinotecan_pegol",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:31.179887+00:00",
+  "last_change": "2026-09-28T14:37:58.633921+00:00",
   "name": "etirinotecan pegol",
   "needs_review": 0,
   "records": 2,
@@ -11812,7 +11937,7 @@
   ],
   "dir": "drug_etoposide",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:31.258015+00:00",
+  "last_change": "2026-09-28T14:37:58.676975+00:00",
   "name": "etoposide",
   "needs_review": 2,
   "records": 2,
@@ -11962,7 +12087,7 @@
   ],
   "dir": "drug_exenatide",
   "extracted": 3,
-  "last_change": "2026-09-17T15:08:32.035537+00:00",
+  "last_change": "2026-09-28T14:37:59.564862+00:00",
   "name": "exenatide",
   "needs_review": 7,
   "records": 15,
@@ -12019,7 +12144,7 @@
   ],
   "dir": "drug_famotidine",
   "extracted": 3,
-  "last_change": "2026-09-18T05:41:12.941850+00:00",
+  "last_change": "2026-09-28T14:37:59.660066+00:00",
   "name": "famotidine",
   "needs_review": 0,
   "records": 3,
@@ -12072,7 +12197,7 @@
   ],
   "dir": "drug_felbamate",
   "extracted": 0,
-  "last_change": "2026-09-21T17:47:33.634043+00:00",
+  "last_change": "2026-09-28T14:37:59.679267+00:00",
   "name": "felbamate",
   "needs_review": 1,
   "records": 2,
@@ -12122,7 +12247,7 @@
   ],
   "dir": "drug_fenoldopam",
   "extracted": 0,
-  "last_change": "2026-09-20T19:22:21.091504+00:00",
+  "last_change": "2026-09-28T14:37:59.695481+00:00",
   "name": "fenoldopam",
   "needs_review": 0,
   "records": 1,
@@ -12149,7 +12274,7 @@
   ],
   "dir": "drug_fenquizone",
   "extracted": 0,
-  "last_change": "2026-09-28T05:59:34.861325+00:00",
+  "last_change": "2026-09-28T14:37:59.717461+00:00",
   "name": "fenquizone",
   "needs_review": 0,
   "records": 1,
@@ -12233,14 +12358,14 @@
   ],
   "dir": "drug_fentanyl",
   "extracted": 4,
-  "last_change": "2026-09-27T15:47:41.512695+00:00",
+  "last_change": "2026-09-28T14:38:00.361672+00:00",
   "name": "fentanyl",
   "needs_review": 7,
   "records": 15,
   "rejected": 4,
   "rendered": true,
   "slug": "fentanyl",
-  "stale": 1
+  "stale": 0
  },
  "drug_ferric_hydroxide": {
   "atc_codes": [
@@ -12349,7 +12474,7 @@
   ],
   "dir": "drug_fexuprazan",
   "extracted": 0,
-  "last_change": "2026-09-18T05:41:12.972962+00:00",
+  "last_change": "2026-09-28T14:38:00.392570+00:00",
   "name": "fexuprazan",
   "needs_review": 0,
   "records": 1,
@@ -12388,7 +12513,7 @@
   ],
   "dir": "drug_fibrinogen_human",
   "extracted": 2,
-  "last_change": "2026-09-18T22:36:13.389223+00:00",
+  "last_change": "2026-09-28T14:38:00.500802+00:00",
   "name": "fibrinogen, human",
   "needs_review": 2,
   "records": 4,
@@ -12415,7 +12540,7 @@
   ],
   "dir": "drug_fidanacogene_elaparvovec",
   "extracted": 0,
-  "last_change": "2026-09-18T22:36:13.441797+00:00",
+  "last_change": "2026-09-28T14:38:00.546158+00:00",
   "name": "fidanacogene elaparvovec",
   "needs_review": 0,
   "records": 1,
@@ -12464,7 +12589,7 @@
   ],
   "dir": "drug_finerenone",
   "extracted": 0,
-  "last_change": "2026-09-28T11:22:45.463907+00:00",
+  "last_change": "2026-09-28T14:38:00.650256+00:00",
   "name": "finerenone",
   "needs_review": 0,
   "records": 1,
@@ -12507,7 +12632,7 @@
   ],
   "dir": "drug_fitusiran",
   "extracted": 1,
-  "last_change": "2026-09-18T22:36:13.664425+00:00",
+  "last_change": "2026-09-28T14:38:00.889779+00:00",
   "name": "fitusiran",
   "needs_review": 0,
   "records": 5,
@@ -12546,7 +12671,7 @@
   ],
   "dir": "drug_flecainide",
   "extracted": 0,
-  "last_change": "2026-09-26T11:42:35.095904+00:00",
+  "last_change": "2026-09-28T14:38:00.950312+00:00",
   "name": "flecainide",
   "needs_review": 1,
   "records": 4,
@@ -12652,7 +12777,7 @@
   ],
   "dir": "drug_flucloxacillin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:33.034879+00:00",
+  "last_change": "2026-09-28T14:38:01.060058+00:00",
   "name": "flucloxacillin",
   "needs_review": 1,
   "records": 3,
@@ -12688,7 +12813,7 @@
   ],
   "dir": "drug_flucytosine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:33.118292+00:00",
+  "last_change": "2026-09-28T14:38:03.283927+00:00",
   "name": "flucytosine",
   "needs_review": 2,
   "records": 3,
@@ -12723,7 +12848,7 @@
   ],
   "dir": "drug_fludarabine",
   "extracted": 0,
-  "last_change": "2026-09-26T20:59:39.997758+00:00",
+  "last_change": "2026-09-28T14:38:03.366597+00:00",
   "name": "fludarabine",
   "needs_review": 1,
   "records": 3,
@@ -12782,10 +12907,6 @@
     "model_id": "Fluorouracil_Yang2025_reference"
    },
    {
-    "label": "Arshad_2020 \u00b7 reference",
-    "model_id": "Fluorouracil_Arshad2020_reference"
-   },
-   {
     "label": "Blesch_2003 \u00b7 reference",
     "model_id": "Fluorouracil_Blesch2003_reference"
    },
@@ -12804,10 +12925,6 @@
    {
     "label": "Diasio_1989_2 \u00b7 reference",
     "model_id": "Fluorouracil_Diasio1989v2_reference"
-   },
-   {
-    "label": "Joel_2004 \u00b7 reference",
-    "model_id": "Fluorouracil_Joel2004_reference"
    },
    {
     "label": "Kang_2025 \u00b7 reference",
@@ -12838,56 +12955,12 @@
     "model_id": "Fluorouracil_Valderrama2025_reference"
    },
    {
-    "label": "Yamada_2025 \u00b7 reference",
-    "model_id": "Fluorouracil_Yamada2025_reference"
-   },
-   {
     "label": "van_2012 \u00b7 reference",
     "model_id": "Fluorouracil_van2012_reference"
    },
    {
-    "label": "van_2013 \u00b7 bresole_et_al_1999",
-    "model_id": "Fluorouracil_van2013_bresole_et_al_1999"
-   },
-   {
-    "label": "van_2013 \u00b7 climente_marti_et_al_2003",
-    "model_id": "Fluorouracil_van2013_climente_marti_et_al_2003"
-   },
-   {
-    "label": "van_2013 \u00b7 couitre_et_al_1991",
-    "model_id": "Fluorouracil_van2013_couitre_et_al_1991"
-   },
-   {
-    "label": "van_2013 \u00b7 di_paolo_et_al_2002",
-    "model_id": "Fluorouracil_van2013_di_paolo_et_al_2002"
-   },
-   {
-    "label": "van_2013 \u00b7 gusella_et_al_2002",
-    "model_id": "Fluorouracil_van2013_gusella_et_al_2002"
-   },
-   {
-    "label": "van_2013 \u00b7 maring_et_al_2003",
-    "model_id": "Fluorouracil_van2013_maring_et_al_2003"
-   },
-   {
-    "label": "van_2013 \u00b7 moore_et_al_1993",
-    "model_id": "Fluorouracil_van2013_moore_et_al_1993"
-   },
-   {
-    "label": "van_2013 \u00b7 sandstrom_et_al_1996",
-    "model_id": "Fluorouracil_van2013_sandstrom_et_al_1996"
-   },
-   {
-    "label": "van_2013 \u00b7 terret_et_al_2000",
-    "model_id": "Fluorouracil_van2013_terret_et_al_2000"
-   },
-   {
-    "label": "van_2013 \u00b7 van_kuilenburg_et_al_2012",
-    "model_id": "Fluorouracil_van2013_van_kuilenburg_et_al_2012"
-   },
-   {
-    "label": "van_2013 \u00b7 woloch_et_al_2012",
-    "model_id": "Fluorouracil_van2013_woloch_et_al_2012"
+    "label": "Arshad_2020 \u00b7 reference",
+    "model_id": "Fluorouracil_Arshad2020_reference"
    },
    {
     "label": "Daryani_2016 \u00b7 reference",
@@ -12962,17 +13035,69 @@
     "model_id": "Fluorouracil_Hirose2010_population_mean"
    },
    {
+    "label": "Joel_2004 \u00b7 reference",
+    "model_id": "Fluorouracil_Joel2004_reference"
+   },
+   {
     "label": "Kobuchi_2017 \u00b7 reference",
     "model_id": "Fluorouracil_Kobuchi2017_reference"
+   },
+   {
+    "label": "Yamada_2025 \u00b7 reference",
+    "model_id": "Fluorouracil_Yamada2025_reference"
+   },
+   {
+    "label": "van_2013 \u00b7 bresole_et_al_1999",
+    "model_id": "Fluorouracil_van2013_bresole_et_al_1999"
+   },
+   {
+    "label": "van_2013 \u00b7 climente_marti_et_al_2003",
+    "model_id": "Fluorouracil_van2013_climente_marti_et_al_2003"
+   },
+   {
+    "label": "van_2013 \u00b7 couitre_et_al_1991",
+    "model_id": "Fluorouracil_van2013_couitre_et_al_1991"
+   },
+   {
+    "label": "van_2013 \u00b7 di_paolo_et_al_2002",
+    "model_id": "Fluorouracil_van2013_di_paolo_et_al_2002"
+   },
+   {
+    "label": "van_2013 \u00b7 gusella_et_al_2002",
+    "model_id": "Fluorouracil_van2013_gusella_et_al_2002"
+   },
+   {
+    "label": "van_2013 \u00b7 maring_et_al_2003",
+    "model_id": "Fluorouracil_van2013_maring_et_al_2003"
+   },
+   {
+    "label": "van_2013 \u00b7 moore_et_al_1993",
+    "model_id": "Fluorouracil_van2013_moore_et_al_1993"
+   },
+   {
+    "label": "van_2013 \u00b7 sandstrom_et_al_1996",
+    "model_id": "Fluorouracil_van2013_sandstrom_et_al_1996"
+   },
+   {
+    "label": "van_2013 \u00b7 terret_et_al_2000",
+    "model_id": "Fluorouracil_van2013_terret_et_al_2000"
+   },
+   {
+    "label": "van_2013 \u00b7 van_kuilenburg_et_al_2012",
+    "model_id": "Fluorouracil_van2013_van_kuilenburg_et_al_2012"
+   },
+   {
+    "label": "van_2013 \u00b7 woloch_et_al_2012",
+    "model_id": "Fluorouracil_van2013_woloch_et_al_2012"
    }
   ],
   "dir": "drug_fluorouracil",
   "extracted": 4,
-  "last_change": "2026-09-23T12:15:48.100304+00:00",
+  "last_change": "2026-09-28T14:38:06.738863+00:00",
   "name": "fluorouracil",
-  "needs_review": 27,
+  "needs_review": 13,
   "records": 50,
-  "rejected": 19,
+  "rejected": 33,
   "rendered": true,
   "slug": "fluorouracil",
   "stale": 0
@@ -13000,7 +13125,7 @@
   ],
   "dir": "drug_fluoxetine",
   "extracted": 0,
-  "last_change": "2026-09-23T22:54:59.184817+00:00",
+  "last_change": "2026-09-28T14:38:06.832145+00:00",
   "name": "fluoxetine",
   "needs_review": 0,
   "records": 2,
@@ -13027,7 +13152,7 @@
   ],
   "dir": "drug_flupirtine",
   "extracted": 0,
-  "last_change": "2026-09-21T01:24:19.671996+00:00",
+  "last_change": "2026-09-28T14:38:06.867720+00:00",
   "name": "flupirtine",
   "needs_review": 0,
   "records": 1,
@@ -13065,7 +13190,7 @@
   ],
   "dir": "drug_flurbiprofen",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:37.161859+00:00",
+  "last_change": "2026-09-28T14:38:06.976039+00:00",
   "name": "flurbiprofen",
   "needs_review": 1,
   "records": 3,
@@ -13100,7 +13225,7 @@
   ],
   "dir": "drug_fluvoxamine",
   "extracted": 1,
-  "last_change": "2026-09-23T22:54:59.223631+00:00",
+  "last_change": "2026-09-28T14:38:07.027878+00:00",
   "name": "fluvoxamine",
   "needs_review": 0,
   "records": 3,
@@ -13257,7 +13382,7 @@
   ],
   "dir": "drug_fosphenytoin",
   "extracted": 0,
-  "last_change": "2026-09-26T20:59:41.980362+00:00",
+  "last_change": "2026-09-28T14:38:07.158332+00:00",
   "name": "fosphenytoin",
   "needs_review": 1,
   "records": 7,
@@ -13284,7 +13409,7 @@
   ],
   "dir": "drug_fostamatinib",
   "extracted": 0,
-  "last_change": "2026-09-18T22:36:13.678082+00:00",
+  "last_change": "2026-09-28T14:38:07.172432+00:00",
   "name": "fostamatinib",
   "needs_review": 0,
   "records": 1,
@@ -13354,7 +13479,7 @@
   ],
   "dir": "drug_fremanezumab",
   "extracted": 1,
-  "last_change": "2026-09-21T05:42:21.505589+00:00",
+  "last_change": "2026-09-28T14:38:07.301226+00:00",
   "name": "fremanezumab",
   "needs_review": 2,
   "records": 5,
@@ -13439,7 +13564,7 @@
   ],
   "dir": "drug_furosemide",
   "extracted": 0,
-  "last_change": "2026-09-28T10:28:17.223827+00:00",
+  "last_change": "2026-09-28T14:38:07.378672+00:00",
   "name": "furosemide",
   "needs_review": 1,
   "records": 4,
@@ -13516,7 +13641,7 @@
   ],
   "dir": "drug_gabapentin",
   "extracted": 2,
-  "last_change": "2026-09-21T01:24:19.917499+00:00",
+  "last_change": "2026-09-28T14:38:07.611887+00:00",
   "name": "gabapentin",
   "needs_review": 3,
   "records": 8,
@@ -13551,7 +13676,7 @@
   ],
   "dir": "drug_galcanezumab",
   "extracted": 1,
-  "last_change": "2026-09-21T08:05:45.093455+00:00",
+  "last_change": "2026-09-28T14:38:07.682480+00:00",
   "name": "galcanezumab",
   "needs_review": 1,
   "records": 3,
@@ -13627,7 +13752,7 @@
   ],
   "dir": "drug_garadacimab",
   "extracted": 0,
-  "last_change": "2026-09-19T11:43:36.929157+00:00",
+  "last_change": "2026-09-28T14:38:07.724920+00:00",
   "name": "garadacimab",
   "needs_review": 0,
   "records": 1,
@@ -13655,7 +13780,7 @@
   ],
   "dir": "drug_gefitinib",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:37.643650+00:00",
+  "last_change": "2026-09-28T14:38:07.737661+00:00",
   "name": "gefitinib",
   "needs_review": 0,
   "records": 1,
@@ -13734,7 +13859,7 @@
   ],
   "dir": "drug_gemcitabine",
   "extracted": 2,
-  "last_change": "2026-09-17T15:08:37.706619+00:00",
+  "last_change": "2026-09-28T14:38:07.910409+00:00",
   "name": "gemcitabine",
   "needs_review": 0,
   "records": 3,
@@ -13798,7 +13923,7 @@
   ],
   "dir": "drug_gentamicin",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:37.900724+00:00",
+  "last_change": "2026-09-28T14:38:08.012497+00:00",
   "name": "gentamicin",
   "needs_review": 1,
   "records": 3,
@@ -13899,7 +14024,7 @@
   ],
   "dir": "drug_glibenclamide",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:38.124760+00:00",
+  "last_change": "2026-09-28T14:38:08.165622+00:00",
   "name": "glibenclamide",
   "needs_review": 3,
   "records": 3,
@@ -13956,7 +14081,7 @@
   ],
   "dir": "drug_gliclazide",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:38.201353+00:00",
+  "last_change": "2026-09-28T14:38:08.242448+00:00",
   "name": "gliclazide",
   "needs_review": 3,
   "records": 3,
@@ -13985,7 +14110,7 @@
   ],
   "dir": "drug_glimepiride",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:38.221600+00:00",
+  "last_change": "2026-09-28T14:38:08.325997+00:00",
   "name": "glimepiride",
   "needs_review": 1,
   "records": 1,
@@ -14129,7 +14254,7 @@
   ],
   "dir": "drug_glutamine",
   "extracted": 0,
-  "last_change": "2026-09-27T11:21:44.420688+00:00",
+  "last_change": "2026-09-28T14:38:08.371901+00:00",
   "name": "glutamine",
   "needs_review": 1,
   "records": 1,
@@ -14215,7 +14340,7 @@
   ],
   "dir": "drug_glyceryl_trinitrate",
   "extracted": 2,
-  "last_change": "2026-09-17T15:08:38.273398+00:00",
+  "last_change": "2026-09-28T14:38:08.502784+00:00",
   "name": "glyceryl trinitrate",
   "needs_review": 0,
   "records": 3,
@@ -14284,7 +14409,7 @@
   ],
   "dir": "drug_glycopyrronium",
   "extracted": 0,
-  "last_change": "2026-09-18T09:24:45.053912+00:00",
+  "last_change": "2026-09-28T14:38:08.642216+00:00",
   "name": "glycopyrronium",
   "needs_review": 3,
   "records": 4,
@@ -14320,7 +14445,7 @@
   ],
   "dir": "drug_glycopyrronium_bromide",
   "extracted": 0,
-  "last_change": "2026-09-18T09:24:45.129616+00:00",
+  "last_change": "2026-09-28T14:38:08.724766+00:00",
   "name": "glycopyrronium bromide",
   "needs_review": 3,
   "records": 3,
@@ -14395,7 +14520,7 @@
   ],
   "dir": "drug_granisetron",
   "extracted": 0,
-  "last_change": "2026-09-18T13:14:21.450425+00:00",
+  "last_change": "2026-09-28T14:38:08.767445+00:00",
   "name": "granisetron",
   "needs_review": 1,
   "records": 2,
@@ -14446,7 +14571,7 @@
   ],
   "dir": "drug_guanfacine",
   "extracted": 1,
-  "last_change": "2026-09-27T19:37:31.603942+00:00",
+  "last_change": "2026-09-28T14:38:08.791376+00:00",
   "name": "guanfacine",
   "needs_review": 0,
   "records": 1,
@@ -14503,7 +14628,7 @@
   ],
   "dir": "drug_haloperidol",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:38.619463+00:00",
+  "last_change": "2026-09-28T14:38:08.892554+00:00",
   "name": "haloperidol",
   "needs_review": 2,
   "records": 3,
@@ -14602,7 +14727,7 @@
   ],
   "dir": "drug_heparin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:38.666875+00:00",
+  "last_change": "2026-09-28T14:38:12.821744+00:00",
   "name": "heparin",
   "needs_review": 2,
   "records": 2,
@@ -14776,10 +14901,6 @@
     "model_id": "Hydrochlorothiazide_Devineni2015_reference"
    },
    {
-    "label": "Hedaya_2015 \u00b7 reference",
-    "model_id": "Hydrochlorothiazide_Hedaya2015_reference"
-   },
-   {
     "label": "Prichard_1985 \u00b7 reference",
     "model_id": "Hydrochlorothiazide_Prichard1985_reference"
    },
@@ -14804,20 +14925,24 @@
     "model_id": "Hydrochlorothiazide_Van2013_reference"
    },
    {
+    "label": "Hedaya_2015 \u00b7 reference",
+    "model_id": "Hydrochlorothiazide_Hedaya2015_reference"
+   },
+   {
     "label": "Shimizu_2012 \u00b7 reference",
     "model_id": "Hydrochlorothiazide_Shimizu2012_reference"
    }
   ],
   "dir": "drug_hydrochlorothiazide",
-  "extracted": 6,
-  "last_change": "2026-09-27T13:57:06.885156+00:00",
+  "extracted": 5,
+  "last_change": "2026-09-28T14:38:13.252041+00:00",
   "name": "hydrochlorothiazide",
   "needs_review": 2,
   "records": 9,
-  "rejected": 1,
+  "rejected": 2,
   "rendered": true,
   "slug": "hydrochlorothiazide",
-  "stale": 1
+  "stale": 0
  },
  "drug_hydrocodone": {
   "atc_codes": [
@@ -14839,7 +14964,7 @@
   ],
   "dir": "drug_hydrocodone",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:39.058615+00:00",
+  "last_change": "2026-09-28T14:38:13.281311+00:00",
   "name": "hydrocodone",
   "needs_review": 0,
   "records": 1,
@@ -14906,7 +15031,7 @@
   ],
   "dir": "drug_hydrocortisone",
   "extracted": 0,
-  "last_change": "2026-09-18T02:46:00.946348+00:00",
+  "last_change": "2026-09-28T14:38:13.340098+00:00",
   "name": "hydrocortisone",
   "needs_review": 2,
   "records": 2,
@@ -14938,7 +15063,7 @@
   ],
   "dir": "drug_hydroflumethiazide",
   "extracted": 0,
-  "last_change": "2026-09-28T09:33:21.521519+00:00",
+  "last_change": "2026-09-28T14:38:13.372602+00:00",
   "name": "hydroflumethiazide",
   "needs_review": 0,
   "records": 2,
@@ -14996,7 +15121,7 @@
   ],
   "dir": "drug_hydromorphone",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:39.175680+00:00",
+  "last_change": "2026-09-28T14:38:13.448923+00:00",
   "name": "hydromorphone",
   "needs_review": 0,
   "records": 2,
@@ -15072,7 +15197,7 @@
   ],
   "dir": "drug_hydroxocobalamin",
   "extracted": 1,
-  "last_change": "2026-09-19T00:35:37.527587+00:00",
+  "last_change": "2026-09-28T14:38:13.492657+00:00",
   "name": "hydroxocobalamin",
   "needs_review": 1,
   "records": 2,
@@ -15107,7 +15232,7 @@
   ],
   "dir": "drug_hydroxychloroquine",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:39.262566+00:00",
+  "last_change": "2026-09-28T14:38:13.586861+00:00",
   "name": "hydroxychloroquine",
   "needs_review": 2,
   "records": 3,
@@ -15146,7 +15271,7 @@
   ],
   "dir": "drug_hydroxyethylstarch",
   "extracted": 3,
-  "last_change": "2026-09-19T08:34:59.035799+00:00",
+  "last_change": "2026-09-28T14:38:13.731560+00:00",
   "name": "hydroxyethylstarch",
   "needs_review": 1,
   "records": 4,
@@ -15218,7 +15343,7 @@
   ],
   "dir": "drug_hyperici_herba",
   "extracted": 0,
-  "last_change": "2026-09-23T22:54:59.238831+00:00",
+  "last_change": "2026-09-28T14:38:13.755422+00:00",
   "name": "Hyperici herba",
   "needs_review": 1,
   "records": 1,
@@ -15284,7 +15409,7 @@
   ],
   "dir": "drug_ibritumomab_tiuxetan",
   "extracted": 0,
-  "last_change": "2026-09-25T07:10:01.297227+00:00",
+  "last_change": "2026-09-28T14:38:13.893693+00:00",
   "name": "ibritumomab tiuxetan",
   "needs_review": 0,
   "records": 5,
@@ -15327,7 +15452,7 @@
   ],
   "dir": "drug_ibritumomab_tiuxetan_90y",
   "extracted": 0,
-  "last_change": "2026-09-25T07:10:01.412581+00:00",
+  "last_change": "2026-09-28T14:38:18.550112+00:00",
   "name": "ibritumomab tiuxetan (90Y)",
   "needs_review": 0,
   "records": 5,
@@ -15417,7 +15542,7 @@
   ],
   "dir": "drug_ibuprofen",
   "extracted": 5,
-  "last_change": "2026-09-27T11:20:00.515262+00:00",
+  "last_change": "2026-09-28T14:38:19.357653+00:00",
   "name": "ibuprofen",
   "needs_review": 3,
   "records": 15,
@@ -15470,7 +15595,7 @@
   ],
   "dir": "drug_icatibant",
   "extracted": 0,
-  "last_change": "2026-09-19T14:00:08.818744+00:00",
+  "last_change": "2026-09-28T14:38:19.431094+00:00",
   "name": "icatibant",
   "needs_review": 0,
   "records": 2,
@@ -15519,7 +15644,7 @@
   ],
   "dir": "drug_ifosfamide",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:40.423535+00:00",
+  "last_change": "2026-09-28T14:38:22.491527+00:00",
   "name": "ifosfamide",
   "needs_review": 1,
   "records": 1,
@@ -15546,7 +15671,7 @@
   ],
   "dir": "drug_ilaprazole",
   "extracted": 0,
-  "last_change": "2026-09-18T05:41:13.023755+00:00",
+  "last_change": "2026-09-28T14:38:22.544550+00:00",
   "name": "ilaprazole",
   "needs_review": 0,
   "records": 1,
@@ -15639,7 +15764,7 @@
   ],
   "dir": "drug_imiglucerase",
   "extracted": 0,
-  "last_change": "2026-09-27T15:27:37.800577+00:00",
+  "last_change": "2026-09-28T14:38:22.557491+00:00",
   "name": "imiglucerase",
   "needs_review": 0,
   "records": 1,
@@ -15666,7 +15791,7 @@
   ],
   "dir": "drug_imipramine",
   "extracted": 0,
-  "last_change": "2026-09-23T22:54:59.249484+00:00",
+  "last_change": "2026-09-28T14:38:22.571872+00:00",
   "name": "imipramine",
   "needs_review": 0,
   "records": 1,
@@ -15744,11 +15869,11 @@
   ],
   "dir": "drug_indometacin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:40.528934+00:00",
+  "last_change": "2026-09-28T14:38:22.607101+00:00",
   "name": "indometacin",
-  "needs_review": 1,
+  "needs_review": 0,
   "records": 1,
-  "rejected": 0,
+  "rejected": 1,
   "rendered": true,
   "slug": "indometacin",
   "stale": 0
@@ -15771,7 +15896,7 @@
   ],
   "dir": "drug_indoramin",
   "extracted": 1,
-  "last_change": "2026-09-28T00:31:48.393586+00:00",
+  "last_change": "2026-09-28T14:38:22.629657+00:00",
   "name": "indoramin",
   "needs_review": 0,
   "records": 1,
@@ -15802,7 +15927,7 @@
   ],
   "dir": "drug_inositol",
   "extracted": 0,
-  "last_change": "2026-09-22T01:57:17.004145+00:00",
+  "last_change": "2026-09-28T14:38:22.679987+00:00",
   "name": "inositol",
   "needs_review": 2,
   "records": 2,
@@ -15831,7 +15956,7 @@
   ],
   "dir": "drug_insulin_aspart",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:40.699395+00:00",
+  "last_change": "2026-09-28T14:38:22.734600+00:00",
   "name": "insulin aspart",
   "needs_review": 1,
   "records": 1,
@@ -15930,7 +16055,7 @@
   ],
   "dir": "drug_insulin_glargine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:40.736668+00:00",
+  "last_change": "2026-09-28T14:38:22.778695+00:00",
   "name": "insulin glargine",
   "needs_review": 0,
   "records": 1,
@@ -16127,7 +16252,7 @@
   ],
   "dir": "drug_ipragliflozin",
   "extracted": 0,
-  "last_change": "2026-09-22T10:31:26.548382+00:00",
+  "last_change": "2026-09-28T14:38:22.809763+00:00",
   "name": "ipragliflozin",
   "needs_review": 1,
   "records": 1,
@@ -16275,7 +16400,7 @@
   ],
   "dir": "drug_irinotecan",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:41.201935+00:00",
+  "last_change": "2026-09-28T14:38:24.385817+00:00",
   "name": "irinotecan",
   "needs_review": 1,
   "records": 20,
@@ -16319,7 +16444,7 @@
   ],
   "dir": "drug_iron",
   "extracted": 3,
-  "last_change": "2026-09-17T15:08:41.338661+00:00",
+  "last_change": "2026-09-28T14:38:26.346455+00:00",
   "name": "Iron",
   "needs_review": 2,
   "records": 5,
@@ -16390,7 +16515,7 @@
   ],
   "dir": "drug_isoflurane",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:41.403623+00:00",
+  "last_change": "2026-09-28T14:38:26.392182+00:00",
   "name": "isoflurane",
   "needs_review": 0,
   "records": 1,
@@ -16451,7 +16576,7 @@
   ],
   "dir": "drug_isosorbide_dinitrate",
   "extracted": 0,
-  "last_change": "2026-09-20T21:39:52.320313+00:00",
+  "last_change": "2026-09-28T14:38:26.430299+00:00",
   "name": "isosorbide dinitrate",
   "needs_review": 1,
   "records": 3,
@@ -16544,7 +16669,7 @@
   ],
   "dir": "drug_ivabradine",
   "extracted": 0,
-  "last_change": "2026-09-27T18:47:06.409391+00:00",
+  "last_change": "2026-09-28T14:38:26.530874+00:00",
   "name": "ivabradine",
   "needs_review": 0,
   "records": 6,
@@ -16577,7 +16702,7 @@
   ],
   "dir": "drug_ivacaftor",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:41.559370+00:00",
+  "last_change": "2026-09-28T14:38:26.645951+00:00",
   "name": "ivacaftor",
   "needs_review": 1,
   "records": 2,
@@ -16614,7 +16739,7 @@
   ],
   "dir": "drug_kanamycin",
   "extracted": 3,
-  "last_change": "2026-09-22T02:28:01.388552+00:00",
+  "last_change": "2026-09-28T14:38:26.733533+00:00",
   "name": "kanamycin",
   "needs_review": 0,
   "records": 3,
@@ -16675,7 +16800,7 @@
   ],
   "dir": "drug_ketanserin",
   "extracted": 2,
-  "last_change": "2026-09-28T04:21:22.939527+00:00",
+  "last_change": "2026-09-28T14:38:26.849788+00:00",
   "name": "ketanserin",
   "needs_review": 1,
   "records": 4,
@@ -16749,7 +16874,7 @@
   ],
   "dir": "drug_lacosamide",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:41.847608+00:00",
+  "last_change": "2026-09-28T14:38:27.035553+00:00",
   "name": "lacosamide",
   "needs_review": 2,
   "records": 7,
@@ -16850,7 +16975,7 @@
   ],
   "dir": "drug_lamotrigine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:41.926956+00:00",
+  "last_change": "2026-09-28T14:38:27.118015+00:00",
   "name": "lamotrigine",
   "needs_review": 2,
   "records": 3,
@@ -16881,7 +17006,7 @@
   ],
   "dir": "drug_lanadelumab",
   "extracted": 0,
-  "last_change": "2026-09-19T14:00:08.989553+00:00",
+  "last_change": "2026-09-28T14:38:27.276998+00:00",
   "name": "lanadelumab",
   "needs_review": 2,
   "records": 2,
@@ -16938,7 +17063,7 @@
   ],
   "dir": "drug_lansoprazole",
   "extracted": 0,
-  "last_change": "2026-09-18T05:41:13.072749+00:00",
+  "last_change": "2026-09-28T14:38:27.382735+00:00",
   "name": "lansoprazole",
   "needs_review": 1,
   "records": 3,
@@ -16987,7 +17112,7 @@
   ],
   "dir": "drug_lasmiditan",
   "extracted": 0,
-  "last_change": "2026-09-21T08:05:45.134042+00:00",
+  "last_change": "2026-09-28T14:38:27.420609+00:00",
   "name": "lasmiditan",
   "needs_review": 1,
   "records": 1,
@@ -17082,7 +17207,7 @@
   ],
   "dir": "drug_levetiracetam",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:42.367641+00:00",
+  "last_change": "2026-09-28T14:38:27.629100+00:00",
   "name": "levetiracetam",
   "needs_review": 3,
   "records": 7,
@@ -17113,7 +17238,7 @@
   ],
   "dir": "drug_levocarnitine",
   "extracted": 0,
-  "last_change": "2026-09-27T15:27:37.831361+00:00",
+  "last_change": "2026-09-28T14:38:27.665512+00:00",
   "name": "levocarnitine",
   "needs_review": 0,
   "records": 2,
@@ -17152,7 +17277,7 @@
   ],
   "dir": "drug_levofloxacin",
   "extracted": 2,
-  "last_change": "2026-09-18T07:51:26.520995+00:00",
+  "last_change": "2026-09-28T14:38:27.707405+00:00",
   "name": "levofloxacin",
   "needs_review": 1,
   "records": 3,
@@ -17179,7 +17304,7 @@
   ],
   "dir": "drug_levomethadone",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:42.531324+00:00",
+  "last_change": "2026-09-28T14:38:27.748082+00:00",
   "name": "levomethadone",
   "needs_review": 0,
   "records": 1,
@@ -17236,7 +17361,7 @@
   ],
   "dir": "drug_levosimendan",
   "extracted": 2,
-  "last_change": "2026-09-20T19:22:21.163710+00:00",
+  "last_change": "2026-09-28T14:38:27.837982+00:00",
   "name": "levosimendan",
   "needs_review": 0,
   "records": 3,
@@ -17257,10 +17382,6 @@
   },
   "curated": 0,
   "details": [
-   {
-    "label": "Younis_2018 \u00b7 reference",
-    "model_id": "Levothyroxine_Younis2018_reference"
-   },
    {
     "label": "Inada_1975 \u00b7 d_k",
     "model_id": "Levothyroxine_Inada1975_d_k"
@@ -17310,6 +17431,10 @@
     "model_id": "Levothyroxine_Inada1975_y_u"
    },
    {
+    "label": "Younis_2018 \u00b7 reference",
+    "model_id": "Levothyroxine_Younis2018_reference"
+   },
+   {
     "label": "Fitch_2025 \u00b7 1200_g_xp_8121_sc",
     "model_id": "Levothyroxine_Fitch2025_1200_g_xp_8121_sc"
    },
@@ -17335,15 +17460,15 @@
    }
   ],
   "dir": "drug_levothyroxine",
-  "extracted": 1,
-  "last_change": "2026-09-24T00:18:54.716791+00:00",
+  "extracted": 0,
+  "last_change": "2026-09-28T14:38:28.591970+00:00",
   "name": "Levothyroxine",
-  "needs_review": 12,
+  "needs_review": 13,
   "records": 19,
   "rejected": 6,
   "rendered": true,
   "slug": "levothyroxine",
-  "stale": 19
+  "stale": 0
  },
  "drug_lidocaine": {
   "atc_codes": [
@@ -17425,7 +17550,7 @@
   ],
   "dir": "drug_lidocaine",
   "extracted": 0,
-  "last_change": "2026-09-20T17:45:56.713472+00:00",
+  "last_change": "2026-09-28T14:38:29.178534+00:00",
   "name": "lidocaine",
   "needs_review": 2,
   "records": 15,
@@ -17485,7 +17610,7 @@
   ],
   "dir": "drug_linagliptin",
   "extracted": 0,
-  "last_change": "2026-09-22T10:31:26.627014+00:00",
+  "last_change": "2026-09-28T14:38:29.280592+00:00",
   "name": "linagliptin",
   "needs_review": 1,
   "records": 3,
@@ -17512,7 +17637,7 @@
   ],
   "dir": "drug_linerixibat",
   "extracted": 1,
-  "last_change": "2026-09-18T14:36:20.883993+00:00",
+  "last_change": "2026-09-28T14:38:29.321966+00:00",
   "name": "linerixibat",
   "needs_review": 0,
   "records": 1,
@@ -17561,7 +17686,7 @@
   ],
   "dir": "drug_linsidomine",
   "extracted": 0,
-  "last_change": "2026-09-20T21:39:52.338766+00:00",
+  "last_change": "2026-09-28T14:38:29.334787+00:00",
   "name": "linsidomine",
   "needs_review": 1,
   "records": 1,
@@ -17631,7 +17756,7 @@
   ],
   "dir": "drug_liraglutide",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:44.107936+00:00",
+  "last_change": "2026-09-28T14:38:29.636327+00:00",
   "name": "liraglutide",
   "needs_review": 1,
   "records": 6,
@@ -17726,7 +17851,7 @@
   ],
   "dir": "drug_lomustine",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:44.126392+00:00",
+  "last_change": "2026-09-28T14:38:29.659192+00:00",
   "name": "lomustine",
   "needs_review": 0,
   "records": 1,
@@ -17753,7 +17878,7 @@
   ],
   "dir": "drug_lonafarnib",
   "extracted": 0,
-  "last_change": "2026-09-27T15:27:37.861243+00:00",
+  "last_change": "2026-09-28T14:38:29.692926+00:00",
   "name": "lonafarnib",
   "needs_review": 1,
   "records": 1,
@@ -17784,11 +17909,11 @@
   ],
   "dir": "drug_loperamide",
   "extracted": 0,
-  "last_change": "2026-09-22T04:51:07.448850+00:00",
+  "last_change": "2026-09-28T14:38:35.370550+00:00",
   "name": "loperamide",
-  "needs_review": 2,
+  "needs_review": 0,
   "records": 2,
-  "rejected": 0,
+  "rejected": 2,
   "rendered": true,
   "slug": "loperamide",
   "stale": 0
@@ -17815,7 +17940,7 @@
   ],
   "dir": "drug_lorcainide",
   "extracted": 0,
-  "last_change": "2026-09-20T17:45:56.747833+00:00",
+  "last_change": "2026-09-28T14:38:35.410656+00:00",
   "name": "lorcainide",
   "needs_review": 2,
   "records": 2,
@@ -17865,7 +17990,7 @@
   ],
   "dir": "drug_lovastatin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:44.321462+00:00",
+  "last_change": "2026-09-28T14:38:35.446184+00:00",
   "name": "lovastatin",
   "needs_review": 1,
   "records": 1,
@@ -17936,7 +18061,7 @@
   ],
   "dir": "drug_lumiracoxib",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:44.350782+00:00",
+  "last_change": "2026-09-28T14:38:35.476587+00:00",
   "name": "lumiracoxib",
   "needs_review": 0,
   "records": 1,
@@ -17963,7 +18088,7 @@
   ],
   "dir": "drug_luseogliflozin",
   "extracted": 0,
-  "last_change": "2026-09-22T10:31:26.728543+00:00",
+  "last_change": "2026-09-28T14:38:35.530291+00:00",
   "name": "luseogliflozin",
   "needs_review": 1,
   "records": 1,
@@ -17994,7 +18119,7 @@
   ],
   "dir": "drug_luspatercept",
   "extracted": 1,
-  "last_change": "2026-09-19T01:48:42.440945+00:00",
+  "last_change": "2026-09-28T14:38:35.600552+00:00",
   "name": "luspatercept",
   "needs_review": 1,
   "records": 2,
@@ -18021,7 +18146,7 @@
   ],
   "dir": "drug_lusutrombopag",
   "extracted": 0,
-  "last_change": "2026-09-18T22:36:13.717616+00:00",
+  "last_change": "2026-09-28T14:38:35.653560+00:00",
   "name": "lusutrombopag",
   "needs_review": 0,
   "records": 1,
@@ -18056,7 +18181,7 @@
   ],
   "dir": "drug_lutetium_177lu_oxodotreotide",
   "extracted": 2,
-  "last_change": "2026-09-25T07:10:01.501984+00:00",
+  "last_change": "2026-09-28T14:38:35.742547+00:00",
   "name": "lutetium (177Lu) oxodotreotide",
   "needs_review": 0,
   "records": 3,
@@ -18091,7 +18216,7 @@
   ],
   "dir": "drug_lutetium_177lu_vipivotide_tetraxetan",
   "extracted": 1,
-  "last_change": "2026-09-25T07:10:01.584218+00:00",
+  "last_change": "2026-09-28T14:38:35.840671+00:00",
   "name": "lutetium (177Lu) vipivotide tetraxetan",
   "needs_review": 0,
   "records": 3,
@@ -18142,11 +18267,11 @@
   ],
   "dir": "drug_macitentan",
   "extracted": 0,
-  "last_change": "2026-09-28T04:21:22.964162+00:00",
+  "last_change": "2026-09-28T14:38:37.899581+00:00",
   "name": "macitentan",
-  "needs_review": 1,
+  "needs_review": 0,
   "records": 1,
-  "rejected": 0,
+  "rejected": 1,
   "rendered": true,
   "slug": "macitentan",
   "stale": 0
@@ -18193,7 +18318,7 @@
   ],
   "dir": "drug_macrogol",
   "extracted": 5,
-  "last_change": "2026-09-21T21:50:10.317824+00:00",
+  "last_change": "2026-09-28T14:38:38.367844+00:00",
   "name": "macrogol",
   "needs_review": 2,
   "records": 7,
@@ -18337,7 +18462,7 @@
   ],
   "dir": "drug_magnesium_different_salts_in_combination",
   "extracted": 4,
-  "last_change": "2026-09-26T16:47:56.101107+00:00",
+  "last_change": "2026-09-28T14:38:38.572951+00:00",
   "name": "magnesium (different salts in combination)",
   "needs_review": 1,
   "records": 7,
@@ -18519,7 +18644,7 @@
   ],
   "dir": "drug_magnesium_sulfate",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:44.602652+00:00",
+  "last_change": "2026-09-28T14:38:38.677267+00:00",
   "name": "magnesium sulfate",
   "needs_review": 2,
   "records": 5,
@@ -18688,7 +18813,7 @@
   ],
   "dir": "drug_marstacimab",
   "extracted": 0,
-  "last_change": "2026-09-18T23:51:16.752544+00:00",
+  "last_change": "2026-09-28T14:38:38.745638+00:00",
   "name": "marstacimab",
   "needs_review": 1,
   "records": 1,
@@ -18719,11 +18844,11 @@
   ],
   "dir": "drug_mavacamten",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:44.664814+00:00",
+  "last_change": "2026-09-28T14:38:40.676196+00:00",
   "name": "mavacamten",
-  "needs_review": 1,
+  "needs_review": 0,
   "records": 2,
-  "rejected": 1,
+  "rejected": 2,
   "rendered": true,
   "slug": "mavacamten",
   "stale": 0
@@ -18769,15 +18894,15 @@
    }
   ],
   "dir": "drug_mazindol",
-  "extracted": 2,
-  "last_change": "2026-09-22T07:20:04.434543+00:00",
+  "extracted": 0,
+  "last_change": "2026-09-28T14:38:40.733390+00:00",
   "name": "mazindol",
-  "needs_review": 0,
+  "needs_review": 2,
   "records": 2,
   "rejected": 0,
   "rendered": true,
   "slug": "mazindol",
-  "stale": 2
+  "stale": 0
  },
  "drug_mebeverine": {
   "atc_codes": [
@@ -18819,7 +18944,7 @@
   ],
   "dir": "drug_mecamylamine",
   "extracted": 0,
-  "last_change": "2026-09-28T00:31:48.261692+00:00",
+  "last_change": "2026-09-28T14:38:40.785357+00:00",
   "name": "mecamylamine",
   "needs_review": 0,
   "records": 1,
@@ -18890,7 +19015,7 @@
   ],
   "dir": "drug_medifoxamine",
   "extracted": 0,
-  "last_change": "2026-09-24T01:32:23.207048+00:00",
+  "last_change": "2026-09-28T14:38:40.803108+00:00",
   "name": "medifoxamine",
   "needs_review": 0,
   "records": 1,
@@ -18970,7 +19095,7 @@
   ],
   "dir": "drug_meldonium",
   "extracted": 0,
-  "last_change": "2026-09-27T18:47:06.458418+00:00",
+  "last_change": "2026-09-28T14:38:40.813429+00:00",
   "name": "meldonium",
   "needs_review": 0,
   "records": 1,
@@ -19025,7 +19150,7 @@
   ],
   "dir": "drug_meloxicam",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:44.819022+00:00",
+  "last_change": "2026-09-28T14:38:40.874684+00:00",
   "name": "meloxicam",
   "needs_review": 1,
   "records": 2,
@@ -19052,7 +19177,7 @@
   ],
   "dir": "drug_melphalan",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:44.835751+00:00",
+  "last_change": "2026-09-28T14:38:40.889502+00:00",
   "name": "melphalan",
   "needs_review": 1,
   "records": 1,
@@ -19180,7 +19305,7 @@
   ],
   "dir": "drug_mercaptopurine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:44.882274+00:00",
+  "last_change": "2026-09-28T14:38:40.953562+00:00",
   "name": "mercaptopurine",
   "needs_review": 0,
   "records": 3,
@@ -19223,21 +19348,21 @@
   "curated": 0,
   "details": [
    {
-    "label": "Cuffari_2016 \u00b7 multimatrix_mesalamine",
-    "model_id": "Mesalazine_Cuffari2016_multimatrix_mesalamine"
-   },
-   {
     "label": "Cuffari_2016 \u00b7 nonmem_estimates",
     "model_id": "Mesalazine_Cuffari2016_nonmem_estimates"
+   },
+   {
+    "label": "Cuffari_2016 \u00b7 multimatrix_mesalamine",
+    "model_id": "Mesalazine_Cuffari2016_multimatrix_mesalamine"
    }
   ],
   "dir": "drug_mesalazine",
   "extracted": 0,
-  "last_change": "2026-09-22T06:18:58.721351+00:00",
+  "last_change": "2026-09-28T14:38:50.709607+00:00",
   "name": "mesalazine",
-  "needs_review": 2,
+  "needs_review": 1,
   "records": 2,
-  "rejected": 0,
+  "rejected": 1,
   "rendered": true,
   "slug": "mesalazine",
   "stale": 0
@@ -19304,7 +19429,7 @@
   ],
   "dir": "drug_metamizole",
   "extracted": 3,
-  "last_change": "2026-09-21T01:24:20.199042+00:00",
+  "last_change": "2026-09-28T14:38:50.961810+00:00",
   "name": "Metamizole",
   "needs_review": 2,
   "records": 6,
@@ -19363,7 +19488,7 @@
   ],
   "dir": "drug_metamizole_sodium",
   "extracted": 5,
-  "last_change": "2026-09-21T01:24:20.724934+00:00",
+  "last_change": "2026-09-28T14:38:51.393026+00:00",
   "name": "metamizole sodium",
   "needs_review": 2,
   "records": 9,
@@ -19592,7 +19717,7 @@
   ],
   "dir": "drug_metformin",
   "extracted": 15,
-  "last_change": "2026-09-27T11:19:59.714066+00:00",
+  "last_change": "2026-09-28T14:38:54.429956+00:00",
   "name": "metformin",
   "needs_review": 12,
   "records": 36,
@@ -19619,7 +19744,7 @@
   ],
   "dir": "drug_methadone",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:48.822320+00:00",
+  "last_change": "2026-09-28T14:38:54.533684+00:00",
   "name": "methadone",
   "needs_review": 1,
   "records": 1,
@@ -19705,28 +19830,12 @@
     "model_id": "Methotrexate_Pan2026_reference"
    },
    {
-    "label": "Simon_2026 \u00b7 reference",
-    "model_id": "Methotrexate_Simon2026_reference"
-   },
-   {
-    "label": "Tan_2024 \u00b7 reference",
-    "model_id": "Methotrexate_Tan2024_reference"
-   },
-   {
-    "label": "Taylor_2021 \u00b7 reference",
-    "model_id": "Methotrexate_Taylor2021_reference"
-   },
-   {
     "label": "Wei_2025 \u00b7 reference",
     "model_id": "Methotrexate_Wei2025_reference"
    },
    {
     "label": "Yu_2025 \u00b7 reference",
     "model_id": "Methotrexate_Yu2025_reference"
-   },
-   {
-    "label": "van_2024 \u00b7 reference",
-    "model_id": "Methotrexate_van2024_reference"
    },
    {
     "label": "Bischoff_1971 \u00b7 17_kg_dog",
@@ -19773,12 +19882,28 @@
     "model_id": "Methotrexate_Simon2013_mean_s_e"
    },
    {
+    "label": "Tan_2024 \u00b7 reference",
+    "model_id": "Methotrexate_Tan2024_reference"
+   },
+   {
+    "label": "van_2024 \u00b7 reference",
+    "model_id": "Methotrexate_van2024_reference"
+   },
+   {
     "label": "Jung_2024 \u00b7 reference",
     "model_id": "Methotrexate_Jung2024_reference"
    },
    {
     "label": "Rosario_2017 \u00b7 reference",
     "model_id": "Methotrexate_Rosario2017_reference"
+   },
+   {
+    "label": "Simon_2026 \u00b7 reference",
+    "model_id": "Methotrexate_Simon2026_reference"
+   },
+   {
+    "label": "Taylor_2021 \u00b7 reference",
+    "model_id": "Methotrexate_Taylor2021_reference"
    },
    {
     "label": "Wang_2019 \u00b7 reference",
@@ -19790,15 +19915,15 @@
    }
   ],
   "dir": "drug_methotrexate",
-  "extracted": 11,
-  "last_change": "2026-09-24T02:58:26.516232+00:00",
+  "extracted": 7,
+  "last_change": "2026-09-28T14:38:55.904530+00:00",
   "name": "methotrexate",
-  "needs_review": 11,
+  "needs_review": 13,
   "records": 26,
-  "rejected": 4,
+  "rejected": 6,
   "rendered": true,
   "slug": "methotrexate",
-  "stale": 12
+  "stale": 0
  },
  "drug_methoxamine": {
   "atc_codes": [
@@ -19928,7 +20053,7 @@
   ],
   "dir": "drug_methyldopa",
   "extracted": 0,
-  "last_change": "2026-09-27T19:37:31.623230+00:00",
+  "last_change": "2026-09-28T14:38:55.945693+00:00",
   "name": "Methyldopa",
   "needs_review": 0,
   "records": 1,
@@ -19955,7 +20080,7 @@
   ],
   "dir": "drug_methyldopa_levorotatory",
   "extracted": 0,
-  "last_change": "2026-09-27T21:38:29.982812+00:00",
+  "last_change": "2026-09-28T14:38:55.967919+00:00",
   "name": "methyldopa (levorotatory)",
   "needs_review": 0,
   "records": 1,
@@ -20048,7 +20173,7 @@
   ],
   "dir": "drug_methylphenidate",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:49.986893+00:00",
+  "last_change": "2026-09-28T14:38:56.003890+00:00",
   "name": "methylphenidate",
   "needs_review": 1,
   "records": 1,
@@ -20143,7 +20268,7 @@
   ],
   "dir": "drug_metildigoxin",
   "extracted": 0,
-  "last_change": "2026-09-20T16:02:34.504276+00:00",
+  "last_change": "2026-09-28T14:38:56.017457+00:00",
   "name": "metildigoxin",
   "needs_review": 0,
   "records": 1,
@@ -20178,7 +20303,7 @@
   ],
   "dir": "drug_metoclopramide",
   "extracted": 0,
-  "last_change": "2026-09-18T13:03:18.132453+00:00",
+  "last_change": "2026-09-28T14:38:56.111090+00:00",
   "name": "metoclopramide",
   "needs_review": 3,
   "records": 3,
@@ -20239,7 +20364,7 @@
   ],
   "dir": "drug_metoprolol",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:50.189086+00:00",
+  "last_change": "2026-09-28T14:39:00.188184+00:00",
   "name": "metoprolol",
   "needs_review": 2,
   "records": 2,
@@ -20266,7 +20391,7 @@
   ],
   "dir": "drug_metreleptin",
   "extracted": 0,
-  "last_change": "2026-09-27T15:27:37.876101+00:00",
+  "last_change": "2026-09-28T14:39:00.212192+00:00",
   "name": "metreleptin",
   "needs_review": 0,
   "records": 1,
@@ -20310,7 +20435,7 @@
   ],
   "dir": "drug_metronidazole",
   "extracted": 0,
-  "last_change": "2026-09-18T02:46:00.960572+00:00",
+  "last_change": "2026-09-28T14:39:00.224668+00:00",
   "name": "metronidazole",
   "needs_review": 0,
   "records": 1,
@@ -20337,7 +20462,7 @@
   ],
   "dir": "drug_mexiletine",
   "extracted": 1,
-  "last_change": "2026-09-20T17:45:56.796228+00:00",
+  "last_change": "2026-09-28T14:39:00.247265+00:00",
   "name": "mexiletine",
   "needs_review": 0,
   "records": 1,
@@ -20368,7 +20493,7 @@
   ],
   "dir": "drug_mianserin",
   "extracted": 1,
-  "last_change": "2026-09-24T01:32:23.281278+00:00",
+  "last_change": "2026-09-28T14:39:00.301098+00:00",
   "name": "mianserin",
   "needs_review": 0,
   "records": 2,
@@ -20400,7 +20525,7 @@
   ],
   "dir": "drug_miconazole",
   "extracted": 0,
-  "last_change": "2026-09-18T02:46:00.975298+00:00",
+  "last_change": "2026-09-28T14:39:00.315556+00:00",
   "name": "miconazole",
   "needs_review": 0,
   "records": 1,
@@ -20579,7 +20704,7 @@
   ],
   "dir": "drug_midazolam",
   "extracted": 11,
-  "last_change": "2026-09-27T15:47:41.195448+00:00",
+  "last_change": "2026-09-28T14:39:03.585417+00:00",
   "name": "midazolam",
   "needs_review": 11,
   "records": 39,
@@ -20724,7 +20849,7 @@
   ],
   "dir": "drug_milrinone",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:51.020627+00:00",
+  "last_change": "2026-09-28T14:39:03.694539+00:00",
   "name": "milrinone",
   "needs_review": 1,
   "records": 3,
@@ -20809,7 +20934,7 @@
   ],
   "dir": "drug_minocycline",
   "extracted": 2,
-  "last_change": "2026-09-18T02:46:01.058314+00:00",
+  "last_change": "2026-09-28T14:39:03.771572+00:00",
   "name": "minocycline",
   "needs_review": 1,
   "records": 4,
@@ -20881,7 +21006,7 @@
   ],
   "dir": "drug_mirtazapine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:51.078535+00:00",
+  "last_change": "2026-09-28T14:39:05.570777+00:00",
   "name": "mirtazapine",
   "needs_review": 0,
   "records": 1,
@@ -20910,7 +21035,7 @@
   ],
   "dir": "drug_misoprostol",
   "extracted": 0,
-  "last_change": "2026-09-18T07:51:26.566428+00:00",
+  "last_change": "2026-09-28T14:39:05.600109+00:00",
   "name": "misoprostol",
   "needs_review": 0,
   "records": 1,
@@ -20959,7 +21084,7 @@
   ],
   "dir": "drug_mitiglinide",
   "extracted": 0,
-  "last_change": "2026-09-18T19:43:59.217602+00:00",
+  "last_change": "2026-09-28T14:39:05.640642+00:00",
   "name": "mitiglinide",
   "needs_review": 1,
   "records": 1,
@@ -20990,7 +21115,7 @@
   ],
   "dir": "drug_moclobemide",
   "extracted": 0,
-  "last_change": "2026-09-24T01:32:23.343064+00:00",
+  "last_change": "2026-09-28T14:39:05.683249+00:00",
   "name": "moclobemide",
   "needs_review": 2,
   "records": 2,
@@ -21085,14 +21210,14 @@
   ],
   "dir": "drug_montelukast",
   "extracted": 1,
-  "last_change": "2026-09-24T17:00:47.030448+00:00",
+  "last_change": "2026-09-28T14:39:05.885549+00:00",
   "name": "montelukast",
   "needs_review": 2,
   "records": 7,
   "rejected": 4,
   "rendered": true,
   "slug": "montelukast",
-  "stale": 7
+  "stale": 0
  },
  "drug_moracizine": {
   "atc_codes": [
@@ -21139,7 +21264,7 @@
   ],
   "dir": "drug_morphine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:51.359038+00:00",
+  "last_change": "2026-09-28T14:39:05.938977+00:00",
   "name": "morphine",
   "needs_review": 2,
   "records": 2,
@@ -21263,7 +21388,7 @@
   ],
   "dir": "drug_moxifloxacin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:51.438347+00:00",
+  "last_change": "2026-09-28T14:39:06.029235+00:00",
   "name": "moxifloxacin",
   "needs_review": 1,
   "records": 3,
@@ -21291,7 +21416,7 @@
   ],
   "dir": "drug_moxonidine",
   "extracted": 1,
-  "last_change": "2026-09-27T21:38:30.034024+00:00",
+  "last_change": "2026-09-28T14:39:06.050397+00:00",
   "name": "moxonidine",
   "needs_review": 0,
   "records": 1,
@@ -21340,7 +21465,7 @@
   ],
   "dir": "drug_muzolimine",
   "extracted": 0,
-  "last_change": "2026-09-28T10:28:17.240443+00:00",
+  "last_change": "2026-09-28T14:39:06.066872+00:00",
   "name": "muzolimine",
   "needs_review": 0,
   "records": 1,
@@ -21401,7 +21526,7 @@
   ],
   "dir": "drug_nadroparin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:51.545565+00:00",
+  "last_change": "2026-09-28T14:39:06.185028+00:00",
   "name": "nadroparin",
   "needs_review": 3,
   "records": 4,
@@ -21468,7 +21593,7 @@
   ],
   "dir": "drug_nalbuphine",
   "extracted": 2,
-  "last_change": "2026-09-17T15:08:51.853542+00:00",
+  "last_change": "2026-09-28T14:39:06.506593+00:00",
   "name": "nalbuphine",
   "needs_review": 7,
   "records": 11,
@@ -21511,7 +21636,7 @@
   ],
   "dir": "drug_naldemedine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:52.090009+00:00",
+  "last_change": "2026-09-28T14:39:06.753064+00:00",
   "name": "naldemedine",
   "needs_review": 4,
   "records": 5,
@@ -21570,7 +21695,7 @@
   ],
   "dir": "drug_naloxone",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:52.142834+00:00",
+  "last_change": "2026-09-28T14:39:06.807460+00:00",
   "name": "naloxone",
   "needs_review": 0,
   "records": 1,
@@ -21601,21 +21726,21 @@
     "model_id": "Naltrexone_Dunbar2007_reference"
    },
    {
-    "label": "Li_1996 \u00b7 reference",
-    "model_id": "Naltrexone_Li1996_reference"
-   },
-   {
     "label": "Christie_2025 \u00b7 reference",
     "model_id": "Naltrexone_Christie2025_reference"
+   },
+   {
+    "label": "Li_1996 \u00b7 reference",
+    "model_id": "Naltrexone_Li1996_reference"
    }
   ],
   "dir": "drug_naltrexone",
   "extracted": 1,
-  "last_change": "2026-09-26T10:47:16.615964+00:00",
+  "last_change": "2026-09-28T14:39:11.203572+00:00",
   "name": "naltrexone",
-  "needs_review": 2,
+  "needs_review": 1,
   "records": 4,
-  "rejected": 1,
+  "rejected": 2,
   "rendered": true,
   "slug": "naltrexone",
   "stale": 0
@@ -21639,7 +21764,7 @@
   ],
   "dir": "drug_nandrolone",
   "extracted": 0,
-  "last_change": "2026-09-26T18:41:00.020061+00:00",
+  "last_change": "2026-09-28T14:39:11.225987+00:00",
   "name": "nandrolone",
   "needs_review": 0,
   "records": 1,
@@ -21672,7 +21797,7 @@
   ],
   "dir": "drug_naproxen",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:52.172811+00:00",
+  "last_change": "2026-09-28T14:39:11.248241+00:00",
   "name": "naproxen",
   "needs_review": 1,
   "records": 1,
@@ -21774,7 +21899,7 @@
   ],
   "dir": "drug_nebivolol",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:52.197659+00:00",
+  "last_change": "2026-09-28T14:39:11.288639+00:00",
   "name": "nebivolol",
   "needs_review": 1,
   "records": 1,
@@ -21801,7 +21926,7 @@
   ],
   "dir": "drug_nedosiran",
   "extracted": 0,
-  "last_change": "2026-09-27T15:27:37.935707+00:00",
+  "last_change": "2026-09-28T14:39:11.353546+00:00",
   "name": "nedosiran",
   "needs_review": 1,
   "records": 1,
@@ -21858,7 +21983,7 @@
   ],
   "dir": "drug_nefopam",
   "extracted": 1,
-  "last_change": "2026-09-21T16:58:45.322528+00:00",
+  "last_change": "2026-09-28T14:39:11.413659+00:00",
   "name": "nefopam",
   "needs_review": 1,
   "records": 3,
@@ -21927,7 +22052,7 @@
   ],
   "dir": "drug_neomycin",
   "extracted": 0,
-  "last_change": "2026-09-18T02:46:01.172766+00:00",
+  "last_change": "2026-09-28T14:39:11.498029+00:00",
   "name": "neomycin",
   "needs_review": 0,
   "records": 4,
@@ -21985,7 +22110,7 @@
   ],
   "dir": "drug_netilmicin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:52.439573+00:00",
+  "last_change": "2026-09-28T14:39:11.573574+00:00",
   "name": "netilmicin",
   "needs_review": 1,
   "records": 3,
@@ -22042,7 +22167,7 @@
   ],
   "dir": "drug_nicorandil",
   "extracted": 0,
-  "last_change": "2026-09-20T21:39:52.491806+00:00",
+  "last_change": "2026-09-28T14:39:11.669259+00:00",
   "name": "nicorandil",
   "needs_review": 3,
   "records": 3,
@@ -22113,7 +22238,7 @@
   ],
   "dir": "drug_nimustine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:52.576607+00:00",
+  "last_change": "2026-09-28T14:39:11.679438+00:00",
   "name": "nimustine",
   "needs_review": 0,
   "records": 1,
@@ -22211,7 +22336,7 @@
   ],
   "dir": "drug_nizatidine",
   "extracted": 0,
-  "last_change": "2026-09-18T07:51:26.582475+00:00",
+  "last_change": "2026-09-28T14:39:11.691578+00:00",
   "name": "nizatidine",
   "needs_review": 0,
   "records": 1,
@@ -22264,7 +22389,7 @@
   ],
   "dir": "drug_norepinephrine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:52.597825+00:00",
+  "last_change": "2026-09-28T14:39:11.753795+00:00",
   "name": "norepinephrine",
   "needs_review": 0,
   "records": 2,
@@ -22432,7 +22557,7 @@
   ],
   "dir": "drug_ofloxacin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:52.638577+00:00",
+  "last_change": "2026-09-28T14:39:11.808297+00:00",
   "name": "ofloxacin",
   "needs_review": 1,
   "records": 1,
@@ -22490,7 +22615,7 @@
   ],
   "dir": "drug_olanzapine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:52.719149+00:00",
+  "last_change": "2026-09-28T14:39:11.902257+00:00",
   "name": "olanzapine",
   "needs_review": 1,
   "records": 3,
@@ -22676,10 +22801,6 @@
     "model_id": "Omeprazole_Li2022_reference"
    },
    {
-    "label": "Lin_2018 \u00b7 reference",
-    "model_id": "Omeprazole_Lin2018_reference"
-   },
-   {
     "label": "Solana_2014 \u00b7 reference",
     "model_id": "Omeprazole_Solana2014_reference"
    },
@@ -22694,15 +22815,19 @@
    {
     "label": "Han_2025 \u00b7 reference",
     "model_id": "Omeprazole_Han2025_reference"
+   },
+   {
+    "label": "Lin_2018 \u00b7 reference",
+    "model_id": "Omeprazole_Lin2018_reference"
    }
   ],
   "dir": "drug_omeprazole",
   "extracted": 14,
-  "last_change": "2026-09-26T21:00:36.009384+00:00",
+  "last_change": "2026-09-28T14:39:16.028352+00:00",
   "name": "omeprazole",
-  "needs_review": 8,
+  "needs_review": 7,
   "records": 23,
-  "rejected": 1,
+  "rejected": 2,
   "rendered": true,
   "slug": "omeprazole",
   "stale": 0
@@ -22719,16 +22844,16 @@
   "curated": 0,
   "details": [
    {
+    "label": "Chiang_2021 \u00b7 estimate",
+    "model_id": "Ondansetron_Chiang2021_estimate"
+   },
+   {
     "label": "Chiang_2021_2 \u00b7 reference",
     "model_id": "Ondansetron_Chiang2021v2_reference"
    },
    {
     "label": "Landau_2026 \u00b7 reference",
     "model_id": "Ondansetron_Landau2026_reference"
-   },
-   {
-    "label": "Chiang_2021 \u00b7 estimate",
-    "model_id": "Ondansetron_Chiang2021_estimate"
    },
    {
     "label": "Baek_2015 \u00b7 reference",
@@ -22752,10 +22877,10 @@
    }
   ],
   "dir": "drug_ondansetron",
-  "extracted": 2,
-  "last_change": "2026-09-18T14:14:08.750812+00:00",
+  "extracted": 3,
+  "last_change": "2026-09-28T14:39:16.315796+00:00",
   "name": "ondansetron",
-  "needs_review": 1,
+  "needs_review": 0,
   "records": 8,
   "rejected": 5,
   "rendered": true,
@@ -22803,7 +22928,7 @@
   ],
   "dir": "drug_opium",
   "extracted": 0,
-  "last_change": "2026-09-22T04:51:07.461377+00:00",
+  "last_change": "2026-09-28T14:39:16.336688+00:00",
   "name": "opium",
   "needs_review": 0,
   "records": 1,
@@ -22910,7 +23035,7 @@
   ],
   "dir": "drug_ornithine",
   "extracted": 4,
-  "last_change": "2026-09-18T18:13:04.521815+00:00",
+  "last_change": "2026-09-28T14:39:16.690840+00:00",
   "name": "Ornithine",
   "needs_review": 1,
   "records": 5,
@@ -22941,7 +23066,7 @@
   ],
   "dir": "drug_ornithine_oxoglurate",
   "extracted": 0,
-  "last_change": "2026-09-18T18:13:04.558533+00:00",
+  "last_change": "2026-09-28T14:39:16.738431+00:00",
   "name": "ornithine oxoglurate",
   "needs_review": 1,
   "records": 2,
@@ -23052,7 +23177,7 @@
   ],
   "dir": "drug_oxcarbazepine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:53.722686+00:00",
+  "last_change": "2026-09-28T14:39:16.798082+00:00",
   "name": "oxcarbazepine",
   "needs_review": 1,
   "records": 5,
@@ -23133,7 +23258,7 @@
   ],
   "dir": "drug_oxycodone",
   "extracted": 1,
-  "last_change": "2026-09-17T15:08:53.772232+00:00",
+  "last_change": "2026-09-28T14:39:16.857480+00:00",
   "name": "oxycodone",
   "needs_review": 0,
   "records": 2,
@@ -23208,7 +23333,7 @@
   ],
   "dir": "drug_oxymorphone",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:53.822632+00:00",
+  "last_change": "2026-09-28T14:39:16.901948+00:00",
   "name": "oxymorphone",
   "needs_review": 1,
   "records": 2,
@@ -23286,7 +23411,7 @@
   ],
   "dir": "drug_oxytetracycline",
   "extracted": 0,
-  "last_change": "2026-09-18T04:15:21.829553+00:00",
+  "last_change": "2026-09-28T14:39:16.990327+00:00",
   "name": "oxytetracycline",
   "needs_review": 0,
   "records": 1,
@@ -23360,7 +23485,7 @@
   ],
   "dir": "drug_paclitaxel",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:54.243090+00:00",
+  "last_change": "2026-09-28T14:39:17.117428+00:00",
   "name": "paclitaxel",
   "needs_review": 1,
   "records": 7,
@@ -23385,25 +23510,25 @@
     "model_id": "Palivizumab_Li2021_reference"
    },
    {
-    "label": "Reuter_2019 \u00b7 reference",
-    "model_id": "Palivizumab_Reuter2019_reference"
-   },
-   {
     "label": "Robbie_2012 \u00b7 reference",
     "model_id": "Palivizumab_Robbie2012_reference"
    },
    {
     "label": "Madhi_2025 \u00b7 reference",
     "model_id": "Palivizumab_Madhi2025_reference"
+   },
+   {
+    "label": "Reuter_2019 \u00b7 reference",
+    "model_id": "Palivizumab_Reuter2019_reference"
    }
   ],
   "dir": "drug_palivizumab",
   "extracted": 1,
-  "last_change": "2026-09-23T12:15:48.719832+00:00",
+  "last_change": "2026-09-28T14:39:17.237393+00:00",
   "name": "palivizumab",
-  "needs_review": 2,
+  "needs_review": 1,
   "records": 4,
-  "rejected": 1,
+  "rejected": 2,
   "rendered": true,
   "slug": "palivizumab",
   "stale": 0
@@ -23438,7 +23563,7 @@
   ],
   "dir": "drug_palonosetron",
   "extracted": 0,
-  "last_change": "2026-09-18T14:14:08.833607+00:00",
+  "last_change": "2026-09-28T14:39:17.291822+00:00",
   "name": "palonosetron",
   "needs_review": 0,
   "records": 4,
@@ -23465,7 +23590,7 @@
   ],
   "dir": "drug_pantethine",
   "extracted": 0,
-  "last_change": "2026-09-22T01:57:17.012157+00:00",
+  "last_change": "2026-09-28T14:39:17.304034+00:00",
   "name": "pantethine",
   "needs_review": 0,
   "records": 1,
@@ -23528,7 +23653,7 @@
   ],
   "dir": "drug_pantoprazole",
   "extracted": 4,
-  "last_change": "2026-09-18T08:03:38.892604+00:00",
+  "last_change": "2026-09-28T14:39:23.065629+00:00",
   "name": "pantoprazole",
   "needs_review": 4,
   "records": 10,
@@ -23556,7 +23681,7 @@
   ],
   "dir": "drug_papaverine",
   "extracted": 0,
-  "last_change": "2026-09-18T10:06:27.072801+00:00",
+  "last_change": "2026-09-28T14:39:23.100728+00:00",
   "name": "papaverine",
   "needs_review": 1,
   "records": 1,
@@ -23606,10 +23731,6 @@
     "model_id": "Paracetamol_Brookhuis2021_kulo_et_al_15"
    },
    {
-    "label": "Brookhuis_2021 \u00b7 miners_et_al_28",
-    "model_id": "Paracetamol_Brookhuis2021_miners_et_al_28"
-   },
-   {
     "label": "Brookhuis_2021 \u00b7 nimmo_et_al_26",
     "model_id": "Paracetamol_Brookhuis2021_nimmo_et_al_26"
    },
@@ -23628,10 +23749,6 @@
    {
     "label": "Hannam_2018 \u00b7 reference",
     "model_id": "Paracetamol_Hannam2018_reference"
-   },
-   {
-    "label": "Holladay_2023 \u00b7 reference",
-    "model_id": "Paracetamol_Holladay2023_reference"
    },
    {
     "label": "Langeskov_2022 \u00b7 reference",
@@ -23668,15 +23785,23 @@
    {
     "label": "Brookhuis_2021 \u00b7 kulo_et_al_31",
     "model_id": "Paracetamol_Brookhuis2021_kulo_et_al_31"
+   },
+   {
+    "label": "Brookhuis_2021 \u00b7 miners_et_al_28",
+    "model_id": "Paracetamol_Brookhuis2021_miners_et_al_28"
+   },
+   {
+    "label": "Holladay_2023 \u00b7 reference",
+    "model_id": "Paracetamol_Holladay2023_reference"
    }
   ],
   "dir": "drug_paracetamol",
   "extracted": 2,
-  "last_change": "2026-09-27T15:47:36.010572+00:00",
+  "last_change": "2026-09-28T14:39:23.900517+00:00",
   "name": "paracetamol",
-  "needs_review": 14,
+  "needs_review": 12,
   "records": 22,
-  "rejected": 5,
+  "rejected": 7,
   "rendered": true,
   "slug": "paracetamol",
   "stale": 0
@@ -23752,7 +23877,7 @@
   ],
   "dir": "drug_paromomycin",
   "extracted": 0,
-  "last_change": "2026-09-22T02:28:01.451420+00:00",
+  "last_change": "2026-09-28T14:39:23.978100+00:00",
   "name": "paromomycin",
   "needs_review": 3,
   "records": 3,
@@ -23795,7 +23920,7 @@
   ],
   "dir": "drug_paroxetine",
   "extracted": 2,
-  "last_change": "2026-09-24T05:04:40.734779+00:00",
+  "last_change": "2026-09-28T14:39:24.153207+00:00",
   "name": "paroxetine",
   "needs_review": 1,
   "records": 5,
@@ -23844,7 +23969,7 @@
   ],
   "dir": "drug_peginesatide",
   "extracted": 0,
-  "last_change": "2026-09-19T01:48:42.500866+00:00",
+  "last_change": "2026-09-28T14:39:24.225026+00:00",
   "name": "peginesatide",
   "needs_review": 1,
   "records": 1,
@@ -23945,7 +24070,7 @@
   ],
   "dir": "drug_pemetrexed",
   "extracted": 2,
-  "last_change": "2026-09-17T15:08:56.092228+00:00",
+  "last_change": "2026-09-28T14:39:24.317266+00:00",
   "name": "pemetrexed",
   "needs_review": 1,
   "records": 3,
@@ -24062,7 +24187,7 @@
   ],
   "dir": "drug_perampanel",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:56.107900+00:00",
+  "last_change": "2026-09-28T14:39:24.346840+00:00",
   "name": "perampanel",
   "needs_review": 1,
   "records": 1,
@@ -24144,7 +24269,7 @@
   ],
   "dir": "drug_pethidine",
   "extracted": 3,
-  "last_change": "2026-09-20T23:20:33.001175+00:00",
+  "last_change": "2026-09-28T14:39:24.627693+00:00",
   "name": "pethidine",
   "needs_review": 3,
   "records": 9,
@@ -24193,7 +24318,7 @@
   ],
   "dir": "drug_phenacetin",
   "extracted": 0,
-  "last_change": "2026-09-21T16:58:45.343670+00:00",
+  "last_change": "2026-09-28T14:39:24.657130+00:00",
   "name": "phenacetin",
   "needs_review": 0,
   "records": 1,
@@ -24247,7 +24372,7 @@
   ],
   "dir": "drug_phenazone",
   "extracted": 0,
-  "last_change": "2026-09-21T16:58:45.380952+00:00",
+  "last_change": "2026-09-28T14:39:24.701468+00:00",
   "name": "phenazone",
   "needs_review": 2,
   "records": 2,
@@ -24393,7 +24518,7 @@
   ],
   "dir": "drug_phenobarbital",
   "extracted": 3,
-  "last_change": "2026-09-17T15:08:56.154245+00:00",
+  "last_change": "2026-09-28T14:39:24.770821+00:00",
   "name": "phenobarbital",
   "needs_review": 0,
   "records": 3,
@@ -24420,7 +24545,7 @@
   ],
   "dir": "drug_phenolphthalein",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:56.170585+00:00",
+  "last_change": "2026-09-28T14:39:24.788252+00:00",
   "name": "phenolphthalein",
   "needs_review": 0,
   "records": 1,
@@ -24580,7 +24705,7 @@
   ],
   "dir": "drug_phytomenadione",
   "extracted": 0,
-  "last_change": "2026-09-18T23:51:16.778153+00:00",
+  "last_change": "2026-09-28T14:39:24.811687+00:00",
   "name": "phytomenadione",
   "needs_review": 0,
   "records": 1,
@@ -24630,7 +24755,7 @@
   ],
   "dir": "drug_pinacidil",
   "extracted": 0,
-  "last_change": "2026-09-28T02:49:18.123125+00:00",
+  "last_change": "2026-09-28T14:39:24.823525+00:00",
   "name": "pinacidil",
   "needs_review": 0,
   "records": 1,
@@ -24683,7 +24808,7 @@
   ],
   "dir": "drug_pioglitazone",
   "extracted": 0,
-  "last_change": "2026-09-18T19:43:59.254313+00:00",
+  "last_change": "2026-09-28T14:39:24.874548+00:00",
   "name": "pioglitazone",
   "needs_review": 1,
   "records": 1,
@@ -24710,7 +24835,7 @@
   ],
   "dir": "drug_piprozolin",
   "extracted": 0,
-  "last_change": "2026-09-18T14:36:20.902506+00:00",
+  "last_change": "2026-09-28T14:39:24.885058+00:00",
   "name": "piprozolin",
   "needs_review": 0,
   "records": 1,
@@ -24741,7 +24866,7 @@
   ],
   "dir": "drug_pirenzepine",
   "extracted": 0,
-  "last_change": "2026-09-18T08:03:38.933576+00:00",
+  "last_change": "2026-09-28T14:39:24.915188+00:00",
   "name": "pirenzepine",
   "needs_review": 1,
   "records": 2,
@@ -24772,7 +24897,7 @@
   ],
   "dir": "drug_piretanide",
   "extracted": 0,
-  "last_change": "2026-09-28T10:28:17.277969+00:00",
+  "last_change": "2026-09-28T14:39:24.956423+00:00",
   "name": "piretanide",
   "needs_review": 1,
   "records": 2,
@@ -24815,7 +24940,7 @@
   ],
   "dir": "drug_piritramide",
   "extracted": 2,
-  "last_change": "2026-09-20T23:20:33.109525+00:00",
+  "last_change": "2026-09-28T14:39:25.067926+00:00",
   "name": "piritramide",
   "needs_review": 3,
   "records": 5,
@@ -24884,7 +25009,7 @@
   ],
   "dir": "drug_polymyxin_b",
   "extracted": 2,
-  "last_change": "2026-09-22T03:49:25.152522+00:00",
+  "last_change": "2026-09-28T14:39:25.293812+00:00",
   "name": "polymyxin B",
   "needs_review": 3,
   "records": 5,
@@ -24975,6 +25100,41 @@
   "slug": "potassium_acetate",
   "stale": 0
  },
+ "drug_potassium_canrenoate": {
+  "atc_codes": [
+   "C03DA02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 2
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Suyagh_2012 \u00b7 median",
+    "model_id": "PotassiumCanrenoate_Suyagh2012_median"
+   },
+   {
+    "label": "Suyagh_2013 \u00b7 reference",
+    "model_id": "PotassiumCanrenoate_Suyagh2013_reference"
+   },
+   {
+    "label": "Suyagh_2012 \u00b7 two_experimentally_determined_s_one_for_each_exponent_estimate",
+    "model_id": "PotassiumCanrenoate_Suyagh2012_two_experimentally_determined"
+   }
+  ],
+  "dir": "drug_potassium_canrenoate",
+  "extracted": 2,
+  "last_change": "2026-09-28T12:17:54.991148+00:00",
+  "name": "potassium canrenoate",
+  "needs_review": 1,
+  "records": 3,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "potassium_canrenoate",
+  "stale": 0
+ },
  "drug_potassium_chloride": {
   "atc_codes": [
    "A12BA01",
@@ -25010,7 +25170,7 @@
   ],
   "dir": "drug_potassium_chloride",
   "extracted": 0,
-  "last_change": "2026-09-26T14:00:26.787429+00:00",
+  "last_change": "2026-09-28T14:39:25.425454+00:00",
   "name": "potassium chloride",
   "needs_review": 0,
   "records": 5,
@@ -25227,7 +25387,7 @@
   ],
   "dir": "drug_prazosin",
   "extracted": 0,
-  "last_change": "2026-09-28T00:31:48.449546+00:00",
+  "last_change": "2026-09-28T14:39:25.500856+00:00",
   "name": "prazosin",
   "needs_review": 3,
   "records": 3,
@@ -25309,7 +25469,7 @@
   ],
   "dir": "drug_prednisolone",
   "extracted": 1,
-  "last_change": "2026-09-18T04:15:21.999317+00:00",
+  "last_change": "2026-09-28T15:42:51.282021+00:00",
   "name": "prednisolone",
   "needs_review": 1,
   "records": 5,
@@ -25349,7 +25509,7 @@
   ],
   "dir": "drug_prednisone",
   "extracted": 2,
-  "last_change": "2026-09-22T06:18:58.849920+00:00",
+  "last_change": "2026-09-28T15:42:57.339715+00:00",
   "name": "prednisone",
   "needs_review": 2,
   "records": 4,
@@ -25401,7 +25561,7 @@
   ],
   "dir": "drug_pregabalin",
   "extracted": 1,
-  "last_change": "2026-09-21T16:58:45.597170+00:00",
+  "last_change": "2026-09-28T14:39:26.032762+00:00",
   "name": "pregabalin",
   "needs_review": 2,
   "records": 7,
@@ -25450,7 +25610,7 @@
   ],
   "dir": "drug_prenylamine",
   "extracted": 0,
-  "last_change": "2026-09-27T15:58:36.677256+00:00",
+  "last_change": "2026-09-28T14:39:26.062593+00:00",
   "name": "prenylamine",
   "needs_review": 0,
   "records": 1,
@@ -25519,25 +25679,25 @@
     "model_id": "Procainamide_Grasela1984_reference"
    },
    {
-    "label": "Papich_1986 \u00b7 reference",
-    "model_id": "Procainamide_Papich1986_reference"
-   },
-   {
     "label": "Singh_1982 \u00b7 reference",
     "model_id": "Procainamide_Singh1982_reference"
    },
    {
     "label": "Kharidia_1996 \u00b7 reference",
     "model_id": "Procainamide_Kharidia1996_reference"
+   },
+   {
+    "label": "Papich_1986 \u00b7 reference",
+    "model_id": "Procainamide_Papich1986_reference"
    }
   ],
   "dir": "drug_procainamide",
   "extracted": 1,
-  "last_change": "2026-09-20T17:45:56.866707+00:00",
+  "last_change": "2026-09-28T14:39:30.041796+00:00",
   "name": "procainamide",
-  "needs_review": 2,
+  "needs_review": 1,
   "records": 4,
-  "rejected": 1,
+  "rejected": 2,
   "rendered": true,
   "slug": "procainamide",
   "stale": 0
@@ -25594,7 +25754,7 @@
   ],
   "dir": "drug_propacetamol",
   "extracted": 0,
-  "last_change": "2026-09-21T16:58:45.685367+00:00",
+  "last_change": "2026-09-28T14:39:30.150414+00:00",
   "name": "propacetamol",
   "needs_review": 1,
   "records": 4,
@@ -25629,7 +25789,7 @@
   ],
   "dir": "drug_propafenone",
   "extracted": 0,
-  "last_change": "2026-09-20T17:45:56.914750+00:00",
+  "last_change": "2026-09-28T14:39:30.210774+00:00",
   "name": "propafenone",
   "needs_review": 1,
   "records": 3,
@@ -25657,7 +25817,7 @@
   ],
   "dir": "drug_propantheline",
   "extracted": 0,
-  "last_change": "2026-09-18T10:25:02.581244+00:00",
+  "last_change": "2026-09-28T14:39:30.231572+00:00",
   "name": "propantheline",
   "needs_review": 1,
   "records": 1,
@@ -25742,7 +25902,7 @@
   ],
   "dir": "drug_protein_c",
   "extracted": 3,
-  "last_change": "2026-09-17T15:08:57.197421+00:00",
+  "last_change": "2026-09-28T14:39:30.591803+00:00",
   "name": "protein C",
   "needs_review": 5,
   "records": 10,
@@ -25791,7 +25951,7 @@
   ],
   "dir": "drug_protriptyline",
   "extracted": 0,
-  "last_change": "2026-09-24T05:04:40.753884+00:00",
+  "last_change": "2026-09-28T14:39:30.623393+00:00",
   "name": "protriptyline",
   "needs_review": 1,
   "records": 1,
@@ -25826,7 +25986,7 @@
   ],
   "dir": "drug_prucalopride",
   "extracted": 0,
-  "last_change": "2026-09-22T00:52:41.921357+00:00",
+  "last_change": "2026-09-28T14:39:30.712506+00:00",
   "name": "prucalopride",
   "needs_review": 0,
   "records": 3,
@@ -25935,7 +26095,7 @@
   ],
   "dir": "drug_quinidine",
   "extracted": 0,
-  "last_change": "2026-09-20T17:45:57.057754+00:00",
+  "last_change": "2026-09-28T14:39:30.898634+00:00",
   "name": "quinidine",
   "needs_review": 2,
   "records": 5,
@@ -25962,7 +26122,7 @@
   ],
   "dir": "drug_quinupramine",
   "extracted": 0,
-  "last_change": "2026-09-24T05:04:40.770724+00:00",
+  "last_change": "2026-09-28T14:39:30.937810+00:00",
   "name": "quinupramine",
   "needs_review": 0,
   "records": 1,
@@ -25993,7 +26153,7 @@
   ],
   "dir": "drug_rabeprazole",
   "extracted": 0,
-  "last_change": "2026-09-18T08:03:38.955821+00:00",
+  "last_change": "2026-09-28T14:39:30.964591+00:00",
   "name": "rabeprazole",
   "needs_review": 0,
   "records": 2,
@@ -26042,7 +26202,7 @@
   ],
   "dir": "drug_radium_223ra_dichloride",
   "extracted": 0,
-  "last_change": "2026-09-25T07:10:01.616335+00:00",
+  "last_change": "2026-09-28T14:39:31.000316+00:00",
   "name": "radium (223Ra) dichloride",
   "needs_review": 0,
   "records": 1,
@@ -26077,7 +26237,7 @@
   ],
   "dir": "drug_raltitrexed",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:57.452914+00:00",
+  "last_change": "2026-09-28T14:39:31.052499+00:00",
   "name": "raltitrexed",
   "needs_review": 3,
   "records": 3,
@@ -26105,7 +26265,7 @@
   ],
   "dir": "drug_ranitidine",
   "extracted": 1,
-  "last_change": "2026-09-18T08:03:38.980529+00:00",
+  "last_change": "2026-09-28T14:39:31.078369+00:00",
   "name": "ranitidine",
   "needs_review": 0,
   "records": 1,
@@ -26308,14 +26468,14 @@
   ],
   "dir": "drug_remdesivir",
   "extracted": 1,
-  "last_change": "2026-09-27T14:36:04.742933+00:00",
+  "last_change": "2026-09-28T14:39:31.583712+00:00",
   "name": "remdesivir",
   "needs_review": 7,
   "records": 12,
   "rejected": 2,
   "rendered": true,
   "slug": "remdesivir",
-  "stale": 1
+  "stale": 0
  },
  "drug_repaglinide": {
   "atc_codes": [
@@ -26336,7 +26496,7 @@
   ],
   "dir": "drug_repaglinide",
   "extracted": 0,
-  "last_change": "2026-09-18T19:43:59.265477+00:00",
+  "last_change": "2026-09-28T14:39:31.611769+00:00",
   "name": "repaglinide",
   "needs_review": 0,
   "records": 1,
@@ -26483,7 +26643,7 @@
   ],
   "dir": "drug_retinol",
   "extracted": 0,
-  "last_change": "2026-09-17T15:08:57.954627+00:00",
+  "last_change": "2026-09-28T14:39:31.670646+00:00",
   "name": "retinol",
   "needs_review": 2,
   "records": 2,
@@ -26533,7 +26693,7 @@
   ],
   "dir": "drug_riboflavin",
   "extracted": 0,
-  "last_change": "2026-09-22T01:57:17.020536+00:00",
+  "last_change": "2026-09-28T14:39:31.685999+00:00",
   "name": "riboflavin",
   "needs_review": 0,
   "records": 1,
@@ -26619,7 +26779,7 @@
   ],
   "dir": "drug_rifabutin",
   "extracted": 4,
-  "last_change": "2026-09-18T08:03:39.426084+00:00",
+  "last_change": "2026-09-28T14:39:32.100504+00:00",
   "name": "rifabutin",
   "needs_review": 1,
   "records": 10,
@@ -26677,7 +26837,7 @@
   ],
   "dir": "drug_rifaximin",
   "extracted": 1,
-  "last_change": "2026-09-22T03:49:25.224191+00:00",
+  "last_change": "2026-09-28T14:39:32.191739+00:00",
   "name": "rifaximin",
   "needs_review": 0,
   "records": 2,
@@ -26730,7 +26890,7 @@
   ],
   "dir": "drug_rimegepant",
   "extracted": 2,
-  "last_change": "2026-09-21T08:05:45.210884+00:00",
+  "last_change": "2026-09-28T14:39:32.269512+00:00",
   "name": "rimegepant",
   "needs_review": 0,
   "records": 2,
@@ -26773,12 +26933,12 @@
   "curated": 0,
   "details": [
    {
-    "label": "Saleh_2016 \u00b7 reference",
-    "model_id": "Riociguat_Saleh2016_reference"
-   },
-   {
     "label": "Saleh_2016_2 \u00b7 reference",
     "model_id": "Riociguat_Saleh2016v2_reference"
+   },
+   {
+    "label": "Saleh_2016 \u00b7 reference",
+    "model_id": "Riociguat_Saleh2016_reference"
    },
    {
     "label": "Michali\u010dkov\u00e1_2020 \u00b7 reference",
@@ -26787,9 +26947,9 @@
   ],
   "dir": "drug_riociguat",
   "extracted": 0,
-  "last_change": "2026-09-28T04:21:23.033237+00:00",
+  "last_change": "2026-09-28T14:39:36.910912+00:00",
   "name": "riociguat",
-  "needs_review": 2,
+  "needs_review": 1,
   "records": 3,
   "rejected": 1,
   "rendered": true,
@@ -26835,7 +26995,7 @@
   ],
   "dir": "drug_rivaroxaban",
   "extracted": 3,
-  "last_change": "2026-09-17T15:08:58.425595+00:00",
+  "last_change": "2026-09-28T14:39:39.438222+00:00",
   "name": "rivaroxaban",
   "needs_review": 3,
   "records": 6,
@@ -26878,10 +27038,6 @@
   "curated": 0,
   "details": [
    {
-    "label": "Wang_2019 \u00b7 reference",
-    "model_id": "Rolapitant_Wang2019_reference"
-   },
-   {
     "label": "Li_2026 \u00b7 fosrolapitant",
     "model_id": "Rolapitant_Li2026_fosrolapitant"
    },
@@ -26896,15 +27052,19 @@
    {
     "label": "Li_2026 \u00b7 rolapitant",
     "model_id": "Rolapitant_Li2026_rolapitant"
+   },
+   {
+    "label": "Wang_2019 \u00b7 reference",
+    "model_id": "Rolapitant_Wang2019_reference"
    }
   ],
   "dir": "drug_rolapitant",
   "extracted": 0,
-  "last_change": "2026-09-18T14:14:08.958772+00:00",
+  "last_change": "2026-09-28T14:39:43.237378+00:00",
   "name": "rolapitant",
-  "needs_review": 1,
+  "needs_review": 0,
   "records": 5,
-  "rejected": 4,
+  "rejected": 5,
   "rendered": true,
   "slug": "rolapitant",
   "stale": 0
@@ -26927,7 +27087,7 @@
   ],
   "dir": "drug_romiplostim",
   "extracted": 0,
-  "last_change": "2026-09-18T23:51:16.887411+00:00",
+  "last_change": "2026-09-28T14:39:43.381102+00:00",
   "name": "romiplostim",
   "needs_review": 0,
   "records": 1,
@@ -26964,7 +27124,7 @@
   ],
   "dir": "drug_rosiglitazone",
   "extracted": 0,
-  "last_change": "2026-09-18T19:43:59.328808+00:00",
+  "last_change": "2026-09-28T14:39:43.461459+00:00",
   "name": "rosiglitazone",
   "needs_review": 2,
   "records": 3,
@@ -27030,7 +27190,7 @@
   ],
   "dir": "drug_rosuvastatin",
   "extracted": 5,
-  "last_change": "2026-09-18T19:43:59.603017+00:00",
+  "last_change": "2026-09-28T14:39:43.772102+00:00",
   "name": "rosuvastatin",
   "needs_review": 3,
   "records": 8,
@@ -27089,7 +27249,7 @@
   ],
   "dir": "drug_roxadustat",
   "extracted": 0,
-  "last_change": "2026-09-19T01:48:43.307605+00:00",
+  "last_change": "2026-09-28T14:40:24.544286+00:00",
   "name": "roxadustat",
   "needs_review": 9,
   "records": 9,
@@ -27116,7 +27276,7 @@
   ],
   "dir": "drug_roxatidine",
   "extracted": 0,
-  "last_change": "2026-09-18T08:03:39.452764+00:00",
+  "last_change": "2026-09-28T14:40:24.621026+00:00",
   "name": "roxatidine",
   "needs_review": 1,
   "records": 1,
@@ -27220,14 +27380,14 @@
   ],
   "dir": "drug_salbutamol",
   "extracted": 2,
-  "last_change": "2026-09-24T04:46:52.795659+00:00",
+  "last_change": "2026-09-28T14:40:28.915529+00:00",
   "name": "salbutamol",
   "needs_review": 3,
   "records": 8,
   "rejected": 3,
   "rendered": true,
   "slug": "salbutamol",
-  "stale": 8
+  "stale": 0
  },
  "drug_salicylamide": {
   "atc_codes": [
@@ -27321,7 +27481,7 @@
   ],
   "dir": "drug_sapropterin",
   "extracted": 0,
-  "last_change": "2026-09-27T11:12:32.397357+00:00",
+  "last_change": "2026-09-28T14:40:29.013070+00:00",
   "name": "sapropterin",
   "needs_review": 1,
   "records": 3,
@@ -27378,7 +27538,7 @@
   ],
   "dir": "drug_saxagliptin",
   "extracted": 0,
-  "last_change": "2026-09-18T19:43:59.671402+00:00",
+  "last_change": "2026-09-28T14:40:29.082400+00:00",
   "name": "saxagliptin",
   "needs_review": 1,
   "records": 1,
@@ -27415,7 +27575,7 @@
   ],
   "dir": "drug_scopolamine",
   "extracted": 1,
-  "last_change": "2026-09-18T14:14:09.038795+00:00",
+  "last_change": "2026-09-28T14:40:29.135483+00:00",
   "name": "scopolamine",
   "needs_review": 2,
   "records": 3,
@@ -27508,7 +27668,7 @@
   ],
   "dir": "drug_semaglutide",
   "extracted": 8,
-  "last_change": "2026-09-27T11:20:02.429929+00:00",
+  "last_change": "2026-09-28T14:40:29.859867+00:00",
   "name": "semaglutide",
   "needs_review": 1,
   "records": 12,
@@ -27601,7 +27761,7 @@
   ],
   "dir": "drug_serelaxin",
   "extracted": 0,
-  "last_change": "2026-09-27T15:58:36.690789+00:00",
+  "last_change": "2026-09-28T14:40:29.891201+00:00",
   "name": "serelaxin",
   "needs_review": 0,
   "records": 1,
@@ -27648,7 +27808,7 @@
   ],
   "dir": "drug_sertraline",
   "extracted": 2,
-  "last_change": "2026-09-24T05:04:40.947022+00:00",
+  "last_change": "2026-09-28T14:40:30.079705+00:00",
   "name": "sertraline",
   "needs_review": 4,
   "records": 6,
@@ -27797,11 +27957,11 @@
   ],
   "dir": "drug_simvastatin",
   "extracted": 6,
-  "last_change": "2026-09-26T21:01:03.110091+00:00",
+  "last_change": "2026-09-28T14:40:31.232445+00:00",
   "name": "simvastatin",
-  "needs_review": 3,
+  "needs_review": 2,
   "records": 14,
-  "rejected": 5,
+  "rejected": 6,
   "rendered": true,
   "slug": "simvastatin",
   "stale": 0
@@ -27897,7 +28057,7 @@
   ],
   "dir": "drug_sodium_benzoate",
   "extracted": 0,
-  "last_change": "2026-09-27T11:12:32.408516+00:00",
+  "last_change": "2026-09-28T14:40:31.263712+00:00",
   "name": "sodium benzoate",
   "needs_review": 0,
   "records": 1,
@@ -27994,7 +28154,7 @@
   ],
   "dir": "drug_sodium_fluoride",
   "extracted": 0,
-  "last_change": "2026-09-18T04:15:22.025611+00:00",
+  "last_change": "2026-09-28T14:40:31.296942+00:00",
   "name": "sodium fluoride",
   "needs_review": 0,
   "records": 1,
@@ -28044,7 +28204,7 @@
   ],
   "dir": "drug_sodium_monofluorophosphate",
   "extracted": 0,
-  "last_change": "2026-09-18T04:15:22.045864+00:00",
+  "last_change": "2026-09-28T14:40:31.322834+00:00",
   "name": "sodium monofluorophosphate",
   "needs_review": 0,
   "records": 1,
@@ -28102,7 +28262,7 @@
   ],
   "dir": "drug_sodium_phenylbutyrate",
   "extracted": 1,
-  "last_change": "2026-09-27T11:12:32.452681+00:00",
+  "last_change": "2026-09-28T14:40:31.381083+00:00",
   "name": "sodium phenylbutyrate",
   "needs_review": 1,
   "records": 3,
@@ -28184,7 +28344,7 @@
   ],
   "dir": "drug_sodium_salicylate",
   "extracted": 1,
-  "last_change": "2026-09-21T03:37:23.510838+00:00",
+  "last_change": "2026-09-28T14:40:31.562946+00:00",
   "name": "sodium salicylate",
   "needs_review": 2,
   "records": 3,
@@ -28242,7 +28402,7 @@
   ],
   "dir": "drug_sodium_selenite",
   "extracted": 0,
-  "last_change": "2026-09-26T18:53:56.689219+00:00",
+  "last_change": "2026-09-28T14:40:31.645120+00:00",
   "name": "sodium selenite",
   "needs_review": 2,
   "records": 3,
@@ -28321,7 +28481,7 @@
   ],
   "dir": "drug_sorbitol",
   "extracted": 0,
-  "last_change": "2026-09-22T00:52:41.938674+00:00",
+  "last_change": "2026-09-28T14:40:31.673100+00:00",
   "name": "sorbitol",
   "needs_review": 0,
   "records": 2,
@@ -28394,6 +28554,37 @@
   "rejected": 0,
   "rendered": true,
   "slug": "sparteine",
+  "stale": 0
+ },
+ "drug_spironolactone": {
+  "atc_codes": [
+   "C03DA01"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Lass_2024 \u00b7 value_2",
+    "model_id": "Spironolactone_Lass2024_value_2"
+   },
+   {
+    "label": "Lass_2024 \u00b7 value_1",
+    "model_id": "Spironolactone_Lass2024_value_1"
+   }
+  ],
+  "dir": "drug_spironolactone",
+  "extracted": 1,
+  "last_change": "2026-09-28T14:49:29.683184+00:00",
+  "name": "spironolactone",
+  "needs_review": 1,
+  "records": 2,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "spironolactone",
   "stale": 0
  },
  "drug_stannous_fluoride": {
@@ -28504,7 +28695,7 @@
   ],
   "dir": "drug_streptomycin",
   "extracted": 0,
-  "last_change": "2026-09-22T03:49:25.244081+00:00",
+  "last_change": "2026-09-28T14:40:31.706498+00:00",
   "name": "streptomycin",
   "needs_review": 1,
   "records": 1,
@@ -28553,7 +28744,7 @@
   ],
   "dir": "drug_strontium_89sr_chloride",
   "extracted": 0,
-  "last_change": "2026-09-25T07:10:01.183340+00:00",
+  "last_change": "2026-09-28T14:40:31.717399+00:00",
   "name": "strontium (89Sr) chloride",
   "needs_review": 0,
   "records": 1,
@@ -28706,7 +28897,7 @@
   ],
   "dir": "drug_sumatriptan",
   "extracted": 0,
-  "last_change": "2026-09-21T08:05:45.321484+00:00",
+  "last_change": "2026-09-28T14:40:31.819649+00:00",
   "name": "sumatriptan",
   "needs_review": 2,
   "records": 4,
@@ -28781,7 +28972,7 @@
   ],
   "dir": "drug_tadalafil",
   "extracted": 0,
-  "last_change": "2026-09-28T04:21:23.072681+00:00",
+  "last_change": "2026-09-28T14:40:31.867225+00:00",
   "name": "tadalafil",
   "needs_review": 0,
   "records": 1,
@@ -28802,10 +28993,6 @@
   "curated": 0,
   "details": [
    {
-    "label": "Dilli_2022 \u00b7 reference",
-    "model_id": "Tamoxifen_Dilli2022_reference"
-   },
-   {
     "label": "Xu_2026 \u00b7 reference",
     "model_id": "Tamoxifen_Xu2026_reference"
    },
@@ -28818,6 +29005,10 @@
     "model_id": "Tamoxifen_Centanni2024_reference"
    },
    {
+    "label": "Dilli_2022 \u00b7 reference",
+    "model_id": "Tamoxifen_Dilli2022_reference"
+   },
+   {
     "label": "Mc_2024 \u00b7 reference",
     "model_id": "Tamoxifen_Mc2024_reference"
    },
@@ -28827,15 +29018,15 @@
    }
   ],
   "dir": "drug_tamoxifen",
-  "extracted": 2,
-  "last_change": "2026-09-27T13:13:37.340337+00:00",
+  "extracted": 1,
+  "last_change": "2026-09-28T14:40:39.498203+00:00",
   "name": "tamoxifen",
   "needs_review": 1,
   "records": 6,
-  "rejected": 3,
+  "rejected": 4,
   "rendered": true,
   "slug": "tamoxifen",
-  "stale": 3
+  "stale": 0
  },
  "drug_tanezumab": {
   "atc_codes": [
@@ -28859,7 +29050,7 @@
   ],
   "dir": "drug_tanezumab",
   "extracted": 0,
-  "last_change": "2026-09-21T03:37:23.567972+00:00",
+  "last_change": "2026-09-28T14:40:39.555358+00:00",
   "name": "tanezumab",
   "needs_review": 0,
   "records": 2,
@@ -28898,7 +29089,7 @@
   ],
   "dir": "drug_tapentadol",
   "extracted": 1,
-  "last_change": "2026-09-26T21:01:08.343224+00:00",
+  "last_change": "2026-09-28T14:40:39.724573+00:00",
   "name": "tapentadol",
   "needs_review": 2,
   "records": 4,
@@ -28989,7 +29180,7 @@
   ],
   "dir": "drug_teduglutide",
   "extracted": 0,
-  "last_change": "2026-09-27T11:47:47.134556+00:00",
+  "last_change": "2026-09-28T14:40:39.737137+00:00",
   "name": "teduglutide",
   "needs_review": 1,
   "records": 1,
@@ -29018,20 +29209,8 @@
     "model_id": "Tegafur_Comets2003_western_analysis"
    },
    {
-    "label": "Kim_2017 \u00b7 multiple_dose",
-    "model_id": "Tegafur_Kim2017_multiple_dose"
-   },
-   {
-    "label": "Kim_2017 \u00b7 parameter",
-    "model_id": "Tegafur_Kim2017_parameter"
-   },
-   {
     "label": "Kim_2017 \u00b7 population_mean_bsv",
     "model_id": "Tegafur_Kim2017_population_mean_bsv"
-   },
-   {
-    "label": "Kim_2017 \u00b7 single_dose",
-    "model_id": "Tegafur_Kim2017_single_dose"
    },
    {
     "label": "Kim_2017 \u00b7 symbol",
@@ -29048,15 +29227,27 @@
    {
     "label": "Hirose_2010 \u00b7 population_mean",
     "model_id": "Tegafur_Hirose2010_population_mean"
+   },
+   {
+    "label": "Kim_2017 \u00b7 multiple_dose",
+    "model_id": "Tegafur_Kim2017_multiple_dose"
+   },
+   {
+    "label": "Kim_2017 \u00b7 parameter",
+    "model_id": "Tegafur_Kim2017_parameter"
+   },
+   {
+    "label": "Kim_2017 \u00b7 single_dose",
+    "model_id": "Tegafur_Kim2017_single_dose"
    }
   ],
   "dir": "drug_tegafur",
   "extracted": 0,
-  "last_change": "2026-09-17T15:09:03.325840+00:00",
+  "last_change": "2026-09-28T14:41:29.030510+00:00",
   "name": "tegafur",
-  "needs_review": 8,
+  "needs_review": 5,
   "records": 10,
-  "rejected": 2,
+  "rejected": 5,
   "rendered": true,
   "slug": "tegafur",
   "stale": 0
@@ -29110,7 +29301,7 @@
   ],
   "dir": "drug_tegoprazan",
   "extracted": 0,
-  "last_change": "2026-09-18T09:09:53.765944+00:00",
+  "last_change": "2026-09-28T14:41:29.144811+00:00",
   "name": "tegoprazan",
   "needs_review": 3,
   "records": 3,
@@ -29138,16 +29329,8 @@
     "model_id": "Telmisartan_Chae2018_reference"
    },
    {
-    "label": "Hao_2007 \u00b7 reference",
-    "model_id": "Telmisartan_Hao2007_reference"
-   },
-   {
     "label": "Jeong_2025 \u00b7 reference",
     "model_id": "Telmisartan_Jeong2025_reference"
-   },
-   {
-    "label": "Petersen_2024 \u00b7 reference",
-    "model_id": "Telmisartan_Petersen2024_reference"
    },
    {
     "label": "Huang_2019 \u00b7 reference",
@@ -29156,6 +29339,10 @@
    {
     "label": "Ieiri_2011 \u00b7 reference",
     "model_id": "Telmisartan_Ieiri2011_reference"
+   },
+   {
+    "label": "Petersen_2024 \u00b7 reference",
+    "model_id": "Telmisartan_Petersen2024_reference"
    },
    {
     "label": "Tatami_2003 \u00b7 estimated_parameters",
@@ -29174,6 +29361,10 @@
     "model_id": "Telmisartan_Tatami2003_hypothesized_value"
    },
    {
+    "label": "Hao_2007 \u00b7 reference",
+    "model_id": "Telmisartan_Hao2007_reference"
+   },
+   {
     "label": "Liu_2023 \u00b7 reference",
     "model_id": "Telmisartan_Liu2023_reference"
    },
@@ -29183,15 +29374,15 @@
    }
   ],
   "dir": "drug_telmisartan",
-  "extracted": 4,
-  "last_change": "2026-09-27T15:47:37.085615+00:00",
+  "extracted": 2,
+  "last_change": "2026-09-28T14:41:35.971671+00:00",
   "name": "telmisartan",
-  "needs_review": 6,
+  "needs_review": 7,
   "records": 12,
-  "rejected": 2,
+  "rejected": 3,
   "rendered": true,
   "slug": "telmisartan",
-  "stale": 1
+  "stale": 0
  },
  "drug_temozolomide": {
   "atc_codes": [
@@ -29211,7 +29402,7 @@
   ],
   "dir": "drug_temozolomide",
   "extracted": 0,
-  "last_change": "2026-09-17T15:09:04.810599+00:00",
+  "last_change": "2026-09-28T14:41:36.035544+00:00",
   "name": "temozolomide",
   "needs_review": 0,
   "records": 1,
@@ -29260,7 +29451,7 @@
   ],
   "dir": "drug_tenecteplase",
   "extracted": 0,
-  "last_change": "2026-09-17T15:09:04.856233+00:00",
+  "last_change": "2026-09-28T14:41:36.052011+00:00",
   "name": "tenecteplase",
   "needs_review": 0,
   "records": 1,
@@ -29400,7 +29591,7 @@
   ],
   "dir": "drug_tetracycline",
   "extracted": 7,
-  "last_change": "2026-09-18T04:15:22.242269+00:00",
+  "last_change": "2026-09-28T14:41:36.387276+00:00",
   "name": "tetracycline",
   "needs_review": 0,
   "records": 8,
@@ -29526,7 +29717,7 @@
   ],
   "dir": "drug_thioctic_acid",
   "extracted": 0,
-  "last_change": "2026-09-27T11:47:47.146796+00:00",
+  "last_change": "2026-09-28T14:41:36.409720+00:00",
   "name": "thioctic acid",
   "needs_review": 0,
   "records": 1,
@@ -29645,11 +29836,11 @@
   ],
   "dir": "drug_tianeptine",
   "extracted": 0,
-  "last_change": "2026-09-24T05:04:41.041412+00:00",
+  "last_change": "2026-09-28T14:41:46.785986+00:00",
   "name": "tianeptine",
-  "needs_review": 4,
+  "needs_review": 2,
   "records": 4,
-  "rejected": 0,
+  "rejected": 2,
   "rendered": true,
   "slug": "tianeptine",
   "stale": 0
@@ -29670,21 +29861,21 @@
     "model_id": "Ticagrelor_Henrich2021_reference"
    },
    {
-    "label": "Kathman_2022 \u00b7 reference",
-    "model_id": "Ticagrelor_Kathman2022_reference"
-   },
-   {
     "label": "\u00c5strand_2019 \u00b7 reference",
     "model_id": "Ticagrelor_strand2019_reference"
+   },
+   {
+    "label": "Kathman_2022 \u00b7 reference",
+    "model_id": "Ticagrelor_Kathman2022_reference"
    }
   ],
   "dir": "drug_ticagrelor",
   "extracted": 1,
-  "last_change": "2026-09-26T21:01:14.257179+00:00",
+  "last_change": "2026-09-28T14:41:49.457412+00:00",
   "name": "ticagrelor",
-  "needs_review": 0,
+  "needs_review": 1,
   "records": 3,
-  "rejected": 2,
+  "rejected": 1,
   "rendered": true,
   "slug": "ticagrelor",
   "stale": 0
@@ -29711,7 +29902,7 @@
   ],
   "dir": "drug_ticlopidine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:09:05.795772+00:00",
+  "last_change": "2026-09-28T14:41:49.519513+00:00",
   "name": "ticlopidine",
   "needs_review": 0,
   "records": 2,
@@ -29783,7 +29974,7 @@
   ],
   "dir": "drug_tilidine",
   "extracted": 0,
-  "last_change": "2026-09-20T23:20:33.310512+00:00",
+  "last_change": "2026-09-28T14:41:49.533780+00:00",
   "name": "tilidine",
   "needs_review": 0,
   "records": 1,
@@ -29839,7 +30030,7 @@
   ],
   "dir": "drug_tinzaparin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:09:05.862218+00:00",
+  "last_change": "2026-09-28T14:41:49.551139+00:00",
   "name": "tinzaparin",
   "needs_review": 1,
   "records": 1,
@@ -29874,7 +30065,7 @@
   ],
   "dir": "drug_tioguanine",
   "extracted": 1,
-  "last_change": "2026-09-17T15:09:06.018005+00:00",
+  "last_change": "2026-09-28T14:41:49.627900+00:00",
   "name": "tioguanine",
   "needs_review": 1,
   "records": 3,
@@ -29976,7 +30167,7 @@
   ],
   "dir": "drug_tiropramide",
   "extracted": 0,
-  "last_change": "2026-09-18T10:25:02.754119+00:00",
+  "last_change": "2026-09-28T14:41:49.759937+00:00",
   "name": "tiropramide",
   "needs_review": 2,
   "records": 2,
@@ -30003,7 +30194,7 @@
   ],
   "dir": "drug_tirzepatide",
   "extracted": 0,
-  "last_change": "2026-09-17T15:09:07.120751+00:00",
+  "last_change": "2026-09-28T14:41:49.782250+00:00",
   "name": "tirzepatide",
   "needs_review": 0,
   "records": 1,
@@ -30053,7 +30244,7 @@
   ],
   "dir": "drug_tocainide",
   "extracted": 0,
-  "last_change": "2026-09-20T17:45:57.077998+00:00",
+  "last_change": "2026-09-28T14:41:49.803475+00:00",
   "name": "tocainide",
   "needs_review": 1,
   "records": 1,
@@ -30102,7 +30293,7 @@
   ],
   "dir": "drug_tocopherol",
   "extracted": 0,
-  "last_change": "2026-09-22T01:57:17.043005+00:00",
+  "last_change": "2026-09-28T14:41:49.836841+00:00",
   "name": "Tocopherol",
   "needs_review": 0,
   "records": 1,
@@ -30133,7 +30324,7 @@
   ],
   "dir": "drug_tocopherol_vit_e",
   "extracted": 0,
-  "last_change": "2026-09-22T01:57:17.091838+00:00",
+  "last_change": "2026-09-28T14:41:49.907787+00:00",
   "name": "tocopherol (vit E)",
   "needs_review": 0,
   "records": 2,
@@ -30188,7 +30379,7 @@
   ],
   "dir": "drug_tolbutamide",
   "extracted": 0,
-  "last_change": "2026-09-17T15:09:07.143576+00:00",
+  "last_change": "2026-09-28T14:41:49.934473+00:00",
   "name": "tolbutamide",
   "needs_review": 1,
   "records": 1,
@@ -30219,7 +30410,7 @@
   ],
   "dir": "drug_toloxatone",
   "extracted": 1,
-  "last_change": "2026-09-24T05:04:41.076329+00:00",
+  "last_change": "2026-09-28T14:41:49.971667+00:00",
   "name": "toloxatone",
   "needs_review": 0,
   "records": 2,
@@ -30284,7 +30475,7 @@
   ],
   "dir": "drug_tolvaptan",
   "extracted": 2,
-  "last_change": "2026-09-27T11:20:02.796987+00:00",
+  "last_change": "2026-09-28T14:41:50.332340+00:00",
   "name": "tolvaptan",
   "needs_review": 3,
   "records": 5,
@@ -30320,7 +30511,7 @@
   ],
   "dir": "drug_topiramate",
   "extracted": 0,
-  "last_change": "2026-09-26T10:47:16.705204+00:00",
+  "last_change": "2026-09-28T14:41:50.442359+00:00",
   "name": "topiramate",
   "needs_review": 2,
   "records": 3,
@@ -30347,7 +30538,7 @@
   ],
   "dir": "drug_topotecan",
   "extracted": 0,
-  "last_change": "2026-09-17T15:09:07.569083+00:00",
+  "last_change": "2026-09-28T14:41:50.475095+00:00",
   "name": "topotecan",
   "needs_review": 1,
   "records": 1,
@@ -30374,7 +30565,7 @@
   ],
   "dir": "drug_torasemide",
   "extracted": 0,
-  "last_change": "2026-09-28T10:28:17.294498+00:00",
+  "last_change": "2026-09-28T14:41:50.492706+00:00",
   "name": "torasemide",
   "needs_review": 1,
   "records": 1,
@@ -30441,10 +30632,6 @@
     "model_id": "Tramadol_Yoo2022_reference"
    },
    {
-    "label": "Allegaert_2015 \u00b7 reference",
-    "model_id": "Tramadol_Allegaert2015_reference"
-   },
-   {
     "label": "Bao_2023 \u00b7 reference",
     "model_id": "Tramadol_Bao2023_reference"
    },
@@ -30457,20 +30644,8 @@
     "model_id": "Tramadol_Elghazali2008_reference"
    },
    {
-    "label": "Garrido_2006 \u00b7 reference",
-    "model_id": "Tramadol_Garrido2006_reference"
-   },
-   {
     "label": "Hannam_2018 \u00b7 reference",
     "model_id": "Tramadol_Hannam2018_reference"
-   },
-   {
-    "label": "Healy_2025 \u00b7 reference",
-    "model_id": "Tramadol_Healy2025_reference"
-   },
-   {
-    "label": "Pypendop_2008 \u00b7 reference",
-    "model_id": "Tramadol_Pypendop2008_reference"
    },
    {
     "label": "Soria-Chacartegui_2026 \u00b7 reference",
@@ -30489,25 +30664,41 @@
     "model_id": "Tramadol_Allegaert2014v2_reference"
    },
    {
+    "label": "Allegaert_2015 \u00b7 reference",
+    "model_id": "Tramadol_Allegaert2015_reference"
+   },
+   {
     "label": "Chun_2025 \u00b7 reference",
     "model_id": "Tramadol_Chun2025_reference"
+   },
+   {
+    "label": "Garrido_2006 \u00b7 reference",
+    "model_id": "Tramadol_Garrido2006_reference"
    },
    {
     "label": "Giorgi_2010 \u00b7 reference",
     "model_id": "Tramadol_Giorgi2010_reference"
    },
    {
+    "label": "Healy_2025 \u00b7 reference",
+    "model_id": "Tramadol_Healy2025_reference"
+   },
+   {
     "label": "Itami_2016 \u00b7 reference",
     "model_id": "Tramadol_Itami2016_reference"
+   },
+   {
+    "label": "Pypendop_2008 \u00b7 reference",
+    "model_id": "Tramadol_Pypendop2008_reference"
    }
   ],
   "dir": "drug_tramadol",
   "extracted": 3,
-  "last_change": "2026-09-26T21:01:39.567560+00:00",
+  "last_change": "2026-09-28T14:42:00.655841+00:00",
   "name": "tramadol",
-  "needs_review": 9,
+  "needs_review": 5,
   "records": 18,
-  "rejected": 6,
+  "rejected": 10,
   "rendered": true,
   "slug": "tramadol",
   "stale": 0
@@ -30578,7 +30769,7 @@
   ],
   "dir": "drug_tranexamic_acid",
   "extracted": 0,
-  "last_change": "2026-09-17T15:09:09.726364+00:00",
+  "last_change": "2026-09-28T14:42:01.163022+00:00",
   "name": "tranexamic acid",
   "needs_review": 9,
   "records": 13,
@@ -30653,7 +30844,7 @@
   ],
   "dir": "drug_trazodone",
   "extracted": 2,
-  "last_change": "2026-09-24T21:55:14.548018+00:00",
+  "last_change": "2026-09-28T14:42:01.218768+00:00",
   "name": "trazodone",
   "needs_review": 0,
   "records": 2,
@@ -30688,7 +30879,7 @@
   ],
   "dir": "drug_treosulfan",
   "extracted": 0,
-  "last_change": "2026-09-17T15:09:09.822709+00:00",
+  "last_change": "2026-09-28T14:42:01.288982+00:00",
   "name": "treosulfan",
   "needs_review": 0,
   "records": 3,
@@ -30755,13 +30946,44 @@
   ],
   "dir": "drug_triamcinolone",
   "extracted": 0,
-  "last_change": "2026-09-18T04:15:22.292285+00:00",
+  "last_change": "2026-09-28T14:42:01.345958+00:00",
   "name": "triamcinolone",
   "needs_review": 0,
   "records": 3,
   "rejected": 3,
   "rendered": true,
   "slug": "triamcinolone",
+  "stale": 0
+ },
+ "drug_triamterene": {
+  "atc_codes": [
+   "C03DB02"
+  ],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Hamid_2000 \u00b7 reference",
+    "model_id": "Triamterene_Hamid2000_reference"
+   },
+   {
+    "label": "Diembeck_1982 \u00b7 reference",
+    "model_id": "Triamterene_Diembeck1982_reference"
+   }
+  ],
+  "dir": "drug_triamterene",
+  "extracted": 0,
+  "last_change": "2026-09-28T15:00:45.119544+00:00",
+  "name": "triamterene",
+  "needs_review": 1,
+  "records": 2,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "triamterene",
   "stale": 0
  },
  "drug_trichlormethiazide": {
@@ -30836,7 +31058,7 @@
   ],
   "dir": "drug_triflusal",
   "extracted": 0,
-  "last_change": "2026-09-17T15:09:09.903316+00:00",
+  "last_change": "2026-09-28T14:42:06.061800+00:00",
   "name": "triflusal",
   "needs_review": 1,
   "records": 3,
@@ -30889,7 +31111,7 @@
   ],
   "dir": "drug_trimazosin",
   "extracted": 0,
-  "last_change": "2026-09-28T00:31:48.477523+00:00",
+  "last_change": "2026-09-28T14:42:06.096671+00:00",
   "name": "trimazosin",
   "needs_review": 1,
   "records": 2,
@@ -31076,7 +31298,7 @@
   ],
   "dir": "drug_trospium",
   "extracted": 0,
-  "last_change": "2026-09-18T11:17:11.525049+00:00",
+  "last_change": "2026-09-28T14:42:06.147110+00:00",
   "name": "trospium",
   "needs_review": 2,
   "records": 2,
@@ -31170,7 +31392,7 @@
   ],
   "dir": "drug_ubidecarenone",
   "extracted": 0,
-  "last_change": "2026-09-27T18:47:06.472180+00:00",
+  "last_change": "2026-09-28T14:42:06.167366+00:00",
   "name": "ubidecarenone",
   "needs_review": 0,
   "records": 1,
@@ -31307,7 +31529,7 @@
   ],
   "dir": "drug_ursodeoxycholic_acid",
   "extracted": 0,
-  "last_change": "2026-09-18T14:36:20.922651+00:00",
+  "last_change": "2026-09-28T14:42:06.184052+00:00",
   "name": "ursodeoxycholic acid",
   "needs_review": 0,
   "records": 1,
@@ -31356,7 +31578,7 @@
   ],
   "dir": "drug_valoctocogene_roxaparvovec",
   "extracted": 0,
-  "last_change": "2026-09-18T23:51:16.906528+00:00",
+  "last_change": "2026-09-28T14:42:06.206331+00:00",
   "name": "valoctocogene roxaparvovec",
   "needs_review": 0,
   "records": 1,
@@ -31393,7 +31615,7 @@
   ],
   "dir": "drug_vancomycin",
   "extracted": 2,
-  "last_change": "2026-09-22T03:49:25.337912+00:00",
+  "last_change": "2026-09-28T14:42:06.334935+00:00",
   "name": "vancomycin",
   "needs_review": 1,
   "records": 3,
@@ -31454,7 +31676,7 @@
   ],
   "dir": "drug_venlafaxine",
   "extracted": 3,
-  "last_change": "2026-09-24T21:55:14.649161+00:00",
+  "last_change": "2026-09-28T14:42:06.479436+00:00",
   "name": "venlafaxine",
   "needs_review": 1,
   "records": 4,
@@ -31507,7 +31729,7 @@
   ],
   "dir": "drug_vericiguat",
   "extracted": 0,
-  "last_change": "2026-09-27T15:58:36.740430+00:00",
+  "last_change": "2026-09-28T14:42:06.547177+00:00",
   "name": "vericiguat",
   "needs_review": 2,
   "records": 2,
@@ -31534,7 +31756,7 @@
   ],
   "dir": "drug_vernakalant",
   "extracted": 0,
-  "last_change": "2026-09-20T17:45:57.087767+00:00",
+  "last_change": "2026-09-28T14:42:06.566358+00:00",
   "name": "vernakalant",
   "needs_review": 0,
   "records": 1,
@@ -31561,7 +31783,7 @@
   ],
   "dir": "drug_vestronidase_alfa",
   "extracted": 0,
-  "last_change": "2026-09-27T11:47:47.188243+00:00",
+  "last_change": "2026-09-28T14:42:06.599592+00:00",
   "name": "vestronidase alfa",
   "needs_review": 0,
   "records": 1,
@@ -31611,7 +31833,7 @@
   ],
   "dir": "drug_vildagliptin",
   "extracted": 0,
-  "last_change": "2026-09-17T15:09:10.065440+00:00",
+  "last_change": "2026-09-28T14:42:06.615318+00:00",
   "name": "vildagliptin",
   "needs_review": 0,
   "records": 1,
@@ -31638,7 +31860,7 @@
   ],
   "dir": "drug_viloxazine",
   "extracted": 0,
-  "last_change": "2026-09-24T21:55:14.671431+00:00",
+  "last_change": "2026-09-28T14:42:06.634011+00:00",
   "name": "viloxazine",
   "needs_review": 0,
   "records": 1,
@@ -31711,7 +31933,7 @@
   ],
   "dir": "drug_vinblastine",
   "extracted": 4,
-  "last_change": "2026-09-23T12:15:44.343695+00:00",
+  "last_change": "2026-09-28T14:42:06.857311+00:00",
   "name": "vinblastine",
   "needs_review": 0,
   "records": 7,
@@ -31746,7 +31968,7 @@
   ],
   "dir": "drug_vincristine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:09:10.311620+00:00",
+  "last_change": "2026-09-28T14:42:06.939375+00:00",
   "name": "vincristine",
   "needs_review": 1,
   "records": 3,
@@ -31830,7 +32052,7 @@
   ],
   "dir": "drug_vinorelbine",
   "extracted": 0,
-  "last_change": "2026-09-17T15:09:10.366347+00:00",
+  "last_change": "2026-09-28T14:42:06.982321+00:00",
   "name": "vinorelbine",
   "needs_review": 2,
   "records": 2,
@@ -31988,7 +32210,7 @@
   ],
   "dir": "drug_von_willebrand_factor",
   "extracted": 4,
-  "last_change": "2026-09-18T23:51:18.325922+00:00",
+  "last_change": "2026-09-28T14:42:08.405916+00:00",
   "name": "von Willebrand factor",
   "needs_review": 5,
   "records": 28,
@@ -32016,7 +32238,7 @@
   ],
   "dir": "drug_vonoprazan",
   "extracted": 0,
-  "last_change": "2026-09-18T09:09:53.781428+00:00",
+  "last_change": "2026-09-28T14:42:08.441612+00:00",
   "name": "vonoprazan",
   "needs_review": 0,
   "records": 1,
@@ -32081,7 +32303,7 @@
   ],
   "dir": "drug_vortioxetine",
   "extracted": 0,
-  "last_change": "2026-09-26T21:01:44.683096+00:00",
+  "last_change": "2026-09-28T14:42:08.622328+00:00",
   "name": "vortioxetine",
   "needs_review": 2,
   "records": 5,
@@ -32108,7 +32330,7 @@
   ],
   "dir": "drug_voxelotor",
   "extracted": 0,
-  "last_change": "2026-09-19T14:00:09.028160+00:00",
+  "last_change": "2026-09-28T14:42:08.671638+00:00",
   "name": "voxelotor",
   "needs_review": 1,
   "records": 1,
@@ -32131,14 +32353,6 @@
    {
     "label": "Aoyama_2022 \u00b7 reference",
     "model_id": "Warfarin_Aoyama2022_reference"
-   },
-   {
-    "label": "Hirai_2024 \u00b7 estimates",
-    "model_id": "Warfarin_Hirai2024_estimates"
-   },
-   {
-    "label": "Hirai_2024 \u00b7 median",
-    "model_id": "Warfarin_Hirai2024_median"
    },
    {
     "label": "Hirai_2024 \u00b7 prior_values",
@@ -32177,6 +32391,14 @@
     "model_id": "Warfarin_Gomeni2026_one_compartment"
    },
    {
+    "label": "Hirai_2024 \u00b7 estimates",
+    "model_id": "Warfarin_Hirai2024_estimates"
+   },
+   {
+    "label": "Hirai_2024 \u00b7 median",
+    "model_id": "Warfarin_Hirai2024_median"
+   },
+   {
     "label": "Kubo_2017 \u00b7 reference",
     "model_id": "Warfarin_Kubo2017_reference"
    },
@@ -32202,15 +32424,15 @@
    }
   ],
   "dir": "drug_warfarin",
-  "extracted": 10,
-  "last_change": "2026-09-27T13:13:35.944815+00:00",
+  "extracted": 8,
+  "last_change": "2026-09-28T14:42:09.507483+00:00",
   "name": "warfarin",
-  "needs_review": 5,
+  "needs_review": 7,
   "records": 18,
   "rejected": 3,
   "rendered": true,
   "slug": "warfarin",
-  "stale": 14
+  "stale": 0
  },
  "drug_xamoterol": {
   "atc_codes": [
@@ -32283,7 +32505,7 @@
   ],
   "dir": "drug_xipamide",
   "extracted": 0,
-  "last_change": "2026-09-28T08:09:14.466905+00:00",
+  "last_change": "2026-09-28T14:42:09.540980+00:00",
   "name": "xipamide",
   "needs_review": 0,
   "records": 1,
@@ -32310,7 +32532,7 @@
   ],
   "dir": "drug_zastaprazan",
   "extracted": 0,
-  "last_change": "2026-09-18T09:09:53.810232+00:00",
+  "last_change": "2026-09-28T14:42:09.563445+00:00",
   "name": "zastaprazan",
   "needs_review": 0,
   "records": 1,
@@ -32341,7 +32563,7 @@
   ],
   "dir": "drug_zavegepant",
   "extracted": 0,
-  "last_change": "2026-09-21T08:05:45.358069+00:00",
+  "last_change": "2026-09-28T14:42:09.600751+00:00",
   "name": "zavegepant",
   "needs_review": 1,
   "records": 2,
@@ -32423,7 +32645,7 @@
   ],
   "dir": "drug_zinc",
   "extracted": 1,
-  "last_change": "2026-09-26T18:53:56.776318+00:00",
+  "last_change": "2026-09-28T14:42:09.689862+00:00",
   "name": "zinc",
   "needs_review": 1,
   "records": 3,
@@ -32561,11 +32783,11 @@
   ],
   "dir": "drug_zolmitriptan",
   "extracted": 0,
-  "last_change": "2026-09-21T08:05:45.386604+00:00",
+  "last_change": "2026-09-28T14:42:13.828920+00:00",
   "name": "zolmitriptan",
-  "needs_review": 1,
+  "needs_review": 0,
   "records": 1,
-  "rejected": 0,
+  "rejected": 1,
   "rendered": true,
   "slug": "zolmitriptan",
   "stale": 0

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The vortioxetine record was held back because the absorption rate constant ka was not reported in the source and a library placeholder value was substituted, an invented absorption assumption the review deemed unacceptable.**
+**The vortioxetine record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was invented, alongside defaulted Tlag and an assumed F=1.**
 
-The record for vortioxetine in healthy individuals rests on the paper's abstract alone, so the reported summary statistics (CL/F 32.7 L/hr, V 1.97 L, t1/2z 65.8 hr) stand in for a fitted model. The absorption rate constant ka and the lag time Tlag were never reported in the source, so placeholder values were substituted for these missing parameters; the defaulted ka constitutes an invented absorption term, which the adjudication ruled not acceptable. The model also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. A second reader disagreed on the parameterization, judging it mechanistic rather than apparent, and did not confirm the three parameter values. Extracted — vortioxetine: CL/F 32.7 L/hr, V 1.97 L, t1/2z 65.8 hr.
+The record was built from the paper's abstract alone, so summary statistics stood in for a fitted model. The builder substituted library defaults for the missing absorption rate constant (ka) and lag time (Tlag), and the invented ka was judged not acceptable. The parameterization is apparent (F=1, Fm=1, no molar correction) with first-order depot input, and a second reader disputed this, reading it as mechanistic, while leaving all three parameter values (CL/F 32.7 L/hr, V 1.97 L, t1/2z 65.8 hr) unconfirmed. Extracted — vortioxetine: CL/F 32.7 L/hr, V 1.97 L, t1/2z 65.8 hr.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -152,7 +152,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 10 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 10 mg oral (N06AX26) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_sim_controls.json"></dbs-fmusim>
 

@@ -1,4 +1,5 @@
 {
+ "dose_source": "WHO ATC DDD 15 mg oral (N05CD08)",
  "model_id": "Midazolam_Burtin1994_mean_estimate_se_index_data_set",
  "molar_masses": {
   "central.C": 0.325767
@@ -15,7 +16,7 @@
   "VdPerKg": 0.000499,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1.5e-05,
   "k12": 8.827178165855523e-06,
   "k21": 0.0005079626578802857,
   "ka": 3.888888888888889e-05,
@@ -25,7 +26,7 @@
   "central.C": 23482.965931863728
  },
  "reference_peaks": {
-  "central.C": 0.0006586051672033291
+  "central.C": 9.879038511502805e-05
  },
  "stop_time": 126000.0,
  "template": "PK_2C_enteral",

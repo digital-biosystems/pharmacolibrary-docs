@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The exenatide clearance parameter CL, defined as Cl_int multiplied by an eGFR ratio, carries no SI unit, giving a dimension mismatch on a structural parameter, so the record was rejected.**
+**The exenatide record was rejected because the intrinsic clearance parameter CLint is reported as 4.58 l/h although it is defined as the Vmax/Km ratio, a dimension mismatch on a structural parameter.**
 
-The record lists CL for exenatide as Cl = Cl_int ⋅ eGFR80/Cl_eGFR with the unit reported only as 'unit'; this unit could not be converted to SI, so the parameter entered the model without an SI value, and this dimension mismatch on a structural parameter is the stated cause of rejection. A second reader also disagreed on several extracted values: 4.58 versus no value for Cl_int, 1 versus 100 for the bioavailability F, and 7.04 versus no value for the peripheral volume, while reporting 1.35 and 96 where this record has none. These disagreements leave the extracted parameter set for exenatide in adults with type 2 diabetes mellitus unconfirmed. Extracted — exenatide: CLint 4.58 l h −1, Km 567 pg ml −1, Vmax 1.55 μg h −1, Vss 7.04 l, V 7.03 l, Vnorm 2.67 unit, Fab 1, FR 0.628, … (+1).
+CLint is defined as the ratio of maximum metabolic rate Vmax (1.55 μg/h) to the Michaelis-Menten constant Km (567 pg/ml), which cannot carry the reported unit of l/h, so the dimension check failed. The clearance CL and central volume V1 were left as expressions without extracted values, and Vnorm (2.67) and CL carry the placeholder unit 'unit', which could not be converted to SI units and so entered the model without a usable value. A second reader also disagreed on several values, reading 1.35, 96 and 100 where this record has none, none and 1 respectively, and null where this record has 4.58 and 7.04. Extracted — exenatide: CLint 4.58 l h −1, Km 567 pg ml −1, Vmax 1.55 μg h −1, Vss 7.04 l, V 7.03 l, Vnorm 2.67 unit, Fab 1, FR 0.628, … (+1).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CLint: this record has 4.58, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

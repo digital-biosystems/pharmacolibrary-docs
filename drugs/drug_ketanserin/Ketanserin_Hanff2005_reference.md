@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The ketanserin record was built from the paper's abstract alone, and the absorption rate constant ka was left as a library placeholder because it was not reported, so the model was held back.**
+**The ketanserin record from Hanff_2005 was held back because the absorption rate constant ka was not reported in the source and a default was invented, alongside an apparent (F=1) parameterization built from abstract-only summary statistics.**
 
-The record for ketanserin in pre-eclamptic patients rests on the abstract only, meaning reported summary statistics stood in for a fitted model. The absorption rate constant ka and the lag time Tlag were not reported in the source, so placeholder values were substituted; the invented absorption (a defaulted ka not present in the source) was judged not acceptable. The parameterization is apparent, assuming F=1 and Fm=1 with no molar correction, with a first-order depot input implying extravascular dosing. A second reader also disputed the parameterization (mechanistic rather than apparent) and read the 37.9 L/h metabolic clearance and 0.544 L/kg volume of distribution as CL and V1 respectively, leaving the record's own values null in those fields. Extracted — ketanserin: CLm/F 37.9 L/h, V 0.544 L/kg.
+The record is abstract-only, so reported summary statistics stood in for a fitted model. The builder defaulted ka and Tlag and assumed F=1, Fm=1 with no molar correction, giving an apparent parameterization with first-order depot input for extravascular dosing; the invented absorption (defaulted ka) was judged not acceptable. A second reader disagreed on the parameterization (mechanistic vs apparent) and read the metabolic clearance 37.9 L/h and volume 0.544 L/kg as CL and V1 rather than CLm/F and V, leaving those parameter assignments unresolved. Extracted — ketanserin: CLm/F 37.9 L/h, V 0.544 L/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has ketanserin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -139,18 +139,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ketanserin/Ketanserin_Hanff2005_reference/Ketanserin_Hanff2005_reference_modelica.zip" download>Ketanserin_Hanff2005_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ketanserin/Ketanserin_Hanff2005_reference/Ketanserin_Hanff2005_reference.svg" alt="Ketanserin_Hanff2005_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 40 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 40 mg oral (C02KD01) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_ketanserin/Ketanserin_Hanff2005_reference/Ketanserin_Hanff2005_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ketanserin/Ketanserin_Hanff2005_reference/Ketanserin_Hanff2005_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Ketanserin_Hanff2005_reference_params.json` · controls `Ketanserin_Hanff2005_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

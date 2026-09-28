@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 0.84, model 4.89).**
+**The model does not reproduce the paper's terminal half-life (paper 0.84, model 4.63).**
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Ct), so that value has no SI equivalent. Extracted — celecoxib: t1/2z 49.2 h, Ct 12.5 µg˙L−1, CL 49 L/h/70 kg, V 346 L/70 kg.
 
@@ -126,24 +126,25 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=celecoxib) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_t_half_terminal | reference | fail | 0.84 | 4.894498518405567 | 5.8268 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.05 | 4.894498518405567 | 4.6614 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.08733333333333333 | 4.894498518405567 | 56.0439 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.23333333333333334 | 4.894498518405567 | 20.9764 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | skipped | not captured | 4.894498518405567 | not captured | non-numeric value |
-| T1_t_half_terminal | reference | fail | 0.35 | 4.894498518405567 | 13.9843 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.84 | 4.894498518405567 | 5.8268 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.421 | 4.894498518405567 | 11.6259 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.647 | 4.894498518405567 | 7.5649 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.839 | 4.894498518405567 | 5.8337 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.84 | 4.894498518405567 | 5.8268 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.12 | 4.894498518405567 | 4.3701 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.84 | 4.894498518405567 | 5.8268 | →SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.84 | 4.628401323895421 | 5.51 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.05 | 4.628401323895421 | 4.408 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.08733333333333333 | 4.628401323895421 | 52.997 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.23333333333333334 | 4.628401323895421 | 19.836 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped | not captured | 4.628401323895421 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | fail | 0.35 | 4.628401323895421 | 13.224 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.84 | 4.628401323895421 | 5.51 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.421 | 4.628401323895421 | 10.9938 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.647 | 4.628401323895421 | 7.1536 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.839 | 4.628401323895421 | 5.5166 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.84 | 4.628401323895421 | 5.51 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.12 | 4.628401323895421 | 4.1325 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.84 | 4.628401323895421 | 5.51 | →SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -164,8 +165,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_celecoxib/Celecoxib_Hannam2023_reference/Celecoxib_Hannam2023_reference_modelica.zip" download>Celecoxib_Hannam2023_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_celecoxib/Celecoxib_Hannam2023_reference/Celecoxib_Hannam2023_reference_modelica.zip" download>Celecoxib_Hannam2023_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_celecoxib/Celecoxib_Hannam2023_reference/Celecoxib_Hannam2023_reference_fmi.zip" download>Celecoxib_Hannam2023_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_celecoxib/Celecoxib_Hannam2023_reference/Celecoxib_Hannam2023_reference_matlab.zip" download>Celecoxib_Hannam2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_celecoxib/Celecoxib_Hannam2023_reference/Celecoxib_Hannam2023_reference_matlab_simbio.zip" download>Celecoxib_Hannam2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_celecoxib/Celecoxib_Hannam2023_reference/Celecoxib_Hannam2023_reference_sbml.zip" download>Celecoxib_Hannam2023_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
@@ -177,7 +178,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 200 mg infusion over 10 min, single dose. Dose in the paper: 200 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_celecoxib/Celecoxib_Hannam2023_reference/Celecoxib_Hannam2023_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_celecoxib/Celecoxib_Hannam2023_reference/Celecoxib_Hannam2023_reference_sim_controls.json"></dbs-fmusim>
 

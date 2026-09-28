@@ -171,7 +171,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.41 /h, lag 20.4 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 2000 mg, single dose, first-order absorption (ka 0.41 /h, lag 20.4 min, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 2000 mg oral (A10BA02) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_metformin/Metformin_Charles2006_reference/Metformin_Charles2006_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metformin/Metformin_Charles2006_reference/Metformin_Charles2006_reference_sim_controls.json"></dbs-fmusim>
 

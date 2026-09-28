@@ -1,4 +1,5 @@
 {
+ "dose_source": "WHO ATC DDD 20 mg oral (C10AA05)",
  "model_id": "Atorvastatin_Li2024_reference",
  "molar_masses": {
   "central.C": 0.5586398
@@ -15,7 +16,7 @@
   "VdPerKg": 0.015994571428571427,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 2e-05,
   "ka": 0.0002111111111111111,
   "weight": 70.0
  },
@@ -23,7 +24,7 @@
   "central.C": 9739.478957915831
  },
  "reference_peaks": {
-  "central.C": 5.936432673372033e-05
+  "central.C": 1.1872981154436962e-05
  },
  "stop_time": 97200.0,
  "template": "PK_1C_enteral",

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The glycopyrronium record was rejected because the absorption rate constant Ka carries a dimensionally inconsistent unit (L/h instead of 1/h) and the one-compartment structure leaves a compartment unreachable from the dose.**
+**The glycopyrronium model was rejected because the absorption rate constant kabs was recorded as 50 with unit L/h instead of 1/h (dimension mismatch), and the peripheral compartment is unreachable from the dose.**
 
-The reported Ka of 50 with unit 'L/h' is dimensionally wrong for a first-order absorption rate constant, which should be in 1/h; this unit could not be converted to SI, so the parameter entered the record without a consistent value. The structure is a single compartment, yet the dose-reachability check failed, indicating an orphan compartment or unlinked metabolite in the topology. A second reader also disagreed on several extracted values, reading Ka and the zero-order absorption duration D1 as not reported and a body-weight covariate parameter (theta_v2_f_body_weight) as 1 where the record had none. Extracted — glycopyrronium: V2/F 1.3e+03 L, kabs 50 L/h, D1 0.01 h.
+The record lists kabs (absorption rate constant) with a value of 50 in L/h, a unit dimensionally inconsistent with a first-order rate constant (1/h), so the structural parameter failed the dimension check. The one-compartment-plus-peripheral structure also left the peripheral compartment, whose volume V2/F is 1300 L, without a path from the dose. Additionally, the reported unit for kabs could not be converted to SI, so the parameter arrived without an SI value. A second reader disputed several entries, reading kabs and the zero-order absorption duration D1 (0.01 h) as absent and adding covariate effects (theta_v2_f_body_weight 1, theta_q27_body_weight 0.75) not present in this record. Extracted — glycopyrronium: V2/F 1.3e+03 L, kabs 50 L/h, D1 0.01 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has indacaterol/glycopyrronium/mometasone furoate, the second reading indacaterol, glycopyrronium, mometasone furoate; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

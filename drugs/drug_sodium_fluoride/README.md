@@ -31,7 +31,7 @@
 
 | status | detail | citation | doi |
 |---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Yang_2010](drugs/drug_sodium_fluoride/pd_Yang_2010_Vascular_tension.md) | Yang E et al., Calcium sensitization induced by sodium…, The Korean journal of physi… (2010) | [10.4196/kjpp.2010.14.1.51](https://doi.org/10.4196/kjpp.2010.14.1.51) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Yang_2010](drugs/drug_sodium_fluoride/pd_Yang_2010_Vascular_tension.md) | Yang E et al., Calcium sensitization induced by sodium…, The Korean journal of physi… (2010) | [10.4196/kjpp.2010.14.1.51](https://doi.org/10.4196/kjpp.2010.14.1.51) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Discigil_2008](drugs/drug_sodium_fluoride/pd_Discigil_2008_vascular_relaxation.md) | Discigil B et al., High-frequency ultrasonic waves cause e…, Revista brasileira de cirur… (2008) | [10.1590/s0102-76382008000200007](https://doi.org/10.1590/s0102-76382008000200007) |
 
 ## ADME sites

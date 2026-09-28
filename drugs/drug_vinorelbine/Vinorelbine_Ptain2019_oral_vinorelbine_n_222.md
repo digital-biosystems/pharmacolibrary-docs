@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The vinorelbine model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no reported values and were left at library defaults, with the absorption rate constant invented.**
+**The vinorelbine model was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no source values and were left at library defaults.**
 
-The record reports only two vinorelbine parameters — oral apparent clearance 89.4 l/h/m2 and intravenous clearance 23.75 l/h/m2, both normalized to body surface area in Asian patients — while CL, Vd, ka and Tlag were defaulted, so placeholder values would have stood in for the fitted model. The absorption rate constant was not reported in the source, and the invented-absorption deviation was judged not acceptable. Additionally, the reported unit l/h/m2 could not be converted to SI, so the parameter reached the model without an SI value. The model also assumed F=1 and Fm=1 without molar correction (apparent parameterization) with first-order depot input for extravascular dosing. Extracted — vinorelbine: CL/F 89.4 l/h/m2, CL 23.8 l/h/m2.
+The record only reports vinorelbine's oral apparent clearance (89.4 l/h/m2) and intravenous clearance (23.75 l/h/m2) in Asian patients; no values exist for volume of distribution, ka or Tlag, so placeholders stood in for these parameters. The absorption rate constant was not reported in the source, and the builder assumed F=1, Fm=1 with no molar correction under an apparent (/F) parameterization with first-order depot input. Additionally, the reported units (l/h/m2) could not be converted to SI, so the parameters reached the model builder without SI values. The absorption-invention check failed ('invented_absorption: not acceptable'). Extracted — vinorelbine: CL/F 89.4 l/h/m2, CL 23.8 l/h/m2.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -78,6 +78,7 @@ Pétain A; Zhong D; Chen X; Li Z; Zhimin S; Zefei J; et al. et al. (2019). Cance
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |

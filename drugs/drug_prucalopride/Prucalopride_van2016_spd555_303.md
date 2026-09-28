@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The prucalopride paediatric model was rejected because a structural parameter carries a dimension mismatch and the one-compartment structure contains an unreachable compartment, with a reported unit that could not be converted to SI.**
+**The prucalopride record for children with functional constipation was rejected because a structural parameter has a dimension mismatch and the one-compartment structure contains an unreachable compartment, with a reported unit not convertible to SI.**
 
-The record for prucalopride in children with functional constipation lists CL 11.7 l h−1 and V2 207 l in a one-compartment structure, but a dimension mismatch was flagged on a structural parameter and a compartment was judged unreachable from the dose. A reported unit could not be converted to SI, so that parameter was carried without an SI value. A second reader additionally read CL 22.9 l h−1, F1 0.858, ka1 0.792 and MTIME 0.734, none of which appear in this record, and disagreed on the presence of AUC 100.3 ng mL−1 h, Css 4.18 ng mL−1 and C0 2.64 ng mL−1. Extracted — prucalopride: CL 11.7 l h−1, V2 207 l, AUC 100 ng mL−1 h, Css 4.18 ng mL−1, C0 2.64 ng mL−1.
+The prucalopride model (one-compartment structure) failed a dimensional check on a structural parameter and was found to contain a compartment with no path from the dose, so it was rejected. A reported unit could not be converted to SI, so that parameter reached the model builder without an SI value. A second reader disagreed on several values: it read CL as 22.9 l h−1 (versus 11.7), and additionally reported F1 0.858, ka1 0.792 h−1 and a mean transit time of 0.734, none of which appear in this record; it also left AUC (100.3 ng mL−1 h), Css (4.18 ng mL−1) and C0 (2.64 ng mL−1) unread, so those comparisons could not be computed. Extracted — prucalopride: CL 11.7 l h−1, V2 207 l, AUC 100 ng mL−1 h, Css 4.18 ng mL−1, C0 2.64 ng mL−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 100.3, the second reading none; it also differs on 11 more fields. That field does not shape the model.
 

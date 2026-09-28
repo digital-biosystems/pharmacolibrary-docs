@@ -145,7 +145,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 3000 mg infusion over 10 min, single dose. Dose in the paper: 3000 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_vancomycin/Vancomycin_Goyal2022_final_pk_model/Vancomycin_Goyal2022_final_pk_model_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_vancomycin/Vancomycin_Goyal2022_final_pk_model/Vancomycin_Goyal2022_final_pk_model_sim_controls.json"></dbs-fmusim>
 

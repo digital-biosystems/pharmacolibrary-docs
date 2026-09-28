@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The chloroquine two-compartment model was quarantined because its volume of distribution (Vd) and absorption lag time (Tlag) had no values in the source, so library defaults were substituted.**
+**The chloroquine model was quarantined because its volume of distribution and absorption lag time had no source values, so library placeholders were substituted, and V2/F and Q/F were not covered.**
 
-The record lists fitted parameters CL/F (33.3 l/h), V2/F (3630 l), Q/F (58.7 l/h), V3/F (5120 l) and ka (0.559 h⁻¹), but no value for chloroquine's volume of distribution or absorption lag time; placeholders from the library base model stood in for both. A coverage check confirmed only 2 of 4 expected parameters were covered, with V2/F and Q/F neither emitted nor defaulted. The builder also assumed F=1 and Fm=1 with no molar correction, treating all parameters as apparent. A second reader additionally disagreed on how the absorption rate parameter (ka) was identified in the record. Extracted — chloroquine: CL/F 33.3 l/h, V2/F 3.63e+03 l, Q/F 58.7 l/h, V3/F 5.12e+03 l, kabs 0.559 h -1.
+No value for chloroquine's volume of distribution and absorption lag time was available; the model was built with library placeholders for these and held back rather than published with invented numbers. The parameter coverage check found only 2 of 4 expected parameters covered, with V2/F (3630 l) and Q/F (58.7 l/h) neither emitted nor defaulted. The model builder also assumed F=1 and Fm=1 without molar correction, parameterizing the model as apparent (CL/F 33.3 l/h, V3/F 5120 l, kabs 0.559 h-1). A second reader disagreed on the absorption lag time parameter identifier, and the record lists a one-compartment structure despite three-compartment distribution parameters. Extracted — chloroquine: CL/F 33.3 l/h, V2/F 3.63e+03 l, Q/F 58.7 l/h, V3/F 5.12e+03 l, kabs 0.559 h -1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[alag1].parameter_id`: this record has Q56, the second reading Q83. That field shapes the model, so the record is marked disputed.
 

@@ -96,6 +96,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=aminocaproic_acid) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
@@ -134,7 +135,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 16000 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 16000 mg parenteral (B02AA01) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference/AminocaproicAcid_Ross2007_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference/AminocaproicAcid_Ross2007_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record misreads a table column ('14') as a study population, and the extracted factor VIII clearance of 0.0222 L/h is physiologically implausible, indicating a unit or scale extraction error.**
+**Rejected: the record for factor VIII (from a von Willebrand factor paper) reports a clearance of 0.0222 L/h, physiologically implausible and indicating a unit or scale extraction error, and the estimates table was mis-split so column '14' was taken as a study population.**
 
-The estimates table was split into one record per column, and column '14' holds a statistic rather than a second set of estimates, so the parameter values do not represent a fitted population. The extracted clearance of 0.0222 L/h and volume of distribution of 5.09 L fall outside plausible physiological windows for factor VIII, consistent with a unit or scale extraction error. A second reader proposed a clearance of 0.000242 L/h in place of the recorded 0.0222 L/h, and also disputed the dosing compartment (BT200 versus unknown) and the primary analyte (factor VIII versus von Willebrand factor). Extracted — factor VIII: CL 0.0222 L/h, V1 5.09 L, Q 1.99 L/h, V2 0.24 L, kabs 0.0206.
+The clearance of 0.0222 L/h for factor VIII falls outside the physiological window, pointing to a unit or scale extraction error; the second reader instead read the clearance as 0.000242 L/h, disagreeing with the extracted 0.0222. The estimates table was split into one record per column, and column '14' holds a table statistic rather than a study population. The second reader also disagreed on the dosed compound (BT200 versus von Willebrand factor) and the primary analyte (factor VIII versus von Willebrand factor), and returned null for all five parameter values (CL 0.0222 L/h, V1 5.09 L, Q 1.99 L/h, V2 0.240 L, kabs 0.0206 1/h). Extracted — factor VIII: CL 0.0222 L/h, V1 5.09 L, Q 1.99 L/h, V2 0.24 L, kabs 0.0206.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has BT200, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 

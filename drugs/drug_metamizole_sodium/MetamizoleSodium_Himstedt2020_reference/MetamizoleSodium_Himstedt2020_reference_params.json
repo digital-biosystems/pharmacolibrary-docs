@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 3000 mg parenteral (N02BB02)",
  "model_id": "MetamizoleSodium_Himstedt2020_reference",
+ "molar_masses": {
+  "central.C": 0.333338
+ },
  "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,19 +11,20 @@
  "parameters": {
   "Cl": 7.505555555555556e-05,
   "F": 1.0,
+  "MM": 0.333338,
   "VdPerKg": 0.000123,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.003,
   "k12": 0.007317073170731706,
   "k21": 0.0002387267904509284,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662053
+  "central.C": 660.0000000662006
  },
  "reference_peaks": {
-  "central.C": 7.229933315918827e-05
+  "central.C": 0.0021689797895374997
  },
  "stop_time": 86400.0,
  "template": "PK_2C",

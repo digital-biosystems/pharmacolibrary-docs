@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The serelaxin clearance parameter was recorded as 9.2 with the unit '%' — a percentage, not a flow rate — a dimensional mismatch on a structural parameter, and the record was built from the abstract alone rather than a fitted model.**
+**The serelaxin clearance was recorded as 9.2 '%' — a percentage, not a clearance unit — so the record failed the dimensional check on a structural parameter and was rejected.**
 
-The clearance of serelaxin is given as 9.2 with unit '%', which cannot represent a clearance rate (e.g. ml/min or ml/kg/h), so the parameter fails dimensional consistency; the steady-state volume of distribution is 544 ml/kg. The record was built from the paper's abstract only, meaning reported summary statistics stood in for a fitted model. A second reader attributed the 9.2 value to a 'clearance decrease' field rather than the serelaxin clearance field, a disagreement over which parameter the value belongs to, though the two entries are complementary rather than contradictory. Extracted — serelaxin: Vss 544 ml kg-1, CL 9.2 %.
+The abstract-only source reports serelaxin clearance as a 9.2% decrease, but the record stored 9.2 '%' as the total clearance value, a dimensionless fraction where a flow (e.g. volume per time) is required; this dimension mismatch on a structural parameter caused rejection. The steady-state volume of distribution (544 ml kg-1) was extracted consistently. A second reader instead assigned the 9.2% value to a 'clearance decrease' parameter and left clearance empty, disagreeing with this record's placement of the value. Extracted — serelaxin: Vss 544 ml kg-1, CL 9.2 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance decrease: this record has none, the second reading 9.2; it also differs on 3 more fields. That field does not shape the model.
 

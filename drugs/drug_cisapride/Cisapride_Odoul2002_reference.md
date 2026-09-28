@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The cisapride neonatal record was rejected because the extracted apparent clearance of 3.91 mL/h and apparent volume of 17 mL fall far outside physiological plausibility, pointing to a unit or scale extraction error.**
+**The cisapride record was rejected because the abstract-only values V/F = 17 mL and CL/F = 3.91 mL/h fall outside physiological plausibility for neonates, indicating a unit or scale extraction error.**
 
-The record reports cisapride CL/F of 3.91 mL/h and V/F of 17 mL for neonates, magnitudes incompatible with neonatal physiology and consistent with a unit or scale misreading of the published values. Because only the paper's abstract was read, these summary statistics stood in for a fitted model, so no full parameter set could be corroborated. A second reader disputed the parameterization, judging the model mechanistic rather than apparent-parameter based, and returned null for both CL/F and V/F, meaning the comparison could not be computed and the values remain unconfirmed. Extracted — cisapride: V/F 17 mL, CL/F 3.91 mL/h.
+The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The extracted apparent parameters for cisapride — V/F of 17 mL and CL/F of 3.91 mL/h — were judged implausible in magnitude, consistent with a unit or scale extraction error. A second reader disputed the parameterization, reading it as mechanistic rather than apparent, and recorded null values for both CL/F and V/F, disagreeing with the extracted 3.91 and 17. Extracted — cisapride: V/F 17 mL, CL/F 3.91 mL/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

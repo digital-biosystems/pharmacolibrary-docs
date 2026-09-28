@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The gabapentin model record for postpartum lactating women lacks a volume of distribution, so only clearance (160.67 mL/kg/hr) was extracted and the model was held back; the clearance plausibility check also could not be computed.**
+**Gabapentin record for postpartum lactating women was held back because only clearance (160.67 mL/kg/hr) was extracted with no volume of distribution, and the clearance plausibility check could not compute a comparison.**
 
-Only clearance was extracted — no volume of distribution — so the model would have had to rely on a library default for volume and was not published. The clearance plausibility check could not be computed because it had no reference to compare the 160.67 mL/kg/hr value against, leaving the clearance unverified rather than shown to be wrong. The record also flags a nonlinear model structure. A second reader returned no values for clearance, absorption rate constant (5.24 1/hr), or lag time (0.45 hr), so none of the parameter values were independently confirmed. Extracted — gabapentin: CL 161 mL/kg/hr, kabs 5.24 1/hr, tlag 0.45 hr.
+Only clearance/elimination was extracted for gabapentin; the volume of distribution is missing, so the model would have had to rely on a library placeholder for that half and was not published. The clearance plausibility check reported a failure without computing a comparison (ratio None), so this is an inconclusive check rather than a demonstrated fault — the clearance value is unverified, not shown to be wrong. The record was also flagged for nonlinear topology. A second reader returned no values for clearance, absorption rate constant, or lag time, disagreeing with the extracted 160.67, 5.24, and 0.45. Extracted — gabapentin: CL 161 mL/kg/hr, kabs 5.24 1/hr, tlag 0.45 hr.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has 160.67, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

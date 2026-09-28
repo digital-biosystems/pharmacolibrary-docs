@@ -171,7 +171,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.0286 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 0.25 mg, single dose, first-order absorption (ka 0.0286 /h, F 1). Doses in the paper: 0.25, 0.5, 1, 1.5 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3_sim_controls.json"></dbs-fmusim>
 

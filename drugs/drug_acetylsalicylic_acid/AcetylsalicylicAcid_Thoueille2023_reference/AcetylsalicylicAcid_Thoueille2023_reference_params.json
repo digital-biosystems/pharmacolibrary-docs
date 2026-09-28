@@ -1,17 +1,27 @@
 {
+ "dose_source": "paper",
  "model_id": "AcetylsalicylicAcid_Thoueille2023_reference",
+ "molar_masses": {
+  "central.C": 0.1801574
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  10.0,
+  25.0
+ ],
  "parameters": {
   "Cl": 1.1722222222222222e-05,
   "F": 1.0,
+  "MM": 0.1801574,
   "Tlag": 0.0,
   "VdPerKg": 0.03414285714285714,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "ka": 0.0005555555555555556,
   "weight": 70.0
  },
@@ -19,7 +29,7 @@
   "central.C": 9349.899799599198
  },
  "reference_peaks": {
-  "central.C": 4.0105670607716056e-05
+  "central.C": 4.010716871052339e-06
  },
  "stop_time": 777600.0,
  "template": "PK_1C_enteral",

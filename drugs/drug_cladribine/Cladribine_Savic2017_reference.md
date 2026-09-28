@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The cladribine record double-corrects for bioavailability: apparent parameters CLH (653 L/hf) and V1/F (365 Lf) already include division by F=0.456, yet F is applied again, and V1/F=365 L conflicts with central volume V1=44.0 L.**
+**The cladribine record mixes absolute parameters (CLR 3.52 L/h, CLNR 23.4 L/h, V1 44.0 L) with bioavailability-adjusted ones (V1/F 365 L, apparent hepatic CL 653 L/h) despite Fab 0.456, so apparent-parameter coherence is violated by a double correction and the model was rejected.**
 
-The record lists both absolute parameters for cladribine (central volume V1 = 44.0 L, non-renal clearance CLNR = 23.4 L/h) and apparent ones labelled with the fraction units 'L/hf' and 'Lf' (CLH = 653 L/hf, V1/F = 365 Lf), which by definition are already normalized by the bioavailability Fab = 0.456. Applying the bioavailability correction on top of these apparent values double-corrects the same parameters, and the resulting apparent central volume (365 L) is inconsistent with the reported absolute central volume (44.0 L). The coherence check that compares these two forms of the same parameter could not be reconciled, so the record was rejected. Extracted — cladribine: CLR 3.52, CLNR 23.4, V1 44, Q3 14.3, Q 53.7, V3 347, kabs 1.08, Fab 0.456, … (+6).
+The record carries both a bioavailability fraction (Fab 0.456) and F-adjusted apparent parameters — V1/F of 365 L and apparent hepatic clearance of 653 L/h — alongside unadjusted parameters for the same molecule, V1 of 44.0 L, renal clearance of 3.52 L/h and non-renal clearance of 23.4 L/h. Applying the bioavailability correction on top of parameters already expressed with it double-corrects the cladribine disposition, which is the coherence failure cited for rejection. No other failed checks or inconclusive comparisons are reported. Extracted — cladribine: CLR 3.52, CLNR 23.4, V1 44, Q3 14.3, Q 53.7, V3 347, kabs 1.08, Fab 0.456, … (+6).
 
 <sub>reviewed by glm-5.3-flash</sub>
 

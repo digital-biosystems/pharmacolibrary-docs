@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The misoprostol acid absorption rate constant ka is reported with the unit 'buccal, 25 μg' instead of a rate unit (1/h), a dimension mismatch on a structural parameter that could not be converted to SI, so the model was rejected.**
+**The misoprostol acid model was rejected because the Michaelis–Menten parameters carry wrong dimensions: Vmax is reported as 5.45 pg/ml (a concentration, not a metabolic rate) and Km as 2.5 pg (an amount, not a concentration).**
 
-The record lists ka for misoprostol acid as 0.709 with the verbatim unit 'buccal, 25 μg', which is a dosing-route and dose label rather than an inverse-time unit, so no SI value could be derived for this structural parameter. The other parameters (CL/F 730 L/h, V/F 610 L, Vmax/F 5.45 pg/ml, Km 2.5 pg) carry convertible units, but the unconvertible ka unit meant the parameter entered model assembly without an SI value. The verdict is rejection on this dimension mismatch. Extracted — misoprostol acid: CL/F 730 L/h, V/F 610 L, kabs 0.709 buccal, 25 μg, Vmax 5.45 pg/ml, Km 2.5 pg.
+For misoprostol acid in women undergoing labor induction at term, the record lists Vmax/Fb = 5.45 with unit pg/ml, but Vmax is the maximum rate of metabolism by an enzymatic reaction and should have rate dimensions, not concentration. Km = 2.5 pg likewise uses an amount unit where a substrate concentration is expected, so the structural parameter failed the dimension check. The reported units could not be converted to SI, so the parameters reached the model without usable SI values. The other parameters (CL/F 730 L/h, V/F 610 L, kabs 0.709 1/h for buccal 25 μg) are dimensionally consistent. Extracted — misoprostol acid: CL/F 730 L/h, V/F 610 L, kabs 0.709 buccal, 25 μg, Vmax 5.45 pg/ml, Km 2.5 pg.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

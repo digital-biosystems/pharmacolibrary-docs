@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The dapagliflozin model was quarantined because clearance, absorption rate constant and absorption lag time had no source values, so library placeholders stood in, and the invented ka of 57.4/day was judged not acceptable.**
+**The dapagliflozin model was held back because clearance, absorption rate constant and absorption lag time had no source values, so placeholder numbers stood in for them, including an invented ka.**
 
-The record lists no value for dapagliflozin's CL/F, and ka and Tlag were likewise missing from the source, so generic placeholder values were substituted for these three parameters and the model was held back rather than published with invented numbers. The absorption rate constant of 57.4/day was not reported in the source paper and was adjudicated as invented absorption, deemed not acceptable. Although the record defines a body-weight covariate effect (θBW = 0.41), only the reference individual was simulated, so the covariate scenarios were never exercised. A second reader also disagreed with the extracted values, reading t1/2z as 15.3 days instead of 16.1 days and θBW as 0.22 instead of 0.41. Extracted — dapagliflozin: t1/2z 16.1 day, kabs 57.4, V/F 73.9 L.
+The record lists ka as 57.4 1/day, but the model builder defaulted ka because it was not reported in the source, and likewise left dapagliflozin's clearance and absorption lag time without values, substituting placeholder defaults rather than the paper's numbers. The parameterization is apparent (F=1, Fm=1, no molar correction). Covariate effects defined in the record (e.g. θBW on clearance) were not exercised in simulation — only the reference individual was simulated. A second reader also disagrees on t1/2z (16.1 vs 15.3 day) and θBW (0.41 vs 0.22). Extracted — dapagliflozin: t1/2z 16.1 day, kabs 57.4, V/F 73.9 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[t1/2hba1c].value`: this record has 16.1, the second reading 15.3; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -122,6 +122,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |

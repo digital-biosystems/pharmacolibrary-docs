@@ -156,7 +156,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.17 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 1750 mg, single dose, first-order absorption (ka 0.17 /h, F 0.9). Doses in the paper: 1750, 4200 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_amoxicillin/Amoxicillin_Wu2021_reference/Amoxicillin_Wu2021_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_amoxicillin/Amoxicillin_Wu2021_reference/Amoxicillin_Wu2021_reference_sim_controls.json"></dbs-fmusim>
 

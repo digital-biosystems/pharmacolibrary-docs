@@ -142,7 +142,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.19 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 18.9 mg, single dose, first-order absorption (ka 1.19 /h, F 1). Dose in the paper: 18.9 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference/AngiotensinIi_Steichert2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference/AngiotensinIi_Steichert2025_reference_sim_controls.json"></dbs-fmusim>
 

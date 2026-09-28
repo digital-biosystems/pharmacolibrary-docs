@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The fitusiran record was rejected because the paper reports no distribution volume and no clearance or elimination rate, so it is not a compartmental population PK model, and a structural parameter has a dimension mismatch.**
+**The fitusiran record was rejected because the paper reports no distribution volume and no clearance — it is an exposure/outcome study, not a compartmental population PK model — and a structural parameter failed a dimensional check.**
 
-The record for fitusiran (a GalNAc-conjugated siRNA against antithrombin) contains only absorption, binding and turnover parameters (kabs 0.71 1/h, fu 0.21, Rtot 33.1 nM, Vmax 1.94 nmol/h, Km 37.73, koff 0.021 1/h, kint 1215, KD 0.073) with no volume of distribution and no clearance, so it cannot form a compartmental population PK model. A dimension mismatch was also flagged on a structural parameter, and one reported unit (the Km label given only as 'units') could not be converted to SI, so that parameter reached the model without an SI value. A second reader additionally extracted four parameters absent from this record — fesc 0.01948, kdegd 0.040, kpliver 3.19 and psliver 211 — showing the parameter set is incomplete relative to the paper. Extracted — fitusiran: kabs 0.71 units, fu 0.21 units, Rtot 33.1 nM, Vmax 1.94 nmol/h, Km 37.7 units, koff 0.021 units, kint 1.22e+03 nM−1·h−1, KD 0.073 nM.
+No volume of distribution or clearance/elimination parameter exists for fitusiran, so the record cannot form a compartmental population PK model; the paper is an exposure/outcome paper. A dimension mismatch was flagged on a structural parameter, and one reported unit could not be converted to SI, so that parameter reached the model without an SI value. A second reader additionally extracted four parameters absent from this record: fesc 0.01948, kdegd 0.040, kpliver 3.19, and psliver 211. Extracted — fitusiran: kabs 0.71 units, fu 0.21 units, Rtot 33.1 nM, Vmax 1.94 nmol/h, Km 37.7 units, koff 0.021 units, kint 1.22e+03 nM−1·h−1, KD 0.073 nM.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of fesc: this record has none, the second reading 0.01948; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

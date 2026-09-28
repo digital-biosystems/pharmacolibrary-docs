@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The digoxin record was rejected because the metabolite dihydrodigoxin appears in the structure with no link parameter connecting it to the dose, and the model was built only from the paper's abstract rather than a fitted model.**
+**The digoxin record was rejected because the hydrolysis link from dihydrodigoxin to dihydrodigoxin acid leaves the dose compound digoxin with no path into the model structure, an orphan metabolite, and the record was built from the abstract only.**
 
-The structure contains a hydrolysis link from dihydrodigoxin to dihydrodigoxin acid with no link parameter, leaving dihydrodigoxin without a path from the digoxin dose — an orphan metabolite. The record was built from the abstract alone, so reported summary statistics (t1/2β 4.6 h, CL 0.223 L/h/kg, V 0.418 L/kg, apparent Ka 2.29 h−1) stood in for a fitted model. A second reader also disagreed on the dose compound and primary analyte, reading digoxin plus dihydrodigoxin rather than digoxin alone, and on the link structure, proposing digoxin-to-dihydrodigoxin metabolism and dihydrodigoxin-to-dihydrodigoxin acid interconversion instead of the recorded hydrolysis. The second reader returned no values for the four parameters, so no comparison could be computed for them. Extracted — digoxin: t1/2β 4.6 h, CL 0.223 L/h/kg, V 0.418 L/kg, kabs 2.29 h−1.
+The only link in the model is hydrolysis of dihydrodigoxin to dihydrodigoxin acid, with no link parameter, so digoxin — the measured and dosed compound — is unreachable from the dose, triggering the orphan-compartment rejection. The record is abstract-only, so summary statistics (t1/2β 4.6 h, CL 0.223 L/h/kg, V 0.418 L/kg, kabs 2.29 h−1) stand in for a fitted model. A second reader disagreed on the dose compound and primary analyte (digoxin plus dihydrodigoxin), proposed digoxin-to-dihydrodigoxin metabolism and dihydrodigoxin-to-acid interconversion links, and could not confirm any of the four parameter values (null). Extracted — digoxin: t1/2β 4.6 h, CL 0.223 L/h/kg, V 0.418 L/kg, kabs 2.29 h−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has digoxin, the second reading digoxin, dihydrodigoxin; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

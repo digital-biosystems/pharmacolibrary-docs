@@ -1,4 +1,5 @@
 {
+ "dose_source": "WHO ATC DDD 5 mg oral (C08CA01)",
  "model_id": "Amlodipine_Flynn2006_reference",
  "molar_masses": {
   "central.C": 0.40887599999999996
@@ -15,7 +16,7 @@
   "VdPerKg": 0.0251,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 5e-06,
   "ka": 0.00040555555555555554,
   "weight": 70.0
  },
@@ -23,7 +24,7 @@
   "central.C": 15236.87374749499
  },
  "reference_peaks": {
-  "central.C": 5.448061928242086e-05
+  "central.C": 2.7238217093039603e-06
  },
  "stop_time": 950400.0,
  "template": "PK_1C_enteral",

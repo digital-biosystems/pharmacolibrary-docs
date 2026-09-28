@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The piritramide record was held back because its absorption rate constant ka was not reported in the source and a library default was substituted, an invented absorption the adjudication ruled unacceptable.**
+**The piritramide record was held back because the model builder invented a first-order absorption rate constant ka that is not reported in the Hinrichs_2017 source, alongside a defaulted lag time.**
 
-The single-compartment piritramide model carries only two parameters, both mislabeled: CLu (8.7 ml/min) is labelled 'Kreatininclearance von', i.e. creatinine clearance rather than piritramide clearance, and V is 4.7 l/kg. The builder assumed F=1 and Fm=1 with no molar correction (apparent parameterization), and defaulted both ka and Tlag because the source reported no values — the ka default constitutes invented absorption, which the adjudication judged 'not acceptable'. The apparent (/F) parameterization also implies extravascular first-order depot input, a structural assumption not grounded in the source text, which is review-secondary. Extracted — piritramide: CLu 8.7 ml/min, V 4.7 l/kg.
+The source reports only unbound clearance (8.7 ml/min) and volume of distribution (4.7 l/kg) for piritramide; ka and Tlag were left at library placeholder defaults because no values appear in the paper. The builder also assumed F=1 and Fm=1 with apparent parameterization and no molar correction, and set up first-order depot input implying extravascular dosing. The invented absorption was judged not acceptable, so the record needs review. Extracted — piritramide: CLu 8.7 ml/min, V 4.7 l/kg.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -123,7 +123,7 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_piritramide/Piritramide_Hinrichs2017_reference/Piritramide_Hinrichs2017_reference_modelica.zip" download>Piritramide_Hinrichs2017_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_piritramide/Piritramide_Hinrichs2017_reference/Piritramide_Hinrichs2017_reference_fmi.zip" download>Piritramide_Hinrichs2017_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_piritramide/Piritramide_Hinrichs2017_reference/Piritramide_Hinrichs2017_reference_matlab.zip" download>Piritramide_Hinrichs2017_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_piritramide/Piritramide_Hinrichs2017_reference/Piritramide_Hinrichs2017_reference_matlab_simbio.zip" download>Piritramide_Hinrichs2017_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_piritramide/Piritramide_Hinrichs2017_reference/Piritramide_Hinrichs2017_reference_sbml.zip" download>Piritramide_Hinrichs2017_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>

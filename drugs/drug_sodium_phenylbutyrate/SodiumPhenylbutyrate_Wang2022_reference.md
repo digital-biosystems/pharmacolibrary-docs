@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The sodium phenylbutyrate record was held back because the absorption rate constant ka and lag time were not reported in the source, so library defaults were substituted and the invented first-order absorption was judged not acceptable.**
+**The sodium phenylbutyrate record was held back because the model builder invented an absorption rate constant (ka) not reported in the source, alongside defaulted Tlag.**
 
-The record reports only apparent clearance (CL/F 14.9 L/h) and volume (V 33.2 L) for sodium phenylbutyrate in a one-compartment structure. The source did not report an absorption rate constant (ka) or lag time (Tlag), so placeholder defaults were used, and the model assumed an invented first-order absorption with F=1, Fm=1 and no molar correction — an apparent (/F) parameterization implying extravascular dosing. This invented absorption was adjudicated as not acceptable, so the model was marked needs_review. Extracted — sodium phenylbutyrate: CL/F 14.9 L/h, V 33.2 L.
+The record reports CL/F of 14.9 L/h and V of 33.2 L for sodium phenylbutyrate, but the source gives no ka or Tlag; library placeholder defaults were substituted for both, and the invented ka was judged not acceptable. The builder also assumed F=1 and Fm=1 without molar correction, giving an apparent parameterization with first-order depot input for extravascular dosing. The failed check returned 'invented_absorption: not acceptable'. Extracted — sodium phenylbutyrate: CL/F 14.9 L/h, V 33.2 L.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -106,18 +106,23 @@ Wang X; Vilchez RA et al. (2022). Clinical pharmacokinetics 61
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference/SodiumPhenylbutyrate_Wang2022_reference_modelica.zip" download>SodiumPhenylbutyrate_Wang2022_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference/SodiumPhenylbutyrate_Wang2022_reference_matlab.zip" download>SodiumPhenylbutyrate_Wang2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference/SodiumPhenylbutyrate_Wang2022_reference_matlab_simbio.zip" download>SodiumPhenylbutyrate_Wang2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference/SodiumPhenylbutyrate_Wang2022_reference_sbml.zip" download>SodiumPhenylbutyrate_Wang2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference/SodiumPhenylbutyrate_Wang2022_reference_cellml.zip" download>SodiumPhenylbutyrate_Wang2022_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference/SodiumPhenylbutyrate_Wang2022_reference.svg" alt="SodiumPhenylbutyrate_Wang2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 15000 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 15000, 20000 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference/SodiumPhenylbutyrate_Wang2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference/SodiumPhenylbutyrate_Wang2022_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `SodiumPhenylbutyrate_Wang2022_reference_params.json` · controls `SodiumPhenylbutyrate_Wang2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

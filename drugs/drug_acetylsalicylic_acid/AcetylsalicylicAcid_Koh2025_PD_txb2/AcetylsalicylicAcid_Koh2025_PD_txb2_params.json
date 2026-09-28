@@ -6,10 +6,7 @@
  ],
  "parameters": {
   "E0": 2.639999999999999e-05,
-  "EC50": 3.5999999999999996,
-  "Emax": -9.999999999999997e-07,
-  "exposure_per_s": 999.9999999999999,
-  "gamma": 1.0
+  "exposure_per_s": 999.9999999999999
  },
  "reference_peaks": {},
  "reference_points": {

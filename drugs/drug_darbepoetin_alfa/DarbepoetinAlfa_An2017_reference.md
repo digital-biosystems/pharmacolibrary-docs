@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The darbepoetin alfa record was rejected because the absorption rate constant kabs was reported with units of L/h, a dimension mismatch for a first-order rate constant that should be 1/h.**
+**The darbepoetin alfa record was rejected because the absorption rate constant kabs carries a dimension mismatch: it is reported as 0.062 L/h, an invalid unit for a first-order rate constant, in a one-compartment model built from the paper's abstract only.**
 
-The record, built from the abstract alone, reports darbepoetin alfa clearance of 0.05 L/h/kg and an absorption rate constant of 0.062 L/h in a one-compartment structure for infants. The absorption rate constant's unit L/h is dimensionally wrong for a first-order rate, which should be per hour, so the structural parameter failed the dimension check. A second reader found no value for either the clearance or the absorption rate in the source, leaving both parameter extractions unsupported. Because only the abstract was read, the reported summary statistics stood in for a fitted model, making the record inconclusive beyond the unit error. Extracted — darbepoetin alfa: CL 0.05 L/h/kg, kabs 0.062 L/h.
+The absorption rate constant kabs, meaning a first-order absorption rate constant, is given with the unit L/h, which does not match the dimension of a rate constant (per time), so the structural parameter failed the dimension check. The record was also built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader returned no value for either parameter (clearance 0.05 L/h/kg and kabs 0.062 L/h), disagreeing with both extracted values. Extracted — darbepoetin alfa: CL 0.05 L/h/kg, kabs 0.062 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of the clearance of darbe: this record has 0.05, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

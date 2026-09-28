@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The trospium record was held back because the absorption rate constant ka and lag time Tlag were never reported in the source, so placeholder values would have been used in an invented first-order absorption.**
+**The trospium record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, an invented absorption parameter.**
 
-The record reports only CL/F = 127.0 L/h and V/F = 1308.207 L for trospium in a one-compartment structure. ka and Tlag are absent from the source, so library placeholder values would have been substituted, and the absorption check failed with 'invented_absorption: not acceptable' because the defaulted ka was not reported. The builder also assumed F = 1 and Fm = 1 with no molar correction, giving an apparent (/F) parameterization with extravascular first-order depot input. A second reader also disagreed on one value field, recording 4 where the other reader found none. Extracted — trospium: CL/F 127 L/h, V/F 1.31e+03 L.
+The record reports trospium CL/F of 127.0 L/h and V/F of 1308.207 L from a review-secondary source, with an apparent (/F) parameterization assuming F=1 and Fm=1 and no molar correction. The absorption parameters ka and the absorption lag time were not extracted from the source, so library placeholder values would have been used in their place, and the invented ka was judged not acceptable. A first-order absorption from an extravascular depot was assumed for the dosing input. A second reader disagreed on one value field, recording null where this record had 4. Extracted — trospium: CL/F 127 L/h, V/F 1.31e+03 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 4, the second reading none. That field does not shape the model.
 
@@ -131,7 +131,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_trospium/Trospium_Oefelein2013_reference/Trospium_Oefelein2013_reference_modelica.zip" download>Trospium_Oefelein2013_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_trospium/Trospium_Oefelein2013_reference/Trospium_Oefelein2013_reference_fmi.zip" download>Trospium_Oefelein2013_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_trospium/Trospium_Oefelein2013_reference/Trospium_Oefelein2013_reference_fmi.zip" download>Trospium_Oefelein2013_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_trospium/Trospium_Oefelein2013_reference/Trospium_Oefelein2013_reference_matlab.zip" download>Trospium_Oefelein2013_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_trospium/Trospium_Oefelein2013_reference/Trospium_Oefelein2013_reference_matlab_simbio.zip" download>Trospium_Oefelein2013_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_trospium/Trospium_Oefelein2013_reference/Trospium_Oefelein2013_reference_sbml.zip" download>Trospium_Oefelein2013_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -143,7 +143,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 60 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Dose in the paper: 60 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_trospium/Trospium_Oefelein2013_reference/Trospium_Oefelein2013_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_trospium/Trospium_Oefelein2013_reference/Trospium_Oefelein2013_reference_sim_controls.json"></dbs-fmusim>
 

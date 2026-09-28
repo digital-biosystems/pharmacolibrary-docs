@@ -63,6 +63,49 @@ Blaser LS; Duthaler U; Bouitbir J; Leuppi-Taegtmeyer AB; Liakoni E; Dolf R; et a
 </details>
 
 
+## Exposure-response model
+
+`Epoprostenol_Blaser2021_PD_6_keto_prostaglandin_f1` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 101.6 n = 8 | — |
+| Emax | -61.3 n = 8 | — |
+| EC50 | 0.69 µM | — |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 101.6, `at_EC50` = 70.95, `at_inf` = 40.3
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+- `pd_binding_off_target_driver` — driver compound '4-methylaminoantipyrine (4-MAA)' is not 'epoprostenol' nor one of its metabolites — the curve belongs to that compound's exposure (S12)
+- `pd_binding_inhibition_sign` — effect_direction=inhibition with a positive Emax (Q320) — sign flipped
+- `pd_binding_exposure_unit_unresolved` — 'µM' — the x axis is in the paper's unit, not SI
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | fail | off-target driver — the curve belongs to that compound |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | curve direction matches effect_direction |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Blocking:
+
+- off_target_driver: '4-methylaminoantipyrine (4-MAA)' is not 'epoprostenol' (S12)
+
+Advisory:
+
+- defaulted: gamma (convention)
+- exposure unit not resolved to SI — the x axis is in the paper's unit
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
@@ -140,7 +183,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+<dbs-fmusim paramsurl="drugs/drug_epoprostenol/Epoprostenol_Blaser2021_PD_6_keto_prostaglandin_f1/Epoprostenol_Blaser2021_PD_6_keto_prostaglandin_f1_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_epoprostenol/Epoprostenol_Blaser2021_PD_6_keto_prostaglandin_f1/Epoprostenol_Blaser2021_PD_6_keto_prostaglandin_f1_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PD_SigmoidEmaxSweep` · parameters `Epoprostenol_Blaser2021_PD_6_keto_prostaglandin_f1_params.json` · controls `Epoprostenol_Blaser2021_PD_6_keto_prostaglandin_f1_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

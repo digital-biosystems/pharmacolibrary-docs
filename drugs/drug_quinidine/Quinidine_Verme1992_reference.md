@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record's clearance parameter for quinidine is actually calculated creatinine clearance (50 ml/min), a patient biomarker mistaken for drug clearance, and the model rests on abstract-only summary statistics with defaulted ka and Tlag.**
+**The quinidine record was rejected because its clearance parameter is actually calculated creatinine clearance (50 ml/min), a biomarker, not quinidine clearance, and an absorption rate was invented since the abstract-only source reported none.**
 
-The disposition parameter labelled 'calculated creatinine clearance' (50 ml/min) names a renal-function biomarker rather than quinidine clearance, so the analyte identity check failed. The record was built from the abstract alone, meaning reported summary statistics stood in for a fitted model. Absorption parameters ka and Tlag were not reported in the source and were left at library defaults, with an apparent (F=1, Fm=1) parameterization and first-order depot input assumed. A second reader disputed the apparent parameterization and read both parameter values as null. Extracted — quinidine: V/F 230 L, CL 50 ml/min.
+The disposition parameter labelled 'calculated creatinine clearance' (50 ml/min) names a biomarker rather than quinidine elimination, so the analyte-identity check failed. The record was built from the abstract alone, so summary statistics stood in for a fitted model; the absorption rate constant (ka) and lag time had no values in the source and were filled with library placeholders, and the invented absorption was judged unacceptable. The apparent parameterization (F=1, Fm=1, no molar correction) with first-order depot input is disputed by a second reader, who reads it as mechanistic; the second reader also reports null for both parameter values (50 and 230). Extracted — quinidine: V/F 230 L, CL 50 ml/min.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -138,7 +138,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 1200 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1200 mg oral (C01BA01) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_quinidine/Quinidine_Verme1992_reference/Quinidine_Verme1992_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_quinidine/Quinidine_Verme1992_reference/Quinidine_Verme1992_reference_sim_controls.json"></dbs-fmusim>
 

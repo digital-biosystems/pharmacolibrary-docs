@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 50 mg oral (N07BB04)",
+ "model_id": "Naltrexone_Reuning1979_reference",
+ "molar_masses": {
+  "central.C": 0.34140089999999995
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 7.466666666666667e-05,
+  "F": 0.9,
+  "MM": 0.34140089999999995,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0014579999999999999,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-05,
+  "ka": 0.008066666666666666,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 800.1395769904582
+ },
+ "reference_peaks": {
+  "central.C": 0.0003221143747552498
+ },
+ "stop_time": 144000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

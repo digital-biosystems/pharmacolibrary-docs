@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The metoprolol/atenolol rat model was held back because its simulated peak concentration (0.00028469390330175033 vs 0.025 µg/mL-equivalent) and time of peak (1.81 vs 5.0 min) miss the paper's values, and an unreported absorption rate was invented.**
+**The metoprolol/atenolol rat model was held back because its simulated Cmax (0.0498) and tmax (1.81) fail to match the paper's reported values (e.g. 0.025 and 5.0), and the absorption rate was invented rather than reported.**
 
-The model reproduces neither the paper's Cmax (expected 0.025, 0.0228, 0.0143, 0.0206; model 0.00028469390330175033, ratios 0.0114–0.0199) nor its tmax (expected 5.0 min, model 1.8099519719819221 h, ratio 0.362). The absorption rate constant ka was not reported in the source, so a default was substituted — an invented absorption the record flags as not acceptable — and F and Tlag were likewise left at defaults for missing source values. Additionally, a reported unit could not be converted to SI, so a parameter reached the model without an SI value. A second reader returned null for all three parameter values (CL 16.04 mL/min/kg, k01 1.19 mg/min/kg, Vss 1.41 L/kg), leaving the extraction unconfirmed. Extracted — atenolol and metoprolol: CL 16 mL/min/kg, kabs 1.19 mg/min/kg, V 1.41 L/kg.
+Simulated as the paper dosed it, the model's peak concentration exceeds the reported values by ratios of 1.9928, 2.1851, 2.4185 and 3.484 (expected 0.025, 0.0228, 0.0206, 0.0143 vs obtained 0.04982117140128287), and the time of the peak is 1.8062765240005605 against an expected 5.0 (ratio 0.3613), with a minutes-versus-hours unit mismatch noted. The absorption rate constant was defaulted because it was not reported in the source, an invented absorption that was judged not acceptable, and bioavailability and lag time were also left at defaults. Additionally, one reported parameter's unit could not be converted to SI, so that parameter entered the model without an SI value, and a second reader disagreed on the analyte naming and on whether the clearance (16.04 mL/min/kg), absorption rate (1.19 mg/min/kg) and volume of distribution (1.41 L/kg) values belong to this record. Extracted — atenolol and metoprolol: CL 16 mL/min/kg, kabs 1.19 mg/min/kg, V 1.41 L/kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atenolol and metoprolol, the second reading atenolol, metoprolol; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -109,18 +109,19 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=atenolol and metoprolol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
-| T1_cmax | reference | fail | 0.025 | 0.00028469390330175033 | 0.0114 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0228 | 0.00028469390330175033 | 0.0125 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0143 | 0.00028469390330175033 | 0.0199 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0206 | 0.00028469390330175033 | 0.0138 | µg/mL→SI vs simulated kg/m3 |
-| T1_tmax | reference | fail | 5.0 | 1.8099519719819221 | 0.362 | min→SI vs simulated h |
-| T1_tmax | reference | pass | 2.25 | 1.8099519719819221 | 0.8044 | min→SI vs simulated h |
-| T1_tmax | reference | pass | 1.8333333333333333 | 1.8099519719819221 | 0.9872 | min→SI vs simulated h |
+| T1_cmax | reference | fail | 0.025 | 0.04982117140128287 | 1.9928 | µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0228 | 0.04982117140128287 | 2.1851 | µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0143 | 0.04982117140128287 | 3.484 | µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0206 | 0.04982117140128287 | 2.4185 | µg/mL→SI vs simulated kg/m3 |
+| T1_tmax | reference | fail | 5.0 | 1.8062765240005605 | 0.3613 | min→SI vs simulated h |
+| T1_tmax | reference | pass | 2.25 | 1.8062765240005605 | 0.8028 | min→SI vs simulated h |
+| T1_tmax | reference | pass | 1.8333333333333333 | 1.8062765240005605 | 0.9852 | min→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -142,7 +143,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_modelica.zip" download>Metoprolol_Kir2025_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_fmi.zip" download>Metoprolol_Kir2025_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_fmi.zip" download>Metoprolol_Kir2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_matlab.zip" download>Metoprolol_Kir2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_matlab_simbio.zip" download>Metoprolol_Kir2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_sbml.zip" download>Metoprolol_Kir2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -154,7 +155,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 17500 mg, single dose, first-order absorption (ka 0.5 /h, F 0.9). Doses in the paper: 17500, 21840 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metoprolol/Metoprolol_Kir2025_reference/Metoprolol_Kir2025_reference_sim_controls.json"></dbs-fmusim>
 

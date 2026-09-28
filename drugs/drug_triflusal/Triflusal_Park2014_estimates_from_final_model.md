@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The triflusal–HTB parent–metabolite model was quarantined because F, CL, Vd, ka and Tlag had no reported values and were replaced by placeholders, and the reported units (weight/71.65) could not be converted to SI.**
+**The triflusal parent–metabolite model was quarantined because triflusal's F, CL, Vd, ka and Tlag had no reported values and library defaults were substituted, and the one-compartment structure did not match the recorded three-compartment disposition.**
 
-The record reports only two parameters, Q2 (8.300, unit 'weight/71.65') and kfm (0.341, unit 'weight/71.65'), whose unit could not be converted to SI, so those parameters reached the model without SI values. Triflusal's bioavailability, clearance, volume of distribution, absorption rate constant and lag time were not reported; placeholders were substituted, with ka explicitly invented. The structure also did not match the declared parent–metabolite topology, and the invented absorption was judged unacceptable. Extracted — triflusal: Q2 8.3 weight/71.65, kfm 0.341 weight/71.65.
+No value for triflusal's bioavailability, clearance, volume of distribution, absorption rate constant and absorption lag time. The model was built, but triflusal's bioavailability, clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The recorded structure — a one-compartment enteral model with metabolism of triflusal to HTB (kfm 0.341 weight/71.65) — did not match the three-compartment disposition the record describes, and the invented absorption (defaulted ka, not reported in the source) was judged not acceptable. Additionally, the reported unit weight/71.65 could not be converted to SI, so parameters such as Q2 (8.300) and kfm reached the model builder without SI values. Extracted — triflusal: Q2 8.3 weight/71.65, kfm 0.341 weight/71.65.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -104,10 +104,11 @@ Park SM; Lee J; Seong SJ; Park JG; Gwon MR; Lim MS; et al. et al. (2014). BMC ph
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | fail | not captured | invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">

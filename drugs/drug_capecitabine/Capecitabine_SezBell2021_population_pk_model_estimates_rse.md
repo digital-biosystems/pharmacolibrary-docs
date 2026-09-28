@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The capecitabine model was not simulated because three of its five parameters — V2 (13 L), tlag (29) and kabs (15) — had no extracted values and no defaults, leaving absorption and distribution incomplete.**
+**The capecitabine colorectal-cancer model was held back as not simulated because only 2 of its 5 parameters (CL and V2) were usable; tlag, kabs and V2 were not covered, and Q was replaced by a placeholder default.**
 
-The record lists five parameters for capecitabine: CL 12 L/h, V2 13 L, tlag 29, kabs 15 and Q 17, but the coverage check found only 2 of the 5 expected parameters covered, with V2, tlag and kabs neither emitted nor defaulted. No value was extracted for these three, so library placeholders would have been used in their place, and the model was held back. The builder also substituted a default for the missing Q1 value. The metabolism chain from capecitabine via 5'-deoxy-5-fluorouridine to 5-fluorouracil is present, but with absorption and distribution parameters unresolved the model has not been simulated. Extracted — capecitabine: CL 12 L/h, V2 13 L, tlag 29, kabs 15, Q 17.
+The record lists five parameters for capecitabine: CL (12 L/h), V2 (13 L), tlag (29), kabs (15) and Q (17). The parameter coverage check found only 2 covered, with tlag, kabs and V2 neither carried into the model nor given placeholder values, despite values appearing in the record. The intercompartmental clearance Q was substituted with a placeholder default (Q1) because no source value was available. The model was built but has not been simulated yet. Extracted — capecitabine: CL 12 L/h, V2 13 L, tlag 29, kabs 15, Q 17.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -100,6 +100,7 @@ Sáez-Belló M; Mangas-Sanjuán V; Martínez-Gómez MA; López-Montenegro Soria 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['V2', 'tlag', 'kabs'] |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |

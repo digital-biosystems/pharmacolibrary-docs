@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The fitusiran record was rejected because the paper reports no distribution volume and no clearance or elimination rate, so it is not a compartmental population PK model, and the structural parameter kint (2.01) carries mismatched units (1/h versus nM−1·h−1).**
+**The fitusiran record was rejected because it lacks a distribution volume and clearance — it is an exposure/outcome paper, not a compartmental population PK model — and a structural parameter failed a dimensional check.**
 
-The paper on fitusiran, a small interfering RNA against antithrombin, is an exposure/outcome study: it gives no distribution volume and no clearance or elimination rate, which a compartmental population PK model requires. A dimension mismatch was also flagged on a structural parameter: kint is labelled 1/h but reported with unit nM−1·h−1. One reported unit could not be converted to SI, so that parameter was carried without an SI value. A second reader additionally extracted fesc 0.019, kdegd 0.0012, kpliver 1.02 and psliver 56.73, none of which appear in this record. Extracted — fitusiran: kabs 0.38 units, fu 0.39 units, Rtot 33.1 nM, Vmax 5.81 nmol/h, Km 27.4 units, koff 0.021 units, kint 2.01 nM−1·h−1, KD 0.14 nM.
+No volume of distribution and no clearance or elimination rate are reported for fitusiran, so the record cannot form a compartmental population PK model; the paper is an exposure/outcome study. A dimension mismatch was also flagged on a structural parameter, and one reported unit could not be converted to SI, so that parameter entered the model without an SI value. The second reader additionally extracted parameters absent from this record: fesc 0.019, kdegd 0.0012, kpliver 1.02, and psliver 56.73. Extracted — fitusiran: kabs 0.38 units, fu 0.39 units, Rtot 33.1 nM, Vmax 5.81 nmol/h, Km 27.4 units, koff 0.021 units, kint 2.01 nM−1·h−1, KD 0.14 nM.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of fesc: this record has none, the second reading 0.019; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

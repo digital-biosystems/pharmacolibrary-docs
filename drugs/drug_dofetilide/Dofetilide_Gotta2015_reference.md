@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**The paper reports none of the model's key parameters.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dofetilide, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

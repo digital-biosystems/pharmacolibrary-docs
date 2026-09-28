@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The colistin sulfate model (TVCL 0.994 L/h, TVV 20.7 L) was held back because the reference check could not compute a comparison, returning no ratio, so the clearance value is unverified rather than demonstrably wrong.**
+**The colistin sulfate record was held back because the clearance reference check could not compute a comparison (ratio None), leaving the typical clearance value of 0.994 L/h unverified rather than shown to be wrong.**
 
-The record describes a one-compartment model for colistin sulfate in critically ill patients, with typical clearance TVCL of 0.994 L/h, volume TVV of 20.7 L, and a creatinine-clearance covariate effect theta_cl_crcl of 0.525. The check intended to compare the reported clearance against its reference failed without producing a ratio, meaning no numerical comparison could be computed. This is therefore an inconclusive check rather than a demonstrated fault in the parameter values themselves. Extracted — colistin: V 20.7 L.
+The record reports colistin sulfate in critically ill patients with a typical clearance (TVCL) of 0.994 L/h, a volume of distribution of 20.7 L, and a creatinine-clearance covariate effect of 0.525. The reference check failed with ratio None, meaning no comparison could be computed; this is an inconclusive check, not a demonstrated fault in the values. The record is therefore flagged needs_review pending resolution of that inconclusive comparison. Extracted — colistin: V 20.7 L.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

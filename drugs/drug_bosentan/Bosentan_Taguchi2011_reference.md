@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The bosentan model was quarantined because clearance, absorption rate constant and absorption lag time had no extracted values, so placeholder numbers stood in; only the paper abstract was read, and the absorption rate constant (0.175 h⁻¹) is disputed.**
+**The bosentan record was quarantined because clearance, absorption rate constant and absorption lag time had no values from the source, so library placeholders stood in for these parameters.**
 
-The record for bosentan in Japanese pediatric pulmonary arterial hypertension patients carries only k (0.175 h⁻¹) and V/F (77.0 L); CL/F has no value, and the absorption rate constant and lag time were likewise absent, so placeholder values were substituted for clearance, absorption rate constant and lag time and the model was held back rather than published with invented numbers. The source was abstract-only, meaning reported summary statistics stood in for a fitted model, and the invented absorption (a defaulted ka, not reported in the source) was judged not acceptable. The parameterization is apparent (F=1, Fm=1, no molar correction), implying extravascular first-order depot input. A second reader disagreed on the k value (0.175 vs null) and on the dosing-compartment and primary-analyte fields, so even the extracted numbers are contested. Extracted — bosentan: kel 0.175 h(-1), V/F 77 L.
+The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model; only kel (0.175 h^-1) and V/F (77.0 L) were extracted, while CL/F had no value. The absorption rate constant was not reported in the source, and the builder defaulted ka and Tlag, which was judged an invented absorption input and not acceptable. The parameterization is apparent (F=1, Fm=1, no molar correction) with first-order depot input for extravascular dosing. A second reader disagreed on whether bosentan is the dose compound and primary analyte, and on whether the k value of 0.175 belongs to the record. Extracted — bosentan: kel 0.175 h(-1), V/F 77 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bosentan, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 

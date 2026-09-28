@@ -132,7 +132,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Friedrich2014_reference/Rosuvastatin_Friedrich2014_reference_modelica.zip" download>Rosuvastatin_Friedrich2014_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Friedrich2014_reference/Rosuvastatin_Friedrich2014_reference_modelica.zip" download>Rosuvastatin_Friedrich2014_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Friedrich2014_reference/Rosuvastatin_Friedrich2014_reference_fmi.zip" download>Rosuvastatin_Friedrich2014_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Friedrich2014_reference/Rosuvastatin_Friedrich2014_reference_matlab.zip" download>Rosuvastatin_Friedrich2014_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rosuvastatin/Rosuvastatin_Friedrich2014_reference/Rosuvastatin_Friedrich2014_reference_matlab_simbio.zip" download>Rosuvastatin_Friedrich2014_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -145,7 +145,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.3 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 30 mg, single dose, first-order absorption (ka 0.3 /h, F 1). Doses in the paper: 30, 100, 500 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_rosuvastatin/Rosuvastatin_Friedrich2014_reference/Rosuvastatin_Friedrich2014_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_rosuvastatin/Rosuvastatin_Friedrich2014_reference/Rosuvastatin_Friedrich2014_reference_sim_controls.json"></dbs-fmusim>
 

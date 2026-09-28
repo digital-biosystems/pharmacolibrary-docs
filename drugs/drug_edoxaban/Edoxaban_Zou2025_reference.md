@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The edoxaban pediatric model was quarantined because clearance, absorption rate constant and absorption lag time had no source values and were left at library placeholder defaults, and the invented absorption rate constant (3.71 1/h) was judged not acceptable.**
+**The edoxaban pediatric model was quarantined because clearance, absorption rate constant and absorption lag time had no source values, so placeholder numbers stood in for these parameters instead of the reported ones.**
 
-The record lists edoxaban parameters (CL/F 42.87 L/h, Ka 3.71 1/h, V1/F 261 L, Q/F 8.59 L/h, V2/F 343.5 L, Ktr 47.5 1/h), yet clearance, absorption rate constant and absorption lag time were missing from the source, so placeholder values stood in for them and the model was held back rather than published with invented numbers. The absorption rate constant was additionally flagged as invented, since Ka was not reported in the source. The model also assumes F=1, Fm=1 and no molar correction (apparent parameterization). Finally, although covariate effects such as the eGFR effect (0.268) are defined, only the reference individual was simulated, so the covariate scenarios were not exercised. Extracted — edoxaban: CL/F 42.9, kabs 3.71, V1/F 261 L, Q/F 8.59 L/h, V2/F 344 L, ktr 47.5.
+Although the paper reports edoxaban values such as CL/F 42.87 L/h, Ka 3.71 1/h, V1/F 261 L, Q/F 8.59 L/h and V2/F 343.5 L, the built model left clearance, absorption rate constant and absorption lag time without extracted values, so library placeholder numbers were used and the model was held back rather than published with an invented number; the absorption rate constant was judged an invented value not reported in the source. The model also assumed F=1 and Fm=1 with no molar correction (apparent parameterization). In addition, the covariate effects defined in the record (body-weight power and eGFR, theta 0.268) were not exercised: only the reference individual was simulated. Extracted — edoxaban: CL/F 42.9, kabs 3.71, V1/F 261 L, Q/F 8.59 L/h, V2/F 344 L, ktr 47.5.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -100,6 +100,7 @@ Zou P; Atluri A; Chang P; Goedecke M; Leil TA et al. (2025). CPT: pharmacometric
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |

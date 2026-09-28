@@ -1,23 +1,32 @@
 {
+ "dose_source": "paper",
  "model_id": "GlycerylTrinitrate_ElNabarawy2019_reference",
+ "molar_masses": {
+  "central.C": 0.227085
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
-  "C_central"
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  350.0
  ],
  "parameters": {
   "Cl": 3.115e-07,
   "F": 1.0,
+  "MM": 0.227085,
   "VdPerKg": 4.142857142857142e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.00035,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "C_central": 660.0000000662067
+  "central.C": 660.0000000662004
  },
  "reference_peaks": {
-  "C_central": 0.033395071848861105
+  "central.C": 0.11688275513726824
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The nadroparin one-compartment model was rejected because a structural parameter's reported unit could not be converted to SI, leaving the absorption rate constant kabs (0.319 1/h) without an SI value, and a second reader read kabs as 0.325 rather than 0.319.**
+**The nadroparin record was rejected because a structural parameter's reported unit could not be converted to SI, giving a dimension mismatch; the absorption rate constant kabs (0.319 1/h) is the affected parameter.**
 
-The record reports nadroparin (Fraxiparine/Fraxiparine forte) in adults with COVID-19 with a one-compartment structure and three group-1 parameters: apparent volume of distribution V/F 6.62 L, apparent clearance CL/F 1.15 L/h, and absorption rate constant kabs 0.319 1/h. One of these parameters was reported in a unit that could not be converted to SI, so it entered the model without an SI value, producing a dimension mismatch on a structural parameter and rejection. A second reader (gpt-oss:120b) disagreed on the absorption rate constant value, reading 0.325 instead of 0.319, and supplied relative standard errors (kabs 10.5%, CL/F 4.2%, V/F 9.6%) that are absent (null) in this record. Extracted — nadroparin: V/F 6.62 unit, CL/F 1.15 unit, kabs 0.319 unit.
+The one-compartment model for nadroparin in adults with COVID-19 carries V/F 6.62 L, CL/F 1.15 L/h and kabs 0.319 1/h, but the unit field for these parameters was recorded only as 'unit', so the absorption rate constant reached the model without an SI value and failed the dimension check on a structural parameter. A second reader also read kabs as 0.325 rather than 0.319 and reported relative standard errors (kabs 10.5%, CL/F 4.2%, V/F 9.6%) that are absent from this record, though the rejection rests on the unit problem. Extracted — nadroparin: V/F 6.62 unit, CL/F 1.15 unit, kabs 0.319 unit.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[absorption rate constant in group 1].value`: this record has 0.319, the second reading 0.325; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

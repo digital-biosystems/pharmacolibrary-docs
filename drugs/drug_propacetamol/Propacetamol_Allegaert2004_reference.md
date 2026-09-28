@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The paracetamol clearance for propacetamol in neonates is reported as 2.85 l/70 kg, a dimensionally inconsistent unit for a structural parameter, so the record was rejected.**
+**The propacetamol record was rejected because clearance for paracetamol is reported as 2.85 l/70 kg, a per-70-kg unit that does not dimensionally match the structural clearance parameter in this neonatal model.**
 
-The record describes a one-compartment model for paracetamol (measured after propacetamol administration) in term and preterm neonates, with volume of distribution 70.4 l and clearance 2.85 l/70 kg. The clearance unit l/70 kg does not match the dimension of a clearance parameter, which triggered the rejection. The record was also built from the paper's abstract alone, so the reported summary statistics stood in for a fitted model. A second reader recorded no value for either parameter, leaving the disagreement on both 70.4 l and 2.85 l/70 kg unresolved. Extracted — paracetamol: V 70.4 l, CL 2.85 l/70 kg.
+The record was built from the paper's abstract only, so summary statistics stood in for a fitted model. The clearance parameter carries the unit l/70 kg, which triggered a dimension mismatch on a structural parameter. A second reader recorded no value for either clearance (2.85) or the volume of distribution (70.4 l), disagreeing with both entries. Extracted — paracetamol: V 70.4 l, CL 2.85 l/70 kg.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance: this record has 2.85, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

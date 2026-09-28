@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;enoxaparin&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/&quot;},{&quot;label&quot;:&quot;Zufferey_2021 \u00b7 iiv_r_s_e&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enoxaparin_Zufferey2021_iiv_r_s_e&quot;,&quot;label&quot;:&quot;Zufferey_2021_iiv_r_s_e&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_iiv_r_s_e.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Enoxaparin_Zufferey2021_value_r_s_e&quot;,&quot;label&quot;:&quot;Zufferey_2021_value_r_s_e&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_value_r_s_e.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enoxaparin_Zufferey2021_value_r_s_e&quot;,&quot;label&quot;:&quot;Zufferey_2021_value_r_s_e&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_value_r_s_e.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enoxaparin_Zufferey2021_iiv_r_s_e&quot;,&quot;label&quot;:&quot;Zufferey_2021_iiv_r_s_e&quot;,&quot;href&quot;:&quot;drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_iiv_r_s_e.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # enoxaparin — `Enoxaparin_Zufferey2021_iiv_r_s_e`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,20 +15,20 @@
 
 ### Reviewer guidance
 
-**No value for enoxaparin's bioavailability, clearance and absorption lag time.**
+**The enoxaparin record was rejected because its clearance is entered as a covariate formula label ('Cl (L.h-1) = θ1 × (eGFR/87)θ2') rather than an enoxaparin parameter, and F, Cl and Tlag were left at defaults.**
 
-The model was built, but enoxaparin's bioavailability, clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — enoxaparin: kabs 0.48 h-1, V 17.9 L.
+The disposition parameter for enoxaparin carries the label 'Cl (L.h-1) = θ1 × (eGFR/87)θ2' with value 0.4 L.h-1, which the analyte-identity check flagged as naming a covariate expression rather than the measured compound. The model builder substituted library defaults for the missing bioavailability, clearance and lag-time values, so the record was held back. The volume of distribution (17.9 L) was extracted, but a second reader recorded no value for the clearance fields, leaving that disagreement unresolved. Extracted — enoxaparin: kabs 0.48 h-1, V 17.9 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl: this record has none, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Zufferey PJ; Dupont A; Lanoiselée J; Bauters A; Poissy J; Goutay J; et al. et al. (2021). Thrombosis research 205
   ·  DOI: [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010)
 
 ## Model component
-<dbs-pgx drug="enoxaparin" model-id="Enoxaparin_Zufferey2021_iiv_r_s_e" status="model_quarantined" stale="false" population="COVID-19 critically ill patients" measured-compound="enoxaparin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="enoxaparin" model-id="Enoxaparin_Zufferey2021_iiv_r_s_e" status="rejected" stale="false" population="COVID-19 critically ill patients" measured-compound="enoxaparin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.
@@ -36,7 +36,7 @@ Zufferey PJ; Dupont A; Lanoiselée J; Bauters A; Poissy J; Goutay J; et al. et a
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -137,6 +137,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | fail | enoxaparin (or metabolite) | Cl (L.h-1) = θ1 × (eGFR/87)θ2 | not captured | disposition label(s) name a biomarker, not enoxaparin: 'Cl (L.h-1) = θ1 × (eGFR/87)θ2' |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
@@ -158,19 +159,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

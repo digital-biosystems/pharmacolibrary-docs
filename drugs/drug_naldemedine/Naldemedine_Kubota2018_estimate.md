@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The naldemedine 2-compartment model was quarantined because CL/F, ka and k21 had no values in the source, so library defaults stood in for these parameters.**
+**Naldemedine's clearance, absorption rate constant and peripheral-to-central rate constant have no values in the record, so library defaults were substituted and the model was quarantined.**
 
-The record lists CL/F, ka and k21 as parameters but gives no values for them; library placeholder defaults were substituted, and the model was held back rather than published with invented numbers. The absorption rate constant ka was additionally flagged as an invented absorption parameter, since it was not reported in the source. The covariate effects defined in the record were not exercised — only the reference individual was simulated. A second reader also disagreed on the maximum parameter, reading 51.36 where this record has none. Extracted — naldemedine: V1/F 83.6 L, Q/F 4.77 L/h, V2/F 37.7, tlag 0.195 hr.
+The record for naldemedine (Kubota_2018, two-compartment structure) reports V1/F = 83.6 L, V2/F = 37.7 L, Q/F = 4.77 L/h and tlag = 0.195 h, but CL/F, Ka and k21 carry no extracted values; placeholders stood in for them, and the invented absorption (defaulted Ka) was judged not acceptable. The model also assumed F = 1 and Fm = 1 with no molar correction, and the covariate effects defined in the record were not simulated — only the reference individual was. A second reader recorded 51.36 as a maximum parameter value where this record has none, and no THETA value where this record has -0.195. Extracted — naldemedine: V1/F 83.6 L, Q/F 4.77 L/h, V2/F 37.7, tlag 0.195 hr.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of max: this record has none, the second reading 51.36; it also differs on 1 more field. That field does not shape the model.
 
@@ -155,6 +155,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |

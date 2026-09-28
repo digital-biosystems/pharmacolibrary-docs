@@ -1,4 +1,5 @@
 {
+ "dose_source": "WHO ATC DDD 2000 mg oral (A10BA02)",
  "model_id": "Metformin_Zhang2025_reference",
  "molar_masses": {
   "central.C": 0.1291636
@@ -15,15 +16,15 @@
   "VdPerKg": 0.003514285714285714,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.002,
   "ka": 0.00036111111111111115,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 7950.48353770228
+  "central.C": 7923.0288707152295
  },
  "reference_peaks": {
-  "central.C": 0.00032530244394406643
+  "central.C": 0.006506049043085257
  },
  "stop_time": 126000.0,
  "template": "PK_1C_enteral",

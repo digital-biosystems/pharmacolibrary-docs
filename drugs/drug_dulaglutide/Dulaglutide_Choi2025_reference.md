@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The dulaglutide 2-compartment model was rejected because a compartment has no dosing path: the structure leaves one compartment unreachable, so the recorded CL/F, V1, V2 and ka values cannot be accepted.**
+**The dulaglutide two-compartment record was rejected because the model structure leaves a compartment unreachable from the dose, and the two readers disagree on several parameter values.**
 
-The record describes a 2-compartment dulaglutide model with CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L and absorption rate constant ka 0.006 h⁻¹, but the structure check found an unreachable or orphan compartment — a compartment with no path from the dose — so the model was refused. A second reader also disagreed with the record on several extracted values, reading 5.52, 66.93, 24.8 and 75.2 where the record had null, and null where the record had 18, 6 and 21; these disagreements are inconclusive as to which values are correct. Extracted — dulaglutide: CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
+The record for dulaglutide (Choi_2025, review reference population) contains CL/F 0.044 L/h, central volume 2.8 L, peripheral volume 3.96 L, and absorption rate constant 0.006 h-1, but the structure check found an unreachable or orphan compartment or an unlinked metabolite, so the model was refused. A second reader also disagreed with the extracted values on several fields: where this record has 18 and 6 and 21, the second reader found nothing, and where this record has nothing, the second reader found 5.52, 66.93, 24.8, and 75.2. These value disagreements are recorded but the stated rejection cause is the topology problem. Extracted — dulaglutide: CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q311: this record has none, the second reading 5.52; it also differs on 6 more fields. That field does not shape the model.
 

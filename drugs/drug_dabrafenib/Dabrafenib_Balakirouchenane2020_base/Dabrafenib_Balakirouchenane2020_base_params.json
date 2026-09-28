@@ -1,8 +1,9 @@
 {
+ "dose_source": "paper",
  "model_id": "Dabrafenib_Balakirouchenane2020_base",
  "molar_masses": {
-  "C_M1": 0.5356000000000001,
-  "C_central": 0.519562
+  "C_M1": 0.535559,
+  "central.C": 0.519562
  },
  "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observable_labels": {
@@ -10,15 +11,20 @@
   "C_central": "dabrafenib"
  },
  "observables": [
-  "C_central",
+  "central.C",
   "C_M1"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  75.0,
+  150.0
  ],
  "parameters": {
   "CL1": 0.0,
   "CLm1": 6.333333333333333e-06,
   "F": 1.0,
   "MW": 0.519562,
-  "MW_m1": 0.5356000000000001,
+  "MW_m1": 0.535559,
   "Tlag": 1800.0,
   "Vd1": 0.0395,
   "Vd1m1": 0.019600000000000003,
@@ -26,7 +32,7 @@
   "Vd2m1": 0.0257,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 7.5e-05,
   "ka": 0.0005,
   "q12": 1.0694444444444445e-06,
   "q1_m11": 4.9166666666666665e-06,
@@ -35,12 +41,12 @@
   "qm12_m11": 2.0527777777777777e-06
  },
  "reference_peak_times": {
-  "C_M1": 8974.276119190285,
-  "C_central": 5718.671060295977
+  "C_M1": 8975.677887072407,
+  "central.C": 5719.004169204677
  },
  "reference_peaks": {
-  "C_M1": 0.0008096220841518262,
-  "C_central": 0.0015259782468235333
+  "C_M1": 0.0006071710741942506,
+  "central.C": 0.0011444824508543851
  },
  "stop_time": 86400.0,
  "template": "PK_3M_9C",

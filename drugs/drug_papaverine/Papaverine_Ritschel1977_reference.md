@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**Only volume was extracted — no clearance; v has no unit.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — papaverine: V 15 % of the body weight.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — papaverine: V 15 % of the body weight.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of biological half-life: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The glibenclamide model was quarantined because Vd, ka and Tlag had no source values and were left at library defaults, with ka invented and V2/F and Q/F uncovered.**
+**The glibenclamide model was quarantined because its volume of distribution, absorption rate constant and absorption lag time had no source values, so library placeholder values stood in for these parameters.**
 
-No value for glibenclamide's volume of distribution, absorption rate constant and absorption lag time was reported, so library placeholders stood in for Vd, ka and Tlag and the model was held back rather than published with invented numbers. The parameter-coverage check found only 2 of 4 expected parameters covered, with V2/F (23.04 l) and Q/F (65.35 l/h) neither emitted nor defaulted. The builder also invented an absorption step by defaulting ka, which was not reported in the source, and assumed F=1 and Fm=1 without molar correction (apparent parameterization). Extracted — glibenclamide: kabs 28.6, CL/F 33.9 l/h, V2/F 23 l, Q/F 65.3 l/h, V3/F 0.02 l.
+The record reports glibenclamide parameters for poorly controlled South African type 2 diabetic subjects, but the model builder substituted placeholder values for the volume of distribution, absorption rate constant (ka) and absorption lag time, and the invented absorption constant was judged not acceptable. The parameter coverage check found only 2 of 4 expected parameters covered, with V2/F (23.04 l) and Q/F (65.35 l/h) neither emitted nor defaulted. The model also assumes F=1 and Fm=1 with no molar correction, i.e. an apparent parameterization. Extracted — glibenclamide: kabs 28.6, CL/F 33.9 l/h, V2/F 23 l, Q/F 65.3 l/h, V3/F 0.02 l.
 
 Independently confirmed by `gpt-oss:120b`.
 
@@ -92,6 +92,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | fail | 4 scholar param(s) emitted or defaulted | 2 covered | not captured | neither emitted nor in defaulted[]: ['V2/F', 'Q/F'] |

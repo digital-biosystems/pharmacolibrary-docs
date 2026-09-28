@@ -127,7 +127,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_doxorubicin/Doxorubicin_Taylor2026_reference/Doxorubicin_Taylor2026_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_doxorubicin/Doxorubicin_Taylor2026_reference/Doxorubicin_Taylor2026_reference_sim_controls.json"></dbs-fmusim>
 

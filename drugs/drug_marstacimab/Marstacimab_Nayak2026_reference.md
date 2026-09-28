@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The marstacimab record lacks a value for the absorption lag time (tlag), so only 5 of 6 expected parameters were covered and the model was held back for review.**
+**The marstacimab record was held back because the absorption lag time (tlag, 2 h) was not extracted or defaulted, leaving only 5 of 6 expected parameters covered, and the intercompartmental rate constants k13/k31 had no source values.**
 
-The three-compartment marstacimab model lists Cmax, V1 (3.61 L), CL (0.0188 L/h), V2 (4.99 L), V (8.6 L) and Q (0.00489 L/h), but the lag time (tlag, 2 h) was neither emitted nor defaulted, leaving 5 of 6 expected parameters covered. In pharmacokinetic terms, the absorption lag time had no value, so a placeholder would have been used. Additionally, the intercompartmental rate constants k13 and k31 were substituted with library defaults because no source values were available. A second reader returned no values for any of the parameters, so no independent confirmation exists. Extracted — marstacimab: Cmax 12.2, V1 3.61 L, CL 0.0188 L/h, tlag 2 h, V2 4.99 L, V 8.6 L, Q 0.00489 L/h.
+For marstacimab (3-compartment structure), the coverage check expected 6 parameters but found 5, with tlag (2 h) neither emitted nor given a placeholder value. The model builder substituted assumed placeholder values for the missing first-order transfer rate constants k13 and k31, which describe distribution between the central (V1, 3.61 L) and peripheral (V2, 4.99 L) compartments and correspond to the intercompartmental clearance Q (0.00489 L/h). A second reader returned null for all six parameters — CL (0.0188 L/h), tlag, Q, total volume of distribution (8.6 L), Vc, and Vp — so no independent confirmation of any value exists. Extracted — marstacimab: Cmax 12.2, V1 3.61 L, CL 0.0188 L/h, tlag 2 h, V2 4.99 L, V 8.6 L, Q 0.00489 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of -cl: this record has 0.0188, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -135,8 +135,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | T3_param_coverage | not captured | fail | 6 scholar param(s) emitted or defaulted | 5 covered | not captured | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template | not captured | pass | 3C → PK_3C* | PK_3C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
-| T1_t_half_beta | reference | skipped | not captured | 31807.951399360274 | not captured | non-numeric value |
-| T1_t_half_terminal | reference | skipped | not captured | 31807.951399360274 | not captured | non-numeric value |
+| T1_t_half_beta | reference | skipped | not captured | 5691.904705292905 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | skipped | not captured | 5691.904705292905 | not captured | non-numeric value |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -158,11 +158,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_modelica.zip" download>Marstacimab_Nayak2026_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_fmi.zip" download>Marstacimab_Nayak2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_3C.fmu" download>PK_3C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_matlab.zip" download>Marstacimab_Nayak2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_matlab_simbio.zip" download>Marstacimab_Nayak2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_sbml.zip" download>Marstacimab_Nayak2026_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_cellml.zip" download>Marstacimab_Nayak2026_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_cellml.zip" download>Marstacimab_Nayak2026_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_3C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
@@ -170,7 +170,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 150 mg infusion over 10 min, single dose. Doses in the paper: 150, 300 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_params.json" metaurl="assets/fmu/PK_3C.vr.json" wasmurl="assets/fmu/PK_3C.js" controlsurl="drugs/drug_marstacimab/Marstacimab_Nayak2026_reference/Marstacimab_Nayak2026_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record was rejected because the absorption rate constant ka is reported as 127 %, a percentage that cannot serve as a first-order rate constant (unit 1/h) in the one-compartment topiramate model, and the model itself was only taken from the paper's abstract rather than a fitted model.**
+**The topiramate record from Marques_2020 was rejected because the absorption rate constant ka is reported as 127 % and clearance CL as 65 %, dimensionally invalid values for these parameters.**
 
-The topiramate model for neonates with hypoxic ischaemic encephalopathy under therapeutic hypothermia has a one-compartment structure with V = 3.22 L, but the absorption parameter ka is given as 127 % and clearance as 65 %, both dimensionless percentages where a pharmacokinetic rate constant (1/h) and a clearance (L/h) are expected — a dimensional mismatch on a structural parameter. Because only the paper's abstract was read, these summary statistics stand in for a fitted model, so the values cannot be traced to a full parameterisation. Extracted — topiramate: V 3.22 L, kabs 127 %, CL 65 %.
+The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. In that source, ka (absorption rate constant) is given as 127 with unit '%' and CL (total clearance) as 65 with unit '%', a dimension mismatch on structural parameters since a rate constant and a clearance cannot be percentages. Only the volume of distribution V = 3.22 L is dimensionally consistent. Extracted — topiramate: V 3.22 L, kabs 127 %, CL 65 %.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

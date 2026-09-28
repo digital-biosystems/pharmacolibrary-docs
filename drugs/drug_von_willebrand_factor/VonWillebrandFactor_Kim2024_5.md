@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record treats a table-statistics column ('5') as a study population and reports physiologically implausible factor VIII values (CL 0.000321 L/h, V2 1150 L), so it was rejected.**
+**The factor VIII clearance of 0.000321 L/h is physiologically implausible, indicating a unit or scale extraction error, and the estimates table was mis-split so column '5' was treated as a study population.**
 
-The estimates table was split into one record per column, and '5' holds a statistic rather than a second set of estimates, so the record does not represent a real study population. The reported factor VIII clearance of 0.000321 L/h and peripheral volume of 1150 L fall outside physiological windows, consistent with a unit or scale extraction error. A second reader disputed the dosing compound (BT200 vs unknown) and the primary analyte (factor VIII vs von Willebrand factor), and gave no values for the parameters, leaving the numeric discrepancies unresolved. Extracted — factor VIII: CL 0.000321 L/h, V1 5.8 L, Q 0.0342 L/h, V2 1.15e+03 L, kabs 0.0127.
+The record reports a total clearance of 0.000321 L/h for factor VIII, a magnitude outside the physiological window that points to a unit or scale extraction error; the second reader read the clearance as 0.000242 L/h. The estimates table was split into one record per column, and column '5' holds a table statistic rather than a second study population. The record is also internally inconsistent about the analyte: the drug is von willebrand factor (e.g., Humate-P) while the measured compound is factor VIII, and the second reader assigned the dose compound as BT200 and the primary analyte as von willebrand factor. Extracted — factor VIII: CL 0.000321 L/h, V1 5.8 L, Q 0.0342 L/h, V2 1.15e+03 L, kabs 0.0127.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has BT200, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 

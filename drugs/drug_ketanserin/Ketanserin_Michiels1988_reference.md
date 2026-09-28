@@ -130,18 +130,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ketanserin/Ketanserin_Michiels1988_reference/Ketanserin_Michiels1988_reference_modelica.zip" download>Ketanserin_Michiels1988_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ketanserin/Ketanserin_Michiels1988_reference/Ketanserin_Michiels1988_reference_matlab.zip" download>Ketanserin_Michiels1988_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ketanserin/Ketanserin_Michiels1988_reference/Ketanserin_Michiels1988_reference_matlab_simbio.zip" download>Ketanserin_Michiels1988_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ketanserin/Ketanserin_Michiels1988_reference/Ketanserin_Michiels1988_reference_sbml.zip" download>Ketanserin_Michiels1988_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ketanserin/Ketanserin_Michiels1988_reference/Ketanserin_Michiels1988_reference_cellml.zip" download>Ketanserin_Michiels1988_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_ketanserin/Ketanserin_Michiels1988_reference/Ketanserin_Michiels1988_reference.svg" alt="Ketanserin_Michiels1988_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 40 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 40 mg parenteral (C02KD01) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_ketanserin/Ketanserin_Michiels1988_reference/Ketanserin_Michiels1988_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_ketanserin/Ketanserin_Michiels1988_reference/Ketanserin_Michiels1988_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Ketanserin_Michiels1988_reference_params.json` · controls `Ketanserin_Michiels1988_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

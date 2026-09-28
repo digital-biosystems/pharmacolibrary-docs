@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The voxelotor record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, and the CYP3A4-inducer covariate effect on CL/F was never simulated.**
+**The voxelotor record was held back because the model builder invented an absorption rate constant (ka defaulted, not reported in the source) and left ka and Tlag without source values, so the record deviates from the published model.**
 
-The record lists ka as 2.38 1/h, but this value was not reported in the source paper; the model builder substituted a default for ka and Tlag, so the absorption input does not reflect the published model. The record also assumes F=1 and Fm=1 with no molar correction, treating all parameters as apparent. Finally, although the record defines a covariate effect of CYP3A4 inducers on CL/F (0.39), only the reference individual was simulated, so the covariate scenarios were not exercised. Extracted — voxelotor: CL/F 6.14 L/h, V1/F 333 L, Q/F 0.39 L/h, V2/F 72.3 L, Kp 0.43, kabs 2.38.
+The paper reports kabs = 2.38 1/h for voxelotor, yet the model builder substituted placeholder values for ka and Tlag because no values were extracted from the source, and adjudication flagged the invented absorption as not acceptable. The record also assumes F=1, Fm=1 and no molar correction (apparent parameterization), so the reported CL/F = 6.14 L/h, V1/F = 333 L, Q/F = 0.39 L/h and V2/F = 72.3 L are used as apparent values. In addition, the covariate effect (cyp3a4_inducer_on_cl_f_expth = 0.39) was defined but not exercised: only the reference individual was simulated, not the covariate scenarios. Extracted — voxelotor: CL/F 6.14 L/h, V1/F 333 L, Q/F 0.39 L/h, V2/F 72.3 L, Kp 0.43, kabs 2.38.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -124,7 +124,7 @@ Savic RM; Green ML; Jorga K; Zager M; Washington CB et al. (2022). CPT: pharmaco
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_modelica.zip" download>Voxelotor_Savic2022_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_fmi.zip" download>Voxelotor_Savic2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_matlab.zip" download>Voxelotor_Savic2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_matlab_simbio.zip" download>Voxelotor_Savic2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_sbml.zip" download>Voxelotor_Savic2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -136,7 +136,7 @@ Savic RM; Green ML; Jorga K; Zager M; Washington CB et al. (2022). CPT: pharmaco
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 500 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 500, 600, 900, 1000, 1500 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference_sim_controls.json"></dbs-fmusim>
 

@@ -15,11 +15,11 @@
 
 ### Reviewer guidance
 
-**C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter.**
+**Rejected: the cannabinoids (cannabigerol) record is internally inconsistent — elimination rate constant kel = 1.43 1/h contradicts the reported terminal half-life t1/2z = 29.22 h, and Vmax is reported as 0.0041 L/kg, a volume unit for a metabolic rate parameter.**
 
-A reported unit could not be converted (AUCt, AUC and Cmax), so that value has no SI equivalent. Extracted — cannabinoids: AUCt 856 μmol/L·h, AUC 2.38e+03 μmol/L·h, Cmax 5.51e+03 μmol/L, tmax 2.28 h, t1/2z 29.2 h, Vss 74.3 L/kg, AUC ratio 54.2, Fab 0.29, … (+8).
+The apparent-parameter coherence check failed with a double correction: kel = 1.43 1/h does not match the terminal half-life of 29.22 h (which implies a much smaller rate constant), and the bioavailability Fab = 0.29 appears to have been applied more than once in deriving apparent parameters. A dimension mismatch was flagged on a structural parameter: Vmax, defined as the maximum rate of enzymatic metabolism, is given in L/kg (0.0041 L/kg), a volume unit. Additionally, the reported AUC units (μmol/L·h) could not be converted to SI, so those parameters reached the model build without an SI value. Extracted — cannabinoids: AUCt 856 μmol/L·h, AUC 2.38e+03 μmol/L·h, Cmax 5.51e+03 μmol/L, tmax 2.28 h, t1/2z 29.2 h, Vss 74.3 L/kg, AUC ratio 54.2, Fab 0.29, … (+8).
 
-<sub>the checker's own wording — not yet put into words by an LLM</sub>
+<sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
 Serrano-Rodríguez JM; Miraz R; Saitua A; Díez de Castro E; Ledesma-Escobar C; Ferreiro-Vera C; Priego-Capote F; Sánchez de Medina V; Sánchez de Medina A et al. (2025). Frontiers in veterinary science 12

@@ -5,7 +5,7 @@
 
 # clopidogrel — `Clopidogrel_Jung2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,11 +13,13 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+
 ### Reviewer guidance
 
-**The clopidogrel record was held back because its clearance plausibility checks could not be computed: the central clearance of 9257.28 L/h and hepatic flow of 845.70 L/h had no reference to compare against, so they remain unverified rather than shown wrong.**
+**The clopidogrel record was held back because four parent volumes (V1 1463.92 L, V2 2823.98 L, V1 17.34 L, V2 51.89 L) were neither extracted nor defaulted, and the shared parameters Q (587.93 L/h) and V (51.45 L) may be duplicated across compartments.**
 
-The record describes a linear clopidogrel model with metabolites clopidogrel H4 (fm 0.125) and clopidogrel carboxylic acid (fm 0.960), with parent clearance 9257.28 L/h, central volume 1463.92 L, and hepatic intercompartmental clearance 845.70 L/h. Both the reference check and the clearance magnitude check returned ratio None, meaning no comparison could be computed; this is an inconclusive check rather than a demonstrated fault. A second reader also disagreed on several extracted values, reading k out as 0.006 where the record has none, and leaving CLc, k a, Q c, T lag, and V c (=VH) unextracted, so the dose compound and primary analyte assignments are disputed. Extracted — clopidogrel: V1 1.46e+03 L, V2 2.82e+03 L, CL 9.26e+03 L/h, QH 846 L/h, kabs 19.6 h−1, tlag 0.196 h; clopidogrel carboxylic acid: Q 588 L/h, fm 0.96, V1 17.3 L, V2 51.9 L, CL 7.25 L/h; clopidogrel H4: fm 0.125, V 51.5 L, CL 74.2 L/h.
+Of 11 expected parameters only 7 were covered; the missing ones are the central and peripheral volumes of distribution of the parent clopidogrel (V1 1463.92 L, V2 2823.98 L) and of the carboxylic acid metabolite (V1 17.34 L, V2 51.89 L), so the model cannot be fully instantiated. The shared parameters Q and V, which should bind one value to both compartments, were flagged as possibly duplicated. In addition, the covariate effects on fm (theta values -0.450, -0.996, -1.428, -2.432) were defined but only the reference individual was simulated, so the covariate scenarios were not exercised. The builder also substituted a placeholder default for the missing bioavailability parameter F, and a second reader disagreed on the dose compound and primary analyte and reported a k out of 0.006 that the record lacks. Extracted — clopidogrel: V1 1.46e+03 L, V2 2.82e+03 L, CL 9.26e+03 L/h, QH 846 L/h, kabs 19.6 h−1, tlag 0.196 h; clopidogrel carboxylic acid: Q 588 L/h, fm 0.96, V1 17.3 L, V2 51.9 L, CL 7.25 L/h; clopidogrel H4: fm 0.125, V 51.5 L, CL 74.2 L/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clopidogrel, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -177,6 +179,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C9_phys_window_Q64 | pass | volume within physiological range | 2.82e+03 L | not captured | not captured | ['psp413053-tbl-0002:row3:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 51.9 L | not captured | not captured | ['psp413053-tbl-0002:row21:col1', 'psp413053-tbl-0002:row21:col2'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_metabolite_built[clopidogrel H4] | not captured | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.05145, 'CL': 2.0625e-05, 'formation': 0.0003085760000000001} | not captured | clopidogrel H4 = compartment M1 with its own numbers |
+| T3_metabolite_built[clopidogrel carboxylic acid] | not captured | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.01734, 'CL': 2.0133333333333333e-06, 'formation': 0.0021600320000000005} | not captured | clopidogrel carboxylic acid = compartment M2 with its own numbers |
+| T3_metabolite_output[clopidogrel H4] | not captured | pass | not captured | 0.00010312579596891116 | not captured | C_M1 (clopidogrel H4) must rise above 0 when the parent is dosed |
+| T3_metabolite_output[clopidogrel carboxylic acid] | not captured | pass | not captured | 0.0006806274625338762 | not captured | C_M2 (clopidogrel carboxylic acid) must rise above 0 when the parent is dosed |
+| T3_molar_mass[clopidogrel H4] | not captured | pass | not captured | {'MW': 0.321822, 'MW_m1': 0.355833} | not captured | formation is molecule-for-molecule |
+| T3_molar_mass[clopidogrel carboxylic acid] | not captured | pass | not captured | {'MW': 0.321822, 'MW_m2': 0.30779199999999995} | not captured | formation is molecule-for-molecule |
+| T3_output_variable | not captured | pass | C_central (measured=clopidogrel) | C_central | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | fail | 11 scholar param(s) emitted or defaulted | 7 covered | not captured | neither emitted nor in defaulted[]: ['V1', 'V2', 'V1', 'V2'] |
+| T3_shared_parameters | not captured | fail | 12 shared param(s) bound once | possibly duplicated: ['Q', 'V'] | not captured | shared params must bind one value to both compartments |
+| T3_topology_template | not captured | pass | parent_metabolite_hepatic → PK_3M_3C* | PK_3M_3C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -185,6 +205,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_clopidogrel/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Jung_2024` / `Jung_2024::reference`)
+- model: `../../../knowledgebase/drugs/drug_clopidogrel/models/modelica/Clopidogrel_Jung2024_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_clopidogrel/models/modelica/Clopidogrel_Jung2024_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_clopidogrel/models/modelica/Clopidogrel_Jung2024_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -194,7 +217,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference/Clopidogrel_Jung2024_reference_modelica.zip" download>Clopidogrel_Jung2024_reference_modelica.zip</a> <span class="pk-size">(5.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference/Clopidogrel_Jung2024_reference_fmi.zip" download>Clopidogrel_Jung2024_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_3M_3C.fmu" download>PK_3M_3C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference/Clopidogrel_Jung2024_reference_fmi.zip" download>Clopidogrel_Jung2024_reference_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PK_3M_3C.fmu" download>PK_3M_3C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference/Clopidogrel_Jung2024_reference_matlab.zip" download>Clopidogrel_Jung2024_reference_matlab.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference/Clopidogrel_Jung2024_reference_sbml.zip" download>Clopidogrel_Jung2024_reference_sbml.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>

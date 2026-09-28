@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;disopyramide&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/&quot;},{&quot;label&quot;:&quot;Bonde_1989 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Disopyramide_Bryson1978_reference&quot;,&quot;label&quot;:&quot;Bryson_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Bryson1978_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Aso2001_reference&quot;,&quot;label&quot;:&quot;Aso_2001_reference&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Aso2001_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Bonde1989_reference&quot;,&quot;label&quot;:&quot;Bonde_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Bonde1989_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Disopyramide_Pedersen1986_reference&quot;,&quot;label&quot;:&quot;Pedersen_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Pedersen1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Yukawa2005_reference&quot;,&quot;label&quot;:&quot;Yukawa_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Yukawa2005_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Burk1983_reference&quot;,&quot;label&quot;:&quot;Burk_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Burk1983_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Disopyramide_Bryson1978_reference&quot;,&quot;label&quot;:&quot;Bryson_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Bryson1978_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Aso2001_reference&quot;,&quot;label&quot;:&quot;Aso_2001_reference&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Aso2001_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Pedersen1986_reference&quot;,&quot;label&quot;:&quot;Pedersen_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Pedersen1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Yukawa2005_reference&quot;,&quot;label&quot;:&quot;Yukawa_2005_reference&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Yukawa2005_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Disopyramide_Bonde1989_reference&quot;,&quot;label&quot;:&quot;Bonde_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Bonde1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Disopyramide_Burk1983_reference&quot;,&quot;label&quot;:&quot;Burk_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_disopyramide/Disopyramide_Burk1983_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # disopyramide — `Disopyramide_Bonde1989_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**The paper reports none of the model's key parameters.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — disopyramide: CL 61.6 ml/min.
+The values on this record come from other papers. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — disopyramide: CL 61.6 ml/min.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -26,7 +26,7 @@ Bonde J; Jensen NM; Pedersen LE; Angelo HR; Rasmussen SN; Trap-Jensen J; et al. 
   ·  DOI: [10.1111/j.1600-0773.1989.tb00677.x](https://doi.org/10.1111/j.1600-0773.1989.tb00677.x)
 
 ## Model component
-<dbs-pgx drug="disopyramide" model-id="Disopyramide_Bonde1989_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="disopyramide" model-id="Disopyramide_Bonde1989_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 1 extracted.
@@ -34,7 +34,7 @@ Bonde J; Jensen NM; Pedersen LE; Angelo HR; Rasmussen SN; Trap-Jensen J; et al. 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -83,19 +83,9 @@ Bonde J; Jensen NM; Pedersen LE; Angelo HR; Rasmussen SN; Trap-Jensen J; et al. 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

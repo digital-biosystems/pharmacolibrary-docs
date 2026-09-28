@@ -1,25 +1,34 @@
 {
+ "dose_source": "paper",
  "model_id": "Colecalciferol_Kim2026_reference",
+ "molar_masses": {
+  "central.C": 0.38463769999999997
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1050.0
+ ],
  "parameters": {
   "Cl": 3.0555555555555555e-09,
   "F": 1.0,
+  "MM": 0.38463769999999997,
   "VdPerKg": 4.671428571428571e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 0.00105,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.000000066203
+  "central.C": 660.0000000662069
  },
  "reference_peaks": {
-  "central.C": 0.030572468696198094
+  "central.C": 0.3210109212805248
  },
- "stop_time": 86400.0,
+ "stop_time": 4233600.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

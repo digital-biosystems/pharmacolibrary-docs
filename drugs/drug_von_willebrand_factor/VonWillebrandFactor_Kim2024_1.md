@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The record is a mis-split estimates-table column ('1', a table statistic, not a study population), and its factor VIII clearance of 0.000242 L/h and absorption rate constant of 1530890000 1/h are physiologically implausible, indicating unit/scale extraction errors.**
+**The record for factor VIII (from von willebrand factor, Kim_2024) was rejected because the estimates table was mis-split — column '1' is a table statistic, not a study population — and the extracted clearance (0.000242 L/h) and absorption rate constant (1530890000 1/h) are physiologically implausible, indicating a unit/scale extraction error.**
 
-The estimates table was split into one record per column, but the column labelled '1' contains a table statistic rather than a second set of parameter estimates, so this record does not represent a study population. The extracted factor VIII clearance of 0.000242 L/h and absorption rate constant of 1530890000 1/h fall far outside physiological windows, consistent with a unit or scale extraction error; the volume of distribution of 8.35 L is the only value a second reader could not dispute. The second reader instead attributed the clearance, absorption rate constant, and an additional intercompartmental clearance of 62.7 L/h to a separate record, and read the dosing compound and primary analyte as von Willebrand factor rather than factor VIII. Extracted — factor VIII: CL 0.000242 L/h, V 8.35 L, kabs 1.53e+09.
+The table was split into one record per column, and '1' holds a statistic rather than a second set of estimates, so the population attribution is wrong. The clearance of 0.000242 L/h and absorption rate constant of 1530890000 1/h for factor VIII fall far outside physiological windows, consistent with a unit or scale extraction error; the volume 8.35 L was also flagged. A second reader disagreed on which compound was measured (factor VIII versus von willebrand factor) and on the dose compound (BT200), and the parameter values themselves were disputed between readers. Extracted — factor VIII: CL 0.000242 L/h, V 8.35 L, kabs 1.53e+09.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has BT200, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

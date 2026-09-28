@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The tanezumab TMDD model was rejected because the reported unit of the structural capacity parameter Vmax (8.03 μg day–1) could not be converted to SI, leaving that parameter without a usable value.**
+**The tanezumab record was rejected because one structural parameter's reported unit could not be expressed in SI units, producing a dimension mismatch on a structural parameter.**
 
-The record reports Vmax for tanezumab as 8.03 μg day–1, a unit for which no SI equivalent could be established, so the parameter entered model construction without a numeric value in a usable unit. This dimension mismatch on a structural parameter is the stated cause of rejection. The other reported parameters (CL 0.135 l day–1, V1 2.71 l, Q 0.371 l day–1, V2 1.98 l, Km 27.7 ng ml–1) carry convertible units, but the model could not be published with one of its capacity parameters undefined. Extracted — tanezumab: CL 0.135 l day –1, V1 2.71 l, Q 0.371 l day –1, V2 1.98 l, Km 27.7 ng ml –1, Vmax 8.03 μg day –1.
+The two-compartment tanezumab model carries clearance 0.135 l day–1, central volume 2.71 l, intercompartmental clearance 0.371 l day–1, peripheral volume 1.98 l, plus target-mediated parameters Km 27.7 ng ml–1 and Vmax 8.03 μg day–1 and weight and gender covariate effects. One of the reported units could not be converted to a standard SI unit, so that parameter entered the model without a consistent dimension, and the dimension check on a structural parameter failed. The record was therefore rejected. Extracted — tanezumab: CL 0.135 l day –1, V1 2.71 l, Q 0.371 l day –1, V2 1.98 l, Km 27.7 ng ml –1, Vmax 8.03 μg day –1.
 
 Independently confirmed by `gpt-oss:120b`.
 

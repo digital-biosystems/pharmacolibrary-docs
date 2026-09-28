@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The digoxin model was held back because the absorption rate constant ka was not reported in the source and a default was invented, along with a defaulted Tlag, making the absorption input unacceptable.**
+**The digoxin record was held back because the model builder invented an absorption rate constant (ka) not reported in the source, alongside other unreported deviations.**
 
-The record for digoxin (Liao_2022) lacks source values for ka and Tlag, so library defaults were substituted; the invented ka — not reported in the source — was adjudicated as 'invented_absorption: not acceptable'. The model also assumes F=1 and Fm=1 with apparent (/F) parameterization (CLu 11.4 L/h, V/F 425.9701 L) and a first-order depot input implying extravascular dosing, none of which are stated in the source. A second reader disagreed on several extracted values (e.g., 38, 11.4, 3.21, 3.7, 25.9 read as null), leaving those comparisons unconfirmed. Extracted — digoxin: CLu 11.4 L/h, V/F 426 L.
+The source reports only urinary clearance of total 14C-rucaparib (11.4 L/h) and an apparent volume of distribution (425.9701 L) for digoxin; ka and Tlag were left at library defaults because no values appear in the source. The builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input implying extravascular dosing. The failed check flagged this invented absorption as not acceptable. A second reader could not confirm several extracted values (e.g., 38, 11.4, 3.21, 3.7, 25.9), though it agreed on 0.781, 54, and 0.92. Extracted — digoxin: CLu 11.4 L/h, V/F 426 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 38, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -149,7 +149,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 0.25 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 0.25 mg oral (C01AA05) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_digoxin/Digoxin_Liao2022_reference/Digoxin_Liao2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_digoxin/Digoxin_Liao2022_reference/Digoxin_Liao2022_reference_sim_controls.json"></dbs-fmusim>
 

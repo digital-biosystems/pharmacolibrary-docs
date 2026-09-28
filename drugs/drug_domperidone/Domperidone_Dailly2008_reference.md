@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The domperidone record was rejected because its clearance (0.92 L/h) and volume of distribution (0.405 L) fall outside physiologically plausible ranges for preterm neonates, suggesting a unit or scale extraction error, and the values came only from the paper's abstract.**
+**The domperidone record from Dailly_2008 was rejected because the abstract-only clearance (0.92 L/h) and volume of distribution (0.405 L) fall outside plausible physiological ranges for preterm neonates, suggesting a unit or scale extraction error.**
 
-The record for domperidone in preterm neonates lists clearance (Cl/F) of 0.92 L/h, volume of distribution (Vd/F) of 0.405 L, and an absorption rate constant of 0.0843 h⁻¹, with a one-compartment structure. The plausibility check judged the clearance-to-volume magnitudes outside the physiological window for this population, consistent with a unit or scale extraction error. Because only the paper's abstract was read, these summary statistics stood in for a fitted model, so the values could not be confirmed against the full publication. A second reader returned no values for all three parameters (clearance, volume, absorption constant), leaving the extracted numbers unconfirmed. Extracted — domperidone: CL 0.92 L/h, V 0.405 L, kabs 0.0843 h(-1).
+The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The clearance of 0.92 L/h and volume of distribution of 0.405 L for domperidone were flagged as implausible in magnitude, consistent with a unit or scale extraction error. A second reader could not confirm any of the three parameter values (clearance 0.92 L/h, volume 0.405 L, absorption rate constant 0.0843 h⁻¹), returning null for each, so the extracted values stand uncorroborated. Extracted — domperidone: CL 0.92 L/h, V 0.405 L, kabs 0.0843 h(-1).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorption constant rate: this record has 0.0843, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 

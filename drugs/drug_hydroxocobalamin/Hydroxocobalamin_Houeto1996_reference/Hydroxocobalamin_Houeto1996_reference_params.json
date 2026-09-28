@@ -1,5 +1,9 @@
 {
+ "dose_source": "library default",
  "model_id": "Hydroxocobalamin_Houeto1996_reference",
+ "molar_masses": {
+  "central.C": 1.3463551
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,6 +11,7 @@
  "parameters": {
   "Cl": 8.611111111111111e-08,
   "F": 1.0,
+  "MM": 1.3463551,
   "Tlag": 0.0,
   "VdPerKg": 0.00045,
   "adminCount": 1.0,
@@ -16,12 +21,12 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 29261.723446893786
+  "central.C": 29302.995862278724
  },
  "reference_peaks": {
-  "central.C": 0.002933828350568406
+  "central.C": 0.002933825246483068
  },
- "stop_time": 86400.0,
+ "stop_time": 518400.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

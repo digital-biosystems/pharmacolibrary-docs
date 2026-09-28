@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The oxycodone 3-compartment model was rejected because one compartment has no path from the dose, and a reported unit could not be converted to SI, leaving a parameter without a usable value.**
+**The oxycodone three-compartment record was rejected because a compartment has no path from the dose, and the unbound clearance unit 'litre h 21' could not be converted to SI, leaving CLu = 48.1 without an SI value.**
 
-The record lists oxycodone parameters including unbound clearance 48.1 L/h, volume 153 L, Vss 286 L, and half-lives of 2.5 min and 4.2 h, but the structure check found an unreachable or orphan compartment in the 3-compartment model. Additionally, one reported unit could not be converted to SI units, so that parameter entered the model without a usable value. A second reader also disagreed on several values: it read 0.110, 1153, 133, and 0.549 where this record had no value, while this record's 0.054 for V1 was read as null by the second reader. Extracted — oxycodone: CLu 48.1 litre h 21, V 153 litre, t1/2z 2.5 min, t1/2β 4.2 h, Vss 286 litre, V1 0.054, V2 0.14, V3 2.5.
+The structure check flagged an unreachable or orphan compartment or unlinked metabolite in the three-compartment oxycodone model. The unit 'litre h 21' reported for unbound clearance (CLu, 48.1) is not expressible in standard units, so that parameter arrived without an SI value. The second reader also disagreed on several parameters: they read 0.110 where this record has null, 1153 and 133 for u 4, 0.549 for u 5, and left the central-compartment volume V1 (0.054) as null, while this record lists it; parameter identifications for the clearance, volume and half-life entries also differ between readers. Extracted — oxycodone: CLu 48.1 litre h 21, V 153 litre, t1/2z 2.5 min, t1/2β 4.2 h, Vss 286 litre, V1 0.054, V2 0.14, V3 2.5.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of s 1: this record has none, the second reading 0.110; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

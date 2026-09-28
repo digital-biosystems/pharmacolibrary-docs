@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The ibuprofen model was rejected because its structure contains sulindac metabolites (sulindac sulfide and sulindac sulfone) with no link parameters, leaving compartments unreachable from the ibuprofen dose.**
+**The ibuprofen model was rejected because its structure contains unlinked sulindac metabolites (sulindac sulfide and sulindac sulfone) with no path from the ibuprofen dose.**
 
-The record describes an ibuprofen model, yet its structure includes metabolism links from sulindac to sulindac sulfide and to sulindac sulfone, each with no link parameter value (link_parameter: none). These metabolites therefore have no quantified connection to the dosed compound, so they stand as unlinked metabolites unreachable from the ibuprofen dose. The extracted parameters themselves — a distribution volume of 6.35 liters and a first-order absorption rate constant of 1.1 h⁻¹ for ibuprofen — are consistent with the paper, but the foreign sulindac structure makes the model incoherent. Extracted — ibuprofen: V 6.35 liters, kabs 1.1 h -1.
+The record is a general linear model for ibuprofen with a volume of distribution of 6.35 liters and an absorption rate constant of 1.1 h-1, but its structure also includes metabolism links from sulindac to sulindac sulfide and to sulindac sulfone. These sulindac metabolites are orphans: they have no connection to the administered ibuprofen dose, so the structure check for unreachable compartments or unlinked metabolites failed and the model was refused. Extracted — ibuprofen: V 6.35 liters, kabs 1.1 h -1.
 
 <sub>reviewed by glm-5.3-flash</sub>
 

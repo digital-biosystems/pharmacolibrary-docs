@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The metformin rat model was rejected because the volume parameters V1 and V2 carry concentration units (μg/mL) instead of volume units, a structural dimension mismatch, and the 3-compartment structure contains an unreachable compartment.**
+**The metformin three-compartment rat model was rejected because a structural parameter has a dimension mismatch and a compartment is unreachable from the dose, with the CL/F value of 0.01 also disputed.**
 
-The record lists V1 = 0.02 and V2 = 0.06 with the verbatim unit μg/mL, which is a concentration, not a volume, so these structural parameters fail the dimension check. The rejection also cites an unreachable/orphan compartment in the 3-compartment topology. A limitation notes that one reported unit could not be converted to SI, so that parameter was carried without an SI value. A second reader disagreed on the CL/F entry, reading no value where the record gives 0.01 L/kg*hr. Extracted — metformin: tmax 1.67 h, t1/2z 2.38 h, MRT 3.78 h, V/F 0.03 L/kg, CL/F 0.01 L/kg*hr, V1 0.02 μg/mL, V2 0.06 μg/mL, k12 0.41, … (+3).
+The record's structural parameters carry inconsistent units: V1 and V2 are reported as 0.02 and 0.06 in μg/mL units, which is a dimension mismatch for compartment volumes, and the CL/F unit (L/kg*hr) could not be converted to SI, so the clearance of 0.01 L/kg*hr reached the model without an SI value. The topology check found an orphan compartment with no path from the metformin dose. A second reader recorded no value (null) for CL/F against this record's 0.01, disagreeing with the extracted clearance. Extracted — metformin: tmax 1.67 h, t1/2z 2.38 h, MRT 3.78 h, V/F 0.03 L/kg, CL/F 0.01 L/kg*hr, V1 0.02 μg/mL, V2 0.06 μg/mL, k12 0.41, … (+3).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl/f (mg/kg)/: this record has 0.01, the second reading none. That field shapes the model, so the record is marked disputed.
 

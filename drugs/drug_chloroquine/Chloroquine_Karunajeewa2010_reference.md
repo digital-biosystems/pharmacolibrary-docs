@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**Chloroquine's clearance (Cl) had no extracted value, so a library default was substituted, and the parent–metabolite structure also failed the structural match, so the model was quarantined.**
+**The chloroquine parent–metabolite model was quarantined because chloroquine's clearance had no extracted value, so a library placeholder was used instead of the reported 15.2% metabolic clearance.**
 
-The record lists chloroquine's metabolic clearance to desethylchloroquine as 15.2% (a fraction, not a clearance in flow units), and no absolute clearance value was extracted; the builder substituted default placeholder values for the missing clearance. The structure check expected a parent–metabolite topology but obtained a one-compartment parent model, so the structure did not match. A second reader also disputed the extracted values, reading null for the 15.2% clearance fraction and for the 6707 L median steady-state volume, while reading 23 for a pregnancy-related clearance term absent from this record. Additionally, a reported unit could not be converted to SI, so that parameter reached the build without an SI value. Extracted — chloroquine: Frel 1.35e+04, CL 15.2 %, V 6.71e+03 liters.
+The paper reports chloroquine's metabolic clearance to desethylchloroquine as 15.2% (a percentage, not an absolute clearance), and this unit could not be converted to SI, so the clearance parameter reached the model builder without a usable value and was left at a library default. The record also labels the relative bioavailability parameter with the verbatim label 'OFV' and the value 13462, which does not correspond to a bioavailability fraction. A second reader recorded no value for the 15.2% clearance and the 6707 L steady-state volume, and instead read a pregnancy effect on chloroquine clearance of 23, which this record lacks. The structure check also expected a parent–metabolite model with three compartments but the record describes a one-compartment structure. Extracted — chloroquine: Frel 1.35e+04, CL 15.2 %, V 6.71e+03 liters.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cq metabolic clearance to decq (cl m ) accounts for: this record has 15.2, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -166,7 +166,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 | T1_cmax | reference | skipped | 79 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 75 | not captured | not captured | no simulated metric for this quantity (single reference sim) |

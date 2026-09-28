@@ -1,26 +1,38 @@
 {
+ "dose_source": "paper",
  "model_id": "Rivaroxaban_Liu2022_simultaneous_modeling",
+ "molar_masses": {
+  "central.C": 0.43588099999999996
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  10.0,
+  15.0,
+  20.0
+ ],
  "parameters": {
+  "Cl": 1.3972222222222224e-06,
   "F": 1.0,
+  "MM": 0.43588099999999996,
   "Tlag": 0.0,
   "VdPerKg": 0.0005757142857142856,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "ka": 0.0001713888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 12061.914849366083
+  "central.C": 12141.88376753507
  },
  "reference_peaks": {
-  "central.C": 0.0016544653719037295
+  "central.C": 0.00016544411451084443
  },
- "stop_time": 86400.0,
+ "stop_time": 118800.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

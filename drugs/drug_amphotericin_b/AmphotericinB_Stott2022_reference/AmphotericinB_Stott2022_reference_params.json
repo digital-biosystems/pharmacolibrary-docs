@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 35 mg parenteral (J02AA01)",
  "model_id": "AmphotericinB_Stott2022_reference",
+ "molar_masses": {
+  "central.C": 0.924079
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,19 +11,20 @@
  "parameters": {
   "Cl": 1.1555555555555555e-07,
   "F": 1.0,
+  "MM": 0.924079,
   "VdPerKg": 6.522857142857142e-05,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 3.5e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662036
+  "central.C": 660.0000000662043
  },
  "reference_peaks": {
-  "central.C": 0.021735565797161488
+  "central.C": 0.007607448059242939
  },
- "stop_time": 86400.0,
+ "stop_time": 140400.0,
  "template": "PK_1C",
  "template_fmu": "PK_1C.fmu"
 }

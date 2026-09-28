@@ -1,4 +1,5 @@
 {
+ "dose_source": "paper",
  "model_id": "Vinblastine_Zhou1990_estimated_parameters_vt_l_kg",
  "molar_masses": {
   "central.C": 0.8109741
@@ -7,6 +8,15 @@
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  7.0,
+  21.0,
+  42.0,
+  63.0,
+  70.0,
+  126.0
+ ],
  "parameters": {
   "Cl": 1.2833333333333335e-05,
   "F": 1.0,
@@ -14,14 +24,14 @@
   "VdPerKg": 0.011460000000000001,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 7e-06,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662149
+  "central.C": 660.0000000662124
  },
  "reference_peaks": {
-  "central.C": 0.00012406084504528576
+  "central.C": 8.68427406419505e-06
  },
  "stop_time": 259200.0,
  "template": "PK_1C",

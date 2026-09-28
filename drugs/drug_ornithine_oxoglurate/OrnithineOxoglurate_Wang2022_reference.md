@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The ornithine oxoglurate record was held back because the absorption rate constant ka and lag time Tlag were never reported in the source, so placeholder values were substituted, and an invented first-order absorption with F=1, Fm=1 and no molar correction was assumed.**
+**The ornithine oxoglurate record was held back because the absorption rate constant ka was not reported in the source and a placeholder value was substituted, an invented absorption the review could not accept.**
 
-The apparent clearance CL/F of 14.9 L/h and volume of distribution V of 33.2 L for ornithine oxoglurate were extracted, but the absorption rate constant ka and the lag time Tlag were missing from the source, so no value was extracted and library placeholder values would have been used in their place. The model builder additionally assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization that implies extravascular dosing with a first-order depot input. The invented absorption deviation — ka defaulted although not reported in the source — was judged not acceptable, which is why the record was marked needs_review rather than published. The second reader also disagreed on several extracted values, reading 18, 15 and 490 where this record had null, and reading null where this record had 36. Extracted — ornithine oxoglurate: CL/F 14.9 L/h, V 33.2 L.
+The record for ornithine oxoglurate (one-compartment, oral apparent parameterization with F=1, Fm=1 and no molar correction) reports CL/F of 14.9 L/h and V of 33.2 L, but ka and the absorption lag time had no values in the source, so library placeholder values were used instead. The failed check flagged this invented absorption as not acceptable. A second reader also disagreed with the extracted values on several fields, recording 18, 15 and 490 where this record has none, and this record's 36 where the second reader recorded none, so the numeric content is not settled. Extracted — ornithine oxoglurate: CL/F 14.9 L/h, V 33.2 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q310: this record has none, the second reading 18; it also differs on 3 more fields. That field does not shape the model.
 
@@ -131,8 +131,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ornithine_oxoglurate/OrnithineOxoglurate_Wang2022_reference/OrnithineOxoglurate_Wang2022_reference_modelica.zip" download>OrnithineOxoglurate_Wang2022_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ornithine_oxoglurate/OrnithineOxoglurate_Wang2022_reference/OrnithineOxoglurate_Wang2022_reference_modelica.zip" download>OrnithineOxoglurate_Wang2022_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ornithine_oxoglurate/OrnithineOxoglurate_Wang2022_reference/OrnithineOxoglurate_Wang2022_reference_fmi.zip" download>OrnithineOxoglurate_Wang2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ornithine_oxoglurate/OrnithineOxoglurate_Wang2022_reference/OrnithineOxoglurate_Wang2022_reference_matlab.zip" download>OrnithineOxoglurate_Wang2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ornithine_oxoglurate/OrnithineOxoglurate_Wang2022_reference/OrnithineOxoglurate_Wang2022_reference_matlab_simbio.zip" download>OrnithineOxoglurate_Wang2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ornithine_oxoglurate/OrnithineOxoglurate_Wang2022_reference/OrnithineOxoglurate_Wang2022_reference_sbml.zip" download>OrnithineOxoglurate_Wang2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -144,7 +144,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 15000 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 15000, 20000 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_ornithine_oxoglurate/OrnithineOxoglurate_Wang2022_reference/OrnithineOxoglurate_Wang2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ornithine_oxoglurate/OrnithineOxoglurate_Wang2022_reference/OrnithineOxoglurate_Wang2022_reference_sim_controls.json"></dbs-fmusim>
 

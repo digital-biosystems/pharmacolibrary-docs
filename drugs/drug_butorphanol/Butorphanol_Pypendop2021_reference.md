@@ -87,6 +87,7 @@ Pypendop BH; Shilo-Benjamini Y et al. (2021). Journal of veterinary pharmacology
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_output_variable | not captured | pass | C_central (measured=butorphanol) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
@@ -125,7 +126,7 @@ Pypendop BH; Shilo-Benjamini Y et al. (2021). Journal of veterinary pharmacology
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 70 mg infusion over 10 min, single dose. Dose in the paper: 70 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference/Butorphanol_Pypendop2021_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference/Butorphanol_Pypendop2021_reference_sim_controls.json"></dbs-fmusim>
 

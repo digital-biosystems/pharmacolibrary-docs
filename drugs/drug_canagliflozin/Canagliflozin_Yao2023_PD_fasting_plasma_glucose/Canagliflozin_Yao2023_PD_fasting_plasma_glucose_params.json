@@ -1,0 +1,51 @@
+{
+ "model_id": "Canagliflozin_Yao2023_PD_fasting_plasma_glucose",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "exposure_per_s": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "56.6": 0.303
+ },
+ "stop_time": 566.0,
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "units": {
+  "EC50": {
+   "display_only": true,
+   "display_unit": "ng/mL·h",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "unit",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "ng/mL·h",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "FPG"
+ },
+ "x_axis": {
+  "display_unit": "ng/mL·h",
+  "factor": 1.0,
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "unit",
+  "factor": 1.0,
+  "label": "response"
+ }
+}

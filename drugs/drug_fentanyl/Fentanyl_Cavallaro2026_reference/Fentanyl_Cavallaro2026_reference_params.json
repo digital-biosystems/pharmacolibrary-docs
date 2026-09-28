@@ -1,4 +1,5 @@
 {
+ "dose_source": "library default",
  "model_id": "Fentanyl_Cavallaro2026_reference",
  "molar_masses": {
   "central.C": 0.3364705
@@ -14,14 +15,14 @@
   "VdPerKg": 0.0047,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662069
+  "central.C": 660.0000000662026
  },
  "reference_peaks": {
-  "central.C": 0.0003004698433649464
+  "central.C": 3.004701205210282e-05
  },
  "stop_time": 93600.0,
  "template": "PK_1C",

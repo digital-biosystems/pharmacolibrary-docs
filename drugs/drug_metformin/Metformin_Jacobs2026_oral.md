@@ -15,7 +15,7 @@
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000941, model 0.022); the model does not reproduce the paper's time of the peak (tmax) (paper 0.86, model 13.9).**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000941, model 0.439); the model does not reproduce the paper's time of the peak (tmax) (paper 0.86, model 13.9).**
 
 Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. Extracted — metformin: Cmax 941 ng/mL, tmax 0.86 h, AUC∞ 4.32e+03 h * ng/mL, AUC%ext 1.09, Fab 7.86, t1/2z 85.8 h, CL 0.059 L/h, V 35 L, … (+2).
 
@@ -131,8 +131,8 @@ _Every reader agrees on every compared field of this record._
 | T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
-| T1_cmax | reference | fail | 0.000941 | 0.02195345367877248 | 23.3299 | ng/mL→SI vs simulated kg/m3 |
-| T1_tmax | reference | fail | 0.86 | 13.920493234378915 | 16.1866 | h→SI vs simulated h |
+| T1_cmax | reference | fail | 0.000941 | 0.43906926918100436 | 466.5986 | ng/mL→SI vs simulated kg/m3 |
+| T1_tmax | reference | fail | 0.86 | 13.897688800991496 | 16.1601 | h→SI vs simulated h |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -155,8 +155,8 @@ _Every reader agrees on every compared field of this record._
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Jacobs2026_oral/Metformin_Jacobs2026_oral_modelica.zip" download>Metformin_Jacobs2026_oral_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metformin/Metformin_Jacobs2026_oral/Metformin_Jacobs2026_oral_fmi.zip" download>Metformin_Jacobs2026_oral_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Jacobs2026_oral/Metformin_Jacobs2026_oral_matlab.zip" download>Metformin_Jacobs2026_oral_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metformin/Metformin_Jacobs2026_oral/Metformin_Jacobs2026_oral_matlab_simbio.zip" download>Metformin_Jacobs2026_oral_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Jacobs2026_oral/Metformin_Jacobs2026_oral_matlab.zip" download>Metformin_Jacobs2026_oral_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metformin/Metformin_Jacobs2026_oral/Metformin_Jacobs2026_oral_matlab_simbio.zip" download>Metformin_Jacobs2026_oral_matlab_simbio.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_metformin/Metformin_Jacobs2026_oral/Metformin_Jacobs2026_oral_sbml.zip" download>Metformin_Jacobs2026_oral_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_metformin/Metformin_Jacobs2026_oral/Metformin_Jacobs2026_oral_cellml.zip" download>Metformin_Jacobs2026_oral_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
@@ -166,7 +166,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.41 /h, lag 20.4 min, F 7.86). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 2000 mg, single dose, first-order absorption (ka 0.41 /h, lag 20.4 min, F 7.86). _The paper's dose was not captured; the default is the WHO ATC DDD 2000 mg oral (A10BA02) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_metformin/Metformin_Jacobs2026_oral/Metformin_Jacobs2026_oral_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metformin/Metformin_Jacobs2026_oral/Metformin_Jacobs2026_oral_sim_controls.json"></dbs-fmusim>
 

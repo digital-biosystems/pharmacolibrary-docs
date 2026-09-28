@@ -1,5 +1,9 @@
 {
+ "dose_source": "library default",
  "model_id": "Iron_Xu2026_reference",
+ "molar_masses": {
+  "central.C": 0.055845
+ },
  "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,6 +11,7 @@
  "parameters": {
   "Cl": 2.5231481481481483e-09,
   "F": 1.0,
+  "MM": 0.055845,
   "Tlag": 0.0,
   "VdPerKg": 2.2000000000000003e-05,
   "adminCount": 1.0,
@@ -17,12 +22,12 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 86400.0
+  "central.C": 669037.2745490982
  },
  "reference_peaks": {
-  "central.C": 0.006651703393304414
+  "central.C": 0.02165186106592913
  },
- "stop_time": 86400.0,
+ "stop_time": 4838400.0,
  "template": "PK_2C_enteral",
  "template_fmu": "PK_2C_enteral.fmu"
 }

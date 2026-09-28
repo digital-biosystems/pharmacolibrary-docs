@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The dexamethasone record was rejected because the extracted clearance and volume are physiologically implausible — CLu of 494.0 mL/h and V of 16.9 mL point to a unit or scale extraction error.**
+**The dexamethasone record was rejected because its clearance (494.0 mL/h) and volume of distribution (16.9 mL) fall outside plausible physiological windows, indicating a unit or scale extraction error.**
 
-The record lists dexamethasone with unbound clearance CLu = 494.0 mL/h and volume of distribution V = 16.9 mL, magnitudes outside the physiological window for this drug, consistent with a unit or scale misreading from the source text (labelled 'V u' and 'V SF' verbatim). The absorption rate constant kabs = 2.95 h⁻¹ was also extracted. The second reader recorded no values for the disputed fields, so no independent confirmation of the extracted numbers exists and the comparison could not be computed for them. Extracted — dexamethasone: CLu 494 mL/h, V 16.9 mL, kabs 2.95 h -1.
+The unbound clearance CLu is recorded as 494.0 mL/h and the volume of distribution V as 16.9 mL for dexamethasone; these magnitudes are physiologically implausible, and the review attributed the failure to a unit/scale extraction error. The parameter labels in the source (V u, V SF) do not match the assigned meanings, further suggesting misread values. Several other extracted values (e.g. 473.6, 338, 5.69, 0.269, 140.1, 1.09, 0.175, 30) were read by only one reader, with no second-reader confirmation. Extracted — dexamethasone: CLu 494 mL/h, V 16.9 mL, kabs 2.95 h -1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 473.6, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The lacosamide pediatric model was held back because the absorption rate constant Ka (2.45) was not reported in the source and was substituted with a default, alongside defaulted Tlag and assumed F=1.**
+**The lacosamide record was held back because the absorption rate constant Ka was not reported in the source; the model builder substituted a default value, an invented absorption parameter that is not acceptable.**
 
-The record reports CL/F of 1.51 L/h and V/F of 23.6 L for lacosamide in children with epilepsy, but the absorption rate constant Ka (2.45) was not reported in the source paper; a library default was used in its place, and Tlag was likewise defaulted because no source value existed. The model builder also assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent rather than actual. The adjudicated finding was that this invented absorption is not acceptable, so the record was marked needs_review rather than published. Extracted — lacosamide: CL/F 1.51 L/h, V/F 23.6 L, kabs 2.45, CLnorm 0.296, CL 0.736.
+The paper (Li_2025, children with epilepsy) reports CL/F 1.51 L/h, V/F 23.6 L, Ka 2.45, allometrically normalized clearance 0.296, and genotype-stratified clearance 0.736 L/h for lacosamide. The Ka of 2.45 was not actually reported in the source; a library default was used instead, along with a defaulted lag time. The model also assumed F=1 and Fm=1 with no molar correction, so all parameters are apparent (bioavailability-adjusted) values. The failed check returned 'invented_absorption: not acceptable', and the verdict is needs_review. Extracted — lacosamide: CL/F 1.51 L/h, V/F 23.6 L, kabs 2.45, CLnorm 0.296, CL 0.736.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -99,6 +99,7 @@ Li Y; Guo HL; Fan L; Wang J; Hu YH; Zhang YY; et al. et al. (2025). NPJ genomic 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=lacosamide) | central.C | not captured | output must be the measured/analyte compartment |
@@ -138,7 +139,7 @@ Li Y; Guo HL; Fan L; Wang J; Hu YH; Zhang YY; et al. et al. (2025). NPJ genomic 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 300 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 300 mg oral (N03AX18) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_lacosamide/Lacosamide_Li2025_boostrap/Lacosamide_Li2025_boostrap_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_lacosamide/Lacosamide_Li2025_boostrap/Lacosamide_Li2025_boostrap_sim_controls.json"></dbs-fmusim>
 

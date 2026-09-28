@@ -1,5 +1,9 @@
 {
+ "dose_source": "WHO ATC DDD 0.25 mg oral (C01AA05)",
  "model_id": "Digoxin_Kramer1979_reference",
+ "molar_masses": {
+  "central.C": 0.7809385
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -7,21 +11,22 @@
  "parameters": {
   "Cl": 4.2e-06,
   "F": 0.9,
+  "MM": 0.7809385,
   "Tlag": 0.0,
   "VdPerKg": 0.00041799999999999997,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 2.5e-07,
   "ka": 0.0006361111111111112,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 3394.651663983551
+  "central.C": 3634.132952874921
  },
  "reference_peaks": {
-  "central.C": 0.001990489001376446
+  "central.C": 4.964860202893188e-06
  },
- "stop_time": 86400.0,
+ "stop_time": 777600.0,
  "template": "PK_1C_enteral",
  "template_fmu": "PK_1C_enteral.fmu"
 }

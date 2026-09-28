@@ -127,7 +127,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.36 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 437.5 mg, single dose, first-order absorption (ka 0.36 /h, F 0.9). Doses in the paper: 437.5, 875, 1750, 3500 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_arginine/Arginine_Henninger2026_reference/Arginine_Henninger2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_arginine/Arginine_Henninger2026_reference/Arginine_Henninger2026_reference_sim_controls.json"></dbs-fmusim>
 

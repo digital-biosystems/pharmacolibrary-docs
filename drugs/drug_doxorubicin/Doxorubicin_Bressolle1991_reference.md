@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The doxorubicin record was rejected because the extracted clearance (350.0 mL/day) and volume (100.0 µL) are physiologically implausible, indicating a unit or scale extraction error from the abstract-only source.**
+**The doxorubicin record was rejected because the extracted clearance (350.0 mL/day) and volume of distribution (100.0 µL) are physiologically implausible, indicating a unit or scale extraction error from the abstract-only source.**
 
-The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The extracted doxorubicin clearance of 350.0 mL/day and apparent volume of 100.0 µL fall far outside any physiological window for this drug, consistent with a unit or scale misreading. The elimination half-life of 0.0839 h is likewise implausibly short for doxorubicin, and the 48-hour concentration is negative (-0.22 ng/mL). A second reader disputed both the half-life value and the negative concentration, reading them as null, though the rejection rested on the implausible clearance and volume magnitudes. Extracted — doxorubicin: t1/2z 0.0839 h, Ct -0.22 ng/ml, CL 350 mL/day, V 100 µL, tlag 2.3 min.
+The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The clearance of 350.0 mL/day and volume of distribution of 100.0 µL for doxorubicin fall outside physiological windows, consistent with a unit/scale extraction error. A second reader also disputed the terminal half-life (0.0839 h) and the 48-hour concentration (-0.22 ng/ml, a negative value), reading both as null, so these parameter values are likewise unreliable. Extracted — doxorubicin: t1/2z 0.0839 h, Ct -0.22 ng/ml, CL 350 mL/day, V 100 µL, tlag 2.3 min.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of c: this record has -0.22, the second reading none; it also differs on 1 more field. That field does not shape the model.
 

@@ -17,9 +17,9 @@
 
 ### Reviewer guidance
 
-**The liraglutide model was quarantined because clearance, distribution volume, absorption rate constant and absorption lag time had no extracted values, so library defaults were substituted, and the covariate effects were never simulated.**
+**The liraglutide record was quarantined because clearance, volume of distribution, absorption rate constant and absorption lag time had no extracted values and library placeholder defaults were substituted.**
 
-No values for liraglutide's clearance (CL/F), volume of distribution (V/F), absorption rate constant (kabs) or absorption lag time were available in the source, so placeholders replaced them and the model was held back rather than published with invented numbers. The absorption rate constant was additionally assumed rather than reported, and bioavailability was taken as 1 with no molar correction. Although the record defines covariate effects on clearance (sex 1.12, children vs adults 1.11, adolescents vs adults 1.06, body-weight exponent 0.762 and 0.587), only the reference individual was simulated, so these effects were never exercised. A second reader also disagreed on the age and sex covariate values, reading 1.11 and 1.12 where this record lists them as null, and reported relative standard errors (38.3%, 38%, 13.2%) absent here. Extracted — liraglutide: kabs 0.0804, CL/F 1.07, V/F 13.1.
+The record lists apparent clearance 1.07, apparent volume 13.1 and absorption rate constant 0.0804, but the model builder substituted placeholder defaults for Cl, Vd, ka and Tlag because the source values were missing, and the invented absorption default was judged not acceptable. The parameterization assumes F=1, Fm=1 with no molar correction. The covariate effects (sex 1.12, child/adult 1.11, adolescent/adult 1.06, body-weight power 0.762 and 0.587) were defined but not exercised in simulation, and a second reader could not confirm the age and sex contrast values. Extracted — liraglutide: kabs 0.0804, CL/F 1.07, V/F 13.1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of age_contrast_adolescent_adult_on_cl_f: this record has 1.06, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
@@ -116,6 +116,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
 | T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
 | T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |

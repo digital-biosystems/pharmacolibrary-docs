@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The lacosamide absorption rate constant ka (2.45) was not reported in the source and was defaulted, so the record was held back for review.**
+**The lacosamide record was held back because the absorption rate constant Ka was not reported in the source; the model builder substituted a default value, which was judged an invented absorption parameter.**
 
-The record reports CL/F 1.51 L/h and V/F 23.7 L for lacosamide in children with epilepsy, but the absorption rate constant ka (labelled Ka, value 2.45) was not reported in the source paper; a library default was substituted, along with a default Tlag. The builder also assumed F=1 and Fm=1 with no molar correction, parameterizing the model as apparent. The invented absorption parameter was judged not acceptable, and the adjudication could not compute a comparison (ratio None), leaving the record inconclusive pending review. Extracted — lacosamide: CL/F 1.51 L/h, V/F 23.7 L, kabs 2.45, CLnorm 0.294, CL 0.736.
+The paper reports CL/F (1.51 L/h), V/F (23.7 L), a body-size-normalized clearance (0.294) and a genotype-stratified clearance (0.736), but no Ka value. The builder defaulted Ka and Tlag and assumed apparent parameterization (F=1, Fm=1, no molar correction). The failed check flagged the invented absorption as not acceptable, so the record needs review rather than publication. Extracted — lacosamide: CL/F 1.51 L/h, V/F 23.7 L, kabs 2.45, CLnorm 0.294, CL 0.736.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -100,6 +100,7 @@ Li Y; Guo HL; Fan L; Wang J; Hu YH; Zhang YY; et al. et al. (2025). NPJ genomic 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=lacosamide) | central.C | not captured | output must be the measured/analyte compartment |
@@ -126,7 +127,7 @@ Li Y; Guo HL; Fan L; Wang J; Hu YH; Zhang YY; et al. et al. (2025). NPJ genomic 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lacosamide/Lacosamide_Li2025_final_models/Lacosamide_Li2025_final_models_modelica.zip" download>Lacosamide_Li2025_final_models_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lacosamide/Lacosamide_Li2025_final_models/Lacosamide_Li2025_final_models_modelica.zip" download>Lacosamide_Li2025_final_models_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lacosamide/Lacosamide_Li2025_final_models/Lacosamide_Li2025_final_models_fmi.zip" download>Lacosamide_Li2025_final_models_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lacosamide/Lacosamide_Li2025_final_models/Lacosamide_Li2025_final_models_matlab.zip" download>Lacosamide_Li2025_final_models_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lacosamide/Lacosamide_Li2025_final_models/Lacosamide_Li2025_final_models_matlab_simbio.zip" download>Lacosamide_Li2025_final_models_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -139,7 +140,7 @@ Li Y; Guo HL; Fan L; Wang J; Hu YH; Zhang YY; et al. et al. (2025). NPJ genomic 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 300 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 300 mg oral (N03AX18) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_lacosamide/Lacosamide_Li2025_final_models/Lacosamide_Li2025_final_models_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_lacosamide/Lacosamide_Li2025_final_models/Lacosamide_Li2025_final_models_sim_controls.json"></dbs-fmusim>
 

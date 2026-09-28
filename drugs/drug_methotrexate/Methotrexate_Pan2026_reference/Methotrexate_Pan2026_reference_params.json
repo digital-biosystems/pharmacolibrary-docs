@@ -1,4 +1,5 @@
 {
+ "dose_source": "paper",
  "model_id": "Methotrexate_Pan2026_reference",
  "molar_masses": {
   "central.C": 0.4544393
@@ -6,6 +7,11 @@
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  40.0,
+  80.0
  ],
  "parameters": {
   "Cl": 4.4675925925925925e-09,
@@ -15,15 +21,15 @@
   "VdPerKg": 0.0001542857142857143,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.0001,
+  "adminMass": 4e-05,
   "ka": 3.101851851851852e-06,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 749459.9999250628
+  "central.C": 749459.9999250635
  },
  "reference_peaks": {
-  "central.C": 0.006791086360308225
+  "central.C": 0.002716437978916727
  },
  "stop_time": 9676800.0,
  "template": "PK_1C_enteral",

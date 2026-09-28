@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;citalopram&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/&quot;},{&quot;label&quot;:&quot;Weisskopf_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Akil2016_reference&quot;,&quot;label&quot;:&quot;Akil_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Akil2016_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_reference&quot;,&quot;label&quot;:&quot;Weisskopf_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Akil2016_reference&quot;,&quot;label&quot;:&quot;Akil_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Akil2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_reference&quot;,&quot;label&quot;:&quot;Weisskopf_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # citalopram — `Citalopram_Weisskopf2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The citalopram/escitalopram model was held back because citalopram's volume of distribution had no reported value and a library placeholder was substituted, alongside the unextracted k12 rate constant and a one-compartment structure that does not match the reported parent–metabolite topology.**
+**The citalopram record was rejected because the model was built as a one-compartment system instead of the reported three-compartment parent–metabolite structure, the output was set to the parent compartment rather than the measured escitalopram compartment, and the transfer constant k12 (0.73 h⁻¹) was not represented.**
 
-No volume of distribution for citalopram (escitalopram) was reported, so a default placeholder stood in for Vd, and defaults were likewise substituted for the S-desmethylcitalopram clearance, its volume, and the formation rate. The parameter-coverage check found only 1 of 2 expected parameters covered, with k12 (0.73 h⁻¹) neither emitted nor defaulted. The structure check also failed: the record's one-compartment structure (PK_1C) does not match the reported parent–metabolite topology. Additionally, Vss (1310 L) was used as the distribution volume because no Vc/V was reported, reproducing AUC and terminal half-life but not the early distribution phase. Extracted — citalopram: CL 28.7 L/h, Vss 1.31e+03 L, k12 0.73 h⁻¹, k31 0.54 h⁻¹, sigma 35.3.
+The paper reports a parent–metabolite structure for escitalopram metabolised to S-desmethylcitalopram, but the built model used a single compartment, so the metabolism link and the peripheral transfer constants k12 (0.73 h⁻¹) and k31 (0.54 h⁻¹) are not represented; k12 was neither emitted nor defaulted. The model output was set to the parent (central) compartment instead of the measured analyte escitalopram. The builder also substituted Vss (1310 L) for the distribution volume, which reproduces AUC and terminal half-life but not the early distribution phase. Extracted — citalopram: CL 28.7 L/h, Vss 1.31e+03 L, k12 0.73 h⁻¹, k31 0.54 h⁻¹, sigma 35.3.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -26,15 +26,15 @@ Weisskopf E; Guidi M; Fischer CJ; Bickle Graz M; Beaufils E; Nguyen KA; et al. e
   ·  DOI: [10.1111/bcp.14278](https://doi.org/10.1111/bcp.14278)
 
 ## Model component
-<dbs-pgx drug="citalopram" model-id="Citalopram_Weisskopf2020_reference" status="model_quarantined" stale="false" population="depressive patients during the perinatal period" measured-compound="escitalopram" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="citalopram" model-id="Citalopram_Weisskopf2020_reference" status="rejected" stale="false" population="depressive patients during the perinatal period" measured-compound="escitalopram" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent–metabolite composite: parent and metabolite one compartment each, first-order formation — template `PK_Parent_Metabolite`.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -51,6 +51,9 @@ Weisskopf E; Guidi M; Fischer CJ; Bickle Graz M; Beaufils E; Nguyen KA; et al. e
 
 ## Departures & gaps
 
+**Deviations:**
+- `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
+
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'VMR' — extend the ontology if this is a real PK parameter (source ['Weisskopf_2020_table_p7_1:row4:col1', 'Weisskopf_2020_table_p7_1:row4:col2', 'Weisskopf_2020_table_p7_1:row4:col3', 'Weisskopf_2020_table_p7_1:row4:col4'])
 - dropped unlinked row (NIL): 'MPRD' — extend the ontology if this is a real PK parameter (source ['Weisskopf_2020_table_p7_1:row5:col3', 'Weisskopf_2020_table_p7_1:row5:col4'])
@@ -61,6 +64,7 @@ Weisskopf E; Guidi M; Fischer CJ; Bickle Graz M; Beaufils E; Nguyen KA; et al. e
 - dropped duplicate Q315 ('σ SCIT(milk) (%)', value '31.5') — already have one for this compound
 - dropped duplicate Q315 ('σ SDCIT(milk) (%)', value '22.8') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=escitalopram
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -87,10 +91,12 @@ Weisskopf E; Guidi M; Fischer CJ; Bickle Graz M; Beaufils E; Nguyen KA; et al. e
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | fail | Metabolite_C (measured=escitalopram) | central.C | not captured | output must be the measured/analyte compartment |
 | T3_param_coverage | not captured | fail | 2 scholar param(s) emitted or defaulted | 1 covered | not captured | neither emitted nor in defaulted[]: ['k12'] |
 | T3_rate_constant_conversion | not captured | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | not captured | rate constant must not be used raw as a clearance |
-| T3_topology_template | not captured | fail | parent_metabolite → PK_Parent_Metabolite* | PK_1C | not captured | engineer template must match the scholar topology |
+| T3_topology_template | not captured | fail | parent_metabolite → PK_3M_9C* | PK_1C | not captured | engineer template must match the scholar topology |
 | T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
@@ -101,29 +107,24 @@ Weisskopf E; Guidi M; Fischer CJ; Bickle Graz M; Beaufils E; Nguyen KA; et al. e
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_citalopram/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Weisskopf_2020` / `Weisskopf_2020::reference`)
-- model: `../../../knowledgebase/drugs/drug_citalopram/models/modelica/_needs_review/Citalopram_Weisskopf2020_reference.mo`
-- deviation: `../../../knowledgebase/drugs/drug_citalopram/models/modelica/_needs_review/Citalopram_Weisskopf2020_reference.deviation.json`
+- model: `../../../knowledgebase/drugs/drug_citalopram/models/modelica/Citalopram_Weisskopf2020_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_citalopram/models/modelica/Citalopram_Weisskopf2020_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_citalopram/models/modelica/Citalopram_Weisskopf2020_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_citalopram/Citalopram_Weisskopf2020_reference/Citalopram_Weisskopf2020_reference_matlab.zip" download>Citalopram_Weisskopf2020_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_citalopram/Citalopram_Weisskopf2020_reference/Citalopram_Weisskopf2020_reference_matlab_simbio.zip" download>Citalopram_Weisskopf2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_citalopram/Citalopram_Weisskopf2020_reference/Citalopram_Weisskopf2020_reference_sbml.zip" download>Citalopram_Weisskopf2020_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_citalopram/Citalopram_Weisskopf2020_reference/Citalopram_Weisskopf2020_reference_cellml.zip" download>Citalopram_Weisskopf2020_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 20 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 20 mg parenteral (N06AB04) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_citalopram/Citalopram_Weisskopf2020_reference/Citalopram_Weisskopf2020_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_citalopram/Citalopram_Weisskopf2020_reference/Citalopram_Weisskopf2020_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Citalopram_Weisskopf2020_reference_params.json` · controls `Citalopram_Weisskopf2020_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

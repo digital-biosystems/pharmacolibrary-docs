@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**This camostat/GBPA record was rejected because a structural parameter carries a dimension mismatch, the metabolite GBA has no path from the dose, and the volume of distribution was reported in hours, a unit that could not be converted to SI.**
+**The camostat metabolite GBPA record was rejected: the volume of distribution V (1046) carries the unit 'h' instead of a volume unit, and the GBA metabolite is unlinked, plus a second reader disputes all five reported values.**
 
-The GBPA model is a linear chain in which camostat mesylate forms GBPA by metabolism and GBPA clears to GBA via CLmet, but the GBA metabolite is unreachable from the administered dose, and a structural parameter shows a dimension mismatch. The volume of distribution was reported with the unit 'h' instead of a volume unit, so no SI value could be derived for it. A second reader also disputed the extracted GBPA values, reading AUC∞ as 477.5 versus 156.5, AUClast as 464.8 versus 152.3, Cmax as 273.9 versus 72.68, CL/F as 179.6 versus 141.7, and Vd as 977.8 versus 1046. Extracted — GBPA: t1/2z 1.01 h, Cmax 72.7 ng/mL, AUClast 152 h × ng/mL, AUC∞ 156 h × ng/mL, CL/F 142 L/h, V 1.05e+03 h.
+The structural parameter V for GBPA is reported as 1046 with unit 'h', a dimension mismatch for a volume of distribution, and its unit could not be converted to SI. The metabolism step from GBPA to GBA leaves GBA without a path from the administered dose, so the model structure is incomplete. A second reader also read different values for Cmax (273.9 vs 72.68), AUClast (464.8 vs 152.3), AUC∞ (477.5 vs 156.5), CL/F (179.6 vs 141.7) and Vd (977.8 vs 1046), so the extracted summary statistics are disputed. Extracted — GBPA: t1/2z 1.01 h, Cmax 72.7 ng/mL, AUClast 152 h × ng/mL, AUC∞ 156 h × ng/mL, CL/F 142 L/h, V 1.05e+03 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[aucinf].value`: this record has 156.5, the second reading 477.5; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

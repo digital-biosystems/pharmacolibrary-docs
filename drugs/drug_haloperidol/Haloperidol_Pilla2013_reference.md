@@ -15,9 +15,9 @@
 
 ### Reviewer guidance
 
-**The haloperidol model was held back because the absorption rate constant ka and the lag time Tlag were not reported in the source, so library default values were substituted, and this invented absorption was judged not acceptable.**
+**The haloperidol record was held back because the absorption rate constant (ka) was not reported in the source and a placeholder value was substituted, alongside an apparent-bioavailability assumption (F=1, Fm=1) without molar correction.**
 
-The record lists ka (Ka, value 6) and tlag (value 6, delay in drug effect in days) among the parameters, but the model builder's deviations state that ka and Tlag were defaulted because their values were missing from the source, meaning the absorption was invented rather than estimated. Additionally, the reported unit for ka (h j1, i.e. per hour) could not be converted to SI, so that parameter entered the model without an SI value. The apparent-parameter assumption (F=1, Fm=1, no molar correction) was also applied. A second reader disagreed on how the placebo decay parameter and the kt parameter should be classified, though these disagreements concern naming rather than the numeric values. Extracted — haloperidol: CL/F 86 L/h, Q/F 12 L/h, V1/F 9 L, V2/F 12 L, kabs 6 h j1, sigma 0.44, E0 0.5, Cmax 4, … (+5).
+The ka value of 6 (unit 'h j1') and the lag time tlag of 6 were not extracted from the source; library defaults were used instead, which the adjudication judged an invented absorption process and not acceptable. The model was parameterized as apparent (F=1, Fm=1, no molar correction), so all reported clearances and volumes (CL/F 86 L/h, Q/F 12 L/h, V1/F 9 L, V2/F 12 L) are bioavailability-adjusted. The reported unit 'h j1' for ka could not be converted to SI, so that parameter was carried without an SI value. A second reader disagreed on the classification of the placebo-effect parameter (maximum placebo effect, 0.1 1/d) and of the elimination rate constant kel (6 1/d). Extracted — haloperidol: CL/F 86 L/h, Q/F 12 L/h, V1/F 9 L, V2/F 12 L, kabs 6 h j1, sigma 0.44, E0 0.5, Cmax 4, … (+5).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[bhaz: placebo].parameter_id`: this record has Q341, the second reading Q342; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
@@ -151,6 +151,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
 | T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
 | T3_output_variable | not captured | pass | C_central (measured=haloperidol) | central.C | not captured | output must be the measured/analyte compartment |
@@ -177,7 +178,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_haloperidol/Haloperidol_Pilla2013_reference/Haloperidol_Pilla2013_reference_modelica.zip" download>Haloperidol_Pilla2013_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_haloperidol/Haloperidol_Pilla2013_reference/Haloperidol_Pilla2013_reference_modelica.zip" download>Haloperidol_Pilla2013_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_haloperidol/Haloperidol_Pilla2013_reference/Haloperidol_Pilla2013_reference_fmi.zip" download>Haloperidol_Pilla2013_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_haloperidol/Haloperidol_Pilla2013_reference/Haloperidol_Pilla2013_reference_matlab.zip" download>Haloperidol_Pilla2013_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_haloperidol/Haloperidol_Pilla2013_reference/Haloperidol_Pilla2013_reference_matlab_simbio.zip" download>Haloperidol_Pilla2013_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -190,7 +191,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 8 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 8 mg oral (N05AD01) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_haloperidol/Haloperidol_Pilla2013_reference/Haloperidol_Pilla2013_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_haloperidol/Haloperidol_Pilla2013_reference/Haloperidol_Pilla2013_reference_sim_controls.json"></dbs-fmusim>
 
