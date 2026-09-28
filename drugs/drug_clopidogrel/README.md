@@ -167,6 +167,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` transport | paper PGx gene |
 | absorption | placenta | `ABCB1` substrate/transport | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate/transport, `ABCG2` transport | DrugBank actor |
+| absorption | testis | `ABCB1` substrate/transport, `ABCG2` transport | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | blood | `TPMT` safety_allele | paper PGx gene |
 | metabolism | brain | `CYP2D6` metabolism | paper PGx gene |
