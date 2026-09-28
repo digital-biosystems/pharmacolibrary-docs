@@ -164,7 +164,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.8 /h, lag 30 min, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.8 /h, lag 30 min, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_params.json" metaurl="assets/fmu/PK_3M_9C.vr.json" wasmurl="assets/fmu/PK_3M_9C.js" controlsurl="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_sim_controls.json"></dbs-fmusim>
 

@@ -127,7 +127,7 @@ Webb JA; Rostami-Hodjegan A; Abdul-Manap R; Hofmann U; Mikus G; Kamali F et al. 
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption into a hepatic compartment first (first pass) (ka 11 /h, lag 18 min, F 1).
+**Administration: oral** — 100 mg, single dose, first-order absorption into a hepatic compartment first (first pass) (ka 11 /h, lag 18 min, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_params.json" metaurl="assets/fmu/PK_3M_3C.vr.json" wasmurl="assets/fmu/PK_3M_3C.js" controlsurl="drugs/drug_dihydrocodeine/Dihydrocodeine_Webb2001_reference/Dihydrocodeine_Webb2001_reference_sim_controls.json"></dbs-fmusim>
 
